@@ -5,9 +5,9 @@
     "site_version": "SITE-V4.4.1-china-market-scope",
     "column_version": "FUNDING-INSIGHT-V1.3.0-cb-2026-hierarchy",
     "taxonomy_version": "TAG-V4.1",
-    "latest_date": "2026-08-02",
-    "generated_at": "2026-08-02T06:11:34.986Z",
-    "card_count": 213,
+    "latest_date": "2026-08-03",
+    "generated_at": "2026-08-03T02:06:00.659Z",
+    "card_count": 215,
     "duplicate_rounds_removed": 10,
     "automatic_publication": true,
     "market_category_framework": {
@@ -269,16 +269,1615 @@
     ],
     "directions": [
       {
-        "id": "DIR-20260725-02",
-        "title": "AI智能体从“辅助写作”转向“自主执行”，催生对智能体行为审计与权限控制的新需求"
-      },
-      {
         "id": "DIR-20260725-01",
         "title": "开源模型推理成本骤降，正在将价值从模型层迁移至“模型路由与成本治理”层"
+      },
+      {
+        "id": "DIR-20260725-02",
+        "title": "AI智能体从“辅助写作”转向“自主执行”，催生对智能体行为审计与权限控制的新需求"
       }
     ]
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.2",
+      "funding_insight_id": "FI-752bd270da5a6609",
+      "triggered_by_event_id": "EV-74967394aed730ce",
+      "as_of_date": "2026-08-03",
+      "company": {
+        "entity_id": "EN-18be231103e4649b",
+        "name": "Jedify",
+        "full_name": "Jedify",
+        "website": "https://jedify.com/",
+        "summary": "Jedify 是一家为企业 AI 构建自主情境图谱的初创公司，通过连接结构化运营数据与非结构化知识，为 AI 智能体提供运行时所需的业务上下文，以解决企业 AI 部署中因缺乏可靠业务情境而停滞于原型阶段的问题。",
+        "headquarters": "New York",
+        "founders": [
+          {
+            "name": "Assaf Henkin",
+            "role": "CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-29a5cc0bbf402ca0",
+                "quote": "Jedify was founded in 2023 by Assaf Henkin (CEO), Adi Elimelech (CTO) and Erik Shani (CPO)",
+                "source_content_hash": "63645790d9a95447",
+                "quote_hash": "5445e099789553759e7b858fdaa8dcc6e68dfdc790ea5bcc0cd5bbbaa8341d0d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Adi Elimelech",
+            "role": "CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-29a5cc0bbf402ca0",
+                "quote": "Jedify was founded in 2023 by Assaf Henkin (CEO), Adi Elimelech (CTO) and Erik Shani (CPO)",
+                "source_content_hash": "63645790d9a95447",
+                "quote_hash": "5445e099789553759e7b858fdaa8dcc6e68dfdc790ea5bcc0cd5bbbaa8341d0d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Erik Shani",
+            "role": "CPO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-29a5cc0bbf402ca0",
+                "quote": "Jedify was founded in 2023 by Assaf Henkin (CEO), Adi Elimelech (CTO) and Erik Shani (CPO)",
+                "source_content_hash": "63645790d9a95447",
+                "quote_hash": "5445e099789553759e7b858fdaa8dcc6e68dfdc790ea5bcc0cd5bbbaa8341d0d"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "35",
+          "observed_at": "2026-06-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-29a5cc0bbf402ca0",
+              "quote": "employs 35 people",
+              "source_content_hash": "63645790d9a95447",
+              "quote_hash": "8e6168f9418bd5c5d806c0d78db79193e04ff392cc20adc3b466fbe3a6a6608d"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9fb1f37fe46c5a80",
+            "quote": "Jedify is the autonomous context graph for enterprise AI, powering modern agentic applications and workflows with connected enterprise context.",
+            "source_content_hash": "b9053d363a504063",
+            "quote_hash": "0aca2a318166de18febda63edeaa3686dd17ca34911484155c3c907cab3f1dd3"
+          }
+        ]
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "$24 million",
+        "total_raised": "$33 million",
+        "announced_at": "2026-06-10",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Norwest",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-26b4cf1fe2e20ea6",
+                "quote": "The company raised a $24 million Series A led by Norwest",
+                "source_content_hash": "76179d57f498ea0d",
+                "quote_hash": "988ae86aef12b055efd425c8c0e5506cd46ce680819a43689e536bcbd1bae2e5"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Snowflake Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-26b4cf1fe2e20ea6",
+                "quote": "with Snowflake Ventures joining strategically",
+                "source_content_hash": "76179d57f498ea0d",
+                "quote_hash": "42faeb5f2d2e31957c5664a5ae501397d37974b4e9a44703f7722d312667f360"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "S Capital VC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-29a5cc0bbf402ca0",
+                "quote": "participation from existing backers S Capital VC and Cerca Partners, alongside new investor Oceans Ventures",
+                "source_content_hash": "63645790d9a95447",
+                "quote_hash": "fa79fa9fa70619b2d600eb90b691d577c04d56a6859fa5f80929c00b8e5ee252"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Cerca Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-29a5cc0bbf402ca0",
+                "quote": "participation from existing backers S Capital VC and Cerca Partners, alongside new investor Oceans Ventures",
+                "source_content_hash": "63645790d9a95447",
+                "quote_hash": "fa79fa9fa70619b2d600eb90b691d577c04d56a6859fa5f80929c00b8e5ee252"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Oceans Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-29a5cc0bbf402ca0",
+                "quote": "participation from existing backers S Capital VC and Cerca Partners, alongside new investor Oceans Ventures",
+                "source_content_hash": "63645790d9a95447",
+                "quote_hash": "fa79fa9fa70619b2d600eb90b691d577c04d56a6859fa5f80929c00b8e5ee252"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "S Capital VC",
+            "role": "种子轮领投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9fb1f37fe46c5a80",
+                "quote": "Jedify previously raised an $8.5 million seed round in September 2023, led by S Capital VC with participation from Cerca Partners",
+                "source_content_hash": "b9053d363a504063",
+                "quote_hash": "3380b397c2db4ddcae660fed8f92a6b99b2fcbb27d0cc722da152645225b9c7f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Cerca Partners",
+            "role": "种子轮参投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9fb1f37fe46c5a80",
+                "quote": "Jedify previously raised an $8.5 million seed round in September 2023, led by S Capital VC with participation from Cerca Partners",
+                "source_content_hash": "b9053d363a504063",
+                "quote_hash": "3380b397c2db4ddcae660fed8f92a6b99b2fcbb27d0cc722da152645225b9c7f"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-26b4cf1fe2e20ea6",
+            "quote": "The company raised a $24 million Series A led by Norwest, with Snowflake Ventures joining strategically, bringing total funding to $33 million.",
+            "source_content_hash": "76179d57f498ea0d",
+            "quote_hash": "f0ce88d6fc65501ad99534b1ba56b7b37a77da0ac6cead078988e53eb586158d"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-74967394aed730ce",
+            "round_original": "Series A",
+            "amount": "$24 million",
+            "announced_at": "2026-06-10",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-26b4cf1fe2e20ea6",
+                "quote": "The company raised a $24 million Series A led by Norwest, with Snowflake Ventures joining strategically, bringing total funding to $33 million.",
+                "source_content_hash": "76179d57f498ea0d",
+                "quote_hash": "f0ce88d6fc65501ad99534b1ba56b7b37a77da0ac6cead078988e53eb586158d"
+              }
+            ]
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Jedify Context Graph",
+          "description": "一个自主构建、持续更新的企业级语义模型，连接数据仓库、CRM、财务系统等结构化数据与文档、Slack、会议录音等非结构化知识，为AI智能体提供运行时业务上下文，以减少幻觉和Token浪费。",
+          "target_customers": "拥有成熟数据栈和多个数据库或数据仓库的中型市场和大型企业客户",
+          "features": [
+            "Semantic Fusion™ 技术",
+            "模型无关的基础设施层",
+            "实时更新的情境图谱",
+            "权限继承与治理工具",
+            "与Snowflake Cortex AI集成"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9fb1f37fe46c5a80",
+              "quote": "Jedify's platform autonomously builds a customer-specific context graph, powered by its patent-pending Semantic Fusion™ technology",
+              "source_content_hash": "b9053d363a504063",
+              "quote_hash": "e11865af5518876db9a9ef8c1c8ff21859fbcbeddfc1ea1554e66b51ff8aeb98"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Kiteworks",
+          "industry": "合规与安全",
+          "use_case": "构建客户健康、销售建模和工程风险的AI智能体",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cd165194a3bdefd7",
+              "quote": "Secure content isn't just a feature at Kiteworks — it's our DNA. We're the control plane for sensitive data exchange across email, file sharing, MFT, SFTP, APIs, and AI data access — trusted by enterprises and government agencies where getting it wrong isn't an option.",
+              "source_content_hash": "4195a22233fc44b0",
+              "quote_hash": "35e56ad3c39ecdbf80bd682c0476d1cac66f7509a54fba4d079c0d5ae100f3fc"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Exodigo",
+          "industry": "工业检测",
+          "use_case": "处理CRM和ERP数据中的复杂计费和多实体关系",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cd165194a3bdefd7",
+              "quote": "What impressed us was the level of accuracy Jedify achieved on our data model. Our CRM and ERP data contain a lot of complexity — framework agreements, multi-entity billing, and bridge tables.",
+              "source_content_hash": "4195a22233fc44b0",
+              "quote_hash": "f132e16ca53bc30bc99756dfa868c4cae627f38f80849ddb16d4f631b392f20c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Openweb",
+          "industry": "数字媒体",
+          "use_case": "高管团队可见性和组织围绕可信数据对齐",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cd165194a3bdefd7",
+              "quote": "Jedify really understands our business and the metrics that matter most. Our executive team has full visibility, the organization stays aligned around trusted, accurate data",
+              "source_content_hash": "4195a22233fc44b0",
+              "quote_hash": "43875d63793d7bfe03d194c08ab7362eb38d67c722f5f5455c3c702292f0ca8c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "SoundCloud",
+          "industry": "音乐流媒体",
+          "use_case": "跨组织分析交付，减少技术障碍",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cd165194a3bdefd7",
+              "quote": "At SoundCloud, scale and speed are everything and traditional self-serve BI tools never reached the level we needed. Jedify has transformed how we deliver analytics across the organization",
+              "source_content_hash": "4195a22233fc44b0",
+              "quote_hash": "eb8cf9fab6b26d7fc6957dd07e18cef8a3e01389244fcf79a9b87b43a4810342"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "传统BI工具、元数据目录和语义层",
+          "product": "Legacy BI tools, metadata catalogs, and semantic layers",
+          "scenario": "企业数据治理与AI智能体运行时上下文供给",
+          "target_customer": "大型企业数据团队",
+          "funding_summary": "",
+          "core_difference": "Jedify的情境图谱支持智能体跨无限维度推理，将范围缩小到最相关的实体，而传统工具仅在静态表上操作。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9fb1f37fe46c5a80",
+              "quote": "Unlike legacy BI tools, metadata catalogs, and semantic layers that operate on static tables, Jedify's context graph enables agents to reason across unlimited dimensions, reducing the scope to only the most relevant entities.",
+              "source_content_hash": "b9053d363a504063",
+              "quote_hash": "058cdeaf4b3861b64f1753ad20a8d974926b9f691cda9c0fb9ddc2793e2bb057"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "OpenAI、Anthropic、Google",
+          "product": "模型提供商的现场工程师和专业服务",
+          "scenario": "企业AI部署中弥合模型与业务上下文之间的差距",
+          "target_customer": "大型企业",
+          "funding_summary": "",
+          "core_difference": "Jedify作为独立的模型无关上下文层，避免将数据交给同时销售Token的供应商所产生的激励错位和单一供应商锁定，而模型提供商的前置工程师方案存在利益冲突。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9fb1f37fe46c5a80",
+              "quote": "enterprises that hand over their data to the same vendors selling them tokens face inherently misaligned incentives. Those vendors benefit from the least efficient, most token-intensive solutions, creating a clear conflict of interest.",
+              "source_content_hash": "b9053d363a504063",
+              "quote_hash": "a2cd351cd2bd83251358a3d095e186721f448d56bbda83224aca13fe49bbf7a5"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "早期客户数量",
+          "value": "10到20个",
+          "observed_at": "2026-06-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-57e3fe25acb79b3f",
+              "quote": "Henkin said the company has between 10 and 20 early customers",
+              "source_content_hash": "3abdba35d5d71992",
+              "quote_hash": "e6bb9ab52a71195541577b7e056181959bae31139c5721af1a0f439d558c02ee"
+            }
+          ]
+        },
+        {
+          "label": "声称的准确率提升",
+          "value": "40%",
+          "observed_at": "2026-06-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cd165194a3bdefd7",
+              "quote": "40% Accuracy improvement",
+              "source_content_hash": "4195a22233fc44b0",
+              "quote_hash": "590935eab67493949e23d13a82ee7c6d957a8734974fcb9e9ed81096fc9862a4"
+            }
+          ]
+        },
+        {
+          "label": "声称的Token节省",
+          "value": "70%",
+          "observed_at": "2026-06-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cd165194a3bdefd7",
+              "quote": "70% Less tokens with same accuracy",
+              "source_content_hash": "4195a22233fc44b0",
+              "quote_hash": "cf7b51e849e6419457487f8bc3f476cf3c27079ac8a11b8bc48a6a19f34c9f5d"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Kumud Kokal",
+          "quote": "So when we decided to build out a fleet of AI agents — covering customer health, sales modeling, and engineering risk, the goal was to balance moving fast and safely. The agents themselves weren't the hard problem. It was giving every agent a shared, governed understanding of our business so they reason consistently and act safely. Jedify's context graph gave us a way to do that without rebuilding our entire data layer.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cd165194a3bdefd7",
+              "quote": "So when we decided to build out a fleet of AI agents — covering customer health, sales modeling, and engineering risk, the goal was to balance moving fast and safely. The agents themselves weren't the hard problem. It was giving every agent a shared, governed understanding of our business so they reason consistently and act safely. Jedify's context graph gave us a way to do that without rebuilding our entire data layer.",
+              "source_content_hash": "4195a22233fc44b0",
+              "quote_hash": "29b4dd21399b5776cb91bff099f7bde0b4734b83490a245b4f1ea729f951edcc"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是：随着模型层能力趋同和推理成本下降，企业AI的价值将从模型本身迁移到“使模型可靠运行的专有业务上下文”这一中间层。Jedify以模型无关的独立上下文图谱定位，试图成为智能体工作流的基础设施。本轮融资的已验证信号包括：Snowflake Ventures作为战略投资方参与并启动产品集成，表明数据平台巨头已将语义一致性视为平台级风险而非客户麻烦；已披露的具名客户如The Weather Company和Kiteworks提供了初步的企业采纳证据。但公司仅有10-20个早期客户且未披露收入，35人团队和3300万美元总融资仍处于早期阶段，其技术护城河能否在数据仓库厂商自行构建类似能力之前建立，是核心不确定性。",
+        "validated_signals": [
+          "Snowflake Ventures作为战略投资方参与，并启动与Cortex AI的产品集成",
+          "已披露The Weather Company、Kiteworks、Exodigo、SoundCloud等具名企业客户",
+          "声称准确率提升40%、Token消耗降低70%的性能指标"
+        ],
+        "risks": [
+          "数据仓库厂商（如Snowflake）正在自行构建语义能力，Jedify作为独立点解决方案面临2-3年内被平台替代的威胁",
+          "公司仅有10-20个早期客户且未披露收入，产品市场匹配度尚未在大规模企业部署中得到验证",
+          "35人团队规模较小，在面向中大型企业的销售、部署和支持能力上存在扩展瓶颈"
+        ],
+        "related_direction_id": "DIR-20260725-01",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "data",
+        "market_application_id": "data_preparation_curation",
+        "use_case_ids": [
+          "data_analysis",
+          "knowledge_search",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ],
+        "sector": "企业AI基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：随着模型层能力趋同和推理成本下降，企业AI的价值将从模型本身迁移到“使模型可靠运行的专有业务上下文”这一中间层。Jedify以模型无关的独立上下文图谱定位，试图成为智能体工作流的基础设施。本轮融资的已验证信号包括：Snowflake Ventures作为战略投资方参与并启动产品集成，表明数据平台巨头已将语义一致性视为平台级风险而非客户麻烦；已披露的具名客户如The Weather Company和Kiteworks提供了初步的企业采纳证据。但公司仅有10-20个早期客户且未披露收入，35人团队和3300万美元总融资仍处于早期阶段，其技术护城河能否在数据仓库厂商自行构建类似能力之前建立，是核心不确定性。",
+          "evidence_signals": [
+            "Snowflake Ventures作为战略投资方参与，并启动与Cortex AI的产品集成",
+            "已披露The Weather Company、Kiteworks、Exodigo、SoundCloud等具名企业客户",
+            "声称准确率提升40%、Token消耗降低70%的性能指标"
+          ],
+          "risks": [
+            "数据仓库厂商（如Snowflake）正在自行构建语义能力，Jedify作为独立点解决方案面临2-3年内被平台替代的威胁",
+            "公司仅有10-20个早期客户且未披露收入，产品市场匹配度尚未在大规模企业部署中得到验证",
+            "35人团队规模较小，在面向中大型企业的销售、部署和支持能力上存在扩展瓶颈"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        },
+        "related_direction": {
+          "id": "DIR-20260725-01",
+          "title": "开源模型推理成本骤降，正在将价值从模型层迁移至“模型路由与成本治理”层"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Jedify Context Graph",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Assaf Henkin",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Adi Elimelech",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Erik Shani",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Norwest",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Snowflake Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "S Capital VC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Cerca Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Oceans Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "S Capital VC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Cerca Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Kiteworks",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Exodigo",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Openweb",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "SoundCloud",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "传统BI工具、元数据目录和语义层",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "OpenAI、Anthropic、Google",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-74967394aed730ce",
+          "date": "2026-08-02",
+          "title": "Jedify 获 2400 万美元 A 轮融资，为企业 AI 构建情境层",
+          "amount": "$24 million",
+          "source_refs": [
+            "SA-2f35c949487092f2"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-26b4cf1fe2e20ea6",
+          "source_url": "https://workai.tv/news/2026/08/ai-news/jedify-raises-24-million-series-a-to-build-context-layer-for-enterprise-ai/",
+          "title": "Jedify 获 2400 万美元 A 轮融资，为企业 AI 构建情境层",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-03T00:20:05.163Z",
+          "content_hash": "76179d57f498ea0d",
+          "source_artifact_id": "SA-2f35c949487092f2",
+          "raw_id": "RAW-b7c2cdc9b39d5a4a"
+        },
+        {
+          "source_id": "FISRC-cd165194a3bdefd7",
+          "source_url": "https://jedify.com/",
+          "title": "Jedify: The Context Graph for Enterprise AI",
+          "publisher": "jedify.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-03T02:05:03.817Z",
+          "content_hash": "4195a22233fc44b0",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-29a5cc0bbf402ca0",
+          "source_url": "https://www.calcalistech.com/ctechnews/article/bkcksmp11gx",
+          "title": "Jedify raises $24 million Series A to build context layer for enterprise AI | Ctech",
+          "publisher": "calcalistech.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-03T02:05:05.410Z",
+          "content_hash": "63645790d9a95447",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-57e3fe25acb79b3f",
+          "source_url": "https://finance.yahoo.com/sectors/technology/articles/jedify-raises-24m-help-companies-133309789.html",
+          "title": "Jedify raises $24M to help companies arm AI agents with context on their business",
+          "publisher": "finance.yahoo.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-08-03T02:05:05.914Z",
+          "content_hash": "3abdba35d5d71992",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-9fb1f37fe46c5a80",
+          "source_url": "https://markets.businessinsider.com/news/stocks/jedify-raises-24-million-in-series-a-funding-to-build-context-graphs-for-enterprise-ai-agents-1036238649",
+          "title": "Jedify Raises $24 Million in Series A Funding to Build Context Graphs for Enterprise AI Agents | Markets Insider",
+          "publisher": "markets.businessinsider.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-03T02:05:06.276Z",
+          "content_hash": "b9053d363a504063",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.5",
+        "generated_at": "2026-08-03T02:05:53.906Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-03T02:05:53.906Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Jedify Context Graph"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Adi Elimelech",
+            "Assaf Henkin",
+            "Erik Shani"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-74967394aed730ce"
+      ],
+      "aggregation": {
+        "key": "EN-18be231103e4649b|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "ai_infrastructure_software",
+        "name": "AI 基础设施软件",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "infrastructure_compute",
+        "name": "基础设施与算力",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "data",
+        "name": "数据",
+        "method": "card_explicit"
+      },
+      "market_application": {
+        "dimension": "ai_market_application",
+        "id": "data_preparation_curation",
+        "name": "数据准备与整理",
+        "method": "card_explicit"
+      },
+      "links": {
+        "company": "data-center.html?view=index&detail=entity&id=EN-18be231103e4649b",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-74967394aed730ce",
+        "direction": "opportunity-map.html#direction-cards"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.2",
+      "funding_insight_id": "FI-2cf3052d26bca65b",
+      "triggered_by_event_id": "EV-7a44a47bf36780d2",
+      "as_of_date": "2026-08-03",
+      "company": {
+        "entity_id": "EN-721eb3fd31f8e1f6",
+        "name": "壁仞科技",
+        "full_name": "上海壁仞科技股份有限公司",
+        "website": "birentech.com",
+        "summary": "壁仞科技致力于开发原创性的通用计算体系，建立高效的软硬件平台，同时在智能计算领域提供一体化的解决方案。公司首先聚焦云端通用智能计算，逐步在人工智能训练和推理、图形渲染、高性能通用计算等多个领域赶超现有解决方案，实现国产高端通用智能计算芯片的突破。",
+        "headquarters": "上海闵行",
+        "founders": [
+          {
+            "name": "张文",
+            "role": "创始人、董事长兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-081c8476182d3ff7",
+                "quote": "壁仞科技，由人工智能平台公司商汤科技前总裁张立创立",
+                "source_content_hash": "48f7a6ff96b731e7",
+                "quote_hash": "cff7d4508942c17ef4675330a3cb9212c6e15d32194bd4015b07512f34f0bdbc"
+              },
+              {
+                "source_id": "FISRC-8a38ca95373e5124",
+                "quote": "壁仞科技创始人张文本科学习的电子工程，后拿到哈佛大学法学博士",
+                "source_content_hash": "a154370b08f3f0d0",
+                "quote_hash": "02f2e230df365d95ce9877c5c7286fb25e1b978a44e259b652559555a1de78b0"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "76",
+          "observed_at": "2026",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c05765865eec0b08",
+              "quote": "壁仞科技 employs 76 people",
+              "source_content_hash": "265e877fd605effe",
+              "quote_hash": "5da149a6acd039f7ff4028e710482f9fa2c8beb2fb1581300002e3f62ebe7615"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c05765865eec0b08",
+            "quote": "壁仞科技致力于开发原创性的通用计算体系，建立高效的软硬件平台，同时在智能计算领域提供一体化的解决方案。从发展路径上，壁仞科技将首先聚焦云端通用智能计算，逐步在人工智能训练和推理、图形渲染、高性能通用计算等多个领域赶超现有解决方案，实现国产高端通用智能计算芯片的突破。",
+            "source_content_hash": "265e877fd605effe",
+            "quote_hash": "bc2c761dee0b6998e87653a87a52c4f05b5806944e08cb63b278748796d6a8bc"
+          }
+        ]
+      },
+      "financing": {
+        "round": "多轮融资",
+        "amount": "超过50亿元人民币",
+        "total_raised": "超过50亿元人民币",
+        "announced_at": "2024-09-12",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "上海国投先导人工智能产业母基金",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8a38ca95373e5124",
+                "quote": "上海国投先导 人工智能 产业母基金联合领投国内GPU 芯片企业 壁仞科技",
+                "source_content_hash": "a154370b08f3f0d0",
+                "quote_hash": "ba9bb2957eeb356c61db29a1d695d506f695179767076f4c4c058b06b667a98e"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "启明创投",
+            "role": "A轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-081c8476182d3ff7",
+                "quote": "本轮融资由启明创投、IDG资本及华登国际中国基金领投",
+                "source_content_hash": "48f7a6ff96b731e7",
+                "quote_hash": "29ea1383a7fbf4bad7e708fabb6a5e64030ba91561056c9f6110361ad5061f3b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "IDG资本",
+            "role": "A轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-081c8476182d3ff7",
+                "quote": "本轮融资由启明创投、IDG资本及华登国际中国基金领投",
+                "source_content_hash": "48f7a6ff96b731e7",
+                "quote_hash": "29ea1383a7fbf4bad7e708fabb6a5e64030ba91561056c9f6110361ad5061f3b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "华登国际中国基金",
+            "role": "A轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-081c8476182d3ff7",
+                "quote": "本轮融资由启明创投、IDG资本及华登国际中国基金领投",
+                "source_content_hash": "48f7a6ff96b731e7",
+                "quote_hash": "29ea1383a7fbf4bad7e708fabb6a5e64030ba91561056c9f6110361ad5061f3b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "高瓴创投",
+            "role": "Pre-B轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d13c49d0024ccf9b",
+                "quote": "完成了Pre-B轮融资，由高瓴创投领投",
+                "source_content_hash": "a6b4082076c6f997",
+                "quote_hash": "a699890fc0e0b97e15420644c04df44c309258b692d953792bd33eab18bb2c63"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "中国平安",
+            "role": "B轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d13c49d0024ccf9b",
+                "quote": "宣布完成B轮融资，由中国平安、新世界集团、碧桂园创投联合领投",
+                "source_content_hash": "a6b4082076c6f997",
+                "quote_hash": "37f36b74f042ee8b26b38b5e883e828ee3a8627a4d6d8c5c0db95451601e18c2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "碧桂园创投",
+            "role": "B轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d13c49d0024ccf9b",
+                "quote": "宣布完成B轮融资，由中国平安、新世界集团、碧桂园创投联合领投",
+                "source_content_hash": "a6b4082076c6f997",
+                "quote_hash": "37f36b74f042ee8b26b38b5e883e828ee3a8627a4d6d8c5c0db95451601e18c2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "格力创投",
+            "role": "A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-081c8476182d3ff7",
+                "quote": "格力创投、松禾资本、云晖资本、国开装备基金、华映资本、广微控股、耀途资本等知名投资机构和产业方联合参投",
+                "source_content_hash": "48f7a6ff96b731e7",
+                "quote_hash": "a0a875bf892469b0fe2386d4aeed2bb9ddc313654b1886f1e17f4b29ce6cc5e8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "松禾资本",
+            "role": "A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-081c8476182d3ff7",
+                "quote": "格力创投、松禾资本、云晖资本、国开装备基金、华映资本、广微控股、耀途资本等知名投资机构和产业方联合参投",
+                "source_content_hash": "48f7a6ff96b731e7",
+                "quote_hash": "a0a875bf892469b0fe2386d4aeed2bb9ddc313654b1886f1e17f4b29ce6cc5e8"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6bd54604da1e7af8",
+            "quote": "壁仞科技 目前已完成多轮融资，公开融资总额超过50亿元人民币",
+            "source_content_hash": "ae21f4669d3e6f4e",
+            "quote_hash": "6bcf54ea6fe81ab8d4682b0beadb93cfeaaa9cbcea944b04f2dba30d71b533ef"
+          },
+          {
+            "source_id": "FISRC-8a38ca95373e5124",
+            "quote": "上海国投先导 人工智能 产业母基金联合领投国内GPU 芯片企业 壁仞科技，数家知名投资机构及产业资本跟投。",
+            "source_content_hash": "a154370b08f3f0d0",
+            "quote_hash": "71de60e50f8837a5970d88ba51cd2338cc3eb16bb3350ea0b168d24269af3684"
+          }
+        ],
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-7a44a47bf36780d2",
+            "round_original": "多轮融资",
+            "amount": "超过50亿元人民币",
+            "announced_at": "2024-09-12",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6bd54604da1e7af8",
+                "quote": "壁仞科技 目前已完成多轮融资，公开融资总额超过50亿元人民币",
+                "source_content_hash": "ae21f4669d3e6f4e",
+                "quote_hash": "6bcf54ea6fe81ab8d4682b0beadb93cfeaaa9cbcea944b04f2dba30d71b533ef"
+              },
+              {
+                "source_id": "FISRC-8a38ca95373e5124",
+                "quote": "上海国投先导 人工智能 产业母基金联合领投国内GPU 芯片企业 壁仞科技，数家知名投资机构及产业资本跟投。",
+                "source_content_hash": "a154370b08f3f0d0",
+                "quote_hash": "71de60e50f8837a5970d88ba51cd2338cc3eb16bb3350ea0b168d24269af3684"
+              }
+            ]
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "壁砺系列通用GPU算力产品",
+          "description": "基于自研GPGPU架构的硬件系统，专为AI负载设计，支持多模态融合和大规模模型训练，包括壁砺106、壁砺110等芯片及PCIe板卡、OAM等硬件形态。",
+          "target_customers": "AI数据中心、电信、金融科技、互联网等高算力行业的大企业",
+          "features": [
+            "支持AI训练和推理",
+            "支持虚拟化和硬件安全引擎",
+            "支持芯粒技术和裸晶间互连"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6bd54604da1e7af8",
+              "quote": "壁仞科技的壁砺系列通用GPU算力产品为该智算中心提供了算力支撑",
+              "source_content_hash": "ae21f4669d3e6f4e",
+              "quote_hash": "75e1100552929329ea46569846b66f6996f21e8d93f9a65880213bb956f1bb6a"
+            },
+            {
+              "source_id": "FISRC-7ddad919b2c67a2f",
+              "quote": "壁仞已开发出 壁砺106、壁砺110 两款芯片。壁砺106用于训练和推理，支持虚拟化和硬件安全引擎；壁砺110用于边缘推理，能效优化，适用于工控、机器人等场景。",
+              "source_content_hash": "1f0d89745e853110",
+              "quote_hash": "355629969fd6173bb234b0db2deff1b03e1746237256634757d63eec288bd24d"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "BIRENSUPA软件平台",
+          "description": "搭建于GPGPU之上的自研软件平台，用于开发AI应用程序，采用分层架构，覆盖驱动程序、库、编程平台、机器学习框架和解决方案。",
+          "target_customers": "AI应用开发者",
+          "features": [
+            "兼容主流第三方软件平台",
+            "支持PyTorch、TensorFlow等开源框架",
+            "提供高性能推理引擎及异构协同训练方案"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7ddad919b2c67a2f",
+              "quote": "另一块产品是自研 BIRENSUPA软件平台 ，搭建于其GPGPU之上，用于开发AI应用程序。",
+              "source_content_hash": "1f0d89745e853110",
+              "quote_hash": "4f43b106b34a9ee41ae402140919533f1f6a06ced75fb9a0523cf9544e8c1922"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "异构GPU协同训练方案HGCT",
+          "description": "中国首个三种异构芯片混训技术，支持3种及以上异构GPU混合训练同一个大模型，突破了大模型异构算力孤岛难题。",
+          "target_customers": "需要进行大规模模型训练的AI公司或研究机构",
+          "features": [
+            "支持壁仞GPU+英伟达GPU+其他国产芯片混合训练",
+            "异构协同通信效率大于98%",
+            "端到端训练效率90-95%"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6bd54604da1e7af8",
+              "quote": "壁仞科技首次公布了异构GPU协同训练方案，这是中国首个三种异构芯片混训技术，支持3种及以上异构GPU混合训练同一个大模型（壁仞GPU+英伟达GPU+其他国产芯片）。",
+              "source_content_hash": "ae21f4669d3e6f4e",
+              "quote_hash": "3eb96c1c90bec5b44a80eb788cfa72096971f8169af6665c190e4944d0616ab0"
+            },
+            {
+              "source_id": "FISRC-8a38ca95373e5124",
+              "quote": "壁仞科技首次公布其自主原创的异构GPU协同训练方案HGCT，异构协同 通信 效率大于98%、端到端训练效率90-95%",
+              "source_content_hash": "a154370b08f3f0d0",
+              "quote_hash": "88daea050d980e02f7ad0cb965e15d9d47e26a98cd94c023536777c7b911aa8a"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "中国移动",
+          "industry": "电信",
+          "use_case": "智算中心算力支撑",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6bd54604da1e7af8",
+              "quote": "中国移动正式对外发布全球运营商最大单体智算中心——中国移动智算中心（呼和浩特），壁仞科技的壁砺系列通用GPU算力产品为该智算中心提供了算力支撑",
+              "source_content_hash": "ae21f4669d3e6f4e",
+              "quote_hash": "3115bc7e2a12e3305e8aa152e3fee9afa6bab2d7a22639b91a1521eef80f5f37"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "中国电信",
+          "industry": "电信",
+          "use_case": "云计算合作伙伴",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6bd54604da1e7af8",
+              "quote": "中国电信宣布壁仞科技为“云网基础设施安全国家工程研究中心云计算合作伙伴”",
+              "source_content_hash": "ae21f4669d3e6f4e",
+              "quote_hash": "e2ca26f2117c758892856fa3d458d4b136d7e7b4cc5dd92b72139889c350a7d2"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "平安集团",
+          "industry": "金融",
+          "use_case": "合作客户",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6bd54604da1e7af8",
+              "quote": "当时透露的合作客户包括中国移动、平安集团等，涵盖互联网、云计算、金融、通信、数据中心等领域。",
+              "source_content_hash": "ae21f4669d3e6f4e",
+              "quote_hash": "1284dad2bee681463eb7cc39ad244c1e9b5217f9b19441edd37316d9c9b8843e"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "商汤科技",
+          "industry": "人工智能",
+          "use_case": "合作客户",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8a38ca95373e5124",
+              "quote": "截至目前，壁仞科技合作客户已覆盖通信 运营商 、AI等多个领域的行业龙头，包括 中国移动 、中国电信、商汤科技",
+              "source_content_hash": "a154370b08f3f0d0",
+              "quote_hash": "1dae63f62305c411f28f939e2eda2679fce6c8686ede61685068d637d9ed667f"
+            }
+          ],
+          "entity_id": "EN-a8100d425f663eac"
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "燧原科技",
+          "product": "AI芯片",
+          "scenario": "AI训练与推理",
+          "target_customer": "数据中心、AI企业",
+          "funding_summary": "",
+          "core_difference": "壁仞科技与燧原科技同为启动A股上市辅导的GPU企业，但壁仞科技辅导券商为国泰君安，燧原科技辅导券商为中金公司。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6bd54604da1e7af8",
+              "quote": "这是今年又一家GPU企业启动上市辅导。8月，AI芯片独角兽上海燧原科技股份有限公司（简称“燧原科技”）在上海证监局办理辅导备案登记",
+              "source_content_hash": "ae21f4669d3e6f4e",
+              "quote_hash": "d00478ad442e6833b90435d3a49ca22772c1d6779db7165d39ebdc07dc4cfee4"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "累计融资总额",
+          "value": "超过50亿元人民币",
+          "observed_at": "2024-09-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6bd54604da1e7af8",
+              "quote": "公开融资总额超过50亿元人民币",
+              "source_content_hash": "ae21f4669d3e6f4e",
+              "quote_hash": "6970ed250e57da377bbd4f1053daa23bd7c040709824c76afd58fc15fbbe3a7e"
+            }
+          ]
+        },
+        {
+          "label": "A轮融资金额",
+          "value": "11亿元人民币",
+          "observed_at": "2020-06-16",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-081c8476182d3ff7",
+              "quote": "今日宣布完成总额为11亿元的A轮融资",
+              "source_content_hash": "48f7a6ff96b731e7",
+              "quote_hash": "74a1363df4f25474dcc7402b9c57a5d077d27144be2b89ef03f8fea3c2618349"
+            }
+          ]
+        },
+        {
+          "label": "港股IPO募资总额",
+          "value": "55.83亿港元",
+          "observed_at": "2026-01-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b98a2abae2c49a7e",
+              "quote": "壁仞科技此次港股IPO共募集资金总额55.83亿港元",
+              "source_content_hash": "5dce31dcc5daba28",
+              "quote_hash": "4fb04599d2462c52985db1420fd83714df6b9ff1b8088f33cd9da0da4f136b81"
+            }
+          ]
+        },
+        {
+          "label": "上市首日市值",
+          "value": "约826亿港元",
+          "observed_at": "2026-01-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b98a2abae2c49a7e",
+              "quote": "截至1月2日收盘，股价报34.46港元，较发行价上涨75.82%，对应市值约826亿港元",
+              "source_content_hash": "5dce31dcc5daba28",
+              "quote_hash": "a8f0a0bcf1f3f1065dcccbc55771699a99dbe1ba9f204cb40dab71af7e9ee9e6"
+            }
+          ]
+        },
+        {
+          "label": "2024年营业收入",
+          "value": "3.37亿元",
+          "observed_at": "2024",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7ddad919b2c67a2f",
+              "quote": "2022年~2024年，壁仞科技的营业收入从50万元涨到3.37亿元",
+              "source_content_hash": "1f0d89745e853110",
+              "quote_hash": "35b4fc1360830456564c535ee49d69433a913afae57cc2e93cef31ae39ac227f"
+            }
+          ]
+        },
+        {
+          "label": "研发人员占比",
+          "value": "约83%",
+          "observed_at": "2025-12-18",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7ddad919b2c67a2f",
+              "quote": "公司有657名研发人员，约占员工总数的 83%",
+              "source_content_hash": "1f0d89745e853110",
+              "quote_hash": "bd8d81e79a7273db830a24301de03f199ef7f987ddb7468fe238fe1d5ca6f3d3"
+            }
+          ]
+        },
+        {
+          "label": "2024年中国GPGPU市场份额",
+          "value": "0.20%",
+          "observed_at": "2024",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b98a2abae2c49a7e",
+              "quote": "公司在2024年中国智能计算芯片市场及GPGPU市场的份额分别为0.16%和0.20%",
+              "source_content_hash": "5dce31dcc5daba28",
+              "quote_hash": "eafcf7ba9f0173779199cc4cb81ed82107896d47af07a3f422ac4975c7a468d8"
+            }
+          ]
+        },
+        {
+          "label": "胡润百富独角兽估值",
+          "value": "155亿元",
+          "observed_at": "2025-03-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8a38ca95373e5124",
+              "quote": "在胡润百富独角兽排行榜上，壁仞科技估值达155亿元。",
+              "source_content_hash": "a154370b08f3f0d0",
+              "quote_hash": "6fee3f7e2493bc686bc7afd9b247b633cdf6cf29819c4589c02ce3eb444fa36e"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "张文",
+          "quote": "壁仞科技的创立，恰逢中国半导体行业发展到了一个关键时刻，严格意义上说是走到了产业变革的十字路口。我们希望承担历史使命，成为改变中国芯片行业的践行者。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-081c8476182d3ff7",
+              "quote": "壁仞科技的创立，恰逢中国半导体行业发展到了一个关键时刻，严格意义上说是走到了产业变革的十字路口。我们希望承担历史使命，成为改变中国芯片行业的践行者。",
+              "source_content_hash": "48f7a6ff96b731e7",
+              "quote_hash": "c6461c0c8051b12eba953a9ce699af9392f3abb96ddea40a3a5447108d8e1944"
+            }
+          ]
+        },
+        {
+          "speaker": "上海国投先导基金",
+          "quote": "本次联合领投壁仞科技，不仅在资本层面耐心加持，未来将在技术攻关、产业赋能、生态链接等方面深化资源协同，彰显了上海加速构建全国产自主可控智能算力体系的决心，以国芯国用夯实AI产业根基，以生态协同打造全球竞争力。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8a38ca95373e5124",
+              "quote": "本次联合领投壁仞科技，不仅在资本层面耐心加持，未来将在技术攻关、产业赋能、生态链接等方面深化资源协同，彰显了上海加速构建全国产自主可控智能算力体系的决心，以国芯国用夯实AI产业根基，以生态协同打造全球竞争力。",
+              "source_content_hash": "a154370b08f3f0d0",
+              "quote_hash": "aac58720709aad2ebe530d814295d8a5f26363c3139ab2c2d7590326986a1366"
+            }
+          ]
+        },
+        {
+          "speaker": "华登国际合伙人王林",
+          "quote": "国产GPU的发展已明显滞后于国产CPU与存储器。在这样的情况下，壁仞科技将资本带进芯片市场，被期待为中国GPU技术发展助力。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-081c8476182d3ff7",
+              "quote": "国产GPU的发展已明显滞后于国产CPU与存储器。在这样的情况下，壁仞科技将资本带进芯片市场，被期待为中国GPU技术发展助力。",
+              "source_content_hash": "48f7a6ff96b731e7",
+              "quote_hash": "220c4cb6b1c22899bf9218b3c9bbe99c92bdef0b104364e75905cf842d885cbe"
+            }
+          ]
+        },
+        {
+          "speaker": "启明创投合伙人周志峰",
+          "quote": "在智能计算和人工智能领域，芯片占整体技术栈价值的40-50%，而在其他领域只占10%以下，因此这是芯片领域近几十年最大的机会。挑战这么大的机会，全能的团队是最重要的根基。壁仞科技的核心团队在技术、市场和资本三个方面都拥有一流的经验。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-081c8476182d3ff7",
+              "quote": "在智能计算和人工智能领域，芯片占整体技术栈价值的40-50%，而在其他领域只占10%以下，因此这是芯片领域近几十年最大的机会。挑战这么大的机会，全能的团队是最重要的根基。壁仞科技的核心团队在技术、市场和资本三个方面都拥有一流的经验。",
+              "source_content_hash": "48f7a6ff96b731e7",
+              "quote_hash": "2d53d3a2e3979e7842fdd0fcf995dac756c10e16a1a1ee2950ec1259f6795126"
+            }
+          ]
+        },
+        {
+          "speaker": "上海国投先导基金",
+          "quote": "从算法到芯片体现单点突破，从芯片到集群实现生态崛起，人工智能的发展离不开算力筑基。下一步，国投先导将持续发挥国有资本的战略引领作用，围绕‘2+3+1’的投资策略持续进行生态布局，助力和陪伴一批人工智能核心创新型企业，实现上海/中国人工智能从‘跟跑’到‘并跑’，最终再‘领跑’的跨越。智算赢未来，国产当自强。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8a38ca95373e5124",
+              "quote": "从算法到芯片体现单点突破，从芯片到集群实现生态崛起，人工智能的发展离不开算力筑基。下一步，国投先导将持续发挥国有资本的战略引领作用，围绕‘2+3+1’的投资策略持续进行生态布局，助力和陪伴一批人工智能核心创新型企业，实现上海/中国人工智能从‘跟跑’到‘并跑’，最终再‘领跑’的跨越。智算赢未来，国产当自强。",
+              "source_content_hash": "a154370b08f3f0d0",
+              "quote_hash": "ce015181b1c87f4878de845bc49328fcaf7a58c89b07a5aa71e141e5a6d58b96"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "上海国投先导人工智能产业母基金",
+            "speaker": "上海国投先导基金",
+            "speaker_role": "投资方",
+            "rationale": "上海国投先导基金认为，人工智能的发展离不开算力筑基，投资壁仞科技旨在加速构建全国产自主可控智能算力体系，通过资本、技术、产业和生态的多维协同，实现中国AI从跟跑到领跑的跨越。",
+            "quote": "本次联合领投壁仞科技，不仅在资本层面耐心加持，未来将在技术攻关、产业赋能、生态链接等方面深化资源协同，彰显了上海加速构建全国产自主可控智能算力体系的决心，以国芯国用夯实AI产业根基，以生态协同打造全球竞争力。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8a38ca95373e5124",
+                "quote": "本次联合领投壁仞科技，不仅在资本层面耐心加持，未来将在技术攻关、产业赋能、生态链接等方面深化资源协同，彰显了上海加速构建全国产自主可控智能算力体系的决心，以国芯国用夯实AI产业根基，以生态协同打造全球竞争力。",
+                "source_content_hash": "a154370b08f3f0d0",
+                "quote_hash": "aac58720709aad2ebe530d814295d8a5f26363c3139ab2c2d7590326986a1366"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是国产高端通用GPU在AI算力基础设施中的不可替代性以及国产替代的确定性趋势。本轮融资由上海国投先导人工智能产业母基金联合领投，是其在AI生态布局中的首个直投项目，体现了上海国资对构建全国产自主可控智能算力体系的战略决心。壁仞科技已验证的信号包括：首款通用GPU芯片BR100系列成功点亮并创下全球算力纪录，异构GPU协同训练方案HGCT实现中国在该领域零的突破，以及其产品已进入中国移动、中国电信等关键基础设施客户的智算中心。然而，公司目前市场份额极低（2024年GPGPU市场份额仅0.20%），且持续处于巨额亏损状态，商业化仍处于非常早期的阶段，其估值主要基于技术突破和战略价值，而非当前的财务表现。",
+        "validated_signals": [
+          "首款通用GPU芯片BR100系列成功点亮，峰值算力达到国际厂商在售旗舰产品3倍以上。",
+          "发布中国首个三种异构芯片混训技术HGCT，异构协同通信效率大于98%。",
+          "产品已为中国移动全球运营商最大单体智算中心提供算力支撑。",
+          "已启动科创板IPO上市辅导，并成功在港交所上市。"
+        ],
+        "risks": [
+          "商业化进程缓慢，2024年在中国GPGPU市场份额仅为0.20%，收入规模与研发投入严重不匹配，持续巨额亏损。",
+          "面临英伟达等国际巨头的强大技术生态和市场竞争，以及摩尔线程、沐曦等国内GPU公司的激烈竞争，技术领先性能否转化为市场优势存在不确定性。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "chips",
+        "use_case_ids": [
+          "software_development"
+        ],
+        "industry_ids": [
+          "telecommunications",
+          "financial_services"
+        ],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ],
+        "sector": "半导体与集成电路",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是国产高端通用GPU在AI算力基础设施中的不可替代性以及国产替代的确定性趋势。本轮融资由上海国投先导人工智能产业母基金联合领投，是其在AI生态布局中的首个直投项目，体现了上海国资对构建全国产自主可控智能算力体系的战略决心。壁仞科技已验证的信号包括：首款通用GPU芯片BR100系列成功点亮并创下全球算力纪录，异构GPU协同训练方案HGCT实现中国在该领域零的突破，以及其产品已进入中国移动、中国电信等关键基础设施客户的智算中心。然而，公司目前市场份额极低（2024年GPGPU市场份额仅0.20%），且持续处于巨额亏损状态，商业化仍处于非常早期的阶段，其估值主要基于技术突破和战略价值，而非当前的财务表现。",
+          "evidence_signals": [
+            "首款通用GPU芯片BR100系列成功点亮，峰值算力达到国际厂商在售旗舰产品3倍以上。",
+            "发布中国首个三种异构芯片混训技术HGCT，异构协同通信效率大于98%。",
+            "产品已为中国移动全球运营商最大单体智算中心提供算力支撑。",
+            "已启动科创板IPO上市辅导，并成功在港交所上市。"
+          ],
+          "risks": [
+            "商业化进程缓慢，2024年在中国GPGPU市场份额仅为0.20%，收入规模与研发投入严重不匹配，持续巨额亏损。",
+            "面临英伟达等国际巨头的强大技术生态和市场竞争，以及摩尔线程、沐曦等国内GPU公司的激烈竞争，技术领先性能否转化为市场优势存在不确定性。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "壁砺系列通用GPU算力产品",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "BIRENSUPA软件平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "异构GPU协同训练方案HGCT",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "张文",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "上海国投先导人工智能产业母基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "启明创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "IDG资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "华登国际中国基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "高瓴创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "中国平安",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "碧桂园创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "格力创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "松禾资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "中国移动",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "中国电信",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "平安集团",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "商汤科技",
+          "canonical_entity_id": "EN-a8100d425f663eac",
+          "canonical_name": "商汤科技"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "燧原科技",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-7a44a47bf36780d2",
+          "date": "2026-08-03",
+          "title": "已累计融资超50亿元！AI芯片独角兽壁仞科技启动上市辅导",
+          "amount": "50亿",
+          "source_refs": [
+            "SA-9e245d9c6509da9f"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-6bd54604da1e7af8",
+          "source_url": "https://www.cls.cn/detail/1797038",
+          "title": "已累计融资超50亿元！AI芯片独角兽壁仞科技启动上市辅导",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-03T00:20:51.578Z",
+          "content_hash": "ae21f4669d3e6f4e",
+          "source_artifact_id": "SA-9e245d9c6509da9f",
+          "raw_id": "RAW-acf3dbe5d5abe2fe"
+        },
+        {
+          "source_id": "FISRC-c05765865eec0b08",
+          "source_url": "https://birentech.com/",
+          "title": "壁仞科技",
+          "publisher": "birentech.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-08-03T02:05:01.489Z",
+          "content_hash": "265e877fd605effe",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-081c8476182d3ff7",
+          "source_url": "https://36kr.com/p/753999774079237",
+          "title": "最前线 | 成立九个月后，壁仞科技创完成11亿元A轮融资-36氪",
+          "publisher": "36kr.com",
+          "source_class": "secondary",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-03T02:05:02.497Z",
+          "content_hash": "48f7a6ff96b731e7",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-8a38ca95373e5124",
+          "source_url": "https://www.eefocus.com/article/1814720.html",
+          "title": "上海GPU独角兽，IPO前再融资 - 与非网",
+          "publisher": "eefocus.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-03T02:05:03.836Z",
+          "content_hash": "a154370b08f3f0d0",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-b98a2abae2c49a7e",
+          "source_url": "https://36kr.com/p/3624950976770564",
+          "title": "起步800亿，谁在“港股GPU第一股”身上赚的最多？-36氪",
+          "publisher": "36kr.com",
+          "source_class": "secondary",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-03T02:05:05.367Z",
+          "content_hash": "5dce31dcc5daba28",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-d13c49d0024ccf9b",
+          "source_url": "https://36kr.com/p/3225593100057736",
+          "title": "上海国资投了一家独角兽-36氪",
+          "publisher": "36kr.com",
+          "source_class": "secondary",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-03T02:05:06.392Z",
+          "content_hash": "a6b4082076c6f997",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-7ddad919b2c67a2f",
+          "source_url": "https://www.36kr.com/p/3600885123924224",
+          "title": "港股通用GPU第一股也冲刺了，哈佛博士带队，估值209亿-36氪",
+          "publisher": "36kr.com",
+          "source_class": "secondary",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-03T02:05:07.518Z",
+          "content_hash": "1f0d89745e853110",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.5",
+        "generated_at": "2026-08-03T02:06:00.641Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-03T02:06:00.641Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 7
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "BIRENSUPA软件平台",
+            "壁砺系列通用GPU算力产品",
+            "异构GPU协同训练方案HGCT"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "张文"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-7a44a47bf36780d2"
+      ],
+      "aggregation": {
+        "key": "EN-721eb3fd31f8e1f6|multi_round",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "chip_accelerator",
+        "name": "芯片与加速器",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "infrastructure_compute",
+        "name": "基础设施与算力",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "hardware_computing",
+        "name": "硬件与算力",
+        "method": "card_explicit"
+      },
+      "market_application": {
+        "dimension": "ai_market_application",
+        "id": "chips",
+        "name": "芯片",
+        "method": "card_explicit"
+      },
+      "links": {
+        "company": "data-center.html?view=index&detail=entity&id=EN-721eb3fd31f8e1f6",
+        "relation_map": "data-center.html?view=relations&entity=EN-721eb3fd31f8e1f6",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-7a44a47bf36780d2",
+        "direction": ""
+      }
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-12926d5682fee68e",

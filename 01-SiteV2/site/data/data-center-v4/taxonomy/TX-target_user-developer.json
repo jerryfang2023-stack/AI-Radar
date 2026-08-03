@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T06:26:49.223Z",
-    "latestDataDate": "2026-08-02",
-    "currentDate": "2026-08-02",
-    "eventCount": 1779,
-    "quarantinedEventCount": 15
+    "generatedAt": "2026-08-03T02:04:50.067Z",
+    "latestDataDate": "2026-08-03",
+    "currentDate": "2026-08-03",
+    "eventCount": 1796,
+    "quarantinedEventCount": 18
   },
   "node": {
     "id": "TX-target_user-developer",
@@ -280,7 +280,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2023-04-27",
-    "lastSeen": "2026-08-01"
+    "lastSeen": "2026-08-03"
   },
   "events": [
     {
@@ -1603,24 +1603,22 @@
     },
     {
       "id": "EV-3fb827f44ea109de",
-      "dataDate": "2026-07-28",
-      "date": "2026-07-23",
-      "updatedDate": "2026-07-28",
+      "dataDate": "2026-08-03",
+      "date": "2026-07-22",
+      "updatedDate": "2026-08-03",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Paper 基于导致 Figma 市值腰斩的同一论点融资 3400 万美元",
-      "originalTitle": "Paper raised $34M on the exact thesis that wiped out half of Figma's market cap - Startup Fortune",
+      "title": "Paper 融资 3400 万美元，打造下一代卓越设计平台",
+      "originalTitle": "Paper raises $34M to build the next great design platform",
       "subject": "Paper",
-      "action": "raised",
-      "object": "$34M on the exact thesis that wiped out half of Figma's market cap - Startup Fortune",
+      "action": "raises",
+      "object": "$34M to build the next great design platform",
       "metrics": [
-        "$34M",
-        "$34 million",
-        "52%"
+        "$34M"
       ],
       "locations": [],
       "missingFields": [],
@@ -1932,19 +1930,15 @@
         }
       ],
       "entityIds": [
-        "EN-382635c9325bf327",
-        "EN-c70eca6b0f88f44d",
-        "EN-7d3194f79e645c42"
+        "EN-382635c9325bf327"
       ],
       "entityNames": [
-        "Paper",
-        "Anthropic",
-        "OpenAI"
+        "Paper"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://startupfortune.com/paper-raised-34m-on-the-exact-thesis-that-wiped-out-half-of-figmas-market-cap",
-      "publisher": "startupfortune.com"
+      "sourceUrl": "https://paper.design/blog/series-a",
+      "publisher": "paper.design"
     },
     {
       "id": "EV-c7ba7b093a1a3b94",
@@ -47155,8 +47149,8 @@
         "TX-use_case-software_development"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-07-23",
-      "lastSeen": "2026-07-28"
+      "firstSeen": "2026-07-22",
+      "lastSeen": "2026-08-03"
     },
     {
       "id": "EN-0f3360879e746531",
@@ -47696,6 +47690,7 @@
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
         "EV-a86b04e679044c45",
+        "EV-64178e5d858f5e25",
         "EV-1bb68bb234c0dc36",
         "EV-87b7a16e70770a36",
         "EV-e09efcd49776cb95",
@@ -47819,9 +47814,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-target_user-business_user",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
@@ -47869,7 +47864,7 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": "EN-ed9980025e312ded",
@@ -47886,8 +47881,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-use_case-physical_automation",
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-industry-automotive_transportation",
@@ -48379,7 +48374,6 @@
       ],
       "eventIds": [
         "EV-136b2edc9b9f3be8",
-        "EV-3fb827f44ea109de",
         "EV-d7a7244d620a2142",
         "EV-fbb105be35c21eb4",
         "EV-e41fc65eb014893f",
@@ -48697,7 +48691,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": "EN-d387c8c96239d383",
@@ -49003,6 +48997,7 @@
         "EV-d4d7b019ff0015df",
         "EV-27b69ea604475b72",
         "EV-f8c3a83d883c9b22",
+        "EV-6ce6bebf0d6408d9",
         "EV-6374a712070b1f8c",
         "EV-b27f2e417d779e5f",
         "EV-8f2787ceb5224cc9",
@@ -49046,7 +49041,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": "EN-641a309108850fc9",
@@ -49507,8 +49502,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-use_case-physical_automation",
+        "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-product_form-end_user_application",
         "TX-industry-aerospace_defense",
@@ -50164,6 +50159,7 @@
       "eventIds": [
         "EV-cf6e7a2edad82c6f",
         "EV-0e84a2f49d765ce3",
+        "EV-96198b8644eb94d9",
         "EV-caec65aef89d3b4a",
         "EV-ab3586268ebfab38",
         "EV-86537be17d50ff20"
@@ -50182,7 +50178,7 @@
         "EN-779965438dd9e7a7"
       ],
       "firstSeen": "2026-06-08",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": "EN-67e05af6c6502566",
@@ -50435,6 +50431,8 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-5e85bc91a6924760",
+        "EV-ab1b780e6e543b42",
         "EV-cf4da5583e9311d7",
         "EV-ebd76d18d3f0ee7b",
         "EV-60110525440fac47",
@@ -50585,6 +50583,7 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
+        "EN-307557d99a7eb726",
         "EN-8d323d8bba783aa3",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
@@ -50604,7 +50603,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": "EN-8e8cc11d1475231b",
@@ -50921,8 +50920,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-use_case-physical_automation",
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-industry-manufacturing",

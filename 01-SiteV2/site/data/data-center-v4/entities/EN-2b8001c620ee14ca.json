@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T06:26:49.223Z",
-    "latestDataDate": "2026-08-02",
-    "currentDate": "2026-08-02",
-    "eventCount": 1779,
-    "quarantinedEventCount": 15
+    "generatedAt": "2026-08-03T02:04:50.067Z",
+    "latestDataDate": "2026-08-03",
+    "currentDate": "2026-08-03",
+    "eventCount": 1796,
+    "quarantinedEventCount": 18
   },
   "entity": {
     "id": "EN-2b8001c620ee14ca",
@@ -24,7 +24,8 @@
     ],
     "eventIds": [],
     "viewpointIds": [
-      "2083230295206121807",
+      "2083722999430050281",
+      "2083534333428580501",
       "2076783865528516971",
       "2074258147015897357",
       "2073920959011074292",
@@ -40,7 +41,7 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-14",
-    "lastSeen": "2026-08-01",
+    "lastSeen": "2026-08-02",
     "handle": "thenanyu",
     "role": "head of product linear",
     "organization": "Linear",
@@ -78,10 +79,16 @@
     "timeline": [],
     "viewpoints": [
       {
-        "id": "2083230295206121807",
+        "id": "2083722999430050281",
+        "date": "2026-08-02",
+        "title": "你应该能够为你打开的问题和开源仓库质押代币。在问题中附上一份包含质押的规范说明。如果维护者接受，GitHub 会将问题原样传递给一个云端编码代理，费用由请求者承担。不再有敷衍了事的拉取请求。",
+        "sourceUrl": "https://x.com/thenanyu/status/2083722999430050281"
+      },
+      {
+        "id": "2083534333428580501",
         "date": "2026-08-01",
-        "title": "Linear 中最常见的循环是这种变体（问题 > 代理 > PR > 发布），大约 30% 的缺陷会完整走完这个流程。但实际操作中有一些细微之处——指令应要求代理深入调查问题的根本原因，并使用 Datadog 和 Sentry MCP 收集更多证据。只有在高度确定的情况下才应尝试提供修复方案，否则会消耗大量 token。如果在研究过程中认为更多证据会有帮助，比如请报告者提供复现步骤等，代理应在问题上留言请求。代理也需要被教导遵循良好实践，就像人一样！",
-        "sourceUrl": "https://x.com/thenanyu/status/2083230295206121807"
+        "title": "实际发生的情况是，循环会在该问题上留下评论，并附上所有上下文。当你回复评论补充更多细节并解除流程阻塞时，代理就会继续工作 https://t.co/nlxeWm45Mr",
+        "sourceUrl": "https://x.com/thenanyu/status/2083534333428580501"
       },
       {
         "id": "2076783865528516971",

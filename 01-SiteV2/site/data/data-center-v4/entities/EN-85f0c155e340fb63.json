@@ -1,0 +1,424 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-03T02:04:50.067Z",
+    "latestDataDate": "2026-08-03",
+    "currentDate": "2026-08-03",
+    "eventCount": 1796,
+    "quarantinedEventCount": 18
+  },
+  "entity": {
+    "id": "EN-85f0c155e340fb63",
+    "name": "启元机器人",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-b40ba79822469bc0"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-use_case-physical_automation",
+      "TX-technology-embodied_ai"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-02",
+    "lastSeen": "2026-08-03",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-b40ba79822469bc0"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-b40ba79822469bc0",
+        "dataDate": "2026-08-03",
+        "date": "2026-08-02",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "启元机器人宣布与暴雪《魔兽世界》合作，推出限定\"鱼人定制款\"Q1",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-85f0c155e340fb63"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-85f0c155e340fb63"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-85f0c155e340fb63",
+          "EN-0f09eb70713e0871"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-use_case-physical_automation",
+      "name": "物理自动化",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "physical_automation",
+      "eventIds": [
+        "EV-e9e30789854cd180",
+        "EV-eb881f5de456b59a",
+        "EV-c7ba7b093a1a3b94",
+        "EV-fcf3c464260b6730",
+        "EV-4e1d2d6105d09d24",
+        "EV-869c9ea96c58873d",
+        "EV-80e54c9a390da293",
+        "EV-52bf48005db3461a",
+        "EV-9fa9822969d3c3fd",
+        "EV-236cbc2d64f0c455",
+        "EV-9486e14e99499e3b",
+        "EV-ef7346378fcf9746",
+        "EV-59882383f82f215d",
+        "EV-cded77b1de2db61a",
+        "EV-cafe435ddd007821",
+        "EV-434dcf1813a84ead",
+        "EV-f059fd80d668c6bc",
+        "EV-e7b228c1b6b54c6a",
+        "EV-57d3b7aa1a2f0fda",
+        "EV-234ad54940674bf6",
+        "EV-b40ba79822469bc0",
+        "EV-8540958262148517",
+        "EV-f2551f5cc8e2715e",
+        "EV-5a9fe80f8e4ae066",
+        "EV-e4fec8a00b416d12",
+        "EV-39848cdd62c00e59",
+        "EV-4faa2bcf2e42e60c",
+        "EV-eb12fb9dd08e5aad",
+        "EV-7a0f201debe99f2b",
+        "EV-60110525440fac47",
+        "EV-6bac0bf442887889",
+        "EV-c7e1e920e54bb364",
+        "EV-f79713437230562f",
+        "EV-2bbbe9f38c3d66f0",
+        "EV-03d40407042d7986",
+        "EV-7f92b7e410ed08f1",
+        "EV-b76705cd8461925f",
+        "EV-03ab7d0b40d1e5b5",
+        "EV-d4278191ae11f198",
+        "EV-ed272c57e1513d3f",
+        "EV-6833305504174bb1",
+        "EV-73da0805f2a2705a",
+        "EV-345c8a2cc00fe8ca",
+        "EV-a69dd82a0512a294",
+        "EV-c844ddabb8528896",
+        "EV-c5a59cb4cc9d7e8e",
+        "EV-d1e8407177e11fdc",
+        "EV-941ba9ebdc43f20c",
+        "EV-6b51b1b6fe22c540",
+        "EV-303b418c63895ba6",
+        "EV-3353bd96728c99e2",
+        "EV-57565fc2e7502c59",
+        "EV-87d662ff5c6f05f4",
+        "EV-49751dfc7d2f6d6c",
+        "EV-66338f5fb682617e",
+        "EV-e1a7e7dcb19bfc70",
+        "EV-c834a9d33a86373c",
+        "EV-24a536bc53a87050",
+        "EV-3f8ba5855b64dd1a",
+        "EV-7da59380bb30e76a",
+        "EV-67f32771d69084d6",
+        "EV-df3f5cf6bc985a9c",
+        "EV-1587a760d81451be",
+        "EV-ad64347138da72bb"
+      ],
+      "entityIds": [
+        "EN-b73a9d7b59c9b674",
+        "EN-0f3360879e746531",
+        "EN-7ef08ef63597d47c",
+        "EN-ed9980025e312ded",
+        "EN-4e0a97cb956fb1c6",
+        "EN-8d4321d936320802",
+        "EN-6b5df3bd8bb0c67d",
+        "EN-b51b27d89f9ea747",
+        "EN-05f6ecf01ac4ebec",
+        "EN-e78bdebae031095b",
+        "EN-883be863cc6562bb",
+        "EN-a83a3af1a4866fd5",
+        "EN-3b39ea849059759f",
+        "EN-3cce50ffb12f1a69",
+        "EN-85f0c155e340fb63",
+        "EN-3e14bbbb0445c2de",
+        "EN-7c5d04104b1d34e7",
+        "EN-72138e570e5103e2",
+        "EN-2b6e51bec93e86c1",
+        "EN-364df82f85761d58",
+        "EN-8d57f84bd1847b24",
+        "EN-febedfcafee9d610",
+        "EN-240389f4b730bad4",
+        "EN-593d0361124f348f",
+        "EN-a96df57737b74def",
+        "EN-e2c64fbbaf48eeb2",
+        "EN-0e6e48aba1669631",
+        "EN-d77c36c05230024c",
+        "EN-be548deba4a093d7",
+        "EN-c51e27d8efcff21f",
+        "EN-522d3edeb64a7ca4",
+        "EN-8afd897b5b887b06",
+        "EN-920510199770f4d6",
+        "EN-30081094f2a8c83d",
+        "EN-4e7e886400fe6a83",
+        "EN-0d049cd1e9f619f9",
+        "EN-7f6333102da9e8bd",
+        "EN-5e1fcba4c9f1cf69",
+        "EN-80ea42a231357d12",
+        "EN-0a7411a215b0fa5b"
+      ],
+      "fdeIds": [
+        "FDE-a9fc583eb4065d4d",
+        "FDE-dadf0e9572889d3d"
+      ],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3",
+        "HW-8ec8f237534254df",
+        "HW-eb5bba1ad6c016b0",
+        "HW-b13c3131fc20fe83",
+        "HW-155f566cfd988f5e",
+        "HW-cb9cc06cadda488b",
+        "HW-0ebffabe51a60966",
+        "HW-dca442211b264bbe"
+      ],
+      "firstSeen": "2026-03-13",
+      "lastSeen": "2026-08-03"
+    },
+    {
+      "id": "TX-technology-embodied_ai",
+      "name": "具身智能",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "embodied_ai",
+      "eventIds": [
+        "EV-fcf3c464260b6730",
+        "EV-43b56d49df9a73a2",
+        "EV-5bfbab92b22b68f1",
+        "EV-cafe435ddd007821",
+        "EV-234ad54940674bf6",
+        "EV-b40ba79822469bc0",
+        "EV-acb2087779a8ea3c",
+        "EV-6415a58637893b34",
+        "EV-4faa2bcf2e42e60c",
+        "EV-eb12fb9dd08e5aad",
+        "EV-60110525440fac47",
+        "EV-c4f8ef356373ab24",
+        "EV-7f92b7e410ed08f1",
+        "EV-b580e33cabfea980",
+        "EV-4cb7e4c371fb252e",
+        "EV-2499dc922663af7e",
+        "EV-345c8a2cc00fe8ca",
+        "EV-82b39e10391d0f3c",
+        "EV-941ba9ebdc43f20c",
+        "EV-6b51b1b6fe22c540",
+        "EV-d633676a4a7d89a3",
+        "EV-6a2f3e9a22edff64",
+        "EV-49751dfc7d2f6d6c",
+        "EV-197aac95e60671f7",
+        "EV-24a536bc53a87050",
+        "EV-e2d4132c671e3d41",
+        "EV-3f8ba5855b64dd1a",
+        "EV-08f736f61f2b46f3"
+      ],
+      "entityIds": [
+        "EN-7ef08ef63597d47c",
+        "EN-bbdefa2950f49882",
+        "EN-8d4321d936320802",
+        "EN-85f0c155e340fb63",
+        "EN-240389f4b730bad4",
+        "EN-2b6e51bec93e86c1",
+        "EN-b47de584b4515427",
+        "EN-149ae7e9819a17a0",
+        "EN-02865db849986974",
+        "EN-0e6e48aba1669631",
+        "EN-754c490bd199c21a",
+        "EN-30081094f2a8c83d",
+        "EN-67f2d22514622d1b",
+        "EN-7f6333102da9e8bd",
+        "EN-89e3f0711b76932c",
+        "EN-5e1fcba4c9f1cf69"
+      ],
+      "fdeIds": [
+        "FDE-becc5964d9b5f86c",
+        "FDE-dadf0e9572889d3d",
+        "FDE-a85c538af1b093ed"
+      ],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3",
+        "HW-eb5bba1ad6c016b0",
+        "HW-155f566cfd988f5e",
+        "HW-dca442211b264bbe",
+        "HW-1450585d9cd5879f"
+      ],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-08-03"
+    }
+  ],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-8eb9e3e3cf6ea367",
+      "snapshotKey": "8eb9e3e3cf6ea367",
+      "snapshotId": "HWS-12dc4775928bb24b",
+      "eventId": "EV-b40ba79822469bc0",
+      "eventIds": [
+        "EV-b40ba79822469bc0"
+      ],
+      "dataDate": "2026-08-03",
+      "date": "2026-08-03",
+      "title": "启元机器人",
+      "subject": "启元机器人",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-b9abe4e7e221d517"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-03",
+          "hardware_fact_id": "HWF-d7968ea4e7f9b569",
+          "fact_type": "product",
+          "observed_at": "2026-08-02T08:30:31.000Z",
+          "subject_entity_id": "EN-85f0c155e340fb63",
+          "subject_name": "启元机器人",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "上纬新材启元宣布与暴雪《魔兽世界》合作，推出限定“鱼人定制款”Q1 机器人 - IT之家",
+          "event_refs": [
+            "EV-b40ba79822469bc0"
+          ],
+          "claim_ref": "CL-820a454684276421",
+          "source_refs": [
+            "SA-ef4ab2531521893b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-03",
+          "hardware_fact_id": "HWF-3d3f98fda91aaf6b",
+          "fact_type": "product",
+          "observed_at": "2026-08-02T08:30:31.000Z",
+          "subject_entity_id": "EN-85f0c155e340fb63",
+          "subject_name": "启元机器人",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "上纬新材启元宣布与暴雪《魔兽世界》合作，推出限定“鱼人定制款”Q1 机器人",
+          "event_refs": [
+            "EV-b40ba79822469bc0"
+          ],
+          "claim_ref": "CL-46137d43b05cd905",
+          "source_refs": [
+            "SA-ef4ab2531521893b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-03",
+          "hardware_fact_id": "HWF-b9abe4e7e221d517",
+          "fact_type": "product",
+          "observed_at": "2026-08-02T08:30:31.000Z",
+          "subject_entity_id": "EN-85f0c155e340fb63",
+          "subject_name": "启元机器人",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 8 月 2 日消息，上纬新材料科技股份有限公司（上纬新材）旗下消费级具身智能品牌“启元机器人”在 2026 年度 ChinaJoy 期间官宣与暴雪《魔兽世界》进行合作，推出活动限定“鱼人定制款”启元 Q1。",
+          "event_refs": [
+            "EV-b40ba79822469bc0"
+          ],
+          "claim_ref": "CL-8f334a11526d331d",
+          "source_refs": [
+            "SA-ef4ab2531521893b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-85f0c155e340fb63"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/984/758.htm",
+      "entityIds": [
+        "EN-85f0c155e340fb63",
+        "EN-0f09eb70713e0871"
+      ]
+    }
+  ]
+}

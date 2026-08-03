@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T06:26:49.223Z",
-    "latestDataDate": "2026-08-02",
-    "currentDate": "2026-08-02",
-    "eventCount": 1779,
-    "quarantinedEventCount": 15
+    "generatedAt": "2026-08-03T02:04:50.067Z",
+    "latestDataDate": "2026-08-03",
+    "currentDate": "2026-08-03",
+    "eventCount": 1796,
+    "quarantinedEventCount": 18
   },
   "entity": {
     "id": "EN-9fbf261b62c1d7c0",
@@ -59,6 +59,8 @@
       "EV-58c1cc3749294649",
       "EV-c0a65877001ed413",
       "EV-bd508dbe4205774f",
+      "EV-890ffd351486b884",
+      "EV-ab1b780e6e543b42",
       "EV-4c949b6aac6d26e7",
       "EV-7a4d1e871dcd3b1f",
       "EV-3eb44a239ebef4b0",
@@ -151,7 +153,7 @@
       "EN-8d4321d936320802"
     ],
     "firstSeen": "2026-02-13",
-    "lastSeen": "2026-08-02",
+    "lastSeen": "2026-08-03",
     "relationIds": [
       "REL2-4410cf5eef104c6e",
       "REL2-8dc67631418aa4d4",
@@ -210,6 +212,8 @@
         "EV-c0a65877001ed413"
       ],
       "productsServices": [
+        "EV-890ffd351486b884",
+        "EV-ab1b780e6e543b42",
         "EV-4c949b6aac6d26e7",
         "EV-7a4d1e871dcd3b1f",
         "EV-3eb44a239ebef4b0",
@@ -284,6 +288,101 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-890ffd351486b884",
+        "dataDate": "2026-08-03",
+        "date": "2026-08-03",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "2026年开源在企业AI中的角色",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "customer_support",
+            "name": "客户支持",
+            "entityIds": [
+              "EN-a899a3dde1d51caf"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [
+              "EN-a899a3dde1d51caf"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-a899a3dde1d51caf"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-a899a3dde1d51caf",
+          "EN-9fbf261b62c1d7c0",
+          "EN-501b5d14e7e82c01",
+          "EN-e75a2e5083aa0089"
+        ]
+      },
+      {
+        "id": "EV-ab1b780e6e543b42",
+        "dataDate": "2026-08-03",
+        "date": "2026-08-01",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "GreenCore Solutions Corp. (GSC) 推出 -- 代理合作伙伴计划 (APP) -- 面向代理快消品客户的 AI 智能体",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-d0cdc9650aa64450"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-d0cdc9650aa64450"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-d0cdc9650aa64450",
+          "EN-9fbf261b62c1d7c0",
+          "EN-bbdefa2950f49882",
+          "EN-9481854d4b3de511",
+          "EN-079e02f095976cad",
+          "EN-b3d87dc46afd1a3d"
+        ]
+      },
       {
         "id": "EV-9ed6a759555d7e77",
         "dataDate": "2026-08-02",
@@ -3982,7 +4081,6 @@
         "EV-81a37a2365624b42",
         "EV-97854226b6f43a95",
         "EV-136b2edc9b9f3be8",
-        "EV-3fb827f44ea109de",
         "EV-14cc7f194f3e5af8",
         "EV-d7a7244d620a2142",
         "EV-4da1a7c4d527eb69",
@@ -4196,6 +4294,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-31e78ede8fd890bf",
         "EV-7c263093f5e663c9",
         "EV-b4f38d8bff12727b",
         "EV-56b36a56d729c20d",
@@ -4300,7 +4399,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": "EN-38945a66b4806b11",
@@ -4373,6 +4472,7 @@
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
         "EV-a86b04e679044c45",
+        "EV-64178e5d858f5e25",
         "EV-1bb68bb234c0dc36",
         "EV-87b7a16e70770a36",
         "EV-e09efcd49776cb95",
@@ -4496,9 +4596,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-target_user-business_user",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
@@ -4546,7 +4646,7 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     }
   ],
   "relationships": [
@@ -4721,10 +4821,10 @@
         "EV-2a78dd5feb40a78a",
         "EV-33b3cf34f8ff7bd8",
         "EV-136b2edc9b9f3be8",
-        "EV-3fb827f44ea109de",
         "EV-bffc68e7bb4d598b",
         "EV-9b81b0dd09a046ab",
         "EV-a64fab2ce6bc6c4c",
+        "EV-3fb827f44ea109de",
         "EV-754e83c2d19005fe",
         "EV-fcf3c464260b6730",
         "EV-2069f6a931b8c9d6",
@@ -4870,6 +4970,7 @@
         "EV-43301de739fe560e",
         "EV-7f2811d2272cf4a3",
         "EV-c0a65877001ed413",
+        "EV-890ffd351486b884",
         "EV-4c949b6aac6d26e7",
         "EV-59fb7ba1fd6ac55e",
         "EV-385dc1ac09a211bd",
@@ -5035,6 +5136,7 @@
         "EN-50e2a4156631df49",
         "EN-b1d07f1a647ba7fb",
         "EN-3474e24464fc25a7",
+        "EN-a899a3dde1d51caf",
         "EN-9fbf261b62c1d7c0",
         "EN-a7baed72c308ce88",
         "EN-3f726694f178ed7a",
@@ -5058,7 +5160,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -5074,8 +5176,8 @@
         "EV-2a78dd5feb40a78a",
         "EV-9490bae84e7b4707",
         "EV-136b2edc9b9f3be8",
-        "EV-3fb827f44ea109de",
         "EV-bffc68e7bb4d598b",
+        "EV-3fb827f44ea109de",
         "EV-901155ab700a7e8e",
         "EV-2069f6a931b8c9d6",
         "EV-c84b6d7338f87990",
@@ -5169,6 +5271,7 @@
         "EV-23ae55daa341be06",
         "EV-6bb83280a2116f24",
         "EV-d10684a6f16afe10",
+        "EV-acddfa62aabb004f",
         "EV-fd825cd7f7997fc8",
         "EV-57944eebac69d510",
         "EV-2d9fde7bc0cd7a22",
@@ -5189,7 +5292,6 @@
         "EV-9efcf6480f6c6f48",
         "EV-bc99fb915c25ace4",
         "EV-6ef10e278f3c25a9",
-        "EV-acddfa62aabb004f",
         "EV-eb2b4ee2c8cb0daa",
         "EV-e869f17214557633",
         "EV-046caa2b3d6fbdde",
@@ -5244,7 +5346,10 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-dc75a3b8c63ed706",
+        "EV-5e85bc91a6924760",
         "EV-f3e0915e13bcc5a1",
+        "EV-ab1b780e6e543b42",
         "EV-60110525440fac47",
         "EV-4c949b6aac6d26e7",
         "EV-a4fe78df6ccd63c8",
@@ -5616,6 +5721,9 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-bbdefa2950f49882",
+        "EN-307557d99a7eb726",
+        "EN-d0cdc9650aa64450",
         "EN-30397d0cfc1b0e29",
         "EN-07035a20899a7cd7",
         "EN-45d780f82c9247fc",
@@ -5636,7 +5744,6 @@
         "EN-ba728f8ca730921f",
         "EN-7c094d35e3b700c8",
         "EN-0d1e478de2157d48",
-        "EN-bbdefa2950f49882",
         "EN-52c2f30b6bda5898",
         "EN-2a2aa0512b8ea131",
         "EN-49f756463ad9dcfb",
@@ -5683,7 +5790,6 @@
         "EN-42f0b44cc91cc5e0",
         "EN-09c344df70df9660",
         "EN-c31a277efac23f52",
-        "EN-307557d99a7eb726",
         "EN-96a4bc2602655473",
         "EN-4adc2faea521b1f1",
         "EN-e473f24d4325d51a",
@@ -5749,6 +5855,7 @@
         "EN-e72901462ebe4458"
       ],
       "fdeIds": [
+        "FDE-13bbc5471db90438",
         "FDE-e32500a9c4f90e91",
         "FDE-b44bbcf1ee8caad0",
         "FDE-e79a238725a98c06",
@@ -5757,7 +5864,6 @@
         "FDE-8c57145ddc067b7d",
         "FDE-33ed0bdb7b19e3d1",
         "FDE-5c2969f5c749383b",
-        "FDE-13bbc5471db90438",
         "FDE-bf7ee7f3e62e9a3b",
         "FDE-3e499215265a81d5",
         "FDE-62f660a9a90bc3f6",
@@ -5912,6 +6018,7 @@
         "EV-cded77b1de2db61a",
         "EV-7585b033d4005977",
         "EV-4eb0556b8c72d410",
+        "EV-64178e5d858f5e25",
         "EV-67212040ee9cd7c8",
         "EV-7012e774379b9c11",
         "EV-b4f69c41e23c7ce0",
@@ -5991,11 +6098,11 @@
         "EN-a83a3af1a4866fd5",
         "EN-15516525ca2aa1a4",
         "EN-098a40b4499d7512",
+        "EN-99f9ebbef37fcec5",
         "EN-240389f4b730bad4",
         "EN-449777124b1466a8",
         "EN-01839aa42da88393",
         "EN-9fbf261b62c1d7c0",
-        "EN-99f9ebbef37fcec5",
         "EN-59ae856cd788d0f5",
         "EN-be972f28adbc6e84",
         "EN-2b1bf2dbb57b6603",
@@ -6019,12 +6126,13 @@
         "FDE-6e17403b5cdb72b0"
       ],
       "hardwareIds": [
+        "HW-df8fb3396e493a21",
         "HW-3a780bcd6e5bab6a",
         "HW-c57ff6e49b40d839",
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": "TX-use_case-security_operations",
@@ -6368,7 +6476,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-11",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": "TX-technology-distillation",

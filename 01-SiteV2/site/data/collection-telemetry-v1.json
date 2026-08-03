@@ -2,42 +2,40 @@
   "meta": {
     "version": "COLLECTION-TELEMETRY-V1.0",
     "ops_version": "OPS-V2.0.0-v4-telemetry",
-    "data_date": "2026-08-02",
-    "generated_at": "2026-08-02T04:57:03.213Z",
+    "data_date": "2026-08-03",
+    "generated_at": "2026-08-03T02:06:03.518Z",
     "scope": "OPS",
     "canonical_writeback": false,
     "source_of_truth": "Data Center V4 manifest and integrity gate"
   },
   "collection": {
     "discovered": 290,
-    "capture_succeeded": 227,
+    "capture_succeeded": 228,
     "capture_failed": 0,
-    "raw_documents": 227
+    "raw_documents": 228
   },
   "fact_build": {
-    "accepted_claims": 60,
+    "accepted_claims": 96,
     "rejected_claims": 0,
-    "accepted": 60,
+    "accepted": 96,
     "rejected": 0,
     "pending_claims": 0,
-    "canonical_events": 17,
-    "entities": 23,
-    "relationships": 60,
+    "canonical_events": 27,
+    "entities": 39,
+    "relationships": 96,
     "conflicts": 0,
-    "qa_queue": 211,
+    "qa_queue": 204,
     "qa_by_status": {
-      "review_optional": 206,
-      "open": 5
+      "review_optional": 194,
+      "open": 10
     }
   },
   "v4_gate": {
     "status": "passed",
-    "manifest_date": "2026-08-02",
-    "gate_date": "2026-08-02",
+    "manifest_date": "2026-08-03",
+    "gate_date": "2026-08-03",
     "failures": [],
-    "warnings": [
-      "No source-bounded FDE projection was produced."
-    ]
+    "warnings": []
   },
   "application_projection": {
     "opportunity_map": "passed",
@@ -55,13 +53,13 @@
       "status": "passed",
       "counts": {
         "discovered": 290,
-        "capture_succeeded": 227,
+        "capture_succeeded": 228,
         "capture_failed": 0,
-        "raw_documents": 227
+        "raw_documents": 228
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-08-02/manifest.json",
-        "agent-workflow/reports/2026-08-02-guanlan-daily-monitor-log.md"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/manifest.json",
+        "agent-workflow/reports/2026-08-03-guanlan-daily-monitor-log.md"
       ]
     },
     {
@@ -69,20 +67,20 @@
       "label": "事实构建",
       "status": "passed",
       "counts": {
-        "accepted_claims": 60,
+        "accepted_claims": 96,
         "rejected_claims": 0,
-        "accepted": 60,
+        "accepted": 96,
         "rejected": 0,
         "pending_claims": 0,
-        "canonical_events": 17,
-        "entities": 23,
-        "relationships": 60,
+        "canonical_events": 27,
+        "entities": 39,
+        "relationships": 96,
         "conflicts": 0,
-        "qa_queue": 211
+        "qa_queue": 204
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-08-02/manifest.json",
-        "agent-workflow/reports/2026-08-02-data-center-v4-integrity-gate.json"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/manifest.json",
+        "agent-workflow/reports/2026-08-03-data-center-v4-integrity-gate.json"
       ]
     },
     {
@@ -96,7 +94,7 @@
         "fde_hardware_sync": "passed"
       },
       "evidence": [
-        "agent-workflow/reports/2026-08-02-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-08-03-persistent-asset-manifest.json"
       ]
     },
     {
@@ -107,7 +105,7 @@
         "v4_bundle_ready": true
       },
       "evidence": [
-        "agent-workflow/reports/2026-08-02-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-08-03-persistent-asset-manifest.json"
       ]
     }
   ],

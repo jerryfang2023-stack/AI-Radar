@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-03T02:04:50.067Z",
+    "latestDataDate": "2026-08-03",
+    "currentDate": "2026-08-03",
+    "eventCount": 1796,
+    "quarantinedEventCount": 18
+  },
+  "entity": {
+    "id": "EN-0f09eb70713e0871",
+    "name": "暴雪《魔兽世界》",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-b40ba79822469bc0"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-02",
+    "lastSeen": "2026-08-03",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-b40ba79822469bc0"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-b40ba79822469bc0",
+        "dataDate": "2026-08-03",
+        "date": "2026-08-02",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "启元机器人宣布与暴雪《魔兽世界》合作，推出限定\"鱼人定制款\"Q1",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-85f0c155e340fb63"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-85f0c155e340fb63"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-85f0c155e340fb63",
+          "EN-0f09eb70713e0871"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-8eb9e3e3cf6ea367",
+      "snapshotKey": "8eb9e3e3cf6ea367",
+      "snapshotId": "HWS-12dc4775928bb24b",
+      "eventId": "EV-b40ba79822469bc0",
+      "eventIds": [
+        "EV-b40ba79822469bc0"
+      ],
+      "dataDate": "2026-08-03",
+      "date": "2026-08-03",
+      "title": "启元机器人",
+      "subject": "启元机器人",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-b9abe4e7e221d517"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-03",
+          "hardware_fact_id": "HWF-d7968ea4e7f9b569",
+          "fact_type": "product",
+          "observed_at": "2026-08-02T08:30:31.000Z",
+          "subject_entity_id": "EN-85f0c155e340fb63",
+          "subject_name": "启元机器人",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "上纬新材启元宣布与暴雪《魔兽世界》合作，推出限定“鱼人定制款”Q1 机器人 - IT之家",
+          "event_refs": [
+            "EV-b40ba79822469bc0"
+          ],
+          "claim_ref": "CL-820a454684276421",
+          "source_refs": [
+            "SA-ef4ab2531521893b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-03",
+          "hardware_fact_id": "HWF-3d3f98fda91aaf6b",
+          "fact_type": "product",
+          "observed_at": "2026-08-02T08:30:31.000Z",
+          "subject_entity_id": "EN-85f0c155e340fb63",
+          "subject_name": "启元机器人",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "上纬新材启元宣布与暴雪《魔兽世界》合作，推出限定“鱼人定制款”Q1 机器人",
+          "event_refs": [
+            "EV-b40ba79822469bc0"
+          ],
+          "claim_ref": "CL-46137d43b05cd905",
+          "source_refs": [
+            "SA-ef4ab2531521893b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-03",
+          "hardware_fact_id": "HWF-b9abe4e7e221d517",
+          "fact_type": "product",
+          "observed_at": "2026-08-02T08:30:31.000Z",
+          "subject_entity_id": "EN-85f0c155e340fb63",
+          "subject_name": "启元机器人",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 8 月 2 日消息，上纬新材料科技股份有限公司（上纬新材）旗下消费级具身智能品牌“启元机器人”在 2026 年度 ChinaJoy 期间官宣与暴雪《魔兽世界》进行合作，推出活动限定“鱼人定制款”启元 Q1。",
+          "event_refs": [
+            "EV-b40ba79822469bc0"
+          ],
+          "claim_ref": "CL-8f334a11526d331d",
+          "source_refs": [
+            "SA-ef4ab2531521893b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-85f0c155e340fb63"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/984/758.htm",
+      "entityIds": [
+        "EN-85f0c155e340fb63",
+        "EN-0f09eb70713e0871"
+      ]
+    }
+  ]
+}
