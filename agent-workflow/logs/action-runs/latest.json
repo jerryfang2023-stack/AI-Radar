@@ -1,33 +1,36 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-03T01:48:41.119Z",
+  "generated_at": "2026-08-03T01:58:49.698Z",
   "date": "2026-08-03",
-  "action": "Harden translated roundup rejection",
+  "action": "daily-persistent-assets-pr",
   "action_status": "unregistered",
   "record_level": "required",
-  "trigger": "manual",
-  "status": "success",
-  "summary": "Extended the multi-event roundup gate to translated Chinese titles after the production replay showed the restored intake had already normalized the English headline.",
+  "trigger": "workflow-repair",
+  "status": "partial",
+  "summary": "Normalized spaced dash variants in source-title translation keys so resumed 2026-08-03 intake reuses an approved translation and passes source-title integrity.",
   "contexts": [],
   "changed_files": [
-    "agent-workflow/tools/build-data-center-v4.mjs",
-    "agent-workflow/tools/tests/data-center-v4.test.mjs"
+    "agent-workflow/tools/source-title-translation-generator.mjs",
+    "agent-workflow/tools/tests/source-intake-v1.test.mjs"
   ],
   "outputs": [],
   "checks": [
-    "120 Data Center V4 tests passed including the exact translated title"
+    "node --test agent-workflow/tools/tests/source-intake-v1.test.mjs agent-workflow/tools/tests/data-center-v4.test.mjs (131 passed)"
   ],
   "issues": [
-    "Production replay still lost Inkling ownership because the roundup title was Chinese at build time"
+    "The captured source title used an em dash while the approved translation used a hyphen",
+    "producing raw_title_invalid at the pre-commit gate."
   ],
   "risks": [
-    "Requires one final production replay"
+    "Only spaced separator dashes are normalized to avoid collapsing hyphens inside words."
   ],
   "lessons": [
-    "Source-title eligibility rules must cover the normalized title language used by the builder"
+    "Normalize publisher separators before translation cache lookup."
   ],
   "reusable_rules": [
-    "Reject both English and Chinese numbered open-model roundup titles before event clustering"
+    "Treat spaced hyphen",
+    "en dash",
+    "and em dash as the same source-title translation-key separator."
   ],
   "retired_flags": [],
   "notes": []

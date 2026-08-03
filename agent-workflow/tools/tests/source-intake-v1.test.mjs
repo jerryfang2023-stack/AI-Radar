@@ -16,11 +16,60 @@ import {
 import { selectImmutableSourceSnapshot } from "../lib/immutable-source-snapshot-v1.mjs";
 import { normalizeSourceIntakeTitles } from "../normalize-source-intake-titles.mjs";
 import { regenerateSourceTitleTranslations } from "../regenerate-source-title-translations-deepseek.mjs";
+import { titleTranslationKey } from "../source-title-translation-generator.mjs";
 
 function writeJson(file, value) {
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, `${JSON.stringify(value)}\n`, "utf8");
 }
+
+test("source title translation keys normalize spaced dash variants", () => {
+  const hyphen = "Deploying and Scaling Enterprise AI Agents - Eloquent AI";
+  const emDash = "Deploying and Scaling Enterprise AI Agents — Eloquent AI";
+  const enDash = "Deploying and Scaling Enterprise AI Agents – Eloquent AI";
+  assert.equal(titleTranslationKey(emDash), titleTranslationKey(hyphen));
+  assert.equal(titleTranslationKey(enDash), titleTranslationKey(hyphen));
+});
+
+test("resumed source intake reuses an approved translation across dash variants", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-source-title-dash-"));
+  const date = "2026-08-03";
+  const stored = "Deploying and Scaling Enterprise AI Agents - Eloquent AI";
+  const captured = "Deploying and Scaling Enterprise AI Agents — Eloquent AI";
+  const translated = "部署与扩展企业级 AI 智能体 - Eloquent AI";
+  try {
+    writeJson(path.join(root, "01-SiteV2/content/11-databases/source-title-translations.json"), {
+      version: "source-title-translations-v1",
+      translations: [{
+        sourceTitle: stored,
+        zhTitle: translated,
+        generatedBy: "deepseek_title_translation",
+        generatedModel: "deepseek-v4-flash",
+      }],
+    });
+    writeJson(path.join(root, `01-SiteV2/content/11-databases/data-center-v4/intake-v1/${date}.json`), {
+      raw_documents: [{ title_original: captured, title_zh: "" }],
+    });
+    const sourceIndex = path.join(root, "01-SiteV2/content/01-raw/source-index.jsonl");
+    fs.mkdirSync(path.dirname(sourceIndex), { recursive: true });
+    fs.writeFileSync(sourceIndex, `${JSON.stringify({
+      data_date: date,
+      title_original: captured,
+      title_zh: "",
+    })}\n`, "utf8");
+
+    const result = normalizeSourceIntakeTitles(root, date);
+    assert.equal(result.repaired_documents, 1);
+    assert.equal(result.repaired_source_index_rows, 1);
+    const repairedIntake = JSON.parse(fs.readFileSync(
+      path.join(root, `01-SiteV2/content/11-databases/data-center-v4/intake-v1/${date}.json`),
+      "utf8",
+    ));
+    assert.equal(repairedIntake.raw_documents[0].title_zh, translated);
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
+});
 
 test("resumed source intake restores DeepSeek Chinese source-title translations", () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-source-title-resume-"));

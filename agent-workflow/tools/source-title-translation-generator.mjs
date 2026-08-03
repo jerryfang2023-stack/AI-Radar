@@ -30,6 +30,7 @@ export function sourceTitleNeedsChineseTranslation(value = "") {
 
 export function titleTranslationKey(value = "") {
   return decodeHtmlEntities(String(value || ""))
+    .replace(/\s+[\u2013\u2014-]\s+/gu, " - ")
     .replace(/\s+/gu, " ")
     .trim()
     .toLowerCase();
