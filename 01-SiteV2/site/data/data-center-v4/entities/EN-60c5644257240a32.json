@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "latestDataDate": "2026-08-04",
+    "currentDate": "2026-08-04",
+    "eventCount": 1832,
+    "quarantinedEventCount": 15
+  },
+  "entity": {
+    "id": "EN-60c5644257240a32",
+    "name": "SK 海力士",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-992c44c9bd65b7e1"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-04",
+    "lastSeen": "2026-08-04",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-992c44c9bd65b7e1"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-992c44c9bd65b7e1",
+        "dataDate": "2026-08-04",
+        "date": "2026-08-04",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "SK 海力士与闪迪将在 FMS 2026 发布 HBF 首个标准规范，展示面向 AI 的存储解决方案",
+        "displayTags": [],
+        "entityIds": [
+          "EN-60c5644257240a32",
+          "EN-313288a6e417d286",
+          "EN-3d5291effddd967b"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-b0a1cf3fc5a8077d",
+      "snapshotKey": "b0a1cf3fc5a8077d",
+      "snapshotId": "HWS-030a268cc16539e1",
+      "eventId": "EV-992c44c9bd65b7e1",
+      "eventIds": [
+        "EV-992c44c9bd65b7e1"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "FMS 2026 / HBF",
+      "subject": "SK 海力士",
+      "productNames": [
+        "FMS 2026",
+        "HBF"
+      ],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-12fd68a83712c4bb"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-12fd68a83712c4bb",
+          "fact_type": "product",
+          "observed_at": "2026-08-03T23:45:46.000Z",
+          "subject_entity_id": "EN-60c5644257240a32",
+          "subject_name": "SK 海力士",
+          "product_entity_ids": [
+            "EN-313288a6e417d286",
+            "EN-3d5291effddd967b"
+          ],
+          "product_names": [
+            "FMS 2026",
+            "HBF"
+          ],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "该规范由全球最大的开放式数据中心技术合作组织 OCP（Open Compute Project）正式发布，成为行业通用开放标准，而非企业私有标准。",
+          "event_refs": [
+            "EV-992c44c9bd65b7e1"
+          ],
+          "claim_ref": "CL-c2a5c865447d2753",
+          "source_refs": [
+            "SA-22c1bce2987bc4ef"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/985/289.htm",
+      "entityIds": [
+        "EN-60c5644257240a32",
+        "EN-313288a6e417d286",
+        "EN-3d5291effddd967b"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,329 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "latestDataDate": "2026-08-04",
+    "currentDate": "2026-08-04",
+    "eventCount": 1832,
+    "quarantinedEventCount": 15
+  },
+  "entity": {
+    "id": "EN-78c60327054dcd52",
+    "name": "英特尔为",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-522c339dded54be5"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-03",
+    "lastSeen": "2026-08-04",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-522c339dded54be5"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-522c339dded54be5",
+        "dataDate": "2026-08-04",
+        "date": "2026-08-03",
+        "eventType": "hardware_deployment",
+        "eventTypeLabel": "硬件部署",
+        "eventGroup": "AI 硬件",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "英特尔为开源多模态视频模型 MiniMax H3 提供 Day 0 支持，实现多卡 GPU 部署方案",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-e1517be14d06cdb7"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [
+              "EN-e1517be14d06cdb7"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "video_generation",
+            "name": "视频生成",
+            "entityIds": [
+              "EN-e1517be14d06cdb7"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-78c60327054dcd52",
+          "EN-e1517be14d06cdb7"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-68457c8c0a7240ac",
+      "eventId": "EV-522c339dded54be5",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "title": "英特尔为开源多模态视频模型 MiniMax H3 提供 Day 0 支持，实现多卡 GPU 部署方案",
+      "hardwareType": "gpu",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 70,
+      "capacityUnit": "GPU",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/985/033.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-08-03",
+      "entityIds": [
+        "EN-78c60327054dcd52",
+        "EN-e1517be14d06cdb7"
+      ]
+    }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-ca223925d7e51746",
+      "snapshotKey": "ca223925d7e51746",
+      "snapshotId": "HWS-c7b11b24c06f38fb",
+      "eventId": "EV-522c339dded54be5",
+      "eventIds": [
+        "EV-522c339dded54be5"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "英特尔为",
+      "subject": "英特尔为",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "70",
+          "unit": "GPU",
+          "fact_ref": "HWF-cf3ae7402ac378e8"
+        }
+      },
+      "factCount": 4,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-4ec1c7a61ea1c9e0",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T07:25:14.000Z",
+          "subject_entity_id": "EN-78c60327054dcd52",
+          "subject_name": "英特尔为",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "英特尔：为开源多模态视频模型 MiniMax H3 提供 Day 0 支持，实现基于多卡 GPU 的部署方案 - IT之家",
+          "event_refs": [
+            "EV-522c339dded54be5"
+          ],
+          "claim_ref": "CL-3622ba0e9d267e1d",
+          "source_refs": [
+            "SA-72400fa5b9a3650b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-2edc1b8d095be08a",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T07:25:14.000Z",
+          "subject_entity_id": "EN-78c60327054dcd52",
+          "subject_name": "英特尔为",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "英特尔：为开源多模态视频模型 MiniMax H3 提供 Day 0 支持，实现基于多卡 GPU 的部署方案",
+          "event_refs": [
+            "EV-522c339dded54be5"
+          ],
+          "claim_ref": "CL-01b40bbd9f34aaf5",
+          "source_refs": [
+            "SA-72400fa5b9a3650b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-853a277cc557d1eb",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T07:25:14.000Z",
+          "subject_entity_id": "EN-78c60327054dcd52",
+          "subject_name": "英特尔为",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "据介绍，英特尔锐炫 Pro B70 第一时间完成对 MiniMax H3 的适配，英特尔团队 实现了一种基于多卡 GPU 的部署方案 。",
+          "event_refs": [
+            "EV-522c339dded54be5"
+          ],
+          "claim_ref": "CL-51f0d6562c2b7a9c",
+          "source_refs": [
+            "SA-72400fa5b9a3650b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-cf3ae7402ac378e8",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T07:25:14.000Z",
+          "subject_entity_id": "EN-78c60327054dcd52",
+          "subject_name": "英特尔为",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "70",
+          "unit": "GPU",
+          "source_quote": "该方案采用 Encoder 8 卡张量并行（8TP）、DiT 8 卡 USP（Ulysses Sequence Parallel，并结合 Layer-wise Offloading），以及 VAE 部署于 B70 GPU 的整体架构， 实现了视频生成全流程的 GPU 加速 。",
+          "event_refs": [
+            "EV-522c339dded54be5"
+          ],
+          "claim_ref": "CL-e3a6aa58eb47253c",
+          "source_refs": [
+            "SA-72400fa5b9a3650b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/985/033.htm",
+      "entityIds": [
+        "EN-78c60327054dcd52",
+        "EN-e1517be14d06cdb7"
+      ]
+    }
+  ]
+}

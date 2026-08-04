@@ -5,13 +5,41 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-03T07:17:08.673Z",
-    "latestDataDate": "2026-08-03",
-    "currentDate": "2026-08-03",
-    "eventCount": 1816,
+    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "latestDataDate": "2026-08-04",
+    "currentDate": "2026-08-04",
+    "eventCount": 1832,
     "quarantinedEventCount": 15
   },
   "relationships": [
+    {
+      "relationship_id": "REL2-4c6be3fd3d25d6c2",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d1507284a5757ca",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-cbc62794911ff31b",
+      "object_type": "entity",
+      "event_id": "EV-22f0d8caaa65a6a2",
+      "claim_refs": [
+        "CL-df49b6cf08e027c6",
+        "CL-ac2d6e196597c3b0",
+        "CL-ee2382d779ae901f",
+        "CL-d7a80103d2e383d8"
+      ],
+      "source_refs": [
+        "SA-aac3194c93cb5136"
+      ],
+      "data_date": "2026-08-04",
+      "status": "verified",
+      "subjectName": "AWS",
+      "objectName": "Amazon",
+      "predicateLabel": "合作",
+      "title": "AWS 合作 Amazon",
+      "eventTitle": "Superblocks与AWS宣布战略合作，为Amazon Bedrock带来安全的企业级AI应用开发 - 美国新闻中心",
+      "eventDate": "2026-08-03",
+      "sourceCount": 1
+    },
     {
       "relationship_id": "REL2-a675a7f7bd02161e",
       "relationship_version": "RELATION-V2.1",

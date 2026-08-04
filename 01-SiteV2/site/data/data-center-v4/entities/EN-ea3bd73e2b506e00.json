@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-03T07:17:08.673Z",
-    "latestDataDate": "2026-08-03",
-    "currentDate": "2026-08-03",
-    "eventCount": 1816,
+    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "latestDataDate": "2026-08-04",
+    "currentDate": "2026-08-04",
+    "eventCount": 1832,
     "quarantinedEventCount": 15
   },
   "entity": {
@@ -33,6 +33,7 @@
       "EV-467d1a701d21327d",
       "EV-acdeebead5324344",
       "EV-cded77b1de2db61a",
+      "EV-a852dc0ca6011ff6",
       "EV-a4b7cd533b0b34dc",
       "EV-8805e96b4fb544dd",
       "EV-c3f617e75d303f59",
@@ -113,7 +114,7 @@
       "EN-e71558a14e7ed6ab"
     ],
     "firstSeen": "2026-03-13",
-    "lastSeen": "2026-08-02",
+    "lastSeen": "2026-08-04",
     "relationIds": [
       "REL2-85833837dc3e3f02",
       "REL2-ef7c3e949f2087f3",
@@ -141,6 +142,7 @@
         "EV-467d1a701d21327d"
       ],
       "deployments": [
+        "EV-a852dc0ca6011ff6",
         "EV-a4b7cd533b0b34dc",
         "EV-8805e96b4fb544dd",
         "EV-c3f617e75d303f59",
@@ -205,6 +207,79 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-a852dc0ca6011ff6",
+        "dataDate": "2026-08-04",
+        "date": "2026-08-04",
+        "eventType": "hardware_deployment",
+        "eventTypeLabel": "硬件部署",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Aleria部署16,000块Nvidia AI芯片，在美国和阿联酋建设主权AI基础设施",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-c9e92f0b88c6456b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-c9e92f0b88c6456b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-c9e92f0b88c6456b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-c9e92f0b88c6456b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "telecommunications",
+            "name": "电信",
+            "entityIds": [
+              "EN-c9e92f0b88c6456b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-c9e92f0b88c6456b",
+          "EN-8d4321d936320802",
+          "EN-ea3bd73e2b506e00"
+        ]
+      },
       {
         "id": "EV-a4b7cd533b0b34dc",
         "dataDate": "2026-08-02",
@@ -2709,8 +2784,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-product_form-model",
+        "TX-technology-agentic_execution",
         "TX-technology-long_context"
       ],
       "relatedEntityIds": [
@@ -3104,6 +3179,7 @@
         "EV-fa46e5177d548bad",
         "EV-4b545e310ded2baa",
         "EV-778ae7684a4d782e",
+        "EV-22f0d8caaa65a6a2",
         "EV-aa7cf8ee6c875f08",
         "EV-2c87c8ea47cbd1b6",
         "EV-48015ed51ec9be9f",
@@ -3240,6 +3316,7 @@
       "fdeIds": [
         "FDE-ebcbdf2b14d4c291",
         "FDE-e79a238725a98c06",
+        "FDE-5314a0e746758b29",
         "FDE-560b710961006374",
         "FDE-faf3a8cfcafef981",
         "FDE-a1c35f8b9ea1d489",
@@ -3248,7 +3325,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -3360,6 +3437,7 @@
         "EV-23ae55daa341be06",
         "EV-6bb83280a2116f24",
         "EV-d10684a6f16afe10",
+        "EV-a852dc0ca6011ff6",
         "EV-acddfa62aabb004f",
         "EV-fd825cd7f7997fc8",
         "EV-57944eebac69d510",
@@ -3435,6 +3513,9 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-4b286a3354cbf34a",
+        "EV-7dd55841e1ca4652",
+        "EV-9217ac1643635ce4",
         "EV-dc75a3b8c63ed706",
         "EV-5e85bc91a6924760",
         "EV-f3e0915e13bcc5a1",
@@ -3767,6 +3848,7 @@
         "EN-50e2a4156631df49",
         "EN-f531c4e9f8555dcc",
         "EN-df30a48992da7fe8",
+        "EN-c9e92f0b88c6456b",
         "EN-6b182ca786385b1e",
         "EN-76a9a8a6e2f1a47b",
         "EN-ebfeb2f51b9eaf40",
@@ -3811,6 +3893,8 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-d50883991bfc5a69",
+        "EN-b02e43bdec738f2c",
         "EN-bbdefa2950f49882",
         "EN-307557d99a7eb726",
         "EN-d0cdc9650aa64450",
@@ -3988,6 +4072,7 @@
         "FDE-3665b073634d4b9d"
       ],
       "hardwareIds": [
+        "HW-a033b945449628d5",
         "HW-18e9985f2e93555c",
         "HW-2ce4c2fb193555e3",
         "HW-25ce41fab12d9ef2"
@@ -4094,6 +4179,7 @@
         "EV-cfb7c4b4b765f53b",
         "EV-3acfc96d99c32cf0",
         "EV-777eb5b7783b71fb",
+        "EV-22f0d8caaa65a6a2",
         "EV-eec1e6857f0e0b2b",
         "EV-05a87b578967c83e",
         "EV-0609f4badfe84803",
@@ -4192,13 +4278,14 @@
       "fdeIds": [
         "FDE-802c377126f36fc5",
         "FDE-3d5eb0bc571f55bf",
+        "FDE-5314a0e746758b29",
         "FDE-3665b073634d4b9d"
       ],
       "hardwareIds": [
         "HW-c5a22adcc66136ed"
       ],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "TX-industry-media_entertainment",
@@ -4284,6 +4371,7 @@
       "typeLabel": "技术",
       "valueId": "computer_use",
       "eventIds": [
+        "EV-c89018d79b3d25bd",
         "EV-97854226b6f43a95",
         "EV-e42e55d1e11a2ba2",
         "EV-333851b077b606c8",
@@ -4292,6 +4380,7 @@
         "EV-a4f052325d0ef230"
       ],
       "entityIds": [
+        "EN-876e7751ed9e3473",
         "EN-9d4cbc0ceab2c56a",
         "EN-ea3bd73e2b506e00",
         "EN-047364b9be67f665",
@@ -4301,7 +4390,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-27"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "TX-technology-multimodal",
@@ -4311,12 +4400,14 @@
       "valueId": "multimodal",
       "eventIds": [
         "EV-d3054a8a2b62a503",
+        "EV-522c339dded54be5",
         "EV-dda9429d76897a3d",
         "EV-95acc01f9b9a08ab",
         "EV-cafe435ddd007821",
         "EV-a9810b47e0408a05",
         "EV-26d2874c6ce028d6",
         "EV-fd21441fb6e143c3",
+        "EV-4b286a3354cbf34a",
         "EV-ec966b509327cbac",
         "EV-d1d36268ff74be0e",
         "EV-58457ebde013a438",
@@ -4352,10 +4443,10 @@
         "EV-6b7917bd7edd4bde"
       ],
       "entityIds": [
+        "EN-e1517be14d06cdb7",
         "EN-193d220b421d776e",
         "EN-b81c8201acfc7639",
         "EN-7df09a7717ef2feb",
-        "EN-e1517be14d06cdb7",
         "EN-febedfcafee9d610",
         "EN-8d57f84bd1847b24",
         "EN-a89151ba4b5ac0f2",
@@ -4379,10 +4470,11 @@
         "FDE-0ef4045e28c345f8"
       ],
       "hardwareIds": [
+        "HW-68457c8c0a7240ac",
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "TX-industry-healthcare_life_sciences",
@@ -4419,6 +4511,7 @@
         "EV-44ec7c229995ca3c",
         "EV-cded77b1de2db61a",
         "EV-8b0f056571d68269",
+        "EV-a852dc0ca6011ff6",
         "EV-11b2293769081d4c",
         "EV-9563aa162529aab0",
         "EV-cafe435ddd007821",
@@ -4475,6 +4568,7 @@
         "EN-cecdd8369134f75e",
         "EN-a83a3af1a4866fd5",
         "EN-e5cc9e38970eacb5",
+        "EN-c9e92f0b88c6456b",
         "EN-023e881577ad3ab1",
         "EN-b81c8201acfc7639",
         "EN-27032b3c60ab2a95",
@@ -4505,10 +4599,11 @@
         "FDE-1fb7e2ae69d2f044"
       ],
       "hardwareIds": [
+        "HW-a033b945449628d5",
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "TX-technology-open_weights",
@@ -4518,7 +4613,9 @@
       "valueId": "open_weights",
       "eventIds": [
         "EV-1abf0d076d30ec6d",
+        "EV-d2a623e8eef1f61d",
         "EV-f55d16df5b5fecb2",
+        "EV-63858d9b5ef92175",
         "EV-890ffd351486b884",
         "EV-acf3df526813ed37",
         "EV-afcefb5d86a2db45",
@@ -4536,6 +4633,8 @@
         "EV-86537be17d50ff20"
       ],
       "entityIds": [
+        "EN-bd6769fe78d0971a",
+        "EN-422332977c41eb77",
         "EN-a899a3dde1d51caf",
         "EN-88ab1e5d793701f9",
         "EN-c70eca6b0f88f44d",
@@ -4552,11 +4651,12 @@
         "EN-6ac6ad44bb9995ca"
       ],
       "fdeIds": [
+        "FDE-0193a6afd26db7ae",
         "FDE-a8fea104d63ff671"
       ],
       "hardwareIds": [],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "TX-technology-image_generation",
@@ -4747,6 +4847,58 @@
   ],
   "hardware": [
     {
+      "id": "HW-a033b945449628d5",
+      "eventId": "EV-a852dc0ca6011ff6",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "Aleria部署16,000块Nvidia AI芯片，在美国和阿联酋建设主权AI基础设施",
+      "hardwareType": "gpu",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "data_center",
+      "supplier": "NVIDIA",
+      "customer": "Aleria",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "United States",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://gulfnews.com/uae/abu-dhabis-aleria-deploys-16000-nvidia-ai-chips-across-us-and-uae-1.500629651",
+      "sourceName": "gulfnews.com",
+      "sourceDate": "2026-08-04",
+      "entityIds": [
+        "EN-c9e92f0b88c6456b",
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00"
+      ]
+    },
+    {
       "id": "HW-e74af0366681ccbe",
       "eventId": "EV-8805e96b4fb544dd",
       "dataDate": "2026-07-29",
@@ -4921,6 +5073,222 @@
         "EN-090e5412541f063f",
         "EN-ea3bd73e2b506e00",
         "EN-6fcba5d96a4fadfd"
+      ]
+    }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-61a0c6448cae5866",
+      "snapshotKey": "61a0c6448cae5866",
+      "snapshotId": "HWS-ebbf89adee9a0ada",
+      "eventId": "EV-a852dc0ca6011ff6",
+      "eventIds": [
+        "EV-a852dc0ca6011ff6"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "Aleria",
+      "subject": "Aleria",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-8e73ff26be6e4b62"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-09b266f1de516217",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T17:51:04.000Z",
+          "subject_entity_id": "EN-c9e92f0b88c6456b",
+          "subject_name": "Aleria",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Abu Dhabi's Aleria deploys 16,000 Nvidia AI chips across US and UAE",
+          "event_refs": [
+            "EV-a852dc0ca6011ff6"
+          ],
+          "claim_ref": "CL-ccf17d1be321c753",
+          "source_refs": [
+            "SA-5ebf65406bc3e0fc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-8e73ff26be6e4b62",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T17:51:04.000Z",
+          "subject_entity_id": "EN-c9e92f0b88c6456b",
+          "subject_name": "Aleria",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Abu Dhabi's Aleria deploys 16,000 Nvidia AI chips across US and UAE",
+          "event_refs": [
+            "EV-a852dc0ca6011ff6"
+          ],
+          "claim_ref": "CL-f8f436207d072eb5",
+          "source_refs": [
+            "SA-5ebf65406bc3e0fc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://gulfnews.com/uae/abu-dhabis-aleria-deploys-16000-nvidia-ai-chips-across-us-and-uae-1.500629651",
+      "entityIds": [
+        "EN-c9e92f0b88c6456b",
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00"
+      ]
+    },
+    {
+      "id": "HWC-5cc9ed821363e4f7",
+      "snapshotKey": "5cc9ed821363e4f7",
+      "snapshotId": "HWS-758633f6c0fbe306",
+      "eventId": "EV-a852dc0ca6011ff6",
+      "eventIds": [
+        "EV-a852dc0ca6011ff6"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "Aleria",
+      "subject": "Aleria",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "30",
+          "unit": "$million",
+          "fact_ref": "HWF-371a7331aaff642d"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-117bd548d15619b6",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T17:51:04.000Z",
+          "subject_entity_id": "EN-c9e92f0b88c6456b",
+          "subject_name": "Aleria",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "30",
+          "unit": "$million",
+          "source_quote": "Abu Dhabi: Abu Dhabi-based sovereign AI infrastructure provider Aleria is expanding its artificial intelligence footprint across the United States and the UAE through partnerships with California technology companies Nvidia and DDN, as demand grows for secure, nationally controlled AI computing.The expansion will see Aleria deploy up to 16,000 Nvidia Blackwell Ultra graphics processing units (GPUs) in the United States, alongside 28 racks of next-generation Nvidia DGX Vera Rubin NVL72 systems in the UAE, marking one of the first deployments of the platform in the region. .Get updated faster and for FREE: Download the Gulf News app now - simply click here..The infrastructure, built on Nvidia’s accelerated computing technology and DDN’s high-performance storage architecture, is already operational in both countries.The company said the latest investment builds on existing sovereign AI facilities serving government agencies, national enterprises and operators of critical infrastructure. The US deployment will initially include 8,640 Nvidia Grace Blackwell Ultra GPUs before scaling to 16,000, supported by a 25-megawatt data centre designed for secure AI workloads. The UAE installation is intended to meet rising demand from governments and enterprises seeking to develop AI capabilities while retaining full control over sensitive data.Aleria said its platform is designed for sectors with strict data residency and regulatory requirements, including government, healthcare, financial services, energy, utilities and telecommunications. Rather than providing customers with standalone computing hardware, the company offers an integrated AI platform spanning data management, cloud orchestration, enterprise applications and AI services operating entirely within national jurisdictions.Chief executive Eric Leandri said the company had already demonstrated that sovereign AI infrastructure could operate at national scale in the UAE, with the latest expansion reflecting growing customer demand. “We did not come to market with a promise. We came with working infrastructure,” he said, adding that deploying Blackwell Ultra systems in the US and DGX Vera Rubin technology in the UAE represented “the next chapter of something already proven”.Marc Domenech, Nvidia’s vice-president for Enterprise in the META and CIS region, said sovereign AI infrastructure gives nations the ability to manage their most valuable digital assets. “Aleria’s NVIDIA-powered sovereign AI factories provide the region with efficient, full-stack computing for the AI industrial revolution,” he said.DDN, which is supplying the storage systems underpinning the deployment, said the collaboration combines high-performance computing with scalable data infrastructure tailored for AI-intensive environments.Ankur Arora, the company’s senior regional director for the Middle East and Africa, said the partnership delivers the performance and resilience required by organisations that cannot compromise on security, reliability or data sovereignty.The expansion comes as governments increasingly invest in sovereign AI infrastructure to ensure sensitive data remains within national borders while supporting the rapid adoption of artificial intelligence across public services and strategic industries. Aleria said its dual-market deployment strengthens AI capacity in both the United States and the UAE while supporting high-skilled technology jobs and enabling governments to scale AI systems they fully own and control..Innovation City and IOPn launch the Middle East's first sovereign AI data center.UAE gets easier access to US AI chips: What changed and why it matters.GCC AI startup 1001 raises $30 million to power critical infrastructure.Dr Thani Al Zeyoudi joins as Chairman of Agentic AI firm AIREV as UAE advances ambition to export homegrown artificial intelligence",
+          "event_refs": [
+            "EV-a852dc0ca6011ff6"
+          ],
+          "claim_ref": "CL-7685edc6e125280f",
+          "source_refs": [
+            "SA-5ebf65406bc3e0fc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-371a7331aaff642d",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T17:51:04.000Z",
+          "subject_entity_id": "EN-c9e92f0b88c6456b",
+          "subject_name": "Aleria",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "30",
+          "unit": "$million",
+          "source_quote": "Abu Dhabi: Abu Dhabi-based sovereign AI infrastructure provider Aleria is expanding its artificial intelligence footprint across the United States and the UAE through partnerships with California technology companies Nvidia and DDN, as demand grows for secure, nationally controlled AI computing.The expansion will see Aleria deploy up to 16,000 Nvidia Blackwell Ultra graphics processing units (GPUs) in the United States, alongside 28 racks of next-generation Nvidia DGX Vera Rubin NVL72 systems in the UAE, marking one of the first deployments of the platform in the region. .Get updated faster and for FREE: Download the Gulf News app now - simply click here..The infrastructure, built on Nvidia’s accelerated computing technology and DDN’s high-performance storage architecture, is already operational in both countries.The company said the latest investment builds on existing sovereign AI facilities serving government agencies, national enterprises and operators of critical infrastructure. The US deployment will initially include 8,640 Nvidia Grace Blackwell Ultra GPUs before scaling to 16,000, supported by a 25-megawatt data centre designed for secure AI workloads. The UAE installation is intended to meet rising demand from governments and enterprises seeking to develop AI capabilities while retaining full control over sensitive data.Aleria said its platform is designed for sectors with strict data residency and regulatory requirements, including government, healthcare, financial services, energy, utilities and telecommunications. Rather than providing customers with standalone computing hardware, the company offers an integrated AI platform spanning data management, cloud orchestration, enterprise applications and AI services operating entirely within national jurisdictions.Chief executive Eric Leandri said the company had already demonstrated that sovereign AI infrastructure could operate at national scale in the UAE, with the latest expansion reflecting growing customer demand. “We did not come to market with a promise. We came with working infrastructure,” he said, adding that deploying Blackwell Ultra systems in the US and DGX Vera Rubin technology in the UAE represented “the next chapter of something already proven”.Marc Domenech, Nvidia’s vice-president for Enterprise in the META and CIS region, said sovereign AI infrastructure gives nations the ability to manage their most valuable digital assets. “Aleria’s NVIDIA-powered sovereign AI factories provide the region with efficient, full-stack computing for the AI industrial revolution,” he said.DDN, which is supplying the storage systems underpinning the deployment, said the collaboration combines high-performance computing with scalable data infrastructure tailored for AI-intensive environments.Ankur Arora, the company’s senior regional director for the Middle East and Africa, said the partnership delivers the performance and resilience required by organisations that cannot compromise on security, reliability or data sovereignty.The expansion comes as governments increasingly invest in sovereign AI infrastructure to ensure sensitive data remains within national borders while supporting the rapid adoption of artificial intelligence across public services and strategic industries. Aleria said its dual-market deployment strengthens AI capacity in both the United States and the UAE while supporting high-skilled technology jobs and enabling governments to scale AI systems they fully own and control..Innovation City and IOPn launch the Middle East's first sovereign AI data center.UAE gets easier access to US AI chips: What changed and why it matters.GCC AI startup 1001 raises $30 million to power critical infrastructure.Dr Thani Al Zeyoudi joins as Chairman of Agentic AI firm AIREV as UAE advances ambition to export homegrown artificial intelligence",
+          "event_refs": [
+            "EV-a852dc0ca6011ff6"
+          ],
+          "claim_ref": "CL-ea2ba13948b8d548",
+          "source_refs": [
+            "SA-5ebf65406bc3e0fc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://gulfnews.com/uae/abu-dhabis-aleria-deploys-16000-nvidia-ai-chips-across-us-and-uae-1.500629651",
+      "entityIds": [
+        "EN-c9e92f0b88c6456b",
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00"
       ]
     }
   ]

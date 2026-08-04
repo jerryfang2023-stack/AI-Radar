@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-03T07:17:08.673Z",
-    "latestDataDate": "2026-08-03",
-    "currentDate": "2026-08-03",
-    "eventCount": 1816,
+    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "latestDataDate": "2026-08-04",
+    "currentDate": "2026-08-04",
+    "eventCount": 1832,
     "quarantinedEventCount": 15
   },
   "node": {
@@ -19,6 +19,7 @@
     "valueId": "chip_accelerator",
     "eventIds": [
       "EV-7a44a47bf36780d2",
+      "EV-faf8db3567f108e2",
       "EV-da1655ecfaf35feb",
       "EV-f49eff6b3c5ed835",
       "EV-f282ab8740ff0096",
@@ -41,6 +42,9 @@
       "EV-736404028b8ad33e",
       "EV-70a994b9339f92e7",
       "EV-59882383f82f215d",
+      "EV-450f624a6a6446ce",
+      "EV-522c339dded54be5",
+      "EV-d2a623e8eef1f61d",
       "EV-a86b04e679044c45",
       "EV-c3b96b789b5bcafd",
       "EV-e09efcd49776cb95",
@@ -102,6 +106,7 @@
     ],
     "entityIds": [
       "EN-721eb3fd31f8e1f6",
+      "EN-54dfb14dcddad637",
       "EN-9cb45a27a2808c01",
       "EN-cf9488537f777c1a",
       "EN-4c3788aad4bebf2f",
@@ -122,8 +127,10 @@
       "EN-8da5eafb322ee86e",
       "EN-53453cfb48a75dde",
       "EN-883be863cc6562bb",
+      "EN-805a8c0cc2403091",
+      "EN-e1517be14d06cdb7",
+      "EN-bd6769fe78d0971a",
       "EN-7640da40298286a6",
-      "EN-54dfb14dcddad637",
       "EN-3711098f35d71cb9",
       "EN-a9776b12a97fe2d9",
       "EN-5e757c7fc575c41e",
@@ -164,12 +171,14 @@
       "EN-4a639cb888a15d75"
     ],
     "fdeIds": [
+      "FDE-0193a6afd26db7ae",
       "FDE-5ea7f3d69a03d417",
       "FDE-d1333c4e772841f2",
       "FDE-a0230755529d6fae",
       "FDE-08f12caedc3b2f13"
     ],
     "hardwareIds": [
+      "HW-68457c8c0a7240ac",
       "HW-7c91d6528b08a2f0",
       "HW-033a5b73cdc3f4be",
       "HW-ceb55d9bc637c1d3",
@@ -190,7 +199,7 @@
       "HW-4c176e4c40871adc"
     ],
     "firstSeen": "2025-03-18",
-    "lastSeen": "2026-08-03"
+    "lastSeen": "2026-08-04"
   },
   "events": [
     {
@@ -662,6 +671,123 @@
       "products": [],
       "sourceUrl": "https://cls.cn/detail/1797038",
       "publisher": "cls.cn"
+    },
+    {
+      "id": "EV-faf8db3567f108e2",
+      "dataDate": "2026-08-04",
+      "date": "2026-07-27",
+      "updatedDate": "2026-08-04",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Axe Compute 获得 15 亿美元 AI GPU 集群交易",
+      "originalTitle": "Axe Compute secures $1.5B AI GPU cluster deal - The Globe and Mail",
+      "subject": "Axe Compute",
+      "action": "secures",
+      "object": "$1.5B AI GPU cluster deal - The Globe and Mail",
+      "metrics": [
+        "$1.5B",
+        "70%",
+        "$0.99"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-54dfb14dcddad637"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-54dfb14dcddad637"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-54dfb14dcddad637"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-54dfb14dcddad637"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-54dfb14dcddad637"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-54dfb14dcddad637"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-54dfb14dcddad637"
+      ],
+      "entityNames": [
+        "Axe Compute"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theglobeandmail.com/investing/markets/markets-news/Tipranks/3500767/axe-compute-secures-1-5b-ai-gpu-cluster-deal",
+      "publisher": "theglobeandmail.com"
     },
     {
       "id": "EV-da1655ecfaf35feb",
@@ -7508,6 +7634,430 @@
       "publisher": "today.reuters.com"
     },
     {
+      "id": "EV-450f624a6a6446ce",
+      "dataDate": "2026-08-04",
+      "date": "2026-05-21",
+      "updatedDate": "2026-08-04",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Hark AI硬件融资：以60亿美元估值筹集7亿美元",
+      "originalTitle": "Hark AI Hardware Funding: $700M Raised at $6B Valuation",
+      "subject": "Hark AI Hardware Funding: $700M",
+      "action": "Raised",
+      "object": "at $6B Valuation",
+      "metrics": [
+        "$700M",
+        "$6B",
+        "$700 million",
+        "$6 billion",
+        "$700 Million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-805a8c0cc2403091"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-805a8c0cc2403091"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-805a8c0cc2403091"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-805a8c0cc2403091"
+      ],
+      "entityNames": [
+        "Hark AI Hardware Funding"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://aiagentsdirectory.com/blog/hark-ai-hardware-startup-secures-dollar700m-at-dollar6b-valuation",
+      "publisher": "aiagentsdirectory.com"
+    },
+    {
+      "id": "EV-522c339dded54be5",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "updatedDate": "2026-08-04",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "英特尔为开源多模态视频模型 MiniMax H3 提供 Day 0 支持，实现多卡 GPU 部署方案",
+      "originalTitle": "",
+      "subject": "英特尔为开源多模态视频模型 MiniMax H3 提供 Day 0 支持，实现多卡",
+      "action": "GPU 部署",
+      "object": "方案",
+      "metrics": [
+        "70 GPU"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-ithome-rss"
+        ],
+        "claim_refs": [
+          "CL-3622ba0e9d267e1d",
+          "CL-01b40bbd9f34aaf5",
+          "CL-51f0d6562c2b7a9c",
+          "CL-e3a6aa58eb47253c"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-e1517be14d06cdb7"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-78c60327054dcd52",
+        "EN-e1517be14d06cdb7"
+      ],
+      "entityNames": [
+        "英特尔为",
+        "MiniMax"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/985/033.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-d2a623e8eef1f61d",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "updatedDate": "2026-08-04",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "KIDZ AI与Limestone Networks签署数据中心谅解备忘录，部署开源权重AI模型的推理计算基础设施，推进其4460万美元的Canopy Wave协议",
+      "originalTitle": "KIDZ AI Signs Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement | News…",
+      "subject": "KIDZ AI",
+      "action": "Signs",
+      "object": "Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement | Newswire",
+      "metrics": [
+        "$44.6 Million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-bd6769fe78d0971a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-bd6769fe78d0971a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-bd6769fe78d0971a"
+      ],
+      "entityNames": [
+        "KIDZ AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://newswire.com/news/kidz-ai-signs-data-center-mou-with-limestone-networks-to-deploy-inference",
+      "publisher": "newswire.com"
+    },
+    {
       "id": "EV-a86b04e679044c45",
       "dataDate": "2026-08-02",
       "date": "2026-08-02",
@@ -14314,7 +14864,7 @@
           "name": "AI Factories",
           "type": "产品/服务",
           "ownerNames": [
-            "NVIDIA"
+            "Amazon"
           ]
         }
       ],
@@ -14774,6 +15324,31 @@
       "lastSeen": "2026-08-03"
     },
     {
+      "id": "EN-54dfb14dcddad637",
+      "name": "Axe Compute",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-faf8db3567f108e2",
+        "EV-b53c30df8b86da5b",
+        "EV-6543befe60fcbd5a",
+        "EV-c3b96b789b5bcafd"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-product_form-ai_compute_system"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-22",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "EN-9cb45a27a2808c01",
       "name": "Etched",
       "entityType": "organization_candidate",
@@ -15080,14 +15655,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_application-chips",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
         "TX-target_user-developer",
-        "TX-use_case-software_development",
-        "TX-product_form-model"
+        "TX-use_case-software_development"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-07",
@@ -15204,6 +15779,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-a852dc0ca6011ff6",
         "EV-a86b04e679044c45",
         "EV-64178e5d858f5e25",
         "EV-1bb68bb234c0dc36",
@@ -15329,6 +15905,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_application-chips",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
@@ -15347,12 +15924,11 @@
         "TX-industry-automotive_transportation",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-product_form-model",
+        "TX-product_form-ai_compute_system",
         "TX-technology-multimodal",
         "TX-product_form-robotic_system",
         "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
-        "TX-product_form-ai_compute_system",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
@@ -15379,7 +15955,7 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "EN-48bebf25e5bd5aca",
@@ -15425,12 +16001,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_application-chips",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-chip_accelerator",
-        "TX-target_user-developer",
-        "TX-product_form-model"
+        "TX-target_user-developer"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-23",
@@ -15481,13 +16057,89 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-industry-manufacturing",
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-model"
+        "TX-product_form-chip_accelerator"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
       "lastSeen": "2026-05-22"
+    },
+    {
+      "id": "EN-805a8c0cc2403091",
+      "name": "Hark AI Hardware Funding",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-450f624a6a6446ce"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-chip_accelerator"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-21",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "EN-e1517be14d06cdb7",
+      "name": "MiniMax",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-522c339dded54be5",
+        "EV-63858d9b5ef92175",
+        "EV-ec966b509327cbac",
+        "EV-243e73016576fa43",
+        "EV-9da9d755019f241f",
+        "EV-aae8b6aa0da7f103",
+        "EV-20cdbe59ba2a1359",
+        "EV-d5daf0537fe7b2d7"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-technology-multimodal",
+        "TX-technology-video_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-cf81a61e4eaef17c"
+      ],
+      "firstSeen": "2026-06-01",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "EN-bd6769fe78d0971a",
+      "name": "KIDZ AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d2a623e8eef1f61d"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-product_form-chip_accelerator",
+        "TX-technology-open_weights"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "EN-7640da40298286a6",
@@ -15510,31 +16162,6 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-02",
-      "lastSeen": "2026-08-02"
-    },
-    {
-      "id": "EN-54dfb14dcddad637",
-      "name": "Axe Compute",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-faf8db3567f108e2",
-        "EV-b53c30df8b86da5b",
-        "EV-6543befe60fcbd5a",
-        "EV-c3b96b789b5bcafd"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-ai_compute_system"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-22",
       "lastSeen": "2026-08-02"
     },
     {
@@ -15805,9 +16432,9 @@
         "TX-use_case-software_development",
         "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
+        "TX-product_form-ai_compute_system",
         "TX-product_form-robotic_system",
         "TX-technology-embodied_ai",
-        "TX-product_form-ai_compute_system",
         "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
@@ -15860,17 +16487,18 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-d2f8019b6783722f",
         "EV-2e1352039c487bb0",
         "EV-b888d3eb5f192649"
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-model"
+        "TX-product_form-model",
+        "TX-product_form-chip_accelerator"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-20",
-      "lastSeen": "2026-07-24"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "EN-a89151ba4b5ac0f2",
@@ -15886,6 +16514,7 @@
       ],
       "eventIds": [
         "EV-876baa523eb93c4f",
+        "EV-4e09daa86f1acb4f",
         "EV-2ff0422bb25d073b",
         "EV-9d5363657f3541e7",
         "EV-ca0beb75aaf1c156",
@@ -15895,15 +16524,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
-        "TX-technology-multimodal"
+        "TX-product_form-chip_accelerator",
+        "TX-technology-multimodal",
+        "TX-industry-legal_services"
       ],
       "relatedEntityIds": [
         "EN-33ea25778e18d372"
       ],
       "firstSeen": "2026-02-14",
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "EN-e95cf508b2bef361",
@@ -16225,6 +16855,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-c89018d79b3d25bd",
         "EV-136b2edc9b9f3be8",
         "EV-d7a7244d620a2142",
         "EV-fbb105be35c21eb4",
@@ -16286,6 +16917,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-4b286a3354cbf34a",
         "EV-6f433ccff3dce657",
         "EV-5f2acbfb8f54fd59",
         "EV-6aae550a6523a8fd",
@@ -16488,6 +17120,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
@@ -16504,7 +17137,6 @@
         "TX-target_user-consumer",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-product_form-model",
         "TX-target_user-researcher",
         "TX-industry-government_public_sector",
         "TX-industry-legal_services",
@@ -16543,7 +17175,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "EN-042e9398f2cc8902",
@@ -16586,6 +17218,7 @@
       ],
       "eventIds": [
         "EV-81a37a2365624b42",
+        "EV-c89018d79b3d25bd",
         "EV-97854226b6f43a95",
         "EV-136b2edc9b9f3be8",
         "EV-14cc7f194f3e5af8",
@@ -16659,6 +17292,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-9217ac1643635ce4",
         "EV-a3e674dce15e7188",
         "EV-7752b9d64fdfe1df",
         "EV-d9d415868b74485c",
@@ -16853,6 +17487,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
         "TX-use_case-research_discovery",
@@ -16868,7 +17503,6 @@
         "TX-target_user-consumer",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-industry-professional_services",
@@ -16906,7 +17540,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "EN-b3e3bce83d29e787",
@@ -17068,13 +17702,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-use_case-research_discovery",
         "TX-use_case-software_development",
         "TX-use_case-physical_automation",
         "TX-industry-media_entertainment",
         "TX-use_case-security_operations",
-        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
@@ -17082,8 +17716,8 @@
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-technology-image_generation",
         "TX-technology-video_generation",
+        "TX-technology-image_generation",
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
@@ -17111,9 +17745,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-technology-code_generation"
       ],
       "relatedEntityIds": [
@@ -17137,10 +17771,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
-        "TX-product_form-ai_infrastructure_software",
-        "TX-product_form-model"
+        "TX-product_form-ai_infrastructure_software"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-27",
@@ -17163,6 +17797,7 @@
         "EV-8b0f056571d68269",
         "EV-84697d26f813b122",
         "EV-4e5c6267b3237dac",
+        "EV-22f0d8caaa65a6a2",
         "EV-ef6464cf7f764835",
         "EV-d7b18c5d5759045d",
         "EV-67ef7accd26a07a0",
@@ -17193,6 +17828,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
@@ -17201,12 +17837,13 @@
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-industry-automotive_transportation",
-        "TX-product_form-model",
         "TX-target_user-researcher"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-7d1507284a5757ca"
+      ],
       "firstSeen": "2023-11-28",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "EN-4a639cb888a15d75",
@@ -17227,10 +17864,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
         "TX-technology-agentic_execution",
-        "TX-product_form-model",
         "TX-industry-retail_ecommerce",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-fine_tuning"
@@ -17244,6 +17881,69 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-0193a6afd26db7ae",
+      "eventId": "EV-d2a623e8eef1f61d",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "title": "KIDZ AI与Limestone Networks签署数据中心谅解备忘录，部署开源权重AI模型的推理计算基础设施，推进其4460万美元的Canopy Wave协议",
+      "stage": "planned",
+      "stageLabel": "计划中",
+      "customer": "KIDZ AI",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement | Newswire",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "KIDZ AI Inc. (NASDAQ:KIDZ)(NASDAQ:KIDZW) (\"KIDZ AI\" or the \"Company\"), an education technology company advancing AI infrastructure and GPU compute initiatives alongside its core EdTech operations, today announced that it has signed a Memorandum of Understanding (\"MOU\") with Limestone Networks, Inc. (\"Limestone\"), a Texas-based cloud and data center infrastructure provider, for the proposed deployment of the Company's AI computing infrastructure at the DFW3 data center in Dallas, Texas."
+      ],
+      "outcomes": [],
+      "metrics": [
+        "$44.6 Million",
+        "$44.6 Million"
+      ],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newswire.com/news/kidz-ai-signs-data-center-mou-with-limestone-networks-to-deploy-inference",
+      "entityIds": [
+        "EN-bd6769fe78d0971a"
+      ]
+    },
     {
       "id": "FDE-5ea7f3d69a03d417",
       "eventId": "EV-a86b04e679044c45",
@@ -17449,6 +18149,68 @@
     }
   ],
   "hardware": [
+    {
+      "id": "HW-68457c8c0a7240ac",
+      "eventId": "EV-522c339dded54be5",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "title": "英特尔为开源多模态视频模型 MiniMax H3 提供 Day 0 支持，实现多卡 GPU 部署方案",
+      "hardwareType": "gpu",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 70,
+      "capacityUnit": "GPU",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/985/033.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-08-03",
+      "entityIds": [
+        "EN-78c60327054dcd52",
+        "EN-e1517be14d06cdb7"
+      ]
+    },
     {
       "id": "HW-b0c753b9501f996e",
       "eventId": "EV-0a4e9b2eca953036",
@@ -18266,6 +19028,355 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-ca223925d7e51746",
+      "snapshotKey": "ca223925d7e51746",
+      "snapshotId": "HWS-c7b11b24c06f38fb",
+      "eventId": "EV-522c339dded54be5",
+      "eventIds": [
+        "EV-522c339dded54be5"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "英特尔为",
+      "subject": "英特尔为",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "70",
+          "unit": "GPU",
+          "fact_ref": "HWF-cf3ae7402ac378e8"
+        }
+      },
+      "factCount": 4,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-4ec1c7a61ea1c9e0",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T07:25:14.000Z",
+          "subject_entity_id": "EN-78c60327054dcd52",
+          "subject_name": "英特尔为",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "英特尔：为开源多模态视频模型 MiniMax H3 提供 Day 0 支持，实现基于多卡 GPU 的部署方案 - IT之家",
+          "event_refs": [
+            "EV-522c339dded54be5"
+          ],
+          "claim_ref": "CL-3622ba0e9d267e1d",
+          "source_refs": [
+            "SA-72400fa5b9a3650b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-2edc1b8d095be08a",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T07:25:14.000Z",
+          "subject_entity_id": "EN-78c60327054dcd52",
+          "subject_name": "英特尔为",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "英特尔：为开源多模态视频模型 MiniMax H3 提供 Day 0 支持，实现基于多卡 GPU 的部署方案",
+          "event_refs": [
+            "EV-522c339dded54be5"
+          ],
+          "claim_ref": "CL-01b40bbd9f34aaf5",
+          "source_refs": [
+            "SA-72400fa5b9a3650b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-853a277cc557d1eb",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T07:25:14.000Z",
+          "subject_entity_id": "EN-78c60327054dcd52",
+          "subject_name": "英特尔为",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "据介绍，英特尔锐炫 Pro B70 第一时间完成对 MiniMax H3 的适配，英特尔团队 实现了一种基于多卡 GPU 的部署方案 。",
+          "event_refs": [
+            "EV-522c339dded54be5"
+          ],
+          "claim_ref": "CL-51f0d6562c2b7a9c",
+          "source_refs": [
+            "SA-72400fa5b9a3650b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-cf3ae7402ac378e8",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T07:25:14.000Z",
+          "subject_entity_id": "EN-78c60327054dcd52",
+          "subject_name": "英特尔为",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "70",
+          "unit": "GPU",
+          "source_quote": "该方案采用 Encoder 8 卡张量并行（8TP）、DiT 8 卡 USP（Ulysses Sequence Parallel，并结合 Layer-wise Offloading），以及 VAE 部署于 B70 GPU 的整体架构， 实现了视频生成全流程的 GPU 加速 。",
+          "event_refs": [
+            "EV-522c339dded54be5"
+          ],
+          "claim_ref": "CL-e3a6aa58eb47253c",
+          "source_refs": [
+            "SA-72400fa5b9a3650b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/985/033.htm",
+      "entityIds": [
+        "EN-78c60327054dcd52",
+        "EN-e1517be14d06cdb7"
+      ]
+    },
+    {
+      "id": "HWC-5caba5f1e7fc7379",
+      "snapshotKey": "5caba5f1e7fc7379",
+      "snapshotId": "HWS-b83b16e48dc37c3c",
+      "eventId": "EV-d2a623e8eef1f61d",
+      "eventIds": [
+        "EV-d2a623e8eef1f61d"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "KIDZ AI",
+      "subject": "KIDZ AI",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "44.6",
+          "unit": "$Million",
+          "fact_ref": "HWF-7ada1af0d1a1fdef"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-4c292915f1f61772",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T00:00:00.000Z",
+          "subject_entity_id": "EN-bd6769fe78d0971a",
+          "subject_name": "KIDZ AI",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "44.6",
+          "unit": "$Million",
+          "source_quote": "KIDZ AI Signs Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement |",
+          "event_refs": [
+            "EV-d2a623e8eef1f61d"
+          ],
+          "claim_ref": "CL-58e01c2b44f46df7",
+          "source_refs": [
+            "SA-13038230089f90fc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-7ada1af0d1a1fdef",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T00:00:00.000Z",
+          "subject_entity_id": "EN-bd6769fe78d0971a",
+          "subject_name": "KIDZ AI",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "44.6",
+          "unit": "$Million",
+          "source_quote": "KIDZ AI Signs Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement",
+          "event_refs": [
+            "EV-d2a623e8eef1f61d"
+          ],
+          "claim_ref": "CL-709873b335bdf36f",
+          "source_refs": [
+            "SA-13038230089f90fc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newswire.com/news/kidz-ai-signs-data-center-mou-with-limestone-networks-to-deploy-inference",
+      "entityIds": [
+        "EN-bd6769fe78d0971a"
+      ]
+    },
+    {
+      "id": "HWC-cd6282f5eb700715",
+      "snapshotKey": "cd6282f5eb700715",
+      "snapshotId": "HWS-6148d799a216305e",
+      "eventId": "EV-d2a623e8eef1f61d",
+      "eventIds": [
+        "EV-d2a623e8eef1f61d"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "KIDZ AI",
+      "subject": "KIDZ AI",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-6fe78e864f76cb5a"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-6fe78e864f76cb5a",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T00:00:00.000Z",
+          "subject_entity_id": "EN-bd6769fe78d0971a",
+          "subject_name": "KIDZ AI",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KIDZ AI Inc. (NASDAQ:KIDZ)(NASDAQ:KIDZW) (\"KIDZ AI\" or the \"Company\"), an education technology company advancing AI infrastructure and GPU compute initiatives alongside its core EdTech operations, today announced that it has signed a Memorandum of Understanding (\"MOU\") with Limestone Networks, Inc. (\"Limestone\"), a Texas-based cloud and data center infrastructure provider, for the proposed deployment of the Company's AI computing infrastructure at the DFW3 data center in Dallas, Texas.",
+          "event_refs": [
+            "EV-d2a623e8eef1f61d"
+          ],
+          "claim_ref": "CL-e5419c691ace5a16",
+          "source_refs": [
+            "SA-13038230089f90fc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newswire.com/news/kidz-ai-signs-data-center-mou-with-limestone-networks-to-deploy-inference",
+      "entityIds": [
+        "EN-bd6769fe78d0971a"
+      ]
+    },
     {
       "id": "HWC-f9ce7e8019f87b4d",
       "snapshotKey": "f9ce7e8019f87b4d",

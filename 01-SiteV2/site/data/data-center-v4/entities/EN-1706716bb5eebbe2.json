@@ -1,0 +1,187 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "latestDataDate": "2026-08-04",
+    "currentDate": "2026-08-04",
+    "eventCount": 1832,
+    "quarantinedEventCount": 15
+  },
+  "entity": {
+    "id": "EN-1706716bb5eebbe2",
+    "name": "Superblocks",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-22f0d8caaa65a6a2"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-03",
+    "lastSeen": "2026-08-04",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-22f0d8caaa65a6a2"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-22f0d8caaa65a6a2",
+        "dataDate": "2026-08-04",
+        "date": "2026-08-03",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Superblocks与AWS宣布战略合作，为Amazon Bedrock带来安全的企业级AI应用开发 - 美国新闻中心",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-1706716bb5eebbe2",
+          "EN-7d1507284a5757ca",
+          "EN-cbc62794911ff31b"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-5314a0e746758b29",
+      "eventId": "EV-22f0d8caaa65a6a2",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "title": "Superblocks与AWS宣布战略合作，为Amazon Bedrock带来安全的企业级AI应用开发 - 美国新闻中心",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Superblocks",
+      "vendor": "AWS",
+      "industry": "未披露",
+      "useCase": "Bring Secure Enterprise AI App Development to Amazon Bedrock - US Press Center",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://press.aboutamazon.com/aws/2026/8/superblocks-and-aws-announce-strategic-collaboration-to-bring-secure-enterprise-ai-app-development-to-amazon-bedrock",
+      "entityIds": [
+        "EN-1706716bb5eebbe2",
+        "EN-7d1507284a5757ca",
+        "EN-cbc62794911ff31b"
+      ]
+    }
+  ],
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-534521941a007f6a",
+      "implementationKey": "534521941a007f6a",
+      "eventId": "EV-22f0d8caaa65a6a2",
+      "eventIds": [
+        "EV-22f0d8caaa65a6a2"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "title": "Superblocks × AWS：Bring Secure Enterprise AI App Development to Amazon Bedrock - US Press Center",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Superblocks",
+      "vendor": "AWS",
+      "industry": "未披露",
+      "useCase": "Bring Secure Enterprise AI App Development to Amazon Bedrock - US Press Center",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-c8c2e6fd3a084e77",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-03",
+          "dataDate": "2026-08-04",
+          "eventId": "EV-22f0d8caaa65a6a2",
+          "eventTitle": "Superblocks与AWS宣布战略合作，为Amazon Bedrock带来安全的企业级AI应用开发 - 美国新闻中心",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://press.aboutamazon.com/aws/2026/8/superblocks-and-aws-announce-strategic-collaboration-to-bring-secure-enterprise-ai-app-development-to-amazon-bedrock",
+      "entityIds": [
+        "EN-1706716bb5eebbe2",
+        "EN-7d1507284a5757ca",
+        "EN-cbc62794911ff31b"
+      ]
+    }
+  ]
+}

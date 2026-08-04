@@ -5,13 +5,127 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-03T07:17:08.673Z",
-    "latestDataDate": "2026-08-03",
-    "currentDate": "2026-08-03",
-    "eventCount": 1816,
+    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "latestDataDate": "2026-08-04",
+    "currentDate": "2026-08-04",
+    "eventCount": 1832,
     "quarantinedEventCount": 15
   },
   "hardware": [
+    {
+      "id": "HW-a033b945449628d5",
+      "eventId": "EV-a852dc0ca6011ff6",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "Aleria部署16,000块Nvidia AI芯片，在美国和阿联酋建设主权AI基础设施",
+      "hardwareType": "gpu",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "data_center",
+      "supplier": "NVIDIA",
+      "customer": "Aleria",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "United States",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://gulfnews.com/uae/abu-dhabis-aleria-deploys-16000-nvidia-ai-chips-across-us-and-uae-1.500629651",
+      "sourceName": "gulfnews.com",
+      "sourceDate": "2026-08-04",
+      "entityIds": [
+        "EN-c9e92f0b88c6456b",
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00"
+      ]
+    },
+    {
+      "id": "HW-68457c8c0a7240ac",
+      "eventId": "EV-522c339dded54be5",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "title": "英特尔为开源多模态视频模型 MiniMax H3 提供 Day 0 支持，实现多卡 GPU 部署方案",
+      "hardwareType": "gpu",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 70,
+      "capacityUnit": "GPU",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/985/033.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-08-03",
+      "entityIds": [
+        "EN-78c60327054dcd52",
+        "EN-e1517be14d06cdb7"
+      ]
+    },
     {
       "id": "HW-df8fb3396e493a21",
       "eventId": "EV-64178e5d858f5e25",
@@ -2026,6 +2140,640 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-ca223925d7e51746",
+      "snapshotKey": "ca223925d7e51746",
+      "snapshotId": "HWS-c7b11b24c06f38fb",
+      "eventId": "EV-522c339dded54be5",
+      "eventIds": [
+        "EV-522c339dded54be5"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "英特尔为",
+      "subject": "英特尔为",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "70",
+          "unit": "GPU",
+          "fact_ref": "HWF-cf3ae7402ac378e8"
+        }
+      },
+      "factCount": 4,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-4ec1c7a61ea1c9e0",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T07:25:14.000Z",
+          "subject_entity_id": "EN-78c60327054dcd52",
+          "subject_name": "英特尔为",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "英特尔：为开源多模态视频模型 MiniMax H3 提供 Day 0 支持，实现基于多卡 GPU 的部署方案 - IT之家",
+          "event_refs": [
+            "EV-522c339dded54be5"
+          ],
+          "claim_ref": "CL-3622ba0e9d267e1d",
+          "source_refs": [
+            "SA-72400fa5b9a3650b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-2edc1b8d095be08a",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T07:25:14.000Z",
+          "subject_entity_id": "EN-78c60327054dcd52",
+          "subject_name": "英特尔为",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "英特尔：为开源多模态视频模型 MiniMax H3 提供 Day 0 支持，实现基于多卡 GPU 的部署方案",
+          "event_refs": [
+            "EV-522c339dded54be5"
+          ],
+          "claim_ref": "CL-01b40bbd9f34aaf5",
+          "source_refs": [
+            "SA-72400fa5b9a3650b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-853a277cc557d1eb",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T07:25:14.000Z",
+          "subject_entity_id": "EN-78c60327054dcd52",
+          "subject_name": "英特尔为",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "据介绍，英特尔锐炫 Pro B70 第一时间完成对 MiniMax H3 的适配，英特尔团队 实现了一种基于多卡 GPU 的部署方案 。",
+          "event_refs": [
+            "EV-522c339dded54be5"
+          ],
+          "claim_ref": "CL-51f0d6562c2b7a9c",
+          "source_refs": [
+            "SA-72400fa5b9a3650b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-cf3ae7402ac378e8",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T07:25:14.000Z",
+          "subject_entity_id": "EN-78c60327054dcd52",
+          "subject_name": "英特尔为",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "70",
+          "unit": "GPU",
+          "source_quote": "该方案采用 Encoder 8 卡张量并行（8TP）、DiT 8 卡 USP（Ulysses Sequence Parallel，并结合 Layer-wise Offloading），以及 VAE 部署于 B70 GPU 的整体架构， 实现了视频生成全流程的 GPU 加速 。",
+          "event_refs": [
+            "EV-522c339dded54be5"
+          ],
+          "claim_ref": "CL-e3a6aa58eb47253c",
+          "source_refs": [
+            "SA-72400fa5b9a3650b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/985/033.htm",
+      "entityIds": [
+        "EN-78c60327054dcd52",
+        "EN-e1517be14d06cdb7"
+      ]
+    },
+    {
+      "id": "HWC-61a0c6448cae5866",
+      "snapshotKey": "61a0c6448cae5866",
+      "snapshotId": "HWS-ebbf89adee9a0ada",
+      "eventId": "EV-a852dc0ca6011ff6",
+      "eventIds": [
+        "EV-a852dc0ca6011ff6"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "Aleria",
+      "subject": "Aleria",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-8e73ff26be6e4b62"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-09b266f1de516217",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T17:51:04.000Z",
+          "subject_entity_id": "EN-c9e92f0b88c6456b",
+          "subject_name": "Aleria",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Abu Dhabi's Aleria deploys 16,000 Nvidia AI chips across US and UAE",
+          "event_refs": [
+            "EV-a852dc0ca6011ff6"
+          ],
+          "claim_ref": "CL-ccf17d1be321c753",
+          "source_refs": [
+            "SA-5ebf65406bc3e0fc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-8e73ff26be6e4b62",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T17:51:04.000Z",
+          "subject_entity_id": "EN-c9e92f0b88c6456b",
+          "subject_name": "Aleria",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Abu Dhabi's Aleria deploys 16,000 Nvidia AI chips across US and UAE",
+          "event_refs": [
+            "EV-a852dc0ca6011ff6"
+          ],
+          "claim_ref": "CL-f8f436207d072eb5",
+          "source_refs": [
+            "SA-5ebf65406bc3e0fc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://gulfnews.com/uae/abu-dhabis-aleria-deploys-16000-nvidia-ai-chips-across-us-and-uae-1.500629651",
+      "entityIds": [
+        "EN-c9e92f0b88c6456b",
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00"
+      ]
+    },
+    {
+      "id": "HWC-5cc9ed821363e4f7",
+      "snapshotKey": "5cc9ed821363e4f7",
+      "snapshotId": "HWS-758633f6c0fbe306",
+      "eventId": "EV-a852dc0ca6011ff6",
+      "eventIds": [
+        "EV-a852dc0ca6011ff6"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "Aleria",
+      "subject": "Aleria",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "30",
+          "unit": "$million",
+          "fact_ref": "HWF-371a7331aaff642d"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-117bd548d15619b6",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T17:51:04.000Z",
+          "subject_entity_id": "EN-c9e92f0b88c6456b",
+          "subject_name": "Aleria",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "30",
+          "unit": "$million",
+          "source_quote": "Abu Dhabi: Abu Dhabi-based sovereign AI infrastructure provider Aleria is expanding its artificial intelligence footprint across the United States and the UAE through partnerships with California technology companies Nvidia and DDN, as demand grows for secure, nationally controlled AI computing.The expansion will see Aleria deploy up to 16,000 Nvidia Blackwell Ultra graphics processing units (GPUs) in the United States, alongside 28 racks of next-generation Nvidia DGX Vera Rubin NVL72 systems in the UAE, marking one of the first deployments of the platform in the region. .Get updated faster and for FREE: Download the Gulf News app now - simply click here..The infrastructure, built on Nvidia’s accelerated computing technology and DDN’s high-performance storage architecture, is already operational in both countries.The company said the latest investment builds on existing sovereign AI facilities serving government agencies, national enterprises and operators of critical infrastructure. The US deployment will initially include 8,640 Nvidia Grace Blackwell Ultra GPUs before scaling to 16,000, supported by a 25-megawatt data centre designed for secure AI workloads. The UAE installation is intended to meet rising demand from governments and enterprises seeking to develop AI capabilities while retaining full control over sensitive data.Aleria said its platform is designed for sectors with strict data residency and regulatory requirements, including government, healthcare, financial services, energy, utilities and telecommunications. Rather than providing customers with standalone computing hardware, the company offers an integrated AI platform spanning data management, cloud orchestration, enterprise applications and AI services operating entirely within national jurisdictions.Chief executive Eric Leandri said the company had already demonstrated that sovereign AI infrastructure could operate at national scale in the UAE, with the latest expansion reflecting growing customer demand. “We did not come to market with a promise. We came with working infrastructure,” he said, adding that deploying Blackwell Ultra systems in the US and DGX Vera Rubin technology in the UAE represented “the next chapter of something already proven”.Marc Domenech, Nvidia’s vice-president for Enterprise in the META and CIS region, said sovereign AI infrastructure gives nations the ability to manage their most valuable digital assets. “Aleria’s NVIDIA-powered sovereign AI factories provide the region with efficient, full-stack computing for the AI industrial revolution,” he said.DDN, which is supplying the storage systems underpinning the deployment, said the collaboration combines high-performance computing with scalable data infrastructure tailored for AI-intensive environments.Ankur Arora, the company’s senior regional director for the Middle East and Africa, said the partnership delivers the performance and resilience required by organisations that cannot compromise on security, reliability or data sovereignty.The expansion comes as governments increasingly invest in sovereign AI infrastructure to ensure sensitive data remains within national borders while supporting the rapid adoption of artificial intelligence across public services and strategic industries. Aleria said its dual-market deployment strengthens AI capacity in both the United States and the UAE while supporting high-skilled technology jobs and enabling governments to scale AI systems they fully own and control..Innovation City and IOPn launch the Middle East's first sovereign AI data center.UAE gets easier access to US AI chips: What changed and why it matters.GCC AI startup 1001 raises $30 million to power critical infrastructure.Dr Thani Al Zeyoudi joins as Chairman of Agentic AI firm AIREV as UAE advances ambition to export homegrown artificial intelligence",
+          "event_refs": [
+            "EV-a852dc0ca6011ff6"
+          ],
+          "claim_ref": "CL-7685edc6e125280f",
+          "source_refs": [
+            "SA-5ebf65406bc3e0fc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-371a7331aaff642d",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T17:51:04.000Z",
+          "subject_entity_id": "EN-c9e92f0b88c6456b",
+          "subject_name": "Aleria",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "30",
+          "unit": "$million",
+          "source_quote": "Abu Dhabi: Abu Dhabi-based sovereign AI infrastructure provider Aleria is expanding its artificial intelligence footprint across the United States and the UAE through partnerships with California technology companies Nvidia and DDN, as demand grows for secure, nationally controlled AI computing.The expansion will see Aleria deploy up to 16,000 Nvidia Blackwell Ultra graphics processing units (GPUs) in the United States, alongside 28 racks of next-generation Nvidia DGX Vera Rubin NVL72 systems in the UAE, marking one of the first deployments of the platform in the region. .Get updated faster and for FREE: Download the Gulf News app now - simply click here..The infrastructure, built on Nvidia’s accelerated computing technology and DDN’s high-performance storage architecture, is already operational in both countries.The company said the latest investment builds on existing sovereign AI facilities serving government agencies, national enterprises and operators of critical infrastructure. The US deployment will initially include 8,640 Nvidia Grace Blackwell Ultra GPUs before scaling to 16,000, supported by a 25-megawatt data centre designed for secure AI workloads. The UAE installation is intended to meet rising demand from governments and enterprises seeking to develop AI capabilities while retaining full control over sensitive data.Aleria said its platform is designed for sectors with strict data residency and regulatory requirements, including government, healthcare, financial services, energy, utilities and telecommunications. Rather than providing customers with standalone computing hardware, the company offers an integrated AI platform spanning data management, cloud orchestration, enterprise applications and AI services operating entirely within national jurisdictions.Chief executive Eric Leandri said the company had already demonstrated that sovereign AI infrastructure could operate at national scale in the UAE, with the latest expansion reflecting growing customer demand. “We did not come to market with a promise. We came with working infrastructure,” he said, adding that deploying Blackwell Ultra systems in the US and DGX Vera Rubin technology in the UAE represented “the next chapter of something already proven”.Marc Domenech, Nvidia’s vice-president for Enterprise in the META and CIS region, said sovereign AI infrastructure gives nations the ability to manage their most valuable digital assets. “Aleria’s NVIDIA-powered sovereign AI factories provide the region with efficient, full-stack computing for the AI industrial revolution,” he said.DDN, which is supplying the storage systems underpinning the deployment, said the collaboration combines high-performance computing with scalable data infrastructure tailored for AI-intensive environments.Ankur Arora, the company’s senior regional director for the Middle East and Africa, said the partnership delivers the performance and resilience required by organisations that cannot compromise on security, reliability or data sovereignty.The expansion comes as governments increasingly invest in sovereign AI infrastructure to ensure sensitive data remains within national borders while supporting the rapid adoption of artificial intelligence across public services and strategic industries. Aleria said its dual-market deployment strengthens AI capacity in both the United States and the UAE while supporting high-skilled technology jobs and enabling governments to scale AI systems they fully own and control..Innovation City and IOPn launch the Middle East's first sovereign AI data center.UAE gets easier access to US AI chips: What changed and why it matters.GCC AI startup 1001 raises $30 million to power critical infrastructure.Dr Thani Al Zeyoudi joins as Chairman of Agentic AI firm AIREV as UAE advances ambition to export homegrown artificial intelligence",
+          "event_refs": [
+            "EV-a852dc0ca6011ff6"
+          ],
+          "claim_ref": "CL-ea2ba13948b8d548",
+          "source_refs": [
+            "SA-5ebf65406bc3e0fc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://gulfnews.com/uae/abu-dhabis-aleria-deploys-16000-nvidia-ai-chips-across-us-and-uae-1.500629651",
+      "entityIds": [
+        "EN-c9e92f0b88c6456b",
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00"
+      ]
+    },
+    {
+      "id": "HWC-b0a1cf3fc5a8077d",
+      "snapshotKey": "b0a1cf3fc5a8077d",
+      "snapshotId": "HWS-030a268cc16539e1",
+      "eventId": "EV-992c44c9bd65b7e1",
+      "eventIds": [
+        "EV-992c44c9bd65b7e1"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "FMS 2026 / HBF",
+      "subject": "SK 海力士",
+      "productNames": [
+        "FMS 2026",
+        "HBF"
+      ],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-12fd68a83712c4bb"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-12fd68a83712c4bb",
+          "fact_type": "product",
+          "observed_at": "2026-08-03T23:45:46.000Z",
+          "subject_entity_id": "EN-60c5644257240a32",
+          "subject_name": "SK 海力士",
+          "product_entity_ids": [
+            "EN-313288a6e417d286",
+            "EN-3d5291effddd967b"
+          ],
+          "product_names": [
+            "FMS 2026",
+            "HBF"
+          ],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "该规范由全球最大的开放式数据中心技术合作组织 OCP（Open Compute Project）正式发布，成为行业通用开放标准，而非企业私有标准。",
+          "event_refs": [
+            "EV-992c44c9bd65b7e1"
+          ],
+          "claim_ref": "CL-c2a5c865447d2753",
+          "source_refs": [
+            "SA-22c1bce2987bc4ef"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/985/289.htm",
+      "entityIds": [
+        "EN-60c5644257240a32",
+        "EN-313288a6e417d286",
+        "EN-3d5291effddd967b"
+      ]
+    },
+    {
+      "id": "HWC-5caba5f1e7fc7379",
+      "snapshotKey": "5caba5f1e7fc7379",
+      "snapshotId": "HWS-b83b16e48dc37c3c",
+      "eventId": "EV-d2a623e8eef1f61d",
+      "eventIds": [
+        "EV-d2a623e8eef1f61d"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "KIDZ AI",
+      "subject": "KIDZ AI",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "44.6",
+          "unit": "$Million",
+          "fact_ref": "HWF-7ada1af0d1a1fdef"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-4c292915f1f61772",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T00:00:00.000Z",
+          "subject_entity_id": "EN-bd6769fe78d0971a",
+          "subject_name": "KIDZ AI",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "44.6",
+          "unit": "$Million",
+          "source_quote": "KIDZ AI Signs Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement |",
+          "event_refs": [
+            "EV-d2a623e8eef1f61d"
+          ],
+          "claim_ref": "CL-58e01c2b44f46df7",
+          "source_refs": [
+            "SA-13038230089f90fc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-7ada1af0d1a1fdef",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T00:00:00.000Z",
+          "subject_entity_id": "EN-bd6769fe78d0971a",
+          "subject_name": "KIDZ AI",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "44.6",
+          "unit": "$Million",
+          "source_quote": "KIDZ AI Signs Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement",
+          "event_refs": [
+            "EV-d2a623e8eef1f61d"
+          ],
+          "claim_ref": "CL-709873b335bdf36f",
+          "source_refs": [
+            "SA-13038230089f90fc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newswire.com/news/kidz-ai-signs-data-center-mou-with-limestone-networks-to-deploy-inference",
+      "entityIds": [
+        "EN-bd6769fe78d0971a"
+      ]
+    },
+    {
+      "id": "HWC-cd6282f5eb700715",
+      "snapshotKey": "cd6282f5eb700715",
+      "snapshotId": "HWS-6148d799a216305e",
+      "eventId": "EV-d2a623e8eef1f61d",
+      "eventIds": [
+        "EV-d2a623e8eef1f61d"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "KIDZ AI",
+      "subject": "KIDZ AI",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-6fe78e864f76cb5a"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-6fe78e864f76cb5a",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T00:00:00.000Z",
+          "subject_entity_id": "EN-bd6769fe78d0971a",
+          "subject_name": "KIDZ AI",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KIDZ AI Inc. (NASDAQ:KIDZ)(NASDAQ:KIDZW) (\"KIDZ AI\" or the \"Company\"), an education technology company advancing AI infrastructure and GPU compute initiatives alongside its core EdTech operations, today announced that it has signed a Memorandum of Understanding (\"MOU\") with Limestone Networks, Inc. (\"Limestone\"), a Texas-based cloud and data center infrastructure provider, for the proposed deployment of the Company's AI computing infrastructure at the DFW3 data center in Dallas, Texas.",
+          "event_refs": [
+            "EV-d2a623e8eef1f61d"
+          ],
+          "claim_ref": "CL-e5419c691ace5a16",
+          "source_refs": [
+            "SA-13038230089f90fc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newswire.com/news/kidz-ai-signs-data-center-mou-with-limestone-networks-to-deploy-inference",
+      "entityIds": [
+        "EN-bd6769fe78d0971a"
+      ]
+    },
     {
       "id": "HWC-8eb9e3e3cf6ea367",
       "snapshotKey": "8eb9e3e3cf6ea367",
@@ -5177,36 +5925,37 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-08-03",
-      "funnel_id": "LF-d6cb1d485073e15d",
+      "data_date": "2026-08-04",
+      "funnel_id": "LF-3b7e4f42b24973c8",
       "lens": "hardware",
-      "date": "2026-08-03",
+      "date": "2026-08-04",
       "monitoring_paths": [
         "hardware_capacity_fab",
+        "hardware_capex",
         "hardware_oem_odm",
         "hardware_product_specs",
         "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 26,
-      "original_sources": 22,
-      "valid_claims": 34,
+      "raw_documents": 32,
+      "original_sources": 26,
+      "valid_claims": 16,
       "observations": 12,
-      "canonical_events": 10,
+      "canonical_events": 4,
       "blocker_counts": {
-        "source_outside_daily_window": 8,
-        "non_event_or_index_title": 2,
-        "no_source_bounded_event": 1,
-        "multi_event_roundup_not_single_event_source": 1,
-        "raw_source_quality_block": 4
+        "source_outside_daily_window": 15,
+        "no_source_bounded_event": 4,
+        "non_event_or_index_title": 1,
+        "raw_source_quality_block": 7,
+        "raw_document_not_auditable": 1
       },
       "rates": {
-        "original_source_rate": 0.8461538461538461,
-        "valid_claim_rate": 1,
-        "observation_rate": 0.35294117647058826,
-        "event_conversion_rate": 0.29411764705882354
+        "original_source_rate": 0.8125,
+        "valid_claim_rate": 0.5,
+        "observation_rate": 0.75,
+        "event_conversion_rate": 0.25
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/monitoring-funnel.json"
     }
   ]
 }

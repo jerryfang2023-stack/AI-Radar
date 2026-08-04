@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-03T07:17:08.673Z",
-    "latestDataDate": "2026-08-03",
-    "currentDate": "2026-08-03",
-    "eventCount": 1816,
+    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "latestDataDate": "2026-08-04",
+    "currentDate": "2026-08-04",
+    "eventCount": 1832,
     "quarantinedEventCount": 15
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-22f0d8caaa65a6a2",
       "EV-69a82f50c60d4a64",
       "EV-0d862d59b05361cc",
       "EV-4e55361d8324dd49",
@@ -38,12 +39,14 @@
       "TX-technology-model_context_protocol"
     ],
     "relatedEntityIds": [
+      "EN-cbc62794911ff31b",
       "EN-e947caedcfbb4b90",
       "EN-761a66c29a55bc53"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-06-22",
+    "lastSeen": "2026-08-04",
     "relationIds": [
+      "REL2-4c6be3fd3d25d6c2",
       "REL2-8fcc9dd1f83c7213",
       "REL2-4a8b17a8d4773505",
       "REL2-a17d66ffd22c160e"
@@ -51,7 +54,9 @@
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
-      "partnerships": [],
+      "partnerships": [
+        "EV-22f0d8caaa65a6a2"
+      ],
       "productsServices": [
         "EV-69a82f50c60d4a64",
         "EV-0d862d59b05361cc",
@@ -66,6 +71,51 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-22f0d8caaa65a6a2",
+        "dataDate": "2026-08-04",
+        "date": "2026-08-03",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Superblocks与AWS宣布战略合作，为Amazon Bedrock带来安全的企业级AI应用开发 - 美国新闻中心",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-1706716bb5eebbe2",
+          "EN-7d1507284a5757ca",
+          "EN-cbc62794911ff31b"
+        ]
+      },
       {
         "id": "EV-69a82f50c60d4a64",
         "dataDate": "2026-06-22",
@@ -311,6 +361,71 @@
   },
   "relatedEntities": [
     {
+      "id": "EN-cbc62794911ff31b",
+      "name": "Amazon",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-dcbe916c6138e5cb",
+        "EV-a00763037a94d512",
+        "EV-02548003157849bb",
+        "EV-8b0f056571d68269",
+        "EV-84697d26f813b122",
+        "EV-4e5c6267b3237dac",
+        "EV-22f0d8caaa65a6a2",
+        "EV-ef6464cf7f764835",
+        "EV-d7b18c5d5759045d",
+        "EV-67ef7accd26a07a0",
+        "EV-53f4f2a34b3ce1b4",
+        "EV-ec2e421d0e18be9b",
+        "EV-c0a65877001ed413",
+        "EV-303b418c63895ba6",
+        "EV-30749250196dd507",
+        "EV-43976be427aefb52",
+        "EV-b93b5cc15823e9c3",
+        "EV-918fc324de3117bd",
+        "EV-3acf607a02706fa8",
+        "EV-f953555178744c22",
+        "EV-69a82f50c60d4a64",
+        "EV-491e7b4b506ab3e3",
+        "EV-c108e7cc2df7faf4",
+        "EV-4e55361d8324dd49",
+        "EV-94d9c8d5ac1e10de",
+        "EV-f89ba2b487d4abf1",
+        "EV-b4e7187a9bd1de0e",
+        "EV-84b423077bf8dac8",
+        "EV-7f9631d793292d07",
+        "EV-8993e021ac17df4a",
+        "EV-67a69ab5b20da3c1",
+        "EV-b4f38d8bff12727b",
+        "EV-1b92b6c835ce240c",
+        "EV-933294dfb2d19a67"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-industry-manufacturing",
+        "TX-product_form-chip_accelerator",
+        "TX-target_user-developer",
+        "TX-use_case-research_discovery",
+        "TX-ai_market_application-models",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-industry-automotive_transportation",
+        "TX-target_user-researcher"
+      ],
+      "relatedEntityIds": [
+        "EN-7d1507284a5757ca"
+      ],
+      "firstSeen": "2023-11-28",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "EN-e947caedcfbb4b90",
       "name": "AI Agents On Partner Central",
       "entityType": "product_candidate",
@@ -360,6 +475,27 @@
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-4c6be3fd3d25d6c2",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d1507284a5757ca",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-cbc62794911ff31b",
+      "object_type": "entity",
+      "event_id": "EV-22f0d8caaa65a6a2",
+      "claim_refs": [
+        "CL-df49b6cf08e027c6",
+        "CL-ac2d6e196597c3b0",
+        "CL-ee2382d779ae901f",
+        "CL-d7a80103d2e383d8"
+      ],
+      "source_refs": [
+        "SA-aac3194c93cb5136"
+      ],
+      "data_date": "2026-08-04",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-8fcc9dd1f83c7213",
       "relationship_version": "RELATION-V2.1",
@@ -598,6 +734,7 @@
         "EV-a1aea4a04b9e51c7",
         "EV-e869f17214557633",
         "EV-43301de739fe560e",
+        "EV-22f0d8caaa65a6a2",
         "EV-7f2811d2272cf4a3",
         "EV-c0a65877001ed413",
         "EV-890ffd351486b884",
@@ -797,6 +934,7 @@
       ],
       "fdeIds": [
         "FDE-3e499215265a81d5",
+        "FDE-5314a0e746758b29",
         "FDE-1804f08a3871ba4e",
         "FDE-27308b0a6cb2321a"
       ],
@@ -804,7 +942,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -916,6 +1054,7 @@
         "EV-23ae55daa341be06",
         "EV-6bb83280a2116f24",
         "EV-d10684a6f16afe10",
+        "EV-a852dc0ca6011ff6",
         "EV-acddfa62aabb004f",
         "EV-fd825cd7f7997fc8",
         "EV-57944eebac69d510",
@@ -991,6 +1130,9 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-4b286a3354cbf34a",
+        "EV-7dd55841e1ca4652",
+        "EV-9217ac1643635ce4",
         "EV-dc75a3b8c63ed706",
         "EV-5e85bc91a6924760",
         "EV-f3e0915e13bcc5a1",
@@ -1323,6 +1465,7 @@
         "EN-50e2a4156631df49",
         "EN-f531c4e9f8555dcc",
         "EN-df30a48992da7fe8",
+        "EN-c9e92f0b88c6456b",
         "EN-6b182ca786385b1e",
         "EN-76a9a8a6e2f1a47b",
         "EN-ebfeb2f51b9eaf40",
@@ -1367,6 +1510,8 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-d50883991bfc5a69",
+        "EN-b02e43bdec738f2c",
         "EN-bbdefa2950f49882",
         "EN-307557d99a7eb726",
         "EN-d0cdc9650aa64450",
@@ -1544,6 +1689,7 @@
         "FDE-3665b073634d4b9d"
       ],
       "hardwareIds": [
+        "HW-a033b945449628d5",
         "HW-18e9985f2e93555c",
         "HW-2ce4c2fb193555e3",
         "HW-25ce41fab12d9ef2"
@@ -1690,6 +1836,95 @@
       "lastSeen": "2026-07-30"
     }
   ],
-  "fde": [],
-  "hardware": []
+  "fde": [
+    {
+      "id": "FDE-5314a0e746758b29",
+      "eventId": "EV-22f0d8caaa65a6a2",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "title": "Superblocks与AWS宣布战略合作，为Amazon Bedrock带来安全的企业级AI应用开发 - 美国新闻中心",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Superblocks",
+      "vendor": "AWS",
+      "industry": "未披露",
+      "useCase": "Bring Secure Enterprise AI App Development to Amazon Bedrock - US Press Center",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://press.aboutamazon.com/aws/2026/8/superblocks-and-aws-announce-strategic-collaboration-to-bring-secure-enterprise-ai-app-development-to-amazon-bedrock",
+      "entityIds": [
+        "EN-1706716bb5eebbe2",
+        "EN-7d1507284a5757ca",
+        "EN-cbc62794911ff31b"
+      ]
+    }
+  ],
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-534521941a007f6a",
+      "implementationKey": "534521941a007f6a",
+      "eventId": "EV-22f0d8caaa65a6a2",
+      "eventIds": [
+        "EV-22f0d8caaa65a6a2"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "title": "Superblocks × AWS：Bring Secure Enterprise AI App Development to Amazon Bedrock - US Press Center",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Superblocks",
+      "vendor": "AWS",
+      "industry": "未披露",
+      "useCase": "Bring Secure Enterprise AI App Development to Amazon Bedrock - US Press Center",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-c8c2e6fd3a084e77",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-03",
+          "dataDate": "2026-08-04",
+          "eventId": "EV-22f0d8caaa65a6a2",
+          "eventTitle": "Superblocks与AWS宣布战略合作，为Amazon Bedrock带来安全的企业级AI应用开发 - 美国新闻中心",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://press.aboutamazon.com/aws/2026/8/superblocks-and-aws-announce-strategic-collaboration-to-bring-secure-enterprise-ai-app-development-to-amazon-bedrock",
+      "entityIds": [
+        "EN-1706716bb5eebbe2",
+        "EN-7d1507284a5757ca",
+        "EN-cbc62794911ff31b"
+      ]
+    }
+  ]
 }

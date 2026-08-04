@@ -5,13 +5,127 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-03T07:17:08.673Z",
-    "latestDataDate": "2026-08-03",
-    "currentDate": "2026-08-03",
-    "eventCount": 1816,
+    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "latestDataDate": "2026-08-04",
+    "currentDate": "2026-08-04",
+    "eventCount": 1832,
     "quarantinedEventCount": 15
   },
   "hardware": [
+    {
+      "id": "HW-a033b945449628d5",
+      "eventId": "EV-a852dc0ca6011ff6",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "Aleria部署16,000块Nvidia AI芯片，在美国和阿联酋建设主权AI基础设施",
+      "hardwareType": "gpu",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "data_center",
+      "supplier": "NVIDIA",
+      "customer": "Aleria",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "United States",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://gulfnews.com/uae/abu-dhabis-aleria-deploys-16000-nvidia-ai-chips-across-us-and-uae-1.500629651",
+      "sourceName": "gulfnews.com",
+      "sourceDate": "2026-08-04",
+      "entityIds": [
+        "EN-c9e92f0b88c6456b",
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00"
+      ]
+    },
+    {
+      "id": "HW-68457c8c0a7240ac",
+      "eventId": "EV-522c339dded54be5",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "title": "英特尔为开源多模态视频模型 MiniMax H3 提供 Day 0 支持，实现多卡 GPU 部署方案",
+      "hardwareType": "gpu",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 70,
+      "capacityUnit": "GPU",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/985/033.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-08-03",
+      "entityIds": [
+        "EN-78c60327054dcd52",
+        "EN-e1517be14d06cdb7"
+      ]
+    },
     {
       "id": "HW-df8fb3396e493a21",
       "eventId": "EV-64178e5d858f5e25",
@@ -2026,6 +2140,640 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-ca223925d7e51746",
+      "snapshotKey": "ca223925d7e51746",
+      "snapshotId": "HWS-c7b11b24c06f38fb",
+      "eventId": "EV-522c339dded54be5",
+      "eventIds": [
+        "EV-522c339dded54be5"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "英特尔为",
+      "subject": "英特尔为",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "70",
+          "unit": "GPU",
+          "fact_ref": "HWF-cf3ae7402ac378e8"
+        }
+      },
+      "factCount": 4,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-4ec1c7a61ea1c9e0",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T07:25:14.000Z",
+          "subject_entity_id": "EN-78c60327054dcd52",
+          "subject_name": "英特尔为",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "英特尔：为开源多模态视频模型 MiniMax H3 提供 Day 0 支持，实现基于多卡 GPU 的部署方案 - IT之家",
+          "event_refs": [
+            "EV-522c339dded54be5"
+          ],
+          "claim_ref": "CL-3622ba0e9d267e1d",
+          "source_refs": [
+            "SA-72400fa5b9a3650b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-2edc1b8d095be08a",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T07:25:14.000Z",
+          "subject_entity_id": "EN-78c60327054dcd52",
+          "subject_name": "英特尔为",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "英特尔：为开源多模态视频模型 MiniMax H3 提供 Day 0 支持，实现基于多卡 GPU 的部署方案",
+          "event_refs": [
+            "EV-522c339dded54be5"
+          ],
+          "claim_ref": "CL-01b40bbd9f34aaf5",
+          "source_refs": [
+            "SA-72400fa5b9a3650b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-853a277cc557d1eb",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T07:25:14.000Z",
+          "subject_entity_id": "EN-78c60327054dcd52",
+          "subject_name": "英特尔为",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "据介绍，英特尔锐炫 Pro B70 第一时间完成对 MiniMax H3 的适配，英特尔团队 实现了一种基于多卡 GPU 的部署方案 。",
+          "event_refs": [
+            "EV-522c339dded54be5"
+          ],
+          "claim_ref": "CL-51f0d6562c2b7a9c",
+          "source_refs": [
+            "SA-72400fa5b9a3650b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-cf3ae7402ac378e8",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T07:25:14.000Z",
+          "subject_entity_id": "EN-78c60327054dcd52",
+          "subject_name": "英特尔为",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "70",
+          "unit": "GPU",
+          "source_quote": "该方案采用 Encoder 8 卡张量并行（8TP）、DiT 8 卡 USP（Ulysses Sequence Parallel，并结合 Layer-wise Offloading），以及 VAE 部署于 B70 GPU 的整体架构， 实现了视频生成全流程的 GPU 加速 。",
+          "event_refs": [
+            "EV-522c339dded54be5"
+          ],
+          "claim_ref": "CL-e3a6aa58eb47253c",
+          "source_refs": [
+            "SA-72400fa5b9a3650b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/985/033.htm",
+      "entityIds": [
+        "EN-78c60327054dcd52",
+        "EN-e1517be14d06cdb7"
+      ]
+    },
+    {
+      "id": "HWC-61a0c6448cae5866",
+      "snapshotKey": "61a0c6448cae5866",
+      "snapshotId": "HWS-ebbf89adee9a0ada",
+      "eventId": "EV-a852dc0ca6011ff6",
+      "eventIds": [
+        "EV-a852dc0ca6011ff6"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "Aleria",
+      "subject": "Aleria",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-8e73ff26be6e4b62"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-09b266f1de516217",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T17:51:04.000Z",
+          "subject_entity_id": "EN-c9e92f0b88c6456b",
+          "subject_name": "Aleria",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Abu Dhabi's Aleria deploys 16,000 Nvidia AI chips across US and UAE",
+          "event_refs": [
+            "EV-a852dc0ca6011ff6"
+          ],
+          "claim_ref": "CL-ccf17d1be321c753",
+          "source_refs": [
+            "SA-5ebf65406bc3e0fc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-8e73ff26be6e4b62",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T17:51:04.000Z",
+          "subject_entity_id": "EN-c9e92f0b88c6456b",
+          "subject_name": "Aleria",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Abu Dhabi's Aleria deploys 16,000 Nvidia AI chips across US and UAE",
+          "event_refs": [
+            "EV-a852dc0ca6011ff6"
+          ],
+          "claim_ref": "CL-f8f436207d072eb5",
+          "source_refs": [
+            "SA-5ebf65406bc3e0fc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://gulfnews.com/uae/abu-dhabis-aleria-deploys-16000-nvidia-ai-chips-across-us-and-uae-1.500629651",
+      "entityIds": [
+        "EN-c9e92f0b88c6456b",
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00"
+      ]
+    },
+    {
+      "id": "HWC-5cc9ed821363e4f7",
+      "snapshotKey": "5cc9ed821363e4f7",
+      "snapshotId": "HWS-758633f6c0fbe306",
+      "eventId": "EV-a852dc0ca6011ff6",
+      "eventIds": [
+        "EV-a852dc0ca6011ff6"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "Aleria",
+      "subject": "Aleria",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "30",
+          "unit": "$million",
+          "fact_ref": "HWF-371a7331aaff642d"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-117bd548d15619b6",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T17:51:04.000Z",
+          "subject_entity_id": "EN-c9e92f0b88c6456b",
+          "subject_name": "Aleria",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "30",
+          "unit": "$million",
+          "source_quote": "Abu Dhabi: Abu Dhabi-based sovereign AI infrastructure provider Aleria is expanding its artificial intelligence footprint across the United States and the UAE through partnerships with California technology companies Nvidia and DDN, as demand grows for secure, nationally controlled AI computing.The expansion will see Aleria deploy up to 16,000 Nvidia Blackwell Ultra graphics processing units (GPUs) in the United States, alongside 28 racks of next-generation Nvidia DGX Vera Rubin NVL72 systems in the UAE, marking one of the first deployments of the platform in the region. .Get updated faster and for FREE: Download the Gulf News app now - simply click here..The infrastructure, built on Nvidia’s accelerated computing technology and DDN’s high-performance storage architecture, is already operational in both countries.The company said the latest investment builds on existing sovereign AI facilities serving government agencies, national enterprises and operators of critical infrastructure. The US deployment will initially include 8,640 Nvidia Grace Blackwell Ultra GPUs before scaling to 16,000, supported by a 25-megawatt data centre designed for secure AI workloads. The UAE installation is intended to meet rising demand from governments and enterprises seeking to develop AI capabilities while retaining full control over sensitive data.Aleria said its platform is designed for sectors with strict data residency and regulatory requirements, including government, healthcare, financial services, energy, utilities and telecommunications. Rather than providing customers with standalone computing hardware, the company offers an integrated AI platform spanning data management, cloud orchestration, enterprise applications and AI services operating entirely within national jurisdictions.Chief executive Eric Leandri said the company had already demonstrated that sovereign AI infrastructure could operate at national scale in the UAE, with the latest expansion reflecting growing customer demand. “We did not come to market with a promise. We came with working infrastructure,” he said, adding that deploying Blackwell Ultra systems in the US and DGX Vera Rubin technology in the UAE represented “the next chapter of something already proven”.Marc Domenech, Nvidia’s vice-president for Enterprise in the META and CIS region, said sovereign AI infrastructure gives nations the ability to manage their most valuable digital assets. “Aleria’s NVIDIA-powered sovereign AI factories provide the region with efficient, full-stack computing for the AI industrial revolution,” he said.DDN, which is supplying the storage systems underpinning the deployment, said the collaboration combines high-performance computing with scalable data infrastructure tailored for AI-intensive environments.Ankur Arora, the company’s senior regional director for the Middle East and Africa, said the partnership delivers the performance and resilience required by organisations that cannot compromise on security, reliability or data sovereignty.The expansion comes as governments increasingly invest in sovereign AI infrastructure to ensure sensitive data remains within national borders while supporting the rapid adoption of artificial intelligence across public services and strategic industries. Aleria said its dual-market deployment strengthens AI capacity in both the United States and the UAE while supporting high-skilled technology jobs and enabling governments to scale AI systems they fully own and control..Innovation City and IOPn launch the Middle East's first sovereign AI data center.UAE gets easier access to US AI chips: What changed and why it matters.GCC AI startup 1001 raises $30 million to power critical infrastructure.Dr Thani Al Zeyoudi joins as Chairman of Agentic AI firm AIREV as UAE advances ambition to export homegrown artificial intelligence",
+          "event_refs": [
+            "EV-a852dc0ca6011ff6"
+          ],
+          "claim_ref": "CL-7685edc6e125280f",
+          "source_refs": [
+            "SA-5ebf65406bc3e0fc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-371a7331aaff642d",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T17:51:04.000Z",
+          "subject_entity_id": "EN-c9e92f0b88c6456b",
+          "subject_name": "Aleria",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "30",
+          "unit": "$million",
+          "source_quote": "Abu Dhabi: Abu Dhabi-based sovereign AI infrastructure provider Aleria is expanding its artificial intelligence footprint across the United States and the UAE through partnerships with California technology companies Nvidia and DDN, as demand grows for secure, nationally controlled AI computing.The expansion will see Aleria deploy up to 16,000 Nvidia Blackwell Ultra graphics processing units (GPUs) in the United States, alongside 28 racks of next-generation Nvidia DGX Vera Rubin NVL72 systems in the UAE, marking one of the first deployments of the platform in the region. .Get updated faster and for FREE: Download the Gulf News app now - simply click here..The infrastructure, built on Nvidia’s accelerated computing technology and DDN’s high-performance storage architecture, is already operational in both countries.The company said the latest investment builds on existing sovereign AI facilities serving government agencies, national enterprises and operators of critical infrastructure. The US deployment will initially include 8,640 Nvidia Grace Blackwell Ultra GPUs before scaling to 16,000, supported by a 25-megawatt data centre designed for secure AI workloads. The UAE installation is intended to meet rising demand from governments and enterprises seeking to develop AI capabilities while retaining full control over sensitive data.Aleria said its platform is designed for sectors with strict data residency and regulatory requirements, including government, healthcare, financial services, energy, utilities and telecommunications. Rather than providing customers with standalone computing hardware, the company offers an integrated AI platform spanning data management, cloud orchestration, enterprise applications and AI services operating entirely within national jurisdictions.Chief executive Eric Leandri said the company had already demonstrated that sovereign AI infrastructure could operate at national scale in the UAE, with the latest expansion reflecting growing customer demand. “We did not come to market with a promise. We came with working infrastructure,” he said, adding that deploying Blackwell Ultra systems in the US and DGX Vera Rubin technology in the UAE represented “the next chapter of something already proven”.Marc Domenech, Nvidia’s vice-president for Enterprise in the META and CIS region, said sovereign AI infrastructure gives nations the ability to manage their most valuable digital assets. “Aleria’s NVIDIA-powered sovereign AI factories provide the region with efficient, full-stack computing for the AI industrial revolution,” he said.DDN, which is supplying the storage systems underpinning the deployment, said the collaboration combines high-performance computing with scalable data infrastructure tailored for AI-intensive environments.Ankur Arora, the company’s senior regional director for the Middle East and Africa, said the partnership delivers the performance and resilience required by organisations that cannot compromise on security, reliability or data sovereignty.The expansion comes as governments increasingly invest in sovereign AI infrastructure to ensure sensitive data remains within national borders while supporting the rapid adoption of artificial intelligence across public services and strategic industries. Aleria said its dual-market deployment strengthens AI capacity in both the United States and the UAE while supporting high-skilled technology jobs and enabling governments to scale AI systems they fully own and control..Innovation City and IOPn launch the Middle East's first sovereign AI data center.UAE gets easier access to US AI chips: What changed and why it matters.GCC AI startup 1001 raises $30 million to power critical infrastructure.Dr Thani Al Zeyoudi joins as Chairman of Agentic AI firm AIREV as UAE advances ambition to export homegrown artificial intelligence",
+          "event_refs": [
+            "EV-a852dc0ca6011ff6"
+          ],
+          "claim_ref": "CL-ea2ba13948b8d548",
+          "source_refs": [
+            "SA-5ebf65406bc3e0fc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://gulfnews.com/uae/abu-dhabis-aleria-deploys-16000-nvidia-ai-chips-across-us-and-uae-1.500629651",
+      "entityIds": [
+        "EN-c9e92f0b88c6456b",
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00"
+      ]
+    },
+    {
+      "id": "HWC-b0a1cf3fc5a8077d",
+      "snapshotKey": "b0a1cf3fc5a8077d",
+      "snapshotId": "HWS-030a268cc16539e1",
+      "eventId": "EV-992c44c9bd65b7e1",
+      "eventIds": [
+        "EV-992c44c9bd65b7e1"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "FMS 2026 / HBF",
+      "subject": "SK 海力士",
+      "productNames": [
+        "FMS 2026",
+        "HBF"
+      ],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-12fd68a83712c4bb"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-12fd68a83712c4bb",
+          "fact_type": "product",
+          "observed_at": "2026-08-03T23:45:46.000Z",
+          "subject_entity_id": "EN-60c5644257240a32",
+          "subject_name": "SK 海力士",
+          "product_entity_ids": [
+            "EN-313288a6e417d286",
+            "EN-3d5291effddd967b"
+          ],
+          "product_names": [
+            "FMS 2026",
+            "HBF"
+          ],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "该规范由全球最大的开放式数据中心技术合作组织 OCP（Open Compute Project）正式发布，成为行业通用开放标准，而非企业私有标准。",
+          "event_refs": [
+            "EV-992c44c9bd65b7e1"
+          ],
+          "claim_ref": "CL-c2a5c865447d2753",
+          "source_refs": [
+            "SA-22c1bce2987bc4ef"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/985/289.htm",
+      "entityIds": [
+        "EN-60c5644257240a32",
+        "EN-313288a6e417d286",
+        "EN-3d5291effddd967b"
+      ]
+    },
+    {
+      "id": "HWC-5caba5f1e7fc7379",
+      "snapshotKey": "5caba5f1e7fc7379",
+      "snapshotId": "HWS-b83b16e48dc37c3c",
+      "eventId": "EV-d2a623e8eef1f61d",
+      "eventIds": [
+        "EV-d2a623e8eef1f61d"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "KIDZ AI",
+      "subject": "KIDZ AI",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "44.6",
+          "unit": "$Million",
+          "fact_ref": "HWF-7ada1af0d1a1fdef"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-4c292915f1f61772",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T00:00:00.000Z",
+          "subject_entity_id": "EN-bd6769fe78d0971a",
+          "subject_name": "KIDZ AI",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "44.6",
+          "unit": "$Million",
+          "source_quote": "KIDZ AI Signs Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement |",
+          "event_refs": [
+            "EV-d2a623e8eef1f61d"
+          ],
+          "claim_ref": "CL-58e01c2b44f46df7",
+          "source_refs": [
+            "SA-13038230089f90fc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-7ada1af0d1a1fdef",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T00:00:00.000Z",
+          "subject_entity_id": "EN-bd6769fe78d0971a",
+          "subject_name": "KIDZ AI",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "44.6",
+          "unit": "$Million",
+          "source_quote": "KIDZ AI Signs Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement",
+          "event_refs": [
+            "EV-d2a623e8eef1f61d"
+          ],
+          "claim_ref": "CL-709873b335bdf36f",
+          "source_refs": [
+            "SA-13038230089f90fc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newswire.com/news/kidz-ai-signs-data-center-mou-with-limestone-networks-to-deploy-inference",
+      "entityIds": [
+        "EN-bd6769fe78d0971a"
+      ]
+    },
+    {
+      "id": "HWC-cd6282f5eb700715",
+      "snapshotKey": "cd6282f5eb700715",
+      "snapshotId": "HWS-6148d799a216305e",
+      "eventId": "EV-d2a623e8eef1f61d",
+      "eventIds": [
+        "EV-d2a623e8eef1f61d"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "KIDZ AI",
+      "subject": "KIDZ AI",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-6fe78e864f76cb5a"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-6fe78e864f76cb5a",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T00:00:00.000Z",
+          "subject_entity_id": "EN-bd6769fe78d0971a",
+          "subject_name": "KIDZ AI",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KIDZ AI Inc. (NASDAQ:KIDZ)(NASDAQ:KIDZW) (\"KIDZ AI\" or the \"Company\"), an education technology company advancing AI infrastructure and GPU compute initiatives alongside its core EdTech operations, today announced that it has signed a Memorandum of Understanding (\"MOU\") with Limestone Networks, Inc. (\"Limestone\"), a Texas-based cloud and data center infrastructure provider, for the proposed deployment of the Company's AI computing infrastructure at the DFW3 data center in Dallas, Texas.",
+          "event_refs": [
+            "EV-d2a623e8eef1f61d"
+          ],
+          "claim_ref": "CL-e5419c691ace5a16",
+          "source_refs": [
+            "SA-13038230089f90fc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newswire.com/news/kidz-ai-signs-data-center-mou-with-limestone-networks-to-deploy-inference",
+      "entityIds": [
+        "EN-bd6769fe78d0971a"
+      ]
+    },
     {
       "id": "HWC-8eb9e3e3cf6ea367",
       "snapshotKey": "8eb9e3e3cf6ea367",
@@ -5176,6 +5924,80 @@
     }
   ],
   "events": [
+    {
+      "id": "EV-e2be12ac077a1062",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "updatedDate": "2026-08-04",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"",
+      "originalTitle": "",
+      "subject": "DesignArena 开发商 Intelligence 获 790 万美元种子轮",
+      "action": "融资",
+      "object": "，为 AI 模型注入\"品味\"",
+      "metrics": [
+        "$7.9 million"
+      ],
+      "locations": [],
+      "missingFields": [
+        "entities"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
     {
       "id": "EV-7a44a47bf36780d2",
       "dataDate": "2026-08-03",
@@ -10130,6 +10952,123 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-faf8db3567f108e2",
+      "dataDate": "2026-08-04",
+      "date": "2026-07-27",
+      "updatedDate": "2026-08-04",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Axe Compute 获得 15 亿美元 AI GPU 集群交易",
+      "originalTitle": "Axe Compute secures $1.5B AI GPU cluster deal - The Globe and Mail",
+      "subject": "Axe Compute",
+      "action": "secures",
+      "object": "$1.5B AI GPU cluster deal - The Globe and Mail",
+      "metrics": [
+        "$1.5B",
+        "70%",
+        "$0.99"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-54dfb14dcddad637"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-54dfb14dcddad637"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-54dfb14dcddad637"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-54dfb14dcddad637"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-54dfb14dcddad637"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-54dfb14dcddad637"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-54dfb14dcddad637"
+      ],
+      "entityNames": [
+        "Axe Compute"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theglobeandmail.com/investing/markets/markets-news/Tipranks/3500767/axe-compute-secures-1-5b-ai-gpu-cluster-deal",
+      "publisher": "theglobeandmail.com"
+    },
+    {
       "id": "EV-33b3cf34f8ff7bd8",
       "dataDate": "2026-07-29",
       "date": "2026-07-27",
@@ -10443,59 +11382,6 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://globenewswire.com/news-release/2026/07/27/3333282/0/en/Multiverse-Computing-Announces-Series-C-Fundraising-Targeting-up-to-570M-500M-to-Power-Efficient-AI-from-Edge-to-Cloud.html",
-      "publisher": "globenewswire.com"
-    },
-    {
-      "id": "EV-faf8db3567f108e2",
-      "dataDate": "2026-07-29",
-      "date": "2026-07-27",
-      "updatedDate": "2026-07-29",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "Axe Compute 签署五年期 15 亿美元专用 AI 基础设施合同，2026 年已签合同总值超过 30 亿美元",
-      "originalTitle": "Axe Compute Secures $1.5 Billion Five-Year Dedicated AI Infrastructure Contract, Surpassing $3 Billion in 2026 Signed Contracted Value",
-      "subject": "Axe Compute",
-      "action": "Secures",
-      "object": "$1.5 Billion Five-Year Dedicated AI Infrastructure Contract, Surpassing $3 Billion in 2026 Signed Contracted Value",
-      "metrics": [
-        "$1.5 Billion",
-        "$3 Billion",
-        "$3 billion",
-        "$1.3 Billion",
-        "$1.5 billion",
-        "$696 million"
-      ],
-      "locations": [
-        "US"
-      ],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-54dfb14dcddad637"
-      ],
-      "entityNames": [
-        "Axe Compute"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://globenewswire.com/news-release/2026/07/27/3333519/37244/en/Axe-Compute-Secures-1-5-Billion-Five-Year-Dedicated-AI-Infrastructure-Contract-Surpassing-3-Billion-in-2026-Signed-Contracted-Value.html",
       "publisher": "globenewswire.com"
     },
     {
@@ -11016,6 +11902,97 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/981/625.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-c89018d79b3d25bd",
+      "dataDate": "2026-08-04",
+      "date": "2026-07-24",
+      "updatedDate": "2026-08-04",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "in_progress",
+      "statusLabel": "进行中",
+      "publicationStatus": "partial",
+      "title": "Prentis，由Reid Hoffman、Mark Pincus联合创立的新AI实验室，正洽谈融资1亿美元",
+      "originalTitle": "Prentis, new AI lab co-founded by Reid Hoffman, Mark Pincus in talks to raise $100M | TechCrunch",
+      "subject": "Prentis, new AI lab co-founded by Reid Hoffman, Mark Pincus",
+      "action": "raise",
+      "object": "$100M",
+      "metrics": [
+        "$100M",
+        "$100 million",
+        "$1 billion",
+        "$55 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-876e7751ed9e3473"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-876e7751ed9e3473"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-876e7751ed9e3473"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-876e7751ed9e3473",
+        "EN-9d4cbc0ceab2c56a",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Prentis, new AI lab co-founded by Reid Hoffman, Mark Pincus",
+        "Prentis",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m",
+      "publisher": "techcrunch.com"
     },
     {
       "id": "EV-97854226b6f43a95",
@@ -91263,6 +92240,92 @@
       "publisher": "today.reuters.com"
     },
     {
+      "id": "EV-450f624a6a6446ce",
+      "dataDate": "2026-08-04",
+      "date": "2026-05-21",
+      "updatedDate": "2026-08-04",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Hark AI硬件融资：以60亿美元估值筹集7亿美元",
+      "originalTitle": "Hark AI Hardware Funding: $700M Raised at $6B Valuation",
+      "subject": "Hark AI Hardware Funding: $700M",
+      "action": "Raised",
+      "object": "at $6B Valuation",
+      "metrics": [
+        "$700M",
+        "$6B",
+        "$700 million",
+        "$6 billion",
+        "$700 Million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-805a8c0cc2403091"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-805a8c0cc2403091"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-805a8c0cc2403091"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-805a8c0cc2403091"
+      ],
+      "entityNames": [
+        "Hark AI Hardware Funding"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://aiagentsdirectory.com/blog/hark-ai-hardware-startup-secures-dollar700m-at-dollar6b-valuation",
+      "publisher": "aiagentsdirectory.com"
+    },
+    {
       "id": "EV-b85139b8fba1a5c5",
       "dataDate": "2026-05-20",
       "date": "2026-05-21",
@@ -101717,6 +102780,578 @@
       "products": [],
       "sourceUrl": "https://front.ai/press-release-new-conversational-ai-company-front-ai-raises-e500k-in-seed-funding",
       "publisher": "front.ai"
+    },
+    {
+      "id": "EV-a852dc0ca6011ff6",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "updatedDate": "2026-08-04",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Aleria部署16,000块Nvidia AI芯片，在美国和阿联酋建设主权AI基础设施",
+      "originalTitle": "Aleria deploys 16,000 Nvidia AI chips to build sovereign AI infrastructure across the US and UAE",
+      "subject": "Aleria",
+      "action": "deploys 16,000 Nvidia AI chips",
+      "object": "to build sovereign AI infrastructure across the US and UAE",
+      "metrics": [
+        "$30 million"
+      ],
+      "locations": [
+        "United States",
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-c9e92f0b88c6456b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-c9e92f0b88c6456b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-c9e92f0b88c6456b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "telecommunications",
+            "name": "电信",
+            "entityIds": [
+              "EN-c9e92f0b88c6456b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "telecommunications",
+          "name": "电信",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "telecommunications",
+          "name": "电信",
+          "entityIds": [
+            "EN-c9e92f0b88c6456b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c9e92f0b88c6456b",
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "Aleria",
+        "NVIDIA",
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://gulfnews.com/uae/abu-dhabis-aleria-deploys-16000-nvidia-ai-chips-across-us-and-uae-1.500629651",
+      "publisher": "gulfnews.com"
+    },
+    {
+      "id": "EV-522c339dded54be5",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "updatedDate": "2026-08-04",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "英特尔为开源多模态视频模型 MiniMax H3 提供 Day 0 支持，实现多卡 GPU 部署方案",
+      "originalTitle": "",
+      "subject": "英特尔为开源多模态视频模型 MiniMax H3 提供 Day 0 支持，实现多卡",
+      "action": "GPU 部署",
+      "object": "方案",
+      "metrics": [
+        "70 GPU"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-ithome-rss"
+        ],
+        "claim_refs": [
+          "CL-3622ba0e9d267e1d",
+          "CL-01b40bbd9f34aaf5",
+          "CL-51f0d6562c2b7a9c",
+          "CL-e3a6aa58eb47253c"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-e1517be14d06cdb7"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-78c60327054dcd52",
+        "EN-e1517be14d06cdb7"
+      ],
+      "entityNames": [
+        "英特尔为",
+        "MiniMax"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/985/033.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-d2a623e8eef1f61d",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "updatedDate": "2026-08-04",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "KIDZ AI与Limestone Networks签署数据中心谅解备忘录，部署开源权重AI模型的推理计算基础设施，推进其4460万美元的Canopy Wave协议",
+      "originalTitle": "KIDZ AI Signs Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement | News…",
+      "subject": "KIDZ AI",
+      "action": "Signs",
+      "object": "Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement | Newswire",
+      "metrics": [
+        "$44.6 Million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-bd6769fe78d0971a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-bd6769fe78d0971a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-bd6769fe78d0971a"
+      ],
+      "entityNames": [
+        "KIDZ AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://newswire.com/news/kidz-ai-signs-data-center-mou-with-limestone-networks-to-deploy-inference",
+      "publisher": "newswire.com"
     },
     {
       "id": "EV-acddfa62aabb004f",
@@ -118133,6 +119768,141 @@
       "publisher": "fedscoop.com"
     },
     {
+      "id": "EV-22f0d8caaa65a6a2",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "updatedDate": "2026-08-04",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Superblocks与AWS宣布战略合作，为Amazon Bedrock带来安全的企业级AI应用开发 - 美国新闻中心",
+      "originalTitle": "Superblocks and AWS Announce Strategic Collaboration to Bring Secure Enterprise AI App Development to Amazon Bedrock - US Press Center",
+      "subject": "Superblocks and AWS Announce Strategic",
+      "action": "Collaboration",
+      "object": "to Bring Secure Enterprise AI App Development to Amazon Bedrock - US Press Center",
+      "metrics": [],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-1706716bb5eebbe2",
+        "EN-7d1507284a5757ca",
+        "EN-cbc62794911ff31b"
+      ],
+      "entityNames": [
+        "Superblocks",
+        "AWS",
+        "Amazon"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://press.aboutamazon.com/aws/2026/8/superblocks-and-aws-announce-strategic-collaboration-to-bring-secure-enterprise-ai-app-development-to-amazon-bedrock",
+      "publisher": "press.aboutamazon.com"
+    },
+    {
       "id": "EV-1e6f73c188a9e946",
       "dataDate": "2026-08-03",
       "date": "2026-08-03",
@@ -118515,9 +120285,9 @@
     },
     {
       "id": "EV-76e7dc691b68fa04",
-      "dataDate": "2026-08-03",
+      "dataDate": "2026-08-04",
       "date": "2026-07-28",
-      "updatedDate": "2026-08-03",
+      "updatedDate": "2026-08-04",
       "eventType": "partnership",
       "eventTypeLabel": "合作",
       "eventGroup": "商业合作",
@@ -128967,10 +130737,468 @@
       "publisher": "markets.ft.com"
     },
     {
-      "id": "EV-6ce6bebf0d6408d9",
-      "dataDate": "2026-08-03",
+      "id": "EV-446ebce0edb6dce0",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "updatedDate": "2026-08-04",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Hugging Face CEO 德朗格：中国正在赢得 AI 竞赛，而美国则在\"各自为战\"",
+      "originalTitle": "",
+      "subject": "Hugging",
+      "action": "product_release",
+      "object": "Hugging Face CEO 德朗格：中国正在赢得 AI 竞赛，而美国则在\"各自为战\"",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-b02e43bdec738f2c",
+        "EN-1d79127e9d90e89b"
+      ],
+      "entityNames": [
+        "Hugging",
+        "智谱AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/985/268.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-4e09daa86f1acb4f",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "updatedDate": "2026-08-04",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "95 后投资者利用 AI 批量生成虚假消息趁机交易牟利，被罚 48.5 万元",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "95 后投资者利用 AI 批量生成虚假消息趁机交易牟利，被罚 48.5 万元",
+      "metrics": [
+        "48.5 万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "legal_services",
+            "name": "法律服务",
+            "entityIds": [
+              "EN-a89151ba4b5ac0f2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "legal_services",
+          "name": "法律服务",
+          "entityIds": [
+            "EN-a89151ba4b5ac0f2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "legal_services",
+          "name": "法律服务",
+          "entityIds": [
+            "EN-a89151ba4b5ac0f2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a89151ba4b5ac0f2"
+      ],
+      "entityNames": [
+        "Baidu"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/985/294.htm",
+      "publisher": "IT之家"
+    },
+    {
+      "id": "EV-992c44c9bd65b7e1",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "updatedDate": "2026-08-04",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "SK 海力士与闪迪将在 FMS 2026 发布 HBF 首个标准规范，展示面向 AI 的存储解决方案",
+      "originalTitle": "",
+      "subject": "SK 海力士与闪迪将在 FMS 2026",
+      "action": "发布",
+      "object": "HBF 首个标准规范，展示面向 AI 的存储解决方案",
+      "metrics": [],
+      "locations": [
+        "美国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-60c5644257240a32",
+        "EN-313288a6e417d286",
+        "EN-3d5291effddd967b"
+      ],
+      "entityNames": [
+        "SK 海力士",
+        "FMS 2026",
+        "HBF"
+      ],
+      "productName": "FMS 2026",
+      "products": [
+        {
+          "name": "FMS 2026",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "HBF",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/985/289.htm",
+      "publisher": "IT之家"
+    },
+    {
+      "id": "EV-4b286a3354cbf34a",
+      "dataDate": "2026-08-04",
       "date": "2026-08-03",
-      "updatedDate": "2026-08-03",
+      "updatedDate": "2026-08-04",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "刚刚，阿里Qwen3.8-Max来了！冲进全球第一梯队，模型表现直逼Claude",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "刚刚，阿里Qwen3.8-Max来了！冲进全球第一梯队，模型表现直逼Claude",
+      "metrics": [
+        "2.4万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-047364b9be67f665",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Alibaba",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://qbitai.com/2026/08/465226.html",
+      "publisher": "量子位"
+    },
+    {
+      "id": "EV-63858d9b5ef92175",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "updatedDate": "2026-08-04",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "ComfyUI 新增 MiniMax H3 Day-0 支持：开放权重、原生音频与 2K 视频",
+      "originalTitle": "",
+      "subject": "ComfyUI",
+      "action": "新增",
+      "object": "MiniMax H3 Day-0 支持：开放权重、原生音频与 2K 视频",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-422332977c41eb77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-422332977c41eb77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-422332977c41eb77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-422332977c41eb77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-422332977c41eb77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-422332977c41eb77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-422332977c41eb77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-422332977c41eb77",
+        "EN-e1517be14d06cdb7",
+        "EN-d150291eb0b0341f"
+      ],
+      "entityNames": [
+        "ComfyUI",
+        "MiniMax",
+        "H3 Day-0"
+      ],
+      "productName": "H3 Day-0",
+      "products": [
+        {
+          "name": "H3 Day-0",
+          "type": "产品/服务",
+          "ownerNames": [
+            "MiniMax"
+          ]
+        }
+      ],
+      "sourceUrl": "https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
+    },
+    {
+      "id": "EV-6ce6bebf0d6408d9",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "updatedDate": "2026-08-04",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
@@ -128994,10 +131222,10 @@
           "cn-sspai-rss"
         ],
         "claim_refs": [
-          "CL-9bd85a4859737c9f",
-          "CL-dbe9e8262a1da70a",
-          "CL-54fbf7eee38cc95e",
-          "CL-5059f3948115917b"
+          "CL-18a6e5baa10a774e",
+          "CL-0d3a7761ab6321c9",
+          "CL-76b41006a2b67919",
+          "CL-b5c2461f4d1a7f92"
         ]
       },
       "missingFields": [
@@ -129029,6 +131257,365 @@
       "products": [],
       "sourceUrl": "https://sspai.com/post/113014",
       "publisher": "少数派"
+    },
+    {
+      "id": "EV-760374326d992fd0",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "updatedDate": "2026-08-04",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Unimarket推出Beacon，将AI直接引入Source-to-Pay平台",
+      "originalTitle": "Unimarket Launches Beacon, Bringing AI Directly into the Source-to-Pay Platform",
+      "subject": "Unimarket",
+      "action": "Launches",
+      "object": "Beacon, Bringing AI Directly into the Source-to-Pay Platform",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-cbb46e9216508ae4",
+        "EN-138dd0e9255a6665"
+      ],
+      "entityNames": [
+        "Unimarket",
+        "Beacon"
+      ],
+      "productName": "Beacon",
+      "products": [
+        {
+          "name": "Beacon",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://prnewswire.com/news-releases/unimarket-launches-beacon-bringing-ai-directly-into-the-source-to-pay-platform-302840238.html",
+      "publisher": "prnewswire.com"
+    },
+    {
+      "id": "EV-7dd55841e1ca4652",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "updatedDate": "2026-08-04",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AnyMind Group推出AnyAI Agent，助力企业以自主AI转型营销与电商运营",
+      "originalTitle": "AnyMind Group launches AnyAI Agent to help enterprises transform marketing and e-commerce operations with autonomous AI | AnyMind Group",
+      "subject": "AnyMind Group",
+      "action": "launches",
+      "object": "AnyAI Agent to help enterprises transform marketing and e-commerce operations with autonomous AI | AnyMind Group",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-d50883991bfc5a69"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-d50883991bfc5a69"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-d50883991bfc5a69"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-d50883991bfc5a69"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-d50883991bfc5a69"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-d50883991bfc5a69"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-d50883991bfc5a69"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-d50883991bfc5a69",
+        "EN-1a575e1e8f8dec1d"
+      ],
+      "entityNames": [
+        "AnyMind Group",
+        "AnyAI"
+      ],
+      "productName": "AnyAI",
+      "products": [
+        {
+          "name": "AnyAI",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://anymindgroup.com/news/press-release/anyai-agent-launch-0826",
+      "publisher": "anymindgroup.com"
+    },
+    {
+      "id": "EV-9217ac1643635ce4",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "updatedDate": "2026-08-04",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Hugging Face CEO 德朗格：AI 企业应主动披露安全入侵事件",
+      "originalTitle": "",
+      "subject": "Hugging",
+      "action": "product_release",
+      "object": "Hugging Face CEO 德朗格：AI 企业应主动披露安全入侵事件",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-b02e43bdec738f2c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-b02e43bdec738f2c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-b02e43bdec738f2c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-b02e43bdec738f2c",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "Hugging",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/985/057.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-d2f8019b6783722f",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "updatedDate": "2026-08-04",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "阿里Qwen3.8正式发布，编程与办公再进化，推理更快更稳定",
+      "originalTitle": "",
+      "subject": "阿里Qwen3.8正式",
+      "action": "发布",
+      "object": "，编程与办公再进化，推理更快更稳定",
+      "metrics": [
+        "2.4万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-047364b9be67f665"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-047364b9be67f665",
+        "EN-0f553f48551aef83"
+      ],
+      "entityNames": [
+        "Alibaba",
+        "Qwen3.8"
+      ],
+      "productName": "Qwen3.8",
+      "products": [
+        {
+          "name": "Qwen3.8",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/08/465215.html",
+      "publisher": "量子位"
     },
     {
       "id": "EV-890ffd351486b884",
@@ -171463,7 +174050,7 @@
           "name": "ZCode",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "智谱AI"
           ]
         }
       ],
@@ -172038,12 +174625,16 @@
         {
           "name": "AZ3 Pro",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "Amazon"
+          ]
         },
         {
           "name": "Panos Panay",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "Amazon"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/972/889.htm",
@@ -187509,7 +190100,9 @@
         {
           "name": "Continuum",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Amazon"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/aws-says-ai-agents-lack-business-context-and-security-launches-two-services-to-patch-the-gaps",
@@ -189299,7 +191892,7 @@
           "name": "Jio Call",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Amazon"
           ]
         }
       ],
@@ -190355,7 +192948,7 @@
           "name": "GLM-5.2",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "智谱AI"
           ]
         }
       ],
@@ -196010,21 +198603,21 @@
           "name": "One-Stop Shop",
           "type": "产品/服务",
           "ownerNames": [
-            "Intel"
+            "Amazon"
           ]
         },
         {
           "name": "PYMNTS.com",
           "type": "产品/服务",
           "ownerNames": [
-            "Intel"
+            "Amazon"
           ]
         },
         {
           "name": "AI Agent Marketplace",
           "type": "产品/服务",
           "ownerNames": [
-            "Intel"
+            "Amazon"
           ]
         }
       ],
@@ -196625,7 +199218,9 @@
         {
           "name": "Agent Marketplace",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Amazon"
+          ]
         }
       ],
       "sourceUrl": "https://joineta.org/blog/aws-agent-marketplace-whats-coming-and-why-it-matters",
@@ -200514,7 +203109,7 @@
           "name": "Bedrock",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Amazon"
           ]
         }
       ],
@@ -205832,14 +208427,14 @@
           "name": "One-Stop Shop",
           "type": "产品/服务",
           "ownerNames": [
-            "Intel"
+            "Amazon"
           ]
         },
         {
           "name": "AI Agent Marketplace",
           "type": "产品/服务",
           "ownerNames": [
-            "Intel"
+            "Amazon"
           ]
         }
       ],
@@ -212518,7 +215113,7 @@
           "name": "AI Factories",
           "type": "产品/服务",
           "ownerNames": [
-            "NVIDIA"
+            "Amazon"
           ]
         }
       ],
@@ -213225,7 +215820,9 @@
         {
           "name": "AWS Trainium2",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "Amazon"
+          ]
         }
       ],
       "sourceUrl": "https://techcrunch.com/2023/11/28/amazon-unveils-new-chips-for-training-and-running-ai-models",

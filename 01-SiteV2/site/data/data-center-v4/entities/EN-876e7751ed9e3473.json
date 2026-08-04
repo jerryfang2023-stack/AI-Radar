@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "latestDataDate": "2026-08-04",
+    "currentDate": "2026-08-04",
+    "eventCount": 1832,
+    "quarantinedEventCount": 15
+  },
+  "entity": {
+    "id": "EN-876e7751ed9e3473",
+    "name": "Prentis, new AI lab co-founded by Reid Hoffman, Mark Pincus",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-c89018d79b3d25bd"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-computer_use"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-24",
+    "lastSeen": "2026-08-04",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-c89018d79b3d25bd"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-c89018d79b3d25bd",
+        "dataDate": "2026-08-04",
+        "date": "2026-07-24",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "in_progress",
+        "statusLabel": "进行中",
+        "title": "Prentis，由Reid Hoffman、Mark Pincus联合创立的新AI实验室，正洽谈融资1亿美元",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "computer_use",
+            "name": "计算机操作",
+            "entityIds": [
+              "EN-876e7751ed9e3473"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-876e7751ed9e3473",
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-computer_use",
+      "name": "计算机操作",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "computer_use",
+      "eventIds": [
+        "EV-c89018d79b3d25bd",
+        "EV-97854226b6f43a95",
+        "EV-e42e55d1e11a2ba2",
+        "EV-333851b077b606c8",
+        "EV-6225d18316f90a0d",
+        "EV-c54172bf4e0c1068",
+        "EV-a4f052325d0ef230"
+      ],
+      "entityIds": [
+        "EN-876e7751ed9e3473",
+        "EN-9d4cbc0ceab2c56a",
+        "EN-ea3bd73e2b506e00",
+        "EN-047364b9be67f665",
+        "EN-bbdefa2950f49882",
+        "EN-e16fc821f34228d1"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-08-04"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}
