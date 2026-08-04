@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "generatedAt": "2026-08-04T04:50:29.311Z",
     "latestDataDate": "2026-08-04",
     "currentDate": "2026-08-04",
-    "eventCount": 1832,
-    "quarantinedEventCount": 15
+    "eventCount": 1841,
+    "quarantinedEventCount": 16
   },
   "entity": {
     "id": "EN-78c60327054dcd52",
@@ -109,7 +109,7 @@
       "hardwareType": "gpu",
       "eventType": "hardware_deployment",
       "eventTypeLabel": "硬件部署",
-      "computeLayer": "未披露",
+      "computeLayer": "Encoder 8 卡张量并行（8TP）、DiT 8 卡 USP（Ulysses Sequence Parallel，并结合 Layer-wise Offloading），以及 VAE 部署于 B70 GPU 的整体架构",
       "supplier": "未披露",
       "customer": "未披露",
       "processNode": "未披露",

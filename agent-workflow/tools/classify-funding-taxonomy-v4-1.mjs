@@ -196,6 +196,12 @@ function decisionProblems(decision, expectedEventId = "") {
   return problems;
 }
 
+function modelCorrectionProblems(problems = []) {
+  return problems.map((problem) => problem.startsWith("physical_product_form:")
+    ? `${problem}:ai_device_must_copy_a_non_physical_hierarchy_tuple`
+    : problem);
+}
+
 function promptFor(items) {
   return [
     "Classify each supplied AI funding card using the external market taxonomy below. Use only the supplied evidence; do not classify a familiar brand from memory.",
@@ -224,6 +230,7 @@ function strictSinglePrompt(item) {
   return [
     "Classify this one funding card. For the three market fields, copy exactly one complete tuple from ALLOWED_HIERARCHY_TUPLES. Do not alter, translate, shorten, or invent any tuple value.",
     "Physical AI requires a current robot, vehicle, or autonomous machine acting in the physical world. A model or future plan is not enough.",
+    "An AI interface, wearable, headset, or other user-operated AI device is ai_device, never physical_ai; copy a valid non-physical hierarchy tuple for it.",
     `ALLOWED_HIERARCHY_TUPLES:${JSON.stringify(hierarchyTuples)}`,
     `ALLOWED_PRODUCT_FORMS:${JSON.stringify([...allowed.product])}`,
     `ALLOWED_USE_CASES:${JSON.stringify([...allowed.useCase])}`,
@@ -249,7 +256,7 @@ async function classifySingleStrict(item) {
       if (decisions.length !== 1) return [`decision_count:${decisions.length}/1`];
       normalizeHierarchyFields(decisions[0]);
       normalizeControlledListFields(decisions[0]);
-      return decisionProblems(decisions[0], item.event_id);
+      return modelCorrectionProblems(decisionProblems(decisions[0], item.event_id));
     },
   });
 }
@@ -273,7 +280,7 @@ async function classifyBatch(items) {
           normalizeControlledListFields(decisions[index]);
           problems.push(...decisionProblems(decisions[index], item.event_id));
         }
-        return problems;
+        return modelCorrectionProblems(problems);
       },
     });
   } catch (error) {
@@ -414,7 +421,14 @@ if (
       decisions: [...accumulated.values()].sort((a, b) => a.event_id.localeCompare(b.event_id)),
     });
   });
-  const decisions = inputs.map((input) => accumulated.get(input.event_id));
+  const inputIds = new Set(inputs.map((input) => input.event_id));
+  const existingOrder = existing.map((decision) => decision.event_id).filter((eventId) => inputIds.has(eventId));
+  const existingIds = new Set(existingOrder);
+  const orderedEventIds = [
+    ...existingOrder,
+    ...inputs.map((input) => input.event_id).filter((eventId) => !existingIds.has(eventId)),
+  ];
+  const decisions = orderedEventIds.map((eventId) => accumulated.get(eventId));
   const byEvent = new Map(decisions.map((decision) => [decision.event_id, decision]));
   const problems = inputs.flatMap((input) => decisionProblems(byEvent.get(input.event_id), input.event_id));
   if (problems.length) throw new Error(`funding_taxonomy_decisions_invalid:${problems.join("|")}`);

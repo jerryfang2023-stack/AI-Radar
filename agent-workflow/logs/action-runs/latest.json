@@ -1,43 +1,52 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-03T02:44:11.490Z",
-  "date": "2026-08-03",
-  "action": "weekly-report",
-  "action_status": "unregistered",
+  "generated_at": "2026-08-04T04:56:32.963Z",
+  "date": "2026-08-04",
+  "action": "Funding Insights",
+  "action_status": "current",
   "record_level": "required",
-  "trigger": "manual-fallback",
-  "status": "success",
-  "summary": "Published the gate-accepted local DeepSeek weekly report for 2026-08-03 after cloud generations repeatedly failed model-quality validation; the live report and research hub now point to the correct Monday report date.",
-  "contexts": [],
+  "trigger": "manual",
+  "status": "passed",
+  "summary": "Recovered the 2026-08-04 V4 funding projection and published three evidence-gated cards without blocked events.",
+  "contexts": [
+    "context/00-current-state.md",
+    "context/08-automation.md",
+    "context/version-ledger.md"
+  ],
   "changed_files": [
-    "01-SiteV2/content/12-applications/industry-reports/2026-08-03--weekly-report--ai-business-change-radar.md",
-    "01-SiteV2/site/weekly-ai-business-change-radar-2026-08-03.html",
-    "01-SiteV2/site/weekly-ai-business-change-radar.html",
-    "01-SiteV2/site/intelligence-map.html"
+    "agent-workflow/tools/build-data-center-v4.mjs",
+    "agent-workflow/tools/generate-funding-insights-deepseek.mjs",
+    "agent-workflow/tools/funding-insight-v1-utils.mjs",
+    "agent-workflow/tools/classify-funding-taxonomy-v4-1.mjs",
+    "01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs"
   ],
   "outputs": [
-    "2026-08-03 weekly report",
-    "GitHub Pages run 30779957654"
+    "01-SiteV2/content/12-applications/funding-insights/2026-08-04.json",
+    "01-SiteV2/site/data/funding-insights-v1.json"
   ],
   "checks": [
-    "Weekly content gate passed",
-    "16 renderer and evidence tests passed",
-    "frontstage regression passed",
-    "Pages succeeded",
-    "live title and window and research hub verified"
+    "npm test",
+    "npm run assert:funding-insights:full",
+    "npm run sync:data-center"
   ],
   "issues": [
-    "Cloud model retries returned a short title and omitted the first opportunity card community citation."
+    "contract value misclassified as funding",
+    "entity prefix and same-name research drift",
+    "current output self-deduplication",
+    "unreviewed MetaX catalog exposure"
   ],
-  "risks": [
-    "The rejected 2026-08-02 local draft remains untracked and was excluded from publication."
-  ],
+  "risks": [],
   "lessons": [
-    "A locally validated model artifact is a safe fallback only after the same content gate and deterministic page gates pass."
+    "canonical V4 event evidence must override secondary research",
+    "model validation errors need actionable correction instructions"
   ],
   "reusable_rules": [
-    "Never publish the Sunday-dated scratch report when the official weekly report date is Monday."
+    "exclude current output from historical deduplication",
+    "preserve taxonomy decision order",
+    "require explicit catalog review before public company/product projection"
   ],
   "retired_flags": [],
-  "notes": []
+  "notes": [
+    "Windows automation task contract passed in the primary repository; pre-existing dirty files were preserved for recoverable cleanup after deployment."
+  ]
 }

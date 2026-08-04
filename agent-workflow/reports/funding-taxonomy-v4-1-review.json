@@ -5,13 +5,13 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-03T06:49:54.658Z",
+    "generated_at": "2026-08-04T04:50:09.359Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 241,
-    "input_hash": "341961d21631f561",
+    "decision_count": 244,
+    "input_hash": "750c32f8a06ee7fc",
     "override_count": 17,
     "needs_review_count": 0,
     "low_confidence_count": 0
@@ -331,25 +331,6 @@
       "rationale": "银河通用研发并部署Galbot S1工业重载机器人和银河太空舱零售机器人，产品直接感知、决策并作用于物理世界，符合Physical AI定义。"
     },
     {
-      "event_id": "EV-c5d7d88d1aef8edb",
-      "market_category_id": "infrastructure_compute",
-      "market_subcategory_id": "development_deployment",
-      "market_application_id": "models",
-      "product_form_id": "model",
-      "use_case_ids": [
-        "software_development",
-        "productivity_enterprise_workflows"
-      ],
-      "industry_ids": [],
-      "target_user_ids": [
-        "developer",
-        "business_user"
-      ],
-      "confidence": 0.9,
-      "needs_review": false,
-      "rationale": "月之暗面核心产品为Kimi系列大模型，开源发布并成为全球开发者底层能力，属于模型基础设施，归入infrastructure_compute > development_deployment > models。"
-    },
-    {
       "event_id": "EV-af8e95dbe06ac083",
       "market_category_id": "physical_ai",
       "market_subcategory_id": "",
@@ -467,40 +448,6 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Agave专为建筑行业财务设计，深度集成ERP与项目管理系统，围绕建筑行业特有工作流程和数据，归入industry_applications > industrials。"
-    },
-    {
-      "event_id": "EV-7951af05be21dc7c",
-      "market_category_id": "enterprise_applications",
-      "market_subcategory_id": "software_development_coding",
-      "market_application_id": "",
-      "product_form_id": "end_user_application",
-      "use_case_ids": [
-        "software_development"
-      ],
-      "industry_ids": [],
-      "target_user_ids": [
-        "developer"
-      ],
-      "confidence": 0.9,
-      "needs_review": false,
-      "rationale": "Quash 提供自主QA代理，自动完成移动应用测试与缺陷修复，属于跨行业的软件开发功能，不涉及物理世界感知与行动，非基础设施，也非单一行业专用，因此归入企业应用-软件开发编码。"
-    },
-    {
-      "event_id": "EV-2bb63a3015195f9b",
-      "market_category_id": "infrastructure_compute",
-      "market_subcategory_id": "data",
-      "market_application_id": "data_preparation_curation",
-      "product_form_id": "model_api_service",
-      "use_case_ids": [
-        "knowledge_search"
-      ],
-      "industry_ids": [],
-      "target_user_ids": [
-        "developer"
-      ],
-      "confidence": 0.85,
-      "needs_review": false,
-      "rationale": "Seltz 提供Web Knowledge API，为AI系统和智能体提供实时、上下文工程化的网络数据，属于为其他AI产品构建者提供数据基础设施，而非面向最终业务用户的行业或企业应用。"
     },
     {
       "event_id": "EV-9055cb4fa2b4ee62",
@@ -973,6 +920,28 @@
       "rationale": "Avoca 提供 AI 语音与工作流自动化，处理来电线索、跟进报价、评估通话质量，属于跨行业的客户支持与销售功能，因此归入企业应用。"
     },
     {
+      "event_id": "EV-59882383f82f215d",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "aerospace_defense",
+        "telecommunications",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Axelera AI designs specialized AI accelerator chips (Europa, Metis, Titania) for edge and data center inference. This maps directly to infrastructure_compute > hardware_computing > chips. The product form is chip_accelerator. Use cases include physical_automation (edge AI for drones, robotics via DroneStar AI, ESA). Industries served include aerospace_defense (ESA), telecommunications (Telefonica), and manufacturing (Advantech). Target users are developers integrating the chips and business users deploying AI systems."
+    },
+    {
       "event_id": "EV-c85011ca6a0389bf",
       "market_category_id": "infrastructure_compute",
       "market_subcategory_id": "observability_evaluation",
@@ -1173,21 +1142,6 @@
       "confidence": 0.8,
       "needs_review": false,
       "rationale": "提供定制AI开发、Agentic AI平台和企业AI助手，帮助客户从PoC走向生产，属于为AI构建者提供开发部署基础设施。"
-    },
-    {
-      "event_id": "EV-6e516b6e68def9cf",
-      "market_category_id": "infrastructure_compute",
-      "market_subcategory_id": "hardware_computing",
-      "market_application_id": "computing_infrastructure",
-      "product_form_id": "compute_cloud_service",
-      "use_case_ids": [],
-      "industry_ids": [],
-      "target_user_ids": [
-        "developer"
-      ],
-      "confidence": 0.95,
-      "needs_review": false,
-      "rationale": "提供AMD AI加速器云服务，用于训练和推理，属于为AI构建者提供硬件/计算基础设施。"
     },
     {
       "event_id": "EV-0d4e656aa51f9a46",
@@ -1568,28 +1522,6 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Etched is building a custom AI chip (Sohu) and inference clusters, which fits the infrastructure_compute > hardware_computing > chips hierarchy. The product is a chip accelerator. Target users are developers who deploy AI models on this hardware."
-    },
-    {
-      "event_id": "EV-59882383f82f215d",
-      "market_category_id": "infrastructure_compute",
-      "market_subcategory_id": "hardware_computing",
-      "market_application_id": "chips",
-      "product_form_id": "chip_accelerator",
-      "use_case_ids": [
-        "physical_automation"
-      ],
-      "industry_ids": [
-        "aerospace_defense",
-        "telecommunications",
-        "manufacturing"
-      ],
-      "target_user_ids": [
-        "developer",
-        "business_user"
-      ],
-      "confidence": 0.9,
-      "needs_review": false,
-      "rationale": "Axelera AI designs specialized AI accelerator chips (Europa, Metis, Titania) for edge and data center inference. This maps directly to infrastructure_compute > hardware_computing > chips. The product form is chip_accelerator. Use cases include physical_automation (edge AI for drones, robotics via DroneStar AI, ESA). Industries served include aerospace_defense (ESA), telecommunications (Telefonica), and manufacturing (Advantech). Target users are developers integrating the chips and business users deploying AI systems."
     },
     {
       "event_id": "EV-7e1624d7df300713",
@@ -1999,7 +1931,25 @@
       "rationale": "Hark 当前首批产品是尚待发布的多模态模型，硬件设备明确属于后续计划；不能用未来硬件把当前公司归为 Physical AI。"
     },
     {
+      "event_id": "EV-450f624a6a6446ce",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "Hark is building a proactive, personalized AI with speech, vision, and memory, integrating native hardware and new interfaces. This aligns with an AI device (ai_device) for personal productivity and enterprise workflows. The allowed hierarchy tuple [\"enterprise_applications\",\"productivity_enterprise_workflows\",\"\"] is copied exactly. Use case is productivity_enterprise_workflows; target user is consumer given the personal AI focus. No specific industry is indicated."
+    },
+    {
       "event_id": "EV-5f3ccb941a2fe5d7",
+      "canonical_event_id": "EV-2a78dd5feb40a78a",
       "market_category_id": "enterprise_applications",
       "market_subcategory_id": "productivity_enterprise_workflows",
       "market_application_id": "",
@@ -2057,6 +2007,7 @@
     },
     {
       "event_id": "EV-df789745fb926bfd",
+      "canonical_event_id": "EV-ecc12e5ec883b7e7",
       "market_category_id": "industry_applications",
       "market_subcategory_id": "consumer_retail",
       "market_application_id": "",
@@ -2261,6 +2212,25 @@
       "rationale": "Lily跨行业自动化报价、路线规划、设备诊断等业务流程，属于跨行业企业应用，未限定单一行业。"
     },
     {
+      "event_id": "EV-2301cd1470155075",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "llm_benchmarking_routing",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "research_discovery"
+      ],
+      "industry_ids": [
+        "professional_services"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "DesignArena is a blind LLM evaluation and ranking platform using Bradley-Terry pairwise comparisons. It fits observability_evaluation → llm_benchmarking_routing. The product is an end-user application for benchmarking, primarily serving developers and researchers in AI labs."
+    },
+    {
       "event_id": "EV-8c2fdaad276818b0",
       "market_category_id": "enterprise_applications",
       "market_subcategory_id": "productivity_enterprise_workflows",
@@ -2297,6 +2267,25 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Jedify构建企业上下文图谱，为AI应用提供数据基础，属于基础设施中的数据准备与治理，而非直接面向终端业务的应用。"
+    },
+    {
+      "event_id": "EV-f315914e0fedddfa",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "June 提供企业系统部署与配置自动化平台，将复杂配置转为业务规则，支持沙盒测试与审计，属于跨行业的企业生产力与工作流工具，不涉及物理世界感知决策，非基础设施层，也未限定单一行业，因此归入 enterprise_applications 下的 productivity_enterprise_workflows。"
     },
     {
       "event_id": "EV-e7dcecaed5a0ee5b",
@@ -2605,6 +2594,25 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Moonshot AI develops foundation models (Kimi K2.6) and AI agents. The model is released under an open license, fitting 'models' under 'development_deployment'. The primary use case is software development, evidenced by customer Cursor. Target users are developers."
+    },
+    {
+      "event_id": "EV-c5d7d88d1aef8edb",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "software_development",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "月之暗面核心产品为Kimi系列大模型，开源发布并成为全球开发者底层能力，属于模型基础设施，归入infrastructure_compute > development_deployment > models。"
     },
     {
       "event_id": "EV-869c9ea96c58873d",
@@ -3252,6 +3260,27 @@
       "rationale": "与 EV-136b2edc9b9f3be8 为同一公司 Paper，证据显示其产品为基于 HTML/CSS 的设计开发协作平台，直接支持软件开发和设计工程，属于跨行业的企业应用，不涉及物理 AI 或基础设施提供。"
     },
     {
+      "event_id": "EV-acf1bcb321414706",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "logistics_supply_chain",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "产品是跨行业的工作流自动化平台，不涉及物理世界感知决策执行，非基础设施，也不限定单一行业，因此归入企业应用。证据强调后勤和电商领域的后台流程自动化，属于生产力/企业工作流。"
+    },
+    {
       "event_id": "EV-986ac3a819d23388",
       "market_category_id": "industry_applications",
       "market_subcategory_id": "financial_services",
@@ -3488,6 +3517,23 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "产品是AI代码审查与治理平台，面向开发者，属于跨行业的软件开发生命周期功能，不涉及物理世界感知与行动，也不提供底层基础设施，因此归入企业应用下的软件开发子类。"
+    },
+    {
+      "event_id": "EV-7951af05be21dc7c",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "software_development_coding",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Quash 提供自主QA代理，自动完成移动应用测试与缺陷修复，属于跨行业的软件开发功能，不涉及物理世界感知与行动，非基础设施，也非单一行业专用，因此归入企业应用-软件开发编码。"
     },
     {
       "event_id": "EV-63dee9f748531f08",
@@ -3864,6 +3910,23 @@
       "rationale": "Scaled Cognition is an AI model lab developing APT, a smaller, faster, and more accurate model. The company also offers a platform with agentic tooling and monitoring. This aligns with the 'models' application under 'development_deployment' in the infrastructure_compute category. The product form is a model, and use cases include software development, customer support, and enterprise workflows. Target users are developers and business users. No specific industry focus is mentioned, so industry_ids is left empty."
     },
     {
+      "event_id": "EV-2bb63a3015195f9b",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "data_preparation_curation",
+      "product_form_id": "model_api_service",
+      "use_case_ids": [
+        "knowledge_search"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "Seltz 提供Web Knowledge API，为AI系统和智能体提供实时、上下文工程化的网络数据，属于为其他AI产品构建者提供数据基础设施，而非面向最终业务用户的行业或企业应用。"
+    },
+    {
       "event_id": "EV-f54ec32c67e9447c",
       "market_category_id": "infrastructure_compute",
       "market_subcategory_id": "data",
@@ -4144,6 +4207,21 @@
       "rationale": "Temporal 提供持久化执行层，为 AI 智能体提供长时间运行的状态管理和故障恢复，属于面向 AI 构建者的开发部署基础设施，非物理 AI，非行业应用，故归为 infrastructure_compute > development_deployment > ai_development_orchestration。"
     },
     {
+      "event_id": "EV-6e516b6e68def9cf",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "compute_cloud_service",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "提供AMD AI加速器云服务，用于训练和推理，属于为AI构建者提供硬件/计算基础设施。"
+    },
+    {
       "event_id": "EV-e31a6bf3c0a979f8",
       "market_category_id": "enterprise_applications",
       "market_subcategory_id": "productivity_enterprise_workflows",
@@ -4308,6 +4386,7 @@
     },
     {
       "event_id": "EV-2dff32c1b6f813e4",
+      "canonical_event_id": "EV-b2d94511e4b4dfc8",
       "market_category_id": "infrastructure_compute",
       "market_subcategory_id": "hardware_computing",
       "market_application_id": "chips",
@@ -4354,6 +4433,7 @@
     },
     {
       "event_id": "EV-305ec93673f4f12e",
+      "canonical_event_id": "EV-82e77abb1a77f81c",
       "market_category_id": "infrastructure_compute",
       "market_subcategory_id": "development_deployment",
       "market_application_id": "model_deployment",
@@ -4561,27 +4641,6 @@
       "confidence": 0.85,
       "needs_review": false,
       "rationale": "Wonderful 是横向企业 AI 代理平台，跨多个用例和工作流，非物理 AI，非基础设施，非单一行业专用，属于 enterprise applications。"
-    },
-    {
-      "event_id": "EV-acf1bcb321414706",
-      "market_category_id": "enterprise_applications",
-      "market_subcategory_id": "productivity_enterprise_workflows",
-      "market_application_id": "",
-      "product_form_id": "enterprise_software_platform",
-      "use_case_ids": [
-        "productivity_enterprise_workflows",
-        "data_analysis"
-      ],
-      "industry_ids": [
-        "logistics_supply_chain",
-        "retail_ecommerce"
-      ],
-      "target_user_ids": [
-        "business_user"
-      ],
-      "confidence": 0.9,
-      "needs_review": false,
-      "rationale": "产品是跨行业的工作流自动化平台，不涉及物理世界感知决策执行，非基础设施，也不限定单一行业，因此归入企业应用。证据强调后勤和电商领域的后台流程自动化，属于生产力/企业工作流。"
     },
     {
       "event_id": "EV-d5aa723446feebbb",
@@ -5243,50 +5302,6 @@
       }
     },
     {
-      "event_id": "EV-c5d7d88d1aef8edb",
-      "funding_insight_id": "FI-1186b430ba0e878a",
-      "company_name": "月之暗面",
-      "company_full_name": "月之暗面",
-      "website": "",
-      "current_sector": "人工智能大模型",
-      "company_evidence_quotes": [
-        "月之暗面（Kimi）已完成新一轮约20亿美元融资，投后估值超过200亿美元",
-        "月之暗面成立于2023年4月"
-      ],
-      "products": [
-        {
-          "name": "Kimi智能助手",
-          "evidence_quotes": [
-            "2023年10月，月之暗面推出首款大模型产品Kimi智能助手。",
-            "到2026年1月，Kimi K2.5问世，进一步进化出Agent集群能力，可以根据任务需求调度多达100个分身，并行处理1500个步骤"
-          ]
-        },
-        {
-          "name": "Kimi K2.5",
-          "evidence_quotes": [
-            "2026年1月，Kimi K2.5开源发布，迅速成为全球开发者生态中的重要底层能力。",
-            "支持300个子Agent并行协作的集群系统，显著提升多Agent系统协作上限。"
-          ]
-        },
-        {
-          "name": "Kimi K2.6",
-          "evidence_quotes": [
-            "在上个月，月之暗面又发布并开源Kimi K2.6模型，在代码、长程任务执行和Agent集群能力等方面全面升级。"
-          ]
-        }
-      ],
-      "customer_names": [
-        "Cursor",
-        "Perplexity",
-        "OpenClaw",
-        "财新传媒"
-      ],
-      "current_classification": {
-        "product_form_id": "model",
-        "market_category_id": "infrastructure_compute"
-      }
-    },
-    {
       "event_id": "EV-af8e95dbe06ac083",
       "funding_insight_id": "FI-3da519dabfb33915",
       "company_name": "智平方",
@@ -5524,73 +5539,6 @@
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
         "market_category_id": "industry_applications"
-      }
-    },
-    {
-      "event_id": "EV-7951af05be21dc7c",
-      "funding_insight_id": "FI-c77b134f91a370a2",
-      "company_name": "Agentic AI startup Quash",
-      "company_full_name": "Quash",
-      "website": "https://quashbugs.com/",
-      "current_sector": "AI驱动的软件测试与质量保障自动化",
-      "company_evidence_quotes": [
-        "Quash, an AI startup based in Bengaluru",
-        "By using autonomous QA agents that automate the whole testing process—from finding bugs to fixing them—Quash is transforming the testing of mobile apps and doing away with the need for human testers."
-      ],
-      "products": [
-        {
-          "name": "Quash Automate",
-          "evidence_quotes": [
-            "Quash Automate, an AI-driven agent that oversees end-to-end testing, ensuring both speed and accuracy in software releases."
-          ]
-        },
-        {
-          "name": "Quash Report",
-          "evidence_quotes": [
-            "Quash Report, an open-source bug reporting tool that is currently being used by hundreds of developers and more than 11 companies."
-          ]
-        },
-        {
-          "name": "Appstronauts",
-          "evidence_quotes": [
-            "Quash has introduced Appstronauts, a community for mobile developers",
-            "its Appstronauts community offers a dedicated platform for mobile developers seeking faster, more accurate testing solutions."
-          ]
-        }
-      ],
-      "customer_names": [],
-      "current_classification": {
-        "product_form_id": "end_user_application",
-        "market_category_id": "enterprise_applications"
-      }
-    },
-    {
-      "event_id": "EV-2bb63a3015195f9b",
-      "funding_insight_id": "FI-0429a6418b0774c6",
-      "company_name": "Agentic infrastructure startup Seltz",
-      "company_full_name": "Seltz Inc.",
-      "website": "https://seltz.ai/",
-      "current_sector": "AI智能体基础设施",
-      "company_evidence_quotes": [
-        "Agentic search startup Seltz Inc. said today it has bagged $12.5 million in seed funding to build a more optimal infrastructure so that artificial intelligence agents can find their way around the web.",
-        "Seltz is a Web Knowledge API that provides real-time, context-engineered data from the live web, optimized for use in AI systems and applications."
-      ],
-      "products": [
-        {
-          "name": "Web Knowledge API",
-          "evidence_quotes": [
-            "Seltz is a Web Knowledge API that provides real-time, context-engineered data from the live web, optimized for use in AI systems and applications.",
-            "Seltz has built its entire search stack, including the crawlers, index, retrieval models and ranking systems."
-          ]
-        }
-      ],
-      "customer_names": [
-        "一家基础实验室",
-        "多家构建智能体工作流的公司"
-      ],
-      "current_classification": {
-        "product_form_id": "model_api_service",
-        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6188,7 +6136,7 @@
     {
       "event_id": "EV-f1a605a25af30dc5",
       "funding_insight_id": "FI-dac348b622e87b82",
-      "company_name": "Archestra.AI",
+      "company_name": "Archestra",
       "company_full_name": "Archestra.AI",
       "website": "https://archestra.ai",
       "current_sector": "AI 智能体安全与治理基础设施",
@@ -6374,6 +6322,51 @@
       "current_classification": {
         "product_form_id": "end_user_application",
         "market_category_id": "enterprise_applications"
+      }
+    },
+    {
+      "event_id": "EV-59882383f82f215d",
+      "funding_insight_id": "FI-f4b4741489974d88",
+      "company_name": "Axelera",
+      "company_full_name": "Axelera AI",
+      "website": "https://axelera.ai/",
+      "current_sector": "AI半导体/边缘AI推理芯片",
+      "company_evidence_quotes": [
+        "Axelera AI, the European leader in AI acceleration hardware",
+        "Axelera, based in Eindhoven in the Netherlands, is one of the few companies in Europe that make specialised computer chips for AI applications."
+      ],
+      "products": [
+        {
+          "name": "Europa",
+          "evidence_quotes": [
+            "expand manufacturing of its \"Europa\" chip, which it plans to launch before June",
+            "Europa® at 629 TOPs"
+          ]
+        },
+        {
+          "name": "Metis",
+          "evidence_quotes": [
+            "With Metis® AIPUs starting at 214 TOPs",
+            "At 15 TOPs/W, Metis AIPUs run demanding AI workloads at the edge without compromising on power, heat or operational cost."
+          ]
+        },
+        {
+          "name": "Titania",
+          "evidence_quotes": [
+            "develop an advanced chip dubbed \"Titania\" for use in supercomputing centres - also referred to as AI factories. That chip is expected in 2027."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Advantech",
+        "European Space Agency (ESA)",
+        "Telefonica",
+        "2CRSI",
+        "DroneStar AI"
+      ],
+      "current_classification": {
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6734,33 +6727,6 @@
       "customer_names": [],
       "current_classification": {
         "product_form_id": "developer_tool",
-        "market_category_id": "infrastructure_compute"
-      }
-    },
-    {
-      "event_id": "EV-6e516b6e68def9cf",
-      "funding_insight_id": "FI-4156663529273d61",
-      "company_name": "Data center infrastructure startup TensorWave",
-      "company_full_name": "TensorWave Inc.",
-      "website": "https://tensorwave.com/",
-      "current_sector": "AI基础设施",
-      "company_evidence_quotes": [
-        "Cloud-based artificial intelligence infrastructure startup TensorWave Inc.",
-        "Las Vegas-based TensorWave was founded in 2023"
-      ],
-      "products": [
-        {
-          "name": "AMD Instinct AI云服务",
-          "evidence_quotes": [
-            "It provides access to specialized, high-performance cloud infrastructure such as AI accelerators, renting it to customers who need resources for both training and inference."
-          ]
-        }
-      ],
-      "customer_names": [
-        "Moreh"
-      ],
-      "current_classification": {
-        "product_form_id": "compute_cloud_service",
         "market_category_id": "infrastructure_compute"
       }
     },
@@ -7374,51 +7340,6 @@
         }
       ],
       "customer_names": [],
-      "current_classification": {
-        "product_form_id": "chip_accelerator",
-        "market_category_id": "infrastructure_compute"
-      }
-    },
-    {
-      "event_id": "EV-59882383f82f215d",
-      "funding_insight_id": "FI-f4b4741489974d88",
-      "company_name": "European AI chip startup Axelera",
-      "company_full_name": "Axelera AI",
-      "website": "https://axelera.ai/",
-      "current_sector": "AI半导体/边缘AI推理芯片",
-      "company_evidence_quotes": [
-        "Axelera AI, the European leader in AI acceleration hardware",
-        "Axelera, based in Eindhoven in the Netherlands, is one of the few companies in Europe that make specialised computer chips for AI applications."
-      ],
-      "products": [
-        {
-          "name": "Europa",
-          "evidence_quotes": [
-            "expand manufacturing of its \"Europa\" chip, which it plans to launch before June",
-            "Europa® at 629 TOPs"
-          ]
-        },
-        {
-          "name": "Metis",
-          "evidence_quotes": [
-            "With Metis® AIPUs starting at 214 TOPs",
-            "At 15 TOPs/W, Metis AIPUs run demanding AI workloads at the edge without compromising on power, heat or operational cost."
-          ]
-        },
-        {
-          "name": "Titania",
-          "evidence_quotes": [
-            "develop an advanced chip dubbed \"Titania\" for use in supercomputing centres - also referred to as AI factories. That chip is expected in 2027."
-          ]
-        }
-      ],
-      "customer_names": [
-        "Advantech",
-        "European Space Agency (ESA)",
-        "Telefonica",
-        "2CRSI",
-        "DroneStar AI"
-      ],
       "current_classification": {
         "product_form_id": "chip_accelerator",
         "market_category_id": "infrastructure_compute"
@@ -8108,6 +8029,31 @@
       }
     },
     {
+      "event_id": "EV-450f624a6a6446ce",
+      "funding_insight_id": "FI-f3cb05f8156986de",
+      "company_name": "Hark",
+      "company_full_name": "Hark",
+      "website": "hark.com",
+      "current_sector": "AI硬件与个性化智能",
+      "company_evidence_quotes": [
+        "Hark, a new AI lab building advanced personalized intelligence"
+      ],
+      "products": [
+        {
+          "name": "Hark Personal AI Platform",
+          "evidence_quotes": [
+            "building foundation models, software systems, native hardware, and new interfaces together from the start",
+            "proactive, personalized AI that interacts with the world through speech, vision, and memory"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "ai_device",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
       "event_id": "EV-5f3ccb941a2fe5d7",
       "funding_insight_id": "FI-9f71fd64de900bbd",
       "company_name": "Harmony",
@@ -8517,6 +8463,33 @@
       }
     },
     {
+      "event_id": "EV-2301cd1470155075",
+      "funding_insight_id": "FI-4e4b1bdd476324f6",
+      "company_name": "Intelligence",
+      "company_full_name": "Intelligence",
+      "website": "https://intelligence.ai/",
+      "current_sector": "AI 评估与模型路由",
+      "company_evidence_quotes": [
+        "the company behind Design Arena — dubbed Intelligence — announced a $7.9 million seed round"
+      ],
+      "products": [
+        {
+          "name": "DesignArena",
+          "evidence_quotes": [
+            "Model identities remain hidden throughout evaluation to prevent brand bias.",
+            "Rankings are calculated using the Bradley-Terry model, a statistical framework designed for pairwise comparison data."
+          ]
+        }
+      ],
+      "customer_names": [
+        "未披露的前沿实验室"
+      ],
+      "current_classification": {
+        "product_form_id": "end_user_application",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-8c2fdaad276818b0",
       "funding_insight_id": "FI-fd1ff9260cbc958b",
       "company_name": "INXM",
@@ -8569,6 +8542,33 @@
       "current_classification": {
         "product_form_id": "ai_infrastructure_software",
         "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-f315914e0fedddfa",
+      "funding_insight_id": "FI-79817e9d1f7616ac",
+      "company_name": "June",
+      "company_full_name": "June",
+      "website": "https://june.ai/",
+      "current_sector": "企业 AI 部署与系统集成自动化",
+      "company_evidence_quotes": [
+        "AI-Driven Enterprise System Deployment | June June is officially Jumping! Read more PRODUCT UNDERSTAND IMPLEMENT OPTIMIZE COMPANY Get A Demo Get A Demo End the drought Deliver any enterprise system. Grasp any AI opportunity. June turns the traditionally complex implementation of enter"
+      ],
+      "products": [
+        {
+          "name": "June",
+          "evidence_quotes": [
+            "From discovery to production, every change is reviewed, sandbox-tested, and executed through native tools - fully auditable at every step.",
+            "June turns buried configuration into plain-language business rules, independent of any platform, so no vendor holds your logic."
+          ]
+        }
+      ],
+      "customer_names": [
+        "CMG"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -9007,6 +9007,50 @@
       ],
       "customer_names": [
         "Cursor"
+      ],
+      "current_classification": {
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-c5d7d88d1aef8edb",
+      "funding_insight_id": "FI-1186b430ba0e878a",
+      "company_name": "Moonshot AI",
+      "company_full_name": "月之暗面",
+      "website": "",
+      "current_sector": "人工智能大模型",
+      "company_evidence_quotes": [
+        "月之暗面（Kimi）已完成新一轮约20亿美元融资，投后估值超过200亿美元",
+        "月之暗面成立于2023年4月"
+      ],
+      "products": [
+        {
+          "name": "Kimi智能助手",
+          "evidence_quotes": [
+            "2023年10月，月之暗面推出首款大模型产品Kimi智能助手。",
+            "到2026年1月，Kimi K2.5问世，进一步进化出Agent集群能力，可以根据任务需求调度多达100个分身，并行处理1500个步骤"
+          ]
+        },
+        {
+          "name": "Kimi K2.5",
+          "evidence_quotes": [
+            "2026年1月，Kimi K2.5开源发布，迅速成为全球开发者生态中的重要底层能力。",
+            "支持300个子Agent并行协作的集群系统，显著提升多Agent系统协作上限。"
+          ]
+        },
+        {
+          "name": "Kimi K2.6",
+          "evidence_quotes": [
+            "在上个月，月之暗面又发布并开源Kimi K2.6模型，在代码、长程任务执行和Agent集群能力等方面全面升级。"
+          ]
+        }
+      ],
+      "customer_names": [
+        "Cursor",
+        "Perplexity",
+        "OpenClaw",
+        "财新传媒"
       ],
       "current_classification": {
         "product_form_id": "model",
@@ -10119,6 +10163,37 @@
       }
     },
     {
+      "event_id": "EV-acf1bcb321414706",
+      "funding_insight_id": "FI-413e2eb33855c065",
+      "company_name": "Parabola",
+      "company_full_name": "Parabola",
+      "website": "https://parabola.io/",
+      "current_sector": "企业工作流自动化",
+      "company_evidence_quotes": [
+        "Parabola , a San Francisco-based startup that uses AI to help expedite back-office processes, particularly in the logistics and e-commerce sectors"
+      ],
+      "products": [
+        {
+          "name": "Parabola 工作流自动化平台",
+          "evidence_quotes": [
+            "the platform applies AI to automate various workflows. Using Parabola, customers can take documents like PDFs, text message logs, images and emails and have Parabola standardize, enrich or categorize them.",
+            "The platform offers a user-friendly drag-and-drop interface, eliminating the need for tedious manual work."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Flexport",
+        "Uber Freight",
+        "Caraway",
+        "Mockingbird",
+        "Ruggable"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
       "event_id": "EV-986ac3a819d23388",
       "funding_insight_id": "FI-8753b7f23092e468",
       "company_name": "Pathwork",
@@ -10529,6 +10604,44 @@
       ],
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
+      "event_id": "EV-7951af05be21dc7c",
+      "funding_insight_id": "FI-c77b134f91a370a2",
+      "company_name": "Quash",
+      "company_full_name": "Quash",
+      "website": "https://quashbugs.com/",
+      "current_sector": "AI驱动的软件测试与质量保障自动化",
+      "company_evidence_quotes": [
+        "Quash, an AI startup based in Bengaluru",
+        "By using autonomous QA agents that automate the whole testing process—from finding bugs to fixing them—Quash is transforming the testing of mobile apps and doing away with the need for human testers."
+      ],
+      "products": [
+        {
+          "name": "Quash Automate",
+          "evidence_quotes": [
+            "Quash Automate, an AI-driven agent that oversees end-to-end testing, ensuring both speed and accuracy in software releases."
+          ]
+        },
+        {
+          "name": "Quash Report",
+          "evidence_quotes": [
+            "Quash Report, an open-source bug reporting tool that is currently being used by hundreds of developers and more than 11 companies."
+          ]
+        },
+        {
+          "name": "Appstronauts",
+          "evidence_quotes": [
+            "Quash has introduced Appstronauts, a community for mobile developers",
+            "its Appstronauts community offers a dedicated platform for mobile developers seeking faster, more accurate testing solutions."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "end_user_application",
         "market_category_id": "enterprise_applications"
       }
     },
@@ -11167,6 +11280,35 @@
       }
     },
     {
+      "event_id": "EV-2bb63a3015195f9b",
+      "funding_insight_id": "FI-0429a6418b0774c6",
+      "company_name": "Seltz",
+      "company_full_name": "Seltz Inc.",
+      "website": "https://seltz.ai/",
+      "current_sector": "AI智能体基础设施",
+      "company_evidence_quotes": [
+        "Agentic search startup Seltz Inc. said today it has bagged $12.5 million in seed funding to build a more optimal infrastructure so that artificial intelligence agents can find their way around the web.",
+        "Seltz is a Web Knowledge API that provides real-time, context-engineered data from the live web, optimized for use in AI systems and applications."
+      ],
+      "products": [
+        {
+          "name": "Web Knowledge API",
+          "evidence_quotes": [
+            "Seltz is a Web Knowledge API that provides real-time, context-engineered data from the live web, optimized for use in AI systems and applications.",
+            "Seltz has built its entire search stack, including the crawlers, index, retrieval models and ranking systems."
+          ]
+        }
+      ],
+      "customer_names": [
+        "一家基础实验室",
+        "多家构建智能体工作流的公司"
+      ],
+      "current_classification": {
+        "product_form_id": "model_api_service",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-f54ec32c67e9447c",
       "funding_insight_id": "FI-ee45ffa2ccc64a4c",
       "company_name": "Seltz",
@@ -11569,6 +11711,33 @@
       ],
       "current_classification": {
         "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-6e516b6e68def9cf",
+      "funding_insight_id": "FI-4156663529273d61",
+      "company_name": "TensorWave Inc.",
+      "company_full_name": "TensorWave Inc.",
+      "website": "https://tensorwave.com/",
+      "current_sector": "AI基础设施",
+      "company_evidence_quotes": [
+        "Cloud-based artificial intelligence infrastructure startup TensorWave Inc.",
+        "Las Vegas-based TensorWave was founded in 2023"
+      ],
+      "products": [
+        {
+          "name": "AMD Instinct AI云服务",
+          "evidence_quotes": [
+            "It provides access to specialized, high-performance cloud infrastructure such as AI accelerators, renting it to customers who need resources for both training and inference."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Moreh"
+      ],
+      "current_classification": {
+        "product_form_id": "compute_cloud_service",
         "market_category_id": "infrastructure_compute"
       }
     },
@@ -12034,37 +12203,6 @@
         }
       ],
       "customer_names": [],
-      "current_classification": {
-        "product_form_id": "enterprise_software_platform",
-        "market_category_id": "enterprise_applications"
-      }
-    },
-    {
-      "event_id": "EV-acf1bcb321414706",
-      "funding_insight_id": "FI-413e2eb33855c065",
-      "company_name": "Workflow automation startup Parabola",
-      "company_full_name": "Parabola",
-      "website": "https://parabola.io/",
-      "current_sector": "企业工作流自动化",
-      "company_evidence_quotes": [
-        "Parabola , a San Francisco-based startup that uses AI to help expedite back-office processes, particularly in the logistics and e-commerce sectors"
-      ],
-      "products": [
-        {
-          "name": "Parabola 工作流自动化平台",
-          "evidence_quotes": [
-            "the platform applies AI to automate various workflows. Using Parabola, customers can take documents like PDFs, text message logs, images and emails and have Parabola standardize, enrich or categorize them.",
-            "The platform offers a user-friendly drag-and-drop interface, eliminating the need for tedious manual work."
-          ]
-        }
-      ],
-      "customer_names": [
-        "Flexport",
-        "Uber Freight",
-        "Caraway",
-        "Mockingbird",
-        "Ruggable"
-      ],
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
         "market_category_id": "enterprise_applications"

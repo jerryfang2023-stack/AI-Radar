@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "generatedAt": "2026-08-04T04:50:29.311Z",
     "latestDataDate": "2026-08-04",
     "currentDate": "2026-08-04",
-    "eventCount": 1832,
-    "quarantinedEventCount": 15
+    "eventCount": 1841,
+    "quarantinedEventCount": 16
   },
   "hardware": [
     {
@@ -25,9 +25,9 @@
       "supplier": "NVIDIA",
       "customer": "Aleria",
       "processNode": "未披露",
-      "capacity": "未披露",
-      "capacityUnit": "",
-      "site": "未披露",
+      "capacity": 16000,
+      "capacityUnit": "GPUs",
+      "site": "United States",
       "region": "United States",
       "contractValue": "未披露",
       "shipmentDate": "未披露",
@@ -73,7 +73,7 @@
       "hardwareType": "gpu",
       "eventType": "hardware_deployment",
       "eventTypeLabel": "硬件部署",
-      "computeLayer": "未披露",
+      "computeLayer": "Encoder 8 卡张量并行（8TP）、DiT 8 卡 USP（Ulysses Sequence Parallel，并结合 Layer-wise Offloading），以及 VAE 部署于 B70 GPU 的整体架构",
       "supplier": "未披露",
       "customer": "未披露",
       "processNode": "未披露",
@@ -2772,6 +2772,66 @@
       "sourceUrl": "https://newswire.com/news/kidz-ai-signs-data-center-mou-with-limestone-networks-to-deploy-inference",
       "entityIds": [
         "EN-bd6769fe78d0971a"
+      ]
+    },
+    {
+      "id": "HWC-5a30e015d5d12a96",
+      "snapshotKey": "5a30e015d5d12a96",
+      "snapshotId": "HWS-6228f201a75148c3",
+      "eventId": "EV-467539fe176a470e",
+      "eventIds": [
+        "EV-467539fe176a470e"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "NVIDIA",
+      "subject": "NVIDIA",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "500",
+          "unit": "$billion",
+          "fact_ref": "HWF-d4b29a196ee0772d"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-d4b29a196ee0772d",
+          "fact_type": "product",
+          "observed_at": "2026-08-03T00:00:00.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "500",
+          "unit": "$billion",
+          "source_quote": "On July 24, 2026, the chipmaker and South Korea’s SK Group unveiled a partnership Nvidia itself is calling worth more than $500 billion, tying Nvidia’s next-generation Vera Rubin chips directly to SK Hynix’s high-bandwidth memory production for years to come.",
+          "event_refs": [
+            "EV-467539fe176a470e"
+          ],
+          "claim_ref": "CL-14df7ad24bd85c04",
+          "source_refs": [
+            "SA-ee00c48ed72f9d91"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://tech-insider.org/nvidia-sk-hynix-500-billion-memory-deal-2026",
+      "entityIds": [
+        "EN-8d4321d936320802"
       ]
     },
     {
@@ -5939,21 +5999,22 @@
       ],
       "raw_documents": 32,
       "original_sources": 26,
-      "valid_claims": 16,
-      "observations": 12,
+      "valid_claims": 13,
+      "observations": 13,
       "canonical_events": 4,
       "blocker_counts": {
-        "source_outside_daily_window": 15,
-        "no_source_bounded_event": 4,
+        "source_outside_daily_window": 16,
+        "no_source_bounded_event": 1,
+        "event_not_ai_relevant": 2,
         "non_event_or_index_title": 1,
         "raw_source_quality_block": 7,
         "raw_document_not_auditable": 1
       },
       "rates": {
         "original_source_rate": 0.8125,
-        "valid_claim_rate": 0.5,
-        "observation_rate": 0.75,
-        "event_conversion_rate": 0.25
+        "valid_claim_rate": 0.40625,
+        "observation_rate": 1,
+        "event_conversion_rate": 0.3076923076923077
       },
       "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/monitoring-funnel.json"
     }

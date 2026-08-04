@@ -85,11 +85,12 @@ export function fundingEventAggregationKey(event, bundle, entityIndex = {}) {
   return `${company.entity_id}|${normalizeFundingRound(roundEvidence).code}`;
 }
 
-function publishedFundingCards(projectRoot) {
+function publishedFundingCards(projectRoot, excludedOutput = "") {
   const bundleRoot = path.join(projectRoot, "01-SiteV2/content/12-applications/funding-insights");
   if (!fs.existsSync(bundleRoot)) return [];
   return fs.readdirSync(bundleRoot)
     .filter((file) => /^\d{4}-\d{2}-\d{2}\.json$/u.test(file))
+    .filter((file) => path.resolve(bundleRoot, file) !== path.resolve(excludedOutput || "__none__"))
     .flatMap((file) => readJson(path.join(bundleRoot, file), { cards: [] }).cards || []);
 }
 
@@ -257,15 +258,45 @@ function canonicalSources(bundle, event) {
   }).filter(Boolean);
 }
 
-function scoreCandidate(result, companyName) {
+function scoreCandidate(result, companyName, identitySubject = "") {
   const text = clean(`${result.title} ${result.url}`).toLowerCase();
   const body = clean(result.provider_body).toLowerCase();
   const name = clean(companyName).toLowerCase();
+  const identityKey = clean(identitySubject).toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
+  const resultKey = `${text} ${body}`.replace(/[^\p{L}\p{N}]+/gu, "");
   let score = result.source_class === "official_candidate" ? 10 : result.source_class === "secondary" ? 4 : 6;
   if (text.includes(name)) score += 4;
+  if (identityKey && resultKey.includes(identityKey)) score += 6;
   if (/\b(?:funding|raises|series|seed|investor|product|customer|case study|about|team|pricing)\b/iu.test(text)) score += 3;
   if (result.intent === "investor_rationale" && body.includes(name) && /\b(?:invest|investment|portfolio)\b/iu.test(body)) score += 5;
   return score;
+}
+
+function canonicalResearchProblems(payload, company, sources) {
+  const problems = [];
+  const canonicalSources = sources.filter((source) => source.source_class === "canonical_event_source");
+  const citedSourceIds = referencedSourceIds(payload);
+  if (!canonicalSources.some((source) => citedSourceIds.has(source.source_id))) {
+    problems.push("canonical_event_source_not_cited");
+  }
+  const canonicalName = clean(company.canonical_name);
+  const fullName = clean(payload.company?.full_name);
+  if (
+    /^[A-Za-z0-9.&'-]{2,6}$/u.test(canonicalName)
+    && fullName
+    && fullName.toLowerCase() !== canonicalName.toLowerCase()
+    && !canonicalSources.some((source) => source.body_clean.toLowerCase().includes(fullName.toLowerCase()))
+  ) {
+    problems.push("ambiguous_company_full_name_not_in_canonical_source");
+  }
+  return problems;
+}
+
+function modelCorrectionProblem(problem = "") {
+  if (problem === "physical_ai_product_form_mismatch") {
+    return "physical_ai_product_form_mismatch:ai_device_must_choose_a_non_physical_market_category_and_its_valid_subcategory_application_hierarchy";
+  }
+  return problem;
 }
 
 async function researchSources(bundle, event, company) {
@@ -282,6 +313,8 @@ async function researchSources(bundle, event, company) {
   )) || "";
   const amountHint = clean((event.metrics || [])[0] || "");
   const identityHint = clean(captured[0]?.title_original || event.object || event.display_title_zh);
+  const describedSubject = clean(identityHint.match(/^(.{2,50}?)(?:\s+开发商|\s+(?:maker|creator|developer)\b)/iu)?.[1]);
+  const identitySubject = describedSubject.replace(/([a-z0-9])([A-Z])/gu, "$1 $2");
   const siteHint = companyHost ? `site:${companyHost} ` : "";
   const queries = [
     {
@@ -292,6 +325,13 @@ async function researchSources(bundle, event, company) {
       intent: "funding",
       query: clean(`"${company.canonical_name}" "${amountHint}" funding investors round`),
     },
+    ...(identitySubject ? [{
+      intent: "funding",
+      query: clean(`"${identitySubject}" "${amountHint}" funding investors company`),
+    }, {
+      intent: "product",
+      query: clean(`"${company.canonical_name}" "${identitySubject}" company founders product`),
+    }] : []),
     {
       intent: "product",
       query: clean(`${siteHint}"${company.canonical_name}" product customers case study`),
@@ -336,9 +376,12 @@ async function researchSources(bundle, event, company) {
     const isOfficialCandidate = result.source_class === "official_candidate";
     const isCanonicalHost = officialHosts.some((host) => sameHostFamily(candidateHost, host));
     const companyName = clean(company.canonical_name).toLowerCase();
-    const companyInLead = clean(`${result.title} ${result.provider_body}`).toLowerCase().includes(companyName);
+    const resultLead = clean(`${result.title} ${result.provider_body}`).toLowerCase();
+    const companyInLead = resultLead.includes(companyName);
+    const identityKey = identitySubject.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
+    const identityInLead = identityKey && resultLead.replace(/[^\p{L}\p{N}]+/gu, "").includes(identityKey);
     const isRelevantIndependent = result.source_class === "independent"
-      && companyInLead
+      && (companyInLead || identityInLead)
       && /\b(?:invest|funding|series|seed|product|customer|case study|agent|platform)\b/iu
         .test(clean(`${result.title} ${result.url} ${result.provider_body}`));
     const isInvestorRationaleLead = result.intent === "investor_rationale"
@@ -352,11 +395,11 @@ async function researchSources(bundle, event, company) {
       && !isInvestorRationaleLead
     ) continue;
     const key = normalizedUrlKey(result.url);
-    if (!deduped.has(key) || scoreCandidate(result, company.canonical_name) > scoreCandidate(deduped.get(key), company.canonical_name)) {
+    if (!deduped.has(key) || scoreCandidate(result, company.canonical_name, identitySubject) > scoreCandidate(deduped.get(key), company.canonical_name, identitySubject)) {
       deduped.set(key, result);
     }
   }
-  for (const candidate of [...deduped.values()].sort((a, b) => scoreCandidate(b, company.canonical_name) - scoreCandidate(a, company.canonical_name))) {
+  for (const candidate of [...deduped.values()].sort((a, b) => scoreCandidate(b, company.canonical_name, identitySubject) - scoreCandidate(a, company.canonical_name, identitySubject))) {
     if (captured.length >= 8) break;
     if (captured.some((source) => normalizedUrlKey(source.source_url) === normalizedUrlKey(candidate.url))) continue;
     const source = await capturePage(candidate);
@@ -399,6 +442,8 @@ export function promptFor(event, company, sources, directions) {
     "related_direction_id只能从DIRECTION_OPTIONS选择；没有合适方向时返回空字符串。",
     "返回一个JSON对象，不要代码围栏。Schema:",
     "Whole-card evidence rule: cite at least two distinct SOURCE_ID values. Prefer the canonical funding source plus a captured company, investor, or credible independent source. Never add an irrelevant citation merely to reach two sources.",
+    "The CANONICAL_FUNDING_EVENT and every SOURCE_CLASS=canonical_event_source are authoritative. The card must describe that exact company and event, must cite a canonical event source, and must never switch to a same-name company. financing.amount and financing.announced_at are fixed from the canonical event; contradictory search results must be discarded.",
+    "An AI interface, wearable, headset, or other user-operated AI device is product_form_id=ai_device, not robotic_system. It must not use market_category_id=physical_ai unless the current product is itself an autonomous robot, vehicle, or machine that senses, decides, and acts in the physical world.",
     "Keep the JSON concise: at most 3 products, 5 customers, 5 comparisons, 8 metrics, 5 quotes, and 5 investment-rationale items. Omit an optional item instead of returning a partial object.",
     JSON.stringify({
       company: {
@@ -645,7 +690,10 @@ async function processEvent(bundle, event, entityIndex, entityDecisions) {
         acceptedPayload = sanitizeResearchPayload(payload, research.sources);
         ensureNamedCompanyEvidence(acceptedPayload, company, research.sources);
         ensureCanonicalFundingEvidence(acceptedPayload, bundle, event, research.sources);
-        return researchPayloadProblems(acceptedPayload, research.sources, directions.map((item) => item.id));
+        return [
+          ...researchPayloadProblems(acceptedPayload, research.sources, directions.map((item) => item.id)),
+          ...canonicalResearchProblems(acceptedPayload, company, research.sources),
+        ].map(modelCorrectionProblem);
       },
     });
     const payload = acceptedPayload || sanitizeResearchPayload(result.payload, research.sources);
@@ -707,9 +755,20 @@ async function main() {
     {},
   );
   const existing = readJson(output, { cards: [], queue: [] });
+  const eventById = new Map(bundle.events.map((event) => [event.event_id, event]));
+  const amountKey = (value) => clean(value).toLowerCase()
+    .replace(/\bmillions?\b/gu, "m")
+    .replace(/\bbillions?\b/gu, "b")
+    .replace(/[\s,]/gu, "");
   const existingByEvent = new Map((existing.cards || [])
     .map((card) => normalizeFundingInsightCard(card, entityIndex, entityDecisions))
     .filter((card) => fundingInsightProblems(card).length === 0)
+    .filter((card) => (card.research_sources || []).some((source) => source.source_class === "canonical_event_source"))
+    .filter((card) => {
+      const event = eventById.get(card.triggered_by_event_id);
+      return !clean(event?.metrics?.[0])
+        || amountKey(card.financing?.amount) === amountKey(event.metrics[0]);
+    })
     .map((card) => [card.triggered_by_event_id, card]));
   let eligibleEvents = bundle.events
     .filter((event) => event.event_type === "funding")
@@ -727,7 +786,7 @@ async function main() {
   }
   const generationSelection = selectFundingEventsForGeneration(selectedEvents, {
     currentCards: [...existingByEvent.values()],
-    publishedCards: publishedFundingCards(root),
+    publishedCards: publishedFundingCards(root, output),
     force,
     eventAggregationKey: (event) => fundingEventAggregationKey(event, bundle, entityIndex),
   });

@@ -9,7 +9,7 @@
     "activeDate": "2026-08-04",
     "generatedAt": "2026-08-04T00:00:00.000Z",
     "windowDays": 30,
-    "evidenceCount": 844,
+    "evidenceCount": 853,
     "directionCardCount": 2,
     "sourceAdapter": "data-center-v4-canonical"
   },
@@ -182,6 +182,68 @@
       }
     },
     {
+      "id": "EV-467539fe176a470e",
+      "event_id": "EV-467539fe176a470e",
+      "event_type": "partnership",
+      "publication_status": "verified",
+      "title": "Nvidia、SK海力士签署5000亿美元AI内存协议 [2026]",
+      "category": "case",
+      "categoryLabel": "案例",
+      "date": "2026-08-04",
+      "event_time": "2026-08-03T00:00:00.000Z",
+      "sourceUrl": "https://tech-insider.org/nvidia-sk-hynix-500-billion-memory-deal-2026/",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "NVIDIA",
+      "sourceExcerpt": "On July 24, 2026, the chipmaker and South Korea’s SK Group unveiled a partnership Nvidia itself is calling worth more than $500 billion, tying Nvidia’s next-generation Vera Rubin chips directly to SK Hynix’s high-bandwidth memory production for years to come.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-14df7ad24bd85c04"
+      ],
+      "source_refs": [
+        "SA-ee00c48ed72f9d91"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "partnership_integration",
+            "claim_ref": "CL-14df7ad24bd85c04",
+            "source_refs": [
+              "SA-ee00c48ed72f9d91"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "partnership_integration"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-76e7dc691b68fa04",
       "event_id": "EV-76e7dc691b68fa04",
       "event_type": "partnership",
@@ -312,6 +374,79 @@
       }
     },
     {
+      "id": "EV-85d4f5325b167467",
+      "event_id": "EV-85d4f5325b167467",
+      "event_type": "deployment",
+      "publication_status": "verified",
+      "title": "Lemvigh-Müller：以智能体AI打造批发新标准，实现快速无接触采购",
+      "category": "case",
+      "categoryLabel": "案例",
+      "date": "2026-08-04",
+      "event_time": "",
+      "sourceUrl": "https://www.sap.com/asset/dynamic/2026/06/be80dd33-587f-0010-bca6-c68f7e60039b.html",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "Lemvigh-Müller A/S",
+      "sourceExcerpt": "the company deployed a multi-agent workflow with an SAP Cloud ERP Private solution, SAP AI Launchpad, and SAP AI Core infrastructure",
+      "entity_refs": [
+        {
+          "entity_id": "EN-9f2432dcde6dc59a",
+          "canonical_name": "Lemvigh-Müller A/S",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-13954305887f7d25"
+      ],
+      "source_refs": [
+        "SA-08026f3936a5e736"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [
+          {
+            "value_id": "workflow_automation",
+            "claim_ref": "CL-13954305887f7d25",
+            "source_refs": [
+              "SA-08026f3936a5e736"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "customer_deployment",
+            "claim_ref": "CL-13954305887f7d25",
+            "source_refs": [
+              "SA-08026f3936a5e736"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [
+            "workflow_automation"
+          ],
+          "delivery_model": [],
+          "business_action": [
+            "customer_deployment"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-d2a623e8eef1f61d",
       "event_id": "EV-d2a623e8eef1f61d",
       "event_type": "procurement_contract",
@@ -411,6 +546,221 @@
       }
     },
     {
+      "id": "EV-2301cd1470155075",
+      "event_id": "EV-2301cd1470155075",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-08-04",
+      "event_time": "2026-08-03T00:00:00.000Z",
+      "sourceUrl": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
+      "sourceName": "TechCrunch：AI（RSS）",
+      "subject": "Intelligence",
+      "sourceExcerpt": "Design Arena creators raise $7.9 million to bring taste to AI models",
+      "entity_refs": [
+        {
+          "entity_id": "EN-9f80a5e14017ccc0",
+          "canonical_name": "Intelligence",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-54c53aec2bf529a4",
+        "CL-1e03457c8f9dc116",
+        "CL-13fb11ef64e595da"
+      ],
+      "source_refs": [
+        "SA-e725de9fcf5a559f"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_application",
+          "dimension_name": "AI 市场细分",
+          "value_id": "llm_benchmarking_routing",
+          "value_name": "模型评测与路由",
+          "entity_ids": [
+            "EN-9f80a5e14017ccc0"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-b02bfe4a86f01c32"
+        },
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "infrastructure_compute",
+          "value_name": "基础设施与算力",
+          "entity_ids": [
+            "EN-9f80a5e14017ccc0"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-c5e5e6f6e30e6ffd"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "observability_evaluation",
+          "value_name": "可观测与评估",
+          "entity_ids": [
+            "EN-9f80a5e14017ccc0"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-c3e37197f7e34b76"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "professional_services",
+          "value_name": "专业服务",
+          "entity_ids": [
+            "EN-9f80a5e14017ccc0"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-fed6352a580c95f3"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "end_user_application",
+          "value_name": "终端 AI 应用",
+          "entity_ids": [
+            "EN-9f80a5e14017ccc0"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-94323a6e52fdc080"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "developer",
+          "value_name": "开发者",
+          "entity_ids": [
+            "EN-9f80a5e14017ccc0"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-36883f9b4c5e50d7"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "research_discovery",
+          "value_name": "科研与发现",
+          "entity_ids": [
+            "EN-9f80a5e14017ccc0"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-b8a6aacb06c8b7cf"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "model",
+          "value_name": "模型",
+          "entity_ids": [
+            "EN-9f80a5e14017ccc0"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-54c53aec2bf529a4",
+            "source_refs": [
+              "SA-e725de9fcf5a559f"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-4276fefac124f09c",
+      "event_id": "EV-4276fefac124f09c",
+      "event_type": "capital_investment",
+      "publication_status": "verified",
+      "title": "capital_investment MOZN",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-08-04",
+      "event_time": "2026-08-03T10:45:22.000Z",
+      "sourceUrl": "https://www.finanzwire.com/press-release/mozn-etr-humain-makes-investment-in-mozn-and-partners-to-co-build-enterprise-ai-solutions-locally-and-globally-TRprchtLla9",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "HUMAIN",
+      "sourceExcerpt": "HUMAIN has made a strategic investment in Saudi AI company MOZN",
+      "entity_refs": [
+        {
+          "entity_id": "EN-3c8b824c18029ad6",
+          "canonical_name": "HUMAIN",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-adb56517e3c0d302"
+      ],
+      "source_refs": [
+        "SA-8fb9825d50362290"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-adb56517e3c0d302",
+            "source_refs": [
+              "SA-8fb9825d50362290"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-450f624a6a6446ce",
       "event_id": "EV-450f624a6a6446ce",
       "event_type": "funding",
@@ -430,6 +780,12 @@
           "canonical_name": "Hark AI Hardware Funding",
           "entity_type": "organization_candidate",
           "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-245f1e177c5169cb",
+          "canonical_name": "Hark",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
         }
       ],
       "claim_refs": [
@@ -444,13 +800,66 @@
       "taxonomy_version": "TAG-V4.1",
       "classifications": [
         {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "enterprise_applications",
+          "value_name": "企业级应用",
+          "entity_ids": [
+            "EN-245f1e177c5169cb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-354859386cd32084"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-245f1e177c5169cb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-db23280828eb9dd0"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "ai_device",
+          "value_name": "AI 设备",
+          "entity_ids": [
+            "EN-245f1e177c5169cb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-5483d232ded793f6"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "consumer",
+          "value_name": "个人用户",
+          "entity_ids": [
+            "EN-245f1e177c5169cb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-2e26864e9156874d"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-245f1e177c5169cb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-ce1f051087026a59"
+        },
+        {
           "dimension_id": "product_form",
           "dimension_name": "产品形态",
           "value_id": "chip_accelerator",
           "value_name": "芯片与加速器",
-          "entity_ids": [
-            "EN-805a8c0cc2403091"
-          ],
+          "entity_ids": [],
           "provenance": "claim_assertion",
           "assertion_ref": ""
         }
@@ -468,6 +877,68 @@
             "claim_ref": "CL-5c84a3169e48d8d3",
             "source_refs": [
               "SA-1ea0d35dbb66eddc"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-a644b20d68e0b31a",
+      "event_id": "EV-a644b20d68e0b31a",
+      "event_type": "capital_investment",
+      "publication_status": "verified",
+      "title": "SK海力士加速AI内存扩张，清州封装厂获批",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-08-04",
+      "event_time": "2026-08-01T17:38:11.000Z",
+      "sourceUrl": "https://noah-news.com/sk-hynix-accelerates-ai-memory-expansion-with-new-cheongju-packaging-plant-appro/",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "SK hynix",
+      "sourceExcerpt": "SK hynix has secured approval to raise investment in its P&T7 advanced packaging plant in Cheongju",
+      "entity_refs": [
+        {
+          "entity_id": "EN-026836921a4d049c",
+          "canonical_name": "SK hynix",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-79474a3c58619c85"
+      ],
+      "source_refs": [
+        "SA-f02a640cbc847dee"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-79474a3c58619c85",
+            "source_refs": [
+              "SA-f02a640cbc847dee"
             ],
             "provenance": "event_type_rule"
           }
@@ -605,38 +1076,111 @@
       }
     },
     {
-      "id": "EV-e2be12ac077a1062",
-      "event_id": "EV-e2be12ac077a1062",
+      "id": "EV-f315914e0fedddfa",
+      "event_id": "EV-f315914e0fedddfa",
       "event_type": "funding",
       "publication_status": "verified",
-      "title": "DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"",
+      "title": "一家由Marc Benioff支持的初创公司认为AI能解决AI部署问题",
       "category": "funding",
       "categoryLabel": "融资",
       "date": "2026-08-04",
       "event_time": "2026-08-03T00:00:00.000Z",
-      "sourceUrl": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
-      "sourceName": "TechCrunch：AI（RSS）",
-      "subject": "TechCrunch：AI（RSS）",
-      "sourceExcerpt": "Design Arena creators raise $7.9 million to bring taste to AI models",
-      "entity_refs": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/03/a-marc-benioff-backed-startup-thinks-ai-can-solve-the-ai-deployment-problem/",
+      "sourceName": "TechCrunch AI",
+      "subject": "June",
+      "sourceExcerpt": "the company raised $20 million in pre-seed funding led by Marc Benioff’s Time Ventures, with additional backing from tech luminaries like Michael Dell, Aaron Levie, and George Kurtz.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-c0fa1ef864788c45",
+          "canonical_name": "June",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
       "claim_refs": [
-        "CL-54c53aec2bf529a4",
-        "CL-1e03457c8f9dc116",
-        "CL-13fb11ef64e595da"
+        "CL-f6181af796169374"
       ],
       "source_refs": [
-        "SA-e725de9fcf5a559f"
+        "SA-44f21ba35ede2f8c"
       ],
       "taxonomy_version": "TAG-V4.1",
       "classifications": [
         {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "enterprise_applications",
+          "value_name": "企业级应用",
+          "entity_ids": [
+            "EN-c0fa1ef864788c45"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-613358b0e6821ede"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-c0fa1ef864788c45"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-7e18479b95dcbdf8"
+        },
+        {
           "dimension_id": "product_form",
           "dimension_name": "产品形态",
-          "value_id": "model",
-          "value_name": "模型",
-          "entity_ids": [],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
+          "value_id": "enterprise_software_platform",
+          "value_name": "企业软件平台",
+          "entity_ids": [
+            "EN-c0fa1ef864788c45"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-37ec6fde6831901c"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "business_user",
+          "value_name": "企业用户",
+          "entity_ids": [
+            "EN-c0fa1ef864788c45"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-3b69b4678b238c00"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "developer",
+          "value_name": "开发者",
+          "entity_ids": [
+            "EN-c0fa1ef864788c45"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-3c685b0f3b211c9d"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-c0fa1ef864788c45"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-f520d4e693a6f347"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "software_development",
+          "value_name": "软件开发",
+          "entity_ids": [
+            "EN-c0fa1ef864788c45"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-a1e04ecdee18b631"
         }
       ],
       "application_assertions": {
@@ -649,9 +1193,9 @@
         "business_action": [
           {
             "value_id": "funding_round",
-            "claim_ref": "CL-54c53aec2bf529a4",
+            "claim_ref": "CL-f6181af796169374",
             "source_refs": [
-              "SA-e725de9fcf5a559f"
+              "SA-44f21ba35ede2f8c"
             ],
             "provenance": "event_type_rule"
           }
@@ -672,61 +1216,49 @@
       }
     },
     {
-      "id": "EV-faf8db3567f108e2",
-      "event_id": "EV-faf8db3567f108e2",
-      "event_type": "funding",
+      "id": "EV-1797eada6fb392a6",
+      "event_id": "EV-1797eada6fb392a6",
+      "event_type": "product_release",
       "publication_status": "verified",
-      "title": "Axe Compute 获得 15 亿美元 AI GPU 集群交易",
-      "category": "funding",
-      "categoryLabel": "融资",
+      "title": "微软Agent框架Harness与托管智能体正式全面可用",
+      "category": "product-service",
+      "categoryLabel": "产品",
       "date": "2026-08-04",
-      "event_time": "2026-07-27T00:00:00.000Z",
-      "sourceUrl": "https://www.theglobeandmail.com/investing/markets/markets-news/Tipranks/3500767/axe-compute-secures-1-5b-ai-gpu-cluster-deal/",
+      "event_time": "2026-08-03T00:00:00.000Z",
+      "sourceUrl": "https://www.infoq.com/news/2026/08/agent-framework-harness-ga/",
       "sourceName": "keyword search / Anysearch",
-      "subject": "Axe Compute",
-      "sourceExcerpt": "Axe Compute secures $1.5B AI GPU cluster deal - The Globe and Mail",
+      "subject": "Microsoft",
+      "sourceExcerpt": "The framework reached 1.0 general availability on April 2, 2026",
       "entity_refs": [
         {
-          "entity_id": "EN-54dfb14dcddad637",
-          "canonical_name": "Axe Compute",
+          "entity_id": "EN-9fbf261b62c1d7c0",
+          "canonical_name": "Microsoft",
           "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-147853b5abe973d5",
+          "canonical_name": "InfoQ",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-80d920b793cfa985",
+          "canonical_name": "Agent Framework Harness",
+          "entity_type": "product_candidate",
           "verification_status": "candidate"
         }
       ],
       "claim_refs": [
-        "CL-8527c532e5bd2a23",
-        "CL-c3f8b8ee86d4cacd",
-        "CL-104311c8f28fe938",
-        "CL-00d6f63ab06a50b6"
+        "CL-d7159d0b9b69615f",
+        "CL-5ab2e74b087255a8",
+        "CL-97f9baae47107d3b"
       ],
       "source_refs": [
-        "SA-a5c6f1e046030415"
+        "SA-4c47fa29daf4f3e0"
       ],
       "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "product_form",
-          "dimension_name": "产品形态",
-          "value_id": "chip_accelerator",
-          "value_name": "芯片与加速器",
-          "entity_ids": [
-            "EN-54dfb14dcddad637"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        },
-        {
-          "dimension_id": "product_form",
-          "dimension_name": "产品形态",
-          "value_id": "ai_compute_system",
-          "value_name": "AI 计算系统",
-          "entity_ids": [
-            "EN-54dfb14dcddad637"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        }
-      ],
+      "classifications": [],
       "application_assertions": {
         "buyer_or_user": [],
         "team_or_function": [],
@@ -736,10 +1268,10 @@
         "delivery_model": [],
         "business_action": [
           {
-            "value_id": "funding_round",
-            "claim_ref": "CL-8527c532e5bd2a23",
+            "value_id": "product_launch",
+            "claim_ref": "CL-d7159d0b9b69615f",
             "source_refs": [
-              "SA-a5c6f1e046030415"
+              "SA-4c47fa29daf4f3e0"
             ],
             "provenance": "event_type_rule"
           }
@@ -754,7 +1286,7 @@
           "product_form": [],
           "delivery_model": [],
           "business_action": [
-            "funding_round"
+            "product_launch"
           ]
         }
       }
@@ -1151,6 +1683,130 @@
             "claim_ref": "CL-e41cd87a54302f8f",
             "source_refs": [
               "SA-176be10d2a2b171b"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-650e4b23d45d5758",
+      "event_id": "EV-650e4b23d45d5758",
+      "event_type": "model_release",
+      "publication_status": "verified",
+      "title": "阿里巴巴再次挑战美国AI霸主地位",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-04",
+      "event_time": "2026-08-03T11:01:11.000Z",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai",
+      "sourceName": "The Verge AI",
+      "subject": "Alibaba",
+      "sourceExcerpt": "Chinese tech giant Alibaba released what it says is its largest and “most capable AI model to date,” claiming performance rivaling the best systems from US frontier labs Anthropic and OpenAI, as well as domestic rivals like Moonshot AI’s Kimi K3.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-047364b9be67f665",
+          "canonical_name": "Alibaba",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_name": "Anthropic",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-b5251b35f15bedc4",
+          "canonical_name": "Moonshot AI",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-5388bc10736a0eff",
+          "canonical_name": "ByteDance",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-e1517be14d06cdb7",
+          "canonical_name": "MiniMax",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-20f8fde9c1a59738",
+          "canonical_name": "Qwen3.8-Max",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-d5f758c7e8e58fb9",
+        "CL-b81cbd338ab53a41",
+        "CL-64d81927d757d6b4",
+        "CL-808e9e4898cf3b6e",
+        "CL-90e5723afec77cb4"
+      ],
+      "source_refs": [
+        "SA-459b3997e7f5e004",
+        "SA-f80329b6ac378d4d"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "video_generation",
+          "value_name": "视频生成",
+          "entity_ids": [],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "model",
+          "value_name": "模型",
+          "entity_ids": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-d5f758c7e8e58fb9",
+            "source_refs": [
+              "SA-459b3997e7f5e004"
             ],
             "provenance": "event_type_rule"
           }
@@ -1628,6 +2284,234 @@
           "delivery_model": [],
           "business_action": [
             "product_launch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-9f06b3f05f18b81e",
+      "event_id": "EV-9f06b3f05f18b81e",
+      "event_type": "model_release",
+      "publication_status": "verified",
+      "title": "沐曦曦云 C 系列 GPU 实现 Day 0 适配 MiniMax H3 多模态生成模型",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-04",
+      "event_time": "2026-08-03T06:35:13.000Z",
+      "sourceUrl": "https://www.ithome.com/0/984/998.htm",
+      "sourceName": "IT之家（RSS）",
+      "subject": "MetaX",
+      "sourceExcerpt": "沐曦股份 (MetaX) 今日宣布旗下曦云 C 系列 GPU 完成对稀宇 MiniMax H3 多模态生成模型的 Day 0 适配",
+      "entity_refs": [
+        {
+          "entity_id": "EN-25cdd04cf7fba6b1",
+          "canonical_name": "MetaX",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-e1517be14d06cdb7",
+          "canonical_name": "MiniMax",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-9f14feaeba21df67",
+          "canonical_name": "H3",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-29b73532b143bc2a",
+          "canonical_name": "Day 0",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-45ff62c6ece4462d"
+      ],
+      "source_refs": [
+        "SA-3b27c63b89aa2f6d"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "multimodal",
+          "value_name": "多模态",
+          "entity_ids": [],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "chip_accelerator",
+          "value_name": "芯片与加速器",
+          "entity_ids": [],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-45ff62c6ece4462d",
+            "source_refs": [
+              "SA-3b27c63b89aa2f6d"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-a201645ff75776c6",
+      "event_id": "EV-a201645ff75776c6",
+      "event_type": "model_release",
+      "publication_status": "verified",
+      "title": "中国MiniMax H3成为首个登顶AI视频排行榜的开源模型",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-04",
+      "event_time": "2026-08-03T13:52:29.000Z",
+      "sourceUrl": "https://the-decoder.com/chinas-minimax-h3-is-the-first-open-model-to-top-an-ai-video-ranking/",
+      "sourceName": "The Decoder AI News",
+      "subject": "MiniMax",
+      "sourceExcerpt": "MiniMax releases H3 video model weights, putting an open model at the top of a video ranking for the first time.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-e1517be14d06cdb7",
+          "canonical_name": "MiniMax",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-9f14feaeba21df67",
+          "canonical_name": "H3",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-5cf17eba0e7620ee",
+          "canonical_name": "H3 video",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-3869260ee233d352"
+      ],
+      "source_refs": [
+        "SA-e347faf81c174746"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-3869260ee233d352",
+            "source_refs": [
+              "SA-e347faf81c174746"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-cc6a06fd91fe2cfd",
+      "event_id": "EV-cc6a06fd91fe2cfd",
+      "event_type": "standard_specification",
+      "publication_status": "verified",
+      "title": "当品牌开始争夺AI的答案：翰智GEO入场",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-04",
+      "event_time": "2026-08-03T06:58:06.000Z",
+      "sourceUrl": "https://www.qbitai.com/2026/08/465662.html",
+      "sourceName": "量子位",
+      "subject": "量子位",
+      "sourceExcerpt": "中国信通院联合产学研机构发布GEO行业技术标准《生成式引擎优化（GEO）服务可信基本要求》",
+      "entity_refs": [],
+      "claim_refs": [
+        "CL-ed2602da5fe72b60"
+      ],
+      "source_refs": [
+        "SA-ee66286a2e133d1d"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "governance_requirement",
+            "claim_ref": "CL-ed2602da5fe72b60",
+            "source_refs": [
+              "SA-ee66286a2e133d1d"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "governance_requirement"
           ]
         }
       }
@@ -7353,68 +8237,6 @@
       }
     },
     {
-      "id": "EV-a644b20d68e0b31a",
-      "event_id": "EV-a644b20d68e0b31a",
-      "event_type": "capital_investment",
-      "publication_status": "verified",
-      "title": "SK海力士加速AI内存扩张，清州封装厂获批",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "date": "2026-08-02",
-      "event_time": "2026-08-01T17:38:11.000Z",
-      "sourceUrl": "https://noah-news.com/sk-hynix-accelerates-ai-memory-expansion-with-new-cheongju-packaging-plant-appro/",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "SK hynix",
-      "sourceExcerpt": "SK hynix has secured approval to raise investment in its P&T7 advanced packaging plant in Cheongju",
-      "entity_refs": [
-        {
-          "entity_id": "EN-026836921a4d049c",
-          "canonical_name": "SK hynix",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-d16698fb7df2e3c7"
-      ],
-      "source_refs": [
-        "SA-3f4efef97aa7bdb6"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "funding_round",
-            "claim_ref": "CL-d16698fb7df2e3c7",
-            "source_refs": [
-              "SA-3f4efef97aa7bdb6"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "funding_round"
-          ]
-        }
-      }
-    },
-    {
       "id": "EV-6374a712070b1f8c",
       "event_id": "EV-6374a712070b1f8c",
       "event_type": "product_release",
@@ -9785,7 +10607,7 @@
           "entity_id": "EN-1706429cbf67f1c9",
           "canonical_name": "European Union",
           "entity_type": "organization_candidate",
-          "verification_status": "verified"
+          "verification_status": "candidate"
         }
       ],
       "claim_refs": [
@@ -15468,6 +16290,71 @@
             "claim_ref": "CL-718d02f63ce96f31",
             "source_refs": [
               "SA-103784e9d07ae76d"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-faf8db3567f108e2",
+      "event_id": "EV-faf8db3567f108e2",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "Axe Compute 签署五年期 15 亿美元专用 AI 基础设施合同，2026 年已签合同总值超过 30 亿美元",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-07-29",
+      "event_time": "2026-07-27T00:00:00.000Z",
+      "sourceUrl": "https://www.globenewswire.com/news-release/2026/07/27/3333519/37244/en/Axe-Compute-Secures-1-5-Billion-Five-Year-Dedicated-AI-Infrastructure-Contract-Surpassing-3-Billion-in-2026-Signed-Contracted-Value.html",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "Axe Compute",
+      "sourceExcerpt": "Axe Compute Secures $1.5 Billion Five-Year Dedicated AI Infrastructure Contract, Surpassing $3 Billion in 2026 Signed Contracted Value",
+      "entity_refs": [
+        {
+          "entity_id": "EN-54dfb14dcddad637",
+          "canonical_name": "Axe Compute",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-26870ef1004baa7c",
+        "CL-a8506ee08b5addcb",
+        "CL-21802cf1f33d32cd",
+        "CL-7cc575266f86b93c"
+      ],
+      "source_refs": [
+        "SA-392b9e6867dafc43"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-26870ef1004baa7c",
+            "source_refs": [
+              "SA-392b9e6867dafc43"
             ],
             "provenance": "event_type_rule"
           }
@@ -21465,7 +22352,7 @@
           "entity_id": "EN-1706429cbf67f1c9",
           "canonical_name": "European Union",
           "entity_type": "organization_candidate",
-          "verification_status": "verified"
+          "verification_status": "candidate"
         }
       ],
       "claim_refs": [

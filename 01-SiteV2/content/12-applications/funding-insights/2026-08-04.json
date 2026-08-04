@@ -1,0 +1,1840 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.2",
+    "date": "2026-08-04",
+    "generated_at": "2026-08-04T04:38:35.643Z",
+    "trigger": "verified_funding_events_with_three_month_backfill",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
+    "counts": {
+      "funding_events": 3,
+      "auto_published": 3,
+      "blocked": 0,
+      "pending": 0,
+      "deduplicated": 0
+    },
+    "taxonomy_version": "TAG-V4.1"
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.2",
+      "funding_insight_id": "FI-f3cb05f8156986de",
+      "triggered_by_event_id": "EV-450f624a6a6446ce",
+      "as_of_date": "2026-08-04",
+      "company": {
+        "entity_id": "EN-245f1e177c5169cb",
+        "name": "Hark",
+        "full_name": "Hark",
+        "website": "hark.com",
+        "summary": "Hark是一家开发高级个性化智能的AI实验室，通过垂直整合基础模型、软件系统、原生硬件和新界面，构建主动式、个性化的AI系统，旨在成为人与机器之间的通用接口。",
+        "headquarters": "San Jose, Calif.",
+        "founders": [
+          {
+            "name": "Brett Adcock",
+            "role": "Founder & CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b94f245fa27a161",
+                "quote": "said Brett Adcock, Founder & CEO of Hark",
+                "source_content_hash": "e91739ca23d21469",
+                "quote_hash": "3033ae5a5014e0ea17489052f4d158f6a30a4927c0e58a563d0ede70e50cb513"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "70",
+          "observed_at": "2026-05-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f52632931ff29e95",
+              "quote": "employs around 70 people",
+              "source_content_hash": "f805ba28d3f16a8e",
+              "quote_hash": "8f30a51e73591ecf20848778ffe49164e631dd5da044b98ae0d6bafbdb4d146f"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9b94f245fa27a161",
+            "quote": "Hark, a new AI lab building advanced personalized intelligence",
+            "source_content_hash": "e91739ca23d21469",
+            "quote_hash": "18b407255b6c9d3d11ac38ad5b5442a96c3dd5e738e3e518fc9063439294a4cc"
+          }
+        ]
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "$700M",
+        "total_raised": "$700 million",
+        "announced_at": "2026-05-21",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Parkway Venture Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b94f245fa27a161",
+                "quote": "led by Parkway Venture Capital",
+                "source_content_hash": "e91739ca23d21469",
+                "quote_hash": "12c195e14088aa3165cd3bcfa1c6ff5feb224a8dfec0a6476a45dd7fb5e641ed"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "NVIDIA",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b94f245fa27a161",
+                "quote": "with participation from NVIDIA",
+                "source_content_hash": "e91739ca23d21469",
+                "quote_hash": "84400f63319d5f56052b5b500762bd02f4e5d99e4bc24bf244f51904af4f1ad5"
+              }
+            ],
+            "entity_id": "EN-8d4321d936320802"
+          },
+          {
+            "name": "Align Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b94f245fa27a161",
+                "quote": "Align Ventures",
+                "source_content_hash": "e91739ca23d21469",
+                "quote_hash": "5af88803d707ee6f56c72028fb2eec268741cb7290824f3ee871b4b909e9a5f9"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "AMD Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b94f245fa27a161",
+                "quote": "AMD Ventures",
+                "source_content_hash": "e91739ca23d21469",
+                "quote_hash": "b7be16e935d6d168703bfc071a9bf91c18fea3a4a8b5e2d0e4ea96c18454db03"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "ARK Invest",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b94f245fa27a161",
+                "quote": "ARK Invest",
+                "source_content_hash": "e91739ca23d21469",
+                "quote_hash": "06913ee1095cff235ab418e7e5dcd289488940faa527a20dce51001adc74dcbf"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Brookfield",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b94f245fa27a161",
+                "quote": "Brookfield",
+                "source_content_hash": "e91739ca23d21469",
+                "quote_hash": "48e1f12aa4de57192b035026b33cf2ca4aefc64e84a68b04b7fc279b35c5751b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Greycroft",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b94f245fa27a161",
+                "quote": "Greycroft",
+                "source_content_hash": "e91739ca23d21469",
+                "quote_hash": "269ae42ee2c38d3580cd8f84435f3ddf2dd6883bee9956ab606ee7ef44301e07"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Intel Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b94f245fa27a161",
+                "quote": "Intel Capital",
+                "source_content_hash": "e91739ca23d21469",
+                "quote_hash": "31c11f9aa7b9e216830bfa1aca1ac6bf8d0cdd6fe9082147ea6f01879eeb6cf0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Prime Movers Lab",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b94f245fa27a161",
+                "quote": "Prime Movers Lab",
+                "source_content_hash": "e91739ca23d21469",
+                "quote_hash": "26f2922b4984c4f3830837c3cca7f0d06f5f675a599be6f8414e7f23eeb91438"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Qualcomm Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b94f245fa27a161",
+                "quote": "Qualcomm Ventures",
+                "source_content_hash": "e91739ca23d21469",
+                "quote_hash": "c3308a2da36a6975868dde894ce832cd0477fbdd5c8fd7b8c6ed3f7635039f98"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Salesforce Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b94f245fa27a161",
+                "quote": "Salesforce Ventures",
+                "source_content_hash": "e91739ca23d21469",
+                "quote_hash": "4d03ee9da8903840887371a26b6e932b4c122209036dbff588de63c93d3ae825"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Tamarack Global",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b94f245fa27a161",
+                "quote": "Tamarack Global",
+                "source_content_hash": "e91739ca23d21469",
+                "quote_hash": "84bf894edf57cd784810bd4c12567665e006f598949adf664d9f7273c70fc7e4"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-14a67ead8ff16cd6",
+            "quote": "Hark AI Hardware Startup Secures $700M at $6B Valuation",
+            "source_content_hash": "0cc5c98b80d11b9e",
+            "quote_hash": "7617dd86dc70a6d1634b7e2fb205bb8d0b07e67c7335ddb22ba49873135a37c3"
+          },
+          {
+            "source_id": "FISRC-9b94f245fa27a161",
+            "quote": "Hark Raises $700M Series A at a $6B Valuation",
+            "source_content_hash": "e91739ca23d21469",
+            "quote_hash": "5cc6706e4793ab5622990a1422eee05eae5db40ac3effc2c8df22090cdd089ab"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-450f624a6a6446ce",
+            "round_original": "Series A",
+            "amount": "$700M",
+            "announced_at": "2026-05-21",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-14a67ead8ff16cd6",
+                "quote": "Hark AI Hardware Startup Secures $700M at $6B Valuation",
+                "source_content_hash": "0cc5c98b80d11b9e",
+                "quote_hash": "7617dd86dc70a6d1634b7e2fb205bb8d0b07e67c7335ddb22ba49873135a37c3"
+              },
+              {
+                "source_id": "FISRC-9b94f245fa27a161",
+                "quote": "Hark Raises $700M Series A at a $6B Valuation",
+                "source_content_hash": "e91739ca23d21469",
+                "quote_hash": "5cc6706e4793ab5622990a1422eee05eae5db40ac3effc2c8df22090cdd089ab"
+              }
+            ]
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Hark Personal AI Platform",
+          "description": "一个由基础模型、软件系统和原生硬件垂直整合而成的个人智能平台，旨在通过语音、视觉和记忆与用户进行自然交互，提供主动式、高度个性化的AI体验。",
+          "target_customers": "普通消费者",
+          "features": [
+            "多模态交互（语音、视觉）",
+            "持久化记忆与个性化",
+            "主动预测用户需求",
+            "降低认知负荷"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b94f245fa27a161",
+              "quote": "building foundation models, software systems, native hardware, and new interfaces together from the start",
+              "source_content_hash": "e91739ca23d21469",
+              "quote_hash": "ce6f7d681182995b07fa3eb55b0f914430a877e34c1e6f3fdeea9a202ae68bee"
+            },
+            {
+              "source_id": "FISRC-9b94f245fa27a161",
+              "quote": "proactive, personalized AI that interacts with the world through speech, vision, and memory",
+              "source_content_hash": "e91739ca23d21469",
+              "quote_hash": "a5d1cf1545647e23ab10a06db196e9e241840c65460899420c719f12f827e07b"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Humane",
+          "product": "AI Pin",
+          "scenario": "通过可穿戴AI设备提供无屏幕交互体验",
+          "target_customer": "普通消费者",
+          "funding_summary": "融资2.3亿美元",
+          "core_difference": "Humane的产品AI Pin已上市但被市场拒绝，而Hark的产品仍处于保密阶段，尚未发货。Hark的创始人拥有多次成功交付硬件产品的记录，这是Humane团队所不具备的。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d5e852c31e6bf66f",
+              "quote": "Humane raised $230 million. Rabbit's first device got reviewed badly and the company hasn't recovered.",
+              "source_content_hash": "5e726447eac39365",
+              "quote_hash": "3c572bd017c3646bd254b78a5866b1f43efc6575203e2685ce99c298a13aea89"
+            },
+            {
+              "source_id": "FISRC-d5e852c31e6bf66f",
+              "quote": "Adcock's asset here is not just fundraising ability — it's demonstrated willingness to build physical products.",
+              "source_content_hash": "5e726447eac39365",
+              "quote_hash": "c91423bf3da762d0286bcda2aefeec30f80d93dc496ee180110de3c0c9f74678"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Rabbit",
+          "product": "R1",
+          "scenario": "通过专用AI硬件设备执行用户指令",
+          "target_customer": "普通消费者",
+          "funding_summary": "",
+          "core_difference": "Rabbit的R1设备发布后评价不佳且公司未能恢复，而Hark尚未发布任何硬件产品。Hark采取从模型到硬件的全栈垂直整合策略，与Rabbit的单一设备策略不同。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d5e852c31e6bf66f",
+              "quote": "Rabbit's first device got reviewed badly and the company hasn't recovered.",
+              "source_content_hash": "5e726447eac39365",
+              "quote_hash": "14e83d3835502dec0872525b21d0324c7d23d87c43d7c5be61b27da502397d9e"
+            },
+            {
+              "source_id": "FISRC-9b94f245fa27a161",
+              "quote": "Hark is building foundation models, software systems, native hardware, and new interfaces together from the start",
+              "source_content_hash": "e91739ca23d21469",
+              "quote_hash": "ec01416be281f524ba83d170b0ee27e26aa560bb53907a6cb2501ee320db01d1"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "估值",
+          "value": "$6 billion",
+          "observed_at": "2026-05-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b94f245fa27a161",
+              "quote": "$6 billion post-money valuation",
+              "source_content_hash": "e91739ca23d21469",
+              "quote_hash": "c86a26ad4b61015c801009caba97adc908fddea357c623fa8855ed3774c9d5a7"
+            }
+          ]
+        },
+        {
+          "label": "员工人数",
+          "value": "70",
+          "observed_at": "2026-05-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f52632931ff29e95",
+              "quote": "employs around 70 people",
+              "source_content_hash": "f805ba28d3f16a8e",
+              "quote_hash": "8f30a51e73591ecf20848778ffe49164e631dd5da044b98ae0d6bafbdb4d146f"
+            }
+          ]
+        },
+        {
+          "label": "创始人自有资金投入",
+          "value": "$100 million",
+          "observed_at": "2025-12-31",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f52632931ff29e95",
+              "quote": "Adcock himself seeded Hark with $100 million of his own money in late 2025",
+              "source_content_hash": "f805ba28d3f16a8e",
+              "quote_hash": "6cc069614385298de4966e4eef481c52c76a29797f71754ccda07e99981523de"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Brett Adcock",
+          "quote": "We're building the AI that everyone deserves but no one has built yet — one that actually knows you, speaks your language, is highly personalized, and lives on hardware made for you.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b94f245fa27a161",
+              "quote": "We're building the AI that everyone deserves but no one has built yet — one that actually knows you, speaks your language, is highly personalized, and lives on hardware made for you",
+              "source_content_hash": "e91739ca23d21469",
+              "quote_hash": "7174183a7f7b96f86455f6995067e0d8830b8405ffaf3c0eef8cb008a16e67f2"
+            }
+          ]
+        },
+        {
+          "speaker": "Abidur Chowdhury",
+          "quote": "I haven't seen anything that feels like something that will really help the normal person.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f52632931ff29e95",
+              "quote": "I haven't seen anything that feels like something that will really help the normal person.",
+              "source_content_hash": "f805ba28d3f16a8e",
+              "quote_hash": "a9b7f6112b1edf263d8103a2db2ff74d3303c245fd692e2af9540d9e28773bc3"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是Brett Adcock连续成功交付硬件产品的创始人记录，以及一个由全美四大芯片巨头（NVIDIA、AMD、Intel、Qualcomm）同时参投所暗示的“个人AI设备成为下一代计算平台”的共识。本轮6B估值完全依赖于创始人的历史信誉和战略投资者对平台级机会的FOMO，而非任何已公开的产品或商业验证。",
+        "validated_signals": [
+          "创始人Brett Adcock拥有从Archer Aviation和Figure AI等硬件公司成功交付产品的记录",
+          "吸引了NVIDIA、AMD、Intel、Qualcomm四家芯片巨头的战略投资部门同时参投",
+          "招募了前苹果iPhone设计负责人Abidur Chowdhury领导硬件设计"
+        ],
+        "risks": [
+          "产品完全处于保密阶段，无任何公开演示或商业验证，6B估值缺乏基本面支撑",
+          "AI硬件赛道已有Humane、Rabbit等失败先例，消费者对额外携带专用AI设备的意愿未被证明"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_device",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "consumer"
+        ],
+        "sector": "AI硬件与个性化智能",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Brett Adcock连续成功交付硬件产品的创始人记录，以及一个由全美四大芯片巨头（NVIDIA、AMD、Intel、Qualcomm）同时参投所暗示的“个人AI设备成为下一代计算平台”的共识。本轮6B估值完全依赖于创始人的历史信誉和战略投资者对平台级机会的FOMO，而非任何已公开的产品或商业验证。",
+          "evidence_signals": [
+            "创始人Brett Adcock拥有从Archer Aviation和Figure AI等硬件公司成功交付产品的记录",
+            "吸引了NVIDIA、AMD、Intel、Qualcomm四家芯片巨头的战略投资部门同时参投",
+            "招募了前苹果iPhone设计负责人Abidur Chowdhury领导硬件设计"
+          ],
+          "risks": [
+            "产品完全处于保密阶段，无任何公开演示或商业验证，6B估值缺乏基本面支撑",
+            "AI硬件赛道已有Humane、Rabbit等失败先例，消费者对额外携带专用AI设备的意愿未被证明"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Hark Personal AI Platform",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Brett Adcock",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Parkway Venture Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "NVIDIA",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Align Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "AMD Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "ARK Invest",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Brookfield",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Greycroft",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Intel Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Prime Movers Lab",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Qualcomm Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Salesforce Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Tamarack Global",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Humane",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Rabbit",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-44c9a50b99c76a70",
+          "date": "2026-06-14",
+          "title": "Hark为其神秘的“通用”AI界面筹集7亿美元A轮融资",
+          "amount": "$700M",
+          "source_refs": [
+            "SA-6665ce59523b3d93"
+          ]
+        },
+        {
+          "event_id": "EV-450f624a6a6446ce",
+          "date": "2026-05-21",
+          "title": "Hark AI硬件融资：以60亿美元估值筹集7亿美元",
+          "amount": "$700M",
+          "source_refs": [
+            "SA-1ea0d35dbb66eddc"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-14a67ead8ff16cd6",
+          "source_url": "https://aiagentsdirectory.com/blog/hark-ai-hardware-startup-secures-dollar700m-at-dollar6b-valuation",
+          "title": "Hark AI硬件融资：以60亿美元估值筹集7亿美元",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-04T00:21:20.141Z",
+          "content_hash": "0cc5c98b80d11b9e",
+          "source_artifact_id": "SA-1ea0d35dbb66eddc",
+          "raw_id": "RAW-7281be0d1627b70b"
+        },
+        {
+          "source_id": "FISRC-9b94f245fa27a161",
+          "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
+          "title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
+          "publisher": "intelcapital.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-04T04:37:29.226Z",
+          "content_hash": "e91739ca23d21469",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-f52632931ff29e95",
+          "source_url": "https://www.briefs.co/news/hark-brett-adcock-700m-series-a",
+          "title": "Hark Raises $700M Series A At $6 Billion Valuation",
+          "publisher": "briefs.co",
+          "source_class": "independent",
+          "capture_method": "tavily_captured_content",
+          "captured_at": "2026-08-04T04:37:33.178Z",
+          "content_hash": "f805ba28d3f16a8e",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-d5e852c31e6bf66f",
+          "source_url": "https://www.everyoneneedsasamwise.com/articles/hark-700m-series-a-adcock-ai-hardware",
+          "title": "Hark took $700 million into stealth. That's either irrational or the only sane hardware play left. — EveryoneNeedsASamwise",
+          "publisher": "everyoneneedsasamwise.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-04T04:37:36.038Z",
+          "content_hash": "5e726447eac39365",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.6",
+        "generated_at": "2026-08-04T04:38:35.621Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-450f624a6a6446ce",
+          "confidence": 0.8,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-04T04:38:35.621Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Hark Personal AI Platform"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Brett Adcock"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-450f624a6a6446ce"
+      ],
+      "aggregation": {
+        "key": "EN-245f1e177c5169cb|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.2",
+      "funding_insight_id": "FI-4e4b1bdd476324f6",
+      "triggered_by_event_id": "EV-2301cd1470155075",
+      "as_of_date": "2026-08-04",
+      "company": {
+        "entity_id": "EN-9f80a5e14017ccc0",
+        "name": "Intelligence",
+        "full_name": "Intelligence",
+        "website": "https://intelligence.ai/",
+        "summary": "Intelligence 是 DesignArena 的开发商，通过大规模人类反馈排名，为 AI 模型提供“品味”评估数据，帮助前沿实验室改进其媒体生成模型的设计能力。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "Grace Li",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3fa34b4b7b9a1a77",
+                "quote": "As co-founder Grace Li tells it, her company started a few weeks before graduation in 2025, with a handful of college friends trying to make their AI game engine work.",
+                "source_content_hash": "0633a814981ef4fd",
+                "quote_hash": "d7ba4dcfbb49d6b588a04c1aace2639dbb0eeab207881eba52831a0ff7db95cf"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "10",
+          "observed_at": "2026-08-03",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-55bde8e4f8373028",
+              "quote": "In 6 months, as a team of 10, we scaled from $5M to $60M ARR and 5.5M users across 190+ countries.",
+              "source_content_hash": "c2573ec361381749",
+              "quote_hash": "4ca40cce4e157ad7f24ad9350cba33466824b3cb334eb8555dbc73604f051b5d"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-3fa34b4b7b9a1a77",
+            "quote": "the company behind Design Arena — dubbed Intelligence — announced a $7.9 million seed round",
+            "source_content_hash": "0633a814981ef4fd",
+            "quote_hash": "1da8d2ec69196f1cb168bbddf4abf8267b56358ee15673757dd9563678db8a44"
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$7.9 million",
+        "total_raised": "$7.9 million",
+        "announced_at": "2026-08-03",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Index Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3fa34b4b7b9a1a77",
+                "quote": "a $7.9 million seed round led by Index Ventures",
+                "source_content_hash": "0633a814981ef4fd",
+                "quote_hash": "fb055bc5d3b5112cb1e0e5a4e5884fd2f541c3f8f866f7827731a035e2ce689c"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Conviction",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3fa34b4b7b9a1a77",
+                "quote": "with participation from Conviction (Sarah Guo and Mike Vernal), A*, Valkyrie, and others",
+                "source_content_hash": "0633a814981ef4fd",
+                "quote_hash": "20be01adf24a3391c5fa5e6bebfa4ca95802560254df872449efba35e111922b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "A*",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3fa34b4b7b9a1a77",
+                "quote": "with participation from Conviction (Sarah Guo and Mike Vernal), A*, Valkyrie, and others",
+                "source_content_hash": "0633a814981ef4fd",
+                "quote_hash": "20be01adf24a3391c5fa5e6bebfa4ca95802560254df872449efba35e111922b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Valkyrie",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3fa34b4b7b9a1a77",
+                "quote": "with participation from Conviction (Sarah Guo and Mike Vernal), A*, Valkyrie, and others",
+                "source_content_hash": "0633a814981ef4fd",
+                "quote_hash": "20be01adf24a3391c5fa5e6bebfa4ca95802560254df872449efba35e111922b"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-3fa34b4b7b9a1a77",
+            "quote": "Design Arena creators raise $7.9 million to bring taste to AI models",
+            "source_content_hash": "0633a814981ef4fd",
+            "quote_hash": "e03aed4c1f0e890cf60959beca86f280c4ca5074e18736f22eb43d01f95de2fb"
+          },
+          {
+            "source_id": "FISRC-3fa34b4b7b9a1a77",
+            "quote": "On Monday, the company behind Design Arena — dubbed Intelligence — announced a $7.9 million seed round led by Index Ventures with participation from Conviction (Sarah Guo and Mike Vernal), A*, Valkyrie, and others.",
+            "source_content_hash": "0633a814981ef4fd",
+            "quote_hash": "c625a5e53edce02aaa5749acd20f5259a70b3c0ab01900109925fef8d8d20891"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-2301cd1470155075",
+            "round_original": "种子轮",
+            "amount": "$7.9 million",
+            "announced_at": "2026-08-03",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3fa34b4b7b9a1a77",
+                "quote": "Design Arena creators raise $7.9 million to bring taste to AI models",
+                "source_content_hash": "0633a814981ef4fd",
+                "quote_hash": "e03aed4c1f0e890cf60959beca86f280c4ca5074e18736f22eb43d01f95de2fb"
+              },
+              {
+                "source_id": "FISRC-3fa34b4b7b9a1a77",
+                "quote": "On Monday, the company behind Design Arena — dubbed Intelligence — announced a $7.9 million seed round led by Index Ventures with participation from Conviction (Sarah Guo and Mike Vernal), A*, Valkyrie, and others.",
+                "source_content_hash": "0633a814981ef4fd",
+                "quote_hash": "c625a5e53edce02aaa5749acd20f5259a70b3c0ab01900109925fef8d8d20891"
+              }
+            ]
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "DesignArena",
+          "description": "一个通过人类成对比较来评估和排名 AI 模型设计输出的平台，为前沿实验室提供可扩展的人类反馈数据，同时为普通用户提供类似模型路由器的服务。",
+          "target_customers": "前沿 AI 实验室（企业端）和寻求最佳 AI 设计输出的普通用户",
+          "features": [
+            "ChatGPT 式提示窗口，支持网站、图像等多种视觉格式的下拉选择",
+            "通过一系列“A vs. B”选择对输出进行排名",
+            "匿名化模型身份以防止品牌偏见",
+            "基于 Bradley-Terry 模型的排行榜计算",
+            "追踪不同大洲和时间推移的品味变化"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-11cabb7f57eb2c6b",
+              "quote": "Model identities remain hidden throughout evaluation to prevent brand bias.",
+              "source_content_hash": "cfca4bce6c1c7c77",
+              "quote_hash": "d4c462686f588277e1975683910c8641faafbf36b4cf1ffbae809ff5670050c9"
+            },
+            {
+              "source_id": "FISRC-11cabb7f57eb2c6b",
+              "quote": "Rankings are calculated using the Bradley-Terry model, a statistical framework designed for pairwise comparison data.",
+              "source_content_hash": "cfca4bce6c1c7c77",
+              "quote_hash": "91f81c3dcfdaa3d110dd7a582fe18de52ae4adf1d378328a1eb8749075ea2f8b"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "未披露的前沿实验室",
+          "industry": "",
+          "use_case": "利用 DesignArena 的人类反馈数据改进其媒体生成模型的设计能力",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3fa34b4b7b9a1a77",
+              "quote": "About a week later, we closed our first major deal with a frontier lab, and the rest is kind of history.",
+              "source_content_hash": "0633a814981ef4fd",
+              "quote_hash": "163abdc3c5d76ef5af3d1d13b32efefd2dedd766647eb0e7ffa3c4f66ed4da7d"
+            },
+            {
+              "source_id": "FISRC-3fa34b4b7b9a1a77",
+              "quote": "the real value of the platform comes from the enterprise side, where participating models can treat it as a source of endless instant feedback for their media-generating models.",
+              "source_content_hash": "0633a814981ef4fd",
+              "quote_hash": "68b51f5bf79fe7fffec5d9f478d7d0f9e183409408bd35e4aabb13b7b3939353"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "用户数",
+          "value": "5.3 million",
+          "observed_at": "2026-08-03",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3fa34b4b7b9a1a77",
+              "quote": "an AI tool now used by 5.3 million people around the world",
+              "source_content_hash": "0633a814981ef4fd",
+              "quote_hash": "3509dd9fe1e57e033c7c1af35fea40df6b8e27401272b6ff80676dea8b9fb3e3"
+            }
+          ]
+        },
+        {
+          "label": "覆盖国家数",
+          "value": "190+",
+          "observed_at": "2026-08-03",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-55bde8e4f8373028",
+              "quote": "5.5M users across 190+ countries",
+              "source_content_hash": "c2573ec361381749",
+              "quote_hash": "e7f4ad14261e6cd2d535454531f84db96b43878e683797087ac99a54edf6942d"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Grace Li",
+          "quote": "It was the missing bottleneck for a lot of these models to make improvements in the design space.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3fa34b4b7b9a1a77",
+              "quote": "It was the missing bottleneck for a lot of these models to make improvements in the design space",
+              "source_content_hash": "0633a814981ef4fd",
+              "quote_hash": "f7cf236a70c16e9fb5efd041b1a958d9a2d0e68c51abb51a6c5f9ff93b37e307"
+            }
+          ]
+        },
+        {
+          "speaker": "Grace Li",
+          "quote": "they just want the best output they can get",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3fa34b4b7b9a1a77",
+              "quote": "as Li puts it, they just want the best output they can get",
+              "source_content_hash": "0633a814981ef4fd",
+              "quote_hash": "10cd75fc5ac7f6faa4b357a1f8a3c7d201a661663c1a7ff548bbf8bb048a283c"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是：在 AI 模型能力趋同的背景下，规模化的人类反馈数据正成为模型改进的关键瓶颈，而 Intelligence 通过 DesignArena 构建了一个双边平台——一端聚合 530 万用户产生真实的偏好数据，另一端向前沿实验室出售这些数据作为训练信号。其 6000 万美元 ARR 和 530 万用户验证了市场对这一数据管道的付费意愿。但判断的证据边界仅限于已披露的 ARR 和用户规模，缺乏毛利率、客户留存率或合同结构等数据，无法评估其单位经济模型的可持续性。",
+        "validated_signals": [
+          "ARR 达到 6000 万美元，证明前沿实验室愿意为人类评估数据付费",
+          "拥有 530 万用户，覆盖 190 多个国家，形成规模化数据飞轮",
+          "已与至少一家前沿实验室达成重大交易"
+        ],
+        "risks": [
+          "众包人类反馈市场存在失败先例（Yupp 在筹集 3300 万美元后关闭），商业模式可持续性未经验证"
+        ],
+        "related_direction_id": "DIR-20260725-01",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "end_user_application",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "observability_evaluation",
+        "market_application_id": "llm_benchmarking_routing",
+        "use_case_ids": [
+          "research_discovery"
+        ],
+        "industry_ids": [
+          "professional_services"
+        ],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "AI 评估与模型路由",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：在 AI 模型能力趋同的背景下，规模化的人类反馈数据正成为模型改进的关键瓶颈，而 Intelligence 通过 DesignArena 构建了一个双边平台——一端聚合 530 万用户产生真实的偏好数据，另一端向前沿实验室出售这些数据作为训练信号。其 6000 万美元 ARR 和 530 万用户验证了市场对这一数据管道的付费意愿。但判断的证据边界仅限于已披露的 ARR 和用户规模，缺乏毛利率、客户留存率或合同结构等数据，无法评估其单位经济模型的可持续性。",
+          "evidence_signals": [
+            "ARR 达到 6000 万美元，证明前沿实验室愿意为人类评估数据付费",
+            "拥有 530 万用户，覆盖 190 多个国家，形成规模化数据飞轮",
+            "已与至少一家前沿实验室达成重大交易"
+          ],
+          "risks": [
+            "众包人类反馈市场存在失败先例（Yupp 在筹集 3300 万美元后关闭），商业模式可持续性未经验证"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "DesignArena",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Grace Li",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Index Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Conviction",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "A*",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Valkyrie",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "未披露的前沿实验室",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-2301cd1470155075",
+          "date": "2026-08-03",
+          "title": "DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"",
+          "amount": "$7.9 million",
+          "source_refs": [
+            "SA-e725de9fcf5a559f"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-3fa34b4b7b9a1a77",
+          "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
+          "title": "DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"",
+          "publisher": "TechCrunch：AI（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-04T00:20:40.007Z",
+          "content_hash": "0633a814981ef4fd",
+          "source_artifact_id": "SA-e725de9fcf5a559f",
+          "raw_id": "RAW-03c0552fea21fcfb"
+        },
+        {
+          "source_id": "FISRC-11cabb7f57eb2c6b",
+          "source_url": "https://intelligence.ai/about",
+          "title": "About | Intelligence",
+          "publisher": "intelligence.ai",
+          "source_class": "official_candidate",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-08-04T04:32:05.289Z",
+          "content_hash": "cfca4bce6c1c7c77",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-55bde8e4f8373028",
+          "source_url": "https://x.com/grx_xce/status/2084361692792934488",
+          "title": "Grace Li on X: \"Today, we're introducing @Intelligence_ai. In 6 months, as a team of 10, we scaled from $5M to $60M ARR and 5.5M users across 190+ countries. We raised a $7.9M seed, led by @IndexVentures with participation from @conviction, @A_StarVC, and @combinator to build DesignArena, a universal interface for accessing and evaluating the world's AI capabilities. Most evaluations try to simulate the real-world. We believe the real-world is the ultimate verifier. People come to @DesignArena with a request. Models compete to fulfill the request, and users determine what works best for them. Their live user behavior evaluates the models, improves how work is routed, and helps people access the right intelligence. We've helped the world's leading frontier labs break the news on their SOTA capabilities. What's the limit? Join us and find out.\" / X",
+          "publisher": "x.com",
+          "source_class": "independent",
+          "capture_method": "tavily_captured_content",
+          "captured_at": "2026-08-04T04:32:18.887Z",
+          "content_hash": "c2573ec361381749",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.5",
+        "generated_at": "2026-08-04T04:32:53.414Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-2301cd1470155075",
+          "confidence": 0.9,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-04T04:32:53.414Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "DesignArena"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Grace Li"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-2301cd1470155075"
+      ],
+      "aggregation": {
+        "key": "EN-9f80a5e14017ccc0|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.2",
+      "funding_insight_id": "FI-79817e9d1f7616ac",
+      "triggered_by_event_id": "EV-f315914e0fedddfa",
+      "as_of_date": "2026-08-04",
+      "company": {
+        "entity_id": "EN-c0fa1ef864788c45",
+        "name": "June",
+        "full_name": "June",
+        "website": "https://june.ai/",
+        "summary": "June 是一家由前 Salesforce 高管创立的公司，其平台能够扫描企业现有系统以理解业务流程、发现瓶颈，并构建由 AI 智能体驱动的优化流程来替代它们，旨在解决大型企业部署 AI 工具时面临的复杂性问题。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "Efrat Rapoport",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-09cf17eb199a2ae7",
+                "quote": "Efrat Rapoport, a former Salesforce executive whose new company, June, emerged from stealth Monday morning.",
+                "source_content_hash": "781e490dd6b336bf",
+                "quote_hash": "cdeabea0d43ac5cc4b2d88500459361f0712482313eb211546ff502e323a08e6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Ohad Hen",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-09cf17eb199a2ae7",
+                "quote": "Rapoport and her three co-founders — Ohad Hen, Barak Goldstein, and Idan Tsitiat — have a different idea about how to bring AI into broader use.",
+                "source_content_hash": "781e490dd6b336bf",
+                "quote_hash": "62f518658d722911e8bb4381df4f5c3b8fbf622dfb6926ffe978eed861d541f1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Barak Goldstein",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-09cf17eb199a2ae7",
+                "quote": "Rapoport and her three co-founders — Ohad Hen, Barak Goldstein, and Idan Tsitiat — have a different idea about how to bring AI into broader use.",
+                "source_content_hash": "781e490dd6b336bf",
+                "quote_hash": "62f518658d722911e8bb4381df4f5c3b8fbf622dfb6926ffe978eed861d541f1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Idan Tsitiat",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-09cf17eb199a2ae7",
+                "quote": "Rapoport and her three co-founders — Ohad Hen, Barak Goldstein, and Idan Tsitiat — have a different idea about how to bring AI into broader use.",
+                "source_content_hash": "781e490dd6b336bf",
+                "quote_hash": "62f518658d722911e8bb4381df4f5c3b8fbf622dfb6926ffe978eed861d541f1"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-02644db411ac4b04",
+            "quote": "AI-Driven Enterprise System Deployment | June June is officially Jumping! Read more PRODUCT UNDERSTAND IMPLEMENT OPTIMIZE COMPANY Get A Demo Get A Demo End the drought Deliver any enterprise system. Grasp any AI opportunity. June turns the traditionally complex implementation of enter",
+            "source_content_hash": "d6418c739ad57584",
+            "quote_hash": "a388b2e4d845062df08d8a795ba2dde93e4602d3a458776f691444ae8aaea6f0"
+          }
+        ]
+      },
+      "financing": {
+        "round": "预种子轮",
+        "amount": "$20 million",
+        "total_raised": "$20 million",
+        "announced_at": "2026-08-03",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Michael Dell",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-09cf17eb199a2ae7",
+                "quote": "with additional backing from tech luminaries like Michael Dell, Aaron Levie, and George Kurtz.",
+                "source_content_hash": "781e490dd6b336bf",
+                "quote_hash": "2da1801b6e6d65189c50cbae4b364a1131f6f08f7df143614e7c30aa55f3e4d1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Aaron Levie",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-09cf17eb199a2ae7",
+                "quote": "with additional backing from tech luminaries like Michael Dell, Aaron Levie, and George Kurtz.",
+                "source_content_hash": "781e490dd6b336bf",
+                "quote_hash": "2da1801b6e6d65189c50cbae4b364a1131f6f08f7df143614e7c30aa55f3e4d1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "George Kurtz",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-09cf17eb199a2ae7",
+                "quote": "with additional backing from tech luminaries like Michael Dell, Aaron Levie, and George Kurtz.",
+                "source_content_hash": "781e490dd6b336bf",
+                "quote_hash": "2da1801b6e6d65189c50cbae4b364a1131f6f08f7df143614e7c30aa55f3e4d1"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-09cf17eb199a2ae7",
+            "quote": "the company raised $20 million in pre-seed funding led by Marc Benioff’s Time Ventures, with additional backing from tech luminaries like Michael Dell, Aaron Levie, and George Kurtz.",
+            "source_content_hash": "781e490dd6b336bf",
+            "quote_hash": "61da96a356ae26ea45a144b4817189091fcc7c90a08442ecc0f88b1bb0287ef1"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-f315914e0fedddfa",
+            "round_original": "预种子轮",
+            "amount": "$20 million",
+            "announced_at": "2026-08-03",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-09cf17eb199a2ae7",
+                "quote": "the company raised $20 million in pre-seed funding led by Marc Benioff’s Time Ventures, with additional backing from tech luminaries like Michael Dell, Aaron Levie, and George Kurtz.",
+                "source_content_hash": "781e490dd6b336bf",
+                "quote_hash": "61da96a356ae26ea45a144b4817189091fcc7c90a08442ecc0f88b1bb0287ef1"
+              }
+            ]
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "June",
+          "description": "June 是一个 AI 实施与部署平台，能够扫描企业现有系统以理解业务流程、发现瓶颈，并自动构建由 AI 智能体驱动的优化流程来替代它们。它提供从发现到生产的全流程自动化，包括自动生成分步实施路线图、沙盒测试和通过原生工具执行变更。",
+          "target_customers": "大型企业",
+          "features": [
+            "扫描企业现有系统以理解业务流程并发现瓶颈",
+            "自动构建由 AI 智能体驱动的优化流程",
+            "自动生成分步实施路线图",
+            "沙盒测试与通过原生工具执行变更",
+            "将埋藏的配置转化为独立于平台的纯语言业务规则"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-02644db411ac4b04",
+              "quote": "From discovery to production, every change is reviewed, sandbox-tested, and executed through native tools - fully auditable at every step.",
+              "source_content_hash": "d6418c739ad57584",
+              "quote_hash": "22fa3e6155dcc833040c3474c406468bc14855dce9ced8ec5a8490ded80829cb"
+            },
+            {
+              "source_id": "FISRC-02644db411ac4b04",
+              "quote": "June turns buried configuration into plain-language business rules, independent of any platform, so no vendor holds your logic.",
+              "source_content_hash": "d6418c739ad57584",
+              "quote_hash": "9b888175eca66a74bb2e5d4c3b04f5f8abdb037307c0a569a843e24ed1adea9c"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "CMG",
+          "industry": "financial_services",
+          "use_case": "将 AI 智能体集成到 Salesforce 中，以安全地部署智能体并实现此前承诺的 100 个智能体运行目标。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-09cf17eb199a2ae7",
+              "quote": "June changed that, he says, giving his team a clear view of where to deploy agents and letting them do so safely, even before the official kickoff call between the two companies.",
+              "source_content_hash": "781e490dd6b336bf",
+              "quote_hash": "c5722d68eeff3e1413192243353d06d7f0776a618aad8d4cf2f52cdd7f7425db"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是：大型企业部署 AI 智能体时，真正的瓶颈并非模型能力，而是与遗留系统、碎片化数据和复杂工作流的集成。June 的创始团队在 Salesforce 内部亲历了客户在 AI 部署上的挣扎，其产品通过自动扫描现有系统、发现瓶颈并生成可执行的优化路线图，试图将 AI 实施从依赖昂贵的前方部署工程师（FDE）转变为自动化流程。本轮融资的验证信号包括：客户 CMG 在正式启动电话会议前就已使用 June 安全部署智能体，且客户明确表示拒绝需要 FDE 的产品。但公司拒绝披露估值，且产品仍处于早期阶段，尚未披露规模化收入或客户数量。",
+        "validated_signals": [
+          "客户 CMG 在正式启动电话会议前已使用 June 安全部署智能体，并解决了此前数周无法突破的 Salesforce 集成障碍。",
+          "客户 CMG 的首席战略官明确表示拒绝需要前方部署工程师（FDE）的产品，June 通过了这一筛选标准。",
+          "创始团队此前创办的 Bonobo AI 被 Salesforce 收购，团队在 Salesforce 内部工作数年后再次创业，对 AI 部署痛点有直接经验。"
+        ],
+        "risks": [
+          "产品仍处于 pre-seed 阶段，仅披露了一个具名客户案例，尚未验证跨行业、跨平台的规模化部署能力。",
+          "公司拒绝披露估值，且未提供收入、客户数量等关键商业指标，市场对其实际商业化进展缺乏透明度。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "productivity_enterprise_workflows",
+          "software_development"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user",
+          "developer"
+        ],
+        "sector": "企业 AI 部署与系统集成自动化",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：大型企业部署 AI 智能体时，真正的瓶颈并非模型能力，而是与遗留系统、碎片化数据和复杂工作流的集成。June 的创始团队在 Salesforce 内部亲历了客户在 AI 部署上的挣扎，其产品通过自动扫描现有系统、发现瓶颈并生成可执行的优化路线图，试图将 AI 实施从依赖昂贵的前方部署工程师（FDE）转变为自动化流程。本轮融资的验证信号包括：客户 CMG 在正式启动电话会议前就已使用 June 安全部署智能体，且客户明确表示拒绝需要 FDE 的产品。但公司拒绝披露估值，且产品仍处于早期阶段，尚未披露规模化收入或客户数量。",
+          "evidence_signals": [
+            "客户 CMG 在正式启动电话会议前已使用 June 安全部署智能体，并解决了此前数周无法突破的 Salesforce 集成障碍。",
+            "客户 CMG 的首席战略官明确表示拒绝需要前方部署工程师（FDE）的产品，June 通过了这一筛选标准。",
+            "创始团队此前创办的 Bonobo AI 被 Salesforce 收购，团队在 Salesforce 内部工作数年后再次创业，对 AI 部署痛点有直接经验。"
+          ],
+          "risks": [
+            "产品仍处于 pre-seed 阶段，仅披露了一个具名客户案例，尚未验证跨行业、跨平台的规模化部署能力。",
+            "公司拒绝披露估值，且未提供收入、客户数量等关键商业指标，市场对其实际商业化进展缺乏透明度。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "June",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Efrat Rapoport",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Ohad Hen",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Barak Goldstein",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Idan Tsitiat",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Michael Dell",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Aaron Levie",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "George Kurtz",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "CMG",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-f315914e0fedddfa",
+          "date": "2026-08-03",
+          "title": "一家由Marc Benioff支持的初创公司认为AI能解决AI部署问题",
+          "amount": "$20 million",
+          "source_refs": [
+            "SA-44f21ba35ede2f8c"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-09cf17eb199a2ae7",
+          "source_url": "https://techcrunch.com/2026/08/03/a-marc-benioff-backed-startup-thinks-ai-can-solve-the-ai-deployment-problem/",
+          "title": "一家由Marc Benioff支持的初创公司认为AI能解决AI部署问题",
+          "publisher": "TechCrunch AI",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-04T00:21:28.573Z",
+          "content_hash": "781e490dd6b336bf",
+          "source_artifact_id": "SA-44f21ba35ede2f8c",
+          "raw_id": "RAW-c4e3a362501001c4"
+        },
+        {
+          "source_id": "FISRC-02644db411ac4b04",
+          "source_url": "https://june.ai/",
+          "title": "AI-Driven Enterprise System Deployment | June",
+          "publisher": "june.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-04T04:24:38.242Z",
+          "content_hash": "d6418c739ad57584",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.5",
+        "generated_at": "2026-08-04T04:25:35.548Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-f315914e0fedddfa",
+          "confidence": 0.85,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-04T04:25:35.548Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "June"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 4,
+          "unresolved_names": [
+            "Barak Goldstein",
+            "Efrat Rapoport",
+            "Idan Tsitiat",
+            "Ohad Hen"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-f315914e0fedddfa"
+      ],
+      "aggregation": {
+        "key": "EN-c0fa1ef864788c45|pre_seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-2301cd1470155075",
+      "company_name": "Intelligence",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"\" funding company investors product",
+        "\"Intelligence\" \"$7.9 million\" funding investors round",
+        "\"Design Arena\" \"$7.9 million\" funding investors company",
+        "\"Intelligence\" \"Design Arena\" company founders product",
+        "\"Intelligence\" product customers case study",
+        "\"Intelligence\" \"DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"\" competitors product use case",
+        "\"Intelligence\" \"$7.9 million\" investor quote why invested",
+        "\"Intelligence\" \"$7.9 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Intelligence\" \"$7.9 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Intelligence\" \"$7.9 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Design Arena\" \"$7.9 million\" funding investors company",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Design Arena\" \"$7.9 million\" funding investors company",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Intelligence\" \"Design Arena\" company founders product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Intelligence\" \"Design Arena\" company founders product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Intelligence\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Intelligence\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Intelligence\" \"DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Intelligence\" \"DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Intelligence\" \"$7.9 million\" investor quote why invested",
+          "status": "failed",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Intelligence\" \"$7.9 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Intelligence\" \"$7.9 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Intelligence\" \"$7.9 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-08-04T04:32:53.437Z"
+    },
+    {
+      "event_id": "EV-450f624a6a6446ce",
+      "company_name": "Hark",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Hark AI Hardware Funding: $700M Raised at $6B Valuation\" funding company investors product",
+        "\"Hark\" \"$700M\" funding investors round",
+        "\"Hark\" product customers case study",
+        "\"Hark\" \"Hark AI Hardware Funding: $700M Raised at $6B Valuation\" competitors product use case",
+        "\"Hark\" \"$700M\" investor quote why invested",
+        "\"Hark\" \"$700M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Hark AI Hardware Funding: $700M Raised at $6B Valuation\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hark AI Hardware Funding: $700M Raised at $6B Valuation\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Hark\" \"$700M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hark\" \"$700M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Hark\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hark\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Hark\" \"Hark AI Hardware Funding: $700M Raised at $6B Valuation\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hark\" \"Hark AI Hardware Funding: $700M Raised at $6B Valuation\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Hark\" \"$700M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hark\" \"$700M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Hark\" \"$700M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hark\" \"$700M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-08-04T04:38:35.643Z"
+    },
+    {
+      "event_id": "EV-f315914e0fedddfa",
+      "company_name": "June",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"A Marc Benioff-backed startup thinks AI can solve the AI deployment problem\" funding company investors product",
+        "\"June\" \"$20 million\" funding investors round",
+        "\"June\" product customers case study",
+        "\"June\" \"A Marc Benioff-backed startup thinks AI can solve the AI deployment problem\" competitors product use case",
+        "\"June\" \"$20 million\" investor quote why invested",
+        "\"June\" \"$20 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"A Marc Benioff-backed startup thinks AI can solve the AI deployment problem\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"A Marc Benioff-backed startup thinks AI can solve the AI deployment problem\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"June\" \"$20 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"June\" \"$20 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"June\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"June\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"June\" \"A Marc Benioff-backed startup thinks AI can solve the AI deployment problem\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"June\" \"A Marc Benioff-backed startup thinks AI can solve the AI deployment problem\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"June\" \"$20 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"June\" \"$20 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"June\" \"$20 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"June\" \"$20 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-08-04T04:26:18.381Z"
+    }
+  ]
+}

@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "generatedAt": "2026-08-04T04:50:29.311Z",
     "latestDataDate": "2026-08-04",
     "currentDate": "2026-08-04",
-    "eventCount": 1832,
-    "quarantinedEventCount": 15
+    "eventCount": 1841,
+    "quarantinedEventCount": 16
   },
   "node": {
     "id": "TX-product_form-ai_device",
@@ -20,6 +20,7 @@
     "eventIds": [
       "EV-02882e6f5e1902c6",
       "EV-b5dd10300e34f2d3",
+      "EV-450f624a6a6446ce",
       "EV-a9810b47e0408a05",
       "EV-b93102125cc062e3",
       "EV-a6b4fa32cce7c483",
@@ -35,6 +36,7 @@
     "entityIds": [
       "EN-2a920347dfcf07a7",
       "EN-e22521e7de65d819",
+      "EN-245f1e177c5169cb",
       "EN-193d220b421d776e",
       "EN-b81c8201acfc7639",
       "EN-88e2cce43eeadb36",
@@ -47,8 +49,8 @@
     "hardwareIds": [
       "HW-073f0034b9be13b2"
     ],
-    "firstSeen": "2026-06-12",
-    "lastSeen": "2026-08-03"
+    "firstSeen": "2026-05-21",
+    "lastSeen": "2026-08-04"
   },
   "events": [
     {
@@ -682,6 +684,272 @@
       "products": [],
       "sourceUrl": "https://www.nbd.com.cn/articles/2026-07-13/4469618.html",
       "publisher": "每日经济新闻"
+    },
+    {
+      "id": "EV-450f624a6a6446ce",
+      "dataDate": "2026-08-04",
+      "date": "2026-05-21",
+      "updatedDate": "2026-08-04",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Hark AI硬件融资：以60亿美元估值筹集7亿美元",
+      "originalTitle": "Hark AI Hardware Funding: $700M Raised at $6B Valuation",
+      "subject": "Hark AI Hardware Funding: $700M",
+      "action": "Raised",
+      "object": "at $6B Valuation",
+      "metrics": [
+        "$700M",
+        "$6B",
+        "$700 million",
+        "$6 billion",
+        "$700 Million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "EN-245f1e177c5169cb"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-354859386cd32084",
+            "fundingInsightId": "FI-f3cb05f8156986de"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-245f1e177c5169cb"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-db23280828eb9dd0",
+            "fundingInsightId": "FI-f3cb05f8156986de"
+          }
+        ],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-245f1e177c5169cb"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5483d232ded793f6",
+            "fundingInsightId": "FI-f3cb05f8156986de"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-245f1e177c5169cb"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ce1f051087026a59",
+            "fundingInsightId": "FI-f3cb05f8156986de"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-245f1e177c5169cb"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2e26864e9156874d",
+            "fundingInsightId": "FI-f3cb05f8156986de"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-245f1e177c5169cb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-354859386cd32084",
+          "fundingInsightId": "FI-f3cb05f8156986de"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-245f1e177c5169cb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-db23280828eb9dd0",
+          "fundingInsightId": "FI-f3cb05f8156986de"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-245f1e177c5169cb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5483d232ded793f6",
+          "fundingInsightId": "FI-f3cb05f8156986de"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-245f1e177c5169cb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-2e26864e9156874d",
+          "fundingInsightId": "FI-f3cb05f8156986de"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-245f1e177c5169cb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-ce1f051087026a59",
+          "fundingInsightId": "FI-f3cb05f8156986de"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-245f1e177c5169cb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-354859386cd32084",
+          "fundingInsightId": "FI-f3cb05f8156986de"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-245f1e177c5169cb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-db23280828eb9dd0",
+          "fundingInsightId": "FI-f3cb05f8156986de"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-245f1e177c5169cb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5483d232ded793f6",
+          "fundingInsightId": "FI-f3cb05f8156986de"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-245f1e177c5169cb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-ce1f051087026a59",
+          "fundingInsightId": "FI-f3cb05f8156986de"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-245f1e177c5169cb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-2e26864e9156874d",
+          "fundingInsightId": "FI-f3cb05f8156986de"
+        }
+      ],
+      "entityIds": [
+        "EN-805a8c0cc2403091",
+        "EN-245f1e177c5169cb"
+      ],
+      "entityNames": [
+        "Hark AI Hardware Funding",
+        "Hark"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://aiagentsdirectory.com/blog/hark-ai-hardware-startup-secures-dollar700m-at-dollar6b-valuation",
+      "publisher": "aiagentsdirectory.com"
     },
     {
       "id": "EV-a9810b47e0408a05",
@@ -1984,6 +2252,38 @@
       "lastSeen": "2026-08-03"
     },
     {
+      "id": "EN-245f1e177c5169cb",
+      "name": "Hark",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-44c9a50b99c76a70",
+        "EV-450f624a6a6446ce"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
+        "TX-use_case-research_discovery",
+        "TX-product_form-model",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-ai_market_application-models",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-target_user-consumer",
+        "TX-product_form-ai_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-21",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "EN-193d220b421d776e",
       "name": "华为联合上海电信",
       "entityType": "organization_candidate",
@@ -2145,6 +2445,7 @@
         "EV-e1a4bc40db4a9d8f",
         "EV-2a833330267cb2df",
         "EV-4b286a3354cbf34a",
+        "EV-650e4b23d45d5758",
         "EV-d2f8019b6783722f",
         "EV-bfa090c78227abf8",
         "EV-2e1352039c487bb0",

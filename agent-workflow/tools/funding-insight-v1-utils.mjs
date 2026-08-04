@@ -5,7 +5,7 @@ import { hydrateRawDocument } from "./lib/private-evidence-store.mjs";
 
 export const FUNDING_INSIGHT_VERSION = "FUNDING-INSIGHT-V1.2";
 export const FUNDING_INSIGHT_FRONTSTAGE_VERSION = "FUNDING-INSIGHT-FRONTSTAGE-V1.3";
-export const FUNDING_INSIGHT_PROMPT_VERSION = "FUNDING-INSIGHT-DEEPSEEK-V1.5";
+export const FUNDING_INSIGHT_PROMPT_VERSION = "FUNDING-INSIGHT-DEEPSEEK-V1.6";
 export const FUNDING_INSIGHT_GATE_VERSION = "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1";
 export const INVESTORS_MISSING_RISK = "本轮具体投资方未披露，投资人结构与背书强度无法核验。";
 export const FUNDING_PRODUCT_FORM_IDS = new Set([
@@ -649,7 +649,10 @@ function subjectSignalScore(text = "", name = "") {
   const haystack = clean(text).toLowerCase();
   const needle = clean(name).toLowerCase();
   if (!haystack || !needle || !haystack.includes(needle)) return 0;
-  const escaped = needle.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+  const escapedName = needle.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+  const leftBoundary = /^[a-z0-9]/u.test(needle) ? "(?<![a-z0-9])" : "";
+  const rightBoundary = /[a-z0-9]$/u.test(needle) ? "(?![a-z0-9])" : "";
+  const escaped = `${leftBoundary}${escapedName}${rightBoundary}`;
   let score = 0;
   if (new RegExp(`(?:^|[\\s:：|｜—-])${escaped}`, "iu").test(haystack)) score += 20;
   if (new RegExp(`${escaped}[^|]{0,24}(?:获|获得|完成|宣布|融资|再融|筹集|募资|估值|ipo|raises?|raised|funding|series|seed|round)`, "iu").test(haystack)) {
@@ -680,7 +683,7 @@ function subjectCandidate(entity, index, eventText) {
   const names = [canonicalName, ...(entity.aliases || []), inferredName].filter(Boolean);
   const scores = names.map((name) => {
     const normalized = normalizedName(name);
-    const lexical = eventText.normalized.includes(normalized) ? Math.min(30, normalized.length) : 0;
+    const lexical = subjectSignalScore(eventText.raw, name) > 0 ? Math.min(30, normalized.length) : 0;
     return lexical + subjectSignalScore(eventText.raw, name);
   });
   const fragmentPenalty = /[：，、“”"'!！?？|｜]|(?:融资|估值|累计|完成|宣布|再融|获\s*\d)|(?:已|将|再)$/u.test(clean(canonicalName)) ? 80 : 0;
@@ -917,7 +920,7 @@ export function sanitizeResearchPayload(payload = {}, sources = []) {
 }
 
 export function ensureCanonicalFundingEvidence(payload = {}, bundle = {}, event = {}, sources = []) {
-  if (!payload.financing || payload.financing.evidence_refs?.length) return payload;
+  payload.financing = payload.financing || {};
   const claimById = new Map((bundle.claims || []).map((claim) => [claim.claim_id, claim]));
   const sourceByRawId = new Map(sources
     .filter((source) => source.raw_id)
@@ -933,9 +936,25 @@ export function ensureCanonicalFundingEvidence(payload = {}, bundle = {}, event 
       && quote
       && source.body_clean.includes(quote)
     ) {
-      payload.financing.evidence_refs = [{ source_id: source.source_id, quote }];
+      payload.financing.evidence_refs = [...new Map([
+        { source_id: source.source_id, quote },
+        ...(payload.financing.evidence_refs || []),
+      ].map((item) => [`${item.source_id}|${item.quote}`, item])).values()];
       break;
     }
+  }
+  if (clean(event.metrics?.[0])) payload.financing.amount = clean(event.metrics[0]);
+  if (/^\d{4}-\d{2}-\d{2}/u.test(clean(event.event_time))) {
+    payload.financing.announced_at = clean(event.event_time).slice(0, 10);
+  }
+  const roundEvidence = [
+    event.display_title_zh,
+    event.object,
+    ...(event.claim_refs || []).map((claimId) => claimById.get(claimId)?.source_quote),
+  ].filter(Boolean).join(" ");
+  const canonicalRound = normalizeFundingRound(roundEvidence);
+  if (!["other", "undisclosed"].includes(canonicalRound.code)) {
+    payload.financing.round = canonicalRound.label;
   }
   return payload;
 }

@@ -63,6 +63,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-14df7ad24bd85c04",
+    "raw_id": "RAW-e5ec869ac9ae6d3c",
+    "claim_type": "partnership",
+    "subject": "Nvidia",
+    "predicate": "partnership",
+    "object": "SK Group",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-fc8f7c95fbe80c87"
+    },
+    "source_span": {
+      "raw_id": "RAW-e5ec869ac9ae6d3c",
+      "start": 138,
+      "end": 397
+    },
+    "source_quote": "On July 24, 2026, the chipmaker and South Korea’s SK Group unveiled a partnership Nvidia itself is calling worth more than $500 billion, tying Nvidia’s next-generation Vera Rubin chips directly to SK Hynix’s high-bandwidth memory production for years to come.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-79474a3c58619c85",
+    "raw_id": "RAW-37600c033d5d1c61",
+    "claim_type": "capital_investment",
+    "subject": "SK hynix",
+    "predicate": "capital_investment",
+    "object": "P&T7 advanced packaging plant in Cheongju",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-8a70daee717d9175"
+    },
+    "source_span": {
+      "raw_id": "RAW-37600c033d5d1c61",
+      "start": 599,
+      "end": 697
+    },
+    "source_quote": "SK hynix has secured approval to raise investment in its P&T7 advanced packaging plant in Cheongju",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-2320f417f6da16fe",
     "raw_id": "RAW-9dad0d93ed1d1f9f",
     "claim_type": "partnership",
@@ -142,90 +186,6 @@
       "end": 840
     },
     "source_quote": "WASHINGTON — Today, the U.S. General Services Administration (GSA) announced a new OneGov offering with CORAS, a provider of secure agentic AI, to accelerate AI adoption across federal agencies and equip them to automate manual, repetitive tasks that tie up staff and delay mission goals.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-8527c532e5bd2a23",
-    "raw_id": "RAW-f5ef000bc15d8e95",
-    "claim_type": "funding",
-    "subject": "Axe Compute",
-    "predicate": "funding",
-    "object": "$1.5B AI GPU cluster deal - The Globe and Mail",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-f5ef000bc15d8e95",
-      "start": 0,
-      "end": 66
-    },
-    "source_quote": "Axe Compute secures $1.5B AI GPU cluster deal - The Globe and Mail",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-c3f8b8ee86d4cacd",
-    "raw_id": "RAW-f5ef000bc15d8e95",
-    "claim_type": "funding",
-    "subject": "Axe Compute",
-    "predicate": "funding",
-    "object": "$1.5B AI GPU cluster deal - The Globe and Mail",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-f5ef000bc15d8e95",
-      "start": 515,
-      "end": 560
-    },
-    "source_quote": "Axe Compute secures $1.5B AI GPU cluster deal",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-104311c8f28fe938",
-    "raw_id": "RAW-f5ef000bc15d8e95",
-    "claim_type": "funding",
-    "subject": "Axe Compute",
-    "predicate": "funding",
-    "object": "$1.5B AI GPU cluster deal - The Globe and Mail",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-f5ef000bc15d8e95",
-      "start": 67,
-      "end": 120
-    },
-    "source_quote": "Find clarity in the chaos. Subscribe now and save 70%",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-00d6f63ab06a50b6",
-    "raw_id": "RAW-f5ef000bc15d8e95",
-    "claim_type": "funding",
-    "subject": "Axe Compute",
-    "predicate": "funding",
-    "object": "$1.5B AI GPU cluster deal - The Globe and Mail",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-f5ef000bc15d8e95",
-      "start": 121,
-      "end": 185
-    },
-    "source_quote": "SUBSCRIBE FROM $0.99/WEEK Digital access Digital + home delivery",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -483,6 +443,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-adb56517e3c0d302",
+    "raw_id": "RAW-f649252b1adef3fc",
+    "claim_type": "capital_investment",
+    "subject": "HUMAIN",
+    "predicate": "capital_investment",
+    "object": "MOZN",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ca34f1ceddc2488f"
+    },
+    "source_span": {
+      "raw_id": "RAW-f649252b1adef3fc",
+      "start": 797,
+      "end": 860
+    },
+    "source_quote": "HUMAIN has made a strategic investment in Saudi AI company MOZN",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-ccf17d1be321c753",
     "raw_id": "RAW-3165e567e1dc0f81",
     "claim_type": "hardware_deployment",
@@ -651,6 +633,94 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-13954305887f7d25",
+    "raw_id": "RAW-273b7f281c5a25b4",
+    "claim_type": "deployment",
+    "subject": "Lemvigh-Müller A/S",
+    "predicate": "deployment",
+    "object": "multi-agent workflow with SAP Cloud ERP Private solution, SAP AI Launchpad, and SAP AI Core infrastructure",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-cd798e04ab8af6ff"
+    },
+    "source_span": {
+      "raw_id": "RAW-273b7f281c5a25b4",
+      "start": 559,
+      "end": 691
+    },
+    "source_quote": "the company deployed a multi-agent workflow with an SAP Cloud ERP Private solution, SAP AI Launchpad, and SAP AI Core infrastructure",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d7159d0b9b69615f",
+    "raw_id": "RAW-b231d633c9659ee8",
+    "claim_type": "product_release",
+    "subject": "Microsoft",
+    "predicate": "product_release",
+    "object": "Agent Framework 1.0",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-8626eb9d405b5fdf"
+    },
+    "source_span": {
+      "raw_id": "RAW-b231d633c9659ee8",
+      "start": 606,
+      "end": 669
+    },
+    "source_quote": "The framework reached 1.0 general availability on April 2, 2026",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5ab2e74b087255a8",
+    "raw_id": "RAW-b231d633c9659ee8",
+    "claim_type": "product_release",
+    "subject": "Microsoft",
+    "predicate": "product_release",
+    "object": "Agent Harness and Foundry Hosted Agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-8626eb9d405b5fdf"
+    },
+    "source_span": {
+      "raw_id": "RAW-b231d633c9659ee8",
+      "start": 847,
+      "end": 924
+    },
+    "source_quote": "The harness and Foundry Hosted Agents have since reached general availability",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-97f9baae47107d3b",
+    "raw_id": "RAW-b231d633c9659ee8",
+    "claim_type": "product_release",
+    "subject": "Microsoft",
+    "predicate": "product_release",
+    "object": "multi-agent orchestration patterns",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-8626eb9d405b5fdf"
+    },
+    "source_span": {
+      "raw_id": "RAW-b231d633c9659ee8",
+      "start": 671,
+      "end": 846
+    },
+    "source_quote": "Build 2026 , held June 2 to 3, brought the Agent Harness, the GitHub Copilot SDK and Claude Agent SDK connectors, and the multi-agent orchestration patterns to stable release.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-e41cd87a54302f8f",
     "raw_id": "RAW-25caf9e427df21ee",
     "claim_type": "product_release",
@@ -816,6 +886,94 @@
     "source_quote": "The recent funding round for Hark is noteworthy not only for its sheer volume but also for the significant valuation it confers. Raising $700 million is a monumental achievement for any startup, particularly one in the capital-intensive hardware sector. The $6 billion valuation suggests that investors see immense potential in Hark's technology and its ability to capture a significant share of the burgeoning AI hardware market.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f6181af796169374",
+    "raw_id": "RAW-c4e3a362501001c4",
+    "claim_type": "funding",
+    "subject": "June",
+    "predicate": "funding",
+    "object": "$20 million pre-seed funding",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-c798bf0acead5921"
+    },
+    "source_span": {
+      "raw_id": "RAW-c4e3a362501001c4",
+      "start": 796,
+      "end": 978
+    },
+    "source_quote": "the company raised $20 million in pre-seed funding led by Marc Benioff’s Time Ventures, with additional backing from tech luminaries like Michael Dell, Aaron Levie, and George Kurtz.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d5f758c7e8e58fb9",
+    "raw_id": "RAW-c00420806f0bcb3f",
+    "claim_type": "model_release",
+    "subject": "Alibaba",
+    "predicate": "model_release",
+    "object": "Qwen3.8-Max",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-7cc73753cd68bce6"
+    },
+    "source_span": {
+      "raw_id": "RAW-c00420806f0bcb3f",
+      "start": 137,
+      "end": 383
+    },
+    "source_quote": "Chinese tech giant Alibaba released what it says is its largest and “most capable AI model to date,” claiming performance rivaling the best systems from US frontier labs Anthropic and OpenAI, as well as domestic rivals like Moonshot AI’s Kimi K3.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b81cbd338ab53a41",
+    "raw_id": "RAW-c00420806f0bcb3f",
+    "claim_type": "model_release",
+    "subject": "Alibaba",
+    "predicate": "model_release",
+    "object": "Qwen3.8-Max weights",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-7cc73753cd68bce6"
+    },
+    "source_span": {
+      "raw_id": "RAW-c00420806f0bcb3f",
+      "start": 1914,
+      "end": 1993
+    },
+    "source_quote": "The Chinese company said it will release the weights for Qwen3.8-Max next week.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-64d81927d757d6b4",
+    "raw_id": "RAW-c00420806f0bcb3f",
+    "claim_type": "model_release",
+    "subject": "ByteDance and MiniMax",
+    "predicate": "model_release",
+    "object": "video generation models",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-7cc73753cd68bce6"
+    },
+    "source_span": {
+      "raw_id": "RAW-c00420806f0bcb3f",
+      "start": 3135,
+      "end": 3217
+    },
+    "source_quote": "both ByteDance and MiniMax released capable new video generation models on Friday.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1155,6 +1313,72 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-45ff62c6ece4462d",
+    "raw_id": "RAW-0892e55f0b443e36",
+    "claim_type": "model_release",
+    "subject": "沐曦股份",
+    "predicate": "model_release",
+    "object": "曦云 C 系列 GPU 完成对稀宇 MiniMax H3 多模态生成模型的 Day 0 适配",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-03e8480b1aa5a6cc"
+    },
+    "source_span": {
+      "raw_id": "RAW-0892e55f0b443e36",
+      "start": 351,
+      "end": 416
+    },
+    "source_quote": "沐曦股份 (MetaX) 今日宣布旗下曦云 C 系列 GPU 完成对稀宇 MiniMax H3 多模态生成模型的 Day 0 适配",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-808e9e4898cf3b6e",
+    "raw_id": "RAW-1fa98e740709d759",
+    "claim_type": "model_release",
+    "subject": "Alibaba",
+    "predicate": "model_release",
+    "object": "Qwen3.8-Max",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-000248cdc23e8c53"
+    },
+    "source_span": {
+      "raw_id": "RAW-1fa98e740709d759",
+      "start": 197,
+      "end": 336
+    },
+    "source_quote": "Alibaba has unveiled Qwen3.8-Max, a 2.4-trillion-parameter language model designed to complete complex tasks on its own over multiple days.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-90e5723afec77cb4",
+    "raw_id": "RAW-1fa98e740709d759",
+    "claim_type": "model_release",
+    "subject": "Alibaba",
+    "predicate": "model_release",
+    "object": "Qwen3.8-Max weights",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-000248cdc23e8c53"
+    },
+    "source_span": {
+      "raw_id": "RAW-1fa98e740709d759",
+      "start": 7441,
+      "end": 7513
+    },
+    "source_quote": "The weights are set to go live on Hugging Face and ModelScope next week.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-06ae213bbe315a9d",
     "raw_id": "RAW-de38b5bccfebb577",
     "claim_type": "product_release",
@@ -1491,6 +1715,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-3869260ee233d352",
+    "raw_id": "RAW-c1b2ce6bfde6cbac",
+    "claim_type": "model_release",
+    "subject": "MiniMax",
+    "predicate": "model_release",
+    "object": "H3 video model weights",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e584345a8aa3fa79"
+    },
+    "source_span": {
+      "raw_id": "RAW-c1b2ce6bfde6cbac",
+      "start": 140,
+      "end": 252
+    },
+    "source_quote": "MiniMax releases H3 video model weights, putting an open model at the top of a video ranking for the first time.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-fac0602b4eadac6e",
     "raw_id": "RAW-ef9f4b8e0ab0c02e",
     "claim_type": "product_release",
@@ -1572,6 +1818,94 @@
     "source_quote": "95 后投资者利用 AI 批量生成虚假消息趁机交易牟利，被罚 48.5 万元 - IT之家",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6f2f6281717685e4",
+    "raw_id": "RAW-a9f228086b900163",
+    "claim_type": "policy_regulation",
+    "subject": "European Union",
+    "predicate": "policy_regulation",
+    "object": "AI Act transparency obligations",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-cbbdc2f58a7d72d2"
+    },
+    "source_span": {
+      "raw_id": "RAW-a9f228086b900163",
+      "start": 342,
+      "end": 569
+    },
+    "source_quote": "The new transparency obligations under the bloc’s landmark AI Act came into effect on August 2nd, requiring companies to disclose when people are interacting with AI models, and if content has been generated or altered by them.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-68f0db8458407c15",
+    "raw_id": "RAW-a9f228086b900163",
+    "claim_type": "policy_regulation",
+    "subject": "European Commission",
+    "predicate": "policy_regulation",
+    "object": "AI disclosure labels",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-cbbdc2f58a7d72d2"
+    },
+    "source_span": {
+      "raw_id": "RAW-a9f228086b900163",
+      "start": 1943,
+      "end": 2121
+    },
+    "source_quote": "The Commission has also developed a set of AI disclosure labels that tech platforms can adopt in accordance with the AI Act rules, alongside examples of when they should be used.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-159c0078efe0c63d",
+    "raw_id": "RAW-a9f228086b900163",
+    "claim_type": "policy_regulation",
+    "subject": "European Union",
+    "predicate": "policy_regulation",
+    "object": "non-compliance fines",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-cbbdc2f58a7d72d2"
+    },
+    "source_span": {
+      "raw_id": "RAW-a9f228086b900163",
+      "start": 2486,
+      "end": 2657
+    },
+    "source_quote": "Companies that fail to comply with these new transparency rules risk facing fines of up to €15 million (about $17.2 million), or 3 percent of their global annual turnover.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ed2602da5fe72b60",
+    "raw_id": "RAW-071462b6a90315c3",
+    "claim_type": "standard_specification",
+    "subject": "中国信通院",
+    "predicate": "standard_specification",
+    "object": "GEO行业技术标准《生成式引擎优化（GEO）服务可信基本要求》",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-27d6b444548a8dcb"
+    },
+    "source_span": {
+      "raw_id": "RAW-071462b6a90315c3",
+      "start": 1284,
+      "end": 1329
+    },
+    "source_quote": "中国信通院联合产学研机构发布GEO行业技术标准《生成式引擎优化（GEO）服务可信基本要求》",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   }
 ]

@@ -11,11 +11,11 @@
     ],
     "raw_documents": 118,
     "original_sources": 106,
-    "valid_claims": 23,
+    "valid_claims": 30,
     "observations": 1,
-    "canonical_events": 6,
+    "canonical_events": 11,
     "blocker_counts": {
-      "no_source_bounded_event": 21,
+      "no_source_bounded_event": 16,
       "repository_page_requires_release_source": 7,
       "source_outside_daily_window": 63,
       "non_event_or_index_title": 7,
@@ -28,9 +28,9 @@
     },
     "rates": {
       "original_source_rate": 0.8983050847457628,
-      "valid_claim_rate": 0.19491525423728814,
-      "observation_rate": 0.043478260869565216,
-      "event_conversion_rate": 0.2608695652173913
+      "valid_claim_rate": 0.2542372881355932,
+      "observation_rate": 0.03333333333333333,
+      "event_conversion_rate": 0.36666666666666664
     }
   },
   {
@@ -47,21 +47,22 @@
     ],
     "raw_documents": 32,
     "original_sources": 26,
-    "valid_claims": 16,
-    "observations": 12,
+    "valid_claims": 13,
+    "observations": 13,
     "canonical_events": 4,
     "blocker_counts": {
-      "source_outside_daily_window": 15,
-      "no_source_bounded_event": 4,
+      "source_outside_daily_window": 16,
+      "no_source_bounded_event": 1,
+      "event_not_ai_relevant": 2,
       "non_event_or_index_title": 1,
       "raw_source_quality_block": 7,
       "raw_document_not_auditable": 1
     },
     "rates": {
       "original_source_rate": 0.8125,
-      "valid_claim_rate": 0.5,
-      "observation_rate": 0.75,
-      "event_conversion_rate": 0.25
+      "valid_claim_rate": 0.40625,
+      "observation_rate": 1,
+      "event_conversion_rate": 0.3076923076923077
     }
   }
 ]

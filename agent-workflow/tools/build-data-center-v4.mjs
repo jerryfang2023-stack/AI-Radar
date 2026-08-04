@@ -548,7 +548,7 @@ function findEventRule(title, lead = "") {
   }
   if (
     /\b(?:secures?|secured|signs?|signed)\b.{0,220}\b(?:AI|GPU|accelerator|cluster|infrastructure)\b.{0,120}\b(?:deal|contract|agreement)\b/iu.test(eventEvidenceText)
-    && !/\b(?:funding|financing|investment|series|seed|round)\b/iu.test(eventEvidenceText)
+    && !/\b(?:funding|financing|investment|series|seed|round)\b/iu.test(title)
   ) {
     return { eventType: "procurement_contract", pattern: /\b(?:secures?|secured|signs?|signed)\b/iu };
   }
@@ -662,6 +662,7 @@ function cleanOrganizationCandidate(value) {
     .replace(/(?:'s|\u2019s)\s+founder(?:\s+just)?$/iu, "")
     .replace(/\s+(?:in talks to|plans? to|expected to|intends? to|to)$/iu, "")
     .replace(/\s+(?:announces?|announced)$/iu, "")
+    .replace(/\s+(?:AI\s+)?(?:hardware\s+)?(?:startup|funding)$/iu, "")
     .replace(/\s+(?:(?:form|forms|formed|announce|announces|announced|expand|expands|expanded)(?:\s+(?:a|an|the|their|its|strategic|multi-year|global|longstanding|new|expanded)){0,4}|(?:wins?|won|awarded)\s+(?:the|a|an))$/iu, "")
     .replace(/(?:研究员|首席执行官|CEO|创始人|员工|高管|团队).*/u, "")
     .replace(/[，,:：].*$/u, "")
@@ -696,11 +697,13 @@ function exactAliasIndex(text, alias) {
 function fundingClaimOrganizationMentions(eventClaims, claimEvidence) {
   const candidates = [];
   const addCandidate = (value) => {
-    const candidate = normalizeSpace(value)
+    const normalizedCandidate = normalizeSpace(value)
       .replace(/\s+(?:获|获得|完成|宣布|融资|筹集|募集)\b.*$/u, "")
       .replace(/\s+(?:raises?|raised|secures?|secured|closes?|closed|announces?|announced)\b.*$/iu, "")
+      .replace(/\s+(?:AI\s+)?(?:hardware\s+)?(?:startup|funding)(?:\s*[:：].*)?$/iu, "")
       .replace(/\s+,/gu, ",")
       .trim();
+    const candidate = normalizedCandidate;
     const chineseCandidate = containsChinese(candidate);
     if (!candidate
         || candidate.length < 2
@@ -737,24 +740,47 @@ function fundingClaimOrganizationMentions(eventClaims, claimEvidence) {
 function organizationMentions(title, parsed, eventType, claimEvidence = "", eventClaims = []) {
   const hits = [];
   for (const entry of ORGANIZATION_ALIASES) {
-    for (const alias of [...entry.aliases].sort((a, b) => b.length - a.length)) {
+    const subjectKey = normalizeSpace(parsed.subject).toLocaleLowerCase();
+    const matchingAliases = entry.aliases.flatMap((alias) => {
       const titleIndex = exactAliasIndex(title, alias);
       const claimIndex = exactAliasIndex(claimEvidence, alias);
-      if (titleIndex < 0 && claimIndex < 0) continue;
+      if (titleIndex < 0 && claimIndex < 0) return [];
       const source = titleIndex >= 0 ? "title_original" : "claim_evidence";
       const sourceText = source === "title_original" ? title : claimEvidence;
       const index = source === "title_original" ? titleIndex : claimIndex;
-      hits.push({
+      return [{
         canonicalName: entry.canonicalName,
         mentionText: sourceText.slice(index, index + alias.length),
         start: index,
         source,
-        verified: true
-      });
-      break;
+        verified: true,
+        exactSubjectAlias: normalizeSpace(alias).toLocaleLowerCase() === subjectKey,
+      }];
+    }).sort((left, right) => (
+      Number(right.exactSubjectAlias) - Number(left.exactSubjectAlias)
+      || Number(right.source === "title_original") - Number(left.source === "title_original")
+      || [...right.mentionText].length - [...left.mentionText].length
+    ));
+    if (matchingAliases[0]) {
+      const { exactSubjectAlias: _exactSubjectAlias, ...bestMatch } = matchingAliases[0];
+      hits.push(bestMatch);
     }
   }
-  if (eventType === "funding") hits.push(...fundingClaimOrganizationMentions(eventClaims, claimEvidence));
+  if (eventType === "funding") {
+    hits.push(...fundingClaimOrganizationMentions(eventClaims, claimEvidence));
+    const describedCompany = title.match(
+      /(?:开发商|制造商|maker|creator|developer)\s+([A-Z][A-Za-z0-9.&'-]*(?:\s+[A-Z][A-Za-z0-9.&'-]*){0,3})(?=\s+(?:获|获得|完成|raises?|raised|secures?|secured))/iu,
+    );
+    if (describedCompany?.[1]) {
+      hits.push({
+        canonicalName: describedCompany[1],
+        mentionText: describedCompany[1],
+        start: describedCompany.index + describedCompany[0].lastIndexOf(describedCompany[1]),
+        source: "title_original",
+        verified: false,
+      });
+    }
+  }
   hits.sort((a, b) => a.start - b.start || b.mentionText.length - a.mentionText.length);
 
   const selected = [];
@@ -2207,6 +2233,7 @@ export {
   normalizeEventTitle,
   findEventRule,
   eventStatus,
+  organizationMentions,
   eventSourceEligibility,
   publicEventSourceTitleIssue,
   modelAssistedEventEligibility,

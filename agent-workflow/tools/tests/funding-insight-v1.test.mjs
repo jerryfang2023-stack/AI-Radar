@@ -75,6 +75,63 @@ test("funding generation skips event IDs already published in another date bundl
   ]);
 });
 
+test("subject company matching does not treat an organization prefix as an exact name", () => {
+  const event = {
+    event_id: "EV-INTELLIGENCE",
+    display_title_zh: "Intelligence raises $7.9 million for DesignArena",
+    action: "raises",
+    object: "$7.9 million",
+    metrics: ["$7.9 million"],
+    entities: [],
+    claim_refs: [],
+  };
+  const entityIndex = {
+    companies: [{ id: "EN-INTEL", name: "Intel", aliases: [] }],
+  };
+
+  assert.equal(subjectCompanyForEvent(event, [], entityIndex), null);
+});
+
+test("canonical funding facts override same-name secondary research drift", () => {
+  const payload = {
+    company: { full_name: "June Health" },
+    financing: {
+      amount: "$2.4 million",
+      round: "Seed",
+      announced_at: "2026-06-20",
+      evidence_refs: [{ source_id: "SRC-WRONG", quote: "June Health raised $2.4 million." }],
+    },
+  };
+  const event = {
+    event_id: "EV-JUNE",
+    event_time: "2026-08-03T00:00:00.000Z",
+    display_title_zh: "June 获得 2000 万美元 pre-seed 融资",
+    object: "$20 million pre-seed funding",
+    metrics: ["$20 million"],
+    claim_refs: ["CL-JUNE"],
+  };
+  const bundle = {
+    claims: [{
+      claim_id: "CL-JUNE",
+      raw_id: "RAW-JUNE",
+      claim_type: "funding",
+      verification_status: "accepted",
+      source_quote: "the company raised $20 million in pre-seed funding",
+    }],
+  };
+  const sources = [{
+    source_id: "SRC-CANONICAL",
+    raw_id: "RAW-JUNE",
+    body_clean: "June emerged from stealth and the company raised $20 million in pre-seed funding.",
+  }];
+
+  ensureCanonicalFundingEvidence(payload, bundle, event, sources);
+  assert.equal(payload.financing.amount, "$20 million");
+  assert.equal(payload.financing.announced_at, "2026-08-03");
+  assert.equal(normalizeFundingRound(payload.financing.round).code, "pre_seed");
+  assert.equal(payload.financing.evidence_refs[0].source_id, "SRC-CANONICAL");
+});
+
 function evidence(sourceId = "SRC-1", quote = "Acme raised $20 million led by Northstar Ventures.") {
   return [{ source_id: sourceId, quote }];
 }
@@ -181,8 +238,8 @@ function validCard() {
     entity_links: [],
     funding_history: [],
     research_sources: [
-      { source_id: "SRC-1", title: "Funding", publisher: "Example", source_url: "https://example.com/funding", source_class: "media", content_hash: "source-one-hash" },
-      { source_id: "SRC-2", title: "Product", publisher: "Acme", source_url: "https://acme.example/product", source_class: "official", content_hash: "source-two-hash" },
+      { source_id: "SRC-1", title: "Funding", publisher: "Example", source_url: "https://example.com/funding", source_class: "canonical_event_source", content_hash: "source-one-hash" },
+      { source_id: "SRC-2", title: "Product", publisher: "Acme", source_url: "https://acme.example/product", source_class: "official_candidate", content_hash: "source-two-hash" },
     ],
     model_provenance: {},
     auto_publish_gate: { passed: true, problems: [], gate_version: "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1" },

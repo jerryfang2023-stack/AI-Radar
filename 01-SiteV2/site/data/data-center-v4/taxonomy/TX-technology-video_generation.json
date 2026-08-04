@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "generatedAt": "2026-08-04T04:50:29.311Z",
     "latestDataDate": "2026-08-04",
     "currentDate": "2026-08-04",
-    "eventCount": 1832,
-    "quarantinedEventCount": 15
+    "eventCount": 1841,
+    "quarantinedEventCount": 16
   },
   "node": {
     "id": "TX-technology-video_generation",
@@ -22,6 +22,7 @@
       "EV-a354af52772334fd",
       "EV-26d2874c6ce028d6",
       "EV-63858d9b5ef92175",
+      "EV-650e4b23d45d5758",
       "EV-6654f62015eff8e3",
       "EV-50893df365a7097d",
       "EV-6fbbbfcdcec81df4",
@@ -616,6 +617,136 @@
       ],
       "sourceUrl": "https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui",
       "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
+    },
+    {
+      "id": "EV-650e4b23d45d5758",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "updatedDate": "2026-08-04",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "阿里巴巴再次挑战美国AI霸主地位",
+      "originalTitle": "China’s Alibaba takes another swipe at America’s AI supremacy",
+      "subject": "Alibaba",
+      "action": "model_release",
+      "object": "Qwen3.8-Max",
+      "metrics": [],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-047364b9be67f665"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-047364b9be67f665",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-b5251b35f15bedc4",
+        "EN-5388bc10736a0eff",
+        "EN-e1517be14d06cdb7",
+        "EN-20f8fde9c1a59738"
+      ],
+      "entityNames": [
+        "Alibaba",
+        "Anthropic",
+        "OpenAI",
+        "Moonshot AI",
+        "ByteDance",
+        "MiniMax",
+        "Qwen3.8-Max"
+      ],
+      "productName": "Qwen3.8-Max",
+      "products": [
+        {
+          "name": "Qwen3.8-Max",
+          "type": "模型",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        }
+      ],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai",
+      "publisher": "The Verge AI"
     },
     {
       "id": "EV-6654f62015eff8e3",
@@ -1617,6 +1748,9 @@
       "eventIds": [
         "EV-522c339dded54be5",
         "EV-63858d9b5ef92175",
+        "EV-650e4b23d45d5758",
+        "EV-9f06b3f05f18b81e",
+        "EV-a201645ff75776c6",
         "EV-ec966b509327cbac",
         "EV-243e73016576fa43",
         "EV-9da9d755019f241f",
@@ -1806,6 +1940,7 @@
         "EV-e1a4bc40db4a9d8f",
         "EV-2a833330267cb2df",
         "EV-4b286a3354cbf34a",
+        "EV-650e4b23d45d5758",
         "EV-d2f8019b6783722f",
         "EV-bfa090c78227abf8",
         "EV-2e1352039c487bb0",
@@ -1921,10 +2056,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
-        "TX-product_form-chip_accelerator",
         "TX-use_case-research_discovery",
+        "TX-product_form-model",
         "TX-use_case-software_development",
+        "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
         "TX-industry-media_entertainment",
         "TX-use_case-security_operations",
@@ -1988,7 +2123,7 @@
       "hardwareType": "gpu",
       "eventType": "hardware_deployment",
       "eventTypeLabel": "硬件部署",
-      "computeLayer": "未披露",
+      "computeLayer": "Encoder 8 卡张量并行（8TP）、DiT 8 卡 USP（Ulysses Sequence Parallel，并结合 Layer-wise Offloading），以及 VAE 部署于 B70 GPU 的整体架构",
       "supplier": "未披露",
       "customer": "未披露",
       "processNode": "未披露",

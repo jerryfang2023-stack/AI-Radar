@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "generatedAt": "2026-08-04T04:50:29.311Z",
     "latestDataDate": "2026-08-04",
     "currentDate": "2026-08-04",
-    "eventCount": 1832,
-    "quarantinedEventCount": 15
+    "eventCount": 1841,
+    "quarantinedEventCount": 16
   },
   "entity": {
     "id": "EN-5388bc10736a0eff",
@@ -25,6 +25,7 @@
       "EV-97fdf068afbbe555",
       "EV-47a84a0f1a85c29c",
       "EV-6c361125c3f50bb6",
+      "EV-650e4b23d45d5758",
       "EV-c157bdbedac35fa3",
       "EV-d1d36268ff74be0e",
       "EV-8734f7217e78c861",
@@ -47,7 +48,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-01",
-    "lastSeen": "2026-08-02",
+    "lastSeen": "2026-08-04",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -58,6 +59,7 @@
       ],
       "partnerships": [],
       "productsServices": [
+        "EV-650e4b23d45d5758",
         "EV-c157bdbedac35fa3",
         "EV-d1d36268ff74be0e",
         "EV-8734f7217e78c861",
@@ -80,6 +82,48 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-650e4b23d45d5758",
+        "dataDate": "2026-08-04",
+        "date": "2026-08-03",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "阿里巴巴再次挑战美国AI霸主地位",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-047364b9be67f665"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "video_generation",
+            "name": "视频生成",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-047364b9be67f665",
+          "EN-c70eca6b0f88f44d",
+          "EN-7d3194f79e645c42",
+          "EN-b5251b35f15bedc4",
+          "EN-5388bc10736a0eff",
+          "EN-e1517be14d06cdb7",
+          "EN-20f8fde9c1a59738"
+        ]
+      },
       {
         "id": "EV-c157bdbedac35fa3",
         "dataDate": "2026-08-02",

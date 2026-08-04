@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "generatedAt": "2026-08-04T04:50:29.311Z",
     "latestDataDate": "2026-08-04",
     "currentDate": "2026-08-04",
-    "eventCount": 1832,
-    "quarantinedEventCount": 15
+    "eventCount": 1841,
+    "quarantinedEventCount": 16
   },
   "entity": {
     "id": "EN-7d1507284a5757ca",
@@ -408,12 +408,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-industry-manufacturing",
-        "TX-product_form-chip_accelerator",
         "TX-target_user-developer",
         "TX-use_case-research_discovery",
+        "TX-product_form-model",
+        "TX-industry-manufacturing",
+        "TX-product_form-chip_accelerator",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-industry-automotive_transportation",
@@ -564,6 +564,7 @@
       "typeLabel": "目标用户",
       "valueId": "business_user",
       "eventIds": [
+        "EV-f315914e0fedddfa",
         "EV-7a44a47bf36780d2",
         "EV-dc35d54f273196f0",
         "EV-24823de8fb76ac31",
@@ -760,6 +761,7 @@
         "EV-caf5d85e980c86fd"
       ],
       "entityIds": [
+        "EN-c0fa1ef864788c45",
         "EN-721eb3fd31f8e1f6",
         "EN-aef5bb4e898f303c",
         "EN-834cc12fc35adde7",
@@ -1847,14 +1849,13 @@
       "stageLabel": "已公布",
       "customer": "Superblocks",
       "vendor": "AWS",
-      "industry": "未披露",
+      "industry": "Technology",
       "useCase": "Bring Secure Enterprise AI App Development to Amazon Bedrock - US Press Center",
       "reportedNeed": "未披露",
       "deliveryComponents": [],
       "outcomes": [],
       "metrics": [],
       "undisclosedFields": [
-        "industry",
         "workflow_before",
         "workflow_after",
         "delivery_model",
@@ -1891,16 +1892,15 @@
       "stageLabel": "已公布",
       "customer": "Superblocks",
       "vendor": "AWS",
-      "industry": "未披露",
+      "industry": "Technology",
       "useCase": "Bring Secure Enterprise AI App Development to Amazon Bedrock - US Press Center",
       "workflow": "未披露",
       "systems": [],
       "outcomes": [],
       "observationCount": 1,
-      "completeness": 0.5,
-      "completenessPercent": 50,
+      "completeness": 0.625,
+      "completenessPercent": 63,
       "missingFields": [
-        "industry",
         "workflow",
         "systems_integrated",
         "reported_outcomes"

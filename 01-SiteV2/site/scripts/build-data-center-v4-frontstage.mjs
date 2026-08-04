@@ -613,7 +613,13 @@ export function buildViewpoints(root, entityProfiles = []) {
   })).sort((a, b) => b.date.localeCompare(a.date) || a.id.localeCompare(b.id));
 }
 
-export function buildEntityCollections(service, eventsById) {
+export function buildEntityCollections(service, eventsById, reviewDecisions = null) {
+  const enforceCatalogReview = reviewDecisions !== null;
+  const reviewedCatalogIds = new Set((Array.isArray(reviewDecisions) ? reviewDecisions : reviewDecisions?.decisions || [])
+    .filter((decision) => decision.review_status === "accepted")
+    .filter((decision) => ["confirm", "correct"].includes(decision.action))
+    .filter((decision) => ["company", "product"].includes(decision.canonical?.catalog_type))
+    .map((decision) => decision.entity_id));
   const nodeById = new Map(service.taxonomyNodes.map((item) => [item.id, item]));
   const nameById = new Map(service.profiles.map((item) => [item.id, item.name]));
   const profileById = new Map(service.profiles.map((item) => [item.id, item]));
@@ -651,7 +657,7 @@ export function buildEntityCollections(service, eventsById) {
     });
   };
   const companies = service.profiles
-    .filter((profile) => profile.entityType === "organization_candidate" && profile.verificationStatus === "verified" && profile.eventIds.length)
+    .filter((profile) => profile.entityType === "organization_candidate" && profile.verificationStatus === "verified" && profile.eventIds.length && (!enforceCatalogReview || reviewedCatalogIds.has(profile.id)))
     .map((profile) => ({
       ...common(profile),
       type: "公司/机构",
@@ -660,7 +666,7 @@ export function buildEntityCollections(service, eventsById) {
         .map((relation) => relation.object_ref)
     }));
   const products = service.profiles
-    .filter((profile) => profile.entityType === "product_candidate" && profile.verificationStatus === "verified" && profile.eventIds.length)
+    .filter((profile) => profile.entityType === "product_candidate" && profile.verificationStatus === "verified" && profile.eventIds.length && (!enforceCatalogReview || reviewedCatalogIds.has(profile.id)))
     .map((profile) => {
       const companyIds = unique(productOwnerIds.get(profile.id) || []);
       const firstEvent = profile.eventIds.map((id) => eventsById.get(id)).find(Boolean);
@@ -769,7 +775,7 @@ export function buildFrontstageData(root = defaultRoot) {
     reviewDecisions,
     generatedAt: process.env.WAVESIGHT_ENTITY_HISTORY_GENERATED_AT || ""
   });
-  const entityCollections = buildEntityCollections(entityHistory, eventsById);
+  const entityCollections = buildEntityCollections(entityHistory, eventsById, reviewDecisions);
   const viewpoints = buildViewpoints(root, entityHistory.profiles);
 
   return {

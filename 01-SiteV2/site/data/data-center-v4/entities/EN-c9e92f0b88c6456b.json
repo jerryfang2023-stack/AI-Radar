@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "generatedAt": "2026-08-04T04:50:29.311Z",
     "latestDataDate": "2026-08-04",
     "currentDate": "2026-08-04",
-    "eventCount": 1832,
-    "quarantinedEventCount": 15
+    "eventCount": 1841,
+    "quarantinedEventCount": 16
   },
   "entity": {
     "id": "EN-c9e92f0b88c6456b",
@@ -29,8 +29,8 @@
       "TX-industry-financial_services",
       "TX-industry-telecommunications",
       "TX-technology-agentic_execution",
-      "TX-product_form-ai_compute_system",
-      "TX-industry-healthcare_life_sciences"
+      "TX-industry-healthcare_life_sciences",
+      "TX-product_form-ai_compute_system"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-04",
@@ -1081,66 +1081,6 @@
       "lastSeen": "2027-09-30"
     },
     {
-      "id": "TX-product_form-ai_compute_system",
-      "name": "AI 计算系统",
-      "nodeType": "product_form",
-      "typeLabel": "产品形态",
-      "valueId": "ai_compute_system",
-      "eventIds": [
-        "EV-faf8db3567f108e2",
-        "EV-f282ab8740ff0096",
-        "EV-7abd8ec418f1e7f3",
-        "EV-e9d06e8a06aa7318",
-        "EV-dbbe3fd637be213f",
-        "EV-44ec7c229995ca3c",
-        "EV-a852dc0ca6011ff6",
-        "EV-c3b96b789b5bcafd",
-        "EV-b9a1cba0b59a5354",
-        "EV-ebdc37429f89b55a",
-        "EV-234ad54940674bf6",
-        "EV-ad8e1754463695fd",
-        "EV-5b16886442234f81",
-        "EV-451a70d4374c2818",
-        "EV-140aab677738351f",
-        "EV-1dc482e2fe2f10bc",
-        "EV-7bc2e6744a92c81f",
-        "EV-5d50eb202b478bd4",
-        "EV-a67071a8550cb1be"
-      ],
-      "entityIds": [
-        "EN-54dfb14dcddad637",
-        "EN-0995103010d39563",
-        "EN-4e4b333252f207fd",
-        "EN-bbdefa2950f49882",
-        "EN-cecdd8369134f75e",
-        "EN-c9e92f0b88c6456b",
-        "EN-772c171be4bf6551",
-        "EN-8d4321d936320802",
-        "EN-240389f4b730bad4",
-        "EN-bb144c85d7f4652d",
-        "EN-adb4b0aa1de289f9",
-        "EN-d7e81f6e7d39f00f",
-        "EN-98502f8f7e5e64cd",
-        "EN-a89a94ff38d4dc95"
-      ],
-      "fdeIds": [
-        "FDE-d1333c4e772841f2",
-        "FDE-dadf0e9572889d3d",
-        "FDE-856a0ed89c848048",
-        "FDE-b366647aabd8f450"
-      ],
-      "hardwareIds": [
-        "HW-a033b945449628d5",
-        "HW-c5a22adcc66136ed",
-        "HW-a7207541fe11bd3b",
-        "HW-fda4fe26e7e80468",
-        "HW-fceac179a4df80f5",
-        "HW-9a39a7f449362f96"
-      ],
-      "firstSeen": "2026-05-08",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "TX-industry-healthcare_life_sciences",
       "name": "医疗与生命科学",
       "nodeType": "industry",
@@ -1268,6 +1208,65 @@
       ],
       "firstSeen": "2026-01-20",
       "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "TX-product_form-ai_compute_system",
+      "name": "AI 计算系统",
+      "nodeType": "product_form",
+      "typeLabel": "产品形态",
+      "valueId": "ai_compute_system",
+      "eventIds": [
+        "EV-f282ab8740ff0096",
+        "EV-7abd8ec418f1e7f3",
+        "EV-e9d06e8a06aa7318",
+        "EV-dbbe3fd637be213f",
+        "EV-44ec7c229995ca3c",
+        "EV-a852dc0ca6011ff6",
+        "EV-c3b96b789b5bcafd",
+        "EV-b9a1cba0b59a5354",
+        "EV-ebdc37429f89b55a",
+        "EV-234ad54940674bf6",
+        "EV-ad8e1754463695fd",
+        "EV-5b16886442234f81",
+        "EV-451a70d4374c2818",
+        "EV-140aab677738351f",
+        "EV-1dc482e2fe2f10bc",
+        "EV-7bc2e6744a92c81f",
+        "EV-5d50eb202b478bd4",
+        "EV-a67071a8550cb1be"
+      ],
+      "entityIds": [
+        "EN-0995103010d39563",
+        "EN-4e4b333252f207fd",
+        "EN-bbdefa2950f49882",
+        "EN-cecdd8369134f75e",
+        "EN-c9e92f0b88c6456b",
+        "EN-54dfb14dcddad637",
+        "EN-772c171be4bf6551",
+        "EN-8d4321d936320802",
+        "EN-240389f4b730bad4",
+        "EN-bb144c85d7f4652d",
+        "EN-adb4b0aa1de289f9",
+        "EN-d7e81f6e7d39f00f",
+        "EN-98502f8f7e5e64cd",
+        "EN-a89a94ff38d4dc95"
+      ],
+      "fdeIds": [
+        "FDE-d1333c4e772841f2",
+        "FDE-dadf0e9572889d3d",
+        "FDE-856a0ed89c848048",
+        "FDE-b366647aabd8f450"
+      ],
+      "hardwareIds": [
+        "HW-a033b945449628d5",
+        "HW-c5a22adcc66136ed",
+        "HW-a7207541fe11bd3b",
+        "HW-fda4fe26e7e80468",
+        "HW-fceac179a4df80f5",
+        "HW-9a39a7f449362f96"
+      ],
+      "firstSeen": "2026-05-08",
+      "lastSeen": "2026-08-04"
     }
   ],
   "fde": [],
@@ -1285,9 +1284,9 @@
       "supplier": "NVIDIA",
       "customer": "Aleria",
       "processNode": "未披露",
-      "capacity": "未披露",
-      "capacityUnit": "",
-      "site": "未披露",
+      "capacity": 16000,
+      "capacityUnit": "GPUs",
+      "site": "United States",
       "region": "United States",
       "contractValue": "未披露",
       "shipmentDate": "未披露",

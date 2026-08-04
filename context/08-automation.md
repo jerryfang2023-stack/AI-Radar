@@ -78,6 +78,15 @@ Final Closure also rebuilds and gates the local V4 JSONL/DuckDB serving layer.
 This refresh is part of the existing task and must not be installed as a
 separate scheduled task or Startup loop.
 
+Funding recovery is downstream-only when the same-date V4 batch already passes
+the integrity gate. A retry must hydrate the configured private evidence store,
+exclude the current output file from historical deduplication, cite the
+canonical event source, and preserve canonical amount/date/round. Contract or
+procurement values cannot become funding merely because the article body
+mentions hardware financing. Newly discovered company/product entities remain
+outside the public Entity Index until an accepted catalog-review decision
+exists.
+
 Install or repair the complete local contract with
 `npm run install:windows-automation`. Audit it without changing task state with
 `npm run assert:windows-automation`.

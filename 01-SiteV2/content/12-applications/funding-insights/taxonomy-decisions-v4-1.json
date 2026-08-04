@@ -5,13 +5,13 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-03T06:49:54.658Z",
+    "generated_at": "2026-08-04T04:50:09.359Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 241,
-    "input_hash": "341961d21631f561",
+    "decision_count": 244,
+    "input_hash": "750c32f8a06ee7fc",
     "override_count": 17,
     "needs_review_count": 0,
     "low_confidence_count": 0
@@ -4730,6 +4730,61 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Zenskar 提供 AI 原生计费与收入自动化平台，面向财务团队优化订单到现金流程，属于跨行业的企业业务功能，不涉及物理 AI 或基础设施层，因此归入企业应用-生产力工作流。"
+    },
+    {
+      "event_id": "EV-450f624a6a6446ce",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "Hark is building a proactive, personalized AI with speech, vision, and memory, integrating native hardware and new interfaces. This aligns with an AI device (ai_device) for personal productivity and enterprise workflows. The allowed hierarchy tuple [\"enterprise_applications\",\"productivity_enterprise_workflows\",\"\"] is copied exactly. Use case is productivity_enterprise_workflows; target user is consumer given the personal AI focus. No specific industry is indicated."
+    },
+    {
+      "event_id": "EV-2301cd1470155075",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "llm_benchmarking_routing",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "research_discovery"
+      ],
+      "industry_ids": [
+        "professional_services"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "DesignArena is a blind LLM evaluation and ranking platform using Bradley-Terry pairwise comparisons. It fits observability_evaluation → llm_benchmarking_routing. The product is an end-user application for benchmarking, primarily serving developers and researchers in AI labs."
+    },
+    {
+      "event_id": "EV-f315914e0fedddfa",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "June 提供企业系统部署与配置自动化平台，将复杂配置转为业务规则，支持沙盒测试与审计，属于跨行业的企业生产力与工作流工具，不涉及物理世界感知决策，非基础设施层，也未限定单一行业，因此归入 enterprise_applications 下的 productivity_enterprise_workflows。"
     }
   ]
 }

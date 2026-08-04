@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
-import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, eventStatus, facetAssertionsForClaim, facetMatchers, findEventRule, modelAssistedEventEligibility, normalizeEventTitle, publicEventSourceTitleIssue, repairExistingChinaMarketScope, repairExistingEntityLinks, sourceArtifact, tagAssertionsForClaim, taxonomyEvidenceSegmentRelevant, taxonomyMatchers, trimBoilerplate } from "../build-data-center-v4.mjs";
+import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, eventStatus, facetAssertionsForClaim, facetMatchers, findEventRule, modelAssistedEventEligibility, normalizeEventTitle, organizationMentions, publicEventSourceTitleIssue, repairExistingChinaMarketScope, repairExistingEntityLinks, sourceArtifact, tagAssertionsForClaim, taxonomyEvidenceSegmentRelevant, taxonomyMatchers, trimBoilerplate } from "../build-data-center-v4.mjs";
 import { evaluateBundle, evaluateBundleFiles } from "../assert-data-center-v4.mjs";
 import { buildEventDisplayTitle } from "../event-public-title.mjs";
 import { coreRawQcViolationCounts, isCoreV4EvidenceItem, isRoutedV4EvidenceItem, isUsableCoreEvidenceItem } from "../guanlan-monitor-quality-gate.mjs";
@@ -688,6 +688,20 @@ test("organization aliases resolve Chinese commercial-event title structures", (
   assert.ok(bundle.canonical_events.every((event) => event.entities.length > 0));
 });
 
+test("a bilingual organization subject resolves to one canonical company", () => {
+  const quote = "沐曦股份 (MetaX) 今日宣布旗下曦云 C 系列 GPU 完成对稀宇 MiniMax H3 多模态生成模型的 Day 0 适配";
+  const mentions = organizationMentions(
+    "沐曦曦云 C 系列 GPU 实现 Day 0 适配 MiniMax H3 多模态生成模型",
+    { subject: "沐曦股份", action: "model_release", object: "曦云 C 系列 GPU" },
+    "model_release",
+    quote,
+    [{ subject: "沐曦股份", source_quote: quote }],
+  );
+
+  assert.equal(mentions.some((item) => item.canonicalName === "MetaX"), true);
+  assert.equal(mentions.some((item) => item.canonicalName === "沐曦股份"), false);
+});
+
 test("current funding, public-sector, and hardware titles resolve named organizations", () => {
   const bundle = buildBundle([
     entry(
@@ -762,6 +776,38 @@ test("a secured AI infrastructure contract with a dollar value is not funding", 
 
   assert.equal(bundle.canonical_events[0].event_type, "procurement_contract");
   assert.ok(bundle.claims.every((claim) => claim.claim_type !== "funding"));
+});
+
+test("contract hardware financing language does not turn a customer agreement into funding", () => {
+  const bundle = buildBundle([
+    entry(
+      "axe-compute-financed-hardware-contract",
+      "Axe Compute secures $1.5B AI GPU cluster deal - The Globe and Mail",
+      "Axe Compute secured a five-year $1.5 billion dedicated AI infrastructure contract. The company participates in the financing of the hardware and operates the cluster under enterprise SLAs.",
+    ),
+  ], taxonomy, date, "2026-08-04T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events[0].event_type, "procurement_contract");
+  assert.ok(bundle.claims.every((claim) => claim.claim_type !== "funding"));
+});
+
+test("funding entity extraction resolves described companies and SEO-style startup titles", () => {
+  const bundle = buildBundle([
+    entry(
+      "designarena-intelligence-funding",
+      "DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入品味",
+      "Design Arena creators raise $7.9 million to bring taste to AI models. Intelligence raised a $7.9 million seed round.",
+    ),
+    entry(
+      "hark-hardware-funding",
+      "Hark AI Hardware Funding: $700M Raised at $6B Valuation",
+      "Hark AI Hardware Startup Secures $700M at $6B Valuation. Hark raised over $700 million in Series A funding.",
+    ),
+  ], taxonomy, date, "2026-08-04T00:00:00.000Z", { allowHistoricalFunding: true });
+
+  const companies = new Set(bundle.entities.map((entity) => entity.canonical_name));
+  assert.ok(companies.has("Intelligence"));
+  assert.ok(companies.has("Hark"));
 });
 
 test("a truncated secured-infrastructure title still uses the captured contract lead", () => {
