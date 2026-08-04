@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-03T07:17:08.673Z",
-    "latestDataDate": "2026-08-03",
-    "currentDate": "2026-08-03",
-    "eventCount": 1816,
+    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "latestDataDate": "2026-08-04",
+    "currentDate": "2026-08-04",
+    "eventCount": 1832,
     "quarantinedEventCount": 15
   },
   "node": {
@@ -68,6 +68,7 @@
       "EV-cfb7c4b4b765f53b",
       "EV-3acfc96d99c32cf0",
       "EV-777eb5b7783b71fb",
+      "EV-22f0d8caaa65a6a2",
       "EV-eec1e6857f0e0b2b",
       "EV-05a87b578967c83e",
       "EV-0609f4badfe84803",
@@ -166,13 +167,14 @@
     "fdeIds": [
       "FDE-802c377126f36fc5",
       "FDE-3d5eb0bc571f55bf",
+      "FDE-5314a0e746758b29",
       "FDE-3665b073634d4b9d"
     ],
     "hardwareIds": [
       "HW-c5a22adcc66136ed"
     ],
     "firstSeen": "2019-03-11",
-    "lastSeen": "2026-07-31"
+    "lastSeen": "2026-08-04"
   },
   "events": [
     {
@@ -17204,6 +17206,141 @@
       "publisher": "techcrunch.com"
     },
     {
+      "id": "EV-22f0d8caaa65a6a2",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "updatedDate": "2026-08-04",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Superblocks与AWS宣布战略合作，为Amazon Bedrock带来安全的企业级AI应用开发 - 美国新闻中心",
+      "originalTitle": "Superblocks and AWS Announce Strategic Collaboration to Bring Secure Enterprise AI App Development to Amazon Bedrock - US Press Center",
+      "subject": "Superblocks and AWS Announce Strategic",
+      "action": "Collaboration",
+      "object": "to Bring Secure Enterprise AI App Development to Amazon Bedrock - US Press Center",
+      "metrics": [],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-1706716bb5eebbe2",
+        "EN-7d1507284a5757ca",
+        "EN-cbc62794911ff31b"
+      ],
+      "entityNames": [
+        "Superblocks",
+        "AWS",
+        "Amazon"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://press.aboutamazon.com/aws/2026/8/superblocks-and-aws-announce-strategic-collaboration-to-bring-secure-enterprise-ai-app-development-to-amazon-bedrock",
+      "publisher": "press.aboutamazon.com"
+    },
+    {
       "id": "EV-eec1e6857f0e0b2b",
       "dataDate": "2026-07-23",
       "date": "2026-07-22",
@@ -20857,6 +20994,7 @@
       ],
       "eventIds": [
         "EV-81a37a2365624b42",
+        "EV-c89018d79b3d25bd",
         "EV-97854226b6f43a95",
         "EV-136b2edc9b9f3be8",
         "EV-14cc7f194f3e5af8",
@@ -20930,6 +21068,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-9217ac1643635ce4",
         "EV-a3e674dce15e7188",
         "EV-7752b9d64fdfe1df",
         "EV-d9d415868b74485c",
@@ -21124,6 +21263,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
         "TX-use_case-research_discovery",
@@ -21139,7 +21279,6 @@
         "TX-target_user-consumer",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-industry-professional_services",
@@ -21177,7 +21316,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "EN-6998e3957b261cf2",
@@ -21219,6 +21358,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
         "TX-industry-telecommunications",
@@ -21234,7 +21374,6 @@
         "TX-ai_market_subcategory-sales",
         "TX-use_case-customer_support",
         "TX-use_case-sales",
-        "TX-product_form-model",
         "TX-industry-professional_services",
         "TX-industry-retail_ecommerce",
         "TX-industry-aerospace_defense",
@@ -21430,9 +21569,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-end_user_application",
         "TX-use_case-security_operations",
-        "TX-product_form-model",
         "TX-product_form-security_software",
         "TX-deployment_model-on_premise"
       ],
@@ -22163,6 +22302,7 @@
         "EV-467d1a701d21327d",
         "EV-acdeebead5324344",
         "EV-cded77b1de2db61a",
+        "EV-a852dc0ca6011ff6",
         "EV-a4b7cd533b0b34dc",
         "EV-8805e96b4fb544dd",
         "EV-c3f617e75d303f59",
@@ -22243,7 +22383,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "EN-534e99d81da1c54d",
@@ -22583,6 +22723,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-financial_services",
@@ -22594,13 +22735,12 @@
         "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
         "TX-use_case-security_operations",
-        "TX-product_form-model",
+        "TX-product_form-ai_compute_system",
         "TX-technology-code_generation",
         "TX-technology-computer_use",
         "TX-industry-retail_ecommerce",
         "TX-industry-aerospace_defense",
         "TX-technology-embodied_ai",
-        "TX-product_form-ai_compute_system",
         "TX-ai_market_application-computing_infrastructure",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
@@ -22698,9 +22838,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-use_case-software_development",
         "TX-product_form-end_user_application",
-        "TX-product_form-model",
         "TX-technology-code_generation"
       ],
       "relatedEntityIds": [
@@ -22734,6 +22874,43 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-5314a0e746758b29",
+      "eventId": "EV-22f0d8caaa65a6a2",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "title": "Superblocks与AWS宣布战略合作，为Amazon Bedrock带来安全的企业级AI应用开发 - 美国新闻中心",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Superblocks",
+      "vendor": "AWS",
+      "industry": "未披露",
+      "useCase": "Bring Secure Enterprise AI App Development to Amazon Bedrock - US Press Center",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://press.aboutamazon.com/aws/2026/8/superblocks-and-aws-announce-strategic-collaboration-to-bring-secure-enterprise-ai-app-development-to-amazon-bedrock",
+      "entityIds": [
+        "EN-1706716bb5eebbe2",
+        "EN-7d1507284a5757ca",
+        "EN-cbc62794911ff31b"
+      ]
+    },
     {
       "id": "FDE-3d5eb0bc571f55bf",
       "eventId": "EV-777eb5b7783b71fb",
@@ -22945,6 +23122,57 @@
         "EN-e6f146354586d556",
         "EN-4a354bbc9b70a6e6",
         "EN-ee1e31ffef7dbe64"
+      ]
+    }
+  ],
+  "fdeDossiers": [
+    {
+      "id": "FDED-534521941a007f6a",
+      "implementationKey": "534521941a007f6a",
+      "eventId": "EV-22f0d8caaa65a6a2",
+      "eventIds": [
+        "EV-22f0d8caaa65a6a2"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "title": "Superblocks × AWS：Bring Secure Enterprise AI App Development to Amazon Bedrock - US Press Center",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Superblocks",
+      "vendor": "AWS",
+      "industry": "未披露",
+      "useCase": "Bring Secure Enterprise AI App Development to Amazon Bedrock - US Press Center",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-c8c2e6fd3a084e77",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-03",
+          "dataDate": "2026-08-04",
+          "eventId": "EV-22f0d8caaa65a6a2",
+          "eventTitle": "Superblocks与AWS宣布战略合作，为Amazon Bedrock带来安全的企业级AI应用开发 - 美国新闻中心",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://press.aboutamazon.com/aws/2026/8/superblocks-and-aws-announce-strategic-collaboration-to-bring-secure-enterprise-ai-app-development-to-amazon-bedrock",
+      "entityIds": [
+        "EN-1706716bb5eebbe2",
+        "EN-7d1507284a5757ca",
+        "EN-cbc62794911ff31b"
       ]
     }
   ]

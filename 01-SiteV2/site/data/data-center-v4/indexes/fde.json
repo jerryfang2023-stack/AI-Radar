@@ -5,13 +5,113 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-03T07:17:08.673Z",
-    "latestDataDate": "2026-08-03",
-    "currentDate": "2026-08-03",
-    "eventCount": 1816,
+    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "latestDataDate": "2026-08-04",
+    "currentDate": "2026-08-04",
+    "eventCount": 1832,
     "quarantinedEventCount": 15
   },
   "fde": [
+    {
+      "id": "FDE-0193a6afd26db7ae",
+      "eventId": "EV-d2a623e8eef1f61d",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "title": "KIDZ AI与Limestone Networks签署数据中心谅解备忘录，部署开源权重AI模型的推理计算基础设施，推进其4460万美元的Canopy Wave协议",
+      "stage": "planned",
+      "stageLabel": "计划中",
+      "customer": "KIDZ AI",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement | Newswire",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "KIDZ AI Inc. (NASDAQ:KIDZ)(NASDAQ:KIDZW) (\"KIDZ AI\" or the \"Company\"), an education technology company advancing AI infrastructure and GPU compute initiatives alongside its core EdTech operations, today announced that it has signed a Memorandum of Understanding (\"MOU\") with Limestone Networks, Inc. (\"Limestone\"), a Texas-based cloud and data center infrastructure provider, for the proposed deployment of the Company's AI computing infrastructure at the DFW3 data center in Dallas, Texas."
+      ],
+      "outcomes": [],
+      "metrics": [
+        "$44.6 Million",
+        "$44.6 Million"
+      ],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newswire.com/news/kidz-ai-signs-data-center-mou-with-limestone-networks-to-deploy-inference",
+      "entityIds": [
+        "EN-bd6769fe78d0971a"
+      ]
+    },
+    {
+      "id": "FDE-5314a0e746758b29",
+      "eventId": "EV-22f0d8caaa65a6a2",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "title": "Superblocks与AWS宣布战略合作，为Amazon Bedrock带来安全的企业级AI应用开发 - 美国新闻中心",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Superblocks",
+      "vendor": "AWS",
+      "industry": "未披露",
+      "useCase": "Bring Secure Enterprise AI App Development to Amazon Bedrock - US Press Center",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://press.aboutamazon.com/aws/2026/8/superblocks-and-aws-announce-strategic-collaboration-to-bring-secure-enterprise-ai-app-development-to-amazon-bedrock",
+      "entityIds": [
+        "EN-1706716bb5eebbe2",
+        "EN-7d1507284a5757ca",
+        "EN-cbc62794911ff31b"
+      ]
+    },
     {
       "id": "FDE-13bbc5471db90438",
       "eventId": "EV-acddfa62aabb004f",
@@ -5095,6 +5195,55 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-534521941a007f6a",
+      "implementationKey": "534521941a007f6a",
+      "eventId": "EV-22f0d8caaa65a6a2",
+      "eventIds": [
+        "EV-22f0d8caaa65a6a2"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "title": "Superblocks × AWS：Bring Secure Enterprise AI App Development to Amazon Bedrock - US Press Center",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Superblocks",
+      "vendor": "AWS",
+      "industry": "未披露",
+      "useCase": "Bring Secure Enterprise AI App Development to Amazon Bedrock - US Press Center",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-c8c2e6fd3a084e77",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-03",
+          "dataDate": "2026-08-04",
+          "eventId": "EV-22f0d8caaa65a6a2",
+          "eventTitle": "Superblocks与AWS宣布战略合作，为Amazon Bedrock带来安全的企业级AI应用开发 - 美国新闻中心",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://press.aboutamazon.com/aws/2026/8/superblocks-and-aws-announce-strategic-collaboration-to-bring-secure-enterprise-ai-app-development-to-amazon-bedrock",
+      "entityIds": [
+        "EN-1706716bb5eebbe2",
+        "EN-7d1507284a5757ca",
+        "EN-cbc62794911ff31b"
+      ]
+    },
+    {
       "id": "FDED-e8ece81a186be81c",
       "implementationKey": "e8ece81a186be81c",
       "eventId": "EV-acddfa62aabb004f",
@@ -5763,38 +5912,40 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-08-03",
-      "funnel_id": "LF-e0cbea6fc8b9a816",
+      "data_date": "2026-08-04",
+      "funnel_id": "LF-18a6662e44ff90a1",
       "lens": "fde",
-      "date": "2026-08-03",
+      "date": "2026-08-04",
       "monitoring_paths": [
         "fde_customer_case",
         "fde_earnings_disclosure",
         "fde_procurement_contract",
         "fde_production_rollout"
       ],
-      "raw_documents": 108,
-      "original_sources": 98,
-      "valid_claims": 35,
+      "raw_documents": 118,
+      "original_sources": 106,
+      "valid_claims": 23,
       "observations": 1,
-      "canonical_events": 11,
+      "canonical_events": 6,
       "blocker_counts": {
-        "multi_event_roundup_not_single_event_source": 1,
-        "no_source_bounded_event": 19,
-        "source_outside_daily_window": 54,
-        "non_event_or_index_title": 10,
-        "repository_page_requires_release_source": 4,
-        "opinion_without_source_bounded_event": 1,
+        "no_source_bounded_event": 21,
+        "repository_page_requires_release_source": 7,
+        "source_outside_daily_window": 63,
+        "non_event_or_index_title": 7,
+        "source_outside_funding_backfill_window": 1,
+        "source_published_after_data_date": 1,
         "community_source_requires_original_event_source": 1,
-        "raw_source_quality_block": 7
+        "multi_event_roundup_not_single_event_source": 1,
+        "raw_source_quality_block": 8,
+        "raw_document_not_auditable": 2
       },
       "rates": {
-        "original_source_rate": 0.9074074074074074,
-        "valid_claim_rate": 0.32407407407407407,
-        "observation_rate": 0.02857142857142857,
-        "event_conversion_rate": 0.3142857142857143
+        "original_source_rate": 0.8983050847457628,
+        "valid_claim_rate": 0.19491525423728814,
+        "observation_rate": 0.043478260869565216,
+        "event_conversion_rate": 0.2608695652173913
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/monitoring-funnel.json"
     }
   ]
 }

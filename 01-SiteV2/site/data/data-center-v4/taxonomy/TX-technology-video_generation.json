@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-03T07:17:08.673Z",
-    "latestDataDate": "2026-08-03",
-    "currentDate": "2026-08-03",
-    "eventCount": 1816,
+    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "latestDataDate": "2026-08-04",
+    "currentDate": "2026-08-04",
+    "eventCount": 1832,
     "quarantinedEventCount": 15
   },
   "node": {
@@ -18,8 +18,10 @@
     "typeLabel": "技术",
     "valueId": "video_generation",
     "eventIds": [
+      "EV-522c339dded54be5",
       "EV-a354af52772334fd",
       "EV-26d2874c6ce028d6",
+      "EV-63858d9b5ef92175",
       "EV-6654f62015eff8e3",
       "EV-50893df365a7097d",
       "EV-6fbbbfcdcec81df4",
@@ -31,8 +33,10 @@
       "EV-887d47bb477e2142"
     ],
     "entityIds": [
+      "EN-e1517be14d06cdb7",
       "EN-d747d6f5125b6bee",
       "EN-b81c8201acfc7639",
+      "EN-422332977c41eb77",
       "EN-c9e6168149dd7cf6",
       "EN-ec1c8f558ff61e34",
       "EN-047364b9be67f665",
@@ -41,11 +45,191 @@
       "EN-47c1e53c427aafb4"
     ],
     "fdeIds": [],
-    "hardwareIds": [],
+    "hardwareIds": [
+      "HW-68457c8c0a7240ac"
+    ],
     "firstSeen": "2026-06-16",
-    "lastSeen": "2026-07-22"
+    "lastSeen": "2026-08-04"
   },
   "events": [
+    {
+      "id": "EV-522c339dded54be5",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "updatedDate": "2026-08-04",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "英特尔为开源多模态视频模型 MiniMax H3 提供 Day 0 支持，实现多卡 GPU 部署方案",
+      "originalTitle": "",
+      "subject": "英特尔为开源多模态视频模型 MiniMax H3 提供 Day 0 支持，实现多卡",
+      "action": "GPU 部署",
+      "object": "方案",
+      "metrics": [
+        "70 GPU"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-ithome-rss"
+        ],
+        "claim_refs": [
+          "CL-3622ba0e9d267e1d",
+          "CL-01b40bbd9f34aaf5",
+          "CL-51f0d6562c2b7a9c",
+          "CL-e3a6aa58eb47253c"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-e1517be14d06cdb7"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-78c60327054dcd52",
+        "EN-e1517be14d06cdb7"
+      ],
+      "entityNames": [
+        "英特尔为",
+        "MiniMax"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/985/033.htm",
+      "publisher": "IT之家（RSS）"
+    },
     {
       "id": "EV-a354af52772334fd",
       "dataDate": "2026-07-20",
@@ -296,6 +480,142 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/967/217.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-63858d9b5ef92175",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "updatedDate": "2026-08-04",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "ComfyUI 新增 MiniMax H3 Day-0 支持：开放权重、原生音频与 2K 视频",
+      "originalTitle": "",
+      "subject": "ComfyUI",
+      "action": "新增",
+      "object": "MiniMax H3 Day-0 支持：开放权重、原生音频与 2K 视频",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-422332977c41eb77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-422332977c41eb77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-422332977c41eb77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-422332977c41eb77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-422332977c41eb77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-422332977c41eb77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-422332977c41eb77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-422332977c41eb77",
+        "EN-e1517be14d06cdb7",
+        "EN-d150291eb0b0341f"
+      ],
+      "entityNames": [
+        "ComfyUI",
+        "MiniMax",
+        "H3 Day-0"
+      ],
+      "productName": "H3 Day-0",
+      "products": [
+        {
+          "name": "H3 Day-0",
+          "type": "产品/服务",
+          "ownerNames": [
+            "MiniMax"
+          ]
+        }
+      ],
+      "sourceUrl": "https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
     },
     {
       "id": "EV-6654f62015eff8e3",
@@ -1285,6 +1605,38 @@
   ],
   "entities": [
     {
+      "id": "EN-e1517be14d06cdb7",
+      "name": "MiniMax",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-522c339dded54be5",
+        "EV-63858d9b5ef92175",
+        "EV-ec966b509327cbac",
+        "EV-243e73016576fa43",
+        "EV-9da9d755019f241f",
+        "EV-aae8b6aa0da7f103",
+        "EV-20cdbe59ba2a1359",
+        "EV-d5daf0537fe7b2d7"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-technology-multimodal",
+        "TX-technology-video_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-cf81a61e4eaef17c"
+      ],
+      "firstSeen": "2026-06-01",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "EN-d747d6f5125b6bee",
       "name": "阿里云百炼",
       "entityType": "organization_candidate",
@@ -1341,9 +1693,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-use_case-software_development",
         "TX-technology-agentic_execution",
-        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-product_form-ai_device",
@@ -1357,6 +1709,28 @@
       ],
       "firstSeen": "2026-05-25",
       "lastSeen": "2026-07-28"
+    },
+    {
+      "id": "EN-422332977c41eb77",
+      "name": "ComfyUI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-63858d9b5ef92175"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-open_weights",
+        "TX-technology-video_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "EN-c9e6168149dd7cf6",
@@ -1431,6 +1805,8 @@
         "EV-53f08daddd011dbb",
         "EV-e1a4bc40db4a9d8f",
         "EV-2a833330267cb2df",
+        "EV-4b286a3354cbf34a",
+        "EV-d2f8019b6783722f",
         "EV-bfa090c78227abf8",
         "EV-2e1352039c487bb0",
         "EV-b4aa08aef57bdb0f",
@@ -1472,6 +1848,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
@@ -1491,7 +1868,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -1544,13 +1921,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-use_case-research_discovery",
         "TX-use_case-software_development",
         "TX-use_case-physical_automation",
         "TX-industry-media_entertainment",
         "TX-use_case-security_operations",
-        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
@@ -1558,8 +1935,8 @@
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-technology-image_generation",
         "TX-technology-video_generation",
+        "TX-technology-image_generation",
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
@@ -1601,5 +1978,231 @@
     }
   ],
   "fde": [],
-  "hardware": []
+  "hardware": [
+    {
+      "id": "HW-68457c8c0a7240ac",
+      "eventId": "EV-522c339dded54be5",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "title": "英特尔为开源多模态视频模型 MiniMax H3 提供 Day 0 支持，实现多卡 GPU 部署方案",
+      "hardwareType": "gpu",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 70,
+      "capacityUnit": "GPU",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/985/033.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-08-03",
+      "entityIds": [
+        "EN-78c60327054dcd52",
+        "EN-e1517be14d06cdb7"
+      ]
+    }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-ca223925d7e51746",
+      "snapshotKey": "ca223925d7e51746",
+      "snapshotId": "HWS-c7b11b24c06f38fb",
+      "eventId": "EV-522c339dded54be5",
+      "eventIds": [
+        "EV-522c339dded54be5"
+      ],
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "title": "英特尔为",
+      "subject": "英特尔为",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "70",
+          "unit": "GPU",
+          "fact_ref": "HWF-cf3ae7402ac378e8"
+        }
+      },
+      "factCount": 4,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-4ec1c7a61ea1c9e0",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T07:25:14.000Z",
+          "subject_entity_id": "EN-78c60327054dcd52",
+          "subject_name": "英特尔为",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "英特尔：为开源多模态视频模型 MiniMax H3 提供 Day 0 支持，实现基于多卡 GPU 的部署方案 - IT之家",
+          "event_refs": [
+            "EV-522c339dded54be5"
+          ],
+          "claim_ref": "CL-3622ba0e9d267e1d",
+          "source_refs": [
+            "SA-72400fa5b9a3650b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-2edc1b8d095be08a",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T07:25:14.000Z",
+          "subject_entity_id": "EN-78c60327054dcd52",
+          "subject_name": "英特尔为",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "英特尔：为开源多模态视频模型 MiniMax H3 提供 Day 0 支持，实现基于多卡 GPU 的部署方案",
+          "event_refs": [
+            "EV-522c339dded54be5"
+          ],
+          "claim_ref": "CL-01b40bbd9f34aaf5",
+          "source_refs": [
+            "SA-72400fa5b9a3650b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-853a277cc557d1eb",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T07:25:14.000Z",
+          "subject_entity_id": "EN-78c60327054dcd52",
+          "subject_name": "英特尔为",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "据介绍，英特尔锐炫 Pro B70 第一时间完成对 MiniMax H3 的适配，英特尔团队 实现了一种基于多卡 GPU 的部署方案 。",
+          "event_refs": [
+            "EV-522c339dded54be5"
+          ],
+          "claim_ref": "CL-51f0d6562c2b7a9c",
+          "source_refs": [
+            "SA-72400fa5b9a3650b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-04",
+          "hardware_fact_id": "HWF-cf3ae7402ac378e8",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T07:25:14.000Z",
+          "subject_entity_id": "EN-78c60327054dcd52",
+          "subject_name": "英特尔为",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "70",
+          "unit": "GPU",
+          "source_quote": "该方案采用 Encoder 8 卡张量并行（8TP）、DiT 8 卡 USP（Ulysses Sequence Parallel，并结合 Layer-wise Offloading），以及 VAE 部署于 B70 GPU 的整体架构， 实现了视频生成全流程的 GPU 加速 。",
+          "event_refs": [
+            "EV-522c339dded54be5"
+          ],
+          "claim_ref": "CL-e3a6aa58eb47253c",
+          "source_refs": [
+            "SA-72400fa5b9a3650b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e1517be14d06cdb7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/985/033.htm",
+      "entityIds": [
+        "EN-78c60327054dcd52",
+        "EN-e1517be14d06cdb7"
+      ]
+    }
+  ]
 }

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-03T07:17:08.673Z",
-    "latestDataDate": "2026-08-03",
-    "currentDate": "2026-08-03",
-    "eventCount": 1816,
+    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "latestDataDate": "2026-08-04",
+    "currentDate": "2026-08-04",
+    "eventCount": 1832,
     "quarantinedEventCount": 15
   },
   "node": {
@@ -31,6 +31,7 @@
       "EV-3b40ec144e5db22c",
       "EV-c46e427fedbf518d",
       "EV-26183a56cf9ed63c",
+      "EV-4e09daa86f1acb4f",
       "EV-ff374e781601bfc7",
       "EV-22c88b4ff8c7d8d8"
     ],
@@ -47,6 +48,7 @@
       "EN-afff1ef2d34b618e",
       "EN-e4540a7c8404b1be",
       "EN-eafe895eb8119e6e",
+      "EN-a89151ba4b5ac0f2",
       "EN-c70eca6b0f88f44d"
     ],
     "fdeIds": [
@@ -54,7 +56,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2026-05-22",
-    "lastSeen": "2026-07-29"
+    "lastSeen": "2026-08-04"
   },
   "events": [
     {
@@ -8427,6 +8429,88 @@
       "publisher": "reuters.com"
     },
     {
+      "id": "EV-4e09daa86f1acb4f",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-04",
+      "updatedDate": "2026-08-04",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "95 后投资者利用 AI 批量生成虚假消息趁机交易牟利，被罚 48.5 万元",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "95 后投资者利用 AI 批量生成虚假消息趁机交易牟利，被罚 48.5 万元",
+      "metrics": [
+        "48.5 万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "legal_services",
+            "name": "法律服务",
+            "entityIds": [
+              "EN-a89151ba4b5ac0f2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "legal_services",
+          "name": "法律服务",
+          "entityIds": [
+            "EN-a89151ba4b5ac0f2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "legal_services",
+          "name": "法律服务",
+          "entityIds": [
+            "EN-a89151ba4b5ac0f2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a89151ba4b5ac0f2"
+      ],
+      "entityNames": [
+        "Baidu"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/985/294.htm",
+      "publisher": "IT之家"
+    },
+    {
       "id": "EV-ff374e781601bfc7",
       "dataDate": "2026-07-29",
       "date": "2026-07-28",
@@ -8968,6 +9052,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
         "TX-industry-telecommunications",
@@ -8983,7 +9068,6 @@
         "TX-ai_market_subcategory-sales",
         "TX-use_case-customer_support",
         "TX-use_case-sales",
-        "TX-product_form-model",
         "TX-industry-professional_services",
         "TX-industry-retail_ecommerce",
         "TX-industry-aerospace_defense",
@@ -9158,6 +9242,41 @@
       "lastSeen": "2026-05-22"
     },
     {
+      "id": "EN-a89151ba4b5ac0f2",
+      "name": "Baidu",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "百度"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-876baa523eb93c4f",
+        "EV-4e09daa86f1acb4f",
+        "EV-2ff0422bb25d073b",
+        "EV-9d5363657f3541e7",
+        "EV-ca0beb75aaf1c156",
+        "EV-daf1e21f8ccbf839",
+        "EV-2c1fc2143d7d4a6a",
+        "EV-3167e6eed75597e9"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-product_form-chip_accelerator",
+        "TX-technology-multimodal",
+        "TX-industry-legal_services"
+      ],
+      "relatedEntityIds": [
+        "EN-33ea25778e18d372"
+      ],
+      "firstSeen": "2026-02-14",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "EN-c70eca6b0f88f44d",
       "name": "Anthropic",
       "entityType": "organization_candidate",
@@ -9168,6 +9287,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-c89018d79b3d25bd",
         "EV-136b2edc9b9f3be8",
         "EV-d7a7244d620a2142",
         "EV-fbb105be35c21eb4",
@@ -9229,6 +9349,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-4b286a3354cbf34a",
         "EV-6f433ccff3dce657",
         "EV-5f2acbfb8f54fd59",
         "EV-6aae550a6523a8fd",
@@ -9431,6 +9552,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
@@ -9447,7 +9569,6 @@
         "TX-target_user-consumer",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-product_form-model",
         "TX-target_user-researcher",
         "TX-industry-government_public_sector",
         "TX-industry-legal_services",
@@ -9486,7 +9607,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-08-04"
     }
   ],
   "fde": [

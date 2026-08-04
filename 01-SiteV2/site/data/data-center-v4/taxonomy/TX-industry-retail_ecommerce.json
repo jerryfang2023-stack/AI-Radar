@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-03T07:17:08.673Z",
-    "latestDataDate": "2026-08-03",
-    "currentDate": "2026-08-03",
-    "eventCount": 1816,
+    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "latestDataDate": "2026-08-04",
+    "currentDate": "2026-08-04",
+    "eventCount": 1832,
     "quarantinedEventCount": 15
   },
   "node": {
@@ -56,6 +56,7 @@
       "EV-02686922dd82c4aa",
       "EV-99a0cb6bac516bdd",
       "EV-2ffc3377977da114",
+      "EV-7dd55841e1ca4652",
       "EV-ab1b780e6e543b42",
       "EV-047b90521b1e5903",
       "EV-26ed882216bda8b9",
@@ -104,6 +105,7 @@
       "EN-fb54e9062429a937",
       "EN-e274048227f164dc",
       "EN-88e2cce43eeadb36",
+      "EN-d50883991bfc5a69",
       "EN-d0cdc9650aa64450",
       "EN-ee7978d5f78778c6",
       "EN-a5401322acafcd3f",
@@ -122,7 +124,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2023-06-28",
-    "lastSeen": "2026-08-03"
+    "lastSeen": "2026-08-04"
   },
   "events": [
     {
@@ -16302,6 +16304,139 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-7dd55841e1ca4652",
+      "dataDate": "2026-08-04",
+      "date": "2026-08-03",
+      "updatedDate": "2026-08-04",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AnyMind Group推出AnyAI Agent，助力企业以自主AI转型营销与电商运营",
+      "originalTitle": "AnyMind Group launches AnyAI Agent to help enterprises transform marketing and e-commerce operations with autonomous AI | AnyMind Group",
+      "subject": "AnyMind Group",
+      "action": "launches",
+      "object": "AnyAI Agent to help enterprises transform marketing and e-commerce operations with autonomous AI | AnyMind Group",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-d50883991bfc5a69"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-d50883991bfc5a69"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-d50883991bfc5a69"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-d50883991bfc5a69"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-d50883991bfc5a69"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-d50883991bfc5a69"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-d50883991bfc5a69"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-d50883991bfc5a69",
+        "EN-1a575e1e8f8dec1d"
+      ],
+      "entityNames": [
+        "AnyMind Group",
+        "AnyAI"
+      ],
+      "productName": "AnyAI",
+      "products": [
+        {
+          "name": "AnyAI",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://anymindgroup.com/news/press-release/anyai-agent-launch-0826",
+      "publisher": "anymindgroup.com"
+    },
+    {
       "id": "EV-ab1b780e6e543b42",
       "dataDate": "2026-08-03",
       "date": "2026-08-01",
@@ -18092,6 +18227,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
@@ -18101,7 +18237,6 @@
         "TX-use_case-data_analysis",
         "TX-industry-automotive_transportation",
         "TX-use_case-sales",
-        "TX-product_form-model",
         "TX-industry-retail_ecommerce",
         "TX-use_case-marketing",
         "TX-ai_market_subcategory-marketing",
@@ -18221,6 +18356,7 @@
       ],
       "eventIds": [
         "EV-81a37a2365624b42",
+        "EV-c89018d79b3d25bd",
         "EV-97854226b6f43a95",
         "EV-136b2edc9b9f3be8",
         "EV-14cc7f194f3e5af8",
@@ -18294,6 +18430,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-9217ac1643635ce4",
         "EV-a3e674dce15e7188",
         "EV-7752b9d64fdfe1df",
         "EV-d9d415868b74485c",
@@ -18488,6 +18625,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
         "TX-use_case-research_discovery",
@@ -18503,7 +18641,6 @@
         "TX-target_user-consumer",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-industry-professional_services",
@@ -18541,7 +18678,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "EN-e69f64149edae6b1",
@@ -18653,6 +18790,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
         "TX-industry-telecommunications",
@@ -18668,7 +18806,6 @@
         "TX-ai_market_subcategory-sales",
         "TX-use_case-customer_support",
         "TX-use_case-sales",
-        "TX-product_form-model",
         "TX-industry-professional_services",
         "TX-industry-retail_ecommerce",
         "TX-industry-aerospace_defense",
@@ -19410,14 +19547,36 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-ai_infrastructure_software",
         "TX-product_form-model",
+        "TX-product_form-ai_infrastructure_software",
         "TX-industry-retail_ecommerce",
         "TX-product_form-ai_device"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-07",
       "lastSeen": "2026-07-26"
+    },
+    {
+      "id": "EN-d50883991bfc5a69",
+      "name": "AnyMind Group",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-7dd55841e1ca4652"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "EN-d0cdc9650aa64450",
@@ -19657,6 +19816,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-financial_services",
@@ -19668,13 +19828,12 @@
         "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
         "TX-use_case-security_operations",
-        "TX-product_form-model",
+        "TX-product_form-ai_compute_system",
         "TX-technology-code_generation",
         "TX-technology-computer_use",
         "TX-industry-retail_ecommerce",
         "TX-industry-aerospace_defense",
         "TX-technology-embodied_ai",
-        "TX-product_form-ai_compute_system",
         "TX-ai_market_application-computing_infrastructure",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
@@ -19800,10 +19959,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
         "TX-technology-agentic_execution",
-        "TX-product_form-model",
         "TX-industry-retail_ecommerce",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-fine_tuning"

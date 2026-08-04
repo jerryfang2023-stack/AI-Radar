@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-03T07:17:08.673Z",
-    "latestDataDate": "2026-08-03",
-    "currentDate": "2026-08-03",
-    "eventCount": 1816,
+    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "latestDataDate": "2026-08-04",
+    "currentDate": "2026-08-04",
+    "eventCount": 1832,
     "quarantinedEventCount": 15
   },
   "node": {
@@ -18,6 +18,7 @@
     "typeLabel": "技术",
     "valueId": "computer_use",
     "eventIds": [
+      "EV-c89018d79b3d25bd",
       "EV-97854226b6f43a95",
       "EV-e42e55d1e11a2ba2",
       "EV-333851b077b606c8",
@@ -26,6 +27,7 @@
       "EV-a4f052325d0ef230"
     ],
     "entityIds": [
+      "EN-876e7751ed9e3473",
       "EN-9d4cbc0ceab2c56a",
       "EN-ea3bd73e2b506e00",
       "EN-047364b9be67f665",
@@ -35,9 +37,100 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-05-23",
-    "lastSeen": "2026-07-27"
+    "lastSeen": "2026-08-04"
   },
   "events": [
+    {
+      "id": "EV-c89018d79b3d25bd",
+      "dataDate": "2026-08-04",
+      "date": "2026-07-24",
+      "updatedDate": "2026-08-04",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "in_progress",
+      "statusLabel": "进行中",
+      "publicationStatus": "partial",
+      "title": "Prentis，由Reid Hoffman、Mark Pincus联合创立的新AI实验室，正洽谈融资1亿美元",
+      "originalTitle": "Prentis, new AI lab co-founded by Reid Hoffman, Mark Pincus in talks to raise $100M | TechCrunch",
+      "subject": "Prentis, new AI lab co-founded by Reid Hoffman, Mark Pincus",
+      "action": "raise",
+      "object": "$100M",
+      "metrics": [
+        "$100M",
+        "$100 million",
+        "$1 billion",
+        "$55 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-876e7751ed9e3473"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-876e7751ed9e3473"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-876e7751ed9e3473"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-876e7751ed9e3473",
+        "EN-9d4cbc0ceab2c56a",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Prentis, new AI lab co-founded by Reid Hoffman, Mark Pincus",
+        "Prentis",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m",
+      "publisher": "techcrunch.com"
+    },
     {
       "id": "EV-97854226b6f43a95",
       "dataDate": "2026-07-27",
@@ -1053,6 +1146,27 @@
   ],
   "entities": [
     {
+      "id": "EN-876e7751ed9e3473",
+      "name": "Prentis, new AI lab co-founded by Reid Hoffman, Mark Pincus",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-c89018d79b3d25bd"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-computer_use"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-24",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "EN-ea3bd73e2b506e00",
       "name": "Meta",
       "entityType": "organization_candidate",
@@ -1074,6 +1188,7 @@
         "EV-467d1a701d21327d",
         "EV-acdeebead5324344",
         "EV-cded77b1de2db61a",
+        "EV-a852dc0ca6011ff6",
         "EV-a4b7cd533b0b34dc",
         "EV-8805e96b4fb544dd",
         "EV-c3f617e75d303f59",
@@ -1154,7 +1269,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "EN-047364b9be67f665",
@@ -1185,6 +1300,8 @@
         "EV-53f08daddd011dbb",
         "EV-e1a4bc40db4a9d8f",
         "EV-2a833330267cb2df",
+        "EV-4b286a3354cbf34a",
+        "EV-d2f8019b6783722f",
         "EV-bfa090c78227abf8",
         "EV-2e1352039c487bb0",
         "EV-b4aa08aef57bdb0f",
@@ -1226,6 +1343,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
@@ -1245,7 +1363,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -1427,6 +1545,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-financial_services",
@@ -1438,13 +1557,12 @@
         "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
         "TX-use_case-security_operations",
-        "TX-product_form-model",
+        "TX-product_form-ai_compute_system",
         "TX-technology-code_generation",
         "TX-technology-computer_use",
         "TX-industry-retail_ecommerce",
         "TX-industry-aerospace_defense",
         "TX-technology-embodied_ai",
-        "TX-product_form-ai_compute_system",
         "TX-ai_market_application-computing_infrastructure",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
@@ -1494,9 +1612,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-use_case-data_analysis",
-        "TX-product_form-model",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [

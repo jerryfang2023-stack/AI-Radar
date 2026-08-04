@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-03T07:17:08.673Z",
-    "latestDataDate": "2026-08-03",
-    "currentDate": "2026-08-03",
-    "eventCount": 1816,
+    "generatedAt": "2026-08-04T01:17:51.070Z",
+    "latestDataDate": "2026-08-04",
+    "currentDate": "2026-08-04",
+    "eventCount": 1832,
     "quarantinedEventCount": 15
   },
   "entity": {
@@ -41,10 +41,10 @@
       "TX-industry-education",
       "TX-industry-media_entertainment",
       "TX-industry-automotive_transportation",
+      "TX-product_form-ai_compute_system",
       "TX-industry-professional_services",
       "TX-target_user-researcher",
       "TX-industry-healthcare_life_sciences",
-      "TX-product_form-ai_compute_system",
       "TX-industry-government_public_sector",
       "TX-ai_market_application-computing_infrastructure"
     ],
@@ -666,6 +666,7 @@
         "EV-44ec7c229995ca3c",
         "EV-986ac3a819d23388",
         "EV-4eb0556b8c72d410",
+        "EV-a852dc0ca6011ff6",
         "EV-eb61ddca7f36f55c",
         "EV-4b545e310ded2baa",
         "EV-778ae7684a4d782e",
@@ -728,6 +729,7 @@
         "EN-c189daf477a2d4ca",
         "EN-c71496986d06e3f2",
         "EN-098a40b4499d7512",
+        "EN-c9e92f0b88c6456b",
         "EN-5e9e4638fa2ec9a4",
         "EN-d3565d297d476f10",
         "EN-25690754dd14bd1b",
@@ -754,9 +756,11 @@
         "FDE-560b710961006374",
         "FDE-ae4c44cd0de9d48a"
       ],
-      "hardwareIds": [],
+      "hardwareIds": [
+        "HW-a033b945449628d5"
+      ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "TX-industry-manufacturing",
@@ -970,6 +974,7 @@
         "EV-59882383f82f215d",
         "EV-c46e427fedbf518d",
         "EV-44ec7c229995ca3c",
+        "EV-a852dc0ca6011ff6",
         "EV-cafe435ddd007821",
         "EV-6b51b1b6fe22c540",
         "EV-1ff169120ed385f6",
@@ -992,15 +997,17 @@
         "EN-53453cfb48a75dde",
         "EN-eafe895eb8119e6e",
         "EN-cecdd8369134f75e",
+        "EN-c9e92f0b88c6456b",
         "EN-6461cd2cb824a554",
         "EN-61cce404a45c3545"
       ],
       "fdeIds": [],
       "hardwareIds": [
+        "HW-a033b945449628d5",
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-05-08",
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "TX-target_user-business_user",
@@ -1179,6 +1186,7 @@
         "EV-a1aea4a04b9e51c7",
         "EV-e869f17214557633",
         "EV-43301de739fe560e",
+        "EV-22f0d8caaa65a6a2",
         "EV-7f2811d2272cf4a3",
         "EV-c0a65877001ed413",
         "EV-890ffd351486b884",
@@ -1378,6 +1386,7 @@
       ],
       "fdeIds": [
         "FDE-3e499215265a81d5",
+        "FDE-5314a0e746758b29",
         "FDE-1804f08a3871ba4e",
         "FDE-27308b0a6cb2321a"
       ],
@@ -1385,7 +1394,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "TX-target_user-developer",
@@ -2116,6 +2125,66 @@
       "lastSeen": "2026-08-03"
     },
     {
+      "id": "TX-product_form-ai_compute_system",
+      "name": "AI 计算系统",
+      "nodeType": "product_form",
+      "typeLabel": "产品形态",
+      "valueId": "ai_compute_system",
+      "eventIds": [
+        "EV-faf8db3567f108e2",
+        "EV-f282ab8740ff0096",
+        "EV-7abd8ec418f1e7f3",
+        "EV-e9d06e8a06aa7318",
+        "EV-dbbe3fd637be213f",
+        "EV-44ec7c229995ca3c",
+        "EV-a852dc0ca6011ff6",
+        "EV-c3b96b789b5bcafd",
+        "EV-b9a1cba0b59a5354",
+        "EV-ebdc37429f89b55a",
+        "EV-234ad54940674bf6",
+        "EV-ad8e1754463695fd",
+        "EV-5b16886442234f81",
+        "EV-451a70d4374c2818",
+        "EV-140aab677738351f",
+        "EV-1dc482e2fe2f10bc",
+        "EV-7bc2e6744a92c81f",
+        "EV-5d50eb202b478bd4",
+        "EV-a67071a8550cb1be"
+      ],
+      "entityIds": [
+        "EN-54dfb14dcddad637",
+        "EN-0995103010d39563",
+        "EN-4e4b333252f207fd",
+        "EN-bbdefa2950f49882",
+        "EN-cecdd8369134f75e",
+        "EN-c9e92f0b88c6456b",
+        "EN-772c171be4bf6551",
+        "EN-8d4321d936320802",
+        "EN-240389f4b730bad4",
+        "EN-bb144c85d7f4652d",
+        "EN-adb4b0aa1de289f9",
+        "EN-d7e81f6e7d39f00f",
+        "EN-98502f8f7e5e64cd",
+        "EN-a89a94ff38d4dc95"
+      ],
+      "fdeIds": [
+        "FDE-d1333c4e772841f2",
+        "FDE-dadf0e9572889d3d",
+        "FDE-856a0ed89c848048",
+        "FDE-b366647aabd8f450"
+      ],
+      "hardwareIds": [
+        "HW-a033b945449628d5",
+        "HW-c5a22adcc66136ed",
+        "HW-a7207541fe11bd3b",
+        "HW-fda4fe26e7e80468",
+        "HW-fceac179a4df80f5",
+        "HW-9a39a7f449362f96"
+      ],
+      "firstSeen": "2026-05-08",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "TX-industry-professional_services",
       "name": "专业服务",
       "nodeType": "industry",
@@ -2264,6 +2333,7 @@
         "EV-44ec7c229995ca3c",
         "EV-cded77b1de2db61a",
         "EV-8b0f056571d68269",
+        "EV-a852dc0ca6011ff6",
         "EV-11b2293769081d4c",
         "EV-9563aa162529aab0",
         "EV-cafe435ddd007821",
@@ -2320,6 +2390,7 @@
         "EN-cecdd8369134f75e",
         "EN-a83a3af1a4866fd5",
         "EN-e5cc9e38970eacb5",
+        "EN-c9e92f0b88c6456b",
         "EN-023e881577ad3ab1",
         "EN-b81c8201acfc7639",
         "EN-27032b3c60ab2a95",
@@ -2350,66 +2421,11 @@
         "FDE-1fb7e2ae69d2f044"
       ],
       "hardwareIds": [
+        "HW-a033b945449628d5",
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-08-03"
-    },
-    {
-      "id": "TX-product_form-ai_compute_system",
-      "name": "AI 计算系统",
-      "nodeType": "product_form",
-      "typeLabel": "产品形态",
-      "valueId": "ai_compute_system",
-      "eventIds": [
-        "EV-f282ab8740ff0096",
-        "EV-7abd8ec418f1e7f3",
-        "EV-e9d06e8a06aa7318",
-        "EV-dbbe3fd637be213f",
-        "EV-44ec7c229995ca3c",
-        "EV-c3b96b789b5bcafd",
-        "EV-b9a1cba0b59a5354",
-        "EV-ebdc37429f89b55a",
-        "EV-234ad54940674bf6",
-        "EV-ad8e1754463695fd",
-        "EV-5b16886442234f81",
-        "EV-451a70d4374c2818",
-        "EV-140aab677738351f",
-        "EV-1dc482e2fe2f10bc",
-        "EV-7bc2e6744a92c81f",
-        "EV-5d50eb202b478bd4",
-        "EV-a67071a8550cb1be"
-      ],
-      "entityIds": [
-        "EN-0995103010d39563",
-        "EN-4e4b333252f207fd",
-        "EN-bbdefa2950f49882",
-        "EN-cecdd8369134f75e",
-        "EN-54dfb14dcddad637",
-        "EN-772c171be4bf6551",
-        "EN-8d4321d936320802",
-        "EN-240389f4b730bad4",
-        "EN-bb144c85d7f4652d",
-        "EN-adb4b0aa1de289f9",
-        "EN-d7e81f6e7d39f00f",
-        "EN-98502f8f7e5e64cd",
-        "EN-a89a94ff38d4dc95"
-      ],
-      "fdeIds": [
-        "FDE-d1333c4e772841f2",
-        "FDE-dadf0e9572889d3d",
-        "FDE-856a0ed89c848048",
-        "FDE-b366647aabd8f450"
-      ],
-      "hardwareIds": [
-        "HW-c5a22adcc66136ed",
-        "HW-a7207541fe11bd3b",
-        "HW-fda4fe26e7e80468",
-        "HW-fceac179a4df80f5",
-        "HW-9a39a7f449362f96"
-      ],
-      "firstSeen": "2026-05-08",
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "TX-industry-government_public_sector",
