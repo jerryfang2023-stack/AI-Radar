@@ -74,6 +74,15 @@ same report to Codex. When repair is necessary, Codex receives a clean isolated
 worktree based on `origin/main`, so unrelated local edits are preserved and never
 treated as repair input.
 
+The 16:10 Follow-Builders task follows the same isolation boundary. Generation,
+validation, PR publication, and forced lane supervision run from a temporary
+worktree under `%LOCALAPPDATA%\WaveSight\runtime\worktrees`; the detailed local
+publish report is copied into runtime before that worktree and its local branch
+are removed. The primary `main` worktree is fast-forwarded only after publication
+and only when it was already clean. The task must never generate its owned
+viewpoint, frontstage, or report files in the primary worktree before the accepted
+PR reaches `main`.
+
 Final Closure also rebuilds and gates the local V4 JSONL/DuckDB serving layer.
 This refresh is part of the existing task and must not be installed as a
 separate scheduled task or Startup loop.

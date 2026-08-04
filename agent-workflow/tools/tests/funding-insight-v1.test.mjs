@@ -645,8 +645,8 @@ test("融资透视自动化在商业事件工作流后增量研究、同步并�
   );
   assert.match(
     taxonomyClassifier,
-    /write && incrementalInputs\.length[\s\S]*const incremental = args\.get\("refresh"\) !== "true"[\s\S]*const decisions = inputs\.map\(\(input\) => accumulated\.get\(input\.event_id\)\)/u,
-    "the taxonomy classifier must rebuild the ledger from existing, checkpointed, and new decisions without reclassifying history",
+    /write && incrementalInputs\.length[\s\S]*const incremental = args\.get\("refresh"\) !== "true"[\s\S]*const existingOrder = existing\.map[\s\S]*const orderedEventIds = \[[\s\S]*const decisions = orderedEventIds\.map\(\(eventId\) => accumulated\.get\(eventId\)\)/u,
+    "the taxonomy classifier must rebuild the ledger without reclassifying history or reordering accepted decisions",
   );
   assert.match(
     taxonomyClassifier,

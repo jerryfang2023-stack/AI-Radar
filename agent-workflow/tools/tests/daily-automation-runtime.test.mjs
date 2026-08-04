@@ -17,6 +17,15 @@ test("scheduled controllers keep runtime reports outside the repository", () => 
   assert.match(read("run-follow-builders-skill.ps1"), /--output-dir=\$RuntimePath/u);
 });
 
+test("follow-builders generation and publication run from an isolated worktree", () => {
+  const runner = read("run-follow-builders-skill.ps1");
+  assert.match(runner, /worktree add -b \$runBranch \$runWorktree origin\/main/u);
+  assert.match(runner, /Join-Path \$runWorktree "agent-workflow\\tools\\publish-follow-builders-skill-local\.mjs"/u);
+  assert.match(runner, /Push-Location \$runWorktree/u);
+  assert.match(runner, /worktree remove --force -- \$runWorktree/u);
+  assert.match(runner, /git pull --ff-only origin main/u);
+});
+
 test("community collection restarts only its dedicated Chrome after a CDP timeout", () => {
   const runner = read("run-community-intelligence.ps1");
   assert.match(runner, /function Stop-DedicatedCommunityChrome/u);
