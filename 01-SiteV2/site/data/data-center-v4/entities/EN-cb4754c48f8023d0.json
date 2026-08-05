@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-05T00:23:57.965Z",
+    "generatedAt": "2026-08-05T01:17:44.809Z",
     "latestDataDate": "2026-08-05",
     "currentDate": "2026-08-05",
-    "eventCount": 1867,
+    "eventCount": 1868,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -37,6 +37,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-ee1e825af98ecab7",
       "EV-f0d54da5bf0d7399",
       "EV-0e616f9e775a77dc",
       "EV-ae9f1e2cf5a28be4",
@@ -95,6 +96,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-ee1e825af98ecab7",
         "EV-f0d54da5bf0d7399",
         "EV-0e616f9e775a77dc",
         "EV-ae9f1e2cf5a28be4",
@@ -138,6 +140,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-ee1e825af98ecab7",
+        "dataDate": "2026-08-05",
+        "date": "2026-08-05",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.222 发布：修复工作树隔离、代理绕过等多项问题",
+        "displayTags": [],
+        "entityIds": [
+          "EN-cb4754c48f8023d0"
+        ]
+      },
       {
         "id": "EV-f0d54da5bf0d7399",
         "dataDate": "2026-08-05",
