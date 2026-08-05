@@ -1,0 +1,69 @@
+[
+  {
+    "funnel_id": "LF-76aa86b33dc1ffdf",
+    "lens": "fde",
+    "date": "2026-08-05",
+    "monitoring_paths": [
+      "fde_customer_case",
+      "fde_earnings_disclosure",
+      "fde_procurement_contract",
+      "fde_production_rollout"
+    ],
+    "raw_documents": 117,
+    "original_sources": 107,
+    "valid_claims": 28,
+    "observations": 2,
+    "canonical_events": 11,
+    "blocker_counts": {
+      "no_source_bounded_event": 23,
+      "no_source_bounded_claim": 1,
+      "repository_page_requires_release_source": 5,
+      "source_outside_daily_window": 54,
+      "non_event_or_index_title": 7,
+      "source_published_after_data_date": 2,
+      "community_source_requires_original_event_source": 1,
+      "source_outside_funding_backfill_window": 1,
+      "question_headline_not_event_specific": 1,
+      "multi_event_roundup_not_single_event_source": 1,
+      "raw_source_quality_block": 9,
+      "raw_document_not_auditable": 1
+    },
+    "rates": {
+      "original_source_rate": 0.9145299145299145,
+      "valid_claim_rate": 0.23931623931623933,
+      "observation_rate": 0.07142857142857142,
+      "event_conversion_rate": 0.39285714285714285
+    }
+  },
+  {
+    "funnel_id": "LF-9dc9466a3035859a",
+    "lens": "hardware",
+    "date": "2026-08-05",
+    "monitoring_paths": [
+      "hardware_capacity_fab",
+      "hardware_product_specs",
+      "hardware_shipment_deployment",
+      "hardware_supply_agreement"
+    ],
+    "raw_documents": 27,
+    "original_sources": 23,
+    "valid_claims": 3,
+    "observations": 5,
+    "canonical_events": 2,
+    "blocker_counts": {
+      "repository_page_requires_release_source": 2,
+      "source_outside_daily_window": 13,
+      "no_source_bounded_event": 2,
+      "event_not_ai_relevant": 1,
+      "no_source_bounded_claim": 1,
+      "raw_document_not_auditable": 2,
+      "raw_source_quality_block": 3
+    },
+    "rates": {
+      "original_source_rate": 0.8518518518518519,
+      "valid_claim_rate": 0.1111111111111111,
+      "observation_rate": 1,
+      "event_conversion_rate": 0.6666666666666666
+    }
+  }
+]

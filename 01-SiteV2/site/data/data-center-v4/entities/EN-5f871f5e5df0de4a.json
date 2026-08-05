@@ -1,0 +1,185 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-05T00:23:57.965Z",
+    "latestDataDate": "2026-08-05",
+    "currentDate": "2026-08-05",
+    "eventCount": 1867,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-5f871f5e5df0de4a",
+    "name": "Volta Emerges From Stealth",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-da148848ec026bdf"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-04",
+    "lastSeen": "2026-08-05",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-da148848ec026bdf"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-da148848ec026bdf",
+        "dataDate": "2026-08-05",
+        "date": "2026-08-04",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Volta携100亿美元AI实验室合作及50亿美元AI基础设施项目走出隐身模式",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-5f871f5e5df0de4a",
+          "EN-8d4321d936320802"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-d4a9cd05a34baf09",
+      "eventId": "EV-da148848ec026bdf",
+      "dataDate": "2026-08-05",
+      "date": "2026-08-04",
+      "title": "Volta携100亿美元AI实验室合作及50亿美元AI基础设施项目走出隐身模式",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "an AI Lab",
+      "vendor": "Volta Emerges From Stealth",
+      "industry": "AI infrastructure",
+      "useCase": "and $5 Billion AI Infrastructure Program | FinancialContent",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Company launches as a fully vertically integrated AI infrastructure platform and NVIDIA Cloud Partner with the mission to build The Utility of Compute™",
+        "Volta's launch is anchored by a landmark $10 billion strategic partnership with an AI Lab to develop an AI factory in Europe alongside Bitdeer . Located in Norway, the project will comprise a 133 MW deployment powered by NVIDIA Vera Rubin systems. It is the first project within Volta's broader development pipeline, which today exceeds 1 GW of near-term power capacity across North America and Europe. The company intends to develop these sites using NVIDIA's DSX platform, targeting multiple gigawatts of deployed capacity by 2030.",
+        "Volta , a fully vertically integrated artificial intelligence (\"AI\") infrastructure platform and NVIDIA Cloud Partner, today emerged from stealth with a mission to build The Utility of Compute™, enabling frontier AI labs, AI-native companies, and enterprises to access dedicated AI infrastructure that is dependable, scalable, and backed by low-cost infrastructure capital."
+      ],
+      "outcomes": [],
+      "metrics": [
+        "$10 Billion",
+        "$5 Billion",
+        "$10 billion",
+        "133 MW",
+        "1 GW"
+      ],
+      "undisclosedFields": [
+        "workflow_before",
+        "workflow_after",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://financialcontent.com/article/bizwire-2026-8-4-volta-emerges-from-stealth-with-10-billion-ai-lab-partnership-and-5-billion-ai-infrastructure-program",
+      "entityIds": [
+        "EN-5f871f5e5df0de4a",
+        "EN-8d4321d936320802"
+      ]
+    }
+  ],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-dec6b87b671f56f6",
+      "snapshotKey": "dec6b87b671f56f6",
+      "snapshotId": "HWS-bf4da61cadaef9bb",
+      "eventId": "EV-da148848ec026bdf",
+      "eventIds": [
+        "EV-da148848ec026bdf"
+      ],
+      "dataDate": "2026-08-05",
+      "date": "2026-08-05",
+      "title": "Volta Emerges From Stealth",
+      "subject": "Volta Emerges From Stealth",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-aba5e1bbc580326d"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-05",
+          "hardware_fact_id": "HWF-aba5e1bbc580326d",
+          "fact_type": "product",
+          "observed_at": "2026-08-04T00:00:00.000Z",
+          "subject_entity_id": "EN-5f871f5e5df0de4a",
+          "subject_name": "Volta Emerges From Stealth",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Company launches as a fully vertically integrated AI infrastructure platform and NVIDIA Cloud Partner with the mission to build The Utility of Compute™",
+          "event_refs": [
+            "EV-da148848ec026bdf"
+          ],
+          "claim_ref": "CL-7864604a1ce56cc0",
+          "source_refs": [
+            "SA-e16f3d9cc160f133"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-05/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://financialcontent.com/article/bizwire-2026-8-4-volta-emerges-from-stealth-with-10-billion-ai-lab-partnership-and-5-billion-ai-infrastructure-program",
+      "entityIds": [
+        "EN-5f871f5e5df0de4a",
+        "EN-8d4321d936320802"
+      ]
+    }
+  ]
+}

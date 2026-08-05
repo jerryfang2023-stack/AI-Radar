@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-04T04:50:29.311Z",
-    "latestDataDate": "2026-08-04",
-    "currentDate": "2026-08-04",
-    "eventCount": 1841,
+    "generatedAt": "2026-08-05T00:23:57.965Z",
+    "latestDataDate": "2026-08-05",
+    "currentDate": "2026-08-05",
+    "eventCount": 1867,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -25,6 +25,7 @@
     ],
     "eventIds": [
       "EV-f282ab8740ff0096",
+      "EV-5bbc509a032b8309",
       "EV-bf46d8d6d7d6e90a",
       "EV-53f08daddd011dbb",
       "EV-b726a9cda7beae64",
@@ -33,6 +34,7 @@
       "EV-d116b0aa5bb292e2",
       "EV-e857f9d1c1478c70",
       "EV-fd21441fb6e143c3",
+      "EV-98a77305667148e1",
       "EV-db7cb473fe7e9e3c",
       "EV-118317b7f92e5e16",
       "EV-c237f5dc53f0a923",
@@ -78,6 +80,7 @@
       "EV-ebef81764102ee7c",
       "EV-f6611268f119a172",
       "EV-342799d4e68e7416",
+      "EV-e544a4c3fb59b9b0",
       "EV-d40d5c9625f296db",
       "EV-2f7e6d3a68bbf08f",
       "EV-ef823877347ff40f",
@@ -115,7 +118,7 @@
       "EN-45b5216872656eb3"
     ],
     "firstSeen": "2026-06-04",
-    "lastSeen": "2026-07-26",
+    "lastSeen": "2026-08-05",
     "relationIds": [
       "REL2-2c82bf25c532a4e1",
       "REL2-328522f06ece8143",
@@ -138,6 +141,7 @@
         "EV-1b92b6c835ce240c"
       ],
       "deployments": [
+        "EV-5bbc509a032b8309",
         "EV-bf46d8d6d7d6e90a",
         "EV-53f08daddd011dbb",
         "EV-b726a9cda7beae64",
@@ -150,6 +154,7 @@
         "EV-fd21441fb6e143c3"
       ],
       "productsServices": [
+        "EV-98a77305667148e1",
         "EV-db7cb473fe7e9e3c",
         "EV-118317b7f92e5e16",
         "EV-c237f5dc53f0a923",
@@ -202,6 +207,7 @@
         "EV-7d4b4b8d4e3599d4"
       ],
       "other": [
+        "EV-e544a4c3fb59b9b0",
         "EV-d40d5c9625f296db",
         "EV-2f7e6d3a68bbf08f",
         "EV-ef823877347ff40f",
@@ -221,6 +227,100 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-5bbc509a032b8309",
+        "dataDate": "2026-08-05",
+        "date": "2026-08-04",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "资本重仓端侧物理AI：前海母基金数亿元押注，Om AI联汇加速端侧AI商业化落地",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "on_device",
+            "name": "端侧",
+            "entityIds": [
+              "EN-b5318593e1260f2f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [
+              "EN-b5318593e1260f2f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-b5318593e1260f2f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-b5318593e1260f2f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-b5318593e1260f2f",
+          "EN-8d4321d936320802",
+          "EN-3a7bd3e2360a3d29"
+        ]
+      },
+      {
+        "id": "EV-98a77305667148e1",
+        "dataDate": "2026-08-05",
+        "date": "2026-08-04",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI 回应苹果商业纠纷案：称苹果对此案处理有误",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-3a7bd3e2360a3d29"
+        ]
+      },
+      {
+        "id": "EV-e544a4c3fb59b9b0",
+        "dataDate": "2026-08-05",
+        "date": "2026-08-04",
+        "eventType": "lawsuit_settlement",
+        "eventTypeLabel": "诉讼与和解",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI以聊天记录回击苹果商业秘密诉讼，显示苹果员工持续与前同事发短信",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-3a7bd3e2360a3d29"
+        ]
+      },
       {
         "id": "EV-db7cb473fe7e9e3c",
         "dataDate": "2026-07-26",
@@ -2239,8 +2339,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-technology-agentic_execution",
+        "TX-product_form-model",
         "TX-technology-multimodal",
         "TX-technology-long_context"
       ],
@@ -2654,6 +2754,7 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-b6f025a2dc297b78",
         "EV-dc35d54f273196f0",
         "EV-9ed6a759555d7e77",
         "EV-53253b5e23970958",
@@ -2757,8 +2858,8 @@
         "EV-23ae55daa341be06",
         "EV-6bb83280a2116f24",
         "EV-d10684a6f16afe10",
-        "EV-a852dc0ca6011ff6",
         "EV-acddfa62aabb004f",
+        "EV-a852dc0ca6011ff6",
         "EV-fd825cd7f7997fc8",
         "EV-57944eebac69d510",
         "EV-2d9fde7bc0cd7a22",
@@ -2833,6 +2934,8 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-271b304f0a16b6db",
+        "EV-2fa6949af5b36fb0",
         "EV-4b286a3354cbf34a",
         "EV-7dd55841e1ca4652",
         "EV-9217ac1643635ce4",
@@ -3077,6 +3180,7 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-360a940182e67c66",
         "EN-e6f19fa7a6b52367",
         "EN-2be663431f007250",
         "EN-65819e198c32566a",
@@ -3213,6 +3317,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-d9b1d7819af92e77",
         "EN-d50883991bfc5a69",
         "EN-b02e43bdec738f2c",
         "EN-bbdefa2950f49882",
@@ -3446,6 +3551,7 @@
       "eventIds": [
         "EV-a15da1b52d939967",
         "EV-736404028b8ad33e",
+        "EV-5bbc509a032b8309",
         "EV-d5c00f302e1f808c",
         "EV-7263caa45bbf168e",
         "EV-7a0f201debe99f2b",
@@ -3474,6 +3580,7 @@
       "entityIds": [
         "EN-a35b80cf9d171015",
         "EN-48bebf25e5bd5aca",
+        "EN-b5318593e1260f2f",
         "EN-968e2d5b08687bf4",
         "EN-2b6e51bec93e86c1",
         "EN-e21783b898b55a31",
@@ -3489,10 +3596,12 @@
         "EN-b7dac8ddfad3bea8",
         "EN-6f7ac1823da81d2e"
       ],
-      "fdeIds": [],
+      "fdeIds": [
+        "FDE-c846ebc19f50a93f"
+      ],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-05"
     },
     {
       "id": "TX-deployment_model-edge_device",
@@ -3503,6 +3612,7 @@
       "eventIds": [
         "EV-a15da1b52d939967",
         "EV-736404028b8ad33e",
+        "EV-5bbc509a032b8309",
         "EV-d5c00f302e1f808c",
         "EV-7263caa45bbf168e",
         "EV-7a0f201debe99f2b",
@@ -3530,6 +3640,7 @@
       "entityIds": [
         "EN-a35b80cf9d171015",
         "EN-48bebf25e5bd5aca",
+        "EN-b5318593e1260f2f",
         "EN-968e2d5b08687bf4",
         "EN-2b6e51bec93e86c1",
         "EN-e21783b898b55a31",
@@ -3545,12 +3656,238 @@
         "EN-b7dac8ddfad3bea8",
         "EN-6f7ac1823da81d2e"
       ],
-      "fdeIds": [],
+      "fdeIds": [
+        "FDE-c846ebc19f50a93f"
+      ],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-05"
     }
   ],
-  "fde": [],
-  "hardware": []
+  "fde": [
+    {
+      "id": "FDE-c846ebc19f50a93f",
+      "eventId": "EV-5bbc509a032b8309",
+      "dataDate": "2026-08-05",
+      "date": "2026-08-04",
+      "title": "资本重仓端侧物理AI：前海母基金数亿元押注，Om AI联汇加速端侧AI商业化落地",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "AI产业",
+      "useCase": "资本重仓端侧物理AI：前海母基金数亿元押注，Om AI联汇加速端侧AI商业化落地",
+      "reportedNeed": "加速物理AI场景商业化落地",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-b5318593e1260f2f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-b5318593e1260f2f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-b5318593e1260f2f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-b5318593e1260f2f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-b5318593e1260f2f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-b5318593e1260f2f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/08/465785.html",
+      "entityIds": [
+        "EN-b5318593e1260f2f",
+        "EN-8d4321d936320802",
+        "EN-3a7bd3e2360a3d29"
+      ]
+    }
+  ],
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-7cd24f1cc1f6d12e",
+      "implementationKey": "7cd24f1cc1f6d12e",
+      "eventId": "EV-5bbc509a032b8309",
+      "eventIds": [
+        "EV-5bbc509a032b8309"
+      ],
+      "dataDate": "2026-08-05",
+      "date": "2026-08-04",
+      "title": "未披露 × 未披露：资本重仓端侧物理AI：前海母基金数亿元押注，Om AI联汇加速端侧AI商业化落地",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "AI产业",
+      "useCase": "资本重仓端侧物理AI：前海母基金数亿元押注，Om AI联汇加速端侧AI商业化落地",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-6f4f93f83e6b22fc",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-04",
+          "dataDate": "2026-08-05",
+          "eventId": "EV-5bbc509a032b8309",
+          "eventTitle": "资本重仓端侧物理AI：前海母基金数亿元押注，Om AI联汇加速端侧AI商业化落地",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-b5318593e1260f2f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-b5318593e1260f2f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-b5318593e1260f2f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-b5318593e1260f2f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-b5318593e1260f2f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-b5318593e1260f2f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/08/465785.html",
+      "entityIds": [
+        "EN-b5318593e1260f2f",
+        "EN-8d4321d936320802",
+        "EN-3a7bd3e2360a3d29"
+      ]
+    }
+  ]
 }

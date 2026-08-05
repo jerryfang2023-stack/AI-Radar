@@ -1,8 +1,8 @@
 window.WaveSightOpsConsole = {
   "meta": {
     "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-08-04T01:19:14.696Z",
-    "date": "2026-08-04",
+    "generatedAt": "2026-08-05T00:25:30.564Z",
+    "date": "2026-08-05",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
       "01-SiteV2/site/data/pipeline-dashboard.json",
@@ -42,14 +42,14 @@ window.WaveSightOpsConsole = {
     }
   ],
   "daily": {
-    "date": "2026-08-04",
+    "date": "2026-08-05",
     "status": "passed",
     "statusText": "已通过",
     "issueSummary": {
-      "total": 5,
+      "total": 6,
       "daily": 0,
-      "open": 1,
-      "resolved": 4,
+      "open": 0,
+      "resolved": 6,
       "urgent": 0
     },
     "issues": []
@@ -57,104 +57,15 @@ window.WaveSightOpsConsole = {
   "periods": {
     "weekly": {
       "windowDays": 7,
-      "total": 3,
-      "open": 1,
-      "resolved": 2,
+      "total": 4,
+      "open": 0,
+      "resolved": 4,
       "byLane": {
-        "business_signals": 2,
+        "business_signals": 3,
         "community_intelligence": 1
       },
       "byCategory": {
-        "recurring_automation_issue": 3
-      },
-      "recurring": [
-        {
-          "category": "recurring_automation_issue",
-          "count": 3
-        }
-      ],
-      "latest": [
-        {
-          "id": "2026-07-30-community-intelligence-recurring-73a400f41c5af405",
-          "date": "2026-07-30",
-          "title": "Recurring warning: community_intelligence",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "community_intelligence",
-          "category": "recurring_automation_issue",
-          "failedGate": "repeated daily supervision signal",
-          "reportPath": "agent-workflow/reports/2026-07-26-daily-supervision-report.json",
-          "dataGenerated": "inspect linked daily reports",
-          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
-          "createdAt": "2026-07-30T08:45:26.578Z",
-          "updatedAt": "2026-08-02T12:59:54+08:00",
-          "resolvedAt": "2026-08-02T12:59:54+08:00",
-          "resolver": "codex",
-          "fixCommit": "dae49febd",
-          "validation": "npm test; 2026-08-02 daily supervision community_intelligence passed",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-30-community-intelligence-recurring-73a400f41c5af405.md"
-        },
-        {
-          "id": "2026-07-30-business-signals-recurring-fef63b1d095e1eec",
-          "date": "2026-07-30",
-          "title": "Recurring warning: business_signals",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "business_signals",
-          "category": "recurring_automation_issue",
-          "failedGate": "repeated daily supervision signal",
-          "reportPath": "agent-workflow/reports/2026-07-27-daily-supervision-report.json",
-          "dataGenerated": "inspect linked daily reports",
-          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
-          "createdAt": "2026-07-30T08:45:26.579Z",
-          "updatedAt": "2026-08-02T12:59:53+08:00",
-          "resolvedAt": "2026-08-02T12:59:53+08:00",
-          "resolver": "codex",
-          "fixCommit": "dae49febd",
-          "validation": "npm test; 2026-08-02 daily supervision business_signals passed",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-30-business-signals-recurring-fef63b1d095e1eec.md"
-        },
-        {
-          "id": "2026-08-02-business-signals-recurring-05f820ce67869f02",
-          "date": "2026-08-02",
-          "title": "Recurring warning: business_signals",
-          "status": "open",
-          "state": "open",
-          "priority": "normal",
-          "laneId": "business_signals",
-          "category": "recurring_automation_issue",
-          "failedGate": "repeated daily supervision signal",
-          "reportPath": "runtime://daily-supervision/2026-08-02",
-          "dataGenerated": "inspect linked daily reports",
-          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
-          "createdAt": "2026-08-02T08:45:37.557Z",
-          "updatedAt": "",
-          "resolvedAt": "",
-          "resolver": "",
-          "fixCommit": "",
-          "validation": "",
-          "prevention": "",
-          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-02-business-signals-recurring-05f820ce67869f02.md"
-        }
-      ]
-    },
-    "monthly": {
-      "windowDays": 30,
-      "total": 5,
-      "open": 1,
-      "resolved": 4,
-      "byLane": {
-        "community_intelligence": 2,
-        "skill_ops": 1,
-        "business_signals": 2
-      },
-      "byCategory": {
-        "recurring_automation_issue": 4,
-        "weekly_learning_loop": 1
+        "recurring_automation_issue": 4
       },
       "recurring": [
         {
@@ -164,6 +75,50 @@ window.WaveSightOpsConsole = {
       ],
       "latest": [
         {
+          "id": "2026-08-04-business-signals-recurring-05f820ce67869f02",
+          "date": "2026-08-04",
+          "title": "Recurring warning: business_signals",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "runtime://daily-supervision/2026-08-04",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-08-04T08:45:44.932Z",
+          "updatedAt": "2026-08-04T17:55:34+08:00",
+          "resolvedAt": "2026-08-04T17:55:34+08:00",
+          "resolver": "codex",
+          "fixCommit": "a7eebed44fc27862d95b2966e09a193723819209",
+          "validation": "isolated same-date Follow-Builders rerun added zero worktree changes; npm test passed; community and first-line gates passed; final-closure business_signals and follow_builders_skill passed with local dirtyFiles=0",
+          "prevention": "context/08-automation.md Follow-Builders runtime worktree isolation contract plus daily-automation-runtime regression test",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-04-business-signals-recurring-05f820ce67869f02.md"
+        },
+        {
+          "id": "2026-08-02-business-signals-recurring-05f820ce67869f02",
+          "date": "2026-08-02",
+          "title": "Recurring warning: business_signals",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "runtime://daily-supervision/2026-08-02",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-08-02T08:45:37.557Z",
+          "updatedAt": "2026-08-04T13:04:16+08:00",
+          "resolvedAt": "2026-08-04T13:04:16+08:00",
+          "resolver": "codex",
+          "fixCommit": "4ce8b1c5415f12ef151f235d90187b09389a7222",
+          "validation": "2026-08-04 final-closure passed business_signals; V4 integrity passed; Pages success; local dirtyFiles=0 and fastForwarded=true; npm run assert:windows-automation passed 7/7",
+          "prevention": "context/08-automation.md runtime isolation contract plus assert:windows-automation scheduled-task gate",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-02-business-signals-recurring-05f820ce67869f02.md"
+        },
+        {
           "id": "2026-07-30-community-intelligence-recurring-73a400f41c5af405",
           "date": "2026-07-30",
           "title": "Recurring warning: community_intelligence",
@@ -206,13 +161,58 @@ window.WaveSightOpsConsole = {
           "validation": "npm test; 2026-08-02 daily supervision business_signals passed",
           "prevention": "gate",
           "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-30-business-signals-recurring-fef63b1d095e1eec.md"
+        }
+      ]
+    },
+    "monthly": {
+      "windowDays": 30,
+      "total": 6,
+      "open": 0,
+      "resolved": 6,
+      "byLane": {
+        "community_intelligence": 2,
+        "skill_ops": 1,
+        "business_signals": 3
+      },
+      "byCategory": {
+        "recurring_automation_issue": 5,
+        "weekly_learning_loop": 1
+      },
+      "recurring": [
+        {
+          "category": "recurring_automation_issue",
+          "count": 5
+        }
+      ],
+      "latest": [
+        {
+          "id": "2026-08-04-business-signals-recurring-05f820ce67869f02",
+          "date": "2026-08-04",
+          "title": "Recurring warning: business_signals",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "runtime://daily-supervision/2026-08-04",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-08-04T08:45:44.932Z",
+          "updatedAt": "2026-08-04T17:55:34+08:00",
+          "resolvedAt": "2026-08-04T17:55:34+08:00",
+          "resolver": "codex",
+          "fixCommit": "a7eebed44fc27862d95b2966e09a193723819209",
+          "validation": "isolated same-date Follow-Builders rerun added zero worktree changes; npm test passed; community and first-line gates passed; final-closure business_signals and follow_builders_skill passed with local dirtyFiles=0",
+          "prevention": "context/08-automation.md Follow-Builders runtime worktree isolation contract plus daily-automation-runtime regression test",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-04-business-signals-recurring-05f820ce67869f02.md"
         },
         {
           "id": "2026-08-02-business-signals-recurring-05f820ce67869f02",
           "date": "2026-08-02",
           "title": "Recurring warning: business_signals",
-          "status": "open",
-          "state": "open",
+          "status": "resolved",
+          "state": "resolved",
           "priority": "normal",
           "laneId": "business_signals",
           "category": "recurring_automation_issue",
@@ -221,13 +221,57 @@ window.WaveSightOpsConsole = {
           "dataGenerated": "inspect linked daily reports",
           "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
           "createdAt": "2026-08-02T08:45:37.557Z",
-          "updatedAt": "",
-          "resolvedAt": "",
-          "resolver": "",
-          "fixCommit": "",
-          "validation": "",
-          "prevention": "",
+          "updatedAt": "2026-08-04T13:04:16+08:00",
+          "resolvedAt": "2026-08-04T13:04:16+08:00",
+          "resolver": "codex",
+          "fixCommit": "4ce8b1c5415f12ef151f235d90187b09389a7222",
+          "validation": "2026-08-04 final-closure passed business_signals; V4 integrity passed; Pages success; local dirtyFiles=0 and fastForwarded=true; npm run assert:windows-automation passed 7/7",
+          "prevention": "context/08-automation.md runtime isolation contract plus assert:windows-automation scheduled-task gate",
           "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-02-business-signals-recurring-05f820ce67869f02.md"
+        },
+        {
+          "id": "2026-07-30-community-intelligence-recurring-73a400f41c5af405",
+          "date": "2026-07-30",
+          "title": "Recurring warning: community_intelligence",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "normal",
+          "laneId": "community_intelligence",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "agent-workflow/reports/2026-07-26-daily-supervision-report.json",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-07-30T08:45:26.578Z",
+          "updatedAt": "2026-08-02T12:59:54+08:00",
+          "resolvedAt": "2026-08-02T12:59:54+08:00",
+          "resolver": "codex",
+          "fixCommit": "dae49febd",
+          "validation": "npm test; 2026-08-02 daily supervision community_intelligence passed",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-30-community-intelligence-recurring-73a400f41c5af405.md"
+        },
+        {
+          "id": "2026-07-30-business-signals-recurring-fef63b1d095e1eec",
+          "date": "2026-07-30",
+          "title": "Recurring warning: business_signals",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "agent-workflow/reports/2026-07-27-daily-supervision-report.json",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-07-30T08:45:26.579Z",
+          "updatedAt": "2026-08-02T12:59:53+08:00",
+          "resolvedAt": "2026-08-02T12:59:53+08:00",
+          "resolver": "codex",
+          "fixCommit": "dae49febd",
+          "validation": "npm test; 2026-08-02 daily supervision business_signals passed",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-30-business-signals-recurring-fef63b1d095e1eec.md"
         },
         {
           "id": "2026-07-26-skill_ops-weekly-learning-loop",
@@ -277,13 +321,36 @@ window.WaveSightOpsConsole = {
     }
   },
   "inbox": {
-    "open": [
+    "open": [],
+    "resolved": [
+      {
+        "id": "2026-08-04-business-signals-recurring-05f820ce67869f02",
+        "date": "2026-08-04",
+        "title": "Recurring warning: business_signals",
+        "status": "resolved",
+        "state": "resolved",
+        "priority": "normal",
+        "laneId": "business_signals",
+        "category": "recurring_automation_issue",
+        "failedGate": "repeated daily supervision signal",
+        "reportPath": "runtime://daily-supervision/2026-08-04",
+        "dataGenerated": "inspect linked daily reports",
+        "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+        "createdAt": "2026-08-04T08:45:44.932Z",
+        "updatedAt": "2026-08-04T17:55:34+08:00",
+        "resolvedAt": "2026-08-04T17:55:34+08:00",
+        "resolver": "codex",
+        "fixCommit": "a7eebed44fc27862d95b2966e09a193723819209",
+        "validation": "isolated same-date Follow-Builders rerun added zero worktree changes; npm test passed; community and first-line gates passed; final-closure business_signals and follow_builders_skill passed with local dirtyFiles=0",
+        "prevention": "context/08-automation.md Follow-Builders runtime worktree isolation contract plus daily-automation-runtime regression test",
+        "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-04-business-signals-recurring-05f820ce67869f02.md"
+      },
       {
         "id": "2026-08-02-business-signals-recurring-05f820ce67869f02",
         "date": "2026-08-02",
         "title": "Recurring warning: business_signals",
-        "status": "open",
-        "state": "open",
+        "status": "resolved",
+        "state": "resolved",
         "priority": "normal",
         "laneId": "business_signals",
         "category": "recurring_automation_issue",
@@ -292,16 +359,14 @@ window.WaveSightOpsConsole = {
         "dataGenerated": "inspect linked daily reports",
         "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
         "createdAt": "2026-08-02T08:45:37.557Z",
-        "updatedAt": "",
-        "resolvedAt": "",
-        "resolver": "",
-        "fixCommit": "",
-        "validation": "",
-        "prevention": "",
+        "updatedAt": "2026-08-04T13:04:16+08:00",
+        "resolvedAt": "2026-08-04T13:04:16+08:00",
+        "resolver": "codex",
+        "fixCommit": "4ce8b1c5415f12ef151f235d90187b09389a7222",
+        "validation": "2026-08-04 final-closure passed business_signals; V4 integrity passed; Pages success; local dirtyFiles=0 and fastForwarded=true; npm run assert:windows-automation passed 7/7",
+        "prevention": "context/08-automation.md runtime isolation contract plus assert:windows-automation scheduled-task gate",
         "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-02-business-signals-recurring-05f820ce67869f02.md"
-      }
-    ],
-    "resolved": [
+      },
       {
         "id": "2026-07-30-community-intelligence-recurring-73a400f41c5af405",
         "date": "2026-07-30",
@@ -441,11 +506,11 @@ window.WaveSightOpsConsole = {
           },
           {
             "label": "Events",
-            "value": 19
+            "value": 29
           },
           {
             "label": "QA",
-            "value": 231
+            "value": 220
           }
         ]
       },
@@ -494,8 +559,8 @@ window.WaveSightOpsConsole = {
           "raw_documents": 250
         },
         "evidence": [
-          "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/manifest.json",
-          "agent-workflow/reports/2026-08-04-guanlan-daily-monitor-log.md"
+          "01-SiteV2/content/11-databases/data-center-v4/2026-08-05/manifest.json",
+          "agent-workflow/reports/2026-08-05-guanlan-daily-monitor-log.md"
         ]
       },
       {
@@ -507,16 +572,16 @@ window.WaveSightOpsConsole = {
           "rejected_claims": 0,
           "accepted": 75,
           "rejected": 0,
-          "pending_claims": 0,
-          "canonical_events": 19,
-          "entities": 32,
-          "relationships": 75,
+          "pending_claims": 5,
+          "canonical_events": 29,
+          "entities": 42,
+          "relationships": 80,
           "conflicts": 0,
-          "qa_queue": 231
+          "qa_queue": 220
         },
         "evidence": [
-          "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/manifest.json",
-          "agent-workflow/reports/2026-08-04-data-center-v4-integrity-gate.json"
+          "01-SiteV2/content/11-databases/data-center-v4/2026-08-05/manifest.json",
+          "agent-workflow/reports/2026-08-05-data-center-v4-integrity-gate.json"
         ]
       },
       {
@@ -530,7 +595,7 @@ window.WaveSightOpsConsole = {
           "fde_hardware_sync": "passed"
         },
         "evidence": [
-          "agent-workflow/reports/2026-08-04-persistent-asset-manifest.json"
+          "agent-workflow/reports/2026-08-05-persistent-asset-manifest.json"
         ]
       },
       {
@@ -541,18 +606,18 @@ window.WaveSightOpsConsole = {
           "v4_bundle_ready": true
         },
         "evidence": [
-          "agent-workflow/reports/2026-08-04-persistent-asset-manifest.json"
+          "agent-workflow/reports/2026-08-05-persistent-asset-manifest.json"
         ]
       }
     ],
     "latestProduction": {
-      "date": "2026-08-04",
+      "date": "2026-08-05",
       "discovered": 250,
       "captured": 250,
-      "claims": 75,
-      "events": 19,
-      "entities": 32,
-      "relationships": 75
+      "claims": 80,
+      "events": 29,
+      "entities": 42,
+      "relationships": 80
     },
     "sync": [
       {
@@ -573,7 +638,7 @@ window.WaveSightOpsConsole = {
       {
         "label": "Pipeline Dashboard",
         "status": "passed",
-        "detail": "2026-08-04T01:19:14.658Z"
+        "detail": "2026-08-05T00:25:30.528Z"
       },
       {
         "label": "Daily Supervision",
@@ -587,8 +652,8 @@ window.WaveSightOpsConsole = {
       "meta": {
         "version": "COLLECTION-TELEMETRY-V1.0",
         "ops_version": "OPS-V2.0.0-v4-telemetry",
-        "data_date": "2026-08-04",
-        "generated_at": "2026-08-04T01:19:14.613Z",
+        "data_date": "2026-08-05",
+        "generated_at": "2026-08-05T00:25:30.486Z",
         "scope": "OPS",
         "canonical_writeback": false,
         "source_of_truth": "Data Center V4 manifest and integrity gate"
@@ -604,23 +669,25 @@ window.WaveSightOpsConsole = {
         "rejected_claims": 0,
         "accepted": 75,
         "rejected": 0,
-        "pending_claims": 0,
-        "canonical_events": 19,
-        "entities": 32,
-        "relationships": 75,
+        "pending_claims": 5,
+        "canonical_events": 29,
+        "entities": 42,
+        "relationships": 80,
         "conflicts": 0,
-        "qa_queue": 231,
+        "qa_queue": 220,
         "qa_by_status": {
-          "review_optional": 210,
-          "open": 21
+          "review_optional": 195,
+          "open": 25
         }
       },
       "v4Gate": {
         "status": "passed",
-        "manifest_date": "2026-08-04",
-        "gate_date": "2026-08-04",
+        "manifest_date": "2026-08-05",
+        "gate_date": "2026-08-05",
         "failures": [],
-        "warnings": []
+        "warnings": [
+          "No source-bounded hardware projection was produced."
+        ]
       },
       "applicationProjection": {
         "opportunity_map": "passed",
@@ -641,27 +708,27 @@ window.WaveSightOpsConsole = {
     },
     "pipelineMeta": {
       "version": "OPS-V2.0.0-v4-telemetry",
-      "generatedAt": "2026-08-04T01:19:14.658Z",
+      "generatedAt": "2026-08-05T00:25:30.528Z",
       "dateRange": {
-        "start": "2026-07-29",
-        "end": "2026-08-04"
+        "start": "2026-07-30",
+        "end": "2026-08-05"
       },
       "source": "Data Center V4 manifest + collection-telemetry-v1",
       "telemetryVersion": "COLLECTION-TELEMETRY-V1.0"
     },
     "latest": {
-      "date": "2026-08-04",
-      "label": "2026.08.04",
-      "shortLabel": "08.04",
+      "date": "2026-08-05",
+      "label": "2026.08.05",
+      "shortLabel": "08.05",
       "discovered": 250,
       "captured": 250,
-      "claims": 75,
-      "events": 19,
-      "entities": 32,
-      "relationships": 75,
+      "claims": 80,
+      "events": 29,
+      "entities": 42,
+      "relationships": 80,
       "conflicts": 0,
-      "qaQueue": 231,
-      "telemetryDate": "2026-08-04",
+      "qaQueue": 220,
+      "telemetryDate": "2026-08-05",
       "collection": {
         "discovered": 290,
         "capture_succeeded": 250,
@@ -673,15 +740,15 @@ window.WaveSightOpsConsole = {
         "rejected_claims": 0,
         "accepted": 75,
         "rejected": 0,
-        "pending_claims": 0,
-        "canonical_events": 19,
-        "entities": 32,
-        "relationships": 75,
+        "pending_claims": 5,
+        "canonical_events": 29,
+        "entities": 42,
+        "relationships": 80,
         "conflicts": 0,
-        "qa_queue": 231,
+        "qa_queue": 220,
         "qa_by_status": {
-          "review_optional": 210,
-          "open": 21
+          "review_optional": 195,
+          "open": 25
         }
       },
       "applicationProjection": {
@@ -695,28 +762,41 @@ window.WaveSightOpsConsole = {
       }
     },
     "totals": {
-      "discovered": 1595,
-      "captured": 1595,
-      "claims": 698,
-      "events": 211,
-      "entities": 327,
-      "relationships": 698,
+      "discovered": 1686,
+      "captured": 1686,
+      "claims": 642,
+      "events": 208,
+      "entities": 313,
+      "relationships": 642,
       "conflicts": 1,
-      "qaQueue": 1375
+      "qaQueue": 1473
     },
     "days": [
+      {
+        "date": "2026-08-05",
+        "label": "2026.08.05",
+        "shortLabel": "08.05",
+        "discovered": 250,
+        "captured": 250,
+        "claims": 80,
+        "events": 29,
+        "entities": 42,
+        "relationships": 80,
+        "conflicts": 0,
+        "qaQueue": 220
+      },
       {
         "date": "2026-08-04",
         "label": "2026.08.04",
         "shortLabel": "08.04",
         "discovered": 250,
         "captured": 250,
-        "claims": 75,
-        "events": 19,
-        "entities": 32,
-        "relationships": 75,
+        "claims": 90,
+        "events": 29,
+        "entities": 48,
+        "relationships": 90,
         "conflicts": 0,
-        "qaQueue": 231
+        "qaQueue": 221
       },
       {
         "date": "2026-08-03",
@@ -782,19 +862,6 @@ window.WaveSightOpsConsole = {
         "relationships": 87,
         "conflicts": 0,
         "qaQueue": 149
-      },
-      {
-        "date": "2026-07-29",
-        "label": "2026.07.29",
-        "shortLabel": "07.29",
-        "discovered": 159,
-        "captured": 159,
-        "claims": 151,
-        "events": 42,
-        "entities": 72,
-        "relationships": 151,
-        "conflicts": 0,
-        "qaQueue": 112
       }
     ],
     "engineQuality": {}
