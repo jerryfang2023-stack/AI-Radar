@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-04T04:50:29.311Z",
-    "latestDataDate": "2026-08-04",
-    "currentDate": "2026-08-04",
-    "eventCount": 1841,
+    "generatedAt": "2026-08-05T00:23:57.965Z",
+    "latestDataDate": "2026-08-05",
+    "currentDate": "2026-08-05",
+    "eventCount": 1867,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -2180,7 +2180,9 @@
       "name": "Microsoft",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "微软"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -2223,6 +2225,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-ec283dd6bd3ac991",
         "EV-1797eada6fb392a6",
         "EV-890ffd351486b884",
         "EV-ab1b780e6e543b42",
@@ -2297,9 +2300,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-target_user-business_user",
         "TX-industry-manufacturing",
-        "TX-technology-agentic_execution",
         "TX-use_case-data_analysis",
         "TX-target_user-consumer",
         "TX-use_case-security_operations",
@@ -2307,18 +2310,24 @@
         "TX-deployment_model-on_premise",
         "TX-technology-model_context_protocol",
         "TX-technology-image_generation",
+        "TX-technology-speech_audio",
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
+        "EN-688f8db7018da7d4",
+        "EN-827b607311e6593e",
+        "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
+        "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-8d4321d936320802"
+        "EN-8d4321d936320802",
+        "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-08-04"
+      "lastSeen": "2026-08-05"
     },
     {
       "id": "EN-0d1e478de2157d48",
@@ -2374,12 +2383,15 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-2dea56b0e97c1685",
         "EV-da1655ecfaf35feb",
         "EV-e3792591090281c6",
         "EV-8b7cbb66a33a945d",
@@ -2397,6 +2409,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-5bbc509a032b8309",
         "EV-a852dc0ca6011ff6",
         "EV-a86b04e679044c45",
         "EV-64178e5d858f5e25",
@@ -2421,6 +2434,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-da148848ec026bdf",
         "EV-467539fe176a470e",
         "EV-6272444f30281858",
         "EV-92be9fa58b1ee19f",
@@ -2441,6 +2455,8 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-6703b102274c3be9",
+        "EV-bf4871cd96fc25ac",
         "EV-2ee06634c0ce9f30",
         "EV-afb3bceddc36a696",
         "EV-c4f8ef356373ab24",
@@ -2524,6 +2540,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-use_case-research_discovery",
@@ -2533,7 +2550,6 @@
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
-        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
         "TX-industry-logistics_supply_chain",
         "TX-product_form-ai_infrastructure_software",
@@ -2557,24 +2573,32 @@
       ],
       "relatedEntityIds": [
         "EN-c70eca6b0f88f44d",
+        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-9bc22dcabf7f45b3",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-04"
+      "lastSeen": "2026-08-05"
     },
     {
       "id": "EN-bbf9aece05291ea4",

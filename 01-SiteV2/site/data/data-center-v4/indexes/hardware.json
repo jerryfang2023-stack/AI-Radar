@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-04T04:50:29.311Z",
-    "latestDataDate": "2026-08-04",
-    "currentDate": "2026-08-04",
-    "eventCount": 1841,
+    "generatedAt": "2026-08-05T00:23:57.965Z",
+    "latestDataDate": "2026-08-05",
+    "currentDate": "2026-08-05",
+    "eventCount": 1867,
     "quarantinedEventCount": 16
   },
   "hardware": [
@@ -2141,6 +2141,244 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-82c56cc41d0db4b4",
+      "snapshotKey": "82c56cc41d0db4b4",
+      "snapshotId": "HWS-047052b015d16803",
+      "eventId": "EV-22e4f8278c40d63e",
+      "eventIds": [
+        "EV-22e4f8278c40d63e"
+      ],
+      "dataDate": "2026-08-05",
+      "date": "2026-08-05",
+      "title": "New",
+      "subject": "New",
+      "productNames": [],
+      "hardwareType": "server",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-3aab588367ebae33"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-05",
+          "hardware_fact_id": "HWF-8668aff6e51adf2b",
+          "fact_type": "product",
+          "observed_at": "2026-08-04T23:58:24.000Z",
+          "subject_entity_id": "EN-11507a0e2f5e69d5",
+          "subject_name": "New",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "server",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
+          "event_refs": [
+            "EV-22e4f8278c40d63e"
+          ],
+          "claim_ref": "CL-0fa53ca19ba460b4",
+          "source_refs": [
+            "SA-18ec89cf0ea99dc6"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-05/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-05",
+          "hardware_fact_id": "HWF-64cfbdf6e5b5aa35",
+          "fact_type": "product",
+          "observed_at": "2026-08-04T23:58:24.000Z",
+          "subject_entity_id": "EN-11507a0e2f5e69d5",
+          "subject_name": "New",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "server",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
+          "event_refs": [
+            "EV-22e4f8278c40d63e"
+          ],
+          "claim_ref": "CL-46bf04059e9d58de",
+          "source_refs": [
+            "SA-18ec89cf0ea99dc6"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-05/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-05",
+          "hardware_fact_id": "HWF-3aab588367ebae33",
+          "fact_type": "product",
+          "observed_at": "2026-08-04T23:58:24.000Z",
+          "subject_entity_id": "EN-11507a0e2f5e69d5",
+          "subject_name": "New",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "server",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "I released LLM 0.32 this morning, the most significant new version of LLM since the initial launch of the project. The new version includes support for visible reasoning traces, server-side provider tools, redesigned content-addressable SQLite logs, new models, and new features enabled by the OpenAI Responses API. I also released new versions of the llm-anthropic , llm-gemini , and llm-openrouter plugins, each with substantial updates of their own.",
+          "event_refs": [
+            "EV-22e4f8278c40d63e"
+          ],
+          "claim_ref": "CL-a624017125310beb",
+          "source_refs": [
+            "SA-18ec89cf0ea99dc6"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-05/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://simonwillison.net/2026/Aug/4/new-release-of-llm",
+      "entityIds": [
+        "EN-11507a0e2f5e69d5",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-7f871cbf905f6e0c"
+      ]
+    },
+    {
+      "id": "HWC-5a30e015d5d12a96",
+      "snapshotKey": "5a30e015d5d12a96",
+      "snapshotId": "HWS-84ba3d86778ff712",
+      "eventId": "EV-467539fe176a470e",
+      "eventIds": [
+        "EV-467539fe176a470e"
+      ],
+      "dataDate": "2026-08-05",
+      "date": "2026-08-05",
+      "title": "NVIDIA",
+      "subject": "NVIDIA",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "500",
+          "unit": "$billion",
+          "fact_ref": "HWF-a33974401097d86a"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-05",
+          "previousDate": "2026-08-04",
+          "snapshotId": "HWS-84ba3d86778ff712",
+          "previousSnapshotId": "HWS-6228f201a75148c3",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-05",
+          "hardware_fact_id": "HWF-a33974401097d86a",
+          "fact_type": "product",
+          "observed_at": "2026-08-03T00:00:00.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "500",
+          "unit": "$billion",
+          "source_quote": "On July 24, 2026, the chipmaker and South Korea’s SK Group unveiled a partnership Nvidia itself is calling worth more than $500 billion, tying Nvidia’s next-generation Vera Rubin chips directly to SK Hynix’s high-bandwidth memory production for years to come.",
+          "event_refs": [
+            "EV-467539fe176a470e"
+          ],
+          "claim_ref": "CL-a25d118ea445e317",
+          "source_refs": [
+            "SA-ee00c48ed72f9d91"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-05/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://tech-insider.org/nvidia-sk-hynix-500-billion-memory-deal-2026",
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ]
+    },
+    {
+      "id": "HWC-dec6b87b671f56f6",
+      "snapshotKey": "dec6b87b671f56f6",
+      "snapshotId": "HWS-bf4da61cadaef9bb",
+      "eventId": "EV-da148848ec026bdf",
+      "eventIds": [
+        "EV-da148848ec026bdf"
+      ],
+      "dataDate": "2026-08-05",
+      "date": "2026-08-05",
+      "title": "Volta Emerges From Stealth",
+      "subject": "Volta Emerges From Stealth",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-aba5e1bbc580326d"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-05",
+          "hardware_fact_id": "HWF-aba5e1bbc580326d",
+          "fact_type": "product",
+          "observed_at": "2026-08-04T00:00:00.000Z",
+          "subject_entity_id": "EN-5f871f5e5df0de4a",
+          "subject_name": "Volta Emerges From Stealth",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Company launches as a fully vertically integrated AI infrastructure platform and NVIDIA Cloud Partner with the mission to build The Utility of Compute™",
+          "event_refs": [
+            "EV-da148848ec026bdf"
+          ],
+          "claim_ref": "CL-7864604a1ce56cc0",
+          "source_refs": [
+            "SA-e16f3d9cc160f133"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-05/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://financialcontent.com/article/bizwire-2026-8-4-volta-emerges-from-stealth-with-10-billion-ai-lab-partnership-and-5-billion-ai-infrastructure-program",
+      "entityIds": [
+        "EN-5f871f5e5df0de4a",
+        "EN-8d4321d936320802"
+      ]
+    },
+    {
       "id": "HWC-ca223925d7e51746",
       "snapshotKey": "ca223925d7e51746",
       "snapshotId": "HWS-c7b11b24c06f38fb",
@@ -2772,66 +3010,6 @@
       "sourceUrl": "https://newswire.com/news/kidz-ai-signs-data-center-mou-with-limestone-networks-to-deploy-inference",
       "entityIds": [
         "EN-bd6769fe78d0971a"
-      ]
-    },
-    {
-      "id": "HWC-5a30e015d5d12a96",
-      "snapshotKey": "5a30e015d5d12a96",
-      "snapshotId": "HWS-6228f201a75148c3",
-      "eventId": "EV-467539fe176a470e",
-      "eventIds": [
-        "EV-467539fe176a470e"
-      ],
-      "dataDate": "2026-08-04",
-      "date": "2026-08-04",
-      "title": "NVIDIA",
-      "subject": "NVIDIA",
-      "productNames": [],
-      "hardwareType": "semiconductor",
-      "factTypes": [
-        "product"
-      ],
-      "latestValues": {
-        "product": {
-          "metric_value": "500",
-          "unit": "$billion",
-          "fact_ref": "HWF-d4b29a196ee0772d"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-08-04",
-          "hardware_fact_id": "HWF-d4b29a196ee0772d",
-          "fact_type": "product",
-          "observed_at": "2026-08-03T00:00:00.000Z",
-          "subject_entity_id": "EN-8d4321d936320802",
-          "subject_name": "NVIDIA",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "semiconductor",
-          "metric_value": "500",
-          "unit": "$billion",
-          "source_quote": "On July 24, 2026, the chipmaker and South Korea’s SK Group unveiled a partnership Nvidia itself is calling worth more than $500 billion, tying Nvidia’s next-generation Vera Rubin chips directly to SK Hynix’s high-bandwidth memory production for years to come.",
-          "event_refs": [
-            "EV-467539fe176a470e"
-          ],
-          "claim_ref": "CL-14df7ad24bd85c04",
-          "source_refs": [
-            "SA-ee00c48ed72f9d91"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [],
-      "sourceUrl": "https://tech-insider.org/nvidia-sk-hynix-500-billion-memory-deal-2026",
-      "entityIds": [
-        "EN-8d4321d936320802"
       ]
     },
     {
@@ -5985,38 +6163,37 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-08-04",
-      "funnel_id": "LF-3b7e4f42b24973c8",
+      "data_date": "2026-08-05",
+      "funnel_id": "LF-9dc9466a3035859a",
       "lens": "hardware",
-      "date": "2026-08-04",
+      "date": "2026-08-05",
       "monitoring_paths": [
         "hardware_capacity_fab",
-        "hardware_capex",
-        "hardware_oem_odm",
         "hardware_product_specs",
         "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 32,
-      "original_sources": 26,
-      "valid_claims": 13,
-      "observations": 13,
-      "canonical_events": 4,
+      "raw_documents": 27,
+      "original_sources": 23,
+      "valid_claims": 3,
+      "observations": 5,
+      "canonical_events": 2,
       "blocker_counts": {
-        "source_outside_daily_window": 16,
-        "no_source_bounded_event": 1,
-        "event_not_ai_relevant": 2,
-        "non_event_or_index_title": 1,
-        "raw_source_quality_block": 7,
-        "raw_document_not_auditable": 1
+        "repository_page_requires_release_source": 2,
+        "source_outside_daily_window": 13,
+        "no_source_bounded_event": 2,
+        "event_not_ai_relevant": 1,
+        "no_source_bounded_claim": 1,
+        "raw_document_not_auditable": 2,
+        "raw_source_quality_block": 3
       },
       "rates": {
-        "original_source_rate": 0.8125,
-        "valid_claim_rate": 0.40625,
+        "original_source_rate": 0.8518518518518519,
+        "valid_claim_rate": 0.1111111111111111,
         "observation_rate": 1,
-        "event_conversion_rate": 0.3076923076923077
+        "event_conversion_rate": 0.6666666666666666
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-05/monitoring-funnel.json"
     }
   ]
 }

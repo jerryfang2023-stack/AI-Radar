@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-04T04:50:29.311Z",
-    "latestDataDate": "2026-08-04",
-    "currentDate": "2026-08-04",
-    "eventCount": 1841,
+    "generatedAt": "2026-08-05T00:23:57.965Z",
+    "latestDataDate": "2026-08-05",
+    "currentDate": "2026-08-05",
+    "eventCount": 1867,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -18,6 +18,7 @@
     "typeLabel": "技术",
     "valueId": "speech_audio",
     "eventIds": [
+      "EV-ec283dd6bd3ac991",
       "EV-6b0106ef4a79df05",
       "EV-9fb08b68f301eb88",
       "EV-94ad4a217508e6e0",
@@ -32,6 +33,7 @@
       "EV-631dce4dc135d01b"
     ],
     "entityIds": [
+      "EN-9fbf261b62c1d7c0",
       "EN-7ad34701224a4d2d",
       "EN-916a98f0fa2a39af",
       "EN-ec1c8f558ff61e34",
@@ -47,9 +49,99 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-05-25",
-    "lastSeen": "2026-08-01"
+    "lastSeen": "2026-08-05"
   },
   "events": [
+    {
+      "id": "EV-ec283dd6bd3ac991",
+      "dataDate": "2026-08-05",
+      "date": "2026-08-04",
+      "updatedDate": "2026-08-05",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "微软测试首款自研全双工 AI 语音模型 MAI Realtime：支持 16 种语言、2 种语音",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "微软测试首款自研全双工 AI 语音模型 MAI Realtime：支持 16 种语言、2 种语音",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-46b18ed8b36a89f9"
+      ],
+      "entityNames": [
+        "Microsoft",
+        "MAI Realtime"
+      ],
+      "productName": "MAI Realtime",
+      "products": [
+        {
+          "name": "MAI Realtime",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Microsoft"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/985/297.htm",
+      "publisher": "IT之家（RSS）"
+    },
     {
       "id": "EV-6b0106ef4a79df05",
       "dataDate": "2026-07-30",
@@ -1681,6 +1773,160 @@
   ],
   "entities": [
     {
+      "id": "EN-9fbf261b62c1d7c0",
+      "name": "Microsoft",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "微软"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9ed6a759555d7e77",
+        "EV-2a78dd5feb40a78a",
+        "EV-97854226b6f43a95",
+        "EV-86ca5af11ee4d275",
+        "EV-52115fee0e716170",
+        "EV-20d762872664fddb",
+        "EV-88f4ee8cd57bdf42",
+        "EV-44a4e92c03a31ab1",
+        "EV-7585b033d4005977",
+        "EV-57944eebac69d510",
+        "EV-306ac8217c66dc81",
+        "EV-005a017a310d1fdd",
+        "EV-e09efcd49776cb95",
+        "EV-883d3b5f6d30eb48",
+        "EV-fa66f00e9d4b20c2",
+        "EV-f31feb5ed41be8f2",
+        "EV-4fba2b2f1ac10a79",
+        "EV-bcb74b02448b7d78",
+        "EV-47a16db069ed320e",
+        "EV-381b79897d896995",
+        "EV-d756f05478303505",
+        "EV-7263caa45bbf168e",
+        "EV-8abf5adc3e72fbb8",
+        "EV-6272444f30281858",
+        "EV-f55d16df5b5fecb2",
+        "EV-16cfe946bbf69aa3",
+        "EV-eec1e6857f0e0b2b",
+        "EV-6acfb15c012ddf6d",
+        "EV-2fab4396000198d2",
+        "EV-3fb492fb45980541",
+        "EV-b833b29d904b39ac",
+        "EV-9dab7fa55702e561",
+        "EV-b2e374d54b10b9af",
+        "EV-4763b46821ab746e",
+        "EV-58c1cc3749294649",
+        "EV-c0a65877001ed413",
+        "EV-bd508dbe4205774f",
+        "EV-ec283dd6bd3ac991",
+        "EV-1797eada6fb392a6",
+        "EV-890ffd351486b884",
+        "EV-ab1b780e6e543b42",
+        "EV-4c949b6aac6d26e7",
+        "EV-7a4d1e871dcd3b1f",
+        "EV-3eb44a239ebef4b0",
+        "EV-272aea63d4e50349",
+        "EV-5f2acbfb8f54fd59",
+        "EV-6aae550a6523a8fd",
+        "EV-c9216f0145c3ef2b",
+        "EV-395884a4c090103c",
+        "EV-272c5c798bc95d9d",
+        "EV-5bc7efca0bc7fec0",
+        "EV-702276a31f123374",
+        "EV-37ff2485172cab0b",
+        "EV-82ae0ea3bfe336a1",
+        "EV-243e73016576fa43",
+        "EV-563843979fb55b9b",
+        "EV-6c81f03e885f10af",
+        "EV-e1e30a2a4a5232c6",
+        "EV-cd067fa6f39fe828",
+        "EV-1e611bcabcb049e9",
+        "EV-118317b7f92e5e16",
+        "EV-c4723445b11bb275",
+        "EV-7963d8c78531f12d",
+        "EV-7c899d5decafc42f",
+        "EV-b920999c64aa9ef6",
+        "EV-33292a33d0f4d599",
+        "EV-b3a050d576cea2f2",
+        "EV-fdcc4ff01b49053e",
+        "EV-cadcc94249dea81d",
+        "EV-dae42c1daf8ba2f8",
+        "EV-b862692915ae70bb",
+        "EV-51aed98773a9fca1",
+        "EV-cc3b92fe233953cf",
+        "EV-0370a17f0ef39c3e",
+        "EV-578a9db1fe952d0a",
+        "EV-b93b5cc15823e9c3",
+        "EV-7309586168387ad8",
+        "EV-8aead769e84de342",
+        "EV-7fb25ff3d853c314",
+        "EV-3acf607a02706fa8",
+        "EV-4ee99f92b011d16f",
+        "EV-9009adaed650ddde",
+        "EV-8a26b85b4f432525",
+        "EV-f953555178744c22",
+        "EV-28145c97a7237d6d",
+        "EV-10aac036228b3c6b",
+        "EV-8495af729cd05f62",
+        "EV-e28e134345ea5f99",
+        "EV-f7484ad16a6d1876",
+        "EV-d2d1834222ab32d3",
+        "EV-04c2ffd7f6b10126",
+        "EV-922de7a46f447efa",
+        "EV-1f61330a3f828179",
+        "EV-523e5de44cc464fb",
+        "EV-ae89898e7aa4a4d6",
+        "EV-d596f111808bd55b",
+        "EV-a4f052325d0ef230",
+        "EV-6ce6b9c9780b97d9",
+        "EV-741728825db1f14e",
+        "EV-89bdda008227fb6b",
+        "EV-62df953d81def866",
+        "EV-1b92b6c835ce240c",
+        "EV-3da14e3743571e92",
+        "EV-d9a78a839d6c628f",
+        "EV-1587a760d81451be",
+        "EV-33e7429a7bc94840",
+        "EV-022d1f3160d94048",
+        "EV-933294dfb2d19a67",
+        "EV-7580a050ca19a8ae"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-target_user-business_user",
+        "TX-industry-manufacturing",
+        "TX-use_case-data_analysis",
+        "TX-target_user-consumer",
+        "TX-use_case-security_operations",
+        "TX-technology-mixture_of_experts",
+        "TX-deployment_model-on_premise",
+        "TX-technology-model_context_protocol",
+        "TX-technology-image_generation",
+        "TX-technology-speech_audio",
+        "TX-technology-distillation"
+      ],
+      "relatedEntityIds": [
+        "EN-688f8db7018da7d4",
+        "EN-827b607311e6593e",
+        "EN-068e7ccb7d4b07a6",
+        "EN-8652f6cd9088f1fa",
+        "EN-597d8c4afa5fe3d6",
+        "EN-d2f4e09cb01afa3c",
+        "EN-7d3194f79e645c42",
+        "EN-38945a66b4806b11",
+        "EN-c141d2237427f30d",
+        "EN-8d4321d936320802",
+        "EN-10fce287b4b1464c"
+      ],
+      "firstSeen": "2026-02-13",
+      "lastSeen": "2026-08-05"
+    },
+    {
       "id": "EN-7ad34701224a4d2d",
       "name": "Lyria 3.5",
       "entityType": "product_candidate",
@@ -1730,8 +1976,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-software_development",
         "TX-technology-agentic_execution",
+        "TX-use_case-software_development",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-model_context_protocol",
         "TX-technology-tool_use",
@@ -1820,12 +2066,15 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-2dea56b0e97c1685",
         "EV-da1655ecfaf35feb",
         "EV-e3792591090281c6",
         "EV-8b7cbb66a33a945d",
@@ -1843,6 +2092,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-5bbc509a032b8309",
         "EV-a852dc0ca6011ff6",
         "EV-a86b04e679044c45",
         "EV-64178e5d858f5e25",
@@ -1867,6 +2117,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-da148848ec026bdf",
         "EV-467539fe176a470e",
         "EV-6272444f30281858",
         "EV-92be9fa58b1ee19f",
@@ -1887,6 +2138,8 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-6703b102274c3be9",
+        "EV-bf4871cd96fc25ac",
         "EV-2ee06634c0ce9f30",
         "EV-afb3bceddc36a696",
         "EV-c4f8ef356373ab24",
@@ -1970,6 +2223,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-use_case-research_discovery",
@@ -1979,7 +2233,6 @@
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
-        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
         "TX-industry-logistics_supply_chain",
         "TX-product_form-ai_infrastructure_software",
@@ -2003,24 +2256,32 @@
       ],
       "relatedEntityIds": [
         "EN-c70eca6b0f88f44d",
+        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-9bc22dcabf7f45b3",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-04"
+      "lastSeen": "2026-08-05"
     },
     {
       "id": "EN-2b6e51bec93e86c1",

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-04T04:50:29.311Z",
-    "latestDataDate": "2026-08-04",
-    "currentDate": "2026-08-04",
-    "eventCount": 1841,
+    "generatedAt": "2026-08-05T00:23:57.965Z",
+    "latestDataDate": "2026-08-05",
+    "currentDate": "2026-08-05",
+    "eventCount": 1867,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -20,6 +20,7 @@
     "eventIds": [
       "EV-7a44a47bf36780d2",
       "EV-24823de8fb76ac31",
+      "EV-268e5c3d36e3ed28",
       "EV-39b075c62ba4e927",
       "EV-da1655ecfaf35feb",
       "EV-754e83c2d19005fe",
@@ -80,6 +81,7 @@
       "EV-ff1f6119de13fa19",
       "EV-4dd25589d834060d",
       "EV-7263caa45bbf168e",
+      "EV-da148848ec026bdf",
       "EV-1e6f73c188a9e946",
       "EV-8f1b01897707b941",
       "EV-f65a1b053e5dca70",
@@ -114,6 +116,7 @@
     "entityIds": [
       "EN-721eb3fd31f8e1f6",
       "EN-834cc12fc35adde7",
+      "EN-5f5ed85925074c92",
       "EN-f9075cc99990820a",
       "EN-9cb45a27a2808c01",
       "EN-0f3360879e746531",
@@ -189,6 +192,7 @@
     "fdeIds": [
       "FDE-bf49eb6f42ebe6a8",
       "FDE-9f64e1521dd2dea0",
+      "FDE-d4a9cd05a34baf09",
       "FDE-6e17403b5cdb72b0"
     ],
     "hardwareIds": [
@@ -198,7 +202,7 @@
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2025-08-27",
-    "lastSeen": "2026-08-03"
+    "lastSeen": "2026-08-05"
   },
   "events": [
     {
@@ -1016,6 +1020,89 @@
       "products": [],
       "sourceUrl": "https://runtimewire.com/article/arrakis-security-raises-8-million-ai-agent-runtime-controls",
       "publisher": "runtimewire.com"
+    },
+    {
+      "id": "EV-268e5c3d36e3ed28",
+      "dataDate": "2026-08-05",
+      "date": "2026-08-01",
+      "updatedDate": "2026-08-05",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Foundational Industries 筹集 2500 万美元，打造 AI 运营工厂",
+      "originalTitle": "Foundational Industries raises $25M to build AI-run factories | AI Weekly",
+      "subject": "Foundational Industries",
+      "action": "raises",
+      "object": "$25M to build AI-run factories | AI Weekly",
+      "metrics": [
+        "$25 million",
+        "$25M"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-5f5ed85925074c92"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-5f5ed85925074c92"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-5f5ed85925074c92"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-5f5ed85925074c92"
+      ],
+      "entityNames": [
+        "Foundational Industries"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://aiweekly.co/alerts/foundational-industries-raises-25m-to-build-ai-run-factories",
+      "publisher": "aiweekly.co"
     },
     {
       "id": "EV-39b075c62ba4e927",
@@ -25395,6 +25482,90 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-da148848ec026bdf",
+      "dataDate": "2026-08-05",
+      "date": "2026-08-04",
+      "updatedDate": "2026-08-05",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Volta携100亿美元AI实验室合作及50亿美元AI基础设施项目走出隐身模式",
+      "originalTitle": "Volta Emerges From Stealth With $10 Billion AI Lab Partnership and $5 Billion AI Infrastructure Program | FinancialContent",
+      "subject": "Volta Emerges From Stealth With $10 Billion AI Lab",
+      "action": "Partnership",
+      "object": "and $5 Billion AI Infrastructure Program | FinancialContent",
+      "metrics": [
+        "$10 Billion",
+        "$5 Billion",
+        "$10 billion",
+        "133 MW",
+        "1 GW"
+      ],
+      "locations": [
+        "Europe"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-5f871f5e5df0de4a",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "Volta Emerges From Stealth",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://financialcontent.com/article/bizwire-2026-8-4-volta-emerges-from-stealth-with-10-billion-ai-lab-partnership-and-5-billion-ai-infrastructure-program",
+      "publisher": "financialcontent.com"
+    },
+    {
       "id": "EV-1e6f73c188a9e946",
       "dataDate": "2026-08-03",
       "date": "2026-08-03",
@@ -29518,6 +29689,27 @@
       "lastSeen": "2026-08-03"
     },
     {
+      "id": "EN-5f5ed85925074c92",
+      "name": "Foundational Industries",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-268e5c3d36e3ed28"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-manufacturing"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-01",
+      "lastSeen": "2026-08-05"
+    },
+    {
       "id": "EN-f9075cc99990820a",
       "name": "P-1 AI, Inc.",
       "entityType": "organization_candidate",
@@ -29534,13 +29726,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-manufacturing",
-        "TX-technology-agentic_execution",
         "TX-industry-automotive_transportation",
         "TX-use_case-design_engineering"
       ],
@@ -29624,13 +29816,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-manufacturing",
-        "TX-technology-agentic_execution",
         "TX-industry-logistics_supply_chain",
         "TX-industry-construction_real_estate",
         "TX-use_case-design_engineering",
@@ -29683,9 +29875,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-enterprise_software_platform",
         "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
-        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-financial_services",
@@ -29717,10 +29909,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-enterprise_software_platform",
         "TX-industry-professional_services",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-financial_services",
@@ -29912,12 +30104,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
+        "TX-technology-agentic_execution",
         "TX-product_form-enterprise_software_platform",
+        "TX-target_user-developer",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-manufacturing",
-        "TX-technology-agentic_execution",
         "TX-ai_market_category-industry_applications",
         "TX-use_case-data_analysis",
         "TX-use_case-design_engineering",
@@ -29999,9 +30191,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-enterprise_software_platform",
         "TX-target_user-developer",
         "TX-ai_market_category-enterprise_applications",
-        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-industry-manufacturing",
@@ -30017,12 +30209,15 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-2dea56b0e97c1685",
         "EV-da1655ecfaf35feb",
         "EV-e3792591090281c6",
         "EV-8b7cbb66a33a945d",
@@ -30040,6 +30235,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-5bbc509a032b8309",
         "EV-a852dc0ca6011ff6",
         "EV-a86b04e679044c45",
         "EV-64178e5d858f5e25",
@@ -30064,6 +30260,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-da148848ec026bdf",
         "EV-467539fe176a470e",
         "EV-6272444f30281858",
         "EV-92be9fa58b1ee19f",
@@ -30084,6 +30281,8 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-6703b102274c3be9",
+        "EV-bf4871cd96fc25ac",
         "EV-2ee06634c0ce9f30",
         "EV-afb3bceddc36a696",
         "EV-c4f8ef356373ab24",
@@ -30167,6 +30366,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-use_case-research_discovery",
@@ -30176,7 +30376,6 @@
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
-        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
         "TX-industry-logistics_supply_chain",
         "TX-product_form-ai_infrastructure_software",
@@ -30200,24 +30399,32 @@
       ],
       "relatedEntityIds": [
         "EN-c70eca6b0f88f44d",
+        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-9bc22dcabf7f45b3",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-04"
+      "lastSeen": "2026-08-05"
     },
     {
       "id": "EN-1bd14cd1a58c5708",
@@ -30235,14 +30442,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
-        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
-        "TX-technology-agentic_execution",
         "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_application-ai_development_orchestration",
         "TX-industry-healthcare_life_sciences"
@@ -30295,17 +30502,17 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-observability_evaluation",
         "TX-industry-professional_services",
         "TX-target_user-developer",
-        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
         "TX-industry-telecommunications",
-        "TX-technology-agentic_execution",
         "TX-industry-logistics_supply_chain",
         "TX-industry-construction_real_estate",
         "TX-industry-energy_utilities",
@@ -30341,6 +30548,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-professional_services",
         "TX-target_user-developer",
@@ -30349,7 +30557,6 @@
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
         "TX-industry-telecommunications",
-        "TX-technology-agentic_execution",
         "TX-industry-logistics_supply_chain",
         "TX-product_form-ai_infrastructure_software",
         "TX-ai_market_subcategory-development_deployment",
@@ -30387,8 +30594,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-technology-agentic_execution"
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-25",
@@ -30480,14 +30687,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
-        "TX-technology-agentic_execution",
         "TX-use_case-procurement_supply_chain",
         "TX-industry-retail_ecommerce"
       ],
@@ -30540,9 +30747,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-manufacturing"
@@ -30566,14 +30773,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-enterprise_software_platform",
         "TX-industry-professional_services",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-manufacturing",
-        "TX-technology-agentic_execution",
         "TX-use_case-procurement_supply_chain",
         "TX-industry-retail_ecommerce"
       ],
@@ -30698,6 +30905,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-professional_services",
         "TX-target_user-developer",
@@ -30705,7 +30913,6 @@
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
         "TX-industry-telecommunications",
-        "TX-technology-agentic_execution",
         "TX-industry-logistics_supply_chain",
         "TX-product_form-ai_infrastructure_software",
         "TX-ai_market_subcategory-development_deployment",
@@ -30817,16 +31024,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-enterprise_software_platform",
         "TX-industry-professional_services",
         "TX-target_user-developer",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
-        "TX-technology-agentic_execution",
         "TX-use_case-data_analysis",
         "TX-use_case-customer_support",
         "TX-use_case-sales",
@@ -30853,6 +31060,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-industry-professional_services",
         "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
@@ -30862,7 +31070,6 @@
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
         "TX-industry-telecommunications",
-        "TX-technology-agentic_execution",
         "TX-industry-logistics_supply_chain",
         "TX-industry-construction_real_estate",
         "TX-industry-energy_utilities",
@@ -31151,9 +31358,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-manufacturing",
@@ -31207,9 +31414,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-financial_services",
@@ -31280,10 +31487,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-use_case-software_development",
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
-        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
         "TX-product_form-robotic_system",
         "TX-technology-embodied_ai",
@@ -31348,7 +31555,9 @@
       "name": "Microsoft",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "微软"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -31391,6 +31600,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-ec283dd6bd3ac991",
         "EV-1797eada6fb392a6",
         "EV-890ffd351486b884",
         "EV-ab1b780e6e543b42",
@@ -31465,9 +31675,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-target_user-business_user",
         "TX-industry-manufacturing",
-        "TX-technology-agentic_execution",
         "TX-use_case-data_analysis",
         "TX-target_user-consumer",
         "TX-use_case-security_operations",
@@ -31475,18 +31685,24 @@
         "TX-deployment_model-on_premise",
         "TX-technology-model_context_protocol",
         "TX-technology-image_generation",
+        "TX-technology-speech_audio",
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
+        "EN-688f8db7018da7d4",
+        "EN-827b607311e6593e",
+        "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
+        "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-8d4321d936320802"
+        "EN-8d4321d936320802",
+        "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-08-04"
+      "lastSeen": "2026-08-05"
     },
     {
       "id": "EN-59ae856cd788d0f5",
@@ -31524,8 +31740,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-technology-agentic_execution"
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-22",
@@ -31682,8 +31898,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-use_case-data_analysis",
         "TX-technology-tool_use"
       ],
@@ -31729,8 +31945,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-professional_services",
         "TX-product_form-enterprise_software_platform",
+        "TX-industry-professional_services",
         "TX-industry-manufacturing",
         "TX-industry-telecommunications",
         "TX-use_case-procurement_supply_chain",
@@ -31762,10 +31978,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-product_form-model",
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
-        "TX-technology-agentic_execution",
         "TX-industry-retail_ecommerce",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-fine_tuning"
@@ -31847,9 +32063,7 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -31889,6 +32103,8 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-271b304f0a16b6db",
+        "EV-54a4809c304587e6",
         "EV-5e85bc91a6924760",
         "EV-ab1b780e6e543b42",
         "EV-cf4da5583e9311d7",
@@ -31994,6 +32210,7 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-6ea546ea3dbeb6d7",
         "EV-0e9f000dd04fe04c",
         "EV-5bfcc506994f103f",
         "EV-909cf18b467d6fdf",
@@ -32016,17 +32233,17 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-end_user_application",
         "TX-target_user-developer",
         "TX-product_form-model",
-        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
-        "TX-technology-agentic_execution",
         "TX-use_case-security_operations",
         "TX-technology-code_generation",
         "TX-technology-computer_use",
@@ -32041,19 +32258,16 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
-        "EN-307557d99a7eb726",
         "EN-8d323d8bba783aa3",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
-        "EN-31055a8d9856fce4",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
-        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -32061,7 +32275,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-08-05"
     },
     {
       "id": "EN-1706429cbf67f1c9",
@@ -32088,7 +32302,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-26",
-      "lastSeen": "2026-08-04"
+      "lastSeen": "2026-08-05"
     },
     {
       "id": "EN-c3983a4111660712",
@@ -32135,6 +32349,48 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-d4a9cd05a34baf09",
+      "eventId": "EV-da148848ec026bdf",
+      "dataDate": "2026-08-05",
+      "date": "2026-08-04",
+      "title": "Volta携100亿美元AI实验室合作及50亿美元AI基础设施项目走出隐身模式",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "an AI Lab",
+      "vendor": "Volta Emerges From Stealth",
+      "industry": "AI infrastructure",
+      "useCase": "and $5 Billion AI Infrastructure Program | FinancialContent",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Company launches as a fully vertically integrated AI infrastructure platform and NVIDIA Cloud Partner with the mission to build The Utility of Compute™",
+        "Volta's launch is anchored by a landmark $10 billion strategic partnership with an AI Lab to develop an AI factory in Europe alongside Bitdeer . Located in Norway, the project will comprise a 133 MW deployment powered by NVIDIA Vera Rubin systems. It is the first project within Volta's broader development pipeline, which today exceeds 1 GW of near-term power capacity across North America and Europe. The company intends to develop these sites using NVIDIA's DSX platform, targeting multiple gigawatts of deployed capacity by 2030.",
+        "Volta , a fully vertically integrated artificial intelligence (\"AI\") infrastructure platform and NVIDIA Cloud Partner, today emerged from stealth with a mission to build The Utility of Compute™, enabling frontier AI labs, AI-native companies, and enterprises to access dedicated AI infrastructure that is dependable, scalable, and backed by low-cost infrastructure capital."
+      ],
+      "outcomes": [],
+      "metrics": [
+        "$10 Billion",
+        "$5 Billion",
+        "$10 billion",
+        "133 MW",
+        "1 GW"
+      ],
+      "undisclosedFields": [
+        "workflow_before",
+        "workflow_after",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://financialcontent.com/article/bizwire-2026-8-4-volta-emerges-from-stealth-with-10-billion-ai-lab-partnership-and-5-billion-ai-infrastructure-program",
+      "entityIds": [
+        "EN-5f871f5e5df0de4a",
+        "EN-8d4321d936320802"
+      ]
+    },
     {
       "id": "FDE-6e17403b5cdb72b0",
       "eventId": "EV-6beed07120c6c6d0",
@@ -32443,6 +32699,67 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-dec6b87b671f56f6",
+      "snapshotKey": "dec6b87b671f56f6",
+      "snapshotId": "HWS-bf4da61cadaef9bb",
+      "eventId": "EV-da148848ec026bdf",
+      "eventIds": [
+        "EV-da148848ec026bdf"
+      ],
+      "dataDate": "2026-08-05",
+      "date": "2026-08-05",
+      "title": "Volta Emerges From Stealth",
+      "subject": "Volta Emerges From Stealth",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-aba5e1bbc580326d"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-05",
+          "hardware_fact_id": "HWF-aba5e1bbc580326d",
+          "fact_type": "product",
+          "observed_at": "2026-08-04T00:00:00.000Z",
+          "subject_entity_id": "EN-5f871f5e5df0de4a",
+          "subject_name": "Volta Emerges From Stealth",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Company launches as a fully vertically integrated AI infrastructure platform and NVIDIA Cloud Partner with the mission to build The Utility of Compute™",
+          "event_refs": [
+            "EV-da148848ec026bdf"
+          ],
+          "claim_ref": "CL-7864604a1ce56cc0",
+          "source_refs": [
+            "SA-e16f3d9cc160f133"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-05/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://financialcontent.com/article/bizwire-2026-8-4-volta-emerges-from-stealth-with-10-billion-ai-lab-partnership-and-5-billion-ai-infrastructure-program",
+      "entityIds": [
+        "EN-5f871f5e5df0de4a",
+        "EN-8d4321d936320802"
+      ]
+    },
     {
       "id": "HWC-95549ab5a3755efb",
       "snapshotKey": "95549ab5a3755efb",

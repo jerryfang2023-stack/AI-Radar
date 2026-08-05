@@ -1,0 +1,1694 @@
+[
+  {
+    "claim_id": "CL-f72a4bf8a5f8ddd0",
+    "raw_id": "RAW-f67f46d8aeb120f9",
+    "claim_type": "research_result",
+    "subject": "MirrorCode：AI 能独立完成的最大规模软件项目",
+    "predicate": "research_result",
+    "object": "AI has made rapid progress on software engineering benchmarks in the past few years. However, most such benchmarks tend to focus on shorter tasks like fixing bugs or implementing individual features. MirrorCode is our benchmark, co-developed with METR, to test AI models on long-horizon coding tasks. In a MirrorCode task, AI models are tasked with reimplementing an entire program end-to-end, without access to the original source code. AI-generated solutions must match the original program’s output exactly on end-to-end tests, including held-out tests. MirrorCode’s 25 target programs span different areas of computing: Unix utilities, data serialization and query tools, bioinformatics, interpreters, static analysis, cryptography, and compression.",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-f67f46d8aeb120f9",
+      "start": 0,
+      "end": 753
+    },
+    "source_quote": "AI has made rapid progress on software engineering benchmarks in the past few years. However, most such benchmarks tend to focus on shorter tasks like fixing bugs or implementing individual features. MirrorCode is our benchmark, co-developed with METR, to test AI models on long-horizon coding tasks. In a MirrorCode task, AI models are tasked with reimplementing an entire program end-to-end, without access to the original source code. AI-generated solutions must match the original program’s output exactly on end-to-end tests, including held-out tests. MirrorCode’s 25 target programs span different areas of computing: Unix utilities, data serialization and query tools, bioinformatics, interpreters, static analysis, cryptography, and compression.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d7ce13cbb3c24310",
+    "raw_id": "RAW-f67f46d8aeb120f9",
+    "claim_type": "research_result",
+    "subject": "MirrorCode：AI 能独立完成的最大规模软件项目",
+    "predicate": "research_result",
+    "object": "One important caveat to these results is data contamination. Because MirrorCode tasks involve reimplementing open-source programs, AI models are likely to have seen the original codebases in pretraining. This might lead to inflated performance on the benchmark. However, AI successfully reimplemented several target programs that passed our memorization screen, and failed to reimplement programs where the screen showed evidence of memorization. This suggests that the results were not dominated by memorization, but we cannot rule out the possibility that memorization contributes to AI performance. Overall, we expect that the capabilities measured by MirrorCode would generalize to an unseen codebase. We discuss this further, along with more results and details on benchmark construction, in the paper .",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-f67f46d8aeb120f9",
+      "start": 2263,
+      "end": 3071
+    },
+    "source_quote": "One important caveat to these results is data contamination. Because MirrorCode tasks involve reimplementing open-source programs, AI models are likely to have seen the original codebases in pretraining. This might lead to inflated performance on the benchmark. However, AI successfully reimplemented several target programs that passed our memorization screen, and failed to reimplement programs where the screen showed evidence of memorization. This suggests that the results were not dominated by memorization, but we cannot rule out the possibility that memorization contributes to AI performance. Overall, we expect that the capabilities measured by MirrorCode would generalize to an unseen codebase. We discuss this further, along with more results and details on benchmark construction, in the paper .",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-428c8daf7419275a",
+    "raw_id": "RAW-f67f46d8aeb120f9",
+    "claim_type": "research_result",
+    "subject": "MirrorCode：AI 能独立完成的最大规模软件项目",
+    "predicate": "research_result",
+    "object": "How MirrorCode is different",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-f67f46d8aeb120f9",
+      "start": 754,
+      "end": 781
+    },
+    "source_quote": "How MirrorCode is different",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-58dd229a1b8d8188",
+    "raw_id": "RAW-f67f46d8aeb120f9",
+    "claim_type": "research_result",
+    "subject": "MirrorCode：AI 能独立完成的最大规模软件项目",
+    "predicate": "research_result",
+    "object": "Scale-aware evaluations",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-f67f46d8aeb120f9",
+      "start": 782,
+      "end": 805
+    },
+    "source_quote": "Scale-aware evaluations",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8829b8449bd8a775",
+    "raw_id": "RAW-2aab91d5a1e77645",
+    "claim_type": "product_release",
+    "subject": "Google Cloud",
+    "predicate": "product_release",
+    "object": "Database Operations Agents，实现自主数据库管理",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-2aab91d5a1e77645",
+      "start": 279,
+      "end": 672
+    },
+    "source_quote": "As part of the Agentic Data Cloud launch at Google Cloud Next ‘26, we announced two AI-powered database agents to simplify database management. These include the Database Onboarding Agent for Day 0 operations — setup, configuration, and initial deployment — as well as the Database Observability Agent for Day 1 and 2 operations, including monitoring, troubleshooting, and ongoing maintenance.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cb51064db6b4163a",
+    "raw_id": "RAW-2aab91d5a1e77645",
+    "claim_type": "product_release",
+    "subject": "Google Cloud",
+    "predicate": "product_release",
+    "object": "Database Operations Agents，实现自主数据库管理",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-2aab91d5a1e77645",
+      "start": 673,
+      "end": 1000
+    },
+    "source_quote": "These agents are always on, informed by Google’s years of experience, and integrated across Google surfaces such as Chat, CLI, the Google Cloud console, Managed Context Protocol (MCP) servers, and third-party tools — including your preferred integrated development environment (IDE), so you get help where and when you need it.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0e21f86d1e716605",
+    "raw_id": "RAW-2aab91d5a1e77645",
+    "claim_type": "product_release",
+    "subject": "Google Cloud",
+    "predicate": "product_release",
+    "object": "Database Operations Agents，实现自主数据库管理",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-2aab91d5a1e77645",
+      "start": 1001,
+      "end": 1778
+    },
+    "source_quote": "Traditionally, managing and creating databases has involved a combination of manual architecture planning, custom scripts, and distinct tools. Teams handle database provisioning, schema design, index configuration, and query tuning, alongside performance monitoring—often cycling through repeated testing and optimization cycles as application demands change. Although this method is functional, it demands substantial technical skill and continuous attention throughout the entire database lifecycle. For example, developers often fear making an update that may limit their ability to scale the system later. Similarly, when an application slows down, finding the exact query or resource constraint causing the issue can take hours of manual investigation and troubleshooting.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-de0c68800a5b1421",
+    "raw_id": "RAW-2aab91d5a1e77645",
+    "claim_type": "product_release",
+    "subject": "Google Cloud",
+    "predicate": "product_release",
+    "object": "Database Operations Agents，实现自主数据库管理",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-2aab91d5a1e77645",
+      "start": 10,
+      "end": 94
+    },
+    "source_quote": "Introducing Database Operations Agents: The future of autonomous database management",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-746d8405095e418f",
+    "raw_id": "RAW-9018186da528821b",
+    "claim_type": "procurement_contract",
+    "subject": "Anthropic",
+    "predicate": "procurement_contract",
+    "object": "Volta",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e1d91d3f84cf7263"
+    },
+    "source_span": {
+      "raw_id": "RAW-9018186da528821b",
+      "start": 181,
+      "end": 234
+    },
+    "source_quote": "Anthropic signs $10B deal with AI cloud startup Volta",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-dce2d6c365c7bcc2",
+    "raw_id": "RAW-cf750d6d77de2563",
+    "claim_type": "model_release",
+    "subject": "NVIDIA Alpamayo 2 Super 开放商用，面向 Robotaxi 与自动驾驶的前沿",
+    "predicate": "model_release",
+    "object": "Earlier Alpamayo releases were initially introduced for R&D. The OpenMDW license is now being applied across the entire Alpamayo model family so developers can deploy any of the models commercially without requiring additional permissions. This creates a direct path from adaptation to deployment.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-cf750d6d77de2563",
+      "start": 1911,
+      "end": 2208
+    },
+    "source_quote": "Earlier Alpamayo releases were initially introduced for R&D. The OpenMDW license is now being applied across the entire Alpamayo model family so developers can deploy any of the models commercially without requiring additional permissions. This creates a direct path from adaptation to deployment.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c2635cb3ab796a6c",
+    "raw_id": "RAW-cf750d6d77de2563",
+    "claim_type": "model_release",
+    "subject": "NVIDIA Alpamayo 2 Super 开放商用，面向 Robotaxi 与自动驾驶的前沿",
+    "predicate": "model_release",
+    "object": "NVIDIA Alpamayo 2 Super, available now for commercial use, is part of the Alpamayo family, the most-adopted open reasoning models for autonomous driving on Hugging Face, supporting a wide range of AV-relevant capabilities within a single foundation model.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-cf750d6d77de2563",
+      "start": 516,
+      "end": 771
+    },
+    "source_quote": "NVIDIA Alpamayo 2 Super, available now for commercial use, is part of the Alpamayo family, the most-adopted open reasoning models for autonomous driving on Hugging Face, supporting a wide range of AV-relevant capabilities within a single foundation model.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7fa5a274d70703a1",
+    "raw_id": "RAW-cf750d6d77de2563",
+    "claim_type": "model_release",
+    "subject": "NVIDIA Alpamayo 2 Super 开放商用，面向 Robotaxi 与自动驾驶的前沿",
+    "predicate": "model_release",
+    "object": "Built on NVIDIA Cosmos 3 Super Reasoner and post‑trained with reinforcement learning, the model advances the AV ecosystem on two fronts: open commercial licensing and leading multitask capabilities for autonomous driving.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-cf750d6d77de2563",
+      "start": 772,
+      "end": 993
+    },
+    "source_quote": "Built on NVIDIA Cosmos 3 Super Reasoner and post‑trained with reinforcement learning, the model advances the AV ecosystem on two fronts: open commercial licensing and leading multitask capabilities for autonomous driving.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9790c70b2927ca36",
+    "raw_id": "RAW-cf750d6d77de2563",
+    "claim_type": "model_release",
+    "subject": "NVIDIA Alpamayo 2 Super 开放商用，面向 Robotaxi 与自动驾驶的前沿",
+    "predicate": "model_release",
+    "object": "Alpamayo 2 Super is part of NVIDIA’s growing collection of open models, datasets and tools for autonomous driving , expanding access, strengthening competition, giving developers greater control and supporting safer, more transparent AV deployment.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-cf750d6d77de2563",
+      "start": 994,
+      "end": 1242
+    },
+    "source_quote": "Alpamayo 2 Super is part of NVIDIA’s growing collection of open models, datasets and tools for autonomous driving , expanding access, strengthening competition, giving developers greater control and supporting safer, more transparent AV deployment.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-aa1d891c4b09d28c",
+    "raw_id": "RAW-3b0bf1884b4b4462",
+    "claim_type": "model_release",
+    "subject": "Google Cloud API Gateway",
+    "predicate": "model_release",
+    "object": "路由功能，支持 Gemini、Claude 与 OpenAI OSS-GPT",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-3b0bf1884b4b4462",
+      "start": 143,
+      "end": 551
+    },
+    "source_quote": "When building AI applications, developers need the freedom to route traffic to the best model for the job without hardcoding endpoints or managing open-source proxies. Google Cloud API Gateway now offers model routing in Public Preview to solve this. It provides a lightweight, serverless ingress layer that accepts OpenAI-compatible requests and dynamically routes them to Gemini, Claude, or OpenAI OSS-GPT.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d25deae52422527c",
+    "raw_id": "RAW-3b0bf1884b4b4462",
+    "claim_type": "model_release",
+    "subject": "Google Cloud API Gateway",
+    "predicate": "model_release",
+    "object": "路由功能，支持 Gemini、Claude 与 OpenAI OSS-GPT",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-3b0bf1884b4b4462",
+      "start": 552,
+      "end": 955
+    },
+    "source_quote": "API Gateway can be used standalone for simple rate limiting and token tracking, or paired seamlessly with the Gemini Enterprise Agent Platform. For example, you can route your agent's egress through Agent Gateway for strict security governance, and then pass the request to API Gateway to handle dynamic routing to Google-hosted LLMs. Here is a step-by-step guide on how to configure your routing logic.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2b15e85f8b5194df",
+    "raw_id": "RAW-3b0bf1884b4b4462",
+    "claim_type": "model_release",
+    "subject": "Google Cloud API Gateway",
+    "predicate": "model_release",
+    "object": "路由功能，支持 Gemini、Claude 与 OpenAI OSS-GPT",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-3b0bf1884b4b4462",
+      "start": 956,
+      "end": 976
+    },
+    "source_quote": "Routing your traffic",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1e8873bee0066f7a",
+    "raw_id": "RAW-3b0bf1884b4b4462",
+    "claim_type": "model_release",
+    "subject": "Google Cloud API Gateway",
+    "predicate": "model_release",
+    "object": "路由功能，支持 Gemini、Claude 与 OpenAI OSS-GPT",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-3b0bf1884b4b4462",
+      "start": 1037,
+      "end": 1224
+    },
+    "source_quote": "Configure your routing rules: You can map virtual model names to specific backend targets directly in your OpenAPI 3.x specification using the new x-google-api-management extension block.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-976bf475eae5610b",
+    "raw_id": "RAW-931a024fcd2bb5e6",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.221",
+    "predicate": "product_release",
+    "object": "：新增 Focus view、沙箱凭据掩码与多项修复",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-931a024fcd2bb5e6",
+      "start": 468,
+      "end": 684
+    },
+    "source_quote": "[VSCode] Added Focus view: a chat-menu toggle that hides tool activity behind an expandable per-turn summary with a live running-tool indicator, toggled with Ctrl+Alt+F or the \"Claude Code: Toggle Focus view\" command",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f20a67684c8a7fe6",
+    "raw_id": "RAW-931a024fcd2bb5e6",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.221",
+    "predicate": "product_release",
+    "object": "：新增 Focus view、沙箱凭据掩码与多项修复",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-931a024fcd2bb5e6",
+      "start": 685,
+      "end": 959
+    },
+    "source_quote": "Added mode: \"mask\" for sandbox credential files on Linux and WSL — sandboxed commands read a sentinel copy (the whole file, or just the spans captured by an extract regex) while the sandbox proxy substitutes the real value on egress; on macOS file masking falls back to deny",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e3b823816c7093d9",
+    "raw_id": "RAW-931a024fcd2bb5e6",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.221",
+    "predicate": "product_release",
+    "object": "：新增 Focus view、沙箱凭据掩码与多项修复",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-931a024fcd2bb5e6",
+      "start": 960,
+      "end": 1097
+    },
+    "source_quote": "Added warnings to claude plugin validate when a marketplace or plugin name would be rejected by Claude Desktop's managed marketplace sync",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-139057bfa59f6925",
+    "raw_id": "RAW-931a024fcd2bb5e6",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.221",
+    "predicate": "product_release",
+    "object": "：新增 Focus view、沙箱凭据掩码与多项修复",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-931a024fcd2bb5e6",
+      "start": 1098,
+      "end": 1234
+    },
+    "source_quote": "Added a prompt-audit subcommand to the claude-api skill for auditing prompts and tool descriptions for patterns written for older models",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a25d118ea445e317",
+    "raw_id": "RAW-867da76cbfc8cfc4",
+    "claim_type": "partnership",
+    "subject": "Nvidia",
+    "predicate": "partnership",
+    "object": "SK Group",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-98ad69abfdd0aabd"
+    },
+    "source_span": {
+      "raw_id": "RAW-867da76cbfc8cfc4",
+      "start": 138,
+      "end": 397
+    },
+    "source_quote": "On July 24, 2026, the chipmaker and South Korea’s SK Group unveiled a partnership Nvidia itself is calling worth more than $500 billion, tying Nvidia’s next-generation Vera Rubin chips directly to SK Hynix’s high-bandwidth memory production for years to come.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-960ed2243dba4e8b",
+    "raw_id": "RAW-a58e8dbe78e900bb",
+    "claim_type": "funding",
+    "subject": "Actualyze AI",
+    "predicate": "funding",
+    "object": "$7 million seed funding",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-8896a75b8c62c734"
+    },
+    "source_span": {
+      "raw_id": "RAW-a58e8dbe78e900bb",
+      "start": 234,
+      "end": 469
+    },
+    "source_quote": "Actualyze AI emerged from stealth today announcing Actualyze, the foundation for enterprise AI platform, backed with $7 million in seed funding from Storm Ventures, Canaan Partners, Morado Ventures, and Jerry Yang's AME Cloud Ventures.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3dec96213fcf2b15",
+    "raw_id": "RAW-86d45f3c5e1e69b7",
+    "claim_type": "partnership",
+    "subject": "Volta Emerges From Stealth With $10 Billion AI Lab",
+    "predicate": "partnership",
+    "object": "and $5 Billion AI Infrastructure Program | FinancialContent",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-86d45f3c5e1e69b7",
+      "start": 0,
+      "end": 103
+    },
+    "source_quote": "Volta Emerges From Stealth With $10 Billion AI Lab Partnership and $5 Billion AI Infrastructure Program",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7864604a1ce56cc0",
+    "raw_id": "RAW-86d45f3c5e1e69b7",
+    "claim_type": "partnership",
+    "subject": "Volta Emerges From Stealth With $10 Billion AI Lab",
+    "predicate": "partnership",
+    "object": "and $5 Billion AI Infrastructure Program | FinancialContent",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-86d45f3c5e1e69b7",
+      "start": 311,
+      "end": 462
+    },
+    "source_quote": "Company launches as a fully vertically integrated AI infrastructure platform and NVIDIA Cloud Partner with the mission to build The Utility of Compute™",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e373ef14150c9d74",
+    "raw_id": "RAW-86d45f3c5e1e69b7",
+    "claim_type": "partnership",
+    "subject": "Volta Emerges From Stealth With $10 Billion AI Lab",
+    "predicate": "partnership",
+    "object": "and $5 Billion AI Infrastructure Program | FinancialContent",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-86d45f3c5e1e69b7",
+      "start": 2736,
+      "end": 3269
+    },
+    "source_quote": "Volta's launch is anchored by a landmark $10 billion strategic partnership with an AI Lab to develop an AI factory in Europe alongside Bitdeer . Located in Norway, the project will comprise a 133 MW deployment powered by NVIDIA Vera Rubin systems. It is the first project within Volta's broader development pipeline, which today exceeds 1 GW of near-term power capacity across North America and Europe. The company intends to develop these sites using NVIDIA's DSX platform, targeting multiple gigawatts of deployed capacity by 2030.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9e2652a8e096062a",
+    "raw_id": "RAW-86d45f3c5e1e69b7",
+    "claim_type": "partnership",
+    "subject": "Volta Emerges From Stealth With $10 Billion AI Lab",
+    "predicate": "partnership",
+    "object": "and $5 Billion AI Infrastructure Program | FinancialContent",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-86d45f3c5e1e69b7",
+      "start": 463,
+      "end": 836
+    },
+    "source_quote": "Volta , a fully vertically integrated artificial intelligence (\"AI\") infrastructure platform and NVIDIA Cloud Partner, today emerged from stealth with a mission to build The Utility of Compute™, enabling frontier AI labs, AI-native companies, and enterprises to access dedicated AI infrastructure that is dependable, scalable, and backed by low-cost infrastructure capital.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6658e9ad6fc180c6",
+    "raw_id": "RAW-f8d8db33c1214bcc",
+    "claim_type": "funding",
+    "subject": "Foundational Industries",
+    "predicate": "funding",
+    "object": "$25M to build AI-run factories | AI Weekly",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-f8d8db33c1214bcc",
+      "start": 6,
+      "end": 143
+    },
+    "source_quote": "Foundational Industries raised a $25 million seed led by BoxGroup and Zigg Ventures to build factories where AI runs the whole operation.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-296ac9a799aaf3f6",
+    "raw_id": "RAW-f8d8db33c1214bcc",
+    "claim_type": "funding",
+    "subject": "Foundational Industries",
+    "predicate": "funding",
+    "object": "$25M to build AI-run factories | AI Weekly",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-f8d8db33c1214bcc",
+      "start": 436,
+      "end": 699
+    },
+    "source_quote": "The pitch from Foundational Industries, which Fortune reported exclusively has closed a $25 million seed round, is not about welding another robot arm onto a legacy assembly line. It is about writing the factory itself in software first and letting AI operate it.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8be401a13f3c9f91",
+    "raw_id": "RAW-f8d8db33c1214bcc",
+    "claim_type": "funding",
+    "subject": "Foundational Industries",
+    "predicate": "funding",
+    "object": "$25M to build AI-run factories | AI Weekly",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-f8d8db33c1214bcc",
+      "start": 2817,
+      "end": 2918
+    },
+    "source_quote": "Foundational Industries Raises $25M Seed to Build AI-Native Factories Starting With Data-Center Racks",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3bd8198a02070c8f",
+    "raw_id": "RAW-1cab193331f48897",
+    "claim_type": "acquisition",
+    "subject": "Secure Blockchain Development Corp.",
+    "predicate": "acquisition",
+    "object": "Agentic Solutions Limited",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-bcf54b233db5de61"
+    },
+    "source_span": {
+      "raw_id": "RAW-1cab193331f48897",
+      "start": 767,
+      "end": 832
+    },
+    "source_quote": "the Company set out with its acquisition of Agentic in April 2026",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-957265312818c88e",
+    "raw_id": "RAW-8af22112458e30e6",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "Notes - August 2026 Latest Updates - Releasebot",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-8af22112458e30e6",
+      "start": 4030,
+      "end": 5107
+    },
+    "source_quote": "We also used GPT‑5.6 Sol to optimize the model’s forward pass: the computation that transforms inputs into next-token predictions. Even when individual operations are fast, excess memory movement, synchronization, and inefficient data layouts can leave GPUs idle. To avoid this, GPT‑5.6 Sol found work that could be precomputed, avoided, or parallelized. With Codex, GPT‑5.6 Sol autonomously rewrote and optimized our production kernels, the core code that executes the mathematical operations that make up the model. This worked in part because we’ve trained GPT‑5.6 to be effective at writing and improving kernels in Triton (opens in a new window) and Gluon (opens in a new window), two open-source GPU programming languages maintained by OpenAI. These efforts, combined with broader kernel advancements from GPT‑5.6 Sol, reduced end-to-end serving costs by 20%. We’ve also heavily invested in verification tooling, such as the open-source tool FpSan (opens in a new window) (Floating-Point Sanitizer), to help validate the correctness of the kernels written by GPT‑5.6 Sol.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-05b6c6129f755753",
+    "raw_id": "RAW-247fc610c33f008d",
+    "claim_type": "acquisition",
+    "subject": "Secure Blockchain Development Corp.",
+    "predicate": "acquisition",
+    "object": "Agentic Solutions Limited",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-6bdb4a68a9f41c7f"
+    },
+    "source_span": {
+      "raw_id": "RAW-247fc610c33f008d",
+      "start": 1265,
+      "end": 1330
+    },
+    "source_quote": "the Company set out with its acquisition of Agentic in April 2026",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e3e6392d8ebb1bff",
+    "raw_id": "RAW-037e8f6488954f87",
+    "claim_type": "model_release",
+    "subject": "Mistral",
+    "predicate": "model_release",
+    "object": "Shieldstral",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-1cff537f260718fc"
+    },
+    "source_span": {
+      "raw_id": "RAW-037e8f6488954f87",
+      "start": 1874,
+      "end": 1940
+    },
+    "source_quote": "today we're releasing Shieldstral as open weights under Apache 2.0",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-79e4af821377df64",
+    "raw_id": "RAW-7247d349f2d46406",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "Wrinkles：一款用AI语音导览揭示身边地点隐藏故事的App",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-7247d349f2d46406",
+      "start": 249,
+      "end": 499
+    },
+    "source_quote": "A new app called Wrinkles uses your location to automatically surface stories about the places around you. Wrinkles, available on both iOS and Android , essentially acts as an AI-powered audio tour guide that reveals hidden history and local stories.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-99e2ae526494e324",
+    "raw_id": "RAW-7247d349f2d46406",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "Wrinkles：一款用AI语音导览揭示身边地点隐藏故事的App",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-7247d349f2d46406",
+      "start": 500,
+      "end": 769
+    },
+    "source_quote": "The idea behind the app is to allow you to move through the world while hearing the places around you come to life without having to stare at your phone. As you explore, Wrinkles can tell you the secrets behind a building, the history of a street, and other local lore.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8877fa5cefc98bcc",
+    "raw_id": "RAW-7247d349f2d46406",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "Wrinkles：一款用AI语音导览揭示身边地点隐藏故事的App",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-7247d349f2d46406",
+      "start": 770,
+      "end": 1017
+    },
+    "source_quote": "Wrinkles was founded by David Stemler, a longtime advertising executive, and Ryan Hansan, who previously founded ScratchDC, a meal delivery service, and TasteLab, a shared commercial kitchen that helped independent food businesses launch and grow.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-365c1d55cc53f9b9",
+    "raw_id": "RAW-f4bd9f10a916ae83",
+    "claim_type": "deployment",
+    "subject": "undisclosed_subject",
+    "predicate": "deployment",
+    "object": "and Scaling Enterprise AI Agents — Eloquent AI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-f4bd9f10a916ae83",
+      "start": 0,
+      "end": 56
+    },
+    "source_quote": "Deploying and Scaling Enterprise AI Agents — Eloquent AI",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1032087c5261a9b3",
+    "raw_id": "RAW-f4bd9f10a916ae83",
+    "claim_type": "deployment",
+    "subject": "undisclosed_subject",
+    "predicate": "deployment",
+    "object": "and Scaling Enterprise AI Agents — Eloquent AI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-f4bd9f10a916ae83",
+      "start": 57,
+      "end": 107
+    },
+    "source_quote": "Go back Deploying and Scaling Enterprise AI Agents",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-87b7c79d9dd75904",
+    "raw_id": "RAW-f4bd9f10a916ae83",
+    "claim_type": "deployment",
+    "subject": "undisclosed_subject",
+    "predicate": "deployment",
+    "object": "and Scaling Enterprise AI Agents — Eloquent AI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-f4bd9f10a916ae83",
+      "start": 463,
+      "end": 712
+    },
+    "source_quote": "The promise of enterprise AI agents is transformative: enhanced customer experiences, streamlined operations, and significant cost savings. Yet, despite the widespread interest, enterprise AI rollouts often fail to progress beyond pilot stages. Why?",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-05c6ee838abbf9e8",
+    "raw_id": "RAW-f4bd9f10a916ae83",
+    "claim_type": "deployment",
+    "subject": "undisclosed_subject",
+    "predicate": "deployment",
+    "object": "and Scaling Enterprise AI Agents — Eloquent AI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-f4bd9f10a916ae83",
+      "start": 108,
+      "end": 308
+    },
+    "source_quote": "Enterprise AI agents can transform customer experiences, streamline operations, and drive major cost savings. Yet, most projects stall before full-scale deployment. Why aren't AI agents happening yet?",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cfb9fd75c4b90bc5",
+    "raw_id": "RAW-026d7d77c25546c5",
+    "claim_type": "capital_investment",
+    "subject": "Compute SPV",
+    "predicate": "capital_investment",
+    "object": "TPU hardware",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-47a39425482edbb2"
+    },
+    "source_span": {
+      "raw_id": "RAW-026d7d77c25546c5",
+      "start": 2109,
+      "end": 2258
+    },
+    "source_quote": "The structure first goes into use in June, when a special purpose vehicle called Compute SPV buys about one gigawatt of TPU hardware for $35 billion.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-302320e74058e3ef",
+    "raw_id": "RAW-026d7d77c25546c5",
+    "claim_type": "capital_investment",
+    "subject": "Google",
+    "predicate": "capital_investment",
+    "object": "TeraWulf",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-47a39425482edbb2"
+    },
+    "source_span": {
+      "raw_id": "RAW-026d7d77c25546c5",
+      "start": 3096,
+      "end": 3342
+    },
+    "source_quote": "TeraWulf is the first to receive a Google guarantee, which covers a 360 megawatt data center in New York. Morgan Stanley packages the guarantee into a $3.2 billion construction bond, while Google receives an ownership stake in TeraWulf in return.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f013df6743c0233e",
+    "raw_id": "RAW-f2e6e177b29c0c73",
+    "claim_type": "product_release",
+    "subject": "Silicon Valley’s rift over",
+    "predicate": "product_release",
+    "object": "pushes back contemplated White House bans on Chinese AI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-f2e6e177b29c0c73",
+      "start": 19,
+      "end": 113
+    },
+    "source_quote": "Silicon Valley’s rift over open source pushes back contemplated White House bans on Chinese AI",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c4a651061e76ac35",
+    "raw_id": "RAW-f2e6e177b29c0c73",
+    "claim_type": "product_release",
+    "subject": "Silicon Valley’s rift over",
+    "predicate": "product_release",
+    "object": "pushes back contemplated White House bans on Chinese AI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-f2e6e177b29c0c73",
+      "start": 2693,
+      "end": 3263
+    },
+    "source_quote": "Nvidia CEO Jensen Huang became the face of that resistance. On July 24, he wrote his first-ever post on X to defend open models. Nvidia also launched an alliance for open security tools that grew from a handful of members to more than 230. Christopher Padilla, a former Commerce Department official, described the dispute in the NYT report as a \"cage fight over the future of the AI industry,\" saying it's mostly about money and market power, with the security angle tacked on. Industry officials don't expect any hard measures before Xi Jinping's visit in September. Ad",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8eb7f2d6b7dd5286",
+    "raw_id": "RAW-f2e6e177b29c0c73",
+    "claim_type": "product_release",
+    "subject": "Silicon Valley’s rift over",
+    "predicate": "product_release",
+    "object": "pushes back contemplated White House bans on Chinese AI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-f2e6e177b29c0c73",
+      "start": 114,
+      "end": 134
+    },
+    "source_quote": "Maximilian Schreiner",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d666d1b22246d391",
+    "raw_id": "RAW-f2e6e177b29c0c73",
+    "claim_type": "product_release",
+    "subject": "Silicon Valley’s rift over",
+    "predicate": "product_release",
+    "object": "pushes back contemplated White House bans on Chinese AI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-f2e6e177b29c0c73",
+      "start": 135,
+      "end": 184
+    },
+    "source_quote": "View the LinkedIn Profile of Maximilian Schreiner",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2b73b7bf7480b063",
+    "raw_id": "RAW-b4d3542e6587f2b3",
+    "claim_type": "lawsuit_settlement",
+    "subject": "OpenAI fires back at Apple's trade secret",
+    "predicate": "lawsuit_settlement",
+    "object": "with chat logs showing Apple employees kept texting their former colleague",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-b4d3542e6587f2b3",
+      "start": 19,
+      "end": 143
+    },
+    "source_quote": "OpenAI fires back at Apple's trade secret lawsuit with chat logs showing Apple employees kept texting their former colleague",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9d127e25f1388bf3",
+    "raw_id": "RAW-b4d3542e6587f2b3",
+    "claim_type": "lawsuit_settlement",
+    "subject": "OpenAI fires back at Apple's trade secret",
+    "predicate": "lawsuit_settlement",
+    "object": "with chat logs showing Apple employees kept texting their former colleague",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-b4d3542e6587f2b3",
+      "start": 255,
+      "end": 465
+    },
+    "source_quote": "OpenAI is pushing back against Apple's trade secret lawsuit and has released chat messages that it says show Apple employees themselves reached out to their former colleague Chang Liu for technical information.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e33c7b8228ace102",
+    "raw_id": "RAW-b4d3542e6587f2b3",
+    "claim_type": "lawsuit_settlement",
+    "subject": "OpenAI fires back at Apple's trade secret",
+    "predicate": "lawsuit_settlement",
+    "object": "with chat logs showing Apple employees kept texting their former colleague",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-b4d3542e6587f2b3",
+      "start": 466,
+      "end": 926
+    },
+    "source_quote": "In a blog post , OpenAI accused the iPhone maker of taking a sloppy and unnecessarily aggressive approach. Apple sued OpenAI in a federal court in California for what it calls the systematic theft of trade secrets, alleging that former Apple engineer Chang Liu improperly accessed confidential information after joining OpenAI. Apple also accuses OpenAI of actively encouraging departing employees to steal files and specifications during their notice periods.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e3329cca63a4ae94",
+    "raw_id": "RAW-b4d3542e6587f2b3",
+    "claim_type": "lawsuit_settlement",
+    "subject": "OpenAI fires back at Apple's trade secret",
+    "predicate": "lawsuit_settlement",
+    "object": "with chat logs showing Apple employees kept texting their former colleague",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-b4d3542e6587f2b3",
+      "start": 1996,
+      "end": 2286
+    },
+    "source_quote": "Liu is just one part of a much broader case, though. According to the complaint, more than 400 former Apple employees now work at OpenAI, and the lawsuit ties into OpenAI's growing hardware ambitions around the startup io Products, co-founded by Jony Ive, Apple's iconic former designer. Ad",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-316c9de80072fa00",
+    "raw_id": "RAW-f6d448ac12e9585b",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 回应苹果商业纠纷案：称苹果对此案处理有误",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-f6d448ac12e9585b",
+      "start": 0,
+      "end": 113
+    },
+    "source_quote": "IT之家 8 月 4 日消息，针对苹果公司就 商业秘密案件 昨日（8 月 3 日）向美国法院申请临时禁令， OpenAI 公司发布回应文章《 苹果对此事的处理有误 》（Apple is getting this wrong）。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-982d15410880dc35",
+    "raw_id": "RAW-f6d448ac12e9585b",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 回应苹果商业纠纷案：称苹果对此案处理有误",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-f6d448ac12e9585b",
+      "start": 114,
+      "end": 168
+    },
+    "source_quote": "针对苹果公司提起的诉讼以及临时禁令申请 ，OpenAI 公司回应表示，在沟通方面苹果相关描述和事实存在出入。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-37c529b8039acd6d",
+    "raw_id": "RAW-f6d448ac12e9585b",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 回应苹果商业纠纷案：称苹果对此案处理有误",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-f6d448ac12e9585b",
+      "start": 169,
+      "end": 198
+    },
+    "source_quote": "苹果公司曾于 2 月联系 OpenAI，并称没有收到回应。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-da2115a40fec6902",
+    "raw_id": "RAW-e0adca741b32d183",
+    "claim_type": "pricing_change",
+    "subject": "Nous Portal",
+    "predicate": "pricing_change",
+    "object": "DeepSeek V4 Flash",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-0157a9d85c103046"
+    },
+    "source_span": {
+      "raw_id": "RAW-e0adca741b32d183",
+      "start": 360,
+      "end": 409
+    },
+    "source_quote": "Nous Portal 便是其中之一，并且属于神中神，直接给V4 Flash打了个一折，限时7天。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a01ac97e7189b78e",
+    "raw_id": "RAW-60e16f70d4277601",
+    "claim_type": "product_release",
+    "subject": "派早报：MiniMax H3 开源、Qwen3.8-Max",
+    "predicate": "product_release",
+    "object": "等",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-60e16f70d4277601",
+      "start": 6,
+      "end": 39
+    },
+    "source_quote": "派早报：MiniMax H3 开源、Qwen3.8-Max 发布等",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-199ff8329b9bfc7c",
+    "raw_id": "RAW-60e16f70d4277601",
+    "claim_type": "product_release",
+    "subject": "派早报：MiniMax H3 开源、Qwen3.8-Max",
+    "predicate": "product_release",
+    "object": "等",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-60e16f70d4277601",
+      "start": 590,
+      "end": 670
+    },
+    "source_quote": "阿里于 8 月 3 日正式发布 Qwen3.8-Max 模型，该模型基于 Qwen3.5 架构构建，在编程、真实办公、长程任务与多模态智能体等方面实现全面提升。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-91429d0e0f4cff8e",
+    "raw_id": "RAW-60e16f70d4277601",
+    "claim_type": "product_release",
+    "subject": "派早报：MiniMax H3 开源、Qwen3.8-Max",
+    "predicate": "product_release",
+    "object": "等",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-60e16f70d4277601",
+      "start": 61,
+      "end": 83
+    },
+    "source_quote": "通用视频模型 MiniMax H3 开源 1",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-73d3ce9772af3e35",
+    "raw_id": "RAW-60e16f70d4277601",
+    "claim_type": "product_release",
+    "subject": "派早报：MiniMax H3 开源、Qwen3.8-Max",
+    "predicate": "product_release",
+    "object": "等",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-60e16f70d4277601",
+      "start": 104,
+      "end": 132
+    },
+    "source_quote": "微信地震预警功能上新，支持「震感汇聚」与「位置更新」 1",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0fa53ca19ba460b4",
+    "raw_id": "RAW-1b41699dd4905d49",
+    "claim_type": "model_release",
+    "subject": "New",
+    "predicate": "model_release",
+    "object": "adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-1b41699dd4905d49",
+      "start": 0,
+      "end": 110
+    },
+    "source_quote": "New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-46bf04059e9d58de",
+    "raw_id": "RAW-1b41699dd4905d49",
+    "claim_type": "model_release",
+    "subject": "New",
+    "predicate": "model_release",
+    "object": "adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-1b41699dd4905d49",
+      "start": 305,
+      "end": 415
+    },
+    "source_quote": "New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a624017125310beb",
+    "raw_id": "RAW-1b41699dd4905d49",
+    "claim_type": "model_release",
+    "subject": "New",
+    "predicate": "model_release",
+    "object": "adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-1b41699dd4905d49",
+      "start": 432,
+      "end": 884
+    },
+    "source_quote": "I released LLM 0.32 this morning, the most significant new version of LLM since the initial launch of the project. The new version includes support for visible reasoning traces, server-side provider tools, redesigned content-addressable SQLite logs, new models, and new features enabled by the OpenAI Responses API. I also released new versions of the llm-anthropic , llm-gemini , and llm-openrouter plugins, each with substantial updates of their own.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-994e46a8980383c9",
+    "raw_id": "RAW-1b41699dd4905d49",
+    "claim_type": "model_release",
+    "subject": "New",
+    "predicate": "model_release",
+    "object": "adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-1b41699dd4905d49",
+      "start": 2710,
+      "end": 3125
+    },
+    "source_quote": "LLM’s Python API previously required you to create a conversation and then send messages to it one at a time. This was an abstraction over the true nature of LLMs, where each request carries a complete history of the messages that came before it. That abstraction started to get in the way for some more advanced cases, so the new release introduces a model.prompt(messages=[]) parameter that can be used like this:",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d684e85b4de13e23",
+    "raw_id": "RAW-1dc7dfb3ccf22532",
+    "claim_type": "funding",
+    "subject": "Volta Infra Holdings Ltd.",
+    "predicate": "funding",
+    "object": "$300 million in venture funding",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-55ebee55e49f728f"
+    },
+    "source_span": {
+      "raw_id": "RAW-1dc7dfb3ccf22532",
+      "start": 40,
+      "end": 154
+    },
+    "source_quote": "Volta Infra Holdings Ltd., a new artificial intelligence cloud company, has raised $300 million in venture funding",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9960b37476007f14",
+    "raw_id": "RAW-6a5d34908e459995",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "通用汽车正开发自研车载 AI 智能助手，整合实时遥测数据",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-6a5d34908e459995",
+      "start": 726,
+      "end": 765
+    },
+    "source_quote": "目前，Anna Santos 尚未公布通用汽车这款 AI 助手的具体发布时间。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3bfbc1ea4e0232c9",
+    "raw_id": "RAW-6a5d34908e459995",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "通用汽车正开发自研车载 AI 智能助手，整合实时遥测数据",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-6a5d34908e459995",
+      "start": 0,
+      "end": 39
+    },
+    "source_quote": "通用汽车正开发自研车载 AI 智能助手，有望整合汽车实时遥测数据 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-025a9925e1549fdb",
+    "raw_id": "RAW-6a5d34908e459995",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "通用汽车正开发自研车载 AI 智能助手，整合实时遥测数据",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-6a5d34908e459995",
+      "start": 208,
+      "end": 240
+    },
+    "source_quote": "通用汽车正开发自研车载 AI 智能助手，有望整合汽车实时遥测数据",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-be900e3b536105d1",
+    "raw_id": "RAW-46f0bf372083c925",
+    "claim_type": "policy_regulation",
+    "subject": "European Union",
+    "predicate": "policy_regulation",
+    "object": "AI Act transparency obligations",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-057db5f31ef90ad0"
+    },
+    "source_span": {
+      "raw_id": "RAW-46f0bf372083c925",
+      "start": 342,
+      "end": 569
+    },
+    "source_quote": "The new transparency obligations under the bloc’s landmark AI Act came into effect on August 2nd, requiring companies to disclose when people are interacting with AI models, and if content has been generated or altered by them.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a4495738886dbcf8",
+    "raw_id": "RAW-7bfaecc4e0775db4",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "美国政府完成先进 AI 模型自愿性评估框架制定，内容未公开",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-7bfaecc4e0775db4",
+      "start": 390,
+      "end": 471
+    },
+    "source_quote": "据悉，该框架应明确规定，当政府在模型发布前最多提前 30 天获取相关模型时，需要遵守的保密要求、网络安全要求、内部风险管理要求、知识产权保护要求以及禁止披露规定。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1de0f6477e98c4b0",
+    "raw_id": "RAW-7bfaecc4e0775db4",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "美国政府完成先进 AI 模型自愿性评估框架制定，内容未公开",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-7bfaecc4e0775db4",
+      "start": 472,
+      "end": 505
+    },
+    "source_quote": "此外，框架还应该明确哪些“可信合作伙伴”能够提前获得模型访问权限。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-918b66e39b7d27ec",
+    "raw_id": "RAW-7bfaecc4e0775db4",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "美国政府完成先进 AI 模型自愿性评估框架制定，内容未公开",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-7bfaecc4e0775db4",
+      "start": 506,
+      "end": 551
+    },
+    "source_quote": "美国总统行政命令明确规定，用于评估 AI 模型高级网络攻击能力的基准测试流程将被列为机密。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c688b2f635feca4b",
+    "raw_id": "RAW-1a3212bece773044",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "微软测试首款自研全双工 AI 语音模型 MAI Realtime：支持 16 种语言、2 种语音",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-1a3212bece773044",
+      "start": 0,
+      "end": 123
+    },
+    "source_quote": "IT之家 8 月 4 日消息，科技媒体 TestingCatalog 于 8 月 2 日发布博文，报道称微软正测试其首款原生实时语音模型 MAI Realtime， 支持 16 种语言、2 种语音，可在对话中听说并行，支持自动识别和中途切换语言。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-61b6409802b8cd89",
+    "raw_id": "RAW-1a3212bece773044",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "微软测试首款自研全双工 AI 语音模型 MAI Realtime：支持 16 种语言、2 种语音",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-1a3212bece773044",
+      "start": 672,
+      "end": 758
+    },
+    "source_quote": "微软此前发布的 MAI 语音模型均为单向模型，包括用于语音合成的 MAI-Voice-2 及其 Flash 版本，以及用于语音识别的 MAI-Transcribe-1.5。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-a728e77afccc7dbb",
+    "raw_id": "RAW-1a3212bece773044",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "微软测试首款自研全双工 AI 语音模型 MAI Realtime：支持 16 种语言、2 种语音",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-1a3212bece773044",
+      "start": 124,
+      "end": 218
+    },
+    "source_quote": "测试方面，消息称微软已邀请部分合作伙伴，在 MAI Playground 平台测试该模型，目前尚不清楚何时上线 Microsoft Foundry，以及扩展到 Copilot 语音功能上。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-0605dfded0040edb",
+    "raw_id": "RAW-1a3212bece773044",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "微软测试首款自研全双工 AI 语音模型 MAI Realtime：支持 16 种语言、2 种语音",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-1a3212bece773044",
+      "start": 219,
+      "end": 283
+    },
+    "source_quote": "运行方面，MAI Realtime 采用双向、全双工交互方式，无需严格按“用户说完、模型再答”的轮次交替，可支持同步聆听和回应。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-6d27e48c5ad9bf38",
+    "raw_id": "RAW-f513d8f153be4c7d",
+    "claim_type": "procurement_contract",
+    "subject": "Anthropic",
+    "predicate": "procurement_contract",
+    "object": "Volta Infra Holdings",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-edf4b3f66440b21b"
+    },
+    "source_span": {
+      "raw_id": "RAW-f513d8f153be4c7d",
+      "start": 195,
+      "end": 331
+    },
+    "source_quote": "Anthropic is locking in $10 billion worth of computing capacity from Volta Infra Holdings, a cloud startup that's only a few months old.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9146b2fa560da19a",
+    "raw_id": "RAW-a606793ac9c72a45",
+    "claim_type": "deployment",
+    "subject": "资本重仓端侧物理AI：前海母基金数亿元押注，Om AI联汇加速端侧AI商业化",
+    "predicate": "deployment",
+    "object": "资本重仓端侧物理AI：前海母基金数亿元押注，Om AI联汇加速端侧AI商业化落地",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-a606793ac9c72a45",
+      "start": 0,
+      "end": 40
+    },
+    "source_quote": "资本重仓端侧物理AI：前海母基金数亿元押注，Om AI联汇加速端侧AI商业化落地",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9412fd5b76fbf102",
+    "raw_id": "RAW-a606793ac9c72a45",
+    "claim_type": "deployment",
+    "subject": "资本重仓端侧物理AI：前海母基金数亿元押注，Om AI联汇加速端侧AI商业化",
+    "predicate": "deployment",
+    "object": "与此同时，公司正式开源VLX-Seek 1.5端侧原生细粒度感知多模态模型，以同参数级超越英伟达核心模型的硬核性能，进一步夯实领先地位，本次募集资金将用于VLX模型系列技术迭代、深化研发壁垒及加速物理AI场景商业化落地。",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-a606793ac9c72a45",
+      "start": 149,
+      "end": 259
+    },
+    "source_quote": "与此同时，公司正式开源VLX-Seek 1.5端侧原生细粒度感知多模态模型，以同参数级超越英伟达核心模型的硬核性能，进一步夯实领先地位，本次募集资金将用于VLX模型系列技术迭代、深化研发壁垒及加速物理AI场景商业化落地。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e317569d2075fba5",
+    "raw_id": "RAW-a606793ac9c72a45",
+    "claim_type": "deployment",
+    "subject": "资本重仓端侧物理AI：前海母基金数亿元押注，Om AI联汇加速端侧AI商业化",
+    "predicate": "deployment",
+    "object": "当前AI产业正从云端算力竞赛转向端侧场景落地，物理AI成为核心风口。",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-a606793ac9c72a45",
+      "start": 260,
+      "end": 294
+    },
+    "source_quote": "当前AI产业正从云端算力竞赛转向端侧场景落地，物理AI成为核心风口。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0ef7095f59de46ac",
+    "raw_id": "RAW-a606793ac9c72a45",
+    "claim_type": "deployment",
+    "subject": "资本重仓端侧物理AI：前海母基金数亿元押注，Om AI联汇加速端侧AI商业化",
+    "predicate": "deployment",
+    "object": "商业化层面，公司正完成端侧AI的全链路产业闭环：基于 VLX 核心基座的“一脑多形” 能力已实现多场景规模化落地：联合联想、苹果推出适配 AIPC 硬件的 “OttoBox AI Studio”；与头部具身智能企业深度合作，为各类终端设备赋予感知、记忆与决策能力；自研可穿戴 AI 视觉中枢 Homer AI 已服务全国近十万视障用户，平台月均 AI 调用量达千万次，商业化进程稳居行业前列。",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-a606793ac9c72a45",
+      "start": 530,
+      "end": 726
+    },
+    "source_quote": "商业化层面，公司正完成端侧AI的全链路产业闭环：基于 VLX 核心基座的“一脑多形” 能力已实现多场景规模化落地：联合联想、苹果推出适配 AIPC 硬件的 “OttoBox AI Studio”；与头部具身智能企业深度合作，为各类终端设备赋予感知、记忆与决策能力；自研可穿戴 AI 视觉中枢 Homer AI 已服务全国近十万视障用户，平台月均 AI 调用量达千万次，商业化进程稳居行业前列。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  }
+]

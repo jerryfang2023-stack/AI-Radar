@@ -1,0 +1,884 @@
+[
+  {
+    "relationship_id": "REL-8badc95e2dd40d42",
+    "event_id": "EV-7d17f91a9af9c26b",
+    "subject": "MirrorCode：AI 能独立完成的最大规模软件项目",
+    "predicate": "research_result",
+    "object": "AI has made rapid progress on software engineering benchmarks in the past few years. However, most such benchmarks tend to focus on shorter tasks like fixing bugs or implementing individual features. MirrorCode is our benchmark, co-developed with METR, to test AI models on long-horizon coding tasks. In a MirrorCode task, AI models are tasked with reimplementing an entire program end-to-end, without access to the original source code. AI-generated solutions must match the original program’s output exactly on end-to-end tests, including held-out tests. MirrorCode’s 25 target programs span different areas of computing: Unix utilities, data serialization and query tools, bioinformatics, interpreters, static analysis, cryptography, and compression.",
+    "claim_ref": "CL-f72a4bf8a5f8ddd0",
+    "source_refs": [
+      "SA-9029dd0cb2c019f4"
+    ]
+  },
+  {
+    "relationship_id": "REL-a689a15c8ce6aa5d",
+    "event_id": "EV-7d17f91a9af9c26b",
+    "subject": "MirrorCode：AI 能独立完成的最大规模软件项目",
+    "predicate": "research_result",
+    "object": "One important caveat to these results is data contamination. Because MirrorCode tasks involve reimplementing open-source programs, AI models are likely to have seen the original codebases in pretraining. This might lead to inflated performance on the benchmark. However, AI successfully reimplemented several target programs that passed our memorization screen, and failed to reimplement programs where the screen showed evidence of memorization. This suggests that the results were not dominated by memorization, but we cannot rule out the possibility that memorization contributes to AI performance. Overall, we expect that the capabilities measured by MirrorCode would generalize to an unseen codebase. We discuss this further, along with more results and details on benchmark construction, in the paper .",
+    "claim_ref": "CL-d7ce13cbb3c24310",
+    "source_refs": [
+      "SA-9029dd0cb2c019f4"
+    ]
+  },
+  {
+    "relationship_id": "REL-be48042b38f97c34",
+    "event_id": "EV-7d17f91a9af9c26b",
+    "subject": "MirrorCode：AI 能独立完成的最大规模软件项目",
+    "predicate": "research_result",
+    "object": "How MirrorCode is different",
+    "claim_ref": "CL-428c8daf7419275a",
+    "source_refs": [
+      "SA-9029dd0cb2c019f4"
+    ]
+  },
+  {
+    "relationship_id": "REL-a2f2ab32bf009f43",
+    "event_id": "EV-7d17f91a9af9c26b",
+    "subject": "MirrorCode：AI 能独立完成的最大规模软件项目",
+    "predicate": "research_result",
+    "object": "Scale-aware evaluations",
+    "claim_ref": "CL-58dd229a1b8d8188",
+    "source_refs": [
+      "SA-9029dd0cb2c019f4"
+    ]
+  },
+  {
+    "relationship_id": "REL-8c832f6f442f824f",
+    "event_id": "EV-271b304f0a16b6db",
+    "subject": "Google Cloud",
+    "predicate": "product_release",
+    "object": "Database Operations Agents，实现自主数据库管理",
+    "claim_ref": "CL-8829b8449bd8a775",
+    "source_refs": [
+      "SA-edf6aac5c3171f44"
+    ]
+  },
+  {
+    "relationship_id": "REL-4e0be77120b0723a",
+    "event_id": "EV-271b304f0a16b6db",
+    "subject": "Google Cloud",
+    "predicate": "product_release",
+    "object": "Database Operations Agents，实现自主数据库管理",
+    "claim_ref": "CL-cb51064db6b4163a",
+    "source_refs": [
+      "SA-edf6aac5c3171f44"
+    ]
+  },
+  {
+    "relationship_id": "REL-d2cc0ffe1f359ad1",
+    "event_id": "EV-271b304f0a16b6db",
+    "subject": "Google Cloud",
+    "predicate": "product_release",
+    "object": "Database Operations Agents，实现自主数据库管理",
+    "claim_ref": "CL-0e21f86d1e716605",
+    "source_refs": [
+      "SA-edf6aac5c3171f44"
+    ]
+  },
+  {
+    "relationship_id": "REL-b1f2a5550ee6dddb",
+    "event_id": "EV-271b304f0a16b6db",
+    "subject": "Google Cloud",
+    "predicate": "product_release",
+    "object": "Database Operations Agents，实现自主数据库管理",
+    "claim_ref": "CL-de0c68800a5b1421",
+    "source_refs": [
+      "SA-edf6aac5c3171f44"
+    ]
+  },
+  {
+    "relationship_id": "REL-9d12757867f673d4",
+    "event_id": "EV-7dcbf6eab4339b22",
+    "subject": "Anthropic",
+    "predicate": "procurement_contract",
+    "object": "Volta",
+    "claim_ref": "CL-746d8405095e418f",
+    "source_refs": [
+      "SA-ffbe06ff40704e17"
+    ]
+  },
+  {
+    "relationship_id": "REL-08dab425d6e3bbf8",
+    "event_id": "EV-bf4871cd96fc25ac",
+    "subject": "NVIDIA Alpamayo 2 Super 开放商用，面向 Robotaxi 与自动驾驶的前沿",
+    "predicate": "model_release",
+    "object": "Earlier Alpamayo releases were initially introduced for R&D. The OpenMDW license is now being applied across the entire Alpamayo model family so developers can deploy any of the models commercially without requiring additional permissions. This creates a direct path from adaptation to deployment.",
+    "claim_ref": "CL-dce2d6c365c7bcc2",
+    "source_refs": [
+      "SA-85fdad14b2d7bcb0"
+    ]
+  },
+  {
+    "relationship_id": "REL-eebbc4ce5a82cf09",
+    "event_id": "EV-bf4871cd96fc25ac",
+    "subject": "NVIDIA Alpamayo 2 Super 开放商用，面向 Robotaxi 与自动驾驶的前沿",
+    "predicate": "model_release",
+    "object": "NVIDIA Alpamayo 2 Super, available now for commercial use, is part of the Alpamayo family, the most-adopted open reasoning models for autonomous driving on Hugging Face, supporting a wide range of AV-relevant capabilities within a single foundation model.",
+    "claim_ref": "CL-c2635cb3ab796a6c",
+    "source_refs": [
+      "SA-85fdad14b2d7bcb0"
+    ]
+  },
+  {
+    "relationship_id": "REL-f6954489bdbb2cdd",
+    "event_id": "EV-bf4871cd96fc25ac",
+    "subject": "NVIDIA Alpamayo 2 Super 开放商用，面向 Robotaxi 与自动驾驶的前沿",
+    "predicate": "model_release",
+    "object": "Built on NVIDIA Cosmos 3 Super Reasoner and post‑trained with reinforcement learning, the model advances the AV ecosystem on two fronts: open commercial licensing and leading multitask capabilities for autonomous driving.",
+    "claim_ref": "CL-7fa5a274d70703a1",
+    "source_refs": [
+      "SA-85fdad14b2d7bcb0"
+    ]
+  },
+  {
+    "relationship_id": "REL-fcee7b94b012f9d4",
+    "event_id": "EV-bf4871cd96fc25ac",
+    "subject": "NVIDIA Alpamayo 2 Super 开放商用，面向 Robotaxi 与自动驾驶的前沿",
+    "predicate": "model_release",
+    "object": "Alpamayo 2 Super is part of NVIDIA’s growing collection of open models, datasets and tools for autonomous driving , expanding access, strengthening competition, giving developers greater control and supporting safer, more transparent AV deployment.",
+    "claim_ref": "CL-9790c70b2927ca36",
+    "source_refs": [
+      "SA-85fdad14b2d7bcb0"
+    ]
+  },
+  {
+    "relationship_id": "REL-425143517b60bf1e",
+    "event_id": "EV-54a4809c304587e6",
+    "subject": "Google Cloud API Gateway",
+    "predicate": "model_release",
+    "object": "路由功能，支持 Gemini、Claude 与 OpenAI OSS-GPT",
+    "claim_ref": "CL-aa1d891c4b09d28c",
+    "source_refs": [
+      "SA-a120131ca264989b"
+    ]
+  },
+  {
+    "relationship_id": "REL-f0e9bd2d17d716dc",
+    "event_id": "EV-54a4809c304587e6",
+    "subject": "Google Cloud API Gateway",
+    "predicate": "model_release",
+    "object": "路由功能，支持 Gemini、Claude 与 OpenAI OSS-GPT",
+    "claim_ref": "CL-d25deae52422527c",
+    "source_refs": [
+      "SA-a120131ca264989b"
+    ]
+  },
+  {
+    "relationship_id": "REL-94df18850df3b495",
+    "event_id": "EV-54a4809c304587e6",
+    "subject": "Google Cloud API Gateway",
+    "predicate": "model_release",
+    "object": "路由功能，支持 Gemini、Claude 与 OpenAI OSS-GPT",
+    "claim_ref": "CL-2b15e85f8b5194df",
+    "source_refs": [
+      "SA-a120131ca264989b"
+    ]
+  },
+  {
+    "relationship_id": "REL-30c48d5ab3855965",
+    "event_id": "EV-54a4809c304587e6",
+    "subject": "Google Cloud API Gateway",
+    "predicate": "model_release",
+    "object": "路由功能，支持 Gemini、Claude 与 OpenAI OSS-GPT",
+    "claim_ref": "CL-1e8873bee0066f7a",
+    "source_refs": [
+      "SA-a120131ca264989b"
+    ]
+  },
+  {
+    "relationship_id": "REL-de19333103ef5947",
+    "event_id": "EV-f0d54da5bf0d7399",
+    "subject": "Claude Code v2.1.221",
+    "predicate": "product_release",
+    "object": "：新增 Focus view、沙箱凭据掩码与多项修复",
+    "claim_ref": "CL-976bf475eae5610b",
+    "source_refs": [
+      "SA-840ce8fa36558414"
+    ]
+  },
+  {
+    "relationship_id": "REL-926f95a0bae85d2c",
+    "event_id": "EV-f0d54da5bf0d7399",
+    "subject": "Claude Code v2.1.221",
+    "predicate": "product_release",
+    "object": "：新增 Focus view、沙箱凭据掩码与多项修复",
+    "claim_ref": "CL-f20a67684c8a7fe6",
+    "source_refs": [
+      "SA-840ce8fa36558414"
+    ]
+  },
+  {
+    "relationship_id": "REL-c8f1930541e90350",
+    "event_id": "EV-f0d54da5bf0d7399",
+    "subject": "Claude Code v2.1.221",
+    "predicate": "product_release",
+    "object": "：新增 Focus view、沙箱凭据掩码与多项修复",
+    "claim_ref": "CL-e3b823816c7093d9",
+    "source_refs": [
+      "SA-840ce8fa36558414"
+    ]
+  },
+  {
+    "relationship_id": "REL-eed7ec383a9b29d1",
+    "event_id": "EV-f0d54da5bf0d7399",
+    "subject": "Claude Code v2.1.221",
+    "predicate": "product_release",
+    "object": "：新增 Focus view、沙箱凭据掩码与多项修复",
+    "claim_ref": "CL-139057bfa59f6925",
+    "source_refs": [
+      "SA-840ce8fa36558414"
+    ]
+  },
+  {
+    "relationship_id": "REL-d5763068f3547398",
+    "event_id": "EV-467539fe176a470e",
+    "subject": "Nvidia",
+    "predicate": "partnership",
+    "object": "SK Group",
+    "claim_ref": "CL-a25d118ea445e317",
+    "source_refs": [
+      "SA-ee00c48ed72f9d91"
+    ]
+  },
+  {
+    "relationship_id": "REL-87809a7628dabee1",
+    "event_id": "EV-4d2183d4275ea9cf",
+    "subject": "Actualyze AI",
+    "predicate": "funding",
+    "object": "$7 million seed funding",
+    "claim_ref": "CL-960ed2243dba4e8b",
+    "source_refs": [
+      "SA-c96f018827a81afc"
+    ]
+  },
+  {
+    "relationship_id": "REL-b006b5d038eac22d",
+    "event_id": "EV-da148848ec026bdf",
+    "subject": "Volta Emerges From Stealth With $10 Billion AI Lab",
+    "predicate": "partnership",
+    "object": "and $5 Billion AI Infrastructure Program | FinancialContent",
+    "claim_ref": "CL-3dec96213fcf2b15",
+    "source_refs": [
+      "SA-e16f3d9cc160f133"
+    ]
+  },
+  {
+    "relationship_id": "REL-c9aa7d002da905b1",
+    "event_id": "EV-da148848ec026bdf",
+    "subject": "Volta Emerges From Stealth With $10 Billion AI Lab",
+    "predicate": "partnership",
+    "object": "and $5 Billion AI Infrastructure Program | FinancialContent",
+    "claim_ref": "CL-7864604a1ce56cc0",
+    "source_refs": [
+      "SA-e16f3d9cc160f133"
+    ]
+  },
+  {
+    "relationship_id": "REL-e9955d781c475064",
+    "event_id": "EV-da148848ec026bdf",
+    "subject": "Volta Emerges From Stealth With $10 Billion AI Lab",
+    "predicate": "partnership",
+    "object": "and $5 Billion AI Infrastructure Program | FinancialContent",
+    "claim_ref": "CL-e373ef14150c9d74",
+    "source_refs": [
+      "SA-e16f3d9cc160f133"
+    ]
+  },
+  {
+    "relationship_id": "REL-244279c2d76ae458",
+    "event_id": "EV-da148848ec026bdf",
+    "subject": "Volta Emerges From Stealth With $10 Billion AI Lab",
+    "predicate": "partnership",
+    "object": "and $5 Billion AI Infrastructure Program | FinancialContent",
+    "claim_ref": "CL-9e2652a8e096062a",
+    "source_refs": [
+      "SA-e16f3d9cc160f133"
+    ]
+  },
+  {
+    "relationship_id": "REL-6799942ee3d7137a",
+    "event_id": "EV-268e5c3d36e3ed28",
+    "subject": "Foundational Industries",
+    "predicate": "funding",
+    "object": "$25M to build AI-run factories | AI Weekly",
+    "claim_ref": "CL-6658e9ad6fc180c6",
+    "source_refs": [
+      "SA-510015c47309bf1f"
+    ]
+  },
+  {
+    "relationship_id": "REL-0aaa9d6c23fe946a",
+    "event_id": "EV-268e5c3d36e3ed28",
+    "subject": "Foundational Industries",
+    "predicate": "funding",
+    "object": "$25M to build AI-run factories | AI Weekly",
+    "claim_ref": "CL-296ac9a799aaf3f6",
+    "source_refs": [
+      "SA-510015c47309bf1f"
+    ]
+  },
+  {
+    "relationship_id": "REL-38ba7b5455bbc739",
+    "event_id": "EV-268e5c3d36e3ed28",
+    "subject": "Foundational Industries",
+    "predicate": "funding",
+    "object": "$25M to build AI-run factories | AI Weekly",
+    "claim_ref": "CL-8be401a13f3c9f91",
+    "source_refs": [
+      "SA-510015c47309bf1f"
+    ]
+  },
+  {
+    "relationship_id": "REL-c3976f5fd2265120",
+    "event_id": "EV-b6f025a2dc297b78",
+    "subject": "Secure Blockchain Development Corp.",
+    "predicate": "acquisition",
+    "object": "Agentic Solutions Limited",
+    "claim_ref": "CL-3bd8198a02070c8f",
+    "source_refs": [
+      "SA-a2fc27d76982e115",
+      "SA-9fcc98c8e2d876c9"
+    ]
+  },
+  {
+    "relationship_id": "REL-2d2566c59298dcfe",
+    "event_id": "EV-b6f025a2dc297b78",
+    "subject": "Secure Blockchain Development Corp.",
+    "predicate": "acquisition",
+    "object": "Agentic Solutions Limited",
+    "claim_ref": "CL-05b6c6129f755753",
+    "source_refs": [
+      "SA-a2fc27d76982e115",
+      "SA-9fcc98c8e2d876c9"
+    ]
+  },
+  {
+    "relationship_id": "REL-26c11e0f660b185f",
+    "event_id": "EV-47c32b3ef5c0f57a",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "Notes - August 2026 Latest Updates - Releasebot",
+    "claim_ref": "CL-957265312818c88e",
+    "source_refs": [
+      "SA-a89487f0ca3ac3a5"
+    ]
+  },
+  {
+    "relationship_id": "REL-82091544a3d6559a",
+    "event_id": "EV-cfba8b877da20eaf",
+    "subject": "Mistral",
+    "predicate": "model_release",
+    "object": "Shieldstral",
+    "claim_ref": "CL-e3e6392d8ebb1bff",
+    "source_refs": [
+      "SA-888c7b92de8d67b1"
+    ]
+  },
+  {
+    "relationship_id": "REL-3b3331cf01267241",
+    "event_id": "EV-8846c409009a1bca",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "Wrinkles：一款用AI语音导览揭示身边地点隐藏故事的App",
+    "claim_ref": "CL-79e4af821377df64",
+    "source_refs": [
+      "SA-78ed3e7289859d10"
+    ]
+  },
+  {
+    "relationship_id": "REL-f4587dd0acf07f23",
+    "event_id": "EV-8846c409009a1bca",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "Wrinkles：一款用AI语音导览揭示身边地点隐藏故事的App",
+    "claim_ref": "CL-99e2ae526494e324",
+    "source_refs": [
+      "SA-78ed3e7289859d10"
+    ]
+  },
+  {
+    "relationship_id": "REL-3423eac3438bb475",
+    "event_id": "EV-8846c409009a1bca",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "Wrinkles：一款用AI语音导览揭示身边地点隐藏故事的App",
+    "claim_ref": "CL-8877fa5cefc98bcc",
+    "source_refs": [
+      "SA-78ed3e7289859d10"
+    ]
+  },
+  {
+    "relationship_id": "REL-a27ba9cb84c3d589",
+    "event_id": "EV-acddfa62aabb004f",
+    "subject": "undisclosed_subject",
+    "predicate": "deployment",
+    "object": "and Scaling Enterprise AI Agents — Eloquent AI",
+    "claim_ref": "CL-365c1d55cc53f9b9",
+    "source_refs": [
+      "SA-9ae7afea5b5eb681"
+    ]
+  },
+  {
+    "relationship_id": "REL-b354e9595131a5d7",
+    "event_id": "EV-acddfa62aabb004f",
+    "subject": "undisclosed_subject",
+    "predicate": "deployment",
+    "object": "and Scaling Enterprise AI Agents — Eloquent AI",
+    "claim_ref": "CL-1032087c5261a9b3",
+    "source_refs": [
+      "SA-9ae7afea5b5eb681"
+    ]
+  },
+  {
+    "relationship_id": "REL-9cd66dcb43d82ad1",
+    "event_id": "EV-acddfa62aabb004f",
+    "subject": "undisclosed_subject",
+    "predicate": "deployment",
+    "object": "and Scaling Enterprise AI Agents — Eloquent AI",
+    "claim_ref": "CL-87b7c79d9dd75904",
+    "source_refs": [
+      "SA-9ae7afea5b5eb681"
+    ]
+  },
+  {
+    "relationship_id": "REL-c1fdd7cc4991fa38",
+    "event_id": "EV-acddfa62aabb004f",
+    "subject": "undisclosed_subject",
+    "predicate": "deployment",
+    "object": "and Scaling Enterprise AI Agents — Eloquent AI",
+    "claim_ref": "CL-05c6ee838abbf9e8",
+    "source_refs": [
+      "SA-9ae7afea5b5eb681"
+    ]
+  },
+  {
+    "relationship_id": "REL-01c0efc79c5055ac",
+    "event_id": "EV-6ea546ea3dbeb6d7",
+    "subject": "Compute SPV",
+    "predicate": "capital_investment",
+    "object": "TPU hardware",
+    "claim_ref": "CL-cfb9fd75c4b90bc5",
+    "source_refs": [
+      "SA-1cb5b0e84c6346cb"
+    ]
+  },
+  {
+    "relationship_id": "REL-fe52ed5de1cbd440",
+    "event_id": "EV-6ea546ea3dbeb6d7",
+    "subject": "Google",
+    "predicate": "capital_investment",
+    "object": "TeraWulf",
+    "claim_ref": "CL-302320e74058e3ef",
+    "source_refs": [
+      "SA-1cb5b0e84c6346cb"
+    ]
+  },
+  {
+    "relationship_id": "REL-47ca440c55ded44f",
+    "event_id": "EV-6703b102274c3be9",
+    "subject": "Silicon Valley’s rift over",
+    "predicate": "product_release",
+    "object": "pushes back contemplated White House bans on Chinese AI",
+    "claim_ref": "CL-f013df6743c0233e",
+    "source_refs": [
+      "SA-e4b089aba8ec29e9"
+    ]
+  },
+  {
+    "relationship_id": "REL-b4379d77d3218e53",
+    "event_id": "EV-6703b102274c3be9",
+    "subject": "Silicon Valley’s rift over",
+    "predicate": "product_release",
+    "object": "pushes back contemplated White House bans on Chinese AI",
+    "claim_ref": "CL-c4a651061e76ac35",
+    "source_refs": [
+      "SA-e4b089aba8ec29e9"
+    ]
+  },
+  {
+    "relationship_id": "REL-7ac9985edd9a5bf0",
+    "event_id": "EV-6703b102274c3be9",
+    "subject": "Silicon Valley’s rift over",
+    "predicate": "product_release",
+    "object": "pushes back contemplated White House bans on Chinese AI",
+    "claim_ref": "CL-8eb7f2d6b7dd5286",
+    "source_refs": [
+      "SA-e4b089aba8ec29e9"
+    ]
+  },
+  {
+    "relationship_id": "REL-6f6b222674a6928c",
+    "event_id": "EV-6703b102274c3be9",
+    "subject": "Silicon Valley’s rift over",
+    "predicate": "product_release",
+    "object": "pushes back contemplated White House bans on Chinese AI",
+    "claim_ref": "CL-d666d1b22246d391",
+    "source_refs": [
+      "SA-e4b089aba8ec29e9"
+    ]
+  },
+  {
+    "relationship_id": "REL-ba6e7872f8db1722",
+    "event_id": "EV-e544a4c3fb59b9b0",
+    "subject": "OpenAI fires back at Apple's trade secret",
+    "predicate": "lawsuit_settlement",
+    "object": "with chat logs showing Apple employees kept texting their former colleague",
+    "claim_ref": "CL-2b73b7bf7480b063",
+    "source_refs": [
+      "SA-48f68d9b6be274cb"
+    ]
+  },
+  {
+    "relationship_id": "REL-914ae9d960a8ec8c",
+    "event_id": "EV-e544a4c3fb59b9b0",
+    "subject": "OpenAI fires back at Apple's trade secret",
+    "predicate": "lawsuit_settlement",
+    "object": "with chat logs showing Apple employees kept texting their former colleague",
+    "claim_ref": "CL-9d127e25f1388bf3",
+    "source_refs": [
+      "SA-48f68d9b6be274cb"
+    ]
+  },
+  {
+    "relationship_id": "REL-49f7307386364c4b",
+    "event_id": "EV-e544a4c3fb59b9b0",
+    "subject": "OpenAI fires back at Apple's trade secret",
+    "predicate": "lawsuit_settlement",
+    "object": "with chat logs showing Apple employees kept texting their former colleague",
+    "claim_ref": "CL-e33c7b8228ace102",
+    "source_refs": [
+      "SA-48f68d9b6be274cb"
+    ]
+  },
+  {
+    "relationship_id": "REL-4ea20945c8627b0b",
+    "event_id": "EV-e544a4c3fb59b9b0",
+    "subject": "OpenAI fires back at Apple's trade secret",
+    "predicate": "lawsuit_settlement",
+    "object": "with chat logs showing Apple employees kept texting their former colleague",
+    "claim_ref": "CL-e3329cca63a4ae94",
+    "source_refs": [
+      "SA-48f68d9b6be274cb"
+    ]
+  },
+  {
+    "relationship_id": "REL-56c415fa90cad935",
+    "event_id": "EV-98a77305667148e1",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 回应苹果商业纠纷案：称苹果对此案处理有误",
+    "claim_ref": "CL-316c9de80072fa00",
+    "source_refs": [
+      "SA-32073509f0d3f388"
+    ]
+  },
+  {
+    "relationship_id": "REL-e037aa53faaf4ba8",
+    "event_id": "EV-98a77305667148e1",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 回应苹果商业纠纷案：称苹果对此案处理有误",
+    "claim_ref": "CL-982d15410880dc35",
+    "source_refs": [
+      "SA-32073509f0d3f388"
+    ]
+  },
+  {
+    "relationship_id": "REL-bc6fda7b9d36e048",
+    "event_id": "EV-98a77305667148e1",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 回应苹果商业纠纷案：称苹果对此案处理有误",
+    "claim_ref": "CL-37c529b8039acd6d",
+    "source_refs": [
+      "SA-32073509f0d3f388"
+    ]
+  },
+  {
+    "relationship_id": "REL-33c8b1589a5f5341",
+    "event_id": "EV-ef8ff7b3f76f140a",
+    "subject": "Nous Portal",
+    "predicate": "pricing_change",
+    "object": "DeepSeek V4 Flash",
+    "claim_ref": "CL-da2115a40fec6902",
+    "source_refs": [
+      "SA-248f3c59aba52ca9"
+    ]
+  },
+  {
+    "relationship_id": "REL-8ea7831ae04f703f",
+    "event_id": "EV-2fa6949af5b36fb0",
+    "subject": "派早报：MiniMax H3 开源、Qwen3.8-Max",
+    "predicate": "product_release",
+    "object": "等",
+    "claim_ref": "CL-a01ac97e7189b78e",
+    "source_refs": [
+      "SA-5e565656b49eb309"
+    ]
+  },
+  {
+    "relationship_id": "REL-50fc26d47e2a462f",
+    "event_id": "EV-2fa6949af5b36fb0",
+    "subject": "派早报：MiniMax H3 开源、Qwen3.8-Max",
+    "predicate": "product_release",
+    "object": "等",
+    "claim_ref": "CL-199ff8329b9bfc7c",
+    "source_refs": [
+      "SA-5e565656b49eb309"
+    ]
+  },
+  {
+    "relationship_id": "REL-7a34492d9dfdb602",
+    "event_id": "EV-2fa6949af5b36fb0",
+    "subject": "派早报：MiniMax H3 开源、Qwen3.8-Max",
+    "predicate": "product_release",
+    "object": "等",
+    "claim_ref": "CL-91429d0e0f4cff8e",
+    "source_refs": [
+      "SA-5e565656b49eb309"
+    ]
+  },
+  {
+    "relationship_id": "REL-efb078ff84eeaa9c",
+    "event_id": "EV-2fa6949af5b36fb0",
+    "subject": "派早报：MiniMax H3 开源、Qwen3.8-Max",
+    "predicate": "product_release",
+    "object": "等",
+    "claim_ref": "CL-73d3ce9772af3e35",
+    "source_refs": [
+      "SA-5e565656b49eb309"
+    ]
+  },
+  {
+    "relationship_id": "REL-130bbe70954ef8b3",
+    "event_id": "EV-22e4f8278c40d63e",
+    "subject": "New",
+    "predicate": "model_release",
+    "object": "adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
+    "claim_ref": "CL-0fa53ca19ba460b4",
+    "source_refs": [
+      "SA-18ec89cf0ea99dc6"
+    ]
+  },
+  {
+    "relationship_id": "REL-ba1f4f7432a06f60",
+    "event_id": "EV-22e4f8278c40d63e",
+    "subject": "New",
+    "predicate": "model_release",
+    "object": "adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
+    "claim_ref": "CL-46bf04059e9d58de",
+    "source_refs": [
+      "SA-18ec89cf0ea99dc6"
+    ]
+  },
+  {
+    "relationship_id": "REL-4970e2ce34f5783c",
+    "event_id": "EV-22e4f8278c40d63e",
+    "subject": "New",
+    "predicate": "model_release",
+    "object": "adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
+    "claim_ref": "CL-a624017125310beb",
+    "source_refs": [
+      "SA-18ec89cf0ea99dc6"
+    ]
+  },
+  {
+    "relationship_id": "REL-afda01fec89b2856",
+    "event_id": "EV-22e4f8278c40d63e",
+    "subject": "New",
+    "predicate": "model_release",
+    "object": "adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
+    "claim_ref": "CL-994e46a8980383c9",
+    "source_refs": [
+      "SA-18ec89cf0ea99dc6"
+    ]
+  },
+  {
+    "relationship_id": "REL-588019e9ec185f86",
+    "event_id": "EV-2dea56b0e97c1685",
+    "subject": "Volta Infra Holdings Ltd.",
+    "predicate": "funding",
+    "object": "$300 million in venture funding",
+    "claim_ref": "CL-d684e85b4de13e23",
+    "source_refs": [
+      "SA-e978005ea97ab0bc"
+    ]
+  },
+  {
+    "relationship_id": "REL-92db044abe1d7dcf",
+    "event_id": "EV-cc4d9d631698f35b",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "通用汽车正开发自研车载 AI 智能助手，整合实时遥测数据",
+    "claim_ref": "CL-9960b37476007f14",
+    "source_refs": [
+      "SA-f0da967fd77636e3"
+    ]
+  },
+  {
+    "relationship_id": "REL-d175adc0b5cc3a1a",
+    "event_id": "EV-cc4d9d631698f35b",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "通用汽车正开发自研车载 AI 智能助手，整合实时遥测数据",
+    "claim_ref": "CL-3bfbc1ea4e0232c9",
+    "source_refs": [
+      "SA-f0da967fd77636e3"
+    ]
+  },
+  {
+    "relationship_id": "REL-d4a74a493e70919f",
+    "event_id": "EV-cc4d9d631698f35b",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "通用汽车正开发自研车载 AI 智能助手，整合实时遥测数据",
+    "claim_ref": "CL-025a9925e1549fdb",
+    "source_refs": [
+      "SA-f0da967fd77636e3"
+    ]
+  },
+  {
+    "relationship_id": "REL-58acda3871b3fc0f",
+    "event_id": "EV-daa95c194cced8db",
+    "subject": "European Union",
+    "predicate": "policy_regulation",
+    "object": "AI Act transparency obligations",
+    "claim_ref": "CL-be900e3b536105d1",
+    "source_refs": [
+      "SA-18b22bc87f943937"
+    ]
+  },
+  {
+    "relationship_id": "REL-6fec532d1ba2679f",
+    "event_id": "EV-e05e2ff09137017d",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "美国政府完成先进 AI 模型自愿性评估框架制定，内容未公开",
+    "claim_ref": "CL-a4495738886dbcf8",
+    "source_refs": [
+      "SA-d49b99109571427a"
+    ]
+  },
+  {
+    "relationship_id": "REL-22b1549ddfa66bfd",
+    "event_id": "EV-e05e2ff09137017d",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "美国政府完成先进 AI 模型自愿性评估框架制定，内容未公开",
+    "claim_ref": "CL-1de0f6477e98c4b0",
+    "source_refs": [
+      "SA-d49b99109571427a"
+    ]
+  },
+  {
+    "relationship_id": "REL-700ce5b9344df402",
+    "event_id": "EV-e05e2ff09137017d",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "美国政府完成先进 AI 模型自愿性评估框架制定，内容未公开",
+    "claim_ref": "CL-918b66e39b7d27ec",
+    "source_refs": [
+      "SA-d49b99109571427a"
+    ]
+  },
+  {
+    "relationship_id": "REL-33ceead480a5c4d9",
+    "event_id": "EV-ec283dd6bd3ac991",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "微软测试首款自研全双工 AI 语音模型 MAI Realtime：支持 16 种语言、2 种语音",
+    "claim_ref": "CL-c688b2f635feca4b",
+    "source_refs": [
+      "SA-e360de1496c0be64"
+    ]
+  },
+  {
+    "relationship_id": "REL-255d48cb52a913b0",
+    "event_id": "EV-ec283dd6bd3ac991",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "微软测试首款自研全双工 AI 语音模型 MAI Realtime：支持 16 种语言、2 种语音",
+    "claim_ref": "CL-61b6409802b8cd89",
+    "source_refs": [
+      "SA-e360de1496c0be64"
+    ]
+  },
+  {
+    "relationship_id": "REL-eed4e4b8923bb815",
+    "event_id": "EV-ec283dd6bd3ac991",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "微软测试首款自研全双工 AI 语音模型 MAI Realtime：支持 16 种语言、2 种语音",
+    "claim_ref": "CL-a728e77afccc7dbb",
+    "source_refs": [
+      "SA-e360de1496c0be64"
+    ]
+  },
+  {
+    "relationship_id": "REL-7455bb71df045b80",
+    "event_id": "EV-ec283dd6bd3ac991",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "微软测试首款自研全双工 AI 语音模型 MAI Realtime：支持 16 种语言、2 种语音",
+    "claim_ref": "CL-0605dfded0040edb",
+    "source_refs": [
+      "SA-e360de1496c0be64"
+    ]
+  },
+  {
+    "relationship_id": "REL-d7d82df4a86be727",
+    "event_id": "EV-c25adb1398842ac9",
+    "subject": "Anthropic",
+    "predicate": "procurement_contract",
+    "object": "Volta Infra Holdings",
+    "claim_ref": "CL-6d27e48c5ad9bf38",
+    "source_refs": [
+      "SA-a203cf171428a9e7"
+    ]
+  },
+  {
+    "relationship_id": "REL-f96b7929b3086a59",
+    "event_id": "EV-5bbc509a032b8309",
+    "subject": "资本重仓端侧物理AI：前海母基金数亿元押注，Om AI联汇加速端侧AI商业化",
+    "predicate": "deployment",
+    "object": "资本重仓端侧物理AI：前海母基金数亿元押注，Om AI联汇加速端侧AI商业化落地",
+    "claim_ref": "CL-9146b2fa560da19a",
+    "source_refs": [
+      "SA-12e634b507b488c3"
+    ]
+  },
+  {
+    "relationship_id": "REL-50e780ef6a97ecd3",
+    "event_id": "EV-5bbc509a032b8309",
+    "subject": "资本重仓端侧物理AI：前海母基金数亿元押注，Om AI联汇加速端侧AI商业化",
+    "predicate": "deployment",
+    "object": "与此同时，公司正式开源VLX-Seek 1.5端侧原生细粒度感知多模态模型，以同参数级超越英伟达核心模型的硬核性能，进一步夯实领先地位，本次募集资金将用于VLX模型系列技术迭代、深化研发壁垒及加速物理AI场景商业化落地。",
+    "claim_ref": "CL-9412fd5b76fbf102",
+    "source_refs": [
+      "SA-12e634b507b488c3"
+    ]
+  },
+  {
+    "relationship_id": "REL-c3b7dd17872aa905",
+    "event_id": "EV-5bbc509a032b8309",
+    "subject": "资本重仓端侧物理AI：前海母基金数亿元押注，Om AI联汇加速端侧AI商业化",
+    "predicate": "deployment",
+    "object": "当前AI产业正从云端算力竞赛转向端侧场景落地，物理AI成为核心风口。",
+    "claim_ref": "CL-e317569d2075fba5",
+    "source_refs": [
+      "SA-12e634b507b488c3"
+    ]
+  },
+  {
+    "relationship_id": "REL-2dfbf6e887f8390a",
+    "event_id": "EV-5bbc509a032b8309",
+    "subject": "资本重仓端侧物理AI：前海母基金数亿元押注，Om AI联汇加速端侧AI商业化",
+    "predicate": "deployment",
+    "object": "商业化层面，公司正完成端侧AI的全链路产业闭环：基于 VLX 核心基座的“一脑多形” 能力已实现多场景规模化落地：联合联想、苹果推出适配 AIPC 硬件的 “OttoBox AI Studio”；与头部具身智能企业深度合作，为各类终端设备赋予感知、记忆与决策能力；自研可穿戴 AI 视觉中枢 Homer AI 已服务全国近十万视障用户，平台月均 AI 调用量达千万次，商业化进程稳居行业前列。",
+    "claim_ref": "CL-0ef7095f59de46ac",
+    "source_refs": [
+      "SA-12e634b507b488c3"
+    ]
+  }
+]
