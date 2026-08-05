@@ -9,7 +9,7 @@
     "activeDate": "2026-08-05",
     "generatedAt": "2026-08-05T00:00:00.000Z",
     "windowDays": 30,
-    "evidenceCount": 859,
+    "evidenceCount": 860,
     "directionCardCount": 2,
     "sourceAdapter": "data-center-v4-canonical"
   },
@@ -2297,6 +2297,68 @@
             "evaluation_gap",
             "permission_boundary"
           ],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-ee1e825af98ecab7",
+      "event_id": "EV-ee1e825af98ecab7",
+      "event_type": "product_release",
+      "publication_status": "verified",
+      "title": "Claude Code v2.1.222 发布：修复工作树隔离、代理绕过等多项问题",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-05",
+      "event_time": "2026-08-04T22:39:55.000Z",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.222",
+      "sourceName": "Claude Code：GitHub Releases（RSS）",
+      "subject": "Claude Code",
+      "sourceExcerpt": "v2.1.222",
+      "entity_refs": [
+        {
+          "entity_id": "EN-cb4754c48f8023d0",
+          "canonical_name": "Claude Code",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-f7db770b8cf6b288"
+      ],
+      "source_refs": [
+        "SA-7db3b438a00f0be6"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-f7db770b8cf6b288",
+            "source_refs": [
+              "SA-7db3b438a00f0be6"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],
           "business_action": [

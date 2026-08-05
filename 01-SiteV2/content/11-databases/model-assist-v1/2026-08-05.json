@@ -1,6 +1,6 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-08-05T00:23:49.268Z",
+  "generated_at": "2026-08-05T01:17:35.643Z",
   "data_date": "2026-08-05",
   "prompt_version": "model-assist-2026-07-18.2",
   "source_count": 250,
@@ -17,135 +17,9 @@
       "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
-        "fields": [
-          {
-            "field": "reported_need",
-            "value": "Ensuring consistent accuracy and control over AI agent responses",
-            "evidence_index": 0
-          },
-          {
-            "field": "reported_need",
-            "value": "Building a strong knowledge foundation without starting from scratch",
-            "evidence_index": 1
-          },
-          {
-            "field": "reported_need",
-            "value": "Limited availability of engineering resources for integration",
-            "evidence_index": 2
-          },
-          {
-            "field": "reported_need",
-            "value": "Managing maintenance, updates, FAQs, and new product launches without dedicating an entire team",
-            "evidence_index": 3
-          },
-          {
-            "field": "vendor",
-            "value": "Eloquent AI",
-            "evidence_index": 4
-          },
-          {
-            "field": "industry",
-            "value": "regulated industries",
-            "evidence_index": 5
-          },
-          {
-            "field": "systems_integrated",
-            "value": [
-              "CRMs",
-              "payment systems",
-              "stock records"
-            ],
-            "evidence_index": 6
-          },
-          {
-            "field": "governance_controls",
-            "value": "Multi-Agent Structure with Clarification Agents, Multi-Step Reasoning Agents, and Validation Agents to ensure compliance with enterprise standards and regulatory requirements",
-            "evidence_index": 7
-          },
-          {
-            "field": "data_requirements",
-            "value": "Existing knowledge base assets transformed into a structured Knowledge Graph",
-            "evidence_index": 8
-          },
-          {
-            "field": "workflow_before",
-            "value": "Traditional AI implementations demand significant technical expertise, straining IT teams and delaying progress",
-            "evidence_index": 9
-          },
-          {
-            "field": "workflow_after",
-            "value": "Self-healing agents proactively identify knowledge gaps, flag outdated information, suggest updates, and monitor user interactions to provide actionable insights",
-            "evidence_index": 10
-          },
-          {
-            "field": "team_composition",
-            "value": "Collaborative design workshops with Eloquent AI and customer teams",
-            "evidence_index": 11
-          }
-        ]
+        "fields": []
       },
-      "evidence": [
-        {
-          "start": 989,
-          "end": 1122,
-          "quote": "A key reason enterprises hesitate to roll out AI agents is the difficulty in ensuring consistent accuracy and control over responses."
-        },
-        {
-          "start": 3307,
-          "end": 3454,
-          "quote": "\"We've spent decades building our knowledge base—do we need to start from scratch?\" This is a common concern for enterprises considering AI agents."
-        },
-        {
-          "start": 5534,
-          "end": 5626,
-          "quote": "Another challenge lies in the limited availability of engineering resources for integration."
-        },
-        {
-          "start": 7033,
-          "end": 7157,
-          "quote": "Enterprises worry about how to manage updates, FAQs, and new product launches without dedicating an entire team to the task."
-        },
-        {
-          "start": 1478,
-          "end": 1594,
-          "quote": "At Eloquent AI, we employ robust strategies to achieve full control of AI agent responses and enhance their accuracy"
-        },
-        {
-          "start": 396,
-          "end": 456,
-          "quote": "drawing from real-world deployments in regulated industries."
-        },
-        {
-          "start": 6209,
-          "end": 6310,
-          "quote": "Eloquent AI offers plug-and-play capabilities that work with CRMs, payment systems, and stock records"
-        },
-        {
-          "start": 1607,
-          "end": 2126,
-          "quote": "Multi-Agent Structure: Eloquent AI employs a multi-agent system to oversee and validate responses before they reach your customers, ensuring alignment with your company's ontology, policies, and regulations. This system includes specialized agents: Clarification Agents resolve ambiguities by gathering additional user input; Multi-Step Reasoning Agents handle complex queries by breaking them into manageable tasks; and Validation Agents ensure all outputs comply with enterprise standards and regulatory requirements."
-        },
-        {
-          "start": 4154,
-          "end": 4391,
-          "quote": "existing assets are meticulously transformed into a structured knowledge base tailored for AI use. The result is a comprehensive Knowledge Graph, comprising entities and knowledge nodes derived from your company's policies and processes."
-        },
-        {
-          "start": 5757,
-          "end": 5877,
-          "quote": "Traditional AI implementations demand significant technical expertise, further straining IT teams and delaying progress."
-        },
-        {
-          "start": 7288,
-          "end": 7536,
-          "quote": "These agents proactively identify gaps in the knowledge base, flag outdated or incorrect information, and suggest updates to align with current needs. Additionally, they monitor user interactions to uncover patterns and provide actionable insights."
-        },
-        {
-          "start": 3824,
-          "end": 4012,
-          "quote": "The process begins with collaborative design workshops, where Eloquent AI works closely with your teams to gather existing knowledge and outline the AI agent's objectives and applications."
-        }
-      ],
+      "evidence": [],
       "gate_results": [
         {
           "gate": "source_hash",
@@ -154,8 +28,8 @@
         },
         {
           "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
+          "status": "failed",
+          "detail": "missing_source_evidence"
         },
         {
           "gate": "protected_facts",
@@ -165,10 +39,10 @@
         {
           "gate": "task_contract",
           "status": "failed",
-          "detail": "invalid_fde_field_type:7, invalid_fde_field_type:8"
+          "detail": "missing_projection_fields"
         }
       ],
-      "generated_at": "2026-08-05T00:23:42.761Z"
+      "generated_at": "2026-08-05T01:17:22.154Z"
     },
     {
       "candidate_id": "MAC-0157a9d85c103046",
@@ -232,18 +106,18 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.2",
-      "status": "requires_review",
+      "status": "rejected",
       "proposal": {
         "decision": "unknown",
         "canonical_name": "Claude Code",
-        "rationale": "The candidate canonical_name 'Claude Code' appears in the source text as a product name (e.g., 'Claude Code: Toggle Focus view', 'Claude Code Desktop', 'Claude Code processes'), but there are no VERIFIED_ALTERNATIVES provided to confirm an exact match. The source does not contain an explicit definition equating the candidate entity to a verified entity.",
+        "rationale": "The SOURCE_TEXT is a changelog for 'v2.1.221' released in the 'anthropics/claude-code' repository, which strongly implies the candidate 'Claude Code' refers to this product. However, no VERIFIED_ALTERNATIVES list is provided to confirm an exact match, and the exact contiguous string 'Claude Code' does not appear in the SOURCE_TEXT (the text contains 'claude-code' as a repository name and references like 'Claude Code Desktop' and 'Claude Code: Toggle Focus view', but not the standalone exact canonical name). Therefore, identity cannot be confirmed per the rules.",
         "candidate_name": "Claude Code"
       },
       "evidence": [
         {
-          "start": 645,
-          "end": 675,
-          "quote": "Claude Code: Toggle Focus view"
+          "start": 67,
+          "end": 89,
+          "quote": "anthropics\nclaude-code"
         }
       ],
       "gate_results": [
@@ -259,8 +133,8 @@
         },
         {
           "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:2.1.221"
         },
         {
           "gate": "task_contract",
@@ -268,7 +142,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:30.922Z"
+      "generated_at": "2026-08-05T01:17:14.974Z"
     },
     {
       "candidate_id": "MAC-057db5f31ef90ad0",
@@ -336,7 +210,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "资本重仓端侧物理AI",
-        "rationale": "The candidate name '资本重仓端侧物理AI' does not exactly match any VERIFIED_ALTERNATIVE (NVIDIA, Apple, Alibaba). The source text describes '资本重仓端侧物理AI' as a headline theme about capital investment in on-device physical AI, not as an organization name matching the verified alternatives. The quote shows this is a descriptive phrase, not a reference to NVIDIA, Apple, or Alibaba.",
+        "rationale": "The candidate canonical name '资本重仓端侧物理AI' does not exactly match any VERIFIED_ALTERNATIVE (NVIDIA, Apple, Alibaba). The source text describes '资本重仓端侧物理AI' as a thematic investment trend or concept, not as an organization identical to NVIDIA, Apple, or Alibaba. The quote mentions these verified entities in the context of partnerships or comparisons, not as the same entity.",
         "candidate_name": "资本重仓端侧物理AI"
       },
       "evidence": [
@@ -368,7 +242,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:24.827Z"
+      "generated_at": "2026-08-05T01:17:08.722Z"
     },
     {
       "candidate_id": "MAC-0b6d1bd881e3487d",
@@ -407,7 +281,55 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-05T00:22:44.478Z"
+      "generated_at": "2026-08-05T01:16:28.069Z"
+    },
+    {
+      "candidate_id": "MAC-0e8d286eb3a015ae",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-6f659fdf619197ad",
+      "raw_id": "RAW-e0adca741b32d183",
+      "source_ref": "SA-248f3c59aba52ca9",
+      "source_hash": "804f74e20ce99d43",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Nous Portal",
+        "rationale": "The candidate 'Nous Portal' is described in the source as a platform that offers discounted access to DeepSeek's V4 Flash model. This establishes a relationship of platform/reseller for DeepSeek's API, not identity with DeepSeek itself. None of the verified alternatives (OpenAI, DeepSeek, MiniMax) match the candidate's canonical name.",
+        "candidate_name": "Nous Portal"
+      },
+      "evidence": [
+        {
+          "start": 360,
+          "end": 409,
+          "quote": "Nous Portal 便是其中之一，并且属于神中神，直接给V4 Flash打了个一折，限时7天。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-05T01:16:56.959Z"
     },
     {
       "candidate_id": "MAC-0f83637d7fbe0fd4",
@@ -446,86 +368,30 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-05T00:22:53.305Z"
+      "generated_at": "2026-08-05T01:16:32.059Z"
     },
     {
-      "candidate_id": "MAC-19ed388b3d2eb327",
-      "task_type": "fde_enrichment",
-      "asset_id": "FDE-d4a9cd05a34baf09",
-      "raw_id": "RAW-86d45f3c5e1e69b7",
-      "source_ref": "SA-e16f3d9cc160f133",
-      "source_hash": "5e56efd1f596de6c",
+      "candidate_id": "MAC-0fe5a0a0fb54da21",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-fe0631bed4240c6c",
+      "raw_id": "RAW-026d7d77c25546c5",
+      "source_ref": "SA-1cb5b0e84c6346cb",
+      "source_hash": "e6f72d520068bf11",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.2",
-      "status": "accepted",
+      "status": "requires_review",
       "proposal": {
-        "fields": [
-          {
-            "field": "customer",
-            "value": "an AI Lab",
-            "evidence_index": 0
-          },
-          {
-            "field": "industry",
-            "value": "AI infrastructure",
-            "evidence_index": 1
-          },
-          {
-            "field": "delivery_model",
-            "value": "fully vertically integrated AI infrastructure platform",
-            "evidence_index": 2
-          },
-          {
-            "field": "team_composition",
-            "value": "around 100 professionals across London, Palo Alto, and New York, bringing together expertise across capital formation, infrastructure development, engineering, and software",
-            "evidence_index": 3
-          },
-          {
-            "field": "reported_need",
-            "value": "access to dedicated AI infrastructure remains fundamentally constrained",
-            "evidence_index": 4
-          },
-          {
-            "field": "systems_integrated",
-            "value": [
-              "NVIDIA Vera Rubin systems",
-              "NVIDIA's DSX platform"
-            ],
-            "evidence_index": 5
-          }
-        ]
+        "decision": "distinct_entity",
+        "canonical_name": "Compute SPV",
+        "rationale": "The candidate 'Compute SPV' is described as a special purpose vehicle created to buy chips and lease them to Anthropic, with outside investors putting up the money. None of the verified alternatives (Google, Anthropic, NVIDIA) match this entity. Google is involved in setting up the structure but is a distinct organization.",
+        "candidate_name": "Compute SPV"
       },
       "evidence": [
         {
-          "start": 2736,
-          "end": 2880,
-          "quote": "Volta's launch is anchored by a landmark $10 billion strategic partnership with an AI Lab to develop an AI factory in Europe alongside Bitdeer ."
-        },
-        {
-          "start": 463,
-          "end": 656,
-          "quote": "Volta , a fully vertically integrated artificial intelligence (\"AI\") infrastructure platform and NVIDIA Cloud Partner, today emerged from stealth with a mission to build The Utility of Compute™"
-        },
-        {
-          "start": 311,
-          "end": 462,
-          "quote": "Company launches as a fully vertically integrated AI infrastructure platform and NVIDIA Cloud Partner with the mission to build The Utility of Compute™"
-        },
-        {
-          "start": 5119,
-          "end": 5331,
-          "quote": "Since its founding, Volta has grown to around 100 professionals across London, Palo Alto, and New York, bringing together expertise across capital formation, infrastructure development, engineering, and software."
-        },
-        {
-          "start": 837,
-          "end": 958,
-          "quote": "AI is creating a new infrastructure economy, but access to dedicated AI infrastructure remains fundamentally constrained."
-        },
-        {
-          "start": 2881,
-          "end": 3269,
-          "quote": "Located in Norway, the project will comprise a 133 MW deployment powered by NVIDIA Vera Rubin systems. It is the first project within Volta's broader development pipeline, which today exceeds 1 GW of near-term power capacity across North America and Europe. The company intends to develop these sites using NVIDIA's DSX platform, targeting multiple gigawatts of deployed capacity by 2030."
+          "start": 2157,
+          "end": 2257,
+          "quote": "a special purpose vehicle called Compute SPV buys about one gigawatt of TPU hardware for $35 billion"
         }
       ],
       "gate_results": [
@@ -550,7 +416,88 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:44.782Z"
+      "generated_at": "2026-08-05T01:17:22.812Z"
+    },
+    {
+      "candidate_id": "MAC-19ed388b3d2eb327",
+      "task_type": "fde_enrichment",
+      "asset_id": "FDE-d4a9cd05a34baf09",
+      "raw_id": "RAW-86d45f3c5e1e69b7",
+      "source_ref": "SA-e16f3d9cc160f133",
+      "source_hash": "5e56efd1f596de6c",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "fields": [
+          {
+            "field": "workflow_before",
+            "value": "While the world's largest technology companies can finance AI infrastructure on their own balance sheets, frontier AI labs, AI-native companies, and enterprises remain dependent on scarce cloud capacity because the capital required to develop dedicated AI infrastructure has remained largely inaccessible.",
+            "evidence_index": 0
+          },
+          {
+            "field": "workflow_after",
+            "value": "By bringing together institutional infrastructure capital, powered land, data centers, compute, software, and operations under one platform—and combining that with co-founder-led speed of execution—Volta addresses one of AI infrastructure's biggest bottlenecks: access to affordable capital. The result is AI factories that are faster to deploy, more scalable, and financed at a lower cost of capital.",
+            "evidence_index": 1
+          },
+          {
+            "field": "team_composition",
+            "value": "Since its founding, Volta has grown to around 100 professionals across London, Palo Alto, and New York, bringing together expertise across capital formation, infrastructure development, engineering, and software.",
+            "evidence_index": 2
+          },
+          {
+            "field": "reported_need",
+            "value": "The primary constraint is not demand, power, or chips. It is financing.",
+            "evidence_index": 3
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 959,
+          "end": 1264,
+          "quote": "While the world's largest technology companies can finance AI infrastructure on their own balance sheets, frontier AI labs, AI-native companies, and enterprises remain dependent on scarce cloud capacity because the capital required to develop dedicated AI infrastructure has remained largely inaccessible."
+        },
+        {
+          "start": 1733,
+          "end": 2134,
+          "quote": "By bringing together institutional infrastructure capital, powered land, data centers, compute, software, and operations under one platform—and combining that with co-founder-led speed of execution—Volta addresses one of AI infrastructure's biggest bottlenecks: access to affordable capital. The result is AI factories that are faster to deploy, more scalable, and financed at a lower cost of capital."
+        },
+        {
+          "start": 5119,
+          "end": 5331,
+          "quote": "Since its founding, Volta has grown to around 100 professionals across London, Palo Alto, and New York, bringing together expertise across capital formation, infrastructure development, engineering, and software."
+        },
+        {
+          "start": 1265,
+          "end": 1336,
+          "quote": "The primary constraint is not demand, power, or chips. It is financing."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-05T01:17:27.568Z"
     },
     {
       "candidate_id": "MAC-1cff537f260718fc",
@@ -618,7 +565,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "API Gateway",
-        "rationale": "The candidate canonical_name 'API Gateway' is a generic term, while the source describes 'Google Cloud API Gateway', a specific Google Cloud product. The source does not contain any VERIFIED_ALTERNATIVES to match against, and the generic name does not exactly match the full product name in the source. Furthermore, the source describes the product's function (model routing) but does not provide evidence that a standalone entity named exactly 'API Gateway' is the same as 'Google Cloud API Gateway'.",
+        "rationale": "The candidate 'API Gateway' is a generic product name, while the source describes 'Google Cloud API Gateway', a specific Google Cloud service. The source does not contain any VERIFIED_ALTERNATIVES to match against, and the candidate name does not exactly match the full product name in the source. Furthermore, the source describes model routing as a feature of this specific service, not a separate product identity.",
         "candidate_name": "API Gateway"
       },
       "evidence": [
@@ -650,7 +597,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:28.191Z"
+      "generated_at": "2026-08-05T01:17:11.452Z"
     },
     {
       "candidate_id": "MAC-1e6f6666f179aec4",
@@ -689,7 +636,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-05T00:22:37.929Z"
+      "generated_at": "2026-08-05T01:16:24.359Z"
     },
     {
       "candidate_id": "MAC-1f9457d3dbf73ba2",
@@ -728,7 +675,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-05T00:22:36.622Z"
+      "generated_at": "2026-08-05T01:16:23.488Z"
     },
     {
       "candidate_id": "MAC-22242a878f9b911d",
@@ -767,7 +714,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-05T00:22:41.588Z"
+      "generated_at": "2026-08-05T01:16:25.705Z"
     },
     {
       "candidate_id": "MAC-233483abca813f42",
@@ -783,7 +730,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "Silicon Valley",
-        "rationale": "The source text mentions 'Silicon Valley' multiple times as a collective actor (e.g., 'pushback from Silicon Valley', 'outcry from Silicon Valley') but provides no VERIFIED_ALTERNATIVES list to match against, and the text does not define or disambiguate this entity as a specific named organization, location, or product. Without a verified alternative to confirm identity, the entity remains unknown.",
+        "rationale": "The SOURCE_TEXT mentions 'Silicon Valley' multiple times as a collective actor (e.g., 'After pushback from Silicon Valley, it backed off for now') but provides no VERIFIED_ALTERNATIVES list to match against. Without any verified alternatives, it is impossible to determine if this mention refers to an existing verified entity.",
         "candidate_name": "Silicon Valley"
       },
       "evidence": [
@@ -815,7 +762,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:05.239Z"
+      "generated_at": "2026-08-05T01:16:42.612Z"
     },
     {
       "candidate_id": "MAC-2512dcbcbe6a1664",
@@ -830,7 +777,7 @@
       "status": "requires_review",
       "proposal": {
         "action": "recollect_original",
-        "reason": "The source is a personal blog comment discussing how LLMs change the feasibility of modifying open-source software. It contains no concrete AI industry event such as a funding round, acquisition, product release, or other defined event types.",
+        "reason": "The source is a personal blog comment discussing how LLMs change the feasibility of modifying open-source software. It contains no concrete AI industry event such as a funding round, product release, acquisition, or other defined event types.",
         "claims": []
       },
       "evidence": [
@@ -862,7 +809,55 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:45.190Z"
+      "generated_at": "2026-08-05T01:17:27.964Z"
+    },
+    {
+      "candidate_id": "MAC-265f5563821d29c9",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-e22daec9e0564fba",
+      "raw_id": "RAW-a58e8dbe78e900bb",
+      "source_ref": "SA-c96f018827a81afc",
+      "source_hash": "8362f1a7374b30c9",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Actualyze AI",
+        "rationale": "The candidate entity Actualyze AI is a platform company that integrates with OpenAI-compatible models. The source text states the platform 'easily integrates with any OpenAI-compatible models,' which describes a technical compatibility relationship, not entity identity. Actualyze AI and OpenAI are distinct organizations.",
+        "candidate_name": "Actualyze AI"
+      },
+      "evidence": [
+        {
+          "start": 713,
+          "end": 764,
+          "quote": "easily integrates with any OpenAI-compatible models"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-05T01:17:20.191Z"
     },
     {
       "candidate_id": "MAC-3d7309436ffd4395",
@@ -910,29 +905,29 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:33.672Z"
+      "generated_at": "2026-08-05T01:17:17.637Z"
     },
     {
-      "candidate_id": "MAC-42533a5a0b90d2c6",
+      "candidate_id": "MAC-3f9331fc075e6a69",
       "task_type": "qa_repair",
-      "asset_id": "QA-fcddb39e9a5867eb",
-      "raw_id": "RAW-fef9d4b767bb7f93",
-      "source_ref": "SA-9c9463b2b90f4e40",
-      "source_hash": "4e25d1ae12493dc8",
+      "asset_id": "QA-4569bb5755d8b128",
+      "raw_id": "RAW-43ea282163d6f040",
+      "source_ref": "SA-34090a957aeffd3e",
+      "source_hash": "9c9dd01aa6d3ac80",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.2",
       "status": "requires_review",
       "proposal": {
         "action": "recollect_original",
-        "reason": "The source text is a news article discussing HarmonyOS 7 developer features and does not contain a concrete, singular AI industry event such as a funding round, acquisition, product release, or specific financial performance metric that can be extracted as a factual claim.",
+        "reason": "The QA_REASON states 'event_not_ai_relevant', but the source text explicitly describes products and architectures '面向人工智能基础设施', '为满足先进 AI 计算需求', and '专为支持实时、数据密集型 AI 应用的边缘 AI 环境优化', making it directly relevant to AI hardware.",
         "claims": []
       },
       "evidence": [
         {
-          "start": 0,
-          "end": 39,
-          "quote": "开发者苦 “造轮子” 久矣，HarmonyOS 7 正在抹平系统能力的接入鸿沟"
+          "start": 343,
+          "end": 413,
+          "quote": "三星公司今天（8 月 5 日）发布博文，宣布其在 2026 年未来存储与内存大会（FMS）上，概述了面向人工智能基础设施的 3D 内存路线图"
         }
       ],
       "gate_results": [
@@ -957,7 +952,54 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:49.264Z"
+      "generated_at": "2026-08-05T01:17:30.600Z"
+    },
+    {
+      "candidate_id": "MAC-42533a5a0b90d2c6",
+      "task_type": "qa_repair",
+      "asset_id": "QA-fcddb39e9a5867eb",
+      "raw_id": "RAW-fef9d4b767bb7f93",
+      "source_ref": "SA-9c9463b2b90f4e40",
+      "source_hash": "4e25d1ae12493dc8",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The source text is a news article about HarmonyOS 7 developer features and does not contain a concrete, singular AI industry event such as a funding round, acquisition, product release, or specific research result. It describes general platform capabilities and developer case studies.",
+        "claims": []
+      },
+      "evidence": [
+        {
+          "start": 6308,
+          "end": 6349,
+          "quote": "HarmonyOS 7选择向下深耕操作系统底座，把高频、通用的复杂能力标准化封装。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-05T01:17:35.639Z"
     },
     {
       "candidate_id": "MAC-44e59c17f16e2eea",
@@ -1031,8 +1073,8 @@
       "evidence": [
         {
           "start": 516,
-          "end": 771,
-          "quote": "NVIDIA Alpamayo 2 Super, available now for commercial use, is part of the Alpamayo family, the most-adopted open reasoning models for autonomous driving on Hugging Face, supporting a wide range of AV-relevant capabilities within a single foundation model."
+          "end": 684,
+          "quote": "NVIDIA Alpamayo 2 Super, available now for commercial use, is part of the Alpamayo family, the most-adopted open reasoning models for autonomous driving on Hugging Face"
         }
       ],
       "gate_results": [
@@ -1057,7 +1099,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:22.221Z"
+      "generated_at": "2026-08-05T01:17:05.658Z"
     },
     {
       "candidate_id": "MAC-47a39425482edbb2",
@@ -1239,7 +1281,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-05T00:22:40.327Z"
+      "generated_at": "2026-08-05T01:16:24.665Z"
     },
     {
       "candidate_id": "MAC-55ebee55e49f728f",
@@ -1329,7 +1371,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "Google Cloud API Gateway",
-        "rationale": "The candidate 'Google Cloud API Gateway' is a specific product/service that offers model routing features. The verified alternative 'Google' refers to the parent company. The source text describes 'Google Cloud API Gateway' as a distinct offering from Google, and the relationship is that of a product to its provider, not entity identity.",
+        "rationale": "The candidate 'Google Cloud API Gateway' is a specific product/service that offers model routing features. The verified alternative 'Google' is the parent company. The source text describes 'Google Cloud API Gateway' as a distinct offering from Google, not as the entity 'Google' itself. A product and its parent company are distinct entities.",
         "candidate_name": "Google Cloud API Gateway"
       },
       "evidence": [
@@ -1361,34 +1403,30 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:08.042Z"
+      "generated_at": "2026-08-05T01:16:46.367Z"
     },
     {
-      "candidate_id": "MAC-60a816c56de2a7a3",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-1617a58283dc2acb",
-      "raw_id": "RAW-1c59fb86b40e0dab",
-      "source_ref": "SA-03d5882d8c6634a9",
-      "source_hash": "d5dc869734fbd540",
+      "candidate_id": "MAC-5d3ab2dfa64bf8b9",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-c7d556e04fe32ea1",
+      "raw_id": "RAW-037e8f6488954f87",
+      "source_ref": "SA-888c7b92de8d67b1",
+      "source_hash": "3effff95ac0468ae",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.2",
-      "status": "accepted",
+      "status": "requires_review",
       "proposal": {
-        "claims": [
-          {
-            "event_type": "partnership",
-            "subject": "NVIDIA",
-            "object": "U.S. National Science Foundation's State and Regional Artificial Intelligence Infrastructure Hubs program",
-            "evidence_index": 0
-          }
-        ]
+        "decision": "unknown",
+        "canonical_name": "Shieldstral",
+        "rationale": "VERIFIED_ALTERNATIVES is empty, so there is no existing verified entity to match against. The candidate name 'Shieldstral' appears in the source, but without any verified alternatives, we cannot determine if it is the same as or distinct from any existing entity.",
+        "candidate_name": "Shieldstral"
       },
       "evidence": [
         {
-          "start": 16,
-          "end": 304,
-          "quote": "NVIDIA is participating in the U.S. National Science Foundation’s (NSF) State and Regional Artificial Intelligence Infrastructure Hubs program, an effort launching today to expand access to the advanced computing, data, software and expertise needed for AI-enabled research and education."
+          "start": 147,
+          "end": 334,
+          "quote": "Shieldstral introduces a 3B open-weights multimodal safety classifier that outperforms models up to 7x its size by framing content moderation as a policy-adaptive question-answering task."
         }
       ],
       "gate_results": [
@@ -1413,7 +1451,46 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:22:36.355Z"
+      "generated_at": "2026-08-05T01:17:11.265Z"
+    },
+    {
+      "candidate_id": "MAC-60a816c56de2a7a3",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-1617a58283dc2acb",
+      "raw_id": "RAW-1c59fb86b40e0dab",
+      "source_ref": "SA-03d5882d8c6634a9",
+      "source_hash": "d5dc869734fbd540",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-08-05T01:16:22.918Z"
     },
     {
       "candidate_id": "MAC-611c673e3d5d9978",
@@ -1429,7 +1506,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "Silicon Valley’s rift over",
-        "rationale": "The candidate canonical_name 'Silicon Valley’s rift over' is a partial phrase from the article title describing a dispute, not an organization. The verified alternatives are specific companies (Google, NVIDIA, OpenAI, Anthropic, Microsoft). The source text describes these companies as participants in the rift, but the rift itself is not an organization and does not match any verified alternative.",
+        "rationale": "The candidate canonical_name 'Silicon Valley’s rift over' is a partial phrase from the article title describing a disagreement, not an organization. The verified alternatives are specific companies (Google, Anthropic, NVIDIA, OpenAI, Microsoft). The quote shows the phrase is part of the article's title and does not refer to any of the verified entities.",
         "candidate_name": "Silicon Valley’s rift over"
       },
       "evidence": [
@@ -1461,7 +1538,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:24.476Z"
+      "generated_at": "2026-08-05T01:17:08.731Z"
     },
     {
       "candidate_id": "MAC-63cc8a538657a5ca",
@@ -1500,7 +1577,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-05T00:22:45.421Z"
+      "generated_at": "2026-08-05T01:16:28.524Z"
     },
     {
       "candidate_id": "MAC-6542f36fd47eac3f",
@@ -1539,7 +1616,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-05T00:22:43.441Z"
+      "generated_at": "2026-08-05T01:16:26.705Z"
     },
     {
       "candidate_id": "MAC-6bdb4a68a9f41c7f",
@@ -1618,7 +1695,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "自动驾驶的前沿",
-        "rationale": "The candidate name '自动驾驶的前沿' translates to 'Frontier of Autonomous Driving' and appears to be derived from the article title. The verified alternative is 'NVIDIA'. The source text describes NVIDIA as the creator and publisher of the Alpamayo 2 Super model, not as an entity named '自动驾驶的前沿'. A publisher_of or creator_of relationship does not establish entity identity.",
+        "rationale": "The candidate name '自动驾驶的前沿' translates to 'Frontiers of Autonomous Driving' and appears to be derived from the article title. The verified alternative is 'NVIDIA', a specific corporation. The source text describes NVIDIA as the creator/publisher of the Alpamayo 2 Super model, which is described as being '面向 Robotaxi 与自动驾驶的前沿' (for robotaxis and the frontiers of autonomous driving). A publisher_of or topic relationship does not constitute entity identity. The quote shows NVIDIA is the company behind the model, not a synonym for '自动驾驶的前沿'.",
         "candidate_name": "自动驾驶的前沿"
       },
       "evidence": [
@@ -1650,7 +1727,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:28.030Z"
+      "generated_at": "2026-08-05T01:17:14.980Z"
     },
     {
       "candidate_id": "MAC-797ecf991eab4b7a",
@@ -1698,7 +1775,54 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:13.500Z"
+      "generated_at": "2026-08-05T01:16:49.909Z"
+    },
+    {
+      "candidate_id": "MAC-7da211e79dcf16c0",
+      "task_type": "qa_repair",
+      "asset_id": "QA-dad3c6e4426f18dc",
+      "raw_id": "RAW-687f2554fb304cf3",
+      "source_ref": "SA-ea657a3296dd107d",
+      "source_hash": "b2ae4c14c299b721",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The source text describes SpaceX purchasing Tesla Megapacks, which are battery storage devices, and mentions their use at xAI data centers. However, the QA_REASON indicates the event is not AI-relevant, and the source itself does not contain a concrete AI industry event such as a model release, AI funding, or AI-specific deployment. The purchases are for general energy storage hardware.",
+        "claims": []
+      },
+      "evidence": [
+        {
+          "start": 236,
+          "end": 459,
+          "quote": "SpaceX has ramped up purchases of Tesla Megapack, spending $295 million on the battery storage devices in the second quarter and $329 million so far this year, according to the company’s earnings report released on Tuesday."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-05T01:17:30.961Z"
     },
     {
       "candidate_id": "MAC-861030164d02db6f",
@@ -1714,7 +1838,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "MirrorCode",
-        "rationale": "No VERIFIED_ALTERNATIVES were provided, so there is no basis to confirm or reject entity identity against any known entity.",
+        "rationale": "No VERIFIED_ALTERNATIVES were provided, so there is no basis to confirm or reject a match. The candidate name matches the benchmark name described in the source, but without verified alternatives, identity cannot be established.",
         "candidate_name": "MirrorCode"
       },
       "evidence": [
@@ -1746,7 +1870,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:13.876Z"
+      "generated_at": "2026-08-05T01:16:52.002Z"
     },
     {
       "candidate_id": "MAC-8896a75b8c62c734",
@@ -1823,6 +1947,96 @@
       "generated_at": "2026-08-05T00:22:34.666Z"
     },
     {
+      "candidate_id": "MAC-89c50ba18e9a3725",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-6fae0bc5a895aab8",
+      "raw_id": "RAW-1dc7dfb3ccf22532",
+      "source_ref": "SA-e978005ea97ab0bc",
+      "source_hash": "2773ebb523149905",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Volta Infra Holdings Ltd.",
+        "rationale": "The source text mentions both 'Volta Infra Holdings Ltd.' and 'Nvidia Corp.' as separate participants in a funding round. Nvidia's participation as an investor does not establish entity identity with Volta.",
+        "candidate_name": "Volta Infra Holdings Ltd."
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-05T01:16:58.038Z"
+    },
+    {
+      "candidate_id": "MAC-8a3a106921391cae",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-360a940182e67c66",
+      "raw_id": "RAW-1cab193331f48897",
+      "source_ref": "SA-a2fc27d76982e115",
+      "source_hash": "c6ae84f067137ea1",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Secure Blockchain Development Corp.",
+        "rationale": "The candidate canonical_name 'Secure Blockchain Development Corp.' exactly matches the full legal name used in the source text, and the quote confirms the entity is the parent company making the announcement.",
+        "candidate_name": "Secure Blockchain Development Corp."
+      },
+      "evidence": [
+        {
+          "start": 126,
+          "end": 356,
+          "quote": "Secure Blockchain Development Corp. (the \" Company \" or \" Secure Blockchain \") (TSXV:ID) today announced that its wholly owned subsidiary, Agentic Solutions Limited (\" Agentic \"), has signed its first commercial customer agreement"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "invalid_same_entity_target"
+        }
+      ],
+      "generated_at": "2026-08-05T01:16:43.486Z"
+    },
+    {
       "candidate_id": "MAC-8d775fb236a06e18",
       "task_type": "entity_resolution",
       "asset_id": "EN-cf5378a2305a999f",
@@ -1836,7 +2050,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "Chinese AI",
-        "rationale": "No VERIFIED_ALTERNATIVES are provided to match against. The candidate name 'Chinese AI' appears broadly in the source as a category of models (e.g., 'Chinese open-weight AI models'), but without a verified list, identity cannot be confirmed or denied.",
+        "rationale": "No VERIFIED_ALTERNATIVES list was provided, so it is impossible to determine whether the candidate canonical_name 'Chinese AI' matches any verified entity. The source text discusses Chinese open-weight AI models and companies, but without a reference list, a same_entity or distinct_entity determination cannot be made.",
         "candidate_name": "Chinese AI"
       },
       "evidence": [
@@ -1868,7 +2082,55 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:30.898Z"
+      "generated_at": "2026-08-05T01:17:17.596Z"
+    },
+    {
+      "candidate_id": "MAC-8dfe964be38cb95e",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-5a60a4ad1ce38fb9",
+      "raw_id": "RAW-e0adca741b32d183",
+      "source_ref": "SA-248f3c59aba52ca9",
+      "source_hash": "804f74e20ce99d43",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "V4 Flash",
+        "rationale": "No VERIFIED_ALTERNATIVES were provided, so there is no basis to confirm or reject entity identity against any verified entity.",
+        "candidate_name": "V4 Flash"
+      },
+      "evidence": [
+        {
+          "start": 114,
+          "end": 142,
+          "quote": "DeepSeek V4 Flash的价格风暴，还在继续。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-05T01:16:51.554Z"
     },
     {
       "candidate_id": "MAC-8e851ef3ea73304a",
@@ -1907,7 +2169,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-05T00:22:32.803Z"
+      "generated_at": "2026-08-05T01:16:21.587Z"
     },
     {
       "candidate_id": "MAC-904fbee1b291bc95",
@@ -1946,7 +2208,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-05T00:22:49.698Z"
+      "generated_at": "2026-08-05T01:16:29.624Z"
     },
     {
       "candidate_id": "MAC-98ad69abfdd0aabd",
@@ -2036,7 +2298,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "Volta Emerges From Stealth",
-        "rationale": "The candidate entity 'Volta Emerges From Stealth' refers to the company Volta, which is described as an AI infrastructure platform and NVIDIA Cloud Partner. The verified alternative 'NVIDIA' is a separate entity mentioned as a partner and investor. A partnership or investor relationship does not constitute entity identity.",
+        "rationale": "The candidate entity 'Volta Emerges From Stealth' refers to the company Volta, which is described as an NVIDIA Cloud Partner. A partnership relationship does not establish entity identity with NVIDIA. The quote confirms Volta is a distinct organization that partners with NVIDIA.",
         "candidate_name": "Volta Emerges From Stealth"
       },
       "evidence": [
@@ -2068,7 +2330,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:16.566Z"
+      "generated_at": "2026-08-05T01:16:54.471Z"
     },
     {
       "candidate_id": "MAC-a3cce2ac286ea916",
@@ -2107,7 +2369,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-05T00:22:52.183Z"
+      "generated_at": "2026-08-05T01:16:30.806Z"
     },
     {
       "candidate_id": "MAC-a575c09c73d60a8e",
@@ -2146,7 +2408,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-05T00:22:58.355Z"
+      "generated_at": "2026-08-05T01:16:34.546Z"
     },
     {
       "candidate_id": "MAC-a85fbb0bdfad8a2b",
@@ -2162,7 +2424,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "Foundational Industries",
-        "rationale": "The candidate entity 'Foundational Industries' matches the company described in the source text, but the VERIFIED_ALTERNATIVES list is empty, so there is no verified entity to confirm a match against. The source text does not provide any alternative verified names to compare.",
+        "rationale": "No VERIFIED_ALTERNATIVES list is provided, so there is no reference set to match against. The candidate canonical_name matches the entity described in the source, but without verified alternatives, identity cannot be confirmed or denied.",
         "candidate_name": "Foundational Industries"
       },
       "evidence": [
@@ -2194,7 +2456,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:15.840Z"
+      "generated_at": "2026-08-05T01:16:54.057Z"
     },
     {
       "candidate_id": "MAC-b0232b72c4a0cacf",
@@ -2210,7 +2472,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "Alpamayo 2",
-        "rationale": "No VERIFIED_ALTERNATIVES list was provided, so there are no verified entities to match against. The candidate name 'Alpamayo 2' appears in the source text as 'Alpamayo 2 Super', but without a verified alternative to confirm identity, the decision must be unknown.",
+        "rationale": "VERIFIED_ALTERNATIVES is empty, so there is no existing verified entity to match against. The source text refers to 'NVIDIA Alpamayo 2 Super' as a specific model within the Alpamayo family, but without a verified entry for 'Alpamayo 2', identity cannot be confirmed.",
         "candidate_name": "Alpamayo 2"
       },
       "evidence": [
@@ -2242,7 +2504,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:18.357Z"
+      "generated_at": "2026-08-05T01:16:59.674Z"
     },
     {
       "candidate_id": "MAC-b2806dd469b3a0cd",
@@ -2258,7 +2520,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "派早报",
-        "rationale": "ENTITY_CANDIDATE '派早报' 是少数派网站的一个栏目/内容系列，而 VERIFIED_ALTERNATIVES 中的实体均为科技公司。SOURCE_TEXT 中未提供任何证据表明 '派早报' 与 Google、Apple、MiniMax、Alibaba、Anthropic 或 Microsoft 是同一实体。",
+        "rationale": "ENTITY_CANDIDATE '派早报' 是少数派网站的一个内容栏目/早报板块，而 VERIFIED_ALTERNATIVES 中的实体均为科技公司。SOURCE_TEXT 中显示 '派早报' 是文章标题的一部分，用于汇总科技新闻，与列表中任何公司实体均无身份等同关系。",
         "candidate_name": "派早报"
       },
       "evidence": [
@@ -2290,7 +2552,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:11.297Z"
+      "generated_at": "2026-08-05T01:16:49.407Z"
     },
     {
       "candidate_id": "MAC-b5db0fb35c532a43",
@@ -2329,7 +2591,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-05T00:22:46.837Z"
+      "generated_at": "2026-08-05T01:16:29.391Z"
     },
     {
       "candidate_id": "MAC-bcf54b233db5de61",
@@ -2431,7 +2693,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-05T00:22:53.342Z"
+      "generated_at": "2026-08-05T01:16:32.038Z"
     },
     {
       "candidate_id": "MAC-bfa378d1f9f849ef",
@@ -2445,9 +2707,9 @@
       "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
-        "decision": "distinct_entity",
+        "decision": "unknown",
         "canonical_name": "August 2026 Latest Updates",
-        "rationale": "The candidate is a product_candidate named 'August 2026 Latest Updates'. The source text is a release notes article about the GPT-5.6 model family, inference optimizations, and agentic harness improvements. There is no mention of a product called 'August 2026 Latest Updates' in the text, and the article title 'OpenAI Release Notes - August 2026 Latest Updates - Releasebot' describes the document itself, not a product entity. No VERIFIED_ALTERNATIVES exist to match against.",
+        "rationale": "No VERIFIED_ALTERNATIVES were provided, so there is no basis to confirm or reject a match. The candidate name 'August 2026 Latest Updates' appears to be a descriptive label for the release notes page, but the source text does not contain this exact phrase as a named entity.",
         "candidate_name": "August 2026 Latest Updates"
       },
       "evidence": [
@@ -2479,7 +2741,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:21.363Z"
+      "generated_at": "2026-08-05T01:17:04.418Z"
     },
     {
       "candidate_id": "MAC-c3385a49402e03af",
@@ -2495,14 +2757,14 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "Google Cloud",
-        "rationale": "The candidate 'Google Cloud' is a cloud platform/service provider, while the verified alternative 'Google' refers to the parent company. The source text mentions 'Google Cloud' as a platform (e.g., 'Google Cloud console', 'Google Cloud Next ‘26') and 'Google' as the source of expertise ('Google’s years of experience'). These are distinct entities; one is a product/platform, the other is the company. The quote shows 'Google Cloud' used as a distinct platform name.",
+        "rationale": "The candidate 'Google Cloud' is a cloud platform/service provider, while the verified alternative 'Google' refers to the parent company. The source text mentions 'Google Cloud' as a platform (e.g., 'Google Cloud console', 'Google Cloud Next ‘26', 'Google Cloud databases') and 'Google' as the company providing expertise and tools (e.g., 'Google’s years of experience', 'Google Remote MCP servers'). These are distinct entities in a provider-parent relationship, not the same entity.",
         "candidate_name": "Google Cloud"
       },
       "evidence": [
         {
-          "start": 804,
+          "start": 747,
           "end": 824,
-          "quote": "Google Cloud console"
+          "quote": "integrated across Google surfaces such as Chat, CLI, the Google Cloud console"
         }
       ],
       "gate_results": [
@@ -2527,7 +2789,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:34.225Z"
+      "generated_at": "2026-08-05T01:17:20.767Z"
     },
     {
       "candidate_id": "MAC-c5fe41ebca8025a8",
@@ -2543,7 +2805,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "Focus view",
-        "rationale": "No VERIFIED_ALTERNATIVES were provided, so there is no basis to confirm whether the candidate entity matches any verified entity. The source text does contain a mention of 'Focus view' as a new feature.",
+        "rationale": "The candidate canonical_name 'Focus view' appears verbatim in the source text as a new feature added to Claude Code. However, no VERIFIED_ALTERNATIVES list was provided (empty array), so there are no verified entities to match against. The entity cannot be confirmed as same_entity or distinct_entity without a reference set.",
         "candidate_name": "Focus view"
       },
       "evidence": [
@@ -2575,7 +2837,55 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:02.041Z"
+      "generated_at": "2026-08-05T01:16:37.997Z"
+    },
+    {
+      "candidate_id": "MAC-ce695a13eaf552cd",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-1706429cbf67f1c9",
+      "raw_id": "RAW-46f0bf372083c925",
+      "source_ref": "SA-18b22bc87f943937",
+      "source_hash": "8c28b84de667d44e",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "European Union",
+        "rationale": "The candidate canonical_name 'European Union' appears in the source text, but VERIFIED_ALTERNATIVES is empty, so there is no verified entity to match against. The quote confirms the mention exists.",
+        "candidate_name": "European Union"
+      },
+      "evidence": [
+        {
+          "start": 62,
+          "end": 201,
+          "quote": "The European Union has ushered in some additional rules that aim to make it easier for people to identify chatbots and AI deepfakes online."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-05T01:16:40.121Z"
     },
     {
       "candidate_id": "MAC-d168a71f35d897c0",
@@ -2614,7 +2924,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-05T00:22:57.501Z"
+      "generated_at": "2026-08-05T01:16:33.332Z"
     },
     {
       "candidate_id": "MAC-d4074924e2606239",
@@ -2653,7 +2963,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-05T00:22:58.417Z"
+      "generated_at": "2026-08-05T01:16:35.278Z"
     },
     {
       "candidate_id": "MAC-d7149613efbd1b23",
@@ -2665,11 +2975,11 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.2",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "unknown",
         "canonical_name": "Focus",
-        "rationale": "The candidate canonical_name is 'Focus'. The source text mentions 'Focus view' as a new feature in Claude Code v2.1.221: '[VSCode] Added Focus view: a chat-menu toggle that hides tool activity behind an expandable per-turn summary with a live running-tool indicator'. However, there are no VERIFIED_ALTERNATIVES provided to match against, and the source describes 'Focus view' as a feature/view within the Claude Code product, not as a standalone product named 'Focus'. Without verified alternatives to confirm entity identity, the relationship cannot be determined.",
+        "rationale": "The candidate canonical_name is 'Focus', but no VERIFIED_ALTERNATIVES are provided. The source mentions 'Focus view' as a VSCode feature, but without any verified alternatives to match against, identity cannot be confirmed or denied.",
         "candidate_name": "Focus"
       },
       "evidence": [
@@ -2692,8 +3002,8 @@
         },
         {
           "gate": "protected_facts",
-          "status": "failed",
-          "detail": "unsupported_numeric_fact:2.1.221"
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
         },
         {
           "gate": "task_contract",
@@ -2701,7 +3011,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:08.114Z"
+      "generated_at": "2026-08-05T01:16:45.082Z"
     },
     {
       "candidate_id": "MAC-d8253edcc6934371",
@@ -2717,7 +3027,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "MAI Realtime",
-        "rationale": "VERIFIED_ALTERNATIVES is empty, so there is no existing verified entity to match against. The candidate name 'MAI Realtime' appears in the source, but without a verified alternative, identity cannot be confirmed or denied.",
+        "rationale": "VERIFIED_ALTERNATIVES is empty, so there is no existing verified entity to match against. The candidate name 'MAI Realtime' appears in the source, but without any verified alternatives, identity cannot be confirmed or denied.",
         "candidate_name": "MAI Realtime"
       },
       "evidence": [
@@ -2749,7 +3059,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:10.650Z"
+      "generated_at": "2026-08-05T01:16:47.337Z"
     },
     {
       "candidate_id": "MAC-d9ac53a3a96e8b0e",
@@ -2788,7 +3098,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-05T00:22:43.641Z"
+      "generated_at": "2026-08-05T01:16:27.101Z"
     },
     {
       "candidate_id": "MAC-dd6d8c391e527d1c",
@@ -2800,11 +3110,24 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.2",
-      "status": "rejected",
+      "status": "accepted",
       "proposal": {
-        "claims": []
+        "claims": [
+          {
+            "event_type": "model_release",
+            "subject": "NVIDIA",
+            "object": "cuFile APIs",
+            "evidence_index": 0
+          }
+        ]
       },
-      "evidence": [],
+      "evidence": [
+        {
+          "start": 2223,
+          "end": 2452,
+          "quote": "At FMS, NVIDIA announced it is open sourcing its cuFile application programming interfaces (APIs) — and the vertical storage software stack underneath them — which let GPUs, not just CPUs, read from and write to storage directly."
+        }
+      ],
       "gate_results": [
         {
           "gate": "source_hash",
@@ -2813,8 +3136,8 @@
         },
         {
           "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
+          "status": "passed",
+          "detail": "all quotes match exact spans"
         },
         {
           "gate": "protected_facts",
@@ -2823,11 +3146,59 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:22:54.530Z"
+      "generated_at": "2026-08-05T01:16:34.065Z"
+    },
+    {
+      "candidate_id": "MAC-dda985a2c10a034c",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-920510199770f4d6",
+      "raw_id": "RAW-037e8f6488954f87",
+      "source_ref": "SA-888c7b92de8d67b1",
+      "source_hash": "3effff95ac0468ae",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Mistral",
+        "rationale": "The source text mentions NVIDIA as a separate organization in the context of an alliance, not as an alternative name for Mistral. The quote shows NVIDIA is a distinct entity that Mistral collaborates with.",
+        "candidate_name": "Mistral"
+      },
+      "evidence": [
+        {
+          "start": 1783,
+          "end": 1940,
+          "quote": "As an inaugural member of the Open Secure AI Alliance with NVIDIA and other organizations, today we're releasing Shieldstral as open weights under Apache 2.0"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-05T01:17:02.980Z"
     },
     {
       "candidate_id": "MAC-e1d91d3f84cf7263",
@@ -2940,7 +3311,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-05T00:22:34.193Z"
+      "generated_at": "2026-08-05T01:16:21.571Z"
     },
     {
       "candidate_id": "MAC-edf4b3f66440b21b",
@@ -3053,7 +3424,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-05T00:22:50.692Z"
+      "generated_at": "2026-08-05T01:16:30.724Z"
     },
     {
       "candidate_id": "MAC-f24d28eb6dc05f4d",
@@ -3065,11 +3436,46 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.2",
-      "status": "rejected",
+      "status": "accepted",
       "proposal": {
-        "claims": []
+        "claims": [
+          {
+            "event_type": "product_release",
+            "subject": "Claude Code",
+            "object": "v2.1.222",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "service_change",
+            "subject": "Claude Code",
+            "object": "ultraplan feature",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "service_change",
+            "subject": "Claude Code",
+            "object": "Remote Control auto-start",
+            "evidence_index": 2
+          }
+        ]
       },
-      "evidence": [],
+      "evidence": [
+        {
+          "start": 186,
+          "end": 194,
+          "quote": "v2.1.222"
+        },
+        {
+          "start": 3508,
+          "end": 3533,
+          "quote": "Removed ultraplan feature"
+        },
+        {
+          "start": 3303,
+          "end": 3507,
+          "quote": "Changed Remote Control auto-start so repo-local settings ( .claude/settings.json or .claude/settings.local.json ) can no longer turn it on (they can still turn it off); enable it at user scope via /config"
+        }
+      ],
       "gate_results": [
         {
           "gate": "source_hash",
@@ -3078,8 +3484,8 @@
         },
         {
           "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
+          "status": "passed",
+          "detail": "all quotes match exact spans"
         },
         {
           "gate": "protected_facts",
@@ -3088,11 +3494,11 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:22:59.484Z"
+      "generated_at": "2026-08-05T01:16:37.481Z"
     },
     {
       "candidate_id": "MAC-f467317515f526ec",
@@ -3108,7 +3514,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "White House",
-        "rationale": "The candidate entity is a product_candidate named 'White House'. The source text mentions 'White House Chief of Staff Susie Wiles' and 'White House Office of Science and Technology Policy', which refer to the U.S. presidential residence and executive office, not a product. No VERIFIED_ALTERNATIVES exist to match, and the entity type mismatch confirms this is a distinct entity from any product candidate.",
+        "rationale": "The candidate entity 'White House' refers to the US presidential residence and administration. The source text mentions 'White House Chief of Staff Susie Wiles' and 'White House Office of Science and Technology Policy', which are components or staff of the White House entity, but the candidate is not a product_candidate. No VERIFIED_ALTERNATIVES list was provided to match against, and the entity type mismatch (product_candidate vs. governmental body) further indicates this is not a match for any verified product entity.",
         "candidate_name": "White House"
       },
       "evidence": [
@@ -3140,7 +3546,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:19.457Z"
+      "generated_at": "2026-08-05T01:17:01.757Z"
     },
     {
       "candidate_id": "MAC-f53e1660a82c9eba",
@@ -3156,7 +3562,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "New",
-        "rationale": "The candidate 'New' refers to a software project called 'LLM' created by Simon Willison, as evidenced by the quote. None of the verified alternatives (Google, OpenAI, Anthropic, OpenRouter) match this entity. The source mentions these verified entities as separate providers or plugin names, not as the identity of 'LLM' itself.",
+        "rationale": "The candidate 'New' refers to a software project called 'LLM' created by Simon Willison, which is a CLI tool and Python library for interacting with large language models. None of the verified alternatives (Google, Anthropic, OpenAI, OpenRouter) match this entity. The source text describes LLM as a separate project that integrates with these providers via plugins, not as being the same entity as any of them.",
         "candidate_name": "New"
       },
       "evidence": [
@@ -3188,7 +3594,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:04.159Z"
+      "generated_at": "2026-08-05T01:16:40.784Z"
     },
     {
       "candidate_id": "MAC-f8d9815175f85e81",
@@ -3227,7 +3633,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-05T00:22:42.546Z"
+      "generated_at": "2026-08-05T01:16:25.638Z"
     },
     {
       "candidate_id": "MAC-fceb7f26a56ad1ae",
@@ -3243,23 +3649,25 @@
       "proposal": {
         "fields": [
           {
-            "field": "customer",
-            "value": "杭州联汇科技股份有限公司",
-            "evidence_index": 0
-          },
-          {
             "field": "vendor",
-            "value": "Om AI联汇",
+            "value": "杭州联汇科技股份有限公司（简称：Om AI 联汇）",
             "evidence_index": 0
           },
           {
-            "field": "industry",
-            "value": "AI产业",
+            "field": "reported_delivery_components",
+            "value": [
+              "联合联想、苹果推出适配 AIPC 硬件的 “OttoBox AI Studio”",
+              "与头部具身智能企业深度合作，为各类终端设备赋予感知、记忆与决策能力",
+              "自研可穿戴 AI 视觉中枢 Homer AI 已服务全国近十万视障用户"
+            ],
             "evidence_index": 1
           },
           {
-            "field": "reported_need",
-            "value": "加速物理AI场景商业化落地",
+            "field": "reported_outcomes",
+            "value": [
+              "平台月均 AI 调用量达千万次",
+              "商业化进程稳居行业前列"
+            ],
             "evidence_index": 2
           }
         ]
@@ -3271,14 +3679,14 @@
           "quote": "近日，杭州联汇科技股份有限公司（简称：Om AI 联汇）宣布完成新一轮数亿元融资。"
         },
         {
-          "start": 260,
-          "end": 294,
-          "quote": "当前AI产业正从云端算力竞赛转向端侧场景落地，物理AI成为核心风口。"
+          "start": 554,
+          "end": 697,
+          "quote": "基于 VLX 核心基座的“一脑多形” 能力已实现多场景规模化落地：联合联想、苹果推出适配 AIPC 硬件的 “OttoBox AI Studio”；与头部具身智能企业深度合作，为各类终端设备赋予感知、记忆与决策能力；自研可穿戴 AI 视觉中枢 Homer AI 已服务全国近十万视障用户"
         },
         {
-          "start": 217,
-          "end": 259,
-          "quote": "本次募集资金将用于VLX模型系列技术迭代、深化研发壁垒及加速物理AI场景商业化落地。"
+          "start": 698,
+          "end": 726,
+          "quote": "平台月均 AI 调用量达千万次，商业化进程稳居行业前列。"
         }
       ],
       "gate_results": [
@@ -3303,7 +3711,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-05T00:23:40.242Z"
+      "generated_at": "2026-08-05T01:17:25.760Z"
     }
   ]
 }
