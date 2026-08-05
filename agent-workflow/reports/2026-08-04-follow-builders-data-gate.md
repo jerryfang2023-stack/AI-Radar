@@ -1,6 +1,6 @@
 # Follow Builders Data Gate
 
-- generated_at: 2026-08-04T10:00:02.448Z
+- generated_at: 2026-08-04T16:39:07.072Z
 - date: 2026-08-04
 - status: passed
 - data_file: 01-SiteV2/site/data/follow-builders-daily.json
@@ -13,4 +13,4 @@
 
 ## Warnings
 
-- no podcast item is present
+- none

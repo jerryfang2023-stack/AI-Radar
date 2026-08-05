@@ -714,6 +714,40 @@ test("融资主体可从事件 Claim 证据解析，避免在二次搜索前误�
   assert.equal(subjectCompanyForEvent(event, entities, {}, claims)?.entity_id, "EN-P1");
 });
 
+test("accepted funding claim subject takes precedence over investor names in the title", () => {
+  const entities = [
+    {
+      entity_id: "EN-VOLTA",
+      entity_type: "organization_candidate",
+      canonical_name: "Volta Infra Holdings Ltd.",
+    },
+    {
+      entity_id: "EN-NVIDIA",
+      entity_type: "organization_candidate",
+      canonical_name: "NVIDIA",
+      aliases: ["Nvidia"],
+      verification_status: "verified",
+    },
+  ];
+  const claims = [{
+    claim_id: "CL-VOLTA",
+    claim_type: "funding",
+    verification_status: "accepted",
+    subject: "Volta Infra Holdings Ltd.",
+    source_quote: "Volta Infra Holdings Ltd., a new artificial intelligence cloud company, has raised $300 million in venture funding",
+  }];
+  const event = {
+    display_title_zh: "Nvidia, Dell Back AI Cloud Startup Volta at $2.4 Billion Value",
+    action: "funding",
+    object: "$300 million in venture funding",
+    metrics: ["$300 million"],
+    entities: ["EN-VOLTA", "EN-NVIDIA"],
+    claim_refs: ["CL-VOLTA"],
+  };
+
+  assert.equal(subjectCompanyForEvent(event, entities, {}, claims)?.entity_id, "EN-VOLTA");
+});
+
 test("Chinese funding titles resolve the company entity instead of a headline fragment", () => {
   const cases = [
     {

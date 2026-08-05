@@ -5,13 +5,13 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-04T04:50:09.359Z",
+    "generated_at": "2026-08-05T04:13:51.934Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 244,
-    "input_hash": "750c32f8a06ee7fc",
+    "decision_count": 247,
+    "input_hash": "0b4c23520661ba86",
     "override_count": 17,
     "needs_review_count": 0,
     "low_confidence_count": 0
@@ -4785,6 +4785,98 @@
       "confidence": 0.85,
       "needs_review": false,
       "rationale": "June 提供企业系统部署与配置自动化平台，将复杂配置转为业务规则，支持沙盒测试与审计，属于跨行业的企业生产力与工作流工具，不涉及物理世界感知决策，非基础设施层，也未限定单一行业，因此归入 enterprise_applications 下的 productivity_enterprise_workflows。"
+    },
+    {
+      "event_id": "EV-268e5c3d36e3ed28",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司明确建造由AI全权运营的工厂，产品为定制数据中心机柜，但核心业务是AI驱动的自主制造，属于物理世界感知-决策-执行，符合physical_ai定义。"
+    },
+    {
+      "event_id": "EV-4d2183d4275ea9cf",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "ai_observability_governance",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "security_operations",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "financial_services",
+        "healthcare_life_sciences",
+        "retail_ecommerce",
+        "manufacturing",
+        "media_entertainment",
+        "education",
+        "government_public_sector",
+        "energy_utilities",
+        "telecommunications",
+        "automotive_transportation",
+        "professional_services",
+        "construction_real_estate",
+        "food_hospitality",
+        "aerospace_defense",
+        "agriculture",
+        "logistics_supply_chain",
+        "legal_services"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "产品定位为治理、安全、运营和优化企业AI模型的平台，属于基础设施中的可观测性与评估类别，具体为AI可观测性与治理。证据未限定特定行业，故覆盖所有行业。"
+    },
+    {
+      "event_id": "EV-2dea56b0e97c1685",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "compute_cloud_service",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "financial_services",
+        "healthcare_life_sciences",
+        "retail_ecommerce",
+        "manufacturing",
+        "media_entertainment",
+        "education",
+        "government_public_sector",
+        "energy_utilities",
+        "telecommunications",
+        "automotive_transportation",
+        "professional_services",
+        "construction_real_estate",
+        "food_hospitality",
+        "aerospace_defense",
+        "agriculture",
+        "logistics_supply_chain",
+        "legal_services"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司提供AI算力租赁与融资平台，帮助获取昂贵AI芯片，属于基础设施中的硬件与计算子类，具体为计算基础设施。证据未限定行业，故覆盖所有行业。"
     }
   ]
 }

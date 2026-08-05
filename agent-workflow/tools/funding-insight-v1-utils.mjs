@@ -703,6 +703,26 @@ export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims
   const byId = new Map(entities.map((entity) => [entity.entity_id, entity]));
   const claimById = new Map(claims.map((claim) => [claim.claim_id, claim]));
   const eventClaims = (event.claim_refs || []).map((id) => claimById.get(id)).filter(Boolean);
+  const acceptedFundingSubjects = eventClaims
+    .filter((claim) => claim?.claim_type === "funding" && claim?.verification_status === "accepted")
+    .map((claim) => normalizedName(claim.subject))
+    .filter(Boolean);
+  if (acceptedFundingSubjects.length) {
+    const subjectMatches = (event.entities || [])
+      .map((id, index) => ({ entity: byId.get(id), index }))
+      .filter(({ entity }) => entity?.entity_type === "organization_candidate")
+      .map(({ entity, index }) => ({
+        entity,
+        index,
+        matched: acceptedFundingSubjects.some((subject) => {
+          const canonical = normalizedName(entity.canonical_name);
+          const aliases = (entity.aliases || []).map(normalizedName);
+          return canonical && (subject === canonical || aliases.includes(subject));
+        }),
+      }))
+      .filter((candidate) => candidate.matched);
+    if (subjectMatches.length === 1) return subjectMatches[0].entity;
+  }
   const eventParts = [
     event.display_title_zh,
     event.action,

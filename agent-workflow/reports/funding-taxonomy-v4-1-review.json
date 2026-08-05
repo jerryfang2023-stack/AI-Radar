@@ -5,13 +5,13 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-04T04:50:09.359Z",
+    "generated_at": "2026-08-05T04:13:51.934Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 244,
-    "input_hash": "750c32f8a06ee7fc",
+    "decision_count": 247,
+    "input_hash": "0b4c23520661ba86",
     "override_count": 17,
     "needs_review_count": 0,
     "low_confidence_count": 0
@@ -331,6 +331,25 @@
       "rationale": "银河通用研发并部署Galbot S1工业重载机器人和银河太空舱零售机器人，产品直接感知、决策并作用于物理世界，符合Physical AI定义。"
     },
     {
+      "event_id": "EV-c5d7d88d1aef8edb",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "software_development",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "月之暗面核心产品为Kimi系列大模型，开源发布并成为全球开发者底层能力，属于模型基础设施，归入infrastructure_compute > development_deployment > models。"
+    },
+    {
       "event_id": "EV-af8e95dbe06ac083",
       "market_category_id": "physical_ai",
       "market_subcategory_id": "",
@@ -448,6 +467,40 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Agave专为建筑行业财务设计，深度集成ERP与项目管理系统，围绕建筑行业特有工作流程和数据，归入industry_applications > industrials。"
+    },
+    {
+      "event_id": "EV-7951af05be21dc7c",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "software_development_coding",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Quash 提供自主QA代理，自动完成移动应用测试与缺陷修复，属于跨行业的软件开发功能，不涉及物理世界感知与行动，非基础设施，也非单一行业专用，因此归入企业应用-软件开发编码。"
+    },
+    {
+      "event_id": "EV-2bb63a3015195f9b",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "data_preparation_curation",
+      "product_form_id": "model_api_service",
+      "use_case_ids": [
+        "knowledge_search"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "Seltz 提供Web Knowledge API，为AI系统和智能体提供实时、上下文工程化的网络数据，属于为其他AI产品构建者提供数据基础设施，而非面向最终业务用户的行业或企业应用。"
     },
     {
       "event_id": "EV-9055cb4fa2b4ee62",
@@ -920,28 +973,6 @@
       "rationale": "Avoca 提供 AI 语音与工作流自动化，处理来电线索、跟进报价、评估通话质量，属于跨行业的客户支持与销售功能，因此归入企业应用。"
     },
     {
-      "event_id": "EV-59882383f82f215d",
-      "market_category_id": "infrastructure_compute",
-      "market_subcategory_id": "hardware_computing",
-      "market_application_id": "chips",
-      "product_form_id": "chip_accelerator",
-      "use_case_ids": [
-        "physical_automation"
-      ],
-      "industry_ids": [
-        "aerospace_defense",
-        "telecommunications",
-        "manufacturing"
-      ],
-      "target_user_ids": [
-        "developer",
-        "business_user"
-      ],
-      "confidence": 0.9,
-      "needs_review": false,
-      "rationale": "Axelera AI designs specialized AI accelerator chips (Europa, Metis, Titania) for edge and data center inference. This maps directly to infrastructure_compute > hardware_computing > chips. The product form is chip_accelerator. Use cases include physical_automation (edge AI for drones, robotics via DroneStar AI, ESA). Industries served include aerospace_defense (ESA), telecommunications (Telefonica), and manufacturing (Advantech). Target users are developers integrating the chips and business users deploying AI systems."
-    },
-    {
       "event_id": "EV-c85011ca6a0389bf",
       "market_category_id": "infrastructure_compute",
       "market_subcategory_id": "observability_evaluation",
@@ -1142,6 +1173,21 @@
       "confidence": 0.8,
       "needs_review": false,
       "rationale": "提供定制AI开发、Agentic AI平台和企业AI助手，帮助客户从PoC走向生产，属于为AI构建者提供开发部署基础设施。"
+    },
+    {
+      "event_id": "EV-6e516b6e68def9cf",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "compute_cloud_service",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "提供AMD AI加速器云服务，用于训练和推理，属于为AI构建者提供硬件/计算基础设施。"
     },
     {
       "event_id": "EV-0d4e656aa51f9a46",
@@ -1522,6 +1568,28 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Etched is building a custom AI chip (Sohu) and inference clusters, which fits the infrastructure_compute > hardware_computing > chips hierarchy. The product is a chip accelerator. Target users are developers who deploy AI models on this hardware."
+    },
+    {
+      "event_id": "EV-59882383f82f215d",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "aerospace_defense",
+        "telecommunications",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Axelera AI designs specialized AI accelerator chips (Europa, Metis, Titania) for edge and data center inference. This maps directly to infrastructure_compute > hardware_computing > chips. The product form is chip_accelerator. Use cases include physical_automation (edge AI for drones, robotics via DroneStar AI, ESA). Industries served include aerospace_defense (ESA), telecommunications (Telefonica), and manufacturing (Advantech). Target users are developers integrating the chips and business users deploying AI systems."
     },
     {
       "event_id": "EV-7e1624d7df300713",
@@ -1931,23 +1999,6 @@
       "rationale": "Hark 当前首批产品是尚待发布的多模态模型，硬件设备明确属于后续计划；不能用未来硬件把当前公司归为 Physical AI。"
     },
     {
-      "event_id": "EV-450f624a6a6446ce",
-      "market_category_id": "enterprise_applications",
-      "market_subcategory_id": "productivity_enterprise_workflows",
-      "market_application_id": "",
-      "product_form_id": "ai_device",
-      "use_case_ids": [
-        "productivity_enterprise_workflows"
-      ],
-      "industry_ids": [],
-      "target_user_ids": [
-        "consumer"
-      ],
-      "confidence": 0.8,
-      "needs_review": false,
-      "rationale": "Hark is building a proactive, personalized AI with speech, vision, and memory, integrating native hardware and new interfaces. This aligns with an AI device (ai_device) for personal productivity and enterprise workflows. The allowed hierarchy tuple [\"enterprise_applications\",\"productivity_enterprise_workflows\",\"\"] is copied exactly. Use case is productivity_enterprise_workflows; target user is consumer given the personal AI focus. No specific industry is indicated."
-    },
-    {
       "event_id": "EV-5f3ccb941a2fe5d7",
       "canonical_event_id": "EV-2a78dd5feb40a78a",
       "market_category_id": "enterprise_applications",
@@ -2212,25 +2263,6 @@
       "rationale": "Lily跨行业自动化报价、路线规划、设备诊断等业务流程，属于跨行业企业应用，未限定单一行业。"
     },
     {
-      "event_id": "EV-2301cd1470155075",
-      "market_category_id": "infrastructure_compute",
-      "market_subcategory_id": "observability_evaluation",
-      "market_application_id": "llm_benchmarking_routing",
-      "product_form_id": "end_user_application",
-      "use_case_ids": [
-        "research_discovery"
-      ],
-      "industry_ids": [
-        "professional_services"
-      ],
-      "target_user_ids": [
-        "developer"
-      ],
-      "confidence": 0.9,
-      "needs_review": false,
-      "rationale": "DesignArena is a blind LLM evaluation and ranking platform using Bradley-Terry pairwise comparisons. It fits observability_evaluation → llm_benchmarking_routing. The product is an end-user application for benchmarking, primarily serving developers and researchers in AI labs."
-    },
-    {
       "event_id": "EV-8c2fdaad276818b0",
       "market_category_id": "enterprise_applications",
       "market_subcategory_id": "productivity_enterprise_workflows",
@@ -2267,25 +2299,6 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Jedify构建企业上下文图谱，为AI应用提供数据基础，属于基础设施中的数据准备与治理，而非直接面向终端业务的应用。"
-    },
-    {
-      "event_id": "EV-f315914e0fedddfa",
-      "market_category_id": "enterprise_applications",
-      "market_subcategory_id": "productivity_enterprise_workflows",
-      "market_application_id": "",
-      "product_form_id": "enterprise_software_platform",
-      "use_case_ids": [
-        "productivity_enterprise_workflows",
-        "software_development"
-      ],
-      "industry_ids": [],
-      "target_user_ids": [
-        "business_user",
-        "developer"
-      ],
-      "confidence": 0.85,
-      "needs_review": false,
-      "rationale": "June 提供企业系统部署与配置自动化平台，将复杂配置转为业务规则，支持沙盒测试与审计，属于跨行业的企业生产力与工作流工具，不涉及物理世界感知决策，非基础设施层，也未限定单一行业，因此归入 enterprise_applications 下的 productivity_enterprise_workflows。"
     },
     {
       "event_id": "EV-e7dcecaed5a0ee5b",
@@ -2594,25 +2607,6 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Moonshot AI develops foundation models (Kimi K2.6) and AI agents. The model is released under an open license, fitting 'models' under 'development_deployment'. The primary use case is software development, evidenced by customer Cursor. Target users are developers."
-    },
-    {
-      "event_id": "EV-c5d7d88d1aef8edb",
-      "market_category_id": "infrastructure_compute",
-      "market_subcategory_id": "development_deployment",
-      "market_application_id": "models",
-      "product_form_id": "model",
-      "use_case_ids": [
-        "software_development",
-        "productivity_enterprise_workflows"
-      ],
-      "industry_ids": [],
-      "target_user_ids": [
-        "developer",
-        "business_user"
-      ],
-      "confidence": 0.9,
-      "needs_review": false,
-      "rationale": "月之暗面核心产品为Kimi系列大模型，开源发布并成为全球开发者底层能力，属于模型基础设施，归入infrastructure_compute > development_deployment > models。"
     },
     {
       "event_id": "EV-869c9ea96c58873d",
@@ -3260,27 +3254,6 @@
       "rationale": "与 EV-136b2edc9b9f3be8 为同一公司 Paper，证据显示其产品为基于 HTML/CSS 的设计开发协作平台，直接支持软件开发和设计工程，属于跨行业的企业应用，不涉及物理 AI 或基础设施提供。"
     },
     {
-      "event_id": "EV-acf1bcb321414706",
-      "market_category_id": "enterprise_applications",
-      "market_subcategory_id": "productivity_enterprise_workflows",
-      "market_application_id": "",
-      "product_form_id": "enterprise_software_platform",
-      "use_case_ids": [
-        "productivity_enterprise_workflows",
-        "data_analysis"
-      ],
-      "industry_ids": [
-        "logistics_supply_chain",
-        "retail_ecommerce"
-      ],
-      "target_user_ids": [
-        "business_user"
-      ],
-      "confidence": 0.9,
-      "needs_review": false,
-      "rationale": "产品是跨行业的工作流自动化平台，不涉及物理世界感知决策执行，非基础设施，也不限定单一行业，因此归入企业应用。证据强调后勤和电商领域的后台流程自动化，属于生产力/企业工作流。"
-    },
-    {
       "event_id": "EV-986ac3a819d23388",
       "market_category_id": "industry_applications",
       "market_subcategory_id": "financial_services",
@@ -3517,23 +3490,6 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "产品是AI代码审查与治理平台，面向开发者，属于跨行业的软件开发生命周期功能，不涉及物理世界感知与行动，也不提供底层基础设施，因此归入企业应用下的软件开发子类。"
-    },
-    {
-      "event_id": "EV-7951af05be21dc7c",
-      "market_category_id": "enterprise_applications",
-      "market_subcategory_id": "software_development_coding",
-      "market_application_id": "",
-      "product_form_id": "end_user_application",
-      "use_case_ids": [
-        "software_development"
-      ],
-      "industry_ids": [],
-      "target_user_ids": [
-        "developer"
-      ],
-      "confidence": 0.9,
-      "needs_review": false,
-      "rationale": "Quash 提供自主QA代理，自动完成移动应用测试与缺陷修复，属于跨行业的软件开发功能，不涉及物理世界感知与行动，非基础设施，也非单一行业专用，因此归入企业应用-软件开发编码。"
     },
     {
       "event_id": "EV-63dee9f748531f08",
@@ -3910,23 +3866,6 @@
       "rationale": "Scaled Cognition is an AI model lab developing APT, a smaller, faster, and more accurate model. The company also offers a platform with agentic tooling and monitoring. This aligns with the 'models' application under 'development_deployment' in the infrastructure_compute category. The product form is a model, and use cases include software development, customer support, and enterprise workflows. Target users are developers and business users. No specific industry focus is mentioned, so industry_ids is left empty."
     },
     {
-      "event_id": "EV-2bb63a3015195f9b",
-      "market_category_id": "infrastructure_compute",
-      "market_subcategory_id": "data",
-      "market_application_id": "data_preparation_curation",
-      "product_form_id": "model_api_service",
-      "use_case_ids": [
-        "knowledge_search"
-      ],
-      "industry_ids": [],
-      "target_user_ids": [
-        "developer"
-      ],
-      "confidence": 0.85,
-      "needs_review": false,
-      "rationale": "Seltz 提供Web Knowledge API，为AI系统和智能体提供实时、上下文工程化的网络数据，属于为其他AI产品构建者提供数据基础设施，而非面向最终业务用户的行业或企业应用。"
-    },
-    {
       "event_id": "EV-f54ec32c67e9447c",
       "market_category_id": "infrastructure_compute",
       "market_subcategory_id": "data",
@@ -4205,21 +4144,6 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Temporal 提供持久化执行层，为 AI 智能体提供长时间运行的状态管理和故障恢复，属于面向 AI 构建者的开发部署基础设施，非物理 AI，非行业应用，故归为 infrastructure_compute > development_deployment > ai_development_orchestration。"
-    },
-    {
-      "event_id": "EV-6e516b6e68def9cf",
-      "market_category_id": "infrastructure_compute",
-      "market_subcategory_id": "hardware_computing",
-      "market_application_id": "computing_infrastructure",
-      "product_form_id": "compute_cloud_service",
-      "use_case_ids": [],
-      "industry_ids": [],
-      "target_user_ids": [
-        "developer"
-      ],
-      "confidence": 0.95,
-      "needs_review": false,
-      "rationale": "提供AMD AI加速器云服务，用于训练和推理，属于为AI构建者提供硬件/计算基础设施。"
     },
     {
       "event_id": "EV-e31a6bf3c0a979f8",
@@ -4643,6 +4567,27 @@
       "rationale": "Wonderful 是横向企业 AI 代理平台，跨多个用例和工作流，非物理 AI，非基础设施，非单一行业专用，属于 enterprise applications。"
     },
     {
+      "event_id": "EV-acf1bcb321414706",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "logistics_supply_chain",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "产品是跨行业的工作流自动化平台，不涉及物理世界感知决策执行，非基础设施，也不限定单一行业，因此归入企业应用。证据强调后勤和电商领域的后台流程自动化，属于生产力/企业工作流。"
+    },
+    {
       "event_id": "EV-d5aa723446feebbb",
       "market_category_id": "enterprise_applications",
       "market_subcategory_id": "software_development_coding",
@@ -4785,6 +4730,153 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Zenskar 提供 AI 原生计费与收入自动化平台，面向财务团队优化订单到现金流程，属于跨行业的企业业务功能，不涉及物理 AI 或基础设施层，因此归入企业应用-生产力工作流。"
+    },
+    {
+      "event_id": "EV-450f624a6a6446ce",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "Hark is building a proactive, personalized AI with speech, vision, and memory, integrating native hardware and new interfaces. This aligns with an AI device (ai_device) for personal productivity and enterprise workflows. The allowed hierarchy tuple [\"enterprise_applications\",\"productivity_enterprise_workflows\",\"\"] is copied exactly. Use case is productivity_enterprise_workflows; target user is consumer given the personal AI focus. No specific industry is indicated."
+    },
+    {
+      "event_id": "EV-2301cd1470155075",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "llm_benchmarking_routing",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "research_discovery"
+      ],
+      "industry_ids": [
+        "professional_services"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "DesignArena is a blind LLM evaluation and ranking platform using Bradley-Terry pairwise comparisons. It fits observability_evaluation → llm_benchmarking_routing. The product is an end-user application for benchmarking, primarily serving developers and researchers in AI labs."
+    },
+    {
+      "event_id": "EV-f315914e0fedddfa",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "June 提供企业系统部署与配置自动化平台，将复杂配置转为业务规则，支持沙盒测试与审计，属于跨行业的企业生产力与工作流工具，不涉及物理世界感知决策，非基础设施层，也未限定单一行业，因此归入 enterprise_applications 下的 productivity_enterprise_workflows。"
+    },
+    {
+      "event_id": "EV-268e5c3d36e3ed28",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司明确建造由AI全权运营的工厂，产品为定制数据中心机柜，但核心业务是AI驱动的自主制造，属于物理世界感知-决策-执行，符合physical_ai定义。"
+    },
+    {
+      "event_id": "EV-4d2183d4275ea9cf",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "ai_observability_governance",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "security_operations",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "financial_services",
+        "healthcare_life_sciences",
+        "retail_ecommerce",
+        "manufacturing",
+        "media_entertainment",
+        "education",
+        "government_public_sector",
+        "energy_utilities",
+        "telecommunications",
+        "automotive_transportation",
+        "professional_services",
+        "construction_real_estate",
+        "food_hospitality",
+        "aerospace_defense",
+        "agriculture",
+        "logistics_supply_chain",
+        "legal_services"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "产品定位为治理、安全、运营和优化企业AI模型的平台，属于基础设施中的可观测性与评估类别，具体为AI可观测性与治理。证据未限定特定行业，故覆盖所有行业。"
+    },
+    {
+      "event_id": "EV-2dea56b0e97c1685",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "compute_cloud_service",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "financial_services",
+        "healthcare_life_sciences",
+        "retail_ecommerce",
+        "manufacturing",
+        "media_entertainment",
+        "education",
+        "government_public_sector",
+        "energy_utilities",
+        "telecommunications",
+        "automotive_transportation",
+        "professional_services",
+        "construction_real_estate",
+        "food_hospitality",
+        "aerospace_defense",
+        "agriculture",
+        "logistics_supply_chain",
+        "legal_services"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司提供AI算力租赁与融资平台，帮助获取昂贵AI芯片，属于基础设施中的硬件与计算子类，具体为计算基础设施。证据未限定行业，故覆盖所有行业。"
     }
   ],
   "inputs": [
@@ -5380,6 +5472,31 @@
       "current_classification": {
         "product_form_id": "robotic_system",
         "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-4d2183d4275ea9cf",
+      "funding_insight_id": "FI-8b5de4eb26a85d23",
+      "company_name": "Actualyze AI",
+      "company_full_name": "Actualyze AI",
+      "website": "https://actualyze.ai",
+      "current_sector": "AI基础设施与治理",
+      "company_evidence_quotes": [
+        "Actualyze AI emerged from stealth today announcing Actualyze, the foundation for enterprise AI platform"
+      ],
+      "products": [
+        {
+          "name": "Actualyze",
+          "evidence_quotes": [
+            "The AI-native platform sits between an organization's people, applications, and agents, and every AI model the organization uses, giving enterprises one place to govern, secure, operate, and optimize AI.",
+            "The platform is organized around four pillars: Govern. Access, approvals, budgets, and spend policy for every team and every model, defined once and enforced on every call. Secure. Inference scanning, guardrails, and audit trails applied inline, so sensitive data is protected before it leaves the organization. Operate. Curate, stage, and deploy every model in the catalog, with visibility into what's running, where, and how it performs. Optimize. Virtual models route each request to the best eligible model by capability, cost, and quality, with automatic failover."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -7607,6 +7724,32 @@
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
         "market_category_id": "enterprise_applications"
+      }
+    },
+    {
+      "event_id": "EV-268e5c3d36e3ed28",
+      "funding_insight_id": "FI-3eff72e6864ffae1",
+      "company_name": "Foundational Industries",
+      "company_full_name": "Foundational Industries",
+      "website": "https://foundational.industries",
+      "current_sector": "AI驱动的自主制造",
+      "company_evidence_quotes": [
+        "Foundational Industries raised a $25 million seed led by BoxGroup and Zigg Ventures to build factories where AI runs the whole operation.",
+        "His startup, Foundational Industries, just raised a $25 million seed round, Fortune learned exclusively, to build factories where AI runs the whole operation rather than bolting automation onto an old assembly line."
+      ],
+      "products": [
+        {
+          "name": "定制数据中心机柜",
+          "evidence_quotes": [
+            "The first product line is custom data-center rack enclosures for developers, neoclouds, and chipmakers whose new AI silicon runs at different voltages.",
+            "Foundational Industries’ first product is custom rack enclosures for AI data center hardware, with customers targeted at data center developers, neoclouds, and chipmakers."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
       }
     },
     {
@@ -12088,6 +12231,34 @@
       ],
       "current_classification": {
         "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-2dea56b0e97c1685",
+      "funding_insight_id": "FI-c8c07c307d14fece",
+      "company_name": "Volta Infra Holdings Ltd.",
+      "company_full_name": "Volta Infra Holdings Ltd.",
+      "website": "",
+      "current_sector": "AI 云基础设施",
+      "company_evidence_quotes": [
+        "Volta Infra Holdings Ltd., a new artificial intelligence cloud company, has raised $300 million in venture funding",
+        "The startup was founded earlier this year by Ricard Boada and Sofia Gumuzio, two former executives from Brookfield Asset Management Ltd.'s infrastructure business."
+      ],
+      "products": [
+        {
+          "name": "AI 算力租赁与融资平台",
+          "evidence_quotes": [
+            "Volta's goal is to make it easier for top AI labs and smaller startups to pay for Nvidia's cutting-edge chips.",
+            "secured an additional $5 billion worth of financing to help a wider mix of technology companies gain access to costly AI chips."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Anthropic"
+      ],
+      "current_classification": {
+        "product_form_id": "compute_cloud_service",
         "market_category_id": "infrastructure_compute"
       }
     },

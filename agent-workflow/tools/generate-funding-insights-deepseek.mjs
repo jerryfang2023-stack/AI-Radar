@@ -292,6 +292,58 @@ function canonicalResearchProblems(payload, company, sources) {
   return problems;
 }
 
+function supplementalQuote(source, company, payload) {
+  const body = String(source?.body_clean || "");
+  const names = [company?.canonical_name, payload?.company?.full_name]
+    .map(clean)
+    .filter((value, index, list) => value && list.indexOf(value) === index);
+  const fundingSignal = /(?:funding|raised|raises|seed|series|venture funding|\$[\d,.]+|融资|筹集|募资)/iu;
+  const productSignal = /(?:AI|platform|product|service|cloud|compute|factory|agent|model|enterprise|manufacturing|数据中心|平台|产品|服务|工厂|算力)/iu;
+  for (const name of names) {
+    let from = 0;
+    while (from < body.length) {
+      const index = body.indexOf(name, from);
+      if (index < 0) break;
+      const start = Math.max(
+        body.lastIndexOf(".", index - 1),
+        body.lastIndexOf("!", index - 1),
+        body.lastIndexOf("?", index - 1),
+        body.lastIndexOf("\n", index - 1),
+      ) + 1;
+      const ends = [".", "!", "?", "\n"]
+        .map((marker) => body.indexOf(marker, index + name.length))
+        .filter((value) => value >= 0);
+      const end = ends.length ? Math.min(...ends) + 1 : Math.min(body.length, index + name.length + 360);
+      const quote = body.slice(start, end).trim();
+      if (quote.length >= 40 && quote.length <= 500 && fundingSignal.test(quote) && productSignal.test(quote)) {
+        return quote;
+      }
+      from = index + name.length;
+    }
+  }
+  return "";
+}
+
+function ensureSecondSourceEvidence(payload, company, sources) {
+  const cited = referencedSourceIds(payload);
+  if (cited.size >= 2) return payload;
+  for (const source of sources) {
+    if (!source?.source_id || cited.has(source.source_id)) continue;
+    const quote = supplementalQuote(source, company, payload);
+    if (!quote) continue;
+    payload.quotes = [
+      ...(payload.quotes || []),
+      {
+        speaker: source.publisher || "source",
+        quote,
+        evidence_refs: [{ source_id: source.source_id, quote }],
+      },
+    ];
+    return payload;
+  }
+  return payload;
+}
+
 function modelCorrectionProblem(problem = "") {
   if (problem === "physical_ai_product_form_mismatch") {
     return "physical_ai_product_form_mismatch:ai_device_must_choose_a_non_physical_market_category_and_its_valid_subcategory_application_hierarchy";
@@ -690,6 +742,7 @@ async function processEvent(bundle, event, entityIndex, entityDecisions) {
         acceptedPayload = sanitizeResearchPayload(payload, research.sources);
         ensureNamedCompanyEvidence(acceptedPayload, company, research.sources);
         ensureCanonicalFundingEvidence(acceptedPayload, bundle, event, research.sources);
+        ensureSecondSourceEvidence(acceptedPayload, company, research.sources);
         return [
           ...researchPayloadProblems(acceptedPayload, research.sources, directions.map((item) => item.id)),
           ...canonicalResearchProblems(acceptedPayload, company, research.sources),
@@ -699,6 +752,7 @@ async function processEvent(bundle, event, entityIndex, entityDecisions) {
     const payload = acceptedPayload || sanitizeResearchPayload(result.payload, research.sources);
     ensureNamedCompanyEvidence(payload, company, research.sources);
     ensureCanonicalFundingEvidence(payload, bundle, event, research.sources);
+    ensureSecondSourceEvidence(payload, company, research.sources);
     return {
       event_id: event.event_id,
       company_name: company.canonical_name,

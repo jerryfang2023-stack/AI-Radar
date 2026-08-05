@@ -370,10 +370,10 @@ async function normalize(feed, trackedSources) {
         .replace(/\s+/g, " ")
         .trim();
       const content = rawContent.length > 1200 ? `${rawContent.slice(0, 1199)}…` : rawContent;
-      // Translate content if substantive
+      // Translate any non-empty blog summary content so short items still satisfy the gate.
       let contentTranslation = "";
       let contentTranslationStatus = "unavailable";
-      if (content.length > 20) {
+      if (content.length > 0) {
         const translated = await translateOpinionText(content, {
           cache: translationCache,
           cacheKey: `blog:${item.id || item.url}`,

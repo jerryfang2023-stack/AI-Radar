@@ -54,6 +54,8 @@ if (vaultRoot) {
   }
 
   const markdown = [];
+  const assetPaths = new Set();
+  const assetNames = new Set();
   const stack = [vaultRoot];
   while (stack.length) {
     const current = stack.pop();
@@ -61,6 +63,11 @@ if (vaultRoot) {
       const file = path.join(current, entry.name);
       if (entry.isDirectory()) stack.push(file);
       else if (entry.isFile() && path.extname(entry.name).toLowerCase() === ".md") markdown.push(file);
+      else if (entry.isFile()) {
+        const relativeAssetPath = path.relative(vaultRoot, file).replaceAll("\\", "/").toLowerCase();
+        assetPaths.add(relativeAssetPath);
+        assetNames.add(path.basename(file).toLowerCase());
+      }
     }
   }
   const notePaths = new Set(markdown.map((file) => path.relative(vaultRoot, file).replaceAll("\\", "/").replace(/\.md$/u, "").toLowerCase()));
@@ -107,7 +114,16 @@ if (vaultRoot) {
       if (!raw || raw.includes("://")) continue;
       const normalized = raw.replaceAll("\\", "/").replace(/\.md$/u, "").toLowerCase();
       const fromSource = path.posix.join(sourceDir, raw).replace(/\.md$/u, "").toLowerCase();
-      if (notePaths.has(normalized) || notePaths.has(fromSource) || (!raw.includes("/") && noteNames.has(path.posix.basename(normalized)))) continue;
+      const normalizedAsset = raw.replaceAll("\\", "/").toLowerCase();
+      const sourceAsset = path.posix.join(sourceDir, raw).toLowerCase();
+      if (
+        notePaths.has(normalized)
+        || notePaths.has(fromSource)
+        || (!raw.includes("/") && noteNames.has(path.posix.basename(normalized)))
+        || assetPaths.has(normalizedAsset)
+        || assetPaths.has(sourceAsset)
+        || (!raw.includes("/") && assetNames.has(path.posix.basename(normalizedAsset)))
+      ) continue;
       problems.push(`${path.relative(vaultRoot, file)} has unresolved Wiki link: [[${match[1]}]]`);
     }
   }

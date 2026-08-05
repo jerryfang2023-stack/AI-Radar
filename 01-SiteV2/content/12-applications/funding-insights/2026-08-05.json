@@ -1,0 +1,1832 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.2",
+    "date": "2026-08-05",
+    "generated_at": "2026-08-05T04:13:36.757Z",
+    "trigger": "verified_funding_events_with_three_month_backfill",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
+    "counts": {
+      "funding_events": 3,
+      "auto_published": 3,
+      "blocked": 0,
+      "pending": 0,
+      "deduplicated": 0
+    },
+    "taxonomy_version": "TAG-V4.1"
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.2",
+      "funding_insight_id": "FI-c8c07c307d14fece",
+      "triggered_by_event_id": "EV-2dea56b0e97c1685",
+      "as_of_date": "2026-08-05",
+      "company": {
+        "entity_id": "EN-6fae0bc5a895aab8",
+        "name": "Volta Infra Holdings Ltd.",
+        "full_name": "Volta Infra Holdings Ltd.",
+        "website": "",
+        "summary": "Volta Infra 是一家新成立的人工智能云公司，由前 Brookfield 基础设施高管创立，旨在通过提供融资方案和算力租赁，帮助顶级 AI 实验室和中小型初创公司更容易获取英伟达高端芯片。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "Ricard Boada",
+            "role": "首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-626c5a782380b54a",
+                "quote": "The startup was founded earlier this year by Ricard Boada and Sofia Gumuzio, two former executives from Brookfield Asset Management Ltd.'s infrastructure business.",
+                "source_content_hash": "2aa5e56807710b6f",
+                "quote_hash": "2e0909483bd2d630cff3d33caf34694f841aa9ddd93f3007c6bd52682176974e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sofia Gumuzio",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-626c5a782380b54a",
+                "quote": "The startup was founded earlier this year by Ricard Boada and Sofia Gumuzio, two former executives from Brookfield Asset Management Ltd.'s infrastructure business.",
+                "source_content_hash": "2aa5e56807710b6f",
+                "quote_hash": "2e0909483bd2d630cff3d33caf34694f841aa9ddd93f3007c6bd52682176974e"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-21a1d5a2dbf2a3b1",
+            "quote": "Volta Infra Holdings Ltd., a new artificial intelligence cloud company, has raised $300 million in venture funding",
+            "source_content_hash": "2773ebb523149905",
+            "quote_hash": "df3040e87945742640e8675b2b842e886c5e676348beefeac810a0a19493900d"
+          },
+          {
+            "source_id": "FISRC-626c5a782380b54a",
+            "quote": "The startup was founded earlier this year by Ricard Boada and Sofia Gumuzio, two former executives from Brookfield Asset Management Ltd.'s infrastructure business.",
+            "source_content_hash": "2aa5e56807710b6f",
+            "quote_hash": "2e0909483bd2d630cff3d33caf34694f841aa9ddd93f3007c6bd52682176974e"
+          }
+        ]
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "$300 million",
+        "total_raised": "$300 million",
+        "announced_at": "2026-08-04",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Andreessen Horowitz",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-21a1d5a2dbf2a3b1",
+                "quote": "The funding, set to be announced Tuesday, values Volta at $2.4 billion, and was co-led by Andreessen Horowitz and Altimeter Capital.",
+                "source_content_hash": "2773ebb523149905",
+                "quote_hash": "cfb6133020b31b97ad4332a99cf66d2e36c252d19d373bfe6694a8725ab94037"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Altimeter Capital",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-21a1d5a2dbf2a3b1",
+                "quote": "The funding, set to be announced Tuesday, values Volta at $2.4 billion, and was co-led by Andreessen Horowitz and Altimeter Capital.",
+                "source_content_hash": "2773ebb523149905",
+                "quote_hash": "cfb6133020b31b97ad4332a99cf66d2e36c252d19d373bfe6694a8725ab94037"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Nvidia Corp.",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-21a1d5a2dbf2a3b1",
+                "quote": "Nvidia Corp. and Michael Dell also participated.",
+                "source_content_hash": "2773ebb523149905",
+                "quote_hash": "55a6bf4acbf7e7f73e4201cda2e593db364427212733be824da7eda3a86e3039"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Michael Dell",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-21a1d5a2dbf2a3b1",
+                "quote": "Nvidia Corp. and Michael Dell also participated.",
+                "source_content_hash": "2773ebb523149905",
+                "quote_hash": "55a6bf4acbf7e7f73e4201cda2e593db364427212733be824da7eda3a86e3039"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Azora",
+            "role": "早期轮次参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-21a1d5a2dbf2a3b1",
+                "quote": "Azora, the asset-management firm providing the financing pool from a mix of banks for Volta customers, invested in an earlier round.",
+                "source_content_hash": "2773ebb523149905",
+                "quote_hash": "4ffa56c9b2d6116267bb88a5a57f1428ad79d701556c668e1dae8e5f8e8ebb0c"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-21a1d5a2dbf2a3b1",
+            "quote": "Volta Infra Holdings Ltd., a new artificial intelligence cloud company, has raised $300 million in venture funding",
+            "source_content_hash": "2773ebb523149905",
+            "quote_hash": "df3040e87945742640e8675b2b842e886c5e676348beefeac810a0a19493900d"
+          },
+          {
+            "source_id": "FISRC-21a1d5a2dbf2a3b1",
+            "quote": "Volta Infra Holdings Ltd., a new artificial intelligence cloud company, has raised $300 million in venture funding and secured an additional $5 billion worth of financing to help a wider mix of technology companies gain access to costly AI chips. The funding, set to be announced Tuesday, values Volta at $2.4 billion, and was co-led by Andreessen Horowitz and Altimeter Capital.",
+            "source_content_hash": "2773ebb523149905",
+            "quote_hash": "7c81936ba9efc8d69b572c8e4be10c5e55641262e3e1e5551b2aacaaa31a7ab5"
+          },
+          {
+            "source_id": "FISRC-39926d3834cb7ba5",
+            "quote": "Volta Infra Holdings Ltd. completed $300 million in Series A funding today (August 4), valuing the AI cloud startup at $2.4 billion.",
+            "source_content_hash": "a0c37bce694cad66",
+            "quote_hash": "a06450daa5fc512fb38cfe065a10fd6666722f80ef98918dd3684bb95bc9b3b1"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-2dea56b0e97c1685",
+            "round_original": "A轮",
+            "amount": "$300 million",
+            "announced_at": "2026-08-04",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-21a1d5a2dbf2a3b1",
+                "quote": "Volta Infra Holdings Ltd., a new artificial intelligence cloud company, has raised $300 million in venture funding",
+                "source_content_hash": "2773ebb523149905",
+                "quote_hash": "df3040e87945742640e8675b2b842e886c5e676348beefeac810a0a19493900d"
+              },
+              {
+                "source_id": "FISRC-21a1d5a2dbf2a3b1",
+                "quote": "Volta Infra Holdings Ltd., a new artificial intelligence cloud company, has raised $300 million in venture funding and secured an additional $5 billion worth of financing to help a wider mix of technology companies gain access to costly AI chips. The funding, set to be announced Tuesday, values Volta at $2.4 billion, and was co-led by Andreessen Horowitz and Altimeter Capital.",
+                "source_content_hash": "2773ebb523149905",
+                "quote_hash": "7c81936ba9efc8d69b572c8e4be10c5e55641262e3e1e5551b2aacaaa31a7ab5"
+              },
+              {
+                "source_id": "FISRC-39926d3834cb7ba5",
+                "quote": "Volta Infra Holdings Ltd. completed $300 million in Series A funding today (August 4), valuing the AI cloud startup at $2.4 billion.",
+                "source_content_hash": "a0c37bce694cad66",
+                "quote_hash": "a06450daa5fc512fb38cfe065a10fd6666722f80ef98918dd3684bb95bc9b3b1"
+              }
+            ]
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "AI 算力租赁与融资平台",
+          "description": "Volta 提供 AI 算力租赁服务，并帮助客户为昂贵的芯片采购提供融资方案，使顶级 AI 实验室和中小型初创公司都能负担英伟达的尖端芯片。",
+          "target_customers": "顶级 AI 实验室和中小型 AI 初创公司",
+          "features": [
+            "AI 算力租赁",
+            "客户芯片采购融资",
+            "50 亿美元客户融资池"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-626c5a782380b54a",
+              "quote": "Volta's goal is to make it easier for top AI labs and smaller startups to pay for Nvidia's cutting-edge chips.",
+              "source_content_hash": "2aa5e56807710b6f",
+              "quote_hash": "446bd17a959a578b5b10bed890f6044758c39b63de5b8be1388977cd283af49a"
+            },
+            {
+              "source_id": "FISRC-21a1d5a2dbf2a3b1",
+              "quote": "secured an additional $5 billion worth of financing to help a wider mix of technology companies gain access to costly AI chips.",
+              "source_content_hash": "2773ebb523149905",
+              "quote_hash": "960d6b24e9fe2f39daad3abdfcfdbec800491a2fa459beac8e8518d12a56e584"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Anthropic",
+          "industry": "人工智能",
+          "use_case": "为 AI 模型训练和推理采购大规模云计算容量",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8611bde54a74c55e",
+              "quote": "Anthropic PBC has struck a $10 billion deal for computing capacity from a months-old infrastructure startup, according to people familiar with the matter",
+              "source_content_hash": "ec29462ff458c79d",
+              "quote_hash": "ed5beca07853f7fe8363446ff98f9e46278d66997db52fad696199e6ad4fab6e"
+            }
+          ],
+          "entity_id": "EN-c70eca6b0f88f44d"
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "CoreWeave",
+          "product": "GPU 加速云服务",
+          "scenario": "为 AI 客户提供大规模 GPU 算力",
+          "target_customer": "AI 实验室和科技公司",
+          "funding_summary": "",
+          "core_difference": "CoreWeave 曾利用客户信用评级为英伟达芯片采购融资，而 Volta 通过引入 Azora 提供的 50 亿美元非稀释性融资池，为客户提供芯片采购融资方案。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-626c5a782380b54a",
+              "quote": "CoreWeave Inc. has financed Nvidia chip purchases using various tactics, including leveraging the strong credit ratings of customers like Meta Platforms Inc.",
+              "source_content_hash": "2aa5e56807710b6f",
+              "quote_hash": "a05e61bcbaf3757006af4bfe3830a5de529f5db420828c6d4dd26edf76bca0b0"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Broadcom",
+          "product": "定制 AI 芯片与基础设施服务",
+          "scenario": "与 Apollo、Blackstone 合作为 AI 公司提供芯片融资",
+          "target_customer": "AI 开发商（如 Anthropic）",
+          "funding_summary": "",
+          "core_difference": "Broadcom 与 Apollo、Blackstone 合作提供芯片融资，而 Volta 自身作为云基础设施提供商，直接向客户提供算力租赁和融资，并已获得 10 亿美元级别的算力供应合同。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-626c5a782380b54a",
+              "quote": "Broadcom Inc. is working with Apollo Global Management Inc. and Blackstone Inc. to help fund chips for Anthropic PBC.",
+              "source_content_hash": "2aa5e56807710b6f",
+              "quote_hash": "ba418d132a2faa0322bfad75889676bf8c579bf39b1a8d693e2f403a3c2e3f59"
+            }
+          ],
+          "entity_id": "EN-373ac021a2c0bb2c"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资估值",
+          "value": "24 亿美元",
+          "observed_at": "2026-08-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21a1d5a2dbf2a3b1",
+              "quote": "values Volta at $2.4 billion",
+              "source_content_hash": "2773ebb523149905",
+              "quote_hash": "c65ab3f5949f920fc6bd87eb1f730bd884673aa2b7776656ff98ad3f2197227e"
+            }
+          ]
+        },
+        {
+          "label": "客户融资池规模",
+          "value": "50 亿美元",
+          "observed_at": "2026-08-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21a1d5a2dbf2a3b1",
+              "quote": "secured an additional $5 billion worth of financing",
+              "source_content_hash": "2773ebb523149905",
+              "quote_hash": "c3faa8ff0b86d583adc9aeff49b8a1c58a3a5753c7dfa2c5b30be96e03791801"
+            }
+          ]
+        },
+        {
+          "label": "最大单笔算力供应合同",
+          "value": "100 亿美元（6 年期）",
+          "observed_at": "2026-08-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8611bde54a74c55e",
+              "quote": "Anthropic PBC has struck a $10 billion deal for computing capacity",
+              "source_content_hash": "ec29462ff458c79d",
+              "quote_hash": "ffcf08cc02b8a90430b18c60aca1aff09220458ade6301ddb67e5a042c2b56a4"
+            }
+          ]
+        },
+        {
+          "label": "挪威数据中心容量",
+          "value": "133 兆瓦",
+          "observed_at": "2026-08-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8611bde54a74c55e",
+              "quote": "The data center site in Norway offers 133 megawatts of capacity",
+              "source_content_hash": "ec29462ff458c79d",
+              "quote_hash": "05aad37e20ebea7f0e66d30256cec7e9fcb454462f194fc9cb9dbf2d506a1d8a"
+            }
+          ]
+        },
+        {
+          "label": "已锁定近中期电力容量",
+          "value": "1 吉瓦",
+          "observed_at": "2026-08-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-626c5a782380b54a",
+              "quote": "Volta said it has secured 1 gigawatt of power for data centers in the near term.",
+              "source_content_hash": "2aa5e56807710b6f",
+              "quote_hash": "0f0ddbd560809135f9bca66a00fb90c96a9cf6eabafd3a41688abe13f272671a"
+            }
+          ]
+        },
+        {
+          "label": "2030 年容量目标",
+          "value": "数吉瓦",
+          "observed_at": "2026-08-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-626c5a782380b54a",
+              "quote": "It's aiming to deploy multiple gigawatts of capacity by 2030.",
+              "source_content_hash": "2aa5e56807710b6f",
+              "quote_hash": "2469fadc382c36d284447f3b6958078fef7d8ccc58b0a41c5d6f6bb2832f45ec"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Altimeter Capital",
+            "speaker": "Jamin Ball",
+            "speaker_role": "合伙人",
+            "rationale": "Altimeter 认为 Volta 与银行家以及戴尔、英伟达等科技公司的关系，将使其在 AI 淘金热中脱颖而出。",
+            "quote": "Jamin Ball, a partner at Altimeter, said Volta's relationships with bankers and tech firms like Dell and Nvidia will help set it apart from other companies trying to cash in on the AI gold rush.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-626c5a782380b54a",
+                "quote": "Jamin Ball, a partner at Altimeter, said Volta's relationships with bankers and tech firms like Dell and Nvidia will help set it apart from other companies trying to cash in on the AI gold rush.",
+                "source_content_hash": "2aa5e56807710b6f",
+                "quote_hash": "1ce45ee4cbc8acc4317683b142dbc535d953e0b4fe49e175ae0b0be6ab081d48"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是 AI 算力基础设施的“地主化”趋势：前沿 AI 实验室无法自建多吉瓦级算力，必须向专业基础设施提供商预购容量。Volta 以 24 亿美元估值获得 3000 万美元融资，同时手握 100 亿美元客户合同和 50 亿美元融资池，其 4:1 的合同估值比验证了“算力房东”模式的可行性。投资机构的判断高度依赖创始人在 Brookfield 的基础设施融资经验、已锁定的 1 吉瓦电力容量以及与英伟达、戴尔的深度合作关系。",
+        "validated_signals": [
+          "已获得来自 Anthropic 的 100 亿美元、6 年期算力供应合同",
+          "已锁定 1 吉瓦近中期电力容量，并计划到 2030 年部署数吉瓦",
+          "创始团队来自 Brookfield 基础设施部门，具备大型项目融资和电力协议经验",
+          "与 Bitdeer 签订 16 年托管租约，初始合同收入约 47 亿美元",
+          "获得英伟达和戴尔作为技术合作伙伴和投资方"
+        ],
+        "risks": [
+          "AI 算力需求若不及预期，可能导致客户违约或融资池承压，形成循环依赖风险",
+          "行业竞争激烈且资本密集，Altimeter 合伙人警告将出现大量淘汰和整合",
+          "公司成立仅数月，运营历史极短，大规模交付能力尚未验证"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "compute_cloud_service",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "computing_infrastructure",
+        "use_case_ids": [
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "financial_services",
+          "healthcare_life_sciences",
+          "retail_ecommerce",
+          "manufacturing",
+          "media_entertainment",
+          "education",
+          "government_public_sector",
+          "energy_utilities",
+          "telecommunications",
+          "automotive_transportation",
+          "professional_services",
+          "construction_real_estate",
+          "food_hospitality",
+          "aerospace_defense",
+          "agriculture",
+          "logistics_supply_chain",
+          "legal_services"
+        ],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ],
+        "sector": "AI 云基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 AI 算力基础设施的“地主化”趋势：前沿 AI 实验室无法自建多吉瓦级算力，必须向专业基础设施提供商预购容量。Volta 以 24 亿美元估值获得 3000 万美元融资，同时手握 100 亿美元客户合同和 50 亿美元融资池，其 4:1 的合同估值比验证了“算力房东”模式的可行性。投资机构的判断高度依赖创始人在 Brookfield 的基础设施融资经验、已锁定的 1 吉瓦电力容量以及与英伟达、戴尔的深度合作关系。",
+          "evidence_signals": [
+            "已获得来自 Anthropic 的 100 亿美元、6 年期算力供应合同",
+            "已锁定 1 吉瓦近中期电力容量，并计划到 2030 年部署数吉瓦",
+            "创始团队来自 Brookfield 基础设施部门，具备大型项目融资和电力协议经验",
+            "与 Bitdeer 签订 16 年托管租约，初始合同收入约 47 亿美元",
+            "获得英伟达和戴尔作为技术合作伙伴和投资方"
+          ],
+          "risks": [
+            "AI 算力需求若不及预期，可能导致客户违约或融资池承压，形成循环依赖风险",
+            "行业竞争激烈且资本密集，Altimeter 合伙人警告将出现大量淘汰和整合",
+            "公司成立仅数月，运营历史极短，大规模交付能力尚未验证"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI 算力租赁与融资平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Ricard Boada",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Sofia Gumuzio",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Andreessen Horowitz",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Altimeter Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Nvidia Corp.",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Michael Dell",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Azora",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Anthropic",
+          "canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_name": "Anthropic"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "CoreWeave",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Broadcom",
+          "canonical_entity_id": "EN-373ac021a2c0bb2c",
+          "canonical_name": "Broadcom"
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-2dea56b0e97c1685",
+          "date": "2026-08-04",
+          "title": "Nvidia、Dell 支持 AI 云初创公司 Volta，估值 24 亿美元",
+          "amount": "$300 million",
+          "source_refs": [
+            "SA-e978005ea97ab0bc"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-21a1d5a2dbf2a3b1",
+          "source_url": "https://news.bloomberglaw.com/artificial-intelligence/nvidia-dell-back-ai-cloud-startup-volta-at-2-4-billion-value",
+          "title": "Nvidia、Dell 支持 AI 云初创公司 Volta，估值 24 亿美元",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-05T00:21:19.385Z",
+          "content_hash": "2773ebb523149905",
+          "source_artifact_id": "SA-e978005ea97ab0bc",
+          "raw_id": "RAW-1dc7dfb3ccf22532"
+        },
+        {
+          "source_id": "FISRC-39926d3834cb7ba5",
+          "source_url": "https://www.gate.com/news/detail/volta-infra-completes-300m-series-a-funding-at-24b-valuation-led-by-a16z-23201771",
+          "title": "Volta Infra Completes $300M Series A Funding at $2.4B Valuation, Led by a16z and Altimeter | Gate News",
+          "publisher": "gate.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-08-05T04:11:00.869Z",
+          "content_hash": "a0c37bce694cad66",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-8611bde54a74c55e",
+          "source_url": "https://economictimes.indiatimes.com/tech/technology/anthropic-inks-10-billion-computing-deal-with-new-cloud-startup-volta-infra/articleshow/132860624.cms",
+          "title": "Anthropic inks $10 billion computing deal with new cloud startup Volta Infra - The Economic Times",
+          "publisher": "economictimes.indiatimes.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-08-05T04:11:12.027Z",
+          "content_hash": "ec29462ff458c79d",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-626c5a782380b54a",
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/nvidia-dell-back-ai-cloud-110004506.html",
+          "title": "Nvidia, Dell Back AI Cloud Startup Volta at $2.4 Billion Value",
+          "publisher": "finance.yahoo.com",
+          "source_class": "independent",
+          "capture_method": "tavily_captured_content",
+          "captured_at": "2026-08-05T04:11:24.785Z",
+          "content_hash": "2aa5e56807710b6f",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.6",
+        "generated_at": "2026-08-05T04:13:36.728Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-2dea56b0e97c1685",
+          "confidence": 0.9,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-05T04:13:36.728Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "AI 算力租赁与融资平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Ricard Boada",
+            "Sofia Gumuzio"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-2dea56b0e97c1685"
+      ],
+      "aggregation": {
+        "key": "EN-6fae0bc5a895aab8|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.2",
+      "funding_insight_id": "FI-8b5de4eb26a85d23",
+      "triggered_by_event_id": "EV-4d2183d4275ea9cf",
+      "as_of_date": "2026-08-05",
+      "company": {
+        "entity_id": "EN-e22daec9e0564fba",
+        "name": "Actualyze AI",
+        "full_name": "Actualyze AI",
+        "website": "https://actualyze.ai",
+        "summary": "Actualyze AI 为企业提供一站式AI请求治理平台，位于组织的人员、应用、智能体与所用AI模型之间，实现对所有AI请求的治理、安全、运营和优化。",
+        "headquarters": "Pasadena, CA",
+        "founders": [
+          {
+            "name": "Rafi Khardalian",
+            "role": "CEO & Co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7d5911b83ac40a4d",
+                "quote": "Rafi Khardalian, CEO and co-founder of Actualyze AI",
+                "source_content_hash": "8362f1a7374b30c9",
+                "quote_hash": "c418277d2e1c60e495d6d77b8212a7fc33383087f4b5541d7091f4f5d10a6b71"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sean Lynch",
+            "role": "CTO & Co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7d5911b83ac40a4d",
+                "quote": "Sean Lynch, CTO and co-founder of Actualyze AI",
+                "source_content_hash": "8362f1a7374b30c9",
+                "quote_hash": "60ace69482a5bcf067141b24a906f0a5500bdcd4dafdef3e1069365e06e59e6c"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-7d5911b83ac40a4d",
+            "quote": "Actualyze AI emerged from stealth today announcing Actualyze, the foundation for enterprise AI platform",
+            "source_content_hash": "8362f1a7374b30c9",
+            "quote_hash": "579428dc11c647efe3911d5c6ea2f557494ecaec1f0572d03498d122065ae19e"
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$7 million",
+        "total_raised": "$7 million",
+        "announced_at": "2026-08-03",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Storm Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7d5911b83ac40a4d",
+                "quote": "backed with $7 million in seed funding from Storm Ventures, Canaan Partners, Morado Ventures, and Jerry Yang's AME Cloud Ventures",
+                "source_content_hash": "8362f1a7374b30c9",
+                "quote_hash": "69cbee4b0d08b8459255ff8e36ce3e5276eb038abeb04a605510eef96a35dad6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Canaan Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7d5911b83ac40a4d",
+                "quote": "backed with $7 million in seed funding from Storm Ventures, Canaan Partners, Morado Ventures, and Jerry Yang's AME Cloud Ventures",
+                "source_content_hash": "8362f1a7374b30c9",
+                "quote_hash": "69cbee4b0d08b8459255ff8e36ce3e5276eb038abeb04a605510eef96a35dad6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Morado Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7d5911b83ac40a4d",
+                "quote": "backed with $7 million in seed funding from Storm Ventures, Canaan Partners, Morado Ventures, and Jerry Yang's AME Cloud Ventures",
+                "source_content_hash": "8362f1a7374b30c9",
+                "quote_hash": "69cbee4b0d08b8459255ff8e36ce3e5276eb038abeb04a605510eef96a35dad6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "AME Cloud Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7d5911b83ac40a4d",
+                "quote": "backed with $7 million in seed funding from Storm Ventures, Canaan Partners, Morado Ventures, and Jerry Yang's AME Cloud Ventures",
+                "source_content_hash": "8362f1a7374b30c9",
+                "quote_hash": "69cbee4b0d08b8459255ff8e36ce3e5276eb038abeb04a605510eef96a35dad6"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-7d5911b83ac40a4d",
+            "quote": "Actualyze AI emerged from stealth today announcing Actualyze, the foundation for enterprise AI platform, backed with $7 million in seed funding from Storm Ventures, Canaan Partners, Morado Ventures, and Jerry Yang's AME Cloud Ventures.",
+            "source_content_hash": "8362f1a7374b30c9",
+            "quote_hash": "4165348daaae2d8a7d550e6ba5061dc512fc1e4261641e6556900006d2f74797"
+          },
+          {
+            "source_id": "FISRC-7d5911b83ac40a4d",
+            "quote": "backed with $7 million in seed funding from Storm Ventures, Canaan Partners, Morado Ventures, and Jerry Yang's AME Cloud Ventures",
+            "source_content_hash": "8362f1a7374b30c9",
+            "quote_hash": "69cbee4b0d08b8459255ff8e36ce3e5276eb038abeb04a605510eef96a35dad6"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-4d2183d4275ea9cf",
+            "round_original": "种子轮",
+            "amount": "$7 million",
+            "announced_at": "2026-08-03",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7d5911b83ac40a4d",
+                "quote": "Actualyze AI emerged from stealth today announcing Actualyze, the foundation for enterprise AI platform, backed with $7 million in seed funding from Storm Ventures, Canaan Partners, Morado Ventures, and Jerry Yang's AME Cloud Ventures.",
+                "source_content_hash": "8362f1a7374b30c9",
+                "quote_hash": "4165348daaae2d8a7d550e6ba5061dc512fc1e4261641e6556900006d2f74797"
+              },
+              {
+                "source_id": "FISRC-7d5911b83ac40a4d",
+                "quote": "backed with $7 million in seed funding from Storm Ventures, Canaan Partners, Morado Ventures, and Jerry Yang's AME Cloud Ventures",
+                "source_content_hash": "8362f1a7374b30c9",
+                "quote_hash": "69cbee4b0d08b8459255ff8e36ce3e5276eb038abeb04a605510eef96a35dad6"
+              }
+            ]
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Actualyze",
+          "description": "一个AI原生平台，位于组织的人员、应用、智能体与所用AI模型之间，提供治理、安全、运营和优化的一站式解决方案。平台围绕治理、安全、运营、优化四大支柱构建，集成OpenAI兼容模型、AI客户端工具和第三方平台。",
+          "target_customers": "大型企业的平台工程、安全与合规、财务与FinOps团队",
+          "features": [
+            "治理：为每个团队和模型定义访问、审批、预算和支出策略，并在每次调用时强制执行",
+            "安全：内联推理扫描、护栏和审计追踪，在数据离开组织前保护敏感数据",
+            "运营：管理模型目录，部署并监控所有模型的运行状态和性能",
+            "优化：虚拟模型根据能力、成本和质量将每个请求路由到最佳模型，支持自动故障转移",
+            "集成：支持任何OpenAI兼容模型、自托管模型（Ollama/vLLM）、身份提供商（Okta、Entra ID等）和数据系统"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7d5911b83ac40a4d",
+              "quote": "The AI-native platform sits between an organization's people, applications, and agents, and every AI model the organization uses, giving enterprises one place to govern, secure, operate, and optimize AI.",
+              "source_content_hash": "8362f1a7374b30c9",
+              "quote_hash": "c292395329a4c82dfdd312303e7363338218251e3c8680f9bca6ab595753545d"
+            },
+            {
+              "source_id": "FISRC-7d5911b83ac40a4d",
+              "quote": "The platform is organized around four pillars: Govern. Access, approvals, budgets, and spend policy for every team and every model, defined once and enforced on every call. Secure. Inference scanning, guardrails, and audit trails applied inline, so sensitive data is protected before it leaves the organization. Operate. Curate, stage, and deploy every model in the catalog, with visibility into what's running, where, and how it performs. Optimize. Virtual models route each request to the best eligible model by capability, cost, and quality, with automatic failover.",
+              "source_content_hash": "8362f1a7374b30c9",
+              "quote_hash": "3c60161cdedd1f34bc46fda4f5ef4f449437dc17d3648d339e485c84d3acee5c"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [],
+      "quotes": [
+        {
+          "speaker": "actualyze.ai",
+          "quote": "ai Auto Light Dark Terms of Use Privacy Policy All insights Enterprise AI The Foundation for Enterprise AI Is Here We're introducing Actualyze AI, the foundation for enterprise AI, and announcing our $7M seed round.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e699bac6cad1940",
+              "quote": "ai Auto Light Dark Terms of Use Privacy Policy All insights Enterprise AI The Foundation for Enterprise AI Is Here We're introducing Actualyze AI, the foundation for enterprise AI, and announcing our $7M seed round.",
+              "source_content_hash": "6c2287947b4901c9",
+              "quote_hash": "cfc12a26a565689a4efd20368e6f3a4568d040f9d191456c1672f48f1caf80d4"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是企业AI采用速度远超治理能力导致的“影子AI”和成本失控问题。Actualyze通过将身份、策略、预算和审计嵌入每一次模型调用的必经路径，试图成为企业AI栈中缺失的治理层。已验证信号包括：创始团队曾成功构建并出售大规模基础设施公司（Metacloud被Cisco收购），具备构建关键路径系统的经验；平台已进入早期访问设计合作伙伴计划，表明产品已具备初步可用性。但种子轮阶段缺乏公开的客户名单、收入数据和规模化部署验证，产品市场匹配度尚未被证实。",
+        "validated_signals": [
+          "创始团队曾创立Metacloud并被Cisco收购，具备构建企业级关键路径基础设施的成熟经验",
+          "平台已进入Early Access Design Partner Program，产品已具备初步可用性",
+          "平台架构明确解决了企业AI治理中的身份、预算归属、数据泄露和模型路由等具体痛点"
+        ],
+        "risks": [
+          "产品处于极早期阶段，仅通过设计合作伙伴计划提供早期访问，缺乏规模化生产部署的验证",
+          "企业AI治理赛道可能面临云平台（AWS、Azure、GCP）和模型提供商原生治理功能的挤压"
+        ],
+        "related_direction_id": "DIR-20260725-01",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "observability_evaluation",
+        "market_application_id": "ai_observability_governance",
+        "use_case_ids": [
+          "security_operations",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "financial_services",
+          "healthcare_life_sciences",
+          "retail_ecommerce",
+          "manufacturing",
+          "media_entertainment",
+          "education",
+          "government_public_sector",
+          "energy_utilities",
+          "telecommunications",
+          "automotive_transportation",
+          "professional_services",
+          "construction_real_estate",
+          "food_hospitality",
+          "aerospace_defense",
+          "agriculture",
+          "logistics_supply_chain",
+          "legal_services"
+        ],
+        "target_user_ids": [
+          "business_user",
+          "developer"
+        ],
+        "sector": "AI基础设施与治理",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是企业AI采用速度远超治理能力导致的“影子AI”和成本失控问题。Actualyze通过将身份、策略、预算和审计嵌入每一次模型调用的必经路径，试图成为企业AI栈中缺失的治理层。已验证信号包括：创始团队曾成功构建并出售大规模基础设施公司（Metacloud被Cisco收购），具备构建关键路径系统的经验；平台已进入早期访问设计合作伙伴计划，表明产品已具备初步可用性。但种子轮阶段缺乏公开的客户名单、收入数据和规模化部署验证，产品市场匹配度尚未被证实。",
+          "evidence_signals": [
+            "创始团队曾创立Metacloud并被Cisco收购，具备构建企业级关键路径基础设施的成熟经验",
+            "平台已进入Early Access Design Partner Program，产品已具备初步可用性",
+            "平台架构明确解决了企业AI治理中的身份、预算归属、数据泄露和模型路由等具体痛点"
+          ],
+          "risks": [
+            "产品处于极早期阶段，仅通过设计合作伙伴计划提供早期访问，缺乏规模化生产部署的验证",
+            "企业AI治理赛道可能面临云平台（AWS、Azure、GCP）和模型提供商原生治理功能的挤压"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Actualyze",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Rafi Khardalian",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Sean Lynch",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Storm Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Canaan Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Morado Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "AME Cloud Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-4d2183d4275ea9cf",
+          "date": "2026-08-03",
+          "title": "Actualyze AI 携700万美元种子轮融资亮相，为企业提供一站式AI请求平台",
+          "amount": "$7 million",
+          "source_refs": [
+            "SA-c96f018827a81afc"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-7d5911b83ac40a4d",
+          "source_url": "https://www.prnewswire.com/news-releases/actualyze-ai-emerges-from-stealth-with-7m-seed-round-to-deliver-enterprises-one-platform-for-every-ai-request-302840716.html",
+          "title": "Actualyze AI 携700万美元种子轮融资亮相，为企业提供一站式AI请求平台",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-05T00:20:31.437Z",
+          "content_hash": "8362f1a7374b30c9",
+          "source_artifact_id": "SA-c96f018827a81afc",
+          "raw_id": "RAW-a58e8dbe78e900bb"
+        },
+        {
+          "source_id": "FISRC-4e699bac6cad1940",
+          "source_url": "https://actualyze.ai/insights/the-foundation-for-enterprise-ai-is-here",
+          "title": "The Foundation for Enterprise AI Is Here | Actualyze AI Blog",
+          "publisher": "actualyze.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-05T04:09:03.880Z",
+          "content_hash": "6c2287947b4901c9",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.6",
+        "generated_at": "2026-08-05T04:09:54.681Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-4d2183d4275ea9cf",
+          "confidence": 0.95,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-05T04:09:54.681Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Actualyze"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Rafi Khardalian",
+            "Sean Lynch"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-4d2183d4275ea9cf"
+      ],
+      "aggregation": {
+        "key": "EN-e22daec9e0564fba|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.2",
+      "funding_insight_id": "FI-3eff72e6864ffae1",
+      "triggered_by_event_id": "EV-268e5c3d36e3ed28",
+      "as_of_date": "2026-08-05",
+      "company": {
+        "entity_id": "EN-5f5ed85925074c92",
+        "name": "Foundational Industries",
+        "full_name": "Foundational Industries",
+        "website": "https://foundational.industries",
+        "summary": "Foundational Industries 是一家美国初创公司，旨在通过构建由 AI 完全运营的工厂来革新制造业，而非在传统装配线上加装自动化设备。其首个产品线是为数据中心开发者、新云服务商和芯片制造商提供的定制机柜。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "Jonathan Winer",
+            "role": "CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6c7009261aad2612",
+                "quote": "Foundational Industries CEO Jonathan Winer spent 25 years at Alphabet's Sidewalk Infrastructure Partners.",
+                "source_content_hash": "a85010055187de05",
+                "quote_hash": "7347b6cf9cb576570fe2aa53f501810c804be8c5b77a920c05606f3934ef1c5e"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e6ee0cd472bfb792",
+            "quote": "Foundational Industries raised a $25 million seed led by BoxGroup and Zigg Ventures to build factories where AI runs the whole operation.",
+            "source_content_hash": "ad03bbee3088b0fc",
+            "quote_hash": "b1ccc2bf06174696245991dafff58b6b0c3b00f365a021b27e395d329510a370"
+          },
+          {
+            "source_id": "FISRC-6c7009261aad2612",
+            "quote": "His startup, Foundational Industries, just raised a $25 million seed round, Fortune learned exclusively, to build factories where AI runs the whole operation rather than bolting automation onto an old assembly line.",
+            "source_content_hash": "a85010055187de05",
+            "quote_hash": "1d5b9b46e234a9a9407a1666a68f38afb2864fe109b51576385e1f96e806b998"
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$25 million",
+        "total_raised": "$25 million",
+        "announced_at": "2026-08-01",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "BoxGroup",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e6ee0cd472bfb792",
+                "quote": "The round was led by BoxGroup and Zigg Ventures",
+                "source_content_hash": "ad03bbee3088b0fc",
+                "quote_hash": "603f65c4354e79487ebff6657abc1acb3c8db7111baaf6bb4c0e4eab80efc8a1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Zigg Ventures",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e6ee0cd472bfb792",
+                "quote": "The round was led by BoxGroup and Zigg Ventures",
+                "source_content_hash": "ad03bbee3088b0fc",
+                "quote_hash": "603f65c4354e79487ebff6657abc1acb3c8db7111baaf6bb4c0e4eab80efc8a1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Abstract Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e6ee0cd472bfb792",
+                "quote": "with Abstract Ventures, Adverb Ventures, Buckley Ventures, and Offline Ventures participating.",
+                "source_content_hash": "ad03bbee3088b0fc",
+                "quote_hash": "2ce0e9be3cf5e9aed5bc990ee0d49022addc2585f7073b8da73d3d987b45a249"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Adverb Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e6ee0cd472bfb792",
+                "quote": "with Abstract Ventures, Adverb Ventures, Buckley Ventures, and Offline Ventures participating.",
+                "source_content_hash": "ad03bbee3088b0fc",
+                "quote_hash": "2ce0e9be3cf5e9aed5bc990ee0d49022addc2585f7073b8da73d3d987b45a249"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Buckley Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e6ee0cd472bfb792",
+                "quote": "with Abstract Ventures, Adverb Ventures, Buckley Ventures, and Offline Ventures participating.",
+                "source_content_hash": "ad03bbee3088b0fc",
+                "quote_hash": "2ce0e9be3cf5e9aed5bc990ee0d49022addc2585f7073b8da73d3d987b45a249"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Offline Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e6ee0cd472bfb792",
+                "quote": "with Abstract Ventures, Adverb Ventures, Buckley Ventures, and Offline Ventures participating.",
+                "source_content_hash": "ad03bbee3088b0fc",
+                "quote_hash": "2ce0e9be3cf5e9aed5bc990ee0d49022addc2585f7073b8da73d3d987b45a249"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Oceans",
+            "role": "未确认是否参与本轮",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b94eb16e5583d0a2",
+                "quote": "a statement on the company’s website also lists Oceans as an investor, but no other major source — including Fortune’s reporting — mentions the firm, leaving it unconfirmed whether that investor actually participated in the round.",
+                "source_content_hash": "8a4414cb556b5bb1",
+                "quote_hash": "1b2807089a8a72465dd3aaec3fa587099f4e0f93e8212751f3a8117f1215b957"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e6ee0cd472bfb792",
+            "quote": "Foundational Industries raised a $25 million seed led by BoxGroup and Zigg Ventures to build factories where AI runs the whole operation.",
+            "source_content_hash": "ad03bbee3088b0fc",
+            "quote_hash": "b1ccc2bf06174696245991dafff58b6b0c3b00f365a021b27e395d329510a370"
+          },
+          {
+            "source_id": "FISRC-e6ee0cd472bfb792",
+            "quote": "Foundational Industries raised a $25 million seed led by BoxGroup and Zigg Ventures",
+            "source_content_hash": "ad03bbee3088b0fc",
+            "quote_hash": "9e64451340db271c5615a0e993d9d96a0f4d30d315fbd5a03050a9e6427bb6f6"
+          },
+          {
+            "source_id": "FISRC-6c7009261aad2612",
+            "quote": "The round was led by BoxGroup and Zigg Ventures, with Abstract Ventures, Adverb Ventures, Buckley Ventures, and Offline Ventures participating.",
+            "source_content_hash": "a85010055187de05",
+            "quote_hash": "65c84cddfdd92ed803fccc349768a33cf8ce1bf28e5699c53603d938fbe13c82"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-268e5c3d36e3ed28",
+            "round_original": "种子轮",
+            "amount": "$25 million",
+            "announced_at": "2026-08-01",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e6ee0cd472bfb792",
+                "quote": "Foundational Industries raised a $25 million seed led by BoxGroup and Zigg Ventures to build factories where AI runs the whole operation.",
+                "source_content_hash": "ad03bbee3088b0fc",
+                "quote_hash": "b1ccc2bf06174696245991dafff58b6b0c3b00f365a021b27e395d329510a370"
+              },
+              {
+                "source_id": "FISRC-e6ee0cd472bfb792",
+                "quote": "Foundational Industries raised a $25 million seed led by BoxGroup and Zigg Ventures",
+                "source_content_hash": "ad03bbee3088b0fc",
+                "quote_hash": "9e64451340db271c5615a0e993d9d96a0f4d30d315fbd5a03050a9e6427bb6f6"
+              },
+              {
+                "source_id": "FISRC-6c7009261aad2612",
+                "quote": "The round was led by BoxGroup and Zigg Ventures, with Abstract Ventures, Adverb Ventures, Buckley Ventures, and Offline Ventures participating.",
+                "source_content_hash": "a85010055187de05",
+                "quote_hash": "65c84cddfdd92ed803fccc349768a33cf8ce1bf28e5699c53603d938fbe13c82"
+              }
+            ]
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "定制数据中心机柜",
+          "description": "为AI数据中心硬件提供的定制机柜，针对新一代AI芯片的不同电压和冷却需求进行设计。该产品是公司验证其“软件定义制造”模式的首个切入点。",
+          "target_customers": "数据中心开发商、新云服务商、芯片制造商",
+          "features": [
+            "支持不同电压规格",
+            "定制化冷却方案",
+            "适应小批量、非标设计快速迭代"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e6ee0cd472bfb792",
+              "quote": "The first product line is custom data-center rack enclosures for developers, neoclouds, and chipmakers whose new AI silicon runs at different voltages.",
+              "source_content_hash": "ad03bbee3088b0fc",
+              "quote_hash": "f3c258e3ecef1a5e10a36b1a98349acac028a1d2d58cf67e3b5a4b1ae6ed7f17"
+            },
+            {
+              "source_id": "FISRC-b94eb16e5583d0a2",
+              "quote": "Foundational Industries’ first product is custom rack enclosures for AI data center hardware, with customers targeted at data center developers, neoclouds, and chipmakers.",
+              "source_content_hash": "8a4414cb556b5bb1",
+              "quote_hash": "8fac9ddfb45ff59bc89febf385449b13e88f6ec0952cae426524fc1510594270"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [],
+      "quotes": [
+        {
+          "speaker": "Jonathan Winer",
+          "quote": "What this is allowing us to do is to sort of build a minimum viable product. We've actually built the entire factory in software already using software emulators.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6c7009261aad2612",
+              "quote": "“What this is allowing us to do is to sort of build a minimum viable product,” he said. “We’ve actually built the entire factory in software already using software emulators.”",
+              "source_content_hash": "a85010055187de05",
+              "quote_hash": "f045309865dcc4f846aebbd41a83f4e3641ed41064d7219f8ffc6fb115934299"
+            }
+          ]
+        },
+        {
+          "speaker": "Jonathan Winer",
+          "quote": "Many of their factories are some of the most advanced automated factories in the world, and they are increasingly using not just international industrial automation, but also homegrown and home produced solutions.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6c7009261aad2612",
+              "quote": "“Many of their factories are some of the most advanced automated factories in the world, and they are increasingly using not just international industrial automation, but also homegrown and home produced solutions,” he told me.",
+              "source_content_hash": "a85010055187de05",
+              "quote_hash": "c97b18e85e5d0f4ec28599cfe9eb63098c1eb562d4f8db2638e64e5bd455f4ca"
+            }
+          ]
+        },
+        {
+          "speaker": "Jonathan Winer",
+          "quote": "We just don't have the people or the skill sets to do it. And even if we did, it's probably not economically competitive to China.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6c7009261aad2612",
+              "quote": "“We just don’t have the people or the skill sets to do it,” he said. “And even if we did, it’s probably not economically competitive to China.”",
+              "source_content_hash": "a85010055187de05",
+              "quote_hash": "e126d50fb791276193bde546ffa4147bad0e6835fe499d0b62298b5af92d1726"
+            }
+          ]
+        },
+        {
+          "speaker": "Jonathan Winer",
+          "quote": "They kind of need to feed the beast now.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6c7009261aad2612",
+              "quote": "“They kind of need to feed the beast now,” he said.",
+              "source_content_hash": "a85010055187de05",
+              "quote_hash": "45feac76e33a7dfcb6ec123ad3d9cdebf7a86f3d8c358ee3465bdc604fbd6955"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Adverb Ventures",
+            "speaker": "",
+            "speaker_role": "Managing Director & Co-Founder",
+            "rationale": "Adverb Ventures 认为利用 AI 和机器人技术实现制造能力的跨越式发展是必然趋势，并看重团队在超大规模科技公司和美国大型合同制造领域的复合经验。",
+            "quote": "Using AI and robotics to leapfrog manufacturing capabilities feels like a matter of time. We’re excited to back a team with experience from hyperscaler tech companies, like Alphabet, and the largest contract manufacturers in the country, chasing after this very mission.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-671b41e8347c5326",
+                "quote": "Using AI and robotics to leapfrog manufacturing capabilities feels like a matter of time. We’re excited to back a team with experience from hyperscaler tech companies, like Alphabet, and the largest contract manufacturers in the country, chasing after this very mission.",
+                "source_content_hash": "052aad32903805d2",
+                "quote_hash": "d32a9e251e7a383e7f12581d8a471b21e5a725ef70b84bbbcf23f0b4cbc14a7b"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是“软件定义制造”这一全新范式能否在物理世界中跑通。本轮融资的实质是支持一个尚未经过物理产线验证的“最小可行产品”（MVP）——一个在软件模拟器中构建的完整工厂。投资逻辑建立在两个已验证信号之上：一是创始人 Jonathan Winer 在 Alphabet 旗下 Sidewalk Infrastructure Partners 部署超10亿美元资本的工业基础设施经验；二是团队融合了来自 Google 物理 AI 部门和美国头部合同制造商的人才。然而，公司目前未披露任何客户名称、绑定订单、单位经济模型或实体工厂选址，所有制造能力仅存在于数字孪生仿真中，尚未经历真实世界中材料公差、环境变量和设备磨损的考验。2500万美元种子轮资金明确用于软件工程团队扩充和仿真深化，远不足以建设实体产线，这意味着从“软件工厂”到“物理交付”之间存在巨大的资本和执行鸿沟。",
+        "validated_signals": [
+          "创始人 Jonathan Winer 在 Alphabet 旗下 Sidewalk Infrastructure Partners 拥有6年部署超10亿美元工业基础设施资本的经验。",
+          "团队构成覆盖了 AI 软件能力（来自 Google 物理 AI 部门）和制造工程经验（来自美国最大的合同制造商）两个关键维度。",
+          "公司已在软件模拟器中构建了完整的工厂模型，声称能够从自然语言输入的产品意图生成物料清单和制造工艺。"
+        ],
+        "risks": [
+          "物理世界验证缺失：公司的“AI运营工厂”目前仅存在于软件仿真中，从未在任何物理产线上运行，数字孪生无法完全覆盖材料特性波动、环境变化和设备磨损等现实不确定性。",
+          "客户承诺深度不明：公司声称已有客户但拒绝披露任何名称，也未澄清是否存在具有约束力的采购协议，在硬科技制造领域，客户承诺深度是后续定价和融资结构的关键变量。",
+          "资本密集度与资金缺口：2500万美元种子轮明确用于 MVP 和仿真，远不足以获取土地、建设厂房、采购设备和调试产线，未来若延伸至实体生产设施，将需要接受重资产且回报周期长的资本，可能重塑公司资本结构和治理安排。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai",
+        "market_subcategory_id": "",
+        "market_application_id": "",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "manufacturing"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "AI驱动的自主制造",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“软件定义制造”这一全新范式能否在物理世界中跑通。本轮融资的实质是支持一个尚未经过物理产线验证的“最小可行产品”（MVP）——一个在软件模拟器中构建的完整工厂。投资逻辑建立在两个已验证信号之上：一是创始人 Jonathan Winer 在 Alphabet 旗下 Sidewalk Infrastructure Partners 部署超10亿美元资本的工业基础设施经验；二是团队融合了来自 Google 物理 AI 部门和美国头部合同制造商的人才。然而，公司目前未披露任何客户名称、绑定订单、单位经济模型或实体工厂选址，所有制造能力仅存在于数字孪生仿真中，尚未经历真实世界中材料公差、环境变量和设备磨损的考验。2500万美元种子轮资金明确用于软件工程团队扩充和仿真深化，远不足以建设实体产线，这意味着从“软件工厂”到“物理交付”之间存在巨大的资本和执行鸿沟。",
+          "evidence_signals": [
+            "创始人 Jonathan Winer 在 Alphabet 旗下 Sidewalk Infrastructure Partners 拥有6年部署超10亿美元工业基础设施资本的经验。",
+            "团队构成覆盖了 AI 软件能力（来自 Google 物理 AI 部门）和制造工程经验（来自美国最大的合同制造商）两个关键维度。",
+            "公司已在软件模拟器中构建了完整的工厂模型，声称能够从自然语言输入的产品意图生成物料清单和制造工艺。"
+          ],
+          "risks": [
+            "物理世界验证缺失：公司的“AI运营工厂”目前仅存在于软件仿真中，从未在任何物理产线上运行，数字孪生无法完全覆盖材料特性波动、环境变化和设备磨损等现实不确定性。",
+            "客户承诺深度不明：公司声称已有客户但拒绝披露任何名称，也未澄清是否存在具有约束力的采购协议，在硬科技制造领域，客户承诺深度是后续定价和融资结构的关键变量。",
+            "资本密集度与资金缺口：2500万美元种子轮明确用于 MVP 和仿真，远不足以获取土地、建设厂房、采购设备和调试产线，未来若延伸至实体生产设施，将需要接受重资产且回报周期长的资本，可能重塑公司资本结构和治理安排。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "定制数据中心机柜",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Jonathan Winer",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "BoxGroup",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Zigg Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Abstract Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Adverb Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Buckley Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Offline Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Oceans",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-268e5c3d36e3ed28",
+          "date": "2026-08-01",
+          "title": "Foundational Industries 筹集 2500 万美元，打造 AI 运营工厂",
+          "amount": "$25 million",
+          "source_refs": [
+            "SA-510015c47309bf1f"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-e6ee0cd472bfb792",
+          "source_url": "https://aiweekly.co/alerts/foundational-industries-raises-25m-to-build-ai-run-factories",
+          "title": "Foundational Industries 筹集 2500 万美元，打造 AI 运营工厂",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-05T00:20:39.517Z",
+          "content_hash": "ad03bbee3088b0fc",
+          "source_artifact_id": "SA-510015c47309bf1f",
+          "raw_id": "RAW-f8d8db33c1214bcc"
+        },
+        {
+          "source_id": "FISRC-b94eb16e5583d0a2",
+          "source_url": "https://recodex.pro/foundational-industries-raises-25m-seed-to-bring-ai-software-to-factory-floors-challenging",
+          "title": "Foundational Industries Raises $25M Seed to Bring AI Software to Factory Floors, Challenging China’s Automation – RecodeX Pro",
+          "publisher": "recodex.pro",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-05T04:00:06.921Z",
+          "content_hash": "8a4414cb556b5bb1",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-671b41e8347c5326",
+          "source_url": "https://www.linkedin.com/posts/daveeisenberg_foundational-industries-autonomous-factories-activity-7488600643352567808-mVy6",
+          "title": "Foundational Industries, which announced its Seed round this morning, is Zigg Capital's largest investment in the infrastructure and supply chain that underpins real assets. | Dave Eisenberg",
+          "publisher": "linkedin.com",
+          "source_class": "secondary",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-08-05T04:00:19.807Z",
+          "content_hash": "052aad32903805d2",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-6c7009261aad2612",
+          "source_url": "https://fortune.com/2026/07/30/forget-robots-assembly-lines-foundational-industries-ai-to-run-entire-factory-manufacturing-china-robotics",
+          "title": "Forget robots on assembly lines. Foundational Industries wants AI to run the entire factory | Fortune",
+          "publisher": "fortune.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-05T04:00:22.911Z",
+          "content_hash": "a85010055187de05",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.6",
+        "generated_at": "2026-08-05T04:01:19.800Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-268e5c3d36e3ed28",
+          "confidence": 0.9,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-05T04:01:19.800Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "定制数据中心机柜"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Jonathan Winer"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-268e5c3d36e3ed28"
+      ],
+      "aggregation": {
+        "key": "EN-5f5ed85925074c92|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-4d2183d4275ea9cf",
+      "company_name": "Actualyze AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Actualyze AI Emerges from Stealth with $7M Seed Round to Deliver Enterprises One Platform for Every AI Request\" funding company investors product",
+        "\"Actualyze AI\" \"$7 million\" funding investors round",
+        "\"Actualyze AI\" product customers case study",
+        "\"Actualyze AI\" \"Actualyze AI Emerges from Stealth with $7M Seed Round to Deliver Enterprises One Platform for Every AI Request\" competitors product use case",
+        "\"Actualyze AI\" \"$7 million\" investor quote why invested",
+        "\"Actualyze AI\" \"$7 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Actualyze AI Emerges from Stealth with $7M Seed Round to Deliver Enterprises One Platform for Every AI Request\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Actualyze AI Emerges from Stealth with $7M Seed Round to Deliver Enterprises One Platform for Every AI Request\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Actualyze AI\" \"$7 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Actualyze AI\" \"$7 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Actualyze AI\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Actualyze AI\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Actualyze AI\" \"Actualyze AI Emerges from Stealth with $7M Seed Round to Deliver Enterprises One Platform for Every AI Request\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Actualyze AI\" \"Actualyze AI Emerges from Stealth with $7M Seed Round to Deliver Enterprises One Platform for Every AI Request\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Actualyze AI\" \"$7 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Actualyze AI\" \"$7 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Actualyze AI\" \"$7 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Actualyze AI\" \"$7 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-08-05T04:09:54.706Z"
+    },
+    {
+      "event_id": "EV-268e5c3d36e3ed28",
+      "company_name": "Foundational Industries",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Foundational Industries raises $25M to build AI-run factories | AI Weekly\" funding company investors product",
+        "\"Foundational Industries\" \"$25 million\" funding investors round",
+        "\"Foundational Industries\" product customers case study",
+        "\"Foundational Industries\" \"Foundational Industries raises $25M to build AI-run factories | AI Weekly\" competitors product use case",
+        "\"Foundational Industries\" \"$25 million\" investor quote why invested",
+        "\"Foundational Industries\" \"$25 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Foundational Industries raises $25M to build AI-run factories | AI Weekly\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Foundational Industries raises $25M to build AI-run factories | AI Weekly\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Foundational Industries\" \"$25 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Foundational Industries\" \"$25 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Foundational Industries\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Foundational Industries\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Foundational Industries\" \"Foundational Industries raises $25M to build AI-run factories | AI Weekly\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Foundational Industries\" \"Foundational Industries raises $25M to build AI-run factories | AI Weekly\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Foundational Industries\" \"$25 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Foundational Industries\" \"$25 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Foundational Industries\" \"$25 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Foundational Industries\" \"$25 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-08-05T04:02:26.409Z"
+    },
+    {
+      "event_id": "EV-2dea56b0e97c1685",
+      "company_name": "Volta Infra Holdings Ltd.",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Nvidia, Dell Back AI Cloud Startup Volta at $2.4 Billion Value\" funding company investors product",
+        "\"Volta Infra Holdings Ltd.\" \"$300 million\" funding investors round",
+        "\"Volta Infra Holdings Ltd.\" product customers case study",
+        "\"Volta Infra Holdings Ltd.\" \"Nvidia, Dell Back AI Cloud Startup Volta at $2.4 Billion Value\" competitors product use case",
+        "\"Volta Infra Holdings Ltd.\" \"$300 million\" investor quote why invested",
+        "\"Volta Infra Holdings Ltd.\" \"$300 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Nvidia, Dell Back AI Cloud Startup Volta at $2.4 Billion Value\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Nvidia, Dell Back AI Cloud Startup Volta at $2.4 Billion Value\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Volta Infra Holdings Ltd.\" \"$300 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Volta Infra Holdings Ltd.\" \"$300 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Volta Infra Holdings Ltd.\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Volta Infra Holdings Ltd.\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Volta Infra Holdings Ltd.\" \"Nvidia, Dell Back AI Cloud Startup Volta at $2.4 Billion Value\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Volta Infra Holdings Ltd.\" \"Nvidia, Dell Back AI Cloud Startup Volta at $2.4 Billion Value\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Volta Infra Holdings Ltd.\" \"$300 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Volta Infra Holdings Ltd.\" \"$300 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Volta Infra Holdings Ltd.\" \"$300 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Volta Infra Holdings Ltd.\" \"$300 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-08-05T04:13:36.757Z"
+    }
+  ]
+}
