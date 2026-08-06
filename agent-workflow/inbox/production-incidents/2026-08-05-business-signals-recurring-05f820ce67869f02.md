@@ -10,7 +10,7 @@ created_at: 2026-08-05T08:45:39.932Z
 updated_at: 2026-08-06T12:38:23+08:00
 resolved_at: 2026-08-06T12:38:23+08:00
 resolver: codex
-fix_commit: 52346cf79cb0b9f3412c77e0c843d997eeb7dc6d
+fix_commit: 2d30a70b386487f4c0492dd8c2902f24381fc1fd
 validation: npm run audit:workspace after commit; npm run assert:data-center -- --date=2026-08-06 passed after private evidence sync
 prevention_added: gate
 fingerprint: 05f820ce67869f02
@@ -33,6 +33,6 @@ prevention_required: gate|eval|memory|context
 
 ## Resolution - 2026-08-06T12:38:23+08:00
 
-- fix_commit: 52346cf79cb0b9f3412c77e0c843d997eeb7dc6d
+- fix_commit: 2d30a70b386487f4c0492dd8c2902f24381fc1fd
 - validation: npm run audit:workspace after commit; npm run assert:data-center -- --date=2026-08-06 passed after private evidence sync
 - prevention_added: gate
