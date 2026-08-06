@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-06T01:17:24.350Z",
+    "generatedAt": "2026-08-06T04:35:01.974Z",
     "latestDataDate": "2026-08-06",
     "currentDate": "2026-08-06",
     "eventCount": 1888,
@@ -27,12 +27,12 @@
     "viewpointIds": [],
     "classificationRefs": [
       "TX-ai_market_category-infrastructure_compute",
+      "TX-target_user-public_sector_user",
       "TX-target_user-developer",
       "TX-use_case-software_development",
       "TX-ai_market_subcategory-development_deployment",
       "TX-ai_market_application-ai_development_orchestration",
-      "TX-product_form-developer_tool",
-      "TX-target_user-public_sector_user"
+      "TX-product_form-developer_tool"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-26",
@@ -163,6 +163,7 @@
       "typeLabel": "AI 市场类别",
       "valueId": "infrastructure_compute",
       "eventIds": [
+        "EV-60f219702a66bf38",
         "EV-2dea56b0e97c1685",
         "EV-4d2183d4275ea9cf",
         "EV-2301cd1470155075",
@@ -284,6 +285,7 @@
         "EV-618e5729145025e4"
       ],
       "entityIds": [
+        "EN-6861f63c27eb0ada",
         "EN-6fae0bc5a895aab8",
         "EN-e22daec9e0564fba",
         "EN-9f80a5e14017ccc0",
@@ -395,7 +397,40 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-02-10",
-      "lastSeen": "2026-08-05"
+      "lastSeen": "2026-08-06"
+    },
+    {
+      "id": "TX-target_user-public_sector_user",
+      "name": "公共部门用户",
+      "nodeType": "target_user",
+      "typeLabel": "目标用户",
+      "valueId": "public_sector_user",
+      "eventIds": [
+        "EV-60f219702a66bf38",
+        "EV-82e77abb1a77f81c",
+        "EV-ceb23160ad25e497",
+        "EV-9486e14e99499e3b",
+        "EV-ef7346378fcf9746",
+        "EV-e0ecb5f81a273447",
+        "EV-a3ba586cbc57b5fd",
+        "EV-a86b04e679044c45"
+      ],
+      "entityIds": [
+        "EN-6861f63c27eb0ada",
+        "EN-92dd63c8e5c77e8a",
+        "EN-6ea730515425a60f",
+        "EN-05f6ecf01ac4ebec",
+        "EN-e78bdebae031095b",
+        "EN-afff1ef2d34b618e",
+        "EN-7035f6607ad2d162",
+        "EN-7640da40298286a6"
+      ],
+      "fdeIds": [
+        "FDE-5ea7f3d69a03d417"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-03-19",
+      "lastSeen": "2026-08-06"
     },
     {
       "id": "TX-target_user-developer",
@@ -1105,37 +1140,6 @@
       "hardwareIds": [],
       "firstSeen": "2024-09-05",
       "lastSeen": "2026-08-03"
-    },
-    {
-      "id": "TX-target_user-public_sector_user",
-      "name": "公共部门用户",
-      "nodeType": "target_user",
-      "typeLabel": "目标用户",
-      "valueId": "public_sector_user",
-      "eventIds": [
-        "EV-82e77abb1a77f81c",
-        "EV-ceb23160ad25e497",
-        "EV-9486e14e99499e3b",
-        "EV-ef7346378fcf9746",
-        "EV-e0ecb5f81a273447",
-        "EV-a3ba586cbc57b5fd",
-        "EV-a86b04e679044c45"
-      ],
-      "entityIds": [
-        "EN-92dd63c8e5c77e8a",
-        "EN-6ea730515425a60f",
-        "EN-05f6ecf01ac4ebec",
-        "EN-e78bdebae031095b",
-        "EN-afff1ef2d34b618e",
-        "EN-7035f6607ad2d162",
-        "EN-7640da40298286a6"
-      ],
-      "fdeIds": [
-        "FDE-5ea7f3d69a03d417"
-      ],
-      "hardwareIds": [],
-      "firstSeen": "2026-03-19",
-      "lastSeen": "2026-08-02"
     }
   ],
   "fde": [],

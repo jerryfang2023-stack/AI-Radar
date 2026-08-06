@@ -1,0 +1,40 @@
+{
+  "ok": false,
+  "failures": [
+    "EV-c7bd142e35ad2b19: accepted event has no entity reference",
+    "EV-10c4f4db6c3f2d72: accepted event has no entity reference",
+    "frontstage hardware catalog is missing 1 current-batch snapshot(s)"
+  ],
+  "warnings": [
+    "No source-bounded FDE record was produced for the daily batch.",
+    "No source-bounded hardware record was produced for the daily batch.",
+    "No Claim-native FDE observation was produced for the daily batch."
+  ],
+  "counts": {
+    "entities": 27,
+    "entity_mentions": 46,
+    "accepted_events": 22,
+    "verified_event_organizations": 8,
+    "verified_event_products": 2,
+    "fde_records": 0,
+    "hardware_records": 0,
+    "fde_observations": 0,
+    "hardware_facts": 5,
+    "hardware_snapshots": 3,
+    "monitoring_funnel_lenses": 2
+  },
+  "metrics": {
+    "entity_mention_coverage": 1,
+    "accepted_event_entity_coverage": 0.9090909090909091,
+    "entity_index_organization_coverage": 1,
+    "entity_index_product_coverage": 1,
+    "fde_frontstage_coverage": 1,
+    "hardware_frontstage_coverage": 1,
+    "fde_observation_frontstage_coverage": 1,
+    "hardware_fact_frontstage_coverage": 1,
+    "hardware_snapshot_frontstage_coverage": 0.6666666666666666,
+    "monitoring_funnel_frontstage_coverage": 1
+  },
+  "date": "2026-08-06",
+  "generated_at": "2026-08-06T01:50:02.472Z"
+}

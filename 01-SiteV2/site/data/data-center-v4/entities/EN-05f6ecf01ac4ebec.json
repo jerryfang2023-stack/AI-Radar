@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-06T01:17:24.350Z",
+    "generatedAt": "2026-08-06T04:35:01.974Z",
     "latestDataDate": "2026-08-06",
     "currentDate": "2026-08-06",
     "eventCount": 1888,
@@ -28,12 +28,12 @@
     "classificationRefs": [
       "TX-industry-aerospace_defense",
       "TX-target_user-business_user",
+      "TX-target_user-public_sector_user",
       "TX-target_user-developer",
       "TX-product_form-end_user_application",
       "TX-use_case-physical_automation",
       "TX-ai_market_category-physical_ai",
-      "TX-product_form-robotic_system",
-      "TX-target_user-public_sector_user"
+      "TX-product_form-robotic_system"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-22",
@@ -174,6 +174,7 @@
       "typeLabel": "行业",
       "valueId": "aerospace_defense",
       "eventIds": [
+        "EV-60f219702a66bf38",
         "EV-2dea56b0e97c1685",
         "EV-4d2183d4275ea9cf",
         "EV-754e83c2d19005fe",
@@ -203,6 +204,7 @@
         "EV-e1ebf7d63e058a39"
       ],
       "entityIds": [
+        "EN-6861f63c27eb0ada",
         "EN-6fae0bc5a895aab8",
         "EN-e22daec9e0564fba",
         "EN-834cc12fc35adde7",
@@ -231,7 +233,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-03-19",
-      "lastSeen": "2026-08-05"
+      "lastSeen": "2026-08-06"
     },
     {
       "id": "TX-target_user-business_user",
@@ -240,6 +242,7 @@
       "typeLabel": "目标用户",
       "valueId": "business_user",
       "eventIds": [
+        "EV-60f219702a66bf38",
         "EV-2dea56b0e97c1685",
         "EV-4d2183d4275ea9cf",
         "EV-f315914e0fedddfa",
@@ -440,6 +443,7 @@
         "EV-caf5d85e980c86fd"
       ],
       "entityIds": [
+        "EN-6861f63c27eb0ada",
         "EN-6fae0bc5a895aab8",
         "EN-e22daec9e0564fba",
         "EN-c0fa1ef864788c45",
@@ -626,7 +630,40 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-05"
+      "lastSeen": "2026-08-06"
+    },
+    {
+      "id": "TX-target_user-public_sector_user",
+      "name": "公共部门用户",
+      "nodeType": "target_user",
+      "typeLabel": "目标用户",
+      "valueId": "public_sector_user",
+      "eventIds": [
+        "EV-60f219702a66bf38",
+        "EV-82e77abb1a77f81c",
+        "EV-ceb23160ad25e497",
+        "EV-9486e14e99499e3b",
+        "EV-ef7346378fcf9746",
+        "EV-e0ecb5f81a273447",
+        "EV-a3ba586cbc57b5fd",
+        "EV-a86b04e679044c45"
+      ],
+      "entityIds": [
+        "EN-6861f63c27eb0ada",
+        "EN-92dd63c8e5c77e8a",
+        "EN-6ea730515425a60f",
+        "EN-05f6ecf01ac4ebec",
+        "EN-e78bdebae031095b",
+        "EN-afff1ef2d34b618e",
+        "EN-7035f6607ad2d162",
+        "EN-7640da40298286a6"
+      ],
+      "fdeIds": [
+        "FDE-5ea7f3d69a03d417"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-03-19",
+      "lastSeen": "2026-08-06"
     },
     {
       "id": "TX-target_user-developer",
@@ -1361,37 +1398,6 @@
       ],
       "firstSeen": "2026-01-12",
       "lastSeen": "2026-08-05"
-    },
-    {
-      "id": "TX-target_user-public_sector_user",
-      "name": "公共部门用户",
-      "nodeType": "target_user",
-      "typeLabel": "目标用户",
-      "valueId": "public_sector_user",
-      "eventIds": [
-        "EV-82e77abb1a77f81c",
-        "EV-ceb23160ad25e497",
-        "EV-9486e14e99499e3b",
-        "EV-ef7346378fcf9746",
-        "EV-e0ecb5f81a273447",
-        "EV-a3ba586cbc57b5fd",
-        "EV-a86b04e679044c45"
-      ],
-      "entityIds": [
-        "EN-92dd63c8e5c77e8a",
-        "EN-6ea730515425a60f",
-        "EN-05f6ecf01ac4ebec",
-        "EN-e78bdebae031095b",
-        "EN-afff1ef2d34b618e",
-        "EN-7035f6607ad2d162",
-        "EN-7640da40298286a6"
-      ],
-      "fdeIds": [
-        "FDE-5ea7f3d69a03d417"
-      ],
-      "hardwareIds": [],
-      "firstSeen": "2026-03-19",
-      "lastSeen": "2026-08-02"
     }
   ],
   "fde": [],

@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-06T01:17:24.350Z",
+    "generatedAt": "2026-08-06T04:35:01.974Z",
     "latestDataDate": "2026-08-06",
     "currentDate": "2026-08-06",
     "eventCount": 1888,
@@ -138,17 +138,530 @@
       "conflicts": [],
       "tags": [],
       "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-6861f63c27eb0ada"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b48c235544acd9e3",
+            "fundingInsightId": "FI-18daabf03001b78b"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "data",
+            "name": "数据",
+            "entityIds": [
+              "EN-6861f63c27eb0ada"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a8aa53378a251adc",
+            "fundingInsightId": "FI-18daabf03001b78b"
+          }
+        ],
+        "ai_market_application": [
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "data_preparation_curation",
+            "name": "数据准备与整理",
+            "entityIds": [
+              "EN-6861f63c27eb0ada"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6da20e78f57774a8",
+            "fundingInsightId": "FI-18daabf03001b78b"
+          }
+        ],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-6861f63c27eb0ada"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c7a8e34ffbcfc235",
+            "fundingInsightId": "FI-18daabf03001b78b"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "EN-6861f63c27eb0ada"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1eccfb765842abbe",
+            "fundingInsightId": "FI-18daabf03001b78b"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "research_discovery",
+            "name": "科研与发现",
+            "entityIds": [
+              "EN-6861f63c27eb0ada"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-768d711cbc1694aa",
+            "fundingInsightId": "FI-18daabf03001b78b"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "aerospace_defense",
+            "name": "航空航天与国防",
+            "entityIds": [
+              "EN-6861f63c27eb0ada"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-bb5eb90d2a1ac82d",
+            "fundingInsightId": "FI-18daabf03001b78b"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "agriculture",
+            "name": "农业",
+            "entityIds": [
+              "EN-6861f63c27eb0ada"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b26723d5113b7781",
+            "fundingInsightId": "FI-18daabf03001b78b"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "energy_utilities",
+            "name": "能源与公用事业",
+            "entityIds": [
+              "EN-6861f63c27eb0ada"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-15590261fc2cba17",
+            "fundingInsightId": "FI-18daabf03001b78b"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "government_public_sector",
+            "name": "政府与公共部门",
+            "entityIds": [
+              "EN-6861f63c27eb0ada"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-05ec8f9f2ad92ab4",
+            "fundingInsightId": "FI-18daabf03001b78b"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "logistics_supply_chain",
+            "name": "物流与供应链",
+            "entityIds": [
+              "EN-6861f63c27eb0ada"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9f521b20fda617a1",
+            "fundingInsightId": "FI-18daabf03001b78b"
+          }
+        ],
         "deployment_model": [],
-        "target_user": []
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-6861f63c27eb0ada"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-fcc27cafb3430a94",
+            "fundingInsightId": "FI-18daabf03001b78b"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "public_sector_user",
+            "name": "公共部门用户",
+            "entityIds": [
+              "EN-6861f63c27eb0ada"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8ffd5941a4655fe2",
+            "fundingInsightId": "FI-18daabf03001b78b"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "researcher",
+            "name": "研究人员",
+            "entityIds": [
+              "EN-6861f63c27eb0ada"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-7c6ae66bed1bfa8d",
+            "fundingInsightId": "FI-18daabf03001b78b"
+          }
+        ]
       },
-      "classifications": [],
-      "displayTags": [],
+      "classifications": [
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "data_preparation_curation",
+          "name": "数据准备与整理",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-6da20e78f57774a8",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b48c235544acd9e3",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "data",
+          "name": "数据",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a8aa53378a251adc",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "aerospace_defense",
+          "name": "航空航天与国防",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-bb5eb90d2a1ac82d",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "agriculture",
+          "name": "农业",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b26723d5113b7781",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "energy_utilities",
+          "name": "能源与公用事业",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-15590261fc2cba17",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "government_public_sector",
+          "name": "政府与公共部门",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-05ec8f9f2ad92ab4",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "logistics_supply_chain",
+          "name": "物流与供应链",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9f521b20fda617a1",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c7a8e34ffbcfc235",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fcc27cafb3430a94",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "public_sector_user",
+          "name": "公共部门用户",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8ffd5941a4655fe2",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "researcher",
+          "name": "研究人员",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-7c6ae66bed1bfa8d",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1eccfb765842abbe",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "research_discovery",
+          "name": "科研与发现",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-768d711cbc1694aa",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b48c235544acd9e3",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "data",
+          "name": "数据",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a8aa53378a251adc",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "data_preparation_curation",
+          "name": "数据准备与整理",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-6da20e78f57774a8",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c7a8e34ffbcfc235",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1eccfb765842abbe",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "research_discovery",
+          "name": "科研与发现",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-768d711cbc1694aa",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "aerospace_defense",
+          "name": "航空航天与国防",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-bb5eb90d2a1ac82d",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "agriculture",
+          "name": "农业",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b26723d5113b7781",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "energy_utilities",
+          "name": "能源与公用事业",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-15590261fc2cba17",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "government_public_sector",
+          "name": "政府与公共部门",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-05ec8f9f2ad92ab4",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "logistics_supply_chain",
+          "name": "物流与供应链",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9f521b20fda617a1",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fcc27cafb3430a94",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "public_sector_user",
+          "name": "公共部门用户",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8ffd5941a4655fe2",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "researcher",
+          "name": "研究人员",
+          "entityIds": [
+            "EN-6861f63c27eb0ada"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-7c6ae66bed1bfa8d",
+          "fundingInsightId": "FI-18daabf03001b78b"
+        }
+      ],
       "entityIds": [
         "EN-6861f63c27eb0ada"
       ],

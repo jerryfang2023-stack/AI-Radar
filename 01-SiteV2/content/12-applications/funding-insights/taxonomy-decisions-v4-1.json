@@ -5,13 +5,13 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-05T04:13:51.934Z",
+    "generated_at": "2026-08-06T04:34:35.705Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 247,
-    "input_hash": "0b4c23520661ba86",
+    "decision_count": 248,
+    "input_hash": "9552eb3597001215",
     "override_count": 17,
     "needs_review_count": 0,
     "low_confidence_count": 0
@@ -4877,6 +4877,32 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "公司提供AI算力租赁与融资平台，帮助获取昂贵AI芯片，属于基础设施中的硬件与计算子类，具体为计算基础设施。证据未限定行业，故覆盖所有行业。"
+    },
+    {
+      "event_id": "EV-60f219702a66bf38",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "data_preparation_curation",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "data_analysis",
+        "research_discovery"
+      ],
+      "industry_ids": [
+        "government_public_sector",
+        "energy_utilities",
+        "agriculture",
+        "logistics_supply_chain",
+        "aerospace_defense"
+      ],
+      "target_user_ids": [
+        "public_sector_user",
+        "researcher",
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "证据显示公司通过全球气球网络采集大气数据并训练AI天气预报模型，核心产品是数据与模型，不直接控制物理设备，因此归入基础设施计算的数据子类。产品形式为模型，主要用户包括政府气象机构和研究人员。"
     }
   ]
 }

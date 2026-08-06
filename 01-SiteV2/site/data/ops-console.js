@@ -1,7 +1,7 @@
 window.WaveSightOpsConsole = {
   "meta": {
     "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-08-06T01:18:25.132Z",
+    "generatedAt": "2026-08-06T04:38:24.194Z",
     "date": "2026-08-06",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -46,10 +46,10 @@ window.WaveSightOpsConsole = {
     "status": "passed",
     "statusText": "已通过",
     "issueSummary": {
-      "total": 6,
+      "total": 9,
       "daily": 0,
       "open": 0,
-      "resolved": 6,
+      "resolved": 9,
       "urgent": 0
     },
     "issues": []
@@ -57,22 +57,89 @@ window.WaveSightOpsConsole = {
   "periods": {
     "weekly": {
       "windowDays": 7,
-      "total": 2,
+      "total": 5,
       "open": 0,
-      "resolved": 2,
+      "resolved": 5,
       "byLane": {
-        "business_signals": 2
+        "business_signals": 3,
+        "skill_ops": 2
       },
       "byCategory": {
-        "recurring_automation_issue": 2
+        "recurring_automation_issue": 5
       },
       "recurring": [
         {
           "category": "recurring_automation_issue",
-          "count": 2
+          "count": 5
         }
       ],
       "latest": [
+        {
+          "id": "2026-08-05-business-signals-recurring-05f820ce67869f02",
+          "date": "2026-08-05",
+          "title": "Recurring warning: business_signals",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "runtime://daily-supervision/2026-08-03",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-08-05T08:45:39.932Z",
+          "updatedAt": "2026-08-06T12:38:23+08:00",
+          "resolvedAt": "2026-08-06T12:38:23+08:00",
+          "resolver": "codex",
+          "fixCommit": "pending",
+          "validation": "npm run audit:workspace after commit; npm run assert:data-center -- --date=2026-08-06 passed after private evidence sync",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-05-business-signals-recurring-05f820ce67869f02.md"
+        },
+        {
+          "id": "2026-08-05-skill-ops-recurring-042a16c9ca245da3",
+          "date": "2026-08-05",
+          "title": "Recurring problem: skill_ops",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "normal",
+          "laneId": "skill_ops",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "runtime://daily-supervision/2026-08-05",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-08-05T08:45:39.933Z",
+          "updatedAt": "2026-08-06T12:35:48+08:00",
+          "resolvedAt": "2026-08-06T12:35:48+08:00",
+          "resolver": "codex",
+          "fixCommit": "pending",
+          "validation": "npm run audit:skills passed; repo runtime drift 0",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-05-skill-ops-recurring-042a16c9ca245da3.md"
+        },
+        {
+          "id": "2026-08-05-skill-ops-recurring-779272b982471f71",
+          "date": "2026-08-05",
+          "title": "Recurring problem: skill_ops",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "normal",
+          "laneId": "skill_ops",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "runtime://daily-supervision/2026-08-05",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-08-05T08:45:39.934Z",
+          "updatedAt": "2026-08-06T12:35:48+08:00",
+          "resolvedAt": "2026-08-06T12:35:48+08:00",
+          "resolver": "codex",
+          "fixCommit": "pending",
+          "validation": "npm run audit:skills passed; repo runtime drift 0",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-05-skill-ops-recurring-779272b982471f71.md"
+        },
         {
           "id": "2026-08-04-business-signals-recurring-05f820ce67869f02",
           "date": "2026-08-04",
@@ -121,25 +188,91 @@ window.WaveSightOpsConsole = {
     },
     "monthly": {
       "windowDays": 30,
-      "total": 6,
+      "total": 9,
       "open": 0,
-      "resolved": 6,
+      "resolved": 9,
       "byLane": {
         "community_intelligence": 2,
-        "skill_ops": 1,
-        "business_signals": 3
+        "skill_ops": 3,
+        "business_signals": 4
       },
       "byCategory": {
-        "recurring_automation_issue": 5,
+        "recurring_automation_issue": 8,
         "weekly_learning_loop": 1
       },
       "recurring": [
         {
           "category": "recurring_automation_issue",
-          "count": 5
+          "count": 8
         }
       ],
       "latest": [
+        {
+          "id": "2026-08-05-business-signals-recurring-05f820ce67869f02",
+          "date": "2026-08-05",
+          "title": "Recurring warning: business_signals",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "runtime://daily-supervision/2026-08-03",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-08-05T08:45:39.932Z",
+          "updatedAt": "2026-08-06T12:38:23+08:00",
+          "resolvedAt": "2026-08-06T12:38:23+08:00",
+          "resolver": "codex",
+          "fixCommit": "pending",
+          "validation": "npm run audit:workspace after commit; npm run assert:data-center -- --date=2026-08-06 passed after private evidence sync",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-05-business-signals-recurring-05f820ce67869f02.md"
+        },
+        {
+          "id": "2026-08-05-skill-ops-recurring-042a16c9ca245da3",
+          "date": "2026-08-05",
+          "title": "Recurring problem: skill_ops",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "normal",
+          "laneId": "skill_ops",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "runtime://daily-supervision/2026-08-05",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-08-05T08:45:39.933Z",
+          "updatedAt": "2026-08-06T12:35:48+08:00",
+          "resolvedAt": "2026-08-06T12:35:48+08:00",
+          "resolver": "codex",
+          "fixCommit": "pending",
+          "validation": "npm run audit:skills passed; repo runtime drift 0",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-05-skill-ops-recurring-042a16c9ca245da3.md"
+        },
+        {
+          "id": "2026-08-05-skill-ops-recurring-779272b982471f71",
+          "date": "2026-08-05",
+          "title": "Recurring problem: skill_ops",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "normal",
+          "laneId": "skill_ops",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "runtime://daily-supervision/2026-08-05",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-08-05T08:45:39.934Z",
+          "updatedAt": "2026-08-06T12:35:48+08:00",
+          "resolvedAt": "2026-08-06T12:35:48+08:00",
+          "resolver": "codex",
+          "fixCommit": "pending",
+          "validation": "npm run audit:skills passed; repo runtime drift 0",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-05-skill-ops-recurring-779272b982471f71.md"
+        },
         {
           "id": "2026-08-04-business-signals-recurring-05f820ce67869f02",
           "date": "2026-08-04",
@@ -278,6 +411,72 @@ window.WaveSightOpsConsole = {
   "inbox": {
     "open": [],
     "resolved": [
+      {
+        "id": "2026-08-05-business-signals-recurring-05f820ce67869f02",
+        "date": "2026-08-05",
+        "title": "Recurring warning: business_signals",
+        "status": "resolved",
+        "state": "resolved",
+        "priority": "normal",
+        "laneId": "business_signals",
+        "category": "recurring_automation_issue",
+        "failedGate": "repeated daily supervision signal",
+        "reportPath": "runtime://daily-supervision/2026-08-03",
+        "dataGenerated": "inspect linked daily reports",
+        "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+        "createdAt": "2026-08-05T08:45:39.932Z",
+        "updatedAt": "2026-08-06T12:38:23+08:00",
+        "resolvedAt": "2026-08-06T12:38:23+08:00",
+        "resolver": "codex",
+        "fixCommit": "pending",
+        "validation": "npm run audit:workspace after commit; npm run assert:data-center -- --date=2026-08-06 passed after private evidence sync",
+        "prevention": "gate",
+        "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-05-business-signals-recurring-05f820ce67869f02.md"
+      },
+      {
+        "id": "2026-08-05-skill-ops-recurring-042a16c9ca245da3",
+        "date": "2026-08-05",
+        "title": "Recurring problem: skill_ops",
+        "status": "resolved",
+        "state": "resolved",
+        "priority": "normal",
+        "laneId": "skill_ops",
+        "category": "recurring_automation_issue",
+        "failedGate": "repeated daily supervision signal",
+        "reportPath": "runtime://daily-supervision/2026-08-05",
+        "dataGenerated": "inspect linked daily reports",
+        "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+        "createdAt": "2026-08-05T08:45:39.933Z",
+        "updatedAt": "2026-08-06T12:35:48+08:00",
+        "resolvedAt": "2026-08-06T12:35:48+08:00",
+        "resolver": "codex",
+        "fixCommit": "pending",
+        "validation": "npm run audit:skills passed; repo runtime drift 0",
+        "prevention": "gate",
+        "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-05-skill-ops-recurring-042a16c9ca245da3.md"
+      },
+      {
+        "id": "2026-08-05-skill-ops-recurring-779272b982471f71",
+        "date": "2026-08-05",
+        "title": "Recurring problem: skill_ops",
+        "status": "resolved",
+        "state": "resolved",
+        "priority": "normal",
+        "laneId": "skill_ops",
+        "category": "recurring_automation_issue",
+        "failedGate": "repeated daily supervision signal",
+        "reportPath": "runtime://daily-supervision/2026-08-05",
+        "dataGenerated": "inspect linked daily reports",
+        "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+        "createdAt": "2026-08-05T08:45:39.934Z",
+        "updatedAt": "2026-08-06T12:35:48+08:00",
+        "resolvedAt": "2026-08-06T12:35:48+08:00",
+        "resolver": "codex",
+        "fixCommit": "pending",
+        "validation": "npm run audit:skills passed; repo runtime drift 0",
+        "prevention": "gate",
+        "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-05-skill-ops-recurring-779272b982471f71.md"
+      },
       {
         "id": "2026-08-04-business-signals-recurring-05f820ce67869f02",
         "date": "2026-08-04",
@@ -593,7 +792,7 @@ window.WaveSightOpsConsole = {
       {
         "label": "Pipeline Dashboard",
         "status": "passed",
-        "detail": "2026-08-06T01:18:25.094Z"
+        "detail": "2026-08-06T04:38:09.735Z"
       },
       {
         "label": "Daily Supervision",
@@ -664,7 +863,7 @@ window.WaveSightOpsConsole = {
     },
     "pipelineMeta": {
       "version": "OPS-V2.0.0-v4-telemetry",
-      "generatedAt": "2026-08-06T01:18:25.094Z",
+      "generatedAt": "2026-08-06T04:38:09.735Z",
       "dateRange": {
         "start": "2026-07-31",
         "end": "2026-08-06"
