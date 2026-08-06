@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-05T04:25:15.287Z",
-    "latestDataDate": "2026-08-05",
-    "currentDate": "2026-08-05",
-    "eventCount": 1868,
+    "generatedAt": "2026-08-06T00:23:45.681Z",
+    "latestDataDate": "2026-08-06",
+    "currentDate": "2026-08-06",
+    "eventCount": 1888,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -29,6 +29,7 @@
       "EV-dc442b91a69fcc5a",
       "EV-d292329c0ec64c8f",
       "EV-c8f3db31cb266b64",
+      "EV-db304937ceac95d2",
       "EV-3a67edc87806b5f1",
       "EV-dbc47d61f3e94306",
       "EV-eb2584a4801eb1e6",
@@ -62,7 +63,7 @@
       "EN-2c2a76216a876127"
     ],
     "firstSeen": "2025-10-01",
-    "lastSeen": "2026-07-30",
+    "lastSeen": "2026-08-06",
     "relationIds": [
       "REL2-229f4051d4ed3200",
       "REL2-9c0ac2940324ff78",
@@ -85,6 +86,7 @@
         "EV-c8f3db31cb266b64"
       ],
       "productsServices": [
+        "EV-db304937ceac95d2",
         "EV-3a67edc87806b5f1",
         "EV-dbc47d61f3e94306",
         "EV-eb2584a4801eb1e6",
@@ -95,6 +97,67 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-db304937ceac95d2",
+        "dataDate": "2026-08-06",
+        "date": "2026-08-05",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Mistral 推出 Shieldstral 多模态内容审核模型，单张 16GB GPU 可运行",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-920510199770f4d6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [
+              "EN-920510199770f4d6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [
+              "EN-920510199770f4d6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "guardrails_safety",
+            "name": "安全护栏",
+            "entityIds": [
+              "EN-920510199770f4d6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-c04bd5ebd10ab696",
+          "EN-c7d556e04fe32ea1"
+        ]
+      },
       {
         "id": "EV-c8f3db31cb266b64",
         "dataDate": "2026-07-30",
@@ -2498,6 +2561,7 @@
         "EV-4b545e310ded2baa",
         "EV-778ae7684a4d782e",
         "EV-22f0d8caaa65a6a2",
+        "EV-815fdc6e8911b026",
         "EV-aa7cf8ee6c875f08",
         "EV-2c87c8ea47cbd1b6",
         "EV-48015ed51ec9be9f",
@@ -2612,6 +2676,7 @@
         "EN-5d11926dd637b275",
         "EN-d3565d297d476f10",
         "EN-25690754dd14bd1b",
+        "EN-8dfe7dd8f82c0f5b",
         "EN-4e358c403850a88a",
         "EN-7d3194f79e645c42",
         "EN-c890cfa67d1da908",
@@ -2647,7 +2712,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-08-05"
+      "lastSeen": "2026-08-06"
     },
     {
       "id": "TX-product_form-model",
@@ -2721,6 +2786,7 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-10c4f4db6c3f2d72",
         "EV-bf4871cd96fc25ac",
         "EV-e05e2ff09137017d",
         "EV-4b286a3354cbf34a",
@@ -2979,7 +3045,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-05"
+      "lastSeen": "2026-08-06"
     },
     {
       "id": "TX-use_case-software_development",
@@ -3047,6 +3113,9 @@
         "EV-d209a6acecba4285",
         "EV-75b9b997e9c7e5d1",
         "EV-b2e374d54b10b9af",
+        "EV-91d4c91861a715c1",
+        "EV-ad6fe30e111608bd",
+        "EV-d817dab5ad88f4d6",
         "EV-bfa090c78227abf8",
         "EV-443e093ab54d0228",
         "EV-0f440082086c02df",
@@ -3120,10 +3189,11 @@
         "EN-df30a48992da7fe8",
         "EN-3db1f560db626918",
         "EN-7c3482959a6cdd3f",
+        "EN-ea3bd73e2b506e00",
+        "EN-7d3194f79e645c42",
         "EN-76a9a8a6e2f1a47b",
         "EN-240389f4b730bad4",
         "EN-bbdefa2950f49882",
-        "EN-7d3194f79e645c42",
         "EN-916a98f0fa2a39af",
         "EN-1d79127e9d90e89b",
         "EN-4adc2faea521b1f1",
@@ -3146,7 +3216,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-04"
+      "lastSeen": "2026-08-06"
     },
     {
       "id": "TX-use_case-knowledge_search",

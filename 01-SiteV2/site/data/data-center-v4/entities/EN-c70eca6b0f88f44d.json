@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-05T04:25:15.287Z",
-    "latestDataDate": "2026-08-05",
-    "currentDate": "2026-08-05",
-    "eventCount": 1868,
+    "generatedAt": "2026-08-06T00:23:45.681Z",
+    "latestDataDate": "2026-08-06",
+    "currentDate": "2026-08-06",
+    "eventCount": 1888,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -86,6 +86,7 @@
       "EV-fe63a869fe4cee45",
       "EV-35be62272c77c556",
       "EV-c0a65877001ed413",
+      "EV-b06624cf36990346",
       "EV-22e4f8278c40d63e",
       "EV-4b286a3354cbf34a",
       "EV-650e4b23d45d5758",
@@ -241,6 +242,10 @@
       "EV-8115dd18f2812a29",
       "EV-cf496e0f8a56ca97",
       "EV-8cb5b0ed18c7cdd8",
+      "EV-2321e89fad893290",
+      "EV-c6b1535a2034f0f2",
+      "EV-97c608a27438073a",
+      "EV-ad4f8dd61f82017a",
       "EV-6ea546ea3dbeb6d7",
       "EV-94cb16144a8fcfdb",
       "EV-56b36a56d729c20d",
@@ -348,7 +353,7 @@
       "EN-da20c5952dba19d8"
     ],
     "firstSeen": "2025-09-04",
-    "lastSeen": "2026-08-05",
+    "lastSeen": "2026-08-06",
     "relationIds": [
       "REL2-6c33e8063218608e",
       "REL2-407abfa4e497ae3f",
@@ -492,7 +497,10 @@
         "EV-c0a65877001ed413"
       ],
       "productsServices": [
+        "EV-b06624cf36990346",
         "EV-22e4f8278c40d63e",
+        "EV-2321e89fad893290",
+        "EV-ad4f8dd61f82017a",
         "EV-4b286a3354cbf34a",
         "EV-650e4b23d45d5758",
         "EV-94cb16144a8fcfdb",
@@ -655,6 +663,8 @@
         "EV-89bdda008227fb6b"
       ],
       "organizationPeople": [
+        "EV-c6b1535a2034f0f2",
+        "EV-97c608a27438073a",
         "EV-d46aa5935d9bb672",
         "EV-0eef30387327e73f",
         "EV-e6a7926fdb42b95a",
@@ -688,6 +698,143 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-b06624cf36990346",
+        "dataDate": "2026-08-06",
+        "date": "2026-08-06",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Meta 推出首个编程 AI 智能体工具 Muse Code，挑战 Claude Code 与 Codex",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-ea3bd73e2b506e00",
+          "EN-c70eca6b0f88f44d",
+          "EN-7d3194f79e645c42",
+          "EN-cb4754c48f8023d0",
+          "EN-8af92fab124ec624"
+        ]
+      },
+      {
+        "id": "EV-22e4f8278c40d63e",
+        "dataDate": "2026-08-06",
+        "date": "2026-08-05",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "LLM 新版本增加对推理轨迹、OpenAI Responses、服务端工具及更智能日志的支持",
+        "displayTags": [],
+        "entityIds": [
+          "EN-11507a0e2f5e69d5",
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-2321e89fad893290",
+        "dataDate": "2026-08-06",
+        "date": "2026-08-06",
+        "eventType": "security_incident",
+        "eventTypeLabel": "安全事件",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "涉及OpenAI模型的第三方网络评估",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-55018455fd10b832"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-55018455fd10b832",
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-c6b1535a2034f0f2",
+        "dataDate": "2026-08-06",
+        "date": "2026-08-06",
+        "eventType": "organization_people",
+        "eventTypeLabel": "组织与人员",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "谷歌AI大变动：DeepMind的哈萨比斯卸任，资深科学家离职",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "research_discovery",
+            "name": "科研与发现",
+            "entityIds": [
+              "EN-bbdefa2950f49882"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-2b6e51bec93e86c1",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-97c608a27438073a",
+        "dataDate": "2026-08-06",
+        "date": "2026-08-05",
+        "eventType": "organization_people",
+        "eventTypeLabel": "组织与人员",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic正在招聘AI芯片设计团队",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-ad4f8dd61f82017a",
+        "dataDate": "2026-08-06",
+        "date": "2026-08-05",
+        "eventType": "security_incident",
+        "eventTypeLabel": "安全事件",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "恶意AI智能体在另一次黑客攻击中创建了虚假在线身份",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
       {
         "id": "EV-7dcbf6eab4339b22",
         "dataDate": "2026-08-05",
@@ -728,24 +875,6 @@
         "displayTags": [],
         "entityIds": [
           "EN-c70eca6b0f88f44d"
-        ]
-      },
-      {
-        "id": "EV-22e4f8278c40d63e",
-        "dataDate": "2026-08-05",
-        "date": "2026-08-05",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "LLM 新版本增加对推理轨迹、OpenAI Responses、服务端工具及更智能日志的支持",
-        "displayTags": [],
-        "entityIds": [
-          "EN-11507a0e2f5e69d5",
-          "EN-7d3194f79e645c42",
-          "EN-c70eca6b0f88f44d",
-          "EN-7f871cbf905f6e0c"
         ]
       },
       {
@@ -8987,6 +9116,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-b06624cf36990346",
         "EV-ee1e825af98ecab7",
         "EV-f0d54da5bf0d7399",
         "EV-0e616f9e775a77dc",
@@ -9035,7 +9165,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-05"
+      "lastSeen": "2026-08-06"
     },
     {
       "id": "EN-830abc32d2a443c5",
@@ -9121,9 +9251,7 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -9174,6 +9302,7 @@
         "EV-234ad54940674bf6",
         "EV-da148848ec026bdf",
         "EV-467539fe176a470e",
+        "EV-815fdc6e8911b026",
         "EV-6272444f30281858",
         "EV-92be9fa58b1ee19f",
         "EV-f55d16df5b5fecb2",
@@ -9193,6 +9322,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-39d56d5cef4cea80",
         "EV-6703b102274c3be9",
         "EV-bf4871cd96fc25ac",
         "EV-2ee06634c0ce9f30",
@@ -9310,33 +9440,26 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
+        "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
-        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
-        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
-        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-9bc22dcabf7f45b3",
-        "EN-171fa23d27b5894b"
+        "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-05"
+      "lastSeen": "2026-08-06"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -9424,7 +9547,9 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-b06624cf36990346",
         "EV-22e4f8278c40d63e",
+        "EV-ad6fe30e111608bd",
         "EV-47c32b3ef5c0f57a",
         "EV-54a4809c304587e6",
         "EV-98a77305667148e1",
@@ -9572,6 +9697,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-2321e89fad893290",
+        "EV-ad4f8dd61f82017a",
         "EV-e544a4c3fb59b9b0",
         "EV-31e78ede8fd890bf",
         "EV-7c263093f5e663c9",
@@ -9625,11 +9752,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-retail_ecommerce",
         "TX-industry-aerospace_defense",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
         "TX-industry-professional_services",
-        "TX-industry-retail_ecommerce",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
@@ -9678,7 +9805,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-05"
+      "lastSeen": "2026-08-06"
     },
     {
       "id": "EN-729324072d368379",
@@ -12606,6 +12733,10 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-6249564cff324a0e",
+        "EV-b06624cf36990346",
+        "EV-d817dab5ad88f4d6",
+        "EV-fbe519268ddce396",
         "EV-271b304f0a16b6db",
         "EV-2fa6949af5b36fb0",
         "EV-4b286a3354cbf34a",
@@ -12989,6 +13120,8 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-842fcb5e60989a03",
+        "EN-b81c8201acfc7639",
         "EN-d9b1d7819af92e77",
         "EN-d50883991bfc5a69",
         "EN-b02e43bdec738f2c",
@@ -13038,7 +13171,6 @@
         "EN-cb4754c48f8023d0",
         "EN-820a72d1d4b51ae7",
         "EN-e6483498af8bd2cd",
-        "EN-842fcb5e60989a03",
         "EN-e93e29634540a290",
         "EN-45e0ade11fed1e44",
         "EN-7dd7122ad9bf240f",
@@ -13089,7 +13221,6 @@
         "EN-2d87f3d38782aa14",
         "EN-3631487f282864b7",
         "EN-ce635c4eabff5e4f",
-        "EN-b81c8201acfc7639",
         "EN-82eaaba81d9dcc54",
         "EN-ef6aa1a04b3f52ab",
         "EN-b5251b35f15bedc4",
@@ -13269,6 +13400,7 @@
         "EV-4b545e310ded2baa",
         "EV-778ae7684a4d782e",
         "EV-22f0d8caaa65a6a2",
+        "EV-815fdc6e8911b026",
         "EV-aa7cf8ee6c875f08",
         "EV-2c87c8ea47cbd1b6",
         "EV-48015ed51ec9be9f",
@@ -13383,6 +13515,7 @@
         "EN-5d11926dd637b275",
         "EN-d3565d297d476f10",
         "EN-25690754dd14bd1b",
+        "EN-8dfe7dd8f82c0f5b",
         "EN-4e358c403850a88a",
         "EN-7d3194f79e645c42",
         "EN-c890cfa67d1da908",
@@ -13418,7 +13551,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-08-05"
+      "lastSeen": "2026-08-06"
     },
     {
       "id": "TX-use_case-security_operations",
@@ -13496,6 +13629,7 @@
         "EV-f1418d9e3b1413b7",
         "EV-2eabd03665cbdef7",
         "EV-a35a3871bf36fea2",
+        "EV-2321e89fad893290",
         "EV-6eec30dc1c4f67d5",
         "EV-cc80acf85eec6a3b",
         "EV-94cb16144a8fcfdb",
@@ -13542,6 +13676,7 @@
         "EN-8de7e44229714152",
         "EN-ced86039c0ad6a7c",
         "EN-842a7da99bd249d4",
+        "EN-55018455fd10b832",
         "EN-0cc659a9f57c2493",
         "EN-52d25a9e30ba94f1"
       ],
@@ -13553,7 +13688,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-08-05"
+      "lastSeen": "2026-08-06"
     },
     {
       "id": "TX-use_case-research_discovery",
@@ -13587,6 +13722,7 @@
         "EV-11b2293769081d4c",
         "EV-f4ead1a54e596bf8",
         "EV-d961d3ad02f6ae14",
+        "EV-c6b1535a2034f0f2",
         "EV-14b44a40808340f5"
       ],
       "entityIds": [
@@ -13610,12 +13746,13 @@
         "EN-a83a3af1a4866fd5",
         "EN-023e881577ad3ab1",
         "EN-8d4321d936320802",
+        "EN-bbdefa2950f49882",
         "EN-7d3194f79e645c42"
       ],
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-04"
+      "lastSeen": "2026-08-06"
     },
     {
       "id": "TX-product_form-model",
@@ -13689,6 +13826,7 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-10c4f4db6c3f2d72",
         "EV-bf4871cd96fc25ac",
         "EV-e05e2ff09137017d",
         "EV-4b286a3354cbf34a",
@@ -13947,7 +14085,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-05"
+      "lastSeen": "2026-08-06"
     },
     {
       "id": "TX-use_case-software_development",
@@ -14015,6 +14153,9 @@
         "EV-d209a6acecba4285",
         "EV-75b9b997e9c7e5d1",
         "EV-b2e374d54b10b9af",
+        "EV-91d4c91861a715c1",
+        "EV-ad6fe30e111608bd",
+        "EV-d817dab5ad88f4d6",
         "EV-bfa090c78227abf8",
         "EV-443e093ab54d0228",
         "EV-0f440082086c02df",
@@ -14088,10 +14229,11 @@
         "EN-df30a48992da7fe8",
         "EN-3db1f560db626918",
         "EN-7c3482959a6cdd3f",
+        "EN-ea3bd73e2b506e00",
+        "EN-7d3194f79e645c42",
         "EN-76a9a8a6e2f1a47b",
         "EN-240389f4b730bad4",
         "EN-bbdefa2950f49882",
-        "EN-7d3194f79e645c42",
         "EN-916a98f0fa2a39af",
         "EN-1d79127e9d90e89b",
         "EN-4adc2faea521b1f1",
@@ -14114,7 +14256,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-04"
+      "lastSeen": "2026-08-06"
     },
     {
       "id": "TX-product_form-chip_accelerator",
@@ -14165,6 +14307,7 @@
         "EV-93fad8e0e30e442c",
         "EV-3d8608d3e78e031b",
         "EV-8fcb52bb6ec980af",
+        "EV-db304937ceac95d2",
         "EV-9f06b3f05f18b81e",
         "EV-5772d3b77ffa73e2",
         "EV-0a4e9b2eca953036",
@@ -14243,6 +14386,7 @@
         "EN-51a3a4589db68480",
         "EN-222f930b87524636",
         "EN-f4bec299df3f4f27",
+        "EN-920510199770f4d6",
         "EN-0281afdb2d56c1e6",
         "EN-36b1dbc8da066a19",
         "EN-240389f4b730bad4",
@@ -14303,7 +14447,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-04"
+      "lastSeen": "2026-08-06"
     },
     {
       "id": "TX-use_case-data_analysis",
@@ -14909,6 +15053,7 @@
         "EV-1abf0d076d30ec6d",
         "EV-d2a623e8eef1f61d",
         "EV-f55d16df5b5fecb2",
+        "EV-db304937ceac95d2",
         "EV-cfba8b877da20eaf",
         "EV-63858d9b5ef92175",
         "EV-890ffd351486b884",
@@ -14952,7 +15097,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-05"
+      "lastSeen": "2026-08-06"
     },
     {
       "id": "TX-technology-model_context_protocol",
@@ -15009,6 +15154,8 @@
         "EV-d1e2a7c6d314612c",
         "EV-b240fb11e65b018e",
         "EV-fe63a869fe4cee45",
+        "EV-39d56d5cef4cea80",
+        "EV-db304937ceac95d2",
         "EV-5ec22cf9a1fb59d4",
         "EV-3b7b9040dd2c2a89",
         "EV-cf176636839e45be",
@@ -15020,6 +15167,7 @@
       "entityIds": [
         "EN-ddadc7e89f7cd629",
         "EN-c70eca6b0f88f44d",
+        "EN-920510199770f4d6",
         "EN-7d3194f79e645c42",
         "EN-efa98ef1e586ac73",
         "EN-ae31f30d39374a8b",
@@ -15032,7 +15180,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-06-11",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-08-06"
     },
     {
       "id": "TX-technology-tool_use",
@@ -16028,13 +16176,13 @@
     {
       "id": "HWC-82c56cc41d0db4b4",
       "snapshotKey": "82c56cc41d0db4b4",
-      "snapshotId": "HWS-047052b015d16803",
+      "snapshotId": "HWS-5b1a0752a6b88d14",
       "eventId": "EV-22e4f8278c40d63e",
       "eventIds": [
         "EV-22e4f8278c40d63e"
       ],
-      "dataDate": "2026-08-05",
-      "date": "2026-08-05",
+      "dataDate": "2026-08-06",
+      "date": "2026-08-06",
       "title": "New",
       "subject": "New",
       "productNames": [],
@@ -16046,18 +16194,28 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-3aab588367ebae33"
+          "fact_ref": "HWF-4668680fa3474878"
         }
       },
       "factCount": 3,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-06",
+          "previousDate": "2026-08-05",
+          "snapshotId": "HWS-5b1a0752a6b88d14",
+          "previousSnapshotId": "HWS-047052b015d16803",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-05",
-          "hardware_fact_id": "HWF-8668aff6e51adf2b",
+          "data_date": "2026-08-06",
+          "hardware_fact_id": "HWF-a70f4ef23016a7a1",
           "fact_type": "product",
           "observed_at": "2026-08-04T23:58:24.000Z",
           "subject_entity_id": "EN-11507a0e2f5e69d5",
@@ -16071,15 +16229,15 @@
           "event_refs": [
             "EV-22e4f8278c40d63e"
           ],
-          "claim_ref": "CL-0fa53ca19ba460b4",
+          "claim_ref": "CL-43cf33d8245d2bcd",
           "source_refs": [
-            "SA-18ec89cf0ea99dc6"
+            "SA-8584b650657df100"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-05/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-06/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-05",
-          "hardware_fact_id": "HWF-64cfbdf6e5b5aa35",
+          "data_date": "2026-08-06",
+          "hardware_fact_id": "HWF-d34c71687a45eebf",
           "fact_type": "product",
           "observed_at": "2026-08-04T23:58:24.000Z",
           "subject_entity_id": "EN-11507a0e2f5e69d5",
@@ -16093,15 +16251,15 @@
           "event_refs": [
             "EV-22e4f8278c40d63e"
           ],
-          "claim_ref": "CL-46bf04059e9d58de",
+          "claim_ref": "CL-4ee858594d1fb357",
           "source_refs": [
-            "SA-18ec89cf0ea99dc6"
+            "SA-8584b650657df100"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-05/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-06/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-05",
-          "hardware_fact_id": "HWF-3aab588367ebae33",
+          "data_date": "2026-08-06",
+          "hardware_fact_id": "HWF-4668680fa3474878",
           "fact_type": "product",
           "observed_at": "2026-08-04T23:58:24.000Z",
           "subject_entity_id": "EN-11507a0e2f5e69d5",
@@ -16111,15 +16269,15 @@
           "component_type": "server",
           "metric_value": "",
           "unit": "",
-          "source_quote": "I released LLM 0.32 this morning, the most significant new version of LLM since the initial launch of the project. The new version includes support for visible reasoning traces, server-side provider tools, redesigned content-addressable SQLite logs, new models, and new features enabled by the OpenAI Responses API. I also released new versions of the llm-anthropic , llm-gemini , and llm-openrouter plugins, each with substantial updates of their own.",
+          "source_quote": "I released LLM 0.32 this morning, the most significant new version of LLM since the initial launch of the project. The new version includes support for visible reasoning traces, server-side provider tools, redesigned content-addressable SQLite logs, new models, and new features enabled by the OpenAI Responses API. I also released a new version of the llm-anthropic plugin with substantial updates of its own.",
           "event_refs": [
             "EV-22e4f8278c40d63e"
           ],
-          "claim_ref": "CL-a624017125310beb",
+          "claim_ref": "CL-d40442455a25dd72",
           "source_refs": [
-            "SA-18ec89cf0ea99dc6"
+            "SA-8584b650657df100"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-05/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-06/hardware-facts.json"
         }
       ],
       "capexFacts": [],
@@ -16128,8 +16286,7 @@
       "entityIds": [
         "EN-11507a0e2f5e69d5",
         "EN-7d3194f79e645c42",
-        "EN-c70eca6b0f88f44d",
-        "EN-7f871cbf905f6e0c"
+        "EN-c70eca6b0f88f44d"
       ]
     }
   ]

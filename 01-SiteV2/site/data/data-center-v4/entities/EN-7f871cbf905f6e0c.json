@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-05T04:25:15.287Z",
-    "latestDataDate": "2026-08-05",
-    "currentDate": "2026-08-05",
-    "eventCount": 1868,
+    "generatedAt": "2026-08-06T00:23:45.681Z",
+    "latestDataDate": "2026-08-06",
+    "currentDate": "2026-08-06",
+    "eventCount": 1888,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -24,7 +24,6 @@
     "eventIds": [
       "EV-cf6e7a2edad82c6f",
       "EV-0e84a2f49d765ce3",
-      "EV-22e4f8278c40d63e",
       "EV-96198b8644eb94d9",
       "EV-caec65aef89d3b4a",
       "EV-ab3586268ebfab38",
@@ -44,7 +43,7 @@
       "EN-779965438dd9e7a7"
     ],
     "firstSeen": "2026-06-08",
-    "lastSeen": "2026-08-05",
+    "lastSeen": "2026-08-03",
     "relationIds": [
       "REL2-eaf27cde7b70ddb9"
     ],
@@ -56,7 +55,6 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
-        "EV-22e4f8278c40d63e",
         "EV-96198b8644eb94d9",
         "EV-caec65aef89d3b4a",
         "EV-ab3586268ebfab38"
@@ -68,24 +66,6 @@
       ]
     },
     "timeline": [
-      {
-        "id": "EV-22e4f8278c40d63e",
-        "dataDate": "2026-08-05",
-        "date": "2026-08-05",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "LLM 新版本增加对推理轨迹、OpenAI Responses、服务端工具及更智能日志的支持",
-        "displayTags": [],
-        "entityIds": [
-          "EN-11507a0e2f5e69d5",
-          "EN-7d3194f79e645c42",
-          "EN-c70eca6b0f88f44d",
-          "EN-7f871cbf905f6e0c"
-        ]
-      },
       {
         "id": "EV-96198b8644eb94d9",
         "dataDate": "2026-08-03",
@@ -1096,6 +1076,7 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-10c4f4db6c3f2d72",
         "EV-bf4871cd96fc25ac",
         "EV-e05e2ff09137017d",
         "EV-4b286a3354cbf34a",
@@ -1354,7 +1335,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-05"
+      "lastSeen": "2026-08-06"
     },
     {
       "id": "TX-use_case-software_development",
@@ -1422,6 +1403,9 @@
         "EV-d209a6acecba4285",
         "EV-75b9b997e9c7e5d1",
         "EV-b2e374d54b10b9af",
+        "EV-91d4c91861a715c1",
+        "EV-ad6fe30e111608bd",
+        "EV-d817dab5ad88f4d6",
         "EV-bfa090c78227abf8",
         "EV-443e093ab54d0228",
         "EV-0f440082086c02df",
@@ -1495,10 +1479,11 @@
         "EN-df30a48992da7fe8",
         "EN-3db1f560db626918",
         "EN-7c3482959a6cdd3f",
+        "EN-ea3bd73e2b506e00",
+        "EN-7d3194f79e645c42",
         "EN-76a9a8a6e2f1a47b",
         "EN-240389f4b730bad4",
         "EN-bbdefa2950f49882",
-        "EN-7d3194f79e645c42",
         "EN-916a98f0fa2a39af",
         "EN-1d79127e9d90e89b",
         "EN-4adc2faea521b1f1",
@@ -1521,7 +1506,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-04"
+      "lastSeen": "2026-08-06"
     },
     {
       "id": "TX-ai_market_subcategory-development_deployment",
@@ -1725,114 +1710,5 @@
     }
   ],
   "fde": [],
-  "hardware": [],
-  "hardwareCatalog": [
-    {
-      "id": "HWC-82c56cc41d0db4b4",
-      "snapshotKey": "82c56cc41d0db4b4",
-      "snapshotId": "HWS-047052b015d16803",
-      "eventId": "EV-22e4f8278c40d63e",
-      "eventIds": [
-        "EV-22e4f8278c40d63e"
-      ],
-      "dataDate": "2026-08-05",
-      "date": "2026-08-05",
-      "title": "New",
-      "subject": "New",
-      "productNames": [],
-      "hardwareType": "server",
-      "factTypes": [
-        "product"
-      ],
-      "latestValues": {
-        "product": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-3aab588367ebae33"
-        }
-      },
-      "factCount": 3,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-08-05",
-          "hardware_fact_id": "HWF-8668aff6e51adf2b",
-          "fact_type": "product",
-          "observed_at": "2026-08-04T23:58:24.000Z",
-          "subject_entity_id": "EN-11507a0e2f5e69d5",
-          "subject_name": "New",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "server",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
-          "event_refs": [
-            "EV-22e4f8278c40d63e"
-          ],
-          "claim_ref": "CL-0fa53ca19ba460b4",
-          "source_refs": [
-            "SA-18ec89cf0ea99dc6"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-05/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-08-05",
-          "hardware_fact_id": "HWF-64cfbdf6e5b5aa35",
-          "fact_type": "product",
-          "observed_at": "2026-08-04T23:58:24.000Z",
-          "subject_entity_id": "EN-11507a0e2f5e69d5",
-          "subject_name": "New",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "server",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
-          "event_refs": [
-            "EV-22e4f8278c40d63e"
-          ],
-          "claim_ref": "CL-46bf04059e9d58de",
-          "source_refs": [
-            "SA-18ec89cf0ea99dc6"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-05/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-08-05",
-          "hardware_fact_id": "HWF-3aab588367ebae33",
-          "fact_type": "product",
-          "observed_at": "2026-08-04T23:58:24.000Z",
-          "subject_entity_id": "EN-11507a0e2f5e69d5",
-          "subject_name": "New",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "server",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "I released LLM 0.32 this morning, the most significant new version of LLM since the initial launch of the project. The new version includes support for visible reasoning traces, server-side provider tools, redesigned content-addressable SQLite logs, new models, and new features enabled by the OpenAI Responses API. I also released new versions of the llm-anthropic , llm-gemini , and llm-openrouter plugins, each with substantial updates of their own.",
-          "event_refs": [
-            "EV-22e4f8278c40d63e"
-          ],
-          "claim_ref": "CL-a624017125310beb",
-          "source_refs": [
-            "SA-18ec89cf0ea99dc6"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-05/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [],
-      "sourceUrl": "https://simonwillison.net/2026/Aug/4/new-release-of-llm",
-      "entityIds": [
-        "EN-11507a0e2f5e69d5",
-        "EN-7d3194f79e645c42",
-        "EN-c70eca6b0f88f44d",
-        "EN-7f871cbf905f6e0c"
-      ]
-    }
-  ]
+  "hardware": []
 }
