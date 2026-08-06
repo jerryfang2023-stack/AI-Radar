@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-05T04:25:15.287Z",
-    "latestDataDate": "2026-08-05",
-    "currentDate": "2026-08-05",
-    "eventCount": 1868,
+    "generatedAt": "2026-08-06T00:23:45.681Z",
+    "latestDataDate": "2026-08-06",
+    "currentDate": "2026-08-06",
+    "eventCount": 1888,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -19,6 +19,7 @@
     "valueId": "vision_language",
     "eventIds": [
       "EV-6f092cfc7a064d64",
+      "EV-39d56d5cef4cea80",
       "EV-03ab7d0b40d1e5b5",
       "EV-ba89f9414be0b041",
       "EV-c5a59cb4cc9d7e8e",
@@ -37,7 +38,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-06-06",
-    "lastSeen": "2026-07-22"
+    "lastSeen": "2026-08-06"
   },
   "events": [
     {
@@ -385,6 +386,175 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/07/16/how-a-former-deepmind-researcher-raised-at-a-300m-pre-seed-valuation-before-launching-a-product",
       "publisher": "TechCrunch AI"
+    },
+    {
+      "id": "EV-39d56d5cef4cea80",
+      "dataDate": "2026-08-06",
+      "date": "2026-08-05",
+      "updatedDate": "2026-08-06",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "NVIDIA 发布 Alpamayo 2 Super：面向 Robotaxi 与自动驾驶的 34B 开源视觉-语言-动作模型",
+      "originalTitle": "",
+      "subject": "NVIDIA 发布 Alpamayo 2 Super：面向 Robotaxi 与自动驾驶的 34B",
+      "action": "开源视觉-语言-动作模型",
+      "object": "NVIDIA 发布 Alpamayo 2 Super：面向 Robotaxi 与自动驾驶的 34B 开源视觉-语言-动作模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00",
+        "EN-9bc22dcabf7f45b3"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Meta",
+        "Alpamayo 2 Super"
+      ],
+      "productName": "Alpamayo 2 Super",
+      "products": [
+        {
+          "name": "Alpamayo 2 Super",
+          "type": "模型",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/08/05/nvidia-alpamayo-2-super-open-vla-model-autonomous-driving",
+      "publisher": "MarkTechPost（RSS）"
     },
     {
       "id": "EV-03ab7d0b40d1e5b5",
@@ -1202,6 +1372,7 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
+        "EV-e234a2e2418ebdf1",
         "EV-eb12fb9dd08e5aad",
         "EV-7a0f201debe99f2b",
         "EV-60110525440fac47",
@@ -1218,6 +1389,7 @@
         "EV-3ef3e18df61a00d8",
         "EV-568d2aeab5234e48",
         "EV-f68e00bb9fd49fac",
+        "EV-c6b1535a2034f0f2",
         "EV-d46aa5935d9bb672",
         "EV-3e9a0d1be6de5096",
         "EV-e96aba142e46eba1",
@@ -1253,7 +1425,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-06"
     },
     {
       "id": "EN-593d0361124f348f",

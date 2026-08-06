@@ -5,13 +5,83 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-05T04:25:15.287Z",
-    "latestDataDate": "2026-08-05",
-    "currentDate": "2026-08-05",
-    "eventCount": 1868,
+    "generatedAt": "2026-08-06T00:23:45.681Z",
+    "latestDataDate": "2026-08-06",
+    "currentDate": "2026-08-06",
+    "eventCount": 1888,
     "quarantinedEventCount": 16
   },
   "relationships": [
+    {
+      "relationship_id": "REL2-5adcd6a62a7c957e",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-8d4321d936320802",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-9bc22dcabf7f45b3",
+      "object_type": "entity",
+      "event_id": "EV-39d56d5cef4cea80",
+      "claim_refs": [
+        "CL-b848f99dd7216003",
+        "CL-e03d5f50e788880d",
+        "CL-3c14bc26de86aaf4",
+        "CL-31aa0ce4338ff574"
+      ],
+      "source_refs": [
+        "SA-3d784831f83a7c5b"
+      ],
+      "data_date": "2026-08-06",
+      "status": "verified",
+      "subjectName": "NVIDIA",
+      "objectName": "Alpamayo 2 Super",
+      "predicateLabel": "发布",
+      "title": "NVIDIA 发布 Alpamayo 2 Super",
+      "eventTitle": "NVIDIA 发布 Alpamayo 2 Super：面向 Robotaxi 与自动驾驶的 34B 开源视觉-语言-动作模型",
+      "eventDate": "2026-08-05",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-b848f99dd7216003",
+          "subject": "NVIDIA 发布 Alpamayo 2 Super：面向 Robotaxi 与自动驾驶的 34B",
+          "object": "Yes, and for commercial use from day one. The weights are released under OpenMDW-1.1, the Linux Foundation’s permissive license for open model distributions; source code is Apache 2.0. The license covers fine-tuning, derivative models and commercial redistribution. NVIDIA is applying OpenMDW across the entire Alpamayo family, so earlier releases introduced for R&D are now deployable commercially without additional permission.",
+          "quote": "Yes, and for commercial use from day one. The weights are released under OpenMDW-1.1, the Linux Foundation’s permissive license for open model distributions; source code is Apache 2.0. The license covers fine-tuning, derivative models and commercial redistribution. NVIDIA is applying OpenMDW across the entire Alpamayo family, so earlier releases introduced for R&D are now deployable commercially without additional permission."
+        },
+        {
+          "id": "CL-e03d5f50e788880d",
+          "subject": "NVIDIA 发布 Alpamayo 2 Super：面向 Robotaxi 与自动驾驶的 34B",
+          "object": "That combination is what makes the release interesting operationally. Developers can tie what the model observed to the action it chose. CoC traces integrate with NVIDIA Halos safety-validation workflows and support AI safety aligned with ISO/PAS 8800.",
+          "quote": "That combination is what makes the release interesting operationally. Developers can tie what the model observed to the action it chose. CoC traces integrate with NVIDIA Halos safety-validation workflows and support AI safety aligned with ISO/PAS 8800."
+        },
+        {
+          "id": "CL-3c14bc26de86aaf4",
+          "subject": "NVIDIA 发布 Alpamayo 2 Super：面向 Robotaxi 与自动驾驶的 34B",
+          "object": "NVIDIA has released Alpamayo 2 Super , a 34B-parameter vision-language-action (VLA) mode l for autonomous driving, under an open commercial license. The stated design target is the long-tail events: rare, multi-agent situations that conventional detection-and-prediction stacks handle poorly. The model pairs a 32B VLM backbone, built on NVIDIA Cosmos 3 Super Reasoner and post-trained with reinforcement learning, with a 2.3B diffusion-based action decoder. From one pass over full-surround camera video it emits a planned trajectory, a causal explanation of that trajectory, and a meta-action.",
+          "quote": "NVIDIA has released Alpamayo 2 Super , a 34B-parameter vision-language-action (VLA) mode l for autonomous driving, under an open commercial license. The stated design target is the long-tail events: rare, multi-agent situations that conventional detection-and-prediction stacks handle poorly. The model pairs a 32B VLM backbone, built on NVIDIA Cosmos 3 Super Reasoner and post-trained with reinforcement learning, with a 2.3B diffusion-based action decoder. From one pass over full-surround camera video it emits a planned trajectory, a causal explanation of that trajectory, and a meta-action."
+        },
+        {
+          "id": "CL-31aa0ce4338ff574",
+          "subject": "NVIDIA 发布 Alpamayo 2 Super：面向 Robotaxi 与自动驾驶的 34B",
+          "object": "On LingoQA , Alpamayo 2 Super records a Lingo-Judge score of 79.2 and ranks first among nearly 40 models evaluated. In NVIDIA’s testing it beat Qwen2.5-VL 72B by 17.0 points, Gemini 2.5 Pro by 15.1, and GPT-4o by 23.2.",
+          "quote": "On LingoQA , Alpamayo 2 Super records a Lingo-Judge score of 79.2 and ranks first among nearly 40 models evaluated. In NVIDIA’s testing it beat Qwen2.5-VL 72B by 17.0 points, Gemini 2.5 Pro by 15.1, and GPT-4o by 23.2."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-3d784831f83a7c5b",
+          "publisher": "MarkTechPost（RSS）",
+          "url": "https://marktechpost.com/2026/08/05/nvidia-alpamayo-2-super-open-vla-model-autonomous-driving"
+        }
+      ],
+      "sourceExcerpt": "Yes, and for commercial use from day one. The weights are released under OpenMDW-1.1, the Linux Foundation’s permissive license for open model distributions; source code is Apache 2.0. The license covers fine-tuning, derivative models and commercial redistribution. NVIDIA is applying OpenMDW across the entire Alpamayo family, so earlier releases introduced for R&D are now deployable commercially without additional permission.",
+      "event": {
+        "id": "EV-39d56d5cef4cea80",
+        "title": "NVIDIA 发布 Alpamayo 2 Super：面向 Robotaxi 与自动驾驶的 34B 开源视觉-语言-动作模型",
+        "originalTitle": "",
+        "date": "2026-08-05",
+        "dataDate": "2026-08-06",
+        "eventTypeLabel": "模型发布"
+      }
+    },
     {
       "relationship_id": "REL2-4c6be3fd3d25d6c2",
       "relationship_version": "RELATION-V2.1",
@@ -2715,69 +2785,6 @@
       }
     },
     {
-      "relationship_id": "REL2-a96854ad8a7b0bbc",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-7dfafb44ee67bcd8",
-      "object_type": "entity",
-      "event_id": "EV-828698c8779bb522",
-      "claim_refs": [
-        "CL-802ad84118cf32ec",
-        "CL-4bea83191f9c4afc",
-        "CL-14abc711708348a9"
-      ],
-      "source_refs": [
-        "SA-d31abd0756f4c76a"
-      ],
-      "data_date": "2026-07-23",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "SVD",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 SVD",
-      "eventTitle": "英伟达推出 SVD 服务，识别 AI 生成视频准确率最高达 92%",
-      "eventDate": "2026-07-22",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-802ad84118cf32ec",
-          "subject": "英伟达",
-          "object": "SVD 服务，识别 AI 生成视频准确率最高达 92%",
-          "quote": "英伟达发布合成视频检测器（SVD）服务，识别 AI 生成视频的准确率最高达 92%。"
-        },
-        {
-          "id": "CL-4bea83191f9c4afc",
-          "subject": "英伟达",
-          "object": "SVD 服务，识别 AI 生成视频准确率最高达 92%",
-          "quote": "该服务已整合到 NIM 中，通过逐帧分析视频，利用 Meta 的 DINOv2 和 DINOv3 模型为每帧打分，最终生成百分制评分。"
-        },
-        {
-          "id": "CL-14abc711708348a9",
-          "subject": "英伟达",
-          "object": "SVD 服务，识别 AI 生成视频准确率最高达 92%",
-          "quote": "在 Nvidia RTX GPU 上处理一段 1080p 视频仅需 22 毫秒，50% 压缩率下仍能维持 82% 准确率。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-d31abd0756f4c76a",
-          "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/980/086.htm"
-        }
-      ],
-      "sourceExcerpt": "英伟达发布合成视频检测器（SVD）服务，识别 AI 生成视频的准确率最高达 92%。",
-      "event": {
-        "id": "EV-828698c8779bb522",
-        "title": "英伟达推出 SVD 服务，识别 AI 生成视频准确率最高达 92%",
-        "originalTitle": "",
-        "date": "2026-07-22",
-        "dataDate": "2026-07-23",
-        "eventTypeLabel": "产品发布"
-      }
-    },
-    {
       "relationship_id": "REL2-dd7a6c5dc17ddd5b",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-240389f4b730bad4",
@@ -3564,62 +3571,6 @@
         "title": "腾讯混元发布科学发现智能体 Hyra，能够递归自我改进",
         "originalTitle": "",
         "date": "2026-07-21",
-        "dataDate": "2026-07-22",
-        "eventTypeLabel": "产品发布"
-      }
-    },
-    {
-      "relationship_id": "REL2-7a766493d6d54dde",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-52c2f30b6bda5898",
-      "object_type": "entity",
-      "event_id": "EV-cb3a8846bc4f8aca",
-      "claim_refs": [
-        "CL-45faa3838295a3b1",
-        "CL-770ae8d405e879c6"
-      ],
-      "source_refs": [
-        "SA-2ed6d789fcc56d74"
-      ],
-      "data_date": "2026-07-22",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Vera CPU",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 Vera CPU",
-      "eventTitle": "英伟达详解 Vera CPU：专为智能体 AI 构建，88 个 Olympus 核心、1.2 TB/s LPDDR5X 内存",
-      "eventDate": "2026-07-22",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-45faa3838295a3b1",
-          "subject": "undisclosed_subject",
-          "object": "英伟达详解 Vera CPU：专为智能体 AI 构建，88 个 Olympus 核心、1.2 TB/s LPDDR5X 内存",
-          "quote": "IT之家 7 月 22 日消息，英伟达昨日（7 月 21 日）发布博文，从技术角度详细介绍了 Vera CPU，专为智能体 AI（Agentic AI）场景设计。"
-        },
-        {
-          "id": "CL-770ae8d405e879c6",
-          "subject": "undisclosed_subject",
-          "object": "英伟达详解 Vera CPU：专为智能体 AI 构建，88 个 Olympus 核心、1.2 TB/s LPDDR5X 内存",
-          "quote": "英伟达详解 Vera CPU：专为智能体 AI 构建，88 个 Olympus 核心、1.2 TB/s LPDDR5X 内存 - IT之家"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-2ed6d789fcc56d74",
-          "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/979/834.htm"
-        }
-      ],
-      "sourceExcerpt": "IT之家 7 月 22 日消息，英伟达昨日（7 月 21 日）发布博文，从技术角度详细介绍了 Vera CPU，专为智能体 AI（Agentic AI）场景设计。",
-      "event": {
-        "id": "EV-cb3a8846bc4f8aca",
-        "title": "英伟达详解 Vera CPU：专为智能体 AI 构建，88 个 Olympus 核心、1.2 TB/s LPDDR5X 内存",
-        "originalTitle": "",
-        "date": "2026-07-22",
         "dataDate": "2026-07-22",
         "eventTypeLabel": "产品发布"
       }
@@ -5585,69 +5536,6 @@
       }
     },
     {
-      "relationship_id": "REL2-cd31c7f1b13d1c27",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-aa15d891a32a51b8",
-      "object_type": "entity",
-      "event_id": "EV-950237c6b3eb6343",
-      "claim_refs": [
-        "CL-8a89be65a1a0c758",
-        "CL-515e4015e6d27579",
-        "CL-313db46aab7e3aab"
-      ],
-      "source_refs": [
-        "SA-5bc68137ea7bcb63"
-      ],
-      "data_date": "2026-07-18",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Nemotron 3 Embed",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 Nemotron 3 Embed",
-      "eventTitle": "英伟达开源 Nemotron 3 Embed 系列 AI 模型，8B 版斩获 RTEB 榜首",
-      "eventDate": "2026-07-18",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-8a89be65a1a0c758",
-          "subject": "英伟达",
-          "object": "，8B 版斩获 RTEB 榜首",
-          "quote": "英伟达发布 Nemotron 3 Embed 系列 AI 模型，8B 版斩获 RTEB 榜首 - IT之家"
-        },
-        {
-          "id": "CL-515e4015e6d27579",
-          "subject": "英伟达",
-          "object": "，8B 版斩获 RTEB 榜首",
-          "quote": "英伟达发布 Nemotron 3 Embed 系列 AI 模型，8B 版斩获 RTEB 榜首"
-        },
-        {
-          "id": "CL-313db46aab7e3aab",
-          "subject": "英伟达",
-          "object": "，8B 版斩获 RTEB 榜首",
-          "quote": "IT之家 7 月 18 日消息，英伟达昨日（7 月 17 日）发布博文， 宣布开源推出 Nemotron 3 Embed 系列模型，主要面向 AI 智能体和检索增强生成（RAG）场景。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-5bc68137ea7bcb63",
-          "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/978/334.htm"
-        }
-      ],
-      "sourceExcerpt": "英伟达发布 Nemotron 3 Embed 系列 AI 模型，8B 版斩获 RTEB 榜首 - IT之家",
-      "event": {
-        "id": "EV-950237c6b3eb6343",
-        "title": "英伟达开源 Nemotron 3 Embed 系列 AI 模型，8B 版斩获 RTEB 榜首",
-        "originalTitle": "",
-        "date": "2026-07-18",
-        "dataDate": "2026-07-18",
-        "eventTypeLabel": "模型发布"
-      }
-    },
-    {
       "relationship_id": "REL2-d2669b3b21d3263a",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-8d4321d936320802",
@@ -7213,76 +7101,6 @@
         "date": "2026-07-15",
         "dataDate": "2026-07-15",
         "eventTypeLabel": "产品发布"
-      }
-    },
-    {
-      "relationship_id": "REL2-2106a1b212c3c15f",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "partners_with",
-      "object_ref": "EN-956b7280912ef1cc",
-      "object_type": "entity",
-      "event_id": "EV-5b16886442234f81",
-      "claim_refs": [
-        "CL-23841ec9ad74e5be",
-        "CL-f5588a6595b80582",
-        "CL-f206a4415dd1222e",
-        "CL-35c73e08269377e7"
-      ],
-      "source_refs": [
-        "SA-bc6a154e09c703b9"
-      ],
-      "data_date": "2026-07-15",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Mitsubishi Heavy Industries",
-      "predicateLabel": "合作",
-      "title": "NVIDIA 合作 Mitsubishi Heavy Industries",
-      "eventTitle": "英伟达与三菱重工拟合作，将冷却与能源管理技术融入下一代 AI 数据中心",
-      "eventDate": "2026-07-14",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-23841ec9ad74e5be",
-          "subject": "英伟达与三菱重工拟",
-          "object": "，将冷却与能源管理技术融入下一代 AI 数据中心",
-          "quote": "英伟达与三菱重工拟在 AI 数据中心领域展开合作，将冷却与能源管理技术融入下一代 AI 数据中心 - IT之家"
-        },
-        {
-          "id": "CL-f5588a6595b80582",
-          "subject": "英伟达与三菱重工拟",
-          "object": "，将冷却与能源管理技术融入下一代 AI 数据中心",
-          "quote": "英伟达与三菱重工拟在 AI 数据中心领域展开合作，将冷却与能源管理技术融入下一代 AI 数据中心"
-        },
-        {
-          "id": "CL-f206a4415dd1222e",
-          "subject": "英伟达与三菱重工拟",
-          "object": "，将冷却与能源管理技术融入下一代 AI 数据中心",
-          "quote": "IT之家 7 月 14 日消息，据《日经》今日报道，英伟达正考虑与三菱重工在 AI 数据中心技术领域展开合作， 拟将三菱重工的冷却系统和能源管理技术融入英伟达下一代数据中心 。"
-        },
-        {
-          "id": "CL-35c73e08269377e7",
-          "subject": "英伟达与三菱重工拟",
-          "object": "，将冷却与能源管理技术融入下一代 AI 数据中心",
-          "quote": "IT之家从原报道获悉，英伟达正将其下一代 AI 数据中心定位为“人工智能工厂”，并计划与全球合作伙伴共同建立这些工厂。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-bc6a154e09c703b9",
-          "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/976/724.htm"
-        }
-      ],
-      "sourceExcerpt": "英伟达与三菱重工拟在 AI 数据中心领域展开合作，将冷却与能源管理技术融入下一代 AI 数据中心 - IT之家",
-      "event": {
-        "id": "EV-5b16886442234f81",
-        "title": "英伟达与三菱重工拟合作，将冷却与能源管理技术融入下一代 AI 数据中心",
-        "originalTitle": "",
-        "date": "2026-07-14",
-        "dataDate": "2026-07-15",
-        "eventTypeLabel": "合作"
       }
     },
     {
@@ -10796,69 +10614,6 @@
         "originalTitle": "",
         "date": "2026-07-04",
         "dataDate": "2026-07-05",
-        "eventTypeLabel": "模型发布"
-      }
-    },
-    {
-      "relationship_id": "REL2-09079be08468cadc",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-3ae50afab3e392b8",
-      "object_type": "entity",
-      "event_id": "EV-3028dfadf94c8f4c",
-      "claim_refs": [
-        "CL-e97a7a589b9980c1",
-        "CL-0bbdad6779952a81",
-        "CL-6baa9897903cc3dc"
-      ],
-      "source_refs": [
-        "SA-7d7d63f2484913f7"
-      ],
-      "data_date": "2026-07-04",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Nemotron-Labs-TwoTower",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 Nemotron-Labs-TwoTower",
-      "eventTitle": "英伟达开源 Nemotron-Labs-TwoTower 双塔扩散语言模型",
-      "eventDate": "2026-07-03",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-e97a7a589b9980c1",
-          "subject": "英伟达",
-          "object": "在开源方面，该模型以开源权重形式在 Huggingface 平台发布，授权协议为 NVIDIA Nemotron Open Model License。",
-          "quote": "在开源方面，该模型以开源权重形式在 Huggingface 平台发布，授权协议为 NVIDIA Nemotron Open Model License。"
-        },
-        {
-          "id": "CL-0bbdad6779952a81",
-          "subject": "英伟达",
-          "object": "参数方面，该模型总参数为 60B，采用双塔（TwoTower）架构，包括 30B 的自回归模型（AR）/context Tower 和 30B 的扩散 / 降噪 Tower，每个 Tower 激活 3B 模型，128 个可路由专家。",
-          "quote": "参数方面，该模型总参数为 60B，采用双塔（TwoTower）架构，包括 30B 的自回归模型（AR）/context Tower 和 30B 的扩散 / 降噪 Tower，每个 Tower 激活 3B 模型，128 个可路由专家。"
-        },
-        {
-          "id": "CL-6baa9897903cc3dc",
-          "subject": "英伟达",
-          "object": "IT之家 7 月 3 日消息，英伟达昨日（7 月 2 日）发布博文，宣布推出 Nemotron-Labs-TwoTower，是一种基于预训练自回归骨干网络的离散扩散语言模型， 致力于解决大模型 Token 生成速度瓶颈。",
-          "quote": "IT之家 7 月 3 日消息，英伟达昨日（7 月 2 日）发布博文，宣布推出 Nemotron-Labs-TwoTower，是一种基于预训练自回归骨干网络的离散扩散语言模型， 致力于解决大模型 Token 生成速度瓶颈。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-7d7d63f2484913f7",
-          "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/972/162.htm"
-        }
-      ],
-      "sourceExcerpt": "在开源方面，该模型以开源权重形式在 Huggingface 平台发布，授权协议为 NVIDIA Nemotron Open Model License。",
-      "event": {
-        "id": "EV-3028dfadf94c8f4c",
-        "title": "英伟达开源 Nemotron-Labs-TwoTower 双塔扩散语言模型",
-        "originalTitle": "",
-        "date": "2026-07-03",
-        "dataDate": "2026-07-04",
         "eventTypeLabel": "模型发布"
       }
     },
@@ -20755,132 +20510,6 @@
       }
     },
     {
-      "relationship_id": "REL2-4ba72572dcf15f72",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-11ef7b03c79c9bbd",
-      "object_type": "entity",
-      "event_id": "EV-631197767a45d34c",
-      "claim_refs": [
-        "CL-a5be3ebbffb97ab9",
-        "CL-4e30f271c8017d66",
-        "CL-bb382a9773443f24"
-      ],
-      "source_refs": [
-        "SA-b74ed4d2a25dc3b4"
-      ],
-      "data_date": "2026-06-01",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Vera",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 Vera",
-      "eventTitle": "英伟达 Vera 处理器发布：专为 AI 智能体打造，OpenAI、SpaceXAI、字节跳动都要用",
-      "eventDate": "2026-06-01",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-a5be3ebbffb97ab9",
-          "subject": "英伟达 Vera 处理器",
-          "object": "：专为 AI 智能体打造，OpenAI、SpaceXAI、字节跳动都要用",
-          "quote": "IT之家 6 月 1 日消息，在今日的 2026 台北国际电脑展主题演讲中，英伟达 CEO 黄仁勋宣布正式推出 Vera 处理器 。"
-        },
-        {
-          "id": "CL-4e30f271c8017d66",
-          "subject": "英伟达 Vera 处理器",
-          "object": "：专为 AI 智能体打造，OpenAI、SpaceXAI、字节跳动都要用",
-          "quote": "Vera 以 Grace CPU 的成功为基础（迄今为止，Grace CPU 的出货量已接近 250 万片），计划采用 Vera CPU 的客户包括金融巨头 纽约证券交易所、Anthropic、OpenAI 和 SpaceXAI ，以及字节跳动、CoreWeave、Lambda、Nebius、Nscale 和 Oracle 云基础设施（OCI）。"
-        },
-        {
-          "id": "CL-bb382a9773443f24",
-          "subject": "英伟达 Vera 处理器",
-          "object": "：专为 AI 智能体打造，OpenAI、SpaceXAI、字节跳动都要用",
-          "quote": "IT之家从英伟达公告获悉， 从今年秋季开始 ，Vera 系统将通过系统构建商和云合作伙伴提供。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-b74ed4d2a25dc3b4",
-          "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/958/082.htm"
-        }
-      ],
-      "sourceExcerpt": "IT之家 6 月 1 日消息，在今日的 2026 台北国际电脑展主题演讲中，英伟达 CEO 黄仁勋宣布正式推出 Vera 处理器 。",
-      "event": {
-        "id": "EV-631197767a45d34c",
-        "title": "英伟达 Vera 处理器发布：专为 AI 智能体打造，OpenAI、SpaceXAI、字节跳动都要用",
-        "originalTitle": "",
-        "date": "2026-06-01",
-        "dataDate": "2026-06-01",
-        "eventTypeLabel": "产品发布"
-      }
-    },
-    {
-      "relationship_id": "REL2-6e1c341aeaa60f54",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-9bc22dcabf7f45b3",
-      "object_type": "entity",
-      "event_id": "EV-aa63303570154a9b",
-      "claim_refs": [
-        "CL-4119c112dfe6ff3e",
-        "CL-008a6f6f83e5e40d",
-        "CL-eeaddb533e49827c"
-      ],
-      "source_refs": [
-        "SA-4dcdfe948f82b975"
-      ],
-      "data_date": "2026-06-01",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Alpamayo 2 Super",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 Alpamayo 2 Super",
-      "eventTitle": "英伟达推出 Alpamayo 2 Super 开源推理模型，助力 L4 自动驾驶研发",
-      "eventDate": "2026-06-01",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-4119c112dfe6ff3e",
-          "subject": "英伟达",
-          "object": "，助力 L4 自动驾驶研发",
-          "quote": "英伟达推出 Alpamayo 2 Super 开源推理模型，助力 L4 自动驾驶研发 - IT之家"
-        },
-        {
-          "id": "CL-008a6f6f83e5e40d",
-          "subject": "英伟达",
-          "object": "，助力 L4 自动驾驶研发",
-          "quote": "英伟达推出 Alpamayo 2 Super 开源推理模型，助力 L4 自动驾驶研发"
-        },
-        {
-          "id": "CL-eeaddb533e49827c",
-          "subject": "英伟达",
-          "object": "，助力 L4 自动驾驶研发",
-          "quote": "IT之家 6 月 1 日消息，英伟达今日正式推出了 Alpamayo 2 Super，这是一款拥有 320 亿参数、基于推理能力的视觉 - 语言 - 动作（VLA）模型，进一步丰富了英伟达 Alpamayo 系列开源人工智能模型、仿真框架与物理人工智能数据集，助力企业研发安全的 L4 自动驾驶出租车。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-4dcdfe948f82b975",
-          "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/958/092.htm"
-        }
-      ],
-      "sourceExcerpt": "英伟达推出 Alpamayo 2 Super 开源推理模型，助力 L4 自动驾驶研发 - IT之家",
-      "event": {
-        "id": "EV-aa63303570154a9b",
-        "title": "英伟达推出 Alpamayo 2 Super 开源推理模型，助力 L4 自动驾驶研发",
-        "originalTitle": "",
-        "date": "2026-06-01",
-        "dataDate": "2026-06-01",
-        "eventTypeLabel": "模型发布"
-      }
-    },
-    {
       "relationship_id": "REL2-949bfe8ea8e326ed",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-e1517be14d06cdb7",
@@ -20923,69 +20552,6 @@
       "event": {
         "id": "EV-d5daf0537fe7b2d7",
         "title": "MiniMax M3：前沿编码、100万token上下文与原生多模态一体模型",
-        "originalTitle": "",
-        "date": "2026-06-01",
-        "dataDate": "2026-06-01",
-        "eventTypeLabel": "模型发布"
-      }
-    },
-    {
-      "relationship_id": "REL2-cd95b9638b93b057",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-171fa23d27b5894b",
-      "object_type": "entity",
-      "event_id": "EV-67f32771d69084d6",
-      "claim_refs": [
-        "CL-54dd99f7128a923b",
-        "CL-bdbc2f09ee0b8373",
-        "CL-6daec18c87ead702"
-      ],
-      "source_refs": [
-        "SA-471f373438651acc"
-      ],
-      "data_date": "2026-06-01",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Cosmos 3",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 Cosmos 3",
-      "eventTitle": "让机器人看懂世界：英伟达推出全球首款全开源全模态物理 AI 大模型 Cosmos 3",
-      "eventDate": "2026-06-01",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-54dd99f7128a923b",
-          "subject": "让机器人看懂世界：英伟达",
-          "object": "Cosmos 3",
-          "quote": "IT之家 6 月 1 日消息，英伟达今日正式推出英伟达 Cosmos 3，这是一款面向物理人工智能的开放世界基础大模型，依托混合 Transformer 架构打造，在单一系统中融合视觉推理、世界生成与动作预测能力。"
-        },
-        {
-          "id": "CL-bdbc2f09ee0b8373",
-          "subject": "让机器人看懂世界：英伟达",
-          "object": "Cosmos 3",
-          "quote": "英伟达称，Cosmos 3 是全球首款全开源的全模态大模型，可原生理解并生成文本、图像、视频、环境音效及动作内容，物理仿真精度业界领先。"
-        },
-        {
-          "id": "CL-6daec18c87ead702",
-          "subject": "让机器人看懂世界：英伟达",
-          "object": "Cosmos 3",
-          "quote": "Cosmos 3 系列开源前沿全模态模型，将助力开发者实现技术跨越，打造能在现实世界中感知、推理、规划并执行动作的机器人、自动驾驶汽车及视觉人工智能系统。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-471f373438651acc",
-          "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/958/103.htm"
-        }
-      ],
-      "sourceExcerpt": "IT之家 6 月 1 日消息，英伟达今日正式推出英伟达 Cosmos 3，这是一款面向物理人工智能的开放世界基础大模型，依托混合 Transformer 架构打造，在单一系统中融合视觉推理、世界生成与动作预测能力。",
-      "event": {
-        "id": "EV-67f32771d69084d6",
-        "title": "让机器人看懂世界：英伟达推出全球首款全开源全模态物理 AI 大模型 Cosmos 3",
         "originalTitle": "",
         "date": "2026-06-01",
         "dataDate": "2026-06-01",
@@ -21046,62 +20612,6 @@
         "date": "2026-06-01",
         "dataDate": "2026-06-01",
         "eventTypeLabel": "产品发布"
-      }
-    },
-    {
-      "relationship_id": "REL2-f1a8de714fc4b399",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-a3266ab9e10d6105",
-      "object_type": "entity",
-      "event_id": "EV-d43a561da59b2897",
-      "claim_refs": [
-        "CL-b1f07f161ec7dee0",
-        "CL-553758c225568c2a"
-      ],
-      "source_refs": [
-        "SA-ae55abf27e9077a9"
-      ],
-      "data_date": "2026-06-01",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Nemotron 3 Ultra",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 Nemotron 3 Ultra",
-      "eventTitle": "英伟达开源5500亿参数Nemotron 3 Ultra模型",
-      "eventDate": "2026-06-01",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-b1f07f161ec7dee0",
-          "subject": "英伟达",
-          "object": "英伟达发布 5500 亿参数 Nemotron 3 Ultra 开源模型，较同级别前沿模型推理速度最高提升 5 倍 - IT之家",
-          "quote": "英伟达发布 5500 亿参数 Nemotron 3 Ultra 开源模型，较同级别前沿模型推理速度最高提升 5 倍 - IT之家"
-        },
-        {
-          "id": "CL-553758c225568c2a",
-          "subject": "英伟达",
-          "object": "英伟达发布 5500 亿参数 Nemotron 3 Ultra 开源模型，较同级别前沿模型推理速度最高提升 5 倍",
-          "quote": "英伟达发布 5500 亿参数 Nemotron 3 Ultra 开源模型，较同级别前沿模型推理速度最高提升 5 倍"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-ae55abf27e9077a9",
-          "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/958/090.htm"
-        }
-      ],
-      "sourceExcerpt": "英伟达发布 5500 亿参数 Nemotron 3 Ultra 开源模型，较同级别前沿模型推理速度最高提升 5 倍 - IT之家",
-      "event": {
-        "id": "EV-d43a561da59b2897",
-        "title": "英伟达开源5500亿参数Nemotron 3 Ultra模型",
-        "originalTitle": "",
-        "date": "2026-06-01",
-        "dataDate": "2026-06-01",
-        "eventTypeLabel": "模型发布"
       }
     },
     {

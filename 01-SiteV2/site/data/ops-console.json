@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-08-05T01:18:41.224Z",
-    "date": "2026-08-05",
+    "generatedAt": "2026-08-06T00:25:26.781Z",
+    "date": "2026-08-06",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
       "01-SiteV2/site/data/pipeline-dashboard.json",
@@ -42,7 +42,7 @@
     }
   ],
   "daily": {
-    "date": "2026-08-05",
+    "date": "2026-08-06",
     "status": "passed",
     "statusText": "已通过",
     "issueSummary": {
@@ -57,20 +57,19 @@
   "periods": {
     "weekly": {
       "windowDays": 7,
-      "total": 4,
+      "total": 2,
       "open": 0,
-      "resolved": 4,
+      "resolved": 2,
       "byLane": {
-        "business_signals": 3,
-        "community_intelligence": 1
+        "business_signals": 2
       },
       "byCategory": {
-        "recurring_automation_issue": 4
+        "recurring_automation_issue": 2
       },
       "recurring": [
         {
           "category": "recurring_automation_issue",
-          "count": 4
+          "count": 2
         }
       ],
       "latest": [
@@ -117,50 +116,6 @@
           "validation": "2026-08-04 final-closure passed business_signals; V4 integrity passed; Pages success; local dirtyFiles=0 and fastForwarded=true; npm run assert:windows-automation passed 7/7",
           "prevention": "context/08-automation.md runtime isolation contract plus assert:windows-automation scheduled-task gate",
           "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-02-business-signals-recurring-05f820ce67869f02.md"
-        },
-        {
-          "id": "2026-07-30-community-intelligence-recurring-73a400f41c5af405",
-          "date": "2026-07-30",
-          "title": "Recurring warning: community_intelligence",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "community_intelligence",
-          "category": "recurring_automation_issue",
-          "failedGate": "repeated daily supervision signal",
-          "reportPath": "agent-workflow/reports/2026-07-26-daily-supervision-report.json",
-          "dataGenerated": "inspect linked daily reports",
-          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
-          "createdAt": "2026-07-30T08:45:26.578Z",
-          "updatedAt": "2026-08-02T12:59:54+08:00",
-          "resolvedAt": "2026-08-02T12:59:54+08:00",
-          "resolver": "codex",
-          "fixCommit": "dae49febd",
-          "validation": "npm test; 2026-08-02 daily supervision community_intelligence passed",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-30-community-intelligence-recurring-73a400f41c5af405.md"
-        },
-        {
-          "id": "2026-07-30-business-signals-recurring-fef63b1d095e1eec",
-          "date": "2026-07-30",
-          "title": "Recurring warning: business_signals",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "business_signals",
-          "category": "recurring_automation_issue",
-          "failedGate": "repeated daily supervision signal",
-          "reportPath": "agent-workflow/reports/2026-07-27-daily-supervision-report.json",
-          "dataGenerated": "inspect linked daily reports",
-          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
-          "createdAt": "2026-07-30T08:45:26.579Z",
-          "updatedAt": "2026-08-02T12:59:53+08:00",
-          "resolvedAt": "2026-08-02T12:59:53+08:00",
-          "resolver": "codex",
-          "fixCommit": "dae49febd",
-          "validation": "npm test; 2026-08-02 daily supervision business_signals passed",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-30-business-signals-recurring-fef63b1d095e1eec.md"
         }
       ]
     },
@@ -502,15 +457,15 @@
           },
           {
             "label": "Claims",
-            "value": 76
+            "value": 70
           },
           {
             "label": "Events",
-            "value": 30
+            "value": 23
           },
           {
             "label": "QA",
-            "value": 219
+            "value": 223
           }
         ]
       },
@@ -551,16 +506,16 @@
       {
         "id": "collection",
         "label": "采集",
-        "status": "passed",
+        "status": "partial",
         "counts": {
           "discovered": 290,
-          "capture_succeeded": 250,
-          "capture_failed": 0,
-          "raw_documents": 250
+          "capture_succeeded": 245,
+          "capture_failed": 3,
+          "raw_documents": 245
         },
         "evidence": [
-          "01-SiteV2/content/11-databases/data-center-v4/2026-08-05/manifest.json",
-          "agent-workflow/reports/2026-08-05-guanlan-daily-monitor-log.md"
+          "01-SiteV2/content/11-databases/data-center-v4/2026-08-06/manifest.json",
+          "agent-workflow/reports/2026-08-06-guanlan-daily-monitor-log.md"
         ]
       },
       {
@@ -568,20 +523,20 @@
         "label": "事实构建",
         "status": "passed",
         "counts": {
-          "accepted_claims": 76,
+          "accepted_claims": 70,
           "rejected_claims": 0,
-          "accepted": 76,
+          "accepted": 70,
           "rejected": 0,
-          "pending_claims": 5,
-          "canonical_events": 30,
-          "entities": 42,
-          "relationships": 81,
+          "pending_claims": 4,
+          "canonical_events": 23,
+          "entities": 27,
+          "relationships": 74,
           "conflicts": 0,
-          "qa_queue": 219
+          "qa_queue": 223
         },
         "evidence": [
-          "01-SiteV2/content/11-databases/data-center-v4/2026-08-05/manifest.json",
-          "agent-workflow/reports/2026-08-05-data-center-v4-integrity-gate.json"
+          "01-SiteV2/content/11-databases/data-center-v4/2026-08-06/manifest.json",
+          "agent-workflow/reports/2026-08-06-data-center-v4-integrity-gate.json"
         ]
       },
       {
@@ -595,7 +550,7 @@
           "fde_hardware_sync": "passed"
         },
         "evidence": [
-          "agent-workflow/reports/2026-08-05-persistent-asset-manifest.json"
+          "agent-workflow/reports/2026-08-06-persistent-asset-manifest.json"
         ]
       },
       {
@@ -606,18 +561,18 @@
           "v4_bundle_ready": true
         },
         "evidence": [
-          "agent-workflow/reports/2026-08-05-persistent-asset-manifest.json"
+          "agent-workflow/reports/2026-08-06-persistent-asset-manifest.json"
         ]
       }
     ],
     "latestProduction": {
-      "date": "2026-08-05",
-      "discovered": 250,
-      "captured": 250,
-      "claims": 81,
-      "events": 30,
-      "entities": 42,
-      "relationships": 81
+      "date": "2026-08-06",
+      "discovered": 245,
+      "captured": 245,
+      "claims": 74,
+      "events": 23,
+      "entities": 27,
+      "relationships": 74
     },
     "sync": [
       {
@@ -638,7 +593,7 @@
       {
         "label": "Pipeline Dashboard",
         "status": "passed",
-        "detail": "2026-08-05T01:18:41.189Z"
+        "detail": "2026-08-06T00:25:26.745Z"
       },
       {
         "label": "Daily Supervision",
@@ -652,40 +607,41 @@
       "meta": {
         "version": "COLLECTION-TELEMETRY-V1.0",
         "ops_version": "OPS-V2.0.0-v4-telemetry",
-        "data_date": "2026-08-05",
-        "generated_at": "2026-08-05T01:18:41.149Z",
+        "data_date": "2026-08-06",
+        "generated_at": "2026-08-06T00:25:26.705Z",
         "scope": "OPS",
         "canonical_writeback": false,
         "source_of_truth": "Data Center V4 manifest and integrity gate"
       },
       "collection": {
         "discovered": 290,
-        "capture_succeeded": 250,
-        "capture_failed": 0,
-        "raw_documents": 250
+        "capture_succeeded": 245,
+        "capture_failed": 3,
+        "raw_documents": 245
       },
       "factBuild": {
-        "accepted_claims": 76,
+        "accepted_claims": 70,
         "rejected_claims": 0,
-        "accepted": 76,
+        "accepted": 70,
         "rejected": 0,
-        "pending_claims": 5,
-        "canonical_events": 30,
-        "entities": 42,
-        "relationships": 81,
+        "pending_claims": 4,
+        "canonical_events": 23,
+        "entities": 27,
+        "relationships": 74,
         "conflicts": 0,
-        "qa_queue": 219,
+        "qa_queue": 223,
         "qa_by_status": {
-          "review_optional": 194,
-          "open": 25
+          "review_optional": 204,
+          "open": 19
         }
       },
       "v4Gate": {
         "status": "passed",
-        "manifest_date": "2026-08-05",
-        "gate_date": "2026-08-05",
+        "manifest_date": "2026-08-06",
+        "gate_date": "2026-08-06",
         "failures": [],
         "warnings": [
+          "No source-bounded FDE projection was produced.",
           "No source-bounded hardware projection was produced."
         ]
       },
@@ -708,47 +664,47 @@
     },
     "pipelineMeta": {
       "version": "OPS-V2.0.0-v4-telemetry",
-      "generatedAt": "2026-08-05T01:18:41.189Z",
+      "generatedAt": "2026-08-06T00:25:26.745Z",
       "dateRange": {
-        "start": "2026-07-30",
-        "end": "2026-08-05"
+        "start": "2026-07-31",
+        "end": "2026-08-06"
       },
       "source": "Data Center V4 manifest + collection-telemetry-v1",
       "telemetryVersion": "COLLECTION-TELEMETRY-V1.0"
     },
     "latest": {
-      "date": "2026-08-05",
-      "label": "2026.08.05",
-      "shortLabel": "08.05",
-      "discovered": 250,
-      "captured": 250,
-      "claims": 81,
-      "events": 30,
-      "entities": 42,
-      "relationships": 81,
+      "date": "2026-08-06",
+      "label": "2026.08.06",
+      "shortLabel": "08.06",
+      "discovered": 245,
+      "captured": 245,
+      "claims": 74,
+      "events": 23,
+      "entities": 27,
+      "relationships": 74,
       "conflicts": 0,
-      "qaQueue": 219,
-      "telemetryDate": "2026-08-05",
+      "qaQueue": 223,
+      "telemetryDate": "2026-08-06",
       "collection": {
         "discovered": 290,
-        "capture_succeeded": 250,
-        "capture_failed": 0,
-        "raw_documents": 250
+        "capture_succeeded": 245,
+        "capture_failed": 3,
+        "raw_documents": 245
       },
       "factBuild": {
-        "accepted_claims": 76,
+        "accepted_claims": 70,
         "rejected_claims": 0,
-        "accepted": 76,
+        "accepted": 70,
         "rejected": 0,
-        "pending_claims": 5,
-        "canonical_events": 30,
-        "entities": 42,
-        "relationships": 81,
+        "pending_claims": 4,
+        "canonical_events": 23,
+        "entities": 27,
+        "relationships": 74,
         "conflicts": 0,
-        "qa_queue": 219,
+        "qa_queue": 223,
         "qa_by_status": {
-          "review_optional": 194,
-          "open": 25
+          "review_optional": 204,
+          "open": 19
         }
       },
       "applicationProjection": {
@@ -762,16 +718,29 @@
       }
     },
     "totals": {
-      "discovered": 1686,
-      "captured": 1686,
-      "claims": 643,
-      "events": 209,
-      "entities": 313,
-      "relationships": 643,
+      "discovered": 1752,
+      "captured": 1752,
+      "claims": 630,
+      "events": 204,
+      "entities": 302,
+      "relationships": 630,
       "conflicts": 1,
-      "qaQueue": 1472
+      "qaQueue": 1546
     },
     "days": [
+      {
+        "date": "2026-08-06",
+        "label": "2026.08.06",
+        "shortLabel": "08.06",
+        "discovered": 245,
+        "captured": 245,
+        "claims": 74,
+        "events": 23,
+        "entities": 27,
+        "relationships": 74,
+        "conflicts": 0,
+        "qaQueue": 223
+      },
       {
         "date": "2026-08-05",
         "label": "2026.08.05",
@@ -849,19 +818,6 @@
         "relationships": 71,
         "conflicts": 1,
         "qaQueue": 263
-      },
-      {
-        "date": "2026-07-30",
-        "label": "2026.07.30",
-        "shortLabel": "07.30",
-        "discovered": 179,
-        "captured": 179,
-        "claims": 87,
-        "events": 28,
-        "entities": 38,
-        "relationships": 87,
-        "conflicts": 0,
-        "qaQueue": 149
       }
     ],
     "engineQuality": {}

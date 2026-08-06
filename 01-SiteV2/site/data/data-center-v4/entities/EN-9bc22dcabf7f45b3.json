@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-05T04:25:15.287Z",
-    "latestDataDate": "2026-08-05",
-    "currentDate": "2026-08-05",
-    "eventCount": 1868,
+    "generatedAt": "2026-08-06T00:23:45.681Z",
+    "latestDataDate": "2026-08-06",
+    "currentDate": "2026-08-06",
+    "eventCount": 1888,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-39d56d5cef4cea80",
       "EV-bf4871cd96fc25ac",
       "EV-aa63303570154a9b"
     ],
@@ -33,15 +34,16 @@
       "EN-8d4321d936320802"
     ],
     "firstSeen": "2026-06-01",
-    "lastSeen": "2026-08-05",
+    "lastSeen": "2026-08-06",
     "relationIds": [
-      "REL2-6e1c341aeaa60f54"
+      "REL2-5adcd6a62a7c957e"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-39d56d5cef4cea80",
         "EV-bf4871cd96fc25ac",
         "EV-aa63303570154a9b"
       ],
@@ -50,6 +52,60 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-39d56d5cef4cea80",
+        "dataDate": "2026-08-06",
+        "date": "2026-08-05",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "NVIDIA 发布 Alpamayo 2 Super：面向 Robotaxi 与自动驾驶的 34B 开源视觉-语言-动作模型",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "fine_tuning",
+            "name": "模型微调",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "guardrails_safety",
+            "name": "安全护栏",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "vision_language",
+            "name": "视觉语言",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-ea3bd73e2b506e00",
+          "EN-9bc22dcabf7f45b3"
+        ]
+      },
       {
         "id": "EV-bf4871cd96fc25ac",
         "dataDate": "2026-08-05",
@@ -126,9 +182,7 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -179,6 +233,7 @@
         "EV-234ad54940674bf6",
         "EV-da148848ec026bdf",
         "EV-467539fe176a470e",
+        "EV-815fdc6e8911b026",
         "EV-6272444f30281858",
         "EV-92be9fa58b1ee19f",
         "EV-f55d16df5b5fecb2",
@@ -198,6 +253,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-39d56d5cef4cea80",
         "EV-6703b102274c3be9",
         "EV-bf4871cd96fc25ac",
         "EV-2ee06634c0ce9f30",
@@ -315,54 +371,48 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
+        "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
-        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
-        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
-        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-9bc22dcabf7f45b3",
-        "EN-171fa23d27b5894b"
+        "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-05"
+      "lastSeen": "2026-08-06"
     }
   ],
   "relationships": [
     {
-      "relationship_id": "REL2-6e1c341aeaa60f54",
+      "relationship_id": "REL2-5adcd6a62a7c957e",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-8d4321d936320802",
       "subject_type": "entity",
       "predicate": "publishes",
       "object_ref": "EN-9bc22dcabf7f45b3",
       "object_type": "entity",
-      "event_id": "EV-aa63303570154a9b",
+      "event_id": "EV-39d56d5cef4cea80",
       "claim_refs": [
-        "CL-4119c112dfe6ff3e",
-        "CL-008a6f6f83e5e40d",
-        "CL-eeaddb533e49827c"
+        "CL-b848f99dd7216003",
+        "CL-e03d5f50e788880d",
+        "CL-3c14bc26de86aaf4",
+        "CL-31aa0ce4338ff574"
       ],
       "source_refs": [
-        "SA-4dcdfe948f82b975"
+        "SA-3d784831f83a7c5b"
       ],
-      "data_date": "2026-06-01",
+      "data_date": "2026-08-06",
       "status": "verified"
     }
   ],
