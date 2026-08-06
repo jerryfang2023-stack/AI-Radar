@@ -3,7 +3,7 @@
     "version": "COLLECTION-TELEMETRY-V1.0",
     "ops_version": "OPS-V2.0.0-v4-telemetry",
     "data_date": "2026-08-06",
-    "generated_at": "2026-08-06T00:25:26.705Z",
+    "generated_at": "2026-08-06T01:18:25.050Z",
     "scope": "OPS",
     "canonical_writeback": false,
     "source_of_truth": "Data Center V4 manifest and integrity gate"
@@ -43,7 +43,7 @@
   "application_projection": {
     "opportunity_map": "passed",
     "trend_radar": "passed",
-    "funding_insights": "failed",
+    "funding_insights": "passed",
     "fde_hardware_sync": "passed"
   },
   "publication": {
@@ -89,11 +89,11 @@
     {
       "id": "application_projection",
       "label": "应用投影",
-      "status": "partial",
+      "status": "passed",
       "counts": {
         "opportunity_map": "passed",
         "trend_radar": "passed",
-        "funding_insights": "failed",
+        "funding_insights": "passed",
         "fde_hardware_sync": "passed"
       },
       "evidence": [
