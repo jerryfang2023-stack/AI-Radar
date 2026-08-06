@@ -1,0 +1,953 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.2",
+    "date": "2026-08-06",
+    "generated_at": "2026-08-06T01:18:22.008Z",
+    "trigger": "verified_funding_events_with_three_month_backfill",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
+    "counts": {
+      "funding_events": 1,
+      "auto_published": 1,
+      "blocked": 0,
+      "pending": 0,
+      "deduplicated": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.2",
+      "funding_insight_id": "FI-18daabf03001b78b",
+      "triggered_by_event_id": "EV-60f219702a66bf38",
+      "as_of_date": "2026-08-06",
+      "company": {
+        "entity_id": "EN-6861f63c27eb0ada",
+        "name": "WindBorne Systems",
+        "full_name": "WindBorne Systems",
+        "website": "https://windbornesystems.com/",
+        "summary": "WindBorne Systems 是一家气象情报公司，运营全球最大的自主长航时传感气球网络，并基于专有观测数据训练 AI 气象模型，提供更精准的天气预报。",
+        "headquarters": "Palo Alto, California",
+        "founders": [
+          {
+            "name": "John Dean",
+            "role": "Co-Founder and CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-900c2c23aa99901d",
+                "quote": "said John Dean, Co-Founder and CEO, WindBorne Systems",
+                "source_content_hash": "6403f874fe26a119",
+                "quote_hash": "e97a833c9cf406d174832a908882f8c111e9425abc80b5bcaeb7d55643566540"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2daabe6c0da09480",
+            "quote": "WindBorne Systems , a startup that collects data with the world’s longest-flying weather balloons and feeds it into a powerful forecasting model",
+            "source_content_hash": "dcf3c391fcc5ef9d",
+            "quote_hash": "48652d2362ad90d555fba7e52f1d5e8c3e3874a0f2c569660c0f051b2eab4210"
+          },
+          {
+            "source_id": "FISRC-900c2c23aa99901d",
+            "quote": "WindBorne Systems, the weather intelligence company building the world's largest atmospheric sensing network and the AI models it powers",
+            "source_content_hash": "6403f874fe26a119",
+            "quote_hash": "c305c6e9edd6ed2cd18c1302878524548aac28577fcc300603b262905c0b1d94"
+          }
+        ]
+      },
+      "financing": {
+        "round": "B轮",
+        "amount": "$37 million",
+        "total_raised": "more than $62 million",
+        "announced_at": "2026-08-05",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Khosla Ventures",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2daabe6c0da09480",
+                "quote": "The new round was co-led by Khosla Ventures and Galvanize",
+                "source_content_hash": "dcf3c391fcc5ef9d",
+                "quote_hash": "67b21c9477b13594d9009e7706d8a42181101dae317f0ed254e99ba9de2e2808"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Galvanize",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2daabe6c0da09480",
+                "quote": "The new round was co-led by Khosla Ventures and Galvanize",
+                "source_content_hash": "dcf3c391fcc5ef9d",
+                "quote_hash": "67b21c9477b13594d9009e7706d8a42181101dae317f0ed254e99ba9de2e2808"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "TransLink Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2daabe6c0da09480",
+                "quote": "with additional investments from Translink Capital, Lux Capital, and previous investors",
+                "source_content_hash": "dcf3c391fcc5ef9d",
+                "quote_hash": "4e88ddb77f70111a514c20f1062d62d0dc0c067dc77fab1beccf099097f26e24"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Lux Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2daabe6c0da09480",
+                "quote": "with additional investments from Translink Capital, Lux Capital, and previous investors",
+                "source_content_hash": "dcf3c391fcc5ef9d",
+                "quote_hash": "4e88ddb77f70111a514c20f1062d62d0dc0c067dc77fab1beccf099097f26e24"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Khosla Ventures",
+            "role": "Series A 领投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5f5111750b24d3d3",
+                "quote": "This funding round was spearheaded by Khosla Ventures",
+                "source_content_hash": "274d6fadc02167bf",
+                "quote_hash": "7ca4efa27f4b6169db60e39bee1a25e1c8d7698e367e4443f07719318b3dd3cd"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Footwork VC",
+            "role": "Series A 参投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5f5111750b24d3d3",
+                "quote": "existing investors such as Footwork VC, Pear VC, and Convective Capital also participated in this round",
+                "source_content_hash": "274d6fadc02167bf",
+                "quote_hash": "8023b80146dd21ae9133d41cbd3bd534abb4a1bb0ff5b6a882a2428157bc4482"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Pear VC",
+            "role": "Series A 参投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5f5111750b24d3d3",
+                "quote": "existing investors such as Footwork VC, Pear VC, and Convective Capital also participated in this round",
+                "source_content_hash": "274d6fadc02167bf",
+                "quote_hash": "8023b80146dd21ae9133d41cbd3bd534abb4a1bb0ff5b6a882a2428157bc4482"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Convective Capital",
+            "role": "Series A 参投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5f5111750b24d3d3",
+                "quote": "existing investors such as Footwork VC, Pear VC, and Convective Capital also participated in this round",
+                "source_content_hash": "274d6fadc02167bf",
+                "quote_hash": "8023b80146dd21ae9133d41cbd3bd534abb4a1bb0ff5b6a882a2428157bc4482"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Footwork",
+            "role": "种子轮领投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-08b1a89e7ab437e8",
+                "quote": "The $6m seed round was led by Footwork",
+                "source_content_hash": "532b997d18cd6e06",
+                "quote_hash": "b906315cd8f83b694c1c16e661dc18cd079d6edad775871e1bda9d46b255049d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Khosla Ventures",
+            "role": "种子轮参投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-08b1a89e7ab437e8",
+                "quote": "with participation from Khosla Ventures, Pear VC, Ubiquity Ventures, and Harvest Ventures",
+                "source_content_hash": "532b997d18cd6e06",
+                "quote_hash": "b6fa3131e1a1b22027a2fbfe50b77482a8b6c98df355475896b39b6b285d4279"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Pear VC",
+            "role": "种子轮参投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-08b1a89e7ab437e8",
+                "quote": "with participation from Khosla Ventures, Pear VC, Ubiquity Ventures, and Harvest Ventures",
+                "source_content_hash": "532b997d18cd6e06",
+                "quote_hash": "b6fa3131e1a1b22027a2fbfe50b77482a8b6c98df355475896b39b6b285d4279"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Ubiquity Ventures",
+            "role": "种子轮参投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-08b1a89e7ab437e8",
+                "quote": "with participation from Khosla Ventures, Pear VC, Ubiquity Ventures, and Harvest Ventures",
+                "source_content_hash": "532b997d18cd6e06",
+                "quote_hash": "b6fa3131e1a1b22027a2fbfe50b77482a8b6c98df355475896b39b6b285d4279"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Harvest Ventures",
+            "role": "种子轮参投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-08b1a89e7ab437e8",
+                "quote": "with participation from Khosla Ventures, Pear VC, Ubiquity Ventures, and Harvest Ventures",
+                "source_content_hash": "532b997d18cd6e06",
+                "quote_hash": "b6fa3131e1a1b22027a2fbfe50b77482a8b6c98df355475896b39b6b285d4279"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2daabe6c0da09480",
+            "quote": "WindBorne Systems , a startup that collects data with the world’s longest-flying weather balloons and feeds it into a powerful forecasting model , has raised a $37 million Series B round",
+            "source_content_hash": "dcf3c391fcc5ef9d",
+            "quote_hash": "556965488bd3134618f77e57ee1e8b30d703b0cdc77f6c45cfec9c151167496d"
+          },
+          {
+            "source_id": "FISRC-2daabe6c0da09480",
+            "quote": "has raised a $37 million Series B round",
+            "source_content_hash": "dcf3c391fcc5ef9d",
+            "quote_hash": "5132fbb68e8a2d0016caee0e8529cf1770417b8e88e66c29bdd61aef391c6fb8"
+          },
+          {
+            "source_id": "FISRC-900c2c23aa99901d",
+            "quote": "bringing total funding to more than $62 million",
+            "source_content_hash": "6403f874fe26a119",
+            "quote_hash": "aa9e2a218891dc57f2289d8ed46ae4da7d54f11abe4fa9cec31e9fea4a2b2769"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-60f219702a66bf38",
+            "round_original": "B轮",
+            "amount": "$37 million",
+            "announced_at": "2026-08-05",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2daabe6c0da09480",
+                "quote": "WindBorne Systems , a startup that collects data with the world’s longest-flying weather balloons and feeds it into a powerful forecasting model , has raised a $37 million Series B round",
+                "source_content_hash": "dcf3c391fcc5ef9d",
+                "quote_hash": "556965488bd3134618f77e57ee1e8b30d703b0cdc77f6c45cfec9c151167496d"
+              },
+              {
+                "source_id": "FISRC-2daabe6c0da09480",
+                "quote": "has raised a $37 million Series B round",
+                "source_content_hash": "dcf3c391fcc5ef9d",
+                "quote_hash": "5132fbb68e8a2d0016caee0e8529cf1770417b8e88e66c29bdd61aef391c6fb8"
+              },
+              {
+                "source_id": "FISRC-900c2c23aa99901d",
+                "quote": "bringing total funding to more than $62 million",
+                "source_content_hash": "6403f874fe26a119",
+                "quote_hash": "aa9e2a218891dc57f2289d8ed46ae4da7d54f11abe4fa9cec31e9fea4a2b2769"
+              }
+            ]
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "WeatherMesh",
+          "description": "基于深度学习的 AI 天气预报模型，利用专有气球观测数据，在公开基准测试中准确率领先，且训练所需算力远低于传统物理模型。",
+          "target_customers": "政府机构、交易公司、能源、运输、农业等受天气影响的商业客户",
+          "features": [
+            "AI 驱动的全球天气预报",
+            "融合专有大气观测数据",
+            "WeatherMesh-6 在公开基准中准确率最高",
+            "训练所需算力显著低于传统模型"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-900c2c23aa99901d",
+              "quote": "the company also introduced WeatherMesh-6 , now the world's most accurate weather forecasting model according to publicly available benchmarks",
+              "source_content_hash": "6403f874fe26a119",
+              "quote_hash": "8c07d453b5d72fdebc6dcd5edf5f651723c4d284c8dfd615433c8fe011b6fb2c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Atlas 全球大气传感网络",
+          "description": "由数百个自主长航时气球组成的全球观测网络，可在海洋和偏远地区收集原位大气剖面数据，为预报模型提供专有数据护城河。",
+          "target_customers": "政府气象机构、研究合作伙伴",
+          "features": [
+            "全球 20 个发射站点",
+            "约 600 个气球同时运行",
+            "可在台风眼等极端环境收集数据",
+            "正在部署可落入海洋继续测量的传感器包"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2daabe6c0da09480",
+              "quote": "the company has 20 launch sites around the world and about 600 balloons in the air at any given time, collecting data in hard-to-reach areas, like the eye of a typhoon",
+              "source_content_hash": "dcf3c391fcc5ef9d",
+              "quote_hash": "508e53b92dd883008565e7aad67ff317b47ac87ffe2653cd307ffad8868da9f5"
+            },
+            {
+              "source_id": "FISRC-6420644e23633f39",
+              "quote": "Harness Atlas, our global constellation of long-duration atmospheric balloons. Access critical data around the planet, including over oceans and the world’s most remote places.",
+              "source_content_hash": "725651352ace55c0",
+              "quote_hash": "f15503327c2b1df64762aa31c79ec79c6319364f4e20ddb7abacbec758190c77"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "U.S. National Weather Service",
+          "industry": "government_public_sector",
+          "use_case": "采购大气观测数据用于天气预报",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2daabe6c0da09480",
+              "quote": "The U.S. National Weather Service purchases the company’s data",
+              "source_content_hash": "dcf3c391fcc5ef9d",
+              "quote_hash": "1bb81ecf3c75efce24849d71c3e3851fc38bc6dc065e3a61621d3daabe0bb0b7"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "U.S. Air Force",
+          "industry": "aerospace_defense",
+          "use_case": "通过研究合作资助开发可在舰船上运行的预报模型",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2daabe6c0da09480",
+              "quote": "the U.S. Air Force and U.S. Navy are paying WindBorne through research partnerships, including an effort to develop forecasting models that can be run onboard ships",
+              "source_content_hash": "dcf3c391fcc5ef9d",
+              "quote_hash": "3db90f8ca1218f04ec4294b4577c1b14334423c0d49c67c976339f8a0fde457d"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "U.S. Navy",
+          "industry": "aerospace_defense",
+          "use_case": "通过研究合作资助开发可在舰船上运行的预报模型",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2daabe6c0da09480",
+              "quote": "the U.S. Air Force and U.S. Navy are paying WindBorne through research partnerships, including an effort to develop forecasting models that can be run onboard ships",
+              "source_content_hash": "dcf3c391fcc5ef9d",
+              "quote_hash": "3db90f8ca1218f04ec4294b4577c1b14334423c0d49c67c976339f8a0fde457d"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "NOAA",
+          "industry": "government_public_sector",
+          "use_case": "将 WindBorne 观测数据同化进全球预报系统 (GFS)",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-900c2c23aa99901d",
+              "quote": "WindBorne's observations are assimilated into NOAA's Global Forecast System (GFS)",
+              "source_content_hash": "6403f874fe26a119",
+              "quote_hash": "051da8df58ee4b4f2ac3fd29fb66efcd9efdf08bf971df504ae82b9ae7f9924d"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Google DeepMind",
+          "product": "AI 天气预报模型",
+          "scenario": "全球 AI 气象预报",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "WindBorne 拥有专有的全球气球观测网络提供独特数据，而 DeepMind 主要依赖公开数据集；WeatherMesh-6 在公开基准测试中准确率已超越包括 DeepMind 在内的其他模型。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5f5111750b24d3d3",
+              "quote": "The company's proprietary AI weather forecast model, known as WeatherMesh, has already demonstrated superior accuracy compared to existing models, including those developed by tech giants like Google DeepMind.",
+              "source_content_hash": "274d6fadc02167bf",
+              "quote_hash": "6390b466288d9192b3cbecf626fc2dc1397dc1a83dd53b804ce614b4b57e9a27"
+            }
+          ],
+          "entity_id": "EN-2b6e51bec93e86c1"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮估值",
+          "value": "$250 million",
+          "observed_at": "2026-08-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2daabe6c0da09480",
+              "quote": "values the company after this round of funding at $250 million",
+              "source_content_hash": "dcf3c391fcc5ef9d",
+              "quote_hash": "23cc823aad9ba4ffd2f9d977ccda512b4b5987851642c23dc3ce66a608643e66"
+            }
+          ]
+        },
+        {
+          "label": "过去 12 个月收入增长",
+          "value": "增长两倍",
+          "observed_at": "2026-08-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-900c2c23aa99901d",
+              "quote": "WindBorne tripled revenue while tripling the size of its global balloon constellation",
+              "source_content_hash": "6403f874fe26a119",
+              "quote_hash": "f23dc1b706e30282c6f30182fb96349ce00c8b7e5430967dbab809fcc6d6e8a7"
+            }
+          ]
+        },
+        {
+          "label": "全球气球网络规模",
+          "value": "超过 600 个自主传感气球同时运行",
+          "observed_at": "2026-08-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-900c2c23aa99901d",
+              "quote": "more than 600 autonomous sensing balloons operating simultaneously",
+              "source_content_hash": "6403f874fe26a119",
+              "quote_hash": "f4fe37009821447d5e9c59e83a690dd92f9587057c6d43a2cee946153f85f55f"
+            }
+          ]
+        },
+        {
+          "label": "全球发射站点",
+          "value": "20 个",
+          "observed_at": "2026-08-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2daabe6c0da09480",
+              "quote": "the company has 20 launch sites around the world",
+              "source_content_hash": "dcf3c391fcc5ef9d",
+              "quote_hash": "71eb50e20aaff372513600bb12d377119c1ab6bd56f418034e1cd95627c1ece7"
+            }
+          ]
+        },
+        {
+          "label": "累计融资总额",
+          "value": "超过 $62 million",
+          "observed_at": "2026-08-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-900c2c23aa99901d",
+              "quote": "bringing total funding to more than $62 million",
+              "source_content_hash": "6403f874fe26a119",
+              "quote_hash": "aa9e2a218891dc57f2289d8ed46ae4da7d54f11abe4fa9cec31e9fea4a2b2769"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "John Dean",
+          "quote": "We demonstrated that when you add balloons to the forecast, you get more accurate forecasts, and the value per data point is much stronger than satellites.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2daabe6c0da09480",
+              "quote": "We demonstrated that when you add balloons to the forecast, you get more accurate forecasts, and the value per data point is much stronger than satellites",
+              "source_content_hash": "dcf3c391fcc5ef9d",
+              "quote_hash": "6057b22cde35d1a6bcc0910dcbb9bb0e600c061f336dc06f4ff85ca435210138"
+            }
+          ]
+        },
+        {
+          "speaker": "John Dean",
+          "quote": "We're building something that has never existed before: a planetary nervous system that continuously observes Earth's atmosphere and transforms those observations into dramatically better forecasts.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-900c2c23aa99901d",
+              "quote": "We're building something that has never existed before: a planetary nervous system that continuously observes Earth's atmosphere and transforms those observations into dramatically better forecasts",
+              "source_content_hash": "6403f874fe26a119",
+              "quote_hash": "cf382902e38b9cffaff7b0467f46b53e7d64de79c90120bd74bafe86db329c55"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Khosla Ventures",
+            "speaker": "Sven Strohband",
+            "speaker_role": "Partner and Managing Director",
+            "rationale": "认为随着 AI 模型能力增强，底层观测数据的质量变得更加重要，WindBorne 将专有大气数据与一流 AI 结合，形成了可随时间复利增长的优势。",
+            "quote": "As AI models become increasingly capable, the quality of the underlying observations becomes even more important. WindBorne's combination of proprietary atmospheric data and best-in-class AI creates an advantage that we believe will continue to compound over time.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-900c2c23aa99901d",
+                "quote": "As AI models become increasingly capable, the quality of the underlying observations becomes even more important. WindBorne's combination of proprietary atmospheric data and best-in-class AI creates an advantage that we believe will continue to compound over time.",
+                "source_content_hash": "6403f874fe26a119",
+                "quote_hash": "c80c773d0cc70f0f11ae51a28a6b0556bc86e9bc164fc543edbdda52da14091c"
+              }
+            ]
+          },
+          {
+            "institution": "Galvanize",
+            "speaker": "Saloni Multani",
+            "speaker_role": "Co-Head of Venture & Growth",
+            "rationale": "认为气候变化增加了不确定性成本，更精准的气象情报能帮助社区、企业和政府在极端天气前做出更明智决策；AI 改变了将天气预报整合进商业决策的成本与难度。",
+            "quote": "integrating weather forecasts into broader business decision-making has traditionally been expensive and difficult. We think AI changes that equation. Better forecasts make the effort worthwhile, and AI makes it much easier to connect those forecasts to the decisions businesses are trying to make.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2daabe6c0da09480",
+                "quote": "integrating weather forecasts into broader business decision-making has traditionally been expensive and difficult. We think AI changes that equation. Better forecasts make the effort worthwhile, and AI makes it much easier to connect those forecasts to the decisions businesses are trying to make.",
+                "source_content_hash": "dcf3c391fcc5ef9d",
+                "quote_hash": "43a332b0a478b3e02aadfa8d2ad30b8ef765f3bbb2574cfc78930b4c59ab4a33"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是“专有数据采集网络 × AI 预报模型”的双边飞轮：自有的全球气球网络持续产生独特、高价值的原位观测数据，形成数据护城河；这些数据直接提升 AI 模型精度，而模型精度又驱动政府与商业客户付费，反哺网络扩张。本轮 2.5 亿美元估值建立在收入一年增长两倍、气球网络规模同步增长两倍、WeatherMesh-6 在公开基准中达到全球最高准确率这三个已验证信号之上。但来源仅覆盖了政府客户和早期商业采用者（交易公司），尚未提供大规模企业客户部署的证据，因此商业化扩展仍处于早期验证阶段。",
+        "validated_signals": [
+          "过去 12 个月收入增长两倍，同时气球网络规模增长两倍至 600+ 气球",
+          "WeatherMesh-6 在公开基准测试中被评为全球最准确的天气预报模型",
+          "观测数据已被 NOAA 同化进全球预报系统 (GFS)，并获得美国国家气象局、空军、海军等政府合同"
+        ],
+        "risks": [
+          "私营气象数据公司历史上难以突破企业市场，因为从数据中提取价值需要经验和既有工作流，商业化扩展存在不确定性"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "models",
+        "use_case_ids": [
+          "data_analysis",
+          "research_discovery"
+        ],
+        "industry_ids": [
+          "government_public_sector",
+          "financial_services",
+          "energy_utilities",
+          "agriculture",
+          "automotive_transportation"
+        ],
+        "target_user_ids": [
+          "business_user",
+          "public_sector_user",
+          "researcher"
+        ],
+        "sector": "气象情报与 AI 天气预报",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“专有数据采集网络 × AI 预报模型”的双边飞轮：自有的全球气球网络持续产生独特、高价值的原位观测数据，形成数据护城河；这些数据直接提升 AI 模型精度，而模型精度又驱动政府与商业客户付费，反哺网络扩张。本轮 2.5 亿美元估值建立在收入一年增长两倍、气球网络规模同步增长两倍、WeatherMesh-6 在公开基准中达到全球最高准确率这三个已验证信号之上。但来源仅覆盖了政府客户和早期商业采用者（交易公司），尚未提供大规模企业客户部署的证据，因此商业化扩展仍处于早期验证阶段。",
+          "evidence_signals": [
+            "过去 12 个月收入增长两倍，同时气球网络规模增长两倍至 600+ 气球",
+            "WeatherMesh-6 在公开基准测试中被评为全球最准确的天气预报模型",
+            "观测数据已被 NOAA 同化进全球预报系统 (GFS)，并获得美国国家气象局、空军、海军等政府合同"
+          ],
+          "risks": [
+            "私营气象数据公司历史上难以突破企业市场，因为从数据中提取价值需要经验和既有工作流，商业化扩展存在不确定性"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "WeatherMesh",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Atlas 全球大气传感网络",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "John Dean",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Khosla Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Galvanize",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "TransLink Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Lux Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Khosla Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Footwork VC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Pear VC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Convective Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Footwork",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Khosla Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Pear VC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Ubiquity Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Harvest Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "U.S. National Weather Service",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "U.S. Air Force",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "U.S. Navy",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "NOAA",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Google DeepMind",
+          "canonical_entity_id": "EN-2b6e51bec93e86c1",
+          "canonical_name": "Google DeepMind"
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-60f219702a66bf38",
+          "date": "2026-08-05",
+          "title": "WindBorne Systems 完成 3700 万美元 B 轮融资，用 AI 气象模型让天气预报更赚钱",
+          "amount": "$37 million",
+          "source_refs": [
+            "SA-2a3c676ee8e4d1c1"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-2daabe6c0da09480",
+          "source_url": "https://techcrunch.com/2026/08/05/ai-makes-weather-prediction-better-can-windborne-make-it-lucrative",
+          "title": "WindBorne Systems 完成 3700 万美元 B 轮融资，用 AI 气象模型让天气预报更赚钱",
+          "publisher": "TechCrunch：AI（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-06T00:20:45.914Z",
+          "content_hash": "dcf3c391fcc5ef9d",
+          "source_artifact_id": "SA-2a3c676ee8e4d1c1",
+          "raw_id": "RAW-52c66e23b55ff865"
+        },
+        {
+          "source_id": "FISRC-900c2c23aa99901d",
+          "source_url": "https://www.financialcontent.com/article/bizwire-2026-8-5-windborne-systems-raises-37-million-to-build-the-worlds-weather-intelligence-infrastructure",
+          "title": "WindBorne Systems Raises $37 Million to Build the World's Weather Intelligence Infrastructure | FinancialContent",
+          "publisher": "financialcontent.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-06T01:17:42.598Z",
+          "content_hash": "6403f874fe26a119",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-5f5111750b24d3d3",
+          "source_url": "https://parsers.vc/news/240605-windborne-systems-takes-flight-with-15/",
+          "title": "WindBorne Systems Takes Flight with $15 Million in Series A Funding",
+          "publisher": "parsers.vc",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-06T01:17:43.782Z",
+          "content_hash": "274d6fadc02167bf",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-08b1a89e7ab437e8",
+          "source_url": "https://susaventures.substack.com/p/our-investment-in-windborne-systems-c6dcc0c3519d",
+          "title": "Our Investment in WindBorne Systems - Susa Ventures",
+          "publisher": "susaventures.substack.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-08-06T01:17:43.802Z",
+          "content_hash": "532b997d18cd6e06",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-6420644e23633f39",
+          "source_url": "https://windbornesystems.com/",
+          "title": "WindBorne | Better Forecasts",
+          "publisher": "windbornesystems.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-06T01:17:43.978Z",
+          "content_hash": "725651352ace55c0",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.6",
+        "generated_at": "2026-08-06T01:18:21.981Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-06T01:18:21.981Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Atlas 全球大气传感网络",
+            "WeatherMesh"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "John Dean"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-60f219702a66bf38"
+      ],
+      "aggregation": {
+        "key": "EN-6861f63c27eb0ada|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-60f219702a66bf38",
+      "company_name": "WindBorne Systems",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"WindBorne Systems 完成 3700 万美元 B 轮融资，用 AI 气象模型让天气预报更赚钱\" funding company investors product",
+        "\"WindBorne Systems\" \"$37 million\" funding investors round",
+        "\"WindBorne Systems\" product customers case study",
+        "\"WindBorne Systems\" \"WindBorne Systems 完成 3700 万美元 B 轮融资，用 AI 气象模型让天气预报更赚钱\" competitors product use case",
+        "\"WindBorne Systems\" \"$37 million\" investor quote why invested",
+        "\"WindBorne Systems\" \"$37 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"WindBorne Systems 完成 3700 万美元 B 轮融资，用 AI 气象模型让天气预报更赚钱\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"WindBorne Systems 完成 3700 万美元 B 轮融资，用 AI 气象模型让天气预报更赚钱\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"WindBorne Systems\" \"$37 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"WindBorne Systems\" \"$37 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"WindBorne Systems\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"WindBorne Systems\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"WindBorne Systems\" \"WindBorne Systems 完成 3700 万美元 B 轮融资，用 AI 气象模型让天气预报更赚钱\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"WindBorne Systems\" \"WindBorne Systems 完成 3700 万美元 B 轮融资，用 AI 气象模型让天气预报更赚钱\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"WindBorne Systems\" \"$37 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"WindBorne Systems\" \"$37 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"WindBorne Systems\" \"$37 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"WindBorne Systems\" \"$37 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-08-06T01:18:22.007Z"
+    }
+  ]
+}

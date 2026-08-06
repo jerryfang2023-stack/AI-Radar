@@ -1,7 +1,7 @@
 window.WaveSightOpsConsole = {
   "meta": {
     "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-08-06T00:25:26.781Z",
+    "generatedAt": "2026-08-06T01:18:25.132Z",
     "date": "2026-08-06",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -542,11 +542,11 @@ window.WaveSightOpsConsole = {
       {
         "id": "application_projection",
         "label": "应用投影",
-        "status": "partial",
+        "status": "passed",
         "counts": {
           "opportunity_map": "passed",
           "trend_radar": "passed",
-          "funding_insights": "failed",
+          "funding_insights": "passed",
           "fde_hardware_sync": "passed"
         },
         "evidence": [
@@ -593,7 +593,7 @@ window.WaveSightOpsConsole = {
       {
         "label": "Pipeline Dashboard",
         "status": "passed",
-        "detail": "2026-08-06T00:25:26.745Z"
+        "detail": "2026-08-06T01:18:25.094Z"
       },
       {
         "label": "Daily Supervision",
@@ -608,7 +608,7 @@ window.WaveSightOpsConsole = {
         "version": "COLLECTION-TELEMETRY-V1.0",
         "ops_version": "OPS-V2.0.0-v4-telemetry",
         "data_date": "2026-08-06",
-        "generated_at": "2026-08-06T00:25:26.705Z",
+        "generated_at": "2026-08-06T01:18:25.050Z",
         "scope": "OPS",
         "canonical_writeback": false,
         "source_of_truth": "Data Center V4 manifest and integrity gate"
@@ -648,7 +648,7 @@ window.WaveSightOpsConsole = {
       "applicationProjection": {
         "opportunity_map": "passed",
         "trend_radar": "passed",
-        "funding_insights": "failed",
+        "funding_insights": "passed",
         "fde_hardware_sync": "passed"
       },
       "publication": {
@@ -664,7 +664,7 @@ window.WaveSightOpsConsole = {
     },
     "pipelineMeta": {
       "version": "OPS-V2.0.0-v4-telemetry",
-      "generatedAt": "2026-08-06T00:25:26.745Z",
+      "generatedAt": "2026-08-06T01:18:25.094Z",
       "dateRange": {
         "start": "2026-07-31",
         "end": "2026-08-06"
@@ -710,7 +710,7 @@ window.WaveSightOpsConsole = {
       "applicationProjection": {
         "opportunity_map": "passed",
         "trend_radar": "passed",
-        "funding_insights": "failed",
+        "funding_insights": "passed",
         "fde_hardware_sync": "passed"
       },
       "publication": {

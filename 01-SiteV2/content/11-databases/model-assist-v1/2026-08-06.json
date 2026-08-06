@@ -1,10 +1,57 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-08-06T00:23:37.179Z",
+  "generated_at": "2026-08-06T01:17:17.190Z",
   "data_date": "2026-08-06",
   "prompt_version": "model-assist-2026-07-18.2",
   "source_count": 245,
   "candidates": [
+    {
+      "candidate_id": "MAC-008a68d7e98828d7",
+      "task_type": "qa_repair",
+      "asset_id": "QA-e40ede6c0947edef",
+      "raw_id": "RAW-06952e9616762377",
+      "source_ref": "SA-a87e59e7816b1b81",
+      "source_hash": "fd7a15127c3eff55",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The source text describes Waymo's ownership structure, funding, and operations but does not contain a concrete AI event such as a specific acquisition, lawsuit settlement, funding round announcement, IPO, or other discrete event type listed. The QA_REASON indicates 'event_not_ai_relevant', and the source is a general explanatory article rather than a report of a specific event.",
+        "claims": []
+      },
+      "evidence": [
+        {
+          "start": 29,
+          "end": 103,
+          "quote": "Waymo is a privately held subsidiary of Alphabet, Google’s parent company."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-06T01:17:07.228Z"
+    },
     {
       "candidate_id": "MAC-0f1feaa63678f60c",
       "task_type": "entity_resolution",
@@ -17,9 +64,9 @@
       "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
-        "decision": "distinct_entity",
+        "decision": "unknown",
         "canonical_name": "Insta360 GO Ultra AI",
-        "rationale": "The candidate is a product_candidate for an AI voice assistant feature, but the source text describes 'GO Ultra AI 语音助手' as a feature or update for the existing '影石 Insta360 GO Ultra' camera, not as a separate product entity. The quote shows the assistant is part of the GO Ultra camera's update, not a standalone product.",
+        "rationale": "No VERIFIED_ALTERNATIVES are provided, so there is no basis to confirm or reject a match. The source text mentions 'GO Ultra AI 语音助手' as a feature of the Insta360 GO Ultra camera, but the candidate entity is a product_candidate named 'Insta360 GO Ultra AI', and the relationship between the feature and a potential standalone product is unclear from the quote alone.",
         "candidate_name": "Insta360 GO Ultra AI"
       },
       "evidence": [
@@ -51,7 +98,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-06T00:23:26.818Z"
+      "generated_at": "2026-08-06T01:16:52.010Z"
     },
     {
       "candidate_id": "MAC-12017b4670b438d2",
@@ -90,7 +137,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-06T00:22:50.131Z"
+      "generated_at": "2026-08-06T01:16:22.583Z"
     },
     {
       "candidate_id": "MAC-1286167a7c3f24f3",
@@ -106,7 +153,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "Klaviyo",
-        "rationale": "No VERIFIED_ALTERNATIVES were provided, so there is no basis to confirm whether the candidate canonical_name 'Klaviyo' matches any verified entity. The source text mentions 'Klaviyo' multiple times as a publicly traded e-commerce marketing automation platform, but without a verified alternative to compare against, identity cannot be established.",
+        "rationale": "VERIFIED_ALTERNATIVES is empty, so there is no verified entity to match against. The candidate canonical_name 'Klaviyo' appears in the source text as a publicly traded e-commerce marketing automation platform, but without a verified alternative, identity cannot be confirmed.",
         "candidate_name": "Klaviyo"
       },
       "evidence": [
@@ -138,7 +185,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-06T00:23:13.660Z"
+      "generated_at": "2026-08-06T01:16:38.987Z"
     },
     {
       "candidate_id": "MAC-140c090b9d717219",
@@ -177,7 +224,103 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-06T00:23:04.020Z"
+      "generated_at": "2026-08-06T01:16:31.584Z"
+    },
+    {
+      "candidate_id": "MAC-14913b3016373fa7",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-3602e1c8dcbced51",
+      "raw_id": "RAW-a1d575ecd18147c7",
+      "source_ref": "SA-d377f81b047da97e",
+      "source_hash": "fa6b2f45fc205bf1",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "C3.ai",
+        "rationale": "The candidate entity C3.ai is an enterprise AI application software company, while the verified alternative Meta is a different company. The source text describes C3.ai's business, stock price, and financials, and makes no mention of Meta or any relationship that would indicate they are the same entity.",
+        "candidate_name": "C3.ai"
+      },
+      "evidence": [
+        {
+          "start": 656,
+          "end": 836,
+          "quote": "C3.ai, Inc. operates as an enterprise artificial intelligence application software company in North America, Europe, the Middle East, Africa, the Asia Pacific, and internationally."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-06T01:16:37.033Z"
+    },
+    {
+      "candidate_id": "MAC-1813ba709c0edba2",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-6861f63c27eb0ada",
+      "raw_id": "RAW-52c66e23b55ff865",
+      "source_ref": "SA-2a3c676ee8e4d1c1",
+      "source_hash": "90f0705c445e903c",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "WindBorne Systems",
+        "rationale": "No VERIFIED_ALTERNATIVES were provided for comparison. The candidate entity name 'WindBorne Systems' appears verbatim in the source text, but without any verified alternatives to match against, identity cannot be confirmed or denied.",
+        "candidate_name": "WindBorne Systems"
+      },
+      "evidence": [
+        {
+          "start": 505,
+          "end": 691,
+          "quote": "WindBorne Systems , a startup that collects data with the world’s longest-flying weather balloons and feeds it into a powerful forecasting model , has raised a $37 million Series B round"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-06T01:16:41.127Z"
     },
     {
       "candidate_id": "MAC-1b9cad5810e72107",
@@ -290,7 +433,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-06T00:23:06.520Z"
+      "generated_at": "2026-08-06T01:16:33.052Z"
     },
     {
       "candidate_id": "MAC-226cc32aefe9d6ba",
@@ -306,14 +449,14 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "Pro V5.0",
-        "rationale": "VERIFIED_ALTERNATIVES is empty, so there is no verified entity to match against. The source mentions '华为乾崑智驾 ADS Pro V5.0' but without any verified alternatives, identity cannot be confirmed.",
+        "rationale": "No VERIFIED_ALTERNATIVES were provided, so there is no basis to confirm or reject entity identity. The quote shows the candidate name appears in the source.",
         "candidate_name": "Pro V5.0"
       },
       "evidence": [
         {
-          "start": 312,
+          "start": 322,
           "end": 358,
-          "quote": "华为官方今日宣布， 华为乾崑智驾 ADS Pro V5.0 将支持园区领航辅助 NCA 功能"
+          "quote": "华为乾崑智驾 ADS Pro V5.0 将支持园区领航辅助 NCA 功能"
         }
       ],
       "gate_results": [
@@ -338,7 +481,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-06T00:23:23.921Z"
+      "generated_at": "2026-08-06T01:16:51.320Z"
     },
     {
       "candidate_id": "MAC-24968a2ddff778e5",
@@ -354,7 +497,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "New",
-        "rationale": "The candidate 'New' refers to a software project called 'LLM' created by Simon Willison, as evidenced by the source text discussing its release and features. None of the verified alternatives (Google, Anthropic, OpenAI) match this entity. The source mentions OpenAI and Anthropic as providers of APIs and tools that LLM integrates with, but LLM itself is a distinct project.",
+        "rationale": "The candidate 'New' refers to a software project called 'LLM' created by Simon Willison, which is a CLI tool and Python library for interacting with large language models. None of the verified alternatives (Google, Anthropic, OpenAI) match this entity. The source text discusses integrations with OpenAI and Anthropic APIs, but the entity itself is distinct from those companies.",
         "candidate_name": "New"
       },
       "evidence": [
@@ -386,7 +529,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-06T00:23:11.014Z"
+      "generated_at": "2026-08-06T01:16:35.548Z"
     },
     {
       "candidate_id": "MAC-2d4c196465e0f8fe",
@@ -425,7 +568,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-06T00:22:43.170Z"
+      "generated_at": "2026-08-06T01:16:21.703Z"
     },
     {
       "candidate_id": "MAC-2dd21d7df8eb79f2",
@@ -464,7 +607,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-06T00:22:51.324Z"
+      "generated_at": "2026-08-06T01:16:25.335Z"
     },
     {
       "candidate_id": "MAC-30032b58e4b3111b",
@@ -480,7 +623,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "Claude Code",
-        "rationale": "The source mentions 'Claude Code' as a competitor that Meta's Muse Code aims to challenge. This establishes a competitive relationship between distinct products from different companies (Anthropic vs Meta), not that the candidate entity 'Claude Code' is the same as Muse Code.",
+        "rationale": "The source mentions 'Claude Code' as a product from Anthropic that Meta's Muse Code aims to challenge. The candidate entity 'Claude Code' is referenced as a competitor, not as the same entity as Muse Code or Meta. No VERIFIED_ALTERNATIVES exist to match against, and the quote confirms it is a distinct product from a different company.",
         "candidate_name": "Claude Code"
       },
       "evidence": [
@@ -512,7 +655,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-06T00:23:29.927Z"
+      "generated_at": "2026-08-06T01:16:54.642Z"
     },
     {
       "candidate_id": "MAC-3459f927dd2c8305",
@@ -602,7 +745,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "ADS Pro V5.0",
-        "rationale": "No VERIFIED_ALTERNATIVES were provided, so there is no basis to confirm or reject entity identity. The candidate name appears in the source text.",
+        "rationale": "No VERIFIED_ALTERNATIVES list was provided, so there is no basis to confirm or reject a match. The source text mentions '华为乾崑智驾 ADS Pro V5.0' which matches the candidate canonical name, but without verified alternatives the identity cannot be resolved.",
         "candidate_name": "ADS Pro V5.0"
       },
       "evidence": [
@@ -634,7 +777,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-06T00:23:15.335Z"
+      "generated_at": "2026-08-06T01:16:41.142Z"
     },
     {
       "candidate_id": "MAC-3f3a95da6ae7f476",
@@ -673,7 +816,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-06T00:23:02.888Z"
+      "generated_at": "2026-08-06T01:16:29.051Z"
     },
     {
       "candidate_id": "MAC-3fe48468ad32cc5d",
@@ -689,7 +832,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "Muse Code",
-        "rationale": "The candidate canonical_name 'Muse Code' appears verbatim in the source text, but VERIFIED_ALTERNATIVES is empty, so there is no verified entity to match against. The source confirms the name and product details but provides no basis to determine same_entity or distinct_entity.",
+        "rationale": "The candidate canonical_name 'Muse Code' appears verbatim in the source text, but VERIFIED_ALTERNATIVES is empty, so there is no verified entity to match against. The source confirms the product exists and is a terminal coding agent by Meta, but without any verified alternatives, identity cannot be confirmed or denied.",
         "candidate_name": "Muse Code"
       },
       "evidence": [
@@ -721,7 +864,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-06T00:23:18.261Z"
+      "generated_at": "2026-08-06T01:16:43.646Z"
     },
     {
       "candidate_id": "MAC-44736a382a9a5c8d",
@@ -733,20 +876,26 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.2",
-      "status": "rejected",
+      "status": "accepted",
       "proposal": {
         "claims": [
           {
             "event_type": "standard_specification",
-            "subject": "Model Context Protocol",
-            "object": "2026-07-28 specification release candidate",
+            "subject": "Model Context Protocol Transports Working Group",
+            "object": "2026-07-28 Model Context Protocol specification release candidate",
             "evidence_index": 0
           },
           {
             "event_type": "standard_specification",
-            "subject": "MCP Transports Working Group",
-            "object": "SEP-2243 (HTTP Standardization)",
+            "subject": "2026-07-28 Model Context Protocol specification",
+            "object": "initialize/initialized handshake and Mcp-Session-Id header removal",
             "evidence_index": 1
+          },
+          {
+            "event_type": "standard_specification",
+            "subject": "2026-07-28 Model Context Protocol specification",
+            "object": "formal deprecation policy with minimum 12-month transition window",
+            "evidence_index": 2
           }
         ]
       },
@@ -757,9 +906,14 @@
           "quote": "Today, we are thrilled to celebrate the culmination of that work: the 2026-07-28 Model Context Protocol specification release candidate"
         },
         {
-          "start": 5707,
-          "end": 5811,
-          "quote": "Working under the Transports Working Group, we helped design SEP-2243 (HTTP Standardization) [302, 542]."
+          "start": 3673,
+          "end": 3799,
+          "quote": "The initialize / initialized handshake (SEP-2575) and the logical Mcp-Session-Id header (SEP-2567) have been removed entirely."
+        },
+        {
+          "start": 10576,
+          "end": 10755,
+          "quote": "For the first time, MCP now has a formal deprecation policy. Features move through a structured Active -> Deprecated -> Removed lifecycle with a minimum 12-month transition window"
         }
       ],
       "gate_results": [
@@ -775,8 +929,8 @@
         },
         {
           "gate": "protected_facts",
-          "status": "failed",
-          "detail": "unsupported_numeric_fact:28"
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
         },
         {
           "gate": "task_contract",
@@ -784,7 +938,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-06T00:22:34.056Z"
+      "generated_at": "2026-08-06T01:16:19.139Z"
     },
     {
       "candidate_id": "MAC-5363fde71c2251f6",
@@ -823,7 +977,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-06T00:22:42.108Z"
+      "generated_at": "2026-08-06T01:16:20.933Z"
     },
     {
       "candidate_id": "MAC-56225e14fa7f9328",
@@ -986,7 +1140,7 @@
       "status": "requires_review",
       "proposal": {
         "action": "recollect_original",
-        "reason": "The source describes a product integration and performance comparison, not a concrete AI event such as a model release, funding, or acquisition.",
+        "reason": "The source describes a product blog post about Castform and Neon infrastructure for post-training models, not a concrete AI event such as a model release, funding, or acquisition. The title mentions a performance comparison but the source itself does not contain a discrete event that fits the required event_type taxonomy.",
         "claims": []
       },
       "evidence": [
@@ -1018,7 +1172,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-06T00:23:37.175Z"
+      "generated_at": "2026-08-06T01:17:00.174Z"
     },
     {
       "candidate_id": "MAC-6a37fbe5d95e20a1",
@@ -1082,11 +1236,35 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.2",
-      "status": "rejected",
+      "status": "accepted",
       "proposal": {
-        "claims": []
+        "claims": [
+          {
+            "event_type": "capital_investment",
+            "subject": "SpaceX",
+            "object": "terrestrial mobile network buildout",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "acquisition",
+            "subject": "SpaceX",
+            "object": "65 MHz of nationwide spectrum licenses from EchoStar",
+            "evidence_index": 1
+          }
+        ]
       },
-      "evidence": [],
+      "evidence": [
+        {
+          "start": 750,
+          "end": 891,
+          "quote": "The spectrum that we purchased from EchoStar does have terrestrial components, so we definitely intend to build out the terrestrial component"
+        },
+        {
+          "start": 3986,
+          "end": 4102,
+          "quote": "SpaceX is buying 65 MHz of nationwide spectrum licenses from EchoStar in a few chunks between 1.695 GHz and 2.2 GHz."
+        }
+      ],
       "gate_results": [
         {
           "gate": "source_hash",
@@ -1095,8 +1273,8 @@
         },
         {
           "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
+          "status": "passed",
+          "detail": "all quotes match exact spans"
         },
         {
           "gate": "protected_facts",
@@ -1105,11 +1283,58 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-06T00:22:59.187Z"
+      "generated_at": "2026-08-06T01:16:29.229Z"
+    },
+    {
+      "candidate_id": "MAC-73d0acd5e564b109",
+      "task_type": "qa_repair",
+      "asset_id": "QA-b59ddc9a4b6c22b1",
+      "raw_id": "RAW-5939ae4d5c6e4149",
+      "source_ref": "SA-8320edada153076e",
+      "source_hash": "8891db3cdd0ebc8f",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "keep_qa",
+        "reason": "The source text describes Midjourney's ownership structure and business model but does not contain a concrete AI event matching the required event_types. It confirms the company is private and self-funded, which aligns with the QA_REASON that the event is not AI-relevant.",
+        "claims": []
+      },
+      "evidence": [
+        {
+          "start": 29,
+          "end": 228,
+          "quote": "Midjourney is an independent, privately held AI company founded and led by David Holz. The company says it is self-funded, has no outside investors, no controlling parent company, and no advertisers."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-06T01:17:02.465Z"
     },
     {
       "candidate_id": "MAC-7954c1f92cef6f7b",
@@ -1148,7 +1373,55 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-06T00:22:31.511Z"
+      "generated_at": "2026-08-06T01:16:17.311Z"
+    },
+    {
+      "candidate_id": "MAC-7e88602d7df5aa91",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-8dfe7dd8f82c0f5b",
+      "raw_id": "RAW-4ea23adea28fa9b1",
+      "source_ref": "SA-20790f26d6b9f6fe",
+      "source_hash": "5edb1b18f688f0a6",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "EDOM Technology",
+        "rationale": "The candidate entity EDOM Technology is described as collaborating with NVIDIA to provide integration services. This is a business relationship (collaboration, integration partner), not evidence that EDOM Technology and NVIDIA are the same entity.",
+        "candidate_name": "EDOM Technology"
+      },
+      "evidence": [
+        {
+          "start": 978,
+          "end": 1243,
+          "quote": "EDOM Technology (TWSE: 3048), Asia's best solutions provider, today announced an expanded collaboration with NVIDIA to help enterprises accelerate Edge AI adoption by integrating the NVIDIA Edge AI platform, open-source models, and system optimization technologies."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-06T01:16:46.412Z"
     },
     {
       "candidate_id": "MAC-7ef7d38fd3c8f39c",
@@ -1164,7 +1437,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "Jeff Dean",
-        "rationale": "The candidate 'Jeff Dean' is a person leaving Google to start a new company, not an alias for the organization 'Google' or 'Google DeepMind'. The source confirms he is stepping down from Google and co-founding Discovery Loop, making him a distinct entity from the verified organizational alternatives.",
+        "rationale": "The candidate is a person (Jeff Dean) who is leaving Google to start a new company. The verified alternatives are organizations (Google, Google DeepMind). The source confirms Jeff Dean is a distinct individual stepping down from Google, not an alias for the company itself.",
         "candidate_name": "Jeff Dean"
       },
       "evidence": [
@@ -1196,7 +1469,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-06T00:23:19.689Z"
+      "generated_at": "2026-08-06T01:16:46.411Z"
     },
     {
       "candidate_id": "MAC-801d8cae75148856",
@@ -1219,14 +1492,14 @@
           },
           {
             "event_type": "financial_performance",
-            "subject": "鲸岩资本（Whale Rock Capital）",
-            "object": "上半年回报率高达72.5%",
+            "subject": "Turion 基金",
+            "object": "7月份跌了11.4%",
             "evidence_index": 1
           },
           {
             "event_type": "financial_performance",
-            "subject": "Turion 基金",
-            "object": "7月份跌了11.4%",
+            "subject": "Coatue 的对冲基金",
+            "object": "亏了8.3%",
             "evidence_index": 2
           }
         ]
@@ -1238,14 +1511,14 @@
           "quote": "鲸岩资本（Whale Rock Capital），7月份暴跌 21.7% ，一个月亏光了半年收益。"
         },
         {
-          "start": 142,
-          "end": 169,
-          "quote": "这家基金之前业绩一路飙升，上半年回报率高达72.5%。"
-        },
-        {
           "start": 563,
           "end": 602,
           "quote": "Turion 基金，主打做多和做空AI硬件和半导体公司，7月份跌了11.4%。"
+        },
+        {
+          "start": 603,
+          "end": 651,
+          "quote": "Coatue 的对冲基金亏了8.3%，创了一年多来的最差单月表现，全年收益被砍到只剩14.3%。"
         }
       ],
       "gate_results": [
@@ -1270,7 +1543,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-06T00:22:38.028Z"
+      "generated_at": "2026-08-06T01:16:20.259Z"
     },
     {
       "candidate_id": "MAC-81a2e93cbd067417",
@@ -1309,7 +1582,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-06T00:22:54.421Z"
+      "generated_at": "2026-08-06T01:16:26.616Z"
     },
     {
       "candidate_id": "MAC-859802f90b96c98d",
@@ -1325,7 +1598,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "Shieldstral",
-        "rationale": "The candidate canonical_name 'Shieldstral' does not exactly match any VERIFIED_ALTERNATIVES (the list is empty). The source text confirms the existence of a product named 'Shieldstral', but without a verified alternative to match against, entity identity cannot be established.",
+        "rationale": "The candidate canonical_name 'Shieldstral' does not exactly match any VERIFIED_ALTERNATIVES (the list is empty). The source text confirms the entity is a content moderation AI model named 'Shieldstral', but without a verified alternative to match, it cannot be classified as the same entity.",
         "candidate_name": "Shieldstral"
       },
       "evidence": [
@@ -1357,7 +1630,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-06T00:23:27.170Z"
+      "generated_at": "2026-08-06T01:16:53.344Z"
     },
     {
       "candidate_id": "MAC-8680b3c4a1cd79c4",
@@ -1396,7 +1669,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-06T00:23:00.146Z"
+      "generated_at": "2026-08-06T01:16:30.359Z"
     },
     {
       "candidate_id": "MAC-889286e24de5094b",
@@ -1564,6 +1837,18 @@
             "subject": "Warp",
             "object": "Warp Agent CLI",
             "evidence_index": 0
+          },
+          {
+            "event_type": "pricing_change",
+            "subject": "Warp",
+            "object": "ad hoc credits",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "model_release",
+            "subject": "Warp Agent CLI",
+            "object": "frontier and open-weight models",
+            "evidence_index": 2
           }
         ]
       },
@@ -1572,6 +1857,16 @@
           "start": 689,
           "end": 803,
           "quote": "Today we are excited to launch the Warp Agent CLI, a new standalone CLI that lets you use the Warp Agent anywhere."
+        },
+        {
+          "start": 6115,
+          "end": 6202,
+          "quote": "Purchase ad hoc credits, now available without a monthly subscription, starting at $10."
+        },
+        {
+          "start": 1125,
+          "end": 1233,
+          "quote": "Out of the box, you get access to frontier and open-weight models and auto-routing based on task complexity."
         }
       ],
       "gate_results": [
@@ -1596,7 +1891,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-06T00:23:05.240Z"
+      "generated_at": "2026-08-06T01:16:31.730Z"
     },
     {
       "candidate_id": "MAC-9809733d6c15551d",
@@ -1635,7 +1930,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-06T00:22:52.622Z"
+      "generated_at": "2026-08-06T01:16:25.650Z"
     },
     {
       "candidate_id": "MAC-a2941e1865880b5b",
@@ -1651,7 +1946,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "V5.0",
-        "rationale": "No VERIFIED_ALTERNATIVES list was provided, so there is no basis to confirm or reject entity identity. The quote shows the candidate name 'V5.0' appears in the source.",
+        "rationale": "No VERIFIED_ALTERNATIVES list is provided, so there is no reference to confirm whether 'V5.0' matches an existing verified entity. The source text mentions '华为乾崑智驾 ADS Pro V5.0' but without alternatives, identity cannot be determined.",
         "candidate_name": "V5.0"
       },
       "evidence": [
@@ -1683,7 +1978,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-06T00:23:32.111Z"
+      "generated_at": "2026-08-06T01:16:56.580Z"
     },
     {
       "candidate_id": "MAC-a6f3557bb1645bb3",
@@ -1722,7 +2017,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-06T00:22:55.824Z"
+      "generated_at": "2026-08-06T01:16:26.743Z"
     },
     {
       "candidate_id": "MAC-b4a9a2c4aa18cdc2",
@@ -1813,7 +2108,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-06T00:22:39.352Z"
+      "generated_at": "2026-08-06T01:16:20.091Z"
     },
     {
       "candidate_id": "MAC-ba259ba4f3e4c331",
@@ -1829,7 +2124,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "Alpamayo 2 Super",
-        "rationale": "The candidate canonical_name is 'Alpamayo 2 Super' but the source text consistently refers to the product as 'Alpamayo 2 Super' with a space before 'Super'. The quote confirms the exact name used in the source, which does not match the candidate's canonical_name string exactly. Additionally, no VERIFIED_ALTERNATIVES exist to match against.",
+        "rationale": "The candidate canonical_name is 'Alpamayo 2 Super' but the source text consistently refers to 'Alpamayo 2 Super' (with a space before 'Super'). The candidate name lacks this space, so it does not exactly match the verified alternatives list (which is empty anyway). Additionally, no VERIFIED_ALTERNATIVES are provided to match against.",
         "candidate_name": "Alpamayo 2 Super"
       },
       "evidence": [
@@ -1861,7 +2156,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-06T00:23:24.666Z"
+      "generated_at": "2026-08-06T01:16:49.341Z"
     },
     {
       "candidate_id": "MAC-bc088da1a63aceed",
@@ -1873,11 +2168,11 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.2",
-      "status": "requires_review",
+      "status": "rejected",
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "Press",
-        "rationale": "The candidate 'Press' refers to a generic press releases page or section, while the verified alternative 'NVIDIA' is a specific technology company. The source text is a list of press releases from Supermicro and does not contain any quote proving that 'Press' refers to NVIDIA. The entities are fundamentally different.",
+        "rationale": "The candidate 'Press' refers to a section heading for press releases on the Supermicro website. The verified alternative 'NVIDIA' is a technology company. The source text mentions 'NVIDIA Vera Rubin NVL4' and 'NVIDIA Rubin GPUs' as products used in Supermicro solutions, but 'Press' is not an alias for NVIDIA. These are distinct entities.",
         "candidate_name": "Press"
       },
       "evidence": [
@@ -1900,8 +2195,8 @@
         },
         {
           "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:4"
         },
         {
           "gate": "task_contract",
@@ -1909,7 +2204,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-06T00:23:16.342Z"
+      "generated_at": "2026-08-06T01:16:44.159Z"
     },
     {
       "candidate_id": "MAC-bf1039fc433984f1",
@@ -1948,7 +2243,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-06T00:22:57.754Z"
+      "generated_at": "2026-08-06T01:16:27.769Z"
     },
     {
       "candidate_id": "MAC-d163c6f1dd2e90d1",
@@ -2038,7 +2333,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "Muse Spark 1.2",
-        "rationale": "No VERIFIED_ALTERNATIVES were provided, so there is no basis to confirm or reject a match. The source text confirms the existence of 'Muse Spark 1.2' as a product, but without a verified list, identity cannot be established.",
+        "rationale": "No VERIFIED_ALTERNATIVES list was provided, so there are no verified entities to match against. The candidate name 'Muse Spark 1.2' appears verbatim in the source, but without a verified list, identity cannot be confirmed or denied.",
         "candidate_name": "Muse Spark 1.2"
       },
       "evidence": [
@@ -2070,7 +2365,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-06T00:23:13.009Z"
+      "generated_at": "2026-08-06T01:16:34.988Z"
     },
     {
       "candidate_id": "MAC-de1d5dbdb87a1b03",
@@ -2109,7 +2404,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-06T00:23:08.047Z"
+      "generated_at": "2026-08-06T01:16:32.979Z"
     },
     {
       "candidate_id": "MAC-e5f625d0deb061f1",
@@ -2125,14 +2420,14 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "Mistral",
-        "rationale": "The candidate 'Mistral' appears in the source as a shorthand reference to 'Mistral AI', but the verified alternative is 'Mistral AI'. The source uses 'Mistral' to refer to the company's statements, but the canonical names do not exactly match. The quote shows 'Mistral' is used as a shortened form, but the instruction requires exact match with VERIFIED_ALTERNATIVES, which is 'Mistral AI'.",
+        "rationale": "The candidate 'Mistral' appears in the source as a shorthand reference to the company, but the verified alternative is 'Mistral AI'. The source text uses 'Mistral AI' as the full official name in the first mention, and later uses 'Mistral' as a shortened form. However, the canonical_name 'Mistral' does not exactly match the verified canonical_name 'Mistral AI', so they must be treated as distinct entities.",
         "candidate_name": "Mistral"
       },
       "evidence": [
         {
-          "start": 163,
-          "end": 199,
-          "quote": "Mistral 表示该模型在内容安全方面，性能媲美 7 倍规模的开放模型"
+          "start": 15,
+          "end": 41,
+          "quote": "Mistral AI 昨日（8 月 4 日）发布公告"
         }
       ],
       "gate_results": [
@@ -2157,7 +2452,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-06T00:23:21.594Z"
+      "generated_at": "2026-08-06T01:16:49.168Z"
     },
     {
       "candidate_id": "MAC-e7f5717c0f41bcd3",
@@ -2218,6 +2513,76 @@
       "generated_at": "2026-08-06T00:23:08.269Z"
     },
     {
+      "candidate_id": "MAC-ee5dd8a51e25ac50",
+      "task_type": "qa_repair",
+      "asset_id": "QA-aba4f90a7c2b1c35",
+      "raw_id": "RAW-a30df4bdded36f17",
+      "source_ref": "SA-6e8880abd799d532",
+      "source_hash": "faf036dd68848e70",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source describes a concrete AI model release event with specific product capabilities and comparative performance claims.",
+        "claims": [
+          {
+            "event_type": "model_release",
+            "subject": "Black Forest Labs",
+            "object": "FLUX 3 Video",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "research_result",
+            "subject": "Black Forest Labs",
+            "object": "FLUX 3 Video Elo ranking",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 180,
+          "end": 470,
+          "quote": "Black Forest Labs has launched FLUX 3 Video, which generates Full HD clips up to 20 seconds long with native audio and lip-synced dialogue in more than 14 languages. It can also render typography directly in scenes. BFL's own Elo rankings put it ahead of Gemini Omni Flash and Seedance 2.0."
+        },
+        {
+          "start": 180,
+          "end": 345,
+          "quote": "Black Forest Labs has launched FLUX 3 Video, which generates Full HD clips up to 20 seconds long with native audio and lip-synced dialogue in more than 14 languages."
+        },
+        {
+          "start": 396,
+          "end": 470,
+          "quote": "BFL's own Elo rankings put it ahead of Gemini Omni Flash and Seedance 2.0."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-06T01:17:00.895Z"
+    },
+    {
       "candidate_id": "MAC-eecb2d6b2c8acfaf",
       "task_type": "entity_resolution",
       "asset_id": "EN-cebe2a69968e2959",
@@ -2231,7 +2596,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "GO Ultra AI",
-        "rationale": "The candidate canonical_name is 'GO Ultra AI', but the source text describes 'GO Ultra AI 语音助手' (GO Ultra AI voice assistant) as a feature of the Insta360 GO Ultra camera, not a standalone product. The quote shows it is a component/feature being developed for the camera, making it distinct from the camera product itself.",
+        "rationale": "The candidate is a product named 'GO Ultra AI', but the source text describes 'GO Ultra AI 语音助手' as a feature (voice assistant) of the existing 'Insta360 GO Ultra' camera, not a standalone product. The quote shows it is a delayed feature update for the camera.",
         "candidate_name": "GO Ultra AI"
       },
       "evidence": [
@@ -2263,7 +2628,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-06T00:23:29.900Z"
+      "generated_at": "2026-08-06T01:16:55.362Z"
     },
     {
       "candidate_id": "MAC-f22a0d5d9cd6d8fd",
@@ -2389,7 +2754,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-06T00:22:48.888Z"
+      "generated_at": "2026-08-06T01:16:24.541Z"
     },
     {
       "candidate_id": "MAC-fb7c8bf493ae41ed",
@@ -2428,7 +2793,55 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-06T00:22:50.036Z"
+      "generated_at": "2026-08-06T01:16:24.203Z"
+    },
+    {
+      "candidate_id": "MAC-fd7bd0a8b70cb0c8",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-55018455fd10b832",
+      "raw_id": "RAW-5c2320ffb5fa2e3c",
+      "source_ref": "SA-a7b3bbf88901cb55",
+      "source_hash": "21a283e23c130b6b",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Irregular",
+        "rationale": "The candidate 'Irregular' is described as an external cybersecurity testing partner for OpenAI and also hosted a misconfigured evaluation environment for Anthropic. None of the VERIFIED_ALTERNATIVES ('Anthropic' or 'OpenAI') match this entity. The relationships described (testing partner for OpenAI, host for Anthropic's evaluation) indicate a distinct organization, not an alias for either verified entity.",
+        "candidate_name": "Irregular"
+      },
+      "evidence": [
+        {
+          "start": 557,
+          "end": 798,
+          "quote": "Irregular, one of our external cybersecurity testing partners, was running Capture-the-Flag-style evaluations intended to be isolated from the internet, but a testing-environment misconfiguration allowed models to access the public internet."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-06T01:16:38.602Z"
     }
   ]
 }
