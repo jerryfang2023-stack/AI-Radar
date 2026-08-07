@@ -3,7 +3,7 @@
     "version": "COLLECTION-TELEMETRY-V1.0",
     "ops_version": "OPS-V2.0.0-v4-telemetry",
     "data_date": "2026-08-07",
-    "generated_at": "2026-08-07T00:27:50.727Z",
+    "generated_at": "2026-08-07T01:18:40.244Z",
     "scope": "OPS",
     "canonical_writeback": false,
     "source_of_truth": "Data Center V4 manifest and integrity gate"
@@ -15,18 +15,18 @@
     "raw_documents": 258
   },
   "fact_build": {
-    "accepted_claims": 45,
+    "accepted_claims": 48,
     "rejected_claims": 0,
-    "accepted": 45,
+    "accepted": 48,
     "rejected": 0,
-    "pending_claims": 5,
-    "canonical_events": 20,
-    "entities": 36,
-    "relationships": 50,
+    "pending_claims": 7,
+    "canonical_events": 22,
+    "entities": 37,
+    "relationships": 55,
     "conflicts": 0,
-    "qa_queue": 238,
+    "qa_queue": 236,
     "qa_by_status": {
-      "review_optional": 221,
+      "review_optional": 219,
       "open": 17
     }
   },
@@ -69,16 +69,16 @@
       "label": "事实构建",
       "status": "passed",
       "counts": {
-        "accepted_claims": 45,
+        "accepted_claims": 48,
         "rejected_claims": 0,
-        "accepted": 45,
+        "accepted": 48,
         "rejected": 0,
-        "pending_claims": 5,
-        "canonical_events": 20,
-        "entities": 36,
-        "relationships": 50,
+        "pending_claims": 7,
+        "canonical_events": 22,
+        "entities": 37,
+        "relationships": 55,
         "conflicts": 0,
-        "qa_queue": 238
+        "qa_queue": 236
       },
       "evidence": [
         "01-SiteV2/content/11-databases/data-center-v4/2026-08-07/manifest.json",

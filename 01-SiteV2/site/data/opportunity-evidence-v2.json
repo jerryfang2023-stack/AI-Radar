@@ -774,6 +774,147 @@
       }
     },
     {
+      "id": "EV-2321e89fad893290",
+      "event_id": "EV-2321e89fad893290",
+      "event_type": "security_incident",
+      "publication_status": "verified",
+      "title": "涉及OpenAI模型的第三方网络评估",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-07",
+      "event_time": "2026-08-05T23:45:32.000Z",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations/#atom-everything",
+      "sourceName": "Simon Willison's Blog",
+      "subject": "Irregular",
+      "sourceExcerpt": "Irregular, one of our external cybersecurity testing partners, was running Capture-the-Flag-style evaluations intended to be isolated from the internet, but a testing-environment misconfiguration allowed models to access the public internet.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-55018455fd10b832",
+          "canonical_name": "Irregular",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_name": "Anthropic",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-b352c9e7708b9ef9",
+        "CL-4443012efd9b46d9",
+        "CL-14c699eaea4b487c"
+      ],
+      "source_refs": [
+        "SA-4c46cfa5b3387f42"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "security_operations",
+          "value_name": "安全运营",
+          "entity_ids": [
+            "EN-55018455fd10b832"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [
+          {
+            "value_id": "it_security_team",
+            "claim_ref": "CL-b352c9e7708b9ef9",
+            "source_refs": [
+              "SA-4c46cfa5b3387f42"
+            ],
+            "provenance": "v4_facet_projection"
+          }
+        ],
+        "team_or_function": [
+          {
+            "value_id": "it_security",
+            "claim_ref": "CL-b352c9e7708b9ef9",
+            "source_refs": [
+              "SA-4c46cfa5b3387f42"
+            ],
+            "provenance": "v4_facet_projection"
+          }
+        ],
+        "specific_task": [
+          {
+            "value_id": "permission_audit",
+            "claim_ref": "CL-b352c9e7708b9ef9",
+            "source_refs": [
+              "SA-4c46cfa5b3387f42"
+            ],
+            "provenance": "v4_facet_projection"
+          }
+        ],
+        "pain_or_constraint": [
+          {
+            "value_id": "security_compliance",
+            "claim_ref": "CL-b352c9e7708b9ef9",
+            "source_refs": [
+              "SA-4c46cfa5b3387f42"
+            ],
+            "provenance": "v4_facet_projection"
+          },
+          {
+            "value_id": "evaluation_gap",
+            "claim_ref": "CL-b352c9e7708b9ef9",
+            "source_refs": [
+              "SA-4c46cfa5b3387f42"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "failure_postmortem",
+            "claim_ref": "CL-b352c9e7708b9ef9",
+            "source_refs": [
+              "SA-4c46cfa5b3387f42"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [
+            "it_security_team"
+          ],
+          "team_or_function": [
+            "it_security"
+          ],
+          "specific_task": [
+            "permission_audit"
+          ],
+          "pain_or_constraint": [
+            "security_compliance",
+            "evaluation_gap"
+          ],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "failure_postmortem"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-4e3e9b543127b55a",
       "event_id": "EV-4e3e9b543127b55a",
       "event_type": "research_result",
@@ -1615,147 +1756,6 @@
           ],
           "business_action": [
             "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-2321e89fad893290",
-      "event_id": "EV-2321e89fad893290",
-      "event_type": "security_incident",
-      "publication_status": "verified",
-      "title": "涉及OpenAI模型的第三方网络评估",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-06",
-      "event_time": "2026-08-05T23:45:32.000Z",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations/#atom-everything",
-      "sourceName": "Simon Willison's Blog",
-      "subject": "Irregular",
-      "sourceExcerpt": "Irregular, one of our external cybersecurity testing partners, was running Capture-the-Flag-style evaluations intended to be isolated from the internet, but a testing-environment misconfiguration allowed models to access the public internet.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-55018455fd10b832",
-          "canonical_name": "Irregular",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_name": "Anthropic",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-5d45cd6c572cde7e",
-        "CL-9a0c642d5155349f",
-        "CL-4da835675d70e008"
-      ],
-      "source_refs": [
-        "SA-a7b3bbf88901cb55"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "use_case",
-          "dimension_name": "应用场景",
-          "value_id": "security_operations",
-          "value_name": "安全运营",
-          "entity_ids": [
-            "EN-55018455fd10b832"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [
-          {
-            "value_id": "it_security_team",
-            "claim_ref": "CL-5d45cd6c572cde7e",
-            "source_refs": [
-              "SA-a7b3bbf88901cb55"
-            ],
-            "provenance": "v4_facet_projection"
-          }
-        ],
-        "team_or_function": [
-          {
-            "value_id": "it_security",
-            "claim_ref": "CL-5d45cd6c572cde7e",
-            "source_refs": [
-              "SA-a7b3bbf88901cb55"
-            ],
-            "provenance": "v4_facet_projection"
-          }
-        ],
-        "specific_task": [
-          {
-            "value_id": "permission_audit",
-            "claim_ref": "CL-5d45cd6c572cde7e",
-            "source_refs": [
-              "SA-a7b3bbf88901cb55"
-            ],
-            "provenance": "v4_facet_projection"
-          }
-        ],
-        "pain_or_constraint": [
-          {
-            "value_id": "security_compliance",
-            "claim_ref": "CL-5d45cd6c572cde7e",
-            "source_refs": [
-              "SA-a7b3bbf88901cb55"
-            ],
-            "provenance": "v4_facet_projection"
-          },
-          {
-            "value_id": "evaluation_gap",
-            "claim_ref": "CL-5d45cd6c572cde7e",
-            "source_refs": [
-              "SA-a7b3bbf88901cb55"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "failure_postmortem",
-            "claim_ref": "CL-5d45cd6c572cde7e",
-            "source_refs": [
-              "SA-a7b3bbf88901cb55"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [
-            "it_security_team"
-          ],
-          "team_or_function": [
-            "it_security"
-          ],
-          "specific_task": [
-            "permission_audit"
-          ],
-          "pain_or_constraint": [
-            "security_compliance",
-            "evaluation_gap"
-          ],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "failure_postmortem"
           ]
         }
       }

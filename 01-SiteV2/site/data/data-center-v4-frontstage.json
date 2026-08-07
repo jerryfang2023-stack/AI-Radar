@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-07T00:25:47.516Z",
+    "generatedAt": "2026-08-07T01:18:26.960Z",
     "latestDataDate": "2026-08-07",
     "currentDate": "2026-08-07",
-    "eventCount": 1904,
+    "eventCount": 1905,
     "quarantinedEventCount": 16
   },
   "eventTypes": {
@@ -267493,6 +267493,184 @@
       "sourceExcerpt": "效力 27 年后谷歌首席科学家迪恩离职创立新公司，要加速 AI 前沿发现 - IT之家"
     },
     {
+      "id": "EV-a6e9e81d40dc3845",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-07",
+      "eventType": "organization_restructuring",
+      "eventTypeLabel": "组织重组",
+      "eventGroup": "组织、政策与法律",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "Anthropic 确认组建自研芯片团队",
+      "originalTitle": "",
+      "subject": "Anthropic",
+      "action": "organization_restructuring",
+      "object": "custom silicon team",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-2ca33a7cbc8adea8",
+          "subject": "Anthropic",
+          "object": "custom silicon team",
+          "quote": "Anthropic is hiring a “custom silicon team” to design chips on which to run its models, the company has revealed."
+        },
+        {
+          "id": "CL-3bed4829bcd3ac43",
+          "subject": "Anthropic",
+          "object": "multi-chip approach",
+          "quote": "The spokesperson clarified that Anthropic will still take a “multi-chip approach,” with plans to use hardware from other companies alongside its own designs as it continues to scale up."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-f1e66cff35441c10",
+          "publisher": "Ars Technica：AI（RSS）",
+          "url": "https://arstechnica.com/ai/2026/08/anthropic-confirms-plans-to-build-an-in-house-silicon-team"
+        }
+      ],
+      "sourceUrl": "https://arstechnica.com/ai/2026/08/anthropic-confirms-plans-to-build-an-in-house-silicon-team",
+      "publisher": "Ars Technica：AI（RSS）",
+      "sourceExcerpt": "Anthropic is hiring a “custom silicon team” to design chips on which to run its models, the company has revealed."
+    },
+    {
+      "id": "EV-2321e89fad893290",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-06",
+      "updatedDate": "2026-08-07",
+      "eventType": "security_incident",
+      "eventTypeLabel": "安全事件",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "涉及OpenAI模型的第三方网络评估",
+      "originalTitle": "Third-party cyber evaluations involving OpenAI models",
+      "subject": "Irregular",
+      "action": "security_incident",
+      "object": "testing-environment misconfiguration allowing models to access the public internet",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-55018455fd10b832"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-55018455fd10b832"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-55018455fd10b832"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-55018455fd10b832",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Irregular",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-b352c9e7708b9ef9",
+          "subject": "Irregular",
+          "object": "testing-environment misconfiguration allowing models to access the public internet",
+          "quote": "Irregular, one of our external cybersecurity testing partners, was running Capture-the-Flag-style evaluations intended to be isolated from the internet, but a testing-environment misconfiguration allowed models to access the public internet."
+        },
+        {
+          "id": "CL-4443012efd9b46d9",
+          "subject": "OpenAI model",
+          "object": "exploited a real website due to testing-environment misconfiguration",
+          "quote": "In one test, the name of the fictional target for the CTF challenge unintentionally coincided with a real domain. Because the testing environment was mistakenly connected to the internet, the model exploited a real website, mistaking it to be part of the simulated environment."
+        },
+        {
+          "id": "CL-14c699eaea4b487c",
+          "subject": "Irregular",
+          "object": "hosted misconfigured evaluation environment giving Claude live internet access",
+          "quote": "Irregular also feature in Anthropic's write-up - they were hosting the misconfigured evaluation environment which gave Claude live internet access during some of those tests."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-4c46cfa5b3387f42",
+          "publisher": "Simon Willison's Blog",
+          "url": "https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations"
+        }
+      ],
+      "sourceUrl": "https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations",
+      "publisher": "Simon Willison's Blog",
+      "sourceExcerpt": "Irregular, one of our external cybersecurity testing partners, was running Capture-the-Flag-style evaluations intended to be isolated from the internet, but a testing-environment misconfiguration allowed models to access the public internet."
+    },
+    {
       "id": "EV-248e01495eb582ed",
       "dataDate": "2026-08-07",
       "date": "2026-08-06",
@@ -267637,118 +267815,6 @@
       "sourceUrl": "https://theverge.com/tech/976042/openai-apple-trade-secrets-lawsuit-dismissal-request",
       "publisher": "The Verge AI",
       "sourceExcerpt": "OpenAI says Apple’s trade secrets lawsuit is ‘rotten to its core’"
-    },
-    {
-      "id": "EV-2321e89fad893290",
-      "dataDate": "2026-08-06",
-      "date": "2026-08-06",
-      "updatedDate": "2026-08-06",
-      "eventType": "security_incident",
-      "eventTypeLabel": "安全事件",
-      "eventGroup": "组织、政策与法律",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "涉及OpenAI模型的第三方网络评估",
-      "originalTitle": "Third-party cyber evaluations involving OpenAI models",
-      "subject": "Irregular",
-      "action": "security_incident",
-      "object": "testing-environment misconfiguration allowing models to access the public internet",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "security_operations",
-            "name": "安全运营",
-            "entityIds": [
-              "EN-55018455fd10b832"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "security_operations",
-          "name": "安全运营",
-          "entityIds": [
-            "EN-55018455fd10b832"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "security_operations",
-          "name": "安全运营",
-          "entityIds": [
-            "EN-55018455fd10b832"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-55018455fd10b832",
-        "EN-7d3194f79e645c42",
-        "EN-c70eca6b0f88f44d"
-      ],
-      "entityNames": [
-        "Irregular",
-        "OpenAI",
-        "Anthropic"
-      ],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-5d45cd6c572cde7e",
-          "subject": "Irregular",
-          "object": "testing-environment misconfiguration allowing models to access the public internet",
-          "quote": "Irregular, one of our external cybersecurity testing partners, was running Capture-the-Flag-style evaluations intended to be isolated from the internet, but a testing-environment misconfiguration allowed models to access the public internet."
-        },
-        {
-          "id": "CL-9a0c642d5155349f",
-          "subject": "OpenAI model",
-          "object": "exploited a real website due to testing-environment misconfiguration",
-          "quote": "In one test, the name of the fictional target for the CTF challenge unintentionally coincided with a real domain. Because the testing environment was mistakenly connected to the internet, the model exploited a real website, mistaking it to be part of the simulated environment."
-        },
-        {
-          "id": "CL-4da835675d70e008",
-          "subject": "Irregular",
-          "object": "hosted misconfigured evaluation environment giving Claude live internet access",
-          "quote": "Irregular also feature in Anthropic's write-up - they were hosting the misconfigured evaluation environment which gave Claude live internet access during some of those tests."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-a7b3bbf88901cb55",
-          "publisher": "Simon Willison's Blog",
-          "url": "https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations"
-        }
-      ],
-      "sourceUrl": "https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations",
-      "publisher": "Simon Willison's Blog",
-      "sourceExcerpt": "Irregular, one of our external cybersecurity testing partners, was running Capture-the-Flag-style evaluations intended to be isolated from the internet, but a testing-environment misconfiguration allowed models to access the public internet."
     },
     {
       "id": "EV-c6b1535a2034f0f2",
@@ -291451,6 +291517,7 @@
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
         "EV-4e3e9b543127b55a",
+        "EV-a6e9e81d40dc3845",
         "EV-2321e89fad893290",
         "EV-c6b1535a2034f0f2",
         "EV-97c608a27438073a",
@@ -294727,8 +294794,8 @@
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
         "EV-4e3e9b543127b55a",
-        "EV-e07d82ffbad83150",
         "EV-2321e89fad893290",
+        "EV-e07d82ffbad83150",
         "EV-ad4f8dd61f82017a",
         "EV-e544a4c3fb59b9b0",
         "EV-31e78ede8fd890bf",
@@ -309245,7 +309312,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-08-06"
+      "lastSeen": "2026-08-07"
     },
     {
       "id": "TX-deployment_model-on_premise",
@@ -362508,6 +362575,7 @@
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
         "EV-4e3e9b543127b55a",
+        "EV-a6e9e81d40dc3845",
         "EV-2321e89fad893290",
         "EV-c6b1535a2034f0f2",
         "EV-97c608a27438073a",
@@ -362763,9 +362831,9 @@
           "EV-c0a65877001ed413"
         ],
         "productsServices": [
+          "EV-2321e89fad893290",
           "EV-b06624cf36990346",
           "EV-22e4f8278c40d63e",
-          "EV-2321e89fad893290",
           "EV-ad4f8dd61f82017a",
           "EV-4b286a3354cbf34a",
           "EV-650e4b23d45d5758",
@@ -362929,6 +362997,7 @@
           "EV-89bdda008227fb6b"
         ],
         "organizationPeople": [
+          "EV-a6e9e81d40dc3845",
           "EV-c6b1535a2034f0f2",
           "EV-97c608a27438073a",
           "EV-d46aa5935d9bb672",
@@ -363025,6 +363094,50 @@
           ]
         },
         {
+          "id": "EV-a6e9e81d40dc3845",
+          "dataDate": "2026-08-07",
+          "date": "2026-08-07",
+          "eventType": "organization_restructuring",
+          "eventTypeLabel": "组织重组",
+          "eventGroup": "组织、政策与法律",
+          "status": "rumored",
+          "statusLabel": "rumored",
+          "title": "Anthropic 确认组建自研芯片团队",
+          "displayTags": [],
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ]
+        },
+        {
+          "id": "EV-2321e89fad893290",
+          "dataDate": "2026-08-07",
+          "date": "2026-08-06",
+          "eventType": "security_incident",
+          "eventTypeLabel": "安全事件",
+          "eventGroup": "组织、政策与法律",
+          "status": "announced",
+          "statusLabel": "已公布",
+          "title": "涉及OpenAI模型的第三方网络评估",
+          "displayTags": [
+            {
+              "dimensionId": "use_case",
+              "dimensionName": "应用场景",
+              "id": "security_operations",
+              "name": "安全运营",
+              "entityIds": [
+                "EN-55018455fd10b832"
+              ],
+              "provenance": "claim_assertion",
+              "assertionId": ""
+            }
+          ],
+          "entityIds": [
+            "EN-55018455fd10b832",
+            "EN-7d3194f79e645c42",
+            "EN-c70eca6b0f88f44d"
+          ]
+        },
+        {
           "id": "EV-b06624cf36990346",
           "dataDate": "2026-08-06",
           "date": "2026-08-06",
@@ -363068,35 +363181,6 @@
           "displayTags": [],
           "entityIds": [
             "EN-11507a0e2f5e69d5",
-            "EN-7d3194f79e645c42",
-            "EN-c70eca6b0f88f44d"
-          ]
-        },
-        {
-          "id": "EV-2321e89fad893290",
-          "dataDate": "2026-08-06",
-          "date": "2026-08-06",
-          "eventType": "security_incident",
-          "eventTypeLabel": "安全事件",
-          "eventGroup": "组织、政策与法律",
-          "status": "announced",
-          "statusLabel": "已公布",
-          "title": "涉及OpenAI模型的第三方网络评估",
-          "displayTags": [
-            {
-              "dimensionId": "use_case",
-              "dimensionName": "应用场景",
-              "id": "security_operations",
-              "name": "安全运营",
-              "entityIds": [
-                "EN-55018455fd10b832"
-              ],
-              "provenance": "claim_assertion",
-              "assertionId": ""
-            }
-          ],
-          "entityIds": [
-            "EN-55018455fd10b832",
             "EN-7d3194f79e645c42",
             "EN-c70eca6b0f88f44d"
           ]
@@ -440837,7 +440921,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-06",
-      "lastSeen": "2026-08-06",
+      "lastSeen": "2026-08-07",
       "relationIds": [],
       "groupedEventIds": {
         "fundingAcquisition": [],
@@ -440853,7 +440937,7 @@
       "timeline": [
         {
           "id": "EV-2321e89fad893290",
-          "dataDate": "2026-08-06",
+          "dataDate": "2026-08-07",
           "date": "2026-08-06",
           "eventType": "security_incident",
           "eventTypeLabel": "安全事件",
@@ -478779,8 +478863,8 @@
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
         "EV-4e3e9b543127b55a",
-        "EV-e07d82ffbad83150",
         "EV-2321e89fad893290",
+        "EV-e07d82ffbad83150",
         "EV-ad4f8dd61f82017a",
         "EV-e544a4c3fb59b9b0",
         "EV-31e78ede8fd890bf",
@@ -479030,10 +479114,10 @@
         "productsServices": [
           "EV-1b5b1d3317c8f688",
           "EV-8de21f5aa53242f1",
+          "EV-2321e89fad893290",
           "EV-b06624cf36990346",
           "EV-22e4f8278c40d63e",
           "EV-ad6fe30e111608bd",
-          "EV-2321e89fad893290",
           "EV-ad4f8dd61f82017a",
           "EV-47c32b3ef5c0f57a",
           "EV-54a4809c304587e6",
@@ -479308,6 +479392,35 @@
           ]
         },
         {
+          "id": "EV-2321e89fad893290",
+          "dataDate": "2026-08-07",
+          "date": "2026-08-06",
+          "eventType": "security_incident",
+          "eventTypeLabel": "安全事件",
+          "eventGroup": "组织、政策与法律",
+          "status": "announced",
+          "statusLabel": "已公布",
+          "title": "涉及OpenAI模型的第三方网络评估",
+          "displayTags": [
+            {
+              "dimensionId": "use_case",
+              "dimensionName": "应用场景",
+              "id": "security_operations",
+              "name": "安全运营",
+              "entityIds": [
+                "EN-55018455fd10b832"
+              ],
+              "provenance": "claim_assertion",
+              "assertionId": ""
+            }
+          ],
+          "entityIds": [
+            "EN-55018455fd10b832",
+            "EN-7d3194f79e645c42",
+            "EN-c70eca6b0f88f44d"
+          ]
+        },
+        {
           "id": "EV-e07d82ffbad83150",
           "dataDate": "2026-08-07",
           "date": "2026-08-06",
@@ -479408,35 +479521,6 @@
           ],
           "entityIds": [
             "EN-7d3194f79e645c42"
-          ]
-        },
-        {
-          "id": "EV-2321e89fad893290",
-          "dataDate": "2026-08-06",
-          "date": "2026-08-06",
-          "eventType": "security_incident",
-          "eventTypeLabel": "安全事件",
-          "eventGroup": "组织、政策与法律",
-          "status": "announced",
-          "statusLabel": "已公布",
-          "title": "涉及OpenAI模型的第三方网络评估",
-          "displayTags": [
-            {
-              "dimensionId": "use_case",
-              "dimensionName": "应用场景",
-              "id": "security_operations",
-              "name": "安全运营",
-              "entityIds": [
-                "EN-55018455fd10b832"
-              ],
-              "provenance": "claim_assertion",
-              "assertionId": ""
-            }
-          ],
-          "entityIds": [
-            "EN-55018455fd10b832",
-            "EN-7d3194f79e645c42",
-            "EN-c70eca6b0f88f44d"
           ]
         },
         {
@@ -547740,7 +547824,7 @@
   "entityHistoryManifest": {
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-07T00:25:47.482Z",
+    "generatedAt": "2026-08-07T01:18:26.928Z",
     "coverage": {
       "startDate": "2017-09-07",
       "endDate": "2027-09-30",
@@ -547816,19 +547900,16 @@
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "HappyRobot",
-      "vendor": "未披露",
-      "industry": "未披露",
+      "vendor": "HappyRobot",
+      "industry": "Logistics",
       "useCase": "Kuehne+Nagel",
       "reportedNeed": "未披露",
       "deliveryComponents": [],
       "outcomes": [],
       "metrics": [],
       "undisclosedFields": [
-        "vendor",
-        "industry",
         "workflow_before",
         "workflow_after",
-        "delivery_model",
         "team_composition",
         "reported_need",
         "systems_integrated",
@@ -553218,37 +553299,35 @@
   ],
   "fdeDossiers": [
     {
-      "id": "FDED-4e31ac1c5e7360a8",
-      "implementationKey": "4e31ac1c5e7360a8",
+      "id": "FDED-99ba4af9dbc72694",
+      "implementationKey": "99ba4af9dbc72694",
       "eventId": "EV-323d98437e42e8b3",
       "eventIds": [
         "EV-323d98437e42e8b3"
       ],
       "dataDate": "2026-08-07",
       "date": "2026-08-07",
-      "title": "HappyRobot × 未披露：Kuehne+Nagel",
+      "title": "HappyRobot × HappyRobot：Kuehne+Nagel",
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "HappyRobot",
-      "vendor": "未披露",
-      "industry": "未披露",
+      "vendor": "HappyRobot",
+      "industry": "Logistics",
       "useCase": "Kuehne+Nagel",
       "workflow": "未披露",
       "systems": [],
       "outcomes": [],
       "observationCount": 1,
-      "completeness": 0.375,
-      "completenessPercent": 38,
+      "completeness": 0.625,
+      "completenessPercent": 63,
       "missingFields": [
-        "vendor",
-        "industry",
         "workflow",
         "systems_integrated",
         "reported_outcomes"
       ],
       "timeline": [
         {
-          "observationId": "FDEO-4bde993d1e7b6f8e",
+          "observationId": "FDEO-06245add487a3013",
           "type": "implementation_update",
           "stage": "announced",
           "date": "2026-08-07",
@@ -560302,11 +560381,11 @@
       ],
       "raw_documents": 127,
       "original_sources": 111,
-      "valid_claims": 21,
+      "valid_claims": 24,
       "observations": 1,
-      "canonical_events": 9,
+      "canonical_events": 10,
       "blocker_counts": {
-        "no_source_bounded_event": 21,
+        "no_source_bounded_event": 20,
         "directory_page_not_event_source": 1,
         "non_event_or_index_title": 9,
         "source_outside_daily_window": 64,
@@ -560323,9 +560402,9 @@
       },
       "rates": {
         "original_source_rate": 0.8740157480314961,
-        "valid_claim_rate": 0.16535433070866143,
-        "observation_rate": 0.047619047619047616,
-        "event_conversion_rate": 0.42857142857142855
+        "valid_claim_rate": 0.1889763779527559,
+        "observation_rate": 0.041666666666666664,
+        "event_conversion_rate": 0.4166666666666667
       },
       "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-07/monitoring-funnel.json"
     },
@@ -560346,8 +560425,8 @@
       "observations": 1,
       "canonical_events": 3,
       "blocker_counts": {
-        "no_source_bounded_event": 3,
         "source_outside_daily_window": 9,
+        "no_source_bounded_event": 2,
         "event_not_ai_relevant": 2,
         "rumor_requires_primary_confirmation": 1,
         "non_event_or_index_title": 1,
@@ -560366,17 +560445,17 @@
   "community": [
     {
       "id": "080c556c2d2e59",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "非科班出身的代码小白，使用Codex制作并上线了两个小程序的完整复盘，帮小白少踩坑",
       "author": "伍拾陆",
       "community": "生财有术",
       "content": "做外卖CPS一年后，我用Codex做了两个小程序，帮我放大业务 大家好，我是伍拾陆，一个非科班出身的0基础代码小白。 从去年7月参加了外卖CPS mini航海至今，我一直在做CPS业务，也慢慢积累了一些真实的长期用户。在上一篇帖子中，我提到想把正在做的CPS业务进一步扩大， 一开始我考虑过做矩阵、做私域，或者通过多个平台分发CPS内容。但在不断摸索的过程中，我发现这些方式并不适合我，这样下去也不是办法：流量和转化始终依赖平台，我缺少一个真正属于自己的承接流量的方式。 在5月AI大航海学习了AI编程后，我开始尝试一个新的方向——做自己的小程序。 这也是我第一次尝试用AI开发完整可上线的产品。 6月下旬到7月中旬的这些日子里，我全程使用Codex进行开发，完成并上线了两个微信小程序： 一个是根据生财里的中标信息制…",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/articleDetail/xq_topic/22255444182285581",
       "companyNames": [],
@@ -560384,17 +560463,17 @@
     },
     {
       "id": "24b6a5614d2b81",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "生财有术26年5月&6月&7月龙珠月报发布！",
       "author": "七天",
       "community": "生财有术",
       "content": "大家好，我是生财内容&线下聚会负责人七天，今天我来给大家补上 2026 年 5月&6月&7月龙珠月报 了。 过去三个月，星球内涌现了许多有价值的实战内容，其中有 8 篇文章获得了 1 颗龙珠。这些内容共同指向了 AI 时代几项越来越重要的能力：如何选择适合自己的项目，如何做好表达，如何围绕企业真实需求提供 AI 服务，以及如何借助 Claude Code、Codex 和 AI Agent，完成产品开发、内容生产、视频剪辑和业务流程自动化。 推荐大家重点阅读： 1、郭晓文｜【保姆级教程&经历分享】1 天跑通，最适合新手上手的 AI 项目 【保姆级教程&经历分享】1 天跑通，最适合新手上手的 AI 项目 2、乐阳｜万字干货深度解析：一人公司怎么做AI企业服务赛道？ 万字干货深度解析：一人公司怎么做AI企业服务赛道…",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/articleDetail/xq_topic/22255444141415211",
       "companyNames": [],
@@ -560402,17 +560481,17 @@
     },
     {
       "id": "25781a7585e0fb",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "超级术：新手友好！保姆级AI项目教程：1天跑通可变现小产品闭环",
       "author": "七天",
       "community": "生财有术",
       "content": "#超级术# 28 今天这篇超级术，推荐的是 @郭晓文 的《保姆级教程&经历分享：1 天跑通，最适合新手上手的 AI 项目》链接：【保姆级教程&经历分享】1 天跑通，最适合新手上手的 AI 项目未来一年，最值钱的技能之一，就是‘用 AI 把想法快速变成可售卖产品’的能力。今天这篇超级术，就是一个可直接参考的样本。它演示了如何用 1 天时间，从小红书的一个对标账号开始，跑通从产品构思、AI 开发、上架成交到自动交付的完整闭环。利润数字不大，但这条路径的价值，远超金钱本身。从小红书上发现对标账号，到拆解产品、流量、成交路径，从购买同行产品，到用 Claude Code 生成测试网页，如何生成小红书笔记、商品详情页，到开通小红书个人售卖功能；最后完成上架、发布、成交、自动交付。这篇值得看的点，我觉得有 3 个：1/ …",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/",
       "companyNames": [],
@@ -560420,17 +560499,17 @@
     },
     {
       "id": "28ac40e633e649",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "从YouTube创作转向抖音独家计划和伙伴计划，我如何用四个月实现稳定月入10W",
       "author": "陶小滔r",
       "community": "生财有术",
       "content": "大家好，我是小滔，有幸在2024年加入生财这个大集体，是一个生财小透明，比较内向。 曾经在小红书、公众号、YouTube等项目拿到过一些结果，做小红书虚拟资料的时候没有放大思维，跑通了从0到1，但是没有坚持下去，当时自己的认知还是太局限了。 之后参加了24年12月的YouTube航海，生财的第一波出海潮，国外赚钱国内花，在美金的巨大诱惑下，七倍的收入让我着迷。我毅然决然的放弃了小红书，加入了油管，因为我认为我当时入小红书已经有点晚了，打不过他们矩阵化的运营，而YouTube又是在圈内第一次教学，我相信自己的学习能力可以成为第一波吃上螃蟹的人。事实上，证明我确实可以在YouTube上拿到结果。 直到在大学朋友的引导下，运营油管的同时又加入了抖音，又成为了一名国内内容创作者。跟YouTube内容创作有异曲同工之妙…",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/",
       "companyNames": [],
@@ -560438,17 +560517,17 @@
     },
     {
       "id": "3219cf8fc5cef1",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "万字复盘：一个I人小白如何靠组局，把「找项目」换成「找人」",
       "author": "Jacky",
       "community": "生财有术",
       "content": "哈喽，我是Jacky，惠州圈友，418入圈的新人，一个标准到不能再标准的I人。先说三个我自己都觉得别扭的事实：毕业三年，我主动找过三次项目，全部失败，一分钱没赚到。而真正让我赚到钱的每一段——一个星期收3w+的服务变现、月均8k熬了九个月的跨境项目、现在一周500w播放的AI视频——没有一个是我自己找到的，全是别人把我拽进去的。入圈前三个月，我也在潜水：精华帖读了不少，航海跟完了，笔记记了几百行，但一个圈友都不认识。直到7月，我被一个KPI上赶着，在惠州一个月组了10场局。一个组饭局都会提前焦虑的I人，散场后整个人是空的那种，就这么硬着头皮组完了。然后我发现了一件事：机会从来不在帖子里，在人身上。 我现在的主力项目，就是在我自己组的一场局上，被分享嘉宾\"送\"到我面前的。这一万字，我把三年弯路、九个月夜班项目的…",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/",
       "companyNames": [],
@@ -560456,17 +560535,17 @@
     },
     {
       "id": "374ccdb0cd6642",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "心力即 Token：我把创业者的迷茫做成了一个开源 AI 心力教练 Skill，从个人痛点到开源github的完整复盘",
       "author": "七天",
       "community": "生财有术",
       "content": "大家好，我是七天，目前在生财负责线下聚会。过去一个月，生财发起了330场线下聚会，我也在线下和很多创业者、个体创业者有过深入交流。聊得越多，我越发现，大家在创业路上遇到的卡点，不全是业务问题。有些人手上同时有好几个方向，每个方向看起来都能做，却不知道应该聚焦哪一个；有些人项目已经跑起来了，但遇到限流、增长停滞或收入波动后，会开始怀疑自己；还有些人不是不知道下一步做什么，而是已经很累了，却不敢停下来。这些问题表面上看起来不同，背后却有一个共同点：不是缺少方法，而是当一个人面对不确定性、复杂选择、长期压力和强烈情绪时，很难独自完成结构化思考。最近，我花了一周时间做出了第一版 AI 心力教练 Skill，并把它开源到了 GitHub。GitHub 地址：GitHub - zhaocathy1221-hash/ai-…",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/",
       "companyNames": [],
@@ -560474,17 +560553,17 @@
     },
     {
       "id": "3ff79a6937cbef",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "小红书教育资料PPT Mini航海要来了！带你抓住开学季风口",
       "author": "shu.p.",
       "community": "生财有术",
       "content": "大家好，我是舒蓬，目前在小红书做教育资料PPT，用1个店铺、4个小红书账号经营，不投流，主要靠自然流量，月收入约2万元。 我平时在成都经常参加生财线下活动，也做过航海志愿者，和很多圈友交流过。前段时间和生财的航海团队在聊小红书虚拟资料的细分赛道时，我们讨论到一个很常见的现象： 很多圈友都知道小红书虚拟资料能赚钱，也对这个方向感兴趣，但真正开始做时，常常会卡在几个地方： 看到低价搬运和同质化产品卷得很厉害，不知道自己还能怎么切入； 试着发过笔记、上过商品，但一直没拿到像样的结果； 想用AI提高效率，又担心做出来的东西不像老师真的会买、会用的资料…… 过去一年，其实我也一直在这个方向反复试错、测试和复盘，从一开始单月只有几十块，到后来月收入约 2 万元。 也正是在不断踩坑的过程中，我逐渐沉淀出了一套从细分赛道选择…",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/articleDetail/xq_topic/45544221585414118",
       "companyNames": [],
@@ -560492,17 +560571,17 @@
     },
     {
       "id": "4b100d9df17927",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "公户转私户正常申报就没风险，股东分红可以用备用金或个体户开票合理处理",
       "author": "盗坤",
       "community": "生财有术",
       "content": "匿名用户 提问: 坤哥，你好 我们是初创的电商公司，目前公司两个人，本来打算先走国内，然后国内熟悉后走跨境，所以注册的公司营业执照。 现在的问题是： 1.电商平台所有提现的营业额都在公户里面，目前我们流动资金不足，想先把成本货款从公户提出来，我们试了可以直接从公户提到个人账户，但听别人说这样可能有风险，如何合理合规的把公户的钱提出来？ 2.关于公司股东收入方面，我们了解到公司股东的收入来自于分红的方式，分红是在年底核算时用总收入除去总成本，再交5%的企业税，然后再除去股东个税20%，之后的才是股东的收益，想请教一下这个有方法合理的避税，或者减税吗 期待得到坤哥的解答",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/",
       "companyNames": [],
@@ -560510,17 +560589,17 @@
     },
     {
       "id": "587a5d9a53607b",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "深耕小红书旅游2年：我如何把模糊咨询转成3万客单",
       "author": "蛙嘟嘟",
       "community": "生财有术",
       "content": "大家好，我是蛙嘟嘟。 2024年4月1日，我在寻找副业的阶段加入了生财。当时在航海项目里，我同时看到了两个方向：小红书旅游和无货源电商。 因为之前帮朋友做过小红书考研运营，对平台的内容和流量规则有一些了解。考虑到能力迁移，我最终选择了小红书旅游。 不知不觉，这个项目已经做了两年多。目前我主要做欧洲定制游，客户来自小红书和抖音，去年团队做了携程定制游板块第一，销售额浙江第六 刚开始的时候，我以为做旅游最难的是流量。真正做进去以后才发现，有流量只是第一步，后面还要解决客户需求、销售转化、产品选择和供应链交付。 尤其是欧洲定制游，客户刚来咨询时，往往只会说“想去欧洲看看”“一家人出行”“不想太累”，需求其实非常模糊。 怎么通过不断追问，找到标准产品无法满足的点，再把这些需求变成客户愿意付钱的定制方案，是我这两年重点…",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/articleDetail/xq_topic/14422118222542522",
       "companyNames": [],
@@ -560528,17 +560607,17 @@
     },
     {
       "id": "59e4fba2e96e9e",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "Obsidian知识库多设备同步教程丨完全免费，一人公司必备",
       "author": "叁斤",
       "community": "生财有术",
       "content": "哈喽，我是叁斤，现在是一人公司，用AI搭建了一套知识库体系，之前也分享了：Obsidian + Claude code，它们正在替我赚钱丨我的 AI 知识库拆解很多人都会有多个设备一起办公需求，但是多设备办公，天然存在一些弊端，比如，多个设备的知识库、AI工作文档等资料无法同步。就像之前航海家线下大课，有同学因为没办法解决这个问题，会把MacMini和电脑屏幕一起带过来，就非常不方便。现在我多个设备之间，知识库和AI记忆是同步的，设备之间也可以自由远程操控，没什么限制。关键是这一套搭建全免费，不需要购买什么网盘会员之类的，也不需要自己懂原理，交给AI，它会帮你搞好。这一篇给大家分享下我的设备和配置方案，如果有多个设备，有知识库同步需求的，都可以看看。主要分为这2个部分同步：1、知识库同步就是让你两台电脑上的知…",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/",
       "companyNames": [],
@@ -560546,17 +560625,17 @@
     },
     {
       "id": "68e95b3c0e861e",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "《想先赚到第一块钱，不妨来做抖音推广电脑版豆包》",
       "author": "戴智慧",
       "community": "生财有术",
       "content": "生财的圈友朋友们，大家好呀，我是智慧，03年在读飞行学员，目前阶段准大六，还差一门真机实践考试以及论文就能顺利回到公司上班了我也是老互联网人，22年就开始做项目，23年付费进入生财系统学习自媒体和各种项目思维迄今为止也拿到过10w+变现存款的这一成绩这期间我都是一边忙学业一边忙自媒体项目，因为我相信只要自己来对了组织，那么付费的钱对自己来说就是一笔投资，事实证明的确是这样的很多次拿到结果都是因为在生财有术社群里耳濡目染以及多年持续不下牌桌的学习，我相信圈友们能来到了生财肯定也都能过上自己想要的生活拿到自己想要的结果因为社群里分享的信息都是亦仁老大筛选过的有价值的信息，而当下就是靠信息差就能赚钱的时代最近智慧就花两天时间跑通了一个新项目，两天就赚到了1000➕具体实操细节点击链接学习吧https://my.fe…",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/",
       "companyNames": [],
@@ -560564,17 +560643,17 @@
     },
     {
       "id": "6ac0231e740b74",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "敢脱离电脑的老板，才是好老板",
       "author": "刘小排",
       "community": "生财有术",
       "content": "哈喽，大家好，我是刘小排。不知道你们有没有发现：老板一般不用电脑，工作一般是用手机处理。 老板需要处理工作的时候，一般是通过手机安排一个同事去解决。如果我们自认为是“AI员工的老板”，我们也应该脱离电脑，别天天盯在屏幕前啦。关于具体如何做，我这篇公众号已经讲了，我这里不再赘述。https://mp.weixin.qq.com/s/Pl8kBle1htPRPuCSkD1lHA请你看完公众号后，再回来接着看，我在这里补充一些细节，仅针对生财圈友。一边玩手机，也可以开“小窗”盯着AI员工干活下面，开始说细节这是什么软件？UU远程。UU远程是免费的。比收费的ToDesk还好用。如何打字？简单的说，肯定是“语音输入”展开说的话 —— 我使用的是「微信输入法」。微信输入法几个好处：语音输入效果很好，还会自动整理格式，很像…",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/",
       "companyNames": [],
@@ -560582,17 +560661,17 @@
     },
     {
       "id": "6f7966508dba72",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "AI 图书带货视频生产线：一个人、零剪辑、Agent化，人工审核",
       "author": "一叶知秋",
       "community": "生财有术",
       "content": "做视频号矩阵的都卡在两个死结上：同质化限流，和时间黑洞。一条内容发多个号，平台去重不是改几个词能混过去的——画面、声音 ▎ 、文案三重指纹全要换。一个人的产能上限就是一天憋一两条。 ▎ ▎ 我花了两个月搭了套 AI 流水线：拆爆款骨架、保骨换肉出稿、九宫格生图、三层差异去重、四号一键分发、Claude Code ▎ 监工自己跑。全程不用打开剪辑软件。 ▎ ▎ 踩过的坑、烧过的钱、想明白的事，都写在里面了 👇 https://dcnrnf9qmzig.feishu.cn/wiki/F0yYwGWk3iHZHokiinDcIlafnBf?from=from_copylink",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/",
       "companyNames": [],
@@ -560600,17 +560679,17 @@
     },
     {
       "id": "79ab9c3f82f7e3",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "AI 实战复盘：跑通微信小店＋知识库自动交付，单周消耗 18 亿 Token",
       "author": "bug超会玩",
       "community": "生财有术",
       "content": "生财圈友们好，我是 bug，12 年经验程序员，也做过直播带货、海外开店和跨境电商。目前主业做英语口语练习产品，副业帮中小企业和自媒体做 AI 化改造。接入生财 Token 统计插件后，我累计消耗 112.19 亿 Token。最近帮朋友开发了一套“微信小店＋个人知识库”自动交付系统，卖出 600 多份，GMV 1.2 万＋，稳定交付 500 份报告，单周消耗 18 亿 Token。这篇文章复盘，我从 AI 对话、本地项目到业务自动交付的实践，分享 Token 消耗怎样随着真实业务稳定增长。飞书链接：https://rcnspq8e2ud9.feishu.cn/wiki/YwGKwUcBUiiWOM...#项目实操#",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/articleDetail/xq_topic/55522444841284824",
       "companyNames": [],
@@ -560618,17 +560697,17 @@
     },
     {
       "id": "7adf96ae212526",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "从「读取微信聊天记录」到「用 Codex 把 IMA、Obsidian、飞书串成一条流转的内容系统」保姆级教程",
       "author": "石更新",
       "community": "生财有术",
       "content": "圈友们好呀，我是石更新。7 月 26 日，在上海的航海家线下大课，我分享了一个自己正在使用的工作流：怎么读取电脑里的微信历史记录，怎么把手机和网页上的内容放进知识库，再让 AI 帮我整理、加工和调用。我原本以为这件事“不够酷”“不是特别需要”，没想到分享结束后，有很多同学当面和发微信告诉我：“没白等到最后，分享的太棒啦。”这次线下大课的核心也是围绕知识库去建立AI内容获客系统。那么微信聊天记录和网页的零散内容都是语料来源，无料不成库！所以当时我答应说，我会把这一系列内容更详细的写成一个合集发到星球上给大家看。所以，我来啦。这次分享会讲：微信历史记录、手机文章、电脑网页、公众号和旧文档，分别怎么进入知识库；IMA、Obsidian、飞书和 Codex 各自负责什么，怎么配合；一篇内容怎么从“随手收藏”，变成可以…",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/",
       "companyNames": [],
@@ -560636,17 +560715,17 @@
     },
     {
       "id": "7ea54225e2eea2",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "近期最开心的评价，也是目标。",
       "author": "亦仁",
       "community": "生财有术",
-      "content": "亦仁 星主 · 2天前 近期最开心的评价，也是目标。 4 133 6 2 亦仁",
+      "content": "亦仁 星主 · 3天前 近期最开心的评价，也是目标。 4 136 6 2 亦仁",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/",
       "companyNames": [],
@@ -560654,17 +560733,17 @@
     },
     {
       "id": "838d6af3d23122",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "潜水5年的健身教练，如何靠AI做了个小程序给门店带来了1w+收入",
       "author": "峰教练",
       "community": "生财有术",
       "content": "大家好，我是峰教练，目前在惠州的一家健身工作室里面当教练和兼职店长。这一次，我想要跟大家分享的是：作为一名线下实体行业的一线工作人员，我是怎么样用 AI 做出了一款小程序，为我的日常工作提升效率的同时，给予我的客户额外的服务价值，并且从中获得额外的收益。我的成绩与生财的各位圈友们相比，并不起眼：小程序上线之后，单月活跃使用人数 100+，门店收入增加了 1w+。但这件事对于我个人而言，意义重大。理由是一、我在生财里待了 5 年，前前后后也参加过 10 个航海项目。虽然有在某些航海项目中跑通了 0~1，但更多的是：没有跑通、跑通了一个小结果之后不知道该怎么继续，或者不能够坚持下去，最后所有的项目都没有结果。这一次，能够在脱离了航海手册的情况下（真的没看），因为一个想法、然后开始行动，接着拿到一个结果，并且最终能…",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/",
       "companyNames": [],
@@ -560672,17 +560751,17 @@
     },
     {
       "id": "8d18f1fd68be28",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "使用Hermes，7个Agent帮你24小时视频生产全流程",
       "author": "书情小跟班",
       "community": "生财有术",
       "content": "生财8月份的航海，最火的莫过于 AI Agent架构师了， 报名人数:6274 这里我小小献丑一番，目前已经实现使用Hermes，7个Agent帮你24小时视频，我有多个Hermes，今天分享的只是其中一个，同时我也感叹 生财有术 YouTube的精华帖是越来越少了 这次发帖，不是为了拿精华帖，算是给在生财还在做YouTube的圈友提供一个思路，希望能给大家有所启发，更好的阅读体验见飞书文档 Hermes实操7Agent视频生产全流程 https://my.feishu.cn/docx/KDBGdwsXCo0zkNxsP4EcMl2jnZf 下面是我本地的相关文件",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/",
       "companyNames": [],
@@ -560690,17 +560769,17 @@
     },
     {
       "id": "9993eb06a7e2a3",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "用Codex一个月，日消耗从几百token到10亿Token，我怎么实现了b站带货视的出单",
       "author": "乔久伴",
       "community": "生财有术",
       "content": "大家好，我是乔久伴。在生财已经 6 年，是生财航海家，也做过不少项目、踩过不少坑。现在是一名自由职业创业者，也是 B 站深海圈一期、二期志愿者。如果只按正式上手 Codex 的时间算，我还是一个 AI 新手。一个月前，我对编程、Agent、Skill 和工作流都没有完整概念；但在真正高强度实操之后，我已经用 AI 跑出了从需求采集、选品、素材整理、参数核验、PPT、口播、配音到剪辑交付的一整条 B 站带货视频链路，并且用实际内容验证过需求导向选品的价值。这次分享不讲一套看起来很完整、实际落不了地的理论。我想复盘的是：一个非程序员，怎样先把 70 分的完整结果跑出来，再通过模板、规则和真实反馈，让 AI 一次比一次做得更好。https://wdgajz2els.feishu.cn/docx/LCbWdTeBko…",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/",
       "companyNames": [],
@@ -560708,17 +560787,17 @@
     },
     {
       "id": "9c5a3f15331ce3",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "参加航海家AI大课，我们用AI 9 小时做了个教务系统，拿了黑客松亚军(附全套 Prompt)",
       "author": "葉贤弟",
       "community": "生财有术",
       "content": "哈喽各位,我是叶贤弟,教育行业 11 年目前在西安一所重点高校运营司法 AI 实验室,大白话说就是给律师和学生培训 AI,教大家怎么用 AI 办案子。在生财待了 4 年,一次帖子也没写过。这次终于借着这个机会,跟大家聊聊天。7 月 25 日我去上海参加了航海家 AI 大课。两天线下实操,其中半天是黑客松,60 个组一起做,整个比赛给的时间是 48 小时。我们组实际动手 9 个小时,进了前 10,最后拿了亚军。作品叫「不白学」,是个教学 Agent。主要在教育和培训领域使用，它能告诉学员\"你现在这十分钟具体干什么\";同时告诉教学团队\"谁卡住了、卡在哪、该谁去管\"。现在就能点开看:生财有术 · 不白学ps:我一直没写过帖子，这次能复盘参加课程的感受和过程，多亏了@Trevo @吴泽承 @刘同学 的帮助和push，…",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/",
       "companyNames": [],
@@ -560726,35 +560805,17 @@
     },
     {
       "id": "aee299e3d6c1c2",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "8月航海启航丨船员名单公布，请做好登船准备",
       "author": "杨爽@生财有术",
       "community": "生财有术",
       "content": "大家好，我是杨爽，生财有术航海负责人。截止本周一（7.27）晚 24 点，8 月大航海的报名通道已经正式关闭。这一次，一共有 21195 人次报名登船。其中，AI Agent 航海报名突破 6000 人次，成为本次航海报名人数最多的项目，也创造了常规航海以来单主题的最高报名纪录。越来越多圈友开始关注、学习和实践 Agent。接下来，我们也会继续陪大家跟上趋势，用好 AI，把它真正放进自己的项目和工作里。昨天还有教练找到我们说要补充一些市面上最新的 AI 带货案例，争取让大家看到带货的一线在发生什么。整个航海团队都在蓄势待发，等待这期 8 月航海起航。正式开始前，还是想和大家在强调一下：这次 8 月航海，和过去也有一些不一样。首先，这一次我们更强调成果物。不是只看你学了多少、打了多少卡，而是希望大家在航行结束时…",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
-      ],
-      "sourceUrl": "https://scys.com/",
-      "companyNames": [],
-      "productNames": []
-    },
-    {
-      "id": "b6c44a452bb871",
-      "date": "2026-08-06",
-      "title": "零基础小白安装Codex",
-      "author": "薄荷",
-      "community": "生财有术",
-      "content": "先简单介绍一下自己，我是7月底刚加入生财，一点不会编程，平时用ai也就是用豆包优化一下文案等非常基础的功能，本次想分享自己安装Codex的过程，也是捣腾了2天，希望给同样是零基础小白一些经验。一、科学上网1.注册账号可能很多朋友一开始就卡住了，怎么找梯子，我分享一个我现在用的平台。 ...",
-      "tags": [
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/",
       "companyNames": [],
@@ -560762,17 +560823,17 @@
     },
     {
       "id": "bd3632d620674d",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "做合规、强制执行十几年，分享 OPC、创业者必看的放大思路，帮大家少踩坑",
       "author": "🌊濤Zwei",
       "community": "生财有术",
-      "content": "大家好，这边是 Tao，学法律出身。 AI OPC 让一个人或者很少几个人，借助 AI 能快速完成过去需要一个团队才能干的事。产品上线了，订单成交了，流水开始增长。看起来一切都在往上走。 但这边在做强制执行（简单来说：合法追债）和给企业做咨询时反复看到一种现象：项目越往后走，风险越容易集中在创业者本人身上。 卧龙先生线分享金句之一：AI 让我开发更快，也让我犯错变得更快 PS：不得不感叹，卧龙先生这样的年纪，竟有如此之觉悟 这份工作让这边接触过大量案件，标的从上百万元到上亿元不等。其中一些被执行人，曾经也是大家眼里的大老板。 至少在一段时间里，他们的项目、能力或者资源得到过市场认可。 可最后，他们还是出现在了执行案件里。 比起他们最后欠了多少钱，这边更关心另一个问题：一个曾经成功而体面的人，究竟是怎样一步步失…",
+      "content": "大家好，这边是 Tao，学法律出身。 AI OPC 让一个人或者很少几个人，借助 AI 能快速完成过去需要一个团队才能干的事。产品上线了，订单成交了，流水开始增长。看起来一切都在往上走。 但这边在做强制执行（简单来说：合法追债）和给企业做咨询时反复看到一种现象：项目越往后走，风险越容易集中在创业者本人身上。 卧龙先生线下分享金句之一：AI 让我开发更快，也让我犯错变得更快 PS：不得不感叹，卧龙先生这样的年纪，竟有如此之觉悟 这份工作让这边接触过大量案件，标的从上百万元到上亿元不等。其中一些被执行人，曾经也是大家眼里的大老板。 至少在一段时间里，他们的项目、能力或者资源得到过市场认可。 可最后，他们还是出现在了执行案件里。 比起他们最后欠了多少钱，这边更关心另一个问题：一个曾经成功而体面的人，究竟是怎样一步步…",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/articleDetail/xq_topic/82255441521144512",
       "companyNames": [],
@@ -560780,17 +560841,35 @@
     },
     {
       "id": "d0f06c5c03b20f",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "如何把你的业务流程做成 AI Agent 员工",
       "author": "鹿书野",
       "community": "生财有术",
       "content": "大家好，我是鹿书野，00 后，目前是 B 站好物深海圈教练以及马上的AI Agent架构师航海教练。去年考上在职研究生后，我开始加入生财接触 B 站好物项目，完成了从 0 到 1；今年又和 Dustin 成立工作室，搭建 AI Agent员工与内容工厂，把业务推进到 1—10。现在我们围绕外设、数码、家电家居、户外服饰四个赛道运营多个达人账号，覆盖 60 多个细分品类，合作过华为、美的、TCL、京东京造、特步等上百家品牌，月均带货 GMV 500 万以上。B 站好物是一个非常复杂的项目：一条视频要经过十多个环节，每个环节下面还有几十个操作步骤。新人按照传统方式做，一条视频往往需要十个小时。业务规模扩大以后，靠人记流程、盯细节、反复培训，很难稳定复制。这也是我们开始决心开发 AI Agent 员工的原因。AI …",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
+      ],
+      "sourceUrl": "https://scys.com/",
+      "companyNames": [],
+      "productNames": []
+    },
+    {
+      "id": "db23af7b8ca6a2",
+      "date": "2026-08-07",
+      "title": "3000元成本，3个月营收50万：一个同城高客单项目的复盘",
+      "author": "楚中天",
+      "community": "生财有术",
+      "content": "3000元投入，3个月50 万营收：同城高客单项目复盘大家好，我是楚中天，目前在做同城高客单。这次分享的是我在二线城市实际操盘过的一个同城高客单项目。三线四线城市更好复制。项目前期，我主要通过素人种草和第三方内容分发获取客户，并用AI完成文案改写，通过飞书多维表格和腾讯云文档管理内容、任务和素人。最终，我用大约3000元的直接现金成本，在3个月内为商家带来了约500名到店客户，商家累计产生约50万元营收，我自己获得了约10万元利润，日常投入时间大约为每天1小时。这篇文章不会透露具体赛道和商家信息，主要复盘以下内容：一、我为什么从全国项目转向同城高客单项目？二、我筛选同城商家时，重点看哪5个条件？三、只收2000元意向金，我是怎么启动项目测试的？四、前10条内容爆出百万播放后，我如何判断流量能不能转化成真实到店…",
+      "tags": [
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/",
       "companyNames": [],
@@ -560798,17 +560877,17 @@
     },
     {
       "id": "e746071e595d99",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "AI时代到底怎么赚钱？先去做离钱最近的事",
       "author": "根源",
       "community": "生财有术",
       "content": "圈友们好，我是根源。最近办线下活动，我发现一个挺有意思的现象。很多人用了 AI 以后，做产品、做内容、做工具的速度都变快了，但一问到“怎么赚钱”，大家卡住的地方还是很像。不是工具不够好，也不是产品一定要再打磨三个月，而是很多人还没有真正跨出那一步：把自己的东西讲清楚，然后去问一个具体的人愿不愿意付钱。以下为飞书好读版：https://oee5lr7gsk.feishu.cn/docx/FdROdApYFoumtRxL...",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/",
       "companyNames": [],
@@ -560816,17 +560895,17 @@
     },
     {
       "id": "e777176547e57a",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "35岁前如何低成本不负债找适合自己的好项目？附27个创业常见问题",
       "author": "珍妮子",
       "community": "生财有术",
       "content": "《老板避雷手册6：35岁前，如何「低成本、不负债」找到一个「适合自己」的好项目？（含：0基础创业-创业成功-转型成功三阶段，常问27问）》大家好，我是珍妮，从2015年我大三，到现在31岁，本科毕业10年，我累计测过的项目有20多个，在教育赛道和房产赛道均取得过不错的业绩。26岁创业成功，28岁转型，30岁转型成功。26年3月，我们内部又因为在生财遇到了贵人老板带我们进入留学某高端细分赛道，从而实现了大学生单人单月签单20万，并且靠6位跨界来做留学行业的新手线上兼职运营，在他们人均陆续学了不到1-2个月的情况下，做出单月56万的业绩，从而被贵人继续推进签约下一份【利益深度绑定的】合同。从20出头的大学生年纪，到初入职场，再到工龄10多年，很多人都想做做副业，或者能早点掌握自己的生产资料，从而能够拥有自己的管道…",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/",
       "companyNames": [],
@@ -560834,17 +560913,17 @@
     },
     {
       "id": "e954c8964f5f74",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "从淘宝找产品，到小红书找人群：我的月入5万虚拟资料选品方法",
       "author": "冬青",
       "community": "生财有术",
       "content": "大家好，我是冬青，山东泰安的一名个人创业者。我从去年开始正式接触小红书虚拟资料这个赛道，走的是纯自然流打法。这一年多的时间里，PPT模板、简历模板、小说合集、国外影视资源、K12教辅资料…这些品类我基本都摸过一遍。目前所有店铺加在一起，大概有个五六家店铺了月收入大概稳定在 4 万左右，遇到状态好的月份，翻一倍也是常事。我觉得在小红书虚拟资料的运营过程中，最让我感觉到有意思的就是选品我有一套自己的选品标准，当然生财也分享了很多选品的方法，很多重复出现的内容我就不再重复分享了这里我分享的一个在生财可能没有太多人提到的一种思路，也希望大家也可以建立自己的选品库这样不管是做什么，哪怕是帮别人推荐一些行业类目资料，都有足够多的数据做支撑文中的选品思路是我其中之一的选品方式，利用这种思路，你可以拓展出非常多的选品方法最终…",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/",
       "companyNames": [],
@@ -560852,17 +560931,17 @@
     },
     {
       "id": "e95c022bf5e8d6",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "会用AI却拿不出成果？100个卡壳瞬间与破法",
       "author": "亦仁",
       "community": "生财有术",
       "content": "继续，上一篇反响非常好。「100系列」第五篇：从会用 AI 到用好 AI 的100 个迟疑瞬间与破法市面上所有「克服 AI 恐惧」的内容，都写给还没摸过 AI 的人。这篇不是。这篇的读者画像很具体：你早就在用 AI，聊天、写文案、做图都熟；模型更新你第一时间知道，圈里的实战帖你看过几百篇，工具订阅可能已经年付了两三个。你的认知在高地，但你的行动在洼地——被问「你用 AI 做出过什么」的时候，你拿不出一个链接。门外的人卡在「敢不敢用」，你卡的是另一道坎：敢不敢从使用者变成生产者。这中间隔着一道四级楼梯：做出来、上线、收钱、持续。每一级楼梯上都埋着专属的迟疑瞬间——demo 烂尾的第三天、部署卡住的第三周、定价 9.9 还是 99 的深夜、被问「这不就是套壳吗」的饭局。这些瞬间和「不敢打开对话框」完全是两个物种，…",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/",
       "companyNames": [],
@@ -560870,17 +560949,17 @@
     },
     {
       "id": "f526a52e70abfa",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "【万字保姆级干货教程】YouTube “财经人生故事” 赛道制作& 自动化工作流教程 所有提示词全公开！",
       "author": "栗子Lizi聊AI",
       "community": "生财有术",
       "content": "【万字保姆级干货教程】系列又来啦! YouTube “财经人生故事” 赛道制作& 自动化工作流教程 所有提示词毫无保留全公开！ 被好多圈友催更，希望有一个适合普通人甚至小白的从0到1，整体制作方法的讲解。 所以这个教程里面，包含了：如何拆解爆款对标，找到真正值得复用的内容结构；如何生成高点击选题，并避免内容同质化；如何用AI制作完整脚本，并检查原创性与商业化风险； 如何匹配适合财经故事的配音风格；如何设计统一的主角IP和画面风格；如何批量生成图片、动画和视频素材；如何搭建自动化工作流；如何快速完成剪辑，控制节奏与制作效率...使用的提示词全部公开，希望能帮助到大家。 有帮助的话记得留言，点赞投个锚~飞书链接： https://gi52wyhtwc.feishu.cn/wiki/Otrhwi9hSi6ekEko…",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/",
       "companyNames": [],
@@ -560888,19 +560967,34 @@
     },
     {
       "id": "f89953b7322e89",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "title": "花12万找FDE踩坑失败经验，用AI自研系统，分享真实甲方的需求变现路径——完整复盘（万字长文）",
       "author": "Egg2rich",
       "community": "生财有术",
       "content": "大家好，我是富二蛋，团队 29 人，22年加入生财。这次分享适合用Ai搭应用，准备找外包开发，正在做系统的人，包括正准备进去FDE领域的人。我会复盘∶12万FDE项目为什么没跑通，甲方需求是怎么一步一步变复杂，以及后来我是怎么用AI在一个月内重新做出系统，并稳定高效的运行。重点是避坑，和可参考路径。以下分享均为个人真实经历，希望可以帮到大家，得到灵感。写在前面：我好像不小心成了自己公司的 FDE前几天亦仁直播里讲到 FDE 这个角色，我一边听一边冒冷汗——他描述的那个人，好像就是过去几个月的我，只是我当时根本不知道这件事有名字。FDE 的标准剧本大概是这样：一家有技术平台的公司，派工程师钻进客户的业务里，边理解边把技术部署进去。它值钱的原因很简单，它在填软件行业最难填的那条鸿沟——懂技术的人不懂业务，懂业务的…",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://scys.com/",
+      "companyNames": [],
+      "productNames": []
+    },
+    {
+      "id": "1dc8403ade332c",
+      "date": "2026-08-05",
+      "title": "今天聊聊我的一个新的感恩回馈想法：【洋哥小饭桌】 AI时代的机会和浪潮越来越大了，很多破局圈友也取得了非常不错的成绩，比如大家看看精华贴就知道： 进入到2026年以来，破局每个月精华贴基本都…",
+      "author": "findyi",
+      "community": "AI破局",
+      "content": "我们的破局行动，出结果，出大结果的圈友，也越来越多了。 最近跟很多行动家和优秀圈友聊天，大家都提到：希望我在商业层面给大家更多AI和商业的指导，毕竟2026年已经成了AI商业最爆炸增长的一年。 我自己最擅长的其实就是商业和AI，最近有上市公司请我过去讲一个小时，支付的报酬是20万，我也曾经多年担任过多家上市公司的顾问，在大厂做过事业部总经理，自己创业融资过亿，同时自己还从0-1、1-100，做成了个人IP创业全流程，我属于全网为数不多的同时能覆盖年入10万、年入100万、年入1000万-10个亿，的商业形态，都能给建议的人。 破局存在的意义也是提升大家的AI能力和商业能力，大家有需求，我就要有所回应：所以我在8月8号这天，准备拿出2-3小时，跟大家直播聊一聊破局的AI化和我对AI商业的预判。 同时，我在思考另…",
+      "tags": [
+        "交付与服务自动化",
+        "内容与自媒体"
+      ],
+      "sourceUrl": "https://aipoju.com/topic-details/14422118285252822",
       "companyNames": [],
       "productNames": []
     },
@@ -560912,48 +561006,48 @@
       "community": "AI破局",
       "content": "大家好，我是开心果妈，一个 40+ 二胎宝妈，前 AI 架构师，现在聚焦 AI 智能体和企业 AI 培训。 2025 年 2 月底，我加入了 AI 破局俱乐部。2025 年 7 月底，我又加入了 AI 破局行动家。 过去几个月，我连续参与了三场企业 AI 培训。 第一场在沈阳，现场来了一百多位企业家。我们从老板 IP 和短视频切入，带着很多第一次接触 AI 的企业家完成了自己的视频首秀。线下课程结束后，我们又做了 30 天公益陪跑。 第二场在河南鹤壁，我第一次独立担任主讲，走进一家拥有 200 多家门店的连锁便利企业。培训结束后，这家企业邀请我们继续做 AI 落地陪跑，老板又把我们介绍给了下一家企业。 第三场，我们走进一家拥有 2000 多家门店的连锁便利企业。培训前收回 164 份需求问卷，覆盖 15 个部…",
       "tags": [
-        "营收",
         "变现",
         "月入",
         "降本",
-        "提效"
+        "提效",
+        "求助"
       ],
       "sourceUrl": "https://aipoju.com/search",
       "companyNames": [],
       "productNames": []
     },
     {
-      "id": "ab22fba5149636",
-      "date": "2026-08-05",
-      "title": "今天聊聊我的一个新的感恩回馈想法：【洋哥小饭桌】 AI时代的机会和浪潮越来越大了，很多破局圈友也取得了非常不错的成绩，比如大家看看精华贴就知道： 进入到2026年以来，破局每个月精华贴基本都…",
-      "author": "findyi",
+      "id": "46e5fcd95119e5",
+      "date": "2026-08-04",
+      "title": "🚀「破局小宇宙」全新系列表情包上线啦！",
+      "author": "破局内容官 | 小雨",
       "community": "AI破局",
-      "content": "我们的破局行动，出结果，出大结果的圈友，也越来越多了。 最近跟很多行动家和优秀圈友聊天，大家都提到：希望我在商业层面给大家更多AI和商业的指导，毕竟2026年已经成了AI商业最爆炸增长的一年。 我自己最擅长的其实就是商业和AI，最近有上市公司请我过去讲一个小时，支付的报酬是20万，我也曾经多年担任过多家上市公司的顾问，在大厂做过事业部总经理，自己创业融资过亿，同时自己还从0-1、1-100，做成了个人IP创业全流程，我属于全网为数不多的同时能覆盖年入10万、年入100万、年入1000万-10个亿，的商业形态，都能给建议的人。 破局存在的意义也是提升大家的AI能力和商业能力，大家有需求，我就要有所回应：所以我在8月8号这天，准备拿出2-3小时，跟大家直播聊一聊破局的AI化和我对AI商业的预判。 同时，我在思考另…",
+      "content": "🚀「破局小宇宙」全新系列表情包上线啦！ AI破局俱乐部专属表情包「破局小宇宙」，今天正式在微信表情商店上线了。 这不是一组为了热闹而做的表情包，而是把破局生态里大家的共同语言，压缩成15个可以随手发出的「行动暗号」。 在设计这组表情包之前，我们翻看了很多日常聊天记录，发现一个表情经常不只是表达情绪，它还会替我们完成一次回应。 看到好内容时，可以用它表达认可；听到有启发的分享时，可以把「我记下了」发出去；当自己准备开始行动时，也需要一个「马上开干」提醒自己别再观望。 于是，「一起破局」「马上开干」「躬身入局，把手弄脏」「欢迎大佬」「禁止蕉绿」等大家熟悉的话，被我们重新画成了一组会动的小表情。 同时，我们也把破局生态一直坚持的三件事放进了这组表情里： 真诚。不是把自己包装得很厉害，而是用真实的能力、真实的结果和…",
       "tags": [
         "交付与服务自动化",
-        "内容与自媒体"
+        "企业服务"
       ],
-      "sourceUrl": "https://aipoju.com/index",
+      "sourceUrl": "https://aipoju.com/topic-details/55522444858825224",
       "companyNames": [],
       "productNames": []
     },
     {
-      "id": "5a46a5f04ea31c",
+      "id": "4e22a9f361ac03",
       "date": "2026-08-04",
-      "title": "新品上架两天从0到日入2000+：我的小红书虚拟产品破局之道",
-      "author": "东舟",
+      "title": "[庆祝]重磅直播预告｜从超级个体到超级组织：AI正在重写个人与团队的生产方式 最近，洋哥发布了最新一期《AI洞察38》，揭示了一个正在发生的重大变化：AI时代的竞争，正在从“谁会用AI工具”…",
+      "author": "晓君@AI破局",
       "community": "AI破局",
-      "content": "新品上架两天从0到日入2000+：我的小红书虚拟产品破局之道",
+      "content": "[庆祝]重磅直播预告｜从超级个体到超级组织：AI正在重写个人与团队的生产方式 最近，洋哥发布了最新一期《AI洞察38》，揭示了一个正在发生的重大变化：AI时代的竞争，正在从“谁会用AI工具”，变成“谁更能训练真正有用的AI员工”。 从2026年开始，真正拉开个人与企业差距的，不再是谁掌握了更多AI工具，而是谁能把自己的业务拆成岗位，训练出一组能够持续交付结果的AI员工，进而成为AI超级个体、打造AI超级组织，最终完成企业的AI Native化。 这个趋势，企业端也已经逐步开始高度重视。 最近，一家上市公司专门邀请洋哥做AI化分享，花20万元，请洋哥过去讲1小时。 但宠破局圈友们的洋哥决定，把这套原本面向上市公司的高含金量内容，提前开放给所有圈友，而且不是简单讲1小时。 8月8日19:00，洋哥将联合破局AI系…",
       "tags": [
-        "获客营销与转化",
-        "内容与自媒体"
+        "交付与服务自动化",
+        "企业服务"
       ],
-      "sourceUrl": "https://aipoju.com/index",
+      "sourceUrl": "https://aipoju.com/topic-details/14422111815455852",
       "companyNames": [],
       "productNames": []
     },
     {
-      "id": "ac38973e490f31",
+      "id": "8f45e118f95482",
       "date": "2026-08-04",
       "title": "从蚂蚁P9到AI破局者：我与破局星球、破局行动家的故事 一、缘起：一个技术老兵的觉醒时刻 2023年的冬天，成都的气温不算太低，但互联网行业的寒意却让很多人瑟瑟发抖。",
       "author": "右军",
@@ -560963,37 +561057,37 @@
         "获客营销与转化",
         "留学教育"
       ],
-      "sourceUrl": "https://aipoju.com/index",
+      "sourceUrl": "https://aipoju.com/topic-details/82255444182288182",
       "companyNames": [],
       "productNames": []
     },
     {
-      "id": "bca53f81c94242",
+      "id": "985972468eb6cc",
       "date": "2026-08-04",
-      "title": "🚀「破局小宇宙」全新系列表情包上线啦！",
-      "author": "破局内容官 | 小雨",
+      "title": "0基础小白入局，蛰伏5个月厚积薄发，累计带货8W+GMV",
+      "author": "尚甫",
       "community": "AI破局",
-      "content": "AI破局俱乐部专属表情包「破局小宇宙」，今天正式在微信表情商店上线了。 这不是一组为了热闹而做的表情包，而是把破局生态里大家的共同语言，压缩成15个可以随手发出的「行动暗号」。 在设计这组表情包之前，我们翻看了很多日常聊天记录，发现一个表情经常不只是表达情绪，它还会替我们完成一次回应。 看到好内容时，可以用它表达认可；听到有启发的分享时，可以把「我记下了」发出去；当自己准备开始行动时，也需要一个「马上开干」提醒自己别再观望。 于是，「一起破局」「马上开干」「躬身入局，把手弄脏」「欢迎大佬」「禁止蕉绿」等大家熟悉的话，被我们重新画成了一组会动的小表情。 同时，我们也把破局生态一直坚持的三件事放进了这组表情里： 真诚。不是把自己包装得很厉害，而是用真实的能力、真实的结果和真实的态度与人相处。先让别人信任你，合作才…",
+      "content": "大家好，我是尚甫。 国学爱好者，国学培训领域深耕 20 载，AI 带货零基础入局。 2025 年 12月参加第9期全域带货行动营，2026年初加入第一期领航计划，今年7月参加第11期全域带货营。 从去年12月至2026年4月蛰伏沉淀，几乎零收益；沉下心打磨方法。 5月、6月逆风翻盘，斩获 5万 + GMV；7月在行动营夯实基础，也拿下近3万GMV。 希望我的这段经历，能给同样职场想通过AI破局的你带来一点启发。 全文字数较多,请移步飞书:‌‌‌​​​ ​‌​⁠‍ ​‬​‌​​​​​​‍‍‍ ​​‬​​​ ​​​‌​​​​‍⁠​ ‍‬‬​https://xcn3y8gxfv7e.feishu.cn/wiki/AQQ4wEws1ia6aOkQzfjcr3vsnZf",
       "tags": [
-        "交付与服务自动化",
+        "知识库与组织提效",
         "企业服务"
       ],
-      "sourceUrl": "https://aipoju.com/index",
+      "sourceUrl": "https://aipoju.com/topic-details/14422111844142112",
       "companyNames": [],
       "productNames": []
     },
     {
-      "id": "d80602669d8015",
+      "id": "b1f445507f6a7d",
       "date": "2026-08-04",
-      "title": "[庆祝]重磅直播预告｜从超级个体到超级组织：AI正在重写个人与团队的生产方式 最近，洋哥发布了最新一期《AI洞察38》，揭示了一个正在发生的重大变化：AI时代的竞争，正在从“谁会用AI工具”…",
-      "author": "晓君@AI破局",
+      "title": "新品上架两天从0到日入2000+：我的小红书虚拟产品破局之道",
+      "author": "东舟",
       "community": "AI破局",
-      "content": "从2026年开始，真正拉开个人与企业差距的，不再是谁掌握了更多AI工具，而是谁能把自己的业务拆成岗位，训练出一组能够持续交付结果的AI员工，进而成为AI超级个体、打造AI超级组织，最终完成企业的AI Native化。 这个趋势，企业端也已经逐步开始高度重视。 最近，一家上市公司专门邀请洋哥做AI化分享，花20万元，请洋哥过去讲1小时。 但宠破局圈友们的洋哥决定，把这套原本面向上市公司的高含金量内容，提前开放给所有圈友，而且不是简单讲1小时。 8月8日19:00，洋哥将联合破局AI系统化负责人文辉，用整整4个小时，把个人和企业如何完成AI化升级讲深、讲透。 这也将是今年给所有圈友最大的一次年度福利。 为什么现在一定要关注AI员工？ 过去，我们更多是让AI帮忙写内容、整理资料、搜索信息；但这种方式，本质上仍然是把…",
+      "content": "伙伴们好，我是东舟，一名破局星火师，最近小红书虚拟做了两个品，一个品单周实现日销破百单，另一个品上架两天实现日入2000+，这篇文章 我会把从0到日入2000+的底层方法论完整拆开。 完整拆解请移步链接 https://my.feishu.cn/docx/GC9MdaYLForsVnxvPbEcARYRnif?from=from_copylink",
       "tags": [
-        "交付与服务自动化",
-        "企业服务"
+        "获客营销与转化",
+        "内容与自媒体"
       ],
-      "sourceUrl": "https://aipoju.com/index",
+      "sourceUrl": "https://aipoju.com/topic-details/45544222242154428",
       "companyNames": [],
       "productNames": []
     },
@@ -561021,6 +561115,21 @@
       "content": "手把手教你用 WorkBuddy 做小红书，小白可直接照做",
       "tags": [
         "获客营销与转化",
+        "企业服务"
+      ],
+      "sourceUrl": "https://aipoju.com/index",
+      "companyNames": [],
+      "productNames": []
+    },
+    {
+      "id": "971317f433711a",
+      "date": "2026-08-02",
+      "title": "时薪不到 3 块钱，我还是把这一单做完了：一个测试工程师的行动营第一个月",
+      "author": "苹果",
+      "community": "AI破局",
+      "content": "时薪不到 3 块钱，我还是把这一单做完了：一个测试工程师的行动营第一个月",
+      "tags": [
+        "交付与服务自动化",
         "企业服务"
       ],
       "sourceUrl": "https://aipoju.com/index",
@@ -561073,12 +561182,12 @@
       "productNames": []
     },
     {
-      "id": "da674f42d64dbb",
+      "id": "7327ba01b45482",
       "date": "2026-07-31",
-      "title": "以往人工起步半小时完成，Coze打造销售统计工作流，现在不到 20 秒做完",
+      "title": "AI 原生组织的一线员工实践，coze打造销售统计系统",
       "author": "海滨学AI",
       "community": "AI破局",
-      "content": "以往人工起步半小时完成，Coze打造销售统计工作流，现在不到 20 秒做完",
+      "content": "AI 原生组织的一线员工实践，coze打造销售统计系统",
       "tags": [
         "交付与服务自动化",
         "未识别行业"
@@ -561298,21 +561407,6 @@
       "productNames": []
     },
     {
-      "id": "0f58f8bf019f20",
-      "date": "2026-07-25",
-      "title": "大家好，我是西羊石小石学长，《AI视频一本通》和《AI漫剧创作一本通》书籍作者，专注 AI视频及其Agent自动化。",
-      "author": "中流击水",
-      "community": "AI破局",
-      "content": "最近全网都在疯传的口播拼贴动画，我用谷歌Flow实测了一下，真的有点不想手动加特效了。 一段普通口播，丢进Flow配上提示词，几分钟就能生成拼贴、手绘、3D等各种动态特效； 不仅能做口播包装，还能用Agent生成海外AI短剧的角色、场景和分镜，广告片也能低成本快速预演。 详细玩法和实测效果可以移步飞书：https://xiyangshiai.feishu.cn/docx/Nwrhd0DtKo1CGJx9QuScSkHYnRg?from=from_copylink #AI工具# #AI智能体# #AI视频#",
-      "tags": [
-        "交付与服务自动化",
-        "跨境出海"
-      ],
-      "sourceUrl": "https://aipoju.com/index",
-      "companyNames": [],
-      "productNames": []
-    },
-    {
       "id": "8ae4a0e98c1c6b",
       "date": "2026-07-25",
       "title": "【AI实操派】我用AI做GEO挖词，帮客户3个月GMV增长3倍",
@@ -561358,17 +561452,130 @@
       "productNames": []
     },
     {
-      "id": "e5680869e6a04f",
-      "date": "2026-07-25",
-      "title": "【我与行动家的故事】【AI 逆袭者】",
-      "author": "米尼 AI 企培",
+      "id": "adfd75af1696cb",
+      "date": "2026-06-15",
+      "title": "需求验证先行 不要像我一样先做潜话翻译那样「自以为是」的开发。",
+      "author": "A鲲动漫（鲲萌）",
       "community": "AI破局",
-      "content": "大家好，我是米尼，星球编号 3336。 收到行动家三周年故事征集邀请，我才第一次有机会坐下来，认真复盘自己是怎样一步步走到今天的，也才意识到，原来这个故事在很多人眼里，也属于逆天改命~ #我与行动家的故事# #破局者图鉴# #AI# 逆袭者 相信看完我的故事，你会得到一些启发。 如果我的故事，有百分之一的可能性能照亮你，那一定不是因为我特别，是因为这个火苗早已存在于你心中。 2024年4月，还在职场做高管的我第一次坐上破局行动教练席；2025年4月，我与破局签下20万元对赌协议，成为企培武汉区域负责人之一；后来，从1500元的第一笔培训费用，到单日2万元的渠道客户报价，再到70+课时的央企年框，我带着主要由武汉/湖北本地破局圈友/行动家组成的60人实战讲师团队，共同完成一个常人无法想象的普通人无法承接的大项目…",
+      "content": "从零到月入过万 我的小红书AI虚拟产品复盘 大家好，我是鲲鲲[憨笑][咖啡][憨笑] 3月份，我的小红书虚拟资料项目月收入变现13000+ 。 1. 需求验证先行 不要像我一样先做潜话翻译那样「自以为是」的开发。先发帖验证需求，有人主动问「怎么用」「哪里买」，才是真需求。需求验证是第一步，也是最重要的一步。 2. 先完成，再完美 第一个版本只需要核心功能跑通。潜话翻译我花了一周，拼豆图纸花了十多天，班级宠物打卡1.0版本反而更快——因为前期经验积累到位了。不要追求完美，追求完成。 3. 差异化是护城河 找到竞品的短板，用差异化打开市场。不要和别人做一模一样的东西，那样你只能打价格战。 今年开年的时候，我坐在电脑前想了想，给自己定了一个新目标：跑通一个产品。什么是产品？就是一次开发，持续变现。你睡觉的时候它在帮…",
       "tags": [
-        "知识库与组织提效",
-        "本地生活"
+        "需求",
+        "获客营销与转化",
+        "内容与自媒体"
       ],
-      "sourceUrl": "https://aipoju.com/index",
+      "sourceUrl": "https://aipoju.com/topic-details/14422448128485822",
+      "companyNames": [],
+      "productNames": []
+    },
+    {
+      "id": "96a1522609a81c",
+      "date": "2026-06-13",
+      "title": "我想验证的假设是：医疗器械企业中高管，是否愿意为我总结的\"AI降本增效实战方法论\"付费？",
+      "author": "简乐之旅",
+      "community": "AI破局",
+      "content": "【复盘】广东惠州私塾课，课上作业战果：课没上完已完成4000+的课程预售 大家好，我是圆乐。 MVP：先收钱，再做课 6月12日，广东惠州，参加《商业内生增长心法》的课程，下午讲到MVP（最小可行性产品）时，洋哥给了一个四步框架：明确目标 → 定义指标 → 设计实验 → 迭代优化。 并且反复强调：系统开发永远后置，先验证需求；一次MVP只验证一个假设。 我想验证的假设是：医疗器械企业中高管，是否愿意为我总结的\"AI降本增效实战方法论\"付费？ 1. 明确目标：一次只验一个假设 不要同时验证\"课程好不好\"\"价格对不对\"\"交付形式行不行\"。我只验证一个：这个人群，这个痛点，愿不愿意掏钱。 2. 定义指标：给自己设生死线 指标 含义 5人付款 生死线。达到即证明需求存在，值得开干 10人付款 启动线。值得认真补大纲、…",
+      "tags": [
+        "降本",
+        "获客营销与转化",
+        "企业服务"
+      ],
+      "sourceUrl": "https://aipoju.com/topic-details/45544552124254488",
+      "companyNames": [],
+      "productNames": []
+    },
+    {
+      "id": "90ceb66f79746c",
+      "date": "2026-05-21",
+      "title": "第一次组局，我踩了坑——忘记控场、中场互动不足、收尾没号召复盘……但也因此沉淀了一套可复制的SOP + 工具包，包含13项准备清单、5大避坑指南、控场时间表等。",
+      "author": "可人",
+      "community": "AI破局",
+      "content": "首次组局，1 天报满：一份可复制的新人线下组局作战手册 大家好，我是可人，一位70后大叔。上周末，我第一次担任破局线下组局官，主题是“OPC+公众号：如何连续15天阅读5000+”。 没想到，一天就报满了，还有圈友私信求加座。现场反馈普遍“值了”！ 第一次组局，我踩了坑——忘记控场、中场互动不足、收尾没号召复盘……但也因此沉淀了一套可复制的SOP + 工具包，包含13项准备清单、5大避坑指南、控场时间表等。 今天，我把这次从“组局小白”到“一天报满”的完整经验，都整理成了一份复盘，希望能给想组局、想提升交付能力的圈友们一些启发。文章有点长，请大家移步飞书。 https://kcnp8p7tih7k.feishu.cn/wiki/Vhhpw5I8xiXOMrk1V5mcLQD7nlh?from=from_cop…",
+      "tags": [
+        "工具包",
+        "交付与服务自动化",
+        "企业服务"
+      ],
+      "sourceUrl": "https://aipoju.com/topic-details/55522184111148114",
+      "companyNames": [],
+      "productNames": []
+    },
+    {
+      "id": "eeadd83419bd37",
+      "date": "2026-03-17",
+      "title": "，首周收益就突破100+，其中不乏新人首周入账127.89元、114.3元的案例，也真正验证了「普通人也能靠写作快速变现」 代运营账号持续增长：我们代运营的多个LOFTER账号，收益从初始的1",
+      "author": "caca",
+      "community": "AI破局",
+      "content": "🎉 三月喜报｜从文字到IP，我的小说变现全链路开花 大家好，我是caca,今天想跟大家好好报个喜，也做个阶段性复盘——这阵子的努力，终于在各个环节都结出了果实✨ 一、核心里程碑：我的小说签约独家影视改编权 最让我激动的是，我的原创小说成功签约独家影视改编版权！ 经过专业评估，作品匹配两大赛道：短剧赛道（预估成交额2-10w）、电影赛道（版权成交价20w起） 已签署《小说改编权独家授权协议》，后续将由专业团队对接影视公司，为作品争取最大化变现机会 这意味着：文字不再只停留在屏幕里，有机会被搬上荧幕，实现从「作者」到「IP创作者」的跨越 这一步，是我深耕小说创作一年、用心打磨内容的最好证明——好内容永远有被看见、被放大的价值。 二、私教学员捷报频传：新人也能快速破局 我的AI小说私教课堂里，学员们的成长速度远超…",
+      "tags": [
+        "代运营",
+        "获客营销与转化",
+        "内容与自媒体"
+      ],
+      "sourceUrl": "https://aipoju.com/topic-details/45811285411514588",
+      "companyNames": [],
+      "productNames": []
+    },
+    {
+      "id": "0966fb0e3fceb1",
+      "date": "2026-03-15",
+      "title": "我们怎么把 OpenClaw 做成企业服务：从需求梳理到 AI 员工落地实操",
+      "author": "地鼠",
+      "community": "AI破局",
+      "content": "我们怎么把 OpenClaw 做成企业服务：从需求梳理到 AI 员工落地实操 大家好，我是地鼠，破局行动家，南大研二休学创业，专注小白 AI 编程培训和 OpenClaw 企业提效方案落地。 先给大家报个喜，经过一个多月的探索，我们的 OpenClaw 企业提效方案业务已经走上了正轨。基于 OpenClaw 开发的核心产品「地鼠精灵」已经在不同行业的 4 家小微企业投入使用（包括我们自己），而我们的公司也正在紧锣密鼓地走工商登记流程，马上就要成立了！ 这篇文章中，我会带大家深度复盘这一个半月以来我们所做的工作，希望能给大家带来一些启发。内容略长，请大家移步飞书：https://dishu-tech.feishu.cn/wiki/CIufws9LuitxCHkMvBAc9NMgncf #AI工具# #AI编程#…",
+      "tags": [
+        "提效",
+        "交付与服务自动化",
+        "企业服务"
+      ],
+      "sourceUrl": "https://aipoju.com/topic-details/14588155448241182",
+      "companyNames": [],
+      "productNames": []
+    },
+    {
+      "id": "decdf87d9065c1",
+      "date": "2026-03-05",
+      "title": "2026年，一人+AI玩转TikTok带货，月入10万可复制",
+      "author": "Lisa学姐出海",
+      "community": "AI破局",
+      "content": "我是Lisa学姐，一个用AI把跨境生意做到全球的90后创业者。 深耕 TikTok 跨境 5 年，从靠人工拍视频剪视频的小团队，到如今用 AI 打造 “硅基员工” 实现一人操盘全流程，踩过无数坑后终于摸透了 AI+TikTok 带货的核心逻辑 —— 不用雇人、不用重资产，找对方法，普通人单干也能做到月入 10 万！ 你肯定会犯嘀咕：TikTok 带货早就有人做了，现在入场还能分到蛋糕吗？一个人既做内容又做选品又做运营，忙得过来吗？ 其实答案很简单：现在的 TikTok 带货，早就不是拼人力、拼资金的红海，而是拼 AI 工具效率、拼小众选品眼光的蓝海。2026 年 TikTok 的 AI 生态全面爆发，算法和工具把内容生产门槛降到最低，只要你会用 AI、选对品，一个人就能跑通从内容创作到出单变现的全流程，月入 …",
+      "tags": [
+        "月入",
+        "交付与服务自动化",
+        "内容与自媒体"
+      ],
+      "sourceUrl": "https://aipoju.com/topic-details/45811242885222828",
+      "companyNames": [],
+      "productNames": []
+    },
+    {
+      "id": "d89151038a5c90",
+      "date": "2026-02-27",
+      "title": "AI+音乐视频：涨粉 3 万+，变现五位数心得",
+      "author": "可人",
+      "community": "AI破局",
+      "content": "AI+音乐视频：涨粉 3 万+，变现五位数心得 大家好，我是可人，一位70后大叔。去年3月，我抱着试试看的心态加入破局，一头扎进了大家都觉得“变现难”的音乐赛道。没想到，在AI工具的加持下，我用潮语方言歌曲这个细分方向，在视频号上用10个月的时间，做出了1588万+播放、3万+精准粉丝，还实现了五位数变现，甚至拿到了“2025年度视频号优秀创作者”的称号。 今天，我把这十个月踩过的坑、用过的工具、跑通的闭环，都整理成了一份完整复盘。从选赛道、做内容到搞变现，全是可复制的实战干货，希望能给想做内容、想靠AI变现的朋友们一点启发。文章有点长，请大家移步飞书。 https://kcnp8p7tih7k.feishu.cn/wiki/C1H5wLElLimk1mkQMfcc8faEnpb?from=from_copy…",
+      "tags": [
+        "变现",
+        "内容生产与IP运营",
+        "内容与自媒体"
+      ],
+      "sourceUrl": "https://aipoju.com/topic-details/14588481222851812",
+      "companyNames": [],
+      "productNames": []
+    },
+    {
+      "id": "a95a25c25b3e61",
+      "date": "2026-02-11",
+      "title": "新手做AI短剧别内耗！从零基础到稳定产出，我的30天真实踩坑复盘",
+      "author": "肖恩 Sean",
+      "community": "AI破局",
+      "content": "大家好，我是肖恩Sean。 这是我学习漫剧时遇到的焦虑执行力差等困难以及解决办法。 零基础学AI短剧一个月，我经历了：工具乱跳哪个都没摸透、人物场景融合反复失败、完美主义导致一张图都不敢发，崩溃到22号深夜，才终于开口求助。 文章包括工具选择思路、微习惯落地方案、注意力屏蔽技巧，以及如何借助社群快速破局。这篇是我30天真实踩坑的全部复盘，4个亲测有效的破局方法，没有美化，没有注水。完整复盘已发飞书https://my.feishu.cn/wiki/ARY9wnVReijK5dknnDKcJAZenwc?from=from_copylink",
+      "tags": [
+        "求助",
+        "内容生产与IP运营",
+        "内容与自媒体"
+      ],
+      "sourceUrl": "https://aipoju.com/topic-details/55188548414551254",
       "companyNames": [],
       "productNames": []
     }

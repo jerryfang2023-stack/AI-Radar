@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-07T00:25:47.516Z",
+    "generatedAt": "2026-08-07T01:18:26.960Z",
     "latestDataDate": "2026-08-07",
     "currentDate": "2026-08-07",
-    "eventCount": 1904,
+    "eventCount": 1905,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -250,8 +250,8 @@
       "EV-cf496e0f8a56ca97",
       "EV-00834dd71037c7cc",
       "EV-4e3e9b543127b55a",
-      "EV-e07d82ffbad83150",
       "EV-2321e89fad893290",
+      "EV-e07d82ffbad83150",
       "EV-ad4f8dd61f82017a",
       "EV-e544a4c3fb59b9b0",
       "EV-31e78ede8fd890bf",
@@ -501,10 +501,10 @@
       "productsServices": [
         "EV-1b5b1d3317c8f688",
         "EV-8de21f5aa53242f1",
+        "EV-2321e89fad893290",
         "EV-b06624cf36990346",
         "EV-22e4f8278c40d63e",
         "EV-ad6fe30e111608bd",
-        "EV-2321e89fad893290",
         "EV-ad4f8dd61f82017a",
         "EV-47c32b3ef5c0f57a",
         "EV-54a4809c304587e6",
@@ -779,6 +779,35 @@
         ]
       },
       {
+        "id": "EV-2321e89fad893290",
+        "dataDate": "2026-08-07",
+        "date": "2026-08-06",
+        "eventType": "security_incident",
+        "eventTypeLabel": "安全事件",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "涉及OpenAI模型的第三方网络评估",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-55018455fd10b832"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-55018455fd10b832",
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
         "id": "EV-e07d82ffbad83150",
         "dataDate": "2026-08-07",
         "date": "2026-08-06",
@@ -879,35 +908,6 @@
         ],
         "entityIds": [
           "EN-7d3194f79e645c42"
-        ]
-      },
-      {
-        "id": "EV-2321e89fad893290",
-        "dataDate": "2026-08-06",
-        "date": "2026-08-06",
-        "eventType": "security_incident",
-        "eventTypeLabel": "安全事件",
-        "eventGroup": "组织、政策与法律",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "涉及OpenAI模型的第三方网络评估",
-        "displayTags": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "security_operations",
-            "name": "安全运营",
-            "entityIds": [
-              "EN-55018455fd10b832"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-55018455fd10b832",
-          "EN-7d3194f79e645c42",
-          "EN-c70eca6b0f88f44d"
         ]
       },
       {
@@ -10037,6 +10037,7 @@
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
         "EV-4e3e9b543127b55a",
+        "EV-a6e9e81d40dc3845",
         "EV-2321e89fad893290",
         "EV-c6b1535a2034f0f2",
         "EV-97c608a27438073a",
@@ -14393,7 +14394,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-08-06"
+      "lastSeen": "2026-08-07"
     },
     {
       "id": "TX-product_form-end_user_application",

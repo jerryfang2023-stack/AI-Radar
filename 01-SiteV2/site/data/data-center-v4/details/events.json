@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-07T00:25:47.516Z",
+    "generatedAt": "2026-08-07T01:18:26.960Z",
     "latestDataDate": "2026-08-07",
     "currentDate": "2026-08-07",
-    "eventCount": 1904,
+    "eventCount": 1905,
     "quarantinedEventCount": 16
   },
   "events": [
@@ -267391,6 +267391,184 @@
       "sourceExcerpt": "效力 27 年后谷歌首席科学家迪恩离职创立新公司，要加速 AI 前沿发现 - IT之家"
     },
     {
+      "id": "EV-a6e9e81d40dc3845",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-07",
+      "eventType": "organization_restructuring",
+      "eventTypeLabel": "组织重组",
+      "eventGroup": "组织、政策与法律",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "Anthropic 确认组建自研芯片团队",
+      "originalTitle": "",
+      "subject": "Anthropic",
+      "action": "organization_restructuring",
+      "object": "custom silicon team",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-2ca33a7cbc8adea8",
+          "subject": "Anthropic",
+          "object": "custom silicon team",
+          "quote": "Anthropic is hiring a “custom silicon team” to design chips on which to run its models, the company has revealed."
+        },
+        {
+          "id": "CL-3bed4829bcd3ac43",
+          "subject": "Anthropic",
+          "object": "multi-chip approach",
+          "quote": "The spokesperson clarified that Anthropic will still take a “multi-chip approach,” with plans to use hardware from other companies alongside its own designs as it continues to scale up."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-f1e66cff35441c10",
+          "publisher": "Ars Technica：AI（RSS）",
+          "url": "https://arstechnica.com/ai/2026/08/anthropic-confirms-plans-to-build-an-in-house-silicon-team"
+        }
+      ],
+      "sourceUrl": "https://arstechnica.com/ai/2026/08/anthropic-confirms-plans-to-build-an-in-house-silicon-team",
+      "publisher": "Ars Technica：AI（RSS）",
+      "sourceExcerpt": "Anthropic is hiring a “custom silicon team” to design chips on which to run its models, the company has revealed."
+    },
+    {
+      "id": "EV-2321e89fad893290",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-06",
+      "updatedDate": "2026-08-07",
+      "eventType": "security_incident",
+      "eventTypeLabel": "安全事件",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "涉及OpenAI模型的第三方网络评估",
+      "originalTitle": "Third-party cyber evaluations involving OpenAI models",
+      "subject": "Irregular",
+      "action": "security_incident",
+      "object": "testing-environment misconfiguration allowing models to access the public internet",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-55018455fd10b832"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-55018455fd10b832"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-55018455fd10b832"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-55018455fd10b832",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Irregular",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-b352c9e7708b9ef9",
+          "subject": "Irregular",
+          "object": "testing-environment misconfiguration allowing models to access the public internet",
+          "quote": "Irregular, one of our external cybersecurity testing partners, was running Capture-the-Flag-style evaluations intended to be isolated from the internet, but a testing-environment misconfiguration allowed models to access the public internet."
+        },
+        {
+          "id": "CL-4443012efd9b46d9",
+          "subject": "OpenAI model",
+          "object": "exploited a real website due to testing-environment misconfiguration",
+          "quote": "In one test, the name of the fictional target for the CTF challenge unintentionally coincided with a real domain. Because the testing environment was mistakenly connected to the internet, the model exploited a real website, mistaking it to be part of the simulated environment."
+        },
+        {
+          "id": "CL-14c699eaea4b487c",
+          "subject": "Irregular",
+          "object": "hosted misconfigured evaluation environment giving Claude live internet access",
+          "quote": "Irregular also feature in Anthropic's write-up - they were hosting the misconfigured evaluation environment which gave Claude live internet access during some of those tests."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-4c46cfa5b3387f42",
+          "publisher": "Simon Willison's Blog",
+          "url": "https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations"
+        }
+      ],
+      "sourceUrl": "https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations",
+      "publisher": "Simon Willison's Blog",
+      "sourceExcerpt": "Irregular, one of our external cybersecurity testing partners, was running Capture-the-Flag-style evaluations intended to be isolated from the internet, but a testing-environment misconfiguration allowed models to access the public internet."
+    },
+    {
       "id": "EV-248e01495eb582ed",
       "dataDate": "2026-08-07",
       "date": "2026-08-06",
@@ -267535,118 +267713,6 @@
       "sourceUrl": "https://theverge.com/tech/976042/openai-apple-trade-secrets-lawsuit-dismissal-request",
       "publisher": "The Verge AI",
       "sourceExcerpt": "OpenAI says Apple’s trade secrets lawsuit is ‘rotten to its core’"
-    },
-    {
-      "id": "EV-2321e89fad893290",
-      "dataDate": "2026-08-06",
-      "date": "2026-08-06",
-      "updatedDate": "2026-08-06",
-      "eventType": "security_incident",
-      "eventTypeLabel": "安全事件",
-      "eventGroup": "组织、政策与法律",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "涉及OpenAI模型的第三方网络评估",
-      "originalTitle": "Third-party cyber evaluations involving OpenAI models",
-      "subject": "Irregular",
-      "action": "security_incident",
-      "object": "testing-environment misconfiguration allowing models to access the public internet",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "security_operations",
-            "name": "安全运营",
-            "entityIds": [
-              "EN-55018455fd10b832"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "security_operations",
-          "name": "安全运营",
-          "entityIds": [
-            "EN-55018455fd10b832"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "security_operations",
-          "name": "安全运营",
-          "entityIds": [
-            "EN-55018455fd10b832"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-55018455fd10b832",
-        "EN-7d3194f79e645c42",
-        "EN-c70eca6b0f88f44d"
-      ],
-      "entityNames": [
-        "Irregular",
-        "OpenAI",
-        "Anthropic"
-      ],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-5d45cd6c572cde7e",
-          "subject": "Irregular",
-          "object": "testing-environment misconfiguration allowing models to access the public internet",
-          "quote": "Irregular, one of our external cybersecurity testing partners, was running Capture-the-Flag-style evaluations intended to be isolated from the internet, but a testing-environment misconfiguration allowed models to access the public internet."
-        },
-        {
-          "id": "CL-9a0c642d5155349f",
-          "subject": "OpenAI model",
-          "object": "exploited a real website due to testing-environment misconfiguration",
-          "quote": "In one test, the name of the fictional target for the CTF challenge unintentionally coincided with a real domain. Because the testing environment was mistakenly connected to the internet, the model exploited a real website, mistaking it to be part of the simulated environment."
-        },
-        {
-          "id": "CL-4da835675d70e008",
-          "subject": "Irregular",
-          "object": "hosted misconfigured evaluation environment giving Claude live internet access",
-          "quote": "Irregular also feature in Anthropic's write-up - they were hosting the misconfigured evaluation environment which gave Claude live internet access during some of those tests."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-a7b3bbf88901cb55",
-          "publisher": "Simon Willison's Blog",
-          "url": "https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations"
-        }
-      ],
-      "sourceUrl": "https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations",
-      "publisher": "Simon Willison's Blog",
-      "sourceExcerpt": "Irregular, one of our external cybersecurity testing partners, was running Capture-the-Flag-style evaluations intended to be isolated from the internet, but a testing-environment misconfiguration allowed models to access the public internet."
     },
     {
       "id": "EV-c6b1535a2034f0f2",
