@@ -5,13 +5,13 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-06T04:34:35.705Z",
+    "generated_at": "2026-08-07T03:46:26.573Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 248,
-    "input_hash": "9552eb3597001215",
+    "decision_count": 251,
+    "input_hash": "8dbaf75eea626bcd",
     "override_count": 17,
     "needs_review_count": 0,
     "low_confidence_count": 0
@@ -4903,6 +4903,56 @@
       "confidence": 0.85,
       "needs_review": false,
       "rationale": "证据显示公司通过全球气球网络采集大气数据并训练AI天气预报模型，核心产品是数据与模型，不直接控制物理设备，因此归入基础设施计算的数据子类。产品形式为模型，主要用户包括政府气象机构和研究人员。"
+    },
+    {
+      "event_id": "EV-ef2ac2c9b425491c",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "EnCharge AI produces AI accelerator chips for edge computing, fitting the infrastructure_compute > hardware_computing > chips hierarchy. The product form is chip_accelerator. Target users are developers who integrate these chips into server racks for AI applications."
+    },
+    {
+      "event_id": "EV-34bc7a4ef57789b8",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Lumilens 提供数据中心内部用于连接 GPU 的光学互连芯片（CPO/NPO 及可插拔收发器），属于为 AI 基础设施提供硬件/计算组件的范畴，因此归入 infrastructure_compute > hardware_computing > computing_infrastructure。产品形态为芯片加速器，目标用户为构建 AI 系统的开发者。"
+    },
+    {
+      "event_id": "EV-933b02f5736a0366",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "marketing",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "content_creation",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "产品为电商推荐引擎，预测购物者需求并实时微调，属于跨行业营销功能，无物理AI特征，非基础设施，非单一行业专用，故归入企业应用-营销。"
     }
   ],
   "inputs": [
@@ -7293,6 +7343,31 @@
       }
     },
     {
+      "event_id": "EV-ef2ac2c9b425491c",
+      "funding_insight_id": "FI-6944939c6264e8a5",
+      "company_name": "EnCharge AI",
+      "company_full_name": "EnCharge AI",
+      "website": "https://enchargeai.com/",
+      "current_sector": "半导体与AI硬件",
+      "company_evidence_quotes": [
+        "EnCharge AI is a Santa Clara, California-based startup founded in 2021 or 2022, specializing in advanced AI hardware and software for edge computing"
+      ],
+      "products": [
+        {
+          "name": "AI加速器硬件",
+          "evidence_quotes": [
+            "Its first products will be cards that can be easily slotted into server racks for companies to run AI applications",
+            "EnCharge test chips and hardware can achieve over 150 TOPS/W for 8-b compute."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-57cf8e14d6994c1b",
       "funding_insight_id": "FI-facd96bb35562fbd",
       "company_name": "Encore AI",
@@ -8950,6 +9025,36 @@
       }
     },
     {
+      "event_id": "EV-34bc7a4ef57789b8",
+      "funding_insight_id": "FI-eae7674948ab88a1",
+      "company_name": "Lumilens",
+      "company_full_name": "Lumilens",
+      "website": "Lumilens.com",
+      "current_sector": "AI 基础设施 / 数据中心光学互连",
+      "company_evidence_quotes": [
+        "Lumilens Emerges from Stealth with More Than $900 Million in Funding to Break AI’s Connectivity Bottlenecks in the Data Center Published at August 6th 2026, 9:00 AM EDT via Business Wire ⓘ This article is third-party content and does not represent"
+      ],
+      "products": [
+        {
+          "name": "Scale-up silicon and systems (NPO and CPO)",
+          "evidence_quotes": [
+            "The first is a co-packaged optics, or CPO, chip series that can be integrated directly into graphics processing units. The company says that it’s capable of linking together thousands of GPUs. Lumilens also makes near-packaged optics, or NPO, chips. Such chips are not integrated directly into GPUs but rather sit on the motherboard that hosts them."
+          ]
+        },
+        {
+          "name": "Scale-out pluggable transceivers (800G, 1.6T, and beyond)",
+          "evidence_quotes": [
+            "Lumilens also makes chips for scale-out networks, which facilitate data sharing across GPU racks. It ships the silicon as part of devices called pluggable transceivers that can be attached to switches. Lumilens says that its technology supports connections with bandwidth of 800 gigabits per second, 1.6 terabits per second or more."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-4eb0556b8c72d410",
       "funding_insight_id": "FI-8a5c369cf132da9b",
       "company_name": "Maisa AI",
@@ -8971,6 +9076,31 @@
         "一家全球投资银行",
         "一家大型金融服务公司"
       ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
+      "event_id": "EV-933b02f5736a0366",
+      "funding_insight_id": "FI-97efb78824527298",
+      "company_name": "Malachyte",
+      "company_full_name": "Malachyte",
+      "website": "https://www.malachyte.com/",
+      "current_sector": "电商个性化与实时推荐",
+      "company_evidence_quotes": [
+        "–:–:–:– 🚨 Flash Sale 🚨 Get $100 off your Disrupt 2026 ticket Get $400 off your Disrupt 2026 ticket: REGISTER NOW. Close Commerce Ex-Spotify employees raise $10M to bring the AI behind its recommendations to e-commerce Lauren Forristal 6:00 AM PDT · August 6, 2026 Sidd Motwani, Ian Anderson, and Shivaditya Sinha spent years building the behavioral intelligence infrastructure behind Spoti"
+      ],
+      "products": [
+        {
+          "name": "Malachyte 平台",
+          "evidence_quotes": [
+            "Its platform uses what it calls “two-headed Vector AI” to predict what product a shopper wants next, learn their general taste, and fine-tune continuously based on what they do in real time.",
+            "Since June 2026, it has been generally available to Shopify merchants through a native integration, while larger retailers can integrate the technology through its API."
+          ]
+        }
+      ],
+      "customer_names": [],
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
         "market_category_id": "enterprise_applications"

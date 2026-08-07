@@ -677,6 +677,21 @@ function descriptiveCompanyTail(name = "") {
   return clean(match?.[1]);
 }
 
+function fundedStartupNameFromClaims(claims = []) {
+  const acceptedQuotes = claims
+    .filter((claim) => claim?.claim_type === "funding" && claim?.verification_status === "accepted")
+    .map((claim) => clean(claim.source_quote))
+    .filter((quote) => /(?:raises?|raised|funding|series|seed|round|financing)/iu.test(quote));
+  for (const quote of acceptedQuotes) {
+    const match = quote.match(
+      /\b(?:new\s+|their\s+|its\s+)?(?:startup|company|firm)\s*,\s*([A-Z][\p{L}\p{N}.&'-]*(?:\s+[A-Z][\p{L}\p{N}.&'-]*){0,3})\s*[\s.，,]*(?=(?:The company|the company|it|has|had|raised|raises|announced|said)\b)/u,
+    );
+    const name = clean(match?.[1]);
+    if (name && !["Now", "The", "Company"].includes(name)) return name;
+  }
+  return "";
+}
+
 function subjectCandidate(entity, index, eventText) {
   const canonicalName = entity.canonical_name || entity.name;
   const inferredName = descriptiveCompanyTail(canonicalName);
@@ -707,6 +722,7 @@ export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims
     .filter((claim) => claim?.claim_type === "funding" && claim?.verification_status === "accepted")
     .map((claim) => normalizedName(claim.subject))
     .filter(Boolean);
+  const claimInferredCompanyName = fundedStartupNameFromClaims(eventClaims);
   if (acceptedFundingSubjects.length) {
     const subjectMatches = (event.entities || [])
       .map((id, index) => ({ entity: byId.get(id), index }))
@@ -721,7 +737,16 @@ export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims
         }),
       }))
       .filter((candidate) => candidate.matched);
-    if (subjectMatches.length === 1) return subjectMatches[0].entity;
+    if (subjectMatches.length === 1) {
+      const entity = subjectMatches[0].entity;
+      return claimInferredCompanyName
+        ? {
+            ...entity,
+            canonical_name: claimInferredCompanyName,
+            aliases: [...new Set([...(entity.aliases || []), entity.canonical_name].filter(Boolean))],
+          }
+        : entity;
+    }
   }
   const eventParts = [
     event.display_title_zh,

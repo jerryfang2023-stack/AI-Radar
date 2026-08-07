@@ -748,6 +748,34 @@ test("accepted funding claim subject takes precedence over investor names in the
   assert.equal(subjectCompanyForEvent(event, entities, {}, claims)?.entity_id, "EN-VOLTA");
 });
 
+test("accepted funding claim quote can correct a descriptive founder-group subject to the funded startup", () => {
+  const entities = [{
+    entity_id: "EN-FOUNDERS",
+    entity_type: "organization_candidate",
+    canonical_name: "Ex-Spotify employees",
+  }];
+  const claims = [{
+    claim_id: "CL-MALACHYTE",
+    claim_type: "funding",
+    verification_status: "accepted",
+    subject: "Ex-Spotify employees",
+    source_quote: "Now, the three are bringing a similar system to e-commerce with their new startup, Malachyte . The company on Thursday said it had raised $10 million in seed funding to scale distribution and hire more product and commercial leaders.",
+  }];
+  const event = {
+    display_title_zh: "前 Spotify 员工筹集 1000 万美元，将推荐背后的 AI 引入电商",
+    action: "funding",
+    object: "$10 million in seed funding",
+    metrics: ["$10 million"],
+    entities: ["EN-FOUNDERS"],
+    claim_refs: ["CL-MALACHYTE"],
+  };
+
+  const company = subjectCompanyForEvent(event, entities, {}, claims);
+  assert.equal(company?.entity_id, "EN-FOUNDERS");
+  assert.equal(company?.canonical_name, "Malachyte");
+  assert.ok(company?.aliases?.includes("Ex-Spotify employees"));
+});
+
 test("Chinese funding titles resolve the company entity instead of a headline fragment", () => {
   const cases = [
     {

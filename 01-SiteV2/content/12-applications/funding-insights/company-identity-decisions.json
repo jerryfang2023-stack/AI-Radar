@@ -44,6 +44,26 @@
         "quote": "Team Aligned, Inc. (\"Aligned\", \"us\", \"our\", or \"we\"), a company incorporated in the State of Delaware"
       },
       "rationale": "公司官方条款明确Team Aligned, Inc.简称Aligned；两条事件披露同一笔6000万美元B轮融资，前台应按同一公司与轮次聚合。"
+    },
+    {
+      "entity_id": "EN-13a7f8fe8140462d",
+      "current": {
+        "name": "Ex-Spotify employees",
+        "catalog_type": "company"
+      },
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "Malachyte",
+        "catalog_type": "company"
+      },
+      "review_status": "accepted",
+      "reviewed_at": "2026-08-07",
+      "evidence": {
+        "source_url": "https://techcrunch.com/2026/08/06/ex-spotify-employees-raise-10m-to-bring-the-ai-behind-its-recommendations-to-e-commerce/",
+        "quote": "Now, the three are bringing a similar system to e-commerce with their new startup, Malachyte . The company on Thursday said it had raised $10 million in seed funding to scale distribution and hire more product and commercial leaders."
+      },
+      "rationale": "Data Center V4 抽取的实体名来自标题描述；原文明确融资主体是三位前 Spotify 员工创立的新公司 Malachyte。Funding Insights 前台应展示公司名 Malachyte，同时保留原事件与实体来源。"
     }
   ]
 }

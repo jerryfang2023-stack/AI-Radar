@@ -12,6 +12,7 @@ import {
   fundingInsightProblems,
   latestDataDate,
   loadDailyBundle,
+  normalizeFundingInsightCard,
   readJson,
   verifiedFundingEventCardCoverageProblems,
 } from "./funding-insight-v1-utils.mjs";
@@ -217,6 +218,24 @@ function main() {
     : [input];
   const results = files.map((file) => ({ file, ...validateBundle(file, validate) }));
   const cards = results.flatMap((result) => result.data?.cards || []);
+  const entityIndex = readJson(
+    path.join(root, "01-SiteV2/site/data/data-center-v4/indexes/entities.json"),
+    {},
+  );
+  const entityDecisions = readJson(
+    path.join(root, "01-SiteV2/content/12-applications/funding-insights/entity-link-decisions.json"),
+    {},
+  );
+  const companyIdentityReview = readJson(
+    path.join(root, "01-SiteV2/content/12-applications/funding-insights/company-identity-decisions.json"),
+    {},
+  );
+  const normalizedCards = cards.map((card) => normalizeFundingInsightCard(
+    card,
+    entityIndex,
+    entityDecisions,
+    companyIdentityReview,
+  ));
   const problems = results.flatMap((result) => result.problems.map(
     (problem) => `${path.basename(result.file)}:${problem}`,
   ));
@@ -230,8 +249,8 @@ function main() {
   problems.push(...verifiedFundingEventCardCoverageProblems(currentEvents, persistedCards, currentQueue)
     .map((problem) => `${date}:${problem}`));
   if (all) {
-    problems.push(...validateEntityReviewQueue(cards));
-    problems.push(...validateEntityDecisions(cards));
+    problems.push(...validateEntityReviewQueue(normalizedCards));
+    problems.push(...validateEntityDecisions(normalizedCards));
   }
   if (assertFrontstage) problems.push(...validateFrontstage());
   if (problems.length) {

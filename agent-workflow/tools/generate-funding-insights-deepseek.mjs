@@ -639,7 +639,7 @@ function fundingHistory(companyId) {
   return history.sort((left, right) => right.date.localeCompare(left.date));
 }
 
-function buildCard(event, company, payload, sources, result, resolver, entityIndex, entityDecisions) {
+function buildCard(event, company, payload, sources, result, resolver, entityIndex, entityDecisions, companyIdentityReview) {
   const founders = (payload.company.founders || []).map((founder) => {
     const resolved = resolver(founder.name, ["人物"]);
     return { ...founder, entity_id: resolved?.id || null };
@@ -709,10 +709,10 @@ function buildCard(event, company, payload, sources, result, resolver, entityInd
     },
     publication_status: "auto_published",
     published_at: publishedAt,
-  }, entityIndex, entityDecisions);
+  }, entityIndex, entityDecisions, companyIdentityReview);
 }
 
-async function processEvent(bundle, event, entityIndex, entityDecisions) {
+async function processEvent(bundle, event, entityIndex, entityDecisions, companyIdentityReview) {
   const company = subjectCompanyForEvent(event, bundle.entities, entityIndex, bundle.claims);
   if (!company) return { event_id: event.event_id, status: "blocked", problems: ["subject_company_unresolved"] };
   const research = await researchSources(bundle, event, company);
@@ -766,6 +766,7 @@ async function processEvent(bundle, event, entityIndex, entityDecisions) {
         entityResolver(entityIndex),
         entityIndex,
         entityDecisions,
+        companyIdentityReview,
       ),
       queries: research.queries,
       attempts: research.attempts,
@@ -808,6 +809,10 @@ async function main() {
     path.join(root, "01-SiteV2/content/12-applications/funding-insights/entity-link-decisions.json"),
     {},
   );
+  const companyIdentityReview = readJson(
+    path.join(root, "01-SiteV2/content/12-applications/funding-insights/company-identity-decisions.json"),
+    {},
+  );
   const existing = readJson(output, { cards: [], queue: [] });
   const eventById = new Map(bundle.events.map((event) => [event.event_id, event]));
   const amountKey = (value) => clean(value).toLowerCase()
@@ -815,7 +820,7 @@ async function main() {
     .replace(/\bbillions?\b/gu, "b")
     .replace(/[\s,]/gu, "");
   const existingByEvent = new Map((existing.cards || [])
-    .map((card) => normalizeFundingInsightCard(card, entityIndex, entityDecisions))
+    .map((card) => normalizeFundingInsightCard(card, entityIndex, entityDecisions, companyIdentityReview))
     .filter((card) => fundingInsightProblems(card).length === 0)
     .filter((card) => (card.research_sources || []).some((source) => source.source_class === "canonical_event_source"))
     .filter((card) => {
@@ -875,7 +880,7 @@ async function main() {
   const results = pending.length
     ? await mapConcurrent(
       pending,
-      (event) => processEvent(bundle, event, entityIndex, entityDecisions),
+      (event) => processEvent(bundle, event, entityIndex, entityDecisions, companyIdentityReview),
       concurrency,
     )
     : [];
@@ -884,6 +889,19 @@ async function main() {
     else if (force && existingByEvent.has(result.event_id)) result.retained_existing = true;
   }
   const queueByEvent = new Map((existing.queue || []).map((item) => [item.event_id, item]));
+  for (const event of generationSelection.reused) {
+    const card = existingByEvent.get(event.event_id);
+    queueByEvent.set(event.event_id, {
+      ...(queueByEvent.get(event.event_id) || {}),
+      event_id: event.event_id,
+      company_name: card?.company?.name || "",
+      status: "auto_published",
+      problems: [],
+      queries: queueByEvent.get(event.event_id)?.queries || [],
+      attempts: queueByEvent.get(event.event_id)?.attempts || [],
+      updated_at: new Date().toISOString(),
+    });
+  }
   for (const event of generationSelection.deduplicated) {
     queueByEvent.set(event.event_id, {
       event_id: event.event_id,

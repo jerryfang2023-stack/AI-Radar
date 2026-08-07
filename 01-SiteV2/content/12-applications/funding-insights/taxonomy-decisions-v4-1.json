@@ -5,13 +5,13 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-06T04:34:35.705Z",
+    "generated_at": "2026-08-07T03:46:26.573Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 248,
-    "input_hash": "9552eb3597001215",
+    "decision_count": 251,
+    "input_hash": "8dbaf75eea626bcd",
     "override_count": 17,
     "needs_review_count": 0,
     "low_confidence_count": 0
@@ -4903,6 +4903,56 @@
       "confidence": 0.85,
       "needs_review": false,
       "rationale": "证据显示公司通过全球气球网络采集大气数据并训练AI天气预报模型，核心产品是数据与模型，不直接控制物理设备，因此归入基础设施计算的数据子类。产品形式为模型，主要用户包括政府气象机构和研究人员。"
+    },
+    {
+      "event_id": "EV-ef2ac2c9b425491c",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "EnCharge AI produces AI accelerator chips for edge computing, fitting the infrastructure_compute > hardware_computing > chips hierarchy. The product form is chip_accelerator. Target users are developers who integrate these chips into server racks for AI applications."
+    },
+    {
+      "event_id": "EV-34bc7a4ef57789b8",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Lumilens 提供数据中心内部用于连接 GPU 的光学互连芯片（CPO/NPO 及可插拔收发器），属于为 AI 基础设施提供硬件/计算组件的范畴，因此归入 infrastructure_compute > hardware_computing > computing_infrastructure。产品形态为芯片加速器，目标用户为构建 AI 系统的开发者。"
+    },
+    {
+      "event_id": "EV-933b02f5736a0366",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "marketing",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "content_creation",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "产品为电商推荐引擎，预测购物者需求并实时微调，属于跨行业营销功能，无物理AI特征，非基础设施，非单一行业专用，故归入企业应用-营销。"
     }
   ]
 }
