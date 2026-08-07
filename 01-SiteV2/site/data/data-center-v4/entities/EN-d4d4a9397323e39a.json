@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-07T00:25:47.516Z",
+    "latestDataDate": "2026-08-07",
+    "currentDate": "2026-08-07",
+    "eventCount": 1904,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-d4d4a9397323e39a",
+    "name": "Spectro Cloud",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-099c1bce0a50965d"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-05",
+    "lastSeen": "2026-08-07",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-099c1bce0a50965d"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-099c1bce0a50965d",
+        "dataDate": "2026-08-07",
+        "date": "2026-08-05",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AMD、超微与Spectro Cloud推出交钥匙解决方案，助力企业AI编码规模化扩展",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-240389f4b730bad4",
+          "EN-d4d4a9397323e39a",
+          "EN-c12965afdaa87ea4",
+          "EN-b2f27c2f4827a3d0",
+          "EN-64bcc38de2b7b866"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

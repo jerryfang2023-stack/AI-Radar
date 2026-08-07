@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-07T00:25:47.516Z",
+    "latestDataDate": "2026-08-07",
+    "currentDate": "2026-08-07",
+    "eventCount": 1904,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-d9a8195070f80de9",
+    "name": "Pro V2",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-4e3e9b543127b55a"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-07",
+    "lastSeen": "2026-08-07",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": [
+        "EV-4e3e9b543127b55a"
+      ]
+    },
+    "timeline": [
+      {
+        "id": "EV-4e3e9b543127b55a",
+        "dataDate": "2026-08-07",
+        "date": "2026-08-07",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Databricks 发布 OfficeQA Pro V2：面向企业落地推理的新基准",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-2dc010636b9dce91"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-2dc010636b9dce91",
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d",
+          "EN-2b6e51bec93e86c1",
+          "EN-45f63fb3ca79571b",
+          "EN-d9a8195070f80de9"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-06T04:35:01.974Z",
-    "latestDataDate": "2026-08-06",
-    "currentDate": "2026-08-06",
-    "eventCount": 1888,
+    "generatedAt": "2026-08-07T00:25:47.516Z",
+    "latestDataDate": "2026-08-07",
+    "currentDate": "2026-08-07",
+    "eventCount": 1904,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -40,6 +40,7 @@
     "relationIds": [
       "REL2-a5a15f09d4da8135",
       "REL2-284835caff7e4288",
+      "REL2-9ad2c97e765910d9",
       "REL2-de5487ce28a724fb",
       "REL2-fcedf12f07ebc6c2"
     ],
@@ -271,7 +272,9 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "谷歌"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -298,6 +301,7 @@
         "EV-cec235426920c522",
         "EV-051d1924db7ba65d",
         "EV-777eb5b7783b71fb",
+        "EV-bfc1664d74f43fb3",
         "EV-e8bc5b0eebef5813",
         "EV-f55d16df5b5fecb2",
         "EV-5a9fe80f8e4ae066",
@@ -419,6 +423,8 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-8680757a0026461d",
+        "EV-248e01495eb582ed",
         "EV-c6b1535a2034f0f2",
         "EV-6ea546ea3dbeb6d7",
         "EV-0e9f000dd04fe04c",
@@ -443,18 +449,18 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-aerospace_defense",
         "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-use_case-research_discovery",
-        "TX-industry-retail_ecommerce",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
         "TX-target_user-developer",
-        "TX-technology-agentic_execution",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-security_operations",
         "TX-product_form-end_user_application",
@@ -469,16 +475,19 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
+        "EN-307557d99a7eb726",
         "EN-8d323d8bba783aa3",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
+        "EN-31055a8d9856fce4",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
+        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
-        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
+        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -486,7 +495,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-06"
+      "lastSeen": "2026-08-07"
     },
     {
       "id": "EN-2b6e51bec93e86c1",
@@ -525,6 +534,9 @@
         "EV-3ef3e18df61a00d8",
         "EV-568d2aeab5234e48",
         "EV-f68e00bb9fd49fac",
+        "EV-4e3e9b543127b55a",
+        "EV-8680757a0026461d",
+        "EV-248e01495eb582ed",
         "EV-c6b1535a2034f0f2",
         "EV-d46aa5935d9bb672",
         "EV-3e9a0d1be6de5096",
@@ -535,12 +547,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
         "TX-use_case-research_discovery",
         "TX-industry-media_entertainment",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
@@ -561,7 +573,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-06"
+      "lastSeen": "2026-08-07"
     }
   ],
   "relationships": [
@@ -597,6 +609,27 @@
       ],
       "source_refs": [
         "SA-a75ceb328d955c6a"
+      ],
+      "data_date": "2026-07-22",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-9ad2c97e765910d9",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-18f0900d6c487f59",
+      "object_type": "entity",
+      "event_id": "EV-597b8257a97b3d02",
+      "claim_refs": [
+        "CL-bcf6cc5593de2a0f",
+        "CL-1407e158e3017631",
+        "CL-bcccc3f03d4b38a9",
+        "CL-910d21a1f5ab0b3c"
+      ],
+      "source_refs": [
+        "SA-a3cf2c06935ba536"
       ],
       "data_date": "2026-07-22",
       "status": "verified"

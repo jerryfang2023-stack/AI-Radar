@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-06T01:17:24.350Z",
-    "latestDataDate": "2026-08-06",
-    "currentDate": "2026-08-06",
-    "eventCount": 1888,
+    "generatedAt": "2026-08-07T00:25:47.516Z",
+    "latestDataDate": "2026-08-07",
+    "currentDate": "2026-08-07",
+    "eventCount": 1904,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -27,8 +27,8 @@
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-05-27",
-    "lastSeen": "2026-06-15",
+    "firstSeen": "2026-08-07",
+    "lastSeen": "2026-08-07",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -44,8 +44,8 @@
     "timeline": [
       {
         "id": "EV-323d98437e42e8b3",
-        "dataDate": "2026-06-15",
-        "date": "2026-05-27",
+        "dataDate": "2026-08-07",
+        "date": "2026-08-07",
         "eventType": "partnership",
         "eventTypeLabel": "合作",
         "eventGroup": "商业合作",
@@ -63,6 +63,93 @@
   "relatedEntities": [],
   "relationships": [],
   "taxonomyNodes": [],
-  "fde": [],
-  "hardware": []
+  "fde": [
+    {
+      "id": "FDE-f99171bb7e8b4294",
+      "eventId": "EV-323d98437e42e8b3",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "title": "Kuehne+Nagel 与 HappyRobot 客户案例",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "HappyRobot",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Kuehne+Nagel",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://happyrobot.ai/customer-story/kuehne-nagel",
+      "entityIds": [
+        "EN-12bb49e1b12281f4"
+      ]
+    }
+  ],
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-4e31ac1c5e7360a8",
+      "implementationKey": "4e31ac1c5e7360a8",
+      "eventId": "EV-323d98437e42e8b3",
+      "eventIds": [
+        "EV-323d98437e42e8b3"
+      ],
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "title": "HappyRobot × 未披露：Kuehne+Nagel",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "HappyRobot",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Kuehne+Nagel",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-4bde993d1e7b6f8e",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-07",
+          "dataDate": "2026-08-07",
+          "eventId": "EV-323d98437e42e8b3",
+          "eventTitle": "Kuehne+Nagel 与 HappyRobot 客户案例",
+          "claimCount": 1,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://happyrobot.ai/customer-story/kuehne-nagel",
+      "entityIds": [
+        "EN-12bb49e1b12281f4"
+      ]
+    }
+  ]
 }

@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-07T00:25:47.516Z",
+    "latestDataDate": "2026-08-07",
+    "currentDate": "2026-08-07",
+    "eventCount": 1904,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-c9022680f888674e",
+    "name": "People",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-eb4858e820bf9435"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-05-29",
+    "lastSeen": "2026-08-07",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-eb4858e820bf9435"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-eb4858e820bf9435",
+        "dataDate": "2026-08-07",
+        "date": "2026-05-29",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Drafted 获1600万美元融资，以AI重塑家居设计",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "industry_applications",
+            "name": "行业应用",
+            "entityIds": [
+              "EN-094b7ade939cad4d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c1504f1b92672dad",
+            "fundingInsightId": "FI-f281c9debf3bb41c"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "consumer_retail",
+            "name": "消费与零售",
+            "entityIds": [
+              "EN-094b7ade939cad4d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9358014f60180d00",
+            "fundingInsightId": "FI-f281c9debf3bb41c"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-094b7ade939cad4d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1f664e0bad6b576c",
+            "fundingInsightId": "FI-f281c9debf3bb41c"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "design_engineering",
+            "name": "设计与工程",
+            "entityIds": [
+              "EN-094b7ade939cad4d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-abff16d552abee73",
+            "fundingInsightId": "FI-f281c9debf3bb41c"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "construction_real_estate",
+            "name": "建筑与房地产",
+            "entityIds": [
+              "EN-094b7ade939cad4d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8260ccdf294c1aae",
+            "fundingInsightId": "FI-f281c9debf3bb41c"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-094b7ade939cad4d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-193c50fd9d3b7262",
+            "fundingInsightId": "FI-f281c9debf3bb41c"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-094b7ade939cad4d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-848ebd9800f75923",
+            "fundingInsightId": "FI-f281c9debf3bb41c"
+          }
+        ],
+        "entityIds": [
+          "EN-094b7ade939cad4d",
+          "EN-c9022680f888674e"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}
