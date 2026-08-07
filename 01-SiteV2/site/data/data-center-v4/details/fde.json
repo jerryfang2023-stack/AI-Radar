@@ -5,13 +5,87 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-06T04:35:01.974Z",
-    "latestDataDate": "2026-08-06",
-    "currentDate": "2026-08-06",
-    "eventCount": 1888,
+    "generatedAt": "2026-08-07T00:25:47.516Z",
+    "latestDataDate": "2026-08-07",
+    "currentDate": "2026-08-07",
+    "eventCount": 1904,
     "quarantinedEventCount": 16
   },
   "fde": [
+    {
+      "id": "FDE-33d054bbd2e8d427",
+      "eventId": "EV-d50bfbdb31595942",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "title": "Lemvigh-Müller：以智能体AI打造批发新标准，实现快速无接触采购",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "multi-agent workflow with SAP Cloud ERP Private, SAP AI Launchpad, and SAP AI Core",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "the company deployed a multi-agent workflow with an SAP Cloud ERP Private solution, SAP AI Launchpad, and SAP AI Core infrastructure"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://sap.com/asset/dynamic/2026/06/be80dd33-587f-0010-bca6-c68f7e60039b.html",
+      "entityIds": [
+        "EN-9f2432dcde6dc59a"
+      ]
+    },
+    {
+      "id": "FDE-f99171bb7e8b4294",
+      "eventId": "EV-323d98437e42e8b3",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "title": "Kuehne+Nagel 与 HappyRobot 客户案例",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "HappyRobot",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Kuehne+Nagel",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://happyrobot.ai/customer-story/kuehne-nagel",
+      "entityIds": [
+        "EN-12bb49e1b12281f4"
+      ]
+    },
     {
       "id": "FDE-13bbc5471db90438",
       "eventId": "EV-acddfa62aabb004f",
@@ -5387,6 +5461,54 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-4e31ac1c5e7360a8",
+      "implementationKey": "4e31ac1c5e7360a8",
+      "eventId": "EV-323d98437e42e8b3",
+      "eventIds": [
+        "EV-323d98437e42e8b3"
+      ],
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "title": "HappyRobot × 未披露：Kuehne+Nagel",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "HappyRobot",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Kuehne+Nagel",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-4bde993d1e7b6f8e",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-07",
+          "dataDate": "2026-08-07",
+          "eventId": "EV-323d98437e42e8b3",
+          "eventTitle": "Kuehne+Nagel 与 HappyRobot 客户案例",
+          "claimCount": 1,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://happyrobot.ai/customer-story/kuehne-nagel",
+      "entityIds": [
+        "EN-12bb49e1b12281f4"
+      ]
+    },
+    {
       "id": "FDED-e8ece81a186be81c",
       "implementationKey": "e8ece81a186be81c",
       "eventId": "EV-acddfa62aabb004f",
@@ -6233,6 +6355,359 @@
     }
   ],
   "events": [
+    {
+      "id": "EV-028d45646416416c",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-07",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Rubrik：面向安全生产部署的企业AI平台集成 - ZenML LLMOps数据库",
+      "originalTitle": "Rubrik: Enterprise AI Platform Integration for Secure Production Deployment - ZenML LLMOps Database",
+      "subject": "Rubrik",
+      "action": "acquisition",
+      "object": "Predibase",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-4094a2b7125c7564"
+      ],
+      "entityNames": [
+        "Rubrik"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://zenml.io/llmops-database/enterprise-ai-platform-integration-for-secure-production-deployment",
+      "publisher": "zenml.io"
+    },
+    {
+      "id": "EV-83728e3b6c7736ce",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-07",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "AMD 收购 Taalas，通过将模型蚀刻到硅片中提升推理性能",
+      "originalTitle": "",
+      "subject": "AMD",
+      "action": "收购",
+      "object": "Taalas，通过将模型蚀刻到硅片中提升推理性能",
+      "metrics": [
+        "$20 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-240389f4b730bad4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "AMD",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
+    },
+    {
+      "id": "EV-ef2ac2c9b425491c",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-07",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "EnCharge AI：融资、团队与投资者",
+      "originalTitle": "EnCharge AI: Funding, Team & Investors | Startup Intros",
+      "subject": "EnCharge AI",
+      "action": "funding",
+      "object": "$21.7 million Series A funding round",
+      "metrics": [
+        "$21.7 million",
+        "$100.0M",
+        "$18.6M"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-adda212f0afa4781",
+        "EN-3ef2a26a758aec2f"
+      ],
+      "entityNames": [
+        "EnCharge AI",
+        "Mar 6"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://startupintros.com/orgs/encharge-ai",
+      "publisher": "startupintros.com"
+    },
+    {
+      "id": "EV-34bc7a4ef57789b8",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-06",
+      "updatedDate": "2026-08-07",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Lumilens 携超9亿美元融资走出隐身模式，破解数据中心AI连接瓶颈",
+      "originalTitle": "Lumilens Emerges from Stealth with More Than $900 Million in Funding to Break AI’s Connectivity Bottlenecks in the Data Center | FinancialContent",
+      "subject": "Lumilens",
+      "action": "funding",
+      "object": "more than $700 million in new funding co-led by Atreides Management, Bain Capital Ventures, Meritech, Seligman Ventures, and Spark Capital",
+      "metrics": [
+        "$700 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-a7e079ed603b3436"
+      ],
+      "entityNames": [
+        "Lumilens"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://financialcontent.com/article/bizwire-2026-8-6-lumilens-emerges-from-stealth-with-more-than-900-million-in-funding-to-break-ais-connectivity-bottlenecks-in-the-data-center",
+      "publisher": "financialcontent.com"
+    },
+    {
+      "id": "EV-933b02f5736a0366",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-06",
+      "updatedDate": "2026-08-07",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "前Spotify员工筹集1000万美元，将推荐背后的AI引入电商",
+      "originalTitle": "Ex-Spotify employees raise $10M to bring the AI behind its recommendations to e-commerce",
+      "subject": "Ex-Spotify employees",
+      "action": "raise",
+      "object": "$10M to bring the AI behind its recommendations to e-commerce",
+      "metrics": [
+        "$10M",
+        "$10 million",
+        "90%",
+        "800 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-13a7f8fe8140462d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-13a7f8fe8140462d",
+        "EN-2b78da3dc866654e",
+        "EN-ed5eb9a37e2d8231",
+        "EN-8532660d993674b1"
+      ],
+      "entityNames": [
+        "Ex-Spotify employees",
+        "Spotify",
+        "Now",
+        "Sidd Motwani"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/06/ex-spotify-employees-raise-10m-to-bring-the-ai-behind-its-recommendations-to-e-commerce",
+      "publisher": "TechCrunch AI"
+    },
     {
       "id": "EV-60f219702a66bf38",
       "dataDate": "2026-08-06",
@@ -87077,20 +87552,20 @@
     },
     {
       "id": "EV-eb4858e820bf9435",
-      "dataDate": "2026-07-23",
+      "dataDate": "2026-08-07",
       "date": "2026-05-29",
-      "updatedDate": "2026-07-23",
+      "updatedDate": "2026-08-07",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Drafted 获 1600 万美元融资，以 AI 重塑家居设计",
-      "originalTitle": "Drafted Secures $16M in Funding to Reshape Home Design With AI",
+      "title": "Drafted 获1600万美元融资，以AI重塑家居设计",
+      "originalTitle": "Drafted Secures $16M in Funding to Reshape Home Design With AI - Business Insider",
       "subject": "Drafted",
       "action": "Secures",
-      "object": "$16M in Funding to Reshape Home Design With AI",
+      "object": "$16M in Funding to Reshape Home Design With AI - Business Insider",
       "metrics": [
         "$16 million",
         "$1.65 million",
@@ -87374,10 +87849,12 @@
         }
       ],
       "entityIds": [
-        "EN-094b7ade939cad4d"
+        "EN-094b7ade939cad4d",
+        "EN-c9022680f888674e"
       ],
       "entityNames": [
-        "Drafted"
+        "Drafted",
+        "People"
       ],
       "productName": "",
       "products": [],
@@ -106668,6 +107145,96 @@
       "publisher": "front.ai"
     },
     {
+      "id": "EV-d50bfbdb31595942",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-07",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Lemvigh-Müller：以智能体AI打造批发新标准，实现快速无接触采购",
+      "originalTitle": "Lemvigh-Müller: Casting a new wholesale standard with agentic AI for fast, touchless procurement",
+      "subject": "Lemvigh-Müller A/S",
+      "action": "deployment",
+      "object": "multi-agent workflow with SAP Cloud ERP Private, SAP AI Launchpad, and SAP AI Core",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-9f2432dcde6dc59a"
+      ],
+      "entityNames": [
+        "Lemvigh-Müller A/S"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://sap.com/asset/dynamic/2026/06/be80dd33-587f-0010-bca6-c68f7e60039b.html",
+      "publisher": "sap.com"
+    },
+    {
+      "id": "EV-e65f17f35ef7f1a3",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-06",
+      "updatedDate": "2026-08-07",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "withdrawn",
+      "statusLabel": "已撤回",
+      "publicationStatus": "withdrawn",
+      "title": "上线仅 1 周，微软撤回 M365 Copilot 的\"域名排除\"功能",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "上线",
+      "object": "仅 1 周，微软撤回 M365 Copilot 的\"域名排除\"功能",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/986/342.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-acddfa62aabb004f",
       "dataDate": "2026-08-05",
       "date": "2026-08-05",
@@ -106766,6 +107333,88 @@
       "products": [],
       "sourceUrl": "https://eloquentai.co/resources/deploying-and-scaling-enterprise-ai-agents",
       "publisher": "eloquentai.co"
+    },
+    {
+      "id": "EV-7dcbf6eab4339b22",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-04",
+      "updatedDate": "2026-08-07",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "Anthropic 与 AI 云初创公司 Volta 签署 100 亿美元协议",
+      "originalTitle": "Anthropic signs $10B deal with AI cloud startup Volta | TechCrunch",
+      "subject": "Anthropic",
+      "action": "procurement_contract",
+      "object": "Volta",
+      "metrics": [
+        "$10B"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-c70eca6b0f88f44d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta",
+      "publisher": "techcrunch.com"
     },
     {
       "id": "EV-5bbc509a032b8309",
@@ -106985,88 +107634,6 @@
       "products": [],
       "sourceUrl": "https://qbitai.com/2026/08/465785.html",
       "publisher": "量子位"
-    },
-    {
-      "id": "EV-7dcbf6eab4339b22",
-      "dataDate": "2026-08-05",
-      "date": "2026-08-04",
-      "updatedDate": "2026-08-05",
-      "eventType": "procurement_contract",
-      "eventTypeLabel": "采购合同",
-      "eventGroup": "商业合作",
-      "status": "rumored",
-      "statusLabel": "rumored",
-      "publicationStatus": "disputed",
-      "title": "Anthropic 与 AI 云初创公司 Volta 签署 100 亿美元算力协议",
-      "originalTitle": "",
-      "subject": "Anthropic",
-      "action": "procurement_contract",
-      "object": "Volta",
-      "metrics": [
-        "$10B"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "compute_cloud_service",
-            "name": "算力云服务",
-            "entityIds": [
-              "EN-c70eca6b0f88f44d"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "compute_cloud_service",
-          "name": "算力云服务",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "compute_cloud_service",
-          "name": "算力云服务",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-c70eca6b0f88f44d"
-      ],
-      "entityNames": [
-        "Anthropic"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta",
-      "publisher": "TechCrunch：AI（RSS）"
     },
     {
       "id": "EV-c25adb1398842ac9",
@@ -124047,6 +124614,98 @@
       "publisher": "fedscoop.com"
     },
     {
+      "id": "EV-323d98437e42e8b3",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-07",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Kuehne+Nagel 与 HappyRobot 客户案例",
+      "originalTitle": "Kuehne+Nagel x HappyRobot Customer Story | HappyRobot",
+      "subject": "HappyRobot",
+      "action": "partnership",
+      "object": "Kuehne+Nagel",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-12bb49e1b12281f4"
+      ],
+      "entityNames": [
+        "HappyRobot"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://happyrobot.ai/customer-story/kuehne-nagel",
+      "publisher": "happyrobot.ai"
+    },
+    {
+      "id": "EV-bfc1664d74f43fb3",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-06",
+      "updatedDate": "2026-08-07",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "独家：Mirendil签署超1亿美元Google Cloud协议，以扩展自我改进型AI",
+      "originalTitle": "Exclusive: Mirendil inks $100M+ Google Cloud deal to scale self-improving AI",
+      "subject": "Mirendil",
+      "action": "partnership",
+      "object": "Google Cloud",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-b81b59c4259c46d6",
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "Mirendil",
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/06/exclusive-mirendil-inks-100m-google-cloud-deal-to-scale-self-improving-ai",
+      "publisher": "TechCrunch AI"
+    },
+    {
       "id": "EV-da148848ec026bdf",
       "dataDate": "2026-08-05",
       "date": "2026-08-04",
@@ -124132,9 +124791,9 @@
     },
     {
       "id": "EV-467539fe176a470e",
-      "dataDate": "2026-08-06",
+      "dataDate": "2026-08-07",
       "date": "2026-08-03",
-      "updatedDate": "2026-08-06",
+      "updatedDate": "2026-08-07",
       "eventType": "partnership",
       "eventTypeLabel": "合作",
       "eventGroup": "商业合作",
@@ -134650,50 +135309,6 @@
       "publisher": "furiosa.ai"
     },
     {
-      "id": "EV-323d98437e42e8b3",
-      "dataDate": "2026-06-15",
-      "date": "2026-05-27",
-      "updatedDate": "2026-06-15",
-      "eventType": "partnership",
-      "eventTypeLabel": "合作",
-      "eventGroup": "商业合作",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Kuehne+Nagel 与 HappyRobot 客户案例",
-      "originalTitle": "Kuehne+Nagel x HappyRobot Customer Story | HappyRobot",
-      "subject": "HappyRobot",
-      "action": "partnership",
-      "object": "Kuehne+Nagel",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-12bb49e1b12281f4"
-      ],
-      "entityNames": [
-        "HappyRobot"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://happyrobot.ai/customer-story/kuehne-nagel",
-      "publisher": "happyrobot.ai"
-    },
-    {
       "id": "EV-35be62272c77c556",
       "dataDate": "2026-05-22",
       "date": "2026-05-22",
@@ -135230,6 +135845,258 @@
       "publisher": "markets.ft.com"
     },
     {
+      "id": "EV-1b5b1d3317c8f688",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-07",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "GPT-4.5 以来训练的最大模型，曝 OpenAI 最快下周推出 Astra AI 模型",
+      "originalTitle": "",
+      "subject": "GPT-4.5 以来训练的最大模型，曝 OpenAI 最快下周",
+      "action": "推出 Astra AI 模型",
+      "object": "GPT-4.5 以来训练的最大模型，曝 OpenAI 最快下周推出 Astra AI 模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-e77515a79af21a5b",
+        "EN-310c52cf9b5ca39b"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "GPT-4.5",
+        "Astra AI"
+      ],
+      "productName": "GPT-4.5",
+      "products": [
+        {
+          "name": "GPT-4.5",
+          "type": "模型",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        },
+        {
+          "name": "Astra AI",
+          "type": "模型",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/986/789.htm",
+      "publisher": "IT之家"
+    },
+    {
+      "id": "EV-8de21f5aa53242f1",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-07",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "OpenAI 将 ChatGPT 免费用户默认模型升级为 GPT-5.6 Luna，Plus 和 Pro 用户更新 GPT-5.6 Sol 聊天界面",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "model_release",
+      "object": "GPT-5.6 Luna",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-8e0887f7b480a2d1",
+        "EN-d1ad14d4ad57d207"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "GPT-5.6 Luna",
+        "ChatGPT"
+      ],
+      "productName": "GPT-5.6 Luna",
+      "products": [
+        {
+          "name": "GPT-5.6 Luna",
+          "type": "模型",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        },
+        {
+          "name": "ChatGPT",
+          "type": "模型",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/986/776.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-99005688ec16c082",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Cloudflare 发布 Kitesurf：完全运行在 Workers V8 隔离环境中的智能体优先浏览器",
+      "originalTitle": "",
+      "subject": "Cloudflare",
+      "action": "发布",
+      "object": "Kitesurf：完全运行在 Workers V8 隔离环境中的智能体优先浏览器",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-738e22f0acab814c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-738e22f0acab814c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-738e22f0acab814c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-738e22f0acab814c",
+        "EN-0bbbffe05960c1bb"
+      ],
+      "entityNames": [
+        "Cloudflare",
+        "Kitesurf"
+      ],
+      "productName": "Kitesurf",
+      "products": [
+        {
+          "name": "Kitesurf",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/08/06/cloudflare-introduces-kitesurf-an-agent-first-web-browser-that-runs-entirely-in-v8-isolates-on-cloudflare-workers",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
       "id": "EV-6249564cff324a0e",
       "dataDate": "2026-08-06",
       "date": "2026-08-06",
@@ -135435,6 +136302,104 @@
       ],
       "sourceUrl": "https://ithome.com/0/986/268.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-099c1bce0a50965d",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-05",
+      "updatedDate": "2026-08-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AMD、超微与Spectro Cloud推出交钥匙解决方案，助力企业AI编码规模化扩展",
+      "originalTitle": "AMD, Supermicro and Spectro Cloud Launch Turnkey Solution to Scale Enterprise AI Coding - AMD Newsroom",
+      "subject": "AMD, Supermicro and Spectro Cloud",
+      "action": "Launch",
+      "object": "Turnkey Solution to Scale Enterprise AI Coding - AMD Newsroom",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-d4d4a9397323e39a",
+        "EN-c12965afdaa87ea4",
+        "EN-b2f27c2f4827a3d0",
+        "EN-64bcc38de2b7b866"
+      ],
+      "entityNames": [
+        "AMD",
+        "Spectro Cloud",
+        "Newsroom",
+        "Turnkey Solution",
+        "Scale Enterprise AI Coding"
+      ],
+      "productName": "Newsroom",
+      "products": [
+        {
+          "name": "Newsroom",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Turnkey Solution",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Scale Enterprise AI Coding",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://newsroom.amd.com/news/amd-supermicro-and-spectro-cloud-launch-turnkey-solution-to-scale-enterprise-ai-coding",
+      "publisher": "newsroom.amd.com"
     },
     {
       "id": "EV-10c4f4db6c3f2d72",
@@ -223324,6 +224289,258 @@
       ],
       "sourceUrl": "https://simonwillison.net/2026/Jul/20/sam-altman",
       "publisher": "Simon Willison 博客"
+    },
+    {
+      "id": "EV-4e3e9b543127b55a",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-07",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Databricks 发布 OfficeQA Pro V2：面向企业落地推理的新基准",
+      "originalTitle": "",
+      "subject": "Databricks",
+      "action": "发布 OfficeQA Pro V2：面向企业落地推理的新基准",
+      "object": "Databricks 发布 OfficeQA Pro V2：面向企业落地推理的新基准",
+      "metrics": [],
+      "locations": [
+        "United States",
+        "U.S."
+      ],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-2dc010636b9dce91"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-2dc010636b9dce91"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-2dc010636b9dce91"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-2dc010636b9dce91",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-2b6e51bec93e86c1",
+        "EN-45f63fb3ca79571b",
+        "EN-d9a8195070f80de9"
+      ],
+      "entityNames": [
+        "Databricks",
+        "OpenAI",
+        "Anthropic",
+        "Google DeepMind",
+        "OfficeQA Pro V2",
+        "Pro V2"
+      ],
+      "productName": "OfficeQA Pro V2",
+      "products": [
+        {
+          "name": "OfficeQA Pro V2",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Databricks"
+          ]
+        },
+        {
+          "name": "Pro V2",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Databricks"
+          ]
+        }
+      ],
+      "sourceUrl": "https://databricks.com/blog/introducing-officeqa-pro-v2-new-benchmark-enterprise-grounded-reasoning",
+      "publisher": "Databricks：Blog（RSS）"
+    },
+    {
+      "id": "EV-8680757a0026461d",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-07",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "效力 27 年后谷歌首席科学家迪恩离职创立 Discovery Loop，要加速 AI 前沿发现",
+      "originalTitle": "",
+      "subject": "效力 27 年后谷歌首席科学家迪恩",
+      "action": "离职",
+      "object": "创立 Discovery Loop，要加速 AI 前沿发现",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-2b6e51bec93e86c1"
+      ],
+      "entityNames": [
+        "Google",
+        "Google DeepMind"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/986/779.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-248e01495eb582ed",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-06",
+      "updatedDate": "2026-08-07",
+      "eventType": "organization_restructuring",
+      "eventTypeLabel": "组织重组",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "谷歌重大AI重组背后的混乱政治",
+      "originalTitle": "The messy politics behind Google’s big AI shakeup",
+      "subject": "Demis Hassabis",
+      "action": "organization_restructuring",
+      "object": "DeepMind day-to-day operations",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-765cc641dc299fb5",
+        "EN-bbdefa2950f49882",
+        "EN-2b6e51bec93e86c1"
+      ],
+      "entityNames": [
+        "Demis Hassabis",
+        "Google",
+        "Google DeepMind"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/tech/976108/google-ai-leadership-shakeup-jeff-dean-demis-hassabis-deepmind",
+      "publisher": "The Verge AI"
+    },
+    {
+      "id": "EV-e07d82ffbad83150",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-06",
+      "updatedDate": "2026-08-07",
+      "eventType": "lawsuit_settlement",
+      "eventTypeLabel": "诉讼与和解",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI称苹果的商业机密诉讼“烂到骨子里”",
+      "originalTitle": "OpenAI says Apple’s trade secrets lawsuit is ‘rotten to its core’",
+      "subject": "OpenAI says Apple’s trade secrets",
+      "action": "lawsuit",
+      "object": "is ‘rotten to its core’",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-9dc14a21d26ac670",
+        "EN-7d3194f79e645c42",
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "entityNames": [
+        "OpenAI says Apple’s trade secrets",
+        "OpenAI",
+        "Apple"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/tech/976042/openai-apple-trade-secrets-lawsuit-dismissal-request",
+      "publisher": "The Verge AI"
     },
     {
       "id": "EV-2321e89fad893290",

@@ -2,48 +2,47 @@
   "meta": {
     "version": "COLLECTION-TELEMETRY-V1.0",
     "ops_version": "OPS-V2.0.0-v4-telemetry",
-    "data_date": "2026-08-06",
-    "generated_at": "2026-08-06T01:18:25.050Z",
+    "data_date": "2026-08-07",
+    "generated_at": "2026-08-07T00:27:50.727Z",
     "scope": "OPS",
     "canonical_writeback": false,
     "source_of_truth": "Data Center V4 manifest and integrity gate"
   },
   "collection": {
     "discovered": 290,
-    "capture_succeeded": 245,
-    "capture_failed": 3,
-    "raw_documents": 245
+    "capture_succeeded": 258,
+    "capture_failed": 1,
+    "raw_documents": 258
   },
   "fact_build": {
-    "accepted_claims": 70,
+    "accepted_claims": 45,
     "rejected_claims": 0,
-    "accepted": 70,
+    "accepted": 45,
     "rejected": 0,
-    "pending_claims": 4,
-    "canonical_events": 23,
-    "entities": 27,
-    "relationships": 74,
+    "pending_claims": 5,
+    "canonical_events": 20,
+    "entities": 36,
+    "relationships": 50,
     "conflicts": 0,
-    "qa_queue": 223,
+    "qa_queue": 238,
     "qa_by_status": {
-      "review_optional": 204,
-      "open": 19
+      "review_optional": 221,
+      "open": 17
     }
   },
   "v4_gate": {
     "status": "passed",
-    "manifest_date": "2026-08-06",
-    "gate_date": "2026-08-06",
+    "manifest_date": "2026-08-07",
+    "gate_date": "2026-08-07",
     "failures": [],
     "warnings": [
-      "No source-bounded FDE projection was produced.",
       "No source-bounded hardware projection was produced."
     ]
   },
   "application_projection": {
     "opportunity_map": "passed",
     "trend_radar": "passed",
-    "funding_insights": "passed",
+    "funding_insights": "failed",
     "fde_hardware_sync": "passed"
   },
   "publication": {
@@ -56,13 +55,13 @@
       "status": "partial",
       "counts": {
         "discovered": 290,
-        "capture_succeeded": 245,
-        "capture_failed": 3,
-        "raw_documents": 245
+        "capture_succeeded": 258,
+        "capture_failed": 1,
+        "raw_documents": 258
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-08-06/manifest.json",
-        "agent-workflow/reports/2026-08-06-guanlan-daily-monitor-log.md"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-08-07/manifest.json",
+        "agent-workflow/reports/2026-08-07-guanlan-daily-monitor-log.md"
       ]
     },
     {
@@ -70,34 +69,34 @@
       "label": "事实构建",
       "status": "passed",
       "counts": {
-        "accepted_claims": 70,
+        "accepted_claims": 45,
         "rejected_claims": 0,
-        "accepted": 70,
+        "accepted": 45,
         "rejected": 0,
-        "pending_claims": 4,
-        "canonical_events": 23,
-        "entities": 27,
-        "relationships": 74,
+        "pending_claims": 5,
+        "canonical_events": 20,
+        "entities": 36,
+        "relationships": 50,
         "conflicts": 0,
-        "qa_queue": 223
+        "qa_queue": 238
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-08-06/manifest.json",
-        "agent-workflow/reports/2026-08-06-data-center-v4-integrity-gate.json"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-08-07/manifest.json",
+        "agent-workflow/reports/2026-08-07-data-center-v4-integrity-gate.json"
       ]
     },
     {
       "id": "application_projection",
       "label": "应用投影",
-      "status": "passed",
+      "status": "partial",
       "counts": {
         "opportunity_map": "passed",
         "trend_radar": "passed",
-        "funding_insights": "passed",
+        "funding_insights": "failed",
         "fde_hardware_sync": "passed"
       },
       "evidence": [
-        "agent-workflow/reports/2026-08-06-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-08-07-persistent-asset-manifest.json"
       ]
     },
     {
@@ -108,7 +107,7 @@
         "v4_bundle_ready": true
       },
       "evidence": [
-        "agent-workflow/reports/2026-08-06-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-08-07-persistent-asset-manifest.json"
       ]
     }
   ],

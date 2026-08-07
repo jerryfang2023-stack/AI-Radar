@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-06T01:17:24.350Z",
-    "latestDataDate": "2026-08-06",
-    "currentDate": "2026-08-06",
-    "eventCount": 1888,
+    "generatedAt": "2026-08-07T00:25:47.516Z",
+    "latestDataDate": "2026-08-07",
+    "currentDate": "2026-08-07",
+    "eventCount": 1904,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-028d45646416416c",
       "EV-d5f276ad6b2ac9de",
       "EV-53f4f2a34b3ce1b4"
     ],
@@ -29,10 +30,12 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-17",
-    "lastSeen": "2026-07-16",
+    "lastSeen": "2026-08-07",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-028d45646416416c"
+      ],
       "deployments": [],
       "partnerships": [
         "EV-53f4f2a34b3ce1b4",
@@ -44,6 +47,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-028d45646416416c",
+        "dataDate": "2026-08-07",
+        "date": "2026-08-07",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Rubrik：面向安全生产部署的企业AI平台集成 - ZenML LLMOps数据库",
+        "displayTags": [],
+        "entityIds": [
+          "EN-4094a2b7125c7564"
+        ]
+      },
       {
         "id": "EV-53f4f2a34b3ce1b4",
         "dataDate": "2026-07-16",

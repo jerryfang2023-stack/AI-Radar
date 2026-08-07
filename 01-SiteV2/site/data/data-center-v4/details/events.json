@@ -5,13 +5,494 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-06T04:35:01.974Z",
-    "latestDataDate": "2026-08-06",
-    "currentDate": "2026-08-06",
-    "eventCount": 1888,
+    "generatedAt": "2026-08-07T00:25:47.516Z",
+    "latestDataDate": "2026-08-07",
+    "currentDate": "2026-08-07",
+    "eventCount": 1904,
     "quarantinedEventCount": 16
   },
   "events": [
+    {
+      "id": "EV-028d45646416416c",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-07",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Rubrik：面向安全生产部署的企业AI平台集成 - ZenML LLMOps数据库",
+      "originalTitle": "Rubrik: Enterprise AI Platform Integration for Secure Production Deployment - ZenML LLMOps Database",
+      "subject": "Rubrik",
+      "action": "acquisition",
+      "object": "Predibase",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-4094a2b7125c7564"
+      ],
+      "entityNames": [
+        "Rubrik"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-5a73d0df7a26ecf5",
+          "subject": "Rubrik",
+          "object": "Predibase",
+          "quote": "Predibase, a specialized LLMOps platform focused on model training and serving, was acquired by Rubrik, an established data security and governance company."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-5bd2ea84aa683ac5",
+          "publisher": "zenml.io",
+          "url": "https://zenml.io/llmops-database/enterprise-ai-platform-integration-for-secure-production-deployment"
+        }
+      ],
+      "sourceUrl": "https://zenml.io/llmops-database/enterprise-ai-platform-integration-for-secure-production-deployment",
+      "publisher": "zenml.io",
+      "sourceExcerpt": "Predibase, a specialized LLMOps platform focused on model training and serving, was acquired by Rubrik, an established data security and governance company."
+    },
+    {
+      "id": "EV-83728e3b6c7736ce",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-07",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "AMD 收购 Taalas，通过将模型蚀刻到硅片中提升推理性能",
+      "originalTitle": "",
+      "subject": "AMD",
+      "action": "收购",
+      "object": "Taalas，通过将模型蚀刻到硅片中提升推理性能",
+      "metrics": [
+        "$20 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-240389f4b730bad4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "AMD",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-36abae0079206f81",
+          "subject": "AMD",
+          "object": "Taalas，通过将模型蚀刻到硅片中提升推理性能",
+          "quote": "AMD acquires AI chip startup Taalas to boost inference performance by etching models into silicon"
+        },
+        {
+          "id": "CL-e3abef838479b55a",
+          "subject": "AMD",
+          "object": "Taalas，通过将模型蚀刻到硅片中提升推理性能",
+          "quote": "In AMD’s latest bid to upset Nvidia's dominance in AI hardware, the House of Zen has acquired AI chip company Taalas, which bakes model weights directly into silicon in a process that promises to boost inference performance by an order of magnitude or more."
+        },
+        {
+          "id": "CL-d6b2a9119f2aceef",
+          "subject": "AMD",
+          "object": "Taalas，通过将模型蚀刻到硅片中提升推理性能",
+          "quote": "The deal, announced at market close on Thursday, appears to be framed in much the same context as Nvidia’s $20 billion licensing deal with Groq last December: make high-performance “premium” inference services prized for AI agents, like code assistants, faster and cheaper to run. AMD didn’t disclose the terms of the deal, but from what we understand, this is an actual acquisition rather than an acquihire."
+        },
+        {
+          "id": "CL-ba6e672b6d2dd518",
+          "subject": "AMD",
+          "object": "Taalas，通过将模型蚀刻到硅片中提升推理性能",
+          "quote": "AMD acquires AI chip startup Taalas to boost inference performance by etching models into silicon"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-2d6a3536361ff1c8",
+          "publisher": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "url": "https://theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344"
+        }
+      ],
+      "sourceUrl": "https://theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "sourceExcerpt": "AMD acquires AI chip startup Taalas to boost inference performance by etching models into silicon"
+    },
+    {
+      "id": "EV-ef2ac2c9b425491c",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-07",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "EnCharge AI：融资、团队与投资者",
+      "originalTitle": "EnCharge AI: Funding, Team & Investors | Startup Intros",
+      "subject": "EnCharge AI",
+      "action": "funding",
+      "object": "$21.7 million Series A funding round",
+      "metrics": [
+        "$21.7 million",
+        "$100.0M",
+        "$18.6M"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-adda212f0afa4781",
+        "EN-3ef2a26a758aec2f"
+      ],
+      "entityNames": [
+        "EnCharge AI",
+        "Mar 6"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-489d7e823dcac0d3",
+          "subject": "EnCharge AI",
+          "object": "$21.7 million Series A funding round",
+          "quote": "a $21.7 million Series A funding round completed in December 2022"
+        },
+        {
+          "id": "CL-a1ec9ab246edb6bd",
+          "subject": "EnCharge AI",
+          "object": "$100.0M Series B",
+          "quote": "Most recently, it raised $100.0M Series B in February 2025."
+        },
+        {
+          "id": "CL-80c7558ccbddf7d3",
+          "subject": "EnCharge AI",
+          "object": "$18.6M Grant",
+          "quote": "Mar 6, 2024 $18.6M Grant"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-45f91a2bf889316d",
+          "publisher": "startupintros.com",
+          "url": "https://startupintros.com/orgs/encharge-ai"
+        }
+      ],
+      "sourceUrl": "https://startupintros.com/orgs/encharge-ai",
+      "publisher": "startupintros.com",
+      "sourceExcerpt": "a $21.7 million Series A funding round completed in December 2022"
+    },
+    {
+      "id": "EV-34bc7a4ef57789b8",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-06",
+      "updatedDate": "2026-08-07",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Lumilens 携超9亿美元融资走出隐身模式，破解数据中心AI连接瓶颈",
+      "originalTitle": "Lumilens Emerges from Stealth with More Than $900 Million in Funding to Break AI’s Connectivity Bottlenecks in the Data Center | FinancialContent",
+      "subject": "Lumilens",
+      "action": "funding",
+      "object": "more than $700 million in new funding co-led by Atreides Management, Bain Capital Ventures, Meritech, Seligman Ventures, and Spark Capital",
+      "metrics": [
+        "$700 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-a7e079ed603b3436"
+      ],
+      "entityNames": [
+        "Lumilens"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-aa98bbee5b0aa4db",
+          "subject": "Lumilens",
+          "object": "more than $700 million in new funding co-led by Atreides Management, Bain Capital Ventures, Meritech, Seligman Ventures, and Spark Capital",
+          "quote": "announced more than $700 million in new funding co-led by Atreides Management , Bain Capital Ventures , Meritech , Seligman Ventures , and Spark Capital"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-40ceba187d52826e",
+          "publisher": "financialcontent.com",
+          "url": "https://financialcontent.com/article/bizwire-2026-8-6-lumilens-emerges-from-stealth-with-more-than-900-million-in-funding-to-break-ais-connectivity-bottlenecks-in-the-data-center"
+        }
+      ],
+      "sourceUrl": "https://financialcontent.com/article/bizwire-2026-8-6-lumilens-emerges-from-stealth-with-more-than-900-million-in-funding-to-break-ais-connectivity-bottlenecks-in-the-data-center",
+      "publisher": "financialcontent.com",
+      "sourceExcerpt": "announced more than $700 million in new funding co-led by Atreides Management , Bain Capital Ventures , Meritech , Seligman Ventures , and Spark Capital"
+    },
+    {
+      "id": "EV-933b02f5736a0366",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-06",
+      "updatedDate": "2026-08-07",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "前Spotify员工筹集1000万美元，将推荐背后的AI引入电商",
+      "originalTitle": "Ex-Spotify employees raise $10M to bring the AI behind its recommendations to e-commerce",
+      "subject": "Ex-Spotify employees",
+      "action": "raise",
+      "object": "$10M to bring the AI behind its recommendations to e-commerce",
+      "metrics": [
+        "$10M",
+        "$10 million",
+        "90%",
+        "800 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-13a7f8fe8140462d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-13a7f8fe8140462d",
+        "EN-2b78da3dc866654e",
+        "EN-ed5eb9a37e2d8231",
+        "EN-8532660d993674b1"
+      ],
+      "entityNames": [
+        "Ex-Spotify employees",
+        "Spotify",
+        "Now",
+        "Sidd Motwani"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-ee5c9c40cf673bb7",
+          "subject": "Ex-Spotify employees",
+          "object": "$10M to bring the AI behind its recommendations to e-commerce",
+          "quote": "Ex-Spotify employees raise $10M to bring the AI behind its recommendations to e-commerce"
+        },
+        {
+          "id": "CL-aae2f7be56b6cc07",
+          "subject": "Ex-Spotify employees",
+          "object": "$10M to bring the AI behind its recommendations to e-commerce",
+          "quote": "Now, the three are bringing a similar system to e-commerce with their new startup, Malachyte . The company on Thursday said it had raised $10 million in seed funding to scale distribution and hire more product and commercial leaders."
+        },
+        {
+          "id": "CL-c2934f41c019d0f8",
+          "subject": "Ex-Spotify employees",
+          "object": "$10M to bring the AI behind its recommendations to e-commerce",
+          "quote": "6:00 AM PDT · August 6, 2026"
+        },
+        {
+          "id": "CL-8d9df7db26bebf03",
+          "subject": "Ex-Spotify employees",
+          "object": "$10M to bring the AI behind its recommendations to e-commerce",
+          "quote": "Sidd Motwani, Ian Anderson, and Shivaditya Sinha spent years building the behavioral intelligence infrastructure behind Spotify’s recommendation engine. Called Vector AI, the system is designed to predict a person’s intent and next actions instead of relying only on their past behavior. It powers about 90% of Spotify’s recommendations to its 800 million users."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-4c9880bfce830220",
+          "publisher": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/08/06/ex-spotify-employees-raise-10m-to-bring-the-ai-behind-its-recommendations-to-e-commerce"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/06/ex-spotify-employees-raise-10m-to-bring-the-ai-behind-its-recommendations-to-e-commerce",
+      "publisher": "TechCrunch AI",
+      "sourceExcerpt": "Ex-Spotify employees raise $10M to bring the AI behind its recommendations to e-commerce"
+    },
     {
       "id": "EV-60f219702a66bf38",
       "dataDate": "2026-08-06",
@@ -89950,20 +90431,20 @@
     },
     {
       "id": "EV-eb4858e820bf9435",
-      "dataDate": "2026-07-23",
+      "dataDate": "2026-08-07",
       "date": "2026-05-29",
-      "updatedDate": "2026-07-23",
+      "updatedDate": "2026-08-07",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Drafted 获 1600 万美元融资，以 AI 重塑家居设计",
-      "originalTitle": "Drafted Secures $16M in Funding to Reshape Home Design With AI",
+      "title": "Drafted 获1600万美元融资，以AI重塑家居设计",
+      "originalTitle": "Drafted Secures $16M in Funding to Reshape Home Design With AI - Business Insider",
       "subject": "Drafted",
       "action": "Secures",
-      "object": "$16M in Funding to Reshape Home Design With AI",
+      "object": "$16M in Funding to Reshape Home Design With AI - Business Insider",
       "metrics": [
         "$16 million",
         "$1.65 million",
@@ -90247,42 +90728,44 @@
         }
       ],
       "entityIds": [
-        "EN-094b7ade939cad4d"
+        "EN-094b7ade939cad4d",
+        "EN-c9022680f888674e"
       ],
       "entityNames": [
-        "Drafted"
+        "Drafted",
+        "People"
       ],
       "productName": "",
       "products": [],
       "claims": [
         {
-          "id": "CL-95af873e5051a5b3",
+          "id": "CL-8ba401d9c20aaf3b",
           "subject": "Drafted",
-          "object": "$16M in Funding to Reshape Home Design With AI",
+          "object": "$16M in Funding to Reshape Home Design With AI - Business Insider",
           "quote": "That's the idea behind Drafted, a nine-month-old startup that uses AI to turn home-design ideas into floor plans and 3D layouts. Founded by Nick Donahue, Drafted has raised a $16 million seed round from investors including Buckley Ventures , Y Combinator , Pinterest cofounder Ben Silbermann , and OneRepublic front man Ryan Tedder. Donahue, the CEO, declined to share the company's valuation."
         },
         {
-          "id": "CL-b3850f8f0f826376",
+          "id": "CL-26431cc47c4f1e3e",
           "subject": "Drafted",
-          "object": "$16M in Funding to Reshape Home Design With AI",
+          "object": "$16M in Funding to Reshape Home Design With AI - Business Insider",
           "quote": "Drafted previously raised $1.65 million at a $35 million valuation from investors including Patrick Collison and Jack Altman."
         },
         {
-          "id": "CL-13126e0fcd738eb7",
+          "id": "CL-72f44a15b221737f",
           "subject": "Drafted",
-          "object": "$16M in Funding to Reshape Home Design With AI",
+          "object": "$16M in Funding to Reshape Home Design With AI - Business Insider",
           "quote": "Drafted is not his first attempt to make home design easier. Donahue previously ran Atmos, a startup that used technology to streamline the custom home design process. The company operated for seven years and raised about $20 million from investors, including Y Combinator, Khosla Ventures, and Sam Altman. Donahue shut it down in early 2025 as high interest rates made it harder for customers to afford the homes they had spent months designing."
         },
         {
-          "id": "CL-75f8af9c356a4744",
+          "id": "CL-0fbe6f842afc74f3",
           "subject": "Drafted",
-          "object": "$16M in Funding to Reshape Home Design With AI",
+          "object": "$16M in Funding to Reshape Home Design With AI - Business Insider",
           "quote": "People have vibe-coded apps for all sorts of tasks, from nutrition planning to babysitting gigs to grocery shopping . Soon, you may be able to vibe-code your home design."
         }
       ],
       "sources": [
         {
-          "id": "SA-b44a05a5e68966ee",
+          "id": "SA-fdb2ac62a07a7a2c",
           "publisher": "businessinsider.com",
           "url": "https://businessinsider.com/drafted-16m-funding-reshape-home-design-with-ai-2026-5"
         }
@@ -111662,6 +112145,146 @@
       "sourceExcerpt": "Press release: New Conversational AI Company Front AI Raises €500k in Seed Funding"
     },
     {
+      "id": "EV-d50bfbdb31595942",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-07",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Lemvigh-Müller：以智能体AI打造批发新标准，实现快速无接触采购",
+      "originalTitle": "Lemvigh-Müller: Casting a new wholesale standard with agentic AI for fast, touchless procurement",
+      "subject": "Lemvigh-Müller A/S",
+      "action": "deployment",
+      "object": "multi-agent workflow with SAP Cloud ERP Private, SAP AI Launchpad, and SAP AI Core",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-9f2432dcde6dc59a"
+      ],
+      "entityNames": [
+        "Lemvigh-Müller A/S"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-36d74cf83e164ed7",
+          "subject": "Lemvigh-Müller A/S",
+          "object": "multi-agent workflow with SAP Cloud ERP Private, SAP AI Launchpad, and SAP AI Core",
+          "quote": "the company deployed a multi-agent workflow with an SAP Cloud ERP Private solution, SAP AI Launchpad, and SAP AI Core infrastructure"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-08026f3936a5e736",
+          "publisher": "sap.com",
+          "url": "https://sap.com/asset/dynamic/2026/06/be80dd33-587f-0010-bca6-c68f7e60039b.html"
+        }
+      ],
+      "sourceUrl": "https://sap.com/asset/dynamic/2026/06/be80dd33-587f-0010-bca6-c68f7e60039b.html",
+      "publisher": "sap.com",
+      "sourceExcerpt": "the company deployed a multi-agent workflow with an SAP Cloud ERP Private solution, SAP AI Launchpad, and SAP AI Core infrastructure"
+    },
+    {
+      "id": "EV-e65f17f35ef7f1a3",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-06",
+      "updatedDate": "2026-08-07",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "withdrawn",
+      "statusLabel": "已撤回",
+      "publicationStatus": "withdrawn",
+      "title": "上线仅 1 周，微软撤回 M365 Copilot 的\"域名排除\"功能",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "上线",
+      "object": "仅 1 周，微软撤回 M365 Copilot 的\"域名排除\"功能",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-a67176df0c37c6f0",
+          "subject": "undisclosed_subject",
+          "object": "仅 1 周，微软撤回 M365 Copilot 的\"域名排除\"功能",
+          "quote": "上线仅 1 周，微软撤回 M365 Copilot 的“AI 引用黑名单”功能 - IT之家"
+        },
+        {
+          "id": "CL-bd29f7a02a66f9ca",
+          "subject": "undisclosed_subject",
+          "object": "仅 1 周，微软撤回 M365 Copilot 的\"域名排除\"功能",
+          "quote": "上线仅 1 周，微软撤回 M365 Copilot 的“AI 引用黑名单”功能"
+        },
+        {
+          "id": "CL-87d9dfb99bfc2f9c",
+          "subject": "undisclosed_subject",
+          "object": "仅 1 周，微软撤回 M365 Copilot 的\"域名排除\"功能",
+          "quote": "IT之家 8 月 6 日消息，科技媒体 NeoWin 昨日（8 月 5 日）发布博文，报道称仅上线 1 周时间（7 月 29 日上线）， 微软撤回适用于 Microsoft 365 Copilot 的“域名排除”（Domain Exclusion）功能。"
+        },
+        {
+          "id": "CL-a9f5686743940577",
+          "subject": "undisclosed_subject",
+          "object": "仅 1 周，微软撤回 M365 Copilot 的\"域名排除\"功能",
+          "quote": "IT之家援引博文介绍，“域名排除”是面向 IT 管理员的控制功能，用于把特定域名加入排除列表，限制 Microsoft 365 Copilot 在网络信息中引用这些外部来源，可以通过 PowerShell 脚本配置最多 1000 个要排除的域名。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-c660979b43931459",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/986/342.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/986/342.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "上线仅 1 周，微软撤回 M365 Copilot 的“AI 引用黑名单”功能 - IT之家"
+    },
+    {
       "id": "EV-acddfa62aabb004f",
       "dataDate": "2026-08-05",
       "date": "2026-08-05",
@@ -111794,6 +112417,104 @@
       "sourceUrl": "https://eloquentai.co/resources/deploying-and-scaling-enterprise-ai-agents",
       "publisher": "eloquentai.co",
       "sourceExcerpt": "Deploying and Scaling Enterprise AI Agents — Eloquent AI"
+    },
+    {
+      "id": "EV-7dcbf6eab4339b22",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-04",
+      "updatedDate": "2026-08-07",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "Anthropic 与 AI 云初创公司 Volta 签署 100 亿美元协议",
+      "originalTitle": "Anthropic signs $10B deal with AI cloud startup Volta | TechCrunch",
+      "subject": "Anthropic",
+      "action": "procurement_contract",
+      "object": "Volta",
+      "metrics": [
+        "$10B"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-c70eca6b0f88f44d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-d06045c4a2dc02a4",
+          "subject": "Anthropic",
+          "object": "Volta",
+          "quote": "Anthropic signs $10B deal with AI cloud startup Volta"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-e980b30788e21c9a",
+          "publisher": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta",
+      "publisher": "techcrunch.com",
+      "sourceExcerpt": "Anthropic signs $10B deal with AI cloud startup Volta"
     },
     {
       "id": "EV-5bbc509a032b8309",
@@ -112047,104 +112768,6 @@
       "sourceUrl": "https://qbitai.com/2026/08/465785.html",
       "publisher": "量子位",
       "sourceExcerpt": "资本重仓端侧物理AI：前海母基金数亿元押注，Om AI联汇加速端侧AI商业化落地"
-    },
-    {
-      "id": "EV-7dcbf6eab4339b22",
-      "dataDate": "2026-08-05",
-      "date": "2026-08-04",
-      "updatedDate": "2026-08-05",
-      "eventType": "procurement_contract",
-      "eventTypeLabel": "采购合同",
-      "eventGroup": "商业合作",
-      "status": "rumored",
-      "statusLabel": "rumored",
-      "publicationStatus": "disputed",
-      "title": "Anthropic 与 AI 云初创公司 Volta 签署 100 亿美元算力协议",
-      "originalTitle": "",
-      "subject": "Anthropic",
-      "action": "procurement_contract",
-      "object": "Volta",
-      "metrics": [
-        "$10B"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "compute_cloud_service",
-            "name": "算力云服务",
-            "entityIds": [
-              "EN-c70eca6b0f88f44d"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "compute_cloud_service",
-          "name": "算力云服务",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "compute_cloud_service",
-          "name": "算力云服务",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-c70eca6b0f88f44d"
-      ],
-      "entityNames": [
-        "Anthropic"
-      ],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-746d8405095e418f",
-          "subject": "Anthropic",
-          "object": "Volta",
-          "quote": "Anthropic signs $10B deal with AI cloud startup Volta"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-ffbe06ff40704e17",
-          "publisher": "TechCrunch：AI（RSS）",
-          "url": "https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta"
-        }
-      ],
-      "sourceUrl": "https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta",
-      "publisher": "TechCrunch：AI（RSS）",
-      "sourceExcerpt": "Anthropic signs $10B deal with AI cloud startup Volta"
     },
     {
       "id": "EV-c25adb1398842ac9",
@@ -135230,6 +135853,130 @@
       "sourceExcerpt": "The General Services Administration has struck a new agentic artificial intelligence OneGov deal with CORAS"
     },
     {
+      "id": "EV-323d98437e42e8b3",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-07",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Kuehne+Nagel 与 HappyRobot 客户案例",
+      "originalTitle": "Kuehne+Nagel x HappyRobot Customer Story | HappyRobot",
+      "subject": "HappyRobot",
+      "action": "partnership",
+      "object": "Kuehne+Nagel",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-12bb49e1b12281f4"
+      ],
+      "entityNames": [
+        "HappyRobot"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-e20f7a49e0b8322f",
+          "subject": "HappyRobot",
+          "object": "Kuehne+Nagel",
+          "quote": "HappyRobot, the enterprise platform for AI workers in complex operational environments, and Kuehne+Nagel, one of the world's leading logistics providers, have entered a strategic partnership to deploy AI workers across Kuehne+Nagel's global Air Logistics division."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-ba31591f78df9868",
+          "publisher": "happyrobot.ai",
+          "url": "https://happyrobot.ai/customer-story/kuehne-nagel"
+        }
+      ],
+      "sourceUrl": "https://happyrobot.ai/customer-story/kuehne-nagel",
+      "publisher": "happyrobot.ai",
+      "sourceExcerpt": "HappyRobot, the enterprise platform for AI workers in complex operational environments, and Kuehne+Nagel, one of the world's leading logistics providers, have entered a strategic partnership to deploy AI workers across Kuehne+Nagel's global Air Logistics division."
+    },
+    {
+      "id": "EV-bfc1664d74f43fb3",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-06",
+      "updatedDate": "2026-08-07",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "独家：Mirendil签署超1亿美元Google Cloud协议，以扩展自我改进型AI",
+      "originalTitle": "Exclusive: Mirendil inks $100M+ Google Cloud deal to scale self-improving AI",
+      "subject": "Mirendil",
+      "action": "partnership",
+      "object": "Google Cloud",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-b81b59c4259c46d6",
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "Mirendil",
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-c873e4bed8230cf2",
+          "subject": "Mirendil",
+          "object": "Google Cloud",
+          "quote": "AI lab Mirendil has signed a multiyear partnership with Google Cloud to source compute capacity for its self-improving AI research"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-a5b84d10015ade74",
+          "publisher": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/08/06/exclusive-mirendil-inks-100m-google-cloud-deal-to-scale-self-improving-ai"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/06/exclusive-mirendil-inks-100m-google-cloud-deal-to-scale-self-improving-ai",
+      "publisher": "TechCrunch AI",
+      "sourceExcerpt": "AI lab Mirendil has signed a multiyear partnership with Google Cloud to source compute capacity for its self-improving AI research"
+    },
+    {
       "id": "EV-da148848ec026bdf",
       "dataDate": "2026-08-05",
       "date": "2026-08-04",
@@ -135349,9 +136096,9 @@
     },
     {
       "id": "EV-467539fe176a470e",
-      "dataDate": "2026-08-06",
+      "dataDate": "2026-08-07",
       "date": "2026-08-03",
-      "updatedDate": "2026-08-06",
+      "updatedDate": "2026-08-07",
       "eventType": "partnership",
       "eventTypeLabel": "合作",
       "eventGroup": "商业合作",
@@ -135394,7 +136141,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-f4745aaaaaf278c7",
+          "id": "CL-9762d696cba0c6cd",
           "subject": "Nvidia",
           "object": "SK Group",
           "quote": "On July 24, 2026, the chipmaker and South Korea’s SK Group unveiled a partnership Nvidia itself is calling worth more than $500 billion, tying Nvidia’s next-generation Vera Rubin chips directly to SK Hynix’s high-bandwidth memory production for years to come."
@@ -149296,66 +150043,6 @@
       "sourceExcerpt": "FuriosaAI partners with Broadcom to build next-generation inference platform for the Agentic Era"
     },
     {
-      "id": "EV-323d98437e42e8b3",
-      "dataDate": "2026-06-15",
-      "date": "2026-05-27",
-      "updatedDate": "2026-06-15",
-      "eventType": "partnership",
-      "eventTypeLabel": "合作",
-      "eventGroup": "商业合作",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Kuehne+Nagel 与 HappyRobot 客户案例",
-      "originalTitle": "Kuehne+Nagel x HappyRobot Customer Story | HappyRobot",
-      "subject": "HappyRobot",
-      "action": "partnership",
-      "object": "Kuehne+Nagel",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-12bb49e1b12281f4"
-      ],
-      "entityNames": [
-        "HappyRobot"
-      ],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-e4991c2a2bc2f07f",
-          "subject": "HappyRobot",
-          "object": "Kuehne+Nagel",
-          "quote": "HappyRobot and Kuehne+Nagel have entered a strategic partnership to deploy AI workers across Kuehne+Nagel's global Air Logistics division."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-badd0d8848d9d31e",
-          "publisher": "happyrobot.ai",
-          "url": "https://happyrobot.ai/customer-story/kuehne-nagel"
-        }
-      ],
-      "sourceUrl": "https://happyrobot.ai/customer-story/kuehne-nagel",
-      "publisher": "happyrobot.ai",
-      "sourceExcerpt": "HappyRobot and Kuehne+Nagel have entered a strategic partnership to deploy AI workers across Kuehne+Nagel's global Air Logistics division."
-    },
-    {
       "id": "EV-35be62272c77c556",
       "dataDate": "2026-05-22",
       "date": "2026-05-22",
@@ -150060,6 +150747,348 @@
       "sourceExcerpt": "Stellantis and Mistral AI Expand Their Collaboration to Accelerate Enterprise-Wide AI Adoption"
     },
     {
+      "id": "EV-1b5b1d3317c8f688",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-07",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "GPT-4.5 以来训练的最大模型，曝 OpenAI 最快下周推出 Astra AI 模型",
+      "originalTitle": "",
+      "subject": "GPT-4.5 以来训练的最大模型，曝 OpenAI 最快下周",
+      "action": "推出 Astra AI 模型",
+      "object": "GPT-4.5 以来训练的最大模型，曝 OpenAI 最快下周推出 Astra AI 模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-e77515a79af21a5b",
+        "EN-310c52cf9b5ca39b"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "GPT-4.5",
+        "Astra AI"
+      ],
+      "productName": "GPT-4.5",
+      "products": [
+        {
+          "name": "GPT-4.5",
+          "type": "模型",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        },
+        {
+          "name": "Astra AI",
+          "type": "模型",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-cee0f38e5d3cafd6",
+          "subject": "GPT-4.5 以来训练的最大模型，曝 OpenAI 最快下周",
+          "object": "GPT-4.5 以来训练的最大模型，曝 OpenAI 最快下周推出 Astra AI 模型 - IT之家",
+          "quote": "GPT-4.5 以来训练的最大模型，曝 OpenAI 最快下周推出 Astra AI 模型 - IT之家"
+        },
+        {
+          "id": "CL-5d29f3cbfffc40a6",
+          "subject": "GPT-4.5 以来训练的最大模型，曝 OpenAI 最快下周",
+          "object": "GPT-4.5 以来训练的最大模型，曝 OpenAI 最快下周推出 Astra AI 模型",
+          "quote": "GPT-4.5 以来训练的最大模型，曝 OpenAI 最快下周推出 Astra AI 模型"
+        },
+        {
+          "id": "CL-d133ac0047f3b443",
+          "subject": "GPT-4.5 以来训练的最大模型，曝 OpenAI 最快下周",
+          "object": "IT之家 8 月 7 日消息，消息源 @synthwavedd 昨日（8 月 6 日）在 X 平台发布推文， 爆料称 OpenAI 目标下周发布 Astra 模型，内部代号为 mewfour。",
+          "quote": "IT之家 8 月 7 日消息，消息源 @synthwavedd 昨日（8 月 6 日）在 X 平台发布推文， 爆料称 OpenAI 目标下周发布 Astra 模型，内部代号为 mewfour。"
+        },
+        {
+          "id": "CL-c84aa60d634ff7d7",
+          "subject": "GPT-4.5 以来训练的最大模型，曝 OpenAI 最快下周",
+          "object": "消息源称该模型是 OpenAI 公司全新预训练模型，也是 OpenAI 自 GPT-4.5 以来训练的最大模型。",
+          "quote": "消息源称该模型是 OpenAI 公司全新预训练模型，也是 OpenAI 自 GPT-4.5 以来训练的最大模型。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-35c0d40b6a8b8556",
+          "publisher": "IT之家",
+          "url": "https://ithome.com/0/986/789.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/986/789.htm",
+      "publisher": "IT之家",
+      "sourceExcerpt": "GPT-4.5 以来训练的最大模型，曝 OpenAI 最快下周推出 Astra AI 模型 - IT之家"
+    },
+    {
+      "id": "EV-8de21f5aa53242f1",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-07",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "OpenAI 将 ChatGPT 免费用户默认模型升级为 GPT-5.6 Luna，Plus 和 Pro 用户更新 GPT-5.6 Sol 聊天界面",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "model_release",
+      "object": "GPT-5.6 Luna",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-8e0887f7b480a2d1",
+        "EN-d1ad14d4ad57d207"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "GPT-5.6 Luna",
+        "ChatGPT"
+      ],
+      "productName": "GPT-5.6 Luna",
+      "products": [
+        {
+          "name": "GPT-5.6 Luna",
+          "type": "模型",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        },
+        {
+          "name": "ChatGPT",
+          "type": "模型",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-b6a9710af14d8d81",
+          "subject": "OpenAI",
+          "object": "GPT-5.6 Luna",
+          "quote": "OpenAI 已将默认模型升级为 GPT-5.6 Luna"
+        },
+        {
+          "id": "CL-d735b5bd38578185",
+          "subject": "OpenAI",
+          "object": "GPT-5.6 Sol",
+          "quote": "OpenAI 更新了 聊天界面中的 GPT-5.6 Sol 模型"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-e5b238d7a749d3c5",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/986/776.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/986/776.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "OpenAI 已将默认模型升级为 GPT-5.6 Luna"
+    },
+    {
+      "id": "EV-99005688ec16c082",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Cloudflare 发布 Kitesurf：完全运行在 Workers V8 隔离环境中的智能体优先浏览器",
+      "originalTitle": "",
+      "subject": "Cloudflare",
+      "action": "发布",
+      "object": "Kitesurf：完全运行在 Workers V8 隔离环境中的智能体优先浏览器",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-738e22f0acab814c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-738e22f0acab814c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-738e22f0acab814c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-738e22f0acab814c",
+        "EN-0bbbffe05960c1bb"
+      ],
+      "entityNames": [
+        "Cloudflare",
+        "Kitesurf"
+      ],
+      "productName": "Kitesurf",
+      "products": [
+        {
+          "name": "Kitesurf",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-474c6a6154ec87f7",
+          "subject": "Cloudflare",
+          "object": "Kitesurf：完全运行在 Workers V8 隔离环境中的智能体优先浏览器",
+          "quote": "Cloudflare has released Kitesurf , a stateless web browser built specifically for AI agents. It runs entirely in V8 isolates on Cloudflare Workers , with no Chromium underneath. Browser engines like Chromium were built for humans, and their memory and compute overhead makes one-browser-per-agent prohibitively expensive. Agents do not need tabs, extensions, or pixel-perfect 60-fps rendering. They need machine-readable content, low token overhead, scalability, and isolation against threats like prompt injection. Kitesurf drops the human-facing parts and keeps what models use. It already passes 215,000+ Web Platform Tests and is available now, free while in beta, through Browser Run ."
+        },
+        {
+          "id": "CL-8dcf8f1491a03877",
+          "subject": "Cloudflare",
+          "object": "Kitesurf：完全运行在 Workers V8 隔离环境中的智能体优先浏览器",
+          "quote": "Existing Puppeteer , Playwright , chrome-remote-interface, and MCP clients work unchanged. Add browser=kitesurf to the Browser Run CDP endpoint or Quick Actions API. A public playground with injected Chrome DevTools shows DOM, console, network, and per-isolate WebAssembly memory. Kitesurf already renders TodoMVC (vanilla, React, Vue, Angular, Preact), Wikipedia, and Hacker News. Cloudflare plans to open source Kitesurf so customers can deploy their own instances."
+        },
+        {
+          "id": "CL-907daee15d985e7f",
+          "subject": "Cloudflare",
+          "object": "Kitesurf：完全运行在 Workers V8 隔离环境中的智能体优先浏览器",
+          "quote": "Yes, as a free beta in Browser Run , behind per-account limits . Treat it as production-adjacent: strong for compatible sites and one-shot tasks, with Chromium as the fallback for complex pages. Adoption cost is minimal — existing Puppeteer, Playwright, and MCP clients work by adding a single browser=kitesurf parameter."
+        },
+        {
+          "id": "CL-2b4cbe1bc0a329bb",
+          "subject": "Cloudflare",
+          "object": "Kitesurf：完全运行在 Workers V8 隔离环境中的智能体优先浏览器",
+          "quote": "Company levels: Startups and indie agent builders benefit most from the 3–7× lower CPU and memory footprint. Mid-market SaaS and enterprises already on Cloudflare Workers can switch selected workloads with one parameter."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-1682e354e707b01e",
+          "publisher": "MarkTechPost（RSS）",
+          "url": "https://marktechpost.com/2026/08/06/cloudflare-introduces-kitesurf-an-agent-first-web-browser-that-runs-entirely-in-v8-isolates-on-cloudflare-workers"
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/08/06/cloudflare-introduces-kitesurf-an-agent-first-web-browser-that-runs-entirely-in-v8-isolates-on-cloudflare-workers",
+      "publisher": "MarkTechPost（RSS）",
+      "sourceExcerpt": "Cloudflare has released Kitesurf , a stateless web browser built specifically for AI agents. It runs entirely in V8 isolates on Cloudflare Workers , with no Chromium underneath. Browser engines like Chromium were built for humans, and their memory and compute overhead makes one-browser-per-agent prohibitively expensive. Agents do not need tabs, extensions, or pixel-perfect 60-fps rendering. They need machine-readable content, low token overhead, scalability, and isolation against threats like prompt injection. Kitesurf drops the human-facing parts and keeps what models use. It already passes 215,000+ Web Platform Tests and is available now, free while in beta, through Browser Run ."
+    },
+    {
       "id": "EV-6249564cff324a0e",
       "dataDate": "2026-08-06",
       "date": "2026-08-06",
@@ -150333,6 +151362,120 @@
       "sourceUrl": "https://ithome.com/0/986/268.htm",
       "publisher": "IT之家（RSS）",
       "sourceExcerpt": "挑战 Codex 等，Meta 推出其首个编程 AI 智能体工具 Muse Code - IT之家"
+    },
+    {
+      "id": "EV-099c1bce0a50965d",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-05",
+      "updatedDate": "2026-08-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AMD、超微与Spectro Cloud推出交钥匙解决方案，助力企业AI编码规模化扩展",
+      "originalTitle": "AMD, Supermicro and Spectro Cloud Launch Turnkey Solution to Scale Enterprise AI Coding - AMD Newsroom",
+      "subject": "AMD, Supermicro and Spectro Cloud",
+      "action": "Launch",
+      "object": "Turnkey Solution to Scale Enterprise AI Coding - AMD Newsroom",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-d4d4a9397323e39a",
+        "EN-c12965afdaa87ea4",
+        "EN-b2f27c2f4827a3d0",
+        "EN-64bcc38de2b7b866"
+      ],
+      "entityNames": [
+        "AMD",
+        "Spectro Cloud",
+        "Newsroom",
+        "Turnkey Solution",
+        "Scale Enterprise AI Coding"
+      ],
+      "productName": "Newsroom",
+      "products": [
+        {
+          "name": "Newsroom",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Turnkey Solution",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Scale Enterprise AI Coding",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-304693ae057b12e2",
+          "subject": "AMD, Supermicro and Spectro Cloud",
+          "object": "AMD Instinct Coder",
+          "quote": "AMD, Supermicro and Spectro Cloud have jointly developed AMD Instinct™ Coder, a turnkey enterprise AI software development solution that provides a simple path to deploying and operating local-first AI inference."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-d552c8faa3870552",
+          "publisher": "newsroom.amd.com",
+          "url": "https://newsroom.amd.com/news/amd-supermicro-and-spectro-cloud-launch-turnkey-solution-to-scale-enterprise-ai-coding"
+        }
+      ],
+      "sourceUrl": "https://newsroom.amd.com/news/amd-supermicro-and-spectro-cloud-launch-turnkey-solution-to-scale-enterprise-ai-coding",
+      "publisher": "newsroom.amd.com",
+      "sourceExcerpt": "AMD, Supermicro and Spectro Cloud have jointly developed AMD Instinct™ Coder, a turnkey enterprise AI software development solution that provides a simple path to deploying and operating local-first AI inference."
     },
     {
       "id": "EV-10c4f4db6c3f2d72",
@@ -266022,6 +267165,376 @@
       "sourceUrl": "https://simonwillison.net/2026/Jul/20/sam-altman",
       "publisher": "Simon Willison 博客",
       "sourceExcerpt": "one thing we’d like to do soon is to create a language model with the approximate capability of GPT-3 that can run locally on consumer hardware and release that."
+    },
+    {
+      "id": "EV-4e3e9b543127b55a",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-07",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Databricks 发布 OfficeQA Pro V2：面向企业落地推理的新基准",
+      "originalTitle": "",
+      "subject": "Databricks",
+      "action": "发布 OfficeQA Pro V2：面向企业落地推理的新基准",
+      "object": "Databricks 发布 OfficeQA Pro V2：面向企业落地推理的新基准",
+      "metrics": [],
+      "locations": [
+        "United States",
+        "U.S."
+      ],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-2dc010636b9dce91"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-2dc010636b9dce91"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-2dc010636b9dce91"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-2dc010636b9dce91",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-2b6e51bec93e86c1",
+        "EN-45f63fb3ca79571b",
+        "EN-d9a8195070f80de9"
+      ],
+      "entityNames": [
+        "Databricks",
+        "OpenAI",
+        "Anthropic",
+        "Google DeepMind",
+        "OfficeQA Pro V2",
+        "Pro V2"
+      ],
+      "productName": "OfficeQA Pro V2",
+      "products": [
+        {
+          "name": "OfficeQA Pro V2",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Databricks"
+          ]
+        },
+        {
+          "name": "Pro V2",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Databricks"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-26629dd72f090d28",
+          "subject": "Databricks",
+          "object": "Today, we are releasing OfficeQA Pro V2 , a new benchmark designed to evaluate whether AI agents can generalize to unfamiliar, enterprise-style grounded-reasoning tasks.",
+          "quote": "Today, we are releasing OfficeQA Pro V2 , a new benchmark designed to evaluate whether AI agents can generalize to unfamiliar, enterprise-style grounded-reasoning tasks."
+        },
+        {
+          "id": "CL-455de0a7b1b4f332",
+          "subject": "Databricks",
+          "object": "Our new benchmark, OfficeQA Pro V2, is designed to test that generalization directly. We initially developed OfficeQA Pro V2 as the benchmark for the inaugural Databricks Grounded Reasoning Cup , a live competition in which 11 academic teams, supported by OpenAI, Anthropic, and Google DeepMind, built agents that were evaluated on a previously unseen corpus and set of grounded-reasoning tasks. The benchmark contains 90 questions grounded in approximately 120,000 pages from the U.S. Treasury’s Accounts of Receipts and Expenditures, which was released as a cohesive dataset by the U.S. Treasury for the first time in conjunction with the 250th anniversary of the United States. Now, we are excited to release the benchmark to AI practitioners more broadly to use for their own development.",
+          "quote": "Our new benchmark, OfficeQA Pro V2, is designed to test that generalization directly. We initially developed OfficeQA Pro V2 as the benchmark for the inaugural Databricks Grounded Reasoning Cup , a live competition in which 11 academic teams, supported by OpenAI, Anthropic, and Google DeepMind, built agents that were evaluated on a previously unseen corpus and set of grounded-reasoning tasks. The benchmark contains 90 questions grounded in approximately 120,000 pages from the U.S. Treasury’s Accounts of Receipts and Expenditures, which was released as a cohesive dataset by the U.S. Treasury for the first time in conjunction with the 250th anniversary of the United States. Now, we are excited…"
+        },
+        {
+          "id": "CL-d33fbf26cbbec55b",
+          "subject": "Databricks",
+          "object": "Seven months ago, we introduced the OfficeQA benchmark to measure how well AI systems answer analytical questions using evidence from large document collections, an extremely common and important enterprise task that we found agents struggled with. Since its introduction, OfficeQA, and its frontier subset, OfficeQA Pro , has become an important measure for frontier model and agent capabilities, driving progress in document retrieval, parsing, and analytical reasoning. But this progress raises a fundamental question: do these improvements reflect broader advances in grounded reasoning, or progress specific to one corpus and task distribution?",
+          "quote": "Seven months ago, we introduced the OfficeQA benchmark to measure how well AI systems answer analytical questions using evidence from large document collections, an extremely common and important enterprise task that we found agents struggled with. Since its introduction, OfficeQA, and its frontier subset, OfficeQA Pro , has become an important measure for frontier model and agent capabilities, driving progress in document retrieval, parsing, and analytical reasoning. But this progress raises a fundamental question: do these improvements reflect broader advances in grounded reasoning, or progress specific to one corpus and task distribution?"
+        },
+        {
+          "id": "CL-27743d04453bdefc",
+          "subject": "Databricks",
+          "object": "This distinction matters in enterprise settings, where agents rarely operate on a single, stable document collection.",
+          "quote": "This distinction matters in enterprise settings, where agents rarely operate on a single, stable document collection."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-969087cea77c6c7c",
+          "publisher": "Databricks：Blog（RSS）",
+          "url": "https://databricks.com/blog/introducing-officeqa-pro-v2-new-benchmark-enterprise-grounded-reasoning"
+        }
+      ],
+      "sourceUrl": "https://databricks.com/blog/introducing-officeqa-pro-v2-new-benchmark-enterprise-grounded-reasoning",
+      "publisher": "Databricks：Blog（RSS）",
+      "sourceExcerpt": "Today, we are releasing OfficeQA Pro V2 , a new benchmark designed to evaluate whether AI agents can generalize to unfamiliar, enterprise-style grounded-reasoning tasks."
+    },
+    {
+      "id": "EV-8680757a0026461d",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-07",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "效力 27 年后谷歌首席科学家迪恩离职创立 Discovery Loop，要加速 AI 前沿发现",
+      "originalTitle": "",
+      "subject": "效力 27 年后谷歌首席科学家迪恩",
+      "action": "离职",
+      "object": "创立 Discovery Loop，要加速 AI 前沿发现",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-2b6e51bec93e86c1"
+      ],
+      "entityNames": [
+        "Google",
+        "Google DeepMind"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-26d11e15d3f8caf5",
+          "subject": "效力 27 年后谷歌首席科学家迪恩",
+          "object": "创立 Discovery Loop，要加速 AI 前沿发现",
+          "quote": "效力 27 年后谷歌首席科学家迪恩离职创立新公司，要加速 AI 前沿发现 - IT之家"
+        },
+        {
+          "id": "CL-3a78551255f50aee",
+          "subject": "效力 27 年后谷歌首席科学家迪恩",
+          "object": "创立 Discovery Loop，要加速 AI 前沿发现",
+          "quote": "效力 27 年后谷歌首席科学家迪恩离职创立新公司，要加速 AI 前沿发现"
+        },
+        {
+          "id": "CL-9b4d9090bbf92ce1",
+          "subject": "效力 27 年后谷歌首席科学家迪恩",
+          "object": "创立 Discovery Loop，要加速 AI 前沿发现",
+          "quote": "IT之家援引博文介绍，杰夫 · 迪恩是谷歌任职时间最长、最具影响力的高管之一， 他于 1999 年加入谷歌公司（至今约 27 年），是谷歌的第 30 位员工， 离职前担任谷歌首席科学家岗位，致力于推动智能机器的发展。"
+        },
+        {
+          "id": "CL-6cf970c244184da6",
+          "subject": "效力 27 年后谷歌首席科学家迪恩",
+          "object": "创立 Discovery Loop，要加速 AI 前沿发现",
+          "quote": "IT之家 8 月 7 日消息，科技媒体 TechCrunch 昨日（8 月 6 日）发布博文，报道称在本轮谷歌母公司 Alphabet 旗下 AI 公司 DeepMind 重组中，谷歌首席科学家杰夫 · 迪恩（Jeff Dean）离开公司， 共同创办 Discovery Loop 公司。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-c21f170b35892c82",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/986/779.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/986/779.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "效力 27 年后谷歌首席科学家迪恩离职创立新公司，要加速 AI 前沿发现 - IT之家"
+    },
+    {
+      "id": "EV-248e01495eb582ed",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-06",
+      "updatedDate": "2026-08-07",
+      "eventType": "organization_restructuring",
+      "eventTypeLabel": "组织重组",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "谷歌重大AI重组背后的混乱政治",
+      "originalTitle": "The messy politics behind Google’s big AI shakeup",
+      "subject": "Demis Hassabis",
+      "action": "organization_restructuring",
+      "object": "DeepMind day-to-day operations",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-765cc641dc299fb5",
+        "EN-bbdefa2950f49882",
+        "EN-2b6e51bec93e86c1"
+      ],
+      "entityNames": [
+        "Demis Hassabis",
+        "Google",
+        "Google DeepMind"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-9e42bc6129715316",
+          "subject": "Demis Hassabis",
+          "object": "DeepMind day-to-day operations",
+          "quote": "Google announced that Demis Hassabis is stepping away from DeepMind’s day-to-day operations to focus on AGI and research; Koray Kavukcuoglu, DeepMind’s current CTO, will step up to lead DeepMind in Hassabis’ place."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-fed5ca57c0a116da",
+          "publisher": "The Verge AI",
+          "url": "https://theverge.com/tech/976108/google-ai-leadership-shakeup-jeff-dean-demis-hassabis-deepmind"
+        }
+      ],
+      "sourceUrl": "https://theverge.com/tech/976108/google-ai-leadership-shakeup-jeff-dean-demis-hassabis-deepmind",
+      "publisher": "The Verge AI",
+      "sourceExcerpt": "Google announced that Demis Hassabis is stepping away from DeepMind’s day-to-day operations to focus on AGI and research; Koray Kavukcuoglu, DeepMind’s current CTO, will step up to lead DeepMind in Hassabis’ place."
+    },
+    {
+      "id": "EV-e07d82ffbad83150",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-06",
+      "updatedDate": "2026-08-07",
+      "eventType": "lawsuit_settlement",
+      "eventTypeLabel": "诉讼与和解",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI称苹果的商业机密诉讼“烂到骨子里”",
+      "originalTitle": "OpenAI says Apple’s trade secrets lawsuit is ‘rotten to its core’",
+      "subject": "OpenAI says Apple’s trade secrets",
+      "action": "lawsuit",
+      "object": "is ‘rotten to its core’",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-9dc14a21d26ac670",
+        "EN-7d3194f79e645c42",
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "entityNames": [
+        "OpenAI says Apple’s trade secrets",
+        "OpenAI",
+        "Apple"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-3260e29533edd0c5",
+          "subject": "OpenAI says Apple’s trade secrets",
+          "object": "is ‘rotten to its core’",
+          "quote": "OpenAI says Apple’s trade secrets lawsuit is ‘rotten to its core’"
+        },
+        {
+          "id": "CL-a817e85ea0e89a06",
+          "subject": "OpenAI says Apple’s trade secrets",
+          "object": "is ‘rotten to its core’",
+          "quote": "OpenAI has asked a federal judge to toss out Apple’s lawsuit accusing the ChatGPT maker of stealing trade secrets, describing the allegations as “meritless.”"
+        },
+        {
+          "id": "CL-bac3b76c8137b575",
+          "subject": "OpenAI says Apple’s trade secrets",
+          "object": "is ‘rotten to its core’",
+          "quote": "OpenAI has asked a federal judge to toss out Apple’s landmark lawsuit accusing the ChatGPT maker of stealing trade secrets, describing the allegations as “meritless.” In a motion filed yesterday to dismiss the complaint, OpenAI says that Apple is mischaracterizing both the actions of the AI startup’s employees as theft, and “generic” product development information as “trade secrets,” adding that Apple made no reasonable efforts to maintain such secrecy."
+        },
+        {
+          "id": "CL-b68276d4959cf1b3",
+          "subject": "OpenAI says Apple’s trade secrets",
+          "object": "is ‘rotten to its core’",
+          "quote": "The dismissal request is in response to a lawsuit filed by Apple in July, alleging that former Apple employees that went on to work for OpenAI stole confidential documents to further OpenAI’s hardware development plans. OpenAI’s official legal rebuttal follows a blog post it published on Tuesday titled “Apple is getting this wrong,” in which it described the lawsuit as “careless, aggressive, and oddly personal.”"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-cd84b4d66e331213",
+          "publisher": "The Verge AI",
+          "url": "https://theverge.com/tech/976042/openai-apple-trade-secrets-lawsuit-dismissal-request"
+        }
+      ],
+      "sourceUrl": "https://theverge.com/tech/976042/openai-apple-trade-secrets-lawsuit-dismissal-request",
+      "publisher": "The Verge AI",
+      "sourceExcerpt": "OpenAI says Apple’s trade secrets lawsuit is ‘rotten to its core’"
     },
     {
       "id": "EV-2321e89fad893290",

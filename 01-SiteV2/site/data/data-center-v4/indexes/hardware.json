@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-06T01:17:24.350Z",
-    "latestDataDate": "2026-08-06",
-    "currentDate": "2026-08-06",
-    "eventCount": 1888,
+    "generatedAt": "2026-08-07T00:25:47.516Z",
+    "latestDataDate": "2026-08-07",
+    "currentDate": "2026-08-07",
+    "eventCount": 1904,
     "quarantinedEventCount": 16
   },
   "hardware": [
@@ -2141,6 +2141,94 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-5a30e015d5d12a96",
+      "snapshotKey": "5a30e015d5d12a96",
+      "snapshotId": "HWS-62a40b6eb4a8749f",
+      "eventId": "EV-467539fe176a470e",
+      "eventIds": [
+        "EV-467539fe176a470e"
+      ],
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "title": "NVIDIA",
+      "subject": "NVIDIA",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "500",
+          "unit": "$billion",
+          "fact_ref": "HWF-648244327c110ccd"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 4,
+      "changes": [
+        {
+          "date": "2026-08-07",
+          "previousDate": "2026-08-06",
+          "snapshotId": "HWS-62a40b6eb4a8749f",
+          "previousSnapshotId": "HWS-df26b5fa3a51a04d",
+          "changedFacts": [
+            "product"
+          ]
+        },
+        {
+          "date": "2026-08-06",
+          "previousDate": "2026-08-05",
+          "snapshotId": "HWS-df26b5fa3a51a04d",
+          "previousSnapshotId": "HWS-84ba3d86778ff712",
+          "changedFacts": [
+            "product"
+          ]
+        },
+        {
+          "date": "2026-08-05",
+          "previousDate": "2026-08-04",
+          "snapshotId": "HWS-84ba3d86778ff712",
+          "previousSnapshotId": "HWS-6228f201a75148c3",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-07",
+          "hardware_fact_id": "HWF-648244327c110ccd",
+          "fact_type": "product",
+          "observed_at": "2026-08-03T00:00:00.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "500",
+          "unit": "$billion",
+          "source_quote": "On July 24, 2026, the chipmaker and South Korea’s SK Group unveiled a partnership Nvidia itself is calling worth more than $500 billion, tying Nvidia’s next-generation Vera Rubin chips directly to SK Hynix’s high-bandwidth memory production for years to come.",
+          "event_refs": [
+            "EV-467539fe176a470e"
+          ],
+          "claim_ref": "CL-9762d696cba0c6cd",
+          "source_refs": [
+            "SA-ee00c48ed72f9d91"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-07/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://tech-insider.org/nvidia-sk-hynix-500-billion-memory-deal-2026",
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ]
+    },
+    {
       "id": "HWC-82c56cc41d0db4b4",
       "snapshotKey": "82c56cc41d0db4b4",
       "snapshotId": "HWS-5b1a0752a6b88d14",
@@ -2254,85 +2342,6 @@
         "EN-11507a0e2f5e69d5",
         "EN-7d3194f79e645c42",
         "EN-c70eca6b0f88f44d"
-      ]
-    },
-    {
-      "id": "HWC-5a30e015d5d12a96",
-      "snapshotKey": "5a30e015d5d12a96",
-      "snapshotId": "HWS-df26b5fa3a51a04d",
-      "eventId": "EV-467539fe176a470e",
-      "eventIds": [
-        "EV-467539fe176a470e"
-      ],
-      "dataDate": "2026-08-06",
-      "date": "2026-08-06",
-      "title": "NVIDIA",
-      "subject": "NVIDIA",
-      "productNames": [],
-      "hardwareType": "semiconductor",
-      "factTypes": [
-        "product"
-      ],
-      "latestValues": {
-        "product": {
-          "metric_value": "500",
-          "unit": "$billion",
-          "fact_ref": "HWF-b594c48338d57e4f"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 3,
-      "changes": [
-        {
-          "date": "2026-08-06",
-          "previousDate": "2026-08-05",
-          "snapshotId": "HWS-df26b5fa3a51a04d",
-          "previousSnapshotId": "HWS-84ba3d86778ff712",
-          "changedFacts": [
-            "product"
-          ]
-        },
-        {
-          "date": "2026-08-05",
-          "previousDate": "2026-08-04",
-          "snapshotId": "HWS-84ba3d86778ff712",
-          "previousSnapshotId": "HWS-6228f201a75148c3",
-          "changedFacts": [
-            "product"
-          ]
-        }
-      ],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-08-06",
-          "hardware_fact_id": "HWF-b594c48338d57e4f",
-          "fact_type": "product",
-          "observed_at": "2026-08-03T00:00:00.000Z",
-          "subject_entity_id": "EN-8d4321d936320802",
-          "subject_name": "NVIDIA",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "semiconductor",
-          "metric_value": "500",
-          "unit": "$billion",
-          "source_quote": "On July 24, 2026, the chipmaker and South Korea’s SK Group unveiled a partnership Nvidia itself is calling worth more than $500 billion, tying Nvidia’s next-generation Vera Rubin chips directly to SK Hynix’s high-bandwidth memory production for years to come.",
-          "event_refs": [
-            "EV-467539fe176a470e"
-          ],
-          "claim_ref": "CL-f4745aaaaaf278c7",
-          "source_refs": [
-            "SA-ee00c48ed72f9d91"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-06/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [],
-      "sourceUrl": "https://tech-insider.org/nvidia-sk-hynix-500-billion-memory-deal-2026",
-      "entityIds": [
-        "EN-8d4321d936320802"
       ]
     },
     {
@@ -6181,36 +6190,37 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-08-06",
-      "funnel_id": "LF-7e20a710f4df060e",
+      "data_date": "2026-08-07",
+      "funnel_id": "LF-5b31d7f97e69bec4",
       "lens": "hardware",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "monitoring_paths": [
         "hardware_capacity_fab",
-        "hardware_product_specs",
+        "hardware_oem_odm",
         "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 26,
+      "raw_documents": 25,
       "original_sources": 22,
-      "valid_claims": 2,
-      "observations": 5,
-      "canonical_events": 2,
+      "valid_claims": 8,
+      "observations": 1,
+      "canonical_events": 3,
       "blocker_counts": {
-        "source_outside_daily_window": 14,
+        "no_source_bounded_event": 3,
+        "source_outside_daily_window": 9,
+        "event_not_ai_relevant": 2,
+        "rumor_requires_primary_confirmation": 1,
         "non_event_or_index_title": 1,
-        "no_source_bounded_event": 2,
-        "no_source_bounded_claim": 1,
         "raw_document_not_auditable": 2,
-        "raw_source_quality_block": 4
+        "raw_source_quality_block": 3
       },
       "rates": {
-        "original_source_rate": 0.8461538461538461,
-        "valid_claim_rate": 0.07692307692307693,
-        "observation_rate": 1,
-        "event_conversion_rate": 1
+        "original_source_rate": 0.88,
+        "valid_claim_rate": 0.32,
+        "observation_rate": 0.125,
+        "event_conversion_rate": 0.375
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-06/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-07/monitoring-funnel.json"
     }
   ]
 }
