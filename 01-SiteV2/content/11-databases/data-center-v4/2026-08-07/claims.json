@@ -84,6 +84,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-2ca33a7cbc8adea8",
+    "raw_id": "RAW-d3f2f54f81f2958a",
+    "claim_type": "organization_restructuring",
+    "subject": "Anthropic",
+    "predicate": "organization_restructuring",
+    "object": "custom silicon team",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 1,
+      "model_candidate_id": "MAC-565697397e47e7cb"
+    },
+    "source_span": {
+      "raw_id": "RAW-d3f2f54f81f2958a",
+      "start": 155,
+      "end": 268
+    },
+    "source_quote": "Anthropic is hiring a “custom silicon team” to design chips on which to run its models, the company has revealed.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-3bed4829bcd3ac43",
+    "raw_id": "RAW-d3f2f54f81f2958a",
+    "claim_type": "organization_restructuring",
+    "subject": "Anthropic",
+    "predicate": "organization_restructuring",
+    "object": "multi-chip approach",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 3,
+      "model_candidate_id": "MAC-565697397e47e7cb"
+    },
+    "source_span": {
+      "raw_id": "RAW-d3f2f54f81f2958a",
+      "start": 608,
+      "end": 793
+    },
+    "source_quote": "The spokesperson clarified that Anthropic will still take a “multi-chip approach,” with plans to use hardware from other companies alongside its own designs as it continues to scale up.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "disputed"
+  },
+  {
     "claim_id": "CL-26629dd72f090d28",
     "raw_id": "RAW-107bcebe4df3e55e",
     "claim_type": "research_result",
@@ -1040,6 +1084,72 @@
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-b352c9e7708b9ef9",
+    "raw_id": "RAW-bc305856a02f8994",
+    "claim_type": "security_incident",
+    "subject": "Irregular",
+    "predicate": "security_incident",
+    "object": "testing-environment misconfiguration allowing models to access the public internet",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-5b5881ea9890555e"
+    },
+    "source_span": {
+      "raw_id": "RAW-bc305856a02f8994",
+      "start": 557,
+      "end": 798
+    },
+    "source_quote": "Irregular, one of our external cybersecurity testing partners, was running Capture-the-Flag-style evaluations intended to be isolated from the internet, but a testing-environment misconfiguration allowed models to access the public internet.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4443012efd9b46d9",
+    "raw_id": "RAW-bc305856a02f8994",
+    "claim_type": "security_incident",
+    "subject": "OpenAI model",
+    "predicate": "security_incident",
+    "object": "exploited a real website due to testing-environment misconfiguration",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-5b5881ea9890555e"
+    },
+    "source_span": {
+      "raw_id": "RAW-bc305856a02f8994",
+      "start": 805,
+      "end": 1082
+    },
+    "source_quote": "In one test, the name of the fictional target for the CTF challenge unintentionally coincided with a real domain. Because the testing environment was mistakenly connected to the internet, the model exploited a real website, mistaking it to be part of the simulated environment.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-14c699eaea4b487c",
+    "raw_id": "RAW-bc305856a02f8994",
+    "claim_type": "security_incident",
+    "subject": "Irregular",
+    "predicate": "security_incident",
+    "object": "hosted misconfigured evaluation environment giving Claude live internet access",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-5b5881ea9890555e"
+    },
+    "source_span": {
+      "raw_id": "RAW-bc305856a02f8994",
+      "start": 1083,
+      "end": 1257
+    },
+    "source_quote": "Irregular also feature in Anthropic's write-up - they were hosting the misconfigured evaluation environment which gave Claude live internet access during some of those tests.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
   },
   {
     "claim_id": "CL-9e42bc6129715316",

@@ -7,7 +7,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-07T00:25:57.198Z",
+    "generatedAt": "2026-08-07T01:18:36.689Z",
     "latestDataDate": "2026-08-07",
     "timezone": "Asia/Shanghai",
     "dateBasis": "dataDate",
@@ -98601,6 +98601,51 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-8680757a0026461d"
     },
+    "EV-2321e89fad893290": {
+      "id": "EV-2321e89fad893290",
+      "dataDate": "2026-08-07",
+      "occurrenceDate": "2026-08-06",
+      "eventType": "security_incident",
+      "eventTypeLabel": "安全事件",
+      "publicationStatus": "verified",
+      "category": "other",
+      "title": "涉及OpenAI模型的第三方网络评估",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Irregular",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-55018455fd10b832"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-b352c9e7708b9ef9",
+        "CL-4443012efd9b46d9",
+        "CL-14c699eaea4b487c"
+      ],
+      "sourceIds": [
+        "SA-4c46cfa5b3387f42"
+      ],
+      "sourceUrl": "https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations",
+      "publisher": "Simon Willison's Blog",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-2321e89fad893290"
+    },
     "EV-248e01495eb582ed": {
       "id": "EV-248e01495eb582ed",
       "dataDate": "2026-08-07",
@@ -98665,51 +98710,6 @@
       "publisher": "The Verge AI",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-e07d82ffbad83150"
-    },
-    "EV-2321e89fad893290": {
-      "id": "EV-2321e89fad893290",
-      "dataDate": "2026-08-06",
-      "occurrenceDate": "2026-08-06",
-      "eventType": "security_incident",
-      "eventTypeLabel": "安全事件",
-      "publicationStatus": "verified",
-      "category": "other",
-      "title": "涉及OpenAI模型的第三方网络评估",
-      "entityIds": [
-        "EN-7d3194f79e645c42",
-        "EN-c70eca6b0f88f44d"
-      ],
-      "entityNames": [
-        "Irregular",
-        "OpenAI",
-        "Anthropic"
-      ],
-      "productNames": [],
-      "classifications": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "security_operations",
-          "name": "安全运营",
-          "entityIds": [
-            "EN-55018455fd10b832"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "claimIds": [
-        "CL-5d45cd6c572cde7e",
-        "CL-9a0c642d5155349f",
-        "CL-4da835675d70e008"
-      ],
-      "sourceIds": [
-        "SA-a7b3bbf88901cb55"
-      ],
-      "sourceUrl": "https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations",
-      "publisher": "Simon Willison's Blog",
-      "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-2321e89fad893290"
     },
     "EV-c6b1535a2034f0f2": {
       "id": "EV-c6b1535a2034f0f2",
@@ -111750,8 +111750,8 @@
             "EV-eb4858e820bf9435",
             "EV-ef2ac2c9b425491c"
           ],
-          "otherCount": 4,
-          "totalAccepted": 17,
+          "otherCount": 5,
+          "totalAccepted": 18,
           "coverage": "数据中心于 2026-08-07 接受的事件；事件发生日期可能不同。"
         },
         "2026-08-06": {
@@ -111780,8 +111780,8 @@
             "EV-f03952020a46cf93",
             "EV-fbe519268ddce396"
           ],
-          "otherCount": 5,
-          "totalAccepted": 20,
+          "otherCount": 4,
+          "totalAccepted": 19,
           "coverage": "数据中心于 2026-08-06 接受的事件；事件发生日期可能不同。"
         },
         "2026-08-05": {

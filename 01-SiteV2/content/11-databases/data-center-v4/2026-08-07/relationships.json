@@ -44,6 +44,28 @@
     ]
   },
   {
+    "relationship_id": "REL-8deab50185db6746",
+    "event_id": "EV-a6e9e81d40dc3845",
+    "subject": "Anthropic",
+    "predicate": "organization_restructuring",
+    "object": "custom silicon team",
+    "claim_ref": "CL-2ca33a7cbc8adea8",
+    "source_refs": [
+      "SA-f1e66cff35441c10"
+    ]
+  },
+  {
+    "relationship_id": "REL-88c01adf706dce99",
+    "event_id": "EV-a6e9e81d40dc3845",
+    "subject": "Anthropic",
+    "predicate": "organization_restructuring",
+    "object": "multi-chip approach",
+    "claim_ref": "CL-3bed4829bcd3ac43",
+    "source_refs": [
+      "SA-f1e66cff35441c10"
+    ]
+  },
+  {
     "relationship_id": "REL-dbe880fa1ecd789a",
     "event_id": "EV-4e3e9b543127b55a",
     "subject": "Databricks",
@@ -536,6 +558,39 @@
     "claim_ref": "CL-c84aa60d634ff7d7",
     "source_refs": [
       "SA-35c0d40b6a8b8556"
+    ]
+  },
+  {
+    "relationship_id": "REL-0c72ef9f8314a1b2",
+    "event_id": "EV-2321e89fad893290",
+    "subject": "Irregular",
+    "predicate": "security_incident",
+    "object": "testing-environment misconfiguration allowing models to access the public internet",
+    "claim_ref": "CL-b352c9e7708b9ef9",
+    "source_refs": [
+      "SA-4c46cfa5b3387f42"
+    ]
+  },
+  {
+    "relationship_id": "REL-d498d9b70877402e",
+    "event_id": "EV-2321e89fad893290",
+    "subject": "OpenAI model",
+    "predicate": "security_incident",
+    "object": "exploited a real website due to testing-environment misconfiguration",
+    "claim_ref": "CL-4443012efd9b46d9",
+    "source_refs": [
+      "SA-4c46cfa5b3387f42"
+    ]
+  },
+  {
+    "relationship_id": "REL-fd1e99792d8b3b1f",
+    "event_id": "EV-2321e89fad893290",
+    "subject": "Irregular",
+    "predicate": "security_incident",
+    "object": "hosted misconfigured evaluation environment giving Claude live internet access",
+    "claim_ref": "CL-14c699eaea4b487c",
+    "source_refs": [
+      "SA-4c46cfa5b3387f42"
     ]
   },
   {
