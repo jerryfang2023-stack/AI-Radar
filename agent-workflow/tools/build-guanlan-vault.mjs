@@ -75,6 +75,20 @@ function currentItems(items, dateFields, limit = 20) {
     .slice(0, limit);
 }
 
+function fundingSummary(item) {
+  const company = typeof item?.company === "string"
+    ? item.company
+    : item?.company?.name || item?.company_name;
+  const financing = item?.financing || {};
+  const round = financing.round || financing.round_code;
+  const amount = financing.amount || financing.total_raised;
+  const summary = [company, round, amount]
+    .filter((value) => value !== undefined && value !== null && String(value).trim())
+    .map((value) => text(value))
+    .join(" · ");
+  return summary || text(item?.title || item?.name);
+}
+
 function filename(value, fallback = "untitled") {
   const normalized = text(value, fallback)
     .replace(/[<>:"/\\|?*\u0000-\u001F]/gu, "-")
@@ -150,7 +164,7 @@ const counts = manifest.counts || {};
 const latestEvents = currentItems(eventIndex.events || [], ["dataDate", "date"], 24);
 const latestFde = currentItems(fdeIndex.fde || [], ["dataDate", "date"], 16);
 const latestHardware = currentItems(hardwareIndex.hardware || [], ["dataDate", "date"], 16);
-const latestFunding = currentItems(funding.cards || [], ["date", "published_at"], 16);
+const latestFunding = currentItems(funding.cards || [], ["as_of_date", "date", "published_at"], 16);
 const latestRemarks = currentItems(viewpoints.remarks || [], ["date", "publishedAt"], 16);
 const latestCommunity = currentItems(community.items || [], ["date", "publishedAt"], 16);
 const reportFiles = copyIndustryReports();
@@ -332,7 +346,7 @@ write(GUANLAN_VAULT_PATHS.fundingInsights, `${yaml("观澜研究·资本与融�
 - 最新日期：${text(funding.meta?.latest_date)}
 - 自动发布：${funding.meta?.automatic_publication === true ? "是" : "否"}
 
-${listRows(latestFunding, (item) => `- **${text(item.date || item.published_at)}** ${text(item.title || item.company_name || item.company)}${item.source_url ? ` — [来源](${item.source_url})` : ""}`)}
+${listRows(latestFunding, (item) => `- **${text(item.as_of_date || item.date || item.published_at)}** ${fundingSummary(item)}${item.source_url ? ` — [来源](${item.source_url})` : ""}`)}
 
 [打开融资洞察](${siteBase}/funding-insights.html)`);
 
