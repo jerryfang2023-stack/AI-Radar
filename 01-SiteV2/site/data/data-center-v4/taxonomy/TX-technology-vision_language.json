@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-07T01:18:26.960Z",
-    "latestDataDate": "2026-08-07",
-    "currentDate": "2026-08-07",
-    "eventCount": 1905,
+    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1933,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -1402,12 +1402,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
+        "TX-product_form-chip_accelerator",
         "TX-use_case-research_discovery",
         "TX-industry-media_entertainment",
-        "TX-use_case-security_operations",
         "TX-use_case-software_development",
+        "TX-use_case-security_operations",
         "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
@@ -1508,18 +1508,22 @@
       "name": "Moonshot AI",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "月之暗面"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
         "EV-0e4bddfd5c129618",
+        "EV-f5cf8dd390746de1",
         "EV-c5d7d88d1aef8edb",
         "EV-38ae953ddd53fe8d",
         "EV-f55d16df5b5fecb2",
         "EV-eec1e6857f0e0b2b",
         "EV-fd21441fb6e143c3",
+        "EV-5b17b7dd8762c3c6",
         "EV-650e4b23d45d5758",
         "EV-6374a712070b1f8c",
         "EV-8f2787ceb5224cc9",
@@ -1538,9 +1542,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-productivity_enterprise_workflows",
@@ -1558,7 +1562,7 @@
         "EN-b57c95289680078c"
       ],
       "firstSeen": "2026-05-07",
-      "lastSeen": "2026-08-04"
+      "lastSeen": "2026-08-08"
     }
   ],
   "fde": [],

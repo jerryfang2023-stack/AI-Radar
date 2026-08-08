@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1933,
+    "quarantinedEventCount": 16
+  },
+  "node": {
+    "id": "TX-technology-memory_system",
+    "name": "记忆系统",
+    "nodeType": "technology",
+    "typeLabel": "技术",
+    "valueId": "memory_system",
+    "eventIds": [
+      "EV-cffa617426a5e139"
+    ],
+    "entityIds": [
+      "EN-fb646a85ad74e7c5"
+    ],
+    "fdeIds": [],
+    "hardwareIds": [],
+    "firstSeen": "2026-08-03",
+    "lastSeen": "2026-08-08"
+  },
+  "events": [
+    {
+      "id": "EV-cffa617426a5e139",
+      "dataDate": "2026-08-08",
+      "date": "2026-08-03",
+      "updatedDate": "2026-08-08",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "腾讯云开源 TencentDB Agent Memory v2.0：面向 AI 编码智能体的团队级记忆中枢",
+      "originalTitle": "",
+      "subject": "Tencent Cloud",
+      "action": "model_release",
+      "object": "TencentDB Agent Memory v2.0",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-04581499750c6beb",
+          "CL-c06bfe76a927f1b4"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "memory_system",
+          "name": "记忆系统",
+          "entityIds": [
+            "EN-fb646a85ad74e7c5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "memory_system",
+          "name": "记忆系统",
+          "entityIds": [
+            "EN-fb646a85ad74e7c5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "memory_system",
+          "name": "记忆系统",
+          "entityIds": [
+            "EN-fb646a85ad74e7c5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-fb646a85ad74e7c5",
+        "EN-a7baed72c308ce88",
+        "EN-9c8ae69b84f21a2e",
+        "EN-b0ef0e08783be830",
+        "EN-c3d89a248a83bab5"
+      ],
+      "entityNames": [
+        "Tencent Cloud",
+        "腾讯云",
+        "Tencent",
+        "TencentDB Agent Memory",
+        "TencentDB Agent Memory v2.0"
+      ],
+      "productName": "TencentDB Agent Memory",
+      "products": [
+        {
+          "name": "TencentDB Agent Memory",
+          "type": "模型",
+          "ownerNames": [
+            "Tencent Cloud"
+          ]
+        },
+        {
+          "name": "TencentDB Agent Memory v2.0",
+          "type": "模型",
+          "ownerNames": [
+            "Tencent Cloud"
+          ]
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/08/07/tencent-cloud-open-sources-tencentdb-agent-memory-v2-0",
+      "publisher": "MarkTechPost（RSS）"
+    }
+  ],
+  "entities": [
+    {
+      "id": "EN-fb646a85ad74e7c5",
+      "name": "Tencent Cloud",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-cffa617426a5e139"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-memory_system"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-08"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-07T01:18:26.960Z",
-    "latestDataDate": "2026-08-07",
-    "currentDate": "2026-08-07",
-    "eventCount": 1905,
+    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1933,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-d14947956b43c97a",
       "EV-c2f5b59db9912018"
     ],
     "viewpointIds": [],
@@ -30,7 +31,7 @@
       "EN-9c8ae69b84f21a2e"
     ],
     "firstSeen": "2026-07-06",
-    "lastSeen": "2026-07-07",
+    "lastSeen": "2026-08-08",
     "relationIds": [
       "REL2-2c87b80484b30f13"
     ],
@@ -39,6 +40,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-d14947956b43c97a",
         "EV-c2f5b59db9912018"
       ],
       "hardware": [],
@@ -46,6 +48,23 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-d14947956b43c97a",
+        "dataDate": "2026-08-08",
+        "date": "2026-08-05",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "腾讯Hy3全球上线，将实用AI扩展至产品、工作流和云服务",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9c8ae69b84f21a2e",
+          "EN-be1a3c9420d88ea5",
+          "EN-b174481e6d848a5d"
+        ]
+      },
       {
         "id": "EV-c2f5b59db9912018",
         "dataDate": "2026-07-07",
@@ -91,6 +110,8 @@
         "EV-619e33abf3f9bfbf",
         "EV-be2f6bfcad93c42f",
         "EV-c7b81290859057b0",
+        "EV-d14947956b43c97a",
+        "EV-cffa617426a5e139",
         "EV-f13c302dc067850b",
         "EV-c710c75d9c823a49",
         "EV-59fb7ba1fd6ac55e",
@@ -116,8 +137,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-product_form-model",
+        "TX-technology-agentic_execution",
         "TX-technology-long_context"
       ],
       "relatedEntityIds": [
@@ -128,7 +149,7 @@
         "EN-30a63b26b06e096e"
       ],
       "firstSeen": "2026-05-18",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-08"
     }
   ],
   "relationships": [

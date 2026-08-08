@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1933,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-7bbcb7dace0c9b5a",
+    "name": "Sonic Inference Pod",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-28bd99c785aa9760"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-04",
+    "lastSeen": "2026-08-08",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-28bd99c785aa9760"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-28bd99c785aa9760",
+        "dataDate": "2026-08-08",
+        "date": "2026-08-04",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Runware推出Sonic推理舱，专为AI推理打造的模块化数据中心",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-e470d891c0bda7d8"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-e470d891c0bda7d8",
+          "EN-7bbcb7dace0c9b5a"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-f0819b28c20886bd",
+      "snapshotKey": "f0819b28c20886bd",
+      "snapshotId": "HWS-032578b46949fe91",
+      "eventId": "EV-28bd99c785aa9760",
+      "eventIds": [
+        "EV-28bd99c785aa9760"
+      ],
+      "dataDate": "2026-08-08",
+      "date": "2026-08-08",
+      "title": "Sonic Inference Pod",
+      "subject": "Runware",
+      "productNames": [
+        "Sonic Inference Pod"
+      ],
+      "hardwareType": "data_center / gpu",
+      "factTypes": [
+        "product",
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-a25e2fc3f46214c2"
+        },
+        "shipment_deployment": {
+          "metric_value": "9",
+          "unit": "$",
+          "fact_ref": "HWF-ecff140797d034d8"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-08",
+          "hardware_fact_id": "HWF-ecff140797d034d8",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-04T00:00:00.000Z",
+          "subject_entity_id": "EN-e470d891c0bda7d8",
+          "subject_name": "Runware",
+          "product_entity_ids": [
+            "EN-7bbcb7dace0c9b5a"
+          ],
+          "product_names": [
+            "Sonic Inference Pod"
+          ],
+          "component_type": "gpu",
+          "metric_value": "9",
+          "unit": "$",
+          "source_quote": "SAN FRANCISCO, August 04, 2026 --( BUSINESS WIRE )--Runware, an AI inference and AI-native compute company, today unveiled the Sonic Inference Pod, a modular data center designed and built to rapidly increase access to AI inference infrastructure for model providers. Unlike traditional data centers, which take years to build and cost $9-19 billion per gigawatt, Runware's Sonic Inference Pod delivers 1 megawatt of compute in a 20-foot shipping container, with custom servers, PCBs, and a closed-loop cooling system engineered for inference performance. The result is facilities costs that are up to 100x lower than a traditional gigawatt-scale data center build, a saving Runware passes directly to clients through its GPU compute pricing.",
+          "event_refs": [
+            "EV-28bd99c785aa9760"
+          ],
+          "claim_ref": "CL-0324a261cb1ac8db",
+          "source_refs": [
+            "SA-2a7eb9c4619369c9"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-08/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-08",
+          "hardware_fact_id": "HWF-55d51121aaf477b0",
+          "fact_type": "product",
+          "observed_at": "2026-08-04T00:00:00.000Z",
+          "subject_entity_id": "EN-e470d891c0bda7d8",
+          "subject_name": "Runware",
+          "product_entity_ids": [
+            "EN-7bbcb7dace0c9b5a"
+          ],
+          "product_names": [
+            "Sonic Inference Pod"
+          ],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Runware Unveils the Sonic Inference Pod, a Modular Data Center Built Specifically for AI Inference",
+          "event_refs": [
+            "EV-28bd99c785aa9760"
+          ],
+          "claim_ref": "CL-48169864f4ef1277",
+          "source_refs": [
+            "SA-2a7eb9c4619369c9"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-08/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-08",
+          "hardware_fact_id": "HWF-a25e2fc3f46214c2",
+          "fact_type": "product",
+          "observed_at": "2026-08-04T00:00:00.000Z",
+          "subject_entity_id": "EN-e470d891c0bda7d8",
+          "subject_name": "Runware",
+          "product_entity_ids": [
+            "EN-7bbcb7dace0c9b5a"
+          ],
+          "product_names": [
+            "Sonic Inference Pod"
+          ],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Runware Unveils the Sonic Inference Pod, a Modular Data Center Built Specifically for AI Inference · Business Wire",
+          "event_refs": [
+            "EV-28bd99c785aa9760"
+          ],
+          "claim_ref": "CL-fb5c5ca8681d6fdd",
+          "source_refs": [
+            "SA-2a7eb9c4619369c9"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-08/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/runware-unveils-sonic-inference-pod-140000938.html",
+      "entityIds": [
+        "EN-e470d891c0bda7d8",
+        "EN-7bbcb7dace0c9b5a"
+      ]
+    }
+  ]
+}

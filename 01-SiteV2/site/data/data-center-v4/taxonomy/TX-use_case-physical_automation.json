@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-07T01:18:26.960Z",
-    "latestDataDate": "2026-08-07",
-    "currentDate": "2026-08-07",
-    "eventCount": 1905,
+    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1933,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -30,6 +30,7 @@
       "EV-d3fcd1ea4d9baf47",
       "EV-80e54c9a390da293",
       "EV-52bf48005db3461a",
+      "EV-7f3298069258b3ea",
       "EV-9fa9822969d3c3fd",
       "EV-236cbc2d64f0c455",
       "EV-9486e14e99499e3b",
@@ -108,6 +109,7 @@
       "EN-634537cdabd4e325",
       "EN-8d4321d936320802",
       "EN-6b5df3bd8bb0c67d",
+      "EN-37a54e5c414654d8",
       "EN-b51b27d89f9ea747",
       "EN-05f6ecf01ac4ebec",
       "EN-5aacd10b5dbfa7b7",
@@ -168,7 +170,7 @@
       "HW-dca442211b264bbe"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-08-05"
+    "lastSeen": "2026-08-08"
   },
   "events": [
     {
@@ -3616,6 +3618,142 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2023/04/20/robust-ai-raises-20m-as-it-scales-robot-deliveries-for-pilot-customers",
       "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-7f3298069258b3ea",
+      "dataDate": "2026-08-08",
+      "date": "2026-06-25",
+      "updatedDate": "2026-08-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Orthogonal 获 430 万美元种子轮融资，用于互联网上的 AI 代理服务发现、编排与支付",
+      "originalTitle": "Orthogonal Raises $4.3M Seed for AI Agent Service Discovery, Orchestration, and Payments Across the Internet",
+      "subject": "Orthogonal",
+      "action": "Raises",
+      "object": "$4.3M Seed for AI Agent Service Discovery, Orchestration, and Payments Across the Internet",
+      "metrics": [
+        "$4.3 million",
+        "$4.3M",
+        "$3 trillion",
+        "$5 trillion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-37a54e5c414654d8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-37a54e5c414654d8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-37a54e5c414654d8"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-37a54e5c414654d8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-37a54e5c414654d8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-37a54e5c414654d8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-37a54e5c414654d8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-1a2290470e0aa754",
+        "EN-37a54e5c414654d8",
+        "EN-bbdefa2950f49882",
+        "EN-cbc62794911ff31b"
+      ],
+      "entityNames": [
+        "SAN FRANCISCO",
+        "Orthogonal",
+        "Google",
+        "Amazon"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://prnewswire.com/news-releases/orthogonal-raises-4-3m-seed-for-ai-agent-service-discovery-orchestration-and-payments-across-the-internet-302806969.html",
+      "publisher": "prnewswire.com"
     },
     {
       "id": "EV-9fa9822969d3c3fd",
@@ -16022,8 +16160,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-model",
+        "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-researcher",
         "TX-industry-manufacturing",
         "TX-target_user-developer",
@@ -16248,6 +16386,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-82fcff365b154465",
         "EV-39d56d5cef4cea80",
         "EV-6703b102274c3be9",
         "EV-bf4871cd96fc25ac",
@@ -16334,11 +16473,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-logistics_supply_chain",
-        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-use_case-research_discovery",
         "TX-ai_market_subcategory-hardware_computing",
@@ -16385,7 +16524,7 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-07"
+      "lastSeen": "2026-08-08"
     },
     {
       "id": "EN-6b5df3bd8bb0c67d",
@@ -16412,6 +16551,36 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-28",
       "lastSeen": "2026-06-28"
+    },
+    {
+      "id": "EN-37a54e5c414654d8",
+      "name": "Orthogonal",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-7f3298069258b3ea",
+        "EV-34255348e97ca5fe",
+        "EV-1b173bce1d43fb3d"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
+        "TX-use_case-software_development",
+        "TX-use_case-physical_automation",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-ai_market_application-ai_development_orchestration",
+        "TX-product_form-developer_tool"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-08-08"
     },
     {
       "id": "EN-b51b27d89f9ea747",
@@ -16526,9 +16695,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-industry-aerospace_defense",
         "TX-industry-logistics_supply_chain",
-        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-target_user-public_sector_user",
         "TX-industry-telecommunications",
@@ -16669,8 +16838,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-model",
+        "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
         "TX-industry-healthcare_life_sciences",
@@ -17042,12 +17211,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
+        "TX-product_form-chip_accelerator",
         "TX-use_case-research_discovery",
         "TX-industry-media_entertainment",
-        "TX-use_case-security_operations",
         "TX-use_case-software_development",
+        "TX-use_case-security_operations",
         "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
@@ -17159,6 +17328,8 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-a0ca934522418c0b",
+        "EV-18223a8aeea7bcdd",
         "EV-83728e3b6c7736ce",
         "EV-a00763037a94d512",
         "EV-b75870625504d004",
@@ -17188,6 +17359,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-industry-manufacturing",
@@ -17206,7 +17378,7 @@
         "EN-630d75372b4d1eb5"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-07"
+      "lastSeen": "2026-08-08"
     },
     {
       "id": "EN-593d0361124f348f",

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-07T01:18:26.960Z",
-    "latestDataDate": "2026-08-07",
-    "currentDate": "2026-08-07",
-    "eventCount": 1905,
+    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1933,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -22,19 +22,21 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-c35c34271c7caf53",
       "EV-99005688ec16c082"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-07",
-    "lastSeen": "2026-08-07",
+    "lastSeen": "2026-08-08",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-c35c34271c7caf53",
         "EV-99005688ec16c082"
       ],
       "hardware": [],
@@ -42,6 +44,45 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-c35c34271c7caf53",
+        "dataDate": "2026-08-08",
+        "date": "2026-08-07",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Cloudflare 推出 Kitesurf，一款为 AI 智能体打造的浏览器",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-738e22f0acab814c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-738e22f0acab814c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-738e22f0acab814c",
+          "EN-0bbbffe05960c1bb"
+        ]
+      },
       {
         "id": "EV-99005688ec16c082",
         "dataDate": "2026-08-07",

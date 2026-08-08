@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-07T01:18:26.960Z",
-    "latestDataDate": "2026-08-07",
-    "currentDate": "2026-08-07",
-    "eventCount": 1905,
+    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1933,
     "quarantinedEventCount": 16
   },
   "fde": [
@@ -6351,44 +6351,41 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-08-07",
-      "funnel_id": "LF-bf1ecbf0f1a9ba17",
+      "data_date": "2026-08-08",
+      "funnel_id": "LF-fab0f196d4f53aaf",
       "lens": "fde",
-      "date": "2026-08-07",
+      "date": "2026-08-08",
       "monitoring_paths": [
         "fde_customer_case",
         "fde_earnings_disclosure",
         "fde_procurement_contract",
         "fde_production_rollout"
       ],
-      "raw_documents": 127,
-      "original_sources": 111,
-      "valid_claims": 24,
-      "observations": 1,
-      "canonical_events": 10,
+      "raw_documents": 115,
+      "original_sources": 97,
+      "valid_claims": 15,
+      "observations": 0,
+      "canonical_events": 7,
       "blocker_counts": {
-        "no_source_bounded_event": 20,
+        "no_source_bounded_event": 24,
+        "source_outside_daily_window": 54,
         "directory_page_not_event_source": 1,
-        "non_event_or_index_title": 9,
-        "source_outside_daily_window": 64,
-        "source_outside_funding_backfill_window": 2,
-        "source_published_after_data_date": 2,
-        "event_not_ai_relevant": 1,
+        "event_not_ai_relevant": 6,
+        "source_published_after_data_date": 1,
+        "community_source_requires_original_event_source": 2,
         "rumor_requires_primary_confirmation": 1,
-        "community_source_requires_original_event_source": 1,
         "multi_event_roundup_not_single_event_source": 1,
-        "opinion_without_source_bounded_event": 1,
-        "no_source_bounded_claim": 1,
-        "index_or_listing_page_not_event_source": 1,
-        "raw_source_quality_block": 12
+        "non_event_or_index_title": 4,
+        "raw_source_quality_block": 13,
+        "raw_document_not_auditable": 1
       },
       "rates": {
-        "original_source_rate": 0.8740157480314961,
-        "valid_claim_rate": 0.1889763779527559,
-        "observation_rate": 0.041666666666666664,
-        "event_conversion_rate": 0.4166666666666667
+        "original_source_rate": 0.8434782608695652,
+        "valid_claim_rate": 0.13043478260869565,
+        "observation_rate": 0,
+        "event_conversion_rate": 0.4666666666666667
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-07/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-08/monitoring-funnel.json"
     }
   ]
 }

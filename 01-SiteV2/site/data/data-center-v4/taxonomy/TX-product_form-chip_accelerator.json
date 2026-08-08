@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-07T01:18:26.960Z",
-    "latestDataDate": "2026-08-07",
-    "currentDate": "2026-08-07",
-    "eventCount": 1905,
+    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1933,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -62,6 +62,7 @@
       "EV-3d8608d3e78e031b",
       "EV-8fcb52bb6ec980af",
       "EV-db304937ceac95d2",
+      "EV-28bd99c785aa9760",
       "EV-9f06b3f05f18b81e",
       "EV-5772d3b77ffa73e2",
       "EV-0a4e9b2eca953036",
@@ -142,6 +143,7 @@
       "EN-222f930b87524636",
       "EN-f4bec299df3f4f27",
       "EN-920510199770f4d6",
+      "EN-e470d891c0bda7d8",
       "EN-0281afdb2d56c1e6",
       "EN-36b1dbc8da066a19",
       "EN-c857d09db23e6822",
@@ -201,7 +203,7 @@
       "HW-4c176e4c40871adc"
     ],
     "firstSeen": "2025-03-18",
-    "lastSeen": "2026-08-07"
+    "lastSeen": "2026-08-08"
   },
   "events": [
     {
@@ -10438,6 +10440,97 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-28bd99c785aa9760",
+      "dataDate": "2026-08-08",
+      "date": "2026-08-04",
+      "updatedDate": "2026-08-08",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Runware推出Sonic推理舱，专为AI推理打造的模块化数据中心",
+      "originalTitle": "Runware Unveils the Sonic Inference Pod, a Modular Data Center Built Specifically for AI Inference",
+      "subject": "Runware",
+      "action": "Unveils",
+      "object": "the Sonic Inference Pod, a Modular Data Center Built Specifically for AI Inference",
+      "metrics": [
+        "$9",
+        "19 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-e470d891c0bda7d8"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-e470d891c0bda7d8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-e470d891c0bda7d8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-e470d891c0bda7d8",
+        "EN-7bbcb7dace0c9b5a"
+      ],
+      "entityNames": [
+        "Runware",
+        "Sonic Inference Pod"
+      ],
+      "productName": "Sonic Inference Pod",
+      "products": [
+        {
+          "name": "Sonic Inference Pod",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/runware-unveils-sonic-inference-pod-140000938.html",
+      "publisher": "finance.yahoo.com"
+    },
+    {
       "id": "EV-9f06b3f05f18b81e",
       "dataDate": "2026-08-04",
       "date": "2026-08-03",
@@ -15814,6 +15907,8 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-a0ca934522418c0b",
+        "EV-18223a8aeea7bcdd",
         "EV-83728e3b6c7736ce",
         "EV-a00763037a94d512",
         "EV-b75870625504d004",
@@ -15843,6 +15938,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-industry-manufacturing",
@@ -15861,7 +15957,7 @@
         "EN-630d75372b4d1eb5"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-07"
+      "lastSeen": "2026-08-08"
     },
     {
       "id": "EN-721eb3fd31f8e1f6",
@@ -16204,9 +16300,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-product_form-model",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-manufacturing",
         "TX-target_user-developer",
@@ -16377,6 +16473,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-82fcff365b154465",
         "EV-39d56d5cef4cea80",
         "EV-6703b102274c3be9",
         "EV-bf4871cd96fc25ac",
@@ -16463,11 +16560,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-logistics_supply_chain",
-        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-use_case-research_discovery",
         "TX-ai_market_subcategory-hardware_computing",
@@ -16514,7 +16611,7 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-07"
+      "lastSeen": "2026-08-08"
     },
     {
       "id": "EN-48bebf25e5bd5aca",
@@ -16560,9 +16657,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-product_form-model",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
         "TX-ai_market_application-chips"
@@ -16616,8 +16713,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
+        "TX-product_form-chip_accelerator",
         "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [],
@@ -16675,8 +16772,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
+        "TX-product_form-chip_accelerator",
         "TX-technology-open_weights"
       ],
       "relatedEntityIds": [],
@@ -16898,6 +16995,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-6ebcbb2660ec7ad9",
         "EV-f1912ab7c46288f3",
+        "EV-97363bf0174c24cc",
         "EV-5967613eaac1a670"
       ],
       "viewpointIds": [],
@@ -16912,7 +17010,28 @@
         "EN-5f5fcd8701ab30c0"
       ],
       "firstSeen": "2025-09-26",
-      "lastSeen": "2026-07-16"
+      "lastSeen": "2026-08-08"
+    },
+    {
+      "id": "EN-e470d891c0bda7d8",
+      "name": "Runware",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-28bd99c785aa9760"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-chip_accelerator"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-08"
     },
     {
       "id": "EN-0281afdb2d56c1e6",
@@ -17002,8 +17121,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-model"
+        "TX-product_form-model",
+        "TX-product_form-chip_accelerator"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-20",
@@ -17033,8 +17152,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
+        "TX-product_form-chip_accelerator",
         "TX-industry-legal_services",
         "TX-technology-multimodal"
       ],
@@ -17405,6 +17524,7 @@
         "EV-3a704c40204ecfd9",
         "EV-94e0afb44c320c99",
         "EV-777eb5b7783b71fb",
+        "EV-f84894a567752c40",
         "EV-5d185ac33faedb68",
         "EV-8f1b01897707b941",
         "EV-f55d16df5b5fecb2",
@@ -17428,6 +17548,8 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-5b17b7dd8762c3c6",
+        "EV-6fc9c1eab4501ce9",
         "EV-b06624cf36990346",
         "EV-22e4f8278c40d63e",
         "EV-4b286a3354cbf34a",
@@ -17641,11 +17763,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-government_public_sector",
-        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
@@ -17655,8 +17777,8 @@
         "TX-product_form-compute_cloud_service",
         "TX-target_user-developer",
         "TX-product_form-enterprise_software_platform",
-        "TX-use_case-security_operations",
         "TX-use_case-software_development",
+        "TX-use_case-security_operations",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-model_api_service",
@@ -17697,7 +17819,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-07"
+      "lastSeen": "2026-08-08"
     },
     {
       "id": "EN-042e9398f2cc8902",
@@ -17793,6 +17915,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-de6c27c1dac18a2a",
         "EV-6cea35f065f0ee9e",
         "EV-92be9fa58b1ee19f",
         "EV-dc56b5ae3009f6f5",
@@ -17814,6 +17937,8 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-997609968760857a",
+        "EV-8a88707160ae733d",
         "EV-1b5b1d3317c8f688",
         "EV-8de21f5aa53242f1",
         "EV-b06624cf36990346",
@@ -17966,6 +18091,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-67a7a3c9f1eabd22",
         "EV-4e3e9b543127b55a",
         "EV-2321e89fad893290",
         "EV-e07d82ffbad83150",
@@ -18023,11 +18149,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-industry-retail_ecommerce",
         "TX-industry-aerospace_defense",
-        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
@@ -18036,12 +18162,12 @@
         "TX-industry-media_entertainment",
         "TX-industry-professional_services",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-security_operations",
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-product_form-enterprise_software_platform",
         "TX-use_case-software_development",
+        "TX-use_case-security_operations",
+        "TX-product_form-end_user_application",
         "TX-target_user-consumer",
         "TX-use_case-customer_support",
         "TX-technology-code_generation",
@@ -18052,8 +18178,8 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
-        "EN-7839fb10a8f14c70",
         "EN-d1ad14d4ad57d207",
+        "EN-7839fb10a8f14c70",
         "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
         "EN-3850792f618f534b",
@@ -18076,7 +18202,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-07"
+      "lastSeen": "2026-08-08"
     },
     {
       "id": "EN-b3e3bce83d29e787",
@@ -18243,12 +18369,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
+        "TX-product_form-chip_accelerator",
         "TX-use_case-research_discovery",
         "TX-industry-media_entertainment",
-        "TX-use_case-security_operations",
         "TX-use_case-software_development",
+        "TX-use_case-security_operations",
         "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
@@ -18286,8 +18412,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
+        "TX-product_form-chip_accelerator",
         "TX-use_case-software_development",
         "TX-technology-code_generation"
       ],
@@ -18312,8 +18438,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
+        "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
         "TX-product_form-ai_infrastructure_software"
       ],
@@ -18333,6 +18459,7 @@
       ],
       "eventIds": [
         "EV-dcbe916c6138e5cb",
+        "EV-7f3298069258b3ea",
         "EV-a00763037a94d512",
         "EV-02548003157849bb",
         "EV-8b0f056571d68269",
@@ -18369,9 +18496,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-product_form-model",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
         "TX-industry-automotive_transportation",
@@ -18384,7 +18511,7 @@
         "EN-7d1507284a5757ca"
       ],
       "firstSeen": "2023-11-28",
-      "lastSeen": "2026-08-04"
+      "lastSeen": "2026-08-08"
     },
     {
       "id": "EN-4a639cb888a15d75",
@@ -18405,10 +18532,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-industry-retail_ecommerce",
-        "TX-product_form-model",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
         "TX-technology-fine_tuning"
@@ -19567,6 +19694,132 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-f0819b28c20886bd",
+      "snapshotKey": "f0819b28c20886bd",
+      "snapshotId": "HWS-032578b46949fe91",
+      "eventId": "EV-28bd99c785aa9760",
+      "eventIds": [
+        "EV-28bd99c785aa9760"
+      ],
+      "dataDate": "2026-08-08",
+      "date": "2026-08-08",
+      "title": "Sonic Inference Pod",
+      "subject": "Runware",
+      "productNames": [
+        "Sonic Inference Pod"
+      ],
+      "hardwareType": "data_center / gpu",
+      "factTypes": [
+        "product",
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-a25e2fc3f46214c2"
+        },
+        "shipment_deployment": {
+          "metric_value": "9",
+          "unit": "$",
+          "fact_ref": "HWF-ecff140797d034d8"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-08",
+          "hardware_fact_id": "HWF-ecff140797d034d8",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-04T00:00:00.000Z",
+          "subject_entity_id": "EN-e470d891c0bda7d8",
+          "subject_name": "Runware",
+          "product_entity_ids": [
+            "EN-7bbcb7dace0c9b5a"
+          ],
+          "product_names": [
+            "Sonic Inference Pod"
+          ],
+          "component_type": "gpu",
+          "metric_value": "9",
+          "unit": "$",
+          "source_quote": "SAN FRANCISCO, August 04, 2026 --( BUSINESS WIRE )--Runware, an AI inference and AI-native compute company, today unveiled the Sonic Inference Pod, a modular data center designed and built to rapidly increase access to AI inference infrastructure for model providers. Unlike traditional data centers, which take years to build and cost $9-19 billion per gigawatt, Runware's Sonic Inference Pod delivers 1 megawatt of compute in a 20-foot shipping container, with custom servers, PCBs, and a closed-loop cooling system engineered for inference performance. The result is facilities costs that are up to 100x lower than a traditional gigawatt-scale data center build, a saving Runware passes directly to clients through its GPU compute pricing.",
+          "event_refs": [
+            "EV-28bd99c785aa9760"
+          ],
+          "claim_ref": "CL-0324a261cb1ac8db",
+          "source_refs": [
+            "SA-2a7eb9c4619369c9"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-08/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-08",
+          "hardware_fact_id": "HWF-55d51121aaf477b0",
+          "fact_type": "product",
+          "observed_at": "2026-08-04T00:00:00.000Z",
+          "subject_entity_id": "EN-e470d891c0bda7d8",
+          "subject_name": "Runware",
+          "product_entity_ids": [
+            "EN-7bbcb7dace0c9b5a"
+          ],
+          "product_names": [
+            "Sonic Inference Pod"
+          ],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Runware Unveils the Sonic Inference Pod, a Modular Data Center Built Specifically for AI Inference",
+          "event_refs": [
+            "EV-28bd99c785aa9760"
+          ],
+          "claim_ref": "CL-48169864f4ef1277",
+          "source_refs": [
+            "SA-2a7eb9c4619369c9"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-08/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-08",
+          "hardware_fact_id": "HWF-a25e2fc3f46214c2",
+          "fact_type": "product",
+          "observed_at": "2026-08-04T00:00:00.000Z",
+          "subject_entity_id": "EN-e470d891c0bda7d8",
+          "subject_name": "Runware",
+          "product_entity_ids": [
+            "EN-7bbcb7dace0c9b5a"
+          ],
+          "product_names": [
+            "Sonic Inference Pod"
+          ],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Runware Unveils the Sonic Inference Pod, a Modular Data Center Built Specifically for AI Inference · Business Wire",
+          "event_refs": [
+            "EV-28bd99c785aa9760"
+          ],
+          "claim_ref": "CL-fb5c5ca8681d6fdd",
+          "source_refs": [
+            "SA-2a7eb9c4619369c9"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-08/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/runware-unveils-sonic-inference-pod-140000938.html",
+      "entityIds": [
+        "EN-e470d891c0bda7d8",
+        "EN-7bbcb7dace0c9b5a"
+      ]
+    },
     {
       "id": "HWC-ca223925d7e51746",
       "snapshotKey": "ca223925d7e51746",

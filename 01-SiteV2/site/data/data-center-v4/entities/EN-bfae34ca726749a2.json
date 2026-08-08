@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1933,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-bfae34ca726749a2",
+    "name": "AMD 宣布",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-18223a8aeea7bcdd"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-07",
+    "lastSeen": "2026-08-08",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-18223a8aeea7bcdd"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-18223a8aeea7bcdd",
+        "dataDate": "2026-08-08",
+        "date": "2026-08-07",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "AMD 宣布计划收购 Taalas，补强 AI 推理芯片路线图",
+        "displayTags": [],
+        "entityIds": [
+          "EN-bfae34ca726749a2",
+          "EN-240389f4b730bad4"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-c478df5c1084a7ea",
+      "snapshotKey": "c478df5c1084a7ea",
+      "snapshotId": "HWS-6b4baa690baa16e5",
+      "eventId": "EV-18223a8aeea7bcdd",
+      "eventIds": [
+        "EV-18223a8aeea7bcdd"
+      ],
+      "dataDate": "2026-08-08",
+      "date": "2026-08-08",
+      "title": "AMD 宣布",
+      "subject": "AMD 宣布",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-600b3236ebbff850"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-08",
+          "hardware_fact_id": "HWF-600b3236ebbff850",
+          "fact_type": "product",
+          "observed_at": "2026-08-07T00:16:59.000Z",
+          "subject_entity_id": "EN-bfae34ca726749a2",
+          "subject_name": "AMD 宣布",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 8 月 7 日消息，AMD 今天（8 月 7 日）发布公告， 宣布计划收购 Taalas 芯片初创公司。",
+          "event_refs": [
+            "EV-18223a8aeea7bcdd"
+          ],
+          "claim_ref": "CL-8600da3e5ce177a1",
+          "source_refs": [
+            "SA-5bc1a4124ace8a6f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-08/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/986/791.htm",
+      "entityIds": [
+        "EN-bfae34ca726749a2",
+        "EN-240389f4b730bad4"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1933,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-47dd52018c2b6985",
+    "name": "阿里巴巴为下一代 Qwen",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-d230942b0787581a"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-open_weights"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-07",
+    "lastSeen": "2026-08-08",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-d230942b0787581a"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-d230942b0787581a",
+        "dataDate": "2026-08-08",
+        "date": "2026-08-07",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "阿里巴巴为下一代 Qwen 开源模型测试收入分成新商业模式",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [
+              "EN-47dd52018c2b6985"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-47dd52018c2b6985",
+          "EN-047364b9be67f665"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-open_weights",
+      "name": "开放权重",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "open_weights",
+      "eventIds": [
+        "EV-1abf0d076d30ec6d",
+        "EV-d2a623e8eef1f61d",
+        "EV-f55d16df5b5fecb2",
+        "EV-d230942b0787581a",
+        "EV-db304937ceac95d2",
+        "EV-cfba8b877da20eaf",
+        "EV-63858d9b5ef92175",
+        "EV-890ffd351486b884",
+        "EV-acf3df526813ed37",
+        "EV-afcefb5d86a2db45",
+        "EV-ca18725115b61bd3",
+        "EV-0f0b2013927ce156",
+        "EV-702276a31f123374",
+        "EV-fe519605ebb69aaf",
+        "EV-2fea1664807824ce",
+        "EV-b888d3eb5f192649",
+        "EV-b84035029a63e52e",
+        "EV-3028dfadf94c8f4c",
+        "EV-a06011da69abcc3d",
+        "EV-e2da1aafabb3e09c",
+        "EV-2258329f33d413cf",
+        "EV-86537be17d50ff20"
+      ],
+      "entityIds": [
+        "EN-bd6769fe78d0971a",
+        "EN-47dd52018c2b6985",
+        "EN-920510199770f4d6",
+        "EN-422332977c41eb77",
+        "EN-a899a3dde1d51caf",
+        "EN-88ab1e5d793701f9",
+        "EN-c70eca6b0f88f44d",
+        "EN-6b61eab266a42eb0",
+        "EN-cc70f504af53013a",
+        "EN-ea3bd73e2b506e00",
+        "EN-bc1fc5140040180e",
+        "EN-0d1e478de2157d48",
+        "EN-047364b9be67f665",
+        "EN-d41ebd9f02722fc8",
+        "EN-8d4321d936320802",
+        "EN-b3e3bce83d29e787",
+        "EN-f7a386a451b79627",
+        "EN-6ac6ad44bb9995ca"
+      ],
+      "fdeIds": [
+        "FDE-0193a6afd26db7ae",
+        "FDE-a8fea104d63ff671"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-08-08"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

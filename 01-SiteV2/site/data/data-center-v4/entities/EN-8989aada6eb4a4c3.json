@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-07T01:18:26.960Z",
-    "latestDataDate": "2026-08-07",
-    "currentDate": "2026-08-07",
-    "eventCount": 1905,
+    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1933,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -22,23 +22,26 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-72dc9ab86e08fbab",
       "EV-6f1729f6968b72c9"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [
-      "EN-d30e5ffc0ba9150b"
+      "EN-5a28a1a99a417ba5"
     ],
     "firstSeen": "2026-07-24",
-    "lastSeen": "2026-07-25",
+    "lastSeen": "2026-08-08",
     "relationIds": [
-      "REL2-e1d65aab90a4ab28"
+      "REL2-cd73da9ddfba14ff",
+      "REL2-98b97689d5a7c1bf"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-72dc9ab86e08fbab",
         "EV-6f1729f6968b72c9"
       ],
       "hardware": [],
@@ -46,6 +49,35 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-72dc9ab86e08fbab",
+        "dataDate": "2026-08-08",
+        "date": "2026-08-08",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "蚂蚁集团百灵开源 Ling-3.0-flash 模型：124B 总参数、5.1B 激活参数",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "reasoning",
+            "name": "推理能力",
+            "entityIds": [
+              "EN-b7ff6c95ddfdac24"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-b7ff6c95ddfdac24",
+          "EN-5a28a1a99a417ba5",
+          "EN-8989aada6eb4a4c3"
+        ]
+      },
       {
         "id": "EV-6f1729f6968b72c9",
         "dataDate": "2026-07-25",
@@ -90,35 +122,55 @@
   },
   "relatedEntities": [
     {
-      "id": "EN-d30e5ffc0ba9150b",
-      "name": "蚂蚁集团",
+      "id": "EN-5a28a1a99a417ba5",
+      "name": "Ant Group",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "蚂蚁集团"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-6f1729f6968b72c9"
+        "EV-72dc9ab86e08fbab"
       ],
       "viewpointIds": [],
-      "classificationRefs": [
-        "TX-product_form-model",
-        "TX-technology-reasoning"
-      ],
+      "classificationRefs": [],
       "relatedEntityIds": [
         "EN-8989aada6eb4a4c3"
       ],
-      "firstSeen": "2026-07-24",
-      "lastSeen": "2026-07-25"
+      "firstSeen": "2026-08-08",
+      "lastSeen": "2026-08-08"
     }
   ],
   "relationships": [
     {
-      "relationship_id": "REL2-e1d65aab90a4ab28",
+      "relationship_id": "REL2-cd73da9ddfba14ff",
       "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-d30e5ffc0ba9150b",
+      "subject_ref": "EN-5a28a1a99a417ba5",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-8989aada6eb4a4c3",
+      "object_type": "entity",
+      "event_id": "EV-72dc9ab86e08fbab",
+      "claim_refs": [
+        "CL-24c1d3ba0b3991a6",
+        "CL-310204201291f150",
+        "CL-ecb55432ea944920",
+        "CL-b203b1076c6cbafd"
+      ],
+      "source_refs": [
+        "SA-b44fb0bd0c5ebf61"
+      ],
+      "data_date": "2026-08-08",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-98b97689d5a7c1bf",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-5a28a1a99a417ba5",
       "subject_type": "entity",
       "predicate": "publishes",
       "object_ref": "EN-8989aada6eb4a4c3",

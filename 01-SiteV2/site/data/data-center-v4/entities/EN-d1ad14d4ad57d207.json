@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-07T01:18:26.960Z",
-    "latestDataDate": "2026-08-07",
-    "currentDate": "2026-08-07",
-    "eventCount": 1905,
+    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1933,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-8a88707160ae733d",
       "EV-8de21f5aa53242f1",
       "EV-8803f626b5df5ab0",
       "EV-c914ac00a35d7cf0",
@@ -40,8 +41,9 @@
       "EN-7d3194f79e645c42"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-08-07",
+    "lastSeen": "2026-08-08",
     "relationIds": [
+      "REL2-a2d910c505cb6266",
       "REL2-251475ee05e2516c",
       "REL2-4bb082b8b58f1dd4",
       "REL2-24a07e3fde560a53",
@@ -54,6 +56,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-8a88707160ae733d",
         "EV-8de21f5aa53242f1",
         "EV-8803f626b5df5ab0",
         "EV-c914ac00a35d7cf0",
@@ -71,6 +74,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-8a88707160ae733d",
+        "dataDate": "2026-08-08",
+        "date": "2026-08-07",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI 披露 ChatGPT 全球 10 亿用户画像：35 岁及以上用户用量上升",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-d1ad14d4ad57d207"
+        ]
+      },
       {
         "id": "EV-8de21f5aa53242f1",
         "dataDate": "2026-08-07",
@@ -370,6 +389,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-de6c27c1dac18a2a",
         "EV-6cea35f065f0ee9e",
         "EV-92be9fa58b1ee19f",
         "EV-dc56b5ae3009f6f5",
@@ -391,6 +411,8 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-997609968760857a",
+        "EV-8a88707160ae733d",
         "EV-1b5b1d3317c8f688",
         "EV-8de21f5aa53242f1",
         "EV-b06624cf36990346",
@@ -543,6 +565,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-67a7a3c9f1eabd22",
         "EV-4e3e9b543127b55a",
         "EV-2321e89fad893290",
         "EV-e07d82ffbad83150",
@@ -600,11 +623,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-industry-retail_ecommerce",
         "TX-industry-aerospace_defense",
-        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
@@ -613,12 +636,12 @@
         "TX-industry-media_entertainment",
         "TX-industry-professional_services",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-security_operations",
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-product_form-enterprise_software_platform",
         "TX-use_case-software_development",
+        "TX-use_case-security_operations",
+        "TX-product_form-end_user_application",
         "TX-target_user-consumer",
         "TX-use_case-customer_support",
         "TX-technology-code_generation",
@@ -629,8 +652,8 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
-        "EN-7839fb10a8f14c70",
         "EN-d1ad14d4ad57d207",
+        "EN-7839fb10a8f14c70",
         "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
         "EN-3850792f618f534b",
@@ -653,10 +676,31 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-07"
+      "lastSeen": "2026-08-08"
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-a2d910c505cb6266",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d1ad14d4ad57d207",
+      "object_type": "entity",
+      "event_id": "EV-8a88707160ae733d",
+      "claim_refs": [
+        "CL-5c469a0e84c6f7f5",
+        "CL-e0fe1cf50ddee12f",
+        "CL-4d8d62f6cca5ca48",
+        "CL-b2958cfb1fa6633d"
+      ],
+      "source_refs": [
+        "SA-234a04941c2c6de6"
+      ],
+      "data_date": "2026-08-08",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-251475ee05e2516c",
       "relationship_version": "RELATION-V2.1",
