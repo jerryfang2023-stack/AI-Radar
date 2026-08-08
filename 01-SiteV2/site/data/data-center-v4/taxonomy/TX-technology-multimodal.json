@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-07T01:18:26.960Z",
-    "latestDataDate": "2026-08-07",
-    "currentDate": "2026-08-07",
-    "eventCount": 1905,
+    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1933,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -26,7 +26,9 @@
       "EV-cafe435ddd007821",
       "EV-a9810b47e0408a05",
       "EV-26d2874c6ce028d6",
+      "EV-3d9aa640411471ea",
       "EV-fd21441fb6e143c3",
+      "EV-73a6143b5ce273e9",
       "EV-db304937ceac95d2",
       "EV-2fa6949af5b36fb0",
       "EV-4b286a3354cbf34a",
@@ -70,7 +72,9 @@
       "EN-e1517be14d06cdb7",
       "EN-193d220b421d776e",
       "EN-b81c8201acfc7639",
+      "EN-87c730bc4f32459e",
       "EN-7df09a7717ef2feb",
+      "EN-2dc010636b9dce91",
       "EN-920510199770f4d6",
       "EN-febedfcafee9d610",
       "EN-8d57f84bd1847b24",
@@ -100,7 +104,7 @@
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-08-06"
+    "lastSeen": "2026-08-08"
   },
   "events": [
     {
@@ -1589,6 +1593,220 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-3d9aa640411471ea",
+      "dataDate": "2026-08-08",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-08",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "影石 GO Ultra 上线 AI 语音助手，分区域接入阿里千问和 Gemini",
+      "originalTitle": "",
+      "subject": "影石 GO Ultra 上线 AI 语音助手，分区域",
+      "action": "接入",
+      "object": "阿里千问和 Gemini",
+      "metrics": [],
+      "locations": [
+        "中国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-87c730bc4f32459e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-87c730bc4f32459e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-87c730bc4f32459e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-87c730bc4f32459e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-87c730bc4f32459e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-87c730bc4f32459e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-87c730bc4f32459e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-87c730bc4f32459e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-87c730bc4f32459e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-87c730bc4f32459e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-87c730bc4f32459e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-87c730bc4f32459e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-87c730bc4f32459e",
+        "EN-047364b9be67f665",
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "影石 GO Ultra",
+        "Alibaba",
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/986/938.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-fd21441fb6e143c3",
       "dataDate": "2026-06-21",
       "date": "2026-06-20",
@@ -1777,6 +1995,107 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/966/539.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-73a6143b5ce273e9",
+      "dataDate": "2026-08-08",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-08",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "partial",
+      "title": "Databricks 推出 FILE 原生列类型，面向多模态数据",
+      "originalTitle": "",
+      "subject": "Databricks",
+      "action": "推出",
+      "object": "FILE 原生列类型，面向多模态数据",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-2dc010636b9dce91"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-2dc010636b9dce91"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-2dc010636b9dce91"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-2dc010636b9dce91"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-2dc010636b9dce91",
+        "EN-47ca67654dd21738"
+      ],
+      "entityNames": [
+        "Databricks",
+        "FILE"
+      ],
+      "productName": "FILE",
+      "products": [
+        {
+          "name": "FILE",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Databricks"
+          ]
+        }
+      ],
+      "sourceUrl": "https://databricks.com/blog/introducing-file-type-native-column-type-multimodal-data",
+      "publisher": "Databricks：Blog（RSS）"
     },
     {
       "id": "EV-db304937ceac95d2",
@@ -7762,6 +8081,7 @@
         "EV-26d2874c6ce028d6",
         "EV-b93102125cc062e3",
         "EV-6c361125c3f50bb6",
+        "EV-6360fcef17b43087",
         "EV-fbe519268ddce396",
         "EV-3126fb08491de669",
         "EV-c710c75d9c823a49",
@@ -7777,8 +8097,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-product_form-model",
+        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
         "TX-technology-code_generation",
@@ -7792,7 +8112,31 @@
         "EN-24381ecb01753c1b"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-06"
+      "lastSeen": "2026-08-08"
+    },
+    {
+      "id": "EN-87c730bc4f32459e",
+      "name": "影石 GO Ultra",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3d9aa640411471ea"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-multimodal",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-07",
+      "lastSeen": "2026-08-08"
     },
     {
       "id": "EN-7df09a7717ef2feb",
@@ -7812,14 +8156,59 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-product_form-model",
+        "TX-technology-agentic_execution",
         "TX-technology-multimodal",
         "TX-technology-long_context"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-07-29"
+    },
+    {
+      "id": "EN-2dc010636b9dce91",
+      "name": "Databricks",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0d4e656aa51f9a46",
+        "EV-78a11d309c3d4e97",
+        "EV-0e84a2f49d765ce3",
+        "EV-7add33b4c74dbf1a",
+        "EV-c5643983538c6513",
+        "EV-57944eebac69d510",
+        "EV-5b1bdc06406424b4",
+        "EV-6272444f30281858",
+        "EV-73a6143b5ce273e9",
+        "EV-4e01d849a23a07d9",
+        "EV-226a363f84676808",
+        "EV-9ae9aa86e51e64a2",
+        "EV-6ce6b9c9780b97d9",
+        "EV-4e3e9b543127b55a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
+        "TX-target_user-developer",
+        "TX-use_case-knowledge_search",
+        "TX-product_form-ai_infrastructure_software",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-technology-multimodal",
+        "TX-ai_market_application-ai_development_orchestration"
+      ],
+      "relatedEntityIds": [
+        "EN-a42d5d95234db6c4"
+      ],
+      "firstSeen": "2026-05-20",
+      "lastSeen": "2026-08-08"
     },
     {
       "id": "EN-febedfcafee9d610",
@@ -7902,8 +8291,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
+        "TX-product_form-chip_accelerator",
         "TX-industry-legal_services",
         "TX-technology-multimodal"
       ],
@@ -8057,8 +8446,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-model",
+        "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
         "TX-target_user-developer",
@@ -8159,8 +8548,8 @@
         "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
         "TX-product_form-enterprise_software_platform",
-        "TX-product_form-end_user_application",
         "TX-use_case-software_development",
+        "TX-product_form-end_user_application",
         "TX-product_form-model_api_service",
         "TX-technology-code_generation",
         "TX-technology-computer_use",
@@ -8285,6 +8674,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-82fcff365b154465",
         "EV-39d56d5cef4cea80",
         "EV-6703b102274c3be9",
         "EV-bf4871cd96fc25ac",
@@ -8371,11 +8761,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-logistics_supply_chain",
-        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-use_case-research_discovery",
         "TX-ai_market_subcategory-hardware_computing",
@@ -8422,7 +8812,7 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-07"
+      "lastSeen": "2026-08-08"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -8489,6 +8879,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-de6c27c1dac18a2a",
         "EV-6cea35f065f0ee9e",
         "EV-92be9fa58b1ee19f",
         "EV-dc56b5ae3009f6f5",
@@ -8510,6 +8901,8 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-997609968760857a",
+        "EV-8a88707160ae733d",
         "EV-1b5b1d3317c8f688",
         "EV-8de21f5aa53242f1",
         "EV-b06624cf36990346",
@@ -8662,6 +9055,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-67a7a3c9f1eabd22",
         "EV-4e3e9b543127b55a",
         "EV-2321e89fad893290",
         "EV-e07d82ffbad83150",
@@ -8719,11 +9113,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-industry-retail_ecommerce",
         "TX-industry-aerospace_defense",
-        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
@@ -8732,12 +9126,12 @@
         "TX-industry-media_entertainment",
         "TX-industry-professional_services",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-security_operations",
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-product_form-enterprise_software_platform",
         "TX-use_case-software_development",
+        "TX-use_case-security_operations",
+        "TX-product_form-end_user_application",
         "TX-target_user-consumer",
         "TX-use_case-customer_support",
         "TX-technology-code_generation",
@@ -8748,8 +9142,8 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
-        "EN-7839fb10a8f14c70",
         "EN-d1ad14d4ad57d207",
+        "EN-7839fb10a8f14c70",
         "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
         "EN-3850792f618f534b",
@@ -8772,7 +9166,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-07"
+      "lastSeen": "2026-08-08"
     },
     {
       "id": "EN-2b6e51bec93e86c1",
@@ -8824,12 +9218,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
+        "TX-product_form-chip_accelerator",
         "TX-use_case-research_discovery",
         "TX-industry-media_entertainment",
-        "TX-use_case-security_operations",
         "TX-use_case-software_development",
+        "TX-use_case-security_operations",
         "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
@@ -8947,7 +9341,11 @@
         "EV-c0f87b8c5208cd75",
         "EV-53f08daddd011dbb",
         "EV-e1a4bc40db4a9d8f",
+        "EV-3d9aa640411471ea",
         "EV-2a833330267cb2df",
+        "EV-2791b442fd32b894",
+        "EV-4a6a0e6b6f50946c",
+        "EV-d230942b0787581a",
         "EV-2fa6949af5b36fb0",
         "EV-4b286a3354cbf34a",
         "EV-650e4b23d45d5758",
@@ -8993,8 +9391,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-product_form-model",
+        "TX-technology-agentic_execution",
         "TX-target_user-business_user",
         "TX-use_case-data_analysis",
         "TX-use_case-productivity_enterprise_workflows",
@@ -9002,7 +9400,8 @@
         "TX-technology-multimodal",
         "TX-product_form-ai_device",
         "TX-technology-open_weights",
-        "TX-technology-video_generation"
+        "TX-technology-video_generation",
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
         "EN-52e3d014f9a275ea",
@@ -9013,7 +9412,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-05",
+      "lastSeen": "2026-08-08",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -9026,18 +9425,22 @@
       "name": "Moonshot AI",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "月之暗面"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
         "EV-0e4bddfd5c129618",
+        "EV-f5cf8dd390746de1",
         "EV-c5d7d88d1aef8edb",
         "EV-38ae953ddd53fe8d",
         "EV-f55d16df5b5fecb2",
         "EV-eec1e6857f0e0b2b",
         "EV-fd21441fb6e143c3",
+        "EV-5b17b7dd8762c3c6",
         "EV-650e4b23d45d5758",
         "EV-6374a712070b1f8c",
         "EV-8f2787ceb5224cc9",
@@ -9056,9 +9459,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-productivity_enterprise_workflows",
@@ -9076,7 +9479,7 @@
         "EN-b57c95289680078c"
       ],
       "firstSeen": "2026-05-07",
-      "lastSeen": "2026-08-04"
+      "lastSeen": "2026-08-08"
     }
   ],
   "fde": [

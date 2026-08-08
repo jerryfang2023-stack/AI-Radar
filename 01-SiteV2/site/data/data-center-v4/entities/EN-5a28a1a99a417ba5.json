@@ -1,0 +1,194 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1933,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-5a28a1a99a417ba5",
+    "name": "Ant Group",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [
+      "蚂蚁集团"
+    ],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-72dc9ab86e08fbab"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [
+      "EN-8989aada6eb4a4c3"
+    ],
+    "firstSeen": "2026-08-08",
+    "lastSeen": "2026-08-08",
+    "relationIds": [
+      "REL2-cd73da9ddfba14ff",
+      "REL2-98b97689d5a7c1bf"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-72dc9ab86e08fbab",
+        "EV-6f1729f6968b72c9"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-72dc9ab86e08fbab",
+        "dataDate": "2026-08-08",
+        "date": "2026-08-08",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "蚂蚁集团百灵开源 Ling-3.0-flash 模型：124B 总参数、5.1B 激活参数",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "reasoning",
+            "name": "推理能力",
+            "entityIds": [
+              "EN-b7ff6c95ddfdac24"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-b7ff6c95ddfdac24",
+          "EN-5a28a1a99a417ba5",
+          "EN-8989aada6eb4a4c3"
+        ]
+      },
+      {
+        "id": "EV-6f1729f6968b72c9",
+        "dataDate": "2026-07-25",
+        "date": "2026-07-24",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "蚂蚁集团发布百灵原生混合推理模型 Ling-3.0-flash",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-d30e5ffc0ba9150b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "reasoning",
+            "name": "推理能力",
+            "entityIds": [
+              "EN-d30e5ffc0ba9150b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-d30e5ffc0ba9150b",
+          "EN-8989aada6eb4a4c3"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-8989aada6eb4a4c3",
+      "name": "Ling-3.0-flash",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-72dc9ab86e08fbab",
+        "EV-6f1729f6968b72c9"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-5a28a1a99a417ba5"
+      ],
+      "firstSeen": "2026-07-24",
+      "lastSeen": "2026-08-08"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-cd73da9ddfba14ff",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-5a28a1a99a417ba5",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-8989aada6eb4a4c3",
+      "object_type": "entity",
+      "event_id": "EV-72dc9ab86e08fbab",
+      "claim_refs": [
+        "CL-24c1d3ba0b3991a6",
+        "CL-310204201291f150",
+        "CL-ecb55432ea944920",
+        "CL-b203b1076c6cbafd"
+      ],
+      "source_refs": [
+        "SA-b44fb0bd0c5ebf61"
+      ],
+      "data_date": "2026-08-08",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-98b97689d5a7c1bf",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-5a28a1a99a417ba5",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-8989aada6eb4a4c3",
+      "object_type": "entity",
+      "event_id": "EV-6f1729f6968b72c9",
+      "claim_refs": [
+        "CL-0905882f05086f45",
+        "CL-315b3e77ed185068",
+        "CL-28f467ec31f53f91"
+      ],
+      "source_refs": [
+        "SA-9be4fa95329f965d"
+      ],
+      "data_date": "2026-07-25",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

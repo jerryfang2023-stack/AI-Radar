@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-07T01:18:26.960Z",
-    "latestDataDate": "2026-08-07",
-    "currentDate": "2026-08-07",
-    "eventCount": 1905,
+    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1933,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -22,19 +22,21 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-82fcff365b154465",
       "EV-8993e021ac17df4a"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2025-12-02",
-    "lastSeen": "2026-07-18",
+    "lastSeen": "2026-08-08",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-82fcff365b154465",
         "EV-8993e021ac17df4a"
       ],
       "hardware": [],
@@ -42,6 +44,24 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-82fcff365b154465",
+        "dataDate": "2026-08-08",
+        "date": "2026-08-08",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "RTX PRO 服务器助力构建企业 AI 工厂",
+        "displayTags": [],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-77242fb4d6f2ca68",
+          "EN-2f3870db857dec81",
+          "EN-a614180064f7ef60"
+        ]
+      },
       {
         "id": "EV-8993e021ac17df4a",
         "dataDate": "2026-07-18",

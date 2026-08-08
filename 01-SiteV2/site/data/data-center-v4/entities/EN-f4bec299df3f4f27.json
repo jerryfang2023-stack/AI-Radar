@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-07T01:18:26.960Z",
-    "latestDataDate": "2026-08-07",
-    "currentDate": "2026-08-07",
-    "eventCount": 1905,
+    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1933,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -28,6 +28,7 @@
       "EV-8fcb52bb6ec980af",
       "EV-6ebcbb2660ec7ad9",
       "EV-f1912ab7c46288f3",
+      "EV-97363bf0174c24cc",
       "EV-5967613eaac1a670"
     ],
     "viewpointIds": [],
@@ -42,7 +43,7 @@
       "EN-5f5fcd8701ab30c0"
     ],
     "firstSeen": "2025-09-26",
-    "lastSeen": "2026-07-16",
+    "lastSeen": "2026-08-08",
     "relationIds": [
       "REL2-f8319ba3694b2987",
       "REL2-180edc5cb11050cc"
@@ -62,12 +63,28 @@
         "EV-6ebcbb2660ec7ad9"
       ],
       "hardware": [
+        "EV-97363bf0174c24cc",
         "EV-f1912ab7c46288f3"
       ],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-97363bf0174c24cc",
+        "dataDate": "2026-08-08",
+        "date": "2026-08-05",
+        "eventType": "hardware_supply",
+        "eventTypeLabel": "硬件供应",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "FuriosaAI将为斯德哥尔摩数据中心供应8,800颗AI芯片",
+        "displayTags": [],
+        "entityIds": [
+          "EN-f4bec299df3f4f27"
+        ]
+      },
       {
         "id": "EV-5e2b5770eac85ca5",
         "dataDate": "2026-07-16",
@@ -380,6 +397,7 @@
         "EV-f54ec32c67e9447c",
         "EV-7817dc69d5228cbb",
         "EV-7951af05be21dc7c",
+        "EV-7f3298069258b3ea",
         "EV-561e2028a6212b99",
         "EV-921c843ad32c993c",
         "EV-010946e35d35bb43",
@@ -481,6 +499,7 @@
         "EV-01df8e489a34893b",
         "EV-afd0332ad8f5f05b",
         "EV-cab03fca079f62e6",
+        "EV-8619e2d881669888",
         "EV-76e7dc691b68fa04",
         "EV-aa7cf8ee6c875f08",
         "EV-dc56b5ae3009f6f5",
@@ -513,6 +532,9 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-997609968760857a",
+        "EV-e6b22f59df71890e",
+        "EV-c35c34271c7caf53",
         "EV-99005688ec16c082",
         "EV-6249564cff324a0e",
         "EV-b06624cf36990346",
@@ -746,6 +768,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-67a7a3c9f1eabd22",
         "EV-4e3e9b543127b55a",
         "EV-20b82e2a2cb33a0e",
         "EV-8b36007d0b5f377f",
@@ -808,6 +831,7 @@
         "EN-e23228440ca5340f",
         "EN-e69f64149edae6b1",
         "EN-44355566aea5df6f",
+        "EN-37a54e5c414654d8",
         "EN-19a5848a577315c5",
         "EN-d1fa538179ba6371",
         "EN-b9b0702726f5be1c",
@@ -817,7 +841,6 @@
         "EN-f3d05a0f6248941d",
         "EN-bd573a2c01411003",
         "EN-f346eaca864441f9",
-        "EN-37a54e5c414654d8",
         "EN-e19b20530b205aa9",
         "EN-4abc3bd0f9e75c63",
         "EN-ef2bee7868007cd4",
@@ -890,6 +913,7 @@
         "EN-916a98f0fa2a39af",
         "EN-8d291c7017252b07",
         "EN-f8048254c29fa79e",
+        "EN-6c0f28e4fa82c2a5",
         "EN-82a31e57d3a2fa17",
         "EN-4e358c403850a88a",
         "EN-543ed2ff052fe0cd",
@@ -903,6 +927,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-dca6ec9510fc0176",
         "EN-738e22f0acab814c",
         "EN-842fcb5e60989a03",
         "EN-b81c8201acfc7639",
@@ -1141,6 +1166,7 @@
         "EV-3d8608d3e78e031b",
         "EV-8fcb52bb6ec980af",
         "EV-db304937ceac95d2",
+        "EV-28bd99c785aa9760",
         "EV-9f06b3f05f18b81e",
         "EV-5772d3b77ffa73e2",
         "EV-0a4e9b2eca953036",
@@ -1221,6 +1247,7 @@
         "EN-222f930b87524636",
         "EN-f4bec299df3f4f27",
         "EN-920510199770f4d6",
+        "EN-e470d891c0bda7d8",
         "EN-0281afdb2d56c1e6",
         "EN-36b1dbc8da066a19",
         "EN-c857d09db23e6822",
@@ -1280,7 +1307,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-07"
+      "lastSeen": "2026-08-08"
     },
     {
       "id": "TX-product_form-ai_infrastructure_software",
@@ -1369,6 +1396,7 @@
       "eventIds": [
         "EV-0e84a2f49d765ce3",
         "EV-7263caa45bbf168e",
+        "EV-6fc9c1eab4501ce9",
         "EV-c0d8138d8cab5135",
         "EV-3011ea85c51a3ee0",
         "EV-7309586168387ad8",
@@ -1377,6 +1405,7 @@
       ],
       "entityIds": [
         "EN-634561e92b7593c3",
+        "EN-cb4754c48f8023d0",
         "EN-842fcb5e60989a03",
         "EN-754b113d548b4469",
         "EN-9fbf261b62c1d7c0",
@@ -1388,7 +1417,7 @@
         "HW-ecc6755da7bbbbcd"
       ],
       "firstSeen": "2025-09-26",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-08-08"
     }
   ],
   "fde": [
@@ -1467,6 +1496,33 @@
     }
   ],
   "hardware": [
+    {
+      "id": "HW-c2cdebe5282bbf1d",
+      "eventId": "EV-97363bf0174c24cc",
+      "dataDate": "2026-08-08",
+      "date": "2026-08-05",
+      "title": "FuriosaAI将为斯德哥尔摩数据中心供应8,800颗AI芯片",
+      "hardwareType": "ai_accelerator",
+      "eventType": "hardware_supply",
+      "eventTypeLabel": "硬件供应",
+      "computeLayer": "data_center",
+      "supplier": "FuriosaAI",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://koreaherald.com/article/10831862",
+      "sourceName": "koreaherald.com",
+      "sourceDate": "2026-08-05",
+      "entityIds": [
+        "EN-f4bec299df3f4f27"
+      ]
+    },
     {
       "id": "HW-122f041ab84fcfdf",
       "eventId": "EV-fd693f4b2195b20e",

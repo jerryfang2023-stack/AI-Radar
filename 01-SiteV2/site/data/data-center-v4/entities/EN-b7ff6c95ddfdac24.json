@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1933,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-b7ff6c95ddfdac24",
+    "name": "蚂蚁集团百灵",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-72dc9ab86e08fbab"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-reasoning"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-08",
+    "lastSeen": "2026-08-08",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-72dc9ab86e08fbab"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-72dc9ab86e08fbab",
+        "dataDate": "2026-08-08",
+        "date": "2026-08-08",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "蚂蚁集团百灵开源 Ling-3.0-flash 模型：124B 总参数、5.1B 激活参数",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "reasoning",
+            "name": "推理能力",
+            "entityIds": [
+              "EN-b7ff6c95ddfdac24"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-b7ff6c95ddfdac24",
+          "EN-5a28a1a99a417ba5",
+          "EN-8989aada6eb4a4c3"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-reasoning",
+      "name": "推理能力",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "reasoning",
+      "eventIds": [
+        "EV-b95539d17772a4ce",
+        "EV-72dc9ab86e08fbab",
+        "EV-60110525440fac47",
+        "EV-6f1729f6968b72c9",
+        "EV-314b1d80bc4aa50d",
+        "EV-9496f90f3e808992",
+        "EV-e42e55d1e11a2ba2",
+        "EV-d07906b648eec63f",
+        "EV-3f23ddb47fc652a4",
+        "EV-ae89898e7aa4a4d6",
+        "EV-aa63303570154a9b"
+      ],
+      "entityIds": [
+        "EN-b7ff6c95ddfdac24",
+        "EN-d30e5ffc0ba9150b",
+        "EN-a8100d425f663eac",
+        "EN-ea3bd73e2b506e00",
+        "EN-7d3194f79e645c42",
+        "EN-1cd41545564777ce",
+        "EN-9bc22dcabf7f45b3"
+      ],
+      "fdeIds": [
+        "FDE-a1c35f8b9ea1d489"
+      ],
+      "hardwareIds": [
+        "HW-94ca08e08e6e52fe"
+      ],
+      "firstSeen": "2026-06-01",
+      "lastSeen": "2026-08-08"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

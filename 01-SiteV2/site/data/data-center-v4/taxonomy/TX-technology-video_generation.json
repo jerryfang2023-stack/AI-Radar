@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-07T01:18:26.960Z",
-    "latestDataDate": "2026-08-07",
-    "currentDate": "2026-08-07",
-    "eventCount": 1905,
+    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1933,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -21,6 +21,7 @@
       "EV-522c339dded54be5",
       "EV-a354af52772334fd",
       "EV-26d2874c6ce028d6",
+      "EV-2791b442fd32b894",
       "EV-10c4f4db6c3f2d72",
       "EV-63858d9b5ef92175",
       "EV-650e4b23d45d5758",
@@ -38,10 +39,10 @@
       "EN-e1517be14d06cdb7",
       "EN-d747d6f5125b6bee",
       "EN-b81c8201acfc7639",
+      "EN-047364b9be67f665",
       "EN-422332977c41eb77",
       "EN-c9e6168149dd7cf6",
       "EN-ec1c8f558ff61e34",
-      "EN-047364b9be67f665",
       "EN-2b6e51bec93e86c1",
       "EN-01f1074bb52ff605",
       "EN-47c1e53c427aafb4"
@@ -51,7 +52,7 @@
       "HW-68457c8c0a7240ac"
     ],
     "firstSeen": "2026-06-16",
-    "lastSeen": "2026-08-06"
+    "lastSeen": "2026-08-08"
   },
   "events": [
     {
@@ -482,6 +483,130 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/967/217.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-2791b442fd32b894",
+      "dataDate": "2026-08-08",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-08",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "阿里视频大模型Wan3.0开启公测：文档、ppt也能变视频",
+      "originalTitle": "",
+      "subject": "阿里巴巴",
+      "action": "product_release",
+      "object": "阿里视频大模型Wan3.0开启公测：文档、ppt也能变视频",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-047364b9be67f665"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-047364b9be67f665",
+        "EN-ba4586775462bb3a"
+      ],
+      "entityNames": [
+        "Alibaba",
+        "Wan3.0"
+      ],
+      "productName": "Wan3.0",
+      "products": [
+        {
+          "name": "Wan3.0",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/08/467877.html",
+      "publisher": "量子位"
     },
     {
       "id": "EV-10c4f4db6c3f2d72",
@@ -1916,6 +2041,7 @@
         "EV-26d2874c6ce028d6",
         "EV-b93102125cc062e3",
         "EV-6c361125c3f50bb6",
+        "EV-6360fcef17b43087",
         "EV-fbe519268ddce396",
         "EV-3126fb08491de669",
         "EV-c710c75d9c823a49",
@@ -1931,8 +2057,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-product_form-model",
+        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
         "TX-technology-code_generation",
@@ -1946,7 +2072,114 @@
         "EN-24381ecb01753c1b"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-06"
+      "lastSeen": "2026-08-08"
+    },
+    {
+      "id": "EN-047364b9be67f665",
+      "name": "阿里巴巴",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Alibaba",
+        "Alibaba Group",
+        "阿里"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-00514c4ffc2e3cd3",
+        "EV-43b7f45e9bd7ec9b",
+        "EV-3d93d1da8cb64462",
+        "EV-56da7cceeebc8bcf",
+        "EV-cec68369662236fd",
+        "EV-2d9fde7bc0cd7a22",
+        "EV-c2b613b5a2fb1135",
+        "EV-ef2cd6bd912a6ed8",
+        "EV-4740121f428e4bda",
+        "EV-a354af52772334fd",
+        "EV-c0f87b8c5208cd75",
+        "EV-53f08daddd011dbb",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-3d9aa640411471ea",
+        "EV-2a833330267cb2df",
+        "EV-2791b442fd32b894",
+        "EV-4a6a0e6b6f50946c",
+        "EV-d230942b0787581a",
+        "EV-2fa6949af5b36fb0",
+        "EV-4b286a3354cbf34a",
+        "EV-650e4b23d45d5758",
+        "EV-d2f8019b6783722f",
+        "EV-bfa090c78227abf8",
+        "EV-2e1352039c487bb0",
+        "EV-b4aa08aef57bdb0f",
+        "EV-1a241bcb4fad886c",
+        "EV-6654f62015eff8e3",
+        "EV-8b67e7ac8e61cc1e",
+        "EV-989631c550d89726",
+        "EV-94ad4a217508e6e0",
+        "EV-b43f22d8bc7fec3f",
+        "EV-b888d3eb5f192649",
+        "EV-f388f7ae2debeae8",
+        "EV-d08935b06ed9e7bb",
+        "EV-215f938a46d0b126",
+        "EV-ac1b82f6e6261012",
+        "EV-6fbbbfcdcec81df4",
+        "EV-82e68f59d8584e4e",
+        "EV-fd8ecce5de2f667d",
+        "EV-f6ac2938949f74ec",
+        "EV-363fe72da52bdb86",
+        "EV-83c841a4c42cfdea",
+        "EV-3167e6eed75597e9",
+        "EV-ad2e4fe6a149d95d",
+        "EV-76aa77f5a2e7c661",
+        "EV-77662aa9bef9efbe",
+        "EV-c7f274c3aadece12",
+        "EV-333851b077b606c8",
+        "EV-6712f8ac1f00fe85",
+        "EV-c54172bf4e0c1068",
+        "EV-473f852b374d8b1c",
+        "EV-197aac95e60671f7",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-bbc34d7bc9c02b6f",
+        "EV-a4f413441613beac",
+        "EV-c11ee0da38376254",
+        "EV-657837763764c869",
+        "EV-a4f052325d0ef230",
+        "EV-8692dfde7c3ef5b5",
+        "EV-710b145230faa692"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-agentic_execution",
+        "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-computer_use",
+        "TX-technology-multimodal",
+        "TX-product_form-ai_device",
+        "TX-technology-open_weights",
+        "TX-technology-video_generation",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-52e3d014f9a275ea",
+        "EN-0b0c3b228202ab0a",
+        "EN-22a4c686e665e299",
+        "EN-2daac3672aeafcbd",
+        "EN-3c2a3673eabc9a46",
+        "EN-d65d81c60c0c47c4"
+      ],
+      "firstSeen": "2026-01-12",
+      "lastSeen": "2026-08-08",
+      "organizationFamilyId": "EN-047364b9be67f665",
+      "organizationRole": "group",
+      "organizationFamilyEntityIds": [
+        "EN-e16fc821f34228d1"
+      ],
+      "parentEntityName": ""
     },
     {
       "id": "EN-422332977c41eb77",
@@ -2015,108 +2248,6 @@
       "lastSeen": "2026-07-21"
     },
     {
-      "id": "EN-047364b9be67f665",
-      "name": "阿里巴巴",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "Alibaba",
-        "Alibaba Group",
-        "阿里"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-00514c4ffc2e3cd3",
-        "EV-43b7f45e9bd7ec9b",
-        "EV-3d93d1da8cb64462",
-        "EV-56da7cceeebc8bcf",
-        "EV-cec68369662236fd",
-        "EV-2d9fde7bc0cd7a22",
-        "EV-c2b613b5a2fb1135",
-        "EV-ef2cd6bd912a6ed8",
-        "EV-4740121f428e4bda",
-        "EV-a354af52772334fd",
-        "EV-c0f87b8c5208cd75",
-        "EV-53f08daddd011dbb",
-        "EV-e1a4bc40db4a9d8f",
-        "EV-2a833330267cb2df",
-        "EV-2fa6949af5b36fb0",
-        "EV-4b286a3354cbf34a",
-        "EV-650e4b23d45d5758",
-        "EV-d2f8019b6783722f",
-        "EV-bfa090c78227abf8",
-        "EV-2e1352039c487bb0",
-        "EV-b4aa08aef57bdb0f",
-        "EV-1a241bcb4fad886c",
-        "EV-6654f62015eff8e3",
-        "EV-8b67e7ac8e61cc1e",
-        "EV-989631c550d89726",
-        "EV-94ad4a217508e6e0",
-        "EV-b43f22d8bc7fec3f",
-        "EV-b888d3eb5f192649",
-        "EV-f388f7ae2debeae8",
-        "EV-d08935b06ed9e7bb",
-        "EV-215f938a46d0b126",
-        "EV-ac1b82f6e6261012",
-        "EV-6fbbbfcdcec81df4",
-        "EV-82e68f59d8584e4e",
-        "EV-fd8ecce5de2f667d",
-        "EV-f6ac2938949f74ec",
-        "EV-363fe72da52bdb86",
-        "EV-83c841a4c42cfdea",
-        "EV-3167e6eed75597e9",
-        "EV-ad2e4fe6a149d95d",
-        "EV-76aa77f5a2e7c661",
-        "EV-77662aa9bef9efbe",
-        "EV-c7f274c3aadece12",
-        "EV-333851b077b606c8",
-        "EV-6712f8ac1f00fe85",
-        "EV-c54172bf4e0c1068",
-        "EV-473f852b374d8b1c",
-        "EV-197aac95e60671f7",
-        "EV-4e6dc3ec2b3f0bd6",
-        "EV-bbc34d7bc9c02b6f",
-        "EV-a4f413441613beac",
-        "EV-c11ee0da38376254",
-        "EV-657837763764c869",
-        "EV-a4f052325d0ef230",
-        "EV-8692dfde7c3ef5b5",
-        "EV-710b145230faa692"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-product_form-model",
-        "TX-target_user-business_user",
-        "TX-use_case-data_analysis",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-computer_use",
-        "TX-technology-multimodal",
-        "TX-product_form-ai_device",
-        "TX-technology-open_weights",
-        "TX-technology-video_generation"
-      ],
-      "relatedEntityIds": [
-        "EN-52e3d014f9a275ea",
-        "EN-0b0c3b228202ab0a",
-        "EN-22a4c686e665e299",
-        "EN-2daac3672aeafcbd",
-        "EN-3c2a3673eabc9a46",
-        "EN-d65d81c60c0c47c4"
-      ],
-      "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-05",
-      "organizationFamilyId": "EN-047364b9be67f665",
-      "organizationRole": "group",
-      "organizationFamilyEntityIds": [
-        "EN-e16fc821f34228d1"
-      ],
-      "parentEntityName": ""
-    },
-    {
       "id": "EN-2b6e51bec93e86c1",
       "name": "Google DeepMind",
       "entityType": "organization_candidate",
@@ -2166,12 +2297,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
+        "TX-product_form-chip_accelerator",
         "TX-use_case-research_discovery",
         "TX-industry-media_entertainment",
-        "TX-use_case-security_operations",
         "TX-use_case-software_development",
+        "TX-use_case-security_operations",
         "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-technology-multimodal",

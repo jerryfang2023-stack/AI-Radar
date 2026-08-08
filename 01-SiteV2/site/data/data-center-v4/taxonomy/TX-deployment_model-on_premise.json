@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-07T01:18:26.960Z",
-    "latestDataDate": "2026-08-07",
-    "currentDate": "2026-08-07",
-    "eventCount": 1905,
+    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1933,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -20,6 +20,7 @@
     "eventIds": [
       "EV-0e84a2f49d765ce3",
       "EV-7263caa45bbf168e",
+      "EV-6fc9c1eab4501ce9",
       "EV-c0d8138d8cab5135",
       "EV-3011ea85c51a3ee0",
       "EV-7309586168387ad8",
@@ -28,6 +29,7 @@
     ],
     "entityIds": [
       "EN-634561e92b7593c3",
+      "EN-cb4754c48f8023d0",
       "EN-842fcb5e60989a03",
       "EN-754b113d548b4469",
       "EN-9fbf261b62c1d7c0",
@@ -39,7 +41,7 @@
       "HW-ecc6755da7bbbbcd"
     ],
     "firstSeen": "2025-09-26",
-    "lastSeen": "2026-07-17"
+    "lastSeen": "2026-08-08"
   },
   "events": [
     {
@@ -712,6 +714,96 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/959/026.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-6fc9c1eab4501ce9",
+      "dataDate": "2026-08-08",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-08",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Claude Code v2.1.224 发布：新增自托管环境、跨会话消息与多项修复",
+      "originalTitle": "",
+      "subject": "Claude Code v2.1.224",
+      "action": "发布",
+      "object": "：新增自托管环境、跨会话消息与多项修复",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "on_premise",
+            "name": "本地部署",
+            "entityIds": [
+              "EN-cb4754c48f8023d0"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "on_premise",
+          "name": "本地部署",
+          "entityIds": [
+            "EN-cb4754c48f8023d0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "on_premise",
+          "name": "本地部署",
+          "entityIds": [
+            "EN-cb4754c48f8023d0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-cb4754c48f8023d0"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Claude Code"
+      ],
+      "productName": "Claude Code",
+      "products": [
+        {
+          "name": "Claude Code",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.224",
+      "publisher": "Claude Code：GitHub Releases（RSS）"
     },
     {
       "id": "EV-c0d8138d8cab5135",
@@ -1443,6 +1535,85 @@
       "lastSeen": "2026-06-08"
     },
     {
+      "id": "EN-cb4754c48f8023d0",
+      "name": "Claude Code",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [
+        "Claude Code v2.1.160",
+        "Claude Code v2.1.161",
+        "Claude Code v2.1.170",
+        "Claude Code v2.1.174",
+        "Claude Code v2.1.176",
+        "Claude Code v2.1.181",
+        "Code",
+        "Claude Code v2.1.186",
+        "Claude Code v2.1.187",
+        "Claude Code v2.1.193",
+        "Claude Code v2.1.198",
+        "Claude Code v2.1.202",
+        "Claude Code v2.1.208",
+        "Claude Code v2.1.212"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6fc9c1eab4501ce9",
+        "EV-b06624cf36990346",
+        "EV-ee1e825af98ecab7",
+        "EV-f0d54da5bf0d7399",
+        "EV-0e616f9e775a77dc",
+        "EV-ae9f1e2cf5a28be4",
+        "EV-7b3d99fb28e5f613",
+        "EV-a06d2f33db7f9b98",
+        "EV-8121a1ecdf168d8a",
+        "EV-3b6252b20720e697",
+        "EV-815cf2e2041b509b",
+        "EV-debecca007e547d2",
+        "EV-a8a8f26c5128d894",
+        "EV-22927691d2e0f0d6",
+        "EV-3433ad1746695875",
+        "EV-79e295585f997372",
+        "EV-2bd337245c920bc8",
+        "EV-ccfb713e9a03a348",
+        "EV-2637d0865239cb1a",
+        "EV-e130583e34ab9d4c",
+        "EV-598888cce208de5c",
+        "EV-f784003febc1d9eb",
+        "EV-9ba97954b453d337",
+        "EV-63fdf001c22a0ed4",
+        "EV-d2c370511e9e55fe",
+        "EV-445db243814e88d0",
+        "EV-cb08f263d23e6c00",
+        "EV-9536c76cee278fcb",
+        "EV-e1ff39d421631fc1",
+        "EV-60c27ec9b857f5c2",
+        "EV-cec69087dc8992e0",
+        "EV-4b81ffcfa0391750",
+        "EV-461b38cb8f56b067",
+        "EV-57f083a39393d841",
+        "EV-9a7a1cf83cfde7c3",
+        "EV-b0145ffd99b55e66",
+        "EV-45c7e4abc3e3af6b",
+        "EV-2687a22df927f183",
+        "EV-dbeae330706b53ca",
+        "EV-abaf05e513f88a4f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-deployment_model-on_premise",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-08-08"
+    },
+    {
       "id": "EN-842fcb5e60989a03",
       "name": "Press",
       "entityType": "organization_candidate",
@@ -1685,6 +1856,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-6ebcbb2660ec7ad9",
         "EV-f1912ab7c46288f3",
+        "EV-97363bf0174c24cc",
         "EV-5967613eaac1a670"
       ],
       "viewpointIds": [],
@@ -1699,7 +1871,7 @@
         "EN-5f5fcd8701ab30c0"
       ],
       "firstSeen": "2025-09-26",
-      "lastSeen": "2026-07-16"
+      "lastSeen": "2026-08-08"
     }
   ],
   "fde": [],

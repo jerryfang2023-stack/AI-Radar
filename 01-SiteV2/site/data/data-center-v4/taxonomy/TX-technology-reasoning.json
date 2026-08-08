@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-07T01:18:26.960Z",
-    "latestDataDate": "2026-08-07",
-    "currentDate": "2026-08-07",
-    "eventCount": 1905,
+    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1933,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -19,6 +19,7 @@
     "valueId": "reasoning",
     "eventIds": [
       "EV-b95539d17772a4ce",
+      "EV-72dc9ab86e08fbab",
       "EV-60110525440fac47",
       "EV-6f1729f6968b72c9",
       "EV-314b1d80bc4aa50d",
@@ -30,6 +31,7 @@
       "EV-aa63303570154a9b"
     ],
     "entityIds": [
+      "EN-b7ff6c95ddfdac24",
       "EN-d30e5ffc0ba9150b",
       "EN-a8100d425f663eac",
       "EN-ea3bd73e2b506e00",
@@ -44,7 +46,7 @@
       "HW-94ca08e08e6e52fe"
     ],
     "firstSeen": "2026-06-01",
-    "lastSeen": "2026-07-31"
+    "lastSeen": "2026-08-08"
   },
   "events": [
     {
@@ -207,6 +209,114 @@
       "products": [],
       "sourceUrl": "https://economictimes.indiatimes.com/tech/artificial-intelligence/servicenow-nvidia-expand-partnership-launch-new-ai-agent/articleshow/120999550.cms",
       "publisher": "economictimes.indiatimes.com"
+    },
+    {
+      "id": "EV-72dc9ab86e08fbab",
+      "dataDate": "2026-08-08",
+      "date": "2026-08-08",
+      "updatedDate": "2026-08-08",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "蚂蚁集团百灵开源 Ling-3.0-flash 模型：124B 总参数、5.1B 激活参数",
+      "originalTitle": "",
+      "subject": "蚂蚁集团百灵",
+      "action": "开源 Ling-3.0-flash 模型",
+      "object": "：124B 总参数、5.1B 激活参数",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-ithome-rss"
+        ],
+        "claim_refs": [
+          "CL-24c1d3ba0b3991a6",
+          "CL-310204201291f150",
+          "CL-ecb55432ea944920",
+          "CL-b203b1076c6cbafd"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力",
+          "entityIds": [
+            "EN-b7ff6c95ddfdac24"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力",
+          "entityIds": [
+            "EN-b7ff6c95ddfdac24"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力",
+          "entityIds": [
+            "EN-b7ff6c95ddfdac24"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-b7ff6c95ddfdac24",
+        "EN-5a28a1a99a417ba5",
+        "EN-8989aada6eb4a4c3"
+      ],
+      "entityNames": [
+        "蚂蚁集团百灵",
+        "Ant Group",
+        "Ling-3.0-flash"
+      ],
+      "productName": "Ling-3.0-flash",
+      "products": [
+        {
+          "name": "Ling-3.0-flash",
+          "type": "模型",
+          "ownerNames": [
+            "Ant Group"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/987/231.htm",
+      "publisher": "IT之家"
     },
     {
       "id": "EV-60110525440fac47",
@@ -1637,6 +1747,27 @@
   ],
   "entities": [
     {
+      "id": "EN-b7ff6c95ddfdac24",
+      "name": "蚂蚁集团百灵",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-72dc9ab86e08fbab"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-reasoning"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-08",
+      "lastSeen": "2026-08-08"
+    },
+    {
       "id": "EN-d30e5ffc0ba9150b",
       "name": "蚂蚁集团",
       "entityType": "organization_candidate",
@@ -1654,9 +1785,7 @@
         "TX-product_form-model",
         "TX-technology-reasoning"
       ],
-      "relatedEntityIds": [
-        "EN-8989aada6eb4a4c3"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-07-24",
       "lastSeen": "2026-07-25"
     },
@@ -1774,8 +1903,8 @@
         "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
         "TX-product_form-enterprise_software_platform",
-        "TX-product_form-end_user_application",
         "TX-use_case-software_development",
+        "TX-product_form-end_user_application",
         "TX-product_form-model_api_service",
         "TX-technology-code_generation",
         "TX-technology-computer_use",
@@ -1864,6 +1993,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-de6c27c1dac18a2a",
         "EV-6cea35f065f0ee9e",
         "EV-92be9fa58b1ee19f",
         "EV-dc56b5ae3009f6f5",
@@ -1885,6 +2015,8 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-997609968760857a",
+        "EV-8a88707160ae733d",
         "EV-1b5b1d3317c8f688",
         "EV-8de21f5aa53242f1",
         "EV-b06624cf36990346",
@@ -2037,6 +2169,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-67a7a3c9f1eabd22",
         "EV-4e3e9b543127b55a",
         "EV-2321e89fad893290",
         "EV-e07d82ffbad83150",
@@ -2094,11 +2227,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-industry-retail_ecommerce",
         "TX-industry-aerospace_defense",
-        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
@@ -2107,12 +2240,12 @@
         "TX-industry-media_entertainment",
         "TX-industry-professional_services",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-security_operations",
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-product_form-enterprise_software_platform",
         "TX-use_case-software_development",
+        "TX-use_case-security_operations",
+        "TX-product_form-end_user_application",
         "TX-target_user-consumer",
         "TX-use_case-customer_support",
         "TX-technology-code_generation",
@@ -2123,8 +2256,8 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
-        "EN-7839fb10a8f14c70",
         "EN-d1ad14d4ad57d207",
+        "EN-7839fb10a8f14c70",
         "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
         "EN-3850792f618f534b",
@@ -2147,7 +2280,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-07"
+      "lastSeen": "2026-08-08"
     },
     {
       "id": "EN-1cd41545564777ce",

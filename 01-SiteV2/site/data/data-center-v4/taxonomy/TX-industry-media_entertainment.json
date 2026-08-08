@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-07T01:18:26.960Z",
-    "latestDataDate": "2026-08-07",
-    "currentDate": "2026-08-07",
-    "eventCount": 1905,
+    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1933,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -39,6 +39,7 @@
       "EV-2d6d2dc0ead4be10",
       "EV-afcd5426f5c01dc7",
       "EV-6c361125c3f50bb6",
+      "EV-6360fcef17b43087",
       "EV-35df5cc7eacdade7",
       "EV-c9dda33325d18ba3",
       "EV-aad2b98b8f25d64b",
@@ -74,6 +75,7 @@
       "EN-3db1f560db626918",
       "EN-bfc698cb0f9b4d72",
       "EN-23929c7dca3eb576",
+      "EN-dd668059ea96880e",
       "EN-7d3194f79e645c42",
       "EN-24f5eb8d2e667579",
       "EN-d36e5a1a7a3c45ce",
@@ -90,7 +92,7 @@
       "HW-dca442211b264bbe"
     ],
     "firstSeen": "2026-05-08",
-    "lastSeen": "2026-08-05"
+    "lastSeen": "2026-08-08"
   },
   "events": [
     {
@@ -12866,6 +12868,110 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-6360fcef17b43087",
+      "dataDate": "2026-08-08",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-08",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "华为鸿蒙 HarmonyOS SDK 游戏新特性公开：含 AI 超分、控显分离、硬件光追等",
+      "originalTitle": "",
+      "subject": "华为",
+      "action": "product_release",
+      "object": "HarmonyOS SDK 游戏新特性（含 AI 超分、控显分离、硬件光追等）",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-ithome-rss"
+        ],
+        "claim_refs": [
+          "CL-6ede0bd1541aa733",
+          "CL-ce59b8179f48dda3"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "media_entertainment",
+            "name": "媒体与娱乐",
+            "entityIds": [
+              "EN-dd668059ea96880e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "media_entertainment",
+          "name": "媒体与娱乐",
+          "entityIds": [
+            "EN-dd668059ea96880e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "media_entertainment",
+          "name": "媒体与娱乐",
+          "entityIds": [
+            "EN-dd668059ea96880e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-b81c8201acfc7639",
+        "EN-dd668059ea96880e"
+      ],
+      "entityNames": [
+        "Huawei",
+        "HarmonyOS SDK"
+      ],
+      "productName": "HarmonyOS SDK",
+      "products": [
+        {
+          "name": "HarmonyOS SDK",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Huawei"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/987/205.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-35df5cc7eacdade7",
       "dataDate": "2026-08-01",
       "date": "2026-07-31",
@@ -14593,9 +14699,9 @@
         "TX-industry-telecommunications",
         "TX-target_user-developer",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-product_form-enterprise_software_platform",
         "TX-ai_market_application-ai_observability_governance",
         "TX-ai_market_subcategory-observability_evaluation",
-        "TX-product_form-enterprise_software_platform",
         "TX-use_case-security_operations"
       ],
       "relatedEntityIds": [],
@@ -14666,9 +14772,9 @@
         "TX-industry-professional_services",
         "TX-industry-telecommunications",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-productivity_enterprise_workflows"
+        "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-product_form-enterprise_software_platform"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-14",
@@ -14802,9 +14908,9 @@
         "TX-industry-telecommunications",
         "TX-target_user-developer",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-product_form-enterprise_software_platform",
         "TX-ai_market_application-ai_observability_governance",
         "TX-ai_market_subcategory-observability_evaluation",
-        "TX-product_form-enterprise_software_platform",
         "TX-use_case-security_operations"
       ],
       "relatedEntityIds": [],
@@ -14847,8 +14953,8 @@
         "TX-industry-professional_services",
         "TX-industry-telecommunications",
         "TX-target_user-developer",
-        "TX-use_case-security_operations",
         "TX-use_case-software_development",
+        "TX-use_case-security_operations",
         "TX-product_form-ai_infrastructure_software",
         "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_application-ai_development_orchestration"
@@ -14872,13 +14978,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-industry-retail_ecommerce",
         "TX-industry-aerospace_defense",
         "TX-industry-agriculture",
         "TX-industry-energy_utilities",
         "TX-industry-government_public_sector",
         "TX-industry-logistics_supply_chain",
-        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
         "TX-industry-construction_real_estate",
@@ -14891,8 +14997,8 @@
         "TX-industry-media_entertainment",
         "TX-industry-professional_services",
         "TX-industry-telecommunications",
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
+        "TX-product_form-end_user_application",
         "TX-ai_market_subcategory-sales",
         "TX-use_case-customer_support",
         "TX-use_case-sales"
@@ -14980,8 +15086,8 @@
       "classificationRefs": [
         "TX-target_user-business_user",
         "TX-industry-media_entertainment",
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
+        "TX-product_form-end_user_application",
         "TX-use_case-content_creation",
         "TX-use_case-marketing",
         "TX-ai_market_subcategory-marketing"
@@ -15023,8 +15129,8 @@
         "TX-industry-media_entertainment",
         "TX-industry-professional_services",
         "TX-industry-telecommunications",
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
+        "TX-product_form-end_user_application",
         "TX-ai_market_subcategory-sales",
         "TX-use_case-customer_support",
         "TX-use_case-sales",
@@ -15053,9 +15159,9 @@
         "TX-industry-construction_real_estate",
         "TX-industry-manufacturing",
         "TX-industry-media_entertainment",
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-product_form-end_user_application",
         "TX-target_user-consumer",
         "TX-use_case-content_creation",
         "TX-use_case-design_engineering"
@@ -15143,9 +15249,9 @@
         "TX-industry-professional_services",
         "TX-industry-telecommunications",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-productivity_enterprise_workflows"
+        "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-product_form-end_user_application"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
@@ -15272,6 +15378,27 @@
       "lastSeen": "2026-06-07"
     },
     {
+      "id": "EN-dd668059ea96880e",
+      "name": "HarmonyOS SDK",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6360fcef17b43087"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-media_entertainment"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-07",
+      "lastSeen": "2026-08-08"
+    },
+    {
       "id": "EN-7d3194f79e645c42",
       "name": "OpenAI",
       "entityType": "organization_candidate",
@@ -15336,6 +15463,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-de6c27c1dac18a2a",
         "EV-6cea35f065f0ee9e",
         "EV-92be9fa58b1ee19f",
         "EV-dc56b5ae3009f6f5",
@@ -15357,6 +15485,8 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-997609968760857a",
+        "EV-8a88707160ae733d",
         "EV-1b5b1d3317c8f688",
         "EV-8de21f5aa53242f1",
         "EV-b06624cf36990346",
@@ -15509,6 +15639,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-67a7a3c9f1eabd22",
         "EV-4e3e9b543127b55a",
         "EV-2321e89fad893290",
         "EV-e07d82ffbad83150",
@@ -15566,11 +15697,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-industry-retail_ecommerce",
         "TX-industry-aerospace_defense",
-        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
@@ -15579,12 +15710,12 @@
         "TX-industry-media_entertainment",
         "TX-industry-professional_services",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-security_operations",
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-product_form-enterprise_software_platform",
         "TX-use_case-software_development",
+        "TX-use_case-security_operations",
+        "TX-product_form-end_user_application",
         "TX-target_user-consumer",
         "TX-use_case-customer_support",
         "TX-technology-code_generation",
@@ -15595,8 +15726,8 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
-        "EN-7839fb10a8f14c70",
         "EN-d1ad14d4ad57d207",
+        "EN-7839fb10a8f14c70",
         "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
         "EN-3850792f618f534b",
@@ -15619,7 +15750,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-07"
+      "lastSeen": "2026-08-08"
     },
     {
       "id": "EN-24f5eb8d2e667579",
@@ -15776,8 +15907,8 @@
         "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
         "TX-product_form-enterprise_software_platform",
-        "TX-product_form-end_user_application",
         "TX-use_case-software_development",
+        "TX-product_form-end_user_application",
         "TX-product_form-model_api_service",
         "TX-technology-code_generation",
         "TX-technology-computer_use",
@@ -15918,12 +16049,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
+        "TX-product_form-chip_accelerator",
         "TX-use_case-research_discovery",
         "TX-industry-media_entertainment",
-        "TX-use_case-security_operations",
         "TX-use_case-software_development",
+        "TX-use_case-security_operations",
         "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-technology-multimodal",

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-07T01:18:26.960Z",
-    "latestDataDate": "2026-08-07",
-    "currentDate": "2026-08-07",
-    "eventCount": 1905,
+    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1933,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-c35c34271c7caf53",
       "EV-99005688ec16c082",
       "EV-54ecd52c69b97834",
       "EV-43e2290d712da3c6",
@@ -29,17 +30,19 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-technology-agentic_execution"
+      "TX-technology-agentic_execution",
+      "TX-target_user-consumer"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-01",
-    "lastSeen": "2026-08-07",
+    "lastSeen": "2026-08-08",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-c35c34271c7caf53",
         "EV-99005688ec16c082",
         "EV-54ecd52c69b97834",
         "EV-43e2290d712da3c6"
@@ -51,6 +54,45 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-c35c34271c7caf53",
+        "dataDate": "2026-08-08",
+        "date": "2026-08-07",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Cloudflare 推出 Kitesurf，一款为 AI 智能体打造的浏览器",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-738e22f0acab814c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-738e22f0acab814c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-738e22f0acab814c",
+          "EN-0bbbffe05960c1bb"
+        ]
+      },
       {
         "id": "EV-99005688ec16c082",
         "dataDate": "2026-08-07",
@@ -199,6 +241,7 @@
         "EV-f54ec32c67e9447c",
         "EV-7817dc69d5228cbb",
         "EV-7951af05be21dc7c",
+        "EV-7f3298069258b3ea",
         "EV-561e2028a6212b99",
         "EV-921c843ad32c993c",
         "EV-010946e35d35bb43",
@@ -300,6 +343,7 @@
         "EV-01df8e489a34893b",
         "EV-afd0332ad8f5f05b",
         "EV-cab03fca079f62e6",
+        "EV-8619e2d881669888",
         "EV-76e7dc691b68fa04",
         "EV-aa7cf8ee6c875f08",
         "EV-dc56b5ae3009f6f5",
@@ -332,6 +376,9 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-997609968760857a",
+        "EV-e6b22f59df71890e",
+        "EV-c35c34271c7caf53",
         "EV-99005688ec16c082",
         "EV-6249564cff324a0e",
         "EV-b06624cf36990346",
@@ -565,6 +612,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-67a7a3c9f1eabd22",
         "EV-4e3e9b543127b55a",
         "EV-20b82e2a2cb33a0e",
         "EV-8b36007d0b5f377f",
@@ -627,6 +675,7 @@
         "EN-e23228440ca5340f",
         "EN-e69f64149edae6b1",
         "EN-44355566aea5df6f",
+        "EN-37a54e5c414654d8",
         "EN-19a5848a577315c5",
         "EN-d1fa538179ba6371",
         "EN-b9b0702726f5be1c",
@@ -636,7 +685,6 @@
         "EN-f3d05a0f6248941d",
         "EN-bd573a2c01411003",
         "EN-f346eaca864441f9",
-        "EN-37a54e5c414654d8",
         "EN-e19b20530b205aa9",
         "EN-4abc3bd0f9e75c63",
         "EN-ef2bee7868007cd4",
@@ -709,6 +757,7 @@
         "EN-916a98f0fa2a39af",
         "EN-8d291c7017252b07",
         "EN-f8048254c29fa79e",
+        "EN-6c0f28e4fa82c2a5",
         "EN-82a31e57d3a2fa17",
         "EN-4e358c403850a88a",
         "EN-543ed2ff052fe0cd",
@@ -722,6 +771,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-dca6ec9510fc0176",
         "EN-738e22f0acab814c",
         "EN-842fcb5e60989a03",
         "EN-b81c8201acfc7639",
@@ -908,6 +958,81 @@
       ],
       "firstSeen": "2024-09-05",
       "lastSeen": "2027-09-30"
+    },
+    {
+      "id": "TX-target_user-consumer",
+      "name": "个人用户",
+      "nodeType": "target_user",
+      "typeLabel": "目标用户",
+      "valueId": "consumer",
+      "eventIds": [
+        "EV-2dff88f85e3bce86",
+        "EV-f1553722b4ce43af",
+        "EV-02882e6f5e1902c6",
+        "EV-ecc12e5ec883b7e7",
+        "EV-b5dd10300e34f2d3",
+        "EV-7a85e21802efd8b2",
+        "EV-52115fee0e716170",
+        "EV-ee38c30c00b2a754",
+        "EV-d3fcd1ea4d9baf47",
+        "EV-4f7462a365561bb5",
+        "EV-fab81bddb815267b",
+        "EV-d4e44892226be468",
+        "EV-f487788f3d44f288",
+        "EV-44c9a50b99c76a70",
+        "EV-ef7346378fcf9746",
+        "EV-e12b17260d19c5ff",
+        "EV-eb4858e820bf9435",
+        "EV-450f624a6a6446ce",
+        "EV-a1aea4a04b9e51c7",
+        "EV-777eb5b7783b71fb",
+        "EV-c35c34271c7caf53",
+        "EV-4c949b6aac6d26e7",
+        "EV-385dc1ac09a211bd",
+        "EV-ac8f8581cd1ca75d",
+        "EV-113899096a32165a",
+        "EV-be19904753c9c486",
+        "EV-c108e7cc2df7faf4",
+        "EV-83acf26a011ef213",
+        "EV-c7a2774b07554f5d",
+        "EV-f2d29ca7b05c3dd9",
+        "EV-32a5af8d5ef80073"
+      ],
+      "entityIds": [
+        "EN-770ef1d2b6e24172",
+        "EN-b80e0af617d0f8ff",
+        "EN-2a920347dfcf07a7",
+        "EN-7706c3c94d5f9b59",
+        "EN-e22521e7de65d819",
+        "EN-3eee4f30151db45a",
+        "EN-24af08c2634cb45a",
+        "EN-2b60b46911fc1640",
+        "EN-634537cdabd4e325",
+        "EN-858b4458c482f7d2",
+        "EN-ee00b93bf0631b3e",
+        "EN-7d3194f79e645c42",
+        "EN-f3d05a0f6248941d",
+        "EN-245f1e177c5169cb",
+        "EN-e78bdebae031095b",
+        "EN-f30ad7677baf7ea2",
+        "EN-094b7ade939cad4d",
+        "EN-fb54e9062429a937",
+        "EN-738e22f0acab814c",
+        "EN-9fbf261b62c1d7c0",
+        "EN-3f726694f178ed7a",
+        "EN-143a82384f59112c",
+        "EN-2d0943142ffe9b0f",
+        "EN-8a96f1a807787797",
+        "EN-28d79881d0386305",
+        "EN-c70eca6b0f88f44d",
+        "EN-50537dab76505dfc"
+      ],
+      "fdeIds": [
+        "FDE-3d5eb0bc571f55bf"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2025-10-09",
+      "lastSeen": "2026-08-08"
     }
   ],
   "fde": [],

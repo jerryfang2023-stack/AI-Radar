@@ -1,0 +1,196 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1933,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-f34d782f3e1f704c",
+    "name": "Solve AI",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-9dd391d60f580f44"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-04",
+    "lastSeen": "2026-08-08",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-9dd391d60f580f44"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-9dd391d60f580f44",
+        "dataDate": "2026-08-08",
+        "date": "2026-08-04",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "NEO Semiconductor推出NEO.AI内存平台，解决AI两大内存瓶颈",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-26e4cd038c9369f4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-26e4cd038c9369f4",
+          "EN-b76ce5b0ab5c287c",
+          "EN-30bf003abd6ae3c7",
+          "EN-f34d782f3e1f704c"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-ddf2b1c11e376438",
+      "snapshotKey": "ddf2b1c11e376438",
+      "snapshotId": "HWS-9ec694d3e9392bf6",
+      "eventId": "EV-9dd391d60f580f44",
+      "eventIds": [
+        "EV-9dd391d60f580f44"
+      ],
+      "dataDate": "2026-08-08",
+      "date": "2026-08-08",
+      "title": "NEO.AI Memory / AI Memory / Solve AI",
+      "subject": "NEO Semiconductor",
+      "productNames": [
+        "NEO.AI Memory",
+        "AI Memory",
+        "Solve AI"
+      ],
+      "hardwareType": "semiconductor / gpu",
+      "factTypes": [
+        "specification",
+        "product"
+      ],
+      "latestValues": {
+        "specification": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-1169600f27fc80b1"
+        },
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-c0efff45b0e93a36"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-08",
+          "hardware_fact_id": "HWF-1169600f27fc80b1",
+          "fact_type": "specification",
+          "observed_at": "2026-08-04T00:00:00.000Z",
+          "subject_entity_id": "EN-26e4cd038c9369f4",
+          "subject_name": "NEO Semiconductor",
+          "product_entity_ids": [
+            "EN-b76ce5b0ab5c287c",
+            "EN-30bf003abd6ae3c7",
+            "EN-f34d782f3e1f704c"
+          ],
+          "product_names": [
+            "NEO.AI Memory",
+            "AI Memory",
+            "Solve AI"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "SANTA CLARA, Calif. , Aug. 4, 2026 /PRNewswire/ -- NEO Semiconductor , a leading innovator in advanced AI and memory technologies, today announced the launch of NEO.AI, its next-generation AI memory platform designed to solve the two most significant memory bottlenecks limiting future artificial intelligence systems: on-chip memory (AI cache) and HBM capacity. As part of the platform launch, the company is officially unveiling X-SRAM , its breakthrough AI on-chip memory technology, alongside the latest progress on 3D X-DRAM, its revolutionary high-capacity HBM technology.",
+          "event_refs": [
+            "EV-9dd391d60f580f44"
+          ],
+          "claim_ref": "CL-4e2593bcf9885586",
+          "source_refs": [
+            "SA-504e70060edf49bd"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-08/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-08",
+          "hardware_fact_id": "HWF-c0efff45b0e93a36",
+          "fact_type": "product",
+          "observed_at": "2026-08-04T00:00:00.000Z",
+          "subject_entity_id": "EN-26e4cd038c9369f4",
+          "subject_name": "NEO Semiconductor",
+          "product_entity_ids": [
+            "EN-b76ce5b0ab5c287c",
+            "EN-30bf003abd6ae3c7",
+            "EN-f34d782f3e1f704c"
+          ],
+          "product_names": [
+            "NEO.AI Memory",
+            "AI Memory",
+            "Solve AI"
+          ],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "NEO Semiconductor introduces its new X-SRAM cell for next-generation GPUs and AI processors, delivering up to 5× higher on-chip memory density with full compatibility with foundries' standard nanosheet logic processes",
+          "event_refs": [
+            "EV-9dd391d60f580f44"
+          ],
+          "claim_ref": "CL-7fe09bfa91d79052",
+          "source_refs": [
+            "SA-504e70060edf49bd"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-08/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://prnewswire.com/news-releases/neo-semiconductor-launches-neoai-memory-platform-to-solve-ais-two-biggest-memory-bottlenecks-302842176.html",
+      "entityIds": [
+        "EN-26e4cd038c9369f4",
+        "EN-b76ce5b0ab5c287c",
+        "EN-30bf003abd6ae3c7",
+        "EN-f34d782f3e1f704c"
+      ]
+    }
+  ]
+}
