@@ -1,0 +1,306 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-bcb98dcb1568ed",
+    "name": "BoxGroup",
+    "aliases": [
+      "Box Group"
+    ],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 4,
+    "first_disclosed_at": "2026-04-27",
+    "latest_disclosed_at": "2026-08-01",
+    "role_counts": {
+      "co_lead": 1,
+      "historical_or_ambiguous": 1,
+      "participant": 3
+    },
+    "round_codes": [
+      "seed",
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-5f5ed85925074c92",
+        "canonical_entity_id": "",
+        "name": "Foundational Industries"
+      },
+      {
+        "entity_id": "EN-a7dd4a797cf9990b",
+        "canonical_entity_id": "",
+        "name": "Niteshift"
+      },
+      {
+        "entity_id": "EN-830cefea8ed73a00",
+        "canonical_entity_id": "",
+        "name": "Ornn AI Inc."
+      },
+      {
+        "entity_id": "EN-cfd90af8403941bf",
+        "canonical_entity_id": "",
+        "name": "Sable"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-05a1511c37624621",
+        "funding_insight_id": "FI-035c211b764aa7fa",
+        "event_ids": [
+          "EV-268e5c3d36e3ed28"
+        ],
+        "company_entity_id": "EN-5f5ed85925074c92",
+        "company_canonical_entity_id": "",
+        "company_name": "Foundational Industries",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$25 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 25000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2500 万美元"
+        },
+        "announced_at": "2026-08-01",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-e6ee0cd472bfb792",
+            "source_url": "https://aiweekly.co/alerts/foundational-industries-raises-25m-to-build-ai-run-factories",
+            "source_title": "Foundational Industries 筹集 2500 万美元，打造 AI 运营工厂",
+            "source_content_hash": "ad03bbee3088b0fc",
+            "quote": "The round was led by BoxGroup and Zigg Ventures",
+            "quote_hash": "603f65c4354e79487ebff6657abc1acb3c8db7111baaf6bb4c0e4eab80efc8a1"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a33a170683955a67",
+        "funding_insight_id": "FI-2ebe52bd95cf8644",
+        "event_ids": [
+          "EV-1da2e46e39a57d33"
+        ],
+        "company_entity_id": "EN-cfd90af8403941bf",
+        "company_canonical_entity_id": "",
+        "company_name": "Sable",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$45 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 45000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4500 万美元"
+        },
+        "announced_at": "2026-07-16",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9f8cec869ac3008e",
+            "source_url": "https://www.citybiz.co/article/876088/sable-raises-45m-to-build-ai-employee-for-customer-relations/",
+            "source_title": "Sable Raises $45M to Build ‘AI Employee’ for Customer Relations | citybiz",
+            "source_content_hash": "be1a3bb8f3be622f",
+            "quote": "Other investors in the round included BoxGroup, SV Angel, Valor Atreides AI Fund, and Sabrina and Evan Hahn.",
+            "quote_hash": "c9b09741a783eeded8d5ba6e91bf31f306cc1e89aff8eb3e3905e54b1ac16dbb"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a244230078be83bd",
+        "funding_insight_id": "FI-2a73fb895b9521fe",
+        "event_ids": [
+          "EV-7b1c734882fa1ea6"
+        ],
+        "company_entity_id": "EN-830cefea8ed73a00",
+        "company_canonical_entity_id": "",
+        "company_name": "Ornn AI Inc.",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$33M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 33000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3300 万美元"
+        },
+        "announced_at": "2026-06-24",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "既有投资方（本轮参投）",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-44c6debf2c528a2a",
+            "source_url": "https://siliconangle.com/2026/06/24/ornn-raises-33m-help-companies-buy-sell-ai-compute-commodity-like-oil/",
+            "source_title": "Ornn 融资 3300 万美元，帮助企业像买卖石油一样交易 AI 算力",
+            "source_content_hash": "5fe0ae2b10239c5e",
+            "quote": "plus existing investors Crucible Capital, Vine Ventures, Link Ventures and Box Group",
+            "quote_hash": "6098d4e689559f73e7e149035a967dac073ab7743433b4b03e523fe97caa313d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-06767f0c6bd0d169",
+        "funding_insight_id": "FI-6deae4c748088f7f",
+        "event_ids": [
+          "EV-c0ec0c026233bea5"
+        ],
+        "company_entity_id": "EN-a7dd4a797cf9990b",
+        "company_canonical_entity_id": "",
+        "company_name": "Niteshift",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$7 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 7000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "700 万美元"
+        },
+        "announced_at": "2026-06-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a1dac8a4c0e97aee",
+            "source_url": "https://www.todaysstartupnews.com/startups/niteshift-raises-7-million-seed-greylock-jerry-chen-ai-coding-agent-cloud-platform",
+            "source_title": "Niteshift Raises $7 Million Seed Round Led by Greylock to Build the Cloud Infrastructure Layer for AI Coding Agents",
+            "source_content_hash": "c89dfd8f0a56c07f",
+            "quote": "Niteshift has raised $7 million in a seed round led by Greylock, with participation from Amplify Partners, BoxGroup, and SV Angel.",
+            "quote_hash": "b784d4f0084512f627cf683b07ea68a93c1cb7b5b6c53181d49da02707611ddc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-2e9bd50680edd548",
+        "funding_insight_id": "FI-a308a87eb0e97da7",
+        "event_ids": [
+          "EV-dd3217aad32e6891"
+        ],
+        "company_entity_id": "EN-2f88f41306209dd7",
+        "company_canonical_entity_id": "",
+        "company_name": "Avoca AI",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "种子轮、A轮、B轮",
+        "amount_original": "超过1.25亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 125000000,
+          "min_value": 125000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1.25 亿美元"
+        },
+        "announced_at": "2026-04-27",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-3b2454278fe6d93e",
+            "source_url": "https://www.linkedin.com/posts/ccheng805_were-thrilled-to-announce-that-capital-49-activity-7454614909348229121-9ih0",
+            "source_title": "Capital 49 Backs Avoca in $125M Series B Raise",
+            "source_content_hash": "0eedb637d7c86cdc",
+            "quote": "Gregory R. from BoxGroup",
+            "quote_hash": "e84b03f393c38dc09e6204f4be07c6323ea45791cffe4d24f999879fa1ed39c5"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-e6ee0cd472bfb792",
+        "source_url": "https://aiweekly.co/alerts/foundational-industries-raises-25m-to-build-ai-run-factories",
+        "source_title": "Foundational Industries 筹集 2500 万美元，打造 AI 运营工厂",
+        "source_content_hash": "ad03bbee3088b0fc",
+        "quote": "The round was led by BoxGroup and Zigg Ventures",
+        "quote_hash": "603f65c4354e79487ebff6657abc1acb3c8db7111baaf6bb4c0e4eab80efc8a1"
+      },
+      {
+        "source_id": "FISRC-9f8cec869ac3008e",
+        "source_url": "https://www.citybiz.co/article/876088/sable-raises-45m-to-build-ai-employee-for-customer-relations/",
+        "source_title": "Sable Raises $45M to Build ‘AI Employee’ for Customer Relations | citybiz",
+        "source_content_hash": "be1a3bb8f3be622f",
+        "quote": "Other investors in the round included BoxGroup, SV Angel, Valor Atreides AI Fund, and Sabrina and Evan Hahn.",
+        "quote_hash": "c9b09741a783eeded8d5ba6e91bf31f306cc1e89aff8eb3e3905e54b1ac16dbb"
+      },
+      {
+        "source_id": "FISRC-44c6debf2c528a2a",
+        "source_url": "https://siliconangle.com/2026/06/24/ornn-raises-33m-help-companies-buy-sell-ai-compute-commodity-like-oil/",
+        "source_title": "Ornn 融资 3300 万美元，帮助企业像买卖石油一样交易 AI 算力",
+        "source_content_hash": "5fe0ae2b10239c5e",
+        "quote": "plus existing investors Crucible Capital, Vine Ventures, Link Ventures and Box Group",
+        "quote_hash": "6098d4e689559f73e7e149035a967dac073ab7743433b4b03e523fe97caa313d"
+      },
+      {
+        "source_id": "FISRC-a1dac8a4c0e97aee",
+        "source_url": "https://www.todaysstartupnews.com/startups/niteshift-raises-7-million-seed-greylock-jerry-chen-ai-coding-agent-cloud-platform",
+        "source_title": "Niteshift Raises $7 Million Seed Round Led by Greylock to Build the Cloud Infrastructure Layer for AI Coding Agents",
+        "source_content_hash": "c89dfd8f0a56c07f",
+        "quote": "Niteshift has raised $7 million in a seed round led by Greylock, with participation from Amplify Partners, BoxGroup, and SV Angel.",
+        "quote_hash": "b784d4f0084512f627cf683b07ea68a93c1cb7b5b6c53181d49da02707611ddc"
+      },
+      {
+        "source_id": "FISRC-3b2454278fe6d93e",
+        "source_url": "https://www.linkedin.com/posts/ccheng805_were-thrilled-to-announce-that-capital-49-activity-7454614909348229121-9ih0",
+        "source_title": "Capital 49 Backs Avoca in $125M Series B Raise",
+        "source_content_hash": "0eedb637d7c86cdc",
+        "quote": "Gregory R. from BoxGroup",
+        "quote_hash": "e84b03f393c38dc09e6204f4be07c6323ea45791cffe4d24f999879fa1ed39c5"
+      }
+    ]
+  }
+}

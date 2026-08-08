@@ -1,0 +1,383 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-1493e20e99083e",
+    "name": "Blackstone",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 4,
+    "first_disclosed_at": "2026-03-31",
+    "latest_disclosed_at": "2026-07-07",
+    "role_counts": {
+      "historical_or_ambiguous": 2,
+      "lead": 1,
+      "participant": 3
+    },
+    "round_codes": [
+      "infrastructure",
+      "series_c",
+      "series_f"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "name": "Anthropic"
+      },
+      {
+        "entity_id": "EN-712dffae168fe622",
+        "canonical_entity_id": "",
+        "name": "Nomos Ai Inc."
+      },
+      {
+        "entity_id": "EN-733859c1fc6b9331",
+        "canonical_entity_id": "",
+        "name": "Norm Ai"
+      },
+      {
+        "entity_id": "EN-7d3194f79e645c42",
+        "canonical_entity_id": "EN-7d3194f79e645c42",
+        "name": "OpenAI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-06eafc5eedb18497",
+        "funding_insight_id": "FI-9fd39f44b35d940c",
+        "event_ids": [
+          "EV-d9cc588fb41a7e67"
+        ],
+        "company_entity_id": "EN-712dffae168fe622",
+        "company_canonical_entity_id": "",
+        "company_name": "Nomos Ai Inc.",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "1.2亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 120000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.2 亿美元"
+        },
+        "announced_at": "2026-07-07",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1b05d1dc5cb45a7b",
+            "source_url": "https://siliconangle.com/2026/07/07/norm-ai-nabs-120m-1-2b-valuation-bring-ai-agents-law/",
+            "source_title": "Norm Ai 以 12 亿美元估值获 1.2 亿美元融资，将 AI 智能体引入法律领域",
+            "source_content_hash": "bdcf73e00730d3c9",
+            "quote": "Blackstone, Bain Capital Ventures, Craft Ventures, Coatue, Vanguard, New York Life, TIAA, and Fenwick LLP also participated.",
+            "quote_hash": "67ea6d53fe5895c7b9259e09b6099219f3a5195b03bfa47ecb2dbe337be24814"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f5b8adffb8afe8e3",
+        "funding_insight_id": "FI-9fd39f44b35d940c",
+        "event_ids": [
+          "EV-d9cc588fb41a7e67"
+        ],
+        "company_entity_id": "EN-712dffae168fe622",
+        "company_canonical_entity_id": "",
+        "company_name": "Nomos Ai Inc.",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "1.2亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 120000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.2 亿美元"
+        },
+        "announced_at": "2026-07-07",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方（2025年1月参投，2025年11月参投）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-afaa91a6569d1f7a",
+            "source_url": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",
+            "source_title": "Norm Ai Raises $120M Series C at $1.2B Valuation",
+            "source_content_hash": "afe0afef4cf0ce8c",
+            "quote": "Norm Ai raised $48 million in January 2025 from Vanguard, Blackstone, Bain Capital, Citi, TIAA, and Coatue. Blackstone invested another $50 million in November 2025 alongside the launch of Norm Law.",
+            "quote_hash": "544078976891b5b901ce93b2e029b29e09f897ff2ad6f8639dce351c1490ac99"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c2bb206fb703bb23",
+        "funding_insight_id": "FI-3bd982e429974930",
+        "event_ids": [
+          "EV-0f520c9e5b1ea1d2"
+        ],
+        "company_entity_id": "EN-733859c1fc6b9331",
+        "company_canonical_entity_id": "",
+        "company_name": "Norm Ai",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "$120M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 120000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.2 亿美元"
+        },
+        "announced_at": "2026-07-07",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "既有投资方（2025年11月领投$50M）及本轮参投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-f58149f5a78da9a4",
+            "source_url": "https://www.law.com/legaltechnews/2026/07/07/norm-ai-announces-120m-series-c-including-investment-from-fenwick-ex-kirkland-chair-/",
+            "source_title": "Norm Ai Announces $120M Series C Including Investment From Fenwick, Ex-Kirkland Chair. | Law.com",
+            "source_content_hash": "419d5bb223a9cb2e",
+            "quote": "a further $50 million investment in November that coincided with the launch of Norm Law",
+            "quote_hash": "a869b1c36e3508bd5cb2fac5647e4b682f7cfcb009dc6214aad31d741dfd48c7"
+          },
+          {
+            "source_id": "FISRC-d2ea16d9f5e796fe",
+            "source_url": "https://regtechanalyst.com/norm-ai-raises-120m-to-scale-ai-compliance-platform/",
+            "source_title": "Norm Ai raises $120m to scale AI compliance platform",
+            "source_content_hash": "8b9174e8df0173a9",
+            "quote": "The funding round was led by Khosla Ventures, with participation from Blackstone, Bain Capital Ventures (BCV), Craft Ventures, Coatue, Vanguard, New York Life, TIAA, former Blackstone president and COO Tony James, former chairman of Kirkland & Ellis Jeff Hammes and Fenwick LLP.",
+            "quote_hash": "d7cb9cc4c304a3922ecdce5764fa19d705a0ca5e12f9837f8819e59be508967e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e6954f3a9aec6727",
+        "funding_insight_id": "FI-44726ebdb985f37e",
+        "event_ids": [
+          "EV-4118202ed0f91895"
+        ],
+        "company_entity_id": "EN-0b79cf2de0ee6b8e",
+        "company_canonical_entity_id": "",
+        "company_name": "Groq",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮",
+        "amount_original": "6.5 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 650000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6.5 亿美元"
+        },
+        "announced_at": "2026-06-22",
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-85e8550490e53490",
+            "source_url": "https://test-news.aibase.com/news/21366",
+            "source_title": "Groq Raises $750 Million in Funding, Valuation Reaches $6.9 Billion",
+            "source_content_hash": "6efab5b69f3f9aa3",
+            "quote": "This round was led by the Texas-based investment firm Disruptive, and also received significant investments from Blackstone, Newport Capital, Deutsche Telekom Capital Partners, and a major U.S. West Coast fund manager.",
+            "quote_hash": "1ab9a3e89cdba5fc45b86870174a402aea545f82fdce6c59c536a1a228b3080a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b9014b155d9192dc",
+        "funding_insight_id": "FI-5f1fc44327efde20",
+        "event_ids": [
+          "EV-8861a42a8679562a"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "350亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 35000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "350 亿美元"
+        },
+        "announced_at": "2026-06-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-12d28955f3aa1a00",
+            "source_url": "https://ir.apollo.com/news-events/press-releases/detail/629/apollo-leads-35-billion-capital-solution-for-broadcom-ai",
+            "source_title": "Apollo Leads $35 Billion Capital Solution for Broadcom AI XPV Platform in Partnership with Blackstone and Leading Global Banks :: Apollo Global Management, Inc. (APO)",
+            "source_content_hash": "c6cabe1fdd048dc5",
+            "quote": "in partnership with Blackstone (NYSE: BX) and leading global banks",
+            "quote_hash": "c142430fd3a19034e88e601c9ac511ff7adec4533322806a83650221ca484a20"
+          },
+          {
+            "source_id": "FISRC-a689df7815b7bebf",
+            "source_url": "https://www.bloomberg.com/news/videos/2026-06-10/apollo-wraps-up-35b-chip-deal-for-anthropic-video",
+            "source_title": "Apollo 与 Blackstone 为 Anthropic 完成 350 亿美元 AI 基础设施融资",
+            "source_content_hash": "3f1bfda19f8a176b",
+            "quote": "Apollo Global Management and Blackstone have finalized a $35 billion financing package for Anthropic",
+            "quote_hash": "9cd11f1f01fe96fd799f5d5add5aa9b8f687f57dbe21aa034e6dcbd6a5086148"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c4b9c6d0a8767856",
+        "funding_insight_id": "FI-b76fffbf5d0d91bd",
+        "event_ids": [
+          "EV-d4e44892226be468"
+        ],
+        "company_entity_id": "EN-7d3194f79e645c42",
+        "company_canonical_entity_id": "EN-7d3194f79e645c42",
+        "company_name": "OpenAI",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$1220亿",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 122000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1220 亿美元"
+        },
+        "announced_at": "2026-03-31",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1e2b3bad243bd066",
+            "source_url": "https://yespress.io/openais-122-b-megaround",
+            "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
+            "source_content_hash": "494969b64dc816f3",
+            "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+            "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1b05d1dc5cb45a7b",
+        "source_url": "https://siliconangle.com/2026/07/07/norm-ai-nabs-120m-1-2b-valuation-bring-ai-agents-law/",
+        "source_title": "Norm Ai 以 12 亿美元估值获 1.2 亿美元融资，将 AI 智能体引入法律领域",
+        "source_content_hash": "bdcf73e00730d3c9",
+        "quote": "Blackstone, Bain Capital Ventures, Craft Ventures, Coatue, Vanguard, New York Life, TIAA, and Fenwick LLP also participated.",
+        "quote_hash": "67ea6d53fe5895c7b9259e09b6099219f3a5195b03bfa47ecb2dbe337be24814"
+      },
+      {
+        "source_id": "FISRC-afaa91a6569d1f7a",
+        "source_url": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",
+        "source_title": "Norm Ai Raises $120M Series C at $1.2B Valuation",
+        "source_content_hash": "afe0afef4cf0ce8c",
+        "quote": "Norm Ai raised $48 million in January 2025 from Vanguard, Blackstone, Bain Capital, Citi, TIAA, and Coatue. Blackstone invested another $50 million in November 2025 alongside the launch of Norm Law.",
+        "quote_hash": "544078976891b5b901ce93b2e029b29e09f897ff2ad6f8639dce351c1490ac99"
+      },
+      {
+        "source_id": "FISRC-f58149f5a78da9a4",
+        "source_url": "https://www.law.com/legaltechnews/2026/07/07/norm-ai-announces-120m-series-c-including-investment-from-fenwick-ex-kirkland-chair-/",
+        "source_title": "Norm Ai Announces $120M Series C Including Investment From Fenwick, Ex-Kirkland Chair. | Law.com",
+        "source_content_hash": "419d5bb223a9cb2e",
+        "quote": "a further $50 million investment in November that coincided with the launch of Norm Law",
+        "quote_hash": "a869b1c36e3508bd5cb2fac5647e4b682f7cfcb009dc6214aad31d741dfd48c7"
+      },
+      {
+        "source_id": "FISRC-d2ea16d9f5e796fe",
+        "source_url": "https://regtechanalyst.com/norm-ai-raises-120m-to-scale-ai-compliance-platform/",
+        "source_title": "Norm Ai raises $120m to scale AI compliance platform",
+        "source_content_hash": "8b9174e8df0173a9",
+        "quote": "The funding round was led by Khosla Ventures, with participation from Blackstone, Bain Capital Ventures (BCV), Craft Ventures, Coatue, Vanguard, New York Life, TIAA, former Blackstone president and COO Tony James, former chairman of Kirkland & Ellis Jeff Hammes and Fenwick LLP.",
+        "quote_hash": "d7cb9cc4c304a3922ecdce5764fa19d705a0ca5e12f9837f8819e59be508967e"
+      },
+      {
+        "source_id": "FISRC-85e8550490e53490",
+        "source_url": "https://test-news.aibase.com/news/21366",
+        "source_title": "Groq Raises $750 Million in Funding, Valuation Reaches $6.9 Billion",
+        "source_content_hash": "6efab5b69f3f9aa3",
+        "quote": "This round was led by the Texas-based investment firm Disruptive, and also received significant investments from Blackstone, Newport Capital, Deutsche Telekom Capital Partners, and a major U.S. West Coast fund manager.",
+        "quote_hash": "1ab9a3e89cdba5fc45b86870174a402aea545f82fdce6c59c536a1a228b3080a"
+      },
+      {
+        "source_id": "FISRC-12d28955f3aa1a00",
+        "source_url": "https://ir.apollo.com/news-events/press-releases/detail/629/apollo-leads-35-billion-capital-solution-for-broadcom-ai",
+        "source_title": "Apollo Leads $35 Billion Capital Solution for Broadcom AI XPV Platform in Partnership with Blackstone and Leading Global Banks :: Apollo Global Management, Inc. (APO)",
+        "source_content_hash": "c6cabe1fdd048dc5",
+        "quote": "in partnership with Blackstone (NYSE: BX) and leading global banks",
+        "quote_hash": "c142430fd3a19034e88e601c9ac511ff7adec4533322806a83650221ca484a20"
+      },
+      {
+        "source_id": "FISRC-a689df7815b7bebf",
+        "source_url": "https://www.bloomberg.com/news/videos/2026-06-10/apollo-wraps-up-35b-chip-deal-for-anthropic-video",
+        "source_title": "Apollo 与 Blackstone 为 Anthropic 完成 350 亿美元 AI 基础设施融资",
+        "source_content_hash": "3f1bfda19f8a176b",
+        "quote": "Apollo Global Management and Blackstone have finalized a $35 billion financing package for Anthropic",
+        "quote_hash": "9cd11f1f01fe96fd799f5d5add5aa9b8f687f57dbe21aa034e6dcbd6a5086148"
+      },
+      {
+        "source_id": "FISRC-1e2b3bad243bd066",
+        "source_url": "https://yespress.io/openais-122-b-megaround",
+        "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
+        "source_content_hash": "494969b64dc816f3",
+        "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+        "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+      }
+    ]
+  }
+}

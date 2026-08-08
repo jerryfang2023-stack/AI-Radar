@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-c5aa95fd8166e9",
+    "name": "Angel Invest",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-03",
+    "latest_disclosed_at": "2026-06-03",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "pre_seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-8311b78e7ece59dd",
+        "canonical_entity_id": "",
+        "name": "INXM"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-a6c7fcbec98c89f2",
+        "funding_insight_id": "FI-be83b46c33f02967",
+        "event_ids": [
+          "EV-8c2fdaad276818b0"
+        ],
+        "company_entity_id": "EN-8311b78e7ece59dd",
+        "company_canonical_entity_id": "",
+        "company_name": "INXM",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "Pre-Seed",
+        "amount_original": "€5.7 Million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 5700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "570 万欧元"
+        },
+        "announced_at": "2026-06-03",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8b3715219a93e9b2",
+            "source_url": "https://pulse2.com/inxm-raises-e5-7-million-pre-seed-to-bridge-the-gap-between-enterprise-ai-demos-and-real-operational-deployment/",
+            "source_title": "INXM 获 570 万欧元预种子轮融资，弥合企业 AI 演示与实际运营部署之间的差距",
+            "source_content_hash": "79ce374e023f3088",
+            "quote": "with participation from Angel Invest, Linden Capital, and a group of business angels",
+            "quote_hash": "417c916e4c339c007c54e734feb79c028ba0045ab64344aa646baeb5e24594d9"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-8b3715219a93e9b2",
+        "source_url": "https://pulse2.com/inxm-raises-e5-7-million-pre-seed-to-bridge-the-gap-between-enterprise-ai-demos-and-real-operational-deployment/",
+        "source_title": "INXM 获 570 万欧元预种子轮融资，弥合企业 AI 演示与实际运营部署之间的差距",
+        "source_content_hash": "79ce374e023f3088",
+        "quote": "with participation from Angel Invest, Linden Capital, and a group of business angels",
+        "quote_hash": "417c916e4c339c007c54e734feb79c028ba0045ab64344aa646baeb5e24594d9"
+      }
+    ]
+  }
+}

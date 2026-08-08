@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-af0fcba96ce8d5",
+    "name": "JAZZ Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2023-04-20",
+    "latest_disclosed_at": "2023-04-20",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "series_a1"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-6b5df3bd8bb0c67d",
+        "canonical_entity_id": "",
+        "name": "Robust.AI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-6c6f2953c2788148",
+        "funding_insight_id": "FI-070bfdac9fe137a9",
+        "event_ids": [
+          "EV-52bf48005db3461a"
+        ],
+        "company_entity_id": "EN-6b5df3bd8bb0c67d",
+        "company_canonical_entity_id": "",
+        "company_name": "Robust.AI",
+        "round": "A1轮",
+        "round_code": "series_a1",
+        "round_original": "A-1轮",
+        "amount_original": "$20M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万美元"
+        },
+        "announced_at": "2023-04-20",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投，A轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-f4e29cbc583c9f01",
+            "source_url": "https://o.parsers.vc/startup/robust.ai/",
+            "source_title": "RobustAI – Funding, Valuation, Investors, News",
+            "source_content_hash": "5938e32dd8eaa644",
+            "quote": "04.11.2020 Series A $22.5M -",
+            "quote_hash": "78c95084a56906e913d57ffd0ffd449173cc7b5ac3425a09a060fd7f5388a9db"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-f4e29cbc583c9f01",
+        "source_url": "https://o.parsers.vc/startup/robust.ai/",
+        "source_title": "RobustAI – Funding, Valuation, Investors, News",
+        "source_content_hash": "5938e32dd8eaa644",
+        "quote": "04.11.2020 Series A $22.5M -",
+        "quote_hash": "78c95084a56906e913d57ffd0ffd449173cc7b5ac3425a09a060fd7f5388a9db"
+      }
+    ]
+  }
+}

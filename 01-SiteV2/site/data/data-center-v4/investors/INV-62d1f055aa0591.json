@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-62d1f055aa0591",
+    "name": "Cisco Investments",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2025-03-03",
+    "latest_disclosed_at": "2026-06-22",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "series_e"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "name": "Anthropic PBC"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-9b71722aa3f86cff",
+        "funding_insight_id": "FI-44726ebdb985f37e",
+        "event_ids": [
+          "EV-4118202ed0f91895"
+        ],
+        "company_entity_id": "EN-0b79cf2de0ee6b8e",
+        "company_canonical_entity_id": "",
+        "company_name": "Groq",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮",
+        "amount_original": "6.5 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 650000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6.5 亿美元"
+        },
+        "announced_at": "2026-06-22",
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "D轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-6ef693ebacbad168",
+            "source_url": "https://economictimes.indiatimes.com/topic/investment-in-groq",
+            "source_title": "investment in groq: Latest News & Videos, Photos about investment in groq | The Economic Times - Page 1",
+            "source_content_hash": "49d31e2d6afab8b0",
+            "quote": "In August last year, Groq raised $640 million in a Series D funding round led by Cisco Investments, Samsung Catalyst Fund and BlackRock Private Equity Partners, among others, which brought its valuation to $2.8 billion.",
+            "quote_hash": "4176996439738f8e3f1f9bb2ded34c557750df899e0a00fcca208a70bcb8785f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-71f0887f7169fc2e",
+        "funding_insight_id": "FI-6601d010adc14dd0",
+        "event_ids": [
+          "EV-78a11d309c3d4e97"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic PBC",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "Series E",
+        "amount_original": "$3.5B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "35 亿美元"
+        },
+        "announced_at": "2025-03-03",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ef9fd29dc050f7ca",
+            "source_url": "https://siliconangle.com/2025/03/03/anthropic-raises-3-5b-61-5b-valuation-advance-ai-research/",
+            "source_title": "Anthropic raises $3.5B at $61.5B valuation to advance its AI research - SiliconANGLE",
+            "source_content_hash": "3484405d65f54368",
+            "quote": "Lightspeed Venture Partners led Anthropic’s latest funding round. It was joined by Cisco Investments, Salesforce Ventures and more than a half-dozen other backers.",
+            "quote_hash": "f73de7a5c871cffe4272d9fa877b395f947a09f20b13cbc6da9c3bcc446c2a47"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-6ef693ebacbad168",
+        "source_url": "https://economictimes.indiatimes.com/topic/investment-in-groq",
+        "source_title": "investment in groq: Latest News & Videos, Photos about investment in groq | The Economic Times - Page 1",
+        "source_content_hash": "49d31e2d6afab8b0",
+        "quote": "In August last year, Groq raised $640 million in a Series D funding round led by Cisco Investments, Samsung Catalyst Fund and BlackRock Private Equity Partners, among others, which brought its valuation to $2.8 billion.",
+        "quote_hash": "4176996439738f8e3f1f9bb2ded34c557750df899e0a00fcca208a70bcb8785f"
+      },
+      {
+        "source_id": "FISRC-ef9fd29dc050f7ca",
+        "source_url": "https://siliconangle.com/2025/03/03/anthropic-raises-3-5b-61-5b-valuation-advance-ai-research/",
+        "source_title": "Anthropic raises $3.5B at $61.5B valuation to advance its AI research - SiliconANGLE",
+        "source_content_hash": "3484405d65f54368",
+        "quote": "Lightspeed Venture Partners led Anthropic’s latest funding round. It was joined by Cisco Investments, Salesforce Ventures and more than a half-dozen other backers.",
+        "quote_hash": "f73de7a5c871cffe4272d9fa877b395f947a09f20b13cbc6da9c3bcc446c2a47"
+      }
+    ]
+  }
+}

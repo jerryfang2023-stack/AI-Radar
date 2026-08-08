@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-dc4506343ced0f",
+    "name": "Prosus",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2025-08-01",
+    "latest_disclosed_at": "2025-08-01",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-50e2a4156631df49",
+        "canonical_entity_id": "",
+        "name": "Fundamental Research Labs"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-003d643d63caac1a",
+        "funding_insight_id": "FI-1064b8c5f69e8336",
+        "event_ids": [
+          "EV-23ae55daa341be06"
+        ],
+        "company_entity_id": "EN-50e2a4156631df49",
+        "company_canonical_entity_id": "",
+        "company_name": "Fundamental Research Labs",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$33 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 33000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3300 万美元"
+        },
+        "announced_at": "2025-08-01",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-3ac436d049634bc2",
+            "source_url": "https://techcrunch.com/2025/08/01/fundamental-research-labs-nabs-33-million-from-prosus-to-build-ai-agents-for-multiple-verticals/",
+            "source_title": "Fundamental Research Labs 获超 3000 万美元融资，用于跨垂直领域构建 AI 智能体",
+            "source_content_hash": "7ac40477f31de3c2",
+            "quote": "raised $33 million in Series A funding led by Prosus",
+            "quote_hash": "9948eebe86e488649534d5f4aee973dab81ef39738b33049a7d00a4c6bedb722"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-3ac436d049634bc2",
+        "source_url": "https://techcrunch.com/2025/08/01/fundamental-research-labs-nabs-33-million-from-prosus-to-build-ai-agents-for-multiple-verticals/",
+        "source_title": "Fundamental Research Labs 获超 3000 万美元融资，用于跨垂直领域构建 AI 智能体",
+        "source_content_hash": "7ac40477f31de3c2",
+        "quote": "raised $33 million in Series A funding led by Prosus",
+        "quote_hash": "9948eebe86e488649534d5f4aee973dab81ef39738b33049a7d00a4c6bedb722"
+      }
+    ]
+  }
+}

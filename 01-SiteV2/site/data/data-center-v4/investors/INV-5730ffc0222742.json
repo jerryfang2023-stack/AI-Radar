@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-5730ffc0222742",
+    "name": "Dharmesh Shah",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2025-10-28",
+    "latest_disclosed_at": "2026-07-16",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "other_current_round": 2
+    },
+    "round_codes": [
+      "multi_round",
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-befc92b3a019d04c",
+        "canonical_entity_id": "",
+        "name": "AgentMail"
+      },
+      {
+        "entity_id": "EN-a9aff9e0737a5d4a",
+        "canonical_entity_id": "",
+        "name": "Mem0"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-8e25f9a8be718caa",
+        "funding_insight_id": "FI-2ebe52bd95cf8644",
+        "event_ids": [
+          "EV-1da2e46e39a57d33"
+        ],
+        "company_entity_id": "EN-cfd90af8403941bf",
+        "company_canonical_entity_id": "",
+        "company_name": "Sable",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$45 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 45000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4500 万美元"
+        },
+        "announced_at": "2026-07-16",
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b95b1b353d05702f",
+            "source_url": "https://thenextweb.com/news/sable-aidan-ai-employee-sequoia-45-million",
+            "source_title": "Sable 从红杉资本融资 4500 万美元，打造替代人类运行产品演示的 AI 智能体",
+            "source_content_hash": "bc538fe3e503f8f8",
+            "quote": "Angel investors include HubSpot co-founders Brian Halligan and Dharmesh Shah, Valor’s Antonio Gracias, and Cognition CEO Scott Wu.",
+            "quote_hash": "670d8fb1c52a03d9d65f8070b6bd858552add89f44cebf65e0ce041b0498d224"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-14133dfa451b7029",
+        "funding_insight_id": "FI-94de7d23d9ebd5ba",
+        "event_ids": [
+          "EV-9055cb4fa2b4ee62"
+        ],
+        "company_entity_id": "EN-befc92b3a019d04c",
+        "company_canonical_entity_id": "",
+        "company_name": "AgentMail",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$6M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 6000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "600 万美元"
+        },
+        "announced_at": "2026-03-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮天使投资人",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-f961f60a13274764",
+            "source_url": "https://techcrunch.com/2026/03/10/agentmail-raises-6m-to-build-an-email-service-for-ai-agents/",
+            "source_title": "AgentMail 获 600 万美元融资，为 AI 智能体构建邮件服务",
+            "source_content_hash": "789e41b1b6992f50",
+            "quote": "Dharmesh Shah (CTO of HubSpot)",
+            "quote_hash": "56839666950372eb4987980a907d30e9752f24b5d43eaf1bdac845e4519a115c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9083f557fec71d2e",
+        "funding_insight_id": "FI-128eef4a492e718e",
+        "event_ids": [
+          "EV-30466ebe86779a64"
+        ],
+        "company_entity_id": "EN-a9aff9e0737a5d4a",
+        "company_canonical_entity_id": "",
+        "company_name": "Mem0",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "Seed + Series A",
+        "amount_original": "$24M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 24000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2400 万美元"
+        },
+        "announced_at": "2025-10-28",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮战略投资（天使投资人）",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-f3e9aa548f7703f9",
+            "source_url": "https://www.prnewswire.com/news-releases/mem0-raises-24m-series-a-to-build-memory-layer-for-ai-agents-302597157.html",
+            "source_title": "Mem0 获 2400 万美元 A 轮融资，为 AI 智能体构建记忆层",
+            "source_content_hash": "052a20f5aa557858",
+            "quote": "strategic investments from technology leaders Scott Belsky and Dharmesh Shah",
+            "quote_hash": "31111dd27ef4102fcc66cb90aa96a08bd262c68af185af33979667bbef9f30c8"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-b95b1b353d05702f",
+        "source_url": "https://thenextweb.com/news/sable-aidan-ai-employee-sequoia-45-million",
+        "source_title": "Sable 从红杉资本融资 4500 万美元，打造替代人类运行产品演示的 AI 智能体",
+        "source_content_hash": "bc538fe3e503f8f8",
+        "quote": "Angel investors include HubSpot co-founders Brian Halligan and Dharmesh Shah, Valor’s Antonio Gracias, and Cognition CEO Scott Wu.",
+        "quote_hash": "670d8fb1c52a03d9d65f8070b6bd858552add89f44cebf65e0ce041b0498d224"
+      },
+      {
+        "source_id": "FISRC-f961f60a13274764",
+        "source_url": "https://techcrunch.com/2026/03/10/agentmail-raises-6m-to-build-an-email-service-for-ai-agents/",
+        "source_title": "AgentMail 获 600 万美元融资，为 AI 智能体构建邮件服务",
+        "source_content_hash": "789e41b1b6992f50",
+        "quote": "Dharmesh Shah (CTO of HubSpot)",
+        "quote_hash": "56839666950372eb4987980a907d30e9752f24b5d43eaf1bdac845e4519a115c"
+      },
+      {
+        "source_id": "FISRC-f3e9aa548f7703f9",
+        "source_url": "https://www.prnewswire.com/news-releases/mem0-raises-24m-series-a-to-build-memory-layer-for-ai-agents-302597157.html",
+        "source_title": "Mem0 获 2400 万美元 A 轮融资，为 AI 智能体构建记忆层",
+        "source_content_hash": "052a20f5aa557858",
+        "quote": "strategic investments from technology leaders Scott Belsky and Dharmesh Shah",
+        "quote_hash": "31111dd27ef4102fcc66cb90aa96a08bd262c68af185af33979667bbef9f30c8"
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-78e21abea5acab",
+    "name": "图灵基金",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-04-07",
+    "latest_disclosed_at": "2026-04-07",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "other"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-1032f7a4df33f629",
+        "canonical_entity_id": "EN-1032f7a4df33f629",
+        "name": "千寻智能"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-5aea8334905a1218",
+        "funding_insight_id": "FI-4aaa0f3788c81d32",
+        "event_ids": [
+          "EV-60d58e2a1f5733f8"
+        ],
+        "company_entity_id": "EN-1032f7a4df33f629",
+        "company_canonical_entity_id": "EN-1032f7a4df33f629",
+        "company_name": "千寻智能",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "A+轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿人民币"
+        },
+        "announced_at": "2026-04-07",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c7d67ad33d44d659",
+            "source_url": "https://news.pedaily.cn/202604/562491.shtml",
+            "source_title": "投资界24h | 首发|30天，千寻智能融资30亿；1000亿，武汉国资赚翻了；米哈游3位创始人捐钱了_投资界",
+            "source_content_hash": "0e9ca6e6e86a867f",
+            "quote": "达晨财智、某头部人民币基金、银河源汇、图灵基金、新鼎资本、庚辛资本等重磅加持",
+            "quote_hash": "2a4211059643fbc9e0b2bd8196d125cfc74e96aa1738bf9dd6392dac770a147f"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-c7d67ad33d44d659",
+        "source_url": "https://news.pedaily.cn/202604/562491.shtml",
+        "source_title": "投资界24h | 首发|30天，千寻智能融资30亿；1000亿，武汉国资赚翻了；米哈游3位创始人捐钱了_投资界",
+        "source_content_hash": "0e9ca6e6e86a867f",
+        "quote": "达晨财智、某头部人民币基金、银河源汇、图灵基金、新鼎资本、庚辛资本等重磅加持",
+        "quote_hash": "2a4211059643fbc9e0b2bd8196d125cfc74e96aa1738bf9dd6392dac770a147f"
+      }
+    ]
+  }
+}

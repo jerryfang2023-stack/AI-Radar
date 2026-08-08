@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-eb42bbe79e1bcf",
+    "name": "Foundation Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-23",
+    "latest_disclosed_at": "2026-07-23",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-57b8b5990c299db8",
+        "canonical_entity_id": "",
+        "name": "AegisAI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-ed093b5f2b983cfe",
+        "funding_insight_id": "FI-c540a5c7d84cb184",
+        "event_ids": [
+          "EV-9b81b0dd09a046ab"
+        ],
+        "company_entity_id": "EN-57b8b5990c299db8",
+        "company_canonical_entity_id": "",
+        "company_name": "AegisAI",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$36 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 36000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3600 万美元"
+        },
+        "announced_at": "2026-07-23",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "既有投资方，本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7a2e33bd2177a4c7",
+            "source_url": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/",
+            "source_title": "由前谷歌安全高管创立的AegisAI获3600万美元融资，用于阻止AI驱动的鱼叉式网络钓鱼",
+            "source_content_hash": "afc63d021b3c19fe",
+            "quote": "with participation from existing backers Accel and Foundation Capital",
+            "quote_hash": "135a668db359733c9db451ba4077fe28839895951e03dbc7c09e79108f2c7770"
+          },
+          {
+            "source_id": "FISRC-4b3af8138bc7fb99",
+            "source_url": "https://venturepost.co/enterprise/aegisai-funding",
+            "source_title": "AegisAI funding reaches $49 million after $36 million Series A | Venture Post",
+            "source_content_hash": "c1c81dabfa00282d",
+            "quote": "Accel Partners and Foundation Capital, both existing investors, also participating",
+            "quote_hash": "8c44a7cb3e99daf18aa6b5433123c5e8d8ba540c0a1c5c34d7f5224f0d10d221"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-7a2e33bd2177a4c7",
+        "source_url": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/",
+        "source_title": "由前谷歌安全高管创立的AegisAI获3600万美元融资，用于阻止AI驱动的鱼叉式网络钓鱼",
+        "source_content_hash": "afc63d021b3c19fe",
+        "quote": "with participation from existing backers Accel and Foundation Capital",
+        "quote_hash": "135a668db359733c9db451ba4077fe28839895951e03dbc7c09e79108f2c7770"
+      },
+      {
+        "source_id": "FISRC-4b3af8138bc7fb99",
+        "source_url": "https://venturepost.co/enterprise/aegisai-funding",
+        "source_title": "AegisAI funding reaches $49 million after $36 million Series A | Venture Post",
+        "source_content_hash": "c1c81dabfa00282d",
+        "quote": "Accel Partners and Foundation Capital, both existing investors, also participating",
+        "quote_hash": "8c44a7cb3e99daf18aa6b5433123c5e8d8ba540c0a1c5c34d7f5224f0d10d221"
+      }
+    ]
+  }
+}

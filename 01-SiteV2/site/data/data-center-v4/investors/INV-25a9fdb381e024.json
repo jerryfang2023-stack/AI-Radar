@@ -1,0 +1,805 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-25a9fdb381e024",
+    "name": "Khosla Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 11,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 11,
+    "first_disclosed_at": "2023-04-27",
+    "latest_disclosed_at": "2026-08-05",
+    "role_counts": {
+      "co_lead": 2,
+      "historical_or_ambiguous": 3,
+      "lead": 7,
+      "participant": 2
+    },
+    "round_codes": [
+      "seed",
+      "series_a",
+      "series_b",
+      "series_b_extension",
+      "series_c"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-522656609ff15589",
+        "canonical_entity_id": "",
+        "name": "Bunkerhill Health"
+      },
+      {
+        "entity_id": "EN-4728b0c37dc84206",
+        "canonical_entity_id": "",
+        "name": "Convey"
+      },
+      {
+        "entity_id": "EN-26997989b8425dac",
+        "canonical_entity_id": "",
+        "name": "Dili"
+      },
+      {
+        "entity_id": "EN-dc8a5a5bf80909de",
+        "canonical_entity_id": "",
+        "name": "General Intuition"
+      },
+      {
+        "entity_id": "EN-712dffae168fe622",
+        "canonical_entity_id": "",
+        "name": "Nomos Ai Inc."
+      },
+      {
+        "entity_id": "EN-733859c1fc6b9331",
+        "canonical_entity_id": "",
+        "name": "Norm Ai"
+      },
+      {
+        "entity_id": "EN-1c5483264189feef",
+        "canonical_entity_id": "",
+        "name": "Onyx"
+      },
+      {
+        "entity_id": "EN-53b69ef92c836777",
+        "canonical_entity_id": "",
+        "name": "Replit"
+      },
+      {
+        "entity_id": "EN-e69f64149edae6b1",
+        "canonical_entity_id": "EN-e69f64149edae6b1",
+        "name": "Runlayer"
+      },
+      {
+        "entity_id": "EN-ccfc5e062828b145",
+        "canonical_entity_id": "",
+        "name": "Scaled Cognition"
+      },
+      {
+        "entity_id": "EN-6861f63c27eb0ada",
+        "canonical_entity_id": "",
+        "name": "WindBorne Systems"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-ddeee51e4ab6119a",
+        "funding_insight_id": "FI-db2bd30618100f0d",
+        "event_ids": [
+          "EV-60f219702a66bf38"
+        ],
+        "company_entity_id": "EN-6861f63c27eb0ada",
+        "company_canonical_entity_id": "",
+        "company_name": "WindBorne Systems",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$37 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 37000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3700 万美元"
+        },
+        "announced_at": "2026-08-05",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-2daabe6c0da09480",
+            "source_url": "https://techcrunch.com/2026/08/05/ai-makes-weather-prediction-better-can-windborne-make-it-lucrative",
+            "source_title": "WindBorne Systems 完成 3700 万美元 B 轮融资，用 AI 气象模型让天气预报更赚钱",
+            "source_content_hash": "dcf3c391fcc5ef9d",
+            "quote": "The new round was co-led by Khosla Ventures and Galvanize",
+            "quote_hash": "67b21c9477b13594d9009e7706d8a42181101dae317f0ed254e99ba9de2e2808"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-005c09a7e2b6a286",
+        "funding_insight_id": "FI-db2bd30618100f0d",
+        "event_ids": [
+          "EV-60f219702a66bf38"
+        ],
+        "company_entity_id": "EN-6861f63c27eb0ada",
+        "company_canonical_entity_id": "",
+        "company_name": "WindBorne Systems",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$37 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 37000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3700 万美元"
+        },
+        "announced_at": "2026-08-05",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Series A 领投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-5f5111750b24d3d3",
+            "source_url": "https://parsers.vc/news/240605-windborne-systems-takes-flight-with-15/",
+            "source_title": "WindBorne Systems Takes Flight with $15 Million in Series A Funding",
+            "source_content_hash": "274d6fadc02167bf",
+            "quote": "This funding round was spearheaded by Khosla Ventures",
+            "quote_hash": "7ca4efa27f4b6169db60e39bee1a25e1c8d7698e367e4443f07719318b3dd3cd"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ccb4ffd6cb3725c6",
+        "funding_insight_id": "FI-edac864887206b8f",
+        "event_ids": [
+          "EV-ea109db692b88079"
+        ],
+        "company_entity_id": "EN-26997989b8425dac",
+        "company_canonical_entity_id": "",
+        "company_name": "Dili",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A 轮",
+        "amount_original": "$15 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "announced_at": "2026-07-30",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-28fb551788d5a89b",
+            "source_url": "https://techcrunch.com/2026/07/30/dili-raises-15-million-to-bring-ai-compliance-to-the-infrastructure-boom",
+            "source_title": "Dili 获 2170 万美元融资，用 AI 合规服务应对美国基建热潮",
+            "source_content_hash": "d1a260814ad6a646",
+            "quote": "The Series A was led by Khosla Ventures",
+            "quote_hash": "ddff36aa2a124d0a0012abf60003c017a92e1400300ae547db7147247453b549"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a98970856f05d344",
+        "funding_insight_id": "FI-af05392a4f819f5b",
+        "event_ids": [
+          "EV-6be89ebfbf8de6be"
+        ],
+        "company_entity_id": "EN-522656609ff15589",
+        "company_canonical_entity_id": "",
+        "company_name": "Bunkerhill Health",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$25 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 25000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2500 万美元"
+        },
+        "announced_at": "2026-07-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-6972db5a9fa5ab89",
+            "source_url": "https://www.bunkerhillhealth.com/resources/series-b-announcement",
+            "source_title": "Bunkerhill Health 融资 5500 万美元，助力医疗系统将最佳创意变为现实",
+            "source_content_hash": "b29892d1cda7f2dad360795a131bad7b402188dbb28d061c18bbdde18e2fc5ea",
+            "quote": "led by Khosla Ventures",
+            "quote_hash": "f35d8c30ddbb8e36608754e103c03b67c232d4cab602b61472ba080827e32569"
+          },
+          {
+            "source_id": "FISRC-60904dbd92002d6d",
+            "source_url": "https://miamiselect.com/bunkerhill-health-raises-55-million-to-put-ai-agents-to-work-inside-hospitals/",
+            "source_title": "Bunkerhill Health raises $55 million to put AI agents to work inside hospitals - Miami Select",
+            "source_content_hash": "67c1acc17b3797b1",
+            "quote": "The startup recently closed its $25 million Series B, led by Khosla Ventures",
+            "quote_hash": "e000b170731b06f47761500054951475126dfe6922b93aea718b7b0042a15d48"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d776069483356adf",
+        "funding_insight_id": "FI-9fd39f44b35d940c",
+        "event_ids": [
+          "EV-d9cc588fb41a7e67"
+        ],
+        "company_entity_id": "EN-712dffae168fe622",
+        "company_canonical_entity_id": "",
+        "company_name": "Nomos Ai Inc.",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "1.2亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 120000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.2 亿美元"
+        },
+        "announced_at": "2026-07-07",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-1b05d1dc5cb45a7b",
+            "source_url": "https://siliconangle.com/2026/07/07/norm-ai-nabs-120m-1-2b-valuation-bring-ai-agents-law/",
+            "source_title": "Norm Ai 以 12 亿美元估值获 1.2 亿美元融资，将 AI 智能体引入法律领域",
+            "source_content_hash": "bdcf73e00730d3c9",
+            "quote": "Khosla Ventures led the Series C round",
+            "quote_hash": "bd092be509277be05f7998846fb4ace0cd50ad5ff2fe1ad6861f6b7b0d037179"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ed6ddd56380a6b4b",
+        "funding_insight_id": "FI-3bd982e429974930",
+        "event_ids": [
+          "EV-0f520c9e5b1ea1d2"
+        ],
+        "company_entity_id": "EN-733859c1fc6b9331",
+        "company_canonical_entity_id": "",
+        "company_name": "Norm Ai",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "$120M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 120000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.2 亿美元"
+        },
+        "announced_at": "2026-07-07",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-9ec121b03e3fabc8",
+            "source_url": "https://techcrunch.com/2026/07/07/ai-law-startup-norm-raises-120m-hits-unicorn-valuation/",
+            "source_title": "AI 法律初创公司 Norm 获 1.2 亿美元融资，估值达独角兽级别",
+            "source_content_hash": "cbfe35d93b913826",
+            "quote": "led by Khosla Ventures",
+            "quote_hash": "f35d8c30ddbb8e36608754e103c03b67c232d4cab602b61472ba080827e32569"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-1298d826fef9f47b",
+        "funding_insight_id": "FI-9e8f37e4b7cf28a5",
+        "event_ids": [
+          "EV-7283de3f3a76d22b"
+        ],
+        "company_entity_id": "EN-dc8a5a5bf80909de",
+        "company_canonical_entity_id": "",
+        "company_name": "General Intuition",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$320 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 320000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.2 亿美元"
+        },
+        "announced_at": "2026-06-25",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-1fcc20a8b95a7aec",
+            "source_url": "https://techcrunch.com/2026/06/25/from-fortnite-to-robots-general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world",
+            "source_title": "General Intuition 完成 3.2 亿美元融资，用游戏数据训练通用 AI 智能体",
+            "source_content_hash": "01b9cc29b285066d",
+            "quote": "General Intuition’s latest round was led by Khosla Ventures",
+            "quote_hash": "37d13e53f6d6bcb3bc154fc5961feb072db93692a7dbdc17369ee369c4bcc4ca"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9d07897fd87cf6e9",
+        "funding_insight_id": "FI-9e8f37e4b7cf28a5",
+        "event_ids": [
+          "EV-7283de3f3a76d22b"
+        ],
+        "company_entity_id": "EN-dc8a5a5bf80909de",
+        "company_canonical_entity_id": "",
+        "company_name": "General Intuition",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$320 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 320000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.2 亿美元"
+        },
+        "announced_at": "2026-06-25",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4636abec463123a9",
+            "source_url": "https://gamesbeat.com/general-intuition-raises-320m-at-2-3b-valuation-for-ai-frontier-models-based-on-gameplay-exclusive-interview/",
+            "source_title": "General Intuition raises $320M at $2.3B valuation for AI frontier models based on gameplay | exclusive interview - GamesBeat",
+            "source_content_hash": "6babe5630ef3dbfd",
+            "quote": "Khosla Ventures led the latest January round of $320 million, just as it had with the $133.7 million round.",
+            "quote_hash": "f44bf9f23030414c340d3165435f5e473e199c271ea913d717f48b75b02fe10d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-1794eb6521f54c49",
+        "funding_insight_id": "FI-f827c48191c7b15c",
+        "event_ids": [
+          "EV-d7f7e372d16c2241"
+        ],
+        "company_entity_id": "EN-ccfc5e062828b145",
+        "company_canonical_entity_id": "",
+        "company_name": "Scaled Cognition",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A 轮",
+        "amount_original": "1 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1 亿美元"
+        },
+        "announced_at": "2026-06-25",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-d51dcca06dfa68e0",
+            "source_url": "https://thenextweb.com/news/scaled-cognition-100m-khosla-reliable-ai",
+            "source_title": "Scaled Cognition 获 Khosla 领投 1 亿美元融资",
+            "source_content_hash": "b4a25bfc769ddf20",
+            "quote": "Scaled Cognition has raised $100M led by Khosla Ventures",
+            "quote_hash": "e1c95d9a043365e451828a42a51d141d2ebc45f54411615bcd440d3de1ee8241"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-429e5d9c71f8741e",
+        "funding_insight_id": "FI-04c68623444d84d6",
+        "event_ids": [
+          "EV-7817dc69d5228cbb"
+        ],
+        "company_entity_id": "EN-e69f64149edae6b1",
+        "company_canonical_entity_id": "EN-e69f64149edae6b1",
+        "company_name": "Runlayer",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "3000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-06-24",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投，种子轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-06082ac5aeed96c9",
+            "source_url": "https://www.prnewswire.com/news-releases/runlayer-raises-30m-series-a-to-help-enterprises-go-all-in-on-ai-302809271.html",
+            "source_title": "Runlayer 获 3000 万美元 A 轮融资，助力企业全面拥抱 AI",
+            "source_content_hash": "6fd7da0cbf7f6306",
+            "quote": "with participation from Khosla Ventures",
+            "quote_hash": "2ee696d96a0416de6e5931cb560771d9e4b47ad1d484903f97582dfd3833f9f3"
+          },
+          {
+            "source_id": "FISRC-06082ac5aeed96c9",
+            "source_url": "https://www.prnewswire.com/news-releases/runlayer-raises-30m-series-a-to-help-enterprises-go-all-in-on-ai-302809271.html",
+            "source_title": "Runlayer 获 3000 万美元 A 轮融资，助力企业全面拥抱 AI",
+            "source_content_hash": "6fd7da0cbf7f6306",
+            "quote": "Jon Chu, the Partner at Khosla Ventures that led both their seed and A round investments into Runlayer",
+            "quote_hash": "53474c25bc7c53f2f91ec3961eb74c590b1b3848ac36c17007636b9d20cb6286"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ac8dc9d4eed3ead7",
+        "funding_insight_id": "FI-719f63b9222c15f9",
+        "event_ids": [
+          "EV-1306e17cf1f3553e"
+        ],
+        "company_entity_id": "EN-4728b0c37dc84206",
+        "company_canonical_entity_id": "",
+        "company_name": "Convey",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$38 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 38000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3800 万美元"
+        },
+        "announced_at": "2026-06-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "种子轮领投及本轮参投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-64f503a9daae9dcf",
+            "source_url": "https://finance.yahoo.com/technology/ai/articles/convey-raises-38-million-series-144600199.html",
+            "source_title": "Convey 获 Andreessen Horowitz 领投 3800 万美元 A 轮融资，以 AI 同事自动化企业运营",
+            "source_content_hash": "aa1608898745e0a2",
+            "quote": "continued participation from Khosla Ventures",
+            "quote_hash": "f068305c99b89a430b15446e0eb5125a3325d8b30c2a2666760534a6ffa51906"
+          },
+          {
+            "source_id": "FISRC-e0ed8a80acf87875",
+            "source_url": "https://justainews.com/companies/funding-news/convey-raises-38m-series-a-led-by-andreessen-horowitz/",
+            "source_title": "Convey Raises $38M Series A Led by Andreessen Horowitz",
+            "source_content_hash": "0bc4705f074a98b1",
+            "quote": "We backed him in the seed round, and we're doubling down on the Series A",
+            "quote_hash": "02ef66cfce6123679777d9adcb9092ea6330aeb530c4716f9b316ea573f745b8"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-bb004a8bbedc05f9",
+        "funding_insight_id": "FI-9854c05d7208a585",
+        "event_ids": [
+          "EV-e3382d1c1d7db751"
+        ],
+        "company_entity_id": "EN-ee1e31ffef7dbe64",
+        "company_canonical_entity_id": "EN-ee1e31ffef7dbe64",
+        "company_name": "Sarvam",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$234 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 234000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.34 亿美元"
+        },
+        "announced_at": "2026-06-15",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-eb156fd01909fe18",
+            "source_url": "https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech",
+            "source_title": "Sarvam完成2.34亿美元融资，成印度最新AI独角兽",
+            "source_content_hash": "a56910704adc32b1",
+            "quote": "existing backers Khosla Ventures and Peak XV Partners",
+            "quote_hash": "e698c78eb93709ce5b190c440e4f47aede944419da2c9f83574ce959ea376e9a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3a55269c2b6e2bb5",
+        "funding_insight_id": "FI-a29040155764e60f",
+        "event_ids": [
+          "EV-b348083270be6c65"
+        ],
+        "company_entity_id": "EN-1c5483264189feef",
+        "company_canonical_entity_id": "",
+        "company_name": "Onyx",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$10M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2025-03-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-03b9d51b95b8c6ce",
+            "source_url": "https://www.globenewswire.com/news-release/2025/03/12/3041638/0/en/Onyx-Raises-10M-To-Help-Teams-Find-Knowledge-Faster-with-Open-Source-AI-Agents.html",
+            "source_title": "Onyx 获 1000 万美元融资，助力团队更快获取知识",
+            "source_content_hash": "9266f35a39d4c471",
+            "quote": "The round was co-led by Khosla Ventures and First Round Capital",
+            "quote_hash": "3b6a63c25ba8b8d8e2fd847a93d7b9bfba14d69d63bd14ce73e0b2435993fa28"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a18eae482c677f35",
+        "funding_insight_id": "FI-c210fc9ab5481f28",
+        "event_ids": [
+          "EV-b31602193dbf4e08"
+        ],
+        "company_entity_id": "EN-53b69ef92c836777",
+        "company_canonical_entity_id": "",
+        "company_name": "Replit",
+        "round": "B轮扩展",
+        "round_code": "series_b_extension",
+        "round_original": "Series B extension",
+        "amount_original": "$97.4 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 97400000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9740 万美元"
+        },
+        "announced_at": "2023-04-27",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9b0f32fe01d091cc",
+            "source_url": "https://techcrunch.com/2023/04/27/replit-funding-100m-generative-ai/",
+            "source_title": "Replit，开发GitHub Copilot竞品的网页IDE，获1亿美元融资",
+            "source_content_hash": "3b03664369ea0afe",
+            "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer.",
+            "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-2daabe6c0da09480",
+        "source_url": "https://techcrunch.com/2026/08/05/ai-makes-weather-prediction-better-can-windborne-make-it-lucrative",
+        "source_title": "WindBorne Systems 完成 3700 万美元 B 轮融资，用 AI 气象模型让天气预报更赚钱",
+        "source_content_hash": "dcf3c391fcc5ef9d",
+        "quote": "The new round was co-led by Khosla Ventures and Galvanize",
+        "quote_hash": "67b21c9477b13594d9009e7706d8a42181101dae317f0ed254e99ba9de2e2808"
+      },
+      {
+        "source_id": "FISRC-5f5111750b24d3d3",
+        "source_url": "https://parsers.vc/news/240605-windborne-systems-takes-flight-with-15/",
+        "source_title": "WindBorne Systems Takes Flight with $15 Million in Series A Funding",
+        "source_content_hash": "274d6fadc02167bf",
+        "quote": "This funding round was spearheaded by Khosla Ventures",
+        "quote_hash": "7ca4efa27f4b6169db60e39bee1a25e1c8d7698e367e4443f07719318b3dd3cd"
+      },
+      {
+        "source_id": "FISRC-28fb551788d5a89b",
+        "source_url": "https://techcrunch.com/2026/07/30/dili-raises-15-million-to-bring-ai-compliance-to-the-infrastructure-boom",
+        "source_title": "Dili 获 2170 万美元融资，用 AI 合规服务应对美国基建热潮",
+        "source_content_hash": "d1a260814ad6a646",
+        "quote": "The Series A was led by Khosla Ventures",
+        "quote_hash": "ddff36aa2a124d0a0012abf60003c017a92e1400300ae547db7147247453b549"
+      },
+      {
+        "source_id": "FISRC-6972db5a9fa5ab89",
+        "source_url": "https://www.bunkerhillhealth.com/resources/series-b-announcement",
+        "source_title": "Bunkerhill Health 融资 5500 万美元，助力医疗系统将最佳创意变为现实",
+        "source_content_hash": "b29892d1cda7f2dad360795a131bad7b402188dbb28d061c18bbdde18e2fc5ea",
+        "quote": "led by Khosla Ventures",
+        "quote_hash": "f35d8c30ddbb8e36608754e103c03b67c232d4cab602b61472ba080827e32569"
+      },
+      {
+        "source_id": "FISRC-60904dbd92002d6d",
+        "source_url": "https://miamiselect.com/bunkerhill-health-raises-55-million-to-put-ai-agents-to-work-inside-hospitals/",
+        "source_title": "Bunkerhill Health raises $55 million to put AI agents to work inside hospitals - Miami Select",
+        "source_content_hash": "67c1acc17b3797b1",
+        "quote": "The startup recently closed its $25 million Series B, led by Khosla Ventures",
+        "quote_hash": "e000b170731b06f47761500054951475126dfe6922b93aea718b7b0042a15d48"
+      },
+      {
+        "source_id": "FISRC-1b05d1dc5cb45a7b",
+        "source_url": "https://siliconangle.com/2026/07/07/norm-ai-nabs-120m-1-2b-valuation-bring-ai-agents-law/",
+        "source_title": "Norm Ai 以 12 亿美元估值获 1.2 亿美元融资，将 AI 智能体引入法律领域",
+        "source_content_hash": "bdcf73e00730d3c9",
+        "quote": "Khosla Ventures led the Series C round",
+        "quote_hash": "bd092be509277be05f7998846fb4ace0cd50ad5ff2fe1ad6861f6b7b0d037179"
+      },
+      {
+        "source_id": "FISRC-9ec121b03e3fabc8",
+        "source_url": "https://techcrunch.com/2026/07/07/ai-law-startup-norm-raises-120m-hits-unicorn-valuation/",
+        "source_title": "AI 法律初创公司 Norm 获 1.2 亿美元融资，估值达独角兽级别",
+        "source_content_hash": "cbfe35d93b913826",
+        "quote": "led by Khosla Ventures",
+        "quote_hash": "f35d8c30ddbb8e36608754e103c03b67c232d4cab602b61472ba080827e32569"
+      },
+      {
+        "source_id": "FISRC-1fcc20a8b95a7aec",
+        "source_url": "https://techcrunch.com/2026/06/25/from-fortnite-to-robots-general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world",
+        "source_title": "General Intuition 完成 3.2 亿美元融资，用游戏数据训练通用 AI 智能体",
+        "source_content_hash": "01b9cc29b285066d",
+        "quote": "General Intuition’s latest round was led by Khosla Ventures",
+        "quote_hash": "37d13e53f6d6bcb3bc154fc5961feb072db93692a7dbdc17369ee369c4bcc4ca"
+      },
+      {
+        "source_id": "FISRC-4636abec463123a9",
+        "source_url": "https://gamesbeat.com/general-intuition-raises-320m-at-2-3b-valuation-for-ai-frontier-models-based-on-gameplay-exclusive-interview/",
+        "source_title": "General Intuition raises $320M at $2.3B valuation for AI frontier models based on gameplay | exclusive interview - GamesBeat",
+        "source_content_hash": "6babe5630ef3dbfd",
+        "quote": "Khosla Ventures led the latest January round of $320 million, just as it had with the $133.7 million round.",
+        "quote_hash": "f44bf9f23030414c340d3165435f5e473e199c271ea913d717f48b75b02fe10d"
+      },
+      {
+        "source_id": "FISRC-d51dcca06dfa68e0",
+        "source_url": "https://thenextweb.com/news/scaled-cognition-100m-khosla-reliable-ai",
+        "source_title": "Scaled Cognition 获 Khosla 领投 1 亿美元融资",
+        "source_content_hash": "b4a25bfc769ddf20",
+        "quote": "Scaled Cognition has raised $100M led by Khosla Ventures",
+        "quote_hash": "e1c95d9a043365e451828a42a51d141d2ebc45f54411615bcd440d3de1ee8241"
+      },
+      {
+        "source_id": "FISRC-06082ac5aeed96c9",
+        "source_url": "https://www.prnewswire.com/news-releases/runlayer-raises-30m-series-a-to-help-enterprises-go-all-in-on-ai-302809271.html",
+        "source_title": "Runlayer 获 3000 万美元 A 轮融资，助力企业全面拥抱 AI",
+        "source_content_hash": "6fd7da0cbf7f6306",
+        "quote": "with participation from Khosla Ventures",
+        "quote_hash": "2ee696d96a0416de6e5931cb560771d9e4b47ad1d484903f97582dfd3833f9f3"
+      },
+      {
+        "source_id": "FISRC-06082ac5aeed96c9",
+        "source_url": "https://www.prnewswire.com/news-releases/runlayer-raises-30m-series-a-to-help-enterprises-go-all-in-on-ai-302809271.html",
+        "source_title": "Runlayer 获 3000 万美元 A 轮融资，助力企业全面拥抱 AI",
+        "source_content_hash": "6fd7da0cbf7f6306",
+        "quote": "Jon Chu, the Partner at Khosla Ventures that led both their seed and A round investments into Runlayer",
+        "quote_hash": "53474c25bc7c53f2f91ec3961eb74c590b1b3848ac36c17007636b9d20cb6286"
+      },
+      {
+        "source_id": "FISRC-64f503a9daae9dcf",
+        "source_url": "https://finance.yahoo.com/technology/ai/articles/convey-raises-38-million-series-144600199.html",
+        "source_title": "Convey 获 Andreessen Horowitz 领投 3800 万美元 A 轮融资，以 AI 同事自动化企业运营",
+        "source_content_hash": "aa1608898745e0a2",
+        "quote": "continued participation from Khosla Ventures",
+        "quote_hash": "f068305c99b89a430b15446e0eb5125a3325d8b30c2a2666760534a6ffa51906"
+      },
+      {
+        "source_id": "FISRC-e0ed8a80acf87875",
+        "source_url": "https://justainews.com/companies/funding-news/convey-raises-38m-series-a-led-by-andreessen-horowitz/",
+        "source_title": "Convey Raises $38M Series A Led by Andreessen Horowitz",
+        "source_content_hash": "0bc4705f074a98b1",
+        "quote": "We backed him in the seed round, and we're doubling down on the Series A",
+        "quote_hash": "02ef66cfce6123679777d9adcb9092ea6330aeb530c4716f9b316ea573f745b8"
+      },
+      {
+        "source_id": "FISRC-eb156fd01909fe18",
+        "source_url": "https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech",
+        "source_title": "Sarvam完成2.34亿美元融资，成印度最新AI独角兽",
+        "source_content_hash": "a56910704adc32b1",
+        "quote": "existing backers Khosla Ventures and Peak XV Partners",
+        "quote_hash": "e698c78eb93709ce5b190c440e4f47aede944419da2c9f83574ce959ea376e9a"
+      },
+      {
+        "source_id": "FISRC-03b9d51b95b8c6ce",
+        "source_url": "https://www.globenewswire.com/news-release/2025/03/12/3041638/0/en/Onyx-Raises-10M-To-Help-Teams-Find-Knowledge-Faster-with-Open-Source-AI-Agents.html",
+        "source_title": "Onyx 获 1000 万美元融资，助力团队更快获取知识",
+        "source_content_hash": "9266f35a39d4c471",
+        "quote": "The round was co-led by Khosla Ventures and First Round Capital",
+        "quote_hash": "3b6a63c25ba8b8d8e2fd847a93d7b9bfba14d69d63bd14ce73e0b2435993fa28"
+      },
+      {
+        "source_id": "FISRC-9b0f32fe01d091cc",
+        "source_url": "https://techcrunch.com/2023/04/27/replit-funding-100m-generative-ai/",
+        "source_title": "Replit，开发GitHub Copilot竞品的网页IDE，获1亿美元融资",
+        "source_content_hash": "3b03664369ea0afe",
+        "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer.",
+        "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-d8896848a2dd86",
+    "name": "Kulveer Taggar",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2025-03-12",
+    "latest_disclosed_at": "2025-03-12",
+    "role_counts": {
+      "other_current_round": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-1c5483264189feef",
+        "canonical_entity_id": "",
+        "name": "Onyx"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-1a10de22b425ca3b",
+        "funding_insight_id": "FI-a29040155764e60f",
+        "event_ids": [
+          "EV-b348083270be6c65"
+        ],
+        "company_entity_id": "EN-1c5483264189feef",
+        "company_canonical_entity_id": "",
+        "company_name": "Onyx",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$10M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2025-03-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮天使投资人",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-03b9d51b95b8c6ce",
+            "source_url": "https://www.globenewswire.com/news-release/2025/03/12/3041638/0/en/Onyx-Raises-10M-To-Help-Teams-Find-Knowledge-Faster-with-Open-Source-AI-Agents.html",
+            "source_title": "Onyx 获 1000 万美元融资，助力团队更快获取知识",
+            "source_content_hash": "9266f35a39d4c471",
+            "quote": "Kulveer Taggar (Zeus Living)",
+            "quote_hash": "616abbaf94dd0a4ad5a9c6a03c3ba0e59ca2e508a124624449e0f6c2d0f4a21f"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-03b9d51b95b8c6ce",
+        "source_url": "https://www.globenewswire.com/news-release/2025/03/12/3041638/0/en/Onyx-Raises-10M-To-Help-Teams-Find-Knowledge-Faster-with-Open-Source-AI-Agents.html",
+        "source_title": "Onyx 获 1000 万美元融资，助力团队更快获取知识",
+        "source_content_hash": "9266f35a39d4c471",
+        "quote": "Kulveer Taggar (Zeus Living)",
+        "quote_hash": "616abbaf94dd0a4ad5a9c6a03c3ba0e59ca2e508a124624449e0f6c2d0f4a21f"
+      }
+    ]
+  }
+}

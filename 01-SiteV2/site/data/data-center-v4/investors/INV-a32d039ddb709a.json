@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-a32d039ddb709a",
+    "name": "Rogue Women VC",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2025-12-09",
+    "latest_disclosed_at": "2025-12-09",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "pre_seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-6c425df9139ab70a",
+        "canonical_entity_id": "",
+        "name": "Empromptu"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-6798174f1c7e4358",
+        "funding_insight_id": "FI-99bbc6c0300806f4",
+        "event_ids": [
+          "EV-a7dfdd426fe2a74d"
+        ],
+        "company_entity_id": "EN-6c425df9139ab70a",
+        "company_canonical_entity_id": "",
+        "company_name": "Empromptu",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "pre-seed",
+        "amount_original": "$2M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "200 万美元"
+        },
+        "announced_at": "2025-12-09",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-99e63c0e1fbdfa5c",
+            "source_url": "https://www.finsmes.com/2025/12/empromptu-raises-2m-in-pre-seed-funding.html",
+            "source_title": "Empromptu Raises $2M in Pre-Seed Funding",
+            "source_content_hash": "5a0da7af4b58af89",
+            "quote": "with participation from Alumni Ventures, Founders Edge, Rogue Women VC, South Loop, and Zeal Capital",
+            "quote_hash": "51accbd697c3fc2966ad47f6d7ed7f3145da46cc21f2e1c3e5dae993a82e2bab"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-99e63c0e1fbdfa5c",
+        "source_url": "https://www.finsmes.com/2025/12/empromptu-raises-2m-in-pre-seed-funding.html",
+        "source_title": "Empromptu Raises $2M in Pre-Seed Funding",
+        "source_content_hash": "5a0da7af4b58af89",
+        "quote": "with participation from Alumni Ventures, Founders Edge, Rogue Women VC, South Loop, and Zeal Capital",
+        "quote_hash": "51accbd697c3fc2966ad47f6d7ed7f3145da46cc21f2e1c3e5dae993a82e2bab"
+      }
+    ]
+  }
+}

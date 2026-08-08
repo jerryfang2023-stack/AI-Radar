@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-016b038543360f",
+    "name": "Alpha Wave",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-05-27",
+    "latest_disclosed_at": "2026-05-27",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_d"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-ac32f27ba7a1346f",
+        "canonical_entity_id": "",
+        "name": "Cognition"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-be768edf0c33bd88",
+        "funding_insight_id": "FI-5faa0336090509de",
+        "event_ids": [
+          "EV-5762fe51987bc5ff"
+        ],
+        "company_entity_id": "EN-ac32f27ba7a1346f",
+        "company_canonical_entity_id": "",
+        "company_name": "Cognition",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "超过 10 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": 1000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 10 亿美元"
+        },
+        "announced_at": "2026-05-27",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "既有投资方，本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a7bbb48af7503bf0",
+            "source_url": "https://cognition.com/blog/series-d",
+            "source_title": "More Devins in More Places | Cognition",
+            "source_content_hash": "f64d20b5549e1b58",
+            "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi.",
+            "quote_hash": "e9c743427fb33e7babf1a1a5320728a23990e3e296f42978145c06f2b151a224"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-a7bbb48af7503bf0",
+        "source_url": "https://cognition.com/blog/series-d",
+        "source_title": "More Devins in More Places | Cognition",
+        "source_content_hash": "f64d20b5549e1b58",
+        "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi.",
+        "quote_hash": "e9c743427fb33e7babf1a1a5320728a23990e3e296f42978145c06f2b151a224"
+      }
+    ]
+  }
+}

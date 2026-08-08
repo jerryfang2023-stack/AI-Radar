@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-a57dd72ad43af0",
+    "name": "Titan Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2025-07-30",
+    "latest_disclosed_at": "2026-06-17",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "lead": 1
+    },
+    "round_codes": [
+      "pre_seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-81755fe5ba7860e7",
+        "canonical_entity_id": "",
+        "name": "Heizen"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-a825488a0c525a26",
+        "funding_insight_id": "FI-24eaebf9e623824d",
+        "event_ids": [
+          "EV-232ab5bcbaf6552d"
+        ],
+        "company_entity_id": "EN-c945929c3683ffb0",
+        "company_canonical_entity_id": "",
+        "company_name": "ContraVault AI",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-Series A",
+        "amount_original": "$3.1 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3100000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "310 万美元"
+        },
+        "announced_at": "2026-06-17",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-78278ca61a2d245e",
+            "source_url": "https://startupsunion.com/contravault-ai-raises-3-1m-pre-series-a-to-revolutionize-procurement-intelligence/",
+            "source_title": "ContraVault AI 获310万美元Pre-A轮融资，旨在革新采购智能",
+            "source_content_hash": "7821aafe08e9c8d7",
+            "quote": "Before this round, the company had pulled in roughly $600,000 from Titan Capital and angel investors at the seed stage.",
+            "quote_hash": "70c72bf7f784800b19bb4d3f76d69f788b2e74c725cb710f5fb2488b41585256"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-27acaee96f191779",
+        "funding_insight_id": "FI-981175c74b701892",
+        "event_ids": [
+          "EV-cab0d2efad362cf7"
+        ],
+        "company_entity_id": "EN-81755fe5ba7860e7",
+        "company_canonical_entity_id": "",
+        "company_name": "Heizen",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "Pre-Seed",
+        "amount_original": "$500,000",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 万美元"
+        },
+        "announced_at": "2025-07-30",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-3916f9c102f08152",
+            "source_url": "https://www.indianstartuptimes.com/investment/ai-software-startup-heizen-secures-500000-pre-seed-funding-led-by-titan-capital",
+            "source_title": "AI 软件初创公司 Heizen 获 50 万美元种子轮前融资，由 Titan Capital 领投",
+            "source_content_hash": "ad6ef54a62ae9742",
+            "quote": "pre-seed funding round led by Titan Capital",
+            "quote_hash": "a66af8b3b780e7cadc01711b872d268899bd4b82167fdeffcddadc10ecd368f6"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-78278ca61a2d245e",
+        "source_url": "https://startupsunion.com/contravault-ai-raises-3-1m-pre-series-a-to-revolutionize-procurement-intelligence/",
+        "source_title": "ContraVault AI 获310万美元Pre-A轮融资，旨在革新采购智能",
+        "source_content_hash": "7821aafe08e9c8d7",
+        "quote": "Before this round, the company had pulled in roughly $600,000 from Titan Capital and angel investors at the seed stage.",
+        "quote_hash": "70c72bf7f784800b19bb4d3f76d69f788b2e74c725cb710f5fb2488b41585256"
+      },
+      {
+        "source_id": "FISRC-3916f9c102f08152",
+        "source_url": "https://www.indianstartuptimes.com/investment/ai-software-startup-heizen-secures-500000-pre-seed-funding-led-by-titan-capital",
+        "source_title": "AI 软件初创公司 Heizen 获 50 万美元种子轮前融资，由 Titan Capital 领投",
+        "source_content_hash": "ad6ef54a62ae9742",
+        "quote": "pre-seed funding round led by Titan Capital",
+        "quote_hash": "a66af8b3b780e7cadc01711b872d268899bd4b82167fdeffcddadc10ecd368f6"
+      }
+    ]
+  }
+}

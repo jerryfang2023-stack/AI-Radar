@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-d69c8b617342a8",
+    "name": "FCVC",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-11",
+    "latest_disclosed_at": "2026-06-11",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-8bb4f88fd3cf9b29",
+        "canonical_entity_id": "",
+        "name": "Structured AI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-6155fd6596944512",
+        "funding_insight_id": "FI-82d1e99998c69025",
+        "event_ids": [
+          "EV-40d196865997025c"
+        ],
+        "company_entity_id": "EN-8bb4f88fd3cf9b29",
+        "company_canonical_entity_id": "",
+        "company_name": "Structured AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$4.2M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4200000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "420 万美元"
+        },
+        "announced_at": "2026-06-11",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-7568031d64eac5fa",
+            "source_url": "https://getstructured.ai/blog/structured-ai-4-2m-seed-round/",
+            "source_title": "Structured AI 获420万美元种子轮融资，为建筑世界构建质量层",
+            "source_content_hash": "77fbdb6058a98d5e",
+            "quote": "The round was led by FCVC",
+            "quote_hash": "7c831a22b4609648d56378229215caeb55a966628a367480158731726c74070c"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-7568031d64eac5fa",
+        "source_url": "https://getstructured.ai/blog/structured-ai-4-2m-seed-round/",
+        "source_title": "Structured AI 获420万美元种子轮融资，为建筑世界构建质量层",
+        "source_content_hash": "77fbdb6058a98d5e",
+        "quote": "The round was led by FCVC",
+        "quote_hash": "7c831a22b4609648d56378229215caeb55a966628a367480158731726c74070c"
+      }
+    ]
+  }
+}

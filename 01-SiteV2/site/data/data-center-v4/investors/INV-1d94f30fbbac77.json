@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-1d94f30fbbac77",
+    "name": "Jump Trading",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2026-02-04",
+    "latest_disclosed_at": "2026-06-30",
+    "role_counts": {
+      "co_lead": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "multi_round",
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "FICO-etched",
+        "canonical_entity_id": "",
+        "name": "Etched"
+      },
+      {
+        "entity_id": "EN-0995103010d39563",
+        "canonical_entity_id": "",
+        "name": "Positron AI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-b6d26fa06be773a8",
+        "funding_insight_id": "FI-d24e79349c1e9713",
+        "event_ids": [
+          "EV-040fc355bc12a750",
+          "EV-80e54c9a390da293"
+        ],
+        "company_entity_id": "FICO-etched",
+        "company_canonical_entity_id": "",
+        "company_name": "Etched",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮（含2025年12月由Stripes领投的5亿美元轮次及Jane Street领投的此前未披露轮次）",
+        "amount_original": "$800 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 800000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8 亿美元"
+        },
+        "announced_at": "2026-06-30",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-41379635293a6bc8",
+            "source_url": "https://www.mitsloanme.com/article/nvidia-rival-etched-steps-out-of-stealth-with-5b-valuation/",
+            "source_title": "Nvidia Rival Etched Steps Out of Stealth With $5B Valuation - MIT Sloan Management Review Middle East",
+            "source_content_hash": "0fc2af151fdcca39",
+            "quote": "This includes a strategic investment from VentureTech Alliance, along with Peter Thiel, Jane Street, Hudson River Trading, Jump Trading, Two Sigma, Stripes, Ribbit Capital, Radical Ventures, Primary VC, Positive Sum",
+            "quote_hash": "8a6562666516580b1caa4a5d94a4d08ad77dc1a7f457799e74cb1999cf57de54"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-fd0c8d8f9d0d2fe9",
+        "funding_insight_id": "FI-cfb62be40852ea40",
+        "event_ids": [
+          "EV-7abd8ec418f1e7f3"
+        ],
+        "company_entity_id": "EN-0995103010d39563",
+        "company_canonical_entity_id": "",
+        "company_name": "Positron AI",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$230 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 230000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.3 亿美元"
+        },
+        "announced_at": "2026-02-04",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-272c28400131d6f2",
+            "source_url": "https://techcrunch.com/2026/02/04/exclusive-positron-raises-230m-series-b-to-take-on-nvidias-ai-chips/",
+            "source_title": "独家：Positron 获 2.3 亿美元 B 轮融资，挑战英伟达 AI 芯片",
+            "source_content_hash": "a68fc4da018f5dc8",
+            "quote": "co-led by Arena Private Wealth, Jump Trading, and Unless",
+            "quote_hash": "4e8f0812b1550eed31439bcf851c396e3e6a72cb2ae8e12a93c5459a9f3f2911"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-41379635293a6bc8",
+        "source_url": "https://www.mitsloanme.com/article/nvidia-rival-etched-steps-out-of-stealth-with-5b-valuation/",
+        "source_title": "Nvidia Rival Etched Steps Out of Stealth With $5B Valuation - MIT Sloan Management Review Middle East",
+        "source_content_hash": "0fc2af151fdcca39",
+        "quote": "This includes a strategic investment from VentureTech Alliance, along with Peter Thiel, Jane Street, Hudson River Trading, Jump Trading, Two Sigma, Stripes, Ribbit Capital, Radical Ventures, Primary VC, Positive Sum",
+        "quote_hash": "8a6562666516580b1caa4a5d94a4d08ad77dc1a7f457799e74cb1999cf57de54"
+      },
+      {
+        "source_id": "FISRC-272c28400131d6f2",
+        "source_url": "https://techcrunch.com/2026/02/04/exclusive-positron-raises-230m-series-b-to-take-on-nvidias-ai-chips/",
+        "source_title": "独家：Positron 获 2.3 亿美元 B 轮融资，挑战英伟达 AI 芯片",
+        "source_content_hash": "a68fc4da018f5dc8",
+        "quote": "co-led by Arena Private Wealth, Jump Trading, and Unless",
+        "quote_hash": "4e8f0812b1550eed31439bcf851c396e3e6a72cb2ae8e12a93c5459a9f3f2911"
+      }
+    ]
+  }
+}

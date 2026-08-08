@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-f0b8ee0436381b",
+    "name": "Vapi (founders)",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-23",
+    "latest_disclosed_at": "2026-06-23",
+    "role_counts": {
+      "other_current_round": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-f346eaca864441f9",
+        "canonical_entity_id": "",
+        "name": "JustAI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-a3bdbc64f0978423",
+        "funding_insight_id": "FI-617705549a679908",
+        "event_ids": [
+          "EV-e7dcecaed5a0ee5b"
+        ],
+        "company_entity_id": "EN-f346eaca864441f9",
+        "company_canonical_entity_id": "",
+        "company_name": "JustAI",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$17 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 17000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1700 万美元"
+        },
+        "announced_at": "2026-06-23",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮天使投资人",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-058518ce11dc5f00",
+            "source_url": "https://sg.finance.yahoo.com/news/justai-raises-17m-series-build-170000502.html",
+            "source_title": "JustAI Raises $17M Series A to Build an Agentic Marketing Platform",
+            "source_content_hash": "80f6dde2ca5cd41c",
+            "quote": "The round also includes strategic investors and operators from anthropic, Chime and Notion, the CTO of HubSpot, and the founders of Eppo and Vapi.",
+            "quote_hash": "a995640e15dc43403c0f100520d68037d4b862005cb14af60de7a2654a8517cd"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-058518ce11dc5f00",
+        "source_url": "https://sg.finance.yahoo.com/news/justai-raises-17m-series-build-170000502.html",
+        "source_title": "JustAI Raises $17M Series A to Build an Agentic Marketing Platform",
+        "source_content_hash": "80f6dde2ca5cd41c",
+        "quote": "The round also includes strategic investors and operators from anthropic, Chime and Notion, the CTO of HubSpot, and the founders of Eppo and Vapi.",
+        "quote_hash": "a995640e15dc43403c0f100520d68037d4b862005cb14af60de7a2654a8517cd"
+      }
+    ]
+  }
+}

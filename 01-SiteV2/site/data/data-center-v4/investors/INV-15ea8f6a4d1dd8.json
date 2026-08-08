@@ -1,0 +1,271 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-15ea8f6a4d1dd8",
+    "name": "Radical Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 3,
+    "first_disclosed_at": "2023-06-27",
+    "latest_disclosed_at": "2026-07-29",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "lead": 2,
+      "participant": 1
+    },
+    "round_codes": [
+      "multi_round",
+      "series_a",
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "FICO-etched",
+        "canonical_entity_id": "",
+        "name": "Etched"
+      },
+      {
+        "entity_id": "EN-fa373257792c6b9b",
+        "canonical_entity_id": "EN-fa373257792c6b9b",
+        "name": "Prime Intellect"
+      },
+      {
+        "entity_id": "EN-7209ec6f68ac0bcd",
+        "canonical_entity_id": "",
+        "name": "Reka"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-79cec93158832c7e",
+        "funding_insight_id": "FI-0d10135597ba793d",
+        "event_ids": [
+          "EV-39b075c62ba4e927"
+        ],
+        "company_entity_id": "EN-f9075cc99990820a",
+        "company_canonical_entity_id": "EN-f9075cc99990820a",
+        "company_name": "P-1 AI, Inc.",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$50 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-07-29",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-17090c9ebbe2bea3",
+            "source_url": "https://lifestyle.tasteterminal.com/story/786493/engineering-ai-startup-p-1-ai-announces-its-series-a-financing-led-by-nea-adding-jeff-immelt-to-the-companys-board/",
+            "source_title": "Engineering AI startup, P-1 AI, Announces Its Series A Financing Led by NEA, Adding Jeff Immelt to the Company’s Board | lifestyle.tasteterminal.com",
+            "source_content_hash": "011d02174c292209",
+            "quote": "the company’s $23 million seed round led by Radical Ventures in 2025",
+            "quote_hash": "663760bf3cc5e0b4b740c3d79b31d9658fe954924f5359104bb574d877508581"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-aba5b8ae9543823f",
+        "funding_insight_id": "FI-eb27063b86f12aff",
+        "event_ids": [
+          "EV-463cb26b5e03c7f7"
+        ],
+        "company_entity_id": "EN-fa373257792c6b9b",
+        "company_canonical_entity_id": "EN-fa373257792c6b9b",
+        "company_name": "Prime Intellect",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$130 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 130000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.3 亿美元"
+        },
+        "announced_at": "2026-07-08",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-afe2544836558c64",
+            "source_url": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
+            "source_title": "Prime Intellect raises $130M Series A to help enterprises build their own AI agents | TechCrunch",
+            "source_content_hash": "596e7c850e10c828",
+            "quote": "The massive round was led by Radical Ventures",
+            "quote_hash": "827fbb592dd2015a5bfabac93569964f0a7f214ec7344200be7427b7510351fd"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e45efcb075cd785e",
+        "funding_insight_id": "FI-d24e79349c1e9713",
+        "event_ids": [
+          "EV-040fc355bc12a750",
+          "EV-80e54c9a390da293"
+        ],
+        "company_entity_id": "FICO-etched",
+        "company_canonical_entity_id": "",
+        "company_name": "Etched",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮（含2025年12月由Stripes领投的5亿美元轮次及Jane Street领投的此前未披露轮次）",
+        "amount_original": "$800 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 800000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8 亿美元"
+        },
+        "announced_at": "2026-06-30",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-41379635293a6bc8",
+            "source_url": "https://www.mitsloanme.com/article/nvidia-rival-etched-steps-out-of-stealth-with-5b-valuation/",
+            "source_title": "Nvidia Rival Etched Steps Out of Stealth With $5B Valuation - MIT Sloan Management Review Middle East",
+            "source_content_hash": "0fc2af151fdcca39",
+            "quote": "This includes a strategic investment from VentureTech Alliance, along with Peter Thiel, Jane Street, Hudson River Trading, Jump Trading, Two Sigma, Stripes, Ribbit Capital, Radical Ventures, Primary VC, Positive Sum",
+            "quote_hash": "8a6562666516580b1caa4a5d94a4d08ad77dc1a7f457799e74cb1999cf57de54"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ca72052fbb40cee7",
+        "funding_insight_id": "FI-2959f95168aa0a55",
+        "event_ids": [
+          "EV-6e79974732a5db6b"
+        ],
+        "company_entity_id": "EN-7209ec6f68ac0bcd",
+        "company_canonical_entity_id": "",
+        "company_name": "Reka",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露",
+        "amount_original": "$58 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 58000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5800 万美元"
+        },
+        "announced_at": "2023-06-27",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-4f876f1107004ec7",
+            "source_url": "https://techcrunch.com/2023/06/27/reka-emerges-from-stealth-to-build-custom-ai-models-for-the-enterprise/",
+            "source_title": "Reka 走出隐身模式，为企业构建定制 AI 模型",
+            "source_content_hash": "b0bfe562440f841d",
+            "quote": "DST Global Partners and Radical Ventures led the tranche",
+            "quote_hash": "67122bc29299535c524ac600e2d6f781d2c4206148c3058e7f3a209c5466aaaa"
+          },
+          {
+            "source_id": "FISRC-3857ec64255b238a",
+            "source_url": "https://www.gaebler.com/VC-Funding-27D9E8DE-B2F9-4ED4-BADA-2D757FCF7E65-Reka-06-28-2023",
+            "source_title": "Reka 6/28/2023 Capital Raise - Gaebler.com Venture Capital Database",
+            "source_content_hash": "b41fbd4490777f66",
+            "quote": "Radical Ventures (Lead Investor)",
+            "quote_hash": "899761663628b4d39d5c1df146cd62c9bfcb39ec14825f5160cfd5605327de3f"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-17090c9ebbe2bea3",
+        "source_url": "https://lifestyle.tasteterminal.com/story/786493/engineering-ai-startup-p-1-ai-announces-its-series-a-financing-led-by-nea-adding-jeff-immelt-to-the-companys-board/",
+        "source_title": "Engineering AI startup, P-1 AI, Announces Its Series A Financing Led by NEA, Adding Jeff Immelt to the Company’s Board | lifestyle.tasteterminal.com",
+        "source_content_hash": "011d02174c292209",
+        "quote": "the company’s $23 million seed round led by Radical Ventures in 2025",
+        "quote_hash": "663760bf3cc5e0b4b740c3d79b31d9658fe954924f5359104bb574d877508581"
+      },
+      {
+        "source_id": "FISRC-afe2544836558c64",
+        "source_url": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
+        "source_title": "Prime Intellect raises $130M Series A to help enterprises build their own AI agents | TechCrunch",
+        "source_content_hash": "596e7c850e10c828",
+        "quote": "The massive round was led by Radical Ventures",
+        "quote_hash": "827fbb592dd2015a5bfabac93569964f0a7f214ec7344200be7427b7510351fd"
+      },
+      {
+        "source_id": "FISRC-41379635293a6bc8",
+        "source_url": "https://www.mitsloanme.com/article/nvidia-rival-etched-steps-out-of-stealth-with-5b-valuation/",
+        "source_title": "Nvidia Rival Etched Steps Out of Stealth With $5B Valuation - MIT Sloan Management Review Middle East",
+        "source_content_hash": "0fc2af151fdcca39",
+        "quote": "This includes a strategic investment from VentureTech Alliance, along with Peter Thiel, Jane Street, Hudson River Trading, Jump Trading, Two Sigma, Stripes, Ribbit Capital, Radical Ventures, Primary VC, Positive Sum",
+        "quote_hash": "8a6562666516580b1caa4a5d94a4d08ad77dc1a7f457799e74cb1999cf57de54"
+      },
+      {
+        "source_id": "FISRC-4f876f1107004ec7",
+        "source_url": "https://techcrunch.com/2023/06/27/reka-emerges-from-stealth-to-build-custom-ai-models-for-the-enterprise/",
+        "source_title": "Reka 走出隐身模式，为企业构建定制 AI 模型",
+        "source_content_hash": "b0bfe562440f841d",
+        "quote": "DST Global Partners and Radical Ventures led the tranche",
+        "quote_hash": "67122bc29299535c524ac600e2d6f781d2c4206148c3058e7f3a209c5466aaaa"
+      },
+      {
+        "source_id": "FISRC-3857ec64255b238a",
+        "source_url": "https://www.gaebler.com/VC-Funding-27D9E8DE-B2F9-4ED4-BADA-2D757FCF7E65-Reka-06-28-2023",
+        "source_title": "Reka 6/28/2023 Capital Raise - Gaebler.com Venture Capital Database",
+        "source_content_hash": "b41fbd4490777f66",
+        "quote": "Radical Ventures (Lead Investor)",
+        "quote_hash": "899761663628b4d39d5c1df146cd62c9bfcb39ec14825f5160cfd5605327de3f"
+      }
+    ]
+  }
+}

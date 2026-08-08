@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-a06b4de5791ce6",
+    "name": "Zopim 创始团队",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-04-29",
+    "latest_disclosed_at": "2026-04-29",
+    "role_counts": {
+      "other_current_round": 1
+    },
+    "round_codes": [
+      "pre_seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-749f7b0c42646853",
+        "canonical_entity_id": "",
+        "name": "FORMAS.AI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-82137deebb96190a",
+        "funding_insight_id": "FI-b8e7031d66aa329b",
+        "event_ids": [
+          "EV-c0921550f102695d"
+        ],
+        "company_entity_id": "EN-749f7b0c42646853",
+        "company_canonical_entity_id": "",
+        "company_name": "FORMAS.AI",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "398万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3980000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "398 万美元"
+        },
+        "announced_at": "2026-04-29",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮天使投资人",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-dc1378b0805f976c",
+            "source_url": "https://www.vertexventures.sg/news/formas-ai-raises-us-3-98-million-in-oversubscribed-pre-seed-round-to-build-the-ai-native-design-workspace-for-architecture/",
+            "source_title": "FORMAS.AI 完成398万美元超额认购预种子轮融资，打造面向建筑行业的AI原生设计工作空间",
+            "source_content_hash": "13b618d131a8d1bb",
+            "quote": "the founding team of Zopim (acquired by Zendesk)",
+            "quote_hash": "4d2c84e54b69330ca0b20a18ee9bb6876c70a40a2ce5408c1478a78ae6e8e1f3"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-dc1378b0805f976c",
+        "source_url": "https://www.vertexventures.sg/news/formas-ai-raises-us-3-98-million-in-oversubscribed-pre-seed-round-to-build-the-ai-native-design-workspace-for-architecture/",
+        "source_title": "FORMAS.AI 完成398万美元超额认购预种子轮融资，打造面向建筑行业的AI原生设计工作空间",
+        "source_content_hash": "13b618d131a8d1bb",
+        "quote": "the founding team of Zopim (acquired by Zendesk)",
+        "quote_hash": "4d2c84e54b69330ca0b20a18ee9bb6876c70a40a2ce5408c1478a78ae6e8e1f3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-3e2c18b814d685",
+    "name": "PXN Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-02",
+    "latest_disclosed_at": "2026-07-02",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "pre_seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-64bdeb7efae18e1b",
+        "canonical_entity_id": "",
+        "name": "BidScript LTD"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-e0725a7fb6f11c9d",
+        "funding_insight_id": "FI-1ec7eacc2ec2c926",
+        "event_ids": [
+          "EV-1a6def173f4d7c94"
+        ],
+        "company_entity_id": "EN-64bdeb7efae18e1b",
+        "company_canonical_entity_id": "",
+        "company_name": "BidScript LTD",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "Pre-Seed",
+        "amount_original": "$800,000",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 800000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "80 万美元"
+        },
+        "announced_at": "2026-07-02",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投、种子轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b3dcbc1ef66abc3b",
+            "source_url": "https://foundertrove.com/bidscript-secures-800k-to-scale-ai-platform-modernizing-public-and-private-sector-tendering",
+            "source_title": "BidScript 获 80 万美元融资，推动 AI 平台升级公共与私营部门招投标流程",
+            "source_content_hash": "f7b3d0fad8b8821d",
+            "quote": "The round attracted continued backing from NPIF II through PXN Ventures",
+            "quote_hash": "74b77f4715b4ed33c37263212958b0ff6771c36fa99ac0f7b86e9ab7bec8d897"
+          },
+          {
+            "source_id": "FISRC-3cc883cf3e85683e",
+            "source_url": "https://www.soapbox.vc/feed/bidscript-pre-seed",
+            "source_title": "BidScript raises £600k in a pre-seed round from PXN Ventures and SFC Capital for its AI platform helping firms win public and private contracts",
+            "source_content_hash": "87506954b587c61d",
+            "quote": "NPIF II – PXN Equity Finance's investment is a follow-on",
+            "quote_hash": "60482d0d01767855c582b420df4527f68001f13d9861adba8f87287721e2d2ac"
+          },
+          {
+            "source_id": "FISRC-3cc883cf3e85683e",
+            "source_url": "https://www.soapbox.vc/feed/bidscript-pre-seed",
+            "source_title": "BidScript raises £600k in a pre-seed round from PXN Ventures and SFC Capital for its AI platform helping firms win public and private contracts",
+            "source_content_hash": "87506954b587c61d",
+            "quote": "BidScript was one of seven businesses to receive an investment of £200,000.",
+            "quote_hash": "7494b99351493cdf3dfcbfa94b828910f61b21bb5e9b808886f2afd348dd22ac"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-b3dcbc1ef66abc3b",
+        "source_url": "https://foundertrove.com/bidscript-secures-800k-to-scale-ai-platform-modernizing-public-and-private-sector-tendering",
+        "source_title": "BidScript 获 80 万美元融资，推动 AI 平台升级公共与私营部门招投标流程",
+        "source_content_hash": "f7b3d0fad8b8821d",
+        "quote": "The round attracted continued backing from NPIF II through PXN Ventures",
+        "quote_hash": "74b77f4715b4ed33c37263212958b0ff6771c36fa99ac0f7b86e9ab7bec8d897"
+      },
+      {
+        "source_id": "FISRC-3cc883cf3e85683e",
+        "source_url": "https://www.soapbox.vc/feed/bidscript-pre-seed",
+        "source_title": "BidScript raises £600k in a pre-seed round from PXN Ventures and SFC Capital for its AI platform helping firms win public and private contracts",
+        "source_content_hash": "87506954b587c61d",
+        "quote": "NPIF II – PXN Equity Finance's investment is a follow-on",
+        "quote_hash": "60482d0d01767855c582b420df4527f68001f13d9861adba8f87287721e2d2ac"
+      },
+      {
+        "source_id": "FISRC-3cc883cf3e85683e",
+        "source_url": "https://www.soapbox.vc/feed/bidscript-pre-seed",
+        "source_title": "BidScript raises £600k in a pre-seed round from PXN Ventures and SFC Capital for its AI platform helping firms win public and private contracts",
+        "source_content_hash": "87506954b587c61d",
+        "quote": "BidScript was one of seven businesses to receive an investment of £200,000.",
+        "quote_hash": "7494b99351493cdf3dfcbfa94b828910f61b21bb5e9b808886f2afd348dd22ac"
+      }
+    ]
+  }
+}

@@ -157,6 +157,18 @@
   letter-spacing: -.04em;
   overflow-wrap: anywhere;
 }
+.fi-card-amount small,
+.fi-card-investors > small,
+.fi-funding-brief > small,
+.fi-funding-round small {
+  color: var(--fi-faint);
+  font-size: 11px;
+  line-height: 17px;
+}
+.fi-card-investors > small {
+  display: block;
+  margin-top: 7px;
+}
 .fi-card-investors {
   min-width: 0;
   min-height: 72px;
@@ -411,6 +423,7 @@
   font-size: var(--gl-type-sidebar-body-size, 13px);
   line-height: var(--gl-type-sidebar-body-line, 22px);
 }
+.fi-funding-round small { flex-basis: 100%; }
 .fi-investor-group { display: grid; gap: 7px; margin-top: 20px; }
 .fi-investor-group > span { color: rgba(255, 253, 248, .55); }
 .fi-investor-group strong {

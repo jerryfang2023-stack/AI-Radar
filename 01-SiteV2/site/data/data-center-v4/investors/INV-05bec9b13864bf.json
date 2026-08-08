@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-05bec9b13864bf",
+    "name": "Hetz Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 3,
+    "first_disclosed_at": "2026-06-04",
+    "latest_disclosed_at": "2026-07-15",
+    "role_counts": {
+      "lead": 1,
+      "participant": 2
+    },
+    "round_codes": [
+      "seed",
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-b0a914ead94a88da",
+        "canonical_entity_id": "EN-b0a914ead94a88da",
+        "name": "Aligned"
+      },
+      {
+        "entity_id": "EN-df877645404747cb",
+        "canonical_entity_id": "",
+        "name": "Oak"
+      },
+      {
+        "entity_id": "EN-da454b02b4700b1f",
+        "canonical_entity_id": "",
+        "name": "Willow"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-301615b14a30c689",
+        "funding_insight_id": "FI-443b5f65f0a2c1cb",
+        "event_ids": [
+          "EV-9046a75f19913ca5"
+        ],
+        "company_entity_id": "EN-df877645404747cb",
+        "company_canonical_entity_id": "",
+        "company_name": "Oak",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$60 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-07-15",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-88cec30382296a0c",
+            "source_url": "https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth-to-fix-the-identity-mess-that-ai-agents-are-making-worse/",
+            "source_title": "获得6000万美元融资，Oak走出隐身模式，欲解决AI智能体加剧的身份混乱问题",
+            "source_content_hash": "c175c57e420a1b4c",
+            "quote": "with participation from AlphaDrive Ventures, Hetz Ventures, and angel investors",
+            "quote_hash": "cc34267824bc20b9cf279c98b0294d2660229485b515151b6536e5347270b2bf"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-14f7f105baf7e424",
+        "funding_insight_id": "FI-2ad50155bcf1e72d",
+        "event_ids": [
+          "EV-439ba8d5f2f575c4",
+          "EV-81bd541510a530f0"
+        ],
+        "company_entity_id": "EN-b0a914ead94a88da",
+        "company_canonical_entity_id": "EN-b0a914ead94a88da",
+        "company_name": "Aligned",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B 轮",
+        "amount_original": "$60 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-07-01",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投，既有投资方",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7c7a5a66361dc784",
+            "source_url": "https://www.saasrise.com/deals/aligned-bags-60m-in-funding-to-build-the-ainative-sales-execution-layer-for-enterprise-deals-5eecc03e-e805-4519-9bac-782e166d991a",
+            "source_title": "Aligned 为其 AI 销售执行平台筹集 6000 万美元 B 轮融资",
+            "source_content_hash": "9348da1b25f12b48",
+            "quote": "with participation from Hetz Ventures, JAL Ventures and NFX",
+            "quote_hash": "0e21e7dce274a10684bf7e6562c8a8fab7604afcb43ee0246b8e6a62125a4714"
+          },
+          {
+            "source_id": "FISRC-24b745611665d521",
+            "source_url": "https://salestechstar.com/sales-engagement/aligned-raises-8m-to-shape-the-future-of-selling-with-ai-sales-rooms/",
+            "source_title": "Aligned raises $8M to shape the future of selling with AI sales rooms",
+            "source_content_hash": "48691dffa1963c9f",
+            "quote": "The round includes participation from existing investors NFX, Hetz Ventures",
+            "quote_hash": "b4f7b4b2756221d4e36d912e1055f297b98c8993c41d30f926c5c8358c9240fb"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-26c52c61db2328c7",
+        "funding_insight_id": "FI-aa2c2e5478c70fd9",
+        "event_ids": [
+          "EV-8bbc23e53e799d9d"
+        ],
+        "company_entity_id": "EN-da454b02b4700b1f",
+        "company_canonical_entity_id": "",
+        "company_name": "Willow",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$7 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 7000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "700 万美元"
+        },
+        "announced_at": "2026-06-04",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-799421013f33574a",
+            "source_url": "https://withwillow.ai/blog/willow-7m-seed-funding",
+            "source_title": "Willow 获 700 万美元融资，打造企业 AI 代理治理未来",
+            "source_content_hash": "1813316511f838a0",
+            "quote": "Willow has raised $7 million in seed funding , led by Hetz Ventures",
+            "quote_hash": "3e840a0fe027e4e03162912409d1108bc84a874ac89067f692b4e04395c176fe"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-88cec30382296a0c",
+        "source_url": "https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth-to-fix-the-identity-mess-that-ai-agents-are-making-worse/",
+        "source_title": "获得6000万美元融资，Oak走出隐身模式，欲解决AI智能体加剧的身份混乱问题",
+        "source_content_hash": "c175c57e420a1b4c",
+        "quote": "with participation from AlphaDrive Ventures, Hetz Ventures, and angel investors",
+        "quote_hash": "cc34267824bc20b9cf279c98b0294d2660229485b515151b6536e5347270b2bf"
+      },
+      {
+        "source_id": "FISRC-7c7a5a66361dc784",
+        "source_url": "https://www.saasrise.com/deals/aligned-bags-60m-in-funding-to-build-the-ainative-sales-execution-layer-for-enterprise-deals-5eecc03e-e805-4519-9bac-782e166d991a",
+        "source_title": "Aligned 为其 AI 销售执行平台筹集 6000 万美元 B 轮融资",
+        "source_content_hash": "9348da1b25f12b48",
+        "quote": "with participation from Hetz Ventures, JAL Ventures and NFX",
+        "quote_hash": "0e21e7dce274a10684bf7e6562c8a8fab7604afcb43ee0246b8e6a62125a4714"
+      },
+      {
+        "source_id": "FISRC-24b745611665d521",
+        "source_url": "https://salestechstar.com/sales-engagement/aligned-raises-8m-to-shape-the-future-of-selling-with-ai-sales-rooms/",
+        "source_title": "Aligned raises $8M to shape the future of selling with AI sales rooms",
+        "source_content_hash": "48691dffa1963c9f",
+        "quote": "The round includes participation from existing investors NFX, Hetz Ventures",
+        "quote_hash": "b4f7b4b2756221d4e36d912e1055f297b98c8993c41d30f926c5c8358c9240fb"
+      },
+      {
+        "source_id": "FISRC-799421013f33574a",
+        "source_url": "https://withwillow.ai/blog/willow-7m-seed-funding",
+        "source_title": "Willow 获 700 万美元融资，打造企业 AI 代理治理未来",
+        "source_content_hash": "1813316511f838a0",
+        "quote": "Willow has raised $7 million in seed funding , led by Hetz Ventures",
+        "quote_hash": "3e840a0fe027e4e03162912409d1108bc84a874ac89067f692b4e04395c176fe"
+      }
+    ]
+  }
+}

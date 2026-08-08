@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-44b1c8b80306be",
+    "name": "JAL Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-01",
+    "latest_disclosed_at": "2026-07-01",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-b0a914ead94a88da",
+        "canonical_entity_id": "EN-b0a914ead94a88da",
+        "name": "Aligned"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-70816b5fe120243a",
+        "funding_insight_id": "FI-2ad50155bcf1e72d",
+        "event_ids": [
+          "EV-439ba8d5f2f575c4",
+          "EV-81bd541510a530f0"
+        ],
+        "company_entity_id": "EN-b0a914ead94a88da",
+        "company_canonical_entity_id": "EN-b0a914ead94a88da",
+        "company_name": "Aligned",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B 轮",
+        "amount_original": "$60 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-07-01",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投，既有投资方",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7c7a5a66361dc784",
+            "source_url": "https://www.saasrise.com/deals/aligned-bags-60m-in-funding-to-build-the-ainative-sales-execution-layer-for-enterprise-deals-5eecc03e-e805-4519-9bac-782e166d991a",
+            "source_title": "Aligned 为其 AI 销售执行平台筹集 6000 万美元 B 轮融资",
+            "source_content_hash": "9348da1b25f12b48",
+            "quote": "with participation from Hetz Ventures, JAL Ventures and NFX",
+            "quote_hash": "0e21e7dce274a10684bf7e6562c8a8fab7604afcb43ee0246b8e6a62125a4714"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-7c7a5a66361dc784",
+        "source_url": "https://www.saasrise.com/deals/aligned-bags-60m-in-funding-to-build-the-ainative-sales-execution-layer-for-enterprise-deals-5eecc03e-e805-4519-9bac-782e166d991a",
+        "source_title": "Aligned 为其 AI 销售执行平台筹集 6000 万美元 B 轮融资",
+        "source_content_hash": "9348da1b25f12b48",
+        "quote": "with participation from Hetz Ventures, JAL Ventures and NFX",
+        "quote_hash": "0e21e7dce274a10684bf7e6562c8a8fab7604afcb43ee0246b8e6a62125a4714"
+      }
+    ]
+  }
+}

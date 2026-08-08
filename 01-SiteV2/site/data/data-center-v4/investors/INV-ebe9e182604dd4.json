@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-ebe9e182604dd4",
+    "name": "美团战投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-01-12",
+    "latest_disclosed_at": "2026-04-16",
+    "role_counts": {
+      "co_lead": 1,
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [
+      "pre_series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-39ba5f9dcab4e98a",
+        "canonical_entity_id": "EN-39ba5f9dcab4e98a",
+        "name": "它石智航"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-6196b8b356a2f9a0",
+        "funding_insight_id": "FI-5c529fe1ecb9dd07",
+        "event_ids": [
+          "EV-1188b1585b835fe1"
+        ],
+        "company_entity_id": "EN-39ba5f9dcab4e98a",
+        "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
+        "company_name": "它石智航",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超4.5亿美元（约30亿元）",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 450000000,
+          "min_value": 450000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 4.5 亿美元"
+        },
+        "announced_at": "2026-04-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-f4259d29fd364076",
+            "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",
+            "source_title": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网",
+            "source_content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
+            "quote": "美团战投作为公司重要的基石战略股东重额加注并继续联合领投",
+            "quote_hash": "bb64e995f8708cef53c3d8488c01abae6c7735f25099917c12549f696dfe23c0"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-32d49e1bae075097",
+        "funding_insight_id": "FI-15b5d99bcd808dba",
+        "event_ids": [
+          "EV-cec68369662236fd"
+        ],
+        "company_entity_id": "EN-8dc72a4672894e0f",
+        "company_canonical_entity_id": "EN-8dc72a4672894e0f",
+        "company_name": "自变量机器人",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "A++轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿人民币"
+        },
+        "announced_at": "2026-01-12",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-a180899e2f0b58ad",
+            "source_url": "https://m.nbd.com.cn/articles/2026-01-12/4216995.html",
+            "source_title": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元融资 2026年具身智能竞争转向",
+            "source_content_hash": "38abb37ae3fb027b28279c50b427ec6700f8fc1e8868df66e1d0b918549335b7",
+            "quote": "2025年5月获得由美团战投领投的A轮融资",
+            "quote_hash": "55a6a60f32968fbeff6c5382e3a809c8a441ff54973c3f473c01bae92c7d6d48"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-f4259d29fd364076",
+        "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",
+        "source_title": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网",
+        "source_content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
+        "quote": "美团战投作为公司重要的基石战略股东重额加注并继续联合领投",
+        "quote_hash": "bb64e995f8708cef53c3d8488c01abae6c7735f25099917c12549f696dfe23c0"
+      },
+      {
+        "source_id": "FISRC-a180899e2f0b58ad",
+        "source_url": "https://m.nbd.com.cn/articles/2026-01-12/4216995.html",
+        "source_title": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元融资 2026年具身智能竞争转向",
+        "source_content_hash": "38abb37ae3fb027b28279c50b427ec6700f8fc1e8868df66e1d0b918549335b7",
+        "quote": "2025年5月获得由美团战投领投的A轮融资",
+        "quote_hash": "55a6a60f32968fbeff6c5382e3a809c8a441ff54973c3f473c01bae92c7d6d48"
+      }
+    ]
+  }
+}

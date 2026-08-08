@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-81b763ae8ff1cb",
+    "name": "Oceans",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-08-01",
+    "latest_disclosed_at": "2026-08-01",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-85bf663928410ea5",
+        "funding_insight_id": "FI-035c211b764aa7fa",
+        "event_ids": [
+          "EV-268e5c3d36e3ed28"
+        ],
+        "company_entity_id": "EN-5f5ed85925074c92",
+        "company_canonical_entity_id": "",
+        "company_name": "Foundational Industries",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$25 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 25000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2500 万美元"
+        },
+        "announced_at": "2026-08-01",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "未确认是否参与本轮",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b94eb16e5583d0a2",
+            "source_url": "https://recodex.pro/foundational-industries-raises-25m-seed-to-bring-ai-software-to-factory-floors-challenging",
+            "source_title": "Foundational Industries Raises $25M Seed to Bring AI Software to Factory Floors, Challenging China’s Automation – RecodeX Pro",
+            "source_content_hash": "8a4414cb556b5bb1",
+            "quote": "a statement on the company’s website also lists Oceans as an investor, but no other major source — including Fortune’s reporting — mentions the firm, leaving it unconfirmed whether that investor actually participated in the round.",
+            "quote_hash": "1b2807089a8a72465dd3aaec3fa587099f4e0f93e8212751f3a8117f1215b957"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-b94eb16e5583d0a2",
+        "source_url": "https://recodex.pro/foundational-industries-raises-25m-seed-to-bring-ai-software-to-factory-floors-challenging",
+        "source_title": "Foundational Industries Raises $25M Seed to Bring AI Software to Factory Floors, Challenging China’s Automation – RecodeX Pro",
+        "source_content_hash": "8a4414cb556b5bb1",
+        "quote": "a statement on the company’s website also lists Oceans as an investor, but no other major source — including Fortune’s reporting — mentions the firm, leaving it unconfirmed whether that investor actually participated in the round.",
+        "quote_hash": "1b2807089a8a72465dd3aaec3fa587099f4e0f93e8212751f3a8117f1215b957"
+      }
+    ]
+  }
+}

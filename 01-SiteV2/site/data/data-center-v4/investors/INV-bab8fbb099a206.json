@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-bab8fbb099a206",
+    "name": "Samsung",
+    "aliases": [],
+    "canonical_entity_id": "EN-968e2d5b08687bf4",
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2025-09-09",
+    "latest_disclosed_at": "2026-06-22",
+    "role_counts": {
+      "historical_or_ambiguous": 3,
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-a83a3af1a4866fd5",
+        "canonical_entity_id": "",
+        "name": "Advanced Machine Intelligence Labs (AMI Labs)"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-20a9a35a3ddd52de",
+        "funding_insight_id": "FI-44726ebdb985f37e",
+        "event_ids": [
+          "EV-4118202ed0f91895"
+        ],
+        "company_entity_id": "EN-0b79cf2de0ee6b8e",
+        "company_canonical_entity_id": "",
+        "company_name": "Groq",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮",
+        "amount_original": "6.5 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 650000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6.5 亿美元"
+        },
+        "announced_at": "2026-06-22",
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-85e8550490e53490",
+            "source_url": "https://test-news.aibase.com/news/21366",
+            "source_title": "Groq Raises $750 Million in Funding, Valuation Reaches $6.9 Billion",
+            "source_content_hash": "6efab5b69f3f9aa3",
+            "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq.",
+            "quote_hash": "e9d6c950ecfcf10df612acb50b9000d5111cfce790af32af95a51c83ef1ee077"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f8de274913a3c3e4",
+        "funding_insight_id": "FI-12d0278b1cf72d65",
+        "event_ids": [
+          "EV-4e1d2d6105d09d24"
+        ],
+        "company_entity_id": "EN-ed9980025e312ded",
+        "company_canonical_entity_id": "",
+        "company_name": "Rebellions Inc.",
+        "round": "Pre-IPO",
+        "round_code": "pre_ipo",
+        "round_original": "Pre-IPO",
+        "amount_original": "$400 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-03-30",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-0465de4e7032d422",
+            "source_url": "https://www.cnbc.com/2026/03/30/ai-chip-startup-rebellions-raises-400-million-ipo.html",
+            "source_title": "Samsung-backed AI chip firm Rebellions raises $400 million ahead of IPO",
+            "source_content_hash": "f43dd9ad9ae14a2c",
+            "quote": "Samsung, SK Hynix and Saudi Arabian oil giant Aramco are all investors in Rebellions.",
+            "quote_hash": "22c0af28bfbd8f1af6a3ee838684d38f911dec265f670bb1263680e8a4ca968e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-31e25ac138ef6df8",
+        "funding_insight_id": "FI-9c3c02658ff94312",
+        "event_ids": [
+          "EV-cded77b1de2db61a"
+        ],
+        "company_entity_id": "EN-a83a3af1a4866fd5",
+        "company_canonical_entity_id": "",
+        "company_name": "Advanced Machine Intelligence Labs (AMI Labs)",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "10.3亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1030000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10.3 亿美元"
+        },
+        "announced_at": "2026-03-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6c35525e379488bf",
+            "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
+            "source_title": "AMI Labs 获 1BN 美元种子轮融资，用于构建世界模型",
+            "source_content_hash": "adc0cc9ffe3c9dd0",
+            "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance",
+            "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-874c93f05c1181fa",
+        "funding_insight_id": "FI-1cf34218733257fd",
+        "event_ids": [
+          "EV-85506f9f86779a6d"
+        ],
+        "company_entity_id": "EN-c04bd5ebd10ab696",
+        "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "company_name": "Mistral AI",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "约17亿欧元（约20亿美元）",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 1700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 17 亿欧元"
+        },
+        "announced_at": "2025-09-09",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方（Series B参投）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-110f0e95801f33f9",
+            "source_url": "https://frontierledger.ai/investing-in-ai/how-to-invest-in-mistral-ai",
+            "source_title": "How to Invest in Mistral AI: Europe's Sovereign AI Champion and the ASML Connection - Frontier Ledger",
+            "source_content_hash": "778e3d1b1c03a4da",
+            "quote": "Series B $640M €5.8B (~$6.2B) NVIDIA, Microsoft, Salesforce, Samsung, Lightspeed June 2024",
+            "quote_hash": "9276cb0ff1526d8095a1df817b99cc5abcd67c6e12990921899a3c02944e6015"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-85e8550490e53490",
+        "source_url": "https://test-news.aibase.com/news/21366",
+        "source_title": "Groq Raises $750 Million in Funding, Valuation Reaches $6.9 Billion",
+        "source_content_hash": "6efab5b69f3f9aa3",
+        "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq.",
+        "quote_hash": "e9d6c950ecfcf10df612acb50b9000d5111cfce790af32af95a51c83ef1ee077"
+      },
+      {
+        "source_id": "FISRC-0465de4e7032d422",
+        "source_url": "https://www.cnbc.com/2026/03/30/ai-chip-startup-rebellions-raises-400-million-ipo.html",
+        "source_title": "Samsung-backed AI chip firm Rebellions raises $400 million ahead of IPO",
+        "source_content_hash": "f43dd9ad9ae14a2c",
+        "quote": "Samsung, SK Hynix and Saudi Arabian oil giant Aramco are all investors in Rebellions.",
+        "quote_hash": "22c0af28bfbd8f1af6a3ee838684d38f911dec265f670bb1263680e8a4ca968e"
+      },
+      {
+        "source_id": "FISRC-6c35525e379488bf",
+        "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
+        "source_title": "AMI Labs 获 1BN 美元种子轮融资，用于构建世界模型",
+        "source_content_hash": "adc0cc9ffe3c9dd0",
+        "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance",
+        "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
+      },
+      {
+        "source_id": "FISRC-110f0e95801f33f9",
+        "source_url": "https://frontierledger.ai/investing-in-ai/how-to-invest-in-mistral-ai",
+        "source_title": "How to Invest in Mistral AI: Europe's Sovereign AI Champion and the ASML Connection - Frontier Ledger",
+        "source_content_hash": "778e3d1b1c03a4da",
+        "quote": "Series B $640M €5.8B (~$6.2B) NVIDIA, Microsoft, Salesforce, Samsung, Lightspeed June 2024",
+        "quote_hash": "9276cb0ff1526d8095a1df817b99cc5abcd67c6e12990921899a3c02944e6015"
+      }
+    ]
+  }
+}

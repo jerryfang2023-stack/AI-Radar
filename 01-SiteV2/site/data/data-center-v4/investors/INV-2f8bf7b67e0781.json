@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-2f8bf7b67e0781",
+    "name": "Planven",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-29",
+    "latest_disclosed_at": "2026-07-29",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-556c337c4f0b031e",
+        "canonical_entity_id": "",
+        "name": "Encore AI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-75bf86b3dba674ad",
+        "funding_insight_id": "FI-2c5da45c0aa2e03a",
+        "event_ids": [
+          "EV-57cf8e14d6994c1b"
+        ],
+        "company_entity_id": "EN-556c337c4f0b031e",
+        "company_canonical_entity_id": "",
+        "company_name": "Encore AI",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "3000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-07-29",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-6734ffb9c928450a",
+            "source_url": "https://www.prnewswire.com/news-releases/encore-ai-raises-30m-to-deploy-the-only-enterprise-ai-platform-built-to-generate-revenue-from-customer-interactions-302837694.html",
+            "source_title": "Encore AI Raises $30M to Deploy the Only Enterprise AI Platform Built to Generate Revenue from Customer Interactions",
+            "source_content_hash": "d8522e9c55a7b156",
+            "quote": "a $30 million Series A led by Team8, Planven and The Garage",
+            "quote_hash": "c805f01cb8d74c3c125b4a7bf5ad505864720b28d1612896862447391121810b"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-6734ffb9c928450a",
+        "source_url": "https://www.prnewswire.com/news-releases/encore-ai-raises-30m-to-deploy-the-only-enterprise-ai-platform-built-to-generate-revenue-from-customer-interactions-302837694.html",
+        "source_title": "Encore AI Raises $30M to Deploy the Only Enterprise AI Platform Built to Generate Revenue from Customer Interactions",
+        "source_content_hash": "d8522e9c55a7b156",
+        "quote": "a $30 million Series A led by Team8, Planven and The Garage",
+        "quote_hash": "c805f01cb8d74c3c125b4a7bf5ad505864720b28d1612896862447391121810b"
+      }
+    ]
+  }
+}

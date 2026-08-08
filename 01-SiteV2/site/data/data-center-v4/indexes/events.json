@@ -494,17 +494,204 @@
       "conflicts": [],
       "tags": [],
       "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-adda212f0afa4781"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-615d3d3475cbcfa7",
+            "fundingInsightId": "FI-6944939c6264e8a5"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "hardware_computing",
+            "name": "硬件与算力",
+            "entityIds": [
+              "EN-adda212f0afa4781"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-faa710076e49bb20",
+            "fundingInsightId": "FI-6944939c6264e8a5"
+          }
+        ],
+        "ai_market_application": [
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "chips",
+            "name": "芯片",
+            "entityIds": [
+              "EN-adda212f0afa4781"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2bf41d8d50270551",
+            "fundingInsightId": "FI-6944939c6264e8a5"
+          }
+        ],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-adda212f0afa4781"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a5d82508e03ddf36",
+            "fundingInsightId": "FI-6944939c6264e8a5"
+          }
+        ],
         "use_case": [],
         "industry": [],
         "deployment_model": [],
-        "target_user": []
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-adda212f0afa4781"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4fd2abd8f5297eec",
+            "fundingInsightId": "FI-6944939c6264e8a5"
+          }
+        ]
       },
-      "classifications": [],
-      "displayTags": [],
+      "classifications": [
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "chips",
+          "name": "芯片",
+          "entityIds": [
+            "EN-adda212f0afa4781"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-2bf41d8d50270551",
+          "fundingInsightId": "FI-6944939c6264e8a5"
+        },
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-adda212f0afa4781"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-615d3d3475cbcfa7",
+          "fundingInsightId": "FI-6944939c6264e8a5"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "hardware_computing",
+          "name": "硬件与算力",
+          "entityIds": [
+            "EN-adda212f0afa4781"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-faa710076e49bb20",
+          "fundingInsightId": "FI-6944939c6264e8a5"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-adda212f0afa4781"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a5d82508e03ddf36",
+          "fundingInsightId": "FI-6944939c6264e8a5"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-adda212f0afa4781"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4fd2abd8f5297eec",
+          "fundingInsightId": "FI-6944939c6264e8a5"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-adda212f0afa4781"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-615d3d3475cbcfa7",
+          "fundingInsightId": "FI-6944939c6264e8a5"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "hardware_computing",
+          "name": "硬件与算力",
+          "entityIds": [
+            "EN-adda212f0afa4781"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-faa710076e49bb20",
+          "fundingInsightId": "FI-6944939c6264e8a5"
+        },
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "chips",
+          "name": "芯片",
+          "entityIds": [
+            "EN-adda212f0afa4781"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-2bf41d8d50270551",
+          "fundingInsightId": "FI-6944939c6264e8a5"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-adda212f0afa4781"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a5d82508e03ddf36",
+          "fundingInsightId": "FI-6944939c6264e8a5"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-adda212f0afa4781"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4fd2abd8f5297eec",
+          "fundingInsightId": "FI-6944939c6264e8a5"
+        }
+      ],
       "entityIds": [
         "EN-adda212f0afa4781",
         "EN-3ef2a26a758aec2f"
@@ -542,17 +729,204 @@
       "conflicts": [],
       "tags": [],
       "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-a7e079ed603b3436"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-be80a27afe083262",
+            "fundingInsightId": "FI-eae7674948ab88a1"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "hardware_computing",
+            "name": "硬件与算力",
+            "entityIds": [
+              "EN-a7e079ed603b3436"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-67b266f0f2d56c8a",
+            "fundingInsightId": "FI-eae7674948ab88a1"
+          }
+        ],
+        "ai_market_application": [
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "computing_infrastructure",
+            "name": "计算基础设施",
+            "entityIds": [
+              "EN-a7e079ed603b3436"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3d5773b1b7f4e46b",
+            "fundingInsightId": "FI-eae7674948ab88a1"
+          }
+        ],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-a7e079ed603b3436"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e673290ccb52dfb7",
+            "fundingInsightId": "FI-eae7674948ab88a1"
+          }
+        ],
         "use_case": [],
         "industry": [],
         "deployment_model": [],
-        "target_user": []
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-a7e079ed603b3436"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a04ef688ba142763",
+            "fundingInsightId": "FI-eae7674948ab88a1"
+          }
+        ]
       },
-      "classifications": [],
-      "displayTags": [],
+      "classifications": [
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "computing_infrastructure",
+          "name": "计算基础设施",
+          "entityIds": [
+            "EN-a7e079ed603b3436"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3d5773b1b7f4e46b",
+          "fundingInsightId": "FI-eae7674948ab88a1"
+        },
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-a7e079ed603b3436"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-be80a27afe083262",
+          "fundingInsightId": "FI-eae7674948ab88a1"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "hardware_computing",
+          "name": "硬件与算力",
+          "entityIds": [
+            "EN-a7e079ed603b3436"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-67b266f0f2d56c8a",
+          "fundingInsightId": "FI-eae7674948ab88a1"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-a7e079ed603b3436"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e673290ccb52dfb7",
+          "fundingInsightId": "FI-eae7674948ab88a1"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-a7e079ed603b3436"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a04ef688ba142763",
+          "fundingInsightId": "FI-eae7674948ab88a1"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-a7e079ed603b3436"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-be80a27afe083262",
+          "fundingInsightId": "FI-eae7674948ab88a1"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "hardware_computing",
+          "name": "硬件与算力",
+          "entityIds": [
+            "EN-a7e079ed603b3436"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-67b266f0f2d56c8a",
+          "fundingInsightId": "FI-eae7674948ab88a1"
+        },
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "computing_infrastructure",
+          "name": "计算基础设施",
+          "entityIds": [
+            "EN-a7e079ed603b3436"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3d5773b1b7f4e46b",
+          "fundingInsightId": "FI-eae7674948ab88a1"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-a7e079ed603b3436"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e673290ccb52dfb7",
+          "fundingInsightId": "FI-eae7674948ab88a1"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-a7e079ed603b3436"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a04ef688ba142763",
+          "fundingInsightId": "FI-eae7674948ab88a1"
+        }
+      ],
       "entityIds": [
         "EN-a7e079ed603b3436"
       ],
@@ -591,11 +965,75 @@
       "conflicts": [],
       "tags": [],
       "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "EN-13a7f8fe8140462d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-787d7a5612013d4f",
+            "fundingInsightId": "FI-97efb78824527298"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "marketing",
+            "name": "营销",
+            "entityIds": [
+              "EN-13a7f8fe8140462d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d51736d2dfbffa48",
+            "fundingInsightId": "FI-97efb78824527298"
+          }
+        ],
         "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-13a7f8fe8140462d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b3b65b1927669a8e",
+            "fundingInsightId": "FI-97efb78824527298"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-13a7f8fe8140462d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-cba79b793f8a7ba0",
+            "fundingInsightId": "FI-97efb78824527298"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "EN-13a7f8fe8140462d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-bd10a60bb748b777",
+            "fundingInsightId": "FI-97efb78824527298"
+          }
+        ],
         "industry": [
           {
             "dimensionId": "industry",
@@ -605,14 +1043,52 @@
             "entityIds": [
               "EN-13a7f8fe8140462d"
             ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f54a85d253e206e3",
+            "fundingInsightId": "FI-97efb78824527298"
           }
         ],
         "deployment_model": [],
-        "target_user": []
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-13a7f8fe8140462d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8765feda5f922885",
+            "fundingInsightId": "FI-97efb78824527298"
+          }
+        ]
       },
       "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-787d7a5612013d4f",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "marketing",
+          "name": "营销",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d51736d2dfbffa48",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
         {
           "dimensionId": "industry",
           "dimensionName": "行业",
@@ -621,12 +1097,121 @@
           "entityIds": [
             "EN-13a7f8fe8140462d"
           ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f54a85d253e206e3",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b3b65b1927669a8e",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8765feda5f922885",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-cba79b793f8a7ba0",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-bd10a60bb748b777",
+          "fundingInsightId": "FI-97efb78824527298"
         }
       ],
       "displayTags": [
         {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-787d7a5612013d4f",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "marketing",
+          "name": "营销",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d51736d2dfbffa48",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b3b65b1927669a8e",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-cba79b793f8a7ba0",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-bd10a60bb748b777",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
+        {
           "dimensionId": "industry",
           "dimensionName": "行业",
           "id": "retail_ecommerce",
@@ -634,8 +1219,21 @@
           "entityIds": [
             "EN-13a7f8fe8140462d"
           ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f54a85d253e206e3",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8765feda5f922885",
+          "fundingInsightId": "FI-97efb78824527298"
         }
       ],
       "entityIds": [
@@ -2380,17 +2978,204 @@
       "conflicts": [],
       "tags": [],
       "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-cc2ab268105df889"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b317f9cb10c81807",
+            "fundingInsightId": "FI-63a2a302d42c9558"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "hardware_computing",
+            "name": "硬件与算力",
+            "entityIds": [
+              "EN-cc2ab268105df889"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-58f5477448b4202c",
+            "fundingInsightId": "FI-63a2a302d42c9558"
+          }
+        ],
+        "ai_market_application": [
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "chips",
+            "name": "芯片",
+            "entityIds": [
+              "EN-cc2ab268105df889"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5037f398a2c6d02a",
+            "fundingInsightId": "FI-63a2a302d42c9558"
+          }
+        ],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-cc2ab268105df889"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c5bff7fa2bbe83f6",
+            "fundingInsightId": "FI-63a2a302d42c9558"
+          }
+        ],
         "use_case": [],
         "industry": [],
         "deployment_model": [],
-        "target_user": []
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-cc2ab268105df889"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-064a1b127d4a5330",
+            "fundingInsightId": "FI-63a2a302d42c9558"
+          }
+        ]
       },
-      "classifications": [],
-      "displayTags": [],
+      "classifications": [
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "chips",
+          "name": "芯片",
+          "entityIds": [
+            "EN-cc2ab268105df889"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5037f398a2c6d02a",
+          "fundingInsightId": "FI-63a2a302d42c9558"
+        },
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-cc2ab268105df889"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b317f9cb10c81807",
+          "fundingInsightId": "FI-63a2a302d42c9558"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "hardware_computing",
+          "name": "硬件与算力",
+          "entityIds": [
+            "EN-cc2ab268105df889"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-58f5477448b4202c",
+          "fundingInsightId": "FI-63a2a302d42c9558"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-cc2ab268105df889"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c5bff7fa2bbe83f6",
+          "fundingInsightId": "FI-63a2a302d42c9558"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-cc2ab268105df889"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-064a1b127d4a5330",
+          "fundingInsightId": "FI-63a2a302d42c9558"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-cc2ab268105df889"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b317f9cb10c81807",
+          "fundingInsightId": "FI-63a2a302d42c9558"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "hardware_computing",
+          "name": "硬件与算力",
+          "entityIds": [
+            "EN-cc2ab268105df889"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-58f5477448b4202c",
+          "fundingInsightId": "FI-63a2a302d42c9558"
+        },
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "chips",
+          "name": "芯片",
+          "entityIds": [
+            "EN-cc2ab268105df889"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5037f398a2c6d02a",
+          "fundingInsightId": "FI-63a2a302d42c9558"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-cc2ab268105df889"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c5bff7fa2bbe83f6",
+          "fundingInsightId": "FI-63a2a302d42c9558"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-cc2ab268105df889"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-064a1b127d4a5330",
+          "fundingInsightId": "FI-63a2a302d42c9558"
+        }
+      ],
       "entityIds": [
         "EN-cc2ab268105df889"
       ],

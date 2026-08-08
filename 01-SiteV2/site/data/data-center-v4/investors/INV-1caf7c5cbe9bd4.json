@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-1caf7c5cbe9bd4",
+    "name": "ARK Invest",
+    "aliases": [
+      "Ark Invest"
+    ],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2026-03-31",
+    "latest_disclosed_at": "2026-06-03",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "participant": 2
+    },
+    "round_codes": [
+      "series_a",
+      "series_f"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-245f1e177c5169cb",
+        "canonical_entity_id": "",
+        "name": "Hark"
+      },
+      {
+        "entity_id": "EN-7d3194f79e645c42",
+        "canonical_entity_id": "EN-7d3194f79e645c42",
+        "name": "OpenAI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-092f5c0f994c193f",
+        "funding_insight_id": "FI-082c684e1b4a88c2",
+        "event_ids": [
+          "EV-ef7346378fcf9746"
+        ],
+        "company_entity_id": "EN-e78bdebae031095b",
+        "company_canonical_entity_id": "EN-e78bdebae031095b",
+        "company_name": "SpaceX",
+        "round": "IPO",
+        "round_code": "ipo",
+        "round_original": "IPO",
+        "amount_original": "$75 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 75000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "750 亿美元"
+        },
+        "announced_at": "2026-06-03",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-0349532f469a6b45",
+            "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
+            "source_title": "Early SpaceX investors will now reap the rewards",
+            "source_content_hash": "e4b5710f29e81069",
+            "quote": "Among the biggest beneficiaries are veteran stock picker Ron Baron, Cathie Wood's Ark Invest and mutual fund giant Fidelity Investments.",
+            "quote_hash": "0293bf7a393cd5e8cd97d6f38e0c99db6d6b86f016c17c412611ac520ad6f5cb"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f1b31f351eab6712",
+        "funding_insight_id": "FI-35b63d84f1f7c2b0",
+        "event_ids": [
+          "EV-450f624a6a6446ce",
+          "EV-44c9a50b99c76a70"
+        ],
+        "company_entity_id": "EN-245f1e177c5169cb",
+        "company_canonical_entity_id": "",
+        "company_name": "Hark",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$700M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7 亿美元"
+        },
+        "announced_at": "2026-05-21",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9b94f245fa27a161",
+            "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
+            "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
+            "source_content_hash": "e91739ca23d21469",
+            "quote": "ARK Invest",
+            "quote_hash": "06913ee1095cff235ab418e7e5dcd289488940faa527a20dce51001adc74dcbf"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a683883a68df0931",
+        "funding_insight_id": "FI-b76fffbf5d0d91bd",
+        "event_ids": [
+          "EV-d4e44892226be468"
+        ],
+        "company_entity_id": "EN-7d3194f79e645c42",
+        "company_canonical_entity_id": "EN-7d3194f79e645c42",
+        "company_name": "OpenAI",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$1220亿",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 122000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1220 亿美元"
+        },
+        "announced_at": "2026-03-31",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1e2b3bad243bd066",
+            "source_url": "https://yespress.io/openais-122-b-megaround",
+            "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
+            "source_content_hash": "494969b64dc816f3",
+            "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+            "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-0349532f469a6b45",
+        "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
+        "source_title": "Early SpaceX investors will now reap the rewards",
+        "source_content_hash": "e4b5710f29e81069",
+        "quote": "Among the biggest beneficiaries are veteran stock picker Ron Baron, Cathie Wood's Ark Invest and mutual fund giant Fidelity Investments.",
+        "quote_hash": "0293bf7a393cd5e8cd97d6f38e0c99db6d6b86f016c17c412611ac520ad6f5cb"
+      },
+      {
+        "source_id": "FISRC-9b94f245fa27a161",
+        "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
+        "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
+        "source_content_hash": "e91739ca23d21469",
+        "quote": "ARK Invest",
+        "quote_hash": "06913ee1095cff235ab418e7e5dcd289488940faa527a20dce51001adc74dcbf"
+      },
+      {
+        "source_id": "FISRC-1e2b3bad243bd066",
+        "source_url": "https://yespress.io/openais-122-b-megaround",
+        "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
+        "source_content_hash": "494969b64dc816f3",
+        "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+        "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+      }
+    ]
+  }
+}

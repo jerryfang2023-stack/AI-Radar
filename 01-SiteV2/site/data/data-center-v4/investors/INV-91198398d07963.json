@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-91198398d07963",
+    "name": "B Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 3,
+    "first_disclosed_at": "2026-02-05",
+    "latest_disclosed_at": "2026-06-24",
+    "role_counts": {
+      "lead": 2,
+      "participant": 1
+    },
+    "round_codes": [
+      "seed",
+      "series_b",
+      "series_c"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-641a309108850fc9",
+        "canonical_entity_id": "",
+        "name": "Goodfire AI"
+      },
+      {
+        "entity_id": "EN-80f681ea74fb8ccc",
+        "canonical_entity_id": "",
+        "name": "Oro Labs"
+      },
+      {
+        "entity_id": "EN-e23228440ca5340f",
+        "canonical_entity_id": "",
+        "name": "Seltz"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-bbb9e321350e73b5",
+        "funding_insight_id": "FI-180a459d0573eb2a",
+        "event_ids": [
+          "EV-f54ec32c67e9447c",
+          "EV-2bb63a3015195f9b"
+        ],
+        "company_entity_id": "EN-e23228440ca5340f",
+        "company_canonical_entity_id": "",
+        "company_name": "Seltz",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$12.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1250 万美元"
+        },
+        "announced_at": "2026-06-24",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-05007e2b6b43ffda",
+            "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
+            "source_title": "智能体基础设施初创公司Seltz融资1250万美元，帮助AI代理搜索网络答案 - SiliconANGLE",
+            "source_content_hash": "4affcb58ccdfce57",
+            "quote": "The round was led by Speedinvest and B Capital.",
+            "quote_hash": "b68bf6c771cbe20280d08f6c63dfd6539e7a25e0e0151d64b99b2f0be98c15ce"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3ec2dfb7c18946c2",
+        "funding_insight_id": "FI-c1d114a8d4c343c9",
+        "event_ids": [
+          "EV-0b6cfbf67ba2da31"
+        ],
+        "company_entity_id": "EN-80f681ea74fb8ccc",
+        "company_canonical_entity_id": "",
+        "company_name": "Oro Labs",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "$100 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1 亿美元"
+        },
+        "announced_at": "2026-03-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "既有投资方，本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1347e63f3abd5d34",
+            "source_url": "https://fortune.com/2026/03/12/oro-labs-corporate-procurement-ai-efficiency/",
+            "source_title": "独家：Oro Labs利用AI智能体简化企业采购，获1亿美元融资",
+            "source_content_hash": "903d49978d88c371",
+            "quote": "Existing investors Norwest Venture Partners, B Capital, XYZ Capital, and Felicis are also participating.",
+            "quote_hash": "2758854e444ab6df3eb9d32daef6307353e57d69fcf49c16a5361ca212a26c43"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-6d7b258f3ed365b7",
+        "funding_insight_id": "FI-79b4dd0f0ff58a17",
+        "event_ids": [
+          "EV-26613b5bff756274"
+        ],
+        "company_entity_id": "EN-641a309108850fc9",
+        "company_canonical_entity_id": "",
+        "company_name": "Goodfire AI",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$150M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "announced_at": "2026-02-05",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-f0d4056113fd3650",
+            "source_url": "https://theaiinsider.tech/2026/02/11/ai-lab-goodfire-raises-150m-at-1-25b-valuation-to-design-models-with-interpretability/",
+            "source_title": "AI Lab Goodfire Raises $150M at $1.25B Valuation to Design Models with Interpretability",
+            "source_content_hash": "065e9d351d56505a",
+            "quote": "a $150 million Series B funding round at a $1.25 billion valuation. The round was led by B Capital",
+            "quote_hash": "8181c9adcb232ce7cf278ebe7c39d0c701d57cdf5448c2ffea29995f41d9dfbf"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-05007e2b6b43ffda",
+        "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
+        "source_title": "智能体基础设施初创公司Seltz融资1250万美元，帮助AI代理搜索网络答案 - SiliconANGLE",
+        "source_content_hash": "4affcb58ccdfce57",
+        "quote": "The round was led by Speedinvest and B Capital.",
+        "quote_hash": "b68bf6c771cbe20280d08f6c63dfd6539e7a25e0e0151d64b99b2f0be98c15ce"
+      },
+      {
+        "source_id": "FISRC-1347e63f3abd5d34",
+        "source_url": "https://fortune.com/2026/03/12/oro-labs-corporate-procurement-ai-efficiency/",
+        "source_title": "独家：Oro Labs利用AI智能体简化企业采购，获1亿美元融资",
+        "source_content_hash": "903d49978d88c371",
+        "quote": "Existing investors Norwest Venture Partners, B Capital, XYZ Capital, and Felicis are also participating.",
+        "quote_hash": "2758854e444ab6df3eb9d32daef6307353e57d69fcf49c16a5361ca212a26c43"
+      },
+      {
+        "source_id": "FISRC-f0d4056113fd3650",
+        "source_url": "https://theaiinsider.tech/2026/02/11/ai-lab-goodfire-raises-150m-at-1-25b-valuation-to-design-models-with-interpretability/",
+        "source_title": "AI Lab Goodfire Raises $150M at $1.25B Valuation to Design Models with Interpretability",
+        "source_content_hash": "065e9d351d56505a",
+        "quote": "a $150 million Series B funding round at a $1.25 billion valuation. The round was led by B Capital",
+        "quote_hash": "8181c9adcb232ce7cf278ebe7c39d0c701d57cdf5448c2ffea29995f41d9dfbf"
+      }
+    ]
+  }
+}

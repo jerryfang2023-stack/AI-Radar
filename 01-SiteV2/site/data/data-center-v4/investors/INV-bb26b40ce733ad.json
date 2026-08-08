@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-bb26b40ce733ad",
+    "name": "盛宇投资",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-26",
+    "latest_disclosed_at": "2026-06-26",
+    "role_counts": {
+      "co_lead": 1
+    },
+    "round_codes": [
+      "angel"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-4731aa5b66658c7f",
+        "canonical_entity_id": "EN-4731aa5b66658c7f",
+        "name": "无界动力（北京）技术研发有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-5a9867d989228bf2",
+        "funding_insight_id": "FI-7e546bd15ad5d4db",
+        "event_ids": [
+          "EV-876baa523eb93c4f"
+        ],
+        "company_entity_id": "EN-4731aa5b66658c7f",
+        "company_canonical_entity_id": "EN-4731aa5b66658c7f",
+        "company_name": "无界动力（北京）技术研发有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "超2亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": 200000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 2 亿美元"
+        },
+        "announced_at": "2026-06-26",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-ccf822f8fcb8d24a",
+            "source_url": "https://news.pedaily.cn/202606/565576.shtml",
+            "source_title": "无界动力完成超2亿美元天使轮融资，加速具身通用大脑与世界模型开发_投资界",
+            "source_content_hash": "a74dee61248c119a",
+            "quote": "最新天使轮融资由 京东关联基金、C 资本、弘毅投资、盛宇投资、丰源投资 等多家知名机构联合投资，老股东 线性资本、红杉中国、华业天成、雅瑞资本 等跟投，所获资金将持续用于具身通用大脑研发、技术基础设施建设以及全球规模化交付。",
+            "quote_hash": "651395cef7fe552ec8683f98e7ad363d71f4bf78406e30c168e6917f42b5b50a"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-ccf822f8fcb8d24a",
+        "source_url": "https://news.pedaily.cn/202606/565576.shtml",
+        "source_title": "无界动力完成超2亿美元天使轮融资，加速具身通用大脑与世界模型开发_投资界",
+        "source_content_hash": "a74dee61248c119a",
+        "quote": "最新天使轮融资由 京东关联基金、C 资本、弘毅投资、盛宇投资、丰源投资 等多家知名机构联合投资，老股东 线性资本、红杉中国、华业天成、雅瑞资本 等跟投，所获资金将持续用于具身通用大脑研发、技术基础设施建设以及全球规模化交付。",
+        "quote_hash": "651395cef7fe552ec8683f98e7ad363d71f4bf78406e30c168e6917f42b5b50a"
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-8f8249ffc410d8",
+    "name": "Snowflake Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2023-06-27",
+    "latest_disclosed_at": "2026-06-10",
+    "role_counts": {
+      "participant": 2
+    },
+    "round_codes": [
+      "series_a",
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-18be231103e4649b",
+        "canonical_entity_id": "",
+        "name": "Jedify"
+      },
+      {
+        "entity_id": "EN-7209ec6f68ac0bcd",
+        "canonical_entity_id": "",
+        "name": "Reka"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-541f5350036a7e84",
+        "funding_insight_id": "FI-abd8df8c726b1269",
+        "event_ids": [
+          "EV-74967394aed730ce"
+        ],
+        "company_entity_id": "EN-18be231103e4649b",
+        "company_canonical_entity_id": "",
+        "company_name": "Jedify",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$24 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 24000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2400 万美元"
+        },
+        "announced_at": "2026-06-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-26b4cf1fe2e20ea6",
+            "source_url": "https://workai.tv/news/2026/08/ai-news/jedify-raises-24-million-series-a-to-build-context-layer-for-enterprise-ai/",
+            "source_title": "Jedify 获 2400 万美元 A 轮融资，为企业 AI 构建情境层",
+            "source_content_hash": "76179d57f498ea0d",
+            "quote": "with Snowflake Ventures joining strategically",
+            "quote_hash": "42faeb5f2d2e31957c5664a5ae501397d37974b4e9a44703f7722d312667f360"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4730230d69932134",
+        "funding_insight_id": "FI-2959f95168aa0a55",
+        "event_ids": [
+          "EV-6e79974732a5db6b"
+        ],
+        "company_entity_id": "EN-7209ec6f68ac0bcd",
+        "company_canonical_entity_id": "",
+        "company_name": "Reka",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露",
+        "amount_original": "$58 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 58000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5800 万美元"
+        },
+        "announced_at": "2023-06-27",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4f876f1107004ec7",
+            "source_url": "https://techcrunch.com/2023/06/27/reka-emerges-from-stealth-to-build-custom-ai-models-for-the-enterprise/",
+            "source_title": "Reka 走出隐身模式，为企业构建定制 AI 模型",
+            "source_content_hash": "b0bfe562440f841d",
+            "quote": "with participation from strategic partner Snowflake Ventures",
+            "quote_hash": "38dd5fa6d5cd432c5af614d02c6d040b3ae0029a4b61a90a6e328e952b5fc3c6"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-26b4cf1fe2e20ea6",
+        "source_url": "https://workai.tv/news/2026/08/ai-news/jedify-raises-24-million-series-a-to-build-context-layer-for-enterprise-ai/",
+        "source_title": "Jedify 获 2400 万美元 A 轮融资，为企业 AI 构建情境层",
+        "source_content_hash": "76179d57f498ea0d",
+        "quote": "with Snowflake Ventures joining strategically",
+        "quote_hash": "42faeb5f2d2e31957c5664a5ae501397d37974b4e9a44703f7722d312667f360"
+      },
+      {
+        "source_id": "FISRC-4f876f1107004ec7",
+        "source_url": "https://techcrunch.com/2023/06/27/reka-emerges-from-stealth-to-build-custom-ai-models-for-the-enterprise/",
+        "source_title": "Reka 走出隐身模式，为企业构建定制 AI 模型",
+        "source_content_hash": "b0bfe562440f841d",
+        "quote": "with participation from strategic partner Snowflake Ventures",
+        "quote_hash": "38dd5fa6d5cd432c5af614d02c6d040b3ae0029a4b61a90a6e328e952b5fc3c6"
+      }
+    ]
+  }
+}

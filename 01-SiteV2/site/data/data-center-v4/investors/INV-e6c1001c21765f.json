@@ -1,0 +1,259 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-e6c1001c21765f",
+    "name": "AMD Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 4,
+    "first_disclosed_at": "2026-04-30",
+    "latest_disclosed_at": "2026-06-17",
+    "role_counts": {
+      "co_lead": 2,
+      "participant": 2
+    },
+    "round_codes": [
+      "series_a",
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-ce31f92c521b7b08",
+        "canonical_entity_id": "EN-ce31f92c521b7b08",
+        "name": "Featherless.ai"
+      },
+      {
+        "entity_id": "EN-245f1e177c5169cb",
+        "canonical_entity_id": "",
+        "name": "Hark"
+      },
+      {
+        "entity_id": "FICO-7e1d6c73932aa9b0",
+        "canonical_entity_id": "",
+        "name": "Odyssey ML"
+      },
+      {
+        "entity_id": "EN-3c1ae4e6276005e7",
+        "canonical_entity_id": "EN-3c1ae4e6276005e7",
+        "name": "TensorWave Inc."
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-5563a3c2a03b63a9",
+        "funding_insight_id": "FI-479f9d5c1123dba2",
+        "event_ids": [
+          "EV-a00763037a94d512"
+        ],
+        "company_entity_id": "FICO-7e1d6c73932aa9b0",
+        "company_canonical_entity_id": "",
+        "company_name": "Odyssey ML",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "3.1亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 310000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.1 亿美元"
+        },
+        "announced_at": "2026-06-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e94365d0212a78f3",
+            "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
+            "source_title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
+            "source_content_hash": "75587989c4b9271c",
+            "quote": "with Amazon, AMD Ventures, GV, and others participating",
+            "quote_hash": "a36a967aacd4c90a1561022a9dc76b3a0a4d1cf9bc904ad059b99a95d150543b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f2361e00c180ee5b",
+        "funding_insight_id": "FI-1f714b499dc9751a",
+        "event_ids": [
+          "EV-6e516b6e68def9cf"
+        ],
+        "company_entity_id": "EN-3c1ae4e6276005e7",
+        "company_canonical_entity_id": "EN-3c1ae4e6276005e7",
+        "company_name": "TensorWave Inc.",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "3.5亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 350000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.5 亿美元"
+        },
+        "announced_at": "2026-06-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-e98aedbd2eaa6410",
+            "source_url": "https://siliconangle.com/2026/06/10/data-center-infrastructure-startup-tensorwave-raises-350m-help-break-nvidias-ai-chip-monopoly/",
+            "source_title": "数据中心基础设施初创公司TensorWave融资3.5亿美元，助力打破英伟达AI芯片垄断 - SiliconANGLE",
+            "source_content_hash": "1d75cf39c1185f55",
+            "quote": "The round was co-led by Magnetar and AMD Ventures, the venture capital arm of the chipmaker Advanced Micro Devices Inc.",
+            "quote_hash": "dd2543353f4695b34b5beac02a8a7e8144f8be797ce5e82b9d56fe409f2b4d4d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-55dae6d0d03318cc",
+        "funding_insight_id": "FI-35b63d84f1f7c2b0",
+        "event_ids": [
+          "EV-450f624a6a6446ce",
+          "EV-44c9a50b99c76a70"
+        ],
+        "company_entity_id": "EN-245f1e177c5169cb",
+        "company_canonical_entity_id": "",
+        "company_name": "Hark",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$700M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7 亿美元"
+        },
+        "announced_at": "2026-05-21",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9b94f245fa27a161",
+            "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
+            "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
+            "source_content_hash": "e91739ca23d21469",
+            "quote": "AMD Ventures",
+            "quote_hash": "b7be16e935d6d168703bfc071a9bf91c18fea3a4a8b5e2d0e4ea96c18454db03"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-caf1dd47a1f09f13",
+        "funding_insight_id": "FI-93a42bdcb7635303",
+        "event_ids": [
+          "EV-6011ab83ebd290bd",
+          "EV-1abf0d076d30ec6d"
+        ],
+        "company_entity_id": "EN-ce31f92c521b7b08",
+        "company_canonical_entity_id": "EN-ce31f92c521b7b08",
+        "company_name": "Featherless.ai",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$20 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万美元"
+        },
+        "announced_at": "2026-04-30",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-f5176e2201593c8e",
+            "source_url": "https://techfundingnews.com/featherless-ai-20m-series-a-amd-airbus-open-source-ai-infrastructure/",
+            "source_title": "AMD 与空客支持 Featherless.ai 的 2000 万美元 A 轮融资，助力开源 AI 基础设施",
+            "source_content_hash": "415a2b10b75139c0",
+            "quote": "has secured $20 million in Series A funding co-led by AMD Ventures and Airbus Ventures",
+            "quote_hash": "61042ef1b031096ded1062a4e4013c5d79cc58a7c7c2e785b6f73637995ba297"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-e94365d0212a78f3",
+        "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
+        "source_title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
+        "source_content_hash": "75587989c4b9271c",
+        "quote": "with Amazon, AMD Ventures, GV, and others participating",
+        "quote_hash": "a36a967aacd4c90a1561022a9dc76b3a0a4d1cf9bc904ad059b99a95d150543b"
+      },
+      {
+        "source_id": "FISRC-e98aedbd2eaa6410",
+        "source_url": "https://siliconangle.com/2026/06/10/data-center-infrastructure-startup-tensorwave-raises-350m-help-break-nvidias-ai-chip-monopoly/",
+        "source_title": "数据中心基础设施初创公司TensorWave融资3.5亿美元，助力打破英伟达AI芯片垄断 - SiliconANGLE",
+        "source_content_hash": "1d75cf39c1185f55",
+        "quote": "The round was co-led by Magnetar and AMD Ventures, the venture capital arm of the chipmaker Advanced Micro Devices Inc.",
+        "quote_hash": "dd2543353f4695b34b5beac02a8a7e8144f8be797ce5e82b9d56fe409f2b4d4d"
+      },
+      {
+        "source_id": "FISRC-9b94f245fa27a161",
+        "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
+        "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
+        "source_content_hash": "e91739ca23d21469",
+        "quote": "AMD Ventures",
+        "quote_hash": "b7be16e935d6d168703bfc071a9bf91c18fea3a4a8b5e2d0e4ea96c18454db03"
+      },
+      {
+        "source_id": "FISRC-f5176e2201593c8e",
+        "source_url": "https://techfundingnews.com/featherless-ai-20m-series-a-amd-airbus-open-source-ai-infrastructure/",
+        "source_title": "AMD 与空客支持 Featherless.ai 的 2000 万美元 A 轮融资，助力开源 AI 基础设施",
+        "source_content_hash": "415a2b10b75139c0",
+        "quote": "has secured $20 million in Series A funding co-led by AMD Ventures and Airbus Ventures",
+        "quote_hash": "61042ef1b031096ded1062a4e4013c5d79cc58a7c7c2e785b6f73637995ba297"
+      }
+    ]
+  }
+}

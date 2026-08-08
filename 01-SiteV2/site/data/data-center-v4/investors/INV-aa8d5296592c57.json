@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-aa8d5296592c57",
+    "name": "Nvidia Corp.",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2026-07-16",
+    "latest_disclosed_at": "2026-08-04",
+    "role_counts": {
+      "participant": 2
+    },
+    "round_codes": [
+      "series_a",
+      "series_d"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-0caee180da9d0f3f",
+        "canonical_entity_id": "",
+        "name": "Fireworks AI Inc."
+      },
+      {
+        "entity_id": "EN-6fae0bc5a895aab8",
+        "canonical_entity_id": "",
+        "name": "Volta Infra Holdings Ltd."
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-1916baca6ad27584",
+        "funding_insight_id": "FI-718b8020e0e74b3d",
+        "event_ids": [
+          "EV-2dea56b0e97c1685"
+        ],
+        "company_entity_id": "EN-6fae0bc5a895aab8",
+        "company_canonical_entity_id": "",
+        "company_name": "Volta Infra Holdings Ltd.",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$300 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿美元"
+        },
+        "announced_at": "2026-08-04",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-21a1d5a2dbf2a3b1",
+            "source_url": "https://news.bloomberglaw.com/artificial-intelligence/nvidia-dell-back-ai-cloud-startup-volta-at-2-4-billion-value",
+            "source_title": "Nvidia、Dell 支持 AI 云初创公司 Volta，估值 24 亿美元",
+            "source_content_hash": "2773ebb523149905",
+            "quote": "Nvidia Corp. and Michael Dell also participated.",
+            "quote_hash": "55a6bf4acbf7e7f73e4201cda2e593db364427212733be824da7eda3a86e3039"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9bb3e95ac7da1177",
+        "funding_insight_id": "FI-3b1ea359415f476d",
+        "event_ids": [
+          "EV-4eaf3aabecae6016"
+        ],
+        "company_entity_id": "EN-0caee180da9d0f3f",
+        "company_canonical_entity_id": "",
+        "company_name": "Fireworks AI Inc.",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$1.505 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1505000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15.05 亿美元"
+        },
+        "announced_at": "2026-07-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投，既有投资方",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0d89e0712245c55b",
+            "source_url": "https://siliconangle.com/2026/07/16/ai-infrastructure-startup-fireworks-closes-1-5b-round-17-5b-valuation/",
+            "source_title": "AI 基础设施初创公司 Fireworks 完成 15 亿美元融资，估值达 175 亿美元",
+            "source_content_hash": "82ccac3b5ede24d2",
+            "quote": "they were joined by more than a half-dozen other backers, including Nvidia Corp.",
+            "quote_hash": "349e1d2de32bfca75897fb71f2ae9e309579714cee9cf6e5d66274d1f7cc4c43"
+          },
+          {
+            "source_id": "FISRC-dc600442a39828d4",
+            "source_url": "https://www.aitechdialogue.com/article/fireworks-ai-1-5b-funding-series-d-custom-enterprise-ai",
+            "source_title": "Fireworks AI Funding: Raises $1.5B at… — AI Tech Dialogue",
+            "source_content_hash": "88980901b6103a22",
+            "quote": "existing backers like Nvidia, Lightspeed Venture Partners, and Bessemer Venture Partners also chipped in.",
+            "quote_hash": "433795f53b6056423c050ab452165227ab4efeb1062489173a4a6a6bb0cf4ec9"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-21a1d5a2dbf2a3b1",
+        "source_url": "https://news.bloomberglaw.com/artificial-intelligence/nvidia-dell-back-ai-cloud-startup-volta-at-2-4-billion-value",
+        "source_title": "Nvidia、Dell 支持 AI 云初创公司 Volta，估值 24 亿美元",
+        "source_content_hash": "2773ebb523149905",
+        "quote": "Nvidia Corp. and Michael Dell also participated.",
+        "quote_hash": "55a6bf4acbf7e7f73e4201cda2e593db364427212733be824da7eda3a86e3039"
+      },
+      {
+        "source_id": "FISRC-0d89e0712245c55b",
+        "source_url": "https://siliconangle.com/2026/07/16/ai-infrastructure-startup-fireworks-closes-1-5b-round-17-5b-valuation/",
+        "source_title": "AI 基础设施初创公司 Fireworks 完成 15 亿美元融资，估值达 175 亿美元",
+        "source_content_hash": "82ccac3b5ede24d2",
+        "quote": "they were joined by more than a half-dozen other backers, including Nvidia Corp.",
+        "quote_hash": "349e1d2de32bfca75897fb71f2ae9e309579714cee9cf6e5d66274d1f7cc4c43"
+      },
+      {
+        "source_id": "FISRC-dc600442a39828d4",
+        "source_url": "https://www.aitechdialogue.com/article/fireworks-ai-1-5b-funding-series-d-custom-enterprise-ai",
+        "source_title": "Fireworks AI Funding: Raises $1.5B at… — AI Tech Dialogue",
+        "source_content_hash": "88980901b6103a22",
+        "quote": "existing backers like Nvidia, Lightspeed Venture Partners, and Bessemer Venture Partners also chipped in.",
+        "quote_hash": "433795f53b6056423c050ab452165227ab4efeb1062489173a4a6a6bb0cf4ec9"
+      }
+    ]
+  }
+}

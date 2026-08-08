@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-09233e20979a97",
+    "name": "涂鸦智能",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-13",
+    "latest_disclosed_at": "2026-07-13",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "pre_series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-e22521e7de65d819",
+        "canonical_entity_id": "",
+        "name": "上海珞博智能科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-ecf1d372d4227c5d",
+        "funding_insight_id": "FI-fd1db2608b7fc431",
+        "event_ids": [
+          "EV-b5dd10300e34f2d3"
+        ],
+        "company_entity_id": "EN-e22521e7de65d819",
+        "company_canonical_entity_id": "",
+        "company_name": "上海珞博智能科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "亿元级",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿人民币–10 亿人民币"
+        },
+        "announced_at": "2026-07-13",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8a995421b25ccbf7",
+            "source_url": "https://www.nbd.com.cn/articles/2026-07-13/4469618.html",
+            "source_title": "珞博智能完成亿元级Pre-A轮融资，加速AI潮玩全球化布局",
+            "source_content_hash": "b3192b7c4dbd09ca7637f881c0267ff2db33b0e18c79b5c129c34233a6ef5443",
+            "quote": "涂鸦智能跟投",
+            "quote_hash": "b2c5ff99d1597ea5e96e143fb036f7cea637c75d35c125e1c1c4bae7ec481dca"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-8a995421b25ccbf7",
+        "source_url": "https://www.nbd.com.cn/articles/2026-07-13/4469618.html",
+        "source_title": "珞博智能完成亿元级Pre-A轮融资，加速AI潮玩全球化布局",
+        "source_content_hash": "b3192b7c4dbd09ca7637f881c0267ff2db33b0e18c79b5c129c34233a6ef5443",
+        "quote": "涂鸦智能跟投",
+        "quote_hash": "b2c5ff99d1597ea5e96e143fb036f7cea637c75d35c125e1c1c4bae7ec481dca"
+      }
+    ]
+  }
+}

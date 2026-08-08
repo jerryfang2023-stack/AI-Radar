@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-d6692a551734c2",
+    "name": "Atomico",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-03",
+    "latest_disclosed_at": "2026-06-03",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "series_d"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-049b3253f4a8e2eb",
+        "canonical_entity_id": "",
+        "name": "Factorial"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-824e4592ab210f17",
+        "funding_insight_id": "FI-274044e5d2a8eb25",
+        "event_ids": [
+          "EV-7e1624d7df300713"
+        ],
+        "company_entity_id": "EN-049b3253f4a8e2eb",
+        "company_canonical_entity_id": "",
+        "company_name": "Factorial",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D 轮",
+        "amount_original": "1.5 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "announced_at": "2026-06-03",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投；C 轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-e9a8d571db654fd4",
+            "source_url": "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
+            "source_title": "Factorial 完成 1.5 亿美元 D 轮融资，估值达 25 亿美元，成为欧洲最具价值的 AI 智能体规模化企业之一",
+            "source_content_hash": "11af7531d19b66f0",
+            "quote": "joined by other investors including Atomico and Four Rivers",
+            "quote_hash": "114b77c16789092678fc784bbcd2ba7b7656bfc87d84213e020d5696b43e0fc6"
+          },
+          {
+            "source_id": "FISRC-a5223e0a738cb28f",
+            "source_url": "https://techfundingnews.com/factorial-raises-150m-series-d-at-2-5b-valuation-and-a-700m-play-on-ai-native-workforce-software/",
+            "source_title": "Factorial raises $150M Series D at $2.5B valuation and a $700M play on AI-native workforce software — TFN",
+            "source_content_hash": "c578f3ea8e386517",
+            "quote": "reached unicorn status in October 2022 on a $120M Series C led by Atomico",
+            "quote_hash": "50eabb913bd644ed706967e8b68450deefd41ffbf2e2fb521b06e585a4d1a6d6"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-e9a8d571db654fd4",
+        "source_url": "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
+        "source_title": "Factorial 完成 1.5 亿美元 D 轮融资，估值达 25 亿美元，成为欧洲最具价值的 AI 智能体规模化企业之一",
+        "source_content_hash": "11af7531d19b66f0",
+        "quote": "joined by other investors including Atomico and Four Rivers",
+        "quote_hash": "114b77c16789092678fc784bbcd2ba7b7656bfc87d84213e020d5696b43e0fc6"
+      },
+      {
+        "source_id": "FISRC-a5223e0a738cb28f",
+        "source_url": "https://techfundingnews.com/factorial-raises-150m-series-d-at-2-5b-valuation-and-a-700m-play-on-ai-native-workforce-software/",
+        "source_title": "Factorial raises $150M Series D at $2.5B valuation and a $700M play on AI-native workforce software — TFN",
+        "source_content_hash": "c578f3ea8e386517",
+        "quote": "reached unicorn status in October 2022 on a $120M Series C led by Atomico",
+        "quote_hash": "50eabb913bd644ed706967e8b68450deefd41ffbf2e2fb521b06e585a4d1a6d6"
+      }
+    ]
+  }
+}

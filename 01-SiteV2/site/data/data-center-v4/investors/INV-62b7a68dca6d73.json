@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-62b7a68dca6d73",
+    "name": "Nikesh Arora",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-29",
+    "latest_disclosed_at": "2026-07-14",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "other_current_round": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-92dd63c8e5c77e8a",
+        "canonical_entity_id": "EN-92dd63c8e5c77e8a",
+        "name": "Valarian Technologies Ltd."
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-042754ce3273b677",
+        "funding_insight_id": "FI-38617a261ac32b56",
+        "event_ids": [
+          "EV-305ec93673f4f12e"
+        ],
+        "company_entity_id": "EN-92dd63c8e5c77e8a",
+        "company_canonical_entity_id": "EN-92dd63c8e5c77e8a",
+        "company_name": "Valarian Technologies Ltd.",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "5000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-07-14",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮天使投资人",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-03aa198ddff34236",
+            "source_url": "https://siliconangle.com/2026/07/14/sovereign-ai-infrastructure-startup-valarian-raises-50m-help-nations-secure-military-defense-systems/",
+            "source_title": "主权AI基础设施初创公司Valarian融资5000万美元，助力各国保障国防系统安全",
+            "source_content_hash": "ab99df0f3d10a2c4",
+            "quote": "plus Gokul Rajaram and Nikesh Arora, who participated as angels",
+            "quote_hash": "06be14846bea8c7d29d28344d42059e660cf26d6efbaa98553a25899699479fb"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-de656d6ef6d13997",
+        "funding_insight_id": "FI-ca1a0b9750ebb6db",
+        "event_ids": [
+          "EV-9300044a58395552"
+        ],
+        "company_entity_id": "EN-7106dbc04a08ce3a",
+        "company_canonical_entity_id": "",
+        "company_name": "8090 Labs",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A 轮",
+        "amount_original": "1.35 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 135000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.35 亿美元"
+        },
+        "announced_at": "2026-06-29",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-392b2fac8b63845f",
+            "source_url": "https://techcrunch.com/2026/06/29/chamath-palihapitiya-raises-135m-series-a-for-his-ai-coding-startup-takes-ceo-role/",
+            "source_title": "Chamath Palihapitiya 为其 AI 编程初创公司筹集 1.35 亿美元 A 轮融资，并出任 CEO",
+            "source_content_hash": "3d3c1a68251829f0",
+            "quote": "angel investors like Palo Alto Networks CEO Nikesh Arora",
+            "quote_hash": "6f21f7350b7c988d67bd02fc400a7fd78c5dca8ff5d7f181a74f444026b448f0"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-03aa198ddff34236",
+        "source_url": "https://siliconangle.com/2026/07/14/sovereign-ai-infrastructure-startup-valarian-raises-50m-help-nations-secure-military-defense-systems/",
+        "source_title": "主权AI基础设施初创公司Valarian融资5000万美元，助力各国保障国防系统安全",
+        "source_content_hash": "ab99df0f3d10a2c4",
+        "quote": "plus Gokul Rajaram and Nikesh Arora, who participated as angels",
+        "quote_hash": "06be14846bea8c7d29d28344d42059e660cf26d6efbaa98553a25899699479fb"
+      },
+      {
+        "source_id": "FISRC-392b2fac8b63845f",
+        "source_url": "https://techcrunch.com/2026/06/29/chamath-palihapitiya-raises-135m-series-a-for-his-ai-coding-startup-takes-ceo-role/",
+        "source_title": "Chamath Palihapitiya 为其 AI 编程初创公司筹集 1.35 亿美元 A 轮融资，并出任 CEO",
+        "source_content_hash": "3d3c1a68251829f0",
+        "quote": "angel investors like Palo Alto Networks CEO Nikesh Arora",
+        "quote_hash": "6f21f7350b7c988d67bd02fc400a7fd78c5dca8ff5d7f181a74f444026b448f0"
+      }
+    ]
+  }
+}

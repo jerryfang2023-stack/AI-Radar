@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-485c195379a914",
+    "name": "Wischoff Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-07-20",
+    "latest_disclosed_at": "2026-07-20",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-5a66e073b47c5813",
+        "funding_insight_id": "FI-a7f67888b410be24",
+        "event_ids": [
+          "EV-901155ab700a7e8e"
+        ],
+        "company_entity_id": "EN-12765295db4f1e79",
+        "company_canonical_entity_id": "",
+        "company_name": "Natural AI, Inc.",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$30 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-07-20",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "本轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-cbb8abca74aa20f4",
+            "source_url": "https://fintech.global/2026/07/21/natural-raises-30m-to-power-payments-for-ai-agents/",
+            "source_title": "Natural raises $30m to power payments for AI agents",
+            "source_content_hash": "b891a898484fc062",
+            "quote": "Wischoff Ventures founder Nichole Wischoff",
+            "quote_hash": "3c9ae70f661d5cfd4eb54c8362b6136404fea7eb7de65a065666ec12f3b79bae"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-cbb8abca74aa20f4",
+        "source_url": "https://fintech.global/2026/07/21/natural-raises-30m-to-power-payments-for-ai-agents/",
+        "source_title": "Natural raises $30m to power payments for AI agents",
+        "source_content_hash": "b891a898484fc062",
+        "quote": "Wischoff Ventures founder Nichole Wischoff",
+        "quote_hash": "3c9ae70f661d5cfd4eb54c8362b6136404fea7eb7de65a065666ec12f3b79bae"
+      }
+    ]
+  }
+}

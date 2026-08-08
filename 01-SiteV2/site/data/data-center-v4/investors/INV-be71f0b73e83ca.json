@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-be71f0b73e83ca",
+    "name": "Obvious Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2026-07-08",
+    "latest_disclosed_at": "2026-07-21",
+    "role_counts": {
+      "lead": 2
+    },
+    "round_codes": [
+      "multi_round",
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-7ef08ef63597d47c",
+        "canonical_entity_id": "",
+        "name": "Gritt"
+      },
+      {
+        "entity_id": "EN-c71a83adf3de3f40",
+        "canonical_entity_id": "",
+        "name": "Hostie"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-23e6166410473c9f",
+        "funding_insight_id": "FI-c813b159747ac208",
+        "event_ids": [
+          "EV-fcf3c464260b6730"
+        ],
+        "company_entity_id": "EN-7ef08ef63597d47c",
+        "company_canonical_entity_id": "",
+        "company_name": "Gritt",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "pre-seed and Series A",
+        "amount_original": "$32.4M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 32400000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3240 万美元"
+        },
+        "announced_at": "2026-07-21",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-e5ce259c107507e9",
+            "source_url": "https://www.gritt.ai/news/gritt-launches-physical-ai",
+            "source_title": "Gritt 获 3240 万美元融资，打造物理 AI 加速全球基础设施建设",
+            "source_content_hash": "6af714d5b7bb5158",
+            "quote": "The $26M Series A was led by Obvious Ventures",
+            "quote_hash": "81086e63d2babaf8c0f0a35a849c4486d7ac5cf61163a0a63cb359b8b6a12a05"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-739fc1683b9f2fa5",
+        "funding_insight_id": "FI-45e331eacf759ed4",
+        "event_ids": [
+          "EV-0a62954694db4143"
+        ],
+        "company_entity_id": "EN-c71a83adf3de3f40",
+        "company_canonical_entity_id": "",
+        "company_name": "Hostie",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$12 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1200 万美元"
+        },
+        "announced_at": "2026-07-08",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-d81171d6c6910b85",
+            "source_url": "https://www.prnewswire.com/news-releases/hostie-raises-12m-series-a-to-power-the-future-of-restaurant-hospitality-302820521.html",
+            "source_title": "Hostie 完成1200万美元A轮融资，助力餐饮服务业未来",
+            "source_content_hash": "d7c2bb0b4010c680",
+            "quote": "a $12 million Series A funding round led by Obvious Ventures",
+            "quote_hash": "4636d7c23a6d69264a46ff39f704b7c8896df4fa1a4d36fe839d301fa14eeb37"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-e5ce259c107507e9",
+        "source_url": "https://www.gritt.ai/news/gritt-launches-physical-ai",
+        "source_title": "Gritt 获 3240 万美元融资，打造物理 AI 加速全球基础设施建设",
+        "source_content_hash": "6af714d5b7bb5158",
+        "quote": "The $26M Series A was led by Obvious Ventures",
+        "quote_hash": "81086e63d2babaf8c0f0a35a849c4486d7ac5cf61163a0a63cb359b8b6a12a05"
+      },
+      {
+        "source_id": "FISRC-d81171d6c6910b85",
+        "source_url": "https://www.prnewswire.com/news-releases/hostie-raises-12m-series-a-to-power-the-future-of-restaurant-hospitality-302820521.html",
+        "source_title": "Hostie 完成1200万美元A轮融资，助力餐饮服务业未来",
+        "source_content_hash": "d7c2bb0b4010c680",
+        "quote": "a $12 million Series A funding round led by Obvious Ventures",
+        "quote_hash": "4636d7c23a6d69264a46ff39f704b7c8896df4fa1a4d36fe839d301fa14eeb37"
+      }
+    ]
+  }
+}

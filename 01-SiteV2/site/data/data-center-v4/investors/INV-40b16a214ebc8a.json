@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-40b16a214ebc8a",
+    "name": "Crane Venture Partners",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2025-08-20",
+    "latest_disclosed_at": "2025-08-20",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-c08f86842ff2c908",
+        "canonical_entity_id": "",
+        "name": "SRE.ai"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-8d641486a5ecbbeb",
+        "funding_insight_id": "FI-9fae2cdb80bfa282",
+        "event_ids": [
+          "EV-d5aa723446feebbb"
+        ],
+        "company_entity_id": "EN-c08f86842ff2c908",
+        "company_canonical_entity_id": "",
+        "company_name": "SRE.ai",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$7.2 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 7200000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "720 万美元"
+        },
+        "announced_at": "2025-08-20",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-68a8dc57ec8eec7f",
+            "source_url": "https://techcrunch.com/2025/08/20/sre-ai-launches-to-automate-complex-enterprise-workflows/",
+            "source_title": "Y Combinator 校友 SRE.ai 获 720 万美元融资，用于开发 DevOps AI 智能体",
+            "source_content_hash": "1066cbe242af0e32",
+            "quote": "announced a $7.2 million seed round led by Salesforce Ventures and Crane Venture Partners.",
+            "quote_hash": "beab4efc3d4169df015244aacfae369b78d49a23a6bd8e7e96f7d21a10515d1d"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-68a8dc57ec8eec7f",
+        "source_url": "https://techcrunch.com/2025/08/20/sre-ai-launches-to-automate-complex-enterprise-workflows/",
+        "source_title": "Y Combinator 校友 SRE.ai 获 720 万美元融资，用于开发 DevOps AI 智能体",
+        "source_content_hash": "1066cbe242af0e32",
+        "quote": "announced a $7.2 million seed round led by Salesforce Ventures and Crane Venture Partners.",
+        "quote_hash": "beab4efc3d4169df015244aacfae369b78d49a23a6bd8e7e96f7d21a10515d1d"
+      }
+    ]
+  }
+}

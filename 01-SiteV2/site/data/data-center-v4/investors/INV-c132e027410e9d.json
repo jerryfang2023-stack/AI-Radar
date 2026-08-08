@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-c132e027410e9d",
+    "name": "Qualcomm Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-05-21",
+    "latest_disclosed_at": "2026-05-21",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-245f1e177c5169cb",
+        "canonical_entity_id": "",
+        "name": "Hark"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-9660910cb0a275eb",
+        "funding_insight_id": "FI-35b63d84f1f7c2b0",
+        "event_ids": [
+          "EV-450f624a6a6446ce",
+          "EV-44c9a50b99c76a70"
+        ],
+        "company_entity_id": "EN-245f1e177c5169cb",
+        "company_canonical_entity_id": "",
+        "company_name": "Hark",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$700M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7 亿美元"
+        },
+        "announced_at": "2026-05-21",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9b94f245fa27a161",
+            "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
+            "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
+            "source_content_hash": "e91739ca23d21469",
+            "quote": "Qualcomm Ventures",
+            "quote_hash": "c3308a2da36a6975868dde894ce832cd0477fbdd5c8fd7b8c6ed3f7635039f98"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-9b94f245fa27a161",
+        "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
+        "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
+        "source_content_hash": "e91739ca23d21469",
+        "quote": "Qualcomm Ventures",
+        "quote_hash": "c3308a2da36a6975868dde894ce832cd0477fbdd5c8fd7b8c6ed3f7635039f98"
+      }
+    ]
+  }
+}

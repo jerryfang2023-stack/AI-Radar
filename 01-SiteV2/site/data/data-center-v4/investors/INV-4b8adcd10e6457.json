@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-4b8adcd10e6457",
+    "name": "A&E Investment",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-08",
+    "latest_disclosed_at": "2026-07-08",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_f"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-6907a22fafe13a63",
+        "canonical_entity_id": "",
+        "name": "SambaNova Systems"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-6a03198f68373d63",
+        "funding_insight_id": "FI-02775e1bb32805b0",
+        "event_ids": [
+          "EV-a8dc5c859946f336"
+        ],
+        "company_entity_id": "EN-6907a22fafe13a63",
+        "company_canonical_entity_id": "",
+        "company_name": "SambaNova Systems",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F (first close)",
+        "amount_original": "$1 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-07-08",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投（新进或既有）",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-dbf8259066547c8e",
+            "source_url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
+            "source_title": "AI 芯片制造商 SambaNova 以 110 亿美元估值融资 10 亿美元，距上一轮巨额融资仅 5 个月",
+            "source_content_hash": "e79999ca03a0833e",
+            "quote": "New and existing investors also joined, including A&E Investment",
+            "quote_hash": "bc3202e838b4b86db4e543facc21acc6a7cb156bfed5c8cdeeaccc27a41cd322"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-dbf8259066547c8e",
+        "source_url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
+        "source_title": "AI 芯片制造商 SambaNova 以 110 亿美元估值融资 10 亿美元，距上一轮巨额融资仅 5 个月",
+        "source_content_hash": "e79999ca03a0833e",
+        "quote": "New and existing investors also joined, including A&E Investment",
+        "quote_hash": "bc3202e838b4b86db4e543facc21acc6a7cb156bfed5c8cdeeaccc27a41cd322"
+      }
+    ]
+  }
+}

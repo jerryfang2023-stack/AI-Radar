@@ -13,7 +13,7 @@
 ## Required publication content
 
 - Company identity, Chinese summary, and evidence.
-- Normalized financing round code and Chinese label, original round text, amount, announced date when disclosed, all explicitly named current-round investors, and evidence.
+- Normalized financing round code and Chinese label, original round text, amount source text plus deterministic normalized currency/base values, announced date when disclosed, financing disclosure status, all explicitly named current-round investors with roles, and evidence.
 - At least one source-backed product or service.
 - Chinese application-layer analysis: sector, capital judgment, validated signals, and at least one risk.
 - One explicit `analysis.product_form_id` chosen from active `product_form` Facets by the product or service customers buy or users directly use, not by an enabling technology, feature, industry, or future application.
@@ -25,6 +25,10 @@
 - A passed `FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1`.
 
 Customers, comparisons, metrics, founder details, investor public rationale, funding history, and Direction Card links remain optional unless a captured source supports them. Missing customer evidence is represented as `no_verified_customer_found`; it is never filled with a guess.
+
+The combined public projection derives stable `historical_rounds` from accepted company-round cards and records `financing.cumulative_amount.basis`. A reported total takes precedence; otherwise the builder sums only parseable known rounds in the same currency and labels the result as an incomplete known-round total when coverage is partial.
+
+Named investor evidence may feed `INVESTMENT-INSTITUTION-V1.0`. Each activity must retain its exact quote, source URL, financing card, company, round, date, role, and original/normalized amount. Corporate, government, and individual investors remain explicit subject types; this projection never creates canonical V4 entities or relationships.
 
 ## Fail-closed cases
 

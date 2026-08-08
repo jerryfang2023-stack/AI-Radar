@@ -1,0 +1,681 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-c73d9854fb920b",
+    "name": "NVIDIA",
+    "aliases": [
+      "Nvidia"
+    ],
+    "canonical_entity_id": "EN-8d4321d936320802",
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 11,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 10,
+    "first_disclosed_at": "2025-09-09",
+    "latest_disclosed_at": "2026-07-16",
+    "role_counts": {
+      "lead": 1,
+      "participant": 10
+    },
+    "round_codes": [
+      "multi_round",
+      "seed",
+      "series_a",
+      "series_c",
+      "series_f",
+      "series_g",
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-a83a3af1a4866fd5",
+        "canonical_entity_id": "",
+        "name": "Advanced Machine Intelligence Labs (AMI Labs)"
+      },
+      {
+        "entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "name": "Anthropic"
+      },
+      {
+        "entity_id": "EN-e647c818ac38b6ca",
+        "canonical_entity_id": "EN-e647c818ac38b6ca",
+        "name": "Elorian"
+      },
+      {
+        "entity_id": "FICO-gradium",
+        "canonical_entity_id": "",
+        "name": "Gradium"
+      },
+      {
+        "entity_id": "EN-245f1e177c5169cb",
+        "canonical_entity_id": "",
+        "name": "Hark"
+      },
+      {
+        "entity_id": "EN-c04bd5ebd10ab696",
+        "canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "name": "Mistral AI"
+      },
+      {
+        "entity_id": "EN-7d3194f79e645c42",
+        "canonical_entity_id": "EN-7d3194f79e645c42",
+        "name": "OpenAI"
+      },
+      {
+        "entity_id": "EN-b06631033a981321",
+        "canonical_entity_id": "",
+        "name": "Recursive Superintelligence Inc."
+      },
+      {
+        "entity_id": "EN-816bab802b34b308",
+        "canonical_entity_id": "",
+        "name": "Together AI"
+      },
+      {
+        "entity_id": "FICO-upscale-ai",
+        "canonical_entity_id": "",
+        "name": "Upscale AI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-76328b3a57ddc9ae",
+        "funding_insight_id": "FI-f59cd4d7e9ffcb18",
+        "event_ids": [
+          "EV-44cd5e03d30c85b3"
+        ],
+        "company_entity_id": "EN-e647c818ac38b6ca",
+        "company_canonical_entity_id": "EN-e647c818ac38b6ca",
+        "company_name": "Elorian",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$55 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 55000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5500 万美元"
+        },
+        "announced_at": "2026-07-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-09d3aaaafa6cdabc",
+            "source_url": "https://www.recall.it/summary/artificial-intelligence/how-elorian-ai-pulled-off-a-dollar300m-pre-seed-valuation-with-andrew-dai",
+            "source_title": "How Elorian AI pulled off a $300M pre-seed valuation with Andrew Dai | AI YouTube Summary | TechCrunch | Recall",
+            "source_content_hash": "7b935e4006e94036",
+            "quote": "attracting high‑profile investors such as Menlo Ventures, Nvidia, and Jeff Dean",
+            "quote_hash": "ebeaf596ca305a06070fb1ec2843b8ede18bcdeb117f767b82d14c002579f478"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-175fceefaa8ad5c9",
+        "funding_insight_id": "FI-3bbba5a15bb40a85",
+        "event_ids": [
+          "EV-e41fc65eb014893f"
+        ],
+        "company_entity_id": "FICO-gradium",
+        "company_canonical_entity_id": "",
+        "company_name": "Gradium",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$100 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1 亿美元"
+        },
+        "announced_at": "2026-07-09",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9af7e6a4d7b3d5e7",
+            "source_url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia",
+            "source_title": "巴黎AI语音初创Gradium获1亿美元种子轮融资，Nvidia参投",
+            "source_content_hash": "84b42b7082dca9a3",
+            "quote": "Gradium, a Paris-based startup that offers voice AI models, reopened its seed round to new investors, including Nvidia, and has now raised $100 million total for the round",
+            "quote_hash": "88974e0ec721d570f03deedb200c82c245b210d6b47ad7b19dce3e08ebdb8337"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c2a7c56b7ca3b8e7",
+        "funding_insight_id": "FI-2dfbeaa7d627041d",
+        "event_ids": [
+          "EV-13ec78dfdbca678b"
+        ],
+        "company_entity_id": "EN-816bab802b34b308",
+        "company_canonical_entity_id": "",
+        "company_name": "Together AI",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "$800 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 800000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8 亿美元"
+        },
+        "announced_at": "2026-07-01",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投；种子轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6f0f12fb121fbd88",
+            "source_url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",
+            "source_title": "Neocloud Together AI 融资 8 亿美元，估值跃升至 83 亿美元",
+            "source_content_hash": "99e8e0f48b30eed2",
+            "quote": "a $102.5 million Series A funding round led by Kleiner Perkins with participation from Nvidia and Emergence Capital back in 2023",
+            "quote_hash": "7b81676f7e4adc6fbeac3fe3f8f408d50730ce1f0c1d13781a834105396c1ff1"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-52e4380fbc1e9cee",
+        "funding_insight_id": "FI-55464dd460014128",
+        "event_ids": [
+          "EV-236cbc2d64f0c455"
+        ],
+        "company_entity_id": "FICO-upscale-ai",
+        "company_canonical_entity_id": "",
+        "company_name": "Upscale AI",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "Series A-1 (A轮扩展)",
+        "amount_original": "$190 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 190000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.9 亿美元"
+        },
+        "announced_at": "2026-06-22",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投（新投资方）",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7dcdc22c0b1702bf",
+            "source_url": "https://upscale.com/blogs/upscale-ai-adds-190-million-in-extension-to-series-a-reaching-half-billion-dollars-in-total-funding?from_theconsensus=1",
+            "source_title": "Upscale AI 完成1.9亿美元A轮扩展融资，总融资额达5亿美元",
+            "source_content_hash": "23145edb5fdd8d69",
+            "quote": "included funding from new investors, NVIDIA",
+            "quote_hash": "01ca536806a619814a2882d803ca99c3289af1412793cb24a145a73dbbe4834d"
+          },
+          {
+            "source_id": "FISRC-77f4599a4e868378",
+            "source_url": "https://artofthestart.com/upscale-ai-raises-190-million-nvidia/",
+            "source_title": "Upscale AI Raises $190 Million as Nvidia Joins the Round",
+            "source_content_hash": "fdc040e719a0dd75",
+            "quote": "Nvidia, whose chips Upscale's switches are built to serve, came in as a strategic investor.",
+            "quote_hash": "5b530773d850b3582be107fc429727bdd0268163c8607d976cb4530c8245fdd3"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-fcf0e11f11470496",
+        "funding_insight_id": "FI-35b63d84f1f7c2b0",
+        "event_ids": [
+          "EV-450f624a6a6446ce",
+          "EV-44c9a50b99c76a70"
+        ],
+        "company_entity_id": "EN-245f1e177c5169cb",
+        "company_canonical_entity_id": "",
+        "company_name": "Hark",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$700M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7 亿美元"
+        },
+        "announced_at": "2026-05-21",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9b94f245fa27a161",
+            "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
+            "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
+            "source_content_hash": "e91739ca23d21469",
+            "quote": "with participation from NVIDIA",
+            "quote_hash": "84400f63319d5f56052b5b500762bd02f4e5d99e4bc24bf244f51904af4f1ad5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e2cce02ee7089e36",
+        "funding_insight_id": "FI-3030a959696487d1",
+        "event_ids": [
+          "EV-12a42b0aabee236f"
+        ],
+        "company_entity_id": "EN-b06631033a981321",
+        "company_canonical_entity_id": "",
+        "company_name": "Recursive Superintelligence Inc.",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$650 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 650000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6.5 亿美元"
+        },
+        "announced_at": "2026-05-13",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-61b930049ee4e86e",
+            "source_url": "https://siliconangle.com/2026/05/13/recursive-superintelligence-raises-650m-build-self-improving-ai-models/",
+            "source_title": "Recursive Superintelligence raises $650M to build self-improving AI models - SiliconANGLE",
+            "source_content_hash": "926edc21ca4613eb",
+            "quote": "They were joined by Nvidia Corp. and Advanced Micro Devices Inc.’s venture capital arm.",
+            "quote_hash": "e27009a9dd08a65b25b7a316ddb093d3d3ba0b0cfe2445ed4d9e9b504c7901e3"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3b76d21bb1ad74cc",
+        "funding_insight_id": "FI-24441bfba8aff1ad",
+        "event_ids": [
+          "EV-6f092cfc7a064d64"
+        ],
+        "company_entity_id": "EN-e647c818ac38b6ca",
+        "company_canonical_entity_id": "EN-e647c818ac38b6ca",
+        "company_name": "Elorian",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$55 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 55000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5500 万美元"
+        },
+        "announced_at": "2026-04",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投（战略投资方）",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0a52165fbfc8575b",
+            "source_url": "https://mlq.ai/news/elorian-raises-55m-seed-at-300m-valuation-for-visual-ai-before-shipping-a-product/",
+            "source_title": "Elorian Raises $55M Seed at $300M Valuation for Visual AI Before Shipping a Product | MLQ News",
+            "source_content_hash": "ae17cd699a04f8e6",
+            "quote": "with strategic backing from Nvidia",
+            "quote_hash": "78466cd846a34d989680d277ce53f4b62533494daf260e1278a883ee7570e994"
+          },
+          {
+            "source_id": "FISRC-1c40aad62f3bb1a3",
+            "source_url": "https://techcrunch.com/2026/07/16/how-a-former-deepmind-researcher-raised-at-a-300m-pre-seed-valuation-before-launching-a-product/",
+            "source_title": "前DeepMind研究员在推出产品前以3亿美元预种子轮估值融资",
+            "source_content_hash": "123ae92608b50da6",
+            "quote": "he prioritized strategic partners like Nvidia and Menlo Ventures",
+            "quote_hash": "3d0f04f1a750ae582fffb267db65cd04477c8a303f78a4bb73d5d01e7dbc6cd9"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5b23af42d1e85b8b",
+        "funding_insight_id": "FI-b76fffbf5d0d91bd",
+        "event_ids": [
+          "EV-d4e44892226be468"
+        ],
+        "company_entity_id": "EN-7d3194f79e645c42",
+        "company_canonical_entity_id": "EN-7d3194f79e645c42",
+        "company_name": "OpenAI",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$1220亿",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 122000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1220 亿美元"
+        },
+        "announced_at": "2026-03-31",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-1e2b3bad243bd066",
+            "source_url": "https://yespress.io/openais-122-b-megaround",
+            "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
+            "source_content_hash": "494969b64dc816f3",
+            "quote": "Nvidia ($30 billion)",
+            "quote_hash": "16e389a54221d6db4d9015cc5bf31ea68b4d8505958c7f03d81a147fb6406b7f"
+          },
+          {
+            "source_id": "FISRC-b86e0fbe62dfd3dc",
+            "source_url": "https://www.mexc.com/news/996087",
+            "source_title": "OpenAI Closes $122B Funding Round, Hits $852B Valuation as AI Infrastructure Race Intensifies | MEXC News",
+            "source_content_hash": "4e51c91e5fc7160c",
+            "quote": "The funding round was anchored by Amazon, NVIDIA, SoftBank, and Microsoft.",
+            "quote_hash": "7c6f47d89b7c9809561c9ea57516ce95ce2adcdcf24a1ce406d190ac388ce680"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f01888179df28356",
+        "funding_insight_id": "FI-9c3c02658ff94312",
+        "event_ids": [
+          "EV-cded77b1de2db61a"
+        ],
+        "company_entity_id": "EN-a83a3af1a4866fd5",
+        "company_canonical_entity_id": "",
+        "company_name": "Advanced Machine Intelligence Labs (AMI Labs)",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "10.3亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1030000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10.3 亿美元"
+        },
+        "announced_at": "2026-03-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6c35525e379488bf",
+            "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
+            "source_title": "AMI Labs 获 1BN 美元种子轮融资，用于构建世界模型",
+            "source_content_hash": "adc0cc9ffe3c9dd0",
+            "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance",
+            "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c4150ccdeba48363",
+        "funding_insight_id": "FI-352a7cfb23508f3e",
+        "event_ids": [
+          "EV-31df816db86db282"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "G轮",
+        "round_code": "series_g",
+        "round_original": "Series G",
+        "amount_original": "$30 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 亿美元"
+        },
+        "announced_at": "2026-02-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b58bb99dfec2e318",
+            "source_url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
+            "source_title": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation \\ Anthropic",
+            "source_content_hash": "c231466686007dd5",
+            "quote": "This round also includes a portion of the previously announced investments from Microsoft and NVIDIA.",
+            "quote_hash": "635e438e7bd38921cfa2ae7869a8f79b29944b74f036ad7ced7b851de3e986af"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e9cdf1c221601a71",
+        "funding_insight_id": "FI-1cf34218733257fd",
+        "event_ids": [
+          "EV-85506f9f86779a6d"
+        ],
+        "company_entity_id": "EN-c04bd5ebd10ab696",
+        "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "company_name": "Mistral AI",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "约17亿欧元（约20亿美元）",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 1700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 17 亿欧元"
+        },
+        "announced_at": "2025-09-09",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "既有投资方（本轮参投）",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8d74a5f6eac0fc90",
+            "source_url": "https://aibusiness.com/generative-ai/european-ai-startup-mistral-ai-secures-2b-in-funding",
+            "source_title": "European AI startup Mistral AI secures $2B in funding",
+            "source_content_hash": "a710989bdebc7feb",
+            "quote": "existing investors such as Nvidia, General Catalyst and Index Ventures participated",
+            "quote_hash": "62fc95ba91a9ff49ef0c6eb3f17c1494a2a8747aa90c11a6b4dcd719dd2de14e"
+          },
+          {
+            "source_id": "FISRC-69c99e24132a43e4",
+            "source_url": "https://ae.marketscreener.com/news/asml-becomes-mistral-ai-s-top-shareholder-after-leading-latest-funding-round-sources-say-ce7d59ded981ff23",
+            "source_title": "Exclusive-ASML becomes Mistral AI's top shareholder after leading latest funding round, sources say | MarketScreener UAE Emirates",
+            "source_content_hash": "1320f5cb146361b9",
+            "quote": "Mistral, backed by Nvidia, was valued at more than $6 billion after its Series B funding round last year",
+            "quote_hash": "7a5ad182a8ed119b5917ef5b180d84cee03711da1e8c7c006ab23d7b242dba52"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-09d3aaaafa6cdabc",
+        "source_url": "https://www.recall.it/summary/artificial-intelligence/how-elorian-ai-pulled-off-a-dollar300m-pre-seed-valuation-with-andrew-dai",
+        "source_title": "How Elorian AI pulled off a $300M pre-seed valuation with Andrew Dai | AI YouTube Summary | TechCrunch | Recall",
+        "source_content_hash": "7b935e4006e94036",
+        "quote": "attracting high‑profile investors such as Menlo Ventures, Nvidia, and Jeff Dean",
+        "quote_hash": "ebeaf596ca305a06070fb1ec2843b8ede18bcdeb117f767b82d14c002579f478"
+      },
+      {
+        "source_id": "FISRC-9af7e6a4d7b3d5e7",
+        "source_url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia",
+        "source_title": "巴黎AI语音初创Gradium获1亿美元种子轮融资，Nvidia参投",
+        "source_content_hash": "84b42b7082dca9a3",
+        "quote": "Gradium, a Paris-based startup that offers voice AI models, reopened its seed round to new investors, including Nvidia, and has now raised $100 million total for the round",
+        "quote_hash": "88974e0ec721d570f03deedb200c82c245b210d6b47ad7b19dce3e08ebdb8337"
+      },
+      {
+        "source_id": "FISRC-6f0f12fb121fbd88",
+        "source_url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",
+        "source_title": "Neocloud Together AI 融资 8 亿美元，估值跃升至 83 亿美元",
+        "source_content_hash": "99e8e0f48b30eed2",
+        "quote": "a $102.5 million Series A funding round led by Kleiner Perkins with participation from Nvidia and Emergence Capital back in 2023",
+        "quote_hash": "7b81676f7e4adc6fbeac3fe3f8f408d50730ce1f0c1d13781a834105396c1ff1"
+      },
+      {
+        "source_id": "FISRC-7dcdc22c0b1702bf",
+        "source_url": "https://upscale.com/blogs/upscale-ai-adds-190-million-in-extension-to-series-a-reaching-half-billion-dollars-in-total-funding?from_theconsensus=1",
+        "source_title": "Upscale AI 完成1.9亿美元A轮扩展融资，总融资额达5亿美元",
+        "source_content_hash": "23145edb5fdd8d69",
+        "quote": "included funding from new investors, NVIDIA",
+        "quote_hash": "01ca536806a619814a2882d803ca99c3289af1412793cb24a145a73dbbe4834d"
+      },
+      {
+        "source_id": "FISRC-77f4599a4e868378",
+        "source_url": "https://artofthestart.com/upscale-ai-raises-190-million-nvidia/",
+        "source_title": "Upscale AI Raises $190 Million as Nvidia Joins the Round",
+        "source_content_hash": "fdc040e719a0dd75",
+        "quote": "Nvidia, whose chips Upscale's switches are built to serve, came in as a strategic investor.",
+        "quote_hash": "5b530773d850b3582be107fc429727bdd0268163c8607d976cb4530c8245fdd3"
+      },
+      {
+        "source_id": "FISRC-9b94f245fa27a161",
+        "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
+        "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
+        "source_content_hash": "e91739ca23d21469",
+        "quote": "with participation from NVIDIA",
+        "quote_hash": "84400f63319d5f56052b5b500762bd02f4e5d99e4bc24bf244f51904af4f1ad5"
+      },
+      {
+        "source_id": "FISRC-61b930049ee4e86e",
+        "source_url": "https://siliconangle.com/2026/05/13/recursive-superintelligence-raises-650m-build-self-improving-ai-models/",
+        "source_title": "Recursive Superintelligence raises $650M to build self-improving AI models - SiliconANGLE",
+        "source_content_hash": "926edc21ca4613eb",
+        "quote": "They were joined by Nvidia Corp. and Advanced Micro Devices Inc.’s venture capital arm.",
+        "quote_hash": "e27009a9dd08a65b25b7a316ddb093d3d3ba0b0cfe2445ed4d9e9b504c7901e3"
+      },
+      {
+        "source_id": "FISRC-0a52165fbfc8575b",
+        "source_url": "https://mlq.ai/news/elorian-raises-55m-seed-at-300m-valuation-for-visual-ai-before-shipping-a-product/",
+        "source_title": "Elorian Raises $55M Seed at $300M Valuation for Visual AI Before Shipping a Product | MLQ News",
+        "source_content_hash": "ae17cd699a04f8e6",
+        "quote": "with strategic backing from Nvidia",
+        "quote_hash": "78466cd846a34d989680d277ce53f4b62533494daf260e1278a883ee7570e994"
+      },
+      {
+        "source_id": "FISRC-1c40aad62f3bb1a3",
+        "source_url": "https://techcrunch.com/2026/07/16/how-a-former-deepmind-researcher-raised-at-a-300m-pre-seed-valuation-before-launching-a-product/",
+        "source_title": "前DeepMind研究员在推出产品前以3亿美元预种子轮估值融资",
+        "source_content_hash": "123ae92608b50da6",
+        "quote": "he prioritized strategic partners like Nvidia and Menlo Ventures",
+        "quote_hash": "3d0f04f1a750ae582fffb267db65cd04477c8a303f78a4bb73d5d01e7dbc6cd9"
+      },
+      {
+        "source_id": "FISRC-1e2b3bad243bd066",
+        "source_url": "https://yespress.io/openais-122-b-megaround",
+        "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
+        "source_content_hash": "494969b64dc816f3",
+        "quote": "Nvidia ($30 billion)",
+        "quote_hash": "16e389a54221d6db4d9015cc5bf31ea68b4d8505958c7f03d81a147fb6406b7f"
+      },
+      {
+        "source_id": "FISRC-b86e0fbe62dfd3dc",
+        "source_url": "https://www.mexc.com/news/996087",
+        "source_title": "OpenAI Closes $122B Funding Round, Hits $852B Valuation as AI Infrastructure Race Intensifies | MEXC News",
+        "source_content_hash": "4e51c91e5fc7160c",
+        "quote": "The funding round was anchored by Amazon, NVIDIA, SoftBank, and Microsoft.",
+        "quote_hash": "7c6f47d89b7c9809561c9ea57516ce95ce2adcdcf24a1ce406d190ac388ce680"
+      },
+      {
+        "source_id": "FISRC-6c35525e379488bf",
+        "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
+        "source_title": "AMI Labs 获 1BN 美元种子轮融资，用于构建世界模型",
+        "source_content_hash": "adc0cc9ffe3c9dd0",
+        "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance",
+        "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
+      },
+      {
+        "source_id": "FISRC-b58bb99dfec2e318",
+        "source_url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
+        "source_title": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation \\ Anthropic",
+        "source_content_hash": "c231466686007dd5",
+        "quote": "This round also includes a portion of the previously announced investments from Microsoft and NVIDIA.",
+        "quote_hash": "635e438e7bd38921cfa2ae7869a8f79b29944b74f036ad7ced7b851de3e986af"
+      },
+      {
+        "source_id": "FISRC-8d74a5f6eac0fc90",
+        "source_url": "https://aibusiness.com/generative-ai/european-ai-startup-mistral-ai-secures-2b-in-funding",
+        "source_title": "European AI startup Mistral AI secures $2B in funding",
+        "source_content_hash": "a710989bdebc7feb",
+        "quote": "existing investors such as Nvidia, General Catalyst and Index Ventures participated",
+        "quote_hash": "62fc95ba91a9ff49ef0c6eb3f17c1494a2a8747aa90c11a6b4dcd719dd2de14e"
+      },
+      {
+        "source_id": "FISRC-69c99e24132a43e4",
+        "source_url": "https://ae.marketscreener.com/news/asml-becomes-mistral-ai-s-top-shareholder-after-leading-latest-funding-round-sources-say-ce7d59ded981ff23",
+        "source_title": "Exclusive-ASML becomes Mistral AI's top shareholder after leading latest funding round, sources say | MarketScreener UAE Emirates",
+        "source_content_hash": "1320f5cb146361b9",
+        "quote": "Mistral, backed by Nvidia, was valued at more than $6 billion after its Series B funding round last year",
+        "quote_hash": "7a5ad182a8ed119b5917ef5b180d84cee03711da1e8c7c006ab23d7b242dba52"
+      }
+    ]
+  }
+}

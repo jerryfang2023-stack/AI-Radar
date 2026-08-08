@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-01aed44a3bc7c8",
+    "name": "360战投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-06-18",
+    "latest_disclosed_at": "2026-06-18",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-9f5acf76c28bbb0d",
+        "funding_insight_id": "FI-ec1ed99dffac2fd0",
+        "event_ids": [
+          "EV-56da7cceeebc8bcf"
+        ],
+        "company_entity_id": "EN-5aacd10b5dbfa7b7",
+        "company_canonical_entity_id": "EN-5aacd10b5dbfa7b7",
+        "company_name": "上海穹彻智能科技有限公司",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮融资",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿人民币–9 亿人民币"
+        },
+        "announced_at": "2026-06-18",
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-e3b51be471b79167",
+            "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",
+            "source_title": "锡创动态 | 穹彻智能完成新一轮融资，锡创投加码人工智能“大脑”赛道",
+            "source_content_hash": "6b768055188f3cb9061ad40773e551b420975d25beb5d6a0dfe2e06bbe6f89c0",
+            "quote": "历史投资方包括沙特阿美P7、红杉资本、阿里、360战投等",
+            "quote_hash": "51972a2bcdf7e26966adf9b94b89d74fbbcd82502e3fb422b66d9c4d7f848b3c"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-e3b51be471b79167",
+        "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",
+        "source_title": "锡创动态 | 穹彻智能完成新一轮融资，锡创投加码人工智能“大脑”赛道",
+        "source_content_hash": "6b768055188f3cb9061ad40773e551b420975d25beb5d6a0dfe2e06bbe6f89c0",
+        "quote": "历史投资方包括沙特阿美P7、红杉资本、阿里、360战投等",
+        "quote_hash": "51972a2bcdf7e26966adf9b94b89d74fbbcd82502e3fb422b66d9c4d7f848b3c"
+      }
+    ]
+  }
+}

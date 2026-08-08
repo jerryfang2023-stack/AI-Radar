@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-517883c02d5d50",
+    "name": "GIC",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2026-02-12",
+    "latest_disclosed_at": "2026-02-17",
+    "role_counts": {
+      "lead": 2
+    },
+    "round_codes": [
+      "series_d",
+      "series_g"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "name": "Anthropic"
+      },
+      {
+        "entity_id": "EN-e4540a7c8404b1be",
+        "canonical_entity_id": "",
+        "name": "Temporal Technologies"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-b33069ffbb563962",
+        "funding_insight_id": "FI-0aa1eca49e73b783",
+        "event_ids": [
+          "EV-3b40ec144e5db22c"
+        ],
+        "company_entity_id": "EN-e4540a7c8404b1be",
+        "company_canonical_entity_id": "",
+        "company_name": "Temporal Technologies",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$300 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿美元"
+        },
+        "announced_at": "2026-02-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "既有投资方，本轮参投；曾领投2025年10月二级交易",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-1f69885afd5fc439",
+            "source_url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies",
+            "source_title": "Temporal 完成 D 轮融资",
+            "source_content_hash": "74cb86598e6c9021",
+            "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
+            "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
+          },
+          {
+            "source_id": "FISRC-ecf89bd1daccaf39",
+            "source_url": "https://techstartups.com/2026/02/17/temporal-raises-300m-at-5b-valuation-to-solve-ais-reliability-problem-at-scale/",
+            "source_title": "Temporal raises $300M at $5B valuation to solve AI’s reliability problem at scale - Tech Startups",
+            "source_content_hash": "c17b523fcba76462",
+            "quote": "the $2.5 billion mark Temporal reached in October following a secondary transaction led by GIC, Singapore’s sovereign wealth fund",
+            "quote_hash": "029f05217f6a44225ee8f4a993fa2a0b518f21d763b4b22ae421775bf6ce23c8"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4e47d2f27bc688d1",
+        "funding_insight_id": "FI-352a7cfb23508f3e",
+        "event_ids": [
+          "EV-31df816db86db282"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "G轮",
+        "round_code": "series_g",
+        "round_original": "Series G",
+        "amount_original": "$30 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 亿美元"
+        },
+        "announced_at": "2026-02-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b58bb99dfec2e318",
+            "source_url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
+            "source_title": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation \\ Anthropic",
+            "source_content_hash": "c231466686007dd5",
+            "quote": "led by GIC and Coatue",
+            "quote_hash": "27b1fcdb8e8102afbf84113bae51103d064733269329486fc94fe8f01b33c8a6"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1f69885afd5fc439",
+        "source_url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies",
+        "source_title": "Temporal 完成 D 轮融资",
+        "source_content_hash": "74cb86598e6c9021",
+        "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
+        "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
+      },
+      {
+        "source_id": "FISRC-ecf89bd1daccaf39",
+        "source_url": "https://techstartups.com/2026/02/17/temporal-raises-300m-at-5b-valuation-to-solve-ais-reliability-problem-at-scale/",
+        "source_title": "Temporal raises $300M at $5B valuation to solve AI’s reliability problem at scale - Tech Startups",
+        "source_content_hash": "c17b523fcba76462",
+        "quote": "the $2.5 billion mark Temporal reached in October following a secondary transaction led by GIC, Singapore’s sovereign wealth fund",
+        "quote_hash": "029f05217f6a44225ee8f4a993fa2a0b518f21d763b4b22ae421775bf6ce23c8"
+      },
+      {
+        "source_id": "FISRC-b58bb99dfec2e318",
+        "source_url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
+        "source_title": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation \\ Anthropic",
+        "source_content_hash": "c231466686007dd5",
+        "quote": "led by GIC and Coatue",
+        "quote_hash": "27b1fcdb8e8102afbf84113bae51103d064733269329486fc94fe8f01b33c8a6"
+      }
+    ]
+  }
+}

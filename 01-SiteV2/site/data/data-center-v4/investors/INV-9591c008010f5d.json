@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-9591c008010f5d",
+    "name": "Charlie Songhurst",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2026-05-20",
+    "latest_disclosed_at": "2026-06-30",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "other_current_round": 2
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-ee00b93bf0631b3e",
+        "canonical_entity_id": "",
+        "name": "Monogram AI, Inc."
+      },
+      {
+        "entity_id": "EN-8bb4f88fd3cf9b29",
+        "canonical_entity_id": "",
+        "name": "Structured AI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-18e36133227f3293",
+        "funding_insight_id": "FI-12131c1300a2d205",
+        "event_ids": [
+          "EV-fab81bddb815267b"
+        ],
+        "company_entity_id": "EN-ee00b93bf0631b3e",
+        "company_canonical_entity_id": "",
+        "company_name": "Monogram AI, Inc.",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$40M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-06-30",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮天使投资人",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-907e4297862ddd8c",
+            "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
+            "source_title": "Monogram 获 4000 万美元种子轮融资",
+            "source_content_hash": "3a584a627e1535ff",
+            "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst",
+            "quote_hash": "49b9176525c9b670b8fddd7882264ccd675914d00fe270263b9fd54c278087c0"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e66ae3d956718a56",
+        "funding_insight_id": "FI-82d1e99998c69025",
+        "event_ids": [
+          "EV-40d196865997025c"
+        ],
+        "company_entity_id": "EN-8bb4f88fd3cf9b29",
+        "company_canonical_entity_id": "",
+        "company_name": "Structured AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$4.2M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4200000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "420 万美元"
+        },
+        "announced_at": "2026-06-11",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮天使投资人",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-7568031d64eac5fa",
+            "source_url": "https://getstructured.ai/blog/structured-ai-4-2m-seed-round/",
+            "source_title": "Structured AI 获420万美元种子轮融资，为建筑世界构建质量层",
+            "source_content_hash": "77fbdb6058a98d5e",
+            "quote": "plus angels including Charlie Songhurst",
+            "quote_hash": "f97ead507ca196a3678636f319271daaf2c41fbaebdce21a884dc623ce286875"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-6e3768d3cf8a5dbe",
+        "funding_insight_id": "FI-664cc90f57688153",
+        "event_ids": [
+          "EV-44a4e92c03a31ab1"
+        ],
+        "company_entity_id": "EN-ce65fa41b16c33ff",
+        "company_canonical_entity_id": "",
+        "company_name": "Viktor",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "€64.7 million ($75 million)",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 64700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6470 万欧元"
+        },
+        "announced_at": "2026-05-20",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce83b857608dabeb",
+            "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",
+            "source_title": "AI 同事初创公司 Viktor 在推出后 10 周内达到 1290 万欧元营收运行率，随后完成 6470 万欧元 A 轮融资",
+            "source_content_hash": "bc6dd70ea1b6ac85",
+            "quote": "Charlie Songhurst",
+            "quote_hash": "7622a27adea8208c75f3124304c90c36d25b963950a2d79df11f56f2fa3c23ae"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-907e4297862ddd8c",
+        "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
+        "source_title": "Monogram 获 4000 万美元种子轮融资",
+        "source_content_hash": "3a584a627e1535ff",
+        "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst",
+        "quote_hash": "49b9176525c9b670b8fddd7882264ccd675914d00fe270263b9fd54c278087c0"
+      },
+      {
+        "source_id": "FISRC-7568031d64eac5fa",
+        "source_url": "https://getstructured.ai/blog/structured-ai-4-2m-seed-round/",
+        "source_title": "Structured AI 获420万美元种子轮融资，为建筑世界构建质量层",
+        "source_content_hash": "77fbdb6058a98d5e",
+        "quote": "plus angels including Charlie Songhurst",
+        "quote_hash": "f97ead507ca196a3678636f319271daaf2c41fbaebdce21a884dc623ce286875"
+      },
+      {
+        "source_id": "FISRC-ce83b857608dabeb",
+        "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",
+        "source_title": "AI 同事初创公司 Viktor 在推出后 10 周内达到 1290 万欧元营收运行率，随后完成 6470 万欧元 A 轮融资",
+        "source_content_hash": "bc6dd70ea1b6ac85",
+        "quote": "Charlie Songhurst",
+        "quote_hash": "7622a27adea8208c75f3124304c90c36d25b963950a2d79df11f56f2fa3c23ae"
+      }
+    ]
+  }
+}

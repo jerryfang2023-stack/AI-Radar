@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-f5a098cd970d72",
+    "name": "上海国投先导人工智能产业母基金",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "government_fund",
+    "investor_kind_label": "政府或主权基金",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2024-09-12",
+    "latest_disclosed_at": "2024-09-12",
+    "role_counts": {
+      "co_lead": 1
+    },
+    "round_codes": [
+      "multi_round"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-721eb3fd31f8e1f6",
+        "canonical_entity_id": "EN-721eb3fd31f8e1f6",
+        "name": "上海壁仞科技股份有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-78a2dd8f33279825",
+        "funding_insight_id": "FI-17403f62777b52b5",
+        "event_ids": [
+          "EV-7a44a47bf36780d2"
+        ],
+        "company_entity_id": "EN-721eb3fd31f8e1f6",
+        "company_canonical_entity_id": "EN-721eb3fd31f8e1f6",
+        "company_name": "上海壁仞科技股份有限公司",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "超过50亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 5000000000,
+          "min_value": 5000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 50 亿人民币"
+        },
+        "announced_at": "2024-09-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-8a38ca95373e5124",
+            "source_url": "https://www.eefocus.com/article/1814720.html",
+            "source_title": "上海GPU独角兽，IPO前再融资 - 与非网",
+            "source_content_hash": "a154370b08f3f0d0",
+            "quote": "上海国投先导 人工智能 产业母基金联合领投国内GPU 芯片企业 壁仞科技",
+            "quote_hash": "ba9bb2957eeb356c61db29a1d695d506f695179767076f4c4c058b06b667a98e"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-8a38ca95373e5124",
+        "source_url": "https://www.eefocus.com/article/1814720.html",
+        "source_title": "上海GPU独角兽，IPO前再融资 - 与非网",
+        "source_content_hash": "a154370b08f3f0d0",
+        "quote": "上海国投先导 人工智能 产业母基金联合领投国内GPU 芯片企业 壁仞科技",
+        "quote_hash": "ba9bb2957eeb356c61db29a1d695d506f695179767076f4c4c058b06b667a98e"
+      }
+    ]
+  }
+}

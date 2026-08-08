@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-fad48ef331fa50",
+    "name": "Schematic Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-07-29",
+    "latest_disclosed_at": "2026-07-29",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-34f427f1d5bdcde7",
+        "funding_insight_id": "FI-0d10135597ba793d",
+        "event_ids": [
+          "EV-39b075c62ba4e927"
+        ],
+        "company_entity_id": "EN-f9075cc99990820a",
+        "company_canonical_entity_id": "EN-f9075cc99990820a",
+        "company_name": "P-1 AI, Inc.",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$50 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-07-29",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-699e40f6a1ab35eb",
+            "source_url": "https://theaiinsider.tech/2025/04/28/p-1-ai-raises-23-million-in-seed-funding-to-develop-engineering-agi-archie/",
+            "source_title": "P-1 AI Raises $23 Million in Seed Funding to Develop Engineering AGI 'Archie'",
+            "source_content_hash": "2431ca9f7b3677f6",
+            "quote": "Investors in P-1 AI’s $23 million seed round led by Radical Ventures included Village Global, Schematic Ventures, Lerer Hippeau",
+            "quote_hash": "fd51126157c8363facbf6b8784e01eb012844c0661851df146d86665d8dd0f4f"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-699e40f6a1ab35eb",
+        "source_url": "https://theaiinsider.tech/2025/04/28/p-1-ai-raises-23-million-in-seed-funding-to-develop-engineering-agi-archie/",
+        "source_title": "P-1 AI Raises $23 Million in Seed Funding to Develop Engineering AGI 'Archie'",
+        "source_content_hash": "2431ca9f7b3677f6",
+        "quote": "Investors in P-1 AI’s $23 million seed round led by Radical Ventures included Village Global, Schematic Ventures, Lerer Hippeau",
+        "quote_hash": "fd51126157c8363facbf6b8784e01eb012844c0661851df146d86665d8dd0f4f"
+      }
+    ]
+  }
+}

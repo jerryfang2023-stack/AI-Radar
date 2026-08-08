@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.2",
+    "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-06-05",
     "generated_at": "2026-07-26T15:09:21.522Z",
     "trigger": "verified_daily_funding_events",
@@ -19,7 +19,7 @@
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.2",
+      "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-6c2faabba03d416d",
       "triggered_by_event_id": "EV-6ae3594aadfcd3d8",
       "as_of_date": "2026-06-05",
@@ -222,7 +222,28 @@
           }
         ],
         "investor_disclosure_status": "disclosed",
-        "risk_markers": []
+        "risk_markers": [],
+        "amount_original": "1000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "total_raised_original": "1350万美元",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 13500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1350 万美元"
+        },
+        "disclosure_status": "disclosed"
       },
       "products": [
         {

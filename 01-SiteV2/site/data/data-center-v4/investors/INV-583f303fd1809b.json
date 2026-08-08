@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-583f303fd1809b",
+    "name": "三七互娱",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-05-07",
+    "latest_disclosed_at": "2026-07-02",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "pre_series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-634537cdabd4e325",
+        "canonical_entity_id": "",
+        "name": "苏州乐享智能科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-adff59c95ababccb",
+        "funding_insight_id": "FI-536d2c4da2134ba0",
+        "event_ids": [
+          "EV-d3fcd1ea4d9baf47"
+        ],
+        "company_entity_id": "EN-634537cdabd4e325",
+        "company_canonical_entity_id": "",
+        "company_name": "苏州乐享智能科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "近5亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 5 亿人民币"
+        },
+        "announced_at": "2026-07-02",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-670f261d0c740ea4",
+            "source_url": "https://www.cnfin.com/gs-lb/detail/20260702/4434609_1.html",
+            "source_title": "乐享科技完成近5亿元Pre-A轮融资 机器人订单逾3万台",
+            "source_content_hash": "62e2ce5bba0f19793e17ce12827afbfeab3186011072eff8b77ade4c444b2037",
+            "quote": "产业资方吉利资本、 三七互娱 ，元禾璞华跟投",
+            "quote_hash": "949e52ed7fc91c5c391dca3ae63929572d980eedeba18df216921656cc4e27f5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-93af81b6f2b2634b",
+        "funding_insight_id": "FI-f5103149f04ea6ed",
+        "event_ids": [
+          "EV-c5d7d88d1aef8edb"
+        ],
+        "company_entity_id": "EN-b5251b35f15bedc4",
+        "company_canonical_entity_id": "EN-b5251b35f15bedc4",
+        "company_name": "Moonshot AI",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮",
+        "amount_original": "约20亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 20 亿美元"
+        },
+        "announced_at": "2026-05-07",
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-5d82f5dc9fc96ce5",
+            "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
+            "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
+            "source_content_hash": "eeb091dd8db852e6",
+            "quote": "2024年8月B轮，超3亿美元 ，估值33亿美元，腾讯投资、高榕创投、阿里巴巴、三七互娱等",
+            "quote_hash": "3aad06c0a7e15ca660730f6ef16dfcbd46ff62cb98b27c161781e75b327273f2"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-670f261d0c740ea4",
+        "source_url": "https://www.cnfin.com/gs-lb/detail/20260702/4434609_1.html",
+        "source_title": "乐享科技完成近5亿元Pre-A轮融资 机器人订单逾3万台",
+        "source_content_hash": "62e2ce5bba0f19793e17ce12827afbfeab3186011072eff8b77ade4c444b2037",
+        "quote": "产业资方吉利资本、 三七互娱 ，元禾璞华跟投",
+        "quote_hash": "949e52ed7fc91c5c391dca3ae63929572d980eedeba18df216921656cc4e27f5"
+      },
+      {
+        "source_id": "FISRC-5d82f5dc9fc96ce5",
+        "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
+        "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
+        "source_content_hash": "eeb091dd8db852e6",
+        "quote": "2024年8月B轮，超3亿美元 ，估值33亿美元，腾讯投资、高榕创投、阿里巴巴、三七互娱等",
+        "quote_hash": "3aad06c0a7e15ca660730f6ef16dfcbd46ff62cb98b27c161781e75b327273f2"
+      }
+    ]
+  }
+}

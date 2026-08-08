@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-0add69b34512de",
+    "name": "Hummingbird Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-08-03",
+    "latest_disclosed_at": "2026-08-03",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-60fb594d47e81135",
+        "funding_insight_id": "FI-392e264418bb0c75",
+        "event_ids": [
+          "EV-4d2852e1694b2818"
+        ],
+        "company_entity_id": "EN-cc2ab268105df889",
+        "company_canonical_entity_id": "",
+        "company_name": "Olix Computing Ltd.",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$312 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 312000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.12 亿美元"
+        },
+        "announced_at": "2026-08-03",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次领投方，本轮追加投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-88b7fd63299c3c59",
+            "source_url": "https://siliconangle.com/2026/02/11/photonic-ai-chip-startup-olix-nabs-220m-investment",
+            "source_title": "Photonic AI chip startup OLIX nabs $220M investment - SiliconANGLE",
+            "source_content_hash": "7a2d724e19fa7bbd",
+            "quote": "the investment was led by Belgian venture capital firm Hummingbird Ventures.",
+            "quote_hash": "631a5a22eca6176d2436f5cd36c7f4dc65443e6ad211fb7071bb603f0997e84f"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-88b7fd63299c3c59",
+        "source_url": "https://siliconangle.com/2026/02/11/photonic-ai-chip-startup-olix-nabs-220m-investment",
+        "source_title": "Photonic AI chip startup OLIX nabs $220M investment - SiliconANGLE",
+        "source_content_hash": "7a2d724e19fa7bbd",
+        "quote": "the investment was led by Belgian venture capital firm Hummingbird Ventures.",
+        "quote_hash": "631a5a22eca6176d2436f5cd36c7f4dc65443e6ad211fb7071bb603f0997e84f"
+      }
+    ]
+  }
+}

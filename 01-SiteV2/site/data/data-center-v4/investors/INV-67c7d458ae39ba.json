@@ -1,0 +1,273 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-67c7d458ae39ba",
+    "name": "ICONIQ",
+    "aliases": [
+      "Iconiq"
+    ],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 3,
+    "first_disclosed_at": "2025-09-02",
+    "latest_disclosed_at": "2026-07-23",
+    "role_counts": {
+      "co_lead": 1,
+      "lead": 2,
+      "participant": 1
+    },
+    "round_codes": [
+      "series_a",
+      "series_f",
+      "series_g"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "name": "Anthropic"
+      },
+      {
+        "entity_id": "EN-382635c9325bf327",
+        "canonical_entity_id": "",
+        "name": "Paper"
+      },
+      {
+        "entity_id": "EN-fa373257792c6b9b",
+        "canonical_entity_id": "EN-fa373257792c6b9b",
+        "name": "Prime Intellect"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-b263420b0363861d",
+        "funding_insight_id": "FI-cb627f50984e7151",
+        "event_ids": [
+          "EV-136b2edc9b9f3be8",
+          "EV-3fb827f44ea109de"
+        ],
+        "company_entity_id": "EN-382635c9325bf327",
+        "company_canonical_entity_id": "",
+        "company_name": "Paper",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$34 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 34000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3400 万美元"
+        },
+        "announced_at": "2026-07-23",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-6be00539e7d0e25e",
+            "source_url": "https://startupfortune.com/paper-raised-34m-on-the-exact-thesis-that-wiped-out-half-of-figmas-market-cap/",
+            "source_title": "Paper 基于导致 Figma 市值腰斩的同一论点融资 3400 万美元",
+            "source_content_hash": "e33f25fc65f5596d",
+            "quote": "The round was led by Accel and ICONIQ",
+            "quote_hash": "88673e0bebde67d4cde3d38c1274f3a1e56f062d6a44aa252cf97d0d64b83014"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0077090f737204bb",
+        "funding_insight_id": "FI-eb27063b86f12aff",
+        "event_ids": [
+          "EV-463cb26b5e03c7f7"
+        ],
+        "company_entity_id": "EN-fa373257792c6b9b",
+        "company_canonical_entity_id": "EN-fa373257792c6b9b",
+        "company_name": "Prime Intellect",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$130 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 130000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.3 亿美元"
+        },
+        "announced_at": "2026-07-08",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-afe2544836558c64",
+            "source_url": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
+            "source_title": "Prime Intellect raises $130M Series A to help enterprises build their own AI agents | TechCrunch",
+            "source_content_hash": "596e7c850e10c828",
+            "quote": "with participation from Nvidia Ventures, Intel Capital, Dell Technologies Capital, Iconiq",
+            "quote_hash": "6a7477041cd494d83150796fbd2093c39aaccedac373420823ec20e430b193a7"
+          },
+          {
+            "source_id": "FISRC-9e20328431888381",
+            "source_url": "https://radical.vc/prime-intellect-owning-the-learning-loop/",
+            "source_title": "Prime Intellect: Owning the Learning Loop - Radical Ventures",
+            "source_content_hash": "13090ff8894a6511",
+            "quote": "joined by NVIDIA Ventures, Intel Capital, Dell Technologies Capital, and ICONIQ",
+            "quote_hash": "afbb1e05a4c50f5ca5fccb52cdf2d9a9c74ffd74b2445d88e54af6e9a3587138"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d356b1690ac83352",
+        "funding_insight_id": "FI-352a7cfb23508f3e",
+        "event_ids": [
+          "EV-31df816db86db282"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "G轮",
+        "round_code": "series_g",
+        "round_original": "Series G",
+        "amount_original": "$30 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 亿美元"
+        },
+        "announced_at": "2026-02-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b58bb99dfec2e318",
+            "source_url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
+            "source_title": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation \\ Anthropic",
+            "source_content_hash": "c231466686007dd5",
+            "quote": "co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX",
+            "quote_hash": "6019b747ab0685aaf7a1a94e528c3bf9e16d73fee9f4b55ee910413ab94d63a7"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5f32e28ca174603d",
+        "funding_insight_id": "FI-0312b291d6672487",
+        "event_ids": [
+          "EV-201b25d4f3cf696a"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$13 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 13000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "130 亿美元"
+        },
+        "announced_at": "2025-09-02",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5289e6345684ca4",
+            "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
+            "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
+            "source_content_hash": "e918313869a22b8d",
+            "quote": "Anthropic announced a $13 billion Series F round on September 2 that valued the company at $183 billion. The round was led by Iconiq, Fidelity, and Lightspeed.",
+            "quote_hash": "dce639bc69cadea033e718af0a0afa1978ea9dbfacc2ce9e42b084fc7970c741"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-6be00539e7d0e25e",
+        "source_url": "https://startupfortune.com/paper-raised-34m-on-the-exact-thesis-that-wiped-out-half-of-figmas-market-cap/",
+        "source_title": "Paper 基于导致 Figma 市值腰斩的同一论点融资 3400 万美元",
+        "source_content_hash": "e33f25fc65f5596d",
+        "quote": "The round was led by Accel and ICONIQ",
+        "quote_hash": "88673e0bebde67d4cde3d38c1274f3a1e56f062d6a44aa252cf97d0d64b83014"
+      },
+      {
+        "source_id": "FISRC-afe2544836558c64",
+        "source_url": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
+        "source_title": "Prime Intellect raises $130M Series A to help enterprises build their own AI agents | TechCrunch",
+        "source_content_hash": "596e7c850e10c828",
+        "quote": "with participation from Nvidia Ventures, Intel Capital, Dell Technologies Capital, Iconiq",
+        "quote_hash": "6a7477041cd494d83150796fbd2093c39aaccedac373420823ec20e430b193a7"
+      },
+      {
+        "source_id": "FISRC-9e20328431888381",
+        "source_url": "https://radical.vc/prime-intellect-owning-the-learning-loop/",
+        "source_title": "Prime Intellect: Owning the Learning Loop - Radical Ventures",
+        "source_content_hash": "13090ff8894a6511",
+        "quote": "joined by NVIDIA Ventures, Intel Capital, Dell Technologies Capital, and ICONIQ",
+        "quote_hash": "afbb1e05a4c50f5ca5fccb52cdf2d9a9c74ffd74b2445d88e54af6e9a3587138"
+      },
+      {
+        "source_id": "FISRC-b58bb99dfec2e318",
+        "source_url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
+        "source_title": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation \\ Anthropic",
+        "source_content_hash": "c231466686007dd5",
+        "quote": "co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX",
+        "quote_hash": "6019b747ab0685aaf7a1a94e528c3bf9e16d73fee9f4b55ee910413ab94d63a7"
+      },
+      {
+        "source_id": "FISRC-c5289e6345684ca4",
+        "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
+        "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
+        "source_content_hash": "e918313869a22b8d",
+        "quote": "Anthropic announced a $13 billion Series F round on September 2 that valued the company at $183 billion. The round was led by Iconiq, Fidelity, and Lightspeed.",
+        "quote_hash": "dce639bc69cadea033e718af0a0afa1978ea9dbfacc2ce9e42b084fc7970c741"
+      }
+    ]
+  }
+}

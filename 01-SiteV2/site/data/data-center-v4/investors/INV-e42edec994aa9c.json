@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-e42edec994aa9c",
+    "name": "Amazon",
+    "aliases": [],
+    "canonical_entity_id": "EN-cbc62794911ff31b",
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2025-03-03",
+    "latest_disclosed_at": "2026-06-17",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "lead": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "series_b",
+      "series_f"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "FICO-7e1d6c73932aa9b0",
+        "canonical_entity_id": "",
+        "name": "Odyssey ML"
+      },
+      {
+        "entity_id": "EN-7d3194f79e645c42",
+        "canonical_entity_id": "EN-7d3194f79e645c42",
+        "name": "OpenAI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-c66e90d747c40a49",
+        "funding_insight_id": "FI-479f9d5c1123dba2",
+        "event_ids": [
+          "EV-a00763037a94d512"
+        ],
+        "company_entity_id": "FICO-7e1d6c73932aa9b0",
+        "company_canonical_entity_id": "",
+        "company_name": "Odyssey ML",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "3.1亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 310000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.1 亿美元"
+        },
+        "announced_at": "2026-06-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e94365d0212a78f3",
+            "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
+            "source_title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
+            "source_content_hash": "75587989c4b9271c",
+            "quote": "with Amazon, AMD Ventures, GV, and others participating",
+            "quote_hash": "a36a967aacd4c90a1561022a9dc76b3a0a4d1cf9bc904ad059b99a95d150543b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b643389f31d4faa8",
+        "funding_insight_id": "FI-b76fffbf5d0d91bd",
+        "event_ids": [
+          "EV-d4e44892226be468"
+        ],
+        "company_entity_id": "EN-7d3194f79e645c42",
+        "company_canonical_entity_id": "EN-7d3194f79e645c42",
+        "company_name": "OpenAI",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$1220亿",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 122000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1220 亿美元"
+        },
+        "announced_at": "2026-03-31",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b86e0fbe62dfd3dc",
+            "source_url": "https://www.mexc.com/news/996087",
+            "source_title": "OpenAI Closes $122B Funding Round, Hits $852B Valuation as AI Infrastructure Race Intensifies | MEXC News",
+            "source_content_hash": "4e51c91e5fc7160c",
+            "quote": "The funding round was anchored by Amazon, NVIDIA, SoftBank, and Microsoft.",
+            "quote_hash": "7c6f47d89b7c9809561c9ea57516ce95ce2adcdcf24a1ce406d190ac388ce680"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0a8c4d1c6f6d3d8c",
+        "funding_insight_id": "FI-6601d010adc14dd0",
+        "event_ids": [
+          "EV-78a11d309c3d4e97"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic PBC",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "Series E",
+        "amount_original": "$3.5B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "35 亿美元"
+        },
+        "announced_at": "2025-03-03",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-52917ea3c077fbf0",
+            "source_url": "https://techstartups.com/2025/03/04/amazon-backed-ai-startup-anthropic-hits-61-5b-valuation-after-3-5b-funding-round/",
+            "source_title": "Amazon-backed AI startup Anthropic hits $61.5B valuation after $3.5B funding round - Tech Startups",
+            "source_content_hash": "574df0fdc225fe9e",
+            "quote": "Amazon has also doubled down on its bet, announcing a $4 billion investment in Anthropic in November, bringing its total funding commitment to $8 billion.",
+            "quote_hash": "d80cb5ad1b5c00ed6444a5e1e4d7454b23b4d0e906de4d9d8275f1be5ec53c62"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-e94365d0212a78f3",
+        "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
+        "source_title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
+        "source_content_hash": "75587989c4b9271c",
+        "quote": "with Amazon, AMD Ventures, GV, and others participating",
+        "quote_hash": "a36a967aacd4c90a1561022a9dc76b3a0a4d1cf9bc904ad059b99a95d150543b"
+      },
+      {
+        "source_id": "FISRC-b86e0fbe62dfd3dc",
+        "source_url": "https://www.mexc.com/news/996087",
+        "source_title": "OpenAI Closes $122B Funding Round, Hits $852B Valuation as AI Infrastructure Race Intensifies | MEXC News",
+        "source_content_hash": "4e51c91e5fc7160c",
+        "quote": "The funding round was anchored by Amazon, NVIDIA, SoftBank, and Microsoft.",
+        "quote_hash": "7c6f47d89b7c9809561c9ea57516ce95ce2adcdcf24a1ce406d190ac388ce680"
+      },
+      {
+        "source_id": "FISRC-52917ea3c077fbf0",
+        "source_url": "https://techstartups.com/2025/03/04/amazon-backed-ai-startup-anthropic-hits-61-5b-valuation-after-3-5b-funding-round/",
+        "source_title": "Amazon-backed AI startup Anthropic hits $61.5B valuation after $3.5B funding round - Tech Startups",
+        "source_content_hash": "574df0fdc225fe9e",
+        "quote": "Amazon has also doubled down on its bet, announcing a $4 billion investment in Anthropic in November, bringing its total funding commitment to $8 billion.",
+        "quote_hash": "d80cb5ad1b5c00ed6444a5e1e4d7454b23b4d0e906de4d9d8275f1be5ec53c62"
+      }
+    ]
+  }
+}

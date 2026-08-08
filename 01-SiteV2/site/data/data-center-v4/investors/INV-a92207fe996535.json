@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-a92207fe996535",
+    "name": "道彤投资",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-07-03",
+    "latest_disclosed_at": "2026-07-03",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-0b5105dda4f43e6d",
+        "funding_insight_id": "FI-0d0e4d0d5b40a2c0",
+        "event_ids": [
+          "EV-ee38c30c00b2a754"
+        ],
+        "company_entity_id": "EN-2b60b46911fc1640",
+        "company_canonical_entity_id": "",
+        "company_name": "上海如身机器人科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "亿元级",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿人民币–10 亿人民币"
+        },
+        "announced_at": "2026-07-03",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使+轮独家投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-55f6c92661dafb0e",
+            "source_url": "https://www.linkedin.com/posts/pandayu_%E9%A6%96%E5%8F%91%E5%A6%82%E8%BA%AB%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AE%8C%E6%88%90%E6%95%B0%E5%8D%83%E4%B8%87%E5%85%83%E5%A4%A9%E4%BD%BF%E8%BD%AE%E8%9E%8D%E8%B5%84%E9%81%93%E5%BD%A4%E6%8A%95%E8%B5%84%E7%8B%AC%E5%AE%B6%E6%8A%95%E8%B5%84%E6%8E%A8%E5%8A%A8%E6%99%BA%E6%85%A7%E5%BA%B7%E5%85%BB%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%90%BD%E5%9C%B0%E5%BA%94%E7%94%A8-activity-7370976777080360960-4-90",
+            "source_title": "Rushen Robot raises tens of millions in angel+round financing from Daotong Investment | Panda Yu posted on the topic | LinkedIn",
+            "source_content_hash": "0d98b6fe45ed216a",
+            "quote": "如身 Rushen Robot has completed tens of millions of yuan in angel+round financing, with exclusive investment from 道彤 Daotong Investment",
+            "quote_hash": "469829d2bc68c5a880f5b355948c95f9db9d1c9d3eb953934e2b6f197a0b7f53"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-55f6c92661dafb0e",
+        "source_url": "https://www.linkedin.com/posts/pandayu_%E9%A6%96%E5%8F%91%E5%A6%82%E8%BA%AB%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AE%8C%E6%88%90%E6%95%B0%E5%8D%83%E4%B8%87%E5%85%83%E5%A4%A9%E4%BD%BF%E8%BD%AE%E8%9E%8D%E8%B5%84%E9%81%93%E5%BD%A4%E6%8A%95%E8%B5%84%E7%8B%AC%E5%AE%B6%E6%8A%95%E8%B5%84%E6%8E%A8%E5%8A%A8%E6%99%BA%E6%85%A7%E5%BA%B7%E5%85%BB%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%90%BD%E5%9C%B0%E5%BA%94%E7%94%A8-activity-7370976777080360960-4-90",
+        "source_title": "Rushen Robot raises tens of millions in angel+round financing from Daotong Investment | Panda Yu posted on the topic | LinkedIn",
+        "source_content_hash": "0d98b6fe45ed216a",
+        "quote": "如身 Rushen Robot has completed tens of millions of yuan in angel+round financing, with exclusive investment from 道彤 Daotong Investment",
+        "quote_hash": "469829d2bc68c5a880f5b355948c95f9db9d1c9d3eb953934e2b6f197a0b7f53"
+      }
+    ]
+  }
+}

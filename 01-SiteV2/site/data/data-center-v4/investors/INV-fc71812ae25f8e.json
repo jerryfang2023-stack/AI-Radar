@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-fc71812ae25f8e",
+    "name": "Kunal Shah",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-16",
+    "latest_disclosed_at": "2026-07-16",
+    "role_counts": {
+      "other_current_round": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-2a920347dfcf07a7",
+        "canonical_entity_id": "EN-2a920347dfcf07a7",
+        "name": "Aina"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-0d6c135f317a30c7",
+        "funding_insight_id": "FI-20e67383e8533b80",
+        "event_ids": [
+          "EV-02882e6f5e1902c6"
+        ],
+        "company_entity_id": "EN-2a920347dfcf07a7",
+        "company_canonical_entity_id": "EN-2a920347dfcf07a7",
+        "company_name": "Aina",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "550万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "550 万美元"
+        },
+        "announced_at": "2026-07-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮天使投资人",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-9e755507b523ddb2",
+            "source_url": "https://inc42.com/buzz/aina-raises-5-5-mn-from-info-edge-ventures-360-one-asset-to-build-ai-native-interfaces/",
+            "source_title": "Aina 从 Info Edge 等机构融资 550 万美元，用于构建 AI 硬件接口",
+            "source_content_hash": "495ca48cb14fa6d7",
+            "quote": "Angel investors included WhatsApp head Kunal Shah",
+            "quote_hash": "2ee6c270a9481b0c3ddc7a19bf2941b1f182dc0c7a41dfd89df46ff1fda97684"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-9e755507b523ddb2",
+        "source_url": "https://inc42.com/buzz/aina-raises-5-5-mn-from-info-edge-ventures-360-one-asset-to-build-ai-native-interfaces/",
+        "source_title": "Aina 从 Info Edge 等机构融资 550 万美元，用于构建 AI 硬件接口",
+        "source_content_hash": "495ca48cb14fa6d7",
+        "quote": "Angel investors included WhatsApp head Kunal Shah",
+        "quote_hash": "2ee6c270a9481b0c3ddc7a19bf2941b1f182dc0c7a41dfd89df46ff1fda97684"
+      }
+    ]
+  }
+}

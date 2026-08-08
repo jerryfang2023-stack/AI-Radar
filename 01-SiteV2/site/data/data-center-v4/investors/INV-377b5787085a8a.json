@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-377b5787085a8a",
+    "name": "Bloomberg Beta",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2023-04-27",
+    "latest_disclosed_at": "2023-04-27",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_b_extension"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-53b69ef92c836777",
+        "canonical_entity_id": "",
+        "name": "Replit"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-9b6d2c1739313917",
+        "funding_insight_id": "FI-c210fc9ab5481f28",
+        "event_ids": [
+          "EV-b31602193dbf4e08"
+        ],
+        "company_entity_id": "EN-53b69ef92c836777",
+        "company_canonical_entity_id": "",
+        "company_name": "Replit",
+        "round": "B轮扩展",
+        "round_code": "series_b_extension",
+        "round_original": "Series B extension",
+        "amount_original": "$97.4 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 97400000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9740 万美元"
+        },
+        "announced_at": "2023-04-27",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9b0f32fe01d091cc",
+            "source_url": "https://techcrunch.com/2023/04/27/replit-funding-100m-generative-ai/",
+            "source_title": "Replit，开发GitHub Copilot竞品的网页IDE，获1亿美元融资",
+            "source_content_hash": "3b03664369ea0afe",
+            "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer.",
+            "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-9b0f32fe01d091cc",
+        "source_url": "https://techcrunch.com/2023/04/27/replit-funding-100m-generative-ai/",
+        "source_title": "Replit，开发GitHub Copilot竞品的网页IDE，获1亿美元融资",
+        "source_content_hash": "3b03664369ea0afe",
+        "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer.",
+        "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
+      }
+    ]
+  }
+}

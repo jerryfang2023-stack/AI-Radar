@@ -35,17 +35,17 @@ function parseCurrentVersions() {
 
 const versions = parseCurrentVersions();
 const expected = {
-  release: "V4.6.1-china-market-scope",
-  packageVersion: "4.6.1",
-  productVersion: "V4.6",
-  gitTag: "v4.6.1-china-market-scope",
-  site: "SITE-V4.4.1-china-market-scope",
+  release: "V4.7.0-investment-institution-library",
+  packageVersion: "4.7.0",
+  productVersion: "V4.7",
+  gitTag: "v4.7.0-investment-institution-library",
+  site: "SITE-V4.5.0-investment-institution-library",
   ops: "OPS-V2.0.0-v4-telemetry",
   reports: "REPORTS-V1.2.0-research-hub",
   opportunity: "OMAP-V2.0.0-v4-evidence",
   trendRadar: "TRADAR-V1.1.0-tag-v4-1",
   taxonomy: "TAG-V4.1",
-  fundingInsights: "FUNDING-INSIGHT-V1.2.0-market-category",
+  fundingInsights: "FUNDING-INSIGHT-V1.4.0-financing-fields",
   person: "PERSON-REVIEW-V1.1",
   skillStore: "v2.0.1 GPT-5.6 full-audit corrections",
   vault: "GUANLAN-VAULT-V1.2-private-evidence-linked (external)",
@@ -70,7 +70,7 @@ const ledgerChecks = [
   ["Data Center supervisor Skill", "guanlan-data-center-supervisor v1.3.1"],
   ["Opportunity Map updater Skill", "guanlan-opportunity-radar-updater v1.5.0"],
   ["Trend Radar updater Skill", "guanlan-trend-radar-updater v1.1.0"],
-  ["Funding Insight generator Skill", "guanlan-funding-insight-generator v1.5.0"],
+  ["Funding Insight generator Skill", "guanlan-funding-insight-generator v1.6.0"],
   ["First-Line Viewpoints monitor Skill", "guanlan-first-line-viewpoints-monitor v1.2.1"],
   ["Community Intelligence monitor Skill", "guanlan-community-intelligence-monitor v1.1.0"],
   ["Follow-builders support Skill", "follow-builders v2.1.1"],
@@ -183,7 +183,7 @@ const skillVersions = [
   ["agent-workflow/skills/guanlan-first-line-viewpoints-monitor/SKILL.md", 'version: "1.2.1"'],
   ["agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md", 'version: "1.1.0"'],
   ["agent-workflow/skills/follow-builders/SKILL.md", 'version: "2.1.1"'],
-  ["agent-workflow/skills/guanlan-funding-insight-generator/SKILL.md", 'version: "1.5.0"'],
+  ["agent-workflow/skills/guanlan-funding-insight-generator/SKILL.md", 'version: "1.6.0"'],
   ["agent-workflow/skills/guanlan-weekly-report-page-generator/SKILL.md", 'version: "1.2.0"'],
   ["agent-workflow/skills/guanlan-monthly-business-structure-report/SKILL.md", 'version: "1.0.0"'],
   ["agent-workflow/skills/guanlan-skill-editor/SKILL.md", 'version: "2.0.1"'],
@@ -201,7 +201,7 @@ rejectText("agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md", "
 rejectText("agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md", "current SITE-V3.4.5", "current V3 site claim");
 expectText("agent-workflow/product/column-tag-taxonomy-v1.json", '"canonical_fact_input": false');
 expectText("context/frontstage-page-contracts.md", expected.site, "current SITE version");
-expectText("context/project-memory.md", "SITE-V4.4.1", "current SITE major/minor version");
+expectText("context/project-memory.md", "SITE-V4.5.0", "current SITE major/minor version");
 rejectText("context/frontstage-page-contracts.md", "The legacy Business Signals Card set remains an internal compatibility dataset", "active Card compatibility contract");
 rejectText("context/project-memory.md", "Business Signals is an internal compatibility chain for Raw / Pool / Card", "active Raw/Pool/Card operating model");
 

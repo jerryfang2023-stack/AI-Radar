@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-92279dddba99eb",
+    "name": "Ubiquity Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-08-05",
+    "latest_disclosed_at": "2026-08-05",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-4f137a30a3e526d6",
+        "funding_insight_id": "FI-db2bd30618100f0d",
+        "event_ids": [
+          "EV-60f219702a66bf38"
+        ],
+        "company_entity_id": "EN-6861f63c27eb0ada",
+        "company_canonical_entity_id": "",
+        "company_name": "WindBorne Systems",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$37 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 37000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3700 万美元"
+        },
+        "announced_at": "2026-08-05",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮参投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-08b1a89e7ab437e8",
+            "source_url": "https://susaventures.substack.com/p/our-investment-in-windborne-systems-c6dcc0c3519d",
+            "source_title": "Our Investment in WindBorne Systems - Susa Ventures",
+            "source_content_hash": "532b997d18cd6e06",
+            "quote": "with participation from Khosla Ventures, Pear VC, Ubiquity Ventures, and Harvest Ventures",
+            "quote_hash": "b6fa3131e1a1b22027a2fbfe50b77482a8b6c98df355475896b39b6b285d4279"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-08b1a89e7ab437e8",
+        "source_url": "https://susaventures.substack.com/p/our-investment-in-windborne-systems-c6dcc0c3519d",
+        "source_title": "Our Investment in WindBorne Systems - Susa Ventures",
+        "source_content_hash": "532b997d18cd6e06",
+        "quote": "with participation from Khosla Ventures, Pear VC, Ubiquity Ventures, and Harvest Ventures",
+        "quote_hash": "b6fa3131e1a1b22027a2fbfe50b77482a8b6c98df355475896b39b6b285d4279"
+      }
+    ]
+  }
+}

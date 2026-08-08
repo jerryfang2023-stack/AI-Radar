@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-f6606623879570",
+    "name": "Audacious Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-04-27",
+    "latest_disclosed_at": "2026-04-27",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-fb17253d7685fc8c",
+        "funding_insight_id": "FI-a308a87eb0e97da7",
+        "event_ids": [
+          "EV-dd3217aad32e6891"
+        ],
+        "company_entity_id": "EN-2f88f41306209dd7",
+        "company_canonical_entity_id": "",
+        "company_name": "Avoca AI",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "种子轮、A轮、B轮",
+        "amount_original": "超过1.25亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 125000000,
+          "min_value": 125000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1.25 亿美元"
+        },
+        "announced_at": "2026-04-27",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-3b2454278fe6d93e",
+            "source_url": "https://www.linkedin.com/posts/ccheng805_were-thrilled-to-announce-that-capital-49-activity-7454614909348229121-9ih0",
+            "source_title": "Capital 49 Backs Avoca in $125M Series B Raise",
+            "source_content_hash": "0eedb637d7c86cdc",
+            "quote": "Nakul Mandan ( Audacious Ventures )",
+            "quote_hash": "f6c1a9b70f1cf1a94a2b90e3b669e5099467dd2f337479640ccf3cc7d062fb02"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-3b2454278fe6d93e",
+        "source_url": "https://www.linkedin.com/posts/ccheng805_were-thrilled-to-announce-that-capital-49-activity-7454614909348229121-9ih0",
+        "source_title": "Capital 49 Backs Avoca in $125M Series B Raise",
+        "source_content_hash": "0eedb637d7c86cdc",
+        "quote": "Nakul Mandan ( Audacious Ventures )",
+        "quote_hash": "f6c1a9b70f1cf1a94a2b90e3b669e5099467dd2f337479640ccf3cc7d062fb02"
+      }
+    ]
+  }
+}

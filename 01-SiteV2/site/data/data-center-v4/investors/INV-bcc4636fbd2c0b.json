@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-bcc4636fbd2c0b",
+    "name": "Misha Laskin",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-06-10",
+    "latest_disclosed_at": "2026-06-10",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-2a8faee94f683cdf",
+        "funding_insight_id": "FI-6deae4c748088f7f",
+        "event_ids": [
+          "EV-c0ec0c026233bea5"
+        ],
+        "company_entity_id": "EN-a7dd4a797cf9990b",
+        "company_canonical_entity_id": "",
+        "company_name": "Niteshift",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$7 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 7000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "700 万美元"
+        },
+        "announced_at": "2026-06-10",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-01df70e43799a400",
+            "source_url": "https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in",
+            "source_title": "Datadog 资深人士创立 AI 编码初创公司 Niteshift，押注企业对抗大模型锁定",
+            "source_content_hash": "21b15182c071a779",
+            "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman, Datadog’s Olivier Pomel and Alexis Lê-Quôc, Ankur Goyal of Braintrust, and Misha Laskin of Reflection AI.",
+            "quote_hash": "40f67c01bdbbbce26ad3c095c1b1c5454b2a2b4a9b9c2140446f895388ef9fd4"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-01df70e43799a400",
+        "source_url": "https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in",
+        "source_title": "Datadog 资深人士创立 AI 编码初创公司 Niteshift，押注企业对抗大模型锁定",
+        "source_content_hash": "21b15182c071a779",
+        "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman, Datadog’s Olivier Pomel and Alexis Lê-Quôc, Ankur Goyal of Braintrust, and Misha Laskin of Reflection AI.",
+        "quote_hash": "40f67c01bdbbbce26ad3c095c1b1c5454b2a2b4a9b9c2140446f895388ef9fd4"
+      }
+    ]
+  }
+}

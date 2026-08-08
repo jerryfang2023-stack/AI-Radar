@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-4f9310a13f17c3",
+    "name": "Altimeter Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2026-04",
+    "latest_disclosed_at": "2026-08-04",
+    "role_counts": {
+      "co_lead": 2
+    },
+    "round_codes": [
+      "seed",
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-e647c818ac38b6ca",
+        "canonical_entity_id": "EN-e647c818ac38b6ca",
+        "name": "Elorian"
+      },
+      {
+        "entity_id": "EN-6fae0bc5a895aab8",
+        "canonical_entity_id": "",
+        "name": "Volta Infra Holdings Ltd."
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-ab81a76fd56729ae",
+        "funding_insight_id": "FI-718b8020e0e74b3d",
+        "event_ids": [
+          "EV-2dea56b0e97c1685"
+        ],
+        "company_entity_id": "EN-6fae0bc5a895aab8",
+        "company_canonical_entity_id": "",
+        "company_name": "Volta Infra Holdings Ltd.",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$300 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿美元"
+        },
+        "announced_at": "2026-08-04",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-21a1d5a2dbf2a3b1",
+            "source_url": "https://news.bloomberglaw.com/artificial-intelligence/nvidia-dell-back-ai-cloud-startup-volta-at-2-4-billion-value",
+            "source_title": "Nvidia、Dell 支持 AI 云初创公司 Volta，估值 24 亿美元",
+            "source_content_hash": "2773ebb523149905",
+            "quote": "The funding, set to be announced Tuesday, values Volta at $2.4 billion, and was co-led by Andreessen Horowitz and Altimeter Capital.",
+            "quote_hash": "cfb6133020b31b97ad4332a99cf66d2e36c252d19d373bfe6694a8725ab94037"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-7eff84f550b66b21",
+        "funding_insight_id": "FI-24441bfba8aff1ad",
+        "event_ids": [
+          "EV-6f092cfc7a064d64"
+        ],
+        "company_entity_id": "EN-e647c818ac38b6ca",
+        "company_canonical_entity_id": "EN-e647c818ac38b6ca",
+        "company_name": "Elorian",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$55 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 55000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5500 万美元"
+        },
+        "announced_at": "2026-04",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-0a52165fbfc8575b",
+            "source_url": "https://mlq.ai/news/elorian-raises-55m-seed-at-300m-valuation-for-visual-ai-before-shipping-a-product/",
+            "source_title": "Elorian Raises $55M Seed at $300M Valuation for Visual AI Before Shipping a Product | MLQ News",
+            "source_content_hash": "ae17cd699a04f8e6",
+            "quote": "The round was co-led by Striker Ventures, Menlo Ventures, and Altimeter Capital",
+            "quote_hash": "14665b57fd112e3e955a3420968f8a312cf7bd39cf3e20d11b1cfae32c05027f"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-21a1d5a2dbf2a3b1",
+        "source_url": "https://news.bloomberglaw.com/artificial-intelligence/nvidia-dell-back-ai-cloud-startup-volta-at-2-4-billion-value",
+        "source_title": "Nvidia、Dell 支持 AI 云初创公司 Volta，估值 24 亿美元",
+        "source_content_hash": "2773ebb523149905",
+        "quote": "The funding, set to be announced Tuesday, values Volta at $2.4 billion, and was co-led by Andreessen Horowitz and Altimeter Capital.",
+        "quote_hash": "cfb6133020b31b97ad4332a99cf66d2e36c252d19d373bfe6694a8725ab94037"
+      },
+      {
+        "source_id": "FISRC-0a52165fbfc8575b",
+        "source_url": "https://mlq.ai/news/elorian-raises-55m-seed-at-300m-valuation-for-visual-ai-before-shipping-a-product/",
+        "source_title": "Elorian Raises $55M Seed at $300M Valuation for Visual AI Before Shipping a Product | MLQ News",
+        "source_content_hash": "ae17cd699a04f8e6",
+        "quote": "The round was co-led by Striker Ventures, Menlo Ventures, and Altimeter Capital",
+        "quote_hash": "14665b57fd112e3e955a3420968f8a312cf7bd39cf3e20d11b1cfae32c05027f"
+      }
+    ]
+  }
+}

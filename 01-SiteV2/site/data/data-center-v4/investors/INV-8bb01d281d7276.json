@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-8bb01d281d7276",
+    "name": "Toyota Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-03-12",
+    "latest_disclosed_at": "2026-03-12",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-a83a3af1a4866fd5",
+        "canonical_entity_id": "",
+        "name": "Advanced Machine Intelligence Labs (AMI Labs)"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-1dce3edcec678404",
+        "funding_insight_id": "FI-9c3c02658ff94312",
+        "event_ids": [
+          "EV-cded77b1de2db61a"
+        ],
+        "company_entity_id": "EN-a83a3af1a4866fd5",
+        "company_canonical_entity_id": "",
+        "company_name": "Advanced Machine Intelligence Labs (AMI Labs)",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "10.3亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1030000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10.3 亿美元"
+        },
+        "announced_at": "2026-03-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6c35525e379488bf",
+            "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
+            "source_title": "AMI Labs 获 1BN 美元种子轮融资，用于构建世界模型",
+            "source_content_hash": "adc0cc9ffe3c9dd0",
+            "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance",
+            "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-6c35525e379488bf",
+        "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
+        "source_title": "AMI Labs 获 1BN 美元种子轮融资，用于构建世界模型",
+        "source_content_hash": "adc0cc9ffe3c9dd0",
+        "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance",
+        "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
+      }
+    ]
+  }
+}

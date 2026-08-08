@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-03c3020172fb98",
+    "name": "Benjamin Bryant",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-02-26",
+    "latest_disclosed_at": "2026-02-26",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-803c8788dc83cd6b",
+        "funding_insight_id": "FI-955f111e1400d9e0",
+        "event_ids": [
+          "EV-c46e427fedbf518d"
+        ],
+        "company_entity_id": "EN-eafe895eb8119e6e",
+        "company_canonical_entity_id": "",
+        "company_name": "Trace",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$3 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 万美元"
+        },
+        "announced_at": "2026-02-26",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ea2a22594e77fd6a",
+            "source_url": "https://techcrunch.com/2026/02/26/trace-raises-3-million-to-solve-the-agent-adoption-problem/",
+            "source_title": "Trace 融资 300 万美元，解决企业 AI 智能体采用难题",
+            "source_content_hash": "601ebbbabea8fa71",
+            "quote": "Angel investors Benjamin Bryant and Kevin Moore also invested.",
+            "quote_hash": "0c40fe449ee1dfd133617e98cd5e302659dcb50b8855ac9c6abe207412d88537"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-ea2a22594e77fd6a",
+        "source_url": "https://techcrunch.com/2026/02/26/trace-raises-3-million-to-solve-the-agent-adoption-problem/",
+        "source_title": "Trace 融资 300 万美元，解决企业 AI 智能体采用难题",
+        "source_content_hash": "601ebbbabea8fa71",
+        "quote": "Angel investors Benjamin Bryant and Kevin Moore also invested.",
+        "quote_hash": "0c40fe449ee1dfd133617e98cd5e302659dcb50b8855ac9c6abe207412d88537"
+      }
+    ]
+  }
+}

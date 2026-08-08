@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-f6d65bb77eb8ae",
+    "name": "Basecase",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-23",
+    "latest_disclosed_at": "2026-07-23",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "other_current_round": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-382635c9325bf327",
+        "canonical_entity_id": "",
+        "name": "Paper"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-9881846d4504a52a",
+        "funding_insight_id": "FI-cb627f50984e7151",
+        "event_ids": [
+          "EV-136b2edc9b9f3be8",
+          "EV-3fb827f44ea109de"
+        ],
+        "company_entity_id": "EN-382635c9325bf327",
+        "company_canonical_entity_id": "",
+        "company_name": "Paper",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$34 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 34000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3400 万美元"
+        },
+        "announced_at": "2026-07-23",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "既有投资方（本轮续投）",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-23493910baa1c861",
+            "source_url": "https://paper.design/blog/series-a",
+            "source_title": "Paper raises $34M to build the next great design platform",
+            "source_content_hash": "6bc97de07bc79d43",
+            "quote": "alongside renewed support from Basecase",
+            "quote_hash": "d7ce497118d62c8a9e01a89cce25dfe0ee287393e82f6b6c7236cc3d79df89d1"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4ee240933933bf5f",
+        "funding_insight_id": "FI-cb627f50984e7151",
+        "event_ids": [
+          "EV-136b2edc9b9f3be8",
+          "EV-3fb827f44ea109de"
+        ],
+        "company_entity_id": "EN-382635c9325bf327",
+        "company_canonical_entity_id": "",
+        "company_name": "Paper",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$34 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 34000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3400 万美元"
+        },
+        "announced_at": "2026-07-23",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-23493910baa1c861",
+            "source_url": "https://paper.design/blog/series-a",
+            "source_title": "Paper raises $34M to build the next great design platform",
+            "source_content_hash": "6bc97de07bc79d43",
+            "quote": "renewed support from Basecase",
+            "quote_hash": "fff2daeb836f6098a5072b0e36bc2721c63b39ba7474dabbb1fe152a0447fc9d"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-23493910baa1c861",
+        "source_url": "https://paper.design/blog/series-a",
+        "source_title": "Paper raises $34M to build the next great design platform",
+        "source_content_hash": "6bc97de07bc79d43",
+        "quote": "alongside renewed support from Basecase",
+        "quote_hash": "d7ce497118d62c8a9e01a89cce25dfe0ee287393e82f6b6c7236cc3d79df89d1"
+      },
+      {
+        "source_id": "FISRC-23493910baa1c861",
+        "source_url": "https://paper.design/blog/series-a",
+        "source_title": "Paper raises $34M to build the next great design platform",
+        "source_content_hash": "6bc97de07bc79d43",
+        "quote": "renewed support from Basecase",
+        "quote_hash": "fff2daeb836f6098a5072b0e36bc2721c63b39ba7474dabbb1fe152a0447fc9d"
+      }
+    ]
+  }
+}

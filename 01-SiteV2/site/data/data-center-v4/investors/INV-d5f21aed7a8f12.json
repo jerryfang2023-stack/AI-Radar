@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-d5f21aed7a8f12",
+    "name": "Infinitum",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-22",
+    "latest_disclosed_at": "2026-06-22",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-0b79cf2de0ee6b8e",
+        "canonical_entity_id": "",
+        "name": "Groq"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-f907bd2a83610de3",
+        "funding_insight_id": "FI-44726ebdb985f37e",
+        "event_ids": [
+          "EV-4118202ed0f91895"
+        ],
+        "company_entity_id": "EN-0b79cf2de0ee6b8e",
+        "company_canonical_entity_id": "",
+        "company_name": "Groq",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮",
+        "amount_original": "6.5 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 650000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6.5 亿美元"
+        },
+        "announced_at": "2026-06-22",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-c46abe65803d1634",
+            "source_url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business",
+            "source_title": "Groq Raises $650M to Scale Its AI Inference Cloud Business | Groq is fast, low cost inference.",
+            "source_content_hash": "5d508256a555c742",
+            "quote": "The round was led by Disruptive and Infinitum, with participation from investors who elected to reinvest in the company.",
+            "quote_hash": "5fa8e7ff0693e7039e6ad85d73fdc7c34fd9f729fc601a727a2d18321b768073"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-c46abe65803d1634",
+        "source_url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business",
+        "source_title": "Groq Raises $650M to Scale Its AI Inference Cloud Business | Groq is fast, low cost inference.",
+        "source_content_hash": "5d508256a555c742",
+        "quote": "The round was led by Disruptive and Infinitum, with participation from investors who elected to reinvest in the company.",
+        "quote_hash": "5fa8e7ff0693e7039e6ad85d73fdc7c34fd9f729fc601a727a2d18321b768073"
+      }
+    ]
+  }
+}

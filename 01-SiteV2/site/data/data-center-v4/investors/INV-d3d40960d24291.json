@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-d3d40960d24291",
+    "name": "20 Product",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-02",
+    "latest_disclosed_at": "2026-06-02",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-58b507456c52c9b3",
+        "canonical_entity_id": "EN-58b507456c52c9b3",
+        "name": "Archestra"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-5e1962102914ccbb",
+        "funding_insight_id": "FI-fe82f871887d3c1f",
+        "event_ids": [
+          "EV-f1a605a25af30dc5",
+          "EV-6ae3594aadfcd3d8"
+        ],
+        "company_entity_id": "EN-58b507456c52c9b3",
+        "company_canonical_entity_id": "EN-58b507456c52c9b3",
+        "company_name": "Archestra",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$10M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-06-02",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-50130a45d72291a2",
+            "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
+            "source_title": "Archestra.AI Announces $10M Seed 🎉 | Blog | Archestra",
+            "source_content_hash": "65e55f883bf21e63",
+            "quote": "Joining are 20 Product (Will Wu, CPO at Match Group)",
+            "quote_hash": "aa418a7c9ee76e5ae0c3f64a37f8924359ba8f36ccab073f8d32127a128dadf5"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-50130a45d72291a2",
+        "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
+        "source_title": "Archestra.AI Announces $10M Seed 🎉 | Blog | Archestra",
+        "source_content_hash": "65e55f883bf21e63",
+        "quote": "Joining are 20 Product (Will Wu, CPO at Match Group)",
+        "quote_hash": "aa418a7c9ee76e5ae0c3f64a37f8924359ba8f36ccab073f8d32127a128dadf5"
+      }
+    ]
+  }
+}

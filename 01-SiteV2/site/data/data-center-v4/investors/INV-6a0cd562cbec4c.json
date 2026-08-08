@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-6a0cd562cbec4c",
+    "name": "京东",
+    "aliases": [],
+    "canonical_entity_id": "EN-81baf57e05f11276",
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-04-07",
+    "latest_disclosed_at": "2026-06-03",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "first_external"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-6f7ac1823da81d2e",
+        "canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "name": "DeepSeek"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-e4a97939194a9ac9",
+        "funding_insight_id": "FI-71c58a10a93101c8",
+        "event_ids": [
+          "EV-d4d7b019ff0015df"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "首次外部融资",
+        "round_code": "first_external",
+        "round_original": "首次外部融资轮",
+        "amount_original": "约74亿美元（约500亿元人民币）",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 7400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 74 亿美元"
+        },
+        "announced_at": "2026-06-03",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d2c8c841370ed82a",
+            "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
+            "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
+            "source_content_hash": "1a156474d760e02b",
+            "quote": "JD.com and IDG ​¥3B each",
+            "quote_hash": "79fea3f1302cad58d43e8de7957cc941552e4f021617eeaaf5ba9f94ea1deb3b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0587a5d057e83dc8",
+        "funding_insight_id": "FI-4aaa0f3788c81d32",
+        "event_ids": [
+          "EV-60d58e2a1f5733f8"
+        ],
+        "company_entity_id": "EN-1032f7a4df33f629",
+        "company_canonical_entity_id": "EN-1032f7a4df33f629",
+        "company_name": "千寻智能",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "A+轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿人民币"
+        },
+        "announced_at": "2026-04-07",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "此前入局",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-fc5617428a7935ed",
+            "source_url": "https://www.nbd.com.cn/articles/2026-04-07/4328144.html",
+            "source_title": "千寻智能30天融资30亿元：马云、雷军罕见“同框”！重金押注“百万小时”数据规模，具身智能马太效应加剧",
+            "source_content_hash": "4c0590395b225d91834ea11c5dc4e3a325b4487f06e04055a1c05a08c2038da2",
+            "quote": "加上此前入局的华为系、京东、中国互联网投资基金，千寻智能汇聚科技、产业、金融三类资本阵容。",
+            "quote_hash": "3bdea4c62b0a51235195c01cc415d8544dc4a1522e00e6a2322589dd3cb7f58b"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-d2c8c841370ed82a",
+        "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
+        "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
+        "source_content_hash": "1a156474d760e02b",
+        "quote": "JD.com and IDG ​¥3B each",
+        "quote_hash": "79fea3f1302cad58d43e8de7957cc941552e4f021617eeaaf5ba9f94ea1deb3b"
+      },
+      {
+        "source_id": "FISRC-fc5617428a7935ed",
+        "source_url": "https://www.nbd.com.cn/articles/2026-04-07/4328144.html",
+        "source_title": "千寻智能30天融资30亿元：马云、雷军罕见“同框”！重金押注“百万小时”数据规模，具身智能马太效应加剧",
+        "source_content_hash": "4c0590395b225d91834ea11c5dc4e3a325b4487f06e04055a1c05a08c2038da2",
+        "quote": "加上此前入局的华为系、京东、中国互联网投资基金，千寻智能汇聚科技、产业、金融三类资本阵容。",
+        "quote_hash": "3bdea4c62b0a51235195c01cc415d8544dc4a1522e00e6a2322589dd3cb7f58b"
+      }
+    ]
+  }
+}

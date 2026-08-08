@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-5c676b07aaa42e",
+    "name": "梁文锋",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-03",
+    "latest_disclosed_at": "2026-06-03",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "first_external"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-6f7ac1823da81d2e",
+        "canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "name": "DeepSeek"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-9c4d085601f7b86e",
+        "funding_insight_id": "FI-71c58a10a93101c8",
+        "event_ids": [
+          "EV-d4d7b019ff0015df"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "首次外部融资",
+        "round_code": "first_external",
+        "round_original": "首次外部融资轮",
+        "amount_original": "约74亿美元（约500亿元人民币）",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 7400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 74 亿美元"
+        },
+        "announced_at": "2026-06-03",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投（创始人个人出资）",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-d2c8c841370ed82a",
+            "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
+            "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
+            "source_content_hash": "1a156474d760e02b",
+            "quote": "Liang Wenfeng personally ​¥20B (the largest single check)",
+            "quote_hash": "4d235238a503661c3c842abb921c995088776db7defbeb147cecce5bb8a9e304"
+          },
+          {
+            "source_id": "FISRC-20480dcf3f970893",
+            "source_url": "https://ventureburn.com/deepseek-raises-7-4b-at-50b-in-founder-led-deal/",
+            "source_title": "DeepSeek Raises $7.4B at $50B+ in Founder-Led Deal - Ventureburn",
+            "source_content_hash": "94a6c6ef0b270e0d",
+            "quote": "Founder Liang Wenfeng personally contributed roughly $2.8 billion to the round",
+            "quote_hash": "61134e00b1b629cf0740735cbff9c023a93589a1b7969112a375bbca8d45fd65"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-d2c8c841370ed82a",
+        "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
+        "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
+        "source_content_hash": "1a156474d760e02b",
+        "quote": "Liang Wenfeng personally ​¥20B (the largest single check)",
+        "quote_hash": "4d235238a503661c3c842abb921c995088776db7defbeb147cecce5bb8a9e304"
+      },
+      {
+        "source_id": "FISRC-20480dcf3f970893",
+        "source_url": "https://ventureburn.com/deepseek-raises-7-4b-at-50b-in-founder-led-deal/",
+        "source_title": "DeepSeek Raises $7.4B at $50B+ in Founder-Led Deal - Ventureburn",
+        "source_content_hash": "94a6c6ef0b270e0d",
+        "quote": "Founder Liang Wenfeng personally contributed roughly $2.8 billion to the round",
+        "quote_hash": "61134e00b1b629cf0740735cbff9c023a93589a1b7969112a375bbca8d45fd65"
+      }
+    ]
+  }
+}

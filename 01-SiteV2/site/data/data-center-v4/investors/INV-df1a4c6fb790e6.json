@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-df1a4c6fb790e6",
+    "name": "Elevation Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-16",
+    "latest_disclosed_at": "2026-07-16",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-366289432b214eda",
+        "canonical_entity_id": "",
+        "name": "Reo.Dev"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-1360d18c157def79",
+        "funding_insight_id": "FI-e034f1d14161b5f5",
+        "event_ids": [
+          "EV-8b7cbb66a33a945d"
+        ],
+        "company_entity_id": "EN-366289432b214eda",
+        "company_canonical_entity_id": "",
+        "company_name": "Reo.Dev",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A 轮",
+        "amount_original": "1130 万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 11300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1130 万美元"
+        },
+        "announced_at": "2026-07-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-ca3d343739410c39",
+            "source_url": "https://www.reo.dev/blog/reo-dev-series-a",
+            "source_title": "Reo.Dev 完成 1130 万美元 A 轮融资，扩大面向工程团队的 AI 信号服务",
+            "source_content_hash": "ff5549c1a6dc8b11",
+            "quote": "We've raised $11.3 million in Series A, led by Elevation Capital",
+            "quote_hash": "1958df38fe8add9c7b791aaf8ee8bfcf03bb881487477007ba296cfe6eee47ca"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-ca3d343739410c39",
+        "source_url": "https://www.reo.dev/blog/reo-dev-series-a",
+        "source_title": "Reo.Dev 完成 1130 万美元 A 轮融资，扩大面向工程团队的 AI 信号服务",
+        "source_content_hash": "ff5549c1a6dc8b11",
+        "quote": "We've raised $11.3 million in Series A, led by Elevation Capital",
+        "quote_hash": "1958df38fe8add9c7b791aaf8ee8bfcf03bb881487477007ba296cfe6eee47ca"
+      }
+    ]
+  }
+}

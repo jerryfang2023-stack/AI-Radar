@@ -11,12 +11,12 @@ const reportDetailPages = [
     .filter((name) => /^(?:weekly-ai-business-change-radar-\d{4}-\d{2}-\d{2}|monthly-business-structure-\d{4}-\d{2})\.html$/u.test(name))
     .sort(),
 ];
-const expectedSiteVersion = "SITE-V4.4.1-china-market-scope";
+const expectedSiteVersion = "SITE-V4.5.0-investment-institution-library";
 const expectedDataCenterProductVersion = "SITE-V4.2.0-entity-history";
 const expectedOpportunityEvidenceSiteVersion = "SITE-V4.2.0-entity-history";
 const expectedReportsCenterColumnVersion = "REPORTS-V1.2.0-research-hub";
 const expectedOpportunityMapColumnVersion = "OMAP-V2.0.0-v4-evidence";
-const expectedFundingInsightsColumnVersion = "FUNDING-INSIGHT-V1.2.0-market-category";
+const expectedFundingInsightsColumnVersion = "FUNDING-INSIGHT-V1.4.0-financing-fields";
 
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 

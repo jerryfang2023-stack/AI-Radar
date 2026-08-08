@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-f5ed35eb301852",
+    "name": "Emergence Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2026-02-25",
+    "latest_disclosed_at": "2026-07-01",
+    "role_counts": {
+      "lead": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "multi_round",
+      "series_c"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-eaa1c24270a0d057",
+        "canonical_entity_id": "",
+        "name": "Harper"
+      },
+      {
+        "entity_id": "EN-816bab802b34b308",
+        "canonical_entity_id": "",
+        "name": "Together AI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-ebd042f2b2671686",
+        "funding_insight_id": "FI-2dfbeaa7d627041d",
+        "event_ids": [
+          "EV-13ec78dfdbca678b"
+        ],
+        "company_entity_id": "EN-816bab802b34b308",
+        "company_canonical_entity_id": "",
+        "company_name": "Together AI",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "$800 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 800000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8 亿美元"
+        },
+        "announced_at": "2026-07-01",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投；种子轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6f0f12fb121fbd88",
+            "source_url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",
+            "source_title": "Neocloud Together AI 融资 8 亿美元，估值跃升至 83 亿美元",
+            "source_content_hash": "99e8e0f48b30eed2",
+            "quote": "a $102.5 million Series A funding round led by Kleiner Perkins with participation from Nvidia and Emergence Capital back in 2023",
+            "quote_hash": "7b81676f7e4adc6fbeac3fe3f8f408d50730ce1f0c1d13781a834105396c1ff1"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f6da7fddae83a62b",
+        "funding_insight_id": "FI-6d45b570f8bf6df7",
+        "event_ids": [
+          "EV-e4b3a19529576778"
+        ],
+        "company_entity_id": "EN-eaa1c24270a0d057",
+        "company_canonical_entity_id": "",
+        "company_name": "Harper",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "种子轮和A轮合并",
+        "amount_original": "$46.8 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 46800000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4680 万美元"
+        },
+        "announced_at": "2026-02-25",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "A轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-7f1c22fc0cc9f63f",
+            "source_url": "https://techcrunch.com/2026/02/25/ai-insurance-brokerage-harper-raises-45m-series-a-and-seed/",
+            "source_title": "Y Combinator毕业生、AI保险经纪公司Harper获4700万美元融资",
+            "source_content_hash": "88e3ca9ed4470da9",
+            "quote": "its Series A round was led by Emergence Capital.",
+            "quote_hash": "d3e1b77ed0fade26a6381708730595f6191b00a0f54c6425c255e8bbd6cb97ed"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-6f0f12fb121fbd88",
+        "source_url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",
+        "source_title": "Neocloud Together AI 融资 8 亿美元，估值跃升至 83 亿美元",
+        "source_content_hash": "99e8e0f48b30eed2",
+        "quote": "a $102.5 million Series A funding round led by Kleiner Perkins with participation from Nvidia and Emergence Capital back in 2023",
+        "quote_hash": "7b81676f7e4adc6fbeac3fe3f8f408d50730ce1f0c1d13781a834105396c1ff1"
+      },
+      {
+        "source_id": "FISRC-7f1c22fc0cc9f63f",
+        "source_url": "https://techcrunch.com/2026/02/25/ai-insurance-brokerage-harper-raises-45m-series-a-and-seed/",
+        "source_title": "Y Combinator毕业生、AI保险经纪公司Harper获4700万美元融资",
+        "source_content_hash": "88e3ca9ed4470da9",
+        "quote": "its Series A round was led by Emergence Capital.",
+        "quote_hash": "d3e1b77ed0fade26a6381708730595f6191b00a0f54c6425c255e8bbd6cb97ed"
+      }
+    ]
+  }
+}

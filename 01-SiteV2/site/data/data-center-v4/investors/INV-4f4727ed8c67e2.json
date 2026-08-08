@@ -1,0 +1,533 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-4f4727ed8c67e2",
+    "name": "Menlo Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 7,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 6,
+    "first_disclosed_at": "2024-09-05",
+    "latest_disclosed_at": "2026-07-16",
+    "role_counts": {
+      "co_lead": 1,
+      "historical_or_ambiguous": 2,
+      "lead": 2,
+      "participant": 4
+    },
+    "round_codes": [
+      "seed",
+      "series_c",
+      "series_d",
+      "series_e"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-df30a48992da7fe8",
+        "canonical_entity_id": "",
+        "name": "All Hands AI"
+      },
+      {
+        "entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "name": "Anthropic PBC"
+      },
+      {
+        "entity_id": "EN-f3d05a0f6248941d",
+        "canonical_entity_id": "",
+        "name": "Assort Health"
+      },
+      {
+        "entity_id": "EN-e647c818ac38b6ca",
+        "canonical_entity_id": "EN-e647c818ac38b6ca",
+        "name": "Elorian"
+      },
+      {
+        "entity_id": "EN-0caee180da9d0f3f",
+        "canonical_entity_id": "",
+        "name": "Fireworks AI Inc."
+      },
+      {
+        "entity_id": "EN-1050efc9e13624b2",
+        "canonical_entity_id": "",
+        "name": "General Analysis"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-b00f312fbbfc57da",
+        "funding_insight_id": "FI-f59cd4d7e9ffcb18",
+        "event_ids": [
+          "EV-44cd5e03d30c85b3"
+        ],
+        "company_entity_id": "EN-e647c818ac38b6ca",
+        "company_canonical_entity_id": "EN-e647c818ac38b6ca",
+        "company_name": "Elorian",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$55 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 55000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5500 万美元"
+        },
+        "announced_at": "2026-07-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-09d3aaaafa6cdabc",
+            "source_url": "https://www.recall.it/summary/artificial-intelligence/how-elorian-ai-pulled-off-a-dollar300m-pre-seed-valuation-with-andrew-dai",
+            "source_title": "How Elorian AI pulled off a $300M pre-seed valuation with Andrew Dai | AI YouTube Summary | TechCrunch | Recall",
+            "source_content_hash": "7b935e4006e94036",
+            "quote": "attracting high‑profile investors such as Menlo Ventures, Nvidia, and Jeff Dean",
+            "quote_hash": "ebeaf596ca305a06070fb1ec2843b8ede18bcdeb117f767b82d14c002579f478"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c71e5939d0398452",
+        "funding_insight_id": "FI-3b1ea359415f476d",
+        "event_ids": [
+          "EV-4eaf3aabecae6016"
+        ],
+        "company_entity_id": "EN-0caee180da9d0f3f",
+        "company_canonical_entity_id": "",
+        "company_name": "Fireworks AI Inc.",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$1.505 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1505000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15.05 亿美元"
+        },
+        "announced_at": "2026-07-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-80d6b020dd75ac09",
+            "source_url": "https://genztech.blog/p/fireworks-ai-1-5b-series-d-17-5b-valuation/",
+            "source_title": "Fireworks AI Raises $1.5B Series D at $17.5B Valuation",
+            "source_content_hash": "2ac54d2d554e9655",
+            "quote": "Bessemer, Insight Partners, Lightspeed, Menlo Ventures, NVIDIA, Ontario Teachers' Pension Plan, Sequoia-adjacent crossover funds and others all participated.",
+            "quote_hash": "e486b89bc988feaf5486b02bd4c675c44a2a357905efd88a5b5008cfa027b7a7"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-065cb48306410a3b",
+        "funding_insight_id": "FI-7ba66ce9eb0ab250",
+        "event_ids": [
+          "EV-f487788f3d44f288"
+        ],
+        "company_entity_id": "EN-f3d05a0f6248941d",
+        "company_canonical_entity_id": "",
+        "company_name": "Assort Health",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "$120 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 120000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.2 亿美元"
+        },
+        "announced_at": "2026-06-24",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-08afa07ec89dda4d",
+            "source_url": "https://www.assorthealth.com/blog/assort-health-raises-120-million-series-c-to-scale-largest-deployment-of-ai-agents-for-the-patient-journey",
+            "source_title": "Assort Health 完成 1.2 亿美元 C 轮融资，扩大患者旅程中最大规模 AI 智能体部署",
+            "source_content_hash": "7c2003856d2cd4b5",
+            "quote": "a $120 million Series C led by Menlo Ventures",
+            "quote_hash": "ddee37b39c5770ec6168c0ac684b6e5be75bea040f02a8f935249e93865b8b24"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-344d8da863cf3a9a",
+        "funding_insight_id": "FI-09809d62deea4164",
+        "event_ids": [
+          "EV-0e84a2f49d765ce3"
+        ],
+        "company_entity_id": "EN-7f871cbf905f6e0c",
+        "company_canonical_entity_id": "EN-7f871cbf905f6e0c",
+        "company_name": "OpenRouter",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$113 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 113000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.13 亿美元"
+        },
+        "announced_at": "2026-05-26",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方（A轮领投）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-d1b42068c59f51d1",
+            "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
+            "source_title": "AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由",
+            "source_content_hash": "c1afd6dfb4036688",
+            "quote": "alongside returning investors Andreessen Horowitz and Menlo Ventures",
+            "quote_hash": "c66b35a694c779db92ba5253dc1850819286f30a8138bca19779d3dffccbbcdd"
+          },
+          {
+            "source_id": "FISRC-d1b42068c59f51d1",
+            "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
+            "source_title": "AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由",
+            "source_content_hash": "c1afd6dfb4036688",
+            "quote": "OpenRouter's Series A, led by Andreessen Horowitz and Menlo Ventures with Sequoia's participation",
+            "quote_hash": "c8176351944983028f478eee27aecb2d3a2f82740aa55270f96183d163ff0000"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9ca331aec4405db5",
+        "funding_insight_id": "FI-fecb7f6a77985938",
+        "event_ids": [
+          "EV-61546e58c0e669e7"
+        ],
+        "company_entity_id": "EN-1050efc9e13624b2",
+        "company_canonical_entity_id": "",
+        "company_name": "General Analysis",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$10 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-04-29",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2513b5897a02dd3c",
+            "source_url": "https://www.businesswire.com/news/home/20260429247972/en/General-Analysis-Raises-%2410M-in-Seed-Funding-to-Secure-Agentic-AI",
+            "source_title": "General Analysis 获 1000 万美元种子轮融资，用于保障 AI 智能体安全",
+            "source_content_hash": "fc9f406ab2427abb",
+            "quote": "with participation from 645 Ventures, Menlo Ventures, Y Combinator, and additional strategic investors and angels",
+            "quote_hash": "a9cb7cc5de15f5d2027a5c8fa856be08ef0254d044fb84b2ccae3bd0ba874959"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-1d61dd1a0a3fabae",
+        "funding_insight_id": "FI-24441bfba8aff1ad",
+        "event_ids": [
+          "EV-6f092cfc7a064d64"
+        ],
+        "company_entity_id": "EN-e647c818ac38b6ca",
+        "company_canonical_entity_id": "EN-e647c818ac38b6ca",
+        "company_name": "Elorian",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$55 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 55000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5500 万美元"
+        },
+        "announced_at": "2026-04",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-0a52165fbfc8575b",
+            "source_url": "https://mlq.ai/news/elorian-raises-55m-seed-at-300m-valuation-for-visual-ai-before-shipping-a-product/",
+            "source_title": "Elorian Raises $55M Seed at $300M Valuation for Visual AI Before Shipping a Product | MLQ News",
+            "source_content_hash": "ae17cd699a04f8e6",
+            "quote": "The round was co-led by Striker Ventures, Menlo Ventures, and Altimeter Capital",
+            "quote_hash": "14665b57fd112e3e955a3420968f8a312cf7bd39cf3e20d11b1cfae32c05027f"
+          },
+          {
+            "source_id": "FISRC-1c40aad62f3bb1a3",
+            "source_url": "https://techcrunch.com/2026/07/16/how-a-former-deepmind-researcher-raised-at-a-300m-pre-seed-valuation-before-launching-a-product/",
+            "source_title": "前DeepMind研究员在推出产品前以3亿美元预种子轮估值融资",
+            "source_content_hash": "123ae92608b50da6",
+            "quote": "he prioritized strategic partners like Nvidia and Menlo Ventures over even higher valuation offers",
+            "quote_hash": "a84fddf630c74c7c1ba460e3abe4c6abdcf727c721006cbfa7b4d00f33c5cbb2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ac30461ccf399fb4",
+        "funding_insight_id": "FI-0312b291d6672487",
+        "event_ids": [
+          "EV-201b25d4f3cf696a"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$13 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 13000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "130 亿美元"
+        },
+        "announced_at": "2025-09-02",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Series E轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5289e6345684ca4",
+            "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
+            "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
+            "source_content_hash": "e918313869a22b8d",
+            "quote": "The round was announced on March 3 and was led by Lightspeed with participation from Salesforce Ventures, Menlo Ventures, and General Catalyst, among others.",
+            "quote_hash": "99ac1a2c76fdc0f8cae04b9fd4cfa99e172468497ad14d7feda5bc570a359919"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d59c010f287a2670",
+        "funding_insight_id": "FI-6601d010adc14dd0",
+        "event_ids": [
+          "EV-78a11d309c3d4e97"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic PBC",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "Series E",
+        "amount_original": "$3.5B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "35 亿美元"
+        },
+        "announced_at": "2025-03-03",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8aac4802151d3b7d",
+            "source_url": "https://theoutpost.ai/news-story/anthropic-secures-3-5-billion-in-funding-reaching-61-5-billion-valuation-12772/",
+            "source_title": "Anthropic Raises $3.5 Billion at $61.5 Billion Valuation, Minting New AI Billionaires",
+            "source_content_hash": "a1b8a77e1ffdaf42",
+            "quote": "Lightspeed Venture Partners led Anthropic's latest round, which included participation from Bessemer Venture Partners, Cisco Investments, D1 Capital Partners, Fidelity Management & Research Company, General Catalyst, Jane Street, Menlo Ventures and Salesforce Ventures.",
+            "quote_hash": "0f0cafc6048be35da181c53991be61aed515418d1800beb00e8ebb9925997b49"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4bd500981cbe3ace",
+        "funding_insight_id": "FI-74a336bce144f22d",
+        "event_ids": [
+          "EV-d10684a6f16afe10"
+        ],
+        "company_entity_id": "EN-df30a48992da7fe8",
+        "company_canonical_entity_id": "",
+        "company_name": "All Hands AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "500万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "500 万美元"
+        },
+        "announced_at": "2024-09-05",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-9dd8630200082b4c",
+            "source_url": "https://techcrunch.com/2024/09/05/all-hands-ai-raises-5m-to-build-open-source-agents-for-developers/",
+            "source_title": "All Hands AI 获 500 万美元融资，为开发者构建开源 AI 智能体",
+            "source_content_hash": "98fe8fb23998f253",
+            "quote": "a $5 million seed funding round led by Menlo Ventures",
+            "quote_hash": "cf3397055174326401e342d004b986f90abf710e29e694a66f9fb4d3a5d131b9"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-09d3aaaafa6cdabc",
+        "source_url": "https://www.recall.it/summary/artificial-intelligence/how-elorian-ai-pulled-off-a-dollar300m-pre-seed-valuation-with-andrew-dai",
+        "source_title": "How Elorian AI pulled off a $300M pre-seed valuation with Andrew Dai | AI YouTube Summary | TechCrunch | Recall",
+        "source_content_hash": "7b935e4006e94036",
+        "quote": "attracting high‑profile investors such as Menlo Ventures, Nvidia, and Jeff Dean",
+        "quote_hash": "ebeaf596ca305a06070fb1ec2843b8ede18bcdeb117f767b82d14c002579f478"
+      },
+      {
+        "source_id": "FISRC-80d6b020dd75ac09",
+        "source_url": "https://genztech.blog/p/fireworks-ai-1-5b-series-d-17-5b-valuation/",
+        "source_title": "Fireworks AI Raises $1.5B Series D at $17.5B Valuation",
+        "source_content_hash": "2ac54d2d554e9655",
+        "quote": "Bessemer, Insight Partners, Lightspeed, Menlo Ventures, NVIDIA, Ontario Teachers' Pension Plan, Sequoia-adjacent crossover funds and others all participated.",
+        "quote_hash": "e486b89bc988feaf5486b02bd4c675c44a2a357905efd88a5b5008cfa027b7a7"
+      },
+      {
+        "source_id": "FISRC-08afa07ec89dda4d",
+        "source_url": "https://www.assorthealth.com/blog/assort-health-raises-120-million-series-c-to-scale-largest-deployment-of-ai-agents-for-the-patient-journey",
+        "source_title": "Assort Health 完成 1.2 亿美元 C 轮融资，扩大患者旅程中最大规模 AI 智能体部署",
+        "source_content_hash": "7c2003856d2cd4b5",
+        "quote": "a $120 million Series C led by Menlo Ventures",
+        "quote_hash": "ddee37b39c5770ec6168c0ac684b6e5be75bea040f02a8f935249e93865b8b24"
+      },
+      {
+        "source_id": "FISRC-d1b42068c59f51d1",
+        "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
+        "source_title": "AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由",
+        "source_content_hash": "c1afd6dfb4036688",
+        "quote": "alongside returning investors Andreessen Horowitz and Menlo Ventures",
+        "quote_hash": "c66b35a694c779db92ba5253dc1850819286f30a8138bca19779d3dffccbbcdd"
+      },
+      {
+        "source_id": "FISRC-d1b42068c59f51d1",
+        "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
+        "source_title": "AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由",
+        "source_content_hash": "c1afd6dfb4036688",
+        "quote": "OpenRouter's Series A, led by Andreessen Horowitz and Menlo Ventures with Sequoia's participation",
+        "quote_hash": "c8176351944983028f478eee27aecb2d3a2f82740aa55270f96183d163ff0000"
+      },
+      {
+        "source_id": "FISRC-2513b5897a02dd3c",
+        "source_url": "https://www.businesswire.com/news/home/20260429247972/en/General-Analysis-Raises-%2410M-in-Seed-Funding-to-Secure-Agentic-AI",
+        "source_title": "General Analysis 获 1000 万美元种子轮融资，用于保障 AI 智能体安全",
+        "source_content_hash": "fc9f406ab2427abb",
+        "quote": "with participation from 645 Ventures, Menlo Ventures, Y Combinator, and additional strategic investors and angels",
+        "quote_hash": "a9cb7cc5de15f5d2027a5c8fa856be08ef0254d044fb84b2ccae3bd0ba874959"
+      },
+      {
+        "source_id": "FISRC-0a52165fbfc8575b",
+        "source_url": "https://mlq.ai/news/elorian-raises-55m-seed-at-300m-valuation-for-visual-ai-before-shipping-a-product/",
+        "source_title": "Elorian Raises $55M Seed at $300M Valuation for Visual AI Before Shipping a Product | MLQ News",
+        "source_content_hash": "ae17cd699a04f8e6",
+        "quote": "The round was co-led by Striker Ventures, Menlo Ventures, and Altimeter Capital",
+        "quote_hash": "14665b57fd112e3e955a3420968f8a312cf7bd39cf3e20d11b1cfae32c05027f"
+      },
+      {
+        "source_id": "FISRC-1c40aad62f3bb1a3",
+        "source_url": "https://techcrunch.com/2026/07/16/how-a-former-deepmind-researcher-raised-at-a-300m-pre-seed-valuation-before-launching-a-product/",
+        "source_title": "前DeepMind研究员在推出产品前以3亿美元预种子轮估值融资",
+        "source_content_hash": "123ae92608b50da6",
+        "quote": "he prioritized strategic partners like Nvidia and Menlo Ventures over even higher valuation offers",
+        "quote_hash": "a84fddf630c74c7c1ba460e3abe4c6abdcf727c721006cbfa7b4d00f33c5cbb2"
+      },
+      {
+        "source_id": "FISRC-c5289e6345684ca4",
+        "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
+        "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
+        "source_content_hash": "e918313869a22b8d",
+        "quote": "The round was announced on March 3 and was led by Lightspeed with participation from Salesforce Ventures, Menlo Ventures, and General Catalyst, among others.",
+        "quote_hash": "99ac1a2c76fdc0f8cae04b9fd4cfa99e172468497ad14d7feda5bc570a359919"
+      },
+      {
+        "source_id": "FISRC-8aac4802151d3b7d",
+        "source_url": "https://theoutpost.ai/news-story/anthropic-secures-3-5-billion-in-funding-reaching-61-5-billion-valuation-12772/",
+        "source_title": "Anthropic Raises $3.5 Billion at $61.5 Billion Valuation, Minting New AI Billionaires",
+        "source_content_hash": "a1b8a77e1ffdaf42",
+        "quote": "Lightspeed Venture Partners led Anthropic's latest round, which included participation from Bessemer Venture Partners, Cisco Investments, D1 Capital Partners, Fidelity Management & Research Company, General Catalyst, Jane Street, Menlo Ventures and Salesforce Ventures.",
+        "quote_hash": "0f0cafc6048be35da181c53991be61aed515418d1800beb00e8ebb9925997b49"
+      },
+      {
+        "source_id": "FISRC-9dd8630200082b4c",
+        "source_url": "https://techcrunch.com/2024/09/05/all-hands-ai-raises-5m-to-build-open-source-agents-for-developers/",
+        "source_title": "All Hands AI 获 500 万美元融资，为开发者构建开源 AI 智能体",
+        "source_content_hash": "98fe8fb23998f253",
+        "quote": "a $5 million seed funding round led by Menlo Ventures",
+        "quote_hash": "cf3397055174326401e342d004b986f90abf710e29e694a66f9fb4d3a5d131b9"
+      }
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-51ef086e0db836",
+    "name": "Visionaries Club",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-05-21",
+    "latest_disclosed_at": "2026-05-21",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-3f1c7554ad9227b7",
+        "funding_insight_id": "FI-d3ef6c0ebcd62288",
+        "event_ids": [
+          "EV-63236c15166b71e0"
+        ],
+        "company_entity_id": "EN-d6386c59a6bcfcb1",
+        "company_canonical_entity_id": "",
+        "company_name": "Pivot",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$40m",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-05-21",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方（种子轮）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-58b2708f2adcb70e",
+            "source_url": "https://thenextweb.com/news/pivot-40m-series-b-agentic-ai-procurement-operating-system",
+            "source_title": "Pivot 获4000万美元B轮融资，推企业级AI代理采购操作系统，解决遗留软件未修复的问题",
+            "source_content_hash": "4c1272518f44f483",
+            "quote": "alongside existing backers Hedosophia, Visionaries Club and Emblem",
+            "quote_hash": "ba5595d982a32a53fce10e19fb25a74a559dfa009f4c42076557b0c754afbcd4"
+          },
+          {
+            "source_id": "FISRC-4db7c0e1c705be9a",
+            "source_url": "https://technews180.com/funding-news/ai-procurement-startup-pivot-closes-40m-series-b-round/",
+            "source_title": "AI Procurement Startup Pivot Closes $40M Series B Round",
+            "source_content_hash": "55354df96e0a2b32",
+            "quote": "It raised a €5 million pre-seed from Visionaries Club, Emblem, and Cocoa in mid-2023",
+            "quote_hash": "bff2c27377a2c23bd21b238c84cbbc9d44a2be2ca1ea75456e53c1b1d181a0c6"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-58b2708f2adcb70e",
+        "source_url": "https://thenextweb.com/news/pivot-40m-series-b-agentic-ai-procurement-operating-system",
+        "source_title": "Pivot 获4000万美元B轮融资，推企业级AI代理采购操作系统，解决遗留软件未修复的问题",
+        "source_content_hash": "4c1272518f44f483",
+        "quote": "alongside existing backers Hedosophia, Visionaries Club and Emblem",
+        "quote_hash": "ba5595d982a32a53fce10e19fb25a74a559dfa009f4c42076557b0c754afbcd4"
+      },
+      {
+        "source_id": "FISRC-4db7c0e1c705be9a",
+        "source_url": "https://technews180.com/funding-news/ai-procurement-startup-pivot-closes-40m-series-b-round/",
+        "source_title": "AI Procurement Startup Pivot Closes $40M Series B Round",
+        "source_content_hash": "55354df96e0a2b32",
+        "quote": "It raised a €5 million pre-seed from Visionaries Club, Emblem, and Cocoa in mid-2023",
+        "quote_hash": "bff2c27377a2c23bd21b238c84cbbc9d44a2be2ca1ea75456e53c1b1d181a0c6"
+      }
+    ]
+  }
+}

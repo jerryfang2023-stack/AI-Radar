@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-ff9d9c2e0d221a",
+    "name": "Altimeter",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-03-31",
+    "latest_disclosed_at": "2026-06-22",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "series_f"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-7d3194f79e645c42",
+        "canonical_entity_id": "EN-7d3194f79e645c42",
+        "name": "OpenAI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-fbd7e1c0d4223997",
+        "funding_insight_id": "FI-44726ebdb985f37e",
+        "event_ids": [
+          "EV-4118202ed0f91895"
+        ],
+        "company_entity_id": "EN-0b79cf2de0ee6b8e",
+        "company_canonical_entity_id": "",
+        "company_name": "Groq",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮",
+        "amount_original": "6.5 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 650000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6.5 亿美元"
+        },
+        "announced_at": "2026-06-22",
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-85e8550490e53490",
+            "source_url": "https://test-news.aibase.com/news/21366",
+            "source_title": "Groq Raises $750 Million in Funding, Valuation Reaches $6.9 Billion",
+            "source_content_hash": "6efab5b69f3f9aa3",
+            "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq.",
+            "quote_hash": "e9d6c950ecfcf10df612acb50b9000d5111cfce790af32af95a51c83ef1ee077"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b77f8172f8e601a5",
+        "funding_insight_id": "FI-b76fffbf5d0d91bd",
+        "event_ids": [
+          "EV-d4e44892226be468"
+        ],
+        "company_entity_id": "EN-7d3194f79e645c42",
+        "company_canonical_entity_id": "EN-7d3194f79e645c42",
+        "company_name": "OpenAI",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$1220亿",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 122000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1220 亿美元"
+        },
+        "announced_at": "2026-03-31",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b86e0fbe62dfd3dc",
+            "source_url": "https://www.mexc.com/news/996087",
+            "source_title": "OpenAI Closes $122B Funding Round, Hits $852B Valuation as AI Infrastructure Race Intensifies | MEXC News",
+            "source_content_hash": "4e51c91e5fc7160c",
+            "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round.",
+            "quote_hash": "f0097151bde761f5e4659ebb163169c9db44274e9eb7a22cc2eab9333678a322"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-85e8550490e53490",
+        "source_url": "https://test-news.aibase.com/news/21366",
+        "source_title": "Groq Raises $750 Million in Funding, Valuation Reaches $6.9 Billion",
+        "source_content_hash": "6efab5b69f3f9aa3",
+        "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq.",
+        "quote_hash": "e9d6c950ecfcf10df612acb50b9000d5111cfce790af32af95a51c83ef1ee077"
+      },
+      {
+        "source_id": "FISRC-b86e0fbe62dfd3dc",
+        "source_url": "https://www.mexc.com/news/996087",
+        "source_title": "OpenAI Closes $122B Funding Round, Hits $852B Valuation as AI Infrastructure Race Intensifies | MEXC News",
+        "source_content_hash": "4e51c91e5fc7160c",
+        "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round.",
+        "quote_hash": "f0097151bde761f5e4659ebb163169c9db44274e9eb7a22cc2eab9333678a322"
+      }
+    ]
+  }
+}

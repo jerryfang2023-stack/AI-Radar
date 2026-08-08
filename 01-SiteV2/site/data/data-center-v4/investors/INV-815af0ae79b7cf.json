@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-815af0ae79b7cf",
+    "name": "Intel Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 3,
+    "first_disclosed_at": "2026-05-21",
+    "latest_disclosed_at": "2026-07-08",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "participant": 3
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-245f1e177c5169cb",
+        "canonical_entity_id": "",
+        "name": "Hark"
+      },
+      {
+        "entity_id": "FICO-oxmiq",
+        "canonical_entity_id": "",
+        "name": "OXMIQ"
+      },
+      {
+        "entity_id": "EN-fa373257792c6b9b",
+        "canonical_entity_id": "EN-fa373257792c6b9b",
+        "name": "Prime Intellect"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-1add88cc35768ebf",
+        "funding_insight_id": "FI-eb27063b86f12aff",
+        "event_ids": [
+          "EV-463cb26b5e03c7f7"
+        ],
+        "company_entity_id": "EN-fa373257792c6b9b",
+        "company_canonical_entity_id": "EN-fa373257792c6b9b",
+        "company_name": "Prime Intellect",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$130 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 130000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.3 亿美元"
+        },
+        "announced_at": "2026-07-08",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-fbda7a24ef3d8ef8",
+            "source_url": "https://vtechxhub.com/insights/prime-intellect-raises-130m-series-power-enterprise-ai",
+            "source_title": "Prime Intellect Raises $130M for Enterprise AI Development 2026",
+            "source_content_hash": "56b4a47eeb530513",
+            "quote": "Radical Ventures led the charge, with Nvidia Ventures and Intel Capital jumping in.",
+            "quote_hash": "24bdc3b7a36b729c317ee6fed8d24a6aab20830cfcd7d9956ef47fab33d60d6b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-23512099da927896",
+        "funding_insight_id": "FI-0f332b05a9ce8b6f",
+        "event_ids": [
+          "EV-b3c7c4bff17063d8",
+          "EV-415b083fdaa8077f",
+          "EV-48075ca70a5458ec",
+          "EV-63dee9f748531f08"
+        ],
+        "company_entity_id": "FICO-oxmiq",
+        "company_canonical_entity_id": "",
+        "company_name": "OXMIQ",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$35 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 35000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3500 万美元"
+        },
+        "announced_at": "2026-07-01",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投（战略IP合作伙伴）",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2ac2183ceab4ddd7",
+            "source_url": "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a",
+            "source_title": "OXMIQ Raises $35 Million to Scale OxCore™ Architecture — OXMIQ",
+            "source_content_hash": "b11173439b5612a7",
+            "quote": "Intel Capital rounds out the group as a strategic IP partner, adding to OXMIQ's design and engineering depth.",
+            "quote_hash": "da54bd89e1be8487b6860476d59b89bb31508895b2f511f2c9110944d33f2d4c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-31c2f0ff2790e676",
+        "funding_insight_id": "FI-0f332b05a9ce8b6f",
+        "event_ids": [
+          "EV-b3c7c4bff17063d8",
+          "EV-415b083fdaa8077f",
+          "EV-48075ca70a5458ec",
+          "EV-63dee9f748531f08"
+        ],
+        "company_entity_id": "FICO-oxmiq",
+        "company_canonical_entity_id": "",
+        "company_name": "OXMIQ",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$35 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 35000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3500 万美元"
+        },
+        "announced_at": "2026-07-01",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方（战略IP合作伙伴）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2ac2183ceab4ddd7",
+            "source_url": "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a",
+            "source_title": "OXMIQ Raises $35 Million to Scale OxCore™ Architecture — OXMIQ",
+            "source_content_hash": "b11173439b5612a7",
+            "quote": "Intel Capital rounds out the group as a strategic IP partner, adding to OXMIQ's design and engineering depth.",
+            "quote_hash": "da54bd89e1be8487b6860476d59b89bb31508895b2f511f2c9110944d33f2d4c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-95988571a59872b4",
+        "funding_insight_id": "FI-35b63d84f1f7c2b0",
+        "event_ids": [
+          "EV-450f624a6a6446ce",
+          "EV-44c9a50b99c76a70"
+        ],
+        "company_entity_id": "EN-245f1e177c5169cb",
+        "company_canonical_entity_id": "",
+        "company_name": "Hark",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$700M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7 亿美元"
+        },
+        "announced_at": "2026-05-21",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9b94f245fa27a161",
+            "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
+            "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
+            "source_content_hash": "e91739ca23d21469",
+            "quote": "Intel Capital",
+            "quote_hash": "31c11f9aa7b9e216830bfa1aca1ac6bf8d0cdd6fe9082147ea6f01879eeb6cf0"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-fbda7a24ef3d8ef8",
+        "source_url": "https://vtechxhub.com/insights/prime-intellect-raises-130m-series-power-enterprise-ai",
+        "source_title": "Prime Intellect Raises $130M for Enterprise AI Development 2026",
+        "source_content_hash": "56b4a47eeb530513",
+        "quote": "Radical Ventures led the charge, with Nvidia Ventures and Intel Capital jumping in.",
+        "quote_hash": "24bdc3b7a36b729c317ee6fed8d24a6aab20830cfcd7d9956ef47fab33d60d6b"
+      },
+      {
+        "source_id": "FISRC-2ac2183ceab4ddd7",
+        "source_url": "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a",
+        "source_title": "OXMIQ Raises $35 Million to Scale OxCore™ Architecture — OXMIQ",
+        "source_content_hash": "b11173439b5612a7",
+        "quote": "Intel Capital rounds out the group as a strategic IP partner, adding to OXMIQ's design and engineering depth.",
+        "quote_hash": "da54bd89e1be8487b6860476d59b89bb31508895b2f511f2c9110944d33f2d4c"
+      },
+      {
+        "source_id": "FISRC-9b94f245fa27a161",
+        "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
+        "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
+        "source_content_hash": "e91739ca23d21469",
+        "quote": "Intel Capital",
+        "quote_hash": "31c11f9aa7b9e216830bfa1aca1ac6bf8d0cdd6fe9082147ea6f01879eeb6cf0"
+      }
+    ]
+  }
+}

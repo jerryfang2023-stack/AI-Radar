@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-4e4d206522f9eb",
+    "name": "Tenacity Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2026-05-20",
+    "latest_disclosed_at": "2026-06-02",
+    "role_counts": {
+      "participant": 2
+    },
+    "round_codes": [
+      "seed",
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-58b507456c52c9b3",
+        "canonical_entity_id": "EN-58b507456c52c9b3",
+        "name": "Archestra"
+      },
+      {
+        "entity_id": "EN-ce65fa41b16c33ff",
+        "canonical_entity_id": "",
+        "name": "Viktor"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-9e7305c63c77fa74",
+        "funding_insight_id": "FI-fe82f871887d3c1f",
+        "event_ids": [
+          "EV-f1a605a25af30dc5",
+          "EV-6ae3594aadfcd3d8"
+        ],
+        "company_entity_id": "EN-58b507456c52c9b3",
+        "company_canonical_entity_id": "EN-58b507456c52c9b3",
+        "company_name": "Archestra",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$10M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-06-02",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-08f2020b7eca8380",
+            "source_url": "https://tech.eu/2026/06/02/archestraai-raises-10m-to-unlock-next-gen-agentic-use-case/",
+            "source_title": "Archestra.AI 获1000万美元融资，解锁下一代自主代理应用场景 - Tech.eu",
+            "source_content_hash": "e9f5a2a28919e9c2",
+            "quote": "and Tenacity Capital",
+            "quote_hash": "055e17376c88667858fdd8cec241371ceeb7d7d4b473403a5011b705fd37648d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-dc0b72f94353dbe4",
+        "funding_insight_id": "FI-664cc90f57688153",
+        "event_ids": [
+          "EV-44a4e92c03a31ab1"
+        ],
+        "company_entity_id": "EN-ce65fa41b16c33ff",
+        "company_canonical_entity_id": "",
+        "company_name": "Viktor",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "€64.7 million ($75 million)",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 64700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6470 万欧元"
+        },
+        "announced_at": "2026-05-20",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce83b857608dabeb",
+            "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",
+            "source_title": "AI 同事初创公司 Viktor 在推出后 10 周内达到 1290 万欧元营收运行率，随后完成 6470 万欧元 A 轮融资",
+            "source_content_hash": "bc6dd70ea1b6ac85",
+            "quote": "with participation from Bek Ventures, Kaya VC, Inovo VC and Tenacity Capital",
+            "quote_hash": "6752f5a8c3985f31ec1fa15bf73da45d97784fec886f5e9c584f7f85a880fab6"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-08f2020b7eca8380",
+        "source_url": "https://tech.eu/2026/06/02/archestraai-raises-10m-to-unlock-next-gen-agentic-use-case/",
+        "source_title": "Archestra.AI 获1000万美元融资，解锁下一代自主代理应用场景 - Tech.eu",
+        "source_content_hash": "e9f5a2a28919e9c2",
+        "quote": "and Tenacity Capital",
+        "quote_hash": "055e17376c88667858fdd8cec241371ceeb7d7d4b473403a5011b705fd37648d"
+      },
+      {
+        "source_id": "FISRC-ce83b857608dabeb",
+        "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",
+        "source_title": "AI 同事初创公司 Viktor 在推出后 10 周内达到 1290 万欧元营收运行率，随后完成 6470 万欧元 A 轮融资",
+        "source_content_hash": "bc6dd70ea1b6ac85",
+        "quote": "with participation from Bek Ventures, Kaya VC, Inovo VC and Tenacity Capital",
+        "quote_hash": "6752f5a8c3985f31ec1fa15bf73da45d97784fec886f5e9c584f7f85a880fab6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-042468a8416e87",
+    "name": "Google Ventures (GV)",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-01-13",
+    "latest_disclosed_at": "2026-06-17",
+    "role_counts": {
+      "historical_or_ambiguous": 2
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-583eea2ed8344a29",
+        "funding_insight_id": "FI-479f9d5c1123dba2",
+        "event_ids": [
+          "EV-a00763037a94d512"
+        ],
+        "company_entity_id": "FICO-7e1d6c73932aa9b0",
+        "company_canonical_entity_id": "",
+        "company_name": "Odyssey ML",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "3.1亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 310000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.1 亿美元"
+        },
+        "announced_at": "2026-06-17",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-413e994d081f8e0f",
+            "source_url": "https://awesomeagents.ai/news/odyssey-amazon-310m-world-models/",
+            "source_title": "Odyssey Raises $310M as Amazon Bets on World Models | Awesome Agents",
+            "source_content_hash": "37401997b6a46d75",
+            "quote": "Seed $9M undisclosed Google Ventures, DCVC, Air Street Capital 2024",
+            "quote_hash": "c72c02150af958eba4fc5f78b4a6886cfc8ef25883e8c439f9b74e131010d193"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-2d5ca37928318bf6",
+        "funding_insight_id": "FI-0386397f33fcf55a",
+        "event_ids": [
+          "EV-fdfd4bf00571bb35"
+        ],
+        "company_entity_id": "EN-8e8cc11d1475231b",
+        "company_canonical_entity_id": "",
+        "company_name": "Witness AI",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "$58 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 58000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5800 万美元"
+        },
+        "announced_at": "2026-01-13",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方（A轮联合领投）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4849ec2aa0a0f909",
+            "source_url": "https://witness.ai/resources/witnessai-raises-58-million-for-global-expansion-and-announces-new-ways-to-secure-ai-agents/",
+            "source_title": "WitnessAI Raises $58 Million for Global Expansion and Announces New Ways to Secure AI Agents - WitnessAI",
+            "source_content_hash": "430882b8c9d8a2d3",
+            "quote": "WitnessAI last raised $27.5 million in a Series A funding round in May 2024, co-led by Google Ventures and Ballistic Ventures.",
+            "quote_hash": "eaaece4b86e7686dbe9acf4743ba1557ba8c669cd23dae4c2f8b580b96ccb483"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-413e994d081f8e0f",
+        "source_url": "https://awesomeagents.ai/news/odyssey-amazon-310m-world-models/",
+        "source_title": "Odyssey Raises $310M as Amazon Bets on World Models | Awesome Agents",
+        "source_content_hash": "37401997b6a46d75",
+        "quote": "Seed $9M undisclosed Google Ventures, DCVC, Air Street Capital 2024",
+        "quote_hash": "c72c02150af958eba4fc5f78b4a6886cfc8ef25883e8c439f9b74e131010d193"
+      },
+      {
+        "source_id": "FISRC-4849ec2aa0a0f909",
+        "source_url": "https://witness.ai/resources/witnessai-raises-58-million-for-global-expansion-and-announces-new-ways-to-secure-ai-agents/",
+        "source_title": "WitnessAI Raises $58 Million for Global Expansion and Announces New Ways to Secure AI Agents - WitnessAI",
+        "source_content_hash": "430882b8c9d8a2d3",
+        "quote": "WitnessAI last raised $27.5 million in a Series A funding round in May 2024, co-led by Google Ventures and Ballistic Ventures.",
+        "quote_hash": "eaaece4b86e7686dbe9acf4743ba1557ba8c669cd23dae4c2f8b580b96ccb483"
+      }
+    ]
+  }
+}

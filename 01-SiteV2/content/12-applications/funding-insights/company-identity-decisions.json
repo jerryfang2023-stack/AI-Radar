@@ -1,7 +1,7 @@
 {
   "meta": {
     "schema_version": "FUNDING-COMPANY-IDENTITY-DECISION-V1.0",
-    "updated_at": "2026-08-02T00:00:00+08:00",
+    "updated_at": "2026-08-08T16:00:00+08:00",
     "rule": "Funding Insights may merge public cards only after an explicit identity review. The decision changes the application projection, preserves every source event, and does not mutate Data Center V4 canonical facts."
   },
   "decisions": [
@@ -64,6 +64,142 @@
         "quote": "Now, the three are bringing a similar system to e-commerce with their new startup, Malachyte . The company on Thursday said it had raised $10 million in seed funding to scale distribution and hire more product and commercial leaders."
       },
       "rationale": "Data Center V4 抽取的实体名来自标题描述；原文明确融资主体是三位前 Spotify 员工创立的新公司 Malachyte。Funding Insights 前台应展示公司名 Malachyte，同时保留原事件与实体来源。"
+    },
+    {
+      "decision_id": "FICID-GRADIUM",
+      "entity_id": "EN-8d4321d936320802",
+      "application_entity_id": "FICO-gradium",
+      "current": { "name": "Gradium", "catalog_type": "company" },
+      "match_names": ["Gradium"],
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": { "name": "Gradium", "catalog_type": "company" },
+      "review_status": "accepted",
+      "reviewed_at": "2026-08-08",
+      "evidence": {
+        "source_url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia",
+        "quote": "Gradium, a Paris-based startup that offers voice AI models"
+      },
+      "rationale": "融资主体原文明确为 Gradium；抽取实体 ID 错连到 NVIDIA，仅在融资应用投影中纠正。"
+    },
+    {
+      "decision_id": "FICID-UPSCALE-AI",
+      "entity_id": "EN-8d4321d936320802",
+      "application_entity_id": "FICO-upscale-ai",
+      "current": { "name": "Upscale AI", "catalog_type": "company" },
+      "match_names": ["Upscale AI"],
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": { "name": "Upscale AI", "catalog_type": "company" },
+      "review_status": "accepted",
+      "reviewed_at": "2026-08-08",
+      "evidence": {
+        "source_url": "https://upscale.com/blogs/upscale-ai-adds-190-million-in-extension-to-series-a-reaching-half-billion-dollars-in-total-funding?from_theconsensus=1",
+        "quote": "A pure-play AI networking infrastructure company"
+      },
+      "rationale": "融资主体为 Upscale AI；NVIDIA 是错误实体链接，应用层身份必须隔离。"
+    },
+    {
+      "decision_id": "FICID-ETCHED",
+      "entity_id": "EN-9cb45a27a2808c01",
+      "application_entity_id": "FICO-etched",
+      "current": { "name": "Etched", "catalog_type": "company" },
+      "match_names": ["Etched", "Etched, Inc.", "Nvidia rival Etched"],
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": { "name": "Etched", "catalog_type": "company" },
+      "review_status": "accepted",
+      "reviewed_at": "2026-08-08",
+      "evidence": {
+        "source_url": "https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/",
+        "quote": "Etched, the AI chip startup founded by three Harvard dropouts in 2022"
+      },
+      "rationale": "Etched 的多条披露存在不同实体 ID 与标题化名称，按公司原文统一为应用层稳定身份。"
+    },
+    {
+      "decision_id": "FICID-NP-COMPANY",
+      "entity_id": "EN-c04bd5ebd10ab696",
+      "application_entity_id": "FICO-np-company",
+      "current": { "name": "NP Company", "catalog_type": "company" },
+      "match_names": ["NP Company", "NP Co."],
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": { "name": "NP Company", "catalog_type": "company" },
+      "review_status": "accepted",
+      "reviewed_at": "2026-08-08",
+      "evidence": {
+        "source_url": "https://tech.eu/2026/06/02/backed-by-mistral-ai-founders-np-company-secures-eur6m-pre-seed-to-advance-ai-for-engineering/",
+        "quote": "NP Company (NP Co.), an AI-native simulation software company"
+      },
+      "rationale": "NP Company 是独立融资主体，Mistral AI 仅为相关投资人背景，不能合并融资历史。"
+    },
+    {
+      "decision_id": "FICID-OXMIQ",
+      "entity_id": "EN-d3d151f3f8e7f9ed",
+      "application_entity_id": "FICO-oxmiq",
+      "current": { "name": "OXMIQ", "catalog_type": "company" },
+      "match_names": ["OXMIQ", "OXMIQ Labs", "OXMIQ Labs Inc.", "Oxmiq Labs Inc.", "Raja Koduri’s Oxmiq", "Raja Koduri's Oxmiq Labs"],
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": { "name": "OXMIQ", "catalog_type": "company" },
+      "review_status": "accepted",
+      "reviewed_at": "2026-08-08",
+      "evidence": {
+        "source_url": "https://www.hpcwire.com/off-the-wire/oxmiq-raises-35m-to-scale-oxcoretm-architecture/",
+        "quote": "OXMIQ Labs Inc., a unified GPU and AI architecture company founded by Raja Koduri"
+      },
+      "rationale": "四条披露的公司名、金额与日期一致，均指向 OXMIQ Labs。"
+    },
+    {
+      "decision_id": "FICID-NETRIS",
+      "entity_id": "EN-34bdfa9bfd563edb",
+      "application_entity_id": "FICO-netris",
+      "current": { "name": "Netris", "catalog_type": "company" },
+      "match_names": ["Netris", "Andreessen Horowitz Leads Netris"],
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": { "name": "Netris", "catalog_type": "company" },
+      "review_status": "accepted",
+      "reviewed_at": "2026-08-08",
+      "evidence": {
+        "source_url": "https://netris.io/blog/andreessen-horowitz-leads-netris-series-a-to-accelerate-adoption-of-gpu-network-automation-and-multi-tenancy-across-ai-cloud-operators-worldwide/",
+        "quote": "Netris is the leading provider of network automation and multi-tenancy for AI infrastructure"
+      },
+      "rationale": "标题化实体名与 Netris 公司原文属于同一融资主体。"
+    },
+    {
+      "decision_id": "FICID-WONDERFUL",
+      "entity_id": "EN-ee04228c5c6d8b08",
+      "application_entity_id": "FICO-wonderful",
+      "current": { "name": "Wonderful", "catalog_type": "company" },
+      "match_names": ["Wonderful", "Enterprise AI", "Enterprise AI Agent"],
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": { "name": "Wonderful", "catalog_type": "company" },
+      "review_status": "accepted",
+      "reviewed_at": "2026-08-08",
+      "evidence": {
+        "source_url": "https://www.indexventures.com/perspectives/index-ventures-triples-down-as-wonderful-raises-150m-series-b-to-scale-its-hyper-local-enterprise-ai-platform/",
+        "quote": "Wonderful is an enterprise AI agent platform"
+      },
+      "rationale": "Enterprise AI 等为描述性抽取名称，融资主体原文为 Wonderful。"
+    },
+    {
+      "decision_id": "FICID-SYCAMORE",
+      "entity_id": "EN-4479ee1b529c5e82",
+      "application_entity_id": "FICO-sycamore",
+      "current": { "name": "Sycamore", "catalog_type": "company" },
+      "match_names": ["Sycamore", "Sycamore Labs", "Sycamore Labs, Inc.", "Former Coatue partner"],
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": { "name": "Sycamore", "catalog_type": "company" },
+      "review_status": "accepted",
+      "reviewed_at": "2026-08-08",
+      "evidence": {
+        "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
+        "quote": "Sycamore is building the trusted operating system for autonomous enterprise AI."
+      },
+      "rationale": "三条同日同额种子轮披露均指向 Sycamore，标题描述不作为独立公司。"
     }
   ]
 }

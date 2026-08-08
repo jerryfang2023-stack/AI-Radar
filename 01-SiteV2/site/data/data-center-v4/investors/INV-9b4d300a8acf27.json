@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-9b4d300a8acf27",
+    "name": "Pat Gelsinger",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-05-13",
+    "latest_disclosed_at": "2026-05-13",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-a3e53166c9cfe4bf",
+        "funding_insight_id": "FI-27c50f0e1e7dd316",
+        "event_ids": [
+          "EV-70a994b9339f92e7"
+        ],
+        "company_entity_id": "EN-8da5eafb322ee86e",
+        "company_canonical_entity_id": "",
+        "company_name": "Fractile",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "2.2亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 220000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.2 亿美元"
+        },
+        "announced_at": "2026-05-13",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-a09bc7e6d17a0b0f",
+            "source_url": "https://www.electronicsweekly.com/news/business/uks-fractile-raises-220m-for-inference-ics-2026-05/",
+            "source_title": "UK’s Fractile raises $220m for inference ICs ⋆ Electronics Weekly",
+            "source_content_hash": "918bf4246831a0d6",
+            "quote": "angel investors including Pat Gelsinger",
+            "quote_hash": "af9dc27913bf11bb9edab6867f444ea303e1a1d6889fb1e67dc03883fb486a12"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-a09bc7e6d17a0b0f",
+        "source_url": "https://www.electronicsweekly.com/news/business/uks-fractile-raises-220m-for-inference-ics-2026-05/",
+        "source_title": "UK’s Fractile raises $220m for inference ICs ⋆ Electronics Weekly",
+        "source_content_hash": "918bf4246831a0d6",
+        "quote": "angel investors including Pat Gelsinger",
+        "quote_hash": "af9dc27913bf11bb9edab6867f444ea303e1a1d6889fb1e67dc03883fb486a12"
+      }
+    ]
+  }
+}

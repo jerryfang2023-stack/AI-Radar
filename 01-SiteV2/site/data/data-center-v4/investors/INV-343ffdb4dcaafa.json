@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-343ffdb4dcaafa",
+    "name": "凯联资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-04-16",
+    "latest_disclosed_at": "2026-04-16",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "pre_series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-39ba5f9dcab4e98a",
+        "canonical_entity_id": "EN-39ba5f9dcab4e98a",
+        "name": "它石智航"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-93ca8ff4ce333e9f",
+        "funding_insight_id": "FI-5c529fe1ecb9dd07",
+        "event_ids": [
+          "EV-1188b1585b835fe1"
+        ],
+        "company_entity_id": "EN-39ba5f9dcab4e98a",
+        "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
+        "company_name": "它石智航",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超4.5亿美元（约30亿元）",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 450000000,
+          "min_value": 450000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 4.5 亿美元"
+        },
+        "announced_at": "2026-04-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f4259d29fd364076",
+            "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",
+            "source_title": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网",
+            "source_content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
+            "quote": "美团龙珠、中金资本、凯联资本、东方富海、钧山投资等知名财务基金跟投",
+            "quote_hash": "b3b9c68d94864a2a92f1b96221e71974952e1eb702fac2cdea4e04de605a537a"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-f4259d29fd364076",
+        "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",
+        "source_title": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网",
+        "source_content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
+        "quote": "美团龙珠、中金资本、凯联资本、东方富海、钧山投资等知名财务基金跟投",
+        "quote_hash": "b3b9c68d94864a2a92f1b96221e71974952e1eb702fac2cdea4e04de605a537a"
+      }
+    ]
+  }
+}

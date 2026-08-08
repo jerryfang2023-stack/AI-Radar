@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-b7b347539a93ad",
+    "name": "LeumiTech77",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-08",
+    "latest_disclosed_at": "2026-07-08",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-478cc1059b738832",
+        "canonical_entity_id": "",
+        "name": "Alta"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-3aa4ca9272483f23",
+        "funding_insight_id": "FI-690521fe943be555",
+        "event_ids": [
+          "EV-d642ec7a9ca5eb0f",
+          "EV-18304fc17b31148e"
+        ],
+        "company_entity_id": "EN-478cc1059b738832",
+        "company_canonical_entity_id": "",
+        "company_name": "Alta",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "2500万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 25000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2500 万美元"
+        },
+        "announced_at": "2026-07-08",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9661f69b0104e76e",
+            "source_url": "https://prnewswire.com/news-releases/alta-raises-25m-to-redefine-the-go-to-market-architecture-for-revenue-teams-302820618.html",
+            "source_title": "Alta 完成 2500 万美元融资，用于重塑收入团队的市场进入架构",
+            "source_content_hash": "36ef58eefd2bf0d4",
+            "quote": "with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures",
+            "quote_hash": "bb6bdd242d277957bb00a906cb2f149887d14dd972545d84aa35fd2d5e951977"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-9661f69b0104e76e",
+        "source_url": "https://prnewswire.com/news-releases/alta-raises-25m-to-redefine-the-go-to-market-architecture-for-revenue-teams-302820618.html",
+        "source_title": "Alta 完成 2500 万美元融资，用于重塑收入团队的市场进入架构",
+        "source_content_hash": "36ef58eefd2bf0d4",
+        "quote": "with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures",
+        "quote_hash": "bb6bdd242d277957bb00a906cb2f149887d14dd972545d84aa35fd2d5e951977"
+      }
+    ]
+  }
+}

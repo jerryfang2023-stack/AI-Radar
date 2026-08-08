@@ -1,0 +1,273 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-b22b5f121ec717",
+    "name": "Alumni Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 4,
+    "first_disclosed_at": "2022-12-14",
+    "latest_disclosed_at": "2026-07-16",
+    "role_counts": {
+      "participant": 4
+    },
+    "round_codes": [
+      "multi_round",
+      "pre_seed",
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-6c425df9139ab70a",
+        "canonical_entity_id": "",
+        "name": "Empromptu"
+      },
+      {
+        "entity_id": "EN-adda212f0afa4781",
+        "canonical_entity_id": "",
+        "name": "EnCharge AI"
+      },
+      {
+        "entity_id": "EN-caaa8e02be54cfc9",
+        "canonical_entity_id": "",
+        "name": "Katalyze AI"
+      },
+      {
+        "entity_id": "EN-9a1b3d418cbbdf96",
+        "canonical_entity_id": "",
+        "name": "logcat.ai"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-51ff3c91c1b9833a",
+        "funding_insight_id": "FI-ef0bfab3fad9ac5a",
+        "event_ids": [
+          "EV-b678e91bc60fb0f0"
+        ],
+        "company_entity_id": "EN-9a1b3d418cbbdf96",
+        "company_canonical_entity_id": "",
+        "company_name": "logcat.ai",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "pre-seed",
+        "amount_original": "$2.55M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2550000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "255 万美元"
+        },
+        "announced_at": "2026-07-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-adb92a0723de45a1",
+            "source_url": "https://blog.logcat.ai/2026/07/16/logcat.ai-raises-2.55m-to-build-the-future-of-device-systems-engineering/",
+            "source_title": "logcat.ai 获 255 万美元融资，打造设备系统工程未来",
+            "source_content_hash": "1dcd4855bd96a462",
+            "quote": "with participation from Act One Ventures, TheFounderVC, Shorewind Capital, Clayoquot Capital, and Alumni Ventures",
+            "quote_hash": "4203370d402238a15912e531fe70d3001f6dd4f8566c942b203406c38e70dbf9"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-7c133be7e2e4bdb0",
+        "funding_insight_id": "FI-18186044521daced",
+        "event_ids": [
+          "EV-6e06cfa28f76a76f"
+        ],
+        "company_entity_id": "EN-caaa8e02be54cfc9",
+        "company_canonical_entity_id": "",
+        "company_name": "Katalyze AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$10.5M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1050 万美元"
+        },
+        "announced_at": "2026-07-06",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d887dae741d872b9",
+            "source_url": "https://aijourn.com/katalyze-ai-raises-10-5m-led-by-bonfire-ventures-deploy-agentic-operating-system-for-pharma/",
+            "source_title": "Katalyze AI获Bonfire Ventures领投1050万美元，为制药业部署代理操作系统",
+            "source_content_hash": "d3fbadee56dcb775",
+            "quote": "the seed round also saw participation from Inovia Capital, Ripple Ventures, Alumni Ventures",
+            "quote_hash": "8363d17886a4d9d21585a3831ffea903eefb32eb3b73964c4a06d6f72a862d3d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-cc66e36e1eb57e35",
+        "funding_insight_id": "FI-99bbc6c0300806f4",
+        "event_ids": [
+          "EV-a7dfdd426fe2a74d"
+        ],
+        "company_entity_id": "EN-6c425df9139ab70a",
+        "company_canonical_entity_id": "",
+        "company_name": "Empromptu",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "pre-seed",
+        "amount_original": "$2M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "200 万美元"
+        },
+        "announced_at": "2025-12-09",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-79832d8eb3d1b153",
+            "source_url": "https://techcrunch.com/2025/12/09/empromptu-raises-2m-pre-seed-to-help-enterprises-build-ai-apps/",
+            "source_title": "Empromptu 获 200 万美元种子轮融资，助力企业构建 AI 应用",
+            "source_content_hash": "5799cff742ce8e79",
+            "quote": "Zeal Capital, Alumni Ventures, FoundersEdge, and South Loop also participated.",
+            "quote_hash": "335035a545f17d505b7bd23acb4d79e69a2090a2266208a90d7bfbd9143a45ea"
+          },
+          {
+            "source_id": "FISRC-99e63c0e1fbdfa5c",
+            "source_url": "https://www.finsmes.com/2025/12/empromptu-raises-2m-in-pre-seed-funding.html",
+            "source_title": "Empromptu Raises $2M in Pre-Seed Funding",
+            "source_content_hash": "5a0da7af4b58af89",
+            "quote": "with participation from Alumni Ventures, Founders Edge, Rogue Women VC, South Loop, and Zeal Capital",
+            "quote_hash": "51accbd697c3fc2966ad47f6d7ed7f3145da46cc21f2e1c3e5dae993a82e2bab"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-875b9876041b6628",
+        "funding_insight_id": "FI-dd9835a52918a1be",
+        "event_ids": [
+          "EV-ef2ac2c9b425491c"
+        ],
+        "company_entity_id": "EN-adda212f0afa4781",
+        "company_canonical_entity_id": "",
+        "company_name": "EnCharge AI",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$21.7 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 21700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2170 万美元"
+        },
+        "announced_at": "2022-12-14",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-cb0549fad590a0ab",
+            "source_url": "https://www.techtimes.com/articles/284896/20221214/encharge-ai-raises-21-7m-produce-hardware-edge-computing.htm",
+            "source_title": "EnCharge AI Raises $21.7 Million to Produce AI Hardware for Edge Computing",
+            "source_content_hash": "ccb1b70704426c90",
+            "quote": "It included contributions from AlleyCorp, Scout Ventures, Silicon Catalyst Angels, Schams Ventures, E14 Fund, and Alumni Ventures.",
+            "quote_hash": "b99f0a2b7196b3b18420ffc6a155257fccb8adea7be2e2620c1daca7104040e6"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-adb92a0723de45a1",
+        "source_url": "https://blog.logcat.ai/2026/07/16/logcat.ai-raises-2.55m-to-build-the-future-of-device-systems-engineering/",
+        "source_title": "logcat.ai 获 255 万美元融资，打造设备系统工程未来",
+        "source_content_hash": "1dcd4855bd96a462",
+        "quote": "with participation from Act One Ventures, TheFounderVC, Shorewind Capital, Clayoquot Capital, and Alumni Ventures",
+        "quote_hash": "4203370d402238a15912e531fe70d3001f6dd4f8566c942b203406c38e70dbf9"
+      },
+      {
+        "source_id": "FISRC-d887dae741d872b9",
+        "source_url": "https://aijourn.com/katalyze-ai-raises-10-5m-led-by-bonfire-ventures-deploy-agentic-operating-system-for-pharma/",
+        "source_title": "Katalyze AI获Bonfire Ventures领投1050万美元，为制药业部署代理操作系统",
+        "source_content_hash": "d3fbadee56dcb775",
+        "quote": "the seed round also saw participation from Inovia Capital, Ripple Ventures, Alumni Ventures",
+        "quote_hash": "8363d17886a4d9d21585a3831ffea903eefb32eb3b73964c4a06d6f72a862d3d"
+      },
+      {
+        "source_id": "FISRC-79832d8eb3d1b153",
+        "source_url": "https://techcrunch.com/2025/12/09/empromptu-raises-2m-pre-seed-to-help-enterprises-build-ai-apps/",
+        "source_title": "Empromptu 获 200 万美元种子轮融资，助力企业构建 AI 应用",
+        "source_content_hash": "5799cff742ce8e79",
+        "quote": "Zeal Capital, Alumni Ventures, FoundersEdge, and South Loop also participated.",
+        "quote_hash": "335035a545f17d505b7bd23acb4d79e69a2090a2266208a90d7bfbd9143a45ea"
+      },
+      {
+        "source_id": "FISRC-99e63c0e1fbdfa5c",
+        "source_url": "https://www.finsmes.com/2025/12/empromptu-raises-2m-in-pre-seed-funding.html",
+        "source_title": "Empromptu Raises $2M in Pre-Seed Funding",
+        "source_content_hash": "5a0da7af4b58af89",
+        "quote": "with participation from Alumni Ventures, Founders Edge, Rogue Women VC, South Loop, and Zeal Capital",
+        "quote_hash": "51accbd697c3fc2966ad47f6d7ed7f3145da46cc21f2e1c3e5dae993a82e2bab"
+      },
+      {
+        "source_id": "FISRC-cb0549fad590a0ab",
+        "source_url": "https://www.techtimes.com/articles/284896/20221214/encharge-ai-raises-21-7m-produce-hardware-edge-computing.htm",
+        "source_title": "EnCharge AI Raises $21.7 Million to Produce AI Hardware for Edge Computing",
+        "source_content_hash": "ccb1b70704426c90",
+        "quote": "It included contributions from AlleyCorp, Scout Ventures, Silicon Catalyst Angels, Schams Ventures, E14 Fund, and Alumni Ventures.",
+        "quote_hash": "b99f0a2b7196b3b18420ffc6a155257fccb8adea7be2e2620c1daca7104040e6"
+      }
+    ]
+  }
+}

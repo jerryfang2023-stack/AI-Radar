@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-0c06946e04b55b",
+    "name": "Founders You Should Know",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-07-15",
+    "latest_disclosed_at": "2026-07-15",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-dbf01afe9c62d772",
+        "funding_insight_id": "FI-001732eadec94e4e",
+        "event_ids": [
+          "EV-64fb6d791e19d10a"
+        ],
+        "company_entity_id": "EN-b0532e1af75cc4ab",
+        "company_canonical_entity_id": "EN-b0532e1af75cc4ab",
+        "company_name": "Rime",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$24M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 24000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2400 万美元"
+        },
+        "announced_at": "2026-07-15",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-bf64aef858152292",
+            "source_url": "https://entrepreneurloop.com/rime-ai-voice-funding-24m-series-a-enterprise-speech/",
+            "source_title": "Rime AI Voice Funding: $24M to Build Enterprise Speech-to-Speech",
+            "source_content_hash": "c698b2b6158dd48c",
+            "quote": "in May 2025, Rime raised a $5.5 million seed round led by Unusual Ventures, alongside Founders You Should Know and Cadenza Capital",
+            "quote_hash": "ae62133560ff9be13ea8aa685146844e0d017cc195ad72b8dddb2ede1993d230"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-bf64aef858152292",
+        "source_url": "https://entrepreneurloop.com/rime-ai-voice-funding-24m-series-a-enterprise-speech/",
+        "source_title": "Rime AI Voice Funding: $24M to Build Enterprise Speech-to-Speech",
+        "source_content_hash": "c698b2b6158dd48c",
+        "quote": "in May 2025, Rime raised a $5.5 million seed round led by Unusual Ventures, alongside Founders You Should Know and Cadenza Capital",
+        "quote_hash": "ae62133560ff9be13ea8aa685146844e0d017cc195ad72b8dddb2ede1993d230"
+      }
+    ]
+  }
+}

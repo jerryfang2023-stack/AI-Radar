@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-7fe737f86176e3",
+    "name": "Seligman Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 3,
+    "first_disclosed_at": "2026-05-28",
+    "latest_disclosed_at": "2026-08-01",
+    "role_counts": {
+      "co_lead": 1,
+      "lead": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "pre_seed",
+      "series_a",
+      "series_f"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-aa06a7dba2266341",
+        "canonical_entity_id": "",
+        "name": "Modiqo"
+      },
+      {
+        "entity_id": "EN-6907a22fafe13a63",
+        "canonical_entity_id": "",
+        "name": "SambaNova Systems"
+      },
+      {
+        "entity_id": "EN-65e9e514ecf0d270",
+        "canonical_entity_id": "",
+        "name": "Smallest.ai"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-30c31271c4c3b90b",
+        "funding_insight_id": "FI-af45f33c3a9b81b9",
+        "event_ids": [
+          "EV-914ca1cbc6359ce5"
+        ],
+        "company_entity_id": "EN-65e9e514ecf0d270",
+        "company_canonical_entity_id": "",
+        "company_name": "Smallest.ai",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "1300万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 13000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1300 万美元"
+        },
+        "announced_at": "2026-08-01",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-1284a14893cb26a9",
+            "source_url": "https://thecatalystonline.com/investment-funding/smallest-ai-expands-enterprise-voice-ai-with-new-funding/",
+            "source_title": "Smallest.ai 获新融资，扩展企业级语音 AI - The Catalyst",
+            "source_content_hash": "6b55dc3b9b331355",
+            "quote": "a $13 million Series A led by Seligman Ventures",
+            "quote_hash": "747ce6a44058bda0a67d5764ad79c100c426d9682f0df73df84993bbfd464f2b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-1d63282286e4ebdc",
+        "funding_insight_id": "FI-02775e1bb32805b0",
+        "event_ids": [
+          "EV-a8dc5c859946f336"
+        ],
+        "company_entity_id": "EN-6907a22fafe13a63",
+        "company_canonical_entity_id": "",
+        "company_name": "SambaNova Systems",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F (first close)",
+        "amount_original": "$1 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-07-08",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-dbf8259066547c8e",
+            "source_url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
+            "source_title": "AI 芯片制造商 SambaNova 以 110 亿美元估值融资 10 亿美元，距上一轮巨额融资仅 5 个月",
+            "source_content_hash": "e79999ca03a0833e",
+            "quote": "Other investors participating in the round include Seligman Ventures",
+            "quote_hash": "ced1c172bdfd97899692650f0e19d995ba4d44503122bc54c28c0c7a1d3d67b9"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3898c11ecda40fe5",
+        "funding_insight_id": "FI-fd5dbffc8602c9a9",
+        "event_ids": [
+          "EV-9775b60c38285615"
+        ],
+        "company_entity_id": "EN-aa06a7dba2266341",
+        "company_canonical_entity_id": "",
+        "company_name": "Modiqo",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "Pre-Seed",
+        "amount_original": "$3 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 万美元"
+        },
+        "announced_at": "2026-05-28",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-7dcc5e58c6026e99",
+            "source_url": "https://www.prnewswire.com/news-releases/modiqo-raises-pre-seed-round-to-bring-deterministic-ai-workflows-to-enterprises-at-a-fraction-of-the-token-cost-302784345.html",
+            "source_title": "Modiqo 完成种子轮融资，以极低代币成本为企业提供确定性 AI 工作流",
+            "source_content_hash": "776c62cfdeacb511",
+            "quote": "The round was co-led by Heavybit and Seligman Ventures",
+            "quote_hash": "9287b0f17e3430ffdc073d9479898b634c826ea84ecf0de5c2aa77133eec9c76"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1284a14893cb26a9",
+        "source_url": "https://thecatalystonline.com/investment-funding/smallest-ai-expands-enterprise-voice-ai-with-new-funding/",
+        "source_title": "Smallest.ai 获新融资，扩展企业级语音 AI - The Catalyst",
+        "source_content_hash": "6b55dc3b9b331355",
+        "quote": "a $13 million Series A led by Seligman Ventures",
+        "quote_hash": "747ce6a44058bda0a67d5764ad79c100c426d9682f0df73df84993bbfd464f2b"
+      },
+      {
+        "source_id": "FISRC-dbf8259066547c8e",
+        "source_url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
+        "source_title": "AI 芯片制造商 SambaNova 以 110 亿美元估值融资 10 亿美元，距上一轮巨额融资仅 5 个月",
+        "source_content_hash": "e79999ca03a0833e",
+        "quote": "Other investors participating in the round include Seligman Ventures",
+        "quote_hash": "ced1c172bdfd97899692650f0e19d995ba4d44503122bc54c28c0c7a1d3d67b9"
+      },
+      {
+        "source_id": "FISRC-7dcc5e58c6026e99",
+        "source_url": "https://www.prnewswire.com/news-releases/modiqo-raises-pre-seed-round-to-bring-deterministic-ai-workflows-to-enterprises-at-a-fraction-of-the-token-cost-302784345.html",
+        "source_title": "Modiqo 完成种子轮融资，以极低代币成本为企业提供确定性 AI 工作流",
+        "source_content_hash": "776c62cfdeacb511",
+        "quote": "The round was co-led by Heavybit and Seligman Ventures",
+        "quote_hash": "9287b0f17e3430ffdc073d9479898b634c826ea84ecf0de5c2aa77133eec9c76"
+      }
+    ]
+  }
+}

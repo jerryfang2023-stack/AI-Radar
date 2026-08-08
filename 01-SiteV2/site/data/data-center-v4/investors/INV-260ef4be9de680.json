@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-260ef4be9de680",
+    "name": "Morgan Creek Digital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2026-07-01",
+    "latest_disclosed_at": "2026-07-01",
+    "role_counts": {
+      "participant": 2
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "FICO-oxmiq",
+        "canonical_entity_id": "",
+        "name": "OXMIQ"
+      },
+      {
+        "entity_id": "EN-858b4458c482f7d2",
+        "canonical_entity_id": "",
+        "name": "Venice AI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-a4639367673fe741",
+        "funding_insight_id": "FI-0f332b05a9ce8b6f",
+        "event_ids": [
+          "EV-b3c7c4bff17063d8",
+          "EV-415b083fdaa8077f",
+          "EV-48075ca70a5458ec",
+          "EV-63dee9f748531f08"
+        ],
+        "company_entity_id": "FICO-oxmiq",
+        "company_canonical_entity_id": "",
+        "company_name": "OXMIQ",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$35 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 35000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3500 万美元"
+        },
+        "announced_at": "2026-07-01",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b7d7449114c23ca5",
+            "source_url": "https://www.hpcwire.com/off-the-wire/oxmiq-raises-35m-to-scale-oxcoretm-architecture/",
+            "source_title": "HPCwire - 自1987年起——报道全球最快计算机及其运营者",
+            "source_content_hash": "7277428ab4a1fd81",
+            "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital",
+            "quote_hash": "f885b1fb938999e03ded403bc6f1587379842bf4acb9ab15ec22174e21777602"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-6b53e1e8d7d0410d",
+        "funding_insight_id": "FI-2b699f33e9d207e8",
+        "event_ids": [
+          "EV-4f7462a365561bb5"
+        ],
+        "company_entity_id": "EN-858b4458c482f7d2",
+        "company_canonical_entity_id": "",
+        "company_name": "Venice AI",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "6500万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6500 万美元"
+        },
+        "announced_at": "2026-07-01",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d718182aef653666",
+            "source_url": "https://en.coinotag.com/venice-ai-token-vvv-surges-12-percent-1-billion-funding-round",
+            "source_title": "Venice AI Token VVV Surges 12% After $1 Billion Funding Round - COINOTAG",
+            "source_content_hash": "8c7c2fd7220f54ed",
+            "quote": "joined by Coinbase Ventures, North Island Ventures, Archetype, Morgan Creek Digital and Liquid 2 Ventures",
+            "quote_hash": "463b5c688051af8f6a0fbebecb308f842788fbbf5c7c7b116eec43ae70cfdfb4"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-b7d7449114c23ca5",
+        "source_url": "https://www.hpcwire.com/off-the-wire/oxmiq-raises-35m-to-scale-oxcoretm-architecture/",
+        "source_title": "HPCwire - 自1987年起——报道全球最快计算机及其运营者",
+        "source_content_hash": "7277428ab4a1fd81",
+        "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital",
+        "quote_hash": "f885b1fb938999e03ded403bc6f1587379842bf4acb9ab15ec22174e21777602"
+      },
+      {
+        "source_id": "FISRC-d718182aef653666",
+        "source_url": "https://en.coinotag.com/venice-ai-token-vvv-surges-12-percent-1-billion-funding-round",
+        "source_title": "Venice AI Token VVV Surges 12% After $1 Billion Funding Round - COINOTAG",
+        "source_content_hash": "8c7c2fd7220f54ed",
+        "quote": "joined by Coinbase Ventures, North Island Ventures, Archetype, Morgan Creek Digital and Liquid 2 Ventures",
+        "quote_hash": "463b5c688051af8f6a0fbebecb308f842788fbbf5c7c7b116eec43ae70cfdfb4"
+      }
+    ]
+  }
+}

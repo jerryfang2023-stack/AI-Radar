@@ -1,0 +1,676 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-f381c3151a9bb7",
+    "name": "General Catalyst",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 10,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 10,
+    "first_disclosed_at": "2025-03-03",
+    "latest_disclosed_at": "2026-06-25",
+    "role_counts": {
+      "historical_or_ambiguous": 2,
+      "lead": 6,
+      "participant": 4
+    },
+    "round_codes": [
+      "multi_round",
+      "seed",
+      "series_a",
+      "series_c",
+      "series_d",
+      "series_e"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-befc92b3a019d04c",
+        "canonical_entity_id": "",
+        "name": "AgentMail"
+      },
+      {
+        "entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "name": "Anthropic PBC"
+      },
+      {
+        "entity_id": "EN-2f88f41306209dd7",
+        "canonical_entity_id": "",
+        "name": "Avoca AI"
+      },
+      {
+        "entity_id": "EN-ac32f27ba7a1346f",
+        "canonical_entity_id": "",
+        "name": "Cognition"
+      },
+      {
+        "entity_id": "EN-450dcf23e621ff10",
+        "canonical_entity_id": "",
+        "name": "Engram"
+      },
+      {
+        "entity_id": "EN-049b3253f4a8e2eb",
+        "canonical_entity_id": "",
+        "name": "Factorial"
+      },
+      {
+        "entity_id": "EN-dc8a5a5bf80909de",
+        "canonical_entity_id": "",
+        "name": "General Intuition"
+      },
+      {
+        "entity_id": "EN-c04bd5ebd10ab696",
+        "canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "name": "Mistral AI"
+      },
+      {
+        "entity_id": "EN-e781481ff5ffe530",
+        "canonical_entity_id": "",
+        "name": "Nace.AI"
+      },
+      {
+        "entity_id": "EN-f5cfcb570b7edac2",
+        "canonical_entity_id": "",
+        "name": "Nexus Enterprises, Inc"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-7de0c03a9dd2a607",
+        "funding_insight_id": "FI-9e8f37e4b7cf28a5",
+        "event_ids": [
+          "EV-7283de3f3a76d22b"
+        ],
+        "company_entity_id": "EN-dc8a5a5bf80909de",
+        "company_canonical_entity_id": "",
+        "company_name": "General Intuition",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$320 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 320000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.2 亿美元"
+        },
+        "announced_at": "2026-06-25",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1fcc20a8b95a7aec",
+            "source_url": "https://techcrunch.com/2026/06/25/from-fortnite-to-robots-general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world",
+            "source_title": "General Intuition 完成 3.2 亿美元融资，用游戏数据训练通用 AI 智能体",
+            "source_content_hash": "01b9cc29b285066d",
+            "quote": "with participation from General Catalyst",
+            "quote_hash": "87bf9a8cee415ae8aa119075ce53dc29890588ef9e8c4f58553ba01180d40993"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f0e53763bc2abb5a",
+        "funding_insight_id": "FI-bff055b65fdb260b",
+        "event_ids": [
+          "EV-20d762872664fddb"
+        ],
+        "company_entity_id": "EN-450dcf23e621ff10",
+        "company_canonical_entity_id": "",
+        "company_name": "Engram",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "$98M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 98000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9800 万美元"
+        },
+        "announced_at": "2026-06-23",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-709d518a9cc449f2",
+            "source_url": "https://www.vktr.com/ai-news/engram-launches-with-98m-to-give-enterprise-ai-memory/",
+            "source_title": "Engram Builds Enterprise AI Memory Layer",
+            "source_content_hash": "f18a33f76104f554",
+            "quote": "emerged from stealth on June 23 with $98 million in funding co-led by General Catalyst and Modern Capital.",
+            "quote_hash": "7396fd22e5914332bfb4e95b5d54d556ac8d008ff51ca34abbdf7b5d79786d9f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-231df2aabb782bd3",
+        "funding_insight_id": "FI-bff055b65fdb260b",
+        "event_ids": [
+          "EV-20d762872664fddb"
+        ],
+        "company_entity_id": "EN-450dcf23e621ff10",
+        "company_canonical_entity_id": "",
+        "company_name": "Engram",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "$98M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 98000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9800 万美元"
+        },
+        "announced_at": "2026-06-23",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-bcf01fbecb1fbdb6",
+            "source_url": "https://www.caplight.com/company/engram",
+            "source_title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
+            "source_content_hash": "24739161319ad4eb",
+            "quote": "General Catalyst Seed, Early Funding",
+            "quote_hash": "96f3584ab764d92902c27c282f58db0711a3971ad3b88b68da097d8485e156a5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ea762919b14ec83f",
+        "funding_insight_id": "FI-274044e5d2a8eb25",
+        "event_ids": [
+          "EV-7e1624d7df300713"
+        ],
+        "company_entity_id": "EN-049b3253f4a8e2eb",
+        "company_canonical_entity_id": "",
+        "company_name": "Factorial",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D 轮",
+        "amount_original": "1.5 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "announced_at": "2026-06-03",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-e9a8d571db654fd4",
+            "source_url": "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
+            "source_title": "Factorial 完成 1.5 亿美元 D 轮融资，估值达 25 亿美元，成为欧洲最具价值的 AI 智能体规模化企业之一",
+            "source_content_hash": "11af7531d19b66f0",
+            "quote": "The round is led by General Catalyst, which is making its first equity investment in Factorial",
+            "quote_hash": "b60ff6d091951b5033820c3e6c24ff6c66fe6ef1004947c9d8afb5cadc97dbbc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9c4d028c9fca5f88",
+        "funding_insight_id": "FI-5faa0336090509de",
+        "event_ids": [
+          "EV-5762fe51987bc5ff"
+        ],
+        "company_entity_id": "EN-ac32f27ba7a1346f",
+        "company_canonical_entity_id": "",
+        "company_name": "Cognition",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "超过 10 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": 1000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 10 亿美元"
+        },
+        "announced_at": "2026-05-27",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-c7d89f6e73a6fe5b",
+            "source_url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
+            "source_title": "AI 编程初创公司 Cognition 以 250 亿美元投前估值融资 10 亿美元",
+            "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+            "quote": "The round was led by Lux Capital, General Catalyst and 8VC",
+            "quote_hash": "e9c26401b28b95ba14901b7cd9d160600834299249f53acc81e8697d54b6f697"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-bd95770f6f7c1f82",
+        "funding_insight_id": "FI-f68564c4b5e7f54b",
+        "event_ids": [
+          "EV-917a390341b9fce6"
+        ],
+        "company_entity_id": "EN-e781481ff5ffe530",
+        "company_canonical_entity_id": "",
+        "company_name": "Nace.AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$21.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 21500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2150 万美元"
+        },
+        "announced_at": "2026-05-05",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-be2cfb1d0da46098",
+            "source_url": "https://www.businesswire.com/news/home/20260505315897/en/Nace.AI-Secures-%2421.5M-to-Build-a-Metamodel-That-Autonomously-Runs-Enterprise-Workflows-With-Experts-Providing-Final-Validation",
+            "source_title": "Nace.AI获2150万美元融资，构建自主运行企业工作流的元模型，专家提供最终验证",
+            "source_content_hash": "0d0424e2d2d31b08",
+            "quote": "with participation from General Catalyst",
+            "quote_hash": "87bf9a8cee415ae8aa119075ce53dc29890588ef9e8c4f58553ba01180d40993"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3f4301e627bc00fd",
+        "funding_insight_id": "FI-a308a87eb0e97da7",
+        "event_ids": [
+          "EV-dd3217aad32e6891"
+        ],
+        "company_entity_id": "EN-2f88f41306209dd7",
+        "company_canonical_entity_id": "",
+        "company_name": "Avoca AI",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "种子轮、A轮、B轮",
+        "amount_original": "超过1.25亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 125000000,
+          "min_value": 125000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1.25 亿美元"
+        },
+        "announced_at": "2026-04-27",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "B轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce3d5e20846f6f71",
+            "source_url": "https://www.prnewswire.com/news-releases/avoca-raises-125m-at-1b-valuation-to-power-americas-services-economy-with-ai-302753962.html",
+            "source_title": "Avoca 获投超1.25亿美元，估值达10亿美元，以AI驱动美国服务业经济",
+            "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
+            "quote": "The Series B funding was led by Meritech and General Catalyst",
+            "quote_hash": "bcb53c848d1b78b1efb58f1af73eaaa779195c1267261467e6639c004498f612"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b99c59792a0774b9",
+        "funding_insight_id": "FI-19731873c2b7d1c1",
+        "event_ids": [
+          "EV-c8928410f6c145eb"
+        ],
+        "company_entity_id": "EN-f5cfcb570b7edac2",
+        "company_canonical_entity_id": "",
+        "company_name": "Nexus Enterprises, Inc",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "$4.3M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "430 万美元"
+        },
+        "announced_at": "2026-03-31",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-14ff8eaae437ca5e",
+            "source_url": "https://www.globenewswire.com/de/news-release/2026/03/31/3265301/0/en/Nexus-Raises-4-3M-Seed-Round-to-Help-Business-Teams-Deploy-AI-Agents.html",
+            "source_title": "Nexus 获430万美元种子轮融资，助力业务团队部署",
+            "source_content_hash": "ed9ee46cde0da7e9",
+            "quote": "The round was led by General Catalyst",
+            "quote_hash": "9187a45ffe0ea1fbd2395a3bb7137ee3546c0a461603eb82f5ecb17497538472"
+          },
+          {
+            "source_id": "FISRC-8d734c978810d91a",
+            "source_url": "https://thenextweb.com/news/nexus-4-3m-seed",
+            "source_title": "Nexus raises $4.3M to make enterprise AI agent deployment",
+            "source_content_hash": "9f6d47f3b99dee7c",
+            "quote": "General Catalyst led the round.",
+            "quote_hash": "c0ad465782008d45a74714c5a990e2a70e3ca417603a8c7b2ed8efdd33740271"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f78fb9bce9a65207",
+        "funding_insight_id": "FI-94de7d23d9ebd5ba",
+        "event_ids": [
+          "EV-9055cb4fa2b4ee62"
+        ],
+        "company_entity_id": "EN-befc92b3a019d04c",
+        "company_canonical_entity_id": "",
+        "company_name": "AgentMail",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$6M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 6000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "600 万美元"
+        },
+        "announced_at": "2026-03-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-f961f60a13274764",
+            "source_url": "https://techcrunch.com/2026/03/10/agentmail-raises-6m-to-build-an-email-service-for-ai-agents/",
+            "source_title": "AgentMail 获 600 万美元融资，为 AI 智能体构建邮件服务",
+            "source_content_hash": "789e41b1b6992f50",
+            "quote": "a seed funding round led by General Catalyst",
+            "quote_hash": "10a2839d52e4e8fdc03b51be5126cae50c09ae904bded0172cb5b152a88ff970"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-94aef3964e4ec820",
+        "funding_insight_id": "FI-1cf34218733257fd",
+        "event_ids": [
+          "EV-85506f9f86779a6d"
+        ],
+        "company_entity_id": "EN-c04bd5ebd10ab696",
+        "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "company_name": "Mistral AI",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "约17亿欧元（约20亿美元）",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 1700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 17 亿欧元"
+        },
+        "announced_at": "2025-09-09",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "既有投资方（本轮参投）",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8d74a5f6eac0fc90",
+            "source_url": "https://aibusiness.com/generative-ai/european-ai-startup-mistral-ai-secures-2b-in-funding",
+            "source_title": "European AI startup Mistral AI secures $2B in funding",
+            "source_content_hash": "a710989bdebc7feb",
+            "quote": "existing investors such as Nvidia, General Catalyst and Index Ventures participated",
+            "quote_hash": "62fc95ba91a9ff49ef0c6eb3f17c1494a2a8747aa90c11a6b4dcd719dd2de14e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-caa549ef3d2a6e63",
+        "funding_insight_id": "FI-0312b291d6672487",
+        "event_ids": [
+          "EV-201b25d4f3cf696a"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$13 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 13000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "130 亿美元"
+        },
+        "announced_at": "2025-09-02",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Series E轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5289e6345684ca4",
+            "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
+            "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
+            "source_content_hash": "e918313869a22b8d",
+            "quote": "The round was announced on March 3 and was led by Lightspeed with participation from Salesforce Ventures, Menlo Ventures, and General Catalyst, among others.",
+            "quote_hash": "99ac1a2c76fdc0f8cae04b9fd4cfa99e172468497ad14d7feda5bc570a359919"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-eb5412ed546daef1",
+        "funding_insight_id": "FI-6601d010adc14dd0",
+        "event_ids": [
+          "EV-78a11d309c3d4e97"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic PBC",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "Series E",
+        "amount_original": "$3.5B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "35 亿美元"
+        },
+        "announced_at": "2025-03-03",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-52917ea3c077fbf0",
+            "source_url": "https://techstartups.com/2025/03/04/amazon-backed-ai-startup-anthropic-hits-61-5b-valuation-after-3-5b-funding-round/",
+            "source_title": "Amazon-backed AI startup Anthropic hits $61.5B valuation after $3.5B funding round - Tech Startups",
+            "source_content_hash": "574df0fdc225fe9e",
+            "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others.",
+            "quote_hash": "b6a7c1a96202c070c7844ca8f575954e5708e3527595fbd4d6510df17ee37161"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1fcc20a8b95a7aec",
+        "source_url": "https://techcrunch.com/2026/06/25/from-fortnite-to-robots-general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world",
+        "source_title": "General Intuition 完成 3.2 亿美元融资，用游戏数据训练通用 AI 智能体",
+        "source_content_hash": "01b9cc29b285066d",
+        "quote": "with participation from General Catalyst",
+        "quote_hash": "87bf9a8cee415ae8aa119075ce53dc29890588ef9e8c4f58553ba01180d40993"
+      },
+      {
+        "source_id": "FISRC-709d518a9cc449f2",
+        "source_url": "https://www.vktr.com/ai-news/engram-launches-with-98m-to-give-enterprise-ai-memory/",
+        "source_title": "Engram Builds Enterprise AI Memory Layer",
+        "source_content_hash": "f18a33f76104f554",
+        "quote": "emerged from stealth on June 23 with $98 million in funding co-led by General Catalyst and Modern Capital.",
+        "quote_hash": "7396fd22e5914332bfb4e95b5d54d556ac8d008ff51ca34abbdf7b5d79786d9f"
+      },
+      {
+        "source_id": "FISRC-bcf01fbecb1fbdb6",
+        "source_url": "https://www.caplight.com/company/engram",
+        "source_title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
+        "source_content_hash": "24739161319ad4eb",
+        "quote": "General Catalyst Seed, Early Funding",
+        "quote_hash": "96f3584ab764d92902c27c282f58db0711a3971ad3b88b68da097d8485e156a5"
+      },
+      {
+        "source_id": "FISRC-e9a8d571db654fd4",
+        "source_url": "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
+        "source_title": "Factorial 完成 1.5 亿美元 D 轮融资，估值达 25 亿美元，成为欧洲最具价值的 AI 智能体规模化企业之一",
+        "source_content_hash": "11af7531d19b66f0",
+        "quote": "The round is led by General Catalyst, which is making its first equity investment in Factorial",
+        "quote_hash": "b60ff6d091951b5033820c3e6c24ff6c66fe6ef1004947c9d8afb5cadc97dbbc"
+      },
+      {
+        "source_id": "FISRC-c7d89f6e73a6fe5b",
+        "source_url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
+        "source_title": "AI 编程初创公司 Cognition 以 250 亿美元投前估值融资 10 亿美元",
+        "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+        "quote": "The round was led by Lux Capital, General Catalyst and 8VC",
+        "quote_hash": "e9c26401b28b95ba14901b7cd9d160600834299249f53acc81e8697d54b6f697"
+      },
+      {
+        "source_id": "FISRC-be2cfb1d0da46098",
+        "source_url": "https://www.businesswire.com/news/home/20260505315897/en/Nace.AI-Secures-%2421.5M-to-Build-a-Metamodel-That-Autonomously-Runs-Enterprise-Workflows-With-Experts-Providing-Final-Validation",
+        "source_title": "Nace.AI获2150万美元融资，构建自主运行企业工作流的元模型，专家提供最终验证",
+        "source_content_hash": "0d0424e2d2d31b08",
+        "quote": "with participation from General Catalyst",
+        "quote_hash": "87bf9a8cee415ae8aa119075ce53dc29890588ef9e8c4f58553ba01180d40993"
+      },
+      {
+        "source_id": "FISRC-ce3d5e20846f6f71",
+        "source_url": "https://www.prnewswire.com/news-releases/avoca-raises-125m-at-1b-valuation-to-power-americas-services-economy-with-ai-302753962.html",
+        "source_title": "Avoca 获投超1.25亿美元，估值达10亿美元，以AI驱动美国服务业经济",
+        "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
+        "quote": "The Series B funding was led by Meritech and General Catalyst",
+        "quote_hash": "bcb53c848d1b78b1efb58f1af73eaaa779195c1267261467e6639c004498f612"
+      },
+      {
+        "source_id": "FISRC-14ff8eaae437ca5e",
+        "source_url": "https://www.globenewswire.com/de/news-release/2026/03/31/3265301/0/en/Nexus-Raises-4-3M-Seed-Round-to-Help-Business-Teams-Deploy-AI-Agents.html",
+        "source_title": "Nexus 获430万美元种子轮融资，助力业务团队部署",
+        "source_content_hash": "ed9ee46cde0da7e9",
+        "quote": "The round was led by General Catalyst",
+        "quote_hash": "9187a45ffe0ea1fbd2395a3bb7137ee3546c0a461603eb82f5ecb17497538472"
+      },
+      {
+        "source_id": "FISRC-8d734c978810d91a",
+        "source_url": "https://thenextweb.com/news/nexus-4-3m-seed",
+        "source_title": "Nexus raises $4.3M to make enterprise AI agent deployment",
+        "source_content_hash": "9f6d47f3b99dee7c",
+        "quote": "General Catalyst led the round.",
+        "quote_hash": "c0ad465782008d45a74714c5a990e2a70e3ca417603a8c7b2ed8efdd33740271"
+      },
+      {
+        "source_id": "FISRC-f961f60a13274764",
+        "source_url": "https://techcrunch.com/2026/03/10/agentmail-raises-6m-to-build-an-email-service-for-ai-agents/",
+        "source_title": "AgentMail 获 600 万美元融资，为 AI 智能体构建邮件服务",
+        "source_content_hash": "789e41b1b6992f50",
+        "quote": "a seed funding round led by General Catalyst",
+        "quote_hash": "10a2839d52e4e8fdc03b51be5126cae50c09ae904bded0172cb5b152a88ff970"
+      },
+      {
+        "source_id": "FISRC-8d74a5f6eac0fc90",
+        "source_url": "https://aibusiness.com/generative-ai/european-ai-startup-mistral-ai-secures-2b-in-funding",
+        "source_title": "European AI startup Mistral AI secures $2B in funding",
+        "source_content_hash": "a710989bdebc7feb",
+        "quote": "existing investors such as Nvidia, General Catalyst and Index Ventures participated",
+        "quote_hash": "62fc95ba91a9ff49ef0c6eb3f17c1494a2a8747aa90c11a6b4dcd719dd2de14e"
+      },
+      {
+        "source_id": "FISRC-c5289e6345684ca4",
+        "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
+        "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
+        "source_content_hash": "e918313869a22b8d",
+        "quote": "The round was announced on March 3 and was led by Lightspeed with participation from Salesforce Ventures, Menlo Ventures, and General Catalyst, among others.",
+        "quote_hash": "99ac1a2c76fdc0f8cae04b9fd4cfa99e172468497ad14d7feda5bc570a359919"
+      },
+      {
+        "source_id": "FISRC-52917ea3c077fbf0",
+        "source_url": "https://techstartups.com/2025/03/04/amazon-backed-ai-startup-anthropic-hits-61-5b-valuation-after-3-5b-funding-round/",
+        "source_title": "Amazon-backed AI startup Anthropic hits $61.5B valuation after $3.5B funding round - Tech Startups",
+        "source_content_hash": "574df0fdc225fe9e",
+        "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others.",
+        "quote_hash": "b6a7c1a96202c070c7844ca8f575954e5708e3527595fbd4d6510df17ee37161"
+      }
+    ]
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-69507bae9cd104",
+    "name": "New Enterprise Associates",
+    "aliases": [
+      "NEA"
+    ],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2022-04-12",
+    "latest_disclosed_at": "2026-07-14",
+    "role_counts": {
+      "lead": 2
+    },
+    "round_codes": [
+      "seed",
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-bf0e59763d382462",
+        "canonical_entity_id": "",
+        "name": "Union.ai"
+      },
+      {
+        "entity_id": "EN-92dd63c8e5c77e8a",
+        "canonical_entity_id": "EN-92dd63c8e5c77e8a",
+        "name": "Valarian Technologies Ltd."
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-6e9ebc84c5823b37",
+        "funding_insight_id": "FI-38617a261ac32b56",
+        "event_ids": [
+          "EV-305ec93673f4f12e"
+        ],
+        "company_entity_id": "EN-92dd63c8e5c77e8a",
+        "company_canonical_entity_id": "EN-92dd63c8e5c77e8a",
+        "company_name": "Valarian Technologies Ltd.",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "5000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-07-14",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-03aa198ddff34236",
+            "source_url": "https://siliconangle.com/2026/07/14/sovereign-ai-infrastructure-startup-valarian-raises-50m-help-nations-secure-military-defense-systems/",
+            "source_title": "主权AI基础设施初创公司Valarian融资5000万美元，助力各国保障国防系统安全",
+            "source_content_hash": "ab99df0f3d10a2c4",
+            "quote": "The Series A round was led by new investor New Enterprise Associates",
+            "quote_hash": "416eca9057a9af276343242333734ff9165696bc63336d0a0a83e3d977450d78"
+          },
+          {
+            "source_id": "FISRC-2b07f86358c31628",
+            "source_url": "https://www.valarian.com/article/valarian-raises-50m-series-a-led-by-nea",
+            "source_title": "Valarian | $50M Series A led by NEA",
+            "source_content_hash": "7bd6453900b66054",
+            "quote": "Valarian raises $50M Series A led by NEA",
+            "quote_hash": "ad9746f7fb042abfad76ff5cbe546652a7719a2706487495dbdcfb2340abcf1f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d8bcbe2bb9ec19ed",
+        "funding_insight_id": "FI-3815bc8e86989ecb",
+        "event_ids": [
+          "EV-11b5192fc54c0aa0"
+        ],
+        "company_entity_id": "EN-bf0e59763d382462",
+        "company_canonical_entity_id": "",
+        "company_name": "Union.ai",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$10 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2022-04-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-7934d4a076d4adc8",
+            "source_url": "https://techcrunch.com/2022/04/12/union-ai-raises-10m-to-simplify-ai-and-ml-workflow-orchestration/",
+            "source_title": "Union.ai融资1000万美元，简化机器学习工作流编排",
+            "source_content_hash": "79c5fe52268cb7e7",
+            "quote": "raised $10 million in a round contributed by NEA and “select” angel investors",
+            "quote_hash": "74f7fb7f4870b592db0c61a787811ae10aeac6d44b7d28f6a4e09f9cd873949d"
+          },
+          {
+            "source_id": "FISRC-e912c7440910956c",
+            "source_url": "https://readmagazine.com/industries/bfsi/union-ai-raises-10m-in-seed-funding-for-ai-and-ml-orchestration-technology/",
+            "source_title": "Union.ai Raises $10M in Seed Funding for AI and ML Orchestration",
+            "source_content_hash": "17ae4ca342f22463",
+            "quote": "closed $10 million in seed funding led by NEA with additional participation from a select group of angels",
+            "quote_hash": "f8dc1039f249b5812754543a32387cee7944a6060566059acefac099a87bf041"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-03aa198ddff34236",
+        "source_url": "https://siliconangle.com/2026/07/14/sovereign-ai-infrastructure-startup-valarian-raises-50m-help-nations-secure-military-defense-systems/",
+        "source_title": "主权AI基础设施初创公司Valarian融资5000万美元，助力各国保障国防系统安全",
+        "source_content_hash": "ab99df0f3d10a2c4",
+        "quote": "The Series A round was led by new investor New Enterprise Associates",
+        "quote_hash": "416eca9057a9af276343242333734ff9165696bc63336d0a0a83e3d977450d78"
+      },
+      {
+        "source_id": "FISRC-2b07f86358c31628",
+        "source_url": "https://www.valarian.com/article/valarian-raises-50m-series-a-led-by-nea",
+        "source_title": "Valarian | $50M Series A led by NEA",
+        "source_content_hash": "7bd6453900b66054",
+        "quote": "Valarian raises $50M Series A led by NEA",
+        "quote_hash": "ad9746f7fb042abfad76ff5cbe546652a7719a2706487495dbdcfb2340abcf1f"
+      },
+      {
+        "source_id": "FISRC-7934d4a076d4adc8",
+        "source_url": "https://techcrunch.com/2022/04/12/union-ai-raises-10m-to-simplify-ai-and-ml-workflow-orchestration/",
+        "source_title": "Union.ai融资1000万美元，简化机器学习工作流编排",
+        "source_content_hash": "79c5fe52268cb7e7",
+        "quote": "raised $10 million in a round contributed by NEA and “select” angel investors",
+        "quote_hash": "74f7fb7f4870b592db0c61a787811ae10aeac6d44b7d28f6a4e09f9cd873949d"
+      },
+      {
+        "source_id": "FISRC-e912c7440910956c",
+        "source_url": "https://readmagazine.com/industries/bfsi/union-ai-raises-10m-in-seed-funding-for-ai-and-ml-orchestration-technology/",
+        "source_title": "Union.ai Raises $10M in Seed Funding for AI and ML Orchestration",
+        "source_content_hash": "17ae4ca342f22463",
+        "quote": "closed $10 million in seed funding led by NEA with additional participation from a select group of angels",
+        "quote_hash": "f8dc1039f249b5812754543a32387cee7944a6060566059acefac099a87bf041"
+      }
+    ]
+  }
+}

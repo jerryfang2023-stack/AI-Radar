@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-d39bb3ee5e8565",
+    "name": "Andrej Karpathy",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-23",
+    "latest_disclosed_at": "2026-07-23",
+    "role_counts": {
+      "historical_or_ambiguous": 3,
+      "other_current_round": 1
+    },
+    "round_codes": [
+      "multi_round"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "FICO-etched",
+        "canonical_entity_id": "",
+        "name": "Etched"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-252eacf8673c7a8b",
+        "funding_insight_id": "FI-1590f6795e68ef12",
+        "event_ids": [
+          "EV-da1655ecfaf35feb"
+        ],
+        "company_entity_id": "FICO-etched",
+        "company_canonical_entity_id": "",
+        "company_name": "Etched",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "$300 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿美元"
+        },
+        "announced_at": "2026-07-23",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ebe9b53f6375c99a",
+            "source_url": "https://angelinvestorsnetwork.com/venture-capital/etched-ai-chip-300m-series-c-10-billion-valuation-accredited-investor-2026",
+            "source_title": "Etched $10.3B AI Chip: Should Accredited Investors Care?",
+            "source_content_hash": "609ac79493f0a8a6",
+            "quote": "Sequoia led the round alongside Peter Thiel, Andrej Karpathy, SK Hynix, and Jane Street.",
+            "quote_hash": "f1f6503e6731dda229175a34794c002b82259b355bbdddece329a81d34ab5bfa"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-64ae8b5f580880a5",
+        "funding_insight_id": "FI-d24e79349c1e9713",
+        "event_ids": [
+          "EV-040fc355bc12a750",
+          "EV-80e54c9a390da293"
+        ],
+        "company_entity_id": "FICO-etched",
+        "company_canonical_entity_id": "",
+        "company_name": "Etched",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮（含2025年12月由Stripes领投的5亿美元轮次及Jane Street领投的此前未披露轮次）",
+        "amount_original": "$800 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 800000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8 亿美元"
+        },
+        "announced_at": "2026-06-30",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "天使投资人",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-46feb61e20bda927",
+            "source_url": "https://theoutpost.ai/news-story/etched-raises-800-m-from-jane-street-and-tsmc-linked-fund-with-1-b-in-sales-contracts-28056/",
+            "source_title": "Etched Raises $800M, Hits $5B Valuation for AI Chips",
+            "source_content_hash": "ac17ee5ecc4171d0",
+            "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu.",
+            "quote_hash": "d2ce1c3e7bd92513c4e27af8a66e26707bb616f57c658da83f0153ffb0fc3afa"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-86256dca5d555d8e",
+        "funding_insight_id": "FI-5153381171755c70",
+        "event_ids": [
+          "EV-ad75efcb12a07793"
+        ],
+        "company_entity_id": "FICO-etched",
+        "company_canonical_entity_id": "",
+        "company_name": "Etched",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$500 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-06-30",
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b750a2ea9e7c7b76",
+            "source_url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip",
+            "source_title": "AI芯片初创公司Etched获10亿美元订单，台积电已量产其芯片",
+            "source_content_hash": "ae0a2fdbd54bc340",
+            "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu.",
+            "quote_hash": "d2ce1c3e7bd92513c4e27af8a66e26707bb616f57c658da83f0153ffb0fc3afa"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ce58c0d25c25a103",
+        "funding_insight_id": "FI-bff055b65fdb260b",
+        "event_ids": [
+          "EV-20d762872664fddb"
+        ],
+        "company_entity_id": "EN-450dcf23e621ff10",
+        "company_canonical_entity_id": "",
+        "company_name": "Engram",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "$98M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 98000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9800 万美元"
+        },
+        "announced_at": "2026-06-23",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-39d911c5038cb1c0",
+            "source_url": "https://theaiinsider.tech/2026/07/01/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization/",
+            "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
+            "source_content_hash": "f7105d727554bb38",
+            "quote": "backed by notable angels including Andrej Karpathy, co-founder of OpenAI, and Assaf Rappaport, co-founder and CEO of Wiz.",
+            "quote_hash": "31f3d14e96326aa6bbfd5f95c46a49ad59ebc0bef7635fbe0f2925084613ea1d"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-ebe9b53f6375c99a",
+        "source_url": "https://angelinvestorsnetwork.com/venture-capital/etched-ai-chip-300m-series-c-10-billion-valuation-accredited-investor-2026",
+        "source_title": "Etched $10.3B AI Chip: Should Accredited Investors Care?",
+        "source_content_hash": "609ac79493f0a8a6",
+        "quote": "Sequoia led the round alongside Peter Thiel, Andrej Karpathy, SK Hynix, and Jane Street.",
+        "quote_hash": "f1f6503e6731dda229175a34794c002b82259b355bbdddece329a81d34ab5bfa"
+      },
+      {
+        "source_id": "FISRC-46feb61e20bda927",
+        "source_url": "https://theoutpost.ai/news-story/etched-raises-800-m-from-jane-street-and-tsmc-linked-fund-with-1-b-in-sales-contracts-28056/",
+        "source_title": "Etched Raises $800M, Hits $5B Valuation for AI Chips",
+        "source_content_hash": "ac17ee5ecc4171d0",
+        "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu.",
+        "quote_hash": "d2ce1c3e7bd92513c4e27af8a66e26707bb616f57c658da83f0153ffb0fc3afa"
+      },
+      {
+        "source_id": "FISRC-b750a2ea9e7c7b76",
+        "source_url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip",
+        "source_title": "AI芯片初创公司Etched获10亿美元订单，台积电已量产其芯片",
+        "source_content_hash": "ae0a2fdbd54bc340",
+        "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu.",
+        "quote_hash": "d2ce1c3e7bd92513c4e27af8a66e26707bb616f57c658da83f0153ffb0fc3afa"
+      },
+      {
+        "source_id": "FISRC-39d911c5038cb1c0",
+        "source_url": "https://theaiinsider.tech/2026/07/01/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization/",
+        "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
+        "source_content_hash": "f7105d727554bb38",
+        "quote": "backed by notable angels including Andrej Karpathy, co-founder of OpenAI, and Assaf Rappaport, co-founder and CEO of Wiz.",
+        "quote_hash": "31f3d14e96326aa6bbfd5f95c46a49ad59ebc0bef7635fbe0f2925084613ea1d"
+      }
+    ]
+  }
+}

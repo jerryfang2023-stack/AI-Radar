@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-ef04cc956f66dd",
+    "name": "Nvidia Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-08",
+    "latest_disclosed_at": "2026-07-08",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-fa373257792c6b9b",
+        "canonical_entity_id": "EN-fa373257792c6b9b",
+        "name": "Prime Intellect"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-a3b7a0aadb722a9a",
+        "funding_insight_id": "FI-eb27063b86f12aff",
+        "event_ids": [
+          "EV-463cb26b5e03c7f7"
+        ],
+        "company_entity_id": "EN-fa373257792c6b9b",
+        "company_canonical_entity_id": "EN-fa373257792c6b9b",
+        "company_name": "Prime Intellect",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$130 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 130000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.3 亿美元"
+        },
+        "announced_at": "2026-07-08",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8d68719d4ab934b9",
+            "source_url": "https://www.tbpndigest.com/story/2026-07-08/prime-intellect-raises-130m-at-1b-valuation-to-build-open-sovereign-ai-stack",
+            "source_title": "Prime Intellect 以 10 亿美元估值融资 1.3 亿美元，用于构建开放主权 AI 技术栈",
+            "source_content_hash": "cf35ba42863e2830",
+            "quote": "Nvidia joined as a strategic investor.",
+            "quote_hash": "6cadd13ad58cd623c298b1db1a269c602071602f902a1de9ba8a352773ecc8a1"
+          },
+          {
+            "source_id": "FISRC-fbda7a24ef3d8ef8",
+            "source_url": "https://vtechxhub.com/insights/prime-intellect-raises-130m-series-power-enterprise-ai",
+            "source_title": "Prime Intellect Raises $130M for Enterprise AI Development 2026",
+            "source_content_hash": "56b4a47eeb530513",
+            "quote": "Radical Ventures led the charge, with Nvidia Ventures and Intel Capital jumping in.",
+            "quote_hash": "24bdc3b7a36b729c317ee6fed8d24a6aab20830cfcd7d9956ef47fab33d60d6b"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-8d68719d4ab934b9",
+        "source_url": "https://www.tbpndigest.com/story/2026-07-08/prime-intellect-raises-130m-at-1b-valuation-to-build-open-sovereign-ai-stack",
+        "source_title": "Prime Intellect 以 10 亿美元估值融资 1.3 亿美元，用于构建开放主权 AI 技术栈",
+        "source_content_hash": "cf35ba42863e2830",
+        "quote": "Nvidia joined as a strategic investor.",
+        "quote_hash": "6cadd13ad58cd623c298b1db1a269c602071602f902a1de9ba8a352773ecc8a1"
+      },
+      {
+        "source_id": "FISRC-fbda7a24ef3d8ef8",
+        "source_url": "https://vtechxhub.com/insights/prime-intellect-raises-130m-series-power-enterprise-ai",
+        "source_title": "Prime Intellect Raises $130M for Enterprise AI Development 2026",
+        "source_content_hash": "56b4a47eeb530513",
+        "quote": "Radical Ventures led the charge, with Nvidia Ventures and Intel Capital jumping in.",
+        "quote_hash": "24bdc3b7a36b729c317ee6fed8d24a6aab20830cfcd7d9956ef47fab33d60d6b"
+      }
+    ]
+  }
+}

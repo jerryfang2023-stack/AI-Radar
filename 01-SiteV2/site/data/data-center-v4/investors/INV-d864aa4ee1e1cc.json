@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-d864aa4ee1e1cc",
+    "name": "钧山投资",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2026-03-10",
+    "latest_disclosed_at": "2026-04-16",
+    "role_counts": {
+      "participant": 2
+    },
+    "round_codes": [
+      "multi_round",
+      "pre_series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-cb1041ddf6123c37",
+        "canonical_entity_id": "EN-cb1041ddf6123c37",
+        "name": "灵初智能"
+      },
+      {
+        "entity_id": "EN-39ba5f9dcab4e98a",
+        "canonical_entity_id": "EN-39ba5f9dcab4e98a",
+        "name": "它石智航"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-bedd0af7b2f8f61c",
+        "funding_insight_id": "FI-5c529fe1ecb9dd07",
+        "event_ids": [
+          "EV-1188b1585b835fe1"
+        ],
+        "company_entity_id": "EN-39ba5f9dcab4e98a",
+        "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
+        "company_name": "它石智航",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超4.5亿美元（约30亿元）",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 450000000,
+          "min_value": 450000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 4.5 亿美元"
+        },
+        "announced_at": "2026-04-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f4259d29fd364076",
+            "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",
+            "source_title": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网",
+            "source_content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
+            "quote": "美团龙珠、中金资本、凯联资本、东方富海、钧山投资等知名财务基金跟投",
+            "quote_hash": "b3b9c68d94864a2a92f1b96221e71974952e1eb702fac2cdea4e04de605a537a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b85285e90ec96b14",
+        "funding_insight_id": "FI-3b4a0a6b7397d174",
+        "event_ids": [
+          "EV-a909450a2d1a1fe1"
+        ],
+        "company_entity_id": "EN-cb1041ddf6123c37",
+        "company_canonical_entity_id": "EN-cb1041ddf6123c37",
+        "company_name": "灵初智能",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "天使轮及Pre-A轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿人民币"
+        },
+        "announced_at": "2026-03-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-10c7fcf01fad4e2f",
+            "source_url": "https://finance.sina.com.cn/cj/2026-03-10/doc-inhqnmhx6407658.shtml",
+            "source_title": "灵初智能已完成20亿融资，获“国家队”资本重磅投资，助力中国具身智能高质量发展 | 华兴交易",
+            "source_content_hash": "20f81c1ca1ce317a8829a288b011283ff55820a5b683df55a4b9078e8f2ce857",
+            "quote": "天使轮由 国开金融 、国中资本、央视融媒体产业投资基金等 国家级“国家队”资本， 某数千亿上市公司旗下战投、 长飞光纤 旗下基金，两大核心产业龙头资本，沃德尔等 知名产业资本，及 元生创投、珠海科技产业集团、钧山投资、燕缘创投、大米资本、沃赋资本、彬复资本等 多家知名基金共同投资。",
+            "quote_hash": "b8fab44b0c0d4b539d3c01fb2e3ba601725d5487a4f3a6e99f4d4916f5cca200"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-f4259d29fd364076",
+        "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",
+        "source_title": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网",
+        "source_content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
+        "quote": "美团龙珠、中金资本、凯联资本、东方富海、钧山投资等知名财务基金跟投",
+        "quote_hash": "b3b9c68d94864a2a92f1b96221e71974952e1eb702fac2cdea4e04de605a537a"
+      },
+      {
+        "source_id": "FISRC-10c7fcf01fad4e2f",
+        "source_url": "https://finance.sina.com.cn/cj/2026-03-10/doc-inhqnmhx6407658.shtml",
+        "source_title": "灵初智能已完成20亿融资，获“国家队”资本重磅投资，助力中国具身智能高质量发展 | 华兴交易",
+        "source_content_hash": "20f81c1ca1ce317a8829a288b011283ff55820a5b683df55a4b9078e8f2ce857",
+        "quote": "天使轮由 国开金融 、国中资本、央视融媒体产业投资基金等 国家级“国家队”资本， 某数千亿上市公司旗下战投、 长飞光纤 旗下基金，两大核心产业龙头资本，沃德尔等 知名产业资本，及 元生创投、珠海科技产业集团、钧山投资、燕缘创投、大米资本、沃赋资本、彬复资本等 多家知名基金共同投资。",
+        "quote_hash": "b8fab44b0c0d4b539d3c01fb2e3ba601725d5487a4f3a6e99f4d4916f5cca200"
+      }
+    ]
+  }
+}

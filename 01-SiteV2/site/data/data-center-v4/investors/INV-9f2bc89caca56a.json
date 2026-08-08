@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-9f2bc89caca56a",
+    "name": "HV Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2025-03-25",
+    "latest_disclosed_at": "2026-03-12",
+    "role_counts": {
+      "co_lead": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "seed",
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-a83a3af1a4866fd5",
+        "canonical_entity_id": "",
+        "name": "Advanced Machine Intelligence Labs (AMI Labs)"
+      },
+      {
+        "entity_id": "EN-636396f02b6571e4",
+        "canonical_entity_id": "",
+        "name": "n8n"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-8c4695db10963f1a",
+        "funding_insight_id": "FI-9c3c02658ff94312",
+        "event_ids": [
+          "EV-cded77b1de2db61a"
+        ],
+        "company_entity_id": "EN-a83a3af1a4866fd5",
+        "company_canonical_entity_id": "",
+        "company_name": "Advanced Machine Intelligence Labs (AMI Labs)",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "10.3亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1030000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10.3 亿美元"
+        },
+        "announced_at": "2026-03-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-6c35525e379488bf",
+            "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
+            "source_title": "AMI Labs 获 1BN 美元种子轮融资，用于构建世界模型",
+            "source_content_hash": "adc0cc9ffe3c9dd0",
+            "quote": "co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, and Bezos Expeditions",
+            "quote_hash": "6a9f71b006329253881732e65a1aab8292cb41280260354b36196bdebd59dc54"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-209a7e8e53b42b95",
+        "funding_insight_id": "FI-3a05feff425e5dcb",
+        "event_ids": [
+          "EV-12ca2aae7bfcd080"
+        ],
+        "company_entity_id": "EN-636396f02b6571e4",
+        "company_canonical_entity_id": "",
+        "company_name": "n8n",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$60 million (€55 million)",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2025-03-25",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3b060063f33a012b",
+            "source_url": "https://www.startupecosystem.ca/news/n8n-secures-60m-to-advance-ai-powered-workflow-automation",
+            "source_title": "n8n 获 6000 万美元融资，推动 AI 驱动工作流自动化",
+            "source_content_hash": "5db598d009a75c21",
+            "quote": "with participation from HV Capital, Sequoia, Felicis, and Harpoon",
+            "quote_hash": "a789bad22f9cd865b7693b62dac377a32df943daeb49e31344b27d827db6633c"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-6c35525e379488bf",
+        "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
+        "source_title": "AMI Labs 获 1BN 美元种子轮融资，用于构建世界模型",
+        "source_content_hash": "adc0cc9ffe3c9dd0",
+        "quote": "co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, and Bezos Expeditions",
+        "quote_hash": "6a9f71b006329253881732e65a1aab8292cb41280260354b36196bdebd59dc54"
+      },
+      {
+        "source_id": "FISRC-3b060063f33a012b",
+        "source_url": "https://www.startupecosystem.ca/news/n8n-secures-60m-to-advance-ai-powered-workflow-automation",
+        "source_title": "n8n 获 6000 万美元融资，推动 AI 驱动工作流自动化",
+        "source_content_hash": "5db598d009a75c21",
+        "quote": "with participation from HV Capital, Sequoia, Felicis, and Harpoon",
+        "quote_hash": "a789bad22f9cd865b7693b62dac377a32df943daeb49e31344b27d827db6633c"
+      }
+    ]
+  }
+}

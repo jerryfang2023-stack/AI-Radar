@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-b456f8ea12c4cb",
+    "name": "Union Square Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-21",
+    "latest_disclosed_at": "2026-07-21",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "multi_round"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-7ef08ef63597d47c",
+        "canonical_entity_id": "",
+        "name": "Gritt"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-7f6a9a0744022ffb",
+        "funding_insight_id": "FI-c813b159747ac208",
+        "event_ids": [
+          "EV-fcf3c464260b6730"
+        ],
+        "company_entity_id": "EN-7ef08ef63597d47c",
+        "company_canonical_entity_id": "",
+        "company_name": "Gritt",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "pre-seed and Series A",
+        "amount_original": "$32.4M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 32400000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3240 万美元"
+        },
+        "announced_at": "2026-07-21",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e5ce259c107507e9",
+            "source_url": "https://www.gritt.ai/news/gritt-launches-physical-ai",
+            "source_title": "Gritt 获 3240 万美元融资，打造物理 AI 加速全球基础设施建设",
+            "source_content_hash": "6af714d5b7bb5158",
+            "quote": "with participation from Union Square Ventures",
+            "quote_hash": "270a616f6cefd09f4198c2a353dd251ce4b68b678ea5724ceea38026e8b519e7"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-e5ce259c107507e9",
+        "source_url": "https://www.gritt.ai/news/gritt-launches-physical-ai",
+        "source_title": "Gritt 获 3240 万美元融资，打造物理 AI 加速全球基础设施建设",
+        "source_content_hash": "6af714d5b7bb5158",
+        "quote": "with participation from Union Square Ventures",
+        "quote_hash": "270a616f6cefd09f4198c2a353dd251ce4b68b678ea5724ceea38026e8b519e7"
+      }
+    ]
+  }
+}

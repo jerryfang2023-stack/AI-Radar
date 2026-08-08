@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-bc877bd1f52563",
+    "name": "Fundomo",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2026-07-01",
+    "latest_disclosed_at": "2026-08-03",
+    "role_counts": {
+      "co_lead": 1,
+      "lead": 1
+    },
+    "round_codes": [
+      "series_a",
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-cc2ab268105df889",
+        "canonical_entity_id": "",
+        "name": "Olix Computing Ltd."
+      },
+      {
+        "entity_id": "FICO-oxmiq",
+        "canonical_entity_id": "",
+        "name": "OXMIQ"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-0b44a0346acd07fc",
+        "funding_insight_id": "FI-392e264418bb0c75",
+        "event_ids": [
+          "EV-4d2852e1694b2818"
+        ],
+        "company_entity_id": "EN-cc2ab268105df889",
+        "company_canonical_entity_id": "",
+        "company_name": "Olix Computing Ltd.",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$312 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 312000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.12 亿美元"
+        },
+        "announced_at": "2026-08-03",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-a6c18c7d2adec363",
+            "source_url": "https://www.techtimes.com/articles/322816/20260803/olix-raises-312m-photonic-ai-chip-that-ditches-hbm-britains-biggest-semiconductor-bet.htm",
+            "source_title": "Olix Raises $312M for Photonic AI Chip That Ditches HBM: Britain's Biggest Semiconductor Bet",
+            "source_content_hash": "5a13ee222d9a2ed6",
+            "quote": "The round was led by New York venture firm Fundomo",
+            "quote_hash": "bf3a7b6f25818182067c37e135c8f151434e09f20fadb19a1af9db336c9a03da"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-cfa87e86323b49ca",
+        "funding_insight_id": "FI-0f332b05a9ce8b6f",
+        "event_ids": [
+          "EV-b3c7c4bff17063d8",
+          "EV-415b083fdaa8077f",
+          "EV-48075ca70a5458ec",
+          "EV-63dee9f748531f08"
+        ],
+        "company_entity_id": "FICO-oxmiq",
+        "company_canonical_entity_id": "",
+        "company_name": "OXMIQ",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$35 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 35000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3500 万美元"
+        },
+        "announced_at": "2026-07-01",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b7d7449114c23ca5",
+            "source_url": "https://www.hpcwire.com/off-the-wire/oxmiq-raises-35m-to-scale-oxcoretm-architecture/",
+            "source_title": "HPCwire - 自1987年起——报道全球最快计算机及其运营者",
+            "source_content_hash": "7277428ab4a1fd81",
+            "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund",
+            "quote_hash": "db8d06b90dc3f05edd5b006fff3400f71f0465307d4a9599a59a46fc2a83debf"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-a6c18c7d2adec363",
+        "source_url": "https://www.techtimes.com/articles/322816/20260803/olix-raises-312m-photonic-ai-chip-that-ditches-hbm-britains-biggest-semiconductor-bet.htm",
+        "source_title": "Olix Raises $312M for Photonic AI Chip That Ditches HBM: Britain's Biggest Semiconductor Bet",
+        "source_content_hash": "5a13ee222d9a2ed6",
+        "quote": "The round was led by New York venture firm Fundomo",
+        "quote_hash": "bf3a7b6f25818182067c37e135c8f151434e09f20fadb19a1af9db336c9a03da"
+      },
+      {
+        "source_id": "FISRC-b7d7449114c23ca5",
+        "source_url": "https://www.hpcwire.com/off-the-wire/oxmiq-raises-35m-to-scale-oxcoretm-architecture/",
+        "source_title": "HPCwire - 自1987年起——报道全球最快计算机及其运营者",
+        "source_content_hash": "7277428ab4a1fd81",
+        "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund",
+        "quote_hash": "db8d06b90dc3f05edd5b006fff3400f71f0465307d4a9599a59a46fc2a83debf"
+      }
+    ]
+  }
+}

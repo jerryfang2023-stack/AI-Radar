@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-eefeaa2a81e14f",
+    "name": "First Harmonic",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-10",
+    "latest_disclosed_at": "2026-06-10",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-b314f58f5f506fd2",
+        "canonical_entity_id": "",
+        "name": "Poetic"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-481f0e27ee4feba0",
+        "funding_insight_id": "FI-da21481e9629e578",
+        "event_ids": [
+          "EV-b1138bccf5ccd86c",
+          "EV-a42e51959c627554"
+        ],
+        "company_entity_id": "EN-b314f58f5f506fd2",
+        "company_canonical_entity_id": "",
+        "company_name": "Poetic",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$50 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-06-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e9c3e7b8cb15af82",
+            "source_url": "https://www.tipranks.com/news/private-companies/poetic-secures-50-million-series-a-to-scale-deterministic-ai-for-complex-enterprise-workflows",
+            "source_title": "",
+            "source_content_hash": "8686cb356451f65a",
+            "quote": "The round was led by Kleiner Perkins, with participation from Founders Fund, First Harmonic, and OpenAI",
+            "quote_hash": "116deb064ce74c5c8daf6f3b47cc6af150796cebd0c295c4a1dd356fac0bc631"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-e9c3e7b8cb15af82",
+        "source_url": "https://www.tipranks.com/news/private-companies/poetic-secures-50-million-series-a-to-scale-deterministic-ai-for-complex-enterprise-workflows",
+        "source_title": "",
+        "source_content_hash": "8686cb356451f65a",
+        "quote": "The round was led by Kleiner Perkins, with participation from Founders Fund, First Harmonic, and OpenAI",
+        "quote_hash": "116deb064ce74c5c8daf6f3b47cc6af150796cebd0c295c4a1dd356fac0bc631"
+      }
+    ]
+  }
+}

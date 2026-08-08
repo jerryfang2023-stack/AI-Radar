@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-bd8afcf117bae5",
+    "name": "Novera Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-05-14",
+    "latest_disclosed_at": "2026-05-14",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-67e05af6c6502566",
+        "canonical_entity_id": "",
+        "name": "Graphon AI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-e6d199d628944c2b",
+        "funding_insight_id": "FI-f088ae47d2a3f35a",
+        "event_ids": [
+          "EV-e8d1de5c77f32b9c"
+        ],
+        "company_entity_id": "EN-67e05af6c6502566",
+        "company_canonical_entity_id": "",
+        "company_name": "Graphon AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$8.3 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 8300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "830 万美元"
+        },
+        "announced_at": "2026-05-14",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-9c4c0f115d1f38be",
+            "source_url": "https://thenextweb.com/news/graphon-ai-pre-model-intelligence-layer-seed-funding",
+            "source_title": "Graphon AI 获 830 万美元种子轮融资，为企业 AI 构建预模型智能层",
+            "source_content_hash": "941bad55959a928e",
+            "quote": "The round was led by Novera Ventures",
+            "quote_hash": "7f0b087f1ffa4de2df1d6e17360a61a5f3a7b882e29934b3d474adab53b12ad2"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-9c4c0f115d1f38be",
+        "source_url": "https://thenextweb.com/news/graphon-ai-pre-model-intelligence-layer-seed-funding",
+        "source_title": "Graphon AI 获 830 万美元种子轮融资，为企业 AI 构建预模型智能层",
+        "source_content_hash": "941bad55959a928e",
+        "quote": "The round was led by Novera Ventures",
+        "quote_hash": "7f0b087f1ffa4de2df1d6e17360a61a5f3a7b882e29934b3d474adab53b12ad2"
+      }
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-b3dd2d4428d2f2",
+    "name": "SoftBank",
+    "aliases": [],
+    "canonical_entity_id": "EN-80d387ccb3289295",
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-03-31",
+    "latest_disclosed_at": "2026-03-31",
+    "role_counts": {
+      "co_lead": 1
+    },
+    "round_codes": [
+      "series_f"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-7d3194f79e645c42",
+        "canonical_entity_id": "EN-7d3194f79e645c42",
+        "name": "OpenAI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-88432584516f6aff",
+        "funding_insight_id": "FI-b76fffbf5d0d91bd",
+        "event_ids": [
+          "EV-d4e44892226be468"
+        ],
+        "company_entity_id": "EN-7d3194f79e645c42",
+        "company_canonical_entity_id": "EN-7d3194f79e645c42",
+        "company_name": "OpenAI",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$1220亿",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 122000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1220 亿美元"
+        },
+        "announced_at": "2026-03-31",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-1e2b3bad243bd066",
+            "source_url": "https://yespress.io/openais-122-b-megaround",
+            "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
+            "source_content_hash": "494969b64dc816f3",
+            "quote": "SoftBank ($30 billion)",
+            "quote_hash": "0e0614f834ae6ffe9eed742267af7afecb0253156dbe578b98c351a6bc94b202"
+          },
+          {
+            "source_id": "FISRC-b86e0fbe62dfd3dc",
+            "source_url": "https://www.mexc.com/news/996087",
+            "source_title": "OpenAI Closes $122B Funding Round, Hits $852B Valuation as AI Infrastructure Race Intensifies | MEXC News",
+            "source_content_hash": "4e51c91e5fc7160c",
+            "quote": "SoftBank co-led alongside a16z, D. E. Shaw Ventures, MGX, TPG, and T. Rowe Price Associates.",
+            "quote_hash": "eb1a353f262c6b5f36cf042c55381d3642167f0b24ec4185728cb1f48dbe89f2"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1e2b3bad243bd066",
+        "source_url": "https://yespress.io/openais-122-b-megaround",
+        "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
+        "source_content_hash": "494969b64dc816f3",
+        "quote": "SoftBank ($30 billion)",
+        "quote_hash": "0e0614f834ae6ffe9eed742267af7afecb0253156dbe578b98c351a6bc94b202"
+      },
+      {
+        "source_id": "FISRC-b86e0fbe62dfd3dc",
+        "source_url": "https://www.mexc.com/news/996087",
+        "source_title": "OpenAI Closes $122B Funding Round, Hits $852B Valuation as AI Infrastructure Race Intensifies | MEXC News",
+        "source_content_hash": "4e51c91e5fc7160c",
+        "quote": "SoftBank co-led alongside a16z, D. E. Shaw Ventures, MGX, TPG, and T. Rowe Price Associates.",
+        "quote_hash": "eb1a353f262c6b5f36cf042c55381d3642167f0b24ec4185728cb1f48dbe89f2"
+      }
+    ]
+  }
+}

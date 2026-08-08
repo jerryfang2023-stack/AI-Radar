@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-bb230ca59b2d98",
+    "name": "Private Investors",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-24",
+    "latest_disclosed_at": "2026-06-24",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-ab447173a7f5af44",
+        "canonical_entity_id": "",
+        "name": "Compri"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-1c6e142531881aa0",
+        "funding_insight_id": "FI-b4bc1e72a0e66843",
+        "event_ids": [
+          "EV-ad0589423b3aa1ce"
+        ],
+        "company_entity_id": "EN-ab447173a7f5af44",
+        "company_canonical_entity_id": "",
+        "company_name": "Compri",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "320万欧元",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 3200000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "320 万欧元"
+        },
+        "announced_at": "2026-06-24",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0a3d4ca3b6256c1a",
+            "source_url": "https://tech.eu/2026/06/24/compri-secures-eur32m-to-build-ai-powered-procurement-teams/",
+            "source_title": "Compri获320万欧元融资，打造AI驱动的采购团队 - Tech.eu",
+            "source_content_hash": "9b5cd13f34a521e3",
+            "quote": "and a group of private investors",
+            "quote_hash": "17b870cd81c7af1e8dc8047d2bbf8f1b7ca5b68fe2cf866a2aaba5b33e7a7d52"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-0a3d4ca3b6256c1a",
+        "source_url": "https://tech.eu/2026/06/24/compri-secures-eur32m-to-build-ai-powered-procurement-teams/",
+        "source_title": "Compri获320万欧元融资，打造AI驱动的采购团队 - Tech.eu",
+        "source_content_hash": "9b5cd13f34a521e3",
+        "quote": "and a group of private investors",
+        "quote_hash": "17b870cd81c7af1e8dc8047d2bbf8f1b7ca5b68fe2cf866a2aaba5b33e7a7d52"
+      }
+    ]
+  }
+}

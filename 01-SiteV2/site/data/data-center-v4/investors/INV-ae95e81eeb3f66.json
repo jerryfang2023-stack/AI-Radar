@@ -1,0 +1,205 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-ae95e81eeb3f66",
+    "name": "天使投资人",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 3,
+    "first_disclosed_at": "2025-12-29",
+    "latest_disclosed_at": "2026-07-15",
+    "role_counts": {
+      "participant": 3
+    },
+    "round_codes": [
+      "pre_seed",
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-aa06a7dba2266341",
+        "canonical_entity_id": "",
+        "name": "Modiqo"
+      },
+      {
+        "entity_id": "EN-6ea730515425a60f",
+        "canonical_entity_id": "",
+        "name": "Newera.ai"
+      },
+      {
+        "entity_id": "EN-df877645404747cb",
+        "canonical_entity_id": "",
+        "name": "Oak"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-a12ba09635cef68d",
+        "funding_insight_id": "FI-443b5f65f0a2c1cb",
+        "event_ids": [
+          "EV-9046a75f19913ca5"
+        ],
+        "company_entity_id": "EN-df877645404747cb",
+        "company_canonical_entity_id": "",
+        "company_name": "Oak",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$60 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-07-15",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-88cec30382296a0c",
+            "source_url": "https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth-to-fix-the-identity-mess-that-ai-agents-are-making-worse/",
+            "source_title": "获得6000万美元融资，Oak走出隐身模式，欲解决AI智能体加剧的身份混乱问题",
+            "source_content_hash": "c175c57e420a1b4c",
+            "quote": "with participation from AlphaDrive Ventures, Hetz Ventures, and angel investors",
+            "quote_hash": "cc34267824bc20b9cf279c98b0294d2660229485b515151b6536e5347270b2bf"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f2bdfab2a0953892",
+        "funding_insight_id": "FI-fd5dbffc8602c9a9",
+        "event_ids": [
+          "EV-9775b60c38285615"
+        ],
+        "company_entity_id": "EN-aa06a7dba2266341",
+        "company_canonical_entity_id": "",
+        "company_name": "Modiqo",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "Pre-Seed",
+        "amount_original": "$3 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 万美元"
+        },
+        "announced_at": "2026-05-28",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7dcc5e58c6026e99",
+            "source_url": "https://www.prnewswire.com/news-releases/modiqo-raises-pre-seed-round-to-bring-deterministic-ai-workflows-to-enterprises-at-a-fraction-of-the-token-cost-302784345.html",
+            "source_title": "Modiqo 完成种子轮融资，以极低代币成本为企业提供确定性 AI 工作流",
+            "source_content_hash": "776c62cfdeacb511",
+            "quote": "with participation from Irregular Expressions and angel investors.",
+            "quote_hash": "6e72e7ee7e57dc37aaeb6a438957fcc09f3bd7116b198803924ad40df503e334"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-8f735718e779e3cb",
+        "funding_insight_id": "FI-a28e7fa9e5185d2d",
+        "event_ids": [
+          "EV-ceb23160ad25e497"
+        ],
+        "company_entity_id": "EN-6ea730515425a60f",
+        "company_canonical_entity_id": "",
+        "company_name": "Newera.ai",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "Pre-Seed",
+        "amount_original": "$2.1 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2100000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "210 万美元"
+        },
+        "announced_at": "2025-12-29",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2cad155f5fe9f7ab",
+            "source_url": "https://www.dabafinance.com/en/news/saudi-ai-startup-newera-ai-pre-seed-embark",
+            "source_title": "Dabafinance - Newera.ai 完成210万美元Pre-Seed轮融资，由Embark领投",
+            "source_content_hash": "a95a7d1fc4df8c55",
+            "quote": "with participation from angel investors",
+            "quote_hash": "f126784cf4669d0f11401261a3c5a84c069fe5f978b1c88f102e0fbe45322aea"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-88cec30382296a0c",
+        "source_url": "https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth-to-fix-the-identity-mess-that-ai-agents-are-making-worse/",
+        "source_title": "获得6000万美元融资，Oak走出隐身模式，欲解决AI智能体加剧的身份混乱问题",
+        "source_content_hash": "c175c57e420a1b4c",
+        "quote": "with participation from AlphaDrive Ventures, Hetz Ventures, and angel investors",
+        "quote_hash": "cc34267824bc20b9cf279c98b0294d2660229485b515151b6536e5347270b2bf"
+      },
+      {
+        "source_id": "FISRC-7dcc5e58c6026e99",
+        "source_url": "https://www.prnewswire.com/news-releases/modiqo-raises-pre-seed-round-to-bring-deterministic-ai-workflows-to-enterprises-at-a-fraction-of-the-token-cost-302784345.html",
+        "source_title": "Modiqo 完成种子轮融资，以极低代币成本为企业提供确定性 AI 工作流",
+        "source_content_hash": "776c62cfdeacb511",
+        "quote": "with participation from Irregular Expressions and angel investors.",
+        "quote_hash": "6e72e7ee7e57dc37aaeb6a438957fcc09f3bd7116b198803924ad40df503e334"
+      },
+      {
+        "source_id": "FISRC-2cad155f5fe9f7ab",
+        "source_url": "https://www.dabafinance.com/en/news/saudi-ai-startup-newera-ai-pre-seed-embark",
+        "source_title": "Dabafinance - Newera.ai 完成210万美元Pre-Seed轮融资，由Embark领投",
+        "source_content_hash": "a95a7d1fc4df8c55",
+        "quote": "with participation from angel investors",
+        "quote_hash": "f126784cf4669d0f11401261a3c5a84c069fe5f978b1c88f102e0fbe45322aea"
+      }
+    ]
+  }
+}

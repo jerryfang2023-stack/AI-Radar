@@ -10,6 +10,7 @@ import {
 } from "../../../agent-workflow/product/entity-history-v1.mjs";
 import { productEntityDisplayType } from "../../../agent-workflow/product/product-entity-normalizer.mjs";
 import { classificationEntityIds } from "../../../agent-workflow/product/classification-entity-scope.mjs";
+import { investmentInstitutionIndexItem } from "../../../agent-workflow/product/investment-institution-v1.mjs";
 import { isCompletePublicEventTitle as isCompleteDataTitle } from "../../../agent-workflow/tools/event-public-title.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -777,6 +778,11 @@ export function buildFrontstageData(root = defaultRoot) {
   });
   const entityCollections = buildEntityCollections(entityHistory, eventsById, reviewDecisions);
   const viewpoints = buildViewpoints(root, entityHistory.profiles);
+  const investmentInstitutionRegistry = readJson(
+    path.join(root, "01-SiteV2/content/11-databases/investment-institutions-v1.json"),
+    { meta: {}, institutions: [] },
+  );
+  const investors = safeArray(investmentInstitutionRegistry.institutions).map(investmentInstitutionIndexItem);
 
   return {
     meta: {
@@ -796,6 +802,8 @@ export function buildFrontstageData(root = defaultRoot) {
     companies: entityCollections.companies,
     products: entityCollections.products,
     people: entityCollections.people,
+    investors,
+    investmentInstitutionRegistry,
     taxonomyNodes: entityHistory.taxonomyNodes,
     entityProfiles: entityHistory.profiles,
     entityRelationships: entityHistory.relationships,
@@ -814,14 +822,16 @@ export function writeFrontstageData(root = defaultRoot) {
   const data = buildFrontstageData(root);
   const output = path.join(root, "01-SiteV2/site/data/data-center-v4-frontstage.json");
   fs.mkdirSync(path.dirname(output), { recursive: true });
-  writeUtf8(output, `${JSON.stringify(data, null, 2)}\n`);
+  const { investmentInstitutionRegistry, ...publicData } = data;
+  writeUtf8(output, `${JSON.stringify(publicData, null, 2)}\n`);
   const splitRoot = path.join(root, "01-SiteV2/site/data/data-center-v4");
   const indexesDir = path.join(splitRoot, "indexes");
   const detailsDir = path.join(splitRoot, "details");
   const entitiesDir = path.join(splitRoot, "entities");
+  const investorsDir = path.join(splitRoot, "investors");
   const taxonomyDir = path.join(splitRoot, "taxonomy");
   fs.rmSync(splitRoot, { recursive: true, force: true });
-  for (const dir of [splitRoot, indexesDir, detailsDir, entitiesDir, taxonomyDir]) fs.mkdirSync(dir, { recursive: true });
+  for (const dir of [splitRoot, indexesDir, detailsDir, entitiesDir, investorsDir, taxonomyDir]) fs.mkdirSync(dir, { recursive: true });
   const writeJson = (file, value) => writeUtf8(file, `${JSON.stringify(value, null, 2)}\n`);
   const compactEvents = data.events.map(({ claims, sources, sourceExcerpt, ...event }) => event);
   writeJson(path.join(indexesDir, "events.json"), { meta: data.meta, eventTypes: data.eventTypes, events: compactEvents });
@@ -830,6 +840,7 @@ export function writeFrontstageData(root = defaultRoot) {
     companies: data.companies,
     products: data.products,
     people: data.people,
+    investors: data.investors,
     taxonomyNodes: data.taxonomyNodes
   });
   const relationLabels = {
@@ -919,6 +930,12 @@ export function writeFrontstageData(root = defaultRoot) {
     if (hardwareCatalog.length) payload.hardwareCatalog = hardwareCatalog;
     writeJson(path.join(entitiesDir, `${profile.id}.json`), payload);
   }
+  for (const institution of investmentInstitutionRegistry.institutions || []) {
+    writeJson(path.join(investorsDir, `${institution.id}.json`), {
+      meta: { ...data.meta, investmentInstitution: investmentInstitutionRegistry.meta },
+      institution,
+    });
+  }
   for (const node of data.taxonomyNodes) {
     const payload = {
       meta: data.meta,
@@ -947,6 +964,7 @@ export function writeFrontstageData(root = defaultRoot) {
       companies: data.companies.length,
       products: data.products.length,
       people: data.people.length,
+      investors: data.investors.length,
       taxonomyNodes: data.taxonomyNodes.length,
       relationships: data.entityRelationships.length,
       fde: data.fde.length,
@@ -965,6 +983,7 @@ export function writeFrontstageData(root = defaultRoot) {
       fdeDetail: "data/data-center-v4/details/fde.json",
       hardwareDetail: "data/data-center-v4/details/hardware.json",
       entityDetailPattern: "data/data-center-v4/entities/{id}.json",
+      investorDetailPattern: "data/data-center-v4/investors/{id}.json",
       taxonomyDetailPattern: "data/data-center-v4/taxonomy/{id}.json"
     }
   };
@@ -982,6 +1001,7 @@ function main() {
       events: data.events.length,
       companies: data.companies.length,
       products: data.products.length,
+      investors: data.investors.length,
       fde: data.fde.length,
       fdeDossiers: data.fdeDossiers.length,
       hardware: data.hardware.length,

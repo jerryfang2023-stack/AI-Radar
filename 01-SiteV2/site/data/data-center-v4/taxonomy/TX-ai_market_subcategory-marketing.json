@@ -18,11 +18,13 @@
     "typeLabel": "AI 市场子类",
     "valueId": "marketing",
     "eventIds": [
+      "EV-933b02f5736a0366",
       "EV-f6a72cddbda748b3",
       "EV-e7dcecaed5a0ee5b",
       "EV-affa49966121461c"
     ],
     "entityIds": [
+      "EN-13a7f8fe8140462d",
       "EN-a5d2ae286d0d9e45",
       "EN-f346eaca864441f9",
       "EN-835fb9db44937917"
@@ -30,9 +32,324 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-07-18"
+    "lastSeen": "2026-08-07"
   },
   "events": [
+    {
+      "id": "EV-933b02f5736a0366",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-06",
+      "updatedDate": "2026-08-07",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "前 Spotify 员工创立的 Malachyte 获 1000 万美元种子轮融资，将推荐 AI 带入电商",
+      "originalTitle": "Ex-Spotify employees raise $10M to bring the AI behind its recommendations to e-commerce",
+      "subject": "Ex-Spotify employees",
+      "action": "raise",
+      "object": "$10M to bring the AI behind its recommendations to e-commerce",
+      "metrics": [
+        "$10M",
+        "$10 million",
+        "90%",
+        "800 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "EN-13a7f8fe8140462d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-787d7a5612013d4f",
+            "fundingInsightId": "FI-97efb78824527298"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "marketing",
+            "name": "营销",
+            "entityIds": [
+              "EN-13a7f8fe8140462d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d51736d2dfbffa48",
+            "fundingInsightId": "FI-97efb78824527298"
+          }
+        ],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-13a7f8fe8140462d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b3b65b1927669a8e",
+            "fundingInsightId": "FI-97efb78824527298"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-13a7f8fe8140462d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-cba79b793f8a7ba0",
+            "fundingInsightId": "FI-97efb78824527298"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "EN-13a7f8fe8140462d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-bd10a60bb748b777",
+            "fundingInsightId": "FI-97efb78824527298"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-13a7f8fe8140462d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f54a85d253e206e3",
+            "fundingInsightId": "FI-97efb78824527298"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-13a7f8fe8140462d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8765feda5f922885",
+            "fundingInsightId": "FI-97efb78824527298"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-787d7a5612013d4f",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "marketing",
+          "name": "营销",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d51736d2dfbffa48",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f54a85d253e206e3",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b3b65b1927669a8e",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8765feda5f922885",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-cba79b793f8a7ba0",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-bd10a60bb748b777",
+          "fundingInsightId": "FI-97efb78824527298"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-787d7a5612013d4f",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "marketing",
+          "name": "营销",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d51736d2dfbffa48",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b3b65b1927669a8e",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-cba79b793f8a7ba0",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-bd10a60bb748b777",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f54a85d253e206e3",
+          "fundingInsightId": "FI-97efb78824527298"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8765feda5f922885",
+          "fundingInsightId": "FI-97efb78824527298"
+        }
+      ],
+      "entityIds": [
+        "EN-13a7f8fe8140462d",
+        "EN-2b78da3dc866654e",
+        "EN-ed5eb9a37e2d8231",
+        "EN-8532660d993674b1"
+      ],
+      "entityNames": [
+        "Ex-Spotify employees",
+        "Spotify",
+        "Now",
+        "Sidd Motwani"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/06/ex-spotify-employees-raise-10m-to-bring-the-ai-behind-its-recommendations-to-e-commerce",
+      "publisher": "TechCrunch AI"
+    },
     {
       "id": "EV-f6a72cddbda748b3",
       "dataDate": "2026-07-18",
@@ -1289,6 +1606,33 @@
   ],
   "entities": [
     {
+      "id": "EN-13a7f8fe8140462d",
+      "name": "Ex-Spotify employees",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-933b02f5736a0366"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-marketing",
+        "TX-industry-retail_ecommerce",
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-use_case-content_creation",
+        "TX-use_case-data_analysis"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-08-07"
+    },
+    {
       "id": "EN-a5d2ae286d0d9e45",
       "name": "Whale",
       "entityType": "organization_candidate",
@@ -1304,7 +1648,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-marketing",
         "TX-industry-retail_ecommerce",
+        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-data_analysis",
         "TX-industry-automotive_transportation",
@@ -1312,11 +1659,8 @@
         "TX-industry-food_hospitality",
         "TX-industry-manufacturing",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-ai_market_category-enterprise_applications",
-        "TX-product_form-enterprise_software_platform",
         "TX-use_case-sales",
-        "TX-use_case-marketing",
-        "TX-ai_market_subcategory-marketing"
+        "TX-use_case-marketing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-16",
@@ -1338,14 +1682,14 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-marketing",
         "TX-industry-retail_ecommerce",
         "TX-target_user-business_user",
-        "TX-use_case-data_analysis",
-        "TX-ai_market_category-enterprise_applications",
-        "TX-product_form-end_user_application",
         "TX-use_case-content_creation",
-        "TX-use_case-marketing",
-        "TX-ai_market_subcategory-marketing"
+        "TX-use_case-data_analysis",
+        "TX-product_form-end_user_application",
+        "TX-use_case-marketing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-24",
@@ -1366,13 +1710,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-industry-media_entertainment",
         "TX-ai_market_category-enterprise_applications",
-        "TX-product_form-end_user_application",
+        "TX-ai_market_subcategory-marketing",
+        "TX-target_user-business_user",
         "TX-use_case-content_creation",
-        "TX-use_case-marketing",
-        "TX-ai_market_subcategory-marketing"
+        "TX-industry-media_entertainment",
+        "TX-product_form-end_user_application",
+        "TX-use_case-marketing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-02",

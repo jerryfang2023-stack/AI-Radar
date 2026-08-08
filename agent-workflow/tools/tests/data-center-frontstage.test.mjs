@@ -36,6 +36,7 @@ test("frontstage adapter builds real V4 data collections", () => {
   assert.ok(data.events.length > 0);
   assert.ok(data.companies.length > 0);
   assert.ok(data.products.length > 0);
+  assert.ok(data.investors.length > 0);
   assert.ok(data.community.length > 0);
   assert.ok(data.viewpoints.length > 0);
   assert.ok(data.events.every((event) => event.id && event.title && event.date));
@@ -207,6 +208,18 @@ test("company projection contains normalized organizations only", () => {
   assert.ok(names.includes("NVIDIA"));
   assert.ok(names.every((name) => !/员工|研究员|CEO|发布|推出|上线|融资|起诉|诉讼|大模型|\d{4}/u.test(name)));
   assert.equal(new Set(names.map((name) => name.toLocaleLowerCase())).size, names.length);
+});
+
+test("entity library exposes an evidence-backed investment institution collection", () => {
+  const data = buildFrontstageData(root);
+  const index = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/data-center-v4/indexes/entities.json"), "utf8"));
+  const manifest = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/data-center-v4/manifest.json"), "utf8"));
+
+  assert.ok(data.investors.length > 0);
+  assert.equal(index.investors.length, data.investors.length);
+  assert.equal(manifest.counts.investors, data.investors.length);
+  assert.ok(data.investors.every((item) => item.id.startsWith("INV-") && item.current_round_count >= 0));
+  assert.ok(fs.existsSync(path.join(root, "01-SiteV2/site/data/data-center-v4/investors", `${data.investors[0].id}.json`)));
 });
 
 test("product projection contains named products with bounded ownership", () => {
@@ -556,10 +569,12 @@ test("entity library and embedded relationship views use the unified entity serv
   assert.match(script, /\.\.\.\(data\.companies \|\| \[\]\)\.map/u);
   assert.match(script, /\.\.\.\(data\.products \|\| \[\]\)\.map/u);
   assert.match(script, /\.\.\.\(data\.people \|\| \[\]\)\.map/u);
+  assert.match(script, /\.\.\.\(data\.investors \|\| \[\]\)\.map/u);
   assert.match(script, /\.\.\.\(data\.taxonomyNodes \|\| \[\]\)\.map/u);
   assert.match(script, /label: "公司机构库"/u);
   assert.match(script, /label: "产品模型库"/u);
   assert.match(script, /label: "人物库"/u);
+  assert.match(script, /label: "投资机构库"/u);
   assert.match(script, /label: "技术词表"/u);
   assert.match(script, /label: "场景行业词表"/u);
   assert.match(script, /legacyView === "companies" \|\| legacyView === "products"/u);

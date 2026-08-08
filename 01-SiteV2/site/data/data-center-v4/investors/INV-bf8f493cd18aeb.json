@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-bf8f493cd18aeb",
+    "name": "Fidelity",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2025-09-02",
+    "latest_disclosed_at": "2026-03-31",
+    "role_counts": {
+      "lead": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "series_f"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "name": "Anthropic"
+      },
+      {
+        "entity_id": "EN-7d3194f79e645c42",
+        "canonical_entity_id": "EN-7d3194f79e645c42",
+        "name": "OpenAI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-e1200bc59fec92fc",
+        "funding_insight_id": "FI-b76fffbf5d0d91bd",
+        "event_ids": [
+          "EV-d4e44892226be468"
+        ],
+        "company_entity_id": "EN-7d3194f79e645c42",
+        "company_canonical_entity_id": "EN-7d3194f79e645c42",
+        "company_name": "OpenAI",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$1220亿",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 122000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1220 亿美元"
+        },
+        "announced_at": "2026-03-31",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1e2b3bad243bd066",
+            "source_url": "https://yespress.io/openais-122-b-megaround",
+            "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
+            "source_content_hash": "494969b64dc816f3",
+            "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+            "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3a1a1e2ae1602ba0",
+        "funding_insight_id": "FI-0312b291d6672487",
+        "event_ids": [
+          "EV-201b25d4f3cf696a"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$13 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 13000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "130 亿美元"
+        },
+        "announced_at": "2025-09-02",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5289e6345684ca4",
+            "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
+            "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
+            "source_content_hash": "e918313869a22b8d",
+            "quote": "Anthropic announced a $13 billion Series F round on September 2 that valued the company at $183 billion. The round was led by Iconiq, Fidelity, and Lightspeed.",
+            "quote_hash": "dce639bc69cadea033e718af0a0afa1978ea9dbfacc2ce9e42b084fc7970c741"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1e2b3bad243bd066",
+        "source_url": "https://yespress.io/openais-122-b-megaround",
+        "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
+        "source_content_hash": "494969b64dc816f3",
+        "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+        "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+      },
+      {
+        "source_id": "FISRC-c5289e6345684ca4",
+        "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
+        "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
+        "source_content_hash": "e918313869a22b8d",
+        "quote": "Anthropic announced a $13 billion Series F round on September 2 that valued the company at $183 billion. The round was led by Iconiq, Fidelity, and Lightspeed.",
+        "quote_hash": "dce639bc69cadea033e718af0a0afa1978ea9dbfacc2ce9e42b084fc7970c741"
+      }
+    ]
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-717fafe12f26e4",
+    "name": "Heavybit",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2026-05-28",
+    "latest_disclosed_at": "2026-07-16",
+    "role_counts": {
+      "co_lead": 1,
+      "lead": 1
+    },
+    "round_codes": [
+      "pre_seed",
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-aa06a7dba2266341",
+        "canonical_entity_id": "",
+        "name": "Modiqo"
+      },
+      {
+        "entity_id": "EN-366289432b214eda",
+        "canonical_entity_id": "",
+        "name": "Reo.Dev"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-c5b0bad50b1fc54f",
+        "funding_insight_id": "FI-e034f1d14161b5f5",
+        "event_ids": [
+          "EV-8b7cbb66a33a945d"
+        ],
+        "company_entity_id": "EN-366289432b214eda",
+        "company_canonical_entity_id": "",
+        "company_name": "Reo.Dev",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A 轮",
+        "amount_original": "1130 万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 11300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1130 万美元"
+        },
+        "announced_at": "2026-07-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "既有投资方（种子轮领投），本轮参投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-811e30c84ed4cc4b",
+            "source_url": "https://completeaitraining.com/news/reodev-raises-113-million-in-funding-led-by-elevation/",
+            "source_title": "Reo.Dev raises $11.3 million in funding led by Elevation Capital",
+            "source_content_hash": "1c84c5d589a480c4",
+            "quote": "a $4 million seed round led by Heavybit",
+            "quote_hash": "1b13d9db9a814eb24ff411d82b8e9f6c7d4f858a7b613380e619b21b4ef8c1a2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-96ef39b94dcc9699",
+        "funding_insight_id": "FI-fd5dbffc8602c9a9",
+        "event_ids": [
+          "EV-9775b60c38285615"
+        ],
+        "company_entity_id": "EN-aa06a7dba2266341",
+        "company_canonical_entity_id": "",
+        "company_name": "Modiqo",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "Pre-Seed",
+        "amount_original": "$3 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 万美元"
+        },
+        "announced_at": "2026-05-28",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-7dcc5e58c6026e99",
+            "source_url": "https://www.prnewswire.com/news-releases/modiqo-raises-pre-seed-round-to-bring-deterministic-ai-workflows-to-enterprises-at-a-fraction-of-the-token-cost-302784345.html",
+            "source_title": "Modiqo 完成种子轮融资，以极低代币成本为企业提供确定性 AI 工作流",
+            "source_content_hash": "776c62cfdeacb511",
+            "quote": "The round was co-led by Heavybit and Seligman Ventures",
+            "quote_hash": "9287b0f17e3430ffdc073d9479898b634c826ea84ecf0de5c2aa77133eec9c76"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-811e30c84ed4cc4b",
+        "source_url": "https://completeaitraining.com/news/reodev-raises-113-million-in-funding-led-by-elevation/",
+        "source_title": "Reo.Dev raises $11.3 million in funding led by Elevation Capital",
+        "source_content_hash": "1c84c5d589a480c4",
+        "quote": "a $4 million seed round led by Heavybit",
+        "quote_hash": "1b13d9db9a814eb24ff411d82b8e9f6c7d4f858a7b613380e619b21b4ef8c1a2"
+      },
+      {
+        "source_id": "FISRC-7dcc5e58c6026e99",
+        "source_url": "https://www.prnewswire.com/news-releases/modiqo-raises-pre-seed-round-to-bring-deterministic-ai-workflows-to-enterprises-at-a-fraction-of-the-token-cost-302784345.html",
+        "source_title": "Modiqo 完成种子轮融资，以极低代币成本为企业提供确定性 AI 工作流",
+        "source_content_hash": "776c62cfdeacb511",
+        "quote": "The round was co-led by Heavybit and Seligman Ventures",
+        "quote_hash": "9287b0f17e3430ffdc073d9479898b634c826ea84ecf0de5c2aa77133eec9c76"
+      }
+    ]
+  }
+}

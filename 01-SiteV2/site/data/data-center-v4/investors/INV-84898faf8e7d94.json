@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-84898faf8e7d94",
+    "name": "SFC Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-02",
+    "latest_disclosed_at": "2026-07-02",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "pre_seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-64bdeb7efae18e1b",
+        "canonical_entity_id": "",
+        "name": "BidScript LTD"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-67149e8ce7e1062b",
+        "funding_insight_id": "FI-1ec7eacc2ec2c926",
+        "event_ids": [
+          "EV-1a6def173f4d7c94"
+        ],
+        "company_entity_id": "EN-64bdeb7efae18e1b",
+        "company_canonical_entity_id": "",
+        "company_name": "BidScript LTD",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "Pre-Seed",
+        "amount_original": "$800,000",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 800000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "80 万美元"
+        },
+        "announced_at": "2026-07-02",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-db39986ef5f46b8d",
+            "source_url": "https://www.linkedin.com/posts/henry-brogan_today-bidscript-ltd-crossed-1m-in-funding-activity-7478352587042373632-4BY5",
+            "source_title": "BidScript LTD Reaches $1m Funding Milestone with SFC Capital and PXN ...",
+            "source_content_hash": "63ff72df442d8618",
+            "quote": "BidScript LTD crossed $1m in funding after closing an $800k round led by SFC Capital",
+            "quote_hash": "cb0f662f5e2f48466094a0aead548b3b7077ea0cb5351a01c9638f932b9170e2"
+          },
+          {
+            "source_id": "FISRC-b3dcbc1ef66abc3b",
+            "source_url": "https://foundertrove.com/bidscript-secures-800k-to-scale-ai-platform-modernizing-public-and-private-sector-tendering",
+            "source_title": "BidScript 获 80 万美元融资，推动 AI 平台升级公共与私营部门招投标流程",
+            "source_content_hash": "f7b3d0fad8b8821d",
+            "quote": "SFC Capital joined as a new investor.",
+            "quote_hash": "1e058f0dbed5854463ea76541cc96ce9641c44e6eee35a42de4dc098b480ce52"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-db39986ef5f46b8d",
+        "source_url": "https://www.linkedin.com/posts/henry-brogan_today-bidscript-ltd-crossed-1m-in-funding-activity-7478352587042373632-4BY5",
+        "source_title": "BidScript LTD Reaches $1m Funding Milestone with SFC Capital and PXN ...",
+        "source_content_hash": "63ff72df442d8618",
+        "quote": "BidScript LTD crossed $1m in funding after closing an $800k round led by SFC Capital",
+        "quote_hash": "cb0f662f5e2f48466094a0aead548b3b7077ea0cb5351a01c9638f932b9170e2"
+      },
+      {
+        "source_id": "FISRC-b3dcbc1ef66abc3b",
+        "source_url": "https://foundertrove.com/bidscript-secures-800k-to-scale-ai-platform-modernizing-public-and-private-sector-tendering",
+        "source_title": "BidScript 获 80 万美元融资，推动 AI 平台升级公共与私营部门招投标流程",
+        "source_content_hash": "f7b3d0fad8b8821d",
+        "quote": "SFC Capital joined as a new investor.",
+        "quote_hash": "1e058f0dbed5854463ea76541cc96ce9641c44e6eee35a42de4dc098b480ce52"
+      }
+    ]
+  }
+}

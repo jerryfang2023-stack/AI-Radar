@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-5717956e6c2d31",
+    "name": "Twenty Two Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-03-31",
+    "latest_disclosed_at": "2026-03-31",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-f5cfcb570b7edac2",
+        "canonical_entity_id": "",
+        "name": "Nexus Enterprises, Inc"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-d64b3114ded6183f",
+        "funding_insight_id": "FI-19731873c2b7d1c1",
+        "event_ids": [
+          "EV-c8928410f6c145eb"
+        ],
+        "company_entity_id": "EN-f5cfcb570b7edac2",
+        "company_canonical_entity_id": "",
+        "company_name": "Nexus Enterprises, Inc",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "$4.3M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "430 万美元"
+        },
+        "announced_at": "2026-03-31",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-14ff8eaae437ca5e",
+            "source_url": "https://www.globenewswire.com/de/news-release/2026/03/31/3265301/0/en/Nexus-Raises-4-3M-Seed-Round-to-Help-Business-Teams-Deploy-AI-Agents.html",
+            "source_title": "Nexus 获430万美元种子轮融资，助力业务团队部署",
+            "source_content_hash": "ed9ee46cde0da7e9",
+            "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital",
+            "quote_hash": "624cd64acb9b0781f661d88dc6fea7477fd130d0bf1e7a938be291d30555f659"
+          },
+          {
+            "source_id": "FISRC-8d734c978810d91a",
+            "source_url": "https://thenextweb.com/news/nexus-4-3m-seed",
+            "source_title": "Nexus raises $4.3M to make enterprise AI agent deployment",
+            "source_content_hash": "9f6d47f3b99dee7c",
+            "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, and Phosphor Capital",
+            "quote_hash": "fd0c48147b16e12bbaf750aa3f1e3d4d1186eba51ef62462651cdd0a94d0a8b5"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-14ff8eaae437ca5e",
+        "source_url": "https://www.globenewswire.com/de/news-release/2026/03/31/3265301/0/en/Nexus-Raises-4-3M-Seed-Round-to-Help-Business-Teams-Deploy-AI-Agents.html",
+        "source_title": "Nexus 获430万美元种子轮融资，助力业务团队部署",
+        "source_content_hash": "ed9ee46cde0da7e9",
+        "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital",
+        "quote_hash": "624cd64acb9b0781f661d88dc6fea7477fd130d0bf1e7a938be291d30555f659"
+      },
+      {
+        "source_id": "FISRC-8d734c978810d91a",
+        "source_url": "https://thenextweb.com/news/nexus-4-3m-seed",
+        "source_title": "Nexus raises $4.3M to make enterprise AI agent deployment",
+        "source_content_hash": "9f6d47f3b99dee7c",
+        "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, and Phosphor Capital",
+        "quote_hash": "fd0c48147b16e12bbaf750aa3f1e3d4d1186eba51ef62462651cdd0a94d0a8b5"
+      }
+    ]
+  }
+}

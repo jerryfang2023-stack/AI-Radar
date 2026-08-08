@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-47ed8ff2439985",
+    "name": "Samsung Next",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2023-12-06",
+    "latest_disclosed_at": "2026-06-17",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "participant": 2
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-67e05af6c6502566",
+        "canonical_entity_id": "",
+        "name": "Graphon AI"
+      },
+      {
+        "entity_id": "EN-88ab1e5d793701f9",
+        "canonical_entity_id": "",
+        "name": "Liquid AI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-8479870f36548966",
+        "funding_insight_id": "FI-479f9d5c1123dba2",
+        "event_ids": [
+          "EV-a00763037a94d512"
+        ],
+        "company_entity_id": "FICO-7e1d6c73932aa9b0",
+        "company_canonical_entity_id": "",
+        "company_name": "Odyssey ML",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "3.1亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 310000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.1 亿美元"
+        },
+        "announced_at": "2026-06-17",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "战略轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-413e994d081f8e0f",
+            "source_url": "https://awesomeagents.ai/news/odyssey-amazon-310m-world-models/",
+            "source_title": "Odyssey Raises $310M as Amazon Bets on World Models | Awesome Agents",
+            "source_content_hash": "37401997b6a46d75",
+            "quote": "Strategic undisclosed undisclosed NVentures (NVIDIA), Samsung Next pre-2026",
+            "quote_hash": "7580ce8d49fd9666e802de453ea162d2bb44131247c6889a3dfc84df499c3a27"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ebfaa84c21d1f0f8",
+        "funding_insight_id": "FI-f088ae47d2a3f35a",
+        "event_ids": [
+          "EV-e8d1de5c77f32b9c"
+        ],
+        "company_entity_id": "EN-67e05af6c6502566",
+        "company_canonical_entity_id": "",
+        "company_name": "Graphon AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$8.3 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 8300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "830 万美元"
+        },
+        "announced_at": "2026-05-14",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9c4c0f115d1f38be",
+            "source_url": "https://thenextweb.com/news/graphon-ai-pre-model-intelligence-layer-seed-funding",
+            "source_title": "Graphon AI 获 830 万美元种子轮融资，为企业 AI 构建预模型智能层",
+            "source_content_hash": "941bad55959a928e",
+            "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, and others",
+            "quote_hash": "7c176b4b41b7098a91cc6bee2d0e11583636621116a7d1b03812d837f992c5a8"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ecea40e79856972a",
+        "funding_insight_id": "FI-1d51a25d67b90d0d",
+        "event_ids": [
+          "EV-79a0bbe8b8623b28"
+        ],
+        "company_entity_id": "EN-88ab1e5d793701f9",
+        "company_canonical_entity_id": "",
+        "company_name": "Liquid AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮（两阶段）",
+        "amount_original": "3750万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 37500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3750 万美元"
+        },
+        "announced_at": "2023-12-06",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d1080395d67df2c7",
+            "source_url": "https://techcrunch.com/2023/12/06/liquid-ai-a-new-mit-spinoff-wants-to-build-an-entirely-new-type-of-ai/",
+            "source_title": "MIT 衍生公司 Liquid AI 希望构建一种全新类型的 AI",
+            "source_content_hash": "42d5867eaff12416",
+            "quote": "Samsung Next",
+            "quote_hash": "26e246275b64cb7b520a547627f5436f13c0e25cc1914f82a13ce36fa83084a1"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-413e994d081f8e0f",
+        "source_url": "https://awesomeagents.ai/news/odyssey-amazon-310m-world-models/",
+        "source_title": "Odyssey Raises $310M as Amazon Bets on World Models | Awesome Agents",
+        "source_content_hash": "37401997b6a46d75",
+        "quote": "Strategic undisclosed undisclosed NVentures (NVIDIA), Samsung Next pre-2026",
+        "quote_hash": "7580ce8d49fd9666e802de453ea162d2bb44131247c6889a3dfc84df499c3a27"
+      },
+      {
+        "source_id": "FISRC-9c4c0f115d1f38be",
+        "source_url": "https://thenextweb.com/news/graphon-ai-pre-model-intelligence-layer-seed-funding",
+        "source_title": "Graphon AI 获 830 万美元种子轮融资，为企业 AI 构建预模型智能层",
+        "source_content_hash": "941bad55959a928e",
+        "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, and others",
+        "quote_hash": "7c176b4b41b7098a91cc6bee2d0e11583636621116a7d1b03812d837f992c5a8"
+      },
+      {
+        "source_id": "FISRC-d1080395d67df2c7",
+        "source_url": "https://techcrunch.com/2023/12/06/liquid-ai-a-new-mit-spinoff-wants-to-build-an-entirely-new-type-of-ai/",
+        "source_title": "MIT 衍生公司 Liquid AI 希望构建一种全新类型的 AI",
+        "source_content_hash": "42d5867eaff12416",
+        "quote": "Samsung Next",
+        "quote_hash": "26e246275b64cb7b520a547627f5436f13c0e25cc1914f82a13ce36fa83084a1"
+      }
+    ]
+  }
+}

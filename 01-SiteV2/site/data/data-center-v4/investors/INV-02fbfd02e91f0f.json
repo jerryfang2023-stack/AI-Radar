@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-02fbfd02e91f0f",
+    "name": "S Capital VC",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-10",
+    "latest_disclosed_at": "2026-06-10",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-18be231103e4649b",
+        "canonical_entity_id": "",
+        "name": "Jedify"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-f0b448a9cf1dcf0a",
+        "funding_insight_id": "FI-abd8df8c726b1269",
+        "event_ids": [
+          "EV-74967394aed730ce"
+        ],
+        "company_entity_id": "EN-18be231103e4649b",
+        "company_canonical_entity_id": "",
+        "company_name": "Jedify",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$24 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 24000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2400 万美元"
+        },
+        "announced_at": "2026-06-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-29a5cc0bbf402ca0",
+            "source_url": "https://www.calcalistech.com/ctechnews/article/bkcksmp11gx",
+            "source_title": "Jedify raises $24 million Series A to build context layer for enterprise AI | Ctech",
+            "source_content_hash": "63645790d9a95447",
+            "quote": "participation from existing backers S Capital VC and Cerca Partners, alongside new investor Oceans Ventures",
+            "quote_hash": "fa79fa9fa70619b2d600eb90b691d577c04d56a6859fa5f80929c00b8e5ee252"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-810556e856414be6",
+        "funding_insight_id": "FI-abd8df8c726b1269",
+        "event_ids": [
+          "EV-74967394aed730ce"
+        ],
+        "company_entity_id": "EN-18be231103e4649b",
+        "company_canonical_entity_id": "",
+        "company_name": "Jedify",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$24 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 24000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2400 万美元"
+        },
+        "announced_at": "2026-06-10",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-9fb1f37fe46c5a80",
+            "source_url": "https://markets.businessinsider.com/news/stocks/jedify-raises-24-million-in-series-a-funding-to-build-context-graphs-for-enterprise-ai-agents-1036238649",
+            "source_title": "Jedify Raises $24 Million in Series A Funding to Build Context Graphs for Enterprise AI Agents | Markets Insider",
+            "source_content_hash": "b9053d363a504063",
+            "quote": "Jedify previously raised an $8.5 million seed round in September 2023, led by S Capital VC with participation from Cerca Partners",
+            "quote_hash": "3380b397c2db4ddcae660fed8f92a6b99b2fcbb27d0cc722da152645225b9c7f"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-29a5cc0bbf402ca0",
+        "source_url": "https://www.calcalistech.com/ctechnews/article/bkcksmp11gx",
+        "source_title": "Jedify raises $24 million Series A to build context layer for enterprise AI | Ctech",
+        "source_content_hash": "63645790d9a95447",
+        "quote": "participation from existing backers S Capital VC and Cerca Partners, alongside new investor Oceans Ventures",
+        "quote_hash": "fa79fa9fa70619b2d600eb90b691d577c04d56a6859fa5f80929c00b8e5ee252"
+      },
+      {
+        "source_id": "FISRC-9fb1f37fe46c5a80",
+        "source_url": "https://markets.businessinsider.com/news/stocks/jedify-raises-24-million-in-series-a-funding-to-build-context-graphs-for-enterprise-ai-agents-1036238649",
+        "source_title": "Jedify Raises $24 Million in Series A Funding to Build Context Graphs for Enterprise AI Agents | Markets Insider",
+        "source_content_hash": "b9053d363a504063",
+        "quote": "Jedify previously raised an $8.5 million seed round in September 2023, led by S Capital VC with participation from Cerca Partners",
+        "quote_hash": "3380b397c2db4ddcae660fed8f92a6b99b2fcbb27d0cc722da152645225b9c7f"
+      }
+    ]
+  }
+}

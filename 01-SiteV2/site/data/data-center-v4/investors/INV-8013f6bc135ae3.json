@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-8013f6bc135ae3",
+    "name": "Berkshire Hathaway",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-03",
+    "latest_disclosed_at": "2026-06-03",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "follow_on"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-bbdefa2950f49882",
+        "canonical_entity_id": "EN-bbdefa2950f49882",
+        "name": "Google"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-8604141ba1feac13",
+        "funding_insight_id": "FI-0098f04c74bc4a5b",
+        "event_ids": [
+          "EV-dbbe3fd637be213f"
+        ],
+        "company_entity_id": "EN-bbdefa2950f49882",
+        "company_canonical_entity_id": "EN-bbdefa2950f49882",
+        "company_name": "Google",
+        "round": "后续发行",
+        "round_code": "follow_on",
+        "round_original": "后续发行",
+        "amount_original": "850亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 85000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "850 亿美元"
+        },
+        "announced_at": "2026-06-03",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-cb917372e663ab54",
+            "source_url": "https://techcrunch.com/2026/06/03/alphabets-record-breaking-85b-raise-for-googles-ai-business-is-a-helluva-good-signal",
+            "source_title": "Alphabet 创纪录 850 亿美元融资用于 Google AI 业务，投资者对 AI 兴趣高涨",
+            "source_content_hash": "28d1c62df42d580c",
+            "quote": "Among the buyers: Berkshire Hathaway, still known for its love of value investing, picked up $10 billion worth.",
+            "quote_hash": "df21676237e3f182fb11711026514c94c150dbd22e91dd282d7fe142ea733457"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-cb917372e663ab54",
+        "source_url": "https://techcrunch.com/2026/06/03/alphabets-record-breaking-85b-raise-for-googles-ai-business-is-a-helluva-good-signal",
+        "source_title": "Alphabet 创纪录 850 亿美元融资用于 Google AI 业务，投资者对 AI 兴趣高涨",
+        "source_content_hash": "28d1c62df42d580c",
+        "quote": "Among the buyers: Berkshire Hathaway, still known for its love of value investing, picked up $10 billion worth.",
+        "quote_hash": "df21676237e3f182fb11711026514c94c150dbd22e91dd282d7fe142ea733457"
+      }
+    ]
+  }
+}

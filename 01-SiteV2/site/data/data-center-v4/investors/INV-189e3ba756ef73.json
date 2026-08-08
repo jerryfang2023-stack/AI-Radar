@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-189e3ba756ef73",
+    "name": "Georgian",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-03-11",
+    "latest_disclosed_at": "2026-03-11",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "lead": 1
+    },
+    "round_codes": [
+      "series_d"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-53b69ef92c836777",
+        "canonical_entity_id": "",
+        "name": "Replit"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-f6e27512474b0c71",
+        "funding_insight_id": "FI-2d6f9ac8b7ebeeee",
+        "event_ids": [
+          "EV-8eb0acb180b7ad9d"
+        ],
+        "company_entity_id": "EN-53b69ef92c836777",
+        "company_canonical_entity_id": "",
+        "company_name": "Replit",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$400M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-03-11",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-2220b0e7f33bfc10",
+            "source_url": "https://www.rappnews.com/sponsored-content/article_997afa9a-24db-57d8-ae81-7c996a9914d9-24111312",
+            "source_title": "Georgian Leads $400M Series D Investment in Replit to suppor...",
+            "source_content_hash": "d97a108f575a9b98",
+            "quote": "Georgian, a growth-stage B2B investor that builds alongside portfolio companies to unlock value from AI through its in-house AI Lab, today announced it has led a $400 million Series D investment in Replit, valuing the company at $9 billion.",
+            "quote_hash": "e347d23fe9ed9260e964427833a9010c6ab952a733e9191d54279e81ebed8ce8"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-431c0aaa8e962036",
+        "funding_insight_id": "FI-2d6f9ac8b7ebeeee",
+        "event_ids": [
+          "EV-8eb0acb180b7ad9d"
+        ],
+        "company_entity_id": "EN-53b69ef92c836777",
+        "company_canonical_entity_id": "",
+        "company_name": "Replit",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$400M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-03-11",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "C轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2220b0e7f33bfc10",
+            "source_url": "https://www.rappnews.com/sponsored-content/article_997afa9a-24db-57d8-ae81-7c996a9914d9-24111312",
+            "source_title": "Georgian Leads $400M Series D Investment in Replit to suppor...",
+            "source_content_hash": "d97a108f575a9b98",
+            "quote": "The investment represents a rapid follow-on for Georgian, which first invested in Replit's Series C late last year and is now doubling down as the company expands its position in AI-powered software creation.",
+            "quote_hash": "e7bcaf8915704ef04089d6a969c2255cc3b344a26b8f18c77d0a7df3ba2c945b"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-2220b0e7f33bfc10",
+        "source_url": "https://www.rappnews.com/sponsored-content/article_997afa9a-24db-57d8-ae81-7c996a9914d9-24111312",
+        "source_title": "Georgian Leads $400M Series D Investment in Replit to suppor...",
+        "source_content_hash": "d97a108f575a9b98",
+        "quote": "Georgian, a growth-stage B2B investor that builds alongside portfolio companies to unlock value from AI through its in-house AI Lab, today announced it has led a $400 million Series D investment in Replit, valuing the company at $9 billion.",
+        "quote_hash": "e347d23fe9ed9260e964427833a9010c6ab952a733e9191d54279e81ebed8ce8"
+      },
+      {
+        "source_id": "FISRC-2220b0e7f33bfc10",
+        "source_url": "https://www.rappnews.com/sponsored-content/article_997afa9a-24db-57d8-ae81-7c996a9914d9-24111312",
+        "source_title": "Georgian Leads $400M Series D Investment in Replit to suppor...",
+        "source_content_hash": "d97a108f575a9b98",
+        "quote": "The investment represents a rapid follow-on for Georgian, which first invested in Replit's Series C late last year and is now doubling down as the company expands its position in AI-powered software creation.",
+        "quote_hash": "e7bcaf8915704ef04089d6a969c2255cc3b344a26b8f18c77d0a7df3ba2c945b"
+      }
+    ]
+  }
+}

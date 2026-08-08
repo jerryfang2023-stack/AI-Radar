@@ -34,7 +34,7 @@
 
   const viewConfig = {
     events: { title: "事件库", description: "可追溯的 AI 行业事实事件，FDE 与 AI 硬件作为主题视图统一检索", detail: "event", dataKey: "events", placeholder: "搜索事件标题、公司、产品或关键词" },
-    index: { title: "实体库", description: "公司机构、产品模型与人物的证据化历史档案，事实关系内嵌于实体详情", placeholder: "搜索公司、产品、模型、人物或别名" },
+    index: { title: "实体库", description: "公司机构、投资机构、产品模型与人物的证据化历史档案，事实关系与投资活动内嵌于实体详情", placeholder: "搜索公司、投资机构、产品、模型、人物或别名" },
     relations: { title: "关系图谱", description: "选择一个实体，查看由事件、原文 Claim 和来源共同验证的一跳商业关系", dataKey: "relationships", placeholder: "搜索公司、产品、模型或人物" },
     fde: { title: "FDE 实施", description: "实施档案、生命周期与事实完整度", detail: "fde", dataKey: "fdeDossiers", placeholder: "搜索客户、服务商、工作流、系统或场景" },
     hardware: { title: "AI 硬件", description: "产品规格目录、产能供应面板与变化时间线", detail: "hardware", dataKey: "hardwareCatalog", placeholder: "搜索产品、规格、产能、供应方或部署" },
@@ -218,6 +218,14 @@
         indexSub: [item.organization, item.role].filter(Boolean).join(" · "),
         detailKind: "entity"
       })),
+      ...(data.investors || []).map((item) => ({
+        ...item,
+        tags: [],
+        indexType: "investor",
+        indexKind: item.investor_kind_label || "投资方",
+        indexSub: `${item.portfolio_company_count || 0} 家已披露被投企业 · ${item.current_round_count || 0} 次本轮投资记录`,
+        detailKind: "investor"
+      })),
       ...(data.taxonomyNodes || []).map((item) => ({
         ...item,
         aliases: [],
@@ -340,7 +348,7 @@
       items = sortEventsForDisplay(items);
     } else if (targetView === "index") {
       items = items.filter((item) => (
-        matchesQuery(item, ["name", "aliases", "companyNames", "type", "indexKind", "indexSub", "tags"], query)
+        matchesQuery(item, ["name", "aliases", "companyNames", "portfolio_companies", "type", "indexKind", "indexSub", "tags"], query)
         && (!type || item.indexType === type)
         && matchesMarketScope(item, region)
         && (!tag || normalizeTags(item.tags).some((itemTag) => itemTag.name === tag || itemTag.id === tag))
@@ -472,7 +480,7 @@
     const tag = params.get("tag") || "";
     const selectedType = params.get("type") || "";
     const matching = entityIndexItems(data).filter((item) => (
-      matchesQuery(item, ["name", "aliases", "companyNames", "type", "indexKind", "indexSub", "tags"], query)
+      matchesQuery(item, ["name", "aliases", "companyNames", "portfolio_companies", "type", "indexKind", "indexSub", "tags"], query)
       && (!tag || normalizeTags(item.tags).some((itemTag) => itemTag.name === tag || itemTag.id === tag))
     ));
     const choices = [
@@ -480,6 +488,7 @@
       { value: "company", label: "公司机构库", count: matching.filter((item) => item.indexType === "company").length },
       { value: "product", label: "产品模型库", count: matching.filter((item) => item.indexType === "product").length },
       { value: "person", label: "人物库", count: matching.filter((item) => item.indexType === "person").length },
+      { value: "investor", label: "投资机构库", count: matching.filter((item) => item.indexType === "investor").length },
       { value: "technology", label: "技术词表", count: matching.filter((item) => item.indexType === "technology").length },
       { value: "context", label: "场景行业词表", count: matching.filter((item) => item.indexType === "context").length }
     ];
@@ -2004,6 +2013,67 @@
     `;
   }
 
+  function investmentInstitutionDetail(payload) {
+    const institution = payload.institution || {};
+    const activities = institution.activities || [];
+    const activityRows = activities.map((activity) => {
+      const normalized = activity.amount_normalized?.display_zh || "";
+      const amount = [normalized, activity.amount_original && activity.amount_original !== normalized ? `原文 ${activity.amount_original}` : ""]
+        .filter(Boolean).join(" · ") || "金额未披露";
+      return `
+        <article class="dc-list-row dc-investor-activity">
+          <span class="dc-row-kind">${escapeHtml(activity.role || "角色未披露")}</span>
+          <div class="dc-row-copy">
+            <a class="dc-row-title" href="funding-insights.html?id=${encodeURIComponent(activity.funding_insight_id)}">${escapeHtml(activity.company_name)} · ${escapeHtml(activity.round || "轮次未披露")}</a>
+            <span>${escapeHtml(amount)} · ${escapeHtml(activity.announced_at || "日期未披露")}</span>
+          </div>
+        </article>
+      `;
+    }).join("");
+    const evidenceRows = (institution.evidence || []).slice(0, 20).map((evidence) => {
+      const sourceUrl = safeExternalUrl(evidence.source_url);
+      return `<li>${sourceUrl ? `<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(evidence.quote)}</a>` : escapeHtml(evidence.quote)}</li>`;
+    }).join("");
+    const companies = (institution.portfolio_companies || []).map((company) => company.canonical_entity_id
+      ? `<a href="${escapeHtml(detailLink("index", "entity", company.canonical_entity_id))}">${escapeHtml(company.name)}</a>`
+      : `<span>${escapeHtml(company.name)}</span>`).join("");
+    const canonicalLink = institution.canonical_entity_id
+      ? `<a href="${escapeHtml(detailLink("index", "entity", institution.canonical_entity_id))}">打开规范实体档案</a>`
+      : "";
+    return `
+      ${breadcrumb("index", institution.name)}
+      <header class="dc-detail-head dc-entity-head">
+        <h1>${escapeHtml(institution.name)}</h1>
+        <div class="dc-detail-meta">
+          <span>${escapeHtml(institution.investor_kind_label || "投资方")}</span>
+          <span>${institution.collection_status === "evidence_backed" ? "证据完整" : "部分证据"}</span>
+          ${canonicalLink}
+        </div>
+      </header>
+      <div class="dc-detail-grid">
+        <article class="dc-detail-main">
+          <section class="dc-detail-section">
+            <h2>投资活动</h2>
+            <div class="dc-list">${activityRows || '<p class="dc-prose">暂无可展示投资活动。</p>'}</div>
+          </section>
+        </article>
+        <aside class="dc-detail-side">
+          <section class="dc-side-block"><h2>采集概况</h2><dl class="dc-facts">
+            ${fact("类型", institution.investor_kind_label)}
+            ${fact("本轮投资记录", institution.current_round_count)}
+            ${fact("历史或轮次不明", institution.historical_or_ambiguous_count)}
+            ${fact("已披露被投企业", institution.portfolio_company_count)}
+            ${fact("最早披露", institution.first_disclosed_at)}
+            ${fact("最近披露", institution.latest_disclosed_at)}
+          </dl></section>
+          ${companies ? `<section class="dc-side-block"><h2>已披露被投企业</h2><div class="dc-side-list">${companies}</div></section>` : ""}
+          <section class="dc-side-block"><h2>数据边界</h2><p class="dc-prose">本档案由融资应用中的精确引文生成，不自动写入规范实体或事实关系。</p></section>
+        </aside>
+      </div>
+      ${evidenceRows ? `<section class="dc-related-section"><h2>投资方证据</h2><ul class="dc-entity-relations">${evidenceRows}</ul></section>` : ""}
+    `;
+  }
+
   function taxonomyNodeDetail(payload) {
     const node = payload.node;
     const entities = payload.entities || [];
@@ -2030,9 +2100,13 @@
       const indexData = await communityFetchJson(splitDataUrl("indexes/entities"));
       resolvedId = (indexData.products || []).find((item) => (item.legacyIds || []).includes(id))?.id || id;
     }
-    const section = kind === "taxonomy" ? "taxonomy" : "entities";
+    const section = kind === "taxonomy" ? "taxonomy" : kind === "investor" ? "investors" : "entities";
     const payload = await communityFetchJson(splitDataUrl(section, resolvedId));
-    root.innerHTML = kind === "taxonomy" ? taxonomyNodeDetail(payload) : entityProfileDetail(payload);
+    root.innerHTML = kind === "taxonomy"
+      ? taxonomyNodeDetail(payload)
+      : kind === "investor"
+        ? investmentInstitutionDetail(payload)
+        : entityProfileDetail(payload);
   }
 
   function fdeDetail(data, item) {
@@ -2284,7 +2358,7 @@
         document.title = `${viewpointState.person ? "人物观点时间线" : viewpointState.mode === "people" ? "人物索引" : "一线观点"}｜观澜 AI`;
         return;
       }
-      if (view === "index" && ["entity", "taxonomy", "company", "product"].includes(params.get("detail"))) {
+      if (view === "index" && ["entity", "taxonomy", "company", "product", "investor"].includes(params.get("detail"))) {
         const detailKind = params.get("detail");
         await renderSplitEntityDetail(detailKind, params.get("id") || "");
         loading.hidden = true;

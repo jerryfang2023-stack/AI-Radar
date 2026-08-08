@@ -1,0 +1,257 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-a83f8b9c272b41",
+    "name": "BlackRock",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 4,
+    "first_disclosed_at": "2026-02-24",
+    "latest_disclosed_at": "2026-07-08",
+    "role_counts": {
+      "participant": 4
+    },
+    "round_codes": [
+      "ipo",
+      "series_f",
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-53453cfb48a75dde",
+        "canonical_entity_id": "",
+        "name": "Axelera AI"
+      },
+      {
+        "entity_id": "EN-7d3194f79e645c42",
+        "canonical_entity_id": "EN-7d3194f79e645c42",
+        "name": "OpenAI"
+      },
+      {
+        "entity_id": "EN-6907a22fafe13a63",
+        "canonical_entity_id": "",
+        "name": "SambaNova Systems"
+      },
+      {
+        "entity_id": "EN-e78bdebae031095b",
+        "canonical_entity_id": "EN-e78bdebae031095b",
+        "name": "SpaceX"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-0cc8f57f16d64b42",
+        "funding_insight_id": "FI-02775e1bb32805b0",
+        "event_ids": [
+          "EV-a8dc5c859946f336"
+        ],
+        "company_entity_id": "EN-6907a22fafe13a63",
+        "company_canonical_entity_id": "",
+        "company_name": "SambaNova Systems",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F (first close)",
+        "amount_original": "$1 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-07-08",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投（新进或既有）",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-dbf8259066547c8e",
+            "source_url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
+            "source_title": "AI 芯片制造商 SambaNova 以 110 亿美元估值融资 10 亿美元，距上一轮巨额融资仅 5 个月",
+            "source_content_hash": "e79999ca03a0833e",
+            "quote": "New and existing investors also joined, including A&E Investment, Assam Ventures, Battery Ventures, Cambium Capital, BlackRock",
+            "quote_hash": "310e75a9d79188e2fb316a41ddab0afb6e75cdd365f3729b6a4e07f3e74098d3"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-708af95b274e7e40",
+        "funding_insight_id": "FI-082c684e1b4a88c2",
+        "event_ids": [
+          "EV-ef7346378fcf9746"
+        ],
+        "company_entity_id": "EN-e78bdebae031095b",
+        "company_canonical_entity_id": "EN-e78bdebae031095b",
+        "company_name": "SpaceX",
+        "round": "IPO",
+        "round_code": "ipo",
+        "round_original": "IPO",
+        "amount_original": "$75 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 75000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "750 亿美元"
+        },
+        "announced_at": "2026-06-03",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1f1d87a2eb46200f",
+            "source_url": "https://www.aol.com/finance/spacex-raises-record-75-billion-171021174.html",
+            "source_title": "SpaceX Raises Record $75 Billion in Historic IPO, Reaches $1.8 Trillion Valuation - AOL",
+            "source_content_hash": "c2f564ef5912c700",
+            "quote": "BlackRock alone sought at least $5 billion worth of shares",
+            "quote_hash": "1e683b9cd9aa6249a09e092562352ef0ee31bb9446a6afa1bacc42629354c23c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-6435b79a1d8d1e3b",
+        "funding_insight_id": "FI-b76fffbf5d0d91bd",
+        "event_ids": [
+          "EV-d4e44892226be468"
+        ],
+        "company_entity_id": "EN-7d3194f79e645c42",
+        "company_canonical_entity_id": "EN-7d3194f79e645c42",
+        "company_name": "OpenAI",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$1220亿",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 122000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1220 亿美元"
+        },
+        "announced_at": "2026-03-31",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1e2b3bad243bd066",
+            "source_url": "https://yespress.io/openais-122-b-megaround",
+            "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
+            "source_content_hash": "494969b64dc816f3",
+            "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+            "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b1aba75937fff1f0",
+        "funding_insight_id": "FI-e5f8a40683ba6b3e",
+        "event_ids": [
+          "EV-59882383f82f215d"
+        ],
+        "company_entity_id": "EN-53453cfb48a75dde",
+        "company_canonical_entity_id": "",
+        "company_name": "Axelera AI",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "latest funding round",
+        "amount_original": "$250 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "announced_at": "2026-02-24",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投（新投资方）",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6f1272d694246329",
+            "source_url": "http://today.reuters.com/business/european-ai-chip-startup-axelera-raises-additional-250-million-2026-02-24/",
+            "source_title": "欧洲AI芯片初创公司Axelera再获2.5亿美元融资",
+            "source_content_hash": "d1a88dde81a4f0d1",
+            "quote": "included BlackRock and SiteGround Capital as new investors",
+            "quote_hash": "caad02846f5d4ef4217968d470717a75acd8fb1c69ef69cab662153622955a93"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-dbf8259066547c8e",
+        "source_url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
+        "source_title": "AI 芯片制造商 SambaNova 以 110 亿美元估值融资 10 亿美元，距上一轮巨额融资仅 5 个月",
+        "source_content_hash": "e79999ca03a0833e",
+        "quote": "New and existing investors also joined, including A&E Investment, Assam Ventures, Battery Ventures, Cambium Capital, BlackRock",
+        "quote_hash": "310e75a9d79188e2fb316a41ddab0afb6e75cdd365f3729b6a4e07f3e74098d3"
+      },
+      {
+        "source_id": "FISRC-1f1d87a2eb46200f",
+        "source_url": "https://www.aol.com/finance/spacex-raises-record-75-billion-171021174.html",
+        "source_title": "SpaceX Raises Record $75 Billion in Historic IPO, Reaches $1.8 Trillion Valuation - AOL",
+        "source_content_hash": "c2f564ef5912c700",
+        "quote": "BlackRock alone sought at least $5 billion worth of shares",
+        "quote_hash": "1e683b9cd9aa6249a09e092562352ef0ee31bb9446a6afa1bacc42629354c23c"
+      },
+      {
+        "source_id": "FISRC-1e2b3bad243bd066",
+        "source_url": "https://yespress.io/openais-122-b-megaround",
+        "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
+        "source_content_hash": "494969b64dc816f3",
+        "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+        "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+      },
+      {
+        "source_id": "FISRC-6f1272d694246329",
+        "source_url": "http://today.reuters.com/business/european-ai-chip-startup-axelera-raises-additional-250-million-2026-02-24/",
+        "source_title": "欧洲AI芯片初创公司Axelera再获2.5亿美元融资",
+        "source_content_hash": "d1a88dde81a4f0d1",
+        "quote": "included BlackRock and SiteGround Capital as new investors",
+        "quote_hash": "caad02846f5d4ef4217968d470717a75acd8fb1c69ef69cab662153622955a93"
+      }
+    ]
+  }
+}

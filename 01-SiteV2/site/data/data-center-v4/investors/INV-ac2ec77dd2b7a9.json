@@ -1,0 +1,260 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-ac2ec77dd2b7a9",
+    "name": "Greycroft",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 4,
+    "first_disclosed_at": "2026-03-12",
+    "latest_disclosed_at": "2026-05-21",
+    "role_counts": {
+      "co_lead": 1,
+      "lead": 1,
+      "participant": 2
+    },
+    "round_codes": [
+      "seed",
+      "series_a",
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-a83a3af1a4866fd5",
+        "canonical_entity_id": "",
+        "name": "Advanced Machine Intelligence Labs (AMI Labs)"
+      },
+      {
+        "entity_id": "EN-245f1e177c5169cb",
+        "canonical_entity_id": "",
+        "name": "Hark"
+      },
+      {
+        "entity_id": "EN-b06631033a981321",
+        "canonical_entity_id": "",
+        "name": "Recursive Superintelligence Inc."
+      },
+      {
+        "entity_id": "EN-7ea76c82c786a5e1",
+        "canonical_entity_id": "",
+        "name": "Thoughtly"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-217256d6dab3c915",
+        "funding_insight_id": "FI-35b63d84f1f7c2b0",
+        "event_ids": [
+          "EV-450f624a6a6446ce",
+          "EV-44c9a50b99c76a70"
+        ],
+        "company_entity_id": "EN-245f1e177c5169cb",
+        "company_canonical_entity_id": "",
+        "company_name": "Hark",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$700M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7 亿美元"
+        },
+        "announced_at": "2026-05-21",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9b94f245fa27a161",
+            "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
+            "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
+            "source_content_hash": "e91739ca23d21469",
+            "quote": "Greycroft",
+            "quote_hash": "269ae42ee2c38d3580cd8f84435f3ddf2dd6883bee9956ab606ee7ef44301e07"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9b440f4d8304dbe8",
+        "funding_insight_id": "FI-3030a959696487d1",
+        "event_ids": [
+          "EV-12a42b0aabee236f"
+        ],
+        "company_entity_id": "EN-b06631033a981321",
+        "company_canonical_entity_id": "",
+        "company_name": "Recursive Superintelligence Inc.",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$650 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 650000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6.5 亿美元"
+        },
+        "announced_at": "2026-05-13",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-61b930049ee4e86e",
+            "source_url": "https://siliconangle.com/2026/05/13/recursive-superintelligence-raises-650m-build-self-improving-ai-models/",
+            "source_title": "Recursive Superintelligence raises $650M to build self-improving AI models - SiliconANGLE",
+            "source_content_hash": "926edc21ca4613eb",
+            "quote": "Alphabet Inc.’s GV fund and Greycroft led the round.",
+            "quote_hash": "f390ee773199b41df67d5f2d9959f15d65a99ba3f977f978982815cd133aff09"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-7ed74118e3d19e3e",
+        "funding_insight_id": "FI-c3c9d28a06664fef",
+        "event_ids": [
+          "EV-b0ed8d5a37784214"
+        ],
+        "company_entity_id": "EN-7ea76c82c786a5e1",
+        "company_canonical_entity_id": "",
+        "company_name": "Thoughtly",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$5.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "550 万美元"
+        },
+        "announced_at": "2026-04-22",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "既有投资方，本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-01d50cf4c52275e9",
+            "source_url": "https://thoughtly.com/blog/thoughtly-raises-usd8m-to-build-omnichannel-agents-for-revenue-teams",
+            "source_title": "Thoughtly 获超800万美元融资，为营收团队打造全渠道智能代理",
+            "source_content_hash": "daf6c182c79d0bb4",
+            "quote": "and returning investors Afore Capital and Greycroft",
+            "quote_hash": "8ade989f4db52563b4753209f1eea55f614d902291ce7a34a15cde0b2862c3ea"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-173c3c66c5a4a032",
+        "funding_insight_id": "FI-9c3c02658ff94312",
+        "event_ids": [
+          "EV-cded77b1de2db61a"
+        ],
+        "company_entity_id": "EN-a83a3af1a4866fd5",
+        "company_canonical_entity_id": "",
+        "company_name": "Advanced Machine Intelligence Labs (AMI Labs)",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "10.3亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1030000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10.3 亿美元"
+        },
+        "announced_at": "2026-03-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-6c35525e379488bf",
+            "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
+            "source_title": "AMI Labs 获 1BN 美元种子轮融资，用于构建世界模型",
+            "source_content_hash": "adc0cc9ffe3c9dd0",
+            "quote": "co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, and Bezos Expeditions",
+            "quote_hash": "6a9f71b006329253881732e65a1aab8292cb41280260354b36196bdebd59dc54"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-9b94f245fa27a161",
+        "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
+        "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
+        "source_content_hash": "e91739ca23d21469",
+        "quote": "Greycroft",
+        "quote_hash": "269ae42ee2c38d3580cd8f84435f3ddf2dd6883bee9956ab606ee7ef44301e07"
+      },
+      {
+        "source_id": "FISRC-61b930049ee4e86e",
+        "source_url": "https://siliconangle.com/2026/05/13/recursive-superintelligence-raises-650m-build-self-improving-ai-models/",
+        "source_title": "Recursive Superintelligence raises $650M to build self-improving AI models - SiliconANGLE",
+        "source_content_hash": "926edc21ca4613eb",
+        "quote": "Alphabet Inc.’s GV fund and Greycroft led the round.",
+        "quote_hash": "f390ee773199b41df67d5f2d9959f15d65a99ba3f977f978982815cd133aff09"
+      },
+      {
+        "source_id": "FISRC-01d50cf4c52275e9",
+        "source_url": "https://thoughtly.com/blog/thoughtly-raises-usd8m-to-build-omnichannel-agents-for-revenue-teams",
+        "source_title": "Thoughtly 获超800万美元融资，为营收团队打造全渠道智能代理",
+        "source_content_hash": "daf6c182c79d0bb4",
+        "quote": "and returning investors Afore Capital and Greycroft",
+        "quote_hash": "8ade989f4db52563b4753209f1eea55f614d902291ce7a34a15cde0b2862c3ea"
+      },
+      {
+        "source_id": "FISRC-6c35525e379488bf",
+        "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
+        "source_title": "AMI Labs 获 1BN 美元种子轮融资，用于构建世界模型",
+        "source_content_hash": "adc0cc9ffe3c9dd0",
+        "quote": "co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, and Bezos Expeditions",
+        "quote_hash": "6a9f71b006329253881732e65a1aab8292cb41280260354b36196bdebd59dc54"
+      }
+    ]
+  }
+}

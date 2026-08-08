@@ -1,0 +1,379 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-7626f5b02a6cc8",
+    "name": "Insight Partners",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 6,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 6,
+    "first_disclosed_at": "2025-05-06",
+    "latest_disclosed_at": "2026-07-16",
+    "role_counts": {
+      "lead": 2,
+      "participant": 4
+    },
+    "round_codes": [
+      "series_a",
+      "series_b",
+      "series_d",
+      "series_f"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-3032646694ad17bb",
+        "canonical_entity_id": "",
+        "name": "E2B"
+      },
+      {
+        "entity_id": "EN-0caee180da9d0f3f",
+        "canonical_entity_id": "",
+        "name": "Fireworks AI Inc."
+      },
+      {
+        "entity_id": "EN-b0bc23fa8e20c543",
+        "canonical_entity_id": "EN-b0bc23fa8e20c543",
+        "name": "InstaLILY AI"
+      },
+      {
+        "entity_id": "EN-7d3194f79e645c42",
+        "canonical_entity_id": "EN-7d3194f79e645c42",
+        "name": "OpenAI"
+      },
+      {
+        "entity_id": "EN-52f1bab72d488823",
+        "canonical_entity_id": "",
+        "name": "Relevance AI"
+      },
+      {
+        "entity_id": "FICO-wonderful",
+        "canonical_entity_id": "",
+        "name": "Wonderful"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-53eca9a2793faf9b",
+        "funding_insight_id": "FI-3b1ea359415f476d",
+        "event_ids": [
+          "EV-4eaf3aabecae6016"
+        ],
+        "company_entity_id": "EN-0caee180da9d0f3f",
+        "company_canonical_entity_id": "",
+        "company_name": "Fireworks AI Inc.",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$1.505 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1505000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15.05 亿美元"
+        },
+        "announced_at": "2026-07-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-80d6b020dd75ac09",
+            "source_url": "https://genztech.blog/p/fireworks-ai-1-5b-series-d-17-5b-valuation/",
+            "source_title": "Fireworks AI Raises $1.5B Series D at $17.5B Valuation",
+            "source_content_hash": "2ac54d2d554e9655",
+            "quote": "Bessemer, Insight Partners, Lightspeed, Menlo Ventures, NVIDIA, Ontario Teachers' Pension Plan, Sequoia-adjacent crossover funds and others all participated.",
+            "quote_hash": "e486b89bc988feaf5486b02bd4c675c44a2a357905efd88a5b5008cfa027b7a7"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-640953b2dd1efa0c",
+        "funding_insight_id": "FI-5401335ad961f05d",
+        "event_ids": [
+          "EV-b29878fdf79f2ac5"
+        ],
+        "company_entity_id": "EN-b0bc23fa8e20c543",
+        "company_canonical_entity_id": "EN-b0bc23fa8e20c543",
+        "company_name": "InstaLILY AI",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$60 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-07-14",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投，并增加了既有投资",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b6c1fe80a4b09131",
+            "source_url": "https://startupfortune.com/instalily-raises-60-million-to-put-ai-agents-inside-construction-and-logistics-firms/",
+            "source_title": "InstaLILY 融资 6000 万美元，将 AI 智能体引入建筑和物流企业",
+            "source_content_hash": "5cfacab2e15c6feb",
+            "quote": "Insight Partners increased its existing stake",
+            "quote_hash": "f2633b02cb21a919072fbd9a71744a55ff79ab82cc784fe73b16f84cf5a45a8c"
+          },
+          {
+            "source_id": "FISRC-c8150575e9fc83bc",
+            "source_url": "https://www.morningstar.com/news/accesswire/1190835msn/instalily-raises-60-million-series-b-and-launches-lily-the-worlds-first-ai-forward-deployed-engineer",
+            "source_title": "InstaLILY Raises $60 Million Series B and Launches Lily, the World's First AI Forward Deployed Engineer | Morningstar",
+            "source_content_hash": "3a191e9f00bd3318",
+            "quote": "with participation from Insight Partners who has increased its investment",
+            "quote_hash": "7588b36ed010544e044b5bf53636c54ebb118d38c2c61022260e89a7e91d816c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-43a92c9d0679393b",
+        "funding_insight_id": "FI-b76fffbf5d0d91bd",
+        "event_ids": [
+          "EV-d4e44892226be468"
+        ],
+        "company_entity_id": "EN-7d3194f79e645c42",
+        "company_canonical_entity_id": "EN-7d3194f79e645c42",
+        "company_name": "OpenAI",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$1220亿",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 122000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1220 亿美元"
+        },
+        "announced_at": "2026-03-31",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b86e0fbe62dfd3dc",
+            "source_url": "https://www.mexc.com/news/996087",
+            "source_title": "OpenAI Closes $122B Funding Round, Hits $852B Valuation as AI Infrastructure Race Intensifies | MEXC News",
+            "source_content_hash": "4e51c91e5fc7160c",
+            "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round.",
+            "quote_hash": "f0097151bde761f5e4659ebb163169c9db44274e9eb7a22cc2eab9333678a322"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-77fa7361de8d4f68",
+        "funding_insight_id": "FI-2b8ea19368209f49",
+        "event_ids": [
+          "EV-aa33ca051f3a7f78",
+          "EV-0ade039d36e077ae",
+          "EV-a84ec4216d3ded6d"
+        ],
+        "company_entity_id": "FICO-wonderful",
+        "company_canonical_entity_id": "",
+        "company_name": "Wonderful",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "1.5亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "announced_at": "2026-03-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-c29f00f067579660",
+            "source_url": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
+            "source_title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets | Insight Partners",
+            "source_content_hash": "67f409ee5b146b1d",
+            "quote": "Wonderful, the enterprise AI agent platform, today announced it has raised $150 million in a Series B funding round led by global software investor Insight Partners",
+            "quote_hash": "aac2bea2bbcae8d744e68bfda908240bb403ac3ace58a3f9c30ffd8d038de68a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b793306402b09b4a",
+        "funding_insight_id": "FI-c88f07d6a7726d1d",
+        "event_ids": [
+          "EV-d7f561bc4f6cb02d"
+        ],
+        "company_entity_id": "EN-3032646694ad17bb",
+        "company_canonical_entity_id": "",
+        "company_name": "E2B",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$21 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 21000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2100 万美元"
+        },
+        "announced_at": "2025-07-28",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-c4bbfe8565d35dc2",
+            "source_url": "https://www.prnewswire.com/news-releases/e2b-raises-a-21m-series-a-to-offer-cloud-for-ai-agents-to-fortune-100-302514540.html",
+            "source_title": "E2B 获 2100 万美元 A 轮融资，为财富 100 强企业提供 AI 智能体云服务",
+            "source_content_hash": "db0c071a75daeddf",
+            "quote": "led by global software investor Insight Partners",
+            "quote_hash": "01808c66215b589399519b4efd96640f961e742ba2321c13d5dc8ae1326368b9"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4e400529e56d43d5",
+        "funding_insight_id": "FI-943beca4faf7346d",
+        "event_ids": [
+          "EV-15bbdd37c516309a"
+        ],
+        "company_entity_id": "EN-52f1bab72d488823",
+        "company_canonical_entity_id": "",
+        "company_name": "Relevance AI",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$24 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 24000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2400 万美元"
+        },
+        "announced_at": "2025-05-06",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "既有投资方，本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e2076aaadf946323",
+            "source_url": "https://techcrunch.com/2025/05/06/relevance-ai-raises-24m-series-b-to-help-anyone-build-teams-of-ai-agents/",
+            "source_title": "Relevance AI 获 2400 万美元融资，助力企业构建 AI 智能体",
+            "source_content_hash": "569a3e9ef99a7000",
+            "quote": "Returning investors King River Capital, Insight Partners, and Peak XV also participated",
+            "quote_hash": "f72178b073c8d598e270b84d1abc5c2f0a48a92296cb47a35233eadac198c052"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-80d6b020dd75ac09",
+        "source_url": "https://genztech.blog/p/fireworks-ai-1-5b-series-d-17-5b-valuation/",
+        "source_title": "Fireworks AI Raises $1.5B Series D at $17.5B Valuation",
+        "source_content_hash": "2ac54d2d554e9655",
+        "quote": "Bessemer, Insight Partners, Lightspeed, Menlo Ventures, NVIDIA, Ontario Teachers' Pension Plan, Sequoia-adjacent crossover funds and others all participated.",
+        "quote_hash": "e486b89bc988feaf5486b02bd4c675c44a2a357905efd88a5b5008cfa027b7a7"
+      },
+      {
+        "source_id": "FISRC-b6c1fe80a4b09131",
+        "source_url": "https://startupfortune.com/instalily-raises-60-million-to-put-ai-agents-inside-construction-and-logistics-firms/",
+        "source_title": "InstaLILY 融资 6000 万美元，将 AI 智能体引入建筑和物流企业",
+        "source_content_hash": "5cfacab2e15c6feb",
+        "quote": "Insight Partners increased its existing stake",
+        "quote_hash": "f2633b02cb21a919072fbd9a71744a55ff79ab82cc784fe73b16f84cf5a45a8c"
+      },
+      {
+        "source_id": "FISRC-c8150575e9fc83bc",
+        "source_url": "https://www.morningstar.com/news/accesswire/1190835msn/instalily-raises-60-million-series-b-and-launches-lily-the-worlds-first-ai-forward-deployed-engineer",
+        "source_title": "InstaLILY Raises $60 Million Series B and Launches Lily, the World's First AI Forward Deployed Engineer | Morningstar",
+        "source_content_hash": "3a191e9f00bd3318",
+        "quote": "with participation from Insight Partners who has increased its investment",
+        "quote_hash": "7588b36ed010544e044b5bf53636c54ebb118d38c2c61022260e89a7e91d816c"
+      },
+      {
+        "source_id": "FISRC-b86e0fbe62dfd3dc",
+        "source_url": "https://www.mexc.com/news/996087",
+        "source_title": "OpenAI Closes $122B Funding Round, Hits $852B Valuation as AI Infrastructure Race Intensifies | MEXC News",
+        "source_content_hash": "4e51c91e5fc7160c",
+        "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round.",
+        "quote_hash": "f0097151bde761f5e4659ebb163169c9db44274e9eb7a22cc2eab9333678a322"
+      },
+      {
+        "source_id": "FISRC-c29f00f067579660",
+        "source_url": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
+        "source_title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets | Insight Partners",
+        "source_content_hash": "67f409ee5b146b1d",
+        "quote": "Wonderful, the enterprise AI agent platform, today announced it has raised $150 million in a Series B funding round led by global software investor Insight Partners",
+        "quote_hash": "aac2bea2bbcae8d744e68bfda908240bb403ac3ace58a3f9c30ffd8d038de68a"
+      },
+      {
+        "source_id": "FISRC-c4bbfe8565d35dc2",
+        "source_url": "https://www.prnewswire.com/news-releases/e2b-raises-a-21m-series-a-to-offer-cloud-for-ai-agents-to-fortune-100-302514540.html",
+        "source_title": "E2B 获 2100 万美元 A 轮融资，为财富 100 强企业提供 AI 智能体云服务",
+        "source_content_hash": "db0c071a75daeddf",
+        "quote": "led by global software investor Insight Partners",
+        "quote_hash": "01808c66215b589399519b4efd96640f961e742ba2321c13d5dc8ae1326368b9"
+      },
+      {
+        "source_id": "FISRC-e2076aaadf946323",
+        "source_url": "https://techcrunch.com/2025/05/06/relevance-ai-raises-24m-series-b-to-help-anyone-build-teams-of-ai-agents/",
+        "source_title": "Relevance AI 获 2400 万美元融资，助力企业构建 AI 智能体",
+        "source_content_hash": "569a3e9ef99a7000",
+        "quote": "Returning investors King River Capital, Insight Partners, and Peak XV also participated",
+        "quote_hash": "f72178b073c8d598e270b84d1abc5c2f0a48a92296cb47a35233eadac198c052"
+      }
+    ]
+  }
+}

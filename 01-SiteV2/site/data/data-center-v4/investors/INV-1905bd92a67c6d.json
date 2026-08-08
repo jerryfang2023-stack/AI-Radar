@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-1905bd92a67c6d",
+    "name": "Ramp Network Inc. 天使投资人",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-24",
+    "latest_disclosed_at": "2026-06-24",
+    "role_counts": {
+      "other_current_round": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-e23228440ca5340f",
+        "canonical_entity_id": "",
+        "name": "Seltz"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-f0e7d77b8d1ad70f",
+        "funding_insight_id": "FI-180a459d0573eb2a",
+        "event_ids": [
+          "EV-f54ec32c67e9447c",
+          "EV-2bb63a3015195f9b"
+        ],
+        "company_entity_id": "EN-e23228440ca5340f",
+        "company_canonical_entity_id": "",
+        "company_name": "Seltz",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$12.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1250 万美元"
+        },
+        "announced_at": "2026-06-24",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮天使投资",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-05007e2b6b43ffda",
+            "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
+            "source_title": "智能体基础设施初创公司Seltz融资1250万美元，帮助AI代理搜索网络答案 - SiliconANGLE",
+            "source_content_hash": "4affcb58ccdfce57",
+            "quote": "plus angel investors from Google LLC, Hugging Face Inc. and Ramp Network Inc.",
+            "quote_hash": "4f61e43137f917c3b8093cc4c56d6edddd96184815ff520bffbfaf3155cd3f62"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-05007e2b6b43ffda",
+        "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
+        "source_title": "智能体基础设施初创公司Seltz融资1250万美元，帮助AI代理搜索网络答案 - SiliconANGLE",
+        "source_content_hash": "4affcb58ccdfce57",
+        "quote": "plus angel investors from Google LLC, Hugging Face Inc. and Ramp Network Inc.",
+        "quote_hash": "4f61e43137f917c3b8093cc4c56d6edddd96184815ff520bffbfaf3155cd3f62"
+      }
+    ]
+  }
+}

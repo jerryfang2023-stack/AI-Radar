@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-706f8310804e04",
+    "name": "Creandum",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2025-08-27",
+    "latest_disclosed_at": "2025-08-27",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-098a40b4499d7512",
+        "canonical_entity_id": "",
+        "name": "Maisa AI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-6628227facf96931",
+        "funding_insight_id": "FI-c9553191a021b77b",
+        "event_ids": [
+          "EV-4eb0556b8c72d410"
+        ],
+        "company_entity_id": "EN-098a40b4499d7512",
+        "company_canonical_entity_id": "",
+        "company_name": "Maisa AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$25 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 25000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2500 万美元"
+        },
+        "announced_at": "2025-08-27",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-f154528a83a385f1",
+            "source_url": "https://techcrunch.com/2025/08/27/maisa-ai-gets-25m-to-fix-enterprise-ais-95-failure-rate/",
+            "source_title": "Maisa AI 获 2500 万美元融资，旨在解决企业 AI 95% 的失败率",
+            "source_content_hash": "8c799b616e20ea1d",
+            "quote": "a new, $25 million seed round led by European VC firm Creandum",
+            "quote_hash": "0896f789168d0d998cf127f1803833931810c95ad9246dd6322088bfd9d3890d"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-f154528a83a385f1",
+        "source_url": "https://techcrunch.com/2025/08/27/maisa-ai-gets-25m-to-fix-enterprise-ais-95-failure-rate/",
+        "source_title": "Maisa AI 获 2500 万美元融资，旨在解决企业 AI 95% 的失败率",
+        "source_content_hash": "8c799b616e20ea1d",
+        "quote": "a new, $25 million seed round led by European VC firm Creandum",
+        "quote_hash": "0896f789168d0d998cf127f1803833931810c95ad9246dd6322088bfd9d3890d"
+      }
+    ]
+  }
+}

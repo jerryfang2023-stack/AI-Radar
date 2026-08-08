@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-dceea434dafe51",
+    "name": "Cerulean Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2025-07-10",
+    "latest_disclosed_at": "2025-07-10",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-2b81d85809794782",
+        "canonical_entity_id": "",
+        "name": "LGND AI, Inc."
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-798b314aa94dfc57",
+        "funding_insight_id": "FI-7b5ab8b022a94abc",
+        "event_ids": [
+          "EV-e579af588ad8cf64"
+        ],
+        "company_entity_id": "EN-2b81d85809794782",
+        "company_canonical_entity_id": "",
+        "company_name": "LGND AI, Inc.",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$9M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 9000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "900 万美元"
+        },
+        "announced_at": "2025-07-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "种子前轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-11a5fc221a4f667a",
+            "source_url": "https://www.linkedin.com/posts/cerulean-ventures_lgnd-geoai-artificialintelligence-activity-7349093179654049792-Yt-1",
+            "source_title": "LGND AI raises $9M seed round for AI that understands the planet",
+            "source_content_hash": "9ae6ebfe3e9548fa",
+            "quote": "We're thrilled to have backed them at pre-seed from day 1 last year as they now announce their newest round of funding, a $9M seed round",
+            "quote_hash": "7e93bb27189a5a9078e0eb546d0826262bd5e136ff03534bd41a078692039a00"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-11a5fc221a4f667a",
+        "source_url": "https://www.linkedin.com/posts/cerulean-ventures_lgnd-geoai-artificialintelligence-activity-7349093179654049792-Yt-1",
+        "source_title": "LGND AI raises $9M seed round for AI that understands the planet",
+        "source_content_hash": "9ae6ebfe3e9548fa",
+        "quote": "We're thrilled to have backed them at pre-seed from day 1 last year as they now announce their newest round of funding, a $9M seed round",
+        "quote_hash": "7e93bb27189a5a9078e0eb546d0826262bd5e136ff03534bd41a078692039a00"
+      }
+    ]
+  }
+}

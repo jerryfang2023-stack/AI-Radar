@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-8a5cbfce5937ea",
+    "name": "Capstone Partners",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2025-08-28",
+    "latest_disclosed_at": "2025-08-28",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-48bebf25e5bd5aca",
+        "canonical_entity_id": "",
+        "name": "FriendliAI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-8bcf100fca035def",
+        "funding_insight_id": "FI-674def4b953072e2",
+        "event_ids": [
+          "EV-736404028b8ad33e"
+        ],
+        "company_entity_id": "EN-48bebf25e5bd5aca",
+        "company_canonical_entity_id": "",
+        "company_name": "FriendliAI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子扩展轮",
+        "amount_original": "$20 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万美元"
+        },
+        "announced_at": "2025-08-28",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-a279a9a1c8543f67",
+            "source_url": "https://friendli.ai/blog/friendliai-raises-20m-in-seed-extension-round",
+            "source_title": "FriendliAI 获 2000 万美元融资，重新定义 AI 推理",
+            "source_content_hash": "6780af8acb880527",
+            "quote": "led by Capstone Partners",
+            "quote_hash": "8f0a78f5f99a05c15b714c3c89b8688b1af97679777c518d6f946db221e5d178"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-a279a9a1c8543f67",
+        "source_url": "https://friendli.ai/blog/friendliai-raises-20m-in-seed-extension-round",
+        "source_title": "FriendliAI 获 2000 万美元融资，重新定义 AI 推理",
+        "source_content_hash": "6780af8acb880527",
+        "quote": "led by Capstone Partners",
+        "quote_hash": "8f0a78f5f99a05c15b714c3c89b8688b1af97679777c518d6f946db221e5d178"
+      }
+    ]
+  }
+}

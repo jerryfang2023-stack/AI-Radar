@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-a12c6b3a40966b",
+    "name": "Assaf Rappaport (Wiz 创始团队成员)",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-07-28",
+    "latest_disclosed_at": "2026-07-28",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-762245f58a6ea491",
+        "funding_insight_id": "FI-b8d28ad363a47e7a",
+        "event_ids": [
+          "EV-5f3ccb941a2fe5d7"
+        ],
+        "company_entity_id": "EN-2be663431f007250",
+        "company_canonical_entity_id": "",
+        "company_name": "Harmony",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$34 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 34000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3400 万美元"
+        },
+        "announced_at": "2026-07-28",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2a6970c8768c84ff",
+            "source_url": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/harmony-raises-34-million-to-reinvent-employee-experience-powered-1193998",
+            "source_title": "Harmony 获 3400 万美元融资，以 AI 重塑员工体验",
+            "source_content_hash": "0b26337e0dc79c5e",
+            "quote": "angel investors including Wiz founding team, including Assaf Rappaport, and Ofir Ehrlich, co-founder and CEO of Eon.io",
+            "quote_hash": "7f59260f697968fe60cac70e9d088db6d297bf26c685727446a8a7724311fc60"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-2a6970c8768c84ff",
+        "source_url": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/harmony-raises-34-million-to-reinvent-employee-experience-powered-1193998",
+        "source_title": "Harmony 获 3400 万美元融资，以 AI 重塑员工体验",
+        "source_content_hash": "0b26337e0dc79c5e",
+        "quote": "angel investors including Wiz founding team, including Assaf Rappaport, and Ofir Ehrlich, co-founder and CEO of Eon.io",
+        "quote_hash": "7f59260f697968fe60cac70e9d088db6d297bf26c685727446a8a7724311fc60"
+      }
+    ]
+  }
+}

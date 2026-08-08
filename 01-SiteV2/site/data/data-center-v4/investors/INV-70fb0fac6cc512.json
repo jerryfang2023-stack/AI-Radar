@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-70fb0fac6cc512",
+    "name": "Magnetar",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-10",
+    "latest_disclosed_at": "2026-06-10",
+    "role_counts": {
+      "co_lead": 1
+    },
+    "round_codes": [
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-3c1ae4e6276005e7",
+        "canonical_entity_id": "EN-3c1ae4e6276005e7",
+        "name": "TensorWave Inc."
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-35733b847013fc8d",
+        "funding_insight_id": "FI-1f714b499dc9751a",
+        "event_ids": [
+          "EV-6e516b6e68def9cf"
+        ],
+        "company_entity_id": "EN-3c1ae4e6276005e7",
+        "company_canonical_entity_id": "EN-3c1ae4e6276005e7",
+        "company_name": "TensorWave Inc.",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "3.5亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 350000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.5 亿美元"
+        },
+        "announced_at": "2026-06-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-e98aedbd2eaa6410",
+            "source_url": "https://siliconangle.com/2026/06/10/data-center-infrastructure-startup-tensorwave-raises-350m-help-break-nvidias-ai-chip-monopoly/",
+            "source_title": "数据中心基础设施初创公司TensorWave融资3.5亿美元，助力打破英伟达AI芯片垄断 - SiliconANGLE",
+            "source_content_hash": "1d75cf39c1185f55",
+            "quote": "The round was co-led by Magnetar and AMD Ventures",
+            "quote_hash": "eb9325c57080acd92f299e9e680f9b2150474061e7ee65a997d10cf79534552f"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-e98aedbd2eaa6410",
+        "source_url": "https://siliconangle.com/2026/06/10/data-center-infrastructure-startup-tensorwave-raises-350m-help-break-nvidias-ai-chip-monopoly/",
+        "source_title": "数据中心基础设施初创公司TensorWave融资3.5亿美元，助力打破英伟达AI芯片垄断 - SiliconANGLE",
+        "source_content_hash": "1d75cf39c1185f55",
+        "quote": "The round was co-led by Magnetar and AMD Ventures",
+        "quote_hash": "eb9325c57080acd92f299e9e680f9b2150474061e7ee65a997d10cf79534552f"
+      }
+    ]
+  }
+}

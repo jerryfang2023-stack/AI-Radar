@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.2",
+    "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-06-09",
     "generated_at": "2026-07-26T15:09:48.934Z",
     "trigger": "verified_daily_funding_events",
@@ -19,7 +19,7 @@
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.2",
+      "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-94ab376337e4045f",
       "triggered_by_event_id": "EV-0e4bddfd5c129618",
       "as_of_date": "2026-06-09",
@@ -261,7 +261,28 @@
           }
         ],
         "investor_disclosure_status": "disclosed",
-        "risk_markers": []
+        "risk_markers": [],
+        "amount_original": "20亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿美元"
+        },
+        "total_raised_original": "39亿美元（截至2026年5月的六个月内）",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 3900000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "39 亿美元"
+        },
+        "disclosure_status": "partially_disclosed"
       },
       "products": [
         {
@@ -665,7 +686,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.2",
+      "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-1186b430ba0e878a",
       "triggered_by_event_id": "EV-c5d7d88d1aef8edb",
       "as_of_date": "2026-06-09",
@@ -838,7 +859,7 @@
                 "quote_hash": "967724e8986cf9493a8a6ffd499c20ba098e825f3384fac3e33dda94328b56dd"
               }
             ],
-            "entity_id": null
+            "entity_id": "EN-cd6362472aea60ef"
           }
         ],
         "evidence_refs": [
@@ -1109,7 +1130,28 @@
           }
         ],
         "investor_disclosure_status": "disclosed",
-        "risk_markers": []
+        "risk_markers": [],
+        "amount_original": "约20亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 20 亿美元"
+        },
+        "total_raised_original": "超39亿美元",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 3900000000,
+          "min_value": 3900000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 39 亿美元"
+        },
+        "disclosure_status": "partially_disclosed"
       },
       "products": [
         {
@@ -1623,8 +1665,8 @@
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "美团",
-          "canonical_entity_id": null,
-          "canonical_name": ""
+          "canonical_entity_id": "EN-cd6362472aea60ef",
+          "canonical_name": "美团"
         },
         {
           "relation_type": "invested_in_other_round",
@@ -1907,7 +1949,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.2",
+      "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-c067d717403c8e3b",
       "triggered_by_event_id": "EV-4c247b02485de09b",
       "as_of_date": "2026-06-09",
@@ -2077,7 +2119,28 @@
           }
         ],
         "investor_disclosure_status": "disclosed",
-        "risk_markers": []
+        "risk_markers": [],
+        "amount_original": "3000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "total_raised_original": "3000万美元以上",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": 30000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 3000 万美元"
+        },
+        "disclosure_status": "disclosed"
       },
       "products": [
         {

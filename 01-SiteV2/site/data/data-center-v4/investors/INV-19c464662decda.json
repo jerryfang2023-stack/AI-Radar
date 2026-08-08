@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-19c464662decda",
+    "name": "Moderne Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-06-23",
+    "latest_disclosed_at": "2026-06-23",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-3c5d4942ee51fce3",
+        "funding_insight_id": "FI-bff055b65fdb260b",
+        "event_ids": [
+          "EV-20d762872664fddb"
+        ],
+        "company_entity_id": "EN-450dcf23e621ff10",
+        "company_canonical_entity_id": "",
+        "company_name": "Engram",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "$98M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 98000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9800 万美元"
+        },
+        "announced_at": "2026-06-23",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-bcf01fbecb1fbdb6",
+            "source_url": "https://www.caplight.com/company/engram",
+            "source_title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
+            "source_content_hash": "24739161319ad4eb",
+            "quote": "Moderne Ventures Seed, Early Funding",
+            "quote_hash": "852294737a0a7e42fc28cbcb2721b18c3e78c63c94f71c6878290c969bcb1a4a"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-bcf01fbecb1fbdb6",
+        "source_url": "https://www.caplight.com/company/engram",
+        "source_title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
+        "source_content_hash": "24739161319ad4eb",
+        "quote": "Moderne Ventures Seed, Early Funding",
+        "quote_hash": "852294737a0a7e42fc28cbcb2721b18c3e78c63c94f71c6878290c969bcb1a4a"
+      }
+    ]
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-587cddc7c698d6",
+    "name": "FirstMark Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-09",
+    "latest_disclosed_at": "2026-07-14",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "FICO-59328e374e8008a0",
+        "canonical_entity_id": "",
+        "name": "Overtone"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-c012943f113f9178",
+        "funding_insight_id": "FI-69ad89811b62e37c",
+        "event_ids": [
+          "EV-df789745fb926bfd"
+        ],
+        "company_entity_id": "FICO-59328e374e8008a0",
+        "company_canonical_entity_id": "",
+        "company_name": "Overtone",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$18M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 18000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1800 万美元"
+        },
+        "announced_at": "2026-07-14",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c9fd5fac8536f13d",
+            "source_url": "https://techcrunch.com/2026/07/14/the-founder-of-hinge-raised-18m-to-build-a-new-ai-dating-service-overtone/",
+            "source_title": "Hinge 创始人筹集 1800 万美元打造新 AI 约会服务 Overtone",
+            "source_content_hash": "9b45c0bc49d8089b",
+            "quote": "Hinge owner Match Group — which also owns apps like Tinder and OkCupid — is helping to fund his new company, alongside FirstMark Capital and Pace Capital.",
+            "quote_hash": "79fb93d20fd81722bbd472bc9a791046309a35a1498dd6c857f6fda3416906ea"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f237c65099c945ee",
+        "funding_insight_id": "FI-3bbba5a15bb40a85",
+        "event_ids": [
+          "EV-e41fc65eb014893f"
+        ],
+        "company_entity_id": "FICO-gradium",
+        "company_canonical_entity_id": "",
+        "company_name": "Gradium",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$100 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1 亿美元"
+        },
+        "announced_at": "2026-07-09",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮参投（2025年12月首次披露）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-9af7e6a4d7b3d5e7",
+            "source_url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia",
+            "source_title": "巴黎AI语音初创Gradium获1亿美元种子轮融资，Nvidia参投",
+            "source_content_hash": "84b42b7082dca9a3",
+            "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
+            "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-c9fd5fac8536f13d",
+        "source_url": "https://techcrunch.com/2026/07/14/the-founder-of-hinge-raised-18m-to-build-a-new-ai-dating-service-overtone/",
+        "source_title": "Hinge 创始人筹集 1800 万美元打造新 AI 约会服务 Overtone",
+        "source_content_hash": "9b45c0bc49d8089b",
+        "quote": "Hinge owner Match Group — which also owns apps like Tinder and OkCupid — is helping to fund his new company, alongside FirstMark Capital and Pace Capital.",
+        "quote_hash": "79fb93d20fd81722bbd472bc9a791046309a35a1498dd6c857f6fda3416906ea"
+      },
+      {
+        "source_id": "FISRC-9af7e6a4d7b3d5e7",
+        "source_url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia",
+        "source_title": "巴黎AI语音初创Gradium获1亿美元种子轮融资，Nvidia参投",
+        "source_content_hash": "84b42b7082dca9a3",
+        "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
+        "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
+      }
+    ]
+  }
+}

@@ -9,7 +9,7 @@
     "activeDate": "2026-08-08",
     "generatedAt": "2026-08-08T00:00:00.000Z",
     "windowDays": 30,
-    "evidenceCount": 823,
+    "evidenceCount": 822,
     "directionCardCount": 2,
     "sourceAdapter": "data-center-v4-canonical"
   },
@@ -331,7 +331,63 @@
         "SA-218e8eb8dca65615"
       ],
       "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
+      "classifications": [
+        {
+          "dimension_id": "ai_market_application",
+          "dimension_name": "AI 市场细分",
+          "value_id": "chips",
+          "value_name": "芯片",
+          "entity_ids": [
+            "EN-cc2ab268105df889"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-5037f398a2c6d02a"
+        },
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "infrastructure_compute",
+          "value_name": "基础设施与算力",
+          "entity_ids": [
+            "EN-cc2ab268105df889"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-b317f9cb10c81807"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "hardware_computing",
+          "value_name": "硬件与算力",
+          "entity_ids": [
+            "EN-cc2ab268105df889"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-58f5477448b4202c"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "chip_accelerator",
+          "value_name": "芯片与加速器",
+          "entity_ids": [
+            "EN-cc2ab268105df889"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-c5bff7fa2bbe83f6"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "developer",
+          "value_name": "开发者",
+          "entity_ids": [
+            "EN-cc2ab268105df889"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-064a1b127d4a5330"
+        }
+      ],
       "application_assertions": {
         "buyer_or_user": [],
         "team_or_function": [],
@@ -528,7 +584,7 @@
       "event_id": "EV-f315914e0fedddfa",
       "event_type": "funding",
       "publication_status": "verified",
-      "title": "一家由Marc Benioff支持的初创公司认为AI能解决AI部署问题",
+      "title": "June AI 获 2000 万美元 pre-seed 融资，解决企业 AI 部署问题",
       "category": "funding",
       "categoryLabel": "融资",
       "date": "2026-08-08",
@@ -656,156 +712,6 @@
           "specific_task": [],
           "pain_or_constraint": [],
           "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "funding_round"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-f5cf8dd390746de1",
-      "event_id": "EV-f5cf8dd390746de1",
-      "event_type": "funding",
-      "publication_status": "verified",
-      "title": "Global Mofy战略参与Kimi AI开发者Moonshot AI新一轮融资，推进其全球生成式AI战略",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "date": "2026-08-08",
-      "event_time": "2026-05-13T00:00:00.000Z",
-      "sourceUrl": "https://markets.ft.com/data/announce/detail?dockey=1330-9719426en-4JK4245HOESONBP8I6R9449021",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "Global Mofy Strategically Participates in New",
-      "sourceExcerpt": "Global Mofy Strategically Participates in New Financing Round of Kimi AI’s Developer Moonshot AI, Advancing Its Global Generative AI Strategy",
-      "entity_refs": [
-        {
-          "entity_id": "EN-76ae91e7be088302",
-          "canonical_name": "Global Mofy Strategically Participates in New",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-b5251b35f15bedc4",
-          "canonical_name": "Moonshot AI",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-cc495debc1aa3188",
-          "canonical_name": "BEIJING",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-c788f96b45de798d",
-          "canonical_name": "Mr. Haogang Yang",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-6f549b4504f1cc21",
-        "CL-382a255af20e89a0",
-        "CL-cb4d0c18537cdfce",
-        "CL-4673fd0b86b4d4ba"
-      ],
-      "source_refs": [
-        "SA-17e39ea06e8f82d2"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "product_form",
-          "dimension_name": "产品形态",
-          "value_id": "model",
-          "value_name": "模型",
-          "entity_ids": [
-            "EN-76ae91e7be088302"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        },
-        {
-          "dimension_id": "product_form",
-          "dimension_name": "产品形态",
-          "value_id": "enterprise_software_platform",
-          "value_name": "企业软件平台",
-          "entity_ids": [
-            "EN-76ae91e7be088302"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [
-          {
-            "value_id": "engineering_team",
-            "claim_ref": "CL-6f549b4504f1cc21",
-            "source_refs": [
-              "SA-17e39ea06e8f82d2"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "team_or_function": [
-          {
-            "value_id": "engineering",
-            "claim_ref": "CL-6f549b4504f1cc21",
-            "source_refs": [
-              "SA-17e39ea06e8f82d2"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "specific_task": [
-          {
-            "value_id": "internal_tool_building",
-            "claim_ref": "CL-6f549b4504f1cc21",
-            "source_refs": [
-              "SA-17e39ea06e8f82d2"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [],
-        "product_form": [
-          {
-            "value_id": "workflow_automation",
-            "claim_ref": "CL-4673fd0b86b4d4ba",
-            "source_refs": [
-              "SA-17e39ea06e8f82d2"
-            ],
-            "provenance": "v4_facet_projection"
-          }
-        ],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "funding_round",
-            "claim_ref": "CL-6f549b4504f1cc21",
-            "source_refs": [
-              "SA-17e39ea06e8f82d2"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [
-            "engineering_team"
-          ],
-          "team_or_function": [
-            "engineering"
-          ],
-          "specific_task": [
-            "internal_tool_building"
-          ],
-          "pain_or_constraint": [],
-          "product_form": [
-            "workflow_automation"
-          ],
           "delivery_model": [],
           "business_action": [
             "funding_round"
@@ -2686,7 +2592,7 @@
       "event_id": "EV-323d98437e42e8b3",
       "event_type": "partnership",
       "publication_status": "verified",
-      "title": "Kuehne+Nagel 与 HappyRobot 客户案例",
+      "title": "Kuehne+Nagel 与 HappyRobot 签署战略合作，将 AI 智能体部署到全球空运业务",
       "category": "case",
       "categoryLabel": "案例",
       "date": "2026-08-07",
@@ -2986,7 +2892,63 @@
         "SA-40ceba187d52826e"
       ],
       "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
+      "classifications": [
+        {
+          "dimension_id": "ai_market_application",
+          "dimension_name": "AI 市场细分",
+          "value_id": "computing_infrastructure",
+          "value_name": "计算基础设施",
+          "entity_ids": [
+            "EN-a7e079ed603b3436"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-3d5773b1b7f4e46b"
+        },
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "infrastructure_compute",
+          "value_name": "基础设施与算力",
+          "entity_ids": [
+            "EN-a7e079ed603b3436"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-be80a27afe083262"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "hardware_computing",
+          "value_name": "硬件与算力",
+          "entity_ids": [
+            "EN-a7e079ed603b3436"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-67b266f0f2d56c8a"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "chip_accelerator",
+          "value_name": "芯片与加速器",
+          "entity_ids": [
+            "EN-a7e079ed603b3436"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-e673290ccb52dfb7"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "developer",
+          "value_name": "开发者",
+          "entity_ids": [
+            "EN-a7e079ed603b3436"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-a04ef688ba142763"
+        }
+      ],
       "application_assertions": {
         "buyer_or_user": [],
         "team_or_function": [],
@@ -3024,7 +2986,7 @@
       "event_id": "EV-933b02f5736a0366",
       "event_type": "funding",
       "publication_status": "verified",
-      "title": "前Spotify员工筹集1000万美元，将推荐背后的AI引入电商",
+      "title": "前 Spotify 员工创立的 Malachyte 获 1000 万美元种子轮融资，将推荐 AI 带入电商",
       "category": "funding",
       "categoryLabel": "融资",
       "date": "2026-08-07",
@@ -3071,6 +3033,28 @@
       "taxonomy_version": "TAG-V4.1",
       "classifications": [
         {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "enterprise_applications",
+          "value_name": "企业级应用",
+          "entity_ids": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-787d7a5612013d4f"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "marketing",
+          "value_name": "营销",
+          "entity_ids": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-d51736d2dfbffa48"
+        },
+        {
           "dimension_id": "industry",
           "dimension_name": "行业",
           "value_id": "retail_ecommerce",
@@ -3078,8 +3062,52 @@
           "entity_ids": [
             "EN-13a7f8fe8140462d"
           ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-f54a85d253e206e3"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "enterprise_software_platform",
+          "value_name": "企业软件平台",
+          "entity_ids": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-b3b65b1927669a8e"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "business_user",
+          "value_name": "企业用户",
+          "entity_ids": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-8765feda5f922885"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "content_creation",
+          "value_name": "内容创作",
+          "entity_ids": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-cba79b793f8a7ba0"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "data_analysis",
+          "value_name": "数据分析",
+          "entity_ids": [
+            "EN-13a7f8fe8140462d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-bd10a60bb748b777"
         }
       ],
       "application_assertions": {
@@ -3268,7 +3296,7 @@
       "event_id": "EV-ef2ac2c9b425491c",
       "event_type": "funding",
       "publication_status": "verified",
-      "title": "EnCharge AI：融资、团队与投资者",
+      "title": "EnCharge AI 完成 2170 万美元 A 轮融资",
       "category": "funding",
       "categoryLabel": "融资",
       "date": "2026-08-07",
@@ -3300,7 +3328,63 @@
         "SA-45f91a2bf889316d"
       ],
       "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
+      "classifications": [
+        {
+          "dimension_id": "ai_market_application",
+          "dimension_name": "AI 市场细分",
+          "value_id": "chips",
+          "value_name": "芯片",
+          "entity_ids": [
+            "EN-adda212f0afa4781"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-2bf41d8d50270551"
+        },
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "infrastructure_compute",
+          "value_name": "基础设施与算力",
+          "entity_ids": [
+            "EN-adda212f0afa4781"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-615d3d3475cbcfa7"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "hardware_computing",
+          "value_name": "硬件与算力",
+          "entity_ids": [
+            "EN-adda212f0afa4781"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-faa710076e49bb20"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "chip_accelerator",
+          "value_name": "芯片与加速器",
+          "entity_ids": [
+            "EN-adda212f0afa4781"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-a5d82508e03ddf36"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "developer",
+          "value_name": "开发者",
+          "entity_ids": [
+            "EN-adda212f0afa4781"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-4fd2abd8f5297eec"
+        }
+      ],
       "application_assertions": {
         "buyer_or_user": [],
         "team_or_function": [],

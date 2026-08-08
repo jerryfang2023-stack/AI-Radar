@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-4e5810f629f8b6",
+    "name": "梅花创投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-05-08",
+    "latest_disclosed_at": "2026-05-08",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "angel"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-cecdd8369134f75e",
+        "canonical_entity_id": "EN-cecdd8369134f75e",
+        "name": "容芯致远"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-5f0e68b4e32c2ad9",
+        "funding_insight_id": "FI-f15f358f13811b9e",
+        "event_ids": [
+          "EV-44ec7c229995ca3c"
+        ],
+        "company_entity_id": "EN-cecdd8369134f75e",
+        "company_canonical_entity_id": "EN-cecdd8369134f75e",
+        "company_name": "容芯致远",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿人民币–9 亿人民币"
+        },
+        "announced_at": "2026-05-08",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ceee1629da3e3cce",
+            "source_url": "https://news.pedaily.cn/202605/563553.shtml",
+            "source_title": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资",
+            "source_content_hash": "ca2b772ff852bb28bd763b58c146b51cb79ce7f39e56ba7a416b2dfa01b2573a",
+            "quote": "顺禧基金、富华资本、万利达集团、长江创新投、水木清华校友基金、梅花创投等跟投",
+            "quote_hash": "1268be5eb46af49b91553a5e559123a667d5373f1faaf25d9a7c3cfbcb145388"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-ceee1629da3e3cce",
+        "source_url": "https://news.pedaily.cn/202605/563553.shtml",
+        "source_title": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资",
+        "source_content_hash": "ca2b772ff852bb28bd763b58c146b51cb79ce7f39e56ba7a416b2dfa01b2573a",
+        "quote": "顺禧基金、富华资本、万利达集团、长江创新投、水木清华校友基金、梅花创投等跟投",
+        "quote_hash": "1268be5eb46af49b91553a5e559123a667d5373f1faaf25d9a7c3cfbcb145388"
+      }
+    ]
+  }
+}

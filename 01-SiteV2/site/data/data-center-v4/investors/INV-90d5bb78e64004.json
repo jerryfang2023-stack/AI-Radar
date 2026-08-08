@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-90d5bb78e64004",
+    "name": "GV",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 3,
+    "first_disclosed_at": "2026-05-13",
+    "latest_disclosed_at": "2026-07-14",
+    "role_counts": {
+      "lead": 2,
+      "participant": 1
+    },
+    "round_codes": [
+      "seed",
+      "series_b",
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-ae1eae1d76e5b7c8",
+        "canonical_entity_id": "EN-ae1eae1d76e5b7c8",
+        "name": "Adapter"
+      },
+      {
+        "entity_id": "FICO-7e1d6c73932aa9b0",
+        "canonical_entity_id": "",
+        "name": "Odyssey ML"
+      },
+      {
+        "entity_id": "EN-b06631033a981321",
+        "canonical_entity_id": "",
+        "name": "Recursive Superintelligence Inc."
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-4516e4774bc96f77",
+        "funding_insight_id": "FI-208afacce2e95b9a",
+        "event_ids": [
+          "EV-4da1a7c4d527eb69"
+        ],
+        "company_entity_id": "EN-ae1eae1d76e5b7c8",
+        "company_canonical_entity_id": "EN-ae1eae1d76e5b7c8",
+        "company_name": "Adapter",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "1780万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 17800000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1780 万美元"
+        },
+        "announced_at": "2026-07-14",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "种子轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-74e051fb023f526b",
+            "source_url": "https://www.upstartsmedia.com/p/deep-dive-adapter-launches-ai-cognition",
+            "source_title": "独家：初创公司 Adapter 获 1780 万美元融资，为 AI 工具注入全新“认知”能力",
+            "source_content_hash": "c4b4aec73019eeb8",
+            "quote": "has raised $17.8 million in capital to date from GV, Bond Partners (an early-stage fund within BOND), and a number of other investors",
+            "quote_hash": "918ca6b7204df55ee2a0ebea7cb4273f29d354276b90e6c473cd92d279be7154"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-70e8dfe141f1eebb",
+        "funding_insight_id": "FI-479f9d5c1123dba2",
+        "event_ids": [
+          "EV-a00763037a94d512"
+        ],
+        "company_entity_id": "FICO-7e1d6c73932aa9b0",
+        "company_canonical_entity_id": "",
+        "company_name": "Odyssey ML",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "3.1亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 310000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.1 亿美元"
+        },
+        "announced_at": "2026-06-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e94365d0212a78f3",
+            "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
+            "source_title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
+            "source_content_hash": "75587989c4b9271c",
+            "quote": "with Amazon, AMD Ventures, GV, and others participating",
+            "quote_hash": "a36a967aacd4c90a1561022a9dc76b3a0a4d1cf9bc904ad059b99a95d150543b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-df45f2eb3704694c",
+        "funding_insight_id": "FI-3030a959696487d1",
+        "event_ids": [
+          "EV-12a42b0aabee236f"
+        ],
+        "company_entity_id": "EN-b06631033a981321",
+        "company_canonical_entity_id": "",
+        "company_name": "Recursive Superintelligence Inc.",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$650 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 650000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6.5 亿美元"
+        },
+        "announced_at": "2026-05-13",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-61b930049ee4e86e",
+            "source_url": "https://siliconangle.com/2026/05/13/recursive-superintelligence-raises-650m-build-self-improving-ai-models/",
+            "source_title": "Recursive Superintelligence raises $650M to build self-improving AI models - SiliconANGLE",
+            "source_content_hash": "926edc21ca4613eb",
+            "quote": "Alphabet Inc.’s GV fund and Greycroft led the round.",
+            "quote_hash": "f390ee773199b41df67d5f2d9959f15d65a99ba3f977f978982815cd133aff09"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-74e051fb023f526b",
+        "source_url": "https://www.upstartsmedia.com/p/deep-dive-adapter-launches-ai-cognition",
+        "source_title": "独家：初创公司 Adapter 获 1780 万美元融资，为 AI 工具注入全新“认知”能力",
+        "source_content_hash": "c4b4aec73019eeb8",
+        "quote": "has raised $17.8 million in capital to date from GV, Bond Partners (an early-stage fund within BOND), and a number of other investors",
+        "quote_hash": "918ca6b7204df55ee2a0ebea7cb4273f29d354276b90e6c473cd92d279be7154"
+      },
+      {
+        "source_id": "FISRC-e94365d0212a78f3",
+        "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
+        "source_title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
+        "source_content_hash": "75587989c4b9271c",
+        "quote": "with Amazon, AMD Ventures, GV, and others participating",
+        "quote_hash": "a36a967aacd4c90a1561022a9dc76b3a0a4d1cf9bc904ad059b99a95d150543b"
+      },
+      {
+        "source_id": "FISRC-61b930049ee4e86e",
+        "source_url": "https://siliconangle.com/2026/05/13/recursive-superintelligence-raises-650m-build-self-improving-ai-models/",
+        "source_title": "Recursive Superintelligence raises $650M to build self-improving AI models - SiliconANGLE",
+        "source_content_hash": "926edc21ca4613eb",
+        "quote": "Alphabet Inc.’s GV fund and Greycroft led the round.",
+        "quote_hash": "f390ee773199b41df67d5f2d9959f15d65a99ba3f977f978982815cd133aff09"
+      }
+    ]
+  }
+}

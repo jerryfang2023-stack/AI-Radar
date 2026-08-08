@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-84f15e774b74cd",
+    "name": "Fidelity Investments",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2025-03-31",
+    "latest_disclosed_at": "2026-06-03",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "series_d"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-70e7e370d5a50ea1",
+        "canonical_entity_id": "",
+        "name": "Retym"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-e8aa595d8e05d559",
+        "funding_insight_id": "FI-082c684e1b4a88c2",
+        "event_ids": [
+          "EV-ef7346378fcf9746"
+        ],
+        "company_entity_id": "EN-e78bdebae031095b",
+        "company_canonical_entity_id": "EN-e78bdebae031095b",
+        "company_name": "SpaceX",
+        "round": "IPO",
+        "round_code": "ipo",
+        "round_original": "IPO",
+        "amount_original": "$75 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 75000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "750 亿美元"
+        },
+        "announced_at": "2026-06-03",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-0349532f469a6b45",
+            "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
+            "source_title": "Early SpaceX investors will now reap the rewards",
+            "source_content_hash": "e4b5710f29e81069",
+            "quote": "Among the biggest beneficiaries are veteran stock picker Ron Baron, Cathie Wood's Ark Invest and mutual fund giant Fidelity Investments.",
+            "quote_hash": "0293bf7a393cd5e8cd97d6f38e0c99db6d6b86f016c17c412611ac520ad6f5cb"
+          },
+          {
+            "source_id": "FISRC-0349532f469a6b45",
+            "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
+            "source_title": "Early SpaceX investors will now reap the rewards",
+            "source_content_hash": "e4b5710f29e81069",
+            "quote": "The Boston-based firm got in early through former portfolio manager Gavin Baker, who began buying shares in 2015 when SpaceX was valued at just about $10 billion.",
+            "quote_hash": "ec94da6a4085af4dc8daed3ef58d93ab2289d4a2ed491a49ebba5c366006263b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-2c036f6c61f8fbf4",
+        "funding_insight_id": "FI-80a993bcabfd14ae",
+        "event_ids": [
+          "EV-7abe829941f97b65"
+        ],
+        "company_entity_id": "EN-70e7e370d5a50ea1",
+        "company_canonical_entity_id": "",
+        "company_name": "Retym",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$75 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 75000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7500 万美元"
+        },
+        "announced_at": "2025-03-31",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1ab982a6ca2b36eb",
+            "source_url": "https://www.vcaonline.com/news/2025033105/retym-launches-out-of-stealth-with-180-million-to-drive-ai-infrastructure-innovation/",
+            "source_title": "Retym Launches Out of Stealth with $180 Million to Drive AI Infrastructure Innovation",
+            "source_content_hash": "1e910f33d65209e1",
+            "quote": "Alongside Spark Capital, existing investors Kleiner Perkins, Mayfield and Fidelity Investments, all participated in the round",
+            "quote_hash": "b2b8ad2c51cf0b632e237f394bf08ec6f30c2e818440badaa7f39a3bd09129d1"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-0349532f469a6b45",
+        "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
+        "source_title": "Early SpaceX investors will now reap the rewards",
+        "source_content_hash": "e4b5710f29e81069",
+        "quote": "Among the biggest beneficiaries are veteran stock picker Ron Baron, Cathie Wood's Ark Invest and mutual fund giant Fidelity Investments.",
+        "quote_hash": "0293bf7a393cd5e8cd97d6f38e0c99db6d6b86f016c17c412611ac520ad6f5cb"
+      },
+      {
+        "source_id": "FISRC-0349532f469a6b45",
+        "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
+        "source_title": "Early SpaceX investors will now reap the rewards",
+        "source_content_hash": "e4b5710f29e81069",
+        "quote": "The Boston-based firm got in early through former portfolio manager Gavin Baker, who began buying shares in 2015 when SpaceX was valued at just about $10 billion.",
+        "quote_hash": "ec94da6a4085af4dc8daed3ef58d93ab2289d4a2ed491a49ebba5c366006263b"
+      },
+      {
+        "source_id": "FISRC-1ab982a6ca2b36eb",
+        "source_url": "https://www.vcaonline.com/news/2025033105/retym-launches-out-of-stealth-with-180-million-to-drive-ai-infrastructure-innovation/",
+        "source_title": "Retym Launches Out of Stealth with $180 Million to Drive AI Infrastructure Innovation",
+        "source_content_hash": "1e910f33d65209e1",
+        "quote": "Alongside Spark Capital, existing investors Kleiner Perkins, Mayfield and Fidelity Investments, all participated in the round",
+        "quote_hash": "b2b8ad2c51cf0b632e237f394bf08ec6f30c2e818440badaa7f39a3bd09129d1"
+      }
+    ]
+  }
+}

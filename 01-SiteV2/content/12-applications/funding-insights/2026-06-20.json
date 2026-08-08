@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.2",
+    "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-06-20",
     "generated_at": "2026-07-26T15:12:25.289Z",
     "trigger": "verified_daily_funding_events",
@@ -19,7 +19,7 @@
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.2",
+      "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-26fd7dc0f7921b96",
       "triggered_by_event_id": "EV-11b5192fc54c0aa0",
       "as_of_date": "2026-06-20",
@@ -177,7 +177,28 @@
           }
         ],
         "investor_disclosure_status": "disclosed",
-        "risk_markers": []
+        "risk_markers": [],
+        "amount_original": "$10 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "total_raised_original": "$10 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "disclosure_status": "disclosed"
       },
       "products": [
         {
@@ -752,7 +773,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.2",
+      "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-28a9ec2f7c2c938b",
       "triggered_by_event_id": "EV-63236c15166b71e0",
       "as_of_date": "2026-06-20",
@@ -999,7 +1020,28 @@
           }
         ],
         "investor_disclosure_status": "disclosed",
-        "risk_markers": []
+        "risk_markers": [],
+        "amount_original": "$40m",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "total_raised_original": "$70m",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 70000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7000 万美元"
+        },
+        "disclosure_status": "disclosed"
       },
       "products": [
         {

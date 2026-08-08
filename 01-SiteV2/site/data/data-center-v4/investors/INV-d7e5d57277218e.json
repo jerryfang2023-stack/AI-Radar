@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-d7e5d57277218e",
+    "name": "e2vc",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2026-03-25",
+    "latest_disclosed_at": "2026-06-30",
+    "role_counts": {
+      "participant": 2
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-5c178682f5573d29",
+        "canonical_entity_id": "",
+        "name": "Mandel AI"
+      },
+      {
+        "entity_id": "EN-ee00b93bf0631b3e",
+        "canonical_entity_id": "",
+        "name": "Monogram AI, Inc."
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-256b8218a362cf4c",
+        "funding_insight_id": "FI-12131c1300a2d205",
+        "event_ids": [
+          "EV-fab81bddb815267b"
+        ],
+        "company_entity_id": "EN-ee00b93bf0631b3e",
+        "company_canonical_entity_id": "",
+        "company_name": "Monogram AI, Inc.",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$40M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-06-30",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-907e4297862ddd8c",
+            "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
+            "source_title": "Monogram 获 4000 万美元种子轮融资",
+            "source_content_hash": "3a584a627e1535ff",
+            "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech",
+            "quote_hash": "b9cc79ff3ee3d1c3099bd371810b95b959c3d159d0e36d1a13788c3e4675cda6"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-10846ef9f330c7aa",
+        "funding_insight_id": "FI-733abf18079d1cb8",
+        "event_ids": [
+          "EV-9e678b626c2a5c83"
+        ],
+        "company_entity_id": "EN-5c178682f5573d29",
+        "company_canonical_entity_id": "",
+        "company_name": "Mandel AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$3.9M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3900000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "390 万美元"
+        },
+        "announced_at": "2026-03-25",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1913db3e18347025",
+            "source_url": "https://tech.eu/2026/03/25/y-combinator-backed-mandel-ai-raises-3-9m-to-automate-global-supply-chains/",
+            "source_title": "Y Combinator 支持的 Mandel AI 获 390 万美元融资，用于自动化全球供应链",
+            "source_content_hash": "62f48a67236f5d86",
+            "quote": "The round is backed by Y Combinator, Category Ventures, Ritual Capital, e2vc, and other Silicon Valley investors and angels.",
+            "quote_hash": "48c54af8cdccc275a87d59e0f5a844d471e259eac73584eaa7f3916d62a5e250"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-907e4297862ddd8c",
+        "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
+        "source_title": "Monogram 获 4000 万美元种子轮融资",
+        "source_content_hash": "3a584a627e1535ff",
+        "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech",
+        "quote_hash": "b9cc79ff3ee3d1c3099bd371810b95b959c3d159d0e36d1a13788c3e4675cda6"
+      },
+      {
+        "source_id": "FISRC-1913db3e18347025",
+        "source_url": "https://tech.eu/2026/03/25/y-combinator-backed-mandel-ai-raises-3-9m-to-automate-global-supply-chains/",
+        "source_title": "Y Combinator 支持的 Mandel AI 获 390 万美元融资，用于自动化全球供应链",
+        "source_content_hash": "62f48a67236f5d86",
+        "quote": "The round is backed by Y Combinator, Category Ventures, Ritual Capital, e2vc, and other Silicon Valley investors and angels.",
+        "quote_hash": "48c54af8cdccc275a87d59e0f5a844d471e259eac73584eaa7f3916d62a5e250"
+      }
+    ]
+  }
+}

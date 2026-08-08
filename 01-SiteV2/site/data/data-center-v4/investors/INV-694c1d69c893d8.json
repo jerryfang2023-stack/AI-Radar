@@ -1,0 +1,364 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-694c1d69c893d8",
+    "name": "Index Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 6,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 6,
+    "first_disclosed_at": "2025-09-09",
+    "latest_disclosed_at": "2026-08-03",
+    "role_counts": {
+      "co_lead": 1,
+      "lead": 2,
+      "participant": 3
+    },
+    "round_codes": [
+      "seed",
+      "series_b",
+      "series_c",
+      "series_d"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-0caee180da9d0f3f",
+        "canonical_entity_id": "",
+        "name": "Fireworks AI Inc."
+      },
+      {
+        "entity_id": "EN-9f80a5e14017ccc0",
+        "canonical_entity_id": "",
+        "name": "Intelligence"
+      },
+      {
+        "entity_id": "EN-c04bd5ebd10ab696",
+        "canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "name": "Mistral AI"
+      },
+      {
+        "entity_id": "EN-ef292e56955a1c10",
+        "canonical_entity_id": "",
+        "name": "PointFive Inc."
+      },
+      {
+        "entity_id": "EN-e4540a7c8404b1be",
+        "canonical_entity_id": "",
+        "name": "Temporal Technologies"
+      },
+      {
+        "entity_id": "FICO-wonderful",
+        "canonical_entity_id": "",
+        "name": "Wonderful"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-a776c87efbe59c04",
+        "funding_insight_id": "FI-36e2dba781b80e3a",
+        "event_ids": [
+          "EV-2301cd1470155075"
+        ],
+        "company_entity_id": "EN-9f80a5e14017ccc0",
+        "company_canonical_entity_id": "",
+        "company_name": "Intelligence",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$7.9 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 7900000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "790 万美元"
+        },
+        "announced_at": "2026-08-03",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-3fa34b4b7b9a1a77",
+            "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
+            "source_title": "DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"",
+            "source_content_hash": "0633a814981ef4fd",
+            "quote": "a $7.9 million seed round led by Index Ventures",
+            "quote_hash": "fb055bc5d3b5112cb1e0e5a4e5884fd2f541c3f8f866f7827731a035e2ce689c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-2ccff733875d0d90",
+        "funding_insight_id": "FI-3b1ea359415f476d",
+        "event_ids": [
+          "EV-4eaf3aabecae6016"
+        ],
+        "company_entity_id": "EN-0caee180da9d0f3f",
+        "company_canonical_entity_id": "",
+        "company_name": "Fireworks AI Inc.",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$1.505 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1505000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15.05 亿美元"
+        },
+        "announced_at": "2026-07-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-0d89e0712245c55b",
+            "source_url": "https://siliconangle.com/2026/07/16/ai-infrastructure-startup-fireworks-closes-1-5b-round-17-5b-valuation/",
+            "source_title": "AI 基础设施初创公司 Fireworks 完成 15 亿美元融资，估值达 175 亿美元",
+            "source_content_hash": "82ccac3b5ede24d2",
+            "quote": "Atreides Management, Index Ventures and TCV jointly led the Series D round.",
+            "quote_hash": "995f46ff0c72d202ba404714a9ed0ef0df03e334f5693696904cef3c144b1a1d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9c40441cc4c4431c",
+        "funding_insight_id": "FI-0e45f5b02e149e04",
+        "event_ids": [
+          "EV-c3b8772c06a25dbc"
+        ],
+        "company_entity_id": "EN-ef292e56955a1c10",
+        "company_canonical_entity_id": "",
+        "company_name": "PointFive Inc.",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$60 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-06-08",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3ca38471e3f8361d",
+            "source_url": "https://siliconangle.com/2026/06/08/ai-infrastructure-cost-control-startup-pointfive-gets-60m-help-enterprises-save/",
+            "source_title": "AI 基础设施成本控制初创公司 PointFive 获 6000 万美元融资，助力企业节省开支",
+            "source_content_hash": "11683bab4c01ccd3",
+            "quote": "it was joined by venture capital firms including Index Ventures",
+            "quote_hash": "bda9c9e8b8f1a9c26efd2b41477d5f3e3bd8d9b3323315d38f382c74a634ca79"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9ba4b2698369cd81",
+        "funding_insight_id": "FI-2b8ea19368209f49",
+        "event_ids": [
+          "EV-aa33ca051f3a7f78",
+          "EV-0ade039d36e077ae",
+          "EV-a84ec4216d3ded6d"
+        ],
+        "company_entity_id": "FICO-wonderful",
+        "company_canonical_entity_id": "",
+        "company_name": "Wonderful",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "1.5亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "announced_at": "2026-03-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投，种子轮和A轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-a9a14160ac96ad9a",
+            "source_url": "https://www.indexventures.com/perspectives/index-ventures-triples-down-as-wonderful-raises-150m-series-b-to-scale-its-hyper-local-enterprise-ai-platform/",
+            "source_title": "Wonderful Raises $150M Series B to... | Index Ventures",
+            "source_content_hash": "a1eb7c9802c59903",
+            "quote": "At Index, we’re tripling down on Wonderful, participating in the Series B round after leading the company’s $100 million Series A and its $34 million Seed round",
+            "quote_hash": "7edcfafd587b4a7c548af8294f8eaec589b3eb38a800f7e901b9673f891395f2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-fa1f9c98f4b139d8",
+        "funding_insight_id": "FI-0aa1eca49e73b783",
+        "event_ids": [
+          "EV-3b40ec144e5db22c"
+        ],
+        "company_entity_id": "EN-e4540a7c8404b1be",
+        "company_canonical_entity_id": "",
+        "company_name": "Temporal Technologies",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$300 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿美元"
+        },
+        "announced_at": "2026-02-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "既有投资方，本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1f69885afd5fc439",
+            "source_url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies",
+            "source_title": "Temporal 完成 D 轮融资",
+            "source_content_hash": "74cb86598e6c9021",
+            "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
+            "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-01d7d725733add3f",
+        "funding_insight_id": "FI-1cf34218733257fd",
+        "event_ids": [
+          "EV-85506f9f86779a6d"
+        ],
+        "company_entity_id": "EN-c04bd5ebd10ab696",
+        "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "company_name": "Mistral AI",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "约17亿欧元（约20亿美元）",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 1700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 17 亿欧元"
+        },
+        "announced_at": "2025-09-09",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "既有投资方（本轮参投）",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8d74a5f6eac0fc90",
+            "source_url": "https://aibusiness.com/generative-ai/european-ai-startup-mistral-ai-secures-2b-in-funding",
+            "source_title": "European AI startup Mistral AI secures $2B in funding",
+            "source_content_hash": "a710989bdebc7feb",
+            "quote": "existing investors such as Nvidia, General Catalyst and Index Ventures participated",
+            "quote_hash": "62fc95ba91a9ff49ef0c6eb3f17c1494a2a8747aa90c11a6b4dcd719dd2de14e"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-3fa34b4b7b9a1a77",
+        "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
+        "source_title": "DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"",
+        "source_content_hash": "0633a814981ef4fd",
+        "quote": "a $7.9 million seed round led by Index Ventures",
+        "quote_hash": "fb055bc5d3b5112cb1e0e5a4e5884fd2f541c3f8f866f7827731a035e2ce689c"
+      },
+      {
+        "source_id": "FISRC-0d89e0712245c55b",
+        "source_url": "https://siliconangle.com/2026/07/16/ai-infrastructure-startup-fireworks-closes-1-5b-round-17-5b-valuation/",
+        "source_title": "AI 基础设施初创公司 Fireworks 完成 15 亿美元融资，估值达 175 亿美元",
+        "source_content_hash": "82ccac3b5ede24d2",
+        "quote": "Atreides Management, Index Ventures and TCV jointly led the Series D round.",
+        "quote_hash": "995f46ff0c72d202ba404714a9ed0ef0df03e334f5693696904cef3c144b1a1d"
+      },
+      {
+        "source_id": "FISRC-3ca38471e3f8361d",
+        "source_url": "https://siliconangle.com/2026/06/08/ai-infrastructure-cost-control-startup-pointfive-gets-60m-help-enterprises-save/",
+        "source_title": "AI 基础设施成本控制初创公司 PointFive 获 6000 万美元融资，助力企业节省开支",
+        "source_content_hash": "11683bab4c01ccd3",
+        "quote": "it was joined by venture capital firms including Index Ventures",
+        "quote_hash": "bda9c9e8b8f1a9c26efd2b41477d5f3e3bd8d9b3323315d38f382c74a634ca79"
+      },
+      {
+        "source_id": "FISRC-a9a14160ac96ad9a",
+        "source_url": "https://www.indexventures.com/perspectives/index-ventures-triples-down-as-wonderful-raises-150m-series-b-to-scale-its-hyper-local-enterprise-ai-platform/",
+        "source_title": "Wonderful Raises $150M Series B to... | Index Ventures",
+        "source_content_hash": "a1eb7c9802c59903",
+        "quote": "At Index, we’re tripling down on Wonderful, participating in the Series B round after leading the company’s $100 million Series A and its $34 million Seed round",
+        "quote_hash": "7edcfafd587b4a7c548af8294f8eaec589b3eb38a800f7e901b9673f891395f2"
+      },
+      {
+        "source_id": "FISRC-1f69885afd5fc439",
+        "source_url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies",
+        "source_title": "Temporal 完成 D 轮融资",
+        "source_content_hash": "74cb86598e6c9021",
+        "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
+        "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
+      },
+      {
+        "source_id": "FISRC-8d74a5f6eac0fc90",
+        "source_url": "https://aibusiness.com/generative-ai/european-ai-startup-mistral-ai-secures-2b-in-funding",
+        "source_title": "European AI startup Mistral AI secures $2B in funding",
+        "source_content_hash": "a710989bdebc7feb",
+        "quote": "existing investors such as Nvidia, General Catalyst and Index Ventures participated",
+        "quote_hash": "62fc95ba91a9ff49ef0c6eb3f17c1494a2a8747aa90c11a6b4dcd719dd2de14e"
+      }
+    ]
+  }
+}

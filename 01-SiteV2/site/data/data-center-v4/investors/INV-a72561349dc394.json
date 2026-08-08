@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-a72561349dc394",
+    "name": "Arāya Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-03-17",
+    "latest_disclosed_at": "2026-03-17",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "pre_seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-835fb9db44937917",
+        "canonical_entity_id": "",
+        "name": "First Concepts"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-c676ae2de9ee6c76",
+        "funding_insight_id": "FI-4bc46dcf530c9077",
+        "event_ids": [
+          "EV-affa49966121461c"
+        ],
+        "company_entity_id": "EN-835fb9db44937917",
+        "company_canonical_entity_id": "",
+        "company_name": "First Concepts",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "pre-seed",
+        "amount_original": "$1,000,000",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "100 万美元"
+        },
+        "announced_at": "2026-03-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-e713775ebfd9779c",
+            "source_url": "https://tech.eu/2026/03/17/first-concepts-raises-1m-to-develop-ai-native-os-for-creative-work/",
+            "source_title": "First Concepts 获100万美元融资，开发面向创意工作的AI原生操作系统 - Tech.eu",
+            "source_content_hash": "290464341ec7404f",
+            "quote": "The round was led by Arāya Ventures alongside Antler",
+            "quote_hash": "aa214732f07a6c804bf8a1c3e894b2f54de97e4bd169a531a71821b23f0ebb5f"
+          },
+          {
+            "source_id": "FISRC-99f8420e17e979f5",
+            "source_url": "https://www.thesaasnews.com/news/first-concepts-raises-1m-in-funding/",
+            "source_title": "First Concepts Raises $1M in Funding",
+            "source_content_hash": "c27f2ab2a4e6622f",
+            "quote": "The round was led by Arāya Ventures alongside Antler",
+            "quote_hash": "aa214732f07a6c804bf8a1c3e894b2f54de97e4bd169a531a71821b23f0ebb5f"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-e713775ebfd9779c",
+        "source_url": "https://tech.eu/2026/03/17/first-concepts-raises-1m-to-develop-ai-native-os-for-creative-work/",
+        "source_title": "First Concepts 获100万美元融资，开发面向创意工作的AI原生操作系统 - Tech.eu",
+        "source_content_hash": "290464341ec7404f",
+        "quote": "The round was led by Arāya Ventures alongside Antler",
+        "quote_hash": "aa214732f07a6c804bf8a1c3e894b2f54de97e4bd169a531a71821b23f0ebb5f"
+      },
+      {
+        "source_id": "FISRC-99f8420e17e979f5",
+        "source_url": "https://www.thesaasnews.com/news/first-concepts-raises-1m-in-funding/",
+        "source_title": "First Concepts Raises $1M in Funding",
+        "source_content_hash": "c27f2ab2a4e6622f",
+        "quote": "The round was led by Arāya Ventures alongside Antler",
+        "quote_hash": "aa214732f07a6c804bf8a1c3e894b2f54de97e4bd169a531a71821b23f0ebb5f"
+      }
+    ]
+  }
+}

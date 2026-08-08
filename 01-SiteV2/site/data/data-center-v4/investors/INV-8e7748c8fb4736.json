@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-8e7748c8fb4736",
+    "name": "Sierra Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2025-08-28",
+    "latest_disclosed_at": "2026-08-01",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "participant": 2
+    },
+    "round_codes": [
+      "seed",
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-48bebf25e5bd5aca",
+        "canonical_entity_id": "",
+        "name": "FriendliAI"
+      },
+      {
+        "entity_id": "EN-65e9e514ecf0d270",
+        "canonical_entity_id": "",
+        "name": "Smallest.ai"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-91e34e62d1724374",
+        "funding_insight_id": "FI-af45f33c3a9b81b9",
+        "event_ids": [
+          "EV-914ca1cbc6359ce5"
+        ],
+        "company_entity_id": "EN-65e9e514ecf0d270",
+        "company_canonical_entity_id": "",
+        "company_name": "Smallest.ai",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "1300万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 13000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1300 万美元"
+        },
+        "announced_at": "2026-08-01",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1284a14893cb26a9",
+            "source_url": "https://thecatalystonline.com/investment-funding/smallest-ai-expands-enterprise-voice-ai-with-new-funding/",
+            "source_title": "Smallest.ai 获新融资，扩展企业级语音 AI - The Catalyst",
+            "source_content_hash": "6b55dc3b9b331355",
+            "quote": "with participation from Sierra Ventures and 3one4 Capital",
+            "quote_hash": "f7f475c0198484fc0d7ece56d46694f108005522689038285c178d41d041c7e7"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e405e5695aed0bee",
+        "funding_insight_id": "FI-af45f33c3a9b81b9",
+        "event_ids": [
+          "EV-914ca1cbc6359ce5"
+        ],
+        "company_entity_id": "EN-65e9e514ecf0d270",
+        "company_canonical_entity_id": "",
+        "company_name": "Smallest.ai",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "1300万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 13000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1300 万美元"
+        },
+        "announced_at": "2026-08-01",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-30eaf94a55c202d8",
+            "source_url": "https://www.youtube.com/watch?v=rDCdmFfxvVk&vl=en-US",
+            "source_title": "Smallest.AI Announces $8 million Fund Raise in Seed Funding ...",
+            "source_content_hash": "d024bfd1efaf6d3e",
+            "quote": "Smallest.AI has raised $8M in a Seed funding led by Sierra Ventures",
+            "quote_hash": "83cabeb02009179374488269f18ffacb966dba1f807c04a4792775b166ce5e7b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-07b0bb089df7e006",
+        "funding_insight_id": "FI-674def4b953072e2",
+        "event_ids": [
+          "EV-736404028b8ad33e"
+        ],
+        "company_entity_id": "EN-48bebf25e5bd5aca",
+        "company_canonical_entity_id": "",
+        "company_name": "FriendliAI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子扩展轮",
+        "amount_original": "$20 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万美元"
+        },
+        "announced_at": "2025-08-28",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a279a9a1c8543f67",
+            "source_url": "https://friendli.ai/blog/friendliai-raises-20m-in-seed-extension-round",
+            "source_title": "FriendliAI 获 2000 万美元融资，重新定义 AI 推理",
+            "source_content_hash": "6780af8acb880527",
+            "quote": "joined by Sierra Ventures",
+            "quote_hash": "e28b4d241dcb3013bdf96da218497e0325e8c4b258c736181c53cdc38c6c8c1a"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1284a14893cb26a9",
+        "source_url": "https://thecatalystonline.com/investment-funding/smallest-ai-expands-enterprise-voice-ai-with-new-funding/",
+        "source_title": "Smallest.ai 获新融资，扩展企业级语音 AI - The Catalyst",
+        "source_content_hash": "6b55dc3b9b331355",
+        "quote": "with participation from Sierra Ventures and 3one4 Capital",
+        "quote_hash": "f7f475c0198484fc0d7ece56d46694f108005522689038285c178d41d041c7e7"
+      },
+      {
+        "source_id": "FISRC-30eaf94a55c202d8",
+        "source_url": "https://www.youtube.com/watch?v=rDCdmFfxvVk&vl=en-US",
+        "source_title": "Smallest.AI Announces $8 million Fund Raise in Seed Funding ...",
+        "source_content_hash": "d024bfd1efaf6d3e",
+        "quote": "Smallest.AI has raised $8M in a Seed funding led by Sierra Ventures",
+        "quote_hash": "83cabeb02009179374488269f18ffacb966dba1f807c04a4792775b166ce5e7b"
+      },
+      {
+        "source_id": "FISRC-a279a9a1c8543f67",
+        "source_url": "https://friendli.ai/blog/friendliai-raises-20m-in-seed-extension-round",
+        "source_title": "FriendliAI 获 2000 万美元融资，重新定义 AI 推理",
+        "source_content_hash": "6780af8acb880527",
+        "quote": "joined by Sierra Ventures",
+        "quote_hash": "e28b4d241dcb3013bdf96da218497e0325e8c4b258c736181c53cdc38c6c8c1a"
+      }
+    ]
+  }
+}

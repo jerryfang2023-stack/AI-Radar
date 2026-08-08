@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-64bf5dc86f9940",
+    "name": "Sumitomo Corporation",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-07",
+    "latest_disclosed_at": "2026-07-07",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-14ce7672aaca7a68",
+        "canonical_entity_id": "",
+        "name": "AIsa"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-ac1c89bec033cca5",
+        "funding_insight_id": "FI-16aac52a98d61e0a",
+        "event_ids": [
+          "EV-3d93d1da8cb64462"
+        ],
+        "company_entity_id": "EN-14ce7672aaca7a68",
+        "company_canonical_entity_id": "",
+        "company_name": "AIsa",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "650万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 6500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "650 万美元"
+        },
+        "announced_at": "2026-07-07",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-199e9e6224efb819",
+            "source_url": "https://www.globenewswire.com/news-release/2026/07/07/3323663/0/en/AIsa-Raises-6-5M-Co-Led-by-Alibaba-and-Tribe-Capital-to-Build-the-Transaction-Network-for-AI-Agents.html",
+            "source_title": "AIsa 获 650 万美元融资，由阿里巴巴和 Tribe Capital 联合领投，打造 AI 智能体交易网络",
+            "source_content_hash": "bea7c0ab495b081d",
+            "quote": "with participation from Draper Associates, Sumitomo Corporation, Saison Capital and other investors",
+            "quote_hash": "87aab5143043930ac5e2cf2eb148ce1fbb223b98f5d5cf807eb2cd0c27cc865d"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-199e9e6224efb819",
+        "source_url": "https://www.globenewswire.com/news-release/2026/07/07/3323663/0/en/AIsa-Raises-6-5M-Co-Led-by-Alibaba-and-Tribe-Capital-to-Build-the-Transaction-Network-for-AI-Agents.html",
+        "source_title": "AIsa 获 650 万美元融资，由阿里巴巴和 Tribe Capital 联合领投，打造 AI 智能体交易网络",
+        "source_content_hash": "bea7c0ab495b081d",
+        "quote": "with participation from Draper Associates, Sumitomo Corporation, Saison Capital and other investors",
+        "quote_hash": "87aab5143043930ac5e2cf2eb148ce1fbb223b98f5d5cf807eb2cd0c27cc865d"
+      }
+    ]
+  }
+}

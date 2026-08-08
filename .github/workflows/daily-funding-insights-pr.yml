@@ -190,6 +190,13 @@ jobs:
           node agent-workflow/tools/assert-funding-insights-v1.mjs --date="${RUN_DATE}"
           node 01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs
           node agent-workflow/tools/assert-funding-insights-v1.mjs --all=true --frontstage=true
+          npm run build:investment-institutions
+          npm run assert:investment-institutions
+          frontstage_generated_at="$(node -e "process.stdout.write(require('./01-SiteV2/site/data/data-center-v4-frontstage.json').meta.generatedAt)")"
+          entity_history_generated_at="$(node -e "process.stdout.write(require('./01-SiteV2/site/data/data-center-v4-frontstage.json').entityHistoryManifest.generatedAt)")"
+          WAVESIGHT_FRONTSTAGE_GENERATED_AT="$frontstage_generated_at" \
+          WAVESIGHT_ENTITY_HISTORY_GENERATED_AT="$entity_history_generated_at" \
+            npm run build:data-center-site
           npm run test:funding-insights
           node agent-workflow/tools/frontstage-regression-gate.mjs
 
@@ -205,7 +212,11 @@ jobs:
             agent-workflow/reports/frontstage-regression-gate-*.md
             01-SiteV2/content/12-applications/funding-insights/${{ needs.resolve-date.outputs.date }}.json
             01-SiteV2/content/12-applications/funding-insights/entity-review-queue.json
+            01-SiteV2/content/11-databases/investment-institutions-v1.json
             01-SiteV2/site/data/funding-insights-v1.json
+            01-SiteV2/site/data/data-center-v4-frontstage.json
+            01-SiteV2/site/data/data-center-v4/indexes/entities.json
+            01-SiteV2/site/data/data-center-v4/investors/
 
       - name: Commit accepted Funding Insights assets
         id: commit
@@ -220,7 +231,11 @@ jobs:
           git add \
             "01-SiteV2/content/12-applications/funding-insights/${RUN_DATE}.json" \
             "01-SiteV2/content/12-applications/funding-insights/entity-review-queue.json" \
-            "01-SiteV2/site/data/funding-insights-v1.json"
+            "01-SiteV2/content/11-databases/investment-institutions-v1.json" \
+            "01-SiteV2/site/data/funding-insights-v1.json" \
+            "01-SiteV2/site/data/data-center-v4-frontstage.json" \
+            "01-SiteV2/site/data/data-center-v4/indexes/entities.json" \
+            "01-SiteV2/site/data/data-center-v4/investors"
           if git diff --cached --quiet; then
             echo "No Funding Insights changes to commit."
             echo "changed=false" >> "$GITHUB_OUTPUT"

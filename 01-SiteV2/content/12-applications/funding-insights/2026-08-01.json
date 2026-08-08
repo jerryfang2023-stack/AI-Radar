@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.2",
+    "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-08-01",
     "generated_at": "2026-08-01T04:17:50.218Z",
     "trigger": "verified_daily_funding_events",
@@ -19,7 +19,7 @@
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.2",
+      "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-77dc755d73d7a45c",
       "triggered_by_event_id": "EV-00514c4ffc2e3cd3",
       "as_of_date": "2026-08-01",
@@ -107,7 +107,28 @@
               }
             ]
           }
-        ]
+        ],
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万人民币–9000 万人民币"
+        },
+        "total_raised_original": "数千万元",
+        "total_raised_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万人民币–9000 万人民币"
+        },
+        "disclosure_status": "partially_disclosed"
       },
       "products": [
         {

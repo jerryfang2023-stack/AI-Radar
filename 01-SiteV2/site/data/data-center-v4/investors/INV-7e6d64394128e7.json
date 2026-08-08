@@ -1,0 +1,321 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-7e6d64394128e7",
+    "name": "红杉中国",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 4,
+    "first_disclosed_at": "2026-01-12",
+    "latest_disclosed_at": "2026-07-13",
+    "role_counts": {
+      "co_lead": 1,
+      "historical_or_ambiguous": 1,
+      "participant": 3
+    },
+    "round_codes": [
+      "angel",
+      "other",
+      "pre_series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-e22521e7de65d819",
+        "canonical_entity_id": "",
+        "name": "上海珞博智能科技有限公司"
+      },
+      {
+        "entity_id": "EN-39ba5f9dcab4e98a",
+        "canonical_entity_id": "EN-39ba5f9dcab4e98a",
+        "name": "它石智航"
+      },
+      {
+        "entity_id": "EN-4731aa5b66658c7f",
+        "canonical_entity_id": "EN-4731aa5b66658c7f",
+        "name": "无界动力（北京）技术研发有限公司"
+      },
+      {
+        "entity_id": "EN-8dc72a4672894e0f",
+        "canonical_entity_id": "EN-8dc72a4672894e0f",
+        "name": "自变量机器人"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-0e9f16fd6479f968",
+        "funding_insight_id": "FI-fd1db2608b7fc431",
+        "event_ids": [
+          "EV-b5dd10300e34f2d3"
+        ],
+        "company_entity_id": "EN-e22521e7de65d819",
+        "company_canonical_entity_id": "",
+        "company_name": "上海珞博智能科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "亿元级",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿人民币–10 亿人民币"
+        },
+        "announced_at": "2026-07-13",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8a995421b25ccbf7",
+            "source_url": "https://www.nbd.com.cn/articles/2026-07-13/4469618.html",
+            "source_title": "珞博智能完成亿元级Pre-A轮融资，加速AI潮玩全球化布局",
+            "source_content_hash": "b3192b7c4dbd09ca7637f881c0267ff2db33b0e18c79b5c129c34233a6ef5443",
+            "quote": "老股东红杉中国、金沙江创投持续加码跟投",
+            "quote_hash": "ee599baf3c38f7c33e45417fd35d1e9fabc3bfc8c3a527f3d021539987b30179"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f5ed0ac82aaf9cf8",
+        "funding_insight_id": "FI-7e546bd15ad5d4db",
+        "event_ids": [
+          "EV-876baa523eb93c4f"
+        ],
+        "company_entity_id": "EN-4731aa5b66658c7f",
+        "company_canonical_entity_id": "EN-4731aa5b66658c7f",
+        "company_name": "无界动力（北京）技术研发有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "超2亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": 200000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 2 亿美元"
+        },
+        "announced_at": "2026-06-26",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ccf822f8fcb8d24a",
+            "source_url": "https://news.pedaily.cn/202606/565576.shtml",
+            "source_title": "无界动力完成超2亿美元天使轮融资，加速具身通用大脑与世界模型开发_投资界",
+            "source_content_hash": "a74dee61248c119a",
+            "quote": "最新天使轮融资由 京东关联基金、C 资本、弘毅投资、盛宇投资、丰源投资 等多家知名机构联合投资，老股东 线性资本、红杉中国、华业天成、雅瑞资本 等跟投，所获资金将持续用于具身通用大脑研发、技术基础设施建设以及全球规模化交付。",
+            "quote_hash": "651395cef7fe552ec8683f98e7ad363d71f4bf78406e30c168e6917f42b5b50a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f92b42608d2ab5ef",
+        "funding_insight_id": "FI-f5103149f04ea6ed",
+        "event_ids": [
+          "EV-c5d7d88d1aef8edb"
+        ],
+        "company_entity_id": "EN-b5251b35f15bedc4",
+        "company_canonical_entity_id": "EN-b5251b35f15bedc4",
+        "company_name": "Moonshot AI",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮",
+        "amount_original": "约20亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 20 亿美元"
+        },
+        "announced_at": "2026-05-07",
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮参投；A+轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-5d82f5dc9fc96ce5",
+            "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
+            "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
+            "source_content_hash": "eeb091dd8db852e6",
+            "quote": "2023年6月天使轮 ，近20亿人民币，估值3亿美元，红杉中国、真格基金、今日资本、砺思资本",
+            "quote_hash": "b7c2e93816b3c8eb44d51b5751b42075e849620248e6d988c9db1ee968bc1491"
+          },
+          {
+            "source_id": "FISRC-5d82f5dc9fc96ce5",
+            "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
+            "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
+            "source_content_hash": "eeb091dd8db852e6",
+            "quote": "2024年2月A+轮，超10亿美元，估值25亿美元，阿里巴巴（领投）、红杉中国、小红书、美团、砺思资本",
+            "quote_hash": "967724e8986cf9493a8a6ffd499c20ba098e825f3384fac3e33dda94328b56dd"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-97b28cc6d61548cc",
+        "funding_insight_id": "FI-5c529fe1ecb9dd07",
+        "event_ids": [
+          "EV-1188b1585b835fe1"
+        ],
+        "company_entity_id": "EN-39ba5f9dcab4e98a",
+        "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
+        "company_name": "它石智航",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超4.5亿美元（约30亿元）",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 450000000,
+          "min_value": 450000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 4.5 亿美元"
+        },
+        "announced_at": "2026-04-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-f4259d29fd364076",
+            "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",
+            "source_title": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网",
+            "source_content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
+            "quote": "财务投资者层面，高瓴 创投 与红杉中国联合领投",
+            "quote_hash": "c94c1593060094ddb0482e11e63a9558f9373f7b6c9fe3405c8283002efb6627"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d6b713dbb3f62f8f",
+        "funding_insight_id": "FI-15b5d99bcd808dba",
+        "event_ids": [
+          "EV-cec68369662236fd"
+        ],
+        "company_entity_id": "EN-8dc72a4672894e0f",
+        "company_canonical_entity_id": "EN-8dc72a4672894e0f",
+        "company_name": "自变量机器人",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "A++轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿人民币"
+        },
+        "announced_at": "2026-01-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a180899e2f0b58ad",
+            "source_url": "https://m.nbd.com.cn/articles/2026-01-12/4216995.html",
+            "source_title": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元融资 2026年具身智能竞争转向",
+            "source_content_hash": "38abb37ae3fb027b28279c50b427ec6700f8fc1e8868df66e1d0b918549335b7",
+            "quote": "红杉中国、北京信息产业发展基金、深创投、南山战新投、锡创投等多家机构联合投资",
+            "quote_hash": "6ad36c8523bad82917df28cd311d2835b0a438bc227f21f74f3ba33f483b68b5"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-8a995421b25ccbf7",
+        "source_url": "https://www.nbd.com.cn/articles/2026-07-13/4469618.html",
+        "source_title": "珞博智能完成亿元级Pre-A轮融资，加速AI潮玩全球化布局",
+        "source_content_hash": "b3192b7c4dbd09ca7637f881c0267ff2db33b0e18c79b5c129c34233a6ef5443",
+        "quote": "老股东红杉中国、金沙江创投持续加码跟投",
+        "quote_hash": "ee599baf3c38f7c33e45417fd35d1e9fabc3bfc8c3a527f3d021539987b30179"
+      },
+      {
+        "source_id": "FISRC-ccf822f8fcb8d24a",
+        "source_url": "https://news.pedaily.cn/202606/565576.shtml",
+        "source_title": "无界动力完成超2亿美元天使轮融资，加速具身通用大脑与世界模型开发_投资界",
+        "source_content_hash": "a74dee61248c119a",
+        "quote": "最新天使轮融资由 京东关联基金、C 资本、弘毅投资、盛宇投资、丰源投资 等多家知名机构联合投资，老股东 线性资本、红杉中国、华业天成、雅瑞资本 等跟投，所获资金将持续用于具身通用大脑研发、技术基础设施建设以及全球规模化交付。",
+        "quote_hash": "651395cef7fe552ec8683f98e7ad363d71f4bf78406e30c168e6917f42b5b50a"
+      },
+      {
+        "source_id": "FISRC-5d82f5dc9fc96ce5",
+        "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
+        "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
+        "source_content_hash": "eeb091dd8db852e6",
+        "quote": "2023年6月天使轮 ，近20亿人民币，估值3亿美元，红杉中国、真格基金、今日资本、砺思资本",
+        "quote_hash": "b7c2e93816b3c8eb44d51b5751b42075e849620248e6d988c9db1ee968bc1491"
+      },
+      {
+        "source_id": "FISRC-5d82f5dc9fc96ce5",
+        "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
+        "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
+        "source_content_hash": "eeb091dd8db852e6",
+        "quote": "2024年2月A+轮，超10亿美元，估值25亿美元，阿里巴巴（领投）、红杉中国、小红书、美团、砺思资本",
+        "quote_hash": "967724e8986cf9493a8a6ffd499c20ba098e825f3384fac3e33dda94328b56dd"
+      },
+      {
+        "source_id": "FISRC-f4259d29fd364076",
+        "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",
+        "source_title": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网",
+        "source_content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
+        "quote": "财务投资者层面，高瓴 创投 与红杉中国联合领投",
+        "quote_hash": "c94c1593060094ddb0482e11e63a9558f9373f7b6c9fe3405c8283002efb6627"
+      },
+      {
+        "source_id": "FISRC-a180899e2f0b58ad",
+        "source_url": "https://m.nbd.com.cn/articles/2026-01-12/4216995.html",
+        "source_title": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元融资 2026年具身智能竞争转向",
+        "source_content_hash": "38abb37ae3fb027b28279c50b427ec6700f8fc1e8868df66e1d0b918549335b7",
+        "quote": "红杉中国、北京信息产业发展基金、深创投、南山战新投、锡创投等多家机构联合投资",
+        "quote_hash": "6ad36c8523bad82917df28cd311d2835b0a438bc227f21f74f3ba33f483b68b5"
+      }
+    ]
+  }
+}

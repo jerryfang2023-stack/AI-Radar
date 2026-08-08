@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-5277bfa0344e55",
+    "name": "Decibel",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2025-07-28",
+    "latest_disclosed_at": "2025-07-28",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-3032646694ad17bb",
+        "canonical_entity_id": "",
+        "name": "E2B"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-8aae6e2262ff385b",
+        "funding_insight_id": "FI-c88f07d6a7726d1d",
+        "event_ids": [
+          "EV-d7f561bc4f6cb02d"
+        ],
+        "company_entity_id": "EN-3032646694ad17bb",
+        "company_canonical_entity_id": "",
+        "company_name": "E2B",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$21 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 21000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2100 万美元"
+        },
+        "announced_at": "2025-07-28",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c4bbfe8565d35dc2",
+            "source_url": "https://www.prnewswire.com/news-releases/e2b-raises-a-21m-series-a-to-offer-cloud-for-ai-agents-to-fortune-100-302514540.html",
+            "source_title": "E2B 获 2100 万美元 A 轮融资，为财富 100 强企业提供 AI 智能体云服务",
+            "source_content_hash": "db0c071a75daeddf",
+            "quote": "with participation from Decibel",
+            "quote_hash": "3686dbc0922b46c496a27f39c9ac08f406f76e3eacaf69e3b9b530a4a7367694"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-c4bbfe8565d35dc2",
+        "source_url": "https://www.prnewswire.com/news-releases/e2b-raises-a-21m-series-a-to-offer-cloud-for-ai-agents-to-fortune-100-302514540.html",
+        "source_title": "E2B 获 2100 万美元 A 轮融资，为财富 100 强企业提供 AI 智能体云服务",
+        "source_content_hash": "db0c071a75daeddf",
+        "quote": "with participation from Decibel",
+        "quote_hash": "3686dbc0922b46c496a27f39c9ac08f406f76e3eacaf69e3b9b530a4a7367694"
+      }
+    ]
+  }
+}

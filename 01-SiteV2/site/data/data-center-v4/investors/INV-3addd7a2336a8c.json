@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-3addd7a2336a8c",
+    "name": "Upper90",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-17",
+    "latest_disclosed_at": "2026-07-17",
+    "role_counts": {
+      "other_current_round": 1
+    },
+    "round_codes": [
+      "debt"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-fdecfc27f301da9c",
+        "canonical_entity_id": "",
+        "name": "General Compute Inc."
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-ee68d93bbf3af229",
+        "funding_insight_id": "FI-14e0e8c9316c6d70",
+        "event_ids": [
+          "EV-e3792591090281c6"
+        ],
+        "company_entity_id": "EN-fdecfc27f301da9c",
+        "company_canonical_entity_id": "",
+        "company_name": "General Compute Inc.",
+        "round": "债务融资",
+        "round_code": "debt",
+        "round_original": "债务融资",
+        "amount_original": "$400M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-07-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮独家承销",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-25feb2575e360881",
+            "source_url": "https://siliconangle.com/2026/07/17/inference-cloud-operator-general-compute-raises-400m-debt-financing/",
+            "source_title": "推理云运营商 General Compute 获得 4 亿美元债务融资",
+            "source_content_hash": "7667efc11f51baf0",
+            "quote": "Upper90, the investment firm that is underwriting the round",
+            "quote_hash": "b91ede819d31f01029b1649fc603c4c6743902a1099506f1d4a76f9269a0f781"
+          },
+          {
+            "source_id": "FISRC-35865db680281565",
+            "source_url": "https://www.startuphub.ai/investment_rounds/general-compute-debt-financing-2026",
+            "source_title": "General Compute debt financing · $400M raised · (2026) | StartupHub.ai | StartupHub.ai",
+            "source_content_hash": "1ddb9b8ebc340266",
+            "quote": "underwritten by Upper90",
+            "quote_hash": "ed1f26e779f9a568efc4aa8b05862ac96c6d407b99c05a71f091e00ab8933542"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-25feb2575e360881",
+        "source_url": "https://siliconangle.com/2026/07/17/inference-cloud-operator-general-compute-raises-400m-debt-financing/",
+        "source_title": "推理云运营商 General Compute 获得 4 亿美元债务融资",
+        "source_content_hash": "7667efc11f51baf0",
+        "quote": "Upper90, the investment firm that is underwriting the round",
+        "quote_hash": "b91ede819d31f01029b1649fc603c4c6743902a1099506f1d4a76f9269a0f781"
+      },
+      {
+        "source_id": "FISRC-35865db680281565",
+        "source_url": "https://www.startuphub.ai/investment_rounds/general-compute-debt-financing-2026",
+        "source_title": "General Compute debt financing · $400M raised · (2026) | StartupHub.ai | StartupHub.ai",
+        "source_content_hash": "1ddb9b8ebc340266",
+        "quote": "underwritten by Upper90",
+        "quote_hash": "ed1f26e779f9a568efc4aa8b05862ac96c6d407b99c05a71f091e00ab8933542"
+      }
+    ]
+  }
+}

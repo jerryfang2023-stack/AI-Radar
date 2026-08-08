@@ -1,0 +1,217 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-cac108c8c0b62f",
+    "name": "Headline",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2025-09-09",
+    "latest_disclosed_at": "2026-03-25",
+    "role_counts": {
+      "co_lead": 1,
+      "historical_or_ambiguous": 1,
+      "lead": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-15516525ca2aa1a4",
+        "canonical_entity_id": "",
+        "name": "Didero"
+      },
+      {
+        "entity_id": "EN-a972bc1b3220493e",
+        "canonical_entity_id": "",
+        "name": "Notch"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-558c7c0d82edd93e",
+        "funding_insight_id": "FI-553ae61d72353fdd",
+        "event_ids": [
+          "EV-c0d19b8641a7a36c"
+        ],
+        "company_entity_id": "EN-a972bc1b3220493e",
+        "company_canonical_entity_id": "",
+        "company_name": "Notch",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$30 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-03-25",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-5f2474a76a35b205",
+            "source_url": "https://www.notch.cx/post/notch-30-million-series-a",
+            "source_title": "Notch 获 3000 万美元融资，打造受监管行业的人工智能操作系统",
+            "source_content_hash": "57df1deff02351ac",
+            "quote": "The round was led by Headline",
+            "quote_hash": "726c030eeec49ee11c980b07b53aa5b40da1d0712da29a086635e428b9a44292"
+          },
+          {
+            "source_id": "FISRC-b978e27c112a5c5b",
+            "source_url": "https://www.calcalistech.com/ctechnews/article/hjdpyrwjze",
+            "source_title": "Notch lands $30 million Series A to automate customer experience with AI agents | Ctech",
+            "source_content_hash": "8bf0991d4328bf59",
+            "quote": "a Series A round led by Headline",
+            "quote_hash": "2df4193ea5e96ac5e993dff44014eb4d3556da5692fe5f470e952ed85fd86ffe"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-8bfeb9fb244179c5",
+        "funding_insight_id": "FI-de8c16d6105a2b94",
+        "event_ids": [
+          "EV-7585b033d4005977"
+        ],
+        "company_entity_id": "EN-15516525ca2aa1a4",
+        "company_canonical_entity_id": "",
+        "company_name": "Didero",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$30 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-02-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-1228d3e3db630042",
+            "source_url": "https://techcrunch.com/2026/02/12/didero-lands-30m-to-put-manufacturing-procurement-on-agentic-autopilot/",
+            "source_title": "Didero 获 3000 万美元融资，将制造业采购置于“智能体”自动驾驶模式",
+            "source_content_hash": "5ef05585288e21d3",
+            "quote": "a $30 million Series A co-led by Chemistry and Headline",
+            "quote_hash": "09d8841f64722fba0e3362a136a241b6aad6454ed353cf1748156c789814bf1e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-77f00bf7d63f6e4d",
+        "funding_insight_id": "FI-1cf34218733257fd",
+        "event_ids": [
+          "EV-85506f9f86779a6d"
+        ],
+        "company_entity_id": "EN-c04bd5ebd10ab696",
+        "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "company_name": "Mistral AI",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "约17亿欧元（约20亿美元）",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 1700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 17 亿欧元"
+        },
+        "announced_at": "2025-09-09",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ff92324bbd437a73",
+            "source_url": "https://notice.co/c/mistral-ai",
+            "source_title": "Mistral AI Stock $11.63 | How to Buy, Valuation, Stock Price, IPO | Notice.co",
+            "source_content_hash": "24552deeea13b585",
+            "quote": "Headline Creditas, Owner.com, Swile, Sorare, Buk, Fetch Rewards, Zeller, Bokksu, Heard",
+            "quote_hash": "e53a4c49fffb920d8a29dc629c2a58887928a994cdc2640d7ff31e77c5b493b0"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-5f2474a76a35b205",
+        "source_url": "https://www.notch.cx/post/notch-30-million-series-a",
+        "source_title": "Notch 获 3000 万美元融资，打造受监管行业的人工智能操作系统",
+        "source_content_hash": "57df1deff02351ac",
+        "quote": "The round was led by Headline",
+        "quote_hash": "726c030eeec49ee11c980b07b53aa5b40da1d0712da29a086635e428b9a44292"
+      },
+      {
+        "source_id": "FISRC-b978e27c112a5c5b",
+        "source_url": "https://www.calcalistech.com/ctechnews/article/hjdpyrwjze",
+        "source_title": "Notch lands $30 million Series A to automate customer experience with AI agents | Ctech",
+        "source_content_hash": "8bf0991d4328bf59",
+        "quote": "a Series A round led by Headline",
+        "quote_hash": "2df4193ea5e96ac5e993dff44014eb4d3556da5692fe5f470e952ed85fd86ffe"
+      },
+      {
+        "source_id": "FISRC-1228d3e3db630042",
+        "source_url": "https://techcrunch.com/2026/02/12/didero-lands-30m-to-put-manufacturing-procurement-on-agentic-autopilot/",
+        "source_title": "Didero 获 3000 万美元融资，将制造业采购置于“智能体”自动驾驶模式",
+        "source_content_hash": "5ef05585288e21d3",
+        "quote": "a $30 million Series A co-led by Chemistry and Headline",
+        "quote_hash": "09d8841f64722fba0e3362a136a241b6aad6454ed353cf1748156c789814bf1e"
+      },
+      {
+        "source_id": "FISRC-ff92324bbd437a73",
+        "source_url": "https://notice.co/c/mistral-ai",
+        "source_title": "Mistral AI Stock $11.63 | How to Buy, Valuation, Stock Price, IPO | Notice.co",
+        "source_content_hash": "24552deeea13b585",
+        "quote": "Headline Creditas, Owner.com, Swile, Sorare, Buk, Fetch Rewards, Zeller, Bokksu, Heard",
+        "quote_hash": "e53a4c49fffb920d8a29dc629c2a58887928a994cdc2640d7ff31e77c5b493b0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-d34bdfce5f4a00",
+    "name": "Apollo Global Management",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-10",
+    "latest_disclosed_at": "2026-06-10",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "infrastructure"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "name": "Anthropic"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-cfa5e4916500c90c",
+        "funding_insight_id": "FI-5f1fc44327efde20",
+        "event_ids": [
+          "EV-8861a42a8679562a"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "350亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 35000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "350 亿美元"
+        },
+        "announced_at": "2026-06-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-12d28955f3aa1a00",
+            "source_url": "https://ir.apollo.com/news-events/press-releases/detail/629/apollo-leads-35-billion-capital-solution-for-broadcom-ai",
+            "source_title": "Apollo Leads $35 Billion Capital Solution for Broadcom AI XPV Platform in Partnership with Blackstone and Leading Global Banks :: Apollo Global Management, Inc. (APO)",
+            "source_content_hash": "c6cabe1fdd048dc5",
+            "quote": "Apollo (NYSE: APO) today announced that Apollo-managed funds and affiliates are leading an initial $35 billion capital solution",
+            "quote_hash": "5abeb14d93350c34a5fcca25aaa20c6bb10ce217d6931f75daa9db1b632c29b4"
+          },
+          {
+            "source_id": "FISRC-a689df7815b7bebf",
+            "source_url": "https://www.bloomberg.com/news/videos/2026-06-10/apollo-wraps-up-35b-chip-deal-for-anthropic-video",
+            "source_title": "Apollo 与 Blackstone 为 Anthropic 完成 350 亿美元 AI 基础设施融资",
+            "source_content_hash": "3f1bfda19f8a176b",
+            "quote": "Apollo Global Management and Blackstone have finalized a $35 billion financing package for Anthropic",
+            "quote_hash": "9cd11f1f01fe96fd799f5d5add5aa9b8f687f57dbe21aa034e6dcbd6a5086148"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-12d28955f3aa1a00",
+        "source_url": "https://ir.apollo.com/news-events/press-releases/detail/629/apollo-leads-35-billion-capital-solution-for-broadcom-ai",
+        "source_title": "Apollo Leads $35 Billion Capital Solution for Broadcom AI XPV Platform in Partnership with Blackstone and Leading Global Banks :: Apollo Global Management, Inc. (APO)",
+        "source_content_hash": "c6cabe1fdd048dc5",
+        "quote": "Apollo (NYSE: APO) today announced that Apollo-managed funds and affiliates are leading an initial $35 billion capital solution",
+        "quote_hash": "5abeb14d93350c34a5fcca25aaa20c6bb10ce217d6931f75daa9db1b632c29b4"
+      },
+      {
+        "source_id": "FISRC-a689df7815b7bebf",
+        "source_url": "https://www.bloomberg.com/news/videos/2026-06-10/apollo-wraps-up-35b-chip-deal-for-anthropic-video",
+        "source_title": "Apollo 与 Blackstone 为 Anthropic 完成 350 亿美元 AI 基础设施融资",
+        "source_content_hash": "3f1bfda19f8a176b",
+        "quote": "Apollo Global Management and Blackstone have finalized a $35 billion financing package for Anthropic",
+        "quote_hash": "9cd11f1f01fe96fd799f5d5add5aa9b8f687f57dbe21aa034e6dcbd6a5086148"
+      }
+    ]
+  }
+}

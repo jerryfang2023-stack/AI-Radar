@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-9738fc481a70da",
+    "name": "Ribbit Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2026-05-27",
+    "latest_disclosed_at": "2026-06-30",
+    "role_counts": {
+      "other_current_round": 1,
+      "participant": 2
+    },
+    "round_codes": [
+      "multi_round",
+      "series_d",
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-ac32f27ba7a1346f",
+        "canonical_entity_id": "",
+        "name": "Cognition"
+      },
+      {
+        "entity_id": "FICO-etched",
+        "canonical_entity_id": "",
+        "name": "Etched"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-252e7a8d4f9f336c",
+        "funding_insight_id": "FI-d24e79349c1e9713",
+        "event_ids": [
+          "EV-040fc355bc12a750",
+          "EV-80e54c9a390da293"
+        ],
+        "company_entity_id": "FICO-etched",
+        "company_canonical_entity_id": "",
+        "company_name": "Etched",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮（含2025年12月由Stripes领投的5亿美元轮次及Jane Street领投的此前未披露轮次）",
+        "amount_original": "$800 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 800000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8 亿美元"
+        },
+        "announced_at": "2026-06-30",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投（2025年12月5亿美元轮次）",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ec090e2bf0f8f6e9",
+            "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
+            "source_title": "英伟达竞争对手Etched获8亿美元融资，简街与台积电关联基金参投",
+            "source_content_hash": "fa74de6f9a9e3ef8",
+            "quote": "That round included Peter Thiel, Positive Sum, Ribbit Capital, Hudson River Trading, and Two Sigma.",
+            "quote_hash": "1dfff416174e07a43db5f6f5b53190faadafe8a50e93dc41fbc1bf09edb62f85"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e5d5cd7195819d38",
+        "funding_insight_id": "FI-5153381171755c70",
+        "event_ids": [
+          "EV-ad75efcb12a07793"
+        ],
+        "company_entity_id": "FICO-etched",
+        "company_canonical_entity_id": "",
+        "company_name": "Etched",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$500 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-06-30",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b750a2ea9e7c7b76",
+            "source_url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip",
+            "source_title": "AI芯片初创公司Etched获10亿美元订单，台积电已量产其芯片",
+            "source_content_hash": "ae0a2fdbd54bc340",
+            "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital, and Stripes, who led the $500 million round",
+            "quote_hash": "8f474813b74ad4ea341140749639ad9699d960b98cee4b622d9b22fdc17e405e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-7d19867ddc6b6243",
+        "funding_insight_id": "FI-5faa0336090509de",
+        "event_ids": [
+          "EV-5762fe51987bc5ff"
+        ],
+        "company_entity_id": "EN-ac32f27ba7a1346f",
+        "company_canonical_entity_id": "",
+        "company_name": "Cognition",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "超过 10 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": 1000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 10 亿美元"
+        },
+        "announced_at": "2026-05-27",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮新进投资方",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-c7d89f6e73a6fe5b",
+            "source_url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
+            "source_title": "AI 编程初创公司 Cognition 以 250 亿美元投前估值融资 10 亿美元",
+            "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+            "quote": "The round also included new investors like Ribbit Capital, Atreides, and Layer Global.",
+            "quote_hash": "2c8e3fb8d1a37ea08291fea31823e097703b53cab4ef6c7e04fa2af1f073d850"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-ec090e2bf0f8f6e9",
+        "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
+        "source_title": "英伟达竞争对手Etched获8亿美元融资，简街与台积电关联基金参投",
+        "source_content_hash": "fa74de6f9a9e3ef8",
+        "quote": "That round included Peter Thiel, Positive Sum, Ribbit Capital, Hudson River Trading, and Two Sigma.",
+        "quote_hash": "1dfff416174e07a43db5f6f5b53190faadafe8a50e93dc41fbc1bf09edb62f85"
+      },
+      {
+        "source_id": "FISRC-b750a2ea9e7c7b76",
+        "source_url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip",
+        "source_title": "AI芯片初创公司Etched获10亿美元订单，台积电已量产其芯片",
+        "source_content_hash": "ae0a2fdbd54bc340",
+        "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital, and Stripes, who led the $500 million round",
+        "quote_hash": "8f474813b74ad4ea341140749639ad9699d960b98cee4b622d9b22fdc17e405e"
+      },
+      {
+        "source_id": "FISRC-c7d89f6e73a6fe5b",
+        "source_url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
+        "source_title": "AI 编程初创公司 Cognition 以 250 亿美元投前估值融资 10 亿美元",
+        "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+        "quote": "The round also included new investors like Ribbit Capital, Atreides, and Layer Global.",
+        "quote_hash": "2c8e3fb8d1a37ea08291fea31823e097703b53cab4ef6c7e04fa2af1f073d850"
+      }
+    ]
+  }
+}

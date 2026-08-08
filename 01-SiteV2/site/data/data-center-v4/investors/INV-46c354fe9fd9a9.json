@@ -1,0 +1,258 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-46c354fe9fd9a9",
+    "name": "Craft Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 4,
+    "first_disclosed_at": "2026-03-11",
+    "latest_disclosed_at": "2026-07-20",
+    "role_counts": {
+      "participant": 4
+    },
+    "round_codes": [
+      "multi_round",
+      "series_b",
+      "series_c",
+      "series_d"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-05cd4b807503b0f2",
+        "canonical_entity_id": "",
+        "name": "Neo Security Inc."
+      },
+      {
+        "entity_id": "EN-73ef176d9f12809e",
+        "canonical_entity_id": "",
+        "name": "Neo Security, Inc."
+      },
+      {
+        "entity_id": "EN-712dffae168fe622",
+        "canonical_entity_id": "",
+        "name": "Nomos Ai Inc."
+      },
+      {
+        "entity_id": "EN-53b69ef92c836777",
+        "canonical_entity_id": "",
+        "name": "Replit"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-4cf4f96b22b54f13",
+        "funding_insight_id": "FI-b3322b5d5cef2d3e",
+        "event_ids": [
+          "EV-c84b6d7338f87990"
+        ],
+        "company_entity_id": "EN-05cd4b807503b0f2",
+        "company_canonical_entity_id": "",
+        "company_name": "Neo Security Inc.",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$100 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1 亿美元"
+        },
+        "announced_at": "2026-07-20",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1bf4ecd2fae97f0b",
+            "source_url": "https://siliconangle.com/2026/07/20/neo-security-bags-100m-build-secure-control-layer-enterprise-ai-agents/",
+            "source_title": "Neo Security 获 1 亿美元融资，为企业 AI 智能体构建安全控制层",
+            "source_content_hash": "84b7d83dc85df604",
+            "quote": "and saw participation from Craft Ventures and Merlin Ventures",
+            "quote_hash": "88e87cc4460f3a0c9e2720c1412935b514260a4bee11ef70302e250559e827a9"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a3eaee0e4856518f",
+        "funding_insight_id": "FI-5b5e0489474500cb",
+        "event_ids": [
+          "EV-2069f6a931b8c9d6"
+        ],
+        "company_entity_id": "EN-73ef176d9f12809e",
+        "company_canonical_entity_id": "",
+        "company_name": "Neo Security, Inc.",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "种子轮和A轮",
+        "amount_original": "1亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1 亿美元"
+        },
+        "announced_at": "2026-07-20",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "种子轮和A轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9a07ea732902851d",
+            "source_url": "https://www.globenewswire.com/news-release/2026/07/20/3329638/0/en/Neo-Launches-with-100M-to-Secure-AI-Software-Across-the-Enterprise.html",
+            "source_title": "Neo 获 1 亿美元融资，致力于保障企业级 AI 软件安全",
+            "source_content_hash": "9889ba96b2e121cd",
+            "quote": "with participation from Craft Ventures and Merlin Ventures",
+            "quote_hash": "8fbed03d25acbe7db9df7c9848a9d085d6e3c865962177733d5ffa03083f7fd2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-8b41fd5192aff3ae",
+        "funding_insight_id": "FI-9fd39f44b35d940c",
+        "event_ids": [
+          "EV-d9cc588fb41a7e67"
+        ],
+        "company_entity_id": "EN-712dffae168fe622",
+        "company_canonical_entity_id": "",
+        "company_name": "Nomos Ai Inc.",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "1.2亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 120000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.2 亿美元"
+        },
+        "announced_at": "2026-07-07",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1b05d1dc5cb45a7b",
+            "source_url": "https://siliconangle.com/2026/07/07/norm-ai-nabs-120m-1-2b-valuation-bring-ai-agents-law/",
+            "source_title": "Norm Ai 以 12 亿美元估值获 1.2 亿美元融资，将 AI 智能体引入法律领域",
+            "source_content_hash": "bdcf73e00730d3c9",
+            "quote": "Blackstone, Bain Capital Ventures, Craft Ventures, Coatue, Vanguard, New York Life, TIAA, and Fenwick LLP also participated.",
+            "quote_hash": "67ea6d53fe5895c7b9259e09b6099219f3a5195b03bfa47ecb2dbe337be24814"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0ade2b85558a1687",
+        "funding_insight_id": "FI-2d6f9ac8b7ebeeee",
+        "event_ids": [
+          "EV-8eb0acb180b7ad9d"
+        ],
+        "company_entity_id": "EN-53b69ef92c836777",
+        "company_canonical_entity_id": "",
+        "company_name": "Replit",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$400M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-03-11",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-00ed3d8fd701898b",
+            "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
+            "source_title": "Replit raises $400M at $9B valuation as AI coding platform surges to over 40M users - Tech Startups",
+            "source_content_hash": "c906371275e7a3ca",
+            "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority.",
+            "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1bf4ecd2fae97f0b",
+        "source_url": "https://siliconangle.com/2026/07/20/neo-security-bags-100m-build-secure-control-layer-enterprise-ai-agents/",
+        "source_title": "Neo Security 获 1 亿美元融资，为企业 AI 智能体构建安全控制层",
+        "source_content_hash": "84b7d83dc85df604",
+        "quote": "and saw participation from Craft Ventures and Merlin Ventures",
+        "quote_hash": "88e87cc4460f3a0c9e2720c1412935b514260a4bee11ef70302e250559e827a9"
+      },
+      {
+        "source_id": "FISRC-9a07ea732902851d",
+        "source_url": "https://www.globenewswire.com/news-release/2026/07/20/3329638/0/en/Neo-Launches-with-100M-to-Secure-AI-Software-Across-the-Enterprise.html",
+        "source_title": "Neo 获 1 亿美元融资，致力于保障企业级 AI 软件安全",
+        "source_content_hash": "9889ba96b2e121cd",
+        "quote": "with participation from Craft Ventures and Merlin Ventures",
+        "quote_hash": "8fbed03d25acbe7db9df7c9848a9d085d6e3c865962177733d5ffa03083f7fd2"
+      },
+      {
+        "source_id": "FISRC-1b05d1dc5cb45a7b",
+        "source_url": "https://siliconangle.com/2026/07/07/norm-ai-nabs-120m-1-2b-valuation-bring-ai-agents-law/",
+        "source_title": "Norm Ai 以 12 亿美元估值获 1.2 亿美元融资，将 AI 智能体引入法律领域",
+        "source_content_hash": "bdcf73e00730d3c9",
+        "quote": "Blackstone, Bain Capital Ventures, Craft Ventures, Coatue, Vanguard, New York Life, TIAA, and Fenwick LLP also participated.",
+        "quote_hash": "67ea6d53fe5895c7b9259e09b6099219f3a5195b03bfa47ecb2dbe337be24814"
+      },
+      {
+        "source_id": "FISRC-00ed3d8fd701898b",
+        "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
+        "source_title": "Replit raises $400M at $9B valuation as AI coding platform surges to over 40M users - Tech Startups",
+        "source_content_hash": "c906371275e7a3ca",
+        "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority.",
+        "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
+      }
+    ]
+  }
+}

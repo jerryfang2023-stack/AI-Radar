@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-b18d67ce61a737",
+    "name": "KB Securities",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2025-08-28",
+    "latest_disclosed_at": "2025-08-28",
+    "role_counts": {
+      "other_current_round": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-48bebf25e5bd5aca",
+        "canonical_entity_id": "",
+        "name": "FriendliAI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-a47b552c5864ffeb",
+        "funding_insight_id": "FI-674def4b953072e2",
+        "event_ids": [
+          "EV-736404028b8ad33e"
+        ],
+        "company_entity_id": "EN-48bebf25e5bd5aca",
+        "company_canonical_entity_id": "",
+        "company_name": "FriendliAI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子扩展轮",
+        "amount_original": "$20 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万美元"
+        },
+        "announced_at": "2025-08-28",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "既有投资方（本轮跟投）",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-af74b747b4936196",
+            "source_url": "https://www.einpresswire.com/article/843686113/friendliai-closes-20m-seed-extension-round-to-accelerate-ai-inference-platform-growth",
+            "source_title": "FriendliAI Closes $20M Seed Extension Round to Accelerate AI Inference Platform Growth",
+            "source_content_hash": "0571770aee5954df",
+            "quote": "follow-on investment from KB Securities",
+            "quote_hash": "e9343aa741a2b8768a7cc22e8652a814479397d5364d0e9dd96b911f7aa846a8"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-af74b747b4936196",
+        "source_url": "https://www.einpresswire.com/article/843686113/friendliai-closes-20m-seed-extension-round-to-accelerate-ai-inference-platform-growth",
+        "source_title": "FriendliAI Closes $20M Seed Extension Round to Accelerate AI Inference Platform Growth",
+        "source_content_hash": "0571770aee5954df",
+        "quote": "follow-on investment from KB Securities",
+        "quote_hash": "e9343aa741a2b8768a7cc22e8652a814479397d5364d0e9dd96b911f7aa846a8"
+      }
+    ]
+  }
+}

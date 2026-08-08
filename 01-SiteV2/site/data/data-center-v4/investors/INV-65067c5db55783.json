@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-65067c5db55783",
+    "name": "Energize Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-14",
+    "latest_disclosed_at": "2026-07-14",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-b0bc23fa8e20c543",
+        "canonical_entity_id": "EN-b0bc23fa8e20c543",
+        "name": "InstaLILY AI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-9a2a322e2a9f98dc",
+        "funding_insight_id": "FI-5401335ad961f05d",
+        "event_ids": [
+          "EV-b29878fdf79f2ac5"
+        ],
+        "company_entity_id": "EN-b0bc23fa8e20c543",
+        "company_canonical_entity_id": "EN-b0bc23fa8e20c543",
+        "company_name": "InstaLILY AI",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$60 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-07-14",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b6c1fe80a4b09131",
+            "source_url": "https://startupfortune.com/instalily-raises-60-million-to-put-ai-agents-inside-construction-and-logistics-firms/",
+            "source_title": "InstaLILY 融资 6000 万美元，将 AI 智能体引入建筑和物流企业",
+            "source_content_hash": "5cfacab2e15c6feb",
+            "quote": "Energize Capital led a $60 million Series B",
+            "quote_hash": "c292eb0dd7ee43fc3b58539002c20705b8a47e612de05100ae5c368987e15843"
+          },
+          {
+            "source_id": "FISRC-c8150575e9fc83bc",
+            "source_url": "https://www.morningstar.com/news/accesswire/1190835msn/instalily-raises-60-million-series-b-and-launches-lily-the-worlds-first-ai-forward-deployed-engineer",
+            "source_title": "InstaLILY Raises $60 Million Series B and Launches Lily, the World's First AI Forward Deployed Engineer | Morningstar",
+            "source_content_hash": "3a191e9f00bd3318",
+            "quote": "a $60 million Series B round led by Energize Capital",
+            "quote_hash": "4fa8bf459f9a88cb76bd11a042496012b67a5b7ba09f7e9016179743492e5de2"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-b6c1fe80a4b09131",
+        "source_url": "https://startupfortune.com/instalily-raises-60-million-to-put-ai-agents-inside-construction-and-logistics-firms/",
+        "source_title": "InstaLILY 融资 6000 万美元，将 AI 智能体引入建筑和物流企业",
+        "source_content_hash": "5cfacab2e15c6feb",
+        "quote": "Energize Capital led a $60 million Series B",
+        "quote_hash": "c292eb0dd7ee43fc3b58539002c20705b8a47e612de05100ae5c368987e15843"
+      },
+      {
+        "source_id": "FISRC-c8150575e9fc83bc",
+        "source_url": "https://www.morningstar.com/news/accesswire/1190835msn/instalily-raises-60-million-series-b-and-launches-lily-the-worlds-first-ai-forward-deployed-engineer",
+        "source_title": "InstaLILY Raises $60 Million Series B and Launches Lily, the World's First AI Forward Deployed Engineer | Morningstar",
+        "source_content_hash": "3a191e9f00bd3318",
+        "quote": "a $60 million Series B round led by Energize Capital",
+        "quote_hash": "4fa8bf459f9a88cb76bd11a042496012b67a5b7ba09f7e9016179743492e5de2"
+      }
+    ]
+  }
+}

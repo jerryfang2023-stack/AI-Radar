@@ -1,0 +1,456 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-ade3071d50dfa4",
+    "name": "Salesforce Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 6,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 6,
+    "first_disclosed_at": "2023-08-24",
+    "latest_disclosed_at": "2026-07-01",
+    "role_counts": {
+      "historical_or_ambiguous": 2,
+      "lead": 3,
+      "participant": 3
+    },
+    "round_codes": [
+      "seed",
+      "series_a",
+      "series_c",
+      "series_d",
+      "series_e"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-7106dbc04a08ce3a",
+        "canonical_entity_id": "",
+        "name": "8090 Labs"
+      },
+      {
+        "entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "name": "Anthropic PBC"
+      },
+      {
+        "entity_id": "EN-245f1e177c5169cb",
+        "canonical_entity_id": "",
+        "name": "Hark"
+      },
+      {
+        "entity_id": "EN-d9352ce019e77ab3",
+        "canonical_entity_id": "EN-d9352ce019e77ab3",
+        "name": "Hugging Face"
+      },
+      {
+        "entity_id": "EN-c08f86842ff2c908",
+        "canonical_entity_id": "",
+        "name": "SRE.ai"
+      },
+      {
+        "entity_id": "EN-816bab802b34b308",
+        "canonical_entity_id": "",
+        "name": "Together AI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-caac952904f6790d",
+        "funding_insight_id": "FI-2dfbeaa7d627041d",
+        "event_ids": [
+          "EV-13ec78dfdbca678b"
+        ],
+        "company_entity_id": "EN-816bab802b34b308",
+        "company_canonical_entity_id": "",
+        "company_name": "Together AI",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "$800 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 800000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8 亿美元"
+        },
+        "announced_at": "2026-07-01",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7d75683a17a8f2ca",
+            "source_url": "https://aibizinsider.com/2026/07/21/together-ai-800m-series-c-open-source-2026-07-21/",
+            "source_title": "The Startup Making AI 20x Cheaper Just Raised $800M - AI Biz Insider",
+            "source_content_hash": "a24dcd74ed166799",
+            "quote": "joined by NVIDIA, Vista Equity Partners, General Catalyst, Salesforce Ventures, and Emergence Capital",
+            "quote_hash": "f4c6b9a12871b164051bf15691b0189abc1ed8c839db8a57879585abe41c8b7f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9142fb3a2a6a6974",
+        "funding_insight_id": "FI-ca1a0b9750ebb6db",
+        "event_ids": [
+          "EV-9300044a58395552"
+        ],
+        "company_entity_id": "EN-7106dbc04a08ce3a",
+        "company_canonical_entity_id": "",
+        "company_name": "8090 Labs",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A 轮",
+        "amount_original": "1.35 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 135000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.35 亿美元"
+        },
+        "announced_at": "2026-06-29",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-392b2fac8b63845f",
+            "source_url": "https://techcrunch.com/2026/06/29/chamath-palihapitiya-raises-135m-series-a-for-his-ai-coding-startup-takes-ceo-role/",
+            "source_title": "Chamath Palihapitiya 为其 AI 编程初创公司筹集 1.35 亿美元 A 轮融资，并出任 CEO",
+            "source_content_hash": "3d3c1a68251829f0",
+            "quote": "closed a $135 million round led by Salesforce Ventures",
+            "quote_hash": "d8be535192c1fb579d86e7084893c47a2c84be4b6fedec8c4141d9ce2a7693c3"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e4a6439a5543e760",
+        "funding_insight_id": "FI-35b63d84f1f7c2b0",
+        "event_ids": [
+          "EV-450f624a6a6446ce",
+          "EV-44c9a50b99c76a70"
+        ],
+        "company_entity_id": "EN-245f1e177c5169cb",
+        "company_canonical_entity_id": "",
+        "company_name": "Hark",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$700M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7 亿美元"
+        },
+        "announced_at": "2026-05-21",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9b94f245fa27a161",
+            "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
+            "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
+            "source_content_hash": "e91739ca23d21469",
+            "quote": "Salesforce Ventures",
+            "quote_hash": "4d03ee9da8903840887371a26b6e932b4c122209036dbff588de63c93d3ae825"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-627ef084619eafcf",
+        "funding_insight_id": "FI-1cf34218733257fd",
+        "event_ids": [
+          "EV-85506f9f86779a6d"
+        ],
+        "company_entity_id": "EN-c04bd5ebd10ab696",
+        "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "company_name": "Mistral AI",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "约17亿欧元（约20亿美元）",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 1700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 17 亿欧元"
+        },
+        "announced_at": "2025-09-09",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ff92324bbd437a73",
+            "source_url": "https://notice.co/c/mistral-ai",
+            "source_title": "Mistral AI Stock $11.63 | How to Buy, Valuation, Stock Price, IPO | Notice.co",
+            "source_content_hash": "24552deeea13b585",
+            "quote": "Mistral AI has 34 investors. 4 investors have led 4 Mistral AI funding rounds. The Series C round was led by ASML. Other notable Mistral AI investors include Andreessen Horowitz, Lightspeed, General Catalyst and Salesforce Ventures.",
+            "quote_hash": "0941e672ff6a5140540826b619e85d05f21f3a60d1707e39268244487e4a9ddc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b95f8eb4967fa2b2",
+        "funding_insight_id": "FI-0312b291d6672487",
+        "event_ids": [
+          "EV-201b25d4f3cf696a"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$13 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 13000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "130 亿美元"
+        },
+        "announced_at": "2025-09-02",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Series E轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5289e6345684ca4",
+            "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
+            "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
+            "source_content_hash": "e918313869a22b8d",
+            "quote": "The round was announced on March 3 and was led by Lightspeed with participation from Salesforce Ventures, Menlo Ventures, and General Catalyst, among others.",
+            "quote_hash": "99ac1a2c76fdc0f8cae04b9fd4cfa99e172468497ad14d7feda5bc570a359919"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b07d3da294a11d70",
+        "funding_insight_id": "FI-9fae2cdb80bfa282",
+        "event_ids": [
+          "EV-d5aa723446feebbb"
+        ],
+        "company_entity_id": "EN-c08f86842ff2c908",
+        "company_canonical_entity_id": "",
+        "company_name": "SRE.ai",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$7.2 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 7200000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "720 万美元"
+        },
+        "announced_at": "2025-08-20",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-68a8dc57ec8eec7f",
+            "source_url": "https://techcrunch.com/2025/08/20/sre-ai-launches-to-automate-complex-enterprise-workflows/",
+            "source_title": "Y Combinator 校友 SRE.ai 获 720 万美元融资，用于开发 DevOps AI 智能体",
+            "source_content_hash": "1066cbe242af0e32",
+            "quote": "announced a $7.2 million seed round led by Salesforce Ventures and Crane Venture Partners.",
+            "quote_hash": "beab4efc3d4169df015244aacfae369b78d49a23a6bd8e7e96f7d21a10515d1d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-21c1fa4ed5288ff1",
+        "funding_insight_id": "FI-6601d010adc14dd0",
+        "event_ids": [
+          "EV-78a11d309c3d4e97"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic PBC",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "Series E",
+        "amount_original": "$3.5B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "35 亿美元"
+        },
+        "announced_at": "2025-03-03",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ef9fd29dc050f7ca",
+            "source_url": "https://siliconangle.com/2025/03/03/anthropic-raises-3-5b-61-5b-valuation-advance-ai-research/",
+            "source_title": "Anthropic raises $3.5B at $61.5B valuation to advance its AI research - SiliconANGLE",
+            "source_content_hash": "3484405d65f54368",
+            "quote": "Lightspeed Venture Partners led Anthropic’s latest funding round. It was joined by Cisco Investments, Salesforce Ventures and more than a half-dozen other backers.",
+            "quote_hash": "f73de7a5c871cffe4272d9fa877b395f947a09f20b13cbc6da9c3bcc446c2a47"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4b16ee0aefdaf44c",
+        "funding_insight_id": "FI-c6daec8079df9f74",
+        "event_ids": [
+          "EV-386c205c8bbf537d"
+        ],
+        "company_entity_id": "EN-d9352ce019e77ab3",
+        "company_canonical_entity_id": "EN-d9352ce019e77ab3",
+        "company_name": "Hugging Face",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$235 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 235000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.35 亿美元"
+        },
+        "announced_at": "2023-08-24",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-7eda828d4238815a",
+            "source_url": "https://observer.com/2023/08/hugging-face-ai-raise-fund-salesforce/",
+            "source_title": "A.I. Startup Hugging Face Raises $235M From Big Tech, Valued at $4.5B | Observer",
+            "source_content_hash": "7b9abba5d20c0d6e",
+            "quote": "a series D funding round led by Salesforce",
+            "quote_hash": "dc679f5e5dedcbaac48269cd2e5d3992c2bbd56ef48c91e73fa4fb29cf203c21"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-7d75683a17a8f2ca",
+        "source_url": "https://aibizinsider.com/2026/07/21/together-ai-800m-series-c-open-source-2026-07-21/",
+        "source_title": "The Startup Making AI 20x Cheaper Just Raised $800M - AI Biz Insider",
+        "source_content_hash": "a24dcd74ed166799",
+        "quote": "joined by NVIDIA, Vista Equity Partners, General Catalyst, Salesforce Ventures, and Emergence Capital",
+        "quote_hash": "f4c6b9a12871b164051bf15691b0189abc1ed8c839db8a57879585abe41c8b7f"
+      },
+      {
+        "source_id": "FISRC-392b2fac8b63845f",
+        "source_url": "https://techcrunch.com/2026/06/29/chamath-palihapitiya-raises-135m-series-a-for-his-ai-coding-startup-takes-ceo-role/",
+        "source_title": "Chamath Palihapitiya 为其 AI 编程初创公司筹集 1.35 亿美元 A 轮融资，并出任 CEO",
+        "source_content_hash": "3d3c1a68251829f0",
+        "quote": "closed a $135 million round led by Salesforce Ventures",
+        "quote_hash": "d8be535192c1fb579d86e7084893c47a2c84be4b6fedec8c4141d9ce2a7693c3"
+      },
+      {
+        "source_id": "FISRC-9b94f245fa27a161",
+        "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
+        "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
+        "source_content_hash": "e91739ca23d21469",
+        "quote": "Salesforce Ventures",
+        "quote_hash": "4d03ee9da8903840887371a26b6e932b4c122209036dbff588de63c93d3ae825"
+      },
+      {
+        "source_id": "FISRC-ff92324bbd437a73",
+        "source_url": "https://notice.co/c/mistral-ai",
+        "source_title": "Mistral AI Stock $11.63 | How to Buy, Valuation, Stock Price, IPO | Notice.co",
+        "source_content_hash": "24552deeea13b585",
+        "quote": "Mistral AI has 34 investors. 4 investors have led 4 Mistral AI funding rounds. The Series C round was led by ASML. Other notable Mistral AI investors include Andreessen Horowitz, Lightspeed, General Catalyst and Salesforce Ventures.",
+        "quote_hash": "0941e672ff6a5140540826b619e85d05f21f3a60d1707e39268244487e4a9ddc"
+      },
+      {
+        "source_id": "FISRC-c5289e6345684ca4",
+        "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
+        "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
+        "source_content_hash": "e918313869a22b8d",
+        "quote": "The round was announced on March 3 and was led by Lightspeed with participation from Salesforce Ventures, Menlo Ventures, and General Catalyst, among others.",
+        "quote_hash": "99ac1a2c76fdc0f8cae04b9fd4cfa99e172468497ad14d7feda5bc570a359919"
+      },
+      {
+        "source_id": "FISRC-68a8dc57ec8eec7f",
+        "source_url": "https://techcrunch.com/2025/08/20/sre-ai-launches-to-automate-complex-enterprise-workflows/",
+        "source_title": "Y Combinator 校友 SRE.ai 获 720 万美元融资，用于开发 DevOps AI 智能体",
+        "source_content_hash": "1066cbe242af0e32",
+        "quote": "announced a $7.2 million seed round led by Salesforce Ventures and Crane Venture Partners.",
+        "quote_hash": "beab4efc3d4169df015244aacfae369b78d49a23a6bd8e7e96f7d21a10515d1d"
+      },
+      {
+        "source_id": "FISRC-ef9fd29dc050f7ca",
+        "source_url": "https://siliconangle.com/2025/03/03/anthropic-raises-3-5b-61-5b-valuation-advance-ai-research/",
+        "source_title": "Anthropic raises $3.5B at $61.5B valuation to advance its AI research - SiliconANGLE",
+        "source_content_hash": "3484405d65f54368",
+        "quote": "Lightspeed Venture Partners led Anthropic’s latest funding round. It was joined by Cisco Investments, Salesforce Ventures and more than a half-dozen other backers.",
+        "quote_hash": "f73de7a5c871cffe4272d9fa877b395f947a09f20b13cbc6da9c3bcc446c2a47"
+      },
+      {
+        "source_id": "FISRC-7eda828d4238815a",
+        "source_url": "https://observer.com/2023/08/hugging-face-ai-raise-fund-salesforce/",
+        "source_title": "A.I. Startup Hugging Face Raises $235M From Big Tech, Valued at $4.5B | Observer",
+        "source_content_hash": "7b9abba5d20c0d6e",
+        "quote": "a series D funding round led by Salesforce",
+        "quote_hash": "dc679f5e5dedcbaac48269cd2e5d3992c2bbd56ef48c91e73fa4fb29cf203c21"
+      }
+    ]
+  }
+}

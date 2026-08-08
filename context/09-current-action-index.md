@@ -19,7 +19,7 @@ priority: current
 | Hardware projection | `HARDWARE-V1.0` |
 | Opportunity Map evidence | `OMAP-V2.0.0-v4-evidence` |
 | Trend Radar | `TRADAR-V1.1.0-tag-v4-1` |
-| Funding Insights | `FUNDING-INSIGHT-V1.2.0-market-category` |
+| Funding Insights | `FUNDING-INSIGHT-V1.4.0-financing-fields` |
 | Guanlan Research / weekly and monthly reports | `REPORTS-V1.2.0-research-hub` |
 | Operations telemetry and health | `OPS-V2.0.0-v4-telemetry` |
 | First-Line Viewpoints | independent `O` lane |

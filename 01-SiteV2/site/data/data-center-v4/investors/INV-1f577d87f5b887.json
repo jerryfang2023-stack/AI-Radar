@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-1f577d87f5b887",
+    "name": "Hideki Otsuka",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-18",
+    "latest_disclosed_at": "2026-06-18",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-7bcfaaf82306c01d",
+        "canonical_entity_id": "",
+        "name": "dodoAI Inc."
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-0b5dbc0501d2b9fb",
+        "funding_insight_id": "FI-a52b118162d12805",
+        "event_ids": [
+          "EV-60f9204b84882857"
+        ],
+        "company_entity_id": "EN-7bcfaaf82306c01d",
+        "company_canonical_entity_id": "",
+        "company_name": "dodoAI Inc.",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "2.8亿日元",
+        "amount_normalized": {
+          "currency": "JPY",
+          "value": 280000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.8 亿日元"
+        },
+        "announced_at": "2026-06-18",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投（天使投资人）",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-93ed43eb62fcbfea",
+            "source_url": "https://coverager.com/dodoai-raises-%c2%a5280m-seed-for-enterprise-ai-governance-platform/",
+            "source_title": "dodoAI 获 2.8 亿日元种子轮融资，用于企业 AI 治理平台",
+            "source_content_hash": "0543bc025e5f3589",
+            "quote": "alongside Quantum Leap Ventures and Speee CEO Hideki Otsuka.",
+            "quote_hash": "62da8c66dda53abf2ba57c8cbbcf5742f4009ee5257be0daad0a6bdabaf7224b"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-93ed43eb62fcbfea",
+        "source_url": "https://coverager.com/dodoai-raises-%c2%a5280m-seed-for-enterprise-ai-governance-platform/",
+        "source_title": "dodoAI 获 2.8 亿日元种子轮融资，用于企业 AI 治理平台",
+        "source_content_hash": "0543bc025e5f3589",
+        "quote": "alongside Quantum Leap Ventures and Speee CEO Hideki Otsuka.",
+        "quote_hash": "62da8c66dda53abf2ba57c8cbbcf5742f4009ee5257be0daad0a6bdabaf7224b"
+      }
+    ]
+  }
+}

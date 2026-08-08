@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-7dec834b832492",
+    "name": "Tower Research Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2025-11-05",
+    "latest_disclosed_at": "2025-11-05",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-7035f6607ad2d162",
+        "canonical_entity_id": "",
+        "name": "Procurement Sciences"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-5951506d2ccd149a",
+        "funding_insight_id": "FI-a1e0649c0b730f39",
+        "event_ids": [
+          "EV-a3ba586cbc57b5fd"
+        ],
+        "company_entity_id": "EN-7035f6607ad2d162",
+        "company_canonical_entity_id": "",
+        "company_name": "Procurement Sciences",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$30 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2025-11-05",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "既有投资方，本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-fa41049d7cbdf303",
+            "source_url": "https://finance.yahoo.com/news/procurement-sciences-closes-30-million-130000493.html",
+            "source_title": "Procurement Sciences Closes $30 Million Series B to Accelerate AI ...",
+            "source_content_hash": "3b1619e1efabd120",
+            "quote": "Existing backers Battery Ventures, Tower Research Ventures, K-Street Capital and Blu Ventures participated in the oversubscribed round",
+            "quote_hash": "8a3fe96ddb485842efdf9669e0bce45e77d6e1a311449ec23211c7ce9ace7da2"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-fa41049d7cbdf303",
+        "source_url": "https://finance.yahoo.com/news/procurement-sciences-closes-30-million-130000493.html",
+        "source_title": "Procurement Sciences Closes $30 Million Series B to Accelerate AI ...",
+        "source_content_hash": "3b1619e1efabd120",
+        "quote": "Existing backers Battery Ventures, Tower Research Ventures, K-Street Capital and Blu Ventures participated in the oversubscribed round",
+        "quote_hash": "8a3fe96ddb485842efdf9669e0bce45e77d6e1a311449ec23211c7ce9ace7da2"
+      }
+    ]
+  }
+}

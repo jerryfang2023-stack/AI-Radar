@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-8f05394e348181",
+    "name": "Corazon Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-15",
+    "latest_disclosed_at": "2026-07-15",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-b0532e1af75cc4ab",
+        "canonical_entity_id": "EN-b0532e1af75cc4ab",
+        "name": "Rime"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-c7150999320b8c56",
+        "funding_insight_id": "FI-001732eadec94e4e",
+        "event_ids": [
+          "EV-64fb6d791e19d10a"
+        ],
+        "company_entity_id": "EN-b0532e1af75cc4ab",
+        "company_canonical_entity_id": "EN-b0532e1af75cc4ab",
+        "company_name": "Rime",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$24M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 24000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2400 万美元"
+        },
+        "announced_at": "2026-07-15",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7814afd7c39e886d",
+            "source_url": "https://techcrunch.com/2026/07/15/rime-picks-up-24m-series-a-to-help-enterprises-field-customer-calls",
+            "source_title": "Rime 获 2400 万美元 A 轮融资，用自建录音棚数据训练企业语音 AI",
+            "source_content_hash": "bf887bd5437c51a7",
+            "quote": "Twilio Ventures, Corazon Capital, Unusual Ventures, and other existing investors also participated",
+            "quote_hash": "723438dd8ba285c4ad5d4760fa84b935056b86105e0560a3d247df35c2737655"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-7814afd7c39e886d",
+        "source_url": "https://techcrunch.com/2026/07/15/rime-picks-up-24m-series-a-to-help-enterprises-field-customer-calls",
+        "source_title": "Rime 获 2400 万美元 A 轮融资，用自建录音棚数据训练企业语音 AI",
+        "source_content_hash": "bf887bd5437c51a7",
+        "quote": "Twilio Ventures, Corazon Capital, Unusual Ventures, and other existing investors also participated",
+        "quote_hash": "723438dd8ba285c4ad5d4760fa84b935056b86105e0560a3d247df35c2737655"
+      }
+    ]
+  }
+}

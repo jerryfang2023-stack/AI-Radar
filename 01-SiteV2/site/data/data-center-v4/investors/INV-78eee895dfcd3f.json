@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-78eee895dfcd3f",
+    "name": "OpenAI",
+    "aliases": [],
+    "canonical_entity_id": "EN-7d3194f79e645c42",
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-10",
+    "latest_disclosed_at": "2026-06-10",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-b314f58f5f506fd2",
+        "canonical_entity_id": "",
+        "name": "Poetic"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-6d3856f69089c2fc",
+        "funding_insight_id": "FI-da21481e9629e578",
+        "event_ids": [
+          "EV-b1138bccf5ccd86c",
+          "EV-a42e51959c627554"
+        ],
+        "company_entity_id": "EN-b314f58f5f506fd2",
+        "company_canonical_entity_id": "",
+        "company_name": "Poetic",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$50 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-06-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1da4b36f3c2caa81",
+            "source_url": "https://www.bloomberg.com/news/articles/2026-06-10/openai-backs-ai-startup-fielding-compliance-underwriting-tasks",
+            "source_title": "OpenAI 投资 AI 初创公司 Poetic，布局合规与承保任务",
+            "source_content_hash": "43f94d17c593e7f7",
+            "quote": "with participation from OpenAI and Peter Thiel ’s Founders Fund",
+            "quote_hash": "4642a4cccc4e453f294929216377918a655227c89c89a3d454d915261fb06bc1"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1da4b36f3c2caa81",
+        "source_url": "https://www.bloomberg.com/news/articles/2026-06-10/openai-backs-ai-startup-fielding-compliance-underwriting-tasks",
+        "source_title": "OpenAI 投资 AI 初创公司 Poetic，布局合规与承保任务",
+        "source_content_hash": "43f94d17c593e7f7",
+        "quote": "with participation from OpenAI and Peter Thiel ’s Founders Fund",
+        "quote_hash": "4642a4cccc4e453f294929216377918a655227c89c89a3d454d915261fb06bc1"
+      }
+    ]
+  }
+}

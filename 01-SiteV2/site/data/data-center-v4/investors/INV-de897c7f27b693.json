@@ -1,0 +1,359 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-de897c7f27b693",
+    "name": "Cherry Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 6,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 6,
+    "first_disclosed_at": "2025-04-15",
+    "latest_disclosed_at": "2026-07-23",
+    "role_counts": {
+      "lead": 3,
+      "participant": 3
+    },
+    "round_codes": [
+      "pre_seed",
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-0decbc3b45f73b2b",
+        "canonical_entity_id": "EN-0decbc3b45f73b2b",
+        "name": "Entire Inc."
+      },
+      {
+        "entity_id": "EN-8311b78e7ece59dd",
+        "canonical_entity_id": "",
+        "name": "INXM"
+      },
+      {
+        "entity_id": "EN-4dd5b6e2bf3bfd4f",
+        "canonical_entity_id": "",
+        "name": "Manifold"
+      },
+      {
+        "entity_id": "EN-a56c2fbccb257dba",
+        "canonical_entity_id": "",
+        "name": "telli technologies GmbH"
+      },
+      {
+        "entity_id": "EN-f96246b78ef26d59",
+        "canonical_entity_id": "",
+        "name": "telli technologies GmbH"
+      },
+      {
+        "entity_id": "EN-4abc3bd0f9e75c63",
+        "canonical_entity_id": "",
+        "name": "Work Nexus Labs Limited (trading as Zaro)"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-79c28a4bc223e286",
+        "funding_insight_id": "FI-818ce8d5f2783452",
+        "event_ids": [
+          "EV-a64fab2ce6bc6c4c"
+        ],
+        "company_entity_id": "EN-a56c2fbccb257dba",
+        "company_canonical_entity_id": "",
+        "company_name": "telli technologies GmbH",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "€13.1 million ($15 million)",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 13100000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1310 万欧元"
+        },
+        "announced_at": "2026-07-23",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "既有投资方（本轮参投）",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a25b58a6297cb344",
+            "source_url": "https://www.eu-startups.com/2026/07/yc-backed-telli-raises-e13-1-million-to-build-ai-for-b2c-customer-operations/",
+            "source_title": "YC支持的telli融资1310万欧元，打造面向B2C客户运营的AI智能体",
+            "source_content_hash": "25462d7ebaa5e35a",
+            "quote": "alongside existing backers Cherry Ventures and Y Combinator",
+            "quote_hash": "80f965381185bd1fb72fa3663e74aada5c73a8d22d76d207a4532cbbffde8c02"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4cc18a7af7ac4348",
+        "funding_insight_id": "FI-6a1999f7f9d8fe09",
+        "event_ids": [
+          "EV-14a666fc27d73a80"
+        ],
+        "company_entity_id": "EN-4abc3bd0f9e75c63",
+        "company_canonical_entity_id": "",
+        "company_name": "Work Nexus Labs Limited (trading as Zaro)",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "Pre-seed",
+        "amount_original": "$5.1M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5100000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "510 万美元"
+        },
+        "announced_at": "2026-06-19",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-9eb5597be7955958",
+            "source_url": "https://theaiinsider.tech/2026/06/19/zaro-ai-secures-5-1m-to-unify-enterprise-ai-agents-data-and-applications-in-a-single-context-layer/",
+            "source_title": "Zaro.ai 获 510 万美元融资，在单一上下文层中统一企业 AI 智能体、数据与应用",
+            "source_content_hash": "c239d614e6c725ab",
+            "quote": "$5.1 million in pre-seed funding led by Cherry Ventures",
+            "quote_hash": "2eb85e8b4d6ff14c164a01fa0b2b05eae89ca6c091d1ba8856efa021fae46870"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0a2bfd04522e1f03",
+        "funding_insight_id": "FI-be83b46c33f02967",
+        "event_ids": [
+          "EV-8c2fdaad276818b0"
+        ],
+        "company_entity_id": "EN-8311b78e7ece59dd",
+        "company_canonical_entity_id": "",
+        "company_name": "INXM",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "Pre-Seed",
+        "amount_original": "€5.7 Million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 5700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "570 万欧元"
+        },
+        "announced_at": "2026-06-03",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-8b3715219a93e9b2",
+            "source_url": "https://pulse2.com/inxm-raises-e5-7-million-pre-seed-to-bridge-the-gap-between-enterprise-ai-demos-and-real-operational-deployment/",
+            "source_title": "INXM 获 570 万欧元预种子轮融资，弥合企业 AI 演示与实际运营部署之间的差距",
+            "source_content_hash": "79ce374e023f3088",
+            "quote": "INXM has announced a €5.7 million pre-seed funding round led by Cherry Ventures and Redstone",
+            "quote_hash": "e22de423e914a09fb94d7cdfd968b452122ca0f235bb1ade96cad0e3fa891476"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c67ac98546e586e0",
+        "funding_insight_id": "FI-a1731ed86da72dbf",
+        "event_ids": [
+          "EV-7b7f0cdf219434f6"
+        ],
+        "company_entity_id": "EN-4dd5b6e2bf3bfd4f",
+        "company_canonical_entity_id": "",
+        "company_name": "Manifold",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$8M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 8000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "800 万美元"
+        },
+        "announced_at": "2026-03-18",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-65020b3601939429",
+            "source_url": "https://www.manifold.security/blog/manifold-raises-8m-seed-funding",
+            "source_title": "Manifold Raises $8M to Secure AI Agents on Endpoints - Manifold Security",
+            "source_content_hash": "9489780dc8c78240",
+            "quote": "with participation from Cherry Ventures",
+            "quote_hash": "f7be288cfe93b10c5f1ab08d2675213c017b05adb3b7622699995c1d6e51ca63"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e0451e7ca6b40d87",
+        "funding_insight_id": "FI-5e96c3937673ac2b",
+        "event_ids": [
+          "EV-618e5729145025e4"
+        ],
+        "company_entity_id": "EN-0decbc3b45f73b2b",
+        "company_canonical_entity_id": "EN-0decbc3b45f73b2b",
+        "company_name": "Entire Inc.",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "6000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-02-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-62dc6d17f09030c0",
+            "source_url": "https://entire.io/news/former-github-ceo-thomas-dohmke-raises-60-million-seed-round",
+            "source_title": "前 GitHub CEO Thomas Dohmke 以创纪录的 6000 万美元种子轮融资推出 Entire，打造 AI 时代全球下一代开发者平台。",
+            "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+            "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital",
+            "quote_hash": "ac5b6d3b2d19e95d2e607c7dcef25640a6b13e17d7fa7a5d151d7a5c622797d2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-edfb214c4bf5f109",
+        "funding_insight_id": "FI-229d948dce0541a6",
+        "event_ids": [
+          "EV-9fc8916c19c19f99"
+        ],
+        "company_entity_id": "EN-f96246b78ef26d59",
+        "company_canonical_entity_id": "",
+        "company_name": "telli technologies GmbH",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "Pre-Seed",
+        "amount_original": "$3.6M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3600000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "360 万美元"
+        },
+        "announced_at": "2025-04-15",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-8857ed7cd124411a",
+            "source_url": "https://www.startupecosystem.ca/news/ai-voice-agent-startup-telli-secures-3-6m-in-pre-seed-funding",
+            "source_title": "AI 语音智能体初创公司 Telli 获 360 万美元预种子轮融资",
+            "source_content_hash": "4e1c1175bbda2d1a",
+            "quote": "pre-seed funding round led by Cherry Ventures and Y Combinator",
+            "quote_hash": "98e6f8730b388d572e3942e6fd8ffd53d7b336a37c0c76e4b18c9b93df67f25d"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-a25b58a6297cb344",
+        "source_url": "https://www.eu-startups.com/2026/07/yc-backed-telli-raises-e13-1-million-to-build-ai-for-b2c-customer-operations/",
+        "source_title": "YC支持的telli融资1310万欧元，打造面向B2C客户运营的AI智能体",
+        "source_content_hash": "25462d7ebaa5e35a",
+        "quote": "alongside existing backers Cherry Ventures and Y Combinator",
+        "quote_hash": "80f965381185bd1fb72fa3663e74aada5c73a8d22d76d207a4532cbbffde8c02"
+      },
+      {
+        "source_id": "FISRC-9eb5597be7955958",
+        "source_url": "https://theaiinsider.tech/2026/06/19/zaro-ai-secures-5-1m-to-unify-enterprise-ai-agents-data-and-applications-in-a-single-context-layer/",
+        "source_title": "Zaro.ai 获 510 万美元融资，在单一上下文层中统一企业 AI 智能体、数据与应用",
+        "source_content_hash": "c239d614e6c725ab",
+        "quote": "$5.1 million in pre-seed funding led by Cherry Ventures",
+        "quote_hash": "2eb85e8b4d6ff14c164a01fa0b2b05eae89ca6c091d1ba8856efa021fae46870"
+      },
+      {
+        "source_id": "FISRC-8b3715219a93e9b2",
+        "source_url": "https://pulse2.com/inxm-raises-e5-7-million-pre-seed-to-bridge-the-gap-between-enterprise-ai-demos-and-real-operational-deployment/",
+        "source_title": "INXM 获 570 万欧元预种子轮融资，弥合企业 AI 演示与实际运营部署之间的差距",
+        "source_content_hash": "79ce374e023f3088",
+        "quote": "INXM has announced a €5.7 million pre-seed funding round led by Cherry Ventures and Redstone",
+        "quote_hash": "e22de423e914a09fb94d7cdfd968b452122ca0f235bb1ade96cad0e3fa891476"
+      },
+      {
+        "source_id": "FISRC-65020b3601939429",
+        "source_url": "https://www.manifold.security/blog/manifold-raises-8m-seed-funding",
+        "source_title": "Manifold Raises $8M to Secure AI Agents on Endpoints - Manifold Security",
+        "source_content_hash": "9489780dc8c78240",
+        "quote": "with participation from Cherry Ventures",
+        "quote_hash": "f7be288cfe93b10c5f1ab08d2675213c017b05adb3b7622699995c1d6e51ca63"
+      },
+      {
+        "source_id": "FISRC-62dc6d17f09030c0",
+        "source_url": "https://entire.io/news/former-github-ceo-thomas-dohmke-raises-60-million-seed-round",
+        "source_title": "前 GitHub CEO Thomas Dohmke 以创纪录的 6000 万美元种子轮融资推出 Entire，打造 AI 时代全球下一代开发者平台。",
+        "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+        "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital",
+        "quote_hash": "ac5b6d3b2d19e95d2e607c7dcef25640a6b13e17d7fa7a5d151d7a5c622797d2"
+      },
+      {
+        "source_id": "FISRC-8857ed7cd124411a",
+        "source_url": "https://www.startupecosystem.ca/news/ai-voice-agent-startup-telli-secures-3-6m-in-pre-seed-funding",
+        "source_title": "AI 语音智能体初创公司 Telli 获 360 万美元预种子轮融资",
+        "source_content_hash": "4e1c1175bbda2d1a",
+        "quote": "pre-seed funding round led by Cherry Ventures and Y Combinator",
+        "quote_hash": "98e6f8730b388d572e3942e6fd8ffd53d7b336a37c0c76e4b18c9b93df67f25d"
+      }
+    ]
+  }
+}

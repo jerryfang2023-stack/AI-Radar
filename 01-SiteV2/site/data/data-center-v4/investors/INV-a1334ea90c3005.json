@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-a1334ea90c3005",
+    "name": "Angels from Anthropic, OpenAI, and Meta",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-06",
+    "latest_disclosed_at": "2026-07-06",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "multi_round"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-9007bd372bab6334",
+        "canonical_entity_id": "",
+        "name": "Bespoke Labs"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-30b2f3c8eb896f34",
+        "funding_insight_id": "FI-8e0c1c5789c6d1f8",
+        "event_ids": [
+          "EV-fb817fb0a5e63323"
+        ],
+        "company_entity_id": "EN-9007bd372bab6334",
+        "company_canonical_entity_id": "",
+        "company_name": "Bespoke Labs",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "Seed and Series A",
+        "amount_original": "$40 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-07-06",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "Series A轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-bcf489b2ae49f41b",
+            "source_url": "https://bespokelabs.ai/blog/bespoke-labs-raises-40m-to-build-environments-that-enable-reliable-agents",
+            "source_title": "Bespoke Labs 融资 4000 万美元，打造支持可靠 AI 智能体的环境",
+            "source_content_hash": "0eae2122fce5a05c",
+            "quote": "angels from Anthropic, OpenAI, and Meta",
+            "quote_hash": "5d4d04f8b629206d36bd8e359c55e505c664eae729d4b88a21cdf1b34f99b206"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-bcf489b2ae49f41b",
+        "source_url": "https://bespokelabs.ai/blog/bespoke-labs-raises-40m-to-build-environments-that-enable-reliable-agents",
+        "source_title": "Bespoke Labs 融资 4000 万美元，打造支持可靠 AI 智能体的环境",
+        "source_content_hash": "0eae2122fce5a05c",
+        "quote": "angels from Anthropic, OpenAI, and Meta",
+        "quote_hash": "5d4d04f8b629206d36bd8e359c55e505c664eae729d4b88a21cdf1b34f99b206"
+      }
+    ]
+  }
+}

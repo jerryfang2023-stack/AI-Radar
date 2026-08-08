@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-2c610420bea807",
+    "name": "J-Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-04-17",
+    "latest_disclosed_at": "2026-04-17",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-08ff6997681fad41",
+        "canonical_entity_id": "",
+        "name": "Zenskar"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-fbd931c4c83712b8",
+        "funding_insight_id": "FI-93538e84a3075ee9",
+        "event_ids": [
+          "EV-cbc0b7a7d21a29e2"
+        ],
+        "company_entity_id": "EN-08ff6997681fad41",
+        "company_canonical_entity_id": "",
+        "company_name": "Zenskar",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$15 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "announced_at": "2026-04-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d87b08783c0a062f",
+            "source_url": "https://www.businesswire.com/news/home/20260416872552/en/Zenskar-Raises-%2415-Million-Series-A-to-Expand-Agentic-Capabilities-for-B2B-Revenue-Automation",
+            "source_title": "Zenskar获1500万美元A轮融资，用于扩展B2B收入自动化的代理能力",
+            "source_content_hash": "295fb65a11a09075",
+            "quote": "with participation from Rocketship, J-Ventures, Future Back Ventures by Bain & Company, and Converge",
+            "quote_hash": "90631e3bd2a5b5b513357f91a31d0c99a6ea4f92c480c0e5921baebdded90a2e"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-d87b08783c0a062f",
+        "source_url": "https://www.businesswire.com/news/home/20260416872552/en/Zenskar-Raises-%2415-Million-Series-A-to-Expand-Agentic-Capabilities-for-B2B-Revenue-Automation",
+        "source_title": "Zenskar获1500万美元A轮融资，用于扩展B2B收入自动化的代理能力",
+        "source_content_hash": "295fb65a11a09075",
+        "quote": "with participation from Rocketship, J-Ventures, Future Back Ventures by Bain & Company, and Converge",
+        "quote_hash": "90631e3bd2a5b5b513357f91a31d0c99a6ea4f92c480c0e5921baebdded90a2e"
+      }
+    ]
+  }
+}

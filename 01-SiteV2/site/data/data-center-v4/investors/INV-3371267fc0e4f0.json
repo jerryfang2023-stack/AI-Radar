@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-3371267fc0e4f0",
+    "name": "CapitalT",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2023-11-02",
+    "latest_disclosed_at": "2023-11-02",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "pre_seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-72badbbdbf521cec",
+        "canonical_entity_id": "",
+        "name": "Luna.ai"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-8c0c25ea81f13a87",
+        "funding_insight_id": "FI-1cc7fb68a8433d70",
+        "event_ids": [
+          "EV-6484904c176aa016"
+        ],
+        "company_entity_id": "EN-72badbbdbf521cec",
+        "company_canonical_entity_id": "",
+        "company_name": "Luna.ai",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "Pre-Seed",
+        "amount_original": "$2.5M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "250 万美元"
+        },
+        "announced_at": "2023-11-02",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-bcc816239b773128",
+            "source_url": "https://startuprise.co.uk/luna-ai-raises-2-5m-in-a-pre-seed-funding",
+            "source_title": "总部位于埃因霍温的Luna.ai完成250万美元Pre-Seed轮融资",
+            "source_content_hash": "51aa50ac5c508ca4",
+            "quote": "CapitalT, an Amsterdam-based seed-stage venture capital fund that funds tech startups, led the oversubscribed investment.",
+            "quote_hash": "c48cca783fa89c4596beb83ebf42c8c70a12cbb1abc88ebf711e9380b84b4128"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-bcc816239b773128",
+        "source_url": "https://startuprise.co.uk/luna-ai-raises-2-5m-in-a-pre-seed-funding",
+        "source_title": "总部位于埃因霍温的Luna.ai完成250万美元Pre-Seed轮融资",
+        "source_content_hash": "51aa50ac5c508ca4",
+        "quote": "CapitalT, an Amsterdam-based seed-stage venture capital fund that funds tech startups, led the oversubscribed investment.",
+        "quote_hash": "c48cca783fa89c4596beb83ebf42c8c70a12cbb1abc88ebf711e9380b84b4128"
+      }
+    ]
+  }
+}

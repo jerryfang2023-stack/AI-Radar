@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-a0e3b8423ff96a",
+    "name": "AMD",
+    "aliases": [],
+    "canonical_entity_id": "EN-240389f4b730bad4",
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-05-13",
+    "latest_disclosed_at": "2026-05-13",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-b06631033a981321",
+        "canonical_entity_id": "",
+        "name": "Recursive Superintelligence Inc."
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-c1ea976c53df7f07",
+        "funding_insight_id": "FI-3030a959696487d1",
+        "event_ids": [
+          "EV-12a42b0aabee236f"
+        ],
+        "company_entity_id": "EN-b06631033a981321",
+        "company_canonical_entity_id": "",
+        "company_name": "Recursive Superintelligence Inc.",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$650 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 650000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6.5 亿美元"
+        },
+        "announced_at": "2026-05-13",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-61b930049ee4e86e",
+            "source_url": "https://siliconangle.com/2026/05/13/recursive-superintelligence-raises-650m-build-self-improving-ai-models/",
+            "source_title": "Recursive Superintelligence raises $650M to build self-improving AI models - SiliconANGLE",
+            "source_content_hash": "926edc21ca4613eb",
+            "quote": "They were joined by Nvidia Corp. and Advanced Micro Devices Inc.’s venture capital arm.",
+            "quote_hash": "e27009a9dd08a65b25b7a316ddb093d3d3ba0b0cfe2445ed4d9e9b504c7901e3"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-61b930049ee4e86e",
+        "source_url": "https://siliconangle.com/2026/05/13/recursive-superintelligence-raises-650m-build-self-improving-ai-models/",
+        "source_title": "Recursive Superintelligence raises $650M to build self-improving AI models - SiliconANGLE",
+        "source_content_hash": "926edc21ca4613eb",
+        "quote": "They were joined by Nvidia Corp. and Advanced Micro Devices Inc.’s venture capital arm.",
+        "quote_hash": "e27009a9dd08a65b25b7a316ddb093d3d3ba0b0cfe2445ed4d9e9b504c7901e3"
+      }
+    ]
+  }
+}

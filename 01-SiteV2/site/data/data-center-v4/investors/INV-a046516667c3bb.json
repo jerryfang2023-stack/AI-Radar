@@ -1,0 +1,676 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-a046516667c3bb",
+    "name": "Accel",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 11,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 10,
+    "first_disclosed_at": "2024-03-12",
+    "latest_disclosed_at": "2026-07-23",
+    "role_counts": {
+      "co_lead": 1,
+      "historical_or_ambiguous": 1,
+      "lead": 7,
+      "participant": 3
+    },
+    "round_codes": [
+      "series_a",
+      "series_b",
+      "series_c",
+      "series_g"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-57b8b5990c299db8",
+        "canonical_entity_id": "",
+        "name": "AegisAI"
+      },
+      {
+        "entity_id": "EN-95fb1fa9a88b393c",
+        "canonical_entity_id": "EN-95fb1fa9a88b393c",
+        "name": "Agave"
+      },
+      {
+        "entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "name": "Anthropic"
+      },
+      {
+        "entity_id": "EN-834cc12fc35adde7",
+        "canonical_entity_id": "",
+        "name": "Arrakis"
+      },
+      {
+        "entity_id": "EN-8da5eafb322ee86e",
+        "canonical_entity_id": "",
+        "name": "Fractile"
+      },
+      {
+        "entity_id": "EN-636396f02b6571e4",
+        "canonical_entity_id": "",
+        "name": "n8n GmbH"
+      },
+      {
+        "entity_id": "EN-5afd6103effc8a64",
+        "canonical_entity_id": "",
+        "name": "Nanonets"
+      },
+      {
+        "entity_id": "EN-382635c9325bf327",
+        "canonical_entity_id": "",
+        "name": "Paper"
+      },
+      {
+        "entity_id": "EN-ef292e56955a1c10",
+        "canonical_entity_id": "",
+        "name": "PointFive Inc."
+      },
+      {
+        "entity_id": "EN-ce65fa41b16c33ff",
+        "canonical_entity_id": "",
+        "name": "Viktor"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-7d3be332fa5ef98c",
+        "funding_insight_id": "FI-c540a5c7d84cb184",
+        "event_ids": [
+          "EV-9b81b0dd09a046ab"
+        ],
+        "company_entity_id": "EN-57b8b5990c299db8",
+        "company_canonical_entity_id": "",
+        "company_name": "AegisAI",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$36 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 36000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3600 万美元"
+        },
+        "announced_at": "2026-07-23",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "既有投资方，本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7a2e33bd2177a4c7",
+            "source_url": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/",
+            "source_title": "由前谷歌安全高管创立的AegisAI获3600万美元融资，用于阻止AI驱动的鱼叉式网络钓鱼",
+            "source_content_hash": "afc63d021b3c19fe",
+            "quote": "with participation from existing backers Accel and Foundation Capital",
+            "quote_hash": "135a668db359733c9db451ba4077fe28839895951e03dbc7c09e79108f2c7770"
+          },
+          {
+            "source_id": "FISRC-4b3af8138bc7fb99",
+            "source_url": "https://venturepost.co/enterprise/aegisai-funding",
+            "source_title": "AegisAI funding reaches $49 million after $36 million Series A | Venture Post",
+            "source_content_hash": "c1c81dabfa00282d",
+            "quote": "Accel Partners and Foundation Capital, both existing investors, also participating",
+            "quote_hash": "8c44a7cb3e99daf18aa6b5433123c5e8d8ba540c0a1c5c34d7f5224f0d10d221"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-2326d0ed9c4fd975",
+        "funding_insight_id": "FI-cb627f50984e7151",
+        "event_ids": [
+          "EV-136b2edc9b9f3be8",
+          "EV-3fb827f44ea109de"
+        ],
+        "company_entity_id": "EN-382635c9325bf327",
+        "company_canonical_entity_id": "",
+        "company_name": "Paper",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$34 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 34000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3400 万美元"
+        },
+        "announced_at": "2026-07-23",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-6be00539e7d0e25e",
+            "source_url": "https://startupfortune.com/paper-raised-34m-on-the-exact-thesis-that-wiped-out-half-of-figmas-market-cap/",
+            "source_title": "Paper 基于导致 Figma 市值腰斩的同一论点融资 3400 万美元",
+            "source_content_hash": "e33f25fc65f5596d",
+            "quote": "The round was led by Accel and ICONIQ",
+            "quote_hash": "88673e0bebde67d4cde3d38c1274f3a1e56f062d6a44aa252cf97d0d64b83014"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4e96dd6a2ee598ba",
+        "funding_insight_id": "FI-6083aa095b41b5b1",
+        "event_ids": [
+          "EV-24823de8fb76ac31"
+        ],
+        "company_entity_id": "EN-834cc12fc35adde7",
+        "company_canonical_entity_id": "",
+        "company_name": "Arrakis",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$38 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 38000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3800 万美元"
+        },
+        "announced_at": "2026-07-22",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1944a3662baaebec",
+            "source_url": "https://techfundingnews.com/arrakis-raises-38m-blossom-accel-ai-agents",
+            "source_title": "Arrakis raises $38M from Blossom and Accel, with Datadog CEO and OpenAI exec joining the round — TFN",
+            "source_content_hash": "faf9c34480358e85",
+            "quote": "Existing investor Accel, which led the $7.5 million seed round in March, also participated",
+            "quote_hash": "c9065c6f4cfbf5fab3de5efa08431635e27d9b3d165523368a52dba797bc6968"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-bba731ea26a4b221",
+        "funding_insight_id": "FI-6083aa095b41b5b1",
+        "event_ids": [
+          "EV-24823de8fb76ac31"
+        ],
+        "company_entity_id": "EN-834cc12fc35adde7",
+        "company_canonical_entity_id": "",
+        "company_name": "Arrakis",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$38 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 38000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3800 万美元"
+        },
+        "announced_at": "2026-07-22",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1944a3662baaebec",
+            "source_url": "https://techfundingnews.com/arrakis-raises-38m-blossom-accel-ai-agents",
+            "source_title": "Arrakis raises $38M from Blossom and Accel, with Datadog CEO and OpenAI exec joining the round — TFN",
+            "source_content_hash": "faf9c34480358e85",
+            "quote": "Existing investor Accel, which led the $7.5 million seed round in March",
+            "quote_hash": "db5f8a3918b84d398cc4c2ee70356601f72fd6119ee530966acceacef6294a36"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9e4ddadd2cfdbdda",
+        "funding_insight_id": "FI-3c407a7a4dd718f1",
+        "event_ids": [
+          "EV-754e83c2d19005fe"
+        ],
+        "company_entity_id": "EN-834cc12fc35adde7",
+        "company_canonical_entity_id": "",
+        "company_name": "Arrakis",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$30 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-07-22",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投，种子轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-ac4fd601f33650ff",
+            "source_url": "https://www.financialcontent.com/article/bizwire-2026-7-22-arrakis-comes-out-of-stealth-with-38m-to-help-industrial-enterprises-compete-in-the-ai-era",
+            "source_title": "Arrakis 携 3800 万美元走出隐身模式，助力工业企业竞争 AI 时代",
+            "source_content_hash": "4d42f1ad7c55a3e3",
+            "quote": "with participation from existing investor Accel, which also led the company's $7.5 million seed round",
+            "quote_hash": "db7efc87bd0312c1bd55c8774f4fa31b7a39a02fd9ba35210c7b6874ae5e4f3e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d252679058d4edf4",
+        "funding_insight_id": "FI-b965835fdaa907bc",
+        "event_ids": [
+          "EV-c64e6836b9cd2b17"
+        ],
+        "company_entity_id": "EN-95fb1fa9a88b393c",
+        "company_canonical_entity_id": "EN-95fb1fa9a88b393c",
+        "company_name": "Agave",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A 轮",
+        "amount_original": "$15M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "announced_at": "2026-07-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投，种子轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-8c22d95f569f927e",
+            "source_url": "https://theaiinsider.tech/2026/07/16/agave-secures-15m-series-a-to-bring-ai-to-construction-financials/",
+            "source_title": "Agave 获 1500 万美元 A 轮融资，将 AI 引入建筑财务领域",
+            "source_content_hash": "a8e29aa71b711e6e",
+            "quote": "raised a $15M Series A funding round from Accel, who led Agave’s Seed round",
+            "quote_hash": "88974bce0aab07cf03d56a71b75754c7a57ab8b1dec8e5b7027c8f6f7a43b261"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ae242b27fe6b97eb",
+        "funding_insight_id": "FI-0e45f5b02e149e04",
+        "event_ids": [
+          "EV-c3b8772c06a25dbc"
+        ],
+        "company_entity_id": "EN-ef292e56955a1c10",
+        "company_canonical_entity_id": "",
+        "company_name": "PointFive Inc.",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$60 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-06-08",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-3ca38471e3f8361d",
+            "source_url": "https://siliconangle.com/2026/06/08/ai-infrastructure-cost-control-startup-pointfive-gets-60m-help-enterprises-save/",
+            "source_title": "AI 基础设施成本控制初创公司 PointFive 获 6000 万美元融资，助力企业节省开支",
+            "source_content_hash": "11683bab4c01ccd3",
+            "quote": "Accel led the round",
+            "quote_hash": "8e0705ecf58eaad0451a15274f1ca2e5cd980a08a9e609620031a7fe91e83c8e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5591d7975724dea2",
+        "funding_insight_id": "FI-664cc90f57688153",
+        "event_ids": [
+          "EV-44a4e92c03a31ab1"
+        ],
+        "company_entity_id": "EN-ce65fa41b16c33ff",
+        "company_canonical_entity_id": "",
+        "company_name": "Viktor",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "€64.7 million ($75 million)",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 64700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6470 万欧元"
+        },
+        "announced_at": "2026-05-20",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce83b857608dabeb",
+            "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",
+            "source_title": "AI 同事初创公司 Viktor 在推出后 10 周内达到 1290 万欧元营收运行率，随后完成 6470 万欧元 A 轮融资",
+            "source_content_hash": "bc6dd70ea1b6ac85",
+            "quote": "The round was led by Accel",
+            "quote_hash": "bf9241086ed667323e16eea3f9177dd3efb6ca565d9672531890057c9a74743e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0529117688a5dbdc",
+        "funding_insight_id": "FI-27c50f0e1e7dd316",
+        "event_ids": [
+          "EV-70a994b9339f92e7"
+        ],
+        "company_entity_id": "EN-8da5eafb322ee86e",
+        "company_canonical_entity_id": "",
+        "company_name": "Fractile",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "2.2亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 220000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.2 亿美元"
+        },
+        "announced_at": "2026-05-13",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-62071134d28f47b9",
+            "source_url": "https://www.fractile.ai/news/fractile-raises-220m-to-build-the-next-generation-of-inference-hardware",
+            "source_title": "Fractile 融资2.2亿美元，打造下一代推理硬件",
+            "source_content_hash": "49c881bff41c0376",
+            "quote": "a financing round led by Accel, Factorial Funds, and Founders Fund",
+            "quote_hash": "70d43a0dda6879daeefef7373eac8d92a1c46975d8c8284870ef7e5cc2e3112e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a1c19cff097b353a",
+        "funding_insight_id": "FI-352a7cfb23508f3e",
+        "event_ids": [
+          "EV-31df816db86db282"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "G轮",
+        "round_code": "series_g",
+        "round_original": "Series G",
+        "amount_original": "$30 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 亿美元"
+        },
+        "announced_at": "2026-02-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b58bb99dfec2e318",
+            "source_url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
+            "source_title": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation \\ Anthropic",
+            "source_content_hash": "c231466686007dd5",
+            "quote": "Significant investors in this round include: Accel",
+            "quote_hash": "dd496c105397ae49540d0bf46c349a8d17db2380b866ac8c46ba30a2552fb6dc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-8a72ad5d803a1ce7",
+        "funding_insight_id": "FI-7aef62aa956f090d",
+        "event_ids": [
+          "EV-286846e21412f3c7"
+        ],
+        "company_entity_id": "EN-636396f02b6571e4",
+        "company_canonical_entity_id": "",
+        "company_name": "n8n GmbH",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "$180M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 180000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.8 亿美元"
+        },
+        "announced_at": "2025-10-09",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-d9093a8f62959034",
+            "source_url": "https://startuprise.co.uk/ai-workflow-automation-startup-n8n-raises-180m-valued-at-2-5b",
+            "source_title": "AI 工作流自动化初创公司 n8n 获 1.8 亿美元融资，估值达 25 亿美元",
+            "source_content_hash": "5fc63df17f42d743",
+            "quote": "The round was led by US VC Accel",
+            "quote_hash": "8afc89abbd10625bbafd23bbec4df1f7953e62c93cd32b28d19a56c32c09ca53"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-cd5e376af2d8b662",
+        "funding_insight_id": "FI-a3bae2ae79c9b1b8",
+        "event_ids": [
+          "EV-0dfcd1e634de755b"
+        ],
+        "company_entity_id": "EN-5afd6103effc8a64",
+        "company_canonical_entity_id": "",
+        "company_name": "Nanonets",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$29 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 29000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2900 万美元"
+        },
+        "announced_at": "2024-03-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b833e224686f3237",
+            "source_url": "https://techcrunch.com/2024/03/12/nanonets-funding-accel-india/",
+            "source_title": "Nanonets 获 Accel 投资，优化 AI 工作流自动化",
+            "source_content_hash": "09c882710b28fe12",
+            "quote": "has raised $29 million in a new funding round led by Accel",
+            "quote_hash": "508ac3f9ff7ee89de5dcb27977f3dba89a922f33afcc8cb15a9d2ce946817cea"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-7a2e33bd2177a4c7",
+        "source_url": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/",
+        "source_title": "由前谷歌安全高管创立的AegisAI获3600万美元融资，用于阻止AI驱动的鱼叉式网络钓鱼",
+        "source_content_hash": "afc63d021b3c19fe",
+        "quote": "with participation from existing backers Accel and Foundation Capital",
+        "quote_hash": "135a668db359733c9db451ba4077fe28839895951e03dbc7c09e79108f2c7770"
+      },
+      {
+        "source_id": "FISRC-4b3af8138bc7fb99",
+        "source_url": "https://venturepost.co/enterprise/aegisai-funding",
+        "source_title": "AegisAI funding reaches $49 million after $36 million Series A | Venture Post",
+        "source_content_hash": "c1c81dabfa00282d",
+        "quote": "Accel Partners and Foundation Capital, both existing investors, also participating",
+        "quote_hash": "8c44a7cb3e99daf18aa6b5433123c5e8d8ba540c0a1c5c34d7f5224f0d10d221"
+      },
+      {
+        "source_id": "FISRC-6be00539e7d0e25e",
+        "source_url": "https://startupfortune.com/paper-raised-34m-on-the-exact-thesis-that-wiped-out-half-of-figmas-market-cap/",
+        "source_title": "Paper 基于导致 Figma 市值腰斩的同一论点融资 3400 万美元",
+        "source_content_hash": "e33f25fc65f5596d",
+        "quote": "The round was led by Accel and ICONIQ",
+        "quote_hash": "88673e0bebde67d4cde3d38c1274f3a1e56f062d6a44aa252cf97d0d64b83014"
+      },
+      {
+        "source_id": "FISRC-1944a3662baaebec",
+        "source_url": "https://techfundingnews.com/arrakis-raises-38m-blossom-accel-ai-agents",
+        "source_title": "Arrakis raises $38M from Blossom and Accel, with Datadog CEO and OpenAI exec joining the round — TFN",
+        "source_content_hash": "faf9c34480358e85",
+        "quote": "Existing investor Accel, which led the $7.5 million seed round in March, also participated",
+        "quote_hash": "c9065c6f4cfbf5fab3de5efa08431635e27d9b3d165523368a52dba797bc6968"
+      },
+      {
+        "source_id": "FISRC-1944a3662baaebec",
+        "source_url": "https://techfundingnews.com/arrakis-raises-38m-blossom-accel-ai-agents",
+        "source_title": "Arrakis raises $38M from Blossom and Accel, with Datadog CEO and OpenAI exec joining the round — TFN",
+        "source_content_hash": "faf9c34480358e85",
+        "quote": "Existing investor Accel, which led the $7.5 million seed round in March",
+        "quote_hash": "db5f8a3918b84d398cc4c2ee70356601f72fd6119ee530966acceacef6294a36"
+      },
+      {
+        "source_id": "FISRC-ac4fd601f33650ff",
+        "source_url": "https://www.financialcontent.com/article/bizwire-2026-7-22-arrakis-comes-out-of-stealth-with-38m-to-help-industrial-enterprises-compete-in-the-ai-era",
+        "source_title": "Arrakis 携 3800 万美元走出隐身模式，助力工业企业竞争 AI 时代",
+        "source_content_hash": "4d42f1ad7c55a3e3",
+        "quote": "with participation from existing investor Accel, which also led the company's $7.5 million seed round",
+        "quote_hash": "db7efc87bd0312c1bd55c8774f4fa31b7a39a02fd9ba35210c7b6874ae5e4f3e"
+      },
+      {
+        "source_id": "FISRC-8c22d95f569f927e",
+        "source_url": "https://theaiinsider.tech/2026/07/16/agave-secures-15m-series-a-to-bring-ai-to-construction-financials/",
+        "source_title": "Agave 获 1500 万美元 A 轮融资，将 AI 引入建筑财务领域",
+        "source_content_hash": "a8e29aa71b711e6e",
+        "quote": "raised a $15M Series A funding round from Accel, who led Agave’s Seed round",
+        "quote_hash": "88974bce0aab07cf03d56a71b75754c7a57ab8b1dec8e5b7027c8f6f7a43b261"
+      },
+      {
+        "source_id": "FISRC-3ca38471e3f8361d",
+        "source_url": "https://siliconangle.com/2026/06/08/ai-infrastructure-cost-control-startup-pointfive-gets-60m-help-enterprises-save/",
+        "source_title": "AI 基础设施成本控制初创公司 PointFive 获 6000 万美元融资，助力企业节省开支",
+        "source_content_hash": "11683bab4c01ccd3",
+        "quote": "Accel led the round",
+        "quote_hash": "8e0705ecf58eaad0451a15274f1ca2e5cd980a08a9e609620031a7fe91e83c8e"
+      },
+      {
+        "source_id": "FISRC-ce83b857608dabeb",
+        "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",
+        "source_title": "AI 同事初创公司 Viktor 在推出后 10 周内达到 1290 万欧元营收运行率，随后完成 6470 万欧元 A 轮融资",
+        "source_content_hash": "bc6dd70ea1b6ac85",
+        "quote": "The round was led by Accel",
+        "quote_hash": "bf9241086ed667323e16eea3f9177dd3efb6ca565d9672531890057c9a74743e"
+      },
+      {
+        "source_id": "FISRC-62071134d28f47b9",
+        "source_url": "https://www.fractile.ai/news/fractile-raises-220m-to-build-the-next-generation-of-inference-hardware",
+        "source_title": "Fractile 融资2.2亿美元，打造下一代推理硬件",
+        "source_content_hash": "49c881bff41c0376",
+        "quote": "a financing round led by Accel, Factorial Funds, and Founders Fund",
+        "quote_hash": "70d43a0dda6879daeefef7373eac8d92a1c46975d8c8284870ef7e5cc2e3112e"
+      },
+      {
+        "source_id": "FISRC-b58bb99dfec2e318",
+        "source_url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
+        "source_title": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation \\ Anthropic",
+        "source_content_hash": "c231466686007dd5",
+        "quote": "Significant investors in this round include: Accel",
+        "quote_hash": "dd496c105397ae49540d0bf46c349a8d17db2380b866ac8c46ba30a2552fb6dc"
+      },
+      {
+        "source_id": "FISRC-d9093a8f62959034",
+        "source_url": "https://startuprise.co.uk/ai-workflow-automation-startup-n8n-raises-180m-valued-at-2-5b",
+        "source_title": "AI 工作流自动化初创公司 n8n 获 1.8 亿美元融资，估值达 25 亿美元",
+        "source_content_hash": "5fc63df17f42d743",
+        "quote": "The round was led by US VC Accel",
+        "quote_hash": "8afc89abbd10625bbafd23bbec4df1f7953e62c93cd32b28d19a56c32c09ca53"
+      },
+      {
+        "source_id": "FISRC-b833e224686f3237",
+        "source_url": "https://techcrunch.com/2024/03/12/nanonets-funding-accel-india/",
+        "source_title": "Nanonets 获 Accel 投资，优化 AI 工作流自动化",
+        "source_content_hash": "09c882710b28fe12",
+        "quote": "has raised $29 million in a new funding round led by Accel",
+        "quote_hash": "508ac3f9ff7ee89de5dcb27977f3dba89a922f33afcc8cb15a9d2ce946817cea"
+      }
+    ]
+  }
+}

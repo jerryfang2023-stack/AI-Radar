@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-44f4153f89fec8",
+    "name": "Pegatron Venture Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-01",
+    "latest_disclosed_at": "2026-07-01",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "FICO-oxmiq",
+        "canonical_entity_id": "",
+        "name": "OXMIQ"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-bccd9896128403b0",
+        "funding_insight_id": "FI-0f332b05a9ce8b6f",
+        "event_ids": [
+          "EV-b3c7c4bff17063d8",
+          "EV-415b083fdaa8077f",
+          "EV-48075ca70a5458ec",
+          "EV-63dee9f748531f08"
+        ],
+        "company_entity_id": "FICO-oxmiq",
+        "company_canonical_entity_id": "",
+        "company_name": "OXMIQ",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$35 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 35000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3500 万美元"
+        },
+        "announced_at": "2026-07-01",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b7d7449114c23ca5",
+            "source_url": "https://www.hpcwire.com/off-the-wire/oxmiq-raises-35m-to-scale-oxcoretm-architecture/",
+            "source_title": "HPCwire - 自1987年起——报道全球最快计算机及其运营者",
+            "source_content_hash": "7277428ab4a1fd81",
+            "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital",
+            "quote_hash": "f885b1fb938999e03ded403bc6f1587379842bf4acb9ab15ec22174e21777602"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-b7d7449114c23ca5",
+        "source_url": "https://www.hpcwire.com/off-the-wire/oxmiq-raises-35m-to-scale-oxcoretm-architecture/",
+        "source_title": "HPCwire - 自1987年起——报道全球最快计算机及其运营者",
+        "source_content_hash": "7277428ab4a1fd81",
+        "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital",
+        "quote_hash": "f885b1fb938999e03ded403bc6f1587379842bf4acb9ab15ec22174e21777602"
+      }
+    ]
+  }
+}

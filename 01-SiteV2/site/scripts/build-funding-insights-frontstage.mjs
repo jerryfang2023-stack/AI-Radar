@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -8,10 +9,12 @@ import {
   buildFundingEntityReviewQueue,
   fundingInsightProblems,
   normalizeFundingInsightCard,
+  normalizeFundingAmount,
   normalizeFundingRound,
   readJson,
   writeJson,
 } from "../../../agent-workflow/tools/funding-insight-v1-utils.mjs";
+import { investmentInstitutionId } from "../../../agent-workflow/product/investment-institution-v1.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
 
@@ -74,14 +77,69 @@ function uniqueObjects(items = [], keyFor = (item) => JSON.stringify(item)) {
   return output;
 }
 
-function aggregationKey(card) {
-  const companyKey = card.company?.entity_id || normalizedListKey(card.company?.name);
+function amountFingerprint(card) {
+  const amount = card.financing?.amount_normalized
+    || normalizeFundingAmount(card.financing?.amount_original || card.financing?.amount || "");
+  return [
+    amount.currency || "",
+    amount.status || "",
+    amount.value ?? "",
+    amount.min_value ?? "",
+    amount.max_value ?? "",
+    amount.status === "unparsed" ? normalizedListKey(card.financing?.amount_original || card.financing?.amount) : "",
+  ].join(":");
+}
+
+function aggregationFingerprint(card) {
+  const companyKey = card.company?.application_entity_id
+    || card.company?.entity_id
+    || normalizedListKey(card.company?.name);
   const round = normalizeFundingRound(card.financing?.round_original || card.financing?.round);
-  return `${companyKey}|${round.code}`;
+  return `${companyKey}|${round.code}|${amountFingerprint(card)}`;
+}
+
+function aggregationKey(card) {
+  return `${aggregationFingerprint(card)}|${card.financing?.announced_at || "undated"}`;
+}
+
+function datesRepresentSameDisclosure(left = "", right = "") {
+  if (!left || !right) return left === right;
+  const leftTime = Date.parse(`${left}T00:00:00Z`);
+  const rightTime = Date.parse(`${right}T00:00:00Z`);
+  return Number.isFinite(leftTime) && Number.isFinite(rightTime)
+    && Math.abs(leftTime - rightTime) <= 3 * 24 * 60 * 60 * 1000;
+}
+
+function cardCompleteness(card) {
+  return (card.research_sources || []).length * 2
+    + (card.financing?.investors || []).length
+    + (card.financing?.other_round_investors || []).length
+    + (card.company?.founders || []).length
+    + (card.products || []).length
+    + (card.customers || []).length;
+}
+
+function selectBestCumulativeDisclosure(group) {
+  return [...group]
+    .filter((card) => card.financing?.total_raised_normalized?.currency)
+    .sort((left, right) => {
+      const leftAmount = left.financing.total_raised_normalized;
+      const rightAmount = right.financing.total_raised_normalized;
+      const comparable = leftAmount.currency === rightAmount.currency;
+      const leftValue = leftAmount.value ?? leftAmount.min_value ?? -1;
+      const rightValue = rightAmount.value ?? rightAmount.min_value ?? -1;
+      return (comparable ? rightValue - leftValue : 0)
+        || String(right.published_at || "").localeCompare(String(left.published_at || ""));
+    })[0] || null;
 }
 
 function mergeFundingCardGroup(group, entityIndex, entityDecisions, companyIdentityReview) {
-  const base = structuredClone(group[0]);
+  const ranked = [...group].sort((left, right) => (
+    cardCompleteness(right) - cardCompleteness(left)
+    || String(right.published_at || "").localeCompare(String(left.published_at || ""))
+    || String(left.triggered_by_event_id || "").localeCompare(String(right.triggered_by_event_id || ""))
+  ));
+  const base = structuredClone(ranked[0]);
   const sourceEventIds = uniqueObjects(
     group.flatMap((card) => card.source_event_ids || [card.triggered_by_event_id]),
     (value) => value,
@@ -99,6 +157,14 @@ function mergeFundingCardGroup(group, entityIndex, entityDecisions, companyIdent
     announced_at: card.financing?.announced_at || "",
     evidence_refs: card.financing?.evidence_refs || [],
   })), (item) => item.event_id);
+  const disclosedDates = group.map((card) => card.financing?.announced_at || "").filter(Boolean).sort();
+  if (disclosedDates.length) base.financing.announced_at = disclosedDates[0];
+  const bestCumulative = selectBestCumulativeDisclosure(group);
+  if (bestCumulative) {
+    base.financing.total_raised = bestCumulative.financing.total_raised;
+    base.financing.total_raised_original = bestCumulative.financing.total_raised_original;
+    base.financing.total_raised_normalized = bestCumulative.financing.total_raised_normalized;
+  }
   base.products = named(group.flatMap((card) => card.products || []));
   base.customers = named(group.flatMap((card) => card.customers || []));
   base.comparisons = named(group.flatMap((card) => card.comparisons || []));
@@ -131,10 +197,12 @@ function mergeFundingCardGroup(group, entityIndex, entityDecisions, companyIdent
     (item) => item?.source_id,
   );
   base.source_event_ids = sourceEventIds;
+  const stableKey = aggregationKey(base);
+  base.funding_insight_id = `FI-${crypto.createHash("sha1").update(stableKey).digest("hex").slice(0, 16)}`;
   base.aggregation = {
-    key: aggregationKey(base),
+    key: stableKey,
     event_count: sourceEventIds.length,
-    strategy: "company_and_normalized_round",
+    strategy: "reviewed_company_round_date_and_normalized_amount",
   };
   return normalizeFundingInsightCard(base, entityIndex, entityDecisions, companyIdentityReview);
 }
@@ -150,17 +218,145 @@ export function aggregateFundingRoundCards(
     .sort((left, right) => String(right.published_at || "").localeCompare(String(left.published_at || "")))
     .map((card) => normalizeFundingInsightCard(card, entityIndex, entityDecisions, companyIdentityReview));
   for (const card of cards) {
-    const key = aggregationKey(card);
-    if (!groups.has(key)) groups.set(key, []);
-    groups.get(key).push(card);
+    const fingerprint = aggregationFingerprint(card);
+    if (!groups.has(fingerprint)) groups.set(fingerprint, []);
+    const clusters = groups.get(fingerprint);
+    const eventIds = new Set(card.source_event_ids || [card.triggered_by_event_id].filter(Boolean));
+    const cluster = clusters.find((items) => items.some((item) => (
+      datesRepresentSameDisclosure(item.financing?.announced_at, card.financing?.announced_at)
+      || (item.source_event_ids || [item.triggered_by_event_id].filter(Boolean)).some((id) => eventIds.has(id))
+    )));
+    if (cluster) cluster.push(card);
+    else clusters.push([card]);
   }
-  return [...groups.values()].map((group) => (
+  return [...groups.values()].flat().map((group) => (
     mergeFundingCardGroup(group, entityIndex, entityDecisions, companyIdentityReview)
   ));
 }
 
 export function dedupeFundingRounds(inputCards = []) {
   return aggregateFundingRoundCards(inputCards);
+}
+
+function cumulativeKnownRoundAmounts(companyCards = []) {
+  const totals = new Map();
+  for (const card of companyCards) {
+    if (card.financing?.round_code === "multi_round") continue;
+    const amount = card.financing?.amount_normalized;
+    const pointValue = Number.isFinite(amount?.value) ? amount.value : null;
+    const minValue = Number.isFinite(amount?.min_value) ? amount.min_value : pointValue;
+    const maxValue = Number.isFinite(amount?.max_value) ? amount.max_value : pointValue;
+    if (!amount?.currency || !Number.isFinite(minValue) || !["exact", "approximate", "lower_bound", "range"].includes(amount.status)) continue;
+    if (!totals.has(amount.currency)) totals.set(amount.currency, {
+      value: 0,
+      min_value: 0,
+      max_value: 0,
+      round_count: 0,
+      has_lower_bound: false,
+      has_range: false,
+      has_approximate: false,
+    });
+    const total = totals.get(amount.currency);
+    total.value += pointValue || 0;
+    total.min_value += minValue;
+    total.max_value = Number.isFinite(total.max_value) && Number.isFinite(maxValue)
+      ? total.max_value + maxValue
+      : null;
+    total.round_count += 1;
+    total.has_lower_bound ||= amount.status === "lower_bound";
+    total.has_range ||= amount.status === "range";
+    total.has_approximate ||= amount.status === "approximate";
+    if (amount.status === "lower_bound") total.max_value = null;
+  }
+  const symbols = { USD: "$", EUR: "€", GBP: "£", CNY: "￥", JPY: "" };
+  return [...totals.entries()].map(([currency, total]) => {
+    const suffix = currency === "JPY" ? "日元" : "";
+    const amountText = (value, prefix = "") => normalizeFundingAmount(`${prefix}${symbols[currency] || ""}${value}${suffix}`).display_zh;
+    const status = total.has_lower_bound
+      ? "lower_bound"
+      : total.has_range
+        ? "range"
+        : total.has_approximate
+          ? "approximate"
+          : "exact";
+    const displayZh = status === "range"
+      ? `${amountText(total.min_value)}–${amountText(total.max_value)}`
+      : amountText(total.min_value, status === "lower_bound" ? "超过 " : status === "approximate" ? "约 " : "");
+    return {
+      currency,
+      value: ["exact", "approximate"].includes(status) ? total.min_value : null,
+      min_value: status === "exact" ? null : total.min_value,
+      max_value: status === "range" ? total.max_value : null,
+      unit: "base",
+      round_count: total.round_count,
+      status,
+      display_zh: displayZh,
+    };
+  });
+}
+
+export function enrichFundingHistory(cards = []) {
+  const byCompany = new Map();
+  for (const card of cards) {
+    const key = card.company?.application_entity_id
+      || card.company?.entity_id
+      || normalizedListKey(card.company?.name);
+    if (!byCompany.has(key)) byCompany.set(key, []);
+    byCompany.get(key).push(card);
+  }
+  return cards.map((card) => {
+    const key = card.company?.application_entity_id
+      || card.company?.entity_id
+      || normalizedListKey(card.company?.name);
+    const companyCards = byCompany.get(key) || [card];
+    const historicalRounds = companyCards.map((entry) => ({
+      funding_insight_id: entry.funding_insight_id,
+      event_ids: entry.source_event_ids || [entry.triggered_by_event_id].filter(Boolean),
+      round: entry.financing?.round || "",
+      round_code: entry.financing?.round_code || "",
+      round_original: entry.financing?.round_original || "",
+      amount_original: entry.financing?.amount_original || entry.financing?.amount || "",
+      amount_normalized: entry.financing?.amount_normalized || null,
+      announced_at: entry.financing?.announced_at || "",
+      disclosure_status: entry.financing?.disclosure_status || "unknown",
+      is_summary: entry.financing?.round_code === "multi_round",
+      counts_toward_known_total: entry.financing?.round_code !== "multi_round",
+      is_current: entry.funding_insight_id === card.funding_insight_id,
+    })).sort((left, right) => right.announced_at.localeCompare(left.announced_at));
+    const companyEventIds = new Set(companyCards.flatMap((entry) => (
+      entry.source_event_ids || [entry.triggered_by_event_id].filter(Boolean)
+    )));
+    const fundingHistory = uniqueObjects(
+      companyCards
+        .flatMap((entry) => entry.funding_history || [])
+        .filter((entry) => companyEventIds.has(entry?.event_id)),
+      (entry) => entry?.event_id,
+    );
+    const sourceTotal = card.financing?.total_raised_normalized;
+    return {
+      ...card,
+      funding_history: fundingHistory,
+      financing: {
+        ...card.financing,
+        cumulative_amount: {
+          original: card.financing?.total_raised_original || card.financing?.total_raised || "",
+          normalized: sourceTotal || normalizeFundingAmount(""),
+          basis: sourceTotal?.currency ? "source_disclosed" : "known_rounds_only",
+          known_round_totals: cumulativeKnownRoundAmounts(companyCards),
+          historical_round_count: historicalRounds.length,
+        },
+        investors: (card.financing?.investors || []).map((item) => ({
+          ...item,
+          institution_id: investmentInstitutionId(item.name, item.entity_id || ""),
+        })),
+        other_round_investors: (card.financing?.other_round_investors || []).map((item) => ({
+          ...item,
+          institution_id: investmentInstitutionId(item.name, item.entity_id || ""),
+        })),
+      },
+      historical_rounds: historicalRounds,
+    };
+  });
 }
 
 export function buildFundingInsightsFrontstage(projectRoot = root) {
@@ -192,12 +388,12 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
       if (!current || card.published_at > current.published_at) cardByEvent.set(card.triggered_by_event_id, card);
     }
   }
-  const cards = aggregateFundingRoundCards(
+  const cards = enrichFundingHistory(aggregateFundingRoundCards(
     [...cardByEvent.values()],
     entityIndex,
     entityDecisions,
     companyIdentityReview,
-  )
+  ))
     .sort((left, right) => {
       return String(right.as_of_date || "").localeCompare(String(left.as_of_date || ""))
         || String(right.financing?.announced_at || "").localeCompare(String(left.financing?.announced_at || ""))
@@ -256,8 +452,10 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
           related_direction: directions.get(card.analysis?.related_direction_id) || null,
         },
         links: {
-          company: `data-center.html?view=index&detail=entity&id=${encodeURIComponent(card.company.entity_id)}`,
-          relation_map: relationshipEntityIds.has(card.company.entity_id)
+          company: card.company.canonical_entity_consistent && relationshipEntityIds.has(card.company.entity_id)
+            ? `data-center.html?view=index&detail=entity&id=${encodeURIComponent(card.company.entity_id)}`
+            : "",
+          relation_map: card.company.canonical_entity_consistent && relationshipEntityIds.has(card.company.entity_id)
             ? `data-center.html?view=relations&entity=${encodeURIComponent(card.company.entity_id)}`
             : "",
           funding_event: `data-center.html?view=events&detail=event&id=${encodeURIComponent(card.triggered_by_event_id)}`,
@@ -287,8 +485,8 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
     meta: {
       schema_version: FUNDING_INSIGHT_FRONTSTAGE_VERSION,
       funding_insight_version: FUNDING_INSIGHT_VERSION,
-      site_version: "SITE-V4.4.1-china-market-scope",
-      column_version: "FUNDING-INSIGHT-V1.3.0-cb-2026-hierarchy",
+      site_version: "SITE-V4.5.0-investment-institution-library",
+      column_version: "FUNDING-INSIGHT-V1.4.0-financing-fields",
       taxonomy_version: "TAG-V4.1",
       latest_date: latestDate,
       generated_at: generatedAt,

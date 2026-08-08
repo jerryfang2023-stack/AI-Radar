@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-8c98dd1224d8a1",
+    "name": "平湖泽新",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-03",
+    "latest_disclosed_at": "2026-07-03",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "pre_series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-2b60b46911fc1640",
+        "canonical_entity_id": "",
+        "name": "上海如身机器人科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-f18ab5eaacf5ea25",
+        "funding_insight_id": "FI-0d0e4d0d5b40a2c0",
+        "event_ids": [
+          "EV-ee38c30c00b2a754"
+        ],
+        "company_entity_id": "EN-2b60b46911fc1640",
+        "company_canonical_entity_id": "",
+        "company_name": "上海如身机器人科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "亿元级",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿人民币–10 亿人民币"
+        },
+        "announced_at": "2026-07-03",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-186f006838f41f12",
+            "source_url": "https://www.cnfin.com/gs-lb/detail/20260703/4435436_1.html",
+            "source_title": "如身机器人完成亿元级融资 具身智能企业加速场景化突破",
+            "source_content_hash": "4f23d147a6cacb224a3e8ce9b4ede69250ec696549bbd703bc355b9f081065d3",
+            "quote": "本轮融资由深耕医疗健康领域的清松资本、头部AIDC算力上市公司润泽科技以及平湖泽新共同投资",
+            "quote_hash": "a3ea331e4ba1bf8fd5a3bb223563c45b1ac486dc2eaa66b81f819c6ec0c73263"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-186f006838f41f12",
+        "source_url": "https://www.cnfin.com/gs-lb/detail/20260703/4435436_1.html",
+        "source_title": "如身机器人完成亿元级融资 具身智能企业加速场景化突破",
+        "source_content_hash": "4f23d147a6cacb224a3e8ce9b4ede69250ec696549bbd703bc355b9f081065d3",
+        "quote": "本轮融资由深耕医疗健康领域的清松资本、头部AIDC算力上市公司润泽科技以及平湖泽新共同投资",
+        "quote_hash": "a3ea331e4ba1bf8fd5a3bb223563c45b1ac486dc2eaa66b81f819c6ec0c73263"
+      }
+    ]
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-b78500cd12b6ee",
+    "name": "8VC",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 6,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 6,
+    "first_disclosed_at": "2026-03-19",
+    "latest_disclosed_at": "2026-07-16",
+    "role_counts": {
+      "lead": 3,
+      "participant": 3
+    },
+    "round_codes": [
+      "multi_round",
+      "seed",
+      "series_a",
+      "series_b",
+      "series_d",
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-9007bd372bab6334",
+        "canonical_entity_id": "",
+        "name": "Bespoke Labs"
+      },
+      {
+        "entity_id": "EN-ac32f27ba7a1346f",
+        "canonical_entity_id": "",
+        "name": "Cognition"
+      },
+      {
+        "entity_id": "EN-b10da733dff99be1",
+        "canonical_entity_id": "",
+        "name": "Edra"
+      },
+      {
+        "entity_id": "EN-8da5eafb322ee86e",
+        "canonical_entity_id": "",
+        "name": "Fractile"
+      },
+      {
+        "entity_id": "EN-cfd90af8403941bf",
+        "canonical_entity_id": "",
+        "name": "Sable"
+      },
+      {
+        "entity_id": "FICO-sycamore",
+        "canonical_entity_id": "",
+        "name": "Sycamore"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-74fe6c5dab4b90d9",
+        "funding_insight_id": "FI-2ebe52bd95cf8644",
+        "event_ids": [
+          "EV-1da2e46e39a57d33"
+        ],
+        "company_entity_id": "EN-cfd90af8403941bf",
+        "company_canonical_entity_id": "",
+        "company_name": "Sable",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$45 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 45000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4500 万美元"
+        },
+        "announced_at": "2026-07-16",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-c00aba21353833ae",
+            "source_url": "https://www.morningstar.com/news/accesswire/1191719msn/sable-raises-45m-to-build-the-first-ai-employee-that-can-click-see-and-explain",
+            "source_title": "Sable Raises $45M to Build the First AI Employee that can Click, See, and ...",
+            "source_content_hash": "7de5ccc4b9392027",
+            "quote": "a $45 million financing round led by Sequoia Capital and 8VC",
+            "quote_hash": "af34a0033840bdda36758eaf2b91beef489122297760365c644cdb1fde7e65f1"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-51e216620bcd5cb8",
+        "funding_insight_id": "FI-8e0c1c5789c6d1f8",
+        "event_ids": [
+          "EV-fb817fb0a5e63323"
+        ],
+        "company_entity_id": "EN-9007bd372bab6334",
+        "company_canonical_entity_id": "",
+        "company_name": "Bespoke Labs",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "Seed and Series A",
+        "amount_original": "$40 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-07-06",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "种子轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-bcf489b2ae49f41b",
+            "source_url": "https://bespokelabs.ai/blog/bespoke-labs-raises-40m-to-build-environments-that-enable-reliable-agents",
+            "source_title": "Bespoke Labs 融资 4000 万美元，打造支持可靠 AI 智能体的环境",
+            "source_content_hash": "0eae2122fce5a05c",
+            "quote": "Our $8.25 million seed round was led by 8VC",
+            "quote_hash": "7e8323f2f9785c8509f70cc1079513704ab925be9c653ffbfda75796842ec47a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-93f461af5907933d",
+        "funding_insight_id": "FI-5faa0336090509de",
+        "event_ids": [
+          "EV-5762fe51987bc5ff"
+        ],
+        "company_entity_id": "EN-ac32f27ba7a1346f",
+        "company_canonical_entity_id": "",
+        "company_name": "Cognition",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "超过 10 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": 1000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 10 亿美元"
+        },
+        "announced_at": "2026-05-27",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-c7d89f6e73a6fe5b",
+            "source_url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
+            "source_title": "AI 编程初创公司 Cognition 以 250 亿美元投前估值融资 10 亿美元",
+            "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+            "quote": "The round was led by Lux Capital, General Catalyst and 8VC",
+            "quote_hash": "e9c26401b28b95ba14901b7cd9d160600834299249f53acc81e8697d54b6f697"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-bde85807c1e785b8",
+        "funding_insight_id": "FI-27c50f0e1e7dd316",
+        "event_ids": [
+          "EV-70a994b9339f92e7"
+        ],
+        "company_entity_id": "EN-8da5eafb322ee86e",
+        "company_canonical_entity_id": "",
+        "company_name": "Fractile",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "2.2亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 220000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.2 亿美元"
+        },
+        "announced_at": "2026-05-13",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-62071134d28f47b9",
+            "source_url": "https://www.fractile.ai/news/fractile-raises-220m-to-build-the-next-generation-of-inference-hardware",
+            "source_title": "Fractile 融资2.2亿美元，打造下一代推理硬件",
+            "source_content_hash": "49c881bff41c0376",
+            "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC",
+            "quote_hash": "43b18a1ac783a5b2aecda37d5dfe5f4e674fa56f7f1ab21b2b165fded9ad59bb"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f2074d1df1be19a9",
+        "funding_insight_id": "FI-91df568a315de93f",
+        "event_ids": [
+          "EV-b695dedc9acda5dc",
+          "EV-7add33b4c74dbf1a",
+          "EV-c5643983538c6513"
+        ],
+        "company_entity_id": "FICO-sycamore",
+        "company_canonical_entity_id": "",
+        "company_name": "Sycamore",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$65 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6500 万美元"
+        },
+        "announced_at": "2026-03-30",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d354011359557f2f",
+            "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
+            "source_title": "Sycamore融资6500万美元，为企业打造可信代理操作系统",
+            "source_content_hash": "7c851906b2d8f45f",
+            "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund",
+            "quote_hash": "e443cbfb7f795d800b13ba7a1cba8c2f429b60d8881136f8543d2e9968332aca"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a12b461a35f0ad37",
+        "funding_insight_id": "FI-f7944cc1c3817381",
+        "event_ids": [
+          "EV-4c247b02485de09b"
+        ],
+        "company_entity_id": "EN-b10da733dff99be1",
+        "company_canonical_entity_id": "",
+        "company_name": "Edra",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "3000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-03-19",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f0bd0469bbdd29e2",
+            "source_url": "https://tech.eu/2026/03/19/edra-raises-309m-series-a-to-turn-enterprise-data-into-self-improving-ai-agents/",
+            "source_title": "红杉资本支持的Edra完成3000万美元A轮融资，将企业数据转化为自我优化的AI智能体",
+            "source_content_hash": "043f0819e45e2208",
+            "quote": "which included investment from 8VC and A*z.",
+            "quote_hash": "a17c6a3c0aa2ff6760f9f6b20f563d3a68b5d776f0dd68a240ebf389b9c5ad08"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-c00aba21353833ae",
+        "source_url": "https://www.morningstar.com/news/accesswire/1191719msn/sable-raises-45m-to-build-the-first-ai-employee-that-can-click-see-and-explain",
+        "source_title": "Sable Raises $45M to Build the First AI Employee that can Click, See, and ...",
+        "source_content_hash": "7de5ccc4b9392027",
+        "quote": "a $45 million financing round led by Sequoia Capital and 8VC",
+        "quote_hash": "af34a0033840bdda36758eaf2b91beef489122297760365c644cdb1fde7e65f1"
+      },
+      {
+        "source_id": "FISRC-bcf489b2ae49f41b",
+        "source_url": "https://bespokelabs.ai/blog/bespoke-labs-raises-40m-to-build-environments-that-enable-reliable-agents",
+        "source_title": "Bespoke Labs 融资 4000 万美元，打造支持可靠 AI 智能体的环境",
+        "source_content_hash": "0eae2122fce5a05c",
+        "quote": "Our $8.25 million seed round was led by 8VC",
+        "quote_hash": "7e8323f2f9785c8509f70cc1079513704ab925be9c653ffbfda75796842ec47a"
+      },
+      {
+        "source_id": "FISRC-c7d89f6e73a6fe5b",
+        "source_url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
+        "source_title": "AI 编程初创公司 Cognition 以 250 亿美元投前估值融资 10 亿美元",
+        "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+        "quote": "The round was led by Lux Capital, General Catalyst and 8VC",
+        "quote_hash": "e9c26401b28b95ba14901b7cd9d160600834299249f53acc81e8697d54b6f697"
+      },
+      {
+        "source_id": "FISRC-62071134d28f47b9",
+        "source_url": "https://www.fractile.ai/news/fractile-raises-220m-to-build-the-next-generation-of-inference-hardware",
+        "source_title": "Fractile 融资2.2亿美元，打造下一代推理硬件",
+        "source_content_hash": "49c881bff41c0376",
+        "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC",
+        "quote_hash": "43b18a1ac783a5b2aecda37d5dfe5f4e674fa56f7f1ab21b2b165fded9ad59bb"
+      },
+      {
+        "source_id": "FISRC-d354011359557f2f",
+        "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
+        "source_title": "Sycamore融资6500万美元，为企业打造可信代理操作系统",
+        "source_content_hash": "7c851906b2d8f45f",
+        "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund",
+        "quote_hash": "e443cbfb7f795d800b13ba7a1cba8c2f429b60d8881136f8543d2e9968332aca"
+      },
+      {
+        "source_id": "FISRC-f0bd0469bbdd29e2",
+        "source_url": "https://tech.eu/2026/03/19/edra-raises-309m-series-a-to-turn-enterprise-data-into-self-improving-ai-agents/",
+        "source_title": "红杉资本支持的Edra完成3000万美元A轮融资，将企业数据转化为自我优化的AI智能体",
+        "source_content_hash": "043f0819e45e2208",
+        "quote": "which included investment from 8VC and A*z.",
+        "quote_hash": "a17c6a3c0aa2ff6760f9f6b20f563d3a68b5d776f0dd68a240ebf389b9c5ad08"
+      }
+    ]
+  }
+}

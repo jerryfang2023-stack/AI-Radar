@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-ad8fc178b6d007",
+    "name": "Bob McGrew",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-03-30",
+    "latest_disclosed_at": "2026-03-30",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "other_current_round": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "FICO-sycamore",
+        "canonical_entity_id": "",
+        "name": "Sycamore"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-940374ec66e66ff3",
+        "funding_insight_id": "FI-91df568a315de93f",
+        "event_ids": [
+          "EV-b695dedc9acda5dc",
+          "EV-7add33b4c74dbf1a",
+          "EV-c5643983538c6513"
+        ],
+        "company_entity_id": "FICO-sycamore",
+        "company_canonical_entity_id": "",
+        "company_name": "Sycamore",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$65 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6500 万美元"
+        },
+        "announced_at": "2026-03-30",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮天使投资人",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-afa7f3db79250046",
+            "source_url": "https://techcrunch.com/2026/03/30/former-coatue-partner-raises-huge-65m-seed-for-enterprise-ai-agent-startup/",
+            "source_title": "前Coatue合伙人筹集6500万美元种子轮，用于企业AI智能体初创公司",
+            "source_content_hash": "30d66410e025bf44",
+            "quote": "a long list of angels including former OpenAI chief scientist Bob McGrew, Intel CEO Lip-Bu Tan, Databricks CEO Ali Ghodsi, and others.",
+            "quote_hash": "094332c446066edecca1b7b6a7b3b71cde5d19f56591285ce5895bd45753465e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-698a938267cec7fc",
+        "funding_insight_id": "FI-91df568a315de93f",
+        "event_ids": [
+          "EV-b695dedc9acda5dc",
+          "EV-7add33b4c74dbf1a",
+          "EV-c5643983538c6513"
+        ],
+        "company_entity_id": "FICO-sycamore",
+        "company_canonical_entity_id": "",
+        "company_name": "Sycamore",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$65 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6500 万美元"
+        },
+        "announced_at": "2026-03-30",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-d354011359557f2f",
+            "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
+            "source_title": "Sycamore融资6500万美元，为企业打造可信代理操作系统",
+            "source_content_hash": "7c851906b2d8f45f",
+            "quote": "Bob McGrew (former Chief Research Officer at OpenAI)",
+            "quote_hash": "7fb11ef0ec2c9573bf52a1edf3ae950490ccd96a5d9be0aba8dd6e41def48418"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-afa7f3db79250046",
+        "source_url": "https://techcrunch.com/2026/03/30/former-coatue-partner-raises-huge-65m-seed-for-enterprise-ai-agent-startup/",
+        "source_title": "前Coatue合伙人筹集6500万美元种子轮，用于企业AI智能体初创公司",
+        "source_content_hash": "30d66410e025bf44",
+        "quote": "a long list of angels including former OpenAI chief scientist Bob McGrew, Intel CEO Lip-Bu Tan, Databricks CEO Ali Ghodsi, and others.",
+        "quote_hash": "094332c446066edecca1b7b6a7b3b71cde5d19f56591285ce5895bd45753465e"
+      },
+      {
+        "source_id": "FISRC-d354011359557f2f",
+        "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
+        "source_title": "Sycamore融资6500万美元，为企业打造可信代理操作系统",
+        "source_content_hash": "7c851906b2d8f45f",
+        "quote": "Bob McGrew (former Chief Research Officer at OpenAI)",
+        "quote_hash": "7fb11ef0ec2c9573bf52a1edf3ae950490ccd96a5d9be0aba8dd6e41def48418"
+      }
+    ]
+  }
+}

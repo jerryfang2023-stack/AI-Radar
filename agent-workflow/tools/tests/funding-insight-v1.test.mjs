@@ -15,7 +15,9 @@ import {
   ensureNamedCompanyEvidence,
   entityResolver,
   fundingEvidenceProofProblems,
+  fundingDisclosureStatus,
   fundingInsightProblems,
+  normalizeFundingAmount,
   normalizeFundingRound,
   normalizeFundingInsightCard,
   partitionRoundInvestors,
@@ -35,7 +37,12 @@ import {
   fundingMarketCategoryDecision,
   fundingProductFormDecision,
   fundingProductFormId,
+  enrichFundingHistory,
 } from "../../../01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs";
+import {
+  buildInvestmentInstitutionRegistry,
+  investmentInstitutionId,
+} from "../../product/investment-institution-v1.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
 
@@ -310,6 +317,125 @@ test("融资轮次统一为稳定代码和中文展示名，同时保留原始�
   });
 });
 
+test("融资金额同时保留原文并生成可计算的币种、基准值和中文标准展示", () => {
+  assert.deepEqual(normalizeFundingAmount("$312 million"), {
+    currency: "USD",
+    value: 312000000,
+    min_value: null,
+    max_value: null,
+    unit: "base",
+    status: "exact",
+    display_zh: "3.12 亿美元",
+  });
+  assert.deepEqual(normalizeFundingAmount("近5亿元"), {
+    currency: "CNY",
+    value: 500000000,
+    min_value: null,
+    max_value: null,
+    unit: "base",
+    status: "approximate",
+    display_zh: "约 5 亿人民币",
+  });
+  const lowerBound = normalizeFundingAmount("超过 €70 million");
+  assert.equal(lowerBound.currency, "EUR");
+  assert.equal(lowerBound.value, 70000000);
+  assert.equal(lowerBound.min_value, 70000000);
+  assert.equal(lowerBound.status, "lower_bound");
+});
+
+test("融资金额量级表达标准化为有边界的人民币区间而不是伪造单点值", () => {
+  assert.deepEqual(normalizeFundingAmount("数亿元"), {
+    currency: "CNY",
+    value: null,
+    min_value: 200000000,
+    max_value: 900000000,
+    unit: "base",
+    status: "range",
+    display_zh: "2 亿人民币–9 亿人民币",
+  });
+  assert.equal(normalizeFundingAmount("千万级").min_value, 10000000);
+  assert.equal(normalizeFundingAmount("千万级").max_value, 100000000);
+});
+
+test("融资卡补齐金额原文、标准金额与融资披露状态", () => {
+  const card = validCard();
+  assert.equal(card.financing.amount_original, "$20M");
+  assert.equal(card.financing.amount_normalized.value, 20000000);
+  assert.equal(card.financing.total_raised_original, "$25M");
+  assert.equal(card.financing.disclosure_status, "disclosed");
+  card.financing.investors = [];
+  card.financing.investor_disclosure_status = "not_disclosed";
+  assert.equal(fundingDisclosureStatus(card.financing), "partially_disclosed");
+});
+
+test("融资历史按规范轮次形成稳定字段并计算已知轮次累计金额", () => {
+  const seed = validCard();
+  seed.funding_insight_id = "FI-SEED";
+  seed.triggered_by_event_id = "EV-SEED";
+  seed.source_event_ids = ["EV-SEED"];
+  seed.financing.round = "种子轮";
+  seed.financing.round_original = "Seed";
+  seed.financing.amount = "$5M";
+  seed.financing.amount_original = "$5M";
+  const roundA = validCard();
+  const cards = enrichFundingHistory([normalizeFundingInsightCard(seed), roundA]);
+  assert.equal(cards[0].historical_rounds.length, 2);
+  assert.equal(cards[0].financing.cumulative_amount.known_round_totals[0].value, 25000000);
+});
+
+test("已知轮次累计金额保留模糊金额区间而不是显示未披露", () => {
+  const card = validCard();
+  card.financing.amount = "数亿元";
+  card.financing.total_raised = "";
+  const [result] = enrichFundingHistory([normalizeFundingInsightCard(card)]);
+  const cumulative = result.financing.cumulative_amount.known_round_totals[0];
+  assert.equal(cumulative.status, "range");
+  assert.equal(cumulative.min_value, 200000000);
+  assert.equal(cumulative.max_value, 900000000);
+  assert.equal(cumulative.display_zh, "2 亿人民币–9 亿人民币");
+});
+
+test("投资机构库只从融资卡精确投资方证据生成可追溯活动", () => {
+  const card = validCard();
+  card.financing.investors[0].institution_id = "ignored";
+  const registry = buildInvestmentInstitutionRegistry([card], {}, card.published_at);
+  assert.equal(registry.meta.institution_count, 1);
+  assert.equal(registry.meta.current_round_activity_count, 1);
+  assert.equal(registry.institutions[0].name, "Northstar Ventures");
+  assert.equal(registry.institutions[0].investor_kind, "investment_institution");
+  assert.equal(registry.institutions[0].activities[0].role_code, "lead");
+  assert.equal(registry.institutions[0].activities[0].evidence[0].quote, evidence()[0].quote);
+});
+
+test("投资机构活动按同轮次金额和精确引文去重并保留全部事件", () => {
+  const first = validCard();
+  const duplicate = validCard();
+  duplicate.funding_insight_id = "FI-DUPLICATE";
+  duplicate.triggered_by_event_id = "EV-DUPLICATE";
+  duplicate.source_event_ids = ["EV-DUPLICATE"];
+  duplicate.company.name = "Acme AI Labs Inc.";
+  duplicate.financing.amount = "$20 million";
+  const registry = buildInvestmentInstitutionRegistry([
+    normalizeFundingInsightCard(first),
+    normalizeFundingInsightCard(duplicate),
+  ], {}, first.published_at);
+  assert.equal(registry.meta.current_round_activity_count, 1);
+  assert.deepEqual(registry.institutions[0].activities[0].event_ids.sort(), ["EV-1", "EV-DUPLICATE"]);
+});
+
+test("相同投资方引文和金额不能合并名称无关的被投公司", () => {
+  const first = validCard();
+  const other = validCard();
+  other.funding_insight_id = "FI-OTHER-COMPANY";
+  other.triggered_by_event_id = "EV-OTHER-COMPANY";
+  other.company.entity_id = "EN-OTHER";
+  other.company.application_entity_id = "EN-OTHER";
+  other.company.name = "Different Robotics";
+  const registry = buildInvestmentInstitutionRegistry([first, other], {}, first.published_at);
+  assert.equal(registry.meta.current_round_activity_count, 2);
+  assert.equal(new Set(registry.institutions[0].activities.map((item) => item.activity_id)).size, 2);
+});
+
 test("本轮投资方与历史或轮次不明投资方必须分开", () => {
   const result = partitionRoundInvestors([
     { name: "Northstar", role: "本轮领投", evidence_refs: evidence() },
@@ -321,6 +447,49 @@ test("本轮投资方与历史或轮次不明投资方必须分开", () => {
   assert.deepEqual(result.other.map((item) => item.name), ["Seed Fund", "Legacy Capital"]);
   assert.equal(result.other[0].round_context.code, "seed");
   assert.equal(result.other[1].round_context.code, "undisclosed");
+});
+
+test("带历史披露月份的同名轮次投资方不能污染当前轮", () => {
+  const result = partitionRoundInvestors([
+    { name: "Nvidia", role: "本轮参投", evidence_refs: evidence() },
+    { name: "FirstMark Capital", role: "种子轮参投（2025年12月首次披露）", evidence_refs: evidence() },
+  ], "Seed", "2026-07-09");
+  assert.deepEqual(result.current.map((item) => item.name), ["Nvidia"]);
+  assert.deepEqual(result.other.map((item) => item.name), ["FirstMark Capital"]);
+  assert.equal(result.other[0].classification_reason, "historical_disclosure_date");
+});
+
+test("投资机构别名使用稳定主体键合并且类型判断不受整句其他机构词污染", () => {
+  const first = validCard();
+  first.financing.investors = [{ ...first.financing.investors[0], name: "a16z" }];
+  const duplicate = structuredClone(first);
+  duplicate.funding_insight_id = "FI-ALIAS";
+  duplicate.triggered_by_event_id = "EV-ALIAS";
+  duplicate.financing.investors[0].name = "Andreessen Horowitz";
+  const corporate = structuredClone(first);
+  corporate.funding_insight_id = "FI-CORPORATE";
+  corporate.triggered_by_event_id = "EV-CORPORATE";
+  corporate.company.entity_id = "EN-OTHER";
+  corporate.company.name = "Other Co";
+  corporate.financing.investors = [{
+    name: "Cisco",
+    entity_id: "EN-CISCO",
+    role: "本轮参投",
+    evidence_refs: evidence("SRC-CISCO", "Cisco participated alongside Sequoia Capital and Founders Fund."),
+  }];
+  const registry = buildInvestmentInstitutionRegistry([first, duplicate, corporate], {
+    companies: [{ id: "EN-CISCO", name: "Cisco", type: "公司/机构" }],
+  }, first.published_at);
+  const a16z = registry.institutions.find((item) => item.name === "Andreessen Horowitz");
+  const cisco = registry.institutions.find((item) => item.name === "Cisco");
+  assert.ok(a16z);
+  assert.deepEqual(a16z.aliases, ["a16z"]);
+  assert.equal(a16z.investor_kind, "investment_institution");
+  assert.equal(cisco.investor_kind, "corporate_investor");
+  assert.equal(
+    investmentInstitutionId("a16z", "EN-OLD"),
+    investmentInstitutionId("Andreessen Horowitz", "EN-NEW"),
+  );
 });
 
 test("实体链接只做可解释的规范精确匹配并容忍商标与人物角色后缀", () => {
@@ -623,6 +792,8 @@ test("融资透视自动化在商业事件工作流后增量研究、同步并�
   assert.match(workflow, /TAVILY_DISABLED: "false"/u);
   assert.match(workflow, /generate-funding-insights-deepseek\.mjs[\s\S]*assert-funding-insights-v1\.mjs[\s\S]*build-funding-insights-frontstage\.mjs/u);
   assert.match(workflow, /build-funding-insights-frontstage\.mjs[\s\S]*assert-funding-insights-v1\.mjs --all=true --frontstage=true/u);
+  assert.match(workflow, /assert-funding-insights-v1\.mjs --all=true --frontstage=true[\s\S]*build:investment-institutions[\s\S]*assert:investment-institutions[\s\S]*build:data-center-site/u);
+  assert.match(workflow, /git add[\s\S]*investment-institutions-v1\.json[\s\S]*data-center-v4\/investors/u);
   assert.doesNotMatch(workflow, /sync-funding-insights-to-obsidian\.mjs|vault\/20-Application-Center/u);
   assert.match(workflow, /automation\/funding-insights-\$\{RUN_DATE\}/u);
   assert.match(workflow, /push:[\s\S]*canonical-events\.json/u);
@@ -1178,6 +1349,57 @@ test("同一公司同轮次同金额的重复融资事件只投影为一张前�
   );
 });
 
+test("同一公司相隔较久的同名同额轮次保持为不同融资事件", () => {
+  const first = validCard();
+  first.financing.announced_at = "2026-01-10";
+  const later = structuredClone(first);
+  later.triggered_by_event_id = "EV-LATER";
+  later.financing.announced_at = "2026-07-10";
+  assert.equal(aggregateFundingRoundCards([first, later]).length, 2);
+});
+
+test("错误共用规范实体 ID 的不同融资公司在应用层被隔离", () => {
+  const gradium = validCard();
+  gradium.company = { ...gradium.company, entity_id: "EN-NVIDIA", name: "NVIDIA", full_name: "Gradium" };
+  gradium.funding_history = [
+    { event_id: gradium.triggered_by_event_id },
+    { event_id: "EV-UNRELATED-NVIDIA" },
+  ];
+  const upscale = structuredClone(gradium);
+  upscale.triggered_by_event_id = "EV-UPSCALE";
+  upscale.company.full_name = "Upscale AI";
+  upscale.funding_history = [
+    { event_id: upscale.triggered_by_event_id },
+    { event_id: "EV-UNRELATED-NVIDIA" },
+  ];
+  const cards = enrichFundingHistory(aggregateFundingRoundCards([gradium, upscale], {
+    companies: [{ id: "EN-NVIDIA", name: "NVIDIA", type: "公司/机构" }],
+  }));
+  assert.equal(cards.length, 2);
+  assert.deepEqual(cards.map((card) => card.company.name).sort(), ["Gradium", "Upscale AI"]);
+  assert.equal(new Set(cards.map((card) => card.company.application_entity_id)).size, 2);
+  assert.ok(cards.every((card) => card.company.entity_id === "EN-NVIDIA"));
+  assert.ok(cards.every((card) => card.company.canonical_entity_consistent === false));
+  assert.ok(cards.every((card) => card.historical_rounds.length === 1));
+  assert.deepEqual(
+    cards.map((card) => card.funding_history.map((item) => item.event_id)),
+    [[gradium.triggered_by_event_id], ["EV-UPSCALE"]],
+  );
+});
+
+test("重复披露冲突时累计融资保留同币种较完整的最高来源披露", () => {
+  const complete = validCard();
+  complete.financing.total_raised = "$800M";
+  complete.published_at = "2026-07-01T00:00:00Z";
+  const newer = structuredClone(complete);
+  newer.triggered_by_event_id = "EV-NEWER";
+  newer.financing.total_raised = "$700M";
+  newer.published_at = "2026-08-01T00:00:00Z";
+  const [card] = enrichFundingHistory(aggregateFundingRoundCards([complete, newer]));
+  assert.equal(card.financing.cumulative_amount.normalized.value, 800000000);
+  assert.equal(card.financing.cumulative_amount.original, "$800M");
+});
+
 test("同一公司与规范轮次聚合为一张卡并保留全部事件和研究信息", () => {
   const older = validCard();
   older.triggered_by_event_id = "EV-OLD";
@@ -1409,7 +1631,7 @@ test("前台构建只发布通过门禁的卡片并生成双向链接", () => {
     const data = buildFundingInsightsFrontstage(tempRoot);
     const rebuilt = buildFundingInsightsFrontstage(tempRoot);
     assert.equal(data.cards.length, 1);
-    assert.equal(data.meta.site_version, "SITE-V4.4.1-china-market-scope");
+    assert.equal(data.meta.site_version, "SITE-V4.5.0-investment-institution-library");
     assert.equal(data.meta.generated_at, "2026-07-26T09:00:00.000Z");
     assert.equal(rebuilt.meta.generated_at, data.meta.generated_at);
     assert.equal(data.cards[0].financing.investors[0].name, "Northstar Ventures");

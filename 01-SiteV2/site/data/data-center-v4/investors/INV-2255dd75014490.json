@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-2255dd75014490",
+    "name": "Thomvest Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-08-06",
+    "latest_disclosed_at": "2026-08-06",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_c"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-a7e079ed603b3436",
+        "canonical_entity_id": "",
+        "name": "Lumilens"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-fff6c327d3b0a07b",
+        "funding_insight_id": "FI-670a788060b0019e",
+        "event_ids": [
+          "EV-34bc7a4ef57789b8"
+        ],
+        "company_entity_id": "EN-a7e079ed603b3436",
+        "company_canonical_entity_id": "",
+        "company_name": "Lumilens",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "$700 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7 亿美元"
+        },
+        "announced_at": "2026-08-06",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1661d3e646fd132d",
+            "source_url": "https://www.financialcontent.com/article/bizwire-2026-8-6-lumilens-emerges-from-stealth-with-more-than-900-million-in-funding-to-break-ais-connectivity-bottlenecks-in-the-data-center",
+            "source_title": "Lumilens 携超9亿美元融资走出隐身模式，破解数据中心AI连接瓶颈",
+            "source_content_hash": "0056778d6a120938",
+            "quote": "The Lumilens Series C funding round includes participation from a wide range of top-tier investors: Addition, Aiconic, Alkeon, Atreides Capital, Bain Capital Ventures, EDBI (arm of SG Growth Capital, the investment platform of EDB and Enterprise Singapore), Harbourvest, J.P. Morgan Private Capital, Lingotto, Mayfield, Meritech, MVP Ventures, Peak XV, Qualcomm Ventures, Redpoint Ventures, Seifdune, Seligman Ventures, Spark Capital and Thomvest Ventures.",
+            "quote_hash": "5c6dc8d8f04b41d8809db0a2dff73dab098ead2ec9aa2a5525d286176c5326f8"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1661d3e646fd132d",
+        "source_url": "https://www.financialcontent.com/article/bizwire-2026-8-6-lumilens-emerges-from-stealth-with-more-than-900-million-in-funding-to-break-ais-connectivity-bottlenecks-in-the-data-center",
+        "source_title": "Lumilens 携超9亿美元融资走出隐身模式，破解数据中心AI连接瓶颈",
+        "source_content_hash": "0056778d6a120938",
+        "quote": "The Lumilens Series C funding round includes participation from a wide range of top-tier investors: Addition, Aiconic, Alkeon, Atreides Capital, Bain Capital Ventures, EDBI (arm of SG Growth Capital, the investment platform of EDB and Enterprise Singapore), Harbourvest, J.P. Morgan Private Capital, Lingotto, Mayfield, Meritech, MVP Ventures, Peak XV, Qualcomm Ventures, Redpoint Ventures, Seifdune, Seligman Ventures, Spark Capital and Thomvest Ventures.",
+        "quote_hash": "5c6dc8d8f04b41d8809db0a2dff73dab098ead2ec9aa2a5525d286176c5326f8"
+      }
+    ]
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-b34ef39f4df158",
+    "name": "DST Global Partners",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2023-06-27",
+    "latest_disclosed_at": "2026-07-09",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "lead": 2
+    },
+    "round_codes": [
+      "seed",
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-ee00b93bf0631b3e",
+        "canonical_entity_id": "",
+        "name": "Monogram AI, Inc."
+      },
+      {
+        "entity_id": "EN-7209ec6f68ac0bcd",
+        "canonical_entity_id": "",
+        "name": "Reka"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-0621d06ae2ea9d9f",
+        "funding_insight_id": "FI-3bbba5a15bb40a85",
+        "event_ids": [
+          "EV-e41fc65eb014893f"
+        ],
+        "company_entity_id": "FICO-gradium",
+        "company_canonical_entity_id": "",
+        "company_name": "Gradium",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$100 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1 亿美元"
+        },
+        "announced_at": "2026-07-09",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮参投（2025年12月首次披露）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-9af7e6a4d7b3d5e7",
+            "source_url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia",
+            "source_title": "巴黎AI语音初创Gradium获1亿美元种子轮融资，Nvidia参投",
+            "source_content_hash": "84b42b7082dca9a3",
+            "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
+            "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-deee44b37bd9b311",
+        "funding_insight_id": "FI-12131c1300a2d205",
+        "event_ids": [
+          "EV-fab81bddb815267b"
+        ],
+        "company_entity_id": "EN-ee00b93bf0631b3e",
+        "company_canonical_entity_id": "",
+        "company_name": "Monogram AI, Inc.",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$40M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-06-30",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-907e4297862ddd8c",
+            "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
+            "source_title": "Monogram 获 4000 万美元种子轮融资",
+            "source_content_hash": "3a584a627e1535ff",
+            "quote": "Lead Investor: DST Global Partners, Lux Capital",
+            "quote_hash": "053aeeea12d3bda7368d7295a461e8f83de4eaec6cd15826b6e8166587ea3bb2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c7868d6810a62fa9",
+        "funding_insight_id": "FI-2959f95168aa0a55",
+        "event_ids": [
+          "EV-6e79974732a5db6b"
+        ],
+        "company_entity_id": "EN-7209ec6f68ac0bcd",
+        "company_canonical_entity_id": "",
+        "company_name": "Reka",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露",
+        "amount_original": "$58 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 58000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5800 万美元"
+        },
+        "announced_at": "2023-06-27",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-4f876f1107004ec7",
+            "source_url": "https://techcrunch.com/2023/06/27/reka-emerges-from-stealth-to-build-custom-ai-models-for-the-enterprise/",
+            "source_title": "Reka 走出隐身模式，为企业构建定制 AI 模型",
+            "source_content_hash": "b0bfe562440f841d",
+            "quote": "DST Global Partners and Radical Ventures led the tranche",
+            "quote_hash": "67122bc29299535c524ac600e2d6f781d2c4206148c3058e7f3a209c5466aaaa"
+          },
+          {
+            "source_id": "FISRC-3857ec64255b238a",
+            "source_url": "https://www.gaebler.com/VC-Funding-27D9E8DE-B2F9-4ED4-BADA-2D757FCF7E65-Reka-06-28-2023",
+            "source_title": "Reka 6/28/2023 Capital Raise - Gaebler.com Venture Capital Database",
+            "source_content_hash": "b41fbd4490777f66",
+            "quote": "DST Global (Lead Investor)",
+            "quote_hash": "93b8d89f812b9ecbd838bcbe83ead17fc25274e6e8b4aa60587e2d8c0f780b28"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-9af7e6a4d7b3d5e7",
+        "source_url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia",
+        "source_title": "巴黎AI语音初创Gradium获1亿美元种子轮融资，Nvidia参投",
+        "source_content_hash": "84b42b7082dca9a3",
+        "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
+        "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
+      },
+      {
+        "source_id": "FISRC-907e4297862ddd8c",
+        "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
+        "source_title": "Monogram 获 4000 万美元种子轮融资",
+        "source_content_hash": "3a584a627e1535ff",
+        "quote": "Lead Investor: DST Global Partners, Lux Capital",
+        "quote_hash": "053aeeea12d3bda7368d7295a461e8f83de4eaec6cd15826b6e8166587ea3bb2"
+      },
+      {
+        "source_id": "FISRC-4f876f1107004ec7",
+        "source_url": "https://techcrunch.com/2023/06/27/reka-emerges-from-stealth-to-build-custom-ai-models-for-the-enterprise/",
+        "source_title": "Reka 走出隐身模式，为企业构建定制 AI 模型",
+        "source_content_hash": "b0bfe562440f841d",
+        "quote": "DST Global Partners and Radical Ventures led the tranche",
+        "quote_hash": "67122bc29299535c524ac600e2d6f781d2c4206148c3058e7f3a209c5466aaaa"
+      },
+      {
+        "source_id": "FISRC-3857ec64255b238a",
+        "source_url": "https://www.gaebler.com/VC-Funding-27D9E8DE-B2F9-4ED4-BADA-2D757FCF7E65-Reka-06-28-2023",
+        "source_title": "Reka 6/28/2023 Capital Raise - Gaebler.com Venture Capital Database",
+        "source_content_hash": "b41fbd4490777f66",
+        "quote": "DST Global (Lead Investor)",
+        "quote_hash": "93b8d89f812b9ecbd838bcbe83ead17fc25274e6e8b4aa60587e2d8c0f780b28"
+      }
+    ]
+  }
+}

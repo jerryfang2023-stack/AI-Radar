@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-d6ad887a8ef26d",
+    "name": "RRE Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-01-14",
+    "latest_disclosed_at": "2026-01-14",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-b4835ed157e04983",
+        "canonical_entity_id": "",
+        "name": "VoiceRun"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-4a457dad8027ece4",
+        "funding_insight_id": "FI-13be33ca4d9b0d08",
+        "event_ids": [
+          "EV-044b917005a8f611"
+        ],
+        "company_entity_id": "EN-b4835ed157e04983",
+        "company_canonical_entity_id": "",
+        "company_name": "VoiceRun",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$5.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "550 万美元"
+        },
+        "announced_at": "2026-01-14",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4b3f6b59387f35f7",
+            "source_url": "https://siliconangle.com/2026/01/14/voicerun-gets-5-5m-seed-funding-give-enterprises-control-voice-ai-agents/",
+            "source_title": "VoiceRun 获 550 万美元种子轮融资，助力企业增强对语音 AI 智能体的控制",
+            "source_content_hash": "3250994a6860b476",
+            "quote": "and saw participation from RRE Ventures and Link Ventures",
+            "quote_hash": "048f43627c9f8b05bbeabdec070ecd51344aedf9a169825c1f5790b694d13920"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-4b3f6b59387f35f7",
+        "source_url": "https://siliconangle.com/2026/01/14/voicerun-gets-5-5m-seed-funding-give-enterprises-control-voice-ai-agents/",
+        "source_title": "VoiceRun 获 550 万美元种子轮融资，助力企业增强对语音 AI 智能体的控制",
+        "source_content_hash": "3250994a6860b476",
+        "quote": "and saw participation from RRE Ventures and Link Ventures",
+        "quote_hash": "048f43627c9f8b05bbeabdec070ecd51344aedf9a169825c1f5790b694d13920"
+      }
+    ]
+  }
+}

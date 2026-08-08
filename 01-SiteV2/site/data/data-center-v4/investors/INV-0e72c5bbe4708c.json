@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-0e72c5bbe4708c",
+    "name": "Sean Williams",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-03-17",
+    "latest_disclosed_at": "2026-03-17",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "pre_seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-835fb9db44937917",
+        "canonical_entity_id": "",
+        "name": "First Concepts"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-4d2cdca19a35d95d",
+        "funding_insight_id": "FI-4bc46dcf530c9077",
+        "event_ids": [
+          "EV-affa49966121461c"
+        ],
+        "company_entity_id": "EN-835fb9db44937917",
+        "company_canonical_entity_id": "",
+        "company_name": "First Concepts",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "pre-seed",
+        "amount_original": "$1,000,000",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "100 万美元"
+        },
+        "announced_at": "2026-03-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投（天使投资人）",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e713775ebfd9779c",
+            "source_url": "https://tech.eu/2026/03/17/first-concepts-raises-1m-to-develop-ai-native-os-for-creative-work/",
+            "source_title": "First Concepts 获100万美元融资，开发面向创意工作的AI原生操作系统 - Tech.eu",
+            "source_content_hash": "290464341ec7404f",
+            "quote": "Sean Williams and Sam Winward (partners at UNKNOWN)",
+            "quote_hash": "012077d6efa34da0a7efa6923aaa855b51cd73dd2b3999408d63f96ba77e7f11"
+          },
+          {
+            "source_id": "FISRC-b16e4b93b4a67c8d",
+            "source_url": "https://www.uktechnews.info/2026/03/17/first-concepts-secures-750k-pre-seed-investment-led-by-by-araya-ventures/",
+            "source_title": "First Concepts secures 750k Pre-Seed investment led by ...",
+            "source_content_hash": "23290af9e3485959",
+            "quote": "Sean Williams and Sam Winward, Partners at UNKNOWN",
+            "quote_hash": "104f20631469ae9aa046d19222f4924cd18d5d5a129e54f7100abcedf1efde30"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-e713775ebfd9779c",
+        "source_url": "https://tech.eu/2026/03/17/first-concepts-raises-1m-to-develop-ai-native-os-for-creative-work/",
+        "source_title": "First Concepts 获100万美元融资，开发面向创意工作的AI原生操作系统 - Tech.eu",
+        "source_content_hash": "290464341ec7404f",
+        "quote": "Sean Williams and Sam Winward (partners at UNKNOWN)",
+        "quote_hash": "012077d6efa34da0a7efa6923aaa855b51cd73dd2b3999408d63f96ba77e7f11"
+      },
+      {
+        "source_id": "FISRC-b16e4b93b4a67c8d",
+        "source_url": "https://www.uktechnews.info/2026/03/17/first-concepts-secures-750k-pre-seed-investment-led-by-by-araya-ventures/",
+        "source_title": "First Concepts secures 750k Pre-Seed investment led by ...",
+        "source_content_hash": "23290af9e3485959",
+        "quote": "Sean Williams and Sam Winward, Partners at UNKNOWN",
+        "quote_hash": "104f20631469ae9aa046d19222f4924cd18d5d5a129e54f7100abcedf1efde30"
+      }
+    ]
+  }
+}

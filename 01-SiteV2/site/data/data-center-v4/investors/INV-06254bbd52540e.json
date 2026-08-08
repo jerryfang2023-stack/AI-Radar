@@ -1,0 +1,196 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-06254bbd52540e",
+    "name": "Scott Wu",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-30",
+    "latest_disclosed_at": "2026-07-16",
+    "role_counts": {
+      "historical_or_ambiguous": 2,
+      "other_current_round": 1
+    },
+    "round_codes": [
+      "multi_round"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "FICO-etched",
+        "canonical_entity_id": "",
+        "name": "Etched"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-a1d952b33f8af0d1",
+        "funding_insight_id": "FI-2ebe52bd95cf8644",
+        "event_ids": [
+          "EV-1da2e46e39a57d33"
+        ],
+        "company_entity_id": "EN-cfd90af8403941bf",
+        "company_canonical_entity_id": "",
+        "company_name": "Sable",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$45 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 45000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4500 万美元"
+        },
+        "announced_at": "2026-07-16",
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b95b1b353d05702f",
+            "source_url": "https://thenextweb.com/news/sable-aidan-ai-employee-sequoia-45-million",
+            "source_title": "Sable 从红杉资本融资 4500 万美元，打造替代人类运行产品演示的 AI 智能体",
+            "source_content_hash": "bc538fe3e503f8f8",
+            "quote": "Angel investors include HubSpot co-founders Brian Halligan and Dharmesh Shah, Valor’s Antonio Gracias, and Cognition CEO Scott Wu.",
+            "quote_hash": "670d8fb1c52a03d9d65f8070b6bd858552add89f44cebf65e0ce041b0498d224"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-1dbc26a500b82c80",
+        "funding_insight_id": "FI-d24e79349c1e9713",
+        "event_ids": [
+          "EV-040fc355bc12a750",
+          "EV-80e54c9a390da293"
+        ],
+        "company_entity_id": "FICO-etched",
+        "company_canonical_entity_id": "",
+        "company_name": "Etched",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮（含2025年12月由Stripes领投的5亿美元轮次及Jane Street领投的此前未披露轮次）",
+        "amount_original": "$800 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 800000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8 亿美元"
+        },
+        "announced_at": "2026-06-30",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "天使投资人",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-46feb61e20bda927",
+            "source_url": "https://theoutpost.ai/news-story/etched-raises-800-m-from-jane-street-and-tsmc-linked-fund-with-1-b-in-sales-contracts-28056/",
+            "source_title": "Etched Raises $800M, Hits $5B Valuation for AI Chips",
+            "source_content_hash": "ac17ee5ecc4171d0",
+            "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu.",
+            "quote_hash": "d2ce1c3e7bd92513c4e27af8a66e26707bb616f57c658da83f0153ffb0fc3afa"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-fca3cc5a8b7e71a2",
+        "funding_insight_id": "FI-5153381171755c70",
+        "event_ids": [
+          "EV-ad75efcb12a07793"
+        ],
+        "company_entity_id": "FICO-etched",
+        "company_canonical_entity_id": "",
+        "company_name": "Etched",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$500 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-06-30",
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b750a2ea9e7c7b76",
+            "source_url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip",
+            "source_title": "AI芯片初创公司Etched获10亿美元订单，台积电已量产其芯片",
+            "source_content_hash": "ae0a2fdbd54bc340",
+            "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu.",
+            "quote_hash": "d2ce1c3e7bd92513c4e27af8a66e26707bb616f57c658da83f0153ffb0fc3afa"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-b95b1b353d05702f",
+        "source_url": "https://thenextweb.com/news/sable-aidan-ai-employee-sequoia-45-million",
+        "source_title": "Sable 从红杉资本融资 4500 万美元，打造替代人类运行产品演示的 AI 智能体",
+        "source_content_hash": "bc538fe3e503f8f8",
+        "quote": "Angel investors include HubSpot co-founders Brian Halligan and Dharmesh Shah, Valor’s Antonio Gracias, and Cognition CEO Scott Wu.",
+        "quote_hash": "670d8fb1c52a03d9d65f8070b6bd858552add89f44cebf65e0ce041b0498d224"
+      },
+      {
+        "source_id": "FISRC-46feb61e20bda927",
+        "source_url": "https://theoutpost.ai/news-story/etched-raises-800-m-from-jane-street-and-tsmc-linked-fund-with-1-b-in-sales-contracts-28056/",
+        "source_title": "Etched Raises $800M, Hits $5B Valuation for AI Chips",
+        "source_content_hash": "ac17ee5ecc4171d0",
+        "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu.",
+        "quote_hash": "d2ce1c3e7bd92513c4e27af8a66e26707bb616f57c658da83f0153ffb0fc3afa"
+      },
+      {
+        "source_id": "FISRC-b750a2ea9e7c7b76",
+        "source_url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip",
+        "source_title": "AI芯片初创公司Etched获10亿美元订单，台积电已量产其芯片",
+        "source_content_hash": "ae0a2fdbd54bc340",
+        "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu.",
+        "quote_hash": "d2ce1c3e7bd92513c4e27af8a66e26707bb616f57c658da83f0153ffb0fc3afa"
+      }
+    ]
+  }
+}

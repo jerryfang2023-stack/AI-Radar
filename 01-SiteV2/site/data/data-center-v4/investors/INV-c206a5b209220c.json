@@ -1,0 +1,195 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-c206a5b209220c",
+    "name": "Eurazeo",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2025-09-09",
+    "latest_disclosed_at": "2026-07-09",
+    "role_counts": {
+      "historical_or_ambiguous": 2,
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-a83a3af1a4866fd5",
+        "canonical_entity_id": "",
+        "name": "Advanced Machine Intelligence Labs (AMI Labs)"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-78cc83652fd1d628",
+        "funding_insight_id": "FI-3bbba5a15bb40a85",
+        "event_ids": [
+          "EV-e41fc65eb014893f"
+        ],
+        "company_entity_id": "FICO-gradium",
+        "company_canonical_entity_id": "",
+        "company_name": "Gradium",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$100 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1 亿美元"
+        },
+        "announced_at": "2026-07-09",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮参投（2025年12月首次披露）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-9af7e6a4d7b3d5e7",
+            "source_url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia",
+            "source_title": "巴黎AI语音初创Gradium获1亿美元种子轮融资，Nvidia参投",
+            "source_content_hash": "84b42b7082dca9a3",
+            "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
+            "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-62a5e28415dedd9d",
+        "funding_insight_id": "FI-9c3c02658ff94312",
+        "event_ids": [
+          "EV-cded77b1de2db61a"
+        ],
+        "company_entity_id": "EN-a83a3af1a4866fd5",
+        "company_canonical_entity_id": "",
+        "company_name": "Advanced Machine Intelligence Labs (AMI Labs)",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "10.3亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1030000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10.3 亿美元"
+        },
+        "announced_at": "2026-03-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f7589987753ab2c6",
+            "source_url": "https://www.linkedin.com/posts/cathay-innovation_ami-labs-x-cathay-innovation-activity-7437049850921152513-l6Ou",
+            "source_title": "AMI Labs Secures €890M Seed Round Led by [Your Company] | Cathay Innovation posted on the topic | LinkedIn",
+            "source_content_hash": "8a90e9cfb18401ae",
+            "quote": "Eurazeo",
+            "quote_hash": "78d4bb3c478998ce2a7f04eff26c422a2c6ae65919fdddf2c18a2d5fca1aeb4f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-07f1986e9e3b5021",
+        "funding_insight_id": "FI-1cf34218733257fd",
+        "event_ids": [
+          "EV-85506f9f86779a6d"
+        ],
+        "company_entity_id": "EN-c04bd5ebd10ab696",
+        "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "company_name": "Mistral AI",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "约17亿欧元（约20亿美元）",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 1700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 17 亿欧元"
+        },
+        "announced_at": "2025-09-09",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ff92324bbd437a73",
+            "source_url": "https://notice.co/c/mistral-ai",
+            "source_title": "Mistral AI Stock $11.63 | How to Buy, Valuation, Stock Price, IPO | Notice.co",
+            "source_content_hash": "24552deeea13b585",
+            "quote": "Eurazeo Dataiku, Gradium, Doctolib, Back Market, ContentSquare, wefox, MessageBird",
+            "quote_hash": "52f27c96b3e8463b4a38c08d676e11b1d36ad34ed6214cbb6383294c5c2954f4"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-9af7e6a4d7b3d5e7",
+        "source_url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia",
+        "source_title": "巴黎AI语音初创Gradium获1亿美元种子轮融资，Nvidia参投",
+        "source_content_hash": "84b42b7082dca9a3",
+        "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
+        "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
+      },
+      {
+        "source_id": "FISRC-f7589987753ab2c6",
+        "source_url": "https://www.linkedin.com/posts/cathay-innovation_ami-labs-x-cathay-innovation-activity-7437049850921152513-l6Ou",
+        "source_title": "AMI Labs Secures €890M Seed Round Led by [Your Company] | Cathay Innovation posted on the topic | LinkedIn",
+        "source_content_hash": "8a90e9cfb18401ae",
+        "quote": "Eurazeo",
+        "quote_hash": "78d4bb3c478998ce2a7f04eff26c422a2c6ae65919fdddf2c18a2d5fca1aeb4f"
+      },
+      {
+        "source_id": "FISRC-ff92324bbd437a73",
+        "source_url": "https://notice.co/c/mistral-ai",
+        "source_title": "Mistral AI Stock $11.63 | How to Buy, Valuation, Stock Price, IPO | Notice.co",
+        "source_content_hash": "24552deeea13b585",
+        "quote": "Eurazeo Dataiku, Gradium, Doctolib, Back Market, ContentSquare, wefox, MessageBird",
+        "quote_hash": "52f27c96b3e8463b4a38c08d676e11b1d36ad34ed6214cbb6383294c5c2954f4"
+      }
+    ]
+  }
+}

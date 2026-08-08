@@ -1,0 +1,667 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-1528b125301283",
+    "name": "Lightspeed Venture Partners",
+    "aliases": [
+      "Lightspeed"
+    ],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 9,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 7,
+    "first_disclosed_at": "2025-03-03",
+    "latest_disclosed_at": "2026-07-28",
+    "role_counts": {
+      "historical_or_ambiguous": 3,
+      "lead": 6,
+      "participant": 3
+    },
+    "round_codes": [
+      "seed",
+      "series_a",
+      "series_c",
+      "series_d",
+      "series_e",
+      "series_f"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "name": "Anthropic PBC"
+      },
+      {
+        "entity_id": "EN-f3d05a0f6248941d",
+        "canonical_entity_id": "",
+        "name": "Assort Health"
+      },
+      {
+        "entity_id": "EN-0caee180da9d0f3f",
+        "canonical_entity_id": "",
+        "name": "Fireworks AI Inc."
+      },
+      {
+        "entity_id": "EN-2be663431f007250",
+        "canonical_entity_id": "",
+        "name": "Harmony"
+      },
+      {
+        "entity_id": "EN-a972bc1b3220493e",
+        "canonical_entity_id": "",
+        "name": "Notch"
+      },
+      {
+        "entity_id": "FICO-sycamore",
+        "canonical_entity_id": "",
+        "name": "Sycamore"
+      },
+      {
+        "entity_id": "EN-e4540a7c8404b1be",
+        "canonical_entity_id": "",
+        "name": "Temporal Technologies"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-5896289a3ec5bc60",
+        "funding_insight_id": "FI-b8d28ad363a47e7a",
+        "event_ids": [
+          "EV-5f3ccb941a2fe5d7"
+        ],
+        "company_entity_id": "EN-2be663431f007250",
+        "company_canonical_entity_id": "",
+        "company_name": "Harmony",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$34 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 34000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3400 万美元"
+        },
+        "announced_at": "2026-07-28",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-fe66d902ece1db68",
+            "source_url": "https://www.businessinsider.com/harmony-pitch-deck-ai-startup-34-million-seed-founders-cisco-2026-7",
+            "source_title": "AI 初创公司 Harmony 在创始人离开思科后获得 3400 万美元种子轮融资",
+            "source_content_hash": "dd2e48aec8384eca",
+            "quote": "Lightspeed led Harmony's $34 million round.",
+            "quote_hash": "f671cb71f4ed6fe6aaab2126db1b194b8202cfc0638652175b79403a01fa681f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-7750a8677b8a8516",
+        "funding_insight_id": "FI-3b1ea359415f476d",
+        "event_ids": [
+          "EV-4eaf3aabecae6016"
+        ],
+        "company_entity_id": "EN-0caee180da9d0f3f",
+        "company_canonical_entity_id": "",
+        "company_name": "Fireworks AI Inc.",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$1.505 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1505000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15.05 亿美元"
+        },
+        "announced_at": "2026-07-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投，既有投资方（Series C领投）",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-dc600442a39828d4",
+            "source_url": "https://www.aitechdialogue.com/article/fireworks-ai-1-5b-funding-series-d-custom-enterprise-ai",
+            "source_title": "Fireworks AI Funding: Raises $1.5B at… — AI Tech Dialogue",
+            "source_content_hash": "88980901b6103a22",
+            "quote": "existing backers like Nvidia, Lightspeed Venture Partners, and Bessemer Venture Partners also chipped in.",
+            "quote_hash": "433795f53b6056423c050ab452165227ab4efeb1062489173a4a6a6bb0cf4ec9"
+          },
+          {
+            "source_id": "FISRC-243f05d139793fc0",
+            "source_url": "https://www.linkedin.com/posts/lightspeed-venture-partners_we-are-excited-to-continue-backing-fireworks-activity-7483603915733815296-r8_k",
+            "source_title": "We are excited to continue backing Fireworks AI for their $1.5B Series D raise, bringing the company’s total valuation to $17.5B. | Lightspeed",
+            "source_content_hash": "3bce6125918d1d23",
+            "quote": "Since our first investment in their 2025 Series C, Fireworks has reached $1B in annual revenue",
+            "quote_hash": "955909c0ef6c69c5516e1ed2f2a0ebcb8a6969e618b05f98846956e20c3433ff"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-912b4db83784b4d7",
+        "funding_insight_id": "FI-7ba66ce9eb0ab250",
+        "event_ids": [
+          "EV-f487788f3d44f288"
+        ],
+        "company_entity_id": "EN-f3d05a0f6248941d",
+        "company_canonical_entity_id": "",
+        "company_name": "Assort Health",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "$120 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 120000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.2 亿美元"
+        },
+        "announced_at": "2026-06-24",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-08afa07ec89dda4d",
+            "source_url": "https://www.assorthealth.com/blog/assort-health-raises-120-million-series-c-to-scale-largest-deployment-of-ai-agents-for-the-patient-journey",
+            "source_title": "Assort Health 完成 1.2 亿美元 C 轮融资，扩大患者旅程中最大规模 AI 智能体部署",
+            "source_content_hash": "7c2003856d2cd4b5",
+            "quote": "investors participating in this latest round include Lightspeed Venture Partners",
+            "quote_hash": "234be3b27216b9737cfb6895021c326f0eb43367dfe5481b92da20a7600cda63"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-dc8931b632da7608",
+        "funding_insight_id": "FI-9854c05d7208a585",
+        "event_ids": [
+          "EV-e3382d1c1d7db751"
+        ],
+        "company_entity_id": "EN-ee1e31ffef7dbe64",
+        "company_canonical_entity_id": "EN-ee1e31ffef7dbe64",
+        "company_name": "Sarvam",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$234 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 234000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.34 亿美元"
+        },
+        "announced_at": "2026-06-15",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-53dc2175b7e46ad0",
+            "source_url": "https://economictimes.indiatimes.com/tech/funding/sarvam-raises-234-million-led-by-hcltech-at-1-5-billion-valuation/articleshow/131745905.cms",
+            "source_title": "Sarvam raises $234 million led by HCLTech at $1.5 billion valuation - The Economic Times",
+            "source_content_hash": "b5373ac2789f188b",
+            "quote": "Sarvam was last valued at $110 million in 2023, when it raised capital from Peak XV, Khosla Ventures and Lightspeed.",
+            "quote_hash": "a24d793e43b2086c14a8890d1ca24afe21b55c55b1ff2f1fa9e78bde2b4bd1ef"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3e4228802e29c8ec",
+        "funding_insight_id": "FI-91df568a315de93f",
+        "event_ids": [
+          "EV-b695dedc9acda5dc",
+          "EV-7add33b4c74dbf1a",
+          "EV-c5643983538c6513"
+        ],
+        "company_entity_id": "FICO-sycamore",
+        "company_canonical_entity_id": "",
+        "company_name": "Sycamore",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$65 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6500 万美元"
+        },
+        "announced_at": "2026-03-30",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-d354011359557f2f",
+            "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
+            "source_title": "Sycamore融资6500万美元，为企业打造可信代理操作系统",
+            "source_content_hash": "7c851906b2d8f45f",
+            "quote": "The round was led by Coatue and Lightspeed Venture Partners",
+            "quote_hash": "a82aa83a04c0ba6ee32dd4282665ad9712ef094f993092c5a716868ae9f13db4"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a2a39f57fbb67170",
+        "funding_insight_id": "FI-91df568a315de93f",
+        "event_ids": [
+          "EV-b695dedc9acda5dc",
+          "EV-7add33b4c74dbf1a",
+          "EV-c5643983538c6513"
+        ],
+        "company_entity_id": "FICO-sycamore",
+        "company_canonical_entity_id": "",
+        "company_name": "Sycamore",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$65 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6500 万美元"
+        },
+        "announced_at": "2026-03-30",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-afa7f3db79250046",
+            "source_url": "https://techcrunch.com/2026/03/30/former-coatue-partner-raises-huge-65m-seed-for-enterprise-ai-agent-startup/",
+            "source_title": "前Coatue合伙人筹集6500万美元种子轮，用于企业AI智能体初创公司",
+            "source_content_hash": "30d66410e025bf44",
+            "quote": "a $65 million seed led by Coatue and Lightspeed",
+            "quote_hash": "7eb0b969a7de389ce7f7de17ec3e8461d68fb6ed807daf11961f22cd5412053f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d324ec930672a8b4",
+        "funding_insight_id": "FI-553ae61d72353fdd",
+        "event_ids": [
+          "EV-c0d19b8641a7a36c"
+        ],
+        "company_entity_id": "EN-a972bc1b3220493e",
+        "company_canonical_entity_id": "",
+        "company_name": "Notch",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$30 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-03-25",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-5f2474a76a35b205",
+            "source_url": "https://www.notch.cx/post/notch-30-million-series-a",
+            "source_title": "Notch 获 3000 万美元融资，打造受监管行业的人工智能操作系统",
+            "source_content_hash": "57df1deff02351ac",
+            "quote": "with participation from Lightspeed Venture Partners, Jibe Ventures, Illuminate Financial, and Phoenix Insurance",
+            "quote_hash": "d4e45d0fbd15b449663551d23e6d1eab47553f2cad61df8827083af645fb85a6"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-866df7c40e57127c",
+        "funding_insight_id": "FI-0aa1eca49e73b783",
+        "event_ids": [
+          "EV-3b40ec144e5db22c"
+        ],
+        "company_entity_id": "EN-e4540a7c8404b1be",
+        "company_canonical_entity_id": "",
+        "company_name": "Temporal Technologies",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$300 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿美元"
+        },
+        "announced_at": "2026-02-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1f69885afd5fc439",
+            "source_url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies",
+            "source_title": "Temporal 完成 D 轮融资",
+            "source_content_hash": "74cb86598e6c9021",
+            "quote": "joined by Lightspeed Venture Partners and Sapphire Ventures",
+            "quote_hash": "f8895a4709c47713dd1fc7e34361c9667b799054daba0bdb9f754386e07608f7"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c33e9d6bb863770d",
+        "funding_insight_id": "FI-1cf34218733257fd",
+        "event_ids": [
+          "EV-85506f9f86779a6d"
+        ],
+        "company_entity_id": "EN-c04bd5ebd10ab696",
+        "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "company_name": "Mistral AI",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "约17亿欧元（约20亿美元）",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 1700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 17 亿欧元"
+        },
+        "announced_at": "2025-09-09",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ff92324bbd437a73",
+            "source_url": "https://notice.co/c/mistral-ai",
+            "source_title": "Mistral AI Stock $11.63 | How to Buy, Valuation, Stock Price, IPO | Notice.co",
+            "source_content_hash": "24552deeea13b585",
+            "quote": "Mistral AI has raised total funding of $3 B across 4 rounds from notable investors including Andreessen Horowitz, Lightspeed, General Catalyst and ASML.",
+            "quote_hash": "b6a45ae2d7cca460801b909d2b1fa8b986bb66c33f798b186b5e86eaca7d6912"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c93fc682641c345b",
+        "funding_insight_id": "FI-0312b291d6672487",
+        "event_ids": [
+          "EV-201b25d4f3cf696a"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$13 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 13000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "130 亿美元"
+        },
+        "announced_at": "2025-09-02",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5289e6345684ca4",
+            "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
+            "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
+            "source_content_hash": "e918313869a22b8d",
+            "quote": "Anthropic announced a $13 billion Series F round on September 2 that valued the company at $183 billion. The round was led by Iconiq, Fidelity, and Lightspeed.",
+            "quote_hash": "dce639bc69cadea033e718af0a0afa1978ea9dbfacc2ce9e42b084fc7970c741"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c792f022f8ffea79",
+        "funding_insight_id": "FI-0312b291d6672487",
+        "event_ids": [
+          "EV-201b25d4f3cf696a"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$13 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 13000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "130 亿美元"
+        },
+        "announced_at": "2025-09-02",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Series E轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5289e6345684ca4",
+            "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
+            "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
+            "source_content_hash": "e918313869a22b8d",
+            "quote": "AI research and large language model company Anthropic raised $3.5 billion in a Series E round that valued the startup at $61.5 billion. The round was announced on March 3 and was led by Lightspeed with participation from Salesforce Ventures, Menlo Ventures, and General Catalyst, among others.",
+            "quote_hash": "9af419f67fa751f89af053a8fa6659d8e395db11462042d9a02e93827e9fa0e7"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-2784ac053c9c9cad",
+        "funding_insight_id": "FI-6601d010adc14dd0",
+        "event_ids": [
+          "EV-78a11d309c3d4e97"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic PBC",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "Series E",
+        "amount_original": "$3.5B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "35 亿美元"
+        },
+        "announced_at": "2025-03-03",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-e3ed6c4a27cf5860",
+            "source_url": "https://lsvp.com/stories/lightspeed-announces-lead-investment-in-anthropics-3-5b-series-e-financing/",
+            "source_title": "Lightspeed Announces Lead Investment in Anthropic’s $3.5B Series E Financing - Lightspeed Venture Partners",
+            "source_content_hash": "ea5b244eff64d20a",
+            "quote": "Lightspeed is deepening its commitment to this vision, by leading Anthropic’s $3.5 Billion Series E as the largest investor in the round.",
+            "quote_hash": "c01981bb233d77cee785e49b957dce1c7b7b34470f275d847b25dac55c993561"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-fe66d902ece1db68",
+        "source_url": "https://www.businessinsider.com/harmony-pitch-deck-ai-startup-34-million-seed-founders-cisco-2026-7",
+        "source_title": "AI 初创公司 Harmony 在创始人离开思科后获得 3400 万美元种子轮融资",
+        "source_content_hash": "dd2e48aec8384eca",
+        "quote": "Lightspeed led Harmony's $34 million round.",
+        "quote_hash": "f671cb71f4ed6fe6aaab2126db1b194b8202cfc0638652175b79403a01fa681f"
+      },
+      {
+        "source_id": "FISRC-dc600442a39828d4",
+        "source_url": "https://www.aitechdialogue.com/article/fireworks-ai-1-5b-funding-series-d-custom-enterprise-ai",
+        "source_title": "Fireworks AI Funding: Raises $1.5B at… — AI Tech Dialogue",
+        "source_content_hash": "88980901b6103a22",
+        "quote": "existing backers like Nvidia, Lightspeed Venture Partners, and Bessemer Venture Partners also chipped in.",
+        "quote_hash": "433795f53b6056423c050ab452165227ab4efeb1062489173a4a6a6bb0cf4ec9"
+      },
+      {
+        "source_id": "FISRC-243f05d139793fc0",
+        "source_url": "https://www.linkedin.com/posts/lightspeed-venture-partners_we-are-excited-to-continue-backing-fireworks-activity-7483603915733815296-r8_k",
+        "source_title": "We are excited to continue backing Fireworks AI for their $1.5B Series D raise, bringing the company’s total valuation to $17.5B. | Lightspeed",
+        "source_content_hash": "3bce6125918d1d23",
+        "quote": "Since our first investment in their 2025 Series C, Fireworks has reached $1B in annual revenue",
+        "quote_hash": "955909c0ef6c69c5516e1ed2f2a0ebcb8a6969e618b05f98846956e20c3433ff"
+      },
+      {
+        "source_id": "FISRC-08afa07ec89dda4d",
+        "source_url": "https://www.assorthealth.com/blog/assort-health-raises-120-million-series-c-to-scale-largest-deployment-of-ai-agents-for-the-patient-journey",
+        "source_title": "Assort Health 完成 1.2 亿美元 C 轮融资，扩大患者旅程中最大规模 AI 智能体部署",
+        "source_content_hash": "7c2003856d2cd4b5",
+        "quote": "investors participating in this latest round include Lightspeed Venture Partners",
+        "quote_hash": "234be3b27216b9737cfb6895021c326f0eb43367dfe5481b92da20a7600cda63"
+      },
+      {
+        "source_id": "FISRC-53dc2175b7e46ad0",
+        "source_url": "https://economictimes.indiatimes.com/tech/funding/sarvam-raises-234-million-led-by-hcltech-at-1-5-billion-valuation/articleshow/131745905.cms",
+        "source_title": "Sarvam raises $234 million led by HCLTech at $1.5 billion valuation - The Economic Times",
+        "source_content_hash": "b5373ac2789f188b",
+        "quote": "Sarvam was last valued at $110 million in 2023, when it raised capital from Peak XV, Khosla Ventures and Lightspeed.",
+        "quote_hash": "a24d793e43b2086c14a8890d1ca24afe21b55c55b1ff2f1fa9e78bde2b4bd1ef"
+      },
+      {
+        "source_id": "FISRC-d354011359557f2f",
+        "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
+        "source_title": "Sycamore融资6500万美元，为企业打造可信代理操作系统",
+        "source_content_hash": "7c851906b2d8f45f",
+        "quote": "The round was led by Coatue and Lightspeed Venture Partners",
+        "quote_hash": "a82aa83a04c0ba6ee32dd4282665ad9712ef094f993092c5a716868ae9f13db4"
+      },
+      {
+        "source_id": "FISRC-afa7f3db79250046",
+        "source_url": "https://techcrunch.com/2026/03/30/former-coatue-partner-raises-huge-65m-seed-for-enterprise-ai-agent-startup/",
+        "source_title": "前Coatue合伙人筹集6500万美元种子轮，用于企业AI智能体初创公司",
+        "source_content_hash": "30d66410e025bf44",
+        "quote": "a $65 million seed led by Coatue and Lightspeed",
+        "quote_hash": "7eb0b969a7de389ce7f7de17ec3e8461d68fb6ed807daf11961f22cd5412053f"
+      },
+      {
+        "source_id": "FISRC-5f2474a76a35b205",
+        "source_url": "https://www.notch.cx/post/notch-30-million-series-a",
+        "source_title": "Notch 获 3000 万美元融资，打造受监管行业的人工智能操作系统",
+        "source_content_hash": "57df1deff02351ac",
+        "quote": "with participation from Lightspeed Venture Partners, Jibe Ventures, Illuminate Financial, and Phoenix Insurance",
+        "quote_hash": "d4e45d0fbd15b449663551d23e6d1eab47553f2cad61df8827083af645fb85a6"
+      },
+      {
+        "source_id": "FISRC-1f69885afd5fc439",
+        "source_url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies",
+        "source_title": "Temporal 完成 D 轮融资",
+        "source_content_hash": "74cb86598e6c9021",
+        "quote": "joined by Lightspeed Venture Partners and Sapphire Ventures",
+        "quote_hash": "f8895a4709c47713dd1fc7e34361c9667b799054daba0bdb9f754386e07608f7"
+      },
+      {
+        "source_id": "FISRC-ff92324bbd437a73",
+        "source_url": "https://notice.co/c/mistral-ai",
+        "source_title": "Mistral AI Stock $11.63 | How to Buy, Valuation, Stock Price, IPO | Notice.co",
+        "source_content_hash": "24552deeea13b585",
+        "quote": "Mistral AI has raised total funding of $3 B across 4 rounds from notable investors including Andreessen Horowitz, Lightspeed, General Catalyst and ASML.",
+        "quote_hash": "b6a45ae2d7cca460801b909d2b1fa8b986bb66c33f798b186b5e86eaca7d6912"
+      },
+      {
+        "source_id": "FISRC-c5289e6345684ca4",
+        "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
+        "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
+        "source_content_hash": "e918313869a22b8d",
+        "quote": "Anthropic announced a $13 billion Series F round on September 2 that valued the company at $183 billion. The round was led by Iconiq, Fidelity, and Lightspeed.",
+        "quote_hash": "dce639bc69cadea033e718af0a0afa1978ea9dbfacc2ce9e42b084fc7970c741"
+      },
+      {
+        "source_id": "FISRC-c5289e6345684ca4",
+        "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
+        "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
+        "source_content_hash": "e918313869a22b8d",
+        "quote": "AI research and large language model company Anthropic raised $3.5 billion in a Series E round that valued the startup at $61.5 billion. The round was announced on March 3 and was led by Lightspeed with participation from Salesforce Ventures, Menlo Ventures, and General Catalyst, among others.",
+        "quote_hash": "9af419f67fa751f89af053a8fa6659d8e395db11462042d9a02e93827e9fa0e7"
+      },
+      {
+        "source_id": "FISRC-e3ed6c4a27cf5860",
+        "source_url": "https://lsvp.com/stories/lightspeed-announces-lead-investment-in-anthropics-3-5b-series-e-financing/",
+        "source_title": "Lightspeed Announces Lead Investment in Anthropic’s $3.5B Series E Financing - Lightspeed Venture Partners",
+        "source_content_hash": "ea5b244eff64d20a",
+        "quote": "Lightspeed is deepening its commitment to this vision, by leading Anthropic’s $3.5 Billion Series E as the largest investor in the round.",
+        "quote_hash": "c01981bb233d77cee785e49b957dce1c7b7b34470f275d847b25dac55c993561"
+      }
+    ]
+  }
+}

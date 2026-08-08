@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-248df3dfcb12d3",
+    "name": "Touring Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-20",
+    "latest_disclosed_at": "2026-07-20",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-53982b85c02841f2",
+        "canonical_entity_id": "EN-53982b85c02841f2",
+        "name": "Infinity"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-653d60c956f4e41f",
+        "funding_insight_id": "FI-31f0431551fb2524",
+        "event_ids": [
+          "EV-d7a7244d620a2142"
+        ],
+        "company_entity_id": "EN-53982b85c02841f2",
+        "company_canonical_entity_id": "EN-53982b85c02841f2",
+        "company_name": "Infinity",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$15M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "announced_at": "2026-07-20",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-8b7c6346d6bc0dc2",
+            "source_url": "https://valueaddvc.com/pulse/infinity-15m-inference-touring-capital-2026",
+            "source_title": "Inference Startup Infinity Raises $15M From OpenAI, Anthropic Researchers | Value Add Pulse",
+            "source_content_hash": "8be554bde193bcd0",
+            "quote": "Infinity raised $15 million led by Touring Capital, with individual participation from researchers at both OpenAI and Anthropic",
+            "quote_hash": "7e50de0b07f998b3024aacc3f9685795d8043627165eb42ef328331019e0da97"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-8b7c6346d6bc0dc2",
+        "source_url": "https://valueaddvc.com/pulse/infinity-15m-inference-touring-capital-2026",
+        "source_title": "Inference Startup Infinity Raises $15M From OpenAI, Anthropic Researchers | Value Add Pulse",
+        "source_content_hash": "8be554bde193bcd0",
+        "quote": "Infinity raised $15 million led by Touring Capital, with individual participation from researchers at both OpenAI and Anthropic",
+        "quote_hash": "7e50de0b07f998b3024aacc3f9685795d8043627165eb42ef328331019e0da97"
+      }
+    ]
+  }
+}

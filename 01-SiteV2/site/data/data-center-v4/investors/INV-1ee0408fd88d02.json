@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-1ee0408fd88d02",
+    "name": "五源资本 (5Y Capital)",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-08",
+    "latest_disclosed_at": "2026-06-08",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-b5251b35f15bedc4",
+        "canonical_entity_id": "EN-b5251b35f15bedc4",
+        "name": "Moonshot AI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-33669441a452389d",
+        "funding_insight_id": "FI-1b3b5e07545457bb",
+        "event_ids": [
+          "EV-0e4bddfd5c129618"
+        ],
+        "company_entity_id": "EN-b5251b35f15bedc4",
+        "company_canonical_entity_id": "EN-b5251b35f15bedc4",
+        "company_name": "Moonshot AI",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮融资",
+        "amount_original": "20亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿美元"
+        },
+        "announced_at": "2026-06-08",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "2026年2月轮次参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0199034a5417695f",
+            "source_url": "https://otontechnology.com/moonshot-ai-30-billion-valuation-funding-round/",
+            "source_title": "Moonshot AI's $30B Ask: What's Behind China's AI Bet",
+            "source_content_hash": "fca357e99fd49983",
+            "quote": "Feb 2026 | Alibaba, Tencent, 5Y Capital | $700 million+ | $10 billion",
+            "quote_hash": "02f88b3a1ec1f420e6ed67d4d60bd4eb3d98ec307d57db37222ebbc91fa4c0f6"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-0199034a5417695f",
+        "source_url": "https://otontechnology.com/moonshot-ai-30-billion-valuation-funding-round/",
+        "source_title": "Moonshot AI's $30B Ask: What's Behind China's AI Bet",
+        "source_content_hash": "fca357e99fd49983",
+        "quote": "Feb 2026 | Alibaba, Tencent, 5Y Capital | $700 million+ | $10 billion",
+        "quote_hash": "02f88b3a1ec1f420e6ed67d4d60bd4eb3d98ec307d57db37222ebbc91fa4c0f6"
+      }
+    ]
+  }
+}

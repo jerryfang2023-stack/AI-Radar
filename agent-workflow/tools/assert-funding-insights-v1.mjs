@@ -191,8 +191,14 @@ function validateFrontstage() {
     if (card.aggregation?.event_count !== card.source_event_ids?.length) {
       problems.push(`${card.funding_insight_id}:aggregation_event_count_invalid`);
     }
-    const key = `${card.company?.entity_id || normalizedKey(card.company?.name)}|${card.financing?.round_code}`;
-    if (keys.has(key)) problems.push(`frontstage_company_round_duplicate:${key}`);
+    const key = card.aggregation?.key || [
+      card.company?.application_entity_id || card.company?.entity_id || normalizedKey(card.company?.name),
+      card.financing?.round_code,
+      card.financing?.announced_at,
+      card.financing?.amount_normalized?.currency,
+      card.financing?.amount_normalized?.value ?? card.financing?.amount_normalized?.min_value ?? "",
+    ].join("|");
+    if (keys.has(key)) problems.push(`frontstage_aggregation_duplicate:${key}`);
     keys.add(key);
   }
   const filterRounds = new Set(data.filters?.rounds || []);

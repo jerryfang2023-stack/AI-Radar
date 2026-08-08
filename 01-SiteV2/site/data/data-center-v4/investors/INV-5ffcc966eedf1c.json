@@ -1,0 +1,268 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-5ffcc966eedf1c",
+    "name": "Gokul Rajaram",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 3,
+    "first_disclosed_at": "2025-03-12",
+    "latest_disclosed_at": "2026-07-14",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "other_current_round": 3
+    },
+    "round_codes": [
+      "seed",
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-f5cfcb570b7edac2",
+        "canonical_entity_id": "",
+        "name": "Nexus Enterprises, Inc"
+      },
+      {
+        "entity_id": "EN-1c5483264189feef",
+        "canonical_entity_id": "",
+        "name": "Onyx"
+      },
+      {
+        "entity_id": "EN-92dd63c8e5c77e8a",
+        "canonical_entity_id": "EN-92dd63c8e5c77e8a",
+        "name": "Valarian Technologies Ltd."
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-59ce91debc98ec21",
+        "funding_insight_id": "FI-38617a261ac32b56",
+        "event_ids": [
+          "EV-305ec93673f4f12e"
+        ],
+        "company_entity_id": "EN-92dd63c8e5c77e8a",
+        "company_canonical_entity_id": "EN-92dd63c8e5c77e8a",
+        "company_name": "Valarian Technologies Ltd.",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "5000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-07-14",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮天使投资人",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-03aa198ddff34236",
+            "source_url": "https://siliconangle.com/2026/07/14/sovereign-ai-infrastructure-startup-valarian-raises-50m-help-nations-secure-military-defense-systems/",
+            "source_title": "主权AI基础设施初创公司Valarian融资5000万美元，助力各国保障国防系统安全",
+            "source_content_hash": "ab99df0f3d10a2c4",
+            "quote": "plus Gokul Rajaram and Nikesh Arora, who participated as angels",
+            "quote_hash": "06be14846bea8c7d29d28344d42059e660cf26d6efbaa98553a25899699479fb"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ceee93c29634dc63",
+        "funding_insight_id": "FI-18186044521daced",
+        "event_ids": [
+          "EV-6e06cfa28f76a76f"
+        ],
+        "company_entity_id": "EN-caaa8e02be54cfc9",
+        "company_canonical_entity_id": "",
+        "company_name": "Katalyze AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$10.5M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1050 万美元"
+        },
+        "announced_at": "2026-07-06",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-d887dae741d872b9",
+            "source_url": "https://aijourn.com/katalyze-ai-raises-10-5m-led-by-bonfire-ventures-deploy-agentic-operating-system-for-pharma/",
+            "source_title": "Katalyze AI获Bonfire Ventures领投1050万美元，为制药业部署代理操作系统",
+            "source_content_hash": "d3fbadee56dcb775",
+            "quote": "high-profile angel investors including Gokul Rajaram and Farzad Soleimani",
+            "quote_hash": "277a763e66169fd8479c5f579a1d8eb7831624d1dfdf24f344916204da8b9f35"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-47084e733096e774",
+        "funding_insight_id": "FI-19731873c2b7d1c1",
+        "event_ids": [
+          "EV-c8928410f6c145eb"
+        ],
+        "company_entity_id": "EN-f5cfcb570b7edac2",
+        "company_canonical_entity_id": "",
+        "company_name": "Nexus Enterprises, Inc",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "$4.3M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "430 万美元"
+        },
+        "announced_at": "2026-03-31",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮天使投资人",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-14ff8eaae437ca5e",
+            "source_url": "https://www.globenewswire.com/de/news-release/2026/03/31/3265301/0/en/Nexus-Raises-4-3M-Seed-Round-to-Help-Business-Teams-Deploy-AI-Agents.html",
+            "source_title": "Nexus 获430万美元种子轮融资，助力业务团队部署",
+            "source_content_hash": "ed9ee46cde0da7e9",
+            "quote": "and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz",
+            "quote_hash": "b6db9e16c33dea960e60b9a82a38d78bec0d727f34e8d6a002ece11b594e272b"
+          },
+          {
+            "source_id": "FISRC-79bfe2072e509ad8",
+            "source_url": "https://theaiinsider.tech/2026/04/04/nexus-secures-4-3m-seed-round-to-scale-enterprise-ai-agent-deployment/",
+            "source_title": "Nexus Secures $4.3M Seed Round to Scale Enterprise AI Agent Deployment",
+            "source_content_hash": "88232d44c76c7b89",
+            "quote": "individual investors including Gokul Rajaram, Raphael Schaad, and Jake Mintz",
+            "quote_hash": "8b66d5cc29786123066c125a702e61e2fed525f5569d2dd56f7da873889e29e5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-20f185030429b22d",
+        "funding_insight_id": "FI-a29040155764e60f",
+        "event_ids": [
+          "EV-b348083270be6c65"
+        ],
+        "company_entity_id": "EN-1c5483264189feef",
+        "company_canonical_entity_id": "",
+        "company_name": "Onyx",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$10M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2025-03-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮天使投资人",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-03b9d51b95b8c6ce",
+            "source_url": "https://www.globenewswire.com/news-release/2025/03/12/3041638/0/en/Onyx-Raises-10M-To-Help-Teams-Find-Knowledge-Faster-with-Open-Source-AI-Agents.html",
+            "source_title": "Onyx 获 1000 万美元融资，助力团队更快获取知识",
+            "source_content_hash": "9266f35a39d4c471",
+            "quote": "prominent angels like Gokul Rajaram (Coinbase, Pinterest)",
+            "quote_hash": "6ce29a096aecac33364b0dcc022f0663252de266f7e828ef5aad66133c80b9dc"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-03aa198ddff34236",
+        "source_url": "https://siliconangle.com/2026/07/14/sovereign-ai-infrastructure-startup-valarian-raises-50m-help-nations-secure-military-defense-systems/",
+        "source_title": "主权AI基础设施初创公司Valarian融资5000万美元，助力各国保障国防系统安全",
+        "source_content_hash": "ab99df0f3d10a2c4",
+        "quote": "plus Gokul Rajaram and Nikesh Arora, who participated as angels",
+        "quote_hash": "06be14846bea8c7d29d28344d42059e660cf26d6efbaa98553a25899699479fb"
+      },
+      {
+        "source_id": "FISRC-d887dae741d872b9",
+        "source_url": "https://aijourn.com/katalyze-ai-raises-10-5m-led-by-bonfire-ventures-deploy-agentic-operating-system-for-pharma/",
+        "source_title": "Katalyze AI获Bonfire Ventures领投1050万美元，为制药业部署代理操作系统",
+        "source_content_hash": "d3fbadee56dcb775",
+        "quote": "high-profile angel investors including Gokul Rajaram and Farzad Soleimani",
+        "quote_hash": "277a763e66169fd8479c5f579a1d8eb7831624d1dfdf24f344916204da8b9f35"
+      },
+      {
+        "source_id": "FISRC-14ff8eaae437ca5e",
+        "source_url": "https://www.globenewswire.com/de/news-release/2026/03/31/3265301/0/en/Nexus-Raises-4-3M-Seed-Round-to-Help-Business-Teams-Deploy-AI-Agents.html",
+        "source_title": "Nexus 获430万美元种子轮融资，助力业务团队部署",
+        "source_content_hash": "ed9ee46cde0da7e9",
+        "quote": "and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz",
+        "quote_hash": "b6db9e16c33dea960e60b9a82a38d78bec0d727f34e8d6a002ece11b594e272b"
+      },
+      {
+        "source_id": "FISRC-79bfe2072e509ad8",
+        "source_url": "https://theaiinsider.tech/2026/04/04/nexus-secures-4-3m-seed-round-to-scale-enterprise-ai-agent-deployment/",
+        "source_title": "Nexus Secures $4.3M Seed Round to Scale Enterprise AI Agent Deployment",
+        "source_content_hash": "88232d44c76c7b89",
+        "quote": "individual investors including Gokul Rajaram, Raphael Schaad, and Jake Mintz",
+        "quote_hash": "8b66d5cc29786123066c125a702e61e2fed525f5569d2dd56f7da873889e29e5"
+      },
+      {
+        "source_id": "FISRC-03b9d51b95b8c6ce",
+        "source_url": "https://www.globenewswire.com/news-release/2025/03/12/3041638/0/en/Onyx-Raises-10M-To-Help-Teams-Find-Knowledge-Faster-with-Open-Source-AI-Agents.html",
+        "source_title": "Onyx 获 1000 万美元融资，助力团队更快获取知识",
+        "source_content_hash": "9266f35a39d4c471",
+        "quote": "prominent angels like Gokul Rajaram (Coinbase, Pinterest)",
+        "quote_hash": "6ce29a096aecac33364b0dcc022f0663252de266f7e828ef5aad66133c80b9dc"
+      }
+    ]
+  }
+}

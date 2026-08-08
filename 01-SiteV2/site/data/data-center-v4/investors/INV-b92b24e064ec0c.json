@@ -1,0 +1,219 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-b92b24e064ec0c",
+    "name": "NFX",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2025-08-27",
+    "latest_disclosed_at": "2026-07-01",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "lead": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "seed",
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-b0a914ead94a88da",
+        "canonical_entity_id": "EN-b0a914ead94a88da",
+        "name": "Aligned"
+      },
+      {
+        "entity_id": "EN-098a40b4499d7512",
+        "canonical_entity_id": "",
+        "name": "Maisa AI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-53005e1933ac53aa",
+        "funding_insight_id": "FI-2ad50155bcf1e72d",
+        "event_ids": [
+          "EV-439ba8d5f2f575c4",
+          "EV-81bd541510a530f0"
+        ],
+        "company_entity_id": "EN-b0a914ead94a88da",
+        "company_canonical_entity_id": "EN-b0a914ead94a88da",
+        "company_name": "Aligned",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B 轮",
+        "amount_original": "$60 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-07-01",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投，既有投资方",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7c7a5a66361dc784",
+            "source_url": "https://www.saasrise.com/deals/aligned-bags-60m-in-funding-to-build-the-ainative-sales-execution-layer-for-enterprise-deals-5eecc03e-e805-4519-9bac-782e166d991a",
+            "source_title": "Aligned 为其 AI 销售执行平台筹集 6000 万美元 B 轮融资",
+            "source_content_hash": "9348da1b25f12b48",
+            "quote": "with participation from Hetz Ventures, JAL Ventures and NFX",
+            "quote_hash": "0e21e7dce274a10684bf7e6562c8a8fab7604afcb43ee0246b8e6a62125a4714"
+          },
+          {
+            "source_id": "FISRC-24b745611665d521",
+            "source_url": "https://salestechstar.com/sales-engagement/aligned-raises-8m-to-shape-the-future-of-selling-with-ai-sales-rooms/",
+            "source_title": "Aligned raises $8M to shape the future of selling with AI sales rooms",
+            "source_content_hash": "48691dffa1963c9f",
+            "quote": "The round includes participation from existing investors NFX, Hetz Ventures",
+            "quote_hash": "b4f7b4b2756221d4e36d912e1055f297b98c8993c41d30f926c5c8358c9240fb"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-42951c049f861ce7",
+        "funding_insight_id": "FI-44b385d21bc76adb",
+        "event_ids": [
+          "EV-f3bb064250dba2b2"
+        ],
+        "company_entity_id": "EN-15c785fe4bcb86f5",
+        "company_canonical_entity_id": "",
+        "company_name": "Blitzy",
+        "round": "成长轮",
+        "round_code": "growth",
+        "round_original": "Growth round",
+        "amount_original": "$200 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2026-05-05",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2caf93b29d914f26",
+            "source_url": "https://news.crunchbase.com/ai/blitzy-funding-valuation-autonomous-software-development-vibe-coding-startups/",
+            "source_title": "Blitzy以14亿美元估值融资2亿美元，用于自主软件开发",
+            "source_content_hash": "9bcac210292cba82",
+            "quote": "existing backers such as NFX, Link Ventures and Flybridge",
+            "quote_hash": "51415ee32be915d0bf4a13b6c78560f1aaf6159a707bd04025eaa9b54d809504"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ed4f59eea21caf61",
+        "funding_insight_id": "FI-c9553191a021b77b",
+        "event_ids": [
+          "EV-4eb0556b8c72d410"
+        ],
+        "company_entity_id": "EN-098a40b4499d7512",
+        "company_canonical_entity_id": "",
+        "company_name": "Maisa AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$25 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 25000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2500 万美元"
+        },
+        "announced_at": "2025-08-27",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "既有投资方（种子轮前领投），本轮参投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-f154528a83a385f1",
+            "source_url": "https://techcrunch.com/2025/08/27/maisa-ai-gets-25m-to-fix-enterprise-ais-95-failure-rate/",
+            "source_title": "Maisa AI 获 2500 万美元融资，旨在解决企业 AI 95% 的失败率",
+            "source_content_hash": "8c799b616e20ea1d",
+            "quote": "its $5 million pre-seed round last December was led by the San Francisco-based venture firms NFX and Village Global.",
+            "quote_hash": "9888177aefd2e80747f8c1886fa1052069a071bbbfdc9de99c87b38f8b55d936"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-7c7a5a66361dc784",
+        "source_url": "https://www.saasrise.com/deals/aligned-bags-60m-in-funding-to-build-the-ainative-sales-execution-layer-for-enterprise-deals-5eecc03e-e805-4519-9bac-782e166d991a",
+        "source_title": "Aligned 为其 AI 销售执行平台筹集 6000 万美元 B 轮融资",
+        "source_content_hash": "9348da1b25f12b48",
+        "quote": "with participation from Hetz Ventures, JAL Ventures and NFX",
+        "quote_hash": "0e21e7dce274a10684bf7e6562c8a8fab7604afcb43ee0246b8e6a62125a4714"
+      },
+      {
+        "source_id": "FISRC-24b745611665d521",
+        "source_url": "https://salestechstar.com/sales-engagement/aligned-raises-8m-to-shape-the-future-of-selling-with-ai-sales-rooms/",
+        "source_title": "Aligned raises $8M to shape the future of selling with AI sales rooms",
+        "source_content_hash": "48691dffa1963c9f",
+        "quote": "The round includes participation from existing investors NFX, Hetz Ventures",
+        "quote_hash": "b4f7b4b2756221d4e36d912e1055f297b98c8993c41d30f926c5c8358c9240fb"
+      },
+      {
+        "source_id": "FISRC-2caf93b29d914f26",
+        "source_url": "https://news.crunchbase.com/ai/blitzy-funding-valuation-autonomous-software-development-vibe-coding-startups/",
+        "source_title": "Blitzy以14亿美元估值融资2亿美元，用于自主软件开发",
+        "source_content_hash": "9bcac210292cba82",
+        "quote": "existing backers such as NFX, Link Ventures and Flybridge",
+        "quote_hash": "51415ee32be915d0bf4a13b6c78560f1aaf6159a707bd04025eaa9b54d809504"
+      },
+      {
+        "source_id": "FISRC-f154528a83a385f1",
+        "source_url": "https://techcrunch.com/2025/08/27/maisa-ai-gets-25m-to-fix-enterprise-ais-95-failure-rate/",
+        "source_title": "Maisa AI 获 2500 万美元融资，旨在解决企业 AI 95% 的失败率",
+        "source_content_hash": "8c799b616e20ea1d",
+        "quote": "its $5 million pre-seed round last December was led by the San Francisco-based venture firms NFX and Village Global.",
+        "quote_hash": "9888177aefd2e80747f8c1886fa1052069a071bbbfdc9de99c87b38f8b55d936"
+      }
+    ]
+  }
+}

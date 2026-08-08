@@ -1,0 +1,206 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-bf4e2cee6f0a9b",
+    "name": "Gradient Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 3,
+    "first_disclosed_at": "2024-05-21",
+    "latest_disclosed_at": "2026-06-30",
+    "role_counts": {
+      "lead": 1,
+      "participant": 2
+    },
+    "round_codes": [
+      "seed",
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-8dab79468baaa8b0",
+        "canonical_entity_id": "",
+        "name": "Fazeshift"
+      },
+      {
+        "entity_id": "EN-ee00b93bf0631b3e",
+        "canonical_entity_id": "",
+        "name": "Monogram AI, Inc."
+      },
+      {
+        "entity_id": "EN-a2183526e5130b45",
+        "canonical_entity_id": "",
+        "name": "Stack AI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-b324911436f0cd7e",
+        "funding_insight_id": "FI-12131c1300a2d205",
+        "event_ids": [
+          "EV-fab81bddb815267b"
+        ],
+        "company_entity_id": "EN-ee00b93bf0631b3e",
+        "company_canonical_entity_id": "",
+        "company_name": "Monogram AI, Inc.",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$40M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-06-30",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-907e4297862ddd8c",
+            "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
+            "source_title": "Monogram 获 4000 万美元种子轮融资",
+            "source_content_hash": "3a584a627e1535ff",
+            "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech",
+            "quote_hash": "b9cc79ff3ee3d1c3099bd371810b95b959c3d159d0e36d1a13788c3e4675cda6"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-adc05980b3fdcf99",
+        "funding_insight_id": "FI-24925ce28eee3cab",
+        "event_ids": [
+          "EV-cfbd2bed57ba4644"
+        ],
+        "company_entity_id": "EN-8dab79468baaa8b0",
+        "company_canonical_entity_id": "",
+        "company_name": "Fazeshift",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$17 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 17000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1700 万美元"
+        },
+        "announced_at": "2026-05-07",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-37925b95fc58982a",
+            "source_url": "https://news.crunchbase.com/fintech/fazeshift-accounts-receivable-ai-finance-ops-startup-funding/",
+            "source_title": "独家：Fazeshift获1700万美元融资，投资者押注AI驱动的财务运营，从应收账款起步",
+            "source_content_hash": "9fc07709e89b11cc",
+            "quote": "participation from Gradient Ventures (Google’s early-stage AI fund)",
+            "quote_hash": "1ca9ecd413f62c5d03f1e0bcdd445f4d51a04c94de14d3d1ccbd86fcfaac42e6"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-1b13e77e22dde83a",
+        "funding_insight_id": "FI-2fa8e98cb4ae66d2",
+        "event_ids": [
+          "EV-f2143ba3124a2105"
+        ],
+        "company_entity_id": "EN-a2183526e5130b45",
+        "company_canonical_entity_id": "",
+        "company_name": "Stack AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$3 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 万美元"
+        },
+        "announced_at": "2024-05-21",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "种子轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-79a4e94da8271853",
+            "source_url": "https://dataphoenix.info/stack-ai-raised-3m-to-connect-the-latest-ai-innovations-with-the-most-urgent-applications/",
+            "source_title": "Stack AI raised $3M to connect the latest AI innovations with the most urgent applications",
+            "source_content_hash": "eb1befb4357516cf",
+            "quote": "Stack AI recently announced it closed a $3 million oversubscribed seed funding round led by Gradient Ventures",
+            "quote_hash": "70e2c351cbf12de0c2e90c8d80c350d84ab7f1d234a2b5e7cb4f7d220f013343"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-907e4297862ddd8c",
+        "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
+        "source_title": "Monogram 获 4000 万美元种子轮融资",
+        "source_content_hash": "3a584a627e1535ff",
+        "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech",
+        "quote_hash": "b9cc79ff3ee3d1c3099bd371810b95b959c3d159d0e36d1a13788c3e4675cda6"
+      },
+      {
+        "source_id": "FISRC-37925b95fc58982a",
+        "source_url": "https://news.crunchbase.com/fintech/fazeshift-accounts-receivable-ai-finance-ops-startup-funding/",
+        "source_title": "独家：Fazeshift获1700万美元融资，投资者押注AI驱动的财务运营，从应收账款起步",
+        "source_content_hash": "9fc07709e89b11cc",
+        "quote": "participation from Gradient Ventures (Google’s early-stage AI fund)",
+        "quote_hash": "1ca9ecd413f62c5d03f1e0bcdd445f4d51a04c94de14d3d1ccbd86fcfaac42e6"
+      },
+      {
+        "source_id": "FISRC-79a4e94da8271853",
+        "source_url": "https://dataphoenix.info/stack-ai-raised-3m-to-connect-the-latest-ai-innovations-with-the-most-urgent-applications/",
+        "source_title": "Stack AI raised $3M to connect the latest AI innovations with the most urgent applications",
+        "source_content_hash": "eb1befb4357516cf",
+        "quote": "Stack AI recently announced it closed a $3 million oversubscribed seed funding round led by Gradient Ventures",
+        "quote_hash": "70e2c351cbf12de0c2e90c8d80c350d84ab7f1d234a2b5e7cb4f7d220f013343"
+      }
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-b1833e298a14ed",
+    "name": "First Principles Group",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-06-02",
+    "latest_disclosed_at": "2026-06-02",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-ffa1df46c8e750c7",
+        "funding_insight_id": "FI-032ffe6e999827b8",
+        "event_ids": [
+          "EV-9486e14e99499e3b"
+        ],
+        "company_entity_id": "EN-05f6ecf01ac4ebec",
+        "company_canonical_entity_id": "",
+        "company_name": "Impulse Space",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$500 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-06-02",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "C轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f6b16eaba393b2b3",
+            "source_url": "http://impulsespace.com/updates/impulse-space-secures-300-million-dollar-series-c-to-accelerate-the-future-of-in-space-mobility",
+            "source_title": "Impulse Space Secures $300 Million Series C to Accelerate the Future of In-Space Mobility",
+            "source_content_hash": "6f44e8a8123b489d",
+            "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures",
+            "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-f6b16eaba393b2b3",
+        "source_url": "http://impulsespace.com/updates/impulse-space-secures-300-million-dollar-series-c-to-accelerate-the-future-of-in-space-mobility",
+        "source_title": "Impulse Space Secures $300 Million Series C to Accelerate the Future of In-Space Mobility",
+        "source_content_hash": "6f44e8a8123b489d",
+        "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures",
+        "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
+      }
+    ]
+  }
+}

@@ -1,0 +1,688 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-ed42220b00c38b",
+    "name": "Bessemer Venture Partners",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 12,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 12,
+    "first_disclosed_at": "2025-03-03",
+    "latest_disclosed_at": "2026-08-06",
+    "role_counts": {
+      "co_lead": 1,
+      "lead": 5,
+      "participant": 6
+    },
+    "round_codes": [
+      "multi_round",
+      "seed",
+      "series_a",
+      "series_b",
+      "series_d",
+      "series_e"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-e5cc9e38970eacb5",
+        "canonical_entity_id": "",
+        "name": "Aivar Innovations"
+      },
+      {
+        "entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "name": "Anthropic PBC"
+      },
+      {
+        "entity_id": "EN-0caee180da9d0f3f",
+        "canonical_entity_id": "",
+        "name": "Fireworks AI Inc."
+      },
+      {
+        "entity_id": "EN-8dfa7ee544d661eb",
+        "canonical_entity_id": "",
+        "name": "Illoca, Inc."
+      },
+      {
+        "entity_id": "EN-13a7f8fe8140462d",
+        "canonical_entity_id": "EN-13a7f8fe8140462d",
+        "name": "Malachyte"
+      },
+      {
+        "entity_id": "EN-05cd4b807503b0f2",
+        "canonical_entity_id": "",
+        "name": "Neo Security Inc."
+      },
+      {
+        "entity_id": "EN-73ef176d9f12809e",
+        "canonical_entity_id": "",
+        "name": "Neo Security, Inc."
+      },
+      {
+        "entity_id": "EN-52f1bab72d488823",
+        "canonical_entity_id": "",
+        "name": "Relevance AI"
+      },
+      {
+        "entity_id": "EN-ee1e31ffef7dbe64",
+        "canonical_entity_id": "EN-ee1e31ffef7dbe64",
+        "name": "Sarvam"
+      },
+      {
+        "entity_id": "EN-29e1a488361f12d3",
+        "canonical_entity_id": "",
+        "name": "Vapi Inc."
+      },
+      {
+        "entity_id": "FICO-wonderful",
+        "canonical_entity_id": "",
+        "name": "Wonderful"
+      },
+      {
+        "entity_id": "EN-08ff6997681fad41",
+        "canonical_entity_id": "",
+        "name": "Zenskar"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-c8f8342c1c99a771",
+        "funding_insight_id": "FI-2d1d7b6262e319c3",
+        "event_ids": [
+          "EV-933b02f5736a0366"
+        ],
+        "company_entity_id": "EN-13a7f8fe8140462d",
+        "company_canonical_entity_id": "EN-13a7f8fe8140462d",
+        "company_name": "Malachyte",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$10M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-08-06",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-d328724fdcb5ff4b",
+            "source_url": "https://techcrunch.com/2026/08/06/ex-spotify-employees-raise-10m-to-bring-the-ai-behind-its-recommendations-to-e-commerce/",
+            "source_title": "前Spotify员工筹集1000万美元，将推荐背后的AI引入电商",
+            "source_content_hash": "05dd04be6ad83ba1",
+            "quote": "The funding round was co-led by Bessemer Venture Partners and Gradient, with participation from Harpoon Ventures.",
+            "quote_hash": "fc5a5ad2fbd0916f77d755181d69af06d3a4eccd7b9877bde9d2df943ebe7c7e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-547760f96f1c1140",
+        "funding_insight_id": "FI-b3322b5d5cef2d3e",
+        "event_ids": [
+          "EV-c84b6d7338f87990"
+        ],
+        "company_entity_id": "EN-05cd4b807503b0f2",
+        "company_canonical_entity_id": "",
+        "company_name": "Neo Security Inc.",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$100 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1 亿美元"
+        },
+        "announced_at": "2026-07-20",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-1bf4ecd2fae97f0b",
+            "source_url": "https://siliconangle.com/2026/07/20/neo-security-bags-100m-build-secure-control-layer-enterprise-ai-agents/",
+            "source_title": "Neo Security 获 1 亿美元融资，为企业 AI 智能体构建安全控制层",
+            "source_content_hash": "84b7d83dc85df604",
+            "quote": "The round was led by top tier venture capitalists in Andreessen Horowitz and Bessemer Venture Partners",
+            "quote_hash": "d1fe57231340d34141578bd91b6fad2932c756dd2f08970a620426a916547fc2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-79c7c6bbfd5a7b79",
+        "funding_insight_id": "FI-5b5e0489474500cb",
+        "event_ids": [
+          "EV-2069f6a931b8c9d6"
+        ],
+        "company_entity_id": "EN-73ef176d9f12809e",
+        "company_canonical_entity_id": "",
+        "company_name": "Neo Security, Inc.",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "种子轮和A轮",
+        "amount_original": "1亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1 亿美元"
+        },
+        "announced_at": "2026-07-20",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "种子轮和A轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-9a07ea732902851d",
+            "source_url": "https://www.globenewswire.com/news-release/2026/07/20/3329638/0/en/Neo-Launches-with-100M-to-Secure-AI-Software-Across-the-Enterprise.html",
+            "source_title": "Neo 获 1 亿美元融资，致力于保障企业级 AI 软件安全",
+            "source_content_hash": "9889ba96b2e121cd",
+            "quote": "Neo , the Agentic Software Control company, today emerged from stealth with $100M in funding from Andreessen Horowitz and Bessemer Venture Partners",
+            "quote_hash": "1f48717b8c31e31b0a9a5ef403b33a9fbf16022f694d20ea1fb895a1e29952fe"
+          },
+          {
+            "source_id": "FISRC-821c38da3feae3b4",
+            "source_url": "https://www.thecodew.com/2026/07/why-neo-raised-big-ai-security-investment-boom.html",
+            "source_title": "Company Deep Dive: Why Neo Raised Big: Inside the AI Security Investment Boom - The CODEW",
+            "source_content_hash": "d59787388c7f4ee6",
+            "quote": "Neo emerged from stealth this week with $100 million in funding across seed and Series A rounds, led by Andreessen Horowitz and Bessemer Venture Partners",
+            "quote_hash": "d583437ee8f5bac71fe2fa829ceeeded1151f5b94fd52942991d6a267ade3cce"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-bbe5142cd1b5b341",
+        "funding_insight_id": "FI-3b1ea359415f476d",
+        "event_ids": [
+          "EV-4eaf3aabecae6016"
+        ],
+        "company_entity_id": "EN-0caee180da9d0f3f",
+        "company_canonical_entity_id": "",
+        "company_name": "Fireworks AI Inc.",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$1.505 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1505000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15.05 亿美元"
+        },
+        "announced_at": "2026-07-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投，既有投资方",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-dc600442a39828d4",
+            "source_url": "https://www.aitechdialogue.com/article/fireworks-ai-1-5b-funding-series-d-custom-enterprise-ai",
+            "source_title": "Fireworks AI Funding: Raises $1.5B at… — AI Tech Dialogue",
+            "source_content_hash": "88980901b6103a22",
+            "quote": "existing backers like Nvidia, Lightspeed Venture Partners, and Bessemer Venture Partners also chipped in.",
+            "quote_hash": "433795f53b6056423c050ab452165227ab4efeb1062489173a4a6a6bb0cf4ec9"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9f5ab24b536d8642",
+        "funding_insight_id": "FI-9854c05d7208a585",
+        "event_ids": [
+          "EV-e3382d1c1d7db751"
+        ],
+        "company_entity_id": "EN-ee1e31ffef7dbe64",
+        "company_canonical_entity_id": "EN-ee1e31ffef7dbe64",
+        "company_name": "Sarvam",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$234 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 234000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.34 亿美元"
+        },
+        "announced_at": "2026-06-15",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-eb156fd01909fe18",
+            "source_url": "https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech",
+            "source_title": "Sarvam完成2.34亿美元融资，成印度最新AI独角兽",
+            "source_content_hash": "a56910704adc32b1",
+            "quote": "Bessemer Venture Partners also participated alongside existing backers Khosla Ventures and Peak XV Partners.",
+            "quote_hash": "97bbf561124cac8485e12d3b50dfea0629c01b4bfe3050f5dfa7b67c74fd5504"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9f0fcfa3c002a473",
+        "funding_insight_id": "FI-9b370a988458c224",
+        "event_ids": [
+          "EV-88f4ee8cd57bdf42"
+        ],
+        "company_entity_id": "EN-29e1a488361f12d3",
+        "company_canonical_entity_id": "",
+        "company_name": "Vapi Inc.",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$50 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-05-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3cd13dab7aac8084",
+            "source_url": "https://thenextweb.com/news/vapi-50m-series-b",
+            "source_title": "Vapi raises $50m Series B led by Peak XV for enterprise voice AI",
+            "source_content_hash": "bade7bff5dc58f65",
+            "quote": "Bessemer Venture Partners join; earlier investors return",
+            "quote_hash": "d92cd5aabbd18f7f42c77ed350737a8be1d81adae69f126a50b9f1d8adaa258e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-43630433dbd31149",
+        "funding_insight_id": "FI-2e53598061d252f0",
+        "event_ids": [
+          "EV-59f4561c5243eb98"
+        ],
+        "company_entity_id": "EN-8dfa7ee544d661eb",
+        "company_canonical_entity_id": "",
+        "company_name": "Illoca, Inc.",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$13 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 13000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1300 万美元"
+        },
+        "announced_at": "2026-05-06",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-af034b6014cc1e78",
+            "source_url": "https://www.globenewswire.com/news-release/2026/05/06/3289008/0/en/Illoca-Raises-13-Million-Seed-Led-by-Bessemer-Venture-Partners-to-Launch-the-First-Intelligent-Interface-for-Architectural-Design.html",
+            "source_title": "Illoca 获1300万美元种子轮融资，由Bessemer Venture领投",
+            "source_content_hash": "36707f31f2817c6d",
+            "quote": "closed $13 million in Seed financing led by Bessemer Venture Partners",
+            "quote_hash": "c76bccaabb508e95a24877bdba0cd1c239bdba69058f1252f878c0caf5722236"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-7a3dc55068c0280d",
+        "funding_insight_id": "FI-93538e84a3075ee9",
+        "event_ids": [
+          "EV-cbc0b7a7d21a29e2"
+        ],
+        "company_entity_id": "EN-08ff6997681fad41",
+        "company_canonical_entity_id": "",
+        "company_name": "Zenskar",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$15 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "announced_at": "2026-04-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-d87b08783c0a062f",
+            "source_url": "https://www.businesswire.com/news/home/20260416872552/en/Zenskar-Raises-%2415-Million-Series-A-to-Expand-Agentic-Capabilities-for-B2B-Revenue-Automation",
+            "source_title": "Zenskar获1500万美元A轮融资，用于扩展B2B收入自动化的代理能力",
+            "source_content_hash": "295fb65a11a09075",
+            "quote": "$15 million Series A led by Susquehanna Venture Capital, Bessemer Venture Partners, Shine Capital and Rho",
+            "quote_hash": "13a213a58f9d56d4c606db97e416ac8976cfb1c4b35d7633d5d1c4e9a47b1895"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c2131cacca227e78",
+        "funding_insight_id": "FI-2b8ea19368209f49",
+        "event_ids": [
+          "EV-aa33ca051f3a7f78",
+          "EV-0ade039d36e077ae",
+          "EV-a84ec4216d3ded6d"
+        ],
+        "company_entity_id": "FICO-wonderful",
+        "company_canonical_entity_id": "",
+        "company_name": "Wonderful",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "1.5亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "announced_at": "2026-03-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c29f00f067579660",
+            "source_url": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
+            "source_title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets | Insight Partners",
+            "source_content_hash": "67f409ee5b146b1d",
+            "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures",
+            "quote_hash": "4b692c3189d4f946e9961e92b0f637a386a65a07795ecd5b1e7edb1c27ae94d8"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-229f13223960439b",
+        "funding_insight_id": "FI-cc11fe1773d3f25b",
+        "event_ids": [
+          "EV-8b0f056571d68269"
+        ],
+        "company_entity_id": "EN-e5cc9e38970eacb5",
+        "company_canonical_entity_id": "",
+        "company_name": "Aivar Innovations",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$4.6M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4600000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "460 万美元"
+        },
+        "announced_at": "2026-01-19",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ee4b884adb0877ed",
+            "source_url": "https://www.cybernewscentre.com/ai-startup-indias-aivar-raises-4-6m-for-enterprise-ai-adoption-2/",
+            "source_title": "AI 初创公司：印度 Aivar 获 460 万美元融资，推动企业 AI 应用",
+            "source_content_hash": "15d2e335662c3a45",
+            "quote": "with participation from Bessemer Venture Partners",
+            "quote_hash": "1edac140897c8598bbc305ec76e84659b43e4b52eaf3d25eaa7b25967249138e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-6f69e2646c5e6d37",
+        "funding_insight_id": "FI-943beca4faf7346d",
+        "event_ids": [
+          "EV-15bbdd37c516309a"
+        ],
+        "company_entity_id": "EN-52f1bab72d488823",
+        "company_canonical_entity_id": "",
+        "company_name": "Relevance AI",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$24 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 24000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2400 万美元"
+        },
+        "announced_at": "2025-05-06",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-e2076aaadf946323",
+            "source_url": "https://techcrunch.com/2025/05/06/relevance-ai-raises-24m-series-b-to-help-anyone-build-teams-of-ai-agents/",
+            "source_title": "Relevance AI 获 2400 万美元融资，助力企业构建 AI 智能体",
+            "source_content_hash": "569a3e9ef99a7000",
+            "quote": "has raised $24 million in Series B funding led by Bessemer Venture Partners.",
+            "quote_hash": "4c27bba9a3c6d90054c5caa2d74d0ff4e71462fe883c9302c6c9b85e47f1497a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-de1e92659c79aa54",
+        "funding_insight_id": "FI-6601d010adc14dd0",
+        "event_ids": [
+          "EV-78a11d309c3d4e97"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic PBC",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "Series E",
+        "amount_original": "$3.5B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "35 亿美元"
+        },
+        "announced_at": "2025-03-03",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8aac4802151d3b7d",
+            "source_url": "https://theoutpost.ai/news-story/anthropic-secures-3-5-billion-in-funding-reaching-61-5-billion-valuation-12772/",
+            "source_title": "Anthropic Raises $3.5 Billion at $61.5 Billion Valuation, Minting New AI Billionaires",
+            "source_content_hash": "a1b8a77e1ffdaf42",
+            "quote": "Lightspeed Venture Partners led Anthropic's latest round, which included participation from Bessemer Venture Partners, Cisco Investments, D1 Capital Partners, Fidelity Management & Research Company, General Catalyst, Jane Street, Menlo Ventures and Salesforce Ventures.",
+            "quote_hash": "0f0cafc6048be35da181c53991be61aed515418d1800beb00e8ebb9925997b49"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-d328724fdcb5ff4b",
+        "source_url": "https://techcrunch.com/2026/08/06/ex-spotify-employees-raise-10m-to-bring-the-ai-behind-its-recommendations-to-e-commerce/",
+        "source_title": "前Spotify员工筹集1000万美元，将推荐背后的AI引入电商",
+        "source_content_hash": "05dd04be6ad83ba1",
+        "quote": "The funding round was co-led by Bessemer Venture Partners and Gradient, with participation from Harpoon Ventures.",
+        "quote_hash": "fc5a5ad2fbd0916f77d755181d69af06d3a4eccd7b9877bde9d2df943ebe7c7e"
+      },
+      {
+        "source_id": "FISRC-1bf4ecd2fae97f0b",
+        "source_url": "https://siliconangle.com/2026/07/20/neo-security-bags-100m-build-secure-control-layer-enterprise-ai-agents/",
+        "source_title": "Neo Security 获 1 亿美元融资，为企业 AI 智能体构建安全控制层",
+        "source_content_hash": "84b7d83dc85df604",
+        "quote": "The round was led by top tier venture capitalists in Andreessen Horowitz and Bessemer Venture Partners",
+        "quote_hash": "d1fe57231340d34141578bd91b6fad2932c756dd2f08970a620426a916547fc2"
+      },
+      {
+        "source_id": "FISRC-9a07ea732902851d",
+        "source_url": "https://www.globenewswire.com/news-release/2026/07/20/3329638/0/en/Neo-Launches-with-100M-to-Secure-AI-Software-Across-the-Enterprise.html",
+        "source_title": "Neo 获 1 亿美元融资，致力于保障企业级 AI 软件安全",
+        "source_content_hash": "9889ba96b2e121cd",
+        "quote": "Neo , the Agentic Software Control company, today emerged from stealth with $100M in funding from Andreessen Horowitz and Bessemer Venture Partners",
+        "quote_hash": "1f48717b8c31e31b0a9a5ef403b33a9fbf16022f694d20ea1fb895a1e29952fe"
+      },
+      {
+        "source_id": "FISRC-821c38da3feae3b4",
+        "source_url": "https://www.thecodew.com/2026/07/why-neo-raised-big-ai-security-investment-boom.html",
+        "source_title": "Company Deep Dive: Why Neo Raised Big: Inside the AI Security Investment Boom - The CODEW",
+        "source_content_hash": "d59787388c7f4ee6",
+        "quote": "Neo emerged from stealth this week with $100 million in funding across seed and Series A rounds, led by Andreessen Horowitz and Bessemer Venture Partners",
+        "quote_hash": "d583437ee8f5bac71fe2fa829ceeeded1151f5b94fd52942991d6a267ade3cce"
+      },
+      {
+        "source_id": "FISRC-dc600442a39828d4",
+        "source_url": "https://www.aitechdialogue.com/article/fireworks-ai-1-5b-funding-series-d-custom-enterprise-ai",
+        "source_title": "Fireworks AI Funding: Raises $1.5B at… — AI Tech Dialogue",
+        "source_content_hash": "88980901b6103a22",
+        "quote": "existing backers like Nvidia, Lightspeed Venture Partners, and Bessemer Venture Partners also chipped in.",
+        "quote_hash": "433795f53b6056423c050ab452165227ab4efeb1062489173a4a6a6bb0cf4ec9"
+      },
+      {
+        "source_id": "FISRC-eb156fd01909fe18",
+        "source_url": "https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech",
+        "source_title": "Sarvam完成2.34亿美元融资，成印度最新AI独角兽",
+        "source_content_hash": "a56910704adc32b1",
+        "quote": "Bessemer Venture Partners also participated alongside existing backers Khosla Ventures and Peak XV Partners.",
+        "quote_hash": "97bbf561124cac8485e12d3b50dfea0629c01b4bfe3050f5dfa7b67c74fd5504"
+      },
+      {
+        "source_id": "FISRC-3cd13dab7aac8084",
+        "source_url": "https://thenextweb.com/news/vapi-50m-series-b",
+        "source_title": "Vapi raises $50m Series B led by Peak XV for enterprise voice AI",
+        "source_content_hash": "bade7bff5dc58f65",
+        "quote": "Bessemer Venture Partners join; earlier investors return",
+        "quote_hash": "d92cd5aabbd18f7f42c77ed350737a8be1d81adae69f126a50b9f1d8adaa258e"
+      },
+      {
+        "source_id": "FISRC-af034b6014cc1e78",
+        "source_url": "https://www.globenewswire.com/news-release/2026/05/06/3289008/0/en/Illoca-Raises-13-Million-Seed-Led-by-Bessemer-Venture-Partners-to-Launch-the-First-Intelligent-Interface-for-Architectural-Design.html",
+        "source_title": "Illoca 获1300万美元种子轮融资，由Bessemer Venture领投",
+        "source_content_hash": "36707f31f2817c6d",
+        "quote": "closed $13 million in Seed financing led by Bessemer Venture Partners",
+        "quote_hash": "c76bccaabb508e95a24877bdba0cd1c239bdba69058f1252f878c0caf5722236"
+      },
+      {
+        "source_id": "FISRC-d87b08783c0a062f",
+        "source_url": "https://www.businesswire.com/news/home/20260416872552/en/Zenskar-Raises-%2415-Million-Series-A-to-Expand-Agentic-Capabilities-for-B2B-Revenue-Automation",
+        "source_title": "Zenskar获1500万美元A轮融资，用于扩展B2B收入自动化的代理能力",
+        "source_content_hash": "295fb65a11a09075",
+        "quote": "$15 million Series A led by Susquehanna Venture Capital, Bessemer Venture Partners, Shine Capital and Rho",
+        "quote_hash": "13a213a58f9d56d4c606db97e416ac8976cfb1c4b35d7633d5d1c4e9a47b1895"
+      },
+      {
+        "source_id": "FISRC-c29f00f067579660",
+        "source_url": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
+        "source_title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets | Insight Partners",
+        "source_content_hash": "67f409ee5b146b1d",
+        "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures",
+        "quote_hash": "4b692c3189d4f946e9961e92b0f637a386a65a07795ecd5b1e7edb1c27ae94d8"
+      },
+      {
+        "source_id": "FISRC-ee4b884adb0877ed",
+        "source_url": "https://www.cybernewscentre.com/ai-startup-indias-aivar-raises-4-6m-for-enterprise-ai-adoption-2/",
+        "source_title": "AI 初创公司：印度 Aivar 获 460 万美元融资，推动企业 AI 应用",
+        "source_content_hash": "15d2e335662c3a45",
+        "quote": "with participation from Bessemer Venture Partners",
+        "quote_hash": "1edac140897c8598bbc305ec76e84659b43e4b52eaf3d25eaa7b25967249138e"
+      },
+      {
+        "source_id": "FISRC-e2076aaadf946323",
+        "source_url": "https://techcrunch.com/2025/05/06/relevance-ai-raises-24m-series-b-to-help-anyone-build-teams-of-ai-agents/",
+        "source_title": "Relevance AI 获 2400 万美元融资，助力企业构建 AI 智能体",
+        "source_content_hash": "569a3e9ef99a7000",
+        "quote": "has raised $24 million in Series B funding led by Bessemer Venture Partners.",
+        "quote_hash": "4c27bba9a3c6d90054c5caa2d74d0ff4e71462fe883c9302c6c9b85e47f1497a"
+      },
+      {
+        "source_id": "FISRC-8aac4802151d3b7d",
+        "source_url": "https://theoutpost.ai/news-story/anthropic-secures-3-5-billion-in-funding-reaching-61-5-billion-valuation-12772/",
+        "source_title": "Anthropic Raises $3.5 Billion at $61.5 Billion Valuation, Minting New AI Billionaires",
+        "source_content_hash": "a1b8a77e1ffdaf42",
+        "quote": "Lightspeed Venture Partners led Anthropic's latest round, which included participation from Bessemer Venture Partners, Cisco Investments, D1 Capital Partners, Fidelity Management & Research Company, General Catalyst, Jane Street, Menlo Ventures and Salesforce Ventures.",
+        "quote_hash": "0f0cafc6048be35da181c53991be61aed515418d1800beb00e8ebb9925997b49"
+      }
+    ]
+  }
+}

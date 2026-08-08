@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-70cd6fd922109b",
+    "name": "Olivier Pomel",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2026-06-02",
+    "latest_disclosed_at": "2026-07-22",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "other_current_round": 2,
+      "participant": 1
+    },
+    "round_codes": [
+      "seed",
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-58b507456c52c9b3",
+        "canonical_entity_id": "EN-58b507456c52c9b3",
+        "name": "Archestra"
+      },
+      {
+        "entity_id": "EN-834cc12fc35adde7",
+        "canonical_entity_id": "",
+        "name": "Arrakis"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-e1e6bbfe01e18271",
+        "funding_insight_id": "FI-6083aa095b41b5b1",
+        "event_ids": [
+          "EV-24823de8fb76ac31"
+        ],
+        "company_entity_id": "EN-834cc12fc35adde7",
+        "company_canonical_entity_id": "",
+        "company_name": "Arrakis",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$38 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 38000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3800 万美元"
+        },
+        "announced_at": "2026-07-22",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1944a3662baaebec",
+            "source_url": "https://techfundingnews.com/arrakis-raises-38m-blossom-accel-ai-agents",
+            "source_title": "Arrakis raises $38M from Blossom and Accel, with Datadog CEO and OpenAI exec joining the round — TFN",
+            "source_content_hash": "faf9c34480358e85",
+            "quote": "Datadog CEO Olivier Pomel and OpenAI’s Olivier Godement invested their own money in the round",
+            "quote_hash": "30279e62a85b5f6bef31f48b813d2983dd78eee3c1a8d6143fd09e8a2db3f1ca"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-22b035e781556912",
+        "funding_insight_id": "FI-3c407a7a4dd718f1",
+        "event_ids": [
+          "EV-754e83c2d19005fe"
+        ],
+        "company_entity_id": "EN-834cc12fc35adde7",
+        "company_canonical_entity_id": "",
+        "company_name": "Arrakis",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$30 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-07-22",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮天使投资人",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-ac4fd601f33650ff",
+            "source_url": "https://www.financialcontent.com/article/bizwire-2026-7-22-arrakis-comes-out-of-stealth-with-38m-to-help-industrial-enterprises-compete-in-the-ai-era",
+            "source_title": "Arrakis 携 3800 万美元走出隐身模式，助力工业企业竞争 AI 时代",
+            "source_content_hash": "4d42f1ad7c55a3e3",
+            "quote": "includes backing from prominent technology leaders, including Olivier Pomel, founder and chief executive of Datadog",
+            "quote_hash": "23c11afd491ee076f76e385d788cd78cc1467fe8fbd0d8fe7eadcb74ca978f75"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-988d6fe53b4907af",
+        "funding_insight_id": "FI-6deae4c748088f7f",
+        "event_ids": [
+          "EV-c0ec0c026233bea5"
+        ],
+        "company_entity_id": "EN-a7dd4a797cf9990b",
+        "company_canonical_entity_id": "",
+        "company_name": "Niteshift",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$7 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 7000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "700 万美元"
+        },
+        "announced_at": "2026-06-10",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-01df70e43799a400",
+            "source_url": "https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in",
+            "source_title": "Datadog 资深人士创立 AI 编码初创公司 Niteshift，押注企业对抗大模型锁定",
+            "source_content_hash": "21b15182c071a779",
+            "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman, Datadog’s Olivier Pomel and Alexis Lê-Quôc",
+            "quote_hash": "0a97a78cb513a7c08f340a295557d456130ec12667680c5c6039f375d939cc8b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3f942bbd3b7af36b",
+        "funding_insight_id": "FI-fe82f871887d3c1f",
+        "event_ids": [
+          "EV-f1a605a25af30dc5",
+          "EV-6ae3594aadfcd3d8"
+        ],
+        "company_entity_id": "EN-58b507456c52c9b3",
+        "company_canonical_entity_id": "EN-58b507456c52c9b3",
+        "company_name": "Archestra",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$10M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-06-02",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮天使投资人",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-08f2020b7eca8380",
+            "source_url": "https://tech.eu/2026/06/02/archestraai-raises-10m-to-unlock-next-gen-agentic-use-case/",
+            "source_title": "Archestra.AI 获1000万美元融资，解锁下一代自主代理应用场景 - Tech.eu",
+            "source_content_hash": "e9f5a2a28919e9c2",
+            "quote": "Angels investing in the round include Olivier Pomel, CEO and co-founder of Datadog",
+            "quote_hash": "5e16f4c08d67b884d79c10879877fb341755dc3306b67c0e0f65bf31b55e4294"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1944a3662baaebec",
+        "source_url": "https://techfundingnews.com/arrakis-raises-38m-blossom-accel-ai-agents",
+        "source_title": "Arrakis raises $38M from Blossom and Accel, with Datadog CEO and OpenAI exec joining the round — TFN",
+        "source_content_hash": "faf9c34480358e85",
+        "quote": "Datadog CEO Olivier Pomel and OpenAI’s Olivier Godement invested their own money in the round",
+        "quote_hash": "30279e62a85b5f6bef31f48b813d2983dd78eee3c1a8d6143fd09e8a2db3f1ca"
+      },
+      {
+        "source_id": "FISRC-ac4fd601f33650ff",
+        "source_url": "https://www.financialcontent.com/article/bizwire-2026-7-22-arrakis-comes-out-of-stealth-with-38m-to-help-industrial-enterprises-compete-in-the-ai-era",
+        "source_title": "Arrakis 携 3800 万美元走出隐身模式，助力工业企业竞争 AI 时代",
+        "source_content_hash": "4d42f1ad7c55a3e3",
+        "quote": "includes backing from prominent technology leaders, including Olivier Pomel, founder and chief executive of Datadog",
+        "quote_hash": "23c11afd491ee076f76e385d788cd78cc1467fe8fbd0d8fe7eadcb74ca978f75"
+      },
+      {
+        "source_id": "FISRC-01df70e43799a400",
+        "source_url": "https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in",
+        "source_title": "Datadog 资深人士创立 AI 编码初创公司 Niteshift，押注企业对抗大模型锁定",
+        "source_content_hash": "21b15182c071a779",
+        "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman, Datadog’s Olivier Pomel and Alexis Lê-Quôc",
+        "quote_hash": "0a97a78cb513a7c08f340a295557d456130ec12667680c5c6039f375d939cc8b"
+      },
+      {
+        "source_id": "FISRC-08f2020b7eca8380",
+        "source_url": "https://tech.eu/2026/06/02/archestraai-raises-10m-to-unlock-next-gen-agentic-use-case/",
+        "source_title": "Archestra.AI 获1000万美元融资，解锁下一代自主代理应用场景 - Tech.eu",
+        "source_content_hash": "e9f5a2a28919e9c2",
+        "quote": "Angels investing in the round include Olivier Pomel, CEO and co-founder of Datadog",
+        "quote_hash": "5e16f4c08d67b884d79c10879877fb341755dc3306b67c0e0f65bf31b55e4294"
+      }
+    ]
+  }
+}

@@ -28,7 +28,7 @@
     "published_at"
   ],
   "properties": {
-    "schema_version": { "const": "FUNDING-INSIGHT-V1.2" },
+    "schema_version": { "const": "FUNDING-INSIGHT-V1.3" },
     "funding_insight_id": { "type": "string", "minLength": 1 },
     "triggered_by_event_id": { "type": "string", "minLength": 1 },
     "source_event_ids": {
@@ -43,6 +43,8 @@
       "required": ["entity_id", "name", "full_name", "website", "summary", "headquarters", "founders", "team_size", "evidence_refs"],
       "properties": {
         "entity_id": { "type": "string", "minLength": 1 },
+        "application_entity_id": { "type": "string", "minLength": 1 },
+        "canonical_entity_consistent": { "type": "boolean" },
         "name": { "type": "string", "minLength": 1 },
         "full_name": { "type": "string", "minLength": 1 },
         "website": { "type": "string" },
@@ -61,8 +63,15 @@
         "round_code",
         "round_original",
         "amount",
+        "amount_original",
+        "amount_normalized",
         "total_raised",
+        "total_raised_original",
+        "total_raised_normalized",
         "announced_at",
+        "disclosure_status",
+        "investor_disclosure_status",
+        "risk_markers",
         "investors",
         "other_round_investors",
         "disclosures",
@@ -73,8 +82,13 @@
         "round_code": { "type": "string", "minLength": 1 },
         "round_original": { "type": "string" },
         "amount": { "type": "string", "minLength": 1 },
+        "amount_original": { "type": "string", "minLength": 1 },
+        "amount_normalized": { "$ref": "#/$defs/normalizedAmount" },
         "total_raised": { "type": "string" },
+        "total_raised_original": { "type": "string" },
+        "total_raised_normalized": { "$ref": "#/$defs/normalizedAmount" },
         "announced_at": { "type": "string" },
+        "disclosure_status": { "enum": ["disclosed", "partially_disclosed", "not_disclosed", "unknown"] },
         "investor_disclosure_status": { "enum": ["disclosed", "not_disclosed", "unknown"] },
         "risk_markers": {
           "type": "array",
@@ -315,7 +329,7 @@
       "properties": {
         "key": { "type": "string", "minLength": 1 },
         "event_count": { "type": "integer", "minimum": 1 },
-        "strategy": { "const": "company_and_normalized_round" }
+        "strategy": { "enum": ["company_and_normalized_round", "reviewed_company_round_date_and_normalized_amount"] }
       },
       "additionalProperties": false
     },
@@ -337,6 +351,20 @@
   },
   "additionalProperties": false,
   "$defs": {
+    "normalizedAmount": {
+      "type": "object",
+      "required": ["currency", "value", "min_value", "max_value", "unit", "status", "display_zh"],
+      "properties": {
+        "currency": { "type": "string" },
+        "value": { "type": ["number", "null"] },
+        "min_value": { "type": ["number", "null"] },
+        "max_value": { "type": ["number", "null"] },
+        "unit": { "const": "base" },
+        "status": { "enum": ["exact", "approximate", "lower_bound", "range", "undisclosed", "unparsed"] },
+        "display_zh": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
     "linkCoverage": {
       "type": "object",
       "required": ["linked", "total", "unresolved_names"],

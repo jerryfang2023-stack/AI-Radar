@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-b589b7440c714c",
+    "name": "Baron Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-03",
+    "latest_disclosed_at": "2026-06-03",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "ipo"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-e78bdebae031095b",
+        "canonical_entity_id": "EN-e78bdebae031095b",
+        "name": "SpaceX"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-cfc9fd143ef9d773",
+        "funding_insight_id": "FI-082c684e1b4a88c2",
+        "event_ids": [
+          "EV-ef7346378fcf9746"
+        ],
+        "company_entity_id": "EN-e78bdebae031095b",
+        "company_canonical_entity_id": "EN-e78bdebae031095b",
+        "company_name": "SpaceX",
+        "round": "IPO",
+        "round_code": "ipo",
+        "round_original": "IPO",
+        "amount_original": "$75 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 75000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "750 亿美元"
+        },
+        "announced_at": "2026-06-03",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-70b91157a7013cad",
+            "source_url": "https://www.fool.com/investing/2026/06/18/spacex-stock-1-billion-ipo-buy-mistake/",
+            "source_title": "Billionaire Ron Baron Put $1 Billion Into SpaceX at the IPO. Here's Why He Calls It \"The Largest Company on the Planet\" in the Making. | The Motley Fool",
+            "source_content_hash": "a23bc17d1a408325",
+            "quote": "Billionaire Ron Baron Put $1 Billion Into SpaceX at the IPO.",
+            "quote_hash": "5144d6cd354049217c8415ea27737536becf697c38df3c3583c4ec8354ab8782"
+          },
+          {
+            "source_id": "FISRC-9adefaf867df19d6",
+            "source_url": "https://www.tradingview.com/news/stocktwits:c3fb917f9094b:0-spacex-will-be-largest-most-profitable-company-on-the-planet-says-veteran-elon-musk-bull-whose-funds-trail-us-markets/",
+            "source_title": "SpaceX Will Be 'Largest, Most Profitable Company On The Planet,' Says Veteran Elon Musk Bull Whose Funds Trail US Markets — TradingView News",
+            "source_content_hash": "3549f091090ec02b",
+            "quote": "Baron Capital has submitted a $1 billion order in the upcoming SpaceX IPO.",
+            "quote_hash": "e9e6aa400ba72e89e811139da45cef3b45fe9cfcde4b3551824cb7abba145c2d"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-70b91157a7013cad",
+        "source_url": "https://www.fool.com/investing/2026/06/18/spacex-stock-1-billion-ipo-buy-mistake/",
+        "source_title": "Billionaire Ron Baron Put $1 Billion Into SpaceX at the IPO. Here's Why He Calls It \"The Largest Company on the Planet\" in the Making. | The Motley Fool",
+        "source_content_hash": "a23bc17d1a408325",
+        "quote": "Billionaire Ron Baron Put $1 Billion Into SpaceX at the IPO.",
+        "quote_hash": "5144d6cd354049217c8415ea27737536becf697c38df3c3583c4ec8354ab8782"
+      },
+      {
+        "source_id": "FISRC-9adefaf867df19d6",
+        "source_url": "https://www.tradingview.com/news/stocktwits:c3fb917f9094b:0-spacex-will-be-largest-most-profitable-company-on-the-planet-says-veteran-elon-musk-bull-whose-funds-trail-us-markets/",
+        "source_title": "SpaceX Will Be 'Largest, Most Profitable Company On The Planet,' Says Veteran Elon Musk Bull Whose Funds Trail US Markets — TradingView News",
+        "source_content_hash": "3549f091090ec02b",
+        "quote": "Baron Capital has submitted a $1 billion order in the upcoming SpaceX IPO.",
+        "quote_hash": "e9e6aa400ba72e89e811139da45cef3b45fe9cfcde4b3551824cb7abba145c2d"
+      }
+    ]
+  }
+}

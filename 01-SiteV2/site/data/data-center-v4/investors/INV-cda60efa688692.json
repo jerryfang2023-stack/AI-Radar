@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-cda60efa688692",
+    "name": "Trevor Blackwell (YC)",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2025-10-31",
+    "latest_disclosed_at": "2025-10-31",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-19293a28df71778a",
+        "funding_insight_id": "FI-488e2ec37c8e7bc2",
+        "event_ids": [
+          "EV-e12b17260d19c5ff"
+        ],
+        "company_entity_id": "EN-f30ad7677baf7ea2",
+        "company_canonical_entity_id": "",
+        "company_name": "Adam",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$4.1 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4100000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "410 万美元"
+        },
+        "announced_at": "2025-10-31",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1e12e93a65d54b9a",
+            "source_url": "https://techcrunch.com/2025/10/31/yc-alum-adam-raises-4-1m-to-turn-viral-text-to-3d-tool-into-ai-copilot/",
+            "source_title": "YC 校友 Adam 获 410 万美元融资，将爆款文本转 3D 工具打造成 AI 智能体",
+            "source_content_hash": "49f3c01467bded27",
+            "quote": "Adam is also backed by angel investors, including Tim Glaser (PostHog), Trevor Blackwell (YC), and Theo Browne (T3 Chat)",
+            "quote_hash": "c236bbb9da99e74609afc935e94ce45c89e631d1524cbdc9a1cad10365051c71"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1e12e93a65d54b9a",
+        "source_url": "https://techcrunch.com/2025/10/31/yc-alum-adam-raises-4-1m-to-turn-viral-text-to-3d-tool-into-ai-copilot/",
+        "source_title": "YC 校友 Adam 获 410 万美元融资，将爆款文本转 3D 工具打造成 AI 智能体",
+        "source_content_hash": "49f3c01467bded27",
+        "quote": "Adam is also backed by angel investors, including Tim Glaser (PostHog), Trevor Blackwell (YC), and Theo Browne (T3 Chat)",
+        "quote_hash": "c236bbb9da99e74609afc935e94ce45c89e631d1524cbdc9a1cad10365051c71"
+      }
+    ]
+  }
+}

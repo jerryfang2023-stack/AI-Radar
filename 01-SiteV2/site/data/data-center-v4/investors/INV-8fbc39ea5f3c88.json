@@ -1,0 +1,326 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-8fbc39ea5f3c88",
+    "name": "20VC",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 5,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 5,
+    "first_disclosed_at": "2025-04-09",
+    "latest_disclosed_at": "2026-07-16",
+    "role_counts": {
+      "lead": 2,
+      "participant": 3
+    },
+    "round_codes": [
+      "seed",
+      "series_a",
+      "series_d"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-a83a3af1a4866fd5",
+        "canonical_entity_id": "",
+        "name": "Advanced Machine Intelligence Labs (AMI Labs)"
+      },
+      {
+        "entity_id": "EN-58b507456c52c9b3",
+        "canonical_entity_id": "EN-58b507456c52c9b3",
+        "name": "Archestra"
+      },
+      {
+        "entity_id": "EN-0decbc3b45f73b2b",
+        "canonical_entity_id": "EN-0decbc3b45f73b2b",
+        "name": "Entire Inc."
+      },
+      {
+        "entity_id": "EN-0caee180da9d0f3f",
+        "canonical_entity_id": "",
+        "name": "Fireworks AI Inc."
+      },
+      {
+        "entity_id": "EN-10905d25fc373f32",
+        "canonical_entity_id": "",
+        "name": "Solve Intelligence"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-64b27764def91163",
+        "funding_insight_id": "FI-3b1ea359415f476d",
+        "event_ids": [
+          "EV-4eaf3aabecae6016"
+        ],
+        "company_entity_id": "EN-0caee180da9d0f3f",
+        "company_canonical_entity_id": "",
+        "company_name": "Fireworks AI Inc.",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$1.505 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1505000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15.05 亿美元"
+        },
+        "announced_at": "2026-07-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d1237a4476f41ad9",
+            "source_url": "https://davidandgoliath.ai/daily-ai-briefing/fireworks-ai-1-5-billion-series-d-specialised-intelligence",
+            "source_title": "Fireworks AI $1.5B Series D: What… | David & Goliath",
+            "source_content_hash": "bbcd4459be4aa17d",
+            "quote": "Nvidia, Lightspeed Venture Partners, Bessemer Venture Partners, Menlo Ventures, and 20VC participating.",
+            "quote_hash": "634e72e688b462c8f5b9f6f69243e65eb4e0d54fa5711f832e4352e9ebf2d1fa"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-345ee7cd3909db0b",
+        "funding_insight_id": "FI-fe82f871887d3c1f",
+        "event_ids": [
+          "EV-f1a605a25af30dc5",
+          "EV-6ae3594aadfcd3d8"
+        ],
+        "company_entity_id": "EN-58b507456c52c9b3",
+        "company_canonical_entity_id": "EN-58b507456c52c9b3",
+        "company_name": "Archestra",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$10M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-06-02",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-2226010f84adae92",
+            "source_url": "https://siliconangle.com/2026/06/02/archestra-raises-10m-broker-ai-agent-access-corporate-data/",
+            "source_title": "Archestra 融资 1000 万美元，为 AI 智能体接入企业数据提供中介服务",
+            "source_content_hash": "37249690c82d8e0a",
+            "quote": "The seed round was led by 20VC",
+            "quote_hash": "3eec14ff335cb9f157578628b83cb3f1c8ba2cc2d7eda983bbe0f09365cb0c6d"
+          },
+          {
+            "source_id": "FISRC-50130a45d72291a2",
+            "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
+            "source_title": "Archestra.AI Announces $10M Seed 🎉 | Blog | Archestra",
+            "source_content_hash": "65e55f883bf21e63",
+            "quote": "we've raised a $10 million Seed round, led by 20VC",
+            "quote_hash": "7db49d2541be58708e5471ae36968e3ca07be5e9cefbaad9cfe6390586da5533"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d356a843fa9b5ed0",
+        "funding_insight_id": "FI-9c3c02658ff94312",
+        "event_ids": [
+          "EV-cded77b1de2db61a"
+        ],
+        "company_entity_id": "EN-a83a3af1a4866fd5",
+        "company_canonical_entity_id": "",
+        "company_name": "Advanced Machine Intelligence Labs (AMI Labs)",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "10.3亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1030000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10.3 亿美元"
+        },
+        "announced_at": "2026-03-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-115626db07e52373",
+            "source_url": "https://www.linkedin.com/posts/toyota-ventures_ami-labs-activity-7437189879689629697-0_Rg",
+            "source_title": "AMI Labs receives $1.03B Seed round for World Models development | Toyota Ventures posted on the topic | LinkedIn",
+            "source_content_hash": "f7ae81bef24b26df",
+            "quote": "20VC",
+            "quote_hash": "26883ee065fd9dbef1b111dc5d197215e08975d0f62d654b38636c60b0106eb2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e0f56219b3a7d1a2",
+        "funding_insight_id": "FI-5e96c3937673ac2b",
+        "event_ids": [
+          "EV-618e5729145025e4"
+        ],
+        "company_entity_id": "EN-0decbc3b45f73b2b",
+        "company_canonical_entity_id": "EN-0decbc3b45f73b2b",
+        "company_name": "Entire Inc.",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "6000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-02-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-62dc6d17f09030c0",
+            "source_url": "https://entire.io/news/former-github-ceo-thomas-dohmke-raises-60-million-seed-round",
+            "source_title": "前 GitHub CEO Thomas Dohmke 以创纪录的 6000 万美元种子轮融资推出 Entire，打造 AI 时代全球下一代开发者平台。",
+            "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+            "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital",
+            "quote_hash": "ac5b6d3b2d19e95d2e607c7dcef25640a6b13e17d7fa7a5d151d7a5c622797d2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3efa6a874bbbe79e",
+        "funding_insight_id": "FI-343cd8cad5810ba7",
+        "event_ids": [
+          "EV-86ca5af11ee4d275"
+        ],
+        "company_entity_id": "EN-10905d25fc373f32",
+        "company_canonical_entity_id": "",
+        "company_name": "Solve Intelligence",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$12M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1200 万美元"
+        },
+        "announced_at": "2025-04-09",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-37166b7fc62df887",
+            "source_url": "https://techcrunch.com/2025/04/09/microsoft-backs-solve-intelligence-in-12m-series-a-funding/",
+            "source_title": "Solve Intelligence 获 1200 万美元新融资，将 AI 引入知识产权与专利工作流程",
+            "source_content_hash": "04da38491f1bcf53",
+            "quote": "a Series A funding round, led by 20VC",
+            "quote_hash": "de26b6b966f8f8750ffa4009013e2defb92ca992ba27d53a8252745d48412991"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-d1237a4476f41ad9",
+        "source_url": "https://davidandgoliath.ai/daily-ai-briefing/fireworks-ai-1-5-billion-series-d-specialised-intelligence",
+        "source_title": "Fireworks AI $1.5B Series D: What… | David & Goliath",
+        "source_content_hash": "bbcd4459be4aa17d",
+        "quote": "Nvidia, Lightspeed Venture Partners, Bessemer Venture Partners, Menlo Ventures, and 20VC participating.",
+        "quote_hash": "634e72e688b462c8f5b9f6f69243e65eb4e0d54fa5711f832e4352e9ebf2d1fa"
+      },
+      {
+        "source_id": "FISRC-2226010f84adae92",
+        "source_url": "https://siliconangle.com/2026/06/02/archestra-raises-10m-broker-ai-agent-access-corporate-data/",
+        "source_title": "Archestra 融资 1000 万美元，为 AI 智能体接入企业数据提供中介服务",
+        "source_content_hash": "37249690c82d8e0a",
+        "quote": "The seed round was led by 20VC",
+        "quote_hash": "3eec14ff335cb9f157578628b83cb3f1c8ba2cc2d7eda983bbe0f09365cb0c6d"
+      },
+      {
+        "source_id": "FISRC-50130a45d72291a2",
+        "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
+        "source_title": "Archestra.AI Announces $10M Seed 🎉 | Blog | Archestra",
+        "source_content_hash": "65e55f883bf21e63",
+        "quote": "we've raised a $10 million Seed round, led by 20VC",
+        "quote_hash": "7db49d2541be58708e5471ae36968e3ca07be5e9cefbaad9cfe6390586da5533"
+      },
+      {
+        "source_id": "FISRC-115626db07e52373",
+        "source_url": "https://www.linkedin.com/posts/toyota-ventures_ami-labs-activity-7437189879689629697-0_Rg",
+        "source_title": "AMI Labs receives $1.03B Seed round for World Models development | Toyota Ventures posted on the topic | LinkedIn",
+        "source_content_hash": "f7ae81bef24b26df",
+        "quote": "20VC",
+        "quote_hash": "26883ee065fd9dbef1b111dc5d197215e08975d0f62d654b38636c60b0106eb2"
+      },
+      {
+        "source_id": "FISRC-62dc6d17f09030c0",
+        "source_url": "https://entire.io/news/former-github-ceo-thomas-dohmke-raises-60-million-seed-round",
+        "source_title": "前 GitHub CEO Thomas Dohmke 以创纪录的 6000 万美元种子轮融资推出 Entire，打造 AI 时代全球下一代开发者平台。",
+        "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+        "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital",
+        "quote_hash": "ac5b6d3b2d19e95d2e607c7dcef25640a6b13e17d7fa7a5d151d7a5c622797d2"
+      },
+      {
+        "source_id": "FISRC-37166b7fc62df887",
+        "source_url": "https://techcrunch.com/2025/04/09/microsoft-backs-solve-intelligence-in-12m-series-a-funding/",
+        "source_title": "Solve Intelligence 获 1200 万美元新融资，将 AI 引入知识产权与专利工作流程",
+        "source_content_hash": "04da38491f1bcf53",
+        "quote": "a Series A funding round, led by 20VC",
+        "quote_hash": "de26b6b966f8f8750ffa4009013e2defb92ca992ba27d53a8252745d48412991"
+      }
+    ]
+  }
+}

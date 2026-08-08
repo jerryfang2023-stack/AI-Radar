@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-f27ad1613e5916",
+    "name": "Phosphor Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2026-03-10",
+    "latest_disclosed_at": "2026-03-31",
+    "role_counts": {
+      "participant": 2
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-befc92b3a019d04c",
+        "canonical_entity_id": "",
+        "name": "AgentMail"
+      },
+      {
+        "entity_id": "EN-f5cfcb570b7edac2",
+        "canonical_entity_id": "",
+        "name": "Nexus Enterprises, Inc"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-5aa53570d582c143",
+        "funding_insight_id": "FI-19731873c2b7d1c1",
+        "event_ids": [
+          "EV-c8928410f6c145eb"
+        ],
+        "company_entity_id": "EN-f5cfcb570b7edac2",
+        "company_canonical_entity_id": "",
+        "company_name": "Nexus Enterprises, Inc",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "$4.3M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "430 万美元"
+        },
+        "announced_at": "2026-03-31",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-14ff8eaae437ca5e",
+            "source_url": "https://www.globenewswire.com/de/news-release/2026/03/31/3265301/0/en/Nexus-Raises-4-3M-Seed-Round-to-Help-Business-Teams-Deploy-AI-Agents.html",
+            "source_title": "Nexus 获430万美元种子轮融资，助力业务团队部署",
+            "source_content_hash": "ed9ee46cde0da7e9",
+            "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital",
+            "quote_hash": "624cd64acb9b0781f661d88dc6fea7477fd130d0bf1e7a938be291d30555f659"
+          },
+          {
+            "source_id": "FISRC-21e200be4083b3a6",
+            "source_url": "https://www.finsmes.com/2026/04/nexus-raises-4-3m-in-seed-funding.html",
+            "source_title": "Nexus Raises $4.3M in Seed Funding",
+            "source_content_hash": "c0b3dc5a4e05a49c",
+            "quote": "The round was led by General Catalyst, with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital",
+            "quote_hash": "0f3e195a740becd895c67f974da211c5988a400fbde67b6a3952a62b32502067"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c9cacfeda6f2f8e6",
+        "funding_insight_id": "FI-94de7d23d9ebd5ba",
+        "event_ids": [
+          "EV-9055cb4fa2b4ee62"
+        ],
+        "company_entity_id": "EN-befc92b3a019d04c",
+        "company_canonical_entity_id": "",
+        "company_name": "AgentMail",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$6M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 6000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "600 万美元"
+        },
+        "announced_at": "2026-03-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f961f60a13274764",
+            "source_url": "https://techcrunch.com/2026/03/10/agentmail-raises-6m-to-build-an-email-service-for-ai-agents/",
+            "source_title": "AgentMail 获 600 万美元融资，为 AI 智能体构建邮件服务",
+            "source_content_hash": "789e41b1b6992f50",
+            "quote": "with participation from Y Combinator, Phosphor Capital",
+            "quote_hash": "0fc95358d15cb214250546b894e9f86b4165069e09b4cc8f5bb04282d1e66f8f"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-14ff8eaae437ca5e",
+        "source_url": "https://www.globenewswire.com/de/news-release/2026/03/31/3265301/0/en/Nexus-Raises-4-3M-Seed-Round-to-Help-Business-Teams-Deploy-AI-Agents.html",
+        "source_title": "Nexus 获430万美元种子轮融资，助力业务团队部署",
+        "source_content_hash": "ed9ee46cde0da7e9",
+        "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital",
+        "quote_hash": "624cd64acb9b0781f661d88dc6fea7477fd130d0bf1e7a938be291d30555f659"
+      },
+      {
+        "source_id": "FISRC-21e200be4083b3a6",
+        "source_url": "https://www.finsmes.com/2026/04/nexus-raises-4-3m-in-seed-funding.html",
+        "source_title": "Nexus Raises $4.3M in Seed Funding",
+        "source_content_hash": "c0b3dc5a4e05a49c",
+        "quote": "The round was led by General Catalyst, with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital",
+        "quote_hash": "0f3e195a740becd895c67f974da211c5988a400fbde67b6a3952a62b32502067"
+      },
+      {
+        "source_id": "FISRC-f961f60a13274764",
+        "source_url": "https://techcrunch.com/2026/03/10/agentmail-raises-6m-to-build-an-email-service-for-ai-agents/",
+        "source_title": "AgentMail 获 600 万美元融资，为 AI 智能体构建邮件服务",
+        "source_content_hash": "789e41b1b6992f50",
+        "quote": "with participation from Y Combinator, Phosphor Capital",
+        "quote_hash": "0fc95358d15cb214250546b894e9f86b4165069e09b4cc8f5bb04282d1e66f8f"
+      }
+    ]
+  }
+}

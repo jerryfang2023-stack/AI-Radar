@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-aca994450bacd5",
+    "name": "Nat Friedman",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2023-06-27",
+    "latest_disclosed_at": "2026-05-20",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "other_current_round": 1
+    },
+    "round_codes": [
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-7209ec6f68ac0bcd",
+        "canonical_entity_id": "",
+        "name": "Reka"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-1d34c9b2d73f5093",
+        "funding_insight_id": "FI-664cc90f57688153",
+        "event_ids": [
+          "EV-44a4e92c03a31ab1"
+        ],
+        "company_entity_id": "EN-ce65fa41b16c33ff",
+        "company_canonical_entity_id": "",
+        "company_name": "Viktor",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "€64.7 million ($75 million)",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 64700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6470 万欧元"
+        },
+        "announced_at": "2026-05-20",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce83b857608dabeb",
+            "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",
+            "source_title": "AI 同事初创公司 Viktor 在推出后 10 周内达到 1290 万欧元营收运行率，随后完成 6470 万欧元 A 轮融资",
+            "source_content_hash": "bc6dd70ea1b6ac85",
+            "quote": "Nat Friedman (former GitHub CEO)",
+            "quote_hash": "710bfbc81f5d7f8f037ec0be6fa40a1ecde8dc3b51ac59f3491bc92bbc5ad40e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4f4170604df92c78",
+        "funding_insight_id": "FI-2959f95168aa0a55",
+        "event_ids": [
+          "EV-6e79974732a5db6b"
+        ],
+        "company_entity_id": "EN-7209ec6f68ac0bcd",
+        "company_canonical_entity_id": "",
+        "company_name": "Reka",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露",
+        "amount_original": "$58 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 58000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5800 万美元"
+        },
+        "announced_at": "2023-06-27",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮天使投资人",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-4f876f1107004ec7",
+            "source_url": "https://techcrunch.com/2023/06/27/reka-emerges-from-stealth-to-build-custom-ai-models-for-the-enterprise/",
+            "source_title": "Reka 走出隐身模式，为企业构建定制 AI 模型",
+            "source_content_hash": "b0bfe562440f841d",
+            "quote": "alongside a cohort of angel investors that included former GitHub CEO Nat Friedman",
+            "quote_hash": "1fe487c3fbe257a231c8d402abe0cd8ee8336aec2bdcc91df903773b67494bde"
+          },
+          {
+            "source_id": "FISRC-3857ec64255b238a",
+            "source_url": "https://www.gaebler.com/VC-Funding-27D9E8DE-B2F9-4ED4-BADA-2D757FCF7E65-Reka-06-28-2023",
+            "source_title": "Reka 6/28/2023 Capital Raise - Gaebler.com Venture Capital Database",
+            "source_content_hash": "b41fbd4490777f66",
+            "quote": "private investors (Nat Friedman)",
+            "quote_hash": "1601affa35c16899a25009f8622d330bfdc26eaa26aa635d92636c5f3f970047"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-ce83b857608dabeb",
+        "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",
+        "source_title": "AI 同事初创公司 Viktor 在推出后 10 周内达到 1290 万欧元营收运行率，随后完成 6470 万欧元 A 轮融资",
+        "source_content_hash": "bc6dd70ea1b6ac85",
+        "quote": "Nat Friedman (former GitHub CEO)",
+        "quote_hash": "710bfbc81f5d7f8f037ec0be6fa40a1ecde8dc3b51ac59f3491bc92bbc5ad40e"
+      },
+      {
+        "source_id": "FISRC-4f876f1107004ec7",
+        "source_url": "https://techcrunch.com/2023/06/27/reka-emerges-from-stealth-to-build-custom-ai-models-for-the-enterprise/",
+        "source_title": "Reka 走出隐身模式，为企业构建定制 AI 模型",
+        "source_content_hash": "b0bfe562440f841d",
+        "quote": "alongside a cohort of angel investors that included former GitHub CEO Nat Friedman",
+        "quote_hash": "1fe487c3fbe257a231c8d402abe0cd8ee8336aec2bdcc91df903773b67494bde"
+      },
+      {
+        "source_id": "FISRC-3857ec64255b238a",
+        "source_url": "https://www.gaebler.com/VC-Funding-27D9E8DE-B2F9-4ED4-BADA-2D757FCF7E65-Reka-06-28-2023",
+        "source_title": "Reka 6/28/2023 Capital Raise - Gaebler.com Venture Capital Database",
+        "source_content_hash": "b41fbd4490777f66",
+        "quote": "private investors (Nat Friedman)",
+        "quote_hash": "1601affa35c16899a25009f8622d330bfdc26eaa26aa635d92636c5f3f970047"
+      }
+    ]
+  }
+}

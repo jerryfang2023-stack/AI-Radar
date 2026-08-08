@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-e06b600d778f9f",
+    "name": "Forestay Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-05-21",
+    "latest_disclosed_at": "2026-05-21",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-d6386c59a6bcfcb1",
+        "canonical_entity_id": "",
+        "name": "Pivot"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-ae8c95b4df96f18d",
+        "funding_insight_id": "FI-d3ef6c0ebcd62288",
+        "event_ids": [
+          "EV-63236c15166b71e0"
+        ],
+        "company_entity_id": "EN-d6386c59a6bcfcb1",
+        "company_canonical_entity_id": "",
+        "company_name": "Pivot",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$40m",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-05-21",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-58b2708f2adcb70e",
+            "source_url": "https://thenextweb.com/news/pivot-40m-series-b-agentic-ai-procurement-operating-system",
+            "source_title": "Pivot 获4000万美元B轮融资，推企业级AI代理采购操作系统，解决遗留软件未修复的问题",
+            "source_content_hash": "4c1272518f44f483",
+            "quote": "has raised $40m in a Series B led by Forestay Capital and Notion Capital",
+            "quote_hash": "17b6e623e7eae5e5597b6fbff227feabc152ea69596a740e7b1bfd850e684029"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-58b2708f2adcb70e",
+        "source_url": "https://thenextweb.com/news/pivot-40m-series-b-agentic-ai-procurement-operating-system",
+        "source_title": "Pivot 获4000万美元B轮融资，推企业级AI代理采购操作系统，解决遗留软件未修复的问题",
+        "source_content_hash": "4c1272518f44f483",
+        "quote": "has raised $40m in a Series B led by Forestay Capital and Notion Capital",
+        "quote_hash": "17b6e623e7eae5e5597b6fbff227feabc152ea69596a740e7b1bfd850e684029"
+      }
+    ]
+  }
+}

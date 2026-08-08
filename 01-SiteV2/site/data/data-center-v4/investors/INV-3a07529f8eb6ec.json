@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-3a07529f8eb6ec",
+    "name": "Betaworks Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2023-08-24",
+    "latest_disclosed_at": "2023-08-24",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-1a5c084cd8bf68fc",
+        "funding_insight_id": "FI-c6daec8079df9f74",
+        "event_ids": [
+          "EV-386c205c8bbf537d"
+        ],
+        "company_entity_id": "EN-d9352ce019e77ab3",
+        "company_canonical_entity_id": "EN-d9352ce019e77ab3",
+        "company_name": "Hugging Face",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$235 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 235000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.35 亿美元"
+        },
+        "announced_at": "2023-08-24",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-3765d5d1c13d4da7",
+            "source_url": "https://techcrunch.com/2023/08/24/hugging-face-raises-235m-from-investors-including-salesforce-and-nvidia/",
+            "source_title": "Hugging Face raises $235M from investors, including Salesforce and Nvidia | TechCrunch",
+            "source_content_hash": "b09503dc9505b74d",
+            "quote": "Hugging Face has raised a total of $395.2 million to date, with its first ever check coming from Betaworks Ventures",
+            "quote_hash": "ccd7c25814dea7367afa9a462998fdc3d29e555f64a75f5ab7e72dafe194eb74"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-3765d5d1c13d4da7",
+        "source_url": "https://techcrunch.com/2023/08/24/hugging-face-raises-235m-from-investors-including-salesforce-and-nvidia/",
+        "source_title": "Hugging Face raises $235M from investors, including Salesforce and Nvidia | TechCrunch",
+        "source_content_hash": "b09503dc9505b74d",
+        "quote": "Hugging Face has raised a total of $395.2 million to date, with its first ever check coming from Betaworks Ventures",
+        "quote_hash": "ccd7c25814dea7367afa9a462998fdc3d29e555f64a75f5ab7e72dafe194eb74"
+      }
+    ]
+  }
+}

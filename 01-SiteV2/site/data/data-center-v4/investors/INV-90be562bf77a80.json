@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-90be562bf77a80",
+    "name": "Junaid Hussein",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-22",
+    "latest_disclosed_at": "2026-07-22",
+    "role_counts": {
+      "other_current_round": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-834cc12fc35adde7",
+        "canonical_entity_id": "",
+        "name": "Arrakis"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-f6271be72ff4e8d2",
+        "funding_insight_id": "FI-3c407a7a4dd718f1",
+        "event_ids": [
+          "EV-754e83c2d19005fe"
+        ],
+        "company_entity_id": "EN-834cc12fc35adde7",
+        "company_canonical_entity_id": "",
+        "company_name": "Arrakis",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$30 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-07-22",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮天使投资人",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-ac4fd601f33650ff",
+            "source_url": "https://www.financialcontent.com/article/bizwire-2026-7-22-arrakis-comes-out-of-stealth-with-38m-to-help-industrial-enterprises-compete-in-the-ai-era",
+            "source_title": "Arrakis 携 3800 万美元走出隐身模式，助力工业企业竞争 AI 时代",
+            "source_content_hash": "4d42f1ad7c55a3e3",
+            "quote": "includes backing from prominent technology leaders, including Olivier Pomel, founder and chief executive of Datadog, Olivier Godement, OpenAI’s Head of business products and Junaid Hussein, founder of Cambridge Aerospace",
+            "quote_hash": "c8d7316720027967286bdbc2bcc8ea4ebb8cee5bb697f4bf2407294720eb3038"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-ac4fd601f33650ff",
+        "source_url": "https://www.financialcontent.com/article/bizwire-2026-7-22-arrakis-comes-out-of-stealth-with-38m-to-help-industrial-enterprises-compete-in-the-ai-era",
+        "source_title": "Arrakis 携 3800 万美元走出隐身模式，助力工业企业竞争 AI 时代",
+        "source_content_hash": "4d42f1ad7c55a3e3",
+        "quote": "includes backing from prominent technology leaders, including Olivier Pomel, founder and chief executive of Datadog, Olivier Godement, OpenAI’s Head of business products and Junaid Hussein, founder of Cambridge Aerospace",
+        "quote_hash": "c8d7316720027967286bdbc2bcc8ea4ebb8cee5bb697f4bf2407294720eb3038"
+      }
+    ]
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-d406ee01f87e41",
+    "name": "Vaibhav Domkundwar",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-07",
+    "latest_disclosed_at": "2026-07-16",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "other_current_round": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-2a920347dfcf07a7",
+        "canonical_entity_id": "EN-2a920347dfcf07a7",
+        "name": "Aina"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-ac5143c021cf988d",
+        "funding_insight_id": "FI-20e67383e8533b80",
+        "event_ids": [
+          "EV-02882e6f5e1902c6"
+        ],
+        "company_entity_id": "EN-2a920347dfcf07a7",
+        "company_canonical_entity_id": "EN-2a920347dfcf07a7",
+        "company_name": "Aina",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "550万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "550 万美元"
+        },
+        "announced_at": "2026-07-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮天使投资人",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-9e755507b523ddb2",
+            "source_url": "https://inc42.com/buzz/aina-raises-5-5-mn-from-info-edge-ventures-360-one-asset-to-build-ai-native-interfaces/",
+            "source_title": "Aina 从 Info Edge 等机构融资 550 万美元，用于构建 AI 硬件接口",
+            "source_content_hash": "495ca48cb14fa6d7",
+            "quote": "Better Capital founder Vaibhav Domkundwar, among others, also participated in the round.",
+            "quote_hash": "3350e36888488d97d6159578cf4a59e23295e0a3c0b9af80aa027257fc6687a7"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-76bf36e46aef5e82",
+        "funding_insight_id": "FI-aeb33ba9223229b0",
+        "event_ids": [
+          "EV-869c9ea96c58873d"
+        ],
+        "company_entity_id": "EN-4e0a97cb956fb1c6",
+        "company_canonical_entity_id": "",
+        "company_name": "Mowito",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "Pre-Seed",
+        "amount_original": "$3M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 万美元"
+        },
+        "announced_at": "2026-07-07",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-a357ef46b52de45f",
+            "source_url": "https://www.woodenscale.ai/blogs/mowito-funding-pre-seed-3m/",
+            "source_title": "Mowito Physical AI Raises $3M for US Factory Push | WoodenScale AI Blog | WoodenScale AI",
+            "source_content_hash": "aee7b0df3309885d",
+            "quote": "Angel backers include Thinking Machines Lab CTO Soumith Chintala, Foundry Robotics founder and CEO Adarsh Kulkarni, Coformer.ai cofounder and CEO Ashish Kulkarni, and Better Capital founder and CEO Vaibhav Domkundwar.",
+            "quote_hash": "0f75776be243b345cea4172241d646fa108827772e03b325cdd8fe8ec28e46c2"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-9e755507b523ddb2",
+        "source_url": "https://inc42.com/buzz/aina-raises-5-5-mn-from-info-edge-ventures-360-one-asset-to-build-ai-native-interfaces/",
+        "source_title": "Aina 从 Info Edge 等机构融资 550 万美元，用于构建 AI 硬件接口",
+        "source_content_hash": "495ca48cb14fa6d7",
+        "quote": "Better Capital founder Vaibhav Domkundwar, among others, also participated in the round.",
+        "quote_hash": "3350e36888488d97d6159578cf4a59e23295e0a3c0b9af80aa027257fc6687a7"
+      },
+      {
+        "source_id": "FISRC-a357ef46b52de45f",
+        "source_url": "https://www.woodenscale.ai/blogs/mowito-funding-pre-seed-3m/",
+        "source_title": "Mowito Physical AI Raises $3M for US Factory Push | WoodenScale AI Blog | WoodenScale AI",
+        "source_content_hash": "aee7b0df3309885d",
+        "quote": "Angel backers include Thinking Machines Lab CTO Soumith Chintala, Foundry Robotics founder and CEO Adarsh Kulkarni, Coformer.ai cofounder and CEO Ashish Kulkarni, and Better Capital founder and CEO Vaibhav Domkundwar.",
+        "quote_hash": "0f75776be243b345cea4172241d646fa108827772e03b325cdd8fe8ec28e46c2"
+      }
+    ]
+  }
+}

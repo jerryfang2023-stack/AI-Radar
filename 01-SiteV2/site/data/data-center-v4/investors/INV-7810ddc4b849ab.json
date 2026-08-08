@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-7810ddc4b849ab",
+    "name": "力合金融",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-07-03",
+    "latest_disclosed_at": "2026-07-03",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-6c83d152cfb73f13",
+        "funding_insight_id": "FI-0d0e4d0d5b40a2c0",
+        "event_ids": [
+          "EV-ee38c30c00b2a754"
+        ],
+        "company_entity_id": "EN-2b60b46911fc1640",
+        "company_canonical_entity_id": "",
+        "company_name": "上海如身机器人科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "亿元级",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿人民币–10 亿人民币"
+        },
+        "announced_at": "2026-07-03",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使++轮独家投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-244840a365364721",
+            "source_url": "https://startup.acebridge.net/ai_outputs/2025/10/12/capital-1760168009294.shtml",
+            "source_title": "零以portfolio：「如身机器人」完成千万级天使++轮融资，力合金融投资， 加速智慧康养机器人商业化落地",
+            "source_content_hash": "e655a8352eb7d102",
+            "quote": "于9月完成千万级人民币天使++轮融资，力合金融独家投资",
+            "quote_hash": "026a934475d3fad844cedc781690b21bb3eaecab0bb0ff4e745e0ebd588dd525"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-244840a365364721",
+        "source_url": "https://startup.acebridge.net/ai_outputs/2025/10/12/capital-1760168009294.shtml",
+        "source_title": "零以portfolio：「如身机器人」完成千万级天使++轮融资，力合金融投资， 加速智慧康养机器人商业化落地",
+        "source_content_hash": "e655a8352eb7d102",
+        "quote": "于9月完成千万级人民币天使++轮融资，力合金融独家投资",
+        "quote_hash": "026a934475d3fad844cedc781690b21bb3eaecab0bb0ff4e745e0ebd588dd525"
+      }
+    ]
+  }
+}

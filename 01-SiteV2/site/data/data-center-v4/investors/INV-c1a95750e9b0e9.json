@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-c1a95750e9b0e9",
+    "name": "IVP",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-03-12",
+    "latest_disclosed_at": "2026-03-12",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "FICO-wonderful",
+        "canonical_entity_id": "",
+        "name": "Wonderful"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-dab2f38a3a543902",
+        "funding_insight_id": "FI-2b8ea19368209f49",
+        "event_ids": [
+          "EV-aa33ca051f3a7f78",
+          "EV-0ade039d36e077ae",
+          "EV-a84ec4216d3ded6d"
+        ],
+        "company_entity_id": "FICO-wonderful",
+        "company_canonical_entity_id": "",
+        "company_name": "Wonderful",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "1.5亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "announced_at": "2026-03-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c29f00f067579660",
+            "source_url": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
+            "source_title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets | Insight Partners",
+            "source_content_hash": "67f409ee5b146b1d",
+            "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures",
+            "quote_hash": "4b692c3189d4f946e9961e92b0f637a386a65a07795ecd5b1e7edb1c27ae94d8"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-c29f00f067579660",
+        "source_url": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
+        "source_title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets | Insight Partners",
+        "source_content_hash": "67f409ee5b146b1d",
+        "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures",
+        "quote_hash": "4b692c3189d4f946e9961e92b0f637a386a65a07795ecd5b1e7edb1c27ae94d8"
+      }
+    ]
+  }
+}

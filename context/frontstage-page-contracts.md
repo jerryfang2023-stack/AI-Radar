@@ -1,7 +1,7 @@
 ---
 status: current
 scope: frontstage-page-contracts
-last_updated: 2026-07-31
+last_updated: 2026-08-08
 use_when:
   - page change
   - navigation change
@@ -13,7 +13,7 @@ priority: current
 
 # Frontstage Page Contracts
 
-SITE-V4.4.1 is the only current public page system; ENTITY-V1.0 and RELATION-V2.1 remain its factual entity-history contracts. Public pages and subordinate routes use the V4 logo header and focused shared sidebar. Legacy V3 column URLs are redirects only. These page contracts do not define V4 canonical data truth.
+SITE-V4.5.0 is the only current public page system; ENTITY-V1.0 and RELATION-V2.1 remain its factual entity-history contracts. Public pages and subordinate routes use the V4 logo header and focused shared sidebar. Legacy V3 column URLs are redirects only. These page contracts do not define V4 canonical data truth.
 
 Read `context/version-ledger.md` first. This file defines what each current frontstage page must keep and what must not contaminate it.
 
@@ -21,9 +21,9 @@ Read `context/version-ledger.md` first. This file defines what each current fron
 
 | Page | Current Role | Must Keep | Must Not Contain | Gates |
 |---|---|---|---|---|
-| Data Center | `01-SiteV2/site/data-center.html` | Four public entries: Event Library (`事件库`), unchanged Community Intelligence, unchanged First-Line Viewpoints, and Entity Library (`实体库`). Event Library defaults to the latest daily batch and exposes complete FDE / AI Hardware event-ID sets through the `theme` filter; direct deep views remain supported. Entity details preserve evidence-backed one-hop relationships. | Separate primary sidebar entries for FDE, AI Hardware, or Relationship Map; an FDE “shortcut” that covers deployment events but drops partnership-backed FDE records; importance/opportunity/recommendation fields in factual views; V3 modules | syntax + V4 data tests + integrity gate + frontstage regression |
+| Data Center | `01-SiteV2/site/data-center.html` | Four public entries: Event Library (`事件库`), unchanged Community Intelligence, unchanged First-Line Viewpoints, and Entity Library (`实体库`). Event Library defaults to the latest daily batch and exposes complete FDE / AI Hardware event-ID sets through the `theme` filter; direct deep views remain supported. Entity Library includes an evidence-backed Investment Institution projection, and entity details preserve evidence-backed activity or one-hop relationships. | Separate primary sidebar entries for FDE, AI Hardware, Investment Institutions, or Relationship Map; an FDE “shortcut” that covers deployment events but drops partnership-backed FDE records; importance/opportunity/recommendation fields in factual views; V3 modules | syntax + V4 data tests + institution schema/evidence gate + integrity gate + frontstage regression |
 | Trend Radar | `01-SiteV2/site/trend-radar.html` | Independent Application Center entry; daily five-category accepted changes, weekly evidence-backed structure changes, monthly factual snapshots, observed-data-day coverage, and event/entity/source links | Report prose; opportunity/trend scores; heat, maturity, rankings or recommendations; First-Line Viewpoints, Community Intelligence, V3 Cards, trend candidates or opportunity signals as factual inputs; canonical-data mutation | projection gate + exact-count test + evidence-lineage test + interaction/visual smoke + version consistency |
-| Funding Insights | `01-SiteV2/site/funding-insights.html` | Guanlan Research capital-topic subroute; verified funding events from the daily batch or bounded three-month historical admission trigger the evidence-backed research product and the page marks Guanlan Research as current | A primary Application Center sidebar entry; free-text round variants; historical or round-ambiguous investors presented as current; duplicate company-round cards; silent evidence gaps; automatic mutation of V4 canonical entities or relationships | schema + current-investor separation + company-round aggregation + exact-quote evidence gate + automatic-publication test + frontstage regression |
+| Funding Insights | `01-SiteV2/site/funding-insights.html` | Guanlan Research capital-topic subroute; verified funding events from the daily batch or bounded three-month historical admission trigger the evidence-backed research product. Every card exposes normalized and original round/amount, financing date, disclosure status, investor roles, cumulative amount basis, and stable historical rounds; the page marks Guanlan Research as current. | A primary Application Center sidebar entry; free-text round variants; historical or round-ambiguous investors presented as current; duplicate company-round cards; silent evidence gaps; automatic mutation of V4 canonical entities or relationships | schema + amount normalization + current-investor separation + company-round/history aggregation + exact-quote evidence gate + automatic-publication test + frontstage regression |
 | Guanlan Research | `01-SiteV2/site/intelligence-map.html` | Public Application Center hub; latest Monthly / Weekly report entries and archives; explicit capital/funding and enterprise AI deployment topic entrances; accepted reports sourced from `01-SiteV2/content/12-applications/industry-reports/` | Opportunity Map as a sidebar entry; retired `行业报告` / `报告中心` / `Reports Center` hub naming; Relation Paths; separate sidebar entries for Funding, Weekly, or Monthly reports; V3 navigation or graph modules | syntax + visual smoke + frontstage regression |
 | Opportunity Map | `01-SiteV2/site/opportunity-map.html` | Unlisted internal lab route with `noindex,nofollow`; source-backed maps, human-reviewed Direction Cards, and evidence modals remain available for evaluation | A primary Application Center sidebar entry; Signal Card or V3 desk evidence; unreviewed model output; unsupported factual numbers; report cards; opaque scores; Relation Paths | syntax + V4 evidence gate + human-review boundary + data projection + interaction smoke + frontstage regression |
 | Weekly / Monthly Details | `weekly-ai-business-change-radar*.html`, `monthly-business-structure*.html` | Complete accepted reports using the V4 logo header, focused shared sidebar, responsive editorial layouts, and Guanlan Research return path | V3 topbar/assets/routes; raw Markdown dumps; detached report navigation; public V3 JSON fetches | syntax + content-source gate + desktop/mobile visual smoke + frontstage regression |
@@ -38,7 +38,7 @@ Event Library, Entity Library, and Trend Radar expose the same evidence-backed C
 
 | Scope | Version | Meaning |
 |---|---|---|
-| Main website | `SITE-V4.4.1-china-market-scope` | Keeps the focused two-center information architecture and adds evidence-backed China-market filters to existing data surfaces without adding navigation entries. |
+| Main website | `SITE-V4.5.0-investment-institution-library` | Keeps the focused two-center information architecture, adds evidence-backed investment institutions inside Entity Library, and completes financing fields inside the existing Funding Insights subroute without adding navigation entries. |
 | Business Signals factual lane | `EVENT-V1.1` | SourceArtifact / RawDocument / Claim / CanonicalEvent production only; archived Cards and trend candidates are not daily inputs or public pages. |
 | First-Line Viewpoints column | `FLV-V1.1.0-history-backfill` | Adds accepted committed morning history to the V4 projection while keeping current morning RSS and afternoon follow-builders production independent; original-URL dedupe, approved Chinese translation provenance, AI relevance, and opinion tags remain release gates. |
 | Community Intelligence column | `CINT-V1.0.2-publication-waiting-gate` | Keeps local logged-in collection separate from GitHub publication and treats open PR / queued workflow states after healthy same-date data as Waiting, not Problems. |
@@ -46,17 +46,17 @@ Event Library, Entity Library, and Trend Radar expose the same evidence-backed C
 | Guanlan Research column | `REPORTS-V1.2.0-research-hub` | Owns periodic reports and archives plus capital/funding and enterprise AI deployment topic entrances; its publication gate remains independent from Opportunity Map generation. |
 | Opportunity Map column | `OMAP-V2.0.0-v4-evidence` | Owns the dedicated V4 evidence projection, two source-backed matrices, and human-reviewed Direction Cards with click-to-open Event, Claim, and Source evidence. |
 | Trend Radar column | `TRADAR-V1.1.0-tag-v4-1` | Adds TAG-V4.1 classification distributions and China-market scope filtering to the accepted-event daily/weekly/monthly projection while preserving evidence links and factual-only boundaries. |
-| Funding Insights column | `FUNDING-INSIGHT-V1.2.0-market-category` | Owns normalized funding rounds, reviewed company-and-round aggregation, a CB Insights-aligned AI Infrastructure / Horizontal AI / Vertical AI market category above the detailed product-form Facet, structured investment theses, explicit customer research status, evidence-bounded application judgments, automatic fail-closed publication, and governed entity-review candidates without mutating canonical facts. |
+| Funding Insights column | `FUNDING-INSIGHT-V1.4.0-financing-fields` | Owns normalized funding rounds and amounts with source text retained, financing/disclosure dates and status, investor roles, reviewed company-and-round/history aggregation, cumulative amount basis, a CB Insights-aligned market hierarchy, structured investment theses, evidence-bounded application judgments, automatic fail-closed publication, and the `INVESTMENT-INSTITUTION-V1.0` evidence projection without mutating canonical facts. |
 | Person review | `PERSON-REVIEW-V1.1` | Admits reviewed natural people from canonical events, First-Line Viewpoints, or the accepted funding-founder ledger. Funding-only profiles expose funding cards and exact source locators but cannot create `RELATION-V2.1`; quarantined accounts and unreviewed funding candidates remain outside the public person index. |
 
 ## Navigation
 
-The approved SITE-V4.4.1 navigation has two sidebar groups:
+The approved SITE-V4.5.0 navigation has two sidebar groups:
 
 - Data Center: Event Library, Community Intelligence, First-Line Viewpoints, Entity Library.
 - Application Center: Trend Radar, Guanlan Research.
 
-Entity Library (`实体库`, internal contract name: Entity Index) is the single list entrance for companies, organizations, models, products, services, people, AI technologies, use cases, and industries. It must appear after First-Line Viewpoints; Company and Product must not return as separate sidebar entries.
+Entity Library (`实体库`, internal contract name: Entity Index) is the single list entrance for companies, organizations, investment institutions, models, products, services, people, AI technologies, use cases, and industries. Investment institutions are an evidence-backed application projection with explicit subject types; they do not become canonical V4 entities automatically. Entity Library must appear after First-Line Viewpoints; Company, Product, and Investment Institution must not return as separate sidebar entries.
 
 Entity pages show only source-backed histories and relationships. The relationship deep route may remain for direct access, but it is not primary navigation. It may render only an entity-centered one-hop view whose edges resolve to accepted events, exact Claims, and source artifacts.
 

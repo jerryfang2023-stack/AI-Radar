@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-299bf478cf7c4a",
+    "name": "华熙生物",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-02-23",
+    "latest_disclosed_at": "2026-02-23",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-a4b02f201e679f36",
+        "funding_insight_id": "FI-39ef2aaaed606bfe",
+        "event_ids": [
+          "EV-af8e95dbe06ac083"
+        ],
+        "company_entity_id": "EN-ce22f929f4a17467",
+        "company_canonical_entity_id": "",
+        "company_name": "智平方（AI² Robotics）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "超10亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": 1000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 10 亿人民币"
+        },
+        "announced_at": "2026-02-23",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f6dd24cc4ca544d8",
+            "source_url": "https://robotscope.net/companies/zhisquare-intelligence",
+            "source_title": "智平方 · Series B — RobotScope",
+            "source_content_hash": "5904bd05269fe1c8",
+            "quote": "多轮系列 数亿级×7 轮 2025（半年内） 深创投、国投、达晨财智、华熙生物等",
+            "quote_hash": "474bf29952dbbf5c8be1a88398dc1c2e361fd4f49dd5f4c98bd4c3a9328f8c52"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-f6dd24cc4ca544d8",
+        "source_url": "https://robotscope.net/companies/zhisquare-intelligence",
+        "source_title": "智平方 · Series B — RobotScope",
+        "source_content_hash": "5904bd05269fe1c8",
+        "quote": "多轮系列 数亿级×7 轮 2025（半年内） 深创投、国投、达晨财智、华熙生物等",
+        "quote_hash": "474bf29952dbbf5c8be1a88398dc1c2e361fd4f49dd5f4c98bd4c3a9328f8c52"
+      }
+    ]
+  }
+}

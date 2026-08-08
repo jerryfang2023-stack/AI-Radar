@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-2ba33b323b57a5",
+    "name": "Bpifrance",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2025-09-09",
+    "latest_disclosed_at": "2026-03-12",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-a83a3af1a4866fd5",
+        "canonical_entity_id": "",
+        "name": "Advanced Machine Intelligence Labs (AMI Labs)"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-41770b875270b1be",
+        "funding_insight_id": "FI-9c3c02658ff94312",
+        "event_ids": [
+          "EV-cded77b1de2db61a"
+        ],
+        "company_entity_id": "EN-a83a3af1a4866fd5",
+        "company_canonical_entity_id": "",
+        "company_name": "Advanced Machine Intelligence Labs (AMI Labs)",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "10.3亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1030000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10.3 亿美元"
+        },
+        "announced_at": "2026-03-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6c35525e379488bf",
+            "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
+            "source_title": "AMI Labs 获 1BN 美元种子轮融资，用于构建世界模型",
+            "source_content_hash": "adc0cc9ffe3c9dd0",
+            "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance",
+            "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c43833b84c731b0c",
+        "funding_insight_id": "FI-1cf34218733257fd",
+        "event_ids": [
+          "EV-85506f9f86779a6d"
+        ],
+        "company_entity_id": "EN-c04bd5ebd10ab696",
+        "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "company_name": "Mistral AI",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "约17亿欧元（约20亿美元）",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 1700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 17 亿欧元"
+        },
+        "announced_at": "2025-09-09",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方（种子轮）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ff92324bbd437a73",
+            "source_url": "https://notice.co/c/mistral-ai",
+            "source_title": "Mistral AI Stock $11.63 | How to Buy, Valuation, Stock Price, IPO | Notice.co",
+            "source_content_hash": "24552deeea13b585",
+            "quote": "Mistral AI has 34 investors. 4 investors have led 4 Mistral AI funding rounds.",
+            "quote_hash": "2712249302f3b36f685ef70f514d6720255d8c28547f8b8e5046e578246c3dcd"
+          },
+          {
+            "source_id": "FISRC-110f0e95801f33f9",
+            "source_url": "https://frontierledger.ai/investing-in-ai/how-to-invest-in-mistral-ai",
+            "source_title": "How to Invest in Mistral AI: Europe's Sovereign AI Champion and the ASML Connection - Frontier Ledger",
+            "source_content_hash": "778e3d1b1c03a4da",
+            "quote": "Seed €2M Undisclosed Bpifrance, angels Q2 2023",
+            "quote_hash": "49bc155ff6f337b37c4b214c7eea6229c011f83b02aefbb2252a74b461b7042f"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-6c35525e379488bf",
+        "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
+        "source_title": "AMI Labs 获 1BN 美元种子轮融资，用于构建世界模型",
+        "source_content_hash": "adc0cc9ffe3c9dd0",
+        "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance",
+        "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
+      },
+      {
+        "source_id": "FISRC-ff92324bbd437a73",
+        "source_url": "https://notice.co/c/mistral-ai",
+        "source_title": "Mistral AI Stock $11.63 | How to Buy, Valuation, Stock Price, IPO | Notice.co",
+        "source_content_hash": "24552deeea13b585",
+        "quote": "Mistral AI has 34 investors. 4 investors have led 4 Mistral AI funding rounds.",
+        "quote_hash": "2712249302f3b36f685ef70f514d6720255d8c28547f8b8e5046e578246c3dcd"
+      },
+      {
+        "source_id": "FISRC-110f0e95801f33f9",
+        "source_url": "https://frontierledger.ai/investing-in-ai/how-to-invest-in-mistral-ai",
+        "source_title": "How to Invest in Mistral AI: Europe's Sovereign AI Champion and the ASML Connection - Frontier Ledger",
+        "source_content_hash": "778e3d1b1c03a4da",
+        "quote": "Seed €2M Undisclosed Bpifrance, angels Q2 2023",
+        "quote_hash": "49bc155ff6f337b37c4b214c7eea6229c011f83b02aefbb2252a74b461b7042f"
+      }
+    ]
+  }
+}

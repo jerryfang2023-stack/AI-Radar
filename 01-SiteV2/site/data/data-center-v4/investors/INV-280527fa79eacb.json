@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-280527fa79eacb",
+    "name": "Allianz",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-30",
+    "latest_disclosed_at": "2026-07-30",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-26997989b8425dac",
+        "canonical_entity_id": "",
+        "name": "Dili"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-1b4a0bc478e9435e",
+        "funding_insight_id": "FI-edac864887206b8f",
+        "event_ids": [
+          "EV-ea109db692b88079"
+        ],
+        "company_entity_id": "EN-26997989b8425dac",
+        "company_canonical_entity_id": "",
+        "company_name": "Dili",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A 轮",
+        "amount_original": "$15 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "announced_at": "2026-07-30",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-28fb551788d5a89b",
+            "source_url": "https://techcrunch.com/2026/07/30/dili-raises-15-million-to-bring-ai-compliance-to-the-infrastructure-boom",
+            "source_title": "Dili 获 2170 万美元融资，用 AI 合规服务应对美国基建热潮",
+            "source_content_hash": "d1a260814ad6a646",
+            "quote": "with participation from Allianz",
+            "quote_hash": "a1065adb338df462350aa419f2d3e092d1c17ab05b9c4e32516a516edbf9567c"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-28fb551788d5a89b",
+        "source_url": "https://techcrunch.com/2026/07/30/dili-raises-15-million-to-bring-ai-compliance-to-the-infrastructure-boom",
+        "source_title": "Dili 获 2170 万美元融资，用 AI 合规服务应对美国基建热潮",
+        "source_content_hash": "d1a260814ad6a646",
+        "quote": "with participation from Allianz",
+        "quote_hash": "a1065adb338df462350aa419f2d3e092d1c17ab05b9c4e32516a516edbf9567c"
+      }
+    ]
+  }
+}

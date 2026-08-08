@@ -1,6 +1,6 @@
 ---
 title: WaveSight Current Handoff
-date: 2026-08-04
+date: 2026-08-08
 status: current
 encoding: UTF-8
 ---
@@ -12,14 +12,14 @@ This file keeps only the current handoff state needed by a new window. Historica
 ## Current Position
 
 - Project: WaveSight AI / 观澜 AI.
-- Current release: `V4.6.1-china-market-scope`; public website shell `SITE-V4.4.1-china-market-scope`.
+- Current release: `V4.7.0-investment-institution-library`; public website shell `SITE-V4.5.0-investment-institution-library`.
 - Product role: AI industry data center and structured factual data foundation for downstream products and research.
 - Current public frontstage: Data Center (Event Library / Community Intelligence / First-Line Viewpoints / Entity Library) and Application Center (Trend Radar / Guanlan Research).
 - Current backend: Dashboard / operations console.
 - Current human-readable knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.2-private-evidence-linked`), split into system state, Data Center, Application Center, Operations, contracts, knowledge assets, and workspace.
 - Current machine-serving projection: `DATA-LAKE-V4.1-24-table`, rebuilt and gated by Final Closure.
 - Current private evidence source: `PRIVATE-EVIDENCE-STORE-V2.0`, authoritative, content-addressed, and outside the public repository/Vault. Public RAW-V4 data and the Vault store evidence locators, not complete original bodies.
-- Current Funding Insights projection: 251 accepted application cards aggregate to 231 public company-round cards. The `2026-08-04` bundle contains three auto-published cards and no blocked event; canonical V4 financing facts are locked ahead of secondary research, and unresolved product/person names remain in the review queue.
+- Current Funding Insights projection: 259 accepted application cards aggregate to 235 public financing-event cards with round, original and normalized amount, date, disclosure status, investor roles, cumulative basis, and history. The same evidence projects 1,080 investor subjects and 1,223 current-round activities into Entity Library without canonical mutation; unresolved product/person names remain in the review queue.
 - Current funding taxonomy projection: 244 reviewed event decisions produce 1,848 event/entity classification assertions under `TAG-V4.1`.
 - Current private evidence inventory: 12,064 snapshots with no missing bodies; the public repository contains locators only.
 - Current local automation: exactly seven Windows tasks, including one combined Hermes watchdog/heartbeat control-plane task.

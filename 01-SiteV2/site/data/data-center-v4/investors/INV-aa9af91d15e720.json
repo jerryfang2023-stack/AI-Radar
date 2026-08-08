@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-aa9af91d15e720",
+    "name": "Gradient",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2026-07-08",
+    "latest_disclosed_at": "2026-08-06",
+    "role_counts": {
+      "co_lead": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "seed",
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-c71a83adf3de3f40",
+        "canonical_entity_id": "",
+        "name": "Hostie"
+      },
+      {
+        "entity_id": "EN-13a7f8fe8140462d",
+        "canonical_entity_id": "EN-13a7f8fe8140462d",
+        "name": "Malachyte"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-4ea30cd347204670",
+        "funding_insight_id": "FI-2d1d7b6262e319c3",
+        "event_ids": [
+          "EV-933b02f5736a0366"
+        ],
+        "company_entity_id": "EN-13a7f8fe8140462d",
+        "company_canonical_entity_id": "EN-13a7f8fe8140462d",
+        "company_name": "Malachyte",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$10M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-08-06",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-d328724fdcb5ff4b",
+            "source_url": "https://techcrunch.com/2026/08/06/ex-spotify-employees-raise-10m-to-bring-the-ai-behind-its-recommendations-to-e-commerce/",
+            "source_title": "前Spotify员工筹集1000万美元，将推荐背后的AI引入电商",
+            "source_content_hash": "05dd04be6ad83ba1",
+            "quote": "The funding round was co-led by Bessemer Venture Partners and Gradient, with participation from Harpoon Ventures.",
+            "quote_hash": "fc5a5ad2fbd0916f77d755181d69af06d3a4eccd7b9877bde9d2df943ebe7c7e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-acac0cd149a64c12",
+        "funding_insight_id": "FI-45e331eacf759ed4",
+        "event_ids": [
+          "EV-0a62954694db4143"
+        ],
+        "company_entity_id": "EN-c71a83adf3de3f40",
+        "company_canonical_entity_id": "",
+        "company_name": "Hostie",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$12 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1200 万美元"
+        },
+        "announced_at": "2026-07-08",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d81171d6c6910b85",
+            "source_url": "https://www.prnewswire.com/news-releases/hostie-raises-12m-series-a-to-power-the-future-of-restaurant-hospitality-302820521.html",
+            "source_title": "Hostie 完成1200万美元A轮融资，助力餐饮服务业未来",
+            "source_content_hash": "d7c2bb0b4010c680",
+            "quote": "with participation from Gradient, Scribble Ventures, Burst Capital, and Behind Genius Ventures",
+            "quote_hash": "8b99c57ea941638ff9932a3b0a80a037314fb5f9d4a578561dbd7e1312b0e84e"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-d328724fdcb5ff4b",
+        "source_url": "https://techcrunch.com/2026/08/06/ex-spotify-employees-raise-10m-to-bring-the-ai-behind-its-recommendations-to-e-commerce/",
+        "source_title": "前Spotify员工筹集1000万美元，将推荐背后的AI引入电商",
+        "source_content_hash": "05dd04be6ad83ba1",
+        "quote": "The funding round was co-led by Bessemer Venture Partners and Gradient, with participation from Harpoon Ventures.",
+        "quote_hash": "fc5a5ad2fbd0916f77d755181d69af06d3a4eccd7b9877bde9d2df943ebe7c7e"
+      },
+      {
+        "source_id": "FISRC-d81171d6c6910b85",
+        "source_url": "https://www.prnewswire.com/news-releases/hostie-raises-12m-series-a-to-power-the-future-of-restaurant-hospitality-302820521.html",
+        "source_title": "Hostie 完成1200万美元A轮融资，助力餐饮服务业未来",
+        "source_content_hash": "d7c2bb0b4010c680",
+        "quote": "with participation from Gradient, Scribble Ventures, Burst Capital, and Behind Genius Ventures",
+        "quote_hash": "8b99c57ea941638ff9932a3b0a80a037314fb5f9d4a578561dbd7e1312b0e84e"
+      }
+    ]
+  }
+}

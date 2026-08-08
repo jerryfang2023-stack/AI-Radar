@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-0420ff47d50070",
+    "name": "SYN Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-15",
+    "latest_disclosed_at": "2026-06-15",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-d74c69db63e4763f",
+        "canonical_entity_id": "EN-d74c69db63e4763f",
+        "name": "Arcade AI Inc."
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-f42117fd6c8607b7",
+        "funding_insight_id": "FI-07521e792cb3a6b3",
+        "event_ids": [
+          "EV-39717cdbada984d7"
+        ],
+        "company_entity_id": "EN-d74c69db63e4763f",
+        "company_canonical_entity_id": "EN-d74c69db63e4763f",
+        "company_name": "Arcade AI Inc.",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$60 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-06-15",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-0e863445463ffc16",
+            "source_url": "https://siliconangle.com/2026/06/15/ai-agent-authorization-startup-arcade-nabs-60m-investment/",
+            "source_title": "AI 智能体授权初创公司 Arcade 获 6000 万美元投资",
+            "source_content_hash": "025cb3fd28e66b8a",
+            "quote": "SYN Ventures led the Series A round.",
+            "quote_hash": "af0401b8d1bd3adb3e1e9d2c064aeb7258fe1e2d812334aa013db48d6e233bf7"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-0e863445463ffc16",
+        "source_url": "https://siliconangle.com/2026/06/15/ai-agent-authorization-startup-arcade-nabs-60m-investment/",
+        "source_title": "AI 智能体授权初创公司 Arcade 获 6000 万美元投资",
+        "source_content_hash": "025cb3fd28e66b8a",
+        "quote": "SYN Ventures led the Series A round.",
+        "quote_hash": "af0401b8d1bd3adb3e1e9d2c064aeb7258fe1e2d812334aa013db48d6e233bf7"
+      }
+    ]
+  }
+}

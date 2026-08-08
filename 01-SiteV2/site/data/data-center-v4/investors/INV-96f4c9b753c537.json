@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-96f4c9b753c537",
+    "name": "Future Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2023-04-20",
+    "latest_disclosed_at": "2023-04-20",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_a1"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-6b5df3bd8bb0c67d",
+        "canonical_entity_id": "",
+        "name": "Robust.AI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-1fe3dbbddbadba1e",
+        "funding_insight_id": "FI-070bfdac9fe137a9",
+        "event_ids": [
+          "EV-52bf48005db3461a"
+        ],
+        "company_entity_id": "EN-6b5df3bd8bb0c67d",
+        "company_canonical_entity_id": "",
+        "company_name": "Robust.AI",
+        "round": "A1轮",
+        "round_code": "series_a1",
+        "round_original": "A-1轮",
+        "amount_original": "$20M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万美元"
+        },
+        "announced_at": "2023-04-20",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-344b2fbfbe7b7c56",
+            "source_url": "https://techcrunch.com/2023/04/20/robust-ai-raises-20m-as-it-scales-robot-deliveries-for-pilot-customers/",
+            "source_title": "Robust.AI 融资2000万美元，扩大机器人配送试点客户规模",
+            "source_content_hash": "a6760de16e042160",
+            "quote": "featuring Future Ventures, Energy Impact Partners, JAZZ Ventures and Playground Global",
+            "quote_hash": "d026554b11923a5ab39299095707c7cb7db32d7f23f5e9fcaca2b71d8790f982"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-344b2fbfbe7b7c56",
+        "source_url": "https://techcrunch.com/2023/04/20/robust-ai-raises-20m-as-it-scales-robot-deliveries-for-pilot-customers/",
+        "source_title": "Robust.AI 融资2000万美元，扩大机器人配送试点客户规模",
+        "source_content_hash": "a6760de16e042160",
+        "quote": "featuring Future Ventures, Energy Impact Partners, JAZZ Ventures and Playground Global",
+        "quote_hash": "d026554b11923a5ab39299095707c7cb7db32d7f23f5e9fcaca2b71d8790f982"
+      }
+    ]
+  }
+}

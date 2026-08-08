@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-aca88cf13bef92",
+    "name": "Transpose Platform",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2025-10-31",
+    "latest_disclosed_at": "2026-03-31",
+    "role_counts": {
+      "participant": 2
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-f30ad7677baf7ea2",
+        "canonical_entity_id": "",
+        "name": "Adam"
+      },
+      {
+        "entity_id": "EN-f5cfcb570b7edac2",
+        "canonical_entity_id": "",
+        "name": "Nexus Enterprises, Inc"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-f4a186517986246b",
+        "funding_insight_id": "FI-19731873c2b7d1c1",
+        "event_ids": [
+          "EV-c8928410f6c145eb"
+        ],
+        "company_entity_id": "EN-f5cfcb570b7edac2",
+        "company_canonical_entity_id": "",
+        "company_name": "Nexus Enterprises, Inc",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "$4.3M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "430 万美元"
+        },
+        "announced_at": "2026-03-31",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-14ff8eaae437ca5e",
+            "source_url": "https://www.globenewswire.com/de/news-release/2026/03/31/3265301/0/en/Nexus-Raises-4-3M-Seed-Round-to-Help-Business-Teams-Deploy-AI-Agents.html",
+            "source_title": "Nexus 获430万美元种子轮融资，助力业务团队部署",
+            "source_content_hash": "ed9ee46cde0da7e9",
+            "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital",
+            "quote_hash": "624cd64acb9b0781f661d88dc6fea7477fd130d0bf1e7a938be291d30555f659"
+          },
+          {
+            "source_id": "FISRC-79bfe2072e509ad8",
+            "source_url": "https://theaiinsider.tech/2026/04/04/nexus-secures-4-3m-seed-round-to-scale-enterprise-ai-agent-deployment/",
+            "source_title": "Nexus Secures $4.3M Seed Round to Scale Enterprise AI Agent Deployment",
+            "source_content_hash": "88232d44c76c7b89",
+            "quote": "The round was led by General Catalyst with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital",
+            "quote_hash": "c91349b62c9e55a76cd28e3202ac8a1ed3a998e14ba72d443337f678714d111b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a97533e04c6d406f",
+        "funding_insight_id": "FI-488e2ec37c8e7bc2",
+        "event_ids": [
+          "EV-e12b17260d19c5ff"
+        ],
+        "company_entity_id": "EN-f30ad7677baf7ea2",
+        "company_canonical_entity_id": "",
+        "company_name": "Adam",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$4.1 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4100000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "410 万美元"
+        },
+        "announced_at": "2025-10-31",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1e12e93a65d54b9a",
+            "source_url": "https://techcrunch.com/2025/10/31/yc-alum-adam-raises-4-1m-to-turn-viral-text-to-3d-tool-into-ai-copilot/",
+            "source_title": "YC 校友 Adam 获 410 万美元融资，将爆款文本转 3D 工具打造成 AI 智能体",
+            "source_content_hash": "49f3c01467bded27",
+            "quote": "Besides TQ and participating funds 468 Capital, Pioneer, Script Capital, and Transpose Platform",
+            "quote_hash": "f0536b9c961091ce95590d648c6a2c990af8301a77fa34b3e75aa4ad11db85a9"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-14ff8eaae437ca5e",
+        "source_url": "https://www.globenewswire.com/de/news-release/2026/03/31/3265301/0/en/Nexus-Raises-4-3M-Seed-Round-to-Help-Business-Teams-Deploy-AI-Agents.html",
+        "source_title": "Nexus 获430万美元种子轮融资，助力业务团队部署",
+        "source_content_hash": "ed9ee46cde0da7e9",
+        "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital",
+        "quote_hash": "624cd64acb9b0781f661d88dc6fea7477fd130d0bf1e7a938be291d30555f659"
+      },
+      {
+        "source_id": "FISRC-79bfe2072e509ad8",
+        "source_url": "https://theaiinsider.tech/2026/04/04/nexus-secures-4-3m-seed-round-to-scale-enterprise-ai-agent-deployment/",
+        "source_title": "Nexus Secures $4.3M Seed Round to Scale Enterprise AI Agent Deployment",
+        "source_content_hash": "88232d44c76c7b89",
+        "quote": "The round was led by General Catalyst with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital",
+        "quote_hash": "c91349b62c9e55a76cd28e3202ac8a1ed3a998e14ba72d443337f678714d111b"
+      },
+      {
+        "source_id": "FISRC-1e12e93a65d54b9a",
+        "source_url": "https://techcrunch.com/2025/10/31/yc-alum-adam-raises-4-1m-to-turn-viral-text-to-3d-tool-into-ai-copilot/",
+        "source_title": "YC 校友 Adam 获 410 万美元融资，将爆款文本转 3D 工具打造成 AI 智能体",
+        "source_content_hash": "49f3c01467bded27",
+        "quote": "Besides TQ and participating funds 468 Capital, Pioneer, Script Capital, and Transpose Platform",
+        "quote_hash": "f0536b9c961091ce95590d648c6a2c990af8301a77fa34b3e75aa4ad11db85a9"
+      }
+    ]
+  }
+}

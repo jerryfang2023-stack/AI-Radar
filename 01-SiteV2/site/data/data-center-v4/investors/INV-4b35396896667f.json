@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-4b35396896667f",
+    "name": "Chiratae Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-06-17",
+    "latest_disclosed_at": "2026-06-17",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "pre_series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-c945929c3683ffb0",
+        "canonical_entity_id": "",
+        "name": "ContraVault AI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-4930f6fa6ba51741",
+        "funding_insight_id": "FI-24eaebf9e623824d",
+        "event_ids": [
+          "EV-232ab5bcbaf6552d"
+        ],
+        "company_entity_id": "EN-c945929c3683ffb0",
+        "company_canonical_entity_id": "",
+        "company_name": "ContraVault AI",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-Series A",
+        "amount_original": "$3.1 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3100000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "310 万美元"
+        },
+        "announced_at": "2026-06-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-78278ca61a2d245e",
+            "source_url": "https://startupsunion.com/contravault-ai-raises-3-1m-pre-series-a-to-revolutionize-procurement-intelligence/",
+            "source_title": "ContraVault AI 获310万美元Pre-A轮融资，旨在革新采购智能",
+            "source_content_hash": "7821aafe08e9c8d7",
+            "quote": "The $3.1 million Pre-Series A round was led by Chiratae Ventures.",
+            "quote_hash": "b78361dd895764b35243b2678602a8fc30e72368c8f72c55514725d378c8f528"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-78278ca61a2d245e",
+        "source_url": "https://startupsunion.com/contravault-ai-raises-3-1m-pre-series-a-to-revolutionize-procurement-intelligence/",
+        "source_title": "ContraVault AI 获310万美元Pre-A轮融资，旨在革新采购智能",
+        "source_content_hash": "7821aafe08e9c8d7",
+        "quote": "The $3.1 million Pre-Series A round was led by Chiratae Ventures.",
+        "quote_hash": "b78361dd895764b35243b2678602a8fc30e72368c8f72c55514725d378c8f528"
+      }
+    ]
+  }
+}

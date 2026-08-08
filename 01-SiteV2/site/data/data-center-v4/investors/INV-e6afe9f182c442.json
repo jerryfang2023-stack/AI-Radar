@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-e6afe9f182c442",
+    "name": "A*",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2026-03-19",
+    "latest_disclosed_at": "2026-08-03",
+    "role_counts": {
+      "participant": 2
+    },
+    "round_codes": [
+      "seed",
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-b10da733dff99be1",
+        "canonical_entity_id": "",
+        "name": "Edra"
+      },
+      {
+        "entity_id": "EN-9f80a5e14017ccc0",
+        "canonical_entity_id": "",
+        "name": "Intelligence"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-fd860f97045d60ea",
+        "funding_insight_id": "FI-36e2dba781b80e3a",
+        "event_ids": [
+          "EV-2301cd1470155075"
+        ],
+        "company_entity_id": "EN-9f80a5e14017ccc0",
+        "company_canonical_entity_id": "",
+        "company_name": "Intelligence",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$7.9 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 7900000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "790 万美元"
+        },
+        "announced_at": "2026-08-03",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3fa34b4b7b9a1a77",
+            "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
+            "source_title": "DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"",
+            "source_content_hash": "0633a814981ef4fd",
+            "quote": "with participation from Conviction (Sarah Guo and Mike Vernal), A*, Valkyrie, and others",
+            "quote_hash": "20be01adf24a3391c5fa5e6bebfa4ca95802560254df872449efba35e111922b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-dceba8a438c7a93c",
+        "funding_insight_id": "FI-f7944cc1c3817381",
+        "event_ids": [
+          "EV-4c247b02485de09b"
+        ],
+        "company_entity_id": "EN-b10da733dff99be1",
+        "company_canonical_entity_id": "",
+        "company_name": "Edra",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "3000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-03-19",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f0bd0469bbdd29e2",
+            "source_url": "https://tech.eu/2026/03/19/edra-raises-309m-series-a-to-turn-enterprise-data-into-self-improving-ai-agents/",
+            "source_title": "红杉资本支持的Edra完成3000万美元A轮融资，将企业数据转化为自我优化的AI智能体",
+            "source_content_hash": "043f0819e45e2208",
+            "quote": "which included investment from 8VC and A*z.",
+            "quote_hash": "a17c6a3c0aa2ff6760f9f6b20f563d3a68b5d776f0dd68a240ebf389b9c5ad08"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-3fa34b4b7b9a1a77",
+        "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
+        "source_title": "DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"",
+        "source_content_hash": "0633a814981ef4fd",
+        "quote": "with participation from Conviction (Sarah Guo and Mike Vernal), A*, Valkyrie, and others",
+        "quote_hash": "20be01adf24a3391c5fa5e6bebfa4ca95802560254df872449efba35e111922b"
+      },
+      {
+        "source_id": "FISRC-f0bd0469bbdd29e2",
+        "source_url": "https://tech.eu/2026/03/19/edra-raises-309m-series-a-to-turn-enterprise-data-into-self-improving-ai-agents/",
+        "source_title": "红杉资本支持的Edra完成3000万美元A轮融资，将企业数据转化为自我优化的AI智能体",
+        "source_content_hash": "043f0819e45e2208",
+        "quote": "which included investment from 8VC and A*z.",
+        "quote_hash": "a17c6a3c0aa2ff6760f9f6b20f563d3a68b5d776f0dd68a240ebf389b9c5ad08"
+      }
+    ]
+  }
+}

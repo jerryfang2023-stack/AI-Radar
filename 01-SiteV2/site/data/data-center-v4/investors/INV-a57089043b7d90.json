@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-a57089043b7d90",
+    "name": "高瓴创投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2024-09-12",
+    "latest_disclosed_at": "2026-06-26",
+    "role_counts": {
+      "co_lead": 1,
+      "historical_or_ambiguous": 3
+    },
+    "round_codes": [
+      "pre_series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-39ba5f9dcab4e98a",
+        "canonical_entity_id": "EN-39ba5f9dcab4e98a",
+        "name": "它石智航"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-5362438405b7d7c9",
+        "funding_insight_id": "FI-7e546bd15ad5d4db",
+        "event_ids": [
+          "EV-876baa523eb93c4f"
+        ],
+        "company_entity_id": "EN-4731aa5b66658c7f",
+        "company_canonical_entity_id": "EN-4731aa5b66658c7f",
+        "company_name": "无界动力（北京）技术研发有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "超2亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": 200000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 2 亿美元"
+        },
+        "announced_at": "2026-06-26",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "首轮天使融资参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c7cbf66d99295c80",
+            "source_url": "https://www.chnfund.com/article/AR42d924a5-c008-cd46-b00b-3a2216d0317e",
+            "source_title": "无界动力完成超2亿美元天使轮融资 中国基金报",
+            "source_content_hash": "5b45cd52e44552d8",
+            "quote": "2025年11月，无界动力完成首轮3亿元天使融资，红杉中国、线性资本领投，高瓴创投、地平线、华业天成、钟鼎资本、BV百度风投、同歌创投等跟投。",
+            "quote_hash": "75dd300b86df286fdc787cf8bbb30243a10dad4a276d2807de5d6d5cd40d56e5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-08a1ac8062132c2b",
+        "funding_insight_id": "FI-5c529fe1ecb9dd07",
+        "event_ids": [
+          "EV-1188b1585b835fe1"
+        ],
+        "company_entity_id": "EN-39ba5f9dcab4e98a",
+        "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
+        "company_name": "它石智航",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超4.5亿美元（约30亿元）",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 450000000,
+          "min_value": 450000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 4.5 亿美元"
+        },
+        "announced_at": "2026-04-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-f4259d29fd364076",
+            "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",
+            "source_title": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网",
+            "source_content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
+            "quote": "财务投资者层面，高瓴 创投 与红杉中国联合领投",
+            "quote_hash": "c94c1593060094ddb0482e11e63a9558f9373f7b6c9fe3405c8283002efb6627"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0382bf0e767fb0d2",
+        "funding_insight_id": "FI-5c529fe1ecb9dd07",
+        "event_ids": [
+          "EV-1188b1585b835fe1"
+        ],
+        "company_entity_id": "EN-39ba5f9dcab4e98a",
+        "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
+        "company_name": "它石智航",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超4.5亿美元（约30亿元）",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 450000000,
+          "min_value": 450000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 4.5 亿美元"
+        },
+        "announced_at": "2026-04-16",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-877032defba1f3e1",
+            "source_url": "https://www.chnfund.com/article/ARa02b65be-84b4-488b-1eea-3a18e4d5be1d",
+            "source_title": "它石智航完成天使轮1.2亿美元融资，蓝驰、启明、联想、高瓴等知名机构出手 中国基金报",
+            "source_content_hash": "9bc3ee36ffea717f",
+            "quote": "线性资本、恒旭资本、洪泰基金、联想创投、襄禾资本、高瓴创投跟投",
+            "quote_hash": "ad0a3e590ffa110b3cf74a5f62e58f3e387290b3c658e3f5c91e312af6a29fd6"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-07d455342575d6a8",
+        "funding_insight_id": "FI-17403f62777b52b5",
+        "event_ids": [
+          "EV-7a44a47bf36780d2"
+        ],
+        "company_entity_id": "EN-721eb3fd31f8e1f6",
+        "company_canonical_entity_id": "EN-721eb3fd31f8e1f6",
+        "company_name": "上海壁仞科技股份有限公司",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "超过50亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 5000000000,
+          "min_value": 5000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 50 亿人民币"
+        },
+        "announced_at": "2024-09-12",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-B轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-d13c49d0024ccf9b",
+            "source_url": "https://36kr.com/p/3225593100057736",
+            "source_title": "上海国资投了一家独角兽-36氪",
+            "source_content_hash": "a6b4082076c6f997",
+            "quote": "完成了Pre-B轮融资，由高瓴创投领投",
+            "quote_hash": "a699890fc0e0b97e15420644c04df44c309258b692d953792bd33eab18bb2c63"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-c7cbf66d99295c80",
+        "source_url": "https://www.chnfund.com/article/AR42d924a5-c008-cd46-b00b-3a2216d0317e",
+        "source_title": "无界动力完成超2亿美元天使轮融资 中国基金报",
+        "source_content_hash": "5b45cd52e44552d8",
+        "quote": "2025年11月，无界动力完成首轮3亿元天使融资，红杉中国、线性资本领投，高瓴创投、地平线、华业天成、钟鼎资本、BV百度风投、同歌创投等跟投。",
+        "quote_hash": "75dd300b86df286fdc787cf8bbb30243a10dad4a276d2807de5d6d5cd40d56e5"
+      },
+      {
+        "source_id": "FISRC-f4259d29fd364076",
+        "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",
+        "source_title": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网",
+        "source_content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
+        "quote": "财务投资者层面，高瓴 创投 与红杉中国联合领投",
+        "quote_hash": "c94c1593060094ddb0482e11e63a9558f9373f7b6c9fe3405c8283002efb6627"
+      },
+      {
+        "source_id": "FISRC-877032defba1f3e1",
+        "source_url": "https://www.chnfund.com/article/ARa02b65be-84b4-488b-1eea-3a18e4d5be1d",
+        "source_title": "它石智航完成天使轮1.2亿美元融资，蓝驰、启明、联想、高瓴等知名机构出手 中国基金报",
+        "source_content_hash": "9bc3ee36ffea717f",
+        "quote": "线性资本、恒旭资本、洪泰基金、联想创投、襄禾资本、高瓴创投跟投",
+        "quote_hash": "ad0a3e590ffa110b3cf74a5f62e58f3e387290b3c658e3f5c91e312af6a29fd6"
+      },
+      {
+        "source_id": "FISRC-d13c49d0024ccf9b",
+        "source_url": "https://36kr.com/p/3225593100057736",
+        "source_title": "上海国资投了一家独角兽-36氪",
+        "source_content_hash": "a6b4082076c6f997",
+        "quote": "完成了Pre-B轮融资，由高瓴创投领投",
+        "quote_hash": "a699890fc0e0b97e15420644c04df44c309258b692d953792bd33eab18bb2c63"
+      }
+    ]
+  }
+}

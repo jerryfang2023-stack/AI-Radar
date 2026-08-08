@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-bc3bee921910a6",
+    "name": "无锡创投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-03-02",
+    "latest_disclosed_at": "2026-03-02",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-c5456c9421743002",
+        "canonical_entity_id": "EN-c5456c9421743002",
+        "name": "银河通用机器人"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-867a9958b46623ab",
+        "funding_insight_id": "FI-d64fecfe9cecf228",
+        "event_ids": [
+          "EV-d2409770301edc83"
+        ],
+        "company_entity_id": "EN-c5456c9421743002",
+        "company_canonical_entity_id": "EN-c5456c9421743002",
+        "company_name": "银河通用机器人",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮",
+        "amount_original": "25亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "25 亿人民币"
+        },
+        "announced_at": "2026-03-02",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-adaac360139469bd",
+            "source_url": "https://www.cls.cn/detail/2300238",
+            "source_title": "开年最大融资诞生！银河通用再融25亿 国家大基金首投具身智能",
+            "source_content_hash": "b2eacae148179fb9ea2302fcd22d73b4b29b0f56ffb1c8400c5764c9a8cdbdcd",
+            "quote": "由国家人工智能产业基金（大基金三期全资基金）、中国石化、中信集团投资控股、中国银行、上汽集团金控、中芯聚源、亦庄国投、未来产业投资、鲲鹏基金、无锡创投、福建产投联合投资",
+            "quote_hash": "96a3aef27d592b0706f6bf7a6b0f44a71d2e784c11c23523af9bf03b4f18a45d"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-adaac360139469bd",
+        "source_url": "https://www.cls.cn/detail/2300238",
+        "source_title": "开年最大融资诞生！银河通用再融25亿 国家大基金首投具身智能",
+        "source_content_hash": "b2eacae148179fb9ea2302fcd22d73b4b29b0f56ffb1c8400c5764c9a8cdbdcd",
+        "quote": "由国家人工智能产业基金（大基金三期全资基金）、中国石化、中信集团投资控股、中国银行、上汽集团金控、中芯聚源、亦庄国投、未来产业投资、鲲鹏基金、无锡创投、福建产投联合投资",
+        "quote_hash": "96a3aef27d592b0706f6bf7a6b0f44a71d2e784c11c23523af9bf03b4f18a45d"
+      }
+    ]
+  }
+}

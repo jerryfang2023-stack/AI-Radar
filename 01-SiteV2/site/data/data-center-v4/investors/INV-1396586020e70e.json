@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-1396586020e70e",
+    "name": "Dell Technologies Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2026-03-30",
+    "latest_disclosed_at": "2026-07-08",
+    "role_counts": {
+      "participant": 2
+    },
+    "round_codes": [
+      "seed",
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-fa373257792c6b9b",
+        "canonical_entity_id": "EN-fa373257792c6b9b",
+        "name": "Prime Intellect"
+      },
+      {
+        "entity_id": "FICO-sycamore",
+        "canonical_entity_id": "",
+        "name": "Sycamore"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-aa19d6cf0a628e51",
+        "funding_insight_id": "FI-eb27063b86f12aff",
+        "event_ids": [
+          "EV-463cb26b5e03c7f7"
+        ],
+        "company_entity_id": "EN-fa373257792c6b9b",
+        "company_canonical_entity_id": "EN-fa373257792c6b9b",
+        "company_name": "Prime Intellect",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$130 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 130000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.3 亿美元"
+        },
+        "announced_at": "2026-07-08",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-afe2544836558c64",
+            "source_url": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
+            "source_title": "Prime Intellect raises $130M Series A to help enterprises build their own AI agents | TechCrunch",
+            "source_content_hash": "596e7c850e10c828",
+            "quote": "with participation from Nvidia Ventures, Intel Capital, Dell Technologies Capital, Iconiq",
+            "quote_hash": "6a7477041cd494d83150796fbd2093c39aaccedac373420823ec20e430b193a7"
+          },
+          {
+            "source_id": "FISRC-3b1f1aee6b1a3091",
+            "source_url": "https://www.intelcapital.com/prime-intellect-the-full-stack-for-training-and-deploying-self-improving-agents/",
+            "source_title": "Prime Intellect: The Full Stack for Training and Deploying Self-Improving Agents – Intel Capital",
+            "source_content_hash": "91deffc98c827626",
+            "quote": "with participation from NVIDIA Ventures, Intel Capital, Dell Technologies Capital and our existing investors.",
+            "quote_hash": "5421dd8df5fa5799f9462d13c2a7517435d84c180f9c4d9fd0cab23352e27c9f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-aa3c600e677e1390",
+        "funding_insight_id": "FI-91df568a315de93f",
+        "event_ids": [
+          "EV-b695dedc9acda5dc",
+          "EV-7add33b4c74dbf1a",
+          "EV-c5643983538c6513"
+        ],
+        "company_entity_id": "FICO-sycamore",
+        "company_canonical_entity_id": "",
+        "company_name": "Sycamore",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$65 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6500 万美元"
+        },
+        "announced_at": "2026-03-30",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d354011359557f2f",
+            "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
+            "source_title": "Sycamore融资6500万美元，为企业打造可信代理操作系统",
+            "source_content_hash": "7c851906b2d8f45f",
+            "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund",
+            "quote_hash": "e443cbfb7f795d800b13ba7a1cba8c2f429b60d8881136f8543d2e9968332aca"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-afe2544836558c64",
+        "source_url": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
+        "source_title": "Prime Intellect raises $130M Series A to help enterprises build their own AI agents | TechCrunch",
+        "source_content_hash": "596e7c850e10c828",
+        "quote": "with participation from Nvidia Ventures, Intel Capital, Dell Technologies Capital, Iconiq",
+        "quote_hash": "6a7477041cd494d83150796fbd2093c39aaccedac373420823ec20e430b193a7"
+      },
+      {
+        "source_id": "FISRC-3b1f1aee6b1a3091",
+        "source_url": "https://www.intelcapital.com/prime-intellect-the-full-stack-for-training-and-deploying-self-improving-agents/",
+        "source_title": "Prime Intellect: The Full Stack for Training and Deploying Self-Improving Agents – Intel Capital",
+        "source_content_hash": "91deffc98c827626",
+        "quote": "with participation from NVIDIA Ventures, Intel Capital, Dell Technologies Capital and our existing investors.",
+        "quote_hash": "5421dd8df5fa5799f9462d13c2a7517435d84c180f9c4d9fd0cab23352e27c9f"
+      },
+      {
+        "source_id": "FISRC-d354011359557f2f",
+        "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
+        "source_title": "Sycamore融资6500万美元，为企业打造可信代理操作系统",
+        "source_content_hash": "7c851906b2d8f45f",
+        "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund",
+        "quote_hash": "e443cbfb7f795d800b13ba7a1cba8c2f429b60d8881136f8543d2e9968332aca"
+      }
+    ]
+  }
+}

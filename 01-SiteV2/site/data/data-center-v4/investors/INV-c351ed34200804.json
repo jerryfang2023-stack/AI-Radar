@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-c351ed34200804",
+    "name": "North Island Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-01",
+    "latest_disclosed_at": "2026-07-01",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-858b4458c482f7d2",
+        "canonical_entity_id": "",
+        "name": "Venice AI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-26cce9b49ab42215",
+        "funding_insight_id": "FI-2b699f33e9d207e8",
+        "event_ids": [
+          "EV-4f7462a365561bb5"
+        ],
+        "company_entity_id": "EN-858b4458c482f7d2",
+        "company_canonical_entity_id": "",
+        "company_name": "Venice AI",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "6500万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6500 万美元"
+        },
+        "announced_at": "2026-07-01",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-41cdbf30cbfd4eed",
+            "source_url": "https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off",
+            "source_title": "Venice AI 完成 6500 万美元 A 轮融资，估值 10 亿美元",
+            "source_content_hash": "ed55880406f0c2ab",
+            "quote": "with participation from Coinbase Ventures, North Island Ventures, and others",
+            "quote_hash": "5d3966b48c9fd1e98e8e7ce2a73dc657faa65c0fb80a4d804439146fcd6b26e0"
+          },
+          {
+            "source_id": "FISRC-831c2961f3373587",
+            "source_url": "https://www.theblock.co/post/406934/venice-ai-funding-equity-valuation-dragonfly",
+            "source_title": "Venice AI raises $65 million Series A at $1 billion equity valuation led by Dragonfly | The Block",
+            "source_content_hash": "0dacb24c9b80532d",
+            "quote": "with participation from North Island Ventures",
+            "quote_hash": "f99d233087df9c799c8e8b7c994fd15a7ddc145d8d594f19c79d263532ad40c3"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-41cdbf30cbfd4eed",
+        "source_url": "https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off",
+        "source_title": "Venice AI 完成 6500 万美元 A 轮融资，估值 10 亿美元",
+        "source_content_hash": "ed55880406f0c2ab",
+        "quote": "with participation from Coinbase Ventures, North Island Ventures, and others",
+        "quote_hash": "5d3966b48c9fd1e98e8e7ce2a73dc657faa65c0fb80a4d804439146fcd6b26e0"
+      },
+      {
+        "source_id": "FISRC-831c2961f3373587",
+        "source_url": "https://www.theblock.co/post/406934/venice-ai-funding-equity-valuation-dragonfly",
+        "source_title": "Venice AI raises $65 million Series A at $1 billion equity valuation led by Dragonfly | The Block",
+        "source_content_hash": "0dacb24c9b80532d",
+        "quote": "with participation from North Island Ventures",
+        "quote_hash": "f99d233087df9c799c8e8b7c994fd15a7ddc145d8d594f19c79d263532ad40c3"
+      }
+    ]
+  }
+}

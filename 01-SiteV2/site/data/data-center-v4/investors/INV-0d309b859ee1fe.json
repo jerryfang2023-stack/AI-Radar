@@ -1,0 +1,523 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-0d309b859ee1fe",
+    "name": "Coatue",
+    "aliases": [
+      "Coatue Management"
+    ],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 7,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 6,
+    "first_disclosed_at": "2023-04-27",
+    "latest_disclosed_at": "2026-07-17",
+    "role_counts": {
+      "historical_or_ambiguous": 2,
+      "lead": 3,
+      "participant": 4
+    },
+    "round_codes": [
+      "seed",
+      "series_b_extension",
+      "series_c",
+      "series_d",
+      "series_f",
+      "series_g",
+      "strategic"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "name": "Anthropic"
+      },
+      {
+        "entity_id": "EN-2dc010636b9dce91",
+        "canonical_entity_id": "EN-2dc010636b9dce91",
+        "name": "Databricks"
+      },
+      {
+        "entity_id": "EN-712dffae168fe622",
+        "canonical_entity_id": "",
+        "name": "Nomos Ai Inc."
+      },
+      {
+        "entity_id": "EN-7d3194f79e645c42",
+        "canonical_entity_id": "EN-7d3194f79e645c42",
+        "name": "OpenAI"
+      },
+      {
+        "entity_id": "EN-53b69ef92c836777",
+        "canonical_entity_id": "",
+        "name": "Replit"
+      },
+      {
+        "entity_id": "FICO-sycamore",
+        "canonical_entity_id": "",
+        "name": "Sycamore"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-a9bc72ac5dec06bb",
+        "funding_insight_id": "FI-d00f79c5a43227dc",
+        "event_ids": [
+          "EV-0d4e656aa51f9a46"
+        ],
+        "company_entity_id": "EN-2dc010636b9dce91",
+        "company_canonical_entity_id": "EN-2dc010636b9dce91",
+        "company_name": "Databricks",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "新一轮战略融资",
+        "amount_original": "约 30 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 30 亿美元"
+        },
+        "announced_at": "2026-07-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-4f2f10efb22c92e2",
+            "source_url": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act",
+            "source_title": "Databricks 估值达 1880 亿美元，Coatue 领投新一轮融资",
+            "source_content_hash": "905ee67082facdf9",
+            "quote": "The round was led by Coatue.",
+            "quote_hash": "fbe951c93654f636275f7cc1b5b0f2e96688afcfc3ab9681c40238e510d84e8e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-8f4a41e2fcdc2240",
+        "funding_insight_id": "FI-9fd39f44b35d940c",
+        "event_ids": [
+          "EV-d9cc588fb41a7e67"
+        ],
+        "company_entity_id": "EN-712dffae168fe622",
+        "company_canonical_entity_id": "",
+        "company_name": "Nomos Ai Inc.",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "1.2亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 120000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.2 亿美元"
+        },
+        "announced_at": "2026-07-07",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1b05d1dc5cb45a7b",
+            "source_url": "https://siliconangle.com/2026/07/07/norm-ai-nabs-120m-1-2b-valuation-bring-ai-agents-law/",
+            "source_title": "Norm Ai 以 12 亿美元估值获 1.2 亿美元融资，将 AI 智能体引入法律领域",
+            "source_content_hash": "bdcf73e00730d3c9",
+            "quote": "Blackstone, Bain Capital Ventures, Craft Ventures, Coatue, Vanguard, New York Life, TIAA, and Fenwick LLP also participated.",
+            "quote_hash": "67ea6d53fe5895c7b9259e09b6099219f3a5195b03bfa47ecb2dbe337be24814"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9fe25e9e8c5dcb81",
+        "funding_insight_id": "FI-9fd39f44b35d940c",
+        "event_ids": [
+          "EV-d9cc588fb41a7e67"
+        ],
+        "company_entity_id": "EN-712dffae168fe622",
+        "company_canonical_entity_id": "",
+        "company_name": "Nomos Ai Inc.",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "1.2亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 120000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.2 亿美元"
+        },
+        "announced_at": "2026-07-07",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方（2025年1月参投）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-afaa91a6569d1f7a",
+            "source_url": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",
+            "source_title": "Norm Ai Raises $120M Series C at $1.2B Valuation",
+            "source_content_hash": "afe0afef4cf0ce8c",
+            "quote": "Norm Ai raised $48 million in January 2025 from Vanguard, Blackstone, Bain Capital, Citi, TIAA, and Coatue.",
+            "quote_hash": "d292cf5d747ec6021464ac837841f934420e0a2cd66127a1bdcf2f7ae54c2ec7"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-20def59f85bb933b",
+        "funding_insight_id": "FI-082c684e1b4a88c2",
+        "event_ids": [
+          "EV-ef7346378fcf9746"
+        ],
+        "company_entity_id": "EN-e78bdebae031095b",
+        "company_canonical_entity_id": "EN-e78bdebae031095b",
+        "company_name": "SpaceX",
+        "round": "IPO",
+        "round_code": "ipo",
+        "round_original": "IPO",
+        "amount_original": "$75 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 75000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "750 亿美元"
+        },
+        "announced_at": "2026-06-03",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-0349532f469a6b45",
+            "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
+            "source_title": "Early SpaceX investors will now reap the rewards",
+            "source_content_hash": "e4b5710f29e81069",
+            "quote": "as well as hedge funds such as D1 Capital Partners and Coatue Management",
+            "quote_hash": "f8f9c67c9b70b05e13670c4555108b666573762e5f8532104ea2f4a2955cc0f1"
+          },
+          {
+            "source_id": "FISRC-0349532f469a6b45",
+            "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
+            "source_title": "Early SpaceX investors will now reap the rewards",
+            "source_content_hash": "e4b5710f29e81069",
+            "quote": "hedge funds such as Coatue and D1 gained exposure through later private rounds.",
+            "quote_hash": "5e8e04111f29d035d750044b9a6c77de787fbee92b8811dbab8aad251bbfb103"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-952b10130072e40f",
+        "funding_insight_id": "FI-b76fffbf5d0d91bd",
+        "event_ids": [
+          "EV-d4e44892226be468"
+        ],
+        "company_entity_id": "EN-7d3194f79e645c42",
+        "company_canonical_entity_id": "EN-7d3194f79e645c42",
+        "company_name": "OpenAI",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$1220亿",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 122000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1220 亿美元"
+        },
+        "announced_at": "2026-03-31",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1e2b3bad243bd066",
+            "source_url": "https://yespress.io/openais-122-b-megaround",
+            "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
+            "source_content_hash": "494969b64dc816f3",
+            "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+            "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-717f8e2307853189",
+        "funding_insight_id": "FI-91df568a315de93f",
+        "event_ids": [
+          "EV-b695dedc9acda5dc",
+          "EV-7add33b4c74dbf1a",
+          "EV-c5643983538c6513"
+        ],
+        "company_entity_id": "FICO-sycamore",
+        "company_canonical_entity_id": "",
+        "company_name": "Sycamore",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$65 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6500 万美元"
+        },
+        "announced_at": "2026-03-30",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-d354011359557f2f",
+            "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
+            "source_title": "Sycamore融资6500万美元，为企业打造可信代理操作系统",
+            "source_content_hash": "7c851906b2d8f45f",
+            "quote": "The round was led by Coatue and Lightspeed Venture Partners",
+            "quote_hash": "a82aa83a04c0ba6ee32dd4282665ad9712ef094f993092c5a716868ae9f13db4"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-93604d3f066943d4",
+        "funding_insight_id": "FI-2d6f9ac8b7ebeeee",
+        "event_ids": [
+          "EV-8eb0acb180b7ad9d"
+        ],
+        "company_entity_id": "EN-53b69ef92c836777",
+        "company_canonical_entity_id": "",
+        "company_name": "Replit",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$400M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-03-11",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-00ed3d8fd701898b",
+            "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
+            "source_title": "Replit raises $400M at $9B valuation as AI coding platform surges to over 40M users - Tech Startups",
+            "source_content_hash": "c906371275e7a3ca",
+            "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority.",
+            "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-39d556ebfbdeb172",
+        "funding_insight_id": "FI-352a7cfb23508f3e",
+        "event_ids": [
+          "EV-31df816db86db282"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "G轮",
+        "round_code": "series_g",
+        "round_original": "Series G",
+        "amount_original": "$30 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 亿美元"
+        },
+        "announced_at": "2026-02-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b58bb99dfec2e318",
+            "source_url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
+            "source_title": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation \\ Anthropic",
+            "source_content_hash": "c231466686007dd5",
+            "quote": "led by GIC and Coatue",
+            "quote_hash": "27b1fcdb8e8102afbf84113bae51103d064733269329486fc94fe8f01b33c8a6"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-77ff43331721bee6",
+        "funding_insight_id": "FI-c210fc9ab5481f28",
+        "event_ids": [
+          "EV-b31602193dbf4e08"
+        ],
+        "company_entity_id": "EN-53b69ef92c836777",
+        "company_canonical_entity_id": "",
+        "company_name": "Replit",
+        "round": "B轮扩展",
+        "round_code": "series_b_extension",
+        "round_original": "Series B extension",
+        "amount_original": "$97.4 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 97400000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9740 万美元"
+        },
+        "announced_at": "2023-04-27",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9b0f32fe01d091cc",
+            "source_url": "https://techcrunch.com/2023/04/27/replit-funding-100m-generative-ai/",
+            "source_title": "Replit，开发GitHub Copilot竞品的网页IDE，获1亿美元融资",
+            "source_content_hash": "3b03664369ea0afe",
+            "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer.",
+            "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-4f2f10efb22c92e2",
+        "source_url": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act",
+        "source_title": "Databricks 估值达 1880 亿美元，Coatue 领投新一轮融资",
+        "source_content_hash": "905ee67082facdf9",
+        "quote": "The round was led by Coatue.",
+        "quote_hash": "fbe951c93654f636275f7cc1b5b0f2e96688afcfc3ab9681c40238e510d84e8e"
+      },
+      {
+        "source_id": "FISRC-1b05d1dc5cb45a7b",
+        "source_url": "https://siliconangle.com/2026/07/07/norm-ai-nabs-120m-1-2b-valuation-bring-ai-agents-law/",
+        "source_title": "Norm Ai 以 12 亿美元估值获 1.2 亿美元融资，将 AI 智能体引入法律领域",
+        "source_content_hash": "bdcf73e00730d3c9",
+        "quote": "Blackstone, Bain Capital Ventures, Craft Ventures, Coatue, Vanguard, New York Life, TIAA, and Fenwick LLP also participated.",
+        "quote_hash": "67ea6d53fe5895c7b9259e09b6099219f3a5195b03bfa47ecb2dbe337be24814"
+      },
+      {
+        "source_id": "FISRC-afaa91a6569d1f7a",
+        "source_url": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",
+        "source_title": "Norm Ai Raises $120M Series C at $1.2B Valuation",
+        "source_content_hash": "afe0afef4cf0ce8c",
+        "quote": "Norm Ai raised $48 million in January 2025 from Vanguard, Blackstone, Bain Capital, Citi, TIAA, and Coatue.",
+        "quote_hash": "d292cf5d747ec6021464ac837841f934420e0a2cd66127a1bdcf2f7ae54c2ec7"
+      },
+      {
+        "source_id": "FISRC-0349532f469a6b45",
+        "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
+        "source_title": "Early SpaceX investors will now reap the rewards",
+        "source_content_hash": "e4b5710f29e81069",
+        "quote": "as well as hedge funds such as D1 Capital Partners and Coatue Management",
+        "quote_hash": "f8f9c67c9b70b05e13670c4555108b666573762e5f8532104ea2f4a2955cc0f1"
+      },
+      {
+        "source_id": "FISRC-0349532f469a6b45",
+        "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
+        "source_title": "Early SpaceX investors will now reap the rewards",
+        "source_content_hash": "e4b5710f29e81069",
+        "quote": "hedge funds such as Coatue and D1 gained exposure through later private rounds.",
+        "quote_hash": "5e8e04111f29d035d750044b9a6c77de787fbee92b8811dbab8aad251bbfb103"
+      },
+      {
+        "source_id": "FISRC-1e2b3bad243bd066",
+        "source_url": "https://yespress.io/openais-122-b-megaround",
+        "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
+        "source_content_hash": "494969b64dc816f3",
+        "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+        "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+      },
+      {
+        "source_id": "FISRC-d354011359557f2f",
+        "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
+        "source_title": "Sycamore融资6500万美元，为企业打造可信代理操作系统",
+        "source_content_hash": "7c851906b2d8f45f",
+        "quote": "The round was led by Coatue and Lightspeed Venture Partners",
+        "quote_hash": "a82aa83a04c0ba6ee32dd4282665ad9712ef094f993092c5a716868ae9f13db4"
+      },
+      {
+        "source_id": "FISRC-00ed3d8fd701898b",
+        "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
+        "source_title": "Replit raises $400M at $9B valuation as AI coding platform surges to over 40M users - Tech Startups",
+        "source_content_hash": "c906371275e7a3ca",
+        "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority.",
+        "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
+      },
+      {
+        "source_id": "FISRC-b58bb99dfec2e318",
+        "source_url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
+        "source_title": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation \\ Anthropic",
+        "source_content_hash": "c231466686007dd5",
+        "quote": "led by GIC and Coatue",
+        "quote_hash": "27b1fcdb8e8102afbf84113bae51103d064733269329486fc94fe8f01b33c8a6"
+      },
+      {
+        "source_id": "FISRC-9b0f32fe01d091cc",
+        "source_url": "https://techcrunch.com/2023/04/27/replit-funding-100m-generative-ai/",
+        "source_title": "Replit，开发GitHub Copilot竞品的网页IDE，获1亿美元融资",
+        "source_content_hash": "3b03664369ea0afe",
+        "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer.",
+        "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
+      }
+    ]
+  }
+}

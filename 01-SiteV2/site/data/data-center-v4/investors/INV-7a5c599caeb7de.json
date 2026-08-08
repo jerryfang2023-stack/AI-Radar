@@ -1,0 +1,1197 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-7a5c599caeb7de",
+    "name": "Y Combinator",
+    "aliases": [],
+    "canonical_entity_id": "EN-275b0f4a4023d91c",
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 20,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 19,
+    "first_disclosed_at": "2023-04-27",
+    "latest_disclosed_at": "2026-07-23",
+    "role_counts": {
+      "historical_or_ambiguous": 2,
+      "lead": 2,
+      "participant": 18
+    },
+    "round_codes": [
+      "multi_round",
+      "pre_seed",
+      "seed",
+      "series_a",
+      "series_b_extension",
+      "series_d"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-95fb1fa9a88b393c",
+        "canonical_entity_id": "EN-95fb1fa9a88b393c",
+        "name": "Agave"
+      },
+      {
+        "entity_id": "EN-befc92b3a019d04c",
+        "canonical_entity_id": "",
+        "name": "AgentMail"
+      },
+      {
+        "entity_id": "EN-2f88f41306209dd7",
+        "canonical_entity_id": "",
+        "name": "Avoca AI"
+      },
+      {
+        "entity_id": "EN-1050efc9e13624b2",
+        "canonical_entity_id": "",
+        "name": "General Analysis"
+      },
+      {
+        "entity_id": "EN-7f67f2f8692510cf",
+        "canonical_entity_id": "EN-7f67f2f8692510cf",
+        "name": "Hadrius"
+      },
+      {
+        "entity_id": "EN-f346eaca864441f9",
+        "canonical_entity_id": "",
+        "name": "JustAI"
+      },
+      {
+        "entity_id": "EN-20b5af8f2c749bf8",
+        "canonical_entity_id": "",
+        "name": "Lio Technologies"
+      },
+      {
+        "entity_id": "EN-ef2bee7868007cd4",
+        "canonical_entity_id": "",
+        "name": "Lio Technologies GmbH"
+      },
+      {
+        "entity_id": "EN-5c178682f5573d29",
+        "canonical_entity_id": "",
+        "name": "Mandel AI"
+      },
+      {
+        "entity_id": "EN-f5cfcb570b7edac2",
+        "canonical_entity_id": "",
+        "name": "Nexus Enterprises, Inc"
+      },
+      {
+        "entity_id": "EN-1c5483264189feef",
+        "canonical_entity_id": "",
+        "name": "Onyx"
+      },
+      {
+        "entity_id": "EN-53b69ef92c836777",
+        "canonical_entity_id": "",
+        "name": "Replit"
+      },
+      {
+        "entity_id": "EN-d387c8c96239d383",
+        "canonical_entity_id": "",
+        "name": "SigmanticAI"
+      },
+      {
+        "entity_id": "EN-10905d25fc373f32",
+        "canonical_entity_id": "",
+        "name": "Solve Intelligence"
+      },
+      {
+        "entity_id": "EN-a2183526e5130b45",
+        "canonical_entity_id": "",
+        "name": "Stack AI"
+      },
+      {
+        "entity_id": "EN-8bb4f88fd3cf9b29",
+        "canonical_entity_id": "",
+        "name": "Structured AI"
+      },
+      {
+        "entity_id": "EN-a56c2fbccb257dba",
+        "canonical_entity_id": "",
+        "name": "telli technologies GmbH"
+      },
+      {
+        "entity_id": "EN-f96246b78ef26d59",
+        "canonical_entity_id": "",
+        "name": "telli technologies GmbH"
+      },
+      {
+        "entity_id": "EN-eafe895eb8119e6e",
+        "canonical_entity_id": "",
+        "name": "Trace"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-a4459146183d1fa3",
+        "funding_insight_id": "FI-818ce8d5f2783452",
+        "event_ids": [
+          "EV-a64fab2ce6bc6c4c"
+        ],
+        "company_entity_id": "EN-a56c2fbccb257dba",
+        "company_canonical_entity_id": "",
+        "company_name": "telli technologies GmbH",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "€13.1 million ($15 million)",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 13100000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1310 万欧元"
+        },
+        "announced_at": "2026-07-23",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "既有投资方（本轮参投）",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a25b58a6297cb344",
+            "source_url": "https://www.eu-startups.com/2026/07/yc-backed-telli-raises-e13-1-million-to-build-ai-for-b2c-customer-operations/",
+            "source_title": "YC支持的telli融资1310万欧元，打造面向B2C客户运营的AI智能体",
+            "source_content_hash": "25462d7ebaa5e35a",
+            "quote": "alongside existing backers Cherry Ventures and Y Combinator",
+            "quote_hash": "80f965381185bd1fb72fa3663e74aada5c73a8d22d76d207a4532cbbffde8c02"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5c1382ec817c4c3a",
+        "funding_insight_id": "FI-b965835fdaa907bc",
+        "event_ids": [
+          "EV-c64e6836b9cd2b17"
+        ],
+        "company_entity_id": "EN-95fb1fa9a88b393c",
+        "company_canonical_entity_id": "EN-95fb1fa9a88b393c",
+        "company_name": "Agave",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A 轮",
+        "amount_original": "$15M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "announced_at": "2026-07-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投，既有投资方",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8c22d95f569f927e",
+            "source_url": "https://theaiinsider.tech/2026/07/16/agave-secures-15m-series-a-to-bring-ai-to-construction-financials/",
+            "source_title": "Agave 获 1500 万美元 A 轮融资，将 AI 引入建筑财务领域",
+            "source_content_hash": "a8e29aa71b711e6e",
+            "quote": "with continued participation from YCombinator",
+            "quote_hash": "94ac678dabab71c3bc142c1fa854dee0a24df8c7e05324e1ebf3c7eaed5608ed"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-81e03348905fea85",
+        "funding_insight_id": "FI-94821c36284cd9f0",
+        "event_ids": [
+          "EV-bffc68e7bb4d598b"
+        ],
+        "company_entity_id": "EN-7f67f2f8692510cf",
+        "company_canonical_entity_id": "EN-7f67f2f8692510cf",
+        "company_name": "Hadrius",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "种子轮和A轮",
+        "amount_original": "$27 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 27000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2700 万美元"
+        },
+        "announced_at": "2026-07-14",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-70c3e89375309295",
+            "source_url": "https://theaiinsider.tech/2026/07/23/hadrius-raises-27m-to-build-agentic-compliance-infrastructure/",
+            "source_title": "Hadrius 融资 2700 万美元，打造智能体合规基础设施",
+            "source_content_hash": "4f89d06d00dc11fa",
+            "quote": "with participation from Y Combinator",
+            "quote_hash": "a2cd665bcd61bbcc9e412400f1d8e3a4eec73107f3d5251698eaf4e96b3912da"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0919b82c5f7a9e15",
+        "funding_insight_id": "FI-617705549a679908",
+        "event_ids": [
+          "EV-e7dcecaed5a0ee5b"
+        ],
+        "company_entity_id": "EN-f346eaca864441f9",
+        "company_canonical_entity_id": "",
+        "company_name": "JustAI",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$17 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 17000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1700 万美元"
+        },
+        "announced_at": "2026-06-23",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投，种子轮投资方",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-058518ce11dc5f00",
+            "source_url": "https://sg.finance.yahoo.com/news/justai-raises-17m-series-build-170000502.html",
+            "source_title": "JustAI Raises $17M Series A to Build an Agentic Marketing Platform",
+            "source_content_hash": "80f6dde2ca5cd41c",
+            "quote": "The round was led by Base10 Partners, with participation from Y Combinator and Peak XV Partners.",
+            "quote_hash": "b268d7beb97b26faab0cea8b331fc0e2723c65c46e38dcc01d4429083ab013db"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-835737c1c02c620e",
+        "funding_insight_id": "FI-82d1e99998c69025",
+        "event_ids": [
+          "EV-40d196865997025c"
+        ],
+        "company_entity_id": "EN-8bb4f88fd3cf9b29",
+        "company_canonical_entity_id": "",
+        "company_name": "Structured AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$4.2M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4200000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "420 万美元"
+        },
+        "announced_at": "2026-06-11",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7568031d64eac5fa",
+            "source_url": "https://getstructured.ai/blog/structured-ai-4-2m-seed-round/",
+            "source_title": "Structured AI 获420万美元种子轮融资，为建筑世界构建质量层",
+            "source_content_hash": "77fbdb6058a98d5e",
+            "quote": "with participation from Y Combinator",
+            "quote_hash": "a2cd665bcd61bbcc9e412400f1d8e3a4eec73107f3d5251698eaf4e96b3912da"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-758e62a460ecf2e4",
+        "funding_insight_id": "FI-9b370a988458c224",
+        "event_ids": [
+          "EV-88f4ee8cd57bdf42"
+        ],
+        "company_entity_id": "EN-29e1a488361f12d3",
+        "company_canonical_entity_id": "",
+        "company_name": "Vapi Inc.",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$50 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-05-12",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-46ca8e6bf27dfb82",
+            "source_url": "https://siliconangle.com/2026/05/12/vapi-nabs-50m-make-voice-ai-human/",
+            "source_title": "Vapi 获 5000 万美元融资，让语音 AI 更人性化 - SiliconANGLE",
+            "source_content_hash": "5fee028b6dad3dc4",
+            "quote": "with participation from Y Combinator",
+            "quote_hash": "a2cd665bcd61bbcc9e412400f1d8e3a4eec73107f3d5251698eaf4e96b3912da"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-050c5280ff846c26",
+        "funding_insight_id": "FI-fecb7f6a77985938",
+        "event_ids": [
+          "EV-61546e58c0e669e7"
+        ],
+        "company_entity_id": "EN-1050efc9e13624b2",
+        "company_canonical_entity_id": "",
+        "company_name": "General Analysis",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$10 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-04-29",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2513b5897a02dd3c",
+            "source_url": "https://www.businesswire.com/news/home/20260429247972/en/General-Analysis-Raises-%2410M-in-Seed-Funding-to-Secure-Agentic-AI",
+            "source_title": "General Analysis 获 1000 万美元种子轮融资，用于保障 AI 智能体安全",
+            "source_content_hash": "fc9f406ab2427abb",
+            "quote": "with participation from 645 Ventures, Menlo Ventures, Y Combinator, and additional strategic investors and angels",
+            "quote_hash": "a9cb7cc5de15f5d2027a5c8fa856be08ef0254d044fb84b2ccae3bd0ba874959"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-011744fd522518c2",
+        "funding_insight_id": "FI-a308a87eb0e97da7",
+        "event_ids": [
+          "EV-dd3217aad32e6891"
+        ],
+        "company_entity_id": "EN-2f88f41306209dd7",
+        "company_canonical_entity_id": "",
+        "company_name": "Avoca AI",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "种子轮、A轮、B轮",
+        "amount_original": "超过1.25亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 125000000,
+          "min_value": 125000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1.25 亿美元"
+        },
+        "announced_at": "2026-04-27",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "种子轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b7221d306ef28b7d",
+            "source_url": "https://remarkboard.com/m/avoca-whose-ai-agents-let-physical-services-businesses/1kncppskdxkmw",
+            "source_title": "Avoca, whose AI agents let physical services businesses handle inbound calls and dispatch, raised $125M+ across seed, Series A, and Series B at a $1B valuation | Tech | Remarkboard",
+            "source_content_hash": "01160789e3aa9ab9",
+            "quote": "Y Combinator led the seed back in 2024.",
+            "quote_hash": "85d4aa39d2df47bbdec2749238651de85f47f5e3b2f4620587a0b95077090fc5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3414656de6219587",
+        "funding_insight_id": "FI-19731873c2b7d1c1",
+        "event_ids": [
+          "EV-c8928410f6c145eb"
+        ],
+        "company_entity_id": "EN-f5cfcb570b7edac2",
+        "company_canonical_entity_id": "",
+        "company_name": "Nexus Enterprises, Inc",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "$4.3M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "430 万美元"
+        },
+        "announced_at": "2026-03-31",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-14ff8eaae437ca5e",
+            "source_url": "https://www.globenewswire.com/de/news-release/2026/03/31/3265301/0/en/Nexus-Raises-4-3M-Seed-Round-to-Help-Business-Teams-Deploy-AI-Agents.html",
+            "source_title": "Nexus 获430万美元种子轮融资，助力业务团队部署",
+            "source_content_hash": "ed9ee46cde0da7e9",
+            "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital, and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz",
+            "quote_hash": "793a270995a522f9400f62ead35edcc5509c720d017e552417dd425fae1cdc82"
+          },
+          {
+            "source_id": "FISRC-21e200be4083b3a6",
+            "source_url": "https://www.finsmes.com/2026/04/nexus-raises-4-3m-in-seed-funding.html",
+            "source_title": "Nexus Raises $4.3M in Seed Funding",
+            "source_content_hash": "c0b3dc5a4e05a49c",
+            "quote": "The round was led by General Catalyst, with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital",
+            "quote_hash": "0f3e195a740becd895c67f974da211c5988a400fbde67b6a3952a62b32502067"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9ecc669f55b7303a",
+        "funding_insight_id": "FI-733abf18079d1cb8",
+        "event_ids": [
+          "EV-9e678b626c2a5c83"
+        ],
+        "company_entity_id": "EN-5c178682f5573d29",
+        "company_canonical_entity_id": "",
+        "company_name": "Mandel AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$3.9M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3900000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "390 万美元"
+        },
+        "announced_at": "2026-03-25",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1913db3e18347025",
+            "source_url": "https://tech.eu/2026/03/25/y-combinator-backed-mandel-ai-raises-3-9m-to-automate-global-supply-chains/",
+            "source_title": "Y Combinator 支持的 Mandel AI 获 390 万美元融资，用于自动化全球供应链",
+            "source_content_hash": "62f48a67236f5d86",
+            "quote": "The round is backed by Y Combinator, Category Ventures, Ritual Capital, e2vc, and other Silicon Valley investors and angels.",
+            "quote_hash": "48c54af8cdccc275a87d59e0f5a844d471e259eac73584eaa7f3916d62a5e250"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ecc95a248e7b64d4",
+        "funding_insight_id": "FI-2d6f9ac8b7ebeeee",
+        "event_ids": [
+          "EV-8eb0acb180b7ad9d"
+        ],
+        "company_entity_id": "EN-53b69ef92c836777",
+        "company_canonical_entity_id": "",
+        "company_name": "Replit",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$400M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-03-11",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-00ed3d8fd701898b",
+            "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
+            "source_title": "Replit raises $400M at $9B valuation as AI coding platform surges to over 40M users - Tech Startups",
+            "source_content_hash": "c906371275e7a3ca",
+            "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority.",
+            "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-205513ec36d077b7",
+        "funding_insight_id": "FI-94de7d23d9ebd5ba",
+        "event_ids": [
+          "EV-9055cb4fa2b4ee62"
+        ],
+        "company_entity_id": "EN-befc92b3a019d04c",
+        "company_canonical_entity_id": "",
+        "company_name": "AgentMail",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$6M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 6000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "600 万美元"
+        },
+        "announced_at": "2026-03-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f961f60a13274764",
+            "source_url": "https://techcrunch.com/2026/03/10/agentmail-raises-6m-to-build-an-email-service-for-ai-agents/",
+            "source_title": "AgentMail 获 600 万美元融资，为 AI 智能体构建邮件服务",
+            "source_content_hash": "789e41b1b6992f50",
+            "quote": "with participation from Y Combinator",
+            "quote_hash": "a2cd665bcd61bbcc9e412400f1d8e3a4eec73107f3d5251698eaf4e96b3912da"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-813a6fbd0ee00b19",
+        "funding_insight_id": "FI-b69210c5435600e7",
+        "event_ids": [
+          "EV-dd78b63f18dba410"
+        ],
+        "company_entity_id": "EN-20b5af8f2c749bf8",
+        "company_canonical_entity_id": "",
+        "company_name": "Lio Technologies",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$30M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-03-05",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e74c5c9663430e27",
+            "source_url": "https://www.heliad.com/highlights/lio-technologies-raises-30m-series-a-to-bring-agentic-ai-to-enterprise-procurement",
+            "source_title": "Lio Technologies 获 3000 万美元 A 轮融资，将智能体 AI 引入企业采购",
+            "source_content_hash": "1951b94e0afb85ad",
+            "quote": "with participation from SV Angels, Harry Stebbings and Y Combinator",
+            "quote_hash": "a48e0549c23c86475d22848e08f5bd1866a3ae0279228a50e6f3a131f5aac387"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-252c38c1c0a1d762",
+        "funding_insight_id": "FI-be6c288b08346194",
+        "event_ids": [
+          "EV-2083b9eda52a3f76"
+        ],
+        "company_entity_id": "EN-ef2bee7868007cd4",
+        "company_canonical_entity_id": "",
+        "company_name": "Lio Technologies GmbH",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$30 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-03-05",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-62082ad8f88f3c29",
+            "source_url": "https://techcrunch.com/2026/03/05/lio-ai-series-a-a16z-30m-raise-automate-enterprise-procurement/",
+            "source_title": "Lio 从 Andreessen Horowitz 等机构融资 3000 万美元，用于自动化企业采购",
+            "source_content_hash": "67222c768b378194",
+            "quote": "SV Angels, Harry Stebbings, and YC also partook in the round (Lio was part of the Spring ’23 batch).",
+            "quote_hash": "fdd13cc4cad434bbf56c0b62db98b038597fb511cdc45799c3479461757cbf59"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-6d7d855aa471b272",
+        "funding_insight_id": "FI-955f111e1400d9e0",
+        "event_ids": [
+          "EV-c46e427fedbf518d"
+        ],
+        "company_entity_id": "EN-eafe895eb8119e6e",
+        "company_canonical_entity_id": "",
+        "company_name": "Trace",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$3 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 万美元"
+        },
+        "announced_at": "2026-02-26",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ea2a22594e77fd6a",
+            "source_url": "https://techcrunch.com/2026/02/26/trace-raises-3-million-to-solve-the-agent-adoption-problem/",
+            "source_title": "Trace 融资 300 万美元，解决企业 AI 智能体采用难题",
+            "source_content_hash": "601ebbbabea8fa71",
+            "quote": "it had raised $3 million in seed funding from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder",
+            "quote_hash": "0ced4359dfcdc0e820178707640abbac3d1d212857810ea67c3616cb06ffb902"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-1acd213549d0cd7c",
+        "funding_insight_id": "FI-47e26458ea3314b4",
+        "event_ids": [
+          "EV-95341497f7ba9d83"
+        ],
+        "company_entity_id": "EN-d387c8c96239d383",
+        "company_canonical_entity_id": "",
+        "company_name": "SigmanticAI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "$500K",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 万美元"
+        },
+        "announced_at": "2025-09-01",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d06ceea5a84c2928",
+            "source_url": "https://startupintros.com/orgs/sigmanticai",
+            "source_title": "SigmanticAI: Funding, Team & Investors | Startup Intros",
+            "source_content_hash": "59186d894bcd5fb4",
+            "quote": "Y Combinator",
+            "quote_hash": "fd002d99775a132851a7f6a24a6b57ca6e18601fdfd4ca6297bec772b9348969"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f70209e98015d398",
+        "funding_insight_id": "FI-9fae2cdb80bfa282",
+        "event_ids": [
+          "EV-d5aa723446feebbb"
+        ],
+        "company_entity_id": "EN-c08f86842ff2c908",
+        "company_canonical_entity_id": "",
+        "company_name": "SRE.ai",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$7.2 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 7200000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "720 万美元"
+        },
+        "announced_at": "2025-08-20",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-8ef8a57bdcb3befe",
+            "source_url": "https://www.sre.ai/post/sre-ai-raises-7-2m-to-redefine-enterprise-devops-for-the-ai-era",
+            "source_title": "SRE.ai Raises $7.2M To Redefine Enterprise DevOps for the AI Era",
+            "source_content_hash": "5177c94ed465e18a",
+            "quote": "We’re grateful for the support of Salesforce Ventures, Y Combinator, Crane Venture Partners, and our incredible angel investors",
+            "quote_hash": "497f229ff4bc7fb60a981e1cafb2cc72fcaa39fab80f0b6857086b53cb08b293"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-32065bac3a792a6a",
+        "funding_insight_id": "FI-229d948dce0541a6",
+        "event_ids": [
+          "EV-9fc8916c19c19f99"
+        ],
+        "company_entity_id": "EN-f96246b78ef26d59",
+        "company_canonical_entity_id": "",
+        "company_name": "telli technologies GmbH",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "Pre-Seed",
+        "amount_original": "$3.6M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3600000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "360 万美元"
+        },
+        "announced_at": "2025-04-15",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-8857ed7cd124411a",
+            "source_url": "https://www.startupecosystem.ca/news/ai-voice-agent-startup-telli-secures-3-6m-in-pre-seed-funding",
+            "source_title": "AI 语音智能体初创公司 Telli 获 360 万美元预种子轮融资",
+            "source_content_hash": "4e1c1175bbda2d1a",
+            "quote": "pre-seed funding round led by Cherry Ventures and Y Combinator",
+            "quote_hash": "98e6f8730b388d572e3942e6fd8ffd53d7b336a37c0c76e4b18c9b93df67f25d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-2f6978875163bb3f",
+        "funding_insight_id": "FI-343cd8cad5810ba7",
+        "event_ids": [
+          "EV-86ca5af11ee4d275"
+        ],
+        "company_entity_id": "EN-10905d25fc373f32",
+        "company_canonical_entity_id": "",
+        "company_name": "Solve Intelligence",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$12M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1200 万美元"
+        },
+        "announced_at": "2025-04-09",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "既有投资方，本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-37166b7fc62df887",
+            "source_url": "https://techcrunch.com/2025/04/09/microsoft-backs-solve-intelligence-in-12m-series-a-funding/",
+            "source_title": "Solve Intelligence 获 1200 万美元新融资，将 AI 引入知识产权与专利工作流程",
+            "source_content_hash": "04da38491f1bcf53",
+            "quote": "Y Combinator also participated in the round.",
+            "quote_hash": "5350d0b92fa2a48190377b082c48d53d4d828f6d987d292e243ae5b281a9436b"
+          },
+          {
+            "source_id": "FISRC-37166b7fc62df887",
+            "source_url": "https://techcrunch.com/2025/04/09/microsoft-backs-solve-intelligence-in-12m-series-a-funding/",
+            "source_title": "Solve Intelligence 获 1200 万美元新融资，将 AI 引入知识产权与专利工作流程",
+            "source_content_hash": "04da38491f1bcf53",
+            "quote": "the $3 million seed it raised when it started in 2023",
+            "quote_hash": "ed4c05e856bf4061fb8330878915324691f23e1d263fa0139954e7318b812756"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f8524d4bc1d71d2e",
+        "funding_insight_id": "FI-a29040155764e60f",
+        "event_ids": [
+          "EV-b348083270be6c65"
+        ],
+        "company_entity_id": "EN-1c5483264189feef",
+        "company_canonical_entity_id": "",
+        "company_name": "Onyx",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$10M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2025-03-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-03b9d51b95b8c6ce",
+            "source_url": "https://www.globenewswire.com/news-release/2025/03/12/3041638/0/en/Onyx-Raises-10M-To-Help-Teams-Find-Knowledge-Faster-with-Open-Source-AI-Agents.html",
+            "source_title": "Onyx 获 1000 万美元融资，助力团队更快获取知识",
+            "source_content_hash": "9266f35a39d4c471",
+            "quote": "with participation from Y Combinator",
+            "quote_hash": "a2cd665bcd61bbcc9e412400f1d8e3a4eec73107f3d5251698eaf4e96b3912da"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e8417c6802a86061",
+        "funding_insight_id": "FI-2fa8e98cb4ae66d2",
+        "event_ids": [
+          "EV-f2143ba3124a2105"
+        ],
+        "company_entity_id": "EN-a2183526e5130b45",
+        "company_canonical_entity_id": "",
+        "company_name": "Stack AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$3 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 万美元"
+        },
+        "announced_at": "2024-05-21",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "种子轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3bb261b30faf2efa",
+            "source_url": "https://techcrunch.com/2024/05/21/stack-ai-wants-to-make-it-easier-to-build-ai-fueled-workflows/",
+            "source_title": "Stack AI 旨在简化构建 AI 驱动的工作流",
+            "source_content_hash": "13e16154329e1e7e",
+            "quote": "Investors include Gradient Ventures, Beat Ventures and True Capital along with Lambda Labs, Y Combinator, Soma Capital and Epakon Capital.",
+            "quote_hash": "910c2d34c389aa7e90cfaa57d5c64dcdefffb1a4955dac810e8b8403bfc676c5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3d466e6b0c8209c7",
+        "funding_insight_id": "FI-c210fc9ab5481f28",
+        "event_ids": [
+          "EV-b31602193dbf4e08"
+        ],
+        "company_entity_id": "EN-53b69ef92c836777",
+        "company_canonical_entity_id": "",
+        "company_name": "Replit",
+        "round": "B轮扩展",
+        "round_code": "series_b_extension",
+        "round_original": "Series B extension",
+        "amount_original": "$97.4 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 97400000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9740 万美元"
+        },
+        "announced_at": "2023-04-27",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9b0f32fe01d091cc",
+            "source_url": "https://techcrunch.com/2023/04/27/replit-funding-100m-generative-ai/",
+            "source_title": "Replit，开发GitHub Copilot竞品的网页IDE，获1亿美元融资",
+            "source_content_hash": "3b03664369ea0afe",
+            "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer.",
+            "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-a25b58a6297cb344",
+        "source_url": "https://www.eu-startups.com/2026/07/yc-backed-telli-raises-e13-1-million-to-build-ai-for-b2c-customer-operations/",
+        "source_title": "YC支持的telli融资1310万欧元，打造面向B2C客户运营的AI智能体",
+        "source_content_hash": "25462d7ebaa5e35a",
+        "quote": "alongside existing backers Cherry Ventures and Y Combinator",
+        "quote_hash": "80f965381185bd1fb72fa3663e74aada5c73a8d22d76d207a4532cbbffde8c02"
+      },
+      {
+        "source_id": "FISRC-8c22d95f569f927e",
+        "source_url": "https://theaiinsider.tech/2026/07/16/agave-secures-15m-series-a-to-bring-ai-to-construction-financials/",
+        "source_title": "Agave 获 1500 万美元 A 轮融资，将 AI 引入建筑财务领域",
+        "source_content_hash": "a8e29aa71b711e6e",
+        "quote": "with continued participation from YCombinator",
+        "quote_hash": "94ac678dabab71c3bc142c1fa854dee0a24df8c7e05324e1ebf3c7eaed5608ed"
+      },
+      {
+        "source_id": "FISRC-70c3e89375309295",
+        "source_url": "https://theaiinsider.tech/2026/07/23/hadrius-raises-27m-to-build-agentic-compliance-infrastructure/",
+        "source_title": "Hadrius 融资 2700 万美元，打造智能体合规基础设施",
+        "source_content_hash": "4f89d06d00dc11fa",
+        "quote": "with participation from Y Combinator",
+        "quote_hash": "a2cd665bcd61bbcc9e412400f1d8e3a4eec73107f3d5251698eaf4e96b3912da"
+      },
+      {
+        "source_id": "FISRC-058518ce11dc5f00",
+        "source_url": "https://sg.finance.yahoo.com/news/justai-raises-17m-series-build-170000502.html",
+        "source_title": "JustAI Raises $17M Series A to Build an Agentic Marketing Platform",
+        "source_content_hash": "80f6dde2ca5cd41c",
+        "quote": "The round was led by Base10 Partners, with participation from Y Combinator and Peak XV Partners.",
+        "quote_hash": "b268d7beb97b26faab0cea8b331fc0e2723c65c46e38dcc01d4429083ab013db"
+      },
+      {
+        "source_id": "FISRC-7568031d64eac5fa",
+        "source_url": "https://getstructured.ai/blog/structured-ai-4-2m-seed-round/",
+        "source_title": "Structured AI 获420万美元种子轮融资，为建筑世界构建质量层",
+        "source_content_hash": "77fbdb6058a98d5e",
+        "quote": "with participation from Y Combinator",
+        "quote_hash": "a2cd665bcd61bbcc9e412400f1d8e3a4eec73107f3d5251698eaf4e96b3912da"
+      },
+      {
+        "source_id": "FISRC-46ca8e6bf27dfb82",
+        "source_url": "https://siliconangle.com/2026/05/12/vapi-nabs-50m-make-voice-ai-human/",
+        "source_title": "Vapi 获 5000 万美元融资，让语音 AI 更人性化 - SiliconANGLE",
+        "source_content_hash": "5fee028b6dad3dc4",
+        "quote": "with participation from Y Combinator",
+        "quote_hash": "a2cd665bcd61bbcc9e412400f1d8e3a4eec73107f3d5251698eaf4e96b3912da"
+      },
+      {
+        "source_id": "FISRC-2513b5897a02dd3c",
+        "source_url": "https://www.businesswire.com/news/home/20260429247972/en/General-Analysis-Raises-%2410M-in-Seed-Funding-to-Secure-Agentic-AI",
+        "source_title": "General Analysis 获 1000 万美元种子轮融资，用于保障 AI 智能体安全",
+        "source_content_hash": "fc9f406ab2427abb",
+        "quote": "with participation from 645 Ventures, Menlo Ventures, Y Combinator, and additional strategic investors and angels",
+        "quote_hash": "a9cb7cc5de15f5d2027a5c8fa856be08ef0254d044fb84b2ccae3bd0ba874959"
+      },
+      {
+        "source_id": "FISRC-b7221d306ef28b7d",
+        "source_url": "https://remarkboard.com/m/avoca-whose-ai-agents-let-physical-services-businesses/1kncppskdxkmw",
+        "source_title": "Avoca, whose AI agents let physical services businesses handle inbound calls and dispatch, raised $125M+ across seed, Series A, and Series B at a $1B valuation | Tech | Remarkboard",
+        "source_content_hash": "01160789e3aa9ab9",
+        "quote": "Y Combinator led the seed back in 2024.",
+        "quote_hash": "85d4aa39d2df47bbdec2749238651de85f47f5e3b2f4620587a0b95077090fc5"
+      },
+      {
+        "source_id": "FISRC-14ff8eaae437ca5e",
+        "source_url": "https://www.globenewswire.com/de/news-release/2026/03/31/3265301/0/en/Nexus-Raises-4-3M-Seed-Round-to-Help-Business-Teams-Deploy-AI-Agents.html",
+        "source_title": "Nexus 获430万美元种子轮融资，助力业务团队部署",
+        "source_content_hash": "ed9ee46cde0da7e9",
+        "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital, and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz",
+        "quote_hash": "793a270995a522f9400f62ead35edcc5509c720d017e552417dd425fae1cdc82"
+      },
+      {
+        "source_id": "FISRC-21e200be4083b3a6",
+        "source_url": "https://www.finsmes.com/2026/04/nexus-raises-4-3m-in-seed-funding.html",
+        "source_title": "Nexus Raises $4.3M in Seed Funding",
+        "source_content_hash": "c0b3dc5a4e05a49c",
+        "quote": "The round was led by General Catalyst, with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital",
+        "quote_hash": "0f3e195a740becd895c67f974da211c5988a400fbde67b6a3952a62b32502067"
+      },
+      {
+        "source_id": "FISRC-1913db3e18347025",
+        "source_url": "https://tech.eu/2026/03/25/y-combinator-backed-mandel-ai-raises-3-9m-to-automate-global-supply-chains/",
+        "source_title": "Y Combinator 支持的 Mandel AI 获 390 万美元融资，用于自动化全球供应链",
+        "source_content_hash": "62f48a67236f5d86",
+        "quote": "The round is backed by Y Combinator, Category Ventures, Ritual Capital, e2vc, and other Silicon Valley investors and angels.",
+        "quote_hash": "48c54af8cdccc275a87d59e0f5a844d471e259eac73584eaa7f3916d62a5e250"
+      },
+      {
+        "source_id": "FISRC-00ed3d8fd701898b",
+        "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
+        "source_title": "Replit raises $400M at $9B valuation as AI coding platform surges to over 40M users - Tech Startups",
+        "source_content_hash": "c906371275e7a3ca",
+        "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority.",
+        "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
+      },
+      {
+        "source_id": "FISRC-f961f60a13274764",
+        "source_url": "https://techcrunch.com/2026/03/10/agentmail-raises-6m-to-build-an-email-service-for-ai-agents/",
+        "source_title": "AgentMail 获 600 万美元融资，为 AI 智能体构建邮件服务",
+        "source_content_hash": "789e41b1b6992f50",
+        "quote": "with participation from Y Combinator",
+        "quote_hash": "a2cd665bcd61bbcc9e412400f1d8e3a4eec73107f3d5251698eaf4e96b3912da"
+      },
+      {
+        "source_id": "FISRC-e74c5c9663430e27",
+        "source_url": "https://www.heliad.com/highlights/lio-technologies-raises-30m-series-a-to-bring-agentic-ai-to-enterprise-procurement",
+        "source_title": "Lio Technologies 获 3000 万美元 A 轮融资，将智能体 AI 引入企业采购",
+        "source_content_hash": "1951b94e0afb85ad",
+        "quote": "with participation from SV Angels, Harry Stebbings and Y Combinator",
+        "quote_hash": "a48e0549c23c86475d22848e08f5bd1866a3ae0279228a50e6f3a131f5aac387"
+      },
+      {
+        "source_id": "FISRC-62082ad8f88f3c29",
+        "source_url": "https://techcrunch.com/2026/03/05/lio-ai-series-a-a16z-30m-raise-automate-enterprise-procurement/",
+        "source_title": "Lio 从 Andreessen Horowitz 等机构融资 3000 万美元，用于自动化企业采购",
+        "source_content_hash": "67222c768b378194",
+        "quote": "SV Angels, Harry Stebbings, and YC also partook in the round (Lio was part of the Spring ’23 batch).",
+        "quote_hash": "fdd13cc4cad434bbf56c0b62db98b038597fb511cdc45799c3479461757cbf59"
+      },
+      {
+        "source_id": "FISRC-ea2a22594e77fd6a",
+        "source_url": "https://techcrunch.com/2026/02/26/trace-raises-3-million-to-solve-the-agent-adoption-problem/",
+        "source_title": "Trace 融资 300 万美元，解决企业 AI 智能体采用难题",
+        "source_content_hash": "601ebbbabea8fa71",
+        "quote": "it had raised $3 million in seed funding from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder",
+        "quote_hash": "0ced4359dfcdc0e820178707640abbac3d1d212857810ea67c3616cb06ffb902"
+      },
+      {
+        "source_id": "FISRC-d06ceea5a84c2928",
+        "source_url": "https://startupintros.com/orgs/sigmanticai",
+        "source_title": "SigmanticAI: Funding, Team & Investors | Startup Intros",
+        "source_content_hash": "59186d894bcd5fb4",
+        "quote": "Y Combinator",
+        "quote_hash": "fd002d99775a132851a7f6a24a6b57ca6e18601fdfd4ca6297bec772b9348969"
+      },
+      {
+        "source_id": "FISRC-8ef8a57bdcb3befe",
+        "source_url": "https://www.sre.ai/post/sre-ai-raises-7-2m-to-redefine-enterprise-devops-for-the-ai-era",
+        "source_title": "SRE.ai Raises $7.2M To Redefine Enterprise DevOps for the AI Era",
+        "source_content_hash": "5177c94ed465e18a",
+        "quote": "We’re grateful for the support of Salesforce Ventures, Y Combinator, Crane Venture Partners, and our incredible angel investors",
+        "quote_hash": "497f229ff4bc7fb60a981e1cafb2cc72fcaa39fab80f0b6857086b53cb08b293"
+      },
+      {
+        "source_id": "FISRC-8857ed7cd124411a",
+        "source_url": "https://www.startupecosystem.ca/news/ai-voice-agent-startup-telli-secures-3-6m-in-pre-seed-funding",
+        "source_title": "AI 语音智能体初创公司 Telli 获 360 万美元预种子轮融资",
+        "source_content_hash": "4e1c1175bbda2d1a",
+        "quote": "pre-seed funding round led by Cherry Ventures and Y Combinator",
+        "quote_hash": "98e6f8730b388d572e3942e6fd8ffd53d7b336a37c0c76e4b18c9b93df67f25d"
+      },
+      {
+        "source_id": "FISRC-37166b7fc62df887",
+        "source_url": "https://techcrunch.com/2025/04/09/microsoft-backs-solve-intelligence-in-12m-series-a-funding/",
+        "source_title": "Solve Intelligence 获 1200 万美元新融资，将 AI 引入知识产权与专利工作流程",
+        "source_content_hash": "04da38491f1bcf53",
+        "quote": "Y Combinator also participated in the round.",
+        "quote_hash": "5350d0b92fa2a48190377b082c48d53d4d828f6d987d292e243ae5b281a9436b"
+      },
+      {
+        "source_id": "FISRC-37166b7fc62df887",
+        "source_url": "https://techcrunch.com/2025/04/09/microsoft-backs-solve-intelligence-in-12m-series-a-funding/",
+        "source_title": "Solve Intelligence 获 1200 万美元新融资，将 AI 引入知识产权与专利工作流程",
+        "source_content_hash": "04da38491f1bcf53",
+        "quote": "the $3 million seed it raised when it started in 2023",
+        "quote_hash": "ed4c05e856bf4061fb8330878915324691f23e1d263fa0139954e7318b812756"
+      },
+      {
+        "source_id": "FISRC-03b9d51b95b8c6ce",
+        "source_url": "https://www.globenewswire.com/news-release/2025/03/12/3041638/0/en/Onyx-Raises-10M-To-Help-Teams-Find-Knowledge-Faster-with-Open-Source-AI-Agents.html",
+        "source_title": "Onyx 获 1000 万美元融资，助力团队更快获取知识",
+        "source_content_hash": "9266f35a39d4c471",
+        "quote": "with participation from Y Combinator",
+        "quote_hash": "a2cd665bcd61bbcc9e412400f1d8e3a4eec73107f3d5251698eaf4e96b3912da"
+      },
+      {
+        "source_id": "FISRC-3bb261b30faf2efa",
+        "source_url": "https://techcrunch.com/2024/05/21/stack-ai-wants-to-make-it-easier-to-build-ai-fueled-workflows/",
+        "source_title": "Stack AI 旨在简化构建 AI 驱动的工作流",
+        "source_content_hash": "13e16154329e1e7e",
+        "quote": "Investors include Gradient Ventures, Beat Ventures and True Capital along with Lambda Labs, Y Combinator, Soma Capital and Epakon Capital.",
+        "quote_hash": "910c2d34c389aa7e90cfaa57d5c64dcdefffb1a4955dac810e8b8403bfc676c5"
+      },
+      {
+        "source_id": "FISRC-9b0f32fe01d091cc",
+        "source_url": "https://techcrunch.com/2023/04/27/replit-funding-100m-generative-ai/",
+        "source_title": "Replit，开发GitHub Copilot竞品的网页IDE，获1亿美元融资",
+        "source_content_hash": "3b03664369ea0afe",
+        "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer.",
+        "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
+      }
+    ]
+  }
+}

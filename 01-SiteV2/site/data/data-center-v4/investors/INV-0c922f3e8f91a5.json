@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-0c922f3e8f91a5",
+    "name": "MCJ",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2025-07-10",
+    "latest_disclosed_at": "2025-07-10",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-2b81d85809794782",
+        "canonical_entity_id": "",
+        "name": "LGND AI, Inc."
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-b2172a5b3de11347",
+        "funding_insight_id": "FI-7b5ab8b022a94abc",
+        "event_ids": [
+          "EV-e579af588ad8cf64"
+        ],
+        "company_entity_id": "EN-2b81d85809794782",
+        "company_canonical_entity_id": "",
+        "company_name": "LGND AI, Inc.",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$9M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 9000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "900 万美元"
+        },
+        "announced_at": "2025-07-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-295efcf234fa6b4b",
+            "source_url": "https://www.linkedin.com/posts/climatecap_exclusive-lgnd-wants-to-make-chatgpt-for-activity-7349146378834501632-ku4h",
+            "source_title": "LGND AI raises $9M to make Earth data accessible | Climate Capital posted on the topic | LinkedIn",
+            "source_content_hash": "1af3a3688c6f556f",
+            "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture Ventures, Ridgeline, MCJ, Coalition, Clocktower Ventures, and others.",
+            "quote_hash": "6257e14391e6665ff8acd43d3c69a92164739a995b423d1476f4ffa4f75c628c"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-295efcf234fa6b4b",
+        "source_url": "https://www.linkedin.com/posts/climatecap_exclusive-lgnd-wants-to-make-chatgpt-for-activity-7349146378834501632-ku4h",
+        "source_title": "LGND AI raises $9M to make Earth data accessible | Climate Capital posted on the topic | LinkedIn",
+        "source_content_hash": "1af3a3688c6f556f",
+        "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture Ventures, Ridgeline, MCJ, Coalition, Clocktower Ventures, and others.",
+        "quote_hash": "6257e14391e6665ff8acd43d3c69a92164739a995b423d1476f4ffa4f75c628c"
+      }
+    ]
+  }
+}

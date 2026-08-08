@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-fa36ee67b2c08c",
+    "name": "OpenAI (工程师和设计师个人)",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-23",
+    "latest_disclosed_at": "2026-07-23",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-382635c9325bf327",
+        "canonical_entity_id": "",
+        "name": "Paper"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-865f0c2798f0c8cf",
+        "funding_insight_id": "FI-cb627f50984e7151",
+        "event_ids": [
+          "EV-136b2edc9b9f3be8",
+          "EV-3fb827f44ea109de"
+        ],
+        "company_entity_id": "EN-382635c9325bf327",
+        "company_canonical_entity_id": "",
+        "company_name": "Paper",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$34 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 34000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3400 万美元"
+        },
+        "announced_at": "2026-07-23",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-545ac2658d68b038",
+            "source_url": "https://www.citybiz.co/article/878792/accel-iconiq-join-34m-series-a-for-paper-design-platform-for-ai-era/",
+            "source_title": "Accel、Iconiq 参与AI时代设计平台Paper的3400万美元A轮融资",
+            "source_content_hash": "a9da415791e9a9f4",
+            "quote": "engineers and designers from Anthropic and OpenAI",
+            "quote_hash": "2d28c6389c542f299c0628c884dad88d925f02aa2a88a225611236c2ce9bc067"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-545ac2658d68b038",
+        "source_url": "https://www.citybiz.co/article/878792/accel-iconiq-join-34m-series-a-for-paper-design-platform-for-ai-era/",
+        "source_title": "Accel、Iconiq 参与AI时代设计平台Paper的3400万美元A轮融资",
+        "source_content_hash": "a9da415791e9a9f4",
+        "quote": "engineers and designers from Anthropic and OpenAI",
+        "quote_hash": "2d28c6389c542f299c0628c884dad88d925f02aa2a88a225611236c2ce9bc067"
+      }
+    ]
+  }
+}

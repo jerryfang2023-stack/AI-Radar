@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-c54d350e9ff3b3",
+    "name": "FoundersEdge",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2025-12-09",
+    "latest_disclosed_at": "2025-12-09",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "pre_seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-6c425df9139ab70a",
+        "canonical_entity_id": "",
+        "name": "Empromptu"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-dda3986d0dfaf8d5",
+        "funding_insight_id": "FI-99bbc6c0300806f4",
+        "event_ids": [
+          "EV-a7dfdd426fe2a74d"
+        ],
+        "company_entity_id": "EN-6c425df9139ab70a",
+        "company_canonical_entity_id": "",
+        "company_name": "Empromptu",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "pre-seed",
+        "amount_original": "$2M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "200 万美元"
+        },
+        "announced_at": "2025-12-09",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-79832d8eb3d1b153",
+            "source_url": "https://techcrunch.com/2025/12/09/empromptu-raises-2m-pre-seed-to-help-enterprises-build-ai-apps/",
+            "source_title": "Empromptu 获 200 万美元种子轮融资，助力企业构建 AI 应用",
+            "source_content_hash": "5799cff742ce8e79",
+            "quote": "Zeal Capital, Alumni Ventures, FoundersEdge, and South Loop also participated.",
+            "quote_hash": "335035a545f17d505b7bd23acb4d79e69a2090a2266208a90d7bfbd9143a45ea"
+          },
+          {
+            "source_id": "FISRC-fa8af278845697e8",
+            "source_url": "https://theaiinsider.tech/2025/12/15/empromptu-announces-2m-in-funding-to-bring-no-code-ai-application-development-to-non-technical-teams/",
+            "source_title": "Empromptu Announces $2M in Funding to Bring No-Code AI Application Development to Non-Technical Teams",
+            "source_content_hash": "e79ab5810bbfcaea",
+            "quote": "with participation from Zeal Capital, Alumni Ventures, FoundersEdge, and South Loop",
+            "quote_hash": "141db159ae846403722e399c6483599ec3f73f78718054fd23aa7253a257b1ab"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-79832d8eb3d1b153",
+        "source_url": "https://techcrunch.com/2025/12/09/empromptu-raises-2m-pre-seed-to-help-enterprises-build-ai-apps/",
+        "source_title": "Empromptu 获 200 万美元种子轮融资，助力企业构建 AI 应用",
+        "source_content_hash": "5799cff742ce8e79",
+        "quote": "Zeal Capital, Alumni Ventures, FoundersEdge, and South Loop also participated.",
+        "quote_hash": "335035a545f17d505b7bd23acb4d79e69a2090a2266208a90d7bfbd9143a45ea"
+      },
+      {
+        "source_id": "FISRC-fa8af278845697e8",
+        "source_url": "https://theaiinsider.tech/2025/12/15/empromptu-announces-2m-in-funding-to-bring-no-code-ai-application-development-to-non-technical-teams/",
+        "source_title": "Empromptu Announces $2M in Funding to Bring No-Code AI Application Development to Non-Technical Teams",
+        "source_content_hash": "e79ab5810bbfcaea",
+        "quote": "with participation from Zeal Capital, Alumni Ventures, FoundersEdge, and South Loop",
+        "quote_hash": "141db159ae846403722e399c6483599ec3f73f78718054fd23aa7253a257b1ab"
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-08T04:22:09.833Z",
+    "latestDataDate": "2026-08-08",
+    "currentDate": "2026-08-08",
+    "eventCount": 1937,
+    "quarantinedEventCount": 16,
+    "investmentInstitution": {
+      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
+      "generated_at": "2026-08-08T04:17:26.373Z",
+      "source_contract": "FUNDING-INSIGHT-V1.3",
+      "institution_count": 1080,
+      "evidence_backed_count": 1080,
+      "current_round_activity_count": 1223,
+      "individual_investor_count": 172,
+      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
+    }
+  },
+  "institution": {
+    "id": "INV-7df734f798a1d6",
+    "name": "select angel investors",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2022-04-12",
+    "latest_disclosed_at": "2022-04-12",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-bf0e59763d382462",
+        "canonical_entity_id": "",
+        "name": "Union.ai"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-11e8f4b8728c7c35",
+        "funding_insight_id": "FI-3815bc8e86989ecb",
+        "event_ids": [
+          "EV-11b5192fc54c0aa0"
+        ],
+        "company_entity_id": "EN-bf0e59763d382462",
+        "company_canonical_entity_id": "",
+        "company_name": "Union.ai",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$10 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2022-04-12",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7934d4a076d4adc8",
+            "source_url": "https://techcrunch.com/2022/04/12/union-ai-raises-10m-to-simplify-ai-and-ml-workflow-orchestration/",
+            "source_title": "Union.ai融资1000万美元，简化机器学习工作流编排",
+            "source_content_hash": "79c5fe52268cb7e7",
+            "quote": "raised $10 million in a round contributed by NEA and “select” angel investors",
+            "quote_hash": "74f7fb7f4870b592db0c61a787811ae10aeac6d44b7d28f6a4e09f9cd873949d"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-7934d4a076d4adc8",
+        "source_url": "https://techcrunch.com/2022/04/12/union-ai-raises-10m-to-simplify-ai-and-ml-workflow-orchestration/",
+        "source_title": "Union.ai融资1000万美元，简化机器学习工作流编排",
+        "source_content_hash": "79c5fe52268cb7e7",
+        "quote": "raised $10 million in a round contributed by NEA and “select” angel investors",
+        "quote_hash": "74f7fb7f4870b592db0c61a787811ae10aeac6d44b7d28f6a4e09f9cd873949d"
+      }
+    ]
+  }
+}
