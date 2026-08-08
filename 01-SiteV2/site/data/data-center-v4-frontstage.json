@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-08T01:18:33.899Z",
+    "generatedAt": "2026-08-08T03:52:21.139Z",
     "latestDataDate": "2026-08-08",
     "currentDate": "2026-08-08",
-    "eventCount": 1937,
+    "eventCount": 1938,
     "quarantinedEventCount": 16
   },
   "eventTypes": {
@@ -152463,6 +152463,70 @@
       "sourceExcerpt": "IT之家 8 月 8 日消息，OpenAI 表示，内部与专家评估显示，即将发布的模型 Astra 在智能体编程和网络安全领域取得重大突破。"
     },
     {
+      "id": "EV-b8cb3221efe607e2",
+      "dataDate": "2026-08-08",
+      "date": "2026-08-08",
+      "updatedDate": "2026-08-08",
+      "eventType": "pricing_change",
+      "eventTypeLabel": "定价变更",
+      "eventGroup": "模型、产品与服务",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "OpenAI 智能音箱或定价超 300 美元，用活动部件营造\"更鲜活\"感",
+      "originalTitle": "",
+      "subject": "OpenAI smart speaker",
+      "action": "定价",
+      "object": "超 300 美元，用活动部件营造\"更鲜活\"感",
+      "metrics": [
+        "$300, "
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-995ad0275ccc7045",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI 智能音箱或",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-8909bd7339aa98d4",
+          "subject": "OpenAI smart speaker",
+          "object": "over $300",
+          "quote": "OpenAI’s upcoming smart speaker will probably cost over $300, “people familiar with the matter” have told Bloomberg’s Mark Gurman ."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-bca8986e6d8eaec2",
+          "publisher": "Ars Technica：AI（RSS）",
+          "url": "https://arstechnica.com/gadgets/2026/08/openais-expensive-smart-speaker-will-use-moving-parts-to-seem-more-alive"
+        }
+      ],
+      "sourceUrl": "https://arstechnica.com/gadgets/2026/08/openais-expensive-smart-speaker-will-use-moving-parts-to-seem-more-alive",
+      "publisher": "Ars Technica：AI（RSS）",
+      "sourceExcerpt": "OpenAI’s upcoming smart speaker will probably cost over $300, “people familiar with the matter” have told Bloomberg’s Mark Gurman ."
+    },
+    {
       "id": "EV-bc3fe9c5c8fbc14c",
       "dataDate": "2026-08-08",
       "date": "2026-08-08",
@@ -298422,6 +298486,7 @@
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
         "EV-997609968760857a",
+        "EV-b8cb3221efe607e2",
         "EV-bc3fe9c5c8fbc14c",
         "EV-8a88707160ae733d",
         "EV-1b5b1d3317c8f688",
@@ -484888,6 +484953,7 @@
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
         "EV-997609968760857a",
+        "EV-b8cb3221efe607e2",
         "EV-bc3fe9c5c8fbc14c",
         "EV-8a88707160ae733d",
         "EV-1b5b1d3317c8f688",
@@ -485296,6 +485362,7 @@
         ],
         "productsServices": [
           "EV-997609968760857a",
+          "EV-b8cb3221efe607e2",
           "EV-bc3fe9c5c8fbc14c",
           "EV-8a88707160ae733d",
           "EV-1b5b1d3317c8f688",
@@ -485551,6 +485618,22 @@
             }
           ],
           "entityIds": [
+            "EN-7d3194f79e645c42"
+          ]
+        },
+        {
+          "id": "EV-b8cb3221efe607e2",
+          "dataDate": "2026-08-08",
+          "date": "2026-08-08",
+          "eventType": "pricing_change",
+          "eventTypeLabel": "定价变更",
+          "eventGroup": "模型、产品与服务",
+          "status": "rumored",
+          "statusLabel": "rumored",
+          "title": "OpenAI 智能音箱或定价超 300 美元，用活动部件营造\"更鲜活\"感",
+          "displayTags": [],
+          "entityIds": [
+            "EN-995ad0275ccc7045",
             "EN-7d3194f79e645c42"
           ]
         },
@@ -494955,6 +495038,56 @@
         "other": []
       },
       "timeline": [],
+      "viewpoints": []
+    },
+    {
+      "id": "EN-995ad0275ccc7045",
+      "name": "OpenAI 智能音箱或",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b8cb3221efe607e2"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-08",
+      "lastSeen": "2026-08-08",
+      "relationIds": [],
+      "groupedEventIds": {
+        "fundingAcquisition": [],
+        "deployments": [],
+        "partnerships": [],
+        "productsServices": [
+          "EV-b8cb3221efe607e2"
+        ],
+        "hardware": [],
+        "organizationPeople": [],
+        "other": []
+      },
+      "timeline": [
+        {
+          "id": "EV-b8cb3221efe607e2",
+          "dataDate": "2026-08-08",
+          "date": "2026-08-08",
+          "eventType": "pricing_change",
+          "eventTypeLabel": "定价变更",
+          "eventGroup": "模型、产品与服务",
+          "status": "rumored",
+          "statusLabel": "rumored",
+          "title": "OpenAI 智能音箱或定价超 300 美元，用活动部件营造\"更鲜活\"感",
+          "displayTags": [],
+          "entityIds": [
+            "EN-995ad0275ccc7045",
+            "EN-7d3194f79e645c42"
+          ]
+        }
+      ],
       "viewpoints": []
     },
     {
@@ -554761,7 +554894,7 @@
   "entityHistoryManifest": {
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-08T01:18:33.863Z",
+    "generatedAt": "2026-08-08T03:52:21.111Z",
     "coverage": {
       "startDate": "2017-09-07",
       "endDate": "2027-09-30",
@@ -554774,8 +554907,8 @@
       }
     },
     "counts": {
-      "entities": 1696,
-      "organizations": 1129,
+      "entities": 1697,
+      "organizations": 1130,
       "products": 506,
       "people": 61,
       "taxonomyNodes": 113,
@@ -561143,7 +561276,7 @@
       "processNode": "未披露",
       "capacity": "未披露",
       "capacityUnit": "",
-      "site": "Stockholm",
+      "site": "未披露",
       "region": "未披露",
       "contractValue": "未披露",
       "shipmentDate": "未披露",
