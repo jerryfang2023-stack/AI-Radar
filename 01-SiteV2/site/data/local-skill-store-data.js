@@ -1,6 +1,6 @@
 window.WaveSightLocalSkillStore = {
   "meta": {
-    "generatedAt": "2026-08-08 16:03:24",
+    "generatedAt": "2026-08-08 16:11:46",
     "generatedDate": "2026-08-08",
     "storeDir": ".skill-store",
     "projectSkillDir": "agent-workflow/skills",
@@ -36,8 +36,8 @@ window.WaveSightLocalSkillStore = {
       "guanlan": 23,
       "current": 19,
       "laneOwners": 3,
-      "needsAction": 1,
-      "syncIssues": 1,
+      "needsAction": 0,
+      "syncIssues": 0,
       "dormant": 128,
       "retired": 0,
       "cleanupQueue": 129,
@@ -3228,7 +3228,7 @@ window.WaveSightLocalSkillStore = {
       "mirroredExpected": "yes",
       "storeExists": true,
       "projectExists": true,
-      "syncState": "drift",
+      "syncState": "synced",
       "version": "1.2.0",
       "description": "Generate and maintain weekly report frontstage pages from accepted content under Guanlan Research.",
       "originalDescription": "Use when creating, updating, or repairing WaveSight AI weekly report frontstage pages from `01-SiteV2/content/12-applications/industry-reports/`. Applies to Guanlan Research weekly entries, weekly report detail pages, time-window selectors, report archive wiring, Guanlan VI page styling, and converting weekly report Markdown into editorial page modules. Do not use for writing the weekly report judgment itself; use `guanlan-weekly-business-change-radar` first.",
@@ -3250,17 +3250,11 @@ window.WaveSightLocalSkillStore = {
       "usage_count": 0,
       "sizeKB": 21,
       "fileCount": 8,
-      "modifiedAt": "2026-08-01 17:53:31",
-      "modifiedTime": 1785578011021.3325,
-      "issueCount": 1,
-      "issueSeverity": "high",
-      "issues": [
-        {
-          "key": "sync-drift",
-          "label": "同步分叉",
-          "severity": "high"
-        }
-      ],
+      "modifiedAt": "2026-08-08 15:46:20",
+      "modifiedTime": 1786175180217.4712,
+      "issueCount": 0,
+      "issueSeverity": "",
+      "issues": [],
       "cleanup_score": 0,
       "cleanup_candidate": false,
       "cleanup_reasons": [],
