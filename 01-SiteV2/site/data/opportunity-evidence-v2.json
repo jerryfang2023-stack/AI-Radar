@@ -9,7 +9,7 @@
     "activeDate": "2026-08-08",
     "generatedAt": "2026-08-08T00:00:00.000Z",
     "windowDays": 30,
-    "evidenceCount": 820,
+    "evidenceCount": 823,
     "directionCardCount": 2,
     "sourceAdapter": "data-center-v4-canonical"
   },
@@ -298,6 +298,68 @@
           "delivery_model": [],
           "business_action": [
             "partnership_integration"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-4d2852e1694b2818",
+      "event_id": "EV-4d2852e1694b2818",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "Netflix联合创始人支持光学推理设备制造商Olix的3.12亿美元融资轮",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-08-08",
+      "event_time": "2026-08-03T00:00:00.000Z",
+      "sourceUrl": "https://siliconangle.com/2026/08/03/netflix-co-founder-backs-312m-round-optical-inference-appliance-maker-olix/",
+      "sourceName": "keyword search / Exa",
+      "subject": "Olix Computing Ltd.",
+      "sourceExcerpt": "Artificial intelligence hardware startup Olix Computing Ltd. today announced that it has raised $312 million in funding.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-cc2ab268105df889",
+          "canonical_name": "Olix Computing Ltd.",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-ae8deb8341dbbd49"
+      ],
+      "source_refs": [
+        "SA-218e8eb8dca65615"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-ae8deb8341dbbd49",
+            "source_refs": [
+              "SA-218e8eb8dca65615"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
           ]
         }
       }
@@ -1043,6 +1105,97 @@
           ],
           "product_form": [],
           "delivery_model": [],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-4c8fa40c36b6ddb7",
+      "event_id": "EV-4c8fa40c36b6ddb7",
+      "event_type": "product_release",
+      "publication_status": "verified",
+      "title": "蚂蚁集团开源Avernet，让人与智能体像组织一样高效协作",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-08",
+      "event_time": "2026-08-07T03:08:51.000Z",
+      "sourceUrl": "https://www.qbitai.com/2026/08/467871.html",
+      "sourceName": "量子位",
+      "subject": "Ant Group",
+      "sourceExcerpt": "蚂蚁集团正式开源多智能体协作基础设施Avernet，社区版本已上线",
+      "entity_refs": [
+        {
+          "entity_id": "EN-5a28a1a99a417ba5",
+          "canonical_name": "Ant Group",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-6782c62ce2e7b65a",
+          "canonical_name": "Avernet",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-6004b26f67b0f6d8"
+      ],
+      "source_refs": [
+        "SA-d21c70adcf4544bb"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "agentic_execution",
+          "value_name": "智能体执行",
+          "entity_ids": [
+            "EN-5a28a1a99a417ba5"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [
+          {
+            "value_id": "open_source_commercial",
+            "claim_ref": "CL-6004b26f67b0f6d8",
+            "source_refs": [
+              "SA-d21c70adcf4544bb"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-6004b26f67b0f6d8",
+            "source_refs": [
+              "SA-d21c70adcf4544bb"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [
+            "open_source_commercial"
+          ],
           "business_action": [
             "product_launch"
           ]
@@ -1982,6 +2135,68 @@
           "product_form": [
             "workflow_automation"
           ],
+          "delivery_model": [],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-bc3fe9c5c8fbc14c",
+      "event_id": "EV-bc3fe9c5c8fbc14c",
+      "event_type": "product_release",
+      "publication_status": "verified",
+      "title": "OpenAI首款智能音箱预计2027年推出，售价超300美元",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-08",
+      "event_time": "2026-08-07T16:43:16.000Z",
+      "sourceUrl": "https://the-decoder.com/openais-first-smart-speaker-is-expected-in-2027-at-over-300/",
+      "sourceName": "The Decoder AI News",
+      "subject": "OpenAI",
+      "sourceExcerpt": "OpenAI is planning a donut-shaped smart speaker for 2027, priced above $300.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-3208a501d17d7c9f"
+      ],
+      "source_refs": [
+        "SA-91f9c1282f78feee"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-3208a501d17d7c9f",
+            "source_refs": [
+              "SA-91f9c1282f78feee"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
           "delivery_model": [],
           "business_action": [
             "product_launch"

@@ -1,9 +1,9 @@
 # 2026-08-08 Data Center V4 Asset Manifest
 
-- generated_at: 2026-08-08T08:25:35+08:00
+- generated_at: 2026-08-08T09:19:37+08:00
 - workflow_mode: business_signals_pr
-- monitor: success
-- resumed_from_run: none
+- monitor: restored
+- resumed_from_run: 31229358793
 - structured_intake_gate: success
 - data_center_v4_build: success
 - data_center_v4_gate: success

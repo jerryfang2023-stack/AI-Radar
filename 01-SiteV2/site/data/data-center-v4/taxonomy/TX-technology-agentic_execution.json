@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-08T00:23:54.811Z",
+    "generatedAt": "2026-08-08T01:18:33.899Z",
     "latestDataDate": "2026-08-08",
     "currentDate": "2026-08-08",
-    "eventCount": 1933,
+    "eventCount": 1937,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -203,6 +203,7 @@
       "EV-05a87b578967c83e",
       "EV-997609968760857a",
       "EV-e6b22f59df71890e",
+      "EV-4c8fa40c36b6ddb7",
       "EV-c35c34271c7caf53",
       "EV-99005688ec16c082",
       "EV-6249564cff324a0e",
@@ -597,6 +598,7 @@
       "EN-f4bec299df3f4f27",
       "EN-19e41212c0556603",
       "EN-dca6ec9510fc0176",
+      "EN-5a28a1a99a417ba5",
       "EN-738e22f0acab814c",
       "EN-842fcb5e60989a03",
       "EN-b81c8201acfc7639",
@@ -41245,6 +41247,96 @@
       "publisher": "Sierra：Blog（RSS）"
     },
     {
+      "id": "EV-4c8fa40c36b6ddb7",
+      "dataDate": "2026-08-08",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-08",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "蚂蚁集团开源Avernet，让人与智能体像组织一样高效协作",
+      "originalTitle": "",
+      "subject": "蚂蚁集团",
+      "action": "product_release",
+      "object": "蚂蚁集团开源Avernet，让人与智能体像组织一样高效协作",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-5a28a1a99a417ba5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-5a28a1a99a417ba5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-5a28a1a99a417ba5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-5a28a1a99a417ba5",
+        "EN-6782c62ce2e7b65a"
+      ],
+      "entityNames": [
+        "Ant Group",
+        "Avernet"
+      ],
+      "productName": "Avernet",
+      "products": [
+        {
+          "name": "Avernet",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Ant Group"
+          ]
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/08/467871.html",
+      "publisher": "量子位"
+    },
+    {
       "id": "EV-c35c34271c7caf53",
       "dataDate": "2026-08-08",
       "date": "2026-08-07",
@@ -76219,6 +76311,7 @@
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
         "EV-997609968760857a",
+        "EV-bc3fe9c5c8fbc14c",
         "EV-8a88707160ae733d",
         "EV-1b5b1d3317c8f688",
         "EV-8de21f5aa53242f1",
@@ -78090,6 +78183,32 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-03-04",
+      "lastSeen": "2026-08-08"
+    },
+    {
+      "id": "EN-5a28a1a99a417ba5",
+      "name": "Ant Group",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "蚂蚁集团"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-72dc9ab86e08fbab",
+        "EV-4c8fa40c36b6ddb7"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [
+        "EN-8989aada6eb4a4c3"
+      ],
+      "firstSeen": "2026-08-07",
       "lastSeen": "2026-08-08"
     },
     {
