@@ -11,7 +11,7 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is on the `V4.7.0-investment-institution-library` repository release. The public website uses the `SITE-V4.5.0-investment-institution-library` shell and keeps the existing V4 data-service baseline.
+WaveSight AI is on the `V4.8.0-research-homepage` repository release. The public website uses the `SITE-V4.6.0-research-homepage` shell and keeps the existing V4 data-service baseline.
 
 ## Current Positioning
 
@@ -28,7 +28,7 @@ WaveSight AI is on the `V4.7.0-investment-institution-library` repository releas
 - Current local knowledge-base version: `GUANLAN-VAULT-V1.2-private-evidence-linked`. The Guanlan AI Vault is physically independent from the repository and stores citation cards and traceable links only.
 - Current data-lake contract: `DATA-LAKE-V4.1-24-table`; JSONL and DuckDB must expose exactly the same 24-table V4 allowlist, including reviewed event classifications.
 - Current private evidence store: `PRIVATE-EVIDENCE-STORE-V2.0`; it is the sole complete-original store, deduplicates bodies by `content_hash`, and is physically outside the public repository and Vault. Public V4 data, the Vault, and the website never retain complete bodies.
-- Current Funding Insights inventory: 259 accepted application cards aggregate to 235 public financing-event cards. The projection exposes original and normalized amount, round, financing date, disclosure status, investor roles, cumulative basis, and stable history. It also builds 1,080 evidence-backed investor subjects with 1,223 current-round activities; unresolved product/person names remain in the evidence-backed entity review queue.
+- Current Funding Insights inventory: 259 accepted application cards aggregate to 235 public financing-event cards. The projection exposes original and normalized amount, round, financing date, disclosure status, investor roles, cumulative basis, and stable history. It also builds 1,079 evidence-backed investor subjects with 1,223 current-round activities; unresolved product/person names remain in the evidence-backed entity review queue.
 - Current private evidence inventory: 12,064 snapshots, 11,345 unique bodies, and zero missing bodies.
 - Current Windows automation contract: seven tasks. Final Closure owns data-lake refresh; Hermes watchdog and heartbeat publication run as one control-plane task.
 
@@ -36,6 +36,7 @@ WaveSight AI is on the `V4.7.0-investment-institution-library` repository releas
 
 | Entry | File | Role |
 |---|---|---|
+| Public Homepage | `01-SiteV2/site/index.html` | Research-magazine public portal backed by a lightweight projection of verified financing events and evidence-backed investor activities; exposes the governed six public entrances without becoming a new data contract |
 | Data Center | `01-SiteV2/site/data-center.html` | Four-entry public data layer: Event Library, unchanged Community Intelligence, unchanged First-Line Viewpoints, and Entity Library with an evidence-backed Investment Institution projection. FDE and AI Hardware remain event themes; factual relationships remain embedded in entity details. |
 | Trend Radar | `01-SiteV2/site/trend-radar.html` | Application-center factual explorer for accepted daily changes, weekly structure changes, monthly snapshots, and event/entity/source evidence links |
 | Guanlan Research | `01-SiteV2/site/intelligence-map.html` | Application-center research hub for latest Monthly / Weekly reports, capital and funding research, enterprise AI deployment topics, and archives |

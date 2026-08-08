@@ -29,6 +29,17 @@ test("checked-in split frontstage data matches the monolithic adapter date", () 
   assert.equal(eventIndex.meta.eventCount, full.meta.eventCount);
 });
 
+test("investment institution details keep global counts in the index manifest only", () => {
+  const investorDir = path.join(root, "01-SiteV2/site/data/data-center-v4/investors");
+  const files = fs.readdirSync(investorDir).filter((name) => name.endsWith(".json"));
+  const manifest = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/data-center-v4/manifest.json"), "utf8"));
+  assert.equal(files.length, manifest.counts.investors);
+  for (const name of files) {
+    const detail = JSON.parse(fs.readFileSync(path.join(investorDir, name), "utf8"));
+    assert.equal(detail.meta.investmentInstitution, undefined);
+  }
+});
+
 test("frontstage adapter builds real V4 data collections", () => {
   const data = buildFrontstageData(root);
 

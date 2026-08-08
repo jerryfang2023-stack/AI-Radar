@@ -932,7 +932,7 @@ export function writeFrontstageData(root = defaultRoot) {
   }
   for (const institution of investmentInstitutionRegistry.institutions || []) {
     writeJson(path.join(investorsDir, `${institution.id}.json`), {
-      meta: { ...data.meta, investmentInstitution: investmentInstitutionRegistry.meta },
+      meta: data.meta,
       institution,
     });
   }

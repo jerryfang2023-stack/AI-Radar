@@ -492,6 +492,29 @@ test("投资机构别名使用稳定主体键合并且类型判断不受整句�
   );
 });
 
+test("Y Combinator 保持稳定公开 ID 并明确归类为投资机构", () => {
+  const card = validCard();
+  card.financing.investors = [{
+    name: "Y Combinator",
+    entity_id: "EN-YC",
+    role: "本轮参投",
+    evidence_refs: evidence("SRC-YC", "Y Combinator participated in the round."),
+  }];
+  const abbreviated = structuredClone(card);
+  abbreviated.funding_insight_id = "FI-YC-ABBREVIATED";
+  abbreviated.triggered_by_event_id = "EV-YC-ABBREVIATED";
+  abbreviated.financing.investors[0].name = "YC";
+  const registry = buildInvestmentInstitutionRegistry([card, abbreviated], {
+    companies: [{ id: "EN-YC", name: "Y Combinator", type: "公司/机构" }],
+  }, card.published_at);
+  assert.equal(investmentInstitutionId("Y Combinator", "EN-YC"), "INV-7a5c599caeb7de");
+  assert.equal(investmentInstitutionId("YC", "EN-YC"), "INV-7a5c599caeb7de");
+  assert.equal(registry.institutions.length, 1);
+  assert.deepEqual(registry.institutions[0].aliases, ["YC"]);
+  assert.equal(registry.institutions[0].investor_kind, "investment_institution");
+  assert.equal(registry.institutions[0].investor_kind_label, "投资机构");
+});
+
 test("实体链接只做可解释的规范精确匹配并容忍商标与人物角色后缀", () => {
   const resolve = entityResolver({
     products: [{ id: "EN-PRODUCT", type: "产品/服务", name: "Acme Agent", aliases: [] }],
@@ -1631,7 +1654,7 @@ test("前台构建只发布通过门禁的卡片并生成双向链接", () => {
     const data = buildFundingInsightsFrontstage(tempRoot);
     const rebuilt = buildFundingInsightsFrontstage(tempRoot);
     assert.equal(data.cards.length, 1);
-    assert.equal(data.meta.site_version, "SITE-V4.5.0-investment-institution-library");
+    assert.equal(data.meta.site_version, "SITE-V4.6.0-research-homepage");
     assert.equal(data.meta.generated_at, "2026-07-26T09:00:00.000Z");
     assert.equal(rebuilt.meta.generated_at, data.meta.generated_at);
     assert.equal(data.cards[0].financing.investors[0].name, "Northstar Ventures");

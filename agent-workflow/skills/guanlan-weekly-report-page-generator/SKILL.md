@@ -80,7 +80,7 @@ For detailed rules, load:
    - Treat user-deleted elements as blocked unless the user explicitly reintroduces them.
 
 6. Verify version metadata when releasing.
-   - Main site version lives in `meta[name="wavesight-version"]` and must match the current value in `context/version-ledger.md` (`SITE-V4.5.0-investment-institution-library` at this revision).
+   - Main site version lives in `meta[name="wavesight-version"]` and must match the current value in `context/version-ledger.md` (`SITE-V4.6.0-research-homepage` at this revision).
    - Guanlan Research column version lives in `meta[name="wavesight-column-version"]` and must be `REPORTS-V1.2.0-research-hub`.
    - Weekly source path lives in `meta[name="weekly-report-source"]`.
    - Update `context/version-ledger.md` only for accepted release changes.

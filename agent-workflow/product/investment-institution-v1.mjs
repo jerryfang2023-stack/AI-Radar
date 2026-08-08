@@ -11,6 +11,7 @@ function normalizedName(value = "") {
 }
 
 const INVESTOR_ALIAS_GROUPS = [
+  { name: "Y Combinator", aliases: ["YC"], kind: "investment_institution", stableKey: "name:ycombinator" },
   { name: "Andreessen Horowitz", aliases: ["a16z", "Andreessen Horowitz (a16z)"], kind: "investment_institution" },
   { name: "Sequoia Capital", aliases: ["Sequoia"], kind: "investment_institution" },
   { name: "Lightspeed Venture Partners", aliases: ["Lightspeed"], kind: "investment_institution" },
@@ -33,7 +34,7 @@ const INVESTOR_ALIAS_INDEX = new Map(INVESTOR_ALIAS_GROUPS.flatMap((group) => (
 function investorIdentity(name = "") {
   const group = INVESTOR_ALIAS_INDEX.get(normalizedName(name));
   return group
-    ? { key: `alias:${normalizedName(group.name)}`, name: group.name, kind: group.kind }
+    ? { key: group.stableKey || `alias:${normalizedName(group.name)}`, name: group.name, kind: group.kind }
     : { key: `name:${normalizedName(name)}`, name: clean(name), kind: "" };
 }
 

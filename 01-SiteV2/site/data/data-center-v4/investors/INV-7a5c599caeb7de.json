@@ -9,36 +9,28 @@
     "latestDataDate": "2026-08-08",
     "currentDate": "2026-08-08",
     "eventCount": 1937,
-    "quarantinedEventCount": 16,
-    "investmentInstitution": {
-      "schema_version": "INVESTMENT-INSTITUTION-V1.0",
-      "generated_at": "2026-08-08T04:17:26.373Z",
-      "source_contract": "FUNDING-INSIGHT-V1.3",
-      "institution_count": 1080,
-      "evidence_backed_count": 1080,
-      "current_round_activity_count": 1223,
-      "individual_investor_count": 172,
-      "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
-    }
+    "quarantinedEventCount": 16
   },
   "institution": {
     "id": "INV-7a5c599caeb7de",
     "name": "Y Combinator",
-    "aliases": [],
+    "aliases": [
+      "YC"
+    ],
     "canonical_entity_id": "EN-275b0f4a4023d91c",
-    "investor_kind": "corporate_investor",
-    "investor_kind_label": "企业投资方",
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 20,
+    "current_round_count": 21,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 19,
+    "portfolio_company_count": 20,
     "first_disclosed_at": "2023-04-27",
     "latest_disclosed_at": "2026-07-23",
     "role_counts": {
       "historical_or_ambiguous": 2,
       "lead": 2,
-      "participant": 18
+      "participant": 19
     },
     "round_codes": [
       "multi_round",
@@ -73,6 +65,11 @@
         "entity_id": "EN-7f67f2f8692510cf",
         "canonical_entity_id": "EN-7f67f2f8692510cf",
         "name": "Hadrius"
+      },
+      {
+        "entity_id": "EN-eaa1c24270a0d057",
+        "canonical_entity_id": "",
+        "name": "Harper"
       },
       {
         "entity_id": "EN-f346eaca864441f9",
@@ -725,6 +722,44 @@
         ]
       },
       {
+        "activity_id": "IA-38f6484499bcb7ed",
+        "funding_insight_id": "FI-6d45b570f8bf6df7",
+        "event_ids": [
+          "EV-e4b3a19529576778"
+        ],
+        "company_entity_id": "EN-eaa1c24270a0d057",
+        "company_canonical_entity_id": "",
+        "company_name": "Harper",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "种子轮和A轮合并",
+        "amount_original": "$46.8 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 46800000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4680 万美元"
+        },
+        "announced_at": "2026-02-25",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7f1c22fc0cc9f63f",
+            "source_url": "https://techcrunch.com/2026/02/25/ai-insurance-brokerage-harper-raises-45m-series-a-and-seed/",
+            "source_title": "Y Combinator毕业生、AI保险经纪公司Harper获4700万美元融资",
+            "source_content_hash": "88e3ca9ed4470da9",
+            "quote": "Investors in the company include YC, Lobster Capital, and Peak XV Partners",
+            "quote_hash": "f99567302db388c0f0e1bc1872b532b90bf6d6cce0efab2b158a6546e55060ce"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-1acd213549d0cd7c",
         "funding_insight_id": "FI-47e26458ea3314b4",
         "event_ids": [
@@ -1127,6 +1162,14 @@
         "source_content_hash": "601ebbbabea8fa71",
         "quote": "it had raised $3 million in seed funding from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder",
         "quote_hash": "0ced4359dfcdc0e820178707640abbac3d1d212857810ea67c3616cb06ffb902"
+      },
+      {
+        "source_id": "FISRC-7f1c22fc0cc9f63f",
+        "source_url": "https://techcrunch.com/2026/02/25/ai-insurance-brokerage-harper-raises-45m-series-a-and-seed/",
+        "source_title": "Y Combinator毕业生、AI保险经纪公司Harper获4700万美元融资",
+        "source_content_hash": "88e3ca9ed4470da9",
+        "quote": "Investors in the company include YC, Lobster Capital, and Peak XV Partners",
+        "quote_hash": "f99567302db388c0f0e1bc1872b532b90bf6d6cce0efab2b158a6546e55060ce"
       },
       {
         "source_id": "FISRC-d06ceea5a84c2928",

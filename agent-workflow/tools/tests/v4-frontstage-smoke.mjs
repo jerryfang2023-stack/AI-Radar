@@ -16,6 +16,7 @@ const smokeEntity = entityIndex.companies?.[0] || entityIndex.products?.[0] || e
 const smokeFounder = entityIndex.people?.find((person) => person.fundingInsightIds?.length);
 const smokeTaxonomy = entityIndex.taxonomyNodes?.[0];
 const cases = [
+  ["index.html", "index.html"],
   ["data-center.html?view=events", "data-center.html?view=events"],
   ["data-center.html?view=events&theme=fde", "data-center.html?view=events"],
   ["data-center.html?view=events&theme=hardware", "data-center.html?view=events"],
@@ -261,6 +262,7 @@ async function main() {
         });
 
         if (viewport.name === "desktop" && [
+          "index.html",
           "intelligence-map.html",
           "funding-insights.html",
           "opportunity-map.html",
@@ -272,6 +274,9 @@ async function main() {
             path: path.join(screenshotDir, `${route.replace(/[^a-z0-9]+/giu, "-")}.png`),
             fullPage: false,
           });
+        }
+        if (viewport.name === "mobile" && route === "index.html") {
+          await page.screenshot({ path: path.join(screenshotDir, "homepage-mobile.png"), fullPage: false });
         }
         if (viewport.name === "mobile" && route === "weekly-ai-business-change-radar.html") {
           await page.locator("[data-nav-toggle]").click();

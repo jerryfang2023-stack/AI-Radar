@@ -11,7 +11,8 @@ const reportDetailPages = [
     .filter((name) => /^(?:weekly-ai-business-change-radar-\d{4}-\d{2}-\d{2}|monthly-business-structure-\d{4}-\d{2})\.html$/u.test(name))
     .sort(),
 ];
-const expectedSiteVersion = "SITE-V4.5.0-investment-institution-library";
+const expectedSiteVersion = "SITE-V4.6.0-research-homepage";
+const expectedHomepageVersion = "HOMEPAGE-FRONTSTAGE-V1.0";
 const expectedDataCenterProductVersion = "SITE-V4.2.0-entity-history";
 const expectedOpportunityEvidenceSiteVersion = "SITE-V4.2.0-entity-history";
 const expectedReportsCenterColumnVersion = "REPORTS-V1.2.0-research-hub";
@@ -35,6 +36,8 @@ const frontstageFiles = [
   "01-SiteV2/site/pipeline-dashboard.html",
   "01-SiteV2/site/assets/data-center-v4.css",
   "01-SiteV2/site/assets/data-center-v4.js",
+  "01-SiteV2/site/assets/home.css",
+  "01-SiteV2/site/assets/home.js",
   "01-SiteV2/site/assets/funding-insights.css",
   "01-SiteV2/site/assets/funding-insights.js",
   "01-SiteV2/site/assets/v4-report-shell.js",
@@ -43,9 +46,11 @@ const frontstageFiles = [
   "01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs",
   "01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs",
   "01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs",
+  "01-SiteV2/site/scripts/build-homepage-frontstage.mjs",
   "01-SiteV2/site/data/data-center-v4-frontstage.json",
   "01-SiteV2/site/data/opportunity-evidence-v2.json",
   "01-SiteV2/site/data/funding-insights-v1.json",
+  "01-SiteV2/site/data/homepage-v1.json",
   "01-SiteV2/site/data/first-line-viewpoints-v4.json",
   "01-SiteV2/site/data/community-intelligence.json",
 ].map((file) => path.join(root, file));
@@ -65,6 +70,8 @@ const publicFrontstageTextFiles = [
   "01-SiteV2/site/pipeline-dashboard.html",
   "01-SiteV2/site/assets/data-center-v4.css",
   "01-SiteV2/site/assets/data-center-v4.js",
+  "01-SiteV2/site/assets/home.css",
+  "01-SiteV2/site/assets/home.js",
   "01-SiteV2/site/assets/funding-insights.css",
   "01-SiteV2/site/assets/funding-insights.js",
   "01-SiteV2/site/assets/v4-report-shell.js",
@@ -425,6 +432,23 @@ function collectV4EntityRelationIssues() {
       0,
     );
     if (!entityCount) issues.push(issue(entityFile, "entity_index_empty"));
+    const investorIds = new Set((data?.investors || []).map((item) => item.id));
+    const investorDetailDir = path.join(root, "01-SiteV2/site/data/data-center-v4/investors");
+    for (const investorId of investorIds) {
+      if (!fs.existsSync(path.join(investorDetailDir, `${investorId}.json`))) {
+        issues.push(issue(entityFile, "investor_detail_missing", investorId));
+        break;
+      }
+    }
+    const fundingFile = path.join(root, "01-SiteV2/site/data/funding-insights-v1.json");
+    const funding = JSON.parse(read(fundingFile));
+    const danglingInvestor = (funding.cards || []).flatMap((card) => [
+      ...(card.financing?.investors || []),
+      ...(card.financing?.other_round_investors || []),
+    ]).find((item) => item.institution_id && !investorIds.has(item.institution_id));
+    if (danglingInvestor) {
+      issues.push(issue(fundingFile, "funding_investor_link_dangling", `${danglingInvestor.name}: ${danglingInvestor.institution_id}`));
+    }
   } catch (error) {
     issues.push(issue(entityFile, "entity_index_json_parse_failed", error.message));
   }
@@ -450,9 +474,69 @@ function collectV4EntityRelationIssues() {
   return issues;
 }
 
+function collectHomepageIssues() {
+  const issues = [];
+  const htmlFile = path.join(root, "01-SiteV2/site/index.html");
+  const scriptFile = path.join(root, "01-SiteV2/site/assets/home.js");
+  const dataFile = path.join(root, "01-SiteV2/site/data/homepage-v1.json");
+  const html = read(htmlFile);
+  const script = read(scriptFile);
+  for (const token of [
+    "assets/brand/logo-wavesight-reference-horizontal.svg",
+    "assets/home.css",
+    "assets/home.js",
+    "data-center.html?view=events",
+    "data-center.html?view=community",
+    "data-center.html?view=viewpoints",
+    "data-center.html?view=index",
+    "trend-radar.html",
+    "intelligence-map.html",
+  ]) {
+    if (!html.includes(token)) issues.push(issue(htmlFile, "homepage_required_token_missing", token));
+  }
+  if (/http-equiv="refresh"|newsletter|订阅成功|92%/iu.test(html)) {
+    issues.push(issue(htmlFile, "homepage_demo_or_redirect_content_present"));
+  }
+  if (!script.includes("data/homepage-v1.json")) {
+    issues.push(issue(scriptFile, "homepage_projection_dependency_missing"));
+  }
+  try {
+    const data = JSON.parse(read(dataFile));
+    const funding = JSON.parse(read(path.join(root, "01-SiteV2/site/data/funding-insights-v1.json")));
+    const institutions = JSON.parse(read(path.join(root, "01-SiteV2/content/11-databases/investment-institutions-v1.json")));
+    if (data.meta?.schema_version !== expectedHomepageVersion || data.meta?.site_version !== expectedSiteVersion) {
+      issues.push(issue(dataFile, "homepage_projection_version_mismatch"));
+    }
+    if (data.metrics?.verified_financing_events !== funding.cards?.length) {
+      issues.push(issue(dataFile, "homepage_financing_count_mismatch"));
+    }
+    if (data.metrics?.evidence_backed_investor_subjects !== institutions.meta?.evidence_backed_count
+      || data.metrics?.current_round_activities !== institutions.meta?.current_round_activity_count) {
+      issues.push(issue(dataFile, "homepage_investor_metrics_mismatch"));
+    }
+    if (data.weekly_financing_counts?.length !== 8) issues.push(issue(dataFile, "homepage_weekly_series_invalid"));
+    if (!data.latest_deals?.length || data.latest_deals.some((deal) => (
+      !deal.company || !deal.round || !deal.amount_display || !deal.announced_at || !deal.source_count
+    ))) {
+      issues.push(issue(dataFile, "homepage_latest_deal_incomplete"));
+    }
+    const projectionText = JSON.stringify(data);
+    if (/total_amount|cumulative_currency_total/iu.test(projectionText)) {
+      issues.push(issue(dataFile, "homepage_cross_currency_total_present"));
+    }
+    if (/market_categories|"disclosure_status":|institution_id|aliases/iu.test(projectionText)) {
+      issues.push(issue(dataFile, "homepage_unused_field_present"));
+    }
+  } catch (error) {
+    issues.push(issue(dataFile, "homepage_projection_invalid", error.message));
+  }
+  return issues;
+}
+
 function collectVersionMetaIssues() {
   const issues = [];
   const currentPages = [
+    "index.html",
     "data-center.html",
     "trend-radar.html",
     "v3-data-observation.html",
@@ -525,6 +609,7 @@ const issues = [
   ...collectUnifiedNavigationIssues(),
   ...collectV4FrontstageDataIssues(),
   ...collectV4EntityRelationIssues(),
+  ...collectHomepageIssues(),
   ...collectIndustryReportsDataIssues(),
   ...collectVersionMetaIssues(),
 ];

@@ -35,11 +35,11 @@ function parseCurrentVersions() {
 
 const versions = parseCurrentVersions();
 const expected = {
-  release: "V4.7.0-investment-institution-library",
-  packageVersion: "4.7.0",
-  productVersion: "V4.7",
-  gitTag: "v4.7.0-investment-institution-library",
-  site: "SITE-V4.5.0-investment-institution-library",
+  release: "V4.8.0-research-homepage",
+  packageVersion: "4.8.0",
+  productVersion: "V4.8",
+  gitTag: "v4.8.0-research-homepage",
+  site: "SITE-V4.6.0-research-homepage",
   ops: "OPS-V2.0.0-v4-telemetry",
   reports: "REPORTS-V1.2.0-research-hub",
   opportunity: "OMAP-V2.0.0-v4-evidence",
@@ -110,6 +110,7 @@ if (packageVersion !== expected.packageVersion) fail(`package.json expected ${ex
 if (packageLockVersion !== expected.packageVersion) fail(`package-lock.json expected ${expected.packageVersion}, found ${packageLockVersion || "missing"}`);
 
 const sitePages = [
+  "01-SiteV2/site/index.html",
   "01-SiteV2/site/data-center.html",
   "01-SiteV2/site/intelligence-map.html",
   "01-SiteV2/site/opportunity-map.html",
@@ -165,6 +166,10 @@ const fundingInsights = readJson("01-SiteV2/site/data/funding-insights-v1.json")
 if (fundingInsights.meta?.site_version !== expected.site) {
   fail(`Funding Insights site version expected ${expected.site}, found ${fundingInsights.meta?.site_version || "missing"}`);
 }
+const homepage = readJson("01-SiteV2/site/data/homepage-v1.json");
+if (homepage.meta?.site_version !== expected.site) {
+  fail(`Homepage site version expected ${expected.site}, found ${homepage.meta?.site_version || "missing"}`);
+}
 
 const personReview = readJson("01-SiteV2/content/11-databases/entity-history-v1/person-account-review-decisions.json");
 if (personReview.review_version !== "PERSON-REVIEW-V1.0") fail("base person/account review must remain PERSON-REVIEW-V1.0");
@@ -201,7 +206,7 @@ rejectText("agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md", "
 rejectText("agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md", "current SITE-V3.4.5", "current V3 site claim");
 expectText("agent-workflow/product/column-tag-taxonomy-v1.json", '"canonical_fact_input": false');
 expectText("context/frontstage-page-contracts.md", expected.site, "current SITE version");
-expectText("context/project-memory.md", "SITE-V4.5.0", "current SITE major/minor version");
+expectText("context/project-memory.md", "SITE-V4.6.0", "current SITE major/minor version");
 rejectText("context/frontstage-page-contracts.md", "The legacy Business Signals Card set remains an internal compatibility dataset", "active Card compatibility contract");
 rejectText("context/project-memory.md", "Business Signals is an internal compatibility chain for Raw / Pool / Card", "active Raw/Pool/Card operating model");
 
