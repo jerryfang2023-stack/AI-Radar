@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-08-08T01:19:35.898Z",
+    "generatedAt": "2026-08-08T03:53:26.334Z",
     "date": "2026-08-08",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -660,11 +660,11 @@
           },
           {
             "label": "Events",
-            "value": 33
+            "value": 34
           },
           {
             "label": "QA",
-            "value": 228
+            "value": 227
           }
         ]
       },
@@ -726,12 +726,12 @@
           "rejected_claims": 0,
           "accepted": 86,
           "rejected": 0,
-          "pending_claims": 5,
-          "canonical_events": 33,
-          "entities": 55,
-          "relationships": 91,
+          "pending_claims": 6,
+          "canonical_events": 34,
+          "entities": 56,
+          "relationships": 92,
           "conflicts": 0,
-          "qa_queue": 228
+          "qa_queue": 227
         },
         "evidence": [
           "01-SiteV2/content/11-databases/data-center-v4/2026-08-08/manifest.json",
@@ -768,10 +768,10 @@
       "date": "2026-08-08",
       "discovered": 261,
       "captured": 261,
-      "claims": 91,
-      "events": 33,
-      "entities": 55,
-      "relationships": 91
+      "claims": 92,
+      "events": 34,
+      "entities": 56,
+      "relationships": 92
     },
     "sync": [
       {
@@ -792,7 +792,7 @@
       {
         "label": "Pipeline Dashboard",
         "status": "passed",
-        "detail": "2026-08-08T01:19:35.859Z"
+        "detail": "2026-08-08T03:53:26.308Z"
       },
       {
         "label": "Daily Supervision",
@@ -807,7 +807,7 @@
         "version": "COLLECTION-TELEMETRY-V1.0",
         "ops_version": "OPS-V2.0.0-v4-telemetry",
         "data_date": "2026-08-08",
-        "generated_at": "2026-08-08T01:19:35.814Z",
+        "generated_at": "2026-08-08T03:53:26.278Z",
         "scope": "OPS",
         "canonical_writeback": false,
         "source_of_truth": "Data Center V4 manifest and integrity gate"
@@ -823,14 +823,14 @@
         "rejected_claims": 0,
         "accepted": 86,
         "rejected": 0,
-        "pending_claims": 5,
-        "canonical_events": 33,
-        "entities": 55,
-        "relationships": 91,
+        "pending_claims": 6,
+        "canonical_events": 34,
+        "entities": 56,
+        "relationships": 92,
         "conflicts": 0,
-        "qa_queue": 228,
+        "qa_queue": 227,
         "qa_by_status": {
-          "review_optional": 210,
+          "review_optional": 209,
           "open": 18
         }
       },
@@ -862,7 +862,7 @@
     },
     "pipelineMeta": {
       "version": "OPS-V2.0.0-v4-telemetry",
-      "generatedAt": "2026-08-08T01:19:35.859Z",
+      "generatedAt": "2026-08-08T03:53:26.308Z",
       "dateRange": {
         "start": "2026-08-02",
         "end": "2026-08-08"
@@ -876,12 +876,12 @@
       "shortLabel": "08.08",
       "discovered": 261,
       "captured": 261,
-      "claims": 91,
-      "events": 33,
-      "entities": 55,
-      "relationships": 91,
+      "claims": 92,
+      "events": 34,
+      "entities": 56,
+      "relationships": 92,
       "conflicts": 0,
-      "qaQueue": 228,
+      "qaQueue": 227,
       "telemetryDate": "2026-08-08",
       "collection": {
         "discovered": 290,
@@ -894,14 +894,14 @@
         "rejected_claims": 0,
         "accepted": 86,
         "rejected": 0,
-        "pending_claims": 5,
-        "canonical_events": 33,
-        "entities": 55,
-        "relationships": 91,
+        "pending_claims": 6,
+        "canonical_events": 34,
+        "entities": 56,
+        "relationships": 92,
         "conflicts": 0,
-        "qa_queue": 228,
+        "qa_queue": 227,
         "qa_by_status": {
-          "review_optional": 210,
+          "review_optional": 209,
           "open": 18
         }
       },
@@ -918,12 +918,12 @@
     "totals": {
       "discovered": 1734,
       "captured": 1734,
-      "claims": 622,
-      "events": 209,
-      "entities": 322,
-      "relationships": 622,
+      "claims": 623,
+      "events": 210,
+      "entities": 323,
+      "relationships": 623,
       "conflicts": 0,
-      "qaQueue": 1527
+      "qaQueue": 1526
     },
     "days": [
       {
@@ -932,12 +932,12 @@
         "shortLabel": "08.08",
         "discovered": 261,
         "captured": 261,
-        "claims": 91,
-        "events": 33,
-        "entities": 55,
-        "relationships": 91,
+        "claims": 92,
+        "events": 34,
+        "entities": 56,
+        "relationships": 92,
         "conflicts": 0,
-        "qaQueue": 228
+        "qaQueue": 227
       },
       {
         "date": "2026-08-07",

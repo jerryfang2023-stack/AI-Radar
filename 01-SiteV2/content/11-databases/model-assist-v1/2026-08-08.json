@@ -1,6 +1,6 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-08-08T01:18:24.634Z",
+  "generated_at": "2026-08-08T03:52:14.280Z",
   "data_date": "2026-08-08",
   "prompt_version": "model-assist-2026-07-18.2",
   "source_count": 261,
@@ -42,7 +42,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-08T01:17:01.578Z"
+      "generated_at": "2026-08-08T03:50:33.696Z"
     },
     {
       "candidate_id": "MAC-0655b61d047b5e45",
@@ -81,7 +81,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-08T01:17:04.299Z"
+      "generated_at": "2026-08-08T03:50:35.135Z"
     },
     {
       "candidate_id": "MAC-06cec2a64f8298fa",
@@ -97,7 +97,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "AMD 宣布",
-        "rationale": "The candidate canonical_name is 'AMD 宣布', which appears to be a truncated or malformed name likely derived from the article title. The source text refers to 'AMD' as the entity making the announcement, not an entity named 'AMD 宣布'. No VERIFIED_ALTERNATIVES exist to match. The quote shows the action is an announcement by AMD, not an entity identity.",
+        "rationale": "The candidate canonical_name is 'AMD 宣布', which appears to be a malformed extraction of the article title. The source text refers to AMD, the semiconductor company, announcing a planned acquisition. 'AMD 宣布' is not a verified alternative for the company AMD, and the quote does not prove that 'AMD 宣布' is an organization entity distinct from AMD itself.",
         "candidate_name": "AMD 宣布"
       },
       "evidence": [
@@ -129,7 +129,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:56.612Z"
+      "generated_at": "2026-08-08T03:51:35.536Z"
     },
     {
       "candidate_id": "MAC-072858356bab54e7",
@@ -145,7 +145,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "FPT",
-        "rationale": "The candidate entity FPT is described as being named an OpenAI Select Partner, which establishes a partnership relationship. The verified alternative is OpenAI itself. A partner relationship does not constitute entity identity; FPT and OpenAI are distinct organizations.",
+        "rationale": "The candidate entity FPT is a global IT corporation headquartered in Vietnam, while the verified alternative OpenAI is a separate AI company. The source text describes a partnership between FPT and OpenAI, confirming they are distinct organizations.",
         "candidate_name": "FPT"
       },
       "evidence": [
@@ -177,7 +177,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:41.666Z"
+      "generated_at": "2026-08-08T03:51:19.433Z"
     },
     {
       "candidate_id": "MAC-076d104b1bd2d85f",
@@ -225,7 +225,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:46.612Z"
+      "generated_at": "2026-08-08T03:51:23.168Z"
     },
     {
       "candidate_id": "MAC-085b7367aa7f5704",
@@ -325,7 +325,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:59.652Z"
+      "generated_at": "2026-08-08T03:51:40.342Z"
     },
     {
       "candidate_id": "MAC-0bd49f8f17dfddb8",
@@ -354,8 +354,8 @@
           },
           {
             "event_type": "standard_specification",
-            "subject": "Agent Plugins standard Version 1.0.0",
-            "object": "Agent Skills and MCP servers components",
+            "subject": "Agent Plugins standard",
+            "object": "packaging and discoverability",
             "evidence_index": 2
           }
         ]
@@ -372,9 +372,9 @@
           "quote": "The standard boils down to a directory with a manifest file called plugin.json."
         },
         {
-          "start": 649,
-          "end": 790,
-          "quote": "Version 1.0.0 supports two components. Agent Skills handle reusable instructions and workflows. MCP servers connect agents to tools and data."
+          "start": 791,
+          "end": 846,
+          "quote": "The standard only covers packaging and discoverability."
         }
       ],
       "gate_results": [
@@ -399,7 +399,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:16.551Z"
+      "generated_at": "2026-08-08T03:50:48.977Z"
     },
     {
       "candidate_id": "MAC-0c0e5a3ab83117ca",
@@ -415,7 +415,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "Voice Personas",
-        "rationale": "No VERIFIED_ALTERNATIVES list is provided, so there are no verified entities to match against. The candidate canonical_name 'Voice Personas' appears in the source text, but without any verified alternatives, identity cannot be confirmed or denied.",
+        "rationale": "No VERIFIED_ALTERNATIVES list is provided, so there is no reference set to confirm whether 'Voice Personas' matches an existing verified entity. The source text confirms the launch of a product called 'Voice Personas' by Sierra, but without verified alternatives, identity cannot be resolved.",
         "candidate_name": "Voice Personas"
       },
       "evidence": [
@@ -447,7 +447,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:54.149Z"
+      "generated_at": "2026-08-08T03:51:34.689Z"
     },
     {
       "candidate_id": "MAC-0e34b44340a44ce7",
@@ -538,7 +538,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-08T01:17:14.878Z"
+      "generated_at": "2026-08-08T03:50:47.141Z"
     },
     {
       "candidate_id": "MAC-158bfb4163ecf9bd",
@@ -554,14 +554,14 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "RTX PRO Servers",
-        "rationale": "No VERIFIED_ALTERNATIVES were provided for comparison. The source text confirms the entity 'NVIDIA RTX PRO™ Servers' exists, but without any verified alternatives to match against, identity cannot be confirmed or denied.",
+        "rationale": "No VERIFIED_ALTERNATIVES were provided for comparison. The source text confirms the existence of 'NVIDIA RTX PRO™ Servers' as a product, but without any verified alternatives to match against, entity identity cannot be determined.",
         "candidate_name": "RTX PRO Servers"
       },
       "evidence": [
         {
           "start": 504,
-          "end": 652,
-          "quote": "NVIDIA RTX PRO™ Servers from global system partners leverage the breakthrough performance and energy efficiency of the NVIDIA Blackwell architecture"
+          "end": 819,
+          "quote": "NVIDIA RTX PRO™ Servers from global system partners leverage the breakthrough performance and energy efficiency of the NVIDIA Blackwell architecture, enabling enterprises to build AI factories and accelerate a wide range of enterprise workloads—from agentic AI and LLM inference to industrial AI and digital twins ."
         }
       ],
       "gate_results": [
@@ -586,7 +586,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:25.104Z"
+      "generated_at": "2026-08-08T03:50:57.164Z"
     },
     {
       "candidate_id": "MAC-16701f76795a275e",
@@ -601,7 +601,7 @@
       "status": "rejected",
       "proposal": {
         "action": "extract_claim",
-        "reason": "The source text describes a concrete AI infrastructure procurement agreement involving NVIDIA Blackwell GPUs, which is an AI-relevant event.",
+        "reason": "The source describes a concrete AI infrastructure procurement agreement involving NVIDIA Blackwell GPUs, which is a procurement_contract event.",
         "claims": []
       },
       "evidence": [],
@@ -627,7 +627,7 @@
           "detail": "missing_qa_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-08T01:18:11.697Z"
+      "generated_at": "2026-08-08T03:51:57.480Z"
     },
     {
       "candidate_id": "MAC-16ef50d1470d1e78",
@@ -666,7 +666,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-08T01:17:09.430Z"
+      "generated_at": "2026-08-08T03:50:40.367Z"
     },
     {
       "candidate_id": "MAC-176e014edc1dcaad",
@@ -682,7 +682,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "CosyVoice Studio",
-        "rationale": "VERIFIED_ALTERNATIVES is empty, so there is no existing verified entity to match against. The candidate name appears in the source, but without a verified alternative, identity cannot be confirmed.",
+        "rationale": "VERIFIED_ALTERNATIVES is empty, so there is no existing verified entity to match against. The candidate name 'CosyVoice Studio' appears in the source, but without any verified alternatives, identity cannot be confirmed or rejected.",
         "candidate_name": "CosyVoice Studio"
       },
       "evidence": [
@@ -714,7 +714,55 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:29.584Z"
+      "generated_at": "2026-08-08T03:51:04.087Z"
+    },
+    {
+      "candidate_id": "MAC-1a6c960d07db8cd8",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-6782c62ce2e7b65a",
+      "raw_id": "RAW-24d3fadb3fc8086a",
+      "source_ref": "SA-d21c70adcf4544bb",
+      "source_hash": "4278d5c3eaa0c4a3",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Avernet",
+        "rationale": "No VERIFIED_ALTERNATIVES are provided, so there is no basis to confirm or reject entity identity. The candidate canonical_name matches the name in the source text, but without verified alternatives, the decision must be unknown.",
+        "candidate_name": "Avernet"
+      },
+      "evidence": [
+        {
+          "start": 66,
+          "end": 91,
+          "quote": "蚂蚁集团正式开源多智能体协作基础设施Avernet"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-08T03:51:05.807Z"
     },
     {
       "candidate_id": "MAC-1df4d541dd502aaf",
@@ -753,7 +801,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-08T01:17:10.561Z"
+      "generated_at": "2026-08-08T03:50:40.755Z"
     },
     {
       "candidate_id": "MAC-225fb89c05cb47d1",
@@ -769,7 +817,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "腾讯云",
-        "rationale": "The candidate '腾讯云' (Tencent Cloud) is a distinct entity from 'Tencent' (腾讯). The source text refers to 'Tencent Cloud' as the entity that open-sourced the project, which matches the candidate's canonical name. However, among the verified alternatives, 'Tencent Cloud' (EN-fb646a85ad74e7c5) is listed as a separate entity from 'Tencent' (EN-9c8ae69b84f21a2e). The quote confirms the candidate mention refers to Tencent Cloud, which is a distinct verified entity from Tencent.",
+        "rationale": "The candidate '腾讯云' (Tencent Cloud) matches the verified alternative 'Tencent Cloud' (EN-fb646a85ad74e7c5) in meaning, but the verified alternatives list contains both 'Tencent' (EN-9c8ae69b84f21a2e) and 'Tencent Cloud' (EN-fb646a85ad74e7c5) as separate entities. The source text refers to 'Tencent Cloud' as the organization that 'has open-sourced TencentDB Agent Memory v2.0', which is a product release action. However, the relationship between 'Tencent Cloud' and 'Tencent' is not defined in the source, and the verified alternatives treat them as distinct entities. Since the candidate canonical name '腾讯云' exactly matches the verified alternative 'Tencent Cloud' (the Chinese name for the same entity), but the system requires determining if it refers to the same entity as one of the verified alternatives, and 'Tencent Cloud' is listed separately from 'Tencent', the candidate is distinct from 'Tencent' but matches 'Tencent Cloud'. The quote proves the mention refers to 'Tencent Cloud'.",
         "candidate_name": "腾讯云"
       },
       "evidence": [
@@ -801,7 +849,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:45.135Z"
+      "generated_at": "2026-08-08T03:51:25.250Z"
     },
     {
       "candidate_id": "MAC-33dda2faf7b735aa",
@@ -817,7 +865,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "NEO Semiconductor",
-        "rationale": "No VERIFIED_ALTERNATIVES were provided, so there is no basis to confirm or reject entity identity against any known list.",
+        "rationale": "No VERIFIED_ALTERNATIVES were provided, so there is no basis to confirm or reject entity identity. The candidate name matches the entity described in the source text.",
         "candidate_name": "NEO Semiconductor"
       },
       "evidence": [
@@ -849,7 +897,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:23.264Z"
+      "generated_at": "2026-08-08T03:50:55.624Z"
     },
     {
       "candidate_id": "MAC-340d05b25f5a8577",
@@ -940,7 +988,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-08T01:17:11.450Z"
+      "generated_at": "2026-08-08T03:50:42.237Z"
     },
     {
       "candidate_id": "MAC-3796a4c6eb8d0a02",
@@ -955,7 +1003,7 @@
       "status": "requires_review",
       "proposal": {
         "action": "recollect_original",
-        "reason": "The source text describes a software release for an AI evaluation tool, but does not contain a concrete AI event such as a funding round, acquisition, or model release. It is a pre-release version announcement.",
+        "reason": "The source text describes a software release for an AI evaluation tool, but does not contain a concrete AI event such as a funding round, acquisition, product release, or research result. It is a pre-release version announcement with no event to extract.",
         "claims": []
       },
       "evidence": [
@@ -987,7 +1035,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:18:14.739Z"
+      "generated_at": "2026-08-08T03:52:01.781Z"
     },
     {
       "candidate_id": "MAC-38cf970f028026b6",
@@ -1003,7 +1051,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "告别反复操作 OSD",
-        "rationale": "The candidate canonical_name appears to be a descriptive phrase from the article title rather than a formal organization name. The source text discusses ASUS DisplayWidget Center software and does not contain any mention of an entity named '告别反复操作 OSD'. No VERIFIED_ALTERNATIVES exist to match against.",
+        "rationale": "The candidate canonical_name appears to be a phrase extracted from the article title rather than a named organization. The source text does not contain any mention of an entity named '告别反复操作 OSD', nor does it provide any VERIFIED_ALTERNATIVES to match against. No quote can prove this refers to a specific verified entity.",
         "candidate_name": "告别反复操作 OSD"
       },
       "evidence": [
@@ -1035,7 +1083,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:31.601Z"
+      "generated_at": "2026-08-08T03:51:07.244Z"
     },
     {
       "candidate_id": "MAC-3d3af018a2924c1a",
@@ -1074,7 +1122,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-08T01:17:13.535Z"
+      "generated_at": "2026-08-08T03:50:45.307Z"
     },
     {
       "candidate_id": "MAC-3de3c40a3f8034f4",
@@ -1113,7 +1161,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-08T01:17:15.974Z"
+      "generated_at": "2026-08-08T03:50:48.684Z"
     },
     {
       "candidate_id": "MAC-41d26a950e0b8b13",
@@ -1133,9 +1181,9 @@
       },
       "evidence": [
         {
-          "start": 241,
-          "end": 442,
-          "quote": "SoftBank contributed $50 million to the Trump Presidential Library in January, just months before announcing that it’s leasing land from the federal government to build a sprawling data center in Ohio."
+          "start": 87,
+          "end": 240,
+          "quote": "SoftBank donated $50 million to the Trump Presidential Library just months before announcing a data center deal in Ohio, where it’s leasing federal land."
         }
       ],
       "gate_results": [
@@ -1160,7 +1208,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:18:24.630Z"
+      "generated_at": "2026-08-08T03:52:11.747Z"
     },
     {
       "candidate_id": "MAC-42399e8bbbf9033f",
@@ -1176,7 +1224,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "当 AMD",
-        "rationale": "The candidate '当 AMD' refers to AMD, a company that acquired Taalas. The verified alternatives include NVIDIA, OpenAI, and Moonshot AI, but not AMD. The quote shows AMD is the acquirer, which is a distinct entity from the verified alternatives.",
+        "rationale": "The candidate entity '当 AMD' refers to AMD, a company that acquired Taalas. The verified alternatives include NVIDIA, OpenAI, and Moonshot AI, which are distinct entities. AMD is not listed among the verified alternatives, and the quote shows AMD is the acquirer, not any of the verified entities.",
         "candidate_name": "当 AMD"
       },
       "evidence": [
@@ -1208,7 +1256,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:40.114Z"
+      "generated_at": "2026-08-08T03:51:17.766Z"
     },
     {
       "candidate_id": "MAC-46365b7806c1e129",
@@ -1224,14 +1272,14 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "SAN FRANCISCO",
-        "rationale": "The candidate canonical_name is 'SAN FRANCISCO'. The verified alternatives are 'Orthogonal', 'Google', and 'Amazon'. The quote 'SAN FRANCISCO , June 25, 2026 /PRNewswire/' indicates the candidate mention is a dateline location for a press release, not a reference to any of the verified alternative entities. Therefore, it is a distinct entity.",
+        "rationale": "The candidate canonical_name 'SAN FRANCISCO' does not exactly match any VERIFIED_ALTERNATIVES canonical_name ('Orthogonal', 'Google', 'Amazon'). The source text uses 'SAN FRANCISCO' as a dateline location for the press release, not as an entity related to the verified alternatives.",
         "candidate_name": "SAN FRANCISCO"
       },
       "evidence": [
         {
           "start": 533,
-          "end": 575,
-          "quote": "SAN FRANCISCO , June 25, 2026 /PRNewswire/"
+          "end": 713,
+          "quote": "SAN FRANCISCO , June 25, 2026 /PRNewswire/ -- Orthogonal , the discovery, orchestration, and payment layer for the internet, today announced it has raised a $4.3 million seed round"
         }
       ],
       "gate_results": [
@@ -1256,7 +1304,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:21.270Z"
+      "generated_at": "2026-08-08T03:50:53.226Z"
     },
     {
       "candidate_id": "MAC-4673ec9a4d7b73f3",
@@ -1367,7 +1415,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:36.894Z"
+      "generated_at": "2026-08-08T03:51:13.999Z"
     },
     {
       "candidate_id": "MAC-49852456077b8fb4",
@@ -1457,14 +1505,14 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "AI Memory",
-        "rationale": "The candidate canonical_name 'AI Memory' does not exactly match any VERIFIED_ALTERNATIVES (the list is empty). The source text describes a platform called 'NEO.AI' and mentions 'AI memory technologies' generically, but no contiguous quote proves that an entity named 'AI Memory' is referenced.",
+        "rationale": "The candidate canonical_name 'AI Memory' does not exactly match any VERIFIED_ALTERNATIVES (the list is empty). The source text mentions 'AI memory' in several contexts, such as 'advanced AI and memory technologies' and 'AI memory bottlenecks', but does not define 'AI Memory' as a specific product name. The closest named entity is 'NEO.AI', described as a 'next-generation AI memory platform'. Without a verified alternative to match against, identity cannot be confirmed.",
         "candidate_name": "AI Memory"
       },
       "evidence": [
         {
           "start": 234,
-          "end": 390,
-          "quote": "NEO Semiconductor , a leading innovator in advanced AI and memory technologies, today announced the launch of NEO.AI, its next-generation AI memory platform"
+          "end": 545,
+          "quote": "NEO Semiconductor , a leading innovator in advanced AI and memory technologies, today announced the launch of NEO.AI, its next-generation AI memory platform designed to solve the two most significant memory bottlenecks limiting future artificial intelligence systems: on-chip memory (AI cache) and HBM capacity."
         }
       ],
       "gate_results": [
@@ -1489,7 +1537,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:25.766Z"
+      "generated_at": "2026-08-08T03:50:59.698Z"
     },
     {
       "candidate_id": "MAC-4d3e85defee6b29f",
@@ -1528,7 +1576,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-08T01:17:13.576Z"
+      "generated_at": "2026-08-08T03:50:45.644Z"
     },
     {
       "candidate_id": "MAC-543e7bf14554964e",
@@ -1567,7 +1615,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-08T01:17:06.490Z"
+      "generated_at": "2026-08-08T03:50:37.619Z"
     },
     {
       "candidate_id": "MAC-550cee505f1d8cf3",
@@ -1656,7 +1704,7 @@
       "status": "requires_review",
       "proposal": {
         "action": "extract_claim",
-        "reason": "The source text contains a concrete AI industry event: a product release by Runware.",
+        "reason": "The source text contains a concrete AI industry event: Runware's product release of the Sonic Inference Pod.",
         "claims": [
           {
             "event_type": "product_release",
@@ -1695,7 +1743,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:18:22.815Z"
+      "generated_at": "2026-08-08T03:52:14.277Z"
     },
     {
       "candidate_id": "MAC-569ea0475e4eb20b",
@@ -1707,11 +1755,11 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.2",
-      "status": "requires_review",
+      "status": "rejected",
       "proposal": {
         "decision": "unknown",
         "canonical_name": "HarmonyOS SDK",
-        "rationale": "No VERIFIED_ALTERNATIVES are provided, so there is no basis to confirm or reject entity identity. The source text mentions 'HarmonyOS SDK' multiple times, but without verified alternatives, the match cannot be determined.",
+        "rationale": "No VERIFIED_ALTERNATIVES list was provided, so there is no basis to confirm or reject entity identity. The source text mentions 'HarmonyOS SDK' and 'HarmonyOS SDK 26', which align with the candidate name, but without verified alternatives the decision must be unknown.",
         "candidate_name": "HarmonyOS SDK"
       },
       "evidence": [
@@ -1734,8 +1782,8 @@
         },
         {
           "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:26"
         },
         {
           "gate": "task_contract",
@@ -1743,7 +1791,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:18:04.608Z"
+      "generated_at": "2026-08-08T03:51:47.510Z"
     },
     {
       "candidate_id": "MAC-596ee4e5fae0df61",
@@ -1782,7 +1830,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-08T01:17:05.171Z"
+      "generated_at": "2026-08-08T03:50:36.724Z"
     },
     {
       "candidate_id": "MAC-5f2c7752aaad21df",
@@ -1798,7 +1846,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "Global Mofy Strategically Participates in New",
-        "rationale": "The candidate canonical_name appears to be a truncated version of the announcement title. The SOURCE_TEXT identifies the entity as 'Global Mofy AI Limited' or 'Global Mofy', which is a generative AI-driven technology solutions provider. This entity is distinct from the VERIFIED_ALTERNATIVES 'Google' and 'Moonshot AI'. The text describes Global Mofy's strategic participation in a financing round of Moonshot AI, establishing a relationship of investor/investee, not entity identity.",
+        "rationale": "The candidate canonical_name appears to be a truncated version of the press release title. The SOURCE_TEXT identifies the entity as 'Global Mofy AI Limited' or 'Global Mofy', which is a generative AI-driven technology solutions provider. This entity is distinct from the VERIFIED_ALTERNATIVES 'Google' and 'Moonshot AI'. The text describes a relationship where Global Mofy is an investor in Moonshot AI, but this does not make them the same entity.",
         "candidate_name": "Global Mofy Strategically Participates in New"
       },
       "evidence": [
@@ -1830,7 +1878,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:35.133Z"
+      "generated_at": "2026-08-08T03:51:11.331Z"
     },
     {
       "candidate_id": "MAC-60d8df95e47072f1",
@@ -1846,42 +1894,57 @@
       "proposal": {
         "fields": [
           {
-            "field": "customer",
-            "value": "I/ONX HPC",
+            "field": "manufacturing_stage",
+            "value": "inference",
             "evidence_index": 0
           },
           {
-            "field": "deployment_site",
-            "value": "Stockholm",
+            "field": "capacity",
+            "value": 8800,
             "evidence_index": 1
+          },
+          {
+            "field": "capacity_unit",
+            "value": "units",
+            "evidence_index": 1
+          },
+          {
+            "field": "customer",
+            "value": "I/ONX HPC",
+            "evidence_index": 2
           },
           {
             "field": "region",
             "value": "Europe",
-            "evidence_index": 2
+            "evidence_index": 3
           },
           {
             "field": "shipment_date",
             "value": "early 2027",
-            "evidence_index": 3
+            "evidence_index": 4
           }
         ]
       },
       "evidence": [
+        {
+          "start": 33,
+          "end": 173,
+          "quote": "South Korean artificial intelligence chip startup FuriosaAI said Wednesday it will supply more than 8,800 of its RNGD inference accelerators"
+        },
+        {
+          "start": 819,
+          "end": 966,
+          "quote": "FuriosaAI said it will initially provide 1,800 RNGD (Renegade) chips, with total deployment expected to exceed 8,800 units as the facility expands."
+        },
         {
           "start": 250,
           "end": 382,
           "quote": "The 15-megawatt project is being developed with US AI infrastructure company I/ONX HPC and data center developer and operator Velox."
         },
         {
-          "start": 33,
-          "end": 249,
-          "quote": "South Korean artificial intelligence chip startup FuriosaAI said Wednesday it will supply more than 8,800 of its RNGD inference accelerators for a new artificial intelligence data center being developed in Stockholm."
-        },
-        {
-          "start": 1575,
-          "end": 1705,
-          "quote": "The data center will provide AI inference services to companies and cloud service providers across Europe, according to FuriosaAI."
+          "start": 697,
+          "end": 817,
+          "quote": "This project marks an important step in deploying our AI inference infrastructure at a large-scale European data center."
         },
         {
           "start": 383,
@@ -1911,7 +1974,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:18:08.944Z"
+      "generated_at": "2026-08-08T03:51:54.086Z"
     },
     {
       "candidate_id": "MAC-653c552bdf87c48f",
@@ -1926,7 +1989,7 @@
       "status": "requires_review",
       "proposal": {
         "action": "recollect_original",
-        "reason": "The source describes a video game content update (new Quake campaign maps), not a concrete AI industry event.",
+        "reason": "The source describes a video game content update (new maps for Quake), not an AI industry event.",
         "claims": []
       },
       "evidence": [
@@ -1958,7 +2021,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:18:16.906Z"
+      "generated_at": "2026-08-08T03:52:06.284Z"
     },
     {
       "candidate_id": "MAC-67b80821afd5b105",
@@ -1974,7 +2037,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "Kitesurf",
-        "rationale": "No VERIFIED_ALTERNATIVES exist to match against. The candidate is a product_candidate, and the source describes Kitesurf as a cloud-hosted browser for AI agents, which is a distinct product entity. No other entity identity relationships are asserted.",
+        "rationale": "No VERIFIED_ALTERNATIVES exist to match against. The candidate is a product_candidate, and the source describes Kitesurf as a cloud-hosted browser for AI agents, which is a distinct product entity. There are no verified alternatives to confirm identity.",
         "candidate_name": "Kitesurf"
       },
       "evidence": [
@@ -2006,7 +2069,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:20.455Z"
+      "generated_at": "2026-08-08T03:50:51.964Z"
     },
     {
       "candidate_id": "MAC-6867736c3f8c31a5",
@@ -2022,29 +2085,40 @@
       "proposal": {
         "claims": [
           {
-            "event_type": "product_release",
-            "subject": "OpenAI",
-            "object": "smart speaker",
+            "event_type": "security_incident",
+            "subject": "Apple",
+            "object": "OpenAI",
             "evidence_index": 0
           },
           {
-            "event_type": "lawsuit_settlement",
-            "subject": "Apple",
-            "object": "OpenAI",
+            "event_type": "product_release",
+            "subject": "OpenAI",
+            "object": "smart speaker",
             "evidence_index": 1
+          },
+          {
+            "event_type": "pricing_change",
+            "subject": "OpenAI smart speaker",
+            "object": "over $300",
+            "evidence_index": 2
           }
         ]
       },
       "evidence": [
         {
-          "start": 3569,
-          "end": 3661,
-          "quote": "Bloomberg claimed today that OpenAI will reveal its speaker this year and release it in 2027"
-        },
-        {
           "start": 1785,
           "end": 1898,
           "quote": "Apple is currently suing OpenAI , accusing the AI company of stealing trade secrets for its hardware development."
+        },
+        {
+          "start": 3569,
+          "end": 3716,
+          "quote": "Bloomberg claimed today that OpenAI will reveal its speaker this year and release it in 2027, assuming Apple’s lawsuit doesn’t disrupt those plans."
+        },
+        {
+          "start": 155,
+          "end": 286,
+          "quote": "OpenAI’s upcoming smart speaker will probably cost over $300, “people familiar with the matter” have told Bloomberg’s Mark Gurman ."
         }
       ],
       "gate_results": [
@@ -2069,7 +2143,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:04.171Z"
+      "generated_at": "2026-08-08T03:50:35.436Z"
     },
     {
       "candidate_id": "MAC-687f98dcb66f0a55",
@@ -2171,7 +2245,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-08T01:17:05.453Z"
+      "generated_at": "2026-08-08T03:50:36.542Z"
     },
     {
       "candidate_id": "MAC-819a4ba4e9e22f2e",
@@ -2358,7 +2432,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-08T01:17:12.609Z"
+      "generated_at": "2026-08-08T03:50:44.071Z"
     },
     {
       "candidate_id": "MAC-899856d8dd618679",
@@ -2374,7 +2448,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "Claude Code",
-        "rationale": "No VERIFIED_ALTERNATIVES were provided for comparison. The candidate canonical_name 'Claude Code' appears in the SOURCE_TEXT (e.g., 'Claude Code sessions can now message each other'), but without any verified alternatives to match against, identity cannot be confirmed or rejected.",
+        "rationale": "No VERIFIED_ALTERNATIVES were provided, so there is no reference list to match against. The candidate canonical_name 'Claude Code' appears in the SOURCE_TEXT (e.g., 'Claude Code sessions can now message each other'), but without any verified alternatives to confirm identity, the decision must be unknown.",
         "candidate_name": "Claude Code"
       },
       "evidence": [
@@ -2406,7 +2480,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:18:01.606Z"
+      "generated_at": "2026-08-08T03:51:41.153Z"
     },
     {
       "candidate_id": "MAC-8a69ba692f6de10f",
@@ -2460,7 +2534,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:18:19.093Z"
+      "generated_at": "2026-08-08T03:52:06.216Z"
     },
     {
       "candidate_id": "MAC-8b6c8d55cdb670a2",
@@ -2476,7 +2550,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "Hy3",
-        "rationale": "No VERIFIED_ALTERNATIVES list is provided, so there is no reference set to confirm whether the candidate canonical_name 'Hy3' matches an existing verified entity. The source text refers to 'Tencent Hy3' and 'Hy3' throughout, but without a verified alternative to compare against, identity cannot be confirmed or denied.",
+        "rationale": "No VERIFIED_ALTERNATIVES list is provided, so there is no reference set to match against. The source text confirms the candidate name 'Hy3' is used, but without verified alternatives, identity cannot be confirmed or denied.",
         "candidate_name": "Hy3"
       },
       "evidence": [
@@ -2508,7 +2582,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:53.728Z"
+      "generated_at": "2026-08-08T03:51:32.406Z"
     },
     {
       "candidate_id": "MAC-8c1092758350c40a",
@@ -2524,7 +2598,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "BEIJING",
-        "rationale": "The candidate BEIJING appears in the dateline as a location reference, not as an organization. The verified alternatives are technology companies (Google, Moonshot AI), and BEIJING does not match any of them. The quote shows BEIJING is used as a geographic dateline, not an entity related to the verified alternatives.",
+        "rationale": "The candidate BEIJING appears only as a dateline location in the press release, not as an organization. It does not match any verified alternative (Google, Moonshot AI).",
         "candidate_name": "BEIJING"
       },
       "evidence": [
@@ -2556,7 +2630,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:18:01.955Z"
+      "generated_at": "2026-08-08T03:51:43.624Z"
     },
     {
       "candidate_id": "MAC-8c2c3b848716a8e2",
@@ -2571,7 +2645,7 @@
       "status": "requires_review",
       "proposal": {
         "action": "recollect_original",
-        "reason": "The source describes a DOE partnership to build an AI/HPC data center campus and energy infrastructure, which is an AI-relevant event, but the QA_REASON 'event_not_ai_relevant' indicates the reviewer believes this source cannot support an AI fact. Per instructions, choose recollect_original only when this source cannot support the fact.",
+        "reason": "The source describes a general energy hub and data center campus announcement, not a concrete AI industry event such as a specific model release, funding round, acquisition, or product launch by an AI company.",
         "claims": []
       },
       "evidence": [
@@ -2603,7 +2677,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:18:20.322Z"
+      "generated_at": "2026-08-08T03:52:11.352Z"
     },
     {
       "candidate_id": "MAC-8ee6a8cb642428e4",
@@ -2619,7 +2693,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "Solve AI",
-        "rationale": "The candidate entity 'Solve AI' appears to be a product name, but the source text describes 'NEO.AI' as a memory platform designed 'to solve the two most significant memory bottlenecks'. The phrase 'solve AI' is used descriptively in the source, not as a proper noun referring to a product named 'Solve AI'. No VERIFIED_ALTERNATIVES exist to match against, and the source does not mention an entity with the exact canonical name 'Solve AI'.",
+        "rationale": "The candidate entity 'Solve AI' appears to be a product or company name, but the source text does not mention any entity named 'Solve AI'. The source discusses NEO Semiconductor's NEO.AI platform, which is described as being 'designed to solve the two most significant memory bottlenecks', but this is a descriptive phrase, not an entity name. No VERIFIED_ALTERNATIVES exist to match against.",
         "candidate_name": "Solve AI"
       },
       "evidence": [
@@ -2651,7 +2725,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:18:08.003Z"
+      "generated_at": "2026-08-08T03:51:50.853Z"
     },
     {
       "candidate_id": "MAC-8fe6868fe2f197a0",
@@ -2815,7 +2889,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "TencentDB Agent Memory v2.0",
-        "rationale": "No VERIFIED_ALTERNATIVES list was provided, so there is nothing to match against. The candidate canonical_name exactly matches the product name described in the source, but without verified alternatives, identity cannot be confirmed or denied.",
+        "rationale": "VERIFIED_ALTERNATIVES is empty, so there is no existing verified entity to match against. The candidate name exactly matches the product name described in the source, but without any verified alternatives, a same_entity determination cannot be made.",
         "candidate_name": "TencentDB Agent Memory v2.0"
       },
       "evidence": [
@@ -2847,7 +2921,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:59.063Z"
+      "generated_at": "2026-08-08T03:51:37.979Z"
     },
     {
       "candidate_id": "MAC-975f584e8df87366",
@@ -2862,7 +2936,7 @@
       "status": "requires_review",
       "proposal": {
         "action": "recollect_original",
-        "reason": "The source describes a court ruling and penalty against Meta for public nuisance related to youth mental health, which is a legal/regulatory event, not an AI industry event.",
+        "reason": "The source describes a court-ordered penalty and abatement fund against Meta for public nuisance related to youth mental health, which is a legal/regulatory action, not an AI industry event.",
         "claims": []
       },
       "evidence": [
@@ -2894,7 +2968,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:18:12.596Z"
+      "generated_at": "2026-08-08T03:51:58.388Z"
     },
     {
       "candidate_id": "MAC-997a7d09602888e6",
@@ -2910,7 +2984,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "RTX PRO Server",
-        "rationale": "No VERIFIED_ALTERNATIVES list was provided, so there are no verified entities to match against. The source text confirms the candidate name 'RTX PRO Server' is used, but without alternatives, identity cannot be confirmed or denied.",
+        "rationale": "No VERIFIED_ALTERNATIVES list was provided, so there are no verified entities to match against. The source text confirms the existence of 'NVIDIA RTX PRO Server' as a product, but without a list of verified alternatives, identity cannot be confirmed or denied.",
         "candidate_name": "RTX PRO Server"
       },
       "evidence": [
@@ -2942,7 +3016,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:34.198Z"
+      "generated_at": "2026-08-08T03:51:10.896Z"
     },
     {
       "candidate_id": "MAC-9a356eda39b793f0",
@@ -2981,7 +3055,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-08T01:17:07.221Z"
+      "generated_at": "2026-08-08T03:50:38.069Z"
     },
     {
       "candidate_id": "MAC-9a5c3c81adeffcab",
@@ -3209,7 +3283,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-08T01:17:11.184Z"
+      "generated_at": "2026-08-08T03:50:41.649Z"
     },
     {
       "candidate_id": "MAC-a9201d89b963ad99",
@@ -3223,22 +3297,15 @@
       "prompt_version": "model-assist-2026-07-18.2",
       "status": "requires_review",
       "proposal": {
-        "action": "extract_claim",
-        "reason": "The source contains a concrete AI event: Midjourney's first acquisition in July 2026.",
-        "claims": [
-          {
-            "event_type": "acquisition",
-            "subject": "Midjourney",
-            "object": "first acquisition",
-            "evidence_index": 0
-          }
-        ]
+        "action": "recollect_original",
+        "reason": "The source text describes Midjourney's ownership structure and history but does not contain a concrete, singular AI event that fits the required event_type categories. The QA_REASON 'event_not_ai_relevant' is correct.",
+        "claims": []
       },
       "evidence": [
         {
-          "start": 5310,
-          "end": 5376,
-          "quote": "Midjourney also announced its first acquisition in late July 2026."
+          "start": 29,
+          "end": 115,
+          "quote": "Midjourney is an independent, privately held AI company founded and led by David Holz."
         }
       ],
       "gate_results": [
@@ -3263,7 +3330,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:18:10.222Z"
+      "generated_at": "2026-08-08T03:51:55.947Z"
     },
     {
       "candidate_id": "MAC-add3e5973b441ee4",
@@ -3279,7 +3346,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "FILE",
-        "rationale": "No VERIFIED_ALTERNATIVES were provided, so there is no basis to confirm whether the candidate entity matches an existing verified entity. The source text confirms the existence of a FILE native column type by Databricks, but without alternatives, identity cannot be established.",
+        "rationale": "No VERIFIED_ALTERNATIVES are provided, so there is no basis to confirm whether the candidate entity matches an existing verified entity.",
         "candidate_name": "FILE"
       },
       "evidence": [
@@ -3311,7 +3378,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:27.750Z"
+      "generated_at": "2026-08-08T03:51:01.705Z"
     },
     {
       "candidate_id": "MAC-ae870983da642c90",
@@ -3327,7 +3394,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "Ling-3.0-flash",
-        "rationale": "VERIFIED_ALTERNATIVES is empty, so there is no existing verified entity to match against. The candidate name matches the name in the source text, but without any verified alternatives, identity cannot be confirmed.",
+        "rationale": "VERIFIED_ALTERNATIVES is empty, so there is no existing verified entity to match against. The candidate name matches the subject of the source text, but without any verified alternatives, identity cannot be confirmed as same_entity.",
         "candidate_name": "Ling-3.0-flash"
       },
       "evidence": [
@@ -3359,7 +3426,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:39.096Z"
+      "generated_at": "2026-08-08T03:51:16.803Z"
     },
     {
       "candidate_id": "MAC-b0c39f2ee9405aab",
@@ -3398,7 +3465,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-08T01:17:08.231Z"
+      "generated_at": "2026-08-08T03:50:39.387Z"
     },
     {
       "candidate_id": "MAC-b178156238e860aa",
@@ -3414,14 +3481,14 @@
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "Cloudflare",
-        "rationale": "The candidate canonical_name 'Cloudflare' exactly matches the entity name used throughout the SOURCE_TEXT, and the quote confirms the candidate mention refers to this organization launching Kitesurf.",
+        "rationale": "The candidate canonical_name 'Cloudflare' exactly matches the entity referenced throughout the SOURCE_TEXT, which describes the company launching Kitesurf. The quote confirms the entity is the internet infrastructure provider behind this launch.",
         "candidate_name": "Cloudflare"
       },
       "evidence": [
         {
           "start": 226,
-          "end": 303,
-          "quote": "Cloudflare is the latest company to join the race to build a new web browser."
+          "end": 479,
+          "quote": "Cloudflare is the latest company to join the race to build a new web browser. But instead of pitching a Chrome alternative to consumers, the internet infrastructure provider launched Kitesurf , a cloud-hosted browser designed specifically for AI agents."
         }
       ],
       "gate_results": [
@@ -3446,7 +3513,7 @@
           "detail": "invalid_same_entity_target"
         }
       ],
-      "generated_at": "2026-08-08T01:17:31.580Z"
+      "generated_at": "2026-08-08T03:51:08.378Z"
     },
     {
       "candidate_id": "MAC-b2c8e12f46634b41",
@@ -3462,7 +3529,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "Hy3 Now Available",
-        "rationale": "No VERIFIED_ALTERNATIVES were provided to compare against. The SOURCE_TEXT discusses 'Tencent Hy3' and 'Hy3' extensively, but without a list of verified alternatives, it is impossible to determine if the candidate 'Hy3 Now Available' exactly matches a verified entity name.",
+        "rationale": "No VERIFIED_ALTERNATIVES were provided, so it is impossible to determine whether the candidate entity matches any verified entity. The source text discusses 'Tencent Hy3' and its availability, but without a list of verified alternatives, a same_entity or distinct_entity determination cannot be made.",
         "candidate_name": "Hy3 Now Available"
       },
       "evidence": [
@@ -3494,7 +3561,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:48.170Z"
+      "generated_at": "2026-08-08T03:51:26.394Z"
     },
     {
       "candidate_id": "MAC-b302f318b4a36158",
@@ -3573,7 +3640,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "阿里巴巴为下一代 Qwen",
-        "rationale": "The candidate canonical_name '阿里巴巴为下一代 Qwen' does not exactly match any VERIFIED_ALTERNATIVE canonical_name. The verified entity 'Alibaba' has canonical_name 'Alibaba' with alias '阿里巴巴', but the candidate name includes additional text '为下一代 Qwen' which is not part of the verified entity's canonical_name or aliases. The source text discusses Alibaba's plans for its next Qwen model, but the candidate name appears to conflate the organization with a specific product initiative.",
+        "rationale": "The candidate canonical_name '阿里巴巴为下一代 Qwen' does not exactly match any VERIFIED_ALTERNATIVE canonical_name or alias. The verified entity 'Alibaba' has the alias '阿里巴巴', but the candidate name includes additional text '为下一代 Qwen' that is not part of the verified entity's name or aliases. The source text discusses Alibaba's plans for its next Qwen model, but the candidate name appears to conflate the company with a specific product initiative.",
         "candidate_name": "阿里巴巴为下一代 Qwen"
       },
       "evidence": [
@@ -3605,7 +3672,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:28.723Z"
+      "generated_at": "2026-08-08T03:51:03.227Z"
     },
     {
       "candidate_id": "MAC-bc66b03ad17ee5a6",
@@ -3839,18 +3906,18 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.2",
-      "status": "requires_review",
+      "status": "rejected",
       "proposal": {
         "decision": "unknown",
         "canonical_name": "NEO.AI Memory",
-        "rationale": "The VERIFIED_ALTERNATIVES list is empty, so there are no verified entities to match against. The source text confirms the existence of a product called 'NEO.AI' described as a 'next-generation AI memory platform', but without any verified alternatives, entity identity cannot be determined.",
+        "rationale": "The source text describes 'NEO.AI' as a 'next-generation AI memory platform' and a 'unified AI memory architecture' that combines X-SRAM and 3D X-DRAM. The candidate canonical_name is 'NEO.AI Memory'. While the source confirms NEO.AI is a memory platform, it never uses the exact name 'NEO.AI Memory'. The VERIFIED_ALTERNATIVES list is empty, so there is no verified entity to match against. Without a verified alternative to confirm identity, the relationship between the candidate name and the source mention cannot be established as same_entity.",
         "candidate_name": "NEO.AI Memory"
       },
       "evidence": [
         {
           "start": 234,
-          "end": 500,
-          "quote": "NEO Semiconductor , a leading innovator in advanced AI and memory technologies, today announced the launch of NEO.AI, its next-generation AI memory platform designed to solve the two most significant memory bottlenecks limiting future artificial intelligence systems"
+          "end": 390,
+          "quote": "NEO Semiconductor , a leading innovator in advanced AI and memory technologies, today announced the launch of NEO.AI, its next-generation AI memory platform"
         }
       ],
       "gate_results": [
@@ -3866,8 +3933,8 @@
         },
         {
           "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:3"
         },
         {
           "gate": "task_contract",
@@ -3875,7 +3942,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:49.200Z"
+      "generated_at": "2026-08-08T03:51:29.570Z"
     },
     {
       "candidate_id": "MAC-ccba9d0ef4423268",
@@ -3923,7 +3990,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:51.965Z"
+      "generated_at": "2026-08-08T03:51:31.905Z"
     },
     {
       "candidate_id": "MAC-ce0a8f5184f69b5e",
@@ -3935,14 +4002,20 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.2",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "AMD",
-        "rationale": "The source text mentions AMD as the acquirer and Taalas as the acquisition target. The quote explicitly states 'AMD 宣布计划收购 Taalas 芯片初创公司', which establishes a relationship of planned acquisition between two distinct organizations, not that they are the same entity.",
+        "rationale": "The source text describes AMD's planned acquisition of Taalas, a separate chip startup company. The quote explicitly distinguishes the two entities, indicating they are not the same.",
         "candidate_name": "AMD"
       },
-      "evidence": [],
+      "evidence": [
+        {
+          "start": 325,
+          "end": 367,
+          "quote": "AMD 今天（8 月 7 日）发布公告， 宣布计划收购 Taalas 芯片初创公司。"
+        }
+      ],
       "gate_results": [
         {
           "gate": "source_hash",
@@ -3951,8 +4024,8 @@
         },
         {
           "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
+          "status": "passed",
+          "detail": "all quotes match exact spans"
         },
         {
           "gate": "protected_facts",
@@ -3965,7 +4038,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:22.701Z"
+      "generated_at": "2026-08-08T03:50:54.176Z"
     },
     {
       "candidate_id": "MAC-ce79e08b9c923f15",
@@ -4004,7 +4077,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-08T01:17:12.372Z"
+      "generated_at": "2026-08-08T03:50:43.553Z"
     },
     {
       "candidate_id": "MAC-cf09b2847bd6a06b",
@@ -4020,7 +4093,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "AI Factories",
-        "rationale": "No VERIFIED_ALTERNATIVES list was provided, so there are no verified entities to match against. The source text mentions 'AI factories' multiple times (e.g., 'enabling enterprises to build AI factories') but without a verified alternative to compare, identity cannot be confirmed.",
+        "rationale": "No VERIFIED_ALTERNATIVES list was provided, so there are no verified entities to match against. The source text mentions 'AI factories' multiple times (e.g., 'enabling enterprises to build AI factories'), but without any verified alternatives to compare, entity identity cannot be determined.",
         "candidate_name": "AI Factories"
       },
       "evidence": [
@@ -4052,7 +4125,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:42.577Z"
+      "generated_at": "2026-08-08T03:51:20.350Z"
     },
     {
       "candidate_id": "MAC-d3155c4e8dffcef2",
@@ -4142,7 +4215,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "ChatGPT",
-        "rationale": "VERIFIED_ALTERNATIVES is empty, so there is no verified entity to match against. The source text mentions ChatGPT multiple times, confirming the candidate name appears, but without a verified alternative, identity cannot be confirmed.",
+        "rationale": "VERIFIED_ALTERNATIVES is empty, so there is no verified entity to match against. The source text mentions ChatGPT extensively, confirming the candidate name appears, but without a verified alternative, identity cannot be confirmed as same_entity.",
         "candidate_name": "ChatGPT"
       },
       "evidence": [
@@ -4174,7 +4247,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:18:03.463Z"
+      "generated_at": "2026-08-08T03:51:46.513Z"
     },
     {
       "candidate_id": "MAC-d52f1a130368fbc0",
@@ -4186,18 +4259,60 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.2",
-      "status": "requires_review",
+      "status": "rejected",
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "影石 GO Ultra",
-        "rationale": "The candidate '影石 GO Ultra' is a camera product, while the verified alternatives are companies (Alibaba and Google). The source text describes Alibaba and Google as AI model providers for the camera's voice assistant feature, which is a component supplier relationship, not entity identity.",
+        "rationale": "The candidate '影石 GO Ultra' is a camera product, while the verified alternatives are 'Alibaba' and 'Google', which are technology companies. The source text describes a relationship where the camera's AI voice assistant uses Alibaba's Qwen model in mainland China and Google's Gemini overseas, but this component supplier relationship does not establish entity identity.",
         "candidate_name": "影石 GO Ultra"
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-08T03:51:14.703Z"
+    },
+    {
+      "candidate_id": "MAC-db81ee88f3b77482",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-cc2ab268105df889",
+      "raw_id": "RAW-f829fd20003bdcec",
+      "source_ref": "SA-218e8eb8dca65615",
+      "source_hash": "e49ce91066e4adfd",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Olix Computing Ltd.",
+        "rationale": "The candidate entity Olix Computing Ltd. is a London-based AI hardware startup developing the DX-1 chip and X-1 appliance. The verified alternative NVIDIA is mentioned in the source text as a manufacturer of the Groq 3 LPX processor, which is described as a competing decode-optimized processor. The source establishes a competitive relationship between the two companies' products, not that they are the same entity.",
+        "candidate_name": "Olix Computing Ltd."
       },
       "evidence": [
         {
-          "start": 66,
-          "end": 125,
-          "quote": "该功能按区域采用不同大模型方案： 中国大陆地区接入阿里千问大模型，中国港澳台及海外地区使用 Google Gemini"
+          "start": 1366,
+          "end": 1463,
+          "quote": "Existing decode-optimized processors such as Nvidia Corp.’s Groq 3 LPX take a different approach."
         }
       ],
       "gate_results": [
@@ -4213,8 +4328,8 @@
         },
         {
           "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:1"
         },
         {
           "gate": "task_contract",
@@ -4222,7 +4337,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:37.556Z"
+      "generated_at": "2026-08-08T03:51:44.178Z"
     },
     {
       "candidate_id": "MAC-e2b9c0e92ba12317",
@@ -4363,7 +4478,7 @@
       "status": "requires_review",
       "proposal": {
         "action": "recollect_original",
-        "reason": "The source text describes a product announcement (Sonic Inference Pods) and company history, but does not contain a concrete, singular AI event matching the required event_types. It is a blog post about a product launch and operational strategy, not a specific event like a funding round, acquisition, or model release.",
+        "reason": "The source text describes a product announcement (Sonic Inference Pods) and company history, but does not contain a concrete, singular AI event matching the required event_types. It is a blog post about a product launch and business strategy, not a specific event like a funding round, acquisition, or regulatory action.",
         "claims": []
       },
       "evidence": [
@@ -4395,7 +4510,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:18:17.271Z"
+      "generated_at": "2026-08-08T03:52:03.443Z"
     },
     {
       "candidate_id": "MAC-eb25b57a2c01f071",
@@ -4434,7 +4549,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-08T01:17:17.749Z"
+      "generated_at": "2026-08-08T03:50:50.133Z"
     },
     {
       "candidate_id": "MAC-ec051da097cc86c4",
@@ -4482,7 +4597,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:57.289Z"
+      "generated_at": "2026-08-08T03:51:38.038Z"
     },
     {
       "candidate_id": "MAC-ec7749c212fa9d6a",
@@ -4498,7 +4613,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "Runware",
-        "rationale": "The candidate entity Runware is an AI inference and compute company that builds its own modular infrastructure, while the verified alternative NVIDIA is a GPU hardware supplier. The source text mentions NVIDIA only as a component supplier ('across all standard NVIDIA GPUs'), which is a component_supplier relationship, not evidence that Runware and NVIDIA are the same entity.",
+        "rationale": "The candidate entity Runware is an AI inference and compute company that builds its own modular infrastructure, while the verified alternative NVIDIA is a GPU manufacturer. The source text mentions NVIDIA only as a component supplier ('across all standard NVIDIA GPUs'), which is a component_supplier relationship and does not indicate entity identity.",
         "candidate_name": "Runware"
       },
       "evidence": [
@@ -4530,7 +4645,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:18:06.318Z"
+      "generated_at": "2026-08-08T03:51:49.885Z"
     },
     {
       "candidate_id": "MAC-ec7c8128fd2c0c05",
@@ -4546,14 +4661,14 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "蚂蚁集团百灵",
-        "rationale": "The candidate '蚂蚁集团百灵' appears to be a model or project name under Ant Group, but the source text refers to '蚂蚁集团旗下百灵大模型' and the specific model 'Ling-3.0-flash'. The verified alternative 'Ant Group' (蚂蚁集团) is the parent organization, not the same entity as the candidate. The relationship is subsidiary/brand, not identity.",
+        "rationale": "The candidate '蚂蚁集团百灵' appears to be a model or project name under Ant Group, while the verified alternative 'Ant Group' (蚂蚁集团) is the parent company. The source text states '蚂蚁集团旗下百灵大模型官方昨日宣布', indicating a subsidiary or product relationship, not entity identity.",
         "candidate_name": "蚂蚁集团百灵"
       },
       "evidence": [
         {
           "start": 15,
-          "end": 67,
-          "quote": "蚂蚁集团旗下百灵大模型官方昨日宣布，新一代原生混合推理模型 Ling-3.0-flash 现已正式开源。"
+          "end": 32,
+          "quote": "蚂蚁集团旗下百灵大模型官方昨日宣布"
         }
       ],
       "gate_results": [
@@ -4578,7 +4693,55 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-08T01:17:51.228Z"
+      "generated_at": "2026-08-08T03:51:29.395Z"
+    },
+    {
+      "candidate_id": "MAC-edb25e0815db0288",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-34d8ccb834d2d63c",
+      "raw_id": "RAW-e0de6b26b88f6d0a",
+      "source_ref": "SA-db12f60bfd7f2555",
+      "source_hash": "94abf6ab8d606349",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "国家互联网信息办公室",
+        "rationale": "SOURCE_TEXT中明确提到“国家互联网信息办公室起草了《生成式人工智能服务管理办法（征求意见稿）》”，且落款为“国家互联网信息办公室”，与候选实体的canonical_name完全一致。",
+        "candidate_name": "国家互联网信息办公室"
+      },
+      "evidence": [
+        {
+          "start": 44,
+          "end": 79,
+          "quote": "国家互联网信息办公室起草了《生成式人工智能服务管理办法（征求意见稿）》"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "invalid_same_entity_target"
+        }
+      ],
+      "generated_at": "2026-08-08T03:50:59.660Z"
     },
     {
       "candidate_id": "MAC-ee8eb63a4af41cff",
@@ -4617,7 +4780,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-08T01:17:08.122Z"
+      "generated_at": "2026-08-08T03:50:39.007Z"
     },
     {
       "candidate_id": "MAC-f94d73adffd09d2d",
