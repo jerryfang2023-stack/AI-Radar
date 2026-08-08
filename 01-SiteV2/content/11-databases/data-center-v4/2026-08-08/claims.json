@@ -318,6 +318,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-ae8deb8341dbbd49",
+    "raw_id": "RAW-f829fd20003bdcec",
+    "claim_type": "funding",
+    "subject": "Olix Computing Ltd.",
+    "predicate": "funding",
+    "object": "$312 million",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-d3155c4e8dffcef2"
+    },
+    "source_span": {
+      "raw_id": "RAW-f829fd20003bdcec",
+      "start": 137,
+      "end": 257
+    },
+    "source_quote": "Artificial intelligence hardware startup Olix Computing Ltd. today announced that it has raised $312 million in funding.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-5892443e0181e526",
     "raw_id": "RAW-63049e6d7784d585",
     "claim_type": "funding",
@@ -1334,6 +1356,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-6004b26f67b0f6d8",
+    "raw_id": "RAW-24d3fadb3fc8086a",
+    "claim_type": "product_release",
+    "subject": "蚂蚁集团",
+    "predicate": "product_release",
+    "object": "Avernet社区版本",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-819a4ba4e9e22f2e"
+    },
+    "source_span": {
+      "raw_id": "RAW-24d3fadb3fc8086a",
+      "start": 66,
+      "end": 99
+    },
+    "source_quote": "蚂蚁集团正式开源多智能体协作基础设施Avernet，社区版本已上线",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-6f549b4504f1cc21",
     "raw_id": "RAW-40e4d5b99d6f1d2f",
     "claim_type": "funding",
@@ -1415,6 +1459,50 @@
     "source_quote": "Mr. Haogang Yang, Chairman and Chief Executive Officer of Global Mofy, commented: “Our participation in Moonshot AI’s new financing round represents an important milestone in Global Mofy’s broader global strategic investment initiative and our long-term commitment to building a strong presence within the generative AI ecosystem. As a key player in China’s large model sector, Kimi’s technological direction aligns closely with our future vision across AI-powered content generation, intelligent production workflows, artificial intelligence-generated content (“AIGC”) integration, and digital asset commercialization. We will continue to actively pursue opportunities with leading global AI platforms through a dual-engine approach of strategic capital deployment and industrial synergy, further strengthening our long-term competitive position within next-generation digital content and the global AI landscape.”",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c019bf11b77e505d",
+    "raw_id": "RAW-e0de6b26b88f6d0a",
+    "claim_type": "policy_regulation",
+    "subject": "国家互联网信息办公室",
+    "predicate": "policy_regulation",
+    "object": "《生成式人工智能服务管理办法（征求意见稿）》",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-9a5c3c81adeffcab"
+    },
+    "source_span": {
+      "raw_id": "RAW-e0de6b26b88f6d0a",
+      "start": 44,
+      "end": 91
+    },
+    "source_quote": "国家互联网信息办公室起草了《生成式人工智能服务管理办法（征求意见稿）》，现向社会公开征求意见。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-85192bc4bf32d6b1",
+    "raw_id": "RAW-e0de6b26b88f6d0a",
+    "claim_type": "policy_regulation",
+    "subject": "国家互联网信息办公室",
+    "predicate": "policy_regulation",
+    "object": "《生成式人工智能服务管理办法（征求意见稿）》意见反馈截止时间",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-9a5c3c81adeffcab"
+    },
+    "source_span": {
+      "raw_id": "RAW-e0de6b26b88f6d0a",
+      "start": 310,
+      "end": 330
+    },
+    "source_quote": "意见反馈截止时间为2023年5月10日。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1751,6 +1839,28 @@
     "source_quote": "IT之家 8 月 7 日消息，影石 Insta360 今日（8 月 7 日）为 GO Ultra 拇指相机上线 AI 语音助手 。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3208a501d17d7c9f",
+    "raw_id": "RAW-d6fc8a8083fb95c7",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "donut-shaped smart speaker",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-9b3b763928a99d81"
+    },
+    "source_span": {
+      "raw_id": "RAW-d6fc8a8083fb95c7",
+      "start": 124,
+      "end": 200
+    },
+    "source_quote": "OpenAI is planning a donut-shaped smart speaker for 2027, priced above $300.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
