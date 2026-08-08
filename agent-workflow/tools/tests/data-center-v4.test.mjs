@@ -890,6 +890,7 @@ test("EVENT-V1.1 recognizes necessary capital, operating, governance, and securi
   const cases = [
     ["Anthropic filed for an initial public offering", "ipo_listing"],
     ["Google invests $1.5 billion in an AI data center campus", "capital_investment"],
+    ["Global Mofy strategically participates in a new financing round of Moonshot AI", "capital_investment"],
     ["Abridge reports annual recurring revenue reached $100 million", "financial_performance"],
     ["Parloa opens a new office in Madrid", "market_expansion"],
     ["Oracle lays off 2,100 employees in an AI organization restructuring", "organization_restructuring"],

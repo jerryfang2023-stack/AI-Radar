@@ -5,9 +5,9 @@
     "site_version": "SITE-V4.4.1-china-market-scope",
     "column_version": "FUNDING-INSIGHT-V1.3.0-cb-2026-hierarchy",
     "taxonomy_version": "TAG-V4.1",
-    "latest_date": "2026-08-07",
-    "generated_at": "2026-08-07T03:44:45.129Z",
-    "card_count": 238,
+    "latest_date": "2026-08-08",
+    "generated_at": "2026-08-08T04:17:26.373Z",
+    "card_count": 239,
     "duplicate_rounds_removed": 13,
     "automatic_publication": true,
     "market_category_framework": {
@@ -286,6 +286,578 @@
     ]
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.2",
+      "funding_insight_id": "FI-63a2a302d42c9558",
+      "triggered_by_event_id": "EV-4d2852e1694b2818",
+      "as_of_date": "2026-08-08",
+      "company": {
+        "entity_id": "EN-cc2ab268105df889",
+        "name": "Olix Computing Ltd.",
+        "full_name": "Olix Computing Ltd.",
+        "website": "olix.com",
+        "summary": "Olix Computing 是一家总部位于伦敦的 AI 硬件初创公司，正在开发专为大型语言模型推理中解码阶段优化的 DX-1 芯片，并将其集成到名为 X-1 的数据中心设备中。该芯片采用片上 SRAM 替代 HBM，并通过“慢而宽”的光学互连实现芯片间数据传输，旨在解决推理工作负载中的内存带宽瓶颈。",
+        "headquarters": "London",
+        "founders": [
+          {
+            "name": "James Dacombe",
+            "role": "创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a6c18c7d2adec363",
+                "quote": "James Dacombe founded Olix in March 2024 at the age of 24 — then called Flux Corp Ltd. — and rebranded the company as Olix Computing Ltd. in January 2026 following its first major raise.",
+                "source_content_hash": "5a13ee222d9a2ed6",
+                "quote_hash": "4c2c728fa11fff9771c01d63bb561a6419a156c7007f9012e8a1738800c4ec40"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6e2e57f27c26fd6b",
+            "quote": "Artificial intelligence hardware startup Olix Computing Ltd. today announced that it has raised $312 million in funding.",
+            "source_content_hash": "e49ce91066e4adfd",
+            "quote_hash": "c912c2b55efb8c4c2aa0027d598a8d7644bc95de13941cd999c765758f20f385"
+          },
+          {
+            "source_id": "FISRC-a6c18c7d2adec363",
+            "quote": "London-based AI chip startup Olix announced Monday it has closed a $312 million Series B at a $3.3 billion valuation",
+            "source_content_hash": "5a13ee222d9a2ed6",
+            "quote_hash": "8735fd8a33612298a1d5beaf02af8d4630e091e770401a453466a53a6647ebce"
+          }
+        ]
+      },
+      "financing": {
+        "round": "B轮",
+        "amount": "$312 million",
+        "total_raised": "$312 million",
+        "announced_at": "2026-08-03",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Fundomo",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a6c18c7d2adec363",
+                "quote": "The round was led by New York venture firm Fundomo",
+                "source_content_hash": "5a13ee222d9a2ed6",
+                "quote_hash": "bf3a7b6f25818182067c37e135c8f151434e09f20fadb19a1af9db336c9a03da"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Arm Holding plc",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6e2e57f27c26fd6b",
+                "quote": "The Series C round included contributions from Arm Holding plc",
+                "source_content_hash": "e49ce91066e4adfd",
+                "quote_hash": "79a676e56f63797bff297531f553c55f2546db7a80f13917be09a02d45c7f27d"
+              },
+              {
+                "source_id": "FISRC-a6c18c7d2adec363",
+                "quote": "The round was led by New York venture firm Fundomo and drew in Arm, Hudson River Trading, and Netflix co-founder Reed Hastings",
+                "source_content_hash": "5a13ee222d9a2ed6",
+                "quote_hash": "a7fa871888210b71435b8557a41984a31510b8aa1ed30c0033b5014e5149109b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Hudson River Trading",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a6c18c7d2adec363",
+                "quote": "The round was led by New York venture firm Fundomo and drew in Arm, Hudson River Trading, and Netflix co-founder Reed Hastings",
+                "source_content_hash": "5a13ee222d9a2ed6",
+                "quote_hash": "a7fa871888210b71435b8557a41984a31510b8aa1ed30c0033b5014e5149109b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Reed Hastings",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6e2e57f27c26fd6b",
+                "quote": "The Series C round included contributions from Arm Holding plc, Netflix Inc. co-founder Reed Hastings and several others.",
+                "source_content_hash": "e49ce91066e4adfd",
+                "quote_hash": "4d11620c3f74f263093bfb7a58460ec9a7cef9728a1b92e50793e28564aaea3d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "UK government's Sovereign AI Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a6c18c7d2adec363",
+                "quote": "The round was led by New York venture firm Fundomo and drew in Arm, Hudson River Trading, and Netflix co-founder Reed Hastings alongside the UK government's Sovereign AI Fund.",
+                "source_content_hash": "5a13ee222d9a2ed6",
+                "quote_hash": "65481abef5c1b13467567c77759fcf55f07810485a97e34a0b0d496226d48675"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Hummingbird Ventures",
+            "role": "历史轮次领投方，本轮追加投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-88b7fd63299c3c59",
+                "quote": "the investment was led by Belgian venture capital firm Hummingbird Ventures.",
+                "source_content_hash": "7a2d724e19fa7bbd",
+                "quote_hash": "631a5a22eca6176d2436f5cd36c7f4dc65443e6ad211fb7071bb603f0997e84f"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6e2e57f27c26fd6b",
+            "quote": "Artificial intelligence hardware startup Olix Computing Ltd. today announced that it has raised $312 million in funding.",
+            "source_content_hash": "e49ce91066e4adfd",
+            "quote_hash": "c912c2b55efb8c4c2aa0027d598a8d7644bc95de13941cd999c765758f20f385"
+          },
+          {
+            "source_id": "FISRC-6e2e57f27c26fd6b",
+            "quote": "Artificial intelligence hardware startup Olix Computing Ltd. today announced that it has raised $312 million in funding. The Series C round included contributions from Arm Holding plc, Netflix Inc. co-founder Reed Hastings and several others. Olix is now valued at $3.3 billion",
+            "source_content_hash": "e49ce91066e4adfd",
+            "quote_hash": "bec3461f8c4614e35225929db8f607a1184f8b2ee2ccf579cc78dffa62bece2f"
+          },
+          {
+            "source_id": "FISRC-a6c18c7d2adec363",
+            "quote": "London-based AI chip startup Olix announced Monday it has closed a $312 million Series B at a $3.3 billion valuation",
+            "source_content_hash": "5a13ee222d9a2ed6",
+            "quote_hash": "8735fd8a33612298a1d5beaf02af8d4630e091e770401a453466a53a6647ebce"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-4d2852e1694b2818",
+            "round_original": "Series B",
+            "amount": "$312 million",
+            "announced_at": "2026-08-03",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6e2e57f27c26fd6b",
+                "quote": "Artificial intelligence hardware startup Olix Computing Ltd. today announced that it has raised $312 million in funding.",
+                "source_content_hash": "e49ce91066e4adfd",
+                "quote_hash": "c912c2b55efb8c4c2aa0027d598a8d7644bc95de13941cd999c765758f20f385"
+              },
+              {
+                "source_id": "FISRC-6e2e57f27c26fd6b",
+                "quote": "Artificial intelligence hardware startup Olix Computing Ltd. today announced that it has raised $312 million in funding. The Series C round included contributions from Arm Holding plc, Netflix Inc. co-founder Reed Hastings and several others. Olix is now valued at $3.3 billion",
+                "source_content_hash": "e49ce91066e4adfd",
+                "quote_hash": "bec3461f8c4614e35225929db8f607a1184f8b2ee2ccf579cc78dffa62bece2f"
+              },
+              {
+                "source_id": "FISRC-a6c18c7d2adec363",
+                "quote": "London-based AI chip startup Olix announced Monday it has closed a $312 million Series B at a $3.3 billion valuation",
+                "source_content_hash": "5a13ee222d9a2ed6",
+                "quote_hash": "8735fd8a33612298a1d5beaf02af8d4630e091e770401a453466a53a6647ebce"
+              }
+            ]
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "DX-1",
+          "description": "DX-1 是 Olix 的首款芯片，专为大型语言模型推理中的解码阶段设计。它不使用 HBM 内存或先进封装，而是将模型权重存储在片上 SRAM 中，以实现更高的能效和更低的延迟。",
+          "target_customers": "数据中心运营商",
+          "features": [
+            "片上 SRAM 存储模型权重",
+            "无 HBM 内存",
+            "无先进封装",
+            "针对解码工作负载优化"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6e2e57f27c26fd6b",
+              "quote": "London-based Olix is developing a chip called the DX-1 that is specifically optimized for decode workloads.",
+              "source_content_hash": "e49ce91066e4adfd",
+              "quote_hash": "009ed8f791f2f43ed6e9c819c129bfae3bda9a0d461c23362caf74b575004539"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "X-1",
+          "description": "X-1 是 Olix 的数据中心设备，将 DX-1 芯片通过“慢而宽”的光学互连连接起来，以光而非铜缆传输数据。该系统将 AI 模型“展开”到大量专用芯片上，每个芯片负责推理流水线中的一个计算阶段，并以完整机架形式交付。",
+          "target_customers": "数据中心运营商",
+          "features": [
+            "慢而宽的光学互连",
+            "机架级协同设计",
+            "以完整机架形式交付",
+            "支持多机架扩展至10万亿参数模型"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6e2e57f27c26fd6b",
+              "quote": "It plans to ship the DX-1 as part of a data center appliance known as the X-1.",
+              "source_content_hash": "e49ce91066e4adfd",
+              "quote_hash": "849f6e8f302b34478a742b165d2d1b7c0826e22807e3ab4e0b8807a755b38a4f"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "估值",
+          "value": "$3.3 billion",
+          "observed_at": "2026-08-03",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6e2e57f27c26fd6b",
+              "quote": "Olix is now valued at $3.3 billion, about triple what it was worth after its previous raise in February.",
+              "source_content_hash": "e49ce91066e4adfd",
+              "quote_hash": "62f89f3cdbc33c54f49e1eedd78b6803dc54b162d42305bf6200e64da3bd31dc"
+            }
+          ]
+        },
+        {
+          "label": "100B参数模型推理速度",
+          "value": "超过10,000 tokens/秒/用户",
+          "observed_at": "2026-08-03",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6e2e57f27c26fd6b",
+              "quote": "Olix says that its DX-1 chip enables LLMs with 100 billion parameters to process more than 10,000 tokens per second.",
+              "source_content_hash": "e49ce91066e4adfd",
+              "quote_hash": "8cd75ad49a9bc979b6e72a1ac1d0b0f54fb487ba363a62c4f714559a09746911"
+            }
+          ]
+        },
+        {
+          "label": "最大支持模型参数",
+          "value": "10万亿参数",
+          "observed_at": "2026-08-03",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6e2e57f27c26fd6b",
+              "quote": "customers can link together multiple X-1 racks into clusters to run models with 10 trillion parameters.",
+              "source_content_hash": "e49ce91066e4adfd",
+              "quote_hash": "5081a9d01ea1adf6a450c8245047fcdf641861b2621ec413ef3f0b63516a5524"
+            }
+          ]
+        },
+        {
+          "label": "预计芯片交付时间",
+          "value": "2027年上半年",
+          "observed_at": "2026-08-03",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6e2e57f27c26fd6b",
+              "quote": "Olix hopes to start shipping its chips in the first half of 2027.",
+              "source_content_hash": "e49ce91066e4adfd",
+              "quote_hash": "a75b063e54578af91ae6335b00dc217a24dcf50ffdbfd68857f094c16ea213a0"
+            }
+          ]
+        },
+        {
+          "label": "单机架芯片连接数",
+          "value": "最多10,000个芯片",
+          "observed_at": "2026-08-03",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a6c18c7d2adec363",
+              "quote": "Data Center Dynamics reported that the system can connect up to 10,000 chips in a rack-scale domain.",
+              "source_content_hash": "5a13ee222d9a2ed6",
+              "quote_hash": "8087b69cf8373cd384a20bdd65908f2a47a637629be2e9fdae7086ef62872a3b"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Olix 官方公告",
+          "quote": "A datacenter is a factory whose product is the token. Producing a single token takes hundreds of operations, each placing different demands on hardware. Any other factory would give each stage a machine built for it. Instead, the token factory runs every stage on the same general purpose chip.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1454e36a9ecafffb",
+              "quote": "A datacenter is a factory whose product is the token. Producing a single token takes hundreds of operations, each placing different demands on hardware. Any other factory would give each stage a machine built for it. Instead, the token factory runs every stage on the same general purpose chip.",
+              "source_content_hash": "f203c86302216557",
+              "quote_hash": "abedb9058db0d58bdf4f906b540b2b84f6f8962544e15ca637c7b303efb35c00"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是 AI 推理市场正从“通用 GPU 处理一切”转向“针对特定推理阶段（尤其是解码）的专用硬件架构”。Olix 的 $3.3B 估值建立在三个已验证信号之上：其一，HBM 供应链瓶颈已持续至 2026 年，跳过 HBM 的设计在供应安全上具有战略价值；其二，解码阶段的内存带宽瓶颈已被行业广泛认知，专用解码加速器存在明确市场需求；其三，Arm 的战略参投为光子互连架构提供了来自半导体主流生态的背书。但该判断的证据边界受限于 DX-1 尚未流片、无客户验证、光子计算商业化历史反复延期的现实。",
+        "validated_signals": [
+          "HBM 供应链已售罄至 2026 年，跳过 HBM 的设计可规避供应瓶颈",
+          "解码阶段是内存带宽受限而非算力受限，专用解码加速器存在架构合理性",
+          "Arm 的战略参投表明半导体主流生态对光子互连架构的认可",
+          "英国政府 Sovereign AI Fund 的参与将 Olix 纳入国家半导体战略"
+        ],
+        "risks": [
+          "DX-1 尚未流片，无任何量产芯片或客户验证，所有性能数据均为公司自报",
+          "光子集成电路在晶圆级实现商业规模量产和高良率仍是未解决的工程挑战，该技术已被描述为“还需五年”长达二十年",
+          "$3.3B 估值对应零收入、零出货产品，估值与执行进度之间存在巨大落差"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "chips",
+        "use_case_ids": [],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "AI 芯片/半导体",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 AI 推理市场正从“通用 GPU 处理一切”转向“针对特定推理阶段（尤其是解码）的专用硬件架构”。Olix 的 $3.3B 估值建立在三个已验证信号之上：其一，HBM 供应链瓶颈已持续至 2026 年，跳过 HBM 的设计在供应安全上具有战略价值；其二，解码阶段的内存带宽瓶颈已被行业广泛认知，专用解码加速器存在明确市场需求；其三，Arm 的战略参投为光子互连架构提供了来自半导体主流生态的背书。但该判断的证据边界受限于 DX-1 尚未流片、无客户验证、光子计算商业化历史反复延期的现实。",
+          "evidence_signals": [
+            "HBM 供应链已售罄至 2026 年，跳过 HBM 的设计可规避供应瓶颈",
+            "解码阶段是内存带宽受限而非算力受限，专用解码加速器存在架构合理性",
+            "Arm 的战略参投表明半导体主流生态对光子互连架构的认可",
+            "英国政府 Sovereign AI Fund 的参与将 Olix 纳入国家半导体战略"
+          ],
+          "risks": [
+            "DX-1 尚未流片，无任何量产芯片或客户验证，所有性能数据均为公司自报",
+            "光子集成电路在晶圆级实现商业规模量产和高良率仍是未解决的工程挑战，该技术已被描述为“还需五年”长达二十年",
+            "$3.3B 估值对应零收入、零出货产品，估值与执行进度之间存在巨大落差"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "DX-1",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "X-1",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "James Dacombe",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Fundomo",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Arm Holding plc",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Hudson River Trading",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Reed Hastings",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "UK government's Sovereign AI Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Hummingbird Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-4d2852e1694b2818",
+          "date": "2026-08-03",
+          "title": "Netflix联合创始人支持光学推理设备制造商Olix的3.12亿美元融资轮",
+          "amount": "$312 million",
+          "source_refs": [
+            "SA-218e8eb8dca65615"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-6e2e57f27c26fd6b",
+          "source_url": "https://siliconangle.com/2026/08/03/netflix-co-founder-backs-312m-round-optical-inference-appliance-maker-olix/",
+          "title": "Netflix联合创始人支持光学推理设备制造商Olix的3.12亿美元融资轮",
+          "publisher": "keyword search / Exa",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-08T00:20:31.798Z",
+          "content_hash": "e49ce91066e4adfd",
+          "source_artifact_id": "SA-218e8eb8dca65615",
+          "raw_id": "RAW-f829fd20003bdcec"
+        },
+        {
+          "source_id": "FISRC-a6c18c7d2adec363",
+          "source_url": "https://www.techtimes.com/articles/322816/20260803/olix-raises-312m-photonic-ai-chip-that-ditches-hbm-britains-biggest-semiconductor-bet.htm",
+          "title": "Olix Raises $312M for Photonic AI Chip That Ditches HBM: Britain's Biggest Semiconductor Bet",
+          "publisher": "techtimes.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-08T04:13:29.040Z",
+          "content_hash": "5a13ee222d9a2ed6",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-1454e36a9ecafffb",
+          "source_url": "https://olix.com/news/company-raises-series-b",
+          "title": "OLIX raises $312m at a $3.3bn valuation and appoints Professor Nick McKeown to its board — OLIX",
+          "publisher": "olix.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-08T04:13:33.180Z",
+          "content_hash": "f203c86302216557",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-88b7fd63299c3c59",
+          "source_url": "https://siliconangle.com/2026/02/11/photonic-ai-chip-startup-olix-nabs-220m-investment",
+          "title": "Photonic AI chip startup OLIX nabs $220M investment - SiliconANGLE",
+          "publisher": "siliconangle.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-08T04:13:53.623Z",
+          "content_hash": "7a2d724e19fa7bbd",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.6",
+        "generated_at": "2026-08-08T04:14:35.061Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-4d2852e1694b2818",
+          "confidence": 0.95,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-08T04:14:35.061Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "DX-1",
+            "X-1"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "James Dacombe"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-4d2852e1694b2818"
+      ],
+      "aggregation": {
+        "key": "EN-cc2ab268105df889|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "chip_accelerator",
+        "name": "芯片与加速器",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "infrastructure_compute",
+        "name": "基础设施与算力",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "hardware_computing",
+        "name": "硬件与算力",
+        "method": "card_explicit"
+      },
+      "market_application": {
+        "dimension": "ai_market_application",
+        "id": "chips",
+        "name": "芯片",
+        "method": "card_explicit"
+      },
+      "links": {
+        "company": "data-center.html?view=index&detail=entity&id=EN-cc2ab268105df889",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-4d2852e1694b2818",
+        "direction": ""
+      }
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-eae7674948ab88a1",
@@ -91592,7 +92164,7 @@
               "quote_hash": "8e2bc731ba9d88c83c57a7ea918a0ffb64ab9861995298b9448a6e52684e39ed"
             }
           ],
-          "entity_id": null
+          "entity_id": "EN-d1ad14d4ad57d207"
         },
         {
           "name": "Codex",
@@ -91869,8 +92441,8 @@
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "ChatGPT",
-          "canonical_entity_id": null,
-          "canonical_name": ""
+          "canonical_entity_id": "EN-d1ad14d4ad57d207",
+          "canonical_name": "ChatGPT"
         },
         {
           "relation_type": "product_of",
@@ -92164,11 +92736,9 @@
       },
       "entity_link_coverage": {
         "products": {
-          "linked": 1,
+          "linked": 2,
           "total": 2,
-          "unresolved_names": [
-            "ChatGPT"
-          ]
+          "unresolved_names": []
         },
         "founders": {
           "linked": 1,

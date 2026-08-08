@@ -43,7 +43,7 @@ export function normalizeSourceIntakeTitles(root, date) {
     const translated = translations.get(titleTranslationKey(original)) || "";
     if (!titleTranslationLooksUsable(original, translated)) continue;
     approvedByTitle.set(original, translated);
-    if (titleTranslationLooksUsable(original, raw.title_zh || "")) continue;
+    if (titleTranslationLooksUsable(original, raw.title_zh || "") && String(raw.title_zh || "").trim() === translated) continue;
     raw.title_zh = translated;
     raw.title_translation_status = "translated";
     raw.title_translation_method = "source_title_translation_db";
@@ -68,7 +68,9 @@ export function normalizeSourceIntakeTitles(root, date) {
       const provenanceFailed = row.title_translation_status !== "translated"
         || !method
         || /failed|disabled|needs|missing/iu.test(method);
-      if (titleTranslationLooksUsable(original, row.title_zh || "") && !provenanceFailed) continue;
+      if (titleTranslationLooksUsable(original, row.title_zh || "")
+          && !provenanceFailed
+          && String(row.title_zh || "").trim() === translated) continue;
       row.title_zh = translated;
       row.title_translation_status = "translated";
       row.title_translation_method = "source_title_translation_db";

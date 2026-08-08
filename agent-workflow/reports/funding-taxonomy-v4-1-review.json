@@ -5,13 +5,13 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-07T03:46:26.573Z",
+    "generated_at": "2026-08-08T04:17:59.530Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 251,
-    "input_hash": "8dbaf75eea626bcd",
+    "decision_count": 252,
+    "input_hash": "fbe4513f129eebe0",
     "override_count": 17,
     "needs_review_count": 0,
     "low_confidence_count": 0
@@ -4953,6 +4953,21 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "产品为电商推荐引擎，预测购物者需求并实时微调，属于跨行业营销功能，无物理AI特征，非基础设施，非单一行业专用，故归入企业应用-营销。"
+    },
+    {
+      "event_id": "EV-4d2852e1694b2818",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "Olix Computing is developing AI chips (DX-1) and data center appliances (X-1), which clearly fall under infrastructure_compute > hardware_computing > chips. The product form is chip_accelerator. Target users are developers who will build on this hardware. No specific use case or industry is mentioned, so those arrays are left empty."
     }
   ],
   "inputs": [
@@ -10040,6 +10055,37 @@
       "customer_names": [],
       "current_classification": {
         "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-4d2852e1694b2818",
+      "funding_insight_id": "FI-63a2a302d42c9558",
+      "company_name": "Olix Computing Ltd.",
+      "company_full_name": "Olix Computing Ltd.",
+      "website": "olix.com",
+      "current_sector": "AI 芯片/半导体",
+      "company_evidence_quotes": [
+        "Artificial intelligence hardware startup Olix Computing Ltd. today announced that it has raised $312 million in funding.",
+        "London-based AI chip startup Olix announced Monday it has closed a $312 million Series B at a $3.3 billion valuation"
+      ],
+      "products": [
+        {
+          "name": "DX-1",
+          "evidence_quotes": [
+            "London-based Olix is developing a chip called the DX-1 that is specifically optimized for decode workloads."
+          ]
+        },
+        {
+          "name": "X-1",
+          "evidence_quotes": [
+            "It plans to ship the DX-1 as part of a data center appliance known as the X-1."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "chip_accelerator",
         "market_category_id": "infrastructure_compute"
       }
     },

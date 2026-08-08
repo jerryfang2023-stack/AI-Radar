@@ -71,6 +71,7 @@ const EVENT_RULES = [
 ];
 
 const SPECIAL_EVENT_RULES = [
+  ["capital_investment", /\bparticipates?\s+in\s+(?:the\s+)?(?:a\s+)?new\s+financing\s+round\b/iu],
   ["policy_regulation", /备案|filed? with .{0,40}(?:regulator|authority)/iu],
   ["organization_people", /\b(?:resigns?|resigned|leaves?|left)\b|辞职|离职/iu],
   ["research_result", /\b(?:introduces?|introduced|describes?|described|presents?|presented)\b.{0,80}\binternal\b.{0,40}\b(?:model|system)\b|(?:介绍|披露).{0,60}内部.{0,30}(?:模型|系统)/iu],
