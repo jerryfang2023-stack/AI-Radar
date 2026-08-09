@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-08T04:22:09.833Z",
-    "latestDataDate": "2026-08-08",
-    "currentDate": "2026-08-08",
-    "eventCount": 1937,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-08-09T01:18:04.367Z",
+    "latestDataDate": "2026-08-09",
+    "currentDate": "2026-08-09",
+    "eventCount": 1962,
+    "quarantinedEventCount": 17
   },
   "relationships": [
     {
@@ -12774,6 +12774,69 @@
       }
     },
     {
+      "relationship_id": "REL2-2c82bf25c532a4e1",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-e463d05a14e8697f",
+      "object_type": "entity",
+      "event_id": "EV-abf0990dcaceb1ce",
+      "claim_refs": [
+        "CL-cc54439600e016cd",
+        "CL-6f211a4cbf5e0ea7",
+        "CL-f7e909b299efdfc5"
+      ],
+      "source_refs": [
+        "SA-077837221f61e911"
+      ],
+      "data_date": "2026-06-26",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "Xcode 26.6",
+      "predicateLabel": "发布",
+      "title": "Apple 发布 Xcode 26.6",
+      "eventTitle": "苹果 Xcode 26.6 正式版发布，新增谷歌 Gemini 编程助手支持",
+      "eventDate": "2026-06-26",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-cc54439600e016cd",
+          "subject": "苹果 Xcode 26.6 正式版",
+          "object": "，新增谷歌 Gemini 编程助手支持",
+          "quote": "苹果 Xcode 26.6 正式版发布，新增谷歌 Gemini 编程助手支持 - IT之家"
+        },
+        {
+          "id": "CL-6f211a4cbf5e0ea7",
+          "subject": "苹果 Xcode 26.6 正式版",
+          "object": "，新增谷歌 Gemini 编程助手支持",
+          "quote": "苹果 Xcode 26.6 正式版发布，新增谷歌 Gemini 编程助手支持"
+        },
+        {
+          "id": "CL-f7e909b299efdfc5",
+          "subject": "苹果 Xcode 26.6 正式版",
+          "object": "，新增谷歌 Gemini 编程助手支持",
+          "quote": "IT之家 6 月 26 日消息，苹果现已发布 Xcode 26.6 IDE，新增谷歌 Gemini 编程助手支持。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-077837221f61e911",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/968/787.htm"
+        }
+      ],
+      "sourceExcerpt": "苹果 Xcode 26.6 正式版发布，新增谷歌 Gemini 编程助手支持 - IT之家",
+      "event": {
+        "id": "EV-abf0990dcaceb1ce",
+        "title": "苹果 Xcode 26.6 正式版发布，新增谷歌 Gemini 编程助手支持",
+        "originalTitle": "",
+        "date": "2026-06-26",
+        "dataDate": "2026-06-26",
+        "eventTypeLabel": "产品发布"
+      }
+    },
+    {
       "relationship_id": "REL2-eba841d5627207a4",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
@@ -14551,6 +14614,76 @@
         "date": "2026-06-21",
         "dataDate": "2026-06-21",
         "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-328522f06ece8143",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-7df09a7717ef2feb",
+      "object_type": "entity",
+      "event_id": "EV-fd21441fb6e143c3",
+      "claim_refs": [
+        "CL-46fb3d5ad9508a38",
+        "CL-727fd142f1eda91e",
+        "CL-63d0477cab28738f",
+        "CL-c8732339ea9bef1a"
+      ],
+      "source_refs": [
+        "SA-f1b7650b27891e44"
+      ],
+      "data_date": "2026-06-21",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "LM Studio",
+      "predicateLabel": "合作",
+      "title": "Apple 合作 LM Studio",
+      "eventTitle": "LM Studio 与苹果合作，成功用四台 Mac Studio 运行万亿参数 Kimi K2.6 大模型",
+      "eventDate": "2026-06-20",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-46fb3d5ad9508a38",
+          "subject": "LM Studio 与苹果",
+          "object": "，成功用四台 Mac Studio 运行万亿参数 Kimi K2.6 大模型",
+          "quote": "IT之家 6 月 20 日消息，在苹果 WWDC 2026 期间，LM Studio 与苹果合作在四台 Mac Studio 集群上成功运行起了月之暗面万亿参数大模型 Kimi K2.6，并通过 LM Link 实现从 MacBook Neo 和 iPhone 的安全远程访问。"
+        },
+        {
+          "id": "CL-727fd142f1eda91e",
+          "subject": "LM Studio 与苹果",
+          "object": "，成功用四台 Mac Studio 运行万亿参数 Kimi K2.6 大模型",
+          "quote": "LM Studio 作为本地 AI 模型运行平台，此次与苹果的合作进一步展示了在消费级硬件上部署大型开源模型的可能性。"
+        },
+        {
+          "id": "CL-63d0477cab28738f",
+          "subject": "LM Studio 与苹果",
+          "object": "，成功用四台 Mac Studio 运行万亿参数 Kimi K2.6 大模型",
+          "quote": "IT之家此前报道，Kimi K2.6 大模型总参数规模达到 1 万亿，采用 MoE 架构，激活参数为 320 亿，支持长上下文、多模态输入以及智能体任务处理。"
+        },
+        {
+          "id": "CL-c8732339ea9bef1a",
+          "subject": "LM Studio 与苹果",
+          "object": "，成功用四台 Mac Studio 运行万亿参数 Kimi K2.6 大模型",
+          "quote": "据 LM Studio 官方介绍，在此次演示中，四台 Mac Studio 通过苹果的内存共享和互联技术形成集群，总统一内存容量达到约 1.5TB，能够承载这一前沿规模模型的推理需求。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-f1b7650b27891e44",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/966/539.htm"
+        }
+      ],
+      "sourceExcerpt": "IT之家 6 月 20 日消息，在苹果 WWDC 2026 期间，LM Studio 与苹果合作在四台 Mac Studio 集群上成功运行起了月之暗面万亿参数大模型 Kimi K2.6，并通过 LM Link 实现从 MacBook Neo 和 iPhone 的安全远程访问。",
+      "event": {
+        "id": "EV-fd21441fb6e143c3",
+        "title": "LM Studio 与苹果合作，成功用四台 Mac Studio 运行万亿参数 Kimi K2.6 大模型",
+        "originalTitle": "",
+        "date": "2026-06-20",
+        "dataDate": "2026-06-21",
+        "eventTypeLabel": "合作"
       }
     },
     {
@@ -16933,6 +17066,69 @@
       }
     },
     {
+      "relationship_id": "REL2-0700c100aba4f7c2",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-dd920a8cd166f486",
+      "object_type": "entity",
+      "event_id": "EV-4e6dc3ec2b3f0bd6",
+      "claim_refs": [
+        "CL-c219014c38d3e963",
+        "CL-18d554f72c3e47aa",
+        "CL-6125ee27d333b5c5"
+      ],
+      "source_refs": [
+        "SA-122b35fc54deabea"
+      ],
+      "data_date": "2026-06-12",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "CoreAI",
+      "predicateLabel": "发布",
+      "title": "Apple 发布 CoreAI",
+      "eventTitle": "苹果 CoreAI 端侧 AI 引擎测试：小模型解码速度是 MLX 的 2.47 倍，大模型性能持平",
+      "eventDate": "2026-06-11",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-c219014c38d3e963",
+          "subject": "undisclosed_subject",
+          "object": "苹果 CoreAI 端侧 AI 引擎测试：小模型解码速度是 MLX 的 2.47 倍，大模型性能持平",
+          "quote": "IT之家 6 月 11 日消息，科技媒体 Wccftech 昨日（6 月 10 日）发布博文，报道称在 2026 年全球开发者大会（WWDC）上，苹果推出 CoreAI 引擎， 接替 2017 年推出的 CoreML 框架，主打端侧大模型推理。"
+        },
+        {
+          "id": "CL-18d554f72c3e47aa",
+          "subject": "undisclosed_subject",
+          "object": "苹果 CoreAI 端侧 AI 引擎测试：小模型解码速度是 MLX 的 2.47 倍，大模型性能持平",
+          "quote": "IT之家援引博文介绍，CoreML 框架已服役 9 年，主要面向图像分类等小型静态任务；而最新接棒的 CoreAI 主要面向端侧本地推理和边缘 AI 场景，重点优化设备端大语言模型推理，重点支持更灵活的模型格式和更大的模型内存占用。"
+        },
+        {
+          "id": "CL-6125ee27d333b5c5",
+          "subject": "undisclosed_subject",
+          "object": "苹果 CoreAI 端侧 AI 引擎测试：小模型解码速度是 MLX 的 2.47 倍，大模型性能持平",
+          "quote": "在 M4 Mac 上运行 Qwen3 0.6B 模型后，CoreAI 解码速度约为 MLX 的 2.47 倍。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-122b35fc54deabea",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/962/857.htm"
+        }
+      ],
+      "sourceExcerpt": "IT之家 6 月 11 日消息，科技媒体 Wccftech 昨日（6 月 10 日）发布博文，报道称在 2026 年全球开发者大会（WWDC）上，苹果推出 CoreAI 引擎， 接替 2017 年推出的 CoreML 框架，主打端侧大模型推理。",
+      "event": {
+        "id": "EV-4e6dc3ec2b3f0bd6",
+        "title": "苹果 CoreAI 端侧 AI 引擎测试：小模型解码速度是 MLX 的 2.47 倍，大模型性能持平",
+        "originalTitle": "",
+        "date": "2026-06-11",
+        "dataDate": "2026-06-12",
+        "eventTypeLabel": "产品发布"
+      }
+    },
+    {
       "relationship_id": "REL2-b34511f516d08ba3",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-b81c8201acfc7639",
@@ -18242,6 +18438,55 @@
       }
     },
     {
+      "relationship_id": "REL2-5a09d0744942f11b",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-1924fff8eb4d54ae",
+      "object_type": "entity",
+      "event_id": "EV-85373b8ec9148127",
+      "claim_refs": [
+        "CL-36760828e3e4b086"
+      ],
+      "source_refs": [
+        "SA-b888617f1f81722a"
+      ],
+      "data_date": "2026-06-10",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "Siri",
+      "predicateLabel": "发布",
+      "title": "Apple 发布 Siri",
+      "eventTitle": "苹果高管回应为何 iOS 27 推出 Siri 独立应用：方便查看历史对话",
+      "eventDate": "2026-06-10",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-36760828e3e4b086",
+          "subject": "苹果高管回应为何 iOS 27",
+          "object": "Siri 独立应用：方便查看历史对话",
+          "quote": "苹果高管回应为何 iOS 27 推出 Siri 独立应用：方便查看历史对话"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-b888617f1f81722a",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/962/169.htm"
+        }
+      ],
+      "sourceExcerpt": "苹果高管回应为何 iOS 27 推出 Siri 独立应用：方便查看历史对话 - IT之家",
+      "event": {
+        "id": "EV-85373b8ec9148127",
+        "title": "苹果高管回应为何 iOS 27 推出 Siri 独立应用：方便查看历史对话",
+        "originalTitle": "",
+        "date": "2026-06-10",
+        "dataDate": "2026-06-10",
+        "eventTypeLabel": "产品发布"
+      }
+    },
+    {
       "relationship_id": "REL2-653e76cf1e48b6fd",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
@@ -18725,6 +18970,363 @@
       "event": {
         "id": "EV-da062d02015f99fb",
         "title": "Apple 发布 watchOS 27，整合 Siri AI 功能",
+        "originalTitle": "",
+        "date": "2026-06-09",
+        "dataDate": "2026-06-09",
+        "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-27b659bc5e5fe00b",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-af3ceabbe048a291",
+      "object_type": "entity",
+      "event_id": "EV-1ae8027c085679e9",
+      "claim_refs": [
+        "CL-412c1165ad9aea08",
+        "CL-0d7806422b8f4731",
+        "CL-bf480f9596975b92"
+      ],
+      "source_refs": [
+        "SA-c509109acff08b2a"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "Siri AI",
+      "predicateLabel": "发布",
+      "title": "Apple 发布 Siri AI",
+      "eventTitle": "苹果 iOS 27 版 Siri AI 推出系统原生自动校正功能",
+      "eventDate": "2026-06-09",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-412c1165ad9aea08",
+          "subject": "苹果 iOS 27 版 Siri AI",
+          "object": "系统原生自动校正功能",
+          "quote": "苹果 iOS 27 版 Siri AI 推出系统原生自动校正功能 - IT之家"
+        },
+        {
+          "id": "CL-0d7806422b8f4731",
+          "subject": "苹果 iOS 27 版 Siri AI",
+          "object": "系统原生自动校正功能",
+          "quote": "苹果 iOS 27 版 Siri AI 推出系统原生自动校正功能"
+        },
+        {
+          "id": "CL-bf480f9596975b92",
+          "subject": "苹果 iOS 27 版 Siri AI",
+          "object": "系统原生自动校正功能",
+          "quote": "IT之家 6 月 9 日消息，在今天（6 月 9 日）召开的 2026 年全球开发者大会（WWDC）上，苹果公司在 macOS 27、iOS 27 系统中， 基于 Siri AI 推出系统级别的 AI 自动校正（Automatic proofreading）功能。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-c509109acff08b2a",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/961/675.htm"
+        }
+      ],
+      "sourceExcerpt": "苹果 iOS 27 版 Siri AI 推出系统原生自动校正功能 - IT之家",
+      "event": {
+        "id": "EV-1ae8027c085679e9",
+        "title": "苹果 iOS 27 版 Siri AI 推出系统原生自动校正功能",
+        "originalTitle": "",
+        "date": "2026-06-09",
+        "dataDate": "2026-06-09",
+        "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-3d00d7538e09943f",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-1924fff8eb4d54ae",
+      "object_type": "entity",
+      "event_id": "EV-52e1ac21c25a0a09",
+      "claim_refs": [
+        "CL-200387b333a63bec"
+      ],
+      "source_refs": [
+        "SA-07362e7a0eeb27d0"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "Siri",
+      "predicateLabel": "发布",
+      "title": "Apple 发布 Siri",
+      "eventTitle": "苹果 macOS 27 开发者预览版 Beta 1 发布，引入独立 Siri 应用",
+      "eventDate": "2026-06-09",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-200387b333a63bec",
+          "subject": "苹果 macOS 27 开发者预览版 Beta 1",
+          "object": "，引入独立 Siri 应用",
+          "quote": "在 AI 方面，IT之家援引博文介绍，苹果重点推出了 Siri 独立 App，用户可以像使用聊天机器人一样和 Siri 交互。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-07362e7a0eeb27d0",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/961/685.htm"
+        }
+      ],
+      "sourceExcerpt": "在 AI 方面，IT之家援引博文介绍，苹果重点推出了 Siri 独立 App，用户可以像使用聊天机器人一样和 Siri 交互。",
+      "event": {
+        "id": "EV-52e1ac21c25a0a09",
+        "title": "苹果 macOS 27 开发者预览版 Beta 1 发布，引入独立 Siri 应用",
+        "originalTitle": "",
+        "date": "2026-06-09",
+        "dataDate": "2026-06-09",
+        "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-74ad6f207729d6ae",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-45b5216872656eb3",
+      "object_type": "entity",
+      "event_id": "EV-a9fe726c4ea2a17b",
+      "claim_refs": [
+        "CL-abeb123796984e45",
+        "CL-237aa10e9131be89",
+        "CL-bb177f8c54f761c6"
+      ],
+      "source_refs": [
+        "SA-4c454bcda76945d8"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "Core AI",
+      "predicateLabel": "发布",
+      "title": "Apple 发布 Core AI",
+      "eventTitle": "苹果发布 Xcode 27 Beta 与 Core AI 框架，称其为构建 AI 智能体\"最佳场所\"",
+      "eventDate": "2026-06-09",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-abeb123796984e45",
+          "subject": "苹果",
+          "object": "Xcode 27 Beta 与 Core AI 框架，称其为构建 AI 智能体\"最佳场所\"",
+          "quote": "Xcode 27 Beta 发布：苹果称其是构建 AI 智能体应用的“最佳场所” - IT之家"
+        },
+        {
+          "id": "CL-237aa10e9131be89",
+          "subject": "苹果",
+          "object": "Xcode 27 Beta 与 Core AI 框架，称其为构建 AI 智能体\"最佳场所\"",
+          "quote": "IT之家 6 月 9 日消息，在今天（6 月 9 日）召开的 2026 全球开发者大会（WWDC）上，苹果公司面向开发者， 升级推出全新 Xcode，并同步推出 Core AI 框架。"
+        },
+        {
+          "id": "CL-bb177f8c54f761c6",
+          "subject": "苹果",
+          "object": "Xcode 27 Beta 与 Core AI 框架，称其为构建 AI 智能体\"最佳场所\"",
+          "quote": "苹果发布了新版 Foundation Models 框架，让开发者更灵活地调用 AI 能力。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-4c454bcda76945d8",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/961/694.htm"
+        }
+      ],
+      "sourceExcerpt": "Xcode 27 Beta 发布：苹果称其是构建 AI 智能体应用的“最佳场所” - IT之家",
+      "event": {
+        "id": "EV-a9fe726c4ea2a17b",
+        "title": "苹果发布 Xcode 27 Beta 与 Core AI 框架，称其为构建 AI 智能体\"最佳场所\"",
+        "originalTitle": "",
+        "date": "2026-06-09",
+        "dataDate": "2026-06-09",
+        "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-bcbf4f353ec2e5b3",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-af3ceabbe048a291",
+      "object_type": "entity",
+      "event_id": "EV-9f338c4815cc65f3",
+      "claim_refs": [
+        "CL-9331a7c7b2ffd150"
+      ],
+      "source_refs": [
+        "SA-637ded00ea45f133"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "Siri AI",
+      "predicateLabel": "发布",
+      "title": "Apple 发布 Siri AI",
+      "eventTitle": "苹果智能和 Siri AI 适配机型公布，iPhone 15 Pro 系列及后续型号可用",
+      "eventDate": "2026-06-09",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-9331a7c7b2ffd150",
+          "subject": "Apple",
+          "object": "Siri AI and Apple Intelligence features",
+          "quote": "在今日的 WWDC26 主题演讲中，苹果发布了 Siri AI 和多项 Apple 智能新功能。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-637ded00ea45f133",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/961/691.htm"
+        }
+      ],
+      "sourceExcerpt": "在今日的 WWDC26 主题演讲中，苹果发布了 Siri AI 和多项 Apple 智能新功能。",
+      "event": {
+        "id": "EV-9f338c4815cc65f3",
+        "title": "苹果智能和 Siri AI 适配机型公布，iPhone 15 Pro 系列及后续型号可用",
+        "originalTitle": "",
+        "date": "2026-06-09",
+        "dataDate": "2026-06-09",
+        "eventTypeLabel": "模型发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-ced495a5aea356e0",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0502bb9ed34980aa",
+      "object_type": "entity",
+      "event_id": "EV-a9fe726c4ea2a17b",
+      "claim_refs": [
+        "CL-abeb123796984e45",
+        "CL-be6397745be4b268",
+        "CL-237aa10e9131be89",
+        "CL-bb177f8c54f761c6"
+      ],
+      "source_refs": [
+        "SA-4c454bcda76945d8"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "Xcode 27",
+      "predicateLabel": "发布",
+      "title": "Apple 发布 Xcode 27",
+      "eventTitle": "苹果发布 Xcode 27 Beta 与 Core AI 框架，称其为构建 AI 智能体\"最佳场所\"",
+      "eventDate": "2026-06-09",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-abeb123796984e45",
+          "subject": "苹果",
+          "object": "Xcode 27 Beta 与 Core AI 框架，称其为构建 AI 智能体\"最佳场所\"",
+          "quote": "Xcode 27 Beta 发布：苹果称其是构建 AI 智能体应用的“最佳场所” - IT之家"
+        },
+        {
+          "id": "CL-be6397745be4b268",
+          "subject": "苹果",
+          "object": "Xcode 27 Beta 与 Core AI 框架，称其为构建 AI 智能体\"最佳场所\"",
+          "quote": "Xcode 27 Beta 发布：苹果称其是构建 AI 智能体应用的“最佳场所”"
+        },
+        {
+          "id": "CL-237aa10e9131be89",
+          "subject": "苹果",
+          "object": "Xcode 27 Beta 与 Core AI 框架，称其为构建 AI 智能体\"最佳场所\"",
+          "quote": "IT之家 6 月 9 日消息，在今天（6 月 9 日）召开的 2026 全球开发者大会（WWDC）上，苹果公司面向开发者， 升级推出全新 Xcode，并同步推出 Core AI 框架。"
+        },
+        {
+          "id": "CL-bb177f8c54f761c6",
+          "subject": "苹果",
+          "object": "Xcode 27 Beta 与 Core AI 框架，称其为构建 AI 智能体\"最佳场所\"",
+          "quote": "苹果发布了新版 Foundation Models 框架，让开发者更灵活地调用 AI 能力。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-4c454bcda76945d8",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/961/694.htm"
+        }
+      ],
+      "sourceExcerpt": "Xcode 27 Beta 发布：苹果称其是构建 AI 智能体应用的“最佳场所” - IT之家",
+      "event": {
+        "id": "EV-a9fe726c4ea2a17b",
+        "title": "苹果发布 Xcode 27 Beta 与 Core AI 框架，称其为构建 AI 智能体\"最佳场所\"",
+        "originalTitle": "",
+        "date": "2026-06-09",
+        "dataDate": "2026-06-09",
+        "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-ea61135fcfa1e38f",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-af3ceabbe048a291",
+      "object_type": "entity",
+      "event_id": "EV-d40a1a873015ac98",
+      "claim_refs": [
+        "CL-83825fd97ece377c",
+        "CL-1e7bf0c798e22d55",
+        "CL-a2450fd5f23e04cd"
+      ],
+      "source_refs": [
+        "SA-bdae3fd54febab4f"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "Siri AI",
+      "predicateLabel": "发布",
+      "title": "Apple 发布 Siri AI",
+      "eventTitle": "苹果推出 Siri AI：独立 App，为灵动岛优化",
+      "eventDate": "2026-06-09",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-83825fd97ece377c",
+          "subject": "苹果",
+          "object": "Siri AI：独立 App，为灵动岛优化",
+          "quote": "苹果推出 Siri AI：独立 App，为灵动岛优化 - IT之家"
+        },
+        {
+          "id": "CL-1e7bf0c798e22d55",
+          "subject": "苹果",
+          "object": "Siri AI：独立 App，为灵动岛优化",
+          "quote": "苹果推出 Siri AI：独立 App，为灵动岛优化"
+        },
+        {
+          "id": "CL-a2450fd5f23e04cd",
+          "subject": "苹果",
+          "object": "Siri AI：独立 App，为灵动岛优化",
+          "quote": "IT之家 6 月 9 日消息，在今天召开的 2026 年全球开发者大会（WWDC）上， 苹果克雷格 · 费德里吉（Craig Federighi）介绍推出了 Siri AI。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-bdae3fd54febab4f",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/961/669.htm"
+        }
+      ],
+      "sourceExcerpt": "苹果推出 Siri AI：独立 App，为灵动岛优化 - IT之家",
+      "event": {
+        "id": "EV-d40a1a873015ac98",
+        "title": "苹果推出 Siri AI：独立 App，为灵动岛优化",
         "originalTitle": "",
         "date": "2026-06-09",
         "dataDate": "2026-06-09",

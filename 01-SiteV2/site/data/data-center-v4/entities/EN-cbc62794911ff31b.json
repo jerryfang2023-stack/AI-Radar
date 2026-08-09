@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-08T04:22:09.833Z",
-    "latestDataDate": "2026-08-08",
-    "currentDate": "2026-08-08",
-    "eventCount": 1937,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-08-09T01:18:04.367Z",
+    "latestDataDate": "2026-08-09",
+    "currentDate": "2026-08-09",
+    "eventCount": 1962,
+    "quarantinedEventCount": 17
   },
   "entity": {
     "id": "EN-cbc62794911ff31b",
@@ -27,6 +27,7 @@
       "EV-a00763037a94d512",
       "EV-02548003157849bb",
       "EV-8b0f056571d68269",
+      "EV-081fe42665b4a0b2",
       "EV-84697d26f813b122",
       "EV-4e5c6267b3237dac",
       "EV-22f0d8caaa65a6a2",
@@ -75,7 +76,7 @@
       "EN-7d1507284a5757ca"
     ],
     "firstSeen": "2023-11-28",
-    "lastSeen": "2026-08-08",
+    "lastSeen": "2026-08-09",
     "relationIds": [
       "REL2-4c6be3fd3d25d6c2"
     ],
@@ -89,6 +90,7 @@
         "EV-02548003157849bb"
       ],
       "deployments": [
+        "EV-081fe42665b4a0b2",
         "EV-b4f38d8bff12727b",
         "EV-84697d26f813b122",
         "EV-4e5c6267b3237dac"
@@ -130,6 +132,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-081fe42665b4a0b2",
+        "dataDate": "2026-08-09",
+        "date": "2026-08-06",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Rivian如何利用Amazon Bedrock上的AI智能体加速财务运营",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c7ad2ac22b4500bd",
+          "EN-cbc62794911ff31b"
+        ]
+      },
       {
         "id": "EV-7f3298069258b3ea",
         "dataDate": "2026-08-08",
@@ -1490,6 +1508,9 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-3dc8d5c373ddd1f3",
+        "EV-04fe726fa16722f3",
+        "EV-15c5107c993baae8",
         "EV-2791b442fd32b894",
         "EV-1b5b1d3317c8f688",
         "EV-10c4f4db6c3f2d72",
@@ -1665,8 +1686,10 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
-        "EN-047364b9be67f665",
+        "EN-74be4cbf48e647b2",
+        "EN-04468f769adbb15b",
         "EN-7d3194f79e645c42",
+        "EN-047364b9be67f665",
         "EN-2ee49ef51a776e2c",
         "EN-a89151ba4b5ac0f2",
         "EN-febedfcafee9d610",
@@ -1754,7 +1777,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "TX-product_form-chip_accelerator",
@@ -1791,8 +1814,8 @@
         "EV-70a994b9339f92e7",
         "EV-59882383f82f215d",
         "EV-450f624a6a6446ce",
-        "EV-522c339dded54be5",
         "EV-d2a623e8eef1f61d",
+        "EV-522c339dded54be5",
         "EV-a86b04e679044c45",
         "EV-c3b96b789b5bcafd",
         "EV-e09efcd49776cb95",
@@ -1809,6 +1832,7 @@
         "EV-93fad8e0e30e442c",
         "EV-3d8608d3e78e031b",
         "EV-8fcb52bb6ec980af",
+        "EV-3dc8d5c373ddd1f3",
         "EV-db304937ceac95d2",
         "EV-28bd99c785aa9760",
         "EV-9f06b3f05f18b81e",
@@ -1881,8 +1905,8 @@
         "EN-8da5eafb322ee86e",
         "EN-53453cfb48a75dde",
         "EN-883be863cc6562bb",
-        "EN-e1517be14d06cdb7",
         "EN-bd6769fe78d0971a",
+        "EN-e1517be14d06cdb7",
         "EN-7640da40298286a6",
         "EN-54dfb14dcddad637",
         "EN-3711098f35d71cb9",
@@ -1893,6 +1917,7 @@
         "EN-51a3a4589db68480",
         "EN-222f930b87524636",
         "EN-f4bec299df3f4f27",
+        "EN-74be4cbf48e647b2",
         "EN-920510199770f4d6",
         "EN-e470d891c0bda7d8",
         "EN-0281afdb2d56c1e6",
@@ -1954,7 +1979,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "TX-ai_market_category-infrastructure_compute",
@@ -2752,6 +2777,8 @@
         "EV-7585b033d4005977",
         "EV-cec68369662236fd",
         "EV-4eb0556b8c72d410",
+        "EV-0d1e8308d3c007aa",
+        "EV-be5bece353aeedcd",
         "EV-64178e5d858f5e25",
         "EV-67212040ee9cd7c8",
         "EV-7012e774379b9c11",
@@ -2849,6 +2876,7 @@
         "EN-15516525ca2aa1a4",
         "EN-8dc72a4672894e0f",
         "EN-098a40b4499d7512",
+        "EN-d25e715a1ce00764",
         "EN-99f9ebbef37fcec5",
         "EN-240389f4b730bad4",
         "EN-449777124b1466a8",
@@ -2879,13 +2907,15 @@
         "FDE-6e17403b5cdb72b0"
       ],
       "hardwareIds": [
+        "HW-4673613f81881c78",
+        "HW-2afca97edf1a7fe8",
         "HW-df8fb3396e493a21",
         "HW-3a780bcd6e5bab6a",
         "HW-c57ff6e49b40d839",
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-08-05"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "TX-ai_market_application-models",

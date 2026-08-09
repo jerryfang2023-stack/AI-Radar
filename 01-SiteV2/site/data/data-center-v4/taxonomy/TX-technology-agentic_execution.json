@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-08T04:22:09.833Z",
-    "latestDataDate": "2026-08-08",
-    "currentDate": "2026-08-08",
-    "eventCount": 1937,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-08-09T01:18:04.367Z",
+    "latestDataDate": "2026-08-09",
+    "currentDate": "2026-08-09",
+    "eventCount": 1962,
+    "quarantinedEventCount": 17
   },
   "node": {
     "id": "TX-technology-agentic_execution",
@@ -201,10 +201,14 @@
       "EV-8fcb52bb6ec980af",
       "EV-c0a65877001ed413",
       "EV-05a87b578967c83e",
+      "EV-3dc8d5c373ddd1f3",
+      "EV-778072e4940c5d43",
+      "EV-355ddfd4c6180ab0",
+      "EV-51891fe9f47dd616",
       "EV-997609968760857a",
       "EV-e6b22f59df71890e",
-      "EV-4c8fa40c36b6ddb7",
       "EV-c35c34271c7caf53",
+      "EV-4c8fa40c36b6ddb7",
       "EV-99005688ec16c082",
       "EV-6249564cff324a0e",
       "EV-b06624cf36990346",
@@ -597,9 +601,11 @@
       "EN-a08cc489f1c7c830",
       "EN-f4bec299df3f4f27",
       "EN-19e41212c0556603",
+      "EN-74be4cbf48e647b2",
+      "EN-c0fced8f2483e9f5",
+      "EN-738e22f0acab814c",
       "EN-dca6ec9510fc0176",
       "EN-5a28a1a99a417ba5",
-      "EN-738e22f0acab814c",
       "EN-842fcb5e60989a03",
       "EN-b81c8201acfc7639",
       "EN-d9b1d7819af92e77",
@@ -621,7 +627,6 @@
       "EN-cd6362472aea60ef",
       "EN-8d57f84bd1847b24",
       "EN-3149ad548669e717",
-      "EN-c0fced8f2483e9f5",
       "EN-f1649339197f76d6",
       "EN-a7baed72c308ce88",
       "EN-ba728f8ca730921f",
@@ -41019,6 +41024,794 @@
       "publisher": "sierra.ai"
     },
     {
+      "id": "EV-3dc8d5c373ddd1f3",
+      "dataDate": "2026-08-09",
+      "date": "2026-08-09",
+      "updatedDate": "2026-08-09",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Pokee AI 发布 Pokee-Isaac 28B：可在客户边界内运行的千万级 token 上下文智能体模型",
+      "originalTitle": "",
+      "subject": "Pokee AI",
+      "action": "发布",
+      "object": "Pokee-Isaac 28B：可在客户边界内运行的千万级 token 上下文智能体模型",
+      "metrics": [
+        "93.3%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-74be4cbf48e647b2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-74be4cbf48e647b2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-74be4cbf48e647b2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-74be4cbf48e647b2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "government_public_sector",
+            "name": "政府与公共部门",
+            "entityIds": [
+              "EN-74be4cbf48e647b2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-74be4cbf48e647b2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "cloud",
+            "name": "云端",
+            "entityIds": [
+              "EN-74be4cbf48e647b2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "cloud",
+          "name": "云端",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "government_public_sector",
+          "name": "政府与公共部门",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "cloud",
+          "name": "云端",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "government_public_sector",
+          "name": "政府与公共部门",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-74be4cbf48e647b2",
+        "EN-7d3194f79e645c42",
+        "EN-6c87e5496f592f3c",
+        "EN-95a8daac5782a6a4",
+        "EN-be044887578da854"
+      ],
+      "entityNames": [
+        "Pokee AI",
+        "OpenAI",
+        "SGLang",
+        "Pokee-Isaac",
+        "Pokee-Isaac 28"
+      ],
+      "productName": "Pokee-Isaac",
+      "products": [
+        {
+          "name": "Pokee-Isaac",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        },
+        {
+          "name": "Pokee-Isaac 28",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/08/08/pokee-ai-releases-pokee-isaac-28b-a-10m-token-context-agentic-model-built-to-run-inside-the-customer-boundary",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
+      "id": "EV-778072e4940c5d43",
+      "dataDate": "2026-08-09",
+      "date": "2026-08-09",
+      "updatedDate": "2026-08-09",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Okta宣布新创新，在运行时保护AI智能体并自动化持续智能体治理",
+      "originalTitle": "Okta announces new innovations to secure AI agents at runtime and automate ongoing agent governance",
+      "subject": "Okta",
+      "action": "product_release",
+      "object": "Agent Gateway",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-65819e198c32566a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-65819e198c32566a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-65819e198c32566a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-65819e198c32566a",
+        "EN-ea0a0d38a19ecbf4"
+      ],
+      "entityNames": [
+        "Okta",
+        "Agent Gateway"
+      ],
+      "productName": "Agent Gateway",
+      "products": [
+        {
+          "name": "Agent Gateway",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://okta.com/newsroom/articles/okta-july-2026-product-innovations",
+      "publisher": "okta.com"
+    },
+    {
+      "id": "EV-355ddfd4c6180ab0",
+      "dataDate": "2026-08-09",
+      "date": "2026-08-08",
+      "updatedDate": "2026-08-09",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "腾讯 WorkBuddy 成 AI 应用战略优先级最高产品之一，6 月 PC 端访问量破 2000 万",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "腾讯 WorkBuddy 成 AI 应用战略优先级最高产品之一，6 月 PC 端访问量破 2000 万",
+      "metrics": [
+        "2000 万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c0fced8f2483e9f5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c0fced8f2483e9f5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-c0fced8f2483e9f5"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c0fced8f2483e9f5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-c0fced8f2483e9f5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-c0fced8f2483e9f5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c0fced8f2483e9f5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9c8ae69b84f21a2e",
+        "EN-047364b9be67f665",
+        "EN-c0fced8f2483e9f5"
+      ],
+      "entityNames": [
+        "Tencent",
+        "Alibaba",
+        "WorkBuddy"
+      ],
+      "productName": "WorkBuddy",
+      "products": [
+        {
+          "name": "WorkBuddy",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Tencent"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/987/446.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-51891fe9f47dd616",
+      "dataDate": "2026-08-09",
+      "date": "2026-08-08",
+      "updatedDate": "2026-08-09",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Cloudflare 发布 Kitesurf：专为 AI 智能体打造的云端浏览器",
+      "originalTitle": "",
+      "subject": "Cloudflare",
+      "action": "发布",
+      "object": "Kitesurf：专为 AI 智能体打造的云端浏览器",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-738e22f0acab814c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-738e22f0acab814c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-738e22f0acab814c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-738e22f0acab814c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-738e22f0acab814c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-738e22f0acab814c",
+        "EN-0bbbffe05960c1bb"
+      ],
+      "entityNames": [
+        "Cloudflare",
+        "Kitesurf"
+      ],
+      "productName": "Kitesurf",
+      "products": [
+        {
+          "name": "Kitesurf",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/987/374.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-997609968760857a",
       "dataDate": "2026-08-08",
       "date": "2026-08-08",
@@ -41247,100 +42040,10 @@
       "publisher": "Sierra：Blog（RSS）"
     },
     {
-      "id": "EV-4c8fa40c36b6ddb7",
-      "dataDate": "2026-08-08",
-      "date": "2026-08-07",
-      "updatedDate": "2026-08-08",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "蚂蚁集团开源Avernet，让人与智能体像组织一样高效协作",
-      "originalTitle": "",
-      "subject": "蚂蚁集团",
-      "action": "product_release",
-      "object": "蚂蚁集团开源Avernet，让人与智能体像组织一样高效协作",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-5a28a1a99a417ba5"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-5a28a1a99a417ba5"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-5a28a1a99a417ba5"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-5a28a1a99a417ba5",
-        "EN-6782c62ce2e7b65a"
-      ],
-      "entityNames": [
-        "Ant Group",
-        "Avernet"
-      ],
-      "productName": "Avernet",
-      "products": [
-        {
-          "name": "Avernet",
-          "type": "产品/服务",
-          "ownerNames": [
-            "Ant Group"
-          ]
-        }
-      ],
-      "sourceUrl": "https://qbitai.com/2026/08/467871.html",
-      "publisher": "量子位"
-    },
-    {
       "id": "EV-c35c34271c7caf53",
-      "dataDate": "2026-08-08",
+      "dataDate": "2026-08-09",
       "date": "2026-08-07",
-      "updatedDate": "2026-08-08",
+      "updatedDate": "2026-08-09",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
@@ -41468,6 +42171,96 @@
       ],
       "sourceUrl": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents",
       "publisher": "TechCrunch AI"
+    },
+    {
+      "id": "EV-4c8fa40c36b6ddb7",
+      "dataDate": "2026-08-08",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-08",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "蚂蚁集团开源Avernet，让人与智能体像组织一样高效协作",
+      "originalTitle": "",
+      "subject": "蚂蚁集团",
+      "action": "product_release",
+      "object": "蚂蚁集团开源Avernet，让人与智能体像组织一样高效协作",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-5a28a1a99a417ba5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-5a28a1a99a417ba5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-5a28a1a99a417ba5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-5a28a1a99a417ba5",
+        "EN-6782c62ce2e7b65a"
+      ],
+      "entityNames": [
+        "Ant Group",
+        "Avernet"
+      ],
+      "productName": "Avernet",
+      "products": [
+        {
+          "name": "Avernet",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Ant Group"
+          ]
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/08/467871.html",
+      "publisher": "量子位"
     },
     {
       "id": "EV-99005688ec16c082",
@@ -73605,7 +74398,8 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-53253b5e23970958"
+        "EV-53253b5e23970958",
+        "EV-778072e4940c5d43"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -73613,7 +74407,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-30",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-f9075cc99990820a",
@@ -76146,8 +76940,10 @@
         "EV-e1a4bc40db4a9d8f",
         "EV-3d9aa640411471ea",
         "EV-2a833330267cb2df",
-        "EV-2791b442fd32b894",
+        "EV-0679a9b49b53ddbd",
+        "EV-355ddfd4c6180ab0",
         "EV-4a6a0e6b6f50946c",
+        "EV-2791b442fd32b894",
         "EV-d230942b0787581a",
         "EV-2fa6949af5b36fb0",
         "EV-4b286a3354cbf34a",
@@ -76215,7 +77011,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-08",
+      "lastSeen": "2026-08-09",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -76234,6 +77030,8 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-abf716c9f996dbcf",
+        "EV-842f920ef198c55e",
         "EV-81a37a2365624b42",
         "EV-c89018d79b3d25bd",
         "EV-97854226b6f43a95",
@@ -76266,6 +77064,7 @@
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
+        "EV-3c99948342b171fa",
         "EV-492029b381c06283",
         "EV-dda9429d76897a3d",
         "EV-2a101d792d92fb1f",
@@ -76310,6 +77109,9 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-3dc8d5c373ddd1f3",
+        "EV-47c32b3ef5c0f57a",
+        "EV-15c5107c993baae8",
         "EV-997609968760857a",
         "EV-b8cb3221efe607e2",
         "EV-bc3fe9c5c8fbc14c",
@@ -76319,7 +77121,6 @@
         "EV-b06624cf36990346",
         "EV-22e4f8278c40d63e",
         "EV-ad6fe30e111608bd",
-        "EV-47c32b3ef5c0f57a",
         "EV-54a4809c304587e6",
         "EV-98a77305667148e1",
         "EV-650e4b23d45d5758",
@@ -76577,7 +77378,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-df3b29befa02cd17",
@@ -76651,6 +77452,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-b3e7a0aac3ba7439",
         "EV-ec283dd6bd3ac991",
         "EV-1797eada6fb392a6",
         "EV-890ffd351486b884",
@@ -76753,7 +77555,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-08-07"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-48b85dc3fd54f74d",
@@ -76800,6 +77602,7 @@
         "EV-619e33abf3f9bfbf",
         "EV-be2f6bfcad93c42f",
         "EV-c7b81290859057b0",
+        "EV-355ddfd4c6180ab0",
         "EV-d14947956b43c97a",
         "EV-cffa617426a5e139",
         "EV-f13c302dc067850b",
@@ -76839,7 +77642,7 @@
         "EN-30a63b26b06e096e"
       ],
       "firstSeen": "2026-05-18",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-d3565d297d476f10",
@@ -77045,6 +77848,7 @@
         "EV-29f130674dbbb59e",
         "EV-c98d4ee7764d51b2",
         "EV-657837763764c869",
+        "EV-9465c27567216dfa",
         "EV-0eef30387327e73f",
         "EV-89bdda008227fb6b",
         "EV-ef823877347ff40f",
@@ -77086,7 +77890,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-06"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-866e1f18c9370d5d",
@@ -77493,6 +78297,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-be5bece353aeedcd",
         "EV-5bbc509a032b8309",
         "EV-a852dc0ca6011ff6",
         "EV-a86b04e679044c45",
@@ -77678,7 +78483,7 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-28d0bd981118a907",
@@ -78052,7 +78857,9 @@
         "TX-technology-multimodal",
         "TX-technology-long_context"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-07-29"
     },
@@ -78159,6 +78966,87 @@
       "lastSeen": "2026-07-18"
     },
     {
+      "id": "EN-74be4cbf48e647b2",
+      "name": "Pokee AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3dc8d5c373ddd1f3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-agentic_execution",
+        "TX-product_form-chip_accelerator",
+        "TX-industry-government_public_sector",
+        "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
+        "TX-technology-long_context",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
+        "TX-deployment_model-cloud",
+        "TX-technology-open_weights"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-09",
+      "lastSeen": "2026-08-09"
+    },
+    {
+      "id": "EN-c0fced8f2483e9f5",
+      "name": "WorkBuddy",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-355ddfd4c6180ab0",
+        "EV-c710c75d9c823a49"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-end_user_application"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-25",
+      "lastSeen": "2026-08-09"
+    },
+    {
+      "id": "EN-738e22f0acab814c",
+      "name": "Cloudflare",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-51891fe9f47dd616",
+        "EV-c35c34271c7caf53",
+        "EV-99005688ec16c082",
+        "EV-54ecd52c69b97834",
+        "EV-43e2290d712da3c6",
+        "EV-7c25dc34916b624a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-target_user-consumer"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-01",
+      "lastSeen": "2026-08-09"
+    },
+    {
       "id": "EN-dca6ec9510fc0176",
       "name": "Sierra",
       "entityType": "organization_candidate",
@@ -78210,32 +79098,6 @@
         "EN-8989aada6eb4a4c3"
       ],
       "firstSeen": "2026-08-07",
-      "lastSeen": "2026-08-08"
-    },
-    {
-      "id": "EN-738e22f0acab814c",
-      "name": "Cloudflare",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-c35c34271c7caf53",
-        "EV-99005688ec16c082",
-        "EV-54ecd52c69b97834",
-        "EV-43e2290d712da3c6",
-        "EV-7c25dc34916b624a"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-target_user-consumer"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-01",
       "lastSeen": "2026-08-08"
     },
     {
@@ -78902,27 +79764,6 @@
       "lastSeen": "2026-07-27"
     },
     {
-      "id": "EN-c0fced8f2483e9f5",
-      "name": "WorkBuddy",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-c710c75d9c823a49"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-25",
-      "lastSeen": "2026-07-26"
-    },
-    {
       "id": "EN-a7baed72c308ce88",
       "name": "腾讯云",
       "entityType": "organization_candidate",
@@ -79538,6 +80379,8 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-41e229cb248b8418",
+        "EV-b27a05d7ff937744",
         "EV-6fc9c1eab4501ce9",
         "EV-b06624cf36990346",
         "EV-ee1e825af98ecab7",
@@ -79589,7 +80432,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-820a72d1d4b51ae7",
@@ -81056,7 +81899,9 @@
       "name": "Apple",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "苹果"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -81072,6 +81917,8 @@
         "EV-d116b0aa5bb292e2",
         "EV-e857f9d1c1478c70",
         "EV-fd21441fb6e143c3",
+        "EV-0679a9b49b53ddbd",
+        "EV-c78cebbb12d7f925",
         "EV-98a77305667148e1",
         "EV-db7cb473fe7e9e3c",
         "EV-118317b7f92e5e16",
@@ -81148,11 +81995,16 @@
         "TX-deployment_model-edge_device"
       ],
       "relatedEntityIds": [
+        "EN-e463d05a14e8697f",
+        "EN-7df09a7717ef2feb",
         "EN-0502bb9ed34980aa",
-        "EN-af3ceabbe048a291"
+        "EN-dd920a8cd166f486",
+        "EN-1924fff8eb4d54ae",
+        "EN-af3ceabbe048a291",
+        "EN-45b5216872656eb3"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-08-07"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-0502bb9ed34980aa",
@@ -85099,6 +85951,170 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-fc6be3540530f815",
+      "snapshotKey": "fc6be3540530f815",
+      "snapshotId": "HWS-c8055d023672f07c",
+      "eventId": "EV-3dc8d5c373ddd1f3",
+      "eventIds": [
+        "EV-3dc8d5c373ddd1f3"
+      ],
+      "dataDate": "2026-08-09",
+      "date": "2026-08-09",
+      "title": "Pokee-Isaac / Pokee-Isaac 28",
+      "subject": "Pokee AI",
+      "productNames": [
+        "Pokee-Isaac",
+        "Pokee-Isaac 28"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "product",
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "93.3",
+          "unit": "%",
+          "fact_ref": "HWF-39c8d77e27920084"
+        },
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-eec5021ce339ad79"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-09",
+          "hardware_fact_id": "HWF-eec5021ce339ad79",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-08T17:04:39.000Z",
+          "subject_entity_id": "EN-74be4cbf48e647b2",
+          "subject_name": "Pokee AI",
+          "product_entity_ids": [
+            "EN-95a8daac5782a6a4",
+            "EN-be044887578da854"
+          ],
+          "product_names": [
+            "Pokee-Isaac",
+            "Pokee-Isaac 28"
+          ],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Yes — but licensed, not open-weight. Pokee AI serves Isaac through an OpenAI-compatible developer API , and licenses it for deployment inside a VPC, on-premises, or on-device. The launch announcement advertises Day-0 support for vLLM and SGLang, and single-GPU serving starting from an RTX 4090 or equivalent. The research team publishes measurements only from a single B200-class GPU, so treat the consumer-GPU claim as vendor guidance rather than a reported result.",
+          "event_refs": [
+            "EV-3dc8d5c373ddd1f3"
+          ],
+          "claim_ref": "CL-4ef5f2f4b84d8f56",
+          "source_refs": [
+            "SA-a8efccef514ec8e5"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-09",
+          "hardware_fact_id": "HWF-39c8d77e27920084",
+          "fact_type": "product",
+          "observed_at": "2026-08-08T17:04:39.000Z",
+          "subject_entity_id": "EN-74be4cbf48e647b2",
+          "subject_name": "Pokee AI",
+          "product_entity_ids": [
+            "EN-95a8daac5782a6a4",
+            "EN-be044887578da854"
+          ],
+          "product_names": [
+            "Pokee-Isaac",
+            "Pokee-Isaac 28"
+          ],
+          "component_type": "gpu",
+          "metric_value": "93.3",
+          "unit": "%",
+          "source_quote": "Long-horizon agents accumulate context faster than they resolve tasks. Every tool output, observation, and intermediate reasoning step stays in the window, and the two capabilities that matter — holding that context and staying coherent across it — have so far been available almost exclusively from cloud endpoints. That excludes regulated industries, public-sector institutions, and on-device applications, where the data is not permitted to leave the boundary at all. Pokee AI released Pokee-Isaac 28B , a 28B text-only foundation model with a 10M-token context window, designed to run inside that boundary. The Pokee research team claims 93.3% on RULER at 10M tokens, parity with the strongest cost-optimized cloud baselines on agentic benchmarks, and a serving profile that fits a single GPU.",
+          "event_refs": [
+            "EV-3dc8d5c373ddd1f3"
+          ],
+          "claim_ref": "CL-247c4c2944757dfb",
+          "source_refs": [
+            "SA-a8efccef514ec8e5"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/08/08/pokee-ai-releases-pokee-isaac-28b-a-10m-token-context-agentic-model-built-to-run-inside-the-customer-boundary",
+      "entityIds": [
+        "EN-74be4cbf48e647b2",
+        "EN-7d3194f79e645c42",
+        "EN-6c87e5496f592f3c",
+        "EN-95a8daac5782a6a4",
+        "EN-be044887578da854"
+      ]
+    },
     {
       "id": "HWC-61a0c6448cae5866",
       "snapshotKey": "61a0c6448cae5866",

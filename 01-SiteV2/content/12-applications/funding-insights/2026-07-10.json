@@ -76,7 +76,9 @@
             "source_content_hash": "ae72e81deb4532de",
             "quote_hash": "cdb76a4b510930ecd73641cdf6f412ca1281e0b95c79a7d1ce73721872f455d8"
           }
-        ]
+        ],
+        "application_entity_id": "EN-70e7e370d5a50ea1",
+        "canonical_entity_consistent": false
       },
       "financing": {
         "round": "D轮",
@@ -573,7 +575,9 @@
             "source_content_hash": "1d75cf39c1185f55",
             "quote_hash": "8abc9c52834b9c16fda66ce348cc05a10a72307e402e9f0219381719efffe709"
           }
-        ]
+        ],
+        "application_entity_id": "EN-3c1ae4e6276005e7",
+        "canonical_entity_consistent": true
       },
       "financing": {
         "round": "B轮",
@@ -1035,7 +1039,7 @@
       "as_of_date": "2026-07-10",
       "company": {
         "entity_id": "EN-8d4321d936320802",
-        "name": "NVIDIA",
+        "name": "Gradium",
         "full_name": "Gradium",
         "website": "",
         "summary": "Gradium是一家总部位于巴黎的AI语音初创公司，从法国AI实验室Kyutai分拆而来，致力于构建超低延迟的音频模型，使AI语音能够几乎即时响应，消除AI智能体对话中常见的停顿。",
@@ -1073,7 +1077,9 @@
             "source_content_hash": "13af7fc256332301",
             "quote_hash": "2775768632a9bc4471a9b38455d8d4fad6ec6dd889afc11c5f3169a7b41a80c7"
           }
-        ]
+        ],
+        "application_entity_id": "FICO-8a40ab5ef0a6e760",
+        "canonical_entity_consistent": false
       },
       "financing": {
         "round": "种子轮",
@@ -1093,71 +1099,6 @@
               }
             ],
             "entity_id": "EN-8d4321d936320802"
-          },
-          {
-            "name": "FirstMark Capital",
-            "role": "种子轮参投（2025年12月首次披露）",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-9af7e6a4d7b3d5e7",
-                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
-                "source_content_hash": "84b42b7082dca9a3",
-                "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Eurazeo",
-            "role": "种子轮参投（2025年12月首次披露）",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-9af7e6a4d7b3d5e7",
-                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
-                "source_content_hash": "84b42b7082dca9a3",
-                "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "DST Global Partners",
-            "role": "种子轮参投（2025年12月首次披露）",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-9af7e6a4d7b3d5e7",
-                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
-                "source_content_hash": "84b42b7082dca9a3",
-                "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Eric Schmidt",
-            "role": "种子轮参投（2025年12月首次披露）",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-9af7e6a4d7b3d5e7",
-                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
-                "source_content_hash": "84b42b7082dca9a3",
-                "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Xavier Niel",
-            "role": "种子轮参投（2025年12月首次披露）",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-9af7e6a4d7b3d5e7",
-                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
-                "source_content_hash": "84b42b7082dca9a3",
-                "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
-              }
-            ],
-            "entity_id": null
           }
         ],
         "evidence_refs": [
@@ -1170,7 +1111,103 @@
         ],
         "round_code": "seed",
         "round_original": "种子轮",
-        "other_round_investors": [],
+        "other_round_investors": [
+          {
+            "name": "FirstMark Capital",
+            "role": "种子轮参投（2025年12月首次披露）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9af7e6a4d7b3d5e7",
+                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
+                "source_content_hash": "84b42b7082dca9a3",
+                "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "seed",
+              "label": "种子轮",
+              "original": "种子轮参投（2025年12月首次披露）"
+            },
+            "classification_reason": "historical_disclosure_date"
+          },
+          {
+            "name": "Eurazeo",
+            "role": "种子轮参投（2025年12月首次披露）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9af7e6a4d7b3d5e7",
+                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
+                "source_content_hash": "84b42b7082dca9a3",
+                "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "seed",
+              "label": "种子轮",
+              "original": "种子轮参投（2025年12月首次披露）"
+            },
+            "classification_reason": "historical_disclosure_date"
+          },
+          {
+            "name": "DST Global Partners",
+            "role": "种子轮参投（2025年12月首次披露）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9af7e6a4d7b3d5e7",
+                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
+                "source_content_hash": "84b42b7082dca9a3",
+                "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "seed",
+              "label": "种子轮",
+              "original": "种子轮参投（2025年12月首次披露）"
+            },
+            "classification_reason": "historical_disclosure_date"
+          },
+          {
+            "name": "Eric Schmidt",
+            "role": "种子轮参投（2025年12月首次披露）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9af7e6a4d7b3d5e7",
+                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
+                "source_content_hash": "84b42b7082dca9a3",
+                "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "seed",
+              "label": "种子轮",
+              "original": "种子轮参投（2025年12月首次披露）"
+            },
+            "classification_reason": "historical_disclosure_date"
+          },
+          {
+            "name": "Xavier Niel",
+            "role": "种子轮参投（2025年12月首次披露）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9af7e6a4d7b3d5e7",
+                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
+                "source_content_hash": "84b42b7082dca9a3",
+                "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "seed",
+              "label": "种子轮",
+              "original": "种子轮参投（2025年12月首次披露）"
+            },
+            "classification_reason": "historical_disclosure_date"
+          }
+        ],
         "disclosures": [
           {
             "event_id": "EV-e41fc65eb014893f",
@@ -1398,35 +1435,35 @@
           "canonical_name": "NVIDIA"
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "FirstMark Capital",
           "canonical_entity_id": null,
           "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Eurazeo",
           "canonical_entity_id": null,
           "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "DST Global Partners",
           "canonical_entity_id": null,
           "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Eric Schmidt",
           "canonical_entity_id": null,
           "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Xavier Niel",
           "canonical_entity_id": null,

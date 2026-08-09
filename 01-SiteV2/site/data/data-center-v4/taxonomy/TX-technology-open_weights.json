@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-08T04:22:09.833Z",
-    "latestDataDate": "2026-08-08",
-    "currentDate": "2026-08-08",
-    "eventCount": 1937,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-08-09T01:18:04.367Z",
+    "latestDataDate": "2026-08-09",
+    "currentDate": "2026-08-09",
+    "eventCount": 1962,
+    "quarantinedEventCount": 17
   },
   "node": {
     "id": "TX-technology-open_weights",
@@ -21,6 +21,7 @@
       "EV-1abf0d076d30ec6d",
       "EV-d2a623e8eef1f61d",
       "EV-f55d16df5b5fecb2",
+      "EV-3dc8d5c373ddd1f3",
       "EV-d230942b0787581a",
       "EV-db304937ceac95d2",
       "EV-cfba8b877da20eaf",
@@ -43,6 +44,7 @@
     ],
     "entityIds": [
       "EN-bd6769fe78d0971a",
+      "EN-74be4cbf48e647b2",
       "EN-47dd52018c2b6985",
       "EN-920510199770f4d6",
       "EN-422332977c41eb77",
@@ -67,7 +69,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2026-05-23",
-    "lastSeen": "2026-08-08"
+    "lastSeen": "2026-08-09"
   },
   "events": [
     {
@@ -469,22 +471,23 @@
     },
     {
       "id": "EV-d2a623e8eef1f61d",
-      "dataDate": "2026-08-04",
+      "dataDate": "2026-08-09",
       "date": "2026-08-03",
-      "updatedDate": "2026-08-04",
+      "updatedDate": "2026-08-09",
       "eventType": "procurement_contract",
       "eventTypeLabel": "采购合同",
       "eventGroup": "商业合作",
       "status": "planned",
       "statusLabel": "计划中",
       "publicationStatus": "partial",
-      "title": "KIDZ AI与Limestone Networks签署数据中心谅解备忘录，部署开源权重AI模型的推理计算基础设施，推进其4460万美元的Canopy Wave协议",
-      "originalTitle": "KIDZ AI Signs Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement | News…",
+      "title": "KIDZ AI与Limestone Networks签署数据中心谅解备忘录，部署开放权重AI模型的推理计算基础设施，推进其4460万美元的Canopy Wave协议",
+      "originalTitle": "KIDZ AI Signs Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement",
       "subject": "KIDZ AI",
       "action": "Signs",
-      "object": "Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement | Newswire",
+      "object": "Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement",
       "metrics": [
-        "$44.6 Million"
+        "$44.6 Million",
+        "$44.6 million"
       ],
       "locations": [],
       "missingFields": [],
@@ -624,8 +627,8 @@
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://newswire.com/news/kidz-ai-signs-data-center-mou-with-limestone-networks-to-deploy-inference",
-      "publisher": "newswire.com"
+      "sourceUrl": "https://globenewswire.com/news-release/2026/08/03/3337476/0/en/KIDZ-AI-Signs-Data-Center-MOU-with-Limestone-Networks-to-Deploy-Inference-Compute-Infrastructure-for-Open-Weight-AI-Models-Advancing-Its-44-6-Million-Canopy-Wave-Agreement.html",
+      "publisher": "globenewswire.com"
     },
     {
       "id": "EV-f55d16df5b5fecb2",
@@ -730,6 +733,455 @@
       "products": [],
       "sourceUrl": "https://theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity",
       "publisher": "The Verge AI"
+    },
+    {
+      "id": "EV-3dc8d5c373ddd1f3",
+      "dataDate": "2026-08-09",
+      "date": "2026-08-09",
+      "updatedDate": "2026-08-09",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Pokee AI 发布 Pokee-Isaac 28B：可在客户边界内运行的千万级 token 上下文智能体模型",
+      "originalTitle": "",
+      "subject": "Pokee AI",
+      "action": "发布",
+      "object": "Pokee-Isaac 28B：可在客户边界内运行的千万级 token 上下文智能体模型",
+      "metrics": [
+        "93.3%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-74be4cbf48e647b2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-74be4cbf48e647b2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-74be4cbf48e647b2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-74be4cbf48e647b2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "government_public_sector",
+            "name": "政府与公共部门",
+            "entityIds": [
+              "EN-74be4cbf48e647b2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-74be4cbf48e647b2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "cloud",
+            "name": "云端",
+            "entityIds": [
+              "EN-74be4cbf48e647b2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "cloud",
+          "name": "云端",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "government_public_sector",
+          "name": "政府与公共部门",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "cloud",
+          "name": "云端",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "government_public_sector",
+          "name": "政府与公共部门",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-74be4cbf48e647b2",
+        "EN-7d3194f79e645c42",
+        "EN-6c87e5496f592f3c",
+        "EN-95a8daac5782a6a4",
+        "EN-be044887578da854"
+      ],
+      "entityNames": [
+        "Pokee AI",
+        "OpenAI",
+        "SGLang",
+        "Pokee-Isaac",
+        "Pokee-Isaac 28"
+      ],
+      "productName": "Pokee-Isaac",
+      "products": [
+        {
+          "name": "Pokee-Isaac",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        },
+        {
+          "name": "Pokee-Isaac 28",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/08/08/pokee-ai-releases-pokee-isaac-28b-a-10m-token-context-agentic-model-built-to-run-inside-the-customer-boundary",
+      "publisher": "MarkTechPost（RSS）"
     },
     {
       "id": "EV-d230942b0787581a",
@@ -3397,7 +3849,38 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-04"
+      "lastSeen": "2026-08-09"
+    },
+    {
+      "id": "EN-74be4cbf48e647b2",
+      "name": "Pokee AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3dc8d5c373ddd1f3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-agentic_execution",
+        "TX-product_form-chip_accelerator",
+        "TX-industry-government_public_sector",
+        "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
+        "TX-technology-long_context",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
+        "TX-deployment_model-cloud",
+        "TX-technology-open_weights"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-09",
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-47dd52018c2b6985",
@@ -3959,6 +4442,7 @@
         "EV-29f130674dbbb59e",
         "EV-c98d4ee7764d51b2",
         "EV-657837763764c869",
+        "EV-9465c27567216dfa",
         "EV-0eef30387327e73f",
         "EV-89bdda008227fb6b",
         "EV-ef823877347ff40f",
@@ -4000,7 +4484,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-06"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-bc1fc5140040180e",
@@ -4087,8 +4571,10 @@
         "EV-e1a4bc40db4a9d8f",
         "EV-3d9aa640411471ea",
         "EV-2a833330267cb2df",
-        "EV-2791b442fd32b894",
+        "EV-0679a9b49b53ddbd",
+        "EV-355ddfd4c6180ab0",
         "EV-4a6a0e6b6f50946c",
+        "EV-2791b442fd32b894",
         "EV-d230942b0787581a",
         "EV-2fa6949af5b36fb0",
         "EV-4b286a3354cbf34a",
@@ -4156,7 +4642,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-08",
+      "lastSeen": "2026-08-09",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -4220,6 +4706,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-be5bece353aeedcd",
         "EV-5bbc509a032b8309",
         "EV-a852dc0ca6011ff6",
         "EV-a86b04e679044c45",
@@ -4405,7 +4892,7 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-b3e3bce83d29e787",
@@ -4460,34 +4947,35 @@
     {
       "id": "FDE-0193a6afd26db7ae",
       "eventId": "EV-d2a623e8eef1f61d",
-      "dataDate": "2026-08-04",
+      "dataDate": "2026-08-09",
       "date": "2026-08-03",
-      "title": "KIDZ AI与Limestone Networks签署数据中心谅解备忘录，部署开源权重AI模型的推理计算基础设施，推进其4460万美元的Canopy Wave协议",
+      "title": "KIDZ AI与Limestone Networks签署数据中心谅解备忘录，部署开放权重AI模型的推理计算基础设施，推进其4460万美元的Canopy Wave协议",
       "stage": "planned",
       "stageLabel": "计划中",
       "customer": "KIDZ AI",
       "vendor": "Limestone Networks, Inc.",
-      "industry": "未披露",
-      "useCase": "Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement | Newswire",
+      "industry": "Education Technology",
+      "useCase": "Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement",
       "reportedNeed": "未披露",
       "deliveryComponents": [
-        "KIDZ AI Inc. (NASDAQ:KIDZ)(NASDAQ:KIDZW) (\"KIDZ AI\" or the \"Company\"), an education technology company advancing AI infrastructure and GPU compute initiatives alongside its core EdTech operations, today announced that it has signed a Memorandum of Understanding (\"MOU\") with Limestone Networks, Inc. (\"Limestone\"), a Texas-based cloud and data center infrastructure provider, for the proposed deployment of the Company's AI computing infrastructure at the DFW3 data center in Dallas, Texas."
+        "KIDZ AI Inc. (NASDAQ: KIDZ) (NASDAQ: KIDZW) (“KIDZ AI” or the “Company”), an education technology company advancing AI infrastructure and GPU compute initiatives alongside its core EdTech operations, today announced that it has signed a Memorandum of Understanding (“MOU”) with Limestone Networks, Inc. (“Limestone”), a Texas-based cloud and data center infrastructure provider, for the proposed deployment of the Company’s AI computing infrastructure at the DFW3 data center in Dallas, Texas."
       ],
-      "outcomes": [],
+      "outcomes": [
+        "MOU signed for proposed colocation of inference-focused AI computing infrastructure"
+      ],
       "metrics": [
         "$44.6 Million",
-        "$44.6 Million"
+        "$44.6 million"
       ],
       "undisclosedFields": [
-        "industry",
         "workflow_before",
         "workflow_after",
+        "delivery_model",
         "team_composition",
         "reported_need",
         "systems_integrated",
         "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
+        "governance_controls"
       ],
       "tags": [
         {
@@ -4513,7 +5001,7 @@
           "assertionId": ""
         }
       ],
-      "sourceUrl": "https://newswire.com/news/kidz-ai-signs-data-center-mou-with-limestone-networks-to-deploy-inference",
+      "sourceUrl": "https://globenewswire.com/news-release/2026/08/03/3337476/0/en/KIDZ-AI-Signs-Data-Center-MOU-with-Limestone-Networks-to-Deploy-Inference-Compute-Infrastructure-for-Open-Weight-AI-Models-Advancing-Its-44-6-Million-Canopy-Wave-Agreement.html",
       "entityIds": [
         "EN-bd6769fe78d0971a"
       ]
@@ -4589,17 +5077,89 @@
     }
   ],
   "hardware": [],
-  "hardwareCatalog": [
+  "fdeDossiers": [
     {
-      "id": "HWC-5caba5f1e7fc7379",
-      "snapshotKey": "5caba5f1e7fc7379",
-      "snapshotId": "HWS-b83b16e48dc37c3c",
+      "id": "FDED-0d066a83ddb06fbc",
+      "implementationKey": "0d066a83ddb06fbc",
       "eventId": "EV-d2a623e8eef1f61d",
       "eventIds": [
         "EV-d2a623e8eef1f61d"
       ],
-      "dataDate": "2026-08-04",
-      "date": "2026-08-04",
+      "dataDate": "2026-08-09",
+      "date": "2026-08-03",
+      "title": "KIDZ AI × Limestone Networks, Inc.：Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $…",
+      "stage": "planned",
+      "stageLabel": "计划中",
+      "customer": "KIDZ AI",
+      "vendor": "Limestone Networks, Inc.",
+      "industry": "Education Technology",
+      "useCase": "Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [
+        "MOU signed for proposed colocation of inference-focused AI computing infrastructure"
+      ],
+      "observationCount": 1,
+      "completeness": 0.75,
+      "completenessPercent": 75,
+      "missingFields": [
+        "workflow",
+        "systems_integrated"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-0e00cc35725969b5",
+          "type": "implementation_update",
+          "stage": "planned",
+          "date": "2026-08-03",
+          "dataDate": "2026-08-09",
+          "eventId": "EV-d2a623e8eef1f61d",
+          "eventTitle": "KIDZ AI与Limestone Networks签署数据中心谅解备忘录，部署开放权重AI模型的推理计算基础设施，推进其4460万美元的Canopy Wave协议",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/08/03/3337476/0/en/KIDZ-AI-Signs-Data-Center-MOU-with-Limestone-Networks-to-Deploy-Inference-Compute-Infrastructure-for-Open-Weight-AI-Models-Advancing-Its-44-6-Million-Canopy-Wave-Agreement.html",
+      "entityIds": [
+        "EN-bd6769fe78d0971a"
+      ]
+    }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-5caba5f1e7fc7379",
+      "snapshotKey": "5caba5f1e7fc7379",
+      "snapshotId": "HWS-61fc84e9426ee84e",
+      "eventId": "EV-d2a623e8eef1f61d",
+      "eventIds": [
+        "EV-d2a623e8eef1f61d"
+      ],
+      "dataDate": "2026-08-09",
+      "date": "2026-08-09",
       "title": "KIDZ AI",
       "subject": "KIDZ AI",
       "productNames": [],
@@ -4611,39 +5171,27 @@
         "shipment_deployment": {
           "metric_value": "44.6",
           "unit": "$Million",
-          "fact_ref": "HWF-7ada1af0d1a1fdef"
+          "fact_ref": "HWF-fa70a3d8538315ad"
         }
       },
-      "factCount": 2,
-      "snapshotCount": 1,
-      "changes": [],
+      "factCount": 1,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-09",
+          "previousDate": "2026-08-04",
+          "snapshotId": "HWS-61fc84e9426ee84e",
+          "previousSnapshotId": "HWS-b83b16e48dc37c3c",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [
         {
-          "data_date": "2026-08-04",
-          "hardware_fact_id": "HWF-4c292915f1f61772",
-          "fact_type": "shipment_deployment",
-          "observed_at": "2026-08-03T00:00:00.000Z",
-          "subject_entity_id": "EN-bd6769fe78d0971a",
-          "subject_name": "KIDZ AI",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "data_center",
-          "metric_value": "44.6",
-          "unit": "$Million",
-          "source_quote": "KIDZ AI Signs Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement |",
-          "event_refs": [
-            "EV-d2a623e8eef1f61d"
-          ],
-          "claim_ref": "CL-58e01c2b44f46df7",
-          "source_refs": [
-            "SA-13038230089f90fc"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-08-04",
-          "hardware_fact_id": "HWF-7ada1af0d1a1fdef",
+          "data_date": "2026-08-09",
+          "hardware_fact_id": "HWF-fa70a3d8538315ad",
           "fact_type": "shipment_deployment",
           "observed_at": "2026-08-03T00:00:00.000Z",
           "subject_entity_id": "EN-bd6769fe78d0971a",
@@ -4657,11 +5205,11 @@
           "event_refs": [
             "EV-d2a623e8eef1f61d"
           ],
-          "claim_ref": "CL-709873b335bdf36f",
+          "claim_ref": "CL-89a465345b071c29",
           "source_refs": [
-            "SA-13038230089f90fc"
+            "SA-05b95b5e141d80da"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
         }
       ],
       "specificationFacts": [],
@@ -4690,7 +5238,7 @@
           "assertionId": ""
         }
       ],
-      "sourceUrl": "https://newswire.com/news/kidz-ai-signs-data-center-mou-with-limestone-networks-to-deploy-inference",
+      "sourceUrl": "https://globenewswire.com/news-release/2026/08/03/3337476/0/en/KIDZ-AI-Signs-Data-Center-MOU-with-Limestone-Networks-to-Deploy-Inference-Compute-Infrastructure-for-Open-Weight-AI-Models-Advancing-Its-44-6-Million-Canopy-Wave-Agreement.html",
       "entityIds": [
         "EN-bd6769fe78d0971a"
       ]
@@ -4698,13 +5246,13 @@
     {
       "id": "HWC-cd6282f5eb700715",
       "snapshotKey": "cd6282f5eb700715",
-      "snapshotId": "HWS-6148d799a216305e",
+      "snapshotId": "HWS-28e5266ded7df745",
       "eventId": "EV-d2a623e8eef1f61d",
       "eventIds": [
         "EV-d2a623e8eef1f61d"
       ],
-      "dataDate": "2026-08-04",
-      "date": "2026-08-04",
+      "dataDate": "2026-08-09",
+      "date": "2026-08-09",
       "title": "KIDZ AI",
       "subject": "KIDZ AI",
       "productNames": [],
@@ -4716,17 +5264,27 @@
         "shipment_deployment": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-6fe78e864f76cb5a"
+          "fact_ref": "HWF-d4afc9a664ede24b"
         }
       },
       "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-09",
+          "previousDate": "2026-08-04",
+          "snapshotId": "HWS-28e5266ded7df745",
+          "previousSnapshotId": "HWS-6148d799a216305e",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [
         {
-          "data_date": "2026-08-04",
-          "hardware_fact_id": "HWF-6fe78e864f76cb5a",
+          "data_date": "2026-08-09",
+          "hardware_fact_id": "HWF-d4afc9a664ede24b",
           "fact_type": "shipment_deployment",
           "observed_at": "2026-08-03T00:00:00.000Z",
           "subject_entity_id": "EN-bd6769fe78d0971a",
@@ -4736,15 +5294,15 @@
           "component_type": "gpu",
           "metric_value": "",
           "unit": "",
-          "source_quote": "KIDZ AI Inc. (NASDAQ:KIDZ)(NASDAQ:KIDZW) (\"KIDZ AI\" or the \"Company\"), an education technology company advancing AI infrastructure and GPU compute initiatives alongside its core EdTech operations, today announced that it has signed a Memorandum of Understanding (\"MOU\") with Limestone Networks, Inc. (\"Limestone\"), a Texas-based cloud and data center infrastructure provider, for the proposed deployment of the Company's AI computing infrastructure at the DFW3 data center in Dallas, Texas.",
+          "source_quote": "KIDZ AI Inc. (NASDAQ: KIDZ) (NASDAQ: KIDZW) (“KIDZ AI” or the “Company”), an education technology company advancing AI infrastructure and GPU compute initiatives alongside its core EdTech operations, today announced that it has signed a Memorandum of Understanding (“MOU”) with Limestone Networks, Inc. (“Limestone”), a Texas-based cloud and data center infrastructure provider, for the proposed deployment of the Company’s AI computing infrastructure at the DFW3 data center in Dallas, Texas.",
           "event_refs": [
             "EV-d2a623e8eef1f61d"
           ],
-          "claim_ref": "CL-e5419c691ace5a16",
+          "claim_ref": "CL-0e9c6e153b62b5ba",
           "source_refs": [
-            "SA-13038230089f90fc"
+            "SA-05b95b5e141d80da"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
         }
       ],
       "specificationFacts": [],
@@ -4773,9 +5331,173 @@
           "assertionId": ""
         }
       ],
-      "sourceUrl": "https://newswire.com/news/kidz-ai-signs-data-center-mou-with-limestone-networks-to-deploy-inference",
+      "sourceUrl": "https://globenewswire.com/news-release/2026/08/03/3337476/0/en/KIDZ-AI-Signs-Data-Center-MOU-with-Limestone-Networks-to-Deploy-Inference-Compute-Infrastructure-for-Open-Weight-AI-Models-Advancing-Its-44-6-Million-Canopy-Wave-Agreement.html",
       "entityIds": [
         "EN-bd6769fe78d0971a"
+      ]
+    },
+    {
+      "id": "HWC-fc6be3540530f815",
+      "snapshotKey": "fc6be3540530f815",
+      "snapshotId": "HWS-c8055d023672f07c",
+      "eventId": "EV-3dc8d5c373ddd1f3",
+      "eventIds": [
+        "EV-3dc8d5c373ddd1f3"
+      ],
+      "dataDate": "2026-08-09",
+      "date": "2026-08-09",
+      "title": "Pokee-Isaac / Pokee-Isaac 28",
+      "subject": "Pokee AI",
+      "productNames": [
+        "Pokee-Isaac",
+        "Pokee-Isaac 28"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "product",
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "93.3",
+          "unit": "%",
+          "fact_ref": "HWF-39c8d77e27920084"
+        },
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-eec5021ce339ad79"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-09",
+          "hardware_fact_id": "HWF-eec5021ce339ad79",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-08T17:04:39.000Z",
+          "subject_entity_id": "EN-74be4cbf48e647b2",
+          "subject_name": "Pokee AI",
+          "product_entity_ids": [
+            "EN-95a8daac5782a6a4",
+            "EN-be044887578da854"
+          ],
+          "product_names": [
+            "Pokee-Isaac",
+            "Pokee-Isaac 28"
+          ],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Yes — but licensed, not open-weight. Pokee AI serves Isaac through an OpenAI-compatible developer API , and licenses it for deployment inside a VPC, on-premises, or on-device. The launch announcement advertises Day-0 support for vLLM and SGLang, and single-GPU serving starting from an RTX 4090 or equivalent. The research team publishes measurements only from a single B200-class GPU, so treat the consumer-GPU claim as vendor guidance rather than a reported result.",
+          "event_refs": [
+            "EV-3dc8d5c373ddd1f3"
+          ],
+          "claim_ref": "CL-4ef5f2f4b84d8f56",
+          "source_refs": [
+            "SA-a8efccef514ec8e5"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-09",
+          "hardware_fact_id": "HWF-39c8d77e27920084",
+          "fact_type": "product",
+          "observed_at": "2026-08-08T17:04:39.000Z",
+          "subject_entity_id": "EN-74be4cbf48e647b2",
+          "subject_name": "Pokee AI",
+          "product_entity_ids": [
+            "EN-95a8daac5782a6a4",
+            "EN-be044887578da854"
+          ],
+          "product_names": [
+            "Pokee-Isaac",
+            "Pokee-Isaac 28"
+          ],
+          "component_type": "gpu",
+          "metric_value": "93.3",
+          "unit": "%",
+          "source_quote": "Long-horizon agents accumulate context faster than they resolve tasks. Every tool output, observation, and intermediate reasoning step stays in the window, and the two capabilities that matter — holding that context and staying coherent across it — have so far been available almost exclusively from cloud endpoints. That excludes regulated industries, public-sector institutions, and on-device applications, where the data is not permitted to leave the boundary at all. Pokee AI released Pokee-Isaac 28B , a 28B text-only foundation model with a 10M-token context window, designed to run inside that boundary. The Pokee research team claims 93.3% on RULER at 10M tokens, parity with the strongest cost-optimized cloud baselines on agentic benchmarks, and a serving profile that fits a single GPU.",
+          "event_refs": [
+            "EV-3dc8d5c373ddd1f3"
+          ],
+          "claim_ref": "CL-247c4c2944757dfb",
+          "source_refs": [
+            "SA-a8efccef514ec8e5"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/08/08/pokee-ai-releases-pokee-isaac-28b-a-10m-token-context-agentic-model-built-to-run-inside-the-customer-boundary",
+      "entityIds": [
+        "EN-74be4cbf48e647b2",
+        "EN-7d3194f79e645c42",
+        "EN-6c87e5496f592f3c",
+        "EN-95a8daac5782a6a4",
+        "EN-be044887578da854"
       ]
     }
   ]

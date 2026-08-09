@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-08T04:22:09.833Z",
-    "latestDataDate": "2026-08-08",
-    "currentDate": "2026-08-08",
-    "eventCount": 1937,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-08-09T01:18:04.367Z",
+    "latestDataDate": "2026-08-09",
+    "currentDate": "2026-08-09",
+    "eventCount": 1962,
+    "quarantinedEventCount": 17
   },
   "node": {
     "id": "TX-industry-manufacturing",
@@ -73,6 +73,8 @@
       "EV-7585b033d4005977",
       "EV-cec68369662236fd",
       "EV-4eb0556b8c72d410",
+      "EV-0d1e8308d3c007aa",
+      "EV-be5bece353aeedcd",
       "EV-64178e5d858f5e25",
       "EV-67212040ee9cd7c8",
       "EV-7012e774379b9c11",
@@ -170,6 +172,7 @@
       "EN-15516525ca2aa1a4",
       "EN-8dc72a4672894e0f",
       "EN-098a40b4499d7512",
+      "EN-d25e715a1ce00764",
       "EN-99f9ebbef37fcec5",
       "EN-240389f4b730bad4",
       "EN-449777124b1466a8",
@@ -200,13 +203,15 @@
       "FDE-6e17403b5cdb72b0"
     ],
     "hardwareIds": [
+      "HW-4673613f81881c78",
+      "HW-2afca97edf1a7fe8",
       "HW-df8fb3396e493a21",
       "HW-3a780bcd6e5bab6a",
       "HW-c57ff6e49b40d839",
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2025-08-27",
-    "lastSeen": "2026-08-05"
+    "lastSeen": "2026-08-09"
   },
   "events": [
     {
@@ -26123,6 +26128,170 @@
       "publisher": "techcrunch.com"
     },
     {
+      "id": "EV-0d1e8308d3c007aa",
+      "dataDate": "2026-08-09",
+      "date": "2026-08-05",
+      "updatedDate": "2026-08-09",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "KAYTUS在72天内交付400机架高密度风冷计算集群，部署时间缩短60%",
+      "originalTitle": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute Cluster Within 72 Days, Cutting Deployment Time by 60%",
+      "subject": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
+      "action": "Cluster Within 72 Days, Cutting Deployment",
+      "object": "Time by 60%",
+      "metrics": [
+        "60%"
+      ],
+      "locations": [
+        "Japan",
+        "Singapore"
+      ],
+      "missingFields": [
+        "entities"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/08/06/3339887/0/en/kaytus-delivers-a-400-rack-high-density-air-cooled-compute-cluster-within-72-days-cutting-deployment-time-by-60.html",
+      "publisher": "globenewswire.com"
+    },
+    {
+      "id": "EV-be5bece353aeedcd",
+      "dataDate": "2026-08-09",
+      "date": "2026-08-04",
+      "updatedDate": "2026-08-09",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Volta 选择戴尔科技助力打造下一代 AI 工厂",
+      "originalTitle": "Volta Selects Dell Technologies to Help Build Next-Generation AI Factories | Dell USA",
+      "subject": "Volta",
+      "action": "hardware_deployment",
+      "object": "AI factory in Norway comprising a 133 MW deployment powered by Dell Technologies AI infrastructure",
+      "metrics": [
+        "133 MW",
+        "9812 servers"
+      ],
+      "locations": [
+        "Europe"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-d25e715a1ce00764"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-d25e715a1ce00764"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-d25e715a1ce00764"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-d25e715a1ce00764",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "Volta",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~~usa~2026~08~volta-selects-dell-technologies-to-help-build-next-generation-ai-factories.htm",
+      "publisher": "dell.com"
+    },
+    {
       "id": "EV-64178e5d858f5e25",
       "dataDate": "2026-08-03",
       "date": "2026-08-01",
@@ -31875,6 +32044,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-5fa0cfcca24f0a83",
         "EV-da1655ecfaf35feb",
         "EV-ad75efcb12a07793"
       ],
@@ -31889,7 +32059,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-01",
-      "lastSeen": "2026-07-27"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-0f3360879e746531",
@@ -32358,6 +32528,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-be5bece353aeedcd",
         "EV-5bbc509a032b8309",
         "EV-a852dc0ca6011ff6",
         "EV-a86b04e679044c45",
@@ -32543,7 +32714,7 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-1bd14cd1a58c5708",
@@ -33547,6 +33718,27 @@
       "lastSeen": "2026-07-22"
     },
     {
+      "id": "EN-d25e715a1ce00764",
+      "name": "Volta",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-be5bece353aeedcd"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-manufacturing"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-09"
+    },
+    {
       "id": "EN-99f9ebbef37fcec5",
       "name": "Bristol Myers Squibb",
       "entityType": "organization_candidate",
@@ -33725,6 +33917,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-b3e7a0aac3ba7439",
         "EV-ec283dd6bd3ac991",
         "EV-1797eada6fb392a6",
         "EV-890ffd351486b884",
@@ -33827,7 +34020,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-08-07"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-59ae856cd788d0f5",
@@ -34134,6 +34327,7 @@
         "EV-a00763037a94d512",
         "EV-02548003157849bb",
         "EV-8b0f056571d68269",
+        "EV-081fe42665b4a0b2",
         "EV-84697d26f813b122",
         "EV-4e5c6267b3237dac",
         "EV-22f0d8caaa65a6a2",
@@ -34182,7 +34376,7 @@
         "EN-7d1507284a5757ca"
       ],
       "firstSeen": "2023-11-28",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-bbdefa2950f49882",
@@ -34659,6 +34853,59 @@
   ],
   "hardware": [
     {
+      "id": "HW-4673613f81881c78",
+      "eventId": "EV-0d1e8308d3c007aa",
+      "dataDate": "2026-08-09",
+      "date": "2026-08-05",
+      "title": "KAYTUS在72天内交付400机架高密度风冷计算集群，部署时间缩短60%",
+      "hardwareType": "compute_cluster",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "data_center",
+      "supplier": "KAYTUS",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 400,
+      "capacityUnit": "racks",
+      "site": "AI data center in Japan",
+      "region": "Japan",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/08/06/3339887/0/en/kaytus-delivers-a-400-rack-high-density-air-cooled-compute-cluster-within-72-days-cutting-deployment-time-by-60.html",
+      "sourceName": "globenewswire.com",
+      "sourceDate": "2026-08-05",
+      "entityIds": []
+    },
+    {
+      "id": "HW-2afca97edf1a7fe8",
+      "eventId": "EV-be5bece353aeedcd",
+      "dataDate": "2026-08-09",
+      "date": "2026-08-04",
+      "title": "Volta 选择戴尔科技助力打造下一代 AI 工厂",
+      "hardwareType": "ai_accelerator",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "edge",
+      "supplier": "NVIDIA",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 133,
+      "capacityUnit": "MW",
+      "site": "未披露",
+      "region": "Europe",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~~usa~2026~08~volta-selects-dell-technologies-to-help-build-next-generation-ai-factories.htm",
+      "sourceName": "dell.com",
+      "sourceDate": "2026-08-04",
+      "entityIds": [
+        "EN-d25e715a1ce00764",
+        "EN-8d4321d936320802"
+      ]
+    },
+    {
       "id": "HW-df8fb3396e493a21",
       "eventId": "EV-64178e5d858f5e25",
       "dataDate": "2026-08-03",
@@ -34838,6 +35085,205 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-d918b781f4810a43",
+      "snapshotKey": "d918b781f4810a43",
+      "snapshotId": "HWS-91db42fe6efe5289",
+      "eventId": "EV-0d1e8308d3c007aa",
+      "eventIds": [
+        "EV-0d1e8308d3c007aa"
+      ],
+      "dataDate": "2026-08-09",
+      "date": "2026-08-09",
+      "title": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
+      "subject": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
+      "productNames": [],
+      "hardwareType": "compute_cluster",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-b5584e96769af6b7"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-09",
+          "hardware_fact_id": "HWF-facc6ae101202229",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-05T00:00:00.000Z",
+          "subject_entity_id": "",
+          "subject_name": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "compute_cluster",
+          "metric_value": "60",
+          "unit": "%",
+          "source_quote": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute Cluster Within 72 Days, Cutting Deployment Time by 60%",
+          "event_refs": [
+            "EV-0d1e8308d3c007aa"
+          ],
+          "claim_ref": "CL-6030b553950cd5d7",
+          "source_refs": [
+            "SA-44faba95d4a2c437"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-09",
+          "hardware_fact_id": "HWF-b5584e96769af6b7",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-05T00:00:00.000Z",
+          "subject_entity_id": "",
+          "subject_name": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "compute_cluster",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "As large-model applications transition rapidly from development to production deployment, AI compute infrastructure is evolving beyond conventional hardware delivery into a comprehensive systems-engineering challenge, defined by the ability to design, integrate, validate, and scale large, heterogeneous compute clusters with high reliability. Deployment speed is no longer merely an indicator of engineering execution, it directly determines time-to-service to convert infrastructure investment into commercial value.",
+          "event_refs": [
+            "EV-0d1e8308d3c007aa"
+          ],
+          "claim_ref": "CL-0bc30a4e05e84677",
+          "source_refs": [
+            "SA-44faba95d4a2c437"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/08/06/3339887/0/en/kaytus-delivers-a-400-rack-high-density-air-cooled-compute-cluster-within-72-days-cutting-deployment-time-by-60.html",
+      "entityIds": []
+    },
+    {
+      "id": "HWC-1e62a022d692183f",
+      "snapshotKey": "1e62a022d692183f",
+      "snapshotId": "HWS-b77d79d05e2497d5",
+      "eventId": "EV-0d1e8308d3c007aa",
+      "eventIds": [
+        "EV-0d1e8308d3c007aa"
+      ],
+      "dataDate": "2026-08-09",
+      "date": "2026-08-09",
+      "title": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
+      "subject": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "60",
+          "unit": "%",
+          "fact_ref": "HWF-e3eb3bfe15c4787c"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-09",
+          "hardware_fact_id": "HWF-e3eb3bfe15c4787c",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-05T00:00:00.000Z",
+          "subject_entity_id": "",
+          "subject_name": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "60",
+          "unit": "%",
+          "source_quote": "SINGAPORE, Aug. 05, 2026 (GLOBE NEWSWIRE) -- KAYTUS recently completed the delivery and deployment of a 400-rack custom high-density air-cooled cluster for an AI data center in Japan. From custom R&D and large-scale manufacturing to full on-site delivery, the entire project took just 72 days, shortening the typical industry deployment cycle of approximately 180 days by 60%, providing efficient computing power for core workloads.",
+          "event_refs": [
+            "EV-0d1e8308d3c007aa"
+          ],
+          "claim_ref": "CL-1f3398808a426f54",
+          "source_refs": [
+            "SA-44faba95d4a2c437"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/08/06/3339887/0/en/kaytus-delivers-a-400-rack-high-density-air-cooled-compute-cluster-within-72-days-cutting-deployment-time-by-60.html",
+      "entityIds": []
+    },
+    {
+      "id": "HWC-5c1869bc3f79759f",
+      "snapshotKey": "5c1869bc3f79759f",
+      "snapshotId": "HWS-b53ba96f9f2c11d3",
+      "eventId": "EV-be5bece353aeedcd",
+      "eventIds": [
+        "EV-be5bece353aeedcd"
+      ],
+      "dataDate": "2026-08-09",
+      "date": "2026-08-09",
+      "title": "Volta",
+      "subject": "Volta",
+      "productNames": [],
+      "hardwareType": "ai_accelerator",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "133",
+          "unit": "MW",
+          "fact_ref": "HWF-6fd93e441c08d734"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-09",
+          "hardware_fact_id": "HWF-6fd93e441c08d734",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-04T00:00:00.000Z",
+          "subject_entity_id": "EN-d25e715a1ce00764",
+          "subject_name": "Volta",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "ai_accelerator",
+          "metric_value": "133",
+          "unit": "MW",
+          "source_quote": "Its initial project will be an AI factory in Europe located in Norway that will comprise a 133 MW deployment powered by Dell Technologies AI infrastructure, including Dell PowerRack systems with PowerEdge XE9812 servers including NVIDIA accelerators.",
+          "event_refs": [
+            "EV-be5bece353aeedcd"
+          ],
+          "claim_ref": "CL-c6b8a9114bcfbb9c",
+          "source_refs": [
+            "SA-036fa74ea5c545f3"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~~usa~2026~08~volta-selects-dell-technologies-to-help-build-next-generation-ai-factories.htm",
+      "entityIds": [
+        "EN-d25e715a1ce00764",
+        "EN-8d4321d936320802"
+      ]
+    },
     {
       "id": "HWC-dec6b87b671f56f6",
       "snapshotKey": "dec6b87b671f56f6",

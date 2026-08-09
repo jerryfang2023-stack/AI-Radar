@@ -14,6 +14,7 @@ import {
   ensureCanonicalFundingEvidence,
   ensureNamedCompanyEvidence,
   entityResolver,
+  fundingEventCardConsistencyProblems,
   fundingInsightProblems,
   latestDataDate,
   loadDailyBundle,
@@ -828,6 +829,12 @@ async function main() {
       return !clean(event?.metrics?.[0])
         || amountKey(card.financing?.amount) === amountKey(event.metrics[0]);
     })
+    .filter((card) => fundingEventCardConsistencyProblems(
+      card,
+      eventById.get(card.triggered_by_event_id),
+      bundle.claims,
+      bundle.entities,
+    ).length === 0)
     .map((card) => [card.triggered_by_event_id, card]));
   let eligibleEvents = bundle.events
     .filter((event) => event.event_type === "funding")
@@ -928,6 +935,12 @@ async function main() {
   const cards = [...existingByEvent.values()]
     .filter((card) => events.some((event) => event.event_id === card.triggered_by_event_id))
     .filter((card) => fundingInsightProblems(card).length === 0)
+    .filter((card) => fundingEventCardConsistencyProblems(
+      card,
+      eventById.get(card.triggered_by_event_id),
+      bundle.claims,
+      bundle.entities,
+    ).length === 0)
     .sort((left, right) => right.published_at.localeCompare(left.published_at));
   const queue = events.map((event) => queueByEvent.get(event.event_id)
     || {

@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-08T04:22:09.833Z",
-    "latestDataDate": "2026-08-08",
-    "currentDate": "2026-08-08",
-    "eventCount": 1937,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-08-09T01:18:04.367Z",
+    "latestDataDate": "2026-08-09",
+    "currentDate": "2026-08-09",
+    "eventCount": 1962,
+    "quarantinedEventCount": 17
   },
   "node": {
     "id": "TX-technology-multimodal",
@@ -28,6 +28,7 @@
       "EV-26d2874c6ce028d6",
       "EV-3d9aa640411471ea",
       "EV-fd21441fb6e143c3",
+      "EV-ff73f3659b75611d",
       "EV-73a6143b5ce273e9",
       "EV-db304937ceac95d2",
       "EV-2fa6949af5b36fb0",
@@ -74,6 +75,7 @@
       "EN-b81c8201acfc7639",
       "EN-87c730bc4f32459e",
       "EN-7df09a7717ef2feb",
+      "EN-c04bd5ebd10ab696",
       "EN-2dc010636b9dce91",
       "EN-920510199770f4d6",
       "EN-febedfcafee9d610",
@@ -104,7 +106,7 @@
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-08-08"
+    "lastSeen": "2026-08-09"
   },
   "events": [
     {
@@ -1995,6 +1997,107 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/966/539.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-ff73f3659b75611d",
+      "dataDate": "2026-08-09",
+      "date": "2026-08-08",
+      "updatedDate": "2026-08-09",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Mistral AI 发布 Shieldstral 1.0 3B：开源策略自适应多模态安全分类器，性能媲美 7 倍规模模型",
+      "originalTitle": "",
+      "subject": "Mistral AI",
+      "action": "开源策略自适应多模态安全分类器，性能媲美 7 倍规模模型",
+      "object": "Mistral AI 发布 Shieldstral 1.0 3B：开源策略自适应多模态安全分类器，性能媲美 7 倍规模模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-c04bd5ebd10ab696"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-c04bd5ebd10ab696"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-c04bd5ebd10ab696"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c04bd5ebd10ab696",
+        "EN-e68010f07eedafba",
+        "EN-6989f0d9282254c2"
+      ],
+      "entityNames": [
+        "Mistral AI",
+        "Shieldstral 1.0",
+        "Shieldstral 1.0 3"
+      ],
+      "productName": "Shieldstral 1.0",
+      "products": [
+        {
+          "name": "Shieldstral 1.0",
+          "type": "模型",
+          "ownerNames": [
+            "Mistral AI"
+          ]
+        },
+        {
+          "name": "Shieldstral 1.0 3",
+          "type": "模型",
+          "ownerNames": [
+            "Mistral AI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/08/07/mistral-ai-releases-shieldstral-1-0-3b",
+      "publisher": "MarkTechPost（RSS）"
     },
     {
       "id": "EV-73a6143b5ce273e9",
@@ -8161,9 +8264,67 @@
         "TX-technology-multimodal",
         "TX-technology-long_context"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-07-29"
+    },
+    {
+      "id": "EN-c04bd5ebd10ab696",
+      "name": "Mistral AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a89bf7c0c4203ce2",
+        "EV-24265c0f0fa45343",
+        "EV-d4e44892226be468",
+        "EV-85506f9f86779a6d",
+        "EV-dc442b91a69fcc5a",
+        "EV-d292329c0ec64c8f",
+        "EV-c8f3db31cb266b64",
+        "EV-ff73f3659b75611d",
+        "EV-db304937ceac95d2",
+        "EV-3a67edc87806b5f1",
+        "EV-dbc47d61f3e94306",
+        "EV-eb2584a4801eb1e6",
+        "EV-865af5f2f09605c4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-industry-aerospace_defense",
+        "TX-industry-energy_utilities",
+        "TX-industry-government_public_sector",
+        "TX-industry-automotive_transportation",
+        "TX-industry-financial_services",
+        "TX-product_form-compute_cloud_service",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-use_case-software_development",
+        "TX-use_case-knowledge_search",
+        "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-industrials",
+        "TX-ai_market_application-models",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-use_case-design_engineering",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [
+        "EN-8652f6cd9088f1fa",
+        "EN-0d4ab5f8db6e89bc",
+        "EN-2c2a76216a876127"
+      ],
+      "firstSeen": "2025-10-01",
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-2dc010636b9dce91",
@@ -8530,6 +8691,7 @@
         "EV-29f130674dbbb59e",
         "EV-c98d4ee7764d51b2",
         "EV-657837763764c869",
+        "EV-9465c27567216dfa",
         "EV-0eef30387327e73f",
         "EV-89bdda008227fb6b",
         "EV-ef823877347ff40f",
@@ -8571,7 +8733,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-06"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-de6b71bf77ff4299",
@@ -8627,6 +8789,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-be5bece353aeedcd",
         "EV-5bbc509a032b8309",
         "EV-a852dc0ca6011ff6",
         "EV-a86b04e679044c45",
@@ -8812,7 +8975,7 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -8825,6 +8988,8 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-abf716c9f996dbcf",
+        "EV-842f920ef198c55e",
         "EV-81a37a2365624b42",
         "EV-c89018d79b3d25bd",
         "EV-97854226b6f43a95",
@@ -8857,6 +9022,7 @@
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
+        "EV-3c99948342b171fa",
         "EV-492029b381c06283",
         "EV-dda9429d76897a3d",
         "EV-2a101d792d92fb1f",
@@ -8901,6 +9067,9 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-3dc8d5c373ddd1f3",
+        "EV-47c32b3ef5c0f57a",
+        "EV-15c5107c993baae8",
         "EV-997609968760857a",
         "EV-b8cb3221efe607e2",
         "EV-bc3fe9c5c8fbc14c",
@@ -8910,7 +9079,6 @@
         "EV-b06624cf36990346",
         "EV-22e4f8278c40d63e",
         "EV-ad6fe30e111608bd",
-        "EV-47c32b3ef5c0f57a",
         "EV-54a4809c304587e6",
         "EV-98a77305667148e1",
         "EV-650e4b23d45d5758",
@@ -9168,7 +9336,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-2b6e51bec93e86c1",
@@ -9345,8 +9513,10 @@
         "EV-e1a4bc40db4a9d8f",
         "EV-3d9aa640411471ea",
         "EV-2a833330267cb2df",
-        "EV-2791b442fd32b894",
+        "EV-0679a9b49b53ddbd",
+        "EV-355ddfd4c6180ab0",
         "EV-4a6a0e6b6f50946c",
+        "EV-2791b442fd32b894",
         "EV-d230942b0787581a",
         "EV-2fa6949af5b36fb0",
         "EV-4b286a3354cbf34a",
@@ -9414,7 +9584,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-08",
+      "lastSeen": "2026-08-09",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [

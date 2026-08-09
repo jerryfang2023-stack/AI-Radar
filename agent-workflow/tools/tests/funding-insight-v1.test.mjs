@@ -15,6 +15,7 @@ import {
   ensureNamedCompanyEvidence,
   entityResolver,
   fundingEvidenceProofProblems,
+  fundingEventCardConsistencyProblems,
   fundingDisclosureStatus,
   fundingInsightProblems,
   normalizeFundingAmount,
@@ -26,6 +27,28 @@ import {
   subjectCompanyForEvent,
   verifiedFundingEventCardCoverageProblems,
 } from "../funding-insight-v1-utils.mjs";
+
+test("multi-company canonical funding events cannot publish a mismatched company amount", () => {
+  const card = {
+    company: { entity_id: "EN-SAMBA", name: "SambaNova Systems" },
+    financing: { amount: "$312 million" },
+    triggered_by_event_id: "EV-MULTI",
+  };
+  const event = {
+    event_id: "EV-MULTI",
+    entities: ["EN-OLIX", "EN-SAMBA"],
+    claim_refs: ["CL-OLIX", "CL-SAMBA"],
+  };
+  const claims = [
+    { claim_id: "CL-OLIX", subject: "OLIX", object: "$312 million" },
+    { claim_id: "CL-SAMBA", subject: "SambaNova", object: "$1 billion" },
+  ];
+  const entities = [{ entity_id: "EN-SAMBA", canonical_name: "SambaNova" }];
+  assert.deepEqual(
+    fundingEventCardConsistencyProblems(card, event, claims, entities),
+    ["funding_event_company_amount_mismatch"],
+  );
+});
 import { selectHistoricalFundingEvents } from "../backfill-funding-insights-history.mjs";
 import { promptFor, selectFundingEventsForGeneration } from "../generate-funding-insights-deepseek.mjs";
 import { assertFundingFounderReview, collectFundingFounderCandidates } from "../build-funding-founder-review.mjs";

@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-08T04:22:09.833Z",
-    "latestDataDate": "2026-08-08",
-    "currentDate": "2026-08-08",
-    "eventCount": 1937,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-08-09T01:18:04.367Z",
+    "latestDataDate": "2026-08-09",
+    "currentDate": "2026-08-09",
+    "eventCount": 1962,
+    "quarantinedEventCount": 17
   },
   "node": {
     "id": "TX-product_form-end_user_application",
@@ -64,6 +64,7 @@
       "EV-23ae55daa341be06",
       "EV-b31602193dbf4e08",
       "EV-1196b80b537957f2",
+      "EV-b998b508567246a1",
       "EV-b9a1cba0b59a5354",
       "EV-7a48a67bab77cb73",
       "EV-cfb7c4b4b765f53b",
@@ -72,6 +73,7 @@
       "EV-22f0d8caaa65a6a2",
       "EV-eec1e6857f0e0b2b",
       "EV-05a87b578967c83e",
+      "EV-355ddfd4c6180ab0",
       "EV-cc4d9d631698f35b",
       "EV-0609f4badfe84803",
       "EV-604cffac28a0af69",
@@ -145,11 +147,13 @@
       "EN-c189daf477a2d4ca",
       "EN-50e2a4156631df49",
       "EN-91776f01fce0c960",
+      "EN-81b430b696435180",
       "EN-bc76f4b93d8c1ca6",
       "EN-75857a45899985be",
       "EN-6ed315afcff06aac",
       "EN-fb54e9062429a937",
       "EN-19e41212c0556603",
+      "EN-c0fced8f2483e9f5",
       "EN-76dc4156f3e14597",
       "EN-fd13ae012c0a7a54",
       "EN-83d512876997e675",
@@ -177,7 +181,7 @@
       "HW-c5a22adcc66136ed"
     ],
     "firstSeen": "2019-03-11",
-    "lastSeen": "2026-08-07"
+    "lastSeen": "2026-08-09"
   },
   "events": [
     {
@@ -16900,6 +16904,86 @@
       "publisher": "front.ai"
     },
     {
+      "id": "EV-b998b508567246a1",
+      "dataDate": "2026-08-09",
+      "date": "2026-08-08",
+      "updatedDate": "2026-08-09",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "微信 AI 助手\"小微\"灰度测试朋友圈\"帮写\"及\"点评\"功能",
+      "originalTitle": "",
+      "subject": "微信",
+      "action": "deployment",
+      "object": "朋友圈“AI 帮写”与“AI 点评”功能",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-81b430b696435180"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-81b430b696435180"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-81b430b696435180"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-81b430b696435180"
+      ],
+      "entityNames": [
+        "微信"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/987/367.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-b9a1cba0b59a5354",
       "dataDate": "2026-07-25",
       "date": "2026-07-24",
@@ -17978,6 +18062,145 @@
       "products": [],
       "sourceUrl": "https://sierra.ai/customers/singtel",
       "publisher": "sierra.ai"
+    },
+    {
+      "id": "EV-355ddfd4c6180ab0",
+      "dataDate": "2026-08-09",
+      "date": "2026-08-08",
+      "updatedDate": "2026-08-09",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "腾讯 WorkBuddy 成 AI 应用战略优先级最高产品之一，6 月 PC 端访问量破 2000 万",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "腾讯 WorkBuddy 成 AI 应用战略优先级最高产品之一，6 月 PC 端访问量破 2000 万",
+      "metrics": [
+        "2000 万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c0fced8f2483e9f5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c0fced8f2483e9f5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-c0fced8f2483e9f5"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c0fced8f2483e9f5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-c0fced8f2483e9f5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-c0fced8f2483e9f5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c0fced8f2483e9f5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9c8ae69b84f21a2e",
+        "EN-047364b9be67f665",
+        "EN-c0fced8f2483e9f5"
+      ],
+      "entityNames": [
+        "Tencent",
+        "Alibaba",
+        "WorkBuddy"
+      ],
+      "productName": "WorkBuddy",
+      "products": [
+        {
+          "name": "WorkBuddy",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Tencent"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/987/446.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-cc4d9d631698f35b",
@@ -21438,6 +21661,8 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-abf716c9f996dbcf",
+        "EV-842f920ef198c55e",
         "EV-81a37a2365624b42",
         "EV-c89018d79b3d25bd",
         "EV-97854226b6f43a95",
@@ -21470,6 +21695,7 @@
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
+        "EV-3c99948342b171fa",
         "EV-492029b381c06283",
         "EV-dda9429d76897a3d",
         "EV-2a101d792d92fb1f",
@@ -21514,6 +21740,9 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-3dc8d5c373ddd1f3",
+        "EV-47c32b3ef5c0f57a",
+        "EV-15c5107c993baae8",
         "EV-997609968760857a",
         "EV-b8cb3221efe607e2",
         "EV-bc3fe9c5c8fbc14c",
@@ -21523,7 +21752,6 @@
         "EV-b06624cf36990346",
         "EV-22e4f8278c40d63e",
         "EV-ad6fe30e111608bd",
-        "EV-47c32b3ef5c0f57a",
         "EV-54a4809c304587e6",
         "EV-98a77305667148e1",
         "EV-650e4b23d45d5758",
@@ -21781,7 +22009,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-6998e3957b261cf2",
@@ -22571,6 +22799,28 @@
       "lastSeen": "2026-07-28"
     },
     {
+      "id": "EN-81b430b696435180",
+      "name": "微信",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b998b508567246a1",
+        "EV-e88fc7702acc5d3b"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-end_user_application"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-08-09"
+    },
+    {
       "id": "EN-bc76f4b93d8c1ca6",
       "name": "巴基斯坦法院",
       "entityType": "organization_candidate",
@@ -22681,6 +22931,29 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-03-04",
       "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "EN-c0fced8f2483e9f5",
+      "name": "WorkBuddy",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-355ddfd4c6180ab0",
+        "EV-c710c75d9c823a49"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-end_user_application"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-25",
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-76dc4156f3e14597",
@@ -22813,6 +23086,7 @@
         "EV-29f130674dbbb59e",
         "EV-c98d4ee7764d51b2",
         "EV-657837763764c869",
+        "EV-9465c27567216dfa",
         "EV-0eef30387327e73f",
         "EV-89bdda008227fb6b",
         "EV-ef823877347ff40f",
@@ -22854,7 +23128,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-06"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-534e99d81da1c54d",
@@ -23293,6 +23567,7 @@
         "EV-883d3b5f6d30eb48",
         "EV-e15ae1112294d59e",
         "EV-43301de739fe560e",
+        "EV-ed0bb3a0784d6415",
         "EV-7a4d1e871dcd3b1f",
         "EV-5b193a038ab4ea22",
         "EV-2351415291cb9fcd",
@@ -23325,7 +23600,7 @@
         "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-160b93ba38ba1ecd",
