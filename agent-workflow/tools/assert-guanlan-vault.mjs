@@ -15,13 +15,23 @@ let markdownFileCount = 0;
 const oldRepositoryVault = path.join(root, "vault");
 const reportSource = path.join(root, REPOSITORY_CONTENT_PATHS.industryReportsRoot);
 
+function directoryContainsFiles(directory) {
+  for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+    if (!entry.isDirectory()) return true;
+    if (directoryContainsFiles(path.join(directory, entry.name))) return true;
+  }
+  return false;
+}
+
 if (fs.existsSync(oldRepositoryVault)) problems.push("repository-local vault/ still exists");
 if (!fs.existsSync(reportSource)) problems.push(`industry report source is missing: ${REPOSITORY_CONTENT_PATHS.industryReportsRoot}`);
 
 const vaultRoot = resolveGuanlanVaultRoot(root, { required: !contractOnly });
 if (vaultRoot) {
   const retiredVaultRoot = path.resolve(path.dirname(vaultRoot), "AI热点");
-  if (!contractOnly && fs.existsSync(retiredVaultRoot)) {
+  const retiredVaultRootHasContent = fs.existsSync(retiredVaultRoot)
+    && directoryContainsFiles(retiredVaultRoot);
+  if (!contractOnly && retiredVaultRootHasContent) {
     problems.push(`retired AI hotspot Vault root still exists: ${retiredVaultRoot}`);
   }
   if (!contractOnly && process.platform === "win32" && process.env.APPDATA) {

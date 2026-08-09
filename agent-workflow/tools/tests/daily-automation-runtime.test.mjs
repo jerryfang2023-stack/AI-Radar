@@ -51,11 +51,16 @@ test("closure reuses its self-check instead of running it twice", () => {
 test("Vault refresh uses an isolated origin/main worktree and leaves supervision evidence", () => {
   const sync = read("sync-guanlan-vault-from-main.mjs");
   const supervision = read("write-daily-supervision-report.mjs");
+  const vaultGate = read("assert-guanlan-vault.mjs");
   assert.match(sync, /git[^]*worktree[^]*add[^]*--detach[^]*origin\/main/u);
-  assert.match(sync, /sync-guanlan-vault\.mjs/u);
+  assert.match(sync, /build-guanlan-vault\.mjs/u);
+  assert.match(sync, /sync-guanlan-evidence\.mjs/u);
+  assert.match(sync, /assert-guanlan-vault\.mjs/u);
+  assert.doesNotMatch(sync, /copyLocalConfig\("\.evidence-backup\.json"\)/u);
   assert.match(sync, /worktree[^]*remove[^]*--force/u);
   assert.match(sync, /guanlan-vault-sync\.json/u);
   assert.match(supervision, /vaultSync\.current/u);
+  assert.match(vaultGate, /function directoryContainsFiles[^]*retiredVaultRootHasContent[^]*directoryContainsFiles\(retiredVaultRoot\)/u);
 });
 
 test("morning controller repairs derived repo Skill runtime before auditing it", () => {

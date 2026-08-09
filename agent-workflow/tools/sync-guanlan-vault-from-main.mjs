@@ -44,6 +44,22 @@ function copyLocalConfig(name) {
   if (fs.existsSync(source)) fs.copyFileSync(source, path.join(worktree, name));
 }
 
+function runVaultProjection(vaultRoot) {
+  const environment = { ...process.env, GUANLAN_VAULT_ROOT: vaultRoot };
+  delete environment.GUANLAN_EVIDENCE_BACKUP_ROOT;
+  for (const script of [
+    "agent-workflow/tools/build-guanlan-vault.mjs",
+    "agent-workflow/tools/sync-guanlan-evidence.mjs",
+    "agent-workflow/tools/assert-guanlan-vault.mjs",
+  ]) {
+    run(process.execPath, [script], {
+      cwd: worktree,
+      timeout: 600_000,
+      env: environment,
+    });
+  }
+}
+
 function writeReport(payload) {
   fs.mkdirSync(runtimeDir, { recursive: true });
   fs.writeFileSync(reportFile, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
@@ -74,12 +90,7 @@ try {
     run("git", ["worktree", "add", "--detach", worktree, "origin/main"]);
     worktreeCreated = true;
     copyLocalConfig(".guanlan-vault.json");
-    copyLocalConfig(".evidence-backup.json");
-    run(process.execPath, ["agent-workflow/tools/sync-guanlan-vault.mjs"], {
-      cwd: worktree,
-      timeout: 600_000,
-      env: { ...process.env, GUANLAN_VAULT_ROOT: vaultRoot },
-    });
+    runVaultProjection(vaultRoot);
     payload.ok = true;
     payload.status = "passed";
   }

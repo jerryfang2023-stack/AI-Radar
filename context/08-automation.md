@@ -94,7 +94,13 @@ This refresh is part of the existing task and must not be installed as a
 separate scheduled task or Startup loop. It also refreshes the external Guanlan
 Vault from an isolated `origin/main` worktree and records the source commit in
 runtime, so unrelated primary-worktree edits neither enter nor block the Vault
-projection.
+projection. This isolated action owns only the Vault build, evidence-index sync,
+and Vault assertion; private evidence backup keeps its separate fail-closed
+contract and is not silently folded into the projection step.
+
+The retired sibling `AI热点` root must contain no files and must not remain
+registered in Obsidian. A locked empty directory shell is tolerated until its
+owning desktop process releases the handle; it is not treated as a second Vault.
 
 Funding recovery is downstream-only when the same-date V4 batch already passes
 the integrity gate. A retry must hydrate the configured private evidence store,
