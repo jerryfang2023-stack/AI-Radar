@@ -203,9 +203,7 @@ jobs:
           WAVESIGHT_FRONTSTAGE_GENERATED_AT="$frontstage_generated_at" \
           WAVESIGHT_ENTITY_HISTORY_GENERATED_AT="$entity_history_generated_at" \
             npm run build:data-center-site
-          npm run build:homepage-site
           npm run test:funding-insights
-          npm run test:homepage
           node agent-workflow/tools/frontstage-regression-gate.mjs
 
       - name: Upload Funding Insights diagnostics
@@ -222,7 +220,6 @@ jobs:
             01-SiteV2/content/12-applications/funding-insights/entity-review-queue.json
             01-SiteV2/content/11-databases/investment-institutions-v1.json
             01-SiteV2/site/data/funding-insights-v1.json
-            01-SiteV2/site/data/homepage-v1.json
             01-SiteV2/site/data/data-center-v4-frontstage.json
             01-SiteV2/site/data/data-center-v4/indexes/entities.json
             01-SiteV2/site/data/data-center-v4/investors/
@@ -242,7 +239,6 @@ jobs:
             "01-SiteV2/content/12-applications/funding-insights/entity-review-queue.json" \
             "01-SiteV2/content/11-databases/investment-institutions-v1.json" \
             "01-SiteV2/site/data/funding-insights-v1.json" \
-            "01-SiteV2/site/data/homepage-v1.json" \
             "01-SiteV2/site/data/data-center-v4-frontstage.json" \
             "01-SiteV2/site/data/data-center-v4/indexes/entities.json" \
             "01-SiteV2/site/data/data-center-v4/investors"

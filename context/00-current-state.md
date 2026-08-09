@@ -17,7 +17,7 @@ WaveSight AI is on the `V4.8.0-research-homepage` repository release. The public
 
 - WaveSight AI is an AI industry data center and structured factual data foundation for downstream AIP, industry research, and startup decision-support products.
 - The data center does not make decisions, judge commercial value, recommend actions, or educate readers toward a conclusion.
-- The public frontstage uses the V4 Data Center / Application Center shell. V3 page routes are redirects only.
+- Funding Insights is the independent public application website. The Data Center / Application Center shell is an internal supporting surface and is not public navigation.
 - The current backend entry is the operations dashboard.
 - The production core turns external sources into SourceArtifacts, RawDocuments, Claims, Entities, CanonicalEvents, domain projections, and queryable exports.
 - The current collection lane writes ephemeral source snapshots, copies complete bodies into the authoritative private evidence store, converts public V4 records to `evidence://<content_hash>` locators, and then removes the ephemeral public copies. `SOURCE-INTAKE-V1` remains the structured handoff.
@@ -36,11 +36,11 @@ WaveSight AI is on the `V4.8.0-research-homepage` repository release. The public
 
 | Entry | File | Role |
 |---|---|---|
-| Public Homepage | `01-SiteV2/site/index.html` | Research-magazine public portal backed by a lightweight projection of verified financing events and evidence-backed investor activities; exposes the governed six public entrances without becoming a new data contract |
-| Data Center | `01-SiteV2/site/data-center.html` | Four-entry public data layer: Event Library, unchanged Community Intelligence, unchanged First-Line Viewpoints, and Entity Library with an evidence-backed Investment Institution projection. FDE and AI Hardware remain event themes; factual relationships remain embedded in entity details. |
-| Trend Radar | `01-SiteV2/site/trend-radar.html` | Application-center factual explorer for accepted daily changes, weekly structure changes, monthly snapshots, and event/entity/source evidence links |
-| Guanlan Research | `01-SiteV2/site/intelligence-map.html` | Application-center research hub for latest Monthly / Weekly reports, capital and funding research, enterprise AI deployment topics, and archives |
-| Funding Insights | `01-SiteV2/site/funding-insights.html` | Guanlan Research capital topic subroute; retains the existing evidence-backed funding research product |
+| Public Root | `01-SiteV2/site/index.html` | Redirect-only entry into the independent Funding Insights application; it must not render a Data Center / Application Center portal |
+| Funding Insights | `01-SiteV2/site/funding-insights.html` | Independent public application backed by evidence-linked financing and investment-institution data |
+| Data Center | `01-SiteV2/site/data-center.html` | Internal factual-data serving and review surface, including the investment-institution projection |
+| Trend Radar | `01-SiteV2/site/trend-radar.html` | Internal downstream factual-change projection |
+| Guanlan Research | `01-SiteV2/site/intelligence-map.html` | Internal downstream research surface |
 | Opportunity Map | `01-SiteV2/site/opportunity-map.html` | Unlisted `noindex,nofollow` internal lab route retained for evidence-backed map experiments |
 | First-Line Viewpoints | `01-SiteV2/site/data-center.html?view=viewpoints` | Independent builders viewpoint feed, people index, and person timeline |
 | Community Intelligence | `01-SiteV2/site/data-center.html?view=community` | Community-sourced cases, AI tool tactics, commercial opportunities, and document links |

@@ -1,7 +1,7 @@
 ---
 status: current
 scope: frontstage-page-contracts
-last_updated: 2026-08-08
+last_updated: 2026-08-09
 use_when:
   - page change
   - navigation change
@@ -13,7 +13,7 @@ priority: current
 
 # Frontstage Page Contracts
 
-SITE-V4.6.0 is the only current public page system; ENTITY-V1.0 and RELATION-V2.1 remain its factual entity-history contracts. The public homepage uses the official logo and the same six governed entrances in a compact portal header; all column pages and subordinate routes keep the focused shared sidebar. Legacy V3 column URLs are redirects only. These page contracts do not define V4 canonical data truth.
+Funding Insights is the independent public application website; ENTITY-V1.0 and RELATION-V2.1 remain internal factual entity-history contracts. Data Center and Application Center pages are supporting data/research surfaces rather than public columns. The site root is a redirect-only alias for Funding Insights and must not recreate a multi-column portal. Legacy V3 column URLs are redirects only. These page contracts do not define V4 canonical data truth.
 
 Read `context/version-ledger.md` first. This file defines what each current frontstage page must keep and what must not contaminate it.
 
@@ -21,11 +21,11 @@ Read `context/version-ledger.md` first. This file defines what each current fron
 
 | Page | Current Role | Must Keep | Must Not Contain | Gates |
 |---|---|---|---|---|
-| Public Homepage | `01-SiteV2/site/index.html` | Research-magazine public portal; official logo; the same four Data Center and two Application Center entrances; verified financing-event counts, evidence-backed investor-subject counts, per-week financing-event counts, recent financing rows, and links into existing detail routes through `homepage-v1.json` | Redirect-only shell; hard-coded or invented metrics; cross-currency amount totals; newsletter success without a real subscription service; a parallel React/Vite runtime; replacement search or detail logic; claims without evidence-backed source data | homepage projection test + data consistency gate + desktop/mobile smoke + version consistency |
-| Data Center | `01-SiteV2/site/data-center.html` | Four public entries: Event Library (`事件库`), unchanged Community Intelligence, unchanged First-Line Viewpoints, and Entity Library (`实体库`). Event Library defaults to the latest daily batch and exposes complete FDE / AI Hardware event-ID sets through the `theme` filter; direct deep views remain supported. Entity Library includes an evidence-backed Investment Institution projection, and entity details preserve evidence-backed activity or one-hop relationships. | Separate primary sidebar entries for FDE, AI Hardware, Investment Institutions, or Relationship Map; an FDE “shortcut” that covers deployment events but drops partnership-backed FDE records; importance/opportunity/recommendation fields in factual views; V3 modules | syntax + V4 data tests + institution schema/evidence gate + integrity gate + frontstage regression |
-| Trend Radar | `01-SiteV2/site/trend-radar.html` | Independent Application Center entry; daily five-category accepted changes, weekly evidence-backed structure changes, monthly factual snapshots, observed-data-day coverage, and event/entity/source links | Report prose; opportunity/trend scores; heat, maturity, rankings or recommendations; First-Line Viewpoints, Community Intelligence, V3 Cards, trend candidates or opportunity signals as factual inputs; canonical-data mutation | projection gate + exact-count test + evidence-lineage test + interaction/visual smoke + version consistency |
-| Funding Insights | `01-SiteV2/site/funding-insights.html` | Guanlan Research capital-topic subroute; verified funding events from the daily batch or bounded three-month historical admission trigger the evidence-backed research product. Every card exposes normalized and original round/amount, financing date, disclosure status, investor roles, cumulative amount basis, and stable historical rounds; the page marks Guanlan Research as current. | A primary Application Center sidebar entry; free-text round variants; historical or round-ambiguous investors presented as current; duplicate company-round cards; silent evidence gaps; automatic mutation of V4 canonical entities or relationships | schema + amount normalization + current-investor separation + company-round/history aggregation + exact-quote evidence gate + automatic-publication test + frontstage regression |
-| Guanlan Research | `01-SiteV2/site/intelligence-map.html` | Public Application Center hub; latest Monthly / Weekly report entries and archives; explicit capital/funding and enterprise AI deployment topic entrances; accepted reports sourced from `01-SiteV2/content/12-applications/industry-reports/` | Opportunity Map as a sidebar entry; retired `行业报告` / `报告中心` / `Reports Center` hub naming; Relation Paths; separate sidebar entries for Funding, Weekly, or Monthly reports; V3 navigation or graph modules | syntax + visual smoke + frontstage regression |
+| Public Root | `01-SiteV2/site/index.html` | Redirect directly to `funding-insights.html` | A total portal; Data Center / Application Center entrances; homepage metrics or projection data; parallel navigation or content | redirect test + desktop/mobile smoke |
+| Data Center | `01-SiteV2/site/data-center.html` | Internal factual-data serving and review surface. Event, entity, investment-institution, FDE, hardware, and relationship projections remain available to internal workflows and downstream applications. | Public primary-column positioning; importance/opportunity/recommendation fields in factual views; V3 modules | syntax + V4 data tests + institution schema/evidence gate + integrity gate + regression |
+| Trend Radar | `01-SiteV2/site/trend-radar.html` | Internal downstream factual-change projection with evidence lineage | Public primary-column positioning; canonical-data mutation; unsupported rankings or recommendations | projection gate + exact-count test + evidence-lineage test + interaction smoke + version consistency |
+| Funding Insights | `01-SiteV2/site/funding-insights.html` | Independent public application website backed by governed financing and investment-institution projections. Every card exposes normalized and original round/amount, financing date, disclosure status, investor roles, cumulative amount basis, and stable historical rounds. | Data Center / Application Center raw-column navigation; free-text round variants; historical or round-ambiguous investors presented as current; duplicate company-round cards; silent evidence gaps; automatic mutation of V4 canonical entities or relationships | schema + amount normalization + current-investor separation + company-round/history aggregation + exact-quote evidence gate + automatic-publication test + frontstage regression |
+| Guanlan Research | `01-SiteV2/site/intelligence-map.html` | Internal research surface for accepted periodic reports and topic projections | Public primary-column positioning; Funding Insights ownership; V3 navigation or graph modules | syntax + visual smoke + frontstage regression |
 | Opportunity Map | `01-SiteV2/site/opportunity-map.html` | Unlisted internal lab route with `noindex,nofollow`; source-backed maps, human-reviewed Direction Cards, and evidence modals remain available for evaluation | A primary Application Center sidebar entry; Signal Card or V3 desk evidence; unreviewed model output; unsupported factual numbers; report cards; opaque scores; Relation Paths | syntax + V4 evidence gate + human-review boundary + data projection + interaction smoke + frontstage regression |
 | Weekly / Monthly Details | `weekly-ai-business-change-radar*.html`, `monthly-business-structure*.html` | Complete accepted reports using the V4 logo header, focused shared sidebar, responsive editorial layouts, and Guanlan Research return path | V3 topbar/assets/routes; raw Markdown dumps; detached report navigation; public V3 JSON fetches | syntax + content-source gate + desktop/mobile visual smoke + frontstage regression |
 | Legacy Redirects | `v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, `reports.html`, `pipeline-dashboard.html` | Canonical redirect to the matching V4 route while preserving query parameters and hash | Page content, V3 CSS/JS, V3 navigation, independent report-center or V3 pipeline content | redirect test + public dependency scan |
@@ -39,7 +39,7 @@ Event Library, Entity Library, and Trend Radar expose the same evidence-backed C
 
 | Scope | Version | Meaning |
 |---|---|---|
-| Main website | `SITE-V4.6.0-research-homepage` | Adds a data-backed research-magazine public homepage while preserving the focused two-center information architecture, evidence-backed Investment Institution Library, and complete Funding Insights financing fields. |
+| Main website | `SITE-V4.6.0-research-homepage` | Historical release identifier retained until the next coordinated version bump; the research homepage is retired and the root now redirects to the independent Funding Insights application. |
 | Business Signals factual lane | `EVENT-V1.1` | SourceArtifact / RawDocument / Claim / CanonicalEvent production only; archived Cards and trend candidates are not daily inputs or public pages. |
 | First-Line Viewpoints column | `FLV-V1.1.0-history-backfill` | Adds accepted committed morning history to the V4 projection while keeping current morning RSS and afternoon follow-builders production independent; original-URL dedupe, approved Chinese translation provenance, AI relevance, and opinion tags remain release gates. |
 | Community Intelligence column | `CINT-V1.0.2-publication-waiting-gate` | Keeps local logged-in collection separate from GitHub publication and treats open PR / queued workflow states after healthy same-date data as Waiting, not Problems. |
@@ -52,14 +52,11 @@ Event Library, Entity Library, and Trend Radar expose the same evidence-backed C
 
 ## Navigation
 
-The approved SITE-V4.6.0 navigation has two groups:
-
-- Data Center: Event Library, Community Intelligence, First-Line Viewpoints, Entity Library.
-- Application Center: Trend Radar, Guanlan Research.
+Funding Insights owns the public application navigation. Data Center and Application Center groupings are internal information architecture and must not appear as public columns.
 
 Entity Library (`实体库`, internal contract name: Entity Index) is the single list entrance for companies, organizations, investment institutions, models, products, services, people, AI technologies, use cases, and industries. Investment institutions are an evidence-backed application projection with explicit subject types; they do not become canonical V4 entities automatically. Entity Library must appear after First-Line Viewpoints; Company, Product, and Investment Institution must not return as separate sidebar entries.
 
-The public homepage may present those same six entrances in a compact horizontal portal header. It must not add a seventh primary entry, replace the shared sidebar on governed column pages, or reimplement column search and detail behavior. Homepage capital metrics come only from the generated lightweight projection: events are counted after financing-event aggregation, amounts remain in their disclosed currencies, and no cross-currency total is allowed.
+The root page is redirect-only and must not render metrics, research modules, or internal-column entrances. Public financing views may link to purpose-built application details, but must not expose raw Data Center / Application Center navigation.
 
 Entity pages show only source-backed histories and relationships. The relationship deep route may remain for direct access, but it is not primary navigation. It may render only an entity-centered one-hop view whose edges resolve to accepted events, exact Claims, and source artifacts.
 

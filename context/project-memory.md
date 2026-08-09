@@ -17,7 +17,7 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 ## Stable Identity
 
 - WaveSight AI / Guanlan AI is an AI business intelligence asset system, not a general content site.
-- The public frontstage is organized around two centers: a four-entry Data Center and a two-entry Application Center (Trend Radar and Guanlan Research).
+- Data Center and Application Center are internal foundations, not public columns. Public products are independent application websites; Funding Insights consumes governed Data Center data without exposing the internal two-center navigation.
 - Dashboard / Operations Console is a backend-facing operations surface, not a public content column.
 - Business Signals is the V4 SourceArtifact / RawDocument / Claim / CanonicalEvent factual production chain. Retired Raw / Pool / Card assets are absent from the working tree and recoverable only from explicit Git history; they have no active production, page, relationship, or operations consumer.
 - First-Line Viewpoints and Community Intelligence are independent data lanes projected into the V4 Data Center shell.

@@ -10,7 +10,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current local knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.2-private-evidence-linked`). It is the local operations and human-readable knowledge front door; the repository-local `vault/` path is retired.
 - Current local automation: exactly seven Windows tasks; Final Closure owns the strict 24-table `DATA-LAKE-V4.1` refresh, and Hermes watchdog/heartbeat is one control-plane cycle.
 - Current evidence archive: `PRIVATE-EVIDENCE-STORE-V2.0` is the authoritative content-addressed original-body store outside the public repository and Vault. The public repository and Vault store locators and links, never complete original bodies.
-- Current frontstage: the Data Center, Trend Radar, Guanlan Research, and report detail pages. Funding Insights is a Guanlan Research topic route; Opportunity Map remains an unlisted internal lab route.
+- Current public product: Funding Insights is an independent application website backed by Data Center data. Data Center, Application Center, reports, and operations pages are internal supporting surfaces rather than public columns.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
 - Current Business Signals column version: BSIG-V2.2.0-pipeline-stage-ownership.
 - Current First-Line Viewpoints column version: FLV-V1.1.0-history-backfill.
@@ -49,19 +49,16 @@ The core does not make decisions, judge value or opportunity, recommend actions,
 
 First-line viewpoints are a separate builders column. They are useful for reading public operator / builder viewpoints, but they are not business-signal facts.
 
-## Current Frontstage Navigation
+## Current Product Surfaces
 
 | Entry | File | Role |
 |---|---|---|
-| Event Library / 事件库 | `01-SiteV2/site/data-center.html?view=events` | source-traceable canonical events, including FDE and AI Hardware thematic filters |
-| Entity Library / 实体库 | `01-SiteV2/site/data-center.html?view=index` | stable entities, histories, and embedded factual relationships |
-| Trend Radar / 变化雷达 | `01-SiteV2/site/trend-radar.html` | evidence-backed daily, weekly, and monthly factual change explorer |
-| Guanlan Research / 观澜研究 | `01-SiteV2/site/intelligence-map.html` | monthly / weekly reports, capital research, and enterprise AI deployment topics |
-| First-Line Viewpoints / 一线观点 | `01-SiteV2/site/data-center.html?view=viewpoints` | independent builders viewpoints |
-| Community Intelligence / 社群情报 | `01-SiteV2/site/data-center.html?view=community` | community-sourced cases, tool tactics, opportunities, and document links |
-| Dashboard / 仪表盘 | `01-SiteV2/site/operations-console.html` | operations backend |
+| Funding Insights / 融资情报 | `01-SiteV2/site/funding-insights.html` | independent public application website backed by evidence-linked Data Center and investment-institution projections |
+| Data Center / 数据中心 | `01-SiteV2/site/data-center.html` | internal factual-data serving and review surface |
+| Application Center / 应用中心 | `trend-radar.html`, `intelligence-map.html`, report routes | internal downstream analysis and research surfaces |
+| Dashboard / 仪表盘 | `01-SiteV2/site/operations-console.html` | internal operations backend |
 
-The public sidebar has four Data Center entries (事件库、社群情报、一线观点、实体库) and two Application Center entries (变化雷达、观澜研究). FDE, AI Hardware, relationships, and Funding Insights remain supported as thematic or subordinate routes rather than primary navigation. Opportunity Map is `noindex,nofollow` and unlisted.
+The public website must not expose Data Center or Application Center as primary columns. Funding Insights owns its public navigation and may consume their governed data projections without exposing the internal information architecture.
 
 ## Retired Routes
 
@@ -110,7 +107,7 @@ Rules:
 - FDE, hardware, and tags are projections/assertions from accepted evidence only.
 - Missing and conflicting fields remain explicit.
 - Importance, value, opportunity, trend maturity, recommendation, advice, `why_watch`, and `business_meaning` are forbidden in V4 canonical outputs.
-- The V4 sidebar and Data Center / Application Center page plan are the only current public page contract.
+- Data Center and Application Center remain internal data/research surfaces; independent public applications must not expose their raw column navigation.
 - Targeted company, product, funding, and deployment backfill is an operational discovery queue. Search results remain leads until original-source capture, exact-span Claim extraction, and the responsible V4 gate pass.
 - Same-date accepted collection is immutable reusable input: when source collection and the monitor quality gate have succeeded, any downstream retry must restore that artifact and must not recollect.
 - Recollection is allowed only when the accepted artifact is missing or expired, the monitor quality gate did not pass, or the user explicitly requests recollection. The workflow/report must record the applicable reason.

@@ -75,11 +75,11 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Hermes contract | HERMES-V4.0-control-plane-watchdog |
 | Skill Store version | v2.0.1 GPT-5.6 full-audit corrections |
 | Git tag | `v4.8.0-research-homepage` |
-| Current entries | Data Center: Event Library / Community Intelligence / First-Line Viewpoints / Entity Library with Investment Institutions. Application Center: Trend Radar / Guanlan Research. Funding Insights is a research subroute; Opportunity Map is an unlisted internal lab; Dashboard is backend. |
+| Current entries | Public: independent Funding Insights application. Internal: Data Center, Application Center research projections, Opportunity Map, and Dashboard. |
 
 ## Current Product Baseline
 
-- WaveSight AI V4.8 keeps the private evidence repository and V4 factual contracts unchanged while adding a data-backed research-magazine public homepage on top of the evidence-backed Investment Institution Library and complete Funding Insights fields.
+- WaveSight AI V4.8 introduced the evidence-backed Investment Institution Library and complete Funding Insights fields. The accompanying research-magazine homepage was subsequently retired after the product boundary was corrected: Funding Insights is the independent public application, while Data Center / Application Center remain internal foundations.
 - WaveSight AI is an AI industry data center. It produces source-traceable structured facts, not decisions, recommendations, commercial judgments, or education.
 - The canonical chain is SourceArtifact -> RawDocument -> Claim / Entity -> CanonicalEvent -> FDE / hardware projections -> data service.
 - SITE-V4.6.0 is the current public release. It adds a lightweight verified-data homepage, preserves the focused sidebar on column pages, keeps investment institutions inside Entity Library, and retains complete Funding Insights financing fields without introducing a new primary entry.
@@ -132,7 +132,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Dashboard | `01-SiteV2/site/operations-console.html` | Data Observation operations governance backend |
 | Pipeline Dashboard | `01-SiteV2/site/pipeline-dashboard.html` | Retired route redirecting to the V4 Operations Console |
 | Admin | `01-SiteV2/site/admin.html` | Admin entry, kept |
-| Root | `01-SiteV2/site/index.html` | Data-backed research-magazine public homepage with the governed six entrances |
+| Root | `01-SiteV2/site/index.html` | Redirect-only alias to the independent Funding Insights application |
 
 Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is for traceability only and is not current execution truth.
 

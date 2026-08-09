@@ -109,8 +109,8 @@ const packageLockVersion = readJson("package-lock.json").version;
 if (packageVersion !== expected.packageVersion) fail(`package.json expected ${expected.packageVersion}, found ${packageVersion || "missing"}`);
 if (packageLockVersion !== expected.packageVersion) fail(`package-lock.json expected ${expected.packageVersion}, found ${packageLockVersion || "missing"}`);
 
+const rootEntry = "01-SiteV2/site/index.html";
 const sitePages = [
-  "01-SiteV2/site/index.html",
   "01-SiteV2/site/data-center.html",
   "01-SiteV2/site/intelligence-map.html",
   "01-SiteV2/site/opportunity-map.html",
@@ -125,7 +125,7 @@ const redirectPages = [
   "01-SiteV2/site/reports.html",
   "01-SiteV2/site/pipeline-dashboard.html",
 ];
-for (const file of new Set([...sitePages, ...redirectPages])) expectText(file, expected.site, "current SITE version");
+for (const file of new Set([rootEntry, ...sitePages, ...redirectPages])) expectText(file, expected.site, "current SITE version");
 expectText("01-SiteV2/site/operations-console.html", expected.ops, "current Operations Backend version");
 expectText("01-SiteV2/site/intelligence-map.html", expected.reports);
 expectText("01-SiteV2/site/weekly-ai-business-change-radar.html", expected.reports);
@@ -166,11 +166,6 @@ const fundingInsights = readJson("01-SiteV2/site/data/funding-insights-v1.json")
 if (fundingInsights.meta?.site_version !== expected.site) {
   fail(`Funding Insights site version expected ${expected.site}, found ${fundingInsights.meta?.site_version || "missing"}`);
 }
-const homepage = readJson("01-SiteV2/site/data/homepage-v1.json");
-if (homepage.meta?.site_version !== expected.site) {
-  fail(`Homepage site version expected ${expected.site}, found ${homepage.meta?.site_version || "missing"}`);
-}
-
 const personReview = readJson("01-SiteV2/content/11-databases/entity-history-v1/person-account-review-decisions.json");
 if (personReview.review_version !== "PERSON-REVIEW-V1.0") fail("base person/account review must remain PERSON-REVIEW-V1.0");
 if (personReview.summary?.candidates !== 37 || personReview.summary?.expected_public_natural_people !== 31 || personReview.summary?.quarantined !== 6) {

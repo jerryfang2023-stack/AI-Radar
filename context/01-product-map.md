@@ -1,7 +1,7 @@
 ---
 status: current
 scope: product-map
-last_updated: 2026-07-31
+last_updated: 2026-08-09
 use_when:
   - product planning
   - page or navigation decisions
@@ -9,7 +9,7 @@ use_when:
 priority: current
 ---
 
-# 01 Product Map - SITE-V4.4 Two-Center Focus
+# 01 Product Map - Internal Data Foundation and Independent Applications
 
 ## Current Product Structure
 
@@ -30,20 +30,18 @@ priority: current
 | Guanlan Research | Periodic reports plus capital/funding and enterprise AI deployment research topics | Active downstream application hub |
 | Dashboard | Production-chain, source traceability, data quality, version governance, Skill Store, and release status | Active backend |
 
-## Current Navigation
+## Current Product Boundary
 
 ```text
-Data Center
-|- Event Library
-|- Community Intelligence
-|- First-Line Viewpoints
-`- Entity Library
-Application Center
-|- Trend Radar
-`- Guanlan Research
+Internal foundation
+|- Data Center / entity and event projections
+|- Application Center / research projections
+`- Operations dashboard
+Public applications
+`- Funding Insights
 ```
 
-FDE and AI Hardware remain Event Library thematic views, while evidence-backed relationships are shown inside Entity Library details. Funding Insights remains a Guanlan Research topic route. Opportunity Map remains an unlisted internal lab route with `noindex,nofollow`. Dashboard remains an operations backend and is not part of public navigation.
+FDE, AI Hardware, entity relationships, Trend Radar, Guanlan Research, Opportunity Map, and the dashboard remain internal supporting surfaces. Funding Insights is an independent public application backed by the governed financing and investment-institution projections; it does not expose Data Center / Application Center as public columns.
 
 ## Asset Flow
 
