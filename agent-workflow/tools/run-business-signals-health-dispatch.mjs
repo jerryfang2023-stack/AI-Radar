@@ -77,7 +77,15 @@ function readOriginJson(file, fallback = null) {
 }
 
 function v4Assets() {
-  const fetch = runOptional("git", ["fetch", "origin", "main", "--quiet"]);
+  // actions/checkout shallow clones do not guarantee remote.origin.fetch is
+  // configured. Use an explicit refspec so a successful fetch also refreshes
+  // the exact remote-tracking ref read below.
+  const fetch = runOptional("git", [
+    "fetch",
+    "origin",
+    "+refs/heads/main:refs/remotes/origin/main",
+    "--quiet",
+  ]);
   const manifestPath = `01-SiteV2/content/11-databases/data-center-v4/${date}/manifest.json`;
   const gatePath = `agent-workflow/reports/${date}-data-center-v4-integrity-gate.json`;
   const frontstagePath = "01-SiteV2/site/data/data-center-v4-frontstage.json";
