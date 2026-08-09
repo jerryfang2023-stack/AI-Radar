@@ -1865,6 +1865,21 @@ test("daily workflow resumes downstream failures without repeating accepted coll
   assert.match(agentRules, /must restore that artifact and must not recollect/u);
 });
 
+test("cloud Business Signals health dispatch waits for downstream completion", () => {
+  const workflow = fs.readFileSync(path.join(root, ".github/workflows/business-signals-health-dispatch.yml"), "utf8");
+  const dispatcher = fs.readFileSync(path.join(root, "agent-workflow/tools/run-business-signals-health-dispatch.mjs"), "utf8");
+
+  assert.match(workflow, /timeout-minutes: 45/u);
+  assert.match(workflow, /--wait=true/u);
+  assert.match(workflow, /--wait-timeout-minutes=35/u);
+  assert.match(dispatcher, /waitForBusinessSignalsRun/u);
+  assert.match(dispatcher, /waitForHealthyV4/u);
+  assert.match(dispatcher, /Business Signals run concluded/u);
+  assert.match(dispatcher, /ready: fetch\.ok/u);
+  assert.match(dispatcher, /Timed out waiting for Business Signals publication/u);
+  assert.match(dispatcher, /action: "completed"/u);
+});
+
 test("source-intake gate replays V4 evidence eligibility without private Raw routing fields", () => {
   const accepted = {
     eligibleForV4Extraction: true,
@@ -1911,6 +1926,11 @@ test("production-chain staleness ignores clean-checkout filesystem timestamp ord
 
   assert.match(gate, /git", \[\s*"status",\s*"--porcelain"/u);
   assert.match(gate, /relevantWorktreeChanged \? Object\.entries\(downstreamGroups\) : \[\]/u);
+  assert.match(gate, /application_opportunity/u);
+  assert.match(gate, /application_trend/u);
+  assert.match(gate, /application_funding/u);
+  assert.match(gate, /blockedStaleGroups = blockStale[\s\S]*!group\.name\.startsWith\("application_"\)/u);
+  assert.match(gate, /application_warning_groups/u);
 });
 
 test("production-chain handoff uses V4 eligible document counts instead of retired Pool markers", () => {

@@ -8,8 +8,8 @@
     "generatedAt": "2026-08-09T01:18:04.367Z",
     "latestDataDate": "2026-08-09",
     "currentDate": "2026-08-09",
-    "eventCount": 1962,
-    "quarantinedEventCount": 17
+    "eventCount": 1963,
+    "quarantinedEventCount": 16
   },
   "hardware": [
     {
@@ -9994,7 +9994,7 @@
       "eventGroup": "融资与并购",
       "status": "announced",
       "statusLabel": "已公布",
-      "publicationStatus": "verified",
+      "publicationStatus": "quarantined",
       "title": "AI芯片市场融资新闻（2026年5月）——新市场推介",
       "originalTitle": "AI Chip Market Funding News (May 2026) – New Market Pitch",
       "subject": "OLIX",
@@ -10006,8 +10006,12 @@
         "$1 billion"
       ],
       "locations": [],
-      "missingFields": [],
-      "conflicts": [],
+      "missingFields": [
+        "company_specific_amount"
+      ],
+      "conflicts": [
+        "multi_company_funding_claim_amount_conflict"
+      ],
       "tags": [],
       "facets": {
         "ai_market_category": [],
@@ -109309,6 +109313,54 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/987/367.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-af4a44cc88f5db09",
+      "dataDate": "2026-08-09",
+      "date": "2026-08-07",
+      "updatedDate": "2026-08-09",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "马哈拉施特拉邦政府批准₹11.26 Crore人工智能计划以提升公共服务，ETGovernment",
+      "originalTitle": "Maharashtra Government Approves ₹11.26 Crore AI Initiative to Enhance Public Services, ETGovernment",
+      "subject": "Maharashtra government",
+      "action": "procurement_contract",
+      "object": "Sarvam AI sovereign AI solutions",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "display_title_zh"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-4579cfff76862f91",
+        "EN-ee1e31ffef7dbe64"
+      ],
+      "entityNames": [
+        "Maharashtra government",
+        "Sarvam"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://government.economictimes.indiatimes.com/news/technology/maharashtra-clears-11-26-cr-sarvam-ai-deployment-for-govt-departments/133022514",
+      "publisher": "government.economictimes.indiatimes.com"
     },
     {
       "id": "EV-d50bfbdb31595942",

@@ -730,7 +730,7 @@ jobs:
           What this PR contains:
           - Structured SourceArtifact / RawDocument intake and body-free evidence locators; complete originals are committed only to the private evidence repository.
           - Data Center V4 factual bundle generated, gated, and materialized before application projections.
-          - Opportunity Map, Trend Radar, and Funding Insights generated from V4 evidence.
+          - Opportunity Map, Trend Radar, and Funding Insights were attempted independently from V4 evidence; any failed projection is reported as a downstream warning and does not discard accepted V4 facts.
           - Operations dashboard data included after V4 materialization.
           - Retired compatibility writers remain disabled; archived compatibility assets are not staged or deployed.
           - Persistent asset manifest for production recovery.

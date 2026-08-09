@@ -5,6 +5,7 @@ import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { buildIndustryReportsData } from "../../../01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs";
+import { SITE_VERSION } from "../render-periodic-report-pages.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "../../..");
@@ -144,7 +145,7 @@ test("legacy public routes are redirects and report detail pages use the V4 shel
   for (const [file, target] of redirects) {
     const html = fs.readFileSync(path.join(root, "01-SiteV2/site", file), "utf8");
     assert.match(html, new RegExp(`url=${target.replace(/[?]/gu, "\\?")}`, "u"));
-    assert.match(html, /SITE-V4\.4\.1-china-market-scope/u);
+    assert.ok(html.includes(`<meta name="wavesight-version" content="${SITE_VERSION}">`));
     assert.doesNotMatch(html, /wavesight-nav\.css|wavesight-topbar/u);
   }
 
@@ -153,7 +154,7 @@ test("legacy public routes are redirects and report detail pages use the V4 shel
   assert.ok(reportPages.length >= 2);
   for (const file of reportPages) {
     const html = fs.readFileSync(path.join(root, "01-SiteV2/site", file), "utf8");
-    assert.match(html, /SITE-V4\.4\.1-china-market-scope/u);
+    assert.ok(html.includes(`<meta name="wavesight-version" content="${SITE_VERSION}">`));
     assert.match(html, /REPORTS-V1\.2\.0-research-hub/u);
     assert.match(html, /assets\/data-center-v4\.css/u);
     assert.match(html, /class="dc-sidebar"/u);

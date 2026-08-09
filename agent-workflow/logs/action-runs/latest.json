@@ -1,52 +1,60 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-04T04:56:32.963Z",
-  "date": "2026-08-04",
-  "action": "Funding Insights",
-  "action_status": "current",
+  "generated_at": "2026-08-09T05:20:56.535Z",
+  "date": "2026-08-09",
+  "action": "Repair weekly Business Signals completion semantics",
+  "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
-  "status": "passed",
-  "summary": "Recovered the 2026-08-04 V4 funding projection and published three evidence-gated cards without blocked events.",
+  "status": "success",
+  "summary": "Audited 2026-08-03 through 2026-08-09 failures, decoupled downstream projections from accepted V4 publication, made cloud health dispatch verify target completion, and synchronized split frontstage data",
   "contexts": [
-    "context/00-current-state.md",
-    "context/08-automation.md",
-    "context/version-ledger.md"
+    "AGENTS.md",
+    "context/10-experience-automation.md",
+    "context/11-hermes-daily-supervision-instructions.md",
+    "context/12-data-center-v4.md"
   ],
   "changed_files": [
-    "agent-workflow/tools/build-data-center-v4.mjs",
-    "agent-workflow/tools/generate-funding-insights-deepseek.mjs",
-    "agent-workflow/tools/funding-insight-v1-utils.mjs",
-    "agent-workflow/tools/classify-funding-taxonomy-v4-1.mjs",
-    "01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs"
+    ".github/workflows/business-signals-health-dispatch.yml",
+    ".github/workflows/daily-persistent-assets-pr.yml",
+    "agent-workflow/tools/run-business-signals-health-dispatch.mjs",
+    "agent-workflow/tools/assert-daily-production-chain.mjs",
+    "agent-workflow/tools/classify-business-signals-production-state.mjs",
+    "agent-workflow/tools/assert-business-signals-pipeline-policy.mjs",
+    "agent-workflow/tools/tests/data-center-v4.test.mjs",
+    "agent-workflow/tools/tests/industry-reports-frontstage.test.mjs",
+    "01-SiteV2/site/data/data-center-v4",
+    "agent-workflow/reports/2026-08-09-business-signals-weekly-failure-audit.md"
   ],
-  "outputs": [
-    "01-SiteV2/content/12-applications/funding-insights/2026-08-04.json",
-    "01-SiteV2/site/data/funding-insights-v1.json"
-  ],
+  "outputs": [],
   "checks": [
     "npm test",
-    "npm run assert:funding-insights:full",
-    "npm run sync:data-center"
+    "classifier fixtures",
+    "health-dispatch policy fixtures",
+    "pipeline policy gate",
+    "Opportunity regression",
+    "git diff --check",
+    "code-review Standards and Spec audit"
   ],
   "issues": [
-    "contract value misclassified as funding",
-    "entity prefix and same-name research drift",
-    "current output self-deduplication",
-    "unreviewed MetaX catalog exposure"
+    "seven first scheduled runs failed",
+    "dispatch acceptance was mistaken for cloud completion",
+    "application staleness could re-block core V4",
+    "split event index drifted 1962 versus 1963"
   ],
-  "risks": [],
+  "risks": [
+    "downstream application failures remain warnings and require their owning lane repair",
+    "cloud verification waits up to 35 minutes"
+  ],
   "lessons": [
-    "canonical V4 event evidence must override secondary research",
-    "model validation errors need actionable correction instructions"
+    "controller liveness is not production completion",
+    "strict application gates must not discard accepted canonical facts",
+    "release tests should reuse the current version constant"
   ],
   "reusable_rules": [
-    "exclude current output from historical deduplication",
-    "preserve taxonomy decision order",
-    "require explicit catalog review before public company/product projection"
+    "cloud health is green only after target success and same-date origin/main V4 readiness",
+    "application projection staleness is visible but non-blocking to core V4"
   ],
   "retired_flags": [],
-  "notes": [
-    "Windows automation task contract passed in the primary repository; pre-existing dirty files were preserved for recoverable cleanup after deployment."
-  ]
+  "notes": []
 }

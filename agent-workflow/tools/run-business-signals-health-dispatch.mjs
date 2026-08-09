@@ -16,6 +16,9 @@ const args = new Map(
 
 const date = args.get("date") || shanghaiDate();
 const dryRun = args.get("dry-run") === "true";
+const waitForCompletion = args.get("wait") === "true";
+const waitTimeoutMs = Math.max(1, Number(args.get("wait-timeout-minutes") || 35)) * 60_000;
+const waitPollMs = Math.max(1, Number(args.get("wait-poll-seconds") || 15)) * 1_000;
 const passScore = args.get("pass-score") || "85";
 const workflowFile = "daily-persistent-assets-pr.yml";
 
@@ -45,6 +48,10 @@ function runOptional(command, commandArgs) {
     stdout: result.stdout || "",
     stderr: result.stderr || result.error?.message || "",
   };
+}
+
+function sleep(milliseconds) {
+  Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, milliseconds);
 }
 
 function readJson(file, fallback = null) {
@@ -81,7 +88,8 @@ function v4Assets() {
   const telemetry = readOriginJson(telemetryPath, {});
   const eventCount = Number(gate?.counts?.canonical_events || manifest?.counts?.canonical_events || 0);
   return {
-    ready: manifest?.date === date
+    ready: fetch.ok
+      && manifest?.date === date
       && gate?.date === date
       && gate?.ok === true
       && telemetry?.meta?.data_date === date
@@ -186,6 +194,77 @@ function reusableFailedRun(sameDateRuns) {
   return null;
 }
 
+export function selectBusinessSignalsRun(sameDateRuns, { knownRunIds = new Set(), targetRunId = null } = {}) {
+  const candidates = sameDateRuns
+    .filter((run) => run.event === "workflow_dispatch")
+    .filter((run) => targetRunId ? run.databaseId === targetRunId : !knownRunIds.has(run.databaseId))
+    .sort((left, right) => String(right.createdAt).localeCompare(String(left.createdAt)));
+  return candidates[0] || null;
+}
+
+export function waitForHealthyV4({
+  deadline,
+  run = null,
+  inspectV4 = v4Assets,
+  pause = sleep,
+  now = Date.now,
+} = {}) {
+  let observedV4 = null;
+  while (now() < deadline) {
+    observedV4 = inspectV4();
+    if (observedV4.fetch_ok && observedV4.ready) {
+      return {
+        ok: true,
+        action: "completed",
+        reason: run
+          ? `Business Signals run completed and same-date V4 assets are healthy on origin/main: ${run.url}`
+          : "same-date V4 assets are healthy on origin/main after publication completed",
+        run,
+        v4: observedV4,
+      };
+    }
+    pause(waitPollMs);
+  }
+  const inspectionNote = observedV4?.fetch_ok === false
+    ? "; the final origin/main fetch was unsuccessful"
+    : "";
+  return {
+    ok: false,
+    action: "publication_wait_timeout",
+    reason: run
+      ? `Timed out waiting for Business Signals publication to make same-date V4 assets healthy on origin/main${inspectionNote}: ${run.url}`
+      : `Timed out waiting for same-date V4 assets to become healthy on origin/main${inspectionNote}`,
+    run,
+    v4: observedV4,
+  };
+}
+
+function waitForBusinessSignalsRun({ knownRunIds = new Set(), targetRunId = null } = {}) {
+  const deadline = Date.now() + waitTimeoutMs;
+  let observedRun = null;
+  while (Date.now() < deadline) {
+    const runs = workflowRuns();
+    if (!runs.available) return { ok: false, action: "inspection_failed", reason: runs.error, run: observedRun, v4: null };
+    observedRun = selectBusinessSignalsRun(runs.sameDateRuns, { knownRunIds, targetRunId }) || observedRun;
+    if (observedRun?.status === "completed") {
+      if (observedRun.conclusion !== "success") {
+        return { ok: false, action: "downstream_failed", reason: `Business Signals run concluded ${observedRun.conclusion}: ${observedRun.url}`, run: observedRun, v4: null };
+      }
+      return waitForHealthyV4({ deadline, run: observedRun });
+    }
+    sleep(waitPollMs);
+  }
+  return {
+    ok: false,
+    action: "downstream_wait_timeout",
+    reason: observedRun
+      ? `Timed out waiting for Business Signals run ${observedRun.url}`
+      : "Timed out waiting for the dispatched Business Signals run to appear",
+    run: observedRun,
+    v4: null,
+  };
+}
+
 export function decideHealthState({ runsAvailable, runsError = "", v4Ready = false, assetsReady, activeRun, publication, successfulRun, reusableRun }) {
   if (!runsAvailable) return { ok: false, action: "failed", reason: `GitHub run inspection failed: ${runsError}`, dispatchRequired: false };
   if (v4Ready) {
@@ -239,6 +318,38 @@ function runPolicyFixtures() {
   assert.equal(resume.action, "resume_dispatch_required");
   assert.equal(resume.resumeRunId, 42);
   assert.equal(decideHealthState(base).dispatchRequired, true);
+  const selected = selectBusinessSignalsRun([
+    { databaseId: 40, event: "workflow_dispatch", createdAt: "2026-08-09T00:00:00Z" },
+    { databaseId: 41, event: "schedule", createdAt: "2026-08-09T00:05:00Z" },
+    { databaseId: 42, event: "workflow_dispatch", createdAt: "2026-08-09T00:10:00Z" },
+  ], { knownRunIds: new Set([40]) });
+  assert.equal(selected.databaseId, 42);
+  assert.equal(selectBusinessSignalsRun([selected], { targetRunId: 42 }).databaseId, 42);
+  const publicationChecks = [
+    { fetch_ok: true, ready: false },
+    { fetch_ok: true, ready: true },
+  ];
+  const publication = waitForHealthyV4({
+    deadline: 1,
+    run: { url: "https://example.test/run/42" },
+    inspectV4: () => publicationChecks.shift(),
+    pause: () => {},
+    now: () => 0,
+  });
+  assert.equal(publication.ok, true);
+  assert.equal(publicationChecks.length, 0);
+  const fetchChecks = [
+    { fetch_ok: false, ready: false },
+    { fetch_ok: true, ready: true },
+  ];
+  const fetchRecovery = waitForHealthyV4({
+    deadline: 1,
+    inspectV4: () => fetchChecks.shift(),
+    pause: () => {},
+    now: () => 0,
+  });
+  assert.equal(fetchRecovery.ok, true);
+  assert.equal(fetchChecks.length, 0);
   console.log(JSON.stringify({ ok: true, fixture: "business-signals-health-state" }, null, 2));
 }
 
@@ -277,12 +388,14 @@ function writeReports(payload) {
     `- action: ${payload.action}`,
     `- reason: ${payload.reason}`,
     `- dry_run: ${payload.dry_run}`,
+    `- wait_for_completion: ${payload.wait_for_completion}`,
     `- workflow: ${workflowFile}`,
     `- v4: \`${JSON.stringify(payload.v4)}\``,
     `- assets: \`${JSON.stringify(payload.assets)}\``,
     `- active_run: ${payload.active_run?.url || "none"}`,
     `- successful_run: ${payload.successful_run?.url || "none"}`,
     `- reusable_run: ${payload.reusable_run?.url || "none"}`,
+    `- completed_run: ${payload.completed_run?.url || "none"}`,
     `- publication: \`${JSON.stringify(payload.publication)}\``,
     `- dispatch_output: ${payload.dispatch_output || "none"}`,
     "",
@@ -317,6 +430,8 @@ function main() {
   });
   let { action, reason, ok } = decision;
   let dispatch = null;
+  let completion = null;
+  const knownRunIds = new Set(runs.sameDateRuns.map((run) => run.databaseId));
 
   if (decision.dispatchRequired) {
     dispatch = dispatchWorkflow(decision.resumeRunId);
@@ -327,6 +442,19 @@ function main() {
         ? `same-date source intake is reusable; dispatched downstream recovery from run ${decision.resumeRunId} without recollection`
         : "no reusable same-date source intake exists; dispatched primary Business Signals workflow with fresh collection"
       : `failed to dispatch primary Business Signals workflow: ${dispatch.output || "unknown error"}`;
+    if (dispatch.ok && waitForCompletion && !dryRun) {
+      completion = waitForBusinessSignalsRun({ knownRunIds });
+      ({ ok, action, reason } = completion);
+    }
+  } else if (waitForCompletion && decision.action === "waiting" && activeRun) {
+    completion = waitForBusinessSignalsRun({ targetRunId: activeRun.databaseId });
+    ({ ok, action, reason } = completion);
+  } else if (waitForCompletion && decision.action === "publication_waiting") {
+    completion = waitForHealthyV4({
+      deadline: Date.now() + waitTimeoutMs,
+      run: successfulRun,
+    });
+    ({ ok, action, reason } = completion);
   }
 
   const payload = {
@@ -334,6 +462,7 @@ function main() {
     date,
     generated_at: new Date().toISOString(),
     dry_run: dryRun,
+    wait_for_completion: waitForCompletion,
     action,
     reason,
     workflow: workflowFile,
@@ -343,6 +472,8 @@ function main() {
     active_run: activeRun,
     successful_run: successfulRun,
     reusable_run: reusableRun,
+    completed_run: completion?.run || null,
+    completion_v4: completion?.v4 || null,
     publication,
     same_date_runs: runs.sameDateRuns,
     dispatch_output: dispatch?.output || "",
