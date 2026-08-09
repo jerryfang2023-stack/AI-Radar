@@ -113,7 +113,7 @@
     "display_title_zh": "Claude Code v2.1.225 发布：新增网关支出限额支持与工作区信任提示"
   },
   {
-    "event_type": "hardware_deployment",
+    "event_type": "procurement_contract",
     "event_status": "announced",
     "event_time": "2026-08-04T00:00:00.000Z",
     "disclosed_at": "2026-08-04T00:00:00.000Z",
@@ -121,8 +121,8 @@
       "EN-d25e715a1ce00764",
       "EN-8d4321d936320802"
     ],
-    "action": "hardware_deployment",
-    "object": "AI factory in Norway comprising a 133 MW deployment powered by Dell Technologies AI infrastructure",
+    "action": "procurement_contract",
+    "object": "Dell Technologies AI infrastructure, including Dell PowerRack systems with PowerEdge XE9812 servers including NVIDIA accelerators",
     "metrics": [
       "133 MW",
       "9812 servers"
@@ -146,7 +146,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-be5bece353aeedcd",
+    "event_id": "EV-83d022f89ba29209",
     "display_title_zh": "Volta 选择戴尔科技助力打造下一代 AI 工厂"
   },
   {
@@ -226,49 +226,6 @@
     "display_title_zh": "KIDZ AI与Limestone Networks签署数据中心谅解备忘录，部署开放权重AI模型的推理计算基础设施，推进其4460万美元的Canopy Wave协议"
   },
   {
-    "event_type": "funding",
-    "event_status": "announced",
-    "event_time": "2026-08-03T00:00:00.000Z",
-    "disclosed_at": "2026-08-03T00:00:00.000Z",
-    "entities": [
-      "EN-1360aaacd76daa34",
-      "EN-9cb45a27a2808c01",
-      "EN-dfc0fdff7af68ed2"
-    ],
-    "action": "funding",
-    "object": "$312 million",
-    "metrics": [
-      "$312 million",
-      "$300 million",
-      "$1 billion"
-    ],
-    "locations": [],
-    "claim_refs": [
-      "CL-e2910383935e814f",
-      "CL-e161ec83f84dd8b2",
-      "CL-aeed5454eae363d4"
-    ],
-    "source_refs": [
-      "SA-74589a5317d492d6"
-    ],
-    "conflicts": [
-      "multi_company_funding_claim_amount_conflict"
-    ],
-    "missing_fields": [
-      "company_specific_amount"
-    ],
-    "update_history": [
-      {
-        "source_ref": "SA-74589a5317d492d6",
-        "disclosed_at": "2026-08-03T00:00:00.000Z",
-        "status": "announced"
-      }
-    ],
-    "publication_status": "quarantined",
-    "event_id": "EV-5fa0cfcca24f0a83",
-    "display_title_zh": "AI芯片市场融资新闻（2026年5月）——新市场推介"
-  },
-  {
     "event_type": "product_release",
     "event_status": "announced",
     "event_time": "",
@@ -309,16 +266,16 @@
     "disclosed_at": "2026-08-09T00:20:16.261Z",
     "entities": [
       "EN-65819e198c32566a",
-      "EN-ea0a0d38a19ecbf4"
+      "EN-eff87507147daffe"
     ],
     "action": "product_release",
-    "object": "Agent Gateway",
+    "object": "Agent-to-Agent Connections",
     "metrics": [],
     "locations": [],
     "claim_refs": [
-      "CL-695a536e3e3e7a10",
       "CL-a049de814bf93ad9",
-      "CL-701b9ea5d3a431ab"
+      "CL-701b9ea5d3a431ab",
+      "CL-695a536e3e3e7a10"
     ],
     "source_refs": [
       "SA-475ddb0d8c87c697"
@@ -335,7 +292,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-778072e4940c5d43",
+    "event_id": "EV-92d9b6931bcfdd11",
     "display_title_zh": "Okta宣布新创新，在运行时保护AI智能体并自动化持续智能体治理"
   },
   {
@@ -348,7 +305,7 @@
       "EN-ee1e31ffef7dbe64"
     ],
     "action": "procurement_contract",
-    "object": "Sarvam AI sovereign AI solutions",
+    "object": "Sarvam AI",
     "metrics": [],
     "locations": [],
     "claim_refs": [
@@ -358,9 +315,7 @@
       "SA-147762c19ee4f634"
     ],
     "conflicts": [],
-    "missing_fields": [
-      "display_title_zh"
-    ],
+    "missing_fields": [],
     "update_history": [
       {
         "source_ref": "SA-147762c19ee4f634",
@@ -369,8 +324,8 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-af4a44cc88f5db09",
-    "display_title_zh": ""
+    "event_id": "EV-715eb0debea4180c",
+    "display_title_zh": "马哈拉施特拉邦政府批准₹11.26 Crore人工智能计划以提升公共服务，ETGovernment"
   },
   {
     "event_type": "procurement_contract",
@@ -682,14 +637,15 @@
     "event_time": "2026-08-08T02:04:32.000Z",
     "disclosed_at": "2026-08-08T02:04:32.000Z",
     "entities": [
+      "EN-c70eca6b0f88f44d",
       "EN-cb4754c48f8023d0"
     ],
     "action": "product_release",
-    "object": "跨会话消息传递功能",
+    "object": "Claude Code v2.1.224",
     "metrics": [],
     "locations": [],
     "claim_refs": [
-      "CL-e5a2974bfd0f89cd"
+      "CL-c5ca2729aa71ca17"
     ],
     "source_refs": [
       "SA-0dbeef22f000d1aa"
@@ -704,7 +660,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-b27a05d7ff937744",
+    "event_id": "EV-3b02f281ab8fa91d",
     "display_title_zh": "Claude Code v2.1.224 支持 AI 跨会话消息传递"
   },
   {
@@ -741,6 +697,39 @@
     "publication_status": "verified",
     "event_id": "EV-51891fe9f47dd616",
     "display_title_zh": "Cloudflare 发布 Kitesurf：专为 AI 智能体打造的云端浏览器"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-08-08T03:39:29.000Z",
+    "disclosed_at": "2026-08-08T03:39:29.000Z",
+    "entities": [
+      "EN-9fbf261b62c1d7c0",
+      "EN-7d09b4a9643fd2bb",
+      "EN-0a5ae6139b8c8c1e"
+    ],
+    "action": "product_release",
+    "object": "Explain This Copilot AI feature for classic Outlook on Windows 10 and Windows 11",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-092ca64a0072aae3"
+    ],
+    "source_refs": [
+      "SA-79ef511596c5173d"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-79ef511596c5173d",
+        "disclosed_at": "2026-08-08T03:39:29.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-bfaac87ceac44b9d",
+    "display_title_zh": "微软为 Win10/Win11 经典版 Outlook 推送 Explain This：Copilot 基于上下文解释选中文本"
   },
   {
     "event_type": "service_change",
@@ -925,37 +914,6 @@
     },
     "event_id": "EV-0679a9b49b53ddbd",
     "display_title_zh": "苹果 Mac 简体中文支持文档更新，\"Apple 智能\"阿里千问扩展现身"
-  },
-  {
-    "event_type": "product_release",
-    "event_status": "announced",
-    "event_time": "2026-08-08T03:29:51.000Z",
-    "disclosed_at": "2026-08-08T03:29:51.000Z",
-    "entities": [
-      "EN-9fbf261b62c1d7c0"
-    ],
-    "action": "product_release",
-    "object": "新版 Outlook 每日小结 AI 功能",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-2944ec338a54c772"
-    ],
-    "source_refs": [
-      "SA-66a4b9b516417868"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-66a4b9b516417868",
-        "disclosed_at": "2026-08-08T03:29:51.000Z",
-        "status": "announced"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-b3e7a0aac3ba7439",
-    "display_title_zh": "微软 Win10/Win11 新版 Outlook 收件箱塞入 Copilot，AI 摘要过去 8 小时邮件"
   },
   {
     "event_type": "product_release",
