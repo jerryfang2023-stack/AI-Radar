@@ -1,41 +1,28 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-09T12:34:34.702Z",
+  "generated_at": "2026-08-09T13:12:54.166Z",
   "date": "2026-08-09",
-  "action": "Private Evidence Backup Recovery",
+  "action": "remove-periodic-report-inline-source-annotations",
   "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
-  "status": "passed",
-  "summary": "Synchronized stale local private evidence checkout to authoritative remote and reduced 2026-08-09 RawDocument evidence gaps from 143 to 0",
+  "status": "unknown",
+  "summary": "",
   "contexts": [],
-  "changed_files": [
-    "agent-workflow/tools/assert-private-evidence-remote.mjs",
-    "agent-workflow/tools/recover-private-evidence-from-intake.mjs",
-    "agent-workflow/tools/tests/private-evidence-backup.test.mjs",
-    "context/08-automation.md"
-  ],
+  "changed_files": [],
   "outputs": [],
   "checks": [
-    "assert-private-evidence-backup 2026-08-09 passed with 0 gaps",
-    "assert-public-evidence-boundary passed",
-    "assert-data-center 2026-08-09 passed",
-    "npm test passed",
-    "assert-private-evidence-remote passed"
+    "11 renderer tests",
+    "66 site-core tests",
+    "72-route browser smoke across desktop/laptop/mobile",
+    "zero generated source-annotation matches"
   ],
-  "issues": [
-    "Local private evidence HEAD lagged remote by two commits",
-    "Recovery previously aborted all exact matches when any mismatch occurred",
-    "Recovery could delete immutable intake rows through drop-mismatches"
+  "issues": [],
+  "risks": [
+    "medium"
   ],
-  "risks": [],
-  "lessons": [
-    "Check local and remote private evidence HEAD before diagnosing body loss"
-  ],
-  "reusable_rules": [
-    "Never delete RawDocuments to satisfy evidence coverage",
-    "Persist exact recovery matches and fail closed only on unresolved hashes"
-  ],
+  "lessons": [],
+  "reusable_rules": [],
   "retired_flags": [],
   "notes": []
 }

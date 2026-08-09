@@ -38,22 +38,14 @@ test("June monthly title records DeepSeek title provenance", () => {
   assert.match(metadata.title_generated_at, /^2026-07-18T/u);
 });
 
-test("periodic renderer turns resolvable evidence IDs into understandable links and hides unresolved IDs", () => {
+test("periodic renderer removes all inline source annotations without harming readability", () => {
   const source = "---\ntitle: Test\nstatus: draft\nwindow: 2026-07-06 to 2026-07-12\n---\n## 0. 数据边界\n\n- 事件 [E:EVT-1]、观点 [O:OP-1]、社群 [C:CM-1]、未解析 [E:MISSING]";
   const parsed = parseFrontmatter(source);
   assert.equal(parsed.values.status, "draft");
-  const html = renderBody(parsed.body, {
-    evidenceSources: new Map([
-      ["E:EVT-1", "https://example.com/event?a=1&b=2"],
-      ["O:OP-1", "https://example.com/opinion"],
-      ["C:CM-1", "https://example.com/community"],
-    ]),
-  });
+  const html = renderBody(parsed.body);
   assert.match(html, /id="section-0"/u);
-  assert.match(html, /href="https:\/\/example\.com\/event\?a=1&amp;b=2"[^>]*>查看事件来源<\/a>/u);
-  assert.match(html, />查看观点来源<\/a>/u);
-  assert.match(html, />查看社群来源<\/a>/u);
-  assert.doesNotMatch(html, /\[(?:E|O|C):|EVT-1|OP-1|CM-1|MISSING|report-evidence-ref/u);
+  assert.match(html, /事件、观点、社群、未解析/u);
+  assert.doesNotMatch(html, /查看(?:事件|观点|社群)来源|report-evidence-link|href=|\[(?:E|O|C):|EVT-1|OP-1|CM-1|MISSING/u);
 });
 
 test("public evidence index resolves event, viewpoint, and historical community sources", () => {
@@ -101,6 +93,19 @@ test("recent weekly reports render as editorial modules with evidence last", () 
     ]) assert.match(html, new RegExp(`class="[^"]*${moduleClass}`, "u"), `${date} must render ${moduleClass}`);
     assert.ok(html.indexOf('id="section-0"') > html.indexOf('id="section-8"'), `${date} evidence section must render last`);
     assert.doesNotMatch(html, /<table|^\|[-:| ]+\|/mu);
+  }
+});
+
+test("all published periodic report pages omit inline source annotations", () => {
+  const site = path.join(process.cwd(), "01-SiteV2", "site");
+  const routes = [
+    ...discoverPublishedReports(process.cwd(), "weekly").map((report) => report.route),
+    ...discoverPublishedReports(process.cwd(), "monthly").map((report) => report.route),
+    "weekly-ai-business-change-radar.html",
+  ];
+  for (const route of routes) {
+    const html = fs.readFileSync(path.join(site, route), "utf8");
+    assert.doesNotMatch(html, /查看(?:事件|观点|社群)来源|report-evidence-link|\[(?:E|O|C):/u, route);
   }
 });
 

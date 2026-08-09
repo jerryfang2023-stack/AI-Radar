@@ -450,7 +450,7 @@
       const openSelectedReport = () => {
         if (!selector?.value) return;
         const target = new URL(selector.value, window.location.href);
-        if (target.href !== window.location.href && target.href !== pendingTarget) {
+        if (target.href!== window.location.href && target.href!== pendingTarget) {
           pendingTarget = target.href;
           window.location.assign(target.href);
         }
