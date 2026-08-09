@@ -98,6 +98,14 @@ projection. This isolated action owns only the Vault build, evidence-index sync,
 and Vault assertion; private evidence backup keeps its separate fail-closed
 contract and is not silently folded into the projection step.
 
+Before diagnosing a local private-evidence coverage gap, run the remote boundary
+gate. It requires the configured private-evidence checkout and authenticated
+remote HEAD to match, so a stale local clone is synchronized instead of being
+misreported as missing source bodies. Targeted recovery may ingest only bodies
+whose recomputed content hash matches the immutable RawDocument hash; it keeps
+the intake unchanged, persists every exact match it can recover, and fails
+closed on the remaining mismatches.
+
 The retired sibling `AI热点` root must contain no files and must not remain
 registered in Obsidian. A locked empty directory shell is tolerated until its
 owning desktop process releases the handle; it is not treated as a second Vault.

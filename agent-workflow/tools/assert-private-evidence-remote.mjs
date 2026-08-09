@@ -50,6 +50,15 @@ try {
 }
 
 let remoteHead = "";
+let localHead = "";
+try {
+  localHead = git(["rev-parse", "HEAD"]);
+  if (!/^[a-f0-9]{40}$/u.test(localHead)) {
+    problems.push("local private evidence repository did not return a valid HEAD");
+  }
+} catch (error) {
+  problems.push(`local private evidence repository HEAD is unavailable: ${error.message}`);
+}
 if (remoteUrl) {
   try {
     remoteHead = git(["ls-remote", "origin", "HEAD"]).split(/\s+/u)[0] || "";
@@ -60,6 +69,11 @@ if (remoteUrl) {
     problems.push(`authenticated private evidence remote is inaccessible: ${error.message}`);
   }
 }
+if (localHead && remoteHead && localHead !== remoteHead) {
+  problems.push(
+    `local private evidence HEAD ${localHead} does not match remote HEAD ${remoteHead}; synchronize the private repository before asserting evidence coverage`,
+  );
+}
 
 console.log(JSON.stringify({
   ok: problems.length === 0,
@@ -67,6 +81,7 @@ console.log(JSON.stringify({
   repository,
   remoteUrl,
   anonymousStatus,
+  localHead,
   remoteHead,
   problems,
 }, null, 2));

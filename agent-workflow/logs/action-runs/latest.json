@@ -1,21 +1,41 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-09T10:46:13.962Z",
+  "generated_at": "2026-08-09T12:34:34.702Z",
   "date": "2026-08-09",
-  "action": "Repair recurring automation incidents",
+  "action": "Private Evidence Backup Recovery",
   "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
-  "status": "success",
-  "summary": "Added date-strict First-Line recovery, deterministic Skill runtime sync, and isolated origin/main Guanlan Vault projection; 2026-08-09 final closure passed all affected lanes.",
+  "status": "passed",
+  "summary": "Synchronized stale local private evidence checkout to authoritative remote and reduced 2026-08-09 RawDocument evidence gaps from 143 to 0",
   "contexts": [],
-  "changed_files": [],
+  "changed_files": [
+    "agent-workflow/tools/assert-private-evidence-remote.mjs",
+    "agent-workflow/tools/recover-private-evidence-from-intake.mjs",
+    "agent-workflow/tools/tests/private-evidence-backup.test.mjs",
+    "context/08-automation.md"
+  ],
   "outputs": [],
-  "checks": [],
-  "issues": [],
+  "checks": [
+    "assert-private-evidence-backup 2026-08-09 passed with 0 gaps",
+    "assert-public-evidence-boundary passed",
+    "assert-data-center 2026-08-09 passed",
+    "npm test passed",
+    "assert-private-evidence-remote passed"
+  ],
+  "issues": [
+    "Local private evidence HEAD lagged remote by two commits",
+    "Recovery previously aborted all exact matches when any mismatch occurred",
+    "Recovery could delete immutable intake rows through drop-mismatches"
+  ],
   "risks": [],
-  "lessons": [],
-  "reusable_rules": [],
+  "lessons": [
+    "Check local and remote private evidence HEAD before diagnosing body loss"
+  ],
+  "reusable_rules": [
+    "Never delete RawDocuments to satisfy evidence coverage",
+    "Persist exact recovery matches and fail closed only on unresolved hashes"
+  ],
   "retired_flags": [],
   "notes": []
 }

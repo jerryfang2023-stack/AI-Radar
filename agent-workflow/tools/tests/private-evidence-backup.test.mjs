@@ -44,6 +44,34 @@ test("Vault sync blocks incomplete production evidence and preserves known body 
   assert.match(migrate, /Number\(raw\.body_length \|\| 0\)/u);
 });
 
+test("private evidence recovery keeps intake immutable and ingests exact matches before reporting mismatches", () => {
+  const recovery = fs.readFileSync(
+    path.join(process.cwd(), "agent-workflow/tools/recover-private-evidence-from-intake.mjs"),
+    "utf8",
+  );
+
+  assert.doesNotMatch(recovery, /drop-mismatches|removedRawIds|writeFileSync\(intake\.file/u);
+  assert.ok(
+    recovery.indexOf("const result = fetched.length")
+      < recovery.indexOf("if (mismatches.length) process.exitCode = 1"),
+  );
+  assert.match(recovery, /ok: mismatches\.length === 0/u);
+  assert.match(recovery, /unresolved_mismatches:/u);
+  assert.match(recovery, /contentHash\(candidate\) === expectedHash/u);
+  assert.match(recovery, /mode: "intake_exact_hash"/u);
+});
+
+test("private evidence remote gate rejects a stale local checkout", () => {
+  const remoteGate = fs.readFileSync(
+    path.join(process.cwd(), "agent-workflow/tools/assert-private-evidence-remote.mjs"),
+    "utf8",
+  );
+
+  assert.match(remoteGate, /localHead = git\(\["rev-parse", "HEAD"\]\)/u);
+  assert.match(remoteGate, /localHead !== remoteHead/u);
+  assert.match(remoteGate, /synchronize the private repository before asserting evidence coverage/u);
+});
+
 test("private evidence backup deduplicates bodies by content_hash and isolates historical sources", () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-private-evidence-root-"));
   const backupRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-private-evidence-backup-"));
