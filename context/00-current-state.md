@@ -13,6 +13,8 @@ priority: current
 
 WaveSight AI is on the `V4.8.0-research-homepage` repository release. The public website uses the `SITE-V4.6.0-research-homepage` shell and keeps the existing V4 data-service baseline.
 
+The Data Center now has an independent Git baseline: `GUANLAN-DATA-CENTER-V4.8.1-internal-foundation` / `data-center-v4.8.1-internal-foundation`. Funding Insights keeps its separate `FUNDING-INSIGHT-V1.4.0-financing-fields` application version and release line.
+
 ## Current Positioning
 
 - WaveSight AI is an AI industry data center and structured factual data foundation for downstream AIP, industry research, and startup decision-support products.

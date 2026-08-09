@@ -7,6 +7,8 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 ## Current Version
 
 - Current release: WaveSight `V4.8.0-research-homepage`; the public shell is `SITE-V4.6.0-research-homepage`.
+- Current Data Center Git baseline: `GUANLAN-DATA-CENTER-V4.8.1-internal-foundation`, tagged independently as `data-center-v4.8.1-internal-foundation`.
+- Funding Insights remains independently versioned as `FUNDING-INSIGHT-V1.4.0-financing-fields`; Data Center tags must not be reused for the application website.
 - Current local knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.2-private-evidence-linked`). It is the local operations and human-readable knowledge front door; the repository-local `vault/` path is retired.
 - Current local automation: exactly seven Windows tasks; Final Closure owns the strict 24-table `DATA-LAKE-V4.1` refresh, and Hermes watchdog/heartbeat is one control-plane cycle.
 - Current evidence archive: `PRIVATE-EVIDENCE-STORE-V2.0` is the authoritative content-addressed original-body store outside the public repository and Vault. The public repository and Vault store locators and links, never complete original bodies.
