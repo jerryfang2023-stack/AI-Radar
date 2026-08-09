@@ -5,13 +5,66 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-08T04:22:09.833Z",
-    "latestDataDate": "2026-08-08",
-    "currentDate": "2026-08-08",
-    "eventCount": 1937,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-08-09T01:18:04.367Z",
+    "latestDataDate": "2026-08-09",
+    "currentDate": "2026-08-09",
+    "eventCount": 1962,
+    "quarantinedEventCount": 17
   },
   "hardware": [
+    {
+      "id": "HW-4673613f81881c78",
+      "eventId": "EV-0d1e8308d3c007aa",
+      "dataDate": "2026-08-09",
+      "date": "2026-08-05",
+      "title": "KAYTUS在72天内交付400机架高密度风冷计算集群，部署时间缩短60%",
+      "hardwareType": "compute_cluster",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "data_center",
+      "supplier": "KAYTUS",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 400,
+      "capacityUnit": "racks",
+      "site": "AI data center in Japan",
+      "region": "Japan",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/08/06/3339887/0/en/kaytus-delivers-a-400-rack-high-density-air-cooled-compute-cluster-within-72-days-cutting-deployment-time-by-60.html",
+      "sourceName": "globenewswire.com",
+      "sourceDate": "2026-08-05",
+      "entityIds": []
+    },
+    {
+      "id": "HW-2afca97edf1a7fe8",
+      "eventId": "EV-be5bece353aeedcd",
+      "dataDate": "2026-08-09",
+      "date": "2026-08-04",
+      "title": "Volta 选择戴尔科技助力打造下一代 AI 工厂",
+      "hardwareType": "ai_accelerator",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "edge",
+      "supplier": "NVIDIA",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 133,
+      "capacityUnit": "MW",
+      "site": "未披露",
+      "region": "Europe",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~~usa~2026~08~volta-selects-dell-technologies-to-help-build-next-generation-ai-factories.htm",
+      "sourceName": "dell.com",
+      "sourceDate": "2026-08-04",
+      "entityIds": [
+        "EN-d25e715a1ce00764",
+        "EN-8d4321d936320802"
+      ]
+    },
     {
       "id": "HW-c2cdebe5282bbf1d",
       "eventId": "EV-97363bf0174c24cc",
@@ -2168,6 +2221,622 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-dd6e747e69e825c7",
+      "snapshotKey": "dd6e747e69e825c7",
+      "snapshotId": "HWS-dee2c6b7bd2cb287",
+      "eventId": "EV-47c32b3ef5c0f57a",
+      "eventIds": [
+        "EV-47c32b3ef5c0f57a"
+      ],
+      "dataDate": "2026-08-09",
+      "date": "2026-08-09",
+      "title": "August 2026 Latest Updates",
+      "subject": "OpenAI",
+      "productNames": [
+        "August 2026 Latest Updates"
+      ],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-d11a050f7417594f"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-09",
+          "hardware_fact_id": "HWF-d11a050f7417594f",
+          "fact_type": "product",
+          "observed_at": "2026-08-09T00:20:11.230Z",
+          "subject_entity_id": "EN-7d3194f79e645c42",
+          "subject_name": "OpenAI",
+          "product_entity_ids": [
+            "EN-95ac2aa8df3b3c0b"
+          ],
+          "product_names": [
+            "August 2026 Latest Updates"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "This foundation powers a growing range of capabilities in ChatGPT Voice, including the newly launched ability to control your computer and coordinate your agents in the ChatGPT desktop app.",
+          "event_refs": [
+            "EV-47c32b3ef5c0f57a"
+          ],
+          "claim_ref": "CL-ae4c88f644d45342",
+          "source_refs": [
+            "SA-f671332f8768d05c"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://releasebot.io/updates/openai",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-95ac2aa8df3b3c0b"
+      ]
+    },
+    {
+      "id": "HWC-d918b781f4810a43",
+      "snapshotKey": "d918b781f4810a43",
+      "snapshotId": "HWS-91db42fe6efe5289",
+      "eventId": "EV-0d1e8308d3c007aa",
+      "eventIds": [
+        "EV-0d1e8308d3c007aa"
+      ],
+      "dataDate": "2026-08-09",
+      "date": "2026-08-09",
+      "title": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
+      "subject": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
+      "productNames": [],
+      "hardwareType": "compute_cluster",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-b5584e96769af6b7"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-09",
+          "hardware_fact_id": "HWF-facc6ae101202229",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-05T00:00:00.000Z",
+          "subject_entity_id": "",
+          "subject_name": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "compute_cluster",
+          "metric_value": "60",
+          "unit": "%",
+          "source_quote": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute Cluster Within 72 Days, Cutting Deployment Time by 60%",
+          "event_refs": [
+            "EV-0d1e8308d3c007aa"
+          ],
+          "claim_ref": "CL-6030b553950cd5d7",
+          "source_refs": [
+            "SA-44faba95d4a2c437"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-09",
+          "hardware_fact_id": "HWF-b5584e96769af6b7",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-05T00:00:00.000Z",
+          "subject_entity_id": "",
+          "subject_name": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "compute_cluster",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "As large-model applications transition rapidly from development to production deployment, AI compute infrastructure is evolving beyond conventional hardware delivery into a comprehensive systems-engineering challenge, defined by the ability to design, integrate, validate, and scale large, heterogeneous compute clusters with high reliability. Deployment speed is no longer merely an indicator of engineering execution, it directly determines time-to-service to convert infrastructure investment into commercial value.",
+          "event_refs": [
+            "EV-0d1e8308d3c007aa"
+          ],
+          "claim_ref": "CL-0bc30a4e05e84677",
+          "source_refs": [
+            "SA-44faba95d4a2c437"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/08/06/3339887/0/en/kaytus-delivers-a-400-rack-high-density-air-cooled-compute-cluster-within-72-days-cutting-deployment-time-by-60.html",
+      "entityIds": []
+    },
+    {
+      "id": "HWC-1e62a022d692183f",
+      "snapshotKey": "1e62a022d692183f",
+      "snapshotId": "HWS-b77d79d05e2497d5",
+      "eventId": "EV-0d1e8308d3c007aa",
+      "eventIds": [
+        "EV-0d1e8308d3c007aa"
+      ],
+      "dataDate": "2026-08-09",
+      "date": "2026-08-09",
+      "title": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
+      "subject": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "60",
+          "unit": "%",
+          "fact_ref": "HWF-e3eb3bfe15c4787c"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-09",
+          "hardware_fact_id": "HWF-e3eb3bfe15c4787c",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-05T00:00:00.000Z",
+          "subject_entity_id": "",
+          "subject_name": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "60",
+          "unit": "%",
+          "source_quote": "SINGAPORE, Aug. 05, 2026 (GLOBE NEWSWIRE) -- KAYTUS recently completed the delivery and deployment of a 400-rack custom high-density air-cooled cluster for an AI data center in Japan. From custom R&D and large-scale manufacturing to full on-site delivery, the entire project took just 72 days, shortening the typical industry deployment cycle of approximately 180 days by 60%, providing efficient computing power for core workloads.",
+          "event_refs": [
+            "EV-0d1e8308d3c007aa"
+          ],
+          "claim_ref": "CL-1f3398808a426f54",
+          "source_refs": [
+            "SA-44faba95d4a2c437"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/08/06/3339887/0/en/kaytus-delivers-a-400-rack-high-density-air-cooled-compute-cluster-within-72-days-cutting-deployment-time-by-60.html",
+      "entityIds": []
+    },
+    {
+      "id": "HWC-5caba5f1e7fc7379",
+      "snapshotKey": "5caba5f1e7fc7379",
+      "snapshotId": "HWS-61fc84e9426ee84e",
+      "eventId": "EV-d2a623e8eef1f61d",
+      "eventIds": [
+        "EV-d2a623e8eef1f61d"
+      ],
+      "dataDate": "2026-08-09",
+      "date": "2026-08-09",
+      "title": "KIDZ AI",
+      "subject": "KIDZ AI",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "44.6",
+          "unit": "$Million",
+          "fact_ref": "HWF-fa70a3d8538315ad"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-09",
+          "previousDate": "2026-08-04",
+          "snapshotId": "HWS-61fc84e9426ee84e",
+          "previousSnapshotId": "HWS-b83b16e48dc37c3c",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-09",
+          "hardware_fact_id": "HWF-fa70a3d8538315ad",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T00:00:00.000Z",
+          "subject_entity_id": "EN-bd6769fe78d0971a",
+          "subject_name": "KIDZ AI",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "44.6",
+          "unit": "$Million",
+          "source_quote": "KIDZ AI Signs Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement",
+          "event_refs": [
+            "EV-d2a623e8eef1f61d"
+          ],
+          "claim_ref": "CL-89a465345b071c29",
+          "source_refs": [
+            "SA-05b95b5e141d80da"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/08/03/3337476/0/en/KIDZ-AI-Signs-Data-Center-MOU-with-Limestone-Networks-to-Deploy-Inference-Compute-Infrastructure-for-Open-Weight-AI-Models-Advancing-Its-44-6-Million-Canopy-Wave-Agreement.html",
+      "entityIds": [
+        "EN-bd6769fe78d0971a"
+      ]
+    },
+    {
+      "id": "HWC-cd6282f5eb700715",
+      "snapshotKey": "cd6282f5eb700715",
+      "snapshotId": "HWS-28e5266ded7df745",
+      "eventId": "EV-d2a623e8eef1f61d",
+      "eventIds": [
+        "EV-d2a623e8eef1f61d"
+      ],
+      "dataDate": "2026-08-09",
+      "date": "2026-08-09",
+      "title": "KIDZ AI",
+      "subject": "KIDZ AI",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-d4afc9a664ede24b"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-09",
+          "previousDate": "2026-08-04",
+          "snapshotId": "HWS-28e5266ded7df745",
+          "previousSnapshotId": "HWS-6148d799a216305e",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-09",
+          "hardware_fact_id": "HWF-d4afc9a664ede24b",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T00:00:00.000Z",
+          "subject_entity_id": "EN-bd6769fe78d0971a",
+          "subject_name": "KIDZ AI",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KIDZ AI Inc. (NASDAQ: KIDZ) (NASDAQ: KIDZW) (“KIDZ AI” or the “Company”), an education technology company advancing AI infrastructure and GPU compute initiatives alongside its core EdTech operations, today announced that it has signed a Memorandum of Understanding (“MOU”) with Limestone Networks, Inc. (“Limestone”), a Texas-based cloud and data center infrastructure provider, for the proposed deployment of the Company’s AI computing infrastructure at the DFW3 data center in Dallas, Texas.",
+          "event_refs": [
+            "EV-d2a623e8eef1f61d"
+          ],
+          "claim_ref": "CL-0e9c6e153b62b5ba",
+          "source_refs": [
+            "SA-05b95b5e141d80da"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bd6769fe78d0971a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/08/03/3337476/0/en/KIDZ-AI-Signs-Data-Center-MOU-with-Limestone-Networks-to-Deploy-Inference-Compute-Infrastructure-for-Open-Weight-AI-Models-Advancing-Its-44-6-Million-Canopy-Wave-Agreement.html",
+      "entityIds": [
+        "EN-bd6769fe78d0971a"
+      ]
+    },
+    {
+      "id": "HWC-fc6be3540530f815",
+      "snapshotKey": "fc6be3540530f815",
+      "snapshotId": "HWS-c8055d023672f07c",
+      "eventId": "EV-3dc8d5c373ddd1f3",
+      "eventIds": [
+        "EV-3dc8d5c373ddd1f3"
+      ],
+      "dataDate": "2026-08-09",
+      "date": "2026-08-09",
+      "title": "Pokee-Isaac / Pokee-Isaac 28",
+      "subject": "Pokee AI",
+      "productNames": [
+        "Pokee-Isaac",
+        "Pokee-Isaac 28"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "product",
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "93.3",
+          "unit": "%",
+          "fact_ref": "HWF-39c8d77e27920084"
+        },
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-eec5021ce339ad79"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-09",
+          "hardware_fact_id": "HWF-eec5021ce339ad79",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-08T17:04:39.000Z",
+          "subject_entity_id": "EN-74be4cbf48e647b2",
+          "subject_name": "Pokee AI",
+          "product_entity_ids": [
+            "EN-95a8daac5782a6a4",
+            "EN-be044887578da854"
+          ],
+          "product_names": [
+            "Pokee-Isaac",
+            "Pokee-Isaac 28"
+          ],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Yes — but licensed, not open-weight. Pokee AI serves Isaac through an OpenAI-compatible developer API , and licenses it for deployment inside a VPC, on-premises, or on-device. The launch announcement advertises Day-0 support for vLLM and SGLang, and single-GPU serving starting from an RTX 4090 or equivalent. The research team publishes measurements only from a single B200-class GPU, so treat the consumer-GPU claim as vendor guidance rather than a reported result.",
+          "event_refs": [
+            "EV-3dc8d5c373ddd1f3"
+          ],
+          "claim_ref": "CL-4ef5f2f4b84d8f56",
+          "source_refs": [
+            "SA-a8efccef514ec8e5"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-09",
+          "hardware_fact_id": "HWF-39c8d77e27920084",
+          "fact_type": "product",
+          "observed_at": "2026-08-08T17:04:39.000Z",
+          "subject_entity_id": "EN-74be4cbf48e647b2",
+          "subject_name": "Pokee AI",
+          "product_entity_ids": [
+            "EN-95a8daac5782a6a4",
+            "EN-be044887578da854"
+          ],
+          "product_names": [
+            "Pokee-Isaac",
+            "Pokee-Isaac 28"
+          ],
+          "component_type": "gpu",
+          "metric_value": "93.3",
+          "unit": "%",
+          "source_quote": "Long-horizon agents accumulate context faster than they resolve tasks. Every tool output, observation, and intermediate reasoning step stays in the window, and the two capabilities that matter — holding that context and staying coherent across it — have so far been available almost exclusively from cloud endpoints. That excludes regulated industries, public-sector institutions, and on-device applications, where the data is not permitted to leave the boundary at all. Pokee AI released Pokee-Isaac 28B , a 28B text-only foundation model with a 10M-token context window, designed to run inside that boundary. The Pokee research team claims 93.3% on RULER at 10M tokens, parity with the strongest cost-optimized cloud baselines on agentic benchmarks, and a serving profile that fits a single GPU.",
+          "event_refs": [
+            "EV-3dc8d5c373ddd1f3"
+          ],
+          "claim_ref": "CL-247c4c2944757dfb",
+          "source_refs": [
+            "SA-a8efccef514ec8e5"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-74be4cbf48e647b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/08/08/pokee-ai-releases-pokee-isaac-28b-a-10m-token-context-agentic-model-built-to-run-inside-the-customer-boundary",
+      "entityIds": [
+        "EN-74be4cbf48e647b2",
+        "EN-7d3194f79e645c42",
+        "EN-6c87e5496f592f3c",
+        "EN-95a8daac5782a6a4",
+        "EN-be044887578da854"
+      ]
+    },
+    {
+      "id": "HWC-5c1869bc3f79759f",
+      "snapshotKey": "5c1869bc3f79759f",
+      "snapshotId": "HWS-b53ba96f9f2c11d3",
+      "eventId": "EV-be5bece353aeedcd",
+      "eventIds": [
+        "EV-be5bece353aeedcd"
+      ],
+      "dataDate": "2026-08-09",
+      "date": "2026-08-09",
+      "title": "Volta",
+      "subject": "Volta",
+      "productNames": [],
+      "hardwareType": "ai_accelerator",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "133",
+          "unit": "MW",
+          "fact_ref": "HWF-6fd93e441c08d734"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-09",
+          "hardware_fact_id": "HWF-6fd93e441c08d734",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-04T00:00:00.000Z",
+          "subject_entity_id": "EN-d25e715a1ce00764",
+          "subject_name": "Volta",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "ai_accelerator",
+          "metric_value": "133",
+          "unit": "MW",
+          "source_quote": "Its initial project will be an AI factory in Europe located in Norway that will comprise a 133 MW deployment powered by Dell Technologies AI infrastructure, including Dell PowerRack systems with PowerEdge XE9812 servers including NVIDIA accelerators.",
+          "event_refs": [
+            "EV-be5bece353aeedcd"
+          ],
+          "claim_ref": "CL-c6b8a9114bcfbb9c",
+          "source_refs": [
+            "SA-036fa74ea5c545f3"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~~usa~2026~08~volta-selects-dell-technologies-to-help-build-next-generation-ai-factories.htm",
+      "entityIds": [
+        "EN-d25e715a1ce00764",
+        "EN-8d4321d936320802"
+      ]
+    },
+    {
       "id": "HWC-c478df5c1084a7ea",
       "snapshotKey": "c478df5c1084a7ea",
       "snapshotId": "HWS-6b4baa690baa16e5",
@@ -3235,194 +3904,6 @@
         "EN-60c5644257240a32",
         "EN-313288a6e417d286",
         "EN-3d5291effddd967b"
-      ]
-    },
-    {
-      "id": "HWC-5caba5f1e7fc7379",
-      "snapshotKey": "5caba5f1e7fc7379",
-      "snapshotId": "HWS-b83b16e48dc37c3c",
-      "eventId": "EV-d2a623e8eef1f61d",
-      "eventIds": [
-        "EV-d2a623e8eef1f61d"
-      ],
-      "dataDate": "2026-08-04",
-      "date": "2026-08-04",
-      "title": "KIDZ AI",
-      "subject": "KIDZ AI",
-      "productNames": [],
-      "hardwareType": "data_center",
-      "factTypes": [
-        "shipment_deployment"
-      ],
-      "latestValues": {
-        "shipment_deployment": {
-          "metric_value": "44.6",
-          "unit": "$Million",
-          "fact_ref": "HWF-7ada1af0d1a1fdef"
-        }
-      },
-      "factCount": 2,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [
-        {
-          "data_date": "2026-08-04",
-          "hardware_fact_id": "HWF-4c292915f1f61772",
-          "fact_type": "shipment_deployment",
-          "observed_at": "2026-08-03T00:00:00.000Z",
-          "subject_entity_id": "EN-bd6769fe78d0971a",
-          "subject_name": "KIDZ AI",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "data_center",
-          "metric_value": "44.6",
-          "unit": "$Million",
-          "source_quote": "KIDZ AI Signs Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement |",
-          "event_refs": [
-            "EV-d2a623e8eef1f61d"
-          ],
-          "claim_ref": "CL-58e01c2b44f46df7",
-          "source_refs": [
-            "SA-13038230089f90fc"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-08-04",
-          "hardware_fact_id": "HWF-7ada1af0d1a1fdef",
-          "fact_type": "shipment_deployment",
-          "observed_at": "2026-08-03T00:00:00.000Z",
-          "subject_entity_id": "EN-bd6769fe78d0971a",
-          "subject_name": "KIDZ AI",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "data_center",
-          "metric_value": "44.6",
-          "unit": "$Million",
-          "source_quote": "KIDZ AI Signs Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement",
-          "event_refs": [
-            "EV-d2a623e8eef1f61d"
-          ],
-          "claim_ref": "CL-709873b335bdf36f",
-          "source_refs": [
-            "SA-13038230089f90fc"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
-        }
-      ],
-      "specificationFacts": [],
-      "capexFacts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重",
-          "entityIds": [
-            "EN-bd6769fe78d0971a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重",
-          "entityIds": [
-            "EN-bd6769fe78d0971a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "sourceUrl": "https://newswire.com/news/kidz-ai-signs-data-center-mou-with-limestone-networks-to-deploy-inference",
-      "entityIds": [
-        "EN-bd6769fe78d0971a"
-      ]
-    },
-    {
-      "id": "HWC-cd6282f5eb700715",
-      "snapshotKey": "cd6282f5eb700715",
-      "snapshotId": "HWS-6148d799a216305e",
-      "eventId": "EV-d2a623e8eef1f61d",
-      "eventIds": [
-        "EV-d2a623e8eef1f61d"
-      ],
-      "dataDate": "2026-08-04",
-      "date": "2026-08-04",
-      "title": "KIDZ AI",
-      "subject": "KIDZ AI",
-      "productNames": [],
-      "hardwareType": "gpu",
-      "factTypes": [
-        "shipment_deployment"
-      ],
-      "latestValues": {
-        "shipment_deployment": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-6fe78e864f76cb5a"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [
-        {
-          "data_date": "2026-08-04",
-          "hardware_fact_id": "HWF-6fe78e864f76cb5a",
-          "fact_type": "shipment_deployment",
-          "observed_at": "2026-08-03T00:00:00.000Z",
-          "subject_entity_id": "EN-bd6769fe78d0971a",
-          "subject_name": "KIDZ AI",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "gpu",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "KIDZ AI Inc. (NASDAQ:KIDZ)(NASDAQ:KIDZW) (\"KIDZ AI\" or the \"Company\"), an education technology company advancing AI infrastructure and GPU compute initiatives alongside its core EdTech operations, today announced that it has signed a Memorandum of Understanding (\"MOU\") with Limestone Networks, Inc. (\"Limestone\"), a Texas-based cloud and data center infrastructure provider, for the proposed deployment of the Company's AI computing infrastructure at the DFW3 data center in Dallas, Texas.",
-          "event_refs": [
-            "EV-d2a623e8eef1f61d"
-          ],
-          "claim_ref": "CL-e5419c691ace5a16",
-          "source_refs": [
-            "SA-13038230089f90fc"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-04/hardware-facts.json"
-        }
-      ],
-      "specificationFacts": [],
-      "capexFacts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重",
-          "entityIds": [
-            "EN-bd6769fe78d0971a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重",
-          "entityIds": [
-            "EN-bd6769fe78d0971a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "sourceUrl": "https://newswire.com/news/kidz-ai-signs-data-center-mou-with-limestone-networks-to-deploy-inference",
-      "entityIds": [
-        "EN-bd6769fe78d0971a"
       ]
     },
     {
@@ -6576,37 +7057,36 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-08-08",
-      "funnel_id": "LF-5fe512bbae38cc10",
+      "data_date": "2026-08-09",
+      "funnel_id": "LF-a595bb8f7d9f0d35",
       "lens": "hardware",
-      "date": "2026-08-08",
+      "date": "2026-08-09",
       "monitoring_paths": [
         "hardware_capacity_fab",
-        "hardware_capex",
-        "hardware_oem_odm",
         "hardware_product_specs",
-        "hardware_shipment_deployment"
+        "hardware_shipment_deployment",
+        "hardware_supply_agreement"
       ],
-      "raw_documents": 24,
-      "original_sources": 21,
-      "valid_claims": 12,
-      "observations": 7,
-      "canonical_events": 4,
+      "raw_documents": 20,
+      "original_sources": 19,
+      "valid_claims": 11,
+      "observations": 9,
+      "canonical_events": 3,
       "blocker_counts": {
-        "no_source_bounded_event": 5,
-        "source_outside_daily_window": 5,
-        "source_outside_funding_backfill_window": 2,
-        "event_not_ai_relevant": 1,
+        "source_outside_daily_window": 9,
+        "no_source_bounded_event": 3,
+        "source_outside_funding_backfill_window": 1,
         "non_event_or_index_title": 2,
-        "raw_source_quality_block": 4
+        "multi_event_roundup_not_single_event_source": 1,
+        "raw_document_not_auditable": 1
       },
       "rates": {
-        "original_source_rate": 0.875,
-        "valid_claim_rate": 0.5,
-        "observation_rate": 0.5833333333333334,
-        "event_conversion_rate": 0.3333333333333333
+        "original_source_rate": 0.95,
+        "valid_claim_rate": 0.55,
+        "observation_rate": 0.8181818181818182,
+        "event_conversion_rate": 0.2727272727272727
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-08/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/monitoring-funnel.json"
     }
   ]
 }

@@ -14,6 +14,7 @@ import {
   loadDailyBundle,
   normalizeFundingInsightCard,
   readJson,
+  fundingEventCardConsistencyProblems,
   verifiedFundingEventCardCoverageProblems,
 } from "./funding-insight-v1-utils.mjs";
 
@@ -37,6 +38,12 @@ function validateBundle(inputFile, validate) {
   const data = readJson(inputFile);
   if (!data) return { data: null, problems: [`funding_insight_bundle_missing:${inputFile}`] };
   const problems = [];
+  const dailyDate = data.meta?.date || path.basename(inputFile, ".json");
+  const dailyDir = path.join(root, "01-SiteV2/content/11-databases/data-center-v4", dailyDate);
+  const dailyEvents = readJson(path.join(dailyDir, "canonical-events.json"), []);
+  const dailyClaims = readJson(path.join(dailyDir, "claims.json"), []);
+  const dailyEntities = readJson(path.join(dailyDir, "entities.json"), []);
+  const dailyEventsById = new Map(dailyEvents.map((event) => [event.event_id, event]));
   if (data.meta?.schema_version !== FUNDING_INSIGHT_VERSION) problems.push("bundle_schema_version_invalid");
   if (data.meta?.auto_publish_gate !== FUNDING_INSIGHT_GATE_VERSION) problems.push("bundle_gate_version_invalid");
   if (data.meta?.human_review_required !== false) problems.push("automatic_publication_contract_missing");
@@ -49,6 +56,14 @@ function validateBundle(inputFile, validate) {
     for (const item of fundingInsightProblems(card)) problems.push(`${card.funding_insight_id || "unknown"}:${item}`);
     for (const item of fundingEvidenceProofProblems(card)) {
       problems.push(`${card.funding_insight_id || "unknown"}:${item}`);
+    }
+    if (dailyDate === date) {
+      for (const item of fundingEventCardConsistencyProblems(
+        card,
+        dailyEventsById.get(card.triggered_by_event_id),
+        dailyClaims,
+        dailyEntities,
+      )) problems.push(`${card.funding_insight_id || "unknown"}:${item}`);
     }
     if (seenEvents.has(card.triggered_by_event_id)) problems.push(`${card.triggered_by_event_id}:duplicate_published_card`);
     seenEvents.add(card.triggered_by_event_id);

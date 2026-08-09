@@ -825,6 +825,42 @@ function organizationNamesEquivalent(left = "", right = "") {
   return shorter.length >= 4 && longer.includes(shorter);
 }
 
+function fundingAmountsEquivalent(left = "", right = "") {
+  const a = normalizeFundingAmount(left);
+  const b = normalizeFundingAmount(right);
+  return Boolean(
+    a.currency
+      && b.currency
+      && a.currency === b.currency
+      && Number.isFinite(a.value)
+      && Number.isFinite(b.value)
+      && a.value === b.value,
+  );
+}
+
+export function fundingEventCardConsistencyProblems(card = {}, event = {}, claims = [], entities = []) {
+  if (!card?.company?.entity_id || !event?.event_id) return [];
+  // A single canonical event may mention several companies. Only apply the
+  // claim-to-card amount check to that ambiguous shape; older single-company
+  // events use legacy claim subject conventions that are not always exact.
+  if ((event.entities || []).length < 2) return [];
+  const entity = entities.find((item) => item.entity_id === card.company.entity_id);
+  const companyNames = [card.company.name, card.company.full_name, entity?.canonical_name, ...(entity?.aliases || [])]
+    .map(clean)
+    .filter(Boolean);
+  const eventClaims = (event.claim_refs || [])
+    .map((claimId) => claims.find((claim) => claim.claim_id === claimId))
+    .filter(Boolean);
+  const companyClaims = eventClaims.filter((claim) => companyNames.some((name) => (
+    organizationNamesEquivalent(claim.subject, name)
+  )));
+  if (!companyClaims.length) return ["funding_event_company_claim_missing"];
+  if (!companyClaims.some((claim) => fundingAmountsEquivalent(card.financing?.amount, claim.object))) {
+    return ["funding_event_company_amount_mismatch"];
+  }
+  return [];
+}
+
 function containsChinese(value = "") {
   return /[\u3400-\u9fff]/u.test(clean(value));
 }

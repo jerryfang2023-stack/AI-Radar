@@ -1,0 +1,1726 @@
+[
+  {
+    "claim_id": "CL-c92857ce9dc26ac3",
+    "raw_id": "RAW-e200c8e7dea24bdf",
+    "claim_type": "research_result",
+    "subject": "Shepherd",
+    "predicate": "research_result",
+    "object": "forks 5× faster than Docker and over 95% prompt-cache reuse on replay",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-aa70a56de4aa9306"
+    },
+    "source_span": {
+      "raw_id": "RAW-e200c8e7dea24bdf",
+      "start": 1009,
+      "end": 1105
+    },
+    "source_quote": "The research team reports forks 5× faster than Docker and over 95% prompt-cache reuse on replay.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c516c98207566ef4",
+    "raw_id": "RAW-e200c8e7dea24bdf",
+    "claim_type": "research_result",
+    "subject": "live supervisor",
+    "predicate": "research_result",
+    "object": "raised pair-coding pass rates on CooperBench from 28.8% to 54.7%",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-aa70a56de4aa9306"
+    },
+    "source_span": {
+      "raw_id": "RAW-e200c8e7dea24bdf",
+      "start": 3499,
+      "end": 3609
+    },
+    "source_quote": "In runtime intervention , a live supervisor raised pair-coding pass rates on CooperBench from 28.8% to 54.7% .",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a01d8cb8621286d3",
+    "raw_id": "RAW-e200c8e7dea24bdf",
+    "claim_type": "research_result",
+    "subject": "branching exploration",
+    "predicate": "research_result",
+    "object": "beat baselines across four benchmarks by up to 11 points, while cutting wall-clock time by up to 58%",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-aa70a56de4aa9306"
+    },
+    "source_span": {
+      "raw_id": "RAW-e200c8e7dea24bdf",
+      "start": 3610,
+      "end": 3773
+    },
+    "source_quote": "In counterfactual meta-optimization , branching exploration beat baselines across four benchmarks by up to 11 points , while cutting wall-clock time by up to 58% .",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-247c4c2944757dfb",
+    "raw_id": "RAW-c2d37759f7d88c55",
+    "claim_type": "product_release",
+    "subject": "Pokee AI",
+    "predicate": "product_release",
+    "object": "Pokee-Isaac 28B：可在客户边界内运行的千万级 token 上下文智能体模型",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-c2d37759f7d88c55",
+      "start": 129,
+      "end": 926
+    },
+    "source_quote": "Long-horizon agents accumulate context faster than they resolve tasks. Every tool output, observation, and intermediate reasoning step stays in the window, and the two capabilities that matter — holding that context and staying coherent across it — have so far been available almost exclusively from cloud endpoints. That excludes regulated industries, public-sector institutions, and on-device applications, where the data is not permitted to leave the boundary at all. Pokee AI released Pokee-Isaac 28B , a 28B text-only foundation model with a 10M-token context window, designed to run inside that boundary. The Pokee research team claims 93.3% on RULER at 10M tokens, parity with the strongest cost-optimized cloud baselines on agentic benchmarks, and a serving profile that fits a single GPU.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4ef5f2f4b84d8f56",
+    "raw_id": "RAW-c2d37759f7d88c55",
+    "claim_type": "product_release",
+    "subject": "Pokee AI",
+    "predicate": "product_release",
+    "object": "Pokee-Isaac 28B：可在客户边界内运行的千万级 token 上下文智能体模型",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-c2d37759f7d88c55",
+      "start": 944,
+      "end": 1411
+    },
+    "source_quote": "Yes — but licensed, not open-weight. Pokee AI serves Isaac through an OpenAI-compatible developer API , and licenses it for deployment inside a VPC, on-premises, or on-device. The launch announcement advertises Day-0 support for vLLM and SGLang, and single-GPU serving starting from an RTX 4090 or equivalent. The research team publishes measurements only from a single B200-class GPU, so treat the consumer-GPU claim as vendor guidance rather than a reported result.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-343c925b8503e8b3",
+    "raw_id": "RAW-c2d37759f7d88c55",
+    "claim_type": "product_release",
+    "subject": "Pokee AI",
+    "predicate": "product_release",
+    "object": "Pokee-Isaac 28B：可在客户边界内运行的千万级 token 上下文智能体模型",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-c2d37759f7d88c55",
+      "start": 1412,
+      "end": 1703
+    },
+    "source_quote": "Company level : This fits organizations that already own their inference stack — mid-size and enterprise teams with a platform group, plus device OEMs. A solo practitioner without on-prem hardware should use the hosted API instead; the boundary argument only pays off if you have a boundary.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b803d9349a3b6c72",
+    "raw_id": "RAW-c2d37759f7d88c55",
+    "claim_type": "product_release",
+    "subject": "Pokee AI",
+    "predicate": "product_release",
+    "object": "Pokee-Isaac 28B：可在客户边界内运行的千万级 token 上下文智能体模型",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-c2d37759f7d88c55",
+      "start": 1704,
+      "end": 1966
+    },
+    "source_quote": "Industries : Healthcare and payors, financial services and insurance, defense and public sector, legal and e-discovery, and pharma or semiconductor R&D. The common trait is a rule that the data cannot cross an external API boundary, not a preference for privacy.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9c11b641be99d028",
+    "raw_id": "RAW-70b44522074f5631",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.225",
+    "predicate": "product_release",
+    "object": "：新增网关支出限额支持与工作区信任提示",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-70b44522074f5631",
+      "start": 513,
+      "end": 700
+    },
+    "source_quote": "Added gateway spend-limit support to Claude Code's usage warning; the limit-reached message now names the cap, its reset time, and the operator's message (requires the gateway on 2.1.225)",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f267254be91d9636",
+    "raw_id": "RAW-70b44522074f5631",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.225",
+    "predicate": "product_release",
+    "object": "：新增网关支出限额支持与工作区信任提示",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-70b44522074f5631",
+      "start": 701,
+      "end": 807
+    },
+    "source_quote": "Added a workspace trust prompt to claude agents for untrusted directories, matching the behavior of claude",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-eedbca9bbdfafb7c",
+    "raw_id": "RAW-70b44522074f5631",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.225",
+    "predicate": "product_release",
+    "object": "：新增网关支出限额支持与工作区信任提示",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-70b44522074f5631",
+      "start": 808,
+      "end": 958
+    },
+    "source_quote": "Fixed a transient 401 replacing a long-lived CLAUDE_CODE_OAUTH_TOKEN with a stored login's short-lived token, breaking headless sessions until restart",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-aa3f8462c233ed6e",
+    "raw_id": "RAW-70b44522074f5631",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.225",
+    "predicate": "product_release",
+    "object": "：新增网关支出限额支持与工作区信任提示",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-70b44522074f5631",
+      "start": 959,
+      "end": 1101
+    },
+    "source_quote": "Fixed MCP OAuth servers on macOS intermittently failing with a burst of 401 errors, as if never authenticated, after a keychain read timed out",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c6b8a9114bcfbb9c",
+    "raw_id": "RAW-a64f826383a2fde9",
+    "claim_type": "hardware_deployment",
+    "subject": "Volta",
+    "predicate": "hardware_deployment",
+    "object": "AI factory in Norway comprising a 133 MW deployment powered by Dell Technologies AI infrastructure",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a0ef250240011789"
+    },
+    "source_span": {
+      "raw_id": "RAW-a64f826383a2fde9",
+      "start": 418,
+      "end": 668
+    },
+    "source_quote": "Its initial project will be an AI factory in Europe located in Norway that will comprise a 133 MW deployment powered by Dell Technologies AI infrastructure, including Dell PowerRack systems with PowerEdge XE9812 servers including NVIDIA accelerators.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6030b553950cd5d7",
+    "raw_id": "RAW-c9964e19bf8e13a3",
+    "claim_type": "hardware_deployment",
+    "subject": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
+    "predicate": "hardware_deployment",
+    "object": "Time by 60%",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-c9964e19bf8e13a3",
+      "start": 27,
+      "end": 140
+    },
+    "source_quote": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute Cluster Within 72 Days, Cutting Deployment Time by 60%",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1f3398808a426f54",
+    "raw_id": "RAW-c9964e19bf8e13a3",
+    "claim_type": "hardware_deployment",
+    "subject": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
+    "predicate": "hardware_deployment",
+    "object": "Time by 60%",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-c9964e19bf8e13a3",
+      "start": 433,
+      "end": 865
+    },
+    "source_quote": "SINGAPORE, Aug. 05, 2026 (GLOBE NEWSWIRE) -- KAYTUS recently completed the delivery and deployment of a 400-rack custom high-density air-cooled cluster for an AI data center in Japan. From custom R&D and large-scale manufacturing to full on-site delivery, the entire project took just 72 days, shortening the typical industry deployment cycle of approximately 180 days by 60%, providing efficient computing power for core workloads.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0bc30a4e05e84677",
+    "raw_id": "RAW-c9964e19bf8e13a3",
+    "claim_type": "hardware_deployment",
+    "subject": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
+    "predicate": "hardware_deployment",
+    "object": "Time by 60%",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-c9964e19bf8e13a3",
+      "start": 866,
+      "end": 1384
+    },
+    "source_quote": "As large-model applications transition rapidly from development to production deployment, AI compute infrastructure is evolving beyond conventional hardware delivery into a comprehensive systems-engineering challenge, defined by the ability to design, integrate, validate, and scale large, heterogeneous compute clusters with high reliability. Deployment speed is no longer merely an indicator of engineering execution, it directly determines time-to-service to convert infrastructure investment into commercial value.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-64fac6e9b33a6507",
+    "raw_id": "RAW-c9964e19bf8e13a3",
+    "claim_type": "hardware_deployment",
+    "subject": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
+    "predicate": "hardware_deployment",
+    "object": "Time by 60%",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-c9964e19bf8e13a3",
+      "start": 1385,
+      "end": 1753
+    },
+    "source_quote": "The successful rollout of this project highlights KAYTUS’s comprehensive strengths. It demonstrates KAYTUS’s ability to systematically address the challenges of large-scale computing cluster construction, including high deployment complexity, compressed delivery schedules, and stringent requirements for compute density, system reliability, and operational readiness.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-89a465345b071c29",
+    "raw_id": "RAW-b3801758f6117513",
+    "claim_type": "procurement_contract",
+    "subject": "KIDZ AI",
+    "predicate": "procurement_contract",
+    "object": "Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-b3801758f6117513",
+      "start": 27,
+      "end": 200
+    },
+    "source_quote": "KIDZ AI Signs Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-43ff82f2d36b2251",
+    "raw_id": "RAW-b3801758f6117513",
+    "claim_type": "procurement_contract",
+    "subject": "KIDZ AI",
+    "predicate": "procurement_contract",
+    "object": "Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-b3801758f6117513",
+      "start": 596,
+      "end": 800
+    },
+    "source_quote": "KIDZ AI and Limestone Networks have signed a Memorandum of Understanding for the proposed colocation of the Company's inference-focused AI computing infrastructure at the DFW3 data center in Dallas, Texas",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0e9c6e153b62b5ba",
+    "raw_id": "RAW-b3801758f6117513",
+    "claim_type": "procurement_contract",
+    "subject": "KIDZ AI",
+    "predicate": "procurement_contract",
+    "object": "Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-b3801758f6117513",
+      "start": 1375,
+      "end": 1868
+    },
+    "source_quote": "KIDZ AI Inc. (NASDAQ: KIDZ) (NASDAQ: KIDZW) (“KIDZ AI” or the “Company”), an education technology company advancing AI infrastructure and GPU compute initiatives alongside its core EdTech operations, today announced that it has signed a Memorandum of Understanding (“MOU”) with Limestone Networks, Inc. (“Limestone”), a Texas-based cloud and data center infrastructure provider, for the proposed deployment of the Company’s AI computing infrastructure at the DFW3 data center in Dallas, Texas.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-854a47cdb26cd56c",
+    "raw_id": "RAW-b3801758f6117513",
+    "claim_type": "procurement_contract",
+    "subject": "KIDZ AI",
+    "predicate": "procurement_contract",
+    "object": "Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-b3801758f6117513",
+      "start": 3283,
+      "end": 4141
+    },
+    "source_quote": "“Securing data center capacity is the next step in executing our $44.6 million agreement with Canopy Wave,” said Stephanie Luo, Chief Executive Officer of KIDZ AI. “We are not pursuing capacity on a speculative basis. We secured long-term contracted demand first, and we are now putting in place the infrastructure required to serve it. That sequencing — demand first, capacity second — is the core of our neocloud model. Equally central is our strategic focus on inference compute: we are purpose-building this cluster for high-throughput, cost-efficient inference on open-weight AI models, which we believe is where enterprise demand is growing fastest. Together, we believe this approach supports disciplined capital allocation, greater visibility into utilization, and a repeatable playbook for subsequent GPU clusters and enterprise compute agreements.”",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e2910383935e814f",
+    "raw_id": "RAW-0d0e01a72e407c0a",
+    "claim_type": "funding",
+    "subject": "OLIX",
+    "predicate": "funding",
+    "object": "$312 million",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-1bc14aa7e1d4f207"
+    },
+    "source_span": {
+      "raw_id": "RAW-0d0e01a72e407c0a",
+      "start": 4726,
+      "end": 4785
+    },
+    "source_quote": "OLIX raised $312 million in Series B funding in August 2026",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e161ec83f84dd8b2",
+    "raw_id": "RAW-0d0e01a72e407c0a",
+    "claim_type": "funding",
+    "subject": "Etched",
+    "predicate": "funding",
+    "object": "$300 million",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-1bc14aa7e1d4f207"
+    },
+    "source_span": {
+      "raw_id": "RAW-0d0e01a72e407c0a",
+      "start": 5878,
+      "end": 5937
+    },
+    "source_quote": "Etched raised $300 million in Series C funding in July 2026",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-aeed5454eae363d4",
+    "raw_id": "RAW-0d0e01a72e407c0a",
+    "claim_type": "funding",
+    "subject": "SambaNova Systems",
+    "predicate": "funding",
+    "object": "$1 billion",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-1bc14aa7e1d4f207"
+    },
+    "source_span": {
+      "raw_id": "RAW-0d0e01a72e407c0a",
+      "start": 7156,
+      "end": 7218
+    },
+    "source_quote": "SambaNova raised $1 billion in Series F financing in July 2026",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ae4c88f644d45342",
+    "raw_id": "RAW-dd8d15eada8a0b88",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "ChatGPT Voice computer control and agent coordination",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-53b5e4b919db8044"
+    },
+    "source_span": {
+      "raw_id": "RAW-dd8d15eada8a0b88",
+      "start": 1712,
+      "end": 1901
+    },
+    "source_quote": "This foundation powers a growing range of capabilities in ChatGPT Voice, including the newly launched ability to control your computer and coordinate your agents in the ChatGPT desktop app.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-695a536e3e3e7a10",
+    "raw_id": "RAW-d4f4fd0f3f57e25c",
+    "claim_type": "product_release",
+    "subject": "Okta",
+    "predicate": "product_release",
+    "object": "Agent Gateway",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-dff41b14c74598a8"
+    },
+    "source_span": {
+      "raw_id": "RAW-d4f4fd0f3f57e25c",
+      "start": 8403,
+      "end": 8472
+    },
+    "source_quote": "Customers can request access to Agent Gateway’s research release now.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a049de814bf93ad9",
+    "raw_id": "RAW-d4f4fd0f3f57e25c",
+    "claim_type": "product_release",
+    "subject": "Okta",
+    "predicate": "product_release",
+    "object": "Agent-to-Agent Connections",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-dff41b14c74598a8"
+    },
+    "source_span": {
+      "raw_id": "RAW-d4f4fd0f3f57e25c",
+      "start": 8497,
+      "end": 8561
+    },
+    "source_quote": "Agent-to-Agent Connections is available in General Availability.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-701b9ea5d3a431ab",
+    "raw_id": "RAW-d4f4fd0f3f57e25c",
+    "claim_type": "product_release",
+    "subject": "Okta",
+    "predicate": "product_release",
+    "object": "Resource Access Certifications for AI Agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-dff41b14c74598a8"
+    },
+    "source_span": {
+      "raw_id": "RAW-d4f4fd0f3f57e25c",
+      "start": 8586,
+      "end": 8660
+    },
+    "source_quote": "Resource Access Certifications for AI Agents is available in Early Access.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f16e6a3eafa5815a",
+    "raw_id": "RAW-50aec88887973413",
+    "claim_type": "procurement_contract",
+    "subject": "Maharashtra government",
+    "predicate": "procurement_contract",
+    "object": "Sarvam AI sovereign AI solutions",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a945d97b029d57eb"
+    },
+    "source_span": {
+      "raw_id": "RAW-50aec88887973413",
+      "start": 260,
+      "end": 455
+    },
+    "source_quote": "The Maharashtra government has granted approval for the deployment of sovereign artificial intelligence solutions from Sarvam AI for government departments with a two-year outlay of ₹11.26 crore.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a00087873e816acf",
+    "raw_id": "RAW-7a9447fc9ee2552f",
+    "claim_type": "procurement_contract",
+    "subject": "Istekki Oy",
+    "predicate": "procurement_contract",
+    "object": "Dynamic Procurement System for AI and automation solutions and related services 2026-2033",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e40f814ef77a3591"
+    },
+    "source_span": {
+      "raw_id": "RAW-7a9447fc9ee2552f",
+      "start": 1076,
+      "end": 1241
+    },
+    "source_quote": "Istekki Oy requests applications for participation in the Dynamic Procurement System (DPS), which targets AI and automation solutions and related services 2026-2033.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8dec335ce53d0164",
+    "raw_id": "RAW-af38e65a193cf696",
+    "claim_type": "deployment",
+    "subject": "Rivian",
+    "predicate": "deployment",
+    "object": "SAP Purchase Order Accrual Automation System built on Amazon Bedrock AgentCore",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-7b776b1e7c880aa2"
+    },
+    "source_span": {
+      "raw_id": "RAW-af38e65a193cf696",
+      "start": 4675,
+      "end": 4839
+    },
+    "source_quote": "Rivian finance and technology teams collaborated with AWS specialists to develop the SAP Purchase Order Accrual Automation System built on Amazon Bedrock AgentCore.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bbbd872e89bdae5c",
+    "raw_id": "RAW-6179aabd90072fc5",
+    "claim_type": "model_release",
+    "subject": "Mistral AI",
+    "predicate": "model_release",
+    "object": "Shieldstral 1.0 3B",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-7400fd946fcee3e2"
+    },
+    "source_span": {
+      "raw_id": "RAW-6179aabd90072fc5",
+      "start": 283,
+      "end": 497
+    },
+    "source_quote": "Mistral AI has released Shieldstral 1.0 3B , an open-weights, policy-adaptive multimodal safety classifier that treats content moderation as a single yes/no question rather than a fixed taxonomy of harm categories.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d3e1a6d64712fa10",
+    "raw_id": "RAW-8d066e6cb609ab8e",
+    "claim_type": "acquisition",
+    "subject": "OpenAI",
+    "predicate": "acquisition",
+    "object": "AI 演示文稿初创公司 NextSlide",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-8d066e6cb609ab8e",
+      "start": 0,
+      "end": 38
+    },
+    "source_quote": "OpenAI 收购 AI 演示文稿初创公司 NextSlide - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4e8039fd3954aa34",
+    "raw_id": "RAW-8d066e6cb609ab8e",
+    "claim_type": "acquisition",
+    "subject": "OpenAI",
+    "predicate": "acquisition",
+    "object": "AI 演示文稿初创公司 NextSlide",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-8d066e6cb609ab8e",
+      "start": 204,
+      "end": 235
+    },
+    "source_quote": "OpenAI 收购 AI 演示文稿初创公司 NextSlide",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-02de0d12811bdbfb",
+    "raw_id": "RAW-8d066e6cb609ab8e",
+    "claim_type": "acquisition",
+    "subject": "OpenAI",
+    "predicate": "acquisition",
+    "object": "AI 演示文稿初创公司 NextSlide",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-8d066e6cb609ab8e",
+      "start": 598,
+      "end": 653
+    },
+    "source_quote": "Beshry 在 LinkedIn 上表示，此次公告发布“晚了几个月”，因为此次收购已于“今年早些时候”完成。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d26a489223a00802",
+    "raw_id": "RAW-8d066e6cb609ab8e",
+    "claim_type": "acquisition",
+    "subject": "OpenAI",
+    "predicate": "acquisition",
+    "object": "AI 演示文稿初创公司 NextSlide",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-8d066e6cb609ab8e",
+      "start": 697,
+      "end": 754
+    },
+    "source_quote": "Caper AI 是一家专注于智能购物车和无人结账技术的初创公司，并于 2021 年被 Instacart 收购。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-20a03a96ac35bca0",
+    "raw_id": "RAW-0eb2fa81979eaff7",
+    "claim_type": "deployment",
+    "subject": "OpenAI 桌面端 ChatGPT",
+    "predicate": "deployment",
+    "object": "语音交互功能，可语音操控电脑执行多步骤任务",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-0eb2fa81979eaff7",
+      "start": 0,
+      "end": 49
+    },
+    "source_quote": "OpenAI 桌面端 ChatGPT 上线语音交互功能，可语音操控电脑执行多步骤任务 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4af696e4b67ac1e9",
+    "raw_id": "RAW-0eb2fa81979eaff7",
+    "claim_type": "deployment",
+    "subject": "OpenAI 桌面端 ChatGPT",
+    "predicate": "deployment",
+    "object": "语音交互功能，可语音操控电脑执行多步骤任务",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-0eb2fa81979eaff7",
+      "start": 217,
+      "end": 259
+    },
+    "source_quote": "OpenAI 桌面端 ChatGPT 上线语音交互功能，可语音操控电脑执行多步骤任务",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2d5b28072995d06e",
+    "raw_id": "RAW-0eb2fa81979eaff7",
+    "claim_type": "deployment",
+    "subject": "OpenAI 桌面端 ChatGPT",
+    "predicate": "deployment",
+    "object": "语音交互功能，可语音操控电脑执行多步骤任务",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-0eb2fa81979eaff7",
+      "start": 648,
+      "end": 726
+    },
+    "source_quote": "ChatGPT Voice 的手机版在上线之初主要侧重于提供更加流畅的语音对话体验，并改善了用户打断 AI 时的处理效果，但当时并不能直接在手机上执行操作。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1990f4358c7d0eb4",
+    "raw_id": "RAW-0eb2fa81979eaff7",
+    "claim_type": "deployment",
+    "subject": "OpenAI 桌面端 ChatGPT",
+    "predicate": "deployment",
+    "object": "语音交互功能，可语音操控电脑执行多步骤任务",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-0eb2fa81979eaff7",
+      "start": 326,
+      "end": 396
+    },
+    "source_quote": "IT之家 8 月 9 日消息，OpenAI 当地时间周四宣布，已更新 ChatGPT 桌面应用，新增对 ChatGPT Voice 的支持。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b9947158ac143f20",
+    "raw_id": "RAW-05f479b7788ffee3",
+    "claim_type": "acquisition",
+    "subject": "OpenAI",
+    "predicate": "acquisition",
+    "object": "演示文稿初创公司 NextSlide",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-05f479b7788ffee3",
+      "start": 58,
+      "end": 104
+    },
+    "source_quote": "OpenAI acquires presentation startup NextSlide",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-37dad5f319278154",
+    "raw_id": "RAW-05f479b7788ffee3",
+    "claim_type": "acquisition",
+    "subject": "OpenAI",
+    "predicate": "acquisition",
+    "object": "演示文稿初创公司 NextSlide",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-05f479b7788ffee3",
+      "start": 750,
+      "end": 936
+    },
+    "source_quote": "The financial terms of the deal were not disclosed. In a note on LinkedIn , Beshry said the announcement is coming “a few months late,” as the acquisition took place “earlier this year.”",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-44d790ba403c3136",
+    "raw_id": "RAW-05f479b7788ffee3",
+    "claim_type": "acquisition",
+    "subject": "OpenAI",
+    "predicate": "acquisition",
+    "object": "演示文稿初创公司 NextSlide",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-05f479b7788ffee3",
+      "start": 105,
+      "end": 228
+    },
+    "source_quote": "NextSlide recently announced that it’s joining OpenAI, with the presentation startup’s team members now working on ChatGPT.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-261b7edd81481d65",
+    "raw_id": "RAW-05f479b7788ffee3",
+    "claim_type": "acquisition",
+    "subject": "OpenAI",
+    "predicate": "acquisition",
+    "object": "演示文稿初创公司 NextSlide",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-05f479b7788ffee3",
+      "start": 229,
+      "end": 439
+    },
+    "source_quote": "The NextSlide website currently displays a note from founder Ahmed Beshry describing the startup’s product as one “that could turn prompts, notes, documents, or research into a polished, editable presentation.”",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f6b90546299e2803",
+    "raw_id": "RAW-63454e7a6c988879",
+    "claim_type": "product_release",
+    "subject": "Cloudflare",
+    "predicate": "product_release",
+    "object": "Kitesurf, a browser built for AI agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-63454e7a6c988879",
+      "start": 3,
+      "end": 62
+    },
+    "source_quote": "Cloudflare launches Kitesurf, a browser built for AI agents",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f445d3e07e67c878",
+    "raw_id": "RAW-63454e7a6c988879",
+    "claim_type": "product_release",
+    "subject": "Cloudflare",
+    "predicate": "product_release",
+    "object": "Kitesurf, a browser built for AI agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-63454e7a6c988879",
+      "start": 104,
+      "end": 357
+    },
+    "source_quote": "Cloudflare is the latest company to join the race to build a new web browser. But instead of pitching a Chrome alternative to consumers, the internet infrastructure provider launched Kitesurf , a cloud-hosted browser designed specifically for AI agents.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-695d53b1d29b9487",
+    "raw_id": "RAW-63454e7a6c988879",
+    "claim_type": "product_release",
+    "subject": "Cloudflare",
+    "predicate": "product_release",
+    "object": "Kitesurf, a browser built for AI agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-63454e7a6c988879",
+      "start": 2295,
+      "end": 2477
+    },
+    "source_quote": "Cloudflare also credited the open source Rust headless engine, Obscura, for inspiring it to develop Kitesurf, noting that the first proof of concept was a port of Obscura to Workers.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7755339e955f594c",
+    "raw_id": "RAW-63454e7a6c988879",
+    "claim_type": "product_release",
+    "subject": "Cloudflare",
+    "predicate": "product_release",
+    "object": "Kitesurf, a browser built for AI agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-63454e7a6c988879",
+      "start": 358,
+      "end": 586
+    },
+    "source_quote": "AI software is evolving from chatbots that answer questions to agents that can complete tasks on users’ behalf. Browsers are a critical part of this transition, as they’ll need to navigate the web and use websites, as humans do.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3602bb09d1f66197",
+    "raw_id": "RAW-45c92d2513c63738",
+    "claim_type": "product_release",
+    "subject": "阿里",
+    "predicate": "product_release",
+    "object": "国内首个AI语音平台CosyVoice Studio，将语义理解融入语音能力",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-45c92d2513c63738",
+      "start": 0,
+      "end": 42
+    },
+    "source_quote": "阿里推出国内首个AI语音平台CosyVoice Studio，将语义理解融入语音能力",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ce518f5abbb4c304",
+    "raw_id": "RAW-45c92d2513c63738",
+    "claim_type": "product_release",
+    "subject": "阿里",
+    "predicate": "product_release",
+    "object": "国内首个AI语音平台CosyVoice Studio，将语义理解融入语音能力",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-45c92d2513c63738",
+      "start": 118,
+      "end": 164
+    },
+    "source_quote": "8月7日，阿里巴巴正式推出国内首个一站式AI语音生产力平台CosyVoice Studio。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-50ff5a9c27253048",
+    "raw_id": "RAW-45c92d2513c63738",
+    "claim_type": "product_release",
+    "subject": "阿里",
+    "predicate": "product_release",
+    "object": "国内首个AI语音平台CosyVoice Studio，将语义理解融入语音能力",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-45c92d2513c63738",
+      "start": 164,
+      "end": 274
+    },
+    "source_quote": "该平台基于阿里推出的自研语音模型Qwen-Audio打造，在全球权威AI评测平台Artificial Analysis上，该模型斩获语音识别（ASR）、实时交互（RealTime）和语音合成（TTS）三个赛道的全球第一。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-860ffa3d4bbdc3cf",
+    "raw_id": "RAW-67510011c6e27533",
+    "claim_type": "deployment",
+    "subject": "微信",
+    "predicate": "deployment",
+    "object": "朋友圈“AI 帮写”与“AI 点评”功能",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-abe8125986c86611"
+    },
+    "source_span": {
+      "raw_id": "RAW-67510011c6e27533",
+      "start": 340,
+      "end": 372
+    },
+    "source_quote": "微信正在灰度测试朋友圈“AI 帮写”与“AI 点评”两项新能力。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dc9b4d05c2ecc912",
+    "raw_id": "RAW-67510011c6e27533",
+    "claim_type": "deployment",
+    "subject": "微信小微",
+    "predicate": "deployment",
+    "object": "朋友圈“AI 帮写”功能",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-abe8125986c86611"
+    },
+    "source_span": {
+      "raw_id": "RAW-67510011c6e27533",
+      "start": 563,
+      "end": 630
+    },
+    "source_quote": "朋友圈的“AI 帮写”功能属于微信原生 AI 助手“小微”的一部分。用户在朋友圈编辑页面点击“AI 帮写”后，会跳转至小微的对话界面。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-152936be1d514d94",
+    "raw_id": "RAW-67510011c6e27533",
+    "claim_type": "deployment",
+    "subject": "微信小微",
+    "predicate": "deployment",
+    "object": "文案生成及发布前的准备工作",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-abe8125986c86611"
+    },
+    "source_span": {
+      "raw_id": "RAW-67510011c6e27533",
+      "start": 699,
+      "end": 746
+    },
+    "source_quote": "“小微”可以完成文案生成及发布前的准备工作，但在当前灰测版本中，最终发布可能仍需用户手动确认。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e5a2974bfd0f89cd",
+    "raw_id": "RAW-66df9c11afa456e8",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.224",
+    "predicate": "product_release",
+    "object": "跨会话消息传递功能",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-cb0f93877eb03f65"
+    },
+    "source_span": {
+      "raw_id": "RAW-66df9c11afa456e8",
+      "start": 358,
+      "end": 399
+    },
+    "source_quote": "宣布从 Claude Code v2.1.224 开始，会话之间可以互相发送消息。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ab1578f91815e8a5",
+    "raw_id": "RAW-746bd5c38588de2e",
+    "claim_type": "product_release",
+    "subject": "Cloudflare",
+    "predicate": "product_release",
+    "object": "Kitesurf：专为 AI 智能体打造的云端浏览器",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-746bd5c38588de2e",
+      "start": 0,
+      "end": 47
+    },
+    "source_quote": "专为 AI 智能体打造的云端浏览器，Cloudflare 发布 Kitesurf - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3ecb77bccbaee007",
+    "raw_id": "RAW-746bd5c38588de2e",
+    "claim_type": "product_release",
+    "subject": "Cloudflare",
+    "predicate": "product_release",
+    "object": "Kitesurf：专为 AI 智能体打造的云端浏览器",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-746bd5c38588de2e",
+      "start": 215,
+      "end": 255
+    },
+    "source_quote": "专为 AI 智能体打造的云端浏览器，Cloudflare 发布 Kitesurf",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-206c5e459be0ed56",
+    "raw_id": "RAW-746bd5c38588de2e",
+    "claim_type": "product_release",
+    "subject": "Cloudflare",
+    "predicate": "product_release",
+    "object": "Kitesurf：专为 AI 智能体打造的云端浏览器",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-746bd5c38588de2e",
+      "start": 301,
+      "end": 365
+    },
+    "source_quote": "IT之家 8 月 8 日消息，Cloudflare 前天宣布推出 Kitesurf，这是一款专为 AI 智能体打造的云端浏览器。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-939720ede5086880",
+    "raw_id": "RAW-746bd5c38588de2e",
+    "claim_type": "product_release",
+    "subject": "Cloudflare",
+    "predicate": "product_release",
+    "object": "Kitesurf：专为 AI 智能体打造的云端浏览器",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-746bd5c38588de2e",
+      "start": 614,
+      "end": 637
+    },
+    "source_quote": "该浏览器目前处于测试阶段，正式版将在未来推出。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-32d5580b51bbe302",
+    "raw_id": "RAW-b45358348a188914",
+    "claim_type": "service_change",
+    "subject": "AI批量轰炸苹果bug赏金计划，审核团队已",
+    "predicate": "service_change",
+    "object": "AI批量轰炸苹果bug赏金计划，审核团队已下线",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-b45358348a188914",
+      "start": 0,
+      "end": 23
+    },
+    "source_quote": "AI批量轰炸苹果bug赏金计划，审核团队已下线",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6ac5c088b8e63e7c",
+    "raw_id": "RAW-b45358348a188914",
+    "claim_type": "service_change",
+    "subject": "AI批量轰炸苹果bug赏金计划，审核团队已",
+    "predicate": "service_change",
+    "object": "苹果终于受不了了，给自己的 bug赏金计划 设置了 冷静期 。",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-b45358348a188914",
+      "start": 82,
+      "end": 113
+    },
+    "source_quote": "苹果终于受不了了，给自己的 bug赏金计划 设置了 冷静期 。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2279331b70058578",
+    "raw_id": "RAW-b45358348a188914",
+    "claim_type": "service_change",
+    "subject": "AI批量轰炸苹果bug赏金计划，审核团队已",
+    "predicate": "service_change",
+    "object": "急，bug太多审不过来，怎么办啊…. 哈哈，算了！",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-b45358348a188914",
+      "start": 114,
+      "end": 139
+    },
+    "source_quote": "急，bug太多审不过来，怎么办啊…. 哈哈，算了！",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f1fd30949dd83b89",
+    "raw_id": "RAW-fc65236e51d44f9e",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 下一代 AI 模型 Astra 数学成果遭抄袭指控",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-fc65236e51d44f9e",
+      "start": 0,
+      "end": 119
+    },
+    "source_quote": "IT之家 8 月 8 日消息，科技媒体 scientificamerican 于 8 月 6 日发布博文， 报道称多名数学家指控 OpenAI 存在学术不端行为，称其 AI 模型 Astra 的数学成果未对已有研究成果给予应有的署名致谢。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8365e8affa3636e7",
+    "raw_id": "RAW-fc65236e51d44f9e",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 下一代 AI 模型 Astra 数学成果遭抄袭指控",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-fc65236e51d44f9e",
+      "start": 120,
+      "end": 214
+    },
+    "source_quote": "OpenAI 于 7 月 31 日发布 249 页 PDF 文件， 详细介绍了其下一代重大模型 Astra（内部版本）在高维球填充、量子博弈论、群论和极值组合学等多个领域取得了重大进展 。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-943947413ae14bbc",
+    "raw_id": "RAW-fc65236e51d44f9e",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 下一代 AI 模型 Astra 数学成果遭抄袭指控",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-fc65236e51d44f9e",
+      "start": 215,
+      "end": 301
+    },
+    "source_quote": "若按 Sol API 的费率计算，寻找这些问题解决方案所需消耗的总词元 (tokens) 成本约为 2,000 美元 （IT之家注：现汇率约合 13,519 元人民币） 。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e509517f5fe4394b",
+    "raw_id": "RAW-fc65236e51d44f9e",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 下一代 AI 模型 Astra 数学成果遭抄袭指控",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-fc65236e51d44f9e",
+      "start": 302,
+      "end": 342
+    },
+    "source_quote": "不过在论文发布之后， 多名学者在审查后指控 OpenAI 公司存在学术不端行为。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7e40198caf6a9e6d",
+    "raw_id": "RAW-01f89df6f5de2c82",
+    "claim_type": "model_release",
+    "subject": "Backflip AI",
+    "predicate": "model_release",
+    "object": "second AI model for CAD generation",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-8cdce2b25d8c6b7b"
+    },
+    "source_span": {
+      "raw_id": "RAW-01f89df6f5de2c82",
+      "start": 160,
+      "end": 235
+    },
+    "source_quote": "AI startup Backflip AI has released its second AI model for CAD generation.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-50d39c47e6b6af83",
+    "raw_id": "RAW-7dcc0d300892ffac",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "腾讯 WorkBuddy 成 AI 应用战略优先级最高产品之一，6 月 PC 端访问量破 2000 万",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-7dcc0d300892ffac",
+      "start": 766,
+      "end": 820
+    },
+    "source_quote": "IT之家了解到，WorkBuddy 是腾讯推出的一款桌面级 AI 原生办公智能体（AI Agent）工作台。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-4cfbd7ff64ef239c",
+    "raw_id": "RAW-7dcc0d300892ffac",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "腾讯 WorkBuddy 成 AI 应用战略优先级最高产品之一，6 月 PC 端访问量破 2000 万",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-7dcc0d300892ffac",
+      "start": 0,
+      "end": 51
+    },
+    "source_quote": "内部“一路绿灯”：消息称 WorkBuddy 已成腾讯 AI 应用战略优先级最高产品之一 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-84dff0652181de58",
+    "raw_id": "RAW-7dcc0d300892ffac",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "腾讯 WorkBuddy 成 AI 应用战略优先级最高产品之一，6 月 PC 端访问量破 2000 万",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-7dcc0d300892ffac",
+      "start": 217,
+      "end": 261
+    },
+    "source_quote": "内部“一路绿灯”：消息称 WorkBuddy 已成腾讯 AI 应用战略优先级最高产品之一",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-fb477b9e2d3a2b29",
+    "raw_id": "RAW-7dcc0d300892ffac",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "腾讯 WorkBuddy 成 AI 应用战略优先级最高产品之一，6 月 PC 端访问量破 2000 万",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-7dcc0d300892ffac",
+      "start": 665,
+      "end": 765
+    },
+    "source_quote": "易观分析数据显示，腾讯 WorkBuddy 在国内 PC 端 AI 原生办公智能体市场 6 月单月访问量破 2000 万，位列第一，超过第二名字节 TRAE 和第三名阿里 QoderWork 的总和。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-a119c0da94b7fba0",
+    "raw_id": "RAW-65c921f89f334e1c",
+    "claim_type": "product_release",
+    "subject": "Apple",
+    "predicate": "product_release",
+    "object": "千问扩展 for macOS 26.6",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-23cfc399d90082c9"
+    },
+    "source_span": {
+      "raw_id": "RAW-65c921f89f334e1c",
+      "start": 364,
+      "end": 448
+    },
+    "source_quote": "一篇名为《在 Mac 上配合 Apple 智能使用千问》的支持文档近日现身苹果官网 Mac 简体中文使用手册，其中明确提到 Apple 智能可配合阿里巴巴千问模型工作。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2944ec338a54c772",
+    "raw_id": "RAW-85e9c33a5ed05516",
+    "claim_type": "product_release",
+    "subject": "微软",
+    "predicate": "product_release",
+    "object": "新版 Outlook 每日小结 AI 功能",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-7495fa6fef263b83"
+    },
+    "source_span": {
+      "raw_id": "RAW-85e9c33a5ed05516",
+      "start": 95,
+      "end": 131
+    },
+    "source_quote": "微软计划引入“每日小结”（Wrap up your day） AI 功能",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-34dd30c89abf8888",
+    "raw_id": "RAW-b9523a815a99cad2",
+    "claim_type": "product_release",
+    "subject": "网友AI自制",
+    "predicate": "product_release",
+    "object": "12VHPWR Guard，避免华硕RTX 5080/5090显卡烧熔",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-b9523a815a99cad2",
+      "start": 0,
+      "end": 117
+    },
+    "source_quote": "IT之家 8 月 8 日消息，科技媒体 NeoWin 昨日（8 月 7 日）发布博文，报道称网友在 AI 编程辅助下，针对华硕的 ROG Astral RTX 5090/5080 显卡， 推出了一款开源工具，避免显卡出现过热烧熔情况。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-a91d3cd03420635d",
+    "raw_id": "RAW-b9523a815a99cad2",
+    "claim_type": "product_release",
+    "subject": "网友AI自制",
+    "predicate": "product_release",
+    "object": "12VHPWR Guard，避免华硕RTX 5080/5090显卡烧熔",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-b9523a815a99cad2",
+      "start": 118,
+      "end": 217
+    },
+    "source_quote": "该开源工具名为 12VHPWR Guard，目前仅适用于华硕 ROG Astral RTX 5080 和 RTX 5090 显卡（主要原因是上述两张显卡配有传感器，可以监测 6 个供电针脚的电流）。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-d420bc6c9f4954b2",
+    "raw_id": "RAW-b9523a815a99cad2",
+    "claim_type": "product_release",
+    "subject": "网友AI自制",
+    "predicate": "product_release",
+    "object": "12VHPWR Guard，避免华硕RTX 5080/5090显卡烧熔",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-b9523a815a99cad2",
+      "start": 218,
+      "end": 285
+    },
+    "source_quote": "该工具通过显卡的 I2C 总线，借助 NVAPI 直接连接 ITE IT8915FN 传感器芯片，也可把 HWiNFO 作为备用后端。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-86b08717349b2270",
+    "raw_id": "RAW-b9523a815a99cad2",
+    "claim_type": "product_release",
+    "subject": "网友AI自制",
+    "predicate": "product_release",
+    "object": "12VHPWR Guard，避免华硕RTX 5080/5090显卡烧熔",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-b9523a815a99cad2",
+      "start": 285,
+      "end": 307
+    },
+    "source_quote": "作者称，这一路径是只读，不会向总线写入数据。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-0479a29525a06fad",
+    "raw_id": "RAW-8fd17d1764c332ba",
+    "claim_type": "product_release",
+    "subject": "全球第二：马斯克 SpaceXAI",
+    "predicate": "product_release",
+    "object": "Imagine Image 2.0，强化 AI 生图 / 编辑能力",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-8fd17d1764c332ba",
+      "start": 0,
+      "end": 133
+    },
+    "source_quote": "IT之家 8 月 8 日消息，马斯克旗下 SpaceXAI 公司今天（8 月 8 日）发布博文，宣布推出 Imagine Image 2.0 模型， 目前已作为全新的质量模式（Quality Mode），在 Grok.com 网页版，iOS 和 安卓 版应用中上线。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0481f3c4612c651c",
+    "raw_id": "RAW-8fd17d1764c332ba",
+    "claim_type": "product_release",
+    "subject": "全球第二：马斯克 SpaceXAI",
+    "predicate": "product_release",
+    "object": "Imagine Image 2.0，强化 AI 生图 / 编辑能力",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-8fd17d1764c332ba",
+      "start": 134,
+      "end": 228
+    },
+    "source_quote": "生成效果方面，官网表示 Imagine Image 2.0 模型更遵循用户指令，能处理细节要求；在复杂视觉内容中，它会规划文字排版和版式结构，让多部分画面保持一致，并提升小字号文字清晰度。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f4c8a8d5c4c4c829",
+    "raw_id": "RAW-8fd17d1764c332ba",
+    "claim_type": "product_release",
+    "subject": "全球第二：马斯克 SpaceXAI",
+    "predicate": "product_release",
+    "object": "Imagine Image 2.0，强化 AI 生图 / 编辑能力",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-8fd17d1764c332ba",
+      "start": 228,
+      "end": 256
+    },
+    "source_quote": "同时，模型可在多轮生成和编辑中保留用户输入的主体与设定。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b3df41587e31484f",
+    "raw_id": "RAW-8fd17d1764c332ba",
+    "claim_type": "product_release",
+    "subject": "全球第二：马斯克 SpaceXAI",
+    "predicate": "product_release",
+    "object": "Imagine Image 2.0，强化 AI 生图 / 编辑能力",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-8fd17d1764c332ba",
+      "start": 271,
+      "end": 369
+    },
+    "source_quote": "Imagine Image 2.0 重点增强了图片编辑能力，SpaceXAI 表示在真实工作场景下，通常需要多轮修改，首张生成图很少就是最终成品，因此在模型中加入多项面向局部修改和素材复用的工具：",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-02a5ccb3f959b329",
+    "raw_id": "RAW-c80602c751ca70ae",
+    "claim_type": "product_release",
+    "subject": "Claude Code",
+    "predicate": "product_release",
+    "object": "inter-session communication and context sharing across terminals",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-212ed24689bfc68f"
+    },
+    "source_span": {
+      "raw_id": "RAW-c80602c751ca70ae",
+      "start": 0,
+      "end": 82
+    },
+    "source_quote": "Claude Code sessions can now talk to each other and share context across terminals",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  }
+]

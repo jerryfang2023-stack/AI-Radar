@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-08T04:22:09.833Z",
-    "latestDataDate": "2026-08-08",
-    "currentDate": "2026-08-08",
-    "eventCount": 1937,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-08-09T01:18:04.367Z",
+    "latestDataDate": "2026-08-09",
+    "currentDate": "2026-08-09",
+    "eventCount": 1962,
+    "quarantinedEventCount": 17
   },
   "entity": {
     "id": "EN-8d4321d936320802",
@@ -41,6 +41,7 @@
       "EV-a00763037a94d512",
       "EV-0e84a2f49d765ce3",
       "EV-467d1a701d21327d",
+      "EV-be5bece353aeedcd",
       "EV-5bbc509a032b8309",
       "EV-a852dc0ca6011ff6",
       "EV-a86b04e679044c45",
@@ -226,7 +227,7 @@
       "EN-9fbf261b62c1d7c0"
     ],
     "firstSeen": "2025-03-18",
-    "lastSeen": "2026-08-08",
+    "lastSeen": "2026-08-09",
     "relationIds": [
       "REL2-5adcd6a62a7c957e",
       "REL2-a413b62820bbd0b4",
@@ -279,6 +280,7 @@
         "EV-467d1a701d21327d"
       ],
       "deployments": [
+        "EV-be5bece353aeedcd",
         "EV-5bbc509a032b8309",
         "EV-a852dc0ca6011ff6",
         "EV-64178e5d858f5e25",
@@ -422,6 +424,34 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-be5bece353aeedcd",
+        "dataDate": "2026-08-09",
+        "date": "2026-08-04",
+        "eventType": "hardware_deployment",
+        "eventTypeLabel": "硬件部署",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Volta 选择戴尔科技助力打造下一代 AI 工厂",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-d25e715a1ce00764"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-d25e715a1ce00764",
+          "EN-8d4321d936320802"
+        ]
+      },
       {
         "id": "EV-82fcff365b154465",
         "dataDate": "2026-08-08",
@@ -7671,6 +7701,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-b3e7a0aac3ba7439",
         "EV-ec283dd6bd3ac991",
         "EV-1797eada6fb392a6",
         "EV-890ffd351486b884",
@@ -7773,7 +7804,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-08-07"
+      "lastSeen": "2026-08-09"
     }
   ],
   "relationships": [
@@ -8379,6 +8410,9 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-3dc8d5c373ddd1f3",
+        "EV-04fe726fa16722f3",
+        "EV-15c5107c993baae8",
         "EV-2791b442fd32b894",
         "EV-1b5b1d3317c8f688",
         "EV-10c4f4db6c3f2d72",
@@ -8554,8 +8588,10 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
-        "EN-047364b9be67f665",
+        "EN-74be4cbf48e647b2",
+        "EN-04468f769adbb15b",
         "EN-7d3194f79e645c42",
+        "EN-047364b9be67f665",
         "EN-2ee49ef51a776e2c",
         "EN-a89151ba4b5ac0f2",
         "EN-febedfcafee9d610",
@@ -8643,7 +8679,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -8835,10 +8871,14 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-3dc8d5c373ddd1f3",
+        "EV-778072e4940c5d43",
+        "EV-355ddfd4c6180ab0",
+        "EV-51891fe9f47dd616",
         "EV-997609968760857a",
         "EV-e6b22f59df71890e",
-        "EV-4c8fa40c36b6ddb7",
         "EV-c35c34271c7caf53",
+        "EV-4c8fa40c36b6ddb7",
         "EV-99005688ec16c082",
         "EV-6249564cff324a0e",
         "EV-b06624cf36990346",
@@ -9231,9 +9271,11 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-74be4cbf48e647b2",
+        "EN-c0fced8f2483e9f5",
+        "EN-738e22f0acab814c",
         "EN-dca6ec9510fc0176",
         "EN-5a28a1a99a417ba5",
-        "EN-738e22f0acab814c",
         "EN-842fcb5e60989a03",
         "EN-b81c8201acfc7639",
         "EN-d9b1d7819af92e77",
@@ -9255,7 +9297,6 @@
         "EN-cd6362472aea60ef",
         "EN-8d57f84bd1847b24",
         "EN-3149ad548669e717",
-        "EN-c0fced8f2483e9f5",
         "EN-f1649339197f76d6",
         "EN-a7baed72c308ce88",
         "EN-ba728f8ca730921f",
@@ -9455,8 +9496,8 @@
         "EV-70a994b9339f92e7",
         "EV-59882383f82f215d",
         "EV-450f624a6a6446ce",
-        "EV-522c339dded54be5",
         "EV-d2a623e8eef1f61d",
+        "EV-522c339dded54be5",
         "EV-a86b04e679044c45",
         "EV-c3b96b789b5bcafd",
         "EV-e09efcd49776cb95",
@@ -9473,6 +9514,7 @@
         "EV-93fad8e0e30e442c",
         "EV-3d8608d3e78e031b",
         "EV-8fcb52bb6ec980af",
+        "EV-3dc8d5c373ddd1f3",
         "EV-db304937ceac95d2",
         "EV-28bd99c785aa9760",
         "EV-9f06b3f05f18b81e",
@@ -9545,8 +9587,8 @@
         "EN-8da5eafb322ee86e",
         "EN-53453cfb48a75dde",
         "EN-883be863cc6562bb",
-        "EN-e1517be14d06cdb7",
         "EN-bd6769fe78d0971a",
+        "EN-e1517be14d06cdb7",
         "EN-7640da40298286a6",
         "EN-54dfb14dcddad637",
         "EN-3711098f35d71cb9",
@@ -9557,6 +9599,7 @@
         "EN-51a3a4589db68480",
         "EN-222f930b87524636",
         "EN-f4bec299df3f4f27",
+        "EN-74be4cbf48e647b2",
         "EN-920510199770f4d6",
         "EN-e470d891c0bda7d8",
         "EN-0281afdb2d56c1e6",
@@ -9618,7 +9661,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "TX-ai_market_application-chips",
@@ -10938,6 +10981,7 @@
         "EV-e999f3386aba7a2e",
         "EV-bad301e14b034fbd",
         "EV-4763b46821ab746e",
+        "EV-3dc8d5c373ddd1f3",
         "EV-0f0b2013927ce156",
         "EV-7f92b7e410ed08f1",
         "EV-6b51b1b6fe22c540",
@@ -10993,6 +11037,7 @@
         "EN-8d4321d936320802",
         "EN-cbadff7c58c26e1a",
         "EN-06b5472c16feae4c",
+        "EN-74be4cbf48e647b2",
         "EN-cc70f504af53013a",
         "EN-a93bc1dfeb147c54",
         "EN-61cce404a45c3545",
@@ -11016,7 +11061,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-08-05"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "TX-industry-manufacturing",
@@ -11080,6 +11125,8 @@
         "EV-7585b033d4005977",
         "EV-cec68369662236fd",
         "EV-4eb0556b8c72d410",
+        "EV-0d1e8308d3c007aa",
+        "EV-be5bece353aeedcd",
         "EV-64178e5d858f5e25",
         "EV-67212040ee9cd7c8",
         "EV-7012e774379b9c11",
@@ -11177,6 +11224,7 @@
         "EN-15516525ca2aa1a4",
         "EN-8dc72a4672894e0f",
         "EN-098a40b4499d7512",
+        "EN-d25e715a1ce00764",
         "EN-99f9ebbef37fcec5",
         "EN-240389f4b730bad4",
         "EN-449777124b1466a8",
@@ -11207,13 +11255,15 @@
         "FDE-6e17403b5cdb72b0"
       ],
       "hardwareIds": [
+        "HW-4673613f81881c78",
+        "HW-2afca97edf1a7fe8",
         "HW-df8fb3396e493a21",
         "HW-3a780bcd6e5bab6a",
         "HW-c57ff6e49b40d839",
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-08-05"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "TX-use_case-security_operations",
@@ -12004,6 +12054,7 @@
         "EV-26d2874c6ce028d6",
         "EV-3d9aa640411471ea",
         "EV-fd21441fb6e143c3",
+        "EV-ff73f3659b75611d",
         "EV-73a6143b5ce273e9",
         "EV-db304937ceac95d2",
         "EV-2fa6949af5b36fb0",
@@ -12050,6 +12101,7 @@
         "EN-b81c8201acfc7639",
         "EN-87c730bc4f32459e",
         "EN-7df09a7717ef2feb",
+        "EN-c04bd5ebd10ab696",
         "EN-2dc010636b9dce91",
         "EN-920510199770f4d6",
         "EN-febedfcafee9d610",
@@ -12080,7 +12132,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "TX-technology-embodied_ai",
@@ -12276,6 +12328,7 @@
         "EV-d5c00f302e1f808c",
         "EV-7263caa45bbf168e",
         "EV-3d9aa640411471ea",
+        "EV-3dc8d5c373ddd1f3",
         "EV-7a0f201debe99f2b",
         "EV-79913a2e72f0269b",
         "EV-a5efa57f3f744425",
@@ -12305,6 +12358,7 @@
         "EN-b5318593e1260f2f",
         "EN-968e2d5b08687bf4",
         "EN-87c730bc4f32459e",
+        "EN-74be4cbf48e647b2",
         "EN-2b6e51bec93e86c1",
         "EN-e21783b898b55a31",
         "EN-3309b3b14807f39a",
@@ -12324,7 +12378,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "TX-deployment_model-edge_device",
@@ -12339,6 +12393,7 @@
         "EV-d5c00f302e1f808c",
         "EV-7263caa45bbf168e",
         "EV-3d9aa640411471ea",
+        "EV-3dc8d5c373ddd1f3",
         "EV-7a0f201debe99f2b",
         "EV-79913a2e72f0269b",
         "EV-a5efa57f3f744425",
@@ -12367,6 +12422,7 @@
         "EN-b5318593e1260f2f",
         "EN-968e2d5b08687bf4",
         "EN-87c730bc4f32459e",
+        "EN-74be4cbf48e647b2",
         "EN-2b6e51bec93e86c1",
         "EN-e21783b898b55a31",
         "EN-3309b3b14807f39a",
@@ -12386,7 +12442,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "TX-deployment_model-cloud",
@@ -12398,6 +12454,7 @@
         "EV-4118202ed0f91895",
         "EV-4fba2b2f1ac10a79",
         "EV-b4b5d141dac164c2",
+        "EV-3dc8d5c373ddd1f3",
         "EV-fec9e1b9ae2955ee",
         "EV-c0d8138d8cab5135",
         "EV-7fb25ff3d853c314",
@@ -12407,6 +12464,7 @@
       "entityIds": [
         "EN-0b79cf2de0ee6b8e",
         "EN-c7d7af20b6ab853d",
+        "EN-74be4cbf48e647b2",
         "EN-2613d360c34cdc8c",
         "EN-842fcb5e60989a03",
         "EN-6f4e2e93ad6de7f1",
@@ -12415,7 +12473,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-03",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "TX-technology-open_weights",
@@ -12427,6 +12485,7 @@
         "EV-1abf0d076d30ec6d",
         "EV-d2a623e8eef1f61d",
         "EV-f55d16df5b5fecb2",
+        "EV-3dc8d5c373ddd1f3",
         "EV-d230942b0787581a",
         "EV-db304937ceac95d2",
         "EV-cfba8b877da20eaf",
@@ -12449,6 +12508,7 @@
       ],
       "entityIds": [
         "EN-bd6769fe78d0971a",
+        "EN-74be4cbf48e647b2",
         "EN-47dd52018c2b6985",
         "EN-920510199770f4d6",
         "EN-422332977c41eb77",
@@ -12473,7 +12533,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "TX-technology-speech_audio",
@@ -12515,7 +12575,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-09"
     }
   ],
   "fde": [
@@ -13294,6 +13354,34 @@
     }
   ],
   "hardware": [
+    {
+      "id": "HW-2afca97edf1a7fe8",
+      "eventId": "EV-be5bece353aeedcd",
+      "dataDate": "2026-08-09",
+      "date": "2026-08-04",
+      "title": "Volta 选择戴尔科技助力打造下一代 AI 工厂",
+      "hardwareType": "ai_accelerator",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "edge",
+      "supplier": "NVIDIA",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 133,
+      "capacityUnit": "MW",
+      "site": "未披露",
+      "region": "Europe",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~~usa~2026~08~volta-selects-dell-technologies-to-help-build-next-generation-ai-factories.htm",
+      "sourceName": "dell.com",
+      "sourceDate": "2026-08-04",
+      "entityIds": [
+        "EN-d25e715a1ce00764",
+        "EN-8d4321d936320802"
+      ]
+    },
     {
       "id": "HW-a033b945449628d5",
       "eventId": "EV-a852dc0ca6011ff6",
@@ -14163,6 +14251,67 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-5c1869bc3f79759f",
+      "snapshotKey": "5c1869bc3f79759f",
+      "snapshotId": "HWS-b53ba96f9f2c11d3",
+      "eventId": "EV-be5bece353aeedcd",
+      "eventIds": [
+        "EV-be5bece353aeedcd"
+      ],
+      "dataDate": "2026-08-09",
+      "date": "2026-08-09",
+      "title": "Volta",
+      "subject": "Volta",
+      "productNames": [],
+      "hardwareType": "ai_accelerator",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "133",
+          "unit": "MW",
+          "fact_ref": "HWF-6fd93e441c08d734"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-09",
+          "hardware_fact_id": "HWF-6fd93e441c08d734",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-04T00:00:00.000Z",
+          "subject_entity_id": "EN-d25e715a1ce00764",
+          "subject_name": "Volta",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "ai_accelerator",
+          "metric_value": "133",
+          "unit": "MW",
+          "source_quote": "Its initial project will be an AI factory in Europe located in Norway that will comprise a 133 MW deployment powered by Dell Technologies AI infrastructure, including Dell PowerRack systems with PowerEdge XE9812 servers including NVIDIA accelerators.",
+          "event_refs": [
+            "EV-be5bece353aeedcd"
+          ],
+          "claim_ref": "CL-c6b8a9114bcfbb9c",
+          "source_refs": [
+            "SA-036fa74ea5c545f3"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~~usa~2026~08~volta-selects-dell-technologies-to-help-build-next-generation-ai-factories.htm",
+      "entityIds": [
+        "EN-d25e715a1ce00764",
+        "EN-8d4321d936320802"
+      ]
+    },
     {
       "id": "HWC-5a30e015d5d12a96",
       "snapshotKey": "5a30e015d5d12a96",

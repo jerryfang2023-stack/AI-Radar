@@ -15,7 +15,8 @@
       "pending": 0,
       "deduplicated": 2
     },
-    "taxonomy_version": "TAG-V4.1"
+    "taxonomy_version": "TAG-V4.1",
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
@@ -63,7 +64,9 @@
             "source_content_hash": "5a13ee222d9a2ed6",
             "quote_hash": "8735fd8a33612298a1d5beaf02af8d4630e091e770401a453466a53a6647ebce"
           }
-        ]
+        ],
+        "application_entity_id": "EN-cc2ab268105df889",
+        "canonical_entity_consistent": false
       },
       "financing": {
         "round": "B轮",

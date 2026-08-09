@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-08T04:22:09.833Z",
-    "latestDataDate": "2026-08-08",
-    "currentDate": "2026-08-08",
-    "eventCount": 1937,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-08-09T01:18:04.367Z",
+    "latestDataDate": "2026-08-09",
+    "currentDate": "2026-08-09",
+    "eventCount": 1962,
+    "quarantinedEventCount": 17
   },
   "entity": {
     "id": "EN-9cb45a27a2808c01",
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-5fa0cfcca24f0a83",
       "EV-da1655ecfaf35feb",
       "EV-ad75efcb12a07793"
     ],
@@ -36,10 +37,11 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-01",
-    "lastSeen": "2026-07-27",
+    "lastSeen": "2026-08-09",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-5fa0cfcca24f0a83",
         "EV-da1655ecfaf35feb",
         "EV-ad75efcb12a07793"
       ],
@@ -51,6 +53,23 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-5fa0cfcca24f0a83",
+        "dataDate": "2026-08-09",
+        "date": "2026-08-03",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI芯片市场融资新闻（2026年5月）——新市场推介",
+        "displayTags": [],
+        "entityIds": [
+          "EN-1360aaacd76daa34",
+          "EN-9cb45a27a2808c01",
+          "EN-dfc0fdff7af68ed2"
+        ]
+      },
       {
         "id": "EV-da1655ecfaf35feb",
         "dataDate": "2026-07-27",
@@ -256,8 +275,8 @@
         "EV-70a994b9339f92e7",
         "EV-59882383f82f215d",
         "EV-450f624a6a6446ce",
-        "EV-522c339dded54be5",
         "EV-d2a623e8eef1f61d",
+        "EV-522c339dded54be5",
         "EV-a86b04e679044c45",
         "EV-c3b96b789b5bcafd",
         "EV-e09efcd49776cb95",
@@ -274,6 +293,7 @@
         "EV-93fad8e0e30e442c",
         "EV-3d8608d3e78e031b",
         "EV-8fcb52bb6ec980af",
+        "EV-3dc8d5c373ddd1f3",
         "EV-db304937ceac95d2",
         "EV-28bd99c785aa9760",
         "EV-9f06b3f05f18b81e",
@@ -346,8 +366,8 @@
         "EN-8da5eafb322ee86e",
         "EN-53453cfb48a75dde",
         "EN-883be863cc6562bb",
-        "EN-e1517be14d06cdb7",
         "EN-bd6769fe78d0971a",
+        "EN-e1517be14d06cdb7",
         "EN-7640da40298286a6",
         "EN-54dfb14dcddad637",
         "EN-3711098f35d71cb9",
@@ -358,6 +378,7 @@
         "EN-51a3a4589db68480",
         "EN-222f930b87524636",
         "EN-f4bec299df3f4f27",
+        "EN-74be4cbf48e647b2",
         "EN-920510199770f4d6",
         "EN-e470d891c0bda7d8",
         "EN-0281afdb2d56c1e6",
@@ -419,7 +440,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "TX-ai_market_application-chips",
@@ -1156,6 +1177,8 @@
         "EV-7585b033d4005977",
         "EV-cec68369662236fd",
         "EV-4eb0556b8c72d410",
+        "EV-0d1e8308d3c007aa",
+        "EV-be5bece353aeedcd",
         "EV-64178e5d858f5e25",
         "EV-67212040ee9cd7c8",
         "EV-7012e774379b9c11",
@@ -1253,6 +1276,7 @@
         "EN-15516525ca2aa1a4",
         "EN-8dc72a4672894e0f",
         "EN-098a40b4499d7512",
+        "EN-d25e715a1ce00764",
         "EN-99f9ebbef37fcec5",
         "EN-240389f4b730bad4",
         "EN-449777124b1466a8",
@@ -1283,13 +1307,15 @@
         "FDE-6e17403b5cdb72b0"
       ],
       "hardwareIds": [
+        "HW-4673613f81881c78",
+        "HW-2afca97edf1a7fe8",
         "HW-df8fb3396e493a21",
         "HW-3a780bcd6e5bab6a",
         "HW-c57ff6e49b40d839",
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-08-05"
+      "lastSeen": "2026-08-09"
     }
   ],
   "fde": [],

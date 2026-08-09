@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-08T04:22:09.833Z",
-    "latestDataDate": "2026-08-08",
-    "currentDate": "2026-08-08",
-    "eventCount": 1937,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-08-09T01:18:04.367Z",
+    "latestDataDate": "2026-08-09",
+    "currentDate": "2026-08-09",
+    "eventCount": 1962,
+    "quarantinedEventCount": 17
   },
   "entity": {
     "id": "EN-cb4754c48f8023d0",
@@ -37,6 +37,8 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-41e229cb248b8418",
+      "EV-b27a05d7ff937744",
       "EV-6fc9c1eab4501ce9",
       "EV-b06624cf36990346",
       "EV-ee1e825af98ecab7",
@@ -88,7 +90,7 @@
       "EN-c70eca6b0f88f44d"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-08-08",
+    "lastSeen": "2026-08-09",
     "relationIds": [
       "REL2-a352560206a1ac3f",
       "REL2-d9ba4c1f870adb8b",
@@ -99,6 +101,8 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-41e229cb248b8418",
+        "EV-b27a05d7ff937744",
         "EV-6fc9c1eab4501ce9",
         "EV-b06624cf36990346",
         "EV-ee1e825af98ecab7",
@@ -145,6 +149,36 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-41e229cb248b8418",
+        "dataDate": "2026-08-09",
+        "date": "2026-08-08",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.225 发布：新增网关支出限额支持与工作区信任提示",
+        "displayTags": [],
+        "entityIds": [
+          "EN-cb4754c48f8023d0"
+        ]
+      },
+      {
+        "id": "EV-b27a05d7ff937744",
+        "dataDate": "2026-08-09",
+        "date": "2026-08-08",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Claude Code v2.1.224 支持 AI 跨会话消息传递",
+        "displayTags": [],
+        "entityIds": [
+          "EN-cb4754c48f8023d0"
+        ]
+      },
       {
         "id": "EV-6fc9c1eab4501ce9",
         "dataDate": "2026-08-08",
@@ -1588,10 +1622,14 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-3dc8d5c373ddd1f3",
+        "EV-778072e4940c5d43",
+        "EV-355ddfd4c6180ab0",
+        "EV-51891fe9f47dd616",
         "EV-997609968760857a",
         "EV-e6b22f59df71890e",
-        "EV-4c8fa40c36b6ddb7",
         "EV-c35c34271c7caf53",
+        "EV-4c8fa40c36b6ddb7",
         "EV-99005688ec16c082",
         "EV-6249564cff324a0e",
         "EV-b06624cf36990346",
@@ -1984,9 +2022,11 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-74be4cbf48e647b2",
+        "EN-c0fced8f2483e9f5",
+        "EN-738e22f0acab814c",
         "EN-dca6ec9510fc0176",
         "EN-5a28a1a99a417ba5",
-        "EN-738e22f0acab814c",
         "EN-842fcb5e60989a03",
         "EN-b81c8201acfc7639",
         "EN-d9b1d7819af92e77",
@@ -2008,7 +2048,6 @@
         "EN-cd6362472aea60ef",
         "EN-8d57f84bd1847b24",
         "EN-3149ad548669e717",
-        "EN-c0fced8f2483e9f5",
         "EN-f1649339197f76d6",
         "EN-a7baed72c308ce88",
         "EN-ba728f8ca730921f",

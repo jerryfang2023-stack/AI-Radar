@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-08T04:22:09.833Z",
-    "latestDataDate": "2026-08-08",
-    "currentDate": "2026-08-08",
-    "eventCount": 1937,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-08-09T01:18:04.367Z",
+    "latestDataDate": "2026-08-09",
+    "currentDate": "2026-08-09",
+    "eventCount": 1962,
+    "quarantinedEventCount": 17
   },
   "entity": {
     "id": "EN-a625159d18da5718",
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-6af52e14ca627cd8",
       "EV-c14c8ab22d882966",
       "EV-1bba7775c80af1f0"
     ],
@@ -29,13 +30,14 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-19",
-    "lastSeen": "2026-07-13",
+    "lastSeen": "2026-08-09",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-6af52e14ca627cd8",
         "EV-c14c8ab22d882966",
         "EV-1bba7775c80af1f0"
       ],
@@ -44,6 +46,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-6af52e14ca627cd8",
+        "dataDate": "2026-08-09",
+        "date": "2026-08-08",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Claude Code 会话现在可以相互通信，并在终端间共享上下文",
+        "displayTags": [],
+        "entityIds": [
+          "EN-a625159d18da5718"
+        ]
+      },
       {
         "id": "EV-c14c8ab22d882966",
         "dataDate": "2026-07-13",
