@@ -1876,6 +1876,8 @@ test("cloud Business Signals health dispatch waits for downstream completion", (
   assert.match(dispatcher, /waitForHealthyV4/u);
   assert.match(dispatcher, /Business Signals run concluded/u);
   assert.match(dispatcher, /\+refs\/heads\/main:refs\/remotes\/origin\/main/u);
+  assert.match(dispatcher, /data-center-v4\/manifest\.json/u);
+  assert.doesNotMatch(dispatcher, /frontstagePath = "01-SiteV2\/site\/data\/data-center-v4-frontstage\.json"/u);
   assert.match(dispatcher, /ready: fetch\.ok/u);
   assert.match(dispatcher, /Timed out waiting for Business Signals publication/u);
   assert.match(dispatcher, /action: "completed"/u);

@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-09T05:46:13.053Z",
+  "generated_at": "2026-08-09T05:53:33.096Z",
   "date": "2026-08-09",
-  "action": "Fix Health Dispatch origin/main refresh",
+  "action": "Bound Health Dispatch frontstage inspection",
   "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
   "status": "success",
-  "summary": "Reproduced the cloud wait against an actions/checkout shallow clone contract and replaced ambiguous fetch behavior with an explicit main remote-tracking refspec",
+  "summary": "Replaced the oversized monolithic frontstage git-show health probe with the bounded split-service manifest after production dry-run evidence showed stdout buffer exhaustion",
   "contexts": [
     "context/10-experience-automation.md",
     "context/12-data-center-v4.md"
@@ -21,19 +21,19 @@
     "health-dispatch policy fixtures",
     "data-center-v4 tests 125/125",
     "git diff --check",
-    "production Business Signals recovery run 31296995126"
+    "production dry-run 31297595660"
   ],
   "issues": [
-    "git fetch origin main did not guarantee origin/main refresh in shallow GitHub Actions checkouts"
+    "spawnSync could not buffer the multi-megabyte monolithic frontstage adapter and silently returned an empty frontstage date"
   ],
   "risks": [
-    "health verification intentionally fails closed when the explicit remote ref cannot be refreshed"
+    "health relies on the split manifest whose monolithic consistency is enforced by the existing frontstage regression suite"
   ],
   "lessons": [
-    "a successful fetch command does not prove the remote-tracking ref consumed by later reads was updated"
+    "health probes should read bounded manifests rather than full serving payloads"
   ],
   "reusable_rules": [
-    "cloud health fetches must explicitly update the exact remote-tracking ref they inspect"
+    "production health inspection must use bounded persisted control artifacts"
   ],
   "retired_flags": [],
   "notes": []
