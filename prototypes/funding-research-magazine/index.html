@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="观澜 AI 融资数据站：已核验 AI 融资事件、获投公司与投资机构数据。">
+  <meta name="application-version" content="FUNDING-PORTAL-V1.0.0">
+  <title>观澜 AI 融资数据站</title>
+  <link rel="stylesheet" href="portal.css?v=1.0.0">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到主要内容</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#home" data-view-target="home" aria-label="观澜 AI 融资数据站首页">
+        <img src="assets/wavesight-logo-light.svg" alt="观澜 AI WAVESIGHT AI">
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="主要导航">
+        <a href="#home" data-view-target="home">首页</a>
+        <a href="#rankings" data-view-target="rankings">融资榜</a>
+        <a href="#companies" data-view-target="companies">公司库</a>
+        <a href="#investors" data-view-target="investors">投资机构</a>
+        <a href="#reports" data-view-target="reports">周报/月报</a>
+        <a href="#methodology" data-view-target="methodology">数据说明</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">栏目</button>
+      <a class="header-cta" href="#reports" data-view-target="reports">订阅</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="view is-active" data-view="home" aria-labelledby="home-title">
+      <div class="portal-hero">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">观澜 AI · 融资数据应用</p>
+            <h1 id="home-title">用数据看清<br>AI 资本流向</h1>
+            <p class="hero-deck">汇集已核验 AI 融资事件、获投公司与投资机构。日常页面只呈现可计算、可追溯的数据。</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#rankings" data-view-target="rankings">查看融资榜</a>
+              <a class="button button-secondary" href="#latest-funding">浏览最新融资</a>
+            </div>
+            <p class="hero-note" id="hero-note">正在读取最新数据</p>
+          </div>
+          <div class="hero-data" aria-label="融资数据概览">
+            <div class="hero-data-art" role="img" aria-label="观澜山水数据意象"></div>
+            <div class="metric-grid">
+              <article><span>融资事件</span><strong id="metric-events">—</strong><small>已核验</small></article>
+              <article><span>获投公司</span><strong id="metric-companies">—</strong><small>去重后</small></article>
+              <article><span>投资机构</span><strong id="metric-investors">—</strong><small>稳定机构 ID</small></article>
+              <article><span>研究来源</span><strong id="metric-sources">—</strong><small>至少两个来源/事件</small></article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="shell home-stack">
+        <section class="section-block" id="latest-funding" aria-labelledby="latest-title">
+          <div class="section-heading">
+            <div><p class="eyebrow">Latest rounds</p><h2 id="latest-title">最新融资</h2></div>
+            <a href="#rankings" data-view-target="rankings">查看全部融资榜</a>
+          </div>
+          <div class="funding-grid" id="latest-grid" aria-live="polite"></div>
+        </section>
+
+        <section class="split-section" aria-label="融资榜与机构榜">
+          <article class="paper-panel ranking-preview">
+            <div class="section-heading compact">
+              <div><p class="eyebrow">Monthly ranking</p><h2>本月融资 Top 10</h2></div>
+              <span class="scope-chip" id="monthly-scope">USD</span>
+            </div>
+            <div class="ranking-list" id="monthly-ranking"></div>
+            <a class="text-link" href="#rankings" data-view-target="rankings">打开完整榜单</a>
+          </article>
+          <article class="paper-panel investor-preview">
+            <div class="section-heading compact">
+              <div><p class="eyebrow">Active investors</p><h2>活跃投资机构</h2></div>
+              <span class="scope-chip">全部记录</span>
+            </div>
+            <div class="investor-list" id="active-investors"></div>
+            <a class="text-link" href="#investors" data-view-target="investors">浏览投资机构库</a>
+          </article>
+        </section>
+
+        <section class="section-block" aria-labelledby="sector-title">
+          <div class="section-heading">
+            <div><p class="eyebrow">Market distribution</p><h2 id="sector-title">赛道分布</h2></div>
+            <p>按融资事件数统计，不生成趋势判断</p>
+          </div>
+          <div class="sector-grid" id="sector-grid"></div>
+        </section>
+
+        <section class="newsletter-strip" aria-labelledby="newsletter-title">
+          <div><p class="eyebrow">Weekly & monthly</p><h2 id="newsletter-title">分析只进入周报与月报</h2><p>周期性汇总资金流向、活跃机构与结构变化，所有判断链接回融资事件。</p></div>
+          <div class="newsletter-form newsletter-pending" aria-label="Newsletter 状态">
+            <a class="newsletter-link" href="#reports" data-view-target="reports">浏览周报/月报</a>
+            <span class="form-message">邮件订阅即将开放</span>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="view" data-view="rankings" aria-labelledby="rankings-title">
+      <div class="shell page-shell">
+        <div class="page-intro">
+          <p class="eyebrow">Rankings</p>
+          <h1 id="rankings-title">AI 融资榜</h1>
+          <p>按披露金额进行确定性排序。默认展示美元榜，不将不同币种直接相加。</p>
+        </div>
+        <div class="toolbar" aria-label="融资榜筛选">
+          <label>榜单范围<select id="ranking-limit"><option value="10">Top 10</option><option value="100">Top 100</option><option value="235">全部</option></select></label>
+          <label>币种<select id="ranking-currency"></select></label>
+          <label>赛道<select id="ranking-category"><option value="">全部赛道</option></select></label>
+          <label>轮次<select id="ranking-round"><option value="">全部轮次</option></select></label>
+          <label class="search-field">搜索<input id="ranking-search" type="search" placeholder="公司 / 机构 / 产品"></label>
+        </div>
+        <div class="ranking-table-wrap">
+          <table class="data-table">
+            <thead><tr><th>排名</th><th>公司</th><th>融资金额</th><th>轮次</th><th>融资日期</th><th>赛道</th><th>投资机构</th></tr></thead>
+            <tbody id="ranking-table-body"></tbody>
+          </table>
+        </div>
+        <p class="result-note" id="ranking-result-note"></p>
+      </div>
+    </section>
+
+    <section class="view" data-view="companies" aria-labelledby="companies-title">
+      <div class="shell page-shell">
+        <div class="page-intro">
+          <p class="eyebrow">Funded companies</p>
+          <h1 id="companies-title">获投公司库</h1>
+          <p>聚合公司融资历史、累计披露金额、产品、赛道和本轮投资机构。</p>
+        </div>
+        <div class="toolbar slim">
+          <label class="search-field">搜索公司<input id="company-search" type="search" placeholder="公司 / 产品 / 赛道"></label>
+          <label>赛道<select id="company-category"><option value="">全部赛道</option></select></label>
+          <label>排序<select id="company-sort"><option value="latest">最近融资</option><option value="rounds">融资轮次数</option><option value="name">公司名称</option></select></label>
+        </div>
+        <div class="entity-grid" id="company-grid"></div>
+        <button class="load-more" id="company-load-more" type="button">加载更多公司</button>
+      </div>
+    </section>
+
+    <section class="view" data-view="investors" aria-labelledby="investors-title">
+      <div class="shell page-shell">
+        <div class="page-intro">
+          <p class="eyebrow">Investment institutions</p>
+          <h1 id="investors-title">AI 投资机构</h1>
+          <p>按稳定机构 ID 聚合本轮投资活动；“活跃”只代表参与轮次数，不代表投资表现。</p>
+        </div>
+        <div class="toolbar slim">
+          <label class="search-field">搜索机构<input id="investor-search" type="search" placeholder="机构 / 已投公司 / 赛道"></label>
+          <label>排序<select id="investor-sort"><option value="activity">参与轮次数</option><option value="lead">领投次数</option><option value="latest">最近出手</option></select></label>
+        </div>
+        <div class="entity-grid investor-grid" id="investor-grid"></div>
+        <button class="load-more" id="investor-load-more" type="button">加载更多机构</button>
+      </div>
+    </section>
+
+    <section class="view" data-view="reports" aria-labelledby="reports-title">
+      <div class="shell page-shell">
+        <div class="page-intro report-intro">
+          <p class="eyebrow">Newsletter & reports</p>
+          <h1 id="reports-title">周报与月报</h1>
+          <p>数据页负责陈列，报告负责判断。每期报告引用融资事件、公司与机构数据。</p>
+        </div>
+        <div class="report-grid">
+          <article class="report-card featured"><span>每周一发布</span><h2>AI 融资周报</h2><p>本周主要融资、活跃机构、轮次结构与三条观澜判断。</p><ul><li>5—7 分钟阅读</li><li>链接原始融资事件</li><li>覆盖本周新增数据</li></ul><button type="button" data-report="weekly">查看最新周报</button></article>
+          <article class="report-card"><span>每月首周发布</span><h2>AI 融资月报</h2><p>月度 Top 10、赛道资金分布、活跃机构和结构性变化。</p><ul><li>跨周数据汇总</li><li>分币种统计</li><li>保留数据边界</li></ul><button type="button" data-report="monthly">查看最新月报</button></article>
+        </div>
+        <section class="archive-panel" aria-labelledby="archive-title"><div><p class="eyebrow">Archive</p><h2 id="archive-title">报告归档</h2></div><div class="archive-list" id="report-archive"></div></section>
+      </div>
+    </section>
+
+    <section class="view" data-view="methodology" aria-labelledby="methodology-title">
+      <div class="shell page-shell methodology-shell">
+        <div class="page-intro">
+          <p class="eyebrow">Methodology</p>
+          <h1 id="methodology-title">排名口径与数据说明</h1>
+          <p>榜单是透明、可复算的数据索引，不是观澜的投资推荐。</p>
+        </div>
+        <div class="method-grid">
+          <article><span>01</span><h2>最新融资</h2><p>按融资披露日期倒序；相同日期使用稳定融资卡 ID。</p></article>
+          <article><span>02</span><h2>金额榜</h2><p>只比较同币种融资额。美元、人民币、欧元和日元分别排序，不进行静默换算。</p></article>
+          <article><span>03</span><h2>公司累计融资</h2><p>精确值、约数、下限和区间分别标记；不得将下限显示为精确累计金额。</p></article>
+          <article><span>04</span><h2>活跃投资机构</h2><p>按本轮参与次数统计，领投次数作为辅助字段，不生成“最佳机构”评分。</p></article>
+          <article><span>05</span><h2>数据来源</h2><p>每笔融资至少关联两个研究来源，并链接回正式融资事件。</p></article>
+          <article><span>06</span><h2>分析边界</h2><p>日常页面不生成资本判断。分析、趋势与风险判断只进入周报和月报。</p></article>
+        </div>
+        <div class="data-status"><div><span>当前数据版本</span><strong id="method-version">读取中</strong></div><div><span>最近更新</span><strong id="method-date">读取中</strong></div><div><span>去重轮次</span><strong id="method-dedup">读取中</strong></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-inner"><img src="assets/wavesight-logo-light.svg" alt="观澜 AI"><p>观澜 AI 融资数据站 · 证据可追溯的 AI 融资数据库</p><small>© 2026 WAVESIGHT AI · v1.0.0</small></div></footer>
+
+  <dialog class="detail-dialog" id="detail-dialog"><button class="dialog-close" id="dialog-close" type="button" aria-label="关闭">关闭</button><div id="dialog-content"></div></dialog>
+  <div class="loading-screen" id="loading-screen" role="status"><span>正在建立融资数据索引</span></div>
+  <script src="portal.js?v=1.0.0" defer></script>
+</body>
+</html>
