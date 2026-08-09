@@ -194,6 +194,11 @@ jobs:
           npm run assert:investment-institutions
           frontstage_generated_at="$(node -e "process.stdout.write(require('./01-SiteV2/site/data/data-center-v4-frontstage.json').meta.generatedAt)")"
           entity_history_generated_at="$(node -e "process.stdout.write(require('./01-SiteV2/site/data/data-center-v4-frontstage.json').entityHistoryManifest.generatedAt)")"
+          # The materialized V4 tables are intentionally ignored from Git.
+          # Rebuild them from the committed daily bundles before the site
+          # projection; otherwise a clean GitHub runner cannot build the
+          # Data Center frontstage after a funding-only update.
+          npm run sync:data-lake -- --v4-only=true --duckdb=skip
           WAVESIGHT_FRONTSTAGE_GENERATED_AT="$frontstage_generated_at" \
           WAVESIGHT_ENTITY_HISTORY_GENERATED_AT="$entity_history_generated_at" \
             npm run build:data-center-site
