@@ -132,11 +132,9 @@ const upstreamFiles = [
 ].filter(Boolean);
 const downstreamGroups = {
   v4_materialization: [manifestFile].filter(exists),
-  application_projection: [
-    path.join(root, "01-SiteV2", "site", "data", "opportunity-evidence-v2.json"),
-    path.join(root, "01-SiteV2", "site", "data", "trend-radar-v1.json"),
-    path.join(root, "01-SiteV2", "site", "data", "funding-insights-v1.json"),
-  ].filter(exists),
+  application_opportunity: [path.join(root, "01-SiteV2", "site", "data", "opportunity-evidence-v2.json")].filter(exists),
+  application_trend: [path.join(root, "01-SiteV2", "site", "data", "trend-radar-v1.json")].filter(exists),
+  application_funding: [path.join(root, "01-SiteV2", "site", "data", "funding-insights-v1.json")].filter(exists),
   operations: [telemetryFile].filter(exists),
 };
 const upstreamMtime = latestTime(upstreamFiles);
@@ -150,7 +148,10 @@ const relevantWorktreeChanged = hasRelevantWorktreeChanges(stalenessPaths);
 const staleGroups = (relevantWorktreeChanged ? Object.entries(downstreamGroups) : [])
   .map(([name, files]) => ({ name, files, stale: upstreamMtime > 0 && files.length > 0 && latestTime(files) < upstreamMtime }))
   .filter((group) => group.stale);
-const blockedStaleGroups = blockStale ? staleGroups : [];
+const applicationStaleGroups = staleGroups.filter((group) => group.name.startsWith("application_"));
+const blockedStaleGroups = blockStale
+  ? staleGroups.filter((group) => !group.name.startsWith("application_"))
+  : [];
 
 const problems = [];
 if (!intake) problems.push(`missing structured source intake for ${date}`);
@@ -196,6 +197,10 @@ const report = [
   "",
   markdownList(staleGroups.map((group) => `${group.name}: ${group.files.map(rel).join(", ")}`)),
   "",
+  "## Non-blocking Application Warnings",
+  "",
+  markdownList(applicationStaleGroups.map((group) => `${group.name}: ${group.files.map(rel).join(", ")}`)),
+  "",
   "## Problems",
   "",
   markdownList(problems),
@@ -220,6 +225,7 @@ console.log(JSON.stringify({
   collection_telemetry_status: telemetryReady ? "ready" : null,
   downstream_assets_stale: staleGroups.length > 0,
   stale_groups: staleGroups.map((group) => group.name),
+  application_warning_groups: applicationStaleGroups.map((group) => group.name),
   blocked_stale_groups: blockedStaleGroups.map((group) => group.name),
   problems,
 }, null, 2));

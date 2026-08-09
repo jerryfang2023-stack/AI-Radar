@@ -8,8 +8,8 @@
     "generatedAt": "2026-08-09T01:18:04.367Z",
     "latestDataDate": "2026-08-09",
     "currentDate": "2026-08-09",
-    "eventCount": 1962,
-    "quarantinedEventCount": 17
+    "eventCount": 1963,
+    "quarantinedEventCount": 16
   },
   "entity": {
     "id": "EN-4579cfff76862f91",
@@ -21,28 +21,139 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-af4a44cc88f5db09"
+    ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-08-07",
+    "lastSeen": "2026-08-09",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
-      "deployments": [],
+      "deployments": [
+        "EV-af4a44cc88f5db09"
+      ],
       "partnerships": [],
       "productsServices": [],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-af4a44cc88f5db09",
+        "dataDate": "2026-08-09",
+        "date": "2026-08-07",
+        "eventType": "procurement_contract",
+        "eventTypeLabel": "采购合同",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "马哈拉施特拉邦政府批准₹11.26 Crore人工智能计划以提升公共服务，ETGovernment",
+        "displayTags": [],
+        "entityIds": [
+          "EN-4579cfff76862f91",
+          "EN-ee1e31ffef7dbe64"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],
   "relationships": [],
   "taxonomyNodes": [],
-  "fde": [],
-  "hardware": []
+  "fde": [
+    {
+      "id": "FDE-2d1ab1a90125cd6e",
+      "eventId": "EV-af4a44cc88f5db09",
+      "dataDate": "2026-08-09",
+      "date": "2026-08-07",
+      "title": "马哈拉施特拉邦政府批准₹11.26 Crore人工智能计划以提升公共服务，ETGovernment",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Sarvam AI sovereign AI solutions",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "The Maharashtra government has granted approval for the deployment of sovereign artificial intelligence solutions from Sarvam AI for government departments with a two-year outlay of ₹11.26 crore."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://government.economictimes.indiatimes.com/news/technology/maharashtra-clears-11-26-cr-sarvam-ai-deployment-for-govt-departments/133022514",
+      "entityIds": [
+        "EN-4579cfff76862f91",
+        "EN-ee1e31ffef7dbe64"
+      ]
+    }
+  ],
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-da212cdb02afa62d",
+      "implementationKey": "da212cdb02afa62d",
+      "eventId": "EV-af4a44cc88f5db09",
+      "eventIds": [
+        "EV-af4a44cc88f5db09"
+      ],
+      "dataDate": "2026-08-09",
+      "date": "2026-08-07",
+      "title": "Maharashtra government × Sarvam：Sarvam AI sovereign AI solutions",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Maharashtra government",
+      "vendor": "Sarvam",
+      "industry": "未披露",
+      "useCase": "Sarvam AI sovereign AI solutions",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-62d3233a810e179a",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-07",
+          "dataDate": "2026-08-09",
+          "eventId": "EV-af4a44cc88f5db09",
+          "eventTitle": "马哈拉施特拉邦政府批准₹11.26 Crore人工智能计划以提升公共服务，ETGovernment",
+          "claimCount": 1,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://government.economictimes.indiatimes.com/news/technology/maharashtra-clears-11-26-cr-sarvam-ai-deployment-for-govt-departments/133022514",
+      "entityIds": [
+        "EN-4579cfff76862f91",
+        "EN-ee1e31ffef7dbe64"
+      ]
+    }
+  ]
 }

@@ -41,11 +41,20 @@ for (const workflow of workflows) {
 }
 
 const persistent = read(workflows[0]);
+const classifier = read("agent-workflow/tools/classify-business-signals-production-state.mjs");
 if (!/id:\s*pre-commit-gate[\s\S]*steps\.data-center-v4-materialize\.outcome == 'success' && steps\.operations-data\.outcome == 'success'/u.test(persistent)) {
   problems.push("persistent workflow pre-commit gate is not owned by V4 materialization and operations data");
 }
 if (/pre-commit-gate[\s\S]{0,400}(?:business-frontstage|card-editorial|pool-to-card)/u.test(persistent)) {
   problems.push("persistent pre-commit gate still depends on a retired compatibility stage");
+}
+if (/\["application_projection",/u.test(classifier)) {
+  problems.push("Business Signals final classification still blocks accepted V4 facts on downstream application projections");
+}
+for (const projection of ["opportunity", "trend", "funding"]) {
+  if (!new RegExp(`\\["${projection}",`).test(classifier)) {
+    problems.push(`Business Signals final classification does not report ${projection} projection warnings`);
+  }
 }
 
 const monitor = read("agent-workflow/tools/run-guanlan-daily-monitor.mjs");
