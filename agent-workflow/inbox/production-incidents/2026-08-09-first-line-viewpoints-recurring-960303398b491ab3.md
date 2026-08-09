@@ -1,15 +1,21 @@
-status: open
+status: resolved
 priority: normal
-created_at: 2026-08-09T08:45:47.142Z
 lane: first_line_viewpoints
 category: recurring_automation_issue
+failed_gate: repeated daily supervision signal
+report_path: runtime://daily-supervision/2026-08-08
+data_generated: inspect linked daily reports
+needed_action: repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only
+created_at: 2026-08-09T08:45:47.142Z
+updated_at: 2026-08-09T18:46:17+08:00
+resolved_at: 2026-08-09T18:46:17+08:00
+resolver: codex
+fix_commit: 2b970ce031bbab567890e4fd8c9d03a8b456eeaf
+validation: 2026-08-09 same-date First-Line gate passed; final closure closed with first_line_viewpoints passed
+prevention_added: gate
 fingerprint: 960303398b491ab3
 occurrences: 2
 occurrence_dates: 2026-08-04, 2026-08-08
-report_path: runtime://daily-supervision/2026-08-08
-failed_gate: repeated daily supervision signal
-data_generated: inspect linked daily reports
-needed_action: repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only
 validation_required: rerun the owning lane and daily final closure
 prevention_required: gate|eval|memory|context
 
@@ -24,3 +30,9 @@ prevention_required: gate|eval|memory|context
 - Record the causal fix commit.
 - Record the validation command and result.
 - Record the prevention artifact before resolving the incident.
+
+## Resolution - 2026-08-09T18:46:17+08:00
+
+- fix_commit: 2b970ce031bbab567890e4fd8c9d03a8b456eeaf
+- validation: 2026-08-09 same-date First-Line gate passed; final closure closed with first_line_viewpoints passed
+- prevention_added: gate

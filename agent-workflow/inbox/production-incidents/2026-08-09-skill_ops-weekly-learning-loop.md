@@ -1,11 +1,17 @@
-status: open
+status: resolved
 priority: medium
 lane: skill_ops
-created_at: 2026-08-09T10:29:35.382Z
 failed_gate: weekly_learning_loop
 report_path: agent-workflow/reports/2026-08-09-weekly-health.md
 data_generated: not_applicable
 needed_action: add or tighten gate / eval / MEMORY prevention
+created_at: 2026-08-09T10:29:35.382Z
+updated_at: 2026-08-09T18:47:07+08:00
+resolved_at: 2026-08-09T18:47:07+08:00
+resolver: codex
+fix_commit: d0436411741e8fe979c5cddb8ae5a7c90a27fa77
+validation: all five referenced incidents resolved; npm test passed; Skill Ops drift 0; 2026-08-09 final closure closed with all affected lanes passed
+prevention_added: gate
 
 # Weekly Learning Loop - 2026-08-09
 
@@ -24,3 +30,9 @@ needed_action: add or tighten gate / eval / MEMORY prevention
 ## Completion Rule
 
 Codex must implement the smallest durable gate, eval, or MEMORY prevention, rerun the failed check, and record validation before resolving this item.
+
+## Resolution - 2026-08-09T18:47:07+08:00
+
+- fix_commit: d0436411741e8fe979c5cddb8ae5a7c90a27fa77
+- validation: all five referenced incidents resolved; npm test passed; Skill Ops drift 0; 2026-08-09 final closure closed with all affected lanes passed
+- prevention_added: gate
