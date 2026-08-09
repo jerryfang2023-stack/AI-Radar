@@ -236,10 +236,10 @@
   {
     "claim_id": "CL-c6b8a9114bcfbb9c",
     "raw_id": "RAW-a64f826383a2fde9",
-    "claim_type": "hardware_deployment",
+    "claim_type": "procurement_contract",
     "subject": "Volta",
-    "predicate": "hardware_deployment",
-    "object": "AI factory in Norway comprising a 133 MW deployment powered by Dell Technologies AI infrastructure",
+    "predicate": "procurement_contract",
+    "object": "Dell Technologies AI infrastructure, including Dell PowerRack systems with PowerEdge XE9812 servers including NVIDIA accelerators",
     "qualifiers": {
       "event_status": "announced",
       "sequence": 1,
@@ -424,72 +424,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-e2910383935e814f",
-    "raw_id": "RAW-0d0e01a72e407c0a",
-    "claim_type": "funding",
-    "subject": "OLIX",
-    "predicate": "funding",
-    "object": "$312 million",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 1,
-      "model_candidate_id": "MAC-1bc14aa7e1d4f207"
-    },
-    "source_span": {
-      "raw_id": "RAW-0d0e01a72e407c0a",
-      "start": 4726,
-      "end": 4785
-    },
-    "source_quote": "OLIX raised $312 million in Series B funding in August 2026",
-    "extraction_method": "model_source_span",
-    "extraction_confidence": 0.72,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-e161ec83f84dd8b2",
-    "raw_id": "RAW-0d0e01a72e407c0a",
-    "claim_type": "funding",
-    "subject": "Etched",
-    "predicate": "funding",
-    "object": "$300 million",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 2,
-      "model_candidate_id": "MAC-1bc14aa7e1d4f207"
-    },
-    "source_span": {
-      "raw_id": "RAW-0d0e01a72e407c0a",
-      "start": 5878,
-      "end": 5937
-    },
-    "source_quote": "Etched raised $300 million in Series C funding in July 2026",
-    "extraction_method": "model_source_span",
-    "extraction_confidence": 0.72,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-aeed5454eae363d4",
-    "raw_id": "RAW-0d0e01a72e407c0a",
-    "claim_type": "funding",
-    "subject": "SambaNova Systems",
-    "predicate": "funding",
-    "object": "$1 billion",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 3,
-      "model_candidate_id": "MAC-1bc14aa7e1d4f207"
-    },
-    "source_span": {
-      "raw_id": "RAW-0d0e01a72e407c0a",
-      "start": 7156,
-      "end": 7218
-    },
-    "source_quote": "SambaNova raised $1 billion in Series F financing in July 2026",
-    "extraction_method": "model_source_span",
-    "extraction_confidence": 0.72,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-ae4c88f644d45342",
     "raw_id": "RAW-dd8d15eada8a0b88",
     "claim_type": "product_release",
@@ -512,28 +446,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-695a536e3e3e7a10",
-    "raw_id": "RAW-d4f4fd0f3f57e25c",
-    "claim_type": "product_release",
-    "subject": "Okta",
-    "predicate": "product_release",
-    "object": "Agent Gateway",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 1,
-      "model_candidate_id": "MAC-dff41b14c74598a8"
-    },
-    "source_span": {
-      "raw_id": "RAW-d4f4fd0f3f57e25c",
-      "start": 8403,
-      "end": 8472
-    },
-    "source_quote": "Customers can request access to Agent Gateway’s research release now.",
-    "extraction_method": "model_source_span",
-    "extraction_confidence": 0.72,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-a049de814bf93ad9",
     "raw_id": "RAW-d4f4fd0f3f57e25c",
     "claim_type": "product_release",
@@ -542,7 +454,7 @@
     "object": "Agent-to-Agent Connections",
     "qualifiers": {
       "event_status": "announced",
-      "sequence": 2,
+      "sequence": 1,
       "model_candidate_id": "MAC-dff41b14c74598a8"
     },
     "source_span": {
@@ -564,7 +476,7 @@
     "object": "Resource Access Certifications for AI Agents",
     "qualifiers": {
       "event_status": "announced",
-      "sequence": 3,
+      "sequence": 2,
       "model_candidate_id": "MAC-dff41b14c74598a8"
     },
     "source_span": {
@@ -578,12 +490,34 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-695a536e3e3e7a10",
+    "raw_id": "RAW-d4f4fd0f3f57e25c",
+    "claim_type": "product_release",
+    "subject": "Okta",
+    "predicate": "product_release",
+    "object": "Agent Gateway research release",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-dff41b14c74598a8"
+    },
+    "source_span": {
+      "raw_id": "RAW-d4f4fd0f3f57e25c",
+      "start": 8403,
+      "end": 8472
+    },
+    "source_quote": "Customers can request access to Agent Gateway’s research release now.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-f16e6a3eafa5815a",
     "raw_id": "RAW-50aec88887973413",
     "claim_type": "procurement_contract",
     "subject": "Maharashtra government",
     "predicate": "procurement_contract",
-    "object": "Sarvam AI sovereign AI solutions",
+    "object": "Sarvam AI",
     "qualifiers": {
       "event_status": "announced",
       "sequence": 1,
@@ -1131,12 +1065,12 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-e5a2974bfd0f89cd",
+    "claim_id": "CL-c5ca2729aa71ca17",
     "raw_id": "RAW-66df9c11afa456e8",
     "claim_type": "product_release",
-    "subject": "Claude Code v2.1.224",
+    "subject": "Anthropic",
     "predicate": "product_release",
-    "object": "跨会话消息传递功能",
+    "object": "Claude Code v2.1.224",
     "qualifiers": {
       "event_status": "announced",
       "sequence": 1,
@@ -1145,9 +1079,9 @@
     "source_span": {
       "raw_id": "RAW-66df9c11afa456e8",
       "start": 358,
-      "end": 399
+      "end": 398
     },
-    "source_quote": "宣布从 Claude Code v2.1.224 开始，会话之间可以互相发送消息。",
+    "source_quote": "宣布从 Claude Code v2.1.224 开始，会话之间可以互相发送消息",
     "extraction_method": "model_source_span",
     "extraction_confidence": 0.72,
     "verification_status": "accepted"
@@ -1234,6 +1168,28 @@
     "source_quote": "该浏览器目前处于测试阶段，正式版将在未来推出。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-092ca64a0072aae3",
+    "raw_id": "RAW-cf102432359a9db0",
+    "claim_type": "product_release",
+    "subject": "Microsoft",
+    "predicate": "product_release",
+    "object": "Explain This Copilot AI feature for classic Outlook on Windows 10 and Windows 11",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f8b2826d7d004de3"
+    },
+    "source_span": {
+      "raw_id": "RAW-cf102432359a9db0",
+      "start": 373,
+      "end": 454
+    },
+    "source_quote": "面向 Windows 10 、 Windows 11 经典版 Outlook 应用， 微软开始推送名为 Explain This 的 Copilot AI 功能。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1507,28 +1463,6 @@
       "end": 448
     },
     "source_quote": "一篇名为《在 Mac 上配合 Apple 智能使用千问》的支持文档近日现身苹果官网 Mac 简体中文使用手册，其中明确提到 Apple 智能可配合阿里巴巴千问模型工作。",
-    "extraction_method": "model_source_span",
-    "extraction_confidence": 0.72,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-2944ec338a54c772",
-    "raw_id": "RAW-85e9c33a5ed05516",
-    "claim_type": "product_release",
-    "subject": "微软",
-    "predicate": "product_release",
-    "object": "新版 Outlook 每日小结 AI 功能",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 1,
-      "model_candidate_id": "MAC-7495fa6fef263b83"
-    },
-    "source_span": {
-      "raw_id": "RAW-85e9c33a5ed05516",
-      "start": 95,
-      "end": 131
-    },
-    "source_quote": "微软计划引入“每日小结”（Wrap up your day） AI 功能",
     "extraction_method": "model_source_span",
     "extraction_confidence": 0.72,
     "verification_status": "accepted"

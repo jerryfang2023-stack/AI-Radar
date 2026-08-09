@@ -5,16 +5,16 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-09T01:18:04.367Z",
+    "generatedAt": "2026-08-09T05:37:09.176Z",
     "latestDataDate": "2026-08-09",
     "currentDate": "2026-08-09",
-    "eventCount": 1963,
+    "eventCount": 1962,
     "quarantinedEventCount": 16
   },
   "fde": [
     {
-      "id": "FDE-2d1ab1a90125cd6e",
-      "eventId": "EV-af4a44cc88f5db09",
+      "id": "FDE-6b1d74319701501c",
+      "eventId": "EV-715eb0debea4180c",
       "dataDate": "2026-08-09",
       "date": "2026-08-07",
       "title": "马哈拉施特拉邦政府批准₹11.26 Crore人工智能计划以提升公共服务，ETGovernment",
@@ -23,7 +23,7 @@
       "customer": "未披露",
       "vendor": "未披露",
       "industry": "未披露",
-      "useCase": "Sarvam AI sovereign AI solutions",
+      "useCase": "Sarvam AI",
       "reportedNeed": "未披露",
       "deliveryComponents": [
         "The Maharashtra government has granted approval for the deployment of sovereign artificial intelligence solutions from Sarvam AI for government departments with a two-year outlay of ₹11.26 crore."
@@ -67,9 +67,7 @@
       "deliveryComponents": [
         "KIDZ AI Inc. (NASDAQ: KIDZ) (NASDAQ: KIDZW) (“KIDZ AI” or the “Company”), an education technology company advancing AI infrastructure and GPU compute initiatives alongside its core EdTech operations, today announced that it has signed a Memorandum of Understanding (“MOU”) with Limestone Networks, Inc. (“Limestone”), a Texas-based cloud and data center infrastructure provider, for the proposed deployment of the Company’s AI computing infrastructure at the DFW3 data center in Dallas, Texas."
       ],
-      "outcomes": [
-        "MOU signed for proposed colocation of inference-focused AI computing infrastructure"
-      ],
+      "outcomes": [],
       "metrics": [
         "$44.6 Million",
         "$44.6 million"
@@ -77,12 +75,12 @@
       "undisclosedFields": [
         "workflow_before",
         "workflow_after",
-        "delivery_model",
         "team_composition",
         "reported_need",
         "systems_integrated",
         "data_requirements",
-        "governance_controls"
+        "governance_controls",
+        "reported_outcomes"
       ],
       "tags": [
         {
@@ -5498,21 +5496,21 @@
   ],
   "fdeDossiers": [
     {
-      "id": "FDED-da212cdb02afa62d",
-      "implementationKey": "da212cdb02afa62d",
-      "eventId": "EV-af4a44cc88f5db09",
+      "id": "FDED-2a563676b4b19a6d",
+      "implementationKey": "2a563676b4b19a6d",
+      "eventId": "EV-715eb0debea4180c",
       "eventIds": [
-        "EV-af4a44cc88f5db09"
+        "EV-715eb0debea4180c"
       ],
       "dataDate": "2026-08-09",
       "date": "2026-08-07",
-      "title": "Maharashtra government × Sarvam：Sarvam AI sovereign AI solutions",
+      "title": "Maharashtra government × Sarvam：Sarvam AI",
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "Maharashtra government",
       "vendor": "Sarvam",
       "industry": "未披露",
-      "useCase": "Sarvam AI sovereign AI solutions",
+      "useCase": "Sarvam AI",
       "workflow": "未披露",
       "systems": [],
       "outcomes": [],
@@ -5527,12 +5525,12 @@
       ],
       "timeline": [
         {
-          "observationId": "FDEO-62d3233a810e179a",
+          "observationId": "FDEO-fd46e62976019b47",
           "type": "implementation_update",
           "stage": "announced",
           "date": "2026-08-07",
           "dataDate": "2026-08-09",
-          "eventId": "EV-af4a44cc88f5db09",
+          "eventId": "EV-715eb0debea4180c",
           "eventTitle": "马哈拉施特拉邦政府批准₹11.26 Crore人工智能计划以提升公共服务，ETGovernment",
           "claimCount": 1,
           "sourceCount": 1
@@ -5563,15 +5561,14 @@
       "useCase": "Data Center MOU with Limestone Networks to Deploy Inference Compute Infrastructure for Open-Weight AI Models, Advancing Its $44.6 Million Canopy Wave Agreement",
       "workflow": "未披露",
       "systems": [],
-      "outcomes": [
-        "MOU signed for proposed colocation of inference-focused AI computing infrastructure"
-      ],
+      "outcomes": [],
       "observationCount": 1,
-      "completeness": 0.75,
-      "completenessPercent": 75,
+      "completeness": 0.625,
+      "completenessPercent": 63,
       "missingFields": [
         "workflow",
-        "systems_integrated"
+        "systems_integrated",
+        "reported_outcomes"
       ],
       "timeline": [
         {
@@ -6521,11 +6518,11 @@
       ],
       "raw_documents": 111,
       "original_sources": 98,
-      "valid_claims": 20,
+      "valid_claims": 17,
       "observations": 2,
-      "canonical_events": 10,
+      "canonical_events": 9,
       "blocker_counts": {
-        "no_source_bounded_event": 21,
+        "no_source_bounded_event": 22,
         "source_outside_funding_backfill_window": 2,
         "non_event_or_index_title": 8,
         "source_outside_daily_window": 53,
@@ -6537,9 +6534,9 @@
       },
       "rates": {
         "original_source_rate": 0.8828828828828829,
-        "valid_claim_rate": 0.18018018018018017,
-        "observation_rate": 0.1,
-        "event_conversion_rate": 0.5
+        "valid_claim_rate": 0.15315315315315314,
+        "observation_rate": 0.11764705882352941,
+        "event_conversion_rate": 0.5294117647058824
       },
       "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/monitoring-funnel.json"
     }

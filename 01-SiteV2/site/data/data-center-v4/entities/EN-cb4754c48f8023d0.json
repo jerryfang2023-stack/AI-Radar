@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-09T01:18:04.367Z",
+    "generatedAt": "2026-08-09T05:37:09.176Z",
     "latestDataDate": "2026-08-09",
     "currentDate": "2026-08-09",
-    "eventCount": 1963,
+    "eventCount": 1962,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -37,8 +37,8 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-3b02f281ab8fa91d",
       "EV-41e229cb248b8418",
-      "EV-b27a05d7ff937744",
       "EV-6fc9c1eab4501ce9",
       "EV-b06624cf36990346",
       "EV-ee1e825af98ecab7",
@@ -101,8 +101,8 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-3b02f281ab8fa91d",
         "EV-41e229cb248b8418",
-        "EV-b27a05d7ff937744",
         "EV-6fc9c1eab4501ce9",
         "EV-b06624cf36990346",
         "EV-ee1e825af98ecab7",
@@ -150,6 +150,22 @@
     },
     "timeline": [
       {
+        "id": "EV-3b02f281ab8fa91d",
+        "dataDate": "2026-08-09",
+        "date": "2026-08-08",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Claude Code v2.1.224 支持 AI 跨会话消息传递",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-cb4754c48f8023d0"
+        ]
+      },
+      {
         "id": "EV-41e229cb248b8418",
         "dataDate": "2026-08-09",
         "date": "2026-08-08",
@@ -159,21 +175,6 @@
         "status": "completed",
         "statusLabel": "已完成",
         "title": "Claude Code v2.1.225 发布：新增网关支出限额支持与工作区信任提示",
-        "displayTags": [],
-        "entityIds": [
-          "EN-cb4754c48f8023d0"
-        ]
-      },
-      {
-        "id": "EV-b27a05d7ff937744",
-        "dataDate": "2026-08-09",
-        "date": "2026-08-08",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "Claude Code v2.1.224 支持 AI 跨会话消息传递",
         "displayTags": [],
         "entityIds": [
           "EN-cb4754c48f8023d0"
@@ -1095,6 +1096,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-3b02f281ab8fa91d",
         "EV-5b17b7dd8762c3c6",
         "EV-6fc9c1eab4501ce9",
         "EV-b06624cf36990346",
@@ -1366,7 +1368,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-09"
     }
   ],
   "relationships": [
@@ -1623,7 +1625,7 @@
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
         "EV-3dc8d5c373ddd1f3",
-        "EV-778072e4940c5d43",
+        "EV-92d9b6931bcfdd11",
         "EV-355ddfd4c6180ab0",
         "EV-51891fe9f47dd616",
         "EV-997609968760857a",

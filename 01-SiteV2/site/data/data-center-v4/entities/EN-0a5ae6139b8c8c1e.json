@@ -5,58 +5,58 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-09T01:18:04.367Z",
+    "generatedAt": "2026-08-09T05:37:09.176Z",
     "latestDataDate": "2026-08-09",
     "currentDate": "2026-08-09",
-    "eventCount": 1963,
+    "eventCount": 1962,
     "quarantinedEventCount": 16
   },
   "entity": {
-    "id": "EN-1360aaacd76daa34",
-    "name": "OLIX",
-    "entityType": "organization_candidate",
-    "typeLabel": "公司与机构",
+    "id": "EN-0a5ae6139b8c8c1e",
+    "name": "Windows 11",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
     "aliases": [],
     "verificationStatus": "candidate",
     "datasetScopes": [
       "canonical"
     ],
     "eventIds": [
-      "EV-5fa0cfcca24f0a83"
+      "EV-bfaac87ceac44b9d"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-08-03",
+    "firstSeen": "2026-08-08",
     "lastSeen": "2026-08-09",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [
-        "EV-5fa0cfcca24f0a83"
-      ],
+      "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-bfaac87ceac44b9d"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
       {
-        "id": "EV-5fa0cfcca24f0a83",
+        "id": "EV-bfaac87ceac44b9d",
         "dataDate": "2026-08-09",
-        "date": "2026-08-03",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
+        "date": "2026-08-08",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
         "status": "announced",
         "statusLabel": "已公布",
-        "title": "AI芯片市场融资新闻（2026年5月）——新市场推介",
+        "title": "微软为 Win10/Win11 经典版 Outlook 推送 Explain This：Copilot 基于上下文解释选中文本",
         "displayTags": [],
         "entityIds": [
-          "EN-1360aaacd76daa34",
-          "EN-9cb45a27a2808c01",
-          "EN-dfc0fdff7af68ed2"
+          "EN-9fbf261b62c1d7c0",
+          "EN-7d09b4a9643fd2bb",
+          "EN-0a5ae6139b8c8c1e"
         ]
       }
     ],
