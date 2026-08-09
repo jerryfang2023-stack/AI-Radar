@@ -198,7 +198,8 @@ jobs:
           # Rebuild them from the committed daily bundles before the site
           # projection; otherwise a clean GitHub runner cannot build the
           # Data Center frontstage after a funding-only update.
-          npm run sync:data-lake -- --v4-only=true --duckdb=skip
+          node agent-workflow/tools/sync-light-data-lake.mjs --v4-only=true --duckdb=skip
+          node agent-workflow/tools/assert-data-lake-v4.mjs --duckdb=skip
           WAVESIGHT_FRONTSTAGE_GENERATED_AT="$frontstage_generated_at" \
           WAVESIGHT_ENTITY_HISTORY_GENERATED_AT="$entity_history_generated_at" \
             npm run build:data-center-site
