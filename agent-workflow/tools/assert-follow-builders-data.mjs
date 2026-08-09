@@ -25,8 +25,8 @@ const maxGeneratedAgeHours = numberArg("max-generated-age-hours", 36);
 const maxFeedAgeHours = numberArg("max-feed-age-hours", 96);
 const maxFallbackFeedAgeHours = numberArg("max-fallback-feed-age-hours", 72);
 const maxRemarkAgeHours = numberArg("max-remark-age-hours", 96);
-const reportsDir = path.join(root, "agent-workflow", "reports");
-const dataFile = path.join(root, "01-SiteV2", "site", "data", "follow-builders-daily.json");
+const reportsDir = path.resolve(root, args.get("reports-dir") || path.join("agent-workflow", "reports"));
+const dataFile = path.resolve(root, args.get("data-file") || path.join("01-SiteV2", "site", "data", "follow-builders-daily.json"));
 const tagIndex = buildTagIndex(readTagTaxonomy(root));
 
 function numberArg(name, fallback) {
@@ -41,6 +41,17 @@ function beijingDate() {
     month: "2-digit",
     day: "2-digit",
   }).format(new Date());
+}
+
+function dateInShanghai(value) {
+  const parsed = new Date(value || "");
+  if (Number.isNaN(parsed.getTime())) return "";
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Shanghai",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(parsed);
 }
 
 function rel(file) {
@@ -92,6 +103,10 @@ if (payload) {
 
   if (meta.sourceSkill !== "follow-builders") problems.push("meta.sourceSkill must be follow-builders");
   if (!meta.generatedAt) problems.push("meta.generatedAt is missing");
+  const generatedDate = dateInShanghai(meta.generatedAt);
+  if (generatedDate && generatedDate !== date) {
+    problems.push(`builders data date is ${generatedDate}, expected ${date}`);
+  }
   if (!meta.sourceRoute) warnings.push("meta.sourceRoute is missing; source path is less observable");
   if (!meta.sourcePolicy || !/original URL|previous generated data/iu.test(meta.sourcePolicy)) {
     problems.push("meta.sourcePolicy must preserve original URL policy or explicit fallback policy");
@@ -200,6 +215,7 @@ const report = `# Follow Builders Data Gate
 
 - generated_at: ${new Date().toISOString()}
 - date: ${date}
+- data_date: ${payload ? dateInShanghai(payload?.meta?.generatedAt) || "missing" : "missing"}
 - status: ${status}
 - data_file: ${rel(dataFile)}
 - remarks_min: ${remarksMin}

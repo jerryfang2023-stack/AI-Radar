@@ -45,6 +45,26 @@ test("closure reuses its self-check instead of running it twice", () => {
   assert.match(controller, /status: ok \? waiting \? "waiting" : "closed"/u);
   assert.match(controller, /write-evidence-supply-health-report\.mjs[^]*--output-dir=/u);
   assert.match(controller, /write-recurring-production-incidents\.mjs[^]*--reports-dir=/u);
+  assert.match(controller, /sync-guanlan-vault-from-main\.mjs[^]*--runtime-dir=/u);
+});
+
+test("Vault refresh uses an isolated origin/main worktree and leaves supervision evidence", () => {
+  const sync = read("sync-guanlan-vault-from-main.mjs");
+  const supervision = read("write-daily-supervision-report.mjs");
+  assert.match(sync, /git[^]*worktree[^]*add[^]*--detach[^]*origin\/main/u);
+  assert.match(sync, /sync-guanlan-vault\.mjs/u);
+  assert.match(sync, /worktree[^]*remove[^]*--force/u);
+  assert.match(sync, /guanlan-vault-sync\.json/u);
+  assert.match(supervision, /vaultSync\.current/u);
+});
+
+test("morning controller repairs derived repo Skill runtime before auditing it", () => {
+  const controller = read("run-daily-automation-controller.mjs");
+  const syncIndex = controller.indexOf('"agent-workflow/tools/sync-repo-skills.mjs"');
+  const checkIndex = controller.indexOf('"agent-workflow/tools/check-skill-ops.mjs"');
+  assert.ok(syncIndex >= 0, "morning controller must sync the derived repo Skill runtime");
+  assert.ok(checkIndex > syncIndex, "Skill Ops audit must run after runtime synchronization");
+  assert.match(controller, /actions: \[runtimeSync, preflight, business\]/u);
 });
 
 test("periodic reports tolerate slower cloud generation and expose failed child diagnostics", () => {

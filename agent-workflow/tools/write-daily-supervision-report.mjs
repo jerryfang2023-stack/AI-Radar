@@ -456,6 +456,8 @@ export function buildBusinessSignalsLane() {
   const businessWorkflowActive = gh.latest_run?.status === "queued" || gh.latest_run?.status === "in_progress";
   const pagesActive = pages.latest_run?.status === "queued" || pages.latest_run?.status === "in_progress";
   const publicationClosureWindowPassed = hasWindowPassed(date, "09:50");
+  const vaultSync = readJson(path.join(outputDir, `${date}-guanlan-vault-sync.json`), {});
+  const localSync = localGitSyncState();
 
   evidence.titleTranslations = titleTranslations;
   evidence.manifest = exists(manifestFile) ? rel(manifestFile) : "missing";
@@ -488,7 +490,12 @@ export function buildBusinessSignalsLane() {
     pagesSuccess: pages.latest_run?.conclusion === "success",
     pagesActive,
     pagesRunUrl: pages.latest_run?.url || "",
-    localSync: localGitSyncState(),
+    vaultSync: {
+      status: vaultSync?.status || "missing",
+      sourceCommit: vaultSync?.source_commit || "",
+      current: vaultSync?.status === "passed" && vaultSync?.source_commit === localSync.originMain,
+    },
+    localSync,
   };
   const businessDataHealthy =
     exists(dataCenterManifestFile)
@@ -567,7 +574,11 @@ export function buildBusinessSignalsLane() {
     } else if (pages.available && !pages.latest_run) {
       warnings.push("09:50 publication closure found no same-date GitHub Pages run");
     }
-    if (evidence.publicationClosure.localSync.available && !evidence.publicationClosure.localSync.clean) {
+    if (
+      evidence.publicationClosure.localSync.available
+      && !evidence.publicationClosure.localSync.clean
+      && !evidence.publicationClosure.vaultSync.current
+    ) {
       warnings.push(`local main sync and Guanlan Vault refresh may be blocked by ${evidence.publicationClosure.localSync.dirtyFiles} dirty file(s)`);
     }
   }

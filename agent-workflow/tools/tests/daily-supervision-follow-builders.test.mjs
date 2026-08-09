@@ -8,6 +8,22 @@ import { pathToFileURL } from "node:url";
 
 const repositoryRoot = process.cwd();
 const scriptFile = path.join(repositoryRoot, "agent-workflow", "tools", "write-daily-supervision-report.mjs");
+const dataGateFile = path.join(repositoryRoot, "agent-workflow", "tools", "assert-follow-builders-data.mjs");
+
+function shanghaiDate(value) {
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Shanghai",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date(value));
+}
+
+function addDay(date) {
+  const value = new Date(`${date}T00:00:00+08:00`);
+  value.setUTCDate(value.getUTCDate() + 1);
+  return shanghaiDate(value);
+}
 
 async function loadSupervisor(root, args, cacheKey) {
   process.chdir(root);
@@ -46,6 +62,46 @@ function runGit(root, args) {
   const result = spawnSync("git", args, { cwd: root, encoding: "utf8", windowsHide: true });
   assert.equal(result.status, 0, result.stderr || result.stdout);
 }
+
+test("first-line recovery gate rejects previous-day data for the requested date", () => {
+  const fixtureRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-first-line-date-gate-"));
+  try {
+    const sourceData = path.join(repositoryRoot, "01-SiteV2", "site", "data", "follow-builders-daily.json");
+    const fixtureData = path.join(fixtureRoot, "follow-builders-daily.json");
+    const payload = JSON.parse(fs.readFileSync(sourceData, "utf8"));
+    fs.writeFileSync(fixtureData, `${JSON.stringify(payload)}\n`, "utf8");
+    const generatedDate = shanghaiDate(payload.meta.generatedAt);
+    const commonArgs = [
+      dataGateFile,
+      `--data-file=${fixtureData}`,
+      `--reports-dir=${fixtureRoot}`,
+      "--max-generated-age-hours=100000",
+      "--max-feed-age-hours=100000",
+      "--max-fallback-feed-age-hours=100000",
+      "--max-remark-age-hours=100000",
+    ];
+
+    const stale = spawnSync(process.execPath, [...commonArgs, `--date=${addDay(generatedDate)}`], {
+      cwd: repositoryRoot,
+      encoding: "utf8",
+      windowsHide: true,
+    });
+    assert.equal(stale.status, 1, stale.stderr || stale.stdout);
+    assert.match(stale.stdout, /"status": "failed"/u);
+    const staleReport = fs.readFileSync(path.join(fixtureRoot, `${addDay(generatedDate)}-follow-builders-data-gate.md`), "utf8");
+    assert.match(staleReport, new RegExp(`builders data date is ${generatedDate}, expected ${addDay(generatedDate)}`, "u"));
+
+    const current = spawnSync(process.execPath, [...commonArgs, `--date=${generatedDate}`], {
+      cwd: repositoryRoot,
+      encoding: "utf8",
+      windowsHide: true,
+    });
+    assert.equal(current.status, 0, current.stderr || current.stdout);
+    assert.match(current.stdout, /"status": "passed"/u);
+  } finally {
+    fs.rmSync(fixtureRoot, { recursive: true, force: true });
+  }
+});
 
 test("forced afternoon supervision fails missing artifacts and passes count-consistent artifacts", async () => {
   const originalCwd = process.cwd();

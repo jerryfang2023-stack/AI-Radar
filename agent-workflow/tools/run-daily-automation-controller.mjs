@@ -84,17 +84,21 @@ function dispatchWorkflow(workflow) {
 }
 
 function morning() {
+  const runtimeSync = run("Sync repo Skill runtime", process.execPath, [
+    "agent-workflow/tools/sync-repo-skills.mjs",
+  ]);
   const preflight = run("Skill Ops preflight", process.execPath, ["agent-workflow/tools/check-skill-ops.mjs"]);
   const business = run("Data Center V4 production dispatch", process.execPath, [
     "agent-workflow/tools/run-business-signals-health-dispatch.mjs",
     `--date=${date}`,
     ...(dryRun ? ["--dry-run=true"] : []),
   ]);
+  const skillOpsHealthy = runtimeSync.ok && preflight.ok;
   return {
     ok: business.ok,
-    status: business.ok ? (preflight.ok ? "passed" : "passed_with_preflight_warning") : "failed",
-    actions: [preflight, business],
-    notes: preflight.ok ? [] : ["Skill Ops preflight failed but did not block production dispatch."],
+    status: business.ok ? (skillOpsHealthy ? "passed" : "passed_with_preflight_warning") : "failed",
+    actions: [runtimeSync, preflight, business],
+    notes: skillOpsHealthy ? [] : ["Repo Skill runtime sync or Skill Ops preflight failed but did not block production dispatch."],
   };
 }
 
@@ -219,6 +223,12 @@ function finalClosure() {
   const dataLakeGate = run("Assert V4 data lake", process.execPath, [
     "agent-workflow/tools/assert-data-lake-v4.mjs",
   ], 180_000);
+  const vaultSync = run("Refresh Guanlan Vault from origin/main", process.execPath, [
+    "agent-workflow/tools/sync-guanlan-vault-from-main.mjs",
+    `--date=${date}`,
+    `--runtime-dir=${reportsDir}`,
+    ...(dryRun ? ["--dry-run=true"] : []),
+  ], 600_000);
   const supervision = run("Final daily supervision", process.execPath, [
     "agent-workflow/tools/write-daily-supervision-report.mjs",
     `--date=${date}`,
@@ -255,7 +265,7 @@ function finalClosure() {
     ok: supervisionReported,
     health_status: supervisionPayload?.status || "report_missing",
   };
-  const executionOk = dataLake.ok && dataLakeGate.ok && supervisionReported && evidenceSupply.ok && recurringIncidents.ok;
+  const executionOk = dataLake.ok && dataLakeGate.ok && vaultSync.ok && supervisionReported && evidenceSupply.ok && recurringIncidents.ok;
   return {
     ok: executionOk,
     healthOk: Boolean(supervisionPayload?.ok),
@@ -263,7 +273,7 @@ function finalClosure() {
       ? supervisionPayload?.status === "passed" ? "closed" : "closed_with_lane_findings"
       : "closure_execution_failed",
     lanes: supervisionPayload?.lanes || [],
-    actions: [dataLake, dataLakeGate, supervisionAction, evidenceSupply, recurringIncidents],
+    actions: [dataLake, dataLakeGate, vaultSync, supervisionAction, evidenceSupply, recurringIncidents],
     notes: [
       "This is the final closure after the 16:10 First-Line Viewpoints window.",
       "The local V4 JSONL and DuckDB serving layer is rebuilt here; no independent data-lake task is supported.",

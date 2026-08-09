@@ -60,6 +60,12 @@ The supported local schedule contains exactly seven tasks:
 | 16:10 | WaveSight Follow-Builders Skill Daily |
 | 16:45 | WaveSight Daily Final Closure |
 
+The Morning Production controller treats `agent-workflow/skills/` as the
+authoritative Skill source. Before its Skill Ops preflight, it deterministically
+synchronizes the derived `.agents/skills/` runtime from that source; direct
+runtime edits are overwritten and must never become an alternative source of
+truth.
+
 The 10:20 task runs the watchdog and then publishes the sanitized heartbeat
 even when the watchdog reports `manual_required`. Daily self-repair, Codex
 self-repair handoff, the expired agent-review trial, the separate heartbeat
@@ -85,7 +91,10 @@ PR reaches `main`.
 
 Final Closure also rebuilds and gates the local V4 JSONL/DuckDB serving layer.
 This refresh is part of the existing task and must not be installed as a
-separate scheduled task or Startup loop.
+separate scheduled task or Startup loop. It also refreshes the external Guanlan
+Vault from an isolated `origin/main` worktree and records the source commit in
+runtime, so unrelated primary-worktree edits neither enter nor block the Vault
+projection.
 
 Funding recovery is downstream-only when the same-date V4 batch already passes
 the integrity gate. A retry must hydrate the configured private evidence store,
@@ -95,6 +104,11 @@ procurement values cannot become funding merely because the article body
 mentions hardware financing. Newly discovered company/product entities remain
 outside the public Entity Index until an accepted catalog-review decision
 exists.
+
+First-Line Viewpoints recovery is date-strict. The 09:15 controller may treat
+the morning RSS lane as healthy only when `follow-builders-daily.json` was
+generated on the requested Asia/Shanghai date; a merely recent previous-day
+bundle must fail the gate and trigger the bounded recovery workflow.
 
 Install or repair the complete local contract with
 `npm run install:windows-automation`. Audit it without changing task state with
