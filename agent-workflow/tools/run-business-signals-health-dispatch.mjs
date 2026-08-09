@@ -88,7 +88,10 @@ function v4Assets() {
   ]);
   const manifestPath = `01-SiteV2/content/11-databases/data-center-v4/${date}/manifest.json`;
   const gatePath = `agent-workflow/reports/${date}-data-center-v4-integrity-gate.json`;
-  const frontstagePath = "01-SiteV2/site/data/data-center-v4-frontstage.json";
+  // Inspect the bounded split-service manifest. Reading the multi-megabyte
+  // monolithic adapter through spawnSync can exceed its stdout buffer even
+  // when the published data is healthy.
+  const frontstagePath = "01-SiteV2/site/data/data-center-v4/manifest.json";
   const telemetryPath = "01-SiteV2/site/data/collection-telemetry-v1.json";
   const manifest = readOriginJson(manifestPath, {});
   const gate = readOriginJson(gatePath, {});
@@ -102,13 +105,13 @@ function v4Assets() {
       && gate?.ok === true
       && telemetry?.meta?.data_date === date
       && telemetry?.v4_gate?.status === "passed"
-      && [frontstage?.meta?.latestDataDate, frontstage?.meta?.currentDate].includes(date),
+      && [frontstage?.latestDataDate, frontstage?.currentDate].includes(date),
     fetch_ok: fetch.ok,
     manifest_date: manifest?.date || "",
     gate_date: gate?.date || "",
     gate_ok: gate?.ok === true,
     canonical_events: eventCount,
-    frontstage_date: frontstage?.meta?.latestDataDate || "",
+    frontstage_date: frontstage?.latestDataDate || frontstage?.currentDate || "",
     telemetry_date: telemetry?.meta?.data_date || "",
     telemetry_gate_status: telemetry?.v4_gate?.status || "",
   };
