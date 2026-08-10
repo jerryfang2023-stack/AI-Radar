@@ -46,6 +46,8 @@ test("closure reuses its self-check instead of running it twice", () => {
   assert.match(controller, /write-evidence-supply-health-report\.mjs[^]*--output-dir=/u);
   assert.match(controller, /write-recurring-production-incidents\.mjs[^]*--reports-dir=/u);
   assert.match(controller, /sync-guanlan-vault-from-main\.mjs[^]*--runtime-dir=/u);
+  assert.match(controller, /Guanlan-Funding-Portal[^]*publish-from-wavesight\.mjs/u);
+  assert.match(controller, /executionOk = [^\n]*fundingPortal\.ok/u);
 });
 
 test("Vault refresh uses an isolated origin/main worktree and leaves supervision evidence", () => {

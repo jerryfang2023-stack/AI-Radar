@@ -229,6 +229,11 @@ function finalClosure() {
     `--runtime-dir=${reportsDir}`,
     ...(dryRun ? ["--dry-run=true"] : []),
   ], 600_000);
+  const fundingPortal = run("Publish Funding Portal to VPS", process.execPath, [
+    path.resolve(root, "..", "Guanlan-Funding-Portal", "scripts", "publish-from-wavesight.mjs"),
+    `--wavesight-repo=${root}`,
+    ...(dryRun ? ["--dry-run=true"] : []),
+  ], 900_000);
   const supervision = run("Final daily supervision", process.execPath, [
     "agent-workflow/tools/write-daily-supervision-report.mjs",
     `--date=${date}`,
@@ -265,7 +270,7 @@ function finalClosure() {
     ok: supervisionReported,
     health_status: supervisionPayload?.status || "report_missing",
   };
-  const executionOk = dataLake.ok && dataLakeGate.ok && vaultSync.ok && supervisionReported && evidenceSupply.ok && recurringIncidents.ok;
+  const executionOk = dataLake.ok && dataLakeGate.ok && vaultSync.ok && fundingPortal.ok && supervisionReported && evidenceSupply.ok && recurringIncidents.ok;
   return {
     ok: executionOk,
     healthOk: Boolean(supervisionPayload?.ok),
@@ -273,10 +278,11 @@ function finalClosure() {
       ? supervisionPayload?.status === "passed" ? "closed" : "closed_with_lane_findings"
       : "closure_execution_failed",
     lanes: supervisionPayload?.lanes || [],
-    actions: [dataLake, dataLakeGate, vaultSync, supervisionAction, evidenceSupply, recurringIncidents],
+    actions: [dataLake, dataLakeGate, vaultSync, fundingPortal, supervisionAction, evidenceSupply, recurringIncidents],
     notes: [
       "This is the final closure after the 16:10 First-Line Viewpoints window.",
       "The local V4 JSONL and DuckDB serving layer is rebuilt here; no independent data-lake task is supported.",
+      "Accepted Funding Insights changes are validated, committed to the independent portal repository, and atomically deployed to the VPS here.",
       "Lane findings remain isolated; the report records them without suppressing other lane results.",
     ],
   };
