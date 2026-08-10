@@ -32,3 +32,27 @@ test("a repeated warning creates one stable open repair incident", () => {
   assert.equal(second.created.length, 0);
   assert.equal(second.existing.length, 1);
 });
+
+test("a resolved incident suppresses only occurrence dates already covered by its repair", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-recurring-resolved-"));
+  report(root, "2026-07-24", "task last result is 123, but same-date data is healthy");
+  report(root, "2026-07-25", "task last result is 456, but same-date data is healthy");
+  const originalIssues = collectRecurringIssues(root, "2026-07-25", 7, 2);
+  const first = writeRecurringIncidents(root, "2026-07-25", originalIssues);
+  const incident = path.join(root, first.created[0]);
+  fs.writeFileSync(
+    incident,
+    fs.readFileSync(incident, "utf8").replace("status: open", "status: resolved"),
+    "utf8",
+  );
+
+  const covered = writeRecurringIncidents(root, "2026-07-26", originalIssues);
+  assert.equal(covered.created.length, 0);
+  assert.deepEqual(covered.coveredByResolved, [first.created[0]]);
+
+  report(root, "2026-07-26", "task last result is 789, but same-date data is healthy");
+  const recurringAfterRepair = collectRecurringIssues(root, "2026-07-26", 7, 2);
+  const reopened = writeRecurringIncidents(root, "2026-07-26", recurringAfterRepair);
+  assert.equal(reopened.created.length, 1);
+  assert.equal(reopened.coveredByResolved.length, 0);
+});
