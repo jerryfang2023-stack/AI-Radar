@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-10T01:53:54.030Z",
+    "generatedAt": "2026-08-10T03:05:19.937Z",
     "latestDataDate": "2026-08-10",
     "currentDate": "2026-08-10",
-    "eventCount": 1976,
+    "eventCount": 1969,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -112,7 +112,7 @@
       "EN-d65d81c60c0c47c4"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-08-09",
+    "lastSeen": "2026-08-10",
     "organizationFamilyId": "EN-047364b9be67f665",
     "organizationRole": "group",
     "organizationFamilyEntityIds": [
@@ -131,10 +131,10 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-3d93d1da8cb64462",
         "EV-56da7cceeebc8bcf",
         "EV-cec68369662236fd",
         "EV-00514c4ffc2e3cd3",
-        "EV-3d93d1da8cb64462",
         "EV-43b7f45e9bd7ec9b"
       ],
       "deployments": [
@@ -206,6 +206,108 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-3d93d1da8cb64462",
+        "dataDate": "2026-08-10",
+        "date": "2026-07-07",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "AIsa 筹集 650 万美元，由阿里巴巴和 Tribe Capital 联合领投，构建 AI 智能体交易网络",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-14ce7672aaca7a68"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ffe9e01b7994fe2c",
+            "fundingInsightId": "FI-aceffe6f1021c1b1"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "development_deployment",
+            "name": "开发与部署",
+            "entityIds": [
+              "EN-14ce7672aaca7a68"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3f0788993acc0aa9",
+            "fundingInsightId": "FI-aceffe6f1021c1b1"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "monetization",
+            "name": "商业化工具",
+            "entityIds": [
+              "EN-14ce7672aaca7a68"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2e8931f8d58e659f",
+            "fundingInsightId": "FI-aceffe6f1021c1b1"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_infrastructure_software",
+            "name": "AI 基础设施软件",
+            "entityIds": [
+              "EN-14ce7672aaca7a68"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ac4484f6f8cb5803",
+            "fundingInsightId": "FI-aceffe6f1021c1b1"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-14ce7672aaca7a68"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1f4e2e876f0d13e1",
+            "fundingInsightId": "FI-aceffe6f1021c1b1"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-14ce7672aaca7a68"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-14ce7672aaca7a68"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-88c2d754a69f6dc8",
+            "fundingInsightId": "FI-aceffe6f1021c1b1"
+          }
+        ],
+        "entityIds": [
+          "EN-14ce7672aaca7a68",
+          "EN-047364b9be67f665",
+          "EN-1a2290470e0aa754",
+          "EN-45f62ea84873393b"
+        ]
+      },
       {
         "id": "EV-0679a9b49b53ddbd",
         "dataDate": "2026-08-09",
@@ -1048,106 +1150,6 @@
           }
         ],
         "entityIds": [
-          "EN-047364b9be67f665"
-        ]
-      },
-      {
-        "id": "EV-3d93d1da8cb64462",
-        "dataDate": "2026-07-24",
-        "date": "2026-07-07",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "AIsa 获 650 万美元融资，由阿里巴巴和 Tribe Capital 联合领投，打造 AI 智能体交易网络",
-        "displayTags": [
-          {
-            "dimensionId": "ai_market_category",
-            "dimensionName": "AI 市场类别",
-            "id": "infrastructure_compute",
-            "name": "基础设施与算力",
-            "entityIds": [
-              "EN-14ce7672aaca7a68"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-ffe9e01b7994fe2c",
-            "fundingInsightId": "FI-aceffe6f1021c1b1"
-          },
-          {
-            "dimensionId": "ai_market_subcategory",
-            "dimensionName": "AI 市场子类",
-            "id": "development_deployment",
-            "name": "开发与部署",
-            "entityIds": [
-              "EN-14ce7672aaca7a68"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-3f0788993acc0aa9",
-            "fundingInsightId": "FI-aceffe6f1021c1b1"
-          },
-          {
-            "dimensionId": "ai_market_application",
-            "dimensionName": "AI 市场细分",
-            "id": "monetization",
-            "name": "商业化工具",
-            "entityIds": [
-              "EN-14ce7672aaca7a68"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-2e8931f8d58e659f",
-            "fundingInsightId": "FI-aceffe6f1021c1b1"
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "ai_infrastructure_software",
-            "name": "AI 基础设施软件",
-            "entityIds": [
-              "EN-14ce7672aaca7a68"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-ac4484f6f8cb5803",
-            "fundingInsightId": "FI-aceffe6f1021c1b1"
-          },
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "productivity_enterprise_workflows",
-            "name": "生产力与企业工作流",
-            "entityIds": [
-              "EN-14ce7672aaca7a68"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-1f4e2e876f0d13e1",
-            "fundingInsightId": "FI-aceffe6f1021c1b1"
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "agentic_execution",
-            "name": "智能体",
-            "entityIds": [
-              "EN-14ce7672aaca7a68"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "developer",
-            "name": "开发者",
-            "entityIds": [
-              "EN-14ce7672aaca7a68"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-88c2d754a69f6dc8",
-            "fundingInsightId": "FI-aceffe6f1021c1b1"
-          }
-        ],
-        "entityIds": [
-          "EN-14ce7672aaca7a68",
           "EN-047364b9be67f665"
         ]
       },
@@ -3212,13 +3214,12 @@
       "valueId": "agentic_execution",
       "eventIds": [
         "EV-83728e3b6c7736ce",
-        "EV-cfbfc6c80338aa12",
         "EV-b6f025a2dc297b78",
         "EV-dc35d54f273196f0",
         "EV-9ed6a759555d7e77",
         "EV-53253b5e23970958",
-        "EV-39b075c62ba4e927",
         "EV-57cf8e14d6994c1b",
+        "EV-39b075c62ba4e927",
         "EV-2a78dd5feb40a78a",
         "EV-9490bae84e7b4707",
         "EV-136b2edc9b9f3be8",
@@ -3318,7 +3319,6 @@
         "EV-23ae55daa341be06",
         "EV-6bb83280a2116f24",
         "EV-d10684a6f16afe10",
-        "EV-6af526d687d9f737",
         "EV-acddfa62aabb004f",
         "EV-a852dc0ca6011ff6",
         "EV-fd825cd7f7997fc8",
@@ -3396,7 +3396,6 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
-        "EV-778072e4940c5d43",
         "EV-3dc8d5c373ddd1f3",
         "EV-92d9b6931bcfdd11",
         "EV-355ddfd4c6180ab0",
@@ -3659,13 +3658,12 @@
       ],
       "entityIds": [
         "EN-240389f4b730bad4",
-        "EN-7ebe9a17c4d4c271",
         "EN-360a940182e67c66",
         "EN-e6f19fa7a6b52367",
         "EN-2be663431f007250",
         "EN-65819e198c32566a",
-        "EN-f9075cc99990820a",
         "EN-556c337c4f0b031e",
+        "EN-f9075cc99990820a",
         "EN-382635c9325bf327",
         "EN-7f67f2f8692510cf",
         "EN-12765295db4f1e79",
@@ -3752,7 +3750,6 @@
         "EN-50e2a4156631df49",
         "EN-f531c4e9f8555dcc",
         "EN-df30a48992da7fe8",
-        "EN-30cd4a85fc09f695",
         "EN-c9e92f0b88c6456b",
         "EN-6b182ca786385b1e",
         "EN-76a9a8a6e2f1a47b",
@@ -4008,9 +4005,9 @@
         "EV-268e5c3d36e3ed28",
         "EV-914ca1cbc6359ce5",
         "EV-ea109db692b88079",
+        "EV-57cf8e14d6994c1b",
         "EV-2dff88f85e3bce86",
         "EV-39b075c62ba4e927",
-        "EV-57cf8e14d6994c1b",
         "EV-2a78dd5feb40a78a",
         "EV-33b3cf34f8ff7bd8",
         "EV-136b2edc9b9f3be8",
@@ -4210,9 +4207,9 @@
         "EN-5f5ed85925074c92",
         "EN-65e9e514ecf0d270",
         "EN-26997989b8425dac",
+        "EN-556c337c4f0b031e",
         "EN-770ef1d2b6e24172",
         "EN-f9075cc99990820a",
-        "EN-556c337c4f0b031e",
         "EN-2be663431f007250",
         "EN-0b01f10e87d13e75",
         "EN-382635c9325bf327",
@@ -4386,7 +4383,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-10"
     },
     {
       "id": "TX-use_case-data_analysis",
@@ -4675,7 +4672,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-10"
     },
     {
       "id": "TX-technology-computer_use",
@@ -4853,12 +4850,12 @@
         "EV-1abf0d076d30ec6d",
         "EV-d2a623e8eef1f61d",
         "EV-f55d16df5b5fecb2",
+        "EV-890ffd351486b884",
         "EV-3dc8d5c373ddd1f3",
         "EV-d230942b0787581a",
         "EV-db304937ceac95d2",
         "EV-cfba8b877da20eaf",
         "EV-63858d9b5ef92175",
-        "EV-890ffd351486b884",
         "EV-acf3df526813ed37",
         "EV-afcefb5d86a2db45",
         "EV-ca18725115b61bd3",
@@ -4876,11 +4873,11 @@
       ],
       "entityIds": [
         "EN-bd6769fe78d0971a",
+        "EN-a899a3dde1d51caf",
         "EN-74be4cbf48e647b2",
         "EN-47dd52018c2b6985",
         "EN-920510199770f4d6",
         "EN-422332977c41eb77",
-        "EN-a899a3dde1d51caf",
         "EN-88ab1e5d793701f9",
         "EN-c70eca6b0f88f44d",
         "EN-6b61eab266a42eb0",
@@ -4901,7 +4898,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-10"
     },
     {
       "id": "TX-technology-video_generation",

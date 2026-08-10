@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-10T01:53:54.030Z",
+    "generatedAt": "2026-08-10T03:05:19.937Z",
     "latestDataDate": "2026-08-10",
     "currentDate": "2026-08-10",
-    "eventCount": 1976,
+    "eventCount": 1969,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -21,12 +21,12 @@
       "EV-1abf0d076d30ec6d",
       "EV-d2a623e8eef1f61d",
       "EV-f55d16df5b5fecb2",
+      "EV-890ffd351486b884",
       "EV-3dc8d5c373ddd1f3",
       "EV-d230942b0787581a",
       "EV-db304937ceac95d2",
       "EV-cfba8b877da20eaf",
       "EV-63858d9b5ef92175",
-      "EV-890ffd351486b884",
       "EV-acf3df526813ed37",
       "EV-afcefb5d86a2db45",
       "EV-ca18725115b61bd3",
@@ -44,11 +44,11 @@
     ],
     "entityIds": [
       "EN-bd6769fe78d0971a",
+      "EN-a899a3dde1d51caf",
       "EN-74be4cbf48e647b2",
       "EN-47dd52018c2b6985",
       "EN-920510199770f4d6",
       "EN-422332977c41eb77",
-      "EN-a899a3dde1d51caf",
       "EN-88ab1e5d793701f9",
       "EN-c70eca6b0f88f44d",
       "EN-6b61eab266a42eb0",
@@ -69,7 +69,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2026-05-23",
-    "lastSeen": "2026-08-09"
+    "lastSeen": "2026-08-10"
   },
   "events": [
     {
@@ -733,6 +733,180 @@
       "products": [],
       "sourceUrl": "https://theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity",
       "publisher": "The Verge AI"
+    },
+    {
+      "id": "EV-890ffd351486b884",
+      "dataDate": "2026-08-10",
+      "date": "2026-08-10",
+      "updatedDate": "2026-08-10",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "2026年开源在企业AI中的角色",
+      "originalTitle": "The Role of Open Source in Enterprise AI in 2026 | MLflow",
+      "subject": "The Role of",
+      "action": "Open Source",
+      "object": "in Enterprise AI in 2026 | MLflow",
+      "metrics": [
+        "89%",
+        "25%"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-a899a3dde1d51caf"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "customer_support",
+            "name": "客户支持",
+            "entityIds": [
+              "EN-a899a3dde1d51caf"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-a899a3dde1d51caf"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-a899a3dde1d51caf"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "customer_support",
+          "name": "客户支持",
+          "entityIds": [
+            "EN-a899a3dde1d51caf"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-a899a3dde1d51caf"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "customer_support",
+          "name": "客户支持",
+          "entityIds": [
+            "EN-a899a3dde1d51caf"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-a899a3dde1d51caf"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-a899a3dde1d51caf"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a899a3dde1d51caf",
+        "EN-9fbf261b62c1d7c0",
+        "EN-501b5d14e7e82c01",
+        "EN-202ac21492470b79"
+      ],
+      "entityNames": [
+        "The Role of",
+        "Microsoft",
+        "Role",
+        "Open Source"
+      ],
+      "productName": "Role",
+      "products": [
+        {
+          "name": "Role",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Microsoft"
+          ]
+        },
+        {
+          "name": "Open Source",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Microsoft"
+          ]
+        }
+      ],
+      "sourceUrl": "https://mlflow.org/articles/the-role-of-open-source-in-enterprise-ai-in-2026",
+      "publisher": "mlflow.org"
     },
     {
       "id": "EV-3dc8d5c373ddd1f3",
@@ -1698,180 +1872,6 @@
       "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
     },
     {
-      "id": "EV-890ffd351486b884",
-      "dataDate": "2026-08-03",
-      "date": "2026-08-03",
-      "updatedDate": "2026-08-03",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "2026年开源在企业AI中的角色",
-      "originalTitle": "The Role of Open Source in Enterprise AI in 2026 | MLflow",
-      "subject": "The Role of",
-      "action": "Open Source",
-      "object": "in Enterprise AI in 2026 | MLflow",
-      "metrics": [
-        "89%",
-        "25%"
-      ],
-      "locations": [],
-      "missingFields": [
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重",
-          "entityIds": [
-            "EN-a899a3dde1d51caf"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "customer_support",
-            "name": "客户支持",
-            "entityIds": [
-              "EN-a899a3dde1d51caf"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": [
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "business_user",
-            "name": "企业用户",
-            "entityIds": [
-              "EN-a899a3dde1d51caf"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ]
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重",
-          "entityIds": [
-            "EN-a899a3dde1d51caf"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "customer_support",
-          "name": "客户支持",
-          "entityIds": [
-            "EN-a899a3dde1d51caf"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "business_user",
-          "name": "企业用户",
-          "entityIds": [
-            "EN-a899a3dde1d51caf"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "customer_support",
-          "name": "客户支持",
-          "entityIds": [
-            "EN-a899a3dde1d51caf"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重",
-          "entityIds": [
-            "EN-a899a3dde1d51caf"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "business_user",
-          "name": "企业用户",
-          "entityIds": [
-            "EN-a899a3dde1d51caf"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-a899a3dde1d51caf",
-        "EN-9fbf261b62c1d7c0",
-        "EN-501b5d14e7e82c01",
-        "EN-202ac21492470b79"
-      ],
-      "entityNames": [
-        "The Role of",
-        "Microsoft",
-        "Role",
-        "Open Source"
-      ],
-      "productName": "Role",
-      "products": [
-        {
-          "name": "Role",
-          "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
-        },
-        {
-          "name": "Open Source",
-          "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
-        }
-      ],
-      "sourceUrl": "https://mlflow.org/articles/the-role-of-open-source-in-enterprise-ai-in-2026",
-      "publisher": "mlflow.org"
-    },
-    {
       "id": "EV-acf3df526813ed37",
       "dataDate": "2026-07-30",
       "date": "2026-07-29",
@@ -2099,9 +2099,7 @@
         {
           "name": "CEO Dario Amodei",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/982/343.htm",
@@ -3852,6 +3850,29 @@
       "lastSeen": "2026-08-09"
     },
     {
+      "id": "EN-a899a3dde1d51caf",
+      "name": "The Role of",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-890ffd351486b884"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-target_user-business_user",
+        "TX-use_case-customer_support",
+        "TX-technology-open_weights"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-10",
+      "lastSeen": "2026-08-10"
+    },
+    {
       "id": "EN-74be4cbf48e647b2",
       "name": "Pokee AI",
       "entityType": "organization_candidate",
@@ -3924,29 +3945,6 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-08-03",
       "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "EN-a899a3dde1d51caf",
-      "name": "The Role of",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-890ffd351486b884"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-use_case-customer_support",
-        "TX-technology-open_weights"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03"
     },
     {
       "id": "EN-88ab1e5d793701f9",
@@ -4056,7 +4054,6 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
-        "EV-93f80ce9ba35d382",
         "EV-3b02f281ab8fa91d",
         "EV-5b17b7dd8762c3c6",
         "EV-6fc9c1eab4501ce9",
@@ -4216,7 +4213,6 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
-        "EV-29570c9cbb6ce7cd",
         "EV-4e3e9b543127b55a",
         "EV-a6e9e81d40dc3845",
         "EV-2321e89fad893290",
@@ -4293,8 +4289,8 @@
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-model_api_service",
-        "TX-target_user-consumer",
         "TX-use_case-customer_support",
+        "TX-target_user-consumer",
         "TX-technology-long_context",
         "TX-target_user-educator",
         "TX-technology-open_weights",
@@ -4317,6 +4313,7 @@
         "EN-ef11a801c5bd3673",
         "EN-fab30471ea65d627",
         "EN-3a13916345b60fad",
+        "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
         "EN-e65e0f2695fa259d",
@@ -4329,7 +4326,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-6b61eab266a42eb0",
@@ -4387,6 +4384,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-cbce4f1f5187efcf",
         "EV-5df885dbd24b6d00",
         "EV-dcbe916c6138e5cb",
         "EV-427081ec574b43bb",
@@ -4486,7 +4484,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-10"
     },
     {
       "id": "EN-bc1fc5140040180e",
@@ -4644,7 +4642,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-09",
+      "lastSeen": "2026-08-10",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -4833,7 +4831,6 @@
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
         "EV-2449fe665b666581",
-        "EV-29570c9cbb6ce7cd",
         "EV-eae8f316bc05820b",
         "EV-cd7e18de453152dd",
         "EV-89bdda008227fb6b",

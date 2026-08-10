@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-10T03:05:19.937Z",
+    "latestDataDate": "2026-08-10",
+    "currentDate": "2026-08-10",
+    "eventCount": 1969,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-5a59b85d2410f140",
+    "name": "Artificial Intelligence Breaking News",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-257c7ec21edf638a"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-09",
+    "lastSeen": "2026-08-10",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-257c7ec21edf638a"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-257c7ec21edf638a",
+        "dataDate": "2026-08-10",
+        "date": "2026-08-09",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "人工智能突发新闻与新闻稿",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-5a59b85d2410f140",
+          "EN-842fcb5e60989a03"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-1cf4287f4f809b3d",
+      "snapshotKey": "1cf4287f4f809b3d",
+      "snapshotId": "HWS-44a0982d7ec28aa1",
+      "eventId": "EV-257c7ec21edf638a",
+      "eventIds": [
+        "EV-257c7ec21edf638a"
+      ],
+      "dataDate": "2026-08-10",
+      "date": "2026-08-10",
+      "title": "Artificial Intelligence Breaking News",
+      "subject": "Artificial Intelligence Breaking News",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-51894068242c0035"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-10",
+          "hardware_fact_id": "HWF-51894068242c0035",
+          "fact_type": "product",
+          "observed_at": "2026-08-09T00:00:00.000Z",
+          "subject_entity_id": "EN-5a59b85d2410f140",
+          "subject_name": "Artificial Intelligence Breaking News",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Faraday Future Founder and Global CEO YT Jia Shares Weekly Investor Update: Renewed Nasdaq Compliance, “Built in USA” Upgrades Including the Launch of Universal Beyond-Line-of-Sight Teleoperation and Multi-Robot Control Platform",
+          "event_refs": [
+            "EV-257c7ec21edf638a"
+          ],
+          "claim_ref": "CL-0ac3835322d68bbd",
+          "source_refs": [
+            "SA-2517eda16467dc8b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-10/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://businesswire.com/newsroom/industry/technology/artificial-intelligence",
+      "entityIds": [
+        "EN-5a59b85d2410f140",
+        "EN-842fcb5e60989a03"
+      ]
+    }
+  ]
+}

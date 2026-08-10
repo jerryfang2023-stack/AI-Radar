@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-10T01:53:54.030Z",
+    "generatedAt": "2026-08-10T03:05:19.937Z",
     "latestDataDate": "2026-08-10",
     "currentDate": "2026-08-10",
-    "eventCount": 1976,
+    "eventCount": 1969,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -103,25 +103,25 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2019-03-11",
-    "lastSeen": "2026-08-03"
+    "lastSeen": "2026-08-10"
   },
   "events": [
     {
       "id": "EV-57cf8e14d6994c1b",
-      "dataDate": "2026-07-30",
+      "dataDate": "2026-08-10",
       "date": "2026-07-29",
-      "updatedDate": "2026-07-30",
+      "updatedDate": "2026-08-10",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Encore AI 获 3000 万美元 A 轮融资，用客户通话训练 AI 语音智能体",
-      "originalTitle": "",
-      "subject": "Encore AI 获 3000 万美元 A 轮",
-      "action": "融资",
-      "object": "，用客户通话训练 AI 语音智能体",
+      "title": "Encore AI 融资 3000 万美元，打造从客户通话中学习的 AI 智能体",
+      "originalTitle": "Encore AI raises $30M to build AI agents that learn from customer calls | TechCrunch",
+      "subject": "Encore AI",
+      "action": "raises",
+      "object": "$30M to build AI agents that learn from customer calls",
       "metrics": [
         "$30M",
         "$30 million"
@@ -130,6 +130,17 @@
       "missingFields": [],
       "conflicts": [],
       "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-556c337c4f0b031e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
@@ -445,7 +456,7 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/07/29/encore-ai-raises-30m-to-build-ai-agents-that-learn-from-customer-calls",
-      "publisher": "TechCrunch：AI（RSS）"
+      "publisher": "techcrunch.com"
     },
     {
       "id": "EV-2315aada5ad36397",
@@ -9348,9 +9359,9 @@
     },
     {
       "id": "EV-890ffd351486b884",
-      "dataDate": "2026-08-03",
-      "date": "2026-08-03",
-      "updatedDate": "2026-08-03",
+      "dataDate": "2026-08-10",
+      "date": "2026-08-10",
+      "updatedDate": "2026-08-10",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
@@ -10231,7 +10242,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-29",
-      "lastSeen": "2026-07-30"
+      "lastSeen": "2026-08-10"
     },
     {
       "id": "EN-b76754bb5e10534b",
@@ -10466,7 +10477,6 @@
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
         "EV-2449fe665b666581",
-        "EV-29570c9cbb6ce7cd",
         "EV-eae8f316bc05820b",
         "EV-cd7e18de453152dd",
         "EV-89bdda008227fb6b",
@@ -10679,8 +10689,8 @@
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
         "TX-ai_market_category-industry_applications",
-        "TX-target_user-consumer",
         "TX-use_case-customer_support",
+        "TX-target_user-consumer",
         "TX-ai_market_subcategory-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
@@ -10698,6 +10708,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-cbce4f1f5187efcf",
         "EV-15cc72d7c78cad3d",
         "EV-9300044a58395552",
         "EV-4e7a32c9ee893918",
@@ -10727,7 +10738,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2023-03-21",
-      "lastSeen": "2026-07-28"
+      "lastSeen": "2026-08-10"
     },
     {
       "id": "EN-a972bc1b3220493e",
@@ -11188,7 +11199,6 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
-        "EV-9d26b1683c2593c9",
         "EV-de6c27c1dac18a2a",
         "EV-6cea35f065f0ee9e",
         "EV-92be9fa58b1ee19f",
@@ -11446,8 +11456,8 @@
         "TX-use_case-software_development",
         "TX-use_case-security_operations",
         "TX-product_form-end_user_application",
-        "TX-target_user-consumer",
         "TX-use_case-customer_support",
+        "TX-target_user-consumer",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-long_context",
@@ -11458,6 +11468,7 @@
       "relatedEntityIds": [
         "EN-d1ad14d4ad57d207",
         "EN-7839fb10a8f14c70",
+        "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
         "EN-3850792f618f534b",
         "EN-74692028630429c7",
@@ -11557,7 +11568,6 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
-        "EV-93f80ce9ba35d382",
         "EV-3b02f281ab8fa91d",
         "EV-5b17b7dd8762c3c6",
         "EV-6fc9c1eab4501ce9",
@@ -11717,7 +11727,6 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
-        "EV-29570c9cbb6ce7cd",
         "EV-4e3e9b543127b55a",
         "EV-a6e9e81d40dc3845",
         "EV-2321e89fad893290",
@@ -11794,8 +11803,8 @@
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-model_api_service",
-        "TX-target_user-consumer",
         "TX-use_case-customer_support",
+        "TX-target_user-consumer",
         "TX-technology-long_context",
         "TX-target_user-educator",
         "TX-technology-open_weights",
@@ -11818,6 +11827,7 @@
         "EN-ef11a801c5bd3673",
         "EN-fab30471ea65d627",
         "EN-3a13916345b60fad",
+        "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
         "EN-e65e0f2695fa259d",
@@ -11830,7 +11840,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-09"
     },
     {
       "id": "EN-19e41212c0556603",
@@ -11876,8 +11886,8 @@
         "TX-technology-open_weights"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03"
+      "firstSeen": "2026-08-10",
+      "lastSeen": "2026-08-10"
     },
     {
       "id": "EN-76a5d97e81b562c4",

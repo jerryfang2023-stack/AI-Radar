@@ -1,12 +1,12 @@
 # GitHub Business Signals PR
 
 - date: 2026-08-10
-- generated_at: 2026-08-10T09:40:39+08:00
+- generated_at: 2026-08-10T10:32:59+08:00
 - mode: business_signals_pr
 - trigger: workflow_dispatch
 - schedule: local 08:10 conditional dispatch; 09:15 targeted recovery; 10:30 cloud safety fallback
 - business_signal_skip: false
-- business_signal_skip_reason: not_applicable
+- business_signal_skip_reason: same-date files exist but current gates do not pass; continue targeted production
 - existing_automation_branch: false
 - anysearch_secret: configured
 - tavily_secret: disabled

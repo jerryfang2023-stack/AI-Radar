@@ -5,69 +5,69 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-10T01:53:54.030Z",
+    "generatedAt": "2026-08-10T03:05:19.937Z",
     "latestDataDate": "2026-08-10",
     "currentDate": "2026-08-10",
-    "eventCount": 1976,
+    "eventCount": 1969,
     "quarantinedEventCount": 16
   },
   "entity": {
-    "id": "EN-ea0a0d38a19ecbf4",
-    "name": "Agent Gateway",
-    "entityType": "product_candidate",
-    "typeLabel": "产品、模型与服务",
+    "id": "EN-647ebaae8de92fe6",
+    "name": "Former Meta",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
     "aliases": [],
     "verificationStatus": "candidate",
     "datasetScopes": [
       "canonical"
     ],
     "eventIds": [
-      "EV-778072e4940c5d43"
+      "EV-cbce4f1f5187efcf"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-08-10",
+    "firstSeen": "2026-07-29",
     "lastSeen": "2026-08-10",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-cbce4f1f5187efcf"
+      ],
       "deployments": [],
       "partnerships": [],
-      "productsServices": [
-        "EV-778072e4940c5d43"
-      ],
+      "productsServices": [],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
       {
-        "id": "EV-778072e4940c5d43",
+        "id": "EV-cbce4f1f5187efcf",
         "dataDate": "2026-08-10",
-        "date": "2026-08-10",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "Okta宣布新创新，在运行时保护AI智能体并自动化持续智能体治理",
+        "date": "2026-07-29",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "独家：前Meta和Slack工程师为初创公司Centralize筹集1500万美元，打造企业销售“交易GPS”",
         "displayTags": [
           {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "agentic_execution",
-            "name": "智能体",
-            "entityIds": [
-              "EN-65819e198c32566a"
-            ],
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
         ],
         "entityIds": [
-          "EN-65819e198c32566a",
-          "EN-ea0a0d38a19ecbf4"
+          "EN-647ebaae8de92fe6",
+          "EN-ea3bd73e2b506e00",
+          "EN-c77ba5a7c094352e",
+          "EN-3ccbd9105a45d8fc"
         ]
       }
     ],

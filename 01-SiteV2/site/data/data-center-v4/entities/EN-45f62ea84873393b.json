@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-10T03:05:19.937Z",
+    "latestDataDate": "2026-08-10",
+    "currentDate": "2026-08-10",
+    "eventCount": 1969,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-45f62ea84873393b",
+    "name": "July 07",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-3d93d1da8cb64462"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-07",
+    "lastSeen": "2026-08-10",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-3d93d1da8cb64462"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-3d93d1da8cb64462",
+        "dataDate": "2026-08-10",
+        "date": "2026-07-07",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "AIsa 筹集 650 万美元，由阿里巴巴和 Tribe Capital 联合领投，构建 AI 智能体交易网络",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-14ce7672aaca7a68"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ffe9e01b7994fe2c",
+            "fundingInsightId": "FI-aceffe6f1021c1b1"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "development_deployment",
+            "name": "开发与部署",
+            "entityIds": [
+              "EN-14ce7672aaca7a68"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3f0788993acc0aa9",
+            "fundingInsightId": "FI-aceffe6f1021c1b1"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "monetization",
+            "name": "商业化工具",
+            "entityIds": [
+              "EN-14ce7672aaca7a68"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2e8931f8d58e659f",
+            "fundingInsightId": "FI-aceffe6f1021c1b1"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_infrastructure_software",
+            "name": "AI 基础设施软件",
+            "entityIds": [
+              "EN-14ce7672aaca7a68"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ac4484f6f8cb5803",
+            "fundingInsightId": "FI-aceffe6f1021c1b1"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-14ce7672aaca7a68"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1f4e2e876f0d13e1",
+            "fundingInsightId": "FI-aceffe6f1021c1b1"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-14ce7672aaca7a68"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-14ce7672aaca7a68"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-88c2d754a69f6dc8",
+            "fundingInsightId": "FI-aceffe6f1021c1b1"
+          }
+        ],
+        "entityIds": [
+          "EN-14ce7672aaca7a68",
+          "EN-047364b9be67f665",
+          "EN-1a2290470e0aa754",
+          "EN-45f62ea84873393b"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

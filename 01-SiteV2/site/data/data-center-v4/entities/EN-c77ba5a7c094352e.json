@@ -5,15 +5,15 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-10T01:53:54.030Z",
+    "generatedAt": "2026-08-10T03:05:19.937Z",
     "latestDataDate": "2026-08-10",
     "currentDate": "2026-08-10",
-    "eventCount": 1976,
+    "eventCount": 1969,
     "quarantinedEventCount": 16
   },
   "entity": {
-    "id": "EN-e5d45edb49cc6953",
-    "name": "Swish AI",
+    "id": "EN-c77ba5a7c094352e",
+    "name": "Slack Engineers",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
@@ -22,17 +22,17 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-8e6f06dd49bf7e99"
+      "EV-cbce4f1f5187efcf"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-08-10",
+    "firstSeen": "2026-07-29",
     "lastSeen": "2026-08-10",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
-        "EV-8e6f06dd49bf7e99"
+        "EV-cbce4f1f5187efcf"
       ],
       "deployments": [],
       "partnerships": [],
@@ -43,18 +43,31 @@
     },
     "timeline": [
       {
-        "id": "EV-8e6f06dd49bf7e99",
+        "id": "EV-cbce4f1f5187efcf",
         "dataDate": "2026-08-10",
-        "date": "2026-08-10",
-        "eventType": "acquisition",
-        "eventTypeLabel": "并购",
+        "date": "2026-07-29",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
         "eventGroup": "融资与并购",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "企业AI洞察与新闻 - Unframe AI",
-        "displayTags": [],
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "独家：前Meta和Slack工程师为初创公司Centralize筹集1500万美元，打造企业销售“交易GPS”",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
         "entityIds": [
-          "EN-e5d45edb49cc6953"
+          "EN-647ebaae8de92fe6",
+          "EN-ea3bd73e2b506e00",
+          "EN-c77ba5a7c094352e",
+          "EN-3ccbd9105a45d8fc"
         ]
       }
     ],

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-10T01:53:54.030Z",
+    "generatedAt": "2026-08-10T03:05:19.937Z",
     "latestDataDate": "2026-08-10",
     "currentDate": "2026-08-10",
-    "eventCount": 1976,
+    "eventCount": 1969,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -157,7 +157,7 @@
       "HW-a033b945449628d5"
     ],
     "firstSeen": "2025-08-27",
-    "lastSeen": "2026-08-09"
+    "lastSeen": "2026-08-10"
   },
   "events": [
     {
@@ -2508,20 +2508,20 @@
     },
     {
       "id": "EV-57cf8e14d6994c1b",
-      "dataDate": "2026-07-30",
+      "dataDate": "2026-08-10",
       "date": "2026-07-29",
-      "updatedDate": "2026-07-30",
+      "updatedDate": "2026-08-10",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Encore AI 获 3000 万美元 A 轮融资，用客户通话训练 AI 语音智能体",
-      "originalTitle": "",
-      "subject": "Encore AI 获 3000 万美元 A 轮",
-      "action": "融资",
-      "object": "，用客户通话训练 AI 语音智能体",
+      "title": "Encore AI 融资 3000 万美元，打造从客户通话中学习的 AI 智能体",
+      "originalTitle": "Encore AI raises $30M to build AI agents that learn from customer calls | TechCrunch",
+      "subject": "Encore AI",
+      "action": "raises",
+      "object": "$30M to build AI agents that learn from customer calls",
       "metrics": [
         "$30M",
         "$30 million"
@@ -2530,6 +2530,17 @@
       "missingFields": [],
       "conflicts": [],
       "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-556c337c4f0b031e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
@@ -2845,7 +2856,7 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/07/29/encore-ai-raises-30m-to-build-ai-agents-that-learn-from-customer-calls",
-      "publisher": "TechCrunch：AI（RSS）"
+      "publisher": "techcrunch.com"
     },
     {
       "id": "EV-bffc68e7bb4d598b",
@@ -24688,7 +24699,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-29",
-      "lastSeen": "2026-07-30"
+      "lastSeen": "2026-08-10"
     },
     {
       "id": "EN-7f67f2f8692510cf",
@@ -26130,7 +26141,6 @@
       ],
       "eventIds": [
         "EV-a0ca934522418c0b",
-        "EV-cfbfc6c80338aa12",
         "EV-9b81b0dd09a046ab",
         "EV-e41fc65eb014893f",
         "EV-dfddbb260b3d1c77",
@@ -26345,7 +26355,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-08"
     },
     {
       "id": "EN-06b5472c16feae4c",
