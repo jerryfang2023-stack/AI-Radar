@@ -39,7 +39,10 @@ test("Vault sync blocks incomplete production evidence and preserves known body 
   );
 
   const scopedAssertion = sync.indexOf("`--date=${productionDate}`");
+  const remoteAssertion = sync.indexOf('"agent-workflow/tools/assert-private-evidence-remote.mjs"');
+  const backup = sync.indexOf('"agent-workflow/tools/backup-private-evidence.mjs"');
   const migration = sync.indexOf('"agent-workflow/tools/migrate-private-evidence-source.mjs"');
+  assert.ok(remoteAssertion >= 0 && remoteAssertion < backup);
   assert.ok(scopedAssertion >= 0 && scopedAssertion < migration);
   assert.match(migrate, /Number\(raw\.body_length \|\| 0\)/u);
 });
