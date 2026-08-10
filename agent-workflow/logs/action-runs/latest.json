@@ -1,28 +1,42 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-09T13:12:54.166Z",
-  "date": "2026-08-09",
-  "action": "remove-periodic-report-inline-source-annotations",
+  "generated_at": "2026-08-10T01:38:03.848Z",
+  "date": "2026-08-10",
+  "action": "Fix private evidence push ordering",
   "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
-  "status": "unknown",
-  "summary": "",
-  "contexts": [],
-  "changed_files": [],
+  "status": "success",
+  "summary": "Moved private evidence coverage and remote assertions after the private repository push so new daily source bodies are visible to the authoritative remote before validation",
+  "contexts": [
+    "context/10-experience-automation.md",
+    "context/12-data-center-v4.md"
+  ],
+  "changed_files": [
+    ".github/workflows/daily-persistent-assets-pr.yml",
+    "agent-workflow/tools/tests/data-center-v4.test.mjs"
+  ],
   "outputs": [],
   "checks": [
-    "11 renderer tests",
-    "66 site-core tests",
-    "72-route browser smoke across desktop/laptop/mobile",
-    "zero generated source-annotation matches"
+    "data-center-v4 tests 125/125",
+    "pipeline policy gate",
+    "git diff --check"
   ],
-  "issues": [],
+  "issues": [
+    "workflow asserted local and remote private evidence HEAD equality before pushing the newly committed evidence"
+  ],
   "risks": [
-    "medium"
+    "fresh collection is required once when a prior run failed before publishing private bodies"
   ],
-  "lessons": [],
-  "reusable_rules": [],
+  "lessons": [
+    "commit",
+    "synchronize",
+    "push",
+    "then assert remote parity and date coverage"
+  ],
+  "reusable_rules": [
+    "private evidence coverage gates must validate the post-push authoritative repository state"
+  ],
   "retired_flags": [],
   "notes": []
 }

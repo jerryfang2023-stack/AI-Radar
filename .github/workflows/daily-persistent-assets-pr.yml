@@ -367,7 +367,6 @@ jobs:
           npm run assert:private-evidence-remote
           npm run backup:private-evidence
           npm run migrate:private-evidence
-          npm run assert:private-evidence-backup -- --date="${RUN_DATE}"
           npm run assert:public-evidence-boundary
           git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" config user.name "github-actions[bot]"
           git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -375,9 +374,10 @@ jobs:
           if ! git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" diff --cached --quiet; then
             git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" commit -m "Persist private evidence for ${RUN_DATE}"
             git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" pull --rebase origin main
-            npm run assert:private-evidence-remote
             git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" push origin HEAD:main
           fi
+          npm run assert:private-evidence-remote
+          npm run assert:private-evidence-backup -- --date="${RUN_DATE}"
 
       - name: Build Data Center V4 factual bundle
         id: data-center-v4

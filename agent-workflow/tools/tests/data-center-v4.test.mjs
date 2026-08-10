@@ -1861,6 +1861,12 @@ test("daily workflow resumes downstream failures without repeating accepted coll
   assert.match(workflow, /Confirm V4 source-intake handoff and dedupe state[\s\S]*?if: always\(\)/u);
   assert.match(workflow, /Persist originals privately and enforce the public boundary[\s\S]*?\(steps\.monitor\.outcome == 'success' \|\| steps\.resume-artifact\.outputs\.used == 'true'\)/u);
   assert.match(workflow, /assert:private-evidence-backup -- --date="\$\{RUN_DATE\}"/u);
+  const evidenceBoundary = workflow.indexOf("Persist originals privately and enforce the public boundary");
+  const evidencePush = workflow.indexOf('git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" push origin HEAD:main', evidenceBoundary);
+  const evidenceAssert = workflow.indexOf('npm run assert:private-evidence-remote', evidencePush);
+  const evidenceCoverage = workflow.indexOf('npm run assert:private-evidence-backup -- --date="${RUN_DATE}"', evidencePush);
+  assert.ok(evidenceBoundary >= 0 && evidencePush > evidenceBoundary, "private evidence must push before final remote assertions");
+  assert.ok(evidenceAssert > evidencePush && evidenceCoverage > evidencePush, "private evidence coverage must run after push");
   assert.match(agentRules, /Same-date accepted collection is immutable reusable input/u);
   assert.match(agentRules, /must restore that artifact and must not recollect/u);
 });
