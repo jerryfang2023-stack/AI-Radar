@@ -5,9 +5,9 @@
     "site_version": "SITE-V4.6.0-research-homepage",
     "column_version": "FUNDING-INSIGHT-V1.4.0-financing-fields",
     "taxonomy_version": "TAG-V4.1",
-    "latest_date": "2026-08-09",
-    "generated_at": "2026-08-09T05:37:16.600Z",
-    "card_count": 235,
+    "latest_date": "2026-08-10",
+    "generated_at": "2026-08-10T03:06:14.683Z",
+    "card_count": 236,
     "duplicate_rounds_removed": 17,
     "automatic_publication": true,
     "market_category_framework": {
@@ -276,16 +276,570 @@
     ],
     "directions": [
       {
-        "id": "DIR-20260725-01",
-        "title": "开源模型推理成本骤降，正在将价值从模型层迁移至“模型路由与成本治理”层"
-      },
-      {
         "id": "DIR-20260725-02",
         "title": "AI智能体从“辅助写作”转向“自主执行”，催生对智能体行为审计与权限控制的新需求"
+      },
+      {
+        "id": "DIR-20260725-01",
+        "title": "开源模型推理成本骤降，正在将价值从模型层迁移至“模型路由与成本治理”层"
       }
     ]
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-74c3c9da32686f84",
+      "triggered_by_event_id": "EV-cbce4f1f5187efcf",
+      "as_of_date": "2026-08-10",
+      "company": {
+        "entity_id": "EN-ea3bd73e2b506e00",
+        "name": "Centralize",
+        "full_name": "Centralize",
+        "website": "",
+        "summary": "Centralize 是一家总部位于旧金山的企业销售平台初创公司，致力于为收入团队构建“交易 GPS”，通过 AI 驱动的可视化组织关系图解决企业销售中的多线程关系管理问题。",
+        "headquarters": "San Francisco",
+        "founders": [
+          {
+            "name": "Rachit Kataria",
+            "role": "Co-founder and CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0232cca5ca9bf922",
+                "quote": "Rachit Kataria, co-founder and CEO of San Francisco-based Centralize",
+                "source_content_hash": "71082c4f5d29c731",
+                "quote_hash": "cf22e96eb5f86072b07c42f90464008e20606a6243ae1ec241a327dcfbf879ba"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "William Wang",
+            "role": "Co-founder and CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0232cca5ca9bf922",
+                "quote": "Kataria and co-founder and CTO William Wang met more than a decade ago as engineering students at the University of Southern California",
+                "source_content_hash": "71082c4f5d29c731",
+                "quote_hash": "a17a177feaacea77662bda9dca526a8f8e836e796ca247907a651fa3c5ba7638"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0232cca5ca9bf922",
+            "quote": "San Francisco-based Centralize",
+            "source_content_hash": "71082c4f5d29c731",
+            "quote_hash": "cf4ea1090c1cbc9137e3a795478e04fbd2887535a32c5fbd9d3c33085f09d490"
+          }
+        ],
+        "application_entity_id": "FICO-2b3dac6c72b05a6e",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "$15 million",
+        "total_raised": "$19 million",
+        "announced_at": "2026-07-29",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "New Enterprise Associates (NEA)",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0232cca5ca9bf922",
+                "quote": "a $15 million Series A funding round led by New Enterprise Associates (NEA)",
+                "source_content_hash": "71082c4f5d29c731",
+                "quote_hash": "1c98aabdb9653e808fa074c13f803a272d0da6cf268813e13ca766f9604c15da"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-f28cb83db18f9b"
+          },
+          {
+            "name": "Salesforce Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0232cca5ca9bf922",
+                "quote": "The financing includes participation from Salesforce Ventures",
+                "source_content_hash": "71082c4f5d29c731",
+                "quote_hash": "a8dbfb35d3438ca740d5203a49393ec2f3ce6550e5d4de9c7b80364b259a80f9"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-ade3071d50dfa4"
+          },
+          {
+            "name": "Stewart Butterfield",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0232cca5ca9bf922",
+                "quote": "high-profile angel investors including former Slack co-founder Stewart Butterfield",
+                "source_content_hash": "71082c4f5d29c731",
+                "quote_hash": "8202cb172d7498038cee4cc955a5e97810a8aced1637e26d5910a73593139eae"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-235589cd2a0f2d"
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Salesforce Ventures",
+            "role": "种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0232cca5ca9bf922",
+                "quote": "a previous $4 million seed round led by Salesforce Ventures",
+                "source_content_hash": "71082c4f5d29c731",
+                "quote_hash": "612ade98581dc140437e25dad25452607e5d4815e1788a49aa44e38dd58188f6"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-ade3071d50dfa4"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0232cca5ca9bf922",
+            "quote": "“Rachit and Will have built something rare: a product that sales teams actually want to use, not just another system of record they’re forced into,” she wrote via email. “We led Centralize’s Series A because we saw a founding team with an unusually sharp read on how AI changes the day-to-day of enterprise sales.”",
+            "source_content_hash": "71082c4f5d29c731",
+            "quote_hash": "fa3dc99b027f77c5e8f43c6274c962bbb298a6a064b015935aaa8df95a45bbd9"
+          },
+          {
+            "source_id": "FISRC-0232cca5ca9bf922",
+            "quote": "a $15 million Series A funding round led by New Enterprise Associates (NEA)",
+            "source_content_hash": "71082c4f5d29c731",
+            "quote_hash": "1c98aabdb9653e808fa074c13f803a272d0da6cf268813e13ca766f9604c15da"
+          },
+          {
+            "source_id": "FISRC-0232cca5ca9bf922",
+            "quote": "Combined with a previous $4 million seed round led by Salesforce Ventures, Centralize has now raised $19 million since its 2023 inception",
+            "source_content_hash": "71082c4f5d29c731",
+            "quote_hash": "0be9abf5a19f2696e4ac1cffe124c2f8958f542b7df2f2d8425b1d0de1898f3e"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$15 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "total_raised_original": "$19 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 19000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1900 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-cbce4f1f5187efcf",
+            "round_original": "A轮",
+            "amount": "$15 million",
+            "announced_at": "2026-07-29",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0232cca5ca9bf922",
+                "quote": "“Rachit and Will have built something rare: a product that sales teams actually want to use, not just another system of record they’re forced into,” she wrote via email. “We led Centralize’s Series A because we saw a founding team with an unusually sharp read on how AI changes the day-to-day of enterprise sales.”",
+                "source_content_hash": "71082c4f5d29c731",
+                "quote_hash": "fa3dc99b027f77c5e8f43c6274c962bbb298a6a064b015935aaa8df95a45bbd9"
+              },
+              {
+                "source_id": "FISRC-0232cca5ca9bf922",
+                "quote": "a $15 million Series A funding round led by New Enterprise Associates (NEA)",
+                "source_content_hash": "71082c4f5d29c731",
+                "quote_hash": "1c98aabdb9653e808fa074c13f803a272d0da6cf268813e13ca766f9604c15da"
+              },
+              {
+                "source_id": "FISRC-0232cca5ca9bf922",
+                "quote": "Combined with a previous $4 million seed round led by Salesforce Ventures, Centralize has now raised $19 million since its 2023 inception",
+                "source_content_hash": "71082c4f5d29c731",
+                "quote_hash": "0be9abf5a19f2696e4ac1cffe124c2f8958f542b7df2f2d8425b1d0de1898f3e"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "$19 million",
+          "normalized": {
+            "currency": "USD",
+            "value": 19000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1900 万美元"
+          },
+          "basis": "source_disclosed",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 15000000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "1500 万美元"
+            }
+          ],
+          "historical_round_count": 1
+        }
+      },
+      "products": [
+        {
+          "name": "Centralize",
+          "description": "一个企业销售平台，通过 AI 代理分析第一方数据、通话记录、邮件、日历事件和网络来源，持续构建关键关系的实时图谱，充当收入团队的“交易 GPS”。",
+          "target_customers": "企业收入团队，包括客户经理、销售开发代表和客户成功经理",
+          "features": [
+            "自动生成组织架构图并可视化关键利益相关者关系",
+            "AI 助手 Centra 可回答“谁掌握预算？”或“如何接触 CRO？”等问题",
+            "主动标记关键拥护者离职、新决策者加入或关键交易参与度下降",
+            "通过共同联系人、过往公司重叠等识别潜在切入点",
+            "支持无限席位的“管理账户”定价模式"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0232cca5ca9bf922",
+              "quote": "Centralize operates as a visual, multiplayer surface centered around automated org charts that function like a map. AI agents analyze first-party data, call recordings, emails, calendar events, and web sources to continuously construct a live picture of key relationships.",
+              "source_content_hash": "71082c4f5d29c731",
+              "quote_hash": "4443cb4c03ea102b228cae21903d55d20d5b8c7b483fc80df3a4efba4384796a"
+            },
+            {
+              "source_id": "FISRC-0232cca5ca9bf922",
+              "quote": "It also flags the moment a champion leaves, a new decision-maker joins, or engagement drops on a key deal.",
+              "source_content_hash": "71082c4f5d29c731",
+              "quote_hash": "f07806d09ab34c1db689c1522fb6bf4546326963ba9eef09104ef2e57a52f7c2"
+            },
+            {
+              "source_id": "FISRC-0232cca5ca9bf922",
+              "quote": "the platform also identifies warm entry points through mutual connections or past company overlaps.",
+              "source_content_hash": "71082c4f5d29c731",
+              "quote_hash": "366ead6d8b6ac6a550a776d9990fbd3113aa295c9cd33de0890e2b3423a96619"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "CoreWeave",
+          "industry": "",
+          "use_case": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0232cca5ca9bf922",
+              "quote": "The startup’s client roster features notable tech names, including CoreWeave",
+              "source_content_hash": "71082c4f5d29c731",
+              "quote_hash": "99046cc6aa4db5549abe9791b3c95301b53d0f294103730cc96e17dd511ca52c"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "收入增长倍数（过去一年）",
+          "value": "近 8 倍",
+          "observed_at": "2026-07-29",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0232cca5ca9bf922",
+              "quote": "Since last year, we’ve… almost 8xed the company in revenue",
+              "source_content_hash": "71082c4f5d29c731",
+              "quote_hash": "0dc3b94c7bab74e41bcb584d2bec1f68e0bbc5569e6e40f077c23065cbd5fb04"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Rachit Kataria",
+          "quote": "One of the things that we always say is that the one thing AI can’t commoditize is relationships.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0232cca5ca9bf922",
+              "quote": "One of the things that we always say is that the one thing AI can’t commoditize is relationships.",
+              "source_content_hash": "71082c4f5d29c731",
+              "quote_hash": "6425e98225e5ff8c6d2a59c8a4fbc1eb499a0695652d91f65c94bdfd330e17fe"
+            }
+          ]
+        },
+        {
+          "speaker": "quoteddata.com",
+          "quote": "” Ackman added: “We believe Meta’s current share price … represents a deeply discounted valuation for one of the world’s greatest businesses,” which he said was a dominant leader in the fast-growing digital advertising market with $200bn of revenues that had grown 22% last year.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4792cf7e78d2906",
+              "quote": "” Ackman added: “We believe Meta’s current share price … represents a deeply discounted valuation for one of the world’s greatest businesses,” which he said was a dominant leader in the fast-growing digital advertising market with $200bn of revenues that had grown 22% last year.",
+              "source_content_hash": "e821a92754dbcf28",
+              "quote_hash": "506daeb8f460853d97d9d880113e53d18151b44ac08c355c87724a7309594b44"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是企业销售技术栈正从“活动记录”转向“关系导航”。Centralize 以 AI 驱动的实时组织关系图谱切入，填补了现有 CRM 和收入工具在“多线程关系管理”上的结构性空白。本轮融资的已验证信号包括：过去一年收入增长近 8 倍，以及 CoreWeave、Brex 等高速增长科技公司的采用。但证据边界在于，收入增长的绝对基数未披露，且客户集中在科技行业，跨行业扩展能力尚未验证。",
+        "validated_signals": [
+          "过去一年收入增长近 8 倍",
+          "客户包括 CoreWeave、Cognition、Decagon、Brex、Webflow、LangChain、MaintainX 等知名科技公司",
+          "产品于 2024 年 12 月推向市场，已实现快速采用"
+        ],
+        "risks": [
+          "收入增长的绝对基数未披露，近 8 倍增长可能来自极低起点",
+          "客户集中在科技行业，尚未证明在金融、制造等传统行业的跨行业扩展能力",
+          "企业销售工具市场竞争激烈，现有 CRM 巨头可能通过自研或收购进入关系智能领域"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "sales",
+        "market_application_id": "",
+        "use_case_ids": [
+          "sales",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "企业销售与收入技术",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是企业销售技术栈正从“活动记录”转向“关系导航”。Centralize 以 AI 驱动的实时组织关系图谱切入，填补了现有 CRM 和收入工具在“多线程关系管理”上的结构性空白。本轮融资的已验证信号包括：过去一年收入增长近 8 倍，以及 CoreWeave、Brex 等高速增长科技公司的采用。但证据边界在于，收入增长的绝对基数未披露，且客户集中在科技行业，跨行业扩展能力尚未验证。",
+          "evidence_signals": [
+            "过去一年收入增长近 8 倍",
+            "客户包括 CoreWeave、Cognition、Decagon、Brex、Webflow、LangChain、MaintainX 等知名科技公司",
+            "产品于 2024 年 12 月推向市场，已实现快速采用"
+          ],
+          "risks": [
+            "收入增长的绝对基数未披露，近 8 倍增长可能来自极低起点",
+            "客户集中在科技行业，尚未证明在金融、制造等传统行业的跨行业扩展能力",
+            "企业销售工具市场竞争激烈，现有 CRM 巨头可能通过自研或收购进入关系智能领域"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        },
+        "related_direction": {
+          "id": "DIR-20260725-02",
+          "title": "AI智能体从“辅助写作”转向“自主执行”，催生对智能体行为审计与权限控制的新需求"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Centralize",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Rachit Kataria",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "William Wang",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "New Enterprise Associates (NEA)",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Salesforce Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Stewart Butterfield",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Salesforce Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "CoreWeave",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-cbce4f1f5187efcf",
+          "date": "2026-07-29",
+          "title": "独家：前Meta和Slack工程师为初创公司Centralize筹集1500万美元，打造企业销售“交易GPS”",
+          "amount": "",
+          "source_refs": [
+            "SA-eb6e6758bc213f21"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-0232cca5ca9bf922",
+          "source_url": "https://news.crunchbase.com/sales-marketing/centralize-enterprise-sales-gtm-startup-funding-slack-meta-alums/",
+          "title": "独家：前Meta和Slack工程师为初创公司Centralize筹集1500万美元，打造企业销售“交易GPS”",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-10T02:41:40.375Z",
+          "content_hash": "71082c4f5d29c731",
+          "source_artifact_id": "SA-eb6e6758bc213f21",
+          "raw_id": "RAW-c01d046931b3aabd"
+        },
+        {
+          "source_id": "FISRC-c4792cf7e78d2906",
+          "source_url": "https://quoteddata.com/2026/02/pershing-square-buys-meta-sells-hilton-hotel-chain/",
+          "title": "Pershing Square's Bill Ackman buys Meta believing AI fears undervalue one of \"world's greatest businesses\" - QuotedData",
+          "publisher": "quoteddata.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-10T03:05:41.958Z",
+          "content_hash": "e821a92754dbcf28",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-10T03:06:14.657Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-10T03:06:14.657Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Centralize"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Rachit Kataria",
+            "William Wang"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-cbce4f1f5187efcf"
+      ],
+      "aggregation": {
+        "key": "FICO-2b3dac6c72b05a6e|series_a|USD:exact:15000000:::|2026-07-29",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-74c3c9da32686f84",
+          "event_ids": [
+            "EV-cbce4f1f5187efcf"
+          ],
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$15 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 15000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1500 万美元"
+          },
+          "announced_at": "2026-07-29",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        }
+      ],
+      "product_form": {
+        "dimension": "product_form",
+        "id": "enterprise_software_platform",
+        "name": "企业软件平台",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "enterprise_applications",
+        "name": "企业级应用",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "sales",
+        "name": "销售",
+        "method": "card_explicit"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-cbce4f1f5187efcf",
+        "direction": "opportunity-map.html#direction-cards"
+      }
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-392e264418bb0c75",

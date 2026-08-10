@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-10T01:53:54.030Z",
+    "generatedAt": "2026-08-10T03:05:19.937Z",
     "latestDataDate": "2026-08-10",
     "currentDate": "2026-08-10",
-    "eventCount": 1976,
+    "eventCount": 1969,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -215,7 +215,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2023-06-28",
-    "lastSeen": "2026-08-08"
+    "lastSeen": "2026-08-10"
   },
   "events": [
     {
@@ -11206,16 +11206,16 @@
     },
     {
       "id": "EV-3d93d1da8cb64462",
-      "dataDate": "2026-07-24",
+      "dataDate": "2026-08-10",
       "date": "2026-07-07",
-      "updatedDate": "2026-07-24",
+      "updatedDate": "2026-08-10",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "AIsa 获 650 万美元融资，由阿里巴巴和 Tribe Capital 联合领投，打造 AI 智能体交易网络",
+      "title": "AIsa 筹集 650 万美元，由阿里巴巴和 Tribe Capital 联合领投，构建 AI 智能体交易网络",
       "originalTitle": "AIsa Raises $6.5M, Co-Led by Alibaba and Tribe Capital, to Build the Transaction Network for AI Agents",
       "subject": "AIsa",
       "action": "Raises",
@@ -11524,11 +11524,15 @@
       ],
       "entityIds": [
         "EN-14ce7672aaca7a68",
-        "EN-047364b9be67f665"
+        "EN-047364b9be67f665",
+        "EN-1a2290470e0aa754",
+        "EN-45f62ea84873393b"
       ],
       "entityNames": [
         "AIsa",
-        "Alibaba"
+        "Alibaba",
+        "SAN FRANCISCO",
+        "July 07"
       ],
       "productName": "",
       "products": [],
@@ -35236,8 +35240,8 @@
         "TX-industry-manufacturing",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-use_case-design_engineering",
-        "TX-use_case-sales"
+        "TX-use_case-sales",
+        "TX-use_case-design_engineering"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-16",
@@ -35601,7 +35605,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-07",
-      "lastSeen": "2026-07-24"
+      "lastSeen": "2026-08-10"
     },
     {
       "id": "EN-caaa8e02be54cfc9",
@@ -35909,7 +35913,6 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
-        "EV-9d26b1683c2593c9",
         "EV-de6c27c1dac18a2a",
         "EV-6cea35f065f0ee9e",
         "EV-92be9fa58b1ee19f",
@@ -36167,8 +36170,8 @@
         "TX-use_case-software_development",
         "TX-use_case-security_operations",
         "TX-product_form-end_user_application",
-        "TX-target_user-consumer",
         "TX-use_case-customer_support",
+        "TX-target_user-consumer",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-long_context",
@@ -36179,6 +36182,7 @@
       "relatedEntityIds": [
         "EN-d1ad14d4ad57d207",
         "EN-7839fb10a8f14c70",
+        "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
         "EN-3850792f618f534b",
         "EN-74692028630429c7",
@@ -36451,8 +36455,8 @@
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
         "TX-ai_market_category-industry_applications",
-        "TX-target_user-consumer",
         "TX-use_case-customer_support",
+        "TX-target_user-consumer",
         "TX-ai_market_subcategory-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
@@ -37808,7 +37812,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-09",
+      "lastSeen": "2026-08-10",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [

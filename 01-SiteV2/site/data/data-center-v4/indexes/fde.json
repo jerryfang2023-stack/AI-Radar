@@ -5,49 +5,13 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-10T01:53:54.030Z",
+    "generatedAt": "2026-08-10T03:05:19.937Z",
     "latestDataDate": "2026-08-10",
     "currentDate": "2026-08-10",
-    "eventCount": 1976,
+    "eventCount": 1969,
     "quarantinedEventCount": 16
   },
   "fde": [
-    {
-      "id": "FDE-f99171bb7e8b4294",
-      "eventId": "EV-323d98437e42e8b3",
-      "dataDate": "2026-08-10",
-      "date": "2026-08-10",
-      "title": "Kuehne+Nagel 与 HappyRobot 签署战略合作，将 AI 智能体部署到全球空运业务",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "HappyRobot",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "Kuehne+Nagel",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_delivery_components",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "https://happyrobot.ai/customer-story/kuehne-nagel",
-      "entityIds": [
-        "EN-12bb49e1b12281f4"
-      ]
-    },
     {
       "id": "FDE-6b1d74319701501c",
       "eventId": "EV-715eb0debea4180c",
@@ -183,6 +147,39 @@
       "sourceUrl": "https://sap.com/asset/dynamic/2026/06/be80dd33-587f-0010-bca6-c68f7e60039b.html",
       "entityIds": [
         "EN-9f2432dcde6dc59a"
+      ]
+    },
+    {
+      "id": "FDE-f99171bb7e8b4294",
+      "eventId": "EV-323d98437e42e8b3",
+      "dataDate": "2026-08-07",
+      "date": "2026-08-07",
+      "title": "Kuehne+Nagel 与 HappyRobot 签署战略合作，将 AI 智能体部署到全球空运业务",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "HappyRobot",
+      "vendor": "HappyRobot",
+      "industry": "Logistics",
+      "useCase": "Kuehne+Nagel",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_before",
+        "workflow_after",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://happyrobot.ai/customer-story/kuehne-nagel",
+      "entityIds": [
+        "EN-12bb49e1b12281f4"
       ]
     },
     {
@@ -5499,54 +5496,6 @@
   ],
   "fdeDossiers": [
     {
-      "id": "FDED-4e31ac1c5e7360a8",
-      "implementationKey": "4e31ac1c5e7360a8",
-      "eventId": "EV-323d98437e42e8b3",
-      "eventIds": [
-        "EV-323d98437e42e8b3"
-      ],
-      "dataDate": "2026-08-10",
-      "date": "2026-08-10",
-      "title": "HappyRobot × 未披露：Kuehne+Nagel",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "HappyRobot",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "Kuehne+Nagel",
-      "workflow": "未披露",
-      "systems": [],
-      "outcomes": [],
-      "observationCount": 1,
-      "completeness": 0.375,
-      "completenessPercent": 38,
-      "missingFields": [
-        "vendor",
-        "industry",
-        "workflow",
-        "systems_integrated",
-        "reported_outcomes"
-      ],
-      "timeline": [
-        {
-          "observationId": "FDEO-d4bd30a6b7265296",
-          "type": "implementation_update",
-          "stage": "announced",
-          "date": "2026-08-10",
-          "dataDate": "2026-08-10",
-          "eventId": "EV-323d98437e42e8b3",
-          "eventTitle": "Kuehne+Nagel 与 HappyRobot 签署战略合作，将 AI 智能体部署到全球空运业务",
-          "claimCount": 1,
-          "sourceCount": 1
-        }
-      ],
-      "tags": [],
-      "sourceUrl": "https://happyrobot.ai/customer-story/kuehne-nagel",
-      "entityIds": [
-        "EN-12bb49e1b12281f4"
-      ]
-    },
-    {
       "id": "FDED-2a563676b4b19a6d",
       "implementationKey": "2a563676b4b19a6d",
       "eventId": "EV-715eb0debea4180c",
@@ -6567,25 +6516,26 @@
         "fde_procurement_contract",
         "fde_production_rollout"
       ],
-      "raw_documents": 123,
-      "original_sources": 110,
+      "raw_documents": 119,
+      "original_sources": 106,
       "valid_claims": 22,
-      "observations": 1,
-      "canonical_events": 11,
+      "observations": 0,
+      "canonical_events": 7,
       "blocker_counts": {
-        "no_source_bounded_event": 25,
-        "source_outside_daily_window": 61,
-        "repository_page_requires_release_source": 4,
+        "no_source_bounded_event": 29,
+        "source_outside_daily_window": 53,
+        "source_published_after_data_date": 2,
+        "non_event_or_index_title": 10,
+        "repository_page_requires_release_source": 2,
         "source_outside_funding_backfill_window": 2,
-        "non_event_or_index_title": 7,
-        "community_source_requires_original_event_source": 2,
+        "community_source_requires_original_event_source": 3,
         "raw_source_quality_block": 11
       },
       "rates": {
-        "original_source_rate": 0.8943089430894309,
-        "valid_claim_rate": 0.17886178861788618,
-        "observation_rate": 0.045454545454545456,
-        "event_conversion_rate": 0.5
+        "original_source_rate": 0.8907563025210085,
+        "valid_claim_rate": 0.18487394957983194,
+        "observation_rate": 0,
+        "event_conversion_rate": 0.3181818181818182
       },
       "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-10/monitoring-funnel.json"
     }

@@ -1,188 +1,48 @@
 [
   {
-    "event_type": "funding",
+    "event_type": "hardware_deployment",
     "event_status": "announced",
-    "event_time": "2026-08-06T00:00:00.000Z",
-    "disclosed_at": "2026-08-06T00:00:00.000Z",
-    "entities": [
-      "EN-373da2ec629326c0",
-      "EN-a4ae746b11369c98"
-    ],
-    "action": "launches with $9",
-    "object": "00M in funding - SiliconANGLE",
+    "event_time": "2026-08-05T00:00:00.000Z",
+    "disclosed_at": "2026-08-05T00:00:00.000Z",
+    "entities": [],
+    "action": "Cluster Within 72 Days, Cutting Deployment",
+    "object": "Time by 60%",
     "metrics": [
-      "$900M",
-      "$700 million",
-      "$5.51 billion",
-      "$900 million",
-      "$676 million"
-    ],
-    "locations": [],
-    "claim_refs": [
-      "CL-457e526cee53a188",
-      "CL-50d1b19a11234467",
-      "CL-1336bae32ee20b27",
-      "CL-a020fd9fb94d8088"
-    ],
-    "source_refs": [
-      "SA-ac115da9da6dfd33"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-ac115da9da6dfd33",
-        "disclosed_at": "2026-08-06T00:00:00.000Z",
-        "status": "announced"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-b116eafe60d71fbe",
-    "display_title_zh": "光网络初创公司Lumilens以9亿美元资金启动"
-  },
-  {
-    "event_type": "organization_restructuring",
-    "event_status": "announced",
-    "event_time": "2026-08-07T10:30:00.000Z",
-    "disclosed_at": "2026-08-07T10:30:00.000Z",
-    "entities": [
-      "EN-c70eca6b0f88f44d",
-      "EN-8d4321d936320802",
-      "EN-968e2d5b08687bf4"
-    ],
-    "action": "organization_restructuring",
-    "object": "in-house chip development team",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-fd90bb537ef3b2f8"
-    ],
-    "source_refs": [
-      "SA-82b069849d9cc2b7"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-82b069849d9cc2b7",
-        "disclosed_at": "2026-08-07T10:30:00.000Z",
-        "status": "announced"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-29570c9cbb6ce7cd",
-    "display_title_zh": "Anthropic联合设计定制AI推理芯片以绕过昂贵的英伟达GPU——三星被报道为Claude制造商的合作伙伴"
-  },
-  {
-    "event_type": "deployment",
-    "event_status": "announced",
-    "event_time": "2026-08-06T14:47:22.000Z",
-    "disclosed_at": "2026-08-06T14:47:22.000Z",
-    "entities": [
-      "EN-c7ad2ac22b4500bd",
-      "EN-cbc62794911ff31b"
-    ],
-    "action": "deployment",
-    "object": "SAP Purchase Order Accrual Automation System built on Amazon Bedrock AgentCore",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-6ee5b08f4dd238b1"
-    ],
-    "source_refs": [
-      "SA-163b94a43f4b713b"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-163b94a43f4b713b",
-        "disclosed_at": "2026-08-06T14:47:22.000Z",
-        "status": "announced"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-081fe42665b4a0b2",
-    "display_title_zh": "Rivian如何利用Amazon Bedrock上的AI智能体加速财务运营"
-  },
-  {
-    "event_type": "procurement_contract",
-    "event_status": "announced",
-    "event_time": "2026-08-04T00:00:00.000Z",
-    "disclosed_at": "2026-08-04T00:00:00.000Z",
-    "entities": [
-      "EN-d25e715a1ce00764",
-      "EN-8d4321d936320802"
-    ],
-    "action": "procurement_contract",
-    "object": "Dell Technologies AI infrastructure including Dell PowerRack systems with PowerEdge XE9812 servers including NVIDIA accelerators",
-    "metrics": [
-      "133 MW",
-      "9812 servers",
-      "1 GW"
+      "60%"
     ],
     "locations": [
-      "Europe"
+      "Japan",
+      "Singapore"
     ],
     "claim_refs": [
-      "CL-e49f30b730254d59",
-      "CL-7decf11e6812bad5"
+      "CL-4c9800892833158c",
+      "CL-8f103da16d83c26c",
+      "CL-aa9f5e6fa63419c1",
+      "CL-e231dd11c0a5e225"
     ],
     "source_refs": [
-      "SA-036fa74ea5c545f3"
+      "SA-ae55896eacdf2933"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "entities"
+    ],
     "update_history": [
       {
-        "source_ref": "SA-036fa74ea5c545f3",
-        "disclosed_at": "2026-08-04T00:00:00.000Z",
+        "source_ref": "SA-ae55896eacdf2933",
+        "disclosed_at": "2026-08-05T00:00:00.000Z",
         "status": "announced"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-83d022f89ba29209",
-    "display_title_zh": "Volta 选择戴尔科技助力构建下一代 AI 工厂"
-  },
-  {
-    "event_type": "partnership",
-    "event_status": "announced",
-    "event_time": "2026-08-07T00:00:00.000Z",
-    "disclosed_at": "2026-08-07T00:00:00.000Z",
-    "entities": [
-      "EN-2d758c5d96b1497a",
-      "EN-7d3194f79e645c42"
-    ],
-    "action": "partnership",
-    "object": "OpenAI Partner Network",
-    "metrics": [],
-    "locations": [
-      "U.S."
-    ],
-    "claim_refs": [
-      "CL-ddf804229102cc2c"
-    ],
-    "source_refs": [
-      "SA-dc72955af7041aa7"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-dc72955af7041aa7",
-        "disclosed_at": "2026-08-07T00:00:00.000Z",
-        "status": "announced"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-9d26b1683c2593c9",
-    "display_title_zh": "ITJ 入选 OpenAI 合作伙伴网络精选合作伙伴"
+    "event_id": "EV-0d1e8308d3c007aa",
+    "display_title_zh": "KAYTUS在72天内交付400机架高密度风冷计算集群，部署时间缩短60%"
   },
   {
     "event_type": "product_release",
     "event_status": "announced",
     "event_time": "",
-    "disclosed_at": "2026-08-10T01:50:47.220Z",
+    "disclosed_at": "2026-08-10T02:41:11.328Z",
     "entities": [
       "EN-7d3194f79e645c42",
       "EN-95ac2aa8df3b3c0b"
@@ -204,13 +64,127 @@
     "update_history": [
       {
         "source_ref": "SA-f671332f8768d05c",
-        "disclosed_at": "2026-08-10T01:50:47.220Z",
+        "disclosed_at": "2026-08-10T02:41:11.328Z",
         "status": "announced"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-47c32b3ef5c0f57a",
     "display_title_zh": "OpenAI 发布说明 - 2026年8月最新更新 - Releasebot"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-07-29T00:00:00.000Z",
+    "disclosed_at": "2026-07-29T00:00:00.000Z",
+    "entities": [
+      "EN-556c337c4f0b031e"
+    ],
+    "action": "raises",
+    "object": "$30M to build AI agents that learn from customer calls",
+    "metrics": [
+      "$30M",
+      "$30 million"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-15e3d2b9e7df48d5",
+      "CL-7c6395adaf6f4645",
+      "CL-b7a483ec0ff36aea",
+      "CL-b3ef6f4ce2085000"
+    ],
+    "source_refs": [
+      "SA-f1a3d20ead18190e"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-f1a3d20ead18190e",
+        "disclosed_at": "2026-07-29T00:00:00.000Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-57cf8e14d6994c1b",
+    "display_title_zh": "Encore AI 融资 3000 万美元，打造从客户通话中学习的 AI 智能体"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-08-10T02:41:19.655Z",
+    "entities": [
+      "EN-a899a3dde1d51caf",
+      "EN-9fbf261b62c1d7c0",
+      "EN-501b5d14e7e82c01",
+      "EN-202ac21492470b79"
+    ],
+    "action": "Open Source",
+    "object": "in Enterprise AI in 2026 | MLflow",
+    "metrics": [
+      "89%",
+      "25%"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-8ad8fc4b43dd87ee",
+      "CL-b3b4d7b795c5b204",
+      "CL-28364021a74a467f",
+      "CL-fbcbcd313f592faa"
+    ],
+    "source_refs": [
+      "SA-d8f2432f6a206e4a"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-d8f2432f6a206e4a",
+        "disclosed_at": "2026-08-10T02:41:19.655Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-890ffd351486b884",
+    "display_title_zh": "2026年开源在企业AI中的角色"
+  },
+  {
+    "event_type": "procurement_contract",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-08-10T02:41:20.854Z",
+    "entities": [],
+    "action": "Tender",
+    "object": "Authoring Platform",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-62489bf73ce7aa44",
+      "CL-b291f724f40b7aa7",
+      "CL-c6127b43790e3e74",
+      "CL-b564bb5b27836b84"
+    ],
+    "source_refs": [
+      "SA-2a5bf3857465a2fb"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "entities",
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-2a5bf3857465a2fb",
+        "disclosed_at": "2026-08-10T02:41:20.854Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-9fa7757568f0524e",
+    "display_title_zh": "仙人掌获MeitY合同，构建AI招标撰写平台"
   },
   {
     "event_type": "hardware_deployment",
@@ -245,80 +219,36 @@
     "display_title_zh": "Firebird 开设该地区最大 AI 工厂并宣布全球扩张"
   },
   {
-    "event_type": "funding",
-    "event_status": "completed",
-    "event_time": "2026-08-06T13:57:00.000Z",
-    "disclosed_at": "2026-08-06T13:57:00.000Z",
+    "event_type": "deployment",
+    "event_status": "announced",
+    "event_time": "2026-08-06T14:47:22.000Z",
+    "disclosed_at": "2026-08-06T14:47:22.000Z",
     "entities": [
-      "EN-bbdefa2950f49882",
-      "EN-7ebe9a17c4d4c271"
+      "EN-c7ad2ac22b4500bd",
+      "EN-cbc62794911ff31b"
     ],
-    "action": "raised",
-    "object": "$9.1M seed 103 days ago | Dealroom News",
-    "metrics": [
-      "$1.5B",
-      "$9.1M",
-      "$9.1 million",
-      "$500 million",
-      "$1.5 billion"
-    ],
+    "action": "deployment",
+    "object": "SAP Purchase Order Accrual Automation System built on Amazon Bedrock AgentCore",
+    "metrics": [],
     "locations": [],
     "claim_refs": [
-      "CL-ac563d56704781af",
-      "CL-b972941b9dbb76e3",
-      "CL-a60b5f9743976689",
-      "CL-7fe425ff85fe4844"
+      "CL-6ee5b08f4dd238b1"
     ],
     "source_refs": [
-      "SA-31e8df56c8eee877"
+      "SA-163b94a43f4b713b"
     ],
     "conflicts": [],
     "missing_fields": [],
     "update_history": [
       {
-        "source_ref": "SA-31e8df56c8eee877",
-        "disclosed_at": "2026-08-06T13:57:00.000Z",
-        "status": "completed"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-cfbfc6c80338aa12",
-    "display_title_zh": "谷歌瞄准Mechanize的15亿美元投资，这家初创公司103天前刚筹集了910万美元种子轮"
-  },
-  {
-    "event_type": "procurement_contract",
-    "event_status": "announced",
-    "event_time": "",
-    "disclosed_at": "2026-08-10T01:51:00.318Z",
-    "entities": [],
-    "action": "Tender",
-    "object": "Authoring Platform",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-62489bf73ce7aa44",
-      "CL-b291f724f40b7aa7",
-      "CL-c6127b43790e3e74",
-      "CL-b564bb5b27836b84"
-    ],
-    "source_refs": [
-      "SA-2a5bf3857465a2fb"
-    ],
-    "conflicts": [],
-    "missing_fields": [
-      "entities",
-      "event_time"
-    ],
-    "update_history": [
-      {
-        "source_ref": "SA-2a5bf3857465a2fb",
-        "disclosed_at": "2026-08-10T01:51:00.318Z",
+        "source_ref": "SA-163b94a43f4b713b",
+        "disclosed_at": "2026-08-06T14:47:22.000Z",
         "status": "announced"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-9fa7757568f0524e",
-    "display_title_zh": "仙人掌获MeitY合同，构建AI招标撰写平台"
+    "event_id": "EV-081fe42665b4a0b2",
+    "display_title_zh": "Rivian如何利用Amazon Bedrock上的AI智能体加速财务运营"
   },
   {
     "event_type": "product_release",
@@ -326,170 +256,115 @@
     "event_time": "2026-08-09T00:00:00.000Z",
     "disclosed_at": "2026-08-09T00:00:00.000Z",
     "entities": [
-      "EN-132a1a391cce181c",
-      "EN-3a33a8f70f0a0237",
-      "EN-e4d2f6a9921bc094"
+      "EN-5a59b85d2410f140",
+      "EN-842fcb5e60989a03"
     ],
-    "action": "Launches",
-    "object": "the First Cooperative Purchasing Marketplace for A",
-    "metrics": [
-      "$750 "
-    ],
+    "action": "Releases",
+    "object": "Artificial Intelligence Breaking News and Press Releases",
+    "metrics": [],
     "locations": [],
     "claim_refs": [
-      "CL-7cb0069f5ac3317c",
-      "CL-29eb197992552db5",
-      "CL-2ed0f7a51b041ecf",
-      "CL-dccc62b1aa388702"
+      "CL-4a8eea93173f0073",
+      "CL-9936be73adc33242",
+      "CL-7d7fb90ef5893185",
+      "CL-0ac3835322d68bbd"
     ],
     "source_refs": [
-      "SA-92e825e058880621"
+      "SA-2517eda16467dc8b"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "object"
+    ],
     "update_history": [
       {
-        "source_ref": "SA-92e825e058880621",
+        "source_ref": "SA-2517eda16467dc8b",
         "disclosed_at": "2026-08-09T00:00:00.000Z",
         "status": "announced"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-876529ea321653b1",
-    "display_title_zh": "Glass推出首个面向A的合作采购市场"
+    "event_id": "EV-257c7ec21edf638a",
+    "display_title_zh": "人工智能突发新闻与新闻稿"
   },
   {
-    "event_type": "product_release",
-    "event_status": "announced",
-    "event_time": "",
-    "disclosed_at": "2026-08-10T01:51:06.948Z",
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-07-29T13:00:30.000Z",
+    "disclosed_at": "2026-07-29T13:00:30.000Z",
     "entities": [
-      "EN-65819e198c32566a",
-      "EN-ea0a0d38a19ecbf4"
+      "EN-647ebaae8de92fe6",
+      "EN-ea3bd73e2b506e00",
+      "EN-c77ba5a7c094352e",
+      "EN-3ccbd9105a45d8fc"
     ],
-    "action": "product_release",
-    "object": "Agent Gateway",
+    "action": "Raise",
+    "object": "$15M For New Startup Centralize To Build A ‘Deal GPS’ For Enterprise Sales",
     "metrics": [],
     "locations": [],
     "claim_refs": [
-      "CL-41e56a06f4c10fef",
-      "CL-d8a6b002e21c8353",
-      "CL-2e25084d39a1b78b"
+      "CL-fed0222cd9ccc797",
+      "CL-b58cf541e5343749",
+      "CL-5d5d883d191531f1",
+      "CL-608809f6b1a56e23"
     ],
     "source_refs": [
-      "SA-475ddb0d8c87c697"
-    ],
-    "conflicts": [],
-    "missing_fields": [
-      "event_time"
-    ],
-    "update_history": [
-      {
-        "source_ref": "SA-475ddb0d8c87c697",
-        "disclosed_at": "2026-08-10T01:51:06.948Z",
-        "status": "announced"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-778072e4940c5d43",
-    "display_title_zh": "Okta宣布新创新，在运行时保护AI智能体并自动化持续智能体治理"
-  },
-  {
-    "event_type": "procurement_contract",
-    "event_status": "announced",
-    "event_time": "2026-08-06T04:30:30.000Z",
-    "disclosed_at": "2026-08-06T04:30:30.000Z",
-    "entities": [
-      "EN-30cd4a85fc09f695"
-    ],
-    "action": "procurement_contract",
-    "object": "AI Agent Marketplace Development Support Project",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-f61dacf9330021bf"
-    ],
-    "source_refs": [
-      "SA-131c21b69b34a652"
+      "SA-eb6e6758bc213f21"
     ],
     "conflicts": [],
     "missing_fields": [],
     "update_history": [
       {
-        "source_ref": "SA-131c21b69b34a652",
-        "disclosed_at": "2026-08-06T04:30:30.000Z",
-        "status": "announced"
+        "source_ref": "SA-eb6e6758bc213f21",
+        "disclosed_at": "2026-07-29T13:00:30.000Z",
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-6af526d687d9f737",
-    "display_title_zh": "Kakao赢得政府AI智能体平台合同，加速生态系统扩张"
+    "event_id": "EV-cbce4f1f5187efcf",
+    "display_title_zh": "独家：前Meta和Slack工程师为初创公司Centralize筹集1500万美元，打造企业销售“交易GPS”"
   },
   {
-    "event_type": "acquisition",
-    "event_status": "announced",
-    "event_time": "",
-    "disclosed_at": "2026-08-10T01:51:20.893Z",
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-07-07T00:00:00.000Z",
+    "disclosed_at": "2026-07-07T00:00:00.000Z",
     "entities": [
-      "EN-e5d45edb49cc6953"
+      "EN-14ce7672aaca7a68",
+      "EN-047364b9be67f665",
+      "EN-1a2290470e0aa754",
+      "EN-45f62ea84873393b"
     ],
-    "action": "acquisition",
-    "object": "Unframe",
-    "metrics": [],
-    "locations": [],
+    "action": "Raises",
+    "object": "$6.5M, Co-Led by Alibaba and Tribe Capital, to Build the Transaction Network for AI Agents",
+    "metrics": [
+      "$6.5M",
+      "$6.5 million"
+    ],
+    "locations": [
+      "US"
+    ],
     "claim_refs": [
-      "CL-7f4c0892c9dcf17f"
+      "CL-a04bd7a26fbaf4af",
+      "CL-eb62470a53faad41",
+      "CL-b019235c7da072fb",
+      "CL-ebb90ad1347a6a96"
     ],
     "source_refs": [
-      "SA-a373356e1d51b6f7"
+      "SA-f93791fdb3e96f08"
     ],
     "conflicts": [],
-    "missing_fields": [
-      "event_time"
-    ],
+    "missing_fields": [],
     "update_history": [
       {
-        "source_ref": "SA-a373356e1d51b6f7",
-        "disclosed_at": "2026-08-10T01:51:20.893Z",
-        "status": "announced"
+        "source_ref": "SA-f93791fdb3e96f08",
+        "disclosed_at": "2026-07-07T00:00:00.000Z",
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-8e6f06dd49bf7e99",
-    "display_title_zh": "企业AI洞察与新闻 - Unframe AI"
-  },
-  {
-    "event_type": "partnership",
-    "event_status": "announced",
-    "event_time": "",
-    "disclosed_at": "2026-08-10T01:51:22.116Z",
-    "entities": [
-      "EN-12bb49e1b12281f4"
-    ],
-    "action": "partnership",
-    "object": "Kuehne+Nagel",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-3cf54cf65742bbe6"
-    ],
-    "source_refs": [
-      "SA-ba31591f78df9868"
-    ],
-    "conflicts": [],
-    "missing_fields": [
-      "event_time"
-    ],
-    "update_history": [
-      {
-        "source_ref": "SA-ba31591f78df9868",
-        "disclosed_at": "2026-08-10T01:51:22.116Z",
-        "status": "announced"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-323d98437e42e8b3",
-    "display_title_zh": "Kuehne+Nagel 与 HappyRobot 签署战略合作，将 AI 智能体部署到全球空运业务"
+    "event_id": "EV-3d93d1da8cb64462",
+    "display_title_zh": "AIsa 筹集 650 万美元，由阿里巴巴和 Tribe Capital 联合领投，构建 AI 智能体交易网络"
   },
   {
     "event_type": "lawsuit_settlement",
@@ -572,19 +447,19 @@
     "metrics": [],
     "locations": [],
     "claim_refs": [
-      "CL-2d628d28c2a9ab3a",
-      "CL-31b683b195007683",
-      "CL-4fa4f0272ad8d595",
-      "CL-3041e06f1d8799b3"
+      "CL-126126a8a55ee84f",
+      "CL-d55f5a742671048f",
+      "CL-045484f7405f30d2",
+      "CL-ce5fa77aa8a311d5"
     ],
     "source_refs": [
-      "SA-d76b53729a341ac2"
+      "SA-82b61bfb1a187a9d"
     ],
     "conflicts": [],
     "missing_fields": [],
     "update_history": [
       {
-        "source_ref": "SA-d76b53729a341ac2",
+        "source_ref": "SA-82b61bfb1a187a9d",
         "disclosed_at": "2026-08-08T00:00:00.000Z",
         "status": "completed"
       }
@@ -597,7 +472,7 @@
     "event_type": "policy_regulation",
     "event_status": "announced",
     "event_time": "",
-    "disclosed_at": "2026-08-10T01:51:41.512Z",
+    "disclosed_at": "2026-08-10T02:41:54.833Z",
     "entities": [
       "EN-34d8ccb834d2d63c"
     ],
@@ -619,7 +494,7 @@
     "update_history": [
       {
         "source_ref": "SA-db12f60bfd7f2555",
-        "disclosed_at": "2026-08-10T01:51:41.512Z",
+        "disclosed_at": "2026-08-10T02:41:54.833Z",
         "status": "announced"
       }
     ],
@@ -673,37 +548,5 @@
     "publication_status": "verified",
     "event_id": "EV-59b7ba3d079ad09a",
     "display_title_zh": "当题库追不上模型，AI开始给自己出题：中国这支团队跑通了数据层RSI"
-  },
-  {
-    "event_type": "product_release",
-    "event_status": "planned",
-    "event_time": "2026-08-09T00:00:00.000Z",
-    "disclosed_at": "2026-08-09T00:00:00.000Z",
-    "entities": [
-      "EN-c70eca6b0f88f44d",
-      "EN-cb4754c48f8023d0"
-    ],
-    "action": "product_release",
-    "object": "Claude Code auto mode default setting",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-8ff8b7659efa569e"
-    ],
-    "source_refs": [
-      "SA-f6e4ad26392f3e26"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-f6e4ad26392f3e26",
-        "disclosed_at": "2026-08-09T00:00:00.000Z",
-        "status": "planned"
-      }
-    ],
-    "publication_status": "partial",
-    "event_id": "EV-93f80ce9ba35d382",
-    "display_title_zh": "Anthropic 将 Claude Code 的自动模式设为默认选项"
   }
 ]

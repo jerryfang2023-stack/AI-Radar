@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-10T01:53:54.030Z",
+    "generatedAt": "2026-08-10T03:05:19.937Z",
     "latestDataDate": "2026-08-10",
     "currentDate": "2026-08-10",
-    "eventCount": 1976,
+    "eventCount": 1969,
     "quarantinedEventCount": 16
   },
   "relationships": [
@@ -314,6 +314,34 @@
       "title": "Anthropic 发布 Cowork",
       "eventTitle": "Claude Cowork 智能体存在漏洞，可读写 Mac 任意文件",
       "eventDate": "2026-07-28",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-1965c9aefccb981e",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-968e2d5b08687bf4",
+      "object_type": "entity",
+      "event_id": "EV-286574206caa37ab",
+      "claim_refs": [
+        "CL-c4fadc9c91330c0e",
+        "CL-413aff7261ffd1b3",
+        "CL-9aeba7ac3376d815",
+        "CL-60bbd5cc7fdbabc9"
+      ],
+      "source_refs": [
+        "SA-2f6238bd9a3e07d9"
+      ],
+      "data_date": "2026-07-27",
+      "status": "verified",
+      "subjectName": "OpenAI",
+      "objectName": "Samsung",
+      "predicateLabel": "合作",
+      "title": "OpenAI 合作 Samsung",
+      "eventTitle": "三星电子会长李在镕与 OpenAI CEO 奥尔特曼会面，商讨 AI 半导体合作方案",
+      "eventDate": "2026-07-26",
       "sourceCount": 1
     },
     {
@@ -828,33 +856,6 @@
       "sourceCount": 1
     },
     {
-      "relationship_id": "REL2-62f415d53b9e1307",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-688f8db7018da7d4",
-      "object_type": "entity",
-      "event_id": "EV-82ae0ea3bfe336a1",
-      "claim_refs": [
-        "CL-5fced5cf18afc959",
-        "CL-7c22f66cabb9a37c",
-        "CL-d5a4e0b10c930ed2"
-      ],
-      "source_refs": [
-        "SA-f35e060050d33489"
-      ],
-      "data_date": "2026-07-24",
-      "status": "verified",
-      "subjectName": "Microsoft",
-      "objectName": "MAI-Voice-2-Flash",
-      "predicateLabel": "发布",
-      "title": "Microsoft 发布 MAI-Voice-2-Flash",
-      "eventTitle": "微软推出自研AI模型MAI-Image-2.5-Pro与MAI-Voice-2-Flash，已进入公开预览",
-      "eventDate": "2026-07-24",
-      "sourceCount": 1
-    },
-    {
       "relationship_id": "REL2-82d95dce19bccd53",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-febedfcafee9d610",
@@ -932,33 +933,6 @@
       "sourceCount": 1
     },
     {
-      "relationship_id": "REL2-dceee7ada64357c1",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-827b607311e6593e",
-      "object_type": "entity",
-      "event_id": "EV-82ae0ea3bfe336a1",
-      "claim_refs": [
-        "CL-5fced5cf18afc959",
-        "CL-9fea9adc5b3b6d08",
-        "CL-7c22f66cabb9a37c"
-      ],
-      "source_refs": [
-        "SA-f35e060050d33489"
-      ],
-      "data_date": "2026-07-24",
-      "status": "verified",
-      "subjectName": "Microsoft",
-      "objectName": "MAI-Image-2.5-Pro",
-      "predicateLabel": "发布",
-      "title": "Microsoft 发布 MAI-Image-2.5-Pro",
-      "eventTitle": "微软推出自研AI模型MAI-Image-2.5-Pro与MAI-Voice-2-Flash，已进入公开预览",
-      "eventDate": "2026-07-24",
-      "sourceCount": 1
-    },
-    {
       "relationship_id": "REL2-4110cbbb068f0258",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-ba728f8ca730921f",
@@ -982,6 +956,31 @@
       "title": "Acrab 发布 LIX 1 SoC",
       "eventTitle": "Acrab 发布边缘 AI 终端 SoC GΞLIX 1，支持 100B 模型本地运行",
       "eventDate": "2026-07-23",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-4fcfb0c00d879190",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-968e2d5b08687bf4",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-8f5edf98060f12af",
+      "object_type": "entity",
+      "event_id": "EV-02015794e4c719d0",
+      "claim_refs": [
+        "CL-ac1d06d0a5892ee6"
+      ],
+      "source_refs": [
+        "SA-c95d920d2d68a04a"
+      ],
+      "data_date": "2026-07-23",
+      "status": "verified",
+      "subjectName": "Samsung",
+      "objectName": "Galaxy Glasses",
+      "predicateLabel": "发布",
+      "title": "Samsung 发布 Galaxy Glasses",
+      "eventTitle": "三星首款 AI 眼镜 Galaxy Glasses 亮相：搭载骁龙 AR1 Gen1 芯片，满电续航 9 小时",
+      "eventDate": "2026-07-22",
       "sourceCount": 1
     },
     {
@@ -1060,33 +1059,6 @@
       "predicateLabel": "发布",
       "title": "Ushur 发布 Ushur Agentic Platform",
       "eventTitle": "Ushur 推出 Ushur 智能体平台：能完成任务的 AI 智能体",
-      "eventDate": "2026-07-22",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-899fe78a63eda569",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-068e7ccb7d4b07a6",
-      "object_type": "entity",
-      "event_id": "EV-e1e30a2a4a5232c6",
-      "claim_refs": [
-        "CL-34fddab81951af35",
-        "CL-8b238746e8f2c8ba",
-        "CL-3c62d52890307500"
-      ],
-      "source_refs": [
-        "SA-c75b1e326457605e"
-      ],
-      "data_date": "2026-07-23",
-      "status": "verified",
-      "subjectName": "Microsoft",
-      "objectName": "Copilot",
-      "predicateLabel": "发布",
-      "title": "Microsoft 发布 Copilot",
-      "eventTitle": "微软 Win11 RP 预览版文件管理器新增 Copilot 按钮",
       "eventDate": "2026-07-22",
       "sourceCount": 1
     },
@@ -2613,33 +2585,6 @@
       "eventTitle": "前 OpenAI CTO 穆拉蒂创立的 Thinking Machines Lab 发布 Inkling 多模态模型，975B 参数开源",
       "eventDate": "2026-07-16",
       "sourceCount": 3
-    },
-    {
-      "relationship_id": "REL2-a2d037d3ca0eff3e",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-597d8c4afa5fe3d6",
-      "object_type": "entity",
-      "event_id": "EV-7c899d5decafc42f",
-      "claim_refs": [
-        "CL-4154aa4e461163c9",
-        "CL-a3cd2bba9a1d055b",
-        "CL-837c7d367f0c26ce"
-      ],
-      "source_refs": [
-        "SA-c532d10bfc903c0c"
-      ],
-      "data_date": "2026-07-17",
-      "status": "verified",
-      "subjectName": "Microsoft",
-      "objectName": "Visual Studio Code 1.129",
-      "predicateLabel": "发布",
-      "title": "Microsoft 发布 Visual Studio Code 1.129",
-      "eventTitle": "微软发布 Visual Studio Code 1.129 正式版更新，现代 UI 抢先看",
-      "eventDate": "2026-07-16",
-      "sourceCount": 1
     },
     {
       "relationship_id": "REL2-ca465b8d8d369d14",
@@ -4787,6 +4732,34 @@
       "sourceCount": 1
     },
     {
+      "relationship_id": "REL2-07a456f751e0fa1e",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-968e2d5b08687bf4",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-c70eca6b0f88f44d",
+      "object_type": "entity",
+      "event_id": "EV-ef6464cf7f764835",
+      "claim_refs": [
+        "CL-333f401c6ab2ae9f",
+        "CL-8391abb623f3be4c",
+        "CL-56c99a19783adaa4",
+        "CL-ec9a12a611300175"
+      ],
+      "source_refs": [
+        "SA-d60a7482c4c7a18b"
+      ],
+      "data_date": "2026-07-03",
+      "status": "verified",
+      "subjectName": "Samsung",
+      "objectName": "Anthropic",
+      "predicateLabel": "合作",
+      "title": "Samsung 合作 Anthropic",
+      "eventTitle": "Anthropic 与三星洽谈定制芯片合作",
+      "eventDate": "2026-07-03",
+      "sourceCount": 1
+    },
+    {
       "relationship_id": "REL2-a29518b4e034cde5",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bdedcf7e3b01508b",
@@ -6084,6 +6057,33 @@
       "title": "NVIDIA 发布 Halos for Robotics",
       "eventTitle": "英伟达发布业界首个全栈物理 AI 安全系统 Halos for Robotics",
       "eventDate": "2026-06-22",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-171c0b5e7e3fda33",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-968e2d5b08687bf4",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d84c1d1c315bc2f8",
+      "object_type": "entity",
+      "event_id": "EV-9b29acd28643e9d1",
+      "claim_refs": [
+        "CL-3088dff95dd16d25",
+        "CL-e32b273519e183f6",
+        "CL-9b6df01dd258eb44"
+      ],
+      "source_refs": [
+        "SA-3c73c5563433827e"
+      ],
+      "data_date": "2026-06-23",
+      "status": "verified",
+      "subjectName": "Samsung",
+      "objectName": "UFS 5.0",
+      "predicateLabel": "发布",
+      "title": "Samsung 发布 UFS 5.0",
+      "eventTitle": "三星推出行业最快 UFS 5.0 解决方案：带宽达 10.8GB/s，赋能端侧 AI",
+      "eventDate": "2026-06-23",
       "sourceCount": 1
     },
     {
@@ -9032,33 +9032,6 @@
       "title": "StepFun 发布 StepAudio 2.5 Realtime",
       "eventTitle": "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型",
       "eventDate": "2026-05-25",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-9795f8e6814470a6",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-10fce287b4b1464c",
-      "object_type": "entity",
-      "event_id": "EV-a4f052325d0ef230",
-      "claim_refs": [
-        "CL-4c50bbc497deaee1",
-        "CL-25b9389df0e0f06f",
-        "CL-eece65ce191fb7c6"
-      ],
-      "source_refs": [
-        "SA-af9b5cefb039de38"
-      ],
-      "data_date": "2026-05-23",
-      "status": "verified",
-      "subjectName": "Microsoft",
-      "objectName": "Fara1.5",
-      "predicateLabel": "发布",
-      "title": "Microsoft 发布 Fara1.5",
-      "eventTitle": "微软推出 Fara1.5 系列浏览器 AI 智能体模型，72% 任务成功率超 OpenAI Operator",
-      "eventDate": "2026-05-23",
       "sourceCount": 1
     },
     {

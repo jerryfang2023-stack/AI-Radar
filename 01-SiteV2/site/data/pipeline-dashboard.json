@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-08-10T01:55:44.440Z",
+    "generatedAt": "2026-08-10T03:06:18.457Z",
     "dateRange": {
       "start": "2026-08-04",
       "end": "2026-08-10"
@@ -16,9 +16,9 @@
       "status": "passed",
       "counts": {
         "discovered": 290,
-        "capture_succeeded": 248,
+        "capture_succeeded": 246,
         "capture_failed": 0,
-        "raw_documents": 248
+        "raw_documents": 246
       },
       "evidence": [
         "01-SiteV2/content/11-databases/data-center-v4/2026-08-10/manifest.json",
@@ -30,16 +30,16 @@
       "label": "事实构建",
       "status": "passed",
       "counts": {
-        "accepted_claims": 43,
+        "accepted_claims": 44,
         "rejected_claims": 0,
-        "accepted": 43,
+        "accepted": 44,
         "rejected": 0,
         "pending_claims": 0,
-        "canonical_events": 20,
-        "entities": 26,
-        "relationships": 43,
+        "canonical_events": 15,
+        "entities": 24,
+        "relationships": 44,
         "conflicts": 0,
-        "qa_queue": 228
+        "qa_queue": 231
       },
       "evidence": [
         "01-SiteV2/content/11-databases/data-center-v4/2026-08-10/manifest.json",
@@ -49,11 +49,11 @@
     {
       "id": "application_projection",
       "label": "应用投影",
-      "status": "partial",
+      "status": "passed",
       "counts": {
         "opportunity_map": "passed",
         "trend_radar": "passed",
-        "funding_insights": "failed",
+        "funding_insights": "passed",
         "fde_hardware_sync": "passed"
       },
       "evidence": [
@@ -76,41 +76,41 @@
     "date": "2026-08-10",
     "label": "2026.08.10",
     "shortLabel": "08.10",
-    "discovered": 248,
-    "captured": 248,
-    "claims": 43,
-    "events": 20,
-    "entities": 26,
-    "relationships": 43,
+    "discovered": 246,
+    "captured": 246,
+    "claims": 44,
+    "events": 15,
+    "entities": 24,
+    "relationships": 44,
     "conflicts": 0,
-    "qaQueue": 228,
+    "qaQueue": 231,
     "telemetryDate": "2026-08-10",
     "collection": {
       "discovered": 290,
-      "capture_succeeded": 248,
+      "capture_succeeded": 246,
       "capture_failed": 0,
-      "raw_documents": 248
+      "raw_documents": 246
     },
     "factBuild": {
-      "accepted_claims": 43,
+      "accepted_claims": 44,
       "rejected_claims": 0,
-      "accepted": 43,
+      "accepted": 44,
       "rejected": 0,
       "pending_claims": 0,
-      "canonical_events": 20,
-      "entities": 26,
-      "relationships": 43,
+      "canonical_events": 15,
+      "entities": 24,
+      "relationships": 44,
       "conflicts": 0,
-      "qa_queue": 228,
+      "qa_queue": 231,
       "qa_by_status": {
-        "review_optional": 222,
+        "review_optional": 225,
         "open": 6
       }
     },
     "applicationProjection": {
       "opportunity_map": "passed",
       "trend_radar": "passed",
-      "funding_insights": "failed",
+      "funding_insights": "passed",
       "fde_hardware_sync": "passed"
     },
     "publication": {
@@ -122,14 +122,14 @@
       "date": "2026-08-10",
       "label": "2026.08.10",
       "shortLabel": "08.10",
-      "discovered": 248,
-      "captured": 248,
-      "claims": 43,
-      "events": 20,
-      "entities": 26,
-      "relationships": 43,
+      "discovered": 246,
+      "captured": 246,
+      "claims": 44,
+      "events": 15,
+      "entities": 24,
+      "relationships": 44,
       "conflicts": 0,
-      "qaQueue": 228
+      "qaQueue": 231
     },
     {
       "date": "2026-08-09",
@@ -211,14 +211,14 @@
     }
   ],
   "totals": {
-    "discovered": 1765,
-    "captured": 1765,
-    "claims": 509,
-    "events": 186,
-    "entities": 275,
-    "relationships": 509,
+    "discovered": 1763,
+    "captured": 1763,
+    "claims": 510,
+    "events": 181,
+    "entities": 273,
+    "relationships": 510,
     "conflicts": 0,
-    "qaQueue": 1579
+    "qaQueue": 1582
   },
   "v4Gate": {
     "status": "passed",
@@ -226,7 +226,7 @@
     "gate_date": "2026-08-10",
     "failures": [],
     "warnings": [
-      "No source-bounded hardware projection was produced."
+      "No source-bounded FDE projection was produced."
     ]
   },
   "compatibility": {

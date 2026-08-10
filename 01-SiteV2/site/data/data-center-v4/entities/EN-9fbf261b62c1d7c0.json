@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-10T01:53:54.030Z",
+    "generatedAt": "2026-08-10T03:05:19.937Z",
     "latestDataDate": "2026-08-10",
     "currentDate": "2026-08-10",
-    "eventCount": 1976,
+    "eventCount": 1969,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -16,9 +16,7 @@
     "name": "Microsoft",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
-    "aliases": [
-      "微软"
-    ],
+    "aliases": [],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -62,10 +60,10 @@
       "EV-58c1cc3749294649",
       "EV-c0a65877001ed413",
       "EV-bd508dbe4205774f",
+      "EV-890ffd351486b884",
       "EV-bfaac87ceac44b9d",
       "EV-ec283dd6bd3ac991",
       "EV-1797eada6fb392a6",
-      "EV-890ffd351486b884",
       "EV-ab1b780e6e543b42",
       "EV-4c949b6aac6d26e7",
       "EV-7a4d1e871dcd3b1f",
@@ -152,34 +150,24 @@
       "TX-technology-distillation"
     ],
     "relatedEntityIds": [
-      "EN-688f8db7018da7d4",
-      "EN-827b607311e6593e",
-      "EN-068e7ccb7d4b07a6",
       "EN-8652f6cd9088f1fa",
-      "EN-597d8c4afa5fe3d6",
       "EN-d2f4e09cb01afa3c",
       "EN-7d3194f79e645c42",
       "EN-38945a66b4806b11",
       "EN-c141d2237427f30d",
-      "EN-8d4321d936320802",
-      "EN-10fce287b4b1464c"
+      "EN-8d4321d936320802"
     ],
     "firstSeen": "2026-02-13",
-    "lastSeen": "2026-08-09",
+    "lastSeen": "2026-08-10",
     "relationIds": [
-      "REL2-62f415d53b9e1307",
-      "REL2-dceee7ada64357c1",
-      "REL2-899fe78a63eda569",
       "REL2-4410cf5eef104c6e",
-      "REL2-a2d037d3ca0eff3e",
       "REL2-8dc67631418aa4d4",
       "REL2-9fd72463ce6686f3",
       "REL2-c2250eeea2122198",
       "REL2-fdbf7b1aedf4d9ef",
       "REL2-9f6eb62bdd6f6a31",
       "REL2-10ba411040225060",
-      "REL2-e9ef6e697ef06f93",
-      "REL2-9795f8e6814470a6"
+      "REL2-e9ef6e697ef06f93"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -230,10 +218,10 @@
         "EV-c0a65877001ed413"
       ],
       "productsServices": [
+        "EV-890ffd351486b884",
         "EV-bfaac87ceac44b9d",
         "EV-ec283dd6bd3ac991",
         "EV-1797eada6fb392a6",
-        "EV-890ffd351486b884",
         "EV-ab1b780e6e543b42",
         "EV-4c949b6aac6d26e7",
         "EV-7a4d1e871dcd3b1f",
@@ -310,6 +298,58 @@
     },
     "timeline": [
       {
+        "id": "EV-890ffd351486b884",
+        "dataDate": "2026-08-10",
+        "date": "2026-08-10",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "2026年开源在企业AI中的角色",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "customer_support",
+            "name": "客户支持",
+            "entityIds": [
+              "EN-a899a3dde1d51caf"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [
+              "EN-a899a3dde1d51caf"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-a899a3dde1d51caf"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-a899a3dde1d51caf",
+          "EN-9fbf261b62c1d7c0",
+          "EN-501b5d14e7e82c01",
+          "EN-e75a2e5083aa0089"
+        ]
+      },
+      {
         "id": "EV-bfaac87ceac44b9d",
         "dataDate": "2026-08-09",
         "date": "2026-08-08",
@@ -384,58 +424,6 @@
           "EN-9fbf261b62c1d7c0",
           "EN-147853b5abe973d5",
           "EN-80d920b793cfa985"
-        ]
-      },
-      {
-        "id": "EV-890ffd351486b884",
-        "dataDate": "2026-08-03",
-        "date": "2026-08-03",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "2026年开源在企业AI中的角色",
-        "displayTags": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "customer_support",
-            "name": "客户支持",
-            "entityIds": [
-              "EN-a899a3dde1d51caf"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "open_weights",
-            "name": "开放权重",
-            "entityIds": [
-              "EN-a899a3dde1d51caf"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "business_user",
-            "name": "企业用户",
-            "entityIds": [
-              "EN-a899a3dde1d51caf"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-a899a3dde1d51caf",
-          "EN-9fbf261b62c1d7c0",
-          "EN-501b5d14e7e82c01",
-          "EN-e75a2e5083aa0089"
         ]
       },
       {
@@ -4120,69 +4108,6 @@
   },
   "relatedEntities": [
     {
-      "id": "EN-688f8db7018da7d4",
-      "name": "MAI-Voice-2-Flash",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-82ae0ea3bfe336a1"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [
-        "EN-9fbf261b62c1d7c0"
-      ],
-      "firstSeen": "2026-07-24",
-      "lastSeen": "2026-07-24"
-    },
-    {
-      "id": "EN-827b607311e6593e",
-      "name": "MAI-Image-2.5-Pro",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-82ae0ea3bfe336a1"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [
-        "EN-9fbf261b62c1d7c0"
-      ],
-      "firstSeen": "2026-07-24",
-      "lastSeen": "2026-07-24"
-    },
-    {
-      "id": "EN-068e7ccb7d4b07a6",
-      "name": "Copilot",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-e1e30a2a4a5232c6"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [
-        "EN-9fbf261b62c1d7c0"
-      ],
-      "firstSeen": "2026-07-22",
-      "lastSeen": "2026-07-23"
-    },
-    {
       "id": "EN-8652f6cd9088f1fa",
       "name": "Stellantis",
       "entityType": "organization_candidate",
@@ -4205,29 +4130,6 @@
       ],
       "firstSeen": "2025-10-01",
       "lastSeen": "2026-07-30"
-    },
-    {
-      "id": "EN-597d8c4afa5fe3d6",
-      "name": "Visual Studio Code 1.129",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-7c899d5decafc42f"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution"
-      ],
-      "relatedEntityIds": [
-        "EN-9fbf261b62c1d7c0"
-      ],
-      "firstSeen": "2026-07-16",
-      "lastSeen": "2026-07-17"
     },
     {
       "id": "EN-d2f4e09cb01afa3c",
@@ -4320,7 +4222,6 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
-        "EV-9d26b1683c2593c9",
         "EV-de6c27c1dac18a2a",
         "EV-6cea35f065f0ee9e",
         "EV-92be9fa58b1ee19f",
@@ -4578,8 +4479,8 @@
         "TX-use_case-software_development",
         "TX-use_case-security_operations",
         "TX-product_form-end_user_application",
-        "TX-target_user-consumer",
         "TX-use_case-customer_support",
+        "TX-target_user-consumer",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-long_context",
@@ -4590,6 +4491,7 @@
       "relatedEntityIds": [
         "EN-d1ad14d4ad57d207",
         "EN-7839fb10a8f14c70",
+        "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
         "EN-3850792f618f534b",
         "EN-74692028630429c7",
@@ -4810,7 +4712,6 @@
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
         "EV-2449fe665b666581",
-        "EV-29570c9cbb6ce7cd",
         "EV-eae8f316bc05820b",
         "EV-cd7e18de453152dd",
         "EV-89bdda008227fb6b",
@@ -4875,92 +4776,9 @@
       ],
       "firstSeen": "2025-03-18",
       "lastSeen": "2026-08-10"
-    },
-    {
-      "id": "EN-10fce287b4b1464c",
-      "name": "Fara1.5",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-a4f052325d0ef230"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution"
-      ],
-      "relatedEntityIds": [
-        "EN-9fbf261b62c1d7c0"
-      ],
-      "firstSeen": "2026-05-23",
-      "lastSeen": "2026-05-23"
     }
   ],
   "relationships": [
-    {
-      "relationship_id": "REL2-62f415d53b9e1307",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-688f8db7018da7d4",
-      "object_type": "entity",
-      "event_id": "EV-82ae0ea3bfe336a1",
-      "claim_refs": [
-        "CL-5fced5cf18afc959",
-        "CL-7c22f66cabb9a37c",
-        "CL-d5a4e0b10c930ed2"
-      ],
-      "source_refs": [
-        "SA-f35e060050d33489"
-      ],
-      "data_date": "2026-07-24",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-dceee7ada64357c1",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-827b607311e6593e",
-      "object_type": "entity",
-      "event_id": "EV-82ae0ea3bfe336a1",
-      "claim_refs": [
-        "CL-5fced5cf18afc959",
-        "CL-9fea9adc5b3b6d08",
-        "CL-7c22f66cabb9a37c"
-      ],
-      "source_refs": [
-        "SA-f35e060050d33489"
-      ],
-      "data_date": "2026-07-24",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-899fe78a63eda569",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-068e7ccb7d4b07a6",
-      "object_type": "entity",
-      "event_id": "EV-e1e30a2a4a5232c6",
-      "claim_refs": [
-        "CL-34fddab81951af35",
-        "CL-8b238746e8f2c8ba",
-        "CL-3c62d52890307500"
-      ],
-      "source_refs": [
-        "SA-c75b1e326457605e"
-      ],
-      "data_date": "2026-07-23",
-      "status": "verified"
-    },
     {
       "relationship_id": "REL2-4410cf5eef104c6e",
       "relationship_version": "RELATION-V2.1",
@@ -4978,26 +4796,6 @@
       ],
       "source_refs": [
         "SA-03fe3195711dfed5"
-      ],
-      "data_date": "2026-07-17",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-a2d037d3ca0eff3e",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-597d8c4afa5fe3d6",
-      "object_type": "entity",
-      "event_id": "EV-7c899d5decafc42f",
-      "claim_refs": [
-        "CL-4154aa4e461163c9",
-        "CL-a3cd2bba9a1d055b",
-        "CL-837c7d367f0c26ce"
-      ],
-      "source_refs": [
-        "SA-c532d10bfc903c0c"
       ],
       "data_date": "2026-07-17",
       "status": "verified"
@@ -5134,26 +4932,6 @@
       ],
       "data_date": "2026-06-03",
       "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-9795f8e6814470a6",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-10fce287b4b1464c",
-      "object_type": "entity",
-      "event_id": "EV-a4f052325d0ef230",
-      "claim_refs": [
-        "CL-4c50bbc497deaee1",
-        "CL-25b9389df0e0f06f",
-        "CL-eece65ce191fb7c6"
-      ],
-      "source_refs": [
-        "SA-af9b5cefb039de38"
-      ],
-      "data_date": "2026-05-23",
-      "status": "verified"
     }
   ],
   "taxonomyNodes": [
@@ -5165,13 +4943,12 @@
       "valueId": "agentic_execution",
       "eventIds": [
         "EV-83728e3b6c7736ce",
-        "EV-cfbfc6c80338aa12",
         "EV-b6f025a2dc297b78",
         "EV-dc35d54f273196f0",
         "EV-9ed6a759555d7e77",
         "EV-53253b5e23970958",
-        "EV-39b075c62ba4e927",
         "EV-57cf8e14d6994c1b",
+        "EV-39b075c62ba4e927",
         "EV-2a78dd5feb40a78a",
         "EV-9490bae84e7b4707",
         "EV-136b2edc9b9f3be8",
@@ -5271,7 +5048,6 @@
         "EV-23ae55daa341be06",
         "EV-6bb83280a2116f24",
         "EV-d10684a6f16afe10",
-        "EV-6af526d687d9f737",
         "EV-acddfa62aabb004f",
         "EV-a852dc0ca6011ff6",
         "EV-fd825cd7f7997fc8",
@@ -5349,7 +5125,6 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
-        "EV-778072e4940c5d43",
         "EV-3dc8d5c373ddd1f3",
         "EV-92d9b6931bcfdd11",
         "EV-355ddfd4c6180ab0",
@@ -5612,13 +5387,12 @@
       ],
       "entityIds": [
         "EN-240389f4b730bad4",
-        "EN-7ebe9a17c4d4c271",
         "EN-360a940182e67c66",
         "EN-e6f19fa7a6b52367",
         "EN-2be663431f007250",
         "EN-65819e198c32566a",
-        "EN-f9075cc99990820a",
         "EN-556c337c4f0b031e",
+        "EN-f9075cc99990820a",
         "EN-382635c9325bf327",
         "EN-7f67f2f8692510cf",
         "EN-12765295db4f1e79",
@@ -5705,7 +5479,6 @@
         "EN-50e2a4156631df49",
         "EN-f531c4e9f8555dcc",
         "EN-df30a48992da7fe8",
-        "EN-30cd4a85fc09f695",
         "EN-c9e92f0b88c6456b",
         "EN-6b182ca786385b1e",
         "EN-76a9a8a6e2f1a47b",
@@ -5961,9 +5734,9 @@
         "EV-268e5c3d36e3ed28",
         "EV-914ca1cbc6359ce5",
         "EV-ea109db692b88079",
+        "EV-57cf8e14d6994c1b",
         "EV-2dff88f85e3bce86",
         "EV-39b075c62ba4e927",
-        "EV-57cf8e14d6994c1b",
         "EV-2a78dd5feb40a78a",
         "EV-33b3cf34f8ff7bd8",
         "EV-136b2edc9b9f3be8",
@@ -6163,9 +5936,9 @@
         "EN-5f5ed85925074c92",
         "EN-65e9e514ecf0d270",
         "EN-26997989b8425dac",
+        "EN-556c337c4f0b031e",
         "EN-770ef1d2b6e24172",
         "EN-f9075cc99990820a",
-        "EN-556c337c4f0b031e",
         "EN-2be663431f007250",
         "EN-0b01f10e87d13e75",
         "EN-382635c9325bf327",
@@ -6339,7 +6112,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-10"
     },
     {
       "id": "TX-use_case-data_analysis",

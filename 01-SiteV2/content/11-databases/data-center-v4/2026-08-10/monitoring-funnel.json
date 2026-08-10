@@ -9,25 +9,26 @@
       "fde_procurement_contract",
       "fde_production_rollout"
     ],
-    "raw_documents": 123,
-    "original_sources": 110,
+    "raw_documents": 119,
+    "original_sources": 106,
     "valid_claims": 22,
-    "observations": 1,
-    "canonical_events": 11,
+    "observations": 0,
+    "canonical_events": 7,
     "blocker_counts": {
-      "no_source_bounded_event": 25,
-      "source_outside_daily_window": 61,
-      "repository_page_requires_release_source": 4,
+      "no_source_bounded_event": 29,
+      "source_outside_daily_window": 53,
+      "source_published_after_data_date": 2,
+      "non_event_or_index_title": 10,
+      "repository_page_requires_release_source": 2,
       "source_outside_funding_backfill_window": 2,
-      "non_event_or_index_title": 7,
-      "community_source_requires_original_event_source": 2,
+      "community_source_requires_original_event_source": 3,
       "raw_source_quality_block": 11
     },
     "rates": {
-      "original_source_rate": 0.8943089430894309,
-      "valid_claim_rate": 0.17886178861788618,
-      "observation_rate": 0.045454545454545456,
-      "event_conversion_rate": 0.5
+      "original_source_rate": 0.8907563025210085,
+      "valid_claim_rate": 0.18487394957983194,
+      "observation_rate": 0,
+      "event_conversion_rate": 0.3181818181818182
     }
   },
   {
@@ -36,30 +37,29 @@
     "date": "2026-08-10",
     "monitoring_paths": [
       "hardware_capacity_fab",
-      "hardware_capex",
-      "hardware_oem_odm",
       "hardware_product_specs",
-      "hardware_shipment_deployment"
+      "hardware_shipment_deployment",
+      "hardware_supply_agreement"
     ],
     "raw_documents": 27,
     "original_sources": 26,
-    "valid_claims": 0,
-    "observations": 3,
-    "canonical_events": 0,
+    "valid_claims": 4,
+    "observations": 5,
+    "canonical_events": 1,
     "blocker_counts": {
-      "source_outside_daily_window": 16,
+      "no_source_bounded_event": 6,
+      "source_outside_daily_window": 11,
       "repository_page_requires_release_source": 1,
       "source_outside_funding_backfill_window": 3,
       "non_event_or_index_title": 2,
       "event_not_ai_relevant": 1,
-      "no_source_bounded_event": 2,
       "raw_source_quality_block": 2
     },
     "rates": {
       "original_source_rate": 0.9629629629629629,
-      "valid_claim_rate": 0,
-      "observation_rate": 0,
-      "event_conversion_rate": 1
+      "valid_claim_rate": 0.14814814814814814,
+      "observation_rate": 1,
+      "event_conversion_rate": 0.25
     }
   }
 ]

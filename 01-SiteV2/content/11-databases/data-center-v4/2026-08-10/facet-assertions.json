@@ -1,13 +1,13 @@
 [
   {
-    "asset_id": "CL-e49f30b730254d59",
+    "asset_id": "CL-8f103da16d83c26c",
     "dimension_id": "industry",
     "value_id": "manufacturing",
-    "evidence_ref": "CL-e49f30b730254d59",
+    "evidence_ref": "CL-8f103da16d83c26c",
     "source_span": {
-      "raw_id": "RAW-b4a7b7e82ba8e82f",
-      "start": 418,
-      "end": 668
+      "raw_id": "RAW-dd5cc97c6d27caff",
+      "start": 433,
+      "end": 865
     },
     "assignment_method": "rule",
     "confidence": 0.88,
@@ -15,14 +15,14 @@
     "status": "active"
   },
   {
-    "asset_id": "CL-7decf11e6812bad5",
-    "dimension_id": "industry",
-    "value_id": "manufacturing",
-    "evidence_ref": "CL-7decf11e6812bad5",
+    "asset_id": "CL-7c6395adaf6f4645",
+    "dimension_id": "use_case",
+    "value_id": "customer_support",
+    "evidence_ref": "CL-7c6395adaf6f4645",
     "source_span": {
-      "raw_id": "RAW-b4a7b7e82ba8e82f",
-      "start": 669,
-      "end": 954
+      "raw_id": "RAW-4a5f98cad700d025",
+      "start": 120,
+      "end": 363
     },
     "assignment_method": "rule",
     "confidence": 0.88,
@@ -30,14 +30,44 @@
     "status": "active"
   },
   {
-    "asset_id": "CL-ddf804229102cc2c",
-    "dimension_id": "industry",
-    "value_id": "healthcare_life_sciences",
-    "evidence_ref": "CL-ddf804229102cc2c",
+    "asset_id": "CL-b7a483ec0ff36aea",
+    "dimension_id": "target_user",
+    "value_id": "business_user",
+    "evidence_ref": "CL-b7a483ec0ff36aea",
     "source_span": {
-      "raw_id": "RAW-e4dc6a4d82fd3017",
-      "start": 0,
-      "end": 171
+      "raw_id": "RAW-4a5f98cad700d025",
+      "start": 2348,
+      "end": 2672
+    },
+    "assignment_method": "rule",
+    "confidence": 0.88,
+    "taxonomy_version": "TAG-V4.1",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-fbcbcd313f592faa",
+    "dimension_id": "use_case",
+    "value_id": "customer_support",
+    "evidence_ref": "CL-fbcbcd313f592faa",
+    "source_span": {
+      "raw_id": "RAW-02dd384ffec7d859",
+      "start": 1293,
+      "end": 1633
+    },
+    "assignment_method": "rule",
+    "confidence": 0.88,
+    "taxonomy_version": "TAG-V4.1",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-fbcbcd313f592faa",
+    "dimension_id": "target_user",
+    "value_id": "business_user",
+    "evidence_ref": "CL-fbcbcd313f592faa",
+    "source_span": {
+      "raw_id": "RAW-02dd384ffec7d859",
+      "start": 1293,
+      "end": 1633
     },
     "assignment_method": "rule",
     "confidence": 0.88,
@@ -53,6 +83,36 @@
       "raw_id": "RAW-8463649eab6e3e49",
       "start": 583,
       "end": 665
+    },
+    "assignment_method": "rule",
+    "confidence": 0.88,
+    "taxonomy_version": "TAG-V4.1",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-0ac3835322d68bbd",
+    "dimension_id": "use_case",
+    "value_id": "physical_automation",
+    "evidence_ref": "CL-0ac3835322d68bbd",
+    "source_span": {
+      "raw_id": "RAW-26c0188c3be269ca",
+      "start": 1151,
+      "end": 1379
+    },
+    "assignment_method": "rule",
+    "confidence": 0.88,
+    "taxonomy_version": "TAG-V4.1",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-5d5d883d191531f1",
+    "dimension_id": "industry",
+    "value_id": "retail_ecommerce",
+    "evidence_ref": "CL-5d5d883d191531f1",
+    "source_span": {
+      "raw_id": "RAW-c01d046931b3aabd",
+      "start": 1938,
+      "end": 2409
     },
     "assignment_method": "rule",
     "confidence": 0.88,

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-10T01:53:54.030Z",
+    "generatedAt": "2026-08-10T03:05:19.937Z",
     "latestDataDate": "2026-08-10",
     "currentDate": "2026-08-10",
-    "eventCount": 1976,
+    "eventCount": 1969,
     "quarantinedEventCount": 16
   },
   "relationships": [
@@ -752,6 +752,76 @@
         "date": "2026-07-28",
         "dataDate": "2026-07-28",
         "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-1965c9aefccb981e",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-968e2d5b08687bf4",
+      "object_type": "entity",
+      "event_id": "EV-286574206caa37ab",
+      "claim_refs": [
+        "CL-c4fadc9c91330c0e",
+        "CL-413aff7261ffd1b3",
+        "CL-9aeba7ac3376d815",
+        "CL-60bbd5cc7fdbabc9"
+      ],
+      "source_refs": [
+        "SA-2f6238bd9a3e07d9"
+      ],
+      "data_date": "2026-07-27",
+      "status": "verified",
+      "subjectName": "OpenAI",
+      "objectName": "Samsung",
+      "predicateLabel": "合作",
+      "title": "OpenAI 合作 Samsung",
+      "eventTitle": "三星电子会长李在镕与 OpenAI CEO 奥尔特曼会面，商讨 AI 半导体合作方案",
+      "eventDate": "2026-07-26",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-c4fadc9c91330c0e",
+          "subject": "三星电子会长李在镕与 OpenAI CEO 奥尔特曼会面，商讨 AI 半导体",
+          "object": "方案",
+          "quote": "三星电子会长李在镕与 OpenAI CEO 奥尔特曼会面，商讨 AI 半导体合作方案 - IT之家"
+        },
+        {
+          "id": "CL-413aff7261ffd1b3",
+          "subject": "三星电子会长李在镕与 OpenAI CEO 奥尔特曼会面，商讨 AI 半导体",
+          "object": "方案",
+          "quote": "三星电子会长李在镕与 OpenAI CEO 奥尔特曼会面，商讨 AI 半导体合作方案"
+        },
+        {
+          "id": "CL-9aeba7ac3376d815",
+          "subject": "三星电子会长李在镕与 OpenAI CEO 奥尔特曼会面，商讨 AI 半导体",
+          "object": "方案",
+          "quote": "IT之家 7 月 26 日消息，据韩媒《每日经济新闻》今天报道，三星电子会长李在镕与 OpenAI CEO 萨姆 · 奥尔特曼于当地时间 25 日在旧金山会面， 讨论 AI 和半导体合作方案 。"
+        },
+        {
+          "id": "CL-60bbd5cc7fdbabc9",
+          "subject": "三星电子会长李在镕与 OpenAI CEO 奥尔特曼会面，商讨 AI 半导体",
+          "object": "方案",
+          "quote": "双方的讨论重点预计集中在 HBM 、 DRAM 等半导体产品合作计划 。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-2f6238bd9a3e07d9",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/981/705.htm"
+        }
+      ],
+      "sourceExcerpt": "三星电子会长李在镕与 OpenAI CEO 奥尔特曼会面，商讨 AI 半导体合作方案 - IT之家",
+      "event": {
+        "id": "EV-286574206caa37ab",
+        "title": "三星电子会长李在镕与 OpenAI CEO 奥尔特曼会面，商讨 AI 半导体合作方案",
+        "originalTitle": "",
+        "date": "2026-07-26",
+        "dataDate": "2026-07-27",
+        "eventTypeLabel": "合作"
       }
     },
     {
@@ -1938,69 +2008,6 @@
       }
     },
     {
-      "relationship_id": "REL2-62f415d53b9e1307",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-688f8db7018da7d4",
-      "object_type": "entity",
-      "event_id": "EV-82ae0ea3bfe336a1",
-      "claim_refs": [
-        "CL-5fced5cf18afc959",
-        "CL-7c22f66cabb9a37c",
-        "CL-d5a4e0b10c930ed2"
-      ],
-      "source_refs": [
-        "SA-f35e060050d33489"
-      ],
-      "data_date": "2026-07-24",
-      "status": "verified",
-      "subjectName": "Microsoft",
-      "objectName": "MAI-Voice-2-Flash",
-      "predicateLabel": "发布",
-      "title": "Microsoft 发布 MAI-Voice-2-Flash",
-      "eventTitle": "微软推出自研AI模型MAI-Image-2.5-Pro与MAI-Voice-2-Flash，已进入公开预览",
-      "eventDate": "2026-07-24",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-5fced5cf18afc959",
-          "subject": "微软",
-          "object": "MAI-Image-2.5-Pro与MAI-Voice-2-Flash，已进入公开预览",
-          "quote": "IT之家 7 月 24 日消息，微软当地时间 7 月 23 日宣布推出两款新的自研 AI 模型，分别为 MAI-Image-2.5-Pro 和 MAI-Voice-2-Flash，目前均已进入公开预览阶段。"
-        },
-        {
-          "id": "CL-7c22f66cabb9a37c",
-          "subject": "微软",
-          "object": "MAI-Image-2.5-Pro与MAI-Voice-2-Flash，已进入公开预览",
-          "quote": "微软表示，过去一年，公司开始开发基于内部训练流程的专用模型，目标是使用经过清理、可追踪、企业级的数据进行训练，不依赖第三方模型蒸馏，并从底层设计以服务微软产品用户。"
-        },
-        {
-          "id": "CL-d5a4e0b10c930ed2",
-          "subject": "微软",
-          "object": "MAI-Image-2.5-Pro与MAI-Voice-2-Flash，已进入公开预览",
-          "quote": "另一款模型 MAI-Voice-2-Flash 则针对高频语音应用进行了优化。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-f35e060050d33489",
-          "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/980/899.htm"
-        }
-      ],
-      "sourceExcerpt": "IT之家 7 月 24 日消息，微软当地时间 7 月 23 日宣布推出两款新的自研 AI 模型，分别为 MAI-Image-2.5-Pro 和 MAI-Voice-2-Flash，目前均已进入公开预览阶段。",
-      "event": {
-        "id": "EV-82ae0ea3bfe336a1",
-        "title": "微软推出自研AI模型MAI-Image-2.5-Pro与MAI-Voice-2-Flash，已进入公开预览",
-        "originalTitle": "",
-        "date": "2026-07-24",
-        "dataDate": "2026-07-24",
-        "eventTypeLabel": "模型发布"
-      }
-    },
-    {
       "relationship_id": "REL2-82d95dce19bccd53",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-febedfcafee9d610",
@@ -2162,69 +2169,6 @@
       }
     },
     {
-      "relationship_id": "REL2-dceee7ada64357c1",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-827b607311e6593e",
-      "object_type": "entity",
-      "event_id": "EV-82ae0ea3bfe336a1",
-      "claim_refs": [
-        "CL-5fced5cf18afc959",
-        "CL-9fea9adc5b3b6d08",
-        "CL-7c22f66cabb9a37c"
-      ],
-      "source_refs": [
-        "SA-f35e060050d33489"
-      ],
-      "data_date": "2026-07-24",
-      "status": "verified",
-      "subjectName": "Microsoft",
-      "objectName": "MAI-Image-2.5-Pro",
-      "predicateLabel": "发布",
-      "title": "Microsoft 发布 MAI-Image-2.5-Pro",
-      "eventTitle": "微软推出自研AI模型MAI-Image-2.5-Pro与MAI-Voice-2-Flash，已进入公开预览",
-      "eventDate": "2026-07-24",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-5fced5cf18afc959",
-          "subject": "微软",
-          "object": "MAI-Image-2.5-Pro与MAI-Voice-2-Flash，已进入公开预览",
-          "quote": "IT之家 7 月 24 日消息，微软当地时间 7 月 23 日宣布推出两款新的自研 AI 模型，分别为 MAI-Image-2.5-Pro 和 MAI-Voice-2-Flash，目前均已进入公开预览阶段。"
-        },
-        {
-          "id": "CL-9fea9adc5b3b6d08",
-          "subject": "微软",
-          "object": "MAI-Image-2.5-Pro与MAI-Voice-2-Flash，已进入公开预览",
-          "quote": "两款模型属于微软 AI 团队自研模型系列，分别面向高质量图像生成与高并发语音交互场景。"
-        },
-        {
-          "id": "CL-7c22f66cabb9a37c",
-          "subject": "微软",
-          "object": "MAI-Image-2.5-Pro与MAI-Voice-2-Flash，已进入公开预览",
-          "quote": "微软表示，过去一年，公司开始开发基于内部训练流程的专用模型，目标是使用经过清理、可追踪、企业级的数据进行训练，不依赖第三方模型蒸馏，并从底层设计以服务微软产品用户。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-f35e060050d33489",
-          "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/980/899.htm"
-        }
-      ],
-      "sourceExcerpt": "IT之家 7 月 24 日消息，微软当地时间 7 月 23 日宣布推出两款新的自研 AI 模型，分别为 MAI-Image-2.5-Pro 和 MAI-Voice-2-Flash，目前均已进入公开预览阶段。",
-      "event": {
-        "id": "EV-82ae0ea3bfe336a1",
-        "title": "微软推出自研AI模型MAI-Image-2.5-Pro与MAI-Voice-2-Flash，已进入公开预览",
-        "originalTitle": "",
-        "date": "2026-07-24",
-        "dataDate": "2026-07-24",
-        "eventTypeLabel": "模型发布"
-      }
-    },
-    {
       "relationship_id": "REL2-4110cbbb068f0258",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-ba728f8ca730921f",
@@ -2278,6 +2222,55 @@
         "date": "2026-07-23",
         "dataDate": "2026-07-23",
         "eventTypeLabel": "模型发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-4fcfb0c00d879190",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-968e2d5b08687bf4",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-8f5edf98060f12af",
+      "object_type": "entity",
+      "event_id": "EV-02015794e4c719d0",
+      "claim_refs": [
+        "CL-ac1d06d0a5892ee6"
+      ],
+      "source_refs": [
+        "SA-c95d920d2d68a04a"
+      ],
+      "data_date": "2026-07-23",
+      "status": "verified",
+      "subjectName": "Samsung",
+      "objectName": "Galaxy Glasses",
+      "predicateLabel": "发布",
+      "title": "Samsung 发布 Galaxy Glasses",
+      "eventTitle": "三星首款 AI 眼镜 Galaxy Glasses 亮相：搭载骁龙 AR1 Gen1 芯片，满电续航 9 小时",
+      "eventDate": "2026-07-22",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-ac1d06d0a5892ee6",
+          "subject": "三星",
+          "object": "Galaxy Glasses",
+          "quote": "在今天的 Galaxy Unpacked 2026 夏季发布会上，三星首款 AI 眼镜 Galaxy Glasses 首发亮相。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-c95d920d2d68a04a",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/980/323.htm"
+        }
+      ],
+      "sourceExcerpt": "在今天的 Galaxy Unpacked 2026 夏季发布会上，三星首款 AI 眼镜 Galaxy Glasses 首发亮相。",
+      "event": {
+        "id": "EV-02015794e4c719d0",
+        "title": "三星首款 AI 眼镜 Galaxy Glasses 亮相：搭载骁龙 AR1 Gen1 芯片，满电续航 9 小时",
+        "originalTitle": "",
+        "date": "2026-07-22",
+        "dataDate": "2026-07-23",
+        "eventTypeLabel": "产品发布"
       }
     },
     {
@@ -2450,69 +2443,6 @@
         "id": "EV-bf68acb1350e039b",
         "title": "Ushur 推出 Ushur 智能体平台：能完成任务的 AI 智能体",
         "originalTitle": "Ushur launches the Ushur Agentic Platform: AI agents that finish the job",
-        "date": "2026-07-22",
-        "dataDate": "2026-07-23",
-        "eventTypeLabel": "产品发布"
-      }
-    },
-    {
-      "relationship_id": "REL2-899fe78a63eda569",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-068e7ccb7d4b07a6",
-      "object_type": "entity",
-      "event_id": "EV-e1e30a2a4a5232c6",
-      "claim_refs": [
-        "CL-34fddab81951af35",
-        "CL-8b238746e8f2c8ba",
-        "CL-3c62d52890307500"
-      ],
-      "source_refs": [
-        "SA-c75b1e326457605e"
-      ],
-      "data_date": "2026-07-23",
-      "status": "verified",
-      "subjectName": "Microsoft",
-      "objectName": "Copilot",
-      "predicateLabel": "发布",
-      "title": "Microsoft 发布 Copilot",
-      "eventTitle": "微软 Win11 RP 预览版文件管理器新增 Copilot 按钮",
-      "eventDate": "2026-07-22",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-34fddab81951af35",
-          "subject": "微软 Win11 RP 预览版文件管理器",
-          "object": "Copilot 按钮",
-          "quote": "微软 Win11 RP 预览版文件管理器新增 Copilot 按钮，AI 分析 / 摘要文件"
-        },
-        {
-          "id": "CL-8b238746e8f2c8ba",
-          "subject": "微软 Win11 RP 预览版文件管理器",
-          "object": "Copilot 按钮",
-          "quote": "IT之家 7 月 22 日消息，科技媒体 NeoWin 昨日（7 月 21 日）发布博文，报道称 在 Release Preview 频道最新 Windows 11 预览版中 ，在文件管理器 Home 主页中， 微软新增了专属的 Copilot AI 按钮。"
-        },
-        {
-          "id": "CL-3c62d52890307500",
-          "subject": "微软 Win11 RP 预览版文件管理器",
-          "object": "Copilot 按钮",
-          "quote": "在 Windows 11 预览版文件管理器主界面中，用户将鼠标悬停在某个文件后，可以看到新增的“询问 Copilot”与“打开文件所在位置”两个按钮。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-c75b1e326457605e",
-          "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/979/968.htm"
-        }
-      ],
-      "sourceExcerpt": "微软 Win11 RP 预览版文件管理器新增 Copilot 按钮，AI 分析 / 摘要文件 - IT之家",
-      "event": {
-        "id": "EV-e1e30a2a4a5232c6",
-        "title": "微软 Win11 RP 预览版文件管理器新增 Copilot 按钮",
-        "originalTitle": "",
         "date": "2026-07-22",
         "dataDate": "2026-07-23",
         "eventTypeLabel": "产品发布"
@@ -5998,69 +5928,6 @@
         "date": "2026-07-16",
         "dataDate": "2026-07-17",
         "eventTypeLabel": "模型发布"
-      }
-    },
-    {
-      "relationship_id": "REL2-a2d037d3ca0eff3e",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-597d8c4afa5fe3d6",
-      "object_type": "entity",
-      "event_id": "EV-7c899d5decafc42f",
-      "claim_refs": [
-        "CL-4154aa4e461163c9",
-        "CL-a3cd2bba9a1d055b",
-        "CL-837c7d367f0c26ce"
-      ],
-      "source_refs": [
-        "SA-c532d10bfc903c0c"
-      ],
-      "data_date": "2026-07-17",
-      "status": "verified",
-      "subjectName": "Microsoft",
-      "objectName": "Visual Studio Code 1.129",
-      "predicateLabel": "发布",
-      "title": "Microsoft 发布 Visual Studio Code 1.129",
-      "eventTitle": "微软发布 Visual Studio Code 1.129 正式版更新，现代 UI 抢先看",
-      "eventDate": "2026-07-16",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-4154aa4e461163c9",
-          "subject": "微软",
-          "object": "Visual Studio Code 1.129 正式版更新，现代 UI 抢先看",
-          "quote": "现代 UI 抢先看：微软发布 Visual Studio Code 1.129 正式版更新，AI Agent 能力加强 - IT之家"
-        },
-        {
-          "id": "CL-a3cd2bba9a1d055b",
-          "subject": "微软",
-          "object": "Visual Studio Code 1.129 正式版更新，现代 UI 抢先看",
-          "quote": "现代 UI 抢先看：微软发布 Visual Studio Code 1.129 正式版更新，AI Agent 能力加强"
-        },
-        {
-          "id": "CL-837c7d367f0c26ce",
-          "subject": "微软",
-          "object": "Visual Studio Code 1.129 正式版更新，现代 UI 抢先看",
-          "quote": "IT之家 7 月 16 日消息，微软今日发布了 Visual Studio Code 1.129 版本。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-c532d10bfc903c0c",
-          "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/977/469.htm"
-        }
-      ],
-      "sourceExcerpt": "现代 UI 抢先看：微软发布 Visual Studio Code 1.129 正式版更新，AI Agent 能力加强 - IT之家",
-      "event": {
-        "id": "EV-7c899d5decafc42f",
-        "title": "微软发布 Visual Studio Code 1.129 正式版更新，现代 UI 抢先看",
-        "originalTitle": "",
-        "date": "2026-07-16",
-        "dataDate": "2026-07-17",
-        "eventTypeLabel": "产品发布"
       }
     },
     {
@@ -10996,6 +10863,76 @@
       }
     },
     {
+      "relationship_id": "REL2-07a456f751e0fa1e",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-968e2d5b08687bf4",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-c70eca6b0f88f44d",
+      "object_type": "entity",
+      "event_id": "EV-ef6464cf7f764835",
+      "claim_refs": [
+        "CL-333f401c6ab2ae9f",
+        "CL-8391abb623f3be4c",
+        "CL-56c99a19783adaa4",
+        "CL-ec9a12a611300175"
+      ],
+      "source_refs": [
+        "SA-d60a7482c4c7a18b"
+      ],
+      "data_date": "2026-07-03",
+      "status": "verified",
+      "subjectName": "Samsung",
+      "objectName": "Anthropic",
+      "predicateLabel": "合作",
+      "title": "Samsung 合作 Anthropic",
+      "eventTitle": "Anthropic 与三星洽谈定制芯片合作",
+      "eventDate": "2026-07-03",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-333f401c6ab2ae9f",
+          "subject": "Anthropic 与三星洽谈定制芯片",
+          "object": "On Thursday, The Information reported that Anthropic was in contact with Samsung to explore a collaboration around the pending chip. However, Anthropic hasn’t yet decided what the chip will be used for, how it will fit into the server, or how powerful it will be, according to the report.",
+          "quote": "On Thursday, The Information reported that Anthropic was in contact with Samsung to explore a collaboration around the pending chip. However, Anthropic hasn’t yet decided what the chip will be used for, how it will fit into the server, or how powerful it will be, according to the report."
+        },
+        {
+          "id": "CL-8391abb623f3be4c",
+          "subject": "Anthropic 与三星洽谈定制芯片",
+          "object": "When reached for comment, Anthropic told TechCrunch that a diversified hardware stack that includes chips from Google, Amazon, and Nvidia will continue to be pivotal to its compute strategy. On the topic of a potential Samsung partnership, the company said it had nothing further to add.",
+          "quote": "When reached for comment, Anthropic told TechCrunch that a diversified hardware stack that includes chips from Google, Amazon, and Nvidia will continue to be pivotal to its compute strategy. On the topic of a potential Samsung partnership, the company said it had nothing further to add."
+        },
+        {
+          "id": "CL-56c99a19783adaa4",
+          "subject": "Anthropic 与三星洽谈定制芯片",
+          "object": "A number of AI companies have sought to develop custom chips — both as a way to create unique hardware for specific compute tasks and to gain a certain amount of independence from Nvidia, which continues to be the undisputed leader of the chip industry.",
+          "quote": "A number of AI companies have sought to develop custom chips — both as a way to create unique hardware for specific compute tasks and to gain a certain amount of independence from Nvidia, which continues to be the undisputed leader of the chip industry."
+        },
+        {
+          "id": "CL-ec9a12a611300175",
+          "subject": "Anthropic 与三星洽谈定制芯片",
+          "object": "Anthropic’s announcement may also be a response to one made last week by its key competitor, OpenAI, which has teamed up with Broadcom to announce its own custom-built inference processor, dubbed “Jalapeño.” OpenAI says that the chip is more efficient, demonstrating better performance-per-watt, than other competitor chips. Amazon and Google both offer custom-built TPUs as part of their cloud offering.",
+          "quote": "Anthropic’s announcement may also be a response to one made last week by its key competitor, OpenAI, which has teamed up with Broadcom to announce its own custom-built inference processor, dubbed “Jalapeño.” OpenAI says that the chip is more efficient, demonstrating better performance-per-watt, than other competitor chips. Amazon and Google both offer custom-built TPUs as part of their cloud offering."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-d60a7482c4c7a18b",
+          "publisher": "TechCrunch：AI（RSS）",
+          "url": "https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung"
+        }
+      ],
+      "sourceExcerpt": "On Thursday, The Information reported that Anthropic was in contact with Samsung to explore a collaboration around the pending chip. However, Anthropic hasn’t yet decided what the chip will be used for, how it will fit into the server, or how powerful it will be, according to the report.",
+      "event": {
+        "id": "EV-ef6464cf7f764835",
+        "title": "Anthropic 与三星洽谈定制芯片合作",
+        "originalTitle": "",
+        "date": "2026-07-03",
+        "dataDate": "2026-07-03",
+        "eventTypeLabel": "合作"
+      }
+    },
+    {
       "relationship_id": "REL2-a29518b4e034cde5",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bdedcf7e3b01508b",
@@ -13912,6 +13849,69 @@
         "title": "英伟达发布业界首个全栈物理 AI 安全系统 Halos for Robotics",
         "originalTitle": "",
         "date": "2026-06-22",
+        "dataDate": "2026-06-23",
+        "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-171c0b5e7e3fda33",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-968e2d5b08687bf4",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d84c1d1c315bc2f8",
+      "object_type": "entity",
+      "event_id": "EV-9b29acd28643e9d1",
+      "claim_refs": [
+        "CL-3088dff95dd16d25",
+        "CL-e32b273519e183f6",
+        "CL-9b6df01dd258eb44"
+      ],
+      "source_refs": [
+        "SA-3c73c5563433827e"
+      ],
+      "data_date": "2026-06-23",
+      "status": "verified",
+      "subjectName": "Samsung",
+      "objectName": "UFS 5.0",
+      "predicateLabel": "发布",
+      "title": "Samsung 发布 UFS 5.0",
+      "eventTitle": "三星推出行业最快 UFS 5.0 解决方案：带宽达 10.8GB/s，赋能端侧 AI",
+      "eventDate": "2026-06-23",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-3088dff95dd16d25",
+          "subject": "三星",
+          "object": "行业最快 UFS 5.0 解决方案：带宽达 10.8GB/s，赋能端侧 AI",
+          "quote": "三星将于今年第四季度启动 UFS 5.0 量产，推出最高 1TB 的多种容量版本。"
+        },
+        {
+          "id": "CL-e32b273519e183f6",
+          "subject": "三星",
+          "object": "行业最快 UFS 5.0 解决方案：带宽达 10.8GB/s，赋能端侧 AI",
+          "quote": "IT之家 6 月 23 日消息，三星电子今日宣布，其率先研发出了行业最快的通用闪存存储（UFS）5.0 解决方案，该产品将为新一代移动终端流畅、高效地运行各类人工智能服务提供支撑。"
+        },
+        {
+          "id": "CL-9b6df01dd258eb44",
+          "subject": "三星",
+          "object": "行业最快 UFS 5.0 解决方案：带宽达 10.8GB/s，赋能端侧 AI",
+          "quote": "三星 UFS 5.0 遵循联合电子设备工程委员会（JEDEC）最新嵌入式存储接口规范，拥有行业顶尖性能，最高带宽可达 10.8GB/s。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-3c73c5563433827e",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/967/255.htm"
+        }
+      ],
+      "sourceExcerpt": "三星将于今年第四季度启动 UFS 5.0 量产，推出最高 1TB 的多种容量版本。",
+      "event": {
+        "id": "EV-9b29acd28643e9d1",
+        "title": "三星推出行业最快 UFS 5.0 解决方案：带宽达 10.8GB/s，赋能端侧 AI",
+        "originalTitle": "",
+        "date": "2026-06-23",
         "dataDate": "2026-06-23",
         "eventTypeLabel": "产品发布"
       }
@@ -20563,69 +20563,6 @@
         "date": "2026-05-25",
         "dataDate": "2026-05-25",
         "eventTypeLabel": "产品发布"
-      }
-    },
-    {
-      "relationship_id": "REL2-9795f8e6814470a6",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-10fce287b4b1464c",
-      "object_type": "entity",
-      "event_id": "EV-a4f052325d0ef230",
-      "claim_refs": [
-        "CL-4c50bbc497deaee1",
-        "CL-25b9389df0e0f06f",
-        "CL-eece65ce191fb7c6"
-      ],
-      "source_refs": [
-        "SA-af9b5cefb039de38"
-      ],
-      "data_date": "2026-05-23",
-      "status": "verified",
-      "subjectName": "Microsoft",
-      "objectName": "Fara1.5",
-      "predicateLabel": "发布",
-      "title": "Microsoft 发布 Fara1.5",
-      "eventTitle": "微软推出 Fara1.5 系列浏览器 AI 智能体模型，72% 任务成功率超 OpenAI Operator",
-      "eventDate": "2026-05-23",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-4c50bbc497deaee1",
-          "subject": "微软",
-          "object": "，72% 任务成功率超 OpenAI Operator",
-          "quote": "IT之家 5 月 23 日消息，微软研究院 AI Frontiers 实验室最新发布 Fara1.5 系列模型，主要适用于浏览器场景下的计算机使用智能体， 涵盖 4B、9B 和 27B 三个参数规模版本。"
-        },
-        {
-          "id": "CL-25b9389df0e0f06f",
-          "subject": "微软",
-          "object": "，72% 任务成功率超 OpenAI Operator",
-          "quote": "Fara1.5 采用 Qwen3.5 基础检查点，使用“观察 — 思考 — 行动”循环。"
-        },
-        {
-          "id": "CL-eece65ce191fb7c6",
-          "subject": "微软",
-          "object": "，72% 任务成功率超 OpenAI Operator",
-          "quote": "对比来看，OpenAI Operator 为 58.3%，Gemini 2.5 Computer Use 为 57.3%，Yutori Navigator n1 为 64.7%，Fara1.5-9B 也达到 63.4%。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-af9b5cefb039de38",
-          "publisher": "IT之家（RSS）",
-          "url": "https://www.ithome.com/0/954/266.htm"
-        }
-      ],
-      "sourceExcerpt": "IT之家 5 月 23 日消息，微软研究院 AI Frontiers 实验室最新发布 Fara1.5 系列模型，主要适用于浏览器场景下的计算机使用智能体， 涵盖 4B、9B 和 27B 三个参数规模版本。",
-      "event": {
-        "id": "EV-a4f052325d0ef230",
-        "title": "微软推出 Fara1.5 系列浏览器 AI 智能体模型，72% 任务成功率超 OpenAI Operator",
-        "originalTitle": "",
-        "date": "2026-05-23",
-        "dataDate": "2026-05-23",
-        "eventTypeLabel": "模型发布"
       }
     },
     {
