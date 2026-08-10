@@ -101,20 +101,44 @@ export function writeRecurringIncidents(root, endDate, issues) {
   const inboxDir = path.join(root, "agent-workflow", "inbox", "production-incidents");
   fs.mkdirSync(inboxDir, { recursive: true });
   const existingOpen = new Map();
+  const resolvedCoverage = new Map();
   for (const entry of fs.readdirSync(inboxDir, { withFileTypes: true })) {
     if (!entry.isFile() || !entry.name.endsWith(".md")) continue;
     const file = path.join(inboxDir, entry.name);
     const text = fs.readFileSync(file, "utf8");
-    if (!/^status:\s*open\s*$/imu.test(text)) continue;
+    const status = text.match(/^status:\s*(.+)$/imu)?.[1]?.trim();
     const fingerprint = text.match(/^fingerprint:\s*(.+)$/imu)?.[1]?.trim();
-    if (fingerprint) existingOpen.set(fingerprint, file);
+    if (!fingerprint) continue;
+    if (status === "open") {
+      existingOpen.set(fingerprint, file);
+      continue;
+    }
+    if (status !== "resolved") continue;
+    const occurrenceDates = new Set(
+      String(text.match(/^occurrence_dates:\s*(.*)$/imu)?.[1] || "")
+        .split(",")
+        .map((value) => value.trim())
+        .filter(Boolean),
+    );
+    if (!occurrenceDates.size) continue;
+    const coverage = resolvedCoverage.get(fingerprint) || [];
+    coverage.push({ file, occurrenceDates });
+    resolvedCoverage.set(fingerprint, coverage);
   }
 
   const created = [];
   const existing = [];
+  const coveredByResolved = [];
   for (const issue of issues) {
     if (existingOpen.has(issue.fingerprint)) {
       existing.push(path.relative(root, existingOpen.get(issue.fingerprint)).replace(/\\/gu, "/"));
+      continue;
+    }
+    const resolved = (resolvedCoverage.get(issue.fingerprint) || []).find((item) =>
+      issue.dates.every((date) => item.occurrenceDates.has(date))
+    );
+    if (resolved) {
+      coveredByResolved.push(path.relative(root, resolved.file).replace(/\\/gu, "/"));
       continue;
     }
     const file = path.join(
@@ -153,7 +177,7 @@ export function writeRecurringIncidents(root, endDate, issues) {
     fs.writeFileSync(file, body, "utf8");
     created.push(path.relative(root, file).replace(/\\/gu, "/"));
   }
-  return { created, existing };
+  return { created, existing, coveredByResolved };
 }
 
 function main() {
@@ -172,6 +196,7 @@ function main() {
     recurring_issues: issues.length,
     created: files.created,
     existing: files.existing,
+    covered_by_resolved: files.coveredByResolved,
   }, null, 2));
 }
 

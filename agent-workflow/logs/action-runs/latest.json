@@ -1,48 +1,34 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-10T03:14:35.186Z",
+  "generated_at": "2026-08-10T10:36:21.866Z",
   "date": "2026-08-10",
-  "action": "Complete stepwise daily production and deployment",
+  "action": "Recurring production incident deduplication",
   "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
   "status": "success",
-  "summary": "Reused accepted 2026-08-10 intake from failed run 31350045028, repaired URL-less SourceArtifact identity, generated and published financing card, refreshed afternoon Follow-Builders independently, merged outputs, and verified live deployment.",
+  "summary": "Prevented resolved historical occurrence windows from reopening duplicate incidents while preserving reopen behavior for new dates",
   "contexts": [],
   "changed_files": [
-    "AGENTS.md",
-    "agent-workflow/tools/build-data-center-v4.mjs",
-    "agent-workflow/tools/tests/data-center-v4.test.mjs",
-    "01-SiteV2/content/12-applications/funding-insights/2026-08-10.json",
-    "01-SiteV2/content/07-points/2026-08-10-builders-viewpoints.md"
+    "agent-workflow/tools/write-recurring-production-incidents.mjs",
+    "agent-workflow/tools/tests/recurring-production-incidents.test.mjs"
   ],
-  "outputs": [
-    "run:31351449489",
-    "pr:580",
-    "follow_builders_pr:582",
-    "merge:c2b3a40006678a11970a6dbf5d8d3c9b21a41a71",
-    "pages:31351907118"
-  ],
+  "outputs": [],
   "checks": [
-    "source collection skipped on resumed run",
-    "V4/funding/trend/opportunity/operations/pre-commit gates passed",
-    "Pages live HTTP 200",
-    "workspace audit ok"
+    "recurring production incident tests passed",
+    "real 2026-08-10 runtime integration created zero incidents",
+    "open incident queue count is zero"
   ],
   "issues": [
-    "Initial resumed build exposed URL-less SourceArtifact identity drift"
+    "five resolved incident fingerprints were recreated from historical report windows"
   ],
-  "risks": [
-    "External WeCom worktree remains intentionally preserved because it has unique unmerged commit"
-  ],
+  "risks": [],
   "lessons": [
-    "Resume from accepted intake and repair only the failing stage; independent viewpoint lanes run separately"
+    "deduplicate recurring incidents by fingerprint and resolved occurrence-date coverage"
   ],
   "reusable_rules": [
-    "Never recollect accepted same-date raw artifacts for downstream failures"
+    "a resolved incident suppresses only occurrence dates already covered; any new date reopens the fingerprint"
   ],
   "retired_flags": [],
-  "notes": [
-    "Funding frontstage latest_date=2026-08-10 card_count=236; live V4 currentDate=2026-08-10 events=1969 fde=111"
-  ]
+  "notes": []
 }
