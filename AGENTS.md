@@ -113,6 +113,7 @@ Rules:
 - Targeted company, product, funding, and deployment backfill is an operational discovery queue. Search results remain leads until original-source capture, exact-span Claim extraction, and the responsible V4 gate pass.
 - Same-date accepted collection is immutable reusable input: when source collection and the monitor quality gate have succeeded, any downstream retry must restore that artifact and must not recollect.
 - Recollection is allowed only when the accepted artifact is missing or expired, the monitor quality gate did not pass, or the user explicitly requests recollection. The workflow/report must record the applicable reason.
+- **Stepwise recovery is mandatory:** never restart the complete collection-and-production pipeline merely because a downstream stage failed. Restore the latest accepted intake/raw artifact, identify the first failed stage, repair or rerun only that stage and its dependent stages, and preserve successful upstream outputs. Each retry must state the reused artifact/run and the stage being resumed; a full recollection requires an explicit, recorded exception under the rule above.
 
 ### Historical V3 Recovery
 

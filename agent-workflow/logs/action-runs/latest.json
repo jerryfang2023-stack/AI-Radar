@@ -1,33 +1,37 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-10T02:43:30.230Z",
+  "generated_at": "2026-08-10T02:56:28.026Z",
   "date": "2026-08-10",
-  "action": "Fix hydrated original URL identity drift",
+  "action": "Enforce stepwise recovery without recollection",
   "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
   "status": "partial",
-  "summary": "A second production run showed private hydration also retained a stale original_url that took precedence over the intake source URL; bind original_url as well as source_url/content_hash",
+  "summary": "Documented and applied the rule that downstream retries must restore accepted same-date intake and resume at the first failed stage instead of recollecting raw sources.",
   "contexts": [],
   "changed_files": [
-    "agent-workflow/tools/lib/source-intake-v1.mjs"
+    "AGENTS.md"
   ],
-  "outputs": [],
+  "outputs": [
+    "resume_run_id:31350045028"
+  ],
   "checks": [
-    "source-intake tests 11/11 previously passed"
+    "cancelled duplicate collection run 31350578432"
   ],
   "issues": [
-    "build-data-center-v4 rejected RAW-71b766e48d48981a with SourceArtifact identity drift after source_url/content_hash binding"
+    "Repeated full collection wastes time and violates immutable accepted input rule"
   ],
   "risks": [
-    "one more production validation run required"
+    "Resume workflow still requires remote artifact availability"
   ],
   "lessons": [
-    "all URL aliases used by SourceArtifact hashing must come from the intake envelope"
+    "Repair the first failing stage and preserve successful upstream artifacts"
   ],
   "reusable_rules": [
-    "never let hydrated raw original_url override structured intake identity"
+    "Do not recollect accepted same-date source artifacts on downstream retry"
   ],
   "retired_flags": [],
-  "notes": []
+  "notes": [
+    "Next production retry will use workflow resume_run_id and verify collection step is skipped"
+  ]
 }
