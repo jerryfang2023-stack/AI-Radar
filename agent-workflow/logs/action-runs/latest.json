@@ -1,38 +1,34 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-10T02:14:52.045Z",
+  "generated_at": "2026-08-10T02:31:31.884Z",
   "date": "2026-08-10",
-  "action": "Fix funding card publication validation",
+  "action": "Fix structured intake identity drift",
   "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
   "status": "partial",
-  "summary": "Final funding-card validation rejected two auto_published queue entries because canonical event evidence was not cited; normalized canonical quote matching and explicit blocked status prevent silent card drops",
+  "summary": "Production rebuild failed when hydrated private RawDocument metadata recomputed a different SourceArtifact identity; bind URL and content hash to the structured intake envelope before V4 ID checks",
   "contexts": [],
   "changed_files": [
-    "agent-workflow/tools/generate-funding-insights-deepseek.mjs",
-    "agent-workflow/tools/funding-insight-v1-utils.mjs",
-    "agent-workflow/tools/tests/funding-insight-v1.test.mjs"
+    "agent-workflow/tools/lib/source-intake-v1.mjs",
+    "agent-workflow/tools/tests/source-intake-v1.test.mjs"
   ],
   "outputs": [],
   "checks": [
-    "local generator rerun exposed canonical_event_source_not_cited",
-    "node --check"
+    "source-intake tests 11/11",
+    "pipeline policy gate"
   ],
   "issues": [
-    "generator reported auto_published before final fundingInsightProblems filter",
-    "canonical evidence quote matching was too literal"
+    "build-data-center-v4 rejected RAW-066aeb84f5b7c2bf with structured intake SourceArtifact identity drift"
   ],
   "risks": [
-    "8/10 financing cards remain blocked until a production rerun confirms canonical private evidence hydration"
+    "another production rerun is required to validate the identity fix and generate funding cards"
   ],
   "lessons": [
-    "validate the fully normalized card before marking auto_published",
-    "canonical accepted claims may require whitespace-normalized quote matching"
+    "private evidence hydration must not change structured intake identity"
   ],
   "reusable_rules": [
-    "final publication status must reflect the same card object consumed by assert-funding-insights-v1",
-    "canonical evidence checks must tolerate deterministic source-text whitespace normalization"
+    "recompute SourceArtifact IDs from the authoritative intake URL and content hash envelope"
   ],
   "retired_flags": [],
   "notes": []

@@ -237,6 +237,9 @@ test("SOURCE-INTAKE-V1 preserves stable source identity and immutable body refer
   const loaded = loadSourceIntakeEntries(root, date);
   assert.equal(loaded.entries.length, 1);
   assert.equal(loaded.entries[0].raw.original_url, record.original_url);
+  assert.equal(loaded.entries[0].raw.source_url, intake.raw_documents[0].source_url);
+  assert.equal(loaded.entries[0].raw.canonical_url, intake.raw_documents[0].canonical_url);
+  assert.equal(loaded.entries[0].raw.content_hash, intake.raw_documents[0].content_hash);
   assert.equal(loaded.entries[0].raw.title, intake.raw_documents[0].title_original);
   assert.equal(loaded.entries[0].raw.title_zh, intake.raw_documents[0].title_zh);
   assert.equal(loaded.entries[0].raw.published_at, record.published_at);

@@ -71,6 +71,12 @@ function applyIntakeTitleMetadata(raw = {}, document = {}) {
   const marketScope = document.market_scope || {};
   return {
     ...raw,
+    // The structured intake is the authoritative identity envelope. Private
+    // hydration may restore an older/raw-shaped record, so keep URL and
+    // content identity bound to the intake artifact before V4 recomputes IDs.
+    source_url: clean(document.source_url) || clean(raw.source_url) || clean(raw.original_url),
+    canonical_url: clean(document.canonical_url) || clean(raw.canonical_url) || clean(raw.source_url),
+    content_hash: clean(document.content_hash) || clean(raw.content_hash),
     title: clean(document.title_original) || clean(raw.title),
     title_zh: clean(document.title_zh) || clean(raw.title_zh),
     published_at: clean(document.published_at) || clean(raw.published_at),
