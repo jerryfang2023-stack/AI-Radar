@@ -6,10 +6,10 @@
     "opportunityMapVersion": "OMAP-V2.0.0-v4-evidence",
     "directionCardVersion": "DIRECTION-CARD-V2.0-v4-evidence",
     "taxonomyVersion": "TAG-V4.1",
-    "activeDate": "2026-08-09",
-    "generatedAt": "2026-08-09T00:00:00.000Z",
+    "activeDate": "2026-08-10",
+    "generatedAt": "2026-08-10T00:00:00.000Z",
     "windowDays": 30,
-    "evidenceCount": 809,
+    "evidenceCount": 811,
     "directionCardCount": 2,
     "sourceAdapter": "data-center-v4-canonical"
   },
@@ -22,7 +22,7 @@
       "title": "Rivian如何利用Amazon Bedrock上的AI智能体加速财务运营",
       "category": "case",
       "categoryLabel": "案例",
-      "date": "2026-08-09",
+      "date": "2026-08-10",
       "event_time": "2026-08-06T14:47:22.000Z",
       "sourceUrl": "https://aws.amazon.com/blogs/awsforsap/how-rivian-accelerated-finance-operations-with-ai-agents-on-amazon-bedrock/",
       "sourceName": "keyword search / Anysearch",
@@ -43,7 +43,7 @@
         }
       ],
       "claim_refs": [
-        "CL-8dec335ce53d0164"
+        "CL-6ee5b08f4dd238b1"
       ],
       "source_refs": [
         "SA-163b94a43f4b713b"
@@ -58,7 +58,7 @@
         "product_form": [
           {
             "value_id": "workflow_automation",
-            "claim_ref": "CL-8dec335ce53d0164",
+            "claim_ref": "CL-6ee5b08f4dd238b1",
             "source_refs": [
               "SA-163b94a43f4b713b"
             ],
@@ -69,7 +69,7 @@
         "business_action": [
           {
             "value_id": "customer_deployment",
-            "claim_ref": "CL-8dec335ce53d0164",
+            "claim_ref": "CL-6ee5b08f4dd238b1",
             "source_refs": [
               "SA-163b94a43f4b713b"
             ],
@@ -89,6 +89,1106 @@
           "delivery_model": [],
           "business_action": [
             "customer_deployment"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-323d98437e42e8b3",
+      "event_id": "EV-323d98437e42e8b3",
+      "event_type": "partnership",
+      "publication_status": "verified",
+      "title": "Kuehne+Nagel 与 HappyRobot 签署战略合作，将 AI 智能体部署到全球空运业务",
+      "category": "case",
+      "categoryLabel": "案例",
+      "date": "2026-08-10",
+      "event_time": "",
+      "sourceUrl": "https://www.happyrobot.ai/customer-story/kuehne-nagel",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "HappyRobot",
+      "sourceExcerpt": "HappyRobot, the enterprise platform for AI workers in complex operational environments, and Kuehne+Nagel, one of the world's leading logistics providers, have entered a strategic partnership to deploy AI workers across Kuehne+Nagel's global Air Logistics division.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-12bb49e1b12281f4",
+          "canonical_name": "HappyRobot",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-3cf54cf65742bbe6"
+      ],
+      "source_refs": [
+        "SA-ba31591f78df9868"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "partnership_integration",
+            "claim_ref": "CL-3cf54cf65742bbe6",
+            "source_refs": [
+              "SA-ba31591f78df9868"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "partnership_integration"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-6af526d687d9f737",
+      "event_id": "EV-6af526d687d9f737",
+      "event_type": "procurement_contract",
+      "publication_status": "verified",
+      "title": "Kakao赢得政府AI智能体平台合同，加速生态系统扩张",
+      "category": "case",
+      "categoryLabel": "案例",
+      "date": "2026-08-10",
+      "event_time": "2026-08-06T04:30:30.000Z",
+      "sourceUrl": "https://www.digitaltoday.co.kr/en/view/90051/kakao-wins-government-ai-agent-platform-contract-steps-up-ecosystem-expansion",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "Kakao",
+      "sourceExcerpt": "Kakao said on Wednesday it was selected to carry out the AI Agent Marketplace Development Support Project, overseen by the Ministry of Science and ICT and managed by the National Information Society Agency (NIA).",
+      "entity_refs": [
+        {
+          "entity_id": "EN-30cd4a85fc09f695",
+          "canonical_name": "Kakao",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-f61dacf9330021bf"
+      ],
+      "source_refs": [
+        "SA-131c21b69b34a652"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "agentic_execution",
+          "value_name": "智能体执行",
+          "entity_ids": [
+            "EN-30cd4a85fc09f695"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "procurement_signal",
+            "claim_ref": "CL-f61dacf9330021bf",
+            "source_refs": [
+              "SA-131c21b69b34a652"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "procurement_signal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-83d022f89ba29209",
+      "event_id": "EV-83d022f89ba29209",
+      "event_type": "procurement_contract",
+      "publication_status": "verified",
+      "title": "Volta 选择戴尔科技助力构建下一代 AI 工厂",
+      "category": "case",
+      "categoryLabel": "案例",
+      "date": "2026-08-10",
+      "event_time": "2026-08-04T00:00:00.000Z",
+      "sourceUrl": "https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~~usa~2026~08~volta-selects-dell-technologies-to-help-build-next-generation-ai-factories.htm",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "Volta",
+      "sourceExcerpt": "Its initial project will be an AI factory in Europe located in Norway that will comprise a 133 MW deployment powered by Dell Technologies AI infrastructure, including Dell PowerRack systems with PowerEdge XE9812 servers including NVIDIA accelerators.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-d25e715a1ce00764",
+          "canonical_name": "Volta",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-e49f30b730254d59",
+        "CL-7decf11e6812bad5"
+      ],
+      "source_refs": [
+        "SA-036fa74ea5c545f3"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "manufacturing",
+          "value_name": "制造业",
+          "entity_ids": [
+            "EN-d25e715a1ce00764"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "procurement_signal",
+            "claim_ref": "CL-e49f30b730254d59",
+            "source_refs": [
+              "SA-036fa74ea5c545f3"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "procurement_signal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-9d26b1683c2593c9",
+      "event_id": "EV-9d26b1683c2593c9",
+      "event_type": "partnership",
+      "publication_status": "verified",
+      "title": "ITJ 入选 OpenAI 合作伙伴网络精选合作伙伴",
+      "category": "case",
+      "categoryLabel": "案例",
+      "date": "2026-08-10",
+      "event_time": "2026-08-07T00:00:00.000Z",
+      "sourceUrl": "https://www.prweb.com/releases/itj-named-a-select-partner-in-the-openai-partner-network-302843430.html",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "ITJ",
+      "sourceExcerpt": "ITJ, an AI-ready nearshore software engineering partner for U.S. Life Sciences and Healthcare organizations, has been named a Select Partner in the OpenAI Partner Network.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-2d758c5d96b1497a",
+          "canonical_name": "ITJ",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-ddf804229102cc2c"
+      ],
+      "source_refs": [
+        "SA-dc72955af7041aa7"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "healthcare_life_sciences",
+          "value_name": "医疗与生命科学",
+          "entity_ids": [
+            "EN-2d758c5d96b1497a"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [
+          {
+            "value_id": "engineering_team",
+            "claim_ref": "CL-ddf804229102cc2c",
+            "source_refs": [
+              "SA-dc72955af7041aa7"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "team_or_function": [
+          {
+            "value_id": "engineering",
+            "claim_ref": "CL-ddf804229102cc2c",
+            "source_refs": [
+              "SA-dc72955af7041aa7"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "partnership_integration",
+            "claim_ref": "CL-ddf804229102cc2c",
+            "source_refs": [
+              "SA-dc72955af7041aa7"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [
+            "engineering_team"
+          ],
+          "team_or_function": [
+            "engineering"
+          ],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "partnership_integration"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-9fa7757568f0524e",
+      "event_id": "EV-9fa7757568f0524e",
+      "event_type": "procurement_contract",
+      "publication_status": "verified",
+      "title": "仙人掌获MeitY合同，构建AI招标撰写平台",
+      "category": "case",
+      "categoryLabel": "案例",
+      "date": "2026-08-10",
+      "event_time": "",
+      "sourceUrl": "https://www.constructionworld.in/policy-updates-and-economic-news/cactus-wins-meity-contract-to-build-ai-tender-authoring-platform/94631",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "keyword search / Anysearch",
+      "sourceExcerpt": "Cactus Wins MeitY Contract To Build AI Tender Authoring Platform",
+      "entity_refs": [],
+      "claim_refs": [
+        "CL-62489bf73ce7aa44",
+        "CL-b291f724f40b7aa7",
+        "CL-c6127b43790e3e74",
+        "CL-b564bb5b27836b84"
+      ],
+      "source_refs": [
+        "SA-2a5bf3857465a2fb"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [
+          {
+            "value_id": "cost_monitoring",
+            "claim_ref": "CL-b564bb5b27836b84",
+            "source_refs": [
+              "SA-2a5bf3857465a2fb"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "pain_or_constraint": [
+          {
+            "value_id": "api_cost_spike",
+            "claim_ref": "CL-b564bb5b27836b84",
+            "source_refs": [
+              "SA-2a5bf3857465a2fb"
+            ],
+            "provenance": "exact_claim_rule"
+          },
+          {
+            "value_id": "evaluation_gap",
+            "claim_ref": "CL-b564bb5b27836b84",
+            "source_refs": [
+              "SA-2a5bf3857465a2fb"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "procurement_signal",
+            "claim_ref": "CL-62489bf73ce7aa44",
+            "source_refs": [
+              "SA-2a5bf3857465a2fb"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [
+            "cost_monitoring"
+          ],
+          "pain_or_constraint": [
+            "api_cost_spike",
+            "evaluation_gap"
+          ],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "procurement_signal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-2449fe665b666581",
+      "event_id": "EV-2449fe665b666581",
+      "event_type": "capital_investment",
+      "publication_status": "verified",
+      "title": "AI的能源需求推动英伟达和亚马逊投入数十亿美元建设大规模电力基础设施",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-08-10",
+      "event_time": "2026-08-09T09:26:28.000Z",
+      "sourceUrl": "https://the-decoder.com/ais-energy-appetite-drives-nvidia-and-amazon-to-pour-billions-into-massive-power-infrastructure/",
+      "sourceName": "The Decoder AI News",
+      "subject": "NVIDIA",
+      "sourceExcerpt": "Nvidia is investing up to $3 billion in Lancium, a power infrastructure developer that already has four gigawatts under contract in Texas.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-cbc62794911ff31b",
+          "canonical_name": "Amazon",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-ba670bf9946c0776"
+      ],
+      "source_refs": [
+        "SA-7a38dd660317d0e3"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [
+          {
+            "value_id": "engineering_team",
+            "claim_ref": "CL-ba670bf9946c0776",
+            "source_refs": [
+              "SA-7a38dd660317d0e3"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "team_or_function": [
+          {
+            "value_id": "engineering",
+            "claim_ref": "CL-ba670bf9946c0776",
+            "source_refs": [
+              "SA-7a38dd660317d0e3"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "specific_task": [
+          {
+            "value_id": "internal_tool_building",
+            "claim_ref": "CL-ba670bf9946c0776",
+            "source_refs": [
+              "SA-7a38dd660317d0e3"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-ba670bf9946c0776",
+            "source_refs": [
+              "SA-7a38dd660317d0e3"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [
+            "engineering_team"
+          ],
+          "team_or_function": [
+            "engineering"
+          ],
+          "specific_task": [
+            "internal_tool_building"
+          ],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-b116eafe60d71fbe",
+      "event_id": "EV-b116eafe60d71fbe",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "光网络初创公司Lumilens以9亿美元资金启动",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-08-10",
+      "event_time": "2026-08-06T00:00:00.000Z",
+      "sourceUrl": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding/",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "Optical networking startup Lumilens",
+      "sourceExcerpt": "Optical networking startup Lumilens launches with $900M in funding",
+      "entity_refs": [
+        {
+          "entity_id": "EN-373da2ec629326c0",
+          "canonical_name": "Optical networking startup Lumilens",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-a4ae746b11369c98",
+          "canonical_name": "Lumilens Inc.",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-457e526cee53a188",
+        "CL-50d1b19a11234467",
+        "CL-1336bae32ee20b27",
+        "CL-a020fd9fb94d8088"
+      ],
+      "source_refs": [
+        "SA-ac115da9da6dfd33"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-457e526cee53a188",
+            "source_refs": [
+              "SA-ac115da9da6dfd33"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-cfbfc6c80338aa12",
+      "event_id": "EV-cfbfc6c80338aa12",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "谷歌瞄准Mechanize的15亿美元投资，这家初创公司103天前刚筹集了910万美元种子轮",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-08-10",
+      "event_time": "2026-08-06T13:57:00.000Z",
+      "sourceUrl": "https://dealroom.co/news/143496-google-eyes-1-5b-for-mechanize-a-startup-that-raised-9-1m-seed-103-days/",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "Google",
+      "sourceExcerpt": "News › Google eyes $1.5B for Mechanize, a startup that raised $9.1M…",
+      "entity_refs": [
+        {
+          "entity_id": "EN-bbdefa2950f49882",
+          "canonical_name": "Google",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-7ebe9a17c4d4c271",
+          "canonical_name": "Google eyes $1.5B for Mechanize, a startup that",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-ac563d56704781af",
+        "CL-b972941b9dbb76e3",
+        "CL-a60b5f9743976689",
+        "CL-7fe425ff85fe4844"
+      ],
+      "source_refs": [
+        "SA-31e8df56c8eee877"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "agentic_execution",
+          "value_name": "智能体执行",
+          "entity_ids": [
+            "EN-7ebe9a17c4d4c271"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [
+          {
+            "value_id": "internal_tool_building",
+            "claim_ref": "CL-7fe425ff85fe4844",
+            "source_refs": [
+              "SA-31e8df56c8eee877"
+            ],
+            "provenance": "exact_claim_rule"
+          },
+          {
+            "value_id": "knowledge_base_qa",
+            "claim_ref": "CL-7fe425ff85fe4844",
+            "source_refs": [
+              "SA-31e8df56c8eee877"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "pain_or_constraint": [
+          {
+            "value_id": "evaluation_gap",
+            "claim_ref": "CL-7fe425ff85fe4844",
+            "source_refs": [
+              "SA-31e8df56c8eee877"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-ac563d56704781af",
+            "source_refs": [
+              "SA-31e8df56c8eee877"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [
+            "internal_tool_building",
+            "knowledge_base_qa"
+          ],
+          "pain_or_constraint": [
+            "evaluation_gap"
+          ],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-47c32b3ef5c0f57a",
+      "event_id": "EV-47c32b3ef5c0f57a",
+      "event_type": "product_release",
+      "publication_status": "verified",
+      "title": "OpenAI 发布说明 - 2026年8月最新更新 - Releasebot",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-10",
+      "event_time": "",
+      "sourceUrl": "https://releasebot.io/updates/openai",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "OpenAI",
+      "sourceExcerpt": "This foundation powers a growing range of capabilities in ChatGPT Voice, including the newly launched ability to control your computer and coordinate your agents in the ChatGPT desktop app.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-95ac2aa8df3b3c0b",
+          "canonical_name": "August 2026 Latest Updates",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-d7e16fc98430b26b"
+      ],
+      "source_refs": [
+        "SA-f671332f8768d05c"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-d7e16fc98430b26b",
+            "source_refs": [
+              "SA-f671332f8768d05c"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-59b7ba3d079ad09a",
+      "event_id": "EV-59b7ba3d079ad09a",
+      "event_type": "research_result",
+      "publication_status": "verified",
+      "title": "当题库追不上模型，AI开始给自己出题：中国这支团队跑通了数据层RSI",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-10",
+      "event_time": "2026-08-09T03:40:25.000Z",
+      "sourceUrl": "https://www.qbitai.com/2026/08/468782.html",
+      "sourceName": "量子位",
+      "subject": "BigBang-V1",
+      "sourceExcerpt": "在这样的条件下，模型在长程搜索、代码、科学研究、AI研究等评测中， 拿下全部35B模型里的10项第一 。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-67582d74cdaaea52",
+          "canonical_name": "BigBang-V1",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-6f7ac1823da81d2e",
+          "canonical_name": "DeepSeek",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-26102ee736b0ead5",
+        "CL-73158a8669f7a22a"
+      ],
+      "source_refs": [
+        "SA-91d508a798b5975e"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [
+          {
+            "value_id": "internal_tool_building",
+            "claim_ref": "CL-26102ee736b0ead5",
+            "source_refs": [
+              "SA-91d508a798b5975e"
+            ],
+            "provenance": "exact_claim_rule"
+          },
+          {
+            "value_id": "knowledge_base_qa",
+            "claim_ref": "CL-26102ee736b0ead5",
+            "source_refs": [
+              "SA-91d508a798b5975e"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "pain_or_constraint": [
+          {
+            "value_id": "evaluation_gap",
+            "claim_ref": "CL-26102ee736b0ead5",
+            "source_refs": [
+              "SA-91d508a798b5975e"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "research_benchmark",
+            "claim_ref": "CL-26102ee736b0ead5",
+            "source_refs": [
+              "SA-91d508a798b5975e"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [
+            "internal_tool_building",
+            "knowledge_base_qa"
+          ],
+          "pain_or_constraint": [
+            "evaluation_gap"
+          ],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "research_benchmark"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-778072e4940c5d43",
+      "event_id": "EV-778072e4940c5d43",
+      "event_type": "product_release",
+      "publication_status": "verified",
+      "title": "Okta宣布新创新，在运行时保护AI智能体并自动化持续智能体治理",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-10",
+      "event_time": "",
+      "sourceUrl": "https://www.okta.com/newsroom/articles/okta-july-2026-product-innovations/",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "Okta",
+      "sourceExcerpt": "Customers can request access to Agent Gateway’s research release now.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-65819e198c32566a",
+          "canonical_name": "Okta",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-ea0a0d38a19ecbf4",
+          "canonical_name": "Agent Gateway",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-41e56a06f4c10fef",
+        "CL-d8a6b002e21c8353",
+        "CL-2e25084d39a1b78b"
+      ],
+      "source_refs": [
+        "SA-475ddb0d8c87c697"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "agentic_execution",
+          "value_name": "智能体执行",
+          "entity_ids": [
+            "EN-65819e198c32566a"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [
+          {
+            "value_id": "knowledge_base_qa",
+            "claim_ref": "CL-41e56a06f4c10fef",
+            "source_refs": [
+              "SA-475ddb0d8c87c697"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-41e56a06f4c10fef",
+            "source_refs": [
+              "SA-475ddb0d8c87c697"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [
+            "knowledge_base_qa"
+          ],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-876529ea321653b1",
+      "event_id": "EV-876529ea321653b1",
+      "event_type": "product_release",
+      "publication_status": "verified",
+      "title": "Glass推出首个面向A的合作采购市场",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-10",
+      "event_time": "2026-08-09T00:00:00.000Z",
+      "sourceUrl": "https://natlawreview.com/press-releases/glass-launches-first-cooperative-purchasing-marketplace-ai-solutions",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "Glass",
+      "sourceExcerpt": "FCC Adds Foreign-Produced Advanced Robotic Devices to the Covered List: Five Things to Know",
+      "entity_refs": [
+        {
+          "entity_id": "EN-132a1a391cce181c",
+          "canonical_name": "Glass",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-3a33a8f70f0a0237",
+          "canonical_name": "First Cooperative Purchasing Marketplace",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-e4d2f6a9921bc094",
+          "canonical_name": "Foreign-Produced Advanced Robotic Devices",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-7cb0069f5ac3317c",
+        "CL-29eb197992552db5",
+        "CL-2ed0f7a51b041ecf",
+        "CL-dccc62b1aa388702"
+      ],
+      "source_refs": [
+        "SA-92e825e058880621"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-7cb0069f5ac3317c",
+            "source_refs": [
+              "SA-92e825e058880621"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-93f80ce9ba35d382",
+      "event_id": "EV-93f80ce9ba35d382",
+      "event_type": "product_release",
+      "publication_status": "partial",
+      "title": "Anthropic 将 Claude Code 的自动模式设为默认选项",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-10",
+      "event_time": "2026-08-09T00:00:00.000Z",
+      "sourceUrl": "https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default",
+      "sourceName": "TechCrunch：AI（RSS）",
+      "subject": "Anthropic",
+      "sourceExcerpt": "Anthropic is turning Claude Code’s auto mode on by default",
+      "entity_refs": [
+        {
+          "entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_name": "Anthropic",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-cb4754c48f8023d0",
+          "canonical_name": "Claude Code",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-8ff8b7659efa569e"
+      ],
+      "source_refs": [
+        "SA-f6e4ad26392f3e26"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-8ff8b7659efa569e",
+            "source_refs": [
+              "SA-f6e4ad26392f3e26"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "product_launch"
           ]
         }
       }
@@ -207,86 +1307,6 @@
             "claim_ref": "CL-f16e6a3eafa5815a",
             "source_refs": [
               "SA-147762c19ee4f634"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "procurement_signal"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-83d022f89ba29209",
-      "event_id": "EV-83d022f89ba29209",
-      "event_type": "procurement_contract",
-      "publication_status": "verified",
-      "title": "Volta 选择戴尔科技助力打造下一代 AI 工厂",
-      "category": "case",
-      "categoryLabel": "案例",
-      "date": "2026-08-09",
-      "event_time": "2026-08-04T00:00:00.000Z",
-      "sourceUrl": "https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~~usa~2026~08~volta-selects-dell-technologies-to-help-build-next-generation-ai-factories.htm",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "Volta",
-      "sourceExcerpt": "Its initial project will be an AI factory in Europe located in Norway that will comprise a 133 MW deployment powered by Dell Technologies AI infrastructure, including Dell PowerRack systems with PowerEdge XE9812 servers including NVIDIA accelerators.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-d25e715a1ce00764",
-          "canonical_name": "Volta",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-c6b8a9114bcfbb9c"
-      ],
-      "source_refs": [
-        "SA-036fa74ea5c545f3"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "industry",
-          "dimension_name": "行业",
-          "value_id": "manufacturing",
-          "value_name": "制造业",
-          "entity_ids": [
-            "EN-d25e715a1ce00764"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "procurement_signal",
-            "claim_ref": "CL-c6b8a9114bcfbb9c",
-            "source_refs": [
-              "SA-036fa74ea5c545f3"
             ],
             "provenance": "event_type_rule"
           }
@@ -858,7 +1878,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-cb4754c48f8023d0",
@@ -1290,74 +2310,6 @@
           "pain_or_constraint": [
             "api_cost_spike"
           ],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-47c32b3ef5c0f57a",
-      "event_id": "EV-47c32b3ef5c0f57a",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "OpenAI 发布说明 - 2026年8月最新更新 - Releasebot",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-09",
-      "event_time": "",
-      "sourceUrl": "https://releasebot.io/updates/openai",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "OpenAI",
-      "sourceExcerpt": "This foundation powers a growing range of capabilities in ChatGPT Voice, including the newly launched ability to control your computer and coordinate your agents in the ChatGPT desktop app.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-95ac2aa8df3b3c0b",
-          "canonical_name": "August 2026 Latest Updates",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-ae4c88f644d45342"
-      ],
-      "source_refs": [
-        "SA-f671332f8768d05c"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-ae4c88f644d45342",
-            "source_refs": [
-              "SA-f671332f8768d05c"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],
           "business_action": [
@@ -3230,7 +4182,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-b5251b35f15bedc4",
@@ -3435,7 +4387,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-cb4754c48f8023d0",
@@ -4586,68 +5538,6 @@
       }
     },
     {
-      "id": "EV-323d98437e42e8b3",
-      "event_id": "EV-323d98437e42e8b3",
-      "event_type": "partnership",
-      "publication_status": "verified",
-      "title": "Kuehne+Nagel 与 HappyRobot 签署战略合作，将 AI 智能体部署到全球空运业务",
-      "category": "case",
-      "categoryLabel": "案例",
-      "date": "2026-08-07",
-      "event_time": "",
-      "sourceUrl": "https://www.happyrobot.ai/customer-story/kuehne-nagel",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "HappyRobot",
-      "sourceExcerpt": "HappyRobot, the enterprise platform for AI workers in complex operational environments, and Kuehne+Nagel, one of the world's leading logistics providers, have entered a strategic partnership to deploy AI workers across Kuehne+Nagel's global Air Logistics division.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-12bb49e1b12281f4",
-          "canonical_name": "HappyRobot",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-e20f7a49e0b8322f"
-      ],
-      "source_refs": [
-        "SA-ba31591f78df9868"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "partnership_integration",
-            "claim_ref": "CL-e20f7a49e0b8322f",
-            "source_refs": [
-              "SA-ba31591f78df9868"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "partnership_integration"
-          ]
-        }
-      }
-    },
-    {
       "id": "EV-467539fe176a470e",
       "event_id": "EV-467539fe176a470e",
       "event_type": "partnership",
@@ -5553,7 +6443,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -5694,7 +6584,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-2b6e51bec93e86c1",
@@ -6430,7 +7320,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -7081,7 +7971,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -7323,7 +8213,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-7d3194f79e645c42",
@@ -8090,7 +8980,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -9069,7 +9959,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -11503,7 +12393,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -11808,7 +12698,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -12095,7 +12985,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-7d3194f79e645c42",
@@ -13184,7 +14074,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -17894,7 +18784,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -21713,7 +22603,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -23301,7 +24191,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -23890,7 +24780,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-70ac71e604af9c7a",
@@ -24509,7 +25399,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -27955,7 +28845,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -30466,7 +31356,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-b5251b35f15bedc4",
@@ -30581,7 +31471,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -31546,7 +32436,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-bbdefa2950f49882",
@@ -31792,7 +32682,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-7d3194f79e645c42",
@@ -31940,7 +32830,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -32045,7 +32935,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-7d3194f79e645c42",
@@ -32343,7 +33233,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -32645,7 +33535,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-5a4c2be958c0af72",
@@ -32881,7 +33771,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-6fa4c159cb389f0f",
@@ -34161,7 +35051,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -35665,7 +36555,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -36395,95 +37285,6 @@
           "delivery_model": [],
           "business_action": [
             "customer_deployment"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-9fa7757568f0524e",
-      "event_id": "EV-9fa7757568f0524e",
-      "event_type": "procurement_contract",
-      "publication_status": "verified",
-      "title": "Cactus 赢得 MeitY 合同，打造 AI 招标文件编写平台",
-      "category": "case",
-      "categoryLabel": "案例",
-      "date": "2026-07-26",
-      "event_time": "",
-      "sourceUrl": "https://www.constructionworld.in/policy-updates-and-economic-news/cactus-wins-meity-contract-to-build-ai-tender-authoring-platform/94631",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "keyword search / Anysearch",
-      "sourceExcerpt": "Cactus Wins MeitY Contract To Build AI Tender Authoring Platform",
-      "entity_refs": [],
-      "claim_refs": [
-        "CL-65eb3e46b27c77c7",
-        "CL-ea77b4cb11c1693c",
-        "CL-df1f12c7a1489a73",
-        "CL-86df6594b3ba58d1"
-      ],
-      "source_refs": [
-        "SA-abed0558fcb11421"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "cost_monitoring",
-            "claim_ref": "CL-86df6594b3ba58d1",
-            "source_refs": [
-              "SA-abed0558fcb11421"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [
-          {
-            "value_id": "api_cost_spike",
-            "claim_ref": "CL-86df6594b3ba58d1",
-            "source_refs": [
-              "SA-abed0558fcb11421"
-            ],
-            "provenance": "exact_claim_rule"
-          },
-          {
-            "value_id": "evaluation_gap",
-            "claim_ref": "CL-86df6594b3ba58d1",
-            "source_refs": [
-              "SA-abed0558fcb11421"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "procurement_signal",
-            "claim_ref": "CL-65eb3e46b27c77c7",
-            "source_refs": [
-              "SA-abed0558fcb11421"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [
-            "cost_monitoring"
-          ],
-          "pain_or_constraint": [
-            "api_cost_spike",
-            "evaluation_gap"
-          ],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "procurement_signal"
           ]
         }
       }
@@ -37448,7 +38249,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -37569,7 +38370,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-7d3194f79e645c42",
@@ -39037,7 +39838,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-eb4e7bf788bcb164",
@@ -39509,7 +40310,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-7d3194f79e645c42",
@@ -40371,7 +41172,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-cb4754c48f8023d0",
@@ -40583,7 +41384,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-9ff7e3ae1b1ab43f",
@@ -40747,7 +41548,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-163fa867e7ef6ee6",
@@ -41251,7 +42052,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-163fa867e7ef6ee6",
@@ -41478,7 +42279,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-7d3194f79e645c42",
@@ -42836,7 +43637,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -42910,7 +43711,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -43267,7 +44068,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -43555,7 +44356,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-7839fb10a8f14c70",
@@ -44246,7 +45047,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-bbdefa2950f49882",
@@ -45055,7 +45856,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-3db1f560db626918",
@@ -45125,7 +45926,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-cb4754c48f8023d0",
@@ -45794,7 +46595,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-bde892f452cebcb3",
@@ -46388,7 +47189,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -46492,7 +47293,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -46949,7 +47750,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -48180,7 +48981,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-830abc32d2a443c5",
@@ -48515,7 +49316,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-bbdefa2950f49882",
@@ -48724,7 +49525,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -49306,7 +50107,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-fdb2cc367267ac57",
@@ -51212,7 +52013,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-d5b8915a8c232010",
@@ -53184,7 +53985,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-cb4754c48f8023d0",
@@ -54467,7 +55268,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-9fbf261b62c1d7c0",
@@ -55102,7 +55903,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-4d748ebd71af03a7",
@@ -55515,7 +56316,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -55905,7 +56706,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -56010,7 +56811,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -68739,7 +69540,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-cb4754c48f8023d0",
@@ -69398,7 +70199,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -70497,7 +71298,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-fb3aef5cc2687cc7",
@@ -71194,7 +71995,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-7d3194f79e645c42",
@@ -71532,7 +72333,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-3a9b395103419892",
@@ -71920,7 +72721,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-8395dc051feafc4c",
@@ -73044,7 +73845,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-7d3194f79e645c42",
@@ -74519,7 +75320,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-7d3194f79e645c42",
@@ -77406,7 +78207,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-ef11a801c5bd3673",
@@ -78508,7 +79309,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-7d3194f79e645c42",
@@ -78954,7 +79755,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-ef11a801c5bd3673",
@@ -80508,7 +81309,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -81144,7 +81945,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -81230,7 +82031,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-dca4b9c41c4f7a0a",
@@ -81402,7 +82203,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -83535,7 +84336,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-8c8c58ec2d92d598",
@@ -84786,7 +85587,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-7d3194f79e645c42",
@@ -85178,7 +85979,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-9fbf261b62c1d7c0",
@@ -86046,7 +86847,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -86554,7 +87355,7 @@
           "entity_id": "EN-c70eca6b0f88f44d",
           "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-3a13916345b60fad",
@@ -87010,742 +87811,6 @@
             "workflow_automation",
             "developer_tool"
           ],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-415b083fdaa8077f",
-      "event_id": "EV-415b083fdaa8077f",
-      "event_type": "funding",
-      "publication_status": "verified",
-      "title": "HPCwire - 自1987年起——报道全球最快计算机及其运营者",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "date": "2026-07-11",
-      "event_time": "",
-      "sourceUrl": "https://www.hpcwire.com/off-the-wire/oxmiq-raises-35m-to-scale-oxcoretm-architecture/",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "OXMIQ Labs Inc.",
-      "sourceExcerpt": "OXMIQ Labs Inc. , a unified GPU and AI architecture company founded by Raja Koduri, has closed its $35 million Series A financing, bringing the company&rsquo;s total capital raised to $60 million.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-d3d151f3f8e7f9ed",
-          "canonical_name": "OXMIQ Labs Inc.",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-34324ae83f5f1c3c"
-      ],
-      "source_refs": [
-        "SA-f6bbe7f3cf7de3ee"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "ai_market_application",
-          "dimension_name": "AI 市场细分",
-          "value_id": "chips",
-          "value_name": "芯片",
-          "entity_ids": [
-            "EN-d3d151f3f8e7f9ed"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-5e4faa345a2f4f10"
-        },
-        {
-          "dimension_id": "ai_market_category",
-          "dimension_name": "AI 市场类别",
-          "value_id": "infrastructure_compute",
-          "value_name": "基础设施与算力",
-          "entity_ids": [
-            "EN-d3d151f3f8e7f9ed"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-ef9b51ade00c4fa7"
-        },
-        {
-          "dimension_id": "ai_market_subcategory",
-          "dimension_name": "AI 市场子类",
-          "value_id": "hardware_computing",
-          "value_name": "硬件与算力",
-          "entity_ids": [
-            "EN-d3d151f3f8e7f9ed"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-60c8c810589ffc89"
-        },
-        {
-          "dimension_id": "industry",
-          "dimension_name": "行业",
-          "value_id": "aerospace_defense",
-          "value_name": "航空航天与国防",
-          "entity_ids": [
-            "EN-d3d151f3f8e7f9ed"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-893ca9e32b57b8db"
-        },
-        {
-          "dimension_id": "industry",
-          "dimension_name": "行业",
-          "value_id": "automotive_transportation",
-          "value_name": "汽车与交通",
-          "entity_ids": [
-            "EN-d3d151f3f8e7f9ed"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-175915105b9e332e"
-        },
-        {
-          "dimension_id": "industry",
-          "dimension_name": "行业",
-          "value_id": "manufacturing",
-          "value_name": "制造业",
-          "entity_ids": [
-            "EN-d3d151f3f8e7f9ed"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-a35bee9738ef6269"
-        },
-        {
-          "dimension_id": "product_form",
-          "dimension_name": "产品形态",
-          "value_id": "chip_accelerator",
-          "value_name": "芯片与加速器",
-          "entity_ids": [
-            "EN-d3d151f3f8e7f9ed"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-0b5235624d68e491"
-        },
-        {
-          "dimension_id": "target_user",
-          "dimension_name": "目标用户",
-          "value_id": "developer",
-          "value_name": "开发者",
-          "entity_ids": [
-            "EN-d3d151f3f8e7f9ed"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-d9f2d5d7fee88d30"
-        },
-        {
-          "dimension_id": "target_user",
-          "dimension_name": "目标用户",
-          "value_id": "researcher",
-          "value_name": "研究人员",
-          "entity_ids": [
-            "EN-d3d151f3f8e7f9ed"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-fb48498e37a5a00a"
-        },
-        {
-          "dimension_id": "use_case",
-          "dimension_name": "应用场景",
-          "value_id": "research_discovery",
-          "value_name": "科研与发现",
-          "entity_ids": [
-            "EN-d3d151f3f8e7f9ed"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-4786269b8b0f5e07"
-        },
-        {
-          "dimension_id": "use_case",
-          "dimension_name": "应用场景",
-          "value_id": "software_development",
-          "value_name": "软件开发",
-          "entity_ids": [
-            "EN-d3d151f3f8e7f9ed"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-37c0312d90a37609"
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "funding_round",
-            "claim_ref": "CL-34324ae83f5f1c3c",
-            "source_refs": [
-              "SA-f6bbe7f3cf7de3ee"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "funding_round"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-47694f247d24b044",
-      "event_id": "EV-47694f247d24b044",
-      "event_type": "research_result",
-      "publication_status": "verified",
-      "title": "路透社实测：Meta AI图像检测工具在裁剪后失灵",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-07-11",
-      "event_time": "2026-07-11T02:19:46.000Z",
-      "sourceUrl": "https://www.ithome.com/0/975/402.htm",
-      "sourceName": "IT之家（RSS）",
-      "subject": "路透社",
-      "sourceExcerpt": "路透社的测试结果显示， 常见的图片修改操作就可能削弱检测能力 。",
-      "entity_refs": [
-        {
-          "entity_id": "EN-31aa64cbbfb9bf63",
-          "canonical_name": "路透社",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-ea3bd73e2b506e00",
-          "canonical_name": "Meta",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-b49d6273ccccbc49",
-        "CL-c07ace663fa7619e",
-        "CL-dd7d50b8ec7e93f7"
-      ],
-      "source_refs": [
-        "SA-004e3e8a40ca91ea"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "knowledge_base_qa",
-            "claim_ref": "CL-b49d6273ccccbc49",
-            "source_refs": [
-              "SA-004e3e8a40ca91ea"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "research_benchmark",
-            "claim_ref": "CL-b49d6273ccccbc49",
-            "source_refs": [
-              "SA-004e3e8a40ca91ea"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [
-            "knowledge_base_qa"
-          ],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "research_benchmark"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-b3a050d576cea2f2",
-      "event_id": "EV-b3a050d576cea2f2",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "什么是 Microsoft 市场 - Stactize",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-07-11",
-      "event_time": "",
-      "sourceUrl": "https://stactize.com/artikel/what-is-microsoft-marketplace/",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "Microsoft",
-      "sourceExcerpt": "Microsoft launched a single, unified Microsoft Marketplace that brings together Azure Marketplace and AppSource so customers can find, try, buy, and deploy cloud solutions and AI apps & agents in one place.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-9fbf261b62c1d7c0",
-          "canonical_name": "Microsoft",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-d2f4e09cb01afa3c",
-          "canonical_name": "Marketplace",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-df3e692047952658",
-        "CL-5e9118458d08068e"
-      ],
-      "source_refs": [
-        "SA-52e4735089b09b72"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "technology",
-          "dimension_name": "技术",
-          "value_id": "model_context_protocol",
-          "value_name": "MCP",
-          "entity_ids": [
-            "EN-9fbf261b62c1d7c0"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-df3e692047952658",
-            "source_refs": [
-              "SA-52e4735089b09b72"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-ccfb713e9a03a348",
-      "event_id": "EV-ccfb713e9a03a348",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "Claude Code v2.1.207 发布",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-07-11",
-      "event_time": "2026-07-11T00:52:10.000Z",
-      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.207",
-      "sourceName": "Claude Code：GitHub Releases（RSS）",
-      "subject": "Claude Code",
-      "sourceExcerpt": "Fixed the auto-updater overwriting a custom launcher script or symlink at ~/.local/bin/claude on every release; /doctor now reports an externally managed launcher",
-      "entity_refs": [
-        {
-          "entity_id": "EN-cb4754c48f8023d0",
-          "canonical_name": "Claude Code",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-77855e8e5fdd7a05",
-        "CL-4d0d7e6f82fb2392"
-      ],
-      "source_refs": [
-        "SA-e7ec718572732a04"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-77855e8e5fdd7a05",
-            "source_refs": [
-              "SA-e7ec718572732a04"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-f05783f745bc7c2c",
-      "event_id": "EV-f05783f745bc7c2c",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "Canva发布Canva AI 2.0，将其平台重塑为工作代理系统 - SiliconANGLE",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-07-11",
-      "event_time": "",
-      "sourceUrl": "https://siliconangle.com/2026/04/16/canva-unveils-canva-ai-2-0-recasting-platform-agentic-system-work/",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "Canva",
-      "sourceExcerpt": "Canva unveils Canva AI 2.0, recasting its platform as an agentic system for work",
-      "entity_refs": [
-        {
-          "entity_id": "EN-3db1f560db626918",
-          "canonical_name": "Canva",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-bbdefa2950f49882",
-          "canonical_name": "Google",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-309e1850e39b13ff",
-          "canonical_name": "AI 2.0",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-683c9eb3000ec555",
-        "CL-5abf8e821a0d0b9a",
-        "CL-9e7b93ef54af8b54",
-        "CL-b583f4a673dd1fa8"
-      ],
-      "source_refs": [
-        "SA-2f3baf3a43e6adcb"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "technology",
-          "dimension_name": "技术",
-          "value_id": "agentic_execution",
-          "value_name": "智能体执行",
-          "entity_ids": [
-            "EN-3db1f560db626918"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "knowledge_base_qa",
-            "claim_ref": "CL-b583f4a673dd1fa8",
-            "source_refs": [
-              "SA-2f3baf3a43e6adcb"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [],
-        "product_form": [
-          {
-            "value_id": "workflow_automation",
-            "claim_ref": "CL-b583f4a673dd1fa8",
-            "source_refs": [
-              "SA-2f3baf3a43e6adcb"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-683c9eb3000ec555",
-            "source_refs": [
-              "SA-2f3baf3a43e6adcb"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [
-            "knowledge_base_qa"
-          ],
-          "pain_or_constraint": [],
-          "product_form": [
-            "workflow_automation"
-          ],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-f1befee642551db7",
-      "event_id": "EV-f1befee642551db7",
-      "event_type": "service_change",
-      "publication_status": "verified",
-      "title": "OpenAI 关停 Atlas 浏览器，功能并入 ChatGPT",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-07-11",
-      "event_time": "2026-07-10T12:19:21.000Z",
-      "sourceUrl": "https://the-decoder.com/openai-kills-its-atlas-browser-after-just-eight-months-and-folds-everything-into-chatgpt",
-      "sourceName": "The Decoder：AI News（RSS）",
-      "subject": "OpenAI",
-      "sourceExcerpt": "OpenAI is killing its AI browser Atlas less than eight months after launch.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-576e8d38f7fb3d82",
-        "CL-856a2b04d46c09a2"
-      ],
-      "source_refs": [
-        "SA-3b09f1a5b594cb0c"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-576e8d38f7fb3d82",
-            "source_refs": [
-              "SA-3b09f1a5b594cb0c"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-f7b60c0c63403f8c",
-      "event_id": "EV-f7b60c0c63403f8c",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "加速进化发布 Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-07-11",
-      "event_time": "2026-07-10T12:49:35.000Z",
-      "sourceUrl": "https://www.ithome.com/0/975/340.htm",
-      "sourceName": "IT之家（RSS）",
-      "subject": "加速进化",
-      "sourceExcerpt": "加速进化发布 Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力 - IT之家",
-      "entity_refs": [
-        {
-          "entity_id": "EN-de6b71bf77ff4299",
-          "canonical_name": "加速进化",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-c4ef31845ea79710",
-          "canonical_name": "Booster T2",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-7044c3e5ee3cf9e0",
-        "CL-f2bc8db4d7c0babc",
-        "CL-297221466f1efecf",
-        "CL-0aca511b9b7dd59f"
-      ],
-      "source_refs": [
-        "SA-c09c2ef108e2cf71"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "technology",
-          "dimension_name": "技术",
-          "value_id": "multimodal",
-          "value_name": "多模态",
-          "entity_ids": [
-            "EN-de6b71bf77ff4299"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        },
-        {
-          "dimension_id": "technology",
-          "dimension_name": "技术",
-          "value_id": "inference_optimization",
-          "value_name": "推理优化",
-          "entity_ids": [
-            "EN-de6b71bf77ff4299"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        },
-        {
-          "dimension_id": "technology",
-          "dimension_name": "技术",
-          "value_id": "on_device",
-          "value_name": "端侧运行",
-          "entity_ids": [
-            "EN-de6b71bf77ff4299"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        },
-        {
-          "dimension_id": "deployment_model",
-          "dimension_name": "部署形态",
-          "value_id": "edge_device",
-          "value_name": "边缘与端侧",
-          "entity_ids": [
-            "EN-de6b71bf77ff4299"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "cost_monitoring",
-            "claim_ref": "CL-297221466f1efecf",
-            "source_refs": [
-              "SA-c09c2ef108e2cf71"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [
-          {
-            "value_id": "api_cost_spike",
-            "claim_ref": "CL-297221466f1efecf",
-            "source_refs": [
-              "SA-c09c2ef108e2cf71"
-            ],
-            "provenance": "exact_claim_rule"
-          },
-          {
-            "value_id": "latency_sensitive",
-            "claim_ref": "CL-0aca511b9b7dd59f",
-            "source_refs": [
-              "SA-c09c2ef108e2cf71"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-7044c3e5ee3cf9e0",
-            "source_refs": [
-              "SA-c09c2ef108e2cf71"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [
-            "cost_monitoring"
-          ],
-          "pain_or_constraint": [
-            "api_cost_spike",
-            "latency_sensitive"
-          ],
-          "product_form": [],
           "delivery_model": [],
           "business_action": [
             "product_launch"

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-09T05:37:09.176Z",
-    "latestDataDate": "2026-08-09",
-    "currentDate": "2026-08-09",
-    "eventCount": 1962,
+    "generatedAt": "2026-08-10T01:53:54.030Z",
+    "latestDataDate": "2026-08-10",
+    "currentDate": "2026-08-10",
+    "eventCount": 1976,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -49,6 +49,7 @@
       "EV-4dfd7233c8c69b0b",
       "EV-657837763764c869",
       "EV-388a53fe918389b0",
+      "EV-59b7ba3d079ad09a",
       "EV-3aefbdfa5df2fd6a",
       "EV-c14e5185fd6bbe30",
       "EV-48e17a3ba4b73550",
@@ -72,7 +73,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-05-24",
-    "lastSeen": "2026-08-05",
+    "lastSeen": "2026-08-10",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -114,6 +115,7 @@
       "hardware": [],
       "organizationPeople": [],
       "other": [
+        "EV-59b7ba3d079ad09a",
         "EV-3aefbdfa5df2fd6a",
         "EV-c14e5185fd6bbe30",
         "EV-48e17a3ba4b73550",
@@ -121,6 +123,22 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-59b7ba3d079ad09a",
+        "dataDate": "2026-08-10",
+        "date": "2026-08-09",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "当题库追不上模型，AI开始给自己出题：中国这支团队跑通了数据层RSI",
+        "displayTags": [],
+        "entityIds": [
+          "EN-67582d74cdaaea52",
+          "EN-6f7ac1823da81d2e"
+        ]
+      },
       {
         "id": "EV-ef8ff7b3f76f140a",
         "dataDate": "2026-08-05",

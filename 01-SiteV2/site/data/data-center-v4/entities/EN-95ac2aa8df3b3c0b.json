@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-09T05:37:09.176Z",
-    "latestDataDate": "2026-08-09",
-    "currentDate": "2026-08-09",
-    "eventCount": 1962,
+    "generatedAt": "2026-08-10T01:53:54.030Z",
+    "latestDataDate": "2026-08-10",
+    "currentDate": "2026-08-10",
+    "eventCount": 1976,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -27,8 +27,8 @@
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-08-09",
-    "lastSeen": "2026-08-09",
+    "firstSeen": "2026-08-10",
+    "lastSeen": "2026-08-10",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -44,8 +44,8 @@
     "timeline": [
       {
         "id": "EV-47c32b3ef5c0f57a",
-        "dataDate": "2026-08-09",
-        "date": "2026-08-09",
+        "dataDate": "2026-08-10",
+        "date": "2026-08-10",
         "eventType": "product_release",
         "eventTypeLabel": "产品发布",
         "eventGroup": "模型、产品与服务",
@@ -70,13 +70,13 @@
     {
       "id": "HWC-dd6e747e69e825c7",
       "snapshotKey": "dd6e747e69e825c7",
-      "snapshotId": "HWS-dee2c6b7bd2cb287",
+      "snapshotId": "HWS-1fb9ef77501ecdff",
       "eventId": "EV-47c32b3ef5c0f57a",
       "eventIds": [
         "EV-47c32b3ef5c0f57a"
       ],
-      "dataDate": "2026-08-09",
-      "date": "2026-08-09",
+      "dataDate": "2026-08-10",
+      "date": "2026-08-10",
       "title": "August 2026 Latest Updates",
       "subject": "OpenAI",
       "productNames": [
@@ -90,20 +90,30 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-d11a050f7417594f"
+          "fact_ref": "HWF-ae7f07421318f4cf"
         }
       },
       "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-10",
+          "previousDate": "2026-08-09",
+          "snapshotId": "HWS-1fb9ef77501ecdff",
+          "previousSnapshotId": "HWS-dee2c6b7bd2cb287",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-09",
-          "hardware_fact_id": "HWF-d11a050f7417594f",
+          "data_date": "2026-08-10",
+          "hardware_fact_id": "HWF-ae7f07421318f4cf",
           "fact_type": "product",
-          "observed_at": "2026-08-09T00:20:11.230Z",
+          "observed_at": "2026-08-10T01:50:47.220Z",
           "subject_entity_id": "EN-7d3194f79e645c42",
           "subject_name": "OpenAI",
           "product_entity_ids": [
@@ -119,11 +129,11 @@
           "event_refs": [
             "EV-47c32b3ef5c0f57a"
           ],
-          "claim_ref": "CL-ae4c88f644d45342",
+          "claim_ref": "CL-d7e16fc98430b26b",
           "source_refs": [
             "SA-f671332f8768d05c"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-10/hardware-facts.json"
         }
       ],
       "capexFacts": [],

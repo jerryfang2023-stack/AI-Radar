@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-08-09T05:37:19.059Z",
-    "date": "2026-08-09",
+    "generatedAt": "2026-08-10T01:55:44.481Z",
+    "date": "2026-08-10",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
       "01-SiteV2/site/data/pipeline-dashboard.json",
@@ -42,14 +42,14 @@
     }
   ],
   "daily": {
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "status": "passed",
     "statusText": "已通过",
     "issueSummary": {
-      "total": 9,
+      "total": 15,
       "daily": 0,
       "open": 0,
-      "resolved": 9,
+      "resolved": 15,
       "urgent": 0
     },
     "issues": []
@@ -57,23 +57,157 @@
   "periods": {
     "weekly": {
       "windowDays": 7,
-      "total": 4,
+      "total": 10,
       "open": 0,
-      "resolved": 4,
+      "resolved": 10,
       "byLane": {
-        "business_signals": 2,
-        "skill_ops": 2
+        "business_signals": 3,
+        "skill_ops": 5,
+        "first_line_viewpoints": 2
       },
       "byCategory": {
-        "recurring_automation_issue": 4
+        "recurring_automation_issue": 9,
+        "weekly_learning_loop": 1
       },
       "recurring": [
         {
           "category": "recurring_automation_issue",
-          "count": 4
+          "count": 9
         }
       ],
       "latest": [
+        {
+          "id": "2026-08-09-skill_ops-weekly-learning-loop",
+          "date": "2026-08-09",
+          "title": "Weekly Learning Loop - 2026-08-09",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "medium",
+          "laneId": "skill_ops",
+          "category": "weekly_learning_loop",
+          "failedGate": "weekly_learning_loop",
+          "reportPath": "agent-workflow/reports/2026-08-09-weekly-health.md",
+          "dataGenerated": "not_applicable",
+          "neededAction": "add or tighten gate / eval / MEMORY prevention",
+          "createdAt": "2026-08-09T10:29:35.382Z",
+          "updatedAt": "2026-08-09T18:47:07+08:00",
+          "resolvedAt": "2026-08-09T18:47:07+08:00",
+          "resolver": "codex",
+          "fixCommit": "d0436411741e8fe979c5cddb8ae5a7c90a27fa77",
+          "validation": "all five referenced incidents resolved; npm test passed; Skill Ops drift 0; 2026-08-09 final closure closed with all affected lanes passed",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-skill_ops-weekly-learning-loop.md"
+        },
+        {
+          "id": "2026-08-09-business-signals-recurring-05f820ce67869f02",
+          "date": "2026-08-09",
+          "title": "Recurring warning: business_signals",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "runtime://daily-supervision/2026-08-09",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-08-09T08:45:47.140Z",
+          "updatedAt": "2026-08-09T18:46:21+08:00",
+          "resolvedAt": "2026-08-09T18:46:21+08:00",
+          "resolver": "codex",
+          "fixCommit": "d0436411741e8fe979c5cddb8ae5a7c90a27fa77",
+          "validation": "isolated origin/main Vault sync passed; final closure business_signals passed with zero warnings",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-business-signals-recurring-05f820ce67869f02.md"
+        },
+        {
+          "id": "2026-08-09-skill-ops-recurring-779272b982471f71",
+          "date": "2026-08-09",
+          "title": "Recurring problem: skill_ops",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "normal",
+          "laneId": "skill_ops",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "runtime://daily-supervision/2026-08-09",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-08-09T08:45:47.142Z",
+          "updatedAt": "2026-08-09T18:46:20+08:00",
+          "resolvedAt": "2026-08-09T18:46:20+08:00",
+          "resolver": "codex",
+          "fixCommit": "2b970ce031bbab567890e4fd8c9d03a8b456eeaf",
+          "validation": "npm run audit:skills passed with repo runtime drift 0; final closure skill_ops passed",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-skill-ops-recurring-779272b982471f71.md"
+        },
+        {
+          "id": "2026-08-09-skill-ops-recurring-042a16c9ca245da3",
+          "date": "2026-08-09",
+          "title": "Recurring problem: skill_ops",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "normal",
+          "laneId": "skill_ops",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "runtime://daily-supervision/2026-08-09",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-08-09T08:45:47.141Z",
+          "updatedAt": "2026-08-09T18:46:18+08:00",
+          "resolvedAt": "2026-08-09T18:46:18+08:00",
+          "resolver": "codex",
+          "fixCommit": "2b970ce031bbab567890e4fd8c9d03a8b456eeaf",
+          "validation": "npm run audit:skills passed with repo runtime drift 0; final closure skill_ops passed",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-skill-ops-recurring-042a16c9ca245da3.md"
+        },
+        {
+          "id": "2026-08-09-first-line-viewpoints-recurring-960303398b491ab3",
+          "date": "2026-08-09",
+          "title": "Recurring problem: first_line_viewpoints",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "normal",
+          "laneId": "first_line_viewpoints",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "runtime://daily-supervision/2026-08-08",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-08-09T08:45:47.142Z",
+          "updatedAt": "2026-08-09T18:46:17+08:00",
+          "resolvedAt": "2026-08-09T18:46:17+08:00",
+          "resolver": "codex",
+          "fixCommit": "2b970ce031bbab567890e4fd8c9d03a8b456eeaf",
+          "validation": "2026-08-09 same-date First-Line gate passed; final closure closed with first_line_viewpoints passed",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-first-line-viewpoints-recurring-960303398b491ab3.md"
+        },
+        {
+          "id": "2026-08-09-first-line-viewpoints-recurring-38b0aa2aca98027e",
+          "date": "2026-08-09",
+          "title": "Recurring problem: first_line_viewpoints",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "normal",
+          "laneId": "first_line_viewpoints",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "runtime://daily-supervision/2026-08-08",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-08-09T08:45:47.143Z",
+          "updatedAt": "2026-08-09T18:46:15+08:00",
+          "resolvedAt": "2026-08-09T18:46:15+08:00",
+          "resolver": "codex",
+          "fixCommit": "2b970ce031bbab567890e4fd8c9d03a8b456eeaf",
+          "validation": "2026-08-09 same-date First-Line gate passed; final closure closed with first_line_viewpoints passed",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-first-line-viewpoints-recurring-38b0aa2aca98027e.md"
+        },
         {
           "id": "2026-08-05-business-signals-recurring-05f820ce67869f02",
           "date": "2026-08-05",
@@ -166,25 +300,162 @@
     },
     "monthly": {
       "windowDays": 30,
-      "total": 9,
+      "total": 15,
       "open": 0,
-      "resolved": 9,
+      "resolved": 15,
       "byLane": {
         "community_intelligence": 2,
-        "skill_ops": 3,
-        "business_signals": 4
+        "skill_ops": 6,
+        "business_signals": 5,
+        "first_line_viewpoints": 2
       },
       "byCategory": {
-        "recurring_automation_issue": 8,
-        "weekly_learning_loop": 1
+        "recurring_automation_issue": 13,
+        "weekly_learning_loop": 2
       },
       "recurring": [
         {
           "category": "recurring_automation_issue",
-          "count": 8
+          "count": 13
+        },
+        {
+          "category": "weekly_learning_loop",
+          "count": 2
         }
       ],
       "latest": [
+        {
+          "id": "2026-08-09-skill_ops-weekly-learning-loop",
+          "date": "2026-08-09",
+          "title": "Weekly Learning Loop - 2026-08-09",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "medium",
+          "laneId": "skill_ops",
+          "category": "weekly_learning_loop",
+          "failedGate": "weekly_learning_loop",
+          "reportPath": "agent-workflow/reports/2026-08-09-weekly-health.md",
+          "dataGenerated": "not_applicable",
+          "neededAction": "add or tighten gate / eval / MEMORY prevention",
+          "createdAt": "2026-08-09T10:29:35.382Z",
+          "updatedAt": "2026-08-09T18:47:07+08:00",
+          "resolvedAt": "2026-08-09T18:47:07+08:00",
+          "resolver": "codex",
+          "fixCommit": "d0436411741e8fe979c5cddb8ae5a7c90a27fa77",
+          "validation": "all five referenced incidents resolved; npm test passed; Skill Ops drift 0; 2026-08-09 final closure closed with all affected lanes passed",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-skill_ops-weekly-learning-loop.md"
+        },
+        {
+          "id": "2026-08-09-business-signals-recurring-05f820ce67869f02",
+          "date": "2026-08-09",
+          "title": "Recurring warning: business_signals",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "runtime://daily-supervision/2026-08-09",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-08-09T08:45:47.140Z",
+          "updatedAt": "2026-08-09T18:46:21+08:00",
+          "resolvedAt": "2026-08-09T18:46:21+08:00",
+          "resolver": "codex",
+          "fixCommit": "d0436411741e8fe979c5cddb8ae5a7c90a27fa77",
+          "validation": "isolated origin/main Vault sync passed; final closure business_signals passed with zero warnings",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-business-signals-recurring-05f820ce67869f02.md"
+        },
+        {
+          "id": "2026-08-09-skill-ops-recurring-779272b982471f71",
+          "date": "2026-08-09",
+          "title": "Recurring problem: skill_ops",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "normal",
+          "laneId": "skill_ops",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "runtime://daily-supervision/2026-08-09",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-08-09T08:45:47.142Z",
+          "updatedAt": "2026-08-09T18:46:20+08:00",
+          "resolvedAt": "2026-08-09T18:46:20+08:00",
+          "resolver": "codex",
+          "fixCommit": "2b970ce031bbab567890e4fd8c9d03a8b456eeaf",
+          "validation": "npm run audit:skills passed with repo runtime drift 0; final closure skill_ops passed",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-skill-ops-recurring-779272b982471f71.md"
+        },
+        {
+          "id": "2026-08-09-skill-ops-recurring-042a16c9ca245da3",
+          "date": "2026-08-09",
+          "title": "Recurring problem: skill_ops",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "normal",
+          "laneId": "skill_ops",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "runtime://daily-supervision/2026-08-09",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-08-09T08:45:47.141Z",
+          "updatedAt": "2026-08-09T18:46:18+08:00",
+          "resolvedAt": "2026-08-09T18:46:18+08:00",
+          "resolver": "codex",
+          "fixCommit": "2b970ce031bbab567890e4fd8c9d03a8b456eeaf",
+          "validation": "npm run audit:skills passed with repo runtime drift 0; final closure skill_ops passed",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-skill-ops-recurring-042a16c9ca245da3.md"
+        },
+        {
+          "id": "2026-08-09-first-line-viewpoints-recurring-960303398b491ab3",
+          "date": "2026-08-09",
+          "title": "Recurring problem: first_line_viewpoints",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "normal",
+          "laneId": "first_line_viewpoints",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "runtime://daily-supervision/2026-08-08",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-08-09T08:45:47.142Z",
+          "updatedAt": "2026-08-09T18:46:17+08:00",
+          "resolvedAt": "2026-08-09T18:46:17+08:00",
+          "resolver": "codex",
+          "fixCommit": "2b970ce031bbab567890e4fd8c9d03a8b456eeaf",
+          "validation": "2026-08-09 same-date First-Line gate passed; final closure closed with first_line_viewpoints passed",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-first-line-viewpoints-recurring-960303398b491ab3.md"
+        },
+        {
+          "id": "2026-08-09-first-line-viewpoints-recurring-38b0aa2aca98027e",
+          "date": "2026-08-09",
+          "title": "Recurring problem: first_line_viewpoints",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "normal",
+          "laneId": "first_line_viewpoints",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "runtime://daily-supervision/2026-08-08",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-08-09T08:45:47.143Z",
+          "updatedAt": "2026-08-09T18:46:15+08:00",
+          "resolvedAt": "2026-08-09T18:46:15+08:00",
+          "resolver": "codex",
+          "fixCommit": "2b970ce031bbab567890e4fd8c9d03a8b456eeaf",
+          "validation": "2026-08-09 same-date First-Line gate passed; final closure closed with first_line_viewpoints passed",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-first-line-viewpoints-recurring-38b0aa2aca98027e.md"
+        },
         {
           "id": "2026-08-05-business-signals-recurring-05f820ce67869f02",
           "date": "2026-08-05",
@@ -316,72 +587,6 @@
           "validation": "npm test; 2026-08-02 daily supervision community_intelligence passed",
           "prevention": "gate",
           "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-30-community-intelligence-recurring-73a400f41c5af405.md"
-        },
-        {
-          "id": "2026-07-30-business-signals-recurring-fef63b1d095e1eec",
-          "date": "2026-07-30",
-          "title": "Recurring warning: business_signals",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "business_signals",
-          "category": "recurring_automation_issue",
-          "failedGate": "repeated daily supervision signal",
-          "reportPath": "agent-workflow/reports/2026-07-27-daily-supervision-report.json",
-          "dataGenerated": "inspect linked daily reports",
-          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
-          "createdAt": "2026-07-30T08:45:26.579Z",
-          "updatedAt": "2026-08-02T12:59:53+08:00",
-          "resolvedAt": "2026-08-02T12:59:53+08:00",
-          "resolver": "codex",
-          "fixCommit": "dae49febd",
-          "validation": "npm test; 2026-08-02 daily supervision business_signals passed",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-30-business-signals-recurring-fef63b1d095e1eec.md"
-        },
-        {
-          "id": "2026-07-26-skill_ops-weekly-learning-loop",
-          "date": "2026-07-26",
-          "title": "Weekly Learning Loop - 2026-07-26",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "medium",
-          "laneId": "skill_ops",
-          "category": "weekly_learning_loop",
-          "failedGate": "weekly_learning_loop",
-          "reportPath": "agent-workflow/reports/2026-07-26-weekly-health.md",
-          "dataGenerated": "not_applicable",
-          "neededAction": "add or tighten gate / eval / MEMORY prevention",
-          "createdAt": "2026-07-26T11:16:52.426Z",
-          "updatedAt": "2026-07-27T14:13:06+08:00",
-          "resolvedAt": "2026-07-27T14:13:06+08:00",
-          "resolver": "codex",
-          "fixCommit": "f3ea9554c",
-          "validation": "node --test agent-workflow/tools/tests/daily-supervision-follow-builders.test.mjs agent-workflow/tools/tests/recurring-production-incidents.test.mjs",
-          "prevention": "eval",
-          "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-26-skill_ops-weekly-learning-loop.md"
-        },
-        {
-          "id": "2026-07-26-community-intelligence-recurring-73a400f41c5af405",
-          "date": "2026-07-26",
-          "title": "Recurring warning: community_intelligence",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "community_intelligence",
-          "category": "recurring_automation_issue",
-          "failedGate": "repeated daily supervision signal",
-          "reportPath": "agent-workflow/reports/2026-07-26-daily-supervision-report.json",
-          "dataGenerated": "inspect linked daily reports",
-          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
-          "createdAt": "2026-07-26T08:45:31.857Z",
-          "updatedAt": "2026-07-27T11:35:25+08:00",
-          "resolvedAt": "2026-07-27T11:35:25+08:00",
-          "resolver": "codex",
-          "fixCommit": "f3ea9554c",
-          "validation": "node --test agent-workflow/tools/tests/daily-supervision-follow-builders.test.mjs && npm run supervise:daily -- --date=2026-07-27",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-26-community-intelligence-recurring-73a400f41c5af405.md"
         }
       ]
     }
@@ -389,6 +594,138 @@
   "inbox": {
     "open": [],
     "resolved": [
+      {
+        "id": "2026-08-09-skill_ops-weekly-learning-loop",
+        "date": "2026-08-09",
+        "title": "Weekly Learning Loop - 2026-08-09",
+        "status": "resolved",
+        "state": "resolved",
+        "priority": "medium",
+        "laneId": "skill_ops",
+        "category": "weekly_learning_loop",
+        "failedGate": "weekly_learning_loop",
+        "reportPath": "agent-workflow/reports/2026-08-09-weekly-health.md",
+        "dataGenerated": "not_applicable",
+        "neededAction": "add or tighten gate / eval / MEMORY prevention",
+        "createdAt": "2026-08-09T10:29:35.382Z",
+        "updatedAt": "2026-08-09T18:47:07+08:00",
+        "resolvedAt": "2026-08-09T18:47:07+08:00",
+        "resolver": "codex",
+        "fixCommit": "d0436411741e8fe979c5cddb8ae5a7c90a27fa77",
+        "validation": "all five referenced incidents resolved; npm test passed; Skill Ops drift 0; 2026-08-09 final closure closed with all affected lanes passed",
+        "prevention": "gate",
+        "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-skill_ops-weekly-learning-loop.md"
+      },
+      {
+        "id": "2026-08-09-business-signals-recurring-05f820ce67869f02",
+        "date": "2026-08-09",
+        "title": "Recurring warning: business_signals",
+        "status": "resolved",
+        "state": "resolved",
+        "priority": "normal",
+        "laneId": "business_signals",
+        "category": "recurring_automation_issue",
+        "failedGate": "repeated daily supervision signal",
+        "reportPath": "runtime://daily-supervision/2026-08-09",
+        "dataGenerated": "inspect linked daily reports",
+        "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+        "createdAt": "2026-08-09T08:45:47.140Z",
+        "updatedAt": "2026-08-09T18:46:21+08:00",
+        "resolvedAt": "2026-08-09T18:46:21+08:00",
+        "resolver": "codex",
+        "fixCommit": "d0436411741e8fe979c5cddb8ae5a7c90a27fa77",
+        "validation": "isolated origin/main Vault sync passed; final closure business_signals passed with zero warnings",
+        "prevention": "gate",
+        "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-business-signals-recurring-05f820ce67869f02.md"
+      },
+      {
+        "id": "2026-08-09-skill-ops-recurring-779272b982471f71",
+        "date": "2026-08-09",
+        "title": "Recurring problem: skill_ops",
+        "status": "resolved",
+        "state": "resolved",
+        "priority": "normal",
+        "laneId": "skill_ops",
+        "category": "recurring_automation_issue",
+        "failedGate": "repeated daily supervision signal",
+        "reportPath": "runtime://daily-supervision/2026-08-09",
+        "dataGenerated": "inspect linked daily reports",
+        "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+        "createdAt": "2026-08-09T08:45:47.142Z",
+        "updatedAt": "2026-08-09T18:46:20+08:00",
+        "resolvedAt": "2026-08-09T18:46:20+08:00",
+        "resolver": "codex",
+        "fixCommit": "2b970ce031bbab567890e4fd8c9d03a8b456eeaf",
+        "validation": "npm run audit:skills passed with repo runtime drift 0; final closure skill_ops passed",
+        "prevention": "gate",
+        "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-skill-ops-recurring-779272b982471f71.md"
+      },
+      {
+        "id": "2026-08-09-skill-ops-recurring-042a16c9ca245da3",
+        "date": "2026-08-09",
+        "title": "Recurring problem: skill_ops",
+        "status": "resolved",
+        "state": "resolved",
+        "priority": "normal",
+        "laneId": "skill_ops",
+        "category": "recurring_automation_issue",
+        "failedGate": "repeated daily supervision signal",
+        "reportPath": "runtime://daily-supervision/2026-08-09",
+        "dataGenerated": "inspect linked daily reports",
+        "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+        "createdAt": "2026-08-09T08:45:47.141Z",
+        "updatedAt": "2026-08-09T18:46:18+08:00",
+        "resolvedAt": "2026-08-09T18:46:18+08:00",
+        "resolver": "codex",
+        "fixCommit": "2b970ce031bbab567890e4fd8c9d03a8b456eeaf",
+        "validation": "npm run audit:skills passed with repo runtime drift 0; final closure skill_ops passed",
+        "prevention": "gate",
+        "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-skill-ops-recurring-042a16c9ca245da3.md"
+      },
+      {
+        "id": "2026-08-09-first-line-viewpoints-recurring-960303398b491ab3",
+        "date": "2026-08-09",
+        "title": "Recurring problem: first_line_viewpoints",
+        "status": "resolved",
+        "state": "resolved",
+        "priority": "normal",
+        "laneId": "first_line_viewpoints",
+        "category": "recurring_automation_issue",
+        "failedGate": "repeated daily supervision signal",
+        "reportPath": "runtime://daily-supervision/2026-08-08",
+        "dataGenerated": "inspect linked daily reports",
+        "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+        "createdAt": "2026-08-09T08:45:47.142Z",
+        "updatedAt": "2026-08-09T18:46:17+08:00",
+        "resolvedAt": "2026-08-09T18:46:17+08:00",
+        "resolver": "codex",
+        "fixCommit": "2b970ce031bbab567890e4fd8c9d03a8b456eeaf",
+        "validation": "2026-08-09 same-date First-Line gate passed; final closure closed with first_line_viewpoints passed",
+        "prevention": "gate",
+        "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-first-line-viewpoints-recurring-960303398b491ab3.md"
+      },
+      {
+        "id": "2026-08-09-first-line-viewpoints-recurring-38b0aa2aca98027e",
+        "date": "2026-08-09",
+        "title": "Recurring problem: first_line_viewpoints",
+        "status": "resolved",
+        "state": "resolved",
+        "priority": "normal",
+        "laneId": "first_line_viewpoints",
+        "category": "recurring_automation_issue",
+        "failedGate": "repeated daily supervision signal",
+        "reportPath": "runtime://daily-supervision/2026-08-08",
+        "dataGenerated": "inspect linked daily reports",
+        "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+        "createdAt": "2026-08-09T08:45:47.143Z",
+        "updatedAt": "2026-08-09T18:46:15+08:00",
+        "resolvedAt": "2026-08-09T18:46:15+08:00",
+        "resolver": "codex",
+        "fixCommit": "2b970ce031bbab567890e4fd8c9d03a8b456eeaf",
+        "validation": "2026-08-09 same-date First-Line gate passed; final closure closed with first_line_viewpoints passed",
+        "prevention": "gate",
+        "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-first-line-viewpoints-recurring-38b0aa2aca98027e.md"
+      },
       {
         "id": "2026-08-05-business-signals-recurring-05f820ce67869f02",
         "date": "2026-08-05",
@@ -634,15 +971,15 @@
           },
           {
             "label": "Claims",
-            "value": 70
+            "value": 43
           },
           {
             "label": "Events",
-            "value": 29
+            "value": 20
           },
           {
             "label": "QA",
-            "value": 224
+            "value": 228
           }
         ]
       },
@@ -683,16 +1020,16 @@
       {
         "id": "collection",
         "label": "采集",
-        "status": "partial",
+        "status": "passed",
         "counts": {
           "discovered": 290,
-          "capture_succeeded": 253,
-          "capture_failed": 1,
-          "raw_documents": 253
+          "capture_succeeded": 248,
+          "capture_failed": 0,
+          "raw_documents": 248
         },
         "evidence": [
-          "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/manifest.json",
-          "agent-workflow/reports/2026-08-09-guanlan-daily-monitor-log.md"
+          "01-SiteV2/content/11-databases/data-center-v4/2026-08-10/manifest.json",
+          "agent-workflow/reports/2026-08-10-guanlan-daily-monitor-log.md"
         ]
       },
       {
@@ -700,34 +1037,34 @@
         "label": "事实构建",
         "status": "passed",
         "counts": {
-          "accepted_claims": 70,
+          "accepted_claims": 43,
           "rejected_claims": 0,
-          "accepted": 70,
+          "accepted": 43,
           "rejected": 0,
-          "pending_claims": 8,
-          "canonical_events": 29,
-          "entities": 42,
-          "relationships": 78,
+          "pending_claims": 0,
+          "canonical_events": 20,
+          "entities": 26,
+          "relationships": 43,
           "conflicts": 0,
-          "qa_queue": 224
+          "qa_queue": 228
         },
         "evidence": [
-          "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/manifest.json",
-          "agent-workflow/reports/2026-08-09-data-center-v4-integrity-gate.json"
+          "01-SiteV2/content/11-databases/data-center-v4/2026-08-10/manifest.json",
+          "agent-workflow/reports/2026-08-10-data-center-v4-integrity-gate.json"
         ]
       },
       {
         "id": "application_projection",
         "label": "应用投影",
-        "status": "passed",
+        "status": "partial",
         "counts": {
           "opportunity_map": "passed",
           "trend_radar": "passed",
-          "funding_insights": "passed",
+          "funding_insights": "failed",
           "fde_hardware_sync": "passed"
         },
         "evidence": [
-          "agent-workflow/reports/2026-08-09-persistent-asset-manifest.json"
+          "agent-workflow/reports/2026-08-10-persistent-asset-manifest.json"
         ]
       },
       {
@@ -738,18 +1075,18 @@
           "v4_bundle_ready": true
         },
         "evidence": [
-          "agent-workflow/reports/2026-08-09-persistent-asset-manifest.json"
+          "agent-workflow/reports/2026-08-10-persistent-asset-manifest.json"
         ]
       }
     ],
     "latestProduction": {
-      "date": "2026-08-09",
-      "discovered": 253,
-      "captured": 253,
-      "claims": 78,
-      "events": 29,
-      "entities": 42,
-      "relationships": 78
+      "date": "2026-08-10",
+      "discovered": 248,
+      "captured": 248,
+      "claims": 43,
+      "events": 20,
+      "entities": 26,
+      "relationships": 43
     },
     "sync": [
       {
@@ -770,7 +1107,7 @@
       {
         "label": "Pipeline Dashboard",
         "status": "passed",
-        "detail": "2026-08-09T05:37:19.032Z"
+        "detail": "2026-08-10T01:55:44.440Z"
       },
       {
         "label": "Daily Supervision",
@@ -784,45 +1121,47 @@
       "meta": {
         "version": "COLLECTION-TELEMETRY-V1.0",
         "ops_version": "OPS-V2.0.0-v4-telemetry",
-        "data_date": "2026-08-09",
-        "generated_at": "2026-08-09T05:37:19.003Z",
+        "data_date": "2026-08-10",
+        "generated_at": "2026-08-10T01:55:44.399Z",
         "scope": "OPS",
         "canonical_writeback": false,
         "source_of_truth": "Data Center V4 manifest and integrity gate"
       },
       "collection": {
         "discovered": 290,
-        "capture_succeeded": 253,
-        "capture_failed": 1,
-        "raw_documents": 253
+        "capture_succeeded": 248,
+        "capture_failed": 0,
+        "raw_documents": 248
       },
       "factBuild": {
-        "accepted_claims": 70,
+        "accepted_claims": 43,
         "rejected_claims": 0,
-        "accepted": 70,
+        "accepted": 43,
         "rejected": 0,
-        "pending_claims": 8,
-        "canonical_events": 29,
-        "entities": 42,
-        "relationships": 78,
+        "pending_claims": 0,
+        "canonical_events": 20,
+        "entities": 26,
+        "relationships": 43,
         "conflicts": 0,
-        "qa_queue": 224,
+        "qa_queue": 228,
         "qa_by_status": {
-          "review_optional": 217,
-          "open": 7
+          "review_optional": 222,
+          "open": 6
         }
       },
       "v4Gate": {
         "status": "passed",
-        "manifest_date": "2026-08-09",
-        "gate_date": "2026-08-09",
+        "manifest_date": "2026-08-10",
+        "gate_date": "2026-08-10",
         "failures": [],
-        "warnings": []
+        "warnings": [
+          "No source-bounded hardware projection was produced."
+        ]
       },
       "applicationProjection": {
         "opportunity_map": "passed",
         "trend_radar": "passed",
-        "funding_insights": "passed",
+        "funding_insights": "failed",
         "fde_hardware_sync": "passed"
       },
       "publication": {
@@ -838,53 +1177,53 @@
     },
     "pipelineMeta": {
       "version": "OPS-V2.0.0-v4-telemetry",
-      "generatedAt": "2026-08-09T05:37:19.032Z",
+      "generatedAt": "2026-08-10T01:55:44.440Z",
       "dateRange": {
-        "start": "2026-08-03",
-        "end": "2026-08-09"
+        "start": "2026-08-04",
+        "end": "2026-08-10"
       },
       "source": "Data Center V4 manifest + collection-telemetry-v1",
       "telemetryVersion": "COLLECTION-TELEMETRY-V1.0"
     },
     "latest": {
-      "date": "2026-08-09",
-      "label": "2026.08.09",
-      "shortLabel": "08.09",
-      "discovered": 253,
-      "captured": 253,
-      "claims": 78,
-      "events": 29,
-      "entities": 42,
-      "relationships": 78,
+      "date": "2026-08-10",
+      "label": "2026.08.10",
+      "shortLabel": "08.10",
+      "discovered": 248,
+      "captured": 248,
+      "claims": 43,
+      "events": 20,
+      "entities": 26,
+      "relationships": 43,
       "conflicts": 0,
-      "qaQueue": 224,
-      "telemetryDate": "2026-08-09",
+      "qaQueue": 228,
+      "telemetryDate": "2026-08-10",
       "collection": {
         "discovered": 290,
-        "capture_succeeded": 253,
-        "capture_failed": 1,
-        "raw_documents": 253
+        "capture_succeeded": 248,
+        "capture_failed": 0,
+        "raw_documents": 248
       },
       "factBuild": {
-        "accepted_claims": 70,
+        "accepted_claims": 43,
         "rejected_claims": 0,
-        "accepted": 70,
+        "accepted": 43,
         "rejected": 0,
-        "pending_claims": 8,
-        "canonical_events": 29,
-        "entities": 42,
-        "relationships": 78,
+        "pending_claims": 0,
+        "canonical_events": 20,
+        "entities": 26,
+        "relationships": 43,
         "conflicts": 0,
-        "qa_queue": 224,
+        "qa_queue": 228,
         "qa_by_status": {
-          "review_optional": 217,
-          "open": 7
+          "review_optional": 222,
+          "open": 6
         }
       },
       "applicationProjection": {
         "opportunity_map": "passed",
         "trend_radar": "passed",
-        "funding_insights": "passed",
+        "funding_insights": "failed",
         "fde_hardware_sync": "passed"
       },
       "publication": {
@@ -892,16 +1231,29 @@
       }
     },
     "totals": {
-      "discovered": 1760,
-      "captured": 1760,
-      "claims": 617,
-      "events": 210,
-      "entities": 324,
-      "relationships": 617,
+      "discovered": 1765,
+      "captured": 1765,
+      "claims": 509,
+      "events": 186,
+      "entities": 275,
+      "relationships": 509,
       "conflicts": 0,
-      "qaQueue": 1550
+      "qaQueue": 1579
     },
     "days": [
+      {
+        "date": "2026-08-10",
+        "label": "2026.08.10",
+        "shortLabel": "08.10",
+        "discovered": 248,
+        "captured": 248,
+        "claims": 43,
+        "events": 20,
+        "entities": 26,
+        "relationships": 43,
+        "conflicts": 0,
+        "qaQueue": 228
+      },
       {
         "date": "2026-08-09",
         "label": "2026.08.09",
@@ -979,19 +1331,6 @@
         "relationships": 90,
         "conflicts": 0,
         "qaQueue": 221
-      },
-      {
-        "date": "2026-08-03",
-        "label": "2026.08.03",
-        "shortLabel": "08.03",
-        "discovered": 243,
-        "captured": 243,
-        "claims": 151,
-        "events": 44,
-        "entities": 75,
-        "relationships": 151,
-        "conflicts": 0,
-        "qaQueue": 199
       }
     ],
     "engineQuality": {}
