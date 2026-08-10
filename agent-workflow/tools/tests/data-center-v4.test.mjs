@@ -306,6 +306,15 @@ test("URL-less SourceArtifact ids use repository-relative paths", () => {
   assert.equal(artifact.source_artifact_id, expectedId);
 });
 
+test("URL-less restored SourceArtifact ids honor the accepted intake identity", () => {
+  const raw = { content_hash: "same-content", source_name: "Source without URL" };
+  const artifact = sourceArtifact(raw, path.join(root, "private-evidence", "moved.json"), {
+    source_artifact_id: "SA-accepted-intake-id",
+  });
+
+  assert.equal(artifact.source_artifact_id, "SA-accepted-intake-id");
+});
+
 test("opinion article does not become a regulation or hardware event", () => {
   const bundle = buildBundle([
     entry("opinion", "Lorde says AI glasses are not sexy", "Lorde says AI glasses are not sexy. A related lawsuit is mentioned later in background material. Most Popular\nApple sues another company.")

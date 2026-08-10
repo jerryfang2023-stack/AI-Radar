@@ -501,13 +501,20 @@ function trimBoilerplate(text) {
   return normalizeEvidenceBody(text);
 }
 
-function sourceArtifact(raw, file) {
+function sourceArtifact(raw, file, intakeDocument = null) {
   const sourceUrl = cleanString(raw.original_url || raw.canonical_url || raw.source_url || raw.url || raw.link || raw.discovery_record?.origin_url);
   const contentHash = cleanString(raw.content_hash || raw.full_text_hash || hash(raw.clean_text || raw.full_text));
-  const sourceIdentity = sourceUrl || rel(file);
+  // URL-less accepted intake entries must keep their immutable intake identity.
+  // The physical evidence path is allowed to change when originals move into
+  // the private store, so it cannot be used as a durable SourceArtifact key.
+  const acceptedSourceArtifactId = cleanString(intakeDocument?.source_artifact_id);
+  const sourceIdentity = sourceUrl || cleanString(raw.source_identity);
+  const sourceArtifactId = sourceIdentity
+    ? `SA-${hash(`${sourceIdentity}|${contentHash}`)}`
+    : acceptedSourceArtifactId || `SA-${hash(`${rel(file)}|${contentHash}`)}`;
   const snapshotRefs = [evidenceRef(contentHash)];
   return {
-    source_artifact_id: `SA-${hash(`${sourceIdentity}|${contentHash}`)}`,
+    source_artifact_id: sourceArtifactId,
     source_url: sourceUrl,
     canonical_url: cleanString(raw.canonical_url || sourceUrl),
     publisher: cleanString(raw.source_name),
@@ -1568,17 +1575,18 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
   }
 
   const uniqueEntries = new Map();
-  for (const { raw, file } of rawEntries) {
-    const artifact = sourceArtifact(raw, file);
+  for (const { raw, file, intake_document: intakeDocument } of rawEntries) {
+    const artifact = sourceArtifact(raw, file, intakeDocument);
     const existing = uniqueEntries.get(artifact.source_artifact_id);
     if (!existing) {
-      uniqueEntries.set(artifact.source_artifact_id, { raw, file, artifact });
+      uniqueEntries.set(artifact.source_artifact_id, { raw, file, artifact, intakeDocument });
       continue;
     }
     existing.artifact.snapshot_refs = [...new Set([...existing.artifact.snapshot_refs, ...artifact.snapshot_refs])];
     if (cleanString(raw.clean_text || raw.full_text).length > cleanString(existing.raw.clean_text || existing.raw.full_text).length) {
       existing.raw = raw;
       existing.file = file;
+      existing.intakeDocument = intakeDocument;
       existing.artifact.publisher = artifact.publisher;
       existing.artifact.capture_method = artifact.capture_method;
       existing.artifact.captured_at = artifact.captured_at;
@@ -2168,7 +2176,7 @@ function loadRawEntries(date) {
   const intake = loadSourceIntakeEntries(root, date);
   if (intake) {
     for (const entry of intake.entries) {
-      const artifact = sourceArtifact(entry.raw, entry.file);
+      const artifact = sourceArtifact(entry.raw, entry.file, entry.intake_document);
       const expectedRawId = `RAW-${hash(`${date}|${artifact.source_artifact_id}`)}`;
       if (artifact.source_artifact_id !== entry.intake_document.source_artifact_id) {
         throw new Error(`${entry.intake_document.raw_id}: structured intake SourceArtifact identity drift`);

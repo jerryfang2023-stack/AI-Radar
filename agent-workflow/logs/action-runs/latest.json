@@ -1,37 +1,39 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-10T02:56:28.026Z",
+  "generated_at": "2026-08-10T03:02:05.710Z",
   "date": "2026-08-10",
-  "action": "Enforce stepwise recovery without recollection",
+  "action": "Repair URL-less restored SourceArtifact identity",
   "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
   "status": "partial",
-  "summary": "Documented and applied the rule that downstream retries must restore accepted same-date intake and resume at the first failed stage instead of recollecting raw sources.",
+  "summary": "Downstream V4 retry failed because URL-less intake entries recomputed SourceArtifact IDs from moved private-evidence paths; preserve accepted intake IDs during resumed builds.",
   "contexts": [],
   "changed_files": [
-    "AGENTS.md"
+    "agent-workflow/tools/build-data-center-v4.mjs",
+    "agent-workflow/tools/tests/data-center-v4.test.mjs"
   ],
   "outputs": [
     "resume_run_id:31350045028"
   ],
   "checks": [
-    "cancelled duplicate collection run 31350578432"
+    "node --check build-data-center-v4.mjs; node --test data-center-v4.test.mjs (126/126)"
   ],
   "issues": [
-    "Repeated full collection wastes time and violates immutable accepted input rule"
+    "RAW-71b766e48d48981a identity drift after private evidence hydration"
   ],
   "risks": [
-    "Resume workflow still requires remote artifact availability"
+    "Requires one targeted resume run for production confirmation"
   ],
   "lessons": [
-    "Repair the first failing stage and preserve successful upstream artifacts"
+    "Physical evidence paths are not durable identities for URL-less accepted sources"
   ],
   "reusable_rules": [
-    "Do not recollect accepted same-date source artifacts on downstream retry"
+    "When resuming accepted intake",
+    "use intake SourceArtifact ID for URL-less records"
   ],
   "retired_flags": [],
   "notes": [
-    "Next production retry will use workflow resume_run_id and verify collection step is skipped"
+    "No raw recollection; next run reuses 31350045028 artifact"
   ]
 }
