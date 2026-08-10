@@ -1,39 +1,48 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-10T03:02:05.710Z",
+  "generated_at": "2026-08-10T03:14:35.186Z",
   "date": "2026-08-10",
-  "action": "Repair URL-less restored SourceArtifact identity",
+  "action": "Complete stepwise daily production and deployment",
   "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
-  "status": "partial",
-  "summary": "Downstream V4 retry failed because URL-less intake entries recomputed SourceArtifact IDs from moved private-evidence paths; preserve accepted intake IDs during resumed builds.",
+  "status": "success",
+  "summary": "Reused accepted 2026-08-10 intake from failed run 31350045028, repaired URL-less SourceArtifact identity, generated and published financing card, refreshed afternoon Follow-Builders independently, merged outputs, and verified live deployment.",
   "contexts": [],
   "changed_files": [
+    "AGENTS.md",
     "agent-workflow/tools/build-data-center-v4.mjs",
-    "agent-workflow/tools/tests/data-center-v4.test.mjs"
+    "agent-workflow/tools/tests/data-center-v4.test.mjs",
+    "01-SiteV2/content/12-applications/funding-insights/2026-08-10.json",
+    "01-SiteV2/content/07-points/2026-08-10-builders-viewpoints.md"
   ],
   "outputs": [
-    "resume_run_id:31350045028"
+    "run:31351449489",
+    "pr:580",
+    "follow_builders_pr:582",
+    "merge:c2b3a40006678a11970a6dbf5d8d3c9b21a41a71",
+    "pages:31351907118"
   ],
   "checks": [
-    "node --check build-data-center-v4.mjs; node --test data-center-v4.test.mjs (126/126)"
+    "source collection skipped on resumed run",
+    "V4/funding/trend/opportunity/operations/pre-commit gates passed",
+    "Pages live HTTP 200",
+    "workspace audit ok"
   ],
   "issues": [
-    "RAW-71b766e48d48981a identity drift after private evidence hydration"
+    "Initial resumed build exposed URL-less SourceArtifact identity drift"
   ],
   "risks": [
-    "Requires one targeted resume run for production confirmation"
+    "External WeCom worktree remains intentionally preserved because it has unique unmerged commit"
   ],
   "lessons": [
-    "Physical evidence paths are not durable identities for URL-less accepted sources"
+    "Resume from accepted intake and repair only the failing stage; independent viewpoint lanes run separately"
   ],
   "reusable_rules": [
-    "When resuming accepted intake",
-    "use intake SourceArtifact ID for URL-less records"
+    "Never recollect accepted same-date raw artifacts for downstream failures"
   ],
   "retired_flags": [],
   "notes": [
-    "No raw recollection; next run reuses 31350045028 artifact"
+    "Funding frontstage latest_date=2026-08-10 card_count=236; live V4 currentDate=2026-08-10 events=1969 fde=111"
   ]
 }
