@@ -98,17 +98,18 @@ projection. This isolated action owns only the Vault build, evidence-index sync,
 and Vault assertion; private evidence backup keeps its separate fail-closed
 contract and is not silently folded into the projection step.
 
-Final Closure also owns the independent Funding Portal publication bridge. It
-reads the accepted `funding-insights-v1.json` from WaveSight `origin/main`, maps
-and validates the full research-card contract in the sibling
-`Guanlan-Funding-Portal` repository, and publishes only when the data changed.
-Automatic publication is fail-closed on date regression, missing cards,
-unsupported Funding Insight versions, a dirty or diverged portal worktree, a
-failed push, or a failed live-data check. Accepted changes are committed and
-pushed to the portal `main` branch, deployed as a new immutable VPS release, and
-switched through the `current` symlink; a failed live check restores the previous
-release. This is part of Final Closure and must not become an eighth Windows
-task.
+Final Closure also owns the independent AI financing-site publication bridge.
+It reads the accepted `funding-insights-v1.json` and every `status: published`
+weekly/monthly report Markdown from WaveSight `origin/main`. The sibling
+`Guanlan-Funding-Portal` repository dynamically generates financing data,
+`reports.json`, and `report-bodies.json`; there is no hand-maintained report
+list. Automatic publication is fail-closed on date regression, missing cards or
+reports, incomplete report title/summary/body, unsupported Funding Insight
+versions, a dirty or diverged portal worktree, a failed push, or a failed live
+readback. Accepted changes are committed and pushed to portal `main`, deployed
+as a new immutable VPS release, and switched through the `current` symlink; a
+failed live check restores the previous release. This remains part of Final
+Closure and must not become an eighth Windows task.
 
 Before diagnosing a local private-evidence coverage gap, run the remote boundary
 gate. It requires the configured private-evidence checkout and authenticated
@@ -133,7 +134,7 @@ exists.
 
 First-Line Viewpoints recovery is date-strict. The 09:15 controller may treat
 the morning RSS lane as healthy only when `follow-builders-daily.json` was
-generated on the requested Asia/Shanghai date; a merely recent previous-day
+generated on the requested Asia/Shanghai date; a prior-day
 bundle must fail the gate and trigger the bounded recovery workflow.
 
 Install or repair the complete local contract with

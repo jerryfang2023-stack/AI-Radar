@@ -4,14 +4,14 @@ description: Use when writing, revising, or auditing a WaveSight monthly busines
 metadata:
   guanlan:
     version: "1.0.0"
-    lane: "Guanlan Research"
+    lane: "AI financing-site reports"
     status: "downstream application"
     order: 95
     responsibility: "Write the monthly business-structure report from accepted V4 evidence."
     upstream: "Accepted V4 CanonicalEvents and Claim/Source refs; weekly reports; independent O/C context; Opportunity Map projection"
     downstream: "monthly business structure report and next-month verification list"
     gates: "complete-month window, valid evidence IDs, factual E boundary, structural judgment, observable verification conditions"
-    recent_learning: "V3 Desk, Signal Cards, old graph data, and compatibility mappings are retired and cannot be monthly-report inputs."
+    recent_learning: "V3 inputs and Guanlan Research are retired. Accepted monthly Markdown publishes through the AI financing site and must not regenerate duplicate report HTML."
     mirrored_in_skill_store: true
     memory_required: false
 ---

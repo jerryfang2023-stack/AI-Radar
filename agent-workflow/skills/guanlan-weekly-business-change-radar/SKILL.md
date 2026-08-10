@@ -4,14 +4,14 @@ description: Use when writing, revising, or auditing the WaveSight weekly AI bus
 metadata:
   guanlan:
     version: "1.3.0"
-    lane: "Guanlan Research"
+    lane: "AI financing-site reports"
     status: "downstream application"
     order: 90
     responsibility: "Generate the weekly judgment report from accepted V4 event evidence with independent O/C context."
     upstream: "Accepted V4 CanonicalEvents and Claim/Source refs; independent First-Line Viewpoints and Community Intelligence context"
     downstream: "weekly report Markdown"
     gates: "complete-week window, exact counts, valid E/O/C IDs, factual E boundary, cross-evidence threshold, report content gate"
-    recent_learning: "The report lane is independent from Opportunity Map generation. V3 Desk and Signal Cards are retired and must never be fallback inputs."
+    recent_learning: "The report lane is independent from Opportunity Map generation. Accepted Markdown publishes through the AI financing site; Guanlan Research and duplicate report HTML are retired."
     mirrored_in_skill_store: true
     memory_required: false
 ---

@@ -11,8 +11,8 @@ const args = new Map(process.argv.slice(2).map((arg) => {
 }));
 const kind = args.get("kind") || "weekly";
 const date = args.get("date") || "";
-export const SITE_VERSION = "SITE-V4.6.0-research-homepage";
-export const REPORTS_CENTER_VERSION = "REPORTS-V1.2.0-research-hub";
+export const SITE_VERSION = "SITE-V4.6.1-research-retirement";
+export const REPORTS_CENTER_VERSION = "REPORTS-V1.3.0-funding-portal";
 
 export function escapeHtml(value = "") {
   return String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
@@ -141,6 +141,20 @@ export function reportRoute(reportKind, metadata) {
   return reportKind === "weekly"
     ? `weekly-ai-business-change-radar-${metadata.date}.html`
     : `monthly-business-structure-${metadata.month}.html`;
+}
+
+export function reportPortalId(reportKind, metadata) {
+  if (reportKind === "weekly") return `weekly-${String(metadata.week || "").toLowerCase()}`;
+  return `monthly-${metadata.month}`;
+}
+
+export function redirectPage(target, { source = "", columnVersion = REPORTS_CENTER_VERSION } = {}) {
+  const safeTarget = escapeHtml(target);
+  return `<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="wavesight-version" content="${SITE_VERSION}"><meta name="wavesight-column-version" content="${columnVersion}">${source ? `<meta name="periodic-report-source" content="${escapeHtml(source)}">` : ""}
+<meta http-equiv="refresh" content="0; url=${safeTarget}"><link rel="canonical" href="${safeTarget}"><title>正在前往观澜 AI 融资站</title></head>
+<body><p>内容已迁移至 <a href="${safeTarget}">观澜 AI 融资站</a>。</p><script>location.replace(${JSON.stringify(target)});</script></body></html>\n`;
 }
 
 export function formatReportWindow(metadata) {
@@ -485,7 +499,7 @@ function shell(metadata, content, markdown) {
 <meta name="${sourceMetaName}" content="${escapeHtml(metadata.source)}"><title>${escapeHtml(metadata.title)}｜观澜 AI</title>
 <link rel="icon" href="assets/brand/logo-wavesight-reference-symbol.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/data-center-v4.css"><link rel="stylesheet" href="assets/weekly-report.css"></head>
 <body class="weekly-report-page ${kind === "monthly" ? "monthly-report-page " : ""}dc-report-page"><header class="dc-header"><a class="dc-brand" href="data-center.html" aria-label="观澜 AI 数据中心"><img src="assets/brand/logo-wavesight-reference-horizontal.svg" alt="观澜 AI Wavesight AI"></a><button class="dc-nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="dc-sidebar">栏目</button></header>
-<div class="dc-layout"><aside class="dc-sidebar" id="dc-sidebar" data-sidebar><nav aria-label="数据中心与应用中心"><section class="dc-nav-group"><h2>数据中心</h2><a href="data-center.html?view=events">事件库</a><a href="data-center.html?view=community">社群情报</a><a href="data-center.html?view=viewpoints">一线观点</a><a href="data-center.html?view=index">实体库</a></section><section class="dc-nav-group dc-nav-apps"><h2>应用中心</h2><a href="trend-radar.html">变化雷达</a><a href="intelligence-map.html" aria-current="page">观澜研究</a></section></nav></aside>
+<div class="dc-layout"><aside class="dc-sidebar" id="dc-sidebar" data-sidebar><nav aria-label="数据中心与应用中心"><section class="dc-nav-group"><h2>数据中心</h2><a href="data-center.html?view=events">事件库</a><a href="data-center.html?view=community">社群情报</a><a href="data-center.html?view=viewpoints">一线观点</a><a href="data-center.html?view=index">实体库</a></section><section class="dc-nav-group dc-nav-apps"><h2>应用中心</h2><a href="trend-radar.html">变化雷达</a></section></nav></aside>
 <main class="weekly-report-shell dc-main dc-report-detail-main" id="main-content"><section class="weekly-report-hero" aria-labelledby="weekly-report-title"><div>${kind === "weekly" ? '<p class="weekly-report-kicker">Weekly Business Radar</p>' : ""}<div class="weekly-report-title-row"><h1 id="weekly-report-title">${escapeHtml(metadata.title)}</h1>${renderReportSelector(metadata)}</div></div></section>${kind === "weekly" ? `${renderFastRead(markdown)}${renderActionPanel(markdown)}` : ""}<div class="weekly-report-layout">${renderRail(markdown)}<article class="weekly-report-reader" aria-label="${typeLabel}正文">${content}</article></div></main></div><script src="assets/v4-report-shell.js"></script><script>(()=>{const selector=document.querySelector("[data-periodic-report-selector]");selector?.addEventListener("change",()=>{if(selector.value)window.location.assign(selector.value);});})();</script></body></html>\n`;
 }
 
@@ -537,8 +551,7 @@ export function refreshReportCenterHtml(html, rootDir = root) {
 
 function updateIntelligenceMap() {
   const file = path.join(root, "01-SiteV2", "site", "intelligence-map.html");
-  const html = refreshReportCenterHtml(fs.readFileSync(file, "utf8"), root);
-  fs.writeFileSync(file, html, "utf8");
+  fs.writeFileSync(file, redirectPage("https://www.zkdlj.vip/#reports"), "utf8");
 }
 
 function main() {
@@ -564,13 +577,16 @@ function main() {
   const promoted = parseFrontmatter(markdown);
   const route = reportRoute(kind, promoted.values);
   const source = path.relative(root, contentFile).replace(/\\/gu, "/");
-  const page = shell({ ...promoted.values, source }, renderBody(promoted.body), promoted.body);
+  const reportId = reportPortalId(kind, promoted.values);
+  if (!/^(weekly-\d{4}-w\d{2}|monthly-\d{4}-\d{2})$/u.test(reportId)) throw new Error(`invalid_report_portal_id:${reportId}`);
+  const target = `https://www.zkdlj.vip/#report/${reportId}`;
+  const page = redirectPage(target, { source });
   const routeFile = path.join(root, "01-SiteV2", "site", route);
   fs.writeFileSync(routeFile, page, "utf8");
   const latest = discoverPublishedReports(root, kind)[0];
   if (kind === "weekly" && latest?.date === promoted.values.date) fs.writeFileSync(path.join(root, "01-SiteV2", "site", "weekly-ai-business-change-radar.html"), page, "utf8");
   updateIntelligenceMap();
-  console.log(JSON.stringify({ ok: true, kind, date, route, source }, null, 2));
+  console.log(JSON.stringify({ ok: true, kind, date, route, source, target }, null, 2));
 }
 
 if (path.resolve(process.argv[1] || "") === fileURLToPath(import.meta.url)) main();

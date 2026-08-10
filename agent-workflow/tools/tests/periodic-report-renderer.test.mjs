@@ -12,13 +12,14 @@ import {
   formatReportWindow,
   parseFrontmatter,
   renderBody,
+  reportPortalId,
   SITE_VERSION,
   REPORTS_CENTER_VERSION,
 } from "../render-periodic-report-pages.mjs";
 
 test("periodic renderer owns the report-center release version", () => {
-  assert.equal(SITE_VERSION, "SITE-V4.6.0-research-homepage");
-  assert.equal(REPORTS_CENTER_VERSION, "REPORTS-V1.2.0-research-hub");
+  assert.equal(SITE_VERSION, "SITE-V4.6.1-research-retirement");
+  assert.equal(REPORTS_CENTER_VERSION, "REPORTS-V1.3.0-funding-portal");
 });
 
 test("periodic report titles carry tension and a business consequence", () => {
@@ -153,15 +154,15 @@ test("monthly reports preserve prose and render editorial tables for mobile", ()
   assert.doesNotMatch(html, /^\|[-:| ]+\|/mu);
 });
 
-test("report center feature cards always match the latest published sources", () => {
+test("report center and report routes redirect to stable funding portal hashes", () => {
   const root = process.cwd();
   const html = fs.readFileSync(path.join(root, "01-SiteV2", "site", "intelligence-map.html"), "utf8");
+  assert.match(html, /https:\/\/www\.zkdlj\.vip\/#reports/u);
   for (const reportKind of ["weekly", "monthly"]) {
-    const latest = discoverPublishedReports(root, reportKind)[0];
-    assert.ok(latest, `latest ${reportKind} report must exist`);
-    const feature = html.match(new RegExp(`<article class="report-feature-card is-${reportKind}">[\\s\\S]*?<\\/article>`, "u"))?.[0] || "";
-    assert.ok(feature.includes(escapeHtml(latest.title)), `${reportKind} feature title must be current`);
-    assert.ok(feature.includes(`href="${latest.route}"`), `${reportKind} feature route must be current`);
-    assert.ok(feature.includes(formatReportWindow(latest)), `${reportKind} feature window must be current`);
+    for (const report of discoverPublishedReports(root, reportKind)) {
+      const route = fs.readFileSync(path.join(root, "01-SiteV2", "site", report.route), "utf8");
+      assert.match(route, new RegExp(`https://www\\.zkdlj\\.vip/#report/${reportPortalId(reportKind, report)}`, "u"));
+      assert.doesNotMatch(route, /weekly-report-reader|dc-sidebar/u);
+    }
   }
 });

@@ -35,15 +35,15 @@ function parseCurrentVersions() {
 
 const versions = parseCurrentVersions();
 const expected = {
-  release: "V4.8.0-research-homepage",
-  packageVersion: "4.8.0",
+  release: "V4.8.1-research-retirement",
+  packageVersion: "4.8.1",
   productVersion: "V4.8",
-  gitTag: "v4.8.0-research-homepage",
+  gitTag: "v4.8.1-research-retirement",
   dataCenterRelease: "GUANLAN-DATA-CENTER-V4.8.1-internal-foundation",
   dataCenterGitTag: "data-center-v4.8.1-internal-foundation",
-  site: "SITE-V4.6.0-research-homepage",
+  site: "SITE-V4.6.1-research-retirement",
   ops: "OPS-V2.0.0-v4-telemetry",
-  reports: "REPORTS-V1.2.0-research-hub",
+  reports: "REPORTS-V1.3.0-funding-portal",
   opportunity: "OMAP-V2.0.0-v4-evidence",
   trendRadar: "TRADAR-V1.1.0-tag-v4-1",
   taxonomy: "TAG-V4.1",
@@ -69,8 +69,8 @@ const ledgerChecks = [
   ["Tag taxonomy version", expected.taxonomy],
   ["Funding Insights column version", expected.fundingInsights],
   ["Person-account review contract", expected.person],
-  ["Weekly report page-generator Skill", "guanlan-weekly-report-page-generator v1.2.0"],
-  ["Monthly report page-generator Skill", "guanlan-monthly-report-page-generator v1.2.0"],
+  ["Weekly report page-generator Skill", "guanlan-weekly-report-page-generator v1.3.0"],
+  ["Monthly report page-generator Skill", "guanlan-monthly-report-page-generator v1.3.0"],
   ["Data Center supervisor Skill", "guanlan-data-center-supervisor v1.3.1"],
   ["Opportunity Map updater Skill", "guanlan-opportunity-radar-updater v1.5.0"],
   ["Trend Radar updater Skill", "guanlan-trend-radar-updater v1.1.0"],
@@ -135,13 +135,13 @@ expectText("01-SiteV2/site/intelligence-map.html", expected.reports);
 expectText("01-SiteV2/site/weekly-ai-business-change-radar.html", expected.reports);
 expectText("01-SiteV2/site/opportunity-map.html", expected.opportunity);
 expectText("01-SiteV2/site/trend-radar.html", expected.trendRadar);
-for (const file of new Set(sitePages)) expectText(file, 'href="trend-radar.html"', "Trend Radar navigation entry");
+for (const file of ["01-SiteV2/site/data-center.html", "01-SiteV2/site/opportunity-map.html", "01-SiteV2/site/trend-radar.html"]) expectText(file, 'href="trend-radar.html"', "Trend Radar navigation entry");
 const historicalReportPages = fs.readdirSync(path.join(root, "01-SiteV2/site"))
   .filter((name) => /^(weekly-ai-business-change-radar-\d{4}-\d{2}-\d{2}|monthly-business-structure-\d{4}-\d{2})\.html$/u.test(name))
   .map((name) => `01-SiteV2/site/${name}`);
 for (const file of historicalReportPages) {
   const html = read(file);
-  if (!/REPORTS-V1\.(?:0\.0-periodic-report-center|1\.0-lane-independent|2\.0-research-hub)/u.test(html)) {
+  if (!/REPORTS-V1\.3\.0-funding-portal/u.test(html)) {
     fail(`${file} missing supported Guanlan Research version`);
   }
   rejectText(file, expected.opportunity, "Opportunity Map column version");
@@ -188,7 +188,8 @@ const skillVersions = [
   ["agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md", 'version: "1.1.0"'],
   ["agent-workflow/skills/follow-builders/SKILL.md", 'version: "2.1.1"'],
   ["agent-workflow/skills/guanlan-funding-insight-generator/SKILL.md", 'version: "1.6.0"'],
-  ["agent-workflow/skills/guanlan-weekly-report-page-generator/SKILL.md", 'version: "1.2.0"'],
+  ["agent-workflow/skills/guanlan-weekly-report-page-generator/SKILL.md", 'version: "1.3.0"'],
+  ["agent-workflow/skills/guanlan-monthly-report-page-generator/SKILL.md", 'version: "1.3.0"'],
   ["agent-workflow/skills/guanlan-monthly-business-structure-report/SKILL.md", 'version: "1.0.0"'],
   ["agent-workflow/skills/guanlan-skill-editor/SKILL.md", 'version: "2.0.1"'],
   ["agent-workflow/skills/guanlan-code-rule-auditor/SKILL.md", 'version: "1.2.1"'],
@@ -205,7 +206,7 @@ rejectText("agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md", "
 rejectText("agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md", "current SITE-V3.4.5", "current V3 site claim");
 expectText("agent-workflow/product/column-tag-taxonomy-v1.json", '"canonical_fact_input": false');
 expectText("context/frontstage-page-contracts.md", expected.site, "current SITE version");
-expectText("context/project-memory.md", "SITE-V4.6.0", "current SITE major/minor version");
+expectText("context/project-memory.md", "SITE-V4.6.1", "current SITE major/minor version");
 rejectText("context/frontstage-page-contracts.md", "The legacy Business Signals Card set remains an internal compatibility dataset", "active Card compatibility contract");
 rejectText("context/project-memory.md", "Business Signals is an internal compatibility chain for Raw / Pool / Card", "active Raw/Pool/Card operating model");
 

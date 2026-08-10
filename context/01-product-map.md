@@ -27,7 +27,7 @@ priority: current
 | Targeted Backfill | BACKFILL-V1 recurring company/product sweeps and explicit funding/deployment fact-gap tasks | Active internal operations layer |
 | Trend Radar | Accepted-event daily, weekly and monthly factual change projection with evidence links and coverage disclosure | Active downstream application; excluded from V4 core |
 | Opportunity outputs | V4 evidence-backed downstream interpretation, excluded from V4 core | Internal lab; not public navigation |
-| Guanlan Research | Periodic reports plus capital/funding and enterprise AI deployment research topics | Active downstream application hub |
+| AI financing site reports | Accepted weekly/monthly reports and financing intelligence | Independent public application at `https://www.zkdlj.vip/` |
 | Dashboard | Production-chain, source traceability, data quality, version governance, Skill Store, and release status | Active backend |
 
 ## Current Product Boundary
@@ -41,7 +41,7 @@ Public applications
 `- Funding Insights
 ```
 
-FDE, AI Hardware, entity relationships, Trend Radar, Guanlan Research, Opportunity Map, and the dashboard remain internal supporting surfaces. Funding Insights is an independent public application backed by the governed financing and investment-institution projections; it does not expose Data Center / Application Center as public columns.
+FDE, AI Hardware, entity relationships, Trend Radar, Opportunity Map, and the dashboard remain internal supporting surfaces. FDE is reached through the Event Library theme view. Funding Insights and accepted weekly/monthly reports share the independent AI financing site; it does not expose Data Center / Application Center as public columns.
 
 ## Asset Flow
 
@@ -55,7 +55,7 @@ Daily monitor / BACKFILL-V1 targeted discovery
 |-> FDEObservation -> implementation dossier / lifecycle
 `-> HardwareFact -> dated snapshot -> factual change timeline
 -> JSON / JSONL / DuckDB
--> Trend Radar / Guanlan Research
+-> Trend Radar / financing-site reports
 -> downstream AIP / insight / decision-support applications
 ```
 

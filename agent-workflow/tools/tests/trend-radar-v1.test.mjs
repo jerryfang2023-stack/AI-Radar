@@ -11,11 +11,8 @@ const client = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/trend-rada
 const sharedStyles = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/data-center-v4.css"), "utf8");
 const currentPages = [
   "data-center.html",
-  "intelligence-map.html",
   "opportunity-map.html",
   "trend-radar.html",
-  "weekly-ai-business-change-radar.html",
-  "monthly-business-structure-2026-06.html",
 ].map((file) => fs.readFileSync(path.join(root, "01-SiteV2/site", file), "utf8"));
 
 test("Trend Radar uses the current factual column contract", () => {

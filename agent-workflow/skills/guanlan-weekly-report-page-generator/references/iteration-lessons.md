@@ -1,27 +1,6 @@
-# Weekly Report Page Iteration Lessons
+# Weekly Publication Lessons
 
-This file keeps only presentation lessons that remain compatible with `REPORTS-V1.2.0-research-hub`. Earlier Intelligence Map and relationship-network placement rules are retired.
-
-## Preserve
-
-- Use the accepted evidence-bounded headline unchanged in the H1, browser title, and Guanlan Research card.
-- Keep time-window selection on the Guanlan Research entry and report detail page.
-- Use compact tags instead of boxed KPI cards.
-- Render evidence and report sections as readable editorial modules rather than raw Markdown tables.
-- Keep data scope and method details in a restrained evidence appendix.
-- Keep responsive layouts free of horizontal overflow.
-- Keep the report read action attached to its card.
-
-## Do Not Restore
-
-- Opportunity Map matrices, Relation Paths, relationship networks, Trend Candidates, or History blocks on `intelligence-map.html`.
-- Shared IMAP metadata or `OMAP-V2.0.0-v4-evidence` on report pages.
-- V3 top navigation, retired return buttons, backend method/version footers, duplicate numbered headings, or long hero decks.
-- DeepSeek editing HTML, navigation, CSS, or version metadata.
-
-## Release Boundary
-
-- Main site metadata remains `SITE-V4.2.0-entity-history`.
-- Guanlan Research and report details use `REPORTS-V1.2.0-research-hub`.
-- Opportunity Map is independent and uses `OMAP-V2.0.0-v4-evidence` only on `opportunity-map.html`.
-- After project Skill changes, sync `.skill-store`, rebuild the Skill Registry/dashboard, and run the frontstage regression gate.
+- 2026-08-10: Do not optimize the retired local reading UI. Preserve accepted Markdown and publish it once through the AI financing site.
+- A stable report ID comes from the declared week, not a generic slug or filename title.
+- A compatible old URL is safer than a 404, but it must contain no duplicate body or navigation.
+- Inventory and newest-date regression are publication failures, not ordinary content diffs.

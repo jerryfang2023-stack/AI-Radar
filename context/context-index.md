@@ -55,8 +55,9 @@ This file is the reading router. Do not use old closeout files as current truth.
 ## Active Frontstage
 
 - `01-SiteV2/site/data-center.html`: Event Library, Community Intelligence, First-Line Viewpoints, and Entity Library; FDE / hardware remain thematic deep views and relationships remain available in entity details.
-- `01-SiteV2/site/intelligence-map.html`: Guanlan Research hub for periodic reports, capital/funding research, and enterprise AI deployment topics.
-- `01-SiteV2/site/funding-insights.html`: source-backed Funding Insights.
+- `01-SiteV2/site/intelligence-map.html`: retired Guanlan Research compatibility redirect to `https://www.zkdlj.vip/#reports`.
+- `01-SiteV2/site/funding-insights.html`: retired compatibility redirect to the independent AI financing site.
+- `https://www.zkdlj.vip/`: public Financing Insights plus accepted weekly/monthly reports.
 - `01-SiteV2/site/opportunity-map.html`: source-backed Opportunity Map.
 - `01-SiteV2/site/weekly-ai-business-change-radar.html`: weekly AI business change radar detail page.
 - `01-SiteV2/site/v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, and `reports.html`: compatibility redirects only.

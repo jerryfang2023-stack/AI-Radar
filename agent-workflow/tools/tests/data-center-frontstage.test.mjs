@@ -304,7 +304,7 @@ test("data center page uses the official logo and sidebar navigation", () => {
   assert.ok(indexPosition > viewpointPosition);
   assert.match(html, />数据中心</u);
   assert.match(html, />应用中心</u);
-  assert.match(html, /href="intelligence-map\.html">观澜研究</u);
+  assert.doesNotMatch(html, /intelligence-map\.html|观澜研究/u);
   assert.doesNotMatch(html, /href="funding-insights\.html"|href="opportunity-map\.html"/u);
   assert.doesNotMatch(html, />报告中心<\/a>/u);
   assert.doesNotMatch(html, /data-center\.html\?view=companies/u);
@@ -377,52 +377,19 @@ test("first-line viewpoints uses both monitoring lanes and the three-level V4 pa
   assert.ok(data.intake.every((item) => item.laneCoverage.includes("afternoon-skill")));
 });
 
-test("Guanlan Research uses the focused two-center sidebar and owns research topics", () => {
+test("retired Guanlan Research route redirects to the funding portal report archive", () => {
   const html = fs.readFileSync(path.join(root, "01-SiteV2/site/intelligence-map.html"), "utf8");
-  const viewpointPosition = html.indexOf("data-center.html?view=viewpoints");
-  const indexPosition = html.indexOf("data-center.html?view=index");
-  const weeklyFeaturePosition = html.indexOf('class="report-feature-card is-weekly"');
-  const monthlyFeaturePosition = html.indexOf('class="report-feature-card is-monthly"');
-  const weeklyArchivePosition = html.indexOf('aria-labelledby="weekly-archive-title"');
-  const monthlyArchivePosition = html.indexOf('aria-labelledby="monthly-archive-title"');
-
-  assert.match(html, /http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate"/u);
-  assert.match(html, /assets\/data-center-v4\.css/u);
-  assert.match(html, /class="dc-sidebar"/u);
-  assert.match(html, /data-center\.html\?view=events">事件库/u);
-  assert.ok(indexPosition > viewpointPosition);
-  assert.doesNotMatch(html, /data-center\.html\?view=companies/u);
-  assert.doesNotMatch(html, /data-center\.html\?view=products/u);
-  assert.match(html, /<title>观澜研究｜观澜 AI<\/title>/u);
-  assert.match(html, /href="intelligence-map\.html" aria-current="page">观澜研究/u);
-  assert.match(html, /href="funding-insights\.html"/u);
-  assert.match(html, /资本与融资/u);
-  assert.match(html, /企业 AI 落地/u);
-  assert.doesNotMatch(html, /href="opportunity-map\.html"/u);
-  assert.match(html, /class="report-feature-grid"/u);
-  assert.match(html, /class="research-lanes-head report-section-head"/u);
-  assert.match(html, /class="report-archives-head report-section-head"/u);
-  assert.match(html, /\.report-section-head \{ display: grid; grid-template-columns: max-content minmax\(0, 1fr\); align-items: baseline/u);
-  assert.ok(weeklyFeaturePosition >= 0 && weeklyFeaturePosition < monthlyFeaturePosition);
-  assert.match(html, /REPORTS-V1\.2\.0-research-hub/u);
-  assert.match(html, /class="report-archive-grid"/u);
-  assert.ok(weeklyArchivePosition >= 0 && weeklyArchivePosition < monthlyArchivePosition);
-  assert.match(html, /最新月报/u);
-  assert.match(html, /最新周报/u);
-  assert.doesNotMatch(html, /data-map-panel|data-cell-modal|industry-reports-frontstage\.json/u);
-  assert.doesNotMatch(html, /Reports Center/iu);
-  assert.doesNotMatch(html, /关联路径/u);
-  assert.doesNotMatch(html, /data-network-list/u);
-  assert.doesNotMatch(html, /relationSpecs|buildRelations|renderNetwork/u);
-  assert.doesNotMatch(html, /class="wavesight-topbar"/u);
-  assert.doesNotMatch(html, /class="wavesight-nav"/u);
+  assert.match(html, /REPORTS-V1\.3\.0-funding-portal/u);
+  assert.match(html, /url=https:\/\/www\.zkdlj\.vip\/#reports/u);
+  assert.match(html, /location\.replace\("https:\/\/www\.zkdlj\.vip\/#reports"\)/u);
+  assert.doesNotMatch(html, /dc-sidebar|report-feature-card|report-archive-grid/u);
 });
 
 test("opportunity map remains a noindex internal lab route", () => {
   const html = fs.readFileSync(path.join(root, "01-SiteV2/site/opportunity-map.html"), "utf8");
 
   assert.match(html, /<title>机会地图｜观澜 AI<\/title>/u);
-  assert.match(html, /href="intelligence-map\.html">观澜研究/u);
+  assert.doesNotMatch(html, /intelligence-map\.html|观澜研究/u);
   assert.match(html, /<meta name="robots" content="noindex, nofollow">/u);
   assert.doesNotMatch(html, /href="opportunity-map\.html" aria-current="page"/u);
   assert.doesNotMatch(html, /href="funding-insights\.html"/u);

@@ -6,13 +6,13 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 ## Current Version
 
-- Current release: WaveSight `V4.8.0-research-homepage`; the public shell is `SITE-V4.6.0-research-homepage`.
+- Current release: WaveSight `V4.8.1-research-retirement`; the compatibility shell is `SITE-V4.6.1-research-retirement`.
 - Current Data Center Git baseline: `GUANLAN-DATA-CENTER-V4.8.1-internal-foundation`, tagged independently as `data-center-v4.8.1-internal-foundation`.
 - Funding Insights remains independently versioned as `FUNDING-INSIGHT-V1.4.0-financing-fields`; Data Center tags must not be reused for the application website.
 - Current local knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.2-private-evidence-linked`). It is the local operations and human-readable knowledge front door; the repository-local `vault/` path is retired.
 - Current local automation: exactly seven Windows tasks; Final Closure owns the strict 24-table `DATA-LAKE-V4.1` refresh, and Hermes watchdog/heartbeat is one control-plane cycle.
 - Current evidence archive: `PRIVATE-EVIDENCE-STORE-V2.0` is the authoritative content-addressed original-body store outside the public repository and Vault. The public repository and Vault store locators and links, never complete original bodies.
-- Current public product: Funding Insights is an independent application website backed by Data Center data. Data Center, Application Center, reports, and operations pages are internal supporting surfaces rather than public columns.
+- Current public product: the independent AI financing site at `https://www.zkdlj.vip/` owns Funding Insights and weekly/monthly reports. Data Center, Trend Radar, Opportunity Map, and operations remain internal supporting surfaces.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
 - Current Business Signals column version: BSIG-V2.2.0-pipeline-stage-ownership.
 - Current First-Line Viewpoints column version: FLV-V1.1.0-history-backfill.
@@ -21,7 +21,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current Enterprise AI / FDE observation version: FDE-OBSERVATION-V1.0.
 - Current AI Hardware data version: HARDWARE-V1.0.
 - Current AI Hardware fact/snapshot versions: HARDWARE-FACT-V1.0 / HARDWARE-SNAPSHOT-V1.0.
-- Current Guanlan Research column version: REPORTS-V1.2.0-research-hub.
+- Current report-publication version: REPORTS-V1.3.0-funding-portal.
 - Current Opportunity Map column version: OMAP-V2.0.0-v4-evidence.
 - Current Trend Radar column version: TRADAR-V1.1.0-tag-v4-1.
 - Current Raw contract: RAW-V4.0. Full original bodies live only in the configured private evidence repository; public bundles retain `evidence://<content_hash>` locators and body-free metadata.
@@ -55,20 +55,21 @@ First-line viewpoints are a separate builders column. They are useful for readin
 
 | Entry | File | Role |
 |---|---|---|
-| Funding Insights / 融资情报 | `01-SiteV2/site/funding-insights.html` | independent public application website backed by evidence-linked Data Center and investment-institution projections |
+| AI Financing Site / 融资情报站 | `https://www.zkdlj.vip/` | independent public application owning financing cards and weekly/monthly reports |
 | Data Center / 数据中心 | `01-SiteV2/site/data-center.html` | internal factual-data serving and review surface |
-| Application Center / 应用中心 | `trend-radar.html`, `intelligence-map.html`, report routes | internal downstream analysis and research surfaces |
+| Application Center / 应用中心 | `trend-radar.html` | internal downstream factual-change surface; Guanlan Research is retired |
+| Report compatibility routes | `intelligence-map.html`, `reports.html`, weekly/monthly HTML routes | redirects only to the AI financing site |
 | Dashboard / 仪表盘 | `01-SiteV2/site/operations-console.html` | internal operations backend |
 
 The public website must not expose Data Center or Application Center as primary columns. Funding Insights owns its public navigation and may consume their governed data projections without exposing the internal information architecture.
 
 ## Retired Routes
 
-`v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, `reports.html`, and `pipeline-dashboard.html` are compatibility redirects only and must not regain page content or the V3 topbar.
+`v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, `intelligence-map.html`, `funding-insights.html`, `reports.html`, weekly/monthly HTML routes, and `pipeline-dashboard.html` are compatibility redirects only and must not regain duplicate page content.
 
 Follow-builders / builders viewpoints are active only as the independent First-Line Viewpoints column. They must not be used as business-signal facts, relationship-graph evidence, or trend-candidate evidence.
 
-If an old page rule conflicts with SITE-V4.4.0, delete or rebuild it instead of preserving V3 public compatibility.
+If an old page rule conflicts with `SITE-V4.6.1-research-retirement`, delete or rebuild it instead of restoring the retired research frontstage.
 
 ## Current Context
 

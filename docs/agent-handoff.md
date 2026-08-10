@@ -1,6 +1,6 @@
 ---
 title: WaveSight Current Handoff
-date: 2026-08-08
+date: 2026-08-10
 status: current
 encoding: UTF-8
 ---
@@ -12,9 +12,9 @@ This file keeps only the current handoff state needed by a new window. Historica
 ## Current Position
 
 - Project: WaveSight AI / 观澜 AI.
-- Current release: `V4.7.0-investment-institution-library`; public website shell `SITE-V4.5.0-investment-institution-library`.
+- Current release: `V4.8.1-research-retirement`; compatibility shell `SITE-V4.6.1-research-retirement`.
 - Product role: AI industry data center and structured factual data foundation for downstream products and research.
-- Current public frontstage: Data Center (Event Library / Community Intelligence / First-Line Viewpoints / Entity Library) and Application Center (Trend Radar / Guanlan Research).
+- Current public application: the independent AI financing site owns financing cards and accepted weekly/monthly reports. WaveSight keeps the internal Data Center and Trend Radar; Guanlan Research is retired.
 - Current backend: Dashboard / operations console.
 - Current human-readable knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.2-private-evidence-linked`), split into system state, Data Center, Application Center, Operations, contracts, knowledge assets, and workspace.
 - Current machine-serving projection: `DATA-LAKE-V4.1-24-table`, rebuilt and gated by Final Closure.
@@ -31,9 +31,9 @@ This file keeps only the current handoff state needed by a new window. Historica
 | Entry | File |
 |---|---|
 | Event Library / Community Intelligence / First-Line Viewpoints / Entity Library | `01-SiteV2/site/data-center.html` |
-| Guanlan Research | `01-SiteV2/site/intelligence-map.html` |
+| Weekly/monthly reports | `https://www.zkdlj.vip/#reports` |
 | Trend Radar | `01-SiteV2/site/trend-radar.html` |
-| Funding Insights (research subroute) | `01-SiteV2/site/funding-insights.html` |
+| Financing intelligence | `https://www.zkdlj.vip/#home` |
 | Opportunity Map (unlisted internal lab) | `01-SiteV2/site/opportunity-map.html` |
 | Dashboard | `01-SiteV2/site/operations-console.html` |
 
@@ -57,7 +57,7 @@ V4 canonical tables contain factual evidence only. Trend, opportunity, funding-i
 
 ## Retired Routes
 
-- `v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, and `reports.html` are redirects only.
+- `v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, `intelligence-map.html`, `funding-insights.html`, `reports.html`, and weekly/monthly HTML routes are redirects only.
 - V2 homepage and four-column public site content routes.
 - Daily observation as required output.
 - Business brief / internal reference as required output.

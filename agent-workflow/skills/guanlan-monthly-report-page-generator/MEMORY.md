@@ -1,5 +1,10 @@
 # Monthly Report Page Generator Memory
 
+## 2026-08-10
+
+- Complete monthly reports publish to the independent AI financing site. WaveSight retains canonical Markdown, evidence, generation records, and stable redirects only; Guanlan Research and duplicate monthly HTML must not return.
+- Dynamic report discovery and metadata/body parity replace the old hand-maintained archive list. Report removal, date regression, or incomplete bodies fail closed.
+
 ## 2026-07-27
 
 - Public report prose must never expose internal evidence IDs such as `[E:...]`, `[O:...]`, or `[C:...]`. Resolve them to understated, reader-facing source links with understandable labels; suppress a marker entirely when no safe public URL can be resolved.

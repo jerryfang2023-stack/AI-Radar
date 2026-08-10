@@ -1698,7 +1698,7 @@ test("前台构建只发布通过门禁的卡片并生成双向链接", () => {
     const data = buildFundingInsightsFrontstage(tempRoot);
     const rebuilt = buildFundingInsightsFrontstage(tempRoot);
     assert.equal(data.cards.length, 1);
-    assert.equal(data.meta.site_version, "SITE-V4.6.0-research-homepage");
+    assert.equal(data.meta.site_version, "SITE-V4.6.1-research-retirement");
     assert.equal(data.meta.generated_at, "2026-07-26T09:00:00.000Z");
     assert.equal(rebuilt.meta.generated_at, data.meta.generated_at);
     assert.equal(data.cards[0].financing.investors[0].name, "Northstar Ventures");
@@ -1734,19 +1734,13 @@ test("前台构建只发布通过门禁的卡片并生成双向链接", () => {
   }
 });
 
-test("融资透视页面使用应用中心新结构并声明自动数据入口", () => {
+test("旧融资透视页面跳转到独立融资站且保留旧前台资产的回归覆盖", () => {
   const html = fs.readFileSync(path.join(root, "01-SiteV2/site/funding-insights.html"), "utf8");
   const script = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/funding-insights.js"), "utf8");
   const styles = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/funding-insights.css"), "utf8");
-  assert.match(html, /href="trend-radar\.html">变化雷达/u);
-  assert.match(html, /href="intelligence-map\.html" aria-current="page">观澜研究/u);
-  assert.doesNotMatch(html, /href="funding-insights\.html" aria-current="page">融资透视/u);
-  assert.doesNotMatch(html, /href="opportunity-map\.html">机会地图/u);
-  assert.match(html, /assets\/funding-insights\.js/u);
-  assert.match(html, /<span>AI 市场类别<\/span>[\s\S]*<select name="market_category"><option value="">全部类别<\/option><\/select>/u);
-  assert.doesNotMatch(html, /data-category-tabs|按赛道查看融资项目/u);
-  assert.doesNotMatch(html, /data-status|fi-status/u);
-  assert.match(html, /<form class="fi-controls"[\s\S]*name="query"[\s\S]*name="round"[\s\S]*name="market_category"[\s\S]*<\/form>/u);
+  assert.match(html, /url=https:\/\/www\.zkdlj\.vip\/#home/u);
+  assert.match(html, /location\.replace\("https:\/\/www\.zkdlj\.vip\/#home"\)/u);
+  assert.doesNotMatch(html, /dc-sidebar|fi-controls|funding-insights\.js/u);
   assert.match(script, /fillSelect\("market_category", data\.filters\?\.market_categories \|\| \[\]\)/u);
   assert.match(script, /card\.market_category\?\.id === marketCategory/u);
   assert.match(script, /收录于 \$\{escapeHtml\(card\.as_of_date/u);

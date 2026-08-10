@@ -1,52 +1,10 @@
-# Weekly Report Page Generator Evals
+# Weekly Report Publication Evals
 
-## Pass Cases
-
-1. Source discipline
-   - Pass when the page is generated from a file under `01-SiteV2/content/12-applications/industry-reports/`.
-   - Pass when the operational archive under `agent-workflow/reports/` is not the only source.
-
-2. Guanlan Research placement
-   - Pass when the latest weekly report and weekly archive appear in the report-first `intelligence-map.html` surface.
-   - Pass when the latest weekly feature title, reporting window, and route are derived from the newest published canonical weekly source on every renderer run.
-   - Pass when Opportunity Map, relationship network, Trend Candidates, and History are absent from `intelligence-map.html`.
-
-3. Detail page rendering
-   - Pass when trend heatmaps, opportunity cards, scoring, impact heatmaps, and watchlists are rendered as editorial modules instead of raw tables.
-   - Pass when the two latest accepted issues have independent dated detail pages and the undated alias resolves only to the newest issue.
-   - Pass when the weekly detail page has no `<table>` elements unless the user explicitly requests an appendix.
-   - Pass when section labels are visually paired with headings and do not create isolated full-width label rows.
-   - Pass when report evidence is presented as understandable source links and unresolved internal references are omitted.
-
-4. Flexible weekly structure
-   - Pass when section 7 remains a stable categorized watchlist.
-   - Pass when other sections can change layout based on issue content instead of being forced into one fixed template.
-
-5. Version metadata
-   - Pass when release pages include main site version metadata.
-   - Pass when Guanlan Research and weekly detail pages include `REPORTS-V1.2.0-research-hub` plus weekly source metadata, and do not emit the Opportunity Map version.
-
-6. User preference memory
-   - Pass when user-deleted elements are absent unless the current user request explicitly reintroduces them.
-   - Pass when time windows are selectors, not static text, on review-facing pages.
-
-7. Content gate prerequisite
-   - Pass when `assert-periodic-report-content.mjs` has accepted the exact previous Monday-Sunday report before page generation starts.
-   - Pass when a failed content gate leaves weekly frontstage files unchanged.
-
-## Fail Cases
-
-1. Fail if the weekly page is a Markdown dump with dense table borders.
-2. Fail if the page exposes `日期 / 范围 / 版本` hero cards or backend method/version footers.
-3. Fail if weekly report switching is represented only by static date text.
-4. Fail if section headings repeat numbers, such as `01` plus `1. 本周一句话结论`.
-5. Fail if the Guanlan Research read button is visually detached from the weekly card action area.
-6. Fail if the detail page has horizontal overflow at 390px mobile width.
-7. Fail if `返回周报列表`, `返回情报地图`, or `查看行动结论` is present without explicit user request.
-8. Fail if the detail hero has a long deck paragraph after the user has asked to remove it.
-9. Fail if the Guanlan Research weekly entry shows three boxed KPI count cards instead of compact tags.
-10. Fail if page generation runs before the content acceptance gate.
-11. Fail if a weekly report page restores shared `IMAP-V2.1.0` metadata or emits any Opportunity Map column metadata, including `OMAP-V2.0.0-v4-evidence`.
-12. Fail if a newly published weekly source updates the archive but leaves the Guanlan Research first-screen card on an older issue.
-13. Fail if a recent weekly issue is rendered as paragraph/list-only HTML despite having structured trend, chain, impact, opportunity, watchlist, and action sections.
-14. Fail if any published report page exposes raw `[E:...]`, `[O:...]`, or `[C:...]` identifiers, or styles them as backend evidence badges.
+1. Pass when an accepted weekly source maps from `week: YYYY-WNN` to `weekly-YYYY-wNN` and both dated and latest compatibility routes target the correct financing-site hash.
+2. Pass when `intelligence-map.html` and `reports.html` target `https://www.zkdlj.vip/#reports` and contain no research hub, archive, or sidebar.
+3. Pass when dynamic discovery includes every `status: published` weekly/monthly source without a hardcoded list.
+4. Pass when metadata and body IDs match and every report has a valid title, summary, date, content type, and nonempty body.
+5. Pass when report removal, newest-date regression, duplicate IDs, or missing bodies fail closed.
+6. Pass when Opportunity Map failure cannot block weekly acceptance or financing-site publication.
+7. Fail if WaveSight regenerates a local report reader, report selector, feature card, archive, or Guanlan Research navigation.
+8. Fail if a generic slug determines weekly identity or internal evidence IDs appear in public prose.

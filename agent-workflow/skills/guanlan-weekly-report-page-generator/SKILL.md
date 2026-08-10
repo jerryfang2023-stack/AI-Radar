@@ -1,18 +1,18 @@
 ---
 name: guanlan-weekly-report-page-generator
-description: Use when creating, updating, or repairing WaveSight AI weekly report frontstage pages from `01-SiteV2/content/12-applications/industry-reports/`. Applies to Guanlan Research weekly entries, weekly report detail pages, time-window selectors, report archive wiring, Guanlan VI page styling, and converting weekly report Markdown into editorial page modules. Do not use for writing the weekly report judgment itself; use `guanlan-weekly-business-change-radar` first.
+description: Use when publishing, updating, or repairing an accepted WaveSight weekly report after `guanlan-weekly-business-change-radar`. Generates the stable WaveSight compatibility redirect and verifies publication to the independent AI financing site. Do not use to write the weekly judgment itself or to recreate Guanlan Research/report HTML.
 metadata:
   guanlan:
-    version: "1.2.0"
-    column_version: "REPORTS-V1.2.0-research-hub"
-    lane: "Guanlan Research"
+    version: "1.3.0"
+    column_version: "REPORTS-V1.3.0-funding-portal"
+    lane: "AI financing-site reports"
     status: "current sub-skill"
     order: 91
-    responsibility: "Generate and maintain weekly report frontstage pages from accepted content under Guanlan Research."
-    upstream: "accepted weekly report Markdown, Guanlan Research page, Guanlan VI rules"
-    downstream: "weekly report detail page, Guanlan Research weekly entry, page styles, REPORTS version metadata"
-    gates: "content acceptance, content-source discipline, REPORTS version boundary, user preference memory, Guanlan VI fit, no table-heavy rendering, responsive visual smoke, frontstage regression"
-    recent_learning: "Use the accepted evidence-bounded headline unchanged across the H1, browser title, and Guanlan Research card; the content gate must pass before the deterministic renderer writes HTML; generated report pages use REPORTS-V1.2.0 while Opportunity Map remains an unlisted internal lab."
+    responsibility: "Publish accepted weekly report Markdown to the AI financing site while retaining a stable WaveSight redirect."
+    upstream: "accepted weekly report Markdown and evidence manifest"
+    downstream: "funding-portal reports.json/report-bodies.json and WaveSight compatibility redirect"
+    gates: "content acceptance, stable report ID, title/summary/body completeness, report-count and date non-regression, redirect regression, live readback"
+    recent_learning: "Since 2026-08-10, Guanlan Research and duplicate report HTML are retired; accepted weekly Markdown publishes to the AI financing site and WaveSight writes redirects only."
     mirrored_in_skill_store: true
     memory_required: true
 ---
@@ -21,99 +21,46 @@ metadata:
 
 ## Purpose
 
-Turn accepted weekly report Markdown into a WaveSight Guanlan Research experience. This skill handles page structure, visual modules, research-hub wiring, version metadata, and validation. It does not decide the weekly business judgment or own Opportunity Map.
+Publish accepted weekly report Markdown through the independent AI financing site. WaveSight remains the source/evidence repository and owns compatibility URLs only; this Skill must never recreate the Guanlan Research hub or a duplicate report body.
 
-The periodic controller may invoke this skill only after the weekly content acceptance gate passes. Page generation and page regression are the second gate; a failed content gate must leave the frontstage unchanged.
-
-In unattended GitHub production, `render-periodic-report-pages.mjs` is the sole page writer. DeepSeek generates Markdown content only and must never edit HTML, navigation, CSS, or canonical data.
+The periodic controller invokes this Skill only after the weekly content gate passes. DeepSeek may generate Markdown content but must not edit redirects, navigation, portal data, or canonical facts.
 
 ## Required Reads
 
-Read only what the task needs:
-
 1. `context/version-ledger.md`
 2. `context/frontstage-page-contracts.md`
-3. `context/02-vi-style.md`
-4. Source report in `01-SiteV2/content/12-applications/industry-reports/`
-5. Target files:
-   - `01-SiteV2/site/intelligence-map.html`
-   - `01-SiteV2/site/weekly-ai-business-change-radar.html` or the new weekly detail page
-   - `01-SiteV2/site/assets/weekly-report.css`
-   - `01-SiteV2/site/assets/data-center-v4.css`
-   - `01-SiteV2/site/assets/v4-report-shell.js`
-
-For detailed rules, load:
-
-- `references/page-generation-standards.md` before page work.
-- `references/iteration-lessons.md` when deciding what to preserve or avoid from the 2026-06-15 page iteration.
-- `MEMORY.md` before changing page layout, visible controls, or module rendering.
+3. Accepted source under `01-SiteV2/content/12-applications/industry-reports/`
+4. `agent-workflow/tools/render-periodic-report-pages.mjs`
+5. `context/08-automation.md`
+6. `MEMORY.md`
 
 ## Workflow
 
-1. Confirm source.
-   - Use `01-SiteV2/content/12-applications/industry-reports/` as the weekly report content source.
-   - Do not generate a page directly from `agent-workflow/reports/`; first place accepted content in the current industry-reports content source.
-
-2. Run the content gate and deterministic writer.
-   - Run `node agent-workflow/tools/assert-periodic-report-content.mjs --kind=weekly --date=YYYY-MM-DD --window-start=YYYY-MM-DD --window-end=YYYY-MM-DD`.
-   - Only after it passes, run `node agent-workflow/tools/render-periodic-report-pages.mjs --kind=weekly --date=YYYY-MM-DD`.
-   - Inspect and adjust the renderer or shared styles when repair is needed; do not hand-maintain generated report HTML.
-
-3. Verify extracted page fields.
-   - Use frontmatter `title`, `date`, `week`, `window`, `slug`, and `content_type`.
-   - Generate the visible title from the report content, not from a generic label such as “本周 AI 商业变化判断”.
-   - Preserve the time window as a selector on both the Guanlan Research entry (`intelligence-map.html`) and detail page.
-
-4. Verify the generated Guanlan Research entry.
-   - Keep weekly reports in the report area of `intelligence-map.html`.
-   - `reports.html` is a compatibility redirect only and must not become a second report center.
-   - Do not push relation paths or decorative graph modules above the report-first entry.
-   - Do not restore Trend Candidates or History modules on the Guanlan Research page.
-   - Show report counts as compact tags, not boxed KPI cards.
-
-5. Verify the generated detail page.
-   - Use the same V4 logo header, Data Center / Application Center sidebar, and mobile sidebar behavior as `data-center.html` and `intelligence-map.html`.
-   - Use Guanlan VI: restrained paper background, serif editorial headings, mono labels, blue/gold accents, square or low-radius panels.
-   - Convert Markdown tables into designed modules: cards, tag groups, chains, score bars, callouts, or lists.
-   - Keep section 7 as a stable watchlist structure. Let other sections flex with the issue content.
-   - Avoid visible instructions, backend fields, version cards, or unnecessary navigation buttons.
-   - Treat user-deleted elements as blocked unless the user explicitly reintroduces them.
-
-6. Verify version metadata when releasing.
-   - Main site version lives in `meta[name="wavesight-version"]` and must match the current value in `context/version-ledger.md` (`SITE-V4.6.0-research-homepage` at this revision).
-   - Guanlan Research column version lives in `meta[name="wavesight-column-version"]` and must be `REPORTS-V1.2.0-research-hub`.
-   - Weekly source path lives in `meta[name="weekly-report-source"]`.
-   - Update `context/version-ledger.md` only for accepted release changes.
-   - Never emit `OMAP-V2.0.0-v4-evidence` from weekly report pages; that version belongs only to Opportunity Map.
-
-7. Validate.
-   - Run syntax checks for touched JS if any.
-   - Run `node agent-workflow/tools/frontstage-regression-gate.mjs`.
-   - Use Playwright visual smoke on desktop and mobile for the Guanlan Research entry and weekly detail page.
-   - Check there are no `<table>` elements on the weekly detail page unless the user explicitly asks for a raw data appendix.
+1. Confirm the canonical source is named `YYYY-MM-DD--weekly-report--ai-business-change-radar.md`, has `content_type: weekly-report`, a valid `week`, `date`, `title`, `window`, and `status: published` after acceptance.
+2. Run the weekly content gate before any publication write.
+3. Run `node agent-workflow/tools/render-periodic-report-pages.mjs --kind=weekly --date=YYYY-MM-DD`. The writer must produce:
+   - dated compatibility route → `https://www.zkdlj.vip/#report/weekly-YYYY-wNN`;
+   - latest undated weekly alias when applicable;
+   - `intelligence-map.html` redirect → `https://www.zkdlj.vip/#reports`.
+4. Never hand-maintain report metadata or a report list. Final Closure dynamically scans every `status: published` report from WaveSight `origin/main` and generates portal `reports.json` plus `report-bodies.json`.
+5. Verify the publication gate blocks report removal, newest-date regression, duplicate IDs, invalid type/date, missing title/summary, missing body, and metadata/body ID mismatch.
+6. Verify live report metadata, newest ID, report count, and body count after the portal deploy. A failed live check must restore the previous VPS release.
+7. Run the periodic renderer tests, frontstage regression, version consistency, and the portal publisher dry run.
 
 ## Hard Rules
 
-- The weekly report page is a frontstage product surface, not a Markdown dump.
-- The page should support future weekly switching through selectors.
-- Do not expose backend-only fields such as version, method, range, thresholds, raw gate results, or internal scores unless explicitly needed for reader judgment.
-- Do not make every week fit the same fixed module template. Keep the rendering flexible except for the watchlist anchor.
-- Do not use table grids as the default rendering for trend heatmaps, opportunity cards, scoring, or watchlists.
-- Do not re-add previously deleted helper copy, return buttons, action-jump buttons, hero deck paragraphs, or static date text without explicit user approval.
-- Do not restore `wavesight-nav.css`, `wavesight-topbar`, or links to the retired V3 column pages.
-- Do not restore the shared `IMAP-V2.1.0` metadata or write the Opportunity Map version into report pages.
-- Local rendering and visual checks are safe within an authorized page task. Commit, PR, merge, deployment, or reintroducing user-deleted UI requires the requested release workflow or explicit approval.
+- WaveSight report Markdown is the content source; `agent-workflow/reports/` is not a public source.
+- `REPORTS-V1.3.0-funding-portal` is the only current report-publication version.
+- Do not recreate Guanlan Research navigation, feature cards, archives, report selectors, V4 report shells, or duplicate report bodies.
+- Preserve stable report IDs derived from `week`; never derive identity from a generic slug.
+- Do not expose internal evidence IDs in portal prose.
+- Opportunity Map and Direction Card failures cannot block accepted weekly report publication.
+- Commit, push, and deployment require the authorized release workflow.
 
 ## Output
 
-When finished, report:
-
-- source report file used;
-- pages and styles changed;
-- version metadata changed, if any;
-- validation performed;
-- remaining page-generation risk.
+Report the source file, stable report ID and redirect, portal publication status, validation performed, and any remaining live-publication risk.
 
 ## Done When
 
-Finish when accepted Markdown is rendered completely through the deterministic writer, headline and metadata stay consistent, Guanlan Research wiring and responsive hierarchy are verified, no retired UI/version path returns, and content, syntax, visual, and frontstage checks pass.
+The accepted Markdown remains complete, the WaveSight routes redirect to the correct stable hash, the portal dynamically includes matching metadata and body, non-regression gates pass, and live readback confirms the new or unchanged report inventory.

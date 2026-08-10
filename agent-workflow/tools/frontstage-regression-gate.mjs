@@ -11,10 +11,10 @@ const reportDetailPages = [
     .filter((name) => /^(?:weekly-ai-business-change-radar-\d{4}-\d{2}-\d{2}|monthly-business-structure-\d{4}-\d{2})\.html$/u.test(name))
     .sort(),
 ];
-const expectedSiteVersion = "SITE-V4.6.0-research-homepage";
+const expectedSiteVersion = "SITE-V4.6.1-research-retirement";
 const expectedDataCenterProductVersion = "SITE-V4.2.0-entity-history";
 const expectedOpportunityEvidenceSiteVersion = "SITE-V4.2.0-entity-history";
-const expectedReportsCenterColumnVersion = "REPORTS-V1.2.0-research-hub";
+const expectedReportsCenterColumnVersion = "REPORTS-V1.3.0-funding-portal";
 const expectedOpportunityMapColumnVersion = "OMAP-V2.0.0-v4-evidence";
 const expectedFundingInsightsColumnVersion = "FUNDING-INSIGHT-V1.4.0-financing-fields";
 
@@ -184,143 +184,41 @@ function collectUnifiedNavigationIssues() {
     ["data-center.html?view=viewpoints", "一线观点"],
     ["data-center.html?view=index", "实体库"],
     ["trend-radar.html", "变化雷达"],
-    ["intelligence-map.html", "观澜研究"],
   ];
-  const sharedSidebarPages = [
-    "data-center.html",
-    "trend-radar.html",
-    "funding-insights.html",
-    "intelligence-map.html",
-    "opportunity-map.html",
-    ...reportDetailPages,
-  ];
-  for (const name of sharedSidebarPages) {
+  for (const name of ["data-center.html", "trend-radar.html", "opportunity-map.html"]) {
     const file = path.join(siteDir, name);
     const sidebar = read(file).match(/<aside class="dc-sidebar"[\s\S]*?<\/aside>/u)?.[0] || "";
-    const links = [...sidebar.matchAll(/<a href="([^"]+)"[^>]*>([^<]+)<\/a>/gu)]
-      .map((match) => [match[1], match[2].trim()]);
-    if (JSON.stringify(links) !== JSON.stringify(expectedSidebarLinks)) {
-      issues.push(issue(file, "focused_sidebar_contract_mismatch", JSON.stringify(links)));
-    }
+    const links = [...sidebar.matchAll(/<a href="([^"]+)"[^>]*>([^<]+)<\/a>/gu)].map((match) => [match[1], match[2].trim()]);
+    if (JSON.stringify(links) !== JSON.stringify(expectedSidebarLinks)) issues.push(issue(file, "focused_sidebar_contract_mismatch", JSON.stringify(links)));
+    if (/intelligence-map\.html|观澜研究/u.test(sidebar)) issues.push(issue(file, "retired_research_navigation_present"));
   }
   const redirects = new Map([
-    ["v3-data-observation.html", "data-center.html?view=events"],
-    ["follow-builders.html", "data-center.html?view=viewpoints"],
-    ["community-intelligence.html", "data-center.html?view=community"],
-    ["reports.html", "intelligence-map.html"],
-    ["pipeline-dashboard.html", "operations-console.html"],
+    ["intelligence-map.html", "https://www.zkdlj.vip/#reports"],
+    ["reports.html", "https://www.zkdlj.vip/#reports"],
+    ["funding-insights.html", "https://www.zkdlj.vip/#home"],
   ]);
   for (const [name, target] of redirects) {
-    const file = path.join(root, "01-SiteV2/site", name);
+    const file = path.join(siteDir, name);
     const text = read(file);
-    if (!text.includes(`url=${target}`) || !text.includes(`rel="canonical" href="${target}"`)) {
-      issues.push(issue(file, "legacy_route_redirect_missing", target));
-    }
-    if (/wavesight-nav\.css|wavesight-topbar/u.test(text)) issues.push(issue(file, "legacy_route_loads_v3_shell"));
+    if (!text.includes(`url=${target}`) || !text.includes(`rel="canonical" href="${target}"`)) issues.push(issue(file, "migration_redirect_missing", target));
+    if (/dc-sidebar|report-feature-card|fi-controls/u.test(text)) issues.push(issue(file, "retired_duplicate_frontstage_present"));
   }
-
-  const reportsCenterFile = path.join(root, "01-SiteV2/site/intelligence-map.html");
-  const reportsCenterHtml = read(reportsCenterFile);
-  const reportsCenterRequired = [
-    "assets/data-center-v4.css",
-    "dc-sidebar",
-    "data-center.html?view=events\">事件库",
-    "data-center.html?view=community",
-    "data-center.html?view=viewpoints",
-    "data-center.html?view=index\">实体库",
-    "应用中心",
-    "观澜研究",
-    "funding-insights.html",
-    "资本与融资",
-    "企业 AI 落地",
-  ];
-  for (const token of reportsCenterRequired) {
-    if (!reportsCenterHtml.includes(token)) issues.push(issue(reportsCenterFile, "missing_v4_sidebar_navigation_token", token));
-  }
-  if (reportsCenterHtml.includes("wavesight-topbar") || reportsCenterHtml.includes("wavesight-nav")) {
-    issues.push(issue(reportsCenterFile, "retired_reports_center_top_navigation_present"));
-  }
-  if (reportsCenterHtml.includes("data-center.html?view=companies") || reportsCenterHtml.includes("data-center.html?view=products")) {
-    issues.push(issue(reportsCenterFile, "retired_company_product_sidebar_entries_present"));
-  }
-  if (/报告中心|Reports Center|关联路径|Relation Paths|data-network-list|renderNetwork/u.test(reportsCenterHtml)) {
-    issues.push(issue(reportsCenterFile, "retired_industry_reports_copy_or_module_present"));
-  }
-  const reportsSidebar = reportsCenterHtml.match(/<aside class="dc-sidebar"[\s\S]*?<\/aside>/u)?.[0] || "";
-  if (/href="(?:funding-insights|opportunity-map)\.html"/u.test(reportsSidebar)) {
-    issues.push(issue(reportsCenterFile, "retired_application_sidebar_entry_present"));
-  }
-  if (reportsCenterHtml.includes("data/v3-data-observation-desk.json") || reportsCenterHtml.includes("data/industry-reports-frontstage.json")) {
-    issues.push(issue(reportsCenterFile, "industry_reports_data_dependency_present"));
-  }
-  if (/data-map-panel|data-cell-modal|id="maps-title"/u.test(reportsCenterHtml)) {
-    issues.push(issue(reportsCenterFile, "opportunity_map_module_still_inside_industry_reports"));
-  }
-
-  const opportunityMapFile = path.join(root, "01-SiteV2/site/opportunity-map.html");
+  const opportunityMapFile = path.join(siteDir, "opportunity-map.html");
   const opportunityMapHtml = read(opportunityMapFile);
-  const opportunityMapRequired = [
-    "assets/data-center-v4.css",
-    "dc-sidebar",
-    "href=\"intelligence-map.html\">观澜研究",
-    "name=\"robots\" content=\"noindex, nofollow\"",
-    "data-map-panel=\"entry\"",
-    "data-map-panel=\"pain\"",
-    "data-direction-cards",
-    "data-cell-modal",
-  ];
-  for (const token of opportunityMapRequired) {
+  for (const token of ["name=\"robots\" content=\"noindex, nofollow\"", "data-map-panel=\"entry\"", "data-map-panel=\"pain\"", "data-direction-cards", "data-cell-modal"]) {
     if (!opportunityMapHtml.includes(token)) issues.push(issue(opportunityMapFile, "opportunity_map_required_token_missing", token));
   }
-  const opportunitySidebar = opportunityMapHtml.match(/<aside class="dc-sidebar"[\s\S]*?<\/aside>/u)?.[0] || "";
-  if (/href="(?:funding-insights|opportunity-map)\.html"/u.test(opportunitySidebar)) {
-    issues.push(issue(opportunityMapFile, "internal_lab_exposed_in_sidebar"));
-  }
-  if (!opportunityMapHtml.includes("data/opportunity-evidence-v2.json") || opportunityMapHtml.includes("data/v3-data-observation-desk.json")) {
-    issues.push(issue(opportunityMapFile, "opportunity_map_projection_dependency_invalid"));
-  }
-
-  const fundingInsightsFile = path.join(root, "01-SiteV2/site/funding-insights.html");
-  const fundingInsightsHtml = read(fundingInsightsFile);
-  const fundingInsightsRequired = [
-    "assets/data-center-v4.css",
-    "assets/funding-insights.css",
-    "assets/funding-insights.js",
-    "href=\"trend-radar.html\">变化雷达",
-    "href=\"intelligence-map.html\" aria-current=\"page\">观澜研究",
-  ];
-  for (const token of fundingInsightsRequired) {
-    if (!fundingInsightsHtml.includes(token)) issues.push(issue(fundingInsightsFile, "funding_insights_required_token_missing", token));
-  }
-  const fundingSidebar = fundingInsightsHtml.match(/<aside class="dc-sidebar"[\s\S]*?<\/aside>/u)?.[0] || "";
-  if (/href="(?:funding-insights|opportunity-map)\.html"/u.test(fundingSidebar)) {
-    issues.push(issue(fundingInsightsFile, "research_subroute_exposed_in_sidebar"));
-  }
-  const fundingInsightsScript = path.join(root, "01-SiteV2/site/assets/funding-insights.js");
-  if (!read(fundingInsightsScript).includes("data/funding-insights-v1.json")) {
-    issues.push(issue(fundingInsightsScript, "funding_insights_projection_dependency_missing"));
-  }
-
-  const requiredV4Tokens = [
-    "assets/data-center-v4.css",
-    "class=\"dc-sidebar\"",
-    "data-center.html?view=events\">事件库",
-    "data-center.html?view=community",
-    "data-center.html?view=viewpoints",
-    "data-center.html?view=index\">实体库",
-    "href=\"intelligence-map.html\" aria-current=\"page\">观澜研究",
-    "assets/v4-report-shell.js",
-  ];
+  if (!opportunityMapHtml.includes("data/opportunity-evidence-v2.json") || opportunityMapHtml.includes("data/v3-data-observation-desk.json")) issues.push(issue(opportunityMapFile, "opportunity_map_projection_dependency_invalid"));
+  const fundingInsightsScript = path.join(siteDir, "assets/funding-insights.js");
+  if (!read(fundingInsightsScript).includes("data/funding-insights-v1.json")) issues.push(issue(fundingInsightsScript, "funding_insights_projection_dependency_missing"));
   for (const name of reportDetailPages) {
-    const file = path.join(root, "01-SiteV2/site", name);
+    const file = path.join(siteDir, name);
     const text = read(file);
-    for (const token of requiredV4Tokens) {
-      if (!text.includes(token)) issues.push(issue(file, "report_detail_v4_shell_token_missing", token));
-    }
-    if (/wavesight-nav\.css|wavesight-topbar|v3-data-observation\.html|follow-builders\.html|community-intelligence\.html/u.test(text)) {
-      issues.push(issue(file, "report_detail_legacy_shell_present"));
-    }
+    if (!text.includes("https://www.zkdlj.vip/#report/") || !text.includes(expectedReportsCenterColumnVersion)) issues.push(issue(file, "report_migration_redirect_missing"));
+    if (/dc-sidebar|weekly-report-reader|report-feature-card/u.test(text)) issues.push(issue(file, "duplicate_report_frontstage_present"));
   }
+  const fdeLink = "data-center.html?view=events&theme=fde";
+  if (!read(path.join(root, "agent-workflow/tools/build-guanlan-vault.mjs")).includes(fdeLink)) issues.push(issue(path.join(root, "agent-workflow/tools/build-guanlan-vault.mjs"), "fde_topic_link_missing", fdeLink));
   return issues;
 }
 
@@ -472,8 +370,8 @@ function collectRootEntryIssues() {
   const htmlFile = path.join(root, "01-SiteV2/site/index.html");
   const html = read(htmlFile);
   for (const token of [
-    'http-equiv="refresh" content="0; url=funding-insights.html"',
-    'rel="canonical" href="funding-insights.html"',
+    'http-equiv="refresh" content="0; url=https://www.zkdlj.vip/#home"',
+    'rel="canonical" href="https://www.zkdlj.vip/#home"',
   ]) {
     if (!html.includes(token)) issues.push(issue(htmlFile, "funding_root_redirect_missing", token));
   }
@@ -524,9 +422,6 @@ function collectVersionMetaIssues() {
   const opportunityMapFile = path.join(root, "01-SiteV2/site/opportunity-map.html");
   const opportunityMapToken = `name="wavesight-column-version" content="${expectedOpportunityMapColumnVersion}"`;
   if (!read(opportunityMapFile).includes(opportunityMapToken)) issues.push(issue(opportunityMapFile, "opportunity_map_column_version_meta_missing", opportunityMapToken));
-  const fundingInsightsFile = path.join(root, "01-SiteV2/site/funding-insights.html");
-  const fundingInsightsToken = `name="wavesight-column-version" content="${expectedFundingInsightsColumnVersion}"`;
-  if (!read(fundingInsightsFile).includes(fundingInsightsToken)) issues.push(issue(fundingInsightsFile, "funding_insights_column_version_meta_missing", fundingInsightsToken));
   return issues;
 }
 

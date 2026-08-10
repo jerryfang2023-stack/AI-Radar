@@ -20,7 +20,7 @@ const cases = [
   ["data-center.html?view=events", "data-center.html?view=events"],
   ["data-center.html?view=events&theme=fde", "data-center.html?view=events"],
   ["data-center.html?view=events&theme=hardware", "data-center.html?view=events"],
-  ["data-center.html?view=fde", "data-center.html?view=fde"],
+  ["data-center.html?view=events&theme=fde", "data-center.html?view=events&theme=fde"],
   ["data-center.html?view=hardware", "data-center.html?view=hardware"],
   ["data-center.html?view=community", "data-center.html?view=community"],
   ["data-center.html?view=viewpoints", "data-center.html?view=viewpoints"],

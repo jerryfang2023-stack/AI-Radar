@@ -50,7 +50,7 @@ test("Opportunity Map projection reads accepted V4 evidence without Signal Cards
   ))));
   assert.equal(JSON.stringify(data).includes("evidence_card_ids"), false);
   assert.doesNotMatch(reportsHtml, /data\/v3-data-observation-desk\.json|data\/industry-reports-frontstage\.json/u);
-  assert.match(reportsHtml, /REPORTS-V1\.2\.0-research-hub/u);
+  assert.match(reportsHtml, /REPORTS-V1\.3\.0-funding-portal/u);
   assert.doesNotMatch(opportunityHtml, /data\/v3-data-observation-desk\.json/u);
   assert.match(opportunityHtml, /data\/opportunity-evidence-v2\.json/u);
   assert.match(opportunityHtml, /OMAP-V2\.0\.0-v4-evidence/u);
@@ -134,65 +134,39 @@ test("Opportunity Map evidence excludes viewpoints, community material, and OPS 
   assert.match(adapter, /source-artifacts\.json/u);
 });
 
-test("legacy public routes are redirects and report detail pages use the V4 shell", () => {
+test("legacy public routes and report pages redirect to their current owners", () => {
   const redirects = new Map([
-    ["v3-data-observation.html", "data-center.html?view=events"],
-    ["follow-builders.html", "data-center.html?view=viewpoints"],
-    ["community-intelligence.html", "data-center.html?view=community"],
-    ["reports.html", "intelligence-map.html"],
-    ["pipeline-dashboard.html", "operations-console.html"],
+    ["reports.html", "https://www.zkdlj.vip/#reports"],
+    ["funding-insights.html", "https://www.zkdlj.vip/#home"],
   ]);
   for (const [file, target] of redirects) {
     const html = fs.readFileSync(path.join(root, "01-SiteV2/site", file), "utf8");
-    assert.match(html, new RegExp(`url=${target.replace(/[?]/gu, "\\?")}`, "u"));
+    assert.ok(html.includes(`url=${target}`));
     assert.ok(html.includes(`<meta name="wavesight-version" content="${SITE_VERSION}">`));
-    assert.doesNotMatch(html, /wavesight-nav\.css|wavesight-topbar/u);
   }
-
   const reportPages = fs.readdirSync(path.join(root, "01-SiteV2/site"))
     .filter((file) => /^(?:weekly-ai-business-change-radar.*|monthly-business-structure.*)\.html$/u.test(file));
-  assert.ok(reportPages.length >= 2);
+  assert.ok(reportPages.length >= 11);
   for (const file of reportPages) {
     const html = fs.readFileSync(path.join(root, "01-SiteV2/site", file), "utf8");
-    assert.ok(html.includes(`<meta name="wavesight-version" content="${SITE_VERSION}">`));
-    assert.match(html, /REPORTS-V1\.2\.0-research-hub/u);
-    assert.match(html, /assets\/data-center-v4\.css/u);
-    assert.match(html, /class="dc-sidebar"/u);
-    assert.match(html, /href="intelligence-map\.html" aria-current="page">观澜研究/u);
-    assert.doesNotMatch(html, /href="funding-insights\.html">融资透视/u);
-    assert.doesNotMatch(html, /href="opportunity-map\.html">机会地图/u);
-    assert.doesNotMatch(html, /wavesight-nav\.css|wavesight-topbar|v3-data-observation\.html|follow-builders\.html|community-intelligence\.html/u);
-    assert.doesNotMatch(html, /\[(?:E|O|C):[^\]]+\]|report-evidence-ref/u, `${file} must not expose internal evidence IDs`);
+    assert.match(html, /REPORTS-V1\.3\.0-funding-portal/u);
+    assert.match(html, /https:\/\/www\.zkdlj\.vip\/#report\//u);
+    assert.doesNotMatch(html, /dc-sidebar|weekly-report-reader|report-feature-card/u);
   }
 });
 
-test("the two latest weekly issues have independent editorial pages", () => {
+test("the two latest weekly issues keep stable compatibility redirects", () => {
   const weeklySources = fs.readdirSync(path.join(root, "01-SiteV2/content/12-applications/industry-reports"))
     .filter((file) => /^\d{4}-\d{2}-\d{2}--weekly-report--ai-business-change-radar\.md$/u.test(file))
-    .map((file) => ({
-      file,
-      markdown: fs.readFileSync(path.join(root, "01-SiteV2/content/12-applications/industry-reports", file), "utf8"),
-    }))
+    .map((file) => ({ file, markdown: fs.readFileSync(path.join(root, "01-SiteV2/content/12-applications/industry-reports", file), "utf8") }))
     .filter(({ markdown }) => /^status:\s*published$/mu.test(markdown))
-    .map(({ file, markdown }) => ({
-      file,
-      date: markdown.match(/^date:\s*(\d{4}-\d{2}-\d{2})$/mu)?.[1] || "",
-    }))
+    .map(({ file, markdown }) => ({ file, date: file.slice(0, 10), week: markdown.match(/^week:\s*["']?(\d{4}-W\d{2})/mu)?.[1].toLowerCase() || "" }))
     .sort((left, right) => right.date.localeCompare(left.date));
-  assert.ok(weeklySources.length >= 2, "at least two published weekly sources must exist");
-  for (const { date } of weeklySources.slice(0, 2)) {
-    const file = path.join(root, "01-SiteV2", "site", `weekly-ai-business-change-radar-${date}.html`);
-    assert.ok(fs.existsSync(file), `${date} weekly detail page must exist`);
-    const html = fs.readFileSync(file, "utf8");
-    assert.match(html, /data-periodic-report-selector/u);
-    assert.match(html, /weekly-fast-read/u);
-    assert.match(html, /weekly-trend-stack/u);
-    assert.match(html, /weekly-chain-list/u);
-    assert.match(html, /weekly-opportunity-list/u);
-    assert.match(html, /weekly-watch-grid/u);
-    assert.doesNotMatch(html, /<table/u);
+  for (const { date, week } of weeklySources.slice(0, 2)) {
+    const html = fs.readFileSync(path.join(root, "01-SiteV2/site", `weekly-ai-business-change-radar-${date}.html`), "utf8");
+    assert.match(html, new RegExp(`#report/weekly-${week}`, "u"));
   }
-  const latest = fs.readFileSync(path.join(root, "01-SiteV2", "site", "weekly-ai-business-change-radar.html"), "utf8");
+  const latest = fs.readFileSync(path.join(root, "01-SiteV2/site/weekly-ai-business-change-radar.html"), "utf8");
   assert.match(latest, new RegExp(weeklySources[0].file.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&"), "u"));
 });
 

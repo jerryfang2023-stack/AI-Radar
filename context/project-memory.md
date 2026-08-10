@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-memory
-last_updated: 2026-07-31
+last_updated: 2026-08-10
 use_when:
   - project startup
   - agent handoff
@@ -25,14 +25,14 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 
 ## Non-Negotiable Rules
 
-- Deploy through GitHub Pages only. Netlify is retired and must not be used as a fallback.
+- Deploy WaveSight compatibility/internal pages through GitHub Pages. Deploy the independent AI financing site through its atomic VPS release path. Netlify is retired and must not be used as a fallback.
 - Do not restore legacy content-output routes as required outputs.
 - Do not restore legacy copy gates as publication blockers.
 - Builders / First-Line Viewpoints must not be used as business-signal facts, relationship-graph evidence, or trend-candidate evidence.
 - Community posts are demand signals unless recaptured through source-backed business evidence.
-- If an old rule conflicts with the current SITE-V4.6.0 public contract, rebuild or delete the old route instead of restoring V3 page content.
+- If an old rule conflicts with `SITE-V4.6.1-research-retirement`, rebuild or delete the old route instead of restoring retired content.
 - China-market coverage is a scope projection inside the existing V4 fact chain. Source categories are descriptive only: no source weights or ranking bonuses are permitted, and procurement/tender sources remain disabled for this scope.
-- First-Line Viewpoints and Community Intelligence keep their existing public content contracts. FDE / AI Hardware are Event Library themes, relationships are embedded in Entity Library detail, Funding Insights is a Guanlan Research topic route, and Opportunity Map is an unlisted internal lab.
+- First-Line Viewpoints and Community Intelligence keep their existing content contracts. FDE / AI Hardware are Event Library themes, relationships are embedded in Entity Library detail, financing cards and reports publish to the independent AI financing site, and Opportunity Map is an unlisted internal lab.
 - DeepSeek is the sole production source-title translation provider. Formal translation-registry entries must retain `deepseek_title_translation` plus a non-empty model identifier; manual-reviewed, MyMemory, business-rule, and missing-provenance entries are not approved publication translations.
 - A verified funding event may publish without named investors only when captured evidence confirms the financing but discloses investors solely by generic category. The card must keep an empty investor list, set `investor_disclosure_status=not_disclosed`, retain the `investors_missing` risk marker, and never materialize the generic category as an institution.
 - Legacy V3 column URLs remain redirects only; no public page may load V3 navigation, V3 page assets, or the V3 desk JSON.
@@ -41,7 +41,7 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 
 - Column-level production is independent; site-level publication is unified.
 - Business Signals, First-Line Viewpoints, and Community Intelligence each own their monitoring, gates, persistence, and PR boundary.
-- Guanlan Research and Dashboard follow the relevant upstream data chains.
+- Weekly/monthly report Markdown follows the relevant upstream data chains and publishes through Final Closure to the AI financing site; Dashboard follows its operations chain.
 - Hermes supervises, records, classifies, and hands off failures.
 - Codex repairs root causes, validates fixes, records prevention, and prepares git changes.
 - Hermes should not directly rewrite production rules, merge PRs, bypass gates, or judge Codex work by commit author name.

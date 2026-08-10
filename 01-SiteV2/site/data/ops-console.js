@@ -1340,7 +1340,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "SITE",
         "label": "Main website",
-        "value": "SITE-V4.6.0-research-homepage"
+        "value": "SITE-V4.6.1-research-retirement"
       },
       {
         "key": "OPS",
@@ -1385,7 +1385,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "REPORTS",
         "label": "Guanlan Research",
-        "value": "REPORTS-V1.2.0-research-hub"
+        "value": "REPORTS-V1.3.0-funding-portal"
       },
       {
         "key": "OMAP",

@@ -232,7 +232,7 @@ write(GUANLAN_VAULT_PATHS.currentVersion, `${yaml("当前版本")}# 当前版本
 | Opportunity Map | ${text(opportunity.meta?.applicationVersion)} |
 | Trend Radar | ${text(trend.meta?.columnVersion)} |
 | Funding Insights | ${text(funding.meta?.column_version)} |
-| Guanlan Research | REPORTS-V1.2.0-research-hub |
+| AI 融资站报告 | REPORTS-V1.3.0-funding-portal |
 | OPS | ${text(ops.meta?.version)} |
 
 - 当前数据日：${text(manifest.currentDate)}
@@ -251,7 +251,7 @@ write(GUANLAN_VAULT_PATHS.productMap, `${yaml("产品地图")}# 产品地图
 ## 应用中心
 
 - [变化雷达](${siteBase}/trend-radar.html)
-- [观澜研究](${siteBase}/intelligence-map.html)
+- [周报与月报](https://www.zkdlj.vip/#reports)
 
 融资洞察是观澜研究的资本专题；机会地图是未列入公开导航的内部实验室。
 
@@ -293,7 +293,7 @@ write(GUANLAN_VAULT_PATHS.fde, `${yaml("企业 AI 与 FDE")}# 企业 AI 与 FDE
 
 ${listRows(latestFde, (item) => `- **${text(item.dataDate || item.date)}** ${text(item.title || item.name || item.company)}${item.sourceUrl ? ` — [来源](${item.sourceUrl})` : ""}`)}
 
-[打开企业 AI / FDE](${siteBase}/data-center.html?view=fde)`);
+[打开企业 AI / FDE](${siteBase}/data-center.html?view=events&theme=fde)`);
 
 write(GUANLAN_VAULT_PATHS.hardware, `${yaml("AI 硬件")}# AI 硬件
 
@@ -338,7 +338,7 @@ write(GUANLAN_VAULT_PATHS.industryReports, `${yaml("观澜研究")}# 观澜研�
 
 ${listRows(reportFiles, (file) => `- [[${file.replace(/\.md$/u, "")}|${path.basename(file, ".md")}]]`)}
 
-[打开观澜研究](${siteBase}/intelligence-map.html)`);
+[打开周报与月报](https://www.zkdlj.vip/#reports)`);
 
 write(GUANLAN_VAULT_PATHS.fundingInsights, `${yaml("观澜研究·资本与融资")}# 观澜研究·资本与融资
 
@@ -348,7 +348,7 @@ write(GUANLAN_VAULT_PATHS.fundingInsights, `${yaml("观澜研究·资本与融�
 
 ${listRows(latestFunding, (item) => `- **${text(item.as_of_date || item.date || item.published_at)}** ${fundingSummary(item)}${item.source_url ? ` — [来源](${item.source_url})` : ""}`)}
 
-[打开融资洞察](${siteBase}/funding-insights.html)`);
+[打开融资情报](https://www.zkdlj.vip/#home)`);
 
 write(GUANLAN_VAULT_PATHS.opportunityMap, `${yaml("机会地图（内部实验室）")}# 机会地图（内部实验室）
 
@@ -395,7 +395,7 @@ write(GUANLAN_VAULT_PATHS.siteOperations, `${yaml("网站运营总台")}# 网站
 - [事件库](${siteBase}/data-center.html?view=events)
 - [实体库](${siteBase}/data-center.html?view=index)
 - [变化雷达](${siteBase}/trend-radar.html)
-- [观澜研究](${siteBase}/intelligence-map.html)
+- [周报与月报](https://www.zkdlj.vip/#reports)
 - [OPS 仪表盘](${siteBase}/operations-console.html)`);
 
 write(GUANLAN_VAULT_PATHS.operations, `${yaml("运行状态")}# 运行状态
@@ -467,7 +467,7 @@ write(GUANLAN_VAULT_PATHS.contracts, `${yaml("当前契约")}# 当前契约
 | FDE | FDE-V2.0 |
 | Hardware | HARDWARE-V1.0 |
 | Tag | TAG-V4.1 |
-| Guanlan Research | REPORTS-V1.2.0-research-hub |
+| AI 融资站报告 | REPORTS-V1.3.0-funding-portal |
 | Opportunity Map | OMAP-V2.0.0-v4-evidence |
 | Trend Radar | TRADAR-V1.1.0-tag-v4-1 |`);
 

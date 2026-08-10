@@ -1,5 +1,10 @@
 # Weekly Report Page Generator Memory
 
+## 2026-08-10
+
+- Guanlan Research and duplicate weekly report HTML are retired. WaveSight keeps accepted Markdown, evidence, generation records, and stable redirects; the independent AI financing site owns report metadata, bodies, navigation, and reading UI.
+- The report publisher must discover every `status: published` source dynamically and fail closed on report removal, newest-date regression, missing title/summary/body, duplicate IDs, or metadata/body mismatch.
+
 ## 2026-07-27
 
 - Public report prose must never expose internal evidence IDs such as `[E:...]`, `[O:...]`, or `[C:...]`. Resolve them to understated, reader-facing source links with understandable labels; suppress a marker entirely when no safe public URL can be resolved.

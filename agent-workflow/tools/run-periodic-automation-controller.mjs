@@ -176,7 +176,7 @@ function changedPaths(cwd) {
 }
 
 function allowedPath(file, kind) {
-  const common = ["agent-workflow/reports/", "01-SiteV2/content/12-applications/industry-reports/", "01-SiteV2/site/data/opportunity-evidence-v2.json", "01-SiteV2/site/intelligence-map.html"];
+  const common = ["agent-workflow/reports/", "01-SiteV2/content/12-applications/industry-reports/", "01-SiteV2/site/data/opportunity-evidence-v2.json"];
   const weekly = ["01-SiteV2/site/weekly-ai-business-change-radar", "01-SiteV2/site/assets/weekly-report.css", "01-SiteV2/site/assets/data-center-v4.css", "01-SiteV2/site/assets/v4-report-shell.js", "agent-workflow/product/opportunity-direction-card-candidates.json"];
   const monthly = ["01-SiteV2/site/monthly-business-structure-", "01-SiteV2/site/assets/reports.css", "01-SiteV2/site/assets/data-center-v4.css", "01-SiteV2/site/assets/v4-report-shell.js"];
   return [...common, ...(kind === "weekly" ? weekly : monthly)].some((prefix) => file === prefix || file.startsWith(prefix));

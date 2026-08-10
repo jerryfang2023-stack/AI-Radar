@@ -1,26 +1,6 @@
-# Good Weekly Report Page Pattern
+# Good Weekly Publication
 
-User asks: “根据 `01-SiteV2/content/12-applications/industry-reports/2026-06-15--weekly-report--ai-business-change-radar.md` 生成本周周报页面。”
-
-Good output:
-
-- `intelligence-map.html` keeps the relationship network first.
-- The weekly report entry appears below the network with a time selector.
-- The weekly card title is content-derived.
-- Evidence counts are tags.
-- The read button is the right-side centered card action.
-- The detail page has:
-  - H1 from report title;
-  - time-window selector;
-  - fast-read module;
-  - action judgment module;
-  - ranked trend cards;
-  - trend-chain cards;
-  - impact cards;
-  - opportunity profile cards and score bars;
-  - categorized watchlist cards;
-  - data scope appendix.
-- The detail page has no raw `<table>` elements.
-- `meta[name="weekly-report-source"]` points to `01-SiteV2/content/12-applications/industry-reports/`.
-
-Why it passes: it converts the weekly report into a frontstage reading experience while preserving source path, version metadata, and Guanlan visual language.
+- The accepted Markdown remains under the industry-reports source directory.
+- `week: 2026-W32` maps to `weekly-2026-w32`.
+- The dated route and latest alias redirect to `https://www.zkdlj.vip/#report/weekly-2026-w32`.
+- Portal report metadata and body both contain the same ID, and live readback confirms the inventory.

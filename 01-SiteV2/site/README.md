@@ -10,8 +10,8 @@ This directory contains the current WaveSight AI V4.4 public site and operations
 Current public frontstage:
 
 - Data Center: Event Library, Community Intelligence, First-Line Viewpoints, and Entity Library in `data-center.html`
-- Application Center: Trend Radar in `trend-radar.html` and Guanlan Research in `intelligence-map.html`
-- Funding Insights remains a Guanlan Research topic route.
+- Application Center: Trend Radar in `trend-radar.html`; Guanlan Research is retired.
+- Financing cards and weekly/monthly reports publish to `https://www.zkdlj.vip/`; local funding/research/report routes are compatibility redirects only.
 - Opportunity Map remains an unlisted `noindex,nofollow` internal lab route.
 - Legacy `v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, and `reports.html` are redirects only.
 

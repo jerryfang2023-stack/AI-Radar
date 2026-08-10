@@ -1,6 +1,6 @@
 ---
 title: 观澜 AI Obsidian Vault
-date: 2026-07-31
+date: 2026-08-10
 status: current
 ---
 
@@ -23,7 +23,7 @@ status: current
 ```
 
 - 数据中心保存当前可追溯事实和独立栏目投影。
-- 应用中心保存变化雷达和观澜研究两个公开入口；融资洞察归入观澜研究的资本专题，机会地图保留为内部实验室。
+- 应用中心只保留变化雷达入口；融资情报与周报/月报统一链接到独立 AI 融资站，机会地图保留为内部实验室。
 - 运营中心是网站运营总台、运行状态、自动化与质量门禁入口。
 - 知识资产保存去重后仍有长期价值的正式报告、FDE、硬件、融资、一线人物和社群资料。
 - 工作区保存人工笔记；不会反向覆盖生产数据。
@@ -49,6 +49,6 @@ Vault 不设置 Markdown 总量硬上限；验收输出仅记录文件数。每�
 ## Production Boundary
 
 - Canonical JSON、JSONL、DuckDB、代码、测试、工作流和运行报告留在公开工程仓；完整原文只留在私有证据仓。
-- 观澜研究的正式周期报告源位于 `01-SiteV2/content/12-applications/industry-reports/`；网站生成器只读该路径。
+- 正式周期报告源仍位于 `01-SiteV2/content/12-applications/industry-reports/`；同步器只读取 `status: published` 的 Markdown，并把报告元数据与正文发布到 AI 融资站。
 - 新 Vault 是仓库当前事实和应用资产的单向本地投影，是日常运营入口，但不是 Git 或生产数据源。
 - 已退役知识库只从明确的 Git ref 在隔离工作树中恢复，不得重新写入当前生产路径。

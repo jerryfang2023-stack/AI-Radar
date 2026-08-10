@@ -160,4 +160,4 @@ The entity-history manifest reports accepted data-batch counts by month. Sparse 
 
 ## Page contract
 
-The focused V4 shell for Data Center, Trend Radar, and Guanlan Research is governed by `context/frontstage-page-contracts.md`. Funding Insights is a research subroute and Opportunity Map is an unlisted internal lab. Legacy V3 column URLs are redirects only. Trend, opportunity, funding, and report outputs are downstream application data and do not enter V4 canonical tables.
+The focused V4 shell for Data Center and Trend Radar is governed by `context/frontstage-page-contracts.md`. FDE is an Event Library theme; Opportunity Map is an unlisted internal lab. Financing cards and accepted reports publish to the independent AI financing site, while old Guanlan Research/funding/report URLs are redirects only. Trend, opportunity, funding, and report outputs remain downstream application data and do not enter V4 canonical tables.
