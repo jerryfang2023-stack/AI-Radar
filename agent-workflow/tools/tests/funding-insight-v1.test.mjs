@@ -162,6 +162,27 @@ test("canonical funding facts override same-name secondary research drift", () =
   assert.equal(payload.financing.evidence_refs[0].source_id, "SRC-CANONICAL");
 });
 
+test("canonical funding evidence tolerates deterministic source whitespace normalization", () => {
+  const payload = { financing: { evidence_refs: [] } };
+  ensureCanonicalFundingEvidence(payload, {
+    claims: [{
+      claim_id: "CL-WHITESPACE",
+      raw_id: "RAW-WHITESPACE",
+      claim_type: "funding",
+      source_quote: "Acme raised $20 million in Series A funding.",
+      verification_status: "accepted",
+    }],
+  }, { claim_refs: ["CL-WHITESPACE"] }, [{
+    source_id: "FISRC-WHITESPACE",
+    raw_id: "RAW-WHITESPACE",
+    body_clean: "Acme raised $20 million\n in Series A funding.",
+  }]);
+  assert.deepEqual(payload.financing.evidence_refs, [{
+    source_id: "FISRC-WHITESPACE",
+    quote: "Acme raised $20 million in Series A funding.",
+  }]);
+});
+
 function evidence(sourceId = "SRC-1", quote = "Acme raised $20 million led by Northstar Ventures.") {
   return [{ source_id: sourceId, quote }];
 }

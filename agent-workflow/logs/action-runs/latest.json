@@ -1,41 +1,38 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-10T01:38:03.848Z",
+  "generated_at": "2026-08-10T02:14:52.045Z",
   "date": "2026-08-10",
-  "action": "Fix private evidence push ordering",
+  "action": "Fix funding card publication validation",
   "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
-  "status": "success",
-  "summary": "Moved private evidence coverage and remote assertions after the private repository push so new daily source bodies are visible to the authoritative remote before validation",
-  "contexts": [
-    "context/10-experience-automation.md",
-    "context/12-data-center-v4.md"
-  ],
+  "status": "partial",
+  "summary": "Final funding-card validation rejected two auto_published queue entries because canonical event evidence was not cited; normalized canonical quote matching and explicit blocked status prevent silent card drops",
+  "contexts": [],
   "changed_files": [
-    ".github/workflows/daily-persistent-assets-pr.yml",
-    "agent-workflow/tools/tests/data-center-v4.test.mjs"
+    "agent-workflow/tools/generate-funding-insights-deepseek.mjs",
+    "agent-workflow/tools/funding-insight-v1-utils.mjs",
+    "agent-workflow/tools/tests/funding-insight-v1.test.mjs"
   ],
   "outputs": [],
   "checks": [
-    "data-center-v4 tests 125/125",
-    "pipeline policy gate",
-    "git diff --check"
+    "local generator rerun exposed canonical_event_source_not_cited",
+    "node --check"
   ],
   "issues": [
-    "workflow asserted local and remote private evidence HEAD equality before pushing the newly committed evidence"
+    "generator reported auto_published before final fundingInsightProblems filter",
+    "canonical evidence quote matching was too literal"
   ],
   "risks": [
-    "fresh collection is required once when a prior run failed before publishing private bodies"
+    "8/10 financing cards remain blocked until a production rerun confirms canonical private evidence hydration"
   ],
   "lessons": [
-    "commit",
-    "synchronize",
-    "push",
-    "then assert remote parity and date coverage"
+    "validate the fully normalized card before marking auto_published",
+    "canonical accepted claims may require whitespace-normalized quote matching"
   ],
   "reusable_rules": [
-    "private evidence coverage gates must validate the post-push authoritative repository state"
+    "final publication status must reflect the same card object consumed by assert-funding-insights-v1",
+    "canonical evidence checks must tolerate deterministic source-text whitespace normalization"
   ],
   "retired_flags": [],
   "notes": []

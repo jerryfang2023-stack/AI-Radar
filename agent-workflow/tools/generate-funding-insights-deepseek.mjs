@@ -754,11 +754,7 @@ async function processEvent(bundle, event, entityIndex, entityDecisions, company
     ensureNamedCompanyEvidence(payload, company, research.sources);
     ensureCanonicalFundingEvidence(payload, bundle, event, research.sources);
     ensureSecondSourceEvidence(payload, company, research.sources);
-    return {
-      event_id: event.event_id,
-      company_name: company.canonical_name,
-      status: "auto_published",
-      card: buildCard(
+    const card = buildCard(
         event,
         company,
         payload,
@@ -768,7 +764,26 @@ async function processEvent(bundle, event, entityIndex, entityDecisions, company
         entityIndex,
         entityDecisions,
         companyIdentityReview,
-      ),
+      );
+    const cardProblems = [
+      ...fundingInsightProblems(card),
+      ...fundingEventCardConsistencyProblems(card, event, bundle.claims, bundle.entities),
+    ];
+    if (cardProblems.length) {
+      return {
+        event_id: event.event_id,
+        company_name: company.canonical_name,
+        status: "blocked",
+        problems: [...new Set(cardProblems)],
+        queries: research.queries,
+        attempts: research.attempts,
+      };
+    }
+    return {
+      event_id: event.event_id,
+      company_name: company.canonical_name,
+      status: "auto_published",
+      card,
       queries: research.queries,
       attempts: research.attempts,
     };

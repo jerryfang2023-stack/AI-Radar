@@ -1218,12 +1218,16 @@ export function ensureCanonicalFundingEvidence(payload = {}, bundle = {}, event 
     const claim = claimById.get(claimId);
     const quote = clean(claim?.source_quote);
     const source = sourceByRawId.get(claim?.raw_id);
+    const normalizedSource = clean(source?.body_clean).replace(/\s+/gu, " ");
+    const normalizedQuote = quote.replace(/\s+/gu, " ");
     if (
       claim?.claim_type === "funding"
       && claim?.verification_status === "accepted"
       && source
       && quote
-      && source.body_clean.includes(quote)
+      // Source extraction may normalize line breaks or punctuation spacing;
+      // the accepted V4 claim still supplies the authoritative quote.
+      && normalizedSource.includes(normalizedQuote)
     ) {
       payload.financing.evidence_refs = [...new Map([
         { source_id: source.source_id, quote },
