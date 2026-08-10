@@ -21209,6 +21209,157 @@
       ]
     },
     {
+      "id": "INV-ade3071d50dfa4",
+      "name": "Salesforce Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 7,
+      "historical_or_ambiguous_count": 3,
+      "portfolio_company_count": 7,
+      "first_disclosed_at": "2023-08-24",
+      "latest_disclosed_at": "2026-07-29",
+      "role_counts": {
+        "historical_or_ambiguous": 3,
+        "lead": 3,
+        "participant": 4
+      },
+      "round_codes": [
+        "seed",
+        "series_a",
+        "series_c",
+        "series_d",
+        "series_e"
+      ],
+      "activity_count": 10,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-7106dbc04a08ce3a",
+          "canonical_entity_id": "",
+          "name": "8090 Labs"
+        },
+        {
+          "entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "name": "Anthropic PBC"
+        },
+        {
+          "entity_id": "FICO-2b3dac6c72b05a6e",
+          "canonical_entity_id": "",
+          "name": "Centralize"
+        },
+        {
+          "entity_id": "EN-245f1e177c5169cb",
+          "canonical_entity_id": "",
+          "name": "Hark"
+        },
+        {
+          "entity_id": "EN-d9352ce019e77ab3",
+          "canonical_entity_id": "EN-d9352ce019e77ab3",
+          "name": "Hugging Face"
+        },
+        {
+          "entity_id": "EN-c08f86842ff2c908",
+          "canonical_entity_id": "",
+          "name": "SRE.ai"
+        },
+        {
+          "entity_id": "EN-816bab802b34b308",
+          "canonical_entity_id": "",
+          "name": "Together AI"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-f56f7b1c96aa67e7",
+          "funding_insight_id": "FI-74c3c9da32686f84",
+          "event_ids": [
+            "EV-cbce4f1f5187efcf"
+          ],
+          "company_entity_id": "FICO-2b3dac6c72b05a6e",
+          "company_canonical_entity_id": "",
+          "company_name": "Centralize",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$15 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 15000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1500 万美元"
+          },
+          "announced_at": "2026-07-29",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-0f7b018944193e02",
+          "funding_insight_id": "FI-74c3c9da32686f84",
+          "event_ids": [
+            "EV-cbce4f1f5187efcf"
+          ],
+          "company_entity_id": "FICO-2b3dac6c72b05a6e",
+          "company_canonical_entity_id": "",
+          "company_name": "Centralize",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$15 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 15000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1500 万美元"
+          },
+          "announced_at": "2026-07-29",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "种子轮领投",
+          "role_code": "historical_or_ambiguous"
+        },
+        {
+          "activity_id": "IA-caac952904f6790d",
+          "funding_insight_id": "FI-2dfbeaa7d627041d",
+          "event_ids": [
+            "EV-13ec78dfdbca678b"
+          ],
+          "company_entity_id": "EN-816bab802b34b308",
+          "company_canonical_entity_id": "",
+          "company_name": "Together AI",
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "Series C",
+          "amount_original": "$800 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 800000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "8 亿美元"
+          },
+          "announced_at": "2026-07-01",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
       "id": "INV-0d309b859ee1fe",
       "name": "Coatue",
       "aliases": [
@@ -22220,153 +22371,6 @@
             "display_zh": "9800 万美元"
           },
           "announced_at": "2026-06-23",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        }
-      ]
-    },
-    {
-      "id": "INV-ade3071d50dfa4",
-      "name": "Salesforce Ventures",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 6,
-      "historical_or_ambiguous_count": 2,
-      "portfolio_company_count": 6,
-      "first_disclosed_at": "2023-08-24",
-      "latest_disclosed_at": "2026-07-01",
-      "role_counts": {
-        "historical_or_ambiguous": 2,
-        "lead": 3,
-        "participant": 3
-      },
-      "round_codes": [
-        "seed",
-        "series_a",
-        "series_c",
-        "series_d",
-        "series_e"
-      ],
-      "activity_count": 8,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-7106dbc04a08ce3a",
-          "canonical_entity_id": "",
-          "name": "8090 Labs"
-        },
-        {
-          "entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_entity_id": "EN-c70eca6b0f88f44d",
-          "name": "Anthropic PBC"
-        },
-        {
-          "entity_id": "EN-245f1e177c5169cb",
-          "canonical_entity_id": "",
-          "name": "Hark"
-        },
-        {
-          "entity_id": "EN-d9352ce019e77ab3",
-          "canonical_entity_id": "EN-d9352ce019e77ab3",
-          "name": "Hugging Face"
-        },
-        {
-          "entity_id": "EN-c08f86842ff2c908",
-          "canonical_entity_id": "",
-          "name": "SRE.ai"
-        },
-        {
-          "entity_id": "EN-816bab802b34b308",
-          "canonical_entity_id": "",
-          "name": "Together AI"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-caac952904f6790d",
-          "funding_insight_id": "FI-2dfbeaa7d627041d",
-          "event_ids": [
-            "EV-13ec78dfdbca678b"
-          ],
-          "company_entity_id": "EN-816bab802b34b308",
-          "company_canonical_entity_id": "",
-          "company_name": "Together AI",
-          "round": "C轮",
-          "round_code": "series_c",
-          "round_original": "Series C",
-          "amount_original": "$800 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 800000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "8 亿美元"
-          },
-          "announced_at": "2026-07-01",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-9142fb3a2a6a6974",
-          "funding_insight_id": "FI-ca1a0b9750ebb6db",
-          "event_ids": [
-            "EV-9300044a58395552"
-          ],
-          "company_entity_id": "EN-7106dbc04a08ce3a",
-          "company_canonical_entity_id": "",
-          "company_name": "8090 Labs",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "A 轮",
-          "amount_original": "1.35 亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 135000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1.35 亿美元"
-          },
-          "announced_at": "2026-06-29",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead"
-        },
-        {
-          "activity_id": "IA-e4a6439a5543e760",
-          "funding_insight_id": "FI-35b63d84f1f7c2b0",
-          "event_ids": [
-            "EV-450f624a6a6446ce",
-            "EV-44c9a50b99c76a70"
-          ],
-          "company_entity_id": "EN-245f1e177c5169cb",
-          "company_canonical_entity_id": "",
-          "company_name": "Hark",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "Series A",
-          "amount_original": "$700M",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 700000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "7 亿美元"
-          },
-          "announced_at": "2026-05-21",
           "disclosure_status": "disclosed",
           "scope": "current_round",
           "role": "本轮参投",
@@ -28122,6 +28126,98 @@
       ]
     },
     {
+      "id": "INV-f28cb83db18f9b",
+      "name": "New Enterprise Associates (NEA)",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 2,
+      "first_disclosed_at": "2026-07-29",
+      "latest_disclosed_at": "2026-07-29",
+      "role_counts": {
+        "lead": 2
+      },
+      "round_codes": [
+        "series_a"
+      ],
+      "activity_count": 2,
+      "portfolio_companies": [
+        {
+          "entity_id": "FICO-2b3dac6c72b05a6e",
+          "canonical_entity_id": "",
+          "name": "Centralize"
+        },
+        {
+          "entity_id": "EN-f9075cc99990820a",
+          "canonical_entity_id": "EN-f9075cc99990820a",
+          "name": "P-1 AI, Inc."
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-851ac2b9f3b6eb60",
+          "funding_insight_id": "FI-74c3c9da32686f84",
+          "event_ids": [
+            "EV-cbce4f1f5187efcf"
+          ],
+          "company_entity_id": "FICO-2b3dac6c72b05a6e",
+          "company_canonical_entity_id": "",
+          "company_name": "Centralize",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$15 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 15000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1500 万美元"
+          },
+          "announced_at": "2026-07-29",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead"
+        },
+        {
+          "activity_id": "IA-7245ae334a28f71e",
+          "funding_insight_id": "FI-0d10135597ba793d",
+          "event_ids": [
+            "EV-39b075c62ba4e927"
+          ],
+          "company_entity_id": "EN-f9075cc99990820a",
+          "company_canonical_entity_id": "EN-f9075cc99990820a",
+          "company_name": "P-1 AI, Inc.",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "Series A",
+          "amount_original": "$50 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 50000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "5000 万美元"
+          },
+          "announced_at": "2026-07-29",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead"
+        }
+      ]
+    },
+    {
       "id": "INV-f55c1274f0859f",
       "name": "Script Capital",
       "aliases": [],
@@ -28211,6 +28307,99 @@
           "scope": "current_round",
           "role": "本轮参投",
           "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-235589cd2a0f2d",
+      "name": "Stewart Butterfield",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "individual",
+      "investor_kind_label": "个人投资者",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 2,
+      "first_disclosed_at": "2026-05-20",
+      "latest_disclosed_at": "2026-07-29",
+      "role_counts": {
+        "other_current_round": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a"
+      ],
+      "activity_count": 2,
+      "portfolio_companies": [
+        {
+          "entity_id": "FICO-2b3dac6c72b05a6e",
+          "canonical_entity_id": "",
+          "name": "Centralize"
+        },
+        {
+          "entity_id": "EN-ce65fa41b16c33ff",
+          "canonical_entity_id": "",
+          "name": "Viktor"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-d35c243d0789273c",
+          "funding_insight_id": "FI-74c3c9da32686f84",
+          "event_ids": [
+            "EV-cbce4f1f5187efcf"
+          ],
+          "company_entity_id": "FICO-2b3dac6c72b05a6e",
+          "company_canonical_entity_id": "",
+          "company_name": "Centralize",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$15 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 15000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1500 万美元"
+          },
+          "announced_at": "2026-07-29",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-e3035a69cf719e9d",
+          "funding_insight_id": "FI-664cc90f57688153",
+          "event_ids": [
+            "EV-44a4e92c03a31ab1"
+          ],
+          "company_entity_id": "EN-ce65fa41b16c33ff",
+          "company_canonical_entity_id": "",
+          "company_name": "Viktor",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "Series A",
+          "amount_original": "€64.7 million ($75 million)",
+          "amount_normalized": {
+            "currency": "EUR",
+            "value": 64700000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "6470 万欧元"
+          },
+          "announced_at": "2026-05-20",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮天使投资人",
+          "role_code": "other_current_round"
         }
       ]
     },
@@ -38365,65 +38554,6 @@
           "scope": "current_round",
           "role": "本轮参投",
           "role_code": "participant"
-        }
-      ]
-    },
-    {
-      "id": "INV-f28cb83db18f9b",
-      "name": "New Enterprise Associates (NEA)",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2026-07-29",
-      "latest_disclosed_at": "2026-07-29",
-      "role_counts": {
-        "lead": 1
-      },
-      "round_codes": [
-        "series_a"
-      ],
-      "activity_count": 1,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-f9075cc99990820a",
-          "canonical_entity_id": "EN-f9075cc99990820a",
-          "name": "P-1 AI, Inc."
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-7245ae334a28f71e",
-          "funding_insight_id": "FI-0d10135597ba793d",
-          "event_ids": [
-            "EV-39b075c62ba4e927"
-          ],
-          "company_entity_id": "EN-f9075cc99990820a",
-          "company_canonical_entity_id": "EN-f9075cc99990820a",
-          "company_name": "P-1 AI, Inc.",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "Series A",
-          "amount_original": "$50 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 50000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "5000 万美元"
-          },
-          "announced_at": "2026-07-29",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead"
         }
       ]
     },
@@ -62421,65 +62551,6 @@
           },
           "announced_at": "2023-06-27",
           "disclosure_status": "partially_disclosed",
-          "scope": "current_round",
-          "role": "本轮天使投资人",
-          "role_code": "other_current_round"
-        }
-      ]
-    },
-    {
-      "id": "INV-235589cd2a0f2d",
-      "name": "Stewart Butterfield",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "individual",
-      "investor_kind_label": "个人投资者",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2026-05-20",
-      "latest_disclosed_at": "2026-05-20",
-      "role_counts": {
-        "other_current_round": 1
-      },
-      "round_codes": [
-        "series_a"
-      ],
-      "activity_count": 1,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-ce65fa41b16c33ff",
-          "canonical_entity_id": "",
-          "name": "Viktor"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-e3035a69cf719e9d",
-          "funding_insight_id": "FI-664cc90f57688153",
-          "event_ids": [
-            "EV-44a4e92c03a31ab1"
-          ],
-          "company_entity_id": "EN-ce65fa41b16c33ff",
-          "company_canonical_entity_id": "",
-          "company_name": "Viktor",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "Series A",
-          "amount_original": "€64.7 million ($75 million)",
-          "amount_normalized": {
-            "currency": "EUR",
-            "value": 64700000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "6470 万欧元"
-          },
-          "announced_at": "2026-05-20",
-          "disclosure_status": "disclosed",
           "scope": "current_round",
           "role": "本轮天使投资人",
           "role_code": "other_current_round"

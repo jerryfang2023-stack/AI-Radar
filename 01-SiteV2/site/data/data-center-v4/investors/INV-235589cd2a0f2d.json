@@ -20,18 +20,24 @@
     "investor_kind_label": "个人投资者",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "first_disclosed_at": "2026-05-20",
-    "latest_disclosed_at": "2026-05-20",
+    "latest_disclosed_at": "2026-07-29",
     "role_counts": {
-      "other_current_round": 1
+      "other_current_round": 1,
+      "participant": 1
     },
     "round_codes": [
       "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "FICO-2b3dac6c72b05a6e",
+        "canonical_entity_id": "",
+        "name": "Centralize"
+      },
       {
         "entity_id": "EN-ce65fa41b16c33ff",
         "canonical_entity_id": "",
@@ -39,6 +45,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d35c243d0789273c",
+        "funding_insight_id": "FI-74c3c9da32686f84",
+        "event_ids": [
+          "EV-cbce4f1f5187efcf"
+        ],
+        "company_entity_id": "FICO-2b3dac6c72b05a6e",
+        "company_canonical_entity_id": "",
+        "company_name": "Centralize",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$15 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "announced_at": "2026-07-29",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0232cca5ca9bf922",
+            "source_url": "https://news.crunchbase.com/sales-marketing/centralize-enterprise-sales-gtm-startup-funding-slack-meta-alums/",
+            "source_title": "独家：前Meta和Slack工程师为初创公司Centralize筹集1500万美元，打造企业销售“交易GPS”",
+            "source_content_hash": "71082c4f5d29c731",
+            "quote": "high-profile angel investors including former Slack co-founder Stewart Butterfield",
+            "quote_hash": "8202cb172d7498038cee4cc955a5e97810a8aced1637e26d5910a73593139eae"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e3035a69cf719e9d",
         "funding_insight_id": "FI-664cc90f57688153",
@@ -79,6 +123,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-0232cca5ca9bf922",
+        "source_url": "https://news.crunchbase.com/sales-marketing/centralize-enterprise-sales-gtm-startup-funding-slack-meta-alums/",
+        "source_title": "独家：前Meta和Slack工程师为初创公司Centralize筹集1500万美元，打造企业销售“交易GPS”",
+        "source_content_hash": "71082c4f5d29c731",
+        "quote": "high-profile angel investors including former Slack co-founder Stewart Butterfield",
+        "quote_hash": "8202cb172d7498038cee4cc955a5e97810a8aced1637e26d5910a73593139eae"
+      },
       {
         "source_id": "FISRC-ce83b857608dabeb",
         "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",

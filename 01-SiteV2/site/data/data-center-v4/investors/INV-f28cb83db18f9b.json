@@ -20,18 +20,23 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "first_disclosed_at": "2026-07-29",
     "latest_disclosed_at": "2026-07-29",
     "role_counts": {
-      "lead": 1
+      "lead": 2
     },
     "round_codes": [
       "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "FICO-2b3dac6c72b05a6e",
+        "canonical_entity_id": "",
+        "name": "Centralize"
+      },
       {
         "entity_id": "EN-f9075cc99990820a",
         "canonical_entity_id": "EN-f9075cc99990820a",
@@ -39,6 +44,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-851ac2b9f3b6eb60",
+        "funding_insight_id": "FI-74c3c9da32686f84",
+        "event_ids": [
+          "EV-cbce4f1f5187efcf"
+        ],
+        "company_entity_id": "FICO-2b3dac6c72b05a6e",
+        "company_canonical_entity_id": "",
+        "company_name": "Centralize",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$15 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "announced_at": "2026-07-29",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-0232cca5ca9bf922",
+            "source_url": "https://news.crunchbase.com/sales-marketing/centralize-enterprise-sales-gtm-startup-funding-slack-meta-alums/",
+            "source_title": "独家：前Meta和Slack工程师为初创公司Centralize筹集1500万美元，打造企业销售“交易GPS”",
+            "source_content_hash": "71082c4f5d29c731",
+            "quote": "a $15 million Series A funding round led by New Enterprise Associates (NEA)",
+            "quote_hash": "1c98aabdb9653e808fa074c13f803a272d0da6cf268813e13ca766f9604c15da"
+          }
+        ]
+      },
       {
         "activity_id": "IA-7245ae334a28f71e",
         "funding_insight_id": "FI-0d10135597ba793d",
@@ -79,6 +122,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-0232cca5ca9bf922",
+        "source_url": "https://news.crunchbase.com/sales-marketing/centralize-enterprise-sales-gtm-startup-funding-slack-meta-alums/",
+        "source_title": "独家：前Meta和Slack工程师为初创公司Centralize筹集1500万美元，打造企业销售“交易GPS”",
+        "source_content_hash": "71082c4f5d29c731",
+        "quote": "a $15 million Series A funding round led by New Enterprise Associates (NEA)",
+        "quote_hash": "1c98aabdb9653e808fa074c13f803a272d0da6cf268813e13ca766f9604c15da"
+      },
       {
         "source_id": "FISRC-17090c9ebbe2bea3",
         "source_url": "https://lifestyle.tasteterminal.com/story/786493/engineering-ai-startup-p-1-ai-announces-its-series-a-financing-led-by-nea-adding-jeff-immelt-to-the-companys-board/",

@@ -20,15 +20,15 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
-    "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 6,
+    "current_round_count": 7,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 7,
     "first_disclosed_at": "2023-08-24",
-    "latest_disclosed_at": "2026-07-01",
+    "latest_disclosed_at": "2026-07-29",
     "role_counts": {
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 3,
       "lead": 3,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "seed",
@@ -47,6 +47,11 @@
         "entity_id": "EN-c70eca6b0f88f44d",
         "canonical_entity_id": "EN-c70eca6b0f88f44d",
         "name": "Anthropic PBC"
+      },
+      {
+        "entity_id": "FICO-2b3dac6c72b05a6e",
+        "canonical_entity_id": "",
+        "name": "Centralize"
       },
       {
         "entity_id": "EN-245f1e177c5169cb",
@@ -70,6 +75,82 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-f56f7b1c96aa67e7",
+        "funding_insight_id": "FI-74c3c9da32686f84",
+        "event_ids": [
+          "EV-cbce4f1f5187efcf"
+        ],
+        "company_entity_id": "FICO-2b3dac6c72b05a6e",
+        "company_canonical_entity_id": "",
+        "company_name": "Centralize",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$15 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "announced_at": "2026-07-29",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0232cca5ca9bf922",
+            "source_url": "https://news.crunchbase.com/sales-marketing/centralize-enterprise-sales-gtm-startup-funding-slack-meta-alums/",
+            "source_title": "独家：前Meta和Slack工程师为初创公司Centralize筹集1500万美元，打造企业销售“交易GPS”",
+            "source_content_hash": "71082c4f5d29c731",
+            "quote": "The financing includes participation from Salesforce Ventures",
+            "quote_hash": "a8dbfb35d3438ca740d5203a49393ec2f3ce6550e5d4de9c7b80364b259a80f9"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0f7b018944193e02",
+        "funding_insight_id": "FI-74c3c9da32686f84",
+        "event_ids": [
+          "EV-cbce4f1f5187efcf"
+        ],
+        "company_entity_id": "FICO-2b3dac6c72b05a6e",
+        "company_canonical_entity_id": "",
+        "company_name": "Centralize",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$15 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "announced_at": "2026-07-29",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-0232cca5ca9bf922",
+            "source_url": "https://news.crunchbase.com/sales-marketing/centralize-enterprise-sales-gtm-startup-funding-slack-meta-alums/",
+            "source_title": "独家：前Meta和Slack工程师为初创公司Centralize筹集1500万美元，打造企业销售“交易GPS”",
+            "source_content_hash": "71082c4f5d29c731",
+            "quote": "a previous $4 million seed round led by Salesforce Ventures",
+            "quote_hash": "612ade98581dc140437e25dad25452607e5d4815e1788a49aa44e38dd58188f6"
+          }
+        ]
+      },
       {
         "activity_id": "IA-caac952904f6790d",
         "funding_insight_id": "FI-2dfbeaa7d627041d",
@@ -377,6 +458,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-0232cca5ca9bf922",
+        "source_url": "https://news.crunchbase.com/sales-marketing/centralize-enterprise-sales-gtm-startup-funding-slack-meta-alums/",
+        "source_title": "独家：前Meta和Slack工程师为初创公司Centralize筹集1500万美元，打造企业销售“交易GPS”",
+        "source_content_hash": "71082c4f5d29c731",
+        "quote": "The financing includes participation from Salesforce Ventures",
+        "quote_hash": "a8dbfb35d3438ca740d5203a49393ec2f3ce6550e5d4de9c7b80364b259a80f9"
+      },
+      {
+        "source_id": "FISRC-0232cca5ca9bf922",
+        "source_url": "https://news.crunchbase.com/sales-marketing/centralize-enterprise-sales-gtm-startup-funding-slack-meta-alums/",
+        "source_title": "独家：前Meta和Slack工程师为初创公司Centralize筹集1500万美元，打造企业销售“交易GPS”",
+        "source_content_hash": "71082c4f5d29c731",
+        "quote": "a previous $4 million seed round led by Salesforce Ventures",
+        "quote_hash": "612ade98581dc140437e25dad25452607e5d4815e1788a49aa44e38dd58188f6"
+      },
       {
         "source_id": "FISRC-7d75683a17a8f2ca",
         "source_url": "https://aibizinsider.com/2026/07/21/together-ai-800m-series-c-open-source-2026-07-21/",
