@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-09T05:37:09.176Z",
-    "latestDataDate": "2026-08-09",
-    "currentDate": "2026-08-09",
-    "eventCount": 1962,
+    "generatedAt": "2026-08-10T01:53:54.030Z",
+    "latestDataDate": "2026-08-10",
+    "currentDate": "2026-08-10",
+    "eventCount": 1976,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -26,14 +26,10 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [
-      "EN-968e2d5b08687bf4"
-    ],
+    "relatedEntityIds": [],
     "firstSeen": "2026-06-23",
     "lastSeen": "2026-06-23",
-    "relationIds": [
-      "REL2-171c0b5e7e3fda33"
-    ],
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -66,86 +62,8 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-968e2d5b08687bf4",
-      "name": "Samsung",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "三星"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-a89bf7c0c4203ce2",
-        "EV-48075ca70a5458ec",
-        "EV-b3c7c4bff17063d8",
-        "EV-79a0bbe8b8623b28",
-        "EV-614fb5bb3cfc2519",
-        "EV-59882383f82f215d",
-        "EV-212aa5b375abf8a7",
-        "EV-d5c00f302e1f808c",
-        "EV-538adc98d1da8fda",
-        "EV-d209a6acecba4285",
-        "EV-286574206caa37ab",
-        "EV-ef6464cf7f764835",
-        "EV-935640fc8fb69e26",
-        "EV-02015794e4c719d0",
-        "EV-a37b9d9fb85e460f",
-        "EV-8a9b12665a3e40a0",
-        "EV-415261e2efce3bf8",
-        "EV-9ca7db66f8f10b63",
-        "EV-9b29acd28643e9d1",
-        "EV-20dcacae656a9eb8",
-        "EV-b9da0f17dc8eb908",
-        "EV-02186ed7885f68fe",
-        "EV-44a492c1688949cf",
-        "EV-1b92b6c835ce240c",
-        "EV-3b3af6df1ca6c880",
-        "EV-c544ddd798dfcd51",
-        "EV-5271985bba70f3d1"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-product_form-model",
-        "TX-technology-on_device",
-        "TX-deployment_model-edge_device"
-      ],
-      "relatedEntityIds": [
-        "EN-7d3194f79e645c42",
-        "EN-8f5edf98060f12af",
-        "EN-c70eca6b0f88f44d",
-        "EN-d84c1d1c315bc2f8"
-      ],
-      "firstSeen": "2026-05-22",
-      "lastSeen": "2026-07-28"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-171c0b5e7e3fda33",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-968e2d5b08687bf4",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-d84c1d1c315bc2f8",
-      "object_type": "entity",
-      "event_id": "EV-9b29acd28643e9d1",
-      "claim_refs": [
-        "CL-3088dff95dd16d25",
-        "CL-e32b273519e183f6",
-        "CL-9b6df01dd258eb44"
-      ],
-      "source_refs": [
-        "SA-3c73c5563433827e"
-      ],
-      "data_date": "2026-06-23",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

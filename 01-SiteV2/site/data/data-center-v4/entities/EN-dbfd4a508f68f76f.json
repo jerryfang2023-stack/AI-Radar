@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-09T05:37:09.176Z",
-    "latestDataDate": "2026-08-09",
-    "currentDate": "2026-08-09",
-    "eventCount": 1962,
+    "generatedAt": "2026-08-10T01:53:54.030Z",
+    "latestDataDate": "2026-08-10",
+    "currentDate": "2026-08-10",
+    "eventCount": 1976,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -26,12 +26,15 @@
     ],
     "eventIds": [],
     "viewpointIds": [
+      "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/#atom-everything",
+      "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/#atom-everything",
       "https://simonwillison.net/2026/Aug/8/auto-mode/#atom-everything",
       "https://simonwillison.net/2026/Aug/8/now-we-have-a-timeline-of-the-openai-accidental-attack-against-h/#atom-everything",
       "https://simonwillison.net/2026/Aug/7/openai-timeline/#atom-everything",
       "https://simonwillison.net/2026/Aug/7/moonlight-mayhem/#atom-everything",
       "https://simonwillison.net/2026/Aug/7/pdfs-are-terrible/#atom-everything",
       "https://simonwillison.net/2026/Aug/6/an-ai-model-from-meta/#atom-everything",
+      "https://simonwillison.net/2026/Aug/5/muse-code-and-muse-spark-12/#atom-everything",
       "https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations/#atom-everything",
       "https://simonwillison.net/2026/Aug/5/incident-report/#atom-everything",
       "https://simonwillison.net/2026/Aug/5/raccoon-heist/#atom-everything",
@@ -40,7 +43,6 @@
       "https://simonwillison.net/2026/Aug/4/llm/#atom-everything",
       "https://simonwillison.net/2026/Aug/3/dont-be-a-meat-proxy/#atom-everything",
       "https://simonwillison.net/2026/Aug/3/david-crawshaw/#atom-everything",
-      "https://simonwillison.net/2026/Aug/2/open-letters/#atom-everything",
       "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter/#atom-everything",
       "https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything",
       "https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything",
@@ -90,17 +92,17 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-01",
-    "lastSeen": "2026-08-09",
+    "lastSeen": "2026-08-10",
     "handle": "simonwillison.net",
     "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
     "organization": "",
     "viewpointTags": [
-      "AI 编程",
-      "AI Coding 观点",
-      "AI Coding",
       "产品与创业",
       "产品策略观点",
       "AI 应用与平台",
+      "AI 编程",
+      "AI Coding 观点",
+      "AI Coding",
       "AI 基础设施",
       "模型基础设施观点",
       "Agent",
@@ -121,6 +123,18 @@
     },
     "timeline": [],
     "viewpoints": [
+      {
+        "id": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/#atom-everything",
+        "date": "2026-08-10",
+        "title": "引用Claude Opus 5系统提示",
+        "sourceUrl": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/#atom-everything"
+      },
+      {
+        "id": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/#atom-everything",
+        "date": "2026-08-10",
+        "title": "GitHub Models 现已退役",
+        "sourceUrl": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/#atom-everything"
+      },
       {
         "id": "https://simonwillison.net/2026/Aug/8/auto-mode/#atom-everything",
         "date": "2026-08-09",
@@ -154,8 +168,14 @@
       {
         "id": "https://simonwillison.net/2026/Aug/6/an-ai-model-from-meta/#atom-everything",
         "date": "2026-08-06",
-        "title": "Meta的一款AI模型在测试期间也入侵了另一家公司。",
+        "title": "Meta的一款AI模型在测试期间也入侵了另一家公司",
         "sourceUrl": "https://simonwillison.net/2026/Aug/6/an-ai-model-from-meta/#atom-everything"
+      },
+      {
+        "id": "https://simonwillison.net/2026/Aug/5/muse-code-and-muse-spark-12/#atom-everything",
+        "date": "2026-08-06",
+        "title": "Muse Code 与 Muse Spark 1.2 正式发布",
+        "sourceUrl": "https://simonwillison.net/2026/Aug/5/muse-code-and-muse-spark-12/#atom-everything"
       },
       {
         "id": "https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations/#atom-everything",
@@ -172,7 +192,7 @@
       {
         "id": "https://simonwillison.net/2026/Aug/5/raccoon-heist/#atom-everything",
         "date": "2026-08-06",
-        "title": "用Claude Fable 5一次通关《浣熊大劫案》游戏",
+        "title": "用Claude Fable 5一次性通关《浣熊大劫案》游戏",
         "sourceUrl": "https://simonwillison.net/2026/Aug/5/raccoon-heist/#atom-everything"
       },
       {
@@ -184,19 +204,19 @@
       {
         "id": "https://simonwillison.net/2026/Aug/4/llm-anthropic/#atom-everything",
         "date": "2026-08-05",
-        "title": "llm-anthropic 0.26 上一次翻译未能通过以下检查：缺少中文翻译、译文与原文相同。请重新翻译完整的原文，并将所有列出的网址、账号、话题标签、数字、金额、百分比和版本号原样复制到译文中。",
+        "title": "llm-anthropic 0.26 之前的翻译未通过以下检查：缺少中文翻译、翻译与原文相同。请重新翻译完整原文，并将所有列出的网址、账号、话题标签、数字、金额、百分比和版本号原样复制到译文中。",
         "sourceUrl": "https://simonwillison.net/2026/Aug/4/llm-anthropic/#atom-everything"
       },
       {
         "id": "https://simonwillison.net/2026/Aug/4/llm/#atom-everything",
         "date": "2026-08-05",
-        "title": "llm 0.32 之前的翻译未通过以下检查：缺少中文翻译、翻译与原文相同。请重新翻译完整的原文，并将每个列出的网址、账号、话题标签、数字、金额、百分比和版本原样复制到译文中。",
+        "title": "llm 0.32 之前的翻译未能通过以下检查：缺少中文翻译、翻译与原文相同。请重新翻译完整的原文，并将所有列出的网址、账号、话题标签、数字、金额、百分比和版本号原样复制到译文中。",
         "sourceUrl": "https://simonwillison.net/2026/Aug/4/llm/#atom-everything"
       },
       {
         "id": "https://simonwillison.net/2026/Aug/3/dont-be-a-meat-proxy/#atom-everything",
         "date": "2026-08-04",
-        "title": "不要做肉盾代理。",
+        "title": "别做肉盾代理。",
         "sourceUrl": "https://simonwillison.net/2026/Aug/3/dont-be-a-meat-proxy/#atom-everything"
       },
       {
@@ -204,12 +224,6 @@
         "date": "2026-08-04",
         "title": "引用David Crawshaw的提示：",
         "sourceUrl": "https://simonwillison.net/2026/Aug/3/david-crawshaw/#atom-everything"
-      },
-      {
-        "id": "https://simonwillison.net/2026/Aug/2/open-letters/#atom-everything",
-        "date": "2026-08-02",
-        "title": "关于人工智能发展的公开信",
-        "sourceUrl": "https://simonwillison.net/2026/Aug/2/open-letters/#atom-everything"
       },
       {
         "id": "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter/#atom-everything",

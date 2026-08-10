@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-09T05:37:09.176Z",
-    "latestDataDate": "2026-08-09",
-    "currentDate": "2026-08-09",
-    "eventCount": 1962,
+    "generatedAt": "2026-08-10T01:53:54.030Z",
+    "latestDataDate": "2026-08-10",
+    "currentDate": "2026-08-10",
+    "eventCount": 1976,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -73,6 +73,7 @@
       "EV-7585b033d4005977",
       "EV-cec68369662236fd",
       "EV-4eb0556b8c72d410",
+      "EV-b3ef1eed47191c55",
       "EV-0d1e8308d3c007aa",
       "EV-83d022f89ba29209",
       "EV-64178e5d858f5e25",
@@ -172,6 +173,7 @@
       "EN-15516525ca2aa1a4",
       "EN-8dc72a4672894e0f",
       "EN-098a40b4499d7512",
+      "EN-57fac8572eeab5fc",
       "EN-d25e715a1ce00764",
       "EN-99f9ebbef37fcec5",
       "EN-240389f4b730bad4",
@@ -210,7 +212,7 @@
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2025-08-27",
-    "lastSeen": "2026-08-09"
+    "lastSeen": "2026-08-10"
   },
   "events": [
     {
@@ -26127,6 +26129,88 @@
       "publisher": "techcrunch.com"
     },
     {
+      "id": "EV-b3ef1eed47191c55",
+      "dataDate": "2026-08-10",
+      "date": "2026-08-08",
+      "updatedDate": "2026-08-10",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Firebird 开设该地区最大 AI 工厂并宣布全球扩张",
+      "originalTitle": "Firebird Opens the Region's Largest AI Factory and Announces Global Expansion",
+      "subject": "Firebird",
+      "action": "hardware_deployment",
+      "object": "NVIDIA DSX AI factory",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-57fac8572eeab5fc"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-57fac8572eeab5fc"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-57fac8572eeab5fc"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-57fac8572eeab5fc",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "Firebird",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://prnewswire.com/news-releases/firebird-opens-the-regions-largest-ai-factory-and-announces-global-expansion-302846589.html",
+      "publisher": "prnewswire.com"
+    },
+    {
       "id": "EV-0d1e8308d3c007aa",
       "dataDate": "2026-08-09",
       "date": "2026-08-05",
@@ -26205,23 +26289,24 @@
     },
     {
       "id": "EV-83d022f89ba29209",
-      "dataDate": "2026-08-09",
+      "dataDate": "2026-08-10",
       "date": "2026-08-04",
-      "updatedDate": "2026-08-09",
+      "updatedDate": "2026-08-10",
       "eventType": "procurement_contract",
       "eventTypeLabel": "采购合同",
       "eventGroup": "商业合作",
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "Volta 选择戴尔科技助力打造下一代 AI 工厂",
+      "title": "Volta 选择戴尔科技助力构建下一代 AI 工厂",
       "originalTitle": "Volta Selects Dell Technologies to Help Build Next-Generation AI Factories | Dell USA",
       "subject": "Volta",
       "action": "procurement_contract",
-      "object": "Dell Technologies AI infrastructure, including Dell PowerRack systems with PowerEdge XE9812 servers including NVIDIA accelerators",
+      "object": "Dell Technologies AI infrastructure including Dell PowerRack systems with PowerEdge XE9812 servers including NVIDIA accelerators",
       "metrics": [
         "133 MW",
-        "9812 servers"
+        "9812 servers",
+        "1 GW"
       ],
       "locations": [
         "Europe"
@@ -32526,6 +32611,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-b3ef1eed47191c55",
         "EV-83d022f89ba29209",
         "EV-5bbc509a032b8309",
         "EV-a852dc0ca6011ff6",
@@ -32649,6 +32735,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-2449fe665b666581",
+        "EV-29570c9cbb6ce7cd",
         "EV-eae8f316bc05820b",
         "EV-cd7e18de453152dd",
         "EV-89bdda008227fb6b",
@@ -32712,7 +32800,7 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-10"
     },
     {
       "id": "EN-1bd14cd1a58c5708",
@@ -33716,6 +33804,27 @@
       "lastSeen": "2026-07-22"
     },
     {
+      "id": "EN-57fac8572eeab5fc",
+      "name": "Firebird",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b3ef1eed47191c55"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-manufacturing"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-08",
+      "lastSeen": "2026-08-10"
+    },
+    {
       "id": "EN-d25e715a1ce00764",
       "name": "Volta",
       "entityType": "organization_candidate",
@@ -33734,7 +33843,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-10"
     },
     {
       "id": "EN-99f9ebbef37fcec5",
@@ -34353,6 +34462,7 @@
         "EV-7f9631d793292d07",
         "EV-8993e021ac17df4a",
         "EV-67a69ab5b20da3c1",
+        "EV-2449fe665b666581",
         "EV-b4f38d8bff12727b",
         "EV-1b92b6c835ce240c",
         "EV-933294dfb2d19a67"
@@ -34374,7 +34484,7 @@
         "EN-7d1507284a5757ca"
       ],
       "firstSeen": "2023-11-28",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-10"
     },
     {
       "id": "EN-bbdefa2950f49882",
@@ -34388,6 +34498,7 @@
       ],
       "eventIds": [
         "EV-a0ca934522418c0b",
+        "EV-cfbfc6c80338aa12",
         "EV-9b81b0dd09a046ab",
         "EV-e41fc65eb014893f",
         "EV-dfddbb260b3d1c77",
@@ -34602,7 +34713,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-10"
     },
     {
       "id": "EN-1706429cbf67f1c9",
@@ -35056,6 +35167,77 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-5c1869bc3f79759f",
+      "snapshotKey": "5c1869bc3f79759f",
+      "snapshotId": "HWS-31f9dff45fd17a86",
+      "eventId": "EV-83d022f89ba29209",
+      "eventIds": [
+        "EV-83d022f89ba29209"
+      ],
+      "dataDate": "2026-08-10",
+      "date": "2026-08-10",
+      "title": "Volta",
+      "subject": "Volta",
+      "productNames": [],
+      "hardwareType": "ai_accelerator",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "133",
+          "unit": "MW",
+          "fact_ref": "HWF-71b38533453b16b7"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-10",
+          "previousDate": "2026-08-09",
+          "snapshotId": "HWS-31f9dff45fd17a86",
+          "previousSnapshotId": "HWS-b53ba96f9f2c11d3",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-10",
+          "hardware_fact_id": "HWF-71b38533453b16b7",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-04T00:00:00.000Z",
+          "subject_entity_id": "EN-d25e715a1ce00764",
+          "subject_name": "Volta",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "ai_accelerator",
+          "metric_value": "133",
+          "unit": "MW",
+          "source_quote": "Its initial project will be an AI factory in Europe located in Norway that will comprise a 133 MW deployment powered by Dell Technologies AI infrastructure, including Dell PowerRack systems with PowerEdge XE9812 servers including NVIDIA accelerators.",
+          "event_refs": [
+            "EV-83d022f89ba29209"
+          ],
+          "claim_ref": "CL-e49f30b730254d59",
+          "source_refs": [
+            "SA-036fa74ea5c545f3"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-10/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~~usa~2026~08~volta-selects-dell-technologies-to-help-build-next-generation-ai-factories.htm",
+      "entityIds": [
+        "EN-d25e715a1ce00764",
+        "EN-8d4321d936320802"
+      ]
+    },
+    {
       "id": "HWC-d918b781f4810a43",
       "snapshotKey": "d918b781f4810a43",
       "snapshotId": "HWS-91db42fe6efe5289",
@@ -35192,67 +35374,6 @@
       "tags": [],
       "sourceUrl": "https://globenewswire.com/news-release/2026/08/06/3339887/0/en/kaytus-delivers-a-400-rack-high-density-air-cooled-compute-cluster-within-72-days-cutting-deployment-time-by-60.html",
       "entityIds": []
-    },
-    {
-      "id": "HWC-5c1869bc3f79759f",
-      "snapshotKey": "5c1869bc3f79759f",
-      "snapshotId": "HWS-b53ba96f9f2c11d3",
-      "eventId": "EV-83d022f89ba29209",
-      "eventIds": [
-        "EV-83d022f89ba29209"
-      ],
-      "dataDate": "2026-08-09",
-      "date": "2026-08-09",
-      "title": "Volta",
-      "subject": "Volta",
-      "productNames": [],
-      "hardwareType": "ai_accelerator",
-      "factTypes": [
-        "shipment_deployment"
-      ],
-      "latestValues": {
-        "shipment_deployment": {
-          "metric_value": "133",
-          "unit": "MW",
-          "fact_ref": "HWF-6fd93e441c08d734"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [
-        {
-          "data_date": "2026-08-09",
-          "hardware_fact_id": "HWF-6fd93e441c08d734",
-          "fact_type": "shipment_deployment",
-          "observed_at": "2026-08-04T00:00:00.000Z",
-          "subject_entity_id": "EN-d25e715a1ce00764",
-          "subject_name": "Volta",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "ai_accelerator",
-          "metric_value": "133",
-          "unit": "MW",
-          "source_quote": "Its initial project will be an AI factory in Europe located in Norway that will comprise a 133 MW deployment powered by Dell Technologies AI infrastructure, including Dell PowerRack systems with PowerEdge XE9812 servers including NVIDIA accelerators.",
-          "event_refs": [
-            "EV-83d022f89ba29209"
-          ],
-          "claim_ref": "CL-c6b8a9114bcfbb9c",
-          "source_refs": [
-            "SA-036fa74ea5c545f3"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
-        }
-      ],
-      "specificationFacts": [],
-      "capexFacts": [],
-      "tags": [],
-      "sourceUrl": "https://dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~~usa~2026~08~volta-selects-dell-technologies-to-help-build-next-generation-ai-factories.htm",
-      "entityIds": [
-        "EN-d25e715a1ce00764",
-        "EN-8d4321d936320802"
-      ]
     },
     {
       "id": "HWC-dec6b87b671f56f6",
