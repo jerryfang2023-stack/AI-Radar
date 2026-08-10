@@ -8,6 +8,10 @@ if (
   process.env.GUANLAN_EVIDENCE_BACKUP_ROOT
   || fs.existsSync(path.join(process.cwd(), ".evidence-backup.json"))
 ) {
+  execFileSync(process.execPath, ["agent-workflow/tools/assert-private-evidence-remote.mjs"], {
+    cwd: process.cwd(),
+    stdio: "inherit",
+  });
   execFileSync(process.execPath, ["agent-workflow/tools/backup-private-evidence.mjs"], {
     cwd: process.cwd(),
     stdio: "inherit",
