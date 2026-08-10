@@ -74,6 +74,7 @@ function applyIntakeTitleMetadata(raw = {}, document = {}) {
     // The structured intake is the authoritative identity envelope. Private
     // hydration may restore an older/raw-shaped record, so keep URL and
     // content identity bound to the intake artifact before V4 recomputes IDs.
+    original_url: clean(document.source_url) || clean(document.canonical_url) || clean(raw.original_url) || clean(raw.source_url),
     source_url: clean(document.source_url) || clean(raw.source_url) || clean(raw.original_url),
     canonical_url: clean(document.canonical_url) || clean(raw.canonical_url) || clean(raw.source_url),
     content_hash: clean(document.content_hash) || clean(raw.content_hash),

@@ -1,34 +1,32 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-10T02:31:31.884Z",
+  "generated_at": "2026-08-10T02:43:30.230Z",
   "date": "2026-08-10",
-  "action": "Fix structured intake identity drift",
+  "action": "Fix hydrated original URL identity drift",
   "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
   "status": "partial",
-  "summary": "Production rebuild failed when hydrated private RawDocument metadata recomputed a different SourceArtifact identity; bind URL and content hash to the structured intake envelope before V4 ID checks",
+  "summary": "A second production run showed private hydration also retained a stale original_url that took precedence over the intake source URL; bind original_url as well as source_url/content_hash",
   "contexts": [],
   "changed_files": [
-    "agent-workflow/tools/lib/source-intake-v1.mjs",
-    "agent-workflow/tools/tests/source-intake-v1.test.mjs"
+    "agent-workflow/tools/lib/source-intake-v1.mjs"
   ],
   "outputs": [],
   "checks": [
-    "source-intake tests 11/11",
-    "pipeline policy gate"
+    "source-intake tests 11/11 previously passed"
   ],
   "issues": [
-    "build-data-center-v4 rejected RAW-066aeb84f5b7c2bf with structured intake SourceArtifact identity drift"
+    "build-data-center-v4 rejected RAW-71b766e48d48981a with SourceArtifact identity drift after source_url/content_hash binding"
   ],
   "risks": [
-    "another production rerun is required to validate the identity fix and generate funding cards"
+    "one more production validation run required"
   ],
   "lessons": [
-    "private evidence hydration must not change structured intake identity"
+    "all URL aliases used by SourceArtifact hashing must come from the intake envelope"
   ],
   "reusable_rules": [
-    "recompute SourceArtifact IDs from the authoritative intake URL and content hash envelope"
+    "never let hydrated raw original_url override structured intake identity"
   ],
   "retired_flags": [],
   "notes": []
