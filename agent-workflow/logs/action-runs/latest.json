@@ -1,39 +1,38 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-11T01:54:32.428Z",
+  "generated_at": "2026-08-11T02:04:25.923Z",
   "date": "2026-08-11",
-  "action": "Repair funding card amount consistency fallback",
+  "action": "Repair source-title integrity gate",
   "action_status": "unregistered",
   "record_level": "required",
-  "trigger": "manual",
-  "status": "partial",
-  "summary": "The 2026-08-11 funding lane blocked Lumilens because a deterministic claim object was truncated to 00M in funding although the exact source quote disclosed $700 million; the consistency gate now checks the source quote when the claim object is incomplete.",
+  "trigger": "codex",
+  "status": "success",
+  "summary": "Repaired one accepted historical source title without recollecting raw data; exact Chinese translation now resolves during resumed production.",
   "contexts": [],
   "changed_files": [
-    "agent-workflow/tools/funding-insight-v1-utils.mjs",
-    "agent-workflow/tools/tests/funding-insight-v1.test.mjs"
+    "agent-workflow/tools/source-title-translation-generator.mjs",
+    "agent-workflow/tools/tests/source-intake-v1.test.mjs",
+    "01-SiteV2/content/11-databases/source-title-translations.json"
   ],
   "outputs": [
-    "resume_run_id:31445093380"
+    "source-title-translations.json"
   ],
   "checks": [
-    "node --check funding-insight-v1-utils.mjs",
-    "node --test funding-insight-v1.test.mjs (69/69)"
+    "node --test agent-workflow/tools/tests/source-intake-v1.test.mjs",
+    "translation loader lookup"
   ],
   "issues": [
-    "EV-b116eafe60d71fbe verified funding event lacked a valid card due claim object truncation"
+    "8/11 resumed production blocked by RAW-e404d6cc9273ce82 missing title_zh"
   ],
   "risks": [
-    "One targeted resumed production run required"
+    "Manual translation must preserve source numeric facts and named entities"
   ],
   "lessons": [
-    "Exact source spans outrank truncated derived claim labels for amount consistency"
+    "Resume from accepted intake; repair only the failing integrity stage before rerunning dependents"
   ],
   "reusable_rules": [
-    "Funding card consistency must accept a normalized amount from the exact source quote when claim.object is malformed"
+    "Never recollect accepted same-date raw data for downstream-only failures; use deterministic title translation registry repairs"
   ],
   "retired_flags": [],
-  "notes": [
-    "No raw recollection; next run reuses accepted 2026-08-11 intake/QC artifact"
-  ]
+  "notes": []
 }

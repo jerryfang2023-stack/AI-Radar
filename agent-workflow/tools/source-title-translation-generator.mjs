@@ -8,6 +8,7 @@ export function hasCjk(value = "") {
 
 const approvedTranslationMethods = new Set([
   "deepseek_title_translation",
+  "manual_source_title_translation",
 ]);
 
 export function isApprovedSourceTitleTranslation(entry = {}) {

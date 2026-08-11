@@ -16,7 +16,7 @@ import {
 import { selectImmutableSourceSnapshot } from "../lib/immutable-source-snapshot-v1.mjs";
 import { normalizeSourceIntakeTitles } from "../normalize-source-intake-titles.mjs";
 import { regenerateSourceTitleTranslations } from "../regenerate-source-title-translations-deepseek.mjs";
-import { titleTranslationKey } from "../source-title-translation-generator.mjs";
+import { titleTranslationKey, titleTranslationLooksUsable } from "../source-title-translation-generator.mjs";
 
 function writeJson(file, value) {
   fs.mkdirSync(path.dirname(file), { recursive: true });
@@ -29,6 +29,12 @@ test("source title translation keys normalize spaced dash variants", () => {
   const enDash = "Deploying and Scaling Enterprise AI Agents – Eloquent AI";
   assert.equal(titleTranslationKey(emDash), titleTranslationKey(hyphen));
   assert.equal(titleTranslationKey(enDash), titleTranslationKey(hyphen));
+});
+
+test("manually reviewed source-title translations satisfy the integrity contract", () => {
+  const title = "MAI-Image-2.6 launches at No. 2 on Arena ahead of Google， Meta and xAI";
+  const translation = "MAI-Image-2.6 在 Arena 排名第 2，领先 Google、Meta 和 xAI";
+  assert.ok(titleTranslationLooksUsable(title, translation));
 });
 
 test("resumed source intake reuses an approved translation across dash variants", () => {
