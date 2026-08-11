@@ -1,0 +1,512 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-11T02:08:35.439Z",
+    "latestDataDate": "2026-08-11",
+    "currentDate": "2026-08-11",
+    "eventCount": 1993,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-f4bc2c89599f5449",
+    "name": "Muse Glimmer",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-29c0d969abde2020",
+      "EV-2fa8fef6da3a5937",
+      "EV-5f529a16a35a0d52",
+      "EV-7228e4310ee1341a",
+      "EV-b3cb8d6fdd9689d7",
+      "EV-cfaa2f6b5c7a5f8a"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-10",
+    "lastSeen": "2026-08-11",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-29c0d969abde2020",
+        "EV-2fa8fef6da3a5937",
+        "EV-5f529a16a35a0d52",
+        "EV-7228e4310ee1341a",
+        "EV-b3cb8d6fdd9689d7",
+        "EV-cfaa2f6b5c7a5f8a"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-29c0d969abde2020",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-11",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Meta 发布开源模型 Muse Glimmer，并承诺数周内开放 Muse Spark 1.2 权重",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "code_generation",
+            "name": "代码生成",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "long_context",
+            "name": "长上下文",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "cloud",
+            "name": "云端",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-ea3bd73e2b506e00",
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d",
+          "EN-f4bc2c89599f5449"
+        ]
+      },
+      {
+        "id": "EV-2fa8fef6da3a5937",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-10",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Meta 发布 Muse Glimmer：可在单张消费级 GPU 上运行的 300 亿参数开源智能体模型",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "quantization",
+            "name": "模型量化",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-ea3bd73e2b506e00",
+          "EN-f4bc2c89599f5449"
+        ]
+      },
+      {
+        "id": "EV-5f529a16a35a0d52",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-10",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "SGLang 为 Muse Glimmer 提供 Day-0 支持，针对本地智能体工作流优化推理",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-6c87e5496f592f3c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [
+              "EN-6c87e5496f592f3c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-f4bc2c89599f5449",
+          "EN-613c48c7848fc037",
+          "EN-a3ba90d022b2f88c"
+        ]
+      },
+      {
+        "id": "EV-7228e4310ee1341a",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-10",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "Meta回归开源模型，扎克伯格计划以拍卖方式销售算力以超越中国",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-ea3bd73e2b506e00",
+          "EN-f4bc2c89599f5449",
+          "EN-bae6b9faf2ef54c4"
+        ]
+      },
+      {
+        "id": "EV-b3cb8d6fdd9689d7",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-10",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Meta Muse Glimmer：开放权重 30B 本地编码模型",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c1624be4b5f4de29",
+          "EN-ea3bd73e2b506e00",
+          "EN-f4bc2c89599f5449"
+        ]
+      },
+      {
+        "id": "EV-cfaa2f6b5c7a5f8a",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-10",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Meta 开源 30B 模型 Muse Glimmer，4bit 量化可在 24GB 显存 GPU 本地运行",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-ea3bd73e2b506e00",
+          "EN-f4bc2c89599f5449"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-28dbd0566a837349",
+      "snapshotKey": "28dbd0566a837349",
+      "snapshotId": "HWS-44b698fc9a587bca",
+      "eventId": "EV-2fa8fef6da3a5937",
+      "eventIds": [
+        "EV-2fa8fef6da3a5937",
+        "EV-cfaa2f6b5c7a5f8a"
+      ],
+      "dataDate": "2026-08-11",
+      "date": "2026-08-11",
+      "title": "Muse Glimmer",
+      "subject": "Meta",
+      "productNames": [
+        "Muse Glimmer"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment",
+        "specification"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "55",
+          "unit": "GB",
+          "fact_ref": "HWF-d674dfedb7b1118c"
+        },
+        "specification": {
+          "metric_value": "24",
+          "unit": "GB",
+          "fact_ref": "HWF-66424f0ac5969c70"
+        }
+      },
+      "factCount": 4,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-11",
+          "hardware_fact_id": "HWF-d674dfedb7b1118c",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-10T15:11:51.000Z",
+          "subject_entity_id": "EN-ea3bd73e2b506e00",
+          "subject_name": "Meta",
+          "product_entity_ids": [
+            "EN-f4bc2c89599f5449"
+          ],
+          "product_names": [
+            "Muse Glimmer"
+          ],
+          "component_type": "gpu",
+          "metric_value": "55",
+          "unit": "GB",
+          "source_quote": "Meta has released Muse Glimmer , a 30-billion-parameter multimodal model distilled from Muse Spark. It is tuned for always-on local agent workflows, and ships under Apache 2.0. A 30B model normally needs over 55 GB of memory at full precision. Meta compresses it to roughly 4-bit, then adds block-level speculative decoding so it answers fast enough to sit inside a real agent loop. The result runs on one consumer GPU or a Mac, with no network call.",
+          "event_refs": [
+            "EV-2fa8fef6da3a5937"
+          ],
+          "claim_ref": "CL-6c0ac6b835aa024d",
+          "source_refs": [
+            "SA-65b9b56db97251b2"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-11/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-11",
+          "hardware_fact_id": "HWF-54c2a55f2d9cf3e0",
+          "fact_type": "specification",
+          "observed_at": "2026-08-10T15:11:51.000Z",
+          "subject_entity_id": "EN-ea3bd73e2b506e00",
+          "subject_name": "Meta",
+          "product_entity_ids": [
+            "EN-f4bc2c89599f5449"
+          ],
+          "product_names": [
+            "Muse Glimmer"
+          ],
+          "component_type": "gpu",
+          "metric_value": "24",
+          "unit": "GB",
+          "source_quote": "Which companies : Solo developers and startups can run it on one 24 GB GPU or an M4/M5 Max Mac. Mid-market teams get on-prem inference without a per-token bill. Regulated enterprises get an air-gappable agent. Meta advises adding system-level guardrails rather than shipping the model as a bare endpoint.",
+          "event_refs": [
+            "EV-2fa8fef6da3a5937"
+          ],
+          "claim_ref": "CL-c9d4ed96558adeee",
+          "source_refs": [
+            "SA-65b9b56db97251b2"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-11/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-11",
+          "hardware_fact_id": "HWF-22b0fa86b3ad9556",
+          "fact_type": "specification",
+          "observed_at": "2026-08-10T10:52:38.000Z",
+          "subject_entity_id": "EN-ea3bd73e2b506e00",
+          "subject_name": "Meta",
+          "product_entity_ids": [
+            "EN-f4bc2c89599f5449"
+          ],
+          "product_names": [
+            "Muse Glimmer"
+          ],
+          "component_type": "gpu",
+          "metric_value": "24",
+          "unit": "GB",
+          "source_quote": "Meta 开源 30B AI 模型 Muse Glimmer，4bit 量化可在单卡 24GB 显存 GPU 运行 - IT之家",
+          "event_refs": [
+            "EV-cfaa2f6b5c7a5f8a"
+          ],
+          "claim_ref": "CL-c97517c786ff465b",
+          "source_refs": [
+            "SA-62bdef20a7a652e3"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-11/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-11",
+          "hardware_fact_id": "HWF-66424f0ac5969c70",
+          "fact_type": "specification",
+          "observed_at": "2026-08-10T10:52:38.000Z",
+          "subject_entity_id": "EN-ea3bd73e2b506e00",
+          "subject_name": "Meta",
+          "product_entity_ids": [
+            "EN-f4bc2c89599f5449"
+          ],
+          "product_names": [
+            "Muse Glimmer"
+          ],
+          "component_type": "gpu",
+          "metric_value": "24",
+          "unit": "GB",
+          "source_quote": "Meta 开源 30B AI 模型 Muse Glimmer，4bit 量化可在单卡 24GB 显存 GPU 运行",
+          "event_refs": [
+            "EV-cfaa2f6b5c7a5f8a"
+          ],
+          "claim_ref": "CL-bbed4ef319246e55",
+          "source_refs": [
+            "SA-62bdef20a7a652e3"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-11/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "quantization",
+          "name": "模型量化",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/08/10/meta-ai-releases-muse-glimmer",
+      "entityIds": [
+        "EN-ea3bd73e2b506e00",
+        "EN-f4bc2c89599f5449"
+      ]
+    }
+  ]
+}

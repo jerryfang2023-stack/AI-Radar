@@ -5,9 +5,9 @@
     "site_version": "SITE-V4.6.1-research-retirement",
     "column_version": "FUNDING-INSIGHT-V1.4.0-financing-fields",
     "taxonomy_version": "TAG-V4.1",
-    "latest_date": "2026-08-10",
-    "generated_at": "2026-08-10T03:06:14.683Z",
-    "card_count": 236,
+    "latest_date": "2026-08-11",
+    "generated_at": "2026-08-11T02:10:00.131Z",
+    "card_count": 238,
     "duplicate_rounds_removed": 17,
     "automatic_publication": true,
     "market_category_framework": {
@@ -286,6 +286,1414 @@
     ]
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-5d8eab3e612ca748",
+      "triggered_by_event_id": "EV-c6cccaca326dfd45",
+      "as_of_date": "2026-08-11",
+      "company": {
+        "entity_id": "EN-fe301d1f025971a1",
+        "name": "Discovered Materials",
+        "full_name": "Discovered Materials",
+        "website": "https://discoveredmaterials.com/",
+        "summary": "Discovered Materials 构建 AI 智能体，用于发现并加速半导体芯片新材料的应用，旨在压缩从实验室到晶圆厂的研发周期。",
+        "headquarters": "San Francisco, CA",
+        "founders": [
+          {
+            "name": "Advaith Sridhar",
+            "role": "Co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c3267e56ad969be2",
+                "quote": "Founders Advaith Sridhar and Akash Ramdas teamed up to launch the company",
+                "source_content_hash": "c3f8c7225d49e92f",
+                "quote_hash": "0aee7c57847aaecdf95f8d77ef417d8cb923b0c2340f196da754bd770cb1c2be"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Akash Ramdas",
+            "role": "Co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c3267e56ad969be2",
+                "quote": "Founders Advaith Sridhar and Akash Ramdas teamed up to launch the company",
+                "source_content_hash": "c3f8c7225d49e92f",
+                "quote_hash": "0aee7c57847aaecdf95f8d77ef417d8cb923b0c2340f196da754bd770cb1c2be"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6ad648d48b556138",
+            "quote": "Discovered Materials, a San Francisco, CA-based provider of an AI agent platform that discovers and accelerates the adoption of new materials for semiconductor chips",
+            "source_content_hash": "bd47d3e50a1db886",
+            "quote_hash": "3ce729a0c6692c741d2809094768034eed3e844aa747f5d180e77b069366590f"
+          }
+        ],
+        "application_entity_id": "EN-fe301d1f025971a1",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$9 million",
+        "total_raised": "$9 million",
+        "announced_at": "2026-08-10",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Lightspeed India Partners",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c3267e56ad969be2",
+                "quote": "The startup said it recently closed a $9 million seed round from Lightspeed India Partners",
+                "source_content_hash": "c3f8c7225d49e92f",
+                "quote_hash": "b54170373577d527034bd931fa4b39fb7f3f04cbab5a78e7e48e937c9b636932"
+              },
+              {
+                "source_id": "FISRC-6ad648d48b556138",
+                "quote": "The round was led by Lightspeed India Partners",
+                "source_content_hash": "bd47d3e50a1db886",
+                "quote_hash": "096f523e69dbdf53ba815edd003189ff63bd19c06d99710e307d76348069307e"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-1790dc006867b1"
+          },
+          {
+            "name": "Y Combinator",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c3267e56ad969be2",
+                "quote": "with investment from Peak XV Partners and angel investors Paul Graham, Gokul Rajaram, and Thariq Shihipar",
+                "source_content_hash": "c3f8c7225d49e92f",
+                "quote_hash": "fe23b98efb3b0950a65b4d0b36fda4dae613ccf86bb390b6e12a4e6930b547e6"
+              },
+              {
+                "source_id": "FISRC-6ad648d48b556138",
+                "quote": "with participation from Y Combinator and Peak XV Partners",
+                "source_content_hash": "bd47d3e50a1db886",
+                "quote_hash": "bfdb759d9e01c1cf272260d0da606631f85518f2a0fcaa9e0a95f0c2f7f544f0"
+              }
+            ],
+            "entity_id": "EN-275b0f4a4023d91c",
+            "institution_id": "INV-7a5c599caeb7de"
+          },
+          {
+            "name": "Peak XV Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c3267e56ad969be2",
+                "quote": "with investment from Peak XV Partners",
+                "source_content_hash": "c3f8c7225d49e92f",
+                "quote_hash": "86555f8c52b345c108899bf4aee7acef5d74cf1473e4ca456d934e5410c68b4b"
+              },
+              {
+                "source_id": "FISRC-6ad648d48b556138",
+                "quote": "with participation from Y Combinator and Peak XV Partners",
+                "source_content_hash": "bd47d3e50a1db886",
+                "quote_hash": "bfdb759d9e01c1cf272260d0da606631f85518f2a0fcaa9e0a95f0c2f7f544f0"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-25dbfe1bcda658"
+          },
+          {
+            "name": "Paul Graham",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c3267e56ad969be2",
+                "quote": "angel investors Paul Graham, Gokul Rajaram, and Thariq Shihipar",
+                "source_content_hash": "c3f8c7225d49e92f",
+                "quote_hash": "8f5cc5178c4dc58bbc69a6135d0459d091b9694eb8981302b47df550a36b896e"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-0e8f4ea2d78a2f"
+          },
+          {
+            "name": "Gokul Rajaram",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c3267e56ad969be2",
+                "quote": "angel investors Paul Graham, Gokul Rajaram, and Thariq Shihipar",
+                "source_content_hash": "c3f8c7225d49e92f",
+                "quote_hash": "8f5cc5178c4dc58bbc69a6135d0459d091b9694eb8981302b47df550a36b896e"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-5ffcc966eedf1c"
+          },
+          {
+            "name": "Thariq Shihipar",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c3267e56ad969be2",
+                "quote": "angel investors Paul Graham, Gokul Rajaram, and Thariq Shihipar",
+                "source_content_hash": "c3f8c7225d49e92f",
+                "quote_hash": "8f5cc5178c4dc58bbc69a6135d0459d091b9694eb8981302b47df550a36b896e"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-6c1685b0ff7ac4"
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c3267e56ad969be2",
+            "quote": "The startup said it recently closed a $9 million seed round from Lightspeed India Partners after emerging from from Y Combinator, with investment from Peak XV Partners and angel investors Paul Graham, Gokul Rajaram, and Thariq Shihipar.",
+            "source_content_hash": "c3f8c7225d49e92f",
+            "quote_hash": "9644677e69110e9130b2137d5a42350f5e54c0caaa4155b114d76d0876c6c65e"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$9 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 9000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "900 万美元"
+        },
+        "total_raised_original": "$9 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 9000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "900 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-c6cccaca326dfd45",
+            "round_original": "种子轮",
+            "amount": "$9 million",
+            "announced_at": "2026-08-10",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c3267e56ad969be2",
+                "quote": "The startup said it recently closed a $9 million seed round from Lightspeed India Partners after emerging from from Y Combinator, with investment from Peak XV Partners and angel investors Paul Graham, Gokul Rajaram, and Thariq Shihipar.",
+                "source_content_hash": "c3f8c7225d49e92f",
+                "quote_hash": "9644677e69110e9130b2137d5a42350f5e54c0caaa4155b114d76d0876c6c65e"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "$9 million",
+          "normalized": {
+            "currency": "USD",
+            "value": 9000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "900 万美元"
+          },
+          "basis": "source_disclosed",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 9000000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "900 万美元"
+            }
+          ],
+          "historical_round_count": 1
+        }
+      },
+      "products": [
+        {
+          "name": "AI 材料发现智能体平台",
+          "description": "构建 AI 智能体，将跨学科材料研究周期从数月压缩至数天，覆盖模拟、合成与实验验证，专注于半导体芯片的散热与纳米级新材料发现。",
+          "target_customers": "芯片制造商",
+          "features": [
+            "使用 Anthropic 模型生成候选材料",
+            "基于自研物理基础模型进行模拟验证",
+            "7x24 小时云端运行探索研究方向",
+            "发布 Material Discovery Bench 基准测试"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c3267e56ad969be2",
+              "quote": "The two have created a software pipeline that uses Anthropic models in a custom harness to generate material leads, and then turns to foundational physics models they’ve trained to run simulations that verify if the candidate materials are actually of interest.",
+              "source_content_hash": "c3f8c7225d49e92f",
+              "quote_hash": "c218a7a793b991603ab6d9edf2c855460ba5e0fe5c6f0fe389d908e92ce79cfa"
+            },
+            {
+              "source_id": "FISRC-6ad648d48b556138",
+              "quote": "Discovered Materials builds AI agents that compress months of interdisciplinary research into days, spanning simulation, synthesis, and experimental validation for semiconductor applications.",
+              "source_content_hash": "bd47d3e50a1db886",
+              "quote_hash": "8d852003bbd676c9985922a9026cb2e60bfb125748c23be173b70ee9b48da7b6"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "MatNex",
+          "product": "AI 驱动的材料发现平台",
+          "scenario": "利用 AI 发现新型材料，例如无稀土永磁体",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "Discovered Materials 专注于半导体材料的热管理问题，而 MatNex 已发现无稀土永磁体等候选材料。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c3267e56ad969be2",
+              "quote": "Companies like MatNex, SandboxAQ, and CuspAI have all launched similar efforts, but Discovered Materials is betting that a laser-focus on the thermal problems of semiconductor materials is the path to success.",
+              "source_content_hash": "c3f8c7225d49e92f",
+              "quote_hash": "d54680e13dd45c8a9b62f462b13db8012dfedae95ce1d720c731f2c19fe1a980"
+            },
+            {
+              "source_id": "FISRC-c3267e56ad969be2",
+              "quote": "On the materials side, promising candidates have been found, like MatNex’s rare-earth-free permanent magnets",
+              "source_content_hash": "c3f8c7225d49e92f",
+              "quote_hash": "43679fb21b99b51793361901185b14e350b658733d1abbcbd3fbecfc9dc3efc6"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "SandboxAQ",
+          "product": "AI 与量子模拟驱动的材料与分子发现平台",
+          "scenario": "利用 AI 和量子技术进行材料科学和药物发现",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "Discovered Materials 专注于半导体材料的热管理问题，而 SandboxAQ 的应用范围更广，涵盖药物发现等多个领域。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c3267e56ad969be2",
+              "quote": "Companies like MatNex, SandboxAQ, and CuspAI have all launched similar efforts, but Discovered Materials is betting that a laser-focus on the thermal problems of semiconductor materials is the path to success.",
+              "source_content_hash": "c3f8c7225d49e92f",
+              "quote_hash": "d54680e13dd45c8a9b62f462b13db8012dfedae95ce1d720c731f2c19fe1a980"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "CuspAI",
+          "product": "AI 驱动的材料发现平台",
+          "scenario": "利用 AI 进行新型材料的设计与发现",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "Discovered Materials 专注于半导体材料的热管理问题，而 CuspAI 的具体应用场景在来源中未详细说明。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c3267e56ad969be2",
+              "quote": "Companies like MatNex, SandboxAQ, and CuspAI have all launched similar efforts, but Discovered Materials is betting that a laser-focus on the thermal problems of semiconductor materials is the path to success.",
+              "source_content_hash": "c3f8c7225d49e92f",
+              "quote_hash": "d54680e13dd45c8a9b62f462b13db8012dfedae95ce1d720c731f2c19fe1a980"
+            }
+          ],
+          "entity_id": "EN-3bc9f78028bc2dba"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "GPU 热流密度",
+          "value": "约 140 W/cm²",
+          "observed_at": "2026-08-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4b45df20c67a0eac",
+              "quote": "GPUs today handle heat fluxes of ~140 W/cm², higher than a space shuttle nose cone re-entering the earth’s atmosphere",
+              "source_content_hash": "671eb64a0327430c",
+              "quote_hash": "b1ca82f56f38d57ae1c1a6940f9f95f04abe05f3e03264661ccdbe9a84cca282"
+            }
+          ]
+        },
+        {
+          "label": "芯片能效差距",
+          "value": "芯片能效比人脑低至少 10,000 倍",
+          "observed_at": "2026-08-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4b45df20c67a0eac",
+              "quote": "Chips today are at least 10,000x less power efficient than the human brain",
+              "source_content_hash": "671eb64a0327430c",
+              "quote_hash": "dcd3c27a0c5986081c9075df0032c271cb9e70ca2fd12db287e2e3a47758cbde"
+            }
+          ]
+        },
+        {
+          "label": "研发周期压缩",
+          "value": "将数月的跨学科研究压缩至数天",
+          "observed_at": "2026-08-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4b45df20c67a0eac",
+              "quote": "AI agents compress months of inter-disciplinary scientific work to days.",
+              "source_content_hash": "671eb64a0327430c",
+              "quote_hash": "558fc6123eeda782cb4ff0a83e63aa649c7143b3b1eb2a85cbc54fd965ac8c09"
+            }
+          ]
+        },
+        {
+          "label": "已发现新材料数量",
+          "value": "数百种",
+          "observed_at": "2026-08-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c3267e56ad969be2",
+              "quote": "Discovered Materials released examples of hundreds of new materials today",
+              "source_content_hash": "c3f8c7225d49e92f",
+              "quote_hash": "4ee00f5957cfc8aa49a17b541ac8aa74378966335bf7e80f06157402c9485b12"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是 AI 驱动的材料发现能否突破半导体行业“死亡之谷”——即从实验室到晶圆厂的漫长转化周期。本轮融资的已验证信号是：公司已在三个月内合成并测试出性能匹敌全球最大化学公司耗时多年开发的热界面材料，并发布了数百种 AI 发现的新候选材料。这初步验证了其 AI 智能体在真实材料问题上的加速能力，但判断的证据边界在于这些材料尚未进入商业规模部署，且 AI 发现材料的商业可行性仍缺乏行业先例。",
+        "validated_signals": [
+          "在三个月内合成并测试出性能匹敌全球最大化学公司耗时多年开发的热界面材料",
+          "发布了数百种由前沿 AI 模型发现的半导体新材料",
+          "发布了首个针对真实世界半导体问题的智能体材料发现基准 Material Discovery Bench"
+        ],
+        "risks": [
+          "AI 发现的材料尚未在任何商业场景中实现规模化部署，整个 AI 材料发现领域缺乏商业化先例，技术可行性不等于商业可行性。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "industrials",
+        "market_application_id": "",
+        "use_case_ids": [
+          "research_discovery",
+          "design_engineering"
+        ],
+        "industry_ids": [
+          "manufacturing"
+        ],
+        "target_user_ids": [
+          "researcher",
+          "business_user"
+        ],
+        "sector": "半导体材料发现",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 AI 驱动的材料发现能否突破半导体行业“死亡之谷”——即从实验室到晶圆厂的漫长转化周期。本轮融资的已验证信号是：公司已在三个月内合成并测试出性能匹敌全球最大化学公司耗时多年开发的热界面材料，并发布了数百种 AI 发现的新候选材料。这初步验证了其 AI 智能体在真实材料问题上的加速能力，但判断的证据边界在于这些材料尚未进入商业规模部署，且 AI 发现材料的商业可行性仍缺乏行业先例。",
+          "evidence_signals": [
+            "在三个月内合成并测试出性能匹敌全球最大化学公司耗时多年开发的热界面材料",
+            "发布了数百种由前沿 AI 模型发现的半导体新材料",
+            "发布了首个针对真实世界半导体问题的智能体材料发现基准 Material Discovery Bench"
+          ],
+          "risks": [
+            "AI 发现的材料尚未在任何商业场景中实现规模化部署，整个 AI 材料发现领域缺乏商业化先例，技术可行性不等于商业可行性。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI 材料发现智能体平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Advaith Sridhar",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Akash Ramdas",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Lightspeed India Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Y Combinator",
+          "canonical_entity_id": "EN-275b0f4a4023d91c",
+          "canonical_name": "Y Combinator"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Peak XV Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Paul Graham",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Gokul Rajaram",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Thariq Shihipar",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "MatNex",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "SandboxAQ",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "CuspAI",
+          "canonical_entity_id": "EN-3bc9f78028bc2dba",
+          "canonical_name": "CuspAI"
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-c6cccaca326dfd45",
+          "date": "2026-08-10",
+          "title": "Discovered Materials 正玩 AI 打地鼠游戏，寻找更凉爽的芯片",
+          "amount": "$9 million",
+          "source_refs": [
+            "SA-b4986c889adf7944"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-c3267e56ad969be2",
+          "source_url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
+          "title": "Discovered Materials 正玩 AI 打地鼠游戏，寻找更凉爽的芯片",
+          "publisher": "TechCrunch AI",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-11T00:22:37.880Z",
+          "content_hash": "c3f8c7225d49e92f",
+          "source_artifact_id": "SA-b4986c889adf7944",
+          "raw_id": "RAW-96fb06044bcdee0c"
+        },
+        {
+          "source_id": "FISRC-4b45df20c67a0eac",
+          "source_url": "https://discoveredmaterials.com/",
+          "title": "Discovered Materials — Accelerating the lab-to-fab timeline",
+          "publisher": "discoveredmaterials.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-11T00:24:59.230Z",
+          "content_hash": "671eb64a0327430c",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-6ad648d48b556138",
+          "source_url": "https://www.finsmes.com/2026/08/discovered-materials-raises-9m-in-seed-funding.html",
+          "title": "Discovered Materials Raises $9M in Seed Funding",
+          "publisher": "finsmes.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-08-11T00:24:59.307Z",
+          "content_hash": "bd47d3e50a1db886",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-11T00:25:30.400Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-11T00:25:30.400Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "AI 材料发现智能体平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Advaith Sridhar",
+            "Akash Ramdas"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-c6cccaca326dfd45"
+      ],
+      "aggregation": {
+        "key": "EN-fe301d1f025971a1|seed|USD:exact:9000000:::|2026-08-10",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-5d8eab3e612ca748",
+          "event_ids": [
+            "EV-c6cccaca326dfd45"
+          ],
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$9 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 9000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "900 万美元"
+          },
+          "announced_at": "2026-08-10",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        }
+      ],
+      "product_form": {
+        "dimension": "product_form",
+        "id": "enterprise_software_platform",
+        "name": "企业软件平台",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "industry_applications",
+        "name": "行业应用",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "industrials",
+        "name": "工业",
+        "method": "card_explicit"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-c6cccaca326dfd45",
+        "direction": ""
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-0df914fcc4086c90",
+      "triggered_by_event_id": "EV-b116eafe60d71fbe",
+      "as_of_date": "2026-08-11",
+      "company": {
+        "entity_id": "EN-373da2ec629326c0",
+        "name": "Lumilens Inc.",
+        "full_name": "Lumilens Inc.",
+        "website": "https://lumilens.com",
+        "summary": "Lumilens是一家为AI集群提供光网络芯片的初创公司，致力于通过光子互连技术解决AI数据中心中GPU连接瓶颈，实现从铜缆到光纤的替代。",
+        "headquarters": "San Jose, Calif.",
+        "founders": [
+          {
+            "name": "Ankur Singla",
+            "role": "联合创始人兼首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a967da2448674734",
+                "quote": "Lumilens is led by co-founder and Chief Executive Officer Ankur Singla.",
+                "source_content_hash": "f3b1d21bc0dc0006",
+                "quote_hash": "e5363c16b7a9b71e11d27a32ab6afcf59fb6cf09fab20a9b2078614c15bc6672"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a967da2448674734",
+            "quote": "Lumilens Inc., a provider of optical networking chips for artificial intelligence clusters, launched today with $900 million in funding.",
+            "source_content_hash": "f3b1d21bc0dc0006",
+            "quote_hash": "5f6998b83e65b5da85c45c724e0aed4fceb29db97c0ca399f68456158adb91c7"
+          }
+        ],
+        "application_entity_id": "EN-373da2ec629326c0",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "C轮",
+        "amount": "$900M",
+        "total_raised": "over $900 million",
+        "announced_at": "2026-08-06",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Atreides Management",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a967da2448674734",
+                "quote": "Atreides Management, Bain Capital Ventures, Meritech, Seligman Ventures and Spark Capital jointly led the investment.",
+                "source_content_hash": "f3b1d21bc0dc0006",
+                "quote_hash": "94812b7738edf261aeeb91479d522c33f2085d3a81ac0ce4f52f97200d1b0642"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-48cc4817cd0056"
+          },
+          {
+            "name": "Bain Capital Ventures",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a967da2448674734",
+                "quote": "Atreides Management, Bain Capital Ventures, Meritech, Seligman Ventures and Spark Capital jointly led the investment.",
+                "source_content_hash": "f3b1d21bc0dc0006",
+                "quote_hash": "94812b7738edf261aeeb91479d522c33f2085d3a81ac0ce4f52f97200d1b0642"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-96de64c25b8e4a"
+          },
+          {
+            "name": "Meritech",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a967da2448674734",
+                "quote": "Atreides Management, Bain Capital Ventures, Meritech, Seligman Ventures and Spark Capital jointly led the investment.",
+                "source_content_hash": "f3b1d21bc0dc0006",
+                "quote_hash": "94812b7738edf261aeeb91479d522c33f2085d3a81ac0ce4f52f97200d1b0642"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-08f80474dfccc1"
+          },
+          {
+            "name": "Seligman Ventures",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a967da2448674734",
+                "quote": "Atreides Management, Bain Capital Ventures, Meritech, Seligman Ventures and Spark Capital jointly led the investment.",
+                "source_content_hash": "f3b1d21bc0dc0006",
+                "quote_hash": "94812b7738edf261aeeb91479d522c33f2085d3a81ac0ce4f52f97200d1b0642"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-7fe737f86176e3"
+          },
+          {
+            "name": "Spark Capital",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a967da2448674734",
+                "quote": "Atreides Management, Bain Capital Ventures, Meritech, Seligman Ventures and Spark Capital jointly led the investment.",
+                "source_content_hash": "f3b1d21bc0dc0006",
+                "quote_hash": "94812b7738edf261aeeb91479d522c33f2085d3a81ac0ce4f52f97200d1b0642"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-b84c970cc7a137"
+          },
+          {
+            "name": "Qualcomm Inc.",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a967da2448674734",
+                "quote": "They were joined by more than a dozen others including Qualcomm Inc.",
+                "source_content_hash": "f3b1d21bc0dc0006",
+                "quote_hash": "6cdea59a8e787db47dbbcd31af5d13e395780e5f24e67b3a7dbe1c8c58b4a557"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-a471285ffd6277"
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Spark Capital",
+            "role": "B轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1f5105dddfd453fd",
+                "quote": "We @ Spark Capital led the Series B in early 2025, before the first product had shipped, and I joined the board.",
+                "source_content_hash": "e758f2e16933570e",
+                "quote_hash": "4bbc5aa1bcf206290e798f2b74b774796e9f9b684baee1aa5d7f587089f244bf"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-b84c970cc7a137"
+          },
+          {
+            "name": "Mayfield",
+            "role": "种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-158eb924ad66ae7b",
+                "quote": "That's why we partnered with Ankur Singla for the third time to help build Lumilens from inception, led their seed round, and have participated in every round since.",
+                "source_content_hash": "1cd3346880763c40",
+                "quote_hash": "2540bc57de90a2f90c6b79b51e8d7fdde2d0997fea267fc20e54bf235244a89b"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-c721b9b2b155d9"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a967da2448674734",
+            "quote": "Optical networking startup Lumilens launches with $900M in funding",
+            "source_content_hash": "f3b1d21bc0dc0006",
+            "quote_hash": "969119190346687647c8c011c4b5a2db5c970ce5c97363c067c62249e042ce6d"
+          },
+          {
+            "source_id": "FISRC-a967da2448674734",
+            "quote": "The company raised the bulk of the capital, $700 million, through a Series C round that valued it at $5.51 billion.",
+            "source_content_hash": "f3b1d21bc0dc0006",
+            "quote_hash": "84bb798baccb898849824b42735276e67ce08c0560f038b35259368cc826c93e"
+          }
+        ],
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$900M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 900000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9 亿美元"
+        },
+        "total_raised_original": "over $900 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 900000000,
+          "min_value": 900000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 9 亿美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-b116eafe60d71fbe",
+            "round_original": "C轮",
+            "amount": "$900M",
+            "announced_at": "2026-08-06",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a967da2448674734",
+                "quote": "Optical networking startup Lumilens launches with $900M in funding",
+                "source_content_hash": "f3b1d21bc0dc0006",
+                "quote_hash": "969119190346687647c8c011c4b5a2db5c970ce5c97363c067c62249e042ce6d"
+              },
+              {
+                "source_id": "FISRC-a967da2448674734",
+                "quote": "The company raised the bulk of the capital, $700 million, through a Series C round that valued it at $5.51 billion.",
+                "source_content_hash": "f3b1d21bc0dc0006",
+                "quote_hash": "84bb798baccb898849824b42735276e67ce08c0560f038b35259368cc826c93e"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "over $900 million",
+          "normalized": {
+            "currency": "USD",
+            "value": 900000000,
+            "min_value": 900000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 9 亿美元"
+          },
+          "basis": "source_disclosed",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 900000000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "9 亿美元"
+            }
+          ],
+          "historical_round_count": 1
+        }
+      },
+      "products": [
+        {
+          "name": "共封装光学芯片 (CPO)",
+          "description": "可直接集成到GPU中的光学芯片，能将数千个GPU连接在一起，效率高于NPO，但距离大规模部署还有两到三年。",
+          "target_customers": "超大规模AI数据中心运营商",
+          "features": [
+            "直接集成到GPU",
+            "连接数千个GPU",
+            "减少数据传输距离"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a967da2448674734",
+              "quote": "The first is a co-packaged optics, or CPO, chip series that can be integrated directly into graphics processing units. The company says that it’s capable of linking together thousands of GPUs.",
+              "source_content_hash": "f3b1d21bc0dc0006",
+              "quote_hash": "9439585e45daddd5de33f131a4d23ef29879f5e0259b107c0f9ce2e19277aa82"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "近封装光学芯片 (NPO)",
+          "description": "不直接集成到GPU中，而是位于承载GPU的主板上，作为CPO大规模部署前的过渡方案，更易于获取。",
+          "target_customers": "超大规模AI数据中心运营商",
+          "features": [
+            "位于GPU主板上",
+            "CPO的过渡方案",
+            "更易于获取"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a967da2448674734",
+              "quote": "Lumilens also makes near-packaged optics, or NPO, chips. Such chips are not integrated directly into GPUs but rather sit on the motherboard that hosts them.",
+              "source_content_hash": "f3b1d21bc0dc0006",
+              "quote_hash": "f70211404cfdb8989ba3a09fdab6df7a2e15b406799f0600f99275a25f303b24"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "可插拔光收发器 (Pluggable Transceivers)",
+          "description": "用于Scale-out网络的芯片，以可插拔收发器形式出货，可连接到交换机，支持800 Gbps、1.6 Tbps或更高带宽。",
+          "target_customers": "超大规模AI数据中心运营商",
+          "features": [
+            "支持800 Gbps至1.6 Tbps带宽",
+            "可连接到交换机",
+            "突破铜缆距离限制"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a967da2448674734",
+              "quote": "Lumilens also makes chips for scale-out networks, which facilitate data sharing across GPU racks. It ships the silicon as part of devices called pluggable transceivers that can be attached to switches.",
+              "source_content_hash": "f3b1d21bc0dc0006",
+              "quote_hash": "379371980d567516284e2ae92df0029c9376b2f03d87308a82ddb9000fcc825b"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "未披露的超大规模云计算企业",
+          "industry": "云计算/人工智能",
+          "use_case": "AI数据中心GPU集群的光互连",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-158eb924ad66ae7b",
+              "quote": "Now shipping into production data centers under a multi-billion-dollar customer agreement",
+              "source_content_hash": "1cd3346880763c40",
+              "quote_hash": "f33fe8ac074451d550522043b1d8a2a21cbae0e104b631b768a9896a369c6576"
+            },
+            {
+              "source_id": "FISRC-0354af91027831a4",
+              "quote": "The company has begun shipping products to an undisclosed hyperscale cloud computing enterprise under a multibillion-dollar customer agreement.",
+              "source_content_hash": "ec4c33db20d65a70",
+              "quote_hash": "30de6f7a2bc0f46950d508a7093633386d8846c4f0bfeab179bb1025c51e7099"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "公司估值",
+          "value": "$5.51 billion",
+          "observed_at": "2026-08-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a967da2448674734",
+              "quote": "through a Series C round that valued it at $5.51 billion.",
+              "source_content_hash": "f3b1d21bc0dc0006",
+              "quote_hash": "6b760f17cc96602dc50e4fc8e77f2b00701fdc884f020333e0de954b46d27fb6"
+            }
+          ]
+        },
+        {
+          "label": "公司成立时间",
+          "value": "2年",
+          "observed_at": "2026-08-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a967da2448674734",
+              "quote": "Two-year-old Lumilens says that it has already received billions of dollars worth of chip orders.",
+              "source_content_hash": "f3b1d21bc0dc0006",
+              "quote_hash": "ccb20082d3fcf0c53443f27f4d277639266557b64d9ac3a68e27ca56fee312e2"
+            }
+          ]
+        },
+        {
+          "label": "创始人此前创业退出总额",
+          "value": "$676 million",
+          "observed_at": "2026-08-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a967da2448674734",
+              "quote": "His previous two networking startups, Contrail Systems Inc. and Volterra Inc., were sold for a combined $676 million.",
+              "source_content_hash": "f3b1d21bc0dc0006",
+              "quote_hash": "15398a219f042ca43a2aab4a6ac61a3e0016b12c258425916edc08c6a1138fdf"
+            }
+          ]
+        },
+        {
+          "label": "芯片订单价值",
+          "value": "数十亿美元",
+          "observed_at": "2026-08-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a967da2448674734",
+              "quote": "has already received billions of dollars worth of chip orders.",
+              "source_content_hash": "f3b1d21bc0dc0006",
+              "quote_hash": "57e04d2f491dc98784b5f6bdafb3c5098128256a5ec048b01f693df700e81988"
+            }
+          ]
+        },
+        {
+          "label": "客户协议价值",
+          "value": "数十亿美元",
+          "observed_at": "2026-08-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-158eb924ad66ae7b",
+              "quote": "under a multi-billion-dollar customer agreement",
+              "source_content_hash": "1cd3346880763c40",
+              "quote_hash": "a5d99f40e1aa86536e338851cdb8265ae9c02b85819f10ec6f899c534bf814cf"
+            }
+          ]
+        },
+        {
+          "label": "首款芯片流片时间",
+          "value": "2024年",
+          "observed_at": "2026-08-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a967da2448674734",
+              "quote": "Our first chip taped out in 2024",
+              "source_content_hash": "f3b1d21bc0dc0006",
+              "quote_hash": "27d23d3eaf80293067e2fc62d8213be030a01ac868736b440088ce42e26f5260"
+            }
+          ]
+        },
+        {
+          "label": "第二代芯片流片状态",
+          "value": "已完成流片，准备明年商业部署",
+          "observed_at": "2026-08-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a967da2448674734",
+              "quote": "we now have our second generation of chips taped out and getting ready for commercial deployments next year.",
+              "source_content_hash": "f3b1d21bc0dc0006",
+              "quote_hash": "4d04fb9d14c1792bb2e69a4963e20edee2a2be2bac3b8583fea9e6fa713a974d"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Spark Capital",
+            "speaker": "James Kuklinski",
+            "speaker_role": "General Partner",
+            "rationale": "光互连对Scale-up和Scale-out架构的重要性日益增加，AI建设速度和复杂性为新的AI连接平台公司创造了机会，团队拥有从设计到高量产的全面能力。",
+            "quote": "Our simple thesis was that optical interconnects are only increasing in importance for both scale-up and scale-out architectures, and the speed and complexity of the AI buildout created an opening for a new great AI connectivity platform company. One led by a world-class team with expertise ranging from design and in-house silicon photonics to high-volume manufacturing built for rapid scaling.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1f5105dddfd453fd",
+                "quote": "Our simple thesis was that optical interconnects are only increasing in importance for both scale-up and scale-out architectures, and the speed and complexity of the AI buildout created an opening for a new great AI connectivity platform company. One led by a world-class team with expertise ranging from design and in-house silicon photonics to high-volume manufacturing built for rapid scaling.",
+                "source_content_hash": "e758f2e16933570e",
+                "quote_hash": "9fe01a098dd850d23eb81516253beb52a02ac7c516d303bf016d151138475c89"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是AI数据中心从铜缆向光互连的范式迁移。随着GPU集群规模突破单机架限制，铜缆在1.6Tb/s速率下传输距离不足1米，物理极限已无法通过工程手段绕过，光互连成为唯一解。Lumilens在成立仅两年内即获得55.1亿美元估值，核心支撑信号包括：已与未披露超大规模客户签订数十亿美元协议并开始出货；累计获得数十亿美元芯片订单；拥有覆盖Scale-up和Scale-out的完整产品组合；自研LumiCore平台将芯片开发周期从年缩短至月；以及创始人连续成功创业的背景。资本判断高度依赖这些已验证的商业化信号，但需注意公司尚未公开披露具体客户名称、实际部署规模和收入数据，且CPO大规模量产仍需两到三年，当前收入可能主要来自可插拔收发器和NPO产品。",
+        "validated_signals": [
+          "已与未披露超大规模客户签订数十亿美元协议并开始向生产数据中心出货",
+          "累计获得数十亿美元芯片订单",
+          "拥有覆盖Scale-up (NPO/CPO) 和 Scale-out (可插拔收发器) 的完整产品组合",
+          "自研LumiCore平台将芯片开发周期从年缩短至月",
+          "创始人此前两家网络初创公司以合计6.76亿美元退出"
+        ],
+        "risks": [
+          "CPO大规模量产仍需两到三年，当前收入可能主要依赖可插拔收发器和NPO，技术路线存在过渡期风险",
+          "客户高度集中，目前仅披露一家未具名超大规模客户，单一客户依赖度高",
+          "光互连市场竞争激烈，传统光模块厂商和芯片巨头可能加速布局，技术壁垒的持续性待验证"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "chips",
+        "use_case_ids": [],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "AI基础设施/光互连芯片",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI数据中心从铜缆向光互连的范式迁移。随着GPU集群规模突破单机架限制，铜缆在1.6Tb/s速率下传输距离不足1米，物理极限已无法通过工程手段绕过，光互连成为唯一解。Lumilens在成立仅两年内即获得55.1亿美元估值，核心支撑信号包括：已与未披露超大规模客户签订数十亿美元协议并开始出货；累计获得数十亿美元芯片订单；拥有覆盖Scale-up和Scale-out的完整产品组合；自研LumiCore平台将芯片开发周期从年缩短至月；以及创始人连续成功创业的背景。资本判断高度依赖这些已验证的商业化信号，但需注意公司尚未公开披露具体客户名称、实际部署规模和收入数据，且CPO大规模量产仍需两到三年，当前收入可能主要来自可插拔收发器和NPO产品。",
+          "evidence_signals": [
+            "已与未披露超大规模客户签订数十亿美元协议并开始向生产数据中心出货",
+            "累计获得数十亿美元芯片订单",
+            "拥有覆盖Scale-up (NPO/CPO) 和 Scale-out (可插拔收发器) 的完整产品组合",
+            "自研LumiCore平台将芯片开发周期从年缩短至月",
+            "创始人此前两家网络初创公司以合计6.76亿美元退出"
+          ],
+          "risks": [
+            "CPO大规模量产仍需两到三年，当前收入可能主要依赖可插拔收发器和NPO，技术路线存在过渡期风险",
+            "客户高度集中，目前仅披露一家未具名超大规模客户，单一客户依赖度高",
+            "光互连市场竞争激烈，传统光模块厂商和芯片巨头可能加速布局，技术壁垒的持续性待验证"
+          ],
+          "institutional_rationale_status": "disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "共封装光学芯片 (CPO)",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "近封装光学芯片 (NPO)",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "可插拔光收发器 (Pluggable Transceivers)",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Ankur Singla",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Atreides Management",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bain Capital Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Meritech",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Seligman Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Spark Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Qualcomm Inc.",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Spark Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Mayfield",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "未披露的超大规模云计算企业",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-b116eafe60d71fbe",
+          "date": "2026-08-06",
+          "title": "光网络初创公司Lumilens以9亿美元资金启动",
+          "amount": "$900M",
+          "source_refs": [
+            "SA-ac115da9da6dfd33"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-a967da2448674734",
+          "source_url": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding/",
+          "title": "光网络初创公司Lumilens以9亿美元资金启动",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-11T00:21:39.912Z",
+          "content_hash": "f3b1d21bc0dc0006",
+          "source_artifact_id": "SA-ac115da9da6dfd33",
+          "raw_id": "RAW-6eb28e3fe167bc81"
+        },
+        {
+          "source_id": "FISRC-158eb924ad66ae7b",
+          "source_url": "https://lumilens.com/news-insights/lumilens-emerges-with-900m-in-funding",
+          "title": "Lumilens emerges with $900M+ in Funding",
+          "publisher": "lumilens.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-11T02:08:51.461Z",
+          "content_hash": "1cd3346880763c40",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-0354af91027831a4",
+          "source_url": "https://www.gate.com/news/detail/optical-networking-startup-lumilens-completes-700m-series-c-at-551b-23269895",
+          "title": "Optical Networking Startup Lumilens Completes $700M+ Series C at $55.1B Valuation | Gate News",
+          "publisher": "gate.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-11T02:08:56.738Z",
+          "content_hash": "ec4c33db20d65a70",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-1f5105dddfd453fd",
+          "source_url": "https://www.linkedin.com/posts/jameskuklinski_exclusive-startup-raises-700-million-to-activity-7491169102611451904-ULQv",
+          "title": "Exclusive | Startup Raises $700 Million to Replace Data-Center Wires With Light | James Kuklinski",
+          "publisher": "linkedin.com",
+          "source_class": "secondary",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-11T02:08:58.468Z",
+          "content_hash": "e758f2e16933570e",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-11T02:10:00.107Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-11T02:10:00.107Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "共封装光学芯片 (CPO)",
+            "可插拔光收发器 (Pluggable Transceivers)",
+            "近封装光学芯片 (NPO)"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Ankur Singla"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-b116eafe60d71fbe"
+      ],
+      "aggregation": {
+        "key": "EN-373da2ec629326c0|series_c|USD:exact:900000000:::|2026-08-06",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-0df914fcc4086c90",
+          "event_ids": [
+            "EV-b116eafe60d71fbe"
+          ],
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "C轮",
+          "amount_original": "$900M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 900000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "9 亿美元"
+          },
+          "announced_at": "2026-08-06",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        }
+      ],
+      "product_form": {
+        "dimension": "product_form",
+        "id": "chip_accelerator",
+        "name": "芯片与加速器",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "infrastructure_compute",
+        "name": "基础设施与算力",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "hardware_computing",
+        "name": "硬件与算力",
+        "method": "card_explicit"
+      },
+      "market_application": {
+        "dimension": "ai_market_application",
+        "id": "chips",
+        "name": "芯片",
+        "method": "card_explicit"
+      },
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-b116eafe60d71fbe",
+        "direction": ""
+      }
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-74c3c9da32686f84",

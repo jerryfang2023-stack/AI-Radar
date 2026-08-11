@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-10T03:05:19.937Z",
-    "latestDataDate": "2026-08-10",
-    "currentDate": "2026-08-10",
-    "eventCount": 1969,
+    "generatedAt": "2026-08-11T02:08:35.439Z",
+    "latestDataDate": "2026-08-11",
+    "currentDate": "2026-08-11",
+    "eventCount": 1993,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -63,6 +63,7 @@
       "EV-3a704c40204ecfd9",
       "EV-94e0afb44c320c99",
       "EV-777eb5b7783b71fb",
+      "EV-c4cf8b6eedf31ad2",
       "EV-f84894a567752c40",
       "EV-5d185ac33faedb68",
       "EV-8f1b01897707b941",
@@ -87,6 +88,10 @@
       "EV-fe63a869fe4cee45",
       "EV-35be62272c77c556",
       "EV-c0a65877001ed413",
+      "EV-29c0d969abde2020",
+      "EV-f8adec104da927e8",
+      "EV-1d3b117dad798008",
+      "EV-5aa6c29a75910ca0",
       "EV-3b02f281ab8fa91d",
       "EV-5b17b7dd8762c3c6",
       "EV-6fc9c1eab4501ce9",
@@ -246,6 +251,7 @@
       "EV-8115dd18f2812a29",
       "EV-cf496e0f8a56ca97",
       "EV-8cb5b0ed18c7cdd8",
+      "EV-9576bebb698a4c66",
       "EV-4e3e9b543127b55a",
       "EV-a6e9e81d40dc3845",
       "EV-2321e89fad893290",
@@ -330,6 +336,7 @@
       "TX-technology-model_context_protocol",
       "TX-technology-guardrails_safety",
       "TX-technology-tool_use",
+      "TX-technology-human_in_loop",
       "TX-technology-distillation"
     ],
     "relatedEntityIds": [
@@ -359,7 +366,7 @@
       "EN-da20c5952dba19d8"
     ],
     "firstSeen": "2025-09-04",
-    "lastSeen": "2026-08-09",
+    "lastSeen": "2026-08-11",
     "relationIds": [
       "REL2-6c33e8063218608e",
       "REL2-407abfa4e497ae3f",
@@ -478,6 +485,7 @@
         "EV-3a704c40204ecfd9"
       ],
       "partnerships": [
+        "EV-c4cf8b6eedf31ad2",
         "EV-f84894a567752c40",
         "EV-5d185ac33faedb68",
         "EV-8f1b01897707b941",
@@ -504,6 +512,10 @@
         "EV-c0a65877001ed413"
       ],
       "productsServices": [
+        "EV-29c0d969abde2020",
+        "EV-f8adec104da927e8",
+        "EV-1d3b117dad798008",
+        "EV-5aa6c29a75910ca0",
         "EV-3b02f281ab8fa91d",
         "EV-5b17b7dd8762c3c6",
         "EV-6fc9c1eab4501ce9",
@@ -688,6 +700,7 @@
         "EV-ad269fada2269f35"
       ],
       "other": [
+        "EV-9576bebb698a4c66",
         "EV-4e3e9b543127b55a",
         "EV-abb190c09b08067c",
         "EV-a61345459e796a19",
@@ -710,6 +723,206 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-c4cf8b6eedf31ad2",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-10",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic 与 Zaelab 达成企业交付合作伙伴关系",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-5d4ce8028c1bf55c"
+        ]
+      },
+      {
+        "id": "EV-29c0d969abde2020",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-11",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Meta 发布开源模型 Muse Glimmer，并承诺数周内开放 Muse Spark 1.2 权重",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "code_generation",
+            "name": "代码生成",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "long_context",
+            "name": "长上下文",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "cloud",
+            "name": "云端",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-ea3bd73e2b506e00",
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d",
+          "EN-f4bc2c89599f5449"
+        ]
+      },
+      {
+        "id": "EV-f8adec104da927e8",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-11",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "OpenAI 扩展网络安全防御服务 Daybreak，推出新 AI 模型 GPT-5.6-Cyber",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d",
+          "EN-167900106b916eff"
+        ]
+      },
+      {
+        "id": "EV-1d3b117dad798008",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-10",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "随着AI主导的攻击增多，OpenAI推出新型网络模型",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-2d12b6999469bce2",
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d",
+          "EN-1dae88179f105651",
+          "EN-dcc6d54b5d41658b"
+        ]
+      },
+      {
+        "id": "EV-5aa6c29a75910ca0",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-10",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "Claude 未发布研究版将黎曼 zeta 函数零点下界从 41.6% 提升至 67.2%",
+        "displayTags": [],
+        "entityIds": [
+          "EN-717175d498e899a7",
+          "EN-c70eca6b0f88f44d",
+          "EN-ce635c4eabff5e4f"
+        ]
+      },
+      {
+        "id": "EV-9576bebb698a4c66",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-09",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic 默认开启 Claude Code 的自动模式",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "human_in_loop",
+            "name": "人在回路",
+            "entityIds": [
+              "EN-c70eca6b0f88f44d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-cb4754c48f8023d0"
+        ]
+      },
       {
         "id": "EV-3b02f281ab8fa91d",
         "dataDate": "2026-08-09",
@@ -9262,6 +9475,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-2881df2bfc6f437d",
         "EV-3b02f281ab8fa91d",
         "EV-41e229cb248b8418",
         "EV-6fc9c1eab4501ce9",
@@ -9303,7 +9517,8 @@
         "EV-45c7e4abc3e3af6b",
         "EV-2687a22df927f183",
         "EV-dbeae330706b53ca",
-        "EV-abaf05e513f88a4f"
+        "EV-abaf05e513f88a4f",
+        "EV-9576bebb698a4c66"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -9315,7 +9530,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "EN-830abc32d2a443c5",
@@ -9431,6 +9646,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-d84f24c8c72e7e47",
         "EV-b3ef1eed47191c55",
         "EV-83d022f89ba29209",
         "EV-5bbc509a032b8309",
@@ -9619,7 +9835,7 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -9632,6 +9848,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-00f3271df4707d7c",
         "EV-abf716c9f996dbcf",
         "EV-9f36aac82bad6780",
         "EV-842f920ef198c55e",
@@ -9712,6 +9929,10 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-29c0d969abde2020",
+        "EV-f8adec104da927e8",
+        "EV-1d3b117dad798008",
+        "EV-9c532d9739198a82",
         "EV-47c32b3ef5c0f57a",
         "EV-3dc8d5c373ddd1f3",
         "EV-15c5107c993baae8",
@@ -9981,7 +10202,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "EN-729324072d368379",
@@ -11650,6 +11871,9 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-1d3b117dad798008",
+        "EV-497344d95d593cf6",
+        "EV-a4c177cc432df82e",
         "EV-3dc8d5c373ddd1f3",
         "EV-04fe726fa16722f3",
         "EV-15c5107c993baae8",
@@ -11828,6 +12052,8 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
+        "EN-32e83e92d45d71f6",
+        "EN-6849cf65695e6e77",
         "EN-74be4cbf48e647b2",
         "EN-04468f769adbb15b",
         "EN-7d3194f79e645c42",
@@ -11919,7 +12145,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -12034,6 +12260,7 @@
         "EV-23ae55daa341be06",
         "EV-6bb83280a2116f24",
         "EV-d10684a6f16afe10",
+        "EV-6af526d687d9f737",
         "EV-acddfa62aabb004f",
         "EV-a852dc0ca6011ff6",
         "EV-fd825cd7f7997fc8",
@@ -12111,6 +12338,11 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-1d3b117dad798008",
+        "EV-5f529a16a35a0d52",
+        "EV-7228e4310ee1341a",
+        "EV-a4c177cc432df82e",
+        "EV-cfaa2f6b5c7a5f8a",
         "EV-3dc8d5c373ddd1f3",
         "EV-92d9b6931bcfdd11",
         "EV-355ddfd4c6180ab0",
@@ -12465,6 +12697,7 @@
         "EN-50e2a4156631df49",
         "EN-f531c4e9f8555dcc",
         "EN-df30a48992da7fe8",
+        "EN-30cd4a85fc09f695",
         "EN-c9e92f0b88c6456b",
         "EN-6b182ca786385b1e",
         "EN-76a9a8a6e2f1a47b",
@@ -12511,6 +12744,8 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-6c87e5496f592f3c",
+        "EN-6849cf65695e6e77",
         "EN-74be4cbf48e647b2",
         "EN-c0fced8f2483e9f5",
         "EN-738e22f0acab814c",
@@ -12754,6 +12989,8 @@
         "EV-93fad8e0e30e442c",
         "EV-3d8608d3e78e031b",
         "EV-8fcb52bb6ec980af",
+        "EV-2fa8fef6da3a5937",
+        "EV-cfaa2f6b5c7a5f8a",
         "EV-3dc8d5c373ddd1f3",
         "EV-db304937ceac95d2",
         "EV-28bd99c785aa9760",
@@ -12839,6 +13076,7 @@
         "EN-51a3a4589db68480",
         "EN-222f930b87524636",
         "EN-f4bec299df3f4f27",
+        "EN-ea3bd73e2b506e00",
         "EN-74be4cbf48e647b2",
         "EN-920510199770f4d6",
         "EN-e470d891c0bda7d8",
@@ -12901,7 +13139,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "TX-ai_market_category-infrastructure_compute",
@@ -14593,6 +14831,7 @@
         "EV-d209a6acecba4285",
         "EV-75b9b997e9c7e5d1",
         "EV-b2e374d54b10b9af",
+        "EV-29c0d969abde2020",
         "EV-099c1bce0a50965d",
         "EV-91d4c91861a715c1",
         "EV-ad6fe30e111608bd",
@@ -14697,7 +14936,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "TX-use_case-security_operations",
@@ -14740,6 +14979,7 @@
         "EV-53f4f2a34b3ce1b4",
         "EV-b240fb11e65b018e",
         "EV-bd508dbe4205774f",
+        "EV-f8adec104da927e8",
         "EV-997609968760857a",
         "EV-e05e2ff09137017d",
         "EV-a4fe78df6ccd63c8",
@@ -14835,7 +15075,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "TX-ai_market_application-models",
@@ -15246,6 +15486,7 @@
       "eventIds": [
         "EV-80e54c9a390da293",
         "EV-fd21441fb6e143c3",
+        "EV-29c0d969abde2020",
         "EV-3dc8d5c373ddd1f3",
         "EV-7a4d1e871dcd3b1f",
         "EV-653cbce2ccc79f8b",
@@ -15264,6 +15505,7 @@
       ],
       "entityIds": [
         "EN-7df09a7717ef2feb",
+        "EN-ea3bd73e2b506e00",
         "EN-74be4cbf48e647b2",
         "EN-c70eca6b0f88f44d",
         "EN-bc1fc5140040180e",
@@ -15280,7 +15522,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-12",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "TX-target_user-educator",
@@ -15312,6 +15554,8 @@
         "EV-1abf0d076d30ec6d",
         "EV-d2a623e8eef1f61d",
         "EV-f55d16df5b5fecb2",
+        "EV-29c0d969abde2020",
+        "EV-7228e4310ee1341a",
         "EV-890ffd351486b884",
         "EV-3dc8d5c373ddd1f3",
         "EV-d230942b0787581a",
@@ -15331,10 +15575,12 @@
         "EV-a06011da69abcc3d",
         "EV-e2da1aafabb3e09c",
         "EV-2258329f33d413cf",
+        "EV-735fac8d2be356bb",
         "EV-86537be17d50ff20"
       ],
       "entityIds": [
         "EN-bd6769fe78d0971a",
+        "EN-ea3bd73e2b506e00",
         "EN-a899a3dde1d51caf",
         "EN-74be4cbf48e647b2",
         "EN-47dd52018c2b6985",
@@ -15344,7 +15590,6 @@
         "EN-c70eca6b0f88f44d",
         "EN-6b61eab266a42eb0",
         "EN-cc70f504af53013a",
-        "EN-ea3bd73e2b506e00",
         "EN-bc1fc5140040180e",
         "EN-0d1e478de2157d48",
         "EN-047364b9be67f665",
@@ -15360,7 +15605,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "TX-technology-model_context_protocol",
@@ -15487,6 +15732,29 @@
       "lastSeen": "2026-07-24"
     },
     {
+      "id": "TX-technology-human_in_loop",
+      "name": "人在回路",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "human_in_loop",
+      "eventIds": [
+        "EV-fe63a869fe4cee45",
+        "EV-243e73016576fa43",
+        "EV-36883997905d34d8",
+        "EV-9576bebb698a4c66"
+      ],
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "fdeIds": [
+        "FDE-8cc818b0e819b217"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-08-11"
+    },
+    {
       "id": "TX-technology-distillation",
       "name": "模型蒸馏",
       "nodeType": "technology",
@@ -15514,6 +15782,44 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-911ce2af5ccbd605",
+      "eventId": "EV-c4cf8b6eedf31ad2",
+      "dataDate": "2026-08-11",
+      "date": "2026-08-10",
+      "title": "Anthropic 与 Zaelab 达成企业交付合作伙伴关系",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "Anthropic",
+      "industry": "未披露",
+      "useCase": "Anthropic",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Zaelab today announced a strategic partnership with Anthropic to help enterprises turn AI pilots into production-ready solutions deployed across the business."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://prnewswire.com/news-releases/anthropic-finds-enterprise-delivery-partner-in-zaelab-302846546.html",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-5d4ce8028c1bf55c"
+      ]
+    },
     {
       "id": "FDE-a8fea104d63ff671",
       "eventId": "EV-f55d16df5b5fecb2",
@@ -16432,6 +16738,56 @@
         "EN-bbdefa2950f49882",
         "EN-373ac021a2c0bb2c",
         "EN-8d4321d936320802"
+      ]
+    }
+  ],
+  "fdeDossiers": [
+    {
+      "id": "FDED-61bfc05b15701d97",
+      "implementationKey": "61bfc05b15701d97",
+      "eventId": "EV-c4cf8b6eedf31ad2",
+      "eventIds": [
+        "EV-c4cf8b6eedf31ad2"
+      ],
+      "dataDate": "2026-08-11",
+      "date": "2026-08-10",
+      "title": "Anthropic × Anthropic：Anthropic",
+      "stage": "production",
+      "stageLabel": "production",
+      "customer": "Anthropic",
+      "vendor": "Anthropic",
+      "industry": "未披露",
+      "useCase": "Anthropic",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-8cda9df163efeb65",
+          "type": "implementation_update",
+          "stage": "production",
+          "date": "2026-08-10",
+          "dataDate": "2026-08-11",
+          "eventId": "EV-c4cf8b6eedf31ad2",
+          "eventTitle": "Anthropic 与 Zaelab 达成企业交付合作伙伴关系",
+          "claimCount": 1,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://prnewswire.com/news-releases/anthropic-finds-enterprise-delivery-partner-in-zaelab-302846546.html",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-5d4ce8028c1bf55c"
       ]
     }
   ],

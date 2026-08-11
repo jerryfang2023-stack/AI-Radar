@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-10T03:05:19.937Z",
-    "latestDataDate": "2026-08-10",
-    "currentDate": "2026-08-10",
-    "eventCount": 1969,
+    "generatedAt": "2026-08-11T02:08:35.439Z",
+    "latestDataDate": "2026-08-11",
+    "currentDate": "2026-08-11",
+    "eventCount": 1993,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -86,6 +86,9 @@
       "EV-2fd730d0ad452334",
       "EV-9f6d481a09b063ee",
       "EV-fd21441fb6e143c3",
+      "EV-1d3b117dad798008",
+      "EV-497344d95d593cf6",
+      "EV-a4c177cc432df82e",
       "EV-3dc8d5c373ddd1f3",
       "EV-04fe726fa16722f3",
       "EV-15c5107c993baae8",
@@ -264,6 +267,8 @@
       "EN-c890cfa67d1da908",
       "EN-3e52637ec683b555",
       "EN-7df09a7717ef2feb",
+      "EN-32e83e92d45d71f6",
+      "EN-6849cf65695e6e77",
       "EN-74be4cbf48e647b2",
       "EN-04468f769adbb15b",
       "EN-7d3194f79e645c42",
@@ -355,7 +360,7 @@
       "HW-25ce41fab12d9ef2"
     ],
     "firstSeen": "2022-10-01",
-    "lastSeen": "2026-08-09"
+    "lastSeen": "2026-08-11"
   },
   "events": [
     {
@@ -17891,6 +17896,333 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-1d3b117dad798008",
+      "dataDate": "2026-08-11",
+      "date": "2026-08-10",
+      "updatedDate": "2026-08-11",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "随着AI主导的攻击增多，OpenAI推出新型网络模型",
+      "originalTitle": "As AI-led attacks multiply, OpenAI launches a new cyber model",
+      "subject": "As AI-led attacks multiply, OpenAI",
+      "action": "launches a new cyber model",
+      "object": "As AI-led attacks multiply, OpenAI launches a new cyber model",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-2d12b6999469bce2",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-1dae88179f105651",
+        "EN-dcc6d54b5d41658b"
+      ],
+      "entityNames": [
+        "As AI-led attacks multiply",
+        "OpenAI",
+        "Anthropic",
+        "AI-led",
+        "As AI-led"
+      ],
+      "productName": "AI-led",
+      "products": [
+        {
+          "name": "AI-led",
+          "type": "模型",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        },
+        {
+          "name": "As AI-led",
+          "type": "模型",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model",
+      "publisher": "TechCrunch AI"
+    },
+    {
+      "id": "EV-497344d95d593cf6",
+      "dataDate": "2026-08-11",
+      "date": "2026-08-10",
+      "updatedDate": "2026-08-11",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI 大模型周榜：阿里 qwen3.8-max 冲进综合榜 Top 6，国产多模型表现亮眼",
+      "originalTitle": "",
+      "subject": "AI",
+      "action": "product_release",
+      "object": "AI 大模型周榜：阿里 qwen3.8-max 冲进综合榜 Top 6，国产多模型表现亮眼",
+      "metrics": [],
+      "locations": [
+        "中国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-32e83e92d45d71f6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-32e83e92d45d71f6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-32e83e92d45d71f6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-32e83e92d45d71f6",
+        "EN-047364b9be67f665",
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "AI",
+        "Alibaba",
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/987/938.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-a4c177cc432df82e",
+      "dataDate": "2026-08-11",
+      "date": "2026-08-10",
+      "updatedDate": "2026-08-11",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "零一万物大模型开放平台将逐步停止在线体验、API 调用及充值服务",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "零一万物大模型开放平台将逐步停止在线体验、API 调用及充值服务",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-6849cf65695e6e77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-6849cf65695e6e77"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-6849cf65695e6e77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-6849cf65695e6e77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-6849cf65695e6e77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-6849cf65695e6e77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-6849cf65695e6e77"
+      ],
+      "entityNames": [
+        "01.AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/987/951.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-3dc8d5c373ddd1f3",
       "dataDate": "2026-08-09",
       "date": "2026-08-09",
@@ -24836,7 +25168,9 @@
         {
           "name": "Ode",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://ode.com/press/anthropic-blackstone-and-hellman-friedman-introduce-ode-with-anthropic-an-enterprise-ai-services-firm",
@@ -27153,7 +27487,7 @@
           "name": "Claude Sonnet 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Anthropic"
           ]
         }
       ],
@@ -27461,14 +27795,14 @@
           "name": "Mythos-like",
           "type": "产品/服务",
           "ownerNames": [
-            "Sakana AI"
+            "Anthropic"
           ]
         },
         {
           "name": "Asian AI",
           "type": "产品/服务",
           "ownerNames": [
-            "Sakana AI"
+            "Anthropic"
           ]
         }
       ],
@@ -28804,7 +29138,9 @@
         {
           "name": "GLM-5.2",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/966/453.htm",
@@ -28893,7 +29229,7 @@
           "name": "Fable",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -31009,17 +31345,23 @@
         {
           "name": "Claude Fable 5",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         },
         {
           "name": "Mythos 5",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         },
         {
           "name": "Claude Fable 5 and Mythos 5",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/anthropic-releases-claude-fable-5-and-mythos-5-with-major-gains-in-coding-and-science",
@@ -35805,6 +36147,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-d84f24c8c72e7e47",
         "EV-b3ef1eed47191c55",
         "EV-83d022f89ba29209",
         "EV-5bbc509a032b8309",
@@ -35993,7 +36336,7 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "EN-7209ec6f68ac0bcd",
@@ -36394,7 +36737,7 @@
         "EN-7d1507284a5757ca"
       ],
       "firstSeen": "2023-11-28",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "EN-11507a0e2f5e69d5",
@@ -36643,6 +36986,7 @@
         "EV-3a704c40204ecfd9",
         "EV-94e0afb44c320c99",
         "EV-777eb5b7783b71fb",
+        "EV-c4cf8b6eedf31ad2",
         "EV-f84894a567752c40",
         "EV-5d185ac33faedb68",
         "EV-8f1b01897707b941",
@@ -36667,6 +37011,10 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-29c0d969abde2020",
+        "EV-f8adec104da927e8",
+        "EV-1d3b117dad798008",
+        "EV-5aa6c29a75910ca0",
         "EV-3b02f281ab8fa91d",
         "EV-5b17b7dd8762c3c6",
         "EV-6fc9c1eab4501ce9",
@@ -36826,6 +37174,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-9576bebb698a4c66",
         "EV-4e3e9b543127b55a",
         "EV-a6e9e81d40dc3845",
         "EV-2321e89fad893290",
@@ -36910,6 +37259,7 @@
         "TX-technology-model_context_protocol",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
+        "TX-technology-human_in_loop",
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
@@ -36939,7 +37289,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "EN-b5251b35f15bedc4",
@@ -37459,6 +37809,57 @@
       "lastSeen": "2026-07-29"
     },
     {
+      "id": "EN-32e83e92d45d71f6",
+      "name": "AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6808f7d1be84c23c",
+        "EV-30d7f1c5dc8ea464",
+        "EV-497344d95d593cf6",
+        "EV-8f0c63ed7bb153dc",
+        "EV-06cf7bb28b462980",
+        "EV-889f518dcce85a8f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2023-03-21",
+      "lastSeen": "2026-08-11"
+    },
+    {
+      "id": "EN-6849cf65695e6e77",
+      "name": "01.AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "零一万物"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a4c177cc432df82e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-10",
+      "lastSeen": "2026-08-11"
+    },
+    {
       "id": "EN-74be4cbf48e647b2",
       "name": "Pokee AI",
       "entityType": "organization_candidate",
@@ -37521,6 +37922,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-00f3271df4707d7c",
         "EV-abf716c9f996dbcf",
         "EV-9f36aac82bad6780",
         "EV-842f920ef198c55e",
@@ -37601,6 +38003,10 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-29c0d969abde2020",
+        "EV-f8adec104da927e8",
+        "EV-1d3b117dad798008",
+        "EV-9c532d9739198a82",
         "EV-47c32b3ef5c0f57a",
         "EV-3dc8d5c373ddd1f3",
         "EV-15c5107c993baae8",
@@ -37870,7 +38276,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "EN-047364b9be67f665",
@@ -37902,6 +38308,7 @@
         "EV-e1a4bc40db4a9d8f",
         "EV-3d9aa640411471ea",
         "EV-2a833330267cb2df",
+        "EV-497344d95d593cf6",
         "EV-0679a9b49b53ddbd",
         "EV-355ddfd4c6180ab0",
         "EV-4a6a0e6b6f50946c",
@@ -37973,7 +38380,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-10",
+      "lastSeen": "2026-08-11",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -38226,6 +38633,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-5111b297a0234e46",
         "EV-e234a2e2418ebdf1",
         "EV-271b304f0a16b6db",
         "EV-54a4809c304587e6",
@@ -38403,7 +38811,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "EN-593d0361124f348f",
@@ -38611,6 +39019,7 @@
         "EV-883d3b5f6d30eb48",
         "EV-e15ae1112294d59e",
         "EV-43301de739fe560e",
+        "EV-5111b297a0234e46",
         "EV-ed0bb3a0784d6415",
         "EV-7a4d1e871dcd3b1f",
         "EV-5b193a038ab4ea22",
@@ -38644,7 +39053,7 @@
         "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "EN-165753d8649b9122",

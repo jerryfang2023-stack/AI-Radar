@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-10T03:05:19.937Z",
-    "latestDataDate": "2026-08-10",
-    "currentDate": "2026-08-10",
-    "eventCount": 1969,
+    "generatedAt": "2026-08-11T02:08:35.439Z",
+    "latestDataDate": "2026-08-11",
+    "currentDate": "2026-08-11",
+    "eventCount": 1993,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -124,6 +124,7 @@
       "EV-23ae55daa341be06",
       "EV-6bb83280a2116f24",
       "EV-d10684a6f16afe10",
+      "EV-6af526d687d9f737",
       "EV-acddfa62aabb004f",
       "EV-a852dc0ca6011ff6",
       "EV-fd825cd7f7997fc8",
@@ -201,6 +202,11 @@
       "EV-8fcb52bb6ec980af",
       "EV-c0a65877001ed413",
       "EV-05a87b578967c83e",
+      "EV-1d3b117dad798008",
+      "EV-5f529a16a35a0d52",
+      "EV-7228e4310ee1341a",
+      "EV-a4c177cc432df82e",
+      "EV-cfaa2f6b5c7a5f8a",
       "EV-3dc8d5c373ddd1f3",
       "EV-92d9b6931bcfdd11",
       "EV-355ddfd4c6180ab0",
@@ -555,6 +561,7 @@
       "EN-50e2a4156631df49",
       "EN-f531c4e9f8555dcc",
       "EN-df30a48992da7fe8",
+      "EN-30cd4a85fc09f695",
       "EN-c9e92f0b88c6456b",
       "EN-6b182ca786385b1e",
       "EN-76a9a8a6e2f1a47b",
@@ -601,6 +608,8 @@
       "EN-a08cc489f1c7c830",
       "EN-f4bec299df3f4f27",
       "EN-19e41212c0556603",
+      "EN-6c87e5496f592f3c",
+      "EN-6849cf65695e6e77",
       "EN-74be4cbf48e647b2",
       "EN-c0fced8f2483e9f5",
       "EN-738e22f0acab814c",
@@ -31908,6 +31917,86 @@
       "publisher": "techcrunch.com"
     },
     {
+      "id": "EV-6af526d687d9f737",
+      "dataDate": "2026-08-11",
+      "date": "2026-08-06",
+      "updatedDate": "2026-08-11",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Kakao赢得政府AI智能体平台合同，加速生态系统扩张",
+      "originalTitle": "Kakao wins government AI agent platform contract, steps up ecosystem expansion",
+      "subject": "Kakao",
+      "action": "procurement_contract",
+      "object": "AI Agent Marketplace Development Support Project",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-30cd4a85fc09f695"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-30cd4a85fc09f695"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-30cd4a85fc09f695"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-30cd4a85fc09f695"
+      ],
+      "entityNames": [
+        "Kakao"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://digitaltoday.co.kr/en/view/90051/kakao-wins-government-ai-agent-platform-contract-steps-up-ecosystem-expansion",
+      "publisher": "digitaltoday.co.kr"
+    },
+    {
       "id": "EV-acddfa62aabb004f",
       "dataDate": "2026-08-05",
       "date": "2026-08-05",
@@ -41039,6 +41128,658 @@
       "publisher": "sierra.ai"
     },
     {
+      "id": "EV-1d3b117dad798008",
+      "dataDate": "2026-08-11",
+      "date": "2026-08-10",
+      "updatedDate": "2026-08-11",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "随着AI主导的攻击增多，OpenAI推出新型网络模型",
+      "originalTitle": "As AI-led attacks multiply, OpenAI launches a new cyber model",
+      "subject": "As AI-led attacks multiply, OpenAI",
+      "action": "launches a new cyber model",
+      "object": "As AI-led attacks multiply, OpenAI launches a new cyber model",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-2d12b6999469bce2",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-1dae88179f105651",
+        "EN-dcc6d54b5d41658b"
+      ],
+      "entityNames": [
+        "As AI-led attacks multiply",
+        "OpenAI",
+        "Anthropic",
+        "AI-led",
+        "As AI-led"
+      ],
+      "productName": "AI-led",
+      "products": [
+        {
+          "name": "AI-led",
+          "type": "模型",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        },
+        {
+          "name": "As AI-led",
+          "type": "模型",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model",
+      "publisher": "TechCrunch AI"
+    },
+    {
+      "id": "EV-5f529a16a35a0d52",
+      "dataDate": "2026-08-11",
+      "date": "2026-08-10",
+      "updatedDate": "2026-08-11",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "SGLang 为 Muse Glimmer 提供 Day-0 支持，针对本地智能体工作流优化推理",
+      "originalTitle": "",
+      "subject": "SGLang",
+      "action": "model_release",
+      "object": "Muse Glimmer",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-6c87e5496f592f3c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-6c87e5496f592f3c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-6c87e5496f592f3c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-6c87e5496f592f3c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-6c87e5496f592f3c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-6c87e5496f592f3c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-6c87e5496f592f3c",
+        "EN-f4bc2c89599f5449",
+        "EN-613c48c7848fc037",
+        "EN-a3ba90d022b2f88c"
+      ],
+      "entityNames": [
+        "SGLang",
+        "Muse Glimmer",
+        "Day-0",
+        "Day-0 Support"
+      ],
+      "productName": "Muse Glimmer",
+      "products": [
+        {
+          "name": "Muse Glimmer",
+          "type": "模型",
+          "ownerNames": [
+            "SGLang"
+          ]
+        },
+        {
+          "name": "Day-0",
+          "type": "模型",
+          "ownerNames": [
+            "SGLang"
+          ]
+        },
+        {
+          "name": "Day-0 Support",
+          "type": "模型",
+          "ownerNames": [
+            "SGLang"
+          ]
+        }
+      ],
+      "sourceUrl": "https://lmsys.org/blog/2026-08-10-meta-muse-glimmer",
+      "publisher": "LMSYS：Blog（Chatbot Arena 团队）"
+    },
+    {
+      "id": "EV-7228e4310ee1341a",
+      "dataDate": "2026-08-11",
+      "date": "2026-08-10",
+      "updatedDate": "2026-08-11",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "verified",
+      "title": "Meta回归开源模型，扎克伯格计划以拍卖方式销售算力以超越中国",
+      "originalTitle": "Meta returns to open models with Zuckerberg's plan to out-copy China and sell compute by auction",
+      "subject": "Meta",
+      "action": "model_release",
+      "object": "Muse Glimmer",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00",
+        "EN-f4bc2c89599f5449",
+        "EN-bae6b9faf2ef54c4"
+      ],
+      "entityNames": [
+        "Meta",
+        "Muse Glimmer",
+        "Glimmer AI"
+      ],
+      "productName": "Muse Glimmer",
+      "products": [
+        {
+          "name": "Muse Glimmer",
+          "type": "模型",
+          "ownerNames": [
+            "Meta"
+          ]
+        },
+        {
+          "name": "Glimmer AI",
+          "type": "模型",
+          "ownerNames": [
+            "Meta"
+          ]
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/meta-returns-to-open-models-with-zuckerbergs-plan-to-out-copy-china-and-sell-compute-by-auction",
+      "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-a4c177cc432df82e",
+      "dataDate": "2026-08-11",
+      "date": "2026-08-10",
+      "updatedDate": "2026-08-11",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "零一万物大模型开放平台将逐步停止在线体验、API 调用及充值服务",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "零一万物大模型开放平台将逐步停止在线体验、API 调用及充值服务",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-6849cf65695e6e77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-6849cf65695e6e77"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-6849cf65695e6e77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-6849cf65695e6e77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-6849cf65695e6e77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-6849cf65695e6e77"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-6849cf65695e6e77"
+      ],
+      "entityNames": [
+        "01.AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/987/951.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-cfaa2f6b5c7a5f8a",
+      "dataDate": "2026-08-11",
+      "date": "2026-08-10",
+      "updatedDate": "2026-08-11",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Meta 开源 30B 模型 Muse Glimmer，4bit 量化可在 24GB 显存 GPU 本地运行",
+      "originalTitle": "",
+      "subject": "Meta",
+      "action": "开源 30B 模型",
+      "object": "Muse Glimmer，4bit 量化可在 24GB 显存 GPU 本地运行",
+      "metrics": [
+        "24GB",
+        "300 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00",
+        "EN-f4bc2c89599f5449"
+      ],
+      "entityNames": [
+        "Meta",
+        "Muse Glimmer"
+      ],
+      "productName": "Muse Glimmer",
+      "products": [
+        {
+          "name": "Muse Glimmer",
+          "type": "模型",
+          "ownerNames": [
+            "Meta"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/988/007.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-3dc8d5c373ddd1f3",
       "dataDate": "2026-08-09",
       "date": "2026-08-09",
@@ -45954,7 +46695,9 @@
         {
           "name": "Cowork",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/982/277.htm",
@@ -47358,14 +48101,14 @@
           "name": "Helios AI",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         },
         {
           "name": "Helios",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -52570,7 +53313,9 @@
         {
           "name": "Claude Code v2.1.212",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
@@ -58478,14 +59223,14 @@
           "name": "Cowork",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         },
         {
           "name": "Cowork on Monday",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -60020,7 +60765,9 @@
         {
           "name": "Claude Sonnet 5",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/anthropics-new-claude-sonnet-5-closes-the-gap-to-the-pricier-opus-model-series",
@@ -60202,7 +60949,7 @@
           "name": "Claude Sonnet 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Anthropic"
           ]
         }
       ],
@@ -60555,21 +61302,21 @@
           "name": "Sapphire",
           "type": "产品/服务",
           "ownerNames": [
-            "Amazon"
+            "Anthropic"
           ]
         },
         {
           "name": "News",
           "type": "产品/服务",
           "ownerNames": [
-            "Amazon"
+            "Anthropic"
           ]
         },
         {
           "name": "Autonomous Enterprise",
           "type": "产品/服务",
           "ownerNames": [
-            "Amazon"
+            "Anthropic"
           ]
         }
       ],
@@ -61656,12 +62403,16 @@
         {
           "name": "Claude Cowork",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         },
         {
           "name": "SaaS Workflows",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://perplexityaimagazine.com/expert-insights/ai-agents-replacing-saas-workflows",
@@ -63495,7 +64246,7 @@
           "name": "Claude Fable 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Thinking Machines Lab"
+            "Anthropic"
           ]
         }
       ],
@@ -64741,7 +65492,9 @@
         {
           "name": "Code",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/965/428.htm",
@@ -67156,17 +67909,23 @@
         {
           "name": "Claude Fable 5",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         },
         {
           "name": "Claude Mythos 5",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         },
         {
           "name": "Mythos",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/06/10/anthropic-releases-claude-fable-5-and-claude-mythos-5-same-underlying-model-different-safeguards-new-mythos-class-tier",
@@ -72026,7 +72785,9 @@
         {
           "name": "MCP AI",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://techcrunch.com/2025/11/17/mcp-ai-agent-security-startup-runlayer-launches-with-8-unicorns-11m-from-khoslas-keith-rabois-and-felicis",
@@ -76816,6 +77577,27 @@
       "lastSeen": "2026-07-25"
     },
     {
+      "id": "EN-30cd4a85fc09f695",
+      "name": "Kakao",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6af526d687d9f737"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-08-11"
+    },
+    {
       "id": "EN-c9e92f0b88c6456b",
       "name": "Aleria",
       "entityType": "organization_candidate",
@@ -76936,6 +77718,7 @@
         "EV-e1a4bc40db4a9d8f",
         "EV-3d9aa640411471ea",
         "EV-2a833330267cb2df",
+        "EV-497344d95d593cf6",
         "EV-0679a9b49b53ddbd",
         "EV-355ddfd4c6180ab0",
         "EV-4a6a0e6b6f50946c",
@@ -77007,7 +77790,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-10",
+      "lastSeen": "2026-08-11",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -77026,6 +77809,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-00f3271df4707d7c",
         "EV-abf716c9f996dbcf",
         "EV-9f36aac82bad6780",
         "EV-842f920ef198c55e",
@@ -77106,6 +77890,10 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-29c0d969abde2020",
+        "EV-f8adec104da927e8",
+        "EV-1d3b117dad798008",
+        "EV-9c532d9739198a82",
         "EV-47c32b3ef5c0f57a",
         "EV-3dc8d5c373ddd1f3",
         "EV-15c5107c993baae8",
@@ -77375,7 +78163,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "EN-df3b29befa02cd17",
@@ -77801,6 +78589,14 @@
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-43301de739fe560e",
+        "EV-29c0d969abde2020",
+        "EV-1ffe795574cae551",
+        "EV-2fa8fef6da3a5937",
+        "EV-497344d95d593cf6",
+        "EV-5111b297a0234e46",
+        "EV-7228e4310ee1341a",
+        "EV-b3cb8d6fdd9689d7",
+        "EV-cfaa2f6b5c7a5f8a",
         "EV-b06624cf36990346",
         "EV-39d56d5cef4cea80",
         "EV-91d4c91861a715c1",
@@ -77839,6 +78635,7 @@
         "EV-29f130674dbbb59e",
         "EV-c98d4ee7764d51b2",
         "EV-657837763764c869",
+        "EV-735fac8d2be356bb",
         "EV-9465c27567216dfa",
         "EV-0eef30387327e73f",
         "EV-89bdda008227fb6b",
@@ -77855,6 +78652,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-product_form-chip_accelerator",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
@@ -77864,10 +78662,13 @@
         "TX-technology-code_generation",
         "TX-technology-computer_use",
         "TX-technology-multimodal",
+        "TX-technology-long_context",
+        "TX-deployment_model-cloud",
         "TX-technology-open_weights",
         "TX-technology-image_generation",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
+        "TX-technology-quantization",
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
@@ -77881,7 +78682,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "EN-866e1f18c9370d5d",
@@ -78288,6 +79089,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-d84f24c8c72e7e47",
         "EV-b3ef1eed47191c55",
         "EV-83d022f89ba29209",
         "EV-5bbc509a032b8309",
@@ -78476,7 +79278,7 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "EN-28d0bd981118a907",
@@ -78959,6 +79761,30 @@
       "lastSeen": "2026-07-18"
     },
     {
+      "id": "EN-6849cf65695e6e77",
+      "name": "01.AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "零一万物"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a4c177cc432df82e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-10",
+      "lastSeen": "2026-08-11"
+    },
+    {
       "id": "EN-74be4cbf48e647b2",
       "name": "Pokee AI",
       "entityType": "organization_candidate",
@@ -79266,6 +80092,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-5111b297a0234e46",
         "EV-e234a2e2418ebdf1",
         "EV-271b304f0a16b6db",
         "EV-54a4809c304587e6",
@@ -79443,7 +80270,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "EN-307557d99a7eb726",
@@ -80371,6 +81198,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-2881df2bfc6f437d",
         "EV-3b02f281ab8fa91d",
         "EV-41e229cb248b8418",
         "EV-6fc9c1eab4501ce9",
@@ -80412,7 +81240,8 @@
         "EV-45c7e4abc3e3af6b",
         "EV-2687a22df927f183",
         "EV-dbeae330706b53ca",
-        "EV-abaf05e513f88a4f"
+        "EV-abaf05e513f88a4f",
+        "EV-9576bebb698a4c66"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -80424,7 +81253,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "EN-820a72d1d4b51ae7",
@@ -80912,6 +81741,7 @@
         "EV-3a704c40204ecfd9",
         "EV-94e0afb44c320c99",
         "EV-777eb5b7783b71fb",
+        "EV-c4cf8b6eedf31ad2",
         "EV-f84894a567752c40",
         "EV-5d185ac33faedb68",
         "EV-8f1b01897707b941",
@@ -80936,6 +81766,10 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-29c0d969abde2020",
+        "EV-f8adec104da927e8",
+        "EV-1d3b117dad798008",
+        "EV-5aa6c29a75910ca0",
         "EV-3b02f281ab8fa91d",
         "EV-5b17b7dd8762c3c6",
         "EV-6fc9c1eab4501ce9",
@@ -81095,6 +81929,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-9576bebb698a4c66",
         "EV-4e3e9b543127b55a",
         "EV-a6e9e81d40dc3845",
         "EV-2321e89fad893290",
@@ -81179,6 +82014,7 @@
         "TX-technology-model_context_protocol",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
+        "TX-technology-human_in_loop",
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
@@ -81208,7 +82044,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "EN-5388bc10736a0eff",
@@ -82083,6 +82919,7 @@
       "eventIds": [
         "EV-b2e374d54b10b9af",
         "EV-58c1cc3749294649",
+        "EV-5aa6c29a75910ca0",
         "EV-445db243814e88d0",
         "EV-e28e134345ea5f99",
         "EV-e9a86c47da229331",
@@ -82099,7 +82936,7 @@
         "EN-f48a4090493d2b5e"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "EN-b5251b35f15bedc4",
@@ -85942,6 +86779,193 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-28dbd0566a837349",
+      "snapshotKey": "28dbd0566a837349",
+      "snapshotId": "HWS-44b698fc9a587bca",
+      "eventId": "EV-2fa8fef6da3a5937",
+      "eventIds": [
+        "EV-2fa8fef6da3a5937",
+        "EV-cfaa2f6b5c7a5f8a"
+      ],
+      "dataDate": "2026-08-11",
+      "date": "2026-08-11",
+      "title": "Muse Glimmer",
+      "subject": "Meta",
+      "productNames": [
+        "Muse Glimmer"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment",
+        "specification"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "55",
+          "unit": "GB",
+          "fact_ref": "HWF-d674dfedb7b1118c"
+        },
+        "specification": {
+          "metric_value": "24",
+          "unit": "GB",
+          "fact_ref": "HWF-66424f0ac5969c70"
+        }
+      },
+      "factCount": 4,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-11",
+          "hardware_fact_id": "HWF-d674dfedb7b1118c",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-10T15:11:51.000Z",
+          "subject_entity_id": "EN-ea3bd73e2b506e00",
+          "subject_name": "Meta",
+          "product_entity_ids": [
+            "EN-f4bc2c89599f5449"
+          ],
+          "product_names": [
+            "Muse Glimmer"
+          ],
+          "component_type": "gpu",
+          "metric_value": "55",
+          "unit": "GB",
+          "source_quote": "Meta has released Muse Glimmer , a 30-billion-parameter multimodal model distilled from Muse Spark. It is tuned for always-on local agent workflows, and ships under Apache 2.0. A 30B model normally needs over 55 GB of memory at full precision. Meta compresses it to roughly 4-bit, then adds block-level speculative decoding so it answers fast enough to sit inside a real agent loop. The result runs on one consumer GPU or a Mac, with no network call.",
+          "event_refs": [
+            "EV-2fa8fef6da3a5937"
+          ],
+          "claim_ref": "CL-6c0ac6b835aa024d",
+          "source_refs": [
+            "SA-65b9b56db97251b2"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-11/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-11",
+          "hardware_fact_id": "HWF-54c2a55f2d9cf3e0",
+          "fact_type": "specification",
+          "observed_at": "2026-08-10T15:11:51.000Z",
+          "subject_entity_id": "EN-ea3bd73e2b506e00",
+          "subject_name": "Meta",
+          "product_entity_ids": [
+            "EN-f4bc2c89599f5449"
+          ],
+          "product_names": [
+            "Muse Glimmer"
+          ],
+          "component_type": "gpu",
+          "metric_value": "24",
+          "unit": "GB",
+          "source_quote": "Which companies : Solo developers and startups can run it on one 24 GB GPU or an M4/M5 Max Mac. Mid-market teams get on-prem inference without a per-token bill. Regulated enterprises get an air-gappable agent. Meta advises adding system-level guardrails rather than shipping the model as a bare endpoint.",
+          "event_refs": [
+            "EV-2fa8fef6da3a5937"
+          ],
+          "claim_ref": "CL-c9d4ed96558adeee",
+          "source_refs": [
+            "SA-65b9b56db97251b2"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-11/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-11",
+          "hardware_fact_id": "HWF-22b0fa86b3ad9556",
+          "fact_type": "specification",
+          "observed_at": "2026-08-10T10:52:38.000Z",
+          "subject_entity_id": "EN-ea3bd73e2b506e00",
+          "subject_name": "Meta",
+          "product_entity_ids": [
+            "EN-f4bc2c89599f5449"
+          ],
+          "product_names": [
+            "Muse Glimmer"
+          ],
+          "component_type": "gpu",
+          "metric_value": "24",
+          "unit": "GB",
+          "source_quote": "Meta 开源 30B AI 模型 Muse Glimmer，4bit 量化可在单卡 24GB 显存 GPU 运行 - IT之家",
+          "event_refs": [
+            "EV-cfaa2f6b5c7a5f8a"
+          ],
+          "claim_ref": "CL-c97517c786ff465b",
+          "source_refs": [
+            "SA-62bdef20a7a652e3"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-11/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-11",
+          "hardware_fact_id": "HWF-66424f0ac5969c70",
+          "fact_type": "specification",
+          "observed_at": "2026-08-10T10:52:38.000Z",
+          "subject_entity_id": "EN-ea3bd73e2b506e00",
+          "subject_name": "Meta",
+          "product_entity_ids": [
+            "EN-f4bc2c89599f5449"
+          ],
+          "product_names": [
+            "Muse Glimmer"
+          ],
+          "component_type": "gpu",
+          "metric_value": "24",
+          "unit": "GB",
+          "source_quote": "Meta 开源 30B AI 模型 Muse Glimmer，4bit 量化可在单卡 24GB 显存 GPU 运行",
+          "event_refs": [
+            "EV-cfaa2f6b5c7a5f8a"
+          ],
+          "claim_ref": "CL-bbed4ef319246e55",
+          "source_refs": [
+            "SA-62bdef20a7a652e3"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-11/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "quantization",
+          "name": "模型量化",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/08/10/meta-ai-releases-muse-glimmer",
+      "entityIds": [
+        "EN-ea3bd73e2b506e00",
+        "EN-f4bc2c89599f5449"
+      ]
+    },
     {
       "id": "HWC-fc6be3540530f815",
       "snapshotKey": "fc6be3540530f815",

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-10T03:05:19.937Z",
-    "latestDataDate": "2026-08-10",
-    "currentDate": "2026-08-10",
-    "eventCount": 1969,
+    "generatedAt": "2026-08-11T02:08:35.439Z",
+    "latestDataDate": "2026-08-11",
+    "currentDate": "2026-08-11",
+    "eventCount": 1993,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -30,7 +30,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-04",
-    "lastSeen": "2026-08-09",
+    "lastSeen": "2026-08-11",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -46,14 +46,14 @@
     "timeline": [
       {
         "id": "EV-83d022f89ba29209",
-        "dataDate": "2026-08-09",
+        "dataDate": "2026-08-11",
         "date": "2026-08-04",
         "eventType": "procurement_contract",
         "eventTypeLabel": "采购合同",
         "eventGroup": "商业合作",
         "status": "announced",
         "statusLabel": "已公布",
-        "title": "Volta 选择戴尔科技助力打造下一代 AI 工厂",
+        "title": "Volta 选择戴尔科技助力构建下一代 AI 工厂",
         "displayTags": [
           {
             "dimensionId": "industry",
@@ -140,6 +140,7 @@
         "EV-7585b033d4005977",
         "EV-cec68369662236fd",
         "EV-4eb0556b8c72d410",
+        "EV-d84f24c8c72e7e47",
         "EV-b3ef1eed47191c55",
         "EV-0d1e8308d3c007aa",
         "EV-83d022f89ba29209",
@@ -279,7 +280,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-11"
     }
   ],
   "fde": [],
@@ -288,13 +289,13 @@
     {
       "id": "HWC-5c1869bc3f79759f",
       "snapshotKey": "5c1869bc3f79759f",
-      "snapshotId": "HWS-b53ba96f9f2c11d3",
+      "snapshotId": "HWS-1e80ce0a4985b10a",
       "eventId": "EV-83d022f89ba29209",
       "eventIds": [
         "EV-83d022f89ba29209"
       ],
-      "dataDate": "2026-08-09",
-      "date": "2026-08-09",
+      "dataDate": "2026-08-11",
+      "date": "2026-08-11",
       "title": "Volta",
       "subject": "Volta",
       "productNames": [],
@@ -306,17 +307,27 @@
         "shipment_deployment": {
           "metric_value": "133",
           "unit": "MW",
-          "fact_ref": "HWF-6fd93e441c08d734"
+          "fact_ref": "HWF-27ebe2445b996919"
         }
       },
       "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-11",
+          "previousDate": "2026-08-09",
+          "snapshotId": "HWS-1e80ce0a4985b10a",
+          "previousSnapshotId": "HWS-b53ba96f9f2c11d3",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [
         {
-          "data_date": "2026-08-09",
-          "hardware_fact_id": "HWF-6fd93e441c08d734",
+          "data_date": "2026-08-11",
+          "hardware_fact_id": "HWF-27ebe2445b996919",
           "fact_type": "shipment_deployment",
           "observed_at": "2026-08-04T00:00:00.000Z",
           "subject_entity_id": "EN-d25e715a1ce00764",
@@ -330,11 +341,11 @@
           "event_refs": [
             "EV-83d022f89ba29209"
           ],
-          "claim_ref": "CL-c6b8a9114bcfbb9c",
+          "claim_ref": "CL-0a2b39d40b5f18fc",
           "source_refs": [
             "SA-036fa74ea5c545f3"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-11/hardware-facts.json"
         }
       ],
       "specificationFacts": [],
