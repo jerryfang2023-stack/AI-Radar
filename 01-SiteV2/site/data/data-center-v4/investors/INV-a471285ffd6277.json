@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-11T02:08:35.439Z",
+    "latestDataDate": "2026-08-11",
+    "currentDate": "2026-08-11",
+    "eventCount": 1993,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-a471285ffd6277",
+    "name": "Qualcomm Inc.",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-08-06",
+    "latest_disclosed_at": "2026-08-06",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_c"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-373da2ec629326c0",
+        "canonical_entity_id": "",
+        "name": "Lumilens Inc."
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-1c558361d732c773",
+        "funding_insight_id": "FI-0df914fcc4086c90",
+        "event_ids": [
+          "EV-b116eafe60d71fbe"
+        ],
+        "company_entity_id": "EN-373da2ec629326c0",
+        "company_canonical_entity_id": "",
+        "company_name": "Lumilens Inc.",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$900M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 900000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9 亿美元"
+        },
+        "announced_at": "2026-08-06",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a967da2448674734",
+            "source_url": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding/",
+            "source_title": "光网络初创公司Lumilens以9亿美元资金启动",
+            "source_content_hash": "f3b1d21bc0dc0006",
+            "quote": "They were joined by more than a dozen others including Qualcomm Inc.",
+            "quote_hash": "6cdea59a8e787db47dbbcd31af5d13e395780e5f24e67b3a7dbe1c8c58b4a557"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-a967da2448674734",
+        "source_url": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding/",
+        "source_title": "光网络初创公司Lumilens以9亿美元资金启动",
+        "source_content_hash": "f3b1d21bc0dc0006",
+        "quote": "They were joined by more than a dozen others including Qualcomm Inc.",
+        "quote_hash": "6cdea59a8e787db47dbbcd31af5d13e395780e5f24e67b3a7dbe1c8c58b4a557"
+      }
+    ]
+  }
+}

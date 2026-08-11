@@ -20,21 +20,27 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "first_disclosed_at": "2025-10-28",
-    "latest_disclosed_at": "2026-06-23",
+    "latest_disclosed_at": "2026-08-10",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "multi_round",
+      "seed",
       "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-fe301d1f025971a1",
+        "canonical_entity_id": "",
+        "name": "Discovered Materials"
+      },
       {
         "entity_id": "EN-eaa1c24270a0d057",
         "canonical_entity_id": "",
@@ -52,6 +58,52 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a343bb65e2c0906b",
+        "funding_insight_id": "FI-5d8eab3e612ca748",
+        "event_ids": [
+          "EV-c6cccaca326dfd45"
+        ],
+        "company_entity_id": "EN-fe301d1f025971a1",
+        "company_canonical_entity_id": "",
+        "company_name": "Discovered Materials",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$9 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 9000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "900 万美元"
+        },
+        "announced_at": "2026-08-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c3267e56ad969be2",
+            "source_url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
+            "source_title": "Discovered Materials 正玩 AI 打地鼠游戏，寻找更凉爽的芯片",
+            "source_content_hash": "c3f8c7225d49e92f",
+            "quote": "with investment from Peak XV Partners",
+            "quote_hash": "86555f8c52b345c108899bf4aee7acef5d74cf1473e4ca456d934e5410c68b4b"
+          },
+          {
+            "source_id": "FISRC-6ad648d48b556138",
+            "source_url": "https://www.finsmes.com/2026/08/discovered-materials-raises-9m-in-seed-funding.html",
+            "source_title": "Discovered Materials Raises $9M in Seed Funding",
+            "source_content_hash": "bd47d3e50a1db886",
+            "quote": "with participation from Y Combinator and Peak XV Partners",
+            "quote_hash": "bfdb759d9e01c1cf272260d0da606631f85518f2a0fcaa9e0a95f0c2f7f544f0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9eb0011e52a75bb0",
         "funding_insight_id": "FI-617705549a679908",
@@ -206,6 +258,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-c3267e56ad969be2",
+        "source_url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
+        "source_title": "Discovered Materials 正玩 AI 打地鼠游戏，寻找更凉爽的芯片",
+        "source_content_hash": "c3f8c7225d49e92f",
+        "quote": "with investment from Peak XV Partners",
+        "quote_hash": "86555f8c52b345c108899bf4aee7acef5d74cf1473e4ca456d934e5410c68b4b"
+      },
+      {
+        "source_id": "FISRC-6ad648d48b556138",
+        "source_url": "https://www.finsmes.com/2026/08/discovered-materials-raises-9m-in-seed-funding.html",
+        "source_title": "Discovered Materials Raises $9M in Seed Funding",
+        "source_content_hash": "bd47d3e50a1db886",
+        "quote": "with participation from Y Combinator and Peak XV Partners",
+        "quote_hash": "bfdb759d9e01c1cf272260d0da606631f85518f2a0fcaa9e0a95f0c2f7f544f0"
+      },
       {
         "source_id": "FISRC-058518ce11dc5f00",
         "source_url": "https://sg.finance.yahoo.com/news/justai-raises-17m-series-build-170000502.html",

@@ -20,22 +20,28 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "first_disclosed_at": "2026-05-28",
-    "latest_disclosed_at": "2026-08-01",
+    "latest_disclosed_at": "2026-08-06",
     "role_counts": {
-      "co_lead": 1,
+      "co_lead": 2,
       "lead": 1,
       "participant": 1
     },
     "round_codes": [
       "pre_seed",
       "series_a",
+      "series_c",
       "series_f"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-373da2ec629326c0",
+        "canonical_entity_id": "",
+        "name": "Lumilens Inc."
+      },
       {
         "entity_id": "EN-aa06a7dba2266341",
         "canonical_entity_id": "",
@@ -53,6 +59,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-46c6fd813e4fc4e2",
+        "funding_insight_id": "FI-0df914fcc4086c90",
+        "event_ids": [
+          "EV-b116eafe60d71fbe"
+        ],
+        "company_entity_id": "EN-373da2ec629326c0",
+        "company_canonical_entity_id": "",
+        "company_name": "Lumilens Inc.",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$900M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 900000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9 亿美元"
+        },
+        "announced_at": "2026-08-06",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-a967da2448674734",
+            "source_url": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding/",
+            "source_title": "光网络初创公司Lumilens以9亿美元资金启动",
+            "source_content_hash": "f3b1d21bc0dc0006",
+            "quote": "Atreides Management, Bain Capital Ventures, Meritech, Seligman Ventures and Spark Capital jointly led the investment.",
+            "quote_hash": "94812b7738edf261aeeb91479d522c33f2085d3a81ac0ce4f52f97200d1b0642"
+          }
+        ]
+      },
       {
         "activity_id": "IA-30c31271c4c3b90b",
         "funding_insight_id": "FI-af45f33c3a9b81b9",
@@ -169,6 +213,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-a967da2448674734",
+        "source_url": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding/",
+        "source_title": "光网络初创公司Lumilens以9亿美元资金启动",
+        "source_content_hash": "f3b1d21bc0dc0006",
+        "quote": "Atreides Management, Bain Capital Ventures, Meritech, Seligman Ventures and Spark Capital jointly led the investment.",
+        "quote_hash": "94812b7738edf261aeeb91479d522c33f2085d3a81ac0ce4f52f97200d1b0642"
+      },
       {
         "source_id": "FISRC-1284a14893cb26a9",
         "source_url": "https://thecatalystonline.com/investment-funding/smallest-ai-expands-enterprise-voice-ai-with-new-funding/",

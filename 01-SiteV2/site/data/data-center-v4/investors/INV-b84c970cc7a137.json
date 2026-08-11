@@ -20,18 +20,26 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
     "first_disclosed_at": "2025-03-31",
-    "latest_disclosed_at": "2025-03-31",
+    "latest_disclosed_at": "2026-08-06",
     "role_counts": {
+      "co_lead": 1,
+      "historical_or_ambiguous": 1,
       "lead": 1
     },
     "round_codes": [
+      "series_c",
       "series_d"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-373da2ec629326c0",
+        "canonical_entity_id": "",
+        "name": "Lumilens Inc."
+      },
       {
         "entity_id": "EN-70e7e370d5a50ea1",
         "canonical_entity_id": "",
@@ -39,6 +47,82 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e1c6c96b7cdfb028",
+        "funding_insight_id": "FI-0df914fcc4086c90",
+        "event_ids": [
+          "EV-b116eafe60d71fbe"
+        ],
+        "company_entity_id": "EN-373da2ec629326c0",
+        "company_canonical_entity_id": "",
+        "company_name": "Lumilens Inc.",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$900M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 900000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9 亿美元"
+        },
+        "announced_at": "2026-08-06",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-a967da2448674734",
+            "source_url": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding/",
+            "source_title": "光网络初创公司Lumilens以9亿美元资金启动",
+            "source_content_hash": "f3b1d21bc0dc0006",
+            "quote": "Atreides Management, Bain Capital Ventures, Meritech, Seligman Ventures and Spark Capital jointly led the investment.",
+            "quote_hash": "94812b7738edf261aeeb91479d522c33f2085d3a81ac0ce4f52f97200d1b0642"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-542d3f7e5496a6f1",
+        "funding_insight_id": "FI-0df914fcc4086c90",
+        "event_ids": [
+          "EV-b116eafe60d71fbe"
+        ],
+        "company_entity_id": "EN-373da2ec629326c0",
+        "company_canonical_entity_id": "",
+        "company_name": "Lumilens Inc.",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$900M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 900000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9 亿美元"
+        },
+        "announced_at": "2026-08-06",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1f5105dddfd453fd",
+            "source_url": "https://www.linkedin.com/posts/jameskuklinski_exclusive-startup-raises-700-million-to-activity-7491169102611451904-ULQv",
+            "source_title": "Exclusive | Startup Raises $700 Million to Replace Data-Center Wires With Light | James Kuklinski",
+            "source_content_hash": "e758f2e16933570e",
+            "quote": "We @ Spark Capital led the Series B in early 2025, before the first product had shipped, and I joined the board.",
+            "quote_hash": "4bbc5aa1bcf206290e798f2b74b774796e9f9b684baee1aa5d7f587089f244bf"
+          }
+        ]
+      },
       {
         "activity_id": "IA-8aaebfff8c888cdd",
         "funding_insight_id": "FI-80a993bcabfd14ae",
@@ -79,6 +163,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-a967da2448674734",
+        "source_url": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding/",
+        "source_title": "光网络初创公司Lumilens以9亿美元资金启动",
+        "source_content_hash": "f3b1d21bc0dc0006",
+        "quote": "Atreides Management, Bain Capital Ventures, Meritech, Seligman Ventures and Spark Capital jointly led the investment.",
+        "quote_hash": "94812b7738edf261aeeb91479d522c33f2085d3a81ac0ce4f52f97200d1b0642"
+      },
+      {
+        "source_id": "FISRC-1f5105dddfd453fd",
+        "source_url": "https://www.linkedin.com/posts/jameskuklinski_exclusive-startup-raises-700-million-to-activity-7491169102611451904-ULQv",
+        "source_title": "Exclusive | Startup Raises $700 Million to Replace Data-Center Wires With Light | James Kuklinski",
+        "source_content_hash": "e758f2e16933570e",
+        "quote": "We @ Spark Capital led the Series B in early 2025, before the first product had shipped, and I joined the board.",
+        "quote_hash": "4bbc5aa1bcf206290e798f2b74b774796e9f9b684baee1aa5d7f587089f244bf"
+      },
       {
         "source_id": "FISRC-f1b764e21138a412",
         "source_url": "https://techcrunch.com/2025/03/31/spark-mayfield-and-kleiner-perkins-pour-another-75m-into-ai-data-center-chipmaker-retym/",

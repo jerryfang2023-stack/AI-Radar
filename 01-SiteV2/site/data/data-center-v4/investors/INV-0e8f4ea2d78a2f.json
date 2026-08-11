@@ -20,13 +20,14 @@
     "investor_kind_label": "个人投资者",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "first_disclosed_at": "2026-03-10",
-    "latest_disclosed_at": "2026-03-10",
+    "latest_disclosed_at": "2026-08-10",
     "role_counts": {
-      "other_current_round": 1
+      "other_current_round": 1,
+      "participant": 1
     },
     "round_codes": [
       "seed"
@@ -36,9 +37,52 @@
         "entity_id": "EN-befc92b3a019d04c",
         "canonical_entity_id": "",
         "name": "AgentMail"
+      },
+      {
+        "entity_id": "EN-fe301d1f025971a1",
+        "canonical_entity_id": "",
+        "name": "Discovered Materials"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-af4bb2b2c7b2d9ae",
+        "funding_insight_id": "FI-5d8eab3e612ca748",
+        "event_ids": [
+          "EV-c6cccaca326dfd45"
+        ],
+        "company_entity_id": "EN-fe301d1f025971a1",
+        "company_canonical_entity_id": "",
+        "company_name": "Discovered Materials",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$9 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 9000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "900 万美元"
+        },
+        "announced_at": "2026-08-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c3267e56ad969be2",
+            "source_url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
+            "source_title": "Discovered Materials 正玩 AI 打地鼠游戏，寻找更凉爽的芯片",
+            "source_content_hash": "c3f8c7225d49e92f",
+            "quote": "angel investors Paul Graham, Gokul Rajaram, and Thariq Shihipar",
+            "quote_hash": "8f5cc5178c4dc58bbc69a6135d0459d091b9694eb8981302b47df550a36b896e"
+          }
+        ]
+      },
       {
         "activity_id": "IA-34270858f5203cd4",
         "funding_insight_id": "FI-94de7d23d9ebd5ba",
@@ -79,6 +123,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-c3267e56ad969be2",
+        "source_url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
+        "source_title": "Discovered Materials 正玩 AI 打地鼠游戏，寻找更凉爽的芯片",
+        "source_content_hash": "c3f8c7225d49e92f",
+        "quote": "angel investors Paul Graham, Gokul Rajaram, and Thariq Shihipar",
+        "quote_hash": "8f5cc5178c4dc58bbc69a6135d0459d091b9694eb8981302b47df550a36b896e"
+      },
       {
         "source_id": "FISRC-f961f60a13274764",
         "source_url": "https://techcrunch.com/2026/03/10/agentmail-raises-6m-to-build-an-email-service-for-ai-agents/",
