@@ -1,0 +1,17 @@
+<view class="page-shell">
+  <app-header title="我的" />
+  <view class="page-content profile-content">
+    <view class="brand-block paper-card"><image src="/assets/brand/logo-wavesight-reference-horizontal.svg" mode="widthFix" /><text class="serif">观澜融资情报站</text><text>AI 垂直 · 中文解释 · 证据可追溯</text></view>
+    <view class="profile-card paper-card" bindtap="openWatchlist"><view><text class="card-title">观察列表</text><text class="card-copy">当前设备已收藏 {{watchCount}} 笔融资</text></view><text class="card-action">查看</text></view>
+    <view class="section-title serif">数据状态</view>
+    <view class="info-list paper-card">
+      <view><text>公开融资卡</text><text class="mono">{{meta.cardCount}} 笔</text></view>
+      <view><text>数据日期</text><text class="mono">{{meta.latestDate}}</text></view>
+      <view><text>融资版本</text><text>{{meta.fundingVersion}}</text></view>
+      <view><text>分类版本</text><text>{{meta.taxonomyVersion}}</text></view>
+    </view>
+    <view class="section-title serif">使用说明</view>
+    <view class="note paper-card"><text>收藏与比较记录只保存在当前设备。融资金额保留原始币种口径，不把不同币种直接相加；未披露字段不会以 0 替代。</text></view>
+    <button class="danger-button" bindtap="clearLocalData">清空本地收藏</button>
+  </view>
+</view>

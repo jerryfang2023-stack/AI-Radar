@@ -1,0 +1,33 @@
+page {
+  --gl-ink: #071827;
+  --gl-blue: #0d355c;
+  --gl-gray: #6f7f8f;
+  --gl-border: #e5e8ec;
+  --gl-bg: #f7f4ef;
+  --gl-page: #fffdf8;
+  --gl-paper: #ffffff;
+  --gl-gold: #c8a766;
+  --gl-positive: #2f8c57;
+  --gl-risk: #b85c5c;
+  min-height: 100%;
+  background: var(--gl-page);
+  color: var(--gl-ink);
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 28rpx;
+}
+
+button { font: inherit; }
+button::after { border: 0; }
+.page-shell { min-height: 100vh; background: var(--gl-page); }
+.page-content { padding: 24rpx 28rpx 180rpx; }
+.serif { font-family: "Songti SC", "STSong", "SimSun", serif; }
+.mono { font-family: "SFMono-Regular", Consolas, monospace; font-variant-numeric: tabular-nums; }
+.section-title { margin: 34rpx 0 18rpx; font-size: 30rpx; font-weight: 600; }
+.paper-card { border: 1rpx solid var(--gl-border); border-radius: 20rpx; background: rgba(255, 255, 255, 0.92); }
+.primary-button { display: flex; align-items: center; justify-content: center; min-height: 84rpx; border-radius: 14rpx; background: var(--gl-ink); color: #fff; font-size: 28rpx; font-weight: 600; }
+.secondary-button { display: flex; align-items: center; justify-content: center; min-height: 80rpx; border: 1rpx solid rgba(200, 167, 102, 0.75); border-radius: 14rpx; background: #fff; color: #9b6d20; font-size: 28rpx; font-weight: 600; }
+.empty-state { padding: 100rpx 28rpx; text-align: center; }
+.empty-state .title { margin-bottom: 12rpx; font-size: 32rpx; font-weight: 600; }
+.empty-state .copy { color: var(--gl-gray); font-size: 26rpx; line-height: 1.7; }
+.status-positive { color: var(--gl-positive); }
+.status-risk { color: var(--gl-risk); }

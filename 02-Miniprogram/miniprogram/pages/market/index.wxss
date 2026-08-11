@@ -1,0 +1,19 @@
+.market-content { padding-top: 34rpx; }
+.intro { display: flex; flex-direction: column; gap: 12rpx; }
+.eyebrow { color: #a87827; font-size: 20rpx; font-weight: 600; letter-spacing: 0.12em; }
+.page-title { color: #071827; font-size: 46rpx; font-weight: 600; }
+.intro-copy { color: #6f7f8f; font-size: 24rpx; line-height: 1.7; }
+.metric-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16rpx; margin-top: 28rpx; }
+.metric-grid > view { display: flex; flex-direction: column; gap: 10rpx; padding: 24rpx; }
+.metric-value { color: #071827; font-size: 42rpx; }
+.metric-label { color: #6f7f8f; font-size: 22rpx; }
+.section-block { margin-top: 40rpx; }
+.bar-list { display: grid; gap: 16rpx; }
+.bar-row { display: block; width: 100%; margin: 0; padding: 20rpx 22rpx; border: 1rpx solid #e5e8ec; border-radius: 16rpx; background: #fff; text-align: left; }
+.bar-row.static { box-sizing: border-box; }
+.bar-label { display: flex; align-items: center; justify-content: space-between; color: #071827; font-size: 24rpx; }
+.bar-track { height: 12rpx; margin-top: 16rpx; overflow: hidden; border-radius: 999rpx; background: #eef1f3; }
+.bar-fill { height: 100%; border-radius: inherit; background: #0d355c; }
+.bar-fill.round { background: #c8a766; }
+.method-note { display: flex; flex-direction: column; gap: 10rpx; margin-top: 38rpx; padding: 24rpx; border-left: 4rpx solid #c8a766; background: rgba(200, 167, 102, 0.08); color: #516273; font-size: 23rpx; line-height: 1.7; }
+.method-title { color: #8c641f; font-weight: 600; }

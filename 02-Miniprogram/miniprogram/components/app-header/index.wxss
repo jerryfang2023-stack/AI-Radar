@@ -1,0 +1,9 @@
+.header { background: rgba(255, 253, 248, 0.98); }
+.header-row { display: grid; grid-template-columns: 176rpx 1fr 176rpx; align-items: center; min-height: 92rpx; padding: 0 24rpx; }
+.brand-logo { width: 166rpx; }
+.header-title { color: #071827; font-size: 38rpx; font-weight: 600; text-align: center; white-space: nowrap; }
+.back-button, .right-button { min-height: 64rpx; margin: 0; padding: 0 14rpx; border: 1rpx solid #e5e8ec; border-radius: 12rpx; background: #fff; color: #071827; font-size: 24rpx; line-height: 64rpx; }
+.back-button { justify-self: start; }
+.right-button { justify-self: end; color: #8c641f; border-color: rgba(200, 167, 102, 0.65); }
+.right-space { width: 176rpx; }
+.serif { font-family: "Songti SC", "STSong", "SimSun", serif; }

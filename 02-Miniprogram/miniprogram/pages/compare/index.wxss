@@ -1,0 +1,16 @@
+.compare-content { padding: 28rpx 0 100rpx; }
+.compare-scroll { width: 100%; }
+.compare-track { display: inline-flex; gap: 18rpx; padding: 0 28rpx 24rpx; }
+.compare-card { box-sizing: border-box; width: 600rpx; padding: 26rpx; }
+.compare-head { display: grid; grid-template-columns: 74rpx 1fr; gap: 6rpx 16rpx; align-items: center; padding-bottom: 20rpx; border-bottom: 1rpx solid #e5e8ec; }
+.avatar { grid-row: span 2; display: flex; align-items: center; justify-content: center; width: 72rpx; height: 72rpx; border-radius: 50%; background: #071827; color: #fff; font-size: 26rpx; }
+.company { color: #071827; font-size: 34rpx; font-weight: 600; }
+.category { color: #6f7f8f; font-size: 22rpx; }
+.compare-fact { display: flex; align-items: center; justify-content: space-between; min-height: 82rpx; border-bottom: 1rpx solid #e5e8ec; color: #6f7f8f; font-size: 23rpx; }
+.compare-fact .value { max-width: 350rpx; color: #071827; font-size: 27rpx; text-align: right; }
+.compare-block { display: flex; flex-direction: column; gap: 12rpx; padding: 22rpx 0; border-bottom: 1rpx solid #e5e8ec; }
+.compare-block .label { color: #a87827; font-size: 22rpx; font-weight: 600; }
+.compare-block .line { color: #33465a; font-size: 23rpx; line-height: 1.6; }
+.compare-block .muted { color: #6f7f8f; }
+.evidence { display: flex; gap: 8rpx; align-items: center; padding-top: 20rpx; color: #2f8c57; font-size: 23rpx; }
+.compare-note { padding: 12rpx 28rpx; color: #6f7f8f; font-size: 22rpx; text-align: center; }

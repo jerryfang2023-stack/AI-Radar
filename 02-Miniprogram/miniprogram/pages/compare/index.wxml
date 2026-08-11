@@ -1,0 +1,22 @@
+<view class="page-shell">
+  <app-header title="融资比较" show-back right-label="复制摘要" bind:righttap="copyComparison" />
+  <view wx:if="{{cards.length >= 2}}" class="compare-content">
+    <scroll-view class="compare-scroll" scroll-x enhanced show-scrollbar="false">
+      <view class="compare-track">
+        <view wx:for="{{cards}}" wx:key="id" class="compare-card paper-card" data-id="{{item.id}}" bindtap="openCard">
+          <view class="compare-head"><view class="avatar">{{item.initial}}</view><text class="company serif">{{item.company}}</text><text class="category">{{item.category}}</text></view>
+          <view class="compare-fact"><text>本轮金额</text><text class="value mono">{{item.amount}}</text></view>
+          <view class="compare-fact"><text>融资轮次</text><text class="value">{{item.round}}</text></view>
+          <view class="compare-fact"><text>披露日期</text><text class="value mono">{{item.date}}</text></view>
+          <view class="compare-fact"><text>累计融资</text><text class="value mono">{{item.cumulativeAmount}}</text></view>
+          <view class="compare-fact"><text>总部</text><text class="value">{{item.headquarters}}</text></view>
+          <view class="compare-block"><text class="label">主要投资方</text><text wx:for="{{item.investors}}" wx:key="name" class="line">{{item.name}} · {{item.role || '角色未披露'}}</text><text wx:if="{{!item.investors.length}}" class="line muted">未披露</text></view>
+          <view class="compare-block"><text class="label">首要信号</text><text wx:for="{{item.signals}}" wx:key="*this" wx:if="{{index < 3}}" class="line">{{index + 1}}. {{item}}</text><text wx:if="{{!item.signals.length}}" class="line muted">未披露</text></view>
+          <view class="evidence"><icon type="success" size="14" color="#2F8C57" />{{item.evidenceLabel}}</view>
+        </view>
+      </view>
+    </scroll-view>
+    <view class="compare-note">左右滑动查看公司；点击卡片可打开完整融资详情。</view>
+  </view>
+  <view wx:else class="empty-state"><view class="title serif">至少选择 2 家公司</view><view class="copy">返回融资终端，勾选 2–3 家公司后再比较。</view></view>
+</view>

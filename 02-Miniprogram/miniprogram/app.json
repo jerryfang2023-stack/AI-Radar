@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/terminal/index",
+    "pages/market/index",
+    "pages/watchlist/index",
+    "pages/profile/index",
+    "pages/detail/index",
+    "pages/compare/index"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundColor": "#FFFDF8",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#6F7F8F",
+    "selectedColor": "#071827",
+    "backgroundColor": "#FFFDF8",
+    "borderStyle": "white",
+    "list": [
+      { "pagePath": "pages/terminal/index", "text": "终端" },
+      { "pagePath": "pages/market/index", "text": "市场" },
+      { "pagePath": "pages/watchlist/index", "text": "观察" },
+      { "pagePath": "pages/profile/index", "text": "我的" }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

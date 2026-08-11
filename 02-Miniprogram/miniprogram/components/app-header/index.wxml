@@ -1,0 +1,9 @@
+<view class="header" style="padding-top: {{statusBarHeight}}px;">
+  <view class="header-row">
+    <button wx:if="{{showBack}}" class="back-button" bindtap="back">返回</button>
+    <image wx:else class="brand-logo" src="/assets/brand/logo-wavesight-reference-horizontal.svg" mode="widthFix" />
+    <text class="header-title serif">{{title}}</text>
+    <button wx:if="{{rightLabel}}" class="right-button" bindtap="rightTap">{{rightLabel}}</button>
+    <view wx:else class="right-space"></view>
+  </view>
+</view>

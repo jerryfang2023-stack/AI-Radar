@@ -1,0 +1,15 @@
+<view class="page-shell">
+  <app-header title="市场概览" />
+  <view class="page-content market-content">
+    <view class="intro"><text class="eyebrow">PUBLIC SAMPLE · {{meta.latestDate}}</text><text class="page-title serif">AI 融资公开样本</text><text class="intro-copy">统计仅基于当前已发布融资卡，不代表全球市场总量；金额不跨币种合并。</text></view>
+    <view class="metric-grid">
+      <view class="paper-card"><text class="metric-value mono">{{meta.cardCount}}</text><text class="metric-label">已发布融资</text></view>
+      <view class="paper-card"><text class="metric-value mono">{{meta.multiSourceRate}}%</text><text class="metric-label">多源核验</text></view>
+      <view class="paper-card"><text class="metric-value mono">{{meta.disclosedAmountCount}}</text><text class="metric-label">金额已披露</text></view>
+      <view class="paper-card"><text class="metric-value mono">{{meta.categoryCount}}</text><text class="metric-label">市场大类</text></view>
+    </view>
+    <view class="section-block"><text class="section-title serif">市场类别分布</text><view class="bar-list"><button wx:for="{{categories}}" wx:key="id" class="bar-row" data-id="{{item.id}}" bindtap="openCategory"><view class="bar-label"><text>{{item.name}}</text><text class="mono">{{item.count}} 笔</text></view><view class="bar-track"><view class="bar-fill" style="width: {{item.bar}}%;"></view></view></button></view></view>
+    <view class="section-block"><text class="section-title serif">主要轮次分布</text><view class="bar-list"><view wx:for="{{rounds}}" wx:key="name" class="bar-row static"><view class="bar-label"><text>{{item.name}}</text><text class="mono">{{item.count}} 笔</text></view><view class="bar-track"><view class="bar-fill round" style="width: {{item.bar}}%;"></view></view></view></view></view>
+    <view class="method-note"><text class="method-title">数据口径</text><text>市场类别来自 {{meta.taxonomyVersion}} 人工复核字段；多源核验按公开研究来源数量计算。点击市场类别可回到终端查看构成交易。</text></view>
+  </view>
+</view>
