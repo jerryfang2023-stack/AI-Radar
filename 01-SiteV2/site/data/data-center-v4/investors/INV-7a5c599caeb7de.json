@@ -22,15 +22,15 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 21,
+    "current_round_count": 22,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 20,
+    "portfolio_company_count": 21,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-07-23",
+    "latest_disclosed_at": "2026-08-10",
     "role_counts": {
       "historical_or_ambiguous": 2,
       "lead": 2,
-      "participant": 19
+      "participant": 20
     },
     "round_codes": [
       "multi_round",
@@ -55,6 +55,11 @@
         "entity_id": "EN-2f88f41306209dd7",
         "canonical_entity_id": "",
         "name": "Avoca AI"
+      },
+      {
+        "entity_id": "EN-fe301d1f025971a1",
+        "canonical_entity_id": "",
+        "name": "Discovered Materials"
       },
       {
         "entity_id": "EN-1050efc9e13624b2",
@@ -143,6 +148,52 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-89f34375ab4f5386",
+        "funding_insight_id": "FI-5d8eab3e612ca748",
+        "event_ids": [
+          "EV-c6cccaca326dfd45"
+        ],
+        "company_entity_id": "EN-fe301d1f025971a1",
+        "company_canonical_entity_id": "",
+        "company_name": "Discovered Materials",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$9 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 9000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "900 万美元"
+        },
+        "announced_at": "2026-08-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c3267e56ad969be2",
+            "source_url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
+            "source_title": "Discovered Materials 正玩 AI 打地鼠游戏，寻找更凉爽的芯片",
+            "source_content_hash": "c3f8c7225d49e92f",
+            "quote": "with investment from Peak XV Partners and angel investors Paul Graham, Gokul Rajaram, and Thariq Shihipar",
+            "quote_hash": "fe23b98efb3b0950a65b4d0b36fda4dae613ccf86bb390b6e12a4e6930b547e6"
+          },
+          {
+            "source_id": "FISRC-6ad648d48b556138",
+            "source_url": "https://www.finsmes.com/2026/08/discovered-materials-raises-9m-in-seed-funding.html",
+            "source_title": "Discovered Materials Raises $9M in Seed Funding",
+            "source_content_hash": "bd47d3e50a1db886",
+            "quote": "with participation from Y Combinator and Peak XV Partners",
+            "quote_hash": "bfdb759d9e01c1cf272260d0da606631f85518f2a0fcaa9e0a95f0c2f7f544f0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a4459146183d1fa3",
         "funding_insight_id": "FI-818ce8d5f2783452",
@@ -1035,6 +1086,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-c3267e56ad969be2",
+        "source_url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
+        "source_title": "Discovered Materials 正玩 AI 打地鼠游戏，寻找更凉爽的芯片",
+        "source_content_hash": "c3f8c7225d49e92f",
+        "quote": "with investment from Peak XV Partners and angel investors Paul Graham, Gokul Rajaram, and Thariq Shihipar",
+        "quote_hash": "fe23b98efb3b0950a65b4d0b36fda4dae613ccf86bb390b6e12a4e6930b547e6"
+      },
+      {
+        "source_id": "FISRC-6ad648d48b556138",
+        "source_url": "https://www.finsmes.com/2026/08/discovered-materials-raises-9m-in-seed-funding.html",
+        "source_title": "Discovered Materials Raises $9M in Seed Funding",
+        "source_content_hash": "bd47d3e50a1db886",
+        "quote": "with participation from Y Combinator and Peak XV Partners",
+        "quote_hash": "bfdb759d9e01c1cf272260d0da606631f85518f2a0fcaa9e0a95f0c2f7f544f0"
+      },
       {
         "source_id": "FISRC-a25b58a6297cb344",
         "source_url": "https://www.eu-startups.com/2026/07/yc-backed-telli-raises-e13-1-million-to-build-ai-for-b2c-customer-operations/",
