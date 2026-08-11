@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-10T03:05:19.937Z",
-    "latestDataDate": "2026-08-10",
-    "currentDate": "2026-08-10",
-    "eventCount": 1969,
+    "generatedAt": "2026-08-11T02:08:35.439Z",
+    "latestDataDate": "2026-08-11",
+    "currentDate": "2026-08-11",
+    "eventCount": 1993,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -42,6 +42,14 @@
       "EV-9efcf6480f6c6f48",
       "EV-cf76f090a1a20a36",
       "EV-43301de739fe560e",
+      "EV-29c0d969abde2020",
+      "EV-1ffe795574cae551",
+      "EV-2fa8fef6da3a5937",
+      "EV-497344d95d593cf6",
+      "EV-5111b297a0234e46",
+      "EV-7228e4310ee1341a",
+      "EV-b3cb8d6fdd9689d7",
+      "EV-cfaa2f6b5c7a5f8a",
       "EV-b06624cf36990346",
       "EV-39d56d5cef4cea80",
       "EV-91d4c91861a715c1",
@@ -80,6 +88,7 @@
       "EV-29f130674dbbb59e",
       "EV-c98d4ee7764d51b2",
       "EV-657837763764c869",
+      "EV-735fac8d2be356bb",
       "EV-9465c27567216dfa",
       "EV-0eef30387327e73f",
       "EV-89bdda008227fb6b",
@@ -96,6 +105,7 @@
     "viewpointIds": [],
     "classificationRefs": [
       "TX-technology-agentic_execution",
+      "TX-product_form-chip_accelerator",
       "TX-product_form-enterprise_software_platform",
       "TX-industry-healthcare_life_sciences",
       "TX-industry-media_entertainment",
@@ -105,10 +115,13 @@
       "TX-technology-code_generation",
       "TX-technology-computer_use",
       "TX-technology-multimodal",
+      "TX-technology-long_context",
+      "TX-deployment_model-cloud",
       "TX-technology-open_weights",
       "TX-technology-image_generation",
       "TX-technology-tool_use",
       "TX-technology-reasoning",
+      "TX-technology-quantization",
       "TX-technology-distillation"
     ],
     "relatedEntityIds": [
@@ -122,7 +135,7 @@
       "EN-e71558a14e7ed6ab"
     ],
     "firstSeen": "2026-03-13",
-    "lastSeen": "2026-08-10",
+    "lastSeen": "2026-08-11",
     "relationIds": [
       "REL2-85833837dc3e3f02",
       "REL2-ef7c3e949f2087f3",
@@ -162,6 +175,14 @@
       ],
       "partnerships": [],
       "productsServices": [
+        "EV-29c0d969abde2020",
+        "EV-1ffe795574cae551",
+        "EV-2fa8fef6da3a5937",
+        "EV-497344d95d593cf6",
+        "EV-5111b297a0234e46",
+        "EV-7228e4310ee1341a",
+        "EV-b3cb8d6fdd9689d7",
+        "EV-cfaa2f6b5c7a5f8a",
         "EV-b06624cf36990346",
         "EV-39d56d5cef4cea80",
         "EV-91d4c91861a715c1",
@@ -210,6 +231,7 @@
         "EV-8fcecabca2e92b40"
       ],
       "other": [
+        "EV-735fac8d2be356bb",
         "EV-9465c27567216dfa",
         "EV-ef823877347ff40f",
         "EV-04cf95633b564f9a",
@@ -221,6 +243,328 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-29c0d969abde2020",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-11",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Meta 发布开源模型 Muse Glimmer，并承诺数周内开放 Muse Spark 1.2 权重",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "code_generation",
+            "name": "代码生成",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "long_context",
+            "name": "长上下文",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "cloud",
+            "name": "云端",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-ea3bd73e2b506e00",
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d",
+          "EN-f4bc2c89599f5449"
+        ]
+      },
+      {
+        "id": "EV-1ffe795574cae551",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-10",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "扎克伯格呼吁美国放宽开源 AI 限制，以应对中国竞争",
+        "displayTags": [],
+        "entityIds": [
+          "EN-ea3bd73e2b506e00"
+        ]
+      },
+      {
+        "id": "EV-2fa8fef6da3a5937",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-10",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Meta 发布 Muse Glimmer：可在单张消费级 GPU 上运行的 300 亿参数开源智能体模型",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "quantization",
+            "name": "模型量化",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-ea3bd73e2b506e00",
+          "EN-f4bc2c89599f5449"
+        ]
+      },
+      {
+        "id": "EV-497344d95d593cf6",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-10",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI 大模型周榜：阿里 qwen3.8-max 冲进综合榜 Top 6，国产多模型表现亮眼",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-32e83e92d45d71f6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-32e83e92d45d71f6",
+          "EN-047364b9be67f665",
+          "EN-ea3bd73e2b506e00"
+        ]
+      },
+      {
+        "id": "EV-5111b297a0234e46",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-10",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "MAI-Image-2.6 在 Arena 排名第 2，领先 Google、Meta 和 xAI",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "image_generation",
+            "name": "图像生成",
+            "entityIds": [
+              "EN-4721e06a8b6d85ff"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-ea3bd73e2b506e00",
+          "EN-6fcba5d96a4fadfd",
+          "EN-06a0b2f5a7254f1c",
+          "EN-4721e06a8b6d85ff"
+        ]
+      },
+      {
+        "id": "EV-7228e4310ee1341a",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-10",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "Meta回归开源模型，扎克伯格计划以拍卖方式销售算力以超越中国",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-ea3bd73e2b506e00",
+          "EN-f4bc2c89599f5449",
+          "EN-bae6b9faf2ef54c4"
+        ]
+      },
+      {
+        "id": "EV-b3cb8d6fdd9689d7",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-10",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Meta Muse Glimmer：开放权重 30B 本地编码模型",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c1624be4b5f4de29",
+          "EN-ea3bd73e2b506e00",
+          "EN-f4bc2c89599f5449"
+        ]
+      },
+      {
+        "id": "EV-cfaa2f6b5c7a5f8a",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-10",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Meta 开源 30B 模型 Muse Glimmer，4bit 量化可在 24GB 显存 GPU 本地运行",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-ea3bd73e2b506e00",
+          "EN-f4bc2c89599f5449"
+        ]
+      },
+      {
+        "id": "EV-735fac8d2be356bb",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-10",
+        "eventType": "policy_regulation",
+        "eventTypeLabel": "政策监管",
+        "eventGroup": "组织、政策与法律",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Meta 扎克伯格呼吁美国减少开源 AI 政策障碍，发布新模型 Muse Glimmer",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-ea3bd73e2b506e00"
+        ]
+      },
       {
         "id": "EV-cbce4f1f5187efcf",
         "dataDate": "2026-08-10",
@@ -3439,6 +3783,7 @@
         "EV-23ae55daa341be06",
         "EV-6bb83280a2116f24",
         "EV-d10684a6f16afe10",
+        "EV-6af526d687d9f737",
         "EV-acddfa62aabb004f",
         "EV-a852dc0ca6011ff6",
         "EV-fd825cd7f7997fc8",
@@ -3516,6 +3861,11 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-1d3b117dad798008",
+        "EV-5f529a16a35a0d52",
+        "EV-7228e4310ee1341a",
+        "EV-a4c177cc432df82e",
+        "EV-cfaa2f6b5c7a5f8a",
         "EV-3dc8d5c373ddd1f3",
         "EV-92d9b6931bcfdd11",
         "EV-355ddfd4c6180ab0",
@@ -3870,6 +4220,7 @@
         "EN-50e2a4156631df49",
         "EN-f531c4e9f8555dcc",
         "EN-df30a48992da7fe8",
+        "EN-30cd4a85fc09f695",
         "EN-c9e92f0b88c6456b",
         "EN-6b182ca786385b1e",
         "EN-76a9a8a6e2f1a47b",
@@ -3916,6 +4267,8 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-6c87e5496f592f3c",
+        "EN-6849cf65695e6e77",
         "EN-74be4cbf48e647b2",
         "EN-c0fced8f2483e9f5",
         "EN-738e22f0acab814c",
@@ -4105,6 +4458,211 @@
       ],
       "firstSeen": "2024-09-05",
       "lastSeen": "2027-09-30"
+    },
+    {
+      "id": "TX-product_form-chip_accelerator",
+      "name": "芯片与加速器",
+      "nodeType": "product_form",
+      "typeLabel": "产品形态",
+      "valueId": "chip_accelerator",
+      "eventIds": [
+        "EV-83728e3b6c7736ce",
+        "EV-ef2ac2c9b425491c",
+        "EV-34bc7a4ef57789b8",
+        "EV-4d2852e1694b2818",
+        "EV-7a44a47bf36780d2",
+        "EV-da1655ecfaf35feb",
+        "EV-f49eff6b3c5ed835",
+        "EV-f282ab8740ff0096",
+        "EV-b2d94511e4b4dfc8",
+        "EV-415b083fdaa8077f",
+        "EV-43b7f45e9bd7ec9b",
+        "EV-6e516b6e68def9cf",
+        "EV-7abe829941f97b65",
+        "EV-4e1d2d6105d09d24",
+        "EV-a8dc5c859946f336",
+        "EV-13ec78dfdbca678b",
+        "EV-48075ca70a5458ec",
+        "EV-040fc355bc12a750",
+        "EV-63dee9f748531f08",
+        "EV-b3c7c4bff17063d8",
+        "EV-327ba605bd9e8307",
+        "EV-80e54c9a390da293",
+        "EV-ad75efcb12a07793",
+        "EV-236cbc2d64f0c455",
+        "EV-736404028b8ad33e",
+        "EV-70a994b9339f92e7",
+        "EV-59882383f82f215d",
+        "EV-450f624a6a6446ce",
+        "EV-d2a623e8eef1f61d",
+        "EV-522c339dded54be5",
+        "EV-a86b04e679044c45",
+        "EV-c3b96b789b5bcafd",
+        "EV-e09efcd49776cb95",
+        "EV-c3f617e75d303f59",
+        "EV-8a2d8ebbd700c787",
+        "EV-cafe435ddd007821",
+        "EV-f84301feb2b7ae1e",
+        "EV-33717672cb5e8004",
+        "EV-9191a8bbd547a28e",
+        "EV-92be9fa58b1ee19f",
+        "EV-06526dd6cb2157f4",
+        "EV-b334f46b11a68045",
+        "EV-056bb8c683ef60a4",
+        "EV-93fad8e0e30e442c",
+        "EV-3d8608d3e78e031b",
+        "EV-8fcb52bb6ec980af",
+        "EV-2fa8fef6da3a5937",
+        "EV-cfaa2f6b5c7a5f8a",
+        "EV-3dc8d5c373ddd1f3",
+        "EV-db304937ceac95d2",
+        "EV-28bd99c785aa9760",
+        "EV-9f06b3f05f18b81e",
+        "EV-5772d3b77ffa73e2",
+        "EV-0a4e9b2eca953036",
+        "EV-443e093ab54d0228",
+        "EV-afb3bceddc36a696",
+        "EV-1dc482e2fe2f10bc",
+        "EV-243e73016576fa43",
+        "EV-2e1352039c487bb0",
+        "EV-828698c8779bb522",
+        "EV-7bc2e6744a92c81f",
+        "EV-3fedea3a77dc26ed",
+        "EV-9d5363657f3541e7",
+        "EV-218c2f6ecf3c369f",
+        "EV-40979daeedded907",
+        "EV-083b0337ce30931c",
+        "EV-118317b7f92e5e16",
+        "EV-ac1b82f6e6261012",
+        "EV-4b18cefe4ac0c15c",
+        "EV-303b418c63895ba6",
+        "EV-4e54b77583b0a83e",
+        "EV-770cea9de2337d0e",
+        "EV-415261e2efce3bf8",
+        "EV-3847d883688587ba",
+        "EV-89280d3159480dea",
+        "EV-9ca7db66f8f10b63",
+        "EV-c846e768dad05441",
+        "EV-be69ef6fcae83890",
+        "EV-a06011da69abcc3d",
+        "EV-e2db9c4e7c16ae7a",
+        "EV-3f23ddb47fc652a4",
+        "EV-c7426bbb0eb26ba7",
+        "EV-e2d4132c671e3d41",
+        "EV-0ec219a94317215f",
+        "EV-568d2aeab5234e48",
+        "EV-6af31d42885e0361",
+        "EV-ad1444d8653b37ae",
+        "EV-dbeae330706b53ca",
+        "EV-fa1b1efd77f36d56",
+        "EV-657837763764c869",
+        "EV-8993e021ac17df4a",
+        "EV-34929bdd016dc8d6",
+        "EV-89bdda008227fb6b",
+        "EV-bca0d9aca07bcb4a"
+      ],
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-adda212f0afa4781",
+        "EN-a7e079ed603b3436",
+        "EN-cc2ab268105df889",
+        "EN-721eb3fd31f8e1f6",
+        "EN-9cb45a27a2808c01",
+        "EN-cf9488537f777c1a",
+        "EN-4c3788aad4bebf2f",
+        "EN-d3d151f3f8e7f9ed",
+        "EN-79c60968d2c48711",
+        "EN-2e3e41eef734616d",
+        "EN-70e7e370d5a50ea1",
+        "EN-ed9980025e312ded",
+        "EN-6907a22fafe13a63",
+        "EN-816bab802b34b308",
+        "EN-7a814849bc288dc0",
+        "EN-dc758ebb8ad248f8",
+        "EN-86c49cd0980883a3",
+        "EN-a736e4d4ef0af078",
+        "EN-d1a61df8d3146e48",
+        "EN-8d4321d936320802",
+        "EN-48bebf25e5bd5aca",
+        "EN-8da5eafb322ee86e",
+        "EN-53453cfb48a75dde",
+        "EN-883be863cc6562bb",
+        "EN-bd6769fe78d0971a",
+        "EN-e1517be14d06cdb7",
+        "EN-7640da40298286a6",
+        "EN-54dfb14dcddad637",
+        "EN-3711098f35d71cb9",
+        "EN-a9776b12a97fe2d9",
+        "EN-5e757c7fc575c41e",
+        "EN-b9e93f925b8d42c8",
+        "EN-f95d5af831e91b94",
+        "EN-51a3a4589db68480",
+        "EN-222f930b87524636",
+        "EN-f4bec299df3f4f27",
+        "EN-ea3bd73e2b506e00",
+        "EN-74be4cbf48e647b2",
+        "EN-920510199770f4d6",
+        "EN-e470d891c0bda7d8",
+        "EN-0281afdb2d56c1e6",
+        "EN-36b1dbc8da066a19",
+        "EN-c857d09db23e6822",
+        "EN-d7e81f6e7d39f00f",
+        "EN-0f553f48551aef83",
+        "EN-a89151ba4b5ac0f2",
+        "EN-e95cf508b2bef361",
+        "EN-509f226edbb9f410",
+        "EN-7d48744f8d0f0657",
+        "EN-5398729239788ca5",
+        "EN-6c82c31832e9c3e9",
+        "EN-c13e2f4a44bb01ed",
+        "EN-6a0e50443436fe1d",
+        "EN-96eebba49dbbf422",
+        "EN-852e6af714d40a8f",
+        "EN-c70eca6b0f88f44d",
+        "EN-042e9398f2cc8902",
+        "EN-7d3194f79e645c42",
+        "EN-b3e3bce83d29e787",
+        "EN-b34aa8e97b2c2454",
+        "EN-1cd41545564777ce",
+        "EN-e482463e2656ed1c",
+        "EN-89e3f0711b76932c",
+        "EN-2b6e51bec93e86c1",
+        "EN-412b57e712039032",
+        "EN-16f9e91ad20e6467",
+        "EN-d5c876a36e02b120",
+        "EN-cbc62794911ff31b",
+        "EN-4a639cb888a15d75"
+      ],
+      "fdeIds": [
+        "FDE-0193a6afd26db7ae",
+        "FDE-5ea7f3d69a03d417",
+        "FDE-d1333c4e772841f2",
+        "FDE-a0230755529d6fae",
+        "FDE-08f12caedc3b2f13"
+      ],
+      "hardwareIds": [
+        "HW-68457c8c0a7240ac",
+        "HW-7c91d6528b08a2f0",
+        "HW-033a5b73cdc3f4be",
+        "HW-ceb55d9bc637c1d3",
+        "HW-1dbfe359ae73ed38",
+        "HW-b32e61f6ea5c1646",
+        "HW-b0c753b9501f996e",
+        "HW-fda4fe26e7e80468",
+        "HW-0310f3a9f595c3df",
+        "HW-f9f230d6eb357e0a",
+        "HW-0ebffabe51a60966",
+        "HW-1f5c47230df189e7",
+        "HW-ea75c7e58c36cb62",
+        "HW-94ca08e08e6e52fe",
+        "HW-59752bb17e6eab3f",
+        "HW-1450585d9cd5879f",
+        "HW-25ce41fab12d9ef2",
+        "HW-2c1e21c6ec3cbc17",
+        "HW-4c176e4c40871adc"
+      ],
+      "firstSeen": "2025-03-18",
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "TX-product_form-enterprise_software_platform",
@@ -4639,6 +5197,7 @@
         "EV-d209a6acecba4285",
         "EV-75b9b997e9c7e5d1",
         "EV-b2e374d54b10b9af",
+        "EV-29c0d969abde2020",
         "EV-099c1bce0a50965d",
         "EV-91d4c91861a715c1",
         "EV-ad6fe30e111608bd",
@@ -4743,7 +5302,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "TX-product_form-end_user_application",
@@ -4985,6 +5544,7 @@
         "EV-4c0af31f1399ea8c",
         "EV-e1a4bc40db4a9d8f",
         "EV-d5f276ad6b2ac9de",
+        "EV-29c0d969abde2020",
         "EV-51feac871951fdbb",
         "EV-91d4c91861a715c1",
         "EV-ad6fe30e111608bd",
@@ -5028,8 +5588,8 @@
         "EN-ac32f27ba7a1346f",
         "EN-5b3767eb23d5e4ed",
         "EN-3db1f560db626918",
-        "EN-96783c5f75425c34",
         "EN-ea3bd73e2b506e00",
+        "EN-96783c5f75425c34",
         "EN-e5904fa438fcd5bf",
         "EN-76a9a8a6e2f1a47b",
         "EN-bbdefa2950f49882",
@@ -5058,7 +5618,7 @@
         "HW-b1302168a9ab18e8"
       ],
       "firstSeen": "2026-03-30",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "TX-technology-computer_use",
@@ -5105,6 +5665,8 @@
         "EV-26d2874c6ce028d6",
         "EV-3d9aa640411471ea",
         "EV-fd21441fb6e143c3",
+        "EV-2fa8fef6da3a5937",
+        "EV-5f529a16a35a0d52",
         "EV-ff73f3659b75611d",
         "EV-73a6143b5ce273e9",
         "EV-db304937ceac95d2",
@@ -5152,6 +5714,8 @@
         "EN-b81c8201acfc7639",
         "EN-87c730bc4f32459e",
         "EN-7df09a7717ef2feb",
+        "EN-ea3bd73e2b506e00",
+        "EN-6c87e5496f592f3c",
         "EN-c04bd5ebd10ab696",
         "EN-2dc010636b9dce91",
         "EN-920510199770f4d6",
@@ -5163,7 +5727,6 @@
         "EN-4b078b39d2fcacc7",
         "EN-522d3edeb64a7ca4",
         "EN-6f7ac1823da81d2e",
-        "EN-ea3bd73e2b506e00",
         "EN-de6b71bf77ff4299",
         "EN-8d4321d936320802",
         "EN-7d3194f79e645c42",
@@ -5183,7 +5746,87 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-11"
+    },
+    {
+      "id": "TX-technology-long_context",
+      "name": "长上下文",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "long_context",
+      "eventIds": [
+        "EV-80e54c9a390da293",
+        "EV-fd21441fb6e143c3",
+        "EV-29c0d969abde2020",
+        "EV-3dc8d5c373ddd1f3",
+        "EV-7a4d1e871dcd3b1f",
+        "EV-653cbce2ccc79f8b",
+        "EV-0e616f9e775a77dc",
+        "EV-fe519605ebb69aaf",
+        "EV-2fea1664807824ce",
+        "EV-86ab9c2f1416e9d8",
+        "EV-a5efa57f3f744425",
+        "EV-70e3f88cb06a856c",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-70efbfcaadcdb259",
+        "EV-0c06df62702d26ab",
+        "EV-534dc9add1c0cc35",
+        "EV-57f083a39393d841",
+        "EV-86537be17d50ff20"
+      ],
+      "entityIds": [
+        "EN-7df09a7717ef2feb",
+        "EN-ea3bd73e2b506e00",
+        "EN-74be4cbf48e647b2",
+        "EN-c70eca6b0f88f44d",
+        "EN-bc1fc5140040180e",
+        "EN-0d1e478de2157d48",
+        "EN-9c8ae69b84f21a2e",
+        "EN-3309b3b14807f39a",
+        "EN-4b078b39d2fcacc7",
+        "EN-7dd7122ad9bf240f",
+        "EN-1d79127e9d90e89b",
+        "EN-7d3194f79e645c42",
+        "EN-3153ebda601cdb79",
+        "EN-6ac6ad44bb9995ca"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-12",
+      "lastSeen": "2026-08-11"
+    },
+    {
+      "id": "TX-deployment_model-cloud",
+      "name": "云端",
+      "nodeType": "deployment_model",
+      "typeLabel": "部署形态",
+      "valueId": "cloud",
+      "eventIds": [
+        "EV-4118202ed0f91895",
+        "EV-4fba2b2f1ac10a79",
+        "EV-b4b5d141dac164c2",
+        "EV-29c0d969abde2020",
+        "EV-3dc8d5c373ddd1f3",
+        "EV-fec9e1b9ae2955ee",
+        "EV-c0d8138d8cab5135",
+        "EV-7fb25ff3d853c314",
+        "EV-20cdbe59ba2a1359",
+        "EV-309ea4fc27a66485"
+      ],
+      "entityIds": [
+        "EN-0b79cf2de0ee6b8e",
+        "EN-c7d7af20b6ab853d",
+        "EN-ea3bd73e2b506e00",
+        "EN-74be4cbf48e647b2",
+        "EN-2613d360c34cdc8c",
+        "EN-842fcb5e60989a03",
+        "EN-6f4e2e93ad6de7f1",
+        "EN-8d4321d936320802"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-03",
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "TX-technology-open_weights",
@@ -5195,6 +5838,8 @@
         "EV-1abf0d076d30ec6d",
         "EV-d2a623e8eef1f61d",
         "EV-f55d16df5b5fecb2",
+        "EV-29c0d969abde2020",
+        "EV-7228e4310ee1341a",
         "EV-890ffd351486b884",
         "EV-3dc8d5c373ddd1f3",
         "EV-d230942b0787581a",
@@ -5214,10 +5859,12 @@
         "EV-a06011da69abcc3d",
         "EV-e2da1aafabb3e09c",
         "EV-2258329f33d413cf",
+        "EV-735fac8d2be356bb",
         "EV-86537be17d50ff20"
       ],
       "entityIds": [
         "EN-bd6769fe78d0971a",
+        "EN-ea3bd73e2b506e00",
         "EN-a899a3dde1d51caf",
         "EN-74be4cbf48e647b2",
         "EN-47dd52018c2b6985",
@@ -5227,7 +5874,6 @@
         "EN-c70eca6b0f88f44d",
         "EN-6b61eab266a42eb0",
         "EN-cc70f504af53013a",
-        "EN-ea3bd73e2b506e00",
         "EN-bc1fc5140040180e",
         "EN-0d1e478de2157d48",
         "EN-047364b9be67f665",
@@ -5243,7 +5889,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "TX-technology-image_generation",
@@ -5253,6 +5899,7 @@
       "valueId": "image_generation",
       "eventIds": [
         "EV-fd329b4350f404ef",
+        "EV-5111b297a0234e46",
         "EV-cf4da5583e9311d7",
         "EV-82ae0ea3bfe336a1",
         "EV-1a241bcb4fad886c",
@@ -5263,6 +5910,7 @@
       ],
       "entityIds": [
         "EN-b97e07c31e87f7d0",
+        "EN-4721e06a8b6d85ff",
         "EN-bbdefa2950f49882",
         "EN-9fbf261b62c1d7c0",
         "EN-bae152c4560df38c",
@@ -5273,7 +5921,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-11",
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "TX-technology-tool_use",
@@ -5352,6 +6000,25 @@
       ],
       "firstSeen": "2026-06-01",
       "lastSeen": "2026-08-08"
+    },
+    {
+      "id": "TX-technology-quantization",
+      "name": "模型量化",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "quantization",
+      "eventIds": [
+        "EV-2fa8fef6da3a5937",
+        "EV-70cbf25f7ec2cc3a"
+      ],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00",
+        "EN-7dd7122ad9bf240f"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "TX-technology-distillation",
@@ -5666,6 +6333,193 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-28dbd0566a837349",
+      "snapshotKey": "28dbd0566a837349",
+      "snapshotId": "HWS-44b698fc9a587bca",
+      "eventId": "EV-2fa8fef6da3a5937",
+      "eventIds": [
+        "EV-2fa8fef6da3a5937",
+        "EV-cfaa2f6b5c7a5f8a"
+      ],
+      "dataDate": "2026-08-11",
+      "date": "2026-08-11",
+      "title": "Muse Glimmer",
+      "subject": "Meta",
+      "productNames": [
+        "Muse Glimmer"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment",
+        "specification"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "55",
+          "unit": "GB",
+          "fact_ref": "HWF-d674dfedb7b1118c"
+        },
+        "specification": {
+          "metric_value": "24",
+          "unit": "GB",
+          "fact_ref": "HWF-66424f0ac5969c70"
+        }
+      },
+      "factCount": 4,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-11",
+          "hardware_fact_id": "HWF-d674dfedb7b1118c",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-10T15:11:51.000Z",
+          "subject_entity_id": "EN-ea3bd73e2b506e00",
+          "subject_name": "Meta",
+          "product_entity_ids": [
+            "EN-f4bc2c89599f5449"
+          ],
+          "product_names": [
+            "Muse Glimmer"
+          ],
+          "component_type": "gpu",
+          "metric_value": "55",
+          "unit": "GB",
+          "source_quote": "Meta has released Muse Glimmer , a 30-billion-parameter multimodal model distilled from Muse Spark. It is tuned for always-on local agent workflows, and ships under Apache 2.0. A 30B model normally needs over 55 GB of memory at full precision. Meta compresses it to roughly 4-bit, then adds block-level speculative decoding so it answers fast enough to sit inside a real agent loop. The result runs on one consumer GPU or a Mac, with no network call.",
+          "event_refs": [
+            "EV-2fa8fef6da3a5937"
+          ],
+          "claim_ref": "CL-6c0ac6b835aa024d",
+          "source_refs": [
+            "SA-65b9b56db97251b2"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-11/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-11",
+          "hardware_fact_id": "HWF-54c2a55f2d9cf3e0",
+          "fact_type": "specification",
+          "observed_at": "2026-08-10T15:11:51.000Z",
+          "subject_entity_id": "EN-ea3bd73e2b506e00",
+          "subject_name": "Meta",
+          "product_entity_ids": [
+            "EN-f4bc2c89599f5449"
+          ],
+          "product_names": [
+            "Muse Glimmer"
+          ],
+          "component_type": "gpu",
+          "metric_value": "24",
+          "unit": "GB",
+          "source_quote": "Which companies : Solo developers and startups can run it on one 24 GB GPU or an M4/M5 Max Mac. Mid-market teams get on-prem inference without a per-token bill. Regulated enterprises get an air-gappable agent. Meta advises adding system-level guardrails rather than shipping the model as a bare endpoint.",
+          "event_refs": [
+            "EV-2fa8fef6da3a5937"
+          ],
+          "claim_ref": "CL-c9d4ed96558adeee",
+          "source_refs": [
+            "SA-65b9b56db97251b2"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-11/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-11",
+          "hardware_fact_id": "HWF-22b0fa86b3ad9556",
+          "fact_type": "specification",
+          "observed_at": "2026-08-10T10:52:38.000Z",
+          "subject_entity_id": "EN-ea3bd73e2b506e00",
+          "subject_name": "Meta",
+          "product_entity_ids": [
+            "EN-f4bc2c89599f5449"
+          ],
+          "product_names": [
+            "Muse Glimmer"
+          ],
+          "component_type": "gpu",
+          "metric_value": "24",
+          "unit": "GB",
+          "source_quote": "Meta 开源 30B AI 模型 Muse Glimmer，4bit 量化可在单卡 24GB 显存 GPU 运行 - IT之家",
+          "event_refs": [
+            "EV-cfaa2f6b5c7a5f8a"
+          ],
+          "claim_ref": "CL-c97517c786ff465b",
+          "source_refs": [
+            "SA-62bdef20a7a652e3"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-11/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-11",
+          "hardware_fact_id": "HWF-66424f0ac5969c70",
+          "fact_type": "specification",
+          "observed_at": "2026-08-10T10:52:38.000Z",
+          "subject_entity_id": "EN-ea3bd73e2b506e00",
+          "subject_name": "Meta",
+          "product_entity_ids": [
+            "EN-f4bc2c89599f5449"
+          ],
+          "product_names": [
+            "Muse Glimmer"
+          ],
+          "component_type": "gpu",
+          "metric_value": "24",
+          "unit": "GB",
+          "source_quote": "Meta 开源 30B AI 模型 Muse Glimmer，4bit 量化可在单卡 24GB 显存 GPU 运行",
+          "event_refs": [
+            "EV-cfaa2f6b5c7a5f8a"
+          ],
+          "claim_ref": "CL-bbed4ef319246e55",
+          "source_refs": [
+            "SA-62bdef20a7a652e3"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-11/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "quantization",
+          "name": "模型量化",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/08/10/meta-ai-releases-muse-glimmer",
+      "entityIds": [
+        "EN-ea3bd73e2b506e00",
+        "EN-f4bc2c89599f5449"
+      ]
+    },
     {
       "id": "HWC-61a0c6448cae5866",
       "snapshotKey": "61a0c6448cae5866",

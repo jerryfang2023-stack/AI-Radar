@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-10T03:05:19.937Z",
-    "latestDataDate": "2026-08-10",
-    "currentDate": "2026-08-10",
-    "eventCount": 1969,
+    "generatedAt": "2026-08-11T02:08:35.439Z",
+    "latestDataDate": "2026-08-11",
+    "currentDate": "2026-08-11",
+    "eventCount": 1993,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -34,6 +34,7 @@
       "EV-883d3b5f6d30eb48",
       "EV-e15ae1112294d59e",
       "EV-43301de739fe560e",
+      "EV-5111b297a0234e46",
       "EV-ed0bb3a0784d6415",
       "EV-7a4d1e871dcd3b1f",
       "EV-5b193a038ab4ea22",
@@ -67,7 +68,7 @@
       "EN-24caf10fe9bfb1c5"
     ],
     "firstSeen": "2026-05-25",
-    "lastSeen": "2026-08-09",
+    "lastSeen": "2026-08-11",
     "relationIds": [
       "REL2-30051dc5d7668662",
       "REL2-e0b4c492d7f56ad2",
@@ -90,6 +91,7 @@
       ],
       "partnerships": [],
       "productsServices": [
+        "EV-5111b297a0234e46",
         "EV-ed0bb3a0784d6415",
         "EV-7a4d1e871dcd3b1f",
         "EV-5b193a038ab4ea22",
@@ -116,6 +118,37 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-5111b297a0234e46",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-10",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "MAI-Image-2.6 在 Arena 排名第 2，领先 Google、Meta 和 xAI",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "image_generation",
+            "name": "图像生成",
+            "entityIds": [
+              "EN-4721e06a8b6d85ff"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-ea3bd73e2b506e00",
+          "EN-6fcba5d96a4fadfd",
+          "EN-06a0b2f5a7254f1c",
+          "EN-4721e06a8b6d85ff"
+        ]
+      },
       {
         "id": "EV-ed0bb3a0784d6415",
         "dataDate": "2026-08-09",
@@ -1416,6 +1449,9 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-1d3b117dad798008",
+        "EV-497344d95d593cf6",
+        "EV-a4c177cc432df82e",
         "EV-3dc8d5c373ddd1f3",
         "EV-04fe726fa16722f3",
         "EV-15c5107c993baae8",
@@ -1594,6 +1630,8 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
+        "EN-32e83e92d45d71f6",
+        "EN-6849cf65695e6e77",
         "EN-74be4cbf48e647b2",
         "EN-04468f769adbb15b",
         "EN-7d3194f79e645c42",
@@ -1685,7 +1723,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "TX-use_case-software_development",
@@ -1753,6 +1791,7 @@
         "EV-d209a6acecba4285",
         "EV-75b9b997e9c7e5d1",
         "EV-b2e374d54b10b9af",
+        "EV-29c0d969abde2020",
         "EV-099c1bce0a50965d",
         "EV-91d4c91861a715c1",
         "EV-ad6fe30e111608bd",
@@ -1857,7 +1896,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "TX-product_form-end_user_application",
@@ -2057,6 +2096,7 @@
         "EV-4c0af31f1399ea8c",
         "EV-e1a4bc40db4a9d8f",
         "EV-d5f276ad6b2ac9de",
+        "EV-29c0d969abde2020",
         "EV-51feac871951fdbb",
         "EV-91d4c91861a715c1",
         "EV-ad6fe30e111608bd",
@@ -2100,8 +2140,8 @@
         "EN-ac32f27ba7a1346f",
         "EN-5b3767eb23d5e4ed",
         "EN-3db1f560db626918",
-        "EN-96783c5f75425c34",
         "EN-ea3bd73e2b506e00",
+        "EN-96783c5f75425c34",
         "EN-e5904fa438fcd5bf",
         "EN-76a9a8a6e2f1a47b",
         "EN-bbdefa2950f49882",
@@ -2130,7 +2170,7 @@
         "HW-b1302168a9ab18e8"
       ],
       "firstSeen": "2026-03-30",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-11"
     }
   ],
   "fde": [],

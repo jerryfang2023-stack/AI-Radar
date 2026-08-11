@@ -2,9 +2,9 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-ENTITY-REVIEW-V1.0",
     "funding_insight_version": "FUNDING-INSIGHT-V1.3",
-    "candidate_count": 811,
-    "product_candidates": 361,
-    "person_candidates": 450,
+    "candidate_count": 817,
+    "product_candidates": 365,
+    "person_candidates": 452,
     "rule": "Application evidence never mutates canonical V4 entities automatically."
   },
   "candidates": [
@@ -299,6 +299,54 @@
           "quote": "CBO Aditya is a three-time founder.",
           "source_content_hash": "66a29d7fc8fabd22",
           "quote_hash": "0a425e1af205ebe26a3a5b80beae9e887c1f3003a677b3d9c49af76140a80728"
+        }
+      ]
+    },
+    {
+      "candidate_id": "FIER-ecd2e5a49b76f008",
+      "candidate_kind": "person",
+      "research_name": "Advaith Sridhar",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-fe301d1f025971a1"
+      ],
+      "funding_insight_ids": [
+        "FI-6cf80a82ff4cb17e"
+      ],
+      "source_event_ids": [
+        "EV-c6cccaca326dfd45"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c3267e56ad969be2",
+          "quote": "Founders Advaith Sridhar and Akash Ramdas teamed up to launch the company",
+          "source_content_hash": "c3f8c7225d49e92f",
+          "quote_hash": "0aee7c57847aaecdf95f8d77ef417d8cb923b0c2340f196da754bd770cb1c2be"
+        }
+      ]
+    },
+    {
+      "candidate_id": "FIER-9a337f3ee7fa442d",
+      "candidate_kind": "person",
+      "research_name": "Akash Ramdas",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-fe301d1f025971a1"
+      ],
+      "funding_insight_ids": [
+        "FI-6cf80a82ff4cb17e"
+      ],
+      "source_event_ids": [
+        "EV-c6cccaca326dfd45"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c3267e56ad969be2",
+          "quote": "Founders Advaith Sridhar and Akash Ramdas teamed up to launch the company",
+          "source_content_hash": "c3f8c7225d49e92f",
+          "quote_hash": "0aee7c57847aaecdf95f8d77ef417d8cb923b0c2340f196da754bd770cb1c2be"
         }
       ]
     },
@@ -891,13 +939,16 @@
       "status": "pending_canonical_review",
       "reason": "canonical_exact_match_missing",
       "company_entity_ids": [
+        "EN-373da2ec629326c0",
         "EN-a7e079ed603b3436"
       ],
       "funding_insight_ids": [
+        "FI-507ad5fde661d5af",
         "FI-eae7674948ab88a1"
       ],
       "source_event_ids": [
-        "EV-34bc7a4ef57789b8"
+        "EV-34bc7a4ef57789b8",
+        "EV-b116eafe60d71fbe"
       ],
       "evidence_refs": [
         {
@@ -905,6 +956,12 @@
           "quote": "Ankur Singla, founder and CEO of Lumilens",
           "source_content_hash": "0056778d6a120938",
           "quote_hash": "a997daa234abe2ab25edb916a6f3a7c96f935521fd0bc47ea0524415d34c7b54"
+        },
+        {
+          "source_id": "FISRC-a967da2448674734",
+          "quote": "Lumilens is led by co-founder and Chief Executive Officer Ankur Singla.",
+          "source_content_hash": "f3b1d21bc0dc0006",
+          "quote_hash": "e5363c16b7a9b71e11d27a32ab6afcf59fb6cf09fab20a9b2078614c15bc6672"
         }
       ]
     },
@@ -12299,6 +12356,36 @@
       ]
     },
     {
+      "candidate_id": "FIER-97785b53bf7943bf",
+      "candidate_kind": "product",
+      "research_name": "AI 材料发现智能体平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-fe301d1f025971a1"
+      ],
+      "funding_insight_ids": [
+        "FI-6cf80a82ff4cb17e"
+      ],
+      "source_event_ids": [
+        "EV-c6cccaca326dfd45"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c3267e56ad969be2",
+          "quote": "The two have created a software pipeline that uses Anthropic models in a custom harness to generate material leads, and then turns to foundational physics models they’ve trained to run simulations that verify if the candidate materials are actually of interest.",
+          "source_content_hash": "c3f8c7225d49e92f",
+          "quote_hash": "c218a7a793b991603ab6d9edf2c855460ba5e0fe5c6f0fe389d908e92ce79cfa"
+        },
+        {
+          "source_id": "FISRC-6ad648d48b556138",
+          "quote": "Discovered Materials builds AI agents that compress months of interdisciplinary research into days, spanning simulation, synthesis, and experimental validation for semiconductor applications.",
+          "source_content_hash": "bd47d3e50a1db886",
+          "quote_hash": "8d852003bbd676c9985922a9026cb2e60bfb125748c23be173b70ee9b48da7b6"
+        }
+      ]
+    },
+    {
       "candidate_id": "FIER-1dcbc6d54f4fdf6b",
       "candidate_kind": "product",
       "research_name": "AI 算力租赁与融资平台",
@@ -21052,6 +21139,54 @@
       ]
     },
     {
+      "candidate_id": "FIER-b8608caaba9fa71b",
+      "candidate_kind": "product",
+      "research_name": "共封装光学芯片 (CPO)",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-373da2ec629326c0"
+      ],
+      "funding_insight_ids": [
+        "FI-507ad5fde661d5af"
+      ],
+      "source_event_ids": [
+        "EV-b116eafe60d71fbe"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a967da2448674734",
+          "quote": "The first is a co-packaged optics, or CPO, chip series that can be integrated directly into graphics processing units. The company says that it’s capable of linking together thousands of GPUs.",
+          "source_content_hash": "f3b1d21bc0dc0006",
+          "quote_hash": "9439585e45daddd5de33f131a4d23ef29879f5e0259b107c0f9ce2e19277aa82"
+        }
+      ]
+    },
+    {
+      "candidate_id": "FIER-c5c3d4b63550d8a9",
+      "candidate_kind": "product",
+      "research_name": "可插拔光收发器 (Pluggable Transceivers)",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-373da2ec629326c0"
+      ],
+      "funding_insight_ids": [
+        "FI-507ad5fde661d5af"
+      ],
+      "source_event_ids": [
+        "EV-b116eafe60d71fbe"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a967da2448674734",
+          "quote": "Lumilens also makes chips for scale-out networks, which facilitate data sharing across GPU racks. It ships the silicon as part of devices called pluggable transceivers that can be attached to switches.",
+          "source_content_hash": "f3b1d21bc0dc0006",
+          "quote_hash": "379371980d567516284e2ae92df0029c9376b2f03d87308a82ddb9000fcc825b"
+        }
+      ]
+    },
+    {
       "candidate_id": "FIER-e0800d5b0efe40a9",
       "candidate_kind": "product",
       "research_name": "可编程相干DSP芯片",
@@ -21800,6 +21935,30 @@
           "quote": "Gradium is building audio models designed for ultra low latency voice generation. In practice, that means AI voices that can respond almost instantly instead of pausing between turns",
           "source_content_hash": "13af7fc256332301",
           "quote_hash": "fdf33cdff38a5bd683f2e8c1e731a9d497d9f1695071d0dd03b1ea209fa4f3ec"
+        }
+      ]
+    },
+    {
+      "candidate_id": "FIER-aa9eedeedf33c99b",
+      "candidate_kind": "product",
+      "research_name": "近封装光学芯片 (NPO)",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-373da2ec629326c0"
+      ],
+      "funding_insight_ids": [
+        "FI-507ad5fde661d5af"
+      ],
+      "source_event_ids": [
+        "EV-b116eafe60d71fbe"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a967da2448674734",
+          "quote": "Lumilens also makes near-packaged optics, or NPO, chips. Such chips are not integrated directly into GPUs but rather sit on the motherboard that hosts them.",
+          "source_content_hash": "f3b1d21bc0dc0006",
+          "quote_hash": "f70211404cfdb8989ba3a09fdab6df7a2e15b406799f0600f99275a25f303b24"
         }
       ]
     },

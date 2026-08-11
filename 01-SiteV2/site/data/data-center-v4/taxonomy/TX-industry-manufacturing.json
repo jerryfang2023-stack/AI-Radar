@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-10T03:05:19.937Z",
-    "latestDataDate": "2026-08-10",
-    "currentDate": "2026-08-10",
-    "eventCount": 1969,
+    "generatedAt": "2026-08-11T02:08:35.439Z",
+    "latestDataDate": "2026-08-11",
+    "currentDate": "2026-08-11",
+    "eventCount": 1993,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -73,6 +73,7 @@
       "EV-7585b033d4005977",
       "EV-cec68369662236fd",
       "EV-4eb0556b8c72d410",
+      "EV-d84f24c8c72e7e47",
       "EV-b3ef1eed47191c55",
       "EV-0d1e8308d3c007aa",
       "EV-83d022f89ba29209",
@@ -212,7 +213,7 @@
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2025-08-27",
-    "lastSeen": "2026-08-10"
+    "lastSeen": "2026-08-11"
   },
   "events": [
     {
@@ -26129,10 +26130,92 @@
       "publisher": "techcrunch.com"
     },
     {
+      "id": "EV-d84f24c8c72e7e47",
+      "dataDate": "2026-08-11",
+      "date": "2026-08-10",
+      "updatedDate": "2026-08-11",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "CIS 最大 AI 工厂亚美尼亚投运，建设方 Firebird 获 NVIDIA 投资",
+      "originalTitle": "",
+      "subject": "Firebird",
+      "action": "deployment",
+      "object": "全独联体 (CIS) 区域最大 AI 工厂",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-57fac8572eeab5fc"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-57fac8572eeab5fc"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-57fac8572eeab5fc"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-57fac8572eeab5fc",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "Firebird",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/987/901.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-b3ef1eed47191c55",
-      "dataDate": "2026-08-10",
+      "dataDate": "2026-08-11",
       "date": "2026-08-08",
-      "updatedDate": "2026-08-10",
+      "updatedDate": "2026-08-11",
       "eventType": "hardware_deployment",
       "eventTypeLabel": "硬件部署",
       "eventGroup": "AI 硬件",
@@ -26212,9 +26295,9 @@
     },
     {
       "id": "EV-0d1e8308d3c007aa",
-      "dataDate": "2026-08-10",
+      "dataDate": "2026-08-11",
       "date": "2026-08-05",
-      "updatedDate": "2026-08-10",
+      "updatedDate": "2026-08-11",
       "eventType": "hardware_deployment",
       "eventTypeLabel": "硬件部署",
       "eventGroup": "AI 硬件",
@@ -26289,23 +26372,24 @@
     },
     {
       "id": "EV-83d022f89ba29209",
-      "dataDate": "2026-08-09",
+      "dataDate": "2026-08-11",
       "date": "2026-08-04",
-      "updatedDate": "2026-08-09",
+      "updatedDate": "2026-08-11",
       "eventType": "procurement_contract",
       "eventTypeLabel": "采购合同",
       "eventGroup": "商业合作",
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "Volta 选择戴尔科技助力打造下一代 AI 工厂",
+      "title": "Volta 选择戴尔科技助力构建下一代 AI 工厂",
       "originalTitle": "Volta Selects Dell Technologies to Help Build Next-Generation AI Factories | Dell USA",
       "subject": "Volta",
       "action": "procurement_contract",
-      "object": "Dell Technologies AI infrastructure, including Dell PowerRack systems with PowerEdge XE9812 servers including NVIDIA accelerators",
+      "object": "Dell Technologies AI infrastructure including Dell PowerRack systems with PowerEdge XE9812 servers including NVIDIA accelerators",
       "metrics": [
         "133 MW",
-        "9812 servers"
+        "9812 servers",
+        "1 GW"
       ],
       "locations": [
         "Europe"
@@ -32610,6 +32694,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-d84f24c8c72e7e47",
         "EV-b3ef1eed47191c55",
         "EV-83d022f89ba29209",
         "EV-5bbc509a032b8309",
@@ -32798,7 +32883,7 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "EN-1bd14cd1a58c5708",
@@ -33812,6 +33897,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-d84f24c8c72e7e47",
         "EV-b3ef1eed47191c55"
       ],
       "viewpointIds": [],
@@ -33820,7 +33906,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-08",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "EN-d25e715a1ce00764",
@@ -33841,7 +33927,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "EN-99f9ebbef37fcec5",
@@ -34475,7 +34561,7 @@
         "EN-7d1507284a5757ca"
       ],
       "firstSeen": "2023-11-28",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "EN-bbdefa2950f49882",
@@ -34526,6 +34612,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-5111b297a0234e46",
         "EV-e234a2e2418ebdf1",
         "EV-271b304f0a16b6db",
         "EV-54a4809c304587e6",
@@ -34703,7 +34790,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "EN-1706429cbf67f1c9",
@@ -34954,19 +35041,19 @@
     {
       "id": "HW-4673613f81881c78",
       "eventId": "EV-0d1e8308d3c007aa",
-      "dataDate": "2026-08-10",
+      "dataDate": "2026-08-11",
       "date": "2026-08-05",
       "title": "KAYTUS在72天内交付400机架高密度风冷计算集群，部署时间缩短60%",
       "hardwareType": "compute_cluster",
       "eventType": "hardware_deployment",
       "eventTypeLabel": "硬件部署",
       "computeLayer": "data_center",
-      "supplier": "未披露",
+      "supplier": "KAYTUS",
       "customer": "未披露",
       "processNode": "未披露",
-      "capacity": "未披露",
-      "capacityUnit": "",
-      "site": "未披露",
+      "capacity": 400,
+      "capacityUnit": "racks",
+      "site": "AI data center in Japan",
       "region": "Japan",
       "contractValue": "未披露",
       "shipmentDate": "未披露",
@@ -35159,13 +35246,13 @@
     {
       "id": "HWC-d918b781f4810a43",
       "snapshotKey": "d918b781f4810a43",
-      "snapshotId": "HWS-e362900fbe7dc921",
+      "snapshotId": "HWS-e70243e56ecc4aeb",
       "eventId": "EV-0d1e8308d3c007aa",
       "eventIds": [
         "EV-0d1e8308d3c007aa"
       ],
-      "dataDate": "2026-08-10",
-      "date": "2026-08-10",
+      "dataDate": "2026-08-11",
+      "date": "2026-08-11",
       "title": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
       "subject": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
       "productNames": [],
@@ -35177,12 +35264,21 @@
         "shipment_deployment": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-5042579a192817db"
+          "fact_ref": "HWF-27113143a2257768"
         }
       },
       "factCount": 2,
-      "snapshotCount": 2,
+      "snapshotCount": 3,
       "changes": [
+        {
+          "date": "2026-08-11",
+          "previousDate": "2026-08-10",
+          "snapshotId": "HWS-e70243e56ecc4aeb",
+          "previousSnapshotId": "HWS-e362900fbe7dc921",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        },
         {
           "date": "2026-08-10",
           "previousDate": "2026-08-09",
@@ -35196,8 +35292,8 @@
       "capacityFacts": [],
       "supplyFacts": [
         {
-          "data_date": "2026-08-10",
-          "hardware_fact_id": "HWF-a76bdbbbb9b1ff1c",
+          "data_date": "2026-08-11",
+          "hardware_fact_id": "HWF-bb74be86e82ce315",
           "fact_type": "shipment_deployment",
           "observed_at": "2026-08-05T00:00:00.000Z",
           "subject_entity_id": "",
@@ -35211,15 +35307,15 @@
           "event_refs": [
             "EV-0d1e8308d3c007aa"
           ],
-          "claim_ref": "CL-4c9800892833158c",
+          "claim_ref": "CL-f24534319e3c7a57",
           "source_refs": [
             "SA-ae55896eacdf2933"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-10/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-11/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-10",
-          "hardware_fact_id": "HWF-5042579a192817db",
+          "data_date": "2026-08-11",
+          "hardware_fact_id": "HWF-27113143a2257768",
           "fact_type": "shipment_deployment",
           "observed_at": "2026-08-05T00:00:00.000Z",
           "subject_entity_id": "",
@@ -35233,11 +35329,11 @@
           "event_refs": [
             "EV-0d1e8308d3c007aa"
           ],
-          "claim_ref": "CL-aa9f5e6fa63419c1",
+          "claim_ref": "CL-aff32d3f98402179",
           "source_refs": [
             "SA-ae55896eacdf2933"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-10/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-11/hardware-facts.json"
         }
       ],
       "specificationFacts": [],
@@ -35249,13 +35345,13 @@
     {
       "id": "HWC-1e62a022d692183f",
       "snapshotKey": "1e62a022d692183f",
-      "snapshotId": "HWS-aec3c1288627fac7",
+      "snapshotId": "HWS-265c90f0fa8044ae",
       "eventId": "EV-0d1e8308d3c007aa",
       "eventIds": [
         "EV-0d1e8308d3c007aa"
       ],
-      "dataDate": "2026-08-10",
-      "date": "2026-08-10",
+      "dataDate": "2026-08-11",
+      "date": "2026-08-11",
       "title": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
       "subject": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
       "productNames": [],
@@ -35267,12 +35363,21 @@
         "shipment_deployment": {
           "metric_value": "60",
           "unit": "%",
-          "fact_ref": "HWF-8079756b4153d593"
+          "fact_ref": "HWF-26afbfa8b9faf306"
         }
       },
       "factCount": 1,
-      "snapshotCount": 2,
+      "snapshotCount": 3,
       "changes": [
+        {
+          "date": "2026-08-11",
+          "previousDate": "2026-08-10",
+          "snapshotId": "HWS-265c90f0fa8044ae",
+          "previousSnapshotId": "HWS-aec3c1288627fac7",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        },
         {
           "date": "2026-08-10",
           "previousDate": "2026-08-09",
@@ -35286,8 +35391,8 @@
       "capacityFacts": [],
       "supplyFacts": [
         {
-          "data_date": "2026-08-10",
-          "hardware_fact_id": "HWF-8079756b4153d593",
+          "data_date": "2026-08-11",
+          "hardware_fact_id": "HWF-26afbfa8b9faf306",
           "fact_type": "shipment_deployment",
           "observed_at": "2026-08-05T00:00:00.000Z",
           "subject_entity_id": "",
@@ -35301,11 +35406,11 @@
           "event_refs": [
             "EV-0d1e8308d3c007aa"
           ],
-          "claim_ref": "CL-8f103da16d83c26c",
+          "claim_ref": "CL-a7b6dbc0f4eb7040",
           "source_refs": [
             "SA-ae55896eacdf2933"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-10/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-11/hardware-facts.json"
         }
       ],
       "specificationFacts": [],
@@ -35317,13 +35422,13 @@
     {
       "id": "HWC-5c1869bc3f79759f",
       "snapshotKey": "5c1869bc3f79759f",
-      "snapshotId": "HWS-b53ba96f9f2c11d3",
+      "snapshotId": "HWS-1e80ce0a4985b10a",
       "eventId": "EV-83d022f89ba29209",
       "eventIds": [
         "EV-83d022f89ba29209"
       ],
-      "dataDate": "2026-08-09",
-      "date": "2026-08-09",
+      "dataDate": "2026-08-11",
+      "date": "2026-08-11",
       "title": "Volta",
       "subject": "Volta",
       "productNames": [],
@@ -35335,17 +35440,27 @@
         "shipment_deployment": {
           "metric_value": "133",
           "unit": "MW",
-          "fact_ref": "HWF-6fd93e441c08d734"
+          "fact_ref": "HWF-27ebe2445b996919"
         }
       },
       "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-11",
+          "previousDate": "2026-08-09",
+          "snapshotId": "HWS-1e80ce0a4985b10a",
+          "previousSnapshotId": "HWS-b53ba96f9f2c11d3",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [
         {
-          "data_date": "2026-08-09",
-          "hardware_fact_id": "HWF-6fd93e441c08d734",
+          "data_date": "2026-08-11",
+          "hardware_fact_id": "HWF-27ebe2445b996919",
           "fact_type": "shipment_deployment",
           "observed_at": "2026-08-04T00:00:00.000Z",
           "subject_entity_id": "EN-d25e715a1ce00764",
@@ -35359,11 +35474,11 @@
           "event_refs": [
             "EV-83d022f89ba29209"
           ],
-          "claim_ref": "CL-c6b8a9114bcfbb9c",
+          "claim_ref": "CL-0a2b39d40b5f18fc",
           "source_refs": [
             "SA-036fa74ea5c545f3"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-09/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-11/hardware-facts.json"
         }
       ],
       "specificationFacts": [],

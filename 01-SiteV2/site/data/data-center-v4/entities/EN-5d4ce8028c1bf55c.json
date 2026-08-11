@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-11T02:08:35.439Z",
+    "latestDataDate": "2026-08-11",
+    "currentDate": "2026-08-11",
+    "eventCount": 1993,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-5d4ce8028c1bf55c",
+    "name": "Zaelab",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-c4cf8b6eedf31ad2"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-10",
+    "lastSeen": "2026-08-11",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-c4cf8b6eedf31ad2"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-c4cf8b6eedf31ad2",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-10",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic 与 Zaelab 达成企业交付合作伙伴关系",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-5d4ce8028c1bf55c"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-911ce2af5ccbd605",
+      "eventId": "EV-c4cf8b6eedf31ad2",
+      "dataDate": "2026-08-11",
+      "date": "2026-08-10",
+      "title": "Anthropic 与 Zaelab 达成企业交付合作伙伴关系",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "Anthropic",
+      "industry": "未披露",
+      "useCase": "Anthropic",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Zaelab today announced a strategic partnership with Anthropic to help enterprises turn AI pilots into production-ready solutions deployed across the business."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://prnewswire.com/news-releases/anthropic-finds-enterprise-delivery-partner-in-zaelab-302846546.html",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-5d4ce8028c1bf55c"
+      ]
+    }
+  ],
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-61bfc05b15701d97",
+      "implementationKey": "61bfc05b15701d97",
+      "eventId": "EV-c4cf8b6eedf31ad2",
+      "eventIds": [
+        "EV-c4cf8b6eedf31ad2"
+      ],
+      "dataDate": "2026-08-11",
+      "date": "2026-08-10",
+      "title": "Anthropic × Anthropic：Anthropic",
+      "stage": "production",
+      "stageLabel": "production",
+      "customer": "Anthropic",
+      "vendor": "Anthropic",
+      "industry": "未披露",
+      "useCase": "Anthropic",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-8cda9df163efeb65",
+          "type": "implementation_update",
+          "stage": "production",
+          "date": "2026-08-10",
+          "dataDate": "2026-08-11",
+          "eventId": "EV-c4cf8b6eedf31ad2",
+          "eventTitle": "Anthropic 与 Zaelab 达成企业交付合作伙伴关系",
+          "claimCount": 1,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://prnewswire.com/news-releases/anthropic-finds-enterprise-delivery-partner-in-zaelab-302846546.html",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-5d4ce8028c1bf55c"
+      ]
+    }
+  ]
+}

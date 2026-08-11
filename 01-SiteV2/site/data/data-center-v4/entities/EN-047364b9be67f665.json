@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-10T03:05:19.937Z",
-    "latestDataDate": "2026-08-10",
-    "currentDate": "2026-08-10",
-    "eventCount": 1969,
+    "generatedAt": "2026-08-11T02:08:35.439Z",
+    "latestDataDate": "2026-08-11",
+    "currentDate": "2026-08-11",
+    "eventCount": 1993,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -41,6 +41,7 @@
       "EV-e1a4bc40db4a9d8f",
       "EV-3d9aa640411471ea",
       "EV-2a833330267cb2df",
+      "EV-497344d95d593cf6",
       "EV-0679a9b49b53ddbd",
       "EV-355ddfd4c6180ab0",
       "EV-4a6a0e6b6f50946c",
@@ -112,7 +113,7 @@
       "EN-d65d81c60c0c47c4"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-08-10",
+    "lastSeen": "2026-08-11",
     "organizationFamilyId": "EN-047364b9be67f665",
     "organizationRole": "group",
     "organizationFamilyEntityIds": [
@@ -152,6 +153,7 @@
         "EV-2a833330267cb2df"
       ],
       "productsServices": [
+        "EV-497344d95d593cf6",
         "EV-0679a9b49b53ddbd",
         "EV-355ddfd4c6180ab0",
         "EV-4a6a0e6b6f50946c",
@@ -206,6 +208,35 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-497344d95d593cf6",
+        "dataDate": "2026-08-11",
+        "date": "2026-08-10",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI 大模型周榜：阿里 qwen3.8-max 冲进综合榜 Top 6，国产多模型表现亮眼",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-32e83e92d45d71f6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-32e83e92d45d71f6",
+          "EN-047364b9be67f665",
+          "EN-ea3bd73e2b506e00"
+        ]
+      },
       {
         "id": "EV-3d93d1da8cb64462",
         "dataDate": "2026-08-10",
@@ -2935,6 +2966,9 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-1d3b117dad798008",
+        "EV-497344d95d593cf6",
+        "EV-a4c177cc432df82e",
         "EV-3dc8d5c373ddd1f3",
         "EV-04fe726fa16722f3",
         "EV-15c5107c993baae8",
@@ -3113,6 +3147,8 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
+        "EN-32e83e92d45d71f6",
+        "EN-6849cf65695e6e77",
         "EN-74be4cbf48e647b2",
         "EN-04468f769adbb15b",
         "EN-7d3194f79e645c42",
@@ -3204,7 +3240,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -3319,6 +3355,7 @@
         "EV-23ae55daa341be06",
         "EV-6bb83280a2116f24",
         "EV-d10684a6f16afe10",
+        "EV-6af526d687d9f737",
         "EV-acddfa62aabb004f",
         "EV-a852dc0ca6011ff6",
         "EV-fd825cd7f7997fc8",
@@ -3396,6 +3433,11 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-1d3b117dad798008",
+        "EV-5f529a16a35a0d52",
+        "EV-7228e4310ee1341a",
+        "EV-a4c177cc432df82e",
+        "EV-cfaa2f6b5c7a5f8a",
         "EV-3dc8d5c373ddd1f3",
         "EV-92d9b6931bcfdd11",
         "EV-355ddfd4c6180ab0",
@@ -3750,6 +3792,7 @@
         "EN-50e2a4156631df49",
         "EN-f531c4e9f8555dcc",
         "EN-df30a48992da7fe8",
+        "EN-30cd4a85fc09f695",
         "EN-c9e92f0b88c6456b",
         "EN-6b182ca786385b1e",
         "EN-76a9a8a6e2f1a47b",
@@ -3796,6 +3839,8 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-6c87e5496f592f3c",
+        "EN-6849cf65695e6e77",
         "EN-74be4cbf48e647b2",
         "EN-c0fced8f2483e9f5",
         "EN-738e22f0acab814c",
@@ -4719,6 +4764,8 @@
         "EV-26d2874c6ce028d6",
         "EV-3d9aa640411471ea",
         "EV-fd21441fb6e143c3",
+        "EV-2fa8fef6da3a5937",
+        "EV-5f529a16a35a0d52",
         "EV-ff73f3659b75611d",
         "EV-73a6143b5ce273e9",
         "EV-db304937ceac95d2",
@@ -4766,6 +4813,8 @@
         "EN-b81c8201acfc7639",
         "EN-87c730bc4f32459e",
         "EN-7df09a7717ef2feb",
+        "EN-ea3bd73e2b506e00",
+        "EN-6c87e5496f592f3c",
         "EN-c04bd5ebd10ab696",
         "EN-2dc010636b9dce91",
         "EN-920510199770f4d6",
@@ -4777,7 +4826,6 @@
         "EN-4b078b39d2fcacc7",
         "EN-522d3edeb64a7ca4",
         "EN-6f7ac1823da81d2e",
-        "EN-ea3bd73e2b506e00",
         "EN-de6b71bf77ff4299",
         "EN-8d4321d936320802",
         "EN-7d3194f79e645c42",
@@ -4797,7 +4845,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "TX-product_form-ai_device",
@@ -4850,6 +4898,8 @@
         "EV-1abf0d076d30ec6d",
         "EV-d2a623e8eef1f61d",
         "EV-f55d16df5b5fecb2",
+        "EV-29c0d969abde2020",
+        "EV-7228e4310ee1341a",
         "EV-890ffd351486b884",
         "EV-3dc8d5c373ddd1f3",
         "EV-d230942b0787581a",
@@ -4869,10 +4919,12 @@
         "EV-a06011da69abcc3d",
         "EV-e2da1aafabb3e09c",
         "EV-2258329f33d413cf",
+        "EV-735fac8d2be356bb",
         "EV-86537be17d50ff20"
       ],
       "entityIds": [
         "EN-bd6769fe78d0971a",
+        "EN-ea3bd73e2b506e00",
         "EN-a899a3dde1d51caf",
         "EN-74be4cbf48e647b2",
         "EN-47dd52018c2b6985",
@@ -4882,7 +4934,6 @@
         "EN-c70eca6b0f88f44d",
         "EN-6b61eab266a42eb0",
         "EN-cc70f504af53013a",
-        "EN-ea3bd73e2b506e00",
         "EN-bc1fc5140040180e",
         "EN-0d1e478de2157d48",
         "EN-047364b9be67f665",
@@ -4898,7 +4949,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "TX-technology-video_generation",
