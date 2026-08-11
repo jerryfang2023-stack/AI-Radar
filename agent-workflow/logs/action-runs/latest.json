@@ -1,34 +1,39 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-10T10:36:21.866Z",
-  "date": "2026-08-10",
-  "action": "Recurring production incident deduplication",
+  "generated_at": "2026-08-11T01:54:32.428Z",
+  "date": "2026-08-11",
+  "action": "Repair funding card amount consistency fallback",
   "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
-  "status": "success",
-  "summary": "Prevented resolved historical occurrence windows from reopening duplicate incidents while preserving reopen behavior for new dates",
+  "status": "partial",
+  "summary": "The 2026-08-11 funding lane blocked Lumilens because a deterministic claim object was truncated to 00M in funding although the exact source quote disclosed $700 million; the consistency gate now checks the source quote when the claim object is incomplete.",
   "contexts": [],
   "changed_files": [
-    "agent-workflow/tools/write-recurring-production-incidents.mjs",
-    "agent-workflow/tools/tests/recurring-production-incidents.test.mjs"
+    "agent-workflow/tools/funding-insight-v1-utils.mjs",
+    "agent-workflow/tools/tests/funding-insight-v1.test.mjs"
   ],
-  "outputs": [],
+  "outputs": [
+    "resume_run_id:31445093380"
+  ],
   "checks": [
-    "recurring production incident tests passed",
-    "real 2026-08-10 runtime integration created zero incidents",
-    "open incident queue count is zero"
+    "node --check funding-insight-v1-utils.mjs",
+    "node --test funding-insight-v1.test.mjs (69/69)"
   ],
   "issues": [
-    "five resolved incident fingerprints were recreated from historical report windows"
+    "EV-b116eafe60d71fbe verified funding event lacked a valid card due claim object truncation"
   ],
-  "risks": [],
+  "risks": [
+    "One targeted resumed production run required"
+  ],
   "lessons": [
-    "deduplicate recurring incidents by fingerprint and resolved occurrence-date coverage"
+    "Exact source spans outrank truncated derived claim labels for amount consistency"
   ],
   "reusable_rules": [
-    "a resolved incident suppresses only occurrence dates already covered; any new date reopens the fingerprint"
+    "Funding card consistency must accept a normalized amount from the exact source quote when claim.object is malformed"
   ],
   "retired_flags": [],
-  "notes": []
+  "notes": [
+    "No raw recollection; next run reuses accepted 2026-08-11 intake/QC artifact"
+  ]
 }

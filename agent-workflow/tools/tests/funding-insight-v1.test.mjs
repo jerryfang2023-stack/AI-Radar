@@ -49,6 +49,30 @@ test("multi-company canonical funding events cannot publish a mismatched company
     ["funding_event_company_amount_mismatch"],
   );
 });
+
+test("multi-company funding cards can use the exact source quote when claim object is truncated", () => {
+  const card = {
+    company: { entity_id: "EN-LUMILENS", name: "Lumilens" },
+    financing: { amount: "$700 million" },
+    triggered_by_event_id: "EV-LUMILENS",
+  };
+  const event = {
+    event_id: "EV-LUMILENS",
+    entities: ["EN-LUMILENS", "EN-FOUNDER-ENTITY"],
+    claim_refs: ["CL-LUMILENS"],
+  };
+  const claims = [{
+    claim_id: "CL-LUMILENS",
+    subject: "Optical networking startup Lumilens",
+    object: "00M in funding - SiliconANGLE",
+    source_quote: "The company raised the bulk of the capital, $700 million, through a Series C round.",
+  }];
+  const entities = [{ entity_id: "EN-LUMILENS", canonical_name: "Lumilens" }];
+  assert.deepEqual(
+    fundingEventCardConsistencyProblems(card, event, claims, entities),
+    [],
+  );
+});
 import { selectHistoricalFundingEvents } from "../backfill-funding-insights-history.mjs";
 import { promptFor, selectFundingEventsForGeneration } from "../generate-funding-insights-deepseek.mjs";
 import { assertFundingFounderReview, collectFundingFounderCandidates } from "../build-funding-founder-review.mjs";

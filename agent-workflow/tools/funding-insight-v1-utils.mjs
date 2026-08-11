@@ -855,7 +855,15 @@ export function fundingEventCardConsistencyProblems(card = {}, event = {}, claim
     organizationNamesEquivalent(claim.subject, name)
   )));
   if (!companyClaims.length) return ["funding_event_company_claim_missing"];
-  if (!companyClaims.some((claim) => fundingAmountsEquivalent(card.financing?.amount, claim.object))) {
+  // Some legacy deterministic claims retain a truncated object label (for
+  // example, a title suffix such as "00M in funding"). The exact source span
+  // is authoritative for amount consistency, so accept it when the normalized
+  // claim object is incomplete but the source quote contains the disclosed
+  // company amount.
+  if (!companyClaims.some((claim) => (
+    fundingAmountsEquivalent(card.financing?.amount, claim.object)
+      || fundingAmountsEquivalent(card.financing?.amount, claim.source_quote)
+  ))) {
     return ["funding_event_company_amount_mismatch"];
   }
   return [];
