@@ -116,6 +116,12 @@ Rules:
 - Recollection is allowed only when the accepted artifact is missing or expired, the monitor quality gate did not pass, or the user explicitly requests recollection. The workflow/report must record the applicable reason.
 - **Stepwise recovery is mandatory:** never restart the complete collection-and-production pipeline merely because a downstream stage failed. Restore the latest accepted intake/raw artifact, identify the first failed stage, repair or rerun only that stage and its dependent stages, and preserve successful upstream outputs. Each retry must state the reused artifact/run and the stage being resumed; a full recollection requires an explicit, recorded exception under the rule above.
 
+### Funding Insights publication
+
+- **A funding card is not complete when it only exists in the repository.** Every accepted funding-card generation must also build and publish the Funding Insights frontstage to the public financing site (`https://www.zkdlj.vip/`), then verify the deployed endpoint returns HTTP 200 and its `latest_date` matches the card run date.
+- The completion chain is: funding-card gate -> `build:funding-insights-site` -> commit/merge to `main` -> GitHub Pages deployment -> live financing-page/data check. A local JSON artifact, merged PR, or successful generator alone is not a published funding update.
+- If site publication or live verification fails, report the funding task as incomplete and resume from the failed publication stage; do not recollect accepted raw data.
+
 ### Historical V3 Recovery
 
 Read:
