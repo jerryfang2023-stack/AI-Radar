@@ -1,4 +1,5 @@
 const WATCHLIST_KEY = "guanlan_funding_watchlist_v1";
+const { recordBehavior } = require("./member.js");
 
 function getWatchIds() {
   const value = wx.getStorageSync(WATCHLIST_KEY);
@@ -11,8 +12,10 @@ function isWatched(id) {
 
 function toggleWatch(id) {
   const current = getWatchIds();
-  const next = current.includes(id) ? current.filter((item) => item !== id) : [...current, id];
+  const adding = !current.includes(id);
+  const next = adding ? [...current, id] : current.filter((item) => item !== id);
   wx.setStorageSync(WATCHLIST_KEY, next);
+  if (adding) recordBehavior("favorite", id);
   return next;
 }
 

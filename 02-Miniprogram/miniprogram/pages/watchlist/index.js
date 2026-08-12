@@ -1,14 +1,27 @@
-const fundingIndex = require("../../data/funding-index.js");
-const { getWatchIds, toggleWatch } = require("../../utils/storage.js");
+const reportIndex = require("../../data/report-index.js");
 
 Page({
-  data: { cards: [] },
-  onShow() { this.refresh(); },
-  refresh() {
-    const watchSet = new Set(getWatchIds());
-    this.setData({ cards: fundingIndex.cards.filter((card) => watchSet.has(card.id)).map((card) => ({ ...card, watched: true })) });
+  data: {
+    meta: reportIndex.meta,
+    activeType: "weekly",
+    activeLabel: "周报",
+    featured: null,
+    reports: [],
   },
-  openCard(event) { wx.navigateTo({ url: `/pages/detail/index?id=${event.detail.id}` }); },
-  toggleWatch(event) { toggleWatch(event.detail.id); this.refresh(); },
-  openTerminal() { wx.switchTab({ url: "/pages/terminal/index" }); },
+
+  onLoad() { this.refresh("weekly"); },
+
+  refresh(type) {
+    const reports = reportIndex.reports.filter((item) => item.type === type);
+    this.setData({
+      activeType: type,
+      activeLabel: type === "weekly" ? "周报" : "月报",
+      featured: reports[0] || null,
+      reports: reports.slice(1),
+    });
+  },
+
+  switchType(event) { this.refresh(event.currentTarget.dataset.type); },
+  openReport(event) { wx.navigateTo({ url: `/pages/report-detail/index?id=${event.currentTarget.dataset.id}` }); },
+  openSaved() { wx.navigateTo({ url: "/pages/saved/index" }); },
 });

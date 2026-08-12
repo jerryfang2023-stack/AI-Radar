@@ -4,10 +4,15 @@ Component({
     showBack: { type: Boolean, value: false },
     rightLabel: { type: String, value: "" },
   },
-  data: { statusBarHeight: 20 },
+  data: { statusBarHeight: 20, rightInset: 96 },
   lifetimes: {
     attached() {
-      this.setData({ statusBarHeight: getApp().globalData.statusBarHeight || 20 });
+      const windowInfo = wx.getWindowInfo ? wx.getWindowInfo() : wx.getSystemInfoSync();
+      const menu = wx.getMenuButtonBoundingClientRect ? wx.getMenuButtonBoundingClientRect() : null;
+      this.setData({
+        statusBarHeight: getApp().globalData.statusBarHeight || 20,
+        rightInset: menu?.left ? windowInfo.windowWidth - menu.left + 6 : 96,
+      });
     },
   },
   methods: {

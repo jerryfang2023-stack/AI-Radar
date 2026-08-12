@@ -1,17 +1,70 @@
 <view class="page-shell">
-  <app-header title="我的" />
+  <app-header title="" right-label="设置" bind:righttap="openSettings" />
   <view class="page-content profile-content">
-    <view class="brand-block paper-card"><image src="/assets/brand/logo-wavesight-reference-horizontal.svg" mode="widthFix" /><text class="serif">观澜融资情报站</text><text>AI 垂直 · 中文解释 · 证据可追溯</text></view>
-    <view class="profile-card paper-card" bindtap="openWatchlist"><view><text class="card-title">观察列表</text><text class="card-copy">当前设备已收藏 {{watchCount}} 笔融资</text></view><text class="card-action">查看</text></view>
-    <view class="section-title serif">数据状态</view>
-    <view class="info-list paper-card">
-      <view><text>公开融资卡</text><text class="mono">{{meta.cardCount}} 笔</text></view>
-      <view><text>数据日期</text><text class="mono">{{meta.latestDate}}</text></view>
-      <view><text>融资版本</text><text>{{meta.fundingVersion}}</text></view>
-      <view><text>分类版本</text><text>{{meta.taxonomyVersion}}</text></view>
+    <view class="identity-row" bindtap="openSettings">
+      <image class="member-avatar" src="{{profile.avatarUrl}}" mode="aspectFill" />
+      <view class="identity-copy">
+        <text class="member-name serif">{{profile.nickname}}</text>
+        <text class="member-meta">资料完善度 {{profileCompletion}}% · 管理个人信息</text>
+      </view>
+      <text class="text-link">编辑</text>
     </view>
-    <view class="section-title serif">使用说明</view>
-    <view class="note paper-card"><text>收藏与比较记录只保存在当前设备。融资金额保留原始币种口径，不把不同币种直接相加；未披露字段不会以 0 替代。</text></view>
-    <button class="danger-button" bindtap="clearLocalData">清空本地收藏</button>
+
+    <view class="growth-card" bindtap="openGrowth">
+      <view class="growth-top">
+        <view>
+          <text class="growth-kicker">本周情报成长</text>
+          <text class="growth-level">L{{growth.level.level}} {{growth.level.name}}</text>
+        </view>
+        <view class="points-block">
+          <text class="points mono">{{growth.wallet.balance}}</text>
+          <text>体验积分</text>
+        </view>
+      </view>
+      <view class="growth-progress-row">
+        <text>本周完成 {{growth.weeklyCompleted}}/5 个成长任务</text>
+        <text wx:if="{{growth.level.remaining}}">距下一级 {{growth.level.remaining}} 分</text>
+        <text wx:else>已到最高等级</text>
+      </view>
+      <view class="progress-track"><view class="progress-value" style="width: {{growth.level.progress}}%;"></view></view>
+      <view class="growth-action">继续研究，解锁更多情报权益</view>
+    </view>
+
+    <view class="stats-card paper-card">
+      <view bindtap="openHistory"><text class="stat-value mono">{{stats.browse}}</text><text class="stat-label">浏览</text></view>
+      <view bindtap="openWatchlist"><text class="stat-value mono">{{stats.favorite}}</text><text class="stat-label">收藏</text></view>
+      <view bindtap="openFollows"><text class="stat-value mono">{{stats.follow}}</text><text class="stat-label">关注</text></view>
+    </view>
+
+    <view class="section-heading"><text class="serif">成长任务</text><text bindtap="openGrowth">查看明细</text></view>
+    <view class="list-card paper-card">
+      <view wx:for="{{growth.tasks}}" wx:key="id" class="action-row" data-id="{{item.id}}" bindtap="openTask">
+        <view class="row-copy">
+          <text class="row-title">{{item.title}}</text>
+          <text class="row-subtitle">今日进度 {{item.current}}/{{item.target}}{{item.unit}}</text>
+        </view>
+        <view class="reward-state {{item.completed ? 'completed' : ''}}">{{item.completed ? '已完成' : '+' + item.reward + ' 分'}}</view>
+      </view>
+    </view>
+
+    <view class="section-heading"><text class="serif">我的权益</text><text bindtap="openGrowth">全部权益</text></view>
+    <view class="list-card paper-card">
+      <view wx:for="{{growth.benefits}}" wx:key="id" class="benefit-row" bindtap="openGrowth">
+        <view class="benefit-mark"><image src="/assets/brand/app-icon-light.svg" mode="aspectFit" /></view>
+        <view class="row-copy"><text class="row-title">{{item.title}}</text><text class="row-subtitle">{{item.description}}</text></view>
+        <text class="benefit-cost mono">{{item.redeemed ? '已兑换' : item.cost + ' 分'}}</text>
+      </view>
+    </view>
+
+    <button class="invite-card" open-type="share">
+      <view><text class="invite-title">邀请好友 · 共同成长</text><text class="invite-copy">好友完成首次注册后，双方各得 20 积分</text></view>
+      <text class="invite-action">立即邀请</text>
+    </button>
+
+    <view class="settings-card paper-card" bindtap="openSettings">
+      <view><text class="row-title">个人信息与数据管理</text><text class="row-subtitle">头像、昵称、手机号与隐私说明</text></view>
+      <text class="text-link">进入</text>
+    </view>
+    <text class="local-note">积分与权益当前为本地体验数据，正式到账以服务端验证结果为准。</text>
   </view>
 </view>

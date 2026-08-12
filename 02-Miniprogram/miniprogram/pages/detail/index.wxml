@@ -13,13 +13,13 @@
       <view><text class="fact-label">累计融资</text><text class="fact-value mono">{{card.cumulativeAmount}}</text></view>
     </view>
 
-    <view class="evidence-banner"><icon type="success" size="17" color="#2F8C57" /><text>{{card.evidenceLabel}} · {{card.sourceCount}} 条研究来源</text></view>
+    <view class="evidence-banner"><text>{{card.sourceCount}} 条公开来源</text></view>
 
     <view class="section"><text class="section-title serif">公司做什么</text><text class="body-copy">{{card.companySummary}}</text><view class="meta-line"><text>总部：{{card.headquarters}}</text><text>市场：{{card.category}} / {{card.subcategory}}</text></view></view>
 
     <view class="section"><text class="section-title serif">本轮投资方</text><view wx:if="{{card.investors.length}}" class="simple-list"><view wx:for="{{card.investors}}" wx:key="name" class="simple-row"><text>{{item.name}}</text><text class="row-note">{{item.role || '角色未披露'}}</text></view></view><view wx:else class="missing">投资方未披露</view></view>
 
-    <view wx:if="{{card.signals.length}}" class="section"><text class="section-title serif">已验证信号</text><view class="bullet-list signal-list"><view wx:for="{{card.signals}}" wx:key="*this" class="bullet-row"><text class="bullet-index mono">{{index + 1}}</text><text>{{item}}</text></view></view></view>
+    <view wx:if="{{card.signals.length}}" class="section"><text class="section-title serif">关键信号</text><view class="bullet-list signal-list"><view wx:for="{{card.signals}}" wx:key="*this" class="bullet-row"><text class="bullet-index mono">{{index + 1}}</text><text>{{item}}</text></view></view></view>
 
     <view wx:if="{{card.capitalJudgment}}" class="section judgment"><text class="section-kicker">观澜分析</text><text class="section-title serif">资本为什么下注</text><text class="body-copy">{{card.capitalJudgment}}</text></view>
 
@@ -27,6 +27,6 @@
 
     <view wx:if="{{card.history.length}}" class="section"><text class="section-title serif">融资历史</text><view class="timeline"><view wx:for="{{card.history}}" wx:key="date" class="timeline-row {{item.current ? 'current' : ''}}"><text class="timeline-date mono">{{item.date || '日期未披露'}}</text><view><text class="timeline-round">{{item.round}}</text><text class="timeline-amount mono">{{item.amount}}</text></view></view></view></view>
 
-    <view class="section"><text class="section-title serif">原文证据</text><view wx:if="{{card.sources.length}}" class="source-list"><view wx:for="{{card.sources}}" wx:key="id" class="source-card paper-card"><text class="source-publisher">{{item.publisher}}</text><text class="source-title">{{item.title}}</text><text wx:for="{{item.quotes}}" wx:key="*this" class="source-quote">“{{item}}”</text><button class="source-button" data-url="{{item.url}}" bindtap="copySource">复制原文链接</button></view></view><view wx:else class="missing">暂无可公开来源</view></view>
+    <view class="section"><text class="section-title serif">信息来源</text><view wx:if="{{card.sources.length}}" class="source-list"><view wx:for="{{card.sources}}" wx:key="id" class="source-card paper-card"><text class="source-publisher">{{item.publisher}}</text><text class="source-title">{{item.title}}</text><text wx:for="{{item.quotes}}" wx:key="*this" class="source-quote">“{{item}}”</text><button class="source-button" data-url="{{item.url}}" bindtap="copySource">复制原文链接</button></view></view><view wx:else class="missing">暂无公开来源</view></view>
   </view>
 </view>

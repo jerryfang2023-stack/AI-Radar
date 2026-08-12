@@ -1,0 +1,26 @@
+.edit-content { padding-top: 24rpx; }
+.completion-card { padding: 26rpx; }
+.completion-card > view:first-child { display: flex; align-items: center; justify-content: space-between; }
+.completion-card .serif { font-size: 30rpx; font-weight: 600; }
+.completion-card .mono { color: #9b6d20; font-size: 32rpx; }
+.completion-card > text { display: block; margin-top: 16rpx; color: #6f7f8f; font-size: 23rpx; }
+.completion-track { height: 8rpx; margin-top: 18rpx; overflow: hidden; border-radius: 99rpx; background: #edf0f2; }
+.completion-track > view { height: 100%; border-radius: inherit; background: #c8a766; }
+.form-card { overflow: hidden; }
+.avatar-field, .nickname-field, .account-row { display: flex; min-height: 112rpx; align-items: center; justify-content: space-between; gap: 24rpx; padding: 18rpx 24rpx; border-bottom: 1rpx solid #e5e8ec; }
+.form-card > view:last-child { border-bottom: 0; }
+.avatar-field > view, .account-row > view { display: flex; min-width: 0; flex-direction: column; gap: 8rpx; }
+.field-label { color: #071827; font-size: 26rpx; font-weight: 600; }
+.field-note { color: #6f7f8f; font-size: 22rpx; line-height: 1.55; }
+.avatar-button { width: 84rpx; height: 84rpx; margin: 0; padding: 0; border-radius: 50%; background: #fff; line-height: normal; }
+.avatar-button image { width: 84rpx; height: 84rpx; border: 1rpx solid #e5e8ec; border-radius: 50%; }
+.nickname-field { justify-content: flex-start; }
+.nickname-field .field-label { width: 100rpx; }
+.nickname-field input { flex: 1; height: 70rpx; color: #071827; font-size: 26rpx; text-align: right; }
+.save-button { margin-top: 24rpx; }
+.outline-button { min-height: 58rpx; margin: 0; padding: 0 18rpx; border: 1rpx solid rgba(200,167,102,.7); border-radius: 12rpx; background: #fff; color: #9b6d20; font-size: 22rpx; line-height: 58rpx; }
+.readonly-state { color: #8996a3; font-size: 22rpx; }
+.privacy-note { margin-top: 34rpx; padding: 28rpx; border-left: 5rpx solid #c8a766; background: #f7f4ef; }
+.privacy-note text { display: block; }
+.privacy-note .serif { margin-bottom: 12rpx; font-size: 27rpx; font-weight: 600; }
+.privacy-note text:last-child { color: #516273; font-size: 23rpx; line-height: 1.75; }

@@ -1,0 +1,32 @@
+<view class="page-shell">
+  <app-header title="成长与权益" show-back />
+  <view class="page-content growth-content">
+    <view class="wallet-card">
+      <text class="wallet-label">当前本地体验积分</text>
+      <text class="wallet-value mono">{{growth.wallet.balance}}</text>
+      <text class="wallet-level">L{{growth.level.level}} {{growth.level.name}} · 累计成长 {{growth.wallet.lifetime}} 分</text>
+      <view class="wallet-track"><view style="width: {{growth.level.progress}}%;"></view></view>
+      <text class="wallet-next">{{growth.level.remaining ? '距下一等级还差 ' + growth.level.remaining + ' 分' : '已到最高等级'}}</text>
+    </view>
+
+    <view class="section-title serif">今日任务</view>
+    <view class="paper-card task-list">
+      <view wx:for="{{growth.tasks}}" wx:key="id" class="task-row">
+        <view><text>{{item.title}}</text><text>进度 {{item.current}}/{{item.target}}{{item.unit}}</text></view>
+        <text class="task-reward {{item.completed ? 'done' : ''}}">{{item.completed ? '已完成' : '+' + item.reward + ' 分'}}</text>
+      </view>
+    </view>
+
+    <view class="section-title serif">可兑换权益</view>
+    <view class="benefit-card paper-card" wx:for="{{growth.benefits}}" wx:key="id">
+      <view><text class="benefit-title">{{item.title}}</text><text class="benefit-copy">{{item.description}}</text></view>
+      <button class="redeem-button {{item.redeemed ? 'done' : ''}}" disabled="{{item.redeemed}}" data-id="{{item.id}}" bindtap="redeem">{{item.redeemed ? '已兑换' : item.cost + ' 分兑换'}}</button>
+    </view>
+
+    <view class="section-title serif">积分明细</view>
+    <view class="paper-card ledger-list">
+      <view wx:for="{{growth.wallet.ledger}}" wx:key="id" class="ledger-row"><view><text>{{item.label}}</text><text class="mono">{{item.createdAt}}</text></view><text class="mono {{item.points > 0 ? 'income' : 'expense'}}">{{item.points > 0 ? '+' : ''}}{{item.points}}</text></view>
+    </view>
+    <view class="rules-note"><text class="serif">到账规则</text><text>阅读、收藏与关注任务在本机即时记录。邀请奖励必须在好友完成首次注册后由服务端核验，不能通过点击分享直接到账。</text></view>
+  </view>
+</view>

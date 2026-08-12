@@ -1,0 +1,6 @@
+<view class="page-shell">
+  <app-header title="我的收藏" show-back />
+  <view wx:if="{{cards.length}}" class="watch-intro"><text class="serif">已收藏 {{cards.length}} 笔融资</text><text>收藏数据仅保存在当前微信设备。</text></view>
+  <view wx:if="{{cards.length}}" class="watch-list"><funding-row wx:for="{{cards}}" wx:key="id" card="{{item}}" watched bind:open="openCard" bind:watch="toggleWatch" /></view>
+  <view wx:else class="empty-state"><view class="title serif">还没有收藏融资</view><view class="copy">在融资情报中点击“收藏”，即可建立你的收藏列表。</view><button class="primary-button empty-action" bindtap="openTerminal">浏览融资情报</button></view>
+</view>

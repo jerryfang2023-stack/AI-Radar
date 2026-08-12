@@ -5,6 +5,7 @@ This is the native WeChat Mini Program frontstage for Funding Insights.
 ## Boundaries
 
 - Source truth remains `../01-SiteV2/site/data/funding-insights-v1.json`.
+- Weekly/monthly report source truth remains `../01-SiteV2/content/12-applications/industry-reports/`.
 - Run `npm run build:data` after the source projection changes. Do not hand-edit generated files under `miniprogram/data/`.
 - Public UI may expose application-level funding facts, analysis, and source links only. It must not expose Data Center/Application Center navigation, operational fields, model provenance, internal gates, or private evidence locators.
 - Missing values remain explicit. Do not infer undisclosed amounts, investors, customers, regions, or outcomes.

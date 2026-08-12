@@ -44,12 +44,6 @@ Page({
       { id: "30d", name: "近30天" },
       { id: "90d", name: "近90天" },
       { id: "1y", name: "近1年" }
-    ],
-    evidenceOptions: [
-      { id: "all", name: "全部证据" },
-      { id: "multi", name: "多源已核验" },
-      { id: "official", name: "官方单源" },
-      { id: "single", name: "单源披露" }
     ]
   },
 
@@ -186,5 +180,5 @@ Page({
     });
   },
 
-  openWatchlist() { wx.switchTab({ url: "/pages/watchlist/index" }); },
+  openWatchlist() { wx.navigateTo({ url: "/pages/saved/index" }); },
 });

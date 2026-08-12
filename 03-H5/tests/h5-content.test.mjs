@@ -7,6 +7,10 @@ const readJson = async (name) => JSON.parse(await readFile(new URL(`../public/da
 test("H5 contains all four confirmed columns", async () => {
   const source = await readFile(new URL("../src/Prototype.tsx", import.meta.url), "utf8");
   for (const label of ["融资", "市场", "观察", "我的"]) assert.match(source, new RegExp(`label: \"${label}\"`));
+  assert.match(source, /title="融资情报"/u);
+  for (const internalCopy of ["融资终端", "多源核验", "已验证信号", "当前公开样本概览"]) {
+    assert.doesNotMatch(source, new RegExp(internalCopy, "u"));
+  }
 });
 
 test("funding and report datasets are available", async () => {

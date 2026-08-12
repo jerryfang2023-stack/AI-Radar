@@ -1,0 +1,21 @@
+.reader-content { padding-top: 18rpx; }
+.reader-hero { padding: 24rpx 4rpx 28rpx; border-bottom: 1rpx solid #e5e8ec; }
+.reader-kicker { display: flex; align-items: center; justify-content: space-between; color: #9b6d20; font-size: 21rpx; font-weight: 600; letter-spacing: 2rpx; }
+.reader-kicker .mono { color: #6f7f8f; font-weight: 400; letter-spacing: 0; }
+.reader-title { display: block; margin-top: 18rpx; color: #071827; font-size: 40rpx; font-weight: 600; line-height: 1.45; }
+.reader-summary { display: block; margin-top: 18rpx; color: #516273; font-size: 25rpx; line-height: 1.75; }
+.reader-meta { display: flex; flex-wrap: wrap; gap: 12rpx 20rpx; margin-top: 22rpx; color: #8996a3; font-size: 20rpx; }
+.reader-evidence { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 24rpx; padding: 20rpx 0; border: 1rpx solid #e5e8ec; border-radius: 16rpx; background: #fff; }
+.reader-evidence view { display: flex; flex-direction: column; gap: 6rpx; align-items: center; border-right: 1rpx solid #e5e8ec; color: #6f7f8f; font-size: 19rpx; }
+.reader-evidence view:last-child { border-right: 0; }
+.reader-evidence .mono { color: #0d355c; font-size: 28rpx; font-weight: 600; }
+.boundary-note { margin: 24rpx 0 10rpx; padding: 20rpx 22rpx; border-left: 5rpx solid #c8a766; background: #f7f4ef; color: #516273; font-size: 22rpx; line-height: 1.7; }
+.reader-body { padding: 4rpx 2rpx; }
+.block-heading { margin: 44rpx 0 18rpx; padding-top: 26rpx; border-top: 1rpx solid #e5e8ec; color: #071827; font-size: 32rpx; font-weight: 600; line-height: 1.45; }
+.block-subheading { margin: 30rpx 0 14rpx; color: #0d355c; font-size: 27rpx; font-weight: 600; line-height: 1.5; }
+.block-paragraph, .block-list, .block-quote, .block-table { margin: 0 0 20rpx; color: #33465a; font-size: 25rpx; line-height: 1.85; }
+.block-list { padding: 14rpx 18rpx; border-left: 3rpx solid #c8a766; background: rgba(247,244,239,.66); }
+.block-quote { padding: 20rpx 22rpx; border-radius: 12rpx; background: #071827; color: rgba(255,255,255,.82); }
+.block-table { padding: 14rpx 16rpx; border-bottom: 1rpx solid #e5e8ec; color: #516273; font-size: 22rpx; }
+.share-button { margin-top: 44rpx; }
+.reader-version { display: block; margin-top: 20rpx; color: #8996a3; font-size: 19rpx; text-align: center; }

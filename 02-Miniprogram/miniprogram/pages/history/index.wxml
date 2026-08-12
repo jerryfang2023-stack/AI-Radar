@@ -1,0 +1,10 @@
+<view class="page-shell">
+  <app-header title="浏览记录" show-back right-label="清空" bind:righttap="clear" />
+  <view class="history-content" wx:if="{{records.length}}">
+    <view wx:for="{{records}}" wx:key="id" class="history-item">
+      <text class="viewed-at mono">最近浏览 {{item.viewedAt}}</text>
+      <funding-row card="{{item.card}}" watched="{{item.watched}}" bind:open="open" bind:watch="toggleWatch" />
+    </view>
+  </view>
+  <view wx:else class="empty-state"><view class="title serif">还没有浏览记录</view><view class="copy">打开融资详情后，会在这里保存最近 100 条记录。</view></view>
+</view>

@@ -354,7 +354,7 @@ export default function Prototype() {
       {page}
       {view.kind === "tab" ? <BottomNav active={view.tab} onChange={showTab} /> : null}
       {selected.length ? <button className="compare-fab" onClick={() => selected.length >= 2 ? go({ kind: "compare" }) : setToast("请再选择 1 家公司")}>比较 {selected.length}/3</button> : null}
-      <BottomSheet open={filterOpen} onOpenChange={setFilterOpen} title="筛选融资情报" description="筛选只影响当前终端列表" snap={0.62}>
+      <BottomSheet open={filterOpen} onOpenChange={setFilterOpen} title="筛选融资情报" description="筛选只影响当前融资列表" snap={0.62}>
         <FilterGroup label="地区" value={region} options={[{ id: "all", name: "全部" }, { id: "china", name: "中国总部" }, { id: "overseas", name: "海外总部" }, { id: "undisclosed", name: "未披露" }]} onChange={setRegion} />
         <FilterGroup label="轮次" value={round} options={[{ id: "all", name: "全部" }, { id: "early", name: "种子/天使" }, { id: "growth", name: "A/B/C轮" }, { id: "late", name: "D轮以后" }, { id: "other", name: "其他" }]} onChange={setRound} />
         <button className="sheet-primary" onClick={() => setFilterOpen(false)}>查看结果</button>
@@ -369,7 +369,7 @@ function Loading() {
 }
 
 function TerminalView(props: { index: FundingIndex; cards: FundingCard[]; query: string; onQuery: (value: string) => void; category: string; onCategory: (value: string) => void; favorites: string[]; selected: string[]; onOpen: (id: string) => void; onFavorite: (id: string) => void; onSelect: (id: string) => void; onFilter: () => void; onSaved: () => void; onCompare: () => void }) {
-  return <><AppHeader title="融资终端" action={`收藏 ${props.favorites.length}`} onAction={props.onSaved} /><MobileScroll className="app-screen"><main className="screen-content terminal-screen">
+  return <><AppHeader title="融资情报" action={`收藏 ${props.favorites.length}`} onAction={props.onSaved} /><MobileScroll className="app-screen"><main className="screen-content terminal-screen">
     <section className="terminal-intro"><div><span>已发布融资情报</span><strong>{props.index.meta.cardCount}</strong></div><p>更新至<br />{props.index.meta.latestDate}</p></section>
     <div className="search-row"><label className="search-box"><MagnifyingGlassIcon /><KeyboardInput value={props.query} onChange={(event) => props.onQuery(event.target.value)} placeholder="搜索公司、赛道或投资方" aria-label="搜索融资" /></label><button className="filter-button" onClick={props.onFilter}><MixerHorizontalIcon /></button></div>
     <Carousel ariaLabel="融资分类" className="category-carousel" contentClassName="category-track"><button className={props.category === "all" ? "active" : ""} onClick={() => props.onCategory("all")}>全部 {props.index.meta.cardCount}</button>{props.index.categories.map((item) => <button key={item.id} className={props.category === item.id ? "active" : ""} onClick={() => props.onCategory(item.id)}>{item.name} {item.count}</button>)}</Carousel>

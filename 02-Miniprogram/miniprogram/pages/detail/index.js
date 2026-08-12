@@ -1,5 +1,6 @@
 const details = require("../../data/funding-details.js");
 const { isWatched, toggleWatch } = require("../../utils/storage.js");
+const { recordBrowse } = require("../../utils/member.js");
 
 Page({
   data: { card: null, watched: false },
@@ -11,6 +12,7 @@ Page({
       setTimeout(() => wx.navigateBack(), 500);
       return;
     }
+    recordBrowse(card.id);
     this.setData({ card, watched: isWatched(card.id) });
   },
 

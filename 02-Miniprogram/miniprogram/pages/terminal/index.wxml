@@ -1,5 +1,5 @@
 <view class="page-shell">
-  <app-header title="融资终端" right-label="观察 {{watchCount}}" bind:righttap="openWatchlist" />
+  <app-header title="融资情报" right-label="收藏 {{watchCount}}" bind:righttap="openWatchlist" />
 
   <view class="terminal-head">
     <view class="search-box">
@@ -19,7 +19,7 @@
 
     <view class="summary-strip paper-card">
       <view><text class="summary-value mono">{{meta.cardCount}}</text><text class="summary-label">笔已发布</text></view>
-      <view><text class="summary-value mono">{{meta.multiSourceRate}}%</text><text class="summary-label">多源核验</text></view>
+      <view><text class="summary-value mono">{{meta.disclosedAmountCount}}</text><text class="summary-label">笔金额披露</text></view>
       <view><text class="summary-value mono">{{meta.categoryCount}}</text><text class="summary-label">个市场大类</text></view>
     </view>
 
@@ -64,10 +64,6 @@
       <view class="filter-group">
         <text class="filter-title">市场类别</text>
         <view class="choice-grid"><button class="choice {{draftFilters.categoryId === 'all' ? 'active' : ''}}" data-name="categoryId" data-value="all" bindtap="chooseDraft">全部市场</button><button wx:for="{{categories}}" wx:key="id" class="choice {{draftFilters.categoryId === item.id ? 'active' : ''}}" data-name="categoryId" data-value="{{item.id}}" bindtap="chooseDraft">{{item.name}}</button></view>
-      </view>
-      <view class="filter-group">
-        <text class="filter-title">证据状态</text>
-        <view class="choice-grid"><button wx:for="{{evidenceOptions}}" wx:key="id" class="choice {{draftFilters.evidenceId === item.id ? 'active' : ''}}" data-name="evidenceId" data-value="{{item.id}}" bindtap="chooseDraft">{{item.name}}</button></view>
       </view>
     </scroll-view>
     <view class="sheet-actions"><button class="primary-button" bindtap="applyDraft">查看结果</button></view>

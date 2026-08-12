@@ -1,6 +1,34 @@
 <view class="page-shell">
-  <app-header title="观察列表" />
-  <view wx:if="{{cards.length}}" class="watch-intro"><text class="serif">已收藏 {{cards.length}} 笔融资</text><text>收藏数据仅保存在当前微信设备。</text></view>
-  <view wx:if="{{cards.length}}" class="watch-list"><funding-row wx:for="{{cards}}" wx:key="id" card="{{item}}" watched bind:open="openCard" bind:watch="toggleWatch" /></view>
-  <view wx:else class="empty-state"><view class="title serif">还没有收藏融资</view><view class="copy">在融资终端点击“收藏”，即可建立你的观察列表。</view><button class="primary-button empty-action" bindtap="openTerminal">浏览融资终端</button></view>
+  <app-header title="观察" right-label="我的收藏" bind:righttap="openSaved" />
+  <view class="page-content report-content">
+    <view class="report-intro">
+      <text class="intro-kicker">GUANLAN RESEARCH</text>
+      <text class="intro-title serif">AI 商业变化观察</text>
+      <text class="intro-copy">用周报追踪变化，用月报理解结构。每一条判断都来自已接受的事实、观点与社群观察边界。</text>
+    </view>
+
+    <view class="report-tabs" role="tablist">
+      <button class="report-tab {{activeType === 'weekly' ? 'active' : ''}}" data-type="weekly" bindtap="switchType">周报 {{meta.weeklyCount}}</button>
+      <button class="report-tab {{activeType === 'monthly' ? 'active' : ''}}" data-type="monthly" bindtap="switchType">月报 {{meta.monthlyCount}}</button>
+    </view>
+
+    <view wx:if="{{featured}}" class="featured-report" data-id="{{featured.id}}" bindtap="openReport">
+      <view class="featured-meta"><text>最新{{activeLabel}}</text><text class="mono">{{featured.issue}}</text></view>
+      <text class="featured-title serif">{{featured.title}}</text>
+      <text class="featured-summary">{{featured.summary}}</text>
+      <view wx:if="{{featured.counts}}" class="evidence-row">
+        <text>{{featured.counts.signals}} 条事件</text><text>{{featured.counts.opinions}} 条观点</text><text>{{featured.counts.community}} 条观察</text>
+      </view>
+      <view class="featured-action"><text class="mono">{{featured.window}}</text><text>阅读全文</text></view>
+    </view>
+
+    <view class="archive-heading"><text class="serif">往期{{activeLabel}}</text><text>按发布日期倒序</text></view>
+    <view wx:if="{{reports.length}}" class="report-list">
+      <view wx:for="{{reports}}" wx:key="id" class="report-card paper-card" data-id="{{item.id}}" bindtap="openReport">
+        <view class="report-date"><text class="mono">{{item.dateShort}}</text><text>{{item.issue}}</text></view>
+        <view class="report-main"><text class="report-title serif">{{item.title}}</text><text class="report-summary">{{item.summary}}</text><view class="report-footer"><text>{{item.sectionCount}} 个研究章节</text><text>查看全文</text></view></view>
+      </view>
+    </view>
+    <view wx:else class="empty-state"><view class="title serif">暂无往期{{activeLabel}}</view><view class="copy">新报告通过内容验收后会同步到这里。</view></view>
+  </view>
 </view>
