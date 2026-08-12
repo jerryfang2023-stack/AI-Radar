@@ -8,6 +8,7 @@
 - 观察展示周报与月报；我的覆盖浏览、收藏、关注、积分权益、邀请分享和个人资料。
 - On phone-width browsers the deliverable runs as a direct full-screen H5; on desktop it keeps the device preview frame for review.
 - Production keeps the PC portal at `/` and publishes this H5 at `/h5/`; production builds set `H5_BASE=/h5/`.
+- Public-facing pages must not expose internal validation, evidence-pipeline, local-demo, backend-integration, or development-status language.
 - Visual direction uses warm paper, deep navy and restrained gold, with evidence-first editorial hierarchy.
 
 In ChatGPT Work Mode, run `sites-preview start "$PWD"`, open `http://terminal.local:4173/` in the cloud browser, and verify the rendered app and its primary interactions. Keep that preview open and tell the user to inspect it in the cloud browser; do not present the local URL as a user-facing chat link. In Codex Desktop, run the local server yourself, open the preview in the in-app browser, and provide the clickable local URL. Do not deploy to Sites unless the user explicitly asks to share, publish, or deploy. Do not give the user server-start instructions when you can run it.

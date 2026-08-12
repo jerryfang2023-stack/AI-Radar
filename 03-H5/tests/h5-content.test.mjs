@@ -28,3 +28,22 @@ test("profile capabilities are present", async () => {
     assert.ok(source.includes(capability), `missing capability: ${capability}`);
   }
 });
+
+test("public UI does not expose internal workflow language", async () => {
+  const source = await readFile(new URL("../src/Prototype.tsx", import.meta.url), "utf8");
+  const forbidden = [
+    "多源核验率",
+    "多源已核验",
+    "PUBLIC FUNDING SAMPLE",
+    "当前公开样本概览",
+    "已验证信号",
+    "当前本地体验积分",
+    "H5 体验起始积分",
+    "待后端接入",
+    "需公众号或开放平台网页授权",
+    "数据保存在当前浏览器",
+    "正式到账以服务端验证结果为准",
+    "报告是基于证据的下游研究判断",
+  ];
+  for (const phrase of forbidden) assert.ok(!source.includes(phrase), `internal phrase is still exposed: ${phrase}`);
+});
