@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-11T02:08:35.439Z",
-    "latestDataDate": "2026-08-11",
-    "currentDate": "2026-08-11",
-    "eventCount": 1993,
+    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2025,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-5c30f52112d92491",
       "EV-29c0d969abde2020",
       "EV-2fa8fef6da3a5937",
       "EV-5f529a16a35a0d52",
@@ -33,13 +34,14 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-10",
-    "lastSeen": "2026-08-11",
+    "lastSeen": "2026-08-12",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-5c30f52112d92491",
         "EV-29c0d969abde2020",
         "EV-2fa8fef6da3a5937",
         "EV-5f529a16a35a0d52",
@@ -52,6 +54,43 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-5c30f52112d92491",
+        "dataDate": "2026-08-12",
+        "date": "2026-08-11",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "派早报：Meta 发布开源本地 AI 智能体大模型 Muse Glimmer、阿里千问开放平台上线等",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-478676438ee161a3",
+          "EN-ea3bd73e2b506e00",
+          "EN-047364b9be67f665",
+          "EN-f4bc2c89599f5449"
+        ]
+      },
       {
         "id": "EV-29c0d969abde2020",
         "dataDate": "2026-08-11",
@@ -321,6 +360,94 @@
   "fde": [],
   "hardware": [],
   "hardwareCatalog": [
+    {
+      "id": "HWC-cc52beb822721e64",
+      "snapshotKey": "cc52beb822721e64",
+      "snapshotId": "HWS-db4a7b9bb87dfdca",
+      "eventId": "EV-5c30f52112d92491",
+      "eventIds": [
+        "EV-5c30f52112d92491"
+      ],
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "title": "Muse Glimmer",
+      "subject": "派早报",
+      "productNames": [
+        "Muse Glimmer"
+      ],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-789c63c938d93c78"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-12",
+          "hardware_fact_id": "HWF-789c63c938d93c78",
+          "fact_type": "product",
+          "observed_at": "2026-08-11T00:09:35.000Z",
+          "subject_entity_id": "EN-478676438ee161a3",
+          "subject_name": "派早报",
+          "product_entity_ids": [
+            "EN-f4bc2c89599f5449"
+          ],
+          "product_names": [
+            "Muse Glimmer"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "国家计算机病毒应急处理中心发布关于「Sorry」勒索病毒的预警报告 7",
+          "event_refs": [
+            "EV-5c30f52112d92491"
+          ],
+          "claim_ref": "CL-b082a872794c7e7e",
+          "source_refs": [
+            "SA-71dee0d401abb22d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-12/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://sspai.com/post/113301",
+      "entityIds": [
+        "EN-478676438ee161a3",
+        "EN-ea3bd73e2b506e00",
+        "EN-047364b9be67f665",
+        "EN-f4bc2c89599f5449"
+      ]
+    },
     {
       "id": "HWC-28dbd0566a837349",
       "snapshotKey": "28dbd0566a837349",

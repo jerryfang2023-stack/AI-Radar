@@ -5,17 +5,17 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-11T02:08:35.439Z",
-    "latestDataDate": "2026-08-11",
-    "currentDate": "2026-08-11",
-    "eventCount": 1993,
+    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2025,
     "quarantinedEventCount": 16
   },
   "hardware": [
     {
       "id": "HW-4673613f81881c78",
       "eventId": "EV-0d1e8308d3c007aa",
-      "dataDate": "2026-08-11",
+      "dataDate": "2026-08-12",
       "date": "2026-08-05",
       "title": "KAYTUS在72天内交付400机架高密度风冷计算集群，部署时间缩短60%",
       "hardwareType": "compute_cluster",
@@ -2193,15 +2193,151 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-1e90510260afb7ed",
+      "snapshotKey": "1e90510260afb7ed",
+      "snapshotId": "HWS-b144d4a901bfc4c0",
+      "eventId": "EV-c7d0b810ac3b3d4e",
+      "eventIds": [
+        "EV-c7d0b810ac3b3d4e"
+      ],
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "title": "AI Inference / AI Infrastructure / Aug 11",
+      "subject": "IBM",
+      "productNames": [
+        "AI Inference",
+        "AI Infrastructure",
+        "Aug 11"
+      ],
+      "hardwareType": "data_center / gpu",
+      "factTypes": [
+        "shipment_deployment",
+        "product"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "240",
+          "unit": "$M",
+          "fact_ref": "HWF-9cbeeb2c983c4cb1"
+        },
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-19cf0adc686822b5"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-12",
+          "hardware_fact_id": "HWF-9cbeeb2c983c4cb1",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-11T00:00:00.000Z",
+          "subject_entity_id": "EN-916a98f0fa2a39af",
+          "subject_name": "IBM",
+          "product_entity_ids": [
+            "EN-ae11c0abf6288776",
+            "EN-550f6ed5f71d0edc",
+            "EN-7f8f379674a95169"
+          ],
+          "product_names": [
+            "AI Inference",
+            "AI Infrastructure",
+            "Aug 11"
+          ],
+          "component_type": "data_center",
+          "metric_value": "240",
+          "unit": "$M",
+          "source_quote": "ARMONK, N.Y. and SAN FRANCISCO , Aug. 11, 2026 / PRNewswire / -- IBM (NYSE: IBM ) announced a collaboration with Together AI to deliver IBM and NVIDIA AI infrastructure. Under a multi-year $240M agreement between IBM and Together AI, IBM is positioned to deploy a large cluster of NVIDIA HGX B300 systems on IBM Cloud with expected availability in Q1 2027. Together AI will use this cluster to provide open-source model inference. This deployment is the first dedicated, large-scale cluster built for inference on IBM Cloud using HGX B300 systems and NVIDIA Spectrum - X TM Ethernet networking. According to NVIDIA, it is built to deliver 30x more AI factory output compared to prior generations.",
+          "event_refs": [
+            "EV-c7d0b810ac3b3d4e"
+          ],
+          "claim_ref": "CL-b231b184a65f4a65",
+          "source_refs": [
+            "SA-6f090f4104f497db"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-12/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-12",
+          "hardware_fact_id": "HWF-19cf0adc686822b5",
+          "fact_type": "product",
+          "observed_at": "2026-08-11T00:00:00.000Z",
+          "subject_entity_id": "EN-916a98f0fa2a39af",
+          "subject_name": "IBM",
+          "product_entity_ids": [
+            "EN-ae11c0abf6288776",
+            "EN-550f6ed5f71d0edc",
+            "EN-7f8f379674a95169"
+          ],
+          "product_names": [
+            "AI Inference",
+            "AI Infrastructure",
+            "Aug 11"
+          ],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Together AI selected IBM with NVIDIA because of their innovative product roadmaps and their ability to deliver GPU capacity at the pace required for rapid AI scaling and lowest token cost. Building on IBM's expertise in delivering enterprise-grade cloud capabilities, this collaboration aims to help Together AI to continue its expansion into the enterprise space while making open-source AI more accessible to developers and enterprises around the world.",
+          "event_refs": [
+            "EV-c7d0b810ac3b3d4e"
+          ],
+          "claim_ref": "CL-24a0cb23124840fe",
+          "source_refs": [
+            "SA-6f090f4104f497db"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-12/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newsroom.ibm.com/2026-08-11-IBM-and-Together-AI-Sign-Multi-Year-Agreement-to-Scale-Open-Source-AI-Inference-with-NVIDIA-AI-Infrastructure-on-IBM-Cloud",
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-8d4321d936320802",
+        "EN-ae11c0abf6288776",
+        "EN-550f6ed5f71d0edc",
+        "EN-7f8f379674a95169"
+      ]
+    },
+    {
       "id": "HWC-d918b781f4810a43",
       "snapshotKey": "d918b781f4810a43",
-      "snapshotId": "HWS-e70243e56ecc4aeb",
+      "snapshotId": "HWS-020724059585fe2b",
       "eventId": "EV-0d1e8308d3c007aa",
       "eventIds": [
         "EV-0d1e8308d3c007aa"
       ],
-      "dataDate": "2026-08-11",
-      "date": "2026-08-11",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
       "title": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
       "subject": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
       "productNames": [],
@@ -2213,12 +2349,21 @@
         "shipment_deployment": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-27113143a2257768"
+          "fact_ref": "HWF-bffed5c6e1ba922a"
         }
       },
       "factCount": 2,
-      "snapshotCount": 3,
+      "snapshotCount": 4,
       "changes": [
+        {
+          "date": "2026-08-12",
+          "previousDate": "2026-08-11",
+          "snapshotId": "HWS-020724059585fe2b",
+          "previousSnapshotId": "HWS-e70243e56ecc4aeb",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        },
         {
           "date": "2026-08-11",
           "previousDate": "2026-08-10",
@@ -2241,8 +2386,8 @@
       "capacityFacts": [],
       "supplyFacts": [
         {
-          "data_date": "2026-08-11",
-          "hardware_fact_id": "HWF-bb74be86e82ce315",
+          "data_date": "2026-08-12",
+          "hardware_fact_id": "HWF-3a30e7257a685e09",
           "fact_type": "shipment_deployment",
           "observed_at": "2026-08-05T00:00:00.000Z",
           "subject_entity_id": "",
@@ -2256,15 +2401,15 @@
           "event_refs": [
             "EV-0d1e8308d3c007aa"
           ],
-          "claim_ref": "CL-f24534319e3c7a57",
+          "claim_ref": "CL-b6d4c4f41bb571e4",
           "source_refs": [
             "SA-ae55896eacdf2933"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-11/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-12/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-11",
-          "hardware_fact_id": "HWF-27113143a2257768",
+          "data_date": "2026-08-12",
+          "hardware_fact_id": "HWF-bffed5c6e1ba922a",
           "fact_type": "shipment_deployment",
           "observed_at": "2026-08-05T00:00:00.000Z",
           "subject_entity_id": "",
@@ -2278,11 +2423,11 @@
           "event_refs": [
             "EV-0d1e8308d3c007aa"
           ],
-          "claim_ref": "CL-aff32d3f98402179",
+          "claim_ref": "CL-48e69a0d2f3ccc40",
           "source_refs": [
             "SA-ae55896eacdf2933"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-11/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-12/hardware-facts.json"
         }
       ],
       "specificationFacts": [],
@@ -2294,13 +2439,13 @@
     {
       "id": "HWC-1e62a022d692183f",
       "snapshotKey": "1e62a022d692183f",
-      "snapshotId": "HWS-265c90f0fa8044ae",
+      "snapshotId": "HWS-f3389f759b5e09ec",
       "eventId": "EV-0d1e8308d3c007aa",
       "eventIds": [
         "EV-0d1e8308d3c007aa"
       ],
-      "dataDate": "2026-08-11",
-      "date": "2026-08-11",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
       "title": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
       "subject": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
       "productNames": [],
@@ -2312,12 +2457,21 @@
         "shipment_deployment": {
           "metric_value": "60",
           "unit": "%",
-          "fact_ref": "HWF-26afbfa8b9faf306"
+          "fact_ref": "HWF-729d4a5279872cf4"
         }
       },
       "factCount": 1,
-      "snapshotCount": 3,
+      "snapshotCount": 4,
       "changes": [
+        {
+          "date": "2026-08-12",
+          "previousDate": "2026-08-11",
+          "snapshotId": "HWS-f3389f759b5e09ec",
+          "previousSnapshotId": "HWS-265c90f0fa8044ae",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        },
         {
           "date": "2026-08-11",
           "previousDate": "2026-08-10",
@@ -2340,8 +2494,8 @@
       "capacityFacts": [],
       "supplyFacts": [
         {
-          "data_date": "2026-08-11",
-          "hardware_fact_id": "HWF-26afbfa8b9faf306",
+          "data_date": "2026-08-12",
+          "hardware_fact_id": "HWF-729d4a5279872cf4",
           "fact_type": "shipment_deployment",
           "observed_at": "2026-08-05T00:00:00.000Z",
           "subject_entity_id": "",
@@ -2355,11 +2509,11 @@
           "event_refs": [
             "EV-0d1e8308d3c007aa"
           ],
-          "claim_ref": "CL-a7b6dbc0f4eb7040",
+          "claim_ref": "CL-048aa90d5e3e6747",
           "source_refs": [
             "SA-ae55896eacdf2933"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-11/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-12/hardware-facts.json"
         }
       ],
       "specificationFacts": [],
@@ -2367,6 +2521,366 @@
       "tags": [],
       "sourceUrl": "https://globenewswire.com/news-release/2026/08/06/3339887/0/en/KAYTUS-Delivers-a-400-Rack-High-Density-Air-Cooled-Compute-Cluster-Within-72-Days-Cutting-Deployment-Time-by-60.html",
       "entityIds": []
+    },
+    {
+      "id": "HWC-be00792298019bfb",
+      "snapshotKey": "be00792298019bfb",
+      "snapshotId": "HWS-6201210f9dd696d4",
+      "eventId": "EV-c698da7da473b059",
+      "eventIds": [
+        "EV-c698da7da473b059"
+      ],
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "title": "LTX-2.5",
+      "subject": "NVIDIA",
+      "productNames": [
+        "LTX-2.5"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-c9ecf6fdbd4f9920"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-12",
+          "hardware_fact_id": "HWF-c9ecf6fdbd4f9920",
+          "fact_type": "product",
+          "observed_at": "2026-08-11T20:02:03.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "product_names": [
+            "LTX-2.5"
+          ],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Video production is shifting as social clips, ad creative and film pre-visualization move from cloud to local GPUs. LTX today released LTX-2.5 , an open weights world model for video generation, real-time applications, and physical AI, built for exactly that shift. LTX optimized the model for local inference on NVIDIA RTX GPUs and NVIDIA DGX Spark , cutting VRAM requirements so a frontier world model runs on hardware creators already own. The release anchors NVIDIA’s month-long local AI series , launched the same day as its open Nemotron 3.5 Lightning agent model. The signal from both: open models, accelerated locally, are becoming default production infrastructure.",
+          "event_refs": [
+            "EV-c698da7da473b059"
+          ],
+          "claim_ref": "CL-937974b78d1a1ce1",
+          "source_refs": [
+            "SA-ae7d14e67b0f21ec"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-12/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型",
+          "entityIds": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/08/11/the-video-production-stack-now-fits-on-one-desk-ltx-2-5-launches-as-nvidia-accelerated-open-weights-world-model",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-e59f5a52b6713a29"
+      ]
+    },
+    {
+      "id": "HWC-cc52beb822721e64",
+      "snapshotKey": "cc52beb822721e64",
+      "snapshotId": "HWS-db4a7b9bb87dfdca",
+      "eventId": "EV-5c30f52112d92491",
+      "eventIds": [
+        "EV-5c30f52112d92491"
+      ],
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "title": "Muse Glimmer",
+      "subject": "派早报",
+      "productNames": [
+        "Muse Glimmer"
+      ],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-789c63c938d93c78"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-12",
+          "hardware_fact_id": "HWF-789c63c938d93c78",
+          "fact_type": "product",
+          "observed_at": "2026-08-11T00:09:35.000Z",
+          "subject_entity_id": "EN-478676438ee161a3",
+          "subject_name": "派早报",
+          "product_entity_ids": [
+            "EN-f4bc2c89599f5449"
+          ],
+          "product_names": [
+            "Muse Glimmer"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "国家计算机病毒应急处理中心发布关于「Sorry」勒索病毒的预警报告 7",
+          "event_refs": [
+            "EV-5c30f52112d92491"
+          ],
+          "claim_ref": "CL-b082a872794c7e7e",
+          "source_refs": [
+            "SA-71dee0d401abb22d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-12/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://sspai.com/post/113301",
+      "entityIds": [
+        "EN-478676438ee161a3",
+        "EN-ea3bd73e2b506e00",
+        "EN-047364b9be67f665",
+        "EN-f4bc2c89599f5449"
+      ]
+    },
+    {
+      "id": "HWC-6931d33a37654cb1",
+      "snapshotKey": "6931d33a37654cb1",
+      "snapshotId": "HWS-b8365f91b40c5acb",
+      "eventId": "EV-3a7e7b6818fee0de",
+      "eventIds": [
+        "EV-3a7e7b6818fee0de"
+      ],
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "title": "Nemotron 3.5 Lightning",
+      "subject": "NVIDIA",
+      "productNames": [
+        "Nemotron 3.5 Lightning"
+      ],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-1e556a178e38feda"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-12",
+          "hardware_fact_id": "HWF-1e556a178e38feda",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-11T18:48:07.517Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [
+            "EN-f43fcac12953687c"
+          ],
+          "product_names": [
+            "Nemotron 3.5 Lightning"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "= \\\"tool\\\" %}\\n {{- '<|im_end|>\\\\n' }}\\n {%- elif loop.last %}\\n {{- '<|im_end|>\\\\n' }}\\n {%- endif %}\\n {%- else %}\\n {{- '<|im_start|>' + message.role + '\\\\n' + message.content + '<|im_end|>\\\\n' }}\\n {%- endif %}\\n{%- endfor %}\\n{%- if add_generation_prompt %}\\n {%- if enable_thinking %}\\n {{- '<|im_start|>assistant\\\\n<think>\\\\n' }}\\n {%- else %}\\n {{- '<|im_start|>assistant\\\\n<think></think>' }}\\n {%- endif %}\\n{%- endif %}\"},\"createdAt\":\"2026-08-04T19:10:45.000Z\",\"discussionsDisabled\":false,\"discussionsSorting\":\"recently-created\",\"downloads\":19250,\"downloadsAllTime\":19250,\"id\":\"nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4\",\"isLikedByUser\":false,\"availableInferenceProviders\":[],\"showHuggingChatEntry\":false,\"inference\":\"\",\"lastModified\":\"2026-08-11T23:01:59.000Z\",\"likes\":143,\"pipeline_tag\":\"text-generation\",\"library_name\":\"transformers\",\"librariesOther\":[],\"trackDownloads\":true,\"model-index\":null,\"private\":false,\"repoType\":\"model\",\"gated\":false,\"tags\":[\"transformers\",\"safetensors\",\"nemotron_h\",\"text-generation\",\"nvidia\",\"pytorch\",\"nemotron-3.5\",\"conversational\",\"en\",\"es\",\"fr\",\"de\",\"it\",\"ja\",\"license:other\",\"endpoints_compatible\",\"8-bit\",\"modelopt\",\"deploy:azure\",\"region:us\"],\"tag_objs\":[{\"id\":\"text-generation\",\"label\":\"Text Generation\",\"type\":\"pipeline_tag\",\"subType\":\"nlp\"},{\"id\":\"transformers\",\"label\":\"Transformers\",\"type\":\"library\"},{\"id\":\"safetensors\",\"label\":\"Safetensors\",\"type\":\"library\"},{\"id\":\"pytorch\",\"label\":\"PyTorch\",\"type\":\"library\"},{\"id\":\"en\",\"label\":\"English\",\"type\":\"language\"},{\"id\":\"es\",\"label\":\"Spanish\",\"type\":\"language\"},{\"id\":\"fr\",\"label\":\"French\",\"type\":\"language\"},{\"id\":\"de\",\"label\":\"German\",\"type\":\"language\"},{\"id\":\"it\",\"label\":\"Italian\",\"type\":\"language\"},{\"id\":\"ja\",\"label\":\"Japanese\",\"type\":\"language\"},{\"id\":\"nemotron_h\",\"label\":\"nemotron_h\",\"type\":\"other\",\"clickable\":true},{\"id\":\"nvidia\",\"label\":\"nvidia\",\"type\":\"other\",\"clickable\":true},{\"id\":\"nemotron-3.5\",\"label\":\"nemotron-3.5\",\"type\":\"other\",\"clickable\":true},{\"id\":\"conversational\",\"label\":\"conversational\",\"type\":\"other\",\"clickable\":true},{\"id\":\"endpoints_compatible\",\"label\":\"Inference Endpoints\",\"type\":\"other\",\"clickable\":true},{\"id\":\"8-bit\",\"label\":\"8-bit precision\",\"type\":\"other\",\"clickable\":true},{\"id\":\"modelopt\",\"label\":\"modelopt\",\"type\":\"other\",\"clickable\":true},{\"id\":\"license:other\",\"label\":\"other\",\"type\":\"license\"},{\"id\":\"deploy:azure\",\"label\":\"azure\",\"type\":\"deploy\"},{\"type\":\"region\",\"label\":\"🇺🇸 Region: US\",\"id\":\"region:us\"}],\"transformersInfo\":{\"auto_model\":\"AutoModelForCausalLM\",\"pipeline_tag\":\"text-generation\",\"processor\":\"AutoTokenizer\"},\"widgetData\":[{\"text\":\"Hi, what can you help me with?",
+          "event_refs": [
+            "EV-3a7e7b6818fee0de"
+          ],
+          "claim_ref": "CL-8b06830734f16081",
+          "source_refs": [
+            "SA-58ffa81f9947c927"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-12/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型",
+          "entityIds": [
+            "EN-f43fcac12953687c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-6c87e5496f592f3c",
+        "EN-f43fcac12953687c"
+      ]
+    },
+    {
+      "id": "HWC-3ee63c33f0d08ae1",
+      "snapshotKey": "3ee63c33f0d08ae1",
+      "snapshotId": "HWS-bed0c769fbd4f29a",
+      "eventId": "EV-b116eafe60d71fbe",
+      "eventIds": [
+        "EV-b116eafe60d71fbe"
+      ],
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "title": "Optical networking startup Lumilens",
+      "subject": "Optical networking startup Lumilens",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "900",
+          "unit": "$million",
+          "fact_ref": "HWF-57c6d92098b9d64b"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-12",
+          "previousDate": "2026-08-11",
+          "snapshotId": "HWS-bed0c769fbd4f29a",
+          "previousSnapshotId": "HWS-b9fd83ab6482cf90",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-12",
+          "hardware_fact_id": "HWF-57c6d92098b9d64b",
+          "fact_type": "product",
+          "observed_at": "2026-08-06T00:00:00.000Z",
+          "subject_entity_id": "EN-373da2ec629326c0",
+          "subject_name": "Optical networking startup Lumilens",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "900",
+          "unit": "$million",
+          "source_quote": "Lumilens Inc., a provider of optical networking chips for artificial intelligence clusters, launched today with $900 million in funding.",
+          "event_refs": [
+            "EV-b116eafe60d71fbe"
+          ],
+          "claim_ref": "CL-9e879afe6af6883c",
+          "source_refs": [
+            "SA-ac115da9da6dfd33"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-12/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding",
+      "entityIds": [
+        "EN-373da2ec629326c0",
+        "EN-a4ae746b11369c98"
+      ]
     },
     {
       "id": "HWC-28dbd0566a837349",
@@ -2553,67 +3067,6 @@
       "entityIds": [
         "EN-ea3bd73e2b506e00",
         "EN-f4bc2c89599f5449"
-      ]
-    },
-    {
-      "id": "HWC-3ee63c33f0d08ae1",
-      "snapshotKey": "3ee63c33f0d08ae1",
-      "snapshotId": "HWS-b9fd83ab6482cf90",
-      "eventId": "EV-b116eafe60d71fbe",
-      "eventIds": [
-        "EV-b116eafe60d71fbe"
-      ],
-      "dataDate": "2026-08-11",
-      "date": "2026-08-11",
-      "title": "Optical networking startup Lumilens",
-      "subject": "Optical networking startup Lumilens",
-      "productNames": [],
-      "hardwareType": "semiconductor",
-      "factTypes": [
-        "product"
-      ],
-      "latestValues": {
-        "product": {
-          "metric_value": "900",
-          "unit": "$million",
-          "fact_ref": "HWF-f54eb9198fc5a42f"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-08-11",
-          "hardware_fact_id": "HWF-f54eb9198fc5a42f",
-          "fact_type": "product",
-          "observed_at": "2026-08-06T00:00:00.000Z",
-          "subject_entity_id": "EN-373da2ec629326c0",
-          "subject_name": "Optical networking startup Lumilens",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "semiconductor",
-          "metric_value": "900",
-          "unit": "$million",
-          "source_quote": "Lumilens Inc., a provider of optical networking chips for artificial intelligence clusters, launched today with $900 million in funding.",
-          "event_refs": [
-            "EV-b116eafe60d71fbe"
-          ],
-          "claim_ref": "CL-77a4d1cc6531ee64",
-          "source_refs": [
-            "SA-ac115da9da6dfd33"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-11/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [],
-      "sourceUrl": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding",
-      "entityIds": [
-        "EN-373da2ec629326c0",
-        "EN-a4ae746b11369c98"
       ]
     },
     {
@@ -7396,34 +7849,34 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-08-11",
-      "funnel_id": "LF-14d23c8c2aea8622",
+      "data_date": "2026-08-12",
+      "funnel_id": "LF-ec3b6317f31b9af7",
       "lens": "hardware",
-      "date": "2026-08-11",
+      "date": "2026-08-12",
       "monitoring_paths": [
         "hardware_capacity_fab",
         "hardware_capex",
         "hardware_shipment_deployment"
       ],
-      "raw_documents": 22,
-      "original_sources": 22,
-      "valid_claims": 6,
+      "raw_documents": 21,
+      "original_sources": 20,
+      "valid_claims": 8,
       "observations": 9,
-      "canonical_events": 3,
+      "canonical_events": 2,
       "blocker_counts": {
-        "source_outside_daily_window": 11,
         "no_source_bounded_event": 2,
+        "source_outside_daily_window": 11,
         "non_event_or_index_title": 3,
-        "event_not_ai_relevant": 1,
-        "raw_source_quality_block": 2
+        "raw_source_quality_block": 2,
+        "raw_document_not_auditable": 1
       },
       "rates": {
-        "original_source_rate": 1,
-        "valid_claim_rate": 0.2727272727272727,
+        "original_source_rate": 0.9523809523809523,
+        "valid_claim_rate": 0.38095238095238093,
         "observation_rate": 1,
-        "event_conversion_rate": 0.5
+        "event_conversion_rate": 0.25
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-11/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-12/monitoring-funnel.json"
     }
   ]
 }

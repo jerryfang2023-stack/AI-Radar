@@ -5,13 +5,49 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-11T02:08:35.439Z",
-    "latestDataDate": "2026-08-11",
-    "currentDate": "2026-08-11",
-    "eventCount": 1993,
+    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2025,
     "quarantinedEventCount": 16
   },
   "fde": [
+    {
+      "id": "FDE-f99171bb7e8b4294",
+      "eventId": "EV-323d98437e42e8b3",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "title": "Kuehne+Nagel 与 HappyRobot 签署战略合作，将 AI 智能体部署到全球空运业务",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "HappyRobot",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Kuehne+Nagel",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://happyrobot.ai/customer-story/kuehne-nagel",
+      "entityIds": [
+        "EN-12bb49e1b12281f4"
+      ]
+    },
     {
       "id": "FDE-33d054bbd2e8d427",
       "eventId": "EV-d50bfbdb31595942",
@@ -185,39 +221,6 @@
       "sourceUrl": "https://globenewswire.com/news-release/2026/08/03/3337476/0/en/KIDZ-AI-Signs-Data-Center-MOU-with-Limestone-Networks-to-Deploy-Inference-Compute-Infrastructure-for-Open-Weight-AI-Models-Advancing-Its-44-6-Million-Canopy-Wave-Agreement.html",
       "entityIds": [
         "EN-bd6769fe78d0971a"
-      ]
-    },
-    {
-      "id": "FDE-f99171bb7e8b4294",
-      "eventId": "EV-323d98437e42e8b3",
-      "dataDate": "2026-08-07",
-      "date": "2026-08-07",
-      "title": "Kuehne+Nagel 与 HappyRobot 签署战略合作，将 AI 智能体部署到全球空运业务",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "HappyRobot",
-      "vendor": "HappyRobot",
-      "industry": "Logistics",
-      "useCase": "Kuehne+Nagel",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "workflow_before",
-        "workflow_after",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_delivery_components",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "https://happyrobot.ai/customer-story/kuehne-nagel",
-      "entityIds": [
-        "EN-12bb49e1b12281f4"
       ]
     },
     {
@@ -5534,6 +5537,54 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-4e31ac1c5e7360a8",
+      "implementationKey": "4e31ac1c5e7360a8",
+      "eventId": "EV-323d98437e42e8b3",
+      "eventIds": [
+        "EV-323d98437e42e8b3"
+      ],
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "title": "HappyRobot × 未披露：Kuehne+Nagel",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "HappyRobot",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Kuehne+Nagel",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-b78129ea103a26a9",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-12",
+          "dataDate": "2026-08-12",
+          "eventId": "EV-323d98437e42e8b3",
+          "eventTitle": "Kuehne+Nagel 与 HappyRobot 签署战略合作，将 AI 智能体部署到全球空运业务",
+          "claimCount": 1,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://happyrobot.ai/customer-story/kuehne-nagel",
+      "entityIds": [
+        "EN-12bb49e1b12281f4"
+      ]
+    },
+    {
       "id": "FDED-61bfc05b15701d97",
       "implementationKey": "61bfc05b15701d97",
       "eventId": "EV-c4cf8b6eedf31ad2",
@@ -6592,6 +6643,95 @@
   ],
   "events": [
     {
+      "id": "EV-55e7c286e95be405",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "General Catalyst 领投 River AI 11 亿美元融资",
+      "originalTitle": "",
+      "subject": "General Catalyst 领投 River AI 11 亿美元",
+      "action": "融资",
+      "object": "General Catalyst 领投 River AI 11 亿美元融资",
+      "metrics": [
+        "$1.1 billion",
+        "$1.1B"
+      ],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8ab71d56a963f706",
+        "EN-6fcba5d96a4fadfd",
+        "EN-8d4321d936320802",
+        "EN-c04bd5ebd10ab696",
+        "EN-7f871cbf905f6e0c",
+        "EN-2b6e51bec93e86c1"
+      ],
+      "entityNames": [
+        "River AI",
+        "xAI",
+        "NVIDIA",
+        "Mistral AI",
+        "OpenRouter",
+        "Google DeepMind"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
       "id": "EV-00f3271df4707d7c",
       "dataDate": "2026-08-11",
       "date": "2026-08-10",
@@ -7454,9 +7594,9 @@
     },
     {
       "id": "EV-b116eafe60d71fbe",
-      "dataDate": "2026-08-11",
+      "dataDate": "2026-08-12",
       "date": "2026-08-06",
-      "updatedDate": "2026-08-11",
+      "updatedDate": "2026-08-12",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
@@ -7503,6 +7643,96 @@
       "products": [],
       "sourceUrl": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding",
       "publisher": "siliconangle.com"
+    },
+    {
+      "id": "EV-cfbfc6c80338aa12",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-06",
+      "updatedDate": "2026-08-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "谷歌瞄准Mechanize的15亿美元投资，这家初创公司103天前刚筹集了910万美元种子轮",
+      "originalTitle": "Google eyes $1.5B for Mechanize, a startup that raised $9.1M seed 103 days ago | Dealroom News",
+      "subject": "Google eyes $1.5B for Mechanize, a startup that",
+      "action": "raised",
+      "object": "$9.1M seed 103 days ago | Dealroom News",
+      "metrics": [
+        "$1.5B",
+        "$9.1M",
+        "$9.1 million",
+        "$500 million",
+        "$1.5 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7ebe9a17c4d4c271"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7ebe9a17c4d4c271"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7ebe9a17c4d4c271"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-7ebe9a17c4d4c271",
+        "EN-b3130ec22ae093a7"
+      ],
+      "entityNames": [
+        "Google",
+        "Google eyes $1.5B for Mechanize, a startup that",
+        "Mechanize Dealroom"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://dealroom.co/news/143496-google-eyes-1-5b-for-mechanize-a-startup-that-raised-9-1m-seed-103-days",
+      "publisher": "dealroom.co"
     },
     {
       "id": "EV-34bc7a4ef57789b8",
@@ -108953,6 +109183,205 @@
       "publisher": "front.ai"
     },
     {
+      "id": "EV-49119ae718691877",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "updatedDate": "2026-08-12",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "IBM 获 2.4 亿美元合同，为 Together AI 部署 HGX B300 推理集群",
+      "originalTitle": "",
+      "subject": "IBM 获 2.4 亿美元合同，为 Together AI",
+      "action": "部署 HGX B300 推理集群",
+      "object": "IBM 获 2.4 亿美元合同，为 Together AI 部署 HGX B300 推理集群",
+      "metrics": [
+        "2.4 亿",
+        "16.22 亿"
+      ],
+      "locations": [
+        "美国"
+      ],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "IBM",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/988/647.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-b25b396e368ee4d9",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "updatedDate": "2026-08-12",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "国内首个成功运行超 2 万亿参数大模型的超节点，阿里云灵骏真武 M890 超节点实例上线",
+      "originalTitle": "",
+      "subject": "国内首个成功运行超 2 万亿参数大模型的超节点，阿里云灵骏真武 M890 超节点实例",
+      "action": "上线",
+      "object": "国内首个成功运行超 2 万亿参数大模型的超节点，阿里云灵骏真武 M890 超节点实例上线",
+      "metrics": [
+        "2 万"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-ithome-rss"
+        ],
+        "claim_refs": [
+          "CL-b132a9a3b43a42c5",
+          "CL-5003071f585b55ca",
+          "CL-061cdf466850041e",
+          "CL-3475a15badc32b9d"
+        ]
+      },
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-e9fc4f156e36f6aa"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-e9fc4f156e36f6aa"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-e9fc4f156e36f6aa"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-e9fc4f156e36f6aa"
+      ],
+      "entityNames": [
+        "Alibaba Cloud"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/988/688.htm",
+      "publisher": "IT之家"
+    },
+    {
+      "id": "EV-924d196a2412006f",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-12",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic与比特币矿商Riot Platforms签署91亿美元数据中心协议",
+      "originalTitle": "Anthropic signs $9.1 billion data center deal with Bitcoin miner Riot Platforms",
+      "subject": "Anthropic",
+      "action": "procurement_contract",
+      "object": "Riot Platforms",
+      "metrics": [
+        "$9.1 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://the-decoder.com/anthropic-signs-9-1-billion-data-center-deal-with-bitcoin-miner-riot-platforms",
+      "publisher": "The Decoder AI News"
+    },
+    {
       "id": "EV-d50bfbdb31595942",
       "dataDate": "2026-08-11",
       "date": "2026-08-11",
@@ -109423,9 +109852,9 @@
     },
     {
       "id": "EV-081fe42665b4a0b2",
-      "dataDate": "2026-08-11",
+      "dataDate": "2026-08-12",
       "date": "2026-08-06",
-      "updatedDate": "2026-08-11",
+      "updatedDate": "2026-08-12",
       "eventType": "deployment",
       "eventTypeLabel": "部署",
       "eventGroup": "部署与案例",
@@ -109593,9 +110022,9 @@
     },
     {
       "id": "EV-0d1e8308d3c007aa",
-      "dataDate": "2026-08-11",
+      "dataDate": "2026-08-12",
       "date": "2026-08-05",
-      "updatedDate": "2026-08-11",
+      "updatedDate": "2026-08-12",
       "eventType": "hardware_deployment",
       "eventTypeLabel": "硬件部署",
       "eventGroup": "AI 硬件",
@@ -127094,6 +127523,96 @@
       "publisher": "fedscoop.com"
     },
     {
+      "id": "EV-323d98437e42e8b3",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "updatedDate": "2026-08-12",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Kuehne+Nagel 与 HappyRobot 签署战略合作，将 AI 智能体部署到全球空运业务",
+      "originalTitle": "Kuehne+Nagel x HappyRobot Customer Story | HappyRobot",
+      "subject": "HappyRobot",
+      "action": "partnership",
+      "object": "Kuehne+Nagel",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-12bb49e1b12281f4"
+      ],
+      "entityNames": [
+        "HappyRobot"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://happyrobot.ai/customer-story/kuehne-nagel",
+      "publisher": "happyrobot.ai"
+    },
+    {
+      "id": "EV-812f6f7347091669",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-12",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "Novo Nordisk 与 AWS 将智能体 AI 引入药物发现",
+      "originalTitle": "",
+      "subject": "Novo Nordisk",
+      "action": "partnership",
+      "object": "AWS",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-12f8b4f550d22917"
+      ],
+      "entityNames": [
+        "Novo Nordisk"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://artificialintelligence-news.com/news/novo-nordisk-ai-drug-discovery-aws",
+      "publisher": "Artificial Intelligence News（RSS）"
+    },
+    {
       "id": "EV-c4cf8b6eedf31ad2",
       "dataDate": "2026-08-11",
       "date": "2026-08-10",
@@ -127465,52 +127984,6 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/987/100.htm",
       "publisher": "IT之家（RSS）"
-    },
-    {
-      "id": "EV-323d98437e42e8b3",
-      "dataDate": "2026-08-07",
-      "date": "2026-08-07",
-      "updatedDate": "2026-08-07",
-      "eventType": "partnership",
-      "eventTypeLabel": "合作",
-      "eventGroup": "商业合作",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Kuehne+Nagel 与 HappyRobot 签署战略合作，将 AI 智能体部署到全球空运业务",
-      "originalTitle": "Kuehne+Nagel x HappyRobot Customer Story | HappyRobot",
-      "subject": "HappyRobot",
-      "action": "partnership",
-      "object": "Kuehne+Nagel",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-12bb49e1b12281f4"
-      ],
-      "entityNames": [
-        "HappyRobot"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://happyrobot.ai/customer-story/kuehne-nagel",
-      "publisher": "happyrobot.ai"
     },
     {
       "id": "EV-bfc1664d74f43fb3",
@@ -138824,6 +139297,2210 @@
       "products": [],
       "sourceUrl": "https://markets.ft.com/data/announce/detail?dockey=1330-1001130978en-33HTR88M4N3TCG5HLKBIGEHTEH",
       "publisher": "markets.ft.com"
+    },
+    {
+      "id": "EV-0ad3854d95038ea3",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "updatedDate": "2026-08-12",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "派早报：微软已上调 Windows 11 OEM 授权费用、Claude 将为所有生成内容附加隐水印等",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "派早报：微软已上调 Windows 11 OEM 授权费用、Claude 将为所有生成内容附加隐水印等",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-1706429cbf67f1c9",
+        "EN-bbdefa2950f49882",
+        "EN-c70eca6b0f88f44d",
+        "EN-cb4754c48f8023d0"
+      ],
+      "entityNames": [
+        "Microsoft",
+        "European Union",
+        "Google",
+        "Anthropic",
+        "Claude Code"
+      ],
+      "productName": "Claude Code",
+      "products": [
+        {
+          "name": "Claude Code",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Microsoft"
+          ]
+        }
+      ],
+      "sourceUrl": "https://sspai.com/post/113343",
+      "publisher": "少数派"
+    },
+    {
+      "id": "EV-1b67695b10962867",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "updatedDate": "2026-08-12",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Claude Code v2.1.228 发布：修复交互会话重绘、Windows Git 检测及多项稳定性问题",
+      "originalTitle": "",
+      "subject": "Claude Code v2.1.228",
+      "action": "发布",
+      "object": "：修复交互会话重绘、Windows Git 检测及多项稳定性问题",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-cb4754c48f8023d0"
+      ],
+      "entityNames": [
+        "Claude Code"
+      ],
+      "productName": "Claude Code",
+      "products": [
+        {
+          "name": "Claude Code",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.228",
+      "publisher": "Claude Code：GitHub Releases（RSS）"
+    },
+    {
+      "id": "EV-2868ff08777b5de9",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "updatedDate": "2026-08-12",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "SpaceXAI 推出 Grok Bot，让多个 AI 智能体协同处理任务",
+      "originalTitle": "",
+      "subject": "SpaceXAI",
+      "action": "推出",
+      "object": "Grok Bot，让多个 AI 智能体协同处理任务",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-0b9ca57f53ba758b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-0b9ca57f53ba758b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [
+            "EN-0b9ca57f53ba758b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-0b9ca57f53ba758b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-0b9ca57f53ba758b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-0b9ca57f53ba758b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [
+            "EN-0b9ca57f53ba758b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-0b9ca57f53ba758b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-0b9ca57f53ba758b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-0b9ca57f53ba758b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [
+            "EN-0b9ca57f53ba758b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-6fcba5d96a4fadfd",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-92df1be3e37c9268",
+        "EN-0b9ca57f53ba758b"
+      ],
+      "entityNames": [
+        "xAI",
+        "Anthropic",
+        "OpenAI",
+        "Grok Bot",
+        "SpaceXAI"
+      ],
+      "productName": "Grok Bot",
+      "products": [
+        {
+          "name": "Grok Bot",
+          "type": "产品/服务",
+          "ownerNames": [
+            "xAI"
+          ]
+        },
+        {
+          "name": "SpaceXAI",
+          "type": "产品/服务",
+          "ownerNames": [
+            "xAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/988/570.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-3a7e7b6818fee0de",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "updatedDate": "2026-08-12",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "英伟达 Nemotron 3.5 Lightning 发布",
+      "originalTitle": "",
+      "subject": "英伟达 Nemotron 3.5 Lightning",
+      "action": "发布",
+      "object": "英伟达 Nemotron 3.5 Lightning 发布",
+      "metrics": [],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型",
+          "entityIds": [
+            "EN-f43fcac12953687c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型",
+          "entityIds": [
+            "EN-f43fcac12953687c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型",
+          "entityIds": [
+            "EN-f43fcac12953687c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-6c87e5496f592f3c",
+        "EN-f43fcac12953687c"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "SGLang",
+        "Nemotron 3.5 Lightning"
+      ],
+      "productName": "Nemotron 3.5 Lightning",
+      "products": [
+        {
+          "name": "Nemotron 3.5 Lightning",
+          "type": "产品/服务",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
+    },
+    {
+      "id": "EV-7e0d6eb92af58925",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "updatedDate": "2026-08-12",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "英伟达推出 30B 开源 AI 模型 Nemotron 3.5 Lightning",
+      "originalTitle": "",
+      "subject": "英伟达",
+      "action": "推出 30B 开源 AI 模型",
+      "object": "Nemotron 3.5 Lightning",
+      "metrics": [
+        "300 亿",
+        "30%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-f43fcac12953687c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型",
+          "entityIds": [
+            "EN-f43fcac12953687c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-f43fcac12953687c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型",
+          "entityIds": [
+            "EN-f43fcac12953687c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-f43fcac12953687c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型",
+          "entityIds": [
+            "EN-f43fcac12953687c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-f43fcac12953687c"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Nemotron 3.5 Lightning"
+      ],
+      "productName": "Nemotron 3.5 Lightning",
+      "products": [
+        {
+          "name": "Nemotron 3.5 Lightning",
+          "type": "模型",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/988/609.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-ab7dd515891566ab",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "updatedDate": "2026-08-12",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "OpenAI 推出预览版 ChatGPT for Linux 桌面端应用",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "推出",
+      "object": "预览版 ChatGPT for Linux 桌面端应用",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-d1ad14d4ad57d207",
+        "EN-13d3b1251dd48cef"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "ChatGPT",
+        "ChatGPT for Linux"
+      ],
+      "productName": "ChatGPT",
+      "products": [
+        {
+          "name": "ChatGPT",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        },
+        {
+          "name": "ChatGPT for Linux",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/988/562.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-ba2898569165c9a6",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "updatedDate": "2026-08-12",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Genesys推出业界首款由LAM驱动的企业客户体验智能体虚拟代理",
+      "originalTitle": "Genesys Unveils Industry’s First Agentic Virtual Agent Powered by LAMs for Enterprise CX | Genesys",
+      "subject": "Genesys",
+      "action": "Unveils",
+      "object": "Industry’s First Agentic Virtual Agent Powered by LAMs for Enterprise CX | Genesys",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-e214fdf90c1468b9"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-e214fdf90c1468b9"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-e214fdf90c1468b9"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-e214fdf90c1468b9"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-e214fdf90c1468b9"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-e214fdf90c1468b9",
+        "EN-0d1ed6d4b95a1e4d",
+        "EN-0487f0a02979cc7a"
+      ],
+      "entityNames": [
+        "Genesys",
+        "First Agentic Virtual",
+        "LAMs for Enterprise CX"
+      ],
+      "productName": "First Agentic Virtual",
+      "products": [
+        {
+          "name": "First Agentic Virtual",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "LAMs for Enterprise CX",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://genesys.com/company/newsroom/announcements/genesys-unveils-industrys-first-agentic-virtual-agent-powered-by-lams-for-enterprise-cx",
+      "publisher": "genesys.com"
+    },
+    {
+      "id": "EV-c698da7da473b059",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "updatedDate": "2026-08-12",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "LTX-2.5 发布：NVIDIA 加速的开源权重世界模型，将视频制作栈压缩到一张桌面",
+      "originalTitle": "",
+      "subject": "LTX-2.5",
+      "action": "发布：NVIDIA 加速的开源权重世界模型",
+      "object": "，将视频制作栈压缩到一张桌面",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型",
+          "entityIds": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-e59f5a52b6713a29"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型",
+          "entityIds": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型",
+          "entityIds": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-e59f5a52b6713a29"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "LTX-2.5"
+      ],
+      "productName": "LTX-2.5",
+      "products": [
+        {
+          "name": "LTX-2.5",
+          "type": "模型",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/08/11/the-video-production-stack-now-fits-on-one-desk-ltx-2-5-launches-as-nvidia-accelerated-open-weights-world-model",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
+      "id": "EV-5c30f52112d92491",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-12",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "派早报：Meta 发布开源本地 AI 智能体大模型 Muse Glimmer、阿里千问开放平台上线等",
+      "originalTitle": "",
+      "subject": "派早报：Meta",
+      "action": "发布",
+      "object": "开源本地 AI 智能体大模型 Muse Glimmer、阿里千问开放平台上线等",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-478676438ee161a3",
+        "EN-ea3bd73e2b506e00",
+        "EN-047364b9be67f665",
+        "EN-f4bc2c89599f5449"
+      ],
+      "entityNames": [
+        "派早报",
+        "Meta",
+        "Alibaba",
+        "Muse Glimmer"
+      ],
+      "productName": "Muse Glimmer",
+      "products": [
+        {
+          "name": "Muse Glimmer",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Meta"
+          ]
+        }
+      ],
+      "sourceUrl": "https://sspai.com/post/113301",
+      "publisher": "少数派"
+    },
+    {
+      "id": "EV-7d9f5f58066c65f9",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-12",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "更正——Trimble/ - 2026年8月11日",
+      "originalTitle": "/C O R R E C T I O N -- Trimble/ - Aug 11, 2026",
+      "subject": "Trimble",
+      "action": "product_release",
+      "object": "Trimble Arc Agent",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "automotive_transportation",
+            "name": "汽车与交通",
+            "entityIds": [
+              "EN-9044b6bac0e6d022"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-9044b6bac0e6d022"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-9044b6bac0e6d022"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9044b6bac0e6d022",
+        "EN-9032bf308ce555ce",
+        "EN-a79b73fe942e4c2f",
+        "EN-2b81f42e38647c33"
+      ],
+      "entityNames": [
+        "Trimble",
+        "Arc",
+        "C O R R",
+        "E C T I"
+      ],
+      "productName": "Arc",
+      "products": [
+        {
+          "name": "Arc",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "C O R R",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "E C T I",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://news.trimble.com/2026-08-11-Trimble-Introduces-Trimble-Arc-Agent-to-Safely-Automate-Manual-Workflows-for-Global-Supply-Chains",
+      "publisher": "news.trimble.com"
+    },
+    {
+      "id": "EV-87528c24b38b6312",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-12",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Claude骂声中启动「隐形水印」：新模型全量嵌入，标记所有文字",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "Claude骂声中启动「隐形水印」：新模型全量嵌入，标记所有文字",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-1706429cbf67f1c9"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "European Union"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://qbitai.com/2026/08/470228.html",
+      "publisher": "量子位"
+    },
+    {
+      "id": "EV-96745eb893ac0460",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-12",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "OpenAI 发布 ChatGPT Linux 桌面应用",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "发布",
+      "object": "ChatGPT Linux 桌面应用",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-0d492221804f1722",
+        "EN-8ddbbd8f55380ca7"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "ChatGPT Linux",
+        "ChatGPT desktop"
+      ],
+      "productName": "ChatGPT Linux",
+      "products": [
+        {
+          "name": "ChatGPT Linux",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        },
+        {
+          "name": "ChatGPT desktop",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/11/openai-launches-chatgpt-desktop-app-for-linux",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-c7d0b810ac3b3d4e",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-12",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "IBM与Together AI签署多年协议，利用IBM Cloud上的NVIDIA AI基础设施扩展开源AI推理 - 2026年8月11日",
+      "originalTitle": "IBM and Together AI Sign Multi-Year Agreement to Scale Open-Source AI Inference with NVIDIA AI Infrastructure on IBM Cloud - Aug 11, 2026",
+      "subject": "IBM and Together AI Sign Multi-Year Agreement to Scale",
+      "action": "Open-Source",
+      "object": "AI Inference with NVIDIA AI Infrastructure on IBM Cloud - Aug 11, 2026",
+      "metrics": [
+        "$240M",
+        "$800M",
+        "$8.3B",
+        "400 trillion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-8d4321d936320802",
+        "EN-ae11c0abf6288776",
+        "EN-550f6ed5f71d0edc",
+        "EN-7f8f379674a95169"
+      ],
+      "entityNames": [
+        "IBM",
+        "NVIDIA",
+        "AI Inference",
+        "AI Infrastructure",
+        "Aug 11"
+      ],
+      "productName": "AI Inference",
+      "products": [
+        {
+          "name": "AI Inference",
+          "type": "产品/服务",
+          "ownerNames": [
+            "IBM"
+          ]
+        },
+        {
+          "name": "AI Infrastructure",
+          "type": "产品/服务",
+          "ownerNames": [
+            "IBM"
+          ]
+        },
+        {
+          "name": "Aug 11",
+          "type": "产品/服务",
+          "ownerNames": [
+            "IBM"
+          ]
+        }
+      ],
+      "sourceUrl": "https://newsroom.ibm.com/2026-08-11-IBM-and-Together-AI-Sign-Multi-Year-Agreement-to-Scale-Open-Source-AI-Inference-with-NVIDIA-AI-Infrastructure-on-IBM-Cloud",
+      "publisher": "newsroom.ibm.com"
+    },
+    {
+      "id": "EV-df477fe0f4e418e8",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-12",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Lucrative AI 携 50 万美元预种子资金走出隐身模式，为企业营收运营带来 MCP 原生自动化",
+      "originalTitle": "Lucrative AI Launches Out of Stealth with $500K in Pre-Seed Funding to Bring MCP-Native Automation to Enterprise Revenue Operations | The AI Journal",
+      "subject": "Lucrative AI",
+      "action": "Launches",
+      "object": "Out of Stealth with $500K in Pre-Seed Funding to Bring MCP-Native Automation to Enterprise Revenue Operations | The AI Journal",
+      "metrics": [
+        "$500",
+        "$500,000 "
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-f3cf483fcb08fade",
+        "EN-2969d4a93d300a29",
+        "EN-c768f67366c2d10a",
+        "EN-8e7454d7cd4efebd"
+      ],
+      "entityNames": [
+        "Lucrative AI",
+        "Pre-Seed Funding",
+        "MCP-Native Automation",
+        "AI Journal"
+      ],
+      "productName": "Pre-Seed Funding",
+      "products": [
+        {
+          "name": "Pre-Seed Funding",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "MCP-Native Automation",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "AI Journal",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://aijourn.com/lucrative-ai-launches-out-of-stealth-with-500k-in-pre-seed-funding-to-bring-mcp-native-automation-to-enterprise-revenue-operations",
+      "publisher": "aijourn.com"
+    },
+    {
+      "id": "EV-e781e169725006f0",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-12",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "NVIDIA 推出 Nemotron 3.5 Lightning，加速本地智能体任务",
+      "originalTitle": "",
+      "subject": "NVIDIA",
+      "action": "推出",
+      "object": "Nemotron 3.5 Lightning，加速本地智能体任务",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-f43fcac12953687c"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Nemotron 3.5 Lightning"
+      ],
+      "productName": "Nemotron 3.5 Lightning",
+      "products": [
+        {
+          "name": "Nemotron 3.5 Lightning",
+          "type": "产品/服务",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-open-source-models-agents-nemotron",
+      "publisher": "NVIDIA Blog（RSS）"
+    },
+    {
+      "id": "EV-f3a29cb561809daf",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-12",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI推出ChatGPT Business版125美元高级席位，因智能体AI消耗更多令牌",
+      "originalTitle": "OpenAI introduces $125 Premium Seats for ChatGPT Business as agentic AI burns through more tokens",
+      "subject": "OpenAI",
+      "action": "introduces",
+      "object": "$125 Premium Seats for ChatGPT Business as agentic AI burns through more tokens",
+      "metrics": [
+        "$125 "
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-89f61ea0fb933f32",
+        "EN-e0daf49dcab82eb1"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "ChatGPT Business",
+        "Premium Seats for ChatGPT"
+      ],
+      "productName": "ChatGPT Business",
+      "products": [
+        {
+          "name": "ChatGPT Business",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        },
+        {
+          "name": "Premium Seats for ChatGPT",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/openai-introduces-125-premium-seats-for-chatgpt-business-as-agentic-ai-burns-through-more-tokens",
+      "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-f4b38b9778fca8ce",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-12",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "李开复：中国开源大模型让美国人很担忧",
+      "originalTitle": "",
+      "subject": "李开复：中国",
+      "action": "开源大模型",
+      "object": "让美国人很担忧",
+      "metrics": [],
+      "locations": [
+        "美国",
+        "中国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-52593fb3cf820033"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-52593fb3cf820033"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-52593fb3cf820033"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-52593fb3cf820033",
+        "EN-6849cf65695e6e77"
+      ],
+      "entityNames": [
+        "李开复",
+        "01.AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/988/466.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-ff924015298048ba",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-12",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "NVIDIA 发布 Nemotron 3.5 Lightning 与 NeMo Switchyard，提升智能体 AI 效率",
+      "originalTitle": "",
+      "subject": "NVIDIA",
+      "action": "发布",
+      "object": "Nemotron 3.5 Lightning 与 NeMo Switchyard，提升智能体 AI 效率",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-fa26115b400a5ab9",
+        "EN-f43fcac12953687c"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "NeMo Switchyard",
+        "Nemotron 3.5 Lightning"
+      ],
+      "productName": "NeMo Switchyard",
+      "products": [
+        {
+          "name": "NeMo Switchyard",
+          "type": "产品/服务",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        },
+        {
+          "name": "Nemotron 3.5 Lightning",
+          "type": "产品/服务",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "sourceUrl": "https://blogs.nvidia.com/blog/nemotron-lightning-switchyard-rtx-dgx",
+      "publisher": "NVIDIA Blog（RSS）"
     },
     {
       "id": "EV-2881df2bfc6f437d",
@@ -232282,6 +234959,412 @@
       "publisher": "Simon Willison 博客"
     },
     {
+      "id": "EV-6645d194b59939ca",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "updatedDate": "2026-08-12",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI 允许员工再套现 70 亿美元股票",
+      "originalTitle": "OpenAI lets employees cash out another $7 billion in stock",
+      "subject": "OpenAI",
+      "action": "financial_performance",
+      "object": "$7 billion stock buyback",
+      "metrics": [
+        "$7 billion",
+        "$852 billion",
+        "$6.6 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://the-decoder.com/openai-lets-employees-cash-out-another-7-billion-in-stock",
+      "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-94adebee59a6dede",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "updatedDate": "2026-08-12",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "OpenAI 高管莱特卡普宣布离职创业，奥尔特曼感谢其贡献",
+      "originalTitle": "",
+      "subject": "OpenAI 高管莱特卡普宣布",
+      "action": "离职",
+      "object": "创业，奥尔特曼感谢其贡献",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/988/556.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-bce258f8f915ff5f",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "updatedDate": "2026-08-12",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "又一位OpenAI高管离职",
+      "originalTitle": "Another OpenAI executive takes off",
+      "subject": "Brad Lightcap",
+      "action": "organization_people",
+      "object": "OpenAI",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/978048/brad-lightcap-openai-executive-departure",
+      "publisher": "The Verge AI"
+    },
+    {
+      "id": "EV-d5556189a6d30ac4",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "updatedDate": "2026-08-12",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "林俊旸官宣创办 AI 公司语用科技 Pragmatik Labs，聚焦下一代智能体",
+      "originalTitle": "",
+      "subject": "林俊旸",
+      "action": "organization_people",
+      "object": "Pragmatik Labs",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "entities"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/988/555.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-46254bfc37b846f5",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-12",
+      "eventType": "certification_compliance",
+      "eventTypeLabel": "认证合规",
+      "eventGroup": "组织、政策与法律",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "Claude 将为 AI 文本和图像添加不可见水印",
+      "originalTitle": "",
+      "subject": "Anthropic",
+      "action": "certification_compliance",
+      "object": "EU AI Act transparency obligations",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/977823/anthropic-claude-ai-watermarks-c2pa-text-images",
+      "publisher": "The Verge：AI（RSS）"
+    },
+    {
+      "id": "EV-580e20b23df595a1",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-12",
+      "eventType": "ipo_listing",
+      "eventTypeLabel": "IPO 与上市",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic计划中的大型IPO面临投资者对中国竞争对手及政治逆风的质疑",
+      "originalTitle": "Anthropic's planned mega-IPO faces investor skepticism over Chinese rivals and political headwinds",
+      "subject": "Anthropic's planned mega-",
+      "action": "IPO",
+      "object": "faces investor skepticism over Chinese rivals and political headwinds",
+      "metrics": [
+        "$965 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-2db20eefee9cf2d6",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic's planned mega",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://the-decoder.com/anthropics-planned-mega-ipo-faces-investor-skepticism-over-chinese-rivals-and-political-headwinds",
+      "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-69a71871ab13f462",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-12",
+      "eventType": "security_incident",
+      "eventTypeLabel": "安全事件",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "‘Zoomsday’黑客攻击被揭露，仅用不到20个AI提示即可实现",
+      "originalTitle": "‘Zoomsday’ hack uncovered using fewer than 20 AI prompts",
+      "subject": "Zoom",
+      "action": "security_incident",
+      "object": "major security vulnerability in annotation feature",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-d21bb537725d603e"
+      ],
+      "entityNames": [
+        "Zoom"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/977909/zoom-vulnerability-ai-attack",
+      "publisher": "The Verge AI"
+    },
+    {
+      "id": "EV-908fda3369e5c764",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-12",
+      "eventType": "organization_restructuring",
+      "eventTypeLabel": "组织重组",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Firstsource与Cresta合作加速AI驱动的客户体验转型",
+      "originalTitle": "Firstsource and Cresta Partner to Accelerate AI-Powered Customer Experience Transformation",
+      "subject": "Firstsource",
+      "action": "organization_restructuring",
+      "object": "AI Center of Excellence",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-e6150927e0781e59"
+      ],
+      "entityNames": [
+        "Firstsource"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://prnewswire.com/news-releases/firstsource-and-cresta-partner-to-accelerate-ai-powered-customer-experience-transformation-302848501.html",
+      "publisher": "prnewswire.com"
+    },
+    {
+      "id": "EV-d7d649a3126aa663",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-12",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "Anthropic 将为 Claude 等模型生成的文本添加水印以符合欧盟法规",
+      "originalTitle": "",
+      "subject": "EU AI Act’s Transparency Code",
+      "action": "法规",
+      "object": "Anthropic 将为 Claude 等模型生成的文本添加水印以符合欧盟法规",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-1706429cbf67f1c9"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "European Union"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
       "id": "EV-9769817530c1a1fa",
       "dataDate": "2026-08-11",
       "date": "2026-08-11",
@@ -235269,50 +238352,6 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://ithome.com/0/983/396.htm",
-      "publisher": "IT之家（RSS）"
-    },
-    {
-      "id": "EV-bce258f8f915ff5f",
-      "dataDate": "2026-07-30",
-      "date": "2026-07-30",
-      "updatedDate": "2026-07-30",
-      "eventType": "organization_people",
-      "eventTypeLabel": "组织与人员",
-      "eventGroup": "组织、政策与法律",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "翁荔重返OpenAI，领导\"递归自我改进\"团队",
-      "originalTitle": "",
-      "subject": "翁荔",
-      "action": "organization_people",
-      "object": "OpenAI",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-7d3194f79e645c42"
-      ],
-      "entityNames": [
-        "OpenAI"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://ithome.com/0/983/393.htm",
       "publisher": "IT之家（RSS）"
     },
     {

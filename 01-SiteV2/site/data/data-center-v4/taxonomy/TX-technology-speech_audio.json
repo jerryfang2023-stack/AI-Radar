@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-11T02:08:35.439Z",
-    "latestDataDate": "2026-08-11",
-    "currentDate": "2026-08-11",
-    "eventCount": 1993,
+    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2025,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -1894,6 +1894,7 @@
         "EV-e1a4bc40db4a9d8f",
         "EV-3d9aa640411471ea",
         "EV-2a833330267cb2df",
+        "EV-5c30f52112d92491",
         "EV-497344d95d593cf6",
         "EV-0679a9b49b53ddbd",
         "EV-355ddfd4c6180ab0",
@@ -1966,7 +1967,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-11",
+      "lastSeen": "2026-08-12",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -1979,7 +1980,9 @@
       "name": "Microsoft",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "微软"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -2023,6 +2026,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-0ad3854d95038ea3",
         "EV-890ffd351486b884",
         "EV-bfaac87ceac44b9d",
         "EV-ec283dd6bd3ac991",
@@ -2113,15 +2117,20 @@
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
+        "EN-688f8db7018da7d4",
+        "EN-827b607311e6593e",
+        "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
+        "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-8d4321d936320802"
+        "EN-8d4321d936320802",
+        "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "EN-7ad34701224a4d2d",
@@ -2158,11 +2167,13 @@
       "eventIds": [
         "EV-32d7c52f89d74e88",
         "EV-ad40755ca624afe7",
+        "EV-49119ae718691877",
         "EV-bcb74b02448b7d78",
         "EV-df2357fc3c3b4f5e",
         "EV-bbc1042dcf5ad317",
         "EV-6272444f30281858",
         "EV-b95539d17772a4ce",
+        "EV-c7d0b810ac3b3d4e",
         "EV-37b18c0341c66c08",
         "EV-5bc7efca0bc7fec0",
         "EV-9fb08b68f301eb88",
@@ -2176,6 +2187,7 @@
         "TX-technology-agentic_execution",
         "TX-use_case-software_development",
         "TX-technology-retrieval_augmented_generation",
+        "TX-technology-fine_tuning",
         "TX-technology-model_context_protocol",
         "TX-technology-tool_use",
         "TX-technology-speech_audio"
@@ -2184,7 +2196,7 @@
         "EN-dc6c28a2123e8efb"
       ],
       "firstSeen": "2026-05-15",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "EN-ec1c8f558ff61e34",
@@ -2263,12 +2275,15 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-55e7c286e95be405",
         "EV-83728e3b6c7736ce",
         "EV-2dea56b0e97c1685",
         "EV-da1655ecfaf35feb",
@@ -2288,6 +2303,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-49119ae718691877",
         "EV-d84f24c8c72e7e47",
         "EV-b3ef1eed47191c55",
         "EV-83d022f89ba29209",
@@ -2338,6 +2354,12 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-3a7e7b6818fee0de",
+        "EV-7e0d6eb92af58925",
+        "EV-c698da7da473b059",
+        "EV-c7d0b810ac3b3d4e",
+        "EV-e781e169725006f0",
+        "EV-ff924015298048ba",
         "EV-82fcff365b154465",
         "EV-39d56d5cef4cea80",
         "EV-6703b102274c3be9",
@@ -2439,6 +2461,7 @@
         "TX-industry-automotive_transportation",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
+        "TX-use_case-software_development",
         "TX-use_case-security_operations",
         "TX-use_case-physical_automation",
         "TX-product_form-ai_infrastructure_software",
@@ -2447,6 +2470,7 @@
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-model_api_service",
         "TX-use_case-customer_support",
+        "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-product_form-ai_compute_system",
@@ -2460,24 +2484,31 @@
       "relatedEntityIds": [
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
+        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-11"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "EN-2b6e51bec93e86c1",
@@ -2492,6 +2523,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-55e7c286e95be405",
         "EV-6f092cfc7a064d64",
         "EV-d4e44892226be468",
         "EV-1ac32035d5e425e1",
@@ -2555,7 +2587,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-07"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "EN-ed501d3e2d977553",

@@ -1,0 +1,259 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2025,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-7f8f379674a95169",
+    "name": "Aug 11",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-c7d0b810ac3b3d4e"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-11",
+    "lastSeen": "2026-08-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-c7d0b810ac3b3d4e"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-c7d0b810ac3b3d4e",
+        "dataDate": "2026-08-12",
+        "date": "2026-08-11",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "IBM与Together AI签署多年协议，利用IBM Cloud上的NVIDIA AI基础设施扩展开源AI推理 - 2026年8月11日",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "fine_tuning",
+            "name": "模型微调",
+            "entityIds": [
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-916a98f0fa2a39af",
+          "EN-8d4321d936320802",
+          "EN-550f6ed5f71d0edc",
+          "EN-7f8f379674a95169"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-1e90510260afb7ed",
+      "snapshotKey": "1e90510260afb7ed",
+      "snapshotId": "HWS-b144d4a901bfc4c0",
+      "eventId": "EV-c7d0b810ac3b3d4e",
+      "eventIds": [
+        "EV-c7d0b810ac3b3d4e"
+      ],
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "title": "AI Inference / AI Infrastructure / Aug 11",
+      "subject": "IBM",
+      "productNames": [
+        "AI Inference",
+        "AI Infrastructure",
+        "Aug 11"
+      ],
+      "hardwareType": "data_center / gpu",
+      "factTypes": [
+        "shipment_deployment",
+        "product"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "240",
+          "unit": "$M",
+          "fact_ref": "HWF-9cbeeb2c983c4cb1"
+        },
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-19cf0adc686822b5"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-12",
+          "hardware_fact_id": "HWF-9cbeeb2c983c4cb1",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-11T00:00:00.000Z",
+          "subject_entity_id": "EN-916a98f0fa2a39af",
+          "subject_name": "IBM",
+          "product_entity_ids": [
+            "EN-ae11c0abf6288776",
+            "EN-550f6ed5f71d0edc",
+            "EN-7f8f379674a95169"
+          ],
+          "product_names": [
+            "AI Inference",
+            "AI Infrastructure",
+            "Aug 11"
+          ],
+          "component_type": "data_center",
+          "metric_value": "240",
+          "unit": "$M",
+          "source_quote": "ARMONK, N.Y. and SAN FRANCISCO , Aug. 11, 2026 / PRNewswire / -- IBM (NYSE: IBM ) announced a collaboration with Together AI to deliver IBM and NVIDIA AI infrastructure. Under a multi-year $240M agreement between IBM and Together AI, IBM is positioned to deploy a large cluster of NVIDIA HGX B300 systems on IBM Cloud with expected availability in Q1 2027. Together AI will use this cluster to provide open-source model inference. This deployment is the first dedicated, large-scale cluster built for inference on IBM Cloud using HGX B300 systems and NVIDIA Spectrum - X TM Ethernet networking. According to NVIDIA, it is built to deliver 30x more AI factory output compared to prior generations.",
+          "event_refs": [
+            "EV-c7d0b810ac3b3d4e"
+          ],
+          "claim_ref": "CL-b231b184a65f4a65",
+          "source_refs": [
+            "SA-6f090f4104f497db"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-12/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-12",
+          "hardware_fact_id": "HWF-19cf0adc686822b5",
+          "fact_type": "product",
+          "observed_at": "2026-08-11T00:00:00.000Z",
+          "subject_entity_id": "EN-916a98f0fa2a39af",
+          "subject_name": "IBM",
+          "product_entity_ids": [
+            "EN-ae11c0abf6288776",
+            "EN-550f6ed5f71d0edc",
+            "EN-7f8f379674a95169"
+          ],
+          "product_names": [
+            "AI Inference",
+            "AI Infrastructure",
+            "Aug 11"
+          ],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Together AI selected IBM with NVIDIA because of their innovative product roadmaps and their ability to deliver GPU capacity at the pace required for rapid AI scaling and lowest token cost. Building on IBM's expertise in delivering enterprise-grade cloud capabilities, this collaboration aims to help Together AI to continue its expansion into the enterprise space while making open-source AI more accessible to developers and enterprises around the world.",
+          "event_refs": [
+            "EV-c7d0b810ac3b3d4e"
+          ],
+          "claim_ref": "CL-24a0cb23124840fe",
+          "source_refs": [
+            "SA-6f090f4104f497db"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-12/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newsroom.ibm.com/2026-08-11-IBM-and-Together-AI-Sign-Multi-Year-Agreement-to-Scale-Open-Source-AI-Inference-with-NVIDIA-AI-Infrastructure-on-IBM-Cloud",
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-8d4321d936320802",
+        "EN-ae11c0abf6288776",
+        "EN-550f6ed5f71d0edc",
+        "EN-7f8f379674a95169"
+      ]
+    }
+  ]
+}

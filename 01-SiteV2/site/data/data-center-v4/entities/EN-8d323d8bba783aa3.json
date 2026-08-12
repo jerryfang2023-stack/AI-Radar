@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-11T02:08:35.439Z",
-    "latestDataDate": "2026-08-11",
-    "currentDate": "2026-08-11",
-    "eventCount": 1993,
+    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2025,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -469,6 +469,7 @@
       ],
       "eventIds": [
         "EV-a0ca934522418c0b",
+        "EV-cfbfc6c80338aa12",
         "EV-9b81b0dd09a046ab",
         "EV-e41fc65eb014893f",
         "EV-dfddbb260b3d1c77",
@@ -506,6 +507,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-0ad3854d95038ea3",
         "EV-5111b297a0234e46",
         "EV-e234a2e2418ebdf1",
         "EV-271b304f0a16b6db",
@@ -641,6 +643,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
@@ -652,7 +655,6 @@
         "TX-target_user-business_user",
         "TX-industry-aerospace_defense",
         "TX-use_case-research_discovery",
-        "TX-industry-financial_services",
         "TX-industry-manufacturing",
         "TX-use_case-software_development",
         "TX-use_case-security_operations",
@@ -684,7 +686,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-11"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "EN-96eebba49dbbf422",
@@ -850,12 +852,15 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-55e7c286e95be405",
         "EV-83728e3b6c7736ce",
         "EV-2dea56b0e97c1685",
         "EV-da1655ecfaf35feb",
@@ -875,6 +880,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-49119ae718691877",
         "EV-d84f24c8c72e7e47",
         "EV-b3ef1eed47191c55",
         "EV-83d022f89ba29209",
@@ -925,6 +931,12 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-3a7e7b6818fee0de",
+        "EV-7e0d6eb92af58925",
+        "EV-c698da7da473b059",
+        "EV-c7d0b810ac3b3d4e",
+        "EV-e781e169725006f0",
+        "EV-ff924015298048ba",
         "EV-82fcff365b154465",
         "EV-39d56d5cef4cea80",
         "EV-6703b102274c3be9",
@@ -1026,6 +1038,7 @@
         "TX-industry-automotive_transportation",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
+        "TX-use_case-software_development",
         "TX-use_case-security_operations",
         "TX-use_case-physical_automation",
         "TX-product_form-ai_infrastructure_software",
@@ -1034,6 +1047,7 @@
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-model_api_service",
         "TX-use_case-customer_support",
+        "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-product_form-ai_compute_system",
@@ -1047,24 +1061,31 @@
       "relatedEntityIds": [
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
+        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-11"
+      "lastSeen": "2026-08-12"
     }
   ],
   "relationships": [

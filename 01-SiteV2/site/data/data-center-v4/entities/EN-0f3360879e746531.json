@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-11T02:08:35.439Z",
-    "latestDataDate": "2026-08-11",
-    "currentDate": "2026-08-11",
-    "eventCount": 1993,
+    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2025,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -443,12 +443,15 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-55e7c286e95be405",
         "EV-83728e3b6c7736ce",
         "EV-2dea56b0e97c1685",
         "EV-da1655ecfaf35feb",
@@ -468,6 +471,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-49119ae718691877",
         "EV-d84f24c8c72e7e47",
         "EV-b3ef1eed47191c55",
         "EV-83d022f89ba29209",
@@ -518,6 +522,12 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-3a7e7b6818fee0de",
+        "EV-7e0d6eb92af58925",
+        "EV-c698da7da473b059",
+        "EV-c7d0b810ac3b3d4e",
+        "EV-e781e169725006f0",
+        "EV-ff924015298048ba",
         "EV-82fcff365b154465",
         "EV-39d56d5cef4cea80",
         "EV-6703b102274c3be9",
@@ -619,6 +629,7 @@
         "TX-industry-automotive_transportation",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
+        "TX-use_case-software_development",
         "TX-use_case-security_operations",
         "TX-use_case-physical_automation",
         "TX-product_form-ai_infrastructure_software",
@@ -627,6 +638,7 @@
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-model_api_service",
         "TX-use_case-customer_support",
+        "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-product_form-ai_compute_system",
@@ -640,24 +652,31 @@
       "relatedEntityIds": [
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
+        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-11"
+      "lastSeen": "2026-08-12"
     }
   ],
   "relationships": [
@@ -763,6 +782,7 @@
         "EV-59882383f82f215d",
         "EV-c5d7d88d1aef8edb",
         "EV-cded77b1de2db61a",
+        "EV-b25b396e368ee4d9",
         "EV-d2a623e8eef1f61d",
         "EV-dda9429d76897a3d",
         "EV-212aa5b375abf8a7",
@@ -787,6 +807,9 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-5c30f52112d92491",
+        "EV-c7d0b810ac3b3d4e",
+        "EV-f4b38b9778fca8ce",
         "EV-1d3b117dad798008",
         "EV-497344d95d593cf6",
         "EV-a4c177cc432df82e",
@@ -958,6 +981,7 @@
         "EN-cd35ca6b5c3cf23c",
         "EN-883be863cc6562bb",
         "EN-a83a3af1a4866fd5",
+        "EN-e9fc4f156e36f6aa",
         "EN-bd6769fe78d0971a",
         "EN-968e2d5b08687bf4",
         "EN-b81c8201acfc7639",
@@ -968,6 +992,7 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
+        "EN-52593fb3cf820033",
         "EN-32e83e92d45d71f6",
         "EN-6849cf65695e6e77",
         "EN-74be4cbf48e647b2",
@@ -1061,7 +1086,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-11"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "TX-ai_market_category-infrastructure_compute",
@@ -1461,6 +1486,7 @@
         "EV-d10684a6f16afe10",
         "EV-b31602193dbf4e08",
         "EV-e8bc5b0eebef5813",
+        "EV-96745eb893ac0460",
         "EV-96ac5185b17601f0",
         "EV-43a39dfbbc05a8ce",
         "EV-9009adaed650ddde",
@@ -1596,6 +1622,7 @@
         "EN-636396f02b6571e4",
         "EN-c08f86842ff2c908",
         "EN-df30a48992da7fe8",
+        "EN-7d3194f79e645c42",
         "EN-e9b7b590a01726a5",
         "EN-b0126946c556dc47",
         "EN-0e6e9f1ba413b8d1",
@@ -1606,7 +1633,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "TX-target_user-researcher",
@@ -1753,6 +1780,7 @@
         "EV-39848cdd62c00e59",
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
+        "EV-c7d0b810ac3b3d4e",
         "EV-a37b9d9fb85e460f",
         "EV-19bcfc6d7c1612cb",
         "EV-941ba9ebdc43f20c",
@@ -1866,7 +1894,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-08-11"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "TX-use_case-physical_automation",
@@ -1916,6 +1944,8 @@
         "EV-e4fec8a00b416d12",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
+        "EV-c698da7da473b059",
+        "EV-e781e169725006f0",
         "EV-257c7ec21edf638a",
         "EV-eb12fb9dd08e5aad",
         "EV-7a0f201debe99f2b",
@@ -1990,6 +2020,7 @@
         "EN-3e14bbbb0445c2de",
         "EN-7c5d04104b1d34e7",
         "EN-72138e570e5103e2",
+        "EN-e59f5a52b6713a29",
         "EN-2b6e51bec93e86c1",
         "EN-364df82f85761d58",
         "EN-8d57f84bd1847b24",
@@ -2028,7 +2059,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "TX-ai_market_application-models",

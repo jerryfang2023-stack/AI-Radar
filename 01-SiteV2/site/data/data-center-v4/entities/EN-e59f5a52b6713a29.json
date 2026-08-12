@@ -1,0 +1,650 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2025,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-e59f5a52b6713a29",
+    "name": "LTX-2.5",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-c698da7da473b059"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-use_case-physical_automation",
+      "TX-technology-embodied_ai",
+      "TX-technology-mixture_of_experts",
+      "TX-technology-open_weights",
+      "TX-technology-video_generation"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-12",
+    "lastSeen": "2026-08-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-c698da7da473b059"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-c698da7da473b059",
+        "dataDate": "2026-08-12",
+        "date": "2026-08-12",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "LTX-2.5 发布：NVIDIA 加速的开源权重世界模型，将视频制作栈压缩到一张桌面",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-e59f5a52b6713a29"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "video_generation",
+            "name": "视频生成",
+            "entityIds": [
+              "EN-e59f5a52b6713a29"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [
+              "EN-e59f5a52b6713a29"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-e59f5a52b6713a29"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "mixture_of_experts",
+            "name": "混合专家模型",
+            "entityIds": [
+              "EN-e59f5a52b6713a29"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-e59f5a52b6713a29"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-use_case-physical_automation",
+      "name": "物理自动化",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "physical_automation",
+      "eventIds": [
+        "EV-dc35d54f273196f0",
+        "EV-268e5c3d36e3ed28",
+        "EV-e9e30789854cd180",
+        "EV-eb881f5de456b59a",
+        "EV-c7ba7b093a1a3b94",
+        "EV-fcf3c464260b6730",
+        "EV-4e1d2d6105d09d24",
+        "EV-869c9ea96c58873d",
+        "EV-ee38c30c00b2a754",
+        "EV-d3fcd1ea4d9baf47",
+        "EV-80e54c9a390da293",
+        "EV-52bf48005db3461a",
+        "EV-7f3298069258b3ea",
+        "EV-9fa9822969d3c3fd",
+        "EV-236cbc2d64f0c455",
+        "EV-9486e14e99499e3b",
+        "EV-56da7cceeebc8bcf",
+        "EV-ef7346378fcf9746",
+        "EV-59882383f82f215d",
+        "EV-be59d9048dd1b6a0",
+        "EV-1188b1585b835fe1",
+        "EV-60d58e2a1f5733f8",
+        "EV-cded77b1de2db61a",
+        "EV-a909450a2d1a1fe1",
+        "EV-d2409770301edc83",
+        "EV-af8e95dbe06ac083",
+        "EV-876baa523eb93c4f",
+        "EV-cec68369662236fd",
+        "EV-cafe435ddd007821",
+        "EV-434dcf1813a84ead",
+        "EV-f059fd80d668c6bc",
+        "EV-e7b228c1b6b54c6a",
+        "EV-57d3b7aa1a2f0fda",
+        "EV-234ad54940674bf6",
+        "EV-b40ba79822469bc0",
+        "EV-8540958262148517",
+        "EV-f2551f5cc8e2715e",
+        "EV-5a9fe80f8e4ae066",
+        "EV-e4fec8a00b416d12",
+        "EV-39848cdd62c00e59",
+        "EV-4faa2bcf2e42e60c",
+        "EV-c698da7da473b059",
+        "EV-e781e169725006f0",
+        "EV-257c7ec21edf638a",
+        "EV-eb12fb9dd08e5aad",
+        "EV-7a0f201debe99f2b",
+        "EV-60110525440fac47",
+        "EV-6bac0bf442887889",
+        "EV-c7e1e920e54bb364",
+        "EV-f79713437230562f",
+        "EV-2bbbe9f38c3d66f0",
+        "EV-03d40407042d7986",
+        "EV-7f92b7e410ed08f1",
+        "EV-b76705cd8461925f",
+        "EV-03ab7d0b40d1e5b5",
+        "EV-d4278191ae11f198",
+        "EV-ed272c57e1513d3f",
+        "EV-6833305504174bb1",
+        "EV-73da0805f2a2705a",
+        "EV-345c8a2cc00fe8ca",
+        "EV-a69dd82a0512a294",
+        "EV-c844ddabb8528896",
+        "EV-c5a59cb4cc9d7e8e",
+        "EV-d1e8407177e11fdc",
+        "EV-941ba9ebdc43f20c",
+        "EV-6b51b1b6fe22c540",
+        "EV-303b418c63895ba6",
+        "EV-3353bd96728c99e2",
+        "EV-57565fc2e7502c59",
+        "EV-87d662ff5c6f05f4",
+        "EV-49751dfc7d2f6d6c",
+        "EV-66338f5fb682617e",
+        "EV-e1a7e7dcb19bfc70",
+        "EV-c834a9d33a86373c",
+        "EV-24a536bc53a87050",
+        "EV-3f8ba5855b64dd1a",
+        "EV-7da59380bb30e76a",
+        "EV-67f32771d69084d6",
+        "EV-df3f5cf6bc985a9c",
+        "EV-1587a760d81451be",
+        "EV-ad64347138da72bb"
+      ],
+      "entityIds": [
+        "EN-e6f19fa7a6b52367",
+        "EN-5f5ed85925074c92",
+        "EN-b73a9d7b59c9b674",
+        "EN-0f3360879e746531",
+        "EN-7ef08ef63597d47c",
+        "EN-ed9980025e312ded",
+        "EN-4e0a97cb956fb1c6",
+        "EN-2b60b46911fc1640",
+        "EN-634537cdabd4e325",
+        "EN-8d4321d936320802",
+        "EN-6b5df3bd8bb0c67d",
+        "EN-37a54e5c414654d8",
+        "EN-b51b27d89f9ea747",
+        "EN-05f6ecf01ac4ebec",
+        "EN-5aacd10b5dbfa7b7",
+        "EN-e78bdebae031095b",
+        "EN-53453cfb48a75dde",
+        "EN-7d0445227e7dde72",
+        "EN-39ba5f9dcab4e98a",
+        "EN-1032f7a4df33f629",
+        "EN-a83a3af1a4866fd5",
+        "EN-cb1041ddf6123c37",
+        "EN-c5456c9421743002",
+        "EN-ce22f929f4a17467",
+        "EN-4731aa5b66658c7f",
+        "EN-2d939f5af4c3da33",
+        "EN-8dc72a4672894e0f",
+        "EN-9a1a3ee1f50745c6",
+        "EN-3b39ea849059759f",
+        "EN-3cce50ffb12f1a69",
+        "EN-85f0c155e340fb63",
+        "EN-3e14bbbb0445c2de",
+        "EN-7c5d04104b1d34e7",
+        "EN-72138e570e5103e2",
+        "EN-e59f5a52b6713a29",
+        "EN-2b6e51bec93e86c1",
+        "EN-364df82f85761d58",
+        "EN-8d57f84bd1847b24",
+        "EN-febedfcafee9d610",
+        "EN-240389f4b730bad4",
+        "EN-593d0361124f348f",
+        "EN-a96df57737b74def",
+        "EN-e2c64fbbaf48eeb2",
+        "EN-0e6e48aba1669631",
+        "EN-d77c36c05230024c",
+        "EN-be548deba4a093d7",
+        "EN-c51e27d8efcff21f",
+        "EN-522d3edeb64a7ca4",
+        "EN-8afd897b5b887b06",
+        "EN-920510199770f4d6",
+        "EN-30081094f2a8c83d",
+        "EN-4e7e886400fe6a83",
+        "EN-0d049cd1e9f619f9",
+        "EN-7f6333102da9e8bd",
+        "EN-5e1fcba4c9f1cf69",
+        "EN-80ea42a231357d12",
+        "EN-0a7411a215b0fa5b"
+      ],
+      "fdeIds": [
+        "FDE-a9fc583eb4065d4d",
+        "FDE-dadf0e9572889d3d"
+      ],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3",
+        "HW-8ec8f237534254df",
+        "HW-eb5bba1ad6c016b0",
+        "HW-b13c3131fc20fe83",
+        "HW-155f566cfd988f5e",
+        "HW-cb9cc06cadda488b",
+        "HW-0ebffabe51a60966",
+        "HW-dca442211b264bbe"
+      ],
+      "firstSeen": "2026-01-12",
+      "lastSeen": "2026-08-12"
+    },
+    {
+      "id": "TX-technology-embodied_ai",
+      "name": "具身智能",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "embodied_ai",
+      "eventIds": [
+        "EV-fcf3c464260b6730",
+        "EV-ee38c30c00b2a754",
+        "EV-d3fcd1ea4d9baf47",
+        "EV-43b56d49df9a73a2",
+        "EV-1188b1585b835fe1",
+        "EV-60d58e2a1f5733f8",
+        "EV-a909450a2d1a1fe1",
+        "EV-d2409770301edc83",
+        "EV-876baa523eb93c4f",
+        "EV-cec68369662236fd",
+        "EV-5bbc509a032b8309",
+        "EV-5bfbab92b22b68f1",
+        "EV-cafe435ddd007821",
+        "EV-234ad54940674bf6",
+        "EV-b40ba79822469bc0",
+        "EV-acb2087779a8ea3c",
+        "EV-6415a58637893b34",
+        "EV-4faa2bcf2e42e60c",
+        "EV-c698da7da473b059",
+        "EV-39d56d5cef4cea80",
+        "EV-eb12fb9dd08e5aad",
+        "EV-60110525440fac47",
+        "EV-c4f8ef356373ab24",
+        "EV-7f92b7e410ed08f1",
+        "EV-b580e33cabfea980",
+        "EV-4cb7e4c371fb252e",
+        "EV-2499dc922663af7e",
+        "EV-345c8a2cc00fe8ca",
+        "EV-82b39e10391d0f3c",
+        "EV-941ba9ebdc43f20c",
+        "EV-6b51b1b6fe22c540",
+        "EV-d633676a4a7d89a3",
+        "EV-6a2f3e9a22edff64",
+        "EV-49751dfc7d2f6d6c",
+        "EV-197aac95e60671f7",
+        "EV-24a536bc53a87050",
+        "EV-e2d4132c671e3d41",
+        "EV-3f8ba5855b64dd1a",
+        "EV-08f736f61f2b46f3"
+      ],
+      "entityIds": [
+        "EN-7ef08ef63597d47c",
+        "EN-2b60b46911fc1640",
+        "EN-634537cdabd4e325",
+        "EN-bbdefa2950f49882",
+        "EN-4f34468a2f780cf5",
+        "EN-42f34ac1fcb8d44f",
+        "EN-d816a2902f879e1e",
+        "EN-4213e49804834ead",
+        "EN-2d939f5af4c3da33",
+        "EN-9a1a3ee1f50745c6",
+        "EN-b5318593e1260f2f",
+        "EN-8d4321d936320802",
+        "EN-85f0c155e340fb63",
+        "EN-240389f4b730bad4",
+        "EN-e59f5a52b6713a29",
+        "EN-2b6e51bec93e86c1",
+        "EN-b47de584b4515427",
+        "EN-149ae7e9819a17a0",
+        "EN-02865db849986974",
+        "EN-0e6e48aba1669631",
+        "EN-754c490bd199c21a",
+        "EN-30081094f2a8c83d",
+        "EN-67f2d22514622d1b",
+        "EN-7f6333102da9e8bd",
+        "EN-89e3f0711b76932c",
+        "EN-5e1fcba4c9f1cf69"
+      ],
+      "fdeIds": [
+        "FDE-c846ebc19f50a93f",
+        "FDE-becc5964d9b5f86c",
+        "FDE-dadf0e9572889d3d",
+        "FDE-a85c538af1b093ed"
+      ],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3",
+        "HW-eb5bba1ad6c016b0",
+        "HW-155f566cfd988f5e",
+        "HW-dca442211b264bbe",
+        "HW-1450585d9cd5879f"
+      ],
+      "firstSeen": "2026-01-12",
+      "lastSeen": "2026-08-12"
+    },
+    {
+      "id": "TX-technology-mixture_of_experts",
+      "name": "混合专家模型",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "mixture_of_experts",
+      "eventIds": [
+        "EV-80e54c9a390da293",
+        "EV-3a7e7b6818fee0de",
+        "EV-7e0d6eb92af58925",
+        "EV-c698da7da473b059",
+        "EV-3eb44a239ebef4b0",
+        "EV-2fea1664807824ce",
+        "EV-70e3f88cb06a856c",
+        "EV-53f881da31630a04",
+        "EV-3ef3e18df61a00d8",
+        "EV-568d2aeab5234e48",
+        "EV-97a8d86baa7fffc4",
+        "EV-964971e83a649d4d",
+        "EV-57597c92f7b183a9"
+      ],
+      "entityIds": [
+        "EN-f43fcac12953687c",
+        "EN-e59f5a52b6713a29",
+        "EN-9fbf261b62c1d7c0",
+        "EN-0d1e478de2157d48",
+        "EN-4b078b39d2fcacc7",
+        "EN-8d4321d936320802",
+        "EN-bbf9aece05291ea4",
+        "EN-2b6e51bec93e86c1",
+        "EN-6e898ad0522fca30",
+        "EN-72e8088a05b38ae3"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-06",
+      "lastSeen": "2026-08-12"
+    },
+    {
+      "id": "TX-technology-open_weights",
+      "name": "开放权重",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "open_weights",
+      "eventIds": [
+        "EV-1abf0d076d30ec6d",
+        "EV-d2a623e8eef1f61d",
+        "EV-f55d16df5b5fecb2",
+        "EV-c698da7da473b059",
+        "EV-29c0d969abde2020",
+        "EV-7228e4310ee1341a",
+        "EV-890ffd351486b884",
+        "EV-3dc8d5c373ddd1f3",
+        "EV-d230942b0787581a",
+        "EV-db304937ceac95d2",
+        "EV-cfba8b877da20eaf",
+        "EV-63858d9b5ef92175",
+        "EV-acf3df526813ed37",
+        "EV-afcefb5d86a2db45",
+        "EV-ca18725115b61bd3",
+        "EV-0f0b2013927ce156",
+        "EV-702276a31f123374",
+        "EV-fe519605ebb69aaf",
+        "EV-2fea1664807824ce",
+        "EV-b888d3eb5f192649",
+        "EV-b84035029a63e52e",
+        "EV-3028dfadf94c8f4c",
+        "EV-a06011da69abcc3d",
+        "EV-e2da1aafabb3e09c",
+        "EV-2258329f33d413cf",
+        "EV-735fac8d2be356bb",
+        "EV-86537be17d50ff20"
+      ],
+      "entityIds": [
+        "EN-bd6769fe78d0971a",
+        "EN-e59f5a52b6713a29",
+        "EN-ea3bd73e2b506e00",
+        "EN-a899a3dde1d51caf",
+        "EN-74be4cbf48e647b2",
+        "EN-47dd52018c2b6985",
+        "EN-920510199770f4d6",
+        "EN-422332977c41eb77",
+        "EN-88ab1e5d793701f9",
+        "EN-c70eca6b0f88f44d",
+        "EN-6b61eab266a42eb0",
+        "EN-cc70f504af53013a",
+        "EN-bc1fc5140040180e",
+        "EN-0d1e478de2157d48",
+        "EN-047364b9be67f665",
+        "EN-d41ebd9f02722fc8",
+        "EN-8d4321d936320802",
+        "EN-b3e3bce83d29e787",
+        "EN-f7a386a451b79627",
+        "EN-6ac6ad44bb9995ca"
+      ],
+      "fdeIds": [
+        "FDE-0193a6afd26db7ae",
+        "FDE-a8fea104d63ff671"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-08-12"
+    },
+    {
+      "id": "TX-technology-video_generation",
+      "name": "视频生成",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "video_generation",
+      "eventIds": [
+        "EV-522c339dded54be5",
+        "EV-a354af52772334fd",
+        "EV-26d2874c6ce028d6",
+        "EV-c698da7da473b059",
+        "EV-2791b442fd32b894",
+        "EV-10c4f4db6c3f2d72",
+        "EV-63858d9b5ef92175",
+        "EV-650e4b23d45d5758",
+        "EV-6654f62015eff8e3",
+        "EV-50893df365a7097d",
+        "EV-6fbbbfcdcec81df4",
+        "EV-fd8ecce5de2f667d",
+        "EV-5babb43f4b4d302f",
+        "EV-d8c69ed782b73a34",
+        "EV-c7404765df94a3b4",
+        "EV-473f852b374d8b1c",
+        "EV-887d47bb477e2142"
+      ],
+      "entityIds": [
+        "EN-e1517be14d06cdb7",
+        "EN-d747d6f5125b6bee",
+        "EN-b81c8201acfc7639",
+        "EN-e59f5a52b6713a29",
+        "EN-047364b9be67f665",
+        "EN-422332977c41eb77",
+        "EN-c9e6168149dd7cf6",
+        "EN-ec1c8f558ff61e34",
+        "EN-2b6e51bec93e86c1",
+        "EN-01f1074bb52ff605",
+        "EN-47c1e53c427aafb4"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [
+        "HW-68457c8c0a7240ac"
+      ],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-08-12"
+    }
+  ],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-be00792298019bfb",
+      "snapshotKey": "be00792298019bfb",
+      "snapshotId": "HWS-6201210f9dd696d4",
+      "eventId": "EV-c698da7da473b059",
+      "eventIds": [
+        "EV-c698da7da473b059"
+      ],
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
+      "title": "LTX-2.5",
+      "subject": "NVIDIA",
+      "productNames": [
+        "LTX-2.5"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-c9ecf6fdbd4f9920"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-12",
+          "hardware_fact_id": "HWF-c9ecf6fdbd4f9920",
+          "fact_type": "product",
+          "observed_at": "2026-08-11T20:02:03.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "product_names": [
+            "LTX-2.5"
+          ],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Video production is shifting as social clips, ad creative and film pre-visualization move from cloud to local GPUs. LTX today released LTX-2.5 , an open weights world model for video generation, real-time applications, and physical AI, built for exactly that shift. LTX optimized the model for local inference on NVIDIA RTX GPUs and NVIDIA DGX Spark , cutting VRAM requirements so a frontier world model runs on hardware creators already own. The release anchors NVIDIA’s month-long local AI series , launched the same day as its open Nemotron 3.5 Lightning agent model. The signal from both: open models, accelerated locally, are becoming default production infrastructure.",
+          "event_refs": [
+            "EV-c698da7da473b059"
+          ],
+          "claim_ref": "CL-937974b78d1a1ce1",
+          "source_refs": [
+            "SA-ae7d14e67b0f21ec"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-12/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型",
+          "entityIds": [
+            "EN-e59f5a52b6713a29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/08/11/the-video-production-stack-now-fits-on-one-desk-ltx-2-5-launches-as-nvidia-accelerated-open-weights-world-model",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-e59f5a52b6713a29"
+      ]
+    }
+  ]
+}

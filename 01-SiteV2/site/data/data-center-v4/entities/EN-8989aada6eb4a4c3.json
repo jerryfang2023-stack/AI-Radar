@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-11T02:08:35.439Z",
-    "latestDataDate": "2026-08-11",
-    "currentDate": "2026-08-11",
-    "eventCount": 1993,
+    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2025,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -28,13 +28,12 @@
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [
-      "EN-5a28a1a99a417ba5"
+      "EN-d30e5ffc0ba9150b"
     ],
     "firstSeen": "2026-07-24",
     "lastSeen": "2026-08-08",
     "relationIds": [
-      "REL2-cd73da9ddfba14ff",
-      "REL2-98b97689d5a7c1bf"
+      "REL2-e1d65aab90a4ab28"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -122,58 +121,35 @@
   },
   "relatedEntities": [
     {
-      "id": "EN-5a28a1a99a417ba5",
-      "name": "Ant Group",
+      "id": "EN-d30e5ffc0ba9150b",
+      "name": "蚂蚁集团",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "蚂蚁集团"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-72dc9ab86e08fbab",
-        "EV-4c8fa40c36b6ddb7"
+        "EV-6f1729f6968b72c9"
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution"
+        "TX-product_form-model",
+        "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
         "EN-8989aada6eb4a4c3"
       ],
-      "firstSeen": "2026-08-07",
-      "lastSeen": "2026-08-08"
+      "firstSeen": "2026-07-24",
+      "lastSeen": "2026-07-25"
     }
   ],
   "relationships": [
     {
-      "relationship_id": "REL2-cd73da9ddfba14ff",
+      "relationship_id": "REL2-e1d65aab90a4ab28",
       "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-5a28a1a99a417ba5",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-8989aada6eb4a4c3",
-      "object_type": "entity",
-      "event_id": "EV-72dc9ab86e08fbab",
-      "claim_refs": [
-        "CL-24c1d3ba0b3991a6",
-        "CL-310204201291f150",
-        "CL-ecb55432ea944920",
-        "CL-b203b1076c6cbafd"
-      ],
-      "source_refs": [
-        "SA-b44fb0bd0c5ebf61"
-      ],
-      "data_date": "2026-08-08",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-98b97689d5a7c1bf",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-5a28a1a99a417ba5",
+      "subject_ref": "EN-d30e5ffc0ba9150b",
       "subject_type": "entity",
       "predicate": "publishes",
       "object_ref": "EN-8989aada6eb4a4c3",

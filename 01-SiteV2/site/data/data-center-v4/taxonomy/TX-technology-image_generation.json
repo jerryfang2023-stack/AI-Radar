@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-11T02:08:35.439Z",
-    "latestDataDate": "2026-08-11",
-    "currentDate": "2026-08-11",
-    "eventCount": 1993,
+    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2025,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -1240,6 +1240,7 @@
       ],
       "eventIds": [
         "EV-a0ca934522418c0b",
+        "EV-cfbfc6c80338aa12",
         "EV-9b81b0dd09a046ab",
         "EV-e41fc65eb014893f",
         "EV-dfddbb260b3d1c77",
@@ -1277,6 +1278,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-0ad3854d95038ea3",
         "EV-5111b297a0234e46",
         "EV-e234a2e2418ebdf1",
         "EV-271b304f0a16b6db",
@@ -1412,6 +1414,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
@@ -1423,7 +1426,6 @@
         "TX-target_user-business_user",
         "TX-industry-aerospace_defense",
         "TX-use_case-research_discovery",
-        "TX-industry-financial_services",
         "TX-industry-manufacturing",
         "TX-use_case-software_development",
         "TX-use_case-security_operations",
@@ -1455,14 +1457,16 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-11"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "EN-9fbf261b62c1d7c0",
       "name": "Microsoft",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "微软"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -1506,6 +1510,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-0ad3854d95038ea3",
         "EV-890ffd351486b884",
         "EV-bfaac87ceac44b9d",
         "EV-ec283dd6bd3ac991",
@@ -1596,15 +1601,20 @@
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
+        "EN-688f8db7018da7d4",
+        "EN-827b607311e6593e",
+        "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
+        "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-8d4321d936320802"
+        "EN-8d4321d936320802",
+        "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "EN-bae152c4560df38c",
@@ -1662,6 +1672,7 @@
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-43301de739fe560e",
+        "EV-5c30f52112d92491",
         "EV-29c0d969abde2020",
         "EV-1ffe795574cae551",
         "EV-2fa8fef6da3a5937",
@@ -1755,7 +1766,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-11"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "EN-534e99d81da1c54d",
@@ -1792,6 +1803,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-55e7c286e95be405",
         "EV-6f092cfc7a064d64",
         "EV-d4e44892226be468",
         "EV-1ac32035d5e425e1",
@@ -1855,7 +1867,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-07"
+      "lastSeen": "2026-08-12"
     }
   ],
   "fde": [],

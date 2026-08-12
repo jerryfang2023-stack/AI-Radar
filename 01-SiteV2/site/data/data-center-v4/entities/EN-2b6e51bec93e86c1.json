@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-11T02:08:35.439Z",
-    "latestDataDate": "2026-08-11",
-    "currentDate": "2026-08-11",
-    "eventCount": 1993,
+    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2025,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -24,6 +24,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-55e7c286e95be405",
       "EV-6f092cfc7a064d64",
       "EV-d4e44892226be468",
       "EV-1ac32035d5e425e1",
@@ -87,7 +88,7 @@
       "EN-a3c3b987b09fc1bb"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-08-07",
+    "lastSeen": "2026-08-12",
     "relationIds": [
       "REL2-284835caff7e4288",
       "REL2-3ebed8c60e163231",
@@ -97,6 +98,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-55e7c286e95be405",
         "EV-6f092cfc7a064d64",
         "EV-d4e44892226be468",
         "EV-1ac32035d5e425e1"
@@ -145,6 +147,36 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-55e7c286e95be405",
+        "dataDate": "2026-08-12",
+        "date": "2026-08-11",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "General Catalyst 领投 River AI 11 亿美元融资",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-8ab71d56a963f706",
+          "EN-6fcba5d96a4fadfd",
+          "EN-8d4321d936320802",
+          "EN-c04bd5ebd10ab696",
+          "EN-7f871cbf905f6e0c",
+          "EN-2b6e51bec93e86c1"
+        ]
+      },
       {
         "id": "EV-4e3e9b543127b55a",
         "dataDate": "2026-08-07",
@@ -1572,6 +1604,7 @@
         "EV-59882383f82f215d",
         "EV-c5d7d88d1aef8edb",
         "EV-cded77b1de2db61a",
+        "EV-b25b396e368ee4d9",
         "EV-d2a623e8eef1f61d",
         "EV-dda9429d76897a3d",
         "EV-212aa5b375abf8a7",
@@ -1596,6 +1629,9 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-5c30f52112d92491",
+        "EV-c7d0b810ac3b3d4e",
+        "EV-f4b38b9778fca8ce",
         "EV-1d3b117dad798008",
         "EV-497344d95d593cf6",
         "EV-a4c177cc432df82e",
@@ -1767,6 +1803,7 @@
         "EN-cd35ca6b5c3cf23c",
         "EN-883be863cc6562bb",
         "EN-a83a3af1a4866fd5",
+        "EN-e9fc4f156e36f6aa",
         "EN-bd6769fe78d0971a",
         "EN-968e2d5b08687bf4",
         "EN-b81c8201acfc7639",
@@ -1777,6 +1814,7 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
+        "EN-52593fb3cf820033",
         "EN-32e83e92d45d71f6",
         "EN-6849cf65695e6e77",
         "EN-74be4cbf48e647b2",
@@ -1870,7 +1908,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-11"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "TX-product_form-chip_accelerator",
@@ -1925,6 +1963,7 @@
         "EV-93fad8e0e30e442c",
         "EV-3d8608d3e78e031b",
         "EV-8fcb52bb6ec980af",
+        "EV-c7d0b810ac3b3d4e",
         "EV-2fa8fef6da3a5937",
         "EV-cfaa2f6b5c7a5f8a",
         "EV-3dc8d5c373ddd1f3",
@@ -2075,7 +2114,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-11"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "TX-use_case-research_discovery",
@@ -2292,6 +2331,8 @@
         "EV-d209a6acecba4285",
         "EV-75b9b997e9c7e5d1",
         "EV-b2e374d54b10b9af",
+        "EV-2868ff08777b5de9",
+        "EV-ff924015298048ba",
         "EV-29c0d969abde2020",
         "EV-099c1bce0a50965d",
         "EV-91d4c91861a715c1",
@@ -2370,6 +2411,8 @@
         "EN-df30a48992da7fe8",
         "EN-3db1f560db626918",
         "EN-7c3482959a6cdd3f",
+        "EN-0b9ca57f53ba758b",
+        "EN-8d4321d936320802",
         "EN-ea3bd73e2b506e00",
         "EN-7d3194f79e645c42",
         "EN-76a9a8a6e2f1a47b",
@@ -2397,7 +2440,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-11"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "TX-use_case-security_operations",
@@ -2586,6 +2629,8 @@
         "EV-e4fec8a00b416d12",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
+        "EV-c698da7da473b059",
+        "EV-e781e169725006f0",
         "EV-257c7ec21edf638a",
         "EV-eb12fb9dd08e5aad",
         "EV-7a0f201debe99f2b",
@@ -2660,6 +2705,7 @@
         "EN-3e14bbbb0445c2de",
         "EN-7c5d04104b1d34e7",
         "EN-72138e570e5103e2",
+        "EN-e59f5a52b6713a29",
         "EN-2b6e51bec93e86c1",
         "EN-364df82f85761d58",
         "EN-8d57f84bd1847b24",
@@ -2698,7 +2744,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "TX-technology-code_generation",
@@ -2726,6 +2772,8 @@
         "EV-4c0af31f1399ea8c",
         "EV-e1a4bc40db4a9d8f",
         "EV-d5f276ad6b2ac9de",
+        "EV-2868ff08777b5de9",
+        "EV-ff924015298048ba",
         "EV-29c0d969abde2020",
         "EV-51feac871951fdbb",
         "EV-91d4c91861a715c1",
@@ -2770,6 +2818,8 @@
         "EN-ac32f27ba7a1346f",
         "EN-5b3767eb23d5e4ed",
         "EN-3db1f560db626918",
+        "EN-0b9ca57f53ba758b",
+        "EN-8d4321d936320802",
         "EN-ea3bd73e2b506e00",
         "EN-96783c5f75425c34",
         "EN-e5904fa438fcd5bf",
@@ -2800,7 +2850,7 @@
         "HW-b1302168a9ab18e8"
       ],
       "firstSeen": "2026-03-30",
-      "lastSeen": "2026-08-11"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "TX-technology-multimodal",
@@ -2927,6 +2977,7 @@
         "EV-acb2087779a8ea3c",
         "EV-6415a58637893b34",
         "EV-4faa2bcf2e42e60c",
+        "EV-c698da7da473b059",
         "EV-39d56d5cef4cea80",
         "EV-eb12fb9dd08e5aad",
         "EV-60110525440fac47",
@@ -2963,6 +3014,7 @@
         "EN-8d4321d936320802",
         "EN-85f0c155e340fb63",
         "EN-240389f4b730bad4",
+        "EN-e59f5a52b6713a29",
         "EN-2b6e51bec93e86c1",
         "EN-b47de584b4515427",
         "EN-149ae7e9819a17a0",
@@ -2989,7 +3041,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-06"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "TX-technology-vision_language",
@@ -3028,6 +3080,9 @@
       "valueId": "mixture_of_experts",
       "eventIds": [
         "EV-80e54c9a390da293",
+        "EV-3a7e7b6818fee0de",
+        "EV-7e0d6eb92af58925",
+        "EV-c698da7da473b059",
         "EV-3eb44a239ebef4b0",
         "EV-2fea1664807824ce",
         "EV-70e3f88cb06a856c",
@@ -3039,6 +3094,8 @@
         "EV-57597c92f7b183a9"
       ],
       "entityIds": [
+        "EN-f43fcac12953687c",
+        "EN-e59f5a52b6713a29",
         "EN-9fbf261b62c1d7c0",
         "EN-0d1e478de2157d48",
         "EN-4b078b39d2fcacc7",
@@ -3051,7 +3108,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-06",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "TX-technology-on_device",
@@ -3066,6 +3123,7 @@
         "EV-d5c00f302e1f808c",
         "EV-7263caa45bbf168e",
         "EV-3d9aa640411471ea",
+        "EV-e781e169725006f0",
         "EV-3dc8d5c373ddd1f3",
         "EV-7a0f201debe99f2b",
         "EV-79913a2e72f0269b",
@@ -3096,6 +3154,7 @@
         "EN-b5318593e1260f2f",
         "EN-968e2d5b08687bf4",
         "EN-87c730bc4f32459e",
+        "EN-8d4321d936320802",
         "EN-74be4cbf48e647b2",
         "EN-2b6e51bec93e86c1",
         "EN-e21783b898b55a31",
@@ -3106,7 +3165,6 @@
         "EN-de6b71bf77ff4299",
         "EN-3a7bd3e2360a3d29",
         "EN-dd920a8cd166f486",
-        "EN-8d4321d936320802",
         "EN-c3ce0cc92b48bbd6",
         "EN-b7dac8ddfad3bea8",
         "EN-6f7ac1823da81d2e"
@@ -3116,7 +3174,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "TX-deployment_model-edge_device",
@@ -3192,6 +3250,7 @@
         "EV-522c339dded54be5",
         "EV-a354af52772334fd",
         "EV-26d2874c6ce028d6",
+        "EV-c698da7da473b059",
         "EV-2791b442fd32b894",
         "EV-10c4f4db6c3f2d72",
         "EV-63858d9b5ef92175",
@@ -3210,6 +3269,7 @@
         "EN-e1517be14d06cdb7",
         "EN-d747d6f5125b6bee",
         "EN-b81c8201acfc7639",
+        "EN-e59f5a52b6713a29",
         "EN-047364b9be67f665",
         "EN-422332977c41eb77",
         "EN-c9e6168149dd7cf6",
@@ -3223,7 +3283,7 @@
         "HW-68457c8c0a7240ac"
       ],
       "firstSeen": "2026-06-16",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "TX-technology-image_generation",
