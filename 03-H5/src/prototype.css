@@ -24,6 +24,60 @@ button { color: inherit; }
   font-family: "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif;
 }
 
+.splash-app { position: relative; overflow: hidden; }
+.splash-screen {
+  position: absolute;
+  z-index: 60;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  place-items: center;
+  border: 0;
+  padding: max(88px, calc(var(--safe-top) + 34px)) 32px calc(var(--mobile-safe-area-height, 28px) + 30px);
+  background:
+    radial-gradient(circle at 50% 42%, rgba(200, 167, 102, .07), transparent 34%),
+    var(--paper);
+  color: var(--ink);
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.splash-brand-stage {
+  align-self: end;
+  width: min(78%, 292px);
+  display: grid;
+  justify-items: center;
+  animation: splash-brand-in 700ms cubic-bezier(.22, 1, .36, 1) both;
+}
+.splash-logo { width: 100%; height: auto; display: block; }
+.splash-divider { width: 34px; height: 1px; margin: 30px 0 22px; background: var(--gold); }
+.splash-slogan {
+  font: 800 21px/1.35 Georgia, "Noto Serif SC", serif;
+  letter-spacing: .14em;
+}
+.splash-description { margin-top: 12px; color: var(--muted); font-size: 11px; letter-spacing: .08em; }
+.splash-footer { align-self: end; width: 140px; display: grid; gap: 13px; color: #8b8273; font-size: 9px; letter-spacing: .18em; }
+.splash-progress { height: 1px; overflow: hidden; background: rgba(200, 167, 102, .28); }
+.splash-progress i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--gold);
+  transform-origin: left center;
+  animation: splash-progress 1500ms cubic-bezier(.4, 0, .2, 1) both;
+}
+
+@keyframes splash-brand-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes splash-progress {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
 .app-screen { background: var(--paper); }
 .screen-content { padding: calc(var(--safe-top) + 68px) 18px calc(var(--mobile-safe-area-height) + 92px); }
 .screen-content.sub-screen, .screen-content.detail-screen, .screen-content.report-detail { padding-top: calc(var(--safe-top) + 70px); }
@@ -290,4 +344,8 @@ button { color: inherit; }
 
 @media (min-width: 601px) {
   .guanlan-app { min-height: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .splash-brand-stage, .splash-progress i { animation: none; }
 }

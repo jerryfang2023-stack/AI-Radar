@@ -13,6 +13,18 @@ test("H5 contains all four confirmed columns", async () => {
   }
 });
 
+test("H5 opens with the confirmed Guanlan brand splash", async () => {
+  const source = await readFile(new URL("../src/Prototype.tsx", import.meta.url), "utf8");
+  const styles = await readFile(new URL("../src/prototype.css", import.meta.url), "utf8");
+
+  for (const phrase of ["洞察趋势 · 智见未来", "AI 融资情报与市场观察", "观澜 AI"]) {
+    assert.ok(source.includes(phrase), `missing splash copy: ${phrase}`);
+  }
+  assert.match(source, /logo-wavesight\.svg/u);
+  assert.match(source, /setTimeout\(\(\) => setSplashVisible\(false\), 1500\)/u);
+  assert.match(styles, /prefers-reduced-motion/u);
+});
+
 test("funding and report datasets are available", async () => {
   const fundingIndex = await readJson("funding-index.json");
   const fundingDetails = await readJson("funding-details.json");

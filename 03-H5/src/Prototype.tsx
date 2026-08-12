@@ -171,6 +171,23 @@ function AppHeader({ title, onBack, action, onAction }: { title: string; onBack?
   );
 }
 
+function SplashScreen({ onEnter }: { onEnter: () => void }) {
+  return (
+    <button className="splash-screen" type="button" onClick={onEnter} aria-label="进入观澜融资情报">
+      <span className="splash-brand-stage">
+        <img className="splash-logo" src="/brand/logo-wavesight.svg" alt="观澜 AI" />
+        <span className="splash-divider" aria-hidden="true" />
+        <strong className="splash-slogan">洞察趋势 · 智见未来</strong>
+        <span className="splash-description">AI 融资情报与市场观察</span>
+      </span>
+      <span className="splash-footer">
+        <span className="splash-progress" aria-hidden="true"><i /></span>
+        <span>观澜 AI</span>
+      </span>
+    </button>
+  );
+}
+
 function BottomNav({ active, onChange }: { active: Tab; onChange: (tab: Tab) => void }) {
   const items: Array<{ id: Tab; label: string; icon: typeof BarChartIcon }> = [
     { id: "terminal", label: "融资", icon: ReaderIcon },
@@ -209,6 +226,7 @@ export default function Prototype() {
     ledger: [{ id: "starter", label: "新用户积分", points: 128, date: dateLabel() }],
   }));
   const [toast, setToast] = useState("");
+  const [splashVisible, setSplashVisible] = useState(true);
 
   useEffect(() => {
     Promise.all([
@@ -230,6 +248,7 @@ export default function Prototype() {
   useEffect(() => { localStorage.setItem(STORE.growth, JSON.stringify(growth)); }, [growth]);
   useEffect(() => { localStorage.setItem(STORE.profile, JSON.stringify({ nickname })); }, [nickname]);
   useEffect(() => { if (!toast) return; const timer = setTimeout(() => setToast(""), 1900); return () => clearTimeout(timer); }, [toast]);
+  useEffect(() => { const timer = setTimeout(() => setSplashVisible(false), 1500); return () => clearTimeout(timer); }, []);
 
   const activeTab = view.kind === "tab" ? view.tab : lastTab;
   const level = levelFor(growth.lifetime);
@@ -242,6 +261,10 @@ export default function Prototype() {
     if (round !== "all" && card.roundGroup !== round) return false;
     return true;
   }).slice(0, 40), [cards, query, category, region, round]);
+
+  if (splashVisible || !fundingIndex || !reportIndex) {
+    return <div className="guanlan-app splash-app"><SplashScreen onEnter={() => setSplashVisible(false)} /></div>;
+  }
 
   function awardOnce(id: string, points: number, label: string) {
     setGrowth((current) => current.completed.includes(id) ? current : {
@@ -334,7 +357,6 @@ export default function Prototype() {
   }
 
   const page = (() => {
-    if (!fundingIndex || !reportIndex) return <Loading />;
     if (view.kind === "funding") return <FundingDetailView card={fundingDetails[view.id]} watched={favorites.includes(view.id)} onBack={back} onFavorite={() => toggleFavorite(view.id)} />;
     if (view.kind === "report") return <ReportDetailView report={reportDetails[view.id]} onBack={back} onShare={() => share(reportDetails[view.id]?.title || "观澜研究报告")} />;
     if (view.kind === "saved") return <SavedView cards={cards.filter((card) => favorites.includes(card.id))} onBack={back} onOpen={openFunding} onFavorite={toggleFavorite} />;
