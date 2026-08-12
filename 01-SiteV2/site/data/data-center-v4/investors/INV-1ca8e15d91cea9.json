@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "institution": {
@@ -20,64 +20,176 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
-    "first_disclosed_at": "2026-06-26",
-    "latest_disclosed_at": "2026-06-26",
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 3,
+    "first_disclosed_at": "2026-02-14",
+    "latest_disclosed_at": "2026-04-16",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "participant": 3
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "angel",
+      "multi_round",
+      "other"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-e7492db096492304",
+        "canonical_entity_id": "",
+        "name": "极佳视界"
+      },
+      {
+        "entity_id": "EN-4731aa5b66658c7f",
+        "canonical_entity_id": "EN-4731aa5b66658c7f",
+        "name": "无界动力"
+      },
+      {
+        "entity_id": "EN-a6e5382c05dd0d16",
+        "canonical_entity_id": "",
+        "name": "星海图"
+      }
+    ],
     "activities": [
       {
-        "activity_id": "IA-13bf559afe47eed9",
-        "funding_insight_id": "FI-7e546bd15ad5d4db",
+        "activity_id": "IA-5717cdb1ea6e8658",
+        "funding_insight_id": "FI-f4cf69e8d2cc7653",
+        "event_ids": [
+          "EV-499a62114b0fd616"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "近15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 15 亿人民币"
+        },
+        "announced_at": "2026-04-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4782a6093d519a4d",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
+            "source_title": "极佳视界完成15亿元B1轮融资",
+            "source_content_hash": "1249ab9a7b5d09d0d0f4f5724c90445e53a54409c6821fa0e8f197a595dca320",
+            "quote": "由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、乾融资本、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
+            "quote_hash": "a9d3c79b14298f438828a94cf2eb3088528d6b88d628bc4f4c9fd7f3a826694e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-bad03687ecfa571b",
+        "funding_insight_id": "FI-af2461a497e30ffa",
+        "event_ids": [
+          "EV-435d7e7878b0c326"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "",
+        "company_name": "星海图",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "B+轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿人民币"
+        },
+        "announced_at": "2026-04-02",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-dd387948ae711f72",
+            "source_url": "https://companies.caixin.com/m/2026-04-02/102430123.html",
+            "source_title": "星海图完成20亿元B+轮融资",
+            "source_content_hash": "3702873b1eb4ff8e5e57340525e023aaebb06221f09393a8e2e6a2cdaa7d70cd",
+            "quote": "私募股权基金则包括 中金资本 旗下基金、 普华资本 、 洪泰基金 、广发乾",
+            "quote_hash": "3bdc1a33ff6a55bff382b7f49d6a83110fe46742929cbd7b25b235b1c4903305"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3c265a838231aa6e",
+        "funding_insight_id": "FI-6763b86fb1d41259",
         "event_ids": [
           "EV-876baa523eb93c4f"
         ],
         "company_entity_id": "EN-4731aa5b66658c7f",
         "company_canonical_entity_id": "EN-4731aa5b66658c7f",
-        "company_name": "无界动力（北京）技术研发有限公司",
+        "company_name": "无界动力",
         "round": "天使轮",
         "round_code": "angel",
         "round_original": "天使轮",
-        "amount_original": "超2亿美元",
+        "amount_original": "超2亿元",
         "amount_normalized": {
-          "currency": "USD",
+          "currency": "CNY",
           "value": 200000000,
           "min_value": 200000000,
           "max_value": null,
           "unit": "base",
           "status": "lower_bound",
-          "display_zh": "超过 2 亿美元"
+          "display_zh": "超过 2 亿人民币"
         },
-        "announced_at": "2026-06-26",
+        "announced_at": "2026-02-14",
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "天使+轮参投",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
             "source_id": "FISRC-daccbed46498e19c",
             "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
             "source_title": "无界动力宣布完成超2亿元天使+轮融资",
             "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
-            "quote": "新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入",
-            "quote_hash": "22749254e61efe2172babb79ccad41e5db2ac15f7fddfe8047acd398e095e1e1"
+            "quote": "新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
+            "quote_hash": "8e9d10663fe3e1560634117b6891dc37bab1b356161cbcf0e51af36273fc4061"
           }
         ]
       }
     ],
     "evidence": [
       {
+        "source_id": "FISRC-4782a6093d519a4d",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
+        "source_title": "极佳视界完成15亿元B1轮融资",
+        "source_content_hash": "1249ab9a7b5d09d0d0f4f5724c90445e53a54409c6821fa0e8f197a595dca320",
+        "quote": "由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、乾融资本、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
+        "quote_hash": "a9d3c79b14298f438828a94cf2eb3088528d6b88d628bc4f4c9fd7f3a826694e"
+      },
+      {
+        "source_id": "FISRC-dd387948ae711f72",
+        "source_url": "https://companies.caixin.com/m/2026-04-02/102430123.html",
+        "source_title": "星海图完成20亿元B+轮融资",
+        "source_content_hash": "3702873b1eb4ff8e5e57340525e023aaebb06221f09393a8e2e6a2cdaa7d70cd",
+        "quote": "私募股权基金则包括 中金资本 旗下基金、 普华资本 、 洪泰基金 、广发乾",
+        "quote_hash": "3bdc1a33ff6a55bff382b7f49d6a83110fe46742929cbd7b25b235b1c4903305"
+      },
+      {
         "source_id": "FISRC-daccbed46498e19c",
         "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
         "source_title": "无界动力宣布完成超2亿元天使+轮融资",
         "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
-        "quote": "新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入",
-        "quote_hash": "22749254e61efe2172babb79ccad41e5db2ac15f7fddfe8047acd398e095e1e1"
+        "quote": "新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
+        "quote_hash": "8e9d10663fe3e1560634117b6891dc37bab1b356161cbcf0e51af36273fc4061"
       }
     ]
   }

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "institution": {
@@ -20,25 +20,152 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
-    "first_disclosed_at": "2026-04-16",
-    "latest_disclosed_at": "2026-04-16",
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 3,
+    "first_disclosed_at": "2026-04-02",
+    "latest_disclosed_at": "2026-08-03",
     "role_counts": {
-      "participant": 1
+      "historical_or_ambiguous": 2,
+      "participant": 3
     },
     "round_codes": [
-      "pre_series_a"
+      "other",
+      "pre_series_a",
+      "series_a1"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-74b42431957780b9",
+        "canonical_entity_id": "",
+        "name": "昉擎科技"
+      },
       {
         "entity_id": "EN-39ba5f9dcab4e98a",
         "canonical_entity_id": "EN-39ba5f9dcab4e98a",
         "name": "它石智航"
+      },
+      {
+        "entity_id": "EN-a6e5382c05dd0d16",
+        "canonical_entity_id": "",
+        "name": "星海图"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-0c5e5cc999fa4f2c",
+        "funding_insight_id": "FI-c7196586a871ba41",
+        "event_ids": [
+          "EV-4fbbf16279e27000"
+        ],
+        "company_entity_id": "EN-74b42431957780b9",
+        "company_canonical_entity_id": "",
+        "company_name": "昉擎科技",
+        "round": "A1轮",
+        "round_code": "series_a1",
+        "round_original": "A1轮",
+        "amount_original": "超过 100 亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 10000000000,
+          "min_value": 10000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 100 亿人民币"
+        },
+        "announced_at": "2026-08-03",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-75b04daca915e1ca",
+            "source_url": "https://www.cs.com.cn/ssgs/01/2026/08/03/detail_2026080310029022.html",
+            "source_title": "昉擎科技完成A1轮融资 投后估值超100亿元",
+            "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
+            "quote": "中金资本、国泰海通创意投资两大头部券商系基金，尚势资本、水木创投、明嘉资本等产业资本参与投资",
+            "quote_hash": "497c6dd3c964a5a3bbc8e175d8bc19a61684d8b1c5f799485842074819307331"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3395f28e0f435065",
+        "funding_insight_id": "FI-ab64a33b7d572f85",
+        "event_ids": [
+          "EV-3a591b0f027f66cf"
+        ],
+        "company_entity_id": "EN-6862b0d243051cd3",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿人民币"
+        },
+        "announced_at": "2026-06-15",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A+轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce47b663ca256878",
+            "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+            "source_title": "极佳视界三个月完成35亿元B轮系列融资",
+            "source_content_hash": "2e290bb988c15b09d237e8bdde13c6e932e6bd7442016bbf35ee6ed94e536df8",
+            "quote": "Pre-A+轮融资由中金资本、广州产投、一村淞灵、华强资本投资。",
+            "quote_hash": "ca00b69742155291ef614ec13a2f8362b01fe9476123a2ec6941daf5cddce229"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-12aa9a43ef32a53f",
+        "funding_insight_id": "FI-f4cf69e8d2cc7653",
+        "event_ids": [
+          "EV-499a62114b0fd616"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "近15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 15 亿人民币"
+        },
+        "announced_at": "2026-04-16",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A+轮及Pre-B轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4782a6093d519a4d",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
+            "source_title": "极佳视界完成15亿元B1轮融资",
+            "source_content_hash": "1249ab9a7b5d09d0d0f4f5724c90445e53a54409c6821fa0e8f197a595dca320",
+            "quote": "Pre-A+轮融资由中金资本、广州产投、一村淞灵、华强资本投资",
+            "quote_hash": "3318c5d954cce0783546781182132aeeed02cbdd69b29c3a59a35e110176b847"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2d7c6818d1a2a9f3",
         "funding_insight_id": "FI-5c529fe1ecb9dd07",
@@ -76,9 +203,71 @@
             "quote_hash": "b3b9c68d94864a2a92f1b96221e71974952e1eb702fac2cdea4e04de605a537a"
           }
         ]
+      },
+      {
+        "activity_id": "IA-b934755ca1d3cf3c",
+        "funding_insight_id": "FI-af2461a497e30ffa",
+        "event_ids": [
+          "EV-435d7e7878b0c326"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "",
+        "company_name": "星海图",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "B+轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿人民币"
+        },
+        "announced_at": "2026-04-02",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-dd387948ae711f72",
+            "source_url": "https://companies.caixin.com/m/2026-04-02/102430123.html",
+            "source_title": "星海图完成20亿元B+轮融资",
+            "source_content_hash": "3702873b1eb4ff8e5e57340525e023aaebb06221f09393a8e2e6a2cdaa7d70cd",
+            "quote": "私募股权基金则包括 中金资本 旗下基金、 普华资本 、 洪泰基金 、广发乾",
+            "quote_hash": "3bdc1a33ff6a55bff382b7f49d6a83110fe46742929cbd7b25b235b1c4903305"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-75b04daca915e1ca",
+        "source_url": "https://www.cs.com.cn/ssgs/01/2026/08/03/detail_2026080310029022.html",
+        "source_title": "昉擎科技完成A1轮融资 投后估值超100亿元",
+        "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
+        "quote": "中金资本、国泰海通创意投资两大头部券商系基金，尚势资本、水木创投、明嘉资本等产业资本参与投资",
+        "quote_hash": "497c6dd3c964a5a3bbc8e175d8bc19a61684d8b1c5f799485842074819307331"
+      },
+      {
+        "source_id": "FISRC-ce47b663ca256878",
+        "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+        "source_title": "极佳视界三个月完成35亿元B轮系列融资",
+        "source_content_hash": "2e290bb988c15b09d237e8bdde13c6e932e6bd7442016bbf35ee6ed94e536df8",
+        "quote": "Pre-A+轮融资由中金资本、广州产投、一村淞灵、华强资本投资。",
+        "quote_hash": "ca00b69742155291ef614ec13a2f8362b01fe9476123a2ec6941daf5cddce229"
+      },
+      {
+        "source_id": "FISRC-4782a6093d519a4d",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
+        "source_title": "极佳视界完成15亿元B1轮融资",
+        "source_content_hash": "1249ab9a7b5d09d0d0f4f5724c90445e53a54409c6821fa0e8f197a595dca320",
+        "quote": "Pre-A+轮融资由中金资本、广州产投、一村淞灵、华强资本投资",
+        "quote_hash": "3318c5d954cce0783546781182132aeeed02cbdd69b29c3a59a35e110176b847"
+      },
       {
         "source_id": "FISRC-f4259d29fd364076",
         "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",
@@ -86,6 +275,14 @@
         "source_content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
         "quote": "美团龙珠、中金资本、凯联资本、东方富海、钧山投资等知名财务基金跟投",
         "quote_hash": "b3b9c68d94864a2a92f1b96221e71974952e1eb702fac2cdea4e04de605a537a"
+      },
+      {
+        "source_id": "FISRC-dd387948ae711f72",
+        "source_url": "https://companies.caixin.com/m/2026-04-02/102430123.html",
+        "source_title": "星海图完成20亿元B+轮融资",
+        "source_content_hash": "3702873b1eb4ff8e5e57340525e023aaebb06221f09393a8e2e6a2cdaa7d70cd",
+        "quote": "私募股权基金则包括 中金资本 旗下基金、 普华资本 、 洪泰基金 、广发乾",
+        "quote_hash": "3bdc1a33ff6a55bff382b7f49d6a83110fe46742929cbd7b25b235b1c4903305"
       }
     ]
   }

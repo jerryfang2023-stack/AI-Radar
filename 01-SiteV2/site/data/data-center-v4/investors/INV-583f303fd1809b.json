@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "institution": {
@@ -20,19 +20,31 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 3,
     "first_disclosed_at": "2026-05-07",
-    "latest_disclosed_at": "2026-07-02",
+    "latest_disclosed_at": "2026-08-03",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 1
+      "participant": 3
     },
     "round_codes": [
-      "pre_series_a"
+      "infrastructure",
+      "pre_series_a",
+      "series_a1"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-74b42431957780b9",
+        "canonical_entity_id": "",
+        "name": "昉擎科技"
+      },
+      {
+        "entity_id": "EN-8b332ded81dc8d3a",
+        "canonical_entity_id": "",
+        "name": "光轮智能"
+      },
       {
         "entity_id": "EN-634537cdabd4e325",
         "canonical_entity_id": "",
@@ -40,6 +52,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-32d5a37479214aa2",
+        "funding_insight_id": "FI-c7196586a871ba41",
+        "event_ids": [
+          "EV-4fbbf16279e27000"
+        ],
+        "company_entity_id": "EN-74b42431957780b9",
+        "company_canonical_entity_id": "",
+        "company_name": "昉擎科技",
+        "round": "A1轮",
+        "round_code": "series_a1",
+        "round_original": "A1轮",
+        "amount_original": "超过 100 亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 10000000000,
+          "min_value": 10000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 100 亿人民币"
+        },
+        "announced_at": "2026-08-03",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-75b04daca915e1ca",
+            "source_url": "https://www.cs.com.cn/ssgs/01/2026/08/03/detail_2026080310029022.html",
+            "source_title": "昉擎科技完成A1轮融资 投后估值超100亿元",
+            "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
+            "quote": "在老股东方面，钧山资本大额加注，多维资本、华业天成、临港科创投、建发新兴、三七互娱等同步超额追投。",
+            "quote_hash": "b9f8a9336db78f9102fe9d09934572c7d4276c4633a14f7b894236041c450c8f"
+          }
+        ]
+      },
       {
         "activity_id": "IA-adff59c95ababccb",
         "funding_insight_id": "FI-536d2c4da2134ba0",
@@ -75,6 +125,44 @@
             "source_content_hash": "62e2ce5bba0f19793e17ce12827afbfeab3186011072eff8b77ade4c444b2037",
             "quote": "产业资方吉利资本、 三七互娱 ，元禾璞华跟投",
             "quote_hash": "949e52ed7fc91c5c391dca3ae63929572d980eedeba18df216921656cc4e27f5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f9edddee51424b68",
+        "funding_insight_id": "FI-d94dd0bea44a17d1",
+        "event_ids": [
+          "EV-e59938ae531af428"
+        ],
+        "company_entity_id": "EN-8b332ded81dc8d3a",
+        "company_canonical_entity_id": "",
+        "company_name": "光轮智能",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿人民币"
+        },
+        "announced_at": "2026-07-01",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8787a3d3602feb17",
+            "source_url": "https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202607/t20260701_250581.html",
+            "source_title": "光轮智能完成新一轮10亿元融资，加速物理AI数据与评测基础设施",
+            "source_content_hash": "20bb1f5550c82ab572303b31d101c327f03c9d8cc9fa77681017d9005da78fe3",
+            "quote": "老股东建投投资、三七互娱、森马投资等继续跟投。",
+            "quote_hash": "f2d1c0c055b9aafffdd907074fa7f7155fa30bf9dee117696c1502100811a778"
           }
         ]
       },
@@ -119,12 +207,28 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-75b04daca915e1ca",
+        "source_url": "https://www.cs.com.cn/ssgs/01/2026/08/03/detail_2026080310029022.html",
+        "source_title": "昉擎科技完成A1轮融资 投后估值超100亿元",
+        "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
+        "quote": "在老股东方面，钧山资本大额加注，多维资本、华业天成、临港科创投、建发新兴、三七互娱等同步超额追投。",
+        "quote_hash": "b9f8a9336db78f9102fe9d09934572c7d4276c4633a14f7b894236041c450c8f"
+      },
+      {
         "source_id": "FISRC-670f261d0c740ea4",
         "source_url": "https://www.cnfin.com/gs-lb/detail/20260702/4434609_1.html",
         "source_title": "乐享科技完成近5亿元Pre-A轮融资 机器人订单逾3万台",
         "source_content_hash": "62e2ce5bba0f19793e17ce12827afbfeab3186011072eff8b77ade4c444b2037",
         "quote": "产业资方吉利资本、 三七互娱 ，元禾璞华跟投",
         "quote_hash": "949e52ed7fc91c5c391dca3ae63929572d980eedeba18df216921656cc4e27f5"
+      },
+      {
+        "source_id": "FISRC-8787a3d3602feb17",
+        "source_url": "https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202607/t20260701_250581.html",
+        "source_title": "光轮智能完成新一轮10亿元融资，加速物理AI数据与评测基础设施",
+        "source_content_hash": "20bb1f5550c82ab572303b31d101c327f03c9d8cc9fa77681017d9005da78fe3",
+        "quote": "老股东建投投资、三七互娱、森马投资等继续跟投。",
+        "quote_hash": "f2d1c0c055b9aafffdd907074fa7f7155fa30bf9dee117696c1502100811a778"
       },
       {
         "source_id": "FISRC-5d82f5dc9fc96ce5",

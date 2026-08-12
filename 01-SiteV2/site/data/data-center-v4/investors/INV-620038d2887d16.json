@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2040,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-620038d2887d16",
+    "name": "华大松禾天使基金",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-05-29",
+    "latest_disclosed_at": "2026-05-29",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-f54c4ce656f1a8f6",
+        "funding_insight_id": "FI-f617b97f0b35118f",
+        "event_ids": [
+          "EV-794f921515af8e8b"
+        ],
+        "company_entity_id": "EN-085578b03da7d660",
+        "company_canonical_entity_id": "",
+        "company_name": "墨芯人工智能科技（深圳）有限公司",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "近10亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 10 亿人民币"
+        },
+        "announced_at": "2026-05-29",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A+轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-fd6d552d3eca98a8",
+            "source_url": "https://news.qq.com/rain/a/20240410A04MKL00",
+            "source_title": "嘉成portfolio｜盛景嘉成投资AI芯片公司「墨芯人工智能」_腾讯新闻",
+            "source_content_hash": "002bcd331fb2da78",
+            "quote": "华大松禾天使基金、岩山科技战略跟投",
+            "quote_hash": "6aaaecbe924b70a34dba5b426483818227e6c2b2c09dcafa3c4f599be7014f98"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-fd6d552d3eca98a8",
+        "source_url": "https://news.qq.com/rain/a/20240410A04MKL00",
+        "source_title": "嘉成portfolio｜盛景嘉成投资AI芯片公司「墨芯人工智能」_腾讯新闻",
+        "source_content_hash": "002bcd331fb2da78",
+        "quote": "华大松禾天使基金、岩山科技战略跟投",
+        "quote_hash": "6aaaecbe924b70a34dba5b426483818227e6c2b2c09dcafa3c4f599be7014f98"
+      }
+    ]
+  }
+}

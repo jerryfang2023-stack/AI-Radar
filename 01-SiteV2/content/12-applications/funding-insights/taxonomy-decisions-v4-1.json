@@ -5,13 +5,13 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-08T04:17:59.530Z",
+    "generated_at": "2026-08-12T11:49:37.510Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 252,
-    "input_hash": "fbe4513f129eebe0",
+    "decision_count": 271,
+    "input_hash": "2bfec4f01d0677cd",
     "override_count": 17,
     "needs_review_count": 0,
     "low_confidence_count": 0
@@ -4968,6 +4968,389 @@
       "confidence": 0.95,
       "needs_review": false,
       "rationale": "Olix Computing is developing AI chips (DX-1) and data center appliances (X-1), which clearly fall under infrastructure_compute > hardware_computing > chips. The product form is chip_accelerator. Target users are developers who will build on this hardware. No specific use case or industry is mentioned, so those arrays are left empty."
+    },
+    {
+      "event_id": "EV-535c2f4fb851332d",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model_api_service",
+      "use_case_ids": [
+        "content_creation"
+      ],
+      "industry_ids": [
+        "media_entertainment"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Company provides a multimodal video generation foundation model (Vidu) via API/SaaS, fitting infrastructure_compute > development_deployment > models. Product form is model_api_service. Primary use case is content creation, industry is media/entertainment, and target users include developers and business users."
+    },
+    {
+      "event_id": "EV-6ca567f6e80c36c5",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "logistics_supply_chain",
+        "manufacturing",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "星动纪元的产品（星动L7、星动XHAND1、星动Q5）均为物理世界中的机器人系统，能够感知、决策并执行物理动作（如分拣、递送、操作），符合Physical AI的定义。证据显示其在物流、工业分拣、门店服务等场景落地，非仅世界模型或未来规划。"
+    },
+    {
+      "event_id": "EV-4fbbf16279e27000",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_compute_system",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "证据显示公司研发分离式分布式AI计算架构，将FNN与注意力机制解耦并分配给不同硬件处理，属于为AI构建者提供计算基础设施，而非直接面向终端应用或单一行业。产品形态为AI计算系统而非芯片，因此归入infrastructure_compute > hardware_computing > computing_infrastructure。"
+    },
+    {
+      "event_id": "EV-e59938ae531af428",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "synthetic_data",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "physical_automation",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "automotive_transportation",
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "developer",
+        "researcher"
+      ],
+      "confidence": 0.92,
+      "needs_review": false,
+      "rationale": "光轮智能的核心产品是仿真数据与评测基础设施，为机器人等物理AI提供合成数据、仿真环境和评测工具，属于为AI构建者提供数据基础设施，而非直接控制物理世界的机器人。因此归入infrastructure_compute > data > synthetic_data。"
+    },
+    {
+      "event_id": "EV-e0a31302688c81ec",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [
+        "telecommunications",
+        "manufacturing",
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "微纳核芯提供存算一体AI推理芯片，属于硬件/计算基础设施，直接供应给终端厂商和云厂商用于大模型推理，符合infrastructure_compute > hardware_computing > chips。"
+    },
+    {
+      "event_id": "EV-e6a4e0785ebb268a",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "research_discovery",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "researcher",
+        "developer"
+      ],
+      "confidence": 0.93,
+      "needs_review": false,
+      "rationale": "华深智药专注于AI驱动的新药研发，产品围绕生物医药领域的专业数据、算法和工作流，属于行业应用而非通用基础设施，因此归入industry_applications > healthcare_life_sciences。"
+    },
+    {
+      "event_id": "EV-3a591b0f027f66cf",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "产品Maker H01是物理AGI原生通用机器人，在真实工业制造场景落地，并进入C端家庭社区，直接感知、决策并执行物理动作，符合Physical AI定义。"
+    },
+    {
+      "event_id": "EV-499a62114b0fd616",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "automotive_transportation",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "Maker H01为全栈自研物理AGI原生通用机器人，具备高自由度灵巧操作能力，已与一汽模具、红星美凯龙等企业合作，直接作用于物理世界，属于Physical AI。"
+    },
+    {
+      "event_id": "EV-a34447341a3872ed",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "Maker H01为物理AGI原生本体，面向工业与服务场景执行抓取、搬运等物理操作，并承担数据采集与模型训练，直接作用于物理世界，符合Physical AI。"
+    },
+    {
+      "event_id": "EV-794f921515af8e8b",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "software_development",
+        "research_discovery"
+      ],
+      "industry_ids": [
+        "telecommunications",
+        "automotive_transportation",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "墨芯人工智能是AI芯片设计商，核心产品为SparsePrime®、S30/S40计算卡，属于基础设施计算硬件中的芯片。产品形式为chip_accelerator，市场层级为infrastructure_compute > hardware_computing > chips。客户包括电信运营商、车企和商旅集团，因此行业覆盖电信、汽车和零售。目标用户为使用其计算卡进行模型部署和推理的开发者及企业用户。"
+    },
+    {
+      "event_id": "EV-800384d4fd2434a5",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Company designs high-performance RISC-V CPU cores and chiplets for servers. This is chip design (hardware_computing/chips) under infrastructure_compute. Product form is chip_accelerator. Target users are developers who build systems with these chips."
+    },
+    {
+      "event_id": "EV-e54bfac94961f4d2",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "data_preparation_curation",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "knowledge_search",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "产品为‘内生记忆模块’，属于大模型个性化记忆基础设施，为其他AI产品提供记忆数据层，符合infrastructure_compute定义。记忆模块本质是数据准备与整理，故归入data > data_preparation_curation。证据未限定单一行业，因此industry_ids为空。目标用户包括B端企业和C端消费者，对应business_user和consumer，同时作为基础设施也面向developer。"
+    },
+    {
+      "event_id": "EV-88a984b765bb54f1",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "content_creation",
+        "customer_support",
+        "knowledge_search"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "Company is a large model developer (心辰Lingo, Friday, 聊会小天). Core offering is models, matching the tuple [infrastructure_compute, development_deployment, models]. Product form is model. Use cases include content creation (Friday writing), customer support (conversational bots), and knowledge search (multi-modal input/output). Industries inferred from customers: healthcare (mental health platform 聊会小天) and retail/ecommerce (知衣科技). Target users include developers (model access), business users, and consumers (end-user apps)."
+    },
+    {
+      "event_id": "EV-435d7e7878b0c326",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "logistics_supply_chain",
+        "education"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "researcher",
+        "educator",
+        "student"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "公司当前产品R1 Pro和G0 Plus均为物理机器人系统，具备感知、决策和行动能力，直接作用于物理世界，符合Physical AI定义。尽管公司定位为“具身智能基座”，但现有产品已实现物理交互，非仅世界模型或未来规划。"
+    },
+    {
+      "event_id": "EV-cbce4f1f5187efcf",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "sales",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "sales",
+        "data_analysis"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "产品通过AI代理分析通话记录、邮件、日历等一手数据，构建关键关系图谱并标记交易风险，核心服务于销售团队的跨行业工作流，无物理世界感知与行动，非基础设施供应，且未限定单一行业，因此归入企业应用-销售。"
+    },
+    {
+      "event_id": "EV-c6cccaca326dfd45",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "research_discovery"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "researcher"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Discovered Materials provides an AI agent platform for discovering and accelerating adoption of new materials for semiconductor chips. This is an industry-specific application for industrials (semiconductor materials). The product is an enterprise software platform used for research and discovery, targeting researchers in manufacturing."
+    },
+    {
+      "event_id": "EV-b116eafe60d71fbe",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "telecommunications",
+        "automotive_transportation",
+        "aerospace_defense"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Lumilens produces optical networking chips (CPO, NPO, pluggable transceivers) for AI clusters, fitting infrastructure_compute / hardware_computing / chips. The product form is chip_accelerator. Use case is physical_automation as the chips enable large-scale AI compute infrastructure. Industries include manufacturing, telecommunications, automotive, and aerospace/defense where such high-performance networking is critical. Target users are developers and business users building/deploying AI infrastructure."
+    },
+    {
+      "event_id": "EV-cfbfc6c80338aa12",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "data_preparation_curation",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Mechanize 为 AI 实验室提供模拟工作环境与评估系统，用于训练和测试编程智能体，属于为其他 AI 产品构建者提供训练数据与评估基础设施，而非直接面向终端行业或企业应用，因此归入 infrastructure_compute > data > data_preparation_curation。"
+    },
+    {
+      "event_id": "EV-55e7c286e95be405",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model_api_service",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "River API 提供模型访问、强化学习与 LoRA 微调，面向开发者，属于模型即服务，不涉及物理世界感知决策，也不限定单一行业，因此归入基础设施计算下的开发部署-模型。"
     }
   ]
 }

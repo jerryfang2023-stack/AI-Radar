@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "institution": {
@@ -20,16 +20,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 1,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 4,
+    "portfolio_company_count": 2,
     "first_disclosed_at": "2024-09-12",
-    "latest_disclosed_at": "2026-06-26",
+    "latest_disclosed_at": "2026-04-16",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 3
+      "historical_or_ambiguous": 4,
+      "participant": 1
     },
     "round_codes": [
+      "angel",
       "pre_series_a"
     ],
     "portfolio_companies": [
@@ -37,47 +39,14 @@
         "entity_id": "EN-39ba5f9dcab4e98a",
         "canonical_entity_id": "EN-39ba5f9dcab4e98a",
         "name": "它石智航"
+      },
+      {
+        "entity_id": "EN-4731aa5b66658c7f",
+        "canonical_entity_id": "EN-4731aa5b66658c7f",
+        "name": "无界动力"
       }
     ],
     "activities": [
-      {
-        "activity_id": "IA-5362438405b7d7c9",
-        "funding_insight_id": "FI-7e546bd15ad5d4db",
-        "event_ids": [
-          "EV-876baa523eb93c4f"
-        ],
-        "company_entity_id": "EN-4731aa5b66658c7f",
-        "company_canonical_entity_id": "EN-4731aa5b66658c7f",
-        "company_name": "无界动力（北京）技术研发有限公司",
-        "round": "天使轮",
-        "round_code": "angel",
-        "round_original": "天使轮",
-        "amount_original": "超2亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 200000000,
-          "min_value": 200000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 2 亿美元"
-        },
-        "announced_at": "2026-06-26",
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "首轮天使融资参投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-c7cbf66d99295c80",
-            "source_url": "https://www.chnfund.com/article/AR42d924a5-c008-cd46-b00b-3a2216d0317e",
-            "source_title": "无界动力完成超2亿美元天使轮融资 中国基金报",
-            "source_content_hash": "5b45cd52e44552d8",
-            "quote": "2025年11月，无界动力完成首轮3亿元天使融资，红杉中国、线性资本领投，高瓴创投、地平线、华业天成、钟鼎资本、BV百度风投、同歌创投等跟投。",
-            "quote_hash": "75dd300b86df286fdc787cf8bbb30243a10dad4a276d2807de5d6d5cd40d56e5"
-          }
-        ]
-      },
       {
         "activity_id": "IA-08a1ac8062132c2b",
         "funding_insight_id": "FI-5c529fe1ecb9dd07",
@@ -155,6 +124,120 @@
         ]
       },
       {
+        "activity_id": "IA-43ac214f03df05ce",
+        "funding_insight_id": "FI-af2461a497e30ffa",
+        "event_ids": [
+          "EV-435d7e7878b0c326"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "",
+        "company_name": "星海图",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "B+轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿人民币"
+        },
+        "announced_at": "2026-04-02",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B轮主要老股东追加",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1d57bbe4edb9e812",
+            "source_url": "https://companies.caixin.com/2026-02-11/102413493.html",
+            "source_title": "具身智能公司星海图完成10亿元B轮融资_公司频道_财新网",
+            "source_content_hash": "5cf2794be5d5263d",
+            "quote": "主要老股东 凯辉基金 、 美团龙珠 、 今日资本 、 襄禾资本 和 高瓴创投 超额或满额追加",
+            "quote_hash": "42422a062e7fccb11702f9a712dee008ad10ef60f7e373ef2947d5ba1314e136"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e796d78d0add76ee",
+        "funding_insight_id": "FI-c3bce60cc6406ae5",
+        "event_ids": [
+          "EV-e6a4e0785ebb268a"
+        ],
+        "company_entity_id": "EN-be8f311b8bb47e9c",
+        "company_canonical_entity_id": "",
+        "company_name": "华深智药科技（北京）有限公司",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "7.87亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 787000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7.87 亿美元"
+        },
+        "announced_at": "2026-03-25",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮及A轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-972ef11d09af7ec8",
+            "source_url": "https://vc.pedaily.cn/company/205217.html",
+            "source_title": "华深智药完成7.87亿美元B轮融资",
+            "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
+            "quote": "天使轮融资：金额 千万级美元 ，投资方为襄禾资本、高瓴创投、清智资本",
+            "quote_hash": "9fe140fe0cff27185eab494a33c5b77f61f0691c72d2cd05a55500025f1e01d7"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4a8e1174a25ab380",
+        "funding_insight_id": "FI-6763b86fb1d41259",
+        "event_ids": [
+          "EV-876baa523eb93c4f"
+        ],
+        "company_entity_id": "EN-4731aa5b66658c7f",
+        "company_canonical_entity_id": "EN-4731aa5b66658c7f",
+        "company_name": "无界动力",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "超2亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 200000000,
+          "min_value": 200000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 2 亿人民币"
+        },
+        "announced_at": "2026-02-14",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-daccbed46498e19c",
+            "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
+            "source_title": "无界动力宣布完成超2亿元天使+轮融资",
+            "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
+            "quote": "老股东红杉中国、线性资本、高瓴创投、华业天成、中金资本旗下基金、BV百度风投持续追投，新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
+            "quote_hash": "6867781360a245cd66582a24953eac9acacbc9a62098ae37517f6597e7475aec"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-07d455342575d6a8",
         "funding_insight_id": "FI-17403f62777b52b5",
         "event_ids": [
@@ -195,14 +278,6 @@
     ],
     "evidence": [
       {
-        "source_id": "FISRC-c7cbf66d99295c80",
-        "source_url": "https://www.chnfund.com/article/AR42d924a5-c008-cd46-b00b-3a2216d0317e",
-        "source_title": "无界动力完成超2亿美元天使轮融资 中国基金报",
-        "source_content_hash": "5b45cd52e44552d8",
-        "quote": "2025年11月，无界动力完成首轮3亿元天使融资，红杉中国、线性资本领投，高瓴创投、地平线、华业天成、钟鼎资本、BV百度风投、同歌创投等跟投。",
-        "quote_hash": "75dd300b86df286fdc787cf8bbb30243a10dad4a276d2807de5d6d5cd40d56e5"
-      },
-      {
         "source_id": "FISRC-f4259d29fd364076",
         "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",
         "source_title": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网",
@@ -217,6 +292,30 @@
         "source_content_hash": "9bc3ee36ffea717f",
         "quote": "线性资本、恒旭资本、洪泰基金、联想创投、襄禾资本、高瓴创投跟投",
         "quote_hash": "ad0a3e590ffa110b3cf74a5f62e58f3e387290b3c658e3f5c91e312af6a29fd6"
+      },
+      {
+        "source_id": "FISRC-1d57bbe4edb9e812",
+        "source_url": "https://companies.caixin.com/2026-02-11/102413493.html",
+        "source_title": "具身智能公司星海图完成10亿元B轮融资_公司频道_财新网",
+        "source_content_hash": "5cf2794be5d5263d",
+        "quote": "主要老股东 凯辉基金 、 美团龙珠 、 今日资本 、 襄禾资本 和 高瓴创投 超额或满额追加",
+        "quote_hash": "42422a062e7fccb11702f9a712dee008ad10ef60f7e373ef2947d5ba1314e136"
+      },
+      {
+        "source_id": "FISRC-972ef11d09af7ec8",
+        "source_url": "https://vc.pedaily.cn/company/205217.html",
+        "source_title": "华深智药完成7.87亿美元B轮融资",
+        "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
+        "quote": "天使轮融资：金额 千万级美元 ，投资方为襄禾资本、高瓴创投、清智资本",
+        "quote_hash": "9fe140fe0cff27185eab494a33c5b77f61f0691c72d2cd05a55500025f1e01d7"
+      },
+      {
+        "source_id": "FISRC-daccbed46498e19c",
+        "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
+        "source_title": "无界动力宣布完成超2亿元天使+轮融资",
+        "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
+        "quote": "老股东红杉中国、线性资本、高瓴创投、华业天成、中金资本旗下基金、BV百度风投持续追投，新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
+        "quote_hash": "6867781360a245cd66582a24953eac9acacbc9a62098ae37517f6597e7475aec"
       },
       {
         "source_id": "FISRC-d13c49d0024ccf9b",

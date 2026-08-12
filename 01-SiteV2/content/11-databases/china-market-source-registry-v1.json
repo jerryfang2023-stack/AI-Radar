@@ -1,6 +1,6 @@
 {
   "schema_version": "CHINA-MARKET-SOURCE-REGISTRY-V1.0",
-  "updated_at": "2026-07-31",
+  "updated_at": "2026-08-12",
   "owner": "Data Center Source Ingestion",
   "market_region": "CN",
   "purpose": "中国 AI 市场来源注册表。仅记录来源身份、来源类别与采集接口，不表达来源等级、可信权重、价值排序或算法加成。",
@@ -445,6 +445,176 @@
         "research_result",
         "model_release"
       ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-pedaily",
+      "name": "投资界",
+      "source_category": "industry_media",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.pedaily.cn/",
+      "publisher_domains": [
+        "pedaily.cn"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "startup_funding",
+        "investor_activity",
+        "company_strategy"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-cnfin",
+      "name": "新华财经",
+      "source_category": "industry_media",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.cnfin.com/",
+      "publisher_domains": [
+        "cnfin.com"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "startup_funding",
+        "listed_company_announcement",
+        "investor_activity"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-cls",
+      "name": "财联社 / 科创板日报",
+      "source_category": "industry_media",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.cls.cn/",
+      "publisher_domains": [
+        "cls.cn"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "startup_funding",
+        "listed_company_announcement",
+        "investor_activity"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-ncsti",
+      "name": "国家科技创新信息服务平台",
+      "source_category": "research_institution",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.ncsti.gov.cn/",
+      "publisher_domains": [
+        "ncsti.gov.cn"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "startup_funding",
+        "science_park_activity",
+        "industry_policy"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-caixin",
+      "name": "财新",
+      "source_category": "industry_media",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.caixin.com/",
+      "publisher_domains": [
+        "caixin.com"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "startup_funding",
+        "investor_activity",
+        "company_strategy"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-itjuzi-reports",
+      "name": "IT桔子公开投融资报告",
+      "source_category": "research_institution",
+      "interface_type": "manual-review",
+      "endpoint_or_url": "https://www.itjuzi.com/",
+      "publisher_domains": [
+        "itjuzi.com",
+        "dfcfw.com"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "startup_funding_discovery",
+        "coverage_benchmark"
+      ],
+      "enabled_default": false,
+      "discovery_only": true,
+      "fact_boundary": "聚合报告可能包含估算、未披露金额换算和多轮合并，只用于发现候选与覆盖率基准；单笔事实必须回到公司、投资方或可读完整报道核验。"
+    },
+    {
+      "source_id": "cn-eastmoney",
+      "name": "东方财富",
+      "source_category": "industry_media",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://finance.eastmoney.com/",
+      "publisher_domains": ["eastmoney.com"],
+      "language": "zh-CN",
+      "collection_scope": ["startup_funding", "listed_company_announcement"],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-sina-finance",
+      "name": "新浪财经",
+      "source_category": "industry_media",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://finance.sina.com.cn/",
+      "publisher_domains": ["sina.com.cn"],
+      "language": "zh-CN",
+      "collection_scope": ["startup_funding", "listed_company_announcement", "investor_activity"],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-nbd",
+      "name": "每日经济新闻",
+      "source_category": "industry_media",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.nbd.com.cn/",
+      "publisher_domains": ["nbd.com.cn"],
+      "language": "zh-CN",
+      "collection_scope": ["startup_funding", "listed_company_announcement", "company_strategy"],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-dramx",
+      "name": "集邦咨询 DRAMeXchange",
+      "source_category": "industry_media",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.dramx.com/",
+      "publisher_domains": ["dramx.com"],
+      "language": "zh-CN",
+      "collection_scope": ["startup_funding", "chips", "hardware"],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-cs",
+      "name": "中国证券报",
+      "source_category": "industry_media",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.cs.com.cn/",
+      "publisher_domains": ["cs.com.cn"],
+      "language": "zh-CN",
+      "collection_scope": ["startup_funding", "listed_company_announcement", "investor_activity"],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-readaitime",
+      "name": "读懂AI",
+      "source_category": "industry_media",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.readaitime.com/",
+      "publisher_domains": ["readaitime.com"],
+      "language": "zh-CN",
+      "collection_scope": ["startup_funding", "industry_news", "company_strategy"],
       "enabled_default": true
     }
   ]

@@ -14,7 +14,8 @@
       "blocked": 0,
       "pending": 0,
       "deduplicated": 0
-    }
+    },
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
@@ -448,9 +449,17 @@
         "market_category_id": "infrastructure_compute",
         "market_subcategory_id": "hardware_computing",
         "market_application_id": "chips",
-        "use_case_ids": [],
-        "industry_ids": [],
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "manufacturing",
+          "telecommunications",
+          "automotive_transportation",
+          "aerospace_defense"
+        ],
         "target_user_ids": [
+          "developer",
           "business_user"
         ],
         "sector": "AI基础设施/光互连芯片",
@@ -630,7 +639,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-11T02:10:00.107Z"
+        "generated_at": "2026-08-11T02:10:00.107Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-b116eafe60d71fbe",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1042,15 +1059,13 @@
         "market_subcategory_id": "industrials",
         "market_application_id": "",
         "use_case_ids": [
-          "research_discovery",
-          "design_engineering"
+          "research_discovery"
         ],
         "industry_ids": [
           "manufacturing"
         ],
         "target_user_ids": [
-          "researcher",
-          "business_user"
+          "researcher"
         ],
         "sector": "半导体材料发现",
         "investment_thesis": {
@@ -1206,7 +1221,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-11T00:25:30.400Z"
+        "generated_at": "2026-08-11T00:25:30.400Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-c6cccaca326dfd45",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

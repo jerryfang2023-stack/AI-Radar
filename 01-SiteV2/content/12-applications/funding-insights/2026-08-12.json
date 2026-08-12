@@ -14,7 +14,8 @@
       "blocked": 0,
       "pending": 0,
       "deduplicated": 1
-    }
+    },
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
@@ -390,15 +391,14 @@
         "taxonomy_version": "TAG-V4.1",
         "product_form_id": "model_api_service",
         "market_category_id": "infrastructure_compute",
-        "market_subcategory_id": "observability_evaluation",
-        "market_application_id": "fine_tuning",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "models",
         "use_case_ids": [
           "software_development"
         ],
         "industry_ids": [],
         "target_user_ids": [
-          "developer",
-          "business_user"
+          "developer"
         ],
         "sector": "AI 基础设施与模型训练",
         "investment_thesis": {
@@ -523,7 +523,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-12T04:34:53.188Z"
+        "generated_at": "2026-08-12T04:34:53.188Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-55e7c286e95be405",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -831,15 +839,14 @@
         "taxonomy_version": "TAG-V4.1",
         "product_form_id": "ai_infrastructure_software",
         "market_category_id": "infrastructure_compute",
-        "market_subcategory_id": "observability_evaluation",
-        "market_application_id": "llm_benchmarking_routing",
+        "market_subcategory_id": "data",
+        "market_application_id": "data_preparation_curation",
         "use_case_ids": [
           "software_development"
         ],
         "industry_ids": [],
         "target_user_ids": [
-          "developer",
-          "researcher"
+          "developer"
         ],
         "sector": "人工智能基础设施与算力",
         "investment_thesis": {
@@ -951,7 +958,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-12T04:34:47.656Z"
+        "generated_at": "2026-08-12T04:34:47.656Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-cfbfc6c80338aa12",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

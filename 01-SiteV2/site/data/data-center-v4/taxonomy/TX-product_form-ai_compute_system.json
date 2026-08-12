@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -18,6 +18,7 @@
     "typeLabel": "产品形态",
     "valueId": "ai_compute_system",
     "eventIds": [
+      "EV-4fbbf16279e27000",
       "EV-f282ab8740ff0096",
       "EV-7abd8ec418f1e7f3",
       "EV-e9d06e8a06aa7318",
@@ -38,6 +39,7 @@
       "EV-a67071a8550cb1be"
     ],
     "entityIds": [
+      "EN-74b42431957780b9",
       "EN-0995103010d39563",
       "EN-4e4b333252f207fd",
       "EN-bbdefa2950f49882",
@@ -71,6 +73,256 @@
     "lastSeen": "2026-08-04"
   },
   "events": [
+    {
+      "id": "EV-4fbbf16279e27000",
+      "dataDate": "2026-08-03",
+      "date": "2026-08-03",
+      "updatedDate": "2026-08-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "昉擎科技完成A1轮融资 投后估值超100亿元",
+      "originalTitle": "",
+      "subject": "昉擎科技",
+      "action": "完成A1轮融资",
+      "object": "投后估值超100亿元",
+      "metrics": [
+        "100亿"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-cs"
+        ],
+        "claim_refs": [
+          "CL-0751f6978d3c625f",
+          "CL-00a46955a6176234",
+          "CL-a2bba1cde52e0ec9"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-74b42431957780b9"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8441304f7f151f01",
+            "fundingInsightId": "FI-debe51463ab9b007"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "hardware_computing",
+            "name": "硬件与算力",
+            "entityIds": [
+              "EN-74b42431957780b9"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f2dd4aa859a087de",
+            "fundingInsightId": "FI-debe51463ab9b007"
+          }
+        ],
+        "ai_market_application": [
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "computing_infrastructure",
+            "name": "计算基础设施",
+            "entityIds": [
+              "EN-74b42431957780b9"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b7574728bac121ce",
+            "fundingInsightId": "FI-debe51463ab9b007"
+          }
+        ],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-74b42431957780b9"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4b8c0da7e37468dd",
+            "fundingInsightId": "FI-debe51463ab9b007"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-74b42431957780b9"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-fba97324e52ca8c6",
+            "fundingInsightId": "FI-debe51463ab9b007"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "computing_infrastructure",
+          "name": "计算基础设施",
+          "entityIds": [
+            "EN-74b42431957780b9"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b7574728bac121ce",
+          "fundingInsightId": "FI-debe51463ab9b007"
+        },
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-74b42431957780b9"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8441304f7f151f01",
+          "fundingInsightId": "FI-debe51463ab9b007"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "hardware_computing",
+          "name": "硬件与算力",
+          "entityIds": [
+            "EN-74b42431957780b9"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f2dd4aa859a087de",
+          "fundingInsightId": "FI-debe51463ab9b007"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-74b42431957780b9"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4b8c0da7e37468dd",
+          "fundingInsightId": "FI-debe51463ab9b007"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-74b42431957780b9"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fba97324e52ca8c6",
+          "fundingInsightId": "FI-debe51463ab9b007"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-74b42431957780b9"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8441304f7f151f01",
+          "fundingInsightId": "FI-debe51463ab9b007"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "hardware_computing",
+          "name": "硬件与算力",
+          "entityIds": [
+            "EN-74b42431957780b9"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f2dd4aa859a087de",
+          "fundingInsightId": "FI-debe51463ab9b007"
+        },
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "computing_infrastructure",
+          "name": "计算基础设施",
+          "entityIds": [
+            "EN-74b42431957780b9"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b7574728bac121ce",
+          "fundingInsightId": "FI-debe51463ab9b007"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-74b42431957780b9"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4b8c0da7e37468dd",
+          "fundingInsightId": "FI-debe51463ab9b007"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-74b42431957780b9"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fba97324e52ca8c6",
+          "fundingInsightId": "FI-debe51463ab9b007"
+        }
+      ],
+      "entityIds": [
+        "EN-74b42431957780b9",
+        "EN-45ca9245a800d99f"
+      ],
+      "entityNames": [
+        "昉擎科技",
+        "公司在最近半年内连续"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.cs.com.cn/ssgs/01/2026/08/03/detail_2026080310029022.html",
+      "publisher": "中国证券报"
+    },
     {
       "id": "EV-f282ab8740ff0096",
       "dataDate": "2026-07-16",
@@ -3524,6 +3776,31 @@
   ],
   "entities": [
     {
+      "id": "EN-74b42431957780b9",
+      "name": "昉擎科技",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4fbbf16279e27000"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
+        "TX-ai_market_subcategory-hardware_computing",
+        "TX-ai_market_application-computing_infrastructure",
+        "TX-product_form-ai_compute_system"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03"
+    },
+    {
       "id": "EN-0995103010d39563",
       "name": "Positron",
       "entityType": "organization_candidate",
@@ -3538,10 +3815,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_application-chips",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
+        "TX-ai_market_application-chips",
+        "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-ai_compute_system"
       ],
       "relatedEntityIds": [],
@@ -3554,7 +3831,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [],
-      "verificationStatus": "candidate",
+      "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
@@ -3564,16 +3841,16 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
-        "TX-ai_market_application-computing_infrastructure",
+        "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-business_user",
+        "TX-ai_market_application-computing_infrastructure",
         "TX-use_case-data_analysis",
         "TX-industry-government_public_sector",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-use_case-knowledge_search",
-        "TX-product_form-ai_compute_system"
+        "TX-product_form-ai_compute_system",
+        "TX-use_case-knowledge_search"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-08",
@@ -3765,26 +4042,26 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
+        "TX-use_case-software_development",
         "TX-industry-financial_services",
+        "TX-industry-manufacturing",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-research_discovery",
         "TX-product_form-model",
         "TX-technology-agentic_execution",
-        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
-        "TX-target_user-developer",
+        "TX-industry-aerospace_defense",
+        "TX-target_user-business_user",
         "TX-ai_market_application-computing_infrastructure",
         "TX-industry-retail_ecommerce",
-        "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
-        "TX-industry-aerospace_defense",
-        "TX-use_case-research_discovery",
-        "TX-industry-manufacturing",
-        "TX-use_case-software_development",
+        "TX-product_form-ai_compute_system",
         "TX-use_case-security_operations",
         "TX-product_form-end_user_application",
         "TX-technology-code_generation",
         "TX-technology-computer_use",
         "TX-technology-embodied_ai",
-        "TX-product_form-ai_compute_system",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-technology-image_generation",
@@ -3815,9 +4092,7 @@
       "name": "容芯致远",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "北京容芯致远科技有限公司"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -3827,24 +4102,24 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-financial_services",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
-        "TX-ai_market_application-computing_infrastructure",
-        "TX-target_user-business_user",
-        "TX-industry-energy_utilities",
-        "TX-industry-government_public_sector",
+        "TX-use_case-software_development",
+        "TX-industry-financial_services",
+        "TX-industry-manufacturing",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
+        "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-automotive_transportation",
+        "TX-industry-telecommunications",
+        "TX-target_user-business_user",
+        "TX-ai_market_application-computing_infrastructure",
+        "TX-industry-energy_utilities",
+        "TX-industry-government_public_sector",
         "TX-industry-education",
         "TX-industry-healthcare_life_sciences",
-        "TX-industry-manufacturing",
         "TX-industry-media_entertainment",
         "TX-industry-professional_services",
-        "TX-industry-telecommunications",
-        "TX-use_case-software_development",
         "TX-product_form-ai_compute_system"
       ],
       "relatedEntityIds": [],
@@ -3868,8 +4143,8 @@
       "classificationRefs": [
         "TX-industry-financial_services",
         "TX-technology-agentic_execution",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-telecommunications",
+        "TX-industry-healthcare_life_sciences",
         "TX-product_form-ai_compute_system"
       ],
       "relatedEntityIds": [],
@@ -4100,32 +4375,32 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_application-models",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-product_form-model_api_service",
+        "TX-target_user-developer",
+        "TX-use_case-software_development",
+        "TX-industry-manufacturing",
+        "TX-use_case-research_discovery",
         "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips",
-        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
-        "TX-target_user-developer",
-        "TX-target_user-business_user",
-        "TX-industry-logistics_supply_chain",
-        "TX-use_case-research_discovery",
         "TX-industry-automotive_transportation",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-manufacturing",
-        "TX-use_case-software_development",
-        "TX-use_case-security_operations",
+        "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-product_form-ai_infrastructure_software",
-        "TX-product_form-robotic_system",
-        "TX-ai_market_application-models",
-        "TX-ai_market_subcategory-development_deployment",
-        "TX-product_form-model_api_service",
+        "TX-industry-logistics_supply_chain",
+        "TX-industry-healthcare_life_sciences",
+        "TX-product_form-ai_compute_system",
         "TX-use_case-customer_support",
+        "TX-use_case-security_operations",
+        "TX-product_form-robotic_system",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
-        "TX-product_form-ai_compute_system",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
@@ -4204,15 +4479,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-software_development",
+        "TX-industry-manufacturing",
         "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
-        "TX-industry-manufacturing",
-        "TX-use_case-software_development",
         "TX-use_case-physical_automation",
+        "TX-product_form-ai_compute_system",
         "TX-product_form-robotic_system",
         "TX-technology-embodied_ai",
-        "TX-product_form-ai_compute_system",
         "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [

@@ -1,0 +1,272 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2040,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-61f956d75ca19c9a",
+    "name": "投资界",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-6ca567f6e80c36c5",
+      "EV-3a591b0f027f66cf"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-15",
+    "lastSeen": "2026-08-03",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-6ca567f6e80c36c5",
+        "EV-3a591b0f027f66cf"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-6ca567f6e80c36c5",
+        "dataDate": "2026-08-03",
+        "date": "2026-07-06",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "星动纪元完成10亿元新一轮融资",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-bbc41366a5a7cf78"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6df3ca79bd7ff138",
+            "fundingInsightId": "FI-4ec34f1bbcbe7514"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-bbc41366a5a7cf78"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1f19b6c950547d3a",
+            "fundingInsightId": "FI-4ec34f1bbcbe7514"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-bbc41366a5a7cf78"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-09d8ed66badffaf3",
+            "fundingInsightId": "FI-4ec34f1bbcbe7514"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-bbc41366a5a7cf78"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "logistics_supply_chain",
+            "name": "物流与供应链",
+            "entityIds": [
+              "EN-bbc41366a5a7cf78"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-901b23350b5ff749",
+            "fundingInsightId": "FI-4ec34f1bbcbe7514"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-bbc41366a5a7cf78"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f2e54a05b0c30f16",
+            "fundingInsightId": "FI-4ec34f1bbcbe7514"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-bbc41366a5a7cf78"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-72ea2ccb4de0799c",
+            "fundingInsightId": "FI-4ec34f1bbcbe7514"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-bbc41366a5a7cf78"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1ef1e00ec971377f",
+            "fundingInsightId": "FI-4ec34f1bbcbe7514"
+          }
+        ],
+        "entityIds": [
+          "EN-c2c3e86d1a93c2d4",
+          "EN-bbc41366a5a7cf78",
+          "EN-61f956d75ca19c9a"
+        ]
+      },
+      {
+        "id": "EV-3a591b0f027f66cf",
+        "dataDate": "2026-08-03",
+        "date": "2026-06-15",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "极佳视界三个月完成35亿元B轮系列融资",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-6862b0d243051cd3"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3a7ce8a794a049ad",
+            "fundingInsightId": "FI-80221be8183b0abf"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-6862b0d243051cd3"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0d3d5ba10b5e9bc9",
+            "fundingInsightId": "FI-80221be8183b0abf"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-6862b0d243051cd3"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-66f0ae22cbe414c1",
+            "fundingInsightId": "FI-80221be8183b0abf"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "automotive_transportation",
+            "name": "汽车与交通",
+            "entityIds": [
+              "EN-6862b0d243051cd3"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-325209307493b2b9",
+            "fundingInsightId": "FI-80221be8183b0abf"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-6862b0d243051cd3"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8387beca93f82d73",
+            "fundingInsightId": "FI-80221be8183b0abf"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-6862b0d243051cd3"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f0d9e64bde2bed21",
+            "fundingInsightId": "FI-80221be8183b0abf"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-6862b0d243051cd3"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f0bec01a589963d5",
+            "fundingInsightId": "FI-80221be8183b0abf"
+          }
+        ],
+        "entityIds": [
+          "EN-830860dcf46d63ed",
+          "EN-6862b0d243051cd3",
+          "EN-e7492db096492304",
+          "EN-61f956d75ca19c9a",
+          "EN-b81c8201acfc7639"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

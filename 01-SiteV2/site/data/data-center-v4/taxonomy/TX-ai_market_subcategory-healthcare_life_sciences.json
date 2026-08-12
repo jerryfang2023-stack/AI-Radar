@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -20,17 +20,19 @@
     "eventIds": [
       "EV-6be89ebfbf8de6be",
       "EV-6e06cfa28f76a76f",
-      "EV-f487788f3d44f288"
+      "EV-f487788f3d44f288",
+      "EV-e6a4e0785ebb268a"
     ],
     "entityIds": [
       "EN-522656609ff15589",
       "EN-caaa8e02be54cfc9",
-      "EN-f3d05a0f6248941d"
+      "EN-f3d05a0f6248941d",
+      "EN-be8f311b8bb47e9c"
     ],
     "fdeIds": [],
     "hardwareIds": [],
-    "firstSeen": "2026-06-25",
-    "lastSeen": "2026-07-18"
+    "firstSeen": "2026-03-25",
+    "lastSeen": "2026-08-03"
   },
   "events": [
     {
@@ -1227,6 +1229,366 @@
       "products": [],
       "sourceUrl": "https://assorthealth.com/blog/assort-health-raises-120-million-series-c-to-scale-largest-deployment-of-ai-agents-for-the-patient-journey",
       "publisher": "assorthealth.com"
+    },
+    {
+      "id": "EV-e6a4e0785ebb268a",
+      "dataDate": "2026-08-03",
+      "date": "2026-03-25",
+      "updatedDate": "2026-08-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "华深智药完成7.87亿美元B轮融资",
+      "originalTitle": "",
+      "subject": "华深智药",
+      "action": "完成7.87亿美元B轮融资",
+      "object": "华深智药完成7.87亿美元B轮融资",
+      "metrics": [
+        "7.87亿",
+        "5亿"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-pedaily"
+        ],
+        "claim_refs": [
+          "CL-d73d163b6255f01a",
+          "CL-1756d940e2efeeb9",
+          "CL-f2ef65c32e858573"
+        ]
+      },
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "industry_applications",
+            "name": "行业应用",
+            "entityIds": [
+              "EN-be8f311b8bb47e9c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-fcafed8b1961ffa3",
+            "fundingInsightId": "FI-e07e79cd7ac006d8"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-be8f311b8bb47e9c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-26e455eb757c94c3",
+            "fundingInsightId": "FI-e07e79cd7ac006d8"
+          }
+        ],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-be8f311b8bb47e9c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c1511566ec30f7a1",
+            "fundingInsightId": "FI-e07e79cd7ac006d8"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "design_engineering",
+            "name": "设计与工程",
+            "entityIds": [
+              "EN-be8f311b8bb47e9c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0d1e3294cc6383cf",
+            "fundingInsightId": "FI-e07e79cd7ac006d8"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "research_discovery",
+            "name": "科研与发现",
+            "entityIds": [
+              "EN-be8f311b8bb47e9c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4c5861c27a073870",
+            "fundingInsightId": "FI-e07e79cd7ac006d8"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-be8f311b8bb47e9c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-31444e277e3fd722",
+            "fundingInsightId": "FI-e07e79cd7ac006d8"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-be8f311b8bb47e9c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4c0787c28d3b39ac",
+            "fundingInsightId": "FI-e07e79cd7ac006d8"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "researcher",
+            "name": "研究人员",
+            "entityIds": [
+              "EN-be8f311b8bb47e9c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-39771b4465a8a11e",
+            "fundingInsightId": "FI-e07e79cd7ac006d8"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "industry_applications",
+          "name": "行业应用",
+          "entityIds": [
+            "EN-be8f311b8bb47e9c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fcafed8b1961ffa3",
+          "fundingInsightId": "FI-e07e79cd7ac006d8"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-be8f311b8bb47e9c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-26e455eb757c94c3",
+          "fundingInsightId": "FI-e07e79cd7ac006d8"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-be8f311b8bb47e9c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-31444e277e3fd722",
+          "fundingInsightId": "FI-e07e79cd7ac006d8"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-be8f311b8bb47e9c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c1511566ec30f7a1",
+          "fundingInsightId": "FI-e07e79cd7ac006d8"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-be8f311b8bb47e9c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4c0787c28d3b39ac",
+          "fundingInsightId": "FI-e07e79cd7ac006d8"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "researcher",
+          "name": "研究人员",
+          "entityIds": [
+            "EN-be8f311b8bb47e9c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-39771b4465a8a11e",
+          "fundingInsightId": "FI-e07e79cd7ac006d8"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "design_engineering",
+          "name": "设计与工程",
+          "entityIds": [
+            "EN-be8f311b8bb47e9c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-0d1e3294cc6383cf",
+          "fundingInsightId": "FI-e07e79cd7ac006d8"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "research_discovery",
+          "name": "科研与发现",
+          "entityIds": [
+            "EN-be8f311b8bb47e9c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4c5861c27a073870",
+          "fundingInsightId": "FI-e07e79cd7ac006d8"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "industry_applications",
+          "name": "行业应用",
+          "entityIds": [
+            "EN-be8f311b8bb47e9c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fcafed8b1961ffa3",
+          "fundingInsightId": "FI-e07e79cd7ac006d8"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-be8f311b8bb47e9c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-26e455eb757c94c3",
+          "fundingInsightId": "FI-e07e79cd7ac006d8"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-be8f311b8bb47e9c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c1511566ec30f7a1",
+          "fundingInsightId": "FI-e07e79cd7ac006d8"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "design_engineering",
+          "name": "设计与工程",
+          "entityIds": [
+            "EN-be8f311b8bb47e9c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-0d1e3294cc6383cf",
+          "fundingInsightId": "FI-e07e79cd7ac006d8"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "research_discovery",
+          "name": "科研与发现",
+          "entityIds": [
+            "EN-be8f311b8bb47e9c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4c5861c27a073870",
+          "fundingInsightId": "FI-e07e79cd7ac006d8"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-be8f311b8bb47e9c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-31444e277e3fd722",
+          "fundingInsightId": "FI-e07e79cd7ac006d8"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-be8f311b8bb47e9c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4c0787c28d3b39ac",
+          "fundingInsightId": "FI-e07e79cd7ac006d8"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "researcher",
+          "name": "研究人员",
+          "entityIds": [
+            "EN-be8f311b8bb47e9c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-39771b4465a8a11e",
+          "fundingInsightId": "FI-e07e79cd7ac006d8"
+        }
+      ],
+      "entityIds": [
+        "EN-be8f311b8bb47e9c"
+      ],
+      "entityNames": [
+        "华深智药"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://vc.pedaily.cn/company/205217.html",
+      "publisher": "投资界"
     }
   ],
   "entities": [
@@ -1245,12 +1607,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
+        "TX-ai_market_category-industry_applications",
         "TX-product_form-enterprise_software_platform",
+        "TX-technology-agentic_execution",
         "TX-target_user-business_user",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-ai_market_category-industry_applications",
         "TX-ai_market_subcategory-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
@@ -1272,15 +1634,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-target_user-developer",
+        "TX-ai_market_category-industry_applications",
+        "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
+        "TX-technology-agentic_execution",
         "TX-target_user-business_user",
         "TX-use_case-data_analysis",
         "TX-industry-healthcare_life_sciences",
-        "TX-industry-manufacturing",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-ai_market_category-industry_applications",
         "TX-use_case-design_engineering",
         "TX-ai_market_subcategory-healthcare_life_sciences"
       ],
@@ -1303,19 +1665,47 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-industry_applications",
         "TX-technology-agentic_execution",
         "TX-target_user-business_user",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-product_form-end_user_application",
-        "TX-ai_market_category-industry_applications",
-        "TX-use_case-customer_support",
         "TX-target_user-consumer",
+        "TX-use_case-customer_support",
+        "TX-product_form-end_user_application",
         "TX-ai_market_subcategory-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-25",
       "lastSeen": "2026-06-25"
+    },
+    {
+      "id": "EN-be8f311b8bb47e9c",
+      "name": "华深智药",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e6a4e0785ebb268a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-target_user-developer",
+        "TX-ai_market_category-industry_applications",
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-researcher",
+        "TX-use_case-research_discovery",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-design_engineering",
+        "TX-ai_market_subcategory-healthcare_life_sciences"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-03-25",
+      "lastSeen": "2026-08-03"
     }
   ],
   "fde": [],

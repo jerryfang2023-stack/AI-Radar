@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -52,7 +52,140 @@
         "status": "announced",
         "statusLabel": "已公布",
         "title": "光网络初创公司Lumilens以9亿美元资金启动",
-        "displayTags": [],
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-373da2ec629326c0"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f66d4ccbbd4914f4",
+            "fundingInsightId": "FI-507ad5fde661d5af"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "hardware_computing",
+            "name": "硬件与算力",
+            "entityIds": [
+              "EN-373da2ec629326c0"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4cb57b9b3c691a48",
+            "fundingInsightId": "FI-507ad5fde661d5af"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "chips",
+            "name": "芯片",
+            "entityIds": [
+              "EN-373da2ec629326c0"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-66f57d65865a2dfd",
+            "fundingInsightId": "FI-507ad5fde661d5af"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-373da2ec629326c0"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-7d7b2f2c9757b264",
+            "fundingInsightId": "FI-507ad5fde661d5af"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-373da2ec629326c0"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-24230eb38a7d5253",
+            "fundingInsightId": "FI-507ad5fde661d5af"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "aerospace_defense",
+            "name": "航空航天与国防",
+            "entityIds": [
+              "EN-373da2ec629326c0"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b39aef1e42b2a614",
+            "fundingInsightId": "FI-507ad5fde661d5af"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "automotive_transportation",
+            "name": "汽车与交通",
+            "entityIds": [
+              "EN-373da2ec629326c0"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-eb7c8bd8d0352f0a",
+            "fundingInsightId": "FI-507ad5fde661d5af"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-373da2ec629326c0"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4980af10729eed1e",
+            "fundingInsightId": "FI-507ad5fde661d5af"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "telecommunications",
+            "name": "电信",
+            "entityIds": [
+              "EN-373da2ec629326c0"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ce45c87b78d9d80a",
+            "fundingInsightId": "FI-507ad5fde661d5af"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-373da2ec629326c0"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-216c8351bee5eaed",
+            "fundingInsightId": "FI-507ad5fde661d5af"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-373da2ec629326c0"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8a70427c0dbc9f3c",
+            "fundingInsightId": "FI-507ad5fde661d5af"
+          }
+        ],
         "entityIds": [
           "EN-373da2ec629326c0",
           "EN-a4ae746b11369c98"

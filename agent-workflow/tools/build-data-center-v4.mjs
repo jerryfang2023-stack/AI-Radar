@@ -126,7 +126,7 @@ const GENERIC_ROUNDUP_TITLE = /^硬科技投向标[|｜]|^(?:AI\s+giants?|AI\s+c
 const REACTION_ONLY_TITLE = /(?:回应|谈及|评论).{0,60}(?:诉讼|传闻|争议)|(?:诉讼|传闻|争议).{0,60}(?:回应|表态)|\b(?:responds? to|comments? on)\b.{0,80}\b(?:lawsuit|rumou?r|controversy|dispute)\b/iu;
 const RESEARCH_CONTAINER_TITLE = /\b(?:technology|industry|market|technical)?\s*report\b|\b(?:benchmark|research paper|whitepaper)\b|(?:技术|行业|市场|研究)?报告|基准测试|研究论文|白皮书/iu;
 const EXPLICIT_AI_EVIDENCE = /\b(?:ai|agi|artificial intelligence|generative ai|genai|ai[- ](?:native|powered|generated|coding|assistant|assistants|agent|agents|model|models|system|systems|service|services|platform|platforms|tool|tools|chip|chips|hardware|infrastructure|workload|workloads|research|video)|agentic(?:\s+ai)?|large language models?|foundation models?|coding models?|vision[- ]language(?:[- ]action)? models?|multimodal(?:\s+moe)?|machine learning|deep learning|neural (?:network|networks|processing)|llms?|chatbots?|model inference|model training|open[- ]weight|npus?|edge ai|physical ai|embodied ai|computer vision|natural language processing)\b|人工智能|生成式\s*(?:人工智能|AI)|AI\s*(?:智能体|模型|系统|平台|服务|产品|工具|编程|助手|芯片|硬件|基础设施|应用|研究|视频|办公|手机|短剧|生产力|推理|训练|算力)|智能体|大模型|基础模型|编码模型|多模态|机器学习|深度学习|神经网络|生成模型|推理模型|世界模型|具身(?:智能|模型)|端侧生成式人工智能|模型服务|模型券|算力(?:集群|基础设施)/iu;
-const NAMED_AI_EVIDENCE = /\b(?:OpenAI|Anthropic|ChatGPT|Claude|Gemini|DeepMind|DeepSeek|Qwen|Grok|xAI|Mistral(?: AI)?|Llama|Hugging Face|OpenRouter|Codex|Bedrock AgentCore|Thinking Machines Lab|FuriosaAI|InstaLILY|C3 AI|MiniMax|Moonshot AI|Arcade\.dev)\b|豆包|混元|千问|月之暗面|Kimi|灵犀专业版|WPS Comate/iu;
+const NAMED_AI_EVIDENCE = /\b(?:OpenAI|Anthropic|ChatGPT|Claude|Gemini|DeepMind|DeepSeek|Qwen|Grok|xAI|Mistral(?: AI)?|Llama|Hugging Face|OpenRouter|Codex|Bedrock AgentCore|Thinking Machines Lab|FuriosaAI|InstaLILY|C3 AI|MiniMax|Moonshot AI|StepFun|Astribot|Helixon|Moffett AI|Lightwheel|RobotEra|MemoraX|Westlake Mind|Arcade\.dev)\b|豆包|混元|千问|月之暗面|阶跃星辰|生数科技|星海图|极佳视界|华深智药|墨芯(?:人工智能)?|微纳核芯|光轮智能|星动纪元|灵睿智芯|昉擎科技|西湖心辰|Kimi|灵犀专业版|WPS Comate/iu;
 const GENERIC_VERTICAL_AI_PUBLICITY = /(?:我国|国内|全球)(?:首个|首款|首套).{0,80}(?:智慧|智能).{0,30}(?:大模型|系统)|(?:水风光|流域|气象|水文).{0,60}(?:智慧运营|大模型)/iu;
 const ADMINISTRATIVE_AI_SUPPORT_PROGRAM = /(?:模型券|算力券|数据券).{0,100}(?:补贴|补助|申领|发放|优惠|兑付|平台)|(?:补贴|补助|申领|发放|优惠|兑付).{0,100}(?:模型券|算力券|数据券)/iu;
 const AI_NATIVE_ORGANIZATIONS = new Set([
@@ -139,6 +139,7 @@ const AI_NATIVE_ORGANIZATIONS = new Set([
   "MiniMax",
   "Mistral AI",
   "OpenAI",
+  "StepFun",
   "Thinking Machines Lab",
   "xAI"
 ].map((value) => value.toLocaleLowerCase()));

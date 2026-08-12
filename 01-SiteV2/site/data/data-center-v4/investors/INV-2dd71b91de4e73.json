@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2040,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-2dd71b91de4e73",
+    "name": "北京科创",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-04-02",
+    "latest_disclosed_at": "2026-04-02",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "other"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-a6e5382c05dd0d16",
+        "canonical_entity_id": "",
+        "name": "星海图"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-88761f53449e2117",
+        "funding_insight_id": "FI-af2461a497e30ffa",
+        "event_ids": [
+          "EV-435d7e7878b0c326"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "",
+        "company_name": "星海图",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "B+轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿人民币"
+        },
+        "announced_at": "2026-04-02",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-dd387948ae711f72",
+            "source_url": "https://companies.caixin.com/m/2026-04-02/102430123.html",
+            "source_title": "星海图完成20亿元B+轮融资",
+            "source_content_hash": "3702873b1eb4ff8e5e57340525e023aaebb06221f09393a8e2e6a2cdaa7d70cd",
+            "quote": "国资北京股东包括 金融街资本 、 金浦投资 、 北京科创 、 国元股权 、 上城资本",
+            "quote_hash": "1379a27c8099cb982674e7096348478d6aa2aaa0de38c1b5661a6c2369a1193e"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-dd387948ae711f72",
+        "source_url": "https://companies.caixin.com/m/2026-04-02/102430123.html",
+        "source_title": "星海图完成20亿元B+轮融资",
+        "source_content_hash": "3702873b1eb4ff8e5e57340525e023aaebb06221f09393a8e2e6a2cdaa7d70cd",
+        "quote": "国资北京股东包括 金融街资本 、 金浦投资 、 北京科创 、 国元股权 、 上城资本",
+        "quote_hash": "1379a27c8099cb982674e7096348478d6aa2aaa0de38c1b5661a6c2369a1193e"
+      }
+    ]
+  }
+}

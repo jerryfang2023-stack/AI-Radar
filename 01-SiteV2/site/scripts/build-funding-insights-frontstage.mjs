@@ -44,6 +44,40 @@ function listBundles(projectRoot) {
     .filter(Boolean);
 }
 
+function fundingEventMarketScopes(projectRoot) {
+  const databaseRoot = path.join(projectRoot, "01-SiteV2/content/11-databases/data-center-v4");
+  const scopes = new Map();
+  if (!fs.existsSync(databaseRoot)) return scopes;
+  for (const date of fs.readdirSync(databaseRoot).filter((name) => /^\d{4}-\d{2}-\d{2}$/u.test(name)).sort()) {
+    const events = readJson(path.join(databaseRoot, date, "canonical-events.json"), []);
+    for (const event of events) {
+      if (event.event_type !== "funding") continue;
+      scopes.set(event.event_id, {
+        market_region: event.market_scope?.market_region || "",
+        china_market_match: event.market_scope?.china_market_match === true,
+        china_market_basis: event.market_scope?.china_market_basis || [],
+        source_registry_ids: event.market_scope?.source_registry_ids || [],
+      });
+    }
+  }
+  return scopes;
+}
+
+function chinaEntityAliasIndex(projectRoot) {
+  const registry = readJson(path.join(
+    projectRoot,
+    "01-SiteV2/content/11-databases/china-market-entity-aliases-v1.json",
+  ), {});
+  const index = new Map();
+  for (const entity of registry.entities || []) {
+    for (const name of [entity.canonical_name, ...(entity.aliases || []), ...(entity.legal_names || [])]) {
+      const key = normalizedListKey(name);
+      if (key) index.set(key, entity.canonical_name);
+    }
+  }
+  return index;
+}
+
 function directionById(projectRoot) {
   const data = readJson(path.join(projectRoot, "01-SiteV2/site/data/opportunity-evidence-v2.json"), {});
   return new Map((data.directionCards || []).map((card) => [card.id, { id: card.id, title: card.title }]));
@@ -361,6 +395,8 @@ export function enrichFundingHistory(cards = []) {
 
 export function buildFundingInsightsFrontstage(projectRoot = root) {
   const bundles = listBundles(projectRoot);
+  const eventMarketScopes = fundingEventMarketScopes(projectRoot);
+  const chinaAliases = chinaEntityAliasIndex(projectRoot);
   const directions = directionById(projectRoot);
   const productForms = productFormNames(projectRoot);
   const marketCategories = facetValueNames(projectRoot, "ai_market_category");
@@ -400,6 +436,22 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
         || String(right.published_at || "").localeCompare(String(left.published_at || ""));
     })
     .map((card) => {
+      const sourceEventIds = card.source_event_ids || [card.triggered_by_event_id].filter(Boolean);
+      const sourceScopes = sourceEventIds.map((eventId) => eventMarketScopes.get(eventId)).filter(Boolean);
+      const chinaAlias = [card.company?.name, card.company?.full_name]
+        .map((name) => chinaAliases.get(normalizedListKey(name)))
+        .find(Boolean) || "";
+      const chinaMarket = Boolean(chinaAlias)
+        || sourceScopes.some((scope) => scope.market_region === "CN" && scope.china_market_match);
+      const marketScope = {
+        market_region: chinaMarket ? "CN" : "GLOBAL",
+        china_market_match: chinaMarket,
+        china_market_basis: [...new Set([
+          ...sourceScopes.flatMap((scope) => scope.china_market_basis || []),
+          ...(chinaAlias ? [`china_entity_alias:${chinaAlias}`] : []),
+        ])],
+        source_registry_ids: [...new Set(sourceScopes.flatMap((scope) => scope.source_registry_ids || []))],
+      };
       const productFormDecision = fundingProductFormDecision(card);
       const productFormId = productFormDecision.id;
       const productFormName = productForms.get(productFormId);
@@ -421,6 +473,7 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
       }
       return {
         ...card,
+        market_scope: marketScope,
         product_form: {
           dimension: "product_form",
           id: productFormId,
@@ -486,11 +539,12 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
       schema_version: FUNDING_INSIGHT_FRONTSTAGE_VERSION,
       funding_insight_version: FUNDING_INSIGHT_VERSION,
       site_version: "SITE-V4.6.1-research-retirement",
-      column_version: "FUNDING-INSIGHT-V1.4.0-financing-fields",
+      column_version: "FUNDING-INSIGHT-V1.5.0-china-market",
       taxonomy_version: "TAG-V4.1",
       latest_date: latestDate,
       generated_at: generatedAt,
       card_count: cards.length,
+      china_market_card_count: cards.filter((card) => card.market_scope?.market_region === "CN").length,
       duplicate_rounds_removed: cardByEvent.size - cards.length,
       automatic_publication: true,
       market_category_framework: {
@@ -500,6 +554,10 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
       },
     },
     filters: {
+      market_regions: [
+        { id: "", name: "全球" },
+        { id: "CN", name: "中国区" },
+      ],
       rounds: [...new Set(cards.map((card) => card.financing.round).filter(Boolean))].sort(),
       market_categories: marketCategoryFilters,
       market_subcategories: marketSubcategoryFilters,

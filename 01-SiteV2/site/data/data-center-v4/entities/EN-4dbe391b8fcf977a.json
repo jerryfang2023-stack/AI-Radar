@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -25,6 +25,7 @@
     ],
     "eventIds": [
       "EV-4b8064b1139e1724",
+      "EV-bb8acbaab5f7aa4e",
       "EV-434dcf1813a84ead",
       "EV-7fdffebf867b2bd7",
       "EV-218c2f6ecf3c369f",
@@ -34,11 +35,12 @@
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-07-03",
-    "lastSeen": "2026-08-01",
+    "firstSeen": "2026-05-08",
+    "lastSeen": "2026-08-03",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-bb8acbaab5f7aa4e",
         "EV-4b8064b1139e1724"
       ],
       "deployments": [
@@ -57,6 +59,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-bb8acbaab5f7aa4e",
+        "dataDate": "2026-08-03",
+        "date": "2026-05-08",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "阶跃星辰拟完成近25亿美元新一轮融资",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2c348893efb2316e",
+          "EN-4dbe391b8fcf977a"
+        ]
+      },
       {
         "id": "EV-7fdffebf867b2bd7",
         "dataDate": "2026-08-01",

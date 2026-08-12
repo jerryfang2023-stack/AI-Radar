@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "institution": {
@@ -20,64 +20,119 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
-    "first_disclosed_at": "2026-06-26",
-    "latest_disclosed_at": "2026-06-26",
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-02-14",
+    "latest_disclosed_at": "2026-08-03",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "angel"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-4731aa5b66658c7f",
+        "canonical_entity_id": "EN-4731aa5b66658c7f",
+        "name": "无界动力"
+      }
+    ],
     "activities": [
       {
-        "activity_id": "IA-b8ae35007f8980b1",
-        "funding_insight_id": "FI-7e546bd15ad5d4db",
+        "activity_id": "IA-cc0db343c9e1bbd1",
+        "funding_insight_id": "FI-07a58b1fe051182a",
+        "event_ids": [
+          "EV-88a984b765bb54f1"
+        ],
+        "company_entity_id": "EN-847c00c904ccdb98",
+        "company_canonical_entity_id": "",
+        "company_name": "西湖心辰（杭州）科技有限公司",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "B+轮",
+        "amount_original": "数亿元人民币",
+        "amount_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "数亿元人民币"
+        },
+        "announced_at": "2026-08-03",
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮领投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c0671e3e70d8ae56",
+            "source_url": "https://m.36kr.com/p/2179385107198212",
+            "source_title": "36氪首发｜打通大模型、中间层、产品应用三层能力，「西湖心辰」完成Pre-A轮融资-36氪",
+            "source_content_hash": "1562678e3cf5d266",
+            "quote": "本轮融资领投方为百度风投",
+            "quote_hash": "edd77badf072b98fa744101d384a663989f16a20756d374e1f5ba9e0018970fd"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e85ef36454d7b4f1",
+        "funding_insight_id": "FI-6763b86fb1d41259",
         "event_ids": [
           "EV-876baa523eb93c4f"
         ],
         "company_entity_id": "EN-4731aa5b66658c7f",
         "company_canonical_entity_id": "EN-4731aa5b66658c7f",
-        "company_name": "无界动力（北京）技术研发有限公司",
+        "company_name": "无界动力",
         "round": "天使轮",
         "round_code": "angel",
         "round_original": "天使轮",
-        "amount_original": "超2亿美元",
+        "amount_original": "超2亿元",
         "amount_normalized": {
-          "currency": "USD",
+          "currency": "CNY",
           "value": 200000000,
           "min_value": 200000000,
           "max_value": null,
           "unit": "base",
           "status": "lower_bound",
-          "display_zh": "超过 2 亿美元"
+          "display_zh": "超过 2 亿人民币"
         },
-        "announced_at": "2026-06-26",
+        "announced_at": "2026-02-14",
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "首轮天使融资参投",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-c7cbf66d99295c80",
-            "source_url": "https://www.chnfund.com/article/AR42d924a5-c008-cd46-b00b-3a2216d0317e",
-            "source_title": "无界动力完成超2亿美元天使轮融资 中国基金报",
-            "source_content_hash": "5b45cd52e44552d8",
-            "quote": "2025年11月，无界动力完成首轮3亿元天使融资，红杉中国、线性资本领投，高瓴创投、地平线、华业天成、钟鼎资本、BV百度风投、同歌创投等跟投。",
-            "quote_hash": "75dd300b86df286fdc787cf8bbb30243a10dad4a276d2807de5d6d5cd40d56e5"
+            "source_id": "FISRC-daccbed46498e19c",
+            "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
+            "source_title": "无界动力宣布完成超2亿元天使+轮融资",
+            "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
+            "quote": "老股东红杉中国、线性资本、高瓴创投、华业天成、中金资本旗下基金、BV百度风投持续追投，新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
+            "quote_hash": "6867781360a245cd66582a24953eac9acacbc9a62098ae37517f6597e7475aec"
           }
         ]
       }
     ],
     "evidence": [
       {
-        "source_id": "FISRC-c7cbf66d99295c80",
-        "source_url": "https://www.chnfund.com/article/AR42d924a5-c008-cd46-b00b-3a2216d0317e",
-        "source_title": "无界动力完成超2亿美元天使轮融资 中国基金报",
-        "source_content_hash": "5b45cd52e44552d8",
-        "quote": "2025年11月，无界动力完成首轮3亿元天使融资，红杉中国、线性资本领投，高瓴创投、地平线、华业天成、钟鼎资本、BV百度风投、同歌创投等跟投。",
-        "quote_hash": "75dd300b86df286fdc787cf8bbb30243a10dad4a276d2807de5d6d5cd40d56e5"
+        "source_id": "FISRC-c0671e3e70d8ae56",
+        "source_url": "https://m.36kr.com/p/2179385107198212",
+        "source_title": "36氪首发｜打通大模型、中间层、产品应用三层能力，「西湖心辰」完成Pre-A轮融资-36氪",
+        "source_content_hash": "1562678e3cf5d266",
+        "quote": "本轮融资领投方为百度风投",
+        "quote_hash": "edd77badf072b98fa744101d384a663989f16a20756d374e1f5ba9e0018970fd"
+      },
+      {
+        "source_id": "FISRC-daccbed46498e19c",
+        "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
+        "source_title": "无界动力宣布完成超2亿元天使+轮融资",
+        "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
+        "quote": "老股东红杉中国、线性资本、高瓴创投、华业天成、中金资本旗下基金、BV百度风投持续追投，新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
+        "quote_hash": "6867781360a245cd66582a24953eac9acacbc9a62098ae37517f6597e7475aec"
       }
     ]
   }

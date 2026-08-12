@@ -197,6 +197,11 @@ function validateFrontstage() {
     problems.push("frontstage_schema_version_invalid");
   }
   if (data.meta?.card_count !== (data.cards || []).length) problems.push("frontstage_card_count_invalid");
+  const chinaMarketCards = (data.cards || [])
+    .filter((card) => card.market_scope?.market_region === "CN");
+  if (data.meta?.china_market_card_count !== chinaMarketCards.length) {
+    problems.push("frontstage_china_market_card_count_invalid");
+  }
   const keys = new Set();
   for (const card of data.cards || []) {
     for (const item of fundingInsightProblems(card)) problems.push(`${card.funding_insight_id}:${item}`);
@@ -215,6 +220,12 @@ function validateFrontstage() {
     ].join("|");
     if (keys.has(key)) problems.push(`frontstage_aggregation_duplicate:${key}`);
     keys.add(key);
+    if (!["CN", "GLOBAL"].includes(card.market_scope?.market_region)) {
+      problems.push(`${card.funding_insight_id}:market_region_invalid`);
+    }
+    if (card.market_scope?.china_market_match !== (card.market_scope?.market_region === "CN")) {
+      problems.push(`${card.funding_insight_id}:china_market_match_invalid`);
+    }
   }
   const filterRounds = new Set(data.filters?.rounds || []);
   const cardRounds = new Set((data.cards || []).map((card) => card.financing?.round).filter(Boolean));
@@ -222,6 +233,11 @@ function validateFrontstage() {
     filterRounds.size !== cardRounds.size
     || [...cardRounds].some((round) => !filterRounds.has(round))
   ) problems.push("frontstage_round_filters_not_normalized");
+  const marketRegions = new Map((data.filters?.market_regions || [])
+    .map((item) => [item.id, item.name]));
+  if (marketRegions.get("") !== "全球" || marketRegions.get("CN") !== "中国区") {
+    problems.push("frontstage_market_region_filters_invalid");
+  }
   return problems;
 }
 

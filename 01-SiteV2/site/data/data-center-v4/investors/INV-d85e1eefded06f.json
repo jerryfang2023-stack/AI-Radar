@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "institution": {
@@ -16,22 +16,29 @@
     "name": "珠海科技产业集团",
     "aliases": [],
     "canonical_entity_id": null,
-    "investor_kind": "corporate_investor",
-    "investor_kind_label": "企业投资方",
+    "investor_kind": "government_fund",
+    "investor_kind_label": "政府或主权基金",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
-    "first_disclosed_at": "2026-03-10",
-    "latest_disclosed_at": "2026-03-10",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2026-03-05",
+    "latest_disclosed_at": "2026-08-03",
     "role_counts": {
-      "participant": 1
+      "historical_or_ambiguous": 1,
+      "participant": 2
     },
     "round_codes": [
-      "multi_round"
+      "multi_round",
+      "series_a1"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-74b42431957780b9",
+        "canonical_entity_id": "",
+        "name": "昉擎科技"
+      },
       {
         "entity_id": "EN-cb1041ddf6123c37",
         "canonical_entity_id": "EN-cb1041ddf6123c37",
@@ -39,6 +46,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-04cd40e07e855fd3",
+        "funding_insight_id": "FI-c7196586a871ba41",
+        "event_ids": [
+          "EV-4fbbf16279e27000"
+        ],
+        "company_entity_id": "EN-74b42431957780b9",
+        "company_canonical_entity_id": "",
+        "company_name": "昉擎科技",
+        "round": "A1轮",
+        "round_code": "series_a1",
+        "round_original": "A1轮",
+        "amount_original": "超过 100 亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 10000000000,
+          "min_value": 10000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 100 亿人民币"
+        },
+        "announced_at": "2026-08-03",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-75b04daca915e1ca",
+            "source_url": "https://www.cs.com.cn/ssgs/01/2026/08/03/detail_2026080310029022.html",
+            "source_title": "昉擎科技完成A1轮融资 投后估值超100亿元",
+            "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
+            "quote": "本轮融资由上海市徐汇区国资平台徐汇资本、珠海市国资旗下珠海科技产业集团两大地方产业国资战略投资",
+            "quote_hash": "46cef1df2770a4acd2ea81fad6c9fe0aad4345521a90032ebe1127a9eae14f9a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-c2187e8410afef16",
         "funding_insight_id": "FI-3b4a0a6b7397d174",
@@ -76,9 +121,55 @@
             "quote_hash": "b8fab44b0c0d4b539d3c01fb2e3ba601725d5487a4f3a6e99f4d4916f5cca200"
           }
         ]
+      },
+      {
+        "activity_id": "IA-f2060e6348195fba",
+        "funding_insight_id": "FI-129fe046eadd748c",
+        "event_ids": [
+          "EV-a34447341a3872ed"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "Pre-B轮",
+        "round_code": "pre_series_b",
+        "round_original": "Pre-B轮",
+        "amount_original": "近10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 10 亿人民币"
+        },
+        "announced_at": "2026-03-05",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次国资平台",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-010c77e94d1f858f",
+            "source_url": "https://m.36kr.com/p/3710076436557954",
+            "source_title": "极佳视界完成10亿元Pre-B轮融资，「世界模型」驱动通用机器人加速进入 ...",
+            "source_content_hash": "7e8c3e23c6fe0f92",
+            "quote": "苏创投、广州产投、长江资本、珠海科技产业集团等众多国资平台的支持，提供了长期资本和生态的支持",
+            "quote_hash": "10c1bdf67224386125a8c8367c2463acff3a95c1ba7ddd3fa18b8643e275f9a0"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-75b04daca915e1ca",
+        "source_url": "https://www.cs.com.cn/ssgs/01/2026/08/03/detail_2026080310029022.html",
+        "source_title": "昉擎科技完成A1轮融资 投后估值超100亿元",
+        "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
+        "quote": "本轮融资由上海市徐汇区国资平台徐汇资本、珠海市国资旗下珠海科技产业集团两大地方产业国资战略投资",
+        "quote_hash": "46cef1df2770a4acd2ea81fad6c9fe0aad4345521a90032ebe1127a9eae14f9a"
+      },
       {
         "source_id": "FISRC-10c7fcf01fad4e2f",
         "source_url": "https://finance.sina.com.cn/cj/2026-03-10/doc-inhqnmhx6407658.shtml",
@@ -86,6 +177,14 @@
         "source_content_hash": "20f81c1ca1ce317a8829a288b011283ff55820a5b683df55a4b9078e8f2ce857",
         "quote": "天使轮由 国开金融 、国中资本、央视融媒体产业投资基金等 国家级“国家队”资本， 某数千亿上市公司旗下战投、 长飞光纤 旗下基金，两大核心产业龙头资本，沃德尔等 知名产业资本，及 元生创投、珠海科技产业集团、钧山投资、燕缘创投、大米资本、沃赋资本、彬复资本等 多家知名基金共同投资。",
         "quote_hash": "b8fab44b0c0d4b539d3c01fb2e3ba601725d5487a4f3a6e99f4d4916f5cca200"
+      },
+      {
+        "source_id": "FISRC-010c77e94d1f858f",
+        "source_url": "https://m.36kr.com/p/3710076436557954",
+        "source_title": "极佳视界完成10亿元Pre-B轮融资，「世界模型」驱动通用机器人加速进入 ...",
+        "source_content_hash": "7e8c3e23c6fe0f92",
+        "quote": "苏创投、广州产投、长江资本、珠海科技产业集团等众多国资平台的支持，提供了长期资本和生态的支持",
+        "quote_hash": "10c1bdf67224386125a8c8367c2463acff3a95c1ba7ddd3fa18b8643e275f9a0"
       }
     ]
   }

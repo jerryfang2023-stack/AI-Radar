@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "institution": {
@@ -21,11 +21,12 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 1,
     "first_disclosed_at": "2026-03-02",
-    "latest_disclosed_at": "2026-03-02",
+    "latest_disclosed_at": "2026-06-15",
     "role_counts": {
+      "historical_or_ambiguous": 3,
       "participant": 1
     },
     "round_codes": [
@@ -39,6 +40,120 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-515b9da657027f47",
+        "funding_insight_id": "FI-6ada8d4502daa530",
+        "event_ids": [
+          "EV-e0a31302688c81ec"
+        ],
+        "company_entity_id": "EN-a5e5f031b6f878cf",
+        "company_canonical_entity_id": "",
+        "company_name": "杭州微纳核芯电子科技有限公司",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "超10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": 1000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 10 亿人民币"
+        },
+        "announced_at": "2026-06-15",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "老股东继续加持",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b96684face6f5223",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
+            "source_title": "微纳核芯完成超10亿元B轮系列融资",
+            "source_content_hash": "3001d7761836998ad785b02a8753e10abd430afc8267dd715a690f318b1cff60",
+            "quote": "中芯聚源、毅达资本、蓝驰创投、东方嘉富及 立讯精密 产投等老股东继续加持",
+            "quote_hash": "756b351a9fa6aa2ab3dfc4a87d296aea555b2d57dc75b235aa853a15a06db3cc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-cb7fa79e0e1b03ad",
+        "funding_insight_id": "FI-ab64a33b7d572f85",
+        "event_ids": [
+          "EV-3a591b0f027f66cf"
+        ],
+        "company_entity_id": "EN-6862b0d243051cd3",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿人民币"
+        },
+        "announced_at": "2026-06-15",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-B轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce47b663ca256878",
+            "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+            "source_title": "极佳视界三个月完成35亿元B轮系列融资",
+            "source_content_hash": "2e290bb988c15b09d237e8bdde13c6e932e6bd7442016bbf35ee6ed94e536df8",
+            "quote": "先是在今年3月初完成近10亿元Pre-B轮融资，投资方包括中芯聚源、上海半导体产投基金、临芯资本、星源资本、万林国际等顶尖芯片和汽车产业资本",
+            "quote_hash": "3b98336b325782885e9f0d273738cd088f0878a39496f13362ebfc0958287cd7"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0365911ce75a17ce",
+        "funding_insight_id": "FI-f4cf69e8d2cc7653",
+        "event_ids": [
+          "EV-499a62114b0fd616"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "近15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 15 亿人民币"
+        },
+        "announced_at": "2026-04-16",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-B轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4782a6093d519a4d",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
+            "source_title": "极佳视界完成15亿元B1轮融资",
+            "source_content_hash": "1249ab9a7b5d09d0d0f4f5724c90445e53a54409c6821fa0e8f197a595dca320",
+            "quote": "极佳视界宣布完成近10亿元Pre-B轮融资，投资方包括中芯聚源、上海半导体产投基金、临芯资本、星源资本、万林国际等顶尖芯片和汽车产业资本",
+            "quote_hash": "b6f57d95d963728c4d43c47ed9870de651f0c354cf8395d2fef343766a57704f"
+          }
+        ]
+      },
       {
         "activity_id": "IA-50ef56f76338a5e1",
         "funding_insight_id": "FI-d64fecfe9cecf228",
@@ -79,6 +194,30 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-b96684face6f5223",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
+        "source_title": "微纳核芯完成超10亿元B轮系列融资",
+        "source_content_hash": "3001d7761836998ad785b02a8753e10abd430afc8267dd715a690f318b1cff60",
+        "quote": "中芯聚源、毅达资本、蓝驰创投、东方嘉富及 立讯精密 产投等老股东继续加持",
+        "quote_hash": "756b351a9fa6aa2ab3dfc4a87d296aea555b2d57dc75b235aa853a15a06db3cc"
+      },
+      {
+        "source_id": "FISRC-ce47b663ca256878",
+        "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+        "source_title": "极佳视界三个月完成35亿元B轮系列融资",
+        "source_content_hash": "2e290bb988c15b09d237e8bdde13c6e932e6bd7442016bbf35ee6ed94e536df8",
+        "quote": "先是在今年3月初完成近10亿元Pre-B轮融资，投资方包括中芯聚源、上海半导体产投基金、临芯资本、星源资本、万林国际等顶尖芯片和汽车产业资本",
+        "quote_hash": "3b98336b325782885e9f0d273738cd088f0878a39496f13362ebfc0958287cd7"
+      },
+      {
+        "source_id": "FISRC-4782a6093d519a4d",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
+        "source_title": "极佳视界完成15亿元B1轮融资",
+        "source_content_hash": "1249ab9a7b5d09d0d0f4f5724c90445e53a54409c6821fa0e8f197a595dca320",
+        "quote": "极佳视界宣布完成近10亿元Pre-B轮融资，投资方包括中芯聚源、上海半导体产投基金、临芯资本、星源资本、万林国际等顶尖芯片和汽车产业资本",
+        "quote_hash": "b6f57d95d963728c4d43c47ed9870de651f0c354cf8395d2fef343766a57704f"
+      },
       {
         "source_id": "FISRC-adaac360139469bd",
         "source_url": "https://www.cls.cn/detail/2300238",

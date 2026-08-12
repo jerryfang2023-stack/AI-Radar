@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "institution": {
@@ -20,17 +20,64 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "first_disclosed_at": "2026-05-20",
-    "latest_disclosed_at": "2026-05-20",
+    "latest_disclosed_at": "2026-08-02",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-f87e57673b408d79",
+        "canonical_entity_id": "",
+        "name": "Arrakis Security"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-632bd8bea54dc051",
+        "funding_insight_id": "FI-d897e56937c13b91",
+        "event_ids": [
+          "EV-24823de8fb76ac31"
+        ],
+        "company_entity_id": "EN-f87e57673b408d79",
+        "company_canonical_entity_id": "",
+        "company_name": "Arrakis Security",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$8 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 8000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "800 万美元"
+        },
+        "announced_at": "2026-08-02",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-370a65ed92921303",
+            "source_url": "https://runtimewire.com/article/arrakis-security-raises-8-million-ai-agent-runtime-controls",
+            "source_title": "Arrakis 为 AI 智能体运行时安全筹集 800 万美元",
+            "source_content_hash": "895c7d4909879605",
+            "quote": "The investors also included ElevenLabs CEO Mati Staniszewski, Torq CEO Ofer Smadari, Pentera CEO Amitai Ratzzon and several Palantir executives",
+            "quote_hash": "1a9436e2461129344592c49d49488f0a5a1e7d580b3c4cfb443d5cf7cc193be4"
+          }
+        ]
+      },
       {
         "activity_id": "IA-bbe8e0856c94cfd9",
         "funding_insight_id": "FI-664cc90f57688153",
@@ -71,6 +118,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-370a65ed92921303",
+        "source_url": "https://runtimewire.com/article/arrakis-security-raises-8-million-ai-agent-runtime-controls",
+        "source_title": "Arrakis 为 AI 智能体运行时安全筹集 800 万美元",
+        "source_content_hash": "895c7d4909879605",
+        "quote": "The investors also included ElevenLabs CEO Mati Staniszewski, Torq CEO Ofer Smadari, Pentera CEO Amitai Ratzzon and several Palantir executives",
+        "quote_hash": "1a9436e2461129344592c49d49488f0a5a1e7d580b3c4cfb443d5cf7cc193be4"
+      },
       {
         "source_id": "FISRC-ce83b857608dabeb",
         "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",

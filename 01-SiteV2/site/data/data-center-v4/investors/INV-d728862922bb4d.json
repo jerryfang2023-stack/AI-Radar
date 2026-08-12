@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "institution": {
@@ -20,19 +20,25 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 4,
+    "portfolio_company_count": 2,
     "first_disclosed_at": "2026-02-23",
-    "latest_disclosed_at": "2026-04-07",
+    "latest_disclosed_at": "2026-06-15",
     "role_counts": {
-      "historical_or_ambiguous": 1,
-      "participant": 1
+      "historical_or_ambiguous": 4,
+      "participant": 2
     },
     "round_codes": [
+      "multi_round",
       "other"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-6862b0d243051cd3",
+        "canonical_entity_id": "",
+        "name": "极佳视界"
+      },
       {
         "entity_id": "EN-1032f7a4df33f629",
         "canonical_entity_id": "EN-1032f7a4df33f629",
@@ -40,6 +46,120 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-dadb5c1cb160430d",
+        "funding_insight_id": "FI-ab64a33b7d572f85",
+        "event_ids": [
+          "EV-3a591b0f027f66cf"
+        ],
+        "company_entity_id": "EN-6862b0d243051cd3",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿人民币"
+        },
+        "announced_at": "2026-06-15",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce47b663ca256878",
+            "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+            "source_title": "极佳视界三个月完成35亿元B轮系列融资",
+            "source_content_hash": "2e290bb988c15b09d237e8bdde13c6e932e6bd7442016bbf35ee6ed94e536df8",
+            "quote": "国中资本、达晨财智、图灵资管等多个老股东持续超额加注",
+            "quote_hash": "dce935c06fce5425156b93b1b31d4ac97ff305070d2c8f29d10845c372e5c8f8"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-bfcb291a9639f07e",
+        "funding_insight_id": "FI-ab64a33b7d572f85",
+        "event_ids": [
+          "EV-3a591b0f027f66cf"
+        ],
+        "company_entity_id": "EN-6862b0d243051cd3",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿人民币"
+        },
+        "announced_at": "2026-06-15",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A2轮领投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce47b663ca256878",
+            "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+            "source_title": "极佳视界三个月完成35亿元B轮系列融资",
+            "source_content_hash": "2e290bb988c15b09d237e8bdde13c6e932e6bd7442016bbf35ee6ed94e536df8",
+            "quote": "一个月后，公司完成2亿元A2轮融资，由达晨财智领投",
+            "quote_hash": "6fe7e7dd813f70e04f1a37b80e1711ca46f84b46e093d37861b9356086f1a483"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-066245e3a8930aff",
+        "funding_insight_id": "FI-f4cf69e8d2cc7653",
+        "event_ids": [
+          "EV-499a62114b0fd616"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "近15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 15 亿人民币"
+        },
+        "announced_at": "2026-04-16",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A2轮领投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4782a6093d519a4d",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
+            "source_title": "极佳视界完成15亿元B1轮融资",
+            "source_content_hash": "1249ab9a7b5d09d0d0f4f5724c90445e53a54409c6821fa0e8f197a595dca320",
+            "quote": "极佳视界完成2亿元A2轮融资，由达晨财智领投，老股东华控基金联合领投",
+            "quote_hash": "371cb070bb7acc851d40f1c1b9c1921e906ec8260b1506e94b65eb3f3a60be30"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9d4d9512b0ca1ac4",
         "funding_insight_id": "FI-4aaa0f3788c81d32",
@@ -75,6 +195,44 @@
             "source_content_hash": "4c0590395b225d91834ea11c5dc4e3a325b4487f06e04055a1c05a08c2038da2",
             "quote": "达晨财智、某头部人民币基金、银河源汇等机构重磅加持",
             "quote_hash": "16bda2a54bc3551f4aecbb2b3e998631edd16de61b42d79b10cf70d5427da7e6"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-1e387be673376359",
+        "funding_insight_id": "FI-129fe046eadd748c",
+        "event_ids": [
+          "EV-a34447341a3872ed"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "Pre-B轮",
+        "round_code": "pre_series_b",
+        "round_original": "Pre-B轮",
+        "amount_original": "近10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 10 亿人民币"
+        },
+        "announced_at": "2026-03-05",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次财务机构",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-010c77e94d1f858f",
+            "source_url": "https://m.36kr.com/p/3710076436557954",
+            "source_title": "极佳视界完成10亿元Pre-B轮融资，「世界模型」驱动通用机器人加速进入 ...",
+            "source_content_hash": "7e8c3e23c6fe0f92",
+            "quote": "中金资本、达晨财智、华控基金、奇绩创坛等众多财务机构的认可，体现了极佳视界的领先性和行业地位",
+            "quote_hash": "75a5b839e2f0bec8e961daac6585a0bdb1935daf8087f235a0f91215c2c50d1c"
           }
         ]
       },
@@ -119,12 +277,44 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-ce47b663ca256878",
+        "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+        "source_title": "极佳视界三个月完成35亿元B轮系列融资",
+        "source_content_hash": "2e290bb988c15b09d237e8bdde13c6e932e6bd7442016bbf35ee6ed94e536df8",
+        "quote": "国中资本、达晨财智、图灵资管等多个老股东持续超额加注",
+        "quote_hash": "dce935c06fce5425156b93b1b31d4ac97ff305070d2c8f29d10845c372e5c8f8"
+      },
+      {
+        "source_id": "FISRC-ce47b663ca256878",
+        "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+        "source_title": "极佳视界三个月完成35亿元B轮系列融资",
+        "source_content_hash": "2e290bb988c15b09d237e8bdde13c6e932e6bd7442016bbf35ee6ed94e536df8",
+        "quote": "一个月后，公司完成2亿元A2轮融资，由达晨财智领投",
+        "quote_hash": "6fe7e7dd813f70e04f1a37b80e1711ca46f84b46e093d37861b9356086f1a483"
+      },
+      {
+        "source_id": "FISRC-4782a6093d519a4d",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
+        "source_title": "极佳视界完成15亿元B1轮融资",
+        "source_content_hash": "1249ab9a7b5d09d0d0f4f5724c90445e53a54409c6821fa0e8f197a595dca320",
+        "quote": "极佳视界完成2亿元A2轮融资，由达晨财智领投，老股东华控基金联合领投",
+        "quote_hash": "371cb070bb7acc851d40f1c1b9c1921e906ec8260b1506e94b65eb3f3a60be30"
+      },
+      {
         "source_id": "FISRC-fc5617428a7935ed",
         "source_url": "https://www.nbd.com.cn/articles/2026-04-07/4328144.html",
         "source_title": "千寻智能30天融资30亿元：马云、雷军罕见“同框”！重金押注“百万小时”数据规模，具身智能马太效应加剧",
         "source_content_hash": "4c0590395b225d91834ea11c5dc4e3a325b4487f06e04055a1c05a08c2038da2",
         "quote": "达晨财智、某头部人民币基金、银河源汇等机构重磅加持",
         "quote_hash": "16bda2a54bc3551f4aecbb2b3e998631edd16de61b42d79b10cf70d5427da7e6"
+      },
+      {
+        "source_id": "FISRC-010c77e94d1f858f",
+        "source_url": "https://m.36kr.com/p/3710076436557954",
+        "source_title": "极佳视界完成10亿元Pre-B轮融资，「世界模型」驱动通用机器人加速进入 ...",
+        "source_content_hash": "7e8c3e23c6fe0f92",
+        "quote": "中金资本、达晨财智、华控基金、奇绩创坛等众多财务机构的认可，体现了极佳视界的领先性和行业地位",
+        "quote_hash": "75a5b839e2f0bec8e961daac6585a0bdb1935daf8087f235a0f91215c2c50d1c"
       },
       {
         "source_id": "FISRC-f6dd24cc4ca544d8",

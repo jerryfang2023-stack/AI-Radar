@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2040,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-e3a0ccca6cbcf4",
+    "name": "盛赫资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-06",
+    "latest_disclosed_at": "2026-07-06",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-bbc41366a5a7cf78",
+        "canonical_entity_id": "",
+        "name": "北京星动纪元科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-9d8f98b566e99077",
+        "funding_insight_id": "FI-f7342735e68375d9",
+        "event_ids": [
+          "EV-6ca567f6e80c36c5"
+        ],
+        "company_entity_id": "EN-bbc41366a5a7cf78",
+        "company_canonical_entity_id": "",
+        "company_name": "北京星动纪元科技有限公司",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿人民币"
+        },
+        "announced_at": "2026-07-06",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8c073d38e1f34758",
+            "source_url": "https://news.pedaily.cn/202607/565883.shtml",
+            "source_title": "星动纪元完成10亿元新一轮融资",
+            "source_content_hash": "e02c1ade45f42e1ffa8e8febb36bda148ac558a328eb4ce356fcab3775bb04d2",
+            "quote": "中金雷诺、九坤创投、弘毅投资、君泰资本、盛赫资本跟投",
+            "quote_hash": "22bc315d01774242dc10b68af7a908fac6217710a0edd85957554dbd4dc6c9e8"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-8c073d38e1f34758",
+        "source_url": "https://news.pedaily.cn/202607/565883.shtml",
+        "source_title": "星动纪元完成10亿元新一轮融资",
+        "source_content_hash": "e02c1ade45f42e1ffa8e8febb36bda148ac558a328eb4ce356fcab3775bb04d2",
+        "quote": "中金雷诺、九坤创投、弘毅投资、君泰资本、盛赫资本跟投",
+        "quote_hash": "22bc315d01774242dc10b68af7a908fac6217710a0edd85957554dbd4dc6c9e8"
+      }
+    ]
+  }
+}

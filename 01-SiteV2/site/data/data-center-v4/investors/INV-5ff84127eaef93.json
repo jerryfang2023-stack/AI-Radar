@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "institution": {
@@ -21,12 +21,12 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
-    "first_disclosed_at": "2026-05-07",
+    "first_disclosed_at": "2026-04-02",
     "latest_disclosed_at": "2026-05-07",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
@@ -68,6 +68,44 @@
             "quote_hash": "b7c2e93816b3c8eb44d51b5751b42075e849620248e6d988c9db1ee968bc1491"
           }
         ]
+      },
+      {
+        "activity_id": "IA-d747d3792db2c11e",
+        "funding_insight_id": "FI-af2461a497e30ffa",
+        "event_ids": [
+          "EV-435d7e7878b0c326"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "",
+        "company_name": "星海图",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "B+轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿人民币"
+        },
+        "announced_at": "2026-04-02",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B轮主要老股东追加",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1d57bbe4edb9e812",
+            "source_url": "https://companies.caixin.com/2026-02-11/102413493.html",
+            "source_title": "具身智能公司星海图完成10亿元B轮融资_公司频道_财新网",
+            "source_content_hash": "5cf2794be5d5263d",
+            "quote": "主要老股东 凯辉基金 、 美团龙珠 、 今日资本 、 襄禾资本 和 高瓴创投 超额或满额追加",
+            "quote_hash": "42422a062e7fccb11702f9a712dee008ad10ef60f7e373ef2947d5ba1314e136"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -78,6 +116,14 @@
         "source_content_hash": "eeb091dd8db852e6",
         "quote": "2023年6月天使轮 ，近20亿人民币，估值3亿美元，红杉中国、真格基金、今日资本、砺思资本",
         "quote_hash": "b7c2e93816b3c8eb44d51b5751b42075e849620248e6d988c9db1ee968bc1491"
+      },
+      {
+        "source_id": "FISRC-1d57bbe4edb9e812",
+        "source_url": "https://companies.caixin.com/2026-02-11/102413493.html",
+        "source_title": "具身智能公司星海图完成10亿元B轮融资_公司频道_财新网",
+        "source_content_hash": "5cf2794be5d5263d",
+        "quote": "主要老股东 凯辉基金 、 美团龙珠 、 今日资本 、 襄禾资本 和 高瓴创投 超额或满额追加",
+        "quote_hash": "42422a062e7fccb11702f9a712dee008ad10ef60f7e373ef2947d5ba1314e136"
       }
     ]
   }

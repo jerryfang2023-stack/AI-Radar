@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "institution": {
@@ -20,13 +20,13 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 1,
     "first_disclosed_at": "2026-07-22",
     "latest_disclosed_at": "2026-07-22",
     "role_counts": {
-      "participant": 2
+      "participant": 1
     },
     "round_codes": [
       "series_a"
@@ -39,44 +39,6 @@
       }
     ],
     "activities": [
-      {
-        "activity_id": "IA-a5da8f13c086eb18",
-        "funding_insight_id": "FI-6083aa095b41b5b1",
-        "event_ids": [
-          "EV-24823de8fb76ac31"
-        ],
-        "company_entity_id": "EN-834cc12fc35adde7",
-        "company_canonical_entity_id": "",
-        "company_name": "Arrakis",
-        "round": "A轮",
-        "round_code": "series_a",
-        "round_original": "Series A",
-        "amount_original": "$38 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 38000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "3800 万美元"
-        },
-        "announced_at": "2026-07-22",
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-1944a3662baaebec",
-            "source_url": "https://techfundingnews.com/arrakis-raises-38m-blossom-accel-ai-agents",
-            "source_title": "Arrakis raises $38M from Blossom and Accel, with Datadog CEO and OpenAI exec joining the round — TFN",
-            "source_content_hash": "faf9c34480358e85",
-            "quote": "along with GFC, MainObject, and Rerail.",
-            "quote_hash": "77acd38ebbcb840f40a354ccd7fb26aac9ea43860b30d3d985af75c90603b07b"
-          }
-        ]
-      },
       {
         "activity_id": "IA-9edcdbdd1c7b2629",
         "funding_insight_id": "FI-3c407a7a4dd718f1",
@@ -117,14 +79,6 @@
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-1944a3662baaebec",
-        "source_url": "https://techfundingnews.com/arrakis-raises-38m-blossom-accel-ai-agents",
-        "source_title": "Arrakis raises $38M from Blossom and Accel, with Datadog CEO and OpenAI exec joining the round — TFN",
-        "source_content_hash": "faf9c34480358e85",
-        "quote": "along with GFC, MainObject, and Rerail.",
-        "quote_hash": "77acd38ebbcb840f40a354ccd7fb26aac9ea43860b30d3d985af75c90603b07b"
-      },
       {
         "source_id": "FISRC-ac4fd601f33650ff",
         "source_url": "https://www.financialcontent.com/article/bizwire-2026-7-22-arrakis-comes-out-of-stealth-with-38m-to-help-industrial-enterprises-compete-in-the-ai-era",

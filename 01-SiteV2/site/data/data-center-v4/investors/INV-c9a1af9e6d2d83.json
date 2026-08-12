@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2040,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-c9a1af9e6d2d83",
+    "name": "临港科创投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-08-03",
+    "latest_disclosed_at": "2026-08-03",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "series_a1"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-74b42431957780b9",
+        "canonical_entity_id": "",
+        "name": "昉擎科技"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-e22d7b02ff058aaa",
+        "funding_insight_id": "FI-c7196586a871ba41",
+        "event_ids": [
+          "EV-4fbbf16279e27000"
+        ],
+        "company_entity_id": "EN-74b42431957780b9",
+        "company_canonical_entity_id": "",
+        "company_name": "昉擎科技",
+        "round": "A1轮",
+        "round_code": "series_a1",
+        "round_original": "A1轮",
+        "amount_original": "超过 100 亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 10000000000,
+          "min_value": 10000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 100 亿人民币"
+        },
+        "announced_at": "2026-08-03",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-75b04daca915e1ca",
+            "source_url": "https://www.cs.com.cn/ssgs/01/2026/08/03/detail_2026080310029022.html",
+            "source_title": "昉擎科技完成A1轮融资 投后估值超100亿元",
+            "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
+            "quote": "在老股东方面，钧山资本大额加注，多维资本、华业天成、临港科创投、建发新兴、三七互娱等同步超额追投。",
+            "quote_hash": "b9f8a9336db78f9102fe9d09934572c7d4276c4633a14f7b894236041c450c8f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a629df07fc0b584f",
+        "funding_insight_id": "FI-c7196586a871ba41",
+        "event_ids": [
+          "EV-4fbbf16279e27000"
+        ],
+        "company_entity_id": "EN-74b42431957780b9",
+        "company_canonical_entity_id": "",
+        "company_name": "昉擎科技",
+        "round": "A1轮",
+        "round_code": "series_a1",
+        "round_original": "A1轮",
+        "amount_original": "超过 100 亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 10000000000,
+          "min_value": 10000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 100 亿人民币"
+        },
+        "announced_at": "2026-08-03",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使++轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-a1d34e1670d0ad2d",
+            "source_url": "https://www.163.com/dy/article/K5LF43P10531M1CO.html",
+            "source_title": "晚点独家丨小米、蔚来资本领投昉擎天使轮，寒武纪前CTO任昉擎CEO|英伟达|cto|小米集团|知名企业_网易订阅",
+            "source_content_hash": "da5d6f1e2a3326d1",
+            "quote": "天使 ++ 轮由临港科创投领投，华业天成、高捷资本、三七互娱、新智认知等机构联合投资",
+            "quote_hash": "80c77f4e3b77d9cab4f4b7f60c2799dd0d8613096cb368503bd3d907292016b0"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-75b04daca915e1ca",
+        "source_url": "https://www.cs.com.cn/ssgs/01/2026/08/03/detail_2026080310029022.html",
+        "source_title": "昉擎科技完成A1轮融资 投后估值超100亿元",
+        "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
+        "quote": "在老股东方面，钧山资本大额加注，多维资本、华业天成、临港科创投、建发新兴、三七互娱等同步超额追投。",
+        "quote_hash": "b9f8a9336db78f9102fe9d09934572c7d4276c4633a14f7b894236041c450c8f"
+      },
+      {
+        "source_id": "FISRC-a1d34e1670d0ad2d",
+        "source_url": "https://www.163.com/dy/article/K5LF43P10531M1CO.html",
+        "source_title": "晚点独家丨小米、蔚来资本领投昉擎天使轮，寒武纪前CTO任昉擎CEO|英伟达|cto|小米集团|知名企业_网易订阅",
+        "source_content_hash": "da5d6f1e2a3326d1",
+        "quote": "天使 ++ 轮由临港科创投领投，华业天成、高捷资本、三七互娱、新智认知等机构联合投资",
+        "quote_hash": "80c77f4e3b77d9cab4f4b7f60c2799dd0d8613096cb368503bd3d907292016b0"
+      }
+    ]
+  }
+}

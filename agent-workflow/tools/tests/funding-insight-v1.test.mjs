@@ -73,6 +73,27 @@ test("multi-company funding cards can use the exact source quote when claim obje
     [],
   );
 });
+
+test("funding claim source quotes recover the funded company when a headline becomes the claim subject", () => {
+  const card = {
+    company: { entity_id: "EN-NEXUS", name: "奇点逃逸" },
+    financing: { amount: "千万级" },
+    triggered_by_event_id: "EV-NEXUS",
+  };
+  const event = {
+    event_id: "EV-NEXUS",
+    entities: ["EN-NEXUS", "EN-INVESTOR"],
+    claim_refs: ["CL-NEXUS"],
+  };
+  const claims = [{
+    claim_id: "CL-NEXUS",
+    subject: "让Agent在协作中自进化，清华00后博士获千万元",
+    object: "| 36氪首发",
+    source_quote: "36氪获悉，近日奇点逃逸完成千万级种子轮融资。",
+  }];
+  const entities = [{ entity_id: "EN-NEXUS", canonical_name: "奇点逃逸" }];
+  assert.deepEqual(fundingEventCardConsistencyProblems(card, event, claims, entities), []);
+});
 import { selectHistoricalFundingEvents } from "../backfill-funding-insights-history.mjs";
 import { promptFor, selectFundingEventsForGeneration } from "../generate-funding-insights-deepseek.mjs";
 import { assertFundingFounderReview, collectFundingFounderCandidates } from "../build-funding-founder-review.mjs";
@@ -793,8 +814,8 @@ test("单事件增量生成不会删除同日已经发布的其他融资卡", ()
   const projectRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-funding-selected-"));
   try {
     writeDailyFundingFixture(projectRoot, [
-      { event_id: "EV-1", event_type: "funding", publication_status: "verified", display_title_zh: "Acme 完成 A 轮融资" },
-      { event_id: "EV-2", event_type: "funding", publication_status: "verified", display_title_zh: "Beta 完成种子轮融资" },
+      { event_id: "EV-1", event_type: "funding", event_status: "completed", publication_status: "verified", display_title_zh: "Acme 完成 A 轮融资" },
+      { event_id: "EV-2", event_type: "funding", event_status: "completed", publication_status: "verified", display_title_zh: "Beta 完成种子轮融资" },
     ]);
     const output = path.join(projectRoot, "01-SiteV2/content/12-applications/funding-insights/2026-07-26.json");
     fs.mkdirSync(path.dirname(output), { recursive: true });

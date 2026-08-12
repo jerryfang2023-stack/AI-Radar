@@ -2,6 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { deepSeekJsonCompletion, deepSeekModels, sourceTextHash } from "./deepseek-translation-client.mjs";
+import { FUNDING_INSIGHT_VERSION } from "./funding-insight-v1-utils.mjs";
 
 const root = process.cwd();
 const fundingRoot = path.join(root, "01-SiteV2", "content", "12-applications", "funding-insights");
@@ -344,12 +345,12 @@ function applyDecisions(ledger) {
   for (const file of datedFiles()) {
     const fullPath = path.join(fundingRoot, file);
     const payload = readJson(fullPath, {});
-    let changed = payload.meta?.schema_version !== "FUNDING-INSIGHT-V1.2"
+    let changed = payload.meta?.schema_version !== FUNDING_INSIGHT_VERSION
       || payload.meta?.taxonomy_version !== "TAG-V4.1";
     for (const card of payload.cards || []) {
       const decision = byEvent.get(card.triggered_by_event_id);
       if (!decision) throw new Error(`taxonomy_decision_missing:${card.triggered_by_event_id}`);
-      card.schema_version = "FUNDING-INSIGHT-V1.2";
+      card.schema_version = FUNDING_INSIGHT_VERSION;
       card.analysis = {
         ...card.analysis,
         taxonomy_version: "TAG-V4.1",
@@ -375,7 +376,7 @@ function applyDecisions(ledger) {
       changed = true;
       changedCards += 1;
     }
-    payload.meta = { ...payload.meta, schema_version: "FUNDING-INSIGHT-V1.2", taxonomy_version: "TAG-V4.1" };
+    payload.meta = { ...payload.meta, schema_version: FUNDING_INSIGHT_VERSION, taxonomy_version: "TAG-V4.1" };
     if (changed) {
       writeJson(fullPath, payload);
     }

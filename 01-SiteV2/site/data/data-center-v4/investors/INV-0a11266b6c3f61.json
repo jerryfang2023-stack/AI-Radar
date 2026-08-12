@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2040,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-0a11266b6c3f61",
+    "name": "凯泰资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-08-03",
+    "latest_disclosed_at": "2026-08-03",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-c4743990b9d2c23d",
+        "funding_insight_id": "FI-07a58b1fe051182a",
+        "event_ids": [
+          "EV-88a984b765bb54f1"
+        ],
+        "company_entity_id": "EN-847c00c904ccdb98",
+        "company_canonical_entity_id": "",
+        "company_name": "西湖心辰（杭州）科技有限公司",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "B+轮",
+        "amount_original": "数亿元人民币",
+        "amount_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "数亿元人民币"
+        },
+        "announced_at": "2026-08-03",
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮跟投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c0671e3e70d8ae56",
+            "source_url": "https://m.36kr.com/p/2179385107198212",
+            "source_title": "36氪首发｜打通大模型、中间层、产品应用三层能力，「西湖心辰」完成Pre-A轮融资-36氪",
+            "source_content_hash": "1562678e3cf5d266",
+            "quote": "老股东凯泰资本和西湖教育基金会可持续发展平台跟投",
+            "quote_hash": "9e2faf87506724208baa5563a20e6f1ec5283a695af61ea14779927444b0346d"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-c0671e3e70d8ae56",
+        "source_url": "https://m.36kr.com/p/2179385107198212",
+        "source_title": "36氪首发｜打通大模型、中间层、产品应用三层能力，「西湖心辰」完成Pre-A轮融资-36氪",
+        "source_content_hash": "1562678e3cf5d266",
+        "quote": "老股东凯泰资本和西湖教育基金会可持续发展平台跟投",
+        "quote_hash": "9e2faf87506724208baa5563a20e6f1ec5283a695af61ea14779927444b0346d"
+      }
+    ]
+  }
+}

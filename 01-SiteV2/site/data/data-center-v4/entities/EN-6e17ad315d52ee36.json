@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -101,12 +101,34 @@
             "assertionId": ""
           },
           {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-36dde5de93197cee"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
             "dimensionId": "technology",
             "dimensionName": "技术",
             "id": "embodied_ai",
             "name": "具身智能",
             "entityIds": [
               "EN-9a1a3ee1f50745c6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-36dde5de93197cee"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -166,7 +188,9 @@
           "EN-047364b9be67f665",
           "EN-6e17ad315d52ee36",
           "EN-cd6362472aea60ef",
-          "EN-8dc72a4672894e0f"
+          "EN-8dc72a4672894e0f",
+          "EN-36dde5de93197cee",
+          "EN-a6e5382c05dd0d16"
         ]
       }
     ],

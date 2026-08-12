@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "institution": {
@@ -20,16 +20,15 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 11,
-    "historical_or_ambiguous_count": 1,
+    "current_round_count": 10,
+    "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 10,
     "first_disclosed_at": "2024-03-12",
     "latest_disclosed_at": "2026-07-23",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 1,
       "lead": 7,
-      "participant": 3
+      "participant": 2
     },
     "round_codes": [
       "series_a",
@@ -172,82 +171,6 @@
             "source_content_hash": "e33f25fc65f5596d",
             "quote": "The round was led by Accel and ICONIQ",
             "quote_hash": "88673e0bebde67d4cde3d38c1274f3a1e56f062d6a44aa252cf97d0d64b83014"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-4e96dd6a2ee598ba",
-        "funding_insight_id": "FI-6083aa095b41b5b1",
-        "event_ids": [
-          "EV-24823de8fb76ac31"
-        ],
-        "company_entity_id": "EN-834cc12fc35adde7",
-        "company_canonical_entity_id": "",
-        "company_name": "Arrakis",
-        "round": "A轮",
-        "round_code": "series_a",
-        "round_original": "Series A",
-        "amount_original": "$38 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 38000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "3800 万美元"
-        },
-        "announced_at": "2026-07-22",
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-1944a3662baaebec",
-            "source_url": "https://techfundingnews.com/arrakis-raises-38m-blossom-accel-ai-agents",
-            "source_title": "Arrakis raises $38M from Blossom and Accel, with Datadog CEO and OpenAI exec joining the round — TFN",
-            "source_content_hash": "faf9c34480358e85",
-            "quote": "Existing investor Accel, which led the $7.5 million seed round in March, also participated",
-            "quote_hash": "c9065c6f4cfbf5fab3de5efa08431635e27d9b3d165523368a52dba797bc6968"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-bba731ea26a4b221",
-        "funding_insight_id": "FI-6083aa095b41b5b1",
-        "event_ids": [
-          "EV-24823de8fb76ac31"
-        ],
-        "company_entity_id": "EN-834cc12fc35adde7",
-        "company_canonical_entity_id": "",
-        "company_name": "Arrakis",
-        "round": "A轮",
-        "round_code": "series_a",
-        "round_original": "Series A",
-        "amount_original": "$38 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 38000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "3800 万美元"
-        },
-        "announced_at": "2026-07-22",
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "种子轮领投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-1944a3662baaebec",
-            "source_url": "https://techfundingnews.com/arrakis-raises-38m-blossom-accel-ai-agents",
-            "source_title": "Arrakis raises $38M from Blossom and Accel, with Datadog CEO and OpenAI exec joining the round — TFN",
-            "source_content_hash": "faf9c34480358e85",
-            "quote": "Existing investor Accel, which led the $7.5 million seed round in March",
-            "quote_hash": "db5f8a3918b84d398cc4c2ee70356601f72fd6119ee530966acceacef6294a36"
           }
         ]
       },
@@ -580,22 +503,6 @@
         "source_content_hash": "e33f25fc65f5596d",
         "quote": "The round was led by Accel and ICONIQ",
         "quote_hash": "88673e0bebde67d4cde3d38c1274f3a1e56f062d6a44aa252cf97d0d64b83014"
-      },
-      {
-        "source_id": "FISRC-1944a3662baaebec",
-        "source_url": "https://techfundingnews.com/arrakis-raises-38m-blossom-accel-ai-agents",
-        "source_title": "Arrakis raises $38M from Blossom and Accel, with Datadog CEO and OpenAI exec joining the round — TFN",
-        "source_content_hash": "faf9c34480358e85",
-        "quote": "Existing investor Accel, which led the $7.5 million seed round in March, also participated",
-        "quote_hash": "c9065c6f4cfbf5fab3de5efa08431635e27d9b3d165523368a52dba797bc6968"
-      },
-      {
-        "source_id": "FISRC-1944a3662baaebec",
-        "source_url": "https://techfundingnews.com/arrakis-raises-38m-blossom-accel-ai-agents",
-        "source_title": "Arrakis raises $38M from Blossom and Accel, with Datadog CEO and OpenAI exec joining the round — TFN",
-        "source_content_hash": "faf9c34480358e85",
-        "quote": "Existing investor Accel, which led the $7.5 million seed round in March",
-        "quote_hash": "db5f8a3918b84d398cc4c2ee70356601f72fd6119ee530966acceacef6294a36"
       },
       {
         "source_id": "FISRC-ac4fd601f33650ff",

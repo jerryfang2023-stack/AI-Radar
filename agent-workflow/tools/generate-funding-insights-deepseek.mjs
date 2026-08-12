@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
+import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { deepSeekJsonCompletion, deepSeekModels, sourceTextHash } from "./deepseek-translation-client.mjs";
 import {
@@ -19,6 +20,7 @@ import {
   latestDataDate,
   loadDailyBundle,
   normalizeFundingInsightCard,
+  normalizeFundingAmount,
   normalizeFundingRound,
   readJson,
   referencedSourceIds,
@@ -44,6 +46,7 @@ const eventIds = new Set([
   ...clean(args.get("event-ids") || "").split(",").map(clean),
 ].filter(Boolean));
 const selectedOnly = args.get("selected-only") === "true";
+const recoverFromGitRef = clean(args.get("recover-from-git-ref") || "");
 const concurrency = Math.max(1, Math.min(4, Number(args.get("concurrency") || 2)));
 const output = path.resolve(args.get("output")
   || path.join(root, "01-SiteV2/content/12-applications/funding-insights", `${date}.json`));
@@ -93,6 +96,24 @@ function publishedFundingCards(projectRoot, excludedOutput = "") {
     .filter((file) => /^\d{4}-\d{2}-\d{2}\.json$/u.test(file))
     .filter((file) => path.resolve(bundleRoot, file) !== path.resolve(excludedOutput || "__none__"))
     .flatMap((file) => readJson(path.join(bundleRoot, file), { cards: [] }).cards || []);
+}
+
+function recoveryCardsFromGit(ref, outputFile) {
+  if (!ref) return [];
+  const repositoryPath = path.relative(root, outputFile).replace(/\\/gu, "/");
+  if (repositoryPath.startsWith("../") || path.isAbsolute(repositoryPath)) {
+    throw new Error(`funding_recovery_output_outside_repository:${repositoryPath}`);
+  }
+  try {
+    const payload = execFileSync("git", ["show", `${ref}:${repositoryPath}`], {
+      cwd: root,
+      encoding: "utf8",
+      maxBuffer: 64 * 1024 * 1024,
+    });
+    return JSON.parse(payload).cards || [];
+  } catch (error) {
+    throw new Error(`funding_recovery_ref_unavailable:${ref}:${error.message}`);
+  }
 }
 
 function decodeHtml(value = "") {
@@ -404,11 +425,15 @@ async function researchSources(bundle, event, company) {
   ];
   const attempts = [];
   const results = [];
-  for (const { intent, query } of queries) {
-    const settled = await Promise.allSettled([
+  const queryResults = await Promise.all(queries.map(async ({ intent, query }) => ({
+    intent,
+    query,
+    settled: await Promise.allSettled([
       searchTavily(query, company.canonical_name),
       searchExa(query, company.canonical_name),
-    ]);
+    ]),
+  })));
+  for (const { intent, query, settled } of queryResults) {
     for (const [index, outcome] of settled.entries()) {
       const provider = index === 0 ? "tavily" : "exa";
       attempts.push({
@@ -452,11 +477,13 @@ async function researchSources(bundle, event, company) {
       deduped.set(key, result);
     }
   }
-  for (const candidate of [...deduped.values()].sort((a, b) => scoreCandidate(b, company.canonical_name, identitySubject) - scoreCandidate(a, company.canonical_name, identitySubject))) {
-    if (captured.length >= 8) break;
-    if (captured.some((source) => normalizedUrlKey(source.source_url) === normalizedUrlKey(candidate.url))) continue;
-    const source = await capturePage(candidate);
-    if (source) captured.push(source);
+  const candidates = [...deduped.values()]
+    .sort((a, b) => scoreCandidate(b, company.canonical_name, identitySubject) - scoreCandidate(a, company.canonical_name, identitySubject))
+    .filter((candidate) => !captured.some((source) => normalizedUrlKey(source.source_url) === normalizedUrlKey(candidate.url)))
+    .slice(0, Math.max(0, 8 - captured.length));
+  for (let index = 0; index < candidates.length && captured.length < 8; index += 4) {
+    const sources = await Promise.all(candidates.slice(index, index + 4).map(capturePage));
+    captured.push(...sources.filter(Boolean).slice(0, 8 - captured.length));
   }
   return { sources: captured, queries: queries.map((item) => item.query), attempts };
 }
@@ -481,6 +508,7 @@ export function promptFor(event, company, sources, directions) {
     "除公司、产品、人名、金额、轮次等专有名词外，summary、description、use_case、比较字段、sector、capital_judgment、risks等面向读者的内容必须使用简体中文。",
     "financing.amount写round所覆盖轮次的金额；若round同时覆盖多轮，则写多轮合计。total_raised写截至本次披露的累计融资额，不得混用。",
     "financing.investors只列本轮明确披露且有具体名称的投资方，role必须用中文标注“本轮领投”“本轮联合领投”或“本轮参投”。历史轮次、既有但未确认本轮继续参与、轮次语境不明的投资方不得混入investors，改放other_round_investors并保留原始轮次语境。若来源确认发生融资但只写基金、产业资本等泛称而未披露具体名称，返回空investors并将investor_disclosure_status设为not_disclosed；不得把泛称伪造成机构名称。若列出具体投资方则设为disclosed。",
+    "当规范事件来源使用“投资者包括”“参与投资的机构包括”等措辞列出具体名称时，这些名称属于本轮投资方，必须逐一写入financing.investors并引用该完整原句；不得误放到other_round_investors或遗漏。",
     "comparisons是应用层比较集合，不代表事实关系。只收录来源明确支持具体产品或方案、应用场景、目标客户、融资信息或商业路径的竞品；如果来源只说“同类公司”或“起点不同”，不要输出该条。product写具体产品或方案，scenario写具体工作流，缺失融资金额时funding_summary留空；core_difference必须逐字段比较已经证实的差异，不得写“起点不同”“各有优势”等机械句式。",
     "analysis.investment_rationale只收录本轮投资机构或其投资人的公开原话。institution必须与financing.investors中的机构名一致；speaker和speaker_role写公开归属；rationale用中文概括机构为何投资；quote逐字复制机构或投资人原文。没有机构原话时返回空数组，不得用公司创始人、媒体或模型判断冒充。",
     "analysis.capital_judgment必须回答资本押注的核心变量、当前估值或融资所依赖的已验证信号，以及判断的证据边界；不得使用“知名机构参与表明看好”“商业化前景广阔”等空泛模板。validated_signals只写来源已验证的业务信号。risks至少一项，用于约束资本判断，不单独扩展成问题清单。",
@@ -841,7 +869,9 @@ async function main() {
     .filter((card) => (card.research_sources || []).some((source) => source.source_class === "canonical_event_source"))
     .filter((card) => {
       const event = eventById.get(card.triggered_by_event_id);
+      const eventAmount = normalizeFundingAmount(clean(event?.metrics?.[0]));
       return !clean(event?.metrics?.[0])
+        || !eventAmount.currency
         || amountKey(card.financing?.amount) === amountKey(event.metrics[0]);
     })
     .filter((card) => fundingEventCardConsistencyProblems(
@@ -851,8 +881,21 @@ async function main() {
       bundle.entities,
     ).length === 0)
     .map((card) => [card.triggered_by_event_id, card]));
+  const recoveredCards = recoveryCardsFromGit(recoverFromGitRef, output)
+    .map((card) => normalizeFundingInsightCard(card, entityIndex, entityDecisions, companyIdentityReview))
+    .filter((card) => fundingInsightProblems(card).length === 0)
+    .filter((card) => fundingEventCardConsistencyProblems(
+      card,
+      eventById.get(card.triggered_by_event_id),
+      bundle.claims,
+      bundle.entities,
+    ).length === 0);
+  for (const card of recoveredCards) {
+    if (!existingByEvent.has(card.triggered_by_event_id)) existingByEvent.set(card.triggered_by_event_id, card);
+  }
   let eligibleEvents = bundle.events
     .filter((event) => event.event_type === "funding")
+    .filter((event) => event.event_status === "completed")
     .filter((event) => event.publication_status === "verified")
     .filter((event) => event.display_title_zh);
   const eligibleEventIds = new Set(eligibleEvents.map((event) => event.event_id));
@@ -884,6 +927,7 @@ async function main() {
       reused: generationSelection.reused.length,
       deduplicated: generationSelection.deduplicated.length,
       pending: pending.length,
+      recovered_from_git: recoveredCards.length,
       providers: {
         tavily: Boolean(process.env.TAVILY_API_KEY) && process.env.TAVILY_DISABLED !== "true",
         exa: Boolean(process.env.EXA_API_KEY),
@@ -996,6 +1040,7 @@ async function main() {
     reused: generationSelection.reused.length,
     deduplicated: generationSelection.deduplicated.length,
     processed: pending.length,
+    recovered_from_git: recoveredCards.length,
     counts: value.meta.counts,
   }, null, 2));
 }

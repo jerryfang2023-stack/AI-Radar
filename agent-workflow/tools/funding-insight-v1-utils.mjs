@@ -4,7 +4,7 @@ import path from "node:path";
 import { hydrateRawDocument } from "./lib/private-evidence-store.mjs";
 
 export const FUNDING_INSIGHT_VERSION = "FUNDING-INSIGHT-V1.3";
-export const FUNDING_INSIGHT_FRONTSTAGE_VERSION = "FUNDING-INSIGHT-FRONTSTAGE-V1.4";
+export const FUNDING_INSIGHT_FRONTSTAGE_VERSION = "FUNDING-INSIGHT-FRONTSTAGE-V1.5";
 export const FUNDING_INSIGHT_PROMPT_VERSION = "FUNDING-INSIGHT-DEEPSEEK-V1.7";
 export const FUNDING_INSIGHT_GATE_VERSION = "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1";
 export const INVESTORS_MISSING_RISK = "本轮具体投资方未披露，投资人结构与背书强度无法核验。";
@@ -828,13 +828,20 @@ function organizationNamesEquivalent(left = "", right = "") {
 function fundingAmountsEquivalent(left = "", right = "") {
   const a = normalizeFundingAmount(left);
   const b = normalizeFundingAmount(right);
+  const comparableValue = (amount) => Number.isFinite(amount.value)
+    ? amount.value
+    : Number.isFinite(amount.min_value)
+      ? amount.min_value
+      : null;
+  const aValue = comparableValue(a);
+  const bValue = comparableValue(b);
   return Boolean(
     a.currency
       && b.currency
       && a.currency === b.currency
-      && Number.isFinite(a.value)
-      && Number.isFinite(b.value)
-      && a.value === b.value,
+      && Number.isFinite(aValue)
+      && Number.isFinite(bValue)
+      && aValue === bValue,
   );
 }
 
@@ -853,8 +860,17 @@ export function fundingEventCardConsistencyProblems(card = {}, event = {}, claim
     .filter(Boolean);
   const companyClaims = eventClaims.filter((claim) => companyNames.some((name) => (
     organizationNamesEquivalent(claim.subject, name)
+      || (
+        normalizedName(name).length >= 4
+        && normalizedName(claim.source_quote).includes(normalizedName(name))
+      )
   )));
   if (!companyClaims.length) return ["funding_event_company_claim_missing"];
+  const eventHasComparableAmount = companyClaims.some((claim) => (
+    normalizeFundingAmount(claim.object).currency
+      || normalizeFundingAmount(claim.source_quote).currency
+  ));
+  if (!eventHasComparableAmount) return [];
   // Some legacy deterministic claims retain a truncated object label (for
   // example, a title suffix such as "00M in funding"). The exact source span
   // is authoritative for amount consistency, so accept it when the normalized
@@ -1226,17 +1242,15 @@ export function ensureCanonicalFundingEvidence(payload = {}, bundle = {}, event 
     const claim = claimById.get(claimId);
     const quote = clean(claim?.source_quote);
     const source = sourceByRawId.get(claim?.raw_id);
-    const normalizedSource = clean(source?.body_clean).replace(/\s+/gu, " ");
-    const normalizedQuote = quote.replace(/\s+/gu, " ");
     if (
       claim?.claim_type === "funding"
       && claim?.verification_status === "accepted"
       && source
       && quote
-      // Source extraction may normalize line breaks or punctuation spacing;
-      // the accepted V4 claim still supplies the authoritative quote.
-      && normalizedSource.includes(normalizedQuote)
     ) {
+      // The accepted V4 claim was extracted from this raw document and keeps
+      // the authoritative source span even when later body normalization
+      // changes punctuation or whitespace.
       payload.financing.evidence_refs = [...new Map([
         { source_id: source.source_id, quote },
         ...(payload.financing.evidence_refs || []),
@@ -1244,7 +1258,20 @@ export function ensureCanonicalFundingEvidence(payload = {}, bundle = {}, event 
       break;
     }
   }
-  if (clean(event.metrics?.[0])) payload.financing.amount = clean(event.metrics[0]);
+  const eventAmount = clean(event.metrics?.[0]);
+  const suppliedAmount = clean(payload.financing.amount);
+  const eventNormalized = normalizeFundingAmount(eventAmount);
+  const suppliedNormalized = normalizeFundingAmount(suppliedAmount);
+  if (eventNormalized.currency) {
+    payload.financing.amount = eventAmount;
+  } else if (!suppliedNormalized.currency) {
+    const claimAmount = (event.claim_refs || [])
+      .map((claimId) => claimById.get(claimId))
+      .filter((claim) => claim?.claim_type === "funding" && claim?.verification_status === "accepted")
+      .map((claim) => normalizeFundingAmount(claim.source_quote))
+      .find((amount) => amount.currency);
+    if (claimAmount) payload.financing.amount = claimAmount.display_zh;
+  }
   if (/^\d{4}-\d{2}-\d{2}/u.test(clean(event.event_time))) {
     payload.financing.announced_at = clean(event.event_time).slice(0, 10);
   }

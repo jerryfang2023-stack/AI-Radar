@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2040,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-2e754a7f430ec0",
+    "name": "国开科创",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-08-03",
+    "latest_disclosed_at": "2026-08-03",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-e24d03a0cdfc4a98",
+        "funding_insight_id": "FI-c7196586a871ba41",
+        "event_ids": [
+          "EV-4fbbf16279e27000"
+        ],
+        "company_entity_id": "EN-74b42431957780b9",
+        "company_canonical_entity_id": "",
+        "company_name": "昉擎科技",
+        "round": "A1轮",
+        "round_code": "series_a1",
+        "round_original": "A1轮",
+        "amount_original": "超过 100 亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 10000000000,
+          "min_value": 10000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 100 亿人民币"
+        },
+        "announced_at": "2026-08-03",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-35c6a58b0d764fbc",
+            "source_url": "https://www.163.com/dy/article/KNJ0S76B05118HJE.html",
+            "source_title": "AI芯片及系统架构研发商昉擎科技完成10亿元Pre-A轮融资|解耦|pre|a轮融资|分布式计算_网易订阅",
+            "source_content_hash": "d1af958532b57c20",
+            "quote": "昉擎科技完成10亿元Pre-A轮融资，新引入投资人国开科创、钧山资本、建发新兴投资、多维资本",
+            "quote_hash": "6894266a50c0a67a045b8d373b454f2ec84870315d7288ef8100f1386de8e4db"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-35c6a58b0d764fbc",
+        "source_url": "https://www.163.com/dy/article/KNJ0S76B05118HJE.html",
+        "source_title": "AI芯片及系统架构研发商昉擎科技完成10亿元Pre-A轮融资|解耦|pre|a轮融资|分布式计算_网易订阅",
+        "source_content_hash": "d1af958532b57c20",
+        "quote": "昉擎科技完成10亿元Pre-A轮融资，新引入投资人国开科创、钧山资本、建发新兴投资、多维资本",
+        "quote_hash": "6894266a50c0a67a045b8d373b454f2ec84870315d7288ef8100f1386de8e4db"
+      }
+    ]
+  }
+}

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -19,6 +19,7 @@
     "valueId": "multimodal",
     "eventIds": [
       "EV-d3054a8a2b62a503",
+      "EV-535c2f4fb851332d",
       "EV-5bbc509a032b8309",
       "EV-522c339dded54be5",
       "EV-dda9429d76897a3d",
@@ -108,7 +109,7 @@
       "HW-68457c8c0a7240ac",
       "HW-ceb55d9bc637c1d3"
     ],
-    "firstSeen": "2026-06-02",
+    "firstSeen": "2026-02-08",
     "lastSeen": "2026-08-11"
   },
   "events": [
@@ -233,6 +234,442 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/981/121.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-535c2f4fb851332d",
+      "dataDate": "2026-08-03",
+      "date": "2026-02-08",
+      "updatedDate": "2026-08-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "生数科技完成超6亿元A+轮融资",
+      "originalTitle": "",
+      "subject": "生数科技",
+      "action": "完成超6亿元A+轮融资",
+      "object": "生数科技完成超6亿元A+轮融资",
+      "metrics": [
+        "6亿"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-ncsti"
+        ],
+        "claim_refs": [
+          "CL-2725835c963742ff",
+          "CL-c559aeefc8872062",
+          "CL-86e8b923125981cf",
+          "CL-ca1ad4d9a6d6bf57"
+        ]
+      },
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-9b21c9bf3305c0d6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0af47f8ae92f26c0",
+            "fundingInsightId": "FI-015dfc42087380a4"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "development_deployment",
+            "name": "开发与部署",
+            "entityIds": [
+              "EN-9b21c9bf3305c0d6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-455ba7c1e15cb6a6",
+            "fundingInsightId": "FI-015dfc42087380a4"
+          }
+        ],
+        "ai_market_application": [
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "models",
+            "name": "模型",
+            "entityIds": [
+              "EN-9b21c9bf3305c0d6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-56c72a9a23b6b040",
+            "fundingInsightId": "FI-015dfc42087380a4"
+          }
+        ],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model_api_service",
+            "name": "模型 API 服务",
+            "entityIds": [
+              "EN-9b21c9bf3305c0d6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-db6dee9f6ab07946",
+            "fundingInsightId": "FI-015dfc42087380a4"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-9b21c9bf3305c0d6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-23968e5dae5de51d",
+            "fundingInsightId": "FI-015dfc42087380a4"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "media_entertainment",
+            "name": "媒体与娱乐",
+            "entityIds": [
+              "EN-9b21c9bf3305c0d6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ae93b9d9775fd47f",
+            "fundingInsightId": "FI-015dfc42087380a4"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-9b21c9bf3305c0d6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a06846599207026e",
+            "fundingInsightId": "FI-015dfc42087380a4"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-9b21c9bf3305c0d6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ec18c6e76d34a80f",
+            "fundingInsightId": "FI-015dfc42087380a4"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "models",
+          "name": "模型",
+          "entityIds": [
+            "EN-9b21c9bf3305c0d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-56c72a9a23b6b040",
+          "fundingInsightId": "FI-015dfc42087380a4"
+        },
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-9b21c9bf3305c0d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-0af47f8ae92f26c0",
+          "fundingInsightId": "FI-015dfc42087380a4"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "development_deployment",
+          "name": "开发与部署",
+          "entityIds": [
+            "EN-9b21c9bf3305c0d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-455ba7c1e15cb6a6",
+          "fundingInsightId": "FI-015dfc42087380a4"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "media_entertainment",
+          "name": "媒体与娱乐",
+          "entityIds": [
+            "EN-9b21c9bf3305c0d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-ae93b9d9775fd47f",
+          "fundingInsightId": "FI-015dfc42087380a4"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model_api_service",
+          "name": "模型 API 服务",
+          "entityIds": [
+            "EN-9b21c9bf3305c0d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-db6dee9f6ab07946",
+          "fundingInsightId": "FI-015dfc42087380a4"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-9b21c9bf3305c0d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a06846599207026e",
+          "fundingInsightId": "FI-015dfc42087380a4"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-9b21c9bf3305c0d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-ec18c6e76d34a80f",
+          "fundingInsightId": "FI-015dfc42087380a4"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-9b21c9bf3305c0d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-23968e5dae5de51d",
+          "fundingInsightId": "FI-015dfc42087380a4"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-9b21c9bf3305c0d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-0af47f8ae92f26c0",
+          "fundingInsightId": "FI-015dfc42087380a4"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "development_deployment",
+          "name": "开发与部署",
+          "entityIds": [
+            "EN-9b21c9bf3305c0d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-455ba7c1e15cb6a6",
+          "fundingInsightId": "FI-015dfc42087380a4"
+        },
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "models",
+          "name": "模型",
+          "entityIds": [
+            "EN-9b21c9bf3305c0d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-56c72a9a23b6b040",
+          "fundingInsightId": "FI-015dfc42087380a4"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model_api_service",
+          "name": "模型 API 服务",
+          "entityIds": [
+            "EN-9b21c9bf3305c0d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-db6dee9f6ab07946",
+          "fundingInsightId": "FI-015dfc42087380a4"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-9b21c9bf3305c0d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-23968e5dae5de51d",
+          "fundingInsightId": "FI-015dfc42087380a4"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "media_entertainment",
+          "name": "媒体与娱乐",
+          "entityIds": [
+            "EN-9b21c9bf3305c0d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-ae93b9d9775fd47f",
+          "fundingInsightId": "FI-015dfc42087380a4"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-9b21c9bf3305c0d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a06846599207026e",
+          "fundingInsightId": "FI-015dfc42087380a4"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-9b21c9bf3305c0d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-ec18c6e76d34a80f",
+          "fundingInsightId": "FI-015dfc42087380a4"
+        }
+      ],
+      "entityIds": [
+        "EN-040a62f4dec96b52",
+        "EN-9b21c9bf3305c0d6"
+      ],
+      "entityNames": [
+        "京企生数科技",
+        "ShengShu Technology"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.ncsti.gov.cn/kjdt/xwjj/202602/t20260208_237672.html",
+      "publisher": "国家科技创新信息服务平台"
     },
     {
       "id": "EV-5bbc509a032b8309",
@@ -8482,6 +8919,8 @@
       ],
       "eventIds": [
         "EV-87432dbb99cd6033",
+        "EV-3a591b0f027f66cf",
+        "EV-499a62114b0fd616",
         "EV-e3fe8993f46d5e12",
         "EV-9563aa162529aab0",
         "EV-b726a9cda7beae64",
@@ -8506,10 +8945,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-software_development",
         "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-software_development",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-product_form-ai_device",
@@ -8520,7 +8959,7 @@
         "EN-eec6044eb8e4941a",
         "EN-24381ecb01753c1b"
       ],
-      "firstSeen": "2026-05-25",
+      "firstSeen": "2026-04-16",
       "lastSeen": "2026-08-08"
     },
     {
@@ -8670,14 +9109,19 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model_api_service",
+        "TX-use_case-software_development",
+        "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
-        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-use_case-data_analysis",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
-        "TX-use_case-software_development",
         "TX-product_form-end_user_application",
-        "TX-product_form-model_api_service",
+        "TX-ai_market_subcategory-sales",
+        "TX-use_case-sales",
         "TX-technology-code_generation",
         "TX-technology-computer_use",
         "TX-technology-multimodal",
@@ -8731,24 +9175,24 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-financial_services",
-        "TX-product_form-model",
+        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
-        "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
-        "TX-industry-aerospace_defense",
-        "TX-industry-energy_utilities",
-        "TX-industry-government_public_sector",
-        "TX-industry-automotive_transportation",
-        "TX-product_form-compute_cloud_service",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-software_development",
-        "TX-use_case-knowledge_search",
+        "TX-industry-financial_services",
         "TX-ai_market_category-industry_applications",
         "TX-ai_market_subcategory-industrials",
-        "TX-ai_market_application-models",
-        "TX-ai_market_subcategory-development_deployment",
+        "TX-product_form-enterprise_software_platform",
+        "TX-product_form-model",
+        "TX-industry-aerospace_defense",
+        "TX-industry-automotive_transportation",
+        "TX-target_user-business_user",
+        "TX-industry-energy_utilities",
+        "TX-industry-government_public_sector",
+        "TX-product_form-compute_cloud_service",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-use_case-knowledge_search",
         "TX-use_case-design_engineering",
         "TX-technology-multimodal"
       ],
@@ -8788,14 +9232,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
+        "TX-technology-agentic_execution",
         "TX-target_user-business_user",
+        "TX-product_form-ai_infrastructure_software",
         "TX-use_case-data_analysis",
         "TX-use_case-knowledge_search",
-        "TX-product_form-ai_infrastructure_software",
-        "TX-ai_market_subcategory-development_deployment",
         "TX-technology-multimodal",
         "TX-ai_market_application-ai_development_orchestration"
       ],
@@ -9042,14 +9486,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
+        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
+        "TX-use_case-software_development",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
-        "TX-use_case-software_development",
-        "TX-ai_market_application-models",
-        "TX-ai_market_subcategory-development_deployment",
+        "TX-product_form-model",
         "TX-technology-multimodal",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device"
@@ -9260,32 +9704,32 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_application-models",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-product_form-model_api_service",
+        "TX-target_user-developer",
+        "TX-use_case-software_development",
+        "TX-industry-manufacturing",
+        "TX-use_case-research_discovery",
         "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips",
-        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
-        "TX-target_user-developer",
-        "TX-target_user-business_user",
-        "TX-industry-logistics_supply_chain",
-        "TX-use_case-research_discovery",
         "TX-industry-automotive_transportation",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-manufacturing",
-        "TX-use_case-software_development",
-        "TX-use_case-security_operations",
+        "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-product_form-ai_infrastructure_software",
-        "TX-product_form-robotic_system",
-        "TX-ai_market_application-models",
-        "TX-ai_market_subcategory-development_deployment",
-        "TX-product_form-model_api_service",
+        "TX-industry-logistics_supply_chain",
+        "TX-industry-healthcare_life_sciences",
+        "TX-product_form-ai_compute_system",
         "TX-use_case-customer_support",
+        "TX-use_case-security_operations",
+        "TX-product_form-robotic_system",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
-        "TX-product_form-ai_compute_system",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
@@ -9640,28 +10084,28 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-developer",
+        "TX-use_case-software_development",
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-researcher",
+        "TX-use_case-research_discovery",
         "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
-        "TX-target_user-developer",
+        "TX-industry-aerospace_defense",
+        "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
         "TX-industry-retail_ecommerce",
-        "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
         "TX-use_case-data_analysis",
-        "TX-industry-aerospace_defense",
-        "TX-target_user-researcher",
-        "TX-use_case-research_discovery",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
         "TX-industry-professional_services",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-consumer",
+        "TX-use_case-customer_support",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-use_case-software_development",
         "TX-use_case-security_operations",
         "TX-product_form-end_user_application",
-        "TX-use_case-customer_support",
-        "TX-target_user-consumer",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-long_context",
@@ -9747,13 +10191,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-software_development",
+        "TX-use_case-research_discovery",
         "TX-product_form-model",
         "TX-product_form-chip_accelerator",
-        "TX-use_case-research_discovery",
-        "TX-industry-media_entertainment",
-        "TX-use_case-software_development",
-        "TX-use_case-security_operations",
         "TX-use_case-physical_automation",
+        "TX-industry-media_entertainment",
+        "TX-use_case-security_operations",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
@@ -9991,15 +10435,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_application-models",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-target_user-developer",
+        "TX-use_case-software_development",
         "TX-product_form-model",
         "TX-technology-agentic_execution",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-developer",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-use_case-software_development",
-        "TX-ai_market_application-models",
-        "TX-ai_market_subcategory-development_deployment",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-vision_language"

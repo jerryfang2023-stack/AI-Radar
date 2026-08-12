@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "institution": {
@@ -20,64 +20,72 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
-    "first_disclosed_at": "2026-06-26",
-    "latest_disclosed_at": "2026-06-26",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-07",
+    "latest_disclosed_at": "2026-07-07",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "co_lead": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-d361e2fd6b342245",
+        "canonical_entity_id": "",
+        "name": "深圳忆纪元科技有限公司"
+      }
+    ],
     "activities": [
       {
-        "activity_id": "IA-b06ecad8da40688c",
-        "funding_insight_id": "FI-7e546bd15ad5d4db",
+        "activity_id": "IA-934f079c87867902",
+        "funding_insight_id": "FI-60fcc87061157740",
         "event_ids": [
-          "EV-876baa523eb93c4f"
+          "EV-e54bfac94961f4d2"
         ],
-        "company_entity_id": "EN-4731aa5b66658c7f",
-        "company_canonical_entity_id": "EN-4731aa5b66658c7f",
-        "company_name": "无界动力（北京）技术研发有限公司",
-        "round": "天使轮",
-        "round_code": "angel",
-        "round_original": "天使轮",
-        "amount_original": "超2亿美元",
+        "company_entity_id": "EN-d361e2fd6b342245",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳忆纪元科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "千万美金",
         "amount_normalized": {
-          "currency": "USD",
-          "value": 200000000,
-          "min_value": 200000000,
+          "currency": "",
+          "value": null,
+          "min_value": null,
           "max_value": null,
           "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 2 亿美元"
+          "status": "unparsed",
+          "display_zh": "千万美金"
         },
-        "announced_at": "2026-06-26",
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "首轮天使融资参投",
-        "role_code": "historical_or_ambiguous",
+        "announced_at": "2026-07-07",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
         "evidence": [
           {
-            "source_id": "FISRC-c7cbf66d99295c80",
-            "source_url": "https://www.chnfund.com/article/AR42d924a5-c008-cd46-b00b-3a2216d0317e",
-            "source_title": "无界动力完成超2亿美元天使轮融资 中国基金报",
-            "source_content_hash": "5b45cd52e44552d8",
-            "quote": "2025年11月，无界动力完成首轮3亿元天使融资，红杉中国、线性资本领投，高瓴创投、地平线、华业天成、钟鼎资本、BV百度风投、同歌创投等跟投。",
-            "quote_hash": "75dd300b86df286fdc787cf8bbb30243a10dad4a276d2807de5d6d5cd40d56e5"
+            "source_id": "FISRC-801e27a77fec6aaf",
+            "source_url": "https://www.36kr.com/p/3785834045583875",
+            "source_title": "MemoraX AI 完成千万美金种子轮融资，定义大模型 “内生记忆” 新范式-36氪",
+            "source_content_hash": "60c922b0df26320d9ae634c1fcada836344995e66e0771687854d979f6335228",
+            "quote": "本轮由 L2F 光源创业者基金、钟鼎资本联合领投",
+            "quote_hash": "6b93b45c73568518a641dc5124b85c00d979bd7e5a22bd29a882bd2611876c4e"
           }
         ]
       }
     ],
     "evidence": [
       {
-        "source_id": "FISRC-c7cbf66d99295c80",
-        "source_url": "https://www.chnfund.com/article/AR42d924a5-c008-cd46-b00b-3a2216d0317e",
-        "source_title": "无界动力完成超2亿美元天使轮融资 中国基金报",
-        "source_content_hash": "5b45cd52e44552d8",
-        "quote": "2025年11月，无界动力完成首轮3亿元天使融资，红杉中国、线性资本领投，高瓴创投、地平线、华业天成、钟鼎资本、BV百度风投、同歌创投等跟投。",
-        "quote_hash": "75dd300b86df286fdc787cf8bbb30243a10dad4a276d2807de5d6d5cd40d56e5"
+        "source_id": "FISRC-801e27a77fec6aaf",
+        "source_url": "https://www.36kr.com/p/3785834045583875",
+        "source_title": "MemoraX AI 完成千万美金种子轮融资，定义大模型 “内生记忆” 新范式-36氪",
+        "source_content_hash": "60c922b0df26320d9ae634c1fcada836344995e66e0771687854d979f6335228",
+        "quote": "本轮由 L2F 光源创业者基金、钟鼎资本联合领投",
+        "quote_hash": "6b93b45c73568518a641dc5124b85c00d979bd7e5a22bd29a882bd2611876c4e"
       }
     ]
   }

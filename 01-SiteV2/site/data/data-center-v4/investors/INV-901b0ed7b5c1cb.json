@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "institution": {
@@ -20,19 +20,37 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 1,
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 4,
     "first_disclosed_at": "2026-01-12",
-    "latest_disclosed_at": "2026-06-26",
+    "latest_disclosed_at": "2026-06-15",
     "role_counts": {
-      "historical_or_ambiguous": 3,
-      "participant": 1
+      "historical_or_ambiguous": 2,
+      "participant": 4
     },
     "round_codes": [
-      "other"
+      "angel",
+      "multi_round",
+      "other",
+      "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-a5e5f031b6f878cf",
+        "canonical_entity_id": "",
+        "name": "杭州微纳核芯电子科技有限公司"
+      },
+      {
+        "entity_id": "EN-085578b03da7d660",
+        "canonical_entity_id": "",
+        "name": "墨芯人工智能科技（深圳）有限公司"
+      },
+      {
+        "entity_id": "EN-4731aa5b66658c7f",
+        "canonical_entity_id": "EN-4731aa5b66658c7f",
+        "name": "无界动力"
+      },
       {
         "entity_id": "EN-8dc72a4672894e0f",
         "canonical_entity_id": "EN-8dc72a4672894e0f",
@@ -41,40 +59,78 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-c9a474642e638615",
-        "funding_insight_id": "FI-7e546bd15ad5d4db",
+        "activity_id": "IA-d7fdb714d56bc585",
+        "funding_insight_id": "FI-6ada8d4502daa530",
         "event_ids": [
-          "EV-876baa523eb93c4f"
+          "EV-e0a31302688c81ec"
         ],
-        "company_entity_id": "EN-4731aa5b66658c7f",
-        "company_canonical_entity_id": "EN-4731aa5b66658c7f",
-        "company_name": "无界动力（北京）技术研发有限公司",
-        "round": "天使轮",
-        "round_code": "angel",
-        "round_original": "天使轮",
-        "amount_original": "超2亿美元",
+        "company_entity_id": "EN-a5e5f031b6f878cf",
+        "company_canonical_entity_id": "",
+        "company_name": "杭州微纳核芯电子科技有限公司",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "超10亿元",
         "amount_normalized": {
-          "currency": "USD",
-          "value": 200000000,
-          "min_value": 200000000,
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": 1000000000,
           "max_value": null,
           "unit": "base",
           "status": "lower_bound",
-          "display_zh": "超过 2 亿美元"
+          "display_zh": "超过 10 亿人民币"
         },
-        "announced_at": "2026-06-26",
+        "announced_at": "2026-06-15",
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "天使+轮参投",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-daccbed46498e19c",
-            "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
-            "source_title": "无界动力宣布完成超2亿元天使+轮融资",
-            "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
-            "quote": "新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入",
-            "quote_hash": "22749254e61efe2172babb79ccad41e5db2ac15f7fddfe8047acd398e095e1e1"
+            "source_id": "FISRC-b96684face6f5223",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
+            "source_title": "微纳核芯完成超10亿元B轮系列融资",
+            "source_content_hash": "3001d7761836998ad785b02a8753e10abd430afc8267dd715a690f318b1cff60",
+            "quote": "深创投 等头部国资机构",
+            "quote_hash": "8586436a7425cb34d3740db319b9fef2aacc30d178978b54ab1a1d3b46c0a11c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-934a721d5de83f2d",
+        "funding_insight_id": "FI-f617b97f0b35118f",
+        "event_ids": [
+          "EV-794f921515af8e8b"
+        ],
+        "company_entity_id": "EN-085578b03da7d660",
+        "company_canonical_entity_id": "",
+        "company_name": "墨芯人工智能科技（深圳）有限公司",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "近10亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 10 亿人民币"
+        },
+        "announced_at": "2026-05-29",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6202f2642c216aa5",
+            "source_url": "https://finance.sina.com.cn/roll/2026-05-29/doc-inhzqccm9474762.shtml",
+            "source_title": "墨芯人工智能完成近10亿元C轮融资",
+            "source_content_hash": "acb7f98eff8e5a18cafd8588c7b7e359b5aeab6222f18d676e54328e28236b61",
+            "quote": "本轮投资方包括深创投、 岩山科技 、大湾区共同家园、 我会会员单位力鼎资本 、蕴盛资本等",
+            "quote_hash": "23b6cdc1274fabc3b892f5e1360779d1ec84cbeaf39e60791428fd74ed5f14b8"
           }
         ]
       },
@@ -155,6 +211,44 @@
         ]
       },
       {
+        "activity_id": "IA-c951e42d3a3cb0e1",
+        "funding_insight_id": "FI-6763b86fb1d41259",
+        "event_ids": [
+          "EV-876baa523eb93c4f"
+        ],
+        "company_entity_id": "EN-4731aa5b66658c7f",
+        "company_canonical_entity_id": "EN-4731aa5b66658c7f",
+        "company_name": "无界动力",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "超2亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 200000000,
+          "min_value": 200000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 2 亿人民币"
+        },
+        "announced_at": "2026-02-14",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-daccbed46498e19c",
+            "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
+            "source_title": "无界动力宣布完成超2亿元天使+轮融资",
+            "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
+            "quote": "新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
+            "quote_hash": "8e9d10663fe3e1560634117b6891dc37bab1b356161cbcf0e51af36273fc4061"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-5aa1051aecb08a9b",
         "funding_insight_id": "FI-15b5d99bcd808dba",
         "event_ids": [
@@ -195,12 +289,20 @@
     ],
     "evidence": [
       {
-        "source_id": "FISRC-daccbed46498e19c",
-        "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
-        "source_title": "无界动力宣布完成超2亿元天使+轮融资",
-        "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
-        "quote": "新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入",
-        "quote_hash": "22749254e61efe2172babb79ccad41e5db2ac15f7fddfe8047acd398e095e1e1"
+        "source_id": "FISRC-b96684face6f5223",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
+        "source_title": "微纳核芯完成超10亿元B轮系列融资",
+        "source_content_hash": "3001d7761836998ad785b02a8753e10abd430afc8267dd715a690f318b1cff60",
+        "quote": "深创投 等头部国资机构",
+        "quote_hash": "8586436a7425cb34d3740db319b9fef2aacc30d178978b54ab1a1d3b46c0a11c"
+      },
+      {
+        "source_id": "FISRC-6202f2642c216aa5",
+        "source_url": "https://finance.sina.com.cn/roll/2026-05-29/doc-inhzqccm9474762.shtml",
+        "source_title": "墨芯人工智能完成近10亿元C轮融资",
+        "source_content_hash": "acb7f98eff8e5a18cafd8588c7b7e359b5aeab6222f18d676e54328e28236b61",
+        "quote": "本轮投资方包括深创投、 岩山科技 、大湾区共同家园、 我会会员单位力鼎资本 、蕴盛资本等",
+        "quote_hash": "23b6cdc1274fabc3b892f5e1360779d1ec84cbeaf39e60791428fd74ed5f14b8"
       },
       {
         "source_id": "FISRC-adaac360139469bd",
@@ -217,6 +319,14 @@
         "source_content_hash": "5904bd05269fe1c8",
         "quote": "多轮系列 数亿级×7 轮 2025（半年内） 深创投、国投、达晨财智、华熙生物等",
         "quote_hash": "474bf29952dbbf5c8be1a88398dc1c2e361fd4f49dd5f4c98bd4c3a9328f8c52"
+      },
+      {
+        "source_id": "FISRC-daccbed46498e19c",
+        "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
+        "source_title": "无界动力宣布完成超2亿元天使+轮融资",
+        "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
+        "quote": "新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
+        "quote_hash": "8e9d10663fe3e1560634117b6891dc37bab1b356161cbcf0e51af36273fc4061"
       },
       {
         "source_id": "FISRC-a180899e2f0b58ad",

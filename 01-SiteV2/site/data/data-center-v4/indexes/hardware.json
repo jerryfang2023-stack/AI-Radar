@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "hardware": [
@@ -4696,6 +4696,66 @@
         "EN-60c5644257240a32",
         "EN-313288a6e417d286",
         "EN-3d5291effddd967b"
+      ]
+    },
+    {
+      "id": "HWC-6dadf6e66614011f",
+      "snapshotKey": "6dadf6e66614011f",
+      "snapshotId": "HWS-835706db16892855",
+      "eventId": "EV-794f921515af8e8b",
+      "eventIds": [
+        "EV-794f921515af8e8b"
+      ],
+      "dataDate": "2026-08-03",
+      "date": "2026-08-03",
+      "title": "墨芯人工智能",
+      "subject": "墨芯人工智能",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "specification"
+      ],
+      "latestValues": {
+        "specification": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-8e1aa91837e3b9bc"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-03",
+          "hardware_fact_id": "HWF-8e1aa91837e3b9bc",
+          "fact_type": "specification",
+          "observed_at": "2026-05-29T12:00:00.000+08:00",
+          "subject_entity_id": "EN-085578b03da7d660",
+          "subject_name": "墨芯人工智能",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "公司专注于稀疏计算AI芯片，通过剔除矩阵运算中的无效计算，实现算力倍增与功耗大幅下降。",
+          "event_refs": [
+            "EV-794f921515af8e8b"
+          ],
+          "claim_ref": "CL-c4b395e416e09b6c",
+          "source_refs": [
+            "SA-1196ebf97c011b89"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://finance.sina.com.cn/roll/2026-05-29/doc-inhzqccm9474762.shtml",
+      "entityIds": [
+        "EN-085578b03da7d660"
       ]
     },
     {

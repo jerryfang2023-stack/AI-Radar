@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2040,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-cfcd39e3f43b2e",
+    "name": "高瓴资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-03-25",
+    "latest_disclosed_at": "2026-03-25",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "multi_round"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-be8f311b8bb47e9c",
+        "canonical_entity_id": "",
+        "name": "华深智药科技（北京）有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-296bbb40ec02356f",
+        "funding_insight_id": "FI-c3bce60cc6406ae5",
+        "event_ids": [
+          "EV-e6a4e0785ebb268a"
+        ],
+        "company_entity_id": "EN-be8f311b8bb47e9c",
+        "company_canonical_entity_id": "",
+        "company_name": "华深智药科技（北京）有限公司",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "7.87亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 787000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7.87 亿美元"
+        },
+        "announced_at": "2026-03-25",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-972ef11d09af7ec8",
+            "source_url": "https://vc.pedaily.cn/company/205217.html",
+            "source_title": "华深智药完成7.87亿美元B轮融资",
+            "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
+            "quote": "投资方为Dimension Capital、DST Global、高瓴资本、渶策资本、Luminous Ventures、琦迹资本、赛诺菲、Biotech Development Fund",
+            "quote_hash": "50bd19105aa4ddc094866c630fa8f02864547d64102bd3c4636c35e7ee64bb72"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-972ef11d09af7ec8",
+        "source_url": "https://vc.pedaily.cn/company/205217.html",
+        "source_title": "华深智药完成7.87亿美元B轮融资",
+        "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
+        "quote": "投资方为Dimension Capital、DST Global、高瓴资本、渶策资本、Luminous Ventures、琦迹资本、赛诺菲、Biotech Development Fund",
+        "quote_hash": "50bd19105aa4ddc094866c630fa8f02864547d64102bd3c4636c35e7ee64bb72"
+      }
+    ]
+  }
+}

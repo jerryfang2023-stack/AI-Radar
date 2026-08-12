@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2040,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-3ddb3154693edd",
+    "name": "伊利集团CVC健瓴资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-04-16",
+    "latest_disclosed_at": "2026-06-15",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "multi_round"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-e7492db096492304",
+        "canonical_entity_id": "",
+        "name": "极佳视界"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-24beeb92d52b433e",
+        "funding_insight_id": "FI-ab64a33b7d572f85",
+        "event_ids": [
+          "EV-3a591b0f027f66cf"
+        ],
+        "company_entity_id": "EN-6862b0d243051cd3",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿人民币"
+        },
+        "announced_at": "2026-06-15",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B1轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce47b663ca256878",
+            "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+            "source_title": "极佳视界三个月完成35亿元B轮系列融资",
+            "source_content_hash": "2e290bb988c15b09d237e8bdde13c6e932e6bd7442016bbf35ee6ed94e536df8",
+            "quote": "紧接着在4月，极佳视界B1轮融资浮出水面——由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
+            "quote_hash": "24abdda7820e59b7873e17e140e83d794aa1f5b32bb5e78fb929f924823af0b6"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-070fbf641e231dcf",
+        "funding_insight_id": "FI-f4cf69e8d2cc7653",
+        "event_ids": [
+          "EV-499a62114b0fd616"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "近15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 15 亿人民币"
+        },
+        "announced_at": "2026-04-16",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4782a6093d519a4d",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
+            "source_title": "极佳视界完成15亿元B1轮融资",
+            "source_content_hash": "1249ab9a7b5d09d0d0f4f5724c90445e53a54409c6821fa0e8f197a595dca320",
+            "quote": "由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、乾融资本、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
+            "quote_hash": "a9d3c79b14298f438828a94cf2eb3088528d6b88d628bc4f4c9fd7f3a826694e"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-ce47b663ca256878",
+        "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+        "source_title": "极佳视界三个月完成35亿元B轮系列融资",
+        "source_content_hash": "2e290bb988c15b09d237e8bdde13c6e932e6bd7442016bbf35ee6ed94e536df8",
+        "quote": "紧接着在4月，极佳视界B1轮融资浮出水面——由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
+        "quote_hash": "24abdda7820e59b7873e17e140e83d794aa1f5b32bb5e78fb929f924823af0b6"
+      },
+      {
+        "source_id": "FISRC-4782a6093d519a4d",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
+        "source_title": "极佳视界完成15亿元B1轮融资",
+        "source_content_hash": "1249ab9a7b5d09d0d0f4f5724c90445e53a54409c6821fa0e8f197a595dca320",
+        "quote": "由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、乾融资本、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
+        "quote_hash": "a9d3c79b14298f438828a94cf2eb3088528d6b88d628bc4f4c9fd7f3a826694e"
+      }
+    ]
+  }
+}

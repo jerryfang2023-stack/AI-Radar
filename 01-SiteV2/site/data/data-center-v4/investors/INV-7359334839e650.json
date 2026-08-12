@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "institution": {
@@ -23,69 +23,69 @@
     "current_round_count": 1,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 1,
-    "first_disclosed_at": "2026-06-26",
-    "latest_disclosed_at": "2026-06-26",
+    "first_disclosed_at": "2026-07-06",
+    "latest_disclosed_at": "2026-07-06",
     "role_counts": {
-      "co_lead": 1
+      "participant": 1
     },
     "round_codes": [
-      "angel"
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
-        "entity_id": "EN-4731aa5b66658c7f",
-        "canonical_entity_id": "EN-4731aa5b66658c7f",
-        "name": "无界动力（北京）技术研发有限公司"
+        "entity_id": "EN-bbc41366a5a7cf78",
+        "canonical_entity_id": "",
+        "name": "北京星动纪元科技有限公司"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-b461fb979d85fa0b",
-        "funding_insight_id": "FI-7e546bd15ad5d4db",
+        "activity_id": "IA-db4bebe6e9d88388",
+        "funding_insight_id": "FI-f7342735e68375d9",
         "event_ids": [
-          "EV-876baa523eb93c4f"
+          "EV-6ca567f6e80c36c5"
         ],
-        "company_entity_id": "EN-4731aa5b66658c7f",
-        "company_canonical_entity_id": "EN-4731aa5b66658c7f",
-        "company_name": "无界动力（北京）技术研发有限公司",
-        "round": "天使轮",
-        "round_code": "angel",
-        "round_original": "天使轮",
-        "amount_original": "超2亿美元",
+        "company_entity_id": "EN-bbc41366a5a7cf78",
+        "company_canonical_entity_id": "",
+        "company_name": "北京星动纪元科技有限公司",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮",
+        "amount_original": "10亿元",
         "amount_normalized": {
-          "currency": "USD",
-          "value": 200000000,
-          "min_value": 200000000,
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
           "max_value": null,
           "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 2 亿美元"
+          "status": "exact",
+          "display_zh": "10 亿人民币"
         },
-        "announced_at": "2026-06-26",
-        "disclosure_status": "disclosed",
+        "announced_at": "2026-07-06",
+        "disclosure_status": "partially_disclosed",
         "scope": "current_round",
-        "role": "本轮联合领投",
-        "role_code": "co_lead",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-ccf822f8fcb8d24a",
-            "source_url": "https://news.pedaily.cn/202606/565576.shtml",
-            "source_title": "无界动力完成超2亿美元天使轮融资，加速具身通用大脑与世界模型开发_投资界",
-            "source_content_hash": "a74dee61248c119a",
-            "quote": "最新天使轮融资由 京东关联基金、C 资本、弘毅投资、盛宇投资、丰源投资 等多家知名机构联合投资，老股东 线性资本、红杉中国、华业天成、雅瑞资本 等跟投，所获资金将持续用于具身通用大脑研发、技术基础设施建设以及全球规模化交付。",
-            "quote_hash": "651395cef7fe552ec8683f98e7ad363d71f4bf78406e30c168e6917f42b5b50a"
+            "source_id": "FISRC-8c073d38e1f34758",
+            "source_url": "https://news.pedaily.cn/202607/565883.shtml",
+            "source_title": "星动纪元完成10亿元新一轮融资",
+            "source_content_hash": "e02c1ade45f42e1ffa8e8febb36bda148ac558a328eb4ce356fcab3775bb04d2",
+            "quote": "中金雷诺、九坤创投、弘毅投资、君泰资本、盛赫资本跟投",
+            "quote_hash": "22bc315d01774242dc10b68af7a908fac6217710a0edd85957554dbd4dc6c9e8"
           }
         ]
       }
     ],
     "evidence": [
       {
-        "source_id": "FISRC-ccf822f8fcb8d24a",
-        "source_url": "https://news.pedaily.cn/202606/565576.shtml",
-        "source_title": "无界动力完成超2亿美元天使轮融资，加速具身通用大脑与世界模型开发_投资界",
-        "source_content_hash": "a74dee61248c119a",
-        "quote": "最新天使轮融资由 京东关联基金、C 资本、弘毅投资、盛宇投资、丰源投资 等多家知名机构联合投资，老股东 线性资本、红杉中国、华业天成、雅瑞资本 等跟投，所获资金将持续用于具身通用大脑研发、技术基础设施建设以及全球规模化交付。",
-        "quote_hash": "651395cef7fe552ec8683f98e7ad363d71f4bf78406e30c168e6917f42b5b50a"
+        "source_id": "FISRC-8c073d38e1f34758",
+        "source_url": "https://news.pedaily.cn/202607/565883.shtml",
+        "source_title": "星动纪元完成10亿元新一轮融资",
+        "source_content_hash": "e02c1ade45f42e1ffa8e8febb36bda148ac558a328eb4ce356fcab3775bb04d2",
+        "quote": "中金雷诺、九坤创投、弘毅投资、君泰资本、盛赫资本跟投",
+        "quote_hash": "22bc315d01774242dc10b68af7a908fac6217710a0edd85957554dbd4dc6c9e8"
       }
     ]
   }

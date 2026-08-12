@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "institution": {
@@ -20,52 +20,60 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
-    "first_disclosed_at": "2026-06-26",
-    "latest_disclosed_at": "2026-06-26",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-02-14",
+    "latest_disclosed_at": "2026-02-14",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "angel"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-4731aa5b66658c7f",
+        "canonical_entity_id": "EN-4731aa5b66658c7f",
+        "name": "无界动力"
+      }
+    ],
     "activities": [
       {
-        "activity_id": "IA-9717989673324fdf",
-        "funding_insight_id": "FI-7e546bd15ad5d4db",
+        "activity_id": "IA-547dc91b1aed71e3",
+        "funding_insight_id": "FI-6763b86fb1d41259",
         "event_ids": [
           "EV-876baa523eb93c4f"
         ],
         "company_entity_id": "EN-4731aa5b66658c7f",
         "company_canonical_entity_id": "EN-4731aa5b66658c7f",
-        "company_name": "无界动力（北京）技术研发有限公司",
+        "company_name": "无界动力",
         "round": "天使轮",
         "round_code": "angel",
         "round_original": "天使轮",
-        "amount_original": "超2亿美元",
+        "amount_original": "超2亿元",
         "amount_normalized": {
-          "currency": "USD",
+          "currency": "CNY",
           "value": 200000000,
           "min_value": 200000000,
           "max_value": null,
           "unit": "base",
           "status": "lower_bound",
-          "display_zh": "超过 2 亿美元"
+          "display_zh": "超过 2 亿人民币"
         },
-        "announced_at": "2026-06-26",
+        "announced_at": "2026-02-14",
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "天使+轮参投",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
             "source_id": "FISRC-daccbed46498e19c",
             "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
             "source_title": "无界动力宣布完成超2亿元天使+轮融资",
             "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
-            "quote": "老股东红杉中国、线性资本、高瓴创投、华业天成、中金资本旗下基金、BV百度风投持续追投",
-            "quote_hash": "208401da49912d83431494b3ff6b82c984c1c1be94736bc1f785346b9d5ec0fb"
+            "quote": "老股东红杉中国、线性资本、高瓴创投、华业天成、中金资本旗下基金、BV百度风投持续追投，新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
+            "quote_hash": "6867781360a245cd66582a24953eac9acacbc9a62098ae37517f6597e7475aec"
           }
         ]
       }
@@ -76,8 +84,8 @@
         "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
         "source_title": "无界动力宣布完成超2亿元天使+轮融资",
         "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
-        "quote": "老股东红杉中国、线性资本、高瓴创投、华业天成、中金资本旗下基金、BV百度风投持续追投",
-        "quote_hash": "208401da49912d83431494b3ff6b82c984c1c1be94736bc1f785346b9d5ec0fb"
+        "quote": "老股东红杉中国、线性资本、高瓴创投、华业天成、中金资本旗下基金、BV百度风投持续追投，新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
+        "quote_hash": "6867781360a245cd66582a24953eac9acacbc9a62098ae37517f6597e7475aec"
       }
     ]
   }

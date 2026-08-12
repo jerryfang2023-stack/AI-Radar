@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2040,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-80c272b9db7550",
+    "name": "凯旋创投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-05-29",
+    "latest_disclosed_at": "2026-05-29",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_c"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-085578b03da7d660",
+        "canonical_entity_id": "",
+        "name": "墨芯人工智能科技（深圳）有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-9afa33b08c3096b2",
+        "funding_insight_id": "FI-f617b97f0b35118f",
+        "event_ids": [
+          "EV-794f921515af8e8b"
+        ],
+        "company_entity_id": "EN-085578b03da7d660",
+        "company_canonical_entity_id": "",
+        "company_name": "墨芯人工智能科技（深圳）有限公司",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "近10亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 10 亿人民币"
+        },
+        "announced_at": "2026-05-29",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6202f2642c216aa5",
+            "source_url": "https://finance.sina.com.cn/roll/2026-05-29/doc-inhzqccm9474762.shtml",
+            "source_title": "墨芯人工智能完成近10亿元C轮融资",
+            "source_content_hash": "acb7f98eff8e5a18cafd8588c7b7e359b5aeab6222f18d676e54328e28236b61",
+            "quote": "老股东凯旋创投、创享投资、盛景嘉成共同参与",
+            "quote_hash": "3cdb9ac4d7a2162b6a494f02b2e826fb5e1f4cc707e928f2fdd599cebe5ec000"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-6202f2642c216aa5",
+        "source_url": "https://finance.sina.com.cn/roll/2026-05-29/doc-inhzqccm9474762.shtml",
+        "source_title": "墨芯人工智能完成近10亿元C轮融资",
+        "source_content_hash": "acb7f98eff8e5a18cafd8588c7b7e359b5aeab6222f18d676e54328e28236b61",
+        "quote": "老股东凯旋创投、创享投资、盛景嘉成共同参与",
+        "quote_hash": "3cdb9ac4d7a2162b6a494f02b2e826fb5e1f4cc707e928f2fdd599cebe5ec000"
+      }
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2040,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-9cfe7a0ebd1846",
+    "name": "成为资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-13",
+    "latest_disclosed_at": "2026-07-13",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "pre_series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-7f505bc9744206fd",
+        "canonical_entity_id": "",
+        "name": "上海灵睿智芯计算技术有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-464828a388fc6ed9",
+        "funding_insight_id": "FI-3923d1a4fc2b8a40",
+        "event_ids": [
+          "EV-800384d4fd2434a5"
+        ],
+        "company_entity_id": "EN-7f505bc9744206fd",
+        "company_canonical_entity_id": "",
+        "company_name": "上海灵睿智芯计算技术有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿人民币–9 亿人民币"
+        },
+        "announced_at": "2026-07-13",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-760e793448781182",
+            "source_url": "https://www.dramx.com/News/IC/20260713-40772.html",
+            "source_title": "灵睿智芯完成数亿元Pre-A轮融资，推进高端RISC-V内核P100流片落地",
+            "source_content_hash": "8b2b4166d5cfc440ad705c54d27b2283f53fb500afe8c3300ba824137632fc87",
+            "quote": "本轮融资投资方阵容多元，产业资本与专业创投联合入局，包括张江高科、壁仞科技、东方富海、中科创星、成为资本、石溪资本、上海天使会、孚腾资本、元禾璞华、华山资本十家机构",
+            "quote_hash": "ad4cdec7019f2399d9eeb7f30e95e9276f95aea304853b693997f7d42cec5400"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-760e793448781182",
+        "source_url": "https://www.dramx.com/News/IC/20260713-40772.html",
+        "source_title": "灵睿智芯完成数亿元Pre-A轮融资，推进高端RISC-V内核P100流片落地",
+        "source_content_hash": "8b2b4166d5cfc440ad705c54d27b2283f53fb500afe8c3300ba824137632fc87",
+        "quote": "本轮融资投资方阵容多元，产业资本与专业创投联合入局，包括张江高科、壁仞科技、东方富海、中科创星、成为资本、石溪资本、上海天使会、孚腾资本、元禾璞华、华山资本十家机构",
+        "quote_hash": "ad4cdec7019f2399d9eeb7f30e95e9276f95aea304853b693997f7d42cec5400"
+      }
+    ]
+  }
+}

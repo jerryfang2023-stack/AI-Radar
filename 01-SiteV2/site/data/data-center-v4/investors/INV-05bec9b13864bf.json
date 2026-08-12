@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "institution": {
@@ -20,13 +20,13 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "first_disclosed_at": "2026-06-04",
-    "latest_disclosed_at": "2026-07-15",
+    "latest_disclosed_at": "2026-08-02",
     "role_counts": {
-      "lead": 1,
+      "lead": 2,
       "participant": 2
     },
     "round_codes": [
@@ -40,6 +40,11 @@
         "name": "Aligned"
       },
       {
+        "entity_id": "EN-f87e57673b408d79",
+        "canonical_entity_id": "",
+        "name": "Arrakis Security"
+      },
+      {
         "entity_id": "EN-df877645404747cb",
         "canonical_entity_id": "",
         "name": "Oak"
@@ -51,6 +56,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-384174590ec8fa03",
+        "funding_insight_id": "FI-d897e56937c13b91",
+        "event_ids": [
+          "EV-24823de8fb76ac31"
+        ],
+        "company_entity_id": "EN-f87e57673b408d79",
+        "company_canonical_entity_id": "",
+        "company_name": "Arrakis Security",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$8 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 8000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "800 万美元"
+        },
+        "announced_at": "2026-08-02",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-370a65ed92921303",
+            "source_url": "https://runtimewire.com/article/arrakis-security-raises-8-million-ai-agent-runtime-controls",
+            "source_title": "Arrakis 为 AI 智能体运行时安全筹集 800 万美元",
+            "source_content_hash": "895c7d4909879605",
+            "quote": "Hetz Ventures led the round.",
+            "quote_hash": "68a40a2fba00fbccb310a5889f57827116ce3de49f4c5d08a810c849db3cfb65"
+          }
+        ]
+      },
       {
         "activity_id": "IA-301615b14a30c689",
         "funding_insight_id": "FI-443b5f65f0a2c1cb",
@@ -176,6 +219,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-370a65ed92921303",
+        "source_url": "https://runtimewire.com/article/arrakis-security-raises-8-million-ai-agent-runtime-controls",
+        "source_title": "Arrakis 为 AI 智能体运行时安全筹集 800 万美元",
+        "source_content_hash": "895c7d4909879605",
+        "quote": "Hetz Ventures led the round.",
+        "quote_hash": "68a40a2fba00fbccb310a5889f57827116ce3de49f4c5d08a810c849db3cfb65"
+      },
       {
         "source_id": "FISRC-88cec30382296a0c",
         "source_url": "https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth-to-fix-the-identity-mess-that-ai-agents-are-making-worse/",

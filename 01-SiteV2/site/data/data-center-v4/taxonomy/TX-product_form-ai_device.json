@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -2212,9 +2212,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-industry_applications",
         "TX-industry-retail_ecommerce",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-ai_market_category-industry_applications",
         "TX-target_user-consumer",
         "TX-ai_market_subcategory-consumer_retail",
         "TX-product_form-ai_device"
@@ -2229,7 +2229,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [],
-      "verificationStatus": "candidate",
+      "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
@@ -2238,10 +2238,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-industry_applications",
         "TX-industry-retail_ecommerce",
         "TX-use_case-content_creation",
         "TX-industry-media_entertainment",
-        "TX-ai_market_category-industry_applications",
         "TX-target_user-consumer",
         "TX-ai_market_subcategory-consumer_retail",
         "TX-product_form-ai_device",
@@ -2267,16 +2267,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-developer",
-        "TX-ai_market_category-enterprise_applications",
-        "TX-use_case-research_discovery",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-ai_market_application-models",
+        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
+        "TX-target_user-developer",
+        "TX-use_case-research_discovery",
+        "TX-product_form-model",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-consumer",
+        "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-product_form-ai_device"
       ],
       "relatedEntityIds": [],
@@ -2319,6 +2319,8 @@
       ],
       "eventIds": [
         "EV-87432dbb99cd6033",
+        "EV-3a591b0f027f66cf",
+        "EV-499a62114b0fd616",
         "EV-e3fe8993f46d5e12",
         "EV-9563aa162529aab0",
         "EV-b726a9cda7beae64",
@@ -2343,10 +2345,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-software_development",
         "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-software_development",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-product_form-ai_device",
@@ -2357,7 +2359,7 @@
         "EN-eec6044eb8e4941a",
         "EN-24381ecb01753c1b"
       ],
-      "firstSeen": "2026-05-25",
+      "firstSeen": "2026-04-16",
       "lastSeen": "2026-08-08"
     },
     {
@@ -2385,8 +2387,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
-        "TX-industry-retail_ecommerce",
         "TX-product_form-ai_infrastructure_software",
+        "TX-industry-retail_ecommerce",
         "TX-product_form-ai_device"
       ],
       "relatedEntityIds": [],

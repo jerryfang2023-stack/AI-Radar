@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2040,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-1dbd8d8526a7d9",
+    "name": "碧鸿投资",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-04-02",
+    "latest_disclosed_at": "2026-04-02",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-6af41693bdfbac01",
+        "funding_insight_id": "FI-af2461a497e30ffa",
+        "event_ids": [
+          "EV-435d7e7878b0c326"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "",
+        "company_name": "星海图",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "B+轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿人民币"
+        },
+        "announced_at": "2026-04-02",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1d57bbe4edb9e812",
+            "source_url": "https://companies.caixin.com/2026-02-11/102413493.html",
+            "source_title": "具身智能公司星海图完成10亿元B轮融资_公司频道_财新网",
+            "source_content_hash": "5cf2794be5d5263d",
+            "quote": "星海图 完成10亿元B轮融资，本轮投资方包括 金鼎资本 、 北汽产投 、 碧鸿投资",
+            "quote_hash": "2af2ed003408a02b1807a790da4a1e9d07ca519daa62dd7b6a0894f258581bc5"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1d57bbe4edb9e812",
+        "source_url": "https://companies.caixin.com/2026-02-11/102413493.html",
+        "source_title": "具身智能公司星海图完成10亿元B轮融资_公司频道_财新网",
+        "source_content_hash": "5cf2794be5d5263d",
+        "quote": "星海图 完成10亿元B轮融资，本轮投资方包括 金鼎资本 、 北汽产投 、 碧鸿投资",
+        "quote_hash": "2af2ed003408a02b1807a790da4a1e9d07ca519daa62dd7b6a0894f258581bc5"
+      }
+    ]
+  }
+}

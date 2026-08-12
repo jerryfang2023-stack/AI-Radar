@@ -16,7 +16,7 @@ const expectedDataCenterProductVersion = "SITE-V4.2.0-entity-history";
 const expectedOpportunityEvidenceSiteVersion = "SITE-V4.2.0-entity-history";
 const expectedReportsCenterColumnVersion = "REPORTS-V1.3.0-funding-portal";
 const expectedOpportunityMapColumnVersion = "OMAP-V2.0.0-v4-evidence";
-const expectedFundingInsightsColumnVersion = "FUNDING-INSIGHT-V1.4.0-financing-fields";
+const expectedFundingInsightsColumnVersion = "FUNDING-INSIGHT-V1.5.0-china-market";
 
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 

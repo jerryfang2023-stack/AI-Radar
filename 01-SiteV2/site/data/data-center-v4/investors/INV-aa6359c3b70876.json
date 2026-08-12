@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2040,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-aa6359c3b70876",
+    "name": "小米战略投资部",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-08-03",
+    "latest_disclosed_at": "2026-08-03",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-6cbe32327f725203",
+        "funding_insight_id": "FI-c7196586a871ba41",
+        "event_ids": [
+          "EV-4fbbf16279e27000"
+        ],
+        "company_entity_id": "EN-74b42431957780b9",
+        "company_canonical_entity_id": "",
+        "company_name": "昉擎科技",
+        "round": "A1轮",
+        "round_code": "series_a1",
+        "round_original": "A1轮",
+        "amount_original": "超过 100 亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 10000000000,
+          "min_value": 10000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 100 亿人民币"
+        },
+        "announced_at": "2026-08-03",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-a1d34e1670d0ad2d",
+            "source_url": "https://www.163.com/dy/article/K5LF43P10531M1CO.html",
+            "source_title": "晚点独家丨小米、蔚来资本领投昉擎天使轮，寒武纪前CTO任昉擎CEO|英伟达|cto|小米集团|知名企业_网易订阅",
+            "source_content_hash": "da5d6f1e2a3326d1",
+            "quote": "天使轮由小米战略投资部领投，蔚来资本和明势资本跟投",
+            "quote_hash": "049cab464e2244fb82ddf542f3b56f533077a83e0fdc18d67641174369ea79f6"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-a1d34e1670d0ad2d",
+        "source_url": "https://www.163.com/dy/article/K5LF43P10531M1CO.html",
+        "source_title": "晚点独家丨小米、蔚来资本领投昉擎天使轮，寒武纪前CTO任昉擎CEO|英伟达|cto|小米集团|知名企业_网易订阅",
+        "source_content_hash": "da5d6f1e2a3326d1",
+        "quote": "天使轮由小米战略投资部领投，蔚来资本和明势资本跟投",
+        "quote_hash": "049cab464e2244fb82ddf542f3b56f533077a83e0fdc18d67641174369ea79f6"
+      }
+    ]
+  }
+}

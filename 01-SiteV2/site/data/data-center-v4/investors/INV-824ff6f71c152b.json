@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "institution": {
@@ -21,12 +21,12 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
-    "first_disclosed_at": "2026-05-07",
+    "first_disclosed_at": "2026-03-25",
     "latest_disclosed_at": "2026-05-07",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
@@ -68,6 +68,44 @@
             "quote_hash": "0f1a23bea6549c6379f1f0909c7f8ecc0fcbab3a9c07ab3e7a454158c18bf75a"
           }
         ]
+      },
+      {
+        "activity_id": "IA-8a198530a030ba0e",
+        "funding_insight_id": "FI-c3bce60cc6406ae5",
+        "event_ids": [
+          "EV-e6a4e0785ebb268a"
+        ],
+        "company_entity_id": "EN-be8f311b8bb47e9c",
+        "company_canonical_entity_id": "",
+        "company_name": "华深智药科技（北京）有限公司",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "7.87亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 787000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7.87 亿美元"
+        },
+        "announced_at": "2026-03-25",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-972ef11d09af7ec8",
+            "source_url": "https://vc.pedaily.cn/company/205217.html",
+            "source_title": "华深智药完成7.87亿美元B轮融资",
+            "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
+            "quote": "A轮融资：金额 近5亿人民币 ，投资方为五源资本、高榕创投、Neumann Advisors、襄禾资本、高瓴创投、清智资本",
+            "quote_hash": "49e975ab0c8bd1e87a8fc18d6354e5d517499da3608a91fdf0fbb5dd193fcd3b"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -78,6 +116,14 @@
         "source_content_hash": "eeb091dd8db852e6",
         "quote": "2025年10月C轮（前序），数亿美元，传闻腾讯领投，五源资本等参与（未完全披露）",
         "quote_hash": "0f1a23bea6549c6379f1f0909c7f8ecc0fcbab3a9c07ab3e7a454158c18bf75a"
+      },
+      {
+        "source_id": "FISRC-972ef11d09af7ec8",
+        "source_url": "https://vc.pedaily.cn/company/205217.html",
+        "source_title": "华深智药完成7.87亿美元B轮融资",
+        "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
+        "quote": "A轮融资：金额 近5亿人民币 ，投资方为五源资本、高榕创投、Neumann Advisors、襄禾资本、高瓴创投、清智资本",
+        "quote_hash": "49e975ab0c8bd1e87a8fc18d6354e5d517499da3608a91fdf0fbb5dd193fcd3b"
       }
     ]
   }

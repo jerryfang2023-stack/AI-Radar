@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2040,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-1e07966e44e9cb",
+    "name": "西湖创新投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-08-03",
+    "latest_disclosed_at": "2026-08-03",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "other"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-847c00c904ccdb98",
+        "canonical_entity_id": "",
+        "name": "西湖心辰（杭州）科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-68fdd23f96983981",
+        "funding_insight_id": "FI-07a58b1fe051182a",
+        "event_ids": [
+          "EV-88a984b765bb54f1"
+        ],
+        "company_entity_id": "EN-847c00c904ccdb98",
+        "company_canonical_entity_id": "",
+        "company_name": "西湖心辰（杭州）科技有限公司",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "B+轮",
+        "amount_original": "数亿元人民币",
+        "amount_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "数亿元人民币"
+        },
+        "announced_at": "2026-08-03",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e5bf01aa7128608b",
+            "source_url": "https://www.readaitime.com/news/2026-08-03/kqp84yfa",
+            "source_title": "西湖心辰完成数亿元B+轮融资，蚂蚁系创始人领衔扩散模型创业",
+            "source_content_hash": "923410e5f5a09ac02320e57a06622b29e4c6fea066238ffa5e9d1b0a116df52e",
+            "quote": "西湖创新投、武汉江豚基金、容亿投资、南通投管 等机构跟投",
+            "quote_hash": "a423c051458137110d577d2851695029866eb125ac6f3ebefa8fe6820e5ef9d7"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-e5bf01aa7128608b",
+        "source_url": "https://www.readaitime.com/news/2026-08-03/kqp84yfa",
+        "source_title": "西湖心辰完成数亿元B+轮融资，蚂蚁系创始人领衔扩散模型创业",
+        "source_content_hash": "923410e5f5a09ac02320e57a06622b29e4c6fea066238ffa5e9d1b0a116df52e",
+        "quote": "西湖创新投、武汉江豚基金、容亿投资、南通投管 等机构跟投",
+        "quote_hash": "a423c051458137110d577d2851695029866eb125ac6f3ebefa8fe6820e5ef9d7"
+      }
+    ]
+  }
+}

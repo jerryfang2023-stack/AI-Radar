@@ -47,7 +47,7 @@ const expected = {
   opportunity: "OMAP-V2.0.0-v4-evidence",
   trendRadar: "TRADAR-V1.1.0-tag-v4-1",
   taxonomy: "TAG-V4.1",
-  fundingInsights: "FUNDING-INSIGHT-V1.4.0-financing-fields",
+  fundingInsights: "FUNDING-INSIGHT-V1.5.0-china-market",
   person: "PERSON-REVIEW-V1.1",
   skillStore: "v2.0.1 GPT-5.6 full-audit corrections",
   vault: "GUANLAN-VAULT-V1.2-private-evidence-linked (external)",

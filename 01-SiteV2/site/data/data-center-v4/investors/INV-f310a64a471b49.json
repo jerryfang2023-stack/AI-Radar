@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "institution": {
@@ -21,12 +21,12 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 4,
     "portfolio_company_count": 1,
-    "first_disclosed_at": "2026-04-16",
+    "first_disclosed_at": "2026-03-25",
     "latest_disclosed_at": "2026-05-07",
     "role_counts": {
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 4,
       "participant": 1
     },
     "round_codes": [
@@ -153,6 +153,82 @@
             "quote_hash": "ad0a3e590ffa110b3cf74a5f62e58f3e387290b3c658e3f5c91e312af6a29fd6"
           }
         ]
+      },
+      {
+        "activity_id": "IA-53f88840aba686e8",
+        "funding_insight_id": "FI-af2461a497e30ffa",
+        "event_ids": [
+          "EV-435d7e7878b0c326"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "",
+        "company_name": "星海图",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "B+轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿人民币"
+        },
+        "announced_at": "2026-04-02",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B轮主要老股东追加",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1d57bbe4edb9e812",
+            "source_url": "https://companies.caixin.com/2026-02-11/102413493.html",
+            "source_title": "具身智能公司星海图完成10亿元B轮融资_公司频道_财新网",
+            "source_content_hash": "5cf2794be5d5263d",
+            "quote": "主要老股东 凯辉基金 、 美团龙珠 、 今日资本 、 襄禾资本 和 高瓴创投 超额或满额追加",
+            "quote_hash": "42422a062e7fccb11702f9a712dee008ad10ef60f7e373ef2947d5ba1314e136"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-bb05b9bc42ebb424",
+        "funding_insight_id": "FI-c3bce60cc6406ae5",
+        "event_ids": [
+          "EV-e6a4e0785ebb268a"
+        ],
+        "company_entity_id": "EN-be8f311b8bb47e9c",
+        "company_canonical_entity_id": "",
+        "company_name": "华深智药科技（北京）有限公司",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "7.87亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 787000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7.87 亿美元"
+        },
+        "announced_at": "2026-03-25",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮及A轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-972ef11d09af7ec8",
+            "source_url": "https://vc.pedaily.cn/company/205217.html",
+            "source_title": "华深智药完成7.87亿美元B轮融资",
+            "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
+            "quote": "天使轮融资：金额 千万级美元 ，投资方为襄禾资本、高瓴创投、清智资本",
+            "quote_hash": "9fe140fe0cff27185eab494a33c5b77f61f0691c72d2cd05a55500025f1e01d7"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -179,6 +255,22 @@
         "source_content_hash": "9bc3ee36ffea717f",
         "quote": "线性资本、恒旭资本、洪泰基金、联想创投、襄禾资本、高瓴创投跟投",
         "quote_hash": "ad0a3e590ffa110b3cf74a5f62e58f3e387290b3c658e3f5c91e312af6a29fd6"
+      },
+      {
+        "source_id": "FISRC-1d57bbe4edb9e812",
+        "source_url": "https://companies.caixin.com/2026-02-11/102413493.html",
+        "source_title": "具身智能公司星海图完成10亿元B轮融资_公司频道_财新网",
+        "source_content_hash": "5cf2794be5d5263d",
+        "quote": "主要老股东 凯辉基金 、 美团龙珠 、 今日资本 、 襄禾资本 和 高瓴创投 超额或满额追加",
+        "quote_hash": "42422a062e7fccb11702f9a712dee008ad10ef60f7e373ef2947d5ba1314e136"
+      },
+      {
+        "source_id": "FISRC-972ef11d09af7ec8",
+        "source_url": "https://vc.pedaily.cn/company/205217.html",
+        "source_title": "华深智药完成7.87亿美元B轮融资",
+        "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
+        "quote": "天使轮融资：金额 千万级美元 ，投资方为襄禾资本、高瓴创投、清智资本",
+        "quote_hash": "9fe140fe0cff27185eab494a33c5b77f61f0691c72d2cd05a55500025f1e01d7"
       }
     ]
   }

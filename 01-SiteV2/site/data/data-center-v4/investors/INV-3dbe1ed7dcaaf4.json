@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2040,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-3dbe1ed7dcaaf4",
+    "name": "三星",
+    "aliases": [],
+    "canonical_entity_id": "EN-968e2d5b08687bf4",
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-07-06",
+    "latest_disclosed_at": "2026-07-06",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-80a9b20502d4ed1e",
+        "funding_insight_id": "FI-f7342735e68375d9",
+        "event_ids": [
+          "EV-6ca567f6e80c36c5"
+        ],
+        "company_entity_id": "EN-bbc41366a5a7cf78",
+        "company_canonical_entity_id": "",
+        "company_name": "北京星动纪元科技有限公司",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿人民币"
+        },
+        "announced_at": "2026-07-06",
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "2026年3月战略轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-8c073d38e1f34758",
+            "source_url": "https://news.pedaily.cn/202607/565883.shtml",
+            "source_title": "星动纪元完成10亿元新一轮融资",
+            "source_content_hash": "e02c1ade45f42e1ffa8e8febb36bda148ac558a328eb4ce356fcab3775bb04d2",
+            "quote": "3月完成10亿元战略轮融资，估值突破百亿大关，股东中首次出现韩国三星、新加坡电信等海外产业资本",
+            "quote_hash": "f59e62a3d713b9108d3012048b52ce8aafea06a66518fe539ba3d75428d6ebe7"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-8c073d38e1f34758",
+        "source_url": "https://news.pedaily.cn/202607/565883.shtml",
+        "source_title": "星动纪元完成10亿元新一轮融资",
+        "source_content_hash": "e02c1ade45f42e1ffa8e8febb36bda148ac558a328eb4ce356fcab3775bb04d2",
+        "quote": "3月完成10亿元战略轮融资，估值突破百亿大关，股东中首次出现韩国三星、新加坡电信等海外产业资本",
+        "quote_hash": "f59e62a3d713b9108d3012048b52ce8aafea06a66518fe539ba3d75428d6ebe7"
+      }
+    ]
+  }
+}

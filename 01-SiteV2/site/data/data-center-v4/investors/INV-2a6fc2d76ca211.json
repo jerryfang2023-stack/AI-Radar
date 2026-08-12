@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "institution": {
@@ -20,17 +20,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
-    "first_disclosed_at": "2026-05-09",
-    "latest_disclosed_at": "2026-06-26",
+    "portfolio_company_count": 3,
+    "first_disclosed_at": "2026-02-14",
+    "latest_disclosed_at": "2026-08-03",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "angel",
-      "other"
+      "other",
+      "series_a1"
     ],
     "portfolio_companies": [
       {
@@ -39,47 +40,52 @@
         "name": "北京小雨智造科技有限公司"
       },
       {
+        "entity_id": "EN-74b42431957780b9",
+        "canonical_entity_id": "",
+        "name": "昉擎科技"
+      },
+      {
         "entity_id": "EN-4731aa5b66658c7f",
         "canonical_entity_id": "EN-4731aa5b66658c7f",
-        "name": "无界动力（北京）技术研发有限公司"
+        "name": "无界动力"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-68e9c7b9204e2817",
-        "funding_insight_id": "FI-7e546bd15ad5d4db",
+        "activity_id": "IA-2dc51f9c5ddb35e3",
+        "funding_insight_id": "FI-c7196586a871ba41",
         "event_ids": [
-          "EV-876baa523eb93c4f"
+          "EV-4fbbf16279e27000"
         ],
-        "company_entity_id": "EN-4731aa5b66658c7f",
-        "company_canonical_entity_id": "EN-4731aa5b66658c7f",
-        "company_name": "无界动力（北京）技术研发有限公司",
-        "round": "天使轮",
-        "round_code": "angel",
-        "round_original": "天使轮",
-        "amount_original": "超2亿美元",
+        "company_entity_id": "EN-74b42431957780b9",
+        "company_canonical_entity_id": "",
+        "company_name": "昉擎科技",
+        "round": "A1轮",
+        "round_code": "series_a1",
+        "round_original": "A1轮",
+        "amount_original": "超过 100 亿人民币",
         "amount_normalized": {
-          "currency": "USD",
-          "value": 200000000,
-          "min_value": 200000000,
+          "currency": "CNY",
+          "value": 10000000000,
+          "min_value": 10000000000,
           "max_value": null,
           "unit": "base",
           "status": "lower_bound",
-          "display_zh": "超过 2 亿美元"
+          "display_zh": "超过 100 亿人民币"
         },
-        "announced_at": "2026-06-26",
+        "announced_at": "2026-08-03",
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮参投",
         "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-ccf822f8fcb8d24a",
-            "source_url": "https://news.pedaily.cn/202606/565576.shtml",
-            "source_title": "无界动力完成超2亿美元天使轮融资，加速具身通用大脑与世界模型开发_投资界",
-            "source_content_hash": "a74dee61248c119a",
-            "quote": "最新天使轮融资由 京东关联基金、C 资本、弘毅投资、盛宇投资、丰源投资 等多家知名机构联合投资，老股东 线性资本、红杉中国、华业天成、雅瑞资本 等跟投，所获资金将持续用于具身通用大脑研发、技术基础设施建设以及全球规模化交付。",
-            "quote_hash": "651395cef7fe552ec8683f98e7ad363d71f4bf78406e30c168e6917f42b5b50a"
+            "source_id": "FISRC-75b04daca915e1ca",
+            "source_url": "https://www.cs.com.cn/ssgs/01/2026/08/03/detail_2026080310029022.html",
+            "source_title": "昉擎科技完成A1轮融资 投后估值超100亿元",
+            "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
+            "quote": "在老股东方面，钧山资本大额加注，多维资本、华业天成、临港科创投、建发新兴、三七互娱等同步超额追投。",
+            "quote_hash": "b9f8a9336db78f9102fe9d09934572c7d4276c4633a14f7b894236041c450c8f"
           }
         ]
       },
@@ -120,16 +126,54 @@
             "quote_hash": "46c5abda29dc5a4f9b36012fd8190fd437675ab2ad60fbe269108f4f57ef3601"
           }
         ]
+      },
+      {
+        "activity_id": "IA-4490a57fdfbe9a22",
+        "funding_insight_id": "FI-6763b86fb1d41259",
+        "event_ids": [
+          "EV-876baa523eb93c4f"
+        ],
+        "company_entity_id": "EN-4731aa5b66658c7f",
+        "company_canonical_entity_id": "EN-4731aa5b66658c7f",
+        "company_name": "无界动力",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "超2亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 200000000,
+          "min_value": 200000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 2 亿人民币"
+        },
+        "announced_at": "2026-02-14",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-daccbed46498e19c",
+            "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
+            "source_title": "无界动力宣布完成超2亿元天使+轮融资",
+            "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
+            "quote": "老股东红杉中国、线性资本、高瓴创投、华业天成、中金资本旗下基金、BV百度风投持续追投，新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
+            "quote_hash": "6867781360a245cd66582a24953eac9acacbc9a62098ae37517f6597e7475aec"
+          }
+        ]
       }
     ],
     "evidence": [
       {
-        "source_id": "FISRC-ccf822f8fcb8d24a",
-        "source_url": "https://news.pedaily.cn/202606/565576.shtml",
-        "source_title": "无界动力完成超2亿美元天使轮融资，加速具身通用大脑与世界模型开发_投资界",
-        "source_content_hash": "a74dee61248c119a",
-        "quote": "最新天使轮融资由 京东关联基金、C 资本、弘毅投资、盛宇投资、丰源投资 等多家知名机构联合投资，老股东 线性资本、红杉中国、华业天成、雅瑞资本 等跟投，所获资金将持续用于具身通用大脑研发、技术基础设施建设以及全球规模化交付。",
-        "quote_hash": "651395cef7fe552ec8683f98e7ad363d71f4bf78406e30c168e6917f42b5b50a"
+        "source_id": "FISRC-75b04daca915e1ca",
+        "source_url": "https://www.cs.com.cn/ssgs/01/2026/08/03/detail_2026080310029022.html",
+        "source_title": "昉擎科技完成A1轮融资 投后估值超100亿元",
+        "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
+        "quote": "在老股东方面，钧山资本大额加注，多维资本、华业天成、临港科创投、建发新兴、三七互娱等同步超额追投。",
+        "quote_hash": "b9f8a9336db78f9102fe9d09934572c7d4276c4633a14f7b894236041c450c8f"
       },
       {
         "source_id": "FISRC-7cae6e0a712567de",
@@ -138,6 +182,14 @@
         "source_content_hash": "320a14d704f62a2d42fda843b83e1e1542fcc79e50110842dd13af84440e9b2b",
         "quote": "老股东华业天成、贵州科创天使基金共同跟投",
         "quote_hash": "46c5abda29dc5a4f9b36012fd8190fd437675ab2ad60fbe269108f4f57ef3601"
+      },
+      {
+        "source_id": "FISRC-daccbed46498e19c",
+        "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
+        "source_title": "无界动力宣布完成超2亿元天使+轮融资",
+        "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
+        "quote": "老股东红杉中国、线性资本、高瓴创投、华业天成、中金资本旗下基金、BV百度风投持续追投，新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
+        "quote_hash": "6867781360a245cd66582a24953eac9acacbc9a62098ae37517f6597e7475aec"
       }
     ]
   }

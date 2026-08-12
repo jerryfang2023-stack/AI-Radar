@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2040,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-09bf121128688a",
+    "name": "PKSHA",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-03-05",
+    "latest_disclosed_at": "2026-03-05",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-6b378c421197de71",
+        "funding_insight_id": "FI-129fe046eadd748c",
+        "event_ids": [
+          "EV-a34447341a3872ed"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "Pre-B轮",
+        "round_code": "pre_series_b",
+        "round_original": "Pre-B轮",
+        "amount_original": "近10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 10 亿人民币"
+        },
+        "announced_at": "2026-03-05",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次产业资本",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-010c77e94d1f858f",
+            "source_url": "https://m.36kr.com/p/3710076436557954",
+            "source_title": "极佳视界完成10亿元Pre-B轮融资，「世界模型」驱动通用机器人加速进入 ...",
+            "source_content_hash": "7e8c3e23c6fe0f92",
+            "quote": "华为哈勃、中芯聚源、北汽产投、PKSHA等全球顶尖产业资本，为公司战略布局和产业拓展提供了重要的价值",
+            "quote_hash": "0ea380a9c10763e7080ab1ff1846017ebdd71f416d39ca7c8be95e9f6eba08c3"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-010c77e94d1f858f",
+        "source_url": "https://m.36kr.com/p/3710076436557954",
+        "source_title": "极佳视界完成10亿元Pre-B轮融资，「世界模型」驱动通用机器人加速进入 ...",
+        "source_content_hash": "7e8c3e23c6fe0f92",
+        "quote": "华为哈勃、中芯聚源、北汽产投、PKSHA等全球顶尖产业资本，为公司战略布局和产业拓展提供了重要的价值",
+        "quote_hash": "0ea380a9c10763e7080ab1ff1846017ebdd71f416d39ca7c8be95e9f6eba08c3"
+      }
+    ]
+  }
+}

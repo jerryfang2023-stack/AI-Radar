@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -54,6 +54,66 @@
         "title": "谷歌瞄准Mechanize的15亿美元投资，这家初创公司103天前刚筹集了910万美元种子轮",
         "displayTags": [
           {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-7ebe9a17c4d4c271"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b126d0e2673982c9",
+            "fundingInsightId": "FI-4d5cd3fff582276a"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "data",
+            "name": "数据",
+            "entityIds": [
+              "EN-7ebe9a17c4d4c271"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5be2d66131615e21",
+            "fundingInsightId": "FI-4d5cd3fff582276a"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "data_preparation_curation",
+            "name": "数据准备与整理",
+            "entityIds": [
+              "EN-7ebe9a17c4d4c271"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-032b1fa4b98f30cd",
+            "fundingInsightId": "FI-4d5cd3fff582276a"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_infrastructure_software",
+            "name": "AI 基础设施软件",
+            "entityIds": [
+              "EN-7ebe9a17c4d4c271"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8ada8869b06a7dd3",
+            "fundingInsightId": "FI-4d5cd3fff582276a"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-7ebe9a17c4d4c271"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1166da759914982e",
+            "fundingInsightId": "FI-4d5cd3fff582276a"
+          },
+          {
             "dimensionId": "technology",
             "dimensionName": "技术",
             "id": "agentic_execution",
@@ -63,6 +123,18 @@
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-7ebe9a17c4d4c271"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2e100fdc17cbbe00",
+            "fundingInsightId": "FI-4d5cd3fff582276a"
           }
         ],
         "entityIds": [

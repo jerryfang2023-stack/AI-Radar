@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
     "latestDataDate": "2026-08-12",
     "currentDate": "2026-08-12",
-    "eventCount": 2025,
+    "eventCount": 2040,
     "quarantinedEventCount": 16
   },
   "institution": {
@@ -20,16 +20,17 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
-    "first_disclosed_at": "2026-04-16",
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2026-04-02",
     "latest_disclosed_at": "2026-04-16",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "other",
       "pre_series_a"
     ],
     "portfolio_companies": [
@@ -37,6 +38,11 @@
         "entity_id": "EN-39ba5f9dcab4e98a",
         "canonical_entity_id": "EN-39ba5f9dcab4e98a",
         "name": "它石智航"
+      },
+      {
+        "entity_id": "EN-a6e5382c05dd0d16",
+        "canonical_entity_id": "",
+        "name": "星海图"
       }
     ],
     "activities": [
@@ -115,6 +121,44 @@
             "quote_hash": "ad0a3e590ffa110b3cf74a5f62e58f3e387290b3c658e3f5c91e312af6a29fd6"
           }
         ]
+      },
+      {
+        "activity_id": "IA-570d93b05b18f36e",
+        "funding_insight_id": "FI-af2461a497e30ffa",
+        "event_ids": [
+          "EV-435d7e7878b0c326"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "",
+        "company_name": "星海图",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "B+轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿人民币"
+        },
+        "announced_at": "2026-04-02",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-dd387948ae711f72",
+            "source_url": "https://companies.caixin.com/m/2026-04-02/102430123.html",
+            "source_title": "星海图完成20亿元B+轮融资",
+            "source_content_hash": "3702873b1eb4ff8e5e57340525e023aaebb06221f09393a8e2e6a2cdaa7d70cd",
+            "quote": "私募股权基金则包括 中金资本 旗下基金、 普华资本 、 洪泰基金 、广发乾",
+            "quote_hash": "3bdc1a33ff6a55bff382b7f49d6a83110fe46742929cbd7b25b235b1c4903305"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -133,6 +177,14 @@
         "source_content_hash": "9bc3ee36ffea717f",
         "quote": "线性资本、恒旭资本、洪泰基金、联想创投、襄禾资本、高瓴创投跟投",
         "quote_hash": "ad0a3e590ffa110b3cf74a5f62e58f3e387290b3c658e3f5c91e312af6a29fd6"
+      },
+      {
+        "source_id": "FISRC-dd387948ae711f72",
+        "source_url": "https://companies.caixin.com/m/2026-04-02/102430123.html",
+        "source_title": "星海图完成20亿元B+轮融资",
+        "source_content_hash": "3702873b1eb4ff8e5e57340525e023aaebb06221f09393a8e2e6a2cdaa7d70cd",
+        "quote": "私募股权基金则包括 中金资本 旗下基金、 普华资本 、 洪泰基金 、广发乾",
+        "quote_hash": "3bdc1a33ff6a55bff382b7f49d6a83110fe46742929cbd7b25b235b1c4903305"
       }
     ]
   }

@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2040,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-7179237057bf67",
+    "name": "量图智策",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-07-01",
+    "latest_disclosed_at": "2026-07-01",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "infrastructure"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-8b332ded81dc8d3a",
+        "canonical_entity_id": "",
+        "name": "光轮智能"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-cf3d4d45fbf7148c",
+        "funding_insight_id": "FI-d94dd0bea44a17d1",
+        "event_ids": [
+          "EV-e59938ae531af428"
+        ],
+        "company_entity_id": "EN-8b332ded81dc8d3a",
+        "company_canonical_entity_id": "",
+        "company_name": "光轮智能",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿人民币"
+        },
+        "announced_at": "2026-07-01",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8787a3d3602feb17",
+            "source_url": "https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202607/t20260701_250581.html",
+            "source_title": "光轮智能完成新一轮10亿元融资，加速物理AI数据与评测基础设施",
+            "source_content_hash": "20bb1f5550c82ab572303b31d101c327f03c9d8cc9fa77681017d9005da78fe3",
+            "quote": "以及巨人网络、宇信科技、宝通科技、中科产投、量图智策等产业资本及财务投资机构",
+            "quote_hash": "71792afe8c027b27e57bfc0819ab1d5d99a6ee5f1e108cb5f6f6b312377c3cee"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-8787a3d3602feb17",
+        "source_url": "https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202607/t20260701_250581.html",
+        "source_title": "光轮智能完成新一轮10亿元融资，加速物理AI数据与评测基础设施",
+        "source_content_hash": "20bb1f5550c82ab572303b31d101c327f03c9d8cc9fa77681017d9005da78fe3",
+        "quote": "以及巨人网络、宇信科技、宝通科技、中科产投、量图智策等产业资本及财务投资机构",
+        "quote_hash": "71792afe8c027b27e57bfc0819ab1d5d99a6ee5f1e108cb5f6f6b312377c3cee"
+      }
+    ]
+  }
+}

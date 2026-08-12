@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2040,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-7ff3d0c65b9e70",
+    "name": "九坤创投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "first_disclosed_at": "2026-06-15",
+    "latest_disclosed_at": "2026-07-06",
+    "role_counts": {
+      "participant": 2
+    },
+    "round_codes": [
+      "multi_round",
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-bbc41366a5a7cf78",
+        "canonical_entity_id": "",
+        "name": "北京星动纪元科技有限公司"
+      },
+      {
+        "entity_id": "EN-a5e5f031b6f878cf",
+        "canonical_entity_id": "",
+        "name": "杭州微纳核芯电子科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-f2011a45af2bc9ab",
+        "funding_insight_id": "FI-f7342735e68375d9",
+        "event_ids": [
+          "EV-6ca567f6e80c36c5"
+        ],
+        "company_entity_id": "EN-bbc41366a5a7cf78",
+        "company_canonical_entity_id": "",
+        "company_name": "北京星动纪元科技有限公司",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿人民币"
+        },
+        "announced_at": "2026-07-06",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8c073d38e1f34758",
+            "source_url": "https://news.pedaily.cn/202607/565883.shtml",
+            "source_title": "星动纪元完成10亿元新一轮融资",
+            "source_content_hash": "e02c1ade45f42e1ffa8e8febb36bda148ac558a328eb4ce356fcab3775bb04d2",
+            "quote": "中金雷诺、九坤创投、弘毅投资、君泰资本、盛赫资本跟投",
+            "quote_hash": "22bc315d01774242dc10b68af7a908fac6217710a0edd85957554dbd4dc6c9e8"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-7f8fb9097187d624",
+        "funding_insight_id": "FI-6ada8d4502daa530",
+        "event_ids": [
+          "EV-e0a31302688c81ec"
+        ],
+        "company_entity_id": "EN-a5e5f031b6f878cf",
+        "company_canonical_entity_id": "",
+        "company_name": "杭州微纳核芯电子科技有限公司",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "超10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": 1000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 10 亿人民币"
+        },
+        "announced_at": "2026-06-15",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b96684face6f5223",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
+            "source_title": "微纳核芯完成超10亿元B轮系列融资",
+            "source_content_hash": "3001d7761836998ad785b02a8753e10abd430afc8267dd715a690f318b1cff60",
+            "quote": "两轮融资聚集央企产业资本 中国移动 链长基金、 超越摩尔 、 江城基金 、 佰维存储 、九坤创投、知名大模型公司等头部产业投资方",
+            "quote_hash": "2c7a017683a1b0f38e874bdd012938f92c6ee4e7adca7b335d3537ae2cd74b61"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-8c073d38e1f34758",
+        "source_url": "https://news.pedaily.cn/202607/565883.shtml",
+        "source_title": "星动纪元完成10亿元新一轮融资",
+        "source_content_hash": "e02c1ade45f42e1ffa8e8febb36bda148ac558a328eb4ce356fcab3775bb04d2",
+        "quote": "中金雷诺、九坤创投、弘毅投资、君泰资本、盛赫资本跟投",
+        "quote_hash": "22bc315d01774242dc10b68af7a908fac6217710a0edd85957554dbd4dc6c9e8"
+      },
+      {
+        "source_id": "FISRC-b96684face6f5223",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
+        "source_title": "微纳核芯完成超10亿元B轮系列融资",
+        "source_content_hash": "3001d7761836998ad785b02a8753e10abd430afc8267dd715a690f318b1cff60",
+        "quote": "两轮融资聚集央企产业资本 中国移动 链长基金、 超越摩尔 、 江城基金 、 佰维存储 、九坤创投、知名大模型公司等头部产业投资方",
+        "quote_hash": "2c7a017683a1b0f38e874bdd012938f92c6ee4e7adca7b335d3537ae2cd74b61"
+      }
+    ]
+  }
+}

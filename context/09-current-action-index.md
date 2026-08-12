@@ -19,7 +19,7 @@ priority: current
 | Hardware projection | `HARDWARE-V1.0` |
 | Opportunity Map evidence | `OMAP-V2.0.0-v4-evidence` |
 | Trend Radar | `TRADAR-V1.1.0-tag-v4-1` |
-| Funding Insights | `FUNDING-INSIGHT-V1.4.0-financing-fields` |
+| Funding Insights | `FUNDING-INSIGHT-V1.5.0-china-market` |
 | AI financing site / weekly and monthly reports | `REPORTS-V1.3.0-funding-portal` |
 | Operations telemetry and health | `OPS-V2.0.0-v4-telemetry` |
 | First-Line Viewpoints | independent `O` lane |

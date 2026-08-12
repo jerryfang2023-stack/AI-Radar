@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2040,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-040a62f4dec96b52",
+    "name": "京企生数科技",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-535c2f4fb851332d"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-02-08",
+    "lastSeen": "2026-08-03",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-535c2f4fb851332d"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-535c2f4fb851332d",
+        "dataDate": "2026-08-03",
+        "date": "2026-02-08",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "生数科技完成超6亿元A+轮融资",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-9b21c9bf3305c0d6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0af47f8ae92f26c0",
+            "fundingInsightId": "FI-015dfc42087380a4"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "development_deployment",
+            "name": "开发与部署",
+            "entityIds": [
+              "EN-9b21c9bf3305c0d6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-455ba7c1e15cb6a6",
+            "fundingInsightId": "FI-015dfc42087380a4"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "models",
+            "name": "模型",
+            "entityIds": [
+              "EN-9b21c9bf3305c0d6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-56c72a9a23b6b040",
+            "fundingInsightId": "FI-015dfc42087380a4"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model_api_service",
+            "name": "模型 API 服务",
+            "entityIds": [
+              "EN-9b21c9bf3305c0d6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-db6dee9f6ab07946",
+            "fundingInsightId": "FI-015dfc42087380a4"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-9b21c9bf3305c0d6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-23968e5dae5de51d",
+            "fundingInsightId": "FI-015dfc42087380a4"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "media_entertainment",
+            "name": "媒体与娱乐",
+            "entityIds": [
+              "EN-9b21c9bf3305c0d6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ae93b9d9775fd47f",
+            "fundingInsightId": "FI-015dfc42087380a4"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-9b21c9bf3305c0d6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a06846599207026e",
+            "fundingInsightId": "FI-015dfc42087380a4"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-9b21c9bf3305c0d6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ec18c6e76d34a80f",
+            "fundingInsightId": "FI-015dfc42087380a4"
+          }
+        ],
+        "entityIds": [
+          "EN-040a62f4dec96b52",
+          "EN-9b21c9bf3305c0d6"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

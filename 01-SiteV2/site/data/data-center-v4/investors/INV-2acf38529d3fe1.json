@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T11:50:37.684Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2040,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-2acf38529d3fe1",
+    "name": "清智资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-03-25",
+    "latest_disclosed_at": "2026-03-25",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-317b488c426cb7d5",
+        "funding_insight_id": "FI-c3bce60cc6406ae5",
+        "event_ids": [
+          "EV-e6a4e0785ebb268a"
+        ],
+        "company_entity_id": "EN-be8f311b8bb47e9c",
+        "company_canonical_entity_id": "",
+        "company_name": "华深智药科技（北京）有限公司",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "7.87亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 787000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7.87 亿美元"
+        },
+        "announced_at": "2026-03-25",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮及A轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-972ef11d09af7ec8",
+            "source_url": "https://vc.pedaily.cn/company/205217.html",
+            "source_title": "华深智药完成7.87亿美元B轮融资",
+            "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
+            "quote": "天使轮融资：金额 千万级美元 ，投资方为襄禾资本、高瓴创投、清智资本",
+            "quote_hash": "9fe140fe0cff27185eab494a33c5b77f61f0691c72d2cd05a55500025f1e01d7"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-972ef11d09af7ec8",
+        "source_url": "https://vc.pedaily.cn/company/205217.html",
+        "source_title": "华深智药完成7.87亿美元B轮融资",
+        "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
+        "quote": "天使轮融资：金额 千万级美元 ，投资方为襄禾资本、高瓴创投、清智资本",
+        "quote_hash": "9fe140fe0cff27185eab494a33c5b77f61f0691c72d2cd05a55500025f1e01d7"
+      }
+    ]
+  }
+}

@@ -5,13 +5,13 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-08T04:17:59.530Z",
+    "generated_at": "2026-08-12T11:49:37.510Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 252,
-    "input_hash": "fbe4513f129eebe0",
+    "decision_count": 271,
+    "input_hash": "2bfec4f01d0677cd",
     "override_count": 17,
     "needs_review_count": 0,
     "low_confidence_count": 0
@@ -4968,46 +4968,631 @@
       "confidence": 0.95,
       "needs_review": false,
       "rationale": "Olix Computing is developing AI chips (DX-1) and data center appliances (X-1), which clearly fall under infrastructure_compute > hardware_computing > chips. The product form is chip_accelerator. Target users are developers who will build on this hardware. No specific use case or industry is mentioned, so those arrays are left empty."
+    },
+    {
+      "event_id": "EV-535c2f4fb851332d",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model_api_service",
+      "use_case_ids": [
+        "content_creation"
+      ],
+      "industry_ids": [
+        "media_entertainment"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Company provides a multimodal video generation foundation model (Vidu) via API/SaaS, fitting infrastructure_compute > development_deployment > models. Product form is model_api_service. Primary use case is content creation, industry is media/entertainment, and target users include developers and business users."
+    },
+    {
+      "event_id": "EV-6ca567f6e80c36c5",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "logistics_supply_chain",
+        "manufacturing",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "星动纪元的产品（星动L7、星动XHAND1、星动Q5）均为物理世界中的机器人系统，能够感知、决策并执行物理动作（如分拣、递送、操作），符合Physical AI的定义。证据显示其在物流、工业分拣、门店服务等场景落地，非仅世界模型或未来规划。"
+    },
+    {
+      "event_id": "EV-4fbbf16279e27000",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_compute_system",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "证据显示公司研发分离式分布式AI计算架构，将FNN与注意力机制解耦并分配给不同硬件处理，属于为AI构建者提供计算基础设施，而非直接面向终端应用或单一行业。产品形态为AI计算系统而非芯片，因此归入infrastructure_compute > hardware_computing > computing_infrastructure。"
+    },
+    {
+      "event_id": "EV-e59938ae531af428",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "synthetic_data",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "physical_automation",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "automotive_transportation",
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "developer",
+        "researcher"
+      ],
+      "confidence": 0.92,
+      "needs_review": false,
+      "rationale": "光轮智能的核心产品是仿真数据与评测基础设施，为机器人等物理AI提供合成数据、仿真环境和评测工具，属于为AI构建者提供数据基础设施，而非直接控制物理世界的机器人。因此归入infrastructure_compute > data > synthetic_data。"
+    },
+    {
+      "event_id": "EV-e0a31302688c81ec",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [
+        "telecommunications",
+        "manufacturing",
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "微纳核芯提供存算一体AI推理芯片，属于硬件/计算基础设施，直接供应给终端厂商和云厂商用于大模型推理，符合infrastructure_compute > hardware_computing > chips。"
+    },
+    {
+      "event_id": "EV-e6a4e0785ebb268a",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "research_discovery",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "researcher",
+        "developer"
+      ],
+      "confidence": 0.93,
+      "needs_review": false,
+      "rationale": "华深智药专注于AI驱动的新药研发，产品围绕生物医药领域的专业数据、算法和工作流，属于行业应用而非通用基础设施，因此归入industry_applications > healthcare_life_sciences。"
+    },
+    {
+      "event_id": "EV-3a591b0f027f66cf",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "产品Maker H01是物理AGI原生通用机器人，在真实工业制造场景落地，并进入C端家庭社区，直接感知、决策并执行物理动作，符合Physical AI定义。"
+    },
+    {
+      "event_id": "EV-499a62114b0fd616",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "automotive_transportation",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "Maker H01为全栈自研物理AGI原生通用机器人，具备高自由度灵巧操作能力，已与一汽模具、红星美凯龙等企业合作，直接作用于物理世界，属于Physical AI。"
+    },
+    {
+      "event_id": "EV-a34447341a3872ed",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "Maker H01为物理AGI原生本体，面向工业与服务场景执行抓取、搬运等物理操作，并承担数据采集与模型训练，直接作用于物理世界，符合Physical AI。"
+    },
+    {
+      "event_id": "EV-794f921515af8e8b",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "software_development",
+        "research_discovery"
+      ],
+      "industry_ids": [
+        "telecommunications",
+        "automotive_transportation",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "墨芯人工智能是AI芯片设计商，核心产品为SparsePrime®、S30/S40计算卡，属于基础设施计算硬件中的芯片。产品形式为chip_accelerator，市场层级为infrastructure_compute > hardware_computing > chips。客户包括电信运营商、车企和商旅集团，因此行业覆盖电信、汽车和零售。目标用户为使用其计算卡进行模型部署和推理的开发者及企业用户。"
+    },
+    {
+      "event_id": "EV-800384d4fd2434a5",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Company designs high-performance RISC-V CPU cores and chiplets for servers. This is chip design (hardware_computing/chips) under infrastructure_compute. Product form is chip_accelerator. Target users are developers who build systems with these chips."
+    },
+    {
+      "event_id": "EV-e54bfac94961f4d2",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "data_preparation_curation",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "knowledge_search",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "产品为‘内生记忆模块’，属于大模型个性化记忆基础设施，为其他AI产品提供记忆数据层，符合infrastructure_compute定义。记忆模块本质是数据准备与整理，故归入data > data_preparation_curation。证据未限定单一行业，因此industry_ids为空。目标用户包括B端企业和C端消费者，对应business_user和consumer，同时作为基础设施也面向developer。"
+    },
+    {
+      "event_id": "EV-88a984b765bb54f1",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "content_creation",
+        "customer_support",
+        "knowledge_search"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "Company is a large model developer (心辰Lingo, Friday, 聊会小天). Core offering is models, matching the tuple [infrastructure_compute, development_deployment, models]. Product form is model. Use cases include content creation (Friday writing), customer support (conversational bots), and knowledge search (multi-modal input/output). Industries inferred from customers: healthcare (mental health platform 聊会小天) and retail/ecommerce (知衣科技). Target users include developers (model access), business users, and consumers (end-user apps)."
+    },
+    {
+      "event_id": "EV-435d7e7878b0c326",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "logistics_supply_chain",
+        "education"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "researcher",
+        "educator",
+        "student"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "公司当前产品R1 Pro和G0 Plus均为物理机器人系统，具备感知、决策和行动能力，直接作用于物理世界，符合Physical AI定义。尽管公司定位为“具身智能基座”，但现有产品已实现物理交互，非仅世界模型或未来规划。"
+    },
+    {
+      "event_id": "EV-cbce4f1f5187efcf",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "sales",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "sales",
+        "data_analysis"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "产品通过AI代理分析通话记录、邮件、日历等一手数据，构建关键关系图谱并标记交易风险，核心服务于销售团队的跨行业工作流，无物理世界感知与行动，非基础设施供应，且未限定单一行业，因此归入企业应用-销售。"
+    },
+    {
+      "event_id": "EV-c6cccaca326dfd45",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "research_discovery"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "researcher"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Discovered Materials provides an AI agent platform for discovering and accelerating adoption of new materials for semiconductor chips. This is an industry-specific application for industrials (semiconductor materials). The product is an enterprise software platform used for research and discovery, targeting researchers in manufacturing."
+    },
+    {
+      "event_id": "EV-b116eafe60d71fbe",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "telecommunications",
+        "automotive_transportation",
+        "aerospace_defense"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Lumilens produces optical networking chips (CPO, NPO, pluggable transceivers) for AI clusters, fitting infrastructure_compute / hardware_computing / chips. The product form is chip_accelerator. Use case is physical_automation as the chips enable large-scale AI compute infrastructure. Industries include manufacturing, telecommunications, automotive, and aerospace/defense where such high-performance networking is critical. Target users are developers and business users building/deploying AI infrastructure."
+    },
+    {
+      "event_id": "EV-cfbfc6c80338aa12",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "data_preparation_curation",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Mechanize 为 AI 实验室提供模拟工作环境与评估系统，用于训练和测试编程智能体，属于为其他 AI 产品构建者提供训练数据与评估基础设施，而非直接面向终端行业或企业应用，因此归入 infrastructure_compute > data > data_preparation_curation。"
+    },
+    {
+      "event_id": "EV-55e7c286e95be405",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model_api_service",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "River API 提供模型访问、强化学习与 LoRA 微调，面向开发者，属于模型即服务，不涉及物理世界感知决策，也不限定单一行业，因此归入基础设施计算下的开发部署-模型。"
     }
   ],
   "inputs": [
     {
-      "event_id": "EV-7a44a47bf36780d2",
-      "funding_insight_id": "FI-2cf3052d26bca65b",
-      "company_name": "壁仞科技",
-      "company_full_name": "上海壁仞科技股份有限公司",
-      "website": "birentech.com",
-      "current_sector": "半导体与集成电路",
+      "event_id": "EV-9300044a58395552",
+      "funding_insight_id": "FI-27f66cc32481ad8e",
+      "company_name": "8090 Labs",
+      "company_full_name": "8090 Labs",
+      "website": "8090.ai",
+      "current_sector": "企业 AI 编码与软件交付",
       "company_evidence_quotes": [
-        "壁仞科技致力于开发原创性的通用计算体系，建立高效的软硬件平台，同时在智能计算领域提供一体化的解决方案。从发展路径上，壁仞科技将首先聚焦云端通用智能计算，逐步在人工智能训练和推理、图形渲染、高性能通用计算等多个领域赶超现有解决方案，实现国产高端通用智能计算芯片的突破。"
+        "The company, 8090 Labs, closed a $135 million round",
+        "8090 Labs, closed a $135 million round led by Salesforce Ventures"
       ],
       "products": [
         {
-          "name": "壁砺系列通用GPU算力产品",
+          "name": "Software Factory",
           "evidence_quotes": [
-            "壁仞科技的壁砺系列通用GPU算力产品为该智算中心提供了算力支撑",
-            "壁仞已开发出 壁砺106、壁砺110 两款芯片。壁砺106用于训练和推理，支持虚拟化和硬件安全引擎；壁砺110用于边缘推理，能效优化，适用于工控、机器人等场景。"
-          ]
-        },
-        {
-          "name": "BIRENSUPA软件平台",
-          "evidence_quotes": [
-            "另一块产品是自研 BIRENSUPA软件平台 ，搭建于其GPGPU之上，用于开发AI应用程序。"
-          ]
-        },
-        {
-          "name": "异构GPU协同训练方案HGCT",
-          "evidence_quotes": [
-            "壁仞科技首次公布了异构GPU协同训练方案，这是中国首个三种异构芯片混训技术，支持3种及以上异构GPU混合训练同一个大模型（壁仞GPU+英伟达GPU+其他国产芯片）。",
-            "壁仞科技首次公布其自主原创的异构GPU协同训练方案HGCT，异构协同 通信 效率大于98%、端到端训练效率90-95%"
+            "Its product, Software Factory, helps corporate coders use AI to build production-quality software, not just vibe-coded prototypes, with all the controls enterprises need, such as audit trails",
+            "Software Factory brings people and AI agents into a single collaborative environment, connecting business intent, requirements, architecture, work orders, code, testing, and production maintenance."
           ]
         }
       ],
       "customer_names": [
-        "中国移动",
-        "中国电信",
-        "平安集团",
-        "商汤科技"
+        "一家上市健康保险公司",
+        "一家生命科学客户",
+        "一家制造商"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
+      "event_id": "EV-535c2f4fb851332d",
+      "funding_insight_id": "FI-015dfc42087380a4",
+      "company_name": "北京生数科技有限公司",
+      "company_full_name": "北京生数科技有限公司",
+      "website": "https://www.shengshu.com",
+      "current_sector": "多模态视频生成大模型",
+      "company_evidence_quotes": [
+        "2022年9月提出U-ViT架构（比OpenAI的DiT架构早三个月），2023年3月生数科技成立，2024年4月在中关村论坛上发布中国首个全面对标Sora的文生视频大模型Vidu",
+        "生数科技已构建起Vidu MaaS、Vidu SaaS、Vidu Agent、Vidu APP的应用矩阵，赋能全球范围的内容创作者、内容机构和内容行业企业"
+      ],
+      "products": [
+        {
+          "name": "Vidu",
+          "evidence_quotes": [
+            "Vidu全球首创“参考生视频”技术，率先解决了商业级视频需求中的多主体连续一致性难题",
+            "Vidu Q3模型，是全球首个“为剧而生”的视频模型，支持16S声画同出、1080P高清画质、丰富的镜头语言、精准切镜、多国文字渲染和多语言输出"
+          ]
+        }
+      ],
+      "customer_names": [
+        "索尼电影",
+        "字节跳动",
+        "京东集团",
+        "莉莉丝",
+        "三星"
+      ],
+      "current_classification": {
+        "product_form_id": "model_api_service",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-be59d9048dd1b6a0",
+      "funding_insight_id": "FI-ca07008ee604703d",
+      "company_name": "北京小雨智造科技有限公司",
+      "company_full_name": "北京小雨智造科技有限公司",
+      "website": "",
+      "current_sector": "工业具身智能",
+      "company_evidence_quotes": [
+        "小雨智造成立于 2023 年，总部位于北京海淀区，是一家通用人工智能机器人研发科技公司。",
+        "小雨智造致力于打造“一脑多形”的通用机器人大脑及工业应用产品，首先聚焦于智能焊接场景，产品已被多家战略客户应用，已达量产交付阶段。"
+      ],
+      "products": [
+        {
+          "name": "Xiaoyu Brain",
+          "evidence_quotes": [
+            "小雨智造核心产品为自主研发的通用机器人大脑「Xiaoyu Brain」，可使机器人能够在工业环境中执行多种任务，核心优势在于「高精度、高鲁棒性、高泛化性」。"
+          ]
+        },
+        {
+          "name": "智能焊接机器人",
+          "evidence_quotes": [
+            "双方明确，将围绕“具身智能+钢结构焊接”领域，在未来1年内共同推进1000台级具身智能焊接机器人的规模化应用"
+          ]
+        }
+      ],
+      "customer_names": [
+        "唐山松下",
+        "某重工龙头企业"
+      ],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-6ca567f6e80c36c5",
+      "funding_insight_id": "FI-4ec34f1bbcbe7514",
+      "company_name": "北京星动纪元科技有限公司",
+      "company_full_name": "北京星动纪元科技有限公司",
+      "website": "robotera.com",
+      "current_sector": "具身智能",
+      "company_evidence_quotes": [
+        "星动纪元创立第 一天起就以AI Native驱动，构建起行业唯 一的\"数据-大脑-运控-灵巧手-本体\"全栈自研壁垒",
+        "星动纪元率先在物流场景实现行业首 个PMF（Product-Market Fit）"
+      ],
+      "products": [
+        {
+          "name": "星动L7",
+          "evidence_quotes": [
+            "全尺寸双足人形机器人星动L7",
+            "处理速度可达每小时1200多件"
+          ]
+        },
+        {
+          "name": "星动XHAND1",
+          "evidence_quotes": [
+            "星动XHAND 1（干活手），凭借全直驱技术架构实现精准力控与灵活操作，可适配多类型人形机器人平台",
+            "星动XHAND 1目前已经广泛覆盖工业分拣、常规作业等多元场景需求，成为全球机器人厂商的共同选择"
+          ]
+        },
+        {
+          "name": "星动Q5",
+          "evidence_quotes": [
+            "星动Q5超拟人服务机器人已在海尔、联想、世纪金源等场景落地，提供门店引流、导览讲解、商品递送等服务"
+          ]
+        }
+      ],
+      "customer_names": [
+        "顺丰",
+        "中国邮政",
+        "三星",
+        "联想",
+        "海尔"
+      ],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-4fbbf16279e27000",
+      "funding_insight_id": "FI-debe51463ab9b007",
+      "company_name": "昉擎科技",
+      "company_full_name": "昉擎科技",
+      "website": "",
+      "current_sector": "人工智能计算系统与芯片",
+      "company_evidence_quotes": [
+        "昉擎科技成立于2023年初，由行业内资深团队创立，专注基于分离式架构的智能计算系统研发。",
+        "上海昉擎科技有限公司成立于2022年9月，聚焦于解耦的分布式AI计算架构"
+      ],
+      "products": [
+        {
+          "name": "分离式架构智能计算系统",
+          "evidence_quotes": [
+            "专注基于分离式架构的智能计算系统研发",
+            "提出了一种新技术方向：“上下文相关”（context aware）与 “上下文无关”（context free）解耦的分布式计算架构，即将前馈神经网络（Feed-Forward Network, FNN）与注意力机制（Attention）解耦为两个独立模块，将它们分配给最适合的硬件架构来做分布式处理"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-e59938ae531af428",
+      "funding_insight_id": "FI-1531f01b7ac1dd9a",
+      "company_name": "光轮智能",
+      "company_full_name": "光轮智能",
+      "website": "",
+      "current_sector": "物理AI数据与仿真基础设施",
+      "company_evidence_quotes": [
+        "光轮智能完成新一轮10亿元融资，加速物理AI数据与评测基础设施",
+        "光轮智能成立于2023年，总部位于北京海淀，致力于构建物理AI时代仿真基础设施。"
+      ],
+      "products": [
+        {
+          "name": "EgoSuite",
+          "evidence_quotes": [
+            "EgoSuite 面向人类行为数据，沉淀高质量、规模化、跨本体的人类操作经验。它记录的不是简单动作，而是人在真实世界中的观察、操作、纠错和长程任务经验，为机器人提供可规模化学习素材。"
+          ]
+        },
+        {
+          "name": "RoboFinals",
+          "evidence_quotes": [
+            "RoboFinals 面向工业级规模化评测，通过标准化任务、可复现环境和可比较指标，判断机器人模型学会了什么、能力边界在哪里、失败模式是什么，并反向定义下一轮数据需求。"
+          ]
+        },
+        {
+          "name": "SimFoundry",
+          "evidence_quotes": [
+            "SimFoundry解决的是更底层的问题：如何把真实世界规模化转化为机器人能够学习、训练和验证的仿真世界。依托“求解-测量-生成”三位一体全栈自研仿真平台，SimFoundry将真实世界中的物理属性、场景分布和任务经验，转化为可执行、可训练、可评测的仿真数据与场景，支撑数据生成、训练验证和评测迭代。"
+          ]
+        }
+      ],
+      "customer_names": [
+        "英伟达",
+        "谷歌",
+        "字节跳动",
+        "阿里巴巴",
+        "智元机器人"
+      ],
+      "current_classification": {
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-e0a31302688c81ec",
+      "funding_insight_id": "FI-45cab93e2b3807d7",
+      "company_name": "杭州微纳核芯电子科技有限公司",
+      "company_full_name": "杭州微纳核芯电子科技有限公司",
+      "website": "https://nanocorechip.com",
+      "current_sector": "AI芯片/存算一体",
+      "company_evidence_quotes": [
+        "微纳核芯成立于2021年，创造了三维存算一体3D-CIM™芯片技术体系，破解了“高性能+低功耗+低成本”不可能三角，为AI手机、AI PC、IoT、一体机、服务器、机器人等大模型推理应用提供高性能、低功耗和极致性价比的芯片解决方案。",
+        "浙江省杭州市萧山区"
+      ],
+      "products": [
+        {
+          "name": "PCIe-CIM™系列",
+          "evidence_quotes": [
+            "PCIe-CIM™系列：面向AI手机、AI PC、云侧智算中心、一体机的大模型推理协处理器，已完成核心研发与仿真验证，技术路线获头部终端厂商和云厂商认可。"
+          ]
+        },
+        {
+          "name": "LP-CIM™系列",
+          "evidence_quotes": [
+            "LP-CIM™系列：全球领先的近存+存算解决方案，与存储原厂深度协同为端侧AI提供极致能效比方案，产品化进程稳步推进。"
+          ]
+        }
+      ],
+      "customer_names": [
+        "主流手机客户",
+        "数家端侧大模型公司",
+        "数家云厂商和服务器厂商"
       ],
       "current_classification": {
         "product_form_id": "chip_accelerator",
@@ -5017,7 +5602,7 @@
     {
       "event_id": "EV-e9d06e8a06aa7318",
       "funding_insight_id": "FI-becfe4a1ce0f6353",
-      "company_name": "昆仑元AI",
+      "company_name": "湖南昆仑元人工智能应用软件有限公司",
       "company_full_name": "湖南昆仑元人工智能应用软件有限公司",
       "website": "",
       "current_sector": "人工智能基础设施",
@@ -5057,36 +5642,158 @@
       }
     },
     {
-      "event_id": "EV-d3fcd1ea4d9baf47",
-      "funding_insight_id": "FI-a82e27d4fcaec369",
-      "company_name": "乐享科技",
-      "company_full_name": "苏州乐享智能科技有限公司",
-      "website": "",
-      "current_sector": "家庭具身智能",
+      "event_id": "EV-e6a4e0785ebb268a",
+      "funding_insight_id": "FI-e07e79cd7ac006d8",
+      "company_name": "华深智药科技（北京）有限公司",
+      "company_full_name": "华深智药科技（北京）有限公司",
+      "website": "https://www.huashen.bio/",
+      "current_sector": "AI+生物医药（AI药物研发）",
       "company_evidence_quotes": [
-        "家庭具身智能厂商苏州乐享智能科技有限公司（下称“乐享科技”）2日宣布完成近5亿元Pre-A轮融资"
+        "华深智药成立于2021年6月，是一家基于先进人工智能技术的新药开发企业。",
+        "华深智药科技（北京）有限公司成立于2021年6月，专注打造新一代人工智能科学计算平台，并结合自研高通量生物实验技术，为药物研发人员提供微观世界分子计算、模拟与设计的智能系统。"
       ],
       "products": [
         {
-          "name": "元点Zeroth Jupiter",
+          "name": "人工智能药物开发平台",
           "evidence_quotes": [
-            "全尺寸人形 机器人 Jupiter，目标是打造长期进入家庭、以伙伴形式存在的通用智能 机器人"
+            "华深智药的人工智能药物开发平台是基于大量公开及私有蛋白质结构及复合体结构数据，使用大规模几何深度学习算法驱动的新一代大分子结构建模计算平台。此平台包括蛋白质结构预测、蛋白质及抗体功能预测、大分子药关键区域建模，以及蛋白质序列设计等一系列算法及应用场景。"
           ]
         },
         {
-          "name": "元点Zeroth N1",
+          "name": "OmegaFold",
           "evidence_quotes": [
-            "家庭协作 机器人 N1，以异构机械臂方案、轻量化设计，探索率先进入家庭场景的协作 机器人 产品"
-          ]
-        },
-        {
-          "name": "元点Zeroth M1",
-          "evidence_quotes": [
-            "M1更作为全球首个进入家庭的具身智能机器人，也在近期成为了全球首个接入OpenClaw（小龙虾）的人形机器人"
+            "自主研发的基于几何深度学习的蛋白质结构预测算法，在蛋白质三维结构预测任务上精度已经达到世界先进水准，并且在抗体关键区域建模任务上精度更是大幅度超过AlphaFold2及RoseTTAFold等算法。",
+            "带领团队研发出全球首个单条序列蛋白质结构预测算法OmegaFold，技术精度达世界领先水平。"
           ]
         }
       ],
-      "customer_names": [],
+      "customer_names": [
+        "赛诺菲"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
+      "event_id": "EV-3a591b0f027f66cf",
+      "funding_insight_id": "FI-80221be8183b0abf",
+      "company_name": "极佳视界",
+      "company_full_name": "极佳视界",
+      "website": "",
+      "current_sector": "物理AGI/具身智能",
+      "company_evidence_quotes": [
+        "极佳视界在2026年完成多轮融资，累计35亿，估值破百亿。其90后团队凭“双金字塔”体系等成果，在物理AGI领域发展，产品落地C端家庭与B端工厂。"
+      ],
+      "products": [
+        {
+          "name": "GigaBrain系列",
+          "evidence_quotes": [
+            "GigaBrain-0：世界模型驱动的自研具身VLA大模型，在全球规模最大的真机评测RoboChallenge中以51.67%的任务成功率获全球冠军",
+            "GigaBrain-0 ：具身机器人的大脑，提供端到端的决策控制"
+          ]
+        },
+        {
+          "name": "GigaWorld系列",
+          "evidence_quotes": [
+            "世界生成模型则是理解、模拟并生成物理世界，为行动模型提供数据与仿真底座以及预训练参数",
+            "GigaWorld平台 ：世界模型平台（包括具身世界模型GigaWorld-0和驾驶世界模型）"
+          ]
+        },
+        {
+          "name": "Maker H01",
+          "evidence_quotes": [
+            "今年4月，极佳视界已推出了全栈自研物理AGI原生通用机器人Maker H01，并携手一汽模具、阿里云，完成了具身智能机器人在真实工业制造场景的全流程解决方案落地",
+            "Maker原生本体 ：物理AGI原生本体，包括Maker H01等"
+          ]
+        }
+      ],
+      "customer_names": [
+        "一汽模具",
+        "隆盛科技",
+        "武汉光谷之寓社区"
+      ],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-499a62114b0fd616",
+      "funding_insight_id": "FI-c4ab881a95a4ca9f",
+      "company_name": "极佳视界",
+      "company_full_name": "极佳视界",
+      "website": "",
+      "current_sector": "具身智能与世界模型",
+      "company_evidence_quotes": [
+        "极佳视界正式完成近15亿元B1轮融资"
+      ],
+      "products": [
+        {
+          "name": "GigaWorld",
+          "evidence_quotes": [
+            "GigaWorld-1更是在世界模型领域权威评测基准 WorldArena 中，击败谷歌、英伟达、阿里等国际科技巨头与学术机构的模型，荣登全球榜首"
+          ]
+        },
+        {
+          "name": "GigaBrain",
+          "evidence_quotes": [
+            "GigaBrain-0.5M*是全球首个基于世界模型的强化学习实现高效学习和自我进化的具身基模"
+          ]
+        },
+        {
+          "name": "Maker H01",
+          "evidence_quotes": [
+            "极佳视界推出了全栈自研物理AGI原生通用机器人Maker H01——仿人形高自由度硬件设计，全身具备 20 个以上自由度，配备多模态高精度感知系统，专为开放环境下的灵巧操作与移动交互任务设计"
+          ]
+        }
+      ],
+      "customer_names": [
+        "一汽模具",
+        "红星美凯龙",
+        "超过30家海内外头部汽车主机厂和自动驾驶公司"
+      ],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-a34447341a3872ed",
+      "funding_insight_id": "FI-48ac4ab985f440f4",
+      "company_name": "极佳视界",
+      "company_full_name": "极佳视界",
+      "website": "",
+      "current_sector": "具身智能与通用机器人",
+      "company_evidence_quotes": [
+        "极佳视界完成10亿元Pre-B轮融资，「世界模型」驱动通用机器人加速进入千行百业-36氪 极佳视界完成10亿元Pre-B轮融资，「世界模型」驱动通用机器人加速进入千行百业 目标物理世界的“OpenAI”。"
+      ],
+      "products": [
+        {
+          "name": "GigaBrain系列具身基模",
+          "evidence_quotes": [
+            "基模GigaBrain系列作为极佳视界研发的具身机器人大脑，提供端到端的决策控制。通过VLA模型架构，该系列支持图像、深度、文本、本体状态的输入，输出结构化的任务规划和运动规划。",
+            "开源模型GigaBrain-0.1，还在全球目前规模最大的真机评测比赛RoboChallenge，超越Pi0.5等众多模型，获得第一名。"
+          ]
+        },
+        {
+          "name": "GigaWorld-Policy世界动作模型",
+          "evidence_quotes": [
+            "GigaWorld-Policy改变了这一逻辑：它在训练阶段学习“动作会导致什么画面”，但在实际工作时直接输出动作，跳过画面预测环节，从而让机器人的思考速度提升了10倍，同时任务成功率提高了约30%。",
+            "在抓取、装配、整理等典型任务测试中，GigaWorld-Policy的平均成功率已达85%，远超主流模型"
+          ]
+        },
+        {
+          "name": "Maker H01物理AGI原生本体",
+          "evidence_quotes": [
+            "2025年11月，极佳视界发布全栈自研物理AGI原生本体Maker H01",
+            "MakerH01面向工业与服务场景设计，采用双臂结构与移动底盘组合，可执行抓取、搬运等基础操作任务。同时，该机器人也承担数据采集与模型训练任务"
+          ]
+        }
+      ],
+      "customer_names": [
+        "湖北人形机器人创新中心"
+      ],
       "current_classification": {
         "product_form_id": "robotic_system",
         "market_category_id": "physical_ai"
@@ -5125,27 +5832,38 @@
       }
     },
     {
-      "event_id": "EV-b5dd10300e34f2d3",
-      "funding_insight_id": "FI-f839913295f10b32",
-      "company_name": "珞博智能",
-      "company_full_name": "上海珞博智能科技有限公司",
-      "website": "",
-      "current_sector": "AI潮玩与情感陪伴智能硬件",
+      "event_id": "EV-794f921515af8e8b",
+      "funding_insight_id": "FI-ec42f1b274d7e1b0",
+      "company_name": "墨芯人工智能科技（深圳）有限公司",
+      "company_full_name": "墨芯人工智能科技（深圳）有限公司",
+      "website": "http://www.moffettai.com/",
+      "current_sector": "AI芯片/稀疏计算",
       "company_evidence_quotes": [
-        "珞博智能成立于2024年，聚焦 AI 潮玩赛道，打造以AI 大模型技术为核心的新一代情感陪伴智能硬件。旗下首款产品Fuzozo芙崽自2025年7月国内上市以来，市场表现持续领跑行业。"
+        "AI芯片设计商「墨芯人工智能」获得近10亿人民币C轮融资",
+        "墨芯是一家致力于颠覆式创新的AI芯片设计商，采用领先于世界的稀疏化算法"
       ],
       "products": [
         {
-          "name": "Fuzozo芙崽",
+          "name": "SparsePrime®计算卡",
           "evidence_quotes": [
-            "芙崽是一款以AI大模型技术为核心，专注于为Z世代人群提供情感陪伴的AI 养成系潮玩，具备毛绒包挂的形态，方便随身携带，通过多模态交互与类宠物养成玩法，与用户建立长期情感羁绊。"
+            "核心产品SparsePrime®计算卡将于年内推出，基于自研Antoum 2.0架构，专为大模型与复杂推理场景优化，支持主流Transformer模型，配备完善工具链，可实现PyTorch/TensorFlow代码近乎零修改部署。"
+          ]
+        },
+        {
+          "name": "S30/S40计算卡",
+          "evidence_quotes": [
+            "此前，墨芯S30、S40计算卡在MLPerf™ Inference中连续三届夺冠，视觉、自然语言处理等任务上以远低于行业旗舰产品的功耗达成更优推理性能。"
           ]
         }
       ],
-      "customer_names": [],
+      "customer_names": [
+        "头部电信运营商",
+        "头部商旅酒店集团",
+        "头部车企"
+      ],
       "current_classification": {
-        "product_form_id": "ai_device",
-        "market_category_id": "industry_applications"
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -5206,44 +5924,6 @@
       "current_classification": {
         "product_form_id": "robotic_system",
         "market_category_id": "physical_ai"
-      }
-    },
-    {
-      "event_id": "EV-56da7cceeebc8bcf",
-      "funding_insight_id": "FI-f7366e3e4d37fc9d",
-      "company_name": "穹彻智能",
-      "company_full_name": "上海穹彻智能科技有限公司",
-      "website": "https://www.noematrix.ai",
-      "current_sector": "具身智能",
-      "company_evidence_quotes": [
-        "穹彻智能完成Pre-A轮融资获数亿元，助力人工智能走进真实世界 2024年9月6日 9月6日，具身智能领域初创公司穹彻智能（Noematrix，上海穹彻智能科技有限公司）宣布完成累计数亿元人民币的天使轮和Pre-A轮两轮融资。"
-      ],
-      "products": [
-        {
-          "name": "Noematrix Brain",
-          "evidence_quotes": [
-            "通用机器人智能大脑 Noematrix Brain 提供机器人具身智能相关的基础模型、原子技能、软件框架及开发者工具，助力实现更多通用智能机器人应用",
-            "作为穹彻智能的核心产品的穹彻具身大脑（Noematrix Brain），目前已具备指令推理分解、任务规划、物体分类、环境感知、自主导航和通用技能操作的全闭环能力。"
-          ]
-        },
-        {
-          "name": "Noematrix Toolchain",
-          "evidence_quotes": [
-            "具身工具链 Noematrix Toolchain 一站式具身工具链，实现具身机器人从数据采集、数据管理、模型训练、功能部署的闭环能力"
-          ]
-        },
-        {
-          "name": "CoMiner",
-          "evidence_quotes": [
-            "穹彻智能提出了无需脱产的“生产伴随”式数据采集方式，并研发了相应的数采系统。",
-            "CoMiner 伴随式数据采集套件"
-          ]
-        }
-      ],
-      "customer_names": [],
-      "current_classification": {
-        "product_form_id": "developer_tool",
-        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -5309,9 +5989,141 @@
       }
     },
     {
+      "event_id": "EV-7a44a47bf36780d2",
+      "funding_insight_id": "FI-2cf3052d26bca65b",
+      "company_name": "上海壁仞科技股份有限公司",
+      "company_full_name": "上海壁仞科技股份有限公司",
+      "website": "birentech.com",
+      "current_sector": "半导体与集成电路",
+      "company_evidence_quotes": [
+        "壁仞科技致力于开发原创性的通用计算体系，建立高效的软硬件平台，同时在智能计算领域提供一体化的解决方案。从发展路径上，壁仞科技将首先聚焦云端通用智能计算，逐步在人工智能训练和推理、图形渲染、高性能通用计算等多个领域赶超现有解决方案，实现国产高端通用智能计算芯片的突破。"
+      ],
+      "products": [
+        {
+          "name": "壁砺系列通用GPU算力产品",
+          "evidence_quotes": [
+            "壁仞科技的壁砺系列通用GPU算力产品为该智算中心提供了算力支撑",
+            "壁仞已开发出 壁砺106、壁砺110 两款芯片。壁砺106用于训练和推理，支持虚拟化和硬件安全引擎；壁砺110用于边缘推理，能效优化，适用于工控、机器人等场景。"
+          ]
+        },
+        {
+          "name": "BIRENSUPA软件平台",
+          "evidence_quotes": [
+            "另一块产品是自研 BIRENSUPA软件平台 ，搭建于其GPGPU之上，用于开发AI应用程序。"
+          ]
+        },
+        {
+          "name": "异构GPU协同训练方案HGCT",
+          "evidence_quotes": [
+            "壁仞科技首次公布了异构GPU协同训练方案，这是中国首个三种异构芯片混训技术，支持3种及以上异构GPU混合训练同一个大模型（壁仞GPU+英伟达GPU+其他国产芯片）。",
+            "壁仞科技首次公布其自主原创的异构GPU协同训练方案HGCT，异构协同 通信 效率大于98%、端到端训练效率90-95%"
+          ]
+        }
+      ],
+      "customer_names": [
+        "中国移动",
+        "中国电信",
+        "平安集团",
+        "商汤科技"
+      ],
+      "current_classification": {
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-800384d4fd2434a5",
+      "funding_insight_id": "FI-e6d74af9d7153ed8",
+      "company_name": "上海灵睿智芯计算技术有限公司",
+      "company_full_name": "上海灵睿智芯计算技术有限公司",
+      "website": "www.riscv-computing.com",
+      "current_sector": "半导体/芯片设计",
+      "company_evidence_quotes": [
+        "灵睿智芯2025年于上海张江成立，在北京、深圳设有分支机构，核心团队拥有国际大厂高端服务器处理器完整研发与先进工艺量产经验，企业定位全栈自研高端RISC-V CPU内核、芯粒及领域增强处理器",
+        "灵睿智芯成立于2025年1月，总部位于上海浦东张江，核心团队来自IBM，曾主导多代POWER服务器处理器研发，拥有近二十年高性能CPU架构设计与量产经验。"
+      ],
+      "products": [
+        {
+          "name": "P100",
+          "evidence_quotes": [
+            "国内首款智能体原生、服务器级高性能RISC-V CPU内核，全面支持RVA23 Profile，具备高性能、高并发、高可靠等特性。"
+          ]
+        }
+      ],
+      "customer_names": [
+        "维泛智能"
+      ],
+      "current_classification": {
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-b5dd10300e34f2d3",
+      "funding_insight_id": "FI-f839913295f10b32",
+      "company_name": "上海珞博智能科技有限公司",
+      "company_full_name": "上海珞博智能科技有限公司",
+      "website": "",
+      "current_sector": "AI潮玩与情感陪伴智能硬件",
+      "company_evidence_quotes": [
+        "珞博智能成立于2024年，聚焦 AI 潮玩赛道，打造以AI 大模型技术为核心的新一代情感陪伴智能硬件。旗下首款产品Fuzozo芙崽自2025年7月国内上市以来，市场表现持续领跑行业。"
+      ],
+      "products": [
+        {
+          "name": "Fuzozo芙崽",
+          "evidence_quotes": [
+            "芙崽是一款以AI大模型技术为核心，专注于为Z世代人群提供情感陪伴的AI 养成系潮玩，具备毛绒包挂的形态，方便随身携带，通过多模态交互与类宠物养成玩法，与用户建立长期情感羁绊。"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "ai_device",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
+      "event_id": "EV-56da7cceeebc8bcf",
+      "funding_insight_id": "FI-f7366e3e4d37fc9d",
+      "company_name": "上海穹彻智能科技有限公司",
+      "company_full_name": "上海穹彻智能科技有限公司",
+      "website": "https://www.noematrix.ai",
+      "current_sector": "具身智能",
+      "company_evidence_quotes": [
+        "穹彻智能完成Pre-A轮融资获数亿元，助力人工智能走进真实世界 2024年9月6日 9月6日，具身智能领域初创公司穹彻智能（Noematrix，上海穹彻智能科技有限公司）宣布完成累计数亿元人民币的天使轮和Pre-A轮两轮融资。"
+      ],
+      "products": [
+        {
+          "name": "Noematrix Brain",
+          "evidence_quotes": [
+            "通用机器人智能大脑 Noematrix Brain 提供机器人具身智能相关的基础模型、原子技能、软件框架及开发者工具，助力实现更多通用智能机器人应用",
+            "作为穹彻智能的核心产品的穹彻具身大脑（Noematrix Brain），目前已具备指令推理分解、任务规划、物体分类、环境感知、自主导航和通用技能操作的全闭环能力。"
+          ]
+        },
+        {
+          "name": "Noematrix Toolchain",
+          "evidence_quotes": [
+            "具身工具链 Noematrix Toolchain 一站式具身工具链，实现具身机器人从数据采集、数据管理、模型训练、功能部署的闭环能力"
+          ]
+        },
+        {
+          "name": "CoMiner",
+          "evidence_quotes": [
+            "穹彻智能提出了无需脱产的“生产伴随”式数据采集方式，并研发了相应的数采系统。",
+            "CoMiner 伴随式数据采集套件"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "developer_tool",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-ee38c30c00b2a754",
       "funding_insight_id": "FI-31c4a4d69230cf20",
-      "company_name": "如身机器人",
+      "company_name": "上海如身机器人科技有限公司",
       "company_full_name": "上海如身机器人科技有限公司",
       "website": "",
       "current_sector": "具身智能与智慧康养机器人",
@@ -5337,6 +6149,68 @@
       "customer_names": [
         "福寿康鹏海养护院"
       ],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-e54bfac94961f4d2",
+      "funding_insight_id": "FI-7ab08fda67c9a702",
+      "company_name": "深圳忆纪元科技有限公司",
+      "company_full_name": "深圳忆纪元科技有限公司",
+      "website": "memorax.net",
+      "current_sector": "大模型个性化记忆基础设施",
+      "company_evidence_quotes": [
+        "MemoraX AI 成立于 2026 年 3 月，是 大模型个性化记忆赛道技术革新推动者",
+        "MemoraX AI 选择回归 「人」 的本质。我们坚信，AI 的终极价值不仅在于提升生产力，更在于成为人类情感与记忆的数字载体。"
+      ],
+      "products": [
+        {
+          "name": "内生记忆模块",
+          "evidence_quotes": [
+            "预计在 未来 12 个月内 ，MemoraX AI 将推出 面向 B 端企业知识管理与 C 端个性化交互的首批标准化记忆产品",
+            "在最新的文本类记忆测试集 LoCoMo-Refined 上取得最强记忆性能（大幅领先第二名 30%），模型训练效率提升 400 倍"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-d3fcd1ea4d9baf47",
+      "funding_insight_id": "FI-a82e27d4fcaec369",
+      "company_name": "苏州乐享智能科技有限公司",
+      "company_full_name": "苏州乐享智能科技有限公司",
+      "website": "",
+      "current_sector": "家庭具身智能",
+      "company_evidence_quotes": [
+        "家庭具身智能厂商苏州乐享智能科技有限公司（下称“乐享科技”）2日宣布完成近5亿元Pre-A轮融资"
+      ],
+      "products": [
+        {
+          "name": "元点Zeroth Jupiter",
+          "evidence_quotes": [
+            "全尺寸人形 机器人 Jupiter，目标是打造长期进入家庭、以伙伴形式存在的通用智能 机器人"
+          ]
+        },
+        {
+          "name": "元点Zeroth N1",
+          "evidence_quotes": [
+            "家庭协作 机器人 N1，以异构机械臂方案、轻量化设计，探索率先进入家庭场景的协作 机器人 产品"
+          ]
+        },
+        {
+          "name": "元点Zeroth M1",
+          "evidence_quotes": [
+            "M1更作为全球首个进入家庭的具身智能机器人，也在近期成为了全球首个接入OpenClaw（小龙虾）的人形机器人"
+          ]
+        }
+      ],
+      "customer_names": [],
       "current_classification": {
         "product_form_id": "robotic_system",
         "market_category_id": "physical_ai"
@@ -5389,25 +6263,33 @@
       "event_id": "EV-876baa523eb93c4f",
       "funding_insight_id": "FI-1e51649b5063a864",
       "company_name": "无界动力",
-      "company_full_name": "无界动力（北京）技术研发有限公司",
+      "company_full_name": "无界动力",
       "website": "",
-      "current_sector": "具身智能机器人",
+      "current_sector": "具身智能",
       "company_evidence_quotes": [
-        "无界动力2025年创立于北京，专注于通用具身智能机器人核心技术研发与产业化应用，聚焦于构建机器人“通用大脑”与“操作智能”。"
+        "无界动力2025年创立于北京，专注于通用具身智能机器人核心技术研发与产业化应用，聚焦于构建机器人“通用大脑”与“操作智能”。",
+        "无界动力2025年创立于北京，聚焦构建机器人“通用大脑”与“操作智能”，以隐空间世界模型为核心打造MWA™通用具身大脑，为全球客户提供软硬一体的具身智能解决方案。"
       ],
       "products": [
         {
-          "name": "第二代机器人K15",
+          "name": "MWA™通用具身大脑",
           "evidence_quotes": [
-            "随着第二代机器人 K15 已开启批量投产，无界动力即将全面进入面向全球的交付周期。"
+            "区别于行业常见的VLA架构，无界动力选择以隐空间世界模型为核心，结合强化学习，构建原生于物理世界、完整预训练的具身通用大脑——MWA™。",
+            "MWA™在隐空间完成多模态信息的统一表征、训练与推理闭环，突破传统视觉感知的浅层局限，赋能具身智能大脑解构现实世界底层逻辑，认知客观世界物理规律与因果关系"
+          ]
+        },
+        {
+          "name": "首代机器人平台",
+          "evidence_quotes": [
+            "无界动力自研的首代机器人平台已进入客户场景实际应用，并与多家国内外头部企业达成战略级合作，同时已顺利完成第一阶段交付验证，同步启动在海外市场的部署落地。"
           ]
         }
       ],
       "customer_names": [
-        "远景科技",
+        "远景科技集团",
         "ZF LIFETEC",
         "欧摩威集团",
-        "国内外知名连锁咖啡品牌"
+        "国际知名连锁咖啡品牌"
       ],
       "current_classification": {
         "product_form_id": "robotic_system",
@@ -5415,33 +6297,77 @@
       }
     },
     {
-      "event_id": "EV-be59d9048dd1b6a0",
-      "funding_insight_id": "FI-ca07008ee604703d",
-      "company_name": "小雨智造",
-      "company_full_name": "北京小雨智造科技有限公司",
-      "website": "",
-      "current_sector": "工业具身智能",
+      "event_id": "EV-88a984b765bb54f1",
+      "funding_insight_id": "FI-08e798f440d06eda",
+      "company_name": "西湖心辰（杭州）科技有限公司",
+      "company_full_name": "西湖心辰（杭州）科技有限公司",
+      "website": "https://xinchenai.com/",
+      "current_sector": "模型",
       "company_evidence_quotes": [
-        "小雨智造成立于 2023 年，总部位于北京海淀区，是一家通用人工智能机器人研发科技公司。",
-        "小雨智造致力于打造“一脑多形”的通用机器人大脑及工业应用产品，首先聚焦于智能焊接场景，产品已被多家战略客户应用，已达量产交付阶段。"
+        "杭州大模型公司 西湖心辰 宣布完成 数亿元人民币B+轮融资",
+        "西湖心辰成立于 2021年7月 ，总部位于浙江杭州，依托 西湖大学 建立"
       ],
       "products": [
         {
-          "name": "Xiaoyu Brain",
+          "name": "心辰Lingo",
           "evidence_quotes": [
-            "小雨智造核心产品为自主研发的通用机器人大脑「Xiaoyu Brain」，可使机器人能够在工业环境中执行多种任务，核心优势在于「高精度、高鲁棒性、高泛化性」。"
+            "国内首个对标GPT-4o的端到端通用语音大模型——心辰Lingo",
+            "西湖心辰推出了心辰Lingo语音大模型，该模型不仅实现了端到端，还具有超级拟人、实时打断、实时控制等特点。"
           ]
         },
         {
-          "name": "智能焊接机器人",
+          "name": "聊会小天",
           "evidence_quotes": [
-            "双方明确，将围绕“具身智能+钢结构焊接”领域，在未来1年内共同推进1000台级具身智能焊接机器人的规模化应用"
+            "免费心理咨询平台 “聊会小天”",
+            "重点对其 “倾听” 和 “共情” 能力做了研发，让模型可以敏锐捕捉用户的语气、节奏和情绪，并以最接近人类表达、人类语音的形式进行对话，还能随时被打断，目前已能达到中级心理咨询师的水平。"
+          ]
+        },
+        {
+          "name": "Friday",
+          "evidence_quotes": [
+            "智能写作产品「Friday」",
+            "Friday还内置了对话式机器人产品，已实现联网和多模态输入/输出功能。"
           ]
         }
       ],
       "customer_names": [
-        "唐山松下",
-        "某重工龙头企业"
+        "汤姆猫",
+        "杭州知衣科技有限公司"
+      ],
+      "current_classification": {
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-435d7e7878b0c326",
+      "funding_insight_id": "FI-601cf2f3207424d6",
+      "company_name": "星海图",
+      "company_full_name": "星海图",
+      "website": "",
+      "current_sector": "具身智能/机器人",
+      "company_evidence_quotes": [
+        "人形机器人公司星海图",
+        "星海图的定位并非传统意义上的机器人整机厂商，它将自己定义为“具身智能基座公司”，致力于打造“大脑-身体-工具链”的全栈能力"
+      ],
+      "products": [
+        {
+          "name": "R1 Pro",
+          "evidence_quotes": [
+            "星海图的轮式机器人R1 Pro还为 蚂蚁集团 旗下 灵波科技 的开源具身大模型LingBot-VLA提供了硬件支持",
+            "R1 Pro 旗舰轮式双臂 26 DOF 场景落地，极致性能"
+          ]
+        },
+        {
+          "name": "G0 Plus",
+          "evidence_quotes": [
+            "在2026年1月推出其升级版G0 Plus，定位为开箱即用的VLA（视觉-语言-动作）模型"
+          ]
+        }
+      ],
+      "customer_names": [
+        "蚂蚁集团旗下灵波科技",
+        "全球高校、研究机构及企业"
       ],
       "current_classification": {
         "product_form_id": "robotic_system",
@@ -5451,7 +6377,7 @@
     {
       "event_id": "EV-d2409770301edc83",
       "funding_insight_id": "FI-e661b87a377fd997",
-      "company_name": "银河通用",
+      "company_name": "银河通用机器人",
       "company_full_name": "银河通用机器人",
       "website": "",
       "current_sector": "具身智能",
@@ -5487,7 +6413,7 @@
     {
       "event_id": "EV-af8e95dbe06ac083",
       "funding_insight_id": "FI-3da519dabfb33915",
-      "company_name": "智平方",
+      "company_name": "智平方（AI² Robotics）",
       "company_full_name": "智平方（AI² Robotics）",
       "website": "",
       "current_sector": "具身智能机器人",
@@ -5591,6 +6517,37 @@
       }
     },
     {
+      "event_id": "EV-e12b17260d19c5ff",
+      "funding_insight_id": "FI-9396ebef5e196d53",
+      "company_name": "Adam",
+      "company_full_name": "Adam",
+      "website": "",
+      "current_sector": "AI 驱动的计算机辅助设计（CAD）",
+      "company_evidence_quotes": [
+        "Adam, a San Francisco, CA-based company building an AI-powered computer-aided design (CAD) tool"
+      ],
+      "products": [
+        {
+          "name": "文本转 3D 模型应用",
+          "evidence_quotes": [
+            "Its initial tool lets creators without CAD skills create 3D models from text prompts"
+          ]
+        },
+        {
+          "name": "AI CAD 智能体",
+          "evidence_quotes": [
+            "we blended in different interaction paradigms; for example, users selecting different parts of the 3D object and conversing with it",
+            "beginning with Onshape"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
       "event_id": "EV-4da1a7c4d527eb69",
       "funding_insight_id": "FI-3ffdd16ef6d6d628",
       "company_name": "Adapter",
@@ -5622,6 +6579,33 @@
       ],
       "current_classification": {
         "product_form_id": "developer_tool",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-cded77b1de2db61a",
+      "funding_insight_id": "FI-350ab8c2242d2052",
+      "company_name": "Advanced Machine Intelligence Labs (AMI Labs)",
+      "company_full_name": "Advanced Machine Intelligence Labs (AMI Labs)",
+      "website": "amilabs.ai",
+      "current_sector": "基础模型与通用人工智能",
+      "company_evidence_quotes": [
+        "Advanced Machine Intelligence Labs (AMI Labs), founded by Turing Award winner Yann LeCun following his departure from Meta"
+      ],
+      "products": [
+        {
+          "name": "基于JEPA的世界模型",
+          "evidence_quotes": [
+            "building world models based on LeCun’s Joint Embedding Predictive Architecture (JEPA), targeting industrial, robotic, and healthcare applications",
+            "A world model is an internal representation of how an environment behaves. Instead of asking a model to predict the next word, you ask it to predict the next state."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Nabla"
+      ],
+      "current_classification": {
+        "product_form_id": "model",
         "market_category_id": "infrastructure_compute"
       }
     },
@@ -5789,67 +6773,6 @@
       }
     },
     {
-      "event_id": "EV-a8dc5c859946f336",
-      "funding_insight_id": "FI-47f51070cf7333d0",
-      "company_name": "AI chip maker SambaNova",
-      "company_full_name": "SambaNova Systems",
-      "website": "",
-      "current_sector": "AI芯片/推理硬件",
-      "company_evidence_quotes": [
-        "AI chip company SambaNova Systems",
-        "the Palo Alto, California-based startup company"
-      ],
-      "products": [
-        {
-          "name": "SN40L",
-          "evidence_quotes": [
-            "SambaNova launched its SN40L in September 2023, available in the cloud, and on-premises from November 2023"
-          ]
-        },
-        {
-          "name": "SN50",
-          "evidence_quotes": [
-            "Its next-generation SN50, unveiled in February 2026, is due to begin shipping to customers in the second half of 2026",
-            "The company fits multi-trillion-parameter models onto a single rack which helps them run quickly."
-          ]
-        }
-      ],
-      "customer_names": [
-        "JPMorganChase",
-        "Saudi Aramco",
-        "Intel",
-        "SoftBank"
-      ],
-      "current_classification": {
-        "product_form_id": "chip_accelerator",
-        "market_category_id": "infrastructure_compute"
-      }
-    },
-    {
-      "event_id": "EV-8b0f056571d68269",
-      "funding_insight_id": "FI-0ffd6f7fbdda6b8c",
-      "company_name": "AI Startup",
-      "company_full_name": "Aivar Innovations",
-      "website": "",
-      "current_sector": "企业AI服务",
-      "company_evidence_quotes": [
-        "Founded in 2024, Aivar Innovations is an AI-first technology services startup"
-      ],
-      "products": [
-        {
-          "name": "Velogent",
-          "evidence_quotes": [
-            "Velogent, Aivar’s agentic process automation platform, is designed for regulated workflows such as invoice processing, contract reconciliation, and compliance-driven operations. Built on the startup’s proprietary REVACC (Reason, Validate, Act) framework, the platform ensures that AI-driven actions are explainable, validated before execution, and auditable after completion."
-          ]
-        }
-      ],
-      "customer_names": [],
-      "current_classification": {
-        "product_form_id": "enterprise_software_platform",
-        "market_category_id": "enterprise_applications"
-      }
-    },
-    {
       "event_id": "EV-ebc2aaa3bbb7a004",
       "funding_insight_id": "FI-879cbcbb622dbb9d",
       "company_name": "Aigentsphere",
@@ -5941,6 +6864,30 @@
       "current_classification": {
         "product_form_id": "ai_infrastructure_software",
         "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-8b0f056571d68269",
+      "funding_insight_id": "FI-0ffd6f7fbdda6b8c",
+      "company_name": "Aivar Innovations",
+      "company_full_name": "Aivar Innovations",
+      "website": "",
+      "current_sector": "企业AI服务",
+      "company_evidence_quotes": [
+        "Founded in 2024, Aivar Innovations is an AI-first technology services startup"
+      ],
+      "products": [
+        {
+          "name": "Velogent",
+          "evidence_quotes": [
+            "Velogent, Aivar’s agentic process automation platform, is designed for regulated workflows such as invoice processing, contract reconciliation, and compliance-driven operations. Built on the startup’s proprietary REVACC (Reason, Validate, Act) framework, the platform ensures that AI-driven actions are explainable, validated before execution, and auditable after completion."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -6064,100 +7011,6 @@
       }
     },
     {
-      "event_id": "EV-a00763037a94d512",
-      "funding_insight_id": "FI-75f3824ca5cb8cb3",
-      "company_name": "Amazon",
-      "company_full_name": "Odyssey ML",
-      "website": "",
-      "current_sector": "世界模型/物理AI",
-      "company_evidence_quotes": [
-        "Odyssey, a world model AI startup founded by self-driving vehicle pioneers CEO Oliver Cameron and CTO Jeff Hawke",
-        "Odyssey ML, co-founded by self-driving veterans Oliver Cameron and Jeff Hawke, is now valued at $1.45 billion including the new capital."
-      ],
-      "products": [
-        {
-          "name": "Odyssey-2",
-          "evidence_quotes": [
-            "Odyssey's flagship product, Odyssey-2, generates interactive simulations from text or image prompts with streaming latency under 50 milliseconds."
-          ]
-        },
-        {
-          "name": "Starchild-1",
-          "evidence_quotes": [
-            "Its Starchild-1 model includes audio and spatial reasoning simultaneously."
-          ]
-        },
-        {
-          "name": "Agora-1",
-          "evidence_quotes": [
-            "Agora-1 goes further: it lets multiple humans and AI agents interact inside the same simulated environment in real time."
-          ]
-        }
-      ],
-      "customer_names": [],
-      "current_classification": {
-        "product_form_id": "model",
-        "market_category_id": "infrastructure_compute"
-      }
-    },
-    {
-      "event_id": "EV-cded77b1de2db61a",
-      "funding_insight_id": "FI-350ab8c2242d2052",
-      "company_name": "AMI Labs",
-      "company_full_name": "Advanced Machine Intelligence Labs (AMI Labs)",
-      "website": "amilabs.ai",
-      "current_sector": "基础模型与通用人工智能",
-      "company_evidence_quotes": [
-        "Advanced Machine Intelligence Labs (AMI Labs), founded by Turing Award winner Yann LeCun following his departure from Meta"
-      ],
-      "products": [
-        {
-          "name": "基于JEPA的世界模型",
-          "evidence_quotes": [
-            "building world models based on LeCun’s Joint Embedding Predictive Architecture (JEPA), targeting industrial, robotic, and healthcare applications",
-            "A world model is an internal representation of how an environment behaves. Instead of asking a model to predict the next word, you ask it to predict the next state."
-          ]
-        }
-      ],
-      "customer_names": [
-        "Nabla"
-      ],
-      "current_classification": {
-        "product_form_id": "model",
-        "market_category_id": "infrastructure_compute"
-      }
-    },
-    {
-      "event_id": "EV-327ba605bd9e8307",
-      "funding_insight_id": "FI-a5e14f4ba5d6d36e",
-      "company_name": "Andreessen Horowitz Leads Netris",
-      "company_full_name": "Netris",
-      "website": "https://netris.io",
-      "current_sector": "AI 基础设施 / 网络自动化与多租户",
-      "company_evidence_quotes": [
-        "Netris is the leading provider of network automation and multi-tenancy for AI infrastructure",
-        "Headquarters: Santa Clara, CA"
-      ],
-      "products": [
-        {
-          "name": "Netris NAAM (Network Automation, Abstraction, and Multi-Tenancy)",
-          "evidence_quotes": [
-            "Operators launch GPU clouds in weeks, provision tenants instantly with isolation configured automatically, and maximize GPU utilization by dynamically reallocating capacity across tenants."
-          ]
-        }
-      ],
-      "customer_names": [
-        "Lightning AI",
-        "TensorWave",
-        "TELUS",
-        "HPE"
-      ],
-      "current_classification": {
-        "product_form_id": "ai_infrastructure_software",
-        "market_category_id": "infrastructure_compute"
-      }
-    },
-    {
       "event_id": "EV-201b25d4f3cf696a",
       "funding_insight_id": "FI-87daf1ce6554f45d",
       "company_name": "Anthropic",
@@ -6226,9 +7079,35 @@
       }
     },
     {
+      "event_id": "EV-8861a42a8679562a",
+      "funding_insight_id": "FI-2c7e9c7109babb35",
+      "company_name": "Anthropic",
+      "company_full_name": "Anthropic",
+      "website": "",
+      "current_sector": "AI 基础设施融资",
+      "company_evidence_quotes": [
+        "Initial Investment to Accelerate Anthropic’s Compute Capacity as Part of Broader Global AI Infrastructure Platform",
+        "It will facilitate Anthropic's previously announced capacity expansion of more than 1GW of compute infrastructure for training and inference starting in mid-2026."
+      ],
+      "products": [
+        {
+          "name": "AI 训练与推理基础设施",
+          "evidence_quotes": [
+            "It will facilitate Anthropic's previously announced capacity expansion of more than 1GW of compute infrastructure for training and inference starting in mid-2026.",
+            "pairing some of the world's most advanced silicon and networking solutions with long-term, flexible capital"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-78a11d309c3d4e97",
       "funding_insight_id": "FI-34ad46762c245ae0",
-      "company_name": "Anthropic",
+      "company_name": "Anthropic PBC",
       "company_full_name": "Anthropic PBC",
       "website": "",
       "current_sector": "人工智能基础模型",
@@ -6258,35 +7137,9 @@
       }
     },
     {
-      "event_id": "EV-8861a42a8679562a",
-      "funding_insight_id": "FI-2c7e9c7109babb35",
-      "company_name": "Anthropic",
-      "company_full_name": "Anthropic",
-      "website": "",
-      "current_sector": "AI 基础设施融资",
-      "company_evidence_quotes": [
-        "Initial Investment to Accelerate Anthropic’s Compute Capacity as Part of Broader Global AI Infrastructure Platform",
-        "It will facilitate Anthropic's previously announced capacity expansion of more than 1GW of compute infrastructure for training and inference starting in mid-2026."
-      ],
-      "products": [
-        {
-          "name": "AI 训练与推理基础设施",
-          "evidence_quotes": [
-            "It will facilitate Anthropic's previously announced capacity expansion of more than 1GW of compute infrastructure for training and inference starting in mid-2026.",
-            "pairing some of the world's most advanced silicon and networking solutions with long-term, flexible capital"
-          ]
-        }
-      ],
-      "customer_names": [],
-      "current_classification": {
-        "product_form_id": "model",
-        "market_category_id": "infrastructure_compute"
-      }
-    },
-    {
       "event_id": "EV-39717cdbada984d7",
       "funding_insight_id": "FI-9cbc09818a9be1c5",
-      "company_name": "Arcade",
+      "company_name": "Arcade AI Inc.",
       "company_full_name": "Arcade AI Inc.",
       "website": "https://www.arcade.dev",
       "current_sector": "AI 智能体安全与治理基础设施",
@@ -6307,34 +7160,6 @@
         "一家美国顶级银行",
         "Prosus",
         "LangChain"
-      ],
-      "current_classification": {
-        "product_form_id": "security_software",
-        "market_category_id": "infrastructure_compute"
-      }
-    },
-    {
-      "event_id": "EV-6ae3594aadfcd3d8",
-      "funding_insight_id": "FI-6c2faabba03d416d",
-      "company_name": "Archestra",
-      "company_full_name": "Archestra Inc.",
-      "website": "https://archestra.ai",
-      "current_sector": "AI 智能体安全与治理基础设施",
-      "company_evidence_quotes": [
-        "Archestra Inc. , a U.K.-based startup whose open-source platform brokers access between artificial intelligence agents and sensitive enterprise data",
-        "Archestra is a horizontal platform that lets in-house AI teams open up data access to business users without the usual nightmare scenarios."
-      ],
-      "products": [
-        {
-          "name": "Archestra 平台",
-          "evidence_quotes": [
-            "Archestra acts as a middle layer between the agent and the data. The agent calls Archestra, which checks identity and policy, brokers the actual data access and logs the result.",
-            "The guardrails are pitched as protection against the combination of access to private data, exposure to untrusted content and the ability to communicate externally"
-          ]
-        }
-      ],
-      "customer_names": [
-        "未披露"
       ],
       "current_classification": {
         "product_form_id": "security_software",
@@ -6370,30 +7195,31 @@
       }
     },
     {
-      "event_id": "EV-24823de8fb76ac31",
-      "funding_insight_id": "FI-a2760f4caf3da86e",
-      "company_name": "Arrakis",
-      "company_full_name": "Arrakis",
-      "website": "",
-      "current_sector": "工业AI",
+      "event_id": "EV-6ae3594aadfcd3d8",
+      "funding_insight_id": "FI-6c2faabba03d416d",
+      "company_name": "Archestra Inc.",
+      "company_full_name": "Archestra Inc.",
+      "website": "https://archestra.ai",
+      "current_sector": "AI 智能体安全与治理基础设施",
       "company_evidence_quotes": [
-        "Arrakis, a London startup, has come out of stealth mode after raising $38 million in funding over the past six months."
+        "Archestra Inc. , a U.K.-based startup whose open-source platform brokers access between artificial intelligence agents and sensitive enterprise data",
+        "Archestra is a horizontal platform that lets in-house AI teams open up data access to business users without the usual nightmare scenarios."
       ],
       "products": [
         {
-          "name": "AI operating system for industrial companies",
+          "name": "Archestra 平台",
           "evidence_quotes": [
-            "The startup places engineers on-site and uses a platform that works with clients’ current procurement, logistics, and operational systems.",
-            "Arrakis is model-agnostic by design—a stance Quintanilla said resonates with executives worried about being locked in to a single AI model provider"
+            "Archestra acts as a middle layer between the agent and the data. The agent calls Archestra, which checks identity and policy, brokers the actual data access and logs the result.",
+            "The guardrails are pitched as protection against the combination of access to private data, exposure to untrusted content and the ability to communicate externally"
           ]
         }
       ],
       "customer_names": [
-        "一家未具名的纽约上市航运公司"
+        "未披露"
       ],
       "current_classification": {
-        "product_form_id": "enterprise_software_platform",
-        "market_category_id": "industry_applications"
+        "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6422,6 +7248,32 @@
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
         "market_category_id": "industry_applications"
+      }
+    },
+    {
+      "event_id": "EV-24823de8fb76ac31",
+      "funding_insight_id": "FI-a2760f4caf3da86e",
+      "company_name": "Arrakis Security",
+      "company_full_name": "Arrakis Security",
+      "website": "https://arrakis.security/",
+      "current_sector": "AI 智能体运行时安全",
+      "company_evidence_quotes": [
+        "Tal Baron , Omer Efrat and Ron Shani disclosed an $8 million seed round for Arrakis Security on August 2",
+        "Arrakis gives security teams full behavioral visibility into every agent in the organization"
+      ],
+      "products": [
+        {
+          "name": "Autonomous Workforce Governance 平台",
+          "evidence_quotes": [
+            "Arrakis calls its product an \"Autonomous Workforce Governance\" platform.",
+            "The Arrakis platform is designed to discover sanctioned and shadow agents, connect each agent to an owner, inventory its permissions, establish behavioral baselines and calculate risk scores."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -6495,7 +7347,7 @@
     {
       "event_id": "EV-dd3217aad32e6891",
       "funding_insight_id": "FI-364250d18b87c657",
-      "company_name": "Avoca",
+      "company_name": "Avoca AI",
       "company_full_name": "Avoca AI",
       "website": "www.avoca.ai",
       "current_sector": "垂直AI应用/家庭服务自动化",
@@ -6535,7 +7387,7 @@
     {
       "event_id": "EV-59882383f82f215d",
       "funding_insight_id": "FI-f4b4741489974d88",
-      "company_name": "Axelera",
+      "company_name": "Axelera AI",
       "company_full_name": "Axelera AI",
       "website": "https://axelera.ai/",
       "current_sector": "AI半导体/边缘AI推理芯片",
@@ -6574,42 +7426,6 @@
       ],
       "current_classification": {
         "product_form_id": "chip_accelerator",
-        "market_category_id": "infrastructure_compute"
-      }
-    },
-    {
-      "event_id": "EV-c85011ca6a0389bf",
-      "funding_insight_id": "FI-3401bf6e360a5213",
-      "company_name": "Barcelona-based NeuralTrust",
-      "company_full_name": "NeuralTrust",
-      "website": "https://neuraltrust.ai",
-      "current_sector": "AI 安全与治理",
-      "company_evidence_quotes": [
-        "NeuralTrust is the leading platform for securing and scaling AI agents. From offices in Barcelona and London, it helps enterprises identify, secure, and govern every AI agent running across their organization"
-      ],
-      "products": [
-        {
-          "name": "TrustGate",
-          "evidence_quotes": [
-            "TrustGate is an agent gateway that brokers every LLM, MCP, and tool call, becoming the single enforcement point through which all agent traffic flows."
-          ]
-        },
-        {
-          "name": "TrustGuard",
-          "evidence_quotes": [
-            "TrustGuard is a runtime security engine that detects and stops threats across every platform and endpoint where agents operate, regardless of how they were built or deployed."
-          ]
-        },
-        {
-          "name": "TrustLens",
-          "evidence_quotes": [
-            "TrustLens is a posture management layer that identifies every agent in the enterprise and tracks how it behaves inside and outside the security perimeter."
-          ]
-        }
-      ],
-      "customer_names": [],
-      "current_classification": {
-        "product_form_id": "security_software",
         "market_category_id": "infrastructure_compute"
       }
     },
@@ -6660,7 +7476,7 @@
     {
       "event_id": "EV-1a6def173f4d7c94",
       "funding_insight_id": "FI-0999f8df1caf6c00",
-      "company_name": "BidScript",
+      "company_name": "BidScript LTD",
       "company_full_name": "BidScript LTD",
       "website": "www.bidscript.co.uk",
       "current_sector": "法律科技 / 采购与投标管理",
@@ -6744,29 +7560,50 @@
       }
     },
     {
-      "event_id": "EV-9300044a58395552",
-      "funding_insight_id": "FI-27f66cc32481ad8e",
-      "company_name": "Chamath Palihapitiya",
-      "company_full_name": "8090 Labs",
-      "website": "8090.ai",
-      "current_sector": "企业 AI 编码与软件交付",
+      "event_id": "EV-e0ecb5f81a273447",
+      "funding_insight_id": "FI-16d401014a37a9b4",
+      "company_name": "Cato",
+      "company_full_name": "Cato",
+      "website": "",
+      "current_sector": "政府科技/人工智能",
       "company_evidence_quotes": [
-        "The company, 8090 Labs, closed a $135 million round",
-        "8090 Labs, closed a $135 million round led by Salesforce Ventures"
+        "Cato is an AI-native platform that automates the full procurement cycle for companies selling to the Italian public administration."
       ],
       "products": [
         {
-          "name": "Software Factory",
+          "name": "Cato AI平台",
           "evidence_quotes": [
-            "Its product, Software Factory, helps corporate coders use AI to build production-quality software, not just vibe-coded prototypes, with all the controls enterprises need, such as audit trails",
-            "Software Factory brings people and AI agents into a single collaborative environment, connecting business intent, requirements, architecture, work orders, code, testing, and production maintenance."
+            "Cato is an AI-native platform that automates the full procurement cycle for companies selling to the Italian public administration."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
+      "event_id": "EV-cbce4f1f5187efcf",
+      "funding_insight_id": "FI-e1e09c5d88a624a0",
+      "company_name": "Centralize",
+      "company_full_name": "Centralize",
+      "website": "",
+      "current_sector": "企业销售与收入技术",
+      "company_evidence_quotes": [
+        "San Francisco-based Centralize"
+      ],
+      "products": [
+        {
+          "name": "Centralize",
+          "evidence_quotes": [
+            "Centralize operates as a visual, multiplayer surface centered around automated org charts that function like a map. AI agents analyze first-party data, call recordings, emails, calendar events, and web sources to continuously construct a live picture of key relationships.",
+            "It also flags the moment a champion leaves, a new decision-maker joins, or engagement drops on a key deal."
           ]
         }
       ],
       "customer_names": [
-        "一家上市健康保险公司",
-        "一家生命科学客户",
-        "一家制造商"
+        "CoreWeave"
       ],
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
@@ -6898,44 +7735,6 @@
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
         "market_category_id": "enterprise_applications"
-      }
-    },
-    {
-      "event_id": "EV-ceb23160ad25e497",
-      "funding_insight_id": "FI-c4f144aa04022fea",
-      "company_name": "Dabafinance - Newera.ai",
-      "company_full_name": "Newera.ai",
-      "website": "https://newera.ai/",
-      "current_sector": "企业级AI解决方案",
-      "company_evidence_quotes": [
-        "Saudi Arabia-based AI startup Newera.ai has raised $2.1 million, or SAR 8 million, in a pre-seed funding round led by Embark, with participation from angel investors.",
-        "Newera.ai helps government and enterprise teams move from PoCs to production."
-      ],
-      "products": [
-        {
-          "name": "Custom AI Development",
-          "evidence_quotes": [
-            "MVPs delivered in 1–4 weeks",
-            "Trained on your real data and context"
-          ]
-        },
-        {
-          "name": "Agentic AI Platform",
-          "evidence_quotes": [
-            "Agentic AI Platform"
-          ]
-        },
-        {
-          "name": "AskEnterprise",
-          "evidence_quotes": [
-            "AskEnterprise"
-          ]
-        }
-      ],
-      "customer_names": [],
-      "current_classification": {
-        "product_form_id": "developer_tool",
-        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -7126,9 +7925,34 @@
       }
     },
     {
+      "event_id": "EV-c6cccaca326dfd45",
+      "funding_insight_id": "FI-6cf80a82ff4cb17e",
+      "company_name": "Discovered Materials",
+      "company_full_name": "Discovered Materials",
+      "website": "https://discoveredmaterials.com/",
+      "current_sector": "半导体材料发现",
+      "company_evidence_quotes": [
+        "Discovered Materials, a San Francisco, CA-based provider of an AI agent platform that discovers and accelerates the adoption of new materials for semiconductor chips"
+      ],
+      "products": [
+        {
+          "name": "AI 材料发现智能体平台",
+          "evidence_quotes": [
+            "The two have created a software pipeline that uses Anthropic models in a custom harness to generate material leads, and then turns to foundational physics models they’ve trained to run simulations that verify if the candidate materials are actually of interest.",
+            "Discovered Materials builds AI agents that compress months of interdisciplinary research into days, spanning simulation, synthesis, and experimental validation for semiconductor applications."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
       "event_id": "EV-60f9204b84882857",
       "funding_insight_id": "FI-2bc0875969d87844",
-      "company_name": "dodoAI",
+      "company_name": "dodoAI Inc.",
       "company_full_name": "dodoAI Inc.",
       "website": "https://dodoai.ai/",
       "current_sector": "企业AI治理",
@@ -7215,32 +8039,31 @@
       }
     },
     {
-      "event_id": "EV-6484904c176aa016",
-      "funding_insight_id": "FI-dec627e13347a261",
-      "company_name": "Eindhoven-based Luna.ai",
-      "company_full_name": "Luna.ai",
-      "website": "https://luna.ai",
-      "current_sector": "AI销售技术 / B2B SaaS",
+      "event_id": "EV-4c247b02485de09b",
+      "funding_insight_id": "FI-c067d717403c8e3b",
+      "company_name": "Edra",
+      "company_full_name": "Edra",
+      "website": "edra.ai",
+      "current_sector": "企业AI/知识管理",
       "company_evidence_quotes": [
-        "Luna.ai , a 2022 beginning, is a leader in AI sales technology thanks to its extensive B2B platform.",
-        "Founded in 2022, Luna.ai leads the AI sales technology sector with its comprehensive B2B platform."
+        "Today, startup Edra announced $30 million Series A led by Sequoia, which included investment from 8VC and A*z.",
+        "Edra is out of stealth. We're announcing our Series A led by Sequoia Capital, 8VC, A*, and HubSpot Ventures, bringing our total funding to $30M+."
       ],
       "products": [
         {
-          "name": "Luna.ai B2B Platform",
+          "name": "Living Playbook",
           "evidence_quotes": [
-            "The software uses artificial intelligence (AI) to find perfect leads, compile relevant web data, and create persuasive sales emails.",
-            "Using AI, the platform identifies ideal leads, gathers relevant information online, and crafts effective sales emails."
-          ]
-        },
-        {
-          "name": "Command Center",
-          "evidence_quotes": [
-            "The recently released Command Centre, allowing sales directors to \"easily\" manage and scale their team of human and AI salespeople, was seen as a crucial step by the startup."
+            "Edra builds a Living Playbook by connecting to a customer’s existing systems within minutes and ingesting standard operating procedures, tickets, and communications without manual configuration. From there, it continuously learns from actual employee behaviour and surfaces suggested improvements. Unlike static documentation or knowledge bases, Living Playbooks evolve as the business changes.",
+            "The platform connects to a customer’s existing systems within minutes, ingesting standard operating procedures, tickets, and internal communications without manual configuration. It then continuously learns from real employee behaviour and suggests improvements over time. Unlike static documentation or traditional knowledge bases, Living Playbooks evolve as the business changes."
           ]
         }
       ],
-      "customer_names": [],
+      "customer_names": [
+        "HubSpot",
+        "ASOS",
+        "Cushman & Wakefield",
+        "Ergeon"
+      ],
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
         "market_category_id": "enterprise_applications"
@@ -7437,60 +8260,9 @@
       }
     },
     {
-      "event_id": "EV-0ade039d36e077ae",
-      "funding_insight_id": "FI-062db0d45e38151a",
-      "company_name": "Enterprise AI",
-      "company_full_name": "Wonderful",
-      "website": "wonderful.ai",
-      "current_sector": "企业AI智能体平台",
-      "company_evidence_quotes": [
-        "Wonderful, the enterprise AI agent platform, today announced it has raised $150 million in a Series B funding round",
-        "Wonderful is an enterprise AI agent platform made for deploying agents in complex enterprise environments."
-      ],
-      "products": [
-        {
-          "name": "Wonderful Enterprise AI Agent Platform",
-          "evidence_quotes": [
-            "The company is building a horizontal enterprise foundation that can be activated across multiple use cases and workflows, rather than delivering isolated point solutions. The architecture is model-agnostic by design, continuously benchmarking and selecting the best-performing models for each use case while remaining flexible as the model landscape evolves. It incorporates state-of-the-art engineering practices, including harness-based evaluation and self-healing system design, to ensure agents remain reliable in production."
-          ]
-        }
-      ],
-      "customer_names": [],
-      "current_classification": {
-        "product_form_id": "enterprise_software_platform",
-        "market_category_id": "infrastructure_compute"
-      }
-    },
-    {
-      "event_id": "EV-aa33ca051f3a7f78",
-      "funding_insight_id": "FI-535f1ec650916aca",
-      "company_name": "Enterprise AI Agent",
-      "company_full_name": "Wonderful",
-      "website": "wonderful.ai",
-      "current_sector": "企业级AI智能体部署平台",
-      "company_evidence_quotes": [
-        "Wonderful , the Amsterdam-based enterprise AI agent platform",
-        "Wonderful combines a powerful AI platform with best-in-class local deployment to deliver enterprise-grade AI agents to every market and every language."
-      ],
-      "products": [
-        {
-          "name": "Wonderful企业AI智能体平台",
-          "evidence_quotes": [
-            "Wonderful's platform is model-agnostic by design, continuously benchmarking and selecting the best-performing models for each use case.",
-            "The company is building a horizontal enterprise foundation that can be activated across multiple use cases and workflows, rather than delivering isolated point solutions."
-          ]
-        }
-      ],
-      "customer_names": [],
-      "current_classification": {
-        "product_form_id": "enterprise_software_platform",
-        "market_category_id": "infrastructure_compute"
-      }
-    },
-    {
       "event_id": "EV-618e5729145025e4",
       "funding_insight_id": "FI-dcf52fdf41da5d16",
-      "company_name": "Entire",
+      "company_name": "Entire Inc.",
       "company_full_name": "Entire Inc.",
       "website": "https://entire.io",
       "current_sector": "开发者工具",
@@ -7510,6 +8282,62 @@
       "customer_names": [],
       "current_classification": {
         "product_form_id": "developer_tool",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-040fc355bc12a750",
+      "funding_insight_id": "FI-006c1c557192873c",
+      "company_name": "Etched",
+      "company_full_name": "Etched",
+      "website": "https://www.etched.com/",
+      "current_sector": "AI推理芯片/半导体",
+      "company_evidence_quotes": [
+        "AI chip startup Etched has raised $800 million and revealed that its backers include trading firm Jane Street and VentureTech Alliance"
+      ],
+      "products": [
+        {
+          "name": "Sohu",
+          "evidence_quotes": [
+            "Etched's VLI processor can run trillion-parameter sparse MoEs at 80% peak FLOPs without thermal throttling."
+          ]
+        },
+        {
+          "name": "Frontier Inference Clusters",
+          "evidence_quotes": [
+            "Etched also designed its entire server rack, including circuit boards, cooling plates, and networking connections, rather than just the chip itself.",
+            "It calls these systems \"frontier inference clusters,\" bundles that include the chips along with custom-designed racks and software"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-80e54c9a390da293",
+      "funding_insight_id": "FI-941760709039dd07",
+      "company_name": "Etched",
+      "company_full_name": "Etched",
+      "website": "",
+      "current_sector": "AI推理硬件/半导体",
+      "company_evidence_quotes": [
+        "An AI chip startup that spent four years building in near-total silence came out of stealth Tuesday"
+      ],
+      "products": [
+        {
+          "name": "Sohu",
+          "evidence_quotes": [
+            "The first, which the company calls Low Voltage Inference, runs the chip's math blocks at under half the voltage of conventional AI chips.",
+            "The second innovation, Cluster Scale Memory, creates a shared, low-latency memory pool across chips in the scale-up domain using a proprietary high-bandwidth interconnect."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "chip_accelerator",
         "market_category_id": "infrastructure_compute"
       }
     },
@@ -7732,7 +8560,7 @@
     {
       "event_id": "EV-4eaf3aabecae6016",
       "funding_insight_id": "FI-4e6e70433b57ddcf",
-      "company_name": "Fireworks",
+      "company_name": "Fireworks AI Inc.",
       "company_full_name": "Fireworks AI Inc.",
       "website": "fireworks.ai",
       "current_sector": "AI基础设施 / 模型推理与微调平台",
@@ -7814,32 +8642,6 @@
       "current_classification": {
         "product_form_id": "end_user_application",
         "market_category_id": "industry_applications"
-      }
-    },
-    {
-      "event_id": "EV-7add33b4c74dbf1a",
-      "funding_insight_id": "FI-8478addb443b9e38",
-      "company_name": "Former Coatue partner",
-      "company_full_name": "Sycamore",
-      "website": "https://sycamore.so/",
-      "current_sector": "企业AI智能体编排",
-      "company_evidence_quotes": [
-        "Sycamore on Monday announced a $65 million seed",
-        "Sycamore Labs is a Palo Alto-based startup"
-      ],
-      "products": [
-        {
-          "name": "Sycamore平台",
-          "evidence_quotes": [
-            "attempting to build the whole agentic orchestration layer that handles everything from coding to back-end infrastructure, stepping in wherever needed.",
-            "starts with the problem itself and then designs and builds the right solution from scratch, whether that involves agents, back-end systems, front ends, or data integrations"
-          ]
-        }
-      ],
-      "customer_names": [],
-      "current_classification": {
-        "product_form_id": "enterprise_software_platform",
-        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -8010,6 +8812,31 @@
       }
     },
     {
+      "event_id": "EV-e3792591090281c6",
+      "funding_insight_id": "FI-98dcf9e3a13b56dc",
+      "company_name": "General Compute Inc.",
+      "company_full_name": "General Compute Inc.",
+      "website": "https://www.generalcompute.com",
+      "current_sector": "AI基础设施/推理云",
+      "company_evidence_quotes": [
+        "Artificial intelligence infrastructure startup General Compute Inc.",
+        "San Francisco, United States"
+      ],
+      "products": [
+        {
+          "name": "托管开源模型API服务",
+          "evidence_quotes": [
+            "The first offers managed versions of open-source language models. Developers can access the models through an application programming interface modeled after the one used by OpenAI Group PBC"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "model_api_service",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-7283de3f3a76d22b",
       "funding_insight_id": "FI-adb73b37b79b4dc7",
       "company_name": "General Intuition",
@@ -8115,6 +8942,34 @@
       "customer_names": [],
       "current_classification": {
         "product_form_id": "ai_compute_system",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-e41fc65eb014893f",
+      "funding_insight_id": "FI-1c92625ce15ebcac",
+      "company_name": "Gradium",
+      "company_full_name": "Gradium",
+      "website": "",
+      "current_sector": "AI语音/音频模型",
+      "company_evidence_quotes": [
+        "Gradium, a Paris-based startup that offers voice AI models",
+        "Gradium was spun out of Kyutai, the French AI research lab backed by telecom billionaire Xavier Niel."
+      ],
+      "products": [
+        {
+          "name": "超低延迟语音AI模型",
+          "evidence_quotes": [
+            "Gradium is working on audio models that deliver voice at scale with ultra-low latency, meaning AI voices that respond almost instantly, without that awkward pause that often creeps into AI agent conversations.",
+            "Gradium is building audio models designed for ultra low latency voice generation. In practice, that means AI voices that can respond almost instantly instead of pausing between turns"
+          ]
+        }
+      ],
+      "customer_names": [
+        "Renault"
+      ],
+      "current_classification": {
+        "product_form_id": "model_api_service",
         "market_category_id": "infrastructure_compute"
       }
     },
@@ -8340,20 +9195,22 @@
       }
     },
     {
-      "event_id": "EV-e0ecb5f81a273447",
-      "funding_insight_id": "FI-16d401014a37a9b4",
-      "company_name": "He Failed Once. Then He",
-      "company_full_name": "Cato",
+      "event_id": "EV-e4b3a19529576778",
+      "funding_insight_id": "FI-9c29101ffbee6a0c",
+      "company_name": "Harper",
+      "company_full_name": "Harper",
       "website": "",
-      "current_sector": "政府科技/人工智能",
+      "current_sector": "保险科技",
       "company_evidence_quotes": [
-        "Cato is an AI-native platform that automates the full procurement cycle for companies selling to the Italian public administration."
+        "the AI-native insurance brokerage Harper",
+        "an almost fully autonomous licensed commercial insurance agency. It matches small- to mid-sized businesses with more than 160 insurance carriers to assist with workers’ compensation, as well as general and professional liability."
       ],
       "products": [
         {
-          "name": "Cato AI平台",
+          "name": "Harper AI保险经纪平台",
           "evidence_quotes": [
-            "Cato is an AI-native platform that automates the full procurement cycle for companies selling to the Italian public administration."
+            "an almost fully autonomous licensed commercial insurance agency. It matches small- to mid-sized businesses with more than 160 insurance carriers to assist with workers’ compensation, as well as general and professional liability.",
+            "AI handles the operational weight. Submission routing, underwriter follow-ups, document collection, pipeline management"
           ]
         }
       ],
@@ -8397,31 +9254,6 @@
       "current_classification": {
         "product_form_id": "developer_tool",
         "market_category_id": "infrastructure_compute"
-      }
-    },
-    {
-      "event_id": "EV-df789745fb926bfd",
-      "funding_insight_id": "FI-813b364f86679f0d",
-      "company_name": "Hinge",
-      "company_full_name": "Overtone",
-      "website": "https://overto.ne/",
-      "current_sector": "在线约会/人工智能",
-      "company_evidence_quotes": [
-        "Overtone, a modern matchmaking company based in New York"
-      ],
-      "products": [
-        {
-          "name": "Overtone",
-          "evidence_quotes": [
-            "Overtone describes itself as “a voice- and audio-forward service, enabled by AI, that provides highly curated introductions.”",
-            "We transparently explain why we believe someone is a great match."
-          ]
-        }
-      ],
-      "customer_names": [],
-      "current_classification": {
-        "product_form_id": "end_user_application",
-        "market_category_id": "industry_applications"
       }
     },
     {
@@ -8525,7 +9357,7 @@
     {
       "event_id": "EV-59f4561c5243eb98",
       "funding_insight_id": "FI-27171340e5e0afae",
-      "company_name": "Illoca",
+      "company_name": "Illoca, Inc.",
       "company_full_name": "Illoca, Inc.",
       "website": "https://illoca.com/",
       "current_sector": "AI原生建筑设计软件",
@@ -8605,31 +9437,6 @@
       }
     },
     {
-      "event_id": "EV-e3792591090281c6",
-      "funding_insight_id": "FI-98dcf9e3a13b56dc",
-      "company_name": "Inference cloud operator General Compute",
-      "company_full_name": "General Compute Inc.",
-      "website": "https://www.generalcompute.com",
-      "current_sector": "AI基础设施/推理云",
-      "company_evidence_quotes": [
-        "Artificial intelligence infrastructure startup General Compute Inc.",
-        "San Francisco, United States"
-      ],
-      "products": [
-        {
-          "name": "托管开源模型API服务",
-          "evidence_quotes": [
-            "The first offers managed versions of open-source language models. Developers can access the models through an application programming interface modeled after the one used by OpenAI Group PBC"
-          ]
-        }
-      ],
-      "customer_names": [],
-      "current_classification": {
-        "product_form_id": "model_api_service",
-        "market_category_id": "infrastructure_compute"
-      }
-    },
-    {
       "event_id": "EV-29eea3f4a8fcd6f5",
       "funding_insight_id": "FI-5d6f8b305204eb55",
       "company_name": "Inference.ai",
@@ -8692,7 +9499,7 @@
     {
       "event_id": "EV-b29878fdf79f2ac5",
       "funding_insight_id": "FI-2cd25b403c424ea4",
-      "company_name": "InstaLILY",
+      "company_name": "InstaLILY AI",
       "company_full_name": "InstaLILY AI",
       "website": "https://instalily.ai/",
       "current_sector": "企业AI智能体/垂直行业AI（建筑、工业分销、物流、医疗）",
@@ -8887,7 +9694,7 @@
     {
       "event_id": "EV-e579af588ad8cf64",
       "funding_insight_id": "FI-21706f7253ef0a36",
-      "company_name": "LGND",
+      "company_name": "LGND AI, Inc.",
       "company_full_name": "LGND AI, Inc.",
       "website": "https://lgnd.ai",
       "current_sector": "地理空间 AI 基础设施",
@@ -8918,38 +9725,6 @@
       }
     },
     {
-      "event_id": "EV-2083b9eda52a3f76",
-      "funding_insight_id": "FI-11044f281187f580",
-      "company_name": "Lio",
-      "company_full_name": "Lio Technologies GmbH",
-      "website": "lio.ai",
-      "current_sector": "企业服务",
-      "company_evidence_quotes": [
-        "Lio’s co-founders know firsthand that procurement — the process enterprises use to purchase services from vendors — is often a bottleneck.",
-        "Lio (formerly known as askLio), the company building an agentic AI platform for enterprise procurement"
-      ],
-      "products": [
-        {
-          "name": "Lio AI Procurement Platform",
-          "evidence_quotes": [
-            "Lio operates an AI-native platform with agentic infrastructure that completes the entire procurement process.",
-            "Lio addresses this challenge by introducing Agent Operating Procedures (AOPs) to procurement"
-          ]
-        }
-      ],
-      "customer_names": [
-        "Munich Re",
-        "Brose",
-        "Novozymes",
-        "Schaeffler",
-        "Walmart"
-      ],
-      "current_classification": {
-        "product_form_id": "enterprise_software_platform",
-        "market_category_id": "enterprise_applications"
-      }
-    },
-    {
       "event_id": "EV-dd78b63f18dba410",
       "funding_insight_id": "FI-420f1cdc03225574",
       "company_name": "Lio Technologies",
@@ -8966,6 +9741,38 @@
           "evidence_quotes": [
             "Lio addresses this challenge by introducing Agent Operating Procedures (AOPs) to procurement",
             "The agents triage requests, analyze quotes, compare suppliers, negotiate, onboard vendors, and execute purchases end-to-end across ERPs, systems of record, inboxes, contracts, and the open web."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Munich Re",
+        "Brose",
+        "Novozymes",
+        "Schaeffler",
+        "Walmart"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
+      "event_id": "EV-2083b9eda52a3f76",
+      "funding_insight_id": "FI-11044f281187f580",
+      "company_name": "Lio Technologies GmbH",
+      "company_full_name": "Lio Technologies GmbH",
+      "website": "lio.ai",
+      "current_sector": "企业服务",
+      "company_evidence_quotes": [
+        "Lio’s co-founders know firsthand that procurement — the process enterprises use to purchase services from vendors — is often a bottleneck.",
+        "Lio (formerly known as askLio), the company building an agentic AI platform for enterprise procurement"
+      ],
+      "products": [
+        {
+          "name": "Lio AI Procurement Platform",
+          "evidence_quotes": [
+            "Lio operates an AI-native platform with agentic infrastructure that completes the entire procurement process.",
+            "Lio addresses this challenge by introducing Agent Operating Procedures (AOPs) to procurement"
           ]
         }
       ],
@@ -9070,6 +9877,76 @@
       }
     },
     {
+      "event_id": "EV-b116eafe60d71fbe",
+      "funding_insight_id": "FI-507ad5fde661d5af",
+      "company_name": "Lumilens Inc.",
+      "company_full_name": "Lumilens Inc.",
+      "website": "https://lumilens.com",
+      "current_sector": "AI基础设施/光互连芯片",
+      "company_evidence_quotes": [
+        "Lumilens Inc., a provider of optical networking chips for artificial intelligence clusters, launched today with $900 million in funding."
+      ],
+      "products": [
+        {
+          "name": "共封装光学芯片 (CPO)",
+          "evidence_quotes": [
+            "The first is a co-packaged optics, or CPO, chip series that can be integrated directly into graphics processing units. The company says that it’s capable of linking together thousands of GPUs."
+          ]
+        },
+        {
+          "name": "近封装光学芯片 (NPO)",
+          "evidence_quotes": [
+            "Lumilens also makes near-packaged optics, or NPO, chips. Such chips are not integrated directly into GPUs but rather sit on the motherboard that hosts them."
+          ]
+        },
+        {
+          "name": "可插拔光收发器 (Pluggable Transceivers)",
+          "evidence_quotes": [
+            "Lumilens also makes chips for scale-out networks, which facilitate data sharing across GPU racks. It ships the silicon as part of devices called pluggable transceivers that can be attached to switches."
+          ]
+        }
+      ],
+      "customer_names": [
+        "未披露的超大规模云计算企业"
+      ],
+      "current_classification": {
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-6484904c176aa016",
+      "funding_insight_id": "FI-dec627e13347a261",
+      "company_name": "Luna.ai",
+      "company_full_name": "Luna.ai",
+      "website": "https://luna.ai",
+      "current_sector": "AI销售技术 / B2B SaaS",
+      "company_evidence_quotes": [
+        "Luna.ai , a 2022 beginning, is a leader in AI sales technology thanks to its extensive B2B platform.",
+        "Founded in 2022, Luna.ai leads the AI sales technology sector with its comprehensive B2B platform."
+      ],
+      "products": [
+        {
+          "name": "Luna.ai B2B Platform",
+          "evidence_quotes": [
+            "The software uses artificial intelligence (AI) to find perfect leads, compile relevant web data, and create persuasive sales emails.",
+            "Using AI, the platform identifies ideal leads, gathers relevant information online, and crafts effective sales emails."
+          ]
+        },
+        {
+          "name": "Command Center",
+          "evidence_quotes": [
+            "The recently released Command Centre, allowing sales directors to \"easily\" manage and scale their team of human and AI salespeople, was seen as a crucial step by the startup."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
       "event_id": "EV-4eb0556b8c72d410",
       "funding_insight_id": "FI-8a5c369cf132da9b",
       "company_name": "Maisa AI",
@@ -9122,6 +9999,32 @@
       }
     },
     {
+      "event_id": "EV-9e678b626c2a5c83",
+      "funding_insight_id": "FI-f96d2a4594d9329f",
+      "company_name": "Mandel AI",
+      "company_full_name": "Mandel AI",
+      "website": "mandel.ai",
+      "current_sector": "供应链 AI",
+      "company_evidence_quotes": [
+        "Mandel AI has raised $3.9 million Seed funding to build coordination for global supply chains.",
+        "Mandel AI has developed an AI supply chain coordinator that automates procurement by managing supplier communications and detecting disruptions."
+      ],
+      "products": [
+        {
+          "name": "AI 供应链协调器",
+          "evidence_quotes": [
+            "The platform sits on top of existing email and ERP systems, using purpose-built AI agents to read supplier communications, extract critical data, reconcile documents such as PO confirmations and invoices, and act autonomously—following up with suppliers, flagging discrepancies, and escalating issues in accordance with company-defined rules.",
+            "One procurement manager with Mandel agents can now coordinate what used to take an entire team: reading, reconciling, and acting on hundreds of supplier emails per day, 24/7."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
       "event_id": "EV-7b7f0cdf219434f6",
       "funding_insight_id": "FI-1f79f2b772f139dd",
       "company_name": "Manifold",
@@ -9143,6 +10046,30 @@
       "customer_names": [],
       "current_classification": {
         "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-cfbfc6c80338aa12",
+      "funding_insight_id": "FI-4d5cd3fff582276a",
+      "company_name": "Mechanize",
+      "company_full_name": "Mechanize",
+      "website": "https://mechanize.work/",
+      "current_sector": "人工智能基础设施与算力",
+      "company_evidence_quotes": [
+        "Mechanize, a startup focused on developing virtual work environments, benchmarks, and training data that will enable the full automation of the economy."
+      ],
+      "products": [
+        {
+          "name": "模拟工作环境与评估系统",
+          "evidence_quotes": [
+            "Mechanize builds simulated work environments and evaluation systems that help AI labs train and test coding agents on realistic, multi-step tasks rather than benchmarks that are easy to game."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "ai_infrastructure_software",
         "market_category_id": "infrastructure_compute"
       }
     },
@@ -9218,31 +10145,6 @@
       }
     },
     {
-      "event_id": "EV-d292329c0ec64c8f",
-      "funding_insight_id": "FI-05768d0b087a2431",
-      "company_name": "Mistral AI",
-      "company_full_name": "NP Company",
-      "website": "",
-      "current_sector": "AI 原生工业仿真软件",
-      "company_evidence_quotes": [
-        "NP Company (NP Co.), an AI-native simulation software company serving the aerospace, defence, energy, electronics, data centre, and automotive industries"
-      ],
-      "products": [
-        {
-          "name": "AI-native physics simulation software",
-          "evidence_quotes": [
-            "developing a new generation of physics simulation technology powered by transformer models pre-trained on industrial physics data",
-            "delivers results in seconds while maintaining the same level of fidelity across entire assemblies"
-          ]
-        }
-      ],
-      "customer_names": [],
-      "current_classification": {
-        "product_form_id": "enterprise_software_platform",
-        "market_category_id": "industry_applications"
-      }
-    },
-    {
       "event_id": "EV-9775b60c38285615",
       "funding_insight_id": "FI-ff5da818d815cfd0",
       "company_name": "Modiqo",
@@ -9271,7 +10173,7 @@
     {
       "event_id": "EV-fab81bddb815267b",
       "funding_insight_id": "FI-045337bcade573a4",
-      "company_name": "Monogram",
+      "company_name": "Monogram AI, Inc.",
       "company_full_name": "Monogram AI, Inc.",
       "website": "https://monogram.ai",
       "current_sector": "人工智能",
@@ -9471,7 +10373,7 @@
     {
       "event_id": "EV-286846e21412f3c7",
       "funding_insight_id": "FI-0570f1a18b43a607",
-      "company_name": "n8n",
+      "company_name": "n8n GmbH",
       "company_full_name": "n8n GmbH",
       "website": "https://n8n.io",
       "current_sector": "AI 工作流自动化与编排",
@@ -9563,7 +10465,7 @@
     {
       "event_id": "EV-901155ab700a7e8e",
       "funding_insight_id": "FI-3f06ebd6979e8366",
-      "company_name": "Natural",
+      "company_name": "Natural AI, Inc.",
       "company_full_name": "Natural AI, Inc.",
       "website": "https://www.natural.com/",
       "current_sector": "金融科技、AI 基础设施、智能体支付",
@@ -9599,30 +10501,6 @@
       }
     },
     {
-      "event_id": "EV-2069f6a931b8c9d6",
-      "funding_insight_id": "FI-bc962e05b6cfb149",
-      "company_name": "Neo",
-      "company_full_name": "Neo Security, Inc.",
-      "website": "www.neo.ai",
-      "current_sector": "智能体安全",
-      "company_evidence_quotes": [
-        "Neo , the Agentic Software Control company, today emerged from stealth with $100M in funding"
-      ],
-      "products": [
-        {
-          "name": "Neo 平台",
-          "evidence_quotes": [
-            "Neo gives SecOps teams the inventory, posture intelligence, attribution, and policy control to manage enterprise-wide agentic transformation and secure AI agents, AI-enabled applications, browsers, identities, and traditional software with newly introduced agentic capabilities."
-          ]
-        }
-      ],
-      "customer_names": [],
-      "current_classification": {
-        "product_form_id": "security_software",
-        "market_category_id": "infrastructure_compute"
-      }
-    },
-    {
       "event_id": "EV-c84b6d7338f87990",
       "funding_insight_id": "FI-741d31b9c33af539",
       "company_name": "Neo Security Inc.",
@@ -9647,34 +10525,56 @@
       }
     },
     {
-      "event_id": "EV-13ec78dfdbca678b",
-      "funding_insight_id": "FI-be3fbacdf2cc6958",
-      "company_name": "Neocloud Together AI",
-      "company_full_name": "Together AI",
-      "website": "together.ai",
-      "current_sector": "AI 基础设施 / 新云（Neocloud）",
+      "event_id": "EV-2069f6a931b8c9d6",
+      "funding_insight_id": "FI-bc962e05b6cfb149",
+      "company_name": "Neo Security, Inc.",
+      "company_full_name": "Neo Security, Inc.",
+      "website": "www.neo.ai",
+      "current_sector": "智能体安全",
       "company_evidence_quotes": [
-        "Together AI — an AI neocloud that rents out Nvidia GPU clusters and other AI-specific infrastructure",
-        "Together AI, a San Francisco startup that runs open-source models for enterprises"
+        "Neo , the Agentic Software Control company, today emerged from stealth with $100M in funding"
       ],
       "products": [
         {
-          "name": "AI Neocloud 基础设施",
+          "name": "Neo 平台",
           "evidence_quotes": [
-            "an AI neocloud that rents out Nvidia GPU clusters and other AI-specific infrastructure",
-            "the company invests heavily in research like FlashAttention-4 for NVIDIA Blackwell and its own Megakernel and together.compile optimizations"
+            "Neo gives SecOps teams the inventory, posture intelligence, attribution, and policy control to manage enterprise-wide agentic transformation and secure AI agents, AI-enabled applications, browsers, identities, and traditional software with newly introduced agentic capabilities."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-327ba605bd9e8307",
+      "funding_insight_id": "FI-a5e14f4ba5d6d36e",
+      "company_name": "Netris",
+      "company_full_name": "Netris",
+      "website": "https://netris.io",
+      "current_sector": "AI 基础设施 / 网络自动化与多租户",
+      "company_evidence_quotes": [
+        "Netris is the leading provider of network automation and multi-tenancy for AI infrastructure",
+        "Headquarters: Santa Clara, CA"
+      ],
+      "products": [
+        {
+          "name": "Netris NAAM (Network Automation, Abstraction, and Multi-Tenancy)",
+          "evidence_quotes": [
+            "Operators launch GPU clouds in weeks, provision tenants instantly with isolation configured automatically, and maximize GPU utilization by dynamically reallocating capacity across tenants."
           ]
         }
       ],
       "customer_names": [
-        "Cursor",
-        "Cognition",
-        "Decagon",
-        "ElevenLabs",
-        "Suno"
+        "Lightning AI",
+        "TensorWave",
+        "TELUS",
+        "HPE"
       ],
       "current_classification": {
-        "product_form_id": "compute_cloud_service",
+        "product_form_id": "ai_infrastructure_software",
         "market_category_id": "infrastructure_compute"
       }
     },
@@ -9710,9 +10610,83 @@
       }
     },
     {
+      "event_id": "EV-c85011ca6a0389bf",
+      "funding_insight_id": "FI-3401bf6e360a5213",
+      "company_name": "NeuralTrust",
+      "company_full_name": "NeuralTrust",
+      "website": "https://neuraltrust.ai",
+      "current_sector": "AI 安全与治理",
+      "company_evidence_quotes": [
+        "NeuralTrust is the leading platform for securing and scaling AI agents. From offices in Barcelona and London, it helps enterprises identify, secure, and govern every AI agent running across their organization"
+      ],
+      "products": [
+        {
+          "name": "TrustGate",
+          "evidence_quotes": [
+            "TrustGate is an agent gateway that brokers every LLM, MCP, and tool call, becoming the single enforcement point through which all agent traffic flows."
+          ]
+        },
+        {
+          "name": "TrustGuard",
+          "evidence_quotes": [
+            "TrustGuard is a runtime security engine that detects and stops threats across every platform and endpoint where agents operate, regardless of how they were built or deployed."
+          ]
+        },
+        {
+          "name": "TrustLens",
+          "evidence_quotes": [
+            "TrustLens is a posture management layer that identifies every agent in the enterprise and tracks how it behaves inside and outside the security perimeter."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-ceb23160ad25e497",
+      "funding_insight_id": "FI-c4f144aa04022fea",
+      "company_name": "Newera.ai",
+      "company_full_name": "Newera.ai",
+      "website": "https://newera.ai/",
+      "current_sector": "企业级AI解决方案",
+      "company_evidence_quotes": [
+        "Saudi Arabia-based AI startup Newera.ai has raised $2.1 million, or SAR 8 million, in a pre-seed funding round led by Embark, with participation from angel investors.",
+        "Newera.ai helps government and enterprise teams move from PoCs to production."
+      ],
+      "products": [
+        {
+          "name": "Custom AI Development",
+          "evidence_quotes": [
+            "MVPs delivered in 1–4 weeks",
+            "Trained on your real data and context"
+          ]
+        },
+        {
+          "name": "Agentic AI Platform",
+          "evidence_quotes": [
+            "Agentic AI Platform"
+          ]
+        },
+        {
+          "name": "AskEnterprise",
+          "evidence_quotes": [
+            "AskEnterprise"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "developer_tool",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-c8928410f6c145eb",
       "funding_insight_id": "FI-f85a19449e9db508",
-      "company_name": "Nexus",
+      "company_name": "Nexus Enterprises, Inc",
       "company_full_name": "Nexus Enterprises, Inc",
       "website": "https://agent.nexus/",
       "current_sector": "企业AI智能体部署平台",
@@ -9766,7 +10740,7 @@
     {
       "event_id": "EV-c7ba7b093a1a3b94",
       "funding_insight_id": "FI-46ef94d914cd2bbb",
-      "company_name": "Noetra",
+      "company_name": "Noetra Corp.",
       "company_full_name": "Noetra Corp.",
       "website": "https://www.noetra.co.jp",
       "current_sector": "物理人工智能与机器人基础模型",
@@ -9790,38 +10764,9 @@
       }
     },
     {
-      "event_id": "EV-0f520c9e5b1ea1d2",
-      "funding_insight_id": "FI-3e83e4d417d38136",
-      "company_name": "Norm",
-      "company_full_name": "Norm Ai",
-      "website": "",
-      "current_sector": "法律科技与监管合规 AI",
-      "company_evidence_quotes": [
-        "AI law startup Norm on Tuesday said it has raised $120 million in a Series C funding round led by Khosla Ventures, valuing the almost three-year-old startup at $1.2 billion.",
-        "regulatory artificial intelligence company Norm Ai, which is affiliated with hybrid law firm Norm Law, announced the completion of a $120 million Series C funding round valuing the company at $1.2 billion."
-      ],
-      "products": [
-        {
-          "name": "Norm Ai 平台",
-          "evidence_quotes": [
-            "Norm Ai develops AI agents that can make compliance determinations that adhere with relevant federal regulations, intended to streamline legal and compliance workflows for institutions in regulated industries including banks, hedge funds, insurance companies and other asset managers.",
-            "Norm AI, founded by John Nay, builds software that converts regulatory text into structured, machine-readable logic that enterprise systems can check against automatically."
-          ]
-        }
-      ],
-      "customer_names": [
-        "Blackstone",
-        "Bain Capital"
-      ],
-      "current_classification": {
-        "product_form_id": "enterprise_software_platform",
-        "market_category_id": "industry_applications"
-      }
-    },
-    {
       "event_id": "EV-d9cc588fb41a7e67",
       "funding_insight_id": "FI-c5472acd7427b7e0",
-      "company_name": "Norm Ai",
+      "company_name": "Nomos Ai Inc.",
       "company_full_name": "Nomos Ai Inc.",
       "website": "",
       "current_sector": "法律科技与监管人工智能",
@@ -9847,6 +10792,35 @@
       "customer_names": [
         "Blackstone",
         "New York Life",
+        "Bain Capital"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
+      "event_id": "EV-0f520c9e5b1ea1d2",
+      "funding_insight_id": "FI-3e83e4d417d38136",
+      "company_name": "Norm Ai",
+      "company_full_name": "Norm Ai",
+      "website": "",
+      "current_sector": "法律科技与监管合规 AI",
+      "company_evidence_quotes": [
+        "AI law startup Norm on Tuesday said it has raised $120 million in a Series C funding round led by Khosla Ventures, valuing the almost three-year-old startup at $1.2 billion.",
+        "regulatory artificial intelligence company Norm Ai, which is affiliated with hybrid law firm Norm Law, announced the completion of a $120 million Series C funding round valuing the company at $1.2 billion."
+      ],
+      "products": [
+        {
+          "name": "Norm Ai 平台",
+          "evidence_quotes": [
+            "Norm Ai develops AI agents that can make compliance determinations that adhere with relevant federal regulations, intended to streamline legal and compliance workflows for institutions in regulated industries including banks, hedge funds, insurance companies and other asset managers.",
+            "Norm AI, founded by John Nay, builds software that converts regulatory text into structured, machine-readable logic that enterprise systems can check against automatically."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Blackstone",
         "Bain Capital"
       ],
       "current_classification": {
@@ -9909,127 +10883,28 @@
       }
     },
     {
-      "event_id": "EV-236cbc2d64f0c455",
-      "funding_insight_id": "FI-3630ce639ee99761",
-      "company_name": "NVIDIA",
-      "company_full_name": "Upscale AI",
-      "website": "https://upscaleai.com",
-      "current_sector": "AI网络基础设施",
-      "company_evidence_quotes": [
-        "A pure-play AI networking infrastructure company",
-        "a year-old startup building networking chips purpose-made for artificial intelligence data centers"
-      ],
-      "products": [
-        {
-          "name": "AI网络全栈组合（硅、系统、软件）",
-          "evidence_quotes": [
-            "Upscale AI is reimagining networking for the AI era with a full-stack portfolio spanning silicon, systems, and software. Through a unified, open-standard AI fabric, the company connects accelerators, memory, and storage into a single high-performance AI engine purpose-built to eliminate network bottlenecks across large-scale, synchronized AI workloads, including training and inference of frontier models."
-          ]
-        },
-        {
-          "name": "SkyHammer芯片（Scale-up交换机）",
-          "evidence_quotes": [
-            "Upscale says its scale-up line delivers what it calls deterministic latency, meaning data-movement speeds can be known in advance and unexpected stalls avoided. The capability runs on a custom chip the company calls SkyHammer, which supports open protocols built for this kind of traffic, including UALink, a standard that lets GPUs read one another's memory as if it were local, and ESUN, an AI-tuned flavor of Ethernet."
-          ]
-        },
-        {
-          "name": "基于NVIDIA Spectrum-X的Scale-out交换机",
-          "evidence_quotes": [
-            "On the scale-out side, Upscale is leaning directly on Nvidia. In March it previewed a switch line built around Nvidia's Spectrum-X silicon, paired with SONiC, an open-source network operating system Microsoft originally created for its own cloud. Upscale has built an AI-tuned version of SONiC meant to make the notoriously fiddly software easier to run."
-          ]
-        }
-      ],
-      "customer_names": [
-        "多家超大规模云服务商",
-        "新云基础设施提供商（Neocloud运营商）"
-      ],
-      "current_classification": {
-        "product_form_id": "chip_accelerator",
-        "market_category_id": "infrastructure_compute"
-      }
-    },
-    {
-      "event_id": "EV-80e54c9a390da293",
-      "funding_insight_id": "FI-941760709039dd07",
-      "company_name": "NVIDIA",
-      "company_full_name": "Etched",
+      "event_id": "EV-d292329c0ec64c8f",
+      "funding_insight_id": "FI-05768d0b087a2431",
+      "company_name": "NP Company",
+      "company_full_name": "NP Company",
       "website": "",
-      "current_sector": "AI推理硬件/半导体",
+      "current_sector": "AI 原生工业仿真软件",
       "company_evidence_quotes": [
-        "An AI chip startup that spent four years building in near-total silence came out of stealth Tuesday"
+        "NP Company (NP Co.), an AI-native simulation software company serving the aerospace, defence, energy, electronics, data centre, and automotive industries"
       ],
       "products": [
         {
-          "name": "Sohu",
+          "name": "AI-native physics simulation software",
           "evidence_quotes": [
-            "The first, which the company calls Low Voltage Inference, runs the chip's math blocks at under half the voltage of conventional AI chips.",
-            "The second innovation, Cluster Scale Memory, creates a shared, low-latency memory pool across chips in the scale-up domain using a proprietary high-bandwidth interconnect."
+            "developing a new generation of physics simulation technology powered by transformer models pre-trained on industrial physics data",
+            "delivers results in seconds while maintaining the same level of fidelity across entire assemblies"
           ]
         }
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "chip_accelerator",
-        "market_category_id": "infrastructure_compute"
-      }
-    },
-    {
-      "event_id": "EV-e41fc65eb014893f",
-      "funding_insight_id": "FI-1c92625ce15ebcac",
-      "company_name": "NVIDIA",
-      "company_full_name": "Gradium",
-      "website": "",
-      "current_sector": "AI语音/音频模型",
-      "company_evidence_quotes": [
-        "Gradium, a Paris-based startup that offers voice AI models",
-        "Gradium was spun out of Kyutai, the French AI research lab backed by telecom billionaire Xavier Niel."
-      ],
-      "products": [
-        {
-          "name": "超低延迟语音AI模型",
-          "evidence_quotes": [
-            "Gradium is working on audio models that deliver voice at scale with ultra-low latency, meaning AI voices that respond almost instantly, without that awkward pause that often creeps into AI agent conversations.",
-            "Gradium is building audio models designed for ultra low latency voice generation. In practice, that means AI voices that can respond almost instantly instead of pausing between turns"
-          ]
-        }
-      ],
-      "customer_names": [
-        "Renault"
-      ],
-      "current_classification": {
-        "product_form_id": "model_api_service",
-        "market_category_id": "infrastructure_compute"
-      }
-    },
-    {
-      "event_id": "EV-040fc355bc12a750",
-      "funding_insight_id": "FI-006c1c557192873c",
-      "company_name": "Nvidia rival Etched",
-      "company_full_name": "Etched",
-      "website": "https://www.etched.com/",
-      "current_sector": "AI推理芯片/半导体",
-      "company_evidence_quotes": [
-        "AI chip startup Etched has raised $800 million and revealed that its backers include trading firm Jane Street and VentureTech Alliance"
-      ],
-      "products": [
-        {
-          "name": "Sohu",
-          "evidence_quotes": [
-            "Etched's VLI processor can run trillion-parameter sparse MoEs at 80% peak FLOPs without thermal throttling."
-          ]
-        },
-        {
-          "name": "Frontier Inference Clusters",
-          "evidence_quotes": [
-            "Etched also designed its entire server rack, including circuit boards, cooling plates, and networking connections, rather than just the chip itself.",
-            "It calls these systems \"frontier inference clusters,\" bundles that include the chips along with custom-designed racks and software"
-          ]
-        }
-      ],
-      "customer_names": [],
-      "current_classification": {
-        "product_form_id": "chip_accelerator",
-        "market_category_id": "infrastructure_compute"
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -10055,6 +10930,43 @@
       "customer_names": [],
       "current_classification": {
         "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-a00763037a94d512",
+      "funding_insight_id": "FI-75f3824ca5cb8cb3",
+      "company_name": "Odyssey ML",
+      "company_full_name": "Odyssey ML",
+      "website": "",
+      "current_sector": "世界模型/物理AI",
+      "company_evidence_quotes": [
+        "Odyssey, a world model AI startup founded by self-driving vehicle pioneers CEO Oliver Cameron and CTO Jeff Hawke",
+        "Odyssey ML, co-founded by self-driving veterans Oliver Cameron and Jeff Hawke, is now valued at $1.45 billion including the new capital."
+      ],
+      "products": [
+        {
+          "name": "Odyssey-2",
+          "evidence_quotes": [
+            "Odyssey's flagship product, Odyssey-2, generates interactive simulations from text or image prompts with streaming latency under 50 milliseconds."
+          ]
+        },
+        {
+          "name": "Starchild-1",
+          "evidence_quotes": [
+            "Its Starchild-1 model includes audio and spatial reasoning simultaneously."
+          ]
+        },
+        {
+          "name": "Agora-1",
+          "evidence_quotes": [
+            "Agora-1 goes further: it lets multiple humans and AI agents interact inside the same simulated environment in real time."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "model",
         "market_category_id": "infrastructure_compute"
       }
     },
@@ -10190,7 +11102,7 @@
     {
       "event_id": "EV-7b1c734882fa1ea6",
       "funding_insight_id": "FI-e703d2917e942993",
-      "company_name": "Ornn",
+      "company_name": "Ornn AI Inc.",
       "company_full_name": "Ornn AI Inc.",
       "website": "https://ornn.com",
       "current_sector": "AI 基础设施 / 算力金融市场",
@@ -10284,41 +11196,104 @@
       }
     },
     {
-      "event_id": "EV-48075ca70a5458ec",
-      "funding_insight_id": "FI-700dd2a2e57eb021",
-      "company_name": "OXMIQ",
-      "company_full_name": "OXMIQ Labs Inc.",
-      "website": "oxmiq.ai",
-      "current_sector": "AI芯片/半导体IP授权",
+      "event_id": "EV-df789745fb926bfd",
+      "funding_insight_id": "FI-813b364f86679f0d",
+      "company_name": "Overtone",
+      "company_full_name": "Overtone",
+      "website": "https://overto.ne/",
+      "current_sector": "在线约会/人工智能",
       "company_evidence_quotes": [
-        "OXMIQ Labs Inc. , a unified GPU and AI architecture company founded by Raja Koduri, today closed its $35 million Series A financing",
-        "OXMIQ is headquartered in Campbell, California, with a development site in Hyderabad, India."
+        "Overtone, a modern matchmaking company based in New York"
+      ],
+      "products": [
+        {
+          "name": "Overtone",
+          "evidence_quotes": [
+            "Overtone describes itself as “a voice- and audio-forward service, enabled by AI, that provides highly curated introductions.”",
+            "We transparently explain why we believe someone is a great match."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
+      "event_id": "EV-63dee9f748531f08",
+      "funding_insight_id": "FI-f9e179dddb3ef04f",
+      "company_name": "Oxmiq Labs",
+      "company_full_name": "Oxmiq Labs",
+      "website": "",
+      "current_sector": "AI 芯片架构授权",
+      "company_evidence_quotes": [
+        "Oxmiq is headquartered in Campbell, California, with a development site in Hyderabad, India.",
+        "Founded in 2024 and headquartered in Campbell, California, with engineering teams in Hyderabad and Bengaluru, OXMIQ is building what Koduri describes as an \"Arm for AI GPUs\"."
       ],
       "products": [
         {
           "name": "OxCore",
           "evidence_quotes": [
-            "At the center of the architecture is OxCore TM , a scalable, licensable GPU core that integrates three distinct compute engines: a CUDA®-compatible GPU engine, a tensor processing engine, and an orchestration engine (CPU) responsible for coordinating workloads and agents across the system.",
-            "OxCore tightly couples compute functionality that is typically split across three chips, and was purpose-built for near-memory compute, minimizing data movement to enhance compute and energy efficiency of AI workloads."
+            "OxCore is the product at the centre of that bet. It integrates three compute engines, a CUDA-compatible GPU engine, a tensor processing engine, and an orchestration engine that coordinates workloads across the system, functions typically split across separate chips. Oxmiq says the tighter coupling is built for near-memory compute, reducing the data movement that drives up both cost and energy use in AI workloads."
+          ]
+        },
+        {
+          "name": "OxQuilt",
+          "evidence_quotes": [
+            "OXMIQ pairs this core with OxQuilt, a flexible chiplet integration architecture. Traditional AI chip designs lock developers into a specific manufacturing foundry or memory type. OxQuilt bypasses this limitation entirely. It adapts to any supply chain, letting customers mix different logic process nodes and advanced packaging options."
+          ]
+        },
+        {
+          "name": "OxPython",
+          "evidence_quotes": [
+            "OXMIQ tackles this problem with OxPython, a dedicated software layer designed for zero-friction deployment. OxPython allows developers to run existing CUDA and PyTorch code directly on OxCore hardware. Crucially, this requires absolutely zero code modifications."
+          ]
+        }
+      ],
+      "customer_names": [
+        "AM Intelligence Labs"
+      ],
+      "current_classification": {
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-b3c7c4bff17063d8",
+      "funding_insight_id": "FI-00eb68c429786f43",
+      "company_name": "Oxmiq Labs Inc.",
+      "company_full_name": "Oxmiq Labs Inc.",
+      "website": "https://oxmiq.ai/",
+      "current_sector": "AI 芯片与可授权 GPU IP 架构",
+      "company_evidence_quotes": [
+        "Artificial intelligence chipmaking startup Oxmiq Labs Inc . says it wants to become the next Arm Holdings Plc.",
+        "OXMIQ Labs is a GPU and AI architecture company with expertise spanning every layer of the AI stack"
+      ],
+      "products": [
+        {
+          "name": "OxCore",
+          "evidence_quotes": [
+            "At the center of the architecture is OxCore TM , a scalable, licensable GPU core that integrates three distinct compute engines: a CUDA®-compatible GPU engine, a tensor processing engine, and an orchestration engine (CPU)",
+            "Oxmiq aims to simplify that process by collapsing three distinct components of an AI system into a single intellectual property block it can license to customers."
           ]
         },
         {
           "name": "OxQuilt",
           "evidence_quotes": [
             "OxQuilt TM , OXMIQ's chiplet integration architecture, combines heterogeneous compute chiplets and memory in a single package.",
-            "OxQuilt instead adapts to any supply chain, with configuration tools that let customers design across logic process nodes, memory types, interconnect standards, and advanced packaging options."
+            "Oxmiq is also developing a computing fabric called OxQuilt, which combines heterogeneous compute chiplets and memory into a single package."
           ]
         },
         {
           "name": "OxPython",
           "evidence_quotes": [
-            "OxPython TM runs existing CUDA® and PyTorch® code on OxCore without code changes, giving developers full portability across hardware.",
-            "OxPython has been validated on third-party platforms with live demos available."
+            "OxPython TM runs existing CUDA® and PyTorch® code on OxCore without code changes, giving developers full portability across hardware."
           ]
         }
       ],
       "customer_names": [
-        "Tenstorrent"
+        "AM Intelligence Labs (AMI Labs)"
       ],
       "current_classification": {
         "product_form_id": "chip_accelerator",
@@ -10365,6 +11340,48 @@
       }
     },
     {
+      "event_id": "EV-48075ca70a5458ec",
+      "funding_insight_id": "FI-700dd2a2e57eb021",
+      "company_name": "OXMIQ Labs Inc.",
+      "company_full_name": "OXMIQ Labs Inc.",
+      "website": "oxmiq.ai",
+      "current_sector": "AI芯片/半导体IP授权",
+      "company_evidence_quotes": [
+        "OXMIQ Labs Inc. , a unified GPU and AI architecture company founded by Raja Koduri, today closed its $35 million Series A financing",
+        "OXMIQ is headquartered in Campbell, California, with a development site in Hyderabad, India."
+      ],
+      "products": [
+        {
+          "name": "OxCore",
+          "evidence_quotes": [
+            "At the center of the architecture is OxCore TM , a scalable, licensable GPU core that integrates three distinct compute engines: a CUDA®-compatible GPU engine, a tensor processing engine, and an orchestration engine (CPU) responsible for coordinating workloads and agents across the system.",
+            "OxCore tightly couples compute functionality that is typically split across three chips, and was purpose-built for near-memory compute, minimizing data movement to enhance compute and energy efficiency of AI workloads."
+          ]
+        },
+        {
+          "name": "OxQuilt",
+          "evidence_quotes": [
+            "OxQuilt TM , OXMIQ's chiplet integration architecture, combines heterogeneous compute chiplets and memory in a single package.",
+            "OxQuilt instead adapts to any supply chain, with configuration tools that let customers design across logic process nodes, memory types, interconnect standards, and advanced packaging options."
+          ]
+        },
+        {
+          "name": "OxPython",
+          "evidence_quotes": [
+            "OxPython TM runs existing CUDA® and PyTorch® code on OxCore without code changes, giving developers full portability across hardware.",
+            "OxPython has been validated on third-party platforms with live demos available."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Tenstorrent"
+      ],
+      "current_classification": {
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-39b075c62ba4e927",
       "funding_insight_id": "FI-4940d296a418f48f",
       "company_name": "P-1 AI, Inc.",
@@ -10399,7 +11416,7 @@
     {
       "event_id": "EV-2dff88f85e3bce86",
       "funding_insight_id": "FI-fe9a9306d574c1ba",
-      "company_name": "Pangram",
+      "company_name": "Pangram Labs",
       "company_full_name": "Pangram Labs",
       "website": "pangram.com",
       "current_sector": "AI 内容检测",
@@ -10584,7 +11601,7 @@
     {
       "event_id": "EV-dfddbb260b3d1c77",
       "funding_insight_id": "FI-d526352a2ba20eed",
-      "company_name": "Pit",
+      "company_name": "Pitdotcom Sweden AB",
       "company_full_name": "Pitdotcom Sweden AB",
       "website": "https://pit.com",
       "current_sector": "企业 AI 原生定制软件 / AI 产品团队即服务",
@@ -10748,7 +11765,7 @@
     {
       "event_id": "EV-7abd8ec418f1e7f3",
       "funding_insight_id": "FI-2e4c307c0be32b8e",
-      "company_name": "Positron",
+      "company_name": "Positron AI",
       "company_full_name": "Positron AI",
       "website": "positron.ai",
       "current_sector": "AI 推理硬件/半导体",
@@ -10897,32 +11914,6 @@
       }
     },
     {
-      "event_id": "EV-e61effb7ada8508f",
-      "funding_insight_id": "FI-2d52edc6ddaedef8",
-      "company_name": "PYMNTS | This",
-      "company_full_name": "Taktile",
-      "website": "",
-      "current_sector": "金融科技，AI决策自动化",
-      "company_evidence_quotes": [
-        "Taktile is betting that the market for autonomous financial decision-making is arriving faster than many executives realize. The company’s platform deploys AI agents designed specifically for regulated financial institutions, helping banks automate some of their most complex operational workflows while maintaining regulatory oversight.",
-        "The company’s modular Agentic Decision Platform enables banks and insurers to combine AI agents, rules, relevant context and human oversight to automate and optimize decisions such as approving customers, reimbursing claims, stopping fraud and underwriting business loans"
-      ],
-      "products": [
-        {
-          "name": "Agentic Decision Platform",
-          "evidence_quotes": [
-            "The company’s modular Agentic Decision Platform enables banks and insurers to combine AI agents, rules, relevant context and human oversight to automate and optimize decisions such as approving customers, reimbursing claims, stopping fraud and underwriting business loans",
-            "The company also encourages customers to operate AI in “shadow mode,” allowing institutions to compare AI recommendations against existing human workflows before giving systems operational authority."
-          ]
-        }
-      ],
-      "customer_names": [],
-      "current_classification": {
-        "product_form_id": "enterprise_software_platform",
-        "market_category_id": "industry_applications"
-      }
-    },
-    {
       "event_id": "EV-acdeebead5324344",
       "funding_insight_id": "FI-f3044a2b4363e0fd",
       "company_name": "Qodo",
@@ -10991,89 +11982,9 @@
       }
     },
     {
-      "event_id": "EV-63dee9f748531f08",
-      "funding_insight_id": "FI-f9e179dddb3ef04f",
-      "company_name": "Raja Koduri’s Oxmiq",
-      "company_full_name": "Oxmiq Labs",
-      "website": "",
-      "current_sector": "AI 芯片架构授权",
-      "company_evidence_quotes": [
-        "Oxmiq is headquartered in Campbell, California, with a development site in Hyderabad, India.",
-        "Founded in 2024 and headquartered in Campbell, California, with engineering teams in Hyderabad and Bengaluru, OXMIQ is building what Koduri describes as an \"Arm for AI GPUs\"."
-      ],
-      "products": [
-        {
-          "name": "OxCore",
-          "evidence_quotes": [
-            "OxCore is the product at the centre of that bet. It integrates three compute engines, a CUDA-compatible GPU engine, a tensor processing engine, and an orchestration engine that coordinates workloads across the system, functions typically split across separate chips. Oxmiq says the tighter coupling is built for near-memory compute, reducing the data movement that drives up both cost and energy use in AI workloads."
-          ]
-        },
-        {
-          "name": "OxQuilt",
-          "evidence_quotes": [
-            "OXMIQ pairs this core with OxQuilt, a flexible chiplet integration architecture. Traditional AI chip designs lock developers into a specific manufacturing foundry or memory type. OxQuilt bypasses this limitation entirely. It adapts to any supply chain, letting customers mix different logic process nodes and advanced packaging options."
-          ]
-        },
-        {
-          "name": "OxPython",
-          "evidence_quotes": [
-            "OXMIQ tackles this problem with OxPython, a dedicated software layer designed for zero-friction deployment. OxPython allows developers to run existing CUDA and PyTorch code directly on OxCore hardware. Crucially, this requires absolutely zero code modifications."
-          ]
-        }
-      ],
-      "customer_names": [
-        "AM Intelligence Labs"
-      ],
-      "current_classification": {
-        "product_form_id": "chip_accelerator",
-        "market_category_id": "infrastructure_compute"
-      }
-    },
-    {
-      "event_id": "EV-b3c7c4bff17063d8",
-      "funding_insight_id": "FI-00eb68c429786f43",
-      "company_name": "Raja Koduri's Oxmiq Labs",
-      "company_full_name": "Oxmiq Labs Inc.",
-      "website": "https://oxmiq.ai/",
-      "current_sector": "AI 芯片与可授权 GPU IP 架构",
-      "company_evidence_quotes": [
-        "Artificial intelligence chipmaking startup Oxmiq Labs Inc . says it wants to become the next Arm Holdings Plc.",
-        "OXMIQ Labs is a GPU and AI architecture company with expertise spanning every layer of the AI stack"
-      ],
-      "products": [
-        {
-          "name": "OxCore",
-          "evidence_quotes": [
-            "At the center of the architecture is OxCore TM , a scalable, licensable GPU core that integrates three distinct compute engines: a CUDA®-compatible GPU engine, a tensor processing engine, and an orchestration engine (CPU)",
-            "Oxmiq aims to simplify that process by collapsing three distinct components of an AI system into a single intellectual property block it can license to customers."
-          ]
-        },
-        {
-          "name": "OxQuilt",
-          "evidence_quotes": [
-            "OxQuilt TM , OXMIQ's chiplet integration architecture, combines heterogeneous compute chiplets and memory in a single package.",
-            "Oxmiq is also developing a computing fabric called OxQuilt, which combines heterogeneous compute chiplets and memory into a single package."
-          ]
-        },
-        {
-          "name": "OxPython",
-          "evidence_quotes": [
-            "OxPython TM runs existing CUDA® and PyTorch® code on OxCore without code changes, giving developers full portability across hardware."
-          ]
-        }
-      ],
-      "customer_names": [
-        "AM Intelligence Labs (AMI Labs)"
-      ],
-      "current_classification": {
-        "product_form_id": "chip_accelerator",
-        "market_category_id": "infrastructure_compute"
-      }
-    },
-    {
       "event_id": "EV-474d5a8ffca11ed9",
       "funding_insight_id": "FI-7061bf1fb99b60ef",
-      "company_name": "Realm",
+      "company_name": "Realm Technologies Oy",
       "company_full_name": "Realm Technologies Oy",
       "website": "https://www.withrealm.com/",
       "current_sector": "企业销售 AI 自动化",
@@ -11104,7 +12015,7 @@
     {
       "event_id": "EV-4e1d2d6105d09d24",
       "funding_insight_id": "FI-2296e5e800f2670f",
-      "company_name": "Rebellions",
+      "company_name": "Rebellions Inc.",
       "company_full_name": "Rebellions Inc.",
       "website": "",
       "current_sector": "AI芯片/半导体",
@@ -11145,7 +12056,7 @@
     {
       "event_id": "EV-12a42b0aabee236f",
       "funding_insight_id": "FI-65a8d1e29665fc99",
-      "company_name": "Recursive Superintelligence",
+      "company_name": "Recursive Superintelligence Inc.",
       "company_full_name": "Recursive Superintelligence Inc.",
       "website": "",
       "current_sector": "前沿AI研究与基础模型",
@@ -11391,6 +12302,32 @@
       }
     },
     {
+      "event_id": "EV-55e7c286e95be405",
+      "funding_insight_id": "FI-c796f2e7d43a0ecb",
+      "company_name": "River AI",
+      "company_full_name": "River AI",
+      "website": "https://river.ai/",
+      "current_sector": "AI 基础设施与模型训练",
+      "company_evidence_quotes": [
+        "River AI, an AI startup founded by xAI co-founder Igor Babuschkin, has secured $1.1 billion in funding",
+        "River is headquartered in Palo Alto, California."
+      ],
+      "products": [
+        {
+          "name": "River API",
+          "evidence_quotes": [
+            "River already offers an API, billed per 1 million tokens , with rates dependent on the open model used. The API allows developers to use both reinforcement learning (RL) and low-rank adaptation (LoRA) fine-tuning on the models.",
+            "River said its API can complete complex reinforcement learning training runs in approximately 15 to 20 minutes while delivering costs that are two to four times lower than closed-source alternatives."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "model_api_service",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-52bf48005db3461a",
       "funding_insight_id": "FI-7d220ce89ea2b3c9",
       "company_name": "Robust.AI",
@@ -11547,6 +12484,43 @@
       }
     },
     {
+      "event_id": "EV-a8dc5c859946f336",
+      "funding_insight_id": "FI-47f51070cf7333d0",
+      "company_name": "SambaNova Systems",
+      "company_full_name": "SambaNova Systems",
+      "website": "",
+      "current_sector": "AI芯片/推理硬件",
+      "company_evidence_quotes": [
+        "AI chip company SambaNova Systems",
+        "the Palo Alto, California-based startup company"
+      ],
+      "products": [
+        {
+          "name": "SN40L",
+          "evidence_quotes": [
+            "SambaNova launched its SN40L in September 2023, available in the cloud, and on-premises from November 2023"
+          ]
+        },
+        {
+          "name": "SN50",
+          "evidence_quotes": [
+            "Its next-generation SN50, unveiled in February 2026, is due to begin shipping to customers in the second half of 2026",
+            "The company fits multi-trillion-parameter models onto a single rack which helps them run quickly."
+          ]
+        }
+      ],
+      "customer_names": [
+        "JPMorganChase",
+        "Saudi Aramco",
+        "Intel",
+        "SoftBank"
+      ],
+      "current_classification": {
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-e3382d1c1d7db751",
       "funding_insight_id": "FI-6b09bb9cfd443696",
       "company_name": "Sarvam",
@@ -11625,35 +12599,6 @@
       }
     },
     {
-      "event_id": "EV-2bb63a3015195f9b",
-      "funding_insight_id": "FI-0429a6418b0774c6",
-      "company_name": "Seltz",
-      "company_full_name": "Seltz Inc.",
-      "website": "https://seltz.ai/",
-      "current_sector": "AI智能体基础设施",
-      "company_evidence_quotes": [
-        "Agentic search startup Seltz Inc. said today it has bagged $12.5 million in seed funding to build a more optimal infrastructure so that artificial intelligence agents can find their way around the web.",
-        "Seltz is a Web Knowledge API that provides real-time, context-engineered data from the live web, optimized for use in AI systems and applications."
-      ],
-      "products": [
-        {
-          "name": "Web Knowledge API",
-          "evidence_quotes": [
-            "Seltz is a Web Knowledge API that provides real-time, context-engineered data from the live web, optimized for use in AI systems and applications.",
-            "Seltz has built its entire search stack, including the crawlers, index, retrieval models and ranking systems."
-          ]
-        }
-      ],
-      "customer_names": [
-        "一家基础实验室",
-        "多家构建智能体工作流的公司"
-      ],
-      "current_classification": {
-        "product_form_id": "model_api_service",
-        "market_category_id": "infrastructure_compute"
-      }
-    },
-    {
       "event_id": "EV-f54ec32c67e9447c",
       "funding_insight_id": "FI-ee45ffa2ccc64a4c",
       "company_name": "Seltz",
@@ -11688,34 +12633,32 @@
       }
     },
     {
-      "event_id": "EV-4c247b02485de09b",
-      "funding_insight_id": "FI-c067d717403c8e3b",
-      "company_name": "Sequoia-backed Edra",
-      "company_full_name": "Edra",
-      "website": "edra.ai",
-      "current_sector": "企业AI/知识管理",
+      "event_id": "EV-2bb63a3015195f9b",
+      "funding_insight_id": "FI-0429a6418b0774c6",
+      "company_name": "Seltz Inc.",
+      "company_full_name": "Seltz Inc.",
+      "website": "https://seltz.ai/",
+      "current_sector": "AI智能体基础设施",
       "company_evidence_quotes": [
-        "Today, startup Edra announced $30 million Series A led by Sequoia, which included investment from 8VC and A*z.",
-        "Edra is out of stealth. We're announcing our Series A led by Sequoia Capital, 8VC, A*, and HubSpot Ventures, bringing our total funding to $30M+."
+        "Agentic search startup Seltz Inc. said today it has bagged $12.5 million in seed funding to build a more optimal infrastructure so that artificial intelligence agents can find their way around the web.",
+        "Seltz is a Web Knowledge API that provides real-time, context-engineered data from the live web, optimized for use in AI systems and applications."
       ],
       "products": [
         {
-          "name": "Living Playbook",
+          "name": "Web Knowledge API",
           "evidence_quotes": [
-            "Edra builds a Living Playbook by connecting to a customer’s existing systems within minutes and ingesting standard operating procedures, tickets, and communications without manual configuration. From there, it continuously learns from actual employee behaviour and surfaces suggested improvements. Unlike static documentation or knowledge bases, Living Playbooks evolve as the business changes.",
-            "The platform connects to a customer’s existing systems within minutes, ingesting standard operating procedures, tickets, and internal communications without manual configuration. It then continuously learns from real employee behaviour and suggests improvements over time. Unlike static documentation or traditional knowledge bases, Living Playbooks evolve as the business changes."
+            "Seltz is a Web Knowledge API that provides real-time, context-engineered data from the live web, optimized for use in AI systems and applications.",
+            "Seltz has built its entire search stack, including the crawlers, index, retrieval models and ranking systems."
           ]
         }
       ],
       "customer_names": [
-        "HubSpot",
-        "ASOS",
-        "Cushman & Wakefield",
-        "Ergeon"
+        "一家基础实验室",
+        "多家构建智能体工作流的公司"
       ],
       "current_classification": {
-        "product_form_id": "enterprise_software_platform",
-        "market_category_id": "enterprise_applications"
+        "product_form_id": "model_api_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -11858,6 +12801,32 @@
       }
     },
     {
+      "event_id": "EV-d5aa723446feebbb",
+      "funding_insight_id": "FI-a068b8f09b73607c",
+      "company_name": "SRE.ai",
+      "company_full_name": "SRE.ai",
+      "website": "https://www.sre.ai",
+      "current_sector": "企业级DevOps AI智能体",
+      "company_evidence_quotes": [
+        "The company is offering natural language AI agents that can perform complex enterprise DevOps workflows like continuous integration and testing.",
+        "Location: San Francisco"
+      ],
+      "products": [
+        {
+          "name": "SRE.ai Platform",
+          "evidence_quotes": [
+            "The company is offering natural language AI agents that can perform complex enterprise DevOps workflows like continuous integration and testing.",
+            "we provide an AI-native control plane that: Detects and prevents risky changes before they break production Orchestrates release cycles across teams and business units Answers plain-language questions"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "developer_tool",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
       "event_id": "EV-f2143ba3124a2105",
       "funding_insight_id": "FI-f95063bd40499843",
       "company_name": "Stack AI",
@@ -11910,6 +12879,32 @@
       }
     },
     {
+      "event_id": "EV-7add33b4c74dbf1a",
+      "funding_insight_id": "FI-8478addb443b9e38",
+      "company_name": "Sycamore",
+      "company_full_name": "Sycamore",
+      "website": "https://sycamore.so/",
+      "current_sector": "企业AI智能体编排",
+      "company_evidence_quotes": [
+        "Sycamore on Monday announced a $65 million seed",
+        "Sycamore Labs is a Palo Alto-based startup"
+      ],
+      "products": [
+        {
+          "name": "Sycamore平台",
+          "evidence_quotes": [
+            "attempting to build the whole agentic orchestration layer that handles everything from coding to back-end infrastructure, stepping in wherever needed.",
+            "starts with the problem itself and then designs and builds the right solution from scratch, whether that involves agents, back-end systems, front ends, or data integrations"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
       "event_id": "EV-b695dedc9acda5dc",
       "funding_insight_id": "FI-9b8af1b829b23f08",
       "company_name": "Sycamore",
@@ -11938,7 +12933,7 @@
     {
       "event_id": "EV-c5643983538c6513",
       "funding_insight_id": "FI-66cbf5e15d2306ff",
-      "company_name": "Sycamore Labs",
+      "company_name": "Sycamore Labs, Inc.",
       "company_full_name": "Sycamore Labs, Inc.",
       "website": "https://sycamore.so/",
       "current_sector": "企业 AI 智能体基础设施",
@@ -11961,6 +12956,32 @@
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
         "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-e61effb7ada8508f",
+      "funding_insight_id": "FI-2d52edc6ddaedef8",
+      "company_name": "Taktile",
+      "company_full_name": "Taktile",
+      "website": "",
+      "current_sector": "金融科技，AI决策自动化",
+      "company_evidence_quotes": [
+        "Taktile is betting that the market for autonomous financial decision-making is arriving faster than many executives realize. The company’s platform deploys AI agents designed specifically for regulated financial institutions, helping banks automate some of their most complex operational workflows while maintaining regulatory oversight.",
+        "The company’s modular Agentic Decision Platform enables banks and insurers to combine AI agents, rules, relevant context and human oversight to automate and optimize decisions such as approving customers, reimbursing claims, stopping fraud and underwriting business loans"
+      ],
+      "products": [
+        {
+          "name": "Agentic Decision Platform",
+          "evidence_quotes": [
+            "The company’s modular Agentic Decision Platform enables banks and insurers to combine AI agents, rules, relevant context and human oversight to automate and optimize decisions such as approving customers, reimbursing claims, stopping fraud and underwriting business loans",
+            "The company also encourages customers to operate AI in “shadow mode,” allowing institutions to compare AI recommendations against existing human workflows before giving systems operational authority."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -11996,7 +13017,7 @@
     {
       "event_id": "EV-9fc8916c19c19f99",
       "funding_insight_id": "FI-256d9398b7fed31d",
-      "company_name": "Telli",
+      "company_name": "telli technologies GmbH",
       "company_full_name": "telli technologies GmbH",
       "website": "https://www.telli.com",
       "current_sector": "AI 语音智能体 / 呼叫运营自动化",
@@ -12021,9 +13042,40 @@
       }
     },
     {
+      "event_id": "EV-a64fab2ce6bc6c4c",
+      "funding_insight_id": "FI-9e322d5bafc9c0c7",
+      "company_name": "telli technologies GmbH",
+      "company_full_name": "telli technologies GmbH",
+      "website": "https://telli.com/",
+      "current_sector": "AI智能体/语音AI/客户运营自动化",
+      "company_evidence_quotes": [
+        "telli , a Berlin-based startup building AI that runs customer-facing operations for B2C companies"
+      ],
+      "products": [
+        {
+          "name": "telli AI Voice Platform",
+          "evidence_quotes": [
+            "The platform helps B2C companies run customer-facing operations end-to-end with AI. The startup notes that businesses can build and deploy AI agents across channels, manage conversations, review calls, improve performance, and automate the operational work behind sales, service, and support.",
+            "Deploy agents in 20+ languages with native fluency."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Sky",
+        "Enpal",
+        "McMakler",
+        "Viessmann",
+        "Vaillant"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
       "event_id": "EV-3b40ec144e5db22c",
       "funding_insight_id": "FI-f963f997b1209180",
-      "company_name": "Temporal",
+      "company_name": "Temporal Technologies",
       "company_full_name": "Temporal Technologies",
       "website": "https://temporal.io",
       "current_sector": "AI 基础设施 / 持久化执行层",
@@ -12143,6 +13195,38 @@
       }
     },
     {
+      "event_id": "EV-13ec78dfdbca678b",
+      "funding_insight_id": "FI-be3fbacdf2cc6958",
+      "company_name": "Together AI",
+      "company_full_name": "Together AI",
+      "website": "together.ai",
+      "current_sector": "AI 基础设施 / 新云（Neocloud）",
+      "company_evidence_quotes": [
+        "Together AI — an AI neocloud that rents out Nvidia GPU clusters and other AI-specific infrastructure",
+        "Together AI, a San Francisco startup that runs open-source models for enterprises"
+      ],
+      "products": [
+        {
+          "name": "AI Neocloud 基础设施",
+          "evidence_quotes": [
+            "an AI neocloud that rents out Nvidia GPU clusters and other AI-specific infrastructure",
+            "the company invests heavily in research like FlashAttention-4 for NVIDIA Blackwell and its own Megakernel and together.compile optimizations"
+          ]
+        }
+      ],
+      "customer_names": [
+        "Cursor",
+        "Cognition",
+        "Decagon",
+        "ElevenLabs",
+        "Suno"
+      ],
+      "current_classification": {
+        "product_form_id": "compute_cloud_service",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-c46e427fedbf518d",
       "funding_insight_id": "FI-bd3ea9a7f8f67164",
       "company_name": "Trace",
@@ -12224,7 +13308,7 @@
     {
       "event_id": "EV-2dff32c1b6f813e4",
       "funding_insight_id": "FI-a268ddc643dc983b",
-      "company_name": "TYLsemi",
+      "company_name": "TYLsemi Inc.",
       "company_full_name": "TYLsemi Inc.",
       "website": "https://www.tylsemi.ai/",
       "current_sector": "半导体与AI基础设施",
@@ -12286,9 +13370,49 @@
       }
     },
     {
+      "event_id": "EV-236cbc2d64f0c455",
+      "funding_insight_id": "FI-3630ce639ee99761",
+      "company_name": "Upscale AI",
+      "company_full_name": "Upscale AI",
+      "website": "https://upscaleai.com",
+      "current_sector": "AI网络基础设施",
+      "company_evidence_quotes": [
+        "A pure-play AI networking infrastructure company",
+        "a year-old startup building networking chips purpose-made for artificial intelligence data centers"
+      ],
+      "products": [
+        {
+          "name": "AI网络全栈组合（硅、系统、软件）",
+          "evidence_quotes": [
+            "Upscale AI is reimagining networking for the AI era with a full-stack portfolio spanning silicon, systems, and software. Through a unified, open-standard AI fabric, the company connects accelerators, memory, and storage into a single high-performance AI engine purpose-built to eliminate network bottlenecks across large-scale, synchronized AI workloads, including training and inference of frontier models."
+          ]
+        },
+        {
+          "name": "SkyHammer芯片（Scale-up交换机）",
+          "evidence_quotes": [
+            "Upscale says its scale-up line delivers what it calls deterministic latency, meaning data-movement speeds can be known in advance and unexpected stalls avoided. The capability runs on a custom chip the company calls SkyHammer, which supports open protocols built for this kind of traffic, including UALink, a standard that lets GPUs read one another's memory as if it were local, and ESUN, an AI-tuned flavor of Ethernet."
+          ]
+        },
+        {
+          "name": "基于NVIDIA Spectrum-X的Scale-out交换机",
+          "evidence_quotes": [
+            "On the scale-out side, Upscale is leaning directly on Nvidia. In March it previewed a switch line built around Nvidia's Spectrum-X silicon, paired with SONiC, an open-source network operating system Microsoft originally created for its own cloud. Upscale has built an AI-tuned version of SONiC meant to make the notoriously fiddly software easier to run."
+          ]
+        }
+      ],
+      "customer_names": [
+        "多家超大规模云服务商",
+        "新云基础设施提供商（Neocloud运营商）"
+      ],
+      "current_classification": {
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-305ec93673f4f12e",
       "funding_insight_id": "FI-2330a54f10e6b143",
-      "company_name": "Valarian",
+      "company_name": "Valarian Technologies Ltd.",
       "company_full_name": "Valarian Technologies Ltd.",
       "website": "https://www.valarian.com/",
       "current_sector": "主权AI基础设施",
@@ -12321,7 +13445,7 @@
     {
       "event_id": "EV-88f4ee8cd57bdf42",
       "funding_insight_id": "FI-aaf38fcf7063d61c",
-      "company_name": "Vapi",
+      "company_name": "Vapi Inc.",
       "company_full_name": "Vapi Inc.",
       "website": "https://vapi.ai/",
       "current_sector": "企业语音 AI 基础设施",
@@ -12594,6 +13718,31 @@
       }
     },
     {
+      "event_id": "EV-0ade039d36e077ae",
+      "funding_insight_id": "FI-062db0d45e38151a",
+      "company_name": "Wonderful",
+      "company_full_name": "Wonderful",
+      "website": "wonderful.ai",
+      "current_sector": "企业AI智能体平台",
+      "company_evidence_quotes": [
+        "Wonderful, the enterprise AI agent platform, today announced it has raised $150 million in a Series B funding round",
+        "Wonderful is an enterprise AI agent platform made for deploying agents in complex enterprise environments."
+      ],
+      "products": [
+        {
+          "name": "Wonderful Enterprise AI Agent Platform",
+          "evidence_quotes": [
+            "The company is building a horizontal enterprise foundation that can be activated across multiple use cases and workflows, rather than delivering isolated point solutions. The architecture is model-agnostic by design, continuously benchmarking and selecting the best-performing models for each use case while remaining flexible as the model landscape evolves. It incorporates state-of-the-art engineering practices, including harness-based evaluation and self-healing system design, to ensure agents remain reliable in production."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-a84ec4216d3ded6d",
       "funding_insight_id": "FI-cbfbc5f84ea80cb4",
       "company_name": "Wonderful",
@@ -12619,149 +13768,35 @@
       }
     },
     {
-      "event_id": "EV-d5aa723446feebbb",
-      "funding_insight_id": "FI-a068b8f09b73607c",
-      "company_name": "Y Combinator alum SRE.ai",
-      "company_full_name": "SRE.ai",
-      "website": "https://www.sre.ai",
-      "current_sector": "企业级DevOps AI智能体",
+      "event_id": "EV-aa33ca051f3a7f78",
+      "funding_insight_id": "FI-535f1ec650916aca",
+      "company_name": "Wonderful",
+      "company_full_name": "Wonderful",
+      "website": "wonderful.ai",
+      "current_sector": "企业级AI智能体部署平台",
       "company_evidence_quotes": [
-        "The company is offering natural language AI agents that can perform complex enterprise DevOps workflows like continuous integration and testing.",
-        "Location: San Francisco"
+        "Wonderful , the Amsterdam-based enterprise AI agent platform",
+        "Wonderful combines a powerful AI platform with best-in-class local deployment to deliver enterprise-grade AI agents to every market and every language."
       ],
       "products": [
         {
-          "name": "SRE.ai Platform",
+          "name": "Wonderful企业AI智能体平台",
           "evidence_quotes": [
-            "The company is offering natural language AI agents that can perform complex enterprise DevOps workflows like continuous integration and testing.",
-            "we provide an AI-native control plane that: Detects and prevents risky changes before they break production Orchestrates release cycles across teams and business units Answers plain-language questions"
-          ]
-        }
-      ],
-      "customer_names": [],
-      "current_classification": {
-        "product_form_id": "developer_tool",
-        "market_category_id": "enterprise_applications"
-      }
-    },
-    {
-      "event_id": "EV-e4b3a19529576778",
-      "funding_insight_id": "FI-9c29101ffbee6a0c",
-      "company_name": "Y Combinator grad",
-      "company_full_name": "Harper",
-      "website": "",
-      "current_sector": "保险科技",
-      "company_evidence_quotes": [
-        "the AI-native insurance brokerage Harper",
-        "an almost fully autonomous licensed commercial insurance agency. It matches small- to mid-sized businesses with more than 160 insurance carriers to assist with workers’ compensation, as well as general and professional liability."
-      ],
-      "products": [
-        {
-          "name": "Harper AI保险经纪平台",
-          "evidence_quotes": [
-            "an almost fully autonomous licensed commercial insurance agency. It matches small- to mid-sized businesses with more than 160 insurance carriers to assist with workers’ compensation, as well as general and professional liability.",
-            "AI handles the operational weight. Submission routing, underwriter follow-ups, document collection, pipeline management"
-          ]
-        }
-      ],
-      "customer_names": [],
-      "current_classification": {
-        "product_form_id": "end_user_application",
-        "market_category_id": "industry_applications"
-      }
-    },
-    {
-      "event_id": "EV-9e678b626c2a5c83",
-      "funding_insight_id": "FI-f96d2a4594d9329f",
-      "company_name": "Y Combinator-backed Mandel AI",
-      "company_full_name": "Mandel AI",
-      "website": "mandel.ai",
-      "current_sector": "供应链 AI",
-      "company_evidence_quotes": [
-        "Mandel AI has raised $3.9 million Seed funding to build coordination for global supply chains.",
-        "Mandel AI has developed an AI supply chain coordinator that automates procurement by managing supplier communications and detecting disruptions."
-      ],
-      "products": [
-        {
-          "name": "AI 供应链协调器",
-          "evidence_quotes": [
-            "The platform sits on top of existing email and ERP systems, using purpose-built AI agents to read supplier communications, extract critical data, reconcile documents such as PO confirmations and invoices, and act autonomously—following up with suppliers, flagging discrepancies, and escalating issues in accordance with company-defined rules.",
-            "One procurement manager with Mandel agents can now coordinate what used to take an entire team: reading, reconciling, and acting on hundreds of supplier emails per day, 24/7."
+            "Wonderful's platform is model-agnostic by design, continuously benchmarking and selecting the best-performing models for each use case.",
+            "The company is building a horizontal enterprise foundation that can be activated across multiple use cases and workflows, rather than delivering isolated point solutions."
           ]
         }
       ],
       "customer_names": [],
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
-        "market_category_id": "industry_applications"
-      }
-    },
-    {
-      "event_id": "EV-e12b17260d19c5ff",
-      "funding_insight_id": "FI-9396ebef5e196d53",
-      "company_name": "YC alum Adam",
-      "company_full_name": "Adam",
-      "website": "",
-      "current_sector": "AI 驱动的计算机辅助设计（CAD）",
-      "company_evidence_quotes": [
-        "Adam, a San Francisco, CA-based company building an AI-powered computer-aided design (CAD) tool"
-      ],
-      "products": [
-        {
-          "name": "文本转 3D 模型应用",
-          "evidence_quotes": [
-            "Its initial tool lets creators without CAD skills create 3D models from text prompts"
-          ]
-        },
-        {
-          "name": "AI CAD 智能体",
-          "evidence_quotes": [
-            "we blended in different interaction paradigms; for example, users selecting different parts of the 3D object and conversing with it",
-            "beginning with Onshape"
-          ]
-        }
-      ],
-      "customer_names": [],
-      "current_classification": {
-        "product_form_id": "end_user_application",
-        "market_category_id": "enterprise_applications"
-      }
-    },
-    {
-      "event_id": "EV-a64fab2ce6bc6c4c",
-      "funding_insight_id": "FI-9e322d5bafc9c0c7",
-      "company_name": "YC-backed telli",
-      "company_full_name": "telli technologies GmbH",
-      "website": "https://telli.com/",
-      "current_sector": "AI智能体/语音AI/客户运营自动化",
-      "company_evidence_quotes": [
-        "telli , a Berlin-based startup building AI that runs customer-facing operations for B2C companies"
-      ],
-      "products": [
-        {
-          "name": "telli AI Voice Platform",
-          "evidence_quotes": [
-            "The platform helps B2C companies run customer-facing operations end-to-end with AI. The startup notes that businesses can build and deploy AI agents across channels, manage conversations, review calls, improve performance, and automate the operational work behind sales, service, and support.",
-            "Deploy agents in 20+ languages with native fluency."
-          ]
-        }
-      ],
-      "customer_names": [
-        "Sky",
-        "Enpal",
-        "McMakler",
-        "Viessmann",
-        "Vaillant"
-      ],
-      "current_classification": {
-        "product_form_id": "enterprise_software_platform",
-        "market_category_id": "enterprise_applications"
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
       "event_id": "EV-14a666fc27d73a80",
       "funding_insight_id": "FI-8077351721f9c4e3",
-      "company_name": "Zaro.ai",
+      "company_name": "Work Nexus Labs Limited (trading as Zaro)",
       "company_full_name": "Work Nexus Labs Limited (trading as Zaro)",
       "website": "https://zaro.ai",
       "current_sector": "企业 AI 基础设施",

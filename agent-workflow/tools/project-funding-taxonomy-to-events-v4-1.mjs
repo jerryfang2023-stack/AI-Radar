@@ -35,6 +35,16 @@ function nameKey(value = "") {
     .trim();
 }
 
+function organizationNamesCompatible(left = "", right = "") {
+  const leftKey = nameKey(left);
+  const rightKey = nameKey(right);
+  if (!leftKey || !rightKey) return false;
+  if (leftKey === rightKey) return true;
+  const shorter = leftKey.length <= rightKey.length ? leftKey : rightKey;
+  const longer = shorter === leftKey ? rightKey : leftKey;
+  return shorter.length >= 4 && longer.includes(shorter);
+}
+
 function hash(value) {
   return crypto.createHash("sha256").update(String(value)).digest("hex").slice(0, 16);
 }
@@ -111,9 +121,13 @@ function resolveReviewedCompany(card, entitiesById, entityIdByName) {
   const canonicalName = fullName || displayName;
   const declaredId = clean(card.company?.entity_id);
   const declared = entitiesById.get(declaredId);
-  const acceptedKeys = new Set([nameKey(fullName), nameKey(displayName)].filter(Boolean));
-  if (declared && acceptedKeys.has(nameKey(declared.canonical_name))) {
+  if (declared && [fullName, displayName].some((name) => (
+    organizationNamesCompatible(name, declared.canonical_name)
+  ))) {
     return { entity_id: declaredId, company_name: canonicalName, resolution: "declared_entity_exact" };
+  }
+  if (declared) {
+    return { entity_id: declaredId, company_name: canonicalName, resolution: "declared_event_entity" };
   }
   const resolvedId = entityIdByName.get(nameKey(fullName)) || entityIdByName.get(nameKey(displayName));
   if (resolvedId) return { entity_id: resolvedId, company_name: canonicalName, resolution: "catalog_name_exact" };
