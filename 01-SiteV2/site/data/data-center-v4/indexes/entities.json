@@ -19894,15 +19894,15 @@
       "investor_kind_label": "投资机构",
       "classification_confidence": "evidence_bounded",
       "collection_status": "evidence_backed",
-      "current_round_count": 22,
+      "current_round_count": 23,
       "historical_or_ambiguous_count": 2,
-      "portfolio_company_count": 21,
+      "portfolio_company_count": 22,
       "first_disclosed_at": "2023-04-27",
-      "latest_disclosed_at": "2026-08-10",
+      "latest_disclosed_at": "2026-08-11",
       "role_counts": {
         "historical_or_ambiguous": 2,
         "lead": 2,
-        "participant": 20
+        "participant": 21
       },
       "round_codes": [
         "multi_round",
@@ -19912,7 +19912,7 @@
         "series_b_extension",
         "series_d"
       ],
-      "activity_count": 24,
+      "activity_count": 25,
       "portfolio_companies": [
         {
           "entity_id": "EN-95fb1fa9a88b393c",
@@ -19977,6 +19977,34 @@
       ],
       "latest_activities": [
         {
+          "activity_id": "IA-63af9b5bef12d1c7",
+          "funding_insight_id": "FI-d1444f877a3e580e",
+          "event_ids": [
+            "EV-55e7c286e95be405"
+          ],
+          "company_entity_id": "EN-8ab71d56a963f706",
+          "company_canonical_entity_id": "",
+          "company_name": "River AI",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "$1.1 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 1100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "11 亿美元"
+          },
+          "announced_at": "2026-08-11",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
           "activity_id": "IA-89f34375ab4f5386",
           "funding_insight_id": "FI-5d8eab3e612ca748",
           "event_ids": [
@@ -20030,34 +20058,6 @@
           "disclosure_status": "disclosed",
           "scope": "current_round",
           "role": "既有投资方（本轮参投）",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-5c1382ec817c4c3a",
-          "funding_insight_id": "FI-b965835fdaa907bc",
-          "event_ids": [
-            "EV-c64e6836b9cd2b17"
-          ],
-          "company_entity_id": "EN-95fb1fa9a88b393c",
-          "company_canonical_entity_id": "EN-95fb1fa9a88b393c",
-          "company_name": "Agave",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "A 轮",
-          "amount_original": "$15M",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 15000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1500 万美元"
-          },
-          "announced_at": "2026-07-16",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投，既有投资方",
           "role_code": "participant"
         }
       ]
@@ -20245,6 +20245,180 @@
       ]
     },
     {
+      "id": "INV-c73d9854fb920b",
+      "name": "Nvidia",
+      "aliases": [
+        "NVIDIA"
+      ],
+      "canonical_entity_id": "EN-8d4321d936320802",
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 12,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 11,
+      "first_disclosed_at": "2025-09-09",
+      "latest_disclosed_at": "2026-08-11",
+      "role_counts": {
+        "lead": 1,
+        "participant": 11
+      },
+      "round_codes": [
+        "multi_round",
+        "seed",
+        "series_a",
+        "series_c",
+        "series_f",
+        "series_g",
+        "undisclosed"
+      ],
+      "activity_count": 12,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-a83a3af1a4866fd5",
+          "canonical_entity_id": "",
+          "name": "Advanced Machine Intelligence Labs (AMI Labs)"
+        },
+        {
+          "entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "name": "Anthropic"
+        },
+        {
+          "entity_id": "EN-e647c818ac38b6ca",
+          "canonical_entity_id": "EN-e647c818ac38b6ca",
+          "name": "Elorian"
+        },
+        {
+          "entity_id": "FICO-gradium",
+          "canonical_entity_id": "",
+          "name": "Gradium"
+        },
+        {
+          "entity_id": "EN-245f1e177c5169cb",
+          "canonical_entity_id": "",
+          "name": "Hark"
+        },
+        {
+          "entity_id": "EN-c04bd5ebd10ab696",
+          "canonical_entity_id": "EN-c04bd5ebd10ab696",
+          "name": "Mistral AI"
+        },
+        {
+          "entity_id": "EN-7d3194f79e645c42",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "name": "OpenAI"
+        },
+        {
+          "entity_id": "EN-b06631033a981321",
+          "canonical_entity_id": "",
+          "name": "Recursive Superintelligence Inc."
+        },
+        {
+          "entity_id": "EN-8ab71d56a963f706",
+          "canonical_entity_id": "",
+          "name": "River AI"
+        },
+        {
+          "entity_id": "EN-816bab802b34b308",
+          "canonical_entity_id": "",
+          "name": "Together AI"
+        },
+        {
+          "entity_id": "FICO-upscale-ai",
+          "canonical_entity_id": "",
+          "name": "Upscale AI"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-ef24e0cf60db85ad",
+          "funding_insight_id": "FI-d1444f877a3e580e",
+          "event_ids": [
+            "EV-55e7c286e95be405"
+          ],
+          "company_entity_id": "EN-8ab71d56a963f706",
+          "company_canonical_entity_id": "",
+          "company_name": "River AI",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "$1.1 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 1100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "11 亿美元"
+          },
+          "announced_at": "2026-08-11",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-76328b3a57ddc9ae",
+          "funding_insight_id": "FI-f59cd4d7e9ffcb18",
+          "event_ids": [
+            "EV-44cd5e03d30c85b3"
+          ],
+          "company_entity_id": "EN-e647c818ac38b6ca",
+          "company_canonical_entity_id": "EN-e647c818ac38b6ca",
+          "company_name": "Elorian",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$55 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 55000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "5500 万美元"
+          },
+          "announced_at": "2026-07-16",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-175fceefaa8ad5c9",
+          "funding_insight_id": "FI-3bbba5a15bb40a85",
+          "event_ids": [
+            "EV-e41fc65eb014893f"
+          ],
+          "company_entity_id": "FICO-gradium",
+          "company_canonical_entity_id": "",
+          "company_name": "Gradium",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$100 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1 亿美元"
+          },
+          "announced_at": "2026-07-09",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
       "id": "INV-ed42220b00c38b",
       "name": "Bessemer Venture Partners",
       "aliases": [],
@@ -20417,6 +20591,178 @@
           "disclosure_status": "disclosed",
           "scope": "current_round",
           "role": "种子轮和A轮领投",
+          "role_code": "lead"
+        }
+      ]
+    },
+    {
+      "id": "INV-f381c3151a9bb7",
+      "name": "General Catalyst",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 11,
+      "historical_or_ambiguous_count": 2,
+      "portfolio_company_count": 11,
+      "first_disclosed_at": "2025-03-03",
+      "latest_disclosed_at": "2026-08-11",
+      "role_counts": {
+        "historical_or_ambiguous": 2,
+        "lead": 7,
+        "participant": 4
+      },
+      "round_codes": [
+        "multi_round",
+        "seed",
+        "series_a",
+        "series_c",
+        "series_d",
+        "series_e"
+      ],
+      "activity_count": 13,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-befc92b3a019d04c",
+          "canonical_entity_id": "",
+          "name": "AgentMail"
+        },
+        {
+          "entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "name": "Anthropic PBC"
+        },
+        {
+          "entity_id": "EN-2f88f41306209dd7",
+          "canonical_entity_id": "",
+          "name": "Avoca AI"
+        },
+        {
+          "entity_id": "EN-ac32f27ba7a1346f",
+          "canonical_entity_id": "",
+          "name": "Cognition"
+        },
+        {
+          "entity_id": "EN-450dcf23e621ff10",
+          "canonical_entity_id": "",
+          "name": "Engram"
+        },
+        {
+          "entity_id": "EN-049b3253f4a8e2eb",
+          "canonical_entity_id": "",
+          "name": "Factorial"
+        },
+        {
+          "entity_id": "EN-dc8a5a5bf80909de",
+          "canonical_entity_id": "",
+          "name": "General Intuition"
+        },
+        {
+          "entity_id": "EN-c04bd5ebd10ab696",
+          "canonical_entity_id": "EN-c04bd5ebd10ab696",
+          "name": "Mistral AI"
+        },
+        {
+          "entity_id": "EN-e781481ff5ffe530",
+          "canonical_entity_id": "",
+          "name": "Nace.AI"
+        },
+        {
+          "entity_id": "EN-f5cfcb570b7edac2",
+          "canonical_entity_id": "",
+          "name": "Nexus Enterprises, Inc"
+        },
+        {
+          "entity_id": "EN-8ab71d56a963f706",
+          "canonical_entity_id": "",
+          "name": "River AI"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-f4356ca54d284e17",
+          "funding_insight_id": "FI-d1444f877a3e580e",
+          "event_ids": [
+            "EV-55e7c286e95be405"
+          ],
+          "company_entity_id": "EN-8ab71d56a963f706",
+          "company_canonical_entity_id": "",
+          "company_name": "River AI",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "$1.1 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 1100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "11 亿美元"
+          },
+          "announced_at": "2026-08-11",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead"
+        },
+        {
+          "activity_id": "IA-7de0c03a9dd2a607",
+          "funding_insight_id": "FI-9e8f37e4b7cf28a5",
+          "event_ids": [
+            "EV-7283de3f3a76d22b"
+          ],
+          "company_entity_id": "EN-dc8a5a5bf80909de",
+          "company_canonical_entity_id": "",
+          "company_name": "General Intuition",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "Series A",
+          "amount_original": "$320 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 320000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3.2 亿美元"
+          },
+          "announced_at": "2026-06-25",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-f0e53763bc2abb5a",
+          "funding_insight_id": "FI-bff055b65fdb260b",
+          "event_ids": [
+            "EV-20d762872664fddb"
+          ],
+          "company_entity_id": "EN-450dcf23e621ff10",
+          "company_canonical_entity_id": "",
+          "company_name": "Engram",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "Seed",
+          "amount_original": "$98M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 98000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "9800 万美元"
+          },
+          "announced_at": "2026-06-23",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
           "role_code": "lead"
         }
       ]
@@ -20929,342 +21275,6 @@
           "scope": "current_round",
           "role": "本轮领投",
           "role_code": "lead"
-        }
-      ]
-    },
-    {
-      "id": "INV-c73d9854fb920b",
-      "name": "NVIDIA",
-      "aliases": [
-        "Nvidia"
-      ],
-      "canonical_entity_id": "EN-8d4321d936320802",
-      "investor_kind": "corporate_investor",
-      "investor_kind_label": "企业投资方",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 11,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 10,
-      "first_disclosed_at": "2025-09-09",
-      "latest_disclosed_at": "2026-07-16",
-      "role_counts": {
-        "lead": 1,
-        "participant": 10
-      },
-      "round_codes": [
-        "multi_round",
-        "seed",
-        "series_a",
-        "series_c",
-        "series_f",
-        "series_g",
-        "undisclosed"
-      ],
-      "activity_count": 11,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-a83a3af1a4866fd5",
-          "canonical_entity_id": "",
-          "name": "Advanced Machine Intelligence Labs (AMI Labs)"
-        },
-        {
-          "entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_entity_id": "EN-c70eca6b0f88f44d",
-          "name": "Anthropic"
-        },
-        {
-          "entity_id": "EN-e647c818ac38b6ca",
-          "canonical_entity_id": "EN-e647c818ac38b6ca",
-          "name": "Elorian"
-        },
-        {
-          "entity_id": "FICO-gradium",
-          "canonical_entity_id": "",
-          "name": "Gradium"
-        },
-        {
-          "entity_id": "EN-245f1e177c5169cb",
-          "canonical_entity_id": "",
-          "name": "Hark"
-        },
-        {
-          "entity_id": "EN-c04bd5ebd10ab696",
-          "canonical_entity_id": "EN-c04bd5ebd10ab696",
-          "name": "Mistral AI"
-        },
-        {
-          "entity_id": "EN-7d3194f79e645c42",
-          "canonical_entity_id": "EN-7d3194f79e645c42",
-          "name": "OpenAI"
-        },
-        {
-          "entity_id": "EN-b06631033a981321",
-          "canonical_entity_id": "",
-          "name": "Recursive Superintelligence Inc."
-        },
-        {
-          "entity_id": "EN-816bab802b34b308",
-          "canonical_entity_id": "",
-          "name": "Together AI"
-        },
-        {
-          "entity_id": "FICO-upscale-ai",
-          "canonical_entity_id": "",
-          "name": "Upscale AI"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-76328b3a57ddc9ae",
-          "funding_insight_id": "FI-f59cd4d7e9ffcb18",
-          "event_ids": [
-            "EV-44cd5e03d30c85b3"
-          ],
-          "company_entity_id": "EN-e647c818ac38b6ca",
-          "company_canonical_entity_id": "EN-e647c818ac38b6ca",
-          "company_name": "Elorian",
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "种子轮",
-          "amount_original": "$55 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 55000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "5500 万美元"
-          },
-          "announced_at": "2026-07-16",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-175fceefaa8ad5c9",
-          "funding_insight_id": "FI-3bbba5a15bb40a85",
-          "event_ids": [
-            "EV-e41fc65eb014893f"
-          ],
-          "company_entity_id": "FICO-gradium",
-          "company_canonical_entity_id": "",
-          "company_name": "Gradium",
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "种子轮",
-          "amount_original": "$100 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 100000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1 亿美元"
-          },
-          "announced_at": "2026-07-09",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-c2a7c56b7ca3b8e7",
-          "funding_insight_id": "FI-2dfbeaa7d627041d",
-          "event_ids": [
-            "EV-13ec78dfdbca678b"
-          ],
-          "company_entity_id": "EN-816bab802b34b308",
-          "company_canonical_entity_id": "",
-          "company_name": "Together AI",
-          "round": "C轮",
-          "round_code": "series_c",
-          "round_original": "Series C",
-          "amount_original": "$800 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 800000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "8 亿美元"
-          },
-          "announced_at": "2026-07-01",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投；种子轮参投",
-          "role_code": "participant"
-        }
-      ]
-    },
-    {
-      "id": "INV-f381c3151a9bb7",
-      "name": "General Catalyst",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 10,
-      "historical_or_ambiguous_count": 2,
-      "portfolio_company_count": 10,
-      "first_disclosed_at": "2025-03-03",
-      "latest_disclosed_at": "2026-06-25",
-      "role_counts": {
-        "historical_or_ambiguous": 2,
-        "lead": 6,
-        "participant": 4
-      },
-      "round_codes": [
-        "multi_round",
-        "seed",
-        "series_a",
-        "series_c",
-        "series_d",
-        "series_e"
-      ],
-      "activity_count": 12,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-befc92b3a019d04c",
-          "canonical_entity_id": "",
-          "name": "AgentMail"
-        },
-        {
-          "entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_entity_id": "EN-c70eca6b0f88f44d",
-          "name": "Anthropic PBC"
-        },
-        {
-          "entity_id": "EN-2f88f41306209dd7",
-          "canonical_entity_id": "",
-          "name": "Avoca AI"
-        },
-        {
-          "entity_id": "EN-ac32f27ba7a1346f",
-          "canonical_entity_id": "",
-          "name": "Cognition"
-        },
-        {
-          "entity_id": "EN-450dcf23e621ff10",
-          "canonical_entity_id": "",
-          "name": "Engram"
-        },
-        {
-          "entity_id": "EN-049b3253f4a8e2eb",
-          "canonical_entity_id": "",
-          "name": "Factorial"
-        },
-        {
-          "entity_id": "EN-dc8a5a5bf80909de",
-          "canonical_entity_id": "",
-          "name": "General Intuition"
-        },
-        {
-          "entity_id": "EN-c04bd5ebd10ab696",
-          "canonical_entity_id": "EN-c04bd5ebd10ab696",
-          "name": "Mistral AI"
-        },
-        {
-          "entity_id": "EN-e781481ff5ffe530",
-          "canonical_entity_id": "",
-          "name": "Nace.AI"
-        },
-        {
-          "entity_id": "EN-f5cfcb570b7edac2",
-          "canonical_entity_id": "",
-          "name": "Nexus Enterprises, Inc"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-7de0c03a9dd2a607",
-          "funding_insight_id": "FI-9e8f37e4b7cf28a5",
-          "event_ids": [
-            "EV-7283de3f3a76d22b"
-          ],
-          "company_entity_id": "EN-dc8a5a5bf80909de",
-          "company_canonical_entity_id": "",
-          "company_name": "General Intuition",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "Series A",
-          "amount_original": "$320 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 320000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3.2 亿美元"
-          },
-          "announced_at": "2026-06-25",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-f0e53763bc2abb5a",
-          "funding_insight_id": "FI-bff055b65fdb260b",
-          "event_ids": [
-            "EV-20d762872664fddb"
-          ],
-          "company_entity_id": "EN-450dcf23e621ff10",
-          "company_canonical_entity_id": "",
-          "company_name": "Engram",
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "Seed",
-          "amount_original": "$98M",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 98000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "9800 万美元"
-          },
-          "announced_at": "2026-06-23",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead"
-        },
-        {
-          "activity_id": "IA-231df2aabb782bd3",
-          "funding_insight_id": "FI-bff055b65fdb260b",
-          "event_ids": [
-            "EV-20d762872664fddb"
-          ],
-          "company_entity_id": "EN-450dcf23e621ff10",
-          "company_canonical_entity_id": "",
-          "company_name": "Engram",
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "Seed",
-          "amount_original": "$98M",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 98000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "9800 万美元"
-          },
-          "announced_at": "2026-06-23",
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "既有投资方",
-          "role_code": "historical_or_ambiguous"
         }
       ]
     },
@@ -22589,6 +22599,144 @@
           "scope": "current_round",
           "role": "本轮参投",
           "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-e6c1001c21765f",
+      "name": "AMD Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 5,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 5,
+      "first_disclosed_at": "2026-04-30",
+      "latest_disclosed_at": "2026-08-11",
+      "role_counts": {
+        "co_lead": 2,
+        "participant": 3
+      },
+      "round_codes": [
+        "multi_round",
+        "series_a",
+        "series_b"
+      ],
+      "activity_count": 5,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-ce31f92c521b7b08",
+          "canonical_entity_id": "EN-ce31f92c521b7b08",
+          "name": "Featherless.ai"
+        },
+        {
+          "entity_id": "EN-245f1e177c5169cb",
+          "canonical_entity_id": "",
+          "name": "Hark"
+        },
+        {
+          "entity_id": "FICO-7e1d6c73932aa9b0",
+          "canonical_entity_id": "",
+          "name": "Odyssey ML"
+        },
+        {
+          "entity_id": "EN-8ab71d56a963f706",
+          "canonical_entity_id": "",
+          "name": "River AI"
+        },
+        {
+          "entity_id": "EN-3c1ae4e6276005e7",
+          "canonical_entity_id": "EN-3c1ae4e6276005e7",
+          "name": "TensorWave Inc."
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-29b984ac8a9199bd",
+          "funding_insight_id": "FI-d1444f877a3e580e",
+          "event_ids": [
+            "EV-55e7c286e95be405"
+          ],
+          "company_entity_id": "EN-8ab71d56a963f706",
+          "company_canonical_entity_id": "",
+          "company_name": "River AI",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "$1.1 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 1100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "11 亿美元"
+          },
+          "announced_at": "2026-08-11",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-5563a3c2a03b63a9",
+          "funding_insight_id": "FI-479f9d5c1123dba2",
+          "event_ids": [
+            "EV-a00763037a94d512"
+          ],
+          "company_entity_id": "FICO-7e1d6c73932aa9b0",
+          "company_canonical_entity_id": "",
+          "company_name": "Odyssey ML",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "3.1亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 310000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3.1 亿美元"
+          },
+          "announced_at": "2026-06-17",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-f2361e00c180ee5b",
+          "funding_insight_id": "FI-1f714b499dc9751a",
+          "event_ids": [
+            "EV-6e516b6e68def9cf"
+          ],
+          "company_entity_id": "EN-3c1ae4e6276005e7",
+          "company_canonical_entity_id": "EN-3c1ae4e6276005e7",
+          "company_name": "TensorWave Inc.",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "3.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 350000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3.5 亿美元"
+          },
+          "announced_at": "2026-06-10",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
         }
       ]
     },
@@ -24730,139 +24878,6 @@
       ]
     },
     {
-      "id": "INV-e6c1001c21765f",
-      "name": "AMD Ventures",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 4,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 4,
-      "first_disclosed_at": "2026-04-30",
-      "latest_disclosed_at": "2026-06-17",
-      "role_counts": {
-        "co_lead": 2,
-        "participant": 2
-      },
-      "round_codes": [
-        "series_a",
-        "series_b"
-      ],
-      "activity_count": 4,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-ce31f92c521b7b08",
-          "canonical_entity_id": "EN-ce31f92c521b7b08",
-          "name": "Featherless.ai"
-        },
-        {
-          "entity_id": "EN-245f1e177c5169cb",
-          "canonical_entity_id": "",
-          "name": "Hark"
-        },
-        {
-          "entity_id": "FICO-7e1d6c73932aa9b0",
-          "canonical_entity_id": "",
-          "name": "Odyssey ML"
-        },
-        {
-          "entity_id": "EN-3c1ae4e6276005e7",
-          "canonical_entity_id": "EN-3c1ae4e6276005e7",
-          "name": "TensorWave Inc."
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-5563a3c2a03b63a9",
-          "funding_insight_id": "FI-479f9d5c1123dba2",
-          "event_ids": [
-            "EV-a00763037a94d512"
-          ],
-          "company_entity_id": "FICO-7e1d6c73932aa9b0",
-          "company_canonical_entity_id": "",
-          "company_name": "Odyssey ML",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "3.1亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 310000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3.1 亿美元"
-          },
-          "announced_at": "2026-06-17",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-f2361e00c180ee5b",
-          "funding_insight_id": "FI-1f714b499dc9751a",
-          "event_ids": [
-            "EV-6e516b6e68def9cf"
-          ],
-          "company_entity_id": "EN-3c1ae4e6276005e7",
-          "company_canonical_entity_id": "EN-3c1ae4e6276005e7",
-          "company_name": "TensorWave Inc.",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "3.5亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 350000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3.5 亿美元"
-          },
-          "announced_at": "2026-06-10",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead"
-        },
-        {
-          "activity_id": "IA-55dae6d0d03318cc",
-          "funding_insight_id": "FI-35b63d84f1f7c2b0",
-          "event_ids": [
-            "EV-450f624a6a6446ce",
-            "EV-44c9a50b99c76a70"
-          ],
-          "company_entity_id": "EN-245f1e177c5169cb",
-          "company_canonical_entity_id": "",
-          "company_name": "Hark",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "Series A",
-          "amount_original": "$700M",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 700000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "7 亿美元"
-          },
-          "announced_at": "2026-05-21",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        }
-      ]
-    },
-    {
       "id": "INV-fab7efd306c6f9",
       "name": "Founders Fund",
       "aliases": [],
@@ -25129,6 +25144,133 @@
           "disclosure_status": "disclosed",
           "scope": "current_round",
           "role": "既有投资方，本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-91885d8d9e5635",
+      "name": "Temasek",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 3,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 3,
+      "first_disclosed_at": "2026-03-12",
+      "latest_disclosed_at": "2026-08-11",
+      "role_counts": {
+        "participant": 3
+      },
+      "round_codes": [
+        "multi_round",
+        "seed",
+        "series_f"
+      ],
+      "activity_count": 3,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-a83a3af1a4866fd5",
+          "canonical_entity_id": "",
+          "name": "Advanced Machine Intelligence Labs (AMI Labs)"
+        },
+        {
+          "entity_id": "EN-7d3194f79e645c42",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "name": "OpenAI"
+        },
+        {
+          "entity_id": "EN-8ab71d56a963f706",
+          "canonical_entity_id": "",
+          "name": "River AI"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-c9acb5a7e477b4e3",
+          "funding_insight_id": "FI-d1444f877a3e580e",
+          "event_ids": [
+            "EV-55e7c286e95be405"
+          ],
+          "company_entity_id": "EN-8ab71d56a963f706",
+          "company_canonical_entity_id": "",
+          "company_name": "River AI",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "$1.1 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 1100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "11 亿美元"
+          },
+          "announced_at": "2026-08-11",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-8aa03c932afe9427",
+          "funding_insight_id": "FI-b76fffbf5d0d91bd",
+          "event_ids": [
+            "EV-d4e44892226be468"
+          ],
+          "company_entity_id": "EN-7d3194f79e645c42",
+          "company_canonical_entity_id": "EN-7d3194f79e645c42",
+          "company_name": "OpenAI",
+          "round": "F轮",
+          "round_code": "series_f",
+          "round_original": "Series F",
+          "amount_original": "$1220亿",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 122000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1220 亿美元"
+          },
+          "announced_at": "2026-03-31",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-228fc1e5942669a8",
+          "funding_insight_id": "FI-9c3c02658ff94312",
+          "event_ids": [
+            "EV-cded77b1de2db61a"
+          ],
+          "company_entity_id": "EN-a83a3af1a4866fd5",
+          "company_canonical_entity_id": "",
+          "company_name": "Advanced Machine Intelligence Labs (AMI Labs)",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "10.3亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 1030000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "10.3 亿美元"
+          },
+          "announced_at": "2026-03-12",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
           "role_code": "participant"
         }
       ]
@@ -28202,6 +28344,251 @@
             "display_zh": "1.8 亿美元"
           },
           "announced_at": "2025-10-09",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-aca994450bacd5",
+      "name": "Nat Friedman",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "individual",
+      "investor_kind_label": "个人投资者",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 2,
+      "first_disclosed_at": "2023-06-27",
+      "latest_disclosed_at": "2026-08-06",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "other_current_round": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "seed",
+        "undisclosed"
+      ],
+      "activity_count": 3,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-7ebe9a17c4d4c271",
+          "canonical_entity_id": "",
+          "name": "Mechanize"
+        },
+        {
+          "entity_id": "EN-7209ec6f68ac0bcd",
+          "canonical_entity_id": "",
+          "name": "Reka"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-4e3cad5c32a788c4",
+          "funding_insight_id": "FI-ad56bb800ab98d44",
+          "event_ids": [
+            "EV-cfbfc6c80338aa12"
+          ],
+          "company_entity_id": "EN-7ebe9a17c4d4c271",
+          "company_canonical_entity_id": "",
+          "company_name": "Mechanize",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$1.5B",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 1500000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "15 亿美元"
+          },
+          "announced_at": "2026-08-06",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-1d34c9b2d73f5093",
+          "funding_insight_id": "FI-664cc90f57688153",
+          "event_ids": [
+            "EV-44a4e92c03a31ab1"
+          ],
+          "company_entity_id": "EN-ce65fa41b16c33ff",
+          "company_canonical_entity_id": "",
+          "company_name": "Viktor",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "Series A",
+          "amount_original": "€64.7 million ($75 million)",
+          "amount_normalized": {
+            "currency": "EUR",
+            "value": 64700000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "6470 万欧元"
+          },
+          "announced_at": "2026-05-20",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "既有投资方",
+          "role_code": "historical_or_ambiguous"
+        },
+        {
+          "activity_id": "IA-4f4170604df92c78",
+          "funding_insight_id": "FI-2959f95168aa0a55",
+          "event_ids": [
+            "EV-6e79974732a5db6b"
+          ],
+          "company_entity_id": "EN-7209ec6f68ac0bcd",
+          "company_canonical_entity_id": "",
+          "company_name": "Reka",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "未披露",
+          "amount_original": "$58 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 58000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "5800 万美元"
+          },
+          "announced_at": "2023-06-27",
+          "disclosure_status": "partially_disclosed",
+          "scope": "current_round",
+          "role": "本轮天使投资人",
+          "role_code": "other_current_round"
+        }
+      ]
+    },
+    {
+      "id": "INV-41b26475abfce6",
+      "name": "Patrick Collison",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 2,
+      "first_disclosed_at": "2025-08-01",
+      "latest_disclosed_at": "2026-08-06",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "participant": 2
+      },
+      "round_codes": [
+        "seed",
+        "series_a"
+      ],
+      "activity_count": 3,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-50e2a4156631df49",
+          "canonical_entity_id": "",
+          "name": "Fundamental Research Labs"
+        },
+        {
+          "entity_id": "EN-7ebe9a17c4d4c271",
+          "canonical_entity_id": "",
+          "name": "Mechanize"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-7b537e6b3eef1854",
+          "funding_insight_id": "FI-ad56bb800ab98d44",
+          "event_ids": [
+            "EV-cfbfc6c80338aa12"
+          ],
+          "company_entity_id": "EN-7ebe9a17c4d4c271",
+          "company_canonical_entity_id": "",
+          "company_name": "Mechanize",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$1.5B",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 1500000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "15 亿美元"
+          },
+          "announced_at": "2026-08-06",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-2f04ed01d6879b4e",
+          "funding_insight_id": "FI-e64d09ec66630091",
+          "event_ids": [
+            "EV-eb4858e820bf9435"
+          ],
+          "company_entity_id": "EN-094b7ade939cad4d",
+          "company_canonical_entity_id": "",
+          "company_name": "Drafted",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$16 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 16000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1600 万美元"
+          },
+          "announced_at": "2026-05-29",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "种子轮前领投",
+          "role_code": "historical_or_ambiguous"
+        },
+        {
+          "activity_id": "IA-bf6877bbbe1908f2",
+          "funding_insight_id": "FI-1064b8c5f69e8336",
+          "event_ids": [
+            "EV-23ae55daa341be06"
+          ],
+          "company_entity_id": "EN-50e2a4156631df49",
+          "company_canonical_entity_id": "",
+          "company_name": "Fundamental Research Labs",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "Series A",
+          "amount_original": "$33 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 33000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3300 万美元"
+          },
+          "announced_at": "2025-08-01",
           "disclosure_status": "disclosed",
           "scope": "current_round",
           "role": "本轮参投",
@@ -35750,99 +36137,6 @@
       ]
     },
     {
-      "id": "INV-91885d8d9e5635",
-      "name": "Temasek",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 2,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 2,
-      "first_disclosed_at": "2026-03-12",
-      "latest_disclosed_at": "2026-03-31",
-      "role_counts": {
-        "participant": 2
-      },
-      "round_codes": [
-        "seed",
-        "series_f"
-      ],
-      "activity_count": 2,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-a83a3af1a4866fd5",
-          "canonical_entity_id": "",
-          "name": "Advanced Machine Intelligence Labs (AMI Labs)"
-        },
-        {
-          "entity_id": "EN-7d3194f79e645c42",
-          "canonical_entity_id": "EN-7d3194f79e645c42",
-          "name": "OpenAI"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-8aa03c932afe9427",
-          "funding_insight_id": "FI-b76fffbf5d0d91bd",
-          "event_ids": [
-            "EV-d4e44892226be468"
-          ],
-          "company_entity_id": "EN-7d3194f79e645c42",
-          "company_canonical_entity_id": "EN-7d3194f79e645c42",
-          "company_name": "OpenAI",
-          "round": "F轮",
-          "round_code": "series_f",
-          "round_original": "Series F",
-          "amount_original": "$1220亿",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 122000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1220 亿美元"
-          },
-          "announced_at": "2026-03-31",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-228fc1e5942669a8",
-          "funding_insight_id": "FI-9c3c02658ff94312",
-          "event_ids": [
-            "EV-cded77b1de2db61a"
-          ],
-          "company_entity_id": "EN-a83a3af1a4866fd5",
-          "company_canonical_entity_id": "",
-          "company_name": "Advanced Machine Intelligence Labs (AMI Labs)",
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "种子轮",
-          "amount_original": "10.3亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 1030000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10.3 亿美元"
-          },
-          "announced_at": "2026-03-12",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        }
-      ]
-    },
-    {
       "id": "INV-5f293d18e41f5e",
       "name": "Thrive Capital",
       "aliases": [],
@@ -37017,6 +37311,65 @@
       ]
     },
     {
+      "id": "INV-e313029abd76ff",
+      "name": "AMP PBC",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-11",
+      "latest_disclosed_at": "2026-08-11",
+      "role_counts": {
+        "co_lead": 1
+      },
+      "round_codes": [
+        "multi_round"
+      ],
+      "activity_count": 1,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-8ab71d56a963f706",
+          "canonical_entity_id": "",
+          "name": "River AI"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-34d44167c4f075bf",
+          "funding_insight_id": "FI-d1444f877a3e580e",
+          "event_ids": [
+            "EV-55e7c286e95be405"
+          ],
+          "company_entity_id": "EN-8ab71d56a963f706",
+          "company_canonical_entity_id": "",
+          "company_name": "River AI",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "$1.1 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 1100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "11 亿美元"
+          },
+          "announced_at": "2026-08-11",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
+        }
+      ]
+    },
+    {
       "id": "INV-1790dc006867b1",
       "name": "Lightspeed India Partners",
       "aliases": [],
@@ -37184,6 +37537,65 @@
             "unit": "base",
             "status": "exact",
             "display_zh": "7 亿美元"
+          },
+          "announced_at": "2026-08-06",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-267c02d43be6f2",
+      "name": "Dwarkesh Patel",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-06",
+      "latest_disclosed_at": "2026-08-06",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "seed"
+      ],
+      "activity_count": 1,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-7ebe9a17c4d4c271",
+          "canonical_entity_id": "",
+          "name": "Mechanize"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-6109580e38f6769e",
+          "funding_insight_id": "FI-ad56bb800ab98d44",
+          "event_ids": [
+            "EV-cfbfc6c80338aa12"
+          ],
+          "company_entity_id": "EN-7ebe9a17c4d4c271",
+          "company_canonical_entity_id": "",
+          "company_name": "Mechanize",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$1.5B",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 1500000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "15 亿美元"
           },
           "announced_at": "2026-08-06",
           "disclosure_status": "disclosed",
@@ -61426,94 +61838,6 @@
       ]
     },
     {
-      "id": "INV-41b26475abfce6",
-      "name": "Patrick Collison",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2025-08-01",
-      "latest_disclosed_at": "2026-05-29",
-      "role_counts": {
-        "historical_or_ambiguous": 1,
-        "participant": 1
-      },
-      "round_codes": [
-        "series_a"
-      ],
-      "activity_count": 2,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-50e2a4156631df49",
-          "canonical_entity_id": "",
-          "name": "Fundamental Research Labs"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-2f04ed01d6879b4e",
-          "funding_insight_id": "FI-e64d09ec66630091",
-          "event_ids": [
-            "EV-eb4858e820bf9435"
-          ],
-          "company_entity_id": "EN-094b7ade939cad4d",
-          "company_canonical_entity_id": "",
-          "company_name": "Drafted",
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "种子轮",
-          "amount_original": "$16 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 16000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1600 万美元"
-          },
-          "announced_at": "2026-05-29",
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "种子轮前领投",
-          "role_code": "historical_or_ambiguous"
-        },
-        {
-          "activity_id": "IA-bf6877bbbe1908f2",
-          "funding_insight_id": "FI-1064b8c5f69e8336",
-          "event_ids": [
-            "EV-23ae55daa341be06"
-          ],
-          "company_entity_id": "EN-50e2a4156631df49",
-          "company_canonical_entity_id": "",
-          "company_name": "Fundamental Research Labs",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "Series A",
-          "amount_original": "$33 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 33000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3300 万美元"
-          },
-          "announced_at": "2025-08-01",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        }
-      ]
-    },
-    {
       "id": "INV-9cadaf2a3821b5",
       "name": "Carya Venture Partners",
       "aliases": [],
@@ -63222,94 +63546,6 @@
           },
           "announced_at": "2026-05-20",
           "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮天使投资人",
-          "role_code": "other_current_round"
-        }
-      ]
-    },
-    {
-      "id": "INV-aca994450bacd5",
-      "name": "Nat Friedman",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "individual",
-      "investor_kind_label": "个人投资者",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2023-06-27",
-      "latest_disclosed_at": "2026-05-20",
-      "role_counts": {
-        "historical_or_ambiguous": 1,
-        "other_current_round": 1
-      },
-      "round_codes": [
-        "undisclosed"
-      ],
-      "activity_count": 2,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-7209ec6f68ac0bcd",
-          "canonical_entity_id": "",
-          "name": "Reka"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-1d34c9b2d73f5093",
-          "funding_insight_id": "FI-664cc90f57688153",
-          "event_ids": [
-            "EV-44a4e92c03a31ab1"
-          ],
-          "company_entity_id": "EN-ce65fa41b16c33ff",
-          "company_canonical_entity_id": "",
-          "company_name": "Viktor",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "Series A",
-          "amount_original": "€64.7 million ($75 million)",
-          "amount_normalized": {
-            "currency": "EUR",
-            "value": 64700000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "6470 万欧元"
-          },
-          "announced_at": "2026-05-20",
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "既有投资方",
-          "role_code": "historical_or_ambiguous"
-        },
-        {
-          "activity_id": "IA-4f4170604df92c78",
-          "funding_insight_id": "FI-2959f95168aa0a55",
-          "event_ids": [
-            "EV-6e79974732a5db6b"
-          ],
-          "company_entity_id": "EN-7209ec6f68ac0bcd",
-          "company_canonical_entity_id": "",
-          "company_name": "Reka",
-          "round": "轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "未披露",
-          "amount_original": "$58 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 58000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "5800 万美元"
-          },
-          "announced_at": "2023-06-27",
-          "disclosure_status": "partially_disclosed",
           "scope": "current_round",
           "role": "本轮天使投资人",
           "role_code": "other_current_round"

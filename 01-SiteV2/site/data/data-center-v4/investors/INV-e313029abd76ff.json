@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2025,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-e313029abd76ff",
+    "name": "AMP PBC",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-08-11",
+    "latest_disclosed_at": "2026-08-11",
+    "role_counts": {
+      "co_lead": 1
+    },
+    "round_codes": [
+      "multi_round"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-8ab71d56a963f706",
+        "canonical_entity_id": "",
+        "name": "River AI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-34d44167c4f075bf",
+        "funding_insight_id": "FI-d1444f877a3e580e",
+        "event_ids": [
+          "EV-55e7c286e95be405"
+        ],
+        "company_entity_id": "EN-8ab71d56a963f706",
+        "company_canonical_entity_id": "",
+        "company_name": "River AI",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$1.1 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "11 亿美元"
+        },
+        "announced_at": "2026-08-11",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-0deb7f666bec5423",
+            "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
+            "source_title": "General Catalyst 领投 River AI 11 亿美元融资",
+            "source_content_hash": "a44322af824e0f8f",
+            "quote": "led by General Catalyst and AMP PBC",
+            "quote_hash": "013a3889f84a5ad377bf90a22775a82f1aa282b45db2c3cb0e6e2cae1fcfbe37"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-0deb7f666bec5423",
+        "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
+        "source_title": "General Catalyst 领投 River AI 11 亿美元融资",
+        "source_content_hash": "a44322af824e0f8f",
+        "quote": "led by General Catalyst and AMP PBC",
+        "quote_hash": "013a3889f84a5ad377bf90a22775a82f1aa282b45db2c3cb0e6e2cae1fcfbe37"
+      }
+    ]
+  }
+}

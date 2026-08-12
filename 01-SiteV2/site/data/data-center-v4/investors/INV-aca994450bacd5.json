@@ -20,19 +20,26 @@
     "investor_kind_label": "个人投资者",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "first_disclosed_at": "2023-06-27",
-    "latest_disclosed_at": "2026-05-20",
+    "latest_disclosed_at": "2026-08-06",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "other_current_round": 1
+      "other_current_round": 1,
+      "participant": 1
     },
     "round_codes": [
+      "seed",
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-7ebe9a17c4d4c271",
+        "canonical_entity_id": "",
+        "name": "Mechanize"
+      },
       {
         "entity_id": "EN-7209ec6f68ac0bcd",
         "canonical_entity_id": "",
@@ -40,6 +47,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-4e3cad5c32a788c4",
+        "funding_insight_id": "FI-ad56bb800ab98d44",
+        "event_ids": [
+          "EV-cfbfc6c80338aa12"
+        ],
+        "company_entity_id": "EN-7ebe9a17c4d4c271",
+        "company_canonical_entity_id": "",
+        "company_name": "Mechanize",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$1.5B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿美元"
+        },
+        "announced_at": "2026-08-06",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9bd81942662ab7e7",
+            "source_url": "https://dealroom.co/news/143496-google-eyes-1-5b-for-mechanize-a-startup-that-raised-9-1m-seed-103-days/",
+            "source_title": "谷歌瞄准Mechanize的15亿美元投资，这家初创公司103天前刚筹集了910万美元种子轮",
+            "source_content_hash": "ea8f0b6734de5746",
+            "quote": "Backers include former GitHub chief Nat Friedman",
+            "quote_hash": "d91cd50b2f6134126244d3e42292c08b2f438b444b4ff4329f722b945056f5ed"
+          }
+        ]
+      },
       {
         "activity_id": "IA-1d34c9b2d73f5093",
         "funding_insight_id": "FI-664cc90f57688153",
@@ -126,6 +171,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-9bd81942662ab7e7",
+        "source_url": "https://dealroom.co/news/143496-google-eyes-1-5b-for-mechanize-a-startup-that-raised-9-1m-seed-103-days/",
+        "source_title": "谷歌瞄准Mechanize的15亿美元投资，这家初创公司103天前刚筹集了910万美元种子轮",
+        "source_content_hash": "ea8f0b6734de5746",
+        "quote": "Backers include former GitHub chief Nat Friedman",
+        "quote_hash": "d91cd50b2f6134126244d3e42292c08b2f438b444b4ff4329f722b945056f5ed"
+      },
       {
         "source_id": "FISRC-ce83b857608dabeb",
         "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",
