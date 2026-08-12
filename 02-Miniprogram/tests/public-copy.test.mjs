@@ -6,6 +6,8 @@ const appConfig = JSON.parse(fs.readFileSync("miniprogram/app.json", "utf8"));
 const terminalSource = fs.readFileSync("miniprogram/pages/terminal/index.wxml", "utf8");
 const marketSource = fs.readFileSync("miniprogram/pages/market/index.wxml", "utf8");
 const watchlistSource = fs.readFileSync("miniprogram/pages/watchlist/index.wxml", "utf8");
+const headerSource = fs.readFileSync("miniprogram/components/app-header/index.wxml", "utf8");
+const headerStyles = fs.readFileSync("miniprogram/components/app-header/index.wxss", "utf8");
 const publicFiles = [
   "miniprogram/pages/terminal/index.wxml",
   "miniprogram/pages/market/index.wxml",
@@ -33,4 +35,12 @@ test("keeps list pages concise while preserving detail-page actions", () => {
   assert.doesNotMatch(terminalSource, /收藏/u);
   assert.doesNotMatch(terminalSource, /checkbox/u);
   assert.doesNotMatch(`${marketSource}\n${watchlistSource}`, /AI FUNDING|GUANLAN RESEARCH|更新日期/u);
+});
+
+test("matches the H5 branded header across the first three tabs", () => {
+  assert.match(headerSource, /logo-wavesight-reference-horizontal\.svg/u);
+  assert.match(headerSource, /class="tab-header-title"/u);
+  assert.match(headerStyles, /\.tab-header-logo/u);
+  assert.match(headerStyles, /text-align:\s*center/u);
+  assert.match(headerStyles, /border-bottom:\s*1rpx/u);
 });

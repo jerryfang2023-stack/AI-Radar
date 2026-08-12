@@ -5,8 +5,9 @@
     <button wx:if="{{rightLabel}}" class="right-button" style="right: {{rightInset}}px;" bindtap="rightTap">{{rightLabel}}</button>
   </view>
 </view>
-<view wx:elif="{{title}}" class="tab-header" style="padding-top: {{menuTop}}px; padding-right: {{rightInset}}px;">
+<view wx:elif="{{title}}" class="tab-header" style="padding-top: {{menuTop}}px;">
   <view class="tab-header-row" style="height: {{menuHeight}}px;">
+    <image class="tab-header-logo" src="/assets/brand/logo-wavesight-reference-horizontal.svg" mode="widthFix" aria-label="观澜 AI" />
     <text class="tab-header-title">{{title}}</text>
   </view>
 </view>

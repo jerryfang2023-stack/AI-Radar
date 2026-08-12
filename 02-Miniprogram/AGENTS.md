@@ -15,7 +15,7 @@ This is the native WeChat Mini Program frontstage for Funding Insights.
 ## Frontstage UI contract
 
 - Treat `../03-H5/` as the visual baseline for the first three tabs: 融资情报、市场概览、商业观察. Keep the native Mini Program interaction model and capsule safe area.
-- Those three tab pages use one concise four-character title in the top safe area. Do not repeat English headings, dates, explanatory subtitles, logos, or internal validation language above the primary content.
+- Those three tab pages use one shared branded header in the top safe area: the H5 horizontal logo at left, one concise four-character title centered on screen, and a fine divider below. Do not repeat English headings, dates, explanatory subtitles, or internal validation language above the primary content.
 - Do not show collection controls or selection checkboxes in the financing list. Collection and selection belong to detail or dedicated management pages.
 - Keep the 我的 tab independent from the first-three-tab visual sync unless a task explicitly includes it.
 

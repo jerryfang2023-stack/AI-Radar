@@ -9,16 +9,17 @@
 
 ## Findings
 
-- The first three tabs now use one concise four-character header aligned within the native capsule safe area.
+- The first three tabs now share the H5 header pattern: the supplied horizontal brand logo at left, one concise four-character title centered on screen, and a fine divider below, all aligned within the native capsule safe area.
 - Financing follows the H5 hierarchy: compact publishing summary, search, category and structured filters, result controls, then the funding list. Row checkboxes and list-level collection controls are absent.
 - Market follows the H5 hierarchy: a 2 x 2 metric grid, grouped market-category distribution, and ranked round distribution.
 - Observe follows the H5 hierarchy: weekly/monthly tabs, a restrained featured-report card, then a continuous archive list.
-- English headings, update-date captions, explanatory intro copy, repeated logos, and internal validation language are absent from the first three tab headers.
+- English headings, update-date captions, explanatory intro copy, duplicate in-page logos, and internal validation language are absent from the first three tab pages.
 - Collection and comparison management remain available in detail or dedicated management views, so removing list controls does not remove those capabilities.
 
 ## Remaining visual check
 
 - Confirm title/capsule clearance on one iOS and one Android device.
+- Confirm the horizontal logo remains legible at the 152rpx header width on both devices.
 - Confirm the first funding row is visible at a useful height without bottom-tab overlap.
 - Confirm long category and report titles wrap without clipping.
 
