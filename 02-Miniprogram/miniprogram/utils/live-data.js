@@ -294,7 +294,7 @@ function requestJson(url) {
     wx.request({
       url,
       method: "GET",
-      timeout: 20000,
+      timeout: 30000,
       success: (response) => response.statusCode === 200 ? resolve(response.data) : reject(new Error(`HTTP ${response.statusCode}`)),
       fail: reject,
     });

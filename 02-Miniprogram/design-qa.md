@@ -4,7 +4,7 @@
 - Implementation screenshot: unavailable; the native WeChat Developer Tools simulator cannot be captured by the tools available in this session.
 - Target viewport: WeChat Mini Program mobile viewport shown in the supplied screenshots (approximately 590 × 1280 px source captures).
 - State: Financing, Market, Observe and Profile tabs; Financing detail comparison state.
-- Build evidence: WeChat Developer Tools preview and upload completed successfully for AppID `wx34133741173154d4`; package size 1,866,769 bytes; development version `0.3.0`.
+- Build evidence: WeChat Developer Tools preview and upload completed successfully for AppID `wx34133741173154d4`; package size 1,866,769 bytes; development version `0.3.1`.
 - Full-view comparison: blocked because no post-change simulator or phone screenshot is available.
 - Focused-region comparison: blocked for the same reason; the intended focus is the tab safe area, Financing first screen, funding cards, and detail comparison action.
 
@@ -21,11 +21,11 @@
 - Earlier fix: removed repeated brand logos and introduced a launch page.
 - Current fixes: replaced tab headers with safe-area spacing only; rebuilt Financing as intro, search/filter, category chips and card list; removed row checkboxes; persisted up to three comparison selections from the detail page.
 - Data-sync fix: bundled fallback now contains 254 cards including 34 China-market cards; runtime refresh reads gated funding, weekly-report and monthly-report contracts from `www.zkdlj.vip` and falls back safely on request or validation failure.
-- Post-fix evidence: V0.3.0 preview and upload passed, but rendered screenshot evidence remains unavailable in this session.
+- Post-fix evidence: V0.3.1 preview and upload passed, but rendered screenshot evidence remains unavailable in this session.
 
 ## Implementation Checklist
 
-- Scan the `0.3.0` preview QR code on a phone.
+- Scan the `0.3.1` preview QR code on a phone.
 - Capture Financing first screen and one Financing detail screen after adding it to comparison.
 - Compare those captures with the source screenshots before submitting for review.
 
