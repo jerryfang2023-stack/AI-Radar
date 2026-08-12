@@ -111,6 +111,14 @@ as a new immutable VPS release, and switched through the `current` symlink; a
 failed live check restores the previous release. This remains part of Final
 Closure and must not become an eighth Windows task.
 
+The native WeChat Mini Program consumes those same gated VPS contracts at
+runtime and keeps its generated `miniprogram/data/` projection as an offline
+fallback. Consequently, an accepted financing, weekly-report, or monthly-report
+publication becomes visible in the Mini Program without a new client upload.
+The client rejects invalid, duplicate, older-date, or older-version funding
+payloads and continues serving the bundled fallback. `www.zkdlj.vip` must remain
+configured as a WeChat request legal domain.
+
 Before diagnosing a local private-evidence coverage gap, run the remote boundary
 gate. It requires the configured private-evidence checkout and authenticated
 remote HEAD to match, so a stale local clone is synchronized instead of being
