@@ -1,24 +1,20 @@
 <view class="funding-row {{selected ? 'selected' : ''}} {{dense ? 'dense' : ''}}">
-  <view wx:if="{{selectable}}" class="select-control" catchtap="select">
-    <checkbox checked="{{selected}}" color="#C8A766" />
-  </view>
   <view class="avatar" bindtap="open"><text>{{card.initial}}</text></view>
   <view class="row-main" bindtap="open">
     <view class="company-line">
       <text class="company">{{card.company}}</text>
+      <text wx:if="{{card.marketRegion === 'china'}}" class="market-badge">中国区</text>
       <text class="category">{{card.category}}</text>
     </view>
     <view class="facts-line">
-      <text>{{card.round}}</text><text class="divider">|</text><text>{{card.date}}</text>
-      <text wx:if="{{card.leadInvestor}}" class="investor"><text class="divider">|</text>{{card.leadInvestor}}</text>
-    </view>
-    <view class="status-line">
-      <text>{{card.region === 'china' ? '中国总部' : card.region === 'overseas' ? '海外总部' : '总部未披露'}}</text>
-      <text class="evidence"><icon type="success" size="13" color="#2F8C57" />{{card.evidenceLabel}}</text>
+      <text>{{card.round}}</text><text class="divider">·</text><text>{{card.date}}</text>
     </view>
   </view>
   <view class="row-side">
     <text class="amount mono" bindtap="open">{{card.amount}}</text>
-    <button class="watch-button {{watched ? 'watched' : ''}}" catchtap="watch">{{watched ? '已收藏' : '收藏'}}</button>
+    <view class="side-actions">
+      <text wx:if="{{selected}}" class="compare-state">比较中</text>
+      <button class="watch-button {{watched ? 'watched' : ''}}" catchtap="watch">{{watched ? '已收藏' : '收藏'}}</button>
+    </view>
   </view>
 </view>

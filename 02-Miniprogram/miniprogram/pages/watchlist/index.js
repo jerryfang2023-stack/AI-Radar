@@ -1,19 +1,26 @@
-const reportIndex = require("../../data/report-index.js");
+const { getReportData, refreshReportData } = require("../../utils/live-data.js");
+
+const bundledReportIndex = getReportData().index;
 
 Page({
   data: {
-    meta: reportIndex.meta,
+    meta: bundledReportIndex.meta,
     activeType: "weekly",
     activeLabel: "周报",
     featured: null,
     reports: [],
   },
 
-  onLoad() { this.refresh("weekly"); },
+  onLoad() {
+    this.refresh("weekly");
+    refreshReportData().then(() => this.refresh(this.data.activeType));
+  },
 
   refresh(type) {
+    const reportIndex = getReportData().index;
     const reports = reportIndex.reports.filter((item) => item.type === type);
     this.setData({
+      meta: reportIndex.meta,
       activeType: type,
       activeLabel: type === "weekly" ? "周报" : "月报",
       featured: reports[0] || null,

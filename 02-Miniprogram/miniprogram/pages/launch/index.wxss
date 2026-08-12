@@ -1,0 +1,80 @@
+.launch-page {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding-right: 72rpx;
+  padding-bottom: 80rpx;
+  padding-left: 72rpx;
+  background: #fffdf8;
+  color: #071827;
+}
+
+.brand-stage {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 48rpx;
+  animation: brand-enter 700ms ease-out both;
+}
+
+.brand-lockup { width: 470rpx; }
+
+.brand-divider {
+  width: 72rpx;
+  height: 2rpx;
+  margin: 54rpx 0 32rpx;
+  background: #c8a766;
+}
+
+.brand-slogan {
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 36rpx;
+  font-weight: 600;
+  letter-spacing: 10rpx;
+}
+
+.brand-description {
+  margin-top: 22rpx;
+  color: #6f7f8f;
+  font-size: 23rpx;
+  letter-spacing: 4rpx;
+}
+
+.launch-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #a7adb4;
+  font-size: 20rpx;
+  letter-spacing: 5rpx;
+}
+
+.progress-line {
+  overflow: hidden;
+  width: 120rpx;
+  height: 2rpx;
+  margin-bottom: 24rpx;
+  background: #e5e8ec;
+}
+
+.progress-line view {
+  width: 100%;
+  height: 100%;
+  background: #0d355c;
+  transform-origin: left;
+  animation: progress 1400ms ease-in-out both;
+}
+
+@keyframes brand-enter {
+  from { opacity: 0; transform: translateY(18rpx); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes progress {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}

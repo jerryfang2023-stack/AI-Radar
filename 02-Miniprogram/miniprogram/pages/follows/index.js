@@ -1,12 +1,13 @@
-const fundingIndex = require("../../data/funding-index.js");
 const { getFollowIds, toggleFollow } = require("../../utils/member.js");
+const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
 
 Page({
   data: { categories: [] },
+  onLoad() { refreshFundingData().then(() => this.refresh()); },
   onShow() { this.refresh(); },
   refresh() {
     const followed = new Set(getFollowIds());
-    this.setData({ categories: fundingIndex.categories.map((item) => ({ ...item, followed: followed.has(item.id) })) });
+    this.setData({ categories: getFundingData().index.categories.map((item) => ({ ...item, followed: followed.has(item.id) })) });
   },
   toggle(event) {
     const result = toggleFollow(event.currentTarget.dataset.id);

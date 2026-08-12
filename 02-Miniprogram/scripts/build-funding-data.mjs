@@ -71,6 +71,7 @@ function projectCard(card) {
   const evidence = evidenceStatus(card);
   const lead = leadInvestor(card);
   const headquarters = text(company.headquarters);
+  const marketRegion = card.market_scope?.market_region === "CN" ? "china" : "global";
   const investors = list(financing.investors).map((item) => ({ name: text(item.name), role: text(item.role) }));
   const companyName = text(company.name || company.full_name) || "未披露公司";
   const amount = financing.amount_normalized?.display_zh || financing.amount_original || financing.amount || "未披露";
@@ -108,6 +109,8 @@ function projectCard(card) {
     investorsText: investors.map((item) => item.name).join(" "),
     headquarters: headquarters || "未披露",
     region: regionFor(headquarters),
+    marketRegion,
+    marketLabel: marketRegion === "china" ? "中国区" : "全球其他",
     evidenceId: evidence.id,
     evidenceLabel: evidence.label,
     sourceCount: sources.length,
@@ -162,6 +165,7 @@ export function projectFundingData(source) {
     categoryCount: categories.length,
     multiSourceRate: cards.length ? Math.round((multiCount / cards.length) * 100) : 0,
     disclosedAmountCount: cards.filter((item) => item.amountValue > 0).length,
+    chinaMarketCardCount: cards.filter((item) => item.marketRegion === "china").length,
   };
   return { index: { meta, categories, rounds, cards }, details };
 }

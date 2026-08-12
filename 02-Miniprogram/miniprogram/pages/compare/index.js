@@ -1,4 +1,4 @@
-const details = require("../../data/funding-details.js");
+const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
 
 function compareText(cards) {
   return cards.map((card) => [
@@ -16,9 +16,11 @@ function compareText(cards) {
 Page({
   data: { cards: [] },
   onLoad(options) {
-    const ids = decodeURIComponent(options.ids || "").split(",").filter(Boolean).slice(0, 3);
-    this.setData({ cards: ids.map((id) => details[id]).filter(Boolean) });
+    this.ids = decodeURIComponent(options.ids || "").split(",").filter(Boolean).slice(0, 3);
+    this.render(getFundingData().details);
+    refreshFundingData().then((state) => this.render(state.details));
   },
+  render(details) { this.setData({ cards: this.ids.map((id) => details[id]).filter(Boolean) }); },
   copyComparison() {
     if (this.data.cards.length < 2) return;
     wx.setClipboardData({ data: compareText(this.data.cards), success: () => wx.showToast({ title: "比较摘要已复制", icon: "success" }) });

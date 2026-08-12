@@ -3,7 +3,7 @@
   <view class="detail-content">
     <view class="identity">
       <view class="avatar">{{card.initial}}</view>
-      <view class="identity-copy"><text class="company serif">{{card.company}}</text><text class="category">{{card.category}} · {{card.productForm || card.subcategory}}</text></view>
+      <view class="identity-copy"><text class="company serif">{{card.company}}</text><text class="category">{{card.marketRegion === 'china' ? '中国区 · ' : ''}}{{card.category}} · {{card.productForm || card.subcategory}}</text></view>
     </view>
 
     <view class="hero-facts paper-card">
@@ -15,13 +15,27 @@
 
     <view class="evidence-banner"><text>{{card.sourceCount}} 条公开来源</text></view>
 
-    <view class="section"><text class="section-title serif">公司做什么</text><text class="body-copy">{{card.companySummary}}</text><view class="meta-line"><text>总部：{{card.headquarters}}</text><text>市场：{{card.category}} / {{card.subcategory}}</text></view></view>
+    <button class="compare-action {{compared ? 'active' : ''}}" bindtap="toggleCompare">{{compared ? '已加入公司比较' : '加入公司比较'}}</button>
+
+    <view class="section"><text class="section-title serif">公司做什么</text><text class="body-copy">{{card.companySummary}}</text><view class="meta-line"><text>市场范围：{{card.marketLabel || '全球其他'}}</text><text>总部：{{card.headquarters}}</text><text>市场：{{card.category}} / {{card.subcategory}}</text></view></view>
+
+    <view wx:if="{{card.founders.length}}" class="section"><text class="section-title serif">创始团队</text><view class="simple-list"><view wx:for="{{card.founders}}" wx:key="name" class="simple-row"><text>{{item.name}}</text><text class="row-note">{{item.role || '角色未披露'}}</text></view></view></view>
 
     <view class="section"><text class="section-title serif">本轮投资方</text><view wx:if="{{card.investors.length}}" class="simple-list"><view wx:for="{{card.investors}}" wx:key="name" class="simple-row"><text>{{item.name}}</text><text class="row-note">{{item.role || '角色未披露'}}</text></view></view><view wx:else class="missing">投资方未披露</view></view>
+
+    <view wx:if="{{card.products.length}}" class="section"><text class="section-title serif">产品与目标客户</text><view class="detail-list"><view wx:for="{{card.products}}" wx:key="name" class="detail-item"><text class="detail-item-title">{{item.name}}</text><text wx:if="{{item.description}}" class="body-copy">{{item.description}}</text><text wx:if="{{item.targetCustomers}}" class="detail-note">目标客户：{{item.targetCustomers}}</text><view wx:if="{{item.features.length}}" class="tag-list"><text wx:for="{{item.features}}" wx:key="*this">{{item}}</text></view></view></view></view>
+
+    <view wx:if="{{card.customers.length}}" class="section"><text class="section-title serif">已核验客户</text><view class="simple-list"><view wx:for="{{card.customers}}" wx:key="name" class="simple-row"><text>{{item.name}}</text><text class="row-note">{{item.description || '公开客户'}}</text></view></view></view>
+
+    <view wx:if="{{card.metrics.length}}" class="section"><text class="section-title serif">经营与产品指标</text><view class="simple-list"><view wx:for="{{card.metrics}}" wx:key="label" class="simple-row"><text>{{item.label}}</text><text class="row-note">{{item.value}}</text></view></view></view>
 
     <view wx:if="{{card.signals.length}}" class="section"><text class="section-title serif">关键信号</text><view class="bullet-list signal-list"><view wx:for="{{card.signals}}" wx:key="*this" class="bullet-row"><text class="bullet-index mono">{{index + 1}}</text><text>{{item}}</text></view></view></view>
 
     <view wx:if="{{card.capitalJudgment}}" class="section judgment"><text class="section-kicker">观澜分析</text><text class="section-title serif">资本为什么下注</text><text class="body-copy">{{card.capitalJudgment}}</text></view>
+
+    <view wx:if="{{card.institutionRationales.length}}" class="section"><text class="section-title serif">投资机构为何下注</text><view class="detail-list"><view wx:for="{{card.institutionRationales}}" wx:key="institution" class="detail-item"><text class="detail-item-title">{{item.institution}}</text><text wx:if="{{item.speaker}}" class="detail-note">{{item.speaker}}<text wx:if="{{item.speakerRole}}"> · {{item.speakerRole}}</text></text><text class="body-copy">{{item.rationale}}</text></view></view></view>
+
+    <view wx:if="{{card.comparisons.length}}" class="section"><text class="section-title serif">竞品与替代方案</text><view class="detail-list"><view wx:for="{{card.comparisons}}" wx:key="name" class="detail-item"><text class="detail-item-title">{{item.name}}</text><text wx:if="{{item.scenario}}" class="detail-note">{{item.scenario}}</text><text class="body-copy">{{item.difference}}</text></view></view></view>
 
     <view wx:if="{{card.risks.length}}" class="section"><text class="section-title serif">风险与未知</text><view class="bullet-list risk-list"><view wx:for="{{card.risks}}" wx:key="*this" class="bullet-row"><text class="bullet-index mono">{{index + 1}}</text><text>{{item}}</text></view></view></view>
 

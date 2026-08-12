@@ -1,7 +1,8 @@
 <view class="page-shell">
-  <app-header title="观察" right-label="我的收藏" bind:righttap="openSaved" />
+  <app-header />
   <view class="page-content report-content">
     <view class="report-intro">
+      <button class="intro-saved" bindtap="openSaved">我的收藏</button>
       <text class="intro-kicker">GUANLAN RESEARCH</text>
       <text class="intro-title serif">AI 商业变化观察</text>
       <text class="intro-copy">用周报追踪变化，用月报理解结构。每一条判断都来自已接受的事实、观点与社群观察边界。</text>

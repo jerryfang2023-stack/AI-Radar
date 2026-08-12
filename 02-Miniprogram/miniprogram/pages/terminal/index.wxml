@@ -1,48 +1,53 @@
 <view class="page-shell">
-  <app-header title="融资情报" right-label="收藏 {{watchCount}}" bind:righttap="openWatchlist" />
+  <app-header />
 
-  <view class="terminal-head">
-    <view class="search-box">
-      <icon type="search" size="18" color="#071827" />
-      <input value="{{filters.keyword}}" placeholder="公司 / 机构 / 赛道" bindinput="onSearchInput" confirm-type="search" />
-      <button wx:if="{{filters.keyword}}" class="clear-button" bindtap="clearSearch"><icon type="clear" size="16" /></button>
+  <view class="page-content terminal-content">
+    <view class="terminal-intro">
+      <text class="intro-kicker">AI FUNDING · {{meta.latestDate}}</text>
+      <view class="intro-title-row">
+        <text class="intro-title">融资情报</text>
+        <button class="saved-link" bindtap="openWatchlist">收藏 {{watchCount}}</button>
+      </view>
+      <text class="intro-copy">追踪全球 AI 融资动态，快速了解公司、赛道、轮次与投资机构。{{meta.live ? '数据已在线同步。' : ''}}</text>
     </view>
 
-    <scroll-view class="quick-filters" scroll-x enhanced show-scrollbar="false">
-      <view class="quick-filter-track">
-        <button class="chip {{filters.period === '30d' ? 'active' : ''}}" bindtap="quickPeriod">{{filters.period === '30d' ? '近30天' : '全部时间'}}</button>
-        <button class="chip" bindtap="openFilters">{{filters.region === 'all' ? '全部地区' : filters.region === 'china' ? '中国总部' : filters.region === 'overseas' ? '海外总部' : '未披露'}}</button>
-        <button class="chip" bindtap="openFilters">{{filters.roundGroup === 'all' ? '全部轮次' : filters.roundGroup === 'early' ? '种子/天使' : filters.roundGroup === 'growth' ? 'A/B/C轮' : filters.roundGroup === 'late' ? 'D轮及以后' : '战略及其他'}}</button>
-        <button class="chip gold" bindtap="openFilters">筛选 {{activeFilterCount}}</button>
+    <view class="search-row">
+      <view class="search-box">
+      <icon type="search" size="18" color="#071827" />
+      <input value="{{filters.keyword}}" placeholder="搜索公司、赛道或投资方" bindinput="onSearchInput" confirm-type="search" />
+      <button wx:if="{{filters.keyword}}" class="clear-button" bindtap="clearSearch"><icon type="clear" size="16" /></button>
+      </view>
+      <button class="filter-button {{activeFilterCount ? 'active' : ''}}" bindtap="openFilters">筛选<text wx:if="{{activeFilterCount}}"> {{activeFilterCount}}</text></button>
+    </view>
+
+    <scroll-view class="category-scroll" scroll-x enhanced show-scrollbar="false">
+      <view class="category-track">
+        <button class="category-chip {{filters.categoryId === 'all' ? 'active' : ''}}" data-value="all" bindtap="quickCategory">全部 {{meta.cardCount}}</button>
+        <button wx:for="{{categories}}" wx:key="id" class="category-chip {{filters.categoryId === item.id ? 'active' : ''}}" data-value="{{item.id}}" bindtap="quickCategory">{{item.name}} {{item.count}}</button>
       </view>
     </scroll-view>
 
-    <view class="summary-strip paper-card">
-      <view><text class="summary-value mono">{{meta.cardCount}}</text><text class="summary-label">笔已发布</text></view>
-      <view><text class="summary-value mono">{{meta.disclosedAmountCount}}</text><text class="summary-label">笔金额披露</text></view>
-      <view><text class="summary-value mono">{{meta.categoryCount}}</text><text class="summary-label">个市场大类</text></view>
-    </view>
-
-    <view class="list-toolbar">
-      <button class="toolbar-button" bindtap="changeSort">{{sort === 'latest' ? '最新披露' : sort === 'amount' ? '金额排序' : '公司名称'}} ↓</button>
-      <view class="toolbar-actions">
-        <button class="toolbar-button" bindtap="openCompare">比较</button>
-        <button class="toolbar-button" bindtap="toggleDensity">{{dense ? '舒展' : '紧凑'}}</button>
+    <view class="list-heading">
+      <view class="result-summary">
+        <text>共 {{filteredCount}} 条结果</text>
+        <text wx:if="{{selectedIds.length}}" class="compare-count">已加入比较 {{selectedIds.length}}/3</text>
+      </view>
+      <view class="list-actions">
+        <button bindtap="changeSort">{{sort === 'latest' ? '最新' : sort === 'amount' ? '金额' : '名称'}}</button>
+        <button bindtap="openCompare">比较 {{selectedIds.length}}/3</button>
       </view>
     </view>
-  </view>
 
-  <view class="result-note">共 {{filteredCount}} 条结果</view>
-  <view class="funding-list">
-    <funding-row wx:for="{{cards}}" wx:key="id" card="{{item}}" selectable selected="{{item.selected}}" watched="{{item.watched}}" dense="{{dense}}" bind:open="openCard" bind:select="toggleSelect" bind:watch="toggleWatch" />
+    <view class="funding-list">
+      <funding-row wx:for="{{cards}}" wx:key="id" card="{{item}}" selected="{{item.selected}}" watched="{{item.watched}}" bind:open="openCard" bind:watch="toggleWatch" />
+    </view>
+    <view wx:if="{{!filteredCount}}" class="empty-state"><view class="title">暂无符合条件的融资</view><view class="copy">调整关键词或筛选条件后再试。</view></view>
+    <view wx:if="{{visibleCount < filteredCount}}" class="load-note">继续上拉加载 · 已显示 {{visibleCount}} 条</view>
   </view>
-  <view wx:if="{{!filteredCount}}" class="empty-state"><view class="title">暂无符合条件的融资</view><view class="copy">调整关键词或筛选条件后再试。</view></view>
-  <view wx:if="{{visibleCount < filteredCount}}" class="load-note">继续上拉加载 · 已显示 {{visibleCount}} 条</view>
 
   <view wx:if="{{selectedIds.length}}" class="selection-bar">
-    <text>已选 <text class="gold-number mono">{{selectedIds.length}}</text> 家</text>
-    <button class="compare-button" bindtap="openCompare">比较</button>
-    <button class="export-button" bindtap="exportSelected">复制导出</button>
+    <text>已加入 <text class="gold-number mono">{{selectedIds.length}}</text> 家公司</text>
+    <button class="compare-button" bindtap="openCompare">查看比较</button>
   </view>
 
   <view wx:if="{{filterOpen}}" class="sheet-overlay" bindtap="closeFilters"></view>
@@ -52,6 +57,10 @@
       <view class="filter-group">
         <text class="filter-title">时间范围</text>
         <view class="choice-grid"><button wx:for="{{periods}}" wx:key="id" class="choice {{draftFilters.period === item.id ? 'active' : ''}}" data-name="period" data-value="{{item.id}}" bindtap="chooseDraft">{{item.name}}</button></view>
+      </view>
+      <view class="filter-group">
+        <text class="filter-title">市场范围</text>
+        <view class="choice-grid"><button wx:for="{{marketRegions}}" wx:key="id" class="choice {{draftFilters.marketRegion === item.id ? 'active' : ''}}" data-name="marketRegion" data-value="{{item.id}}" bindtap="chooseDraft">{{item.name}}</button></view>
       </view>
       <view class="filter-group">
         <text class="filter-title">总部地区</text>

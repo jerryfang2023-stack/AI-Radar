@@ -20,6 +20,7 @@ function filterCards(cards, filters, latestDate) {
       if (!haystack.includes(keyword)) return false;
     }
     if (threshold && card.date < threshold) return false;
+    if (filters.marketRegion && filters.marketRegion !== "all" && card.marketRegion !== filters.marketRegion) return false;
     if (filters.region !== "all" && card.region !== filters.region) return false;
     if (filters.roundGroup !== "all" && card.roundGroup !== filters.roundGroup) return false;
     if (filters.categoryId !== "all" && card.categoryId !== filters.categoryId) return false;
@@ -37,7 +38,7 @@ function sortCards(cards, sort) {
 }
 
 function activeFilterCount(filters) {
-  return [filters.period !== "all", filters.region !== "all", filters.roundGroup !== "all", filters.categoryId !== "all", filters.evidenceId !== "all"].filter(Boolean).length;
+  return [filters.period !== "all", filters.marketRegion && filters.marketRegion !== "all", filters.region !== "all", filters.roundGroup !== "all", filters.categoryId !== "all", filters.evidenceId !== "all"].filter(Boolean).length;
 }
 
 function exportSummary(cards) {

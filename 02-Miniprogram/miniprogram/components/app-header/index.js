@@ -4,7 +4,7 @@ Component({
     showBack: { type: Boolean, value: false },
     rightLabel: { type: String, value: "" },
   },
-  data: { statusBarHeight: 20, rightInset: 96 },
+  data: { statusBarHeight: 20, rightInset: 96, tabSafeHeight: 80 },
   lifetimes: {
     attached() {
       const windowInfo = wx.getWindowInfo ? wx.getWindowInfo() : wx.getSystemInfoSync();
@@ -12,6 +12,7 @@ Component({
       this.setData({
         statusBarHeight: getApp().globalData.statusBarHeight || 20,
         rightInset: menu?.left ? windowInfo.windowWidth - menu.left + 6 : 96,
+        tabSafeHeight: menu?.bottom ? menu.bottom + 8 : (windowInfo.statusBarHeight || 20) + 52,
       });
     },
   },

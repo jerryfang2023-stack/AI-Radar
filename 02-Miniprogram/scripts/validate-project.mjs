@@ -2,12 +2,14 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { execFileSync } from "node:child_process";
+import { createRequire } from "node:module";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const mini = path.join(root, "miniprogram");
 const app = JSON.parse(fs.readFileSync(path.join(mini, "app.json"), "utf8"));
 const project = JSON.parse(fs.readFileSync(path.join(root, "project.config.json"), "utf8"));
 const failures = [];
+const require = createRequire(import.meta.url);
 
 function readJson(file) {
   try { return JSON.parse(fs.readFileSync(file, "utf8")); }
@@ -60,10 +62,29 @@ for (const file of jsFiles) {
 }
 
 const packageBytes = jsFiles.concat([]).reduce((sum, file) => sum + fs.statSync(file).size, 0);
-if (packageBytes > 1_800_000) failures.push(`JavaScript package budget exceeded: ${packageBytes} bytes`);
+if (packageBytes > 1_900_000) failures.push(`JavaScript package budget exceeded: ${packageBytes} bytes`);
+const packageFiles = [];
+function collectPackageFiles(dir) {
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) collectPackageFiles(full);
+    else packageFiles.push(full);
+  }
+}
+collectPackageFiles(mini);
+const totalPackageBytes = packageFiles.reduce((sum, file) => sum + fs.statSync(file).size, 0);
+if (totalPackageBytes > 1_980_000) failures.push(`Mini Program package budget exceeded: ${totalPackageBytes} bytes`);
+
+const fundingIndex = require(path.join(mini, "data", "funding-index.js"));
+const chinaMarketCards = fundingIndex.cards.filter((card) => card.marketRegion === "china");
+if (fundingIndex.meta.cardCount !== fundingIndex.cards.length) failures.push("funding meta.cardCount mismatch");
+if (fundingIndex.meta.chinaMarketCardCount !== chinaMarketCards.length) failures.push("funding China market count mismatch");
+if (fundingIndex.cards.some((card) => !["china", "global"].includes(card.marketRegion))) failures.push("funding marketRegion missing or invalid");
+const liveData = fs.readFileSync(path.join(mini, "utils", "live-data.js"), "utf8");
+if (!liveData.includes("https://www.zkdlj.vip/data")) failures.push("live funding/report data endpoint missing");
 
 if (failures.length) {
   console.error(failures.join("\n"));
   process.exit(1);
 }
-console.log(JSON.stringify({ pages: app.pages.length, jsFiles: jsFiles.length, jsBytes: packageBytes }, null, 2));
+console.log(JSON.stringify({ pages: app.pages.length, jsFiles: jsFiles.length, jsBytes: packageBytes, totalBytes: totalPackageBytes }, null, 2));

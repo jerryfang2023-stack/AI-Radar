@@ -1,5 +1,5 @@
 <view class="page-shell">
-  <app-header title="" right-label="设置" bind:righttap="openSettings" />
+  <app-header />
   <view class="page-content profile-content">
     <view class="identity-row" bindtap="openSettings">
       <image class="member-avatar" src="{{profile.avatarUrl}}" mode="aspectFill" />

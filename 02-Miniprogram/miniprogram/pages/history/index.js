@@ -1,12 +1,13 @@
-const fundingIndex = require("../../data/funding-index.js");
 const { getHistory, clearHistory } = require("../../utils/member.js");
 const { getWatchIds, toggleWatch } = require("../../utils/storage.js");
+const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
 
 Page({
   data: { records: [] },
+  onLoad() { refreshFundingData().then(() => this.refresh()); },
   onShow() { this.refresh(); },
   refresh() {
-    const cards = new Map(fundingIndex.cards.map((item) => [item.id, item]));
+    const cards = new Map(getFundingData().index.cards.map((item) => [item.id, item]));
     const watched = new Set(getWatchIds());
     this.setData({ records: getHistory().map((item) => ({ ...item, card: cards.get(item.id), watched: watched.has(item.id) })).filter((item) => item.card) });
   },

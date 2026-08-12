@@ -1,9 +1,8 @@
 .header { background: rgba(255, 253, 248, 0.98); }
-.header-row { position: relative; display: grid; grid-template-columns: 176rpx 1fr 176rpx; align-items: center; min-height: 92rpx; padding: 0 24rpx; }
-.brand-logo { width: 166rpx; }
-.header-title { color: #071827; font-size: 38rpx; font-weight: 600; text-align: center; white-space: nowrap; }
-.back-button, .right-button { min-height: 64rpx; margin: 0; padding: 0 14rpx; border: 1rpx solid #e5e8ec; border-radius: 12rpx; background: #fff; color: #071827; font-size: 24rpx; line-height: 64rpx; }
-.back-button { justify-self: start; }
-.right-button { position: absolute; color: #8c641f; border-color: rgba(200, 167, 102, 0.65); white-space: nowrap; }
-.right-space { width: 176rpx; }
-.serif { font-family: "Songti SC", "STSong", "SimSun", serif; }
+.header-row { position: relative; display: flex; align-items: center; min-height: 84rpx; padding: 0 28rpx; }
+.tab-safe-top { background: #fffdf8; }
+.header-title { overflow: hidden; color: #071827; font-size: 38rpx; font-weight: 700; line-height: 1.2; text-overflow: ellipsis; white-space: nowrap; }
+.header-title.is-centered { position: absolute; right: 190rpx; left: 190rpx; text-align: center; }
+.back-button, .right-button { min-height: 64rpx; margin: 0; padding: 0; border: 0; background: transparent; font-size: 26rpx; line-height: 64rpx; white-space: nowrap; }
+.back-button { position: relative; z-index: 1; min-width: 88rpx; color: #0d355c; text-align: left; }
+.right-button { position: absolute; color: #9b6d20; text-align: right; }

@@ -1,10 +1,13 @@
-const fundingIndex = require("../../data/funding-index.js");
-const { filterCards, sortCards, activeFilterCount, exportSummary } = require("../../utils/funding.js");
-const { getWatchIds, toggleWatch } = require("../../utils/storage.js");
+const { filterCards, sortCards, activeFilterCount } = require("../../utils/funding.js");
+const { getWatchIds, toggleWatch, getCompareIds } = require("../../utils/storage.js");
+const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
+
+const bundledFundingIndex = getFundingData().index;
 
 const DEFAULT_FILTERS = {
   keyword: "",
   period: "all",
+  marketRegion: "all",
   region: "all",
   roundGroup: "all",
   categoryId: "all",
@@ -16,12 +19,11 @@ Page({
     cards: [],
     visibleCount: 0,
     filteredCount: 0,
-    meta: fundingIndex.meta,
-    categories: fundingIndex.categories,
+    meta: bundledFundingIndex.meta,
+    categories: bundledFundingIndex.categories,
     watchCount: 0,
     selectedIds: [],
     sort: "latest",
-    dense: false,
     filterOpen: false,
     activeFilterCount: 0,
     filters: { ...DEFAULT_FILTERS },
@@ -39,6 +41,11 @@ Page({
       { id: "overseas", name: "海外总部" },
       { id: "undisclosed", name: "未披露" }
     ],
+    marketRegions: [
+      { id: "all", name: "全球" },
+      { id: "china", name: "中国区" },
+      { id: "global", name: "全球其他" }
+    ],
     periods: [
       { id: "all", name: "全部时间" },
       { id: "30d", name: "近30天" },
@@ -48,20 +55,31 @@ Page({
   },
 
   onLoad() {
-    this.allCards = fundingIndex.cards;
+    this.allCards = bundledFundingIndex.cards;
     this.filteredCards = [];
     this.pageSize = 36;
+    this.setData({ selectedIds: getCompareIds() });
     this.refreshCards(true);
+    refreshFundingData().then((state) => this.applyFundingData(state.index));
   },
 
   onShow() {
+    const currentIndex = getFundingData().index;
+    if (currentIndex.meta.generatedAt !== this.data.meta.generatedAt) this.applyFundingData(currentIndex);
     const pending = wx.getStorageSync("guanlan_pending_filter_v1");
+    const selectedIds = getCompareIds();
     if (pending?.categoryId) {
       wx.removeStorageSync("guanlan_pending_filter_v1");
-      this.setData({ "filters.categoryId": pending.categoryId }, () => this.refreshCards(true));
+      this.setData({ selectedIds, "filters.categoryId": pending.categoryId }, () => this.refreshCards(true));
     } else {
-      this.refreshWatchState();
+      this.setData({ selectedIds }, () => this.renderSlice(Math.max(this.data.visibleCount, this.pageSize)));
     }
+  },
+
+  applyFundingData(index) {
+    if (!index?.cards?.length) return;
+    this.allCards = index.cards;
+    this.setData({ meta: index.meta, categories: index.categories }, () => this.refreshCards(true));
   },
 
   onReachBottom() {
@@ -79,7 +97,7 @@ Page({
   },
 
   refreshCards(reset) {
-    const filtered = filterCards(this.allCards, this.data.filters, fundingIndex.meta.latestDate);
+    const filtered = filterCards(this.allCards, this.data.filters, this.data.meta.latestDate);
     this.filteredCards = sortCards(filtered, this.data.sort);
     this.setData({
       filteredCount: this.filteredCards.length,
@@ -107,9 +125,8 @@ Page({
     this.setData({ "filters.keyword": "" }, () => this.refreshCards(true));
   },
 
-  quickPeriod() {
-    const next = this.data.filters.period === "30d" ? "all" : "30d";
-    this.setData({ "filters.period": next }, () => this.refreshCards(true));
+  quickCategory(event) {
+    this.setData({ "filters.categoryId": event.currentTarget.dataset.value }, () => this.refreshCards(true));
   },
 
   openFilters() {
@@ -136,8 +153,6 @@ Page({
     this.setData({ sort: next }, () => this.refreshCards(true));
   },
 
-  toggleDensity() { this.setData({ dense: !this.data.dense }); },
-
   openCard(event) {
     wx.navigateTo({ url: `/pages/detail/index?id=${event.detail.id}` });
   },
@@ -147,37 +162,12 @@ Page({
     this.renderSlice(this.data.visibleCount);
   },
 
-  toggleSelect(event) {
-    const id = event.detail.id;
-    const selected = [...this.data.selectedIds];
-    const index = selected.indexOf(id);
-    if (index >= 0) selected.splice(index, 1);
-    else if (selected.length >= 3) {
-      wx.showToast({ title: "最多比较3家公司", icon: "none" });
-      return;
-    } else selected.push(id);
-    this.setData({ selectedIds: selected }, () => this.renderSlice(this.data.visibleCount));
-  },
-
   openCompare() {
     if (this.data.selectedIds.length < 2) {
-      wx.showToast({ title: "请至少选择2家公司", icon: "none" });
+      wx.showToast({ title: "请在详情页加入至少 2 家公司", icon: "none" });
       return;
     }
     wx.navigateTo({ url: `/pages/compare/index?ids=${encodeURIComponent(this.data.selectedIds.join(","))}` });
-  },
-
-  exportSelected() {
-    const selectedSet = new Set(this.data.selectedIds);
-    const cards = this.allCards.filter((card) => selectedSet.has(card.id));
-    if (!cards.length) {
-      wx.showToast({ title: "请先选择公司", icon: "none" });
-      return;
-    }
-    wx.setClipboardData({
-      data: exportSummary(cards),
-      success: () => wx.showToast({ title: "摘要已复制", icon: "success" }),
-    });
   },
 
   openWatchlist() { wx.navigateTo({ url: "/pages/saved/index" }); },
