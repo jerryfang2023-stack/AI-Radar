@@ -1,37 +1,40 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-11T02:04:25.923Z",
-  "date": "2026-08-11",
-  "action": "Repair source-title integrity gate",
+  "generated_at": "2026-08-12T04:29:47.462Z",
+  "date": "2026-08-12",
+  "action": "Repair V4 reviewed ownership alias collision",
   "action_status": "unregistered",
   "record_level": "required",
-  "trigger": "codex",
-  "status": "success",
-  "summary": "Repaired one accepted historical source title without recollecting raw data; exact Chinese translation now resolves during resumed production.",
+  "trigger": "workflow:31562137638",
+  "status": "failure-repaired",
+  "summary": "8/12 Business Signals materialization failed because a fresh Alibaba Cloud duplicate alias shadowed reviewed 阿里云 ownership; fixed lookup precedence and will resume from accepted run.",
   "contexts": [],
   "changed_files": [
-    "agent-workflow/tools/source-title-translation-generator.mjs",
-    "agent-workflow/tools/tests/source-intake-v1.test.mjs",
-    "01-SiteV2/content/11-databases/source-title-translations.json"
+    "agent-workflow/product/entity-history-v1.mjs",
+    "agent-workflow/tools/tests/data-center-frontstage.test.mjs",
+    "AGENTS.md"
   ],
   "outputs": [
-    "source-title-translations.json"
+    "resume_run_id=31562137638"
   ],
   "checks": [
-    "node --test agent-workflow/tools/tests/source-intake-v1.test.mjs",
-    "translation loader lookup"
+    "node --check agent-workflow/product/entity-history-v1.mjs",
+    "node --check 01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs",
+    "frontstage ownership assertion passed",
+    "full data-center-frontstage test has 2 pre-existing institution-count failures"
   ],
   "issues": [
-    "8/11 resumed production blocked by RAW-e404d6cc9273ce82 missing title_zh"
+    "fresh intake duplicate organization alias shadowed reviewed canonical ownership",
+    "materialization gate blocked downstream funding card"
   ],
   "risks": [
-    "Manual translation must preserve source numeric facts and named entities"
+    "resume must rerun materialization and publication stages successfully"
   ],
   "lessons": [
-    "Resume from accepted intake; repair only the failing integrity stage before rerunning dependents"
+    "accepted intake remains immutable; repair only the failed projection stage"
   ],
   "reusable_rules": [
-    "Never recollect accepted same-date raw data for downstream-only failures; use deterministic title translation registry repairs"
+    "reviewed canonical organization names win over unreviewed aliases during ownership resolution"
   ],
   "retired_flags": [],
   "notes": []

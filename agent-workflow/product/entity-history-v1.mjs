@@ -674,9 +674,31 @@ function buildTaxonomyNodes(events, fdeRecords, hardwareRecords) {
 function buildTypedRelationships({ registry, events, fdeRecords, hardwareRecords, taxonomyNodes, reviewDecisions = [], entityIdRemap = new Map() }) {
   const relationships = new Map();
   const lookup = new Map();
+  // Prefer explicitly reviewed organization identities when a fresh intake adds
+  // an unreviewed duplicate whose alias matches a reviewed canonical name
+  // (for example, “Alibaba Cloud” carrying the alias “阿里云”).  Without this
+  // precedence, reviewed product ownership can resolve to the new duplicate,
+  // which is then filtered from the public company projection and fails the
+  // catalog deployment gate.
+  const reviewedOrganizationIds = new Set(
+    reviewDecisions
+      .filter((decision) => decision?.review_status === "accepted"
+        && !["quarantine", "merge"].includes(decision.action)
+        && decision.canonical?.catalog_type === "company")
+      .map((decision) => decision.entity_id)
+      .filter((entityId) => registry.has(entityId))
+  );
+  const addCanonical = (entity) => {
+    const entityKey = key(entity.name);
+    if (!lookup.has(entityKey) || reviewedOrganizationIds.has(entity.id)) lookup.set(entityKey, entity.id);
+  };
+  for (const entity of registry.values()) if (reviewedOrganizationIds.has(entity.id)) addCanonical(entity);
+  for (const entity of registry.values()) addCanonical(entity);
   for (const entity of registry.values()) {
-    lookup.set(key(entity.name), entity.id);
-    for (const alias of entity.aliases || []) lookup.set(key(alias), entity.id);
+    for (const alias of entity.aliases || []) {
+      const aliasKey = key(alias);
+      if (!lookup.has(aliasKey)) lookup.set(aliasKey, entity.id);
+    }
   }
   const eventsById = new Map(events.map((event) => [event.id, event]));
 

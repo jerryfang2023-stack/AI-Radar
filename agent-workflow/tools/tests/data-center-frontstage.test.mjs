@@ -178,6 +178,14 @@ test("entity catalog deployment gate accepts the composite reviewed-person servi
   assert.equal(output.funding_founder_profiles, 30);
 });
 
+test("reviewed product ownership wins over a fresh duplicate organization alias", () => {
+  const data = buildFrontstageData(root);
+  const product = data.products.find((item) => item.name === "峰谷 Token");
+  assert.ok(product);
+  assert.deepEqual(product.companyNames, ["阿里云"]);
+  assert.ok(product.companyIds.includes("EN-e16fc821f34228d1"));
+});
+
 test("current commercial event titles are complete and evidence-specific", () => {
   const data = buildFrontstageData(root);
   const currentEvents = data.events.filter((event) => event.dataDate === data.meta.currentDate);
