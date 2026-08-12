@@ -4,6 +4,7 @@ Component({
     selected: { type: Boolean, value: false },
     watched: { type: Boolean, value: false },
     dense: { type: Boolean, value: false },
+    showWatch: { type: Boolean, value: true },
   },
   methods: {
     open() { this.triggerEvent("open", { id: this.data.card.id }); },

@@ -1,32 +1,25 @@
 # Design QA
 
-- Source visual truth: user-provided native Mini Program screenshots `1-照片-1.jpg` through `4-照片-4.jpg`, plus the existing H5 financing layout used as the hierarchy reference.
-- Implementation screenshot: unavailable; the native WeChat Developer Tools simulator cannot be captured by the tools available in this session.
-- Target viewport: WeChat Mini Program mobile viewport shown in the supplied screenshots (approximately 590 × 1280 px source captures).
-- State: Financing, Market, Observe and Profile tabs; Financing detail comparison state.
-- Build evidence: WeChat Developer Tools preview and upload completed successfully for AppID `wx34133741173154d4`; package size 1,866,769 bytes; development version `0.3.1`.
-- Full-view comparison: blocked because no post-change simulator or phone screenshot is available.
-- Focused-region comparison: blocked for the same reason; the intended focus is the tab safe area, Financing first screen, funding cards, and detail comparison action.
+- Source visual truth: the live H5 first-three-tab hierarchy at `https://www.zkdlj.vip/h5/`, selected by the user as the Mini Program visual baseline.
+- Target viewport: native WeChat Mini Program mobile viewport with the capsule safe area and system tab bar.
+- State: 融资情报、市场概览、商业观察 default tab states. 我的 remains outside this sync.
+- Structural comparison: completed against the H5 source and the Mini Program WXML/WXSS implementation.
+- Build evidence: `npm run verify` passed 16 tests and validated 13 pages; WeChat Developer Tools automation accepted production AppID `wx34133741173154d4` and opened the project.
+- Rendered screenshot: unavailable. `miniprogram-automator@0.12.1` connects to the installed Developer Tools but times out waiting for the current automation protocol response.
 
 ## Findings
 
-- Source P1: each tab repeats its name in a dedicated top row even though the bottom navigation already identifies the current section, consuming scarce first-screen space.
-- Source P1: the Financing screen presents search, four filters, three statistics, sorting, compare and density controls before the first record, creating weak hierarchy and visual clutter.
-- Source P1: checkboxes in every funding row imply bulk selection without explaining the comparison task and visually dominate the list.
-- No code-level build or configuration error was found after the redesign.
-- Post-change typography, card density, capsule clearance, China-market badge/filter and expanded detail sections still require phone screenshots.
+- The first three tabs now use one concise four-character header aligned within the native capsule safe area.
+- Financing follows the H5 hierarchy: compact publishing summary, search, category and structured filters, result controls, then the funding list. Row checkboxes and list-level collection controls are absent.
+- Market follows the H5 hierarchy: a 2 x 2 metric grid, grouped market-category distribution, and ranked round distribution.
+- Observe follows the H5 hierarchy: weekly/monthly tabs, a restrained featured-report card, then a continuous archive list.
+- English headings, update-date captions, explanatory intro copy, repeated logos, and internal validation language are absent from the first three tab headers.
+- Collection and comparison management remain available in detail or dedicated management views, so removing list controls does not remove those capabilities.
 
-## Comparison History
+## Remaining visual check
 
-- Earlier fix: removed repeated brand logos and introduced a launch page.
-- Current fixes: replaced tab headers with safe-area spacing only; rebuilt Financing as intro, search/filter, category chips and card list; removed row checkboxes; persisted up to three comparison selections from the detail page.
-- Data-sync fix: bundled fallback now contains 254 cards including 34 China-market cards; runtime refresh reads gated funding, weekly-report and monthly-report contracts from `www.zkdlj.vip` and falls back safely on request or validation failure.
-- Post-fix evidence: V0.3.1 preview and upload passed, but rendered screenshot evidence remains unavailable in this session.
+- Confirm title/capsule clearance on one iOS and one Android device.
+- Confirm the first funding row is visible at a useful height without bottom-tab overlap.
+- Confirm long category and report titles wrap without clipping.
 
-## Implementation Checklist
-
-- Scan the `0.3.1` preview QR code on a phone.
-- Capture Financing first screen and one Financing detail screen after adding it to comparison.
-- Compare those captures with the source screenshots before submitting for review.
-
-final result: technical gates passed; phone visual comparison pending
+final result: implementation and technical gates passed; post-change phone screenshots remain the final visual evidence

@@ -1,13 +1,6 @@
 <view class="page-shell">
-  <app-header />
+  <app-header title="商业观察" />
   <view class="page-content report-content">
-    <view class="report-intro">
-      <button class="intro-saved" bindtap="openSaved">我的收藏</button>
-      <text class="intro-kicker">GUANLAN RESEARCH</text>
-      <text class="intro-title serif">AI 商业变化观察</text>
-      <text class="intro-copy">用周报追踪变化，用月报理解结构。每一条判断都来自已接受的事实、观点与社群观察边界。</text>
-    </view>
-
     <view class="report-tabs" role="tablist">
       <button class="report-tab {{activeType === 'weekly' ? 'active' : ''}}" data-type="weekly" bindtap="switchType">周报 {{meta.weeklyCount}}</button>
       <button class="report-tab {{activeType === 'monthly' ? 'active' : ''}}" data-type="monthly" bindtap="switchType">月报 {{meta.monthlyCount}}</button>
@@ -25,7 +18,7 @@
 
     <view class="archive-heading"><text class="serif">往期{{activeLabel}}</text><text>按发布日期倒序</text></view>
     <view wx:if="{{reports.length}}" class="report-list">
-      <view wx:for="{{reports}}" wx:key="id" class="report-card paper-card" data-id="{{item.id}}" bindtap="openReport">
+      <view wx:for="{{reports}}" wx:key="id" class="report-card" data-id="{{item.id}}" bindtap="openReport">
         <view class="report-date"><text class="mono">{{item.dateShort}}</text><text>{{item.issue}}</text></view>
         <view class="report-main"><text class="report-title serif">{{item.title}}</text><text class="report-summary">{{item.summary}}</text><view class="report-footer"><text>{{item.sectionCount}} 个研究章节</text><text>查看全文</text></view></view>
       </view>

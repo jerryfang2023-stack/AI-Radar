@@ -10,6 +10,7 @@
 .facts-line { display: flex; gap: 10rpx; align-items: center; margin-top: 14rpx; overflow: hidden; color: #6f7f8f; font-size: 22rpx; line-height: 30rpx; white-space: nowrap; }
 .divider { color: #a7adb4; }
 .row-side { align-self: stretch; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-between; min-width: 0; padding: 3rpx 0; }
+.row-side.no-watch { justify-content: center; }
 .amount { max-width: 168rpx; overflow: hidden; color: #071827; font-size: 28rpx; font-weight: 600; text-align: right; text-overflow: ellipsis; white-space: nowrap; }
 .side-actions { display: flex; gap: 10rpx; align-items: center; }
 .compare-state { color: #9b6d20; font-size: 18rpx; white-space: nowrap; }

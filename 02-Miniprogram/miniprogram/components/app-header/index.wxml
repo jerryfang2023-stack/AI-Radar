@@ -5,4 +5,9 @@
     <button wx:if="{{rightLabel}}" class="right-button" style="right: {{rightInset}}px;" bindtap="rightTap">{{rightLabel}}</button>
   </view>
 </view>
+<view wx:elif="{{title}}" class="tab-header" style="padding-top: {{menuTop}}px; padding-right: {{rightInset}}px;">
+  <view class="tab-header-row" style="height: {{menuHeight}}px;">
+    <text class="tab-header-title">{{title}}</text>
+  </view>
+</view>
 <view wx:else class="tab-safe-top" style="height: {{tabSafeHeight}}px;"></view>

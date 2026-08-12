@@ -10,9 +10,9 @@
       <text>{{card.round}}</text><text class="divider">·</text><text>{{card.date}}</text>
     </view>
   </view>
-  <view class="row-side">
+  <view class="row-side {{showWatch ? '' : 'no-watch'}}">
     <text class="amount mono" bindtap="open">{{card.amount}}</text>
-    <view class="side-actions">
+    <view wx:if="{{showWatch}}" class="side-actions">
       <text wx:if="{{selected}}" class="compare-state">比较中</text>
       <button class="watch-button {{watched ? 'watched' : ''}}" catchtap="watch">{{watched ? '已收藏' : '收藏'}}</button>
     </view>

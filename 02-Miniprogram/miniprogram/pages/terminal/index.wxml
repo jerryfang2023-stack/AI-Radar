@@ -1,14 +1,10 @@
 <view class="page-shell">
-  <app-header />
+  <app-header title="融资情报" />
 
   <view class="page-content terminal-content">
-    <view class="terminal-intro">
-      <text class="intro-kicker">AI FUNDING · {{meta.latestDate}}</text>
-      <view class="intro-title-row">
-        <text class="intro-title">融资情报</text>
-        <button class="saved-link" bindtap="openWatchlist">收藏 {{watchCount}}</button>
-      </view>
-      <text class="intro-copy">追踪全球 AI 融资动态，快速了解公司、赛道、轮次与投资机构。{{meta.live ? '数据已在线同步。' : ''}}</text>
+    <view class="terminal-summary">
+      <view class="summary-primary"><text>已发布融资情报</text><text class="summary-value serif">{{meta.cardCount}}</text></view>
+      <view class="summary-secondary"><text class="mono">{{meta.disclosedAmountCount}}</text><text>笔金额披露</text></view>
     </view>
 
     <view class="search-row">
@@ -39,7 +35,7 @@
     </view>
 
     <view class="funding-list">
-      <funding-row wx:for="{{cards}}" wx:key="id" card="{{item}}" selected="{{item.selected}}" watched="{{item.watched}}" bind:open="openCard" bind:watch="toggleWatch" />
+      <funding-row wx:for="{{cards}}" wx:key="id" card="{{item}}" selected="{{item.selected}}" watched="{{item.watched}}" show-watch="{{false}}" bind:open="openCard" bind:watch="toggleWatch" />
     </view>
     <view wx:if="{{!filteredCount}}" class="empty-state"><view class="title">暂无符合条件的融资</view><view class="copy">调整关键词或筛选条件后再试。</view></view>
     <view wx:if="{{visibleCount < filteredCount}}" class="load-note">继续上拉加载 · 已显示 {{visibleCount}} 条</view>

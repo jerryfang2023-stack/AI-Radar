@@ -1,6 +1,9 @@
 .header { background: rgba(255, 253, 248, 0.98); }
 .header-row { position: relative; display: flex; align-items: center; min-height: 84rpx; padding: 0 28rpx; }
 .tab-safe-top { background: #fffdf8; }
+.tab-header { box-sizing: border-box; padding-bottom: 18rpx; padding-left: 28rpx; background: #fffdf8; }
+.tab-header-row { display: flex; align-items: center; min-height: 64rpx; }
+.tab-header-title { overflow: hidden; color: #071827; font-size: 38rpx; font-weight: 700; line-height: 1.2; letter-spacing: -1rpx; text-overflow: ellipsis; white-space: nowrap; }
 .header-title { overflow: hidden; color: #071827; font-size: 38rpx; font-weight: 700; line-height: 1.2; text-overflow: ellipsis; white-space: nowrap; }
 .header-title.is-centered { position: absolute; right: 190rpx; left: 190rpx; text-align: center; }
 .back-button, .right-button { min-height: 64rpx; margin: 0; padding: 0; border: 0; background: transparent; font-size: 26rpx; line-height: 64rpx; white-space: nowrap; }
