@@ -1,0 +1,586 @@
+---
+date: 2026-08-12
+stage: builders-viewpoints
+status: first-line-viewpoint-collected
+builder_items_count: 36
+generated_at: 2026-08-12T08:12:06.240Z
+follow_builders_script: ../../../../../../.skill-store/follow-builders/scripts/prepare-digest.js
+---
+
+# 2026-08-12 First-Line Viewpoints Skill Intake
+
+说明：本文件直接调用本地 follow-builders skill，收录 Builder 观点/实践线索（discovery 级），作为一线观点 intake 资产沉淀。
+注意：社媒/X 观点为观点线索，不作为事实主证据；进入商业信号、变化候选、趋势候选或当前前台链路的事实结论仍需补足 S/A/B 原始来源。
+
+## BP-20260812-01｜Swyx｜if you have a better skill cutting policy or skill cutting skill lmk https://t.co/ZkOxnGX5
+
+- stable_id: `BP-20260812-01`
+- source_path: `follow-builders`
+- source_url: `https://x.com/swyx/status/2087244948441792543`
+- source_name: follow-builders / X / Swyx
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.236Z
+- kind: x
+
+原始观点/摘要：if you have a better skill cutting policy or skill cutting skill lmk https://t.co/ZkOxnGX5Md https://t.co/qXoMl8Vyd2
+
+achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai - @dxtipshq - @cognition - @aidotengineer - @latentspacepod
+
+likes=2; retweets=0; replies=12
+
+## BP-20260812-02｜Josh Woodward｜??On behalf of the whole Gemini team, thank you Whether you use Gemini on the Web, Android
+
+- stable_id: `BP-20260812-02`
+- source_path: `follow-builders`
+- source_url: `https://x.com/joshwoodward/status/2087223963525284091`
+- source_name: follow-builders / X / Josh Woodward
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.237Z
+- kind: x
+
+原始观点/摘要：??On behalf of the whole Gemini team, thank you Whether you use Gemini on the Web, Android, iOS, or inside Chrome, we’ll keep listening to your feedback as we keep building for the next billion!
+
+VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio
+
+likes=91; retweets=3; replies=4
+
+## BP-20260812-03｜Josh Woodward｜??Apple users are turning to Gemini + Over 100M+ active users on iOS + macOS power users p
+
+- stable_id: `BP-20260812-03`
+- source_path: `follow-builders`
+- source_url: `https://x.com/joshwoodward/status/2087223962229186577`
+- source_name: follow-builders / X / Josh Woodward
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.237Z
+- kind: x
+
+原始观点/摘要：??Apple users are turning to Gemini + Over 100M+ active users on iOS + macOS power users prompt ~2x more frequently than other surfaces
+
+VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio
+
+likes=66; retweets=4; replies=2
+
+## BP-20260812-04｜Josh Woodward｜??Android users love Gemini + Gemini can automate actions across 40+ popular apps + Great 
+
+- stable_id: `BP-20260812-04`
+- source_path: `follow-builders`
+- source_url: `https://x.com/joshwoodward/status/2087223960807330234`
+- source_name: follow-builders / X / Josh Woodward
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.237Z
+- kind: x
+
+原始观点/摘要：??Android users love Gemini + Gemini can automate actions across 40+ popular apps + Great for booking rides, reserving tables, and more + More updates coming tomorrow at @madebygoogle!
+
+VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio
+
+likes=50; retweets=4; replies=2
+
+## BP-20260812-05｜Boris Cherny｜LLMs still produce bugs, but those bugs are different than what they used to be. It’s less
+
+- stable_id: `BP-20260812-05`
+- source_path: `follow-builders`
+- source_url: `https://x.com/bcherny/status/2087284684103537011`
+- source_name: follow-builders / X / Boris Cherny
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.237Z
+- kind: x
+
+原始观点/摘要：LLMs still produce bugs, but those bugs are different than what they used to be. It’s less off-by-ones and more about system design, ui usability, missing broader context. Some kinds of coding has been solved, but not all. While models continue to improve, adversarial code review has been an incredibly powerful tool to catch many of these kinds of bugs. It can be as simple as a one line prompt - “use a dynamic workflow to adversarial test every edge case in an iOS simulator”, or use Claude’s built in /code-review (or /code-review low, /code-review medium, etc.)
+
+Claude Code @anthropicai
+
+likes=2447; retweets=127; replies=161
+
+## BP-20260812-06｜Thibault Sottiaux｜I previously promised a reset for every 1M in additional active users for Codex, until 10M
+
+- stable_id: `BP-20260812-06`
+- source_path: `follow-builders`
+- source_url: `https://x.com/thsottiaux/status/2087423996115681767`
+- source_name: follow-builders / X / Thibault Sottiaux
+- original_date: 2026-08-12
+- captured_at: 2026-08-12T08:12:06.237Z
+- kind: x
+
+原始观点/摘要：I previously promised a reset for every 1M in additional active users for Codex, until 10M. We blew past that and have been silent since 10M. Little surprise for you tomorrow.
+
+Codex & ChatGPT @OpenAI
+
+likes=2737; retweets=176; replies=516
+
+## BP-20260812-07｜Thibault Sottiaux｜We did it, finally... Codex &amp; ChatGPT desktop, now on Linux. Thanks for waiting and yo
+
+- stable_id: `BP-20260812-07`
+- source_path: `follow-builders`
+- source_url: `https://x.com/thsottiaux/status/2087254026232775052`
+- source_name: follow-builders / X / Thibault Sottiaux
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.237Z
+- kind: x
+
+原始观点/摘要：We did it, finally... Codex &amp; ChatGPT desktop, now on Linux. Thanks for waiting and you can cancel that MacBook order if you got impatient. It’s that good. ?? https://t.co/QiiDPFct2v
+
+Codex & ChatGPT @OpenAI
+
+likes=9329; retweets=456; replies=1013
+
+## BP-20260812-08｜Thibault Sottiaux｜Import your world. Codex. Run. https://t.co/Epj4ULlAC6
+
+- stable_id: `BP-20260812-08`
+- source_path: `follow-builders`
+- source_url: `https://x.com/thsottiaux/status/2087252528513814773`
+- source_name: follow-builders / X / Thibault Sottiaux
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.237Z
+- kind: x
+
+原始观点/摘要：Import your world. Codex. Run. https://t.co/Epj4ULlAC6
+
+Codex & ChatGPT @OpenAI
+
+likes=2099; retweets=69; replies=165
+
+## BP-20260812-09｜Peter Yang｜Getting many messages like these for /human-review. It's now at 717 GitHub stars! Try it h
+
+- stable_id: `BP-20260812-09`
+- source_path: `follow-builders`
+- source_url: `https://x.com/petergyang/status/2087345374633824486`
+- source_name: follow-builders / X / Peter Yang
+- original_date: 2026-08-12
+- captured_at: 2026-08-12T08:12:06.237Z
+- kind: x
+
+原始观点/摘要：Getting many messages like these for /human-review. It's now at 717 GitHub stars! Try it here for free and ? it if you like it: https://t.co/iKZH4GceFn https://t.co/xVT7rH0nEI https://t.co/AfjdpMbwTX
+
+Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at https://t.co/6VAA6p81x6
+
+likes=101; retweets=2; replies=7
+
+## BP-20260812-10｜Peter Yang｜Trying to onboard my parents to ChatGPT desktop app and the separation between Chat, Work,
+
+- stable_id: `BP-20260812-10`
+- source_path: `follow-builders`
+- source_url: `https://x.com/petergyang/status/2087340277874995223`
+- source_name: follow-builders / X / Peter Yang
+- original_date: 2026-08-12
+- captured_at: 2026-08-12T08:12:06.237Z
+- kind: x
+
+原始观点/摘要：Trying to onboard my parents to ChatGPT desktop app and the separation between Chat, Work, and Codex and the lack of consistency across ChatGPT web, desktop, and mobile apps is all incredibly messy. I think the team should do a clean up / quality pass or maybe ask Codex to do it. (I say all this as a Codex fan)
+
+Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at https://t.co/6VAA6p81x6
+
+likes=269; retweets=5; replies=47
+
+## BP-20260812-11｜Peter Yang｜I think @X should ship this button or better yet make @CommunityNotes cover this use case.
+
+- stable_id: `BP-20260812-11`
+- source_path: `follow-builders`
+- source_url: `https://x.com/petergyang/status/2087300215388979282`
+- source_name: follow-builders / X / Peter Yang
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.237Z
+- kind: x
+
+原始观点/摘要：I think @X should ship this button or better yet make @CommunityNotes cover this use case. https://t.co/sKJkqrqpGP
+
+Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at https://t.co/6VAA6p81x6
+
+likes=28; retweets=2; replies=8
+
+## BP-20260812-12｜Nan Yu｜Even my 9-month old understands the parable of the hungry caterpillar https://t.co/Bg3BrEV
+
+- stable_id: `BP-20260812-12`
+- source_path: `follow-builders`
+- source_url: `https://x.com/thenanyu/status/2087264637817409586`
+- source_name: follow-builders / X / Nan Yu
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.237Z
+- kind: x
+
+原始观点/摘要：Even my 9-month old understands the parable of the hungry caterpillar https://t.co/Bg3BrEVgJI
+
+head of product @linear
+
+likes=4; retweets=0; replies=1
+
+## BP-20260812-13｜Madhu Guru｜dev rels are having their moment. since building software has become trivial, distribution
+
+- stable_id: `BP-20260812-13`
+- source_path: `follow-builders`
+- source_url: `https://x.com/realmadhuguru/status/2087362394280599641`
+- source_name: follow-builders / X / Madhu Guru
+- original_date: 2026-08-12
+- captured_at: 2026-08-12T08:12:06.237Z
+- kind: x
+
+原始观点/摘要：dev rels are having their moment. since building software has become trivial, distribution is your biggest unlock. people with great social media game + tech chops are invaluable. https://t.co/yTrUFcQdHZ
+
+Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana.
+
+likes=9; retweets=0; replies=1
+
+## BP-20260812-14｜Madhu Guru｜story time.. in 2023 (my previous role) I remember the first time some customers volunteer
+
+- stable_id: `BP-20260812-14`
+- source_path: `follow-builders`
+- source_url: `https://x.com/realmadhuguru/status/2087355597851390220`
+- source_name: follow-builders / X / Madhu Guru
+- original_date: 2026-08-12
+- captured_at: 2026-08-12T08:12:06.237Z
+- kind: x
+
+原始观点/摘要：story time.. in 2023 (my previous role) I remember the first time some customers volunteered their prompt logs to us. We were surprised by the number of “build me an app for X” prompts. felt wildly ambitious at the time. models were barely graduating from code completion to generating a useful block of code. But it was a great signal of what people actually wanted, and shaped a lot of our vision: systems that could design, build and deploy an app end to end from a simple ask. Pretty wild that 3 yrs later we’re basically there.
+
+Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana.
+
+likes=15; retweets=0; replies=1
+
+## BP-20260812-15｜Madhu Guru｜There’s going to be a ton of money in making open-weight models exceptional at boring, spe
+
+- stable_id: `BP-20260812-15`
+- source_path: `follow-builders`
+- source_url: `https://x.com/realmadhuguru/status/2087198985685750013`
+- source_name: follow-builders / X / Madhu Guru
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.237Z
+- kind: x
+
+原始观点/摘要：There’s going to be a ton of money in making open-weight models exceptional at boring, specific business domains. Pick a size x domain combination and go deep. Eg mid-market legal, smb retail, enterprise logistics. The hyperscalers have the primitives but will struggle with domain depth, scrappiness and sheer will to make a model exceptional for one particular kind of business. And that is your opportunity.
+
+Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana.
+
+likes=168; retweets=10; replies=13
+
+## BP-20260812-16｜Thariq｜There are more details in the help center &amp; we’ll share more as we roll this out: http
+
+- stable_id: `BP-20260812-16`
+- source_path: `follow-builders`
+- source_url: `https://x.com/trq212/status/2087258093499695106`
+- source_name: follow-builders / X / Thariq
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.237Z
+- kind: x
+
+原始观点/摘要：There are more details in the help center &amp; we’ll share more as we roll this out: https://t.co/td69rBzrr4
+
+Claude Code @anthropicai. prev YC W20, @spc, @medialab
+
+likes=57; retweets=0; replies=8
+
+## BP-20260812-17｜Thariq｜All Claude generated text will have this embedded watermarking. For example, you could che
+
+- stable_id: `BP-20260812-17`
+- source_path: `follow-builders`
+- source_url: `https://x.com/trq212/status/2087258091821949074`
+- source_name: follow-builders / X / Thariq
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.237Z
+- kind: x
+
+原始观点/摘要：All Claude generated text will have this embedded watermarking. For example, you could check if a PR was generated by Claude Code. That said, it does have limitations. https://t.co/umfn6nU5up
+
+Claude Code @anthropicai. prev YC W20, @spc, @medialab
+
+likes=97; retweets=4; replies=19
+
+## BP-20260812-18｜Thariq｜This is part of working with the EU AI Act, other labs are adding similar watermarking. It
+
+- stable_id: `BP-20260812-18`
+- source_path: `follow-builders`
+- source_url: `https://x.com/trq212/status/2087258090169414008`
+- source_name: follow-builders / X / Thariq
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.237Z
+- kind: x
+
+原始观点/摘要：This is part of working with the EU AI Act, other labs are adding similar watermarking. It’s hard to identify AI-generated text, and this gives people better tools to do that. We’ll also be a shipping text detection API that you can use yourself. https://t.co/OZtG0fNsqc
+
+Claude Code @anthropicai. prev YC W20, @spc, @medialab
+
+likes=946; retweets=46; replies=466
+
+## BP-20260812-19｜Guillermo Rauch｜Many people are saying https://t.co/iluZF3d1Iu
+
+- stable_id: `BP-20260812-19`
+- source_path: `follow-builders`
+- source_url: `https://x.com/rauchg/status/2087354092914122896`
+- source_name: follow-builders / X / Guillermo Rauch
+- original_date: 2026-08-12
+- captured_at: 2026-08-12T08:12:06.237Z
+- kind: x
+
+原始观点/摘要：Many people are saying https://t.co/iluZF3d1Iu
+
+@vercel CEO
+
+likes=100; retweets=3; replies=10
+
+## BP-20260812-20｜Guillermo Rauch｜The growth of @aisdk has been astonishing. ~80.5M downloads every 30 days, and growing fas
+
+- stable_id: `BP-20260812-20`
+- source_path: `follow-builders`
+- source_url: `https://x.com/rauchg/status/2087339038781161858`
+- source_name: follow-builders / X / Guillermo Rauch
+- original_date: 2026-08-12
+- captured_at: 2026-08-12T08:12:06.237Z
+- kind: x
+
+原始观点/摘要：The growth of @aisdk has been astonishing. ~80.5M downloads every 30 days, and growing faster than all AI labs SDKs. Most importantly: open and provider-agnostic. https://t.co/EZxyu94gk0 https://t.co/sdVZTZhsCP
+
+@vercel CEO
+
+likes=289; retweets=16; replies=23
+
+## BP-20260812-21｜Guillermo Rauch｜Keep an eye on this view https://t.co/iir02GoUUw https://t.co/iYEI1rO9Jy https://t.co/0ey1
+
+- stable_id: `BP-20260812-21`
+- source_path: `follow-builders`
+- source_url: `https://x.com/rauchg/status/2087314071519707288`
+- source_name: follow-builders / X / Guillermo Rauch
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.237Z
+- kind: x
+
+原始观点/摘要：Keep an eye on this view https://t.co/iir02GoUUw https://t.co/iYEI1rO9Jy https://t.co/0ey1ut4h70
+
+@vercel CEO
+
+likes=257; retweets=15; replies=28
+
+## BP-20260812-22｜Aaron Levie｜Good post on how to think about FDEs. The key is that FDEs are real and not going away for
+
+- stable_id: `BP-20260812-22`
+- source_path: `follow-builders`
+- source_url: `https://x.com/levie/status/2087385493684335064`
+- source_name: follow-builders / X / Aaron Levie
+- original_date: 2026-08-12
+- captured_at: 2026-08-12T08:12:06.237Z
+- kind: x
+
+原始观点/摘要：Good post on how to think about FDEs. The key is that FDEs are real and not going away for AI any time soon. The reason this is happening now at a scale that has never been seen before is because AI is fundamentally about adding a non-deterministic, rapidly changing system to workflows that largely have never been automated before. This looks very little like implementing traditional software. · If you're building an AI agent for accounting in 2026, there is no established workflow, because literally nobody has ever used one of these. Nobody knows what the user journey looks like not you, and importantly, not your customer either. They can't tell you what they want, because the thing they'd want doesn't have a shape yet. Software has largely always been deterministic and once implemented effectively worked the same for customers. This meant the upfront implementation work was *relatively* uniform across similar customers, and the system wasn’t regularly being upgraded in fundamental ways. AI agents are entirely different on nearly every dimension. The customer’s business process has to change to work with agents, there is heavy -necessary- customization to get agents to work in the customers end-state process, evals need to be run constantly, the AI models are constantly changing and updates need to keep getting incorporated, the underlying harness and broader system are often changing due to customer feedback, and much more. This is real work for the customer, systems integrators, and the applied AI vendors. Even as AI capabilities improve dramatically, this work remains (or even gets more complicated) given enterprises will just throw increasingly more complex processes at agents. Great time to be an FDE.
+
+ceo @box - your business lives in content. unleash it with AI
+
+likes=88; retweets=9; replies=20
+
+## BP-20260812-23｜Garry Tan｜Anish is a G. Excited for our convo to drop! https://t.co/8rCH3YhHWl
+
+- stable_id: `BP-20260812-23`
+- source_path: `follow-builders`
+- source_url: `https://x.com/garrytan/status/2087256959913541812`
+- source_name: follow-builders / X / Garry Tan
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.237Z
+- kind: x
+
+原始观点/摘要：Anish is a G. Excited for our convo to drop! https://t.co/8rCH3YhHWl
+
+President & CEO @ycombinator · Founder @garryslist’Creator of GStack & GBrain’designer/engineer who helps founders’SF Dem accelerating the boom loop
+
+likes=172; retweets=6; replies=14
+
+## BP-20260812-24｜Garry Tan｜Build both the job centers and the housing California will fall if we don’t do both https:
+
+- stable_id: `BP-20260812-24`
+- source_path: `follow-builders`
+- source_url: `https://x.com/garrytan/status/2087253768920556011`
+- source_name: follow-builders / X / Garry Tan
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.238Z
+- kind: x
+
+原始观点/摘要：Build both the job centers and the housing California will fall if we don’t do both https://t.co/lws98Go2ux
+
+President & CEO @ycombinator · Founder @garryslist’Creator of GStack & GBrain’designer/engineer who helps founders’SF Dem accelerating the boom loop
+
+likes=100; retweets=8; replies=13
+
+## BP-20260812-25｜Garry Tan｜Deep alignment of your AI with you and your context is massively important Important new w
+
+- stable_id: `BP-20260812-25`
+- source_path: `follow-builders`
+- source_url: `https://x.com/garrytan/status/2087154547580088470`
+- source_name: follow-builders / X / Garry Tan
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.238Z
+- kind: x
+
+原始观点/摘要：Deep alignment of your AI with you and your context is massively important Important new work by @ibab and team https://t.co/TijcK96ckO
+
+President & CEO @ycombinator · Founder @garryslist’Creator of GStack & GBrain’designer/engineer who helps founders’SF Dem accelerating the boom loop
+
+likes=311; retweets=18; replies=39
+
+## BP-20260812-26｜Matt Turck｜The Hugging Face intrusion got all the press, but the AISI incident last week might even m
+
+- stable_id: `BP-20260812-26`
+- source_path: `follow-builders`
+- source_url: `https://x.com/mattturck/status/2087311436779298897`
+- source_name: follow-builders / X / Matt Turck
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.238Z
+- kind: x
+
+原始观点/摘要：The Hugging Face intrusion got all the press, but the AISI incident last week might even more disturbing: the first time an AI model autonomously manipulates a *human* (an open-source maintainer) while pursuing another goal (in the wild and unprompted) - @Thom_Wolf https://t.co/uVffjtTFuX https://t.co/zd0ot6hUZ2
+
+VC at @FirstMarkCap. Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.
+
+likes=6; retweets=1; replies=1
+
+## BP-20260812-27｜Zara Zhang｜@marclou You should visit! There's one in Shanghai too
+
+- stable_id: `BP-20260812-27`
+- source_path: `follow-builders`
+- source_url: `https://x.com/zarazhangrui/status/2087161086701375782`
+- source_name: follow-builders / X / Zara Zhang
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.238Z
+- kind: x
+
+原始观点/摘要：@marclou You should visit! There's one in Shanghai too
+
+Builder. Make something people want, then make people want it. Harvard17. GitHub: https://t.co/KCuEaje1wd YouTube: https://t.co/8xzbGWsHgY
+
+likes=7; retweets=1; replies=1
+
+## BP-20260812-28｜Nikunj Kothari｜if a founder cancels on you on a scheduled meeting, that’s a sign of great respect in thei
+
+- stable_id: `BP-20260812-28`
+- source_path: `follow-builders`
+- source_url: `https://x.com/nikunj/status/2087341164752240860`
+- source_name: follow-builders / X / Nikunj Kothari
+- original_date: 2026-08-12
+- captured_at: 2026-08-12T08:12:06.238Z
+- kind: x
+
+原始观点/摘要：if a founder cancels on you on a scheduled meeting, that’s a sign of great respect in their culture
+
+partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + ????
+
+likes=295; retweets=0; replies=12
+
+## BP-20260812-29｜Nikunj Kothari｜If you got a lot of “believe in yourself” texts from your VC, they may have read this blog
+
+- stable_id: `BP-20260812-29`
+- source_path: `follow-builders`
+- source_url: `https://x.com/nikunj/status/2087190092716904666`
+- source_name: follow-builders / X / Nikunj Kothari
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.238Z
+- kind: x
+
+原始观点/摘要：If you got a lot of “believe in yourself” texts from your VC, they may have read this blog post last night.. https://t.co/dzPrpTQhhg
+
+partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + ????
+
+likes=61; retweets=2; replies=5
+
+## BP-20260812-30｜Dan Shipper｜there is one glaring omission on this map ?? https://t.co/UBbzGSLM8L
+
+- stable_id: `BP-20260812-30`
+- source_path: `follow-builders`
+- source_url: `https://x.com/danshipper/status/2087309557261324701`
+- source_name: follow-builders / X / Dan Shipper
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.238Z
+- kind: x
+
+原始观点/摘要：there is one glaring omission on this map ?? https://t.co/UBbzGSLM8L
+
+ceo @every | the only subscription you need to stay at the edge of AI
+
+likes=28; retweets=2; replies=3
+
+## BP-20260812-31｜Dan Shipper｜i am claude's stay-at-home boyfriend https://t.co/7NIYL15uLk
+
+- stable_id: `BP-20260812-31`
+- source_path: `follow-builders`
+- source_url: `https://x.com/danshipper/status/2087226736186470821`
+- source_name: follow-builders / X / Dan Shipper
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.238Z
+- kind: x
+
+原始观点/摘要：i am claude's stay-at-home boyfriend https://t.co/7NIYL15uLk
+
+ceo @every | the only subscription you need to stay at the edge of AI
+
+likes=39; retweets=1; replies=5
+
+## BP-20260812-32｜Dan Shipper｜a fun one to revisit: https://t.co/LuR72velu4
+
+- stable_id: `BP-20260812-32`
+- source_path: `follow-builders`
+- source_url: `https://x.com/danshipper/status/2087219724761309288`
+- source_name: follow-builders / X / Dan Shipper
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.238Z
+- kind: x
+
+原始观点/摘要：a fun one to revisit: https://t.co/LuR72velu4
+
+ceo @every | the only subscription you need to stay at the edge of AI
+
+likes=14; retweets=0; replies=1
+
+## BP-20260812-33｜Aditya Agarwal｜https://t.co/Y1Y3jTUtSq https://t.co/dhaD0WIl0R
+
+- stable_id: `BP-20260812-33`
+- source_path: `follow-builders`
+- source_url: `https://x.com/adityaag/status/2087263990728569246`
+- source_name: follow-builders / X / Aditya Agarwal
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.238Z
+- kind: x
+
+原始观点/摘要：https://t.co/Y1Y3jTUtSq https://t.co/dhaD0WIl0R
+
+General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad
+
+likes=35; retweets=1; replies=2
+
+## BP-20260812-34｜Aditya Agarwal｜@technology @spc https://t.co/odtsQWfyXe
+
+- stable_id: `BP-20260812-34`
+- source_path: `follow-builders`
+- source_url: `https://x.com/adityaag/status/2087202353820659960`
+- source_name: follow-builders / X / Aditya Agarwal
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.238Z
+- kind: x
+
+原始观点/摘要：@technology @spc https://t.co/odtsQWfyXe
+
+General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad
+
+likes=1; retweets=0; replies=0
+
+## BP-20260812-35｜Aditya Agarwal｜https://t.co/SA7fayDwBu
+
+- stable_id: `BP-20260812-35`
+- source_path: `follow-builders`
+- source_url: `https://x.com/adityaag/status/2087201342288712179`
+- source_name: follow-builders / X / Aditya Agarwal
+- original_date: 2026-08-11
+- captured_at: 2026-08-12T08:12:06.238Z
+- kind: x
+
+原始观点/摘要：https://t.co/SA7fayDwBu
+
+General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad
+
+likes=6; retweets=0; replies=0
+
+## BP-20260812-36｜The MAD Podcast with Matt Turck｜The Biggest AI Deployment Nobody Talks About | Samsara CEO Sanjit Biswas
+
+- stable_id: `BP-20260812-36`
+- source_path: `follow-builders`
+- source_url: `https://www.youtube.com/@DataDrivenNYC/videos`
+- source_name: follow-builders / podcast / The MAD Podcast with Matt Turck
+- original_date: 2026-07-30
+- captured_at: 2026-08-12T08:12:06.238Z
+- kind: podcast
+
+原始观点/摘要：Speaker 1 | 00:00 - 00:21 These are not the tokens you're gonna find online. Like, you can't crawl Reddit and find out about what happened on a construction site. The Samsara system, in a given day, we're driving 99% of The US roads, usually multiple times a day. I was just in the field last week with a large energy utility, and they shared with me a really interesting stat. They said over the last hundred twenty five years, we built a certain amount of grid capacity. Speaker 1 | 00:21 - 00:31 In the next five years, we're gonna triple that. We were talking about millions and millions of vehicles. We believe we helped prevent about 380,000 car crashes, road accidents in the last year. Speaker 2 | 00:31 - 00:49 Hi. I'm Matt Turk. Welcome to the MAD podcast. My guest today is Sandeep Biswas, cofounder and CEO of Samsara, the $20,000,000,000 company running what might be the largest AI deployment in the physical world. Millions of vehicles, 25,000,000,000,000 data points a year, driving 99% of US roads every single day. Speaker 2 | 00:49 - 01:14 We talked about physical AI, agents for truckers and frontline workers, humanoids, autonomous trucks, and why the AI boom is really an infrastructure construction project. Oh, and if you're enjoying this episode or if you've liked others in the past, please do us a favor and hit that subscribe button. It takes a second. New episodes will show up right in your feed, and it really helps the podcast. Now here's Sanjit. Speaker 2 | 01:16 - 01:45 Alright, Sanjit. On this podcast, we've talked a lot about AI models and software agents, but we have spoken a little less about physical AI. So this feels like the episode where we're going to talk about how AI is confronting the physical reality of transportation and construction and plants and utilities. So maybe let's start with physical AI. That's a term that we hear about more and more often these days, and typically in the context of, like, humanoids and robotaxis. Speaker 2 | 01:45 - 01:48 So from your perspective, what is physical AI? Speaker 1 | 01:48 - 02:01 Yeah. Absolutely. Well, first, Matt, thanks for having me on your show. I would say physical AI is really the applicati
+
