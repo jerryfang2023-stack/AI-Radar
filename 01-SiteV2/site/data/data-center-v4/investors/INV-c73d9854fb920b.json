@@ -13,23 +13,23 @@
   },
   "institution": {
     "id": "INV-c73d9854fb920b",
-    "name": "NVIDIA",
+    "name": "Nvidia",
     "aliases": [
-      "Nvidia"
+      "NVIDIA"
     ],
     "canonical_entity_id": "EN-8d4321d936320802",
     "investor_kind": "corporate_investor",
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 11,
+    "current_round_count": 12,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 10,
+    "portfolio_company_count": 11,
     "first_disclosed_at": "2025-09-09",
-    "latest_disclosed_at": "2026-07-16",
+    "latest_disclosed_at": "2026-08-11",
     "role_counts": {
       "lead": 1,
-      "participant": 10
+      "participant": 11
     },
     "round_codes": [
       "multi_round",
@@ -82,6 +82,11 @@
         "name": "Recursive Superintelligence Inc."
       },
       {
+        "entity_id": "EN-8ab71d56a963f706",
+        "canonical_entity_id": "",
+        "name": "River AI"
+      },
+      {
         "entity_id": "EN-816bab802b34b308",
         "canonical_entity_id": "",
         "name": "Together AI"
@@ -93,6 +98,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-ef24e0cf60db85ad",
+        "funding_insight_id": "FI-d1444f877a3e580e",
+        "event_ids": [
+          "EV-55e7c286e95be405"
+        ],
+        "company_entity_id": "EN-8ab71d56a963f706",
+        "company_canonical_entity_id": "",
+        "company_name": "River AI",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$1.1 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "11 亿美元"
+        },
+        "announced_at": "2026-08-11",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0deb7f666bec5423",
+            "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
+            "source_title": "General Catalyst 领投 River AI 11 亿美元融资",
+            "source_content_hash": "a44322af824e0f8f",
+            "quote": "with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek",
+            "quote_hash": "2fea4aa95f455cf668da90f6bbb80a60ef5d93295e469d69604b0b43586f6284"
+          }
+        ]
+      },
       {
         "activity_id": "IA-76328b3a57ddc9ae",
         "funding_insight_id": "FI-f59cd4d7e9ffcb18",
@@ -546,6 +589,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-0deb7f666bec5423",
+        "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
+        "source_title": "General Catalyst 领投 River AI 11 亿美元融资",
+        "source_content_hash": "a44322af824e0f8f",
+        "quote": "with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek",
+        "quote_hash": "2fea4aa95f455cf668da90f6bbb80a60ef5d93295e469d69604b0b43586f6284"
+      },
       {
         "source_id": "FISRC-09d3aaaafa6cdabc",
         "source_url": "https://www.recall.it/summary/artificial-intelligence/how-elorian-ai-pulled-off-a-dollar300m-pre-seed-valuation-with-andrew-dai",

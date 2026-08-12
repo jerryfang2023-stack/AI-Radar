@@ -22,15 +22,15 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 22,
+    "current_round_count": 23,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 21,
+    "portfolio_company_count": 22,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-08-10",
+    "latest_disclosed_at": "2026-08-11",
     "role_counts": {
       "historical_or_ambiguous": 2,
       "lead": 2,
-      "participant": 20
+      "participant": 21
     },
     "round_codes": [
       "multi_round",
@@ -112,6 +112,11 @@
         "name": "Replit"
       },
       {
+        "entity_id": "EN-8ab71d56a963f706",
+        "canonical_entity_id": "",
+        "name": "River AI"
+      },
+      {
         "entity_id": "EN-d387c8c96239d383",
         "canonical_entity_id": "",
         "name": "SigmanticAI"
@@ -148,6 +153,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-63af9b5bef12d1c7",
+        "funding_insight_id": "FI-d1444f877a3e580e",
+        "event_ids": [
+          "EV-55e7c286e95be405"
+        ],
+        "company_entity_id": "EN-8ab71d56a963f706",
+        "company_canonical_entity_id": "",
+        "company_name": "River AI",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$1.1 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "11 亿美元"
+        },
+        "announced_at": "2026-08-11",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0deb7f666bec5423",
+            "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
+            "source_title": "General Catalyst 领投 River AI 11 亿美元融资",
+            "source_content_hash": "a44322af824e0f8f",
+            "quote": "with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek",
+            "quote_hash": "2fea4aa95f455cf668da90f6bbb80a60ef5d93295e469d69604b0b43586f6284"
+          }
+        ]
+      },
       {
         "activity_id": "IA-89f34375ab4f5386",
         "funding_insight_id": "FI-5d8eab3e612ca748",
@@ -1086,6 +1129,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-0deb7f666bec5423",
+        "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
+        "source_title": "General Catalyst 领投 River AI 11 亿美元融资",
+        "source_content_hash": "a44322af824e0f8f",
+        "quote": "with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek",
+        "quote_hash": "2fea4aa95f455cf668da90f6bbb80a60ef5d93295e469d69604b0b43586f6284"
+      },
       {
         "source_id": "FISRC-c3267e56ad969be2",
         "source_url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",

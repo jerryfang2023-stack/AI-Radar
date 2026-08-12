@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2025,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-267c02d43be6f2",
+    "name": "Dwarkesh Patel",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-08-06",
+    "latest_disclosed_at": "2026-08-06",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-7ebe9a17c4d4c271",
+        "canonical_entity_id": "",
+        "name": "Mechanize"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-6109580e38f6769e",
+        "funding_insight_id": "FI-ad56bb800ab98d44",
+        "event_ids": [
+          "EV-cfbfc6c80338aa12"
+        ],
+        "company_entity_id": "EN-7ebe9a17c4d4c271",
+        "company_canonical_entity_id": "",
+        "company_name": "Mechanize",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$1.5B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿美元"
+        },
+        "announced_at": "2026-08-06",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9bd81942662ab7e7",
+            "source_url": "https://dealroom.co/news/143496-google-eyes-1-5b-for-mechanize-a-startup-that-raised-9-1m-seed-103-days/",
+            "source_title": "谷歌瞄准Mechanize的15亿美元投资，这家初创公司103天前刚筹集了910万美元种子轮",
+            "source_content_hash": "ea8f0b6734de5746",
+            "quote": "podcaster Dwarkesh Patel",
+            "quote_hash": "7d9e7ef0da159cf59c70835546f3a1a9c141f2e7de80874027025b76b6df314f"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-9bd81942662ab7e7",
+        "source_url": "https://dealroom.co/news/143496-google-eyes-1-5b-for-mechanize-a-startup-that-raised-9-1m-seed-103-days/",
+        "source_title": "谷歌瞄准Mechanize的15亿美元投资，这家初创公司103天前刚筹集了910万美元种子轮",
+        "source_content_hash": "ea8f0b6734de5746",
+        "quote": "podcaster Dwarkesh Patel",
+        "quote_hash": "7d9e7ef0da159cf59c70835546f3a1a9c141f2e7de80874027025b76b6df314f"
+      }
+    ]
+  }
+}
