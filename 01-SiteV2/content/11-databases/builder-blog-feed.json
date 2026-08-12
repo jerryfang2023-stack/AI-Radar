@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-11T01:16:26.941Z",
+  "generatedAt": "2026-08-12T04:06:34.847Z",
   "stats": {
     "blogsBuilt": 4,
-    "totalItems": 33,
+    "totalItems": 31,
     "sourceCount": 6,
     "errors": []
   },
@@ -12,6 +12,26 @@
       "handle": "simonwillison.net",
       "bio": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "tweets": [
+        {
+          "id": "https://simonwillison.net/2026/Aug/11/there-are-no-lossless-transformations-of-natural-language-text/#atom-everything",
+          "text": "There are no lossless transformations of natural-language text",
+          "summary": "<p><strong><a href=\"https://sophiebits.com/2026/06/25/there-are-no-lossless-transformations-of-natural-language-text\">There are no lossless transformations of natural-language text</a></strong></p>\nSophie Alpert shares her \"internal policy on acceptable use of AI writing by engineers\". It's a short ",
+          "createdAt": "2026-08-11T23:48:35+00:00",
+          "url": "https://simonwillison.net/2026/Aug/11/there-are-no-lossless-transformations-of-natural-language-text/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/#atom-everything",
+          "text": "Stealing Reasoning Traces from Proprietary LLM APIs",
+          "summary": "<p><strong><a href=\"https://stolen-thoughts.com/\">Stealing Reasoning Traces from Proprietary LLM APIs</a></strong></p>\nA vanity domain name (<code>stolen-thoughts.com</code>) for <a href=\"https://www.alphaxiv.org/abs/2608.09867\">a neat paper</a>:</p>\n<blockquote>\n<p>Anthropic, OpenAI, and Google ret",
+          "createdAt": "2026-08-11T22:40:45+00:00",
+          "url": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything",
           "text": "Introducing Muse Glimmer",
@@ -24,7 +44,7 @@
         },
         {
           "id": "https://simonwillison.net/2026/Aug/10/openclaw/#atom-everything",
-          "text": "Quoting OpenClaw",
+          "text": "Quoting OpenClaw (running Opus 4.6)",
           "summary": "<blockquote cite=\"https://www.abc.net.au/news/2026-08-10/ai-assistant-hacks-gym-website-aus-cyber-attack/107007986\"><p>The API has zero authorisations checks on cancelling other people's reservations … I tested this with the person in waitlist position #1 — and it actually went through. So you've mo",
           "createdAt": "2026-08-10T02:05:16+00:00",
           "url": "https://simonwillison.net/2026/Aug/10/openclaw/#atom-everything",
@@ -211,46 +231,6 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Aug/4/new-release-of-llm/#atom-everything",
-          "text": "New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
-          "summary": "<p>I released <a href=\"https://llm.datasette.io/en/stable/changelog.html#v0-32\">LLM 0.32</a> this morning, the most significant new version of LLM since the initial launch of the project. The new version includes support for visible reasoning traces, server-side provider tools, redesigned content-ad",
-          "createdAt": "2026-08-04T23:58:24+00:00",
-          "url": "https://simonwillison.net/2026/Aug/4/new-release-of-llm/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Aug/4/llm-anthropic/#atom-everything",
-          "text": "llm-anthropic 0.26",
-          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-anthropic/releases/tag/0.26\">llm-anthropic 0.26</a></p>\n        <p>Includes new features enabled by <a href=\"https://simonwillison.net/2026/Aug/4/new-release-of-llm/\">LLM 0.32</a>:</p>\n<blockquote>\n<ul>\n<li>New models: <code>claude-",
-          "createdAt": "2026-08-04T22:00:58+00:00",
-          "url": "https://simonwillison.net/2026/Aug/4/llm-anthropic/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
-          "text": "PipeNetwork/minimax-h3-mlx",
-          "summary": "<p><strong><a href=\"https://github.com/PipeNetwork/minimax-h3-mlx\">PipeNetwork/minimax-h3-mlx</a></strong></p>\nMiniMax released <a href=\"https://huggingface.co/MiniMaxAI/MiniMax-H3\">MiniMax-H3</a> two days ago - they describe it as a \"a general-purpose, omni-modal generative system\", which in practi",
-          "createdAt": "2026-08-04T19:10:09+00:00",
-          "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Aug/4/llm/#atom-everything",
-          "text": "llm 0.32",
-          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm/releases/tag/0.32\">llm 0.32</a></p>\n        <p>See <a href=\"https://simonwillison.net/2026/Aug/4/new-release-of-llm/\">my detailed blog post about this release</a>.</p>\n    \n    \n        <p>Tags: <a href=\"https://simonwillison.net/ta",
-          "createdAt": "2026-08-04T17:15:33+00:00",
-          "url": "https://simonwillison.net/2026/Aug/4/llm/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
         }
       ]
     },
@@ -287,6 +267,16 @@
       "bio": "Daily AI news curation: product launches, funding, models, tools, industry highlights.",
       "tweets": [
         {
+          "id": "https://www.bensbites.com/p/make-it-readable",
+          "text": "Make it readable",
+          "summary": "an ai future for everyone",
+          "createdAt": "Tue, 11 Aug 2026 13:03:29 GMT",
+          "url": "https://www.bensbites.com/p/make-it-readable",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
           "id": "https://www.bensbites.com/p/bens-session",
           "text": "Ben's session",
           "summary": "Field notes from my agent activity",
@@ -305,16 +295,6 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
-        },
-        {
-          "id": "https://www.bensbites.com/p/what-my-agent-knows-about-me",
-          "text": "What my agent knows about me",
-          "summary": "80% cheaper GPT",
-          "createdAt": "Tue, 04 Aug 2026 13:10:31 GMT",
-          "url": "https://www.bensbites.com/p/what-my-agent-knows-about-me",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
         }
       ]
     },
@@ -323,6 +303,16 @@
       "handle": "tldr.tech",
       "bio": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "tweets": [
+        {
+          "id": "https://tldr.tech/ai/2026-08-11",
+          "text": "Muse Glimmer ✨, OpenAI Cyber 🛡️, Claude vs Riemann Hypothesis 🧠",
+          "summary": "",
+          "createdAt": "Tue, 11 Aug 2026 00:00:00 GMT",
+          "url": "https://tldr.tech/ai/2026-08-11",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://tldr.tech/ai/2026-08-10",
           "text": "OpenAI Astra pause 🚨, Claude Code cross-session 🤖, how Cursor Router works 🔀",
@@ -349,16 +339,6 @@
           "summary": "",
           "createdAt": "Thu, 06 Aug 2026 00:00:00 GMT",
           "url": "https://tldr.tech/ai/2026-08-06",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://tldr.tech/ai/2026-08-05",
-          "text": "Google LLM router ➡️, Cloudflare Wallets 💳, Anthropic and Volta 🤝",
-          "summary": "",
-          "createdAt": "Wed, 05 Aug 2026 00:00:00 GMT",
-          "url": "https://tldr.tech/ai/2026-08-05",
           "likes": 0,
           "retweets": 0,
           "replies": 0
