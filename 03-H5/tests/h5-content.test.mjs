@@ -6,8 +6,13 @@ const readJson = async (name) => JSON.parse(await readFile(new URL(`../public/da
 
 test("H5 contains all four confirmed columns", async () => {
   const source = await readFile(new URL("../src/Prototype.tsx", import.meta.url), "utf8");
-  for (const label of ["融资", "市场", "观察", "我的"]) assert.match(source, new RegExp(`label: \"${label}\"`));
+  for (const label of ["融资", "商业主体", "观察", "我的"]) assert.match(source, new RegExp(`label: \"${label}\"`));
   assert.match(source, /title="融资情报"/u);
+  assert.match(source, /placeholder="公司 \/ 机构 \/ 产品"/u);
+  assert.match(source, /title="商业主体"/u);
+  assert.match(source, /企业库/u);
+  assert.match(source, /投资机构/u);
+  assert.doesNotMatch(source, /category-carousel|融资分类|全部市场/u);
   for (const internalCopy of ["融资终端", "多源核验", "已验证信号", "当前公开样本概览"]) {
     assert.doesNotMatch(source, new RegExp(internalCopy, "u"));
   }

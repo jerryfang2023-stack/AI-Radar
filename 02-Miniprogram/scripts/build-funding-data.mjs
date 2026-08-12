@@ -74,6 +74,7 @@ function projectCard(card) {
   const marketRegion = card.market_scope?.market_region === "CN" ? "china" : "global";
   const investors = list(financing.investors).map((item) => ({ name: text(item.name), role: text(item.role) }));
   const companyName = text(company.name || company.full_name) || "未披露公司";
+  const products = unique(list(card.products).map((item) => text(item.name)).filter(Boolean));
   const amount = financing.amount_normalized?.display_zh || financing.amount_original || financing.amount || "未披露";
   const cumulative = financing.cumulative_amount?.normalized?.display_zh || financing.cumulative_amount?.original
     || financing.total_raised_normalized?.display_zh || financing.total_raised_original || financing.total_raised || "未披露";
@@ -94,6 +95,7 @@ function projectCard(card) {
     company: companyName,
     initial: companyName.slice(0, 1).toUpperCase(),
     summary: shorten(company.summary, 90) || "公司介绍暂未披露",
+    products,
     categoryId: text(card.market_category?.id),
     category: text(card.market_category?.name) || "未分类",
     subcategory: text(card.market_subcategory?.name),

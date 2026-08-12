@@ -1,15 +1,45 @@
 <view class="page-shell">
-  <app-header title="市场概览" />
-  <view class="page-content market-content">
-    <view class="metric-grid">
-      <view><text class="metric-value serif">{{meta.cardCount}}</text><text class="metric-label">融资事件</text></view>
-      <view><text class="metric-value serif">{{meta.disclosedAmountCount}}</text><text class="metric-label">金额披露</text></view>
-      <view><text class="metric-value serif">{{categoryCount}}</text><text class="metric-label">主要赛道</text></view>
-      <view><text class="metric-value serif">{{roundCount}}</text><text class="metric-label">活跃轮次</text></view>
+  <app-header title="商业主体" />
+  <view class="page-content library-content">
+    <view class="library-summary">
+      <view><text class="summary-value serif">{{companyCount}}</text><text>收录企业</text></view>
+      <view><text class="summary-value serif">{{investorCount}}</text><text>投资机构</text></view>
     </view>
-    <view class="section-heading"><text class="serif">市场类别分布</text><text>点击查看融资</text></view>
-    <view class="market-list"><button wx:for="{{categories}}" wx:key="id" class="market-row" data-id="{{item.id}}" bindtap="openCategory"><view class="market-copy"><text>{{item.name}}</text><text>{{item.count}} 笔融资</text></view><view class="bar-track"><view class="bar-fill" style="width: {{item.bar}}%;"></view></view></button></view>
-    <view class="section-heading"><text class="serif">主要轮次分布</text><text>近期融资</text></view>
-    <view class="round-list"><view wx:for="{{rounds}}" wx:key="name" class="round-row"><text class="round-rank mono">{{item.rank}}</text><text class="round-name">{{item.name}}</text><text class="round-count">{{item.count}} 笔</text></view></view>
+
+    <view class="library-tabs">
+      <button class="{{mode === 'companies' ? 'active' : ''}}" data-mode="companies" bindtap="switchMode">企业库</button>
+      <button class="{{mode === 'investors' ? 'active' : ''}}" data-mode="investors" bindtap="switchMode">投资机构</button>
+    </view>
+
+    <view class="search-box">
+      <icon type="search" size="18" color="#071827" />
+      <input value="{{query}}" placeholder="{{mode === 'companies' ? '企业 / 产品 / 赛道' : '机构 / 已投公司 / 赛道'}}" bindinput="onSearchInput" confirm-type="search" />
+      <button wx:if="{{query}}" class="clear-button" bindtap="clearSearch"><icon type="clear" size="16" /></button>
+    </view>
+
+    <view class="result-line"><text>共 {{resultCount}} 条结果</text><text>{{mode === 'companies' ? '按最新融资排序' : '按投资活跃度排序'}}</text></view>
+
+    <view class="entity-list">
+      <button wx:for="{{items}}" wx:key="key" class="entity-row" data-id="{{item.latestId}}" bindtap="openEntity">
+        <view class="entity-avatar serif">{{item.initial}}</view>
+        <view class="entity-copy">
+          <text class="entity-name">{{item.name}}</text>
+          <text class="entity-secondary">{{mode === 'companies' ? item.secondary : item.companiesText}}</text>
+          <text class="entity-category">{{item.categoriesText}}</text>
+        </view>
+        <view wx:if="{{mode === 'companies'}}" class="entity-metrics">
+          <text class="metric-primary">{{item.latestAmount}}</text>
+          <text>{{item.roundCount}} 轮融资</text>
+          <text>{{item.latestDate}} · {{item.latestRound}}</text>
+        </view>
+        <view wx:else class="entity-metrics">
+          <text class="metric-primary">{{item.roundCount}} 次投资</text>
+          <text>领投 {{item.leadCount}} 次</text>
+          <text>最近 {{item.latestDate}}</text>
+        </view>
+      </button>
+    </view>
+    <view wx:if="{{!resultCount}}" class="empty-state"><view class="title">暂无匹配结果</view><view class="copy">换一个企业、产品、机构或赛道名称试试。</view></view>
+    <view wx:if="{{visibleCount < resultCount}}" class="load-note">继续上拉加载 · 已显示 {{visibleCount}} 条</view>
   </view>
 </view>

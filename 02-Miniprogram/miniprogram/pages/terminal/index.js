@@ -20,7 +20,6 @@ Page({
     visibleCount: 0,
     filteredCount: 0,
     meta: bundledFundingIndex.meta,
-    categories: bundledFundingIndex.categories,
     watchCount: 0,
     selectedIds: [],
     sort: "latest",
@@ -66,20 +65,14 @@ Page({
   onShow() {
     const currentIndex = getFundingData().index;
     if (currentIndex.meta.generatedAt !== this.data.meta.generatedAt) this.applyFundingData(currentIndex);
-    const pending = wx.getStorageSync("guanlan_pending_filter_v1");
     const selectedIds = getCompareIds();
-    if (pending?.categoryId) {
-      wx.removeStorageSync("guanlan_pending_filter_v1");
-      this.setData({ selectedIds, "filters.categoryId": pending.categoryId }, () => this.refreshCards(true));
-    } else {
-      this.setData({ selectedIds }, () => this.renderSlice(Math.max(this.data.visibleCount, this.pageSize)));
-    }
+    this.setData({ selectedIds }, () => this.renderSlice(Math.max(this.data.visibleCount, this.pageSize)));
   },
 
   applyFundingData(index) {
     if (!index?.cards?.length) return;
     this.allCards = index.cards;
-    this.setData({ meta: index.meta, categories: index.categories }, () => this.refreshCards(true));
+    this.setData({ meta: index.meta }, () => this.refreshCards(true));
   },
 
   onReachBottom() {
@@ -123,10 +116,6 @@ Page({
 
   clearSearch() {
     this.setData({ "filters.keyword": "" }, () => this.refreshCards(true));
-  },
-
-  quickCategory(event) {
-    this.setData({ "filters.categoryId": event.currentTarget.dataset.value }, () => this.refreshCards(true));
   },
 
   openFilters() {

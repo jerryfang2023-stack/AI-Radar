@@ -18,7 +18,7 @@ import {
   StarFilledIcon,
   StarIcon,
 } from "@radix-ui/react-icons";
-import { BottomSheet, Carousel, KeyboardInput, MobileScroll, useKeyboard } from "./mobile";
+import { BottomSheet, KeyboardInput, MobileScroll, useKeyboard } from "./mobile";
 
 type FundingCard = {
   id: string;
@@ -29,12 +29,14 @@ type FundingCard = {
   category: string;
   subcategory: string;
   productForm: string;
+  products: string[];
   round: string;
   roundGroup: string;
   amount: string;
   amountValue: number;
   date: string;
   leadInvestor: string;
+  investorsText: string;
   headquarters: string;
   region: string;
   evidenceLabel: string;
@@ -71,6 +73,29 @@ type FundingIndex = {
   meta: { cardCount: number; latestDate: string; multiSourceRate: number; disclosedAmountCount: number };
   categories: Array<{ id: string; name: string; count: number }>;
   cards: FundingCard[];
+};
+type CompanyEntity = {
+  key: string;
+  name: string;
+  initial: string;
+  summary: string;
+  headquarters: string;
+  products: string[];
+  categories: string[];
+  roundCount: number;
+  latest: FundingCard;
+  searchText: string;
+};
+type InvestorEntity = {
+  key: string;
+  name: string;
+  initial: string;
+  companies: string[];
+  categories: string[];
+  roundCount: number;
+  leadCount: number;
+  latest: FundingCard;
+  searchText: string;
 };
 type ReportIndex = { meta: { weeklyCount: number; monthlyCount: number }; reports: ReportSummary[] };
 type Tab = "terminal" | "market" | "observe" | "profile";
@@ -161,6 +186,73 @@ function publicDateWindow(window: string) {
   return window.replace(/\s+to\s+/i, " 至 ");
 }
 
+function appendUnique(values: string[], value: string) {
+  if (value && !values.includes(value)) values.push(value);
+}
+
+function buildEntityLibrary(cards: FundingCard[], details: Record<string, FundingDetail>) {
+  const sortedCards = [...cards].sort((left, right) => right.date.localeCompare(left.date) || right.amountValue - left.amountValue);
+  const companyMap = new Map<string, Omit<CompanyEntity, "searchText">>();
+  const investorMap = new Map<string, Omit<InvestorEntity, "searchText">>();
+
+  sortedCards.forEach((card) => {
+    const companyKey = card.company.trim().toLowerCase();
+    const company = companyMap.get(companyKey) || {
+      key: companyKey,
+      name: card.company,
+      initial: card.initial,
+      summary: card.summary,
+      headquarters: card.headquarters,
+      products: [],
+      categories: [],
+      roundCount: 0,
+      latest: card,
+    };
+    company.roundCount += 1;
+    (card.products || []).forEach((product) => appendUnique(company.products, product));
+    appendUnique(company.products, card.productForm);
+    appendUnique(company.categories, card.category);
+    appendUnique(company.categories, card.subcategory);
+    companyMap.set(companyKey, company);
+
+    const detailInvestors = details[card.id]?.investors || [];
+    const investors = detailInvestors.length ? detailInvestors : card.leadInvestor && card.leadInvestor !== "投资方未披露" ? [{ name: card.leadInvestor, role: "" }] : [];
+    const seen = new Set<string>();
+    investors.forEach((item) => {
+      const name = item.name.trim();
+      const investorKey = name.toLowerCase();
+      if (!name || seen.has(investorKey)) return;
+      seen.add(investorKey);
+      const investor = investorMap.get(investorKey) || {
+        key: investorKey,
+        name,
+        initial: name.slice(0, 1).toUpperCase(),
+        companies: [],
+        categories: [],
+        roundCount: 0,
+        leadCount: 0,
+        latest: card,
+      };
+      investor.roundCount += 1;
+      if (item.role.includes("领投")) investor.leadCount += 1;
+      appendUnique(investor.companies, card.company);
+      appendUnique(investor.categories, card.category);
+      appendUnique(investor.categories, card.subcategory);
+      investorMap.set(investorKey, investor);
+    });
+  });
+
+  const companies = [...companyMap.values()].map((item) => ({
+    ...item,
+    searchText: [item.name, item.summary, item.headquarters, ...item.products, ...item.categories].join(" ").toLowerCase(),
+  })).sort((left, right) => right.latest.date.localeCompare(left.latest.date) || left.name.localeCompare(right.name, "zh-CN"));
+  const investors = [...investorMap.values()].map((item) => ({
+    ...item,
+    searchText: [item.name, ...item.companies, ...item.categories].join(" ").toLowerCase(),
+  })).sort((left, right) => right.roundCount - left.roundCount || right.leadCount - left.leadCount || left.name.localeCompare(right.name, "zh-CN"));
+  return { companies, investors };
+}
+
 function AppHeader({ title, onBack, action, onAction }: { title: string; onBack?: () => void; action?: string; onAction?: () => void }) {
   return (
     <header className="app-header">
@@ -191,7 +283,7 @@ function SplashScreen({ onEnter }: { onEnter: () => void }) {
 function BottomNav({ active, onChange }: { active: Tab; onChange: (tab: Tab) => void }) {
   const items: Array<{ id: Tab; label: string; icon: typeof BarChartIcon }> = [
     { id: "terminal", label: "融资", icon: ReaderIcon },
-    { id: "market", label: "市场", icon: BarChartIcon },
+    { id: "market", label: "商业主体", icon: MagnifyingGlassIcon },
     { id: "observe", label: "观察", icon: EyeOpenIcon },
     { id: "profile", label: "我的", icon: PersonIcon },
   ];
@@ -207,7 +299,6 @@ export default function Prototype() {
   const [view, setView] = useState<View>({ kind: "tab", tab: "terminal" });
   const [lastTab, setLastTab] = useState<Tab>("terminal");
   const [query, setQuery] = useState("");
-  const [category, setCategory] = useState("all");
   const [region, setRegion] = useState("all");
   const [round, setRound] = useState("all");
   const [filterOpen, setFilterOpen] = useState(false);
@@ -255,12 +346,11 @@ export default function Prototype() {
   const cards = fundingIndex?.cards || [];
   const filteredCards = useMemo(() => cards.filter((card) => {
     const keyword = query.trim().toLowerCase();
-    if (keyword && !`${card.company} ${card.category} ${card.summary} ${card.leadInvestor}`.toLowerCase().includes(keyword)) return false;
-    if (category !== "all" && card.categoryId !== category) return false;
+    if (keyword && !`${card.company} ${card.category} ${card.subcategory} ${card.productForm} ${(card.products || []).join(" ")} ${card.summary} ${card.leadInvestor} ${card.investorsText}`.toLowerCase().includes(keyword)) return false;
     if (region !== "all" && card.region !== region) return false;
     if (round !== "all" && card.roundGroup !== round) return false;
     return true;
-  }).slice(0, 40), [cards, query, category, region, round]);
+  }).slice(0, 40), [cards, query, region, round]);
 
   if (splashVisible || !fundingIndex || !reportIndex) {
     return <div className="guanlan-app splash-app"><SplashScreen onEnter={() => setSplashVisible(false)} /></div>;
@@ -365,10 +455,10 @@ export default function Prototype() {
     if (view.kind === "growth") return <GrowthView growth={growth} level={level} onBack={back} onRedeem={redeem} />;
     if (view.kind === "profile-edit") return <ProfileEditView nickname={nickname} onChange={setNickname} onBack={back} />;
     if (view.kind === "compare") return <CompareView cards={selected.map((id) => cards.find((card) => card.id === id)).filter(Boolean) as FundingCard[]} onBack={back} />;
-    if (view.tab === "market") return <MarketView index={fundingIndex} onOpenCategory={(id) => { setCategory(id); showTab("terminal"); }} />;
+    if (view.tab === "market") return <EntityLibraryView cards={cards} details={fundingDetails} onOpen={openFunding} />;
     if (view.tab === "observe") return <ObserveView index={reportIndex} type={reportType} onType={setReportType} onOpen={(id) => go({ kind: "report", id })} onSaved={() => go({ kind: "saved" })} />;
     if (view.tab === "profile") return <ProfileView nickname={nickname} favorites={favorites.length} history={history.length} follows={follows.length} growth={growth} level={level} onOpen={(kind) => go({ kind })} onShare={() => share("一起用观澜追踪 AI 融资情报")} />;
-    return <TerminalView index={fundingIndex} cards={filteredCards} query={query} onQuery={setQuery} category={category} onCategory={setCategory} favorites={favorites} selected={selected} onOpen={openFunding} onFavorite={toggleFavorite} onSelect={(id) => setSelected((current) => current.includes(id) ? current.filter((item) => item !== id) : current.length < 3 ? [...current, id] : current)} onFilter={() => setFilterOpen(true)} onSaved={() => go({ kind: "saved" })} onCompare={() => selected.length >= 2 ? go({ kind: "compare" }) : setToast("请至少选择 2 家公司")} />;
+    return <TerminalView index={fundingIndex} cards={filteredCards} query={query} onQuery={setQuery} favorites={favorites} selected={selected} onOpen={openFunding} onFavorite={toggleFavorite} onSelect={(id) => setSelected((current) => current.includes(id) ? current.filter((item) => item !== id) : current.length < 3 ? [...current, id] : current)} onFilter={() => setFilterOpen(true)} onSaved={() => go({ kind: "saved" })} onCompare={() => selected.length >= 2 ? go({ kind: "compare" }) : setToast("请至少选择 2 家公司")} />;
   })();
 
   return (
@@ -390,11 +480,10 @@ function Loading() {
   return <><AppHeader title="观澜" /><MobileScroll className="app-screen"><main className="screen-content loading"><img src="/brand/app-icon-light.svg" alt="" /><span>正在载入融资情报…</span></main></MobileScroll></>;
 }
 
-function TerminalView(props: { index: FundingIndex; cards: FundingCard[]; query: string; onQuery: (value: string) => void; category: string; onCategory: (value: string) => void; favorites: string[]; selected: string[]; onOpen: (id: string) => void; onFavorite: (id: string) => void; onSelect: (id: string) => void; onFilter: () => void; onSaved: () => void; onCompare: () => void }) {
+function TerminalView(props: { index: FundingIndex; cards: FundingCard[]; query: string; onQuery: (value: string) => void; favorites: string[]; selected: string[]; onOpen: (id: string) => void; onFavorite: (id: string) => void; onSelect: (id: string) => void; onFilter: () => void; onSaved: () => void; onCompare: () => void }) {
   return <><AppHeader title="融资情报" action={`收藏 ${props.favorites.length}`} onAction={props.onSaved} /><MobileScroll className="app-screen"><main className="screen-content terminal-screen">
     <section className="terminal-intro"><div><span>已发布融资情报</span><strong>{props.index.meta.cardCount}</strong></div><p>更新至<br />{props.index.meta.latestDate}</p></section>
-    <div className="search-row"><label className="search-box"><MagnifyingGlassIcon /><KeyboardInput value={props.query} onChange={(event) => props.onQuery(event.target.value)} placeholder="搜索公司、赛道或投资方" aria-label="搜索融资" /></label><button className="filter-button" onClick={props.onFilter}><MixerHorizontalIcon /></button></div>
-    <Carousel ariaLabel="融资分类" className="category-carousel" contentClassName="category-track"><button className={props.category === "all" ? "active" : ""} onClick={() => props.onCategory("all")}>全部 {props.index.meta.cardCount}</button>{props.index.categories.map((item) => <button key={item.id} className={props.category === item.id ? "active" : ""} onClick={() => props.onCategory(item.id)}>{item.name} {item.count}</button>)}</Carousel>
+    <div className="search-row"><label className="search-box"><MagnifyingGlassIcon /><KeyboardInput value={props.query} onChange={(event) => props.onQuery(event.target.value)} placeholder="公司 / 机构 / 产品" aria-label="搜索公司、机构或产品" /></label><button className="filter-button" onClick={props.onFilter}><MixerHorizontalIcon /></button></div>
     <div className="list-heading"><span>共 {props.cards.length} 条结果</span><button onClick={props.onCompare}>公司比较</button></div>
     <section className="funding-list">{props.cards.map((card) => <FundingRow key={card.id} card={card} watched={props.favorites.includes(card.id)} selected={props.selected.includes(card.id)} onOpen={() => props.onOpen(card.id)} onFavorite={() => props.onFavorite(card.id)} onSelect={() => props.onSelect(card.id)} />)}</section>
     {!props.cards.length ? <Empty title="没有符合条件的融资" copy="换一个关键词或清空筛选后再试。" /> : null}
@@ -402,17 +491,36 @@ function TerminalView(props: { index: FundingIndex; cards: FundingCard[]; query:
 }
 
 function FundingRow({ card, watched, selected, onOpen, onFavorite, onSelect }: { card: FundingCard; watched: boolean; selected: boolean; onOpen: () => void; onFavorite: () => void; onSelect: () => void }) {
-  return <article className={`funding-row ${selected ? "selected" : ""}`}><button className="company-avatar" onClick={onOpen}>{card.initial}</button><button className="funding-copy" onClick={onOpen}><span className="company-line"><strong>{card.company}</strong><em>{card.category}</em></span><span className="funding-facts">{card.round} · {card.date}</span></button><div className="funding-side"><strong>{card.amount}</strong><div><button aria-label="选择比较" className={selected ? "selected" : ""} onClick={onSelect}>{selected ? <CheckCircledIcon /> : <BarChartIcon />}</button><button aria-label={watched ? "取消收藏" : "收藏"} onClick={onFavorite}>{watched ? <BookmarkFilledIcon /> : <BookmarkIcon />}</button></div></div></article>;
+  return <article className={`funding-row ${selected ? "selected" : ""}`}><button className="company-avatar" onClick={onOpen}>{card.initial}</button><button className="funding-copy" onClick={onOpen}><span className="company-line"><strong>{card.company}</strong></span><span className="funding-facts">{card.round} · {card.date}</span></button><div className="funding-side"><strong>{card.amount}</strong><div><button aria-label="选择比较" className={selected ? "selected" : ""} onClick={onSelect}>{selected ? <CheckCircledIcon /> : <BarChartIcon />}</button><button aria-label={watched ? "取消收藏" : "收藏"} onClick={onFavorite}>{watched ? <BookmarkFilledIcon /> : <BookmarkIcon />}</button></div></div></article>;
 }
 
-function MarketView({ index, onOpenCategory }: { index: FundingIndex; onOpenCategory: (id: string) => void }) {
-  const topRounds = useMemo(() => {
-    const counts = new Map<string, number>();
-    index.cards.forEach((card) => counts.set(card.round, (counts.get(card.round) || 0) + 1));
-    return [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 5);
-  }, [index]);
-  const maxCount = Math.max(...index.categories.map((item) => item.count));
-  return <><AppHeader title="市场" /><MobileScroll className="app-screen"><main className="screen-content market-screen"><section className="market-hero"><span>FUNDING MARKET</span><h2>融资市场概览</h2><p>汇总近期融资动态，呈现主要赛道与融资轮次分布。</p></section><section className="metric-grid"><div><strong>{index.meta.cardCount}</strong><span>融资事件</span></div><div><strong>{index.meta.disclosedAmountCount}</strong><span>披露金额</span></div><div><strong>{index.categories.length}</strong><span>主要赛道</span></div><div><strong>{topRounds.length}</strong><span>活跃轮次</span></div></section><SectionTitle title="赛道分布" note="查看融资" /><section className="market-list">{index.categories.map((item) => <button key={item.id} onClick={() => onOpenCategory(item.id)}><div><strong>{item.name}</strong><span>{item.count} 笔融资</span></div><span className="bar"><i style={{ width: `${Math.round((item.count / maxCount) * 100)}%` }} /></span><ChevronRightIcon /></button>)}</section><SectionTitle title="轮次观察" note="近期融资" /><section className="round-list">{topRounds.map(([name, count], indexValue) => <div key={name}><span>{String(indexValue + 1).padStart(2, "0")}</span><strong>{name}</strong><em>{count} 笔</em></div>)}</section></main></MobileScroll></>;
+function EntityLibraryView({ cards, details, onOpen }: { cards: FundingCard[]; details: Record<string, FundingDetail>; onOpen: (id: string) => void }) {
+  const [mode, setMode] = useState<"companies" | "investors">("companies");
+  const [entityQuery, setEntityQuery] = useState("");
+  const [limit, setLimit] = useState(40);
+  const library = useMemo(() => buildEntityLibrary(cards, details), [cards, details]);
+  const queryValue = entityQuery.trim().toLowerCase();
+  const items = (mode === "companies" ? library.companies : library.investors).filter((item) => !queryValue || item.searchText.includes(queryValue));
+  const visibleItems = items.slice(0, limit);
+  const switchMode = (nextMode: "companies" | "investors") => { setMode(nextMode); setEntityQuery(""); setLimit(40); };
+  return <><AppHeader title="商业主体" /><MobileScroll className="app-screen"><main className="screen-content entity-library-screen">
+    <section className="library-summary"><div><strong>{library.companies.length}</strong><span>家企业</span></div><div><strong>{library.investors.length}</strong><span>家投资机构</span></div></section>
+    <div className="segmented library-tabs"><button className={mode === "companies" ? "active" : ""} onClick={() => switchMode("companies")}>企业库</button><button className={mode === "investors" ? "active" : ""} onClick={() => switchMode("investors")}>投资机构</button></div>
+    <label className="library-search"><MagnifyingGlassIcon /><KeyboardInput value={entityQuery} onChange={(event) => { setEntityQuery(event.target.value); setLimit(40); }} placeholder={mode === "companies" ? "企业 / 产品 / 赛道" : "机构 / 已投公司 / 赛道"} aria-label={mode === "companies" ? "搜索企业" : "搜索投资机构"} /></label>
+    <div className="library-result"><span>共 {items.length} 条结果</span><span>{mode === "companies" ? "按最近融资排序" : "按参与轮次数排序"}</span></div>
+    <section className="entity-library-list">{visibleItems.map((item) => mode === "companies" ? <CompanyEntityRow key={item.key} item={item as CompanyEntity} onOpen={onOpen} /> : <InvestorEntityRow key={item.key} item={item as InvestorEntity} onOpen={onOpen} />)}</section>
+    {!items.length ? <Empty title={mode === "companies" ? "未找到相关企业" : "未找到相关机构"} copy="换一个企业、机构、产品或赛道关键词再试。" /> : null}
+    {visibleItems.length < items.length ? <button className="library-load-more" onClick={() => setLimit((current) => current + 40)}>继续浏览</button> : null}
+  </main></MobileScroll></>;
+}
+
+function CompanyEntityRow({ item, onOpen }: { item: CompanyEntity; onOpen: (id: string) => void }) {
+  const secondary = [item.headquarters, item.products.slice(0, 2).join("、")].filter(Boolean).join(" · ") || "企业信息待补充";
+  return <button className="entity-library-row" onClick={() => onOpen(item.latest.id)}><span className="entity-avatar">{item.initial}</span><span className="entity-copy"><strong>{item.name}</strong><em>{secondary}</em><small>{item.categories.slice(0, 2).join(" · ")}</small></span><span className="entity-metrics"><strong>{item.latest.amount}</strong><em>{item.roundCount} 笔融资</em><small>{item.latest.date}</small></span></button>;
+}
+
+function InvestorEntityRow({ item, onOpen }: { item: InvestorEntity; onOpen: (id: string) => void }) {
+  return <button className="entity-library-row" onClick={() => onOpen(item.latest.id)}><span className="entity-avatar">{item.initial}</span><span className="entity-copy"><strong>{item.name}</strong><em>{item.companies.slice(0, 3).join("、") || "已投公司待补充"}</em><small>{item.categories.slice(0, 2).join(" · ")}</small></span><span className="entity-metrics"><strong>{item.roundCount} 笔</strong><em>领投 {item.leadCount} 笔</em><small>{item.latest.date}</small></span></button>;
 }
 
 function ObserveView({ index, type, onType, onOpen, onSaved }: { index: ReportIndex; type: "weekly" | "monthly"; onType: (value: "weekly" | "monthly") => void; onOpen: (id: string) => void; onSaved: () => void }) {

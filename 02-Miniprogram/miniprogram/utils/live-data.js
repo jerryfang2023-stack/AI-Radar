@@ -70,6 +70,7 @@ function projectPortalCard(card) {
   const evidenceId = sourceCount >= 2 ? "multi" : "single";
   const evidenceLabel = sourceCount >= 2 ? "多源已核验" : "单源披露";
   const companyName = text(company.name || company.fullName) || "未披露公司";
+  const products = list(card.productDetails).map((item) => text(item.name)).filter(Boolean);
   const headquarters = text(company.headquarters);
   const marketRegion = card.marketRegion === "CN" ? "china" : "global";
   const amount = amountDisplay(financing.amountNormalized, financing.amountOriginal || financing.amount);
@@ -80,6 +81,7 @@ function projectPortalCard(card) {
     company: companyName,
     initial: companyName.slice(0, 1).toUpperCase(),
     summary: shorten(company.summary) || "公司介绍暂未披露",
+    products,
     categoryId: text(card.categoryId),
     category: text(card.category) || "未分类",
     subcategory: text(card.subcategory),

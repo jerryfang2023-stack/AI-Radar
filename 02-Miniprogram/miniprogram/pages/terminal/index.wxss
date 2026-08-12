@@ -13,12 +13,7 @@
 .filter-button { min-height: 86rpx; margin: 0; padding: 0; border-radius: 16rpx; background: #0d355c; color: #fff; font-size: 24rpx; font-weight: 600; line-height: 86rpx; }
 .filter-button.active { background: #9b6d20; }
 
-.category-scroll { width: calc(100% + 56rpx); margin: 22rpx -28rpx 0; white-space: nowrap; }
-.category-track { display: inline-flex; gap: 12rpx; padding: 0 28rpx 8rpx; }
-.category-chip { min-height: 64rpx; margin: 0; padding: 0 22rpx; border: 1rpx solid #dfe3e7; border-radius: 999rpx; background: #fff; color: #6f7f8f; font-size: 22rpx; line-height: 64rpx; }
-.category-chip.active { border-color: #0d355c; background: #0d355c; color: #fff; }
-
-.list-heading { display: flex; align-items: center; justify-content: space-between; min-height: 84rpx; margin-top: 12rpx; border-bottom: 1rpx solid #e5e8ec; }
+.list-heading { display: flex; align-items: center; justify-content: space-between; min-height: 84rpx; margin-top: 22rpx; border-bottom: 1rpx solid #e5e8ec; }
 .result-summary { display: flex; flex-direction: column; gap: 4rpx; color: #6f7f8f; font-size: 22rpx; }
 .compare-count { color: #9b6d20; font-size: 19rpx; }
 .list-actions { display: flex; gap: 8rpx; }

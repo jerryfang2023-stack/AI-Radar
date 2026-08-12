@@ -9,19 +9,12 @@
 
     <view class="search-row">
       <view class="search-box">
-      <icon type="search" size="18" color="#071827" />
-      <input value="{{filters.keyword}}" placeholder="搜索公司、赛道或投资方" bindinput="onSearchInput" confirm-type="search" />
-      <button wx:if="{{filters.keyword}}" class="clear-button" bindtap="clearSearch"><icon type="clear" size="16" /></button>
+        <icon type="search" size="18" color="#071827" />
+        <input value="{{filters.keyword}}" placeholder="公司 / 机构 / 产品" bindinput="onSearchInput" confirm-type="search" />
+        <button wx:if="{{filters.keyword}}" class="clear-button" bindtap="clearSearch"><icon type="clear" size="16" /></button>
       </view>
       <button class="filter-button {{activeFilterCount ? 'active' : ''}}" bindtap="openFilters">筛选<text wx:if="{{activeFilterCount}}"> {{activeFilterCount}}</text></button>
     </view>
-
-    <scroll-view class="category-scroll" scroll-x enhanced show-scrollbar="false">
-      <view class="category-track">
-        <button class="category-chip {{filters.categoryId === 'all' ? 'active' : ''}}" data-value="all" bindtap="quickCategory">全部 {{meta.cardCount}}</button>
-        <button wx:for="{{categories}}" wx:key="id" class="category-chip {{filters.categoryId === item.id ? 'active' : ''}}" data-value="{{item.id}}" bindtap="quickCategory">{{item.name}} {{item.count}}</button>
-      </view>
-    </scroll-view>
 
     <view class="list-heading">
       <view class="result-summary">
@@ -65,10 +58,6 @@
       <view class="filter-group">
         <text class="filter-title">融资轮次</text>
         <view class="choice-grid"><button wx:for="{{roundGroups}}" wx:key="id" class="choice {{draftFilters.roundGroup === item.id ? 'active' : ''}}" data-name="roundGroup" data-value="{{item.id}}" bindtap="chooseDraft">{{item.name}}</button></view>
-      </view>
-      <view class="filter-group">
-        <text class="filter-title">市场类别</text>
-        <view class="choice-grid"><button class="choice {{draftFilters.categoryId === 'all' ? 'active' : ''}}" data-name="categoryId" data-value="all" bindtap="chooseDraft">全部市场</button><button wx:for="{{categories}}" wx:key="id" class="choice {{draftFilters.categoryId === item.id ? 'active' : ''}}" data-name="categoryId" data-value="{{item.id}}" bindtap="chooseDraft">{{item.name}}</button></view>
       </view>
     </scroll-view>
     <view class="sheet-actions"><button class="primary-button" bindtap="applyDraft">查看结果</button></view>

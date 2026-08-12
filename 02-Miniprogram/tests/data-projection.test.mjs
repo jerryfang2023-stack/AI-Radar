@@ -20,6 +20,7 @@ test("preserves bounded public fields and evidence links", () => {
     assert.ok(card.company);
     assert.ok(card.round);
     assert.ok(card.amount);
+    assert.ok(Array.isArray(card.products));
     assert.ok(["multi", "official", "single"].includes(card.evidenceId));
     assert.ok(["china", "global"].includes(card.marketRegion));
   }

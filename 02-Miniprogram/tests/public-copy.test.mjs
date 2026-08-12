@@ -20,8 +20,9 @@ const publicFiles = [
 
 test("uses the confirmed financing column and public-facing copy", () => {
   assert.equal(appConfig.tabBar.list[0].text, "融资");
+  assert.equal(appConfig.tabBar.list[1].text, "商业主体");
   assert.match(terminalSource, /<app-header title="融资情报"/u);
-  assert.match(marketSource, /<app-header title="市场概览"/u);
+  assert.match(marketSource, /<app-header title="商业主体"/u);
   assert.match(watchlistSource, /<app-header title="商业观察"/u);
   assert.match(publicFiles.map((file) => fs.readFileSync(file, "utf8")).join("\n"), /中国区/u);
 
@@ -34,6 +35,12 @@ test("uses the confirmed financing column and public-facing copy", () => {
 test("keeps list pages concise while preserving detail-page actions", () => {
   assert.doesNotMatch(terminalSource, /收藏/u);
   assert.doesNotMatch(terminalSource, /checkbox/u);
+  assert.match(terminalSource, /placeholder="公司 \/ 机构 \/ 产品"/u);
+  assert.doesNotMatch(terminalSource, /category-chip|市场类别|全部市场/u);
+  assert.match(marketSource, /企业库/u);
+  assert.match(marketSource, /投资机构/u);
+  assert.match(marketSource, /企业 \/ 产品 \/ 赛道/u);
+  assert.match(marketSource, /机构 \/ 已投公司 \/ 赛道/u);
   assert.doesNotMatch(`${marketSource}\n${watchlistSource}`, /AI FUNDING|GUANLAN RESEARCH|更新日期/u);
 });
 

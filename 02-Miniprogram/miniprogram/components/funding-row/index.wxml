@@ -4,7 +4,6 @@
     <view class="company-line">
       <text class="company">{{card.company}}</text>
       <text wx:if="{{card.marketRegion === 'china'}}" class="market-badge">中国区</text>
-      <text class="category">{{card.category}}</text>
     </view>
     <view class="facts-line">
       <text>{{card.round}}</text><text class="divider">·</text><text>{{card.date}}</text>
