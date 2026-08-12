@@ -1,0 +1,427 @@
+import { useEffect, useMemo, useState } from "react";
+import {
+  ArrowLeftIcon,
+  BarChartIcon,
+  BookmarkFilledIcon,
+  BookmarkIcon,
+  CheckCircledIcon,
+  ChevronRightIcon,
+  ClockIcon,
+  Cross1Icon,
+  EyeOpenIcon,
+  GearIcon,
+  MagnifyingGlassIcon,
+  MixerHorizontalIcon,
+  PersonIcon,
+  ReaderIcon,
+  Share1Icon,
+  StarFilledIcon,
+  StarIcon,
+} from "@radix-ui/react-icons";
+import { BottomSheet, Carousel, KeyboardInput, MobileScroll, useKeyboard } from "./mobile";
+
+type FundingCard = {
+  id: string;
+  company: string;
+  initial: string;
+  summary: string;
+  categoryId: string;
+  category: string;
+  subcategory: string;
+  productForm: string;
+  round: string;
+  roundGroup: string;
+  amount: string;
+  amountValue: number;
+  date: string;
+  leadInvestor: string;
+  headquarters: string;
+  region: string;
+  evidenceLabel: string;
+  sourceCount: number;
+};
+
+type FundingDetail = FundingCard & {
+  companySummary: string;
+  cumulativeAmount: string;
+  investors: Array<{ name: string; role: string }>;
+  signals: string[];
+  risks: string[];
+  capitalJudgment: string;
+  history: Array<{ round: string; amount: string; date: string; current: boolean }>;
+  sources: Array<{ id: string; title: string; publisher: string; url: string; quotes: string[] }>;
+};
+
+type ReportSummary = {
+  id: string;
+  type: "weekly" | "monthly";
+  typeLabel: string;
+  title: string;
+  date: string;
+  dateShort: string;
+  issue: string;
+  window: string;
+  summary: string;
+  counts: { signals: number; opinions: number; community: number } | null;
+  sectionCount: number;
+};
+
+type ReportDetail = ReportSummary & { blocks: Array<{ id: string; type: string; text: string }> };
+type FundingIndex = {
+  meta: { cardCount: number; latestDate: string; multiSourceRate: number; disclosedAmountCount: number };
+  categories: Array<{ id: string; name: string; count: number }>;
+  cards: FundingCard[];
+};
+type ReportIndex = { meta: { weeklyCount: number; monthlyCount: number }; reports: ReportSummary[] };
+type Tab = "terminal" | "market" | "observe" | "profile";
+type View =
+  | { kind: "tab"; tab: Tab }
+  | { kind: "funding"; id: string }
+  | { kind: "report"; id: string }
+  | { kind: "saved" }
+  | { kind: "history" }
+  | { kind: "follows" }
+  | { kind: "growth" }
+  | { kind: "profile-edit" }
+  | { kind: "compare" };
+
+type GrowthState = {
+  balance: number;
+  lifetime: number;
+  completed: string[];
+  browseIds: string[];
+  redeemed: string[];
+  ledger: Array<{ id: string; label: string; points: number; date: string }>;
+};
+
+const BENEFITS = [
+  { id: "advanced", title: "高级筛选试用", description: "解锁 7 天高级筛选体验", cost: 150 },
+  { id: "follow", title: "关注上限扩容", description: "增加 10 个主题关注名额", cost: 200 },
+  { id: "weekly", title: "周报优先阅读", description: "连续 4 周提前阅读周报", cost: 300 },
+];
+
+const STORE = {
+  favorites: "guanlan_h5_favorites_v1",
+  history: "guanlan_h5_history_v1",
+  follows: "guanlan_h5_follows_v1",
+  growth: "guanlan_h5_growth_v1",
+  profile: "guanlan_h5_profile_v1",
+};
+
+function readLocal<T>(key: string, fallback: T): T {
+  try {
+    const value = localStorage.getItem(key);
+    return value ? (JSON.parse(value) as T) : fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function dateLabel() {
+  return new Intl.DateTimeFormat("zh-CN", { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(new Date());
+}
+
+function levelFor(points: number) {
+  if (points >= 700) return { level: 5, name: "共建者", next: 700, progress: 100 };
+  if (points >= 400) return { level: 4, name: "洞察者", next: 700, progress: Math.round(((points - 400) / 300) * 100) };
+  if (points >= 200) return { level: 3, name: "研究者", next: 400, progress: Math.round(((points - 200) / 200) * 100) };
+  if (points >= 100) return { level: 2, name: "观察者", next: 200, progress: points - 100 };
+  return { level: 1, name: "初识者", next: 100, progress: points };
+}
+
+function AppHeader({ title, onBack, action, onAction }: { title: string; onBack?: () => void; action?: string; onAction?: () => void }) {
+  return (
+    <header className="app-header">
+      {onBack ? <button className="header-button back" onClick={onBack} aria-label="返回"><ArrowLeftIcon />返回</button> : <img src="/brand/logo-wavesight.svg" alt="观澜 AI" />}
+      <h1>{title}</h1>
+      {action ? <button className="header-button action" onClick={onAction}>{action}</button> : <span className="header-spacer" />}
+    </header>
+  );
+}
+
+function BottomNav({ active, onChange }: { active: Tab; onChange: (tab: Tab) => void }) {
+  const items: Array<{ id: Tab; label: string; icon: typeof BarChartIcon }> = [
+    { id: "terminal", label: "融资", icon: ReaderIcon },
+    { id: "market", label: "市场", icon: BarChartIcon },
+    { id: "observe", label: "观察", icon: EyeOpenIcon },
+    { id: "profile", label: "我的", icon: PersonIcon },
+  ];
+  return <nav className="bottom-nav">{items.map((item) => { const Icon = item.icon; return <button key={item.id} className={active === item.id ? "active" : ""} onClick={() => onChange(item.id)}><Icon /><span>{item.label}</span></button>; })}</nav>;
+}
+
+export default function Prototype() {
+  const keyboard = useKeyboard();
+  const [fundingIndex, setFundingIndex] = useState<FundingIndex | null>(null);
+  const [fundingDetails, setFundingDetails] = useState<Record<string, FundingDetail>>({});
+  const [reportIndex, setReportIndex] = useState<ReportIndex | null>(null);
+  const [reportDetails, setReportDetails] = useState<Record<string, ReportDetail>>({});
+  const [view, setView] = useState<View>({ kind: "tab", tab: "terminal" });
+  const [lastTab, setLastTab] = useState<Tab>("terminal");
+  const [query, setQuery] = useState("");
+  const [category, setCategory] = useState("all");
+  const [region, setRegion] = useState("all");
+  const [round, setRound] = useState("all");
+  const [filterOpen, setFilterOpen] = useState(false);
+  const [reportType, setReportType] = useState<"weekly" | "monthly">("weekly");
+  const [favorites, setFavorites] = useState<string[]>(() => readLocal(STORE.favorites, []));
+  const [history, setHistory] = useState<string[]>(() => readLocal(STORE.history, []));
+  const [follows, setFollows] = useState<string[]>(() => readLocal(STORE.follows, []));
+  const [selected, setSelected] = useState<string[]>([]);
+  const [nickname, setNickname] = useState(() => readLocal(STORE.profile, { nickname: "观澜用户" }).nickname);
+  const [growth, setGrowth] = useState<GrowthState>(() => readLocal(STORE.growth, {
+    balance: 128,
+    lifetime: 128,
+    completed: [],
+    browseIds: [],
+    redeemed: [],
+    ledger: [{ id: "starter", label: "H5 体验起始积分", points: 128, date: dateLabel() }],
+  }));
+  const [toast, setToast] = useState("");
+
+  useEffect(() => {
+    Promise.all([
+      fetch("/data/funding-index.json").then((response) => response.json()),
+      fetch("/data/funding-details.json").then((response) => response.json()),
+      fetch("/data/report-index.json").then((response) => response.json()),
+      fetch("/data/report-details.json").then((response) => response.json()),
+    ]).then(([index, details, reports, reportBody]) => {
+      setFundingIndex(index);
+      setFundingDetails(details);
+      setReportIndex(reports);
+      setReportDetails(reportBody);
+    });
+  }, []);
+
+  useEffect(() => { localStorage.setItem(STORE.favorites, JSON.stringify(favorites)); }, [favorites]);
+  useEffect(() => { localStorage.setItem(STORE.history, JSON.stringify(history)); }, [history]);
+  useEffect(() => { localStorage.setItem(STORE.follows, JSON.stringify(follows)); }, [follows]);
+  useEffect(() => { localStorage.setItem(STORE.growth, JSON.stringify(growth)); }, [growth]);
+  useEffect(() => { localStorage.setItem(STORE.profile, JSON.stringify({ nickname })); }, [nickname]);
+  useEffect(() => { if (!toast) return; const timer = setTimeout(() => setToast(""), 1900); return () => clearTimeout(timer); }, [toast]);
+
+  const activeTab = view.kind === "tab" ? view.tab : lastTab;
+  const level = levelFor(growth.lifetime);
+  const cards = fundingIndex?.cards || [];
+  const filteredCards = useMemo(() => cards.filter((card) => {
+    const keyword = query.trim().toLowerCase();
+    if (keyword && !`${card.company} ${card.category} ${card.summary} ${card.leadInvestor}`.toLowerCase().includes(keyword)) return false;
+    if (category !== "all" && card.categoryId !== category) return false;
+    if (region !== "all" && card.region !== region) return false;
+    if (round !== "all" && card.roundGroup !== round) return false;
+    return true;
+  }).slice(0, 40), [cards, query, category, region, round]);
+
+  function awardOnce(id: string, points: number, label: string) {
+    setGrowth((current) => current.completed.includes(id) ? current : {
+      ...current,
+      balance: current.balance + points,
+      lifetime: current.lifetime + points,
+      completed: [...current.completed, id],
+      ledger: [{ id: `${id}-${Date.now()}`, label, points, date: dateLabel() }, ...current.ledger],
+    });
+  }
+
+  function showTab(tab: Tab) {
+    keyboard.hide();
+    setLastTab(tab);
+    setView({ kind: "tab", tab });
+  }
+
+  function go(viewTo: View) {
+    keyboard.hide();
+    setView(viewTo);
+  }
+
+  function back() { go({ kind: "tab", tab: lastTab }); }
+
+  function openFunding(id: string) {
+    setHistory((current) => [id, ...current.filter((item) => item !== id)].slice(0, 100));
+    setGrowth((current) => {
+      if (current.browseIds.includes(id)) return current;
+      const browseIds = [...current.browseIds, id];
+      if (browseIds.length >= 5 && !current.completed.includes("browse")) return {
+        ...current,
+        browseIds,
+        balance: current.balance + 2,
+        lifetime: current.lifetime + 2,
+        completed: [...current.completed, "browse"],
+        ledger: [{ id: `browse-${Date.now()}`, label: "完成任务：阅读 5 条情报", points: 2, date: dateLabel() }, ...current.ledger],
+      };
+      return { ...current, browseIds };
+    });
+    go({ kind: "funding", id });
+  }
+
+  function toggleFavorite(id: string) {
+    const adding = !favorites.includes(id);
+    setFavorites((current) => adding ? [...current, id] : current.filter((item) => item !== id));
+    if (adding) awardOnce("favorite", 3, "完成任务：收藏 1 条情报");
+    setToast(adding ? "已加入收藏" : "已取消收藏");
+  }
+
+  function toggleFollow(id: string) {
+    const adding = !follows.includes(id);
+    setFollows((current) => adding ? [...current, id] : current.filter((item) => item !== id));
+    if (adding) awardOnce("follow", 5, "完成任务：关注 1 个主题");
+    setToast(adding ? "关注成功" : "已取消关注");
+  }
+
+  async function share(title: string) {
+    try {
+      if (navigator.share) {
+        await navigator.share({ title, url: location.href });
+        return;
+      }
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(location.href);
+      } else {
+        const field = document.createElement("textarea");
+        field.value = location.href;
+        field.style.position = "fixed";
+        field.style.opacity = "0";
+        document.body.appendChild(field);
+        field.select();
+        document.execCommand("copy");
+        field.remove();
+      }
+      setToast("链接已复制");
+    } catch { /* User cancelled the browser share surface. */ }
+  }
+
+  function redeem(id: string) {
+    const benefit = BENEFITS.find((item) => item.id === id);
+    if (!benefit || growth.redeemed.includes(id)) return;
+    if (growth.balance < benefit.cost) { setToast("积分不足，继续完成成长任务吧"); return; }
+    setGrowth((current) => ({
+      ...current,
+      balance: current.balance - benefit.cost,
+      redeemed: [...current.redeemed, id],
+      ledger: [{ id: `redeem-${Date.now()}`, label: `兑换：${benefit.title}`, points: -benefit.cost, date: dateLabel() }, ...current.ledger],
+    }));
+    setToast("权益兑换成功");
+  }
+
+  const page = (() => {
+    if (!fundingIndex || !reportIndex) return <Loading />;
+    if (view.kind === "funding") return <FundingDetailView card={fundingDetails[view.id]} watched={favorites.includes(view.id)} onBack={back} onFavorite={() => toggleFavorite(view.id)} />;
+    if (view.kind === "report") return <ReportDetailView report={reportDetails[view.id]} onBack={back} onShare={() => share(reportDetails[view.id]?.title || "观澜研究报告")} />;
+    if (view.kind === "saved") return <SavedView cards={cards.filter((card) => favorites.includes(card.id))} onBack={back} onOpen={openFunding} onFavorite={toggleFavorite} />;
+    if (view.kind === "history") return <HistoryView cards={history.map((id) => cards.find((card) => card.id === id)).filter(Boolean) as FundingCard[]} onBack={back} onOpen={openFunding} />;
+    if (view.kind === "follows") return <FollowsView categories={fundingIndex.categories} follows={follows} onBack={back} onToggle={toggleFollow} />;
+    if (view.kind === "growth") return <GrowthView growth={growth} level={level} onBack={back} onRedeem={redeem} />;
+    if (view.kind === "profile-edit") return <ProfileEditView nickname={nickname} onChange={setNickname} onBack={back} />;
+    if (view.kind === "compare") return <CompareView cards={selected.map((id) => cards.find((card) => card.id === id)).filter(Boolean) as FundingCard[]} onBack={back} />;
+    if (view.tab === "market") return <MarketView index={fundingIndex} onOpenCategory={(id) => { setCategory(id); showTab("terminal"); }} />;
+    if (view.tab === "observe") return <ObserveView index={reportIndex} type={reportType} onType={setReportType} onOpen={(id) => go({ kind: "report", id })} onSaved={() => go({ kind: "saved" })} />;
+    if (view.tab === "profile") return <ProfileView nickname={nickname} favorites={favorites.length} history={history.length} follows={follows.length} growth={growth} level={level} onOpen={(kind) => go({ kind })} onShare={() => share("一起用观澜追踪 AI 融资情报")} />;
+    return <TerminalView index={fundingIndex} cards={filteredCards} query={query} onQuery={setQuery} category={category} onCategory={setCategory} favorites={favorites} selected={selected} onOpen={openFunding} onFavorite={toggleFavorite} onSelect={(id) => setSelected((current) => current.includes(id) ? current.filter((item) => item !== id) : current.length < 3 ? [...current, id] : current)} onFilter={() => setFilterOpen(true)} onSaved={() => go({ kind: "saved" })} onCompare={() => selected.length >= 2 ? go({ kind: "compare" }) : setToast("请至少选择 2 家公司")} />;
+  })();
+
+  return (
+    <div className="guanlan-app">
+      {page}
+      {view.kind === "tab" ? <BottomNav active={view.tab} onChange={showTab} /> : null}
+      {selected.length ? <button className="compare-fab" onClick={() => selected.length >= 2 ? go({ kind: "compare" }) : setToast("请再选择 1 家公司")}>比较 {selected.length}/3</button> : null}
+      <BottomSheet open={filterOpen} onOpenChange={setFilterOpen} title="筛选融资情报" description="筛选只影响当前终端列表" snap={0.62}>
+        <FilterGroup label="地区" value={region} options={[{ id: "all", name: "全部" }, { id: "china", name: "中国总部" }, { id: "overseas", name: "海外总部" }, { id: "undisclosed", name: "未披露" }]} onChange={setRegion} />
+        <FilterGroup label="轮次" value={round} options={[{ id: "all", name: "全部" }, { id: "early", name: "种子/天使" }, { id: "growth", name: "A/B/C轮" }, { id: "late", name: "D轮以后" }, { id: "other", name: "其他" }]} onChange={setRound} />
+        <button className="sheet-primary" onClick={() => setFilterOpen(false)}>查看结果</button>
+      </BottomSheet>
+      {toast ? <div className="toast" role="status">{toast}</div> : null}
+    </div>
+  );
+}
+
+function Loading() {
+  return <><AppHeader title="观澜" /><MobileScroll className="app-screen"><main className="screen-content loading"><img src="/brand/app-icon-light.svg" alt="" /><span>正在载入融资情报…</span></main></MobileScroll></>;
+}
+
+function TerminalView(props: { index: FundingIndex; cards: FundingCard[]; query: string; onQuery: (value: string) => void; category: string; onCategory: (value: string) => void; favorites: string[]; selected: string[]; onOpen: (id: string) => void; onFavorite: (id: string) => void; onSelect: (id: string) => void; onFilter: () => void; onSaved: () => void; onCompare: () => void }) {
+  return <><AppHeader title="融资终端" action={`收藏 ${props.favorites.length}`} onAction={props.onSaved} /><MobileScroll className="app-screen"><main className="screen-content terminal-screen">
+    <section className="terminal-intro"><div><span>已发布融资情报</span><strong>{props.index.meta.cardCount}</strong></div><p>更新至 {props.index.meta.latestDate} · 多源核验率 {props.index.meta.multiSourceRate}%</p></section>
+    <div className="search-row"><label className="search-box"><MagnifyingGlassIcon /><KeyboardInput value={props.query} onChange={(event) => props.onQuery(event.target.value)} placeholder="搜索公司、赛道或投资方" aria-label="搜索融资" /></label><button className="filter-button" onClick={props.onFilter}><MixerHorizontalIcon /></button></div>
+    <Carousel ariaLabel="融资分类" className="category-carousel" contentClassName="category-track"><button className={props.category === "all" ? "active" : ""} onClick={() => props.onCategory("all")}>全部 {props.index.meta.cardCount}</button>{props.index.categories.map((item) => <button key={item.id} className={props.category === item.id ? "active" : ""} onClick={() => props.onCategory(item.id)}>{item.name} {item.count}</button>)}</Carousel>
+    <div className="list-heading"><span>共 {props.cards.length} 条结果</span><button onClick={props.onCompare}>公司比较</button></div>
+    <section className="funding-list">{props.cards.map((card) => <FundingRow key={card.id} card={card} watched={props.favorites.includes(card.id)} selected={props.selected.includes(card.id)} onOpen={() => props.onOpen(card.id)} onFavorite={() => props.onFavorite(card.id)} onSelect={() => props.onSelect(card.id)} />)}</section>
+    {!props.cards.length ? <Empty title="没有符合条件的融资" copy="换一个关键词或清空筛选后再试。" /> : null}
+  </main></MobileScroll></>;
+}
+
+function FundingRow({ card, watched, selected, onOpen, onFavorite, onSelect }: { card: FundingCard; watched: boolean; selected: boolean; onOpen: () => void; onFavorite: () => void; onSelect: () => void }) {
+  return <article className={`funding-row ${selected ? "selected" : ""}`}><button className="company-avatar" onClick={onOpen}>{card.initial}</button><button className="funding-copy" onClick={onOpen}><span className="company-line"><strong>{card.company}</strong><em>{card.category}</em></span><span className="funding-facts">{card.round} · {card.date}</span><span className="funding-source"><CheckCircledIcon />{card.evidenceLabel} · {card.sourceCount} 条来源</span></button><div className="funding-side"><strong>{card.amount}</strong><div><button aria-label="选择比较" className={selected ? "selected" : ""} onClick={onSelect}>{selected ? <CheckCircledIcon /> : <BarChartIcon />}</button><button aria-label={watched ? "取消收藏" : "收藏"} onClick={onFavorite}>{watched ? <BookmarkFilledIcon /> : <BookmarkIcon />}</button></div></div></article>;
+}
+
+function MarketView({ index, onOpenCategory }: { index: FundingIndex; onOpenCategory: (id: string) => void }) {
+  const topRounds = useMemo(() => {
+    const counts = new Map<string, number>();
+    index.cards.forEach((card) => counts.set(card.round, (counts.get(card.round) || 0) + 1));
+    return [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 5);
+  }, [index]);
+  const maxCount = Math.max(...index.categories.map((item) => item.count));
+  return <><AppHeader title="市场" /><MobileScroll className="app-screen"><main className="screen-content market-screen"><section className="market-hero"><span>PUBLIC FUNDING SAMPLE</span><h2>当前公开样本概览</h2><p>只统计已发布且证据可追溯的融资卡，不把未披露金额计作零。</p></section><section className="metric-grid"><div><strong>{index.meta.cardCount}</strong><span>融资卡</span></div><div><strong>{index.meta.disclosedAmountCount}</strong><span>披露金额</span></div><div><strong>{index.meta.multiSourceRate}%</strong><span>多源核验</span></div><div><strong>{index.categories.length}</strong><span>一级分类</span></div></section><SectionTitle title="赛道分布" note="点击进入终端" /><section className="market-list">{index.categories.map((item) => <button key={item.id} onClick={() => onOpenCategory(item.id)}><div><strong>{item.name}</strong><span>{item.count} 笔融资</span></div><span className="bar"><i style={{ width: `${Math.round((item.count / maxCount) * 100)}%` }} /></span><ChevronRightIcon /></button>)}</section><SectionTitle title="轮次观察" note="公开样本" /><section className="round-list">{topRounds.map(([name, count], indexValue) => <div key={name}><span>{String(indexValue + 1).padStart(2, "0")}</span><strong>{name}</strong><em>{count} 笔</em></div>)}</section></main></MobileScroll></>;
+}
+
+function ObserveView({ index, type, onType, onOpen, onSaved }: { index: ReportIndex; type: "weekly" | "monthly"; onType: (value: "weekly" | "monthly") => void; onOpen: (id: string) => void; onSaved: () => void }) {
+  const reports = index.reports.filter((item) => item.type === type);
+  const featured = reports[0];
+  return <><AppHeader title="观察" action="我的收藏" onAction={onSaved} /><MobileScroll className="app-screen"><main className="screen-content observe-screen"><section className="report-intro"><span>GUANLAN RESEARCH</span><h2>AI 商业变化观察</h2><p>用周报追踪变化，用月报理解结构。每一条判断都来自已接受的事实、观点与社群观察边界。</p></section><div className="segmented"><button className={type === "weekly" ? "active" : ""} onClick={() => onType("weekly")}>周报 {index.meta.weeklyCount}</button><button className={type === "monthly" ? "active" : ""} onClick={() => onType("monthly")}>月报 {index.meta.monthlyCount}</button></div>{featured ? <button className="featured-report" onClick={() => onOpen(featured.id)}><span className="feature-meta"><em>最新{featured.typeLabel}</em><i>{featured.issue}</i></span><strong>{featured.title}</strong><p>{featured.summary}</p>{featured.counts ? <span className="evidence-chips"><i>{featured.counts.signals} 条事件</i><i>{featured.counts.opinions} 条观点</i><i>{featured.counts.community} 条观察</i></span> : null}<span className="feature-footer"><i>{featured.window}</i><em>阅读全文</em></span></button> : null}<SectionTitle title={`往期${type === "weekly" ? "周报" : "月报"}`} note="按发布日期倒序" /><section className="report-list">{reports.slice(1).map((report) => <button key={report.id} className="report-row" onClick={() => onOpen(report.id)}><span className="report-date"><strong>{report.dateShort}</strong><em>{report.issue}</em></span><span className="report-copy"><strong>{report.title}</strong><p>{report.summary}</p><span><i>{report.sectionCount} 个研究章节</i><em>查看全文</em></span></span></button>)}</section></main></MobileScroll></>;
+}
+
+function ProfileView({ nickname, favorites, history, follows, growth, level, onOpen, onShare }: { nickname: string; favorites: number; history: number; follows: number; growth: GrowthState; level: ReturnType<typeof levelFor>; onOpen: (kind: "saved" | "history" | "follows" | "growth" | "profile-edit") => void; onShare: () => void }) {
+  const tasks = [
+    { id: "browse", title: "每日阅读 5 条情报", progress: Math.min(5, growth.browseIds.length), target: 5, points: 2 },
+    { id: "favorite", title: "收藏 1 条情报", progress: favorites ? 1 : 0, target: 1, points: 3 },
+    { id: "follow", title: "关注 1 个主题", progress: follows ? 1 : 0, target: 1, points: 5 },
+  ];
+  return <><AppHeader title="" action="设置" onAction={() => onOpen("profile-edit")} /><MobileScroll className="app-screen"><main className="screen-content profile-screen"><button className="identity-row" onClick={() => onOpen("profile-edit")}><img src="/brand/app-icon-light.svg" alt="个人头像" /><span><strong>{nickname}</strong><em>资料完善度 60% · 管理个人信息</em></span><ChevronRightIcon /></button><button className="growth-card" onClick={() => onOpen("growth")}><span className="growth-top"><span><em>本周情报成长</em><strong>L{level.level} {level.name}</strong></span><span><strong>{growth.balance}</strong><em>体验积分</em></span></span><span className="growth-meta"><i>已完成 {growth.completed.length}/5 个成长任务</i><i>距下一级 {Math.max(0, level.next - growth.lifetime)} 分</i></span><span className="progress"><i style={{ width: `${level.progress}%` }} /></span><span className="growth-footer">继续研究，解锁更多情报权益</span></button><section className="stats"><button onClick={() => onOpen("history")}><strong>{history}</strong><span>浏览</span></button><button onClick={() => onOpen("saved")}><strong>{favorites}</strong><span>收藏</span></button><button onClick={() => onOpen("follows")}><strong>{follows}</strong><span>关注</span></button></section><SectionTitle title="成长任务" note="查看明细" onClick={() => onOpen("growth")} /><section className="profile-list">{tasks.map((task) => <button key={task.id} onClick={() => task.id === "follow" ? onOpen("follows") : undefined}><span><strong>{task.title}</strong><em>今日进度 {task.progress}/{task.target}</em></span><i className={growth.completed.includes(task.id) ? "done" : ""}>{growth.completed.includes(task.id) ? "已完成" : `+${task.points} 分`}</i></button>)}</section><SectionTitle title="我的权益" note="全部权益" onClick={() => onOpen("growth")} /><section className="profile-list benefits-preview">{BENEFITS.map((item) => <button key={item.id} onClick={() => onOpen("growth")}><img src="/brand/app-icon-light.svg" alt="" /><span><strong>{item.title}</strong><em>{item.description}</em></span><i>{growth.redeemed.includes(item.id) ? "已兑换" : `${item.cost} 分`}</i></button>)}</section><button className="invite-card" onClick={onShare}><span><strong>邀请好友 · 共同成长</strong><em>好友首次注册后，双方各得 20 积分</em></span><Share1Icon /></button><p className="experience-note">积分与权益当前为本地体验数据，正式到账以服务端验证结果为准。</p></main></MobileScroll></>;
+}
+
+function FundingDetailView({ card, watched, onBack, onFavorite }: { card?: FundingDetail; watched: boolean; onBack: () => void; onFavorite: () => void }) {
+  if (!card) return <Loading />;
+  return <><AppHeader title="融资详情" onBack={onBack} action={watched ? "已收藏" : "收藏"} onAction={onFavorite} /><MobileScroll className="app-screen"><main className="screen-content detail-screen"><section className="detail-identity"><span>{card.initial}</span><div><h2>{card.company}</h2><p>{card.category} · {card.productForm || card.subcategory}</p></div></section><section className="fact-grid"><div><span>本轮金额</span><strong>{card.amount}</strong></div><div><span>融资轮次</span><strong>{card.round}</strong></div><div><span>披露日期</span><strong>{card.date}</strong></div><div><span>累计融资</span><strong>{card.cumulativeAmount}</strong></div></section><div className="verified"><CheckCircledIcon />{card.evidenceLabel} · {card.sourceCount} 条研究来源</div><ArticleSection title="公司做什么"><p>{card.companySummary}</p><small>总部：{card.headquarters}</small></ArticleSection><ArticleSection title="本轮投资方">{card.investors.length ? card.investors.map((item) => <div className="simple-row" key={item.name}><strong>{item.name}</strong><span>{item.role || "角色未披露"}</span></div>) : <p>投资方未披露</p>}</ArticleSection>{card.signals.length ? <ArticleSection title="已验证信号">{card.signals.map((item, index) => <p className="numbered" key={item}><b>{index + 1}</b>{item}</p>)}</ArticleSection> : null}{card.capitalJudgment ? <ArticleSection title="资本为什么下注" kicker="观澜分析"><p>{card.capitalJudgment}</p></ArticleSection> : null}{card.risks.length ? <ArticleSection title="风险与未知">{card.risks.map((item, index) => <p className="numbered risk" key={item}><b>{index + 1}</b>{item}</p>)}</ArticleSection> : null}</main></MobileScroll></>;
+}
+
+function ReportDetailView({ report, onBack, onShare }: { report?: ReportDetail; onBack: () => void; onShare: () => void }) {
+  if (!report) return <Loading />;
+  return <><AppHeader title={report.typeLabel} onBack={onBack} /><MobileScroll className="app-screen"><main className="screen-content report-detail"><section className="reader-hero"><span><em>{report.typeLabel}</em><i>{report.issue}</i></span><h2>{report.title}</h2><p>{report.summary}</p><small>发布 {report.date}　窗口 {report.window}　{report.sectionCount} 个章节</small>{report.counts ? <div><span><strong>{report.counts.signals}</strong><em>商业事件</em></span><span><strong>{report.counts.opinions}</strong><em>一线观点</em></span><span><strong>{report.counts.community}</strong><em>社群观察</em></span></div> : null}</section><p className="boundary">报告是基于证据的下游研究判断，不构成投资建议。文中事实、观点与社群材料遵循不同证据边界。</p><article className="reader-body">{report.blocks.map((block) => block.type === "heading" ? <h3 key={block.id}>{block.text}</h3> : block.type === "subheading" ? <h4 key={block.id}>{block.text}</h4> : block.type === "list" ? <p className="reader-list" key={block.id}>{block.text}</p> : block.type === "quote" ? <blockquote key={block.id}>{block.text}</blockquote> : block.type === "table" ? <p className="reader-table" key={block.id}>{block.text}</p> : <p key={block.id}>{block.text}</p>)}</article><button className="secondary-action" onClick={onShare}><Share1Icon />分享这份{report.typeLabel}</button></main></MobileScroll></>;
+}
+
+function SavedView({ cards, onBack, onOpen, onFavorite }: { cards: FundingCard[]; onBack: () => void; onOpen: (id: string) => void; onFavorite: (id: string) => void }) {
+  return <><AppHeader title="我的收藏" onBack={onBack} /><MobileScroll className="app-screen"><main className="screen-content sub-screen"><p className="sub-intro">已收藏 {cards.length} 笔融资，数据保存在当前浏览器。</p>{cards.length ? cards.map((card) => <FundingRow key={card.id} card={card} watched selected={false} onOpen={() => onOpen(card.id)} onFavorite={() => onFavorite(card.id)} onSelect={() => undefined} />) : <Empty title="还没有收藏融资" copy="在融资终端点击收藏，即可建立你的观察列表。" />}</main></MobileScroll></>;
+}
+
+function HistoryView({ cards, onBack, onOpen }: { cards: FundingCard[]; onBack: () => void; onOpen: (id: string) => void }) {
+  return <><AppHeader title="浏览记录" onBack={onBack} /><MobileScroll className="app-screen"><main className="screen-content sub-screen">{cards.length ? cards.map((card) => <button className="history-row" key={card.id} onClick={() => onOpen(card.id)}><span>{card.initial}</span><div><strong>{card.company}</strong><em>{card.round} · {card.amount}</em></div><ClockIcon /></button>) : <Empty title="还没有浏览记录" copy="打开融资详情后，最近记录会保存在这里。" />}</main></MobileScroll></>;
+}
+
+function FollowsView({ categories, follows, onBack, onToggle }: { categories: FundingIndex["categories"]; follows: string[]; onBack: () => void; onToggle: (id: string) => void }) {
+  return <><AppHeader title="我的关注" onBack={onBack} /><MobileScroll className="app-screen"><main className="screen-content sub-screen"><div className="sub-hero"><h2>选择你的观察主题</h2><p>关注后可在个人中心集中管理，报告与融资事实仍遵循原有证据边界。</p></div>{categories.map((item) => <article className="follow-row" key={item.id}><span><strong>{item.count}</strong><em>条情报</em></span><div><strong>{item.name}</strong><em>追踪该赛道融资变化</em></div><button className={follows.includes(item.id) ? "active" : ""} onClick={() => onToggle(item.id)}>{follows.includes(item.id) ? "已关注" : "关注"}</button></article>)}</main></MobileScroll></>;
+}
+
+function GrowthView({ growth, level, onBack, onRedeem }: { growth: GrowthState; level: ReturnType<typeof levelFor>; onBack: () => void; onRedeem: (id: string) => void }) {
+  return <><AppHeader title="成长与权益" onBack={onBack} /><MobileScroll className="app-screen"><main className="screen-content sub-screen"><section className="wallet"><span>当前本地体验积分</span><strong>{growth.balance}</strong><em>L{level.level} {level.name} · 累计成长 {growth.lifetime} 分</em><span className="progress"><i style={{ width: `${level.progress}%` }} /></span><small>距下一等级还差 {Math.max(0, level.next - growth.lifetime)} 分</small></section><SectionTitle title="可兑换权益" /><section className="redeem-list">{BENEFITS.map((item) => <article key={item.id}><span><strong>{item.title}</strong><em>{item.description}</em></span><button disabled={growth.redeemed.includes(item.id)} onClick={() => onRedeem(item.id)}>{growth.redeemed.includes(item.id) ? "已兑换" : `${item.cost} 分兑换`}</button></article>)}</section><SectionTitle title="积分明细" /><section className="ledger">{growth.ledger.map((item) => <div key={item.id}><span><strong>{item.label}</strong><em>{item.date}</em></span><i className={item.points > 0 ? "income" : "expense"}>{item.points > 0 ? "+" : ""}{item.points}</i></div>)}</section><p className="boundary">邀请奖励必须在好友完成首次注册后由服务端核验，不能通过点击分享直接到账。</p></main></MobileScroll></>;
+}
+
+function ProfileEditView({ nickname, onChange, onBack }: { nickname: string; onChange: (value: string) => void; onBack: () => void }) {
+  return <><AppHeader title="个人资料" onBack={onBack} /><MobileScroll className="app-screen"><main className="screen-content sub-screen"><section className="profile-edit-card"><img src="/brand/app-icon-light.svg" alt="当前头像" /><div><strong>头像</strong><em>H5 登录接入后可同步微信头像</em></div></section><label className="edit-field"><span>昵称</span><KeyboardInput value={nickname} maxLength={20} onChange={(event) => onChange(event.target.value)} placeholder="请输入昵称" /></label><section className="account-list"><div><span><strong>手机号</strong><em>未绑定</em></span><button>待后端接入</button></div><div><span><strong>微信资料</strong><em>需公众号或开放平台网页授权</em></span><i>未接入</i></div></section><p className="boundary">H5 页面不能直接读取微信号。头像、昵称和手机号将在正式登录及服务端接口接入后同步。</p></main></MobileScroll></>;
+}
+
+function CompareView({ cards, onBack }: { cards: FundingCard[]; onBack: () => void }) {
+  return <><AppHeader title="公司比较" onBack={onBack} /><MobileScroll className="app-screen"><main className="screen-content sub-screen"><section className="compare-grid">{cards.map((card) => <article key={card.id}><span>{card.initial}</span><h3>{card.company}</h3><dl><dt>本轮金额</dt><dd>{card.amount}</dd><dt>融资轮次</dt><dd>{card.round}</dd><dt>披露日期</dt><dd>{card.date}</dd><dt>市场分类</dt><dd>{card.category}</dd><dt>总部</dt><dd>{card.headquarters}</dd></dl></article>)}</section></main></MobileScroll></>;
+}
+
+function ArticleSection({ title, kicker, children }: { title: string; kicker?: string; children: React.ReactNode }) {
+  return <section className="article-section">{kicker ? <span>{kicker}</span> : null}<h3>{title}</h3>{children}</section>;
+}
+
+function FilterGroup({ label, value, options, onChange }: { label: string; value: string; options: Array<{ id: string; name: string }>; onChange: (value: string) => void }) {
+  return <fieldset className="filter-group"><legend>{label}</legend><div>{options.map((item) => <button key={item.id} className={value === item.id ? "active" : ""} onClick={() => onChange(item.id)}>{item.name}</button>)}</div></fieldset>;
+}
+
+function SectionTitle({ title, note, onClick }: { title: string; note?: string; onClick?: () => void }) {
+  return <div className="section-title"><h3>{title}</h3>{note ? <button onClick={onClick}>{note}</button> : null}</div>;
+}
+
+function Empty({ title, copy }: { title: string; copy: string }) {
+  return <div className="empty"><img src="/brand/app-icon-light.svg" alt="" /><strong>{title}</strong><p>{copy}</p></div>;
+}
