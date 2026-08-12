@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-11T02:08:35.439Z",
-    "latestDataDate": "2026-08-11",
-    "currentDate": "2026-08-11",
-    "eventCount": 1993,
+    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2025,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -37,6 +37,8 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-0ad3854d95038ea3",
+      "EV-1b67695b10962867",
       "EV-2881df2bfc6f437d",
       "EV-3b02f281ab8fa91d",
       "EV-41e229cb248b8418",
@@ -92,7 +94,7 @@
       "EN-c70eca6b0f88f44d"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-08-11",
+    "lastSeen": "2026-08-12",
     "relationIds": [
       "REL2-a352560206a1ac3f",
       "REL2-d9ba4c1f870adb8b",
@@ -103,6 +105,8 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-0ad3854d95038ea3",
+        "EV-1b67695b10962867",
         "EV-2881df2bfc6f437d",
         "EV-3b02f281ab8fa91d",
         "EV-41e229cb248b8418",
@@ -154,6 +158,40 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-0ad3854d95038ea3",
+        "dataDate": "2026-08-12",
+        "date": "2026-08-12",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "派早报：微软已上调 Windows 11 OEM 授权费用、Claude 将为所有生成内容附加隐水印等",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9fbf261b62c1d7c0",
+          "EN-1706429cbf67f1c9",
+          "EN-bbdefa2950f49882",
+          "EN-c70eca6b0f88f44d",
+          "EN-cb4754c48f8023d0"
+        ]
+      },
+      {
+        "id": "EV-1b67695b10962867",
+        "dataDate": "2026-08-12",
+        "date": "2026-08-12",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.228 发布：修复交互会话重绘、Windows Git 检测及多项稳定性问题",
+        "displayTags": [],
+        "entityIds": [
+          "EN-cb4754c48f8023d0"
+        ]
+      },
       {
         "id": "EV-2881df2bfc6f437d",
         "dataDate": "2026-08-11",
@@ -1104,6 +1142,7 @@
         "EV-1abf0d076d30ec6d",
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
+        "EV-924d196a2412006f",
         "EV-7dcbf6eab4339b22",
         "EV-c25adb1398842ac9",
         "EV-c3f617e75d303f59",
@@ -1145,6 +1184,9 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-0ad3854d95038ea3",
+        "EV-2868ff08777b5de9",
+        "EV-87528c24b38b6312",
         "EV-29c0d969abde2020",
         "EV-f8adec104da927e8",
         "EV-1d3b117dad798008",
@@ -1308,6 +1350,9 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-46254bfc37b846f5",
+        "EV-580e20b23df595a1",
+        "EV-d7d649a3126aa663",
         "EV-9576bebb698a4c66",
         "EV-4e3e9b543127b55a",
         "EV-a6e9e81d40dc3845",
@@ -1423,7 +1468,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-11"
+      "lastSeen": "2026-08-12"
     }
   ],
   "relationships": [
@@ -1497,6 +1542,7 @@
       "valueId": "agentic_execution",
       "eventIds": [
         "EV-83728e3b6c7736ce",
+        "EV-cfbfc6c80338aa12",
         "EV-b6f025a2dc297b78",
         "EV-dc35d54f273196f0",
         "EV-9ed6a759555d7e77",
@@ -1680,6 +1726,14 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-2868ff08777b5de9",
+        "EV-3a7e7b6818fee0de",
+        "EV-7e0d6eb92af58925",
+        "EV-ba2898569165c9a6",
+        "EV-5c30f52112d92491",
+        "EV-c7d0b810ac3b3d4e",
+        "EV-f3a29cb561809daf",
+        "EV-ff924015298048ba",
         "EV-1d3b117dad798008",
         "EV-5f529a16a35a0d52",
         "EV-7228e4310ee1341a",
@@ -1947,6 +2001,7 @@
       ],
       "entityIds": [
         "EN-240389f4b730bad4",
+        "EN-7ebe9a17c4d4c271",
         "EN-360a940182e67c66",
         "EN-e6f19fa7a6b52367",
         "EN-2be663431f007250",
@@ -2086,6 +2141,9 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-0b9ca57f53ba758b",
+        "EN-f43fcac12953687c",
+        "EN-e214fdf90c1468b9",
         "EN-6c87e5496f592f3c",
         "EN-6849cf65695e6e77",
         "EN-74be4cbf48e647b2",

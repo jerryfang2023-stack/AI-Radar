@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-11T02:08:35.439Z",
-    "latestDataDate": "2026-08-11",
-    "currentDate": "2026-08-11",
-    "eventCount": 1993,
+    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2025,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -28,7 +28,7 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-06",
-    "lastSeen": "2026-08-11",
+    "lastSeen": "2026-08-12",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -44,7 +44,7 @@
     "timeline": [
       {
         "id": "EV-b116eafe60d71fbe",
-        "dataDate": "2026-08-11",
+        "dataDate": "2026-08-12",
         "date": "2026-08-06",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -70,13 +70,13 @@
     {
       "id": "HWC-3ee63c33f0d08ae1",
       "snapshotKey": "3ee63c33f0d08ae1",
-      "snapshotId": "HWS-b9fd83ab6482cf90",
+      "snapshotId": "HWS-bed0c769fbd4f29a",
       "eventId": "EV-b116eafe60d71fbe",
       "eventIds": [
         "EV-b116eafe60d71fbe"
       ],
-      "dataDate": "2026-08-11",
-      "date": "2026-08-11",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-12",
       "title": "Optical networking startup Lumilens",
       "subject": "Optical networking startup Lumilens",
       "productNames": [],
@@ -88,18 +88,28 @@
         "product": {
           "metric_value": "900",
           "unit": "$million",
-          "fact_ref": "HWF-f54eb9198fc5a42f"
+          "fact_ref": "HWF-57c6d92098b9d64b"
         }
       },
       "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-12",
+          "previousDate": "2026-08-11",
+          "snapshotId": "HWS-bed0c769fbd4f29a",
+          "previousSnapshotId": "HWS-b9fd83ab6482cf90",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-11",
-          "hardware_fact_id": "HWF-f54eb9198fc5a42f",
+          "data_date": "2026-08-12",
+          "hardware_fact_id": "HWF-57c6d92098b9d64b",
           "fact_type": "product",
           "observed_at": "2026-08-06T00:00:00.000Z",
           "subject_entity_id": "EN-373da2ec629326c0",
@@ -113,11 +123,11 @@
           "event_refs": [
             "EV-b116eafe60d71fbe"
           ],
-          "claim_ref": "CL-77a4d1cc6531ee64",
+          "claim_ref": "CL-9e879afe6af6883c",
           "source_refs": [
             "SA-ac115da9da6dfd33"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-11/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-12/hardware-facts.json"
         }
       ],
       "capexFacts": [],

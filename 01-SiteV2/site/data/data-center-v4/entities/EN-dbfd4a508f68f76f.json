@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-11T02:08:35.439Z",
-    "latestDataDate": "2026-08-11",
-    "currentDate": "2026-08-11",
-    "eventCount": 1993,
+    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2025,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -26,6 +26,9 @@
     ],
     "eventIds": [],
     "viewpointIds": [
+      "https://simonwillison.net/2026/Aug/11/there-are-no-lossless-transformations-of-natural-language-text/#atom-everything",
+      "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/#atom-everything",
+      "https://simonwillison.net/2026/Aug/10/openclaw/#atom-everything",
       "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/#atom-everything",
       "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/#atom-everything",
       "https://simonwillison.net/2026/Aug/8/auto-mode/#atom-everything",
@@ -38,9 +41,6 @@
       "https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations/#atom-everything",
       "https://simonwillison.net/2026/Aug/5/incident-report/#atom-everything",
       "https://simonwillison.net/2026/Aug/5/raccoon-heist/#atom-everything",
-      "https://simonwillison.net/2026/Aug/4/new-release-of-llm/#atom-everything",
-      "https://simonwillison.net/2026/Aug/4/llm-anthropic/#atom-everything",
-      "https://simonwillison.net/2026/Aug/4/llm/#atom-everything",
       "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter/#atom-everything",
       "https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything",
       "https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything",
@@ -90,7 +90,7 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-01",
-    "lastSeen": "2026-08-10",
+    "lastSeen": "2026-08-12",
     "handle": "simonwillison.net",
     "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
     "organization": "",
@@ -98,14 +98,14 @@
       "产品与创业",
       "产品策略观点",
       "AI 应用与平台",
+      "Agent",
+      "Agent 工作流观点",
+      "Agentic AI",
       "AI 编程",
       "AI Coding 观点",
       "AI Coding",
       "AI 基础设施",
       "模型基础设施观点",
-      "Agent",
-      "Agent 工作流观点",
-      "Agentic AI",
       "企业工作流",
       "Builder 观点"
     ],
@@ -121,6 +121,24 @@
     },
     "timeline": [],
     "viewpoints": [
+      {
+        "id": "https://simonwillison.net/2026/Aug/11/there-are-no-lossless-transformations-of-natural-language-text/#atom-everything",
+        "date": "2026-08-12",
+        "title": "自然语言文本不存在无损转换。",
+        "sourceUrl": "https://simonwillison.net/2026/Aug/11/there-are-no-lossless-transformations-of-natural-language-text/#atom-everything"
+      },
+      {
+        "id": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/#atom-everything",
+        "date": "2026-08-12",
+        "title": "从专有LLM API中窃取推理痕迹",
+        "sourceUrl": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/#atom-everything"
+      },
+      {
+        "id": "https://simonwillison.net/2026/Aug/10/openclaw/#atom-everything",
+        "date": "2026-08-10",
+        "title": "引用OpenClaw（运行Opus 4.6）",
+        "sourceUrl": "https://simonwillison.net/2026/Aug/10/openclaw/#atom-everything"
+      },
       {
         "id": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/#atom-everything",
         "date": "2026-08-10",
@@ -148,7 +166,7 @@
       {
         "id": "https://simonwillison.net/2026/Aug/7/openai-timeline/#atom-everything",
         "date": "2026-08-08",
-        "title": "现在我们有了OpenAI意外攻击Hugging Face的时间线。",
+        "title": "现在我们有了OpenAI对Hugging Face意外攻击的时间线。",
         "sourceUrl": "https://simonwillison.net/2026/Aug/7/openai-timeline/#atom-everything"
       },
       {
@@ -160,7 +178,7 @@
       {
         "id": "https://simonwillison.net/2026/Aug/7/pdfs-are-terrible/#atom-everything",
         "date": "2026-08-08",
-        "title": "Token末日已至：各公司正争相削减AI开支",
+        "title": "Tokenpocalypse已至：各公司正争相削减AI开支",
         "sourceUrl": "https://simonwillison.net/2026/Aug/7/pdfs-are-terrible/#atom-everything"
       },
       {
@@ -190,26 +208,8 @@
       {
         "id": "https://simonwillison.net/2026/Aug/5/raccoon-heist/#atom-everything",
         "date": "2026-08-06",
-        "title": "用Claude Fable 5一次性通关《浣熊大劫案》游戏",
+        "title": "用Claude Fable 5一次通关《浣熊大劫案》游戏",
         "sourceUrl": "https://simonwillison.net/2026/Aug/5/raccoon-heist/#atom-everything"
-      },
-      {
-        "id": "https://simonwillison.net/2026/Aug/4/new-release-of-llm/#atom-everything",
-        "date": "2026-08-05",
-        "title": "LLM新版本增加了对推理轨迹、OpenAI Responses、服务器端工具以及更智能日志记录的支持。",
-        "sourceUrl": "https://simonwillison.net/2026/Aug/4/new-release-of-llm/#atom-everything"
-      },
-      {
-        "id": "https://simonwillison.net/2026/Aug/4/llm-anthropic/#atom-everything",
-        "date": "2026-08-05",
-        "title": "llm-anthropic 0.26 之前的翻译未通过以下检查：缺少中文翻译、翻译与原文相同。请重新翻译完整原文，并将所有列出的网址、账号、话题标签、数字、金额、百分比和版本号原样复制到译文中。",
-        "sourceUrl": "https://simonwillison.net/2026/Aug/4/llm-anthropic/#atom-everything"
-      },
-      {
-        "id": "https://simonwillison.net/2026/Aug/4/llm/#atom-everything",
-        "date": "2026-08-05",
-        "title": "llm 0.32 上一次翻译未通过以下检查：缺少中文翻译、翻译与原文相同。请重新翻译完整原文，并将所有列出的网址、@用户名、#话题标签、数字、金额、百分比和版本号原样复制到译文中。",
-        "sourceUrl": "https://simonwillison.net/2026/Aug/4/llm/#atom-everything"
       },
       {
         "id": "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter/#atom-everything",

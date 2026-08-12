@@ -5,9 +5,9 @@
     "site_version": "SITE-V4.6.1-research-retirement",
     "column_version": "FUNDING-INSIGHT-V1.4.0-financing-fields",
     "taxonomy_version": "TAG-V4.1",
-    "latest_date": "2026-08-11",
-    "generated_at": "2026-08-11T02:10:00.131Z",
-    "card_count": 238,
+    "latest_date": "2026-08-12",
+    "generated_at": "2026-08-12T04:34:53.209Z",
+    "card_count": 240,
     "duplicate_rounds_removed": 17,
     "automatic_publication": true,
     "market_category_framework": {
@@ -208,6 +208,11 @@
       },
       {
         "dimension": "ai_market_application",
+        "id": "fine_tuning",
+        "name": "模型微调"
+      },
+      {
+        "dimension": "ai_market_application",
         "id": "llm_benchmarking_routing",
         "name": "模型评测与路由"
       }
@@ -276,16 +281,1165 @@
     ],
     "directions": [
       {
-        "id": "DIR-20260725-02",
-        "title": "AI智能体从“辅助写作”转向“自主执行”，催生对智能体行为审计与权限控制的新需求"
-      },
-      {
         "id": "DIR-20260725-01",
         "title": "开源模型推理成本骤降，正在将价值从模型层迁移至“模型路由与成本治理”层"
+      },
+      {
+        "id": "DIR-20260725-02",
+        "title": "AI智能体从“辅助写作”转向“自主执行”，催生对智能体行为审计与权限控制的新需求"
       }
     ]
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-d1444f877a3e580e",
+      "triggered_by_event_id": "EV-55e7c286e95be405",
+      "as_of_date": "2026-08-12",
+      "company": {
+        "entity_id": "EN-8ab71d56a963f706",
+        "name": "River AI",
+        "full_name": "River AI",
+        "website": "https://river.ai/",
+        "summary": "River AI 是一家由 xAI 联合创始人 Igor Babuschkin 创立的 AI 初创公司，致力于从训练、模型、产品层到个人硬件，端到端地重建 AI 技术栈，让企业和个人能够训练、微调、部署并真正拥有自己的 AI 模型，而非依赖少数公司控制的封闭智能。",
+        "headquarters": "Palo Alto, California",
+        "founders": [
+          {
+            "name": "Igor Babuschkin",
+            "role": "Co-Founder & CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0deb7f666bec5423",
+                "quote": "River AI, an AI startup founded by xAI co-founder Igor Babuschkin",
+                "source_content_hash": "a44322af824e0f8f",
+                "quote_hash": "dd311da9754f043c5981c232073489551dbb18c9b81a0f7eb2bf6f28aa1b7000"
+              },
+              {
+                "source_id": "FISRC-064fec5cb02bbe01",
+                "quote": "River AI was founded by Igor Babuschkin, a co-founder of xAI",
+                "source_content_hash": "730b81702d618264",
+                "quote_hash": "25a9b07f8e250fa5ece7401a7a78ccce63f38396db5aed92fa7310bd86a2cc55"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0deb7f666bec5423",
+            "quote": "River AI, an AI startup founded by xAI co-founder Igor Babuschkin, has secured $1.1 billion in funding",
+            "source_content_hash": "a44322af824e0f8f",
+            "quote_hash": "377151776617e2f3cca144c14ee38ac57f410ac0904239f097dd2026620ea291"
+          },
+          {
+            "source_id": "FISRC-064fec5cb02bbe01",
+            "quote": "River is headquartered in Palo Alto, California.",
+            "source_content_hash": "730b81702d618264",
+            "quote_hash": "82685cf7706f51fd1f91405f11631aafd13fe5fad0c4c27ca3dd216f8991171b"
+          }
+        ],
+        "application_entity_id": "EN-8ab71d56a963f706",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "多轮融资",
+        "amount": "$1.1 billion",
+        "total_raised": "$1.1 billion",
+        "announced_at": "2026-08-11",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "General Catalyst",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0deb7f666bec5423",
+                "quote": "led by General Catalyst and AMP PBC",
+                "source_content_hash": "a44322af824e0f8f",
+                "quote_hash": "013a3889f84a5ad377bf90a22775a82f1aa282b45db2c3cb0e6e2cae1fcfbe37"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-f381c3151a9bb7"
+          },
+          {
+            "name": "AMP PBC",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0deb7f666bec5423",
+                "quote": "led by General Catalyst and AMP PBC",
+                "source_content_hash": "a44322af824e0f8f",
+                "quote_hash": "013a3889f84a5ad377bf90a22775a82f1aa282b45db2c3cb0e6e2cae1fcfbe37"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-e313029abd76ff"
+          },
+          {
+            "name": "Nvidia",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0deb7f666bec5423",
+                "quote": "with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek",
+                "source_content_hash": "a44322af824e0f8f",
+                "quote_hash": "2fea4aa95f455cf668da90f6bbb80a60ef5d93295e469d69604b0b43586f6284"
+              }
+            ],
+            "entity_id": "EN-8d4321d936320802",
+            "institution_id": "INV-c73d9854fb920b"
+          },
+          {
+            "name": "AMD Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0deb7f666bec5423",
+                "quote": "with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek",
+                "source_content_hash": "a44322af824e0f8f",
+                "quote_hash": "2fea4aa95f455cf668da90f6bbb80a60ef5d93295e469d69604b0b43586f6284"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-e6c1001c21765f"
+          },
+          {
+            "name": "Y Combinator",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0deb7f666bec5423",
+                "quote": "with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek",
+                "source_content_hash": "a44322af824e0f8f",
+                "quote_hash": "2fea4aa95f455cf668da90f6bbb80a60ef5d93295e469d69604b0b43586f6284"
+              }
+            ],
+            "entity_id": "EN-275b0f4a4023d91c",
+            "institution_id": "INV-7a5c599caeb7de"
+          },
+          {
+            "name": "Temasek",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0deb7f666bec5423",
+                "quote": "with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek",
+                "source_content_hash": "a44322af824e0f8f",
+                "quote_hash": "2fea4aa95f455cf668da90f6bbb80a60ef5d93295e469d69604b0b43586f6284"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-91885d8d9e5635"
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0deb7f666bec5423",
+            "quote": "River AI, an AI startup founded by xAI co-founder Igor Babuschkin, has secured $1.1 billion in funding in a seed/Series A round led by General Catalyst and AMP PBC, with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek.",
+            "source_content_hash": "a44322af824e0f8f",
+            "quote_hash": "bc4df8f96051746319803701a6afead60e8e1d7416fc239de4e259921394a469"
+          },
+          {
+            "source_id": "FISRC-0deb7f666bec5423",
+            "quote": "has secured $1.1 billion in funding in a seed/Series A round led by General Catalyst and AMP PBC, with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek.",
+            "source_content_hash": "a44322af824e0f8f",
+            "quote_hash": "a603fe26f8cda2bae439f2b30951996c870c6ad6ef572f8423ba9a4f215c052e"
+          }
+        ],
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$1.1 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "11 亿美元"
+        },
+        "total_raised_original": "$1.1 billion",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 1100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "11 亿美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-55e7c286e95be405",
+            "round_original": "多轮融资",
+            "amount": "$1.1 billion",
+            "announced_at": "2026-08-11",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0deb7f666bec5423",
+                "quote": "River AI, an AI startup founded by xAI co-founder Igor Babuschkin, has secured $1.1 billion in funding in a seed/Series A round led by General Catalyst and AMP PBC, with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek.",
+                "source_content_hash": "a44322af824e0f8f",
+                "quote_hash": "bc4df8f96051746319803701a6afead60e8e1d7416fc239de4e259921394a469"
+              },
+              {
+                "source_id": "FISRC-0deb7f666bec5423",
+                "quote": "has secured $1.1 billion in funding in a seed/Series A round led by General Catalyst and AMP PBC, with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek.",
+                "source_content_hash": "a44322af824e0f8f",
+                "quote_hash": "a603fe26f8cda2bae439f2b30951996c870c6ad6ef572f8423ba9a4f215c052e"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "$1.1 billion",
+          "normalized": {
+            "currency": "USD",
+            "value": 1100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "11 亿美元"
+          },
+          "basis": "source_disclosed",
+          "known_round_totals": [],
+          "historical_round_count": 1
+        }
+      },
+      "products": [
+        {
+          "name": "River API",
+          "description": "一个面向开发者和企业的 API，支持在多种开源模型上进行 LoRA 微调和强化学习训练，让用户能够用自己的数据训练、部署并拥有定制化模型，无需自建基础设施团队。",
+          "target_customers": "希望基于自有数据训练和部署定制化 AI 模型的开发者和企业",
+          "features": [
+            "LoRA 微调",
+            "强化学习训练",
+            "支持从 35B 到 1T 参数的开源模型",
+            "按 token 计费",
+            "训练运行约 15 至 20 分钟完成",
+            "成本比闭源替代方案低 2 至 4 倍"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0deb7f666bec5423",
+              "quote": "River already offers an API, billed per 1 million tokens , with rates dependent on the open model used. The API allows developers to use both reinforcement learning (RL) and low-rank adaptation (LoRA) fine-tuning on the models.",
+              "source_content_hash": "a44322af824e0f8f",
+              "quote_hash": "68f484889777353ab708c60bbe109c85569008fa2165dce6a8661f653437cccd"
+            },
+            {
+              "source_id": "FISRC-064fec5cb02bbe01",
+              "quote": "River said its API can complete complex reinforcement learning training runs in approximately 15 to 20 minutes while delivering costs that are two to four times lower than closed-source alternatives.",
+              "source_content_hash": "730b81702d618264",
+              "quote_hash": "0985afa3c82422222d5474d1f8d362a7e95682491652f0b84ad631acc2c22550"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "闭源替代方案",
+          "product": "闭源模型 API",
+          "scenario": "企业使用闭源模型 API 进行模型训练和部署",
+          "target_customer": "企业",
+          "funding_summary": "",
+          "core_difference": "River API 的训练成本比闭源替代方案低 2 至 4 倍，且企业可以完全拥有定制化模型，而非租用由少数公司控制的智能。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0deb7f666bec5423",
+              "quote": "at two to four times the cost savings relative to closed-source alternatives",
+              "source_content_hash": "a44322af824e0f8f",
+              "quote_hash": "cd26e50f6bf985d9513938f756df8ddbcacba2bd959c1df147358fb833294f1e"
+            },
+            {
+              "source_id": "FISRC-064fec5cb02bbe01",
+              "quote": "delivering costs that are two to four times lower than closed-source alternatives",
+              "source_content_hash": "730b81702d618264",
+              "quote_hash": "f9747b47313551b0dd89aa6269828122d4d7f5081ff77aede98e582a1bec0eea"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "强化学习训练运行时间",
+          "value": "15 至 20 分钟",
+          "observed_at": "2026-08-11",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0deb7f666bec5423",
+              "quote": "Any enterprise can complete a complex reinforcement learning run in 15 to 20 minutes with no infrastructure team required",
+              "source_content_hash": "a44322af824e0f8f",
+              "quote_hash": "dfbe5c182943c825e2234cbed45fa656ca0f862d551214a0cf0e73f96ab94459"
+            }
+          ]
+        },
+        {
+          "label": "成本节省幅度",
+          "value": "比闭源替代方案低 2 至 4 倍",
+          "observed_at": "2026-08-11",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0deb7f666bec5423",
+              "quote": "at two to four times the cost savings relative to closed-source alternatives",
+              "source_content_hash": "a44322af824e0f8f",
+              "quote_hash": "cd26e50f6bf985d9513938f756df8ddbcacba2bd959c1df147358fb833294f1e"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Igor Babuschkin",
+          "quote": "The way AI is built today is not how it will be built in the future. AI should be open, freely available, and affordable. It should feel like it is working for the person using it, not the lab that trained it. We started River to allow people and companies to own their intelligence.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-064fec5cb02bbe01",
+              "quote": "The way AI is built today is not how it will be built in the future. AI should be open, freely available, and affordable. It should feel like it is working for the person using it, not the lab that trained it. We started River to allow people and companies to own their intelligence.",
+              "source_content_hash": "730b81702d618264",
+              "quote_hash": "dccdb9b6c7e90e213db34ca75a125802e3043317fcf96d51f5a7fe095e99734d"
+            }
+          ]
+        },
+        {
+          "speaker": "Hemant Taneja",
+          "quote": "American leadership in AI urgently requires leadership in open weight models, while maintaining a lead in closed frontier models. Igor and the River AI team have the experience to make this happen, and we view their agenda as a priority for American resilience.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-064fec5cb02bbe01",
+              "quote": "American leadership in AI urgently requires leadership in open weight models, while maintaining a lead in closed frontier models. Igor and the River AI team have the experience to make this happen, and we view their agenda as a priority for American resilience.",
+              "source_content_hash": "730b81702d618264",
+              "quote_hash": "25d0c0b796a7070e65217c6a92c45cecd6b4cb2b3cdff1cbf28e5d723750ca1b"
+            }
+          ]
+        },
+        {
+          "speaker": "Marc Bhargava",
+          "quote": "There is a gap between what AI can do and what most companies actually experience. Until now, companies have lacked a cost-efficient way to train, tune, and own custom AI models. River closes this gap, helping any company build models on their own data, tailored to how they actually work.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-064fec5cb02bbe01",
+              "quote": "There is a gap between what AI can do and what most companies actually experience. Until now, companies have lacked a cost-efficient way to train, tune, and own custom AI models. River closes this gap, helping any company build models on their own data, tailored to how they actually work.",
+              "source_content_hash": "730b81702d618264",
+              "quote_hash": "74151e6902be3a446e6f336e0ed3278fd68b90636a824583fd21e7f109abfced"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "General Catalyst",
+            "speaker": "Hemant Taneja",
+            "speaker_role": "CEO of General Catalyst",
+            "rationale": "认为美国在 AI 领域保持领先地位迫切需要开源权重模型的领导力，River AI 团队具备实现这一目标的经验，并将其议程视为美国韧性的优先事项。",
+            "quote": "American leadership in AI urgently requires leadership in open weight models, while maintaining a lead in closed frontier models. Igor and the River AI team have the experience to make this happen, and we view their agenda as a priority for American resilience.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-064fec5cb02bbe01",
+                "quote": "American leadership in AI urgently requires leadership in open weight models, while maintaining a lead in closed frontier models. Igor and the River AI team have the experience to make this happen, and we view their agenda as a priority for American resilience.",
+                "source_content_hash": "730b81702d618264",
+                "quote_hash": "25d0c0b796a7070e65217c6a92c45cecd6b4cb2b3cdff1cbf28e5d723750ca1b"
+              }
+            ]
+          },
+          {
+            "institution": "General Catalyst",
+            "speaker": "Marc Bhargava",
+            "speaker_role": "Managing Director at General Catalyst",
+            "rationale": "认为当前 AI 能力与企业实际体验之间存在鸿沟，企业缺乏经济高效的方式来训练、调优和拥有定制化 AI 模型，River AI 填补了这一空白。",
+            "quote": "There is a gap between what AI can do and what most companies actually experience. Until now, companies have lacked a cost-efficient way to train, tune, and own custom AI models. River closes this gap, helping any company build models on their own data, tailored to how they actually work.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-064fec5cb02bbe01",
+                "quote": "There is a gap between what AI can do and what most companies actually experience. Until now, companies have lacked a cost-efficient way to train, tune, and own custom AI models. River closes this gap, helping any company build models on their own data, tailored to how they actually work.",
+                "source_content_hash": "730b81702d618264",
+                "quote_hash": "74151e6902be3a446e6f336e0ed3278fd68b90636a824583fd21e7f109abfced"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是“企业从租用闭源模型转向拥有定制化开源模型”这一范式迁移。River AI 在成立仅两个月后即获得 11 亿美元融资，表明投资方高度认可创始人 Igor Babuschkin 在 DeepMind、OpenAI 和 xAI 的顶尖履历，以及其 API 产品在训练速度和成本上相对于闭源方案的明确优势。本轮融资的验证信号包括：API 已上线并支持 LoRA 微调和强化学习，训练运行可在 15-20 分钟内完成，成本比闭源替代方案低 2-4 倍，且同时获得 Nvidia 和 AMD 两家芯片巨头的战略投资。然而，公司尚未披露任何付费客户或收入数据，其“个人 AI 硬件”和“持续学习智能体”等远期愿景仍处于早期阶段，产品市场匹配度有待验证。",
+        "validated_signals": [
+          "API 已上线，支持 LoRA 微调和强化学习训练",
+          "训练运行可在 15-20 分钟内完成，无需基础设施团队",
+          "成本比闭源替代方案低 2-4 倍",
+          "同时获得 Nvidia 和 AMD 两家芯片厂商的战略投资"
+        ],
+        "risks": [
+          "公司成立仅两个月，尚未披露任何付费客户或收入数据，产品市场匹配度未经证实",
+          "个人 AI 硬件和持续学习智能体等远期愿景仍处于概念阶段，技术可行性和商业化路径不明"
+        ],
+        "related_direction_id": "DIR-20260725-01",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "model_api_service",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "observability_evaluation",
+        "market_application_id": "fine_tuning",
+        "use_case_ids": [
+          "software_development"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ],
+        "sector": "AI 基础设施与模型训练",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“企业从租用闭源模型转向拥有定制化开源模型”这一范式迁移。River AI 在成立仅两个月后即获得 11 亿美元融资，表明投资方高度认可创始人 Igor Babuschkin 在 DeepMind、OpenAI 和 xAI 的顶尖履历，以及其 API 产品在训练速度和成本上相对于闭源方案的明确优势。本轮融资的验证信号包括：API 已上线并支持 LoRA 微调和强化学习，训练运行可在 15-20 分钟内完成，成本比闭源替代方案低 2-4 倍，且同时获得 Nvidia 和 AMD 两家芯片巨头的战略投资。然而，公司尚未披露任何付费客户或收入数据，其“个人 AI 硬件”和“持续学习智能体”等远期愿景仍处于早期阶段，产品市场匹配度有待验证。",
+          "evidence_signals": [
+            "API 已上线，支持 LoRA 微调和强化学习训练",
+            "训练运行可在 15-20 分钟内完成，无需基础设施团队",
+            "成本比闭源替代方案低 2-4 倍",
+            "同时获得 Nvidia 和 AMD 两家芯片厂商的战略投资"
+          ],
+          "risks": [
+            "公司成立仅两个月，尚未披露任何付费客户或收入数据，产品市场匹配度未经证实",
+            "个人 AI 硬件和持续学习智能体等远期愿景仍处于概念阶段，技术可行性和商业化路径不明"
+          ],
+          "institutional_rationale_status": "disclosed"
+        },
+        "related_direction": {
+          "id": "DIR-20260725-01",
+          "title": "开源模型推理成本骤降，正在将价值从模型层迁移至“模型路由与成本治理”层"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "River API",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Igor Babuschkin",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "General Catalyst",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "AMP PBC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Nvidia",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "AMD Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Y Combinator",
+          "canonical_entity_id": "EN-275b0f4a4023d91c",
+          "canonical_name": "Y Combinator"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Temasek",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "闭源替代方案",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-55e7c286e95be405",
+          "date": "2026-08-11",
+          "title": "General Catalyst 领投 River AI 11 亿美元融资",
+          "amount": "$1.1 billion",
+          "source_refs": [
+            "SA-d2645e36e5bd72fd"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-0deb7f666bec5423",
+          "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
+          "title": "General Catalyst 领投 River AI 11 亿美元融资",
+          "publisher": "TechCrunch：AI（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-12T04:15:44.186Z",
+          "content_hash": "a44322af824e0f8f",
+          "source_artifact_id": "SA-d2645e36e5bd72fd",
+          "raw_id": "RAW-f5c79c7fd349606a"
+        },
+        {
+          "source_id": "FISRC-064fec5cb02bbe01",
+          "source_url": "https://pulse2.com/river-ai-raises-1-1-billion-to-build-open-ai-stack/",
+          "title": "River AI Raises $1.1 Billion To Build Open AI Stack",
+          "publisher": "pulse2.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-12T04:34:16.468Z",
+          "content_hash": "730b81702d618264",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-12T04:34:53.188Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-12T04:34:53.188Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "River API"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Igor Babuschkin"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-55e7c286e95be405"
+      ],
+      "aggregation": {
+        "key": "EN-8ab71d56a963f706|multi_round|USD:exact:1100000000:::|2026-08-11",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-d1444f877a3e580e",
+          "event_ids": [
+            "EV-55e7c286e95be405"
+          ],
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "$1.1 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 1100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "11 亿美元"
+          },
+          "announced_at": "2026-08-11",
+          "disclosure_status": "disclosed",
+          "is_summary": true,
+          "counts_toward_known_total": false,
+          "is_current": true
+        }
+      ],
+      "product_form": {
+        "dimension": "product_form",
+        "id": "model_api_service",
+        "name": "模型 API 服务",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "infrastructure_compute",
+        "name": "基础设施与算力",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "observability_evaluation",
+        "name": "可观测与评估",
+        "method": "card_explicit"
+      },
+      "market_application": {
+        "dimension": "ai_market_application",
+        "id": "fine_tuning",
+        "name": "模型微调",
+        "method": "card_explicit"
+      },
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-55e7c286e95be405",
+        "direction": "opportunity-map.html#direction-cards"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-ad56bb800ab98d44",
+      "triggered_by_event_id": "EV-cfbfc6c80338aa12",
+      "as_of_date": "2026-08-12",
+      "company": {
+        "entity_id": "EN-7ebe9a17c4d4c271",
+        "name": "Mechanize",
+        "full_name": "Mechanize",
+        "website": "https://mechanize.work/",
+        "summary": "Mechanize是一家旧金山初创公司，致力于构建模拟工作环境和评估系统，帮助AI实验室训练和测试编码智能体，使其能够在现实的多步骤任务中表现良好，而非仅仅应对容易被刷榜的基准测试。公司的长期目标是实现整个经济中所有有价值工作的自动化。",
+        "headquarters": "San Francisco",
+        "founders": [
+          {
+            "name": "Tamay Besiroglu",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-06c0b86348243f88",
+                "quote": "Matthew Barnett, Tamay Besiroglu, Ege Erdil April 17, 2025",
+                "source_content_hash": "f74a9e0f93233c29",
+                "quote_hash": "f45ad78f57c168638572013be74126566f75d8172566ac8053d234faeb69f5b0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Matthew Barnett",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-06c0b86348243f88",
+                "quote": "Matthew Barnett, Tamay Besiroglu, Ege Erdil April 17, 2025",
+                "source_content_hash": "f74a9e0f93233c29",
+                "quote_hash": "f45ad78f57c168638572013be74126566f75d8172566ac8053d234faeb69f5b0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Ege Erdil",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-06c0b86348243f88",
+                "quote": "Matthew Barnett, Tamay Besiroglu, Ege Erdil April 17, 2025",
+                "source_content_hash": "f74a9e0f93233c29",
+                "quote_hash": "f45ad78f57c168638572013be74126566f75d8172566ac8053d234faeb69f5b0"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "约35人",
+          "observed_at": "2026-08-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9bd81942662ab7e7",
+              "quote": "Rather than buy the roughly 35-person company outright",
+              "source_content_hash": "ea8f0b6734de5746",
+              "quote_hash": "f3de63244c60dd8d4f52fb57f7ff79164e33da28d01511dfeda0cf3d8905c3df"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-06c0b86348243f88",
+            "quote": "Mechanize, a startup focused on developing virtual work environments, benchmarks, and training data that will enable the full automation of the economy.",
+            "source_content_hash": "f74a9e0f93233c29",
+            "quote_hash": "80c5099cc3bcf0b337cacb40a20c5909747707a2120295bedb91897293bc768d"
+          }
+        ],
+        "application_entity_id": "EN-7ebe9a17c4d4c271",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$1.5B",
+        "total_raised": "910万美元",
+        "announced_at": "2026-08-06",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Nat Friedman",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9bd81942662ab7e7",
+                "quote": "Backers include former GitHub chief Nat Friedman",
+                "source_content_hash": "ea8f0b6734de5746",
+                "quote_hash": "d91cd50b2f6134126244d3e42292c08b2f438b444b4ff4329f722b945056f5ed"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-aca994450bacd5"
+          },
+          {
+            "name": "Patrick Collison",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9bd81942662ab7e7",
+                "quote": "Stripe co-founder Patrick Collison",
+                "source_content_hash": "ea8f0b6734de5746",
+                "quote_hash": "90808f6d1dc1dc639e1a7175b7065f34294b3865a2aeb51217da4afbcb7b649c"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-41b26475abfce6"
+          },
+          {
+            "name": "Dwarkesh Patel",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9bd81942662ab7e7",
+                "quote": "podcaster Dwarkesh Patel",
+                "source_content_hash": "ea8f0b6734de5746",
+                "quote_hash": "7d9e7ef0da159cf59c70835546f3a1a9c141f2e7de80874027025b76b6df314f"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-267c02d43be6f2"
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9bd81942662ab7e7",
+            "quote": "News › Google eyes $1.5B for Mechanize, a startup that raised $9.1M…",
+            "source_content_hash": "ea8f0b6734de5746",
+            "quote_hash": "fdf5170cffaff34c1016e31362cd4274a860523857103e9356cd9bc035285b89"
+          },
+          {
+            "source_id": "FISRC-9bd81942662ab7e7",
+            "quote": "raised a $9.1 million seed round in April 2026 at a $500 million valuation.",
+            "source_content_hash": "ea8f0b6734de5746",
+            "quote_hash": "6f18c37d90a3340a3a4907c209de388a5964242ac0d5612cd9b6aff1c14bfcbf"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$1.5B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿美元"
+        },
+        "total_raised_original": "910万美元",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 9100000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "910 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-cfbfc6c80338aa12",
+            "round_original": "种子轮",
+            "amount": "$1.5B",
+            "announced_at": "2026-08-06",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9bd81942662ab7e7",
+                "quote": "News › Google eyes $1.5B for Mechanize, a startup that raised $9.1M…",
+                "source_content_hash": "ea8f0b6734de5746",
+                "quote_hash": "fdf5170cffaff34c1016e31362cd4274a860523857103e9356cd9bc035285b89"
+              },
+              {
+                "source_id": "FISRC-9bd81942662ab7e7",
+                "quote": "raised a $9.1 million seed round in April 2026 at a $500 million valuation.",
+                "source_content_hash": "ea8f0b6734de5746",
+                "quote_hash": "6f18c37d90a3340a3a4907c209de388a5964242ac0d5612cd9b6aff1c14bfcbf"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "910万美元",
+          "normalized": {
+            "currency": "USD",
+            "value": 9100000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "910 万美元"
+          },
+          "basis": "source_disclosed",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 1500000000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "15 亿美元"
+            }
+          ],
+          "historical_round_count": 1
+        }
+      },
+      "products": [
+        {
+          "name": "模拟工作环境与评估系统",
+          "description": "构建模拟的软件工程工作环境，让模型执行构建功能、部署应用或调试陌生代码库等任务，并由评分器对模型表现进行打分，这些分数作为强化学习和评估的信号。",
+          "target_customers": "AI实验室",
+          "features": [
+            "模拟真实世界的多步骤软件工程任务",
+            "提供评分器对模型表现进行打分",
+            "生成用于强化学习的训练信号",
+            "揭示前沿模型在编码中的失效点"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9bd81942662ab7e7",
+              "quote": "Mechanize builds simulated work environments and evaluation systems that help AI labs train and test coding agents on realistic, multi-step tasks rather than benchmarks that are easy to game.",
+              "source_content_hash": "ea8f0b6734de5746",
+              "quote_hash": "7069c18bd1ccc57674a6b1c3c392ade6dad647159e712b9d7846276536c21790"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "种子轮融资规模",
+          "value": "910万美元",
+          "observed_at": "2026-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9bd81942662ab7e7",
+              "quote": "raised a $9.1 million seed round in April 2026",
+              "source_content_hash": "ea8f0b6734de5746",
+              "quote_hash": "d5346489a4a3633d87f6df6e420e5e3ac75baad55022c735dd9fda157e0da524"
+            }
+          ]
+        },
+        {
+          "label": "种子轮估值",
+          "value": "5亿美元",
+          "observed_at": "2026-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9bd81942662ab7e7",
+              "quote": "at a $500 million valuation",
+              "source_content_hash": "ea8f0b6734de5746",
+              "quote_hash": "74961e2db9a2dd155f8f50f80fabdc4b43c5ea9c9a5e79f92c90793efd507784"
+            }
+          ]
+        },
+        {
+          "label": "种子轮规模在同赛道可比轮次中的百分位",
+          "value": "第99百分位",
+          "observed_at": "2026-08-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9bd81942662ab7e7",
+              "quote": "At $9.1 million, the seed sits in the 99th percentile by size among 2,334 comparable seed rounds in the sector",
+              "source_content_hash": "ea8f0b6734de5746",
+              "quote_hash": "8ca0bc7f44feaf63a687e08448d17216bf7e6675a71550bde88df593e4f11aa8"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是AI模型训练基础设施从通用基准测试向模拟真实工作环境的范式迁移。Mechanize在种子轮即获得5亿美元估值，且融资规模处于同赛道前1%，表明投资者对其构建的模拟工作环境与评估系统在训练前沿编码智能体方面的价值有极高预期。谷歌在种子轮仅103天后即以超15亿美元总对价洽谈获取其技术和团队，进一步验证了大型AI实验室对高质量训练环境和评估工具的迫切需求。",
+        "validated_signals": [
+          "种子轮融资910万美元，估值5亿美元，融资规模处于同赛道第99百分位",
+          "谷歌在种子轮仅103天后即洽谈以超15亿美元获取其技术和团队",
+          "创始团队来自Epoch AI，具备AI评估和基准测试的深厚背景",
+          "产品直接服务于前沿AI实验室的编码智能体训练和评估需求"
+        ],
+        "risks": [
+          "交易结构为非排他性技术许可加人员聘用，而非整体收购，谷歌可能仅获取有限的技术使用权，Mechanize的独立商业化前景不明",
+          "15亿美元对价涵盖许可费、薪酬、创始人和投资者回报等多项内容，并非纯粹的收购价格，实际技术估值可能远低于此",
+          "监管机构已表示将审查旨在规避并购审查的交易结构，存在反垄断风险"
+        ],
+        "related_direction_id": "DIR-20260725-01",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "observability_evaluation",
+        "market_application_id": "llm_benchmarking_routing",
+        "use_case_ids": [
+          "software_development"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "researcher"
+        ],
+        "sector": "人工智能基础设施与算力",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI模型训练基础设施从通用基准测试向模拟真实工作环境的范式迁移。Mechanize在种子轮即获得5亿美元估值，且融资规模处于同赛道前1%，表明投资者对其构建的模拟工作环境与评估系统在训练前沿编码智能体方面的价值有极高预期。谷歌在种子轮仅103天后即以超15亿美元总对价洽谈获取其技术和团队，进一步验证了大型AI实验室对高质量训练环境和评估工具的迫切需求。",
+          "evidence_signals": [
+            "种子轮融资910万美元，估值5亿美元，融资规模处于同赛道第99百分位",
+            "谷歌在种子轮仅103天后即洽谈以超15亿美元获取其技术和团队",
+            "创始团队来自Epoch AI，具备AI评估和基准测试的深厚背景",
+            "产品直接服务于前沿AI实验室的编码智能体训练和评估需求"
+          ],
+          "risks": [
+            "交易结构为非排他性技术许可加人员聘用，而非整体收购，谷歌可能仅获取有限的技术使用权，Mechanize的独立商业化前景不明",
+            "15亿美元对价涵盖许可费、薪酬、创始人和投资者回报等多项内容，并非纯粹的收购价格，实际技术估值可能远低于此",
+            "监管机构已表示将审查旨在规避并购审查的交易结构，存在反垄断风险"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        },
+        "related_direction": {
+          "id": "DIR-20260725-01",
+          "title": "开源模型推理成本骤降，正在将价值从模型层迁移至“模型路由与成本治理”层"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "模拟工作环境与评估系统",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Tamay Besiroglu",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Matthew Barnett",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Ege Erdil",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Nat Friedman",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Patrick Collison",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Dwarkesh Patel",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-cfbfc6c80338aa12",
+          "date": "2026-08-06",
+          "title": "谷歌瞄准Mechanize的15亿美元投资，这家初创公司103天前刚筹集了910万美元种子轮",
+          "amount": "$1.5B",
+          "source_refs": [
+            "SA-cbc0b152cee44edd"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-9bd81942662ab7e7",
+          "source_url": "https://dealroom.co/news/143496-google-eyes-1-5b-for-mechanize-a-startup-that-raised-9-1m-seed-103-days/",
+          "title": "谷歌瞄准Mechanize的15亿美元投资，这家初创公司103天前刚筹集了910万美元种子轮",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-12T04:16:00.346Z",
+          "content_hash": "ea8f0b6734de5746",
+          "source_artifact_id": "SA-cbc0b152cee44edd",
+          "raw_id": "RAW-fe7d970115bf1b23"
+        },
+        {
+          "source_id": "FISRC-06c0b86348243f88",
+          "source_url": "https://www.mechanize.work/announcing-mechanize-inc/",
+          "title": "Announcing Mechanize, Inc. | Mechanize, Inc.",
+          "publisher": "mechanize.work",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-12T04:34:17.653Z",
+          "content_hash": "f74a9e0f93233c29",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-12T04:34:47.656Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-12T04:34:47.656Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "模拟工作环境与评估系统"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Ege Erdil",
+            "Matthew Barnett",
+            "Tamay Besiroglu"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-cfbfc6c80338aa12"
+      ],
+      "aggregation": {
+        "key": "EN-7ebe9a17c4d4c271|seed|USD:exact:1500000000:::|2026-08-06",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-ad56bb800ab98d44",
+          "event_ids": [
+            "EV-cfbfc6c80338aa12"
+          ],
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$1.5B",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 1500000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "15 亿美元"
+          },
+          "announced_at": "2026-08-06",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        }
+      ],
+      "product_form": {
+        "dimension": "product_form",
+        "id": "ai_infrastructure_software",
+        "name": "AI 基础设施软件",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "infrastructure_compute",
+        "name": "基础设施与算力",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "observability_evaluation",
+        "name": "可观测与评估",
+        "method": "card_explicit"
+      },
+      "market_application": {
+        "dimension": "ai_market_application",
+        "id": "llm_benchmarking_routing",
+        "name": "模型评测与路由",
+        "method": "card_explicit"
+      },
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-cfbfc6c80338aa12",
+        "direction": "opportunity-map.html#direction-cards"
+      }
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-5d8eab3e612ca748",

@@ -1,0 +1,210 @@
+[
+  {
+    "hardware_fact_id": "HWF-1e556a178e38feda",
+    "fact_type": "shipment_deployment",
+    "observed_at": "2026-08-11T18:48:07.517Z",
+    "subject_entity_id": "EN-8d4321d936320802",
+    "subject_name": "NVIDIA",
+    "product_entity_ids": [
+      "EN-f43fcac12953687c"
+    ],
+    "product_names": [
+      "Nemotron 3.5 Lightning"
+    ],
+    "component_type": "semiconductor",
+    "metric_value": "",
+    "unit": "",
+    "source_quote": "= \\\"tool\\\" %}\\n {{- '<|im_end|>\\\\n' }}\\n {%- elif loop.last %}\\n {{- '<|im_end|>\\\\n' }}\\n {%- endif %}\\n {%- else %}\\n {{- '<|im_start|>' + message.role + '\\\\n' + message.content + '<|im_end|>\\\\n' }}\\n {%- endif %}\\n{%- endfor %}\\n{%- if add_generation_prompt %}\\n {%- if enable_thinking %}\\n {{- '<|im_start|>assistant\\\\n<think>\\\\n' }}\\n {%- else %}\\n {{- '<|im_start|>assistant\\\\n<think></think>' }}\\n {%- endif %}\\n{%- endif %}\"},\"createdAt\":\"2026-08-04T19:10:45.000Z\",\"discussionsDisabled\":false,\"discussionsSorting\":\"recently-created\",\"downloads\":19250,\"downloadsAllTime\":19250,\"id\":\"nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4\",\"isLikedByUser\":false,\"availableInferenceProviders\":[],\"showHuggingChatEntry\":false,\"inference\":\"\",\"lastModified\":\"2026-08-11T23:01:59.000Z\",\"likes\":143,\"pipeline_tag\":\"text-generation\",\"library_name\":\"transformers\",\"librariesOther\":[],\"trackDownloads\":true,\"model-index\":null,\"private\":false,\"repoType\":\"model\",\"gated\":false,\"tags\":[\"transformers\",\"safetensors\",\"nemotron_h\",\"text-generation\",\"nvidia\",\"pytorch\",\"nemotron-3.5\",\"conversational\",\"en\",\"es\",\"fr\",\"de\",\"it\",\"ja\",\"license:other\",\"endpoints_compatible\",\"8-bit\",\"modelopt\",\"deploy:azure\",\"region:us\"],\"tag_objs\":[{\"id\":\"text-generation\",\"label\":\"Text Generation\",\"type\":\"pipeline_tag\",\"subType\":\"nlp\"},{\"id\":\"transformers\",\"label\":\"Transformers\",\"type\":\"library\"},{\"id\":\"safetensors\",\"label\":\"Safetensors\",\"type\":\"library\"},{\"id\":\"pytorch\",\"label\":\"PyTorch\",\"type\":\"library\"},{\"id\":\"en\",\"label\":\"English\",\"type\":\"language\"},{\"id\":\"es\",\"label\":\"Spanish\",\"type\":\"language\"},{\"id\":\"fr\",\"label\":\"French\",\"type\":\"language\"},{\"id\":\"de\",\"label\":\"German\",\"type\":\"language\"},{\"id\":\"it\",\"label\":\"Italian\",\"type\":\"language\"},{\"id\":\"ja\",\"label\":\"Japanese\",\"type\":\"language\"},{\"id\":\"nemotron_h\",\"label\":\"nemotron_h\",\"type\":\"other\",\"clickable\":true},{\"id\":\"nvidia\",\"label\":\"nvidia\",\"type\":\"other\",\"clickable\":true},{\"id\":\"nemotron-3.5\",\"label\":\"nemotron-3.5\",\"type\":\"other\",\"clickable\":true},{\"id\":\"conversational\",\"label\":\"conversational\",\"type\":\"other\",\"clickable\":true},{\"id\":\"endpoints_compatible\",\"label\":\"Inference Endpoints\",\"type\":\"other\",\"clickable\":true},{\"id\":\"8-bit\",\"label\":\"8-bit precision\",\"type\":\"other\",\"clickable\":true},{\"id\":\"modelopt\",\"label\":\"modelopt\",\"type\":\"other\",\"clickable\":true},{\"id\":\"license:other\",\"label\":\"other\",\"type\":\"license\"},{\"id\":\"deploy:azure\",\"label\":\"azure\",\"type\":\"deploy\"},{\"type\":\"region\",\"label\":\"🇺🇸 Region: US\",\"id\":\"region:us\"}],\"transformersInfo\":{\"auto_model\":\"AutoModelForCausalLM\",\"pipeline_tag\":\"text-generation\",\"processor\":\"AutoTokenizer\"},\"widgetData\":[{\"text\":\"Hi, what can you help me with?",
+    "event_refs": [
+      "EV-3a7e7b6818fee0de"
+    ],
+    "claim_ref": "CL-8b06830734f16081",
+    "source_refs": [
+      "SA-58ffa81f9947c927"
+    ]
+  },
+  {
+    "hardware_fact_id": "HWF-c9ecf6fdbd4f9920",
+    "fact_type": "product",
+    "observed_at": "2026-08-11T20:02:03.000Z",
+    "subject_entity_id": "EN-8d4321d936320802",
+    "subject_name": "NVIDIA",
+    "product_entity_ids": [
+      "EN-e59f5a52b6713a29"
+    ],
+    "product_names": [
+      "LTX-2.5"
+    ],
+    "component_type": "gpu",
+    "metric_value": "",
+    "unit": "",
+    "source_quote": "Video production is shifting as social clips, ad creative and film pre-visualization move from cloud to local GPUs. LTX today released LTX-2.5 , an open weights world model for video generation, real-time applications, and physical AI, built for exactly that shift. LTX optimized the model for local inference on NVIDIA RTX GPUs and NVIDIA DGX Spark , cutting VRAM requirements so a frontier world model runs on hardware creators already own. The release anchors NVIDIA’s month-long local AI series , launched the same day as its open Nemotron 3.5 Lightning agent model. The signal from both: open models, accelerated locally, are becoming default production infrastructure.",
+    "event_refs": [
+      "EV-c698da7da473b059"
+    ],
+    "claim_ref": "CL-937974b78d1a1ce1",
+    "source_refs": [
+      "SA-ae7d14e67b0f21ec"
+    ]
+  },
+  {
+    "hardware_fact_id": "HWF-57c6d92098b9d64b",
+    "fact_type": "product",
+    "observed_at": "2026-08-06T00:00:00.000Z",
+    "subject_entity_id": "EN-373da2ec629326c0",
+    "subject_name": "Optical networking startup Lumilens",
+    "product_entity_ids": [],
+    "product_names": [],
+    "component_type": "semiconductor",
+    "metric_value": "900",
+    "unit": "$million",
+    "source_quote": "Lumilens Inc., a provider of optical networking chips for artificial intelligence clusters, launched today with $900 million in funding.",
+    "event_refs": [
+      "EV-b116eafe60d71fbe"
+    ],
+    "claim_ref": "CL-9e879afe6af6883c",
+    "source_refs": [
+      "SA-ac115da9da6dfd33"
+    ]
+  },
+  {
+    "hardware_fact_id": "HWF-3a30e7257a685e09",
+    "fact_type": "shipment_deployment",
+    "observed_at": "2026-08-05T00:00:00.000Z",
+    "subject_entity_id": "",
+    "subject_name": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
+    "product_entity_ids": [],
+    "product_names": [],
+    "component_type": "compute_cluster",
+    "metric_value": "60",
+    "unit": "%",
+    "source_quote": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute Cluster Within 72 Days, Cutting Deployment Time by 60%",
+    "event_refs": [
+      "EV-0d1e8308d3c007aa"
+    ],
+    "claim_ref": "CL-b6d4c4f41bb571e4",
+    "source_refs": [
+      "SA-ae55896eacdf2933"
+    ]
+  },
+  {
+    "hardware_fact_id": "HWF-729d4a5279872cf4",
+    "fact_type": "shipment_deployment",
+    "observed_at": "2026-08-05T00:00:00.000Z",
+    "subject_entity_id": "",
+    "subject_name": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
+    "product_entity_ids": [],
+    "product_names": [],
+    "component_type": "data_center",
+    "metric_value": "60",
+    "unit": "%",
+    "source_quote": "SINGAPORE, Aug. 05, 2026 (GLOBE NEWSWIRE) -- KAYTUS recently completed the delivery and deployment of a 400-rack custom high-density air-cooled cluster for an AI data center in Japan. From custom R&D and large-scale manufacturing to full on-site delivery, the entire project took just 72 days, shortening the typical industry deployment cycle of approximately 180 days by 60%, providing efficient computing power for core workloads.",
+    "event_refs": [
+      "EV-0d1e8308d3c007aa"
+    ],
+    "claim_ref": "CL-048aa90d5e3e6747",
+    "source_refs": [
+      "SA-ae55896eacdf2933"
+    ]
+  },
+  {
+    "hardware_fact_id": "HWF-bffed5c6e1ba922a",
+    "fact_type": "shipment_deployment",
+    "observed_at": "2026-08-05T00:00:00.000Z",
+    "subject_entity_id": "",
+    "subject_name": "KAYTUS Delivers a 400-Rack High-Density Air-Cooled Compute",
+    "product_entity_ids": [],
+    "product_names": [],
+    "component_type": "compute_cluster",
+    "metric_value": "",
+    "unit": "",
+    "source_quote": "As large-model applications transition rapidly from development to production deployment, AI compute infrastructure is evolving beyond conventional hardware delivery into a comprehensive systems-engineering challenge, defined by the ability to design, integrate, validate, and scale large, heterogeneous compute clusters with high reliability. Deployment speed is no longer merely an indicator of engineering execution, it directly determines time-to-service to convert infrastructure investment into commercial value.",
+    "event_refs": [
+      "EV-0d1e8308d3c007aa"
+    ],
+    "claim_ref": "CL-48e69a0d2f3ccc40",
+    "source_refs": [
+      "SA-ae55896eacdf2933"
+    ]
+  },
+  {
+    "hardware_fact_id": "HWF-9cbeeb2c983c4cb1",
+    "fact_type": "shipment_deployment",
+    "observed_at": "2026-08-11T00:00:00.000Z",
+    "subject_entity_id": "EN-916a98f0fa2a39af",
+    "subject_name": "IBM",
+    "product_entity_ids": [
+      "EN-ae11c0abf6288776",
+      "EN-550f6ed5f71d0edc",
+      "EN-7f8f379674a95169"
+    ],
+    "product_names": [
+      "AI Inference",
+      "AI Infrastructure",
+      "Aug 11"
+    ],
+    "component_type": "data_center",
+    "metric_value": "240",
+    "unit": "$M",
+    "source_quote": "ARMONK, N.Y. and SAN FRANCISCO , Aug. 11, 2026 / PRNewswire / -- IBM (NYSE: IBM ) announced a collaboration with Together AI to deliver IBM and NVIDIA AI infrastructure. Under a multi-year $240M agreement between IBM and Together AI, IBM is positioned to deploy a large cluster of NVIDIA HGX B300 systems on IBM Cloud with expected availability in Q1 2027. Together AI will use this cluster to provide open-source model inference. This deployment is the first dedicated, large-scale cluster built for inference on IBM Cloud using HGX B300 systems and NVIDIA Spectrum - X TM Ethernet networking. According to NVIDIA, it is built to deliver 30x more AI factory output compared to prior generations.",
+    "event_refs": [
+      "EV-c7d0b810ac3b3d4e"
+    ],
+    "claim_ref": "CL-b231b184a65f4a65",
+    "source_refs": [
+      "SA-6f090f4104f497db"
+    ]
+  },
+  {
+    "hardware_fact_id": "HWF-19cf0adc686822b5",
+    "fact_type": "product",
+    "observed_at": "2026-08-11T00:00:00.000Z",
+    "subject_entity_id": "EN-916a98f0fa2a39af",
+    "subject_name": "IBM",
+    "product_entity_ids": [
+      "EN-ae11c0abf6288776",
+      "EN-550f6ed5f71d0edc",
+      "EN-7f8f379674a95169"
+    ],
+    "product_names": [
+      "AI Inference",
+      "AI Infrastructure",
+      "Aug 11"
+    ],
+    "component_type": "gpu",
+    "metric_value": "",
+    "unit": "",
+    "source_quote": "Together AI selected IBM with NVIDIA because of their innovative product roadmaps and their ability to deliver GPU capacity at the pace required for rapid AI scaling and lowest token cost. Building on IBM's expertise in delivering enterprise-grade cloud capabilities, this collaboration aims to help Together AI to continue its expansion into the enterprise space while making open-source AI more accessible to developers and enterprises around the world.",
+    "event_refs": [
+      "EV-c7d0b810ac3b3d4e"
+    ],
+    "claim_ref": "CL-24a0cb23124840fe",
+    "source_refs": [
+      "SA-6f090f4104f497db"
+    ]
+  },
+  {
+    "hardware_fact_id": "HWF-789c63c938d93c78",
+    "fact_type": "product",
+    "observed_at": "2026-08-11T00:09:35.000Z",
+    "subject_entity_id": "EN-478676438ee161a3",
+    "subject_name": "派早报",
+    "product_entity_ids": [
+      "EN-f4bc2c89599f5449"
+    ],
+    "product_names": [
+      "Muse Glimmer"
+    ],
+    "component_type": "ai_device",
+    "metric_value": "",
+    "unit": "",
+    "source_quote": "国家计算机病毒应急处理中心发布关于「Sorry」勒索病毒的预警报告 7",
+    "event_refs": [
+      "EV-5c30f52112d92491"
+    ],
+    "claim_ref": "CL-b082a872794c7e7e",
+    "source_refs": [
+      "SA-71dee0d401abb22d"
+    ]
+  }
+]

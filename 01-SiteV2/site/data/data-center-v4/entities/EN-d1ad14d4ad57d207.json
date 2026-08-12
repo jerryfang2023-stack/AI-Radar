@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-11T02:08:35.439Z",
-    "latestDataDate": "2026-08-11",
-    "currentDate": "2026-08-11",
-    "eventCount": 1993,
+    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2025,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-ab7dd515891566ab",
       "EV-8a88707160ae733d",
       "EV-8de21f5aa53242f1",
       "EV-8803f626b5df5ab0",
@@ -41,8 +42,9 @@
       "EN-7d3194f79e645c42"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-08-08",
+    "lastSeen": "2026-08-12",
     "relationIds": [
+      "REL2-ddc331c7e06a63b8",
       "REL2-a2d910c505cb6266",
       "REL2-251475ee05e2516c",
       "REL2-4bb082b8b58f1dd4",
@@ -56,6 +58,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-ab7dd515891566ab",
         "EV-8a88707160ae733d",
         "EV-8de21f5aa53242f1",
         "EV-8803f626b5df5ab0",
@@ -74,6 +77,23 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-ab7dd515891566ab",
+        "dataDate": "2026-08-12",
+        "date": "2026-08-12",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "OpenAI 推出预览版 ChatGPT for Linux 桌面端应用",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-d1ad14d4ad57d207",
+          "EN-13d3b1251dd48cef"
+        ]
+      },
       {
         "id": "EV-8a88707160ae733d",
         "dataDate": "2026-08-08",
@@ -416,6 +436,10 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-2868ff08777b5de9",
+        "EV-ab7dd515891566ab",
+        "EV-96745eb893ac0460",
+        "EV-f3a29cb561809daf",
         "EV-29c0d969abde2020",
         "EV-f8adec104da927e8",
         "EV-1d3b117dad798008",
@@ -578,6 +602,9 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-6645d194b59939ca",
+        "EV-94adebee59a6dede",
+        "EV-bce258f8f915ff5f",
         "EV-67a7a3c9f1eabd22",
         "EV-4e3e9b543127b55a",
         "EV-2321e89fad893290",
@@ -589,7 +616,6 @@
         "EV-b4f38d8bff12727b",
         "EV-56b36a56d729c20d",
         "EV-741728825db1f14e",
-        "EV-bce258f8f915ff5f",
         "EV-20b82e2a2cb33a0e",
         "EV-a89354fc03158eaa",
         "EV-e86fcdb67a637c4c",
@@ -639,6 +665,7 @@
         "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
+        "TX-target_user-developer",
         "TX-ai_market_category-enterprise_applications",
         "TX-industry-retail_ecommerce",
         "TX-product_form-enterprise_software_platform",
@@ -689,10 +716,31 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-11"
+      "lastSeen": "2026-08-12"
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-ddc331c7e06a63b8",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d1ad14d4ad57d207",
+      "object_type": "entity",
+      "event_id": "EV-ab7dd515891566ab",
+      "claim_refs": [
+        "CL-33d1281b9406b885",
+        "CL-f6021cb28e1a8673",
+        "CL-8261583d4c7c0b1c",
+        "CL-f131fe397f6dad53"
+      ],
+      "source_refs": [
+        "SA-d1665d3ef71d47dd"
+      ],
+      "data_date": "2026-08-12",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-a2d910c505cb6266",
       "relationship_version": "RELATION-V2.1",

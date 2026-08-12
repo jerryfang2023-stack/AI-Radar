@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-11T02:08:35.439Z",
-    "latestDataDate": "2026-08-11",
-    "currentDate": "2026-08-11",
-    "eventCount": 1993,
+    "generatedAt": "2026-08-12T04:33:57.856Z",
+    "latestDataDate": "2026-08-12",
+    "currentDate": "2026-08-12",
+    "eventCount": 2025,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-55e7c286e95be405",
       "EV-cf6e7a2edad82c6f",
       "EV-0e84a2f49d765ce3",
       "EV-96198b8644eb94d9",
@@ -43,12 +44,13 @@
       "EN-779965438dd9e7a7"
     ],
     "firstSeen": "2026-06-08",
-    "lastSeen": "2026-08-03",
+    "lastSeen": "2026-08-12",
     "relationIds": [
       "REL2-eaf27cde7b70ddb9"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-55e7c286e95be405",
         "EV-cf6e7a2edad82c6f",
         "EV-0e84a2f49d765ce3"
       ],
@@ -66,6 +68,36 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-55e7c286e95be405",
+        "dataDate": "2026-08-12",
+        "date": "2026-08-11",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "General Catalyst 领投 River AI 11 亿美元融资",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-8ab71d56a963f706",
+          "EN-6fcba5d96a4fadfd",
+          "EN-8d4321d936320802",
+          "EN-c04bd5ebd10ab696",
+          "EN-7f871cbf905f6e0c",
+          "EN-2b6e51bec93e86c1"
+        ]
+      },
       {
         "id": "EV-96198b8644eb94d9",
         "dataDate": "2026-08-03",
@@ -524,6 +556,7 @@
         "EV-59882383f82f215d",
         "EV-c5d7d88d1aef8edb",
         "EV-cded77b1de2db61a",
+        "EV-b25b396e368ee4d9",
         "EV-d2a623e8eef1f61d",
         "EV-dda9429d76897a3d",
         "EV-212aa5b375abf8a7",
@@ -548,6 +581,9 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-5c30f52112d92491",
+        "EV-c7d0b810ac3b3d4e",
+        "EV-f4b38b9778fca8ce",
         "EV-1d3b117dad798008",
         "EV-497344d95d593cf6",
         "EV-a4c177cc432df82e",
@@ -719,6 +755,7 @@
         "EN-cd35ca6b5c3cf23c",
         "EN-883be863cc6562bb",
         "EN-a83a3af1a4866fd5",
+        "EN-e9fc4f156e36f6aa",
         "EN-bd6769fe78d0971a",
         "EN-968e2d5b08687bf4",
         "EN-b81c8201acfc7639",
@@ -729,6 +766,7 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
+        "EN-52593fb3cf820033",
         "EN-32e83e92d45d71f6",
         "EN-6849cf65695e6e77",
         "EN-74be4cbf48e647b2",
@@ -822,7 +860,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-11"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "TX-ai_market_category-infrastructure_compute",
@@ -1222,6 +1260,7 @@
         "EV-d10684a6f16afe10",
         "EV-b31602193dbf4e08",
         "EV-e8bc5b0eebef5813",
+        "EV-96745eb893ac0460",
         "EV-96ac5185b17601f0",
         "EV-43a39dfbbc05a8ce",
         "EV-9009adaed650ddde",
@@ -1357,6 +1396,7 @@
         "EN-636396f02b6571e4",
         "EN-c08f86842ff2c908",
         "EN-df30a48992da7fe8",
+        "EN-7d3194f79e645c42",
         "EN-e9b7b590a01726a5",
         "EN-b0126946c556dc47",
         "EN-0e6e9f1ba413b8d1",
@@ -1367,7 +1407,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "TX-use_case-software_development",
@@ -1435,6 +1475,8 @@
         "EV-d209a6acecba4285",
         "EV-75b9b997e9c7e5d1",
         "EV-b2e374d54b10b9af",
+        "EV-2868ff08777b5de9",
+        "EV-ff924015298048ba",
         "EV-29c0d969abde2020",
         "EV-099c1bce0a50965d",
         "EV-91d4c91861a715c1",
@@ -1513,6 +1555,8 @@
         "EN-df30a48992da7fe8",
         "EN-3db1f560db626918",
         "EN-7c3482959a6cdd3f",
+        "EN-0b9ca57f53ba758b",
+        "EN-8d4321d936320802",
         "EN-ea3bd73e2b506e00",
         "EN-7d3194f79e645c42",
         "EN-76a9a8a6e2f1a47b",
@@ -1540,7 +1584,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-11"
+      "lastSeen": "2026-08-12"
     },
     {
       "id": "TX-ai_market_subcategory-development_deployment",
