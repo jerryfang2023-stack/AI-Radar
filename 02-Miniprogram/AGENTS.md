@@ -21,6 +21,7 @@ This is the native WeChat Mini Program frontstage for Funding Insights.
 - 生态图谱 integrates company, investor, and core-person libraries. Its bottom-tab label is 生态. Preserve the PC portal search scopes: 企业 / 产品 / 赛道, 机构 / 已投公司 / 赛道, and 人物 / 企业 / 职务. Every entity card opens its own entity profile before any financing record.
 - Keep the 我的 tab independent from the first-three-tab visual sync unless a task explicitly includes it.
 - Membership is priced at CNY 30/month, CNY 168/six months, or CNY 300/year and grants full browsing across all columns. New users receive a seven-day trial. Community activity points can redeem seven-day or thirty-day membership extensions; never present a successful payment before the WeChat Pay and account service confirm it.
+- A valid first-time registration attributed to an invite rewards the inviter with 300 activity points; award it only after backend registration attribution confirms the event, and count each new user once.
 
 ## Validation
 

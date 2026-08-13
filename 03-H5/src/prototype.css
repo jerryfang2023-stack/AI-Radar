@@ -253,13 +253,13 @@ button { color: inherit; }
 .identity-row span, .profile-edit-card div { display: grid; gap: 5px; }
 .identity-row strong { font: 800 20px Georgia, "Noto Serif SC", serif; }
 .identity-row em, .profile-edit-card em { color: var(--muted); font-size: 11px; font-style: normal; }
-.membership-card { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 14px; border: 1px solid var(--line); border-radius: 13px; padding: 11px 13px; background: rgba(255,255,255,.76); text-align: left; }
-.membership-card > span:first-child { display: flex; align-items: baseline; gap: 8px; }
-.membership-card > span:last-child { display: flex; align-items: center; gap: 7px; color: var(--muted); }
+.membership-card { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 14px; border: 1px solid #d7c18f; border-left: 4px solid var(--gold); border-radius: 13px; padding: 12px 13px; background: #fffaf0; text-align: left; box-shadow: 0 6px 18px rgba(86,63,22,.07); }
+.membership-card > span { display: grid; grid-template-columns: auto auto; align-items: baseline; gap: 3px 8px; }
 .membership-card em { color: #806b45; font-size: 9px; font-style: normal; }
 .membership-card strong { color: var(--navy); font-size: 11px; }
-.membership-card small { color: var(--muted); font-size: 9px; }
-.membership-card svg { width: 13px; height: 13px; }
+.membership-card small { grid-column: 1/-1; color: #806b45; font-size: 9px; }
+.membership-card > i { display: flex; align-items: center; gap: 4px; border-radius: 99px; padding: 8px 10px; background: var(--navy); color: white; font-size: 10px; font-style: normal; font-weight: 800; }
+.membership-card svg { width: 12px; height: 12px; }
 .growth-card { width: 100%; display: grid; gap: 12px; border: 0; border-radius: 18px; padding: 18px; background: var(--navy); color: white; text-align: left; }
 .growth-top, .growth-meta { display: flex; justify-content: space-between; }
 .growth-top > span { display: grid; gap: 4px; }

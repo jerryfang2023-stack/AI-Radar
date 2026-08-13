@@ -31,12 +31,8 @@
     </view>
 
     <view class="membership-card" bindtap="openMembership">
-      <view class="membership-copy"><text class="membership-kicker">会员权益</text><text class="membership-status">{{growth.membership.statusLabel}}</text></view>
-      <view class="membership-meta">
-        <text wx:if="{{growth.membership.active}}">有效至 {{growth.membership.activeUntil}}</text>
-        <text wx:else>查看开通与积分兑换</text>
-        <text>›</text>
-      </view>
+      <view class="membership-copy"><view><text class="membership-kicker">会员权益</text><text class="membership-status">{{growth.membership.statusLabel}}</text></view><text wx:if="{{growth.membership.active}}">有效至 {{growth.membership.activeUntil}}</text><text wx:else>浏览全部栏目</text></view>
+      <view class="membership-action">{{growth.membership.active ? '续费会员' : '开通会员'}}<text>›</text></view>
     </view>
 
     <view class="section-heading"><text class="serif">成长任务</text><text bindtap="openGrowth">查看明细</text></view>
@@ -60,7 +56,7 @@
     </view>
 
     <button class="invite-card" open-type="share">
-      <view><text class="invite-title">邀请好友 · 共同成长</text><text class="invite-copy">好友完成首次注册后，双方各得 20 积分</text></view>
+      <view><text class="invite-title">邀请好友 · 共同成长</text><text class="invite-copy">好友完成首次注册后，邀请人得 300 活跃积分</text></view>
       <text class="invite-action">立即邀请</text>
     </button>
 

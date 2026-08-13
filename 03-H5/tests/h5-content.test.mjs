@@ -67,6 +67,8 @@ test("profile capabilities are present", async () => {
   assert.ok(profile.indexOf('className="growth-card"') < profile.indexOf('className="membership-card"'));
   assert.doesNotMatch(profile, /className="stats"/u);
   assert.doesNotMatch(profile.slice(profile.indexOf('className="membership-card"')), /元\/月起/u);
+  assert.match(profile, /开通会员/u);
+  assert.match(profile, /邀请人得 300 活跃积分/u);
 });
 
 test("public UI does not expose internal workflow language", async () => {

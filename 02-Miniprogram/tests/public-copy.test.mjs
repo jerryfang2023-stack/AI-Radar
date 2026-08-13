@@ -52,6 +52,8 @@ test("keeps observer growth primary and membership status compact on profile", (
   assert.match(compactMembership, /会员权益/u);
   assert.match(compactMembership, /有效至/u);
   assert.doesNotMatch(compactMembership, /元\/月/u);
+  assert.match(compactMembership, /开通会员/u);
+  assert.match(profileSource, /邀请人得 300 活跃积分/u);
 });
 
 test("keeps list pages concise while preserving detail-page actions", () => {
