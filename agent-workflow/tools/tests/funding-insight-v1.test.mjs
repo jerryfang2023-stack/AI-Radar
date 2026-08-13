@@ -28,6 +28,7 @@ import {
   subjectCompanyForEvent,
   verifiedFundingEventCardCoverageProblems,
 } from "../funding-insight-v1-utils.mjs";
+import { canonicalSources } from "../generate-funding-insights-deepseek.mjs";
 
 test("multi-company canonical funding events cannot publish a mismatched company amount", () => {
   const card = {
@@ -242,6 +243,36 @@ test("canonical funding evidence tolerates deterministic source whitespace norma
     source_id: "FISRC-WHITESPACE",
     quote: "Acme raised $20 million in Series A funding.",
   }]);
+});
+
+test("canonical source remains citable when private evidence body is unavailable", () => {
+  const sources = canonicalSources({
+    sourceArtifacts: [{
+      source_artifact_id: "SA-BLACKSMITH",
+      source_url: "https://techcrunch.com/blacksmith",
+      publisher: "TechCrunch",
+      captured_at: "2026-08-13T00:00:00.000Z",
+      content_hash: "hash",
+    }],
+    rawDocuments: [{
+      source_artifact_id: "SA-BLACKSMITH",
+      raw_id: "RAW-BLACKSMITH",
+      title_original: "Blacksmith raises $45 million",
+    }],
+    claims: [{
+      claim_id: "CL-BLACKSMITH",
+      raw_id: "RAW-BLACKSMITH",
+      claim_type: "funding",
+      verification_status: "accepted",
+      source_quote: "Blacksmith has raised a new $45 million round.",
+    }],
+  }, {
+    source_refs: ["SA-BLACKSMITH"],
+    claim_refs: ["CL-BLACKSMITH"],
+  });
+  assert.equal(sources.length, 1);
+  assert.equal(sources[0].source_class, "canonical_event_source");
+  assert.match(sources[0].body_clean, /Blacksmith has raised a new \$45 million round/u);
 });
 
 function evidence(sourceId = "SRC-1", quote = "Acme raised $20 million led by Northstar Ventures.") {

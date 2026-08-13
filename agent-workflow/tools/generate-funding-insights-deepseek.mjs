@@ -257,24 +257,34 @@ async function capturePage(result) {
   };
 }
 
-function canonicalSources(bundle, event) {
+export function canonicalSources(bundle, event) {
   const artifactById = new Map(bundle.sourceArtifacts.map((item) => [item.source_artifact_id, item]));
   const rawByArtifact = new Map(bundle.rawDocuments.map((item) => [item.source_artifact_id, item]));
+  const claimsById = new Map((bundle.claims || []).map((item) => [item.claim_id, item]));
   return (event.source_refs || []).map((sourceRef) => {
     const artifact = artifactById.get(sourceRef);
     const raw = rawByArtifact.get(sourceRef);
-    if (!artifact || !raw?.body_clean) return null;
+    const acceptedClaimQuotes = (event.claim_refs || [])
+      .map((claimId) => claimsById.get(claimId))
+      .filter((claim) => claim?.raw_id === raw?.raw_id
+        && claim.claim_type === "funding"
+        && claim.verification_status === "accepted"
+        && clean(claim.source_quote))
+      .map((claim) => clean(claim.source_quote));
+    if (!artifact || (!raw?.body_clean && !acceptedClaimQuotes.length)) return null;
     return {
       source_id: stableId("FISRC", artifact.source_url),
       source_url: artifact.source_url,
-      title: raw.title_zh || raw.title_original,
-      title_original: raw.title_original,
+      title: raw?.title_zh || raw?.title_original || artifact.title || artifact.title_original,
+      title_original: raw?.title_original || artifact.title_original,
       publisher: artifact.publisher || hostFor(artifact.source_url),
       source_class: "canonical_event_source",
       capture_method: "data_center_v4_source_artifact",
       captured_at: artifact.captured_at,
       content_hash: artifact.content_hash,
-      body_clean: clean(raw.body_clean).slice(0, 18000),
+      // Private evidence may be unavailable in the runner, but accepted V4
+      // claim spans remain authoritative and are sufficient for citation.
+      body_clean: clean(raw?.body_clean || acceptedClaimQuotes.join("\n")).slice(0, 18000),
       source_artifact_id: sourceRef,
       raw_id: raw.raw_id,
     };
