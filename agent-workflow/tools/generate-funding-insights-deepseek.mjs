@@ -17,6 +17,7 @@ import {
   entityResolver,
   fundingEventCardConsistencyProblems,
   fundingInsightProblems,
+  isEligibleFundingInsightEvent,
   latestDataDate,
   loadDailyBundle,
   normalizeFundingInsightCard,
@@ -893,11 +894,9 @@ async function main() {
   for (const card of recoveredCards) {
     if (!existingByEvent.has(card.triggered_by_event_id)) existingByEvent.set(card.triggered_by_event_id, card);
   }
-  let eligibleEvents = bundle.events
-    .filter((event) => event.event_type === "funding")
-    .filter((event) => event.event_status === "completed")
-    .filter((event) => event.publication_status === "verified")
-    .filter((event) => event.display_title_zh);
+  // Keep eligibility in lockstep with the inspector: a verified announced
+  // disclosure is publishable even before the event is marked completed.
+  let eligibleEvents = bundle.events.filter(isEligibleFundingInsightEvent);
   const eligibleEventIds = new Set(eligibleEvents.map((event) => event.event_id));
   const missingEventIds = [...eventIds].filter((id) => !eligibleEventIds.has(id));
   if (missingEventIds.length) throw new Error(`funding_event_not_found:${missingEventIds.join(",")}`);

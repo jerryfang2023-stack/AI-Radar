@@ -1064,6 +1064,13 @@ export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims
   return candidates[0].entity;
 }
 
+export function isEligibleFundingInsightEvent(event = {}) {
+  return event.event_type === "funding"
+    && (!event.event_status || ["announced", "completed"].includes(event.event_status))
+    && event.publication_status === "verified"
+    && Boolean(event.display_title_zh);
+}
+
 export function evidenceProblems(evidenceRefs = [], sourceById = new Map(), prefix = "evidence") {
   const problems = [];
   if (!Array.isArray(evidenceRefs) || !evidenceRefs.length) return [`${prefix}_missing`];

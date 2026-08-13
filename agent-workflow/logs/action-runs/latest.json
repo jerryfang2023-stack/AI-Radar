@@ -1,40 +1,39 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-12T04:29:47.462Z",
-  "date": "2026-08-12",
-  "action": "Repair V4 reviewed ownership alias collision",
+  "generated_at": "2026-08-13T02:00:15.103Z",
+  "date": "2026-08-13",
+  "action": "Repair Funding Insights eligibility gate for announced verified events",
   "action_status": "unregistered",
   "record_level": "required",
-  "trigger": "workflow:31562137638",
+  "trigger": "workflow:31654457132",
   "status": "failure-repaired",
-  "summary": "8/12 Business Signals materialization failed because a fresh Alibaba Cloud duplicate alias shadowed reviewed 阿里云 ownership; fixed lookup precedence and will resume from accepted run.",
+  "summary": "Funding Insights checker scheduled verified announced event EV-cca4bd983a16b8d9, but generator filtered event_status=announced and produced no card; shared eligibility predicate now accepts announced and completed.",
   "contexts": [],
   "changed_files": [
-    "agent-workflow/product/entity-history-v1.mjs",
-    "agent-workflow/tools/tests/data-center-frontstage.test.mjs",
-    "AGENTS.md"
+    "agent-workflow/tools/funding-insight-v1-utils.mjs",
+    "agent-workflow/tools/inspect-funding-insight-work.mjs",
+    "agent-workflow/tools/generate-funding-insights-deepseek.mjs",
+    "agent-workflow/tools/tests/funding-insight-v1.test.mjs"
   ],
   "outputs": [
-    "resume_run_id=31562137638"
+    "resume funding workflow from merged Business Signals 2026-08-13 without recollection"
   ],
   "checks": [
-    "node --check agent-workflow/product/entity-history-v1.mjs",
-    "node --check 01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs",
-    "frontstage ownership assertion passed",
-    "full data-center-frontstage test has 2 pre-existing institution-count failures"
+    "node --test agent-workflow/tools/tests/funding-insight-v1.test.mjs (71 passed)",
+    "node --check generator and inspector"
   ],
   "issues": [
-    "fresh intake duplicate organization alias shadowed reviewed canonical ownership",
-    "materialization gate blocked downstream funding card"
+    "checker and generator eligibility drift",
+    "verified Blacksmith funding event lacked card"
   ],
   "risks": [
-    "resume must rerun materialization and publication stages successfully"
+    "resume funding workflow must generate and publish the announced event card"
   ],
   "lessons": [
-    "accepted intake remains immutable; repair only the failed projection stage"
+    "downstream checker and generator must share one eligibility predicate; do not recollect source intake"
   ],
   "reusable_rules": [
-    "reviewed canonical organization names win over unreviewed aliases during ownership resolution"
+    "verified funding disclosures with announced or completed status are eligible for Funding Insights"
   ],
   "retired_flags": [],
   "notes": []

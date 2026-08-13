@@ -5,6 +5,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   fundingInsightProblems,
+  isEligibleFundingInsightEvent,
   latestDataDate,
   loadDailyBundle,
   readJson,
@@ -39,9 +40,7 @@ export function inspectFundingInsightWork(projectRoot = root, requestedDate = ""
     }
   }
   const eligibleEvents = [...new Map(bundle.events
-    .filter((event) => event.event_type === "funding")
-    .filter((event) => event.publication_status === "verified")
-    .filter((event) => event.display_title_zh)
+    .filter(isEligibleFundingInsightEvent)
     .map((event) => [event.event_id, event])).values()];
   const pendingEventIds = eligibleEvents
     .filter((event) => !acceptedEventIds.has(event.event_id))

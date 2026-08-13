@@ -18,6 +18,7 @@ import {
   fundingEventCardConsistencyProblems,
   fundingDisclosureStatus,
   fundingInsightProblems,
+  isEligibleFundingInsightEvent,
   normalizeFundingAmount,
   normalizeFundingRound,
   normalizeFundingInsightCard,
@@ -148,6 +149,21 @@ test("funding generation skips event IDs already published in another date bundl
     "EV-HISTORICAL-DUPLICATE",
     "EV-COMPANY-ROUND-DUPLICATE",
   ]);
+});
+
+test("announced verified funding events remain eligible for card generation", () => {
+  assert.equal(isEligibleFundingInsightEvent({
+    event_type: "funding",
+    event_status: "announced",
+    publication_status: "verified",
+    display_title_zh: "Acme 宣布完成 B 轮融资",
+  }), true);
+  assert.equal(isEligibleFundingInsightEvent({
+    event_type: "funding",
+    event_status: "planned",
+    publication_status: "verified",
+    display_title_zh: "Acme 计划融资",
+  }), false);
 });
 
 test("subject company matching does not treat an organization prefix as an exact name", () => {
