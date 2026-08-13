@@ -320,7 +320,7 @@ function SplashScreen({ onEnter }: { onEnter: () => void }) {
 function BottomNav({ active, onChange }: { active: Tab; onChange: (tab: Tab) => void }) {
   const items: Array<{ id: Tab; label: string; icon: typeof BarChartIcon }> = [
     { id: "terminal", label: "融资", icon: ReaderIcon },
-    { id: "market", label: "商业主体", icon: MagnifyingGlassIcon },
+    { id: "market", label: "生态", icon: MagnifyingGlassIcon },
     { id: "observe", label: "观察", icon: EyeOpenIcon },
     { id: "profile", label: "我的", icon: PersonIcon },
   ];
@@ -543,10 +543,10 @@ function EntityLibraryView({ library, onOpen }: { library: EntityLibrary; onOpen
   const switchMode = (nextMode: EntityType) => { setMode(nextMode); setEntityQuery(""); setLimit(24); };
   const placeholder = mode === "companies" ? "企业 / 产品 / 赛道" : mode === "investors" ? "机构 / 已投公司 / 赛道" : "人物 / 企业 / 职务";
   const sortNote = mode === "companies" ? "按最近融资排序" : mode === "investors" ? "按投资活跃度排序" : "按关联企业与最近动态排序";
-  return <><AppHeader title="商业主体" /><MobileScroll className="app-screen"><main className="screen-content entity-library-screen">
+  return <><AppHeader title="生态图谱" /><MobileScroll className="app-screen"><main className="screen-content entity-library-screen">
     <section className="library-summary"><div><strong>{library.companies.length}</strong><span>企业</span></div><div><strong>{library.investors.length}</strong><span>机构</span></div><div><strong>{library.people.length}</strong><span>人物</span></div></section>
     <div className="segmented library-tabs"><button className={mode === "companies" ? "active" : ""} onClick={() => switchMode("companies")}>企业库</button><button className={mode === "investors" ? "active" : ""} onClick={() => switchMode("investors")}>投资机构</button><button className={mode === "people" ? "active" : ""} onClick={() => switchMode("people")}>核心人物</button></div>
-    <label className="library-search"><MagnifyingGlassIcon /><KeyboardInput value={entityQuery} onChange={(event) => { setEntityQuery(event.target.value); setLimit(24); }} placeholder={placeholder} aria-label="搜索商业主体" /></label>
+    <label className="library-search"><MagnifyingGlassIcon /><KeyboardInput value={entityQuery} onChange={(event) => { setEntityQuery(event.target.value); setLimit(24); }} placeholder={placeholder} aria-label="搜索生态图谱" /></label>
     <div className="library-result"><span>共 {items.length} 条结果</span><span>{sortNote}</span></div>
     <section className="entity-library-list">{visibleItems.map((item) => mode === "companies" ? <CompanyEntityCard key={item.key} item={item as CompanyEntity} onOpen={() => onOpen("companies", item.key)} /> : mode === "investors" ? <InvestorEntityCard key={item.key} item={item as InvestorEntity} onOpen={() => onOpen("investors", item.key)} /> : <PersonEntityCard key={item.key} item={item as PersonEntity} onOpen={() => onOpen("people", item.key)} />)}</section>
     {!items.length ? <Empty title="未找到相关主体" copy="换一个企业、机构、人物、产品或赛道关键词再试。" /> : null}

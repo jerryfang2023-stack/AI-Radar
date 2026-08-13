@@ -6,10 +6,10 @@ const readJson = async (name) => JSON.parse(await readFile(new URL(`../public/da
 
 test("H5 contains all four confirmed columns", async () => {
   const source = await readFile(new URL("../src/Prototype.tsx", import.meta.url), "utf8");
-  for (const label of ["融资", "商业主体", "观察", "我的"]) assert.match(source, new RegExp(`label: \"${label}\"`));
+  for (const label of ["融资", "生态", "观察", "我的"]) assert.match(source, new RegExp(`label: \"${label}\"`));
   assert.match(source, /title="融资情报"/u);
   assert.match(source, /placeholder="公司 \/ 机构 \/ 产品"/u);
-  assert.match(source, /title="商业主体"/u);
+  assert.match(source, /title="生态图谱"/u);
   assert.match(source, /企业库/u);
   assert.match(source, /投资机构/u);
   assert.match(source, /核心人物/u);

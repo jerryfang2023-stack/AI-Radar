@@ -22,9 +22,9 @@ const publicFiles = [
 
 test("uses the confirmed financing column and public-facing copy", () => {
   assert.equal(appConfig.tabBar.list[0].text, "融资");
-  assert.equal(appConfig.tabBar.list[1].text, "商业主体");
+  assert.equal(appConfig.tabBar.list[1].text, "生态");
   assert.match(terminalSource, /<app-header title="融资情报"/u);
-  assert.match(marketSource, /<app-header title="商业主体"/u);
+  assert.match(marketSource, /<app-header title="生态图谱"/u);
   assert.match(watchlistSource, /<app-header title="商业观察"/u);
   assert.match(publicFiles.map((file) => fs.readFileSync(file, "utf8")).join("\n"), /中国区/u);
 
