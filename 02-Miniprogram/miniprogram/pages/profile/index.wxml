@@ -1,5 +1,5 @@
 <view class="page-shell">
-  <app-header title="我的" show-logo="{{false}}" right-label="设置" bind:righttap="openSettings" />
+  <app-header title="我的" show-logo="{{false}}" />
   <view class="page-content profile-content">
     <view class="identity-row" bindtap="openSettings">
       <image class="member-avatar" src="{{profile.avatarUrl}}" mode="aspectFill" />
@@ -7,7 +7,7 @@
         <text class="member-name serif">{{profile.nickname}}</text>
         <text class="member-meta">资料完善度 {{profileCompletion}}% · 管理个人信息</text>
       </view>
-      <text class="text-link">编辑</text>
+      <text class="text-link">设置</text>
     </view>
 
     <view class="growth-card" bindtap="openGrowth">
@@ -22,7 +22,7 @@
         </view>
       </view>
       <view class="growth-progress-row">
-        <text>本周完成 {{growth.weeklyCompleted}}/5 个成长任务</text>
+        <text>已完成 {{growth.completedToday}}/{{growth.tasks.length}} 个成长任务</text>
         <text wx:if="{{growth.level.remaining}}">距下一级 {{growth.level.remaining}} 分</text>
         <text wx:else>已到最高等级</text>
       </view>

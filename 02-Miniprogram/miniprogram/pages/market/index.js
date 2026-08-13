@@ -1,5 +1,6 @@
 const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
 const { buildEntityLibrary, filterEntities } = require("../../utils/entity-library.js");
+const { syncTabBar } = require("../../utils/tab-bar.js");
 
 const MODE_META = {
   companies: { modeLabel: "企业", placeholder: "企业 / 产品 / 赛道", sortNote: "按最近融资排序", emptyCopy: "换一个企业、产品或赛道名称试试。" },
@@ -26,7 +27,10 @@ Page({
     refreshFundingData().then((state) => this.applyData(state));
   },
 
-  onShow() { this.applyData(getFundingData()); },
+  onShow() {
+    syncTabBar(this, 1);
+    this.applyData(getFundingData());
+  },
 
   onReachBottom() {
     if (this.data.visibleCount < this.filteredItems.length) this.renderItems(this.data.visibleCount + this.pageSize);

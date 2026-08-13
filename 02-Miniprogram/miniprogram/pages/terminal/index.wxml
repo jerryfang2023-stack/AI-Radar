@@ -10,7 +10,7 @@
       </view>
     </view>
 
-    <view class="funding-metrics"><text><strong>{{meta.cardCount}}</strong> 笔融资</text><text>本周 <strong>+{{weekCount}}</strong></text><text>更新 {{latestDateShort}}</text></view>
+    <view class="funding-metrics"><view><text>融资</text><strong>{{meta.cardCount}}</strong></view><view><text>本周</text><strong>{{weekCount}}</strong></view><view class="funding-date"><text>更新</text><strong>{{meta.latestDate}}</strong></view></view>
 
     <view class="list-heading">
       <view class="result-summary">

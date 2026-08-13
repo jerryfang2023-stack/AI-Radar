@@ -14,10 +14,12 @@
 .filter-button { min-height: 86rpx; margin: 0; padding: 0; border-radius: 16rpx; background: #0d355c; color: #fff; font-size: 24rpx; font-weight: 600; line-height: 86rpx; }
 .filter-button.active { background: #9b6d20; }
 
-.funding-metrics { display: grid; grid-template-columns: 1.2fr 1fr 1fr; margin: 26rpx -30rpx 0; padding: 28rpx 30rpx; background: #0d355c; color: rgba(255,255,255,.9); }
-.funding-metrics text { display: flex; align-items: baseline; justify-content: center; gap: 8rpx; border-left: 1rpx solid rgba(255,255,255,.2); font-size: 22rpx; white-space: nowrap; }
-.funding-metrics text:first-child { justify-content: flex-start; border-left: 0; }
-.funding-metrics strong { color: #d8b96f; font-family: "Songti SC", serif; font-size: 38rpx; }
+.funding-metrics { display: grid; grid-template-columns: .9fr .9fr 1.35fr; overflow: hidden; margin: 26rpx 0 0; padding: 28rpx 20rpx; border-radius: 28rpx; background: #0d355c; color: rgba(255,255,255,.9); box-shadow: 0 14rpx 34rpx rgba(7,24,39,.08); }
+.funding-metrics > view { display: flex; min-width: 0; flex-direction: column; gap: 8rpx; align-items: center; justify-content: center; border-left: 1rpx solid rgba(255,255,255,.24); white-space: nowrap; }
+.funding-metrics > view:first-child { border-left: 0; }
+.funding-metrics text { color: rgba(255,255,255,.78); font-size: 20rpx; }
+.funding-metrics strong { color: #d8b96f; font-family: "Songti SC", "STSong", serif; font-size: 40rpx; line-height: 1; }
+.funding-metrics .funding-date strong { font-size: 28rpx; letter-spacing: 1rpx; }
 .list-heading { display: flex; align-items: center; justify-content: space-between; min-height: 84rpx; border-bottom: 1rpx solid #e5e8ec; }
 .result-summary { display: flex; flex-direction: column; gap: 4rpx; color: #6f7f8f; font-size: 22rpx; }
 .compare-count { color: #9b6d20; font-size: 19rpx; }

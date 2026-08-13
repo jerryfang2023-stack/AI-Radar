@@ -1,4 +1,5 @@
 const { getReportData, refreshReportData } = require("../../utils/live-data.js");
+const { syncTabBar } = require("../../utils/tab-bar.js");
 
 const bundledReportIndex = getReportData().index;
 
@@ -15,6 +16,8 @@ Page({
     this.refresh("weekly");
     refreshReportData().then(() => this.refresh(this.data.activeType));
   },
+
+  onShow() { syncTabBar(this, 2); },
 
   refresh(type) {
     const reportIndex = getReportData().index;

@@ -6,6 +6,7 @@ const {
   getFollowIds,
   getGrowthSnapshot,
 } = require("../../utils/member.js");
+const { syncTabBar } = require("../../utils/tab-bar.js");
 
 Page({
   data: {
@@ -16,6 +17,7 @@ Page({
   },
 
   onShow() {
+    syncTabBar(this, 3);
     const profile = getProfile();
     this.setData({
       profile,
@@ -32,13 +34,12 @@ Page({
   openSettings() { wx.navigateTo({ url: "/pages/profile-edit/index" }); },
   openHistory() { wx.navigateTo({ url: "/pages/history/index" }); },
   openWatchlist() { wx.navigateTo({ url: "/pages/saved/index" }); },
-  openFollows() { wx.navigateTo({ url: "/pages/follows/index" }); },
   openGrowth() { wx.navigateTo({ url: "/pages/growth/index" }); },
   openMembership() { wx.navigateTo({ url: "/pages/membership/index" }); },
   openInvite() { wx.navigateTo({ url: "/pages/invite/index" }); },
   openTask(event) {
     const id = event.currentTarget.dataset.id;
-    if (id === "follow") wx.navigateTo({ url: "/pages/follows/index" });
+    if (id === "favorite") wx.navigateTo({ url: "/pages/saved/index" });
     else wx.switchTab({ url: "/pages/terminal/index" });
   },
 

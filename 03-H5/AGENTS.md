@@ -14,6 +14,12 @@
 - Production keeps the PC portal at `/` and publishes this H5 at `/h5/`; production builds set `H5_BASE=/h5/`.
 - Public-facing pages must not expose internal validation, evidence-pipeline, local-demo, backend-integration, or development-status language.
 - Visual direction uses warm paper, deep navy and restrained gold, with evidence-first editorial hierarchy.
+- The profile page has one settings entry only: keep the control beside the avatar and label it “设置”; do not duplicate it in the page header.
+- Bottom navigation remains text-only and reads as four connected buttons: use short, vertically centered warm-gray separators rather than full-height rules; the active cell uses a subtle champagne surface, deep-navy text, a short gold top marker, and a slightly larger/heavier label.
+- Financing-list identity marks use deep navy cards with white initials and a restrained gold edge. Keep the feed compact on real phones with warm-white continuous rows and light gold-beige dividers rather than pale-gray avatar blocks or separate gray cards.
+- Present the financing summary as an inset rounded navy card, consistent with the rounded overview cards used by the other columns; do not stretch it edge-to-edge as a square strip.
+- The company comparison screen must let users cancel an individual company in place. Preserve remaining selections, explain when one more company is needed, and offer a direct return to financing when the comparison set is empty or incomplete.
+- Do not place collection controls in the financing list header or financing-detail title bar. Keep collection as a secondary action below the detail facts, beside company comparison. The favorite growth task opens the saved-items list; do not show a follow-topic growth task without a clear follow surface.
 - The H5 opens with the same branded splash as the mini program: the official horizontal logo, “洞察趋势 · 智见未来” slogan, restrained loading motion, and tap-to-enter behavior.
 
 In ChatGPT Work Mode, run `sites-preview start "$PWD"`, open `http://terminal.local:4173/` in the cloud browser, and verify the rendered app and its primary interactions. Keep that preview open and tell the user to inspect it in the cloud browser; do not present the local URL as a user-facing chat link. In Codex Desktop, run the local server yourself, open the preview in the in-app browser, and provide the clickable local URL. Do not deploy to Sites unless the user explicitly asks to share, publish, or deploy. Do not give the user server-start instructions when you can run it.

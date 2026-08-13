@@ -12,7 +12,6 @@ const MEMBERSHIP_KEY = "guanlan_membership_v1";
 const TASKS = [
   { id: "browse", title: "每日阅读 5 条情报", target: 5, reward: 2, unit: "条" },
   { id: "favorite", title: "收藏 1 条情报", target: 1, reward: 3, unit: "条" },
-  { id: "follow", title: "关注 1 个主题", target: 1, reward: 5, unit: "个" },
 ];
 
 const BENEFITS = [
@@ -20,7 +19,7 @@ const BENEFITS = [
   { id: "membership_30d", title: "30 天会员权益", description: "全部栏目浏览权益顺延 30 天", cost: 1000, days: 30, repeatable: true },
 ];
 
-const MEMBER_RIGHTS = ["融资情报完整浏览", "生态图谱主体档案", "商业观察周报月报", "收藏、关注与浏览记录"];
+const MEMBER_RIGHTS = ["融资情报完整浏览", "生态图谱主体档案", "商业观察周报月报", "收藏与浏览记录"];
 
 function nowLabel() {
   const date = new Date();

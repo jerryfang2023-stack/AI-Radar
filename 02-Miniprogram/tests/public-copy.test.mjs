@@ -13,9 +13,16 @@ const membershipSource = fs.readFileSync("miniprogram/pages/membership/index.wxm
 const membershipModelSource = fs.readFileSync("miniprogram/utils/membership-model.js", "utf8");
 const profileSource = fs.readFileSync("miniprogram/pages/profile/index.wxml", "utf8");
 const profileLogic = fs.readFileSync("miniprogram/pages/profile/index.js", "utf8");
+const customTabBarSource = fs.readFileSync("miniprogram/custom-tab-bar/index.wxml", "utf8");
+const customTabBarStyles = fs.readFileSync("miniprogram/custom-tab-bar/index.wxss", "utf8");
+const customTabBarLogic = fs.readFileSync("miniprogram/custom-tab-bar/index.js", "utf8");
 const inviteSource = fs.readFileSync("miniprogram/pages/invite/index.wxml", "utf8");
 const growthSource = fs.readFileSync("miniprogram/pages/growth/index.wxml", "utf8");
 const growthLogic = fs.readFileSync("miniprogram/pages/growth/index.js", "utf8");
+const compareSource = fs.readFileSync("miniprogram/pages/compare/index.wxml", "utf8");
+const compareLogic = fs.readFileSync("miniprogram/pages/compare/index.js", "utf8");
+const detailSource = fs.readFileSync("miniprogram/pages/detail/index.wxml", "utf8");
+const memberModelSource = fs.readFileSync("miniprogram/utils/member.js", "utf8");
 const memberSource = fs.readFileSync("miniprogram/utils/member.js", "utf8");
 const paymentSource = fs.readFileSync("miniprogram/utils/payment.js", "utf8");
 const membershipLogic = fs.readFileSync("miniprogram/pages/membership/index.js", "utf8");
@@ -34,6 +41,8 @@ test("uses the confirmed financing column and public-facing copy", () => {
   assert.equal(appConfig.tabBar.list[0].text, "融资");
   assert.equal(appConfig.tabBar.list[1].text, "生态");
   assert.match(terminalSource, /<app-header title="融资情报"/u);
+  assert.match(terminalSource, /<text>融资<\/text><strong>\{\{meta\.cardCount\}\}<\/strong>/u);
+  assert.match(terminalSource, /class="funding-date"><text>更新<\/text><strong>\{\{meta\.latestDate\}\}<\/strong>/u);
   assert.match(marketSource, /<app-header title="生态图谱"/u);
   assert.match(watchlistSource, /<app-header title="商业观察"/u);
   assert.match(publicFiles.map((file) => fs.readFileSync(file, "utf8")).join("\n"), /中国区/u);
@@ -67,7 +76,38 @@ test("keeps observer growth primary and membership status compact on profile", (
   assert.match(compactMembership, /开通会员/u);
   assert.match(profileSource, /邀请人得 300 活跃积分/u);
   assert.match(profileSource, /class="identity-row" bindtap="openSettings"/u);
+  assert.match(profileSource, /class="text-link">设置</u);
+  assert.doesNotMatch(profileSource, /right-label="设置"/u);
   assert.doesNotMatch(profileSource, /个人信息与数据管理|class="settings-card|class="local-note/u);
+});
+
+test("renders the text-only bottom navigation as connected segmented buttons", () => {
+  assert.equal(appConfig.tabBar.custom, true);
+  for (const label of ["融资", "生态", "观察", "我的"]) assert.match(customTabBarLogic, new RegExp(label, "u"));
+  assert.match(customTabBarSource, /class="tab-button/u);
+  assert.match(customTabBarStyles, /grid-template-columns:\s*repeat\(4/u);
+  assert.match(customTabBarStyles, /gap:\s*0/u);
+  assert.match(customTabBarStyles, /\.tab-button\.with-divider::before[\s\S]*height:\s*44rpx/u);
+  assert.match(customTabBarStyles, /\.tab-button\.active[\s\S]*background:\s*#f4efe4/u);
+  assert.match(customTabBarStyles, /\.tab-button\.active::after[\s\S]*background:\s*#c8a766/u);
+});
+
+test("company comparison can cancel selections in place", () => {
+  assert.match(compareSource, /catchtap="removeCard">取消比较/u);
+  assert.match(compareSource, /还需选择 1 家公司/u);
+  assert.match(compareSource, /暂无比较公司/u);
+  assert.match(compareLogic, /removeCompare\(id\)/u);
+  assert.match(compareLogic, /wx\.switchTab/u);
+});
+
+test("collection is a detail action and favorite task opens saved items", () => {
+  assert.doesNotMatch(terminalSource, /收藏/u);
+  assert.match(detailSource, /<app-header title="融资详情" show-back \/>/u);
+  assert.match(detailSource, /class="detail-actions"/u);
+  assert.match(detailSource, /收藏情报/u);
+  assert.match(profileLogic, /id === "favorite"[\s\S]*pages\/saved\/index/u);
+  assert.doesNotMatch(memberModelSource, /title: "关注 1 个主题"/u);
+  assert.match(profileSource, /growth\.completedToday\}\}\/\{\{growth\.tasks\.length\}\}/u);
 });
 
 test("opens a dedicated invitation value page before sharing", () => {

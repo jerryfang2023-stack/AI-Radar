@@ -1,5 +1,5 @@
 <view class="page-shell" wx:if="{{card}}">
-  <app-header title="融资详情" show-back right-label="{{watched ? '已收藏' : '收藏'}}" bind:righttap="toggleWatch" />
+  <app-header title="融资详情" show-back />
   <view class="detail-content">
     <button class="identity entity-link" bindtap="openCompany">
       <view class="avatar">{{card.initial}}</view>
@@ -16,7 +16,7 @@
 
     <view class="evidence-banner"><text>{{card.sourceCount}} 条公开来源</text></view>
 
-    <button class="compare-action {{compared ? 'active' : ''}}" bindtap="toggleCompare">{{compared ? '已加入公司比较' : '加入公司比较'}}</button>
+    <view class="detail-actions"><button class="favorite-action {{watched ? 'active' : ''}}" bindtap="toggleWatch">{{watched ? '已收藏' : '收藏情报'}}</button><button class="compare-action {{compared ? 'active' : ''}}" bindtap="toggleCompare">{{compared ? '已加入公司比较' : '加入公司比较'}}</button></view>
 
     <view class="section"><text class="section-title serif">公司做什么</text><text class="body-copy">{{card.companySummary}}</text><view class="meta-line"><text>市场范围：{{card.marketLabel || '全球其他'}}</text><text>总部：{{card.headquarters}}</text><text>市场：{{card.category}} / {{card.subcategory}}</text></view></view>
 

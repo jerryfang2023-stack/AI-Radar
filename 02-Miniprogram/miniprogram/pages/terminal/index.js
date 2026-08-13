@@ -1,6 +1,7 @@
 const { filterCards, sortCards, activeFilterCount } = require("../../utils/funding.js");
 const { getWatchIds, toggleWatch, getCompareIds } = require("../../utils/storage.js");
 const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
+const { syncTabBar } = require("../../utils/tab-bar.js");
 
 const bundledFundingIndex = getFundingData().index;
 
@@ -67,6 +68,7 @@ Page({
   },
 
   onShow() {
+    syncTabBar(this, 0);
     const currentIndex = getFundingData().index;
     if (currentIndex.meta.generatedAt !== this.data.meta.generatedAt) this.applyFundingData(currentIndex);
     const selectedIds = getCompareIds();

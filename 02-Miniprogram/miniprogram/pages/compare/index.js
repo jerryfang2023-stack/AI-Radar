@@ -1,4 +1,5 @@
 const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
+const { removeCompare } = require("../../utils/storage.js");
 
 function compareText(cards) {
   return cards.map((card) => [
@@ -25,5 +26,13 @@ Page({
     if (this.data.cards.length < 2) return;
     wx.setClipboardData({ data: compareText(this.data.cards), success: () => wx.showToast({ title: "比较摘要已复制", icon: "success" }) });
   },
+  removeCard(event) {
+    const id = event.currentTarget.dataset.id;
+    this.ids = this.ids.filter((item) => item !== id);
+    removeCompare(id);
+    this.render(getFundingData().details);
+    wx.showToast({ title: "已取消该公司比较", icon: "none" });
+  },
+  backToFunding() { wx.switchTab({ url: "/pages/terminal/index" }); },
   openCard(event) { wx.navigateTo({ url: `/pages/detail/index?id=${event.currentTarget.dataset.id}` }); },
 });

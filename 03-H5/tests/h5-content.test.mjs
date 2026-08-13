@@ -8,6 +8,8 @@ test("H5 contains all four confirmed columns", async () => {
   const source = await readFile(new URL("../src/Prototype.tsx", import.meta.url), "utf8");
   for (const label of ["融资", "生态", "观察", "我的"]) assert.match(source, new RegExp(`label: \"${label}\"`));
   assert.match(source, /title="融资情报"/u);
+  assert.match(source, /<small>融资<\/small><strong>\{props\.index\.meta\.cardCount\}<\/strong>/u);
+  assert.match(source, /className="funding-date"><small>更新<\/small><strong>\{props\.index\.meta\.latestDate\}<\/strong>/u);
   assert.match(source, /placeholder="公司 \/ 机构 \/ 产品"/u);
   assert.match(source, /title="生态图谱"/u);
   assert.match(source, /企业库/u);
@@ -55,6 +57,22 @@ test("funding and report datasets are available", async () => {
   assert.ok(Object.keys(reportDetails).length > 0);
 });
 
+test("collection stays out of financing headers and remains available in detail", async () => {
+  const source = await readFile(new URL("../src/Prototype.tsx", import.meta.url), "utf8");
+  assert.match(source, /<AppHeader title="融资情报" \/>/u);
+  assert.match(source, /<AppHeader title="融资详情" onBack=\{onBack\} \/>/u);
+  assert.match(source, /className="detail-actions"/u);
+  assert.match(source, />\{watched \? "已收藏" : "收藏情报"\}<\/button>/u);
+});
+
+test("favorite growth task opens saved items and follow task is removed", async () => {
+  const source = await readFile(new URL("../src/Prototype.tsx", import.meta.url), "utf8");
+  const profile = source.slice(source.indexOf("function ProfileView"), source.indexOf("function MembershipView"));
+  assert.match(profile, /task\.id === "favorite" \? onOpen\("saved"\)/u);
+  assert.doesNotMatch(profile, /关注 1 个主题/u);
+  assert.match(profile, /completedTaskCount\}\/\{tasks\.length\}/u);
+});
+
 test("profile capabilities are present", async () => {
   const source = await readFile(new URL("../src/Prototype.tsx", import.meta.url), "utf8");
   for (const capability of ["浏览记录", "我的收藏", "我的关注", "成长与权益", "邀请好友", "个人资料"]) {
@@ -69,6 +87,24 @@ test("profile capabilities are present", async () => {
   assert.doesNotMatch(profile.slice(profile.indexOf('className="membership-card"')), /元\/月起/u);
   assert.match(profile, /开通会员/u);
   assert.match(profile, /邀请人得 300 活跃积分/u);
+  assert.match(profile, /className="identity-action">设置</u);
+  assert.doesNotMatch(profile, /action="设置"/u);
+});
+
+test("bottom navigation has connected segmented buttons and an active state", async () => {
+  const styles = await readFile(new URL("../src/prototype.css", import.meta.url), "utf8");
+  assert.match(styles, /\.bottom-nav[^}]*gap:\s*0/u);
+  assert.match(styles, /\.bottom-nav button:not\(:first-child\)::before[^}]*height:\s*24px/u);
+  assert.match(styles, /\.bottom-nav button\.active[^}]*background:\s*#f4efe4/u);
+  assert.match(styles, /\.bottom-nav button\.active::after[^}]*background:\s*var\(--gold\)/u);
+});
+
+test("company comparison can remove selections in place", async () => {
+  const source = await readFile(new URL("../src/Prototype.tsx", import.meta.url), "utf8");
+  assert.match(source, /<CompareView[\s\S]*onRemove=/u);
+  assert.match(source, />取消比较<\/button>/u);
+  assert.match(source, /还需选择 1 家公司/u);
+  assert.match(source, /暂无比较公司/u);
 });
 
 test("H5 explains invitation value and rules before sharing", async () => {
