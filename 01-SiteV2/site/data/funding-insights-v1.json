@@ -5,9 +5,9 @@
     "site_version": "SITE-V4.6.1-research-retirement",
     "column_version": "FUNDING-INSIGHT-V1.5.0-china-market",
     "taxonomy_version": "TAG-V4.1",
-    "latest_date": "2026-08-12",
-    "generated_at": "2026-08-12T11:41:24.946Z",
-    "card_count": 254,
+    "latest_date": "2026-08-13",
+    "generated_at": "2026-08-13T02:16:57.407Z",
+    "card_count": 255,
     "china_market_card_count": 34,
     "duplicate_rounds_removed": 17,
     "automatic_publication": true,
@@ -298,6 +298,870 @@
     ]
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-8ec3b23d30c575bf",
+      "triggered_by_event_id": "EV-cca4bd983a16b8d9",
+      "as_of_date": "2026-08-13",
+      "company": {
+        "entity_id": "EN-8eae6c54657e94be",
+        "name": "Blacksmith",
+        "full_name": "Blacksmith",
+        "website": "https://www.blacksmith.sh",
+        "summary": "Blacksmith 是一家提供高性能 CI 云服务的公司，作为 GitHub Actions runner 的直接替代方案，以两倍速度、一半成本运行 CI 工作负载，并在此基础上构建可观测性与安全能力。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "Aditya Jayaprakash",
+            "role": "Co-founder, CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ba55b463daced495",
+                "quote": "Aditya Jayaprakash Co-founder, CEO",
+                "source_content_hash": "716df167d49a13d7",
+                "quote_hash": "dea7f5c26004fbb35ad77a1bff5c1f74c7d2c7aea7bd3f3fee227e1134d9609d"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ba55b463daced495",
+            "quote": "Today, developers know us as a drop-in replacement for GitHub Actions runners which is twice as fast at half the cost.",
+            "source_content_hash": "716df167d49a13d7",
+            "quote_hash": "c2555319ccf98b6eca3f95859e6533f39fb827885593b4e56af1464679014c15"
+          }
+        ],
+        "application_entity_id": "EN-8eae6c54657e94be",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "B轮",
+        "amount": "$45 million",
+        "total_raised": "",
+        "announced_at": "2026-08-12",
+        "investor_disclosure_status": "not_disclosed",
+        "investors": [],
+        "other_round_investors": [
+          {
+            "name": "GV (Google Ventures)",
+            "role": "种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ba55b463daced495",
+                "quote": "This was led by Erik Nordlander at Google Ventures (GV) and Y Combinator",
+                "source_content_hash": "716df167d49a13d7",
+                "quote_hash": "5eba83da8394915347c8504892c95caf9a5b5200146cff45fd78980404e44273"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-b269962085f8f8"
+          },
+          {
+            "name": "Y Combinator",
+            "role": "种子轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ba55b463daced495",
+                "quote": "This was led by Erik Nordlander at Google Ventures (GV) and Y Combinator",
+                "source_content_hash": "716df167d49a13d7",
+                "quote_hash": "5eba83da8394915347c8504892c95caf9a5b5200146cff45fd78980404e44273"
+              }
+            ],
+            "entity_id": "EN-275b0f4a4023d91c",
+            "institution_id": "INV-7a5c599caeb7de"
+          },
+          {
+            "name": "Spencer Kimball",
+            "role": "种子轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ba55b463daced495",
+                "quote": "along with some prolific angels like Spencer Kimball (CEO of Cockroach Labs)",
+                "source_content_hash": "716df167d49a13d7",
+                "quote_hash": "f70d511a5e18f7edc70ba044079f07cbc4720a997edd6da9d68842f6020d7773"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-55f94da6a992ad"
+          },
+          {
+            "name": "Peter Mattis",
+            "role": "种子轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ba55b463daced495",
+                "quote": "Peter Mattis (CTO of Cockroach Labs)",
+                "source_content_hash": "716df167d49a13d7",
+                "quote_hash": "07ab43709c44a9e930bfe582e2fb6541b747fa47ad83ae8d44f380f7e9845c97"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-4a6802b27f7006"
+          },
+          {
+            "name": "Rich Aberman",
+            "role": "种子轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ba55b463daced495",
+                "quote": "Rich Aberman (Co-founder of WePay)",
+                "source_content_hash": "716df167d49a13d7",
+                "quote_hash": "3af7d2fbcf81ec1b6025f7bc05b3a6526261a13bd83e9d15ff7747067b758b09"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-cb6778a9ea4672"
+          },
+          {
+            "name": "JJ Fliegelman",
+            "role": "种子轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ba55b463daced495",
+                "quote": "JJ Fliegelman (Co-founder of WayUp)",
+                "source_content_hash": "716df167d49a13d7",
+                "quote_hash": "2cf5cc668c79154472f93899e818162118761e9fddc4d9793ddf1864490398a7"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-976ffee4a6c3ce"
+          },
+          {
+            "name": "Eli Brown",
+            "role": "种子轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ba55b463daced495",
+                "quote": "Eli Brown (Founder of Guilded)",
+                "source_content_hash": "716df167d49a13d7",
+                "quote_hash": "3fec831f7e01baec1eb075a2acb0dca9164071ad6850ec67cd884149a6df5c74"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-637d6650927169"
+          },
+          {
+            "name": "Theo Browne",
+            "role": "种子轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ba55b463daced495",
+                "quote": "Theo Browne (Founder of T3 Chat)",
+                "source_content_hash": "716df167d49a13d7",
+                "quote_hash": "da7a99420e560307952409a1269f5c7b8b78ecfdfd16b3ddb559dd5a97d5fca0"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-bf79441f034e36"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ba0e4c3180b1bf02",
+            "quote": "Blacksmith has raised a new $45 million round to capitalize on that shift.",
+            "source_content_hash": "519fe881711ed034",
+            "quote_hash": "2f336d47fbaf81ac996e95c8d2b686294abfabcd8cd44191dfa7a60c1802566f"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$45 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 45000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4500 万美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [
+          "investors_missing"
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-cca4bd983a16b8d9",
+            "round_original": "B轮",
+            "amount": "$45 million",
+            "announced_at": "2026-08-12",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ba0e4c3180b1bf02",
+                "quote": "Blacksmith has raised a new $45 million round to capitalize on that shift.",
+                "source_content_hash": "519fe881711ed034",
+                "quote_hash": "2f336d47fbaf81ac996e95c8d2b686294abfabcd8cd44191dfa7a60c1802566f"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "partially_disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 45000000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "4500 万美元"
+            }
+          ],
+          "historical_round_count": 1
+        }
+      },
+      "products": [
+        {
+          "name": "Blacksmith CI Cloud",
+          "description": "一个从第一性原理设计的硬件-软件栈，为 CI 工作负载提供最佳的计算、可观测性和安全性。当前以 GitHub Actions runner 的直接替代方案形式提供，速度是 GitHub 的两倍，成本仅为其一半。",
+          "target_customers": "使用 GitHub Actions 进行 CI/CD 的软件开发团队",
+          "features": [
+            "GitHub Actions runner 的直接替代方案",
+            "两倍速度、一半成本",
+            "自有裸金属消费级游戏 CPU 集群",
+            "Docker 层缓存增量构建",
+            "可观测性层用于识别性能回归和 flaky tests",
+            "安全层用于防范供应链攻击"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ba55b463daced495",
+              "quote": "Today, developers know us as a drop-in replacement for GitHub Actions runners which is twice as fast at half the cost.",
+              "source_content_hash": "716df167d49a13d7",
+              "quote_hash": "c2555319ccf98b6eca3f95859e6533f39fb827885593b4e56af1464679014c15"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Clerk",
+          "industry": "开发者工具",
+          "use_case": "运行浏览器集成测试，减少 flaky tests 并降低 CI 成本",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3528702ca9d3517e",
+              "quote": "How Clerk reduced test flakiness and cut GitHub Actions costs by 70% with Blacksmith",
+              "source_content_hash": "fa4c87a1737205ea",
+              "quote_hash": "f50761a4d28cdf1d75a379a476f46a2c24fb9af67d2a86423916bbf7c31bacad"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Chroma",
+          "industry": "SaaS",
+          "use_case": "为每个 PR 运行测试，加速部署并降低 CI 成本",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5da85f758c6baef0",
+              "quote": "How Chroma deploys 2x faster while cutting GitHub Actions costs by 50% with Blacksmith",
+              "source_content_hash": "636c4d4b312adf40",
+              "quote_hash": "1a3e52eb29b7c84cee669268ec40a7fcd5c38bb752ea9fb9499b5fd2101ebaca"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Ashby",
+          "industry": "SaaS",
+          "use_case": "为每次 git push 运行测试并持续部署",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a55da581424e49b9",
+              "quote": "How Ashby slashed GitHub Actions costs by 75% and doubled deployment frequency with Blacksmith",
+              "source_content_hash": "7cd2429dfe4d6708",
+              "quote_hash": "09538e7e7fa4ee8cdd5c8617c9b137c9b3f7290356e9d15a5509c754a15956f8"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "VEED",
+          "industry": "SaaS",
+          "use_case": "运行 CI/CD 流水线，加速 PR 验证并降低成本",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0e49fc382fee4e08",
+              "quote": "How VEED deploys 2x faster while cutting GitHub Actions costs by 70% with Blacksmith",
+              "source_content_hash": "4f2e4c0f65a6005b",
+              "quote_hash": "d0ec6d2a6f08cc261ba460ad3fe14f40f7b6e4812a38d69a141d1770fe70b064"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Mintlify",
+          "industry": "SaaS",
+          "use_case": "使用 Blacksmith 运行 CI",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ba55b463daced495",
+              "quote": "power CI for over 600 organizations, including Ashby , Finch , Clerk , Veed, and Mintlify.",
+              "source_content_hash": "716df167d49a13d7",
+              "quote_hash": "88fe77a908253f3d4d610c8018bda15dbefdeb11df8223cca0c7cc84840d6a98"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "GitHub Actions",
+          "product": "GitHub-hosted runners",
+          "scenario": "运行 CI/CD 测试与构建流水线",
+          "target_customer": "使用 GitHub 的软件开发团队",
+          "funding_summary": "",
+          "core_difference": "Blacksmith 提供两倍速度、一半成本，且基于自有裸金属游戏 CPU 集群，避免 GitHub 托管 runner 的 CPU 时钟频率低、冷启动慢和频繁宕机问题。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ba55b463daced495",
+              "quote": "Today, developers know us as a drop-in replacement for GitHub Actions runners which is twice as fast at half the cost.",
+              "source_content_hash": "716df167d49a13d7",
+              "quote_hash": "c2555319ccf98b6eca3f95859e6533f39fb827885593b4e56af1464679014c15"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "$45 million",
+          "observed_at": "2026-08-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ba0e4c3180b1bf02",
+              "quote": "Blacksmith has raised a new $45 million round",
+              "source_content_hash": "519fe881711ed034",
+              "quote_hash": "89e43eafcad7e8ec185d745775f7591b0d050f5dc451e1fa7feda8f039d3f6f4"
+            }
+          ]
+        },
+        {
+          "label": "种子轮融资金额",
+          "value": "$3.5 million",
+          "observed_at": "2025-05-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ba55b463daced495",
+              "quote": "we've raised $3.5M for our seed round!",
+              "source_content_hash": "716df167d49a13d7",
+              "quote_hash": "fb7f3c7c75b6840f7a2f8538fb7ac58a6d0c20b590496ed4e8c2adb580d9d787"
+            }
+          ]
+        },
+        {
+          "label": "服务组织数量",
+          "value": "超过 600 家",
+          "observed_at": "2025-05-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ba55b463daced495",
+              "quote": "power CI for over 600 organizations",
+              "source_content_hash": "716df167d49a13d7",
+              "quote_hash": "9aa76a156b2e052a221ab458dfe9f24366e51e7ba03a56b5534a6c60fe087f43"
+            }
+          ]
+        },
+        {
+          "label": "Clerk CI 成本节省",
+          "value": "70%",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3528702ca9d3517e",
+              "quote": "70% annual CI infrastructure cost savings",
+              "source_content_hash": "fa4c87a1737205ea",
+              "quote_hash": "ca4d73e5376d7f1cd101e812598472daef7a7aead98b7f10b48a0511a6040136"
+            }
+          ]
+        },
+        {
+          "label": "Chroma CI 成本节省",
+          "value": "50%",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5da85f758c6baef0",
+              "quote": "50% annual CI infrastructure cost savings",
+              "source_content_hash": "636c4d4b312adf40",
+              "quote_hash": "e97e5a2eff846929ef72b097f38ce97ae65cdd08d3673050794eeb730dac97a9"
+            }
+          ]
+        },
+        {
+          "label": "Ashby CI 成本节省",
+          "value": "75%",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a55da581424e49b9",
+              "quote": "75% annual CI infrastructure cost savings",
+              "source_content_hash": "7cd2429dfe4d6708",
+              "quote_hash": "2b72de6485c73c0d0a5dcd4d3a30447da5f56df2c918b9b20b046754e3e75522"
+            }
+          ]
+        },
+        {
+          "label": "VEED CI 成本节省",
+          "value": "70%",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0e49fc382fee4e08",
+              "quote": "70% annual CI infrastructure cost savings",
+              "source_content_hash": "4f2e4c0f65a6005b",
+              "quote_hash": "ca4d73e5376d7f1cd101e812598472daef7a7aead98b7f10b48a0511a6040136"
+            }
+          ]
+        },
+        {
+          "label": "Ashby 峰值 vCPU 扩展",
+          "value": "0 到 3500 vCPUs 在数秒内",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a55da581424e49b9",
+              "quote": "Blacksmith allows them to go from 0 to 3500 vCPUs in seconds.",
+              "source_content_hash": "7cd2429dfe4d6708",
+              "quote_hash": "59e130d2e0552165f8d818f50a9194306f1a3dbb93e113afa1f4b1fae68f45c6"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Dylan Staley",
+          "quote": "We just kept experiencing significant issues with GitHub Actions, including long test execution times and errors due to capacity limitations.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3528702ca9d3517e",
+              "quote": "We just kept experiencing significant issues with GitHub Actions, including long test execution times and errors due to capacity limitations.",
+              "source_content_hash": "fa4c87a1737205ea",
+              "quote_hash": "859794621cc6b38bb175a4b76a5d584053cd4b735e3e5274b220765f858944e6"
+            }
+          ]
+        },
+        {
+          "speaker": "Hammad Bashir",
+          "quote": "Blacksmith was the clear choice for our CI. It delivered faster builds, lower costs, a great dashboard, and greater reliability than any other provider we tested, with responsive support when we needed it.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5da85f758c6baef0",
+              "quote": "Blacksmith was the clear choice for our CI. It delivered faster builds, lower costs, a great dashboard, and greater reliability than any other provider we tested, with responsive support when we needed it.",
+              "source_content_hash": "636c4d4b312adf40",
+              "quote_hash": "59f9f020880221112ccf0c27826cb59abaf189fbc62244484e6cdbca22d8e8c3"
+            }
+          ]
+        },
+        {
+          "speaker": "Abhik Pramanik",
+          "quote": "It seems that some CI providers have forgotten that reliability is important to their customers.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a55da581424e49b9",
+              "quote": "It seems that some CI providers have forgotten that reliability is important to their customers.",
+              "source_content_hash": "7cd2429dfe4d6708",
+              "quote_hash": "0bf5a481e79337346a46f033256dcb970aba79bbcba1db2887e40063372ae1d5"
+            }
+          ]
+        },
+        {
+          "speaker": "Aaron Norby",
+          "quote": "Blacksmith was super easy to get started with. All we had to do was change a few lines of code, and boom, our CI was taking half the time it had been. Instant win.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a55da581424e49b9",
+              "quote": "Blacksmith was super easy to get started with. All we had to do was change a few lines of code, and boom, our CI was taking half the time it had been. Instant win.",
+              "source_content_hash": "7cd2429dfe4d6708",
+              "quote_hash": "785a57fcf1033b382e9eec36e558a8925e8839d32252d878720efa4a7304c99e"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是 AI 代码生成工具普及带来的 CI 计算需求指数级增长，以及传统云厂商在突发性、短生命周期 CI 工作负载上的结构性不匹配。Blacksmith 通过自有裸金属游戏 CPU 集群，以两倍速度、一半成本提供 GitHub Actions 的直接替代方案，并用 Clerk、Chroma、Ashby、VEED 等客户验证了 50%-75% 的成本节省和 2 倍部署加速。但本轮融资的具体投资方未在来源中披露，无法确认机构背书；估值暴涨近 10 倍的判断仅来自 TechCrunch 标题，缺乏具体估值数字和投资方原话支撑。",
+        "validated_signals": [
+          "超过 600 家组织使用 Blacksmith 运行 CI",
+          "多个客户案例验证 2 倍速度提升和 50%-75% 成本节省",
+          "Ashby 峰值可扩展至 3500 vCPUs 在数秒内",
+          "种子轮由 GV 和 Y Combinator 领投"
+        ],
+        "risks": [
+          "本轮融资投资方未披露，无法确认机构背书和估值依据",
+          "对 GitHub Actions 生态存在强依赖，GitHub 政策变化可能影响其替代方案定位",
+          "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "ai_development_orchestration",
+        "use_case_ids": [
+          "software_development"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "开发者基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 AI 代码生成工具普及带来的 CI 计算需求指数级增长，以及传统云厂商在突发性、短生命周期 CI 工作负载上的结构性不匹配。Blacksmith 通过自有裸金属游戏 CPU 集群，以两倍速度、一半成本提供 GitHub Actions 的直接替代方案，并用 Clerk、Chroma、Ashby、VEED 等客户验证了 50%-75% 的成本节省和 2 倍部署加速。但本轮融资的具体投资方未在来源中披露，无法确认机构背书；估值暴涨近 10 倍的判断仅来自 TechCrunch 标题，缺乏具体估值数字和投资方原话支撑。",
+          "evidence_signals": [
+            "超过 600 家组织使用 Blacksmith 运行 CI",
+            "多个客户案例验证 2 倍速度提升和 50%-75% 成本节省",
+            "Ashby 峰值可扩展至 3500 vCPUs 在数秒内",
+            "种子轮由 GV 和 Y Combinator 领投"
+          ],
+          "risks": [
+            "本轮融资投资方未披露，无法确认机构背书和估值依据",
+            "对 GitHub Actions 生态存在强依赖，GitHub 政策变化可能影响其替代方案定位",
+            "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Blacksmith CI Cloud",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Aditya Jayaprakash",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "GV (Google Ventures)",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Y Combinator",
+          "canonical_entity_id": "EN-275b0f4a4023d91c",
+          "canonical_name": "Y Combinator"
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Spencer Kimball",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Peter Mattis",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Rich Aberman",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "JJ Fliegelman",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Eli Brown",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Theo Browne",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Clerk",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Chroma",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Ashby",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "VEED",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Mintlify",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "GitHub Actions",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-cca4bd983a16b8d9",
+          "date": "2026-08-12",
+          "title": "AI 代码测试初创公司 Blacksmith 估值不到一年暴涨近 10 倍",
+          "amount": "$45 million",
+          "source_refs": [
+            "SA-94c0556212cc7f2d"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-ba0e4c3180b1bf02",
+          "source_url": "https://techcrunch.com/2026/08/12/blacksmiths-valuation-jumps-10x-to-550m-as-ai-coding-fuels-software-validation",
+          "title": "AI 代码测试初创公司 Blacksmith 估值不到一年暴涨近 10 倍",
+          "publisher": "TechCrunch：AI（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-13T00:22:00.738Z",
+          "content_hash": "519fe881711ed034",
+          "source_artifact_id": "SA-94c0556212cc7f2d",
+          "raw_id": "RAW-1595a42ed02bcd65"
+        },
+        {
+          "source_id": "FISRC-ba55b463daced495",
+          "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
+          "title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
+          "publisher": "blacksmith.sh",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-13T02:16:12.528Z",
+          "content_hash": "716df167d49a13d7",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-3528702ca9d3517e",
+          "source_url": "https://www.blacksmith.sh/customer-stories/clerk",
+          "title": "How Clerk reduced test flakiness and cut GitHub Actions costs by 70% with Blacksmith",
+          "publisher": "blacksmith.sh",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-13T02:16:12.527Z",
+          "content_hash": "fa4c87a1737205ea",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-5da85f758c6baef0",
+          "source_url": "https://www.blacksmith.sh/customer-stories/chroma",
+          "title": "How Chroma deploys 2x faster while cutting GitHub Actions costs by 50% with Blacksmith",
+          "publisher": "blacksmith.sh",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-13T02:16:12.551Z",
+          "content_hash": "636c4d4b312adf40",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-a55da581424e49b9",
+          "source_url": "https://www.blacksmith.sh/customer-stories/ashby",
+          "title": "How Ashby slashed GitHub Actions costs by 75% and doubled deployment frequency with Blacksmith",
+          "publisher": "blacksmith.sh",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-13T02:16:12.553Z",
+          "content_hash": "7cd2429dfe4d6708",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-0e49fc382fee4e08",
+          "source_url": "https://www.blacksmith.sh/customer-stories/veed",
+          "title": "How VEED deploys 2x faster while cutting GitHub Actions costs by 70% with Blacksmith",
+          "publisher": "blacksmith.sh",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-13T02:16:12.568Z",
+          "content_hash": "4f2e4c0f65a6005b",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-13T02:16:57.382Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-13T02:16:57.382Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Blacksmith CI Cloud"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Aditya Jayaprakash"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-cca4bd983a16b8d9"
+      ],
+      "aggregation": {
+        "key": "EN-8eae6c54657e94be|series_b|USD:exact:45000000:::|2026-08-12",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-8ec3b23d30c575bf",
+          "event_ids": [
+            "EV-cca4bd983a16b8d9"
+          ],
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$45 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 45000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "4500 万美元"
+          },
+          "announced_at": "2026-08-12",
+          "disclosure_status": "partially_disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "ai_infrastructure_software",
+        "name": "AI 基础设施软件",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "infrastructure_compute",
+        "name": "基础设施与算力",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "development_deployment",
+        "name": "开发与部署",
+        "method": "card_explicit"
+      },
+      "market_application": {
+        "dimension": "ai_market_application",
+        "id": "ai_development_orchestration",
+        "name": "AI 开发与编排",
+        "method": "card_explicit"
+      },
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-cca4bd983a16b8d9",
+        "direction": ""
+      }
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-d1444f877a3e580e",
@@ -19003,7 +19867,7 @@
               "quote_hash": "15fb0a23b983066ddadc88812242c3d7e5f64731c40d19cbb8a5ebbd1fe1e3cc"
             }
           ],
-          "entity_id": null
+          "entity_id": "EN-bbdefa2950f49882"
         },
         {
           "name": "字节跳动",
@@ -19458,8 +20322,8 @@
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "谷歌",
-          "canonical_entity_id": null,
-          "canonical_name": ""
+          "canonical_entity_id": "EN-bbdefa2950f49882",
+          "canonical_name": "Google"
         },
         {
           "relation_type": "public_customer_case",
@@ -21028,7 +21892,7 @@
               "quote_hash": "9592a436a86251319144ada6896df9d41134116c43a0bad3f91505d2a6c4d5c1"
             }
           ],
-          "entity_id": null
+          "entity_id": "EN-bbdefa2950f49882"
         },
         {
           "name": "英伟达",
@@ -21454,8 +22318,8 @@
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "谷歌",
-          "canonical_entity_id": null,
-          "canonical_name": ""
+          "canonical_entity_id": "EN-bbdefa2950f49882",
+          "canonical_name": "Google"
         },
         {
           "relation_type": "compared_with",
@@ -59764,7 +60628,7 @@
                 "quote_hash": "c683f4356fe03853973a47ec6e6d76dff0a7f36e81c6f3f3f2f2718013497185"
               }
             ],
-            "entity_id": "EN-80d387ccb3289295",
+            "entity_id": null,
             "institution_id": "INV-cc23c5476d683c"
           },
           {
@@ -60164,8 +61028,8 @@
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "软银",
-          "canonical_entity_id": "EN-80d387ccb3289295",
-          "canonical_name": "SoftBank"
+          "canonical_entity_id": null,
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",

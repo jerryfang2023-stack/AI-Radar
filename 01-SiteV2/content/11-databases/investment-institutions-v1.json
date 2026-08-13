@@ -1,12 +1,12 @@
 {
   "meta": {
     "schema_version": "INVESTMENT-INSTITUTION-V1.0",
-    "generated_at": "2026-08-12T11:41:24.946Z",
+    "generated_at": "2026-08-13T02:16:57.407Z",
     "source_contract": "FUNDING-INSIGHT-V1.3",
-    "institution_count": 1208,
-    "evidence_backed_count": 1208,
+    "institution_count": 1215,
+    "evidence_backed_count": 1215,
     "current_round_activity_count": 1385,
-    "individual_investor_count": 172,
+    "individual_investor_count": 178,
     "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
   },
   "institutions": [
@@ -22,12 +22,12 @@
       "classification_confidence": "evidence_bounded",
       "collection_status": "evidence_backed",
       "current_round_count": 23,
-      "historical_or_ambiguous_count": 2,
+      "historical_or_ambiguous_count": 3,
       "portfolio_company_count": 22,
       "first_disclosed_at": "2023-04-27",
-      "latest_disclosed_at": "2026-08-11",
+      "latest_disclosed_at": "2026-08-12",
       "role_counts": {
-        "historical_or_ambiguous": 2,
+        "historical_or_ambiguous": 3,
         "lead": 2,
         "participant": 21
       },
@@ -152,6 +152,44 @@
         }
       ],
       "activities": [
+        {
+          "activity_id": "IA-1df9856e95e338a5",
+          "funding_insight_id": "FI-8ec3b23d30c575bf",
+          "event_ids": [
+            "EV-cca4bd983a16b8d9"
+          ],
+          "company_entity_id": "EN-8eae6c54657e94be",
+          "company_canonical_entity_id": "",
+          "company_name": "Blacksmith",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$45 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 45000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "4500 万美元"
+          },
+          "announced_at": "2026-08-12",
+          "disclosure_status": "partially_disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "种子轮联合领投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-ba55b463daced495",
+              "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
+              "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
+              "source_content_hash": "716df167d49a13d7",
+              "quote": "This was led by Erik Nordlander at Google Ventures (GV) and Y Combinator",
+              "quote_hash": "5eba83da8394915347c8504892c95caf9a5b5200146cff45fd78980404e44273"
+            }
+          ]
+        },
         {
           "activity_id": "IA-63af9b5bef12d1c7",
           "funding_insight_id": "FI-d1444f877a3e580e",
@@ -1128,6 +1166,14 @@
         }
       ],
       "evidence": [
+        {
+          "source_id": "FISRC-ba55b463daced495",
+          "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
+          "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
+          "source_content_hash": "716df167d49a13d7",
+          "quote": "This was led by Erik Nordlander at Google Ventures (GV) and Y Combinator",
+          "quote_hash": "5eba83da8394915347c8504892c95caf9a5b5200146cff45fd78980404e44273"
+        },
         {
           "source_id": "FISRC-0deb7f666bec5423",
           "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
@@ -45233,10 +45279,10 @@
       "id": "INV-cc23c5476d683c",
       "name": "软银",
       "aliases": [],
-      "canonical_entity_id": "EN-80d387ccb3289295",
-      "investor_kind": "corporate_investor",
-      "investor_kind_label": "企业投资方",
-      "classification_confidence": "evidence_bounded",
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
       "collection_status": "evidence_backed",
       "current_round_count": 1,
       "historical_or_ambiguous_count": 0,
@@ -109078,6 +109124,496 @@
           "source_content_hash": "79c5fe52268cb7e7",
           "quote": "raised $10 million in a round contributed by NEA and “select” angel investors",
           "quote_hash": "74f7fb7f4870b592db0c61a787811ae10aeac6d44b7d28f6a4e09f9cd873949d"
+        }
+      ]
+    },
+    {
+      "id": "INV-637d6650927169",
+      "name": "Eli Brown",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "individual",
+      "investor_kind_label": "个人投资者",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-12",
+      "latest_disclosed_at": "2026-08-12",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-8e373c5f0312c2f1",
+          "funding_insight_id": "FI-8ec3b23d30c575bf",
+          "event_ids": [
+            "EV-cca4bd983a16b8d9"
+          ],
+          "company_entity_id": "EN-8eae6c54657e94be",
+          "company_canonical_entity_id": "",
+          "company_name": "Blacksmith",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$45 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 45000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "4500 万美元"
+          },
+          "announced_at": "2026-08-12",
+          "disclosure_status": "partially_disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "种子轮天使投资人",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-ba55b463daced495",
+              "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
+              "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
+              "source_content_hash": "716df167d49a13d7",
+              "quote": "Eli Brown (Founder of Guilded)",
+              "quote_hash": "3fec831f7e01baec1eb075a2acb0dca9164071ad6850ec67cd884149a6df5c74"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-ba55b463daced495",
+          "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
+          "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
+          "source_content_hash": "716df167d49a13d7",
+          "quote": "Eli Brown (Founder of Guilded)",
+          "quote_hash": "3fec831f7e01baec1eb075a2acb0dca9164071ad6850ec67cd884149a6df5c74"
+        }
+      ]
+    },
+    {
+      "id": "INV-b269962085f8f8",
+      "name": "GV (Google Ventures)",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-12",
+      "latest_disclosed_at": "2026-08-12",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-9be1b1481ae19058",
+          "funding_insight_id": "FI-8ec3b23d30c575bf",
+          "event_ids": [
+            "EV-cca4bd983a16b8d9"
+          ],
+          "company_entity_id": "EN-8eae6c54657e94be",
+          "company_canonical_entity_id": "",
+          "company_name": "Blacksmith",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$45 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 45000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "4500 万美元"
+          },
+          "announced_at": "2026-08-12",
+          "disclosure_status": "partially_disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "种子轮领投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-ba55b463daced495",
+              "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
+              "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
+              "source_content_hash": "716df167d49a13d7",
+              "quote": "This was led by Erik Nordlander at Google Ventures (GV) and Y Combinator",
+              "quote_hash": "5eba83da8394915347c8504892c95caf9a5b5200146cff45fd78980404e44273"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-ba55b463daced495",
+          "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
+          "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
+          "source_content_hash": "716df167d49a13d7",
+          "quote": "This was led by Erik Nordlander at Google Ventures (GV) and Y Combinator",
+          "quote_hash": "5eba83da8394915347c8504892c95caf9a5b5200146cff45fd78980404e44273"
+        }
+      ]
+    },
+    {
+      "id": "INV-976ffee4a6c3ce",
+      "name": "JJ Fliegelman",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "individual",
+      "investor_kind_label": "个人投资者",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-12",
+      "latest_disclosed_at": "2026-08-12",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-72d2967b43376b97",
+          "funding_insight_id": "FI-8ec3b23d30c575bf",
+          "event_ids": [
+            "EV-cca4bd983a16b8d9"
+          ],
+          "company_entity_id": "EN-8eae6c54657e94be",
+          "company_canonical_entity_id": "",
+          "company_name": "Blacksmith",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$45 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 45000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "4500 万美元"
+          },
+          "announced_at": "2026-08-12",
+          "disclosure_status": "partially_disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "种子轮天使投资人",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-ba55b463daced495",
+              "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
+              "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
+              "source_content_hash": "716df167d49a13d7",
+              "quote": "JJ Fliegelman (Co-founder of WayUp)",
+              "quote_hash": "2cf5cc668c79154472f93899e818162118761e9fddc4d9793ddf1864490398a7"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-ba55b463daced495",
+          "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
+          "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
+          "source_content_hash": "716df167d49a13d7",
+          "quote": "JJ Fliegelman (Co-founder of WayUp)",
+          "quote_hash": "2cf5cc668c79154472f93899e818162118761e9fddc4d9793ddf1864490398a7"
+        }
+      ]
+    },
+    {
+      "id": "INV-4a6802b27f7006",
+      "name": "Peter Mattis",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "individual",
+      "investor_kind_label": "个人投资者",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-12",
+      "latest_disclosed_at": "2026-08-12",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-a675db573ad2fcd6",
+          "funding_insight_id": "FI-8ec3b23d30c575bf",
+          "event_ids": [
+            "EV-cca4bd983a16b8d9"
+          ],
+          "company_entity_id": "EN-8eae6c54657e94be",
+          "company_canonical_entity_id": "",
+          "company_name": "Blacksmith",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$45 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 45000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "4500 万美元"
+          },
+          "announced_at": "2026-08-12",
+          "disclosure_status": "partially_disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "种子轮天使投资人",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-ba55b463daced495",
+              "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
+              "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
+              "source_content_hash": "716df167d49a13d7",
+              "quote": "Peter Mattis (CTO of Cockroach Labs)",
+              "quote_hash": "07ab43709c44a9e930bfe582e2fb6541b747fa47ad83ae8d44f380f7e9845c97"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-ba55b463daced495",
+          "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
+          "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
+          "source_content_hash": "716df167d49a13d7",
+          "quote": "Peter Mattis (CTO of Cockroach Labs)",
+          "quote_hash": "07ab43709c44a9e930bfe582e2fb6541b747fa47ad83ae8d44f380f7e9845c97"
+        }
+      ]
+    },
+    {
+      "id": "INV-cb6778a9ea4672",
+      "name": "Rich Aberman",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "individual",
+      "investor_kind_label": "个人投资者",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-12",
+      "latest_disclosed_at": "2026-08-12",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-73a985a3f0640fbe",
+          "funding_insight_id": "FI-8ec3b23d30c575bf",
+          "event_ids": [
+            "EV-cca4bd983a16b8d9"
+          ],
+          "company_entity_id": "EN-8eae6c54657e94be",
+          "company_canonical_entity_id": "",
+          "company_name": "Blacksmith",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$45 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 45000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "4500 万美元"
+          },
+          "announced_at": "2026-08-12",
+          "disclosure_status": "partially_disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "种子轮天使投资人",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-ba55b463daced495",
+              "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
+              "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
+              "source_content_hash": "716df167d49a13d7",
+              "quote": "Rich Aberman (Co-founder of WePay)",
+              "quote_hash": "3af7d2fbcf81ec1b6025f7bc05b3a6526261a13bd83e9d15ff7747067b758b09"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-ba55b463daced495",
+          "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
+          "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
+          "source_content_hash": "716df167d49a13d7",
+          "quote": "Rich Aberman (Co-founder of WePay)",
+          "quote_hash": "3af7d2fbcf81ec1b6025f7bc05b3a6526261a13bd83e9d15ff7747067b758b09"
+        }
+      ]
+    },
+    {
+      "id": "INV-55f94da6a992ad",
+      "name": "Spencer Kimball",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "individual",
+      "investor_kind_label": "个人投资者",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-12",
+      "latest_disclosed_at": "2026-08-12",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-f31eafc01a2d6984",
+          "funding_insight_id": "FI-8ec3b23d30c575bf",
+          "event_ids": [
+            "EV-cca4bd983a16b8d9"
+          ],
+          "company_entity_id": "EN-8eae6c54657e94be",
+          "company_canonical_entity_id": "",
+          "company_name": "Blacksmith",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$45 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 45000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "4500 万美元"
+          },
+          "announced_at": "2026-08-12",
+          "disclosure_status": "partially_disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "种子轮天使投资人",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-ba55b463daced495",
+              "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
+              "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
+              "source_content_hash": "716df167d49a13d7",
+              "quote": "along with some prolific angels like Spencer Kimball (CEO of Cockroach Labs)",
+              "quote_hash": "f70d511a5e18f7edc70ba044079f07cbc4720a997edd6da9d68842f6020d7773"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-ba55b463daced495",
+          "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
+          "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
+          "source_content_hash": "716df167d49a13d7",
+          "quote": "along with some prolific angels like Spencer Kimball (CEO of Cockroach Labs)",
+          "quote_hash": "f70d511a5e18f7edc70ba044079f07cbc4720a997edd6da9d68842f6020d7773"
+        }
+      ]
+    },
+    {
+      "id": "INV-bf79441f034e36",
+      "name": "Theo Browne",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "individual",
+      "investor_kind_label": "个人投资者",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-12",
+      "latest_disclosed_at": "2026-08-12",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-6393114f23037413",
+          "funding_insight_id": "FI-8ec3b23d30c575bf",
+          "event_ids": [
+            "EV-cca4bd983a16b8d9"
+          ],
+          "company_entity_id": "EN-8eae6c54657e94be",
+          "company_canonical_entity_id": "",
+          "company_name": "Blacksmith",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$45 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 45000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "4500 万美元"
+          },
+          "announced_at": "2026-08-12",
+          "disclosure_status": "partially_disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "种子轮天使投资人",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-ba55b463daced495",
+              "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
+              "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
+              "source_content_hash": "716df167d49a13d7",
+              "quote": "Theo Browne (Founder of T3 Chat)",
+              "quote_hash": "da7a99420e560307952409a1269f5c7b8b78ecfdfd16b3ddb559dd5a97d5fca0"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-ba55b463daced495",
+          "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
+          "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
+          "source_content_hash": "716df167d49a13d7",
+          "quote": "Theo Browne (Founder of T3 Chat)",
+          "quote_hash": "da7a99420e560307952409a1269f5c7b8b78ecfdfd16b3ddb559dd5a97d5fca0"
         }
       ]
     },
