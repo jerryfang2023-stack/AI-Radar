@@ -11,6 +11,7 @@ const headerSource = fs.readFileSync("miniprogram/components/app-header/index.wx
 const headerStyles = fs.readFileSync("miniprogram/components/app-header/index.wxss", "utf8");
 const membershipSource = fs.readFileSync("miniprogram/pages/membership/index.wxml", "utf8");
 const membershipModelSource = fs.readFileSync("miniprogram/utils/membership-model.js", "utf8");
+const profileSource = fs.readFileSync("miniprogram/pages/profile/index.wxml", "utf8");
 const publicFiles = [
   "miniprogram/pages/terminal/index.wxml",
   "miniprogram/pages/market/index.wxml",
@@ -42,6 +43,14 @@ test("exposes the confirmed membership plans and point exchange entry", () => {
     assert.match(membershipContract, new RegExp(copy, "u"));
   }
   assert.match(membershipSource, /wx:for="\{\{plans\}\}"/u);
+});
+
+test("keeps observer growth primary and membership status compact on profile", () => {
+  assert.ok(profileSource.indexOf('class="growth-card"') < profileSource.indexOf('class="membership-card"'));
+  const compactMembership = profileSource.slice(profileSource.indexOf('class="membership-card"'), profileSource.indexOf('class="section-heading"'));
+  assert.match(compactMembership, /会员权益/u);
+  assert.match(compactMembership, /有效至/u);
+  assert.doesNotMatch(compactMembership, /元\/月/u);
 });
 
 test("keeps list pages concise while preserving detail-page actions", () => {

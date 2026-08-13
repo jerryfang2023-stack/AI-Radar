@@ -63,6 +63,9 @@ test("profile capabilities are present", async () => {
   for (const membershipCopy of ["7 天体验中", "30", "168", "300", "月度会员", "半年会员", "年度会员", "会员权益兑换", "活跃积分兑换", "所有栏目的完整浏览权"]) {
     assert.ok(source.includes(membershipCopy), `missing membership capability: ${membershipCopy}`);
   }
+  const profile = source.slice(source.indexOf("function ProfileView"), source.indexOf("function MembershipView"));
+  assert.ok(profile.indexOf('className="growth-card"') < profile.indexOf('className="membership-card"'));
+  assert.doesNotMatch(profile.slice(profile.indexOf('className="membership-card"')), /元\/月起/u);
 });
 
 test("public UI does not expose internal workflow language", async () => {

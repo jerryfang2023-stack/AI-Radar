@@ -10,18 +10,6 @@
       <text class="text-link">编辑</text>
     </view>
 
-    <view class="membership-card" bindtap="openMembership">
-      <view class="membership-head">
-        <view><text class="membership-kicker">观澜会员</text><text class="membership-status serif">{{growth.membership.statusLabel}}</text></view>
-        <text class="membership-price"><text class="mono">30</text> 元/月起</text>
-      </view>
-      <view class="membership-meta">
-        <text wx:if="{{growth.membership.active}}">剩余 {{growth.membership.remainingDays}} 天 · 有效至 {{growth.membership.activeUntil}}</text>
-        <text wx:else>开通后可浏览全部栏目</text>
-        <text>查看权益</text>
-      </view>
-    </view>
-
     <view class="growth-card" bindtap="openGrowth">
       <view class="growth-top">
         <view>
@@ -46,6 +34,15 @@
       <view bindtap="openHistory"><text class="stat-value mono">{{stats.browse}}</text><text class="stat-label">浏览</text></view>
       <view bindtap="openWatchlist"><text class="stat-value mono">{{stats.favorite}}</text><text class="stat-label">收藏</text></view>
       <view bindtap="openFollows"><text class="stat-value mono">{{stats.follow}}</text><text class="stat-label">关注</text></view>
+    </view>
+
+    <view class="membership-card" bindtap="openMembership">
+      <view class="membership-copy"><text class="membership-kicker">会员权益</text><text class="membership-status">{{growth.membership.statusLabel}}</text></view>
+      <view class="membership-meta">
+        <text wx:if="{{growth.membership.active}}">有效至 {{growth.membership.activeUntil}}</text>
+        <text wx:else>查看开通与积分兑换</text>
+        <text>›</text>
+      </view>
     </view>
 
     <view class="section-heading"><text class="serif">成长任务</text><text bindtap="openGrowth">查看明细</text></view>
