@@ -11,6 +11,18 @@ function entityKey(value) {
   return normalize(value);
 }
 
+function companyEntityKey(name) {
+  return entityKey(name);
+}
+
+function investorEntityKey(name) {
+  return entityKey(name);
+}
+
+function personEntityKey(founder, companyName) {
+  return founder.id ? `id:${founder.id}` : `${entityKey(founder.name)}|${companyEntityKey(companyName)}`;
+}
+
 function buildEntityLibrary(cards = [], details = {}) {
   const companies = new Map();
   const investors = new Map();
@@ -20,7 +32,7 @@ function buildEntityLibrary(cards = [], details = {}) {
   sortedCards.forEach((card) => {
     const detail = details[card.id] || {};
     const companyName = String(card.company || "未披露公司").trim();
-    const companyId = entityKey(companyName);
+    const companyId = companyEntityKey(companyName);
     const company = companies.get(companyId) || {
       key: companyId,
       type: "companies",
@@ -53,7 +65,7 @@ function buildEntityLibrary(cards = [], details = {}) {
     const seenInvestors = new Set();
     investorRows.forEach((row) => {
       const investorName = String(row.name || "").trim();
-      const investorId = entityKey(investorName);
+      const investorId = investorEntityKey(investorName);
       if (!investorId || seenInvestors.has(investorId)) return;
       seenInvestors.add(investorId);
       const investor = investors.get(investorId) || {
@@ -77,7 +89,7 @@ function buildEntityLibrary(cards = [], details = {}) {
 
     (detail.founders || []).forEach((founderRow) => {
       const personName = String(founderRow.name || "").trim();
-      const personId = founderRow.id ? `id:${founderRow.id}` : `${entityKey(personName)}|${companyId}`;
+      const personId = personEntityKey(founderRow, companyName);
       if (!personId) return;
       const person = people.get(personId) || {
         key: personId,
@@ -107,6 +119,8 @@ function buildEntityLibrary(cards = [], details = {}) {
     productsText: item.products.join("、") || "暂未披露",
     categoriesFullText: item.categories.join("、") || "暂未分类",
     investorsText: item.investors.join("、"),
+    investorLinks: item.investors.map((name) => ({ name, key: investorEntityKey(name) })),
+    founders: item.founders.map((founder) => ({ ...founder, key: personEntityKey(founder, item.name) })),
     secondary: [item.headquarters, item.products.slice(0, 2).join("、")].filter(Boolean).join(" · "),
     categoriesText: item.categories.slice(0, 2).join(" · "),
     searchText: normalize([item.name, item.summary, item.headquarters, ...item.products, ...item.categories].join(" ")),
@@ -117,6 +131,7 @@ function buildEntityLibrary(cards = [], details = {}) {
     roundCount: item.rounds.length,
     companyCount: item.companies.length,
     companiesText: item.companies.slice(0, 3).join("、") || "已投企业未披露",
+    companyLinks: item.companies.map((name) => ({ name, key: companyEntityKey(name) })),
     categoriesFullText: item.categories.join("、") || "暂未分类",
     categoriesText: item.categories.slice(0, 2).join(" · "),
     categoriesFullText: item.categories.join("、") || "暂未分类",
@@ -129,6 +144,7 @@ function buildEntityLibrary(cards = [], details = {}) {
     companyCount: item.companies.length,
     roleText: item.roles.join("、") || "创始团队",
     companiesText: item.companies.join("、"),
+    companyLinks: item.companies.map((name) => ({ name, key: companyEntityKey(name) })),
     categoriesText: item.categories.slice(0, 2).join(" · "),
     searchText: normalize([item.name, ...item.roles, ...item.companies, ...item.categories].join(" ")),
   })).sort((left, right) => right.companyCount - left.companyCount || String(right.latestDate).localeCompare(String(left.latestDate)) || left.name.localeCompare(right.name));
@@ -145,4 +161,4 @@ function findEntity(library, type, key) {
   return (library[type] || []).find((item) => item.key === normalize(key));
 }
 
-module.exports = { buildEntityLibrary, filterEntities, findEntity };
+module.exports = { buildEntityLibrary, filterEntities, findEntity, companyEntityKey, investorEntityKey, personEntityKey };

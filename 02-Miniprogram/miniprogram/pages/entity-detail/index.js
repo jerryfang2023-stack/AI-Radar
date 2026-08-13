@@ -26,6 +26,11 @@ Page({
     if (id) wx.navigateTo({ url: `/pages/detail/index?id=${id}` });
   },
 
+  openEntity(event) {
+    const { key, type } = event.currentTarget.dataset;
+    if (key && type) wx.redirectTo({ url: `/pages/entity-detail/index?type=${type}&key=${encodeURIComponent(key)}` });
+  },
+
   copyWebsite() {
     if (!this.data.entity?.website) return;
     wx.setClipboardData({ data: this.data.entity.website });

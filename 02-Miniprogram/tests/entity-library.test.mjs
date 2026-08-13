@@ -1,9 +1,10 @@
 import assert from "node:assert/strict";
 import { createRequire } from "node:module";
+import fs from "node:fs";
 import test from "node:test";
 
 const require = createRequire(import.meta.url);
-const { buildEntityLibrary, filterEntities } = require("../miniprogram/utils/entity-library.js");
+const { buildEntityLibrary, filterEntities, companyEntityKey, investorEntityKey, personEntityKey } = require("../miniprogram/utils/entity-library.js");
 
 const cards = [
   { id: "new", company: "星河智能", headquarters: "上海", products: ["工业机器人"], category: "Physical AI", subcategory: "机器人", amount: "2 亿元", round: "A轮", date: "2026-08-10", leadInvestor: "远见资本" },
@@ -30,4 +31,13 @@ test("searches the same entity fields exposed by the PC portal", () => {
   assert.equal(filterEntities(library.investors, "星河智能").length, 2);
   assert.equal(filterEntities(library.people, "创始人").length, 1);
   assert.equal(filterEntities(library.companies, "不存在").length, 0);
+});
+
+test("builds stable links across funding, company, institution and person views", () => {
+  const library = buildEntityLibrary(cards, details);
+  assert.equal(library.companies[0].investorLinks[0].key, investorEntityKey(library.companies[0].investorLinks[0].name));
+  assert.equal(library.companies[0].founders[0].key, personEntityKey(library.companies[0].founders[0], "星河智能"));
+  assert.equal(library.investors[0].companyLinks[0].key, companyEntityKey(library.investors[0].companyLinks[0].name));
+  assert.match(fs.readFileSync("miniprogram/pages/detail/index.wxml", "utf8"), /openCompany|openInvestor|openPerson/u);
+  assert.match(fs.readFileSync("miniprogram/pages/entity-detail/index.wxml", "utf8"), /bindtap="openEntity"/u);
 });

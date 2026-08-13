@@ -9,8 +9,8 @@
 
     <view class="library-tabs">
       <button class="{{mode === 'companies' ? 'active' : ''}}" data-mode="companies" bindtap="switchMode">企业库</button>
-      <button class="{{mode === 'investors' ? 'active' : ''}}" data-mode="investors" bindtap="switchMode">投资机构</button>
-      <button class="{{mode === 'people' ? 'active' : ''}}" data-mode="people" bindtap="switchMode">核心人物</button>
+      <button class="{{mode === 'investors' ? 'active' : ''}}" data-mode="investors" bindtap="switchMode">机构库</button>
+      <button class="{{mode === 'people' ? 'active' : ''}}" data-mode="people" bindtap="switchMode">人物库</button>
     </view>
 
     <view class="search-box">
@@ -23,7 +23,7 @@
 
     <view class="entity-grid">
       <button wx:for="{{items}}" wx:key="key" class="entity-card" data-key="{{item.key}}" data-type="{{item.type}}" bindtap="openEntity">
-        <text class="entity-eyebrow">{{mode === 'people' ? '核心人物' : (item.categoriesText || (mode === 'companies' ? 'AI 企业' : '投资机构'))}}</text>
+        <text class="entity-eyebrow">{{mode === 'people' ? '人物库' : (item.categoriesText || (mode === 'companies' ? 'AI 企业' : '机构库'))}}</text>
         <view class="entity-title-row"><view class="entity-avatar serif">{{item.initial}}</view><text class="entity-name">{{item.name}}</text></view>
 
         <text wx:if="{{mode === 'companies'}}" class="entity-sub">{{item.secondary || '企业信息待补充'}}</text>

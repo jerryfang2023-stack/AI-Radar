@@ -1,6 +1,7 @@
 const { isWatched, toggleWatch, isCompared, toggleCompare } = require("../../utils/storage.js");
 const { recordBrowse } = require("../../utils/member.js");
 const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
+const { companyEntityKey, investorEntityKey, personEntityKey } = require("../../utils/entity-library.js");
 
 function normalizedCard(card) {
   if (!card) return null;
@@ -69,5 +70,21 @@ Page({
     const url = event.currentTarget.dataset.url;
     if (!url) return;
     wx.setClipboardData({ data: url, success: () => wx.showToast({ title: "来源链接已复制", icon: "success" }) });
+  },
+
+  openCompany() {
+    const key = companyEntityKey(this.data.card.company);
+    if (key) wx.navigateTo({ url: `/pages/entity-detail/index?type=companies&key=${encodeURIComponent(key)}` });
+  },
+
+  openInvestor(event) {
+    const key = investorEntityKey(event.currentTarget.dataset.name);
+    if (key) wx.navigateTo({ url: `/pages/entity-detail/index?type=investors&key=${encodeURIComponent(key)}` });
+  },
+
+  openPerson(event) {
+    const founder = { id: event.currentTarget.dataset.id || "", name: event.currentTarget.dataset.name || "" };
+    const key = personEntityKey(founder, this.data.card.company);
+    if (key) wx.navigateTo({ url: `/pages/entity-detail/index?type=people&key=${encodeURIComponent(key)}` });
   },
 });

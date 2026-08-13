@@ -18,6 +18,12 @@
 .fact-list view:last-child, .profile-list view:last-child { border-bottom: 0; }
 .fact-list text, .profile-list text:last-child { color: #778695; font-size: 20rpx; }
 .fact-list strong, .profile-list text:first-child { color: #071827; font-size: 22rpx; font-weight: 600; line-height: 32rpx; }
+.relation-list button { display: flex; align-items: center; justify-content: space-between; width: 100%; margin: 0; padding: 20rpx 22rpx; border: 0; border-bottom: 1rpx solid #edf0f2; border-radius: 0; background: #fff; color: #071827; line-height: 1.4; text-align: left; }
+.relation-list button:last-child { border-bottom: 0; }
+.relation-list button > view { display: flex; flex: 1; flex-direction: column; gap: 7rpx; min-width: 0; padding: 0; border: 0; }
+.relation-list button > view text:first-child { color: #071827; font-size: 22rpx; font-weight: 600; }
+.relation-list button > view text:last-child { color: #778695; font-size: 19rpx; }
+.relation-list button > text { flex: none; color: #9b6d20; font-size: 19rpx; }
 .link-button { min-height: 70rpx; margin-top: 14rpx; border: 1rpx solid #d8c7a3; border-radius: 14rpx; background: #fff; color: #9b6d20; font-size: 21rpx; line-height: 70rpx; }
 .plain-copy { display: block; padding: 22rpx; border: 1rpx solid #e5e8ec; border-top: 0; border-radius: 0 0 18rpx 18rpx; background: #fff; color: #536576; font-size: 22rpx; line-height: 36rpx; }
 .activity-row { display: flex; justify-content: space-between; gap: 20rpx; width: 100%; min-height: 104rpx; margin: 0; padding: 18rpx 4rpx; border-bottom: 1rpx solid #e5e8ec; border-radius: 0; background: transparent; text-align: left; }

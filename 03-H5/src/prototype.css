@@ -213,6 +213,13 @@ button { color: inherit; }
 .entity-profile-list div { display: flex; justify-content: space-between; gap: 12px; padding: 12px; border-bottom: 1px solid var(--line); font-size: 11px; }
 .entity-profile-list div:last-child { border-bottom: 0; }
 .entity-profile-list span { color: var(--muted); }
+.entity-link-list { border: 1px solid var(--line); border-top: 0; }
+.entity-link-list > button { width: 100%; display: flex; justify-content: space-between; gap: 12px; align-items: center; padding: 12px; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: var(--ink); text-align: left; }
+.entity-link-list > button:last-child { border-bottom: 0; }
+.entity-link-list > button span { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.entity-link-list > button strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; }
+.entity-link-list > button small { color: var(--muted); font-size: 10px; }
+.entity-link-list > button em { flex: none; color: var(--gold-dark); font-size: 10px; font-style: normal; }
 .entity-activity-list { border-top: 1px solid var(--ink); }
 .entity-activity-list button { width: 100%; display: flex; justify-content: space-between; gap: 12px; border: 0; border-bottom: 1px solid var(--line); padding: 12px 2px; background: transparent; text-align: left; }
 .entity-activity-list button > span { min-width: 0; display: grid; gap: 4px; }
@@ -279,6 +286,9 @@ button { color: inherit; }
 .detail-identity > span { width: 52px; height: 52px; display: grid; place-items: center; border-radius: 14px; background: var(--navy); color: white; font: 800 22px Georgia, serif; }
 .detail-identity h2 { margin: 0 0 4px; font: 800 23px Georgia, "Noto Serif SC", serif; }
 .detail-identity p { margin: 0; color: var(--muted); font-size: 11px; }
+.detail-identity.entity-jump { width: 100%; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: inherit; text-align: left; }
+.detail-identity.entity-jump > div { flex: 1; min-width: 0; }
+.detail-identity.entity-jump > em { flex: none; color: var(--gold-dark); font-size: 10px; font-style: normal; }
 .fact-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: var(--line); }
 .fact-grid div { display: grid; gap: 5px; padding: 13px; background: white; }
 .fact-grid span { color: var(--muted); font-size: 10px; }
@@ -290,6 +300,10 @@ button { color: inherit; }
 .article-section small { color: var(--muted); }
 .simple-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 12px; }
 .simple-row span { color: var(--muted); }
+.relation-row { width: 100%; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: var(--ink); text-align: left; }
+.relation-row > span { display: flex; flex-direction: column; gap: 3px; color: var(--ink); }
+.relation-row > span small { color: var(--muted); font-size: 10px; }
+.relation-row > em { color: var(--gold-dark); font-size: 10px; font-style: normal; }
 .numbered { display: grid; grid-template-columns: 25px 1fr; gap: 8px; }
 .numbered b { width: 22px; height: 22px; display: grid; place-items: center; border-radius: 50%; background: var(--navy-soft); color: var(--navy); font-size: 10px; }
 .numbered.risk b { background: #f4e6e3; color: var(--danger); }

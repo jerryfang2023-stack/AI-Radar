@@ -40,8 +40,8 @@ test("keeps list pages concise while preserving detail-page actions", () => {
   assert.match(terminalSource, /placeholder="公司 \/ 机构 \/ 产品"/u);
   assert.doesNotMatch(terminalSource, /category-chip|市场类别|全部市场/u);
   assert.match(marketSource, /企业库/u);
-  assert.match(marketSource, /投资机构/u);
-  assert.match(marketSource, /核心人物/u);
+  assert.match(marketSource, /机构库/u);
+  assert.match(marketSource, /人物库/u);
   assert.match(marketLogic, /企业 \/ 产品 \/ 赛道/u);
   assert.match(marketLogic, /机构 \/ 已投公司 \/ 赛道/u);
   assert.match(marketLogic, /人物 \/ 企业 \/ 职务/u);

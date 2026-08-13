@@ -2,7 +2,7 @@
   <app-header title="{{title}}" show-back="{{true}}" />
   <view wx:if="{{entity}}" class="page-content entity-detail">
     <view class="entity-hero">
-      <text class="eyebrow">{{type === 'companies' ? (entity.categoriesText || 'AI 企业') : (type === 'investors' ? '投资机构' : '核心人物')}}</text>
+      <text class="eyebrow">{{type === 'companies' ? (entity.categoriesText || 'AI 企业') : (type === 'investors' ? '机构库' : '人物库')}}</text>
       <view class="hero-title"><view class="avatar serif">{{entity.initial}}</view><view><text class="name serif">{{entity.name}}</text><text class="role" wx:if="{{type === 'people'}}">{{entity.roleText}}</text></view></view>
       <text wx:if="{{type === 'companies'}}" class="deck">{{entity.summary}}</text>
       <text wx:elif="{{type === 'investors'}}" class="deck">已投企业：{{entity.companiesText}}</text>
@@ -26,16 +26,20 @@
     </view>
 
     <view wx:if="{{type === 'companies' && entity.founders.length}}" class="detail-section">
-      <text class="section-title serif">创始团队</text>
-      <view class="profile-list"><view wx:for="{{entity.founders}}" wx:key="name"><text>{{item.name}}</text><text>{{item.role}}</text></view></view>
+      <text class="section-title serif">人物库</text>
+      <view class="profile-list relation-list"><button wx:for="{{entity.founders}}" wx:key="name" data-key="{{item.key}}" data-type="people" bindtap="openEntity"><view><text>{{item.name}}</text><text>{{item.role}}</text></view><text>查看人物 ›</text></button></view>
     </view>
 
     <view wx:if="{{type === 'companies' && entity.investors.length}}" class="detail-section">
-      <text class="section-title serif">投资机构</text><text class="plain-copy">{{entity.investorsText}}</text>
+      <text class="section-title serif">机构库</text><view class="profile-list relation-list"><button wx:for="{{entity.investorLinks}}" wx:key="name" data-key="{{item.key}}" data-type="investors" bindtap="openEntity"><view><text>{{item.name}}</text><text>关联本企业融资</text></view><text>查看机构 ›</text></button></view>
     </view>
 
     <view wx:if="{{type !== 'companies'}}" class="detail-section">
       <text class="section-title serif">{{type === 'investors' ? '关注赛道' : '关联领域'}}</text><text class="plain-copy">{{entity.categoriesFullText}}</text>
+    </view>
+
+    <view wx:if="{{type !== 'companies'}}" class="detail-section">
+      <text class="section-title serif">关联企业</text><view class="profile-list relation-list"><button wx:for="{{entity.companyLinks}}" wx:key="name" data-key="{{item.key}}" data-type="companies" bindtap="openEntity"><view><text>{{item.name}}</text><text>{{type === 'investors' ? '已投企业' : '任职企业'}}</text></view><text>查看企业 ›</text></button></view>
     </view>
 
     <view class="detail-section">

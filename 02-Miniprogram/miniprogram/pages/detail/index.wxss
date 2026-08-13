@@ -1,5 +1,7 @@
 .detail-content { padding: 30rpx 28rpx 120rpx; }
 .identity { display: flex; gap: 20rpx; align-items: center; }
+.identity.entity-link { width: 100%; margin: 0; padding: 0 0 20rpx; border: 0; border-bottom: 1rpx solid #e5e8ec; border-radius: 0; background: transparent; color: inherit; line-height: 1.4; text-align: left; }
+.entity-link-note { flex: none; color: #9b6d20; font-size: 20rpx; }
 .avatar { display: flex; align-items: center; justify-content: center; width: 92rpx; height: 92rpx; border-radius: 50%; background: #071827; color: #fff; font-size: 34rpx; font-weight: 600; }
 .identity-copy { display: flex; flex: 1; flex-direction: column; gap: 8rpx; min-width: 0; }
 .company { overflow: hidden; color: #071827; font-size: 44rpx; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
@@ -20,6 +22,10 @@
 .simple-list { border-top: 1rpx solid #e5e8ec; }
 .simple-row { display: flex; gap: 20rpx; align-items: center; justify-content: space-between; min-height: 88rpx; border-bottom: 1rpx solid #e5e8ec; color: #071827; font-size: 26rpx; }
 .row-note { max-width: 220rpx; color: #6f7f8f; font-size: 22rpx; text-align: right; }
+.relation-row { width: 100%; margin: 0; border: 0; border-bottom: 1rpx solid #e5e8ec; border-radius: 0; background: transparent; line-height: 1.4; text-align: left; }
+.relation-row > view { display: flex; flex-direction: column; gap: 7rpx; min-width: 0; }
+.relation-row .row-note { max-width: none; text-align: left; }
+.relation-note { flex: none; color: #9b6d20; font-size: 20rpx; }
 .detail-list { border-top: 1rpx solid #e5e8ec; }
 .detail-item { display: flex; flex-direction: column; gap: 12rpx; padding: 22rpx 0; border-bottom: 1rpx solid #e5e8ec; }
 .detail-item-title { color: #071827; font-size: 27rpx; font-weight: 600; }
