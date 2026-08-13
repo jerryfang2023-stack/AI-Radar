@@ -1,0 +1,42 @@
+<view class="page-shell">
+  <app-header title="邀请好友" show-back />
+  <view class="page-content invite-content">
+    <view class="invite-hero">
+      <text class="invite-kicker">观澜同频邀请</text>
+      <text class="invite-heading serif">把有价值的 AI 商业情报，分享给同频的人</text>
+      <text class="invite-lead">新用户首次注册即可获得 7 天全部栏目体验；邀请关系确认后，邀请人获得 300 活跃积分。</text>
+      <view class="reward-grid">
+        <view><text>新用户获得</text><text class="serif">7 天</text><text>完整权益体验</text></view>
+        <view><text>邀请人获得</text><text class="serif">300 分</text><text>活跃积分</text></view>
+      </view>
+    </view>
+
+    <view class="invite-section">
+      <text class="section-title serif">好友可以获得什么</text>
+      <view class="value-list">
+        <view><text class="value-index">01</text><view><text>融资情报</text><text>快速掌握 AI 企业融资动态与资本动向</text></view></view>
+        <view><text class="value-index">02</text><view><text>生态图谱</text><text>查询企业、投资机构与核心人物档案</text></view></view>
+        <view><text class="value-index">03</text><view><text>商业观察</text><text>阅读周报与月报，理解变化而不只看消息</text></view></view>
+      </view>
+    </view>
+
+    <view class="invite-section">
+      <text class="section-title serif">邀请如何生效</text>
+      <view class="step-list">
+        <view><text>1</text><view><text>分享邀请</text><text>把观澜分享给需要 AI 商业情报的好友</text></view></view>
+        <view><text>2</text><view><text>好友首次注册</text><text>好友通过邀请进入并完成首次注册</text></view></view>
+        <view><text>3</text><view><text>积分到账</text><text>系统确认邀请关系后，向邀请人发放 300 活跃积分</text></view></view>
+      </view>
+    </view>
+
+    <view class="rule-card">
+      <text>邀请规则</text>
+      <text>每位新用户仅计入一次有效邀请；邀请关系及积分发放以系统确认结果为准。活跃积分不可提现，可用于兑换会员权益。</text>
+    </view>
+
+    <button wx:if="{{isInvitee}}" class="share-button" bindtap="openExperience">开始 7 天体验</button>
+    <button wx:else class="share-button" open-type="share">邀请好友加入</button>
+    <text wx:if="{{isInvitee}}" class="share-note">首次注册后自动开启 7 天完整权益体验。</text>
+    <text wx:else class="share-note">分享本身不会立即发放积分，好友完成首次注册并确认邀请关系后到账。</text>
+  </view>
+</view>

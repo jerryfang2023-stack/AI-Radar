@@ -12,6 +12,8 @@ const headerStyles = fs.readFileSync("miniprogram/components/app-header/index.wx
 const membershipSource = fs.readFileSync("miniprogram/pages/membership/index.wxml", "utf8");
 const membershipModelSource = fs.readFileSync("miniprogram/utils/membership-model.js", "utf8");
 const profileSource = fs.readFileSync("miniprogram/pages/profile/index.wxml", "utf8");
+const profileLogic = fs.readFileSync("miniprogram/pages/profile/index.js", "utf8");
+const inviteSource = fs.readFileSync("miniprogram/pages/invite/index.wxml", "utf8");
 const publicFiles = [
   "miniprogram/pages/terminal/index.wxml",
   "miniprogram/pages/market/index.wxml",
@@ -54,6 +56,17 @@ test("keeps observer growth primary and membership status compact on profile", (
   assert.doesNotMatch(compactMembership, /元\/月/u);
   assert.match(compactMembership, /开通会员/u);
   assert.match(profileSource, /邀请人得 300 活跃积分/u);
+});
+
+test("opens a dedicated invitation value page before sharing", () => {
+  assert.ok(appConfig.pages.includes("pages/invite/index"));
+  assert.match(profileLogic, /openInvite/u);
+  assert.match(profileSource, /bindtap="openInvite"/u);
+  assert.doesNotMatch(profileSource, /open-type="share"/u);
+  for (const copy of ["新用户首次注册即可获得 7 天全部栏目体验", "300 活跃积分", "融资情报", "生态图谱", "商业观察", "每位新用户仅计入一次有效邀请", "系统确认结果为准", "开始 7 天体验"]) {
+    assert.match(inviteSource, new RegExp(copy, "u"));
+  }
+  assert.match(inviteSource, /open-type="share"/u);
 });
 
 test("keeps list pages concise while preserving detail-page actions", () => {

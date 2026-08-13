@@ -35,16 +35,11 @@ Page({
   openFollows() { wx.navigateTo({ url: "/pages/follows/index" }); },
   openGrowth() { wx.navigateTo({ url: "/pages/growth/index" }); },
   openMembership() { wx.navigateTo({ url: "/pages/membership/index" }); },
+  openInvite() { wx.navigateTo({ url: "/pages/invite/index" }); },
   openTask(event) {
     const id = event.currentTarget.dataset.id;
     if (id === "follow") wx.navigateTo({ url: "/pages/follows/index" });
     else wx.switchTab({ url: "/pages/terminal/index" });
   },
 
-  onShareAppMessage() {
-    return {
-      title: "一起用观澜追踪 AI 融资情报",
-      path: "/pages/terminal/index?from=member_invite",
-    };
-  },
 });

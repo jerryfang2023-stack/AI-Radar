@@ -133,6 +133,7 @@ type View =
   | { kind: "follows" }
   | { kind: "growth" }
   | { kind: "membership" }
+  | { kind: "invite" }
   | { kind: "profile-edit" }
   | { kind: "compare" }
   | { kind: "entity"; entityType: EntityType; key: string };
@@ -373,7 +374,7 @@ export default function Prototype() {
   const [fundingDetails, setFundingDetails] = useState<Record<string, FundingDetail>>({});
   const [reportIndex, setReportIndex] = useState<ReportIndex | null>(null);
   const [reportDetails, setReportDetails] = useState<Record<string, ReportDetail>>({});
-  const [view, setView] = useState<View>({ kind: "tab", tab: "terminal" });
+  const [view, setView] = useState<View>(() => typeof window !== "undefined" && new URLSearchParams(window.location.search).get("invite") === "1" ? { kind: "invite" } : { kind: "tab", tab: "terminal" });
   const [lastTab, setLastTab] = useState<Tab>("terminal");
   const [query, setQuery] = useState("");
   const [region, setRegion] = useState("all");
@@ -497,17 +498,17 @@ export default function Prototype() {
     setToast(adding ? "关注成功" : "已取消关注");
   }
 
-  async function share(title: string) {
+  async function share(title: string, shareUrl = location.href) {
     try {
       if (navigator.share) {
-        await navigator.share({ title, url: location.href });
+        await navigator.share({ title, url: shareUrl });
         return;
       }
       if (navigator.clipboard?.writeText) {
-        await navigator.clipboard.writeText(location.href);
+        await navigator.clipboard.writeText(shareUrl);
       } else {
         const field = document.createElement("textarea");
-        field.value = location.href;
+        field.value = shareUrl;
         field.style.position = "fixed";
         field.style.opacity = "0";
         document.body.appendChild(field);
@@ -541,12 +542,13 @@ export default function Prototype() {
     if (view.kind === "follows") return <FollowsView categories={fundingIndex.categories} follows={follows} onBack={back} onToggle={toggleFollow} />;
     if (view.kind === "growth") return <GrowthView growth={growth} level={level} onBack={back} onRedeem={redeem} />;
     if (view.kind === "membership") return <MembershipView membership={membershipStatus} points={growth.balance} onBack={back} onGrowth={() => go({ kind: "growth" })} onSubscribe={() => setToast("付费开通暂未开放，可先体验或积分兑换")} />;
+    if (view.kind === "invite") return <InviteView isInvitee={new URLSearchParams(location.search).get("from") === "member_invite"} onBack={back} onExperience={() => showTab("terminal")} onShare={() => { const url = new URL(location.href); url.searchParams.set("invite", "1"); url.searchParams.set("from", "member_invite"); share("一起看懂 AI 商业变化，新用户可体验 7 天完整权益", url.toString()); }} />;
     if (view.kind === "profile-edit") return <ProfileEditView nickname={nickname} onChange={setNickname} onBack={back} />;
     if (view.kind === "compare") return <CompareView cards={selected.map((id) => cards.find((card) => card.id === id)).filter(Boolean) as FundingCard[]} onBack={back} />;
     if (view.kind === "entity") return <EntityDetailView entity={entityLibrary[view.entityType].find((item) => item.key === view.key)} type={view.entityType} onBack={back} onOpenFunding={(id) => openFunding(id, view)} onOpenEntity={(entityType, key) => go({ kind: "entity", entityType, key })} />;
     if (view.tab === "market") return <EntityLibraryView library={entityLibrary} onOpen={(entityType, key) => go({ kind: "entity", entityType, key })} />;
     if (view.tab === "observe") return <ObserveView index={reportIndex} type={reportType} onType={setReportType} onOpen={(id) => go({ kind: "report", id })} onSaved={() => go({ kind: "saved" })} />;
-    if (view.tab === "profile") return <ProfileView nickname={nickname} favorites={favorites.length} history={history.length} follows={follows.length} growth={growth} level={level} membership={membershipStatus} onOpen={(kind) => go({ kind })} onShare={() => share("一起用观澜追踪 AI 融资情报")} />;
+    if (view.tab === "profile") return <ProfileView nickname={nickname} favorites={favorites.length} history={history.length} follows={follows.length} growth={growth} level={level} membership={membershipStatus} onOpen={(kind) => go({ kind })} />;
     return <TerminalView index={fundingIndex} cards={filteredCards} query={query} onQuery={setQuery} favorites={favorites} selected={selected} onOpen={openFunding} onFavorite={toggleFavorite} onSelect={(id) => setSelected((current) => current.includes(id) ? current.filter((item) => item !== id) : current.length < 3 ? [...current, id] : current)} onFilter={() => setFilterOpen(true)} onSaved={() => go({ kind: "saved" })} onCompare={() => selected.length >= 2 ? go({ kind: "compare" }) : setToast("请至少选择 2 家公司")} />;
   })();
 
@@ -644,7 +646,7 @@ function ObserveView({ index, type, onType, onOpen, onSaved }: { index: ReportIn
   return <><AppHeader title="观察" action="我的收藏" onAction={onSaved} /><MobileScroll className="app-screen"><main className="screen-content observe-screen"><section className="report-intro"><span>GUANLAN RESEARCH</span><h2>AI 商业变化观察</h2><p>用周报追踪近期变化，用月报理解行业趋势与商业机会。</p></section><div className="segmented"><button className={type === "weekly" ? "active" : ""} onClick={() => onType("weekly")}>周报 {index.meta.weeklyCount}</button><button className={type === "monthly" ? "active" : ""} onClick={() => onType("monthly")}>月报 {index.meta.monthlyCount}</button></div>{featured ? <button className="featured-report" onClick={() => onOpen(featured.id)}><span className="feature-meta"><em>最新{featured.typeLabel}</em><i>{featured.issue}</i></span><strong>{featured.title}</strong><p>{featured.summary}</p>{featured.counts ? <span className="evidence-chips"><i>{featured.counts.signals} 条事件</i><i>{featured.counts.opinions} 条观点</i><i>{featured.counts.community} 条行业观察</i></span> : null}<span className="feature-footer"><i>{publicDateWindow(featured.window)}</i><em>阅读全文</em></span></button> : null}<SectionTitle title={`往期${type === "weekly" ? "周报" : "月报"}`} note="按发布日期倒序" /><section className="report-list">{reports.slice(1).map((report) => <button key={report.id} className="report-row" onClick={() => onOpen(report.id)}><span className="report-date"><strong>{report.dateShort}</strong><em>{report.issue}</em></span><span className="report-copy"><strong>{report.title}</strong><p>{report.summary}</p><span><i>{report.sectionCount} 个章节</i><em>查看全文</em></span></span></button>)}</section></main></MobileScroll></>;
 }
 
-function ProfileView({ nickname, favorites, history, follows, growth, level, membership, onOpen, onShare }: { nickname: string; favorites: number; history: number; follows: number; growth: GrowthState; level: ReturnType<typeof levelFor>; membership: ReturnType<typeof membershipFor>; onOpen: (kind: "saved" | "history" | "follows" | "growth" | "membership" | "profile-edit") => void; onShare: () => void }) {
+function ProfileView({ nickname, favorites, history, follows, growth, level, membership, onOpen }: { nickname: string; favorites: number; history: number; follows: number; growth: GrowthState; level: ReturnType<typeof levelFor>; membership: ReturnType<typeof membershipFor>; onOpen: (kind: "saved" | "history" | "follows" | "growth" | "membership" | "invite" | "profile-edit") => void }) {
   const tasks = [
     { id: "browse", title: "每日阅读 5 条情报", progress: Math.min(5, growth.browseIds.length), target: 5, points: 2 },
     { id: "favorite", title: "收藏 1 条情报", progress: favorites ? 1 : 0, target: 1, points: 3 },
@@ -656,12 +658,33 @@ function ProfileView({ nickname, favorites, history, follows, growth, level, mem
     <button className="membership-card" onClick={() => onOpen("membership")}><span><em>会员权益</em><strong>{membership.statusLabel}</strong><small>{membership.active ? `有效至 ${membership.activeUntil}` : "浏览全部栏目"}</small></span><i>{membership.active ? "续费会员" : "开通会员"}<ChevronRightIcon /></i></button>
     <SectionTitle title="成长任务" note="查看明细" onClick={() => onOpen("growth")} /><section className="profile-list">{tasks.map((task) => <button key={task.id} onClick={() => task.id === "follow" ? onOpen("follows") : undefined}><span><strong>{task.title}</strong><em>今日进度 {task.progress}/{task.target}</em></span><i className={growth.completed.includes(task.id) ? "done" : ""}>{growth.completed.includes(task.id) ? "已完成" : `+${task.points} 分`}</i></button>)}</section>
     <SectionTitle title="会员权益兑换" note="全部权益" onClick={() => onOpen("growth")} /><section className="profile-list benefits-preview">{BENEFITS.map((item) => <button key={item.id} onClick={() => onOpen("growth")}><img src="/brand/app-icon-light.svg" alt="" /><span><strong>{item.title}</strong><em>{item.description}</em></span><i>{item.cost} 分</i></button>)}</section>
-    <button className="invite-card" onClick={onShare}><span><strong>邀请好友 · 共同成长</strong><em>好友完成首次注册后，邀请人得 300 活跃积分</em></span><Share1Icon /></button>
+    <button className="invite-card" onClick={() => onOpen("invite")}><span><strong>邀请好友 · 共同成长</strong><em>好友完成首次注册后，邀请人得 300 活跃积分</em></span><i>查看详情 <ChevronRightIcon /></i></button>
   </main></MobileScroll></>;
 }
 
 function MembershipView({ membership, points, onBack, onGrowth, onSubscribe }: { membership: ReturnType<typeof membershipFor>; points: number; onBack: () => void; onGrowth: () => void; onSubscribe: () => void }) {
   return <><AppHeader title="会员中心" onBack={onBack} /><MobileScroll className="app-screen"><main className="screen-content sub-screen membership-screen"><section className="member-status"><em>当前权益</em><strong>{membership.statusLabel}</strong><span>{membership.active ? `剩余 ${membership.remainingDays} 天 · 有效至 ${membership.activeUntil}` : "体验期已结束，可开通会员或使用积分兑换"}</span></section><section className="member-plan"><header><span><strong>观澜会员</strong><em>所有栏目的完整浏览权</em></span><span><strong>30</strong><em>元/月起</em></span></header><section className="pricing-list">{PRICING_PLANS.map((plan) => <article key={plan.id}><span><strong>{plan.title}</strong>{plan.badge ? <i>{plan.badge}</i> : null}</span><span><strong>{plan.price}</strong><em>元 / {plan.unit}</em></span></article>)}</section><div>{MEMBER_RIGHTS.map((right) => <p key={right}><i>✓</i>{right}</p>)}</div><button onClick={onSubscribe}>选择会员套餐</button><small>新用户首次使用自动获得 7 天完整权益体验；月度、半年和年度会员均不自动续费。</small></section><button className="points-exchange" onClick={onGrowth}><span><strong>活跃积分兑换</strong><em>当前 {points} 分 · 可兑换 7 天或 30 天会员权益</em></span><i>去兑换</i></button><p className="boundary">会员有效期内可浏览全部栏目。积分兑换后，有效期会在当前权益结束日期之后顺延。</p></main></MobileScroll></>;
+}
+
+function InviteView({ isInvitee, onBack, onExperience, onShare }: { isInvitee: boolean; onBack: () => void; onExperience: () => void; onShare: () => void }) {
+  const values = [
+    ["01", "融资情报", "快速掌握 AI 企业融资动态与资本动向"],
+    ["02", "生态图谱", "查询企业、投资机构与核心人物档案"],
+    ["03", "商业观察", "阅读周报与月报，理解变化而不只看消息"],
+  ];
+  const steps = [
+    ["1", "分享邀请", "把观澜分享给需要 AI 商业情报的好友"],
+    ["2", "好友首次注册", "好友通过邀请进入并完成首次注册"],
+    ["3", "积分到账", "系统确认邀请关系后，向邀请人发放 300 活跃积分"],
+  ];
+  return <><AppHeader title="邀请好友" onBack={onBack} /><MobileScroll className="app-screen"><main className="screen-content sub-screen invite-screen">
+    <section className="invite-hero"><em>观澜同频邀请</em><h2>把有价值的 AI 商业情报，分享给同频的人</h2><p>新用户首次注册即可获得 7 天全部栏目体验；邀请关系确认后，邀请人获得 300 活跃积分。</p><div className="invite-reward-grid"><span><small>新用户获得</small><strong>7 天</strong><i>完整权益体验</i></span><span><small>邀请人获得</small><strong>300 分</strong><i>活跃积分</i></span></div></section>
+    <section className="invite-panel"><h3>好友可以获得什么</h3><div className="invite-value-list">{values.map(([index, title, copy]) => <article key={index}><b>{index}</b><span><strong>{title}</strong><small>{copy}</small></span></article>)}</div></section>
+    <section className="invite-panel"><h3>邀请如何生效</h3><div className="invite-step-list">{steps.map(([index, title, copy]) => <article key={index}><b>{index}</b><span><strong>{title}</strong><small>{copy}</small></span></article>)}</div></section>
+    <section className="invite-rules"><strong>邀请规则</strong><p>每位新用户仅计入一次有效邀请；邀请关系及积分发放以系统确认结果为准。活跃积分不可提现，可用于兑换会员权益。</p></section>
+    <button className="invite-primary" onClick={isInvitee ? onExperience : onShare}>{isInvitee ? null : <Share1Icon />}{isInvitee ? "开始 7 天体验" : "邀请好友加入"}</button>
+    <p className="invite-note">{isInvitee ? "首次注册后自动开启 7 天完整权益体验。" : "分享本身不会立即发放积分，好友完成首次注册并确认邀请关系后到账。"}</p>
+  </main></MobileScroll></>;
 }
 
 function FundingDetailView({ card, watched, onBack, onFavorite, onOpenEntity }: { card?: FundingDetail; watched: boolean; onBack: () => void; onFavorite: () => void; onOpenEntity: (type: EntityType, key: string) => void }) {

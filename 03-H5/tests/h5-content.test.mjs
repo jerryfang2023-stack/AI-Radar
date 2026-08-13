@@ -71,6 +71,17 @@ test("profile capabilities are present", async () => {
   assert.match(profile, /邀请人得 300 活跃积分/u);
 });
 
+test("H5 explains invitation value and rules before sharing", async () => {
+  const source = await readFile(new URL("../src/Prototype.tsx", import.meta.url), "utf8");
+  assert.match(source, /\{ kind: "invite" \}/u);
+  assert.match(source, /onOpen\("invite"\)/u);
+  for (const copy of ["新用户首次注册即可获得 7 天全部栏目体验", "300 活跃积分", "融资情报", "生态图谱", "商业观察", "每位新用户仅计入一次有效邀请", "系统确认结果为准", "开始 7 天体验"]) {
+    assert.match(source, new RegExp(copy, "u"));
+  }
+  assert.match(source, /邀请好友加入/u);
+  assert.match(source, /searchParams\.set\("invite", "1"\)/u);
+});
+
 test("public UI does not expose internal workflow language", async () => {
   const source = await readFile(new URL("../src/Prototype.tsx", import.meta.url), "utf8");
   const forbidden = [
