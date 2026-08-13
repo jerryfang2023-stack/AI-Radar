@@ -419,6 +419,11 @@ export default function Prototype() {
   useEffect(() => { localStorage.setItem(STORE.membership, JSON.stringify(membership)); }, [membership]);
   useEffect(() => { if (!toast) return; const timer = setTimeout(() => setToast(""), 1900); return () => clearTimeout(timer); }, [toast]);
   useEffect(() => { const timer = setTimeout(() => setSplashVisible(false), 1500); return () => clearTimeout(timer); }, []);
+  useEffect(() => {
+    const forceMobileLayout = new URLSearchParams(window.location.search).get("mobile") === "1";
+    document.documentElement.classList.toggle("forced-mobile-layout", forceMobileLayout);
+    return () => document.documentElement.classList.remove("forced-mobile-layout");
+  }, []);
 
   const activeTab = view.kind === "tab" ? view.tab : lastTab;
   const level = levelFor(growth.lifetime);

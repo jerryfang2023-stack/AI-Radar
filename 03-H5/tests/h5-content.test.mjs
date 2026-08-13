@@ -34,6 +34,14 @@ test("H5 opens with the confirmed Guanlan brand splash", async () => {
   assert.match(styles, /prefers-reduced-motion/u);
 });
 
+test("H5 offers a forced phone layout for wide preview browsers", async () => {
+  const runtime = await readFile(new URL("../src/Prototype.tsx", import.meta.url), "utf8");
+  const styles = await readFile(new URL("../src/prototype.css", import.meta.url), "utf8");
+
+  assert.match(runtime, /get\("mobile"\) === "1"/u);
+  assert.match(styles, /html\.forced-mobile-layout/u);
+});
+
 test("funding and report datasets are available", async () => {
   const fundingIndex = await readJson("funding-index.json");
   const fundingDetails = await readJson("funding-details.json");

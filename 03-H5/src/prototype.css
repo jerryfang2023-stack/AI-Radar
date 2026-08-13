@@ -417,6 +417,34 @@ button { color: inherit; }
 .empty strong { font: 800 17px Georgia, "Noto Serif SC", serif; }
 .empty p { max-width: 240px; margin: 0; color: var(--muted); font-size: 11px; line-height: 1.6; }
 
+html.forced-mobile-layout body { overflow: hidden; background: #fbfaf6; }
+html.forced-mobile-layout #root { width: min(100vw, 430px) !important; height: 100dvh !important; margin: auto; overflow: hidden; }
+html.forced-mobile-layout .mobile-app-viewport,
+html.forced-mobile-layout .phone-stage,
+html.forced-mobile-layout .phone-scale-box,
+html.forced-mobile-layout .phone-device,
+html.forced-mobile-layout .device-screen { width: 100% !important; height: 100% !important; min-width: 0 !important; min-height: 0 !important; }
+html.forced-mobile-layout .phone-stage { display: block; padding: 0; }
+html.forced-mobile-layout .phone-scale-box,
+html.forced-mobile-layout .phone-device { position: relative !important; inset: auto !important; transform: none !important; }
+html.forced-mobile-layout .device-screen { position: relative !important; inset: 0 !important; border-radius: 0 !important; box-shadow: none !important; cursor: auto !important; }
+html.forced-mobile-layout .device-screen,
+html.forced-mobile-layout .device-screen *,
+html.forced-mobile-layout .device-screen button,
+html.forced-mobile-layout .device-screen a,
+html.forced-mobile-layout .device-screen input,
+html.forced-mobile-layout .device-screen textarea { cursor: auto !important; }
+html.forced-mobile-layout .device-menu-bar,
+html.forced-mobile-layout .phone-bezel,
+html.forced-mobile-layout .device-camera,
+html.forced-mobile-layout .status-bar,
+html.forced-mobile-layout .home-indicator-svg,
+html.forced-mobile-layout .android-navigation-bar,
+html.forced-mobile-layout .mobile-cursor,
+html.forced-mobile-layout .keyboard-dock { display: none !important; }
+html.forced-mobile-layout .mobile-app-viewport[data-platform="android"][data-keyboard-visible="false"] { bottom: 0; }
+html.forced-mobile-layout .mobile-page { --mobile-safe-area-height: env(safe-area-inset-bottom, 0px); }
+
 @media (max-width: 600px) {
   :root { --safe-top: env(safe-area-inset-top, 0px); }
   .app-header { position: fixed; }
