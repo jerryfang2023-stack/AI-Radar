@@ -269,11 +269,6 @@ button { color: inherit; }
 .progress { display: block; height: 5px; overflow: hidden; border-radius: 99px; background: rgba(255,255,255,.2); }
 .progress i { display: block; height: 100%; border-radius: inherit; background: var(--gold); }
 .growth-footer { color: #dbe4ec; font-size: 10px; }
-.stats { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 14px; border: 1px solid var(--line); border-radius: 15px; background: white; }
-.stats button { display: grid; gap: 3px; border: 0; border-right: 1px solid var(--line); padding: 15px; background: transparent; }
-.stats button:last-child { border-right: 0; }
-.stats strong { font: 800 19px Georgia, serif; }
-.stats span { color: var(--muted); font-size: 10px; }
 .profile-list { overflow: hidden; border: 1px solid var(--line); border-radius: 15px; background: white; }
 .profile-list button { width: 100%; display: flex; justify-content: space-between; align-items: center; border: 0; border-bottom: 1px solid var(--line); padding: 13px; background: white; text-align: left; }
 .profile-list button:last-child { border-bottom: 0; }

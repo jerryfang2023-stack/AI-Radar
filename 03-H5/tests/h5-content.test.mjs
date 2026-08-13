@@ -65,6 +65,7 @@ test("profile capabilities are present", async () => {
   }
   const profile = source.slice(source.indexOf("function ProfileView"), source.indexOf("function MembershipView"));
   assert.ok(profile.indexOf('className="growth-card"') < profile.indexOf('className="membership-card"'));
+  assert.doesNotMatch(profile, /className="stats"/u);
   assert.doesNotMatch(profile.slice(profile.indexOf('className="membership-card"')), /元\/月起/u);
 });
 

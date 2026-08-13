@@ -22,11 +22,6 @@
 .progress-track { height: 8rpx; margin-top: 12rpx; overflow: hidden; border-radius: 999rpx; background: rgba(255,255,255,.16); }
 .progress-value { height: 100%; border-radius: inherit; background: #c8a766; }
 .growth-action { margin: 24rpx -28rpx 0; padding: 19rpx 28rpx; background: rgba(255,255,255,.07); color: #e8d6ae; font-size: 23rpx; }
-.stats-card { display: grid; grid-template-columns: repeat(3, 1fr); padding: 24rpx 0; }
-.stats-card > view { display: flex; flex-direction: column; gap: 6rpx; align-items: center; border-right: 1rpx solid #e5e8ec; }
-.stats-card > view:last-child { border-right: 0; }
-.stat-value { color: #071827; font-size: 36rpx; font-weight: 600; }
-.stat-label { color: #6f7f8f; font-size: 23rpx; }
 .section-heading { display: flex; align-items: center; justify-content: space-between; margin-top: 8rpx; }
 .section-heading > text:first-child { color: #071827; font-size: 30rpx; font-weight: 600; }
 .section-heading > text:last-child { color: #9b6d20; font-size: 23rpx; }

@@ -47,6 +47,7 @@ test("exposes the confirmed membership plans and point exchange entry", () => {
 
 test("keeps observer growth primary and membership status compact on profile", () => {
   assert.ok(profileSource.indexOf('class="growth-card"') < profileSource.indexOf('class="membership-card"'));
+  assert.doesNotMatch(profileSource, /class="stats-card/u);
   const compactMembership = profileSource.slice(profileSource.indexOf('class="membership-card"'), profileSource.indexOf('class="section-heading"'));
   assert.match(compactMembership, /会员权益/u);
   assert.match(compactMembership, /有效至/u);

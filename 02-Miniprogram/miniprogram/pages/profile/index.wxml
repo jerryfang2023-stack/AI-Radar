@@ -30,12 +30,6 @@
       <view class="growth-action">继续研究，解锁更多情报权益</view>
     </view>
 
-    <view class="stats-card paper-card">
-      <view bindtap="openHistory"><text class="stat-value mono">{{stats.browse}}</text><text class="stat-label">浏览</text></view>
-      <view bindtap="openWatchlist"><text class="stat-value mono">{{stats.favorite}}</text><text class="stat-label">收藏</text></view>
-      <view bindtap="openFollows"><text class="stat-value mono">{{stats.follow}}</text><text class="stat-label">关注</text></view>
-    </view>
-
     <view class="membership-card" bindtap="openMembership">
       <view class="membership-copy"><text class="membership-kicker">会员权益</text><text class="membership-status">{{growth.membership.statusLabel}}</text></view>
       <view class="membership-meta">
