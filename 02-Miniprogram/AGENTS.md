@@ -18,7 +18,7 @@ This is the native WeChat Mini Program frontstage for Funding Insights.
 - Those three tab pages use one shared branded header in the top safe area: the H5 horizontal logo at left, one concise four-character title centered on screen, and a fine divider below. Do not repeat English headings, dates, explanatory subtitles, or internal validation language above the primary content.
 - Do not show collection controls or selection checkboxes in the financing list. Collection and selection belong to detail or dedicated management pages.
 - Financing discovery is search-led: search company, institution, product, or sector; do not add industry/category chip rails, category filter buttons, or industry badges to financing-list rows.
-- 商业主体 integrates the company and investor libraries. Preserve the PC portal search scopes: 企业 / 产品 / 赛道 and 机构 / 已投公司 / 赛道.
+- 商业主体 integrates company, investor, and core-person libraries. Preserve the PC portal search scopes: 企业 / 产品 / 赛道, 机构 / 已投公司 / 赛道, and 人物 / 企业 / 职务. Every entity card opens its own entity profile before any financing record.
 - Keep the 我的 tab independent from the first-three-tab visual sync unless a task explicitly includes it.
 
 ## Validation

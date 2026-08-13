@@ -109,7 +109,7 @@ function projectPortalCard(card) {
       ...summary,
       companySummary: text(company.summary) || "公司介绍暂未披露",
       website: text(company.website),
-      founders: list(company.founders).map((item) => ({ name: text(item.name), role: text(item.role) })).filter((item) => item.name),
+      founders: list(company.founders).map((item) => ({ id: text(item.entityId || item.entity_id || item.id), name: text(item.name), role: text(item.role) })).filter((item) => item.name),
       cumulativeAmount,
       disclosureStatus: text(financing.disclosureStatus || financing.investorDisclosureStatus) || "未披露",
       investors,

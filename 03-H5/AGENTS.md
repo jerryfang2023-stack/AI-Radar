@@ -6,7 +6,7 @@
 
 - The H5 preserves the four confirmed columns: 融资、商业主体、观察、我的.
 - Financing discovery is search-led: search company, institution, product, or sector; do not add industry/category chip rails, category filter buttons, or industry badges to financing-list rows.
-- 商业主体 integrates the company and investor libraries and preserves the PC portal search scopes: 企业 / 产品 / 赛道 and 机构 / 已投公司 / 赛道.
+- 商业主体 integrates company, investor, and core-person libraries and preserves the PC portal search scopes: 企业 / 产品 / 赛道, 机构 / 已投公司 / 赛道, and 人物 / 企业 / 职务. Every entity card opens its own entity profile before any financing record.
 - 观察展示周报与月报；我的覆盖浏览、收藏、关注、积分权益、邀请分享和个人资料。
 - On phone-width browsers the deliverable runs as a direct full-screen H5; on desktop it keeps the device preview frame for review.
 - Production keeps the PC portal at `/` and publishes this H5 at `/h5/`; production builds set `H5_BASE=/h5/`.

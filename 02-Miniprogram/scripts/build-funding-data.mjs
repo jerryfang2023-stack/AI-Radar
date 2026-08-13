@@ -122,6 +122,7 @@ function projectCard(card) {
     ...summary,
     companySummary: text(company.summary) || "公司介绍暂未披露",
     website: text(company.website),
+    founders: list(company.founders).map((item) => ({ id: text(item.entity_id || item.id), name: text(item.name), role: text(item.role) })).filter((item) => item.name),
     cumulativeAmount: cumulative,
     disclosureStatus: text(financing.disclosure_status || financing.investor_disclosure_status) || "未披露",
     investors,

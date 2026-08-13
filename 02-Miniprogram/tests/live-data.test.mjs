@@ -4,12 +4,14 @@ import test from "node:test";
 
 const require = createRequire(import.meta.url);
 const { projectPortalFundingData, projectPortalReportData } = require("../miniprogram/utils/live-data.js");
+const fallbackFunding = require("../miniprogram/data/funding-index.js");
+const fixtureDate = fallbackFunding.meta.latestDate;
 
 test("projects the VPS funding contract into the native mini program contract", () => {
   const source = {
     meta: {
-      latestDate: "2026-08-12",
-      generatedAt: "2026-08-12T12:00:00.000Z",
+      latestDate: fixtureDate,
+      generatedAt: `${fixtureDate}T12:00:00.000Z`,
       cardCount: 1,
       sourceSchemaVersion: "FUNDING-INSIGHT-FRONTSTAGE-V1.5",
       sourceColumnVersion: "FUNDING-INSIGHT-V1.5.0-china-market",
@@ -17,13 +19,13 @@ test("projects the VPS funding contract into the native mini program contract", 
     },
     cards: [{
       id: "FI-test",
-      asOfDate: "2026-08-12",
+      asOfDate: fixtureDate,
       marketRegion: "CN",
       company: { name: "测试公司", summary: "测试公司介绍", headquarters: "上海", founders: [{ name: "张三", role: "创始人" }] },
       financing: {
         round: "A轮",
         roundCode: "series_a",
-        announcedAt: "2026-08-12",
+        announcedAt: fixtureDate,
         amountNormalized: { currency: "CNY", value: 100000000, display_zh: "1 亿元人民币" },
         cumulativeAmount: { normalized: { display_zh: "1 亿元人民币" } },
         investors: [{ name: "测试资本", role: "本轮领投" }],
@@ -40,7 +42,7 @@ test("projects the VPS funding contract into the native mini program contract", 
         investmentThesis: { statement: "投资逻辑", evidenceSignals: ["验证信号"], risks: ["验证风险"] },
         investmentRationale: [{ institution: "测试资本", rationale: "机构理由" }],
       },
-      historicalRounds: [{ round: "A轮", announcedAt: "2026-08-12", amountNormalized: { display_zh: "1 亿元人民币" }, isCurrent: true }],
+      historicalRounds: [{ round: "A轮", announcedAt: fixtureDate, amountNormalized: { display_zh: "1 亿元人民币" }, isCurrent: true }],
       sources: [{ id: "source-1", title: "测试来源", publisher: "测试媒体", url: "https://example.com/a" }],
       sourceCount: 1,
     }],

@@ -1,0 +1,48 @@
+<view class="page-shell">
+  <app-header title="{{title}}" show-back="{{true}}" />
+  <view wx:if="{{entity}}" class="page-content entity-detail">
+    <view class="entity-hero">
+      <text class="eyebrow">{{type === 'companies' ? (entity.categoriesText || 'AI 企业') : (type === 'investors' ? '投资机构' : '核心人物')}}</text>
+      <view class="hero-title"><view class="avatar serif">{{entity.initial}}</view><view><text class="name serif">{{entity.name}}</text><text class="role" wx:if="{{type === 'people'}}">{{entity.roleText}}</text></view></view>
+      <text wx:if="{{type === 'companies'}}" class="deck">{{entity.summary}}</text>
+      <text wx:elif="{{type === 'investors'}}" class="deck">已投企业：{{entity.companiesText}}</text>
+      <text wx:else class="deck">关联企业：{{entity.companiesText}}</text>
+    </view>
+
+    <view class="metric-grid" wx:if="{{type === 'companies'}}">
+      <view><text>融资轮次</text><strong>{{entity.roundCount}} 笔</strong></view><view><text>投资机构</text><strong>{{entity.investorCount}} 家</strong></view><view><text>创始团队</text><strong>{{entity.founderCount}} 人</strong></view>
+    </view>
+    <view class="metric-grid" wx:elif="{{type === 'investors'}}">
+      <view><text>参与轮次</text><strong>{{entity.roundCount}} 笔</strong></view><view><text>领投轮次</text><strong>{{entity.leadCount}} 笔</strong></view><view><text>已投企业</text><strong>{{entity.companyCount}} 家</strong></view>
+    </view>
+    <view class="metric-grid" wx:else>
+      <view><text>关联企业</text><strong>{{entity.companyCount}} 家</strong></view><view><text>融资动态</text><strong>{{entity.roundCount}} 笔</strong></view><view><text>最近动态</text><strong>{{entity.latestDate}}</strong></view>
+    </view>
+
+    <view wx:if="{{type === 'companies'}}" class="detail-section">
+      <text class="section-title serif">企业信息</text>
+      <view class="fact-list"><view><text>总部</text><strong>{{entity.headquarters}}</strong></view><view><text>产品</text><strong>{{entity.productsText}}</strong></view><view><text>所属赛道</text><strong>{{entity.categoriesFullText}}</strong></view></view>
+      <button wx:if="{{entity.website}}" class="link-button" bindtap="copyWebsite">复制企业官网</button>
+    </view>
+
+    <view wx:if="{{type === 'companies' && entity.founders.length}}" class="detail-section">
+      <text class="section-title serif">创始团队</text>
+      <view class="profile-list"><view wx:for="{{entity.founders}}" wx:key="name"><text>{{item.name}}</text><text>{{item.role}}</text></view></view>
+    </view>
+
+    <view wx:if="{{type === 'companies' && entity.investors.length}}" class="detail-section">
+      <text class="section-title serif">投资机构</text><text class="plain-copy">{{entity.investorsText}}</text>
+    </view>
+
+    <view wx:if="{{type !== 'companies'}}" class="detail-section">
+      <text class="section-title serif">{{type === 'investors' ? '关注赛道' : '关联领域'}}</text><text class="plain-copy">{{entity.categoriesFullText}}</text>
+    </view>
+
+    <view class="detail-section">
+      <text class="section-title serif">{{type === 'companies' ? '融资历史' : (type === 'investors' ? '最近投资活动' : '关联企业动态')}}</text>
+      <button wx:for="{{entity.rounds}}" wx:key="id" class="activity-row" data-id="{{item.id}}" bindtap="openFunding">
+        <view><text class="activity-title">{{type === 'companies' ? item.round : item.company}}</text><text class="activity-meta">{{item.date}} · {{item.round}}</text></view><view><strong>{{item.amount}}</strong><text>查看融资 ›</text></view>
+      </button>
+    </view>
+  </view>
+</view>

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import {
   ArrowLeftIcon,
   BarChartIcon,
@@ -45,6 +45,8 @@ type FundingCard = {
 
 type FundingDetail = FundingCard & {
   companySummary: string;
+  website: string;
+  founders: Array<{ id?: string; name: string; role: string }>;
   cumulativeAmount: string;
   investors: Array<{ name: string; role: string }>;
   signals: string[];
@@ -74,6 +76,7 @@ type FundingIndex = {
   categories: Array<{ id: string; name: string; count: number }>;
   cards: FundingCard[];
 };
+type EntityRound = { id: string; company?: string; date: string; round: string; amount: string; role?: string };
 type CompanyEntity = {
   key: string;
   name: string;
@@ -82,7 +85,12 @@ type CompanyEntity = {
   headquarters: string;
   products: string[];
   categories: string[];
+  investors: string[];
+  founders: Array<{ id?: string; name: string; role: string }>;
+  rounds: EntityRound[];
   roundCount: number;
+  investorCount: number;
+  founderCount: number;
   latest: FundingCard;
   searchText: string;
 };
@@ -92,23 +100,41 @@ type InvestorEntity = {
   initial: string;
   companies: string[];
   categories: string[];
+  rounds: EntityRound[];
   roundCount: number;
   leadCount: number;
+  companyCount: number;
   latest: FundingCard;
   searchText: string;
 };
+type PersonEntity = {
+  key: string;
+  name: string;
+  initial: string;
+  roles: string[];
+  companies: string[];
+  categories: string[];
+  rounds: EntityRound[];
+  roundCount: number;
+  companyCount: number;
+  latest: FundingCard;
+  searchText: string;
+};
+type EntityType = "companies" | "investors" | "people";
+type EntityLibrary = { companies: CompanyEntity[]; investors: InvestorEntity[]; people: PersonEntity[] };
 type ReportIndex = { meta: { weeklyCount: number; monthlyCount: number }; reports: ReportSummary[] };
 type Tab = "terminal" | "market" | "observe" | "profile";
 type View =
   | { kind: "tab"; tab: Tab }
-  | { kind: "funding"; id: string }
+  | { kind: "funding"; id: string; returnTo?: { kind: "entity"; entityType: EntityType; key: string } }
   | { kind: "report"; id: string }
   | { kind: "saved" }
   | { kind: "history" }
   | { kind: "follows" }
   | { kind: "growth" }
   | { kind: "profile-edit" }
-  | { kind: "compare" };
+  | { kind: "compare" }
+  | { kind: "entity"; entityType: EntityType; key: string };
 
 type GrowthState = {
   balance: number;
@@ -190,67 +216,78 @@ function appendUnique(values: string[], value: string) {
   if (value && !values.includes(value)) values.push(value);
 }
 
-function buildEntityLibrary(cards: FundingCard[], details: Record<string, FundingDetail>) {
+function buildEntityLibrary(cards: FundingCard[], details: Record<string, FundingDetail>): EntityLibrary {
   const sortedCards = [...cards].sort((left, right) => right.date.localeCompare(left.date) || right.amountValue - left.amountValue);
-  const companyMap = new Map<string, Omit<CompanyEntity, "searchText">>();
-  const investorMap = new Map<string, Omit<InvestorEntity, "searchText">>();
+  const companyMap = new Map<string, Omit<CompanyEntity, "searchText" | "roundCount" | "investorCount" | "founderCount">>();
+  const investorMap = new Map<string, Omit<InvestorEntity, "searchText" | "roundCount" | "companyCount">>();
+  const personMap = new Map<string, Omit<PersonEntity, "searchText" | "roundCount" | "companyCount">>();
 
   sortedCards.forEach((card) => {
+    const detail = details[card.id];
     const companyKey = card.company.trim().toLowerCase();
     const company = companyMap.get(companyKey) || {
-      key: companyKey,
-      name: card.company,
-      initial: card.initial,
-      summary: card.summary,
-      headquarters: card.headquarters,
-      products: [],
-      categories: [],
-      roundCount: 0,
-      latest: card,
+      key: companyKey, name: card.company, initial: card.initial,
+      summary: detail?.companySummary || card.summary, headquarters: card.headquarters,
+      products: [], categories: [], investors: [], founders: [], rounds: [], latest: card,
     };
-    company.roundCount += 1;
+    company.rounds.push({ id: card.id, date: card.date, round: card.round, amount: card.amount });
     (card.products || []).forEach((product) => appendUnique(company.products, product));
     appendUnique(company.products, card.productForm);
     appendUnique(company.categories, card.category);
     appendUnique(company.categories, card.subcategory);
+    (detail?.investors || []).forEach((item) => appendUnique(company.investors, item.name));
+    (detail?.founders || []).forEach((item) => {
+      if (!company.founders.some((founder) => founder.name === item.name)) company.founders.push({ id: item.id || "", name: item.name, role: item.role || "创始团队" });
+    });
     companyMap.set(companyKey, company);
 
-    const detailInvestors = details[card.id]?.investors || [];
-    const investors = detailInvestors.length ? detailInvestors : card.leadInvestor && card.leadInvestor !== "投资方未披露" ? [{ name: card.leadInvestor, role: "" }] : [];
-    const seen = new Set<string>();
-    investors.forEach((item) => {
+    const investorRows = detail?.investors?.length ? detail.investors : card.leadInvestor && card.leadInvestor !== "投资方未披露" ? [{ name: card.leadInvestor, role: "" }] : [];
+    const seenInvestors = new Set<string>();
+    investorRows.forEach((item) => {
       const name = item.name.trim();
       const investorKey = name.toLowerCase();
-      if (!name || seen.has(investorKey)) return;
-      seen.add(investorKey);
+      if (!name || seenInvestors.has(investorKey)) return;
+      seenInvestors.add(investorKey);
       const investor = investorMap.get(investorKey) || {
-        key: investorKey,
-        name,
-        initial: name.slice(0, 1).toUpperCase(),
-        companies: [],
-        categories: [],
-        roundCount: 0,
-        leadCount: 0,
-        latest: card,
+        key: investorKey, name, initial: name.slice(0, 1).toUpperCase(), companies: [], categories: [], rounds: [], leadCount: 0, latest: card,
       };
-      investor.roundCount += 1;
-      if (item.role.includes("领投")) investor.leadCount += 1;
+      investor.rounds.push({ id: card.id, company: card.company, date: card.date, round: card.round, amount: card.amount, role: item.role || "参投" });
+      if (/领投|lead/i.test(item.role) || name === card.leadInvestor) investor.leadCount += 1;
       appendUnique(investor.companies, card.company);
       appendUnique(investor.categories, card.category);
       appendUnique(investor.categories, card.subcategory);
       investorMap.set(investorKey, investor);
     });
+
+    (detail?.founders || []).forEach((founder) => {
+      const name = founder.name.trim();
+      const personKey = founder.id ? `id:${founder.id}` : `${name.toLowerCase()}|${companyKey}`;
+      if (!name) return;
+      const person = personMap.get(personKey) || {
+        key: personKey, name, initial: name.slice(0, 1).toUpperCase(), roles: [], companies: [], categories: [], rounds: [], latest: card,
+      };
+      appendUnique(person.roles, founder.role || "创始团队");
+      appendUnique(person.companies, card.company);
+      appendUnique(person.categories, card.category);
+      appendUnique(person.categories, card.subcategory);
+      if (!person.rounds.some((roundItem) => roundItem.id === card.id)) person.rounds.push({ id: card.id, company: card.company, date: card.date, round: card.round, amount: card.amount });
+      personMap.set(personKey, person);
+    });
   });
 
-  const companies = [...companyMap.values()].map((item) => ({
-    ...item,
+  const companies: CompanyEntity[] = [...companyMap.values()].map((item) => ({
+    ...item, roundCount: item.rounds.length, investorCount: item.investors.length, founderCount: item.founders.length,
     searchText: [item.name, item.summary, item.headquarters, ...item.products, ...item.categories].join(" ").toLowerCase(),
   })).sort((left, right) => right.latest.date.localeCompare(left.latest.date) || left.name.localeCompare(right.name, "zh-CN"));
-  const investors = [...investorMap.values()].map((item) => ({
-    ...item,
+  const investors: InvestorEntity[] = [...investorMap.values()].map((item) => ({
+    ...item, roundCount: item.rounds.length, companyCount: item.companies.length,
     searchText: [item.name, ...item.companies, ...item.categories].join(" ").toLowerCase(),
   })).sort((left, right) => right.roundCount - left.roundCount || right.leadCount - left.leadCount || left.name.localeCompare(right.name, "zh-CN"));
-  return { companies, investors };
+  const people: PersonEntity[] = [...personMap.values()].map((item) => ({
+    ...item, roundCount: item.rounds.length, companyCount: item.companies.length,
+    searchText: [item.name, ...item.roles, ...item.companies, ...item.categories].join(" ").toLowerCase(),
+  })).sort((left, right) => right.companyCount - left.companyCount || right.latest.date.localeCompare(left.latest.date) || left.name.localeCompare(right.name, "zh-CN"));
+  return { companies, investors, people };
 }
 
 function AppHeader({ title, onBack, action, onAction }: { title: string; onBack?: () => void; action?: string; onAction?: () => void }) {
@@ -344,6 +381,7 @@ export default function Prototype() {
   const activeTab = view.kind === "tab" ? view.tab : lastTab;
   const level = levelFor(growth.lifetime);
   const cards = fundingIndex?.cards || [];
+  const entityLibrary = useMemo(() => buildEntityLibrary(cards, fundingDetails), [cards, fundingDetails]);
   const filteredCards = useMemo(() => cards.filter((card) => {
     const keyword = query.trim().toLowerCase();
     if (keyword && !`${card.company} ${card.category} ${card.subcategory} ${card.productForm} ${(card.products || []).join(" ")} ${card.summary} ${card.leadInvestor} ${card.investorsText}`.toLowerCase().includes(keyword)) return false;
@@ -379,7 +417,7 @@ export default function Prototype() {
 
   function back() { go({ kind: "tab", tab: lastTab }); }
 
-  function openFunding(id: string) {
+  function openFunding(id: string, returnTo?: { kind: "entity"; entityType: EntityType; key: string }) {
     setHistory((current) => [id, ...current.filter((item) => item !== id)].slice(0, 100));
     setGrowth((current) => {
       if (current.browseIds.includes(id)) return current;
@@ -394,7 +432,7 @@ export default function Prototype() {
       };
       return { ...current, browseIds };
     });
-    go({ kind: "funding", id });
+    go({ kind: "funding", id, returnTo });
   }
 
   function toggleFavorite(id: string) {
@@ -447,7 +485,7 @@ export default function Prototype() {
   }
 
   const page = (() => {
-    if (view.kind === "funding") return <FundingDetailView card={fundingDetails[view.id]} watched={favorites.includes(view.id)} onBack={back} onFavorite={() => toggleFavorite(view.id)} />;
+    if (view.kind === "funding") return <FundingDetailView card={fundingDetails[view.id]} watched={favorites.includes(view.id)} onBack={view.returnTo ? () => go(view.returnTo!) : back} onFavorite={() => toggleFavorite(view.id)} />;
     if (view.kind === "report") return <ReportDetailView report={reportDetails[view.id]} onBack={back} onShare={() => share(reportDetails[view.id]?.title || "观澜研究报告")} />;
     if (view.kind === "saved") return <SavedView cards={cards.filter((card) => favorites.includes(card.id))} onBack={back} onOpen={openFunding} onFavorite={toggleFavorite} />;
     if (view.kind === "history") return <HistoryView cards={history.map((id) => cards.find((card) => card.id === id)).filter(Boolean) as FundingCard[]} onBack={back} onOpen={openFunding} />;
@@ -455,7 +493,8 @@ export default function Prototype() {
     if (view.kind === "growth") return <GrowthView growth={growth} level={level} onBack={back} onRedeem={redeem} />;
     if (view.kind === "profile-edit") return <ProfileEditView nickname={nickname} onChange={setNickname} onBack={back} />;
     if (view.kind === "compare") return <CompareView cards={selected.map((id) => cards.find((card) => card.id === id)).filter(Boolean) as FundingCard[]} onBack={back} />;
-    if (view.tab === "market") return <EntityLibraryView cards={cards} details={fundingDetails} onOpen={openFunding} />;
+    if (view.kind === "entity") return <EntityDetailView entity={entityLibrary[view.entityType].find((item) => item.key === view.key)} type={view.entityType} onBack={back} onOpenFunding={(id) => openFunding(id, view)} />;
+    if (view.tab === "market") return <EntityLibraryView library={entityLibrary} onOpen={(entityType, key) => go({ kind: "entity", entityType, key })} />;
     if (view.tab === "observe") return <ObserveView index={reportIndex} type={reportType} onType={setReportType} onOpen={(id) => go({ kind: "report", id })} onSaved={() => go({ kind: "saved" })} />;
     if (view.tab === "profile") return <ProfileView nickname={nickname} favorites={favorites.length} history={history.length} follows={follows.length} growth={growth} level={level} onOpen={(kind) => go({ kind })} onShare={() => share("一起用观澜追踪 AI 融资情报")} />;
     return <TerminalView index={fundingIndex} cards={filteredCards} query={query} onQuery={setQuery} favorites={favorites} selected={selected} onOpen={openFunding} onFavorite={toggleFavorite} onSelect={(id) => setSelected((current) => current.includes(id) ? current.filter((item) => item !== id) : current.length < 3 ? [...current, id] : current)} onFilter={() => setFilterOpen(true)} onSaved={() => go({ kind: "saved" })} onCompare={() => selected.length >= 2 ? go({ kind: "compare" }) : setToast("请至少选择 2 家公司")} />;
@@ -494,33 +533,59 @@ function FundingRow({ card, watched, selected, onOpen, onFavorite, onSelect }: {
   return <article className={`funding-row ${selected ? "selected" : ""}`}><button className="company-avatar" onClick={onOpen}>{card.initial}</button><button className="funding-copy" onClick={onOpen}><span className="company-line"><strong>{card.company}</strong></span><span className="funding-facts">{card.round} · {card.date}</span></button><div className="funding-side"><strong>{card.amount}</strong><div><button aria-label="选择比较" className={selected ? "selected" : ""} onClick={onSelect}>{selected ? <CheckCircledIcon /> : <BarChartIcon />}</button><button aria-label={watched ? "取消收藏" : "收藏"} onClick={onFavorite}>{watched ? <BookmarkFilledIcon /> : <BookmarkIcon />}</button></div></div></article>;
 }
 
-function EntityLibraryView({ cards, details, onOpen }: { cards: FundingCard[]; details: Record<string, FundingDetail>; onOpen: (id: string) => void }) {
-  const [mode, setMode] = useState<"companies" | "investors">("companies");
+function EntityLibraryView({ library, onOpen }: { library: EntityLibrary; onOpen: (type: EntityType, key: string) => void }) {
+  const [mode, setMode] = useState<EntityType>("companies");
   const [entityQuery, setEntityQuery] = useState("");
-  const [limit, setLimit] = useState(40);
-  const library = useMemo(() => buildEntityLibrary(cards, details), [cards, details]);
+  const [limit, setLimit] = useState(24);
   const queryValue = entityQuery.trim().toLowerCase();
-  const items = (mode === "companies" ? library.companies : library.investors).filter((item) => !queryValue || item.searchText.includes(queryValue));
+  const items = library[mode].filter((item) => !queryValue || item.searchText.includes(queryValue));
   const visibleItems = items.slice(0, limit);
-  const switchMode = (nextMode: "companies" | "investors") => { setMode(nextMode); setEntityQuery(""); setLimit(40); };
+  const switchMode = (nextMode: EntityType) => { setMode(nextMode); setEntityQuery(""); setLimit(24); };
+  const placeholder = mode === "companies" ? "企业 / 产品 / 赛道" : mode === "investors" ? "机构 / 已投公司 / 赛道" : "人物 / 企业 / 职务";
+  const sortNote = mode === "companies" ? "按最近融资排序" : mode === "investors" ? "按投资活跃度排序" : "按关联企业与最近动态排序";
   return <><AppHeader title="商业主体" /><MobileScroll className="app-screen"><main className="screen-content entity-library-screen">
-    <section className="library-summary"><div><strong>{library.companies.length}</strong><span>家企业</span></div><div><strong>{library.investors.length}</strong><span>家投资机构</span></div></section>
-    <div className="segmented library-tabs"><button className={mode === "companies" ? "active" : ""} onClick={() => switchMode("companies")}>企业库</button><button className={mode === "investors" ? "active" : ""} onClick={() => switchMode("investors")}>投资机构</button></div>
-    <label className="library-search"><MagnifyingGlassIcon /><KeyboardInput value={entityQuery} onChange={(event) => { setEntityQuery(event.target.value); setLimit(40); }} placeholder={mode === "companies" ? "企业 / 产品 / 赛道" : "机构 / 已投公司 / 赛道"} aria-label={mode === "companies" ? "搜索企业" : "搜索投资机构"} /></label>
-    <div className="library-result"><span>共 {items.length} 条结果</span><span>{mode === "companies" ? "按最近融资排序" : "按参与轮次数排序"}</span></div>
-    <section className="entity-library-list">{visibleItems.map((item) => mode === "companies" ? <CompanyEntityRow key={item.key} item={item as CompanyEntity} onOpen={onOpen} /> : <InvestorEntityRow key={item.key} item={item as InvestorEntity} onOpen={onOpen} />)}</section>
-    {!items.length ? <Empty title={mode === "companies" ? "未找到相关企业" : "未找到相关机构"} copy="换一个企业、机构、产品或赛道关键词再试。" /> : null}
-    {visibleItems.length < items.length ? <button className="library-load-more" onClick={() => setLimit((current) => current + 40)}>继续浏览</button> : null}
+    <section className="library-summary"><div><strong>{library.companies.length}</strong><span>企业</span></div><div><strong>{library.investors.length}</strong><span>机构</span></div><div><strong>{library.people.length}</strong><span>人物</span></div></section>
+    <div className="segmented library-tabs"><button className={mode === "companies" ? "active" : ""} onClick={() => switchMode("companies")}>企业库</button><button className={mode === "investors" ? "active" : ""} onClick={() => switchMode("investors")}>投资机构</button><button className={mode === "people" ? "active" : ""} onClick={() => switchMode("people")}>核心人物</button></div>
+    <label className="library-search"><MagnifyingGlassIcon /><KeyboardInput value={entityQuery} onChange={(event) => { setEntityQuery(event.target.value); setLimit(24); }} placeholder={placeholder} aria-label="搜索商业主体" /></label>
+    <div className="library-result"><span>共 {items.length} 条结果</span><span>{sortNote}</span></div>
+    <section className="entity-library-list">{visibleItems.map((item) => mode === "companies" ? <CompanyEntityCard key={item.key} item={item as CompanyEntity} onOpen={() => onOpen("companies", item.key)} /> : mode === "investors" ? <InvestorEntityCard key={item.key} item={item as InvestorEntity} onOpen={() => onOpen("investors", item.key)} /> : <PersonEntityCard key={item.key} item={item as PersonEntity} onOpen={() => onOpen("people", item.key)} />)}</section>
+    {!items.length ? <Empty title="未找到相关主体" copy="换一个企业、机构、人物、产品或赛道关键词再试。" /> : null}
+    {visibleItems.length < items.length ? <button className="library-load-more" onClick={() => setLimit((current) => current + 24)}>继续浏览</button> : null}
   </main></MobileScroll></>;
 }
 
-function CompanyEntityRow({ item, onOpen }: { item: CompanyEntity; onOpen: (id: string) => void }) {
+function CompanyEntityCard({ item, onOpen }: { item: CompanyEntity; onOpen: () => void }) {
   const secondary = [item.headquarters, item.products.slice(0, 2).join("、")].filter(Boolean).join(" · ") || "企业信息待补充";
-  return <button className="entity-library-row" onClick={() => onOpen(item.latest.id)}><span className="entity-avatar">{item.initial}</span><span className="entity-copy"><strong>{item.name}</strong><em>{secondary}</em><small>{item.categories.slice(0, 2).join(" · ")}</small></span><span className="entity-metrics"><strong>{item.latest.amount}</strong><em>{item.roundCount} 笔融资</em><small>{item.latest.date}</small></span></button>;
+  return <button className="entity-card" onClick={onOpen}><span className="entity-eyebrow">{item.categories.slice(0, 2).join(" · ") || "AI 企业"}</span><span className="entity-title"><i className="entity-avatar">{item.initial}</i><strong>{item.name}</strong></span><span className="entity-sub">{secondary}</span><span className="entity-card-metrics"><i><small>融资轮次</small><strong>{item.roundCount} 笔</strong></i><i><small>投资机构</small><strong>{item.investorCount} 家</strong></i></span><span className="entity-card-footer"><small>最近融资 {item.latest.date} · {item.latest.round}</small><em>查看档案 ›</em></span></button>;
 }
 
-function InvestorEntityRow({ item, onOpen }: { item: InvestorEntity; onOpen: (id: string) => void }) {
-  return <button className="entity-library-row" onClick={() => onOpen(item.latest.id)}><span className="entity-avatar">{item.initial}</span><span className="entity-copy"><strong>{item.name}</strong><em>{item.companies.slice(0, 3).join("、") || "已投公司待补充"}</em><small>{item.categories.slice(0, 2).join(" · ")}</small></span><span className="entity-metrics"><strong>{item.roundCount} 笔</strong><em>领投 {item.leadCount} 笔</em><small>{item.latest.date}</small></span></button>;
+function InvestorEntityCard({ item, onOpen }: { item: InvestorEntity; onOpen: () => void }) {
+  return <button className="entity-card" onClick={onOpen}><span className="entity-eyebrow">投资机构</span><span className="entity-title"><i className="entity-avatar">{item.initial}</i><strong>{item.name}</strong></span><span className="entity-sub">{item.companies.slice(0, 3).join("、") || "已投企业待补充"}</span><span className="entity-card-metrics"><i><small>参与轮次</small><strong>{item.roundCount} 笔</strong></i><i><small>领投轮次</small><strong>{item.leadCount} 笔</strong></i></span><span className="entity-card-footer"><small>最近出手 {item.latest.date}</small><em>查看档案 ›</em></span></button>;
+}
+
+function PersonEntityCard({ item, onOpen }: { item: PersonEntity; onOpen: () => void }) {
+  return <button className="entity-card" onClick={onOpen}><span className="entity-eyebrow">核心人物</span><span className="entity-title"><i className="entity-avatar">{item.initial}</i><strong>{item.name}</strong></span><span className="entity-sub">{item.roles.join("、")} · {item.companies.join("、")}</span><span className="entity-card-metrics"><i><small>关联企业</small><strong>{item.companyCount} 家</strong></i><i><small>融资动态</small><strong>{item.roundCount} 笔</strong></i></span><span className="entity-card-footer"><small>最近关联动态 {item.latest.date}</small><em>查看档案 ›</em></span></button>;
+}
+
+function EntityDetailView({ entity, type, onBack, onOpenFunding }: { entity?: CompanyEntity | InvestorEntity | PersonEntity; type: EntityType; onBack: () => void; onOpenFunding: (id: string) => void }) {
+  if (!entity) return <Loading />;
+  const title = type === "companies" ? "企业档案" : type === "investors" ? "机构档案" : "人物档案";
+  const deck = type === "companies" ? (entity as CompanyEntity).summary : type === "investors" ? `已投企业：${(entity as InvestorEntity).companies.join("、")}` : `关联企业：${(entity as PersonEntity).companies.join("、")}`;
+  const metrics = type === "companies"
+    ? [["融资轮次", `${(entity as CompanyEntity).roundCount} 笔`], ["投资机构", `${(entity as CompanyEntity).investorCount} 家`], ["创始团队", `${(entity as CompanyEntity).founderCount} 人`]]
+    : type === "investors"
+      ? [["参与轮次", `${(entity as InvestorEntity).roundCount} 笔`], ["领投轮次", `${(entity as InvestorEntity).leadCount} 笔`], ["已投企业", `${(entity as InvestorEntity).companyCount} 家`]]
+      : [["关联企业", `${(entity as PersonEntity).companyCount} 家`], ["融资动态", `${(entity as PersonEntity).roundCount} 笔`], ["最近动态", entity.latest.date]];
+  return <><AppHeader title={title} onBack={onBack} /><MobileScroll className="app-screen"><main className="screen-content entity-detail-screen">
+    <section className="entity-detail-hero"><span>{type === "companies" ? entity.categories.slice(0, 2).join(" · ") || "AI 企业" : type === "investors" ? "投资机构" : "核心人物"}</span><div><i>{entity.initial}</i><h2>{entity.name}</h2></div><p>{deck}</p></section>
+    <section className="entity-detail-metrics">{metrics.map(([label, value]) => <div key={label}><span>{label}</span><strong>{value}</strong></div>)}</section>
+    {type === "companies" ? <><EntitySection title="企业信息"><dl className="entity-facts"><div><dt>总部</dt><dd>{(entity as CompanyEntity).headquarters}</dd></div><div><dt>产品</dt><dd>{(entity as CompanyEntity).products.join("、") || "暂未披露"}</dd></div><div><dt>所属赛道</dt><dd>{entity.categories.join("、") || "暂未分类"}</dd></div></dl></EntitySection>{(entity as CompanyEntity).founders.length ? <EntitySection title="创始团队"><div className="entity-profile-list">{(entity as CompanyEntity).founders.map((founder) => <div key={founder.name}><strong>{founder.name}</strong><span>{founder.role}</span></div>)}</div></EntitySection> : null}{(entity as CompanyEntity).investors.length ? <EntitySection title="投资机构"><p>{(entity as CompanyEntity).investors.join("、")}</p></EntitySection> : null}</> : <EntitySection title={type === "investors" ? "关注赛道" : "关联领域"}><p>{entity.categories.join("、") || "暂未分类"}</p></EntitySection>}
+    <EntitySection title={type === "companies" ? "融资历史" : type === "investors" ? "最近投资活动" : "关联企业动态"}><div className="entity-activity-list">{entity.rounds.map((roundItem) => <button key={roundItem.id} onClick={() => onOpenFunding(roundItem.id)}><span><strong>{type === "companies" ? roundItem.round : roundItem.company}</strong><small>{roundItem.date} · {roundItem.round}</small></span><span><strong>{roundItem.amount}</strong><small>查看融资 ›</small></span></button>)}</div></EntitySection>
+  </main></MobileScroll></>;
+}
+
+function EntitySection({ title, children }: { title: string; children: ReactNode }) {
+  return <section className="entity-section"><h3>{title}</h3>{children}</section>;
 }
 
 function ObserveView({ index, type, onType, onOpen, onSaved }: { index: ReportIndex; type: "weekly" | "monthly"; onType: (value: "weekly" | "monthly") => void; onOpen: (id: string) => void; onSaved: () => void }) {

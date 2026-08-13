@@ -12,6 +12,9 @@ test("H5 contains all four confirmed columns", async () => {
   assert.match(source, /title="商业主体"/u);
   assert.match(source, /企业库/u);
   assert.match(source, /投资机构/u);
+  assert.match(source, /核心人物/u);
+  assert.match(source, /人物 \/ 企业 \/ 职务/u);
+  assert.match(source, /function EntityDetailView/u);
   assert.doesNotMatch(source, /category-carousel|融资分类|全部市场/u);
   for (const internalCopy of ["融资终端", "多源核验", "已验证信号", "当前公开样本概览"]) {
     assert.doesNotMatch(source, new RegExp(internalCopy, "u"));

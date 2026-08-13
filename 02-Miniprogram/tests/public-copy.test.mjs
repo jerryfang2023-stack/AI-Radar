@@ -5,12 +5,14 @@ import test from "node:test";
 const appConfig = JSON.parse(fs.readFileSync("miniprogram/app.json", "utf8"));
 const terminalSource = fs.readFileSync("miniprogram/pages/terminal/index.wxml", "utf8");
 const marketSource = fs.readFileSync("miniprogram/pages/market/index.wxml", "utf8");
+const marketLogic = fs.readFileSync("miniprogram/pages/market/index.js", "utf8");
 const watchlistSource = fs.readFileSync("miniprogram/pages/watchlist/index.wxml", "utf8");
 const headerSource = fs.readFileSync("miniprogram/components/app-header/index.wxml", "utf8");
 const headerStyles = fs.readFileSync("miniprogram/components/app-header/index.wxss", "utf8");
 const publicFiles = [
   "miniprogram/pages/terminal/index.wxml",
   "miniprogram/pages/market/index.wxml",
+  "miniprogram/pages/entity-detail/index.wxml",
   "miniprogram/pages/watchlist/index.wxml",
   "miniprogram/pages/detail/index.wxml",
   "miniprogram/pages/follows/index.wxml",
@@ -39,8 +41,10 @@ test("keeps list pages concise while preserving detail-page actions", () => {
   assert.doesNotMatch(terminalSource, /category-chip|市场类别|全部市场/u);
   assert.match(marketSource, /企业库/u);
   assert.match(marketSource, /投资机构/u);
-  assert.match(marketSource, /企业 \/ 产品 \/ 赛道/u);
-  assert.match(marketSource, /机构 \/ 已投公司 \/ 赛道/u);
+  assert.match(marketSource, /核心人物/u);
+  assert.match(marketLogic, /企业 \/ 产品 \/ 赛道/u);
+  assert.match(marketLogic, /机构 \/ 已投公司 \/ 赛道/u);
+  assert.match(marketLogic, /人物 \/ 企业 \/ 职务/u);
   assert.doesNotMatch(`${marketSource}\n${watchlistSource}`, /AI FUNDING|GUANLAN RESEARCH|更新日期/u);
 });
 
