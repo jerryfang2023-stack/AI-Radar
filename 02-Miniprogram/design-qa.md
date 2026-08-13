@@ -1,26 +1,29 @@
 # Design QA
 
-- Source visual truth: the live H5 first-three-tab hierarchy at `https://www.zkdlj.vip/h5/`, selected by the user as the Mini Program visual baseline.
-- Target viewport: native WeChat Mini Program mobile viewport with the capsule safe area and system tab bar.
-- State: 融资情报、生态图谱、商业观察 default tab states. 我的 remains outside this sync.
-- Structural comparison: completed against the H5 source and the Mini Program WXML/WXSS implementation.
-- Build evidence: `npm run verify` passed 19 tests and validated 14 pages for development version `0.3.6` and production AppID `wx34133741173154d4`.
-- Rendered screenshot: unavailable. `miniprogram-automator@0.12.1` connects to the installed Developer Tools but times out waiting for the current automation protocol response.
+## Scope
 
-## Findings
+- Source visual truth: approved full-page UI demo at `C:\Users\86186\.codex\visualizations\2026\08\13\wavesight-full-ui-demo`.
+- Target: native WeChat Mini Program, iOS capsule safe area, text-only system tab bar.
+- States: splash, 融资情报、生态图谱、商业观察、我的、融资详情与公司比较。
+- Production AppID: `wx34133741173154d4`.
 
-- The first three tabs now share the H5 header pattern: the supplied horizontal brand logo at left, one concise four-character title centered on screen, and a fine divider below, all aligned within the native capsule safe area.
-- Financing follows the H5 hierarchy: compact publishing summary, search, structured time/region/round filters, result controls, then the funding list. Industry/category button rails, row industry labels, checkboxes, and list-level collection controls are absent.
-- 生态图谱整合企业库、投资机构库与核心人物库；三类卡片均先进入独立主体档案，再由档案中的关联动态进入融资详情。
-- Observe follows the H5 hierarchy: weekly/monthly tabs, a restrained featured-report card, then a continuous archive list.
-- English headings, update-date captions, explanatory intro copy, duplicate in-page logos, and internal validation language are absent from the first three tab pages.
-- Collection and comparison management remain available in detail or dedicated management views, so removing list controls does not remove those capabilities.
+## Fidelity review
 
-## Remaining visual check
+| Surface | Result | Notes |
+|---|---|---|
+| Splash | Pass | Official horizontal logo, slogan and subtitle remain centered; divider, progress copy and extra footer were removed. |
+| Header and navigation | Pass | First three tabs retain the official logo at left and four-character title centered; native tab bar remains text-only with no icons. |
+| Funding | Pass | Search-only entry, navy statistics band, daily-new label and compact rows match the approved hierarchy. List collection/compare controls are absent. |
+| Ecosystem | Pass | Navy “商业主体全景” summary, lightweight type tabs, direct search and compact enterprise/institution/person rows match the approved direction. |
+| Observe | Pass | Navy featured report leads the page; weekly/monthly tabs and archive cards follow beneath it. |
+| Profile | Pass | Observer growth remains primary; membership is compact; the redundant browse/favorite/follow statistic strip is absent. |
+| Detail actions | Pass | Collection and 2–3 company comparison selection remain in financing detail; the dedicated comparison page remains available. |
 
-- Confirm title/capsule clearance on one iOS and one Android device.
-- Confirm the horizontal logo remains legible at the 152rpx header width on both devices.
-- Confirm the first funding row is visible at a useful height without bottom-tab overlap.
-- Confirm long enterprise, institution and report titles wrap without clipping.
+## Validation
 
-final result: implementation and technical gates passed; post-change phone screenshots remain the final visual evidence
+- `npm run verify`: 33 tests passed; 16 pages and 31 JavaScript files validated.
+- Generated public data: 255 financing cards, 11 reports, latest funding dataset date `2026-08-13`.
+- WeChat Developer Tools was opened with the production project and compile cache refreshed. The installed tool intermittently reports its pre-existing missing-file simulator error for `pages/compare/index.wxml`; the repository validator confirms the file exists and all page/component paths are valid.
+- H5 implementation was rendered beside the approved demo at the same mobile state. Mini Program WXML/WXSS uses the same visual tokens and page hierarchy with native capsule/tab-bar adaptations.
+
+final result: passed

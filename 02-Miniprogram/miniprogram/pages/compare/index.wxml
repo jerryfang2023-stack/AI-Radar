@@ -10,9 +10,8 @@
           <view class="compare-fact"><text>披露日期</text><text class="value mono">{{item.date}}</text></view>
           <view class="compare-fact"><text>累计融资</text><text class="value mono">{{item.cumulativeAmount}}</text></view>
           <view class="compare-fact"><text>总部</text><text class="value">{{item.headquarters}}</text></view>
-          <view class="compare-block"><text class="label">主要投资方</text><text wx:for="{{item.investors}}" wx:key="name" class="line">{{item.name}} · {{item.role || '角色未披露'}}</text><text wx:if="{{!item.investors.length}}" class="line muted">未披露</text></view>
-          <view class="compare-block"><text class="label">首要信号</text><text wx:for="{{item.signals}}" wx:key="*this" wx:if="{{index < 3}}" class="line">{{index + 1}}. {{item}}</text><text wx:if="{{!item.signals.length}}" class="line muted">未披露</text></view>
-          <view class="evidence"><icon type="success" size="14" color="#2F8C57" />{{item.evidenceLabel}}</view>
+          <view class="compare-block"><text class="label">主要投资方</text><text class="line">{{item.investorsText || '未披露'}}</text></view>
+          <view class="compare-block"><text class="label">核心判断</text><text class="line">{{item.capitalJudgment || item.summary}}</text></view>
         </view>
       </view>
     </scroll-view>

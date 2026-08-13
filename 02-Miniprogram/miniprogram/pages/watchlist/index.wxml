@@ -1,19 +1,16 @@
 <view class="page-shell">
   <app-header title="商业观察" />
   <view class="page-content report-content">
-    <view class="report-tabs" role="tablist">
-      <button class="report-tab {{activeType === 'weekly' ? 'active' : ''}}" data-type="weekly" bindtap="switchType">周报 {{meta.weeklyCount}}</button>
-      <button class="report-tab {{activeType === 'monthly' ? 'active' : ''}}" data-type="monthly" bindtap="switchType">月报 {{meta.monthlyCount}}</button>
-    </view>
-
     <view wx:if="{{featured}}" class="featured-report" data-id="{{featured.id}}" bindtap="openReport">
-      <view class="featured-meta"><text>最新{{activeLabel}}</text><text class="mono">{{featured.issue}}</text></view>
+      <view class="featured-meta"><text>本期核心判断</text><text class="mono">{{featured.issue}}</text></view>
       <text class="featured-title serif">{{featured.title}}</text>
       <text class="featured-summary">{{featured.summary}}</text>
-      <view wx:if="{{featured.counts}}" class="evidence-row">
-        <text>{{featured.counts.signals}} 条事件</text><text>{{featured.counts.opinions}} 条观点</text><text>{{featured.counts.community}} 条观察</text>
-      </view>
-      <view class="featured-action"><text class="mono">{{featured.window}}</text><text>阅读全文</text></view>
+      <view class="featured-action"><text class="mono">{{featured.window}}</text><text>阅读完整{{activeLabel}}</text></view>
+    </view>
+
+    <view class="report-tabs" role="tablist">
+      <button class="report-tab {{activeType === 'weekly' ? 'active' : ''}}" data-type="weekly" bindtap="switchType">周报</button>
+      <button class="report-tab {{activeType === 'monthly' ? 'active' : ''}}" data-type="monthly" bindtap="switchType">月报</button>
     </view>
 
     <view class="archive-heading"><text class="serif">往期{{activeLabel}}</text><text>按发布日期倒序</text></view>

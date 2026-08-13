@@ -5,6 +5,7 @@
 .tab-header-row { position: relative; display: flex; align-items: center; min-height: 64rpx; }
 .tab-header-logo { display: block; width: 152rpx; height: auto; }
 .tab-header-title { position: absolute; right: 0; left: 0; overflow: hidden; color: #071827; font-size: 34rpx; font-weight: 700; line-height: 1.2; letter-spacing: 2rpx; text-align: center; text-overflow: ellipsis; white-space: nowrap; pointer-events: none; }
+.tab-right-button { position: absolute; z-index: 2; min-height: 64rpx; margin: 0; padding: 0; border: 0; background: transparent; color: #9b6d20; font-size: 24rpx; line-height: 64rpx; white-space: nowrap; }
 .header-title { overflow: hidden; color: #071827; font-size: 38rpx; font-weight: 700; line-height: 1.2; text-overflow: ellipsis; white-space: nowrap; }
 .header-title.is-centered { position: absolute; right: 190rpx; left: 190rpx; text-align: center; }
 .back-button, .right-button { min-height: 64rpx; margin: 0; padding: 0; border: 0; background: transparent; font-size: 26rpx; line-height: 64rpx; white-space: nowrap; }

@@ -3,6 +3,7 @@ Component({
     title: { type: String, value: "" },
     showBack: { type: Boolean, value: false },
     rightLabel: { type: String, value: "" },
+    showLogo: { type: Boolean, value: true },
   },
   data: { statusBarHeight: 20, rightInset: 96, tabSafeHeight: 80, menuTop: 26, menuHeight: 32 },
   lifetimes: {

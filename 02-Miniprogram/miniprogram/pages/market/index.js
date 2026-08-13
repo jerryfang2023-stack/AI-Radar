@@ -2,9 +2,9 @@ const { getFundingData, refreshFundingData } = require("../../utils/live-data.js
 const { buildEntityLibrary, filterEntities } = require("../../utils/entity-library.js");
 
 const MODE_META = {
-  companies: { placeholder: "企业 / 产品 / 赛道", sortNote: "按最近融资排序", emptyCopy: "换一个企业、产品或赛道名称试试。" },
-  investors: { placeholder: "机构 / 已投公司 / 赛道", sortNote: "按投资活跃度排序", emptyCopy: "换一个机构、已投公司或赛道名称试试。" },
-  people: { placeholder: "人物 / 企业 / 职务", sortNote: "按关联企业与最近动态排序", emptyCopy: "换一个人物、企业或职务名称试试。" },
+  companies: { modeLabel: "企业", placeholder: "企业 / 产品 / 赛道", sortNote: "按最近融资排序", emptyCopy: "换一个企业、产品或赛道名称试试。" },
+  investors: { modeLabel: "机构", placeholder: "机构 / 已投公司 / 赛道", sortNote: "按投资活跃度排序", emptyCopy: "换一个机构、已投公司或赛道名称试试。" },
+  people: { modeLabel: "人物", placeholder: "人物 / 企业 / 职务", sortNote: "按关联企业与最近动态排序", emptyCopy: "换一个人物、企业或职务名称试试。" },
 };
 
 Page({

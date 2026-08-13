@@ -331,10 +331,10 @@ function buildEntityLibrary(cards: FundingCard[], details: Record<string, Fundin
   return { companies, investors, people };
 }
 
-function AppHeader({ title, onBack, action, onAction }: { title: string; onBack?: () => void; action?: string; onAction?: () => void }) {
+function AppHeader({ title, onBack, action, onAction, brand = true }: { title: string; onBack?: () => void; action?: string; onAction?: () => void; brand?: boolean }) {
   return (
     <header className="app-header">
-      {onBack ? <button className="header-button back" onClick={onBack} aria-label="返回"><ArrowLeftIcon />返回</button> : <img src="/brand/logo-wavesight.svg" alt="观澜 AI" />}
+      {onBack ? <button className="header-button back" onClick={onBack} aria-label="返回"><ArrowLeftIcon />返回</button> : brand ? <img src="/brand/logo-wavesight.svg" alt="观澜 AI" /> : <span className="header-spacer" />}
       <h1>{title}</h1>
       {action ? <button className="header-button action" onClick={onAction}>{action}</button> : <span className="header-spacer" />}
     </header>
@@ -346,26 +346,21 @@ function SplashScreen({ onEnter }: { onEnter: () => void }) {
     <button className="splash-screen" type="button" onClick={onEnter} aria-label="进入观澜融资情报">
       <span className="splash-brand-stage">
         <img className="splash-logo" src="/brand/logo-wavesight.svg" alt="观澜 AI" />
-        <span className="splash-divider" aria-hidden="true" />
         <strong className="splash-slogan">洞察趋势 · 智见未来</strong>
         <span className="splash-description">AI 融资情报与市场观察</span>
-      </span>
-      <span className="splash-footer">
-        <span className="splash-progress" aria-hidden="true"><i /></span>
-        <span>观澜 AI</span>
       </span>
     </button>
   );
 }
 
 function BottomNav({ active, onChange }: { active: Tab; onChange: (tab: Tab) => void }) {
-  const items: Array<{ id: Tab; label: string; icon: typeof BarChartIcon }> = [
-    { id: "terminal", label: "融资", icon: ReaderIcon },
-    { id: "market", label: "生态", icon: MagnifyingGlassIcon },
-    { id: "observe", label: "观察", icon: EyeOpenIcon },
-    { id: "profile", label: "我的", icon: PersonIcon },
+  const items: Array<{ id: Tab; label: string }> = [
+    { id: "terminal", label: "融资" },
+    { id: "market", label: "生态" },
+    { id: "observe", label: "观察" },
+    { id: "profile", label: "我的" },
   ];
-  return <nav className="bottom-nav">{items.map((item) => { const Icon = item.icon; return <button key={item.id} className={active === item.id ? "active" : ""} onClick={() => onChange(item.id)}><Icon /><span>{item.label}</span></button>; })}</nav>;
+  return <nav className="bottom-nav" aria-label="主栏目">{items.map((item) => <button key={item.id} className={active === item.id ? "active" : ""} onClick={() => onChange(item.id)}>{item.label}</button>)}</nav>;
 }
 
 export default function Prototype() {
@@ -553,7 +548,7 @@ export default function Prototype() {
   }
 
   const page = (() => {
-    if (view.kind === "funding") return <FundingDetailView card={fundingDetails[view.id]} watched={favorites.includes(view.id)} onBack={view.returnTo ? () => go(view.returnTo!) : back} onFavorite={() => toggleFavorite(view.id)} onOpenEntity={(entityType, key) => go({ kind: "entity", entityType, key })} />;
+    if (view.kind === "funding") return <FundingDetailView card={fundingDetails[view.id]} watched={favorites.includes(view.id)} compared={selected.includes(view.id)} onBack={view.returnTo ? () => go(view.returnTo!) : back} onFavorite={() => toggleFavorite(view.id)} onToggleCompare={() => setSelected((current) => current.includes(view.id) ? current.filter((item) => item !== view.id) : current.length < 3 ? [...current, view.id] : current)} onOpenEntity={(entityType, key) => go({ kind: "entity", entityType, key })} />;
     if (view.kind === "report") return <ReportDetailView report={reportDetails[view.id]} onBack={back} onShare={() => share(reportDetails[view.id]?.title || "观澜研究报告")} />;
     if (view.kind === "saved") return <SavedView cards={cards.filter((card) => favorites.includes(card.id))} onBack={back} onOpen={openFunding} onFavorite={toggleFavorite} />;
     if (view.kind === "history") return <HistoryView cards={history.map((id) => cards.find((card) => card.id === id)).filter(Boolean) as FundingCard[]} onBack={back} onOpen={openFunding} />;
@@ -574,7 +569,6 @@ export default function Prototype() {
     <div className="guanlan-app">
       {page}
       {view.kind === "tab" ? <BottomNav active={view.tab} onChange={showTab} /> : null}
-      {selected.length ? <button className="compare-fab" onClick={() => selected.length >= 2 ? go({ kind: "compare" }) : setToast("请再选择 1 家公司")}>比较 {selected.length}/3</button> : null}
       <BottomSheet open={filterOpen} onOpenChange={setFilterOpen} title="筛选融资情报" description="筛选只影响当前融资列表" snap={0.62}>
         <FilterGroup label="地区" value={region} options={[{ id: "all", name: "全部" }, { id: "china", name: "中国总部" }, { id: "overseas", name: "海外总部" }, { id: "undisclosed", name: "未披露" }]} onChange={setRegion} />
         <FilterGroup label="轮次" value={round} options={[{ id: "all", name: "全部" }, { id: "early", name: "种子/天使" }, { id: "growth", name: "A/B/C轮" }, { id: "late", name: "D轮以后" }, { id: "other", name: "其他" }]} onChange={setRound} />
@@ -600,17 +594,23 @@ function Loading() {
 }
 
 function TerminalView(props: { index: FundingIndex; cards: FundingCard[]; query: string; onQuery: (value: string) => void; favorites: string[]; selected: string[]; onOpen: (id: string) => void; onFavorite: (id: string) => void; onSelect: (id: string) => void; onFilter: () => void; onSaved: () => void; onCompare: () => void }) {
+  const todayCount = props.index.cards.filter((card) => card.date === props.index.meta.latestDate).length;
+  const weekCount = props.index.cards.filter((card) => {
+    const latest = new Date(`${props.index.meta.latestDate}T00:00:00`);
+    const current = new Date(`${card.date}T00:00:00`);
+    return Number.isFinite(current.getTime()) && latest.getTime() - current.getTime() <= 6 * 86400000;
+  }).length;
   return <><AppHeader title="融资情报" action={`收藏 ${props.favorites.length}`} onAction={props.onSaved} /><MobileScroll className="app-screen"><main className="screen-content terminal-screen">
-    <section className="terminal-intro"><div><span>已发布融资情报</span><strong>{props.index.meta.cardCount}</strong></div><p>更新至<br />{props.index.meta.latestDate}</p></section>
-    <div className="search-row"><label className="search-box"><MagnifyingGlassIcon /><KeyboardInput value={props.query} onChange={(event) => props.onQuery(event.target.value)} placeholder="公司 / 机构 / 产品" aria-label="搜索公司、机构或产品" /></label><button className="filter-button" onClick={props.onFilter}><MixerHorizontalIcon /></button></div>
-    <div className="list-heading"><span>共 {props.cards.length} 条结果</span><button onClick={props.onCompare}>公司比较</button></div>
-    <section className="funding-list">{props.cards.map((card) => <FundingRow key={card.id} card={card} watched={props.favorites.includes(card.id)} selected={props.selected.includes(card.id)} onOpen={() => props.onOpen(card.id)} onFavorite={() => props.onFavorite(card.id)} onSelect={() => props.onSelect(card.id)} />)}</section>
+    <label className="search-box terminal-search"><MagnifyingGlassIcon /><KeyboardInput value={props.query} onChange={(event) => props.onQuery(event.target.value)} placeholder="公司 / 机构 / 产品" aria-label="搜索公司、机构或产品" /></label>
+    <section className="funding-metrics"><span><strong>{props.index.meta.cardCount}</strong> 笔融资</span><span>本周 <strong>+{weekCount}</strong></span><span>更新 {props.index.meta.latestDate.slice(5)}</span></section>
+    <div className="compact-meta"><span>今日 {todayCount} 条融资动态</span>{props.selected.length >= 2 ? <button onClick={props.onCompare}>查看比较 {props.selected.length}/3</button> : props.selected.length === 1 ? <em>已选 1/3 · 继续选择</em> : null}</div>
+    <section className="funding-list">{props.cards.map((card) => <FundingRow key={card.id} card={card} onOpen={() => props.onOpen(card.id)} />)}</section>
     {!props.cards.length ? <Empty title="没有符合条件的融资" copy="换一个关键词或清空筛选后再试。" /> : null}
   </main></MobileScroll></>;
 }
 
-function FundingRow({ card, watched, selected, onOpen, onFavorite, onSelect }: { card: FundingCard; watched: boolean; selected: boolean; onOpen: () => void; onFavorite: () => void; onSelect: () => void }) {
-  return <article className={`funding-row ${selected ? "selected" : ""}`}><button className="company-avatar" onClick={onOpen}>{card.initial}</button><button className="funding-copy" onClick={onOpen}><span className="company-line"><strong>{card.company}</strong></span><span className="funding-facts">{card.round} · {card.date}</span></button><div className="funding-side"><strong>{card.amount}</strong><div><button aria-label="选择比较" className={selected ? "selected" : ""} onClick={onSelect}>{selected ? <CheckCircledIcon /> : <BarChartIcon />}</button><button aria-label={watched ? "取消收藏" : "收藏"} onClick={onFavorite}>{watched ? <BookmarkFilledIcon /> : <BookmarkIcon />}</button></div></div></article>;
+function FundingRow({ card, watched, onOpen, onFavorite }: { card: FundingCard; watched?: boolean; selected?: boolean; onOpen: () => void; onFavorite?: () => void; onSelect?: () => void }) {
+  return <article className="funding-row"><button className="company-avatar" onClick={onOpen}>{card.initial}</button><button className="funding-copy" onClick={onOpen}><span className="company-line"><strong>{card.company}</strong></span><span className="funding-facts">{card.round} · {card.date}</span></button><div className="funding-side"><strong>{card.amount}</strong>{watched && onFavorite ? <button className="saved-remove" onClick={onFavorite}>移除</button> : null}</div></article>;
 }
 
 function EntityLibraryView({ library, onOpen }: { library: EntityLibrary; onOpen: (type: EntityType, key: string) => void }) {
@@ -624,10 +624,10 @@ function EntityLibraryView({ library, onOpen }: { library: EntityLibrary; onOpen
   const placeholder = mode === "companies" ? "企业 / 产品 / 赛道" : mode === "investors" ? "机构 / 已投公司 / 赛道" : "人物 / 企业 / 职务";
   const sortNote = mode === "companies" ? "按最近融资排序" : mode === "investors" ? "按投资活跃度排序" : "按关联企业与最近动态排序";
   return <><AppHeader title="生态图谱" /><MobileScroll className="app-screen"><main className="screen-content entity-library-screen">
-    <section className="library-summary"><div><strong>{library.companies.length}</strong><span>企业</span></div><div><strong>{library.investors.length}</strong><span>机构</span></div><div><strong>{library.people.length}</strong><span>人物</span></div></section>
-    <div className="segmented library-tabs"><button className={mode === "companies" ? "active" : ""} onClick={() => switchMode("companies")}>企业库</button><button className={mode === "investors" ? "active" : ""} onClick={() => switchMode("investors")}>机构库</button><button className={mode === "people" ? "active" : ""} onClick={() => switchMode("people")}>人物库</button></div>
+    <section className="ecosystem-overview"><div className="ecosystem-overview-head"><span>商业主体全景</span><small>企业 · 机构 · 人物</small></div><div className="library-summary"><div><strong>{library.companies.length}</strong><span>企业</span></div><div><strong>{library.investors.length}</strong><span>机构</span></div><div><strong>{library.people.length}</strong><span>人物</span></div></div></section>
+    <div className="library-tabs"><button className={mode === "companies" ? "active" : ""} onClick={() => switchMode("companies")}>企业库</button><button className={mode === "investors" ? "active" : ""} onClick={() => switchMode("investors")}>机构库</button><button className={mode === "people" ? "active" : ""} onClick={() => switchMode("people")}>人物库</button></div>
     <label className="library-search"><MagnifyingGlassIcon /><KeyboardInput value={entityQuery} onChange={(event) => { setEntityQuery(event.target.value); setLimit(24); }} placeholder={placeholder} aria-label="搜索生态图谱" /></label>
-    <div className="library-result"><span>共 {items.length} 条结果</span><span>{sortNote}</span></div>
+    <div className="library-result"><span>共 {items.length} 个{mode === "companies" ? "企业" : mode === "investors" ? "机构" : "人物"}主体</span><span>{sortNote}</span></div>
     <section className="entity-library-list">{visibleItems.map((item) => mode === "companies" ? <CompanyEntityCard key={item.key} item={item as CompanyEntity} onOpen={() => onOpen("companies", item.key)} /> : mode === "investors" ? <InvestorEntityCard key={item.key} item={item as InvestorEntity} onOpen={() => onOpen("investors", item.key)} /> : <PersonEntityCard key={item.key} item={item as PersonEntity} onOpen={() => onOpen("people", item.key)} />)}</section>
     {!items.length ? <Empty title="未找到相关主体" copy="换一个企业、机构、人物、产品或赛道关键词再试。" /> : null}
     {visibleItems.length < items.length ? <button className="library-load-more" onClick={() => setLimit((current) => current + 24)}>继续浏览</button> : null}
@@ -636,15 +636,15 @@ function EntityLibraryView({ library, onOpen }: { library: EntityLibrary; onOpen
 
 function CompanyEntityCard({ item, onOpen }: { item: CompanyEntity; onOpen: () => void }) {
   const secondary = [item.headquarters, item.products.slice(0, 2).join("、")].filter(Boolean).join(" · ") || "企业信息待补充";
-  return <button className="entity-card" onClick={onOpen}><span className="entity-eyebrow">{item.categories.slice(0, 2).join(" · ") || "AI 企业"}</span><span className="entity-title"><i className="entity-avatar">{item.initial}</i><strong>{item.name}</strong></span><span className="entity-sub">{secondary}</span><span className="entity-card-metrics"><i><small>融资轮次</small><strong>{item.roundCount} 笔</strong></i><i><small>投资机构</small><strong>{item.investorCount} 家</strong></i></span><span className="entity-card-footer"><small>最近融资 {item.latest.date} · {item.latest.round}</small><em>查看档案 ›</em></span></button>;
+  return <button className="entity-card" onClick={onOpen}><i className="entity-avatar">{item.initial}</i><span className="entity-card-copy"><strong>{item.name}</strong><small>{item.categories.slice(0, 2).join(" · ") || secondary}</small><em>{item.roundCount} 笔融资 · {item.investorCount} 家机构</em></span><ChevronRightIcon /></button>;
 }
 
 function InvestorEntityCard({ item, onOpen }: { item: InvestorEntity; onOpen: () => void }) {
-  return <button className="entity-card" onClick={onOpen}><span className="entity-eyebrow">机构库</span><span className="entity-title"><i className="entity-avatar">{item.initial}</i><strong>{item.name}</strong></span><span className="entity-sub">{item.companies.slice(0, 3).join("、") || "已投企业待补充"}</span><span className="entity-card-metrics"><i><small>参与轮次</small><strong>{item.roundCount} 笔</strong></i><i><small>领投轮次</small><strong>{item.leadCount} 笔</strong></i></span><span className="entity-card-footer"><small>最近出手 {item.latest.date}</small><em>查看档案 ›</em></span></button>;
+  return <button className="entity-card" onClick={onOpen}><i className="entity-avatar">{item.initial}</i><span className="entity-card-copy"><strong>{item.name}</strong><small>{item.companies.slice(0, 2).join("、") || "科技投资机构"}</small><em>{item.roundCount} 笔投资 · {item.companyCount} 家企业</em></span><ChevronRightIcon /></button>;
 }
 
 function PersonEntityCard({ item, onOpen }: { item: PersonEntity; onOpen: () => void }) {
-  return <button className="entity-card" onClick={onOpen}><span className="entity-eyebrow">人物库</span><span className="entity-title"><i className="entity-avatar">{item.initial}</i><strong>{item.name}</strong></span><span className="entity-sub">{item.roles.join("、")} · {item.companies.join("、")}</span><span className="entity-card-metrics"><i><small>关联企业</small><strong>{item.companyCount} 家</strong></i><i><small>融资动态</small><strong>{item.roundCount} 笔</strong></i></span><span className="entity-card-footer"><small>最近关联动态 {item.latest.date}</small><em>查看档案 ›</em></span></button>;
+  return <button className="entity-card" onClick={onOpen}><i className="entity-avatar">{item.initial}</i><span className="entity-card-copy"><strong>{item.name}</strong><small>{item.roles.join("、") || "核心人物"} · {item.companies.slice(0, 1).join("、")}</small><em>{item.companyCount} 家关联企业 · 最近动态 {item.latest.date.slice(5)}</em></span><ChevronRightIcon /></button>;
 }
 
 function EntityDetailView({ entity, type, onBack, onOpenFunding, onOpenEntity }: { entity?: CompanyEntity | InvestorEntity | PersonEntity; type: EntityType; onBack: () => void; onOpenFunding: (id: string) => void; onOpenEntity: (type: EntityType, key: string) => void }) {
@@ -668,10 +668,10 @@ function EntitySection({ title, children }: { title: string; children: ReactNode
   return <section className="entity-section"><h3>{title}</h3>{children}</section>;
 }
 
-function ObserveView({ index, type, onType, onOpen, onSaved }: { index: ReportIndex; type: "weekly" | "monthly"; onType: (value: "weekly" | "monthly") => void; onOpen: (id: string) => void; onSaved: () => void }) {
+function ObserveView({ index, type, onType, onOpen }: { index: ReportIndex; type: "weekly" | "monthly"; onType: (value: "weekly" | "monthly") => void; onOpen: (id: string) => void; onSaved: () => void }) {
   const reports = index.reports.filter((item) => item.type === type);
   const featured = reports[0];
-  return <><AppHeader title="观察" action="我的收藏" onAction={onSaved} /><MobileScroll className="app-screen"><main className="screen-content observe-screen"><section className="report-intro"><span>GUANLAN RESEARCH</span><h2>AI 商业变化观察</h2><p>用周报追踪近期变化，用月报理解行业趋势与商业机会。</p></section><div className="segmented"><button className={type === "weekly" ? "active" : ""} onClick={() => onType("weekly")}>周报 {index.meta.weeklyCount}</button><button className={type === "monthly" ? "active" : ""} onClick={() => onType("monthly")}>月报 {index.meta.monthlyCount}</button></div>{featured ? <button className="featured-report" onClick={() => onOpen(featured.id)}><span className="feature-meta"><em>最新{featured.typeLabel}</em><i>{featured.issue}</i></span><strong>{featured.title}</strong><p>{featured.summary}</p>{featured.counts ? <span className="evidence-chips"><i>{featured.counts.signals} 条事件</i><i>{featured.counts.opinions} 条观点</i><i>{featured.counts.community} 条行业观察</i></span> : null}<span className="feature-footer"><i>{publicDateWindow(featured.window)}</i><em>阅读全文</em></span></button> : null}<SectionTitle title={`往期${type === "weekly" ? "周报" : "月报"}`} note="按发布日期倒序" /><section className="report-list">{reports.slice(1).map((report) => <button key={report.id} className="report-row" onClick={() => onOpen(report.id)}><span className="report-date"><strong>{report.dateShort}</strong><em>{report.issue}</em></span><span className="report-copy"><strong>{report.title}</strong><p>{report.summary}</p><span><i>{report.sectionCount} 个章节</i><em>查看全文</em></span></span></button>)}</section></main></MobileScroll></>;
+  return <><AppHeader title="商业观察" /><MobileScroll className="app-screen"><main className="screen-content observe-screen">{featured ? <button className="featured-report" onClick={() => onOpen(featured.id)}><span className="feature-meta"><em>本期核心判断</em><i>{featured.issue}</i></span><strong>{featured.title}</strong><p>{featured.summary}</p><span className="feature-footer"><i>{publicDateWindow(featured.window)}</i><em>阅读完整{featured.typeLabel}</em></span></button> : null}<div className="segmented report-tabs"><button className={type === "weekly" ? "active" : ""} onClick={() => onType("weekly")}>周报</button><button className={type === "monthly" ? "active" : ""} onClick={() => onType("monthly")}>月报</button></div><SectionTitle title={`往期${type === "weekly" ? "周报" : "月报"}`} note="按发布日期倒序" /><section className="report-list">{reports.slice(1).map((report) => <button key={report.id} className="report-row" onClick={() => onOpen(report.id)}><span className="report-date"><strong>{report.dateShort}</strong><em>{report.issue}</em></span><span className="report-copy"><strong>{report.title}</strong><p>{report.summary}</p><span><i>{report.sectionCount} 个章节</i><em>查看全文</em></span></span></button>)}</section></main></MobileScroll></>;
 }
 
 function ProfileView({ nickname, favorites, history, follows, growth, level, membership, onOpen }: { nickname: string; favorites: number; history: number; follows: number; growth: GrowthState; level: ReturnType<typeof levelFor>; membership: ReturnType<typeof membershipFor>; onOpen: (kind: "saved" | "history" | "follows" | "growth" | "membership" | "invite" | "profile-edit") => void }) {
@@ -680,7 +680,7 @@ function ProfileView({ nickname, favorites, history, follows, growth, level, mem
     { id: "favorite", title: "收藏 1 条情报", progress: favorites ? 1 : 0, target: 1, points: 3 },
     { id: "follow", title: "关注 1 个主题", progress: follows ? 1 : 0, target: 1, points: 5 },
   ];
-  return <><AppHeader title="" action="设置" onAction={() => onOpen("profile-edit")} /><MobileScroll className="app-screen"><main className="screen-content profile-screen">
+  return <><AppHeader title="我的" action="设置" onAction={() => onOpen("profile-edit")} brand={false} /><MobileScroll className="app-screen"><main className="screen-content profile-screen">
     <button className="identity-row" onClick={() => onOpen("profile-edit")}><img src="/brand/app-icon-light.svg" alt="个人头像" /><span><strong>{nickname}</strong><em>资料完善度 60% · 管理个人信息</em></span><ChevronRightIcon /></button>
     <button className="growth-card" onClick={() => onOpen("growth")}><span className="growth-top"><span><em>本周情报成长</em><strong>L{level.level} {level.name}</strong></span><span><strong>{growth.balance}</strong><em>活跃积分</em></span></span><span className="growth-meta"><i>已完成 {growth.completed.length}/5 个成长任务</i><i>距下一级 {Math.max(0, level.next - growth.lifetime)} 分</i></span><span className="progress"><i style={{ width: `${level.progress}%` }} /></span><span className="growth-footer">继续研究，积累积分兑换会员权益</span></button>
     <button className="membership-card" onClick={() => onOpen("membership")}><span><em>会员权益</em><strong>{membership.statusLabel}</strong><small>{membership.active ? `有效至 ${membership.activeUntil}` : "浏览全部栏目"}</small></span><i>{membership.active ? "续费会员" : "开通会员"}<ChevronRightIcon /></i></button>
@@ -715,9 +715,9 @@ function InviteView({ isInvitee, onBack, onExperience, onShare }: { isInvitee: b
   </main></MobileScroll></>;
 }
 
-function FundingDetailView({ card, watched, onBack, onFavorite, onOpenEntity }: { card?: FundingDetail; watched: boolean; onBack: () => void; onFavorite: () => void; onOpenEntity: (type: EntityType, key: string) => void }) {
+function FundingDetailView({ card, watched, compared, onBack, onFavorite, onToggleCompare, onOpenEntity }: { card?: FundingDetail; watched: boolean; compared: boolean; onBack: () => void; onFavorite: () => void; onToggleCompare: () => void; onOpenEntity: (type: EntityType, key: string) => void }) {
   if (!card) return <Loading />;
-  return <><AppHeader title="融资详情" onBack={onBack} action={watched ? "已收藏" : "收藏"} onAction={onFavorite} /><MobileScroll className="app-screen"><main className="screen-content detail-screen"><button className="detail-identity entity-jump" onClick={() => onOpenEntity("companies", companyEntityKey(card.company))}><span>{card.initial}</span><div><h2>{card.company}</h2><p>{card.category} · {card.productForm || card.subcategory}</p></div><em>企业档案 ›</em></button><section className="fact-grid"><div><span>本轮金额</span><strong>{card.amount}</strong></div><div><span>融资轮次</span><strong>{card.round}</strong></div><div><span>披露日期</span><strong>{card.date}</strong></div><div><span>累计融资</span><strong>{card.cumulativeAmount}</strong></div></section><ArticleSection title="公司做什么"><p>{card.companySummary}</p><small>总部：{card.headquarters}</small></ArticleSection>{card.founders.length ? <ArticleSection title="人物库">{card.founders.map((founder) => <button className="simple-row relation-row" key={founder.name} onClick={() => onOpenEntity("people", personEntityKey(founder, card.company))}><span><strong>{founder.name}</strong><small>{founder.role || "创始团队"}</small></span><em>查看人物 ›</em></button>)}</ArticleSection> : null}<ArticleSection title="机构库">{card.investors.length ? card.investors.map((item) => <button className="simple-row relation-row" key={item.name} onClick={() => onOpenEntity("investors", investorEntityKey(item.name))}><span><strong>{item.name}</strong><small>{item.role || "角色未披露"}</small></span><em>查看机构 ›</em></button>) : <p>投资方未披露</p>}</ArticleSection>{card.signals.length ? <ArticleSection title="关键进展">{card.signals.map((item, index) => <p className="numbered" key={item}><b>{index + 1}</b>{publicAnalysisText(item)}</p>)}</ArticleSection> : null}{card.capitalJudgment ? <ArticleSection title="资本为什么下注" kicker="观澜分析"><p>{publicAnalysisText(card.capitalJudgment)}</p></ArticleSection> : null}{card.risks.length ? <ArticleSection title="风险与未知">{card.risks.map((item, index) => <p className="numbered risk" key={item}><b>{index + 1}</b>{publicAnalysisText(item)}</p>)}</ArticleSection> : null}</main></MobileScroll></>;
+  return <><AppHeader title="融资详情" onBack={onBack} action={watched ? "已收藏" : "收藏"} onAction={onFavorite} /><MobileScroll className="app-screen"><main className="screen-content detail-screen"><button className="detail-identity entity-jump" onClick={() => onOpenEntity("companies", companyEntityKey(card.company))}><span>{card.initial}</span><div><h2>{card.company}</h2><p>{card.category} · {card.productForm || card.subcategory}</p></div><em>企业档案 ›</em></button><section className="fact-grid"><div><span>本轮金额</span><strong>{card.amount}</strong></div><div><span>融资轮次</span><strong>{card.round}</strong></div><div><span>披露日期</span><strong>{card.date}</strong></div><div><span>累计融资</span><strong>{card.cumulativeAmount}</strong></div></section><button className={`compare-action ${compared ? "active" : ""}`} onClick={onToggleCompare}>{compared ? "已加入公司比较" : "加入公司比较"}</button><ArticleSection title="公司做什么"><p>{card.companySummary}</p><small>总部：{card.headquarters}</small></ArticleSection>{card.founders.length ? <ArticleSection title="人物库">{card.founders.map((founder) => <button className="simple-row relation-row" key={founder.name} onClick={() => onOpenEntity("people", personEntityKey(founder, card.company))}><span><strong>{founder.name}</strong><small>{founder.role || "创始团队"}</small></span><em>查看人物 ›</em></button>)}</ArticleSection> : null}<ArticleSection title="机构库">{card.investors.length ? card.investors.map((item) => <button className="simple-row relation-row" key={item.name} onClick={() => onOpenEntity("investors", investorEntityKey(item.name))}><span><strong>{item.name}</strong><small>{item.role || "角色未披露"}</small></span><em>查看机构 ›</em></button>) : <p>投资方未披露</p>}</ArticleSection>{card.signals.length ? <ArticleSection title="关键进展">{card.signals.map((item, index) => <p className="numbered" key={item}><b>{index + 1}</b>{publicAnalysisText(item)}</p>)}</ArticleSection> : null}{card.capitalJudgment ? <ArticleSection title="资本为什么下注" kicker="观澜分析"><p>{publicAnalysisText(card.capitalJudgment)}</p></ArticleSection> : null}{card.risks.length ? <ArticleSection title="风险与未知">{card.risks.map((item, index) => <p className="numbered risk" key={item}><b>{index + 1}</b>{publicAnalysisText(item)}</p>)}</ArticleSection> : null}</main></MobileScroll></>;
 }
 
 function ReportDetailView({ report, onBack, onShare }: { report?: ReportDetail; onBack: () => void; onShare: () => void }) {

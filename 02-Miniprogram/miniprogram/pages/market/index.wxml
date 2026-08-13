@@ -1,10 +1,13 @@
 <view class="page-shell">
   <app-header title="生态图谱" />
   <view class="page-content library-content">
-    <view class="library-summary">
-      <view><text class="summary-value serif">{{companyCount}}</text><text>企业</text></view>
-      <view><text class="summary-value serif">{{investorCount}}</text><text>机构</text></view>
-      <view><text class="summary-value serif">{{peopleCount}}</text><text>人物</text></view>
+    <view class="ecosystem-overview">
+      <view class="ecosystem-overview-head"><text>商业主体全景</text><text>企业 · 机构 · 人物</text></view>
+      <view class="library-summary">
+        <view><text class="summary-value serif">{{companyCount}}</text><text>企业</text></view>
+        <view><text class="summary-value serif">{{investorCount}}</text><text>机构</text></view>
+        <view><text class="summary-value serif">{{peopleCount}}</text><text>人物</text></view>
+      </view>
     </view>
 
     <view class="library-tabs">
@@ -19,36 +22,21 @@
       <button wx:if="{{query}}" class="clear-button" bindtap="clearSearch"><icon type="clear" size="16" /></button>
     </view>
 
-    <view class="result-line"><text>共 {{resultCount}} 条结果</text><text>{{sortNote}}</text></view>
+    <view class="result-line"><text>共 {{resultCount}} 个{{modeLabel}}主体</text><text>{{sortNote}}</text></view>
 
     <view class="entity-grid">
       <button wx:for="{{items}}" wx:key="key" class="entity-card" data-key="{{item.key}}" data-type="{{item.type}}" bindtap="openEntity">
-        <text class="entity-eyebrow">{{mode === 'people' ? '人物库' : (item.categoriesText || (mode === 'companies' ? 'AI 企业' : '机构库'))}}</text>
-        <view class="entity-title-row"><view class="entity-avatar serif">{{item.initial}}</view><text class="entity-name">{{item.name}}</text></view>
-
-        <text wx:if="{{mode === 'companies'}}" class="entity-sub">{{item.secondary || '企业信息待补充'}}</text>
-        <text wx:elif="{{mode === 'investors'}}" class="entity-sub">{{item.companiesText}}</text>
-        <text wx:else class="entity-sub">{{item.roleText}} · {{item.companiesText}}</text>
-
-        <view wx:if="{{mode === 'companies'}}" class="entity-metrics">
-          <view><text>融资轮次</text><strong>{{item.roundCount}} 笔</strong></view>
-          <view><text>投资机构</text><strong>{{item.investorCount}} 家</strong></view>
+        <view class="entity-avatar serif">{{item.initial}}</view>
+        <view class="entity-copy">
+          <text class="entity-name">{{item.name}}</text>
+          <text wx:if="{{mode === 'companies'}}" class="entity-sub">{{item.categoriesText || item.secondary || 'AI 企业'}}</text>
+          <text wx:elif="{{mode === 'investors'}}" class="entity-sub">{{item.companiesText || '科技投资机构'}}</text>
+          <text wx:else class="entity-sub">{{item.roleText}} · {{item.companiesText}}</text>
+          <text wx:if="{{mode === 'companies'}}" class="entity-meta">{{item.roundCount}} 笔融资 · {{item.investorCount}} 家机构</text>
+          <text wx:elif="{{mode === 'investors'}}" class="entity-meta">{{item.roundCount}} 笔投资 · {{item.companyCount}} 家企业</text>
+          <text wx:else class="entity-meta">{{item.companyCount}} 家关联企业 · {{item.roundCount}} 笔动态</text>
         </view>
-        <view wx:elif="{{mode === 'investors'}}" class="entity-metrics">
-          <view><text>参与轮次</text><strong>{{item.roundCount}} 笔</strong></view>
-          <view><text>领投轮次</text><strong>{{item.leadCount}} 笔</strong></view>
-        </view>
-        <view wx:else class="entity-metrics">
-          <view><text>关联企业</text><strong>{{item.companyCount}} 家</strong></view>
-          <view><text>融资动态</text><strong>{{item.roundCount}} 笔</strong></view>
-        </view>
-
-        <view class="entity-footer">
-          <text wx:if="{{mode === 'companies'}}">最近融资 {{item.latestDate}} · {{item.latestRound}}</text>
-          <text wx:elif="{{mode === 'investors'}}">最近出手 {{item.latestDate}}</text>
-          <text wx:else>最近关联动态 {{item.latestDate}}</text>
-          <text>查看档案 ›</text>
-        </view>
+        <text class="entity-arrow">›</text>
       </button>
     </view>
     <view wx:if="{{!resultCount}}" class="empty-state"><view class="title">暂无匹配结果</view><view class="copy">{{emptyCopy}}</view></view>

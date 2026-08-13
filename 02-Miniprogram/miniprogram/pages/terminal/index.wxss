@@ -1,4 +1,4 @@
-.terminal-content { padding-top: 6rpx; }
+.terminal-content { padding: 22rpx 30rpx 180rpx; }
 
 .terminal-summary { display: flex; align-items: flex-end; justify-content: space-between; padding: 4rpx 4rpx 26rpx; border-bottom: 1rpx solid rgba(200, 167, 102, 0.34); }
 .summary-primary { display: flex; flex-direction: column; gap: 4rpx; color: #9b6d20; font-size: 20rpx; font-weight: 700; letter-spacing: 2rpx; }
@@ -6,20 +6,25 @@
 .summary-secondary { display: flex; flex-direction: column; align-items: flex-end; gap: 5rpx; padding-bottom: 4rpx; color: #6f7f8f; font-size: 20rpx; }
 .summary-secondary .mono { color: #0d355c; font-size: 30rpx; font-weight: 600; }
 
-.search-row { display: grid; grid-template-columns: minmax(0, 1fr) 112rpx; gap: 14rpx; margin-top: 24rpx; }
-.search-box { display: flex; gap: 16rpx; align-items: center; height: 86rpx; padding: 0 22rpx; border: 1rpx solid #dfe3e7; border-radius: 16rpx; background: #fff; }
+.search-row { display: grid; grid-template-columns: minmax(0, 1fr) 112rpx; gap: 14rpx; }
+.search-row.single-search { grid-template-columns: 1fr; }
+.search-box { display: flex; gap: 16rpx; align-items: center; height: 92rpx; padding: 0 24rpx; border: 1rpx solid #dfe3e7; border-radius: 22rpx; background: #fff; box-shadow: 0 8rpx 28rpx rgba(7,24,39,.025); }
 .search-box input { flex: 1; height: 100%; color: #071827; font-size: 26rpx; }
 .clear-button { display: flex; align-items: center; justify-content: center; width: 48rpx; height: 48rpx; margin: 0; padding: 0; background: transparent; }
 .filter-button { min-height: 86rpx; margin: 0; padding: 0; border-radius: 16rpx; background: #0d355c; color: #fff; font-size: 24rpx; font-weight: 600; line-height: 86rpx; }
 .filter-button.active { background: #9b6d20; }
 
-.list-heading { display: flex; align-items: center; justify-content: space-between; min-height: 84rpx; margin-top: 22rpx; border-bottom: 1rpx solid #e5e8ec; }
+.funding-metrics { display: grid; grid-template-columns: 1.2fr 1fr 1fr; margin: 26rpx -30rpx 0; padding: 28rpx 30rpx; background: #0d355c; color: rgba(255,255,255,.9); }
+.funding-metrics text { display: flex; align-items: baseline; justify-content: center; gap: 8rpx; border-left: 1rpx solid rgba(255,255,255,.2); font-size: 22rpx; white-space: nowrap; }
+.funding-metrics text:first-child { justify-content: flex-start; border-left: 0; }
+.funding-metrics strong { color: #d8b96f; font-family: "Songti SC", serif; font-size: 38rpx; }
+.list-heading { display: flex; align-items: center; justify-content: space-between; min-height: 84rpx; border-bottom: 1rpx solid #e5e8ec; }
 .result-summary { display: flex; flex-direction: column; gap: 4rpx; color: #6f7f8f; font-size: 22rpx; }
 .compare-count { color: #9b6d20; font-size: 19rpx; }
-.list-actions { display: flex; gap: 8rpx; }
+.list-actions { display: flex; gap: 8rpx; color: #8c641f; font-size: 20rpx; }
 .list-actions button { min-height: 56rpx; margin: 0; padding: 0 10rpx; background: transparent; color: #0d355c; font-size: 22rpx; font-weight: 600; line-height: 56rpx; }
 
-.funding-list { display: grid; gap: 16rpx; padding-top: 18rpx; }
+.funding-list { display: grid; gap: 0; }
 .load-note { padding: 30rpx 20rpx 40rpx; color: #6f7f8f; font-size: 22rpx; text-align: center; }
 .selection-bar { position: fixed; z-index: 20; right: 22rpx; bottom: calc(112rpx + env(safe-area-inset-bottom)); left: 22rpx; display: grid; grid-template-columns: 1fr 210rpx; gap: 14rpx; align-items: center; min-height: 96rpx; padding: 12rpx 18rpx 12rpx 24rpx; border: 1rpx solid #e5e8ec; border-radius: 18rpx; background: rgba(255, 255, 255, 0.98); box-shadow: 0 12rpx 40rpx rgba(7, 24, 39, 0.12); }
 .selection-bar > text { font-size: 25rpx; }

@@ -22,6 +22,9 @@ Page({
     meta: bundledFundingIndex.meta,
     watchCount: 0,
     selectedIds: [],
+    todayCount: 0,
+    weekCount: 0,
+    latestDateShort: "",
     sort: "latest",
     filterOpen: false,
     activeFilterCount: 0,
@@ -58,6 +61,7 @@ Page({
     this.filteredCards = [];
     this.pageSize = 36;
     this.setData({ selectedIds: getCompareIds() });
+    this.updateMetrics(bundledFundingIndex);
     this.refreshCards(true);
     refreshFundingData().then((state) => this.applyFundingData(state.index));
   },
@@ -72,7 +76,18 @@ Page({
   applyFundingData(index) {
     if (!index?.cards?.length) return;
     this.allCards = index.cards;
+    this.updateMetrics(index);
     this.setData({ meta: index.meta }, () => this.refreshCards(true));
+  },
+
+  updateMetrics(index) {
+    const latest = new Date(`${index.meta.latestDate}T00:00:00`);
+    const todayCount = index.cards.filter((card) => card.date === index.meta.latestDate).length;
+    const weekCount = index.cards.filter((card) => {
+      const current = new Date(`${card.date}T00:00:00`);
+      return Number.isFinite(current.getTime()) && latest.getTime() - current.getTime() <= 6 * 86400000;
+    }).length;
+    this.setData({ todayCount, weekCount, latestDateShort: index.meta.latestDate.slice(5) });
   },
 
   onReachBottom() {
