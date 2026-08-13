@@ -165,12 +165,22 @@ function redeemBenefit(id) {
   if (!benefit) return { ok: false, reason: "权益不存在" };
   const redeemed = getRedeemedBenefitIds();
   if (!benefit.repeatable && redeemed.includes(id)) return { ok: false, reason: "该权益已兑换" };
-  const result = applyRedemption(getWallet(), benefit.cost, `兑换权益：${benefit.title}`, nowLabel(), `redeem_${id}_${Date.now()}`);
+  const previousWallet = getWallet();
+  const previousMembership = getMembership();
+  const transactionId = `redeem_${id}_${Date.now()}`;
+  const result = applyRedemption(previousWallet, benefit.cost, `兑换权益：${benefit.title}`, nowLabel(), transactionId);
   if (!result.ok) return result;
-  saveWallet(result.wallet);
-  if (!benefit.repeatable) wx.setStorageSync(BENEFIT_KEY, [...redeemed, id]);
-  const membership = benefit.days ? saveMembership(extendMembership(getMembership(), benefit.days)) : getMembership();
-  return { ok: true, benefit, wallet: result.wallet, membership };
+  const nextMembership = benefit.days ? extendMembership(previousMembership, benefit.days) : previousMembership;
+  try {
+    saveWallet(result.wallet);
+    saveMembership(nextMembership);
+    if (!benefit.repeatable) wx.setStorageSync(BENEFIT_KEY, [...redeemed, id]);
+    return { ok: true, transactionId, benefit, wallet: result.wallet, membership: membershipSnapshot(nextMembership) };
+  } catch (error) {
+    wx.setStorageSync(WALLET_KEY, previousWallet);
+    wx.setStorageSync(MEMBERSHIP_KEY, previousMembership);
+    return { ok: false, reason: "兑换未完成，请重试" };
+  }
 }
 
 function getGrowthSnapshot() {

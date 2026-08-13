@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import {
   ArrowLeftIcon,
   BarChartIcon,
@@ -380,6 +380,8 @@ export default function Prototype() {
   const [region, setRegion] = useState("all");
   const [round, setRound] = useState("all");
   const [filterOpen, setFilterOpen] = useState(false);
+  const [redeemTarget, setRedeemTarget] = useState("");
+  const redemptionLock = useRef(false);
   const [reportType, setReportType] = useState<"weekly" | "monthly">("weekly");
   const [favorites, setFavorites] = useState<string[]>(() => readLocal(STORE.favorites, []));
   const [history, setHistory] = useState<string[]>(() => readLocal(STORE.history, []));
@@ -429,6 +431,8 @@ export default function Prototype() {
   const activeTab = view.kind === "tab" ? view.tab : lastTab;
   const level = levelFor(growth.lifetime);
   const membershipStatus = membershipFor(membership);
+  const redemptionBenefit = BENEFITS.find((item) => item.id === redeemTarget);
+  const redemptionPreview = redemptionBenefit ? membershipFor(extendMembership(membership, redemptionBenefit.days)) : membershipStatus;
   const cards = fundingIndex?.cards || [];
   const entityLibrary = useMemo(() => buildEntityLibrary(cards, fundingDetails), [cards, fundingDetails]);
   const filteredCards = useMemo(() => cards.filter((card) => {
@@ -520,18 +524,32 @@ export default function Prototype() {
     } catch { /* User cancelled the browser share surface. */ }
   }
 
-  function redeem(id: string) {
+  function requestRedemption(id: string) {
     const benefit = BENEFITS.find((item) => item.id === id);
-    if (!benefit || growth.redeemed.includes(id)) return;
+    if (!benefit) return;
     if (growth.balance < benefit.cost) { setToast("积分不足，继续完成成长任务吧"); return; }
-    setGrowth((current) => ({
-      ...current,
-      balance: current.balance - benefit.cost,
-      redeemed: [...current.redeemed, id],
-      ledger: [{ id: `redeem-${Date.now()}`, label: `兑换：${benefit.title}`, points: -benefit.cost, date: dateLabel() }, ...current.ledger],
-    }));
-    setMembership((current) => extendMembership(current, benefit.days));
+    setRedeemTarget(id);
+  }
+
+  function confirmRedemption() {
+    const benefit = BENEFITS.find((item) => item.id === redeemTarget);
+    if (!benefit || redemptionLock.current) return;
+    if (growth.balance < benefit.cost) {
+      setRedeemTarget("");
+      setToast("积分余额已变化，请重新确认");
+      return;
+    }
+    redemptionLock.current = true;
+    const transactionId = `redeem-${Date.now()}`;
+    setGrowth({
+      ...growth,
+      balance: growth.balance - benefit.cost,
+      ledger: [{ id: transactionId, label: `兑换：${benefit.title}`, points: -benefit.cost, date: dateLabel() }, ...growth.ledger],
+    });
+    setMembership(extendMembership(membership, benefit.days));
+    setRedeemTarget("");
     setToast(`已增加 ${benefit.days} 天会员权益`);
+    window.setTimeout(() => { redemptionLock.current = false; }, 0);
   }
 
   const page = (() => {
@@ -540,7 +558,7 @@ export default function Prototype() {
     if (view.kind === "saved") return <SavedView cards={cards.filter((card) => favorites.includes(card.id))} onBack={back} onOpen={openFunding} onFavorite={toggleFavorite} />;
     if (view.kind === "history") return <HistoryView cards={history.map((id) => cards.find((card) => card.id === id)).filter(Boolean) as FundingCard[]} onBack={back} onOpen={openFunding} />;
     if (view.kind === "follows") return <FollowsView categories={fundingIndex.categories} follows={follows} onBack={back} onToggle={toggleFollow} />;
-    if (view.kind === "growth") return <GrowthView growth={growth} level={level} onBack={back} onRedeem={redeem} />;
+    if (view.kind === "growth") return <GrowthView growth={growth} level={level} onBack={back} onRedeem={requestRedemption} />;
     if (view.kind === "membership") return <MembershipView membership={membershipStatus} points={growth.balance} onBack={back} onGrowth={() => go({ kind: "growth" })} onSubscribe={() => setToast("付费开通暂未开放，可先体验或积分兑换")} />;
     if (view.kind === "invite") return <InviteView isInvitee={new URLSearchParams(location.search).get("from") === "member_invite"} onBack={back} onExperience={() => showTab("terminal")} onShare={() => { const url = new URL(location.href); url.searchParams.set("invite", "1"); url.searchParams.set("from", "member_invite"); share("一起看懂 AI 商业变化，新用户可体验 7 天完整权益", url.toString()); }} />;
     if (view.kind === "profile-edit") return <ProfileEditView nickname={nickname} onChange={setNickname} onBack={back} />;
@@ -561,6 +579,16 @@ export default function Prototype() {
         <FilterGroup label="地区" value={region} options={[{ id: "all", name: "全部" }, { id: "china", name: "中国总部" }, { id: "overseas", name: "海外总部" }, { id: "undisclosed", name: "未披露" }]} onChange={setRegion} />
         <FilterGroup label="轮次" value={round} options={[{ id: "all", name: "全部" }, { id: "early", name: "种子/天使" }, { id: "growth", name: "A/B/C轮" }, { id: "late", name: "D轮以后" }, { id: "other", name: "其他" }]} onChange={setRound} />
         <button className="sheet-primary" onClick={() => setFilterOpen(false)}>查看结果</button>
+      </BottomSheet>
+      <BottomSheet open={Boolean(redemptionBenefit)} onOpenChange={(open) => { if (!open) setRedeemTarget(""); }} title={redemptionBenefit ? `兑换${redemptionBenefit.title}` : "确认兑换"} description="确认后立即扣除积分并顺延会员有效期" snap={0.46}>
+        {redemptionBenefit ? <section className="redemption-confirm">
+          <div><span>本次扣除</span><strong>{redemptionBenefit.cost} 分</strong></div>
+          <div><span>兑换后积分</span><strong>{growth.balance - redemptionBenefit.cost} 分</strong></div>
+          <div><span>会员有效期</span><strong>顺延至 {redemptionPreview.activeUntil}</strong></div>
+          <p>积分兑换成功后不可撤销，会员有效期将在当前体验或会员权益结束后继续顺延。</p>
+          <button className="sheet-primary" onClick={confirmRedemption}>确认兑换并扣除 {redemptionBenefit.cost} 分</button>
+          <button className="sheet-secondary" onClick={() => setRedeemTarget("")}>暂不兑换</button>
+        </section> : null}
       </BottomSheet>
       {toast ? <div className="toast" role="status">{toast}</div> : null}
     </div>
@@ -711,7 +739,7 @@ function FollowsView({ categories, follows, onBack, onToggle }: { categories: Fu
 }
 
 function GrowthView({ growth, level, onBack, onRedeem }: { growth: GrowthState; level: ReturnType<typeof levelFor>; onBack: () => void; onRedeem: (id: string) => void }) {
-  return <><AppHeader title="成长与权益" onBack={onBack} /><MobileScroll className="app-screen"><main className="screen-content sub-screen"><section className="wallet"><span>当前活跃积分</span><strong>{growth.balance}</strong><em>L{level.level} {level.name} · 累计成长 {growth.lifetime} 分</em><span className="progress"><i style={{ width: `${level.progress}%` }} /></span><small>距下一等级还差 {Math.max(0, level.next - growth.lifetime)} 分</small></section><SectionTitle title="会员权益兑换" /><section className="redeem-list">{BENEFITS.map((item) => <article key={item.id}><span><strong>{item.title}</strong><em>{item.description}</em></span><button onClick={() => onRedeem(item.id)}>{`${item.cost} 分兑换`}</button></article>)}</section><SectionTitle title="积分明细" /><section className="ledger">{growth.ledger.map((item) => <div key={item.id}><span><strong>{item.id === "starter" ? "新用户积分" : item.label}</strong><em>{item.date}</em></span><i className={item.points > 0 ? "income" : "expense"}>{item.points > 0 ? "+" : ""}{item.points}</i></div>)}</section><p className="boundary">社群活跃积分可兑换会员权益；邀请奖励将在好友完成注册后发放。</p></main></MobileScroll></>;
+  return <><AppHeader title="成长与权益" onBack={onBack} /><MobileScroll className="app-screen"><main className="screen-content sub-screen"><section className="wallet"><span>当前活跃积分</span><strong>{growth.balance}</strong><em>L{level.level} {level.name} · 累计成长 {growth.lifetime} 分</em><span className="progress"><i style={{ width: `${level.progress}%` }} /></span><small>距下一等级还差 {Math.max(0, level.next - growth.lifetime)} 分</small></section><SectionTitle title="会员权益兑换" /><section className="redeem-list">{BENEFITS.map((item) => { const shortfall = Math.max(0, item.cost - growth.balance); return <article key={item.id}><span><strong>{item.title}</strong><em>{item.description}</em></span><button disabled={shortfall > 0} onClick={() => onRedeem(item.id)}>{shortfall ? `还差 ${shortfall} 分` : `${item.cost} 分兑换`}</button></article>; })}</section><SectionTitle title="积分明细" /><section className="ledger">{growth.ledger.map((item) => <div key={item.id}><span><strong>{item.id === "starter" ? "新用户积分" : item.label}</strong><em>{item.date}</em></span><i className={item.points > 0 ? "income" : "expense"}>{item.points > 0 ? "+" : ""}{item.points}</i></div>)}</section><p className="boundary">社群活跃积分可兑换会员权益；邀请奖励将在好友完成注册后发放。</p></main></MobileScroll></>;
 }
 
 function ProfileEditView({ nickname, onChange, onBack }: { nickname: string; onChange: (value: string) => void; onBack: () => void }) {

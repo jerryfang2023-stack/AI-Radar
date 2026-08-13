@@ -22,7 +22,7 @@
     <view class="section-title serif">会员权益兑换</view>
     <view class="benefit-card paper-card" wx:for="{{growth.benefits}}" wx:key="id">
       <view><text class="benefit-title">{{item.title}}</text><text class="benefit-copy">{{item.description}}</text></view>
-      <button class="redeem-button {{item.redeemed ? 'done' : ''}}" disabled="{{item.redeemed}}" data-id="{{item.id}}" bindtap="redeem">{{item.redeemed ? '已兑换' : item.cost + ' 分兑换'}}</button>
+      <button class="redeem-button {{item.redeemed || !item.affordable ? 'done' : ''}}" disabled="{{item.redeemed}}" data-id="{{item.id}}" bindtap="redeem">{{item.redeemed ? '已兑换' : item.affordable ? item.cost + ' 分兑换' : '还差 ' + (item.cost - growth.wallet.balance) + ' 分'}}</button>
     </view>
 
     <view class="section-title serif">积分明细</view>

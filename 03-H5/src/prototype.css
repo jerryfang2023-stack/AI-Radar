@@ -408,6 +408,13 @@ button { color: inherit; }
 .redeem-list em, .ledger em, .account-list em { color: var(--muted); font-size: 9px; font-style: normal; }
 .redeem-list button, .account-list button { flex: 0 0 auto; border: 0; border-radius: 8px; padding: 7px 9px; background: var(--navy); color: white; font-size: 9px; }
 .redeem-list button:disabled { background: #d9d9d4; color: #777; }
+.redemption-confirm { display: grid; gap: 0; }
+.redemption-confirm > div { display: flex; align-items: center; justify-content: space-between; padding: 11px 2px; border-bottom: 1px solid var(--line); }
+.redemption-confirm > div span { color: var(--muted); font-size: 11px; }
+.redemption-confirm > div strong { font-size: 12px; }
+.redemption-confirm p { margin: 12px 2px 15px; color: var(--muted); font-size: 10px; line-height: 1.65; }
+.redemption-confirm .sheet-primary { margin-top: 0; }
+.sheet-secondary { width: 100%; border: 0; padding: 11px; background: transparent; color: var(--muted); font-size: 11px; }
 .ledger i { font-style: normal; font-weight: 800; }
 .ledger .income { color: var(--success); }
 .ledger .expense { color: var(--danger); }

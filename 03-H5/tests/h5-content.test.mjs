@@ -82,6 +82,16 @@ test("H5 explains invitation value and rules before sharing", async () => {
   assert.match(source, /searchParams\.set\("invite", "1"\)/u);
 });
 
+test("H5 performs confirmed repeatable point redemption", async () => {
+  const source = await readFile(new URL("../src/Prototype.tsx", import.meta.url), "utf8");
+  for (const phrase of ["确认兑换并扣除", "兑换后积分", "会员有效期", "积分余额已变化，请重新确认", "还差 ${shortfall} 分"]) {
+    assert.ok(source.includes(phrase), `missing redemption state: ${phrase}`);
+  }
+  assert.doesNotMatch(source, /growth\.redeemed\.includes\(id\)/u);
+  assert.match(source, /setMembership\(extendMembership\(membership, benefit\.days\)\)/u);
+  assert.match(source, /disabled=\{shortfall > 0\}/u);
+});
+
 test("public UI does not expose internal workflow language", async () => {
   const source = await readFile(new URL("../src/Prototype.tsx", import.meta.url), "utf8");
   const forbidden = [

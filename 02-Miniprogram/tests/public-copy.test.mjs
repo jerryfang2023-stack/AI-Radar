@@ -14,6 +14,9 @@ const membershipModelSource = fs.readFileSync("miniprogram/utils/membership-mode
 const profileSource = fs.readFileSync("miniprogram/pages/profile/index.wxml", "utf8");
 const profileLogic = fs.readFileSync("miniprogram/pages/profile/index.js", "utf8");
 const inviteSource = fs.readFileSync("miniprogram/pages/invite/index.wxml", "utf8");
+const growthSource = fs.readFileSync("miniprogram/pages/growth/index.wxml", "utf8");
+const growthLogic = fs.readFileSync("miniprogram/pages/growth/index.js", "utf8");
+const memberSource = fs.readFileSync("miniprogram/utils/member.js", "utf8");
 const publicFiles = [
   "miniprogram/pages/terminal/index.wxml",
   "miniprogram/pages/market/index.wxml",
@@ -67,6 +70,17 @@ test("opens a dedicated invitation value page before sharing", () => {
     assert.match(inviteSource, new RegExp(copy, "u"));
   }
   assert.match(inviteSource, /open-type="share"/u);
+});
+
+test("enables confirmed point redemption with balance and membership updates", () => {
+  assert.match(growthSource, /item\.affordable/u);
+  assert.match(growthSource, /还差/u);
+  assert.match(growthLogic, /确认兑换吗/u);
+  assert.match(growthLogic, /兑换成功，已增加/u);
+  assert.match(memberSource, /transactionId/u);
+  assert.match(memberSource, /saveWallet\(result\.wallet\)/u);
+  assert.match(memberSource, /saveMembership\(nextMembership\)/u);
+  assert.match(memberSource, /兑换未完成，请重试/u);
 });
 
 test("keeps list pages concise while preserving detail-page actions", () => {
