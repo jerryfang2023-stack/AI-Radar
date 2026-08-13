@@ -1,4 +1,5 @@
 const { getLevel, applyReward, applyRedemption } = require("./growth-model.js");
+const { MONTHLY_PRICE, PRICING_PLANS, createMembership, membershipSnapshot, extendMembership } = require("./membership-model.js");
 
 const PROFILE_KEY = "guanlan_member_profile_v1";
 const HISTORY_KEY = "guanlan_browse_history_v1";
@@ -6,6 +7,7 @@ const FOLLOW_KEY = "guanlan_follow_topics_v1";
 const WALLET_KEY = "guanlan_growth_wallet_v1";
 const TASK_KEY = "guanlan_daily_tasks_v1";
 const BENEFIT_KEY = "guanlan_redeemed_benefits_v1";
+const MEMBERSHIP_KEY = "guanlan_membership_v1";
 
 const TASKS = [
   { id: "browse", title: "每日阅读 5 条情报", target: 5, reward: 2, unit: "条" },
@@ -14,10 +16,11 @@ const TASKS = [
 ];
 
 const BENEFITS = [
-  { id: "advanced_filter", title: "高级筛选试用", description: "解锁 7 天高级筛选体验", cost: 150 },
-  { id: "follow_limit", title: "关注上限扩容", description: "增加 10 个主题关注名额", cost: 200 },
-  { id: "weekly_priority", title: "周报优先阅读", description: "连续 4 周提前阅读周报", cost: 300 },
+  { id: "membership_7d", title: "7 天会员权益", description: "全部栏目浏览权益顺延 7 天", cost: 300, days: 7, repeatable: true },
+  { id: "membership_30d", title: "30 天会员权益", description: "全部栏目浏览权益顺延 30 天", cost: 1000, days: 30, repeatable: true },
 ];
+
+const MEMBER_RIGHTS = ["融资情报完整浏览", "生态图谱主体档案", "商业观察周报月报", "收藏、关注与浏览记录"];
 
 function nowLabel() {
   const date = new Date();
@@ -84,12 +87,19 @@ function toggleFollow(id) {
 
 function getWallet() {
   const value = wx.getStorageSync(WALLET_KEY);
-  if (value && typeof value.balance === "number" && Array.isArray(value.ledger)) return value;
+  if (value && typeof value.balance === "number" && Array.isArray(value.ledger)) {
+    const ledger = value.ledger.map((item) =>
+      item.id === "experience_starter" ? { ...item, label: "新用户积分" } : item
+    );
+    const wallet = { ...value, ledger };
+    wx.setStorageSync(WALLET_KEY, wallet);
+    return wallet;
+  }
   const createdAt = nowLabel();
   const initial = {
     balance: 128,
     lifetime: 128,
-    ledger: [{ id: "experience_starter", label: "本地体验起始积分", points: 128, type: "earn", createdAt }],
+    ledger: [{ id: "experience_starter", label: "新用户积分", points: 128, type: "earn", createdAt }],
   };
   wx.setStorageSync(WALLET_KEY, initial);
   return initial;
@@ -98,6 +108,18 @@ function getWallet() {
 function saveWallet(wallet) {
   wx.setStorageSync(WALLET_KEY, wallet);
   return wallet;
+}
+
+function getMembership() {
+  const value = wx.getStorageSync(MEMBERSHIP_KEY);
+  const membership = value && value.trialEndsAt ? value : createMembership();
+  if (!value || !value.trialEndsAt) wx.setStorageSync(MEMBERSHIP_KEY, membership);
+  return membershipSnapshot(membership);
+}
+
+function saveMembership(membership) {
+  wx.setStorageSync(MEMBERSHIP_KEY, membership);
+  return membershipSnapshot(membership);
 }
 
 function getTodayState() {
@@ -142,12 +164,13 @@ function redeemBenefit(id) {
   const benefit = BENEFITS.find((item) => item.id === id);
   if (!benefit) return { ok: false, reason: "权益不存在" };
   const redeemed = getRedeemedBenefitIds();
-  if (redeemed.includes(id)) return { ok: false, reason: "该权益已兑换" };
+  if (!benefit.repeatable && redeemed.includes(id)) return { ok: false, reason: "该权益已兑换" };
   const result = applyRedemption(getWallet(), benefit.cost, `兑换权益：${benefit.title}`, nowLabel(), `redeem_${id}_${Date.now()}`);
   if (!result.ok) return result;
   saveWallet(result.wallet);
-  wx.setStorageSync(BENEFIT_KEY, [...redeemed, id]);
-  return { ok: true, benefit, wallet: result.wallet };
+  if (!benefit.repeatable) wx.setStorageSync(BENEFIT_KEY, [...redeemed, id]);
+  const membership = benefit.days ? saveMembership(extendMembership(getMembership(), benefit.days)) : getMembership();
+  return { ok: true, benefit, wallet: result.wallet, membership };
 }
 
 function getGrowthSnapshot() {
@@ -168,13 +191,17 @@ function getGrowthSnapshot() {
     tasks,
     completedToday: tasks.filter((item) => item.completed).length,
     weeklyCompleted,
-    benefits: BENEFITS.map((item) => ({ ...item, redeemed: redeemed.includes(item.id), affordable: wallet.balance >= item.cost })),
+    membership: getMembership(),
+    benefits: BENEFITS.map((item) => ({ ...item, redeemed: !item.repeatable && redeemed.includes(item.id), affordable: wallet.balance >= item.cost })),
   };
 }
 
 module.exports = {
   TASKS,
   BENEFITS,
+  MEMBER_RIGHTS,
+  MONTHLY_PRICE,
+  PRICING_PLANS,
   getProfile,
   saveProfile,
   getProfileCompletion,
@@ -184,6 +211,7 @@ module.exports = {
   getFollowIds,
   toggleFollow,
   getWallet,
+  getMembership,
   getTaskProgress,
   recordBehavior,
   redeemBenefit,

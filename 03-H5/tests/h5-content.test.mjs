@@ -52,6 +52,9 @@ test("profile capabilities are present", async () => {
   for (const capability of ["浏览记录", "我的收藏", "我的关注", "成长与权益", "邀请好友", "个人资料"]) {
     assert.ok(source.includes(capability), `missing capability: ${capability}`);
   }
+  for (const membershipCopy of ["7 天体验中", "30", "168", "300", "月度会员", "半年会员", "年度会员", "会员权益兑换", "活跃积分兑换", "所有栏目的完整浏览权"]) {
+    assert.ok(source.includes(membershipCopy), `missing membership capability: ${membershipCopy}`);
+  }
 });
 
 test("public UI does not expose internal workflow language", async () => {

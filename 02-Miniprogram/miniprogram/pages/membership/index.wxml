@@ -1,0 +1,31 @@
+<view class="page-shell">
+  <app-header title="会员中心" show-back />
+  <view class="page-content membership-content">
+    <view class="status-card">
+      <text class="status-kicker">当前权益</text>
+      <text class="status-title serif">{{membership.statusLabel}}</text>
+      <text wx:if="{{membership.active}}" class="status-copy">剩余 {{membership.remainingDays}} 天 · 有效至 {{membership.activeUntil}}</text>
+      <text wx:else class="status-copy">体验期已结束，可开通会员或使用活跃积分兑换。</text>
+    </view>
+
+    <view class="plan-card">
+      <view class="plan-title"><view><text class="serif">观澜会员</text><text>所有栏目的完整浏览权</text></view><view><text class="plan-price mono">30</text><text>元/月起</text></view></view>
+      <view class="pricing-list">
+        <view class="pricing-item" wx:for="{{plans}}" wx:key="id">
+          <view><text>{{item.title}}</text><text wx:if="{{item.badge}}" class="pricing-badge">{{item.badge}}</text></view>
+          <view><text class="mono">{{item.price}}</text><text>元 / {{item.unit}}</text></view>
+        </view>
+      </view>
+      <view class="rights-list"><view wx:for="{{rights}}" wx:key="*this"><text>✓</text><text>{{item}}</text></view></view>
+      <button class="subscribe-button" bindtap="subscribe">选择会员套餐</button>
+      <text class="plan-note">新用户首次使用自动获得 7 天完整权益体验；月度、半年和年度会员均不自动续费。</text>
+    </view>
+
+    <view class="exchange-card" bindtap="openGrowth">
+      <view><text class="exchange-title">活跃积分兑换</text><text class="exchange-copy">当前 {{points}} 分 · 可兑换 7 天或 30 天会员权益</text></view>
+      <text class="exchange-action">去兑换</text>
+    </view>
+
+    <view class="rules-card"><text class="serif">权益说明</text><text>会员有效期内可浏览融资、生态、观察和我的全部栏目。积分兑换成功后，有效期会在当前权益结束日期之后顺延。</text></view>
+  </view>
+</view>

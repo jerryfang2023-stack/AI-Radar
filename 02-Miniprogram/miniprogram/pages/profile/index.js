@@ -34,6 +34,7 @@ Page({
   openWatchlist() { wx.navigateTo({ url: "/pages/saved/index" }); },
   openFollows() { wx.navigateTo({ url: "/pages/follows/index" }); },
   openGrowth() { wx.navigateTo({ url: "/pages/growth/index" }); },
+  openMembership() { wx.navigateTo({ url: "/pages/membership/index" }); },
   openTask(event) {
     const id = event.currentTarget.dataset.id;
     if (id === "follow") wx.navigateTo({ url: "/pages/follows/index" });

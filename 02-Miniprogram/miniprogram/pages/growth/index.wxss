@@ -7,6 +7,10 @@
 .wallet-track { height: 8rpx; margin-top: 24rpx; overflow: hidden; border-radius: 99rpx; background: rgba(255,255,255,.16); }
 .wallet-track view { height: 100%; background: #c8a766; }
 .wallet-next { margin-top: 12rpx; color: rgba(255,255,255,.68); font-size: 21rpx; }
+.membership-strip { margin: 22rpx 0 4rpx; padding: 20rpx 22rpx; border: 1rpx solid rgba(200,167,102,.52); border-radius: 16rpx; background: #fff9ec; }
+.membership-strip view { display: flex; flex-direction: column; gap: 7rpx; }
+.membership-strip text:first-child { color: #604412; font-size: 25rpx; font-weight: 600; }
+.membership-strip text:last-child { color: #8c7041; font-size: 21rpx; }
 .task-list, .ledger-list { overflow: hidden; }
 .task-row, .ledger-row { display: flex; min-height: 90rpx; align-items: center; justify-content: space-between; gap: 20rpx; padding: 14rpx 22rpx; border-bottom: 1rpx solid #e5e8ec; }
 .task-row:last-child, .ledger-row:last-child { border-bottom: 0; }

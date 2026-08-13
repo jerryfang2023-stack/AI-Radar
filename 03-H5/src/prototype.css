@@ -253,6 +253,13 @@ button { color: inherit; }
 .identity-row span, .profile-edit-card div { display: grid; gap: 5px; }
 .identity-row strong { font: 800 20px Georgia, "Noto Serif SC", serif; }
 .identity-row em, .profile-edit-card em { color: var(--muted); font-size: 11px; font-style: normal; }
+.membership-card { width: 100%; display: grid; grid-template-columns: 1fr auto; gap: 10px 18px; border: 1px solid #d7c18f; border-radius: 18px; padding: 16px; background: linear-gradient(135deg, #fffaf0, #f3e7ce); text-align: left; }
+.membership-card > span { display: grid; gap: 4px; }
+.membership-card > span:nth-child(2) { text-align: right; }
+.membership-card em { color: #806b45; font-size: 10px; font-style: normal; }
+.membership-card strong { color: #392c16; font: 800 17px Georgia, "Noto Serif SC", serif; }
+.membership-card > span:nth-child(2) strong { font-size: 24px; }
+.membership-card small { grid-column: 1/-1; padding-top: 9px; border-top: 1px solid rgba(140,112,65,.18); color: #806b45; font-size: 10px; }
 .growth-card { width: 100%; display: grid; gap: 12px; border: 0; border-radius: 18px; padding: 18px; background: var(--navy); color: white; text-align: left; }
 .growth-top, .growth-meta { display: flex; justify-content: space-between; }
 .growth-top > span { display: grid; gap: 4px; }
@@ -281,6 +288,33 @@ button { color: inherit; }
 .invite-card span { display: grid; gap: 4px; }
 .invite-card strong { font-size: 13px; }
 .invite-card em { color: #6c5b38; font-size: 10px; font-style: normal; }
+.membership-screen { display: grid; gap: 14px; }
+.member-status { display: grid; gap: 6px; border-radius: 18px; padding: 20px; background: var(--navy); color: white; }
+.member-status em { color: var(--gold); font-size: 10px; font-style: normal; letter-spacing: .12em; }
+.member-status strong { font: 800 24px Georgia, "Noto Serif SC", serif; }
+.member-status span { color: #cbd8e2; font-size: 10px; }
+.member-plan { border: 1px solid #d7c18f; border-radius: 18px; padding: 18px; background: #fffaf0; }
+.member-plan header { display: flex; justify-content: space-between; gap: 16px; }
+.member-plan header span { display: grid; gap: 4px; }
+.member-plan header span:last-child { text-align: right; }
+.member-plan header strong { color: #392c16; font: 800 20px Georgia, "Noto Serif SC", serif; }
+.member-plan header span:last-child strong { font-size: 29px; }
+.member-plan header em, .member-plan small { color: #806b45; font-size: 10px; font-style: normal; }
+.member-plan .pricing-list { display: grid; gap: 7px; margin-top: 14px; }
+.member-plan .pricing-list article { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 11px; border: 1px solid rgba(140,112,65,.18); border-radius: 10px; background: rgba(255,255,255,.72); }
+.member-plan .pricing-list article > span { display: flex; align-items: center; gap: 5px; color: #5b4c32; font-size: 10px; }
+.member-plan .pricing-list article > span:last-child strong { color: #2f2617; font-size: 17px; }
+.member-plan .pricing-list article i { padding: 2px 6px; border-radius: 999px; background: #efe3c8; color: #8a6529; font-size: 8px; font-style: normal; }
+.member-plan > div { display: grid; gap: 10px; margin: 16px 0; padding: 14px 0; border-block: 1px solid rgba(140,112,65,.18); }
+.member-plan p { display: grid; grid-template-columns: 17px 1fr; margin: 0; color: #4c4437; font-size: 11px; }
+.member-plan p i { color: #9b6d20; font-style: normal; font-weight: 800; }
+.member-plan > button { width: 100%; border: 0; border-radius: 11px; padding: 12px; background: var(--navy); color: white; font-weight: 800; }
+.member-plan small { display: block; margin-top: 10px; text-align: center; }
+.points-exchange { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 12px; border: 1px solid var(--line); border-radius: 15px; padding: 15px; background: white; text-align: left; }
+.points-exchange span { display: grid; gap: 4px; }
+.points-exchange strong { font-size: 13px; }
+.points-exchange em { color: var(--muted); font-size: 10px; font-style: normal; }
+.points-exchange > i { color: #8a6d34; font-size: 10px; font-style: normal; font-weight: 800; }
 
 .detail-identity { display: flex; gap: 13px; align-items: center; padding: 12px 0 18px; }
 .detail-identity > span { width: 52px; height: 52px; display: grid; place-items: center; border-radius: 14px; background: var(--navy); color: white; font: 800 22px Georgia, serif; }

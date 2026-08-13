@@ -132,6 +132,7 @@ type View =
   | { kind: "history" }
   | { kind: "follows" }
   | { kind: "growth" }
+  | { kind: "membership" }
   | { kind: "profile-edit" }
   | { kind: "compare" }
   | { kind: "entity"; entityType: EntityType; key: string };
@@ -146,10 +147,18 @@ type GrowthState = {
 };
 
 const BENEFITS = [
-  { id: "advanced", title: "高级筛选试用", description: "解锁 7 天高级筛选体验", cost: 150 },
-  { id: "follow", title: "关注上限扩容", description: "增加 10 个主题关注名额", cost: 200 },
-  { id: "weekly", title: "周报优先阅读", description: "连续 4 周提前阅读周报", cost: 300 },
+  { id: "membership_7d", title: "7 天会员权益", description: "全部栏目浏览权益顺延 7 天", cost: 300, days: 7 },
+  { id: "membership_30d", title: "30 天会员权益", description: "全部栏目浏览权益顺延 30 天", cost: 1000, days: 30 },
 ];
+
+const MEMBER_RIGHTS = ["融资情报完整浏览", "生态图谱主体档案", "商业观察周报月报", "收藏、关注与浏览记录"];
+const PRICING_PLANS = [
+  { id: "monthly", title: "月度会员", price: 30, unit: "月" },
+  { id: "half-year", title: "半年会员", price: 168, unit: "6 个月", badge: "省 12 元" },
+  { id: "annual", title: "年度会员", price: 300, unit: "年", badge: "省 60 元" },
+];
+const DAY_MS = 24 * 60 * 60 * 1000;
+type MembershipState = { trialStartedAt: string; trialEndsAt: string; memberEndsAt: string };
 
 const STORE = {
   favorites: "guanlan_h5_favorites_v1",
@@ -157,6 +166,7 @@ const STORE = {
   follows: "guanlan_h5_follows_v1",
   growth: "guanlan_h5_growth_v1",
   profile: "guanlan_h5_profile_v1",
+  membership: "guanlan_h5_membership_v1",
 };
 
 function readLocal<T>(key: string, fallback: T): T {
@@ -170,6 +180,24 @@ function readLocal<T>(key: string, fallback: T): T {
 
 function dateLabel() {
   return new Intl.DateTimeFormat("zh-CN", { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(new Date());
+}
+
+function createMembership(now = Date.now()): MembershipState {
+  return { trialStartedAt: new Date(now).toISOString(), trialEndsAt: new Date(now + 7 * DAY_MS).toISOString(), memberEndsAt: "" };
+}
+
+function membershipFor(value: MembershipState, now = Date.now()) {
+  const trialEnd = Date.parse(value.trialEndsAt || "") || 0;
+  const memberEnd = Date.parse(value.memberEndsAt || "") || 0;
+  const isMember = memberEnd > now;
+  const isTrial = !isMember && trialEnd > now;
+  const activeUntil = isMember ? memberEnd : isTrial ? trialEnd : Math.max(trialEnd, memberEnd);
+  return { ...value, status: isMember ? "member" : isTrial ? "trial" : "expired", active: isMember || isTrial, statusLabel: isMember ? "观澜会员" : isTrial ? "7 天体验中" : "体验已结束", remainingDays: activeUntil > now ? Math.max(1, Math.ceil((activeUntil - now) / DAY_MS)) : 0, activeUntil: activeUntil ? new Date(activeUntil).toISOString().slice(0, 10) : "" };
+}
+
+function extendMembership(value: MembershipState, days: number, now = Date.now()): MembershipState {
+  const start = Math.max(now, Date.parse(value.trialEndsAt || "") || now, Date.parse(value.memberEndsAt || "") || 0);
+  return { ...value, memberEndsAt: new Date(start + days * DAY_MS).toISOString() };
 }
 
 function levelFor(points: number) {
@@ -365,6 +393,7 @@ export default function Prototype() {
     redeemed: [],
     ledger: [{ id: "starter", label: "新用户积分", points: 128, date: dateLabel() }],
   }));
+  const [membership, setMembership] = useState<MembershipState>(() => readLocal(STORE.membership, createMembership()));
   const [toast, setToast] = useState("");
   const [splashVisible, setSplashVisible] = useState(true);
 
@@ -387,11 +416,13 @@ export default function Prototype() {
   useEffect(() => { localStorage.setItem(STORE.follows, JSON.stringify(follows)); }, [follows]);
   useEffect(() => { localStorage.setItem(STORE.growth, JSON.stringify(growth)); }, [growth]);
   useEffect(() => { localStorage.setItem(STORE.profile, JSON.stringify({ nickname })); }, [nickname]);
+  useEffect(() => { localStorage.setItem(STORE.membership, JSON.stringify(membership)); }, [membership]);
   useEffect(() => { if (!toast) return; const timer = setTimeout(() => setToast(""), 1900); return () => clearTimeout(timer); }, [toast]);
   useEffect(() => { const timer = setTimeout(() => setSplashVisible(false), 1500); return () => clearTimeout(timer); }, []);
 
   const activeTab = view.kind === "tab" ? view.tab : lastTab;
   const level = levelFor(growth.lifetime);
+  const membershipStatus = membershipFor(membership);
   const cards = fundingIndex?.cards || [];
   const entityLibrary = useMemo(() => buildEntityLibrary(cards, fundingDetails), [cards, fundingDetails]);
   const filteredCards = useMemo(() => cards.filter((card) => {
@@ -493,7 +524,8 @@ export default function Prototype() {
       redeemed: [...current.redeemed, id],
       ledger: [{ id: `redeem-${Date.now()}`, label: `兑换：${benefit.title}`, points: -benefit.cost, date: dateLabel() }, ...current.ledger],
     }));
-    setToast("权益兑换成功");
+    setMembership((current) => extendMembership(current, benefit.days));
+    setToast(`已增加 ${benefit.days} 天会员权益`);
   }
 
   const page = (() => {
@@ -503,12 +535,13 @@ export default function Prototype() {
     if (view.kind === "history") return <HistoryView cards={history.map((id) => cards.find((card) => card.id === id)).filter(Boolean) as FundingCard[]} onBack={back} onOpen={openFunding} />;
     if (view.kind === "follows") return <FollowsView categories={fundingIndex.categories} follows={follows} onBack={back} onToggle={toggleFollow} />;
     if (view.kind === "growth") return <GrowthView growth={growth} level={level} onBack={back} onRedeem={redeem} />;
+    if (view.kind === "membership") return <MembershipView membership={membershipStatus} points={growth.balance} onBack={back} onGrowth={() => go({ kind: "growth" })} onSubscribe={() => setToast("付费开通暂未开放，可先体验或积分兑换")} />;
     if (view.kind === "profile-edit") return <ProfileEditView nickname={nickname} onChange={setNickname} onBack={back} />;
     if (view.kind === "compare") return <CompareView cards={selected.map((id) => cards.find((card) => card.id === id)).filter(Boolean) as FundingCard[]} onBack={back} />;
     if (view.kind === "entity") return <EntityDetailView entity={entityLibrary[view.entityType].find((item) => item.key === view.key)} type={view.entityType} onBack={back} onOpenFunding={(id) => openFunding(id, view)} onOpenEntity={(entityType, key) => go({ kind: "entity", entityType, key })} />;
     if (view.tab === "market") return <EntityLibraryView library={entityLibrary} onOpen={(entityType, key) => go({ kind: "entity", entityType, key })} />;
     if (view.tab === "observe") return <ObserveView index={reportIndex} type={reportType} onType={setReportType} onOpen={(id) => go({ kind: "report", id })} onSaved={() => go({ kind: "saved" })} />;
-    if (view.tab === "profile") return <ProfileView nickname={nickname} favorites={favorites.length} history={history.length} follows={follows.length} growth={growth} level={level} onOpen={(kind) => go({ kind })} onShare={() => share("一起用观澜追踪 AI 融资情报")} />;
+    if (view.tab === "profile") return <ProfileView nickname={nickname} favorites={favorites.length} history={history.length} follows={follows.length} growth={growth} level={level} membership={membershipStatus} onOpen={(kind) => go({ kind })} onShare={() => share("一起用观澜追踪 AI 融资情报")} />;
     return <TerminalView index={fundingIndex} cards={filteredCards} query={query} onQuery={setQuery} favorites={favorites} selected={selected} onOpen={openFunding} onFavorite={toggleFavorite} onSelect={(id) => setSelected((current) => current.includes(id) ? current.filter((item) => item !== id) : current.length < 3 ? [...current, id] : current)} onFilter={() => setFilterOpen(true)} onSaved={() => go({ kind: "saved" })} onCompare={() => selected.length >= 2 ? go({ kind: "compare" }) : setToast("请至少选择 2 家公司")} />;
   })();
 
@@ -606,13 +639,17 @@ function ObserveView({ index, type, onType, onOpen, onSaved }: { index: ReportIn
   return <><AppHeader title="观察" action="我的收藏" onAction={onSaved} /><MobileScroll className="app-screen"><main className="screen-content observe-screen"><section className="report-intro"><span>GUANLAN RESEARCH</span><h2>AI 商业变化观察</h2><p>用周报追踪近期变化，用月报理解行业趋势与商业机会。</p></section><div className="segmented"><button className={type === "weekly" ? "active" : ""} onClick={() => onType("weekly")}>周报 {index.meta.weeklyCount}</button><button className={type === "monthly" ? "active" : ""} onClick={() => onType("monthly")}>月报 {index.meta.monthlyCount}</button></div>{featured ? <button className="featured-report" onClick={() => onOpen(featured.id)}><span className="feature-meta"><em>最新{featured.typeLabel}</em><i>{featured.issue}</i></span><strong>{featured.title}</strong><p>{featured.summary}</p>{featured.counts ? <span className="evidence-chips"><i>{featured.counts.signals} 条事件</i><i>{featured.counts.opinions} 条观点</i><i>{featured.counts.community} 条行业观察</i></span> : null}<span className="feature-footer"><i>{publicDateWindow(featured.window)}</i><em>阅读全文</em></span></button> : null}<SectionTitle title={`往期${type === "weekly" ? "周报" : "月报"}`} note="按发布日期倒序" /><section className="report-list">{reports.slice(1).map((report) => <button key={report.id} className="report-row" onClick={() => onOpen(report.id)}><span className="report-date"><strong>{report.dateShort}</strong><em>{report.issue}</em></span><span className="report-copy"><strong>{report.title}</strong><p>{report.summary}</p><span><i>{report.sectionCount} 个章节</i><em>查看全文</em></span></span></button>)}</section></main></MobileScroll></>;
 }
 
-function ProfileView({ nickname, favorites, history, follows, growth, level, onOpen, onShare }: { nickname: string; favorites: number; history: number; follows: number; growth: GrowthState; level: ReturnType<typeof levelFor>; onOpen: (kind: "saved" | "history" | "follows" | "growth" | "profile-edit") => void; onShare: () => void }) {
+function ProfileView({ nickname, favorites, history, follows, growth, level, membership, onOpen, onShare }: { nickname: string; favorites: number; history: number; follows: number; growth: GrowthState; level: ReturnType<typeof levelFor>; membership: ReturnType<typeof membershipFor>; onOpen: (kind: "saved" | "history" | "follows" | "growth" | "membership" | "profile-edit") => void; onShare: () => void }) {
   const tasks = [
     { id: "browse", title: "每日阅读 5 条情报", progress: Math.min(5, growth.browseIds.length), target: 5, points: 2 },
     { id: "favorite", title: "收藏 1 条情报", progress: favorites ? 1 : 0, target: 1, points: 3 },
     { id: "follow", title: "关注 1 个主题", progress: follows ? 1 : 0, target: 1, points: 5 },
   ];
-  return <><AppHeader title="" action="设置" onAction={() => onOpen("profile-edit")} /><MobileScroll className="app-screen"><main className="screen-content profile-screen"><button className="identity-row" onClick={() => onOpen("profile-edit")}><img src="/brand/app-icon-light.svg" alt="个人头像" /><span><strong>{nickname}</strong><em>资料完善度 60% · 管理个人信息</em></span><ChevronRightIcon /></button><button className="growth-card" onClick={() => onOpen("growth")}><span className="growth-top"><span><em>本周情报成长</em><strong>L{level.level} {level.name}</strong></span><span><strong>{growth.balance}</strong><em>积分</em></span></span><span className="growth-meta"><i>已完成 {growth.completed.length}/5 个成长任务</i><i>距下一级 {Math.max(0, level.next - growth.lifetime)} 分</i></span><span className="progress"><i style={{ width: `${level.progress}%` }} /></span><span className="growth-footer">继续研究，解锁更多情报权益</span></button><section className="stats"><button onClick={() => onOpen("history")}><strong>{history}</strong><span>浏览</span></button><button onClick={() => onOpen("saved")}><strong>{favorites}</strong><span>收藏</span></button><button onClick={() => onOpen("follows")}><strong>{follows}</strong><span>关注</span></button></section><SectionTitle title="成长任务" note="查看明细" onClick={() => onOpen("growth")} /><section className="profile-list">{tasks.map((task) => <button key={task.id} onClick={() => task.id === "follow" ? onOpen("follows") : undefined}><span><strong>{task.title}</strong><em>今日进度 {task.progress}/{task.target}</em></span><i className={growth.completed.includes(task.id) ? "done" : ""}>{growth.completed.includes(task.id) ? "已完成" : `+${task.points} 分`}</i></button>)}</section><SectionTitle title="我的权益" note="全部权益" onClick={() => onOpen("growth")} /><section className="profile-list benefits-preview">{BENEFITS.map((item) => <button key={item.id} onClick={() => onOpen("growth")}><img src="/brand/app-icon-light.svg" alt="" /><span><strong>{item.title}</strong><em>{item.description}</em></span><i>{growth.redeemed.includes(item.id) ? "已兑换" : `${item.cost} 分`}</i></button>)}</section><button className="invite-card" onClick={onShare}><span><strong>邀请好友 · 共同成长</strong><em>好友首次注册后，双方各得 20 积分</em></span><Share1Icon /></button></main></MobileScroll></>;
+  return <><AppHeader title="" action="设置" onAction={() => onOpen("profile-edit")} /><MobileScroll className="app-screen"><main className="screen-content profile-screen"><button className="identity-row" onClick={() => onOpen("profile-edit")}><img src="/brand/app-icon-light.svg" alt="个人头像" /><span><strong>{nickname}</strong><em>资料完善度 60% · 管理个人信息</em></span><ChevronRightIcon /></button><button className="membership-card" onClick={() => onOpen("membership")}><span><em>观澜会员</em><strong>{membership.statusLabel}</strong></span><span><strong>30</strong><em>元/月起</em></span><small>{membership.active ? `剩余 ${membership.remainingDays} 天 · 有效至 ${membership.activeUntil}` : "开通后可浏览全部栏目"}</small></button><button className="growth-card" onClick={() => onOpen("growth")}><span className="growth-top"><span><em>本周情报成长</em><strong>L{level.level} {level.name}</strong></span><span><strong>{growth.balance}</strong><em>活跃积分</em></span></span><span className="growth-meta"><i>已完成 {growth.completed.length}/5 个成长任务</i><i>距下一级 {Math.max(0, level.next - growth.lifetime)} 分</i></span><span className="progress"><i style={{ width: `${level.progress}%` }} /></span><span className="growth-footer">继续研究，积累积分兑换会员权益</span></button><section className="stats"><button onClick={() => onOpen("history")}><strong>{history}</strong><span>浏览</span></button><button onClick={() => onOpen("saved")}><strong>{favorites}</strong><span>收藏</span></button><button onClick={() => onOpen("follows")}><strong>{follows}</strong><span>关注</span></button></section><SectionTitle title="成长任务" note="查看明细" onClick={() => onOpen("growth")} /><section className="profile-list">{tasks.map((task) => <button key={task.id} onClick={() => task.id === "follow" ? onOpen("follows") : undefined}><span><strong>{task.title}</strong><em>今日进度 {task.progress}/{task.target}</em></span><i className={growth.completed.includes(task.id) ? "done" : ""}>{growth.completed.includes(task.id) ? "已完成" : `+${task.points} 分`}</i></button>)}</section><SectionTitle title="会员权益兑换" note="全部权益" onClick={() => onOpen("growth")} /><section className="profile-list benefits-preview">{BENEFITS.map((item) => <button key={item.id} onClick={() => onOpen("growth")}><img src="/brand/app-icon-light.svg" alt="" /><span><strong>{item.title}</strong><em>{item.description}</em></span><i>{item.cost} 分</i></button>)}</section><button className="invite-card" onClick={onShare}><span><strong>邀请好友 · 共同成长</strong><em>好友首次注册后，双方各得 20 积分</em></span><Share1Icon /></button></main></MobileScroll></>;
+}
+
+function MembershipView({ membership, points, onBack, onGrowth, onSubscribe }: { membership: ReturnType<typeof membershipFor>; points: number; onBack: () => void; onGrowth: () => void; onSubscribe: () => void }) {
+  return <><AppHeader title="会员中心" onBack={onBack} /><MobileScroll className="app-screen"><main className="screen-content sub-screen membership-screen"><section className="member-status"><em>当前权益</em><strong>{membership.statusLabel}</strong><span>{membership.active ? `剩余 ${membership.remainingDays} 天 · 有效至 ${membership.activeUntil}` : "体验期已结束，可开通会员或使用积分兑换"}</span></section><section className="member-plan"><header><span><strong>观澜会员</strong><em>所有栏目的完整浏览权</em></span><span><strong>30</strong><em>元/月起</em></span></header><section className="pricing-list">{PRICING_PLANS.map((plan) => <article key={plan.id}><span><strong>{plan.title}</strong>{plan.badge ? <i>{plan.badge}</i> : null}</span><span><strong>{plan.price}</strong><em>元 / {plan.unit}</em></span></article>)}</section><div>{MEMBER_RIGHTS.map((right) => <p key={right}><i>✓</i>{right}</p>)}</div><button onClick={onSubscribe}>选择会员套餐</button><small>新用户首次使用自动获得 7 天完整权益体验；月度、半年和年度会员均不自动续费。</small></section><button className="points-exchange" onClick={onGrowth}><span><strong>活跃积分兑换</strong><em>当前 {points} 分 · 可兑换 7 天或 30 天会员权益</em></span><i>去兑换</i></button><p className="boundary">会员有效期内可浏览全部栏目。积分兑换后，有效期会在当前权益结束日期之后顺延。</p></main></MobileScroll></>;
 }
 
 function FundingDetailView({ card, watched, onBack, onFavorite, onOpenEntity }: { card?: FundingDetail; watched: boolean; onBack: () => void; onFavorite: () => void; onOpenEntity: (type: EntityType, key: string) => void }) {
@@ -639,7 +676,7 @@ function FollowsView({ categories, follows, onBack, onToggle }: { categories: Fu
 }
 
 function GrowthView({ growth, level, onBack, onRedeem }: { growth: GrowthState; level: ReturnType<typeof levelFor>; onBack: () => void; onRedeem: (id: string) => void }) {
-  return <><AppHeader title="成长与权益" onBack={onBack} /><MobileScroll className="app-screen"><main className="screen-content sub-screen"><section className="wallet"><span>当前积分</span><strong>{growth.balance}</strong><em>L{level.level} {level.name} · 累计成长 {growth.lifetime} 分</em><span className="progress"><i style={{ width: `${level.progress}%` }} /></span><small>距下一等级还差 {Math.max(0, level.next - growth.lifetime)} 分</small></section><SectionTitle title="可兑换权益" /><section className="redeem-list">{BENEFITS.map((item) => <article key={item.id}><span><strong>{item.title}</strong><em>{item.description}</em></span><button disabled={growth.redeemed.includes(item.id)} onClick={() => onRedeem(item.id)}>{growth.redeemed.includes(item.id) ? "已兑换" : `${item.cost} 分兑换`}</button></article>)}</section><SectionTitle title="积分明细" /><section className="ledger">{growth.ledger.map((item) => <div key={item.id}><span><strong>{item.id === "starter" ? "新用户积分" : item.label}</strong><em>{item.date}</em></span><i className={item.points > 0 ? "income" : "expense"}>{item.points > 0 ? "+" : ""}{item.points}</i></div>)}</section><p className="boundary">邀请奖励将在好友完成注册后发放。</p></main></MobileScroll></>;
+  return <><AppHeader title="成长与权益" onBack={onBack} /><MobileScroll className="app-screen"><main className="screen-content sub-screen"><section className="wallet"><span>当前活跃积分</span><strong>{growth.balance}</strong><em>L{level.level} {level.name} · 累计成长 {growth.lifetime} 分</em><span className="progress"><i style={{ width: `${level.progress}%` }} /></span><small>距下一等级还差 {Math.max(0, level.next - growth.lifetime)} 分</small></section><SectionTitle title="会员权益兑换" /><section className="redeem-list">{BENEFITS.map((item) => <article key={item.id}><span><strong>{item.title}</strong><em>{item.description}</em></span><button onClick={() => onRedeem(item.id)}>{`${item.cost} 分兑换`}</button></article>)}</section><SectionTitle title="积分明细" /><section className="ledger">{growth.ledger.map((item) => <div key={item.id}><span><strong>{item.id === "starter" ? "新用户积分" : item.label}</strong><em>{item.date}</em></span><i className={item.points > 0 ? "income" : "expense"}>{item.points > 0 ? "+" : ""}{item.points}</i></div>)}</section><p className="boundary">社群活跃积分可兑换会员权益；邀请奖励将在好友完成注册后发放。</p></main></MobileScroll></>;
 }
 
 function ProfileEditView({ nickname, onChange, onBack }: { nickname: string; onChange: (value: string) => void; onBack: () => void }) {

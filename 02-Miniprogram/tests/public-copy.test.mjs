@@ -9,6 +9,8 @@ const marketLogic = fs.readFileSync("miniprogram/pages/market/index.js", "utf8")
 const watchlistSource = fs.readFileSync("miniprogram/pages/watchlist/index.wxml", "utf8");
 const headerSource = fs.readFileSync("miniprogram/components/app-header/index.wxml", "utf8");
 const headerStyles = fs.readFileSync("miniprogram/components/app-header/index.wxss", "utf8");
+const membershipSource = fs.readFileSync("miniprogram/pages/membership/index.wxml", "utf8");
+const membershipModelSource = fs.readFileSync("miniprogram/utils/membership-model.js", "utf8");
 const publicFiles = [
   "miniprogram/pages/terminal/index.wxml",
   "miniprogram/pages/market/index.wxml",
@@ -32,6 +34,14 @@ test("uses the confirmed financing column and public-facing copy", () => {
   for (const internalCopy of ["融资终端", "多源核验", "多源已核验", "已验证信号", "证据状态"]) {
     assert.doesNotMatch(publicSource, new RegExp(internalCopy, "u"));
   }
+});
+
+test("exposes the confirmed membership plans and point exchange entry", () => {
+  const membershipContract = `${membershipSource}\n${membershipModelSource}`;
+  for (const copy of ["7 天完整权益体验", "30", "168", "300", "月度会员", "半年会员", "年度会员", "所有栏目的完整浏览权", "活跃积分兑换"]) {
+    assert.match(membershipContract, new RegExp(copy, "u"));
+  }
+  assert.match(membershipSource, /wx:for="\{\{plans\}\}"/u);
 });
 
 test("keeps list pages concise while preserving detail-page actions", () => {

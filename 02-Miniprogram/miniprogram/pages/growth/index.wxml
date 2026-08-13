@@ -2,7 +2,7 @@
   <app-header title="成长与权益" show-back />
   <view class="page-content growth-content">
     <view class="wallet-card">
-      <text class="wallet-label">当前本地体验积分</text>
+      <text class="wallet-label">当前活跃积分</text>
       <text class="wallet-value mono">{{growth.wallet.balance}}</text>
       <text class="wallet-level">L{{growth.level.level}} {{growth.level.name}} · 累计成长 {{growth.wallet.lifetime}} 分</text>
       <view class="wallet-track"><view style="width: {{growth.level.progress}}%;"></view></view>
@@ -17,7 +17,9 @@
       </view>
     </view>
 
-    <view class="section-title serif">可兑换权益</view>
+    <view class="membership-strip"><view><text>{{growth.membership.statusLabel}}</text><text wx:if="{{growth.membership.active}}">剩余 {{growth.membership.remainingDays}} 天 · 有效至 {{growth.membership.activeUntil}}</text><text wx:else>使用积分兑换会员权益</text></view></view>
+
+    <view class="section-title serif">会员权益兑换</view>
     <view class="benefit-card paper-card" wx:for="{{growth.benefits}}" wx:key="id">
       <view><text class="benefit-title">{{item.title}}</text><text class="benefit-copy">{{item.description}}</text></view>
       <button class="redeem-button {{item.redeemed ? 'done' : ''}}" disabled="{{item.redeemed}}" data-id="{{item.id}}" bindtap="redeem">{{item.redeemed ? '已兑换' : item.cost + ' 分兑换'}}</button>
@@ -27,6 +29,6 @@
     <view class="paper-card ledger-list">
       <view wx:for="{{growth.wallet.ledger}}" wx:key="id" class="ledger-row"><view><text>{{item.label}}</text><text class="mono">{{item.createdAt}}</text></view><text class="mono {{item.points > 0 ? 'income' : 'expense'}}">{{item.points > 0 ? '+' : ''}}{{item.points}}</text></view>
     </view>
-    <view class="rules-note"><text class="serif">到账规则</text><text>阅读、收藏与关注任务在本机即时记录。邀请奖励必须在好友完成首次注册后由服务端核验，不能通过点击分享直接到账。</text></view>
+    <view class="rules-note"><text class="serif">到账规则</text><text>阅读、收藏与关注任务会累计活跃积分。社群成员获得的活动积分可用于兑换会员权益；邀请奖励须在好友完成首次注册后到账。</text></view>
   </view>
 </view>

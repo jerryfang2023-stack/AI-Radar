@@ -9,12 +9,12 @@ Page({
     if (!benefit || benefit.redeemed) return;
     wx.showModal({
       title: `兑换${benefit.title}？`,
-      content: `将扣除 ${benefit.cost} 本地体验积分。正式版权益需登录并由服务端确认。`,
+      content: `将扣除 ${benefit.cost} 活跃积分，会员有效期顺延 ${benefit.days} 天。确认兑换吗？`,
       confirmColor: "#0D355C",
       success: (result) => {
         if (!result.confirm) return;
         const redemption = redeemBenefit(id);
-        wx.showToast({ title: redemption.ok ? "兑换成功" : redemption.reason, icon: "none" });
+        wx.showToast({ title: redemption.ok ? `已增加 ${benefit.days} 天` : redemption.reason, icon: "none" });
         this.setData({ growth: getGrowthSnapshot() });
       },
     });

@@ -10,6 +10,18 @@
       <text class="text-link">编辑</text>
     </view>
 
+    <view class="membership-card" bindtap="openMembership">
+      <view class="membership-head">
+        <view><text class="membership-kicker">观澜会员</text><text class="membership-status serif">{{growth.membership.statusLabel}}</text></view>
+        <text class="membership-price"><text class="mono">30</text> 元/月起</text>
+      </view>
+      <view class="membership-meta">
+        <text wx:if="{{growth.membership.active}}">剩余 {{growth.membership.remainingDays}} 天 · 有效至 {{growth.membership.activeUntil}}</text>
+        <text wx:else>开通后可浏览全部栏目</text>
+        <text>查看权益</text>
+      </view>
+    </view>
+
     <view class="growth-card" bindtap="openGrowth">
       <view class="growth-top">
         <view>
@@ -18,7 +30,7 @@
         </view>
         <view class="points-block">
           <text class="points mono">{{growth.wallet.balance}}</text>
-          <text>体验积分</text>
+          <text>活跃积分</text>
         </view>
       </view>
       <view class="growth-progress-row">
@@ -65,6 +77,6 @@
       <view><text class="row-title">个人信息与数据管理</text><text class="row-subtitle">头像、昵称、手机号与隐私说明</text></view>
       <text class="text-link">进入</text>
     </view>
-    <text class="local-note">积分与权益当前为本地体验数据，正式到账以服务端验证结果为准。</text>
+    <text class="local-note">会员与积分权益以账号中的最终记录为准；邀请积分在好友完成注册后到账。</text>
   </view>
 </view>
