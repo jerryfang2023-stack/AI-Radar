@@ -122,6 +122,21 @@ function saveMembership(membership) {
   return membershipSnapshot(membership);
 }
 
+function syncMembership(membership) {
+  if (!membership || !membership.trialEndsAt) return getMembership();
+  const current = getMembership();
+  const laterIso = (left, right) => {
+    const leftTime = Date.parse(left || "") || 0;
+    const rightTime = Date.parse(right || "") || 0;
+    return leftTime >= rightTime ? (left || "") : (right || "");
+  };
+  return saveMembership({
+    trialStartedAt: current.trialStartedAt || membership.trialStartedAt,
+    trialEndsAt: laterIso(current.trialEndsAt, membership.trialEndsAt),
+    memberEndsAt: laterIso(current.memberEndsAt, membership.memberEndsAt),
+  });
+}
+
 function getTodayState() {
   const all = wx.getStorageSync(TASK_KEY) || {};
   return all[dateKey()] || { browse: [], favorite: [], follow: [], awarded: [] };
@@ -222,6 +237,7 @@ module.exports = {
   toggleFollow,
   getWallet,
   getMembership,
+  syncMembership,
   getTaskProgress,
   recordBehavior,
   redeemBenefit,

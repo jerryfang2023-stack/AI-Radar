@@ -11,13 +11,13 @@
     <view class="plan-card">
       <view class="plan-title"><view><text class="serif">观澜会员</text><text>所有栏目的完整浏览权</text></view><view><text class="plan-price mono">30</text><text>元/月起</text></view></view>
       <view class="pricing-list">
-        <view class="pricing-item" wx:for="{{plans}}" wx:key="id">
-          <view><text>{{item.title}}</text><text wx:if="{{item.badge}}" class="pricing-badge">{{item.badge}}</text></view>
+        <view class="pricing-item {{selectedPlanId === item.id ? 'selected' : ''}}" wx:for="{{plans}}" wx:key="id" data-id="{{item.id}}" bindtap="selectPlan">
+          <view><text class="plan-radio"></text><text>{{item.title}}</text><text wx:if="{{item.badge}}" class="pricing-badge">{{item.badge}}</text></view>
           <view><text class="mono">{{item.price}}</text><text>元 / {{item.unit}}</text></view>
         </view>
       </view>
       <view class="rights-list"><view wx:for="{{rights}}" wx:key="*this"><text>✓</text><text>{{item}}</text></view></view>
-      <button class="subscribe-button" bindtap="subscribe">选择会员套餐</button>
+      <button class="subscribe-button" loading="{{purchasing}}" disabled="{{purchasing}}" bindtap="subscribe">{{purchasing ? '正在处理' : '立即开通会员'}}</button>
       <text class="plan-note">新用户首次使用自动获得 7 天完整权益体验；月度、半年和年度会员均不自动续费。</text>
     </view>
 

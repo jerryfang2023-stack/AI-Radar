@@ -55,3 +55,20 @@ test("insufficient balance leaves wallet and membership unchanged", () => {
   assert.equal(storage.get("guanlan_growth_wallet_v1").balance, 128);
   assert.deepEqual(storage.get("guanlan_membership_v1"), initialMembership);
 });
+
+test("remote paid membership sync preserves a later point-redemption entitlement", () => {
+  const storage = createStorage({
+    guanlan_membership_v1: {
+      trialStartedAt: "2099-01-01T00:00:00.000Z",
+      trialEndsAt: "2099-01-08T00:00:00.000Z",
+      memberEndsAt: "2099-03-01T00:00:00.000Z",
+    },
+  });
+  const { syncMembership } = require("../miniprogram/utils/member.js");
+  syncMembership({
+    trialStartedAt: "2099-01-01T00:00:00.000Z",
+    trialEndsAt: "2099-01-08T00:00:00.000Z",
+    memberEndsAt: "2099-02-01T00:00:00.000Z",
+  });
+  assert.equal(storage.get("guanlan_membership_v1").memberEndsAt, "2099-03-01T00:00:00.000Z");
+});

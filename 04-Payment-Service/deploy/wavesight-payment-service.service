@@ -1,0 +1,36 @@
+[Unit]
+Description=WaveSight Mini Program Payment Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/opt/wavesight-payment-service/current
+EnvironmentFile=/opt/wavesight-payment-service/shared/.env
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/opt/wavesight-payment-service/shared/.venv/bin/gunicorn --workers 2 --threads 4 --timeout 60 --bind 127.0.0.1:8010 app:app
+Restart=always
+RestartSec=3
+UMask=0077
+PrivateTmp=true
+NoNewPrivileges=true
+PrivateDevices=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/opt/wavesight-payment-service/shared/data
+ReadOnlyPaths=/opt/wavesight-payment-service/shared/secrets
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+RestrictRealtime=true
+RestrictNamespaces=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+LockPersonality=true
+SystemCallArchitectures=native
+CapabilityBoundingSet=
+AmbientCapabilities=
+
+[Install]
+WantedBy=multi-user.target

@@ -17,6 +17,8 @@ const inviteSource = fs.readFileSync("miniprogram/pages/invite/index.wxml", "utf
 const growthSource = fs.readFileSync("miniprogram/pages/growth/index.wxml", "utf8");
 const growthLogic = fs.readFileSync("miniprogram/pages/growth/index.js", "utf8");
 const memberSource = fs.readFileSync("miniprogram/utils/member.js", "utf8");
+const paymentSource = fs.readFileSync("miniprogram/utils/payment.js", "utf8");
+const membershipLogic = fs.readFileSync("miniprogram/pages/membership/index.js", "utf8");
 const publicFiles = [
   "miniprogram/pages/terminal/index.wxml",
   "miniprogram/pages/market/index.wxml",
@@ -48,6 +50,11 @@ test("exposes the confirmed membership plans and point exchange entry", () => {
     assert.match(membershipContract, new RegExp(copy, "u"));
   }
   assert.match(membershipSource, /wx:for="\{\{plans\}\}"/u);
+  assert.match(membershipSource, /立即开通会员/u);
+  assert.match(membershipLogic, /purchaseMembership\(plan\.id\)/u);
+  assert.match(paymentSource, /wx\.requestPayment/u);
+  assert.match(paymentSource, /result\?\.order\?\.status !== "PAID"/u);
+  assert.doesNotMatch(membershipLogic, /付费开通暂未开放/u);
 });
 
 test("keeps observer growth primary and membership status compact on profile", () => {
