@@ -1,0 +1,69 @@
+[
+  {
+    "funnel_id": "LF-71d0751c9b743d15",
+    "lens": "fde",
+    "date": "2026-08-13",
+    "monitoring_paths": [
+      "fde_customer_case",
+      "fde_earnings_disclosure",
+      "fde_procurement_contract",
+      "fde_production_rollout"
+    ],
+    "raw_documents": 116,
+    "original_sources": 110,
+    "valid_claims": 36,
+    "observations": 3,
+    "canonical_events": 15,
+    "blocker_counts": {
+      "no_source_bounded_event": 15,
+      "no_source_bounded_claim": 2,
+      "source_outside_daily_window": 62,
+      "source_published_after_data_date": 2,
+      "non_event_or_index_title": 7,
+      "repository_page_requires_release_source": 2,
+      "rumor_requires_primary_confirmation": 1,
+      "community_source_requires_original_event_source": 2,
+      "source_outside_funding_backfill_window": 1,
+      "event_not_ai_relevant": 1,
+      "raw_source_quality_block": 5,
+      "raw_document_not_auditable": 1
+    },
+    "rates": {
+      "original_source_rate": 0.9482758620689655,
+      "valid_claim_rate": 0.3103448275862069,
+      "observation_rate": 0.08333333333333333,
+      "event_conversion_rate": 0.4166666666666667
+    }
+  },
+  {
+    "funnel_id": "LF-196b6397686ad047",
+    "lens": "hardware",
+    "date": "2026-08-13",
+    "monitoring_paths": [
+      "hardware_capacity_fab",
+      "hardware_capex",
+      "hardware_oem_odm",
+      "hardware_shipment_deployment"
+    ],
+    "raw_documents": 22,
+    "original_sources": 21,
+    "valid_claims": 4,
+    "observations": 2,
+    "canonical_events": 1,
+    "blocker_counts": {
+      "no_source_bounded_event": 2,
+      "source_outside_daily_window": 9,
+      "non_event_or_index_title": 5,
+      "repository_page_requires_release_source": 1,
+      "source_outside_funding_backfill_window": 2,
+      "opinion_without_source_bounded_event": 1,
+      "raw_document_not_auditable": 1
+    },
+    "rates": {
+      "original_source_rate": 0.9545454545454546,
+      "valid_claim_rate": 0.18181818181818182,
+      "observation_rate": 0.5,
+      "event_conversion_rate": 0.25
+    }
+  }
+]

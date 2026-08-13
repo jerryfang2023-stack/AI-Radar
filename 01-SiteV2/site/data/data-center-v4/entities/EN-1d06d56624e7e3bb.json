@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-13T00:26:01.951Z",
+    "latestDataDate": "2026-08-13",
+    "currentDate": "2026-08-13",
+    "eventCount": 2067,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-1d06d56624e7e3bb",
+    "name": "Lemvigh-Müller",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-c9e57b43be8b803a"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-11",
+    "lastSeen": "2026-08-13",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-c9e57b43be8b803a"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-c9e57b43be8b803a",
+        "dataDate": "2026-08-13",
+        "date": "2026-08-11",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Lemvigh-Müller 借助 AI 实现文档处理自动化",
+        "displayTags": [],
+        "entityIds": [
+          "EN-1d06d56624e7e3bb"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-8b09c6df98e6c361",
+      "eventId": "EV-c9e57b43be8b803a",
+      "dataDate": "2026-08-13",
+      "date": "2026-08-11",
+      "title": "Lemvigh-Müller 借助 AI 实现文档处理自动化",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "Lemvigh-Müller",
+      "industry": "未披露",
+      "useCase": "AI use case for reading incoming business documents",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "integrated with Lemvigh-Müller’s core SAP system—SAP Cloud ERP Private, which the company adopted two years ago."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://news.sap.com/2026/08/ai-automating-document-processing-lemvigh-muller",
+      "entityIds": [
+        "EN-1d06d56624e7e3bb"
+      ]
+    }
+  ],
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-d40d23984852256d",
+      "implementationKey": "d40d23984852256d",
+      "eventId": "EV-c9e57b43be8b803a",
+      "eventIds": [
+        "EV-c9e57b43be8b803a"
+      ],
+      "dataDate": "2026-08-13",
+      "date": "2026-08-11",
+      "title": "未披露 × Lemvigh-Müller：AI use case for reading incoming business documents",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "Lemvigh-Müller",
+      "industry": "未披露",
+      "useCase": "AI use case for reading incoming business documents",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "customer",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-cd52966d7e178f1b",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-11",
+          "dataDate": "2026-08-13",
+          "eventId": "EV-c9e57b43be8b803a",
+          "eventTitle": "Lemvigh-Müller 借助 AI 实现文档处理自动化",
+          "claimCount": 2,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://news.sap.com/2026/08/ai-automating-document-processing-lemvigh-muller",
+      "entityIds": [
+        "EN-1d06d56624e7e3bb"
+      ]
+    }
+  ]
+}

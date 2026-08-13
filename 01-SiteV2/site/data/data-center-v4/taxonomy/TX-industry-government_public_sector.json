@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T11:50:37.684Z",
-    "latestDataDate": "2026-08-12",
-    "currentDate": "2026-08-12",
-    "eventCount": 2040,
+    "generatedAt": "2026-08-13T00:26:01.951Z",
+    "latestDataDate": "2026-08-13",
+    "currentDate": "2026-08-13",
+    "eventCount": 2067,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -43,6 +43,7 @@
       "EV-a80624daa2a65d4c",
       "EV-b240fb11e65b018e",
       "EV-bad301e14b034fbd",
+      "EV-a6c4f879a58ababa",
       "EV-3dc8d5c373ddd1f3",
       "EV-3a7128e2d7ff149e"
     ],
@@ -70,6 +71,7 @@
       "EN-9599cd200c6527a7",
       "EN-c70eca6b0f88f44d",
       "EN-06b5472c16feae4c",
+      "EN-83eb1cb31148698f",
       "EN-74be4cbf48e647b2",
       "EN-e395d03e988d30a9"
     ],
@@ -78,10 +80,11 @@
       "FDE-9331f5d8c795e023"
     ],
     "hardwareIds": [
-      "HW-c5a22adcc66136ed"
+      "HW-c5a22adcc66136ed",
+      "HW-25eea5677838fb54"
     ],
     "firstSeen": "2026-03-19",
-    "lastSeen": "2026-08-09"
+    "lastSeen": "2026-08-13"
   },
   "events": [
     {
@@ -14353,6 +14356,254 @@
       "publisher": "Anthropic：Newsroom（网页）"
     },
     {
+      "id": "EV-a6c4f879a58ababa",
+      "dataDate": "2026-08-13",
+      "date": "2026-08-12",
+      "updatedDate": "2026-08-13",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Master Group旗下Indus Cloud推出巴基斯坦首个思科AI GPU集群，搭载NVIDIA H200 GPU",
+      "originalTitle": "Master Group's Indus Cloud Launches Pakistan's First Cisco AI GPU Cluster Powered by NVIDIA H200 GPUs",
+      "subject": "Master Group's Indus Cloud",
+      "action": "Launches Pakistan's First Cisco AI GPU Cluster Powered by NVIDIA H200 GPUs",
+      "object": "Master Group's Indus Cloud Launches Pakistan's First Cisco AI GPU Cluster Powered by NVIDIA H200 GPUs",
+      "metrics": [
+        "200 GPUs"
+      ],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-83eb1cb31148698f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-83eb1cb31148698f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-83eb1cb31148698f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-83eb1cb31148698f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "government_public_sector",
+            "name": "政府与公共部门",
+            "entityIds": [
+              "EN-83eb1cb31148698f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-83eb1cb31148698f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-83eb1cb31148698f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-83eb1cb31148698f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "government_public_sector",
+          "name": "政府与公共部门",
+          "entityIds": [
+            "EN-83eb1cb31148698f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-83eb1cb31148698f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-83eb1cb31148698f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-83eb1cb31148698f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-83eb1cb31148698f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-83eb1cb31148698f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "government_public_sector",
+          "name": "政府与公共部门",
+          "entityIds": [
+            "EN-83eb1cb31148698f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-83eb1cb31148698f",
+        "EN-8d4321d936320802",
+        "EN-4d75aea59c4493f4",
+        "EN-893e9e7af177ea6f",
+        "EN-0dc96232ef8e1819"
+      ],
+      "entityNames": [
+        "Master Group's Indus Cloud",
+        "NVIDIA",
+        "AI GPU Cluster Powered",
+        "H200 GPUs",
+        "Master Group"
+      ],
+      "productName": "AI GPU Cluster Powered",
+      "products": [
+        {
+          "name": "AI GPU Cluster Powered",
+          "type": "AI 硬件",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        },
+        {
+          "name": "H200 GPUs",
+          "type": "AI 硬件",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        },
+        {
+          "name": "Master Group",
+          "type": "AI 硬件",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "sourceUrl": "https://propakistani.pk/2026/08/12/master-groups-indus-cloud-launches-pakistans-first-cisco-ai-gpu-cluster-powered-by-nvidia-h200-gpus",
+      "publisher": "propakistani.pk"
+    },
+    {
       "id": "EV-3dc8d5c373ddd1f3",
       "dataDate": "2026-08-09",
       "date": "2026-08-09",
@@ -15255,12 +15506,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
-        "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-automotive_transportation",
         "TX-industry-telecommunications",
@@ -15301,13 +15552,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
-        "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-automotive_transportation",
         "TX-industry-telecommunications",
@@ -15407,7 +15658,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-15",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-13"
     },
     {
       "id": "EN-c04bd5ebd10ab696",
@@ -15646,13 +15897,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
-        "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-automotive_transportation",
         "TX-industry-telecommunications",
@@ -15690,9 +15941,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
-        "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-automotive_transportation",
         "TX-industry-telecommunications",
@@ -15768,7 +16019,8 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-a3ba586cbc57b5fd"
+        "EV-a3ba586cbc57b5fd",
+        "EV-c230c05281ef3aa2"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -15784,7 +16036,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-03-19",
-      "lastSeen": "2026-07-30"
+      "lastSeen": "2026-08-13"
     },
     {
       "id": "EN-9599cd200c6527a7",
@@ -15885,6 +16137,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-875b31b96ff689df",
         "EV-0ad3854d95038ea3",
         "EV-2868ff08777b5de9",
         "EV-87528c24b38b6312",
@@ -16051,6 +16304,8 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-f0dcc60444b56245",
+        "EV-649481503cdb7736",
         "EV-46254bfc37b846f5",
         "EV-580e20b23df595a1",
         "EV-d7d649a3126aa663",
@@ -16112,6 +16367,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
@@ -16122,7 +16378,6 @@
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
         "TX-product_form-model",
-        "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
         "TX-use_case-data_analysis",
@@ -16169,7 +16424,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-12"
+      "lastSeen": "2026-08-13"
     },
     {
       "id": "EN-06b5472c16feae4c",
@@ -16195,6 +16450,31 @@
       "lastSeen": "2026-06-13"
     },
     {
+      "id": "EN-83eb1cb31148698f",
+      "name": "Master Group's Indus Cloud",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a6c4f879a58ababa"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-product_form-chip_accelerator",
+        "TX-industry-government_public_sector",
+        "TX-product_form-ai_compute_system",
+        "TX-technology-fine_tuning"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-12",
+      "lastSeen": "2026-08-13"
+    },
+    {
       "id": "EN-74be4cbf48e647b2",
       "name": "Pokee AI",
       "entityType": "organization_candidate",
@@ -16209,9 +16489,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-product_form-model",
-        "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-industry-government_public_sector",
         "TX-industry-healthcare_life_sciences",
@@ -16240,8 +16520,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
+        "TX-product_form-enterprise_software_platform",
         "TX-industry-government_public_sector",
         "TX-use_case-productivity_enterprise_workflows"
       ],
@@ -16326,6 +16606,49 @@
   ],
   "hardware": [
     {
+      "id": "HW-25eea5677838fb54",
+      "eventId": "EV-a6c4f879a58ababa",
+      "dataDate": "2026-08-13",
+      "date": "2026-08-12",
+      "title": "Master Group旗下Indus Cloud推出巴基斯坦首个思科AI GPU集群，搭载NVIDIA H200 GPU",
+      "hardwareType": "gpu",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "data_center",
+      "supplier": "NVIDIA",
+      "customer": "Indus Cloud",
+      "processNode": "未披露",
+      "capacity": 200,
+      "capacityUnit": "GPUs",
+      "site": "Pakistan",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-83eb1cb31148698f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://propakistani.pk/2026/08/12/master-groups-indus-cloud-launches-pakistans-first-cisco-ai-gpu-cluster-powered-by-nvidia-h200-gpus",
+      "sourceName": "propakistani.pk",
+      "sourceDate": "2026-08-12",
+      "entityIds": [
+        "EN-83eb1cb31148698f",
+        "EN-8d4321d936320802",
+        "EN-4d75aea59c4493f4",
+        "EN-893e9e7af177ea6f",
+        "EN-0dc96232ef8e1819"
+      ]
+    },
+    {
       "id": "HW-c5a22adcc66136ed",
       "eventId": "EV-b9a1cba0b59a5354",
       "dataDate": "2026-07-25",
@@ -16356,6 +16679,124 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-b5cf4b964e7626f8",
+      "snapshotKey": "b5cf4b964e7626f8",
+      "snapshotId": "HWS-9e2b0f289d6457ab",
+      "eventId": "EV-a6c4f879a58ababa",
+      "eventIds": [
+        "EV-a6c4f879a58ababa"
+      ],
+      "dataDate": "2026-08-13",
+      "date": "2026-08-13",
+      "title": "AI GPU Cluster Powered / H200 GPUs / Master Group",
+      "subject": "Master Group's Indus Cloud",
+      "productNames": [
+        "AI GPU Cluster Powered",
+        "H200 GPUs",
+        "Master Group"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "200",
+          "unit": "GPUs",
+          "fact_ref": "HWF-61c20b64a7724803"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-13",
+          "hardware_fact_id": "HWF-8acc4edc556a5ba5",
+          "fact_type": "product",
+          "observed_at": "2026-08-12T13:59:58.000Z",
+          "subject_entity_id": "EN-83eb1cb31148698f",
+          "subject_name": "Master Group's Indus Cloud",
+          "product_entity_ids": [
+            "EN-4d75aea59c4493f4",
+            "EN-893e9e7af177ea6f",
+            "EN-0dc96232ef8e1819"
+          ],
+          "product_names": [
+            "AI GPU Cluster Powered",
+            "H200 GPUs",
+            "Master Group"
+          ],
+          "component_type": "gpu",
+          "metric_value": "200",
+          "unit": "GPUs",
+          "source_quote": "Master Group’s Indus Cloud, Pakistan’s First AI-Ready, Renewable-Powered Enterprise Cloud, today announced the launch of the country’s first Cisco AI GPU Cluster powered by the latest NVIDIA H200 Tensor Core GPUs, making brand-new NVIDIA H200 GPUs available on Pakistani soil for the very first time.",
+          "event_refs": [
+            "EV-a6c4f879a58ababa"
+          ],
+          "claim_ref": "CL-c59b69abb1585b1b",
+          "source_refs": [
+            "SA-449a3615106f0ba5"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-13/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-13",
+          "hardware_fact_id": "HWF-61c20b64a7724803",
+          "fact_type": "product",
+          "observed_at": "2026-08-12T13:59:58.000Z",
+          "subject_entity_id": "EN-83eb1cb31148698f",
+          "subject_name": "Master Group's Indus Cloud",
+          "product_entity_ids": [
+            "EN-4d75aea59c4493f4",
+            "EN-893e9e7af177ea6f",
+            "EN-0dc96232ef8e1819"
+          ],
+          "product_names": [
+            "AI GPU Cluster Powered",
+            "H200 GPUs",
+            "Master Group"
+          ],
+          "component_type": "gpu",
+          "metric_value": "200",
+          "unit": "GPUs",
+          "source_quote": "“Artificial Intelligence will define the next era of economic growth, industrial competitiveness, and national innovation. As Master Group, we are building the infrastructure Pakistan needed someone to build. We must build the digital infrastructure necessary to participate in this transformation—not simply consume it. The launch of Pakistan’s first Cisco AI GPU Cluster powered by NVIDIA H200 GPUs is an important milestone towards creating sovereign AI capability and empowering our innovators, enterprises, and public sector with world-class computing resources.” – Shahzad Malik, Managing Director, Master Group of Industries.",
+          "event_refs": [
+            "EV-a6c4f879a58ababa"
+          ],
+          "claim_ref": "CL-769961cd852621a3",
+          "source_refs": [
+            "SA-449a3615106f0ba5"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-13/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-83eb1cb31148698f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://propakistani.pk/2026/08/12/master-groups-indus-cloud-launches-pakistans-first-cisco-ai-gpu-cluster-powered-by-nvidia-h200-gpus",
+      "entityIds": [
+        "EN-83eb1cb31148698f",
+        "EN-8d4321d936320802",
+        "EN-4d75aea59c4493f4",
+        "EN-893e9e7af177ea6f",
+        "EN-0dc96232ef8e1819"
+      ]
+    },
     {
       "id": "HWC-fc6be3540530f815",
       "snapshotKey": "fc6be3540530f815",

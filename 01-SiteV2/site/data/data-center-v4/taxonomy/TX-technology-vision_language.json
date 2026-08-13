@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T11:50:37.684Z",
-    "latestDataDate": "2026-08-12",
-    "currentDate": "2026-08-12",
-    "eventCount": 2040,
+    "generatedAt": "2026-08-13T00:26:01.951Z",
+    "latestDataDate": "2026-08-13",
+    "currentDate": "2026-08-13",
+    "eventCount": 2067,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -19,6 +19,7 @@
     "valueId": "vision_language",
     "eventIds": [
       "EV-6f092cfc7a064d64",
+      "EV-7c53df0cdea33936",
       "EV-39d56d5cef4cea80",
       "EV-03ab7d0b40d1e5b5",
       "EV-ba89f9414be0b041",
@@ -29,6 +30,7 @@
     ],
     "entityIds": [
       "EN-2b6e51bec93e86c1",
+      "EN-a658fbc24f5e3832",
       "EN-593d0361124f348f",
       "EN-3c6d89173e6636d7",
       "EN-7117fa8d72fb99b9",
@@ -38,7 +40,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-06-06",
-    "lastSeen": "2026-08-06"
+    "lastSeen": "2026-08-13"
   },
   "events": [
     {
@@ -386,6 +388,140 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/07/16/how-a-former-deepmind-researcher-raised-at-a-300m-pre-seed-valuation-before-launching-a-product",
       "publisher": "TechCrunch AI"
+    },
+    {
+      "id": "EV-7c53df0cdea33936",
+      "dataDate": "2026-08-13",
+      "date": "2026-08-12",
+      "updatedDate": "2026-08-13",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "紫东太初推出GMC核心集剪枝方法，少80%Token仍满血保真多模态能力",
+      "originalTitle": "",
+      "subject": "紫东太初",
+      "action": "推出",
+      "object": "GMC核心集剪枝方法，少80%Token仍满血保真多模态能力",
+      "metrics": [
+        "80%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-a658fbc24f5e3832"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-a658fbc24f5e3832"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-a658fbc24f5e3832"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-a658fbc24f5e3832"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-a658fbc24f5e3832"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-a658fbc24f5e3832"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-a658fbc24f5e3832"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a658fbc24f5e3832",
+        "EN-653ba6ff053e18fb"
+      ],
+      "entityNames": [
+        "紫东太初",
+        "GMC"
+      ],
+      "productName": "GMC",
+      "products": [
+        {
+          "name": "GMC",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/08/471030.html",
+      "publisher": "量子位"
     },
     {
       "id": "EV-39d56d5cef4cea80",
@@ -1373,6 +1509,7 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
+        "EV-0eefbf2e50b67a5e",
         "EV-e234a2e2418ebdf1",
         "EV-eb12fb9dd08e5aad",
         "EV-7a0f201debe99f2b",
@@ -1429,7 +1566,29 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-12"
+      "lastSeen": "2026-08-13"
+    },
+    {
+      "id": "EN-a658fbc24f5e3832",
+      "name": "紫东太初",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-7c53df0cdea33936"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-multimodal",
+        "TX-technology-vision_language"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-12",
+      "lastSeen": "2026-08-13"
     },
     {
       "id": "EN-593d0361124f348f",
@@ -1542,13 +1701,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-product_form-model",
-        "TX-technology-agentic_execution",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-code_generation",

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T11:50:37.684Z",
-    "latestDataDate": "2026-08-12",
-    "currentDate": "2026-08-12",
-    "eventCount": 2040,
+    "generatedAt": "2026-08-13T00:26:01.951Z",
+    "latestDataDate": "2026-08-13",
+    "currentDate": "2026-08-13",
+    "eventCount": 2067,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -16,14 +16,13 @@
     "name": "SoftBank",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
-    "aliases": [
-      "软银"
-    ],
+    "aliases": [],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
     "eventIds": [
+      "EV-df8954acf9a13848",
       "EV-1a6688afdfd108ef",
       "EV-cafe435ddd007821",
       "EV-a37b9d9fb85e460f",
@@ -33,10 +32,11 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-15",
-    "lastSeen": "2026-07-22",
+    "lastSeen": "2026-08-13",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-df8954acf9a13848",
         "EV-1a6688afdfd108ef"
       ],
       "deployments": [
@@ -53,6 +53,23 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-df8954acf9a13848",
+        "dataDate": "2026-08-13",
+        "date": "2026-08-12",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "OpenAI 参股的 Thrive Holdings 融资 20 亿美元，将 AI 引入企业",
+        "displayTags": [],
+        "entityIds": [
+          "EN-f970fd34532919fe",
+          "EN-7d3194f79e645c42",
+          "EN-80d387ccb3289295"
+        ]
+      },
       {
         "id": "EV-a37b9d9fb85e460f",
         "dataDate": "2026-07-22",

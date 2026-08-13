@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T11:50:37.684Z",
-    "latestDataDate": "2026-08-12",
-    "currentDate": "2026-08-12",
-    "eventCount": 2040,
+    "generatedAt": "2026-08-13T00:26:01.951Z",
+    "latestDataDate": "2026-08-13",
+    "currentDate": "2026-08-13",
+    "eventCount": 2067,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -22,7 +22,8 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-a3ba586cbc57b5fd"
+      "EV-a3ba586cbc57b5fd",
+      "EV-c230c05281ef3aa2"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -38,7 +39,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-03-19",
-    "lastSeen": "2026-07-30",
+    "lastSeen": "2026-08-13",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -46,12 +47,29 @@
       ],
       "deployments": [],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-c230c05281ef3aa2"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-c230c05281ef3aa2",
+        "dataDate": "2026-08-13",
+        "date": "2026-08-13",
+        "eventType": "certification_compliance",
+        "eventTypeLabel": "认证合规",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI 助力政府合同竞标：赢得更多投标",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7035f6607ad2d162"
+        ]
+      },
       {
         "id": "EV-a3ba586cbc57b5fd",
         "dataDate": "2026-07-30",
@@ -275,7 +293,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2025-09-10",
-      "lastSeen": "2026-08-11"
+      "lastSeen": "2026-08-13"
     },
     {
       "id": "TX-product_form-enterprise_software_platform",
@@ -600,7 +618,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-03-19",
-      "lastSeen": "2026-08-12"
+      "lastSeen": "2026-08-13"
     },
     {
       "id": "TX-target_user-business_user",
@@ -750,8 +768,8 @@
         "EV-e4b3a19529576778",
         "EV-31df816db86db282",
         "EV-8eb0acb180b7ad9d",
-        "EV-794f921515af8e8b",
         "EV-eb4858e820bf9435",
+        "EV-794f921515af8e8b",
         "EV-3902d8bd5da40a20",
         "EV-3f8f6a578be79988",
         "EV-44a4e92c03a31ab1",
@@ -956,8 +974,8 @@
         "EN-f30ad7677baf7ea2",
         "EN-eaa1c24270a0d057",
         "EN-53b69ef92c836777",
-        "EN-085578b03da7d660",
         "EN-094b7ade939cad4d",
+        "EN-085578b03da7d660",
         "EN-38a3c50b7c1f9635",
         "EN-c8a41fd9300cfe54",
         "EN-ce65fa41b16c33ff",
@@ -1024,7 +1042,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-12"
+      "lastSeen": "2026-08-13"
     },
     {
       "id": "TX-industry-government_public_sector",
@@ -1058,6 +1076,7 @@
         "EV-a80624daa2a65d4c",
         "EV-b240fb11e65b018e",
         "EV-bad301e14b034fbd",
+        "EV-a6c4f879a58ababa",
         "EV-3dc8d5c373ddd1f3",
         "EV-3a7128e2d7ff149e"
       ],
@@ -1085,6 +1104,7 @@
         "EN-9599cd200c6527a7",
         "EN-c70eca6b0f88f44d",
         "EN-06b5472c16feae4c",
+        "EN-83eb1cb31148698f",
         "EN-74be4cbf48e647b2",
         "EN-e395d03e988d30a9"
       ],
@@ -1093,10 +1113,11 @@
         "FDE-9331f5d8c795e023"
       ],
       "hardwareIds": [
-        "HW-c5a22adcc66136ed"
+        "HW-c5a22adcc66136ed",
+        "HW-25eea5677838fb54"
       ],
       "firstSeen": "2026-03-19",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-13"
     },
     {
       "id": "TX-target_user-public_sector_user",
