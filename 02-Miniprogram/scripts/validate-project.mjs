@@ -77,10 +77,12 @@ const totalPackageBytes = packageFiles.reduce((sum, file) => sum + fs.statSync(f
 if (totalPackageBytes > 2_080_000) failures.push(`Mini Program package budget exceeded: ${totalPackageBytes} bytes`);
 
 const fundingIndex = require(path.join(mini, "data", "funding-index.js"));
+const fundingDetails = require(path.join(mini, "data", "funding-details.js"));
 const chinaMarketCards = fundingIndex.cards.filter((card) => card.marketRegion === "china");
 if (fundingIndex.meta.cardCount !== fundingIndex.cards.length) failures.push("funding meta.cardCount mismatch");
 if (fundingIndex.meta.chinaMarketCardCount !== chinaMarketCards.length) failures.push("funding China market count mismatch");
 if (fundingIndex.cards.some((card) => !["china", "global"].includes(card.marketRegion))) failures.push("funding marketRegion missing or invalid");
+if (Object.keys(fundingDetails).length > 24) failures.push("bundled funding detail fallback exceeds 24 records");
 const liveData = fs.readFileSync(path.join(mini, "utils", "live-data.js"), "utf8");
 if (!liveData.includes("https://www.zkdlj.vip/data")) failures.push("live funding/report data endpoint missing");
 
