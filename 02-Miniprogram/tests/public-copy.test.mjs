@@ -59,6 +59,8 @@ test("keeps observer growth primary and membership status compact on profile", (
   assert.doesNotMatch(compactMembership, /元\/月/u);
   assert.match(compactMembership, /开通会员/u);
   assert.match(profileSource, /邀请人得 300 活跃积分/u);
+  assert.match(profileSource, /class="identity-row" bindtap="openSettings"/u);
+  assert.doesNotMatch(profileSource, /个人信息与数据管理|class="settings-card|class="local-note/u);
 });
 
 test("opens a dedicated invitation value page before sharing", () => {
