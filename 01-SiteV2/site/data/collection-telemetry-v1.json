@@ -2,45 +2,45 @@
   "meta": {
     "version": "COLLECTION-TELEMETRY-V1.0",
     "ops_version": "OPS-V2.0.0-v4-telemetry",
-    "data_date": "2026-08-12",
-    "generated_at": "2026-08-12T04:34:57.098Z",
+    "data_date": "2026-08-13",
+    "generated_at": "2026-08-13T00:26:14.588Z",
     "scope": "OPS",
     "canonical_writeback": false,
     "source_of_truth": "Data Center V4 manifest and integrity gate"
   },
   "collection": {
     "discovered": 290,
-    "capture_succeeded": 264,
-    "capture_failed": 1,
-    "raw_documents": 264
+    "capture_succeeded": 249,
+    "capture_failed": 0,
+    "raw_documents": 249
   },
   "fact_build": {
-    "accepted_claims": 113,
+    "accepted_claims": 102,
     "rejected_claims": 0,
-    "accepted": 113,
+    "accepted": 102,
     "rejected": 0,
     "pending_claims": 0,
-    "canonical_events": 37,
-    "entities": 57,
-    "relationships": 113,
+    "canonical_events": 38,
+    "entities": 64,
+    "relationships": 102,
     "conflicts": 0,
-    "qa_queue": 226,
+    "qa_queue": 211,
     "qa_by_status": {
-      "review_optional": 212,
-      "open": 14
+      "review_optional": 195,
+      "open": 16
     }
   },
   "v4_gate": {
     "status": "passed",
-    "manifest_date": "2026-08-12",
-    "gate_date": "2026-08-12",
+    "manifest_date": "2026-08-13",
+    "gate_date": "2026-08-13",
     "failures": [],
     "warnings": []
   },
   "application_projection": {
     "opportunity_map": "passed",
     "trend_radar": "passed",
-    "funding_insights": "passed",
+    "funding_insights": "failed",
     "fde_hardware_sync": "passed"
   },
   "publication": {
@@ -50,16 +50,16 @@
     {
       "id": "collection",
       "label": "采集",
-      "status": "partial",
+      "status": "passed",
       "counts": {
         "discovered": 290,
-        "capture_succeeded": 264,
-        "capture_failed": 1,
-        "raw_documents": 264
+        "capture_succeeded": 249,
+        "capture_failed": 0,
+        "raw_documents": 249
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-08-12/manifest.json",
-        "agent-workflow/reports/2026-08-12-guanlan-daily-monitor-log.md"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-08-13/manifest.json",
+        "agent-workflow/reports/2026-08-13-guanlan-daily-monitor-log.md"
       ]
     },
     {
@@ -67,34 +67,34 @@
       "label": "事实构建",
       "status": "passed",
       "counts": {
-        "accepted_claims": 113,
+        "accepted_claims": 102,
         "rejected_claims": 0,
-        "accepted": 113,
+        "accepted": 102,
         "rejected": 0,
         "pending_claims": 0,
-        "canonical_events": 37,
-        "entities": 57,
-        "relationships": 113,
+        "canonical_events": 38,
+        "entities": 64,
+        "relationships": 102,
         "conflicts": 0,
-        "qa_queue": 226
+        "qa_queue": 211
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-08-12/manifest.json",
-        "agent-workflow/reports/2026-08-12-data-center-v4-integrity-gate.json"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-08-13/manifest.json",
+        "agent-workflow/reports/2026-08-13-data-center-v4-integrity-gate.json"
       ]
     },
     {
       "id": "application_projection",
       "label": "应用投影",
-      "status": "passed",
+      "status": "partial",
       "counts": {
         "opportunity_map": "passed",
         "trend_radar": "passed",
-        "funding_insights": "passed",
+        "funding_insights": "failed",
         "fde_hardware_sync": "passed"
       },
       "evidence": [
-        "agent-workflow/reports/2026-08-12-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-08-13-persistent-asset-manifest.json"
       ]
     },
     {
@@ -105,7 +105,7 @@
         "v4_bundle_ready": true
       },
       "evidence": [
-        "agent-workflow/reports/2026-08-12-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-08-13-persistent-asset-manifest.json"
       ]
     }
   ],

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T11:50:37.684Z",
-    "latestDataDate": "2026-08-12",
-    "currentDate": "2026-08-12",
-    "eventCount": 2040,
+    "generatedAt": "2026-08-13T00:26:01.951Z",
+    "latestDataDate": "2026-08-13",
+    "currentDate": "2026-08-13",
+    "eventCount": 2067,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -36,6 +36,7 @@
       "EV-e15ae1112294d59e",
       "EV-43301de739fe560e",
       "EV-2868ff08777b5de9",
+      "EV-65e50237cd603c8e",
       "EV-5111b297a0234e46",
       "EV-ed0bb3a0784d6415",
       "EV-7a4d1e871dcd3b1f",
@@ -51,6 +52,7 @@
       "EV-ed58c2c69290ee4c",
       "EV-631197767a45d34c",
       "EV-d53cd33e8f541a65",
+      "EV-1329b30fdf4ff060",
       "EV-02abf1e35f1c33e1",
       "EV-11a3893cb86fef69",
       "EV-9578242a4df20721",
@@ -70,7 +72,7 @@
       "EN-24caf10fe9bfb1c5"
     ],
     "firstSeen": "2026-05-25",
-    "lastSeen": "2026-08-12",
+    "lastSeen": "2026-08-13",
     "relationIds": [
       "REL2-30051dc5d7668662",
       "REL2-e0b4c492d7f56ad2",
@@ -95,6 +97,7 @@
       "partnerships": [],
       "productsServices": [
         "EV-2868ff08777b5de9",
+        "EV-65e50237cd603c8e",
         "EV-5111b297a0234e46",
         "EV-ed0bb3a0784d6415",
         "EV-7a4d1e871dcd3b1f",
@@ -114,6 +117,7 @@
       "hardware": [],
       "organizationPeople": [],
       "other": [
+        "EV-1329b30fdf4ff060",
         "EV-02abf1e35f1c33e1",
         "EV-11a3893cb86fef69",
         "EV-9578242a4df20721",
@@ -122,6 +126,102 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-2868ff08777b5de9",
+        "dataDate": "2026-08-13",
+        "date": "2026-08-12",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "SpaceXAI 推出 Grok Bot，让多个 AI 智能体协同处理任务",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-0b9ca57f53ba758b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-0b9ca57f53ba758b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "code_generation",
+            "name": "代码生成",
+            "entityIds": [
+              "EN-0b9ca57f53ba758b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-6fcba5d96a4fadfd",
+          "EN-c70eca6b0f88f44d",
+          "EN-7d3194f79e645c42",
+          "EN-92df1be3e37c9268"
+        ]
+      },
+      {
+        "id": "EV-65e50237cd603c8e",
+        "dataDate": "2026-08-13",
+        "date": "2026-08-12",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Grok 现已成为可分配工作的 AI 智能体“队友”",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-92df1be3e37c9268"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-6fcba5d96a4fadfd",
+          "EN-92df1be3e37c9268"
+        ]
+      },
+      {
+        "id": "EV-1329b30fdf4ff060",
+        "dataDate": "2026-08-13",
+        "date": "2026-08-12",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "SpaceXAI的Grok 4.6在\"人工智能分析指数\"中获得61分",
+        "displayTags": [],
+        "entityIds": [
+          "EN-6fcba5d96a4fadfd",
+          "EN-2e3ba51a9fb24ca0"
+        ]
+      },
       {
         "id": "EV-55e7c286e95be405",
         "dataDate": "2026-08-12",
@@ -222,58 +322,6 @@
           "EN-c04bd5ebd10ab696",
           "EN-7f871cbf905f6e0c",
           "EN-2b6e51bec93e86c1"
-        ]
-      },
-      {
-        "id": "EV-2868ff08777b5de9",
-        "dataDate": "2026-08-12",
-        "date": "2026-08-12",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "SpaceXAI 推出 Grok Bot，让多个 AI 智能体协同处理任务",
-        "displayTags": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "software_development",
-            "name": "软件开发",
-            "entityIds": [
-              "EN-0b9ca57f53ba758b"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "agentic_execution",
-            "name": "智能体",
-            "entityIds": [
-              "EN-0b9ca57f53ba758b"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "code_generation",
-            "name": "代码生成",
-            "entityIds": [
-              "EN-0b9ca57f53ba758b"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-6fcba5d96a4fadfd",
-          "EN-c70eca6b0f88f44d",
-          "EN-7d3194f79e645c42",
-          "EN-92df1be3e37c9268"
         ]
       },
       {
@@ -1402,6 +1450,7 @@
         "EV-8a91e14f37d32b4d",
         "EV-31782f0824ae1db1",
         "EV-3c51bcb5e99d2b68",
+        "EV-07388b042db1bad0",
         "EV-8973f8148205ed35",
         "EV-ecfc552af7344d65"
       ],
@@ -1425,7 +1474,7 @@
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-05-21",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-13"
     },
     {
       "id": "EN-c4bc2d00a42f220f",
@@ -1715,7 +1764,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-12"
+      "lastSeen": "2026-08-13"
     },
     {
       "id": "TX-product_form-model",
@@ -1796,6 +1845,7 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-a6c4f879a58ababa",
         "EV-5c30f52112d92491",
         "EV-c7d0b810ac3b3d4e",
         "EV-f4b38b9778fca8ce",
@@ -1919,6 +1969,8 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-649481503cdb7736",
+        "EV-75b1a6a12ce2f03f",
         "EV-7d17f91a9af9c26b",
         "EV-daa95c194cced8db",
         "EV-447152f02b3ae0ee",
@@ -1983,6 +2035,7 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
+        "EN-83eb1cb31148698f",
         "EN-52593fb3cf820033",
         "EN-32e83e92d45d71f6",
         "EN-6849cf65695e6e77",
@@ -2049,6 +2102,7 @@
         "EN-14754db7f1439c88",
         "EN-ce31f92c521b7b08",
         "EN-4a639cb888a15d75",
+        "EN-e32ac33fa53a3db6",
         "EN-5f4db04ac40d991b",
         "EN-1706429cbf67f1c9",
         "EN-af84cfb6c1bb0e98",
@@ -2072,12 +2126,13 @@
         "HW-c5a22adcc66136ed",
         "HW-033a5b73cdc3f4be",
         "HW-ceb55d9bc637c1d3",
+        "HW-25eea5677838fb54",
         "HW-e44b241c78bbbd26",
         "HW-46a3e65809ab5227",
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-12"
+      "lastSeen": "2026-08-13"
     },
     {
       "id": "TX-product_form-end_user_application",
@@ -2249,7 +2304,7 @@
         "HW-c5a22adcc66136ed"
       ],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-13"
     },
     {
       "id": "TX-technology-code_generation",
@@ -2355,7 +2410,7 @@
         "HW-b1302168a9ab18e8"
       ],
       "firstSeen": "2026-03-30",
-      "lastSeen": "2026-08-12"
+      "lastSeen": "2026-08-13"
     }
   ],
   "fde": [],

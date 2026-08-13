@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T11:50:37.684Z",
-    "latestDataDate": "2026-08-12",
-    "currentDate": "2026-08-12",
-    "eventCount": 2040,
+    "generatedAt": "2026-08-13T00:26:01.951Z",
+    "latestDataDate": "2026-08-13",
+    "currentDate": "2026-08-13",
+    "eventCount": 2067,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -106,6 +106,7 @@
       "eventIds": [
         "EV-55e7c286e95be405",
         "EV-83728e3b6c7736ce",
+        "EV-b116eafe60d71fbe",
         "EV-2dea56b0e97c1685",
         "EV-da1655ecfaf35feb",
         "EV-e3792591090281c6",
@@ -175,8 +176,10 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
-        "EV-3a7e7b6818fee0de",
+        "EV-58e18eab1b072c9a",
         "EV-7e0d6eb92af58925",
+        "EV-a6c4f879a58ababa",
+        "EV-3a7e7b6818fee0de",
         "EV-c698da7da473b059",
         "EV-c7d0b810ac3b3d4e",
         "EV-e781e169725006f0",
@@ -269,6 +272,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
@@ -278,7 +282,6 @@
         "TX-industry-manufacturing",
         "TX-use_case-research_discovery",
         "TX-product_form-model",
-        "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips",
         "TX-ai_market_subcategory-hardware_computing",
@@ -295,11 +298,14 @@
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
+        "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-deployment_model-cloud",
         "TX-technology-open_weights",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
@@ -329,7 +335,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-12"
+      "lastSeen": "2026-08-13"
     }
   ],
   "relationships": [
@@ -361,6 +367,7 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-bf8ce460c05b9ff0",
         "EV-83728e3b6c7736ce",
         "EV-cfbfc6c80338aa12",
         "EV-b6f025a2dc297b78",
@@ -468,6 +475,7 @@
         "EV-23ae55daa341be06",
         "EV-6bb83280a2116f24",
         "EV-d10684a6f16afe10",
+        "EV-67368bf639178ad1",
         "EV-6af526d687d9f737",
         "EV-acddfa62aabb004f",
         "EV-a852dc0ca6011ff6",
@@ -547,8 +555,10 @@
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
         "EV-2868ff08777b5de9",
-        "EV-3a7e7b6818fee0de",
+        "EV-58e18eab1b072c9a",
+        "EV-65e50237cd603c8e",
         "EV-7e0d6eb92af58925",
+        "EV-3a7e7b6818fee0de",
         "EV-ba2898569165c9a6",
         "EV-5c30f52112d92491",
         "EV-c7d0b810ac3b3d4e",
@@ -800,6 +810,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-2c17183b71d8b7d1",
         "EV-67a7a3c9f1eabd22",
         "EV-4e3e9b543127b55a",
         "EV-20b82e2a2cb33a0e",
@@ -820,6 +831,7 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-8526299f9ecc5fac",
         "EN-240389f4b730bad4",
         "EN-7ebe9a17c4d4c271",
         "EN-360a940182e67c66",
@@ -962,6 +974,7 @@
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
         "EN-0b9ca57f53ba758b",
+        "EN-92df1be3e37c9268",
         "EN-f43fcac12953687c",
         "EN-e214fdf90c1468b9",
         "EN-6c87e5496f592f3c",
@@ -1093,6 +1106,7 @@
         "EN-b7bea343b08cce2c",
         "EN-fdb2cc367267ac57",
         "EN-4a639cb888a15d75",
+        "EN-0616a267820d2c78",
         "EN-16478186eeecf696",
         "EN-f90aec90acf3dc85",
         "EN-96045bee6a2d2527",

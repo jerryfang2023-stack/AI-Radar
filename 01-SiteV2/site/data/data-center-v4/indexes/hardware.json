@@ -5,13 +5,56 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T11:50:37.684Z",
-    "latestDataDate": "2026-08-12",
-    "currentDate": "2026-08-12",
-    "eventCount": 2040,
+    "generatedAt": "2026-08-13T00:26:01.951Z",
+    "latestDataDate": "2026-08-13",
+    "currentDate": "2026-08-13",
+    "eventCount": 2067,
     "quarantinedEventCount": 16
   },
   "hardware": [
+    {
+      "id": "HW-25eea5677838fb54",
+      "eventId": "EV-a6c4f879a58ababa",
+      "dataDate": "2026-08-13",
+      "date": "2026-08-12",
+      "title": "Master Group旗下Indus Cloud推出巴基斯坦首个思科AI GPU集群，搭载NVIDIA H200 GPU",
+      "hardwareType": "gpu",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "data_center",
+      "supplier": "NVIDIA",
+      "customer": "Indus Cloud",
+      "processNode": "未披露",
+      "capacity": 200,
+      "capacityUnit": "GPUs",
+      "site": "Pakistan",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-83eb1cb31148698f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://propakistani.pk/2026/08/12/master-groups-indus-cloud-launches-pakistans-first-cisco-ai-gpu-cluster-powered-by-nvidia-h200-gpus",
+      "sourceName": "propakistani.pk",
+      "sourceDate": "2026-08-12",
+      "entityIds": [
+        "EN-83eb1cb31148698f",
+        "EN-8d4321d936320802",
+        "EN-4d75aea59c4493f4",
+        "EN-893e9e7af177ea6f",
+        "EN-0dc96232ef8e1819"
+      ]
+    },
     {
       "id": "HW-4673613f81881c78",
       "eventId": "EV-0d1e8308d3c007aa",
@@ -2193,6 +2236,124 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-b5cf4b964e7626f8",
+      "snapshotKey": "b5cf4b964e7626f8",
+      "snapshotId": "HWS-9e2b0f289d6457ab",
+      "eventId": "EV-a6c4f879a58ababa",
+      "eventIds": [
+        "EV-a6c4f879a58ababa"
+      ],
+      "dataDate": "2026-08-13",
+      "date": "2026-08-13",
+      "title": "AI GPU Cluster Powered / H200 GPUs / Master Group",
+      "subject": "Master Group's Indus Cloud",
+      "productNames": [
+        "AI GPU Cluster Powered",
+        "H200 GPUs",
+        "Master Group"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "200",
+          "unit": "GPUs",
+          "fact_ref": "HWF-61c20b64a7724803"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-13",
+          "hardware_fact_id": "HWF-8acc4edc556a5ba5",
+          "fact_type": "product",
+          "observed_at": "2026-08-12T13:59:58.000Z",
+          "subject_entity_id": "EN-83eb1cb31148698f",
+          "subject_name": "Master Group's Indus Cloud",
+          "product_entity_ids": [
+            "EN-4d75aea59c4493f4",
+            "EN-893e9e7af177ea6f",
+            "EN-0dc96232ef8e1819"
+          ],
+          "product_names": [
+            "AI GPU Cluster Powered",
+            "H200 GPUs",
+            "Master Group"
+          ],
+          "component_type": "gpu",
+          "metric_value": "200",
+          "unit": "GPUs",
+          "source_quote": "Master Group’s Indus Cloud, Pakistan’s First AI-Ready, Renewable-Powered Enterprise Cloud, today announced the launch of the country’s first Cisco AI GPU Cluster powered by the latest NVIDIA H200 Tensor Core GPUs, making brand-new NVIDIA H200 GPUs available on Pakistani soil for the very first time.",
+          "event_refs": [
+            "EV-a6c4f879a58ababa"
+          ],
+          "claim_ref": "CL-c59b69abb1585b1b",
+          "source_refs": [
+            "SA-449a3615106f0ba5"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-13/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-13",
+          "hardware_fact_id": "HWF-61c20b64a7724803",
+          "fact_type": "product",
+          "observed_at": "2026-08-12T13:59:58.000Z",
+          "subject_entity_id": "EN-83eb1cb31148698f",
+          "subject_name": "Master Group's Indus Cloud",
+          "product_entity_ids": [
+            "EN-4d75aea59c4493f4",
+            "EN-893e9e7af177ea6f",
+            "EN-0dc96232ef8e1819"
+          ],
+          "product_names": [
+            "AI GPU Cluster Powered",
+            "H200 GPUs",
+            "Master Group"
+          ],
+          "component_type": "gpu",
+          "metric_value": "200",
+          "unit": "GPUs",
+          "source_quote": "“Artificial Intelligence will define the next era of economic growth, industrial competitiveness, and national innovation. As Master Group, we are building the infrastructure Pakistan needed someone to build. We must build the digital infrastructure necessary to participate in this transformation—not simply consume it. The launch of Pakistan’s first Cisco AI GPU Cluster powered by NVIDIA H200 GPUs is an important milestone towards creating sovereign AI capability and empowering our innovators, enterprises, and public sector with world-class computing resources.” – Shahzad Malik, Managing Director, Master Group of Industries.",
+          "event_refs": [
+            "EV-a6c4f879a58ababa"
+          ],
+          "claim_ref": "CL-769961cd852621a3",
+          "source_refs": [
+            "SA-449a3615106f0ba5"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-13/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-83eb1cb31148698f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://propakistani.pk/2026/08/12/master-groups-indus-cloud-launches-pakistans-first-cisco-ai-gpu-cluster-powered-by-nvidia-h200-gpus",
+      "entityIds": [
+        "EN-83eb1cb31148698f",
+        "EN-8d4321d936320802",
+        "EN-4d75aea59c4493f4",
+        "EN-893e9e7af177ea6f",
+        "EN-0dc96232ef8e1819"
+      ]
+    },
+    {
       "id": "HWC-1e90510260afb7ed",
       "snapshotKey": "1e90510260afb7ed",
       "snapshotId": "HWS-b144d4a901bfc4c0",
@@ -2879,7 +3040,7 @@
       "sourceUrl": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding",
       "entityIds": [
         "EN-373da2ec629326c0",
-        "EN-a4ae746b11369c98"
+        "EN-8d4321d936320802"
       ]
     },
     {
@@ -7909,34 +8070,37 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-08-12",
-      "funnel_id": "LF-ec3b6317f31b9af7",
+      "data_date": "2026-08-13",
+      "funnel_id": "LF-196b6397686ad047",
       "lens": "hardware",
-      "date": "2026-08-12",
+      "date": "2026-08-13",
       "monitoring_paths": [
         "hardware_capacity_fab",
         "hardware_capex",
+        "hardware_oem_odm",
         "hardware_shipment_deployment"
       ],
-      "raw_documents": 21,
-      "original_sources": 20,
-      "valid_claims": 8,
-      "observations": 9,
-      "canonical_events": 2,
+      "raw_documents": 22,
+      "original_sources": 21,
+      "valid_claims": 4,
+      "observations": 2,
+      "canonical_events": 1,
       "blocker_counts": {
         "no_source_bounded_event": 2,
-        "source_outside_daily_window": 11,
-        "non_event_or_index_title": 3,
-        "raw_source_quality_block": 2,
+        "source_outside_daily_window": 9,
+        "non_event_or_index_title": 5,
+        "repository_page_requires_release_source": 1,
+        "source_outside_funding_backfill_window": 2,
+        "opinion_without_source_bounded_event": 1,
         "raw_document_not_auditable": 1
       },
       "rates": {
-        "original_source_rate": 0.9523809523809523,
-        "valid_claim_rate": 0.38095238095238093,
-        "observation_rate": 1,
+        "original_source_rate": 0.9545454545454546,
+        "valid_claim_rate": 0.18181818181818182,
+        "observation_rate": 0.5,
         "event_conversion_rate": 0.25
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-12/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-13/monitoring-funnel.json"
     }
   ]
 }

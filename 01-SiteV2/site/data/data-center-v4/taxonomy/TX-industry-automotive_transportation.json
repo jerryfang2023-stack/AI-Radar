@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-12T11:50:37.684Z",
-    "latestDataDate": "2026-08-12",
-    "currentDate": "2026-08-12",
-    "eventCount": 2040,
+    "generatedAt": "2026-08-13T00:26:01.951Z",
+    "latestDataDate": "2026-08-13",
+    "currentDate": "2026-08-13",
+    "eventCount": 2067,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -90,14 +90,14 @@
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2026-04-16",
-    "lastSeen": "2026-08-12"
+    "lastSeen": "2026-08-13"
   },
   "events": [
     {
       "id": "EV-b116eafe60d71fbe",
-      "dataDate": "2026-08-12",
+      "dataDate": "2026-08-13",
       "date": "2026-08-06",
-      "updatedDate": "2026-08-12",
+      "updatedDate": "2026-08-13",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
@@ -113,8 +113,7 @@
         "$900M",
         "$700 million",
         "$5.51 billion",
-        "$900 million",
-        "$676 million"
+        "$1.1B"
       ],
       "locations": [],
       "missingFields": [],
@@ -539,11 +538,11 @@
       ],
       "entityIds": [
         "EN-373da2ec629326c0",
-        "EN-a4ae746b11369c98"
+        "EN-8d4321d936320802"
       ],
       "entityNames": [
         "Optical networking startup Lumilens",
-        "Lumilens Inc."
+        "NVIDIA"
       ],
       "productName": "",
       "products": [],
@@ -18268,7 +18267,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-06",
-      "lastSeen": "2026-08-12"
+      "lastSeen": "2026-08-13"
     },
     {
       "id": "EN-6fae0bc5a895aab8",
@@ -18376,8 +18375,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
@@ -18578,6 +18577,7 @@
       "eventIds": [
         "EV-55e7c286e95be405",
         "EV-83728e3b6c7736ce",
+        "EV-b116eafe60d71fbe",
         "EV-2dea56b0e97c1685",
         "EV-da1655ecfaf35feb",
         "EV-e3792591090281c6",
@@ -18647,8 +18647,10 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
-        "EV-3a7e7b6818fee0de",
+        "EV-58e18eab1b072c9a",
         "EV-7e0d6eb92af58925",
+        "EV-a6c4f879a58ababa",
+        "EV-3a7e7b6818fee0de",
         "EV-c698da7da473b059",
         "EV-c7d0b810ac3b3d4e",
         "EV-e781e169725006f0",
@@ -18741,6 +18743,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
@@ -18750,7 +18753,6 @@
         "TX-industry-manufacturing",
         "TX-use_case-research_discovery",
         "TX-product_form-model",
-        "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips",
         "TX-ai_market_subcategory-hardware_computing",
@@ -18767,11 +18769,14 @@
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
+        "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-deployment_model-cloud",
         "TX-technology-open_weights",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
@@ -18801,7 +18806,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-12"
+      "lastSeen": "2026-08-13"
     },
     {
       "id": "EN-ed9980025e312ded",
@@ -18937,12 +18942,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
-        "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-automotive_transportation",
         "TX-industry-telecommunications",
@@ -18983,13 +18988,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
-        "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-automotive_transportation",
         "TX-industry-telecommunications",
@@ -19133,6 +19138,8 @@
         "EV-7f9631d793292d07",
         "EV-8993e021ac17df4a",
         "EV-67a69ab5b20da3c1",
+        "EV-649481503cdb7736",
+        "EV-75b1a6a12ce2f03f",
         "EV-2449fe665b666581",
         "EV-b4f38d8bff12727b",
         "EV-1b92b6c835ce240c",
@@ -19155,7 +19162,7 @@
         "EN-7d1507284a5757ca"
       ],
       "firstSeen": "2023-11-28",
-      "lastSeen": "2026-08-12"
+      "lastSeen": "2026-08-13"
     },
     {
       "id": "EN-6862b0d243051cd3",
@@ -19361,13 +19368,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
-        "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-automotive_transportation",
         "TX-industry-telecommunications",
@@ -19405,9 +19412,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
-        "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-automotive_transportation",
         "TX-industry-telecommunications",
@@ -19716,7 +19723,7 @@
       "sourceUrl": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding",
       "entityIds": [
         "EN-373da2ec629326c0",
-        "EN-a4ae746b11369c98"
+        "EN-8d4321d936320802"
       ]
     },
     {
