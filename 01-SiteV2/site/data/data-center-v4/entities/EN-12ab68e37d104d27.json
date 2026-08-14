@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-13T00:26:01.951Z",
-    "latestDataDate": "2026-08-13",
-    "currentDate": "2026-08-13",
-    "eventCount": 2067,
+    "generatedAt": "2026-08-14T00:23:40.398Z",
+    "latestDataDate": "2026-08-14",
+    "currentDate": "2026-08-14",
+    "eventCount": 2102,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -95,9 +95,7 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -124,8 +122,10 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-0121f0a9e9a975ec",
         "EV-49119ae718691877",
         "EV-d84f24c8c72e7e47",
+        "EV-3be237929dc7a07b",
         "EV-b3ef1eed47191c55",
         "EV-83d022f89ba29209",
         "EV-5bbc509a032b8309",
@@ -271,6 +271,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
@@ -296,7 +297,6 @@
         "TX-product_form-robotic_system",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
-        "TX-technology-embodied_ai",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -310,31 +310,24 @@
       "relatedEntityIds": [
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
-        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
-        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
-        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-171fa23d27b5894b"
+        "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     }
   ],
   "relationships": [

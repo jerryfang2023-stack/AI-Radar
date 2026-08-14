@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-14T00:23:40.398Z",
+    "latestDataDate": "2026-08-14",
+    "currentDate": "2026-08-14",
+    "eventCount": 2102,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-a1e1541d6dddc7ef",
+    "name": "Firebird AI",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-3be237929dc7a07b"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-08",
+    "lastSeen": "2026-08-14",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-3be237929dc7a07b"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-3be237929dc7a07b",
+        "dataDate": "2026-08-14",
+        "date": "2026-08-08",
+        "eventType": "hardware_deployment",
+        "eventTypeLabel": "硬件部署",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Firebird AI 与戴尔在亚美尼亚推进主权 AI，推出全新 AI 集群",
+        "displayTags": [],
+        "entityIds": [
+          "EN-a1e1541d6dddc7ef",
+          "EN-8d4321d936320802"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-00ebae91d82eafae",
+      "eventId": "EV-3be237929dc7a07b",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-08",
+      "title": "Firebird AI 与戴尔在亚美尼亚推进主权 AI，推出全新 AI 集群",
+      "hardwareType": "gpu",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "edge",
+      "supplier": "NVIDIA",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://dell.com/en-us/blog/firebird-ai-and-dell-advance-sovereign-ai-in-armenia-with-new-ai-cluster",
+      "sourceName": "dell.com",
+      "sourceDate": "2026-08-08",
+      "entityIds": [
+        "EN-a1e1541d6dddc7ef",
+        "EN-8d4321d936320802"
+      ]
+    }
+  ]
+}

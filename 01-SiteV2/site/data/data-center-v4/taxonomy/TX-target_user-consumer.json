@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-13T00:26:01.951Z",
-    "latestDataDate": "2026-08-13",
-    "currentDate": "2026-08-13",
-    "eventCount": 2067,
+    "generatedAt": "2026-08-14T00:23:40.398Z",
+    "latestDataDate": "2026-08-14",
+    "currentDate": "2026-08-14",
+    "eventCount": 2102,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -9207,13 +9207,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-industry-healthcare_life_sciences",
         "TX-target_user-consumer",
         "TX-ai_market_category-physical_ai",
-        "TX-product_form-robotic_system",
-        "TX-technology-embodied_ai"
+        "TX-product_form-robotic_system"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-03",
@@ -9234,11 +9234,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
         "TX-target_user-consumer",
         "TX-ai_market_category-physical_ai",
-        "TX-product_form-robotic_system",
-        "TX-technology-embodied_ai"
+        "TX-product_form-robotic_system"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-02",
@@ -9316,8 +9316,10 @@
       ],
       "eventIds": [
         "EV-df8954acf9a13848",
+        "EV-f5dd6dec49ad83aa",
         "EV-00f3271df4707d7c",
         "EV-abf716c9f996dbcf",
+        "EV-c1295b8f58024ff6",
         "EV-9f36aac82bad6780",
         "EV-842f920ef198c55e",
         "EV-81a37a2365624b42",
@@ -9352,6 +9354,8 @@
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
+        "EV-0121f0a9e9a975ec",
+        "EV-eda9fcba2f9fe358",
         "EV-3c99948342b171fa",
         "EV-492029b381c06283",
         "EV-dda9429d76897a3d",
@@ -9375,6 +9379,8 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-129ffa6be41bb485",
+        "EV-d04d03b37046f0ad",
         "EV-de6c27c1dac18a2a",
         "EV-6cea35f065f0ee9e",
         "EV-92be9fa58b1ee19f",
@@ -9397,6 +9403,10 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-792c0273991852ae",
+        "EV-397a17aa878564c4",
+        "EV-c9ca5ee6f9c0a600",
+        "EV-ed965d19d6d12e9f",
         "EV-2868ff08777b5de9",
         "EV-96745eb893ac0460",
         "EV-ab7dd515891566ab",
@@ -9653,6 +9663,7 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-916a98f0fa2a39af",
         "EN-d1ad14d4ad57d207",
         "EN-7839fb10a8f14c70",
         "EN-968e2d5b08687bf4",
@@ -9677,7 +9688,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-f3d05a0f6248941d",
@@ -9788,17 +9799,20 @@
         "EV-ef7346378fcf9746",
         "EV-4da18f97771852a9",
         "EV-f949fd95df58d42d",
+        "EV-c3231f2ea0ae1ebc",
         "EV-fcbd97e1f30c95e3",
         "EV-5012364af7480121",
         "EV-8a91e14f37d32b4d",
         "EV-31782f0824ae1db1",
         "EV-3c51bcb5e99d2b68",
+        "EV-cdc6611d6b115cab",
         "EV-07388b042db1bad0",
         "EV-8973f8148205ed35",
         "EV-ecfc552af7344d65"
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-use_case-software_development",
         "TX-product_form-model",
         "TX-industry-aerospace_defense",
@@ -9817,7 +9831,7 @@
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-05-21",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-f30ad7677baf7ea2",
@@ -9931,9 +9945,7 @@
       "name": "Microsoft",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "微软"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -9963,6 +9975,7 @@
         "EV-d756f05478303505",
         "EV-7263caa45bbf168e",
         "EV-8abf5adc3e72fbb8",
+        "EV-d2247eeac1478994",
         "EV-6272444f30281858",
         "EV-f55d16df5b5fecb2",
         "EV-16cfe946bbf69aa3",
@@ -9977,6 +9990,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-6018392d4cc4b472",
         "EV-088870c111b4e968",
         "EV-0ad3854d95038ea3",
         "EV-890ffd351486b884",
@@ -10070,20 +10084,15 @@
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
-        "EN-688f8db7018da7d4",
-        "EN-827b607311e6593e",
-        "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
-        "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-8d4321d936320802",
-        "EN-10fce287b4b1464c"
+        "EN-8d4321d936320802"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-3f726694f178ed7a",
@@ -10217,6 +10226,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-f5dd6dec49ad83aa",
         "EV-c89018d79b3d25bd",
         "EV-136b2edc9b9f3be8",
         "EV-d7a7244d620a2142",
@@ -10242,6 +10252,7 @@
         "EV-1abf0d076d30ec6d",
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
+        "EV-ebe3321efdf8023e",
         "EV-924d196a2412006f",
         "EV-7dcbf6eab4339b22",
         "EV-c25adb1398842ac9",
@@ -10259,6 +10270,8 @@
         "EV-3a704c40204ecfd9",
         "EV-94e0afb44c320c99",
         "EV-777eb5b7783b71fb",
+        "EV-d2247eeac1478994",
+        "EV-d04d03b37046f0ad",
         "EV-c4cf8b6eedf31ad2",
         "EV-f84894a567752c40",
         "EV-5d185ac33faedb68",
@@ -10284,6 +10297,8 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-397a17aa878564c4",
+        "EV-c9ca5ee6f9c0a600",
         "EV-875b31b96ff689df",
         "EV-0ad3854d95038ea3",
         "EV-2868ff08777b5de9",
@@ -10451,6 +10466,8 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-cdc6611d6b115cab",
+        "EV-3343be31faab2cce",
         "EV-f0dcc60444b56245",
         "EV-649481503cdb7736",
         "EV-46254bfc37b846f5",
@@ -10545,13 +10562,14 @@
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
+        "EN-240389f4b730bad4",
+        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-9f15bb7e29e191eb",
         "EN-fa12a0c13e906f43",
         "EN-cb4754c48f8023d0",
         "EN-830abc32d2a443c5",
-        "EN-240389f4b730bad4",
         "EN-8d4321d936320802",
         "EN-7d3194f79e645c42",
         "EN-729324072d368379",
@@ -10561,7 +10579,6 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
-        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -10571,7 +10588,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-50537dab76505dfc",

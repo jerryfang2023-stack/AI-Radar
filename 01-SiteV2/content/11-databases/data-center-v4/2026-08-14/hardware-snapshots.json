@@ -1,0 +1,129 @@
+[
+  {
+    "hardware_snapshot_id": "HWS-bfc45ffacb8ee7a7",
+    "snapshot_key": "aa1ceb06f4e3c084",
+    "as_of": "2026-08-14",
+    "subject_entity_id": "EN-29b9f0cae32e7a8a",
+    "subject_name": "L&T",
+    "product_entity_ids": [],
+    "product_names": [],
+    "component_types": [
+      "gpu"
+    ],
+    "latest_values": {
+      "shipment_deployment": {
+        "metric_value": "",
+        "unit": "",
+        "fact_ref": "HWF-2c36ad311204b32e"
+      }
+    },
+    "fact_refs": [
+      "HWF-2d44db31b689eaa9",
+      "HWF-a25ecea8272088af",
+      "HWF-a1db84759a794acf",
+      "HWF-2c36ad311204b32e"
+    ],
+    "claim_refs": [
+      "CL-0c871383bddd7d1b",
+      "CL-6e8fc9dee328e20c",
+      "CL-e355e2974a3277d6",
+      "CL-b4ca08e43e125344"
+    ],
+    "source_refs": [
+      "SA-d8d5a553062a5141"
+    ],
+    "event_refs": [
+      "EV-0121f0a9e9a975ec"
+    ],
+    "previous_snapshot_ref": "",
+    "change_status": "initial"
+  },
+  {
+    "hardware_snapshot_id": "HWS-af0b8f4169fd802a",
+    "snapshot_key": "1e90510260afb7ed",
+    "as_of": "2026-08-14",
+    "subject_entity_id": "EN-916a98f0fa2a39af",
+    "subject_name": "IBM",
+    "product_entity_ids": [
+      "EN-ae11c0abf6288776",
+      "EN-550f6ed5f71d0edc",
+      "EN-7f8f379674a95169"
+    ],
+    "product_names": [
+      "AI Inference",
+      "AI Infrastructure",
+      "Aug 11"
+    ],
+    "component_types": [
+      "data_center",
+      "gpu"
+    ],
+    "latest_values": {
+      "shipment_deployment": {
+        "metric_value": "240",
+        "unit": "$M",
+        "fact_ref": "HWF-e0e81afd3f6b5ca4"
+      },
+      "product": {
+        "metric_value": "",
+        "unit": "",
+        "fact_ref": "HWF-e304a08469d747b1"
+      }
+    },
+    "fact_refs": [
+      "HWF-e0e81afd3f6b5ca4",
+      "HWF-e304a08469d747b1"
+    ],
+    "claim_refs": [
+      "CL-b88e132a00cc769c",
+      "CL-c76ddec98fd63799"
+    ],
+    "source_refs": [
+      "SA-1917d0c1d2970c86"
+    ],
+    "event_refs": [
+      "EV-c7d0b810ac3b3d4e"
+    ],
+    "previous_snapshot_ref": "",
+    "change_status": "initial"
+  },
+  {
+    "hardware_snapshot_id": "HWS-de5a9c00a53d9d5a",
+    "snapshot_key": "48719d5d4e96f14d",
+    "as_of": "2026-08-14",
+    "subject_entity_id": "EN-e78bdebae031095b",
+    "subject_name": "SpaceX",
+    "product_entity_ids": [
+      "EN-065f9c664c69866f",
+      "EN-92df1be3e37c9268"
+    ],
+    "product_names": [
+      "Grok AI",
+      "Grok Bot"
+    ],
+    "component_types": [
+      "ai_device"
+    ],
+    "latest_values": {
+      "product": {
+        "metric_value": "",
+        "unit": "",
+        "fact_ref": "HWF-59457fdabfa5d0cb"
+      }
+    },
+    "fact_refs": [
+      "HWF-59457fdabfa5d0cb"
+    ],
+    "claim_refs": [
+      "CL-430e79f5e2871a3f"
+    ],
+    "source_refs": [
+      "SA-a9a4b27a81cf1ad9"
+    ],
+    "event_refs": [
+      "EV-c3231f2ea0ae1ebc"
+    ],
+    "previous_snapshot_ref": "",
+    "change_status": "initial"
+  }
+]

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-13T00:26:01.951Z",
-    "latestDataDate": "2026-08-13",
-    "currentDate": "2026-08-13",
-    "eventCount": 2067,
+    "generatedAt": "2026-08-14T00:23:40.398Z",
+    "latestDataDate": "2026-08-14",
+    "currentDate": "2026-08-14",
+    "eventCount": 2102,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -62,6 +62,8 @@
       "EV-0e028ea8f94752de",
       "EV-9ad569c873451304",
       "EV-777eb5b7783b71fb",
+      "EV-129ffa6be41bb485",
+      "EV-d04d03b37046f0ad",
       "EV-02686922dd82c4aa",
       "EV-99a0cb6bac516bdd",
       "EV-2ffc3377977da114",
@@ -120,6 +122,7 @@
       "EN-e759968ca9278b8d",
       "EN-6957217eb8e00a30",
       "EN-fb54e9062429a937",
+      "EN-916a98f0fa2a39af",
       "EN-e274048227f164dc",
       "EN-88e2cce43eeadb36",
       "EN-d50883991bfc5a69",
@@ -137,11 +140,13 @@
       "FDE-e32500a9c4f90e91",
       "FDE-62f660a9a90bc3f6",
       "FDE-3d5eb0bc571f55bf",
+      "FDE-ed781e27a7b9458e",
+      "FDE-48afc88dde234ab1",
       "FDE-309bc49d109029a3"
     ],
     "hardwareIds": [],
     "firstSeen": "2023-06-28",
-    "lastSeen": "2026-08-10"
+    "lastSeen": "2026-08-14"
   },
   "events": [
     {
@@ -20187,6 +20192,484 @@
       "publisher": "techcrunch.com"
     },
     {
+      "id": "EV-129ffa6be41bb485",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "updatedDate": "2026-08-14",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+      "originalTitle": "IBM Partners with OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "subject": "IBM",
+      "action": "Partners with",
+      "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "telecommunications",
+            "name": "电信",
+            "entityIds": [
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "telecommunications",
+          "name": "电信",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "telecommunications",
+          "name": "电信",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "IBM",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations",
+      "publisher": "newsroom.ibm.com"
+    },
+    {
+      "id": "EV-d04d03b37046f0ad",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "updatedDate": "2026-08-14",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "IBM 与 OpenAI 达成合作，拓展企业 AI 业务",
+      "originalTitle": "",
+      "subject": "IBM 与 OpenAI 达成",
+      "action": "合作",
+      "object": "，拓展企业 AI 业务",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "telecommunications",
+            "name": "电信",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "telecommunications",
+          "name": "电信",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "telecommunications",
+          "name": "电信",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-4c06fff8651d4ff4",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "IBM",
+        "OpenAI 达成",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
       "id": "EV-02686922dd82c4aa",
       "dataDate": "2026-07-15",
       "date": "2026-07-15",
@@ -22852,14 +23335,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-industry-retail_ecommerce",
         "TX-industry-logistics_supply_chain",
         "TX-ai_market_category-physical_ai",
-        "TX-product_form-robotic_system",
-        "TX-technology-embodied_ai"
+        "TX-product_form-robotic_system"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-06",
@@ -22877,8 +23360,10 @@
       ],
       "eventIds": [
         "EV-df8954acf9a13848",
+        "EV-f5dd6dec49ad83aa",
         "EV-00f3271df4707d7c",
         "EV-abf716c9f996dbcf",
+        "EV-c1295b8f58024ff6",
         "EV-9f36aac82bad6780",
         "EV-842f920ef198c55e",
         "EV-81a37a2365624b42",
@@ -22913,6 +23398,8 @@
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
+        "EV-0121f0a9e9a975ec",
+        "EV-eda9fcba2f9fe358",
         "EV-3c99948342b171fa",
         "EV-492029b381c06283",
         "EV-dda9429d76897a3d",
@@ -22936,6 +23423,8 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-129ffa6be41bb485",
+        "EV-d04d03b37046f0ad",
         "EV-de6c27c1dac18a2a",
         "EV-6cea35f065f0ee9e",
         "EV-92be9fa58b1ee19f",
@@ -22958,6 +23447,10 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-792c0273991852ae",
+        "EV-397a17aa878564c4",
+        "EV-c9ca5ee6f9c0a600",
+        "EV-ed965d19d6d12e9f",
         "EV-2868ff08777b5de9",
         "EV-96745eb893ac0460",
         "EV-ab7dd515891566ab",
@@ -23214,6 +23707,7 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-916a98f0fa2a39af",
         "EN-d1ad14d4ad57d207",
         "EN-7839fb10a8f14c70",
         "EN-968e2d5b08687bf4",
@@ -23238,7 +23732,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-e69f64149edae6b1",
@@ -24123,6 +24617,59 @@
       "lastSeen": "2026-07-23"
     },
     {
+      "id": "EN-916a98f0fa2a39af",
+      "name": "IBM",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-32d7c52f89d74e88",
+        "EV-ad40755ca624afe7",
+        "EV-49119ae718691877",
+        "EV-bcb74b02448b7d78",
+        "EV-df2357fc3c3b4f5e",
+        "EV-bbc1042dcf5ad317",
+        "EV-129ffa6be41bb485",
+        "EV-d04d03b37046f0ad",
+        "EV-6272444f30281858",
+        "EV-b95539d17772a4ce",
+        "EV-c7d0b810ac3b3d4e",
+        "EV-37b18c0341c66c08",
+        "EV-5bc7efca0bc7fec0",
+        "EV-9fb08b68f301eb88",
+        "EV-347d250e2769de9a",
+        "EV-7449d239223d4928",
+        "EV-0eef30387327e73f",
+        "EV-2f56b99f72ad6c4f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-software_development",
+        "TX-industry-financial_services",
+        "TX-product_form-enterprise_software_platform",
+        "TX-product_form-model",
+        "TX-industry-telecommunications",
+        "TX-industry-retail_ecommerce",
+        "TX-use_case-security_operations",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-technology-fine_tuning",
+        "TX-technology-model_context_protocol",
+        "TX-technology-tool_use",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-dc6c28a2123e8efb"
+      ],
+      "firstSeen": "2026-05-15",
+      "lastSeen": "2026-08-14"
+    },
+    {
       "id": "EN-e274048227f164dc",
       "name": "Rezolve Ai",
       "entityType": "organization_candidate",
@@ -24268,9 +24815,7 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -24315,7 +24860,12 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-7d684605d08584e2",
+        "EV-c92db935a2cef0d6",
+        "EV-1e2e3847279004dc",
+        "EV-b2475f989b6c05cc",
         "EV-875b31b96ff689df",
+        "EV-2554daa91d2b3ea4",
         "EV-0ad3854d95038ea3",
         "EV-20a015183f238087",
         "EV-3d4709a8d623b13e",
@@ -24454,6 +25004,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
@@ -24473,26 +25024,22 @@
         "TX-product_form-end_user_application",
         "TX-technology-code_generation",
         "TX-technology-computer_use",
-        "TX-technology-embodied_ai",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-technology-image_generation",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
-        "EN-307557d99a7eb726",
         "EN-8d323d8bba783aa3",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
-        "EN-31055a8d9856fce4",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
-        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -24500,7 +25047,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-5e1fcba4c9f1cf69",
@@ -24517,10 +25064,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-target_user-developer",
         "TX-use_case-physical_automation",
-        "TX-industry-retail_ecommerce",
-        "TX-technology-embodied_ai"
+        "TX-industry-retail_ecommerce"
       ],
       "relatedEntityIds": [
         "EN-94ff75465b1afa65"
@@ -24615,6 +25162,88 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-48afc88dde234ab1",
+      "eventId": "EV-d04d03b37046f0ad",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "title": "IBM 与 OpenAI 达成合作，拓展企业 AI 业务",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "IBM",
+      "vendor": "OpenAI",
+      "industry": "enterprise AI",
+      "useCase": "拓展企业 AI 业务",
+      "reportedNeed": "competition for corporate AI spending intensifies",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_after",
+        "team_composition",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components"
+      ],
+      "tags": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push",
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-4c06fff8651d4ff4",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
+    {
+      "id": "FDE-ed781e27a7b9458e",
+      "eventId": "EV-129ffa6be41bb485",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "IBM",
+      "vendor": "OpenAI",
+      "industry": "未披露",
+      "useCase": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR.",
+        "The companies plan to help clients modernize legacy applications and accelerate software development by bringing together OpenAI Codex and ChatGPT Work with IBM&rsquo;s industry, technology and domain expertise, including integration with IBM Consulting Advantage. The collaboration is designed to help organizations simplify engineering processes and speed the delivery of new digital products and services."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations",
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-7d3194f79e645c42"
+      ]
+    },
     {
       "id": "FDE-e32500a9c4f90e91",
       "eventId": "EV-57944eebac69d510",
@@ -24829,6 +25458,116 @@
   ],
   "hardware": [],
   "fdeDossiers": [
+    {
+      "id": "FDED-5bc72342f3066892",
+      "implementationKey": "5bc72342f3066892",
+      "eventId": "EV-129ffa6be41bb485",
+      "eventIds": [
+        "EV-129ffa6be41bb485"
+      ],
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "title": "IBM × OpenAI：OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "stage": "procurement",
+      "stageLabel": "procurement",
+      "customer": "IBM",
+      "vendor": "OpenAI",
+      "industry": "未披露",
+      "useCase": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "workflow": "未披露",
+      "systems": [
+        "ChatGPT"
+      ],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.625,
+      "completenessPercent": 63,
+      "missingFields": [
+        "industry",
+        "workflow",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-52e02e22bcd8cd7f",
+          "type": "procurement",
+          "stage": "procurement",
+          "date": "2026-08-13",
+          "dataDate": "2026-08-14",
+          "eventId": "EV-129ffa6be41bb485",
+          "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations",
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-7d3194f79e645c42"
+      ]
+    },
+    {
+      "id": "FDED-cb46acfd9659d48a",
+      "implementationKey": "cb46acfd9659d48a",
+      "eventId": "EV-d04d03b37046f0ad",
+      "eventIds": [
+        "EV-d04d03b37046f0ad"
+      ],
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "title": "IBM × OpenAI：拓展企业 AI 业务",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "IBM",
+      "vendor": "OpenAI",
+      "industry": "enterprise AI",
+      "useCase": "拓展企业 AI 业务",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.625,
+      "completenessPercent": 63,
+      "missingFields": [
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-6471eb5fdc8f3db3",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-13",
+          "dataDate": "2026-08-14",
+          "eventId": "EV-d04d03b37046f0ad",
+          "eventTitle": "IBM 与 OpenAI 达成合作，拓展企业 AI 业务",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push",
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-4c06fff8651d4ff4",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
     {
       "id": "FDED-dab7d48af097ebe1",
       "implementationKey": "dab7d48af097ebe1",

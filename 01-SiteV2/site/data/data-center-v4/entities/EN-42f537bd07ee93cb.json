@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-13T00:26:01.951Z",
-    "latestDataDate": "2026-08-13",
-    "currentDate": "2026-08-13",
-    "eventCount": 2067,
+    "generatedAt": "2026-08-14T00:23:40.398Z",
+    "latestDataDate": "2026-08-14",
+    "currentDate": "2026-08-14",
+    "eventCount": 2102,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -24,6 +24,7 @@
     ],
     "eventIds": [],
     "viewpointIds": [
+      "2087284684103537011",
       "2077929404219474148",
       "2077929390806073807",
       "2074997570317779038",
@@ -45,20 +46,20 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-05",
-    "lastSeen": "2026-07-17",
+    "lastSeen": "2026-08-12",
     "handle": "bcherny",
     "role": "Claude Code anthropicai",
     "organization": "Anthropic",
     "viewpointTags": [
+      "AI 编程",
+      "AI Coding 观点",
+      "AI Coding",
       "产品与创业",
       "产品策略观点",
       "AI 应用与平台",
       "Agent",
       "Agent 工作流观点",
       "Agentic AI",
-      "AI 编程",
-      "AI Coding 观点",
-      "AI Coding",
       "企业工作流",
       "AI 基础设施",
       "模型基础设施观点"
@@ -86,6 +87,12 @@
     },
     "timeline": [],
     "viewpoints": [
+      {
+        "id": "2087284684103537011",
+        "date": "2026-08-12",
+        "title": "LLM仍会产生bug，但这些bug与以往不同。不再是差一错误，更多涉及系统设计、用户界面可用性以及缺乏更广泛的上下文。某些类型的编码问题已经解决，但并非全部。尽管模型在持续改进，对抗性代码审查已成为捕捉这类bug的极其强大的工具。它可以简单到一行提示词——“使用动态工作流在iOS模拟器中对抗性测试每个边界情况”，或使用Claude内置的/code-review（或/code-review low、/code-review medium等）。",
+        "sourceUrl": "https://x.com/bcherny/status/2087284684103537011"
+      },
       {
         "id": "2077929404219474148",
         "date": "2026-07-17",

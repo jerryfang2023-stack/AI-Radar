@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-13T00:26:01.951Z",
-    "latestDataDate": "2026-08-13",
-    "currentDate": "2026-08-13",
-    "eventCount": 2067,
+    "generatedAt": "2026-08-14T00:23:40.398Z",
+    "latestDataDate": "2026-08-14",
+    "currentDate": "2026-08-14",
+    "eventCount": 2102,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -79,6 +79,7 @@
       "EV-8a2d8ebbd700c787",
       "EV-2d6d2dc0ead4be10",
       "EV-d209a6acecba4285",
+      "EV-129ffa6be41bb485",
       "EV-75b9b997e9c7e5d1",
       "EV-b2e374d54b10b9af",
       "EV-2868ff08777b5de9",
@@ -165,6 +166,7 @@
       "EN-df30a48992da7fe8",
       "EN-3db1f560db626918",
       "EN-7c3482959a6cdd3f",
+      "EN-916a98f0fa2a39af",
       "EN-0b9ca57f53ba758b",
       "EN-8d4321d936320802",
       "EN-ea3bd73e2b506e00",
@@ -172,7 +174,6 @@
       "EN-76a9a8a6e2f1a47b",
       "EN-240389f4b730bad4",
       "EN-bbdefa2950f49882",
-      "EN-916a98f0fa2a39af",
       "EN-1d79127e9d90e89b",
       "EN-4adc2faea521b1f1",
       "EN-c857d09db23e6822",
@@ -187,6 +188,7 @@
     "fdeIds": [
       "FDE-0ef4045e28c345f8",
       "FDE-2dda1b977721f467",
+      "FDE-ed781e27a7b9458e",
       "FDE-6920b7a1f4924656",
       "FDE-8d7df617732e7c45"
     ],
@@ -194,7 +196,7 @@
       "HW-033a5b73cdc3f4be"
     ],
     "firstSeen": "2023-04-27",
-    "lastSeen": "2026-08-13"
+    "lastSeen": "2026-08-14"
   },
   "events": [
     {
@@ -21635,6 +21637,322 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-129ffa6be41bb485",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "updatedDate": "2026-08-14",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+      "originalTitle": "IBM Partners with OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "subject": "IBM",
+      "action": "Partners with",
+      "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "telecommunications",
+            "name": "电信",
+            "entityIds": [
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "telecommunications",
+          "name": "电信",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "telecommunications",
+          "name": "电信",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "IBM",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations",
+      "publisher": "newsroom.ibm.com"
+    },
+    {
       "id": "EV-75b9b997e9c7e5d1",
       "dataDate": "2026-07-23",
       "date": "2026-07-23",
@@ -26850,7 +27168,12 @@
         "EV-d4d7b019ff0015df",
         "EV-27b69ea604475b72",
         "EV-f8c3a83d883c9b22",
+        "EV-0121f0a9e9a975ec",
+        "EV-eda9fcba2f9fe358",
         "EV-3664fd6826c319bb",
+        "EV-7b4c53084828d7e8",
+        "EV-3fb3e2730da143f4",
+        "EV-b8fbfa3405d10bb4",
         "EV-088870c111b4e968",
         "EV-ef8ff7b3f76f140a",
         "EV-6ce6bebf0d6408d9",
@@ -26884,6 +27207,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
@@ -26898,7 +27222,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-641a309108850fc9",
@@ -27411,17 +27735,20 @@
         "EV-ef7346378fcf9746",
         "EV-4da18f97771852a9",
         "EV-f949fd95df58d42d",
+        "EV-c3231f2ea0ae1ebc",
         "EV-fcbd97e1f30c95e3",
         "EV-5012364af7480121",
         "EV-8a91e14f37d32b4d",
         "EV-31782f0824ae1db1",
         "EV-3c51bcb5e99d2b68",
+        "EV-cdc6611d6b115cab",
         "EV-07388b042db1bad0",
         "EV-8973f8148205ed35",
         "EV-ecfc552af7344d65"
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-use_case-software_development",
         "TX-product_form-model",
         "TX-industry-aerospace_defense",
@@ -27440,7 +27767,7 @@
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-05-21",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-b5251b35f15bedc4",
@@ -27608,6 +27935,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-f5dd6dec49ad83aa",
         "EV-c89018d79b3d25bd",
         "EV-136b2edc9b9f3be8",
         "EV-d7a7244d620a2142",
@@ -27633,6 +27961,7 @@
         "EV-1abf0d076d30ec6d",
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
+        "EV-ebe3321efdf8023e",
         "EV-924d196a2412006f",
         "EV-7dcbf6eab4339b22",
         "EV-c25adb1398842ac9",
@@ -27650,6 +27979,8 @@
         "EV-3a704c40204ecfd9",
         "EV-94e0afb44c320c99",
         "EV-777eb5b7783b71fb",
+        "EV-d2247eeac1478994",
+        "EV-d04d03b37046f0ad",
         "EV-c4cf8b6eedf31ad2",
         "EV-f84894a567752c40",
         "EV-5d185ac33faedb68",
@@ -27675,6 +28006,8 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-397a17aa878564c4",
+        "EV-c9ca5ee6f9c0a600",
         "EV-875b31b96ff689df",
         "EV-0ad3854d95038ea3",
         "EV-2868ff08777b5de9",
@@ -27842,6 +28175,8 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-cdc6611d6b115cab",
+        "EV-3343be31faab2cce",
         "EV-f0dcc60444b56245",
         "EV-649481503cdb7736",
         "EV-46254bfc37b846f5",
@@ -27936,13 +28271,14 @@
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
+        "EN-240389f4b730bad4",
+        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-9f15bb7e29e191eb",
         "EN-fa12a0c13e906f43",
         "EN-cb4754c48f8023d0",
         "EN-830abc32d2a443c5",
-        "EN-240389f4b730bad4",
         "EN-8d4321d936320802",
         "EN-7d3194f79e645c42",
         "EN-729324072d368379",
@@ -27952,7 +28288,6 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
-        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -27962,7 +28297,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-53b69ef92c836777",
@@ -28414,13 +28749,64 @@
       "lastSeen": "2026-06-22"
     },
     {
+      "id": "EN-916a98f0fa2a39af",
+      "name": "IBM",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-32d7c52f89d74e88",
+        "EV-ad40755ca624afe7",
+        "EV-49119ae718691877",
+        "EV-bcb74b02448b7d78",
+        "EV-df2357fc3c3b4f5e",
+        "EV-bbc1042dcf5ad317",
+        "EV-129ffa6be41bb485",
+        "EV-d04d03b37046f0ad",
+        "EV-6272444f30281858",
+        "EV-b95539d17772a4ce",
+        "EV-c7d0b810ac3b3d4e",
+        "EV-37b18c0341c66c08",
+        "EV-5bc7efca0bc7fec0",
+        "EV-9fb08b68f301eb88",
+        "EV-347d250e2769de9a",
+        "EV-7449d239223d4928",
+        "EV-0eef30387327e73f",
+        "EV-2f56b99f72ad6c4f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-software_development",
+        "TX-industry-financial_services",
+        "TX-product_form-enterprise_software_platform",
+        "TX-product_form-model",
+        "TX-industry-telecommunications",
+        "TX-industry-retail_ecommerce",
+        "TX-use_case-security_operations",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-technology-fine_tuning",
+        "TX-technology-model_context_protocol",
+        "TX-technology-tool_use",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-dc6c28a2123e8efb"
+      ],
+      "firstSeen": "2026-05-15",
+      "lastSeen": "2026-08-14"
+    },
+    {
       "id": "EN-8d4321d936320802",
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -28447,8 +28833,10 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-0121f0a9e9a975ec",
         "EV-49119ae718691877",
         "EV-d84f24c8c72e7e47",
+        "EV-3be237929dc7a07b",
         "EV-b3ef1eed47191c55",
         "EV-83d022f89ba29209",
         "EV-5bbc509a032b8309",
@@ -28594,6 +28982,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
@@ -28619,7 +29008,6 @@
         "TX-product_form-robotic_system",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
-        "TX-technology-embodied_ai",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -28633,31 +29021,24 @@
       "relatedEntityIds": [
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
-        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
-        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
-        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-171fa23d27b5894b"
+        "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-ea3bd73e2b506e00",
@@ -28670,6 +29051,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-c1295b8f58024ff6",
         "EV-cbce4f1f5187efcf",
         "EV-5df885dbd24b6d00",
         "EV-dcbe916c6138e5cb",
@@ -28682,6 +29064,7 @@
         "EV-467d1a701d21327d",
         "EV-acdeebead5324344",
         "EV-cded77b1de2db61a",
+        "EV-0121f0a9e9a975ec",
         "EV-a852dc0ca6011ff6",
         "EV-a4b7cd533b0b34dc",
         "EV-8805e96b4fb544dd",
@@ -28789,7 +29172,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-12"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -28803,8 +29186,10 @@
       ],
       "eventIds": [
         "EV-df8954acf9a13848",
+        "EV-f5dd6dec49ad83aa",
         "EV-00f3271df4707d7c",
         "EV-abf716c9f996dbcf",
+        "EV-c1295b8f58024ff6",
         "EV-9f36aac82bad6780",
         "EV-842f920ef198c55e",
         "EV-81a37a2365624b42",
@@ -28839,6 +29224,8 @@
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
+        "EV-0121f0a9e9a975ec",
+        "EV-eda9fcba2f9fe358",
         "EV-3c99948342b171fa",
         "EV-492029b381c06283",
         "EV-dda9429d76897a3d",
@@ -28862,6 +29249,8 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-129ffa6be41bb485",
+        "EV-d04d03b37046f0ad",
         "EV-de6c27c1dac18a2a",
         "EV-6cea35f065f0ee9e",
         "EV-92be9fa58b1ee19f",
@@ -28884,6 +29273,10 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-792c0273991852ae",
+        "EV-397a17aa878564c4",
+        "EV-c9ca5ee6f9c0a600",
+        "EV-ed965d19d6d12e9f",
         "EV-2868ff08777b5de9",
         "EV-96745eb893ac0460",
         "EV-ab7dd515891566ab",
@@ -29140,6 +29533,7 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-916a98f0fa2a39af",
         "EN-d1ad14d4ad57d207",
         "EN-7839fb10a8f14c70",
         "EN-968e2d5b08687bf4",
@@ -29164,7 +29558,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-76a9a8a6e2f1a47b",
@@ -29212,6 +29606,7 @@
         "EV-b150af93042566a6",
         "EV-0e3f748f87f5892a",
         "EV-8a2d8ebbd700c787",
+        "EV-d2247eeac1478994",
         "EV-ad8e1754463695fd",
         "EV-acb2087779a8ea3c",
         "EV-b334f46b11a68045",
@@ -29232,6 +29627,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-software_development",
         "TX-industry-manufacturing",
@@ -29240,27 +29636,24 @@
         "TX-use_case-physical_automation",
         "TX-product_form-ai_compute_system",
         "TX-product_form-robotic_system",
-        "TX-technology-embodied_ai",
         "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d",
         "EN-45c52af0feb0f285",
         "EN-dc9993227a515201",
-        "EN-c70eca6b0f88f44d",
         "EN-147b4d06ea998b70",
         "EN-630d75372b4d1eb5"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-bbdefa2950f49882",
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -29305,7 +29698,12 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-7d684605d08584e2",
+        "EV-c92db935a2cef0d6",
+        "EV-1e2e3847279004dc",
+        "EV-b2475f989b6c05cc",
         "EV-875b31b96ff689df",
+        "EV-2554daa91d2b3ea4",
         "EV-0ad3854d95038ea3",
         "EV-20a015183f238087",
         "EV-3d4709a8d623b13e",
@@ -29444,6 +29842,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
@@ -29463,26 +29862,22 @@
         "TX-product_form-end_user_application",
         "TX-technology-code_generation",
         "TX-technology-computer_use",
-        "TX-technology-embodied_ai",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-technology-image_generation",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
-        "EN-307557d99a7eb726",
         "EN-8d323d8bba783aa3",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
-        "EN-31055a8d9856fce4",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
-        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -29490,51 +29885,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-13"
-    },
-    {
-      "id": "EN-916a98f0fa2a39af",
-      "name": "IBM",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-32d7c52f89d74e88",
-        "EV-ad40755ca624afe7",
-        "EV-49119ae718691877",
-        "EV-bcb74b02448b7d78",
-        "EV-df2357fc3c3b4f5e",
-        "EV-bbc1042dcf5ad317",
-        "EV-6272444f30281858",
-        "EV-b95539d17772a4ce",
-        "EV-c7d0b810ac3b3d4e",
-        "EV-37b18c0341c66c08",
-        "EV-5bc7efca0bc7fec0",
-        "EV-9fb08b68f301eb88",
-        "EV-347d250e2769de9a",
-        "EV-7449d239223d4928",
-        "EV-0eef30387327e73f",
-        "EV-2f56b99f72ad6c4f"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-use_case-software_development",
-        "TX-technology-retrieval_augmented_generation",
-        "TX-technology-fine_tuning",
-        "TX-technology-model_context_protocol",
-        "TX-technology-tool_use",
-        "TX-technology-speech_audio"
-      ],
-      "relatedEntityIds": [
-        "EN-dc6c28a2123e8efb"
-      ],
-      "firstSeen": "2026-05-15",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-1d79127e9d90e89b",
@@ -29733,6 +30084,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
+        "谷歌 DeepMind",
         "DeepMind"
       ],
       "verificationStatus": "verified",
@@ -29748,6 +30100,8 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
+        "EV-397a17aa878564c4",
+        "EV-53757cad2cfd074d",
         "EV-0eefbf2e50b67a5e",
         "EV-e234a2e2418ebdf1",
         "EV-eb12fb9dd08e5aad",
@@ -29779,6 +30133,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-use_case-software_development",
         "TX-use_case-research_discovery",
         "TX-product_form-model",
@@ -29788,7 +30143,6 @@
         "TX-use_case-security_operations",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
-        "TX-technology-embodied_ai",
         "TX-technology-vision_language",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -29805,7 +30159,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-6fcba5d96a4fadfd",
@@ -29821,6 +30175,7 @@
       ],
       "eventIds": [
         "EV-55e7c286e95be405",
+        "EV-c1295b8f58024ff6",
         "EV-792e2a2b3e98399f",
         "EV-3daefecd0453631a",
         "EV-edcb66d0401cfb8f",
@@ -29868,7 +30223,7 @@
         "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-f19600b9e18f7f27",
@@ -29900,6 +30255,55 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-ed781e27a7b9458e",
+      "eventId": "EV-129ffa6be41bb485",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "IBM",
+      "vendor": "OpenAI",
+      "industry": "未披露",
+      "useCase": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR.",
+        "The companies plan to help clients modernize legacy applications and accelerate software development by bringing together OpenAI Codex and ChatGPT Work with IBM&rsquo;s industry, technology and domain expertise, including integration with IBM Consulting Advantage. The collaboration is designed to help organizations simplify engineering processes and speed the delivery of new digital products and services."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations",
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-7d3194f79e645c42"
+      ]
+    },
     {
       "id": "FDE-0ef4045e28c345f8",
       "eventId": "EV-dda9429d76897a3d",
@@ -30110,6 +30514,67 @@
     }
   ],
   "fdeDossiers": [
+    {
+      "id": "FDED-5bc72342f3066892",
+      "implementationKey": "5bc72342f3066892",
+      "eventId": "EV-129ffa6be41bb485",
+      "eventIds": [
+        "EV-129ffa6be41bb485"
+      ],
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "title": "IBM × OpenAI：OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "stage": "procurement",
+      "stageLabel": "procurement",
+      "customer": "IBM",
+      "vendor": "OpenAI",
+      "industry": "未披露",
+      "useCase": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "workflow": "未披露",
+      "systems": [
+        "ChatGPT"
+      ],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.625,
+      "completenessPercent": 63,
+      "missingFields": [
+        "industry",
+        "workflow",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-52e02e22bcd8cd7f",
+          "type": "procurement",
+          "stage": "procurement",
+          "date": "2026-08-13",
+          "dataDate": "2026-08-14",
+          "eventId": "EV-129ffa6be41bb485",
+          "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations",
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-7d3194f79e645c42"
+      ]
+    },
     {
       "id": "FDED-94d1eb9e8c638b41",
       "implementationKey": "94d1eb9e8c638b41",

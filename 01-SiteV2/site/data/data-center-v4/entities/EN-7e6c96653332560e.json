@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-14T00:23:40.398Z",
+    "latestDataDate": "2026-08-14",
+    "currentDate": "2026-08-14",
+    "eventCount": 2102,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-7e6c96653332560e",
+    "name": "Gemini 3.7 Flash",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-7d684605d08584e2",
+      "EV-c92db935a2cef0d6",
+      "EV-1e2e3847279004dc",
+      "EV-53757cad2cfd074d"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-13",
+    "lastSeen": "2026-08-14",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-7d684605d08584e2",
+        "EV-c92db935a2cef0d6",
+        "EV-1e2e3847279004dc",
+        "EV-53757cad2cfd074d"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-7d684605d08584e2",
+        "dataDate": "2026-08-14",
+        "date": "2026-08-14",
+        "eventType": "pricing_change",
+        "eventTypeLabel": "定价变更",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Google 发布 Gemini 3.7 Flash：主打编程与智能体，输入 token 定价 $0.75/1M",
+        "displayTags": [],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-2df7697dbb612878",
+          "EN-7e6c96653332560e"
+        ]
+      },
+      {
+        "id": "EV-c92db935a2cef0d6",
+        "dataDate": "2026-08-14",
+        "date": "2026-08-14",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "谷歌发布Gemini 3.7 Flash，距上次发布仅三周",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-bbdefa2950f49882"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-7e6c96653332560e"
+        ]
+      },
+      {
+        "id": "EV-1e2e3847279004dc",
+        "dataDate": "2026-08-14",
+        "date": "2026-08-13",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Gemini 3.7 Flash 发布，编码能力提升，价格比三周前的前代产品低50%",
+        "displayTags": [],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-7e6c96653332560e"
+        ]
+      },
+      {
+        "id": "EV-53757cad2cfd074d",
+        "dataDate": "2026-08-14",
+        "date": "2026-08-13",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Google DeepMind 推出 Gemini 3.7 Flash：面向编程与智能体的最强工作模型",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2b6e51bec93e86c1",
+          "EN-7e6c96653332560e"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}
