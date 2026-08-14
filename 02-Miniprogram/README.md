@@ -1,6 +1,6 @@
 # 观澜融资情报站微信小程序
 
-基于 V0.5.0 的原生微信小程序。
+基于 V0.5.5 的原生微信小程序。
 
 ## 已实现
 
@@ -25,7 +25,7 @@ npm run build:data
 
 数据脚本从现有 Funding Insights 前台投影生成小程序专用的精简列表和详情数据，不修改上游数据。
 
-小程序 V0.5.0 使用双通道数据：安装包内数据用于离线兜底，联网时从
+小程序 V0.5.5 使用双通道数据：安装包内数据用于离线兜底，联网时从
 `https://www.zkdlj.vip/data/` 拉取已通过融资站发布门禁的融资卡、周报和月报。
 因此观澜监测任务完成并发布融资站后，小程序无需重新发版即可读取新内容；新客户端
 版本仍会刷新内置兜底数据。
@@ -43,5 +43,5 @@ npm run build:data
 开发版上传：
 
 ```powershell
-& 'C:\Program Files (x86)\Tencent\微信web开发者工具\cli.bat' upload --project . --version '0.5.0' --desc '<本次说明>'
+& 'C:\Program Files (x86)\Tencent\微信web开发者工具\cli.bat' upload --project . --version '0.5.5' --desc '<本次说明>'
 ```
