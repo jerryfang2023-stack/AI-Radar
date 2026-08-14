@@ -1,7 +1,7 @@
 ---
 status: current
 scope: site-v4-automation
-last_updated: 2026-07-29
+last_updated: 2026-08-14
 priority: current
 ---
 
@@ -79,6 +79,14 @@ dirty `agent-workflow/reports`. Closure runs the self-check once and hands that
 same report to Codex. When repair is necessary, Codex receives a clean isolated
 worktree based on `origin/main`, so unrelated local edits are preserved and never
 treated as repair input.
+
+The installer also resolves a runnable native `codex.exe` for scheduled repair.
+An explicit `-CodexExecutable` wins; otherwise it reuses the managed installation
+under `%LOCALAPPDATA%\WaveSight\codex-cli` or a runnable PATH command, and
+bootstraps official `@openai/codex` into that managed directory when neither is
+available. Scheduled tasks must not depend on a WindowsApps execution alias or a
+shell-only shim. Re-run `npm run install:windows-automation` after repairing the
+CLI so every controller receives the resolved executable path.
 
 The 16:10 Follow-Builders task follows the same isolation boundary. Generation,
 validation, PR publication, and forced lane supervision run from a temporary

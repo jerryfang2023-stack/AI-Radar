@@ -1,6 +1,6 @@
 ---
 title: 观澜 AI Obsidian Vault
-date: 2026-08-10
+date: 2026-08-14
 status: current
 ---
 
@@ -45,6 +45,8 @@ npm run register:guanlan-vault
 Vault 不设置 Markdown 总量硬上限；验收输出仅记录文件数。每个非工作区 Markdown 仍必须由生成清单管理，正式知识资产仍必须具备完整证据字段、可解析 Wiki 链接和退役内容隔离。
 
 `local-sync-from-main.ps1` 在本地 `main` 快进后自动刷新新 Vault。GitHub Actions 不访问本机 Vault。
+
+每日 Final Closure 不依赖主工作区是否干净：它从 `origin/main` 创建隔离工作树，完成 Vault 构建、证据索引同步和断言，并把来源提交记录到 `%LOCALAPPDATA%\WaveSight\runtime`。主工作区的未提交改动既不会进入 Vault，也不会阻塞这次投影；手动执行 `local-sync-from-main.ps1` 时仍须先处理本地主分支状态。
 
 ## Production Boundary
 
