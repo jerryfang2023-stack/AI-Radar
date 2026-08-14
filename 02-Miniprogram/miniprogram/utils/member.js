@@ -8,8 +8,10 @@ const WALLET_KEY = "guanlan_growth_wallet_v1";
 const TASK_KEY = "guanlan_daily_tasks_v1";
 const BENEFIT_KEY = "guanlan_redeemed_benefits_v1";
 const MEMBERSHIP_KEY = "guanlan_membership_v1";
+const INVITE_REWARD_SYNC_KEY = "guanlan_invite_reward_synced_v1";
 
 const TASKS = [
+  { id: "checkin", title: "每日签到", target: 1, reward: 5, unit: "次" },
   { id: "browse", title: "每日阅读 5 条情报", target: 5, reward: 2, unit: "条" },
   { id: "favorite", title: "收藏 1 条情报", target: 1, reward: 3, unit: "条" },
 ];
@@ -29,6 +31,16 @@ function nowLabel() {
 
 function dateKey() {
   return nowLabel().slice(0, 10);
+}
+
+function normalizeTaskState(value = {}) {
+  return {
+    ...value,
+    checkin: Array.isArray(value.checkin) ? value.checkin : [],
+    browse: Array.isArray(value.browse) ? value.browse : [],
+    favorite: Array.isArray(value.favorite) ? value.favorite : [],
+    awarded: Array.isArray(value.awarded) ? value.awarded : [],
+  };
 }
 
 function getProfile() {
@@ -109,6 +121,17 @@ function saveWallet(wallet) {
   return wallet;
 }
 
+function syncInviteRewards(totalPoints) {
+  const confirmed = Math.max(0, Number(totalPoints) || 0);
+  const synced = Math.max(0, Number(wx.getStorageSync(INVITE_REWARD_SYNC_KEY)) || 0);
+  if (confirmed <= synced) return { awarded: 0, wallet: getWallet() };
+  const awarded = confirmed - synced;
+  const wallet = applyReward(getWallet(), awarded, "邀请好友奖励", nowLabel(), `invite_reward_${confirmed}`);
+  saveWallet(wallet);
+  wx.setStorageSync(INVITE_REWARD_SYNC_KEY, confirmed);
+  return { awarded, wallet };
+}
+
 function getMembership() {
   const value = wx.getStorageSync(MEMBERSHIP_KEY);
   const membership = value && value.trialEndsAt ? value : createMembership();
@@ -138,7 +161,7 @@ function syncMembership(membership) {
 
 function getTodayState() {
   const all = wx.getStorageSync(TASK_KEY) || {};
-  return all[dateKey()] || { browse: [], favorite: [], follow: [], awarded: [] };
+  return normalizeTaskState(all[dateKey()]);
 }
 
 function getTaskProgress() {
@@ -155,7 +178,7 @@ function recordBehavior(type, subjectId) {
   if (!task || !subjectId) return { awarded: 0 };
   const day = dateKey();
   const all = wx.getStorageSync(TASK_KEY) || {};
-  const state = all[day] || { browse: [], favorite: [], follow: [], awarded: [] };
+  const state = normalizeTaskState(all[day]);
   if (!state[type].includes(subjectId)) state[type].push(subjectId);
   let awarded = 0;
   if (state[type].length >= task.target && !state.awarded.includes(type)) {
@@ -237,6 +260,7 @@ module.exports = {
   getWallet,
   getMembership,
   syncMembership,
+  syncInviteRewards,
   getTaskProgress,
   recordBehavior,
   redeemBenefit,

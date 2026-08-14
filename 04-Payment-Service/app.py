@@ -71,11 +71,29 @@ def create_app(test_config=None, *, pay_client=None):
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
                     openid TEXT NOT NULL UNIQUE,
                     unionid TEXT,
+                    invite_code TEXT,
                     trial_started_at TEXT NOT NULL,
                     trial_ends_at TEXT NOT NULL,
                     member_ends_at TEXT,
                     created_at TEXT NOT NULL,
                     updated_at TEXT NOT NULL
+                );
+                CREATE TABLE IF NOT EXISTS invite_visits (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    inviter_user_id INTEGER NOT NULL,
+                    visitor_key TEXT NOT NULL,
+                    created_at TEXT NOT NULL,
+                    UNIQUE(inviter_user_id, visitor_key),
+                    FOREIGN KEY(inviter_user_id) REFERENCES users(id)
+                );
+                CREATE TABLE IF NOT EXISTS invite_referrals (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    inviter_user_id INTEGER NOT NULL,
+                    invited_user_id INTEGER NOT NULL UNIQUE,
+                    reward_points INTEGER NOT NULL DEFAULT 300,
+                    created_at TEXT NOT NULL,
+                    FOREIGN KEY(inviter_user_id) REFERENCES users(id),
+                    FOREIGN KEY(invited_user_id) REFERENCES users(id)
                 );
                 CREATE TABLE IF NOT EXISTS payment_orders (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -113,6 +131,10 @@ def create_app(test_config=None, *, pay_client=None):
                     created_at TEXT NOT NULL
                 );
             """)
+            columns = {row["name"] for row in conn.execute("PRAGMA table_info(users)")}
+            if "invite_code" not in columns:
+                conn.execute("ALTER TABLE users ADD COLUMN invite_code TEXT")
+            conn.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_users_invite_code ON users(invite_code)")
             conn.commit()
 
     init_db()
@@ -140,6 +162,34 @@ def create_app(test_config=None, *, pay_client=None):
 
     def token_for(user_id):
         return serializer.dumps({"user_id": user_id})
+
+    def ensure_invite_code(conn, user):
+        if user["invite_code"]:
+            return user["invite_code"]
+        while True:
+            invite_code = secrets.token_urlsafe(8).replace("-", "").replace("_", "")[:10]
+            try:
+                conn.execute("UPDATE users SET invite_code=? WHERE id=?", (invite_code, user["id"]))
+                return invite_code
+            except sqlite3.IntegrityError:
+                continue
+
+    def invite_summary(conn, user):
+        invite_code = ensure_invite_code(conn, user)
+        invited_count = conn.execute(
+            "SELECT COUNT(*) AS count FROM invite_visits WHERE inviter_user_id=?",
+            (user["id"],),
+        ).fetchone()["count"]
+        successful = conn.execute(
+            "SELECT COUNT(*) AS count, COALESCE(SUM(reward_points), 0) AS points FROM invite_referrals WHERE inviter_user_id=?",
+            (user["id"],),
+        ).fetchone()
+        return {
+            "inviteCode": invite_code,
+            "invitedCount": invited_count,
+            "successfulCount": successful["count"],
+            "rewardPoints": successful["points"],
+        }
 
     def auth_required(fn):
         @wraps(fn)
@@ -219,12 +269,17 @@ def create_app(test_config=None, *, pay_client=None):
     def wechat_login():
         payload = request.get_json(silent=True) or {}
         code = str(payload.get("code") or "").strip()
+        invite_code = str(payload.get("inviteCode") or "").strip()
         if not code or len(code) > 128:
             return jsonify(error={"code": "INVALID_CODE", "message": "微信登录凭证无效"}), 400
+        if len(invite_code) > 32:
+            return jsonify(error={"code": "INVALID_INVITE_CODE", "message": "邀请信息无效"}), 400
         result = app.pay_client.exchange_code(code)
         now = utcnow()
         with closing(db()) as conn:
             user = conn.execute("SELECT * FROM users WHERE openid=?", (result["openid"],)).fetchone()
+            is_new_user = user is None
+            invitation_accepted = False
             if not user:
                 conn.execute(
                     "INSERT INTO users(openid, unionid, trial_started_at, trial_ends_at, created_at, updated_at) VALUES(?,?,?,?,?,?)",
@@ -232,13 +287,58 @@ def create_app(test_config=None, *, pay_client=None):
                 )
                 conn.commit()
                 user = conn.execute("SELECT * FROM users WHERE openid=?", (result["openid"],)).fetchone()
-            return jsonify(token=token_for(user["id"]), membership=membership(user))
+                inviter = conn.execute("SELECT * FROM users WHERE invite_code=?", (invite_code,)).fetchone() if invite_code else None
+                if inviter and inviter["id"] != user["id"]:
+                    before = conn.total_changes
+                    conn.execute(
+                        "INSERT OR IGNORE INTO invite_referrals(inviter_user_id, invited_user_id, reward_points, created_at) VALUES(?,?,300,?)",
+                        (inviter["id"], user["id"], iso(now)),
+                    )
+                    invitation_accepted = conn.total_changes > before
+            own_invite_code = ensure_invite_code(conn, user)
+            conn.commit()
+            return jsonify(
+                token=token_for(user["id"]),
+                membership=membership(user),
+                isNewUser=is_new_user,
+                invitationAccepted=invitation_accepted,
+                inviteCode=own_invite_code,
+            )
 
     @app.get("/api/v1/member/me")
     @auth_required
     def member_me():
         with closing(db()) as conn:
             return jsonify(membership=membership(user_by_id(conn, g.user_id)))
+
+    @app.post("/api/v1/invites/visit")
+    def record_invite_visit():
+        payload = request.get_json(silent=True) or {}
+        invite_code = str(payload.get("inviteCode") or "").strip()
+        visitor_key = str(payload.get("visitorKey") or "").strip()
+        if not invite_code or not visitor_key or len(invite_code) > 32 or len(visitor_key) > 128:
+            return jsonify(error={"code": "INVALID_INVITE_VISIT", "message": "邀请访问参数无效"}), 400
+        with closing(db()) as conn:
+            inviter = conn.execute("SELECT * FROM users WHERE invite_code=?", (invite_code,)).fetchone()
+            if not inviter:
+                return jsonify(recorded=False), 200
+            before = conn.total_changes
+            conn.execute(
+                "INSERT OR IGNORE INTO invite_visits(inviter_user_id, visitor_key, created_at) VALUES(?,?,?)",
+                (inviter["id"], visitor_key, iso(utcnow())),
+            )
+            recorded = conn.total_changes > before
+            conn.commit()
+            return jsonify(recorded=recorded), 201 if recorded else 200
+
+    @app.get("/api/v1/invites/me")
+    @auth_required
+    def my_invites():
+        with closing(db()) as conn:
+            user = user_by_id(conn, g.user_id)
+            summary = invite_summary(conn, user)
+            conn.commit()
+            return jsonify(summary=summary)
 
     @app.post("/api/v1/pay/wechat/orders")
     @auth_required

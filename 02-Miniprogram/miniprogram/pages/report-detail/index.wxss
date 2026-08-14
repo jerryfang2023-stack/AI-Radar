@@ -19,3 +19,9 @@
 .block-table { padding: 14rpx 16rpx; border-bottom: 1rpx solid #e5e8ec; color: #516273; font-size: 22rpx; }
 .share-button { margin-top: 44rpx; }
 .reader-version { display: block; margin-top: 20rpx; color: #8996a3; font-size: 19rpx; text-align: center; }
+.reader-content.with-shared-nav { padding-bottom: 240rpx; }
+.shared-entry-nav { position: fixed; z-index: 20; right: 0; bottom: 0; left: 0; display: grid; grid-template-columns: repeat(4, 1fr); padding: 0 10rpx env(safe-area-inset-bottom); border-top: 1rpx solid #d9d1c2; background: rgba(255, 253, 248, .98); box-shadow: 0 -10rpx 28rpx rgba(7, 24, 39, .06); }
+.shared-entry-nav button { position: relative; min-height: 96rpx; margin: 0; padding: 0; border-radius: 0; background: transparent; color: #6f7f8f; font-size: 25rpx; font-weight: 500; line-height: 96rpx; }
+.shared-entry-nav button + button::before { position: absolute; top: 28rpx; bottom: 28rpx; left: 0; width: 1rpx; background: #d9d1c2; content: ""; }
+.shared-entry-nav button.active { border-radius: 14rpx 14rpx 0 0; background: #f4efe4; color: #0d355c; font-size: 27rpx; font-weight: 700; }
+.shared-entry-nav button.active::after { position: absolute; top: 0; left: 50%; width: 42rpx; height: 5rpx; border-radius: 0 0 99rpx 99rpx; background: #c8a766; content: ""; transform: translateX(-50%); }

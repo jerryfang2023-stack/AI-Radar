@@ -2,9 +2,11 @@ const { recordBehavior } = require("../../utils/member.js");
 const { getReportData, refreshReportData } = require("../../utils/live-data.js");
 
 Page({
-  data: { report: null },
+  data: { report: null, sharedEntry: false },
   onLoad(options) {
     this.reportId = options.id;
+    this.setData({ sharedEntry: options.from === "share" || getCurrentPages().length <= 1 });
+    if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
     const bundled = getReportData().details[this.reportId];
     if (bundled) this.render(bundled);
     refreshReportData().then((state) => {
@@ -25,6 +27,13 @@ Page({
   },
   onShareAppMessage() {
     const report = this.data.report;
-    return { title: report?.title || "观澜 AI 商业观察", path: `/pages/report-detail/index?id=${report?.id || ""}` };
+    return { title: report?.title || "观澜 AI 商业观察", path: `/pages/report-detail/index?id=${report?.id || ""}&from=share` };
+  },
+  onShareTimeline() {
+    const report = this.data.report;
+    return { title: report?.title || "观澜 AI 商业观察", query: `id=${report?.id || ""}&from=share` };
+  },
+  switchSection(event) {
+    wx.switchTab({ url: event.currentTarget.dataset.url });
   },
 });

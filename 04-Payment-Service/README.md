@@ -26,3 +26,9 @@ python -m venv .venv
 ```
 
 测试使用假微信网关，不会发起真实扣款。
+
+## 邀请注册
+
+- `GET /api/v1/invites/me`：返回当前用户的邀请码、邀请页独立访问人数、注册成功人数和累计奖励积分。
+- `POST /api/v1/invites/visit`：按邀请码与设备访客标识去重记录邀请页访问。
+- `POST /api/v1/auth/wechat`：首次注册时可携带 `inviteCode`；邀请关系只确认一次，并向邀请人记入 300 活跃积分。

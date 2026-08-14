@@ -80,6 +80,32 @@ def test_login_creates_seven_day_trial(client):
     assert membership["remainingDays"] == 7
 
 
+def test_invite_visit_registration_and_reward_stats_are_idempotent(client):
+    inviter_login = client.post("/api/v1/auth/wechat", json={"code": "inviter"}).get_json()
+    inviter_token = inviter_login["token"]
+    invite_code = inviter_login["inviteCode"]
+
+    first_visit = client.post("/api/v1/invites/visit", json={"inviteCode": invite_code, "visitorKey": "device-1"})
+    repeated_visit = client.post("/api/v1/invites/visit", json={"inviteCode": invite_code, "visitorKey": "device-1"})
+    assert first_visit.status_code == 201
+    assert repeated_visit.status_code == 200
+
+    invited_login = client.post("/api/v1/auth/wechat", json={"code": "invitee", "inviteCode": invite_code})
+    repeated_login = client.post("/api/v1/auth/wechat", json={"code": "invitee", "inviteCode": invite_code})
+    assert invited_login.get_json()["isNewUser"] is True
+    assert invited_login.get_json()["invitationAccepted"] is True
+    assert repeated_login.get_json()["isNewUser"] is False
+    assert repeated_login.get_json()["invitationAccepted"] is False
+
+    summary = client.get("/api/v1/invites/me", headers=auth(inviter_token)).get_json()["summary"]
+    assert summary == {
+        "inviteCode": invite_code,
+        "invitedCount": 1,
+        "successfulCount": 1,
+        "rewardPoints": 300,
+    }
+
+
 @pytest.mark.parametrize("plan_id", list(PLANS))
 def test_paid_order_uses_server_price_and_extends_membership(client, plan_id):
     token = login(client, f"buyer-{plan_id}")

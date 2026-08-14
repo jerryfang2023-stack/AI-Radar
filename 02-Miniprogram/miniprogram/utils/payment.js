@@ -38,9 +38,12 @@ function wxLogin() {
   });
 }
 
-async function login() {
+async function login(options = {}) {
   const code = await wxLogin();
-  const result = await apiRequest("/auth/wechat", { method: "POST", data: { code } });
+  const result = await apiRequest("/auth/wechat", {
+    method: "POST",
+    data: { code, ...(options.inviteCode ? { inviteCode: options.inviteCode } : {}) },
+  });
   if (!result.token) throw new Error("登录状态获取失败，请重试");
   wx.setStorageSync(TOKEN_KEY, result.token);
   return result;
@@ -108,5 +111,13 @@ async function fetchMembership() {
   return withToken((token) => apiRequest("/member/me", { token }));
 }
 
-module.exports = { API_ROOT, apiRequest, login, fetchMembership, purchaseMembership, queryOrder };
+async function fetchInviteSummary() {
+  return withToken((token) => apiRequest("/invites/me", { token }));
+}
 
+async function recordInviteVisit(inviteCode, visitorKey) {
+  if (!inviteCode || !visitorKey) return { recorded: false };
+  return apiRequest("/invites/visit", { method: "POST", data: { inviteCode, visitorKey } });
+}
+
+module.exports = { API_ROOT, apiRequest, login, fetchMembership, fetchInviteSummary, recordInviteVisit, purchaseMembership, queryOrder };

@@ -1,8 +1,17 @@
-const { getGrowthSnapshot, redeemBenefit } = require("../../utils/member.js");
+const { getGrowthSnapshot, recordBehavior, redeemBenefit } = require("../../utils/member.js");
 
 Page({
   data: { growth: { wallet: { balance: 0, ledger: [] }, level: {}, tasks: [], benefits: [] } },
   onShow() { this.setData({ growth: getGrowthSnapshot() }); },
+  openTask(event) {
+    const id = event.currentTarget.dataset.id;
+    if (id === "checkin") {
+      const result = recordBehavior("checkin", "daily");
+      this.setData({ growth: getGrowthSnapshot() });
+      wx.showToast({ title: result.awarded ? "签到成功，+5 分" : "今日已签到", icon: "none" });
+    } else if (id === "favorite") wx.navigateTo({ url: "/pages/saved/index" });
+    else wx.switchTab({ url: "/pages/terminal/index" });
+  },
   redeem(event) {
     const id = event.currentTarget.dataset.id;
     const benefit = this.data.growth.benefits.find((item) => item.id === id);

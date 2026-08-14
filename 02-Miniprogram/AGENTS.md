@@ -26,8 +26,11 @@ This is the native WeChat Mini Program frontstage for Funding Insights.
 - Present the financing summary as an inset rounded navy card, consistent with the rounded overview cards used by the other columns; do not stretch it edge-to-edge as a square strip.
 - The company comparison screen must let users cancel an individual company in place. Preserve remaining selections, explain when one more company is needed, and offer a direct return to financing when the comparison set is empty or incomplete.
 - Do not place collection controls in the financing list header or financing-detail title bar. Keep collection as a secondary action below the detail facts, beside company comparison. The favorite growth task opens the saved-items list; do not show a follow-topic growth task without a clear follow surface.
+- Financing and entity detail pages must support native WeChat forwarding and timeline sharing. A report opened directly from a shared card must show the four-column navigation and use a reliable tab fallback when no back stack exists.
+- Daily check-in is a once-per-day growth task worth 5 points. Repeated taps on the same day must not award points again.
 - Membership is priced at CNY 30/month, CNY 168/six months, or CNY 300/year and grants full browsing across all columns. New users receive a seven-day trial. Community activity points can redeem seven-day or thirty-day membership extensions; never present a successful payment before the WeChat Pay and account service confirm it.
 - A valid first-time registration attributed to an invite rewards the inviter with 300 activity points; award it only after backend registration attribution confirms the event, and count each new user once.
+- Shared invitation pages must distinguish inviter and invitee views, keep registration visible, provide a tab fallback for direct-entry users, and show server-confirmed visit, registration, and reward totals to the inviter.
 
 ## Validation
 

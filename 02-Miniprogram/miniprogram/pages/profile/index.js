@@ -5,6 +5,7 @@ const {
   getHistory,
   getFollowIds,
   getGrowthSnapshot,
+  recordBehavior,
 } = require("../../utils/member.js");
 const { syncTabBar } = require("../../utils/tab-bar.js");
 
@@ -39,7 +40,11 @@ Page({
   openInvite() { wx.navigateTo({ url: "/pages/invite/index" }); },
   openTask(event) {
     const id = event.currentTarget.dataset.id;
-    if (id === "favorite") wx.navigateTo({ url: "/pages/saved/index" });
+    if (id === "checkin") {
+      const result = recordBehavior("checkin", "daily");
+      this.setData({ growth: getGrowthSnapshot() });
+      wx.showToast({ title: result.awarded ? "签到成功，+5 分" : "今日已签到", icon: "none" });
+    } else if (id === "favorite") wx.navigateTo({ url: "/pages/saved/index" });
     else wx.switchTab({ url: "/pages/terminal/index" });
   },
 

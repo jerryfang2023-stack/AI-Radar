@@ -8,6 +8,7 @@ Page({
 
   onLoad(options) {
     this.type = options.type;
+    if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
     try { this.key = decodeURIComponent(options.key || ""); } catch { this.key = options.key || ""; }
     this.setData({ title: TITLES[this.type] || "主体档案", type: this.type });
     this.applyData(getFundingData());
@@ -34,5 +35,23 @@ Page({
   copyWebsite() {
     if (!this.data.entity?.website) return;
     wx.setClipboardData({ data: this.data.entity.website });
+  },
+
+  onShareAppMessage() {
+    const entity = this.data.entity;
+    const key = encodeURIComponent(this.key || "");
+    return {
+      title: entity ? `${entity.name}｜${this.data.title}｜观澜 AI` : "观澜 AI 生态图谱",
+      path: `/pages/entity-detail/index?type=${this.type || "companies"}&key=${key}&from=share`,
+    };
+  },
+
+  onShareTimeline() {
+    const entity = this.data.entity;
+    const key = encodeURIComponent(this.key || "");
+    return {
+      title: entity ? `${entity.name}｜${this.data.title}｜观澜 AI` : "观澜 AI 生态图谱",
+      query: `type=${this.type || "companies"}&key=${key}&from=share`,
+    };
   },
 });

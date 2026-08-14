@@ -26,6 +26,7 @@ Page({
 
   onLoad(options) {
     this.cardId = options.id;
+    if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
     const bundledCard = normalizedCard(getFundingData().details[this.cardId]);
     if (bundledCard) this.renderCard(bundledCard);
     refreshFundingData().then((state) => {
@@ -86,5 +87,21 @@ Page({
     const founder = { id: event.currentTarget.dataset.id || "", name: event.currentTarget.dataset.name || "" };
     const key = personEntityKey(founder, this.data.card.company);
     if (key) wx.navigateTo({ url: `/pages/entity-detail/index?type=people&key=${encodeURIComponent(key)}` });
+  },
+
+  onShareAppMessage() {
+    const card = this.data.card;
+    return {
+      title: card ? `${card.company} ${card.round}融资｜观澜 AI` : "观澜 AI 融资情报",
+      path: `/pages/detail/index?id=${encodeURIComponent(card?.id || this.cardId || "")}&from=share`,
+    };
+  },
+
+  onShareTimeline() {
+    const card = this.data.card;
+    return {
+      title: card ? `${card.company} ${card.round}融资｜观澜 AI` : "观澜 AI 融资情报",
+      query: `id=${encodeURIComponent(card?.id || this.cardId || "")}&from=share`,
+    };
   },
 });

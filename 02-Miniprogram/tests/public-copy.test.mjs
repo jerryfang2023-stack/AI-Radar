@@ -17,11 +17,17 @@ const customTabBarSource = fs.readFileSync("miniprogram/custom-tab-bar/index.wxm
 const customTabBarStyles = fs.readFileSync("miniprogram/custom-tab-bar/index.wxss", "utf8");
 const customTabBarLogic = fs.readFileSync("miniprogram/custom-tab-bar/index.js", "utf8");
 const inviteSource = fs.readFileSync("miniprogram/pages/invite/index.wxml", "utf8");
+const inviteLogic = fs.readFileSync("miniprogram/pages/invite/index.js", "utf8");
 const growthSource = fs.readFileSync("miniprogram/pages/growth/index.wxml", "utf8");
 const growthLogic = fs.readFileSync("miniprogram/pages/growth/index.js", "utf8");
 const compareSource = fs.readFileSync("miniprogram/pages/compare/index.wxml", "utf8");
 const compareLogic = fs.readFileSync("miniprogram/pages/compare/index.js", "utf8");
 const detailSource = fs.readFileSync("miniprogram/pages/detail/index.wxml", "utf8");
+const detailLogic = fs.readFileSync("miniprogram/pages/detail/index.js", "utf8");
+const entityDetailLogic = fs.readFileSync("miniprogram/pages/entity-detail/index.js", "utf8");
+const reportDetailSource = fs.readFileSync("miniprogram/pages/report-detail/index.wxml", "utf8");
+const reportDetailLogic = fs.readFileSync("miniprogram/pages/report-detail/index.js", "utf8");
+const headerLogic = fs.readFileSync("miniprogram/components/app-header/index.js", "utf8");
 const memberModelSource = fs.readFileSync("miniprogram/utils/member.js", "utf8");
 const memberSource = fs.readFileSync("miniprogram/utils/member.js", "utf8");
 const paymentSource = fs.readFileSync("miniprogram/utils/payment.js", "utf8");
@@ -110,15 +116,47 @@ test("collection is a detail action and favorite task opens saved items", () => 
   assert.match(profileSource, /growth\.completedToday\}\}\/\{\{growth\.tasks\.length\}\}/u);
 });
 
+test("shares funding and ecosystem details with navigable shared reports", () => {
+  assert.match(detailLogic, /onShareAppMessage\(\)/u);
+  assert.match(detailLogic, /onShareTimeline\(\)/u);
+  assert.match(detailLogic, /pages\/detail\/index\?id=/u);
+  assert.match(entityDetailLogic, /onShareAppMessage\(\)/u);
+  assert.match(entityDetailLogic, /onShareTimeline\(\)/u);
+  assert.match(entityDetailLogic, /pages\/entity-detail\/index\?type=/u);
+  assert.match(reportDetailLogic, /from=share/u);
+  assert.match(reportDetailLogic, /sharedEntry/u);
+  assert.match(reportDetailLogic, /wx\.switchTab/u);
+  assert.match(reportDetailSource, /class="shared-entry-nav"/u);
+  for (const label of ["融资", "生态", "观察", "我的"]) assert.match(reportDetailSource, new RegExp(`>${label}<`, "u"));
+  assert.match(headerLogic, /getCurrentPages\(\)\.length > 1/u);
+  assert.match(headerLogic, /fallbackUrl/u);
+  assert.match(headerLogic, /wx\.switchTab/u);
+});
+
+test("adds an idempotent five-point daily check-in task", () => {
+  assert.match(memberModelSource, /id: "checkin", title: "每日签到", target: 1, reward: 5/u);
+  assert.match(profileLogic, /recordBehavior\("checkin", "daily"\)/u);
+  assert.match(profileLogic, /签到成功，\+5 分/u);
+  assert.match(growthLogic, /recordBehavior\("checkin", "daily"\)/u);
+  assert.match(growthSource, /签到、阅读与收藏任务/u);
+});
+
 test("opens a dedicated invitation value page before sharing", () => {
   assert.ok(appConfig.pages.includes("pages/invite/index"));
   assert.match(profileLogic, /openInvite/u);
   assert.match(profileSource, /bindtap="openInvite"/u);
   assert.doesNotMatch(profileSource, /open-type="share"/u);
-  for (const copy of ["新用户首次注册即可获得 7 天全部栏目体验", "300 活跃积分", "融资情报", "生态图谱", "商业观察", "每位新用户仅计入一次有效邀请", "系统确认结果为准", "开始 7 天体验"]) {
+  for (const copy of ["300 分", "融资情报", "生态图谱", "商业观察", "每位新用户仅计入一次有效邀请", "系统确认结果为准", "微信快捷注册", "我的邀请", "注册成功", "获得积分"]) {
     assert.match(inviteSource, new RegExp(copy, "u"));
   }
+  assert.doesNotMatch(inviteSource, /class="invite-lead"/u);
   assert.match(inviteSource, /open-type="share"/u);
+  assert.match(inviteSource, /class="shared-entry-nav"/u);
+  assert.match(inviteLogic, /registerInvitee/u);
+  assert.match(inviteLogic, /fetchInviteSummary/u);
+  assert.match(inviteLogic, /recordInviteVisit/u);
+  assert.match(inviteLogic, /syncInviteRewards/u);
+  assert.match(inviteLogic, /inviterName/u);
 });
 
 test("enables confirmed point redemption with balance and membership updates", () => {

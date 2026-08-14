@@ -1,5 +1,21 @@
 # Design QA
 
+## 2026-08-14 分享、签到与邀请注册修复
+
+- Source visual truth: 用户提供的周报、融资详情、企业档案及邀请好友真机截图。
+- Financing and ecosystem detail pages now expose native WeChat session and Moments sharing with stable deep links.
+- Reports opened from a share show a persistent text navigation fallback; direct-entry back actions return to the relevant tab.
+- Profile growth tasks include an idempotent “每日签到” task worth 5 points.
+- Invitee pages now lead with “邀请人昵称 + 邀请你来”, place the WeChat registration CTA directly below the hero, and provide direct-entry tab navigation.
+- Inviter pages remove the repeated hero helper sentence and show server-confirmed invited visitors, successful registrations, and reward points.
+- `npm run verify`: 41 tests passed; 16 pages and 33 JavaScript files validated.
+- Payment/invitation service: 11 pytest cases passed, including duplicate visit and duplicate registration protection.
+- WeChat Developer Tools CLI preview succeeded with production AppID `wx34133741173154d4`; package size 753,592 bytes.
+
+final result: passed
+
+---
+
 ## Scope
 
 - Source visual truth: approved full-page UI demo at `C:\Users\86186\.codex\visualizations\2026\08\13\wavesight-full-ui-demo`.

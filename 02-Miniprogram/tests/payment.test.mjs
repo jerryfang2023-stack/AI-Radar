@@ -14,7 +14,9 @@ function loadPaymentWx({ orderStatus = "PAID", paymentFailure = null } = {}) {
     login: ({ success }) => success({ code: "login-code" }),
     request: ({ url, method, data, header, success }) => {
       requests.push({ url, method, data, header });
-      if (url.endsWith("/auth/wechat")) return success({ statusCode: 200, data: { token: "token-1" } });
+      if (url.endsWith("/auth/wechat")) return success({ statusCode: 200, data: { token: "token-1", isNewUser: true } });
+      if (url.endsWith("/invites/visit")) return success({ statusCode: 201, data: { recorded: true } });
+      if (url.endsWith("/invites/me")) return success({ statusCode: 200, data: { summary: { inviteCode: "abc", invitedCount: 1, successfulCount: 1, rewardPoints: 300 } } });
       if (url.endsWith("/pay/wechat/orders")) return success({ statusCode: 201, data: {
         orderNo: "GL001",
         payment: { timeStamp: "1", nonceStr: "n", package: "prepay_id=x", signType: "RSA", paySign: "s" },
@@ -41,3 +43,14 @@ test("does not confirm membership when the user cancels payment", async () => {
   assert.equal(requests.some((item) => item.url.includes("/pay/orders/")), false);
 });
 
+test("attributes registration to an invite and loads confirmed invite stats", async () => {
+  const { payment, requests } = loadPaymentWx();
+  const registration = await payment.login({ inviteCode: "invite-abc" });
+  assert.equal(registration.isNewUser, true);
+  assert.deepEqual(requests.find((item) => item.url.endsWith("/auth/wechat")).data, { code: "login-code", inviteCode: "invite-abc" });
+
+  await payment.recordInviteVisit("invite-abc", "device-1");
+  const stats = await payment.fetchInviteSummary();
+  assert.equal(stats.summary.rewardPoints, 300);
+  assert.ok(requests.some((item) => item.url.endsWith("/invites/visit")));
+});
