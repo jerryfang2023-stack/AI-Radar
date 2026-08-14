@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-13T00:26:01.951Z",
-    "latestDataDate": "2026-08-13",
-    "currentDate": "2026-08-13",
-    "eventCount": 2067,
+    "generatedAt": "2026-08-14T00:23:40.398Z",
+    "latestDataDate": "2026-08-14",
+    "currentDate": "2026-08-14",
+    "eventCount": 2102,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -796,6 +796,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-c1295b8f58024ff6",
         "EV-cbce4f1f5187efcf",
         "EV-5df885dbd24b6d00",
         "EV-dcbe916c6138e5cb",
@@ -808,6 +809,7 @@
         "EV-467d1a701d21327d",
         "EV-acdeebead5324344",
         "EV-cded77b1de2db61a",
+        "EV-0121f0a9e9a975ec",
         "EV-a852dc0ca6011ff6",
         "EV-a4b7cd533b0b34dc",
         "EV-8805e96b4fb544dd",
@@ -915,16 +917,14 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-12"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-9fbf261b62c1d7c0",
       "name": "Microsoft",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "微软"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -954,6 +954,7 @@
         "EV-d756f05478303505",
         "EV-7263caa45bbf168e",
         "EV-8abf5adc3e72fbb8",
+        "EV-d2247eeac1478994",
         "EV-6272444f30281858",
         "EV-f55d16df5b5fecb2",
         "EV-16cfe946bbf69aa3",
@@ -968,6 +969,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-6018392d4cc4b472",
         "EV-088870c111b4e968",
         "EV-0ad3854d95038ea3",
         "EV-890ffd351486b884",
@@ -1061,20 +1063,15 @@
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
-        "EN-688f8db7018da7d4",
-        "EN-827b607311e6593e",
-        "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
-        "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-8d4321d936320802",
-        "EN-10fce287b4b1464c"
+        "EN-8d4321d936320802"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-ec7d81cdcc201572",
@@ -1108,6 +1105,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-f5dd6dec49ad83aa",
         "EV-c89018d79b3d25bd",
         "EV-136b2edc9b9f3be8",
         "EV-d7a7244d620a2142",
@@ -1133,6 +1131,7 @@
         "EV-1abf0d076d30ec6d",
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
+        "EV-ebe3321efdf8023e",
         "EV-924d196a2412006f",
         "EV-7dcbf6eab4339b22",
         "EV-c25adb1398842ac9",
@@ -1150,6 +1149,8 @@
         "EV-3a704c40204ecfd9",
         "EV-94e0afb44c320c99",
         "EV-777eb5b7783b71fb",
+        "EV-d2247eeac1478994",
+        "EV-d04d03b37046f0ad",
         "EV-c4cf8b6eedf31ad2",
         "EV-f84894a567752c40",
         "EV-5d185ac33faedb68",
@@ -1175,6 +1176,8 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-397a17aa878564c4",
+        "EV-c9ca5ee6f9c0a600",
         "EV-875b31b96ff689df",
         "EV-0ad3854d95038ea3",
         "EV-2868ff08777b5de9",
@@ -1342,6 +1345,8 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-cdc6611d6b115cab",
+        "EV-3343be31faab2cce",
         "EV-f0dcc60444b56245",
         "EV-649481503cdb7736",
         "EV-46254bfc37b846f5",
@@ -1436,13 +1441,14 @@
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
+        "EN-240389f4b730bad4",
+        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-9f15bb7e29e191eb",
         "EN-fa12a0c13e906f43",
         "EN-cb4754c48f8023d0",
         "EN-830abc32d2a443c5",
-        "EN-240389f4b730bad4",
         "EN-8d4321d936320802",
         "EN-7d3194f79e645c42",
         "EN-729324072d368379",
@@ -1452,7 +1458,6 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
-        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -1462,7 +1467,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     }
   ],
   "fde": [],

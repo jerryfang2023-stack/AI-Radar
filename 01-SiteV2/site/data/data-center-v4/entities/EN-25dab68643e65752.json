@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-14T00:23:40.398Z",
+    "latestDataDate": "2026-08-14",
+    "currentDate": "2026-08-14",
+    "eventCount": 2102,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-25dab68643e65752",
+    "name": "Lemma Dealroom",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-c1295b8f58024ff6"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-08",
+    "lastSeen": "2026-08-14",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-c1295b8f58024ff6"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-c1295b8f58024ff6",
+        "dataDate": "2026-08-14",
+        "date": "2026-08-08",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Lemma 筹集 230 万美元预种子资金，用于捕捉静默失败的 AI 智能体",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-249fdefbb63fa7b3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-249fdefbb63fa7b3",
+          "EN-25dab68643e65752",
+          "EN-7d3194f79e645c42",
+          "EN-6fcba5d96a4fadfd",
+          "EN-ea3bd73e2b506e00"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

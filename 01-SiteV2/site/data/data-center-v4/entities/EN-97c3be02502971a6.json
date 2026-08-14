@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-14T00:23:40.398Z",
+    "latestDataDate": "2026-08-14",
+    "currentDate": "2026-08-14",
+    "eventCount": 2102,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-97c3be02502971a6",
+    "name": "GitLab",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-133fffc68039038e"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-14",
+    "lastSeen": "2026-08-14",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-133fffc68039038e"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-133fffc68039038e",
+        "dataDate": "2026-08-14",
+        "date": "2026-08-14",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.232 发布：默认启用 Subagent forking，新增 GitLab 支持与多项安全修复",
+        "displayTags": [],
+        "entityIds": [
+          "EN-cb4754c48f8023d0",
+          "EN-97c3be02502971a6",
+          "EN-95e2f0e0c1208ca5"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

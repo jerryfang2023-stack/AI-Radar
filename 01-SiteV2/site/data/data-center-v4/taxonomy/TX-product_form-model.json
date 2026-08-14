@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-13T00:26:01.951Z",
-    "latestDataDate": "2026-08-13",
-    "currentDate": "2026-08-13",
-    "eventCount": 2067,
+    "generatedAt": "2026-08-14T00:23:40.398Z",
+    "latestDataDate": "2026-08-14",
+    "currentDate": "2026-08-14",
+    "eventCount": 2102,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -65,6 +65,7 @@
       "EV-c5d7d88d1aef8edb",
       "EV-cded77b1de2db61a",
       "EV-535c2f4fb851332d",
+      "EV-0121f0a9e9a975ec",
       "EV-b25b396e368ee4d9",
       "EV-d2a623e8eef1f61d",
       "EV-dda9429d76897a3d",
@@ -82,6 +83,7 @@
       "EV-c81cb21337a9bb98",
       "EV-6c361125c3f50bb6",
       "EV-83b2e8f7fe679bc3",
+      "EV-129ffa6be41bb485",
       "EV-3d9aa640411471ea",
       "EV-eec1e6857f0e0b2b",
       "EV-584212d254d882bc",
@@ -90,9 +92,13 @@
       "EV-2fd730d0ad452334",
       "EV-9f6d481a09b063ee",
       "EV-fd21441fb6e143c3",
+      "EV-397a17aa878564c4",
+      "EV-3fb3e2730da143f4",
+      "EV-8654d13ff4cf8a08",
+      "EV-1205a939d3748b7e",
       "EV-a6c4f879a58ababa",
-      "EV-5c30f52112d92491",
       "EV-c7d0b810ac3b3d4e",
+      "EV-5c30f52112d92491",
       "EV-f4b38b9778fca8ce",
       "EV-1d3b117dad798008",
       "EV-497344d95d593cf6",
@@ -269,17 +275,21 @@
       "EN-cd35ca6b5c3cf23c",
       "EN-883be863cc6562bb",
       "EN-a83a3af1a4866fd5",
+      "EN-29b9f0cae32e7a8a",
       "EN-e9fc4f156e36f6aa",
       "EN-bd6769fe78d0971a",
       "EN-968e2d5b08687bf4",
       "EN-b81c8201acfc7639",
       "EN-23929c7dca3eb576",
       "EN-bc8a00f7f6fb535f",
+      "EN-916a98f0fa2a39af",
       "EN-87c730bc4f32459e",
       "EN-88e2cce43eeadb36",
       "EN-c890cfa67d1da908",
       "EN-3e52637ec683b555",
       "EN-7df09a7717ef2feb",
+      "EN-b93006774cbdd4b2",
+      "EN-e32ac33fa53a3db6",
       "EN-83eb1cb31148698f",
       "EN-52593fb3cf820033",
       "EN-32e83e92d45d71f6",
@@ -347,7 +357,6 @@
       "EN-14754db7f1439c88",
       "EN-ce31f92c521b7b08",
       "EN-4a639cb888a15d75",
-      "EN-e32ac33fa53a3db6",
       "EN-5f4db04ac40d991b",
       "EN-1706429cbf67f1c9",
       "EN-af84cfb6c1bb0e98",
@@ -365,9 +374,11 @@
       "FDE-c19b8c67ebeeae98",
       "FDE-f34ca7b021eae900",
       "FDE-d0a39c8df546833a",
+      "FDE-ed781e27a7b9458e",
       "FDE-faf3a8cfcafef981"
     ],
     "hardwareIds": [
+      "HW-304c6370cc157449",
       "HW-c5a22adcc66136ed",
       "HW-033a5b73cdc3f4be",
       "HW-ceb55d9bc637c1d3",
@@ -377,7 +388,7 @@
       "HW-25ce41fab12d9ef2"
     ],
     "firstSeen": "2022-10-01",
-    "lastSeen": "2026-08-13"
+    "lastSeen": "2026-08-14"
   },
   "events": [
     {
@@ -15961,6 +15972,476 @@
       "publisher": "国家科技创新信息服务平台"
     },
     {
+      "id": "EV-0121f0a9e9a975ec",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-14",
+      "updatedDate": "2026-08-14",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "L&T在钦奈为Together AI部署印度首个10,000-GPU统一AI集群",
+      "originalTitle": "L&T Deploys India's First 10,000-GPU Unified AI Cluster for Together AI in Chennai",
+      "subject": "L&T",
+      "action": "Deploys India's First 10,000-GPU Unified AI Cluster",
+      "object": "for Together AI in Chennai",
+      "metrics": [
+        "$1.05 t",
+        "$1.57 billion",
+        "$1.05 billion",
+        "$1.15 billion",
+        "10,000 GPUs",
+        "300 server",
+        "1,250 servers",
+        "300 GPU"
+      ],
+      "locations": [
+        "United States",
+        "US",
+        "Europe",
+        "India"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-29b9f0cae32e7a8a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-29b9f0cae32e7a8a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_infrastructure_software",
+            "name": "AI 基础设施软件",
+            "entityIds": [
+              "EN-29b9f0cae32e7a8a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-29b9f0cae32e7a8a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-29b9f0cae32e7a8a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-29b9f0cae32e7a8a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-29b9f0cae32e7a8a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-29b9f0cae32e7a8a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "researcher",
+            "name": "研究人员",
+            "entityIds": [
+              "EN-29b9f0cae32e7a8a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_infrastructure_software",
+          "name": "AI 基础设施软件",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "researcher",
+          "name": "研究人员",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_infrastructure_software",
+          "name": "AI 基础设施软件",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "researcher",
+          "name": "研究人员",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-29b9f0cae32e7a8a",
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00",
+        "EN-6f7ac1823da81d2e",
+        "EN-e1517be14d06cdb7",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "L&T",
+        "NVIDIA",
+        "Meta",
+        "DeepSeek",
+        "MiniMax",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techtimes.com/articles/324334/20260813/lt-deploys-indias-first-10000-gpu-unified-ai-cluster-together-ai-chennai.htm",
+      "publisher": "techtimes.com"
+    },
+    {
       "id": "EV-b25b396e368ee4d9",
       "dataDate": "2026-08-12",
       "date": "2026-08-12",
@@ -18323,6 +18804,322 @@
       "publisher": "keepingupwith.ai"
     },
     {
+      "id": "EV-129ffa6be41bb485",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "updatedDate": "2026-08-14",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+      "originalTitle": "IBM Partners with OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "subject": "IBM",
+      "action": "Partners with",
+      "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "telecommunications",
+            "name": "电信",
+            "entityIds": [
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "telecommunications",
+          "name": "电信",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "telecommunications",
+          "name": "电信",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "IBM",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations",
+      "publisher": "newsroom.ibm.com"
+    },
+    {
       "id": "EV-3d9aa640411471ea",
       "dataDate": "2026-08-08",
       "date": "2026-08-07",
@@ -19377,6 +20174,368 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-397a17aa878564c4",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "updatedDate": "2026-08-14",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "谷歌 DeepMind 换帅内情：Gemini 延期两月后编程能力仍落后友商，布林亲自督战并要求\"全力投入\"",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "谷歌 DeepMind 换帅内情：Gemini 延期两月后编程能力仍落后友商，布林亲自督战并要求\"全力投入\"",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-4d09c69c19f5f67b"
+      ],
+      "entityNames": [
+        "Google DeepMind",
+        "Anthropic",
+        "OpenAI",
+        "DeepMind"
+      ],
+      "productName": "DeepMind",
+      "products": [
+        {
+          "name": "DeepMind",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google DeepMind"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/989/384.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-3fb3e2730da143f4",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "updatedDate": "2026-08-14",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Deepseek 发布改进版 V4 Pro，开源其智能体软件，并上调 API 价格",
+      "originalTitle": "Deepseek ships improved V4 Pro, open-sources its agent software, and raises API prices",
+      "subject": "Deepseek ships improved V4 Pro,",
+      "action": "open-sources",
+      "object": "its agent software, and raises API prices",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "the-decoder-rss"
+        ],
+        "claim_refs": [
+          "CL-24793811477805a6",
+          "CL-b17ff39c3e9b75d4",
+          "CL-2b8c75d43c203af1",
+          "CL-8e08c233c5e73afb"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-fc1755d318bf180d",
+        "EN-6f7ac1823da81d2e",
+        "EN-8dfa869c34844253"
+      ],
+      "entityNames": [
+        "Deepseek ships improved V4 Pro",
+        "DeepSeek",
+        "V4 Pro"
+      ],
+      "productName": "V4 Pro",
+      "products": [
+        {
+          "name": "V4 Pro",
+          "type": "产品/服务",
+          "ownerNames": [
+            "DeepSeek"
+          ]
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/deepseek-launches-an-improved-v4-pro-model-raises-api-prices-and-makes-its-agent-software-open-source",
+      "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-8654d13ff4cf8a08",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "updatedDate": "2026-08-14",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Writer 发布新旗舰模型 Palmyra X6 并升级智能体框架以控制 token 成本",
+      "originalTitle": "",
+      "subject": "Writer",
+      "action": "发布新旗舰模型",
+      "object": "Palmyra X6 并升级智能体框架以控制 token 成本",
+      "metrics": [
+        "50%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-b93006774cbdd4b2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-b93006774cbdd4b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-b93006774cbdd4b2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-b93006774cbdd4b2",
+        "EN-3f695275856a7fad"
+      ],
+      "entityNames": [
+        "Writer",
+        "Palmyra X6"
+      ],
+      "productName": "Palmyra X6",
+      "products": [
+        {
+          "name": "Palmyra X6",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/13/writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-costs",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-1205a939d3748b7e",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-12",
+      "updatedDate": "2026-08-14",
+      "eventType": "service_change",
+      "eventTypeLabel": "服务变更",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Twitch 主播现可选择退出亚马逊 AI 训练",
+      "originalTitle": "Twitch streamers can now opt out from training Amazon’s AI",
+      "subject": "Twitch",
+      "action": "service_change",
+      "object": "opt out of allowing their content to be used to train Amazon’s generative AI models",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-e32ac33fa53a3db6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-e32ac33fa53a3db6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-e32ac33fa53a3db6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-e32ac33fa53a3db6",
+        "EN-cbc62794911ff31b"
+      ],
+      "entityNames": [
+        "Twitch",
+        "Amazon"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/tech/979112/twitch-streamers-can-now-opt-out-from-training-amazons-ai",
+      "publisher": "The Verge AI"
+    },
+    {
       "id": "EV-a6c4f879a58ababa",
       "dataDate": "2026-08-13",
       "date": "2026-08-12",
@@ -19625,142 +20784,17 @@
       "publisher": "propakistani.pk"
     },
     {
-      "id": "EV-5c30f52112d92491",
-      "dataDate": "2026-08-12",
-      "date": "2026-08-11",
-      "updatedDate": "2026-08-12",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "派早报：Meta 发布开源本地 AI 智能体大模型 Muse Glimmer、阿里千问开放平台上线等",
-      "originalTitle": "",
-      "subject": "派早报：Meta",
-      "action": "发布",
-      "object": "开源本地 AI 智能体大模型 Muse Glimmer、阿里千问开放平台上线等",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "model",
-            "name": "模型",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-478676438ee161a3",
-        "EN-ea3bd73e2b506e00",
-        "EN-047364b9be67f665",
-        "EN-f4bc2c89599f5449"
-      ],
-      "entityNames": [
-        "派早报",
-        "Meta",
-        "Alibaba",
-        "Muse Glimmer"
-      ],
-      "productName": "Muse Glimmer",
-      "products": [
-        {
-          "name": "Muse Glimmer",
-          "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
-        }
-      ],
-      "sourceUrl": "https://sspai.com/post/113301",
-      "publisher": "少数派"
-    },
-    {
       "id": "EV-c7d0b810ac3b3d4e",
-      "dataDate": "2026-08-12",
+      "dataDate": "2026-08-14",
       "date": "2026-08-11",
-      "updatedDate": "2026-08-12",
+      "updatedDate": "2026-08-14",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "IBM与Together AI签署多年协议，利用IBM Cloud上的NVIDIA AI基础设施扩展开源AI推理 - 2026年8月11日",
+      "title": "IBM与Together AI签署多年协议，在IBM Cloud上利用NVIDIA AI基础设施扩展开源AI推理 - 2026年8月11日",
       "originalTitle": "IBM and Together AI Sign Multi-Year Agreement to Scale Open-Source AI Inference with NVIDIA AI Infrastructure on IBM Cloud - Aug 11, 2026",
       "subject": "IBM and Together AI Sign Multi-Year Agreement to Scale",
       "action": "Open-Source",
@@ -19979,6 +21013,131 @@
       ],
       "sourceUrl": "https://newsroom.ibm.com/2026-08-11-IBM-and-Together-AI-Sign-Multi-Year-Agreement-to-Scale-Open-Source-AI-Inference-with-NVIDIA-AI-Infrastructure-on-IBM-Cloud",
       "publisher": "newsroom.ibm.com"
+    },
+    {
+      "id": "EV-5c30f52112d92491",
+      "dataDate": "2026-08-12",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-12",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "派早报：Meta 发布开源本地 AI 智能体大模型 Muse Glimmer、阿里千问开放平台上线等",
+      "originalTitle": "",
+      "subject": "派早报：Meta",
+      "action": "发布",
+      "object": "开源本地 AI 智能体大模型 Muse Glimmer、阿里千问开放平台上线等",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-478676438ee161a3",
+        "EN-ea3bd73e2b506e00",
+        "EN-047364b9be67f665",
+        "EN-f4bc2c89599f5449"
+      ],
+      "entityNames": [
+        "派早报",
+        "Meta",
+        "Alibaba",
+        "Muse Glimmer"
+      ],
+      "productName": "Muse Glimmer",
+      "products": [
+        {
+          "name": "Muse Glimmer",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Meta"
+          ]
+        }
+      ],
+      "sourceUrl": "https://sspai.com/post/113301",
+      "publisher": "少数派"
     },
     {
       "id": "EV-f4b38b9778fca8ce",
@@ -38154,6 +39313,7 @@
         "EV-b150af93042566a6",
         "EV-0e3f748f87f5892a",
         "EV-8a2d8ebbd700c787",
+        "EV-d2247eeac1478994",
         "EV-ad8e1754463695fd",
         "EV-acb2087779a8ea3c",
         "EV-b334f46b11a68045",
@@ -38174,6 +39334,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-software_development",
         "TX-industry-manufacturing",
@@ -38182,18 +39343,17 @@
         "TX-use_case-physical_automation",
         "TX-product_form-ai_compute_system",
         "TX-product_form-robotic_system",
-        "TX-technology-embodied_ai",
         "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d",
         "EN-45c52af0feb0f285",
         "EN-dc9993227a515201",
-        "EN-c70eca6b0f88f44d",
         "EN-147b4d06ea998b70",
         "EN-630d75372b4d1eb5"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-6861f63c27eb0ada",
@@ -38487,9 +39647,7 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -38516,8 +39674,10 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-0121f0a9e9a975ec",
         "EV-49119ae718691877",
         "EV-d84f24c8c72e7e47",
+        "EV-3be237929dc7a07b",
         "EV-b3ef1eed47191c55",
         "EV-83d022f89ba29209",
         "EV-5bbc509a032b8309",
@@ -38663,6 +39823,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
@@ -38688,7 +39849,6 @@
         "TX-product_form-robotic_system",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
-        "TX-technology-embodied_ai",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -38702,31 +39862,24 @@
       "relatedEntityIds": [
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
-        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
-        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
-        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-171fa23d27b5894b"
+        "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-7209ec6f68ac0bcd",
@@ -38913,7 +40066,12 @@
         "EV-d4d7b019ff0015df",
         "EV-27b69ea604475b72",
         "EV-f8c3a83d883c9b22",
+        "EV-0121f0a9e9a975ec",
+        "EV-eda9fcba2f9fe358",
         "EV-3664fd6826c319bb",
+        "EV-7b4c53084828d7e8",
+        "EV-3fb3e2730da143f4",
+        "EV-b8fbfa3405d10bb4",
         "EV-088870c111b4e968",
         "EV-ef8ff7b3f76f140a",
         "EV-6ce6bebf0d6408d9",
@@ -38947,6 +40105,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
@@ -38961,7 +40120,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-dc8a5a5bf80909de",
@@ -39118,6 +40277,7 @@
         "EV-53f4f2a34b3ce1b4",
         "EV-ec2e421d0e18be9b",
         "EV-c0a65877001ed413",
+        "EV-1205a939d3748b7e",
         "EV-303b418c63895ba6",
         "EV-30749250196dd507",
         "EV-43976be427aefb52",
@@ -39160,7 +40320,7 @@
         "EN-7d1507284a5757ca"
       ],
       "firstSeen": "2023-11-28",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-11507a0e2f5e69d5",
@@ -39369,6 +40529,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-f5dd6dec49ad83aa",
         "EV-c89018d79b3d25bd",
         "EV-136b2edc9b9f3be8",
         "EV-d7a7244d620a2142",
@@ -39394,6 +40555,7 @@
         "EV-1abf0d076d30ec6d",
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
+        "EV-ebe3321efdf8023e",
         "EV-924d196a2412006f",
         "EV-7dcbf6eab4339b22",
         "EV-c25adb1398842ac9",
@@ -39411,6 +40573,8 @@
         "EV-3a704c40204ecfd9",
         "EV-94e0afb44c320c99",
         "EV-777eb5b7783b71fb",
+        "EV-d2247eeac1478994",
+        "EV-d04d03b37046f0ad",
         "EV-c4cf8b6eedf31ad2",
         "EV-f84894a567752c40",
         "EV-5d185ac33faedb68",
@@ -39436,6 +40600,8 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-397a17aa878564c4",
+        "EV-c9ca5ee6f9c0a600",
         "EV-875b31b96ff689df",
         "EV-0ad3854d95038ea3",
         "EV-2868ff08777b5de9",
@@ -39603,6 +40769,8 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-cdc6611d6b115cab",
+        "EV-3343be31faab2cce",
         "EV-f0dcc60444b56245",
         "EV-649481503cdb7736",
         "EV-46254bfc37b846f5",
@@ -39697,13 +40865,14 @@
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
+        "EN-240389f4b730bad4",
+        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-9f15bb7e29e191eb",
         "EN-fa12a0c13e906f43",
         "EN-cb4754c48f8023d0",
         "EN-830abc32d2a443c5",
-        "EN-240389f4b730bad4",
         "EN-8d4321d936320802",
         "EN-7d3194f79e645c42",
         "EN-729324072d368379",
@@ -39713,7 +40882,6 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
-        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -39723,7 +40891,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-b5251b35f15bedc4",
@@ -39936,6 +41104,38 @@
       "lastSeen": "2026-07-29"
     },
     {
+      "id": "EN-29b9f0cae32e7a8a",
+      "name": "L&T",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0121f0a9e9a975ec"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-target_user-developer",
+        "TX-industry-manufacturing",
+        "TX-target_user-researcher",
+        "TX-product_form-model",
+        "TX-product_form-chip_accelerator",
+        "TX-target_user-business_user",
+        "TX-product_form-ai_infrastructure_software",
+        "TX-product_form-compute_cloud_service",
+        "TX-product_form-ai_compute_system",
+        "TX-technology-fine_tuning",
+        "TX-technology-open_weights"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-14",
+      "lastSeen": "2026-08-14"
+    },
+    {
       "id": "EN-e9fc4f156e36f6aa",
       "name": "Alibaba Cloud",
       "entityType": "organization_candidate",
@@ -40139,6 +41339,59 @@
       "lastSeen": "2026-06-07"
     },
     {
+      "id": "EN-916a98f0fa2a39af",
+      "name": "IBM",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-32d7c52f89d74e88",
+        "EV-ad40755ca624afe7",
+        "EV-49119ae718691877",
+        "EV-bcb74b02448b7d78",
+        "EV-df2357fc3c3b4f5e",
+        "EV-bbc1042dcf5ad317",
+        "EV-129ffa6be41bb485",
+        "EV-d04d03b37046f0ad",
+        "EV-6272444f30281858",
+        "EV-b95539d17772a4ce",
+        "EV-c7d0b810ac3b3d4e",
+        "EV-37b18c0341c66c08",
+        "EV-5bc7efca0bc7fec0",
+        "EV-9fb08b68f301eb88",
+        "EV-347d250e2769de9a",
+        "EV-7449d239223d4928",
+        "EV-0eef30387327e73f",
+        "EV-2f56b99f72ad6c4f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-software_development",
+        "TX-industry-financial_services",
+        "TX-product_form-enterprise_software_platform",
+        "TX-product_form-model",
+        "TX-industry-telecommunications",
+        "TX-industry-retail_ecommerce",
+        "TX-use_case-security_operations",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-technology-fine_tuning",
+        "TX-technology-model_context_protocol",
+        "TX-technology-tool_use",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-dc6c28a2123e8efb"
+      ],
+      "firstSeen": "2026-05-15",
+      "lastSeen": "2026-08-14"
+    },
+    {
       "id": "EN-87c730bc4f32459e",
       "name": "影石 GO Ultra",
       "entityType": "organization_candidate",
@@ -40266,6 +41519,49 @@
       ],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-07-29"
+    },
+    {
+      "id": "EN-b93006774cbdd4b2",
+      "name": "Writer",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-8654d13ff4cf8a08"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-14"
+    },
+    {
+      "id": "EN-e32ac33fa53a3db6",
+      "name": "Twitch",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-1205a939d3748b7e",
+        "EV-75b1a6a12ce2f03f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-12",
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-83eb1cb31148698f",
@@ -40429,8 +41725,10 @@
       ],
       "eventIds": [
         "EV-df8954acf9a13848",
+        "EV-f5dd6dec49ad83aa",
         "EV-00f3271df4707d7c",
         "EV-abf716c9f996dbcf",
+        "EV-c1295b8f58024ff6",
         "EV-9f36aac82bad6780",
         "EV-842f920ef198c55e",
         "EV-81a37a2365624b42",
@@ -40465,6 +41763,8 @@
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
+        "EV-0121f0a9e9a975ec",
+        "EV-eda9fcba2f9fe358",
         "EV-3c99948342b171fa",
         "EV-492029b381c06283",
         "EV-dda9429d76897a3d",
@@ -40488,6 +41788,8 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-129ffa6be41bb485",
+        "EV-d04d03b37046f0ad",
         "EV-de6c27c1dac18a2a",
         "EV-6cea35f065f0ee9e",
         "EV-92be9fa58b1ee19f",
@@ -40510,6 +41812,10 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-792c0273991852ae",
+        "EV-397a17aa878564c4",
+        "EV-c9ca5ee6f9c0a600",
+        "EV-ed965d19d6d12e9f",
         "EV-2868ff08777b5de9",
         "EV-96745eb893ac0460",
         "EV-ab7dd515891566ab",
@@ -40766,6 +42072,7 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-916a98f0fa2a39af",
         "EN-d1ad14d4ad57d207",
         "EN-7839fb10a8f14c70",
         "EN-968e2d5b08687bf4",
@@ -40790,7 +42097,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-047364b9be67f665",
@@ -41106,9 +42413,7 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -41153,7 +42458,12 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-7d684605d08584e2",
+        "EV-c92db935a2cef0d6",
+        "EV-1e2e3847279004dc",
+        "EV-b2475f989b6c05cc",
         "EV-875b31b96ff689df",
+        "EV-2554daa91d2b3ea4",
         "EV-0ad3854d95038ea3",
         "EV-20a015183f238087",
         "EV-3d4709a8d623b13e",
@@ -41292,6 +42602,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
@@ -41311,26 +42622,22 @@
         "TX-product_form-end_user_application",
         "TX-technology-code_generation",
         "TX-technology-computer_use",
-        "TX-technology-embodied_ai",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-technology-image_generation",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
-        "EN-307557d99a7eb726",
         "EN-8d323d8bba783aa3",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
-        "EN-31055a8d9856fce4",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
-        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -41338,7 +42645,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-593d0361124f348f",
@@ -41537,6 +42844,7 @@
       ],
       "eventIds": [
         "EV-55e7c286e95be405",
+        "EV-c1295b8f58024ff6",
         "EV-792e2a2b3e98399f",
         "EV-3daefecd0453631a",
         "EV-edcb66d0401cfb8f",
@@ -41584,7 +42892,7 @@
         "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-165753d8649b9122",
@@ -41787,9 +43095,7 @@
       "classificationRefs": [
         "TX-product_form-model"
       ],
-      "relatedEntityIds": [
-        "EN-8d4321d936320802"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-07-03",
       "lastSeen": "2026-07-04"
     },
@@ -41814,17 +43120,20 @@
         "EV-ef7346378fcf9746",
         "EV-4da18f97771852a9",
         "EV-f949fd95df58d42d",
+        "EV-c3231f2ea0ae1ebc",
         "EV-fcbd97e1f30c95e3",
         "EV-5012364af7480121",
         "EV-8a91e14f37d32b4d",
         "EV-31782f0824ae1db1",
         "EV-3c51bcb5e99d2b68",
+        "EV-cdc6611d6b115cab",
         "EV-07388b042db1bad0",
         "EV-8973f8148205ed35",
         "EV-ecfc552af7344d65"
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-use_case-software_development",
         "TX-product_form-model",
         "TX-industry-aerospace_defense",
@@ -41843,7 +43152,7 @@
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-05-21",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-cd6362472aea60ef",
@@ -42092,8 +43401,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
-        "TX-technology-embodied_ai"
+        "TX-technology-embodied_ai",
+        "TX-product_form-model"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-17",
@@ -42267,6 +43576,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
+        "谷歌 DeepMind",
         "DeepMind"
       ],
       "verificationStatus": "verified",
@@ -42282,6 +43592,8 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
+        "EV-397a17aa878564c4",
+        "EV-53757cad2cfd074d",
         "EV-0eefbf2e50b67a5e",
         "EV-e234a2e2418ebdf1",
         "EV-eb12fb9dd08e5aad",
@@ -42313,6 +43625,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-use_case-software_development",
         "TX-use_case-research_discovery",
         "TX-product_form-model",
@@ -42322,7 +43635,6 @@
         "TX-use_case-security_operations",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
-        "TX-technology-embodied_ai",
         "TX-technology-vision_language",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -42339,7 +43651,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-6e898ad0522fca30",
@@ -42480,10 +43792,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-product_form-model",
         "TX-use_case-physical_automation",
-        "TX-product_form-robotic_system",
-        "TX-technology-embodied_ai"
+        "TX-product_form-robotic_system"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-09",
@@ -42690,27 +44002,6 @@
       "lastSeen": "2026-07-23"
     },
     {
-      "id": "EN-e32ac33fa53a3db6",
-      "name": "Twitch",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-75b1a6a12ce2f03f"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-product_form-model"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-08-12",
-      "lastSeen": "2026-08-13"
-    },
-    {
       "id": "EN-5f4db04ac40d991b",
       "name": "MirrorCode",
       "entityType": "organization_candidate",
@@ -42869,6 +44160,55 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-ed781e27a7b9458e",
+      "eventId": "EV-129ffa6be41bb485",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "IBM",
+      "vendor": "OpenAI",
+      "industry": "未披露",
+      "useCase": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR.",
+        "The companies plan to help clients modernize legacy applications and accelerate software development by bringing together OpenAI Codex and ChatGPT Work with IBM&rsquo;s industry, technology and domain expertise, including integration with IBM Consulting Advantage. The collaboration is designed to help organizations simplify engineering processes and speed the delivery of new digital products and services."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations",
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-7d3194f79e645c42"
+      ]
+    },
     {
       "id": "FDE-0193a6afd26db7ae",
       "eventId": "EV-d2a623e8eef1f61d",
@@ -43265,6 +44605,72 @@
   ],
   "hardware": [
     {
+      "id": "HW-304c6370cc157449",
+      "eventId": "EV-0121f0a9e9a975ec",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-14",
+      "title": "L&T在钦奈为Together AI部署印度首个10,000-GPU统一AI集群",
+      "hardwareType": "gpu",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "data_center",
+      "supplier": "NVIDIA",
+      "customer": "L&T",
+      "processNode": "NVIDIA B300 \"Blackwell Ultra\"",
+      "capacity": 10000,
+      "capacityUnit": "GPUs",
+      "site": "Vyoma.AI's Chennai data center campus",
+      "region": "United States",
+      "contractValue": "$1.05 t",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://techtimes.com/articles/324334/20260813/lt-deploys-indias-first-10000-gpu-unified-ai-cluster-together-ai-chennai.htm",
+      "sourceName": "techtimes.com",
+      "sourceDate": "2026-08-14",
+      "entityIds": [
+        "EN-29b9f0cae32e7a8a",
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00",
+        "EN-6f7ac1823da81d2e",
+        "EN-e1517be14d06cdb7",
+        "EN-7d3194f79e645c42"
+      ]
+    },
+    {
       "id": "HW-25eea5677838fb54",
       "eventId": "EV-a6c4f879a58ababa",
       "dataDate": "2026-08-13",
@@ -43575,6 +44981,67 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-5bc72342f3066892",
+      "implementationKey": "5bc72342f3066892",
+      "eventId": "EV-129ffa6be41bb485",
+      "eventIds": [
+        "EV-129ffa6be41bb485"
+      ],
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "title": "IBM × OpenAI：OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "stage": "procurement",
+      "stageLabel": "procurement",
+      "customer": "IBM",
+      "vendor": "OpenAI",
+      "industry": "未披露",
+      "useCase": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "workflow": "未披露",
+      "systems": [
+        "ChatGPT"
+      ],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.625,
+      "completenessPercent": 63,
+      "missingFields": [
+        "industry",
+        "workflow",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-52e02e22bcd8cd7f",
+          "type": "procurement",
+          "stage": "procurement",
+          "date": "2026-08-13",
+          "dataDate": "2026-08-14",
+          "eventId": "EV-129ffa6be41bb485",
+          "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations",
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-7d3194f79e645c42"
+      ]
+    },
+    {
       "id": "FDED-0d066a83ddb06fbc",
       "implementationKey": "0d066a83ddb06fbc",
       "eventId": "EV-d2a623e8eef1f61d",
@@ -43714,6 +45181,318 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-1e90510260afb7ed",
+      "snapshotKey": "1e90510260afb7ed",
+      "snapshotId": "HWS-af0b8f4169fd802a",
+      "eventId": "EV-c7d0b810ac3b3d4e",
+      "eventIds": [
+        "EV-c7d0b810ac3b3d4e"
+      ],
+      "dataDate": "2026-08-14",
+      "date": "2026-08-14",
+      "title": "AI Inference / AI Infrastructure / Aug 11",
+      "subject": "IBM",
+      "productNames": [
+        "AI Inference",
+        "AI Infrastructure",
+        "Aug 11"
+      ],
+      "hardwareType": "data_center / gpu",
+      "factTypes": [
+        "shipment_deployment",
+        "product"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "240",
+          "unit": "$M",
+          "fact_ref": "HWF-e0e81afd3f6b5ca4"
+        },
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-e304a08469d747b1"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-14",
+          "previousDate": "2026-08-12",
+          "snapshotId": "HWS-af0b8f4169fd802a",
+          "previousSnapshotId": "HWS-b144d4a901bfc4c0",
+          "changedFacts": [
+            "shipment_deployment",
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-14",
+          "hardware_fact_id": "HWF-e0e81afd3f6b5ca4",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-11T00:00:00.000Z",
+          "subject_entity_id": "EN-916a98f0fa2a39af",
+          "subject_name": "IBM",
+          "product_entity_ids": [
+            "EN-ae11c0abf6288776",
+            "EN-550f6ed5f71d0edc",
+            "EN-7f8f379674a95169"
+          ],
+          "product_names": [
+            "AI Inference",
+            "AI Infrastructure",
+            "Aug 11"
+          ],
+          "component_type": "data_center",
+          "metric_value": "240",
+          "unit": "$M",
+          "source_quote": "ARMONK, N.Y. and SAN FRANCISCO , Aug. 11, 2026 / PRNewswire / -- IBM (NYSE: IBM ) announced a collaboration with Together AI to deliver IBM and NVIDIA AI infrastructure. Under a multi-year $240M agreement between IBM and Together AI, IBM is positioned to deploy a large cluster of NVIDIA HGX B300 systems on IBM Cloud with expected availability in Q1 2027. Together AI will use this cluster to provide open-source model inference. This deployment is the first dedicated, large-scale cluster built for inference on IBM Cloud using HGX B300 systems and NVIDIA Spectrum - X TM Ethernet networking. According to NVIDIA, it is built to deliver 30x more AI factory output compared to prior generations.",
+          "event_refs": [
+            "EV-c7d0b810ac3b3d4e"
+          ],
+          "claim_ref": "CL-b88e132a00cc769c",
+          "source_refs": [
+            "SA-1917d0c1d2970c86"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-14/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-14",
+          "hardware_fact_id": "HWF-e304a08469d747b1",
+          "fact_type": "product",
+          "observed_at": "2026-08-11T00:00:00.000Z",
+          "subject_entity_id": "EN-916a98f0fa2a39af",
+          "subject_name": "IBM",
+          "product_entity_ids": [
+            "EN-ae11c0abf6288776",
+            "EN-550f6ed5f71d0edc",
+            "EN-7f8f379674a95169"
+          ],
+          "product_names": [
+            "AI Inference",
+            "AI Infrastructure",
+            "Aug 11"
+          ],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Together AI selected IBM with NVIDIA because of their innovative product roadmaps and their ability to deliver GPU capacity at the pace required for rapid AI scaling and lowest token cost. Building on IBM's expertise in delivering enterprise-grade cloud capabilities, this collaboration aims to help Together AI to continue its expansion into the enterprise space while making open-source AI more accessible to developers and enterprises around the world.",
+          "event_refs": [
+            "EV-c7d0b810ac3b3d4e"
+          ],
+          "claim_ref": "CL-c76ddec98fd63799",
+          "source_refs": [
+            "SA-1917d0c1d2970c86"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-14/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newsroom.ibm.com/2026-08-11-IBM-and-Together-AI-Sign-Multi-Year-Agreement-to-Scale-Open-Source-AI-Inference-with-NVIDIA-AI-Infrastructure-on-IBM-Cloud",
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-8d4321d936320802",
+        "EN-ae11c0abf6288776",
+        "EN-550f6ed5f71d0edc",
+        "EN-7f8f379674a95169"
+      ]
+    },
+    {
+      "id": "HWC-aa1ceb06f4e3c084",
+      "snapshotKey": "aa1ceb06f4e3c084",
+      "snapshotId": "HWS-bfc45ffacb8ee7a7",
+      "eventId": "EV-0121f0a9e9a975ec",
+      "eventIds": [
+        "EV-0121f0a9e9a975ec"
+      ],
+      "dataDate": "2026-08-14",
+      "date": "2026-08-14",
+      "title": "L&T",
+      "subject": "L&T",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-2c36ad311204b32e"
+        }
+      },
+      "factCount": 4,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-14",
+          "hardware_fact_id": "HWF-2d44db31b689eaa9",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-13T16:26:39.000Z",
+          "subject_entity_id": "EN-29b9f0cae32e7a8a",
+          "subject_name": "L&T",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "L&T Deploys India’s First 10,000-GPU Unified AI Cluster for Together AI in Chennai",
+          "event_refs": [
+            "EV-0121f0a9e9a975ec"
+          ],
+          "claim_ref": "CL-0c871383bddd7d1b",
+          "source_refs": [
+            "SA-d8d5a553062a5141"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-14/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-14",
+          "hardware_fact_id": "HWF-a25ecea8272088af",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-13T16:26:39.000Z",
+          "subject_entity_id": "EN-29b9f0cae32e7a8a",
+          "subject_name": "L&T",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "1.05",
+          "unit": "$t",
+          "source_quote": "India AI data center deployment reaches a new frontier: L&T has secured a $1.05 to $1.57 billion contract to deploy 10,000 NVIDIA B300 Blackwell Ultra GPUs in a single NVLink-connected cluster at its...",
+          "event_refs": [
+            "EV-0121f0a9e9a975ec"
+          ],
+          "claim_ref": "CL-6e8fc9dee328e20c",
+          "source_refs": [
+            "SA-d8d5a553062a5141"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-14/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-14",
+          "hardware_fact_id": "HWF-a1db84759a794acf",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-13T16:26:39.000Z",
+          "subject_entity_id": "EN-29b9f0cae32e7a8a",
+          "subject_name": "L&T",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "10000",
+          "unit": "GPUs",
+          "source_quote": "India's largest engineering conglomerate, Larsen & Toubro, announced today that it has secured a contract worth ₹10,000 crore to ₹15,000 crore (approximately $1.05 billion to $1.57 billion USD) to deploy 10,000 NVIDIA B300 \"Blackwell Ultra\" GPUs in a single interconnected cluster at Vyoma.AI's Chennai data center campus. The customer is Together AI, the San Francisco-based open-source AI cloud provider that crossed $1.15 billion in bookings earlier this year. What makes this deal different from every prior India AI data center announcement is not the dollar figure &mdash; it is the word \"single-cluster.\"A distributed deployment of 10,000 GPUs spread across independently networked servers and a unified single-cluster of 10,000 GPUs connected by a shared NVLink fabric are not the same machine. They are not even close to the same machine. The distinction is the entire editorial point of this article.What \"Single-Cluster\" Actually Means: Architecture, Bandwidth, and What It UnlocksWhen NVIDIA ships the B300 in its DGX B300 server configuration, it packs eight B300 SXM GPUs onto a single baseboard. Those eight GPUs connect to each other through NVLink 5, NVIDIA's proprietary fifth-generation interconnect, which delivers 1.8 terabytes per second of bidirectional bandwidth per GPU. A NVSwitch chip inside the chassis provides full all-to-all connectivity &mdash; any GPU can communicate with any other GPU at the full NVLink bandwidth without going through a slower external network. The complete NVIDIA DGX B300 specifications confirm a total system bandwidth of 14.4 terabytes per second across the eight-GPU node.Now multiply that by 1,250 servers &mdash; the approximate number of DGX B300 nodes required to reach 10,000 GPUs &mdash; and connect them using high-speed inter-node networking. The result is a compute fabric in which all 10,000 GPUs are addressable as a single unified system: jobs can be scheduled across the entire cluster as if it were one giant accelerator, because the NVLink interconnect architecture was designed explicitly to allow that. This is what \"single-cluster\" means, and it is what a disaggregated arrangement of the same GPUs &mdash; spread across separate deployments, different buildings, or independent cloud regions &mdash; cannot replicate.The engineering reason this matters is gradient synchronization. Training a large AI model requires all GPUs to periodically share updated weight gradients through an operation called all-reduce. In a small cluster, this operation is fast. In a large cluster, it becomes the dominant bottleneck &mdash; if the interconnect fabric cannot move gradient data across all nodes quickly enough, GPUs spend more time waiting than computing, and the scaling efficiency of additional hardware collapses. The 14.4 terabytes per second NVLink bandwidth within a DGX node is orders of magnitude faster than even InfiniBand networking between separate servers. The single-cluster designation is NVIDIA's claim that the architecture allows this scaling to work across the full fleet rather than degrading at node boundaries.The practical consequence: a 10,000-GPU single NVLink cluster can run multi-node fine-tuning jobs and large-scale training runs that are simply not feasible on the same number of GPUs in a disaggregated arrangement. Prior India data center announcements &mdash; including Meta's 168-megawatt campus at Jamnagar, Gujarat &mdash; described power capacity and general-purpose compute infrastructure. This one describes a specific interconnect architecture and the class of workloads it enables.The B300 Itself: Memory, Bandwidth, and Why the Upgrade From H100 Is Non-LinearThe NVIDIA B300 &mdash; formally the Blackwell Ultra GPU &mdash; is NVIDIA's current volume-production flagship for data center AI inference and training. A single B300 GPU carries 288 gigabytes of HBM3e memory at 8 terabytes per second of memory bandwidth. An eight-GPU DGX B300 node accordingly holds 2.3 terabytes of total fast GPU memory, enough to run a 405-billion parameter model &mdash; such as Meta's Llama 3.1 405B &mdash; in full 16-bit precision on a single server without splitting the model across nodes. That memory ceiling matters for the agentic and multi-step reasoning workloads Together AI's platform increasingly serves.The performance gap over the previous generation is non-linear. Independent benchmarks from SemiAnalysis InferenceX &mdash; an open-source reproducible benchmark suite running verified results nightly on actual production hardware &mdash; show the B300 delivering more than 4,000 tokens per second per GPU on DeepSeek R1 at a 38 tokens-per-second-per-user latency target, compared to 276 tokens per second per GPU on the H100 &mdash; a roughly 14-fold throughput improvement for that workload. The B300 vs H100 benchmark data also shows cost advantage is larger still: B300 produces tokens at approximately $0.16 per million versus $1.32 per million for the H100 at the same latency, a more than 700 percent cost improvement.At the rack scale, NVIDIA's GB300 NVL72 systems &mdash; 72 Blackwell Ultra GPUs in a single liquid-cooled rack &mdash; deliver up to 50 times higher throughput per megawatt and 35 times lower cost per token compared to NVIDIA's prior Hopper H100 platform for agentic workloads, according to SemiAnalysis InferenceX data cited by NVIDIA. These figures are for the rack-scale NVL72 configuration; individual DGX B300 server performance scales accordingly.Each B300 GPU operates at a thermal design power of 1,400 watts &mdash; nearly double the H100's 700 watts. At 10,000 GPUs, that totals up to 14 megawatts of GPU power alone, before server overhead, networking, and cooling loads are counted. Running this cluster requires purpose-built liquid cooling infrastructure; standard air-cooled data centers cannot manage B300 density at this scale. Vyoma's Chennai campus is designed for 250 megawatts in Phase 1 with 150 MVA of power infrastructure already in place &mdash; the physical plant was engineered for exactly this class of hardware.Together AI: Why a US AI Company Chose India for a Frontier ClusterTogether AI is not a general cloud provider. Founded in 2022 in San Francisco, the company runs an inference and training platform for open-weight AI models &mdash; DeepSeek, MiniMax, Kimi, GLM, and dozens of others &mdash; through an API compatible with OpenAI's interface. The platform processes 400 trillion tokens monthly for developers and enterprise customers. Together AI does not build its own foundation models; its value is the infrastructure that makes other organizations' open-source models cheaper and faster to run than proprietary alternatives.The Chennai cluster is part of a rapid global expansion. Just two days before the L&T announcement, Together AI and IBM disclosed a $240 million multi-year agreement under which IBM Cloud will deploy a large cluster of NVIDIA HGX B300 systems to serve Together AI's inference platform, with availability expected in the first quarter of 2027. Together AI closed an $800 million Series C on July 1, 2026, at an $8.3 billion valuation, with Aramco Ventures as lead investor and NVIDIA among the participants. Together AI CEO Vipul Ved Prakash has described the company's infrastructure buildout as \"the biggest infrastructure build-out in human history.\"The India decision reflects three converging factors that make Chennai specifically attractive for the platform's expansion. First, India's Digital Personal Data Protection Act of 2023, whose implementing rules were finalized in November 2025, creates meaningful compliance incentives for enterprises that can process Indian user data within the country. Indian enterprise customers using Together AI's inference from a Chennai cluster operate under a materially simpler regulatory posture than those routing workloads to US-based data centers. Second, the cost of power, land, and infrastructure in India remains significantly lower than in the United States or Europe, where data center power costs have surged alongside the GPU buildout. Third, India's developer community &mdash; the second-largest contributor to GitHub AI projects globally, according to GitHub's annual developer data &mdash; represents a large and growing demand base for the inference services Together AI offers.L&T's Corporate Architecture for the AI EraThe deal is executed through a newly built corporate structure. In June 2026, Vyoma.AI &mdash; L&T's data center and cloud services subsidiary &mdash; incorporated a wholly owned entity called LTN Compute Private Limited to build out AI compute infrastructure and provide technology-enabled services. LTN Compute is the operating vehicle through which L&T is formally entering what the company calls the \"AI Factory\" business: not just constructing the buildings that house data centers, but owning, operating, and monetizing the GPU infrastructure inside them.L&T separately agreed earlier this week to transfer its data center business to Vyoma.AI for ₹1,400 crore (approximately $147 million USD), consolidating the infrastructure business under Vyoma as its dedicated vehicle. L&T Chairman and Managing Director S N Subrahmanyan framed the Chennai deal in terms of the company's broader infrastructure ambitions: \"Artificial intelligence is becoming foundational to every industry and AI factories will power this transformation. Our deployment of an Nvidia B300 AI factory for Together AI marks a significant milestone in L&T's gigawatt AI infrastructure mission.\"L&T has separately established a broader partnership with NVIDIA to develop gigawatt-scale AI infrastructure across India, including plans to scale GPU clusters at the Chennai campus to 30 megawatts and build a new 40-megawatt facility in Mumbai. The Together AI contract is the first large, signed deployment that turns those plans into hardware.India's AI Compute Race: Where the Chennai Deal FitsIndia's national AI compute program, the IndiaAI Mission, was approved by Cabinet in March 2024 with a funding outlay of ₹10,371 crore (approximately $1.09 billion USD) over five years. As of mid-2026, the program has deployed approximately 34,000 GPUs, accessible to startups, academic researchers, and government agencies at subsidized rates of around ₹65 per GPU-hour (approximately $0.68 USD per GPU-hour). Officials have set a target of 100,000 public GPUs by December 2026, with national GPU capacity &mdash; including private deployments &mdash; expected to exceed 200,000 by year-end.The L&T-Together AI deal, at 10,000 B300 GPUs, represents roughly 29 percent of the IndiaAI Mission's entire public target in a single private deployment. More significantly, B300 GPUs are not equivalent to H100s on a one-to-one basis: the per-GPU performance advantage means 10,000 B300s perform a substantially larger volume of inference work than 10,000 H100s would. The effective compute contribution of this single cluster to India's national AI capacity is materially larger than the raw GPU count suggests.Chennai's emergence as a focal point for this investment is deliberate. The city ranks second among Indian data center markets, contributing approximately 21 percent of the country's total data center capacity, according to Blackridge Research. Equinix opened its Chennai data center in September 2025, specifically citing the city's position near anticipated submarine cable landing sites. The L&T campus at Vyoma operates in the same geography, with a gigawatt-scale site whose Phase 1 capacity is 250 megawatts.Global hyperscalers have made separate India commitments: Microsoft and Amazon targeting $52.5 billion in Indian AI and digital infrastructure; Google announcing a $15 billion AI data hub investment; and OpenAI partnering with Tata Group for one gigawatt of capacity. What the L&T-Together AI deal adds to that picture is different in kind: a US AI cloud provider that specifically serves open-weight model inference &mdash; not proprietary models, not a general cloud &mdash; deploying its most compute-intensive cluster outside the United States in South Asia, under an Indian operating entity. The full landscape of those India hyperscaler commitments provides context for the scale of current investment.The Geography of AI Compute Is ShiftingThe deeper implication of this deal is geographic. Since frontier AI infrastructure emerged as a strategically meaningful asset class, it has been concentrated almost exclusively in the United States, Europe, and parts of East Asia. Data centers in those regions hold the vast majority of the world's most advanced AI compute &mdash; the GPU clusters capable of training and serving the models that define the current frontier of AI capability.The Together AI-L&T contract represents a structural departure from that pattern. A US AI cloud provider of significant scale &mdash; one that crossed $1.15 billion in annual bookings and serves 400 trillion monthly tokens &mdash; has chosen to anchor a portion of its global compute infrastructure in India, under an Indian operator, running the most advanced hardware NVIDIA currently ships in volume. That is not a speculative AI-infrastructure announcement. LTN Compute had not commenced business operations as recently as June 2026. It is now the operating entity behind India's largest single-cluster AI deployment.For Indian enterprise customers evaluating whether to route AI workloads to US-based inference endpoints or a domestic provider, the answer is now materially different than it was last month. The latency advantage of a Chennai cluster over a US-based endpoint &mdash; measured in tens of milliseconds for real-time inference &mdash; is substantial for the interactive and agentic applications Together AI's platform increasingly supports. Together AI has not disclosed a pricing schedule or customer-facing launch date for the Chennai cluster, but the infrastructure is being built now.Currency conversions in this article are approximate, calculated at the USD/INR exchange rate as of August 13, 2026 (approximately ₹95.43 per USD), and are subject to change.Frequently Asked QuestionsWhat is the difference between a single-cluster GPU deployment and a distributed GPU deployment?",
+          "event_refs": [
+            "EV-0121f0a9e9a975ec"
+          ],
+          "claim_ref": "CL-e355e2974a3277d6",
+          "source_refs": [
+            "SA-d8d5a553062a5141"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-14/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-14",
+          "hardware_fact_id": "HWF-2c36ad311204b32e",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-13T16:26:39.000Z",
+          "subject_entity_id": "EN-29b9f0cae32e7a8a",
+          "subject_name": "L&T",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "In a single-cluster deployment, all GPUs are addressable as a unified compute fabric through a shared high-bandwidth interconnect &mdash; in this case, NVIDIA's NVLink architecture. Any GPU in the cluster can communicate directly with any other GPU at full interconnect bandwidth, without routing through slower external networks. In a disaggregated or distributed deployment, GPUs are spread across separate servers or locations connected by standard Ethernet or InfiniBand, which offers much lower bandwidth for the all-reduce gradient-synchronization operations that large AI training runs require. A single-cluster architecture enables training jobs that scale efficiently to tens of thousands of GPUs; a distributed arrangement of the same hardware would degrade in scaling efficiency because the inter-node communication becomes the bottleneck.Why did Together AI choose India for a frontier GPU cluster, and what does this mean for enterprises routing AI workloads from South Asia?",
+          "event_refs": [
+            "EV-0121f0a9e9a975ec"
+          ],
+          "claim_ref": "CL-b4ca08e43e125344",
+          "source_refs": [
+            "SA-d8d5a553062a5141"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-14/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://techtimes.com/articles/324334/20260813/lt-deploys-indias-first-10000-gpu-unified-ai-cluster-together-ai-chennai.htm",
+      "entityIds": [
+        "EN-29b9f0cae32e7a8a",
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00",
+        "EN-6f7ac1823da81d2e",
+        "EN-e1517be14d06cdb7",
+        "EN-7d3194f79e645c42"
+      ]
+    },
+    {
       "id": "HWC-b5cf4b964e7626f8",
       "snapshotKey": "b5cf4b964e7626f8",
       "snapshotId": "HWS-9e2b0f289d6457ab",
@@ -43829,142 +45608,6 @@
         "EN-4d75aea59c4493f4",
         "EN-893e9e7af177ea6f",
         "EN-0dc96232ef8e1819"
-      ]
-    },
-    {
-      "id": "HWC-1e90510260afb7ed",
-      "snapshotKey": "1e90510260afb7ed",
-      "snapshotId": "HWS-b144d4a901bfc4c0",
-      "eventId": "EV-c7d0b810ac3b3d4e",
-      "eventIds": [
-        "EV-c7d0b810ac3b3d4e"
-      ],
-      "dataDate": "2026-08-12",
-      "date": "2026-08-12",
-      "title": "AI Inference / AI Infrastructure / Aug 11",
-      "subject": "IBM",
-      "productNames": [
-        "AI Inference",
-        "AI Infrastructure",
-        "Aug 11"
-      ],
-      "hardwareType": "data_center / gpu",
-      "factTypes": [
-        "shipment_deployment",
-        "product"
-      ],
-      "latestValues": {
-        "shipment_deployment": {
-          "metric_value": "240",
-          "unit": "$M",
-          "fact_ref": "HWF-9cbeeb2c983c4cb1"
-        },
-        "product": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-19cf0adc686822b5"
-        }
-      },
-      "factCount": 2,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [
-        {
-          "data_date": "2026-08-12",
-          "hardware_fact_id": "HWF-9cbeeb2c983c4cb1",
-          "fact_type": "shipment_deployment",
-          "observed_at": "2026-08-11T00:00:00.000Z",
-          "subject_entity_id": "EN-916a98f0fa2a39af",
-          "subject_name": "IBM",
-          "product_entity_ids": [
-            "EN-ae11c0abf6288776",
-            "EN-550f6ed5f71d0edc",
-            "EN-7f8f379674a95169"
-          ],
-          "product_names": [
-            "AI Inference",
-            "AI Infrastructure",
-            "Aug 11"
-          ],
-          "component_type": "data_center",
-          "metric_value": "240",
-          "unit": "$M",
-          "source_quote": "ARMONK, N.Y. and SAN FRANCISCO , Aug. 11, 2026 / PRNewswire / -- IBM (NYSE: IBM ) announced a collaboration with Together AI to deliver IBM and NVIDIA AI infrastructure. Under a multi-year $240M agreement between IBM and Together AI, IBM is positioned to deploy a large cluster of NVIDIA HGX B300 systems on IBM Cloud with expected availability in Q1 2027. Together AI will use this cluster to provide open-source model inference. This deployment is the first dedicated, large-scale cluster built for inference on IBM Cloud using HGX B300 systems and NVIDIA Spectrum - X TM Ethernet networking. According to NVIDIA, it is built to deliver 30x more AI factory output compared to prior generations.",
-          "event_refs": [
-            "EV-c7d0b810ac3b3d4e"
-          ],
-          "claim_ref": "CL-b231b184a65f4a65",
-          "source_refs": [
-            "SA-6f090f4104f497db"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-12/hardware-facts.json"
-        }
-      ],
-      "specificationFacts": [
-        {
-          "data_date": "2026-08-12",
-          "hardware_fact_id": "HWF-19cf0adc686822b5",
-          "fact_type": "product",
-          "observed_at": "2026-08-11T00:00:00.000Z",
-          "subject_entity_id": "EN-916a98f0fa2a39af",
-          "subject_name": "IBM",
-          "product_entity_ids": [
-            "EN-ae11c0abf6288776",
-            "EN-550f6ed5f71d0edc",
-            "EN-7f8f379674a95169"
-          ],
-          "product_names": [
-            "AI Inference",
-            "AI Infrastructure",
-            "Aug 11"
-          ],
-          "component_type": "gpu",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "Together AI selected IBM with NVIDIA because of their innovative product roadmaps and their ability to deliver GPU capacity at the pace required for rapid AI scaling and lowest token cost. Building on IBM's expertise in delivering enterprise-grade cloud capabilities, this collaboration aims to help Together AI to continue its expansion into the enterprise space while making open-source AI more accessible to developers and enterprises around the world.",
-          "event_refs": [
-            "EV-c7d0b810ac3b3d4e"
-          ],
-          "claim_ref": "CL-24a0cb23124840fe",
-          "source_refs": [
-            "SA-6f090f4104f497db"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-12/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-916a98f0fa2a39af"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "fine_tuning",
-          "name": "模型微调",
-          "entityIds": [
-            "EN-916a98f0fa2a39af"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "sourceUrl": "https://newsroom.ibm.com/2026-08-11-IBM-and-Together-AI-Sign-Multi-Year-Agreement-to-Scale-Open-Source-AI-Inference-with-NVIDIA-AI-Infrastructure-on-IBM-Cloud",
-      "entityIds": [
-        "EN-916a98f0fa2a39af",
-        "EN-8d4321d936320802",
-        "EN-ae11c0abf6288776",
-        "EN-550f6ed5f71d0edc",
-        "EN-7f8f379674a95169"
       ]
     },
     {

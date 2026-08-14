@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-13T00:26:01.951Z",
-    "latestDataDate": "2026-08-13",
-    "currentDate": "2026-08-13",
-    "eventCount": 2067,
+    "generatedAt": "2026-08-14T00:23:40.398Z",
+    "latestDataDate": "2026-08-14",
+    "currentDate": "2026-08-14",
+    "eventCount": 2102,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -33,6 +33,7 @@
       "EV-b150af93042566a6",
       "EV-0e3f748f87f5892a",
       "EV-8a2d8ebbd700c787",
+      "EV-d2247eeac1478994",
       "EV-ad8e1754463695fd",
       "EV-acb2087779a8ea3c",
       "EV-b334f46b11a68045",
@@ -53,6 +54,7 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
+      "TX-technology-embodied_ai",
       "TX-technology-agentic_execution",
       "TX-use_case-software_development",
       "TX-industry-manufacturing",
@@ -61,19 +63,19 @@
       "TX-use_case-physical_automation",
       "TX-product_form-ai_compute_system",
       "TX-product_form-robotic_system",
-      "TX-technology-embodied_ai",
       "TX-technology-human_in_loop"
     ],
     "relatedEntityIds": [
+      "EN-c70eca6b0f88f44d",
       "EN-45c52af0feb0f285",
       "EN-dc9993227a515201",
-      "EN-c70eca6b0f88f44d",
       "EN-147b4d06ea998b70",
       "EN-630d75372b4d1eb5"
     ],
     "firstSeen": "2026-05-23",
-    "lastSeen": "2026-08-08",
+    "lastSeen": "2026-08-14",
     "relationIds": [
+      "REL2-02bdd133e9353ff7",
       "REL2-94778ccfca07e1dd",
       "REL2-0f7e1be3ae6f4e69",
       "REL2-22f155352c15dcea",
@@ -102,6 +104,7 @@
         "EV-8a2d8ebbd700c787"
       ],
       "partnerships": [
+        "EV-d2247eeac1478994",
         "EV-ad8e1754463695fd",
         "EV-acb2087779a8ea3c",
         "EV-b334f46b11a68045",
@@ -128,6 +131,23 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-d2247eeac1478994",
+        "dataDate": "2026-08-14",
+        "date": "2026-08-14",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AMD推进AI 2026",
+        "displayTags": [],
+        "entityIds": [
+          "EN-240389f4b730bad4",
+          "EN-c70eca6b0f88f44d",
+          "EN-9fbf261b62c1d7c0"
+        ]
+      },
       {
         "id": "EV-a0ca934522418c0b",
         "dataDate": "2026-08-08",
@@ -1057,52 +1077,6 @@
   },
   "relatedEntities": [
     {
-      "id": "EN-45c52af0feb0f285",
-      "name": "Helios",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [
-        "Helios AI"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-243e73016576fa43",
-        "EV-563843979fb55b9b",
-        "EV-87f052d24396fdbc"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [
-        "EN-240389f4b730bad4"
-      ],
-      "firstSeen": "2026-07-23",
-      "lastSeen": "2026-07-25"
-    },
-    {
-      "id": "EN-dc9993227a515201",
-      "name": "Venice-X",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-37ff2485172cab0b"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [
-        "EN-240389f4b730bad4"
-      ],
-      "firstSeen": "2026-07-24",
-      "lastSeen": "2026-07-24"
-    },
-    {
       "id": "EN-c70eca6b0f88f44d",
       "name": "Anthropic",
       "entityType": "organization_candidate",
@@ -1113,6 +1087,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-f5dd6dec49ad83aa",
         "EV-c89018d79b3d25bd",
         "EV-136b2edc9b9f3be8",
         "EV-d7a7244d620a2142",
@@ -1138,6 +1113,7 @@
         "EV-1abf0d076d30ec6d",
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
+        "EV-ebe3321efdf8023e",
         "EV-924d196a2412006f",
         "EV-7dcbf6eab4339b22",
         "EV-c25adb1398842ac9",
@@ -1155,6 +1131,8 @@
         "EV-3a704c40204ecfd9",
         "EV-94e0afb44c320c99",
         "EV-777eb5b7783b71fb",
+        "EV-d2247eeac1478994",
+        "EV-d04d03b37046f0ad",
         "EV-c4cf8b6eedf31ad2",
         "EV-f84894a567752c40",
         "EV-5d185ac33faedb68",
@@ -1180,6 +1158,8 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-397a17aa878564c4",
+        "EV-c9ca5ee6f9c0a600",
         "EV-875b31b96ff689df",
         "EV-0ad3854d95038ea3",
         "EV-2868ff08777b5de9",
@@ -1347,6 +1327,8 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-cdc6611d6b115cab",
+        "EV-3343be31faab2cce",
         "EV-f0dcc60444b56245",
         "EV-649481503cdb7736",
         "EV-46254bfc37b846f5",
@@ -1441,13 +1423,14 @@
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
+        "EN-240389f4b730bad4",
+        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-9f15bb7e29e191eb",
         "EN-fa12a0c13e906f43",
         "EN-cb4754c48f8023d0",
         "EN-830abc32d2a443c5",
-        "EN-240389f4b730bad4",
         "EN-8d4321d936320802",
         "EN-7d3194f79e645c42",
         "EN-729324072d368379",
@@ -1457,7 +1440,6 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
-        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -1467,7 +1449,53 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
+    },
+    {
+      "id": "EN-45c52af0feb0f285",
+      "name": "Helios",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [
+        "Helios AI"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-243e73016576fa43",
+        "EV-563843979fb55b9b",
+        "EV-87f052d24396fdbc"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-240389f4b730bad4"
+      ],
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-25"
+    },
+    {
+      "id": "EN-dc9993227a515201",
+      "name": "Venice-X",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-37ff2485172cab0b"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-240389f4b730bad4"
+      ],
+      "firstSeen": "2026-07-24",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-147b4d06ea998b70",
@@ -1516,6 +1544,26 @@
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-02bdd133e9353ff7",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-240389f4b730bad4",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-c70eca6b0f88f44d",
+      "object_type": "entity",
+      "event_id": "EV-d2247eeac1478994",
+      "claim_refs": [
+        "CL-c01c6881fc08a454",
+        "CL-a0ff7947bf1aadc8",
+        "CL-42d2bbfd1f4ee6c4"
+      ],
+      "source_refs": [
+        "SA-0c51a7494cf30977"
+      ],
+      "data_date": "2026-08-14",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-94778ccfca07e1dd",
       "relationship_version": "RELATION-V2.1",
@@ -1679,6 +1727,101 @@
   ],
   "taxonomyNodes": [
     {
+      "id": "TX-technology-embodied_ai",
+      "name": "具身智能",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "embodied_ai",
+      "eventIds": [
+        "EV-1765fd690cff1cac",
+        "EV-fcf3c464260b6730",
+        "EV-6ca567f6e80c36c5",
+        "EV-ee38c30c00b2a754",
+        "EV-d3fcd1ea4d9baf47",
+        "EV-43b56d49df9a73a2",
+        "EV-1188b1585b835fe1",
+        "EV-60d58e2a1f5733f8",
+        "EV-a909450a2d1a1fe1",
+        "EV-d2409770301edc83",
+        "EV-876baa523eb93c4f",
+        "EV-cec68369662236fd",
+        "EV-5bbc509a032b8309",
+        "EV-5bfbab92b22b68f1",
+        "EV-cafe435ddd007821",
+        "EV-234ad54940674bf6",
+        "EV-b40ba79822469bc0",
+        "EV-acb2087779a8ea3c",
+        "EV-6415a58637893b34",
+        "EV-4faa2bcf2e42e60c",
+        "EV-c698da7da473b059",
+        "EV-39d56d5cef4cea80",
+        "EV-eb12fb9dd08e5aad",
+        "EV-60110525440fac47",
+        "EV-c4f8ef356373ab24",
+        "EV-7f92b7e410ed08f1",
+        "EV-b580e33cabfea980",
+        "EV-4cb7e4c371fb252e",
+        "EV-2499dc922663af7e",
+        "EV-345c8a2cc00fe8ca",
+        "EV-82b39e10391d0f3c",
+        "EV-941ba9ebdc43f20c",
+        "EV-6b51b1b6fe22c540",
+        "EV-d633676a4a7d89a3",
+        "EV-6a2f3e9a22edff64",
+        "EV-49751dfc7d2f6d6c",
+        "EV-197aac95e60671f7",
+        "EV-24a536bc53a87050",
+        "EV-e2d4132c671e3d41",
+        "EV-3f8ba5855b64dd1a",
+        "EV-08f736f61f2b46f3"
+      ],
+      "entityIds": [
+        "EN-7ef08ef63597d47c",
+        "EN-bbc41366a5a7cf78",
+        "EN-2b60b46911fc1640",
+        "EN-634537cdabd4e325",
+        "EN-bbdefa2950f49882",
+        "EN-4f34468a2f780cf5",
+        "EN-42f34ac1fcb8d44f",
+        "EN-d816a2902f879e1e",
+        "EN-4213e49804834ead",
+        "EN-2d939f5af4c3da33",
+        "EN-9a1a3ee1f50745c6",
+        "EN-36dde5de93197cee",
+        "EN-b5318593e1260f2f",
+        "EN-8d4321d936320802",
+        "EN-85f0c155e340fb63",
+        "EN-240389f4b730bad4",
+        "EN-e59f5a52b6713a29",
+        "EN-2b6e51bec93e86c1",
+        "EN-b47de584b4515427",
+        "EN-149ae7e9819a17a0",
+        "EN-02865db849986974",
+        "EN-0e6e48aba1669631",
+        "EN-754c490bd199c21a",
+        "EN-30081094f2a8c83d",
+        "EN-67f2d22514622d1b",
+        "EN-7f6333102da9e8bd",
+        "EN-89e3f0711b76932c",
+        "EN-5e1fcba4c9f1cf69"
+      ],
+      "fdeIds": [
+        "FDE-c846ebc19f50a93f",
+        "FDE-becc5964d9b5f86c",
+        "FDE-dadf0e9572889d3d",
+        "FDE-a85c538af1b093ed"
+      ],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3",
+        "HW-eb5bba1ad6c016b0",
+        "HW-155f566cfd988f5e",
+        "HW-dca442211b264bbe",
+        "HW-1450585d9cd5879f"
+      ],
+      "firstSeen": "2026-01-12",
+      "lastSeen": "2026-08-14"
+    },
+    {
       "id": "TX-technology-agentic_execution",
       "name": "智能体",
       "nodeType": "technology",
@@ -1686,6 +1829,7 @@
       "valueId": "agentic_execution",
       "eventIds": [
         "EV-bf8ce460c05b9ff0",
+        "EV-c1295b8f58024ff6",
         "EV-83728e3b6c7736ce",
         "EV-cfbfc6c80338aa12",
         "EV-b6f025a2dc297b78",
@@ -1793,6 +1937,7 @@
         "EV-23ae55daa341be06",
         "EV-6bb83280a2116f24",
         "EV-d10684a6f16afe10",
+        "EV-0121f0a9e9a975ec",
         "EV-67368bf639178ad1",
         "EV-6af526d687d9f737",
         "EV-acddfa62aabb004f",
@@ -1839,6 +1984,7 @@
         "EV-01df8e489a34893b",
         "EV-afd0332ad8f5f05b",
         "EV-cab03fca079f62e6",
+        "EV-129ffa6be41bb485",
         "EV-8619e2d881669888",
         "EV-76e7dc691b68fa04",
         "EV-aa7cf8ee6c875f08",
@@ -1872,14 +2018,17 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-c92db935a2cef0d6",
+        "EV-b8fbfa3405d10bb4",
+        "EV-c3231f2ea0ae1ebc",
         "EV-2868ff08777b5de9",
         "EV-58e18eab1b072c9a",
         "EV-65e50237cd603c8e",
         "EV-7e0d6eb92af58925",
         "EV-3a7e7b6818fee0de",
         "EV-ba2898569165c9a6",
-        "EV-5c30f52112d92491",
         "EV-c7d0b810ac3b3d4e",
+        "EV-5c30f52112d92491",
         "EV-f3a29cb561809daf",
         "EV-ff924015298048ba",
         "EV-1d3b117dad798008",
@@ -2150,6 +2299,7 @@
       ],
       "entityIds": [
         "EN-8526299f9ecc5fac",
+        "EN-249fdefbb63fa7b3",
         "EN-240389f4b730bad4",
         "EN-7ebe9a17c4d4c271",
         "EN-360a940182e67c66",
@@ -2244,6 +2394,7 @@
         "EN-50e2a4156631df49",
         "EN-f531c4e9f8555dcc",
         "EN-df30a48992da7fe8",
+        "EN-29b9f0cae32e7a8a",
         "EN-30cd4a85fc09f695",
         "EN-c9e92f0b88c6456b",
         "EN-6b182ca786385b1e",
@@ -2291,6 +2442,9 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-bbdefa2950f49882",
+        "EN-6f7ac1823da81d2e",
+        "EN-e78bdebae031095b",
         "EN-0b9ca57f53ba758b",
         "EN-92df1be3e37c9268",
         "EN-f43fcac12953687c",
@@ -2307,7 +2461,6 @@
         "EN-d9b1d7819af92e77",
         "EN-d50883991bfc5a69",
         "EN-b02e43bdec738f2c",
-        "EN-bbdefa2950f49882",
         "EN-307557d99a7eb726",
         "EN-d0cdc9650aa64450",
         "EN-30397d0cfc1b0e29",
@@ -2458,6 +2611,7 @@
         "FDE-de1562b0634b20ed",
         "FDE-d693e68f89adf86a",
         "FDE-ab9c514225686f60",
+        "FDE-ed781e27a7b9458e",
         "FDE-8506e8248e149161",
         "FDE-e780a756aeb71dfc",
         "FDE-602624cf072c079d",
@@ -2480,6 +2634,7 @@
         "FDE-3665b073634d4b9d"
       ],
       "hardwareIds": [
+        "HW-304c6370cc157449",
         "HW-a033b945449628d5",
         "HW-18e9985f2e93555c",
         "HW-2ce4c2fb193555e3",
@@ -2556,6 +2711,7 @@
         "EV-8a2d8ebbd700c787",
         "EV-2d6d2dc0ead4be10",
         "EV-d209a6acecba4285",
+        "EV-129ffa6be41bb485",
         "EV-75b9b997e9c7e5d1",
         "EV-b2e374d54b10b9af",
         "EV-2868ff08777b5de9",
@@ -2642,6 +2798,7 @@
         "EN-df30a48992da7fe8",
         "EN-3db1f560db626918",
         "EN-7c3482959a6cdd3f",
+        "EN-916a98f0fa2a39af",
         "EN-0b9ca57f53ba758b",
         "EN-8d4321d936320802",
         "EN-ea3bd73e2b506e00",
@@ -2649,7 +2806,6 @@
         "EN-76a9a8a6e2f1a47b",
         "EN-240389f4b730bad4",
         "EN-bbdefa2950f49882",
-        "EN-916a98f0fa2a39af",
         "EN-1d79127e9d90e89b",
         "EN-4adc2faea521b1f1",
         "EN-c857d09db23e6822",
@@ -2664,6 +2820,7 @@
       "fdeIds": [
         "FDE-0ef4045e28c345f8",
         "FDE-2dda1b977721f467",
+        "FDE-ed781e27a7b9458e",
         "FDE-6920b7a1f4924656",
         "FDE-8d7df617732e7c45"
       ],
@@ -2671,7 +2828,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "TX-industry-manufacturing",
@@ -2744,6 +2901,7 @@
         "EV-7585b033d4005977",
         "EV-cec68369662236fd",
         "EV-4eb0556b8c72d410",
+        "EV-0121f0a9e9a975ec",
         "EV-d84f24c8c72e7e47",
         "EV-b3ef1eed47191c55",
         "EV-0d1e8308d3c007aa",
@@ -2855,6 +3013,7 @@
         "EN-15516525ca2aa1a4",
         "EN-8dc72a4672894e0f",
         "EN-098a40b4499d7512",
+        "EN-29b9f0cae32e7a8a",
         "EN-57fac8572eeab5fc",
         "EN-d25e715a1ce00764",
         "EN-99f9ebbef37fcec5",
@@ -2887,6 +3046,7 @@
         "FDE-6e17403b5cdb72b0"
       ],
       "hardwareIds": [
+        "HW-304c6370cc157449",
         "HW-4673613f81881c78",
         "HW-df8fb3396e493a21",
         "HW-3a780bcd6e5bab6a",
@@ -2894,7 +3054,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "TX-product_form-model",
@@ -2950,6 +3110,7 @@
         "EV-c5d7d88d1aef8edb",
         "EV-cded77b1de2db61a",
         "EV-535c2f4fb851332d",
+        "EV-0121f0a9e9a975ec",
         "EV-b25b396e368ee4d9",
         "EV-d2a623e8eef1f61d",
         "EV-dda9429d76897a3d",
@@ -2967,6 +3128,7 @@
         "EV-c81cb21337a9bb98",
         "EV-6c361125c3f50bb6",
         "EV-83b2e8f7fe679bc3",
+        "EV-129ffa6be41bb485",
         "EV-3d9aa640411471ea",
         "EV-eec1e6857f0e0b2b",
         "EV-584212d254d882bc",
@@ -2975,9 +3137,13 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-397a17aa878564c4",
+        "EV-3fb3e2730da143f4",
+        "EV-8654d13ff4cf8a08",
+        "EV-1205a939d3748b7e",
         "EV-a6c4f879a58ababa",
-        "EV-5c30f52112d92491",
         "EV-c7d0b810ac3b3d4e",
+        "EV-5c30f52112d92491",
         "EV-f4b38b9778fca8ce",
         "EV-1d3b117dad798008",
         "EV-497344d95d593cf6",
@@ -3154,17 +3320,21 @@
         "EN-cd35ca6b5c3cf23c",
         "EN-883be863cc6562bb",
         "EN-a83a3af1a4866fd5",
+        "EN-29b9f0cae32e7a8a",
         "EN-e9fc4f156e36f6aa",
         "EN-bd6769fe78d0971a",
         "EN-968e2d5b08687bf4",
         "EN-b81c8201acfc7639",
         "EN-23929c7dca3eb576",
         "EN-bc8a00f7f6fb535f",
+        "EN-916a98f0fa2a39af",
         "EN-87c730bc4f32459e",
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
+        "EN-b93006774cbdd4b2",
+        "EN-e32ac33fa53a3db6",
         "EN-83eb1cb31148698f",
         "EN-52593fb3cf820033",
         "EN-32e83e92d45d71f6",
@@ -3232,7 +3402,6 @@
         "EN-14754db7f1439c88",
         "EN-ce31f92c521b7b08",
         "EN-4a639cb888a15d75",
-        "EN-e32ac33fa53a3db6",
         "EN-5f4db04ac40d991b",
         "EN-1706429cbf67f1c9",
         "EN-af84cfb6c1bb0e98",
@@ -3250,9 +3419,11 @@
         "FDE-c19b8c67ebeeae98",
         "FDE-f34ca7b021eae900",
         "FDE-d0a39c8df546833a",
+        "FDE-ed781e27a7b9458e",
         "FDE-faf3a8cfcafef981"
       ],
       "hardwareIds": [
+        "HW-304c6370cc157449",
         "HW-c5a22adcc66136ed",
         "HW-033a5b73cdc3f4be",
         "HW-ceb55d9bc637c1d3",
@@ -3262,7 +3433,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "TX-product_form-chip_accelerator",
@@ -3303,6 +3474,7 @@
         "EV-70a994b9339f92e7",
         "EV-59882383f82f215d",
         "EV-450f624a6a6446ce",
+        "EV-0121f0a9e9a975ec",
         "EV-d2a623e8eef1f61d",
         "EV-522c339dded54be5",
         "EV-a86b04e679044c45",
@@ -3402,6 +3574,7 @@
         "EN-8da5eafb322ee86e",
         "EN-53453cfb48a75dde",
         "EN-883be863cc6562bb",
+        "EN-29b9f0cae32e7a8a",
         "EN-bd6769fe78d0971a",
         "EN-e1517be14d06cdb7",
         "EN-7640da40298286a6",
@@ -3457,6 +3630,7 @@
         "FDE-08f12caedc3b2f13"
       ],
       "hardwareIds": [
+        "HW-304c6370cc157449",
         "HW-68457c8c0a7240ac",
         "HW-7c91d6528b08a2f0",
         "HW-033a5b73cdc3f4be",
@@ -3479,7 +3653,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "TX-use_case-physical_automation",
@@ -3673,6 +3847,7 @@
         "EV-e9d06e8a06aa7318",
         "EV-dbbe3fd637be213f",
         "EV-44ec7c229995ca3c",
+        "EV-0121f0a9e9a975ec",
         "EV-a852dc0ca6011ff6",
         "EV-c3b96b789b5bcafd",
         "EV-b9a1cba0b59a5354",
@@ -3694,6 +3869,7 @@
         "EN-4e4b333252f207fd",
         "EN-bbdefa2950f49882",
         "EN-cecdd8369134f75e",
+        "EN-29b9f0cae32e7a8a",
         "EN-c9e92f0b88c6456b",
         "EN-54dfb14dcddad637",
         "EN-772c171be4bf6551",
@@ -3713,6 +3889,7 @@
         "FDE-b366647aabd8f450"
       ],
       "hardwareIds": [
+        "HW-304c6370cc157449",
         "HW-a033b945449628d5",
         "HW-c5a22adcc66136ed",
         "HW-a7207541fe11bd3b",
@@ -3722,7 +3899,7 @@
         "HW-9a39a7f449362f96"
       ],
       "firstSeen": "2026-05-08",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "TX-product_form-robotic_system",
@@ -3802,100 +3979,6 @@
       ],
       "firstSeen": "2026-01-12",
       "lastSeen": "2026-08-05"
-    },
-    {
-      "id": "TX-technology-embodied_ai",
-      "name": "具身智能",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "embodied_ai",
-      "eventIds": [
-        "EV-fcf3c464260b6730",
-        "EV-6ca567f6e80c36c5",
-        "EV-ee38c30c00b2a754",
-        "EV-d3fcd1ea4d9baf47",
-        "EV-43b56d49df9a73a2",
-        "EV-1188b1585b835fe1",
-        "EV-60d58e2a1f5733f8",
-        "EV-a909450a2d1a1fe1",
-        "EV-d2409770301edc83",
-        "EV-876baa523eb93c4f",
-        "EV-cec68369662236fd",
-        "EV-5bbc509a032b8309",
-        "EV-5bfbab92b22b68f1",
-        "EV-cafe435ddd007821",
-        "EV-234ad54940674bf6",
-        "EV-b40ba79822469bc0",
-        "EV-acb2087779a8ea3c",
-        "EV-6415a58637893b34",
-        "EV-4faa2bcf2e42e60c",
-        "EV-c698da7da473b059",
-        "EV-39d56d5cef4cea80",
-        "EV-eb12fb9dd08e5aad",
-        "EV-60110525440fac47",
-        "EV-c4f8ef356373ab24",
-        "EV-7f92b7e410ed08f1",
-        "EV-b580e33cabfea980",
-        "EV-4cb7e4c371fb252e",
-        "EV-2499dc922663af7e",
-        "EV-345c8a2cc00fe8ca",
-        "EV-82b39e10391d0f3c",
-        "EV-941ba9ebdc43f20c",
-        "EV-6b51b1b6fe22c540",
-        "EV-d633676a4a7d89a3",
-        "EV-6a2f3e9a22edff64",
-        "EV-49751dfc7d2f6d6c",
-        "EV-197aac95e60671f7",
-        "EV-24a536bc53a87050",
-        "EV-e2d4132c671e3d41",
-        "EV-3f8ba5855b64dd1a",
-        "EV-08f736f61f2b46f3"
-      ],
-      "entityIds": [
-        "EN-7ef08ef63597d47c",
-        "EN-bbc41366a5a7cf78",
-        "EN-2b60b46911fc1640",
-        "EN-634537cdabd4e325",
-        "EN-bbdefa2950f49882",
-        "EN-4f34468a2f780cf5",
-        "EN-42f34ac1fcb8d44f",
-        "EN-d816a2902f879e1e",
-        "EN-4213e49804834ead",
-        "EN-2d939f5af4c3da33",
-        "EN-9a1a3ee1f50745c6",
-        "EN-36dde5de93197cee",
-        "EN-b5318593e1260f2f",
-        "EN-8d4321d936320802",
-        "EN-85f0c155e340fb63",
-        "EN-240389f4b730bad4",
-        "EN-e59f5a52b6713a29",
-        "EN-2b6e51bec93e86c1",
-        "EN-b47de584b4515427",
-        "EN-149ae7e9819a17a0",
-        "EN-02865db849986974",
-        "EN-0e6e48aba1669631",
-        "EN-754c490bd199c21a",
-        "EN-30081094f2a8c83d",
-        "EN-67f2d22514622d1b",
-        "EN-7f6333102da9e8bd",
-        "EN-89e3f0711b76932c",
-        "EN-5e1fcba4c9f1cf69"
-      ],
-      "fdeIds": [
-        "FDE-c846ebc19f50a93f",
-        "FDE-becc5964d9b5f86c",
-        "FDE-dadf0e9572889d3d",
-        "FDE-a85c538af1b093ed"
-      ],
-      "hardwareIds": [
-        "HW-ceb55d9bc637c1d3",
-        "HW-eb5bba1ad6c016b0",
-        "HW-155f566cfd988f5e",
-        "HW-dca442211b264bbe",
-        "HW-1450585d9cd5879f"
-      ],
-      "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-12"
     },
     {
       "id": "TX-technology-human_in_loop",

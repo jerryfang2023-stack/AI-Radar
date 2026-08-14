@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-14T00:23:40.398Z",
+    "latestDataDate": "2026-08-14",
+    "currentDate": "2026-08-14",
+    "eventCount": 2102,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-065f9c664c69866f",
+    "name": "Grok AI",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-c3231f2ea0ae1ebc"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-13",
+    "lastSeen": "2026-08-14",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-c3231f2ea0ae1ebc"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-c3231f2ea0ae1ebc",
+        "dataDate": "2026-08-14",
+        "date": "2026-08-13",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "马斯克确认 SpaceX 将用员工数据训练 Grok AI：\"你们将成为 AI 的父母\"",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-e78bdebae031095b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-e78bdebae031095b",
+          "EN-065f9c664c69866f",
+          "EN-92df1be3e37c9268"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-48719d5d4e96f14d",
+      "snapshotKey": "48719d5d4e96f14d",
+      "snapshotId": "HWS-de5a9c00a53d9d5a",
+      "eventId": "EV-c3231f2ea0ae1ebc",
+      "eventIds": [
+        "EV-c3231f2ea0ae1ebc"
+      ],
+      "dataDate": "2026-08-14",
+      "date": "2026-08-14",
+      "title": "Grok AI / Grok Bot",
+      "subject": "SpaceX",
+      "productNames": [
+        "Grok AI",
+        "Grok Bot"
+      ],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-59457fdabfa5d0cb"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-14",
+          "hardware_fact_id": "HWF-59457fdabfa5d0cb",
+          "fact_type": "product",
+          "observed_at": "2026-08-13T06:58:25.000Z",
+          "subject_entity_id": "EN-e78bdebae031095b",
+          "subject_name": "SpaceX",
+          "product_entity_ids": [
+            "EN-065f9c664c69866f",
+            "EN-92df1be3e37c9268"
+          ],
+          "product_names": [
+            "Grok AI",
+            "Grok Bot"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "当地时间周二，SpaceX 还推出了 Grok Bot，其定位是 能在计算机上自主执行任务的 AI 智能体 。",
+          "event_refs": [
+            "EV-c3231f2ea0ae1ebc"
+          ],
+          "claim_ref": "CL-430e79f5e2871a3f",
+          "source_refs": [
+            "SA-a9a4b27a81cf1ad9"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-14/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-e78bdebae031095b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/989/237.htm",
+      "entityIds": [
+        "EN-e78bdebae031095b",
+        "EN-065f9c664c69866f",
+        "EN-92df1be3e37c9268"
+      ]
+    }
+  ]
+}

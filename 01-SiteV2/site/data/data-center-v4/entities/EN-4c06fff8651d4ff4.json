@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-13T00:26:01.951Z",
-    "latestDataDate": "2026-08-13",
-    "currentDate": "2026-08-13",
-    "eventCount": 2067,
+    "generatedAt": "2026-08-14T00:23:40.398Z",
+    "latestDataDate": "2026-08-14",
+    "currentDate": "2026-08-14",
+    "eventCount": 2102,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -22,18 +22,20 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-d04d03b37046f0ad",
       "EV-3fbfb89a10efd42f"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-22",
-    "lastSeen": "2026-06-22",
+    "lastSeen": "2026-08-14",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [
+        "EV-d04d03b37046f0ad",
         "EV-3fbfb89a10efd42f"
       ],
       "productsServices": [],
@@ -42,6 +44,61 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-d04d03b37046f0ad",
+        "dataDate": "2026-08-14",
+        "date": "2026-08-13",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "IBM 与 OpenAI 达成合作，拓展企业 AI 业务",
+        "displayTags": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "telecommunications",
+            "name": "电信",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-916a98f0fa2a39af",
+          "EN-4c06fff8651d4ff4",
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
       {
         "id": "EV-3fbfb89a10efd42f",
         "dataDate": "2026-06-22",
@@ -65,6 +122,91 @@
   "relatedEntities": [],
   "relationships": [],
   "taxonomyNodes": [],
-  "fde": [],
-  "hardware": []
+  "fde": [
+    {
+      "id": "FDE-48afc88dde234ab1",
+      "eventId": "EV-d04d03b37046f0ad",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "title": "IBM 与 OpenAI 达成合作，拓展企业 AI 业务",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "IBM",
+      "vendor": "OpenAI",
+      "industry": "enterprise AI",
+      "useCase": "拓展企业 AI 业务",
+      "reportedNeed": "competition for corporate AI spending intensifies",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_after",
+        "team_composition",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components"
+      ],
+      "tags": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push",
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-4c06fff8651d4ff4",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ]
+    }
+  ],
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-cb46acfd9659d48a",
+      "implementationKey": "cb46acfd9659d48a",
+      "eventId": "EV-d04d03b37046f0ad",
+      "eventIds": [
+        "EV-d04d03b37046f0ad"
+      ],
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "title": "IBM × OpenAI：拓展企业 AI 业务",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "IBM",
+      "vendor": "OpenAI",
+      "industry": "enterprise AI",
+      "useCase": "拓展企业 AI 业务",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.625,
+      "completenessPercent": 63,
+      "missingFields": [
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-6471eb5fdc8f3db3",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-13",
+          "dataDate": "2026-08-14",
+          "eventId": "EV-d04d03b37046f0ad",
+          "eventTitle": "IBM 与 OpenAI 达成合作，拓展企业 AI 业务",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push",
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-4c06fff8651d4ff4",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ]
+    }
+  ]
 }

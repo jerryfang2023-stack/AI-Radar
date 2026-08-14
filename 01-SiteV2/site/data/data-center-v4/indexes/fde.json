@@ -5,13 +5,95 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-13T00:26:01.951Z",
-    "latestDataDate": "2026-08-13",
-    "currentDate": "2026-08-13",
-    "eventCount": 2067,
+    "generatedAt": "2026-08-14T00:23:40.398Z",
+    "latestDataDate": "2026-08-14",
+    "currentDate": "2026-08-14",
+    "eventCount": 2102,
     "quarantinedEventCount": 16
   },
   "fde": [
+    {
+      "id": "FDE-48afc88dde234ab1",
+      "eventId": "EV-d04d03b37046f0ad",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "title": "IBM 与 OpenAI 达成合作，拓展企业 AI 业务",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "IBM",
+      "vendor": "OpenAI",
+      "industry": "enterprise AI",
+      "useCase": "拓展企业 AI 业务",
+      "reportedNeed": "competition for corporate AI spending intensifies",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_after",
+        "team_composition",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components"
+      ],
+      "tags": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push",
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-4c06fff8651d4ff4",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
+    {
+      "id": "FDE-ed781e27a7b9458e",
+      "eventId": "EV-129ffa6be41bb485",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "IBM",
+      "vendor": "OpenAI",
+      "industry": "未披露",
+      "useCase": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR.",
+        "The companies plan to help clients modernize legacy applications and accelerate software development by bringing together OpenAI Codex and ChatGPT Work with IBM&rsquo;s industry, technology and domain expertise, including integration with IBM Consulting Advantage. The collaboration is designed to help organizations simplify engineering processes and speed the delivery of new digital products and services."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations",
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-7d3194f79e645c42"
+      ]
+    },
     {
       "id": "FDE-33d054bbd2e8d427",
       "eventId": "EV-d50bfbdb31595942",
@@ -5610,6 +5692,116 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-5bc72342f3066892",
+      "implementationKey": "5bc72342f3066892",
+      "eventId": "EV-129ffa6be41bb485",
+      "eventIds": [
+        "EV-129ffa6be41bb485"
+      ],
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "title": "IBM × OpenAI：OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "stage": "procurement",
+      "stageLabel": "procurement",
+      "customer": "IBM",
+      "vendor": "OpenAI",
+      "industry": "未披露",
+      "useCase": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "workflow": "未披露",
+      "systems": [
+        "ChatGPT"
+      ],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.625,
+      "completenessPercent": 63,
+      "missingFields": [
+        "industry",
+        "workflow",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-52e02e22bcd8cd7f",
+          "type": "procurement",
+          "stage": "procurement",
+          "date": "2026-08-13",
+          "dataDate": "2026-08-14",
+          "eventId": "EV-129ffa6be41bb485",
+          "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations",
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-7d3194f79e645c42"
+      ]
+    },
+    {
+      "id": "FDED-cb46acfd9659d48a",
+      "implementationKey": "cb46acfd9659d48a",
+      "eventId": "EV-d04d03b37046f0ad",
+      "eventIds": [
+        "EV-d04d03b37046f0ad"
+      ],
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "title": "IBM × OpenAI：拓展企业 AI 业务",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "IBM",
+      "vendor": "OpenAI",
+      "industry": "enterprise AI",
+      "useCase": "拓展企业 AI 业务",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.625,
+      "completenessPercent": 63,
+      "missingFields": [
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-6471eb5fdc8f3db3",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-13",
+          "dataDate": "2026-08-14",
+          "eventId": "EV-d04d03b37046f0ad",
+          "eventTitle": "IBM 与 OpenAI 达成合作，拓展企业 AI 业务",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push",
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-4c06fff8651d4ff4",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
+    {
       "id": "FDED-2b3e79510a02e590",
       "implementationKey": "2b3e79510a02e590",
       "eventId": "EV-2f54f55d7b02fa69",
@@ -6822,42 +7014,42 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-08-13",
-      "funnel_id": "LF-71d0751c9b743d15",
+      "data_date": "2026-08-14",
+      "funnel_id": "LF-f6a8cb56fc68c889",
       "lens": "fde",
-      "date": "2026-08-13",
+      "date": "2026-08-14",
       "monitoring_paths": [
         "fde_customer_case",
         "fde_earnings_disclosure",
         "fde_procurement_contract",
         "fde_production_rollout"
       ],
-      "raw_documents": 116,
-      "original_sources": 110,
-      "valid_claims": 36,
-      "observations": 3,
-      "canonical_events": 15,
+      "raw_documents": 113,
+      "original_sources": 105,
+      "valid_claims": 51,
+      "observations": 2,
+      "canonical_events": 19,
       "blocker_counts": {
-        "no_source_bounded_event": 15,
-        "no_source_bounded_claim": 2,
-        "source_outside_daily_window": 62,
+        "source_outside_daily_window": 59,
+        "no_source_bounded_event": 14,
+        "non_event_or_index_title": 6,
         "source_published_after_data_date": 2,
-        "non_event_or_index_title": 7,
-        "repository_page_requires_release_source": 2,
-        "rumor_requires_primary_confirmation": 1,
-        "community_source_requires_original_event_source": 2,
+        "repository_page_requires_release_source": 1,
+        "community_source_requires_original_event_source": 1,
         "source_outside_funding_backfill_window": 1,
+        "question_headline_not_event_specific": 1,
+        "opinion_without_source_bounded_event": 1,
         "event_not_ai_relevant": 1,
-        "raw_source_quality_block": 5,
-        "raw_document_not_auditable": 1
+        "no_source_bounded_claim": 1,
+        "raw_source_quality_block": 6
       },
       "rates": {
-        "original_source_rate": 0.9482758620689655,
-        "valid_claim_rate": 0.3103448275862069,
-        "observation_rate": 0.08333333333333333,
-        "event_conversion_rate": 0.4166666666666667
+        "original_source_rate": 0.9292035398230089,
+        "valid_claim_rate": 0.45132743362831856,
+        "observation_rate": 0.0392156862745098,
+        "event_conversion_rate": 0.37254901960784315
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-13/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-14/monitoring-funnel.json"
     }
   ]
 }
