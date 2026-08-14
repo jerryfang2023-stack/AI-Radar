@@ -6,4 +6,7 @@
 - A client payment callback is not proof of payment. Grant entitlement only after a verified WeChat Pay notification or a verified order query.
 - Payment notifications must be signature-verified, decrypted, amount-checked, AppID/MchID-checked, and idempotent.
 - SQLite is acceptable for the initial scale. Use transactions for order and entitlement updates.
+- Community membership is resolved through `COMMUNITY_SERVICE_URL` using `COMMUNITY_SERVICE_TOKEN`. Link an existing member only with a server-verified phone number; never trust a client-supplied phone or name for account merging.
+- `users.point_balance` is spendable, `users.point_lifetime` drives the eight growth levels, and `users.community_points` is the latest social-system snapshot. Community corrections update all three by the remote delta; point redemption changes only `point_balance`.
+- Community applications submitted through the Mini Program must enter the existing membership review queue; the payment service does not maintain a second application database.
 - Run `python -m pytest -q` before deployment.
