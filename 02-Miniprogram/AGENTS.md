@@ -22,6 +22,9 @@ This is the native WeChat Mini Program frontstage for Funding Insights.
 - Keep the 我的 tab independent from the first-three-tab visual sync unless a task explicitly includes it.
 - Membership is priced at CNY 30/month, CNY 168/six months, or CNY 300/year and grants full browsing across all columns. New users receive a seven-day trial. Community activity points can redeem seven-day or thirty-day membership extensions; never present a successful payment before the WeChat Pay and account service confirm it.
 - A valid first-time registration attributed to an invite rewards the inviter with 300 activity points; award it only after backend registration attribution confirms the event, and count each new user once.
+- Community history points enter the unified wallet and lifetime growth total 1:1. The level thresholds are L1 0–299, L2 300–999, L3 1,000–2,499, L4 2,500–4,999, L5 5,000–9,999, L6 10,000–19,999, L7 20,000–49,999, and L8 50,000+.
+- Existing community members are linked only by a verified phone number (or an existing WeChat union identity at login); never merge accounts by display name alone.
+- Community applications remain native Mini Program forms and enter the existing member-management review queue. Community essays are editorial rewrites, not raw group-message synchronization.
 
 ## Validation
 
