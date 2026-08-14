@@ -5,6 +5,7 @@ param(
   [string]$ClosureAt = "09:50",
   [string]$FinalClosureAt = "16:45",
   [string]$RuntimePath = "",
+  [string]$CodexExecutable = "",
   [Alias("DisableLegacyTasks")]
   [bool]$RemoveLegacyTasks = $true,
   [switch]$RunMorningNow
@@ -33,6 +34,49 @@ function Resolve-NodeExecutable {
   return $command.Source
 }
 
+function Resolve-CodexExecutable {
+  param([string]$InputPath)
+
+  function Test-CodexExecutable {
+    param([string]$Candidate)
+    if (-not $Candidate -or -not (Test-Path -LiteralPath $Candidate -PathType Leaf)) { return $false }
+    try {
+      $process = Start-Process -FilePath $Candidate -ArgumentList "--version" -PassThru -Wait -WindowStyle Hidden
+      return $process.ExitCode -eq 0
+    } catch {
+      return $false
+    }
+  }
+
+  if ($InputPath) {
+    $resolved = (Resolve-Path -LiteralPath $InputPath).Path
+    if (-not (Test-CodexExecutable -Candidate $resolved)) {
+      throw "Codex executable is not runnable: $resolved"
+    }
+    return $resolved
+  }
+
+  $managedRoot = Join-Path $env:LOCALAPPDATA "WaveSight\codex-cli"
+  $managedExecutable = Get-ChildItem -LiteralPath (Join-Path $managedRoot "node_modules\@openai") `
+    -Recurse -Filter "codex.exe" -File -ErrorAction SilentlyContinue |
+    Select-Object -First 1 -ExpandProperty FullName
+  if (Test-CodexExecutable -Candidate $managedExecutable) { return $managedExecutable }
+
+  $command = Get-Command codex.exe -ErrorAction SilentlyContinue
+  if ($command -and (Test-CodexExecutable -Candidate $command.Source)) { return $command.Source }
+
+  New-Item -ItemType Directory -Path $managedRoot -Force | Out-Null
+  & npm install --prefix $managedRoot "@openai/codex"
+  if ($LASTEXITCODE -ne 0) { throw "Failed to install the managed Codex CLI." }
+  $managedExecutable = Get-ChildItem -LiteralPath (Join-Path $managedRoot "node_modules\@openai") `
+    -Recurse -Filter "codex.exe" -File -ErrorAction Stop |
+    Select-Object -First 1 -ExpandProperty FullName
+  if (-not (Test-CodexExecutable -Candidate $managedExecutable)) {
+    throw "Managed Codex CLI is not runnable: $managedExecutable"
+  }
+  return $managedExecutable
+}
+
 function Register-ControllerTask {
   param(
     [string]$Name,
@@ -41,11 +85,14 @@ function Register-ControllerTask {
     [string]$Runner,
     [string]$NodeExecutable,
     [string]$WorkingDirectory,
-    [string]$RuntimeDirectory
+    [string]$RuntimeDirectory,
+    [string]$CodexExecutable
   )
   $time = [DateTime]::ParseExact($At, "HH:mm", [Globalization.CultureInfo]::InvariantCulture)
   $argument = '"' + $Runner + '" --phase=' + $Phase
-  if ($Phase -eq "closure") { $argument += " --invoke-codex=true" }
+  if ($Phase -eq "closure") {
+    $argument += ' --invoke-codex=true --codex-command="' + $CodexExecutable + '"'
+  }
   $argument += ' --runtime-dir="' + $RuntimeDirectory + '"'
   $action = New-ScheduledTaskAction -Execute $NodeExecutable -Argument $argument -WorkingDirectory $WorkingDirectory
   $trigger = New-ScheduledTaskTrigger -Daily -At $time
@@ -69,14 +116,15 @@ $repo = Resolve-RepoPath -InputPath $RepoPath
 $runner = Join-Path $repo "agent-workflow\tools\run-daily-automation-controller.mjs"
 if (-not (Test-Path -LiteralPath $runner)) { throw "Controller runner not found: $runner" }
 $nodeExecutable = Resolve-NodeExecutable
+$CodexExecutable = Resolve-CodexExecutable -InputPath $CodexExecutable
 if (-not $RuntimePath) { $RuntimePath = Join-Path $env:LOCALAPPDATA "WaveSight\runtime" }
 $RuntimePath = [IO.Path]::GetFullPath($RuntimePath)
 New-Item -ItemType Directory -Path $RuntimePath -Force | Out-Null
 
-Register-ControllerTask -Name "WaveSight Morning Production Dispatch" -At $MorningAt -Phase "morning" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo -RuntimeDirectory $RuntimePath
-Register-ControllerTask -Name "WaveSight Daily Recovery Controller" -At $RecoveryAt -Phase "recovery" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo -RuntimeDirectory $RuntimePath
-Register-ControllerTask -Name "WaveSight Daily Automation Closure" -At $ClosureAt -Phase "closure" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo -RuntimeDirectory $RuntimePath
-Register-ControllerTask -Name "WaveSight Daily Final Closure" -At $FinalClosureAt -Phase "final-closure" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo -RuntimeDirectory $RuntimePath
+Register-ControllerTask -Name "WaveSight Morning Production Dispatch" -At $MorningAt -Phase "morning" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo -RuntimeDirectory $RuntimePath -CodexExecutable $CodexExecutable
+Register-ControllerTask -Name "WaveSight Daily Recovery Controller" -At $RecoveryAt -Phase "recovery" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo -RuntimeDirectory $RuntimePath -CodexExecutable $CodexExecutable
+Register-ControllerTask -Name "WaveSight Daily Automation Closure" -At $ClosureAt -Phase "closure" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo -RuntimeDirectory $RuntimePath -CodexExecutable $CodexExecutable
+Register-ControllerTask -Name "WaveSight Daily Final Closure" -At $FinalClosureAt -Phase "final-closure" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo -RuntimeDirectory $RuntimePath -CodexExecutable $CodexExecutable
 
 if ($RemoveLegacyTasks) {
   @(
@@ -94,6 +142,7 @@ if ($RemoveLegacyTasks) {
 
 Write-Host "Community Intelligence 08:30 and Follow-Builders 16:10 tasks remain independent; final closure runs at $FinalClosureAt."
 Write-Host "Node executable: $nodeExecutable"
+Write-Host "Codex executable: $CodexExecutable"
 Write-Host "Runtime reports: $RuntimePath"
 if ($RunMorningNow) {
   Start-ScheduledTask -TaskName "WaveSight Morning Production Dispatch"

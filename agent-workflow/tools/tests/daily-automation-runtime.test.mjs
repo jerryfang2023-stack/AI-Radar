@@ -50,6 +50,18 @@ test("closure reuses its self-check instead of running it twice", () => {
   assert.match(controller, /executionOk = [^\n]*fundingPortal\.ok/u);
 });
 
+test("closure resolves and forwards an absolute Codex executable", () => {
+  const installer = read("install-daily-automation-controller-tasks.ps1");
+  const controller = read("run-daily-automation-controller.mjs");
+  assert.match(installer, /function Resolve-CodexExecutable/u);
+  assert.match(installer, /WaveSight\\codex-cli/u);
+  assert.match(installer, /npm install --prefix \$managedRoot "@openai\/codex"/u);
+  assert.match(installer, /Test-CodexExecutable -Candidate \$managedExecutable/u);
+  assert.match(installer, /--codex-command="' \+ \$CodexExecutable/u);
+  assert.match(controller, /const codexCommand = args\.get\("codex-command"\) \|\| "codex"/u);
+  assert.match(controller, /`--codex-command=\$\{codexCommand\}`/u);
+});
+
 test("Vault refresh uses an isolated origin/main worktree and leaves supervision evidence", () => {
   const sync = read("sync-guanlan-vault-from-main.mjs");
   const supervision = read("write-daily-supervision-report.mjs");

@@ -5,9 +5,9 @@
     "site_version": "SITE-V4.6.1-research-retirement",
     "column_version": "FUNDING-INSIGHT-V1.5.0-china-market",
     "taxonomy_version": "TAG-V4.1",
-    "latest_date": "2026-08-13",
-    "generated_at": "2026-08-13T02:16:57.407Z",
-    "card_count": 255,
+    "latest_date": "2026-08-14",
+    "generated_at": "2026-08-14T03:15:42.802Z",
+    "card_count": 259,
     "china_market_card_count": 34,
     "duplicate_rounds_removed": 17,
     "automatic_publication": true,
@@ -288,16 +288,2954 @@
     ],
     "directions": [
       {
-        "id": "DIR-20260725-01",
-        "title": "开源模型推理成本骤降，正在将价值从模型层迁移至“模型路由与成本治理”层"
-      },
-      {
         "id": "DIR-20260725-02",
         "title": "AI智能体从“辅助写作”转向“自主执行”，催生对智能体行为审计与权限控制的新需求"
+      },
+      {
+        "id": "DIR-20260725-01",
+        "title": "开源模型推理成本骤降，正在将价值从模型层迁移至“模型路由与成本治理”层"
       }
     ]
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-901eb0951e568c40",
+      "triggered_by_event_id": "EV-33053abbe1a60b38",
+      "as_of_date": "2026-08-14",
+      "company": {
+        "entity_id": "EN-c5f011f1169120f2",
+        "name": "GitHub Secure Open Source Fund",
+        "full_name": "GitHub Secure Open Source Fund",
+        "website": "https://github.com/open-source/github-secure-open-source-fund",
+        "summary": "GitHub Secure Open Source Fund 是一个面向开源项目维护者的安全导向资助项目，通过直接向维护者提供资金、安全教育和专家支持，改善开源软件供应链的安全性。",
+        "headquarters": "",
+        "founders": [],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5c12ac3e47274fd2",
+            "quote": "GitHub Secure Open Source Fund Powered by GitHub Sponsors",
+            "source_content_hash": "f760f8dd148b6fee",
+            "quote_hash": "89cd0874c81dc54585d1e747f23e957b3d52b57b7c5c23e35bf9cf35fc8d18f9"
+          },
+          {
+            "source_id": "FISRC-00c1604bde55bb72",
+            "quote": "the GitHub Secure Open Source Fund, a program designed to financially and programmatically improve security and sustainability of open source projects",
+            "source_content_hash": "87e772e05a515e9d",
+            "quote_hash": "8b425cc68b5304ef85133fcb8972b461b0a0e7fc5b9f647fa8d7fd907f39ef06"
+          }
+        ],
+        "application_entity_id": "EN-c5f011f1169120f2",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "其他融资",
+        "amount": "$500,000",
+        "total_raised": "$1.25 million",
+        "announced_at": "2026-08-13",
+        "investor_disclosure_status": "not_disclosed",
+        "investors": [],
+        "other_round_investors": [
+          {
+            "name": "Datadog",
+            "role": "新增合作伙伴",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-944113caf8db4760",
+                "quote": "GitHub Secure Open Source Fund is adding an additional $5.5 million in Azure credits and funding to provide training and expertise; community to improve outcomes; and new partners, including Datadog, Open WebUI, Atlantic Council, and OWASP.",
+                "source_content_hash": "e72d41c69a6c730c",
+                "quote_hash": "7fc1ba5abad81f530029defb3991ea53bf9089b9fdb148d3d8430d6085cbe757"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-ab461ea335716d"
+          },
+          {
+            "name": "Open WebUI",
+            "role": "新增合作伙伴",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-944113caf8db4760",
+                "quote": "GitHub Secure Open Source Fund is adding an additional $5.5 million in Azure credits and funding to provide training and expertise; community to improve outcomes; and new partners, including Datadog, Open WebUI, Atlantic Council, and OWASP.",
+                "source_content_hash": "e72d41c69a6c730c",
+                "quote_hash": "7fc1ba5abad81f530029defb3991ea53bf9089b9fdb148d3d8430d6085cbe757"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-a9bb5d9d60063a"
+          },
+          {
+            "name": "Atlantic Council",
+            "role": "新增合作伙伴",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-944113caf8db4760",
+                "quote": "GitHub Secure Open Source Fund is adding an additional $5.5 million in Azure credits and funding to provide training and expertise; community to improve outcomes; and new partners, including Datadog, Open WebUI, Atlantic Council, and OWASP.",
+                "source_content_hash": "e72d41c69a6c730c",
+                "quote_hash": "7fc1ba5abad81f530029defb3991ea53bf9089b9fdb148d3d8430d6085cbe757"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-d0baf3520bf16c"
+          },
+          {
+            "name": "OWASP",
+            "role": "新增合作伙伴",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-944113caf8db4760",
+                "quote": "GitHub Secure Open Source Fund is adding an additional $5.5 million in Azure credits and funding to provide training and expertise; community to improve outcomes; and new partners, including Datadog, Open WebUI, Atlantic Council, and OWASP.",
+                "source_content_hash": "e72d41c69a6c730c",
+                "quote_hash": "7fc1ba5abad81f530029defb3991ea53bf9089b9fdb148d3d8430d6085cbe757"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-9beab5435dfeb5"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-08365977cd80206b",
+            "quote": "The Secure Fund invested more than $500,000 across 50 projects",
+            "source_content_hash": "269f33be0068a71b",
+            "quote_hash": "14ef33f69bc2c97f27a755a4808051c90a863e6831d15b48bbd7bd643796d18c"
+          },
+          {
+            "source_id": "FISRC-08365977cd80206b",
+            "quote": "The Secure Fund invested more than $500,000 across 50 projects Throughout this program, each project receives $10,000 USD via GitHub Sponsors",
+            "source_content_hash": "269f33be0068a71b",
+            "quote_hash": "cb6b456d17d7acbd39edb0b2c59a4dd73bd872bf52730bb79052287321c0180f"
+          }
+        ],
+        "round_code": "other",
+        "round_original": "Session 4",
+        "amount_original": "$500,000",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 万美元"
+        },
+        "total_raised_original": "$1.25 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 1250000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "125 万美元"
+        },
+        "risk_markers": [
+          "investors_missing"
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-33053abbe1a60b38",
+            "round_original": "Session 4",
+            "amount": "$500,000",
+            "announced_at": "2026-08-13",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-08365977cd80206b",
+                "quote": "The Secure Fund invested more than $500,000 across 50 projects",
+                "source_content_hash": "269f33be0068a71b",
+                "quote_hash": "14ef33f69bc2c97f27a755a4808051c90a863e6831d15b48bbd7bd643796d18c"
+              },
+              {
+                "source_id": "FISRC-08365977cd80206b",
+                "quote": "The Secure Fund invested more than $500,000 across 50 projects Throughout this program, each project receives $10,000 USD via GitHub Sponsors",
+                "source_content_hash": "269f33be0068a71b",
+                "quote_hash": "cb6b456d17d7acbd39edb0b2c59a4dd73bd872bf52730bb79052287321c0180f"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "partially_disclosed",
+        "cumulative_amount": {
+          "original": "$1.25 million",
+          "normalized": {
+            "currency": "USD",
+            "value": 1250000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "125 万美元"
+          },
+          "basis": "source_disclosed",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 500000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "50 万美元"
+            }
+          ],
+          "historical_round_count": 1
+        }
+      },
+      "products": [
+        {
+          "name": "GitHub Secure Open Source Fund",
+          "description": "一个面向开源项目维护者的安全资助项目，提供资金、安全教育和专家支持，以改善开源软件供应链的安全性。",
+          "target_customers": "开源项目维护者",
+          "features": [
+            "每个项目 $10,000 资金支持",
+            "3 周安全教育项目",
+            "GitHub Security Lab 专家支持",
+            "GitHub Copilot 和 Copilot Autofix 工具访问",
+            "Azure 云积分",
+            "安全健康检查与认证"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5c12ac3e47274fd2",
+              "quote": "Funding: $10,000 per project in funding aligned with the program outcomes Education: 3 week program: 5-10 hours of instruction, workshops and project-specific security milestones",
+              "source_content_hash": "f760f8dd148b6fee",
+              "quote_hash": "2af9001b4e43dc02f0756bf244dbdd313b4f8c96b33e3b720e68af95bf6b074b"
+            },
+            {
+              "source_id": "FISRC-00c1604bde55bb72",
+              "quote": "the three-week program will provide maintainers with security education, mentorship, tooling, certification, and more",
+              "source_content_hash": "87e772e05a515e9d",
+              "quote_hash": "8b6b25df2c514591cfabf289e8fe9bcff48f94965e15e8ef8a5a24c3b8a1e53e"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Bootstrap",
+          "industry": "开源软件",
+          "use_case": "安全改进与漏洞管理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b78bf2dcaa300aa7",
+              "quote": "Mark and Julien recently represented Bootstrap in the second round of the GitHub Secure Open Source Fund this past June.",
+              "source_content_hash": "6af2e6cbe4bcef01",
+              "quote_hash": "da1af32e75499d8d54bd9d9a8dda426293740bd5b1d8c2b36d8b044d88569a05"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Express.js",
+          "industry": "开源软件",
+          "use_case": "安全改进",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b78bf2dcaa300aa7",
+              "quote": "there were folks from various projects, including Express.js , JUnit , nvm , Oh My Zsh , and many more (53 projects in total)",
+              "source_content_hash": "6af2e6cbe4bcef01",
+              "quote_hash": "3002ba2798416eab874576d1da0b20e04784e734e4f403019abfb54d70251337"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "JUnit",
+          "industry": "开源软件",
+          "use_case": "安全改进",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b78bf2dcaa300aa7",
+              "quote": "there were folks from various projects, including Express.js , JUnit , nvm , Oh My Zsh , and many more (53 projects in total)",
+              "source_content_hash": "6af2e6cbe4bcef01",
+              "quote_hash": "3002ba2798416eab874576d1da0b20e04784e734e4f403019abfb54d70251337"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "nvm",
+          "industry": "开源软件",
+          "use_case": "安全改进",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b78bf2dcaa300aa7",
+              "quote": "there were folks from various projects, including Express.js , JUnit , nvm , Oh My Zsh , and many more (53 projects in total)",
+              "source_content_hash": "6af2e6cbe4bcef01",
+              "quote_hash": "3002ba2798416eab874576d1da0b20e04784e734e4f403019abfb54d70251337"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Oh My Zsh",
+          "industry": "开源软件",
+          "use_case": "安全改进",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b78bf2dcaa300aa7",
+              "quote": "there were folks from various projects, including Express.js , JUnit , nvm , Oh My Zsh , and many more (53 projects in total)",
+              "source_content_hash": "6af2e6cbe4bcef01",
+              "quote_hash": "3002ba2798416eab874576d1da0b20e04784e734e4f403019abfb54d70251337"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "Session 4 资助项目数",
+          "value": "50",
+          "observed_at": "2026-08-13",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-08365977cd80206b",
+              "quote": "The Secure Fund invested more than $500,000 across 50 projects",
+              "source_content_hash": "269f33be0068a71b",
+              "quote_hash": "14ef33f69bc2c97f27a755a4808051c90a863e6831d15b48bbd7bd643796d18c"
+            }
+          ]
+        },
+        {
+          "label": "每个项目资助金额",
+          "value": "$10,000",
+          "observed_at": "2026-08-13",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-08365977cd80206b",
+              "quote": "each project receives $10,000 USD via GitHub Sponsors",
+              "source_content_hash": "269f33be0068a71b",
+              "quote_hash": "0c0fb169c205ce38ea0685971e3acd288ac5b3bde4b90cd3f1541ab2e2934aec"
+            }
+          ]
+        },
+        {
+          "label": "累计支持项目数",
+          "value": "138",
+          "observed_at": "2026-03-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-944113caf8db4760",
+              "quote": "After supporting 138 projects with over 200 maintainers across 38 countries",
+              "source_content_hash": "e72d41c69a6c730c",
+              "quote_hash": "e699a6feaed7f4be90ec861140134769aac3b7e90dc2cec4f4942c0187c82750"
+            }
+          ]
+        },
+        {
+          "label": "累计支持维护者数",
+          "value": "200+",
+          "observed_at": "2026-03-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-944113caf8db4760",
+              "quote": "After supporting 138 projects with over 200 maintainers across 38 countries",
+              "source_content_hash": "e72d41c69a6c730c",
+              "quote_hash": "e699a6feaed7f4be90ec861140134769aac3b7e90dc2cec4f4942c0187c82750"
+            }
+          ]
+        },
+        {
+          "label": "新发布 CVE 数",
+          "value": "191",
+          "observed_at": "2026-03-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-944113caf8db4760",
+              "quote": "we have seen 191 new CVEs issued, 250+ new secrets prevented from leaking, and 600+ leaked secrets detected and resolved",
+              "source_content_hash": "e72d41c69a6c730c",
+              "quote_hash": "64149e9fefa65dd97a8c9121deea8fad3f2b86dc44e2ac861e5ce1664b7b3ea2"
+            }
+          ]
+        },
+        {
+          "label": "防止泄露的新秘密数",
+          "value": "250+",
+          "observed_at": "2026-03-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-944113caf8db4760",
+              "quote": "we have seen 191 new CVEs issued, 250+ new secrets prevented from leaking, and 600+ leaked secrets detected and resolved",
+              "source_content_hash": "e72d41c69a6c730c",
+              "quote_hash": "64149e9fefa65dd97a8c9121deea8fad3f2b86dc44e2ac861e5ce1664b7b3ea2"
+            }
+          ]
+        },
+        {
+          "label": "检测并解决的泄露秘密数",
+          "value": "600+",
+          "observed_at": "2026-03-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-944113caf8db4760",
+              "quote": "we have seen 191 new CVEs issued, 250+ new secrets prevented from leaking, and 600+ leaked secrets detected and resolved",
+              "source_content_hash": "e72d41c69a6c730c",
+              "quote_hash": "64149e9fefa65dd97a8c9121deea8fad3f2b86dc44e2ac861e5ce1664b7b3ea2"
+            }
+          ]
+        },
+        {
+          "label": "新增 Azure 积分与资金",
+          "value": "$5.5 million",
+          "observed_at": "2026-03-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-944113caf8db4760",
+              "quote": "GitHub Secure Open Source Fund is adding an additional $5.5 million in Azure credits and funding",
+              "source_content_hash": "e72d41c69a6c730c",
+              "quote_hash": "acd6bd21db894d94bffd1b66536f285cd485c427326c4459fefc3a0c08a3feec"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Dr. Kailash Nadh",
+          "quote": "We are committing to the GitHub Secure Open Source Fund in alignment with our long-standing commitment to the FOSS ecosystem, from which we benefit immensely. We see this program as an exciting win-win: getting money directly into the hands of FOSS developers, while enabling critical security improvements in software that benefits everyone.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-00c1604bde55bb72",
+              "quote": "We are committing to the GitHub Secure Open Source Fund in alignment with our long-standing commitment to the FOSS ecosystem, from which we benefit immensely. We see this program as an exciting win-win: getting money directly into the hands of FOSS developers, while enabling critical security improvements in software that benefits everyone. - Dr. Kailash Nadh, CTO // Zerodha",
+              "source_content_hash": "87e772e05a515e9d",
+              "quote_hash": "02a194cb5b3203204427aaa088af3a3e75ad5ae0cacf46d0dc3ddbf36ade5779"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是开源软件供应链安全在 AI 时代的重要性。GitHub Secure Open Source Fund 通过将资金与可验证的安全结果直接挂钩，验证了维护者赋能模式的有效性。已验证信号包括：138 个受支持项目产生了 191 个新 CVE、防止 250+ 个新秘密泄露、检测并解决 600+ 个泄露秘密，且影响数十亿次月度下载。证据边界：来源仅提供 GitHub 官方披露的汇总数据，未提供第三方审计或独立验证。",
+        "validated_signals": [
+          "138 个受支持项目产生了 191 个新 CVE",
+          "防止 250+ 个新秘密泄露",
+          "检测并解决 600+ 个泄露秘密",
+          "影响数十亿次月度下载"
+        ],
+        "risks": [
+          "资金来源依赖企业合作伙伴的持续承诺，若合作伙伴退出可能影响项目持续性",
+          "安全结果指标由 GitHub 自行披露，缺乏独立第三方验证",
+          "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "observability_evaluation",
+        "market_application_id": "ai_observability_governance",
+        "use_case_ids": [
+          "security_operations"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "开源软件安全",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是开源软件供应链安全在 AI 时代的重要性。GitHub Secure Open Source Fund 通过将资金与可验证的安全结果直接挂钩，验证了维护者赋能模式的有效性。已验证信号包括：138 个受支持项目产生了 191 个新 CVE、防止 250+ 个新秘密泄露、检测并解决 600+ 个泄露秘密，且影响数十亿次月度下载。证据边界：来源仅提供 GitHub 官方披露的汇总数据，未提供第三方审计或独立验证。",
+          "evidence_signals": [
+            "138 个受支持项目产生了 191 个新 CVE",
+            "防止 250+ 个新秘密泄露",
+            "检测并解决 600+ 个泄露秘密",
+            "影响数十亿次月度下载"
+          ],
+          "risks": [
+            "资金来源依赖企业合作伙伴的持续承诺，若合作伙伴退出可能影响项目持续性",
+            "安全结果指标由 GitHub 自行披露，缺乏独立第三方验证",
+            "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        },
+        "related_direction": {
+          "id": "DIR-20260725-02",
+          "title": "AI智能体从“辅助写作”转向“自主执行”，催生对智能体行为审计与权限控制的新需求"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "GitHub Secure Open Source Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Datadog",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Open WebUI",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Atlantic Council",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "OWASP",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Bootstrap",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Express.js",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "JUnit",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "nvm",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Oh My Zsh",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-33053abbe1a60b38",
+          "date": "2026-08-13",
+          "title": "50个开源项目教会我们的AI时代安全之道",
+          "amount": "$500,000 ",
+          "source_refs": [
+            "SA-046cf49385cb1524"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-08365977cd80206b",
+          "source_url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
+          "title": "50个开源项目教会我们的AI时代安全之道",
+          "publisher": "GitHub Blog AI",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-14T00:21:20.928Z",
+          "content_hash": "269f33be0068a71b",
+          "source_artifact_id": "SA-046cf49385cb1524",
+          "raw_id": "RAW-e8a26db70d6ad68c"
+        },
+        {
+          "source_id": "FISRC-5c12ac3e47274fd2",
+          "source_url": "https://github.com/open-source/github-secure-open-source-fund",
+          "title": "GitHub Secure Open Source Fund · GitHub",
+          "publisher": "github.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-14T03:13:04.703Z",
+          "content_hash": "f760f8dd148b6fee",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-00c1604bde55bb72",
+          "source_url": "https://github.blog/news-insights/company-news/announcing-github-secure-open-source-fund/",
+          "title": "Announcing GitHub Secure Open Source Fund: Help secure the open source ecosystem for everyone - The GitHub Blog",
+          "publisher": "github.blog",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-14T03:13:04.892Z",
+          "content_hash": "87e772e05a515e9d",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-b78bf2dcaa300aa7",
+          "source_url": "https://blog.getbootstrap.com/2025/08/10/github-secure-open-source-fund/",
+          "title": "GitHub Secure Open Source Fund | Bootstrap Blog",
+          "publisher": "blog.getbootstrap.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-14T03:13:04.363Z",
+          "content_hash": "6af2e6cbe4bcef01",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-944113caf8db4760",
+          "source_url": "https://github.blog/security/supply-chain-security/investing-in-the-people-shaping-open-source-and-securing-the-future-together/",
+          "title": "Investing in the people shaping open source and securing the future together - The GitHub Blog",
+          "publisher": "github.blog",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-14T03:13:06.382Z",
+          "content_hash": "e72d41c69a6c730c",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-14T03:13:56.065Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-14T03:13:56.065Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "GitHub Secure Open Source Fund"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-33053abbe1a60b38"
+      ],
+      "aggregation": {
+        "key": "EN-c5f011f1169120f2|other|USD:exact:500000:::|2026-08-13",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-901eb0951e568c40",
+          "event_ids": [
+            "EV-33053abbe1a60b38"
+          ],
+          "round": "其他融资",
+          "round_code": "other",
+          "round_original": "Session 4",
+          "amount_original": "$500,000",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 500000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "50 万美元"
+          },
+          "announced_at": "2026-08-13",
+          "disclosure_status": "partially_disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "security_software",
+        "name": "安全软件",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "infrastructure_compute",
+        "name": "基础设施与算力",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "observability_evaluation",
+        "name": "可观测与评估",
+        "method": "card_explicit"
+      },
+      "market_application": {
+        "dimension": "ai_market_application",
+        "id": "ai_observability_governance",
+        "name": "AI 可观测与治理",
+        "method": "card_explicit"
+      },
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-33053abbe1a60b38",
+        "direction": "opportunity-map.html#direction-cards"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-29dc2b4975d2ba0a",
+      "triggered_by_event_id": "EV-1765fd690cff1cac",
+      "as_of_date": "2026-08-14",
+      "company": {
+        "entity_id": "EN-2505fe8a9e908e04",
+        "name": "元点科技（SCALEFORCE）",
+        "full_name": "元点科技（SCALEFORCE）",
+        "website": "",
+        "summary": "元点科技是一家具身智能数据基础设施公司，致力于打造物理AI数据基础设施，通过物理AI操作系统MatrixOS及规模化数据生产网络，为具身智能产业链提供高质量物理交互数据的采集、处理、泛化、管理和分发服务。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "郭江亮",
+            "role": "创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c4b8a88227b8e5f0",
+                "quote": "创始人郭江亮曾为百度智能云创始成员",
+                "source_content_hash": "609009b0a465ebb9",
+                "quote_hash": "7575a91b38723c706e6492f778a87ab820cd70c27b108bb3a734c2642f3fc1b5"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-90f5ec745ecc9d6f",
+            "quote": "具身智能数据基础设施公司元点科技（SCALEFORCE）完成数千万元人民币融资",
+            "source_content_hash": "c2c36cdad6e49776",
+            "quote_hash": "57774b1fef40195946f5291aaa9a2bcad5d12943df1665e37d882a9d7622d3d4"
+          },
+          {
+            "source_id": "FISRC-c4b8a88227b8e5f0",
+            "quote": "元点科技瞄准这一机会，致力于打造物理AI数据基础设施。",
+            "source_content_hash": "609009b0a465ebb9",
+            "quote_hash": "0291b161143a0327e7c64faa945e338a1d6a4d6f20e49cefc782668da3ad1f49"
+          }
+        ],
+        "application_entity_id": "EN-2505fe8a9e908e04",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "基础设施融资",
+        "amount": "数千万",
+        "total_raised": "数千万元人民币",
+        "announced_at": "2026-08-13",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "国内顶级具身智能产业方",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-90f5ec745ecc9d6f",
+                "quote": "投资者包含国内顶级具身智能产业方、恒旭资本和凯联资本。",
+                "source_content_hash": "c2c36cdad6e49776",
+                "quote_hash": "0b7b6bf0dcc196c0fee8024d65555ab24b5232579b71663b91141d40bab819d1"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-ba15b89a1276cc"
+          },
+          {
+            "name": "恒旭资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-90f5ec745ecc9d6f",
+                "quote": "投资者包含国内顶级具身智能产业方、恒旭资本和凯联资本。",
+                "source_content_hash": "c2c36cdad6e49776",
+                "quote_hash": "0b7b6bf0dcc196c0fee8024d65555ab24b5232579b71663b91141d40bab819d1"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-0758315314873f"
+          },
+          {
+            "name": "凯联资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-90f5ec745ecc9d6f",
+                "quote": "投资者包含国内顶级具身智能产业方、恒旭资本和凯联资本。",
+                "source_content_hash": "c2c36cdad6e49776",
+                "quote_hash": "0b7b6bf0dcc196c0fee8024d65555ab24b5232579b71663b91141d40bab819d1"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-343ffdb4dcaafa"
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-90f5ec745ecc9d6f",
+            "quote": "40天2轮融资数千万，瞄准物理AI基础设施",
+            "source_content_hash": "c2c36cdad6e49776",
+            "quote_hash": "b23d71aa1f72a1d5d4fed85eeb68264c399657e3af9e8f617a102e61f7daaab7"
+          },
+          {
+            "source_id": "FISRC-90f5ec745ecc9d6f",
+            "quote": "近日，具身智能数据基础设施公司元点科技（SCALEFORCE）完成数千万元人民币融资，投资者包含国内顶级具身智能产业方、恒旭资本和凯联资本。",
+            "source_content_hash": "c2c36cdad6e49776",
+            "quote_hash": "7f0cba4617398b1c0c56d419e57e672c7d754e7e9b1fc22d7bdbd386a32e0c92"
+          },
+          {
+            "source_id": "FISRC-c4b8a88227b8e5f0",
+            "quote": "投资界获悉,今天(8月12日),具身智能数据基础设施公司元点科技(SCALEFORCE)首次披露融资:40天完成两轮,投资方包含国内顶级具身智能产业方、恒旭资本和凯联资本。",
+            "source_content_hash": "609009b0a465ebb9",
+            "quote_hash": "ef3d76e4953737867ba61b0ccaaceac5aaf77747605630336432febf561fb7d3"
+          }
+        ],
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "数千万",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万人民币–9000 万人民币"
+        },
+        "total_raised_original": "数千万元人民币",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "数千万元人民币"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-1765fd690cff1cac",
+            "round_original": "基础设施融资",
+            "amount": "数千万",
+            "announced_at": "2026-08-13",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-90f5ec745ecc9d6f",
+                "quote": "40天2轮融资数千万，瞄准物理AI基础设施",
+                "source_content_hash": "c2c36cdad6e49776",
+                "quote_hash": "b23d71aa1f72a1d5d4fed85eeb68264c399657e3af9e8f617a102e61f7daaab7"
+              },
+              {
+                "source_id": "FISRC-90f5ec745ecc9d6f",
+                "quote": "近日，具身智能数据基础设施公司元点科技（SCALEFORCE）完成数千万元人民币融资，投资者包含国内顶级具身智能产业方、恒旭资本和凯联资本。",
+                "source_content_hash": "c2c36cdad6e49776",
+                "quote_hash": "7f0cba4617398b1c0c56d419e57e672c7d754e7e9b1fc22d7bdbd386a32e0c92"
+              },
+              {
+                "source_id": "FISRC-c4b8a88227b8e5f0",
+                "quote": "投资界获悉,今天(8月12日),具身智能数据基础设施公司元点科技(SCALEFORCE)首次披露融资:40天完成两轮,投资方包含国内顶级具身智能产业方、恒旭资本和凯联资本。",
+                "source_content_hash": "609009b0a465ebb9",
+                "quote_hash": "ef3d76e4953737867ba61b0ccaaceac5aaf77747605630336432febf561fb7d3"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "数千万元人民币",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "unparsed",
+            "display_zh": "数千万元人民币"
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "CNY",
+              "value": null,
+              "min_value": 20000000,
+              "max_value": 90000000,
+              "unit": "base",
+              "round_count": 1,
+              "status": "range",
+              "display_zh": "2000 万人民币–9000 万人民币"
+            }
+          ],
+          "historical_round_count": 1
+        }
+      },
+      "products": [
+        {
+          "name": "MatrixOS",
+          "description": "物理AI操作系统，围绕具身智能数据建立的生产系统，前端连接真实物理世界持续获得数据，中间完成数据处理、清洗、泛化和管理，后端将数据交付给模型、机器人和具体应用场景。",
+          "target_customers": "本体厂商、世界模型公司、行业解决方案商",
+          "features": [
+            "ADA数据泛化引擎，可将数据跨本体复用的成功率提升至92%",
+            "GDP数据质量引擎，将数据可用转化率提升至国内最高的80%",
+            "支持全球数十万级数采节点的统一管理与调度，全流程自动化程度超过95%",
+            "亚毫秒级多传感器时间同步的数采套件，可同步大规模采集视觉、触觉、力觉、行为等全模态数据"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4b8a88227b8e5f0",
+              "quote": "公司推出了物理AI操作系统MatrixOS，其中包含ADA数据泛化引擎，可将数据跨本体复用的成功率提升至92%；以及GDP数据质量引擎，将数据可用转化率提升至国内最高的80%。",
+              "source_content_hash": "609009b0a465ebb9",
+              "quote_hash": "feab00f30bf8559344eedd25aec78fec300c502d7d807be5964f4502e0caf242"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "它石智航",
+          "industry": "具身智能",
+          "use_case": "定向场景数据采集+MatrixOS平台数据处理，助力它石智航A系列机器人进驻安波福工厂的多个作业场景",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4b8a88227b8e5f0",
+              "quote": "公司已拿下它石智航千万级数据订单——通过“定向场景数据采集+MatrixOS平台数据处理”服务,助力它石智航A系列机器人成功进驻安波福工厂的多个作业场景。",
+              "source_content_hash": "609009b0a465ebb9",
+              "quote_hash": "e18f4ff72dc4f30476956edce9a229845ec5dc9218e61786c1a62dd6e45a6d02"
+            }
+          ],
+          "entity_id": "EN-39ba5f9dcab4e98a"
+        },
+        {
+          "name": "智在无界",
+          "industry": "世界模型",
+          "use_case": "深度合作关系",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4b8a88227b8e5f0",
+              "quote": "元点科技已与包含智在无界在内的多家世界模型公司、头部具身智能本体厂商及行业解决方案商建立了深度合作关系",
+              "source_content_hash": "609009b0a465ebb9",
+              "quote_hash": "69ee7317fe323ddb818709cbf17dab96124ee82c1a279fde1610378becca0975"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "ADA数据泛化引擎跨本体复用成功率",
+          "value": "92%",
+          "observed_at": "2026-08-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4b8a88227b8e5f0",
+              "quote": "ADA数据泛化引擎，可将数据跨本体复用的成功率提升至92%",
+              "source_content_hash": "609009b0a465ebb9",
+              "quote_hash": "0270097c02bef3b1878f9f70d8d97582bee890e188c84f33e8c450fabe00ce4d"
+            }
+          ]
+        },
+        {
+          "label": "GDP数据质量引擎数据可用转化率",
+          "value": "80%",
+          "observed_at": "2026-08-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4b8a88227b8e5f0",
+              "quote": "GDP数据质量引擎，将数据可用转化率提升至国内最高的80%",
+              "source_content_hash": "609009b0a465ebb9",
+              "quote_hash": "f9f8ae996a658b25d182af63cd1998d4b4645fd3be4f8b43266ffa737435fd5e"
+            }
+          ]
+        },
+        {
+          "label": "数据生产网络全流程自动化程度",
+          "value": "超过95%",
+          "observed_at": "2026-08-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4b8a88227b8e5f0",
+              "quote": "全流程自动化程度超过95%",
+              "source_content_hash": "609009b0a465ebb9",
+              "quote_hash": "e1eb760462f7dd98ffa39de6ba3f88e6f6cd90c626f7618ea05a9272a1a07410"
+            }
+          ]
+        },
+        {
+          "label": "全球高质量物理交互数据总量",
+          "value": "约50万小时",
+          "observed_at": "2026-08-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4b8a88227b8e5f0",
+              "quote": "截至2026年初,全球可用的高质量物理交互数据总量仅约50万小时",
+              "source_content_hash": "609009b0a465ebb9",
+              "quote_hash": "eb121592f63bf8f5d2f6676f9a6c235ec1ed2cd5ab88ec901405db6a13725e48"
+            }
+          ]
+        },
+        {
+          "label": "2026年上半年国内具身智能赛道融资总额",
+          "value": "935亿元",
+          "observed_at": "2026-08-13",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-90f5ec745ecc9d6f",
+              "quote": "2026年上半年，国内具身智能赛道融资总额达935亿元，较去年同期暴涨5倍。",
+              "source_content_hash": "c2c36cdad6e49776",
+              "quote_hash": "1d49202b4a8c65b41970ac3bcb5eeb3889f867282a543332635283b5c3825d24"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "郭江亮",
+          "quote": "具身智能的竞争已进入主打数据与智能的下半场。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4b8a88227b8e5f0",
+              "quote": "“具身智能的竞争已进入主打数据与智能的下半场。”这是郭江亮看到的真实景象,也是他选择创业的原因。",
+              "source_content_hash": "609009b0a465ebb9",
+              "quote_hash": "ae3e4a6b943e61e5033ffd0d56ec73172eb8d89b118f9c3215624db6652bb678"
+            }
+          ]
+        },
+        {
+          "speaker": "郭江亮",
+          "quote": "我们这个团队最大的特点,是过去一起扛过枪、打过仗,都是摸数据、滚业绩的产业实战派和连续创业者。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4b8a88227b8e5f0",
+              "quote": "用郭江亮的话来说,“我们这个团队最大的特点,是过去一起扛过枪、打过仗,都是摸数据、滚业绩的产业实战派和连续创业者。”",
+              "source_content_hash": "609009b0a465ebb9",
+              "quote_hash": "721acd7cbff2945b0d013464d7448b4dc4ca9e95db33565413c259ba0f44fbcb"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是具身智能数据基础设施的稀缺性：通用具身大模型需要千万小时级高质量真实交互数据，而截至2026年初全球可用高质量物理交互数据仅约50万小时，缺口超过99%。元点科技以MatrixOS平台和规模化数据生产网络切入这一供给缺口，并已获得它石智航千万级数据订单，验证了商业化可行性。来源未披露本轮估值，也未提供投资机构的具体投资逻辑原话，因此无法确认估值所依赖的完整信号边界。",
+        "validated_signals": [
+          "已获得它石智航千万级数据订单",
+          "与多家世界模型公司、头部具身智能本体厂商及行业解决方案商建立合作",
+          "加入华为昇腾计算生态，是昇腾全球首批开源具身智能/世界模型数据和算法管线贡献者",
+          "与北京大学及北京航空航天大学建立具身智能前沿探索深度合作"
+        ],
+        "risks": [
+          "公司成立不足三个月，运营和商业化历史极短，规模化交付能力尚未经过长期验证",
+          "来源未披露具体融资金额和估值，资本判断缺乏估值锚点",
+          "数据基础设施的爆发依赖2027-2029年人形机器人规模化商业化窗口期，若行业落地节奏不及预期，数据需求可能延迟释放"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "data",
+        "market_application_id": "data_preparation_curation",
+        "use_case_ids": [
+          "data_analysis"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "具身智能数据基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是具身智能数据基础设施的稀缺性：通用具身大模型需要千万小时级高质量真实交互数据，而截至2026年初全球可用高质量物理交互数据仅约50万小时，缺口超过99%。元点科技以MatrixOS平台和规模化数据生产网络切入这一供给缺口，并已获得它石智航千万级数据订单，验证了商业化可行性。来源未披露本轮估值，也未提供投资机构的具体投资逻辑原话，因此无法确认估值所依赖的完整信号边界。",
+          "evidence_signals": [
+            "已获得它石智航千万级数据订单",
+            "与多家世界模型公司、头部具身智能本体厂商及行业解决方案商建立合作",
+            "加入华为昇腾计算生态，是昇腾全球首批开源具身智能/世界模型数据和算法管线贡献者",
+            "与北京大学及北京航空航天大学建立具身智能前沿探索深度合作"
+          ],
+          "risks": [
+            "公司成立不足三个月，运营和商业化历史极短，规模化交付能力尚未经过长期验证",
+            "来源未披露具体融资金额和估值，资本判断缺乏估值锚点",
+            "数据基础设施的爆发依赖2027-2029年人形机器人规模化商业化窗口期，若行业落地节奏不及预期，数据需求可能延迟释放"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "MatrixOS",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "郭江亮",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "国内顶级具身智能产业方",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "恒旭资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "凯联资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "它石智航",
+          "canonical_entity_id": "EN-39ba5f9dcab4e98a",
+          "canonical_name": "它石智航"
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "智在无界",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-1765fd690cff1cac",
+          "date": "2026-08-13",
+          "title": "具身数据来了实战派！40天2轮融资数千万，瞄准物理AI基础设施",
+          "amount": "数千万",
+          "source_refs": [
+            "SA-975101f2656ab727"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-90f5ec745ecc9d6f",
+          "source_url": "https://www.qbitai.com/2026/08/472060.html",
+          "title": "具身数据来了实战派！40天2轮融资数千万，瞄准物理AI基础设施",
+          "publisher": "量子位",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-14T00:21:19.299Z",
+          "content_hash": "c2c36cdad6e49776",
+          "source_artifact_id": "SA-975101f2656ab727",
+          "raw_id": "RAW-80382e0ead5cc119"
+        },
+        {
+          "source_id": "FISRC-c4b8a88227b8e5f0",
+          "source_url": "https://www.htx.com/zh-cn/news/two-funding-rounds-secured-in-40-days-embodied-data-practiti-MBhSsiZc/",
+          "title": "40天融两轮，具身数据实战派入局 | HTX资讯",
+          "publisher": "htx.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-08-14T03:10:53.188Z",
+          "content_hash": "609009b0a465ebb9",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-14T03:11:18.771Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-14T03:11:18.771Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 2,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "MatrixOS"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "郭江亮"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-1765fd690cff1cac"
+      ],
+      "aggregation": {
+        "key": "EN-2505fe8a9e908e04|infrastructure|CNY:range::20000000:90000000:|2026-08-13",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-29dc2b4975d2ba0a",
+          "event_ids": [
+            "EV-1765fd690cff1cac"
+          ],
+          "round": "基础设施融资",
+          "round_code": "infrastructure",
+          "round_original": "基础设施融资",
+          "amount_original": "数千万",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 20000000,
+            "max_value": 90000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2000 万人民币–9000 万人民币"
+          },
+          "announced_at": "2026-08-13",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "ai_infrastructure_software",
+        "name": "AI 基础设施软件",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "infrastructure_compute",
+        "name": "基础设施与算力",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "data",
+        "name": "数据",
+        "method": "card_explicit"
+      },
+      "market_application": {
+        "dimension": "ai_market_application",
+        "id": "data_preparation_curation",
+        "name": "数据准备与整理",
+        "method": "card_explicit"
+      },
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-1765fd690cff1cac",
+        "direction": ""
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-f55b62cf10cb7c98",
+      "triggered_by_event_id": "EV-f5dd6dec49ad83aa",
+      "as_of_date": "2026-08-14",
+      "company": {
+        "entity_id": "EN-c70eca6b0f88f44d",
+        "name": "Anthropic",
+        "full_name": "Anthropic",
+        "website": "",
+        "summary": "Anthropic是一家成立于2021年、专注于安全与负责任技术开发的人工智能公司，核心产品为Claude系列模型，主要面向企业级客户，覆盖软件工程、金融和医疗等行业。",
+        "headquarters": "San Francisco, CA",
+        "founders": [],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-077b1124fc8e9581",
+            "quote": "Founded in 2021, Anthropic has positioned itself as being focused on safety and responsible tech development.",
+            "source_content_hash": "7ff9bbd6aca29214",
+            "quote_hash": "a20b05e1bda45982ac0f87dc26bd5cb6a45d424d7b2f9a65dfac49f070c3a75d"
+          },
+          {
+            "source_id": "FISRC-2d91b8c40e694677",
+            "quote": "San Francisco, CA - February, 12, 2026 – GIC, a global institutional investor, has led Anthropic’s $30 billion Series G alongside Coatue, valuing Anthropic at $380 billion post-money.",
+            "source_content_hash": "a0ff76f6894f0267",
+            "quote_hash": "7843502f6dc6d3eee4a58235a44b3e0e825ff7ff63be44af5dc11a5184a7c48c"
+          }
+        ],
+        "application_entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_entity_consistent": true
+      },
+      "financing": {
+        "round": "G轮",
+        "amount": "$30 billion",
+        "total_raised": "",
+        "announced_at": "2026-08-10",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "GIC",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2d91b8c40e694677",
+                "quote": "GIC, a global institutional investor, has led Anthropic’s $30 billion Series G alongside Coatue, valuing Anthropic at $380 billion post-money.",
+                "source_content_hash": "a0ff76f6894f0267",
+                "quote_hash": "de507bc015d862739260e2ce19337e511d393916dd1bee9d748c8d93c7f22a72"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-517883c02d5d50"
+          },
+          {
+            "name": "Coatue Management",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-077b1124fc8e9581",
+                "quote": "Singapore’s sovereign wealth fund GIC and Coatue Management led the deal, Anthropic said on Thursday.",
+                "source_content_hash": "7ff9bbd6aca29214",
+                "quote_hash": "ac5298f37850c97064e8b1fb759b846d39b392aa5084f25a2ff167911b5cee47"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-0d309b859ee1fe"
+          },
+          {
+            "name": "DE Shaw & Co",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-077b1124fc8e9581",
+                "quote": "DE Shaw & Co, Dragoneer Investment Group, Peter Thiel’s Founders Fund, Iconiq and MGX co-led the round",
+                "source_content_hash": "7ff9bbd6aca29214",
+                "quote_hash": "bdfd56c7328c8886cb48b941b4f330aff7ca9c83b05f0664f43e60381537841f"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-1eb8612ea14293"
+          },
+          {
+            "name": "Dragoneer Investment Group",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-077b1124fc8e9581",
+                "quote": "DE Shaw & Co, Dragoneer Investment Group, Peter Thiel’s Founders Fund, Iconiq and MGX co-led the round",
+                "source_content_hash": "7ff9bbd6aca29214",
+                "quote_hash": "bdfd56c7328c8886cb48b941b4f330aff7ca9c83b05f0664f43e60381537841f"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-faa82844af0f53"
+          },
+          {
+            "name": "Founders Fund",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-077b1124fc8e9581",
+                "quote": "DE Shaw & Co, Dragoneer Investment Group, Peter Thiel’s Founders Fund, Iconiq and MGX co-led the round",
+                "source_content_hash": "7ff9bbd6aca29214",
+                "quote_hash": "bdfd56c7328c8886cb48b941b4f330aff7ca9c83b05f0664f43e60381537841f"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-fab7efd306c6f9"
+          },
+          {
+            "name": "Iconiq",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-077b1124fc8e9581",
+                "quote": "DE Shaw & Co, Dragoneer Investment Group, Peter Thiel’s Founders Fund, Iconiq and MGX co-led the round",
+                "source_content_hash": "7ff9bbd6aca29214",
+                "quote_hash": "bdfd56c7328c8886cb48b941b4f330aff7ca9c83b05f0664f43e60381537841f"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-67c7d458ae39ba"
+          },
+          {
+            "name": "MGX",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-077b1124fc8e9581",
+                "quote": "DE Shaw & Co, Dragoneer Investment Group, Peter Thiel’s Founders Fund, Iconiq and MGX co-led the round",
+                "source_content_hash": "7ff9bbd6aca29214",
+                "quote_hash": "bdfd56c7328c8886cb48b941b4f330aff7ca9c83b05f0664f43e60381537841f"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-e32837677acc56"
+          },
+          {
+            "name": "Sequoia Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-077b1124fc8e9581",
+                "quote": "along with participation from a who’s who of other investors, from Sequoia Capital and Lightspeed Venture Partners to Big Tech firms Nvidia Corp and Microsoft Corp.",
+                "source_content_hash": "7ff9bbd6aca29214",
+                "quote_hash": "f9050f59785f6003fc0699c9f5dcec1c1613171131640d36bc3ece33945c5d82"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-862e0e7d2ba5cf"
+          },
+          {
+            "name": "Lightspeed Venture Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-077b1124fc8e9581",
+                "quote": "along with participation from a who’s who of other investors, from Sequoia Capital and Lightspeed Venture Partners to Big Tech firms Nvidia Corp and Microsoft Corp.",
+                "source_content_hash": "7ff9bbd6aca29214",
+                "quote_hash": "f9050f59785f6003fc0699c9f5dcec1c1613171131640d36bc3ece33945c5d82"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-1528b125301283"
+          },
+          {
+            "name": "Nvidia Corp",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-077b1124fc8e9581",
+                "quote": "along with participation from a who’s who of other investors, from Sequoia Capital and Lightspeed Venture Partners to Big Tech firms Nvidia Corp and Microsoft Corp.",
+                "source_content_hash": "7ff9bbd6aca29214",
+                "quote_hash": "f9050f59785f6003fc0699c9f5dcec1c1613171131640d36bc3ece33945c5d82"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-aa8d5296592c57"
+          },
+          {
+            "name": "Microsoft Corp",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-077b1124fc8e9581",
+                "quote": "along with participation from a who’s who of other investors, from Sequoia Capital and Lightspeed Venture Partners to Big Tech firms Nvidia Corp and Microsoft Corp.",
+                "source_content_hash": "7ff9bbd6aca29214",
+                "quote_hash": "f9050f59785f6003fc0699c9f5dcec1c1613171131640d36bc3ece33945c5d82"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-6f80ee9d4de758"
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "GIC",
+            "role": "Series F 参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2d91b8c40e694677",
+                "quote": "This investment builds upon GIC’s significant investment in Anthropic’s $13B Series F, exemplifying GIC’s lifecycle investment approach",
+                "source_content_hash": "a0ff76f6894f0267",
+                "quote_hash": "88ada386b9a89ba03806fa6613b4fc8adda2326e794031cf77a4432f854d3099"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-517883c02d5d50"
+          },
+          {
+            "name": "Qatar Investment Authority",
+            "role": "Series F 参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-46e8b046ae7a64f0",
+                "quote": "GIC first invested in September 2025, joining Anthropic’s $13 billion Series F (alongside Qatar Investment Authority and Ontario Teachers’ Pension Plan).",
+                "source_content_hash": "62a5edd881d6cc6e",
+                "quote_hash": "391e366a08a482b8300bdb754bfb3ea9fe9401d88df0a21209bbe00e28242ed1"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-9e801f68178d22"
+          },
+          {
+            "name": "Ontario Teachers’ Pension Plan",
+            "role": "Series F 参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-46e8b046ae7a64f0",
+                "quote": "GIC first invested in September 2025, joining Anthropic’s $13 billion Series F (alongside Qatar Investment Authority and Ontario Teachers’ Pension Plan).",
+                "source_content_hash": "62a5edd881d6cc6e",
+                "quote_hash": "391e366a08a482b8300bdb754bfb3ea9fe9401d88df0a21209bbe00e28242ed1"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-2b9e2548935653"
+          },
+          {
+            "name": "Temasek",
+            "role": "Series H 重要投资者",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-46e8b046ae7a64f0",
+                "quote": "Anthropic’s official Series H announcement lists Temasek among the “significant investors”",
+                "source_content_hash": "62a5edd881d6cc6e",
+                "quote_hash": "31c5bab2b1238aee772d2d31bc1df6f611882b3dcdeff3516289387fc7a36c5c"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-91885d8d9e5635"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-eb1bcb5296fc137b",
+            "quote": "The fund co-led Anthropic's $30 billion Series G round in early 2026 at a valuation of approximately $380 billion; participated again in the subsequent $65 billion Series H in May 2026, which valued Anthropic at approximately $965 billion and surpassed OpenAI's reported mark at the time; and backed a $1.5 billion enterprise services venture Anthropic launched in May, as TechTimes reporting on Anthropic's investor network has documented.",
+            "source_content_hash": "a62b9b0adfd8c881",
+            "quote_hash": "7a03f953e25191a1a460ddf4835a98bb22adb1863571340991b52f86802f9d53"
+          },
+          {
+            "source_id": "FISRC-2d91b8c40e694677",
+            "quote": "GIC, a global institutional investor, has led Anthropic’s $30 billion Series G alongside Coatue, valuing Anthropic at $380 billion post-money.",
+            "source_content_hash": "a0ff76f6894f0267",
+            "quote_hash": "de507bc015d862739260e2ce19337e511d393916dd1bee9d748c8d93c7f22a72"
+          },
+          {
+            "source_id": "FISRC-077b1124fc8e9581",
+            "quote": "Anthropic has completed a deal to raise US$30 billion ($37.9 billion) in funding from investors at a US$380 billion valuation, including the money raised",
+            "source_content_hash": "7ff9bbd6aca29214",
+            "quote_hash": "2266fdc18f3c6f7d216366c47468980ef69ecd205f0e2eba014b7d9cc44acb64"
+          }
+        ],
+        "round_code": "series_g",
+        "round_original": "G轮",
+        "amount_original": "$30 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 亿美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-f5dd6dec49ad83aa",
+            "round_original": "G轮",
+            "amount": "$30 billion",
+            "announced_at": "2026-08-10",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-eb1bcb5296fc137b",
+                "quote": "The fund co-led Anthropic's $30 billion Series G round in early 2026 at a valuation of approximately $380 billion; participated again in the subsequent $65 billion Series H in May 2026, which valued Anthropic at approximately $965 billion and surpassed OpenAI's reported mark at the time; and backed a $1.5 billion enterprise services venture Anthropic launched in May, as TechTimes reporting on Anthropic's investor network has documented.",
+                "source_content_hash": "a62b9b0adfd8c881",
+                "quote_hash": "7a03f953e25191a1a460ddf4835a98bb22adb1863571340991b52f86802f9d53"
+              },
+              {
+                "source_id": "FISRC-2d91b8c40e694677",
+                "quote": "GIC, a global institutional investor, has led Anthropic’s $30 billion Series G alongside Coatue, valuing Anthropic at $380 billion post-money.",
+                "source_content_hash": "a0ff76f6894f0267",
+                "quote_hash": "de507bc015d862739260e2ce19337e511d393916dd1bee9d748c8d93c7f22a72"
+              },
+              {
+                "source_id": "FISRC-077b1124fc8e9581",
+                "quote": "Anthropic has completed a deal to raise US$30 billion ($37.9 billion) in funding from investors at a US$380 billion valuation, including the money raised",
+                "source_content_hash": "7ff9bbd6aca29214",
+                "quote_hash": "2266fdc18f3c6f7d216366c47468980ef69ecd205f0e2eba014b7d9cc44acb64"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 111500000000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 5,
+              "status": "exact",
+              "display_zh": "1115 亿美元"
+            }
+          ],
+          "historical_round_count": 5
+        }
+      },
+      "products": [
+        {
+          "name": "Claude",
+          "description": "Anthropic的核心AI模型与产品系列，面向企业客户，支持API、Claude Code和Claude for Work等多种使用方式，覆盖软件工程、金融和医疗等行业场景。",
+          "target_customers": "企业客户，包括大型企业和开发者",
+          "features": [
+            "企业级AI模型",
+            "编码代理，可编写和调试软件",
+            "自动化法律工作工具",
+            "自动化企业工作任务，包括金融研究"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2d91b8c40e694677",
+              "quote": "Claude is becoming more and more critical to how businesses work",
+              "source_content_hash": "a0ff76f6894f0267",
+              "quote_hash": "d1b3d5867a10947e07b3188a55e61d8c6db68f964b9aa79ebd077945d77df438"
+            },
+            {
+              "source_id": "FISRC-077b1124fc8e9581",
+              "quote": "Anthropic’s technology, including coding agents that can write and debug software with minimal human input, has recently shaken global markets.",
+              "source_content_hash": "7ff9bbd6aca29214",
+              "quote_hash": "038851bcb5abe08ec521c9fd4c5f8b91292e0f437e736382431f060deef04b6e"
+            }
+          ],
+          "entity_id": "EN-729324072d368379"
+        }
+      ],
+      "customers": [
+        {
+          "name": "Fortune 10企业（八家）",
+          "industry": "",
+          "use_case": "企业级AI应用",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2d91b8c40e694677",
+              "quote": "Eight of the Fortune 10 are now Claude customers.",
+              "source_content_hash": "a0ff76f6894f0267",
+              "quote_hash": "baed38e60c6bf4a2a651b32a06248d47b57f37673f5f81ce8f2b5f2701ff1702"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "OpenAI",
+          "product": "OpenAI模型与产品",
+          "scenario": "企业级AI模型与产品竞争",
+          "target_customer": "企业客户",
+          "funding_summary": "OpenAI aims to raise up to US$100 billion",
+          "core_difference": "Anthropic在2026年5月Series H后估值约9650亿美元，超过OpenAI当时报道的估值；OpenAI同期目标融资额最高达1000亿美元，并计划投入超过1.4万亿美元用于AI基础设施，而Anthropic计划投入500亿美元建设美国数据中心。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb1bcb5296fc137b",
+              "quote": "participated again in the subsequent $65 billion Series H in May 2026, which valued Anthropic at approximately $965 billion and surpassed OpenAI's reported mark at the time",
+              "source_content_hash": "a62b9b0adfd8c881",
+              "quote_hash": "e89b99cdaa00feda457ef679739a583edb0720d298908dda8741ae751f726fa3"
+            },
+            {
+              "source_id": "FISRC-077b1124fc8e9581",
+              "quote": "OpenAI aims to raise up to US$100 billion",
+              "source_content_hash": "7ff9bbd6aca29214",
+              "quote_hash": "5e2e693ac9b18df587f02c280d7df46b139e8435ccbfa29d043d2816cc198ede"
+            },
+            {
+              "source_id": "FISRC-077b1124fc8e9581",
+              "quote": "However, those investments are dwarfed by OpenAI, which has committed to spend more than US$1.4 trillion on AI infrastructure in the coming years.",
+              "source_content_hash": "7ff9bbd6aca29214",
+              "quote_hash": "43df2b895ea46a50a2b9c16202fdce01a0bd1193db6d71df59ad16e365546b68"
+            }
+          ],
+          "entity_id": "EN-7d3194f79e645c42"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "收入运行率",
+          "value": "$14 billion",
+          "observed_at": "2026-02-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2d91b8c40e694677",
+              "quote": "the company’s run-rate has grown to $14 billion",
+              "source_content_hash": "a0ff76f6894f0267",
+              "quote_hash": "84d8292763531b4738f00f86d9680caa1a5a31f57b212ab15fc13d7e62d3fd31"
+            }
+          ]
+        },
+        {
+          "label": "年消费超100万美元客户数",
+          "value": "超过500家",
+          "observed_at": "2026-02-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2d91b8c40e694677",
+              "quote": "Two years ago, a dozen customers spent over $1 million annually with Anthropic, and today that number exceeds 500.",
+              "source_content_hash": "a0ff76f6894f0267",
+              "quote_hash": "3abec300badbf0ddc2cdc73f27551c758cef3eb8869727c57dd6ed1081696702"
+            }
+          ]
+        },
+        {
+          "label": "年消费超10万美元客户增长",
+          "value": "7倍",
+          "observed_at": "2026-02-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2d91b8c40e694677",
+              "quote": "In the past year, Anthropic customers spending over $100,000 annually on Claude (as represented by run-rate revenue) has grown 7x.",
+              "source_content_hash": "a0ff76f6894f0267",
+              "quote_hash": "d3dc72e9e0875fbb71503b00662c6a2e29a140d0d8d511cd258e729ccf01932e"
+            }
+          ]
+        },
+        {
+          "label": "Series G估值",
+          "value": "$380 billion post-money",
+          "observed_at": "2026-02-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2d91b8c40e694677",
+              "quote": "valuing Anthropic at $380 billion post-money",
+              "source_content_hash": "a0ff76f6894f0267",
+              "quote_hash": "3c0ab19ed4f9855eaca47c9d73043c671ca1e17d8ed14d4be7915e58d11bbe93"
+            }
+          ]
+        },
+        {
+          "label": "Series H估值",
+          "value": "$965 billion post-money",
+          "observed_at": "2026-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-46e8b046ae7a64f0",
+              "quote": "In May 2026, Anthropic announced a $65 billion Series H at a $965 billion post-money valuation.",
+              "source_content_hash": "62a5edd881d6cc6e",
+              "quote_hash": "281b15a0dcd1ee62f5c91bbcb5f7a80058fa7522c5bf3a96d150cdcb9e97dafb"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Krishna Rao",
+          "quote": "Whether it is entrepreneurs, startups, or the world’s largest enterprises, the message from our customers is the same: Claude is becoming more and more critical to how businesses work.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2d91b8c40e694677",
+              "quote": "Whether it is entrepreneurs, startups, or the world’s largest enterprises, the message from our customers is the same: Claude is becoming more and more critical to how businesses work",
+              "source_content_hash": "a0ff76f6894f0267",
+              "quote_hash": "770886124df740cc702000a10663cef7f9cbabf8c62ca5e2fe379ea9bf9b6c35"
+            }
+          ]
+        },
+        {
+          "speaker": "Chris Emanuel",
+          "quote": "Anthropic’s thoughtful approach to AI development is changing the way enterprises operate.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2d91b8c40e694677",
+              "quote": "Anthropic’s thoughtful approach to AI development is changing the way enterprises operate",
+              "source_content_hash": "a0ff76f6894f0267",
+              "quote_hash": "ad8648d76356041ad5174074cfcbdb094b73cdfaa4f6a8929bfa14b46b231d40"
+            }
+          ]
+        },
+        {
+          "speaker": "Choo Yong Cheen",
+          "quote": "Anthropic is the clear category leader in enterprise AI, demonstrating breakthrough capabilities and setting a new standard for safety, performance, and scale that will drive their long-term success.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2d91b8c40e694677",
+              "quote": "Anthropic is the clear category leader in enterprise AI, demonstrating breakthrough capabilities and setting a new standard for safety, performance, and scale that will drive their long-term success",
+              "source_content_hash": "a0ff76f6894f0267",
+              "quote_hash": "9a537ace8f2defb0d7ba0ecb9045707bfe514569a3cff316ee08a48d1d905c1c"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是Anthropic在企业AI市场的品类领导地位及其收入运行率的超高速增长。已验证信号包括：收入运行率达到140亿美元，过去三年每年增长超过10倍；年消费超100万美元的客户从两年前的十几家增至超过500家；年消费超10万美元的客户数同比增长7倍；八家财富10强企业已成为Claude客户。GIC以3800亿美元投后估值领投本轮，并在后续Series H中继续联合领投，体现其'生命周期投资'策略。证据边界：来源未披露GIC本轮具体投资金额，也未披露Anthropic累计融资总额。",
+        "validated_signals": [
+          "收入运行率达到140亿美元，过去三年每年增长超过10倍",
+          "年消费超100万美元的客户超过500家",
+          "年消费超10万美元的客户数同比增长7倍",
+          "八家财富10强企业成为Claude客户"
+        ],
+        "risks": [
+          "Anthropic在AI基础设施上支出巨大，计划投入500亿美元建设美国数据中心，并采购数百亿美元谷歌专用AI芯片，资本开支压力显著。",
+          "GIC自身也承认AI领域存在集中度风险，快速投资于半导体、数据中心、电力和AI模型增加了识别长期赢家的难度。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "models",
+        "use_case_ids": [
+          "software_development",
+          "knowledge_search",
+          "data_analysis"
+        ],
+        "industry_ids": [
+          "financial_services",
+          "healthcare_life_sciences"
+        ],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ],
+        "sector": "企业级AI模型与产品",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Anthropic在企业AI市场的品类领导地位及其收入运行率的超高速增长。已验证信号包括：收入运行率达到140亿美元，过去三年每年增长超过10倍；年消费超100万美元的客户从两年前的十几家增至超过500家；年消费超10万美元的客户数同比增长7倍；八家财富10强企业已成为Claude客户。GIC以3800亿美元投后估值领投本轮，并在后续Series H中继续联合领投，体现其'生命周期投资'策略。证据边界：来源未披露GIC本轮具体投资金额，也未披露Anthropic累计融资总额。",
+          "evidence_signals": [
+            "收入运行率达到140亿美元，过去三年每年增长超过10倍",
+            "年消费超100万美元的客户超过500家",
+            "年消费超10万美元的客户数同比增长7倍",
+            "八家财富10强企业成为Claude客户"
+          ],
+          "risks": [
+            "Anthropic在AI基础设施上支出巨大，计划投入500亿美元建设美国数据中心，并采购数百亿美元谷歌专用AI芯片，资本开支压力显著。",
+            "GIC自身也承认AI领域存在集中度风险，快速投资于半导体、数据中心、电力和AI模型增加了识别长期赢家的难度。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Claude",
+          "canonical_entity_id": "EN-729324072d368379",
+          "canonical_name": "Claude"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "GIC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Coatue Management",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "DE Shaw & Co",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Dragoneer Investment Group",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Founders Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Iconiq",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "MGX",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Sequoia Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Lightspeed Venture Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Nvidia Corp",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Microsoft Corp",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "GIC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Qatar Investment Authority",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Ontario Teachers’ Pension Plan",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Temasek",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Fortune 10企业（八家）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "OpenAI",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI"
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-f5dd6dec49ad83aa",
+          "date": "2026-08-10",
+          "title": "主权资本以房东身份进军AI：忒修斯构建所有权，而非仅限芯片",
+          "amount": "$30 billion",
+          "source_refs": [
+            "SA-a738ef2d45882afb"
+          ]
+        },
+        {
+          "event_id": "EV-78a11d309c3d4e97",
+          "date": "2026-07-05",
+          "title": "科技初创公司融资轮次：过去30天，每周更新",
+          "amount": "$3.5B",
+          "source_refs": [
+            "SA-a55430d2409741e9"
+          ]
+        },
+        {
+          "event_id": "EV-8861a42a8679562a",
+          "date": "2026-06-10",
+          "title": "Apollo 与 Blackstone 为 Anthropic 完成 350 亿美元 AI 基础设施融资",
+          "amount": "$35 billion",
+          "source_refs": [
+            "SA-e479f38b2a986b2d"
+          ]
+        },
+        {
+          "event_id": "EV-201b25d4f3cf696a",
+          "date": "2026-06-02",
+          "title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
+          "amount": "$100M",
+          "source_refs": [
+            "SA-a3709f58440df90e"
+          ]
+        },
+        {
+          "event_id": "EV-31df816db86db282",
+          "date": "2026-06-01",
+          "title": "44 轮融资，26.6 亿美元：2026 年第一季度 AI 智能体融资地图",
+          "amount": "$30 billion",
+          "source_refs": [
+            "SA-c10a82f9a8a1df71"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-eb1bcb5296fc137b",
+          "source_url": "https://www.techtimes.com/articles/323813/20260810/sovereign-capital-enters-ai-landlord-theseus-structures-ownership-not-just-chips.htm",
+          "title": "主权资本以房东身份进军AI：忒修斯构建所有权，而非仅限芯片",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-14T00:20:32.689Z",
+          "content_hash": "a62b9b0adfd8c881",
+          "source_artifact_id": "SA-a738ef2d45882afb",
+          "raw_id": "RAW-0fcdf40e36b60485"
+        },
+        {
+          "source_id": "FISRC-2d91b8c40e694677",
+          "source_url": "https://www.gic.com.sg/newsroom/all/gic-leads-30-billion-series-g-in-anthropic/",
+          "title": "GIC Leads $30 Billion Series G in Anthropic | GIC Newsroom",
+          "publisher": "gic.com.sg",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-14T03:12:18.797Z",
+          "content_hash": "a0ff76f6894f0267",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-077b1124fc8e9581",
+          "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
+          "title": "GIC-backed OpenAI rival Anthropic finalises US$30 bil funding at US$380 bil value",
+          "publisher": "sg.finance.yahoo.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-08-14T03:12:13.741Z",
+          "content_hash": "7ff9bbd6aca29214",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-46e8b046ae7a64f0",
+          "source_url": "https://sgai.md/sovereign-capital-frontier-ai/",
+          "title": "What GIC and Temasek have invested in AI: the full public… · sgai",
+          "publisher": "sgai.md",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-14T03:12:14.179Z",
+          "content_hash": "62a5edd881d6cc6e",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-14T03:13:19.260Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-14T03:13:19.260Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 1,
+          "total": 1,
+          "unresolved_names": []
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-f5dd6dec49ad83aa"
+      ],
+      "aggregation": {
+        "key": "EN-c70eca6b0f88f44d|series_g|USD:exact:30000000000:::|2026-08-10",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-f55b62cf10cb7c98",
+          "event_ids": [
+            "EV-f5dd6dec49ad83aa"
+          ],
+          "round": "G轮",
+          "round_code": "series_g",
+          "round_original": "G轮",
+          "amount_original": "$30 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 30000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "300 亿美元"
+          },
+          "announced_at": "2026-08-10",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        },
+        {
+          "funding_insight_id": "FI-5f1fc44327efde20",
+          "event_ids": [
+            "EV-8861a42a8679562a"
+          ],
+          "round": "基础设施融资",
+          "round_code": "infrastructure",
+          "round_original": "基础设施融资",
+          "amount_original": "350亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 35000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "350 亿美元"
+          },
+          "announced_at": "2026-06-10",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": false
+        },
+        {
+          "funding_insight_id": "FI-352a7cfb23508f3e",
+          "event_ids": [
+            "EV-31df816db86db282"
+          ],
+          "round": "G轮",
+          "round_code": "series_g",
+          "round_original": "Series G",
+          "amount_original": "$30 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 30000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "300 亿美元"
+          },
+          "announced_at": "2026-02-12",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": false
+        },
+        {
+          "funding_insight_id": "FI-0312b291d6672487",
+          "event_ids": [
+            "EV-201b25d4f3cf696a"
+          ],
+          "round": "F轮",
+          "round_code": "series_f",
+          "round_original": "Series F",
+          "amount_original": "$13 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 13000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "130 亿美元"
+          },
+          "announced_at": "2025-09-02",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": false
+        },
+        {
+          "funding_insight_id": "FI-6601d010adc14dd0",
+          "event_ids": [
+            "EV-78a11d309c3d4e97"
+          ],
+          "round": "E轮",
+          "round_code": "series_e",
+          "round_original": "Series E",
+          "amount_original": "$3.5B",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 3500000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "35 亿美元"
+          },
+          "announced_at": "2025-03-03",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": false
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "model",
+        "name": "模型",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "infrastructure_compute",
+        "name": "基础设施与算力",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "development_deployment",
+        "name": "开发与部署",
+        "method": "card_explicit"
+      },
+      "market_application": {
+        "dimension": "ai_market_application",
+        "id": "models",
+        "name": "模型",
+        "method": "card_explicit"
+      },
+      "links": {
+        "company": "data-center.html?view=index&detail=entity&id=EN-c70eca6b0f88f44d",
+        "relation_map": "data-center.html?view=relations&entity=EN-c70eca6b0f88f44d",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-f5dd6dec49ad83aa",
+        "direction": ""
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-98e08b099fb39138",
+      "triggered_by_event_id": "EV-c1295b8f58024ff6",
+      "as_of_date": "2026-08-14",
+      "company": {
+        "entity_id": "EN-249fdefbb63fa7b3",
+        "name": "Lemma",
+        "full_name": "Lemma",
+        "website": "https://lemma.com",
+        "summary": "Lemma 是一家位于旧金山的 AI 智能体可靠性初创公司，构建生产监控基础设施，用于捕捉那些看似完成任务但实际产生错误结果的静默失败智能体。",
+        "headquarters": "San Francisco",
+        "founders": [
+          {
+            "name": "Jerry Zhang",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-efe4db4aff32c4ea",
+                "quote": "Founded by Jerry Zhang and Cole Gawin, Lemma builds production monitoring for AI agents.",
+                "source_content_hash": "af7a29745db5560a",
+                "quote_hash": "92d2a7cb446790438e70f24099c155c639af578f3f444dbd5f38621946365787"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Cole Gawin",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-efe4db4aff32c4ea",
+                "quote": "Founded by Jerry Zhang and Cole Gawin, Lemma builds production monitoring for AI agents.",
+                "source_content_hash": "af7a29745db5560a",
+                "quote_hash": "92d2a7cb446790438e70f24099c155c639af578f3f444dbd5f38621946365787"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-efe4db4aff32c4ea",
+            "quote": "an AI agent reliability startup, has raised $2.3 million in pre-seed funding to build monitoring infrastructure that catches agents which appear to complete a task while quietly producing the wrong result.",
+            "source_content_hash": "af7a29745db5560a",
+            "quote_hash": "7243ac696c19d0fd557463f1989b9fac3424040e24d954f43e45389ddd6bad35"
+          },
+          {
+            "source_id": "FISRC-4246d8910d984d9c",
+            "quote": "Lemma, a San Francisco-based startup specializing in production monitoring infrastructure for AI agents, has raised $2.3 million in a pre-seed funding round.",
+            "source_content_hash": "9b35946c620419a7",
+            "quote_hash": "26af8bb60ccfa44a468c69b04c66a01f6b86ee26342c3fdbfa1900cefb2a3aa1"
+          }
+        ],
+        "application_entity_id": "EN-249fdefbb63fa7b3",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "预种子轮",
+        "amount": "$2.3M",
+        "total_raised": "$2.3M",
+        "announced_at": "2026-08-07",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Matrix",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-efe4db4aff32c4ea",
+                "quote": "Matrix Dealroom has a profile for this one. Try Dealroom → , Y Combinator , Liquid 2 Ventures , Vermilion Cliffs Ventures Dealroom has a profile for this one. Try Dealroom → , Irregular Expressions Dealroom has a profile for this one. Try Dealroom → , Cervin Ventures Dealroom has a profile for this one. Try Dealroom → , Comma Capital Dealroom has a profile for this one. Try Dealroom → , Position Ventures Dealroom has a profile for this one. Try Dealroom → , and Eight Capital Dealroom has a profile for this one. Try Dealroom → took part.",
+                "source_content_hash": "af7a29745db5560a",
+                "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-6089a0da54696e"
+          },
+          {
+            "name": "Y Combinator",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-efe4db4aff32c4ea",
+                "quote": "Matrix Dealroom has a profile for this one. Try Dealroom → , Y Combinator , Liquid 2 Ventures , Vermilion Cliffs Ventures Dealroom has a profile for this one. Try Dealroom → , Irregular Expressions Dealroom has a profile for this one. Try Dealroom → , Cervin Ventures Dealroom has a profile for this one. Try Dealroom → , Comma Capital Dealroom has a profile for this one. Try Dealroom → , Position Ventures Dealroom has a profile for this one. Try Dealroom → , and Eight Capital Dealroom has a profile for this one. Try Dealroom → took part.",
+                "source_content_hash": "af7a29745db5560a",
+                "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
+              }
+            ],
+            "entity_id": "EN-275b0f4a4023d91c",
+            "institution_id": "INV-7a5c599caeb7de"
+          },
+          {
+            "name": "Liquid 2 Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-efe4db4aff32c4ea",
+                "quote": "Matrix Dealroom has a profile for this one. Try Dealroom → , Y Combinator , Liquid 2 Ventures , Vermilion Cliffs Ventures Dealroom has a profile for this one. Try Dealroom → , Irregular Expressions Dealroom has a profile for this one. Try Dealroom → , Cervin Ventures Dealroom has a profile for this one. Try Dealroom → , Comma Capital Dealroom has a profile for this one. Try Dealroom → , Position Ventures Dealroom has a profile for this one. Try Dealroom → , and Eight Capital Dealroom has a profile for this one. Try Dealroom → took part.",
+                "source_content_hash": "af7a29745db5560a",
+                "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-2d09597331b1f0"
+          },
+          {
+            "name": "Vermilion Cliffs Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-efe4db4aff32c4ea",
+                "quote": "Matrix Dealroom has a profile for this one. Try Dealroom → , Y Combinator , Liquid 2 Ventures , Vermilion Cliffs Ventures Dealroom has a profile for this one. Try Dealroom → , Irregular Expressions Dealroom has a profile for this one. Try Dealroom → , Cervin Ventures Dealroom has a profile for this one. Try Dealroom → , Comma Capital Dealroom has a profile for this one. Try Dealroom → , Position Ventures Dealroom has a profile for this one. Try Dealroom → , and Eight Capital Dealroom has a profile for this one. Try Dealroom → took part.",
+                "source_content_hash": "af7a29745db5560a",
+                "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-381038e7a30a33"
+          },
+          {
+            "name": "Irregular Expressions",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-efe4db4aff32c4ea",
+                "quote": "Matrix Dealroom has a profile for this one. Try Dealroom → , Y Combinator , Liquid 2 Ventures , Vermilion Cliffs Ventures Dealroom has a profile for this one. Try Dealroom → , Irregular Expressions Dealroom has a profile for this one. Try Dealroom → , Cervin Ventures Dealroom has a profile for this one. Try Dealroom → , Comma Capital Dealroom has a profile for this one. Try Dealroom → , Position Ventures Dealroom has a profile for this one. Try Dealroom → , and Eight Capital Dealroom has a profile for this one. Try Dealroom → took part.",
+                "source_content_hash": "af7a29745db5560a",
+                "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-84899b73c9e8c4"
+          },
+          {
+            "name": "Cervin Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-efe4db4aff32c4ea",
+                "quote": "Matrix Dealroom has a profile for this one. Try Dealroom → , Y Combinator , Liquid 2 Ventures , Vermilion Cliffs Ventures Dealroom has a profile for this one. Try Dealroom → , Irregular Expressions Dealroom has a profile for this one. Try Dealroom → , Cervin Ventures Dealroom has a profile for this one. Try Dealroom → , Comma Capital Dealroom has a profile for this one. Try Dealroom → , Position Ventures Dealroom has a profile for this one. Try Dealroom → , and Eight Capital Dealroom has a profile for this one. Try Dealroom → took part.",
+                "source_content_hash": "af7a29745db5560a",
+                "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-eae5793414336e"
+          },
+          {
+            "name": "Comma Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-efe4db4aff32c4ea",
+                "quote": "Matrix Dealroom has a profile for this one. Try Dealroom → , Y Combinator , Liquid 2 Ventures , Vermilion Cliffs Ventures Dealroom has a profile for this one. Try Dealroom → , Irregular Expressions Dealroom has a profile for this one. Try Dealroom → , Cervin Ventures Dealroom has a profile for this one. Try Dealroom → , Comma Capital Dealroom has a profile for this one. Try Dealroom → , Position Ventures Dealroom has a profile for this one. Try Dealroom → , and Eight Capital Dealroom has a profile for this one. Try Dealroom → took part.",
+                "source_content_hash": "af7a29745db5560a",
+                "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-bd82030d9ce36b"
+          },
+          {
+            "name": "Position Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-efe4db4aff32c4ea",
+                "quote": "Matrix Dealroom has a profile for this one. Try Dealroom → , Y Combinator , Liquid 2 Ventures , Vermilion Cliffs Ventures Dealroom has a profile for this one. Try Dealroom → , Irregular Expressions Dealroom has a profile for this one. Try Dealroom → , Cervin Ventures Dealroom has a profile for this one. Try Dealroom → , Comma Capital Dealroom has a profile for this one. Try Dealroom → , Position Ventures Dealroom has a profile for this one. Try Dealroom → , and Eight Capital Dealroom has a profile for this one. Try Dealroom → took part.",
+                "source_content_hash": "af7a29745db5560a",
+                "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-990726a1e58657"
+          },
+          {
+            "name": "Eight Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-efe4db4aff32c4ea",
+                "quote": "Matrix Dealroom has a profile for this one. Try Dealroom → , Y Combinator , Liquid 2 Ventures , Vermilion Cliffs Ventures Dealroom has a profile for this one. Try Dealroom → , Irregular Expressions Dealroom has a profile for this one. Try Dealroom → , Cervin Ventures Dealroom has a profile for this one. Try Dealroom → , Comma Capital Dealroom has a profile for this one. Try Dealroom → , Position Ventures Dealroom has a profile for this one. Try Dealroom → , and Eight Capital Dealroom has a profile for this one. Try Dealroom → took part.",
+                "source_content_hash": "af7a29745db5560a",
+                "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-c031c90c3694b6"
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Angel investors and operators from OpenAI, xAI, Meta, and DoorDash",
+            "role": "本轮天使投资人与行业从业者",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-efe4db4aff32c4ea",
+                "quote": "Angel investors and operators from OpenAI , xAI , Meta , and DoorDash also joined.",
+                "source_content_hash": "af7a29745db5560a",
+                "quote_hash": "e39d4c9a07139bbf9cb39a2787e7ab8a2da64aece5834dc690e81baa65ffbd6d"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-2b64560ee041d4"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-efe4db4aff32c4ea",
+            "quote": "News › Lemma raises $2.3M pre-seed to catch AI agents that fail sil…",
+            "source_content_hash": "af7a29745db5560a",
+            "quote_hash": "5241a1b40114e1a52b211e1c13b4ae52a30c8921e414826468d5b839e794a367"
+          },
+          {
+            "source_id": "FISRC-efe4db4aff32c4ea",
+            "quote": "has raised $2.3 million in pre-seed funding to build monitoring infrastructure that catches agents which appear to complete a task while quietly producing the wrong result.",
+            "source_content_hash": "af7a29745db5560a",
+            "quote_hash": "c2f1a539e44483e87f9201e32ac61cc530a027d5d04c028125bd60385145a408"
+          },
+          {
+            "source_id": "FISRC-4246d8910d984d9c",
+            "quote": "The round included participation from Matrix, Y Combinator, Liquid 2 Ventures, Vermilion Cliffs Ventures, Irregular Expressions, Cervin Ventures, Comma Capital, Position Ventures, and Eight Capital, along with various angel investors and operators from OpenAI, xAI, Meta, and DoorDash.",
+            "source_content_hash": "9b35946c620419a7",
+            "quote_hash": "fb4b07c129294f8e1a6c17a204b1f2fffc47912d4e377fb93d6c4563cc5caecd"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "$2.3M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "230 万美元"
+        },
+        "total_raised_original": "$2.3M",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 2300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "230 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-c1295b8f58024ff6",
+            "round_original": "预种子轮",
+            "amount": "$2.3M",
+            "announced_at": "2026-08-07",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-efe4db4aff32c4ea",
+                "quote": "News › Lemma raises $2.3M pre-seed to catch AI agents that fail sil…",
+                "source_content_hash": "af7a29745db5560a",
+                "quote_hash": "5241a1b40114e1a52b211e1c13b4ae52a30c8921e414826468d5b839e794a367"
+              },
+              {
+                "source_id": "FISRC-efe4db4aff32c4ea",
+                "quote": "has raised $2.3 million in pre-seed funding to build monitoring infrastructure that catches agents which appear to complete a task while quietly producing the wrong result.",
+                "source_content_hash": "af7a29745db5560a",
+                "quote_hash": "c2f1a539e44483e87f9201e32ac61cc530a027d5d04c028125bd60385145a408"
+              },
+              {
+                "source_id": "FISRC-4246d8910d984d9c",
+                "quote": "The round included participation from Matrix, Y Combinator, Liquid 2 Ventures, Vermilion Cliffs Ventures, Irregular Expressions, Cervin Ventures, Comma Capital, Position Ventures, and Eight Capital, along with various angel investors and operators from OpenAI, xAI, Meta, and DoorDash.",
+                "source_content_hash": "9b35946c620419a7",
+                "quote_hash": "fb4b07c129294f8e1a6c17a204b1f2fffc47912d4e377fb93d6c4563cc5caecd"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "$2.3M",
+          "normalized": {
+            "currency": "USD",
+            "value": 2300000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "230 万美元"
+          },
+          "basis": "source_disclosed",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 2300000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "230 万美元"
+            }
+          ],
+          "historical_round_count": 1
+        }
+      },
+      "products": [
+        {
+          "name": "Lemma 生产监控平台",
+          "description": "为 AI 智能体提供生产监控基础设施，捕捉结构化执行轨迹，包括 LLM 调用、工具使用、输入、输出、检索步骤、时序数据和错误，并分析这些轨迹以识别反复出现的语义失败、优先排序问题并发出告警。",
+          "target_customers": "已经在生产环境中运行 AI 智能体的初创公司",
+          "features": [
+            "捕获结构化智能体执行轨迹",
+            "识别反复出现的语义失败",
+            "问题优先排序与告警"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4246d8910d984d9c",
+              "quote": "Its platform captures structured traces of agent executions, including LLM calls, tool usage, inputs, outputs, retrieval steps, timing data, and errors. It analyzes these traces to identify recurring semantic failures, prioritize issues, alert.",
+              "source_content_hash": "9b35946c620419a7",
+              "quote_hash": "eaf06c5fc9dacc695621b7fc82f9e9a5cf075d37099049d45288b9ada7fc1f68"
+            },
+            {
+              "source_id": "FISRC-efe4db4aff32c4ea",
+              "quote": "Lemma builds production monitoring for AI agents.",
+              "source_content_hash": "af7a29745db5560a",
+              "quote_hash": "227c252c09addd01d440036be4d09df18e012b273e97472d1cf0a9de5cb3509b"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "已处理智能体轨迹数量",
+          "value": "超过一百万条",
+          "observed_at": "2026-08-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-efe4db4aff32c4ea",
+              "quote": "Its platform has processed more than one million agent traces.",
+              "source_content_hash": "af7a29745db5560a",
+              "quote_hash": "f52788d49a04aac778ba7ca37cdd739d8fe7227d3ef7eddd19c6db2356f960de"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是 AI 智能体从辅助工具转向自主执行后，静默失败成为生产环境中的系统性风险，需要专门的监控与可观测性基础设施。本轮融资所依赖的已验证信号是平台已处理超过一百万条智能体轨迹，表明产品已进入真实生产环境并获得一定采用。证据边界：来源仅披露了轨迹处理量和投资方名单，未披露收入、客户数量、估值或投资机构的具体投资逻辑。",
+        "validated_signals": [
+          "平台已处理超过一百万条智能体轨迹"
+        ],
+        "risks": [
+          "来源未披露任何具体客户名称或收入数据，无法验证商业牵引力是否足以支撑后续融资。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "observability_evaluation",
+        "market_application_id": "ai_observability_governance",
+        "use_case_ids": [
+          "security_operations"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "AI 智能体可观测性与可靠性基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 AI 智能体从辅助工具转向自主执行后，静默失败成为生产环境中的系统性风险，需要专门的监控与可观测性基础设施。本轮融资所依赖的已验证信号是平台已处理超过一百万条智能体轨迹，表明产品已进入真实生产环境并获得一定采用。证据边界：来源仅披露了轨迹处理量和投资方名单，未披露收入、客户数量、估值或投资机构的具体投资逻辑。",
+          "evidence_signals": [
+            "平台已处理超过一百万条智能体轨迹"
+          ],
+          "risks": [
+            "来源未披露任何具体客户名称或收入数据，无法验证商业牵引力是否足以支撑后续融资。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        },
+        "related_direction": {
+          "id": "DIR-20260725-02",
+          "title": "AI智能体从“辅助写作”转向“自主执行”，催生对智能体行为审计与权限控制的新需求"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Lemma 生产监控平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Jerry Zhang",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Cole Gawin",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Matrix",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Y Combinator",
+          "canonical_entity_id": "EN-275b0f4a4023d91c",
+          "canonical_name": "Y Combinator"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Liquid 2 Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Vermilion Cliffs Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Irregular Expressions",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Cervin Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Comma Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Position Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Eight Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Angel investors and operators from OpenAI, xAI, Meta, and DoorDash",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-c1295b8f58024ff6",
+          "date": "2026-08-07",
+          "title": "Lemma 筹集 230 万美元预种子资金，用于捕捉静默失败的 AI 智能体",
+          "amount": "$2.3M",
+          "source_refs": [
+            "SA-9f121e94d5877aa0"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-efe4db4aff32c4ea",
+          "source_url": "https://dealroom.co/news/143810-lemma-raises-2-3m-pre-seed-to-catch-ai-agents-that-fail-silently/",
+          "title": "Lemma 筹集 230 万美元预种子资金，用于捕捉静默失败的 AI 智能体",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-14T00:20:26.361Z",
+          "content_hash": "af7a29745db5560a",
+          "source_artifact_id": "SA-9f121e94d5877aa0",
+          "raw_id": "RAW-19ac51a3bbf3e639"
+        },
+        {
+          "source_id": "FISRC-4246d8910d984d9c",
+          "source_url": "https://www.thesaasnews.com/news/lemma-raises-2-3m-pre-seed/",
+          "title": "Lemma Raises $2.3M Pre-seed",
+          "publisher": "thesaasnews.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-14T03:14:46.739Z",
+          "content_hash": "9b35946c620419a7",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-14T03:15:42.766Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-14T03:15:42.766Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Lemma 生产监控平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Cole Gawin",
+            "Jerry Zhang"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-c1295b8f58024ff6"
+      ],
+      "aggregation": {
+        "key": "EN-249fdefbb63fa7b3|pre_seed|USD:exact:2300000:::|2026-08-07",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-98e08b099fb39138",
+          "event_ids": [
+            "EV-c1295b8f58024ff6"
+          ],
+          "round": "预种子轮",
+          "round_code": "pre_seed",
+          "round_original": "预种子轮",
+          "amount_original": "$2.3M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 2300000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "230 万美元"
+          },
+          "announced_at": "2026-08-07",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "ai_infrastructure_software",
+        "name": "AI 基础设施软件",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "infrastructure_compute",
+        "name": "基础设施与算力",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "observability_evaluation",
+        "name": "可观测与评估",
+        "method": "card_explicit"
+      },
+      "market_application": {
+        "dimension": "ai_market_application",
+        "id": "ai_observability_governance",
+        "name": "AI 可观测与治理",
+        "method": "card_explicit"
+      },
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-c1295b8f58024ff6",
+        "direction": "opportunity-map.html#direction-cards"
+      }
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-8ec3b23d30c575bf",
@@ -19853,7 +22791,7 @@
               "quote_hash": "15fb0a23b983066ddadc88812242c3d7e5f64731c40d19cbb8a5ebbd1fe1e3cc"
             }
           ],
-          "entity_id": "EN-8d4321d936320802"
+          "entity_id": null
         },
         {
           "name": "谷歌",
@@ -19867,7 +22805,7 @@
               "quote_hash": "15fb0a23b983066ddadc88812242c3d7e5f64731c40d19cbb8a5ebbd1fe1e3cc"
             }
           ],
-          "entity_id": "EN-bbdefa2950f49882"
+          "entity_id": null
         },
         {
           "name": "字节跳动",
@@ -20315,15 +23253,15 @@
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "英伟达",
-          "canonical_entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA"
+          "canonical_entity_id": null,
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "谷歌",
-          "canonical_entity_id": "EN-bbdefa2950f49882",
-          "canonical_name": "Google"
+          "canonical_entity_id": null,
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
@@ -21892,7 +24830,7 @@
               "quote_hash": "9592a436a86251319144ada6896df9d41134116c43a0bad3f91505d2a6c4d5c1"
             }
           ],
-          "entity_id": "EN-bbdefa2950f49882"
+          "entity_id": null
         },
         {
           "name": "英伟达",
@@ -21915,7 +24853,7 @@
               "quote_hash": "73ae7eb3dc188bc436e75ff6be35c645188c56c1866a191f150b01871c7da4a0"
             }
           ],
-          "entity_id": "EN-8d4321d936320802"
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -22318,15 +25256,15 @@
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "谷歌",
-          "canonical_entity_id": "EN-bbdefa2950f49882",
-          "canonical_name": "Google"
+          "canonical_entity_id": null,
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "英伟达",
-          "canonical_entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA"
+          "canonical_entity_id": null,
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -25337,7 +28275,7 @@
               "quote_hash": "bb0e5871bccc8d206db78c96cde1f8ee5fd68614c68c52cdca58767ac695d937"
             }
           ],
-          "entity_id": "EN-8d4321d936320802"
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -25565,8 +28503,8 @@
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "英伟达",
-          "canonical_entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA"
+          "canonical_entity_id": null,
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -112460,16 +115398,16 @@
           "known_round_totals": [
             {
               "currency": "USD",
-              "value": 81500000000,
+              "value": 111500000000,
               "min_value": null,
               "max_value": null,
               "unit": "base",
-              "round_count": 4,
+              "round_count": 5,
               "status": "exact",
-              "display_zh": "815 亿美元"
+              "display_zh": "1115 亿美元"
             }
           ],
-          "historical_round_count": 4
+          "historical_round_count": 5
         }
       },
       "products": [
@@ -112793,6 +115731,15 @@
       ],
       "funding_history": [
         {
+          "event_id": "EV-f5dd6dec49ad83aa",
+          "date": "2026-08-10",
+          "title": "主权资本以房东身份进军AI：忒修斯构建所有权，而非仅限芯片",
+          "amount": "$30 billion",
+          "source_refs": [
+            "SA-a738ef2d45882afb"
+          ]
+        },
+        {
           "event_id": "EV-78a11d309c3d4e97",
           "date": "2026-07-05",
           "title": "科技初创公司融资轮次：过去30天，每周更新",
@@ -112929,6 +115876,30 @@
         "strategy": "reviewed_company_round_date_and_normalized_amount"
       },
       "historical_rounds": [
+        {
+          "funding_insight_id": "FI-f55b62cf10cb7c98",
+          "event_ids": [
+            "EV-f5dd6dec49ad83aa"
+          ],
+          "round": "G轮",
+          "round_code": "series_g",
+          "round_original": "G轮",
+          "amount_original": "$30 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 30000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "300 亿美元"
+          },
+          "announced_at": "2026-08-10",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": false
+        },
         {
           "funding_insight_id": "FI-5f1fc44327efde20",
           "event_ids": [
@@ -167026,16 +169997,16 @@
           "known_round_totals": [
             {
               "currency": "USD",
-              "value": 81500000000,
+              "value": 111500000000,
               "min_value": null,
               "max_value": null,
               "unit": "base",
-              "round_count": 4,
+              "round_count": 5,
               "status": "exact",
-              "display_zh": "815 亿美元"
+              "display_zh": "1115 亿美元"
             }
           ],
-          "historical_round_count": 4
+          "historical_round_count": 5
         }
       },
       "products": [
@@ -167227,6 +170198,15 @@
       ],
       "funding_history": [
         {
+          "event_id": "EV-f5dd6dec49ad83aa",
+          "date": "2026-08-10",
+          "title": "主权资本以房东身份进军AI：忒修斯构建所有权，而非仅限芯片",
+          "amount": "$30 billion",
+          "source_refs": [
+            "SA-a738ef2d45882afb"
+          ]
+        },
+        {
           "event_id": "EV-78a11d309c3d4e97",
           "date": "2026-07-05",
           "title": "科技初创公司融资轮次：过去30天，每周更新",
@@ -167351,6 +170331,30 @@
         "strategy": "reviewed_company_round_date_and_normalized_amount"
       },
       "historical_rounds": [
+        {
+          "funding_insight_id": "FI-f55b62cf10cb7c98",
+          "event_ids": [
+            "EV-f5dd6dec49ad83aa"
+          ],
+          "round": "G轮",
+          "round_code": "series_g",
+          "round_original": "G轮",
+          "amount_original": "$30 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 30000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "300 亿美元"
+          },
+          "announced_at": "2026-08-10",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": false
+        },
         {
           "funding_insight_id": "FI-5f1fc44327efde20",
           "event_ids": [
@@ -187982,16 +190986,16 @@
           "known_round_totals": [
             {
               "currency": "USD",
-              "value": 81500000000,
+              "value": 111500000000,
               "min_value": null,
               "max_value": null,
               "unit": "base",
-              "round_count": 4,
+              "round_count": 5,
               "status": "exact",
-              "display_zh": "815 亿美元"
+              "display_zh": "1115 亿美元"
             }
           ],
-          "historical_round_count": 4
+          "historical_round_count": 5
         }
       },
       "products": [
@@ -188299,6 +191303,15 @@
       ],
       "funding_history": [
         {
+          "event_id": "EV-f5dd6dec49ad83aa",
+          "date": "2026-08-10",
+          "title": "主权资本以房东身份进军AI：忒修斯构建所有权，而非仅限芯片",
+          "amount": "$30 billion",
+          "source_refs": [
+            "SA-a738ef2d45882afb"
+          ]
+        },
+        {
           "event_id": "EV-78a11d309c3d4e97",
           "date": "2026-07-05",
           "title": "科技初创公司融资轮次：过去30天，每周更新",
@@ -188459,6 +191472,30 @@
         "strategy": "reviewed_company_round_date_and_normalized_amount"
       },
       "historical_rounds": [
+        {
+          "funding_insight_id": "FI-f55b62cf10cb7c98",
+          "event_ids": [
+            "EV-f5dd6dec49ad83aa"
+          ],
+          "round": "G轮",
+          "round_code": "series_g",
+          "round_original": "G轮",
+          "amount_original": "$30 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 30000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "300 亿美元"
+          },
+          "announced_at": "2026-08-10",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": false
+        },
         {
           "funding_insight_id": "FI-5f1fc44327efde20",
           "event_ids": [
@@ -190718,16 +193755,16 @@
           "known_round_totals": [
             {
               "currency": "USD",
-              "value": 81500000000,
+              "value": 111500000000,
               "min_value": null,
               "max_value": null,
               "unit": "base",
-              "round_count": 4,
+              "round_count": 5,
               "status": "exact",
-              "display_zh": "815 亿美元"
+              "display_zh": "1115 亿美元"
             }
           ],
-          "historical_round_count": 4
+          "historical_round_count": 5
         }
       },
       "products": [
@@ -191236,6 +194273,15 @@
       ],
       "funding_history": [
         {
+          "event_id": "EV-f5dd6dec49ad83aa",
+          "date": "2026-08-10",
+          "title": "主权资本以房东身份进军AI：忒修斯构建所有权，而非仅限芯片",
+          "amount": "$30 billion",
+          "source_refs": [
+            "SA-a738ef2d45882afb"
+          ]
+        },
+        {
           "event_id": "EV-78a11d309c3d4e97",
           "date": "2026-07-05",
           "title": "科技初创公司融资轮次：过去30天，每周更新",
@@ -191408,6 +194454,30 @@
         "strategy": "reviewed_company_round_date_and_normalized_amount"
       },
       "historical_rounds": [
+        {
+          "funding_insight_id": "FI-f55b62cf10cb7c98",
+          "event_ids": [
+            "EV-f5dd6dec49ad83aa"
+          ],
+          "round": "G轮",
+          "round_code": "series_g",
+          "round_original": "G轮",
+          "amount_original": "$30 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 30000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "300 亿美元"
+          },
+          "announced_at": "2026-08-10",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": false
+        },
         {
           "funding_insight_id": "FI-5f1fc44327efde20",
           "event_ids": [

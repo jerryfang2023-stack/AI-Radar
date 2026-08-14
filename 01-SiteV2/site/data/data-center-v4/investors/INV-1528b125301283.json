@@ -22,15 +22,15 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 9,
+    "current_round_count": 10,
     "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 7,
     "first_disclosed_at": "2025-03-03",
-    "latest_disclosed_at": "2026-07-28",
+    "latest_disclosed_at": "2026-08-10",
     "role_counts": {
       "historical_or_ambiguous": 3,
       "lead": 6,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "seed",
@@ -38,7 +38,8 @@
       "series_c",
       "series_d",
       "series_e",
-      "series_f"
+      "series_f",
+      "series_g"
     ],
     "portfolio_companies": [
       {
@@ -78,6 +79,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-462b44e0de4ba2ea",
+        "funding_insight_id": "FI-f55b62cf10cb7c98",
+        "event_ids": [
+          "EV-f5dd6dec49ad83aa"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "G轮",
+        "round_code": "series_g",
+        "round_original": "G轮",
+        "amount_original": "$30 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 亿美元"
+        },
+        "announced_at": "2026-08-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-077b1124fc8e9581",
+            "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
+            "source_title": "GIC-backed OpenAI rival Anthropic finalises US$30 bil funding at US$380 bil value",
+            "source_content_hash": "7ff9bbd6aca29214",
+            "quote": "along with participation from a who’s who of other investors, from Sequoia Capital and Lightspeed Venture Partners to Big Tech firms Nvidia Corp and Microsoft Corp.",
+            "quote_hash": "f9050f59785f6003fc0699c9f5dcec1c1613171131640d36bc3ece33945c5d82"
+          }
+        ]
+      },
       {
         "activity_id": "IA-5896289a3ec5bc60",
         "funding_insight_id": "FI-b8d28ad363a47e7a",
@@ -548,6 +587,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-077b1124fc8e9581",
+        "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
+        "source_title": "GIC-backed OpenAI rival Anthropic finalises US$30 bil funding at US$380 bil value",
+        "source_content_hash": "7ff9bbd6aca29214",
+        "quote": "along with participation from a who’s who of other investors, from Sequoia Capital and Lightspeed Venture Partners to Big Tech firms Nvidia Corp and Microsoft Corp.",
+        "quote_hash": "f9050f59785f6003fc0699c9f5dcec1c1613171131640d36bc3ece33945c5d82"
+      },
       {
         "source_id": "FISRC-fe66d902ece1db68",
         "source_url": "https://www.businessinsider.com/harmony-pitch-deck-ai-startup-34-million-seed-founders-cisco-2026-7",

@@ -739,9 +739,35 @@ function fundingClaimOrganizationMentions(eventClaims, claimEvidence) {
     const chineseLead = quote.match(
       /^(?:近日[，,\s]*)?([\p{Script=Han}A-Za-z0-9·（）()&.-]{2,24}?)(?=(?:已)?(?:完成|获得|获|宣布).{0,24}(?:融资|投资|募资))/u,
     )?.[1];
+    const describedChineseCompany = quote.match(
+      /公司\s*([\p{Script=Han}A-Za-z0-9·.&-]{2,24}?)(?:（[A-Za-z0-9 .&'-]{2,40}）)?(?=(?:已|近日)?(?:完成|获得|获|宣布).{0,24}(?:融资|投资|募资))/u,
+    )?.[1];
     if (lead) addCandidate(lead);
     if (chineseLead) addCandidate(chineseLead);
+    if (describedChineseCompany) addCandidate(describedChineseCompany);
     addCandidate(claim.subject);
+  }
+  return candidates;
+}
+
+function claimSubjectOrganizationMentions(eventClaims, title, claimEvidence) {
+  const candidates = [];
+  for (const claim of eventClaims || []) {
+    const candidate = cleanOrganizationCandidate(claim.subject);
+    if (!candidate) continue;
+    const titleIndex = exactAliasIndex(title, candidate);
+    const claimIndex = exactAliasIndex(claimEvidence, candidate);
+    if (titleIndex < 0 && claimIndex < 0) continue;
+    const source = titleIndex >= 0 ? "title_original" : "claim_evidence";
+    const sourceText = source === "title_original" ? title : claimEvidence;
+    const start = source === "title_original" ? titleIndex : claimIndex;
+    candidates.push({
+      canonicalName: candidate,
+      mentionText: sourceText.slice(start, start + candidate.length),
+      start,
+      source,
+      verified: false,
+    });
   }
   return candidates;
 }
@@ -790,6 +816,7 @@ function organizationMentions(title, parsed, eventType, claimEvidence = "", even
       });
     }
   }
+  if (!hits.length) hits.push(...claimSubjectOrganizationMentions(eventClaims, title, claimEvidence));
   hits.sort((a, b) => a.start - b.start || b.mentionText.length - a.mentionText.length);
 
   const selected = [];

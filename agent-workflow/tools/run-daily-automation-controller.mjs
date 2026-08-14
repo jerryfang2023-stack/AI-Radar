@@ -17,6 +17,7 @@ const phase = args.get("phase") || "morning";
 const date = args.get("date") || shanghaiDate();
 const dryRun = args.get("dry-run") === "true";
 const invokeCodex = args.get("invoke-codex") !== "false";
+const codexCommand = args.get("codex-command") || "codex";
 
 function shanghaiDate(value = new Date()) {
   const parsed = value instanceof Date ? value : new Date(value);
@@ -182,7 +183,7 @@ function closure() {
     `--date=${date}`,
     "--repair=safe",
     `--invoke=${invokeCodex ? "on" : "off"}`,
-    "--codex-command=codex",
+    `--codex-command=${codexCommand}`,
     `--runtime-dir=${reportsDir}`,
     "--reuse-self-check=true",
   ], 900_000);

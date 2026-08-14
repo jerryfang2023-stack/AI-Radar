@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-14T00:23:40.398Z",
+    "latestDataDate": "2026-08-14",
+    "currentDate": "2026-08-14",
+    "eventCount": 2102,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-2b64560ee041d4",
+    "name": "Angel investors and operators from OpenAI, xAI, Meta, and DoorDash",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-08-07",
+    "latest_disclosed_at": "2026-08-07",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-279b47301ce96e9f",
+        "funding_insight_id": "FI-98e08b099fb39138",
+        "event_ids": [
+          "EV-c1295b8f58024ff6"
+        ],
+        "company_entity_id": "EN-249fdefbb63fa7b3",
+        "company_canonical_entity_id": "",
+        "company_name": "Lemma",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "$2.3M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "230 万美元"
+        },
+        "announced_at": "2026-08-07",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "本轮天使投资人与行业从业者",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-efe4db4aff32c4ea",
+            "source_url": "https://dealroom.co/news/143810-lemma-raises-2-3m-pre-seed-to-catch-ai-agents-that-fail-silently/",
+            "source_title": "Lemma 筹集 230 万美元预种子资金，用于捕捉静默失败的 AI 智能体",
+            "source_content_hash": "af7a29745db5560a",
+            "quote": "Angel investors and operators from OpenAI , xAI , Meta , and DoorDash also joined.",
+            "quote_hash": "e39d4c9a07139bbf9cb39a2787e7ab8a2da64aece5834dc690e81baa65ffbd6d"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-efe4db4aff32c4ea",
+        "source_url": "https://dealroom.co/news/143810-lemma-raises-2-3m-pre-seed-to-catch-ai-agents-that-fail-silently/",
+        "source_title": "Lemma 筹集 230 万美元预种子资金，用于捕捉静默失败的 AI 智能体",
+        "source_content_hash": "af7a29745db5560a",
+        "quote": "Angel investors and operators from OpenAI , xAI , Meta , and DoorDash also joined.",
+        "quote_hash": "e39d4c9a07139bbf9cb39a2787e7ab8a2da64aece5834dc690e81baa65ffbd6d"
+      }
+    ]
+  }
+}

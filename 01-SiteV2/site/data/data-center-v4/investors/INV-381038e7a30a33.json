@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-14T00:23:40.398Z",
+    "latestDataDate": "2026-08-14",
+    "currentDate": "2026-08-14",
+    "eventCount": 2102,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-381038e7a30a33",
+    "name": "Vermilion Cliffs Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-08-07",
+    "latest_disclosed_at": "2026-08-07",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "pre_seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-249fdefbb63fa7b3",
+        "canonical_entity_id": "",
+        "name": "Lemma"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-85f792ffa85c3479",
+        "funding_insight_id": "FI-98e08b099fb39138",
+        "event_ids": [
+          "EV-c1295b8f58024ff6"
+        ],
+        "company_entity_id": "EN-249fdefbb63fa7b3",
+        "company_canonical_entity_id": "",
+        "company_name": "Lemma",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "$2.3M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "230 万美元"
+        },
+        "announced_at": "2026-08-07",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-efe4db4aff32c4ea",
+            "source_url": "https://dealroom.co/news/143810-lemma-raises-2-3m-pre-seed-to-catch-ai-agents-that-fail-silently/",
+            "source_title": "Lemma 筹集 230 万美元预种子资金，用于捕捉静默失败的 AI 智能体",
+            "source_content_hash": "af7a29745db5560a",
+            "quote": "Matrix Dealroom has a profile for this one. Try Dealroom → , Y Combinator , Liquid 2 Ventures , Vermilion Cliffs Ventures Dealroom has a profile for this one. Try Dealroom → , Irregular Expressions Dealroom has a profile for this one. Try Dealroom → , Cervin Ventures Dealroom has a profile for this one. Try Dealroom → , Comma Capital Dealroom has a profile for this one. Try Dealroom → , Position Ventures Dealroom has a profile for this one. Try Dealroom → , and Eight Capital Dealroom has a profile for this one. Try Dealroom → took part.",
+            "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-efe4db4aff32c4ea",
+        "source_url": "https://dealroom.co/news/143810-lemma-raises-2-3m-pre-seed-to-catch-ai-agents-that-fail-silently/",
+        "source_title": "Lemma 筹集 230 万美元预种子资金，用于捕捉静默失败的 AI 智能体",
+        "source_content_hash": "af7a29745db5560a",
+        "quote": "Matrix Dealroom has a profile for this one. Try Dealroom → , Y Combinator , Liquid 2 Ventures , Vermilion Cliffs Ventures Dealroom has a profile for this one. Try Dealroom → , Irregular Expressions Dealroom has a profile for this one. Try Dealroom → , Cervin Ventures Dealroom has a profile for this one. Try Dealroom → , Comma Capital Dealroom has a profile for this one. Try Dealroom → , Position Ventures Dealroom has a profile for this one. Try Dealroom → , and Eight Capital Dealroom has a profile for this one. Try Dealroom → took part.",
+        "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
+      }
+    ]
+  }
+}

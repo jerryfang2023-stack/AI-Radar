@@ -20,18 +20,23 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "first_disclosed_at": "2026-05-28",
-    "latest_disclosed_at": "2026-05-28",
+    "latest_disclosed_at": "2026-08-07",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "pre_seed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-249fdefbb63fa7b3",
+        "canonical_entity_id": "",
+        "name": "Lemma"
+      },
       {
         "entity_id": "EN-aa06a7dba2266341",
         "canonical_entity_id": "",
@@ -39,6 +44,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-3f8841e8a2987a23",
+        "funding_insight_id": "FI-98e08b099fb39138",
+        "event_ids": [
+          "EV-c1295b8f58024ff6"
+        ],
+        "company_entity_id": "EN-249fdefbb63fa7b3",
+        "company_canonical_entity_id": "",
+        "company_name": "Lemma",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "$2.3M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "230 万美元"
+        },
+        "announced_at": "2026-08-07",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-efe4db4aff32c4ea",
+            "source_url": "https://dealroom.co/news/143810-lemma-raises-2-3m-pre-seed-to-catch-ai-agents-that-fail-silently/",
+            "source_title": "Lemma 筹集 230 万美元预种子资金，用于捕捉静默失败的 AI 智能体",
+            "source_content_hash": "af7a29745db5560a",
+            "quote": "Matrix Dealroom has a profile for this one. Try Dealroom → , Y Combinator , Liquid 2 Ventures , Vermilion Cliffs Ventures Dealroom has a profile for this one. Try Dealroom → , Irregular Expressions Dealroom has a profile for this one. Try Dealroom → , Cervin Ventures Dealroom has a profile for this one. Try Dealroom → , Comma Capital Dealroom has a profile for this one. Try Dealroom → , Position Ventures Dealroom has a profile for this one. Try Dealroom → , and Eight Capital Dealroom has a profile for this one. Try Dealroom → took part.",
+            "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
+          }
+        ]
+      },
       {
         "activity_id": "IA-dc6bac49e95d9474",
         "funding_insight_id": "FI-fd5dbffc8602c9a9",
@@ -79,6 +122,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-efe4db4aff32c4ea",
+        "source_url": "https://dealroom.co/news/143810-lemma-raises-2-3m-pre-seed-to-catch-ai-agents-that-fail-silently/",
+        "source_title": "Lemma 筹集 230 万美元预种子资金，用于捕捉静默失败的 AI 智能体",
+        "source_content_hash": "af7a29745db5560a",
+        "quote": "Matrix Dealroom has a profile for this one. Try Dealroom → , Y Combinator , Liquid 2 Ventures , Vermilion Cliffs Ventures Dealroom has a profile for this one. Try Dealroom → , Irregular Expressions Dealroom has a profile for this one. Try Dealroom → , Cervin Ventures Dealroom has a profile for this one. Try Dealroom → , Comma Capital Dealroom has a profile for this one. Try Dealroom → , Position Ventures Dealroom has a profile for this one. Try Dealroom → , and Eight Capital Dealroom has a profile for this one. Try Dealroom → took part.",
+        "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
+      },
       {
         "source_id": "FISRC-7dcc5e58c6026e99",
         "source_url": "https://www.prnewswire.com/news-releases/modiqo-raises-pre-seed-round-to-bring-deterministic-ai-workflows-to-enterprises-at-a-fraction-of-the-token-cost-302784345.html",

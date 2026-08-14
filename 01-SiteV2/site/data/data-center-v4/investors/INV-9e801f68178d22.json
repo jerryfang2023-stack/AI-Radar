@@ -21,11 +21,12 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "first_disclosed_at": "2026-03-11",
-    "latest_disclosed_at": "2026-03-11",
+    "latest_disclosed_at": "2026-08-10",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -39,6 +40,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-fed01d0fad1df030",
+        "funding_insight_id": "FI-f55b62cf10cb7c98",
+        "event_ids": [
+          "EV-f5dd6dec49ad83aa"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "G轮",
+        "round_code": "series_g",
+        "round_original": "G轮",
+        "amount_original": "$30 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 亿美元"
+        },
+        "announced_at": "2026-08-10",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Series F 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-46e8b046ae7a64f0",
+            "source_url": "https://sgai.md/sovereign-capital-frontier-ai/",
+            "source_title": "What GIC and Temasek have invested in AI: the full public… · sgai",
+            "source_content_hash": "62a5edd881d6cc6e",
+            "quote": "GIC first invested in September 2025, joining Anthropic’s $13 billion Series F (alongside Qatar Investment Authority and Ontario Teachers’ Pension Plan).",
+            "quote_hash": "391e366a08a482b8300bdb754bfb3ea9fe9401d88df0a21209bbe00e28242ed1"
+          }
+        ]
+      },
       {
         "activity_id": "IA-64f4fc49f7d08fdc",
         "funding_insight_id": "FI-2d6f9ac8b7ebeeee",
@@ -79,6 +118,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-46e8b046ae7a64f0",
+        "source_url": "https://sgai.md/sovereign-capital-frontier-ai/",
+        "source_title": "What GIC and Temasek have invested in AI: the full public… · sgai",
+        "source_content_hash": "62a5edd881d6cc6e",
+        "quote": "GIC first invested in September 2025, joining Anthropic’s $13 billion Series F (alongside Qatar Investment Authority and Ontario Teachers’ Pension Plan).",
+        "quote_hash": "391e366a08a482b8300bdb754bfb3ea9fe9401d88df0a21209bbe00e28242ed1"
+      },
       {
         "source_id": "FISRC-00ed3d8fd701898b",
         "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",

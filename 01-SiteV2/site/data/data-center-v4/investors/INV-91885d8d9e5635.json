@@ -21,11 +21,12 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 3,
     "first_disclosed_at": "2026-03-12",
     "latest_disclosed_at": "2026-08-11",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 3
     },
     "round_codes": [
@@ -86,6 +87,44 @@
             "source_content_hash": "a44322af824e0f8f",
             "quote": "with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek",
             "quote_hash": "2fea4aa95f455cf668da90f6bbb80a60ef5d93295e469d69604b0b43586f6284"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0d05be746e5f68fe",
+        "funding_insight_id": "FI-f55b62cf10cb7c98",
+        "event_ids": [
+          "EV-f5dd6dec49ad83aa"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "G轮",
+        "round_code": "series_g",
+        "round_original": "G轮",
+        "amount_original": "$30 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 亿美元"
+        },
+        "announced_at": "2026-08-10",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Series H 重要投资者",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-46e8b046ae7a64f0",
+            "source_url": "https://sgai.md/sovereign-capital-frontier-ai/",
+            "source_title": "What GIC and Temasek have invested in AI: the full public… · sgai",
+            "source_content_hash": "62a5edd881d6cc6e",
+            "quote": "Anthropic’s official Series H announcement lists Temasek among the “significant investors”",
+            "quote_hash": "31c5bab2b1238aee772d2d31bc1df6f611882b3dcdeff3516289387fc7a36c5c"
           }
         ]
       },
@@ -174,6 +213,14 @@
         "source_content_hash": "a44322af824e0f8f",
         "quote": "with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek",
         "quote_hash": "2fea4aa95f455cf668da90f6bbb80a60ef5d93295e469d69604b0b43586f6284"
+      },
+      {
+        "source_id": "FISRC-46e8b046ae7a64f0",
+        "source_url": "https://sgai.md/sovereign-capital-frontier-ai/",
+        "source_title": "What GIC and Temasek have invested in AI: the full public… · sgai",
+        "source_content_hash": "62a5edd881d6cc6e",
+        "quote": "Anthropic’s official Series H announcement lists Temasek among the “significant investors”",
+        "quote_hash": "31c5bab2b1238aee772d2d31bc1df6f611882b3dcdeff3516289387fc7a36c5c"
       },
       {
         "source_id": "FISRC-1e2b3bad243bd066",

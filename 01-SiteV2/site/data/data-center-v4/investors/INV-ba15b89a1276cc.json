@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-14T00:23:40.398Z",
+    "latestDataDate": "2026-08-14",
+    "currentDate": "2026-08-14",
+    "eventCount": 2102,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-ba15b89a1276cc",
+    "name": "国内顶级具身智能产业方",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-08-13",
+    "latest_disclosed_at": "2026-08-13",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "infrastructure"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-2505fe8a9e908e04",
+        "canonical_entity_id": "",
+        "name": "元点科技（SCALEFORCE）"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-8bb427adb1d396e5",
+        "funding_insight_id": "FI-29dc2b4975d2ba0a",
+        "event_ids": [
+          "EV-1765fd690cff1cac"
+        ],
+        "company_entity_id": "EN-2505fe8a9e908e04",
+        "company_canonical_entity_id": "",
+        "company_name": "元点科技（SCALEFORCE）",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "数千万",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万人民币–9000 万人民币"
+        },
+        "announced_at": "2026-08-13",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-90f5ec745ecc9d6f",
+            "source_url": "https://www.qbitai.com/2026/08/472060.html",
+            "source_title": "具身数据来了实战派！40天2轮融资数千万，瞄准物理AI基础设施",
+            "source_content_hash": "c2c36cdad6e49776",
+            "quote": "投资者包含国内顶级具身智能产业方、恒旭资本和凯联资本。",
+            "quote_hash": "0b7b6bf0dcc196c0fee8024d65555ab24b5232579b71663b91141d40bab819d1"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-90f5ec745ecc9d6f",
+        "source_url": "https://www.qbitai.com/2026/08/472060.html",
+        "source_title": "具身数据来了实战派！40天2轮融资数千万，瞄准物理AI基础设施",
+        "source_content_hash": "c2c36cdad6e49776",
+        "quote": "投资者包含国内顶级具身智能产业方、恒旭资本和凯联资本。",
+        "quote_hash": "0b7b6bf0dcc196c0fee8024d65555ab24b5232579b71663b91141d40bab819d1"
+      }
+    ]
+  }
+}
