@@ -1,13 +1,17 @@
 const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
 const { buildEntityLibrary, findEntity } = require("../../utils/entity-library.js");
+const { getAccessState, openMembership } = require("../../utils/access.js");
 
 const TITLES = { companies: "企业档案", investors: "机构档案", people: "人物档案" };
 
 Page({
-  data: { title: "主体档案", type: "", entity: null },
+  data: { title: "主体档案", type: "", entity: null, registrationOpen: false },
 
   onLoad(options) {
     this.type = options.type;
+    const accessState = getAccessState();
+    if (accessState === "unregistered") this.setData({ registrationOpen: true });
+    if (accessState === "expired") setTimeout(() => openMembership(), 0);
     if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
     try { this.key = decodeURIComponent(options.key || ""); } catch { this.key = options.key || ""; }
     this.setData({ title: TITLES[this.type] || "主体档案", type: this.type });
@@ -35,6 +39,15 @@ Page({
   copyWebsite() {
     if (!this.data.entity?.website) return;
     wx.setClipboardData({ data: this.data.entity.website });
+  },
+
+  closeRegistration() {
+    this.setData({ registrationOpen: false });
+    wx.switchTab({ url: "/pages/market/index" });
+  },
+
+  continueAfterRegistration() {
+    this.setData({ registrationOpen: false });
   },
 
   onShareAppMessage() {

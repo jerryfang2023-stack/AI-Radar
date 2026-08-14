@@ -1,5 +1,5 @@
-const { getProfile, syncInviteRewards, syncMembership } = require("../../utils/member.js");
-const { fetchInviteSummary, login, recordInviteVisit } = require("../../utils/payment.js");
+const { getProfile, syncInviteRewards } = require("../../utils/member.js");
+const { fetchInviteSummary, hasAuthToken, recordInviteVisit } = require("../../utils/payment.js");
 
 const VISITOR_KEY = "guanlan_invite_visitor_v1";
 const INVITE_CODE_KEY = "guanlan_own_invite_code_v1";
@@ -28,6 +28,7 @@ Page({
     inviteCode: wx.getStorageSync(INVITE_CODE_KEY) || "",
     registering: false,
     registered: false,
+    registrationOpen: false,
     summary: { invitedCount: 0, successfulCount: 0, rewardPoints: 0 },
   },
 
@@ -44,6 +45,9 @@ Page({
     if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
     if (isInvitee) {
       recordInviteVisit(inviteCode, getVisitorKey()).catch(() => {});
+      if (!hasAuthToken()) this.setData({ registrationOpen: true });
+    } else if (!hasAuthToken()) {
+      this.setData({ registrationOpen: true });
     } else {
       this.loadSummary();
     }
@@ -60,23 +64,23 @@ Page({
     }
   },
 
-  async registerInvitee() {
-    if (this.data.registering) return;
+  registerInvitee() {
     if (this.data.registered) return this.openExperience();
-    this.setData({ registering: true });
-    try {
-      const result = await login({ inviteCode: this.data.inviteCode });
-      if (result.membership) syncMembership(result.membership);
-      this.setData({ registered: true });
-      wx.showToast({
-        title: result.isNewUser ? "注册成功，7 天体验已开启" : "你已是观澜用户",
-        icon: "none",
-      });
-    } catch (error) {
-      wx.showToast({ title: error.message || "注册失败，请重试", icon: "none" });
-    } finally {
-      this.setData({ registering: false });
-    }
+    this.setData({ registrationOpen: true });
+  },
+
+  closeRegistration() {
+    this.setData({ registrationOpen: false });
+  },
+
+  registrationCompleted() {
+    this.setData({ registered: true });
+    if (!this.data.isInvitee) this.loadSummary();
+  },
+
+  continueAfterRegistration() {
+    this.setData({ registrationOpen: false, registered: true });
+    this.openExperience();
   },
 
   openExperience() {

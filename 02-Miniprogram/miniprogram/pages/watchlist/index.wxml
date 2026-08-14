@@ -22,4 +22,5 @@
     </view>
     <view wx:else class="empty-state"><view class="title serif">暂无往期{{activeLabel}}</view><view class="copy">新报告通过内容验收后会同步到这里。</view></view>
   </view>
+  <registration-sheet visible="{{registrationOpen}}" required="{{true}}" bind:close="closeRegistration" bind:continue="continueAfterRegistration" />
 </view>

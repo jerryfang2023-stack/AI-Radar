@@ -1,5 +1,5 @@
 const { getLevel, applyReward, applyRedemption } = require("./growth-model.js");
-const { MONTHLY_PRICE, PRICING_PLANS, createMembership, membershipSnapshot, extendMembership } = require("./membership-model.js");
+const { MONTHLY_PRICE, PRICING_PLANS, membershipSnapshot, extendMembership } = require("./membership-model.js");
 
 const PROFILE_KEY = "guanlan_member_profile_v1";
 const HISTORY_KEY = "guanlan_browse_history_v1";
@@ -134,9 +134,7 @@ function syncInviteRewards(totalPoints) {
 
 function getMembership() {
   const value = wx.getStorageSync(MEMBERSHIP_KEY);
-  const membership = value && value.trialEndsAt ? value : createMembership();
-  if (!value || !value.trialEndsAt) wx.setStorageSync(MEMBERSHIP_KEY, membership);
-  return membershipSnapshot(membership);
+  return membershipSnapshot(value || {});
 }
 
 function saveMembership(membership) {
@@ -146,15 +144,15 @@ function saveMembership(membership) {
 
 function syncMembership(membership) {
   if (!membership || !membership.trialEndsAt) return getMembership();
-  const current = getMembership();
+  const current = wx.getStorageSync(MEMBERSHIP_KEY) || {};
   const laterIso = (left, right) => {
     const leftTime = Date.parse(left || "") || 0;
     const rightTime = Date.parse(right || "") || 0;
     return leftTime >= rightTime ? (left || "") : (right || "");
   };
   return saveMembership({
-    trialStartedAt: current.trialStartedAt || membership.trialStartedAt,
-    trialEndsAt: laterIso(current.trialEndsAt, membership.trialEndsAt),
+    trialStartedAt: membership.trialStartedAt,
+    trialEndsAt: membership.trialEndsAt,
     memberEndsAt: laterIso(current.memberEndsAt, membership.memberEndsAt),
   });
 }

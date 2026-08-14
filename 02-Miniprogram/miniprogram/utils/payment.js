@@ -42,11 +42,38 @@ async function login(options = {}) {
   const code = await wxLogin();
   const result = await apiRequest("/auth/wechat", {
     method: "POST",
-    data: { code, ...(options.inviteCode ? { inviteCode: options.inviteCode } : {}) },
+    data: {
+      code,
+      ...(options.inviteCode ? { inviteCode: options.inviteCode } : {}),
+      ...(options.phoneCode ? { phoneCode: options.phoneCode } : {}),
+      ...(options.nickname ? { nickname: options.nickname } : {}),
+      ...(options.avatarSelected ? { avatarSelected: true } : {}),
+    },
   });
   if (!result.token) throw new Error("登录状态获取失败，请重试");
   wx.setStorageSync(TOKEN_KEY, result.token);
   return result;
+}
+
+function hasAuthToken() {
+  return Boolean(wx.getStorageSync(TOKEN_KEY));
+}
+
+async function withExistingToken(fn) {
+  const token = wx.getStorageSync(TOKEN_KEY);
+  if (!token) {
+    const error = new Error("请先完成注册");
+    error.code = "AUTH_REQUIRED";
+    throw error;
+  }
+  try {
+    return await fn(token);
+  } catch (error) {
+    if (error.statusCode === 401 || error.code === "AUTH_EXPIRED" || error.code === "AUTH_INVALID") {
+      wx.removeStorageSync(TOKEN_KEY);
+    }
+    throw error;
+  }
 }
 
 async function withToken(fn, retry = true) {
@@ -108,7 +135,7 @@ async function purchaseMembership(planId) {
 }
 
 async function fetchMembership() {
-  return withToken((token) => apiRequest("/member/me", { token }));
+  return withExistingToken((token) => apiRequest("/member/me", { token }));
 }
 
 async function bindPhoneNumber(code) {
@@ -125,4 +152,4 @@ async function recordInviteVisit(inviteCode, visitorKey) {
   return apiRequest("/invites/visit", { method: "POST", data: { inviteCode, visitorKey } });
 }
 
-module.exports = { API_ROOT, apiRequest, login, fetchMembership, bindPhoneNumber, fetchInviteSummary, recordInviteVisit, purchaseMembership, queryOrder };
+module.exports = { API_ROOT, apiRequest, login, hasAuthToken, fetchMembership, bindPhoneNumber, fetchInviteSummary, recordInviteVisit, purchaseMembership, queryOrder };

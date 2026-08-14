@@ -5,6 +5,7 @@
       <text class="status-kicker">当前权益</text>
       <text class="status-title serif">{{membership.statusLabel}}</text>
       <text wx:if="{{membership.active}}" class="status-copy">剩余 {{membership.remainingDays}} 天 · 有效至 {{membership.activeUntil}}</text>
+      <text wx:elif="{{membership.status === 'unregistered'}}" class="status-copy">完成注册即可领取 7 天完整栏目体验。</text>
       <text wx:else class="status-copy">体验期已结束，可开通会员或使用活跃积分兑换。</text>
     </view>
 
@@ -17,8 +18,8 @@
         </view>
       </view>
       <view class="rights-list"><view wx:for="{{rights}}" wx:key="*this"><text>✓</text><text>{{item}}</text></view></view>
-      <button class="subscribe-button" loading="{{purchasing}}" disabled="{{purchasing}}" bindtap="subscribe">{{purchasing ? '正在处理' : '立即开通会员'}}</button>
-      <text class="plan-note">新用户首次使用自动获得 7 天完整权益体验；月度、半年和年度会员均不自动续费。</text>
+      <button class="subscribe-button" loading="{{purchasing}}" disabled="{{purchasing}}" bindtap="subscribe">{{purchasing ? '正在处理' : (membership.status === 'unregistered' ? '注册并开启 7 天体验' : '立即开通会员')}}</button>
+      <text class="plan-note">新用户完成注册后获得 7 天完整权益体验；月度、半年和年度会员均不自动续费。</text>
     </view>
 
     <view class="exchange-card" bindtap="openGrowth">
@@ -28,4 +29,5 @@
 
     <view class="rules-card"><text class="serif">权益说明</text><text>会员有效期内可浏览融资、生态、观察和我的全部栏目。积分兑换成功后，有效期会在当前权益结束日期之后顺延。</text></view>
   </view>
+  <registration-sheet visible="{{registrationOpen}}" bind:close="closeRegistration" bind:registered="registrationCompleted" bind:continue="continueAfterRegistration" />
 </view>

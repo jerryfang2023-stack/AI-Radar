@@ -44,4 +44,5 @@
 
     <view class="section"><text class="section-title serif">信息来源</text><view wx:if="{{card.sources.length}}" class="source-list"><view wx:for="{{card.sources}}" wx:key="id" class="source-card paper-card"><text class="source-publisher">{{item.publisher}}</text><text class="source-title">{{item.title}}</text><text wx:for="{{item.quotes}}" wx:key="*this" class="source-quote">“{{item}}”</text><button class="source-button" data-url="{{item.url}}" bindtap="copySource">复制原文链接</button></view></view><view wx:else class="missing">暂无公开来源</view></view>
   </view>
+  <registration-sheet visible="{{registrationOpen}}" required="{{true}}" bind:close="closeRegistration" bind:continue="continueAfterRegistration" />
 </view>

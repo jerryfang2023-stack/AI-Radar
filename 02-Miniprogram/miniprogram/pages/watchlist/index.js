@@ -1,5 +1,6 @@
 const { getReportData, refreshReportData } = require("../../utils/live-data.js");
 const { syncTabBar } = require("../../utils/tab-bar.js");
+const { getAccessState, openMembership } = require("../../utils/access.js");
 
 const bundledReportIndex = getReportData().index;
 
@@ -10,6 +11,7 @@ Page({
     activeLabel: "周报",
     featured: null,
     reports: [],
+    registrationOpen: false,
   },
 
   onLoad() {
@@ -32,6 +34,26 @@ Page({
   },
 
   switchType(event) { this.refresh(event.currentTarget.dataset.type); },
-  openReport(event) { wx.navigateTo({ url: `/pages/report-detail/index?id=${event.currentTarget.dataset.id}` }); },
+  openReport(event) {
+    const id = event.currentTarget.dataset.id;
+    const accessState = getAccessState();
+    if (accessState === "unregistered") {
+      this.pendingReportId = id;
+      this.setData({ registrationOpen: true });
+      return;
+    }
+    if (accessState === "expired") return openMembership();
+    wx.navigateTo({ url: `/pages/report-detail/index?id=${id}` });
+  },
+  closeRegistration() {
+    this.pendingReportId = "";
+    this.setData({ registrationOpen: false });
+  },
+  continueAfterRegistration() {
+    const id = this.pendingReportId;
+    this.pendingReportId = "";
+    this.setData({ registrationOpen: false });
+    if (id) wx.navigateTo({ url: `/pages/report-detail/index?id=${id}` });
+  },
   openSaved() { wx.navigateTo({ url: "/pages/saved/index" }); },
 });

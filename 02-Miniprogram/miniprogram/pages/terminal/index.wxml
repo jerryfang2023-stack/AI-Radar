@@ -2,6 +2,8 @@
   <app-header title="融资情报" />
 
   <view class="page-content terminal-content">
+    <view class="funding-metrics"><view><text>融资</text><strong>{{scopeCardCount}}</strong></view><view><text>本周</text><strong>{{weekCount}}</strong></view><view class="funding-date"><text>更新</text><strong>{{meta.latestDate}}</strong></view></view>
+
     <view class="search-row single-search">
       <view class="search-box">
         <icon type="search" size="18" color="#071827" />
@@ -10,12 +12,19 @@
       </view>
     </view>
 
-    <view class="funding-metrics"><view><text>融资</text><strong>{{meta.cardCount}}</strong></view><view><text>本周</text><strong>{{weekCount}}</strong></view><view class="funding-date"><text>更新</text><strong>{{meta.latestDate}}</strong></view></view>
-
-    <view class="list-heading">
-      <view class="result-summary">
-        <text>今日 {{todayCount}} 条融资动态</text>
+    <view class="scope-status-row">
+      <view class="market-scope" role="tablist" aria-label="融资市场范围">
+        <button class="market-scope-button {{selectedMarketRegion === 'china' ? 'active' : ''}}" data-region="china" bindtap="changeMarketRegion">
+          <text>中国</text><text class="market-scope-count">{{scopeCounts.china}}</text>
+        </button>
+        <button class="market-scope-button {{selectedMarketRegion === 'global' ? 'active' : ''}}" data-region="global" bindtap="changeMarketRegion">
+          <text>全球</text><text class="market-scope-count">{{scopeCounts.global}}</text>
+        </button>
       </view>
+      <view class="result-summary"><text>今日 {{todayCount}} 条融资动态</text></view>
+    </view>
+
+    <view wx:if="{{selectedIds.length}}" class="list-heading compare-heading">
       <view class="list-actions">
         <button wx:if="{{selectedIds.length >= 2}}" bindtap="openCompare">查看比较 {{selectedIds.length}}/3</button>
         <text wx:elif="{{selectedIds.length === 1}}">已选 1/3 · 继续选择</text>
@@ -28,5 +37,7 @@
     <view wx:if="{{!filteredCount}}" class="empty-state"><view class="title">暂无符合条件的融资</view><view class="copy">调整关键词或筛选条件后再试。</view></view>
     <view wx:if="{{visibleCount < filteredCount}}" class="load-note">继续上拉加载 · 已显示 {{visibleCount}} 条</view>
   </view>
+
+  <registration-sheet visible="{{registrationOpen}}" required="{{registrationRequired}}" bind:close="closeRegistration" bind:continue="continueAfterRegistration" />
 
 </view>

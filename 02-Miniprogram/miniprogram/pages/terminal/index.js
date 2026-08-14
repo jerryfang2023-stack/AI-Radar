@@ -1,14 +1,17 @@
-const { filterCards, sortCards, activeFilterCount } = require("../../utils/funding.js");
+const { filterCards, sortCards } = require("../../utils/funding.js");
 const { getWatchIds, toggleWatch, getCompareIds } = require("../../utils/storage.js");
 const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
 const { syncTabBar } = require("../../utils/tab-bar.js");
+const { getAccessState, openMembership } = require("../../utils/access.js");
 
 const bundledFundingIndex = getFundingData().index;
+const MARKET_SCOPE_KEY = "guanlan_funding_market_scope_v1";
+const MARKET_SCOPES = ["china", "global"];
 
 const DEFAULT_FILTERS = {
   keyword: "",
   period: "all",
-  marketRegion: "all",
+  marketRegion: "china",
   region: "all",
   roundGroup: "all",
   categoryId: "all",
@@ -26,45 +29,40 @@ Page({
     todayCount: 0,
     weekCount: 0,
     latestDateShort: "",
+    scopeCardCount: 0,
+    scopeCounts: { china: 0, global: 0 },
+    selectedMarketRegion: "china",
+    registrationOpen: false,
+    registrationRequired: false,
     sort: "latest",
-    filterOpen: false,
-    activeFilterCount: 0,
     filters: { ...DEFAULT_FILTERS },
-    draftFilters: { ...DEFAULT_FILTERS },
-    roundGroups: [
-      { id: "all", name: "全部轮次" },
-      { id: "early", name: "种子/天使" },
-      { id: "growth", name: "A/B/C轮" },
-      { id: "late", name: "D轮及以后" },
-      { id: "other", name: "战略及其他" }
-    ],
-    regions: [
-      { id: "all", name: "全部地区" },
-      { id: "china", name: "中国总部" },
-      { id: "overseas", name: "海外总部" },
-      { id: "undisclosed", name: "未披露" }
-    ],
-    marketRegions: [
-      { id: "all", name: "全球" },
-      { id: "china", name: "中国区" },
-      { id: "global", name: "全球其他" }
-    ],
-    periods: [
-      { id: "all", name: "全部时间" },
-      { id: "30d", name: "近30天" },
-      { id: "90d", name: "近90天" },
-      { id: "1y", name: "近1年" }
-    ]
   },
 
   onLoad() {
     this.allCards = bundledFundingIndex.cards;
     this.filteredCards = [];
     this.pageSize = 36;
-    this.setData({ selectedIds: getCompareIds() });
-    this.updateMetrics(bundledFundingIndex);
-    this.refreshCards(true);
+    const savedScope = wx.getStorageSync(MARKET_SCOPE_KEY);
+    const selectedMarketRegion = MARKET_SCOPES.includes(savedScope) ? savedScope : "china";
+    this.setData({
+      selectedIds: getCompareIds(),
+      selectedMarketRegion,
+      "filters.marketRegion": selectedMarketRegion,
+    }, () => {
+      this.updateMetrics(bundledFundingIndex);
+      this.refreshCards(true);
+    });
     refreshFundingData().then((state) => this.applyFundingData(state.index));
+    const app = getApp();
+    if (getAccessState() === "unregistered" && !app.globalData.registrationPromptDismissed) {
+      this.registrationTimer = setTimeout(() => {
+        this.setData({ registrationOpen: true, registrationRequired: false });
+      }, 450);
+    }
+  },
+
+  onUnload() {
+    clearTimeout(this.registrationTimer);
   },
 
   onShow() {
@@ -84,12 +82,23 @@ Page({
 
   updateMetrics(index) {
     const latest = new Date(`${index.meta.latestDate}T00:00:00`);
-    const todayCount = index.cards.filter((card) => card.date === index.meta.latestDate).length;
-    const weekCount = index.cards.filter((card) => {
+    const scopeCounts = {
+      china: index.cards.filter((card) => card.marketRegion === "china").length,
+      global: index.cards.filter((card) => card.marketRegion === "global").length,
+    };
+    const scopeCards = index.cards.filter((card) => card.marketRegion === this.data.selectedMarketRegion);
+    const todayCount = scopeCards.filter((card) => card.date === index.meta.latestDate).length;
+    const weekCount = scopeCards.filter((card) => {
       const current = new Date(`${card.date}T00:00:00`);
       return Number.isFinite(current.getTime()) && latest.getTime() - current.getTime() <= 6 * 86400000;
     }).length;
-    this.setData({ todayCount, weekCount, latestDateShort: index.meta.latestDate.slice(5) });
+    this.setData({
+      todayCount,
+      weekCount,
+      scopeCardCount: scopeCards.length,
+      scopeCounts,
+      latestDateShort: index.meta.latestDate.slice(5),
+    });
   },
 
   onReachBottom() {
@@ -109,10 +118,7 @@ Page({
   refreshCards(reset) {
     const filtered = filterCards(this.allCards, this.data.filters, this.data.meta.latestDate);
     this.filteredCards = sortCards(filtered, this.data.sort);
-    this.setData({
-      filteredCount: this.filteredCards.length,
-      activeFilterCount: activeFilterCount(this.data.filters),
-    });
+    this.setData({ filteredCount: this.filteredCards.length });
     this.renderSlice(reset ? this.pageSize : Math.max(this.data.visibleCount, this.pageSize));
   },
 
@@ -135,23 +141,17 @@ Page({
     this.setData({ "filters.keyword": "" }, () => this.refreshCards(true));
   },
 
-  openFilters() {
-    this.setData({ filterOpen: true, draftFilters: { ...this.data.filters } });
-  },
-
-  closeFilters() { this.setData({ filterOpen: false }); },
-
-  chooseDraft(event) {
-    const { name, value } = event.currentTarget.dataset;
-    this.setData({ [`draftFilters.${name}`]: value });
-  },
-
-  resetDraft() {
-    this.setData({ draftFilters: { ...DEFAULT_FILTERS, keyword: this.data.filters.keyword } });
-  },
-
-  applyDraft() {
-    this.setData({ filters: { ...this.data.draftFilters }, filterOpen: false }, () => this.refreshCards(true));
+  changeMarketRegion(event) {
+    const marketRegion = event.currentTarget.dataset.region;
+    if (!MARKET_SCOPES.includes(marketRegion) || marketRegion === this.data.selectedMarketRegion) return;
+    wx.setStorageSync(MARKET_SCOPE_KEY, marketRegion);
+    this.setData({
+      selectedMarketRegion: marketRegion,
+      "filters.marketRegion": marketRegion,
+    }, () => {
+      this.updateMetrics({ cards: this.allCards, meta: this.data.meta });
+      this.refreshCards(true);
+    });
   },
 
   changeSort() {
@@ -160,7 +160,28 @@ Page({
   },
 
   openCard(event) {
-    wx.navigateTo({ url: `/pages/detail/index?id=${event.detail.id}` });
+    const id = event.detail.id;
+    const accessState = getAccessState();
+    if (accessState === "unregistered") {
+      this.pendingCardId = id;
+      this.setData({ registrationOpen: true, registrationRequired: true });
+      return;
+    }
+    if (accessState === "expired") return openMembership();
+    wx.navigateTo({ url: `/pages/detail/index?id=${id}` });
+  },
+
+  closeRegistration() {
+    getApp().globalData.registrationPromptDismissed = true;
+    this.pendingCardId = "";
+    this.setData({ registrationOpen: false, registrationRequired: false });
+  },
+
+  continueAfterRegistration() {
+    const id = this.pendingCardId;
+    this.pendingCardId = "";
+    this.setData({ registrationOpen: false, registrationRequired: false });
+    if (id) wx.navigateTo({ url: `/pages/detail/index?id=${id}` });
   },
 
   toggleWatch(event) {

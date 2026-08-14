@@ -9,6 +9,7 @@ Component({
   data: {
     selected: 0,
     list: TABS,
+    hidden: false,
   },
 
   lifetimes: {

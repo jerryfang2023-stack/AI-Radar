@@ -56,4 +56,5 @@
     <button data-url="/pages/watchlist/index" bindtap="switchSection">观察</button>
     <button data-url="/pages/profile/index" bindtap="switchSection">我的</button>
   </view>
+  <registration-sheet visible="{{registrationOpen}}" required="{{isInvitee}}" invite-code="{{inviteCode}}" bind:close="closeRegistration" bind:registered="registrationCompleted" bind:continue="continueAfterRegistration" />
 </view>

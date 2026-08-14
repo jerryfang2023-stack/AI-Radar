@@ -1,10 +1,14 @@
 const { recordBehavior } = require("../../utils/member.js");
 const { getReportData, refreshReportData } = require("../../utils/live-data.js");
+const { getAccessState, openMembership } = require("../../utils/access.js");
 
 Page({
-  data: { report: null, sharedEntry: false },
+  data: { report: null, sharedEntry: false, registrationOpen: false },
   onLoad(options) {
     this.reportId = options.id;
+    const accessState = getAccessState();
+    if (accessState === "unregistered") this.setData({ registrationOpen: true });
+    if (accessState === "expired") setTimeout(() => openMembership(), 0);
     this.setData({ sharedEntry: options.from === "share" || getCurrentPages().length <= 1 });
     if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
     const bundled = getReportData().details[this.reportId];
@@ -19,11 +23,22 @@ Page({
     });
   },
   render(report) {
-    if (!this.browseRecorded) {
+    if (!this.browseRecorded && getAccessState() === "active") {
       recordBehavior("browse", `report:${report.id}`);
       this.browseRecorded = true;
     }
     this.setData({ report });
+  },
+  closeRegistration() {
+    this.setData({ registrationOpen: false });
+    wx.switchTab({ url: "/pages/watchlist/index" });
+  },
+  continueAfterRegistration() {
+    this.setData({ registrationOpen: false });
+    if (!this.browseRecorded && this.data.report) {
+      recordBehavior("browse", `report:${this.data.report.id}`);
+      this.browseRecorded = true;
+    }
   },
   onShareAppMessage() {
     const report = this.data.report;

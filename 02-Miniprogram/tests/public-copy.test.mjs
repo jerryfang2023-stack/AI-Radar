@@ -33,6 +33,9 @@ const headerLogic = fs.readFileSync("miniprogram/components/app-header/index.js"
 const memberModelSource = fs.readFileSync("miniprogram/utils/member.js", "utf8");
 const memberSource = fs.readFileSync("miniprogram/utils/member.js", "utf8");
 const paymentSource = fs.readFileSync("miniprogram/utils/payment.js", "utf8");
+const registrationSource = fs.readFileSync("miniprogram/components/registration-sheet/index.wxml", "utf8");
+const registrationLogic = fs.readFileSync("miniprogram/components/registration-sheet/index.js", "utf8");
+const terminalLogic = fs.readFileSync("miniprogram/pages/terminal/index.js", "utf8");
 const membershipLogic = fs.readFileSync("miniprogram/pages/membership/index.js", "utf8");
 const publicFiles = [
   "miniprogram/pages/terminal/index.wxml",
@@ -49,7 +52,7 @@ test("uses the confirmed financing column and public-facing copy", () => {
   assert.equal(appConfig.tabBar.list[0].text, "融资");
   assert.equal(appConfig.tabBar.list[1].text, "生态");
   assert.match(terminalSource, /<app-header title="融资情报"/u);
-  assert.match(terminalSource, /<text>融资<\/text><strong>\{\{meta\.cardCount\}\}<\/strong>/u);
+  assert.match(terminalSource, /<text>融资<\/text><strong>\{\{scopeCardCount\}\}<\/strong>/u);
   assert.match(terminalSource, /class="funding-date"><text>更新<\/text><strong>\{\{meta\.latestDate\}\}<\/strong>/u);
   assert.match(marketSource, /<app-header title="生态图谱"/u);
   assert.match(watchlistSource, /<app-header title="商业观察"/u);
@@ -59,6 +62,31 @@ test("uses the confirmed financing column and public-facing copy", () => {
   for (const internalCopy of ["融资终端", "多源核验", "多源已核验", "已验证信号", "证据状态"]) {
     assert.doesNotMatch(publicSource, new RegExp(internalCopy, "u"));
   }
+});
+
+test("switches financing between China and global scopes with persisted live counts", () => {
+  assert.match(terminalSource, /data-region="china"[\s\S]*>中国</u);
+  assert.match(terminalSource, /data-region="global"[\s\S]*>全球</u);
+  assert.match(terminalSource, /scopeCounts\.china/u);
+  assert.match(terminalSource, /scopeCounts\.global/u);
+  assert.match(terminalLogic, /MARKET_SCOPE_KEY/u);
+  assert.match(terminalLogic, /card\.marketRegion === this\.data\.selectedMarketRegion/u);
+  assert.match(terminalLogic, /"filters\.marketRegion": marketRegion/u);
+});
+
+test("requires phone, avatar and nickname before the server starts a seven-day trial", () => {
+  for (const copy of ["开启 7 天完整体验", "头像", "昵称", "授权手机号并开启体验", "不自动续费"]) {
+    assert.match(registrationSource, new RegExp(copy, "u"));
+  }
+  assert.match(registrationSource, /open-type="chooseAvatar"/u);
+  assert.match(registrationSource, /type="nickname"/u);
+  assert.match(registrationSource, /open-type="getPhoneNumber"/u);
+  assert.match(registrationLogic, /phoneCode/u);
+  assert.match(registrationLogic, /avatarSelected: true/u);
+  assert.match(registrationLogic, /syncMembership\(result\.membership\)/u);
+  assert.match(paymentSource, /function hasAuthToken/u);
+  assert.match(paymentSource, /fetchMembership\(\)[\s\S]*withExistingToken/u);
+  assert.doesNotMatch(registrationSource, /自动获得|首次打开即/u);
 });
 
 test("exposes the confirmed membership plans and point exchange entry", () => {
@@ -171,6 +199,7 @@ test("opens a dedicated invitation value page before sharing", () => {
   assert.match(inviteLogic, /recordInviteVisit/u);
   assert.match(inviteLogic, /syncInviteRewards/u);
   assert.match(inviteLogic, /inviterName/u);
+  assert.match(inviteLogic, /if \(isInvitee\)[\s\S]*if \(!hasAuthToken\(\)\) this\.setData\(\{ registrationOpen: true \}\)/u);
 });
 
 test("enables confirmed point redemption with balance and membership updates", () => {

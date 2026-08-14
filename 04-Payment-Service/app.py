@@ -77,6 +77,8 @@ def create_app(test_config=None, *, pay_client=None):
                     phone_hash TEXT,
                     phone_masked TEXT,
                     phone_bound_at TEXT,
+                    nickname TEXT,
+                    avatar_selected_at TEXT,
                     trial_started_at TEXT NOT NULL,
                     trial_ends_at TEXT NOT NULL,
                     member_ends_at TEXT,
@@ -145,6 +147,10 @@ def create_app(test_config=None, *, pay_client=None):
                 conn.execute("ALTER TABLE users ADD COLUMN phone_masked TEXT")
             if "phone_bound_at" not in columns:
                 conn.execute("ALTER TABLE users ADD COLUMN phone_bound_at TEXT")
+            if "nickname" not in columns:
+                conn.execute("ALTER TABLE users ADD COLUMN nickname TEXT")
+            if "avatar_selected_at" not in columns:
+                conn.execute("ALTER TABLE users ADD COLUMN avatar_selected_at TEXT")
             conn.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_users_invite_code ON users(invite_code)")
             conn.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_users_phone_hash ON users(phone_hash)")
             conn.commit()
@@ -170,7 +176,11 @@ def create_app(test_config=None, *, pay_client=None):
         }
 
     def public_profile(row):
-        return {"phoneMasked": row["phone_masked"] or ""}
+        return {
+            "phoneMasked": row["phone_masked"] or "",
+            "nickname": row["nickname"] or "",
+            "avatarSelected": bool(row["avatar_selected_at"]),
+        }
 
     def mask_phone(phone_number):
         value = "".join(character for character in str(phone_number) if character.isdigit())
@@ -298,6 +308,9 @@ def create_app(test_config=None, *, pay_client=None):
         payload = request.get_json(silent=True) or {}
         code = str(payload.get("code") or "").strip()
         invite_code = str(payload.get("inviteCode") or "").strip()
+        phone_code = str(payload.get("phoneCode") or "").strip()
+        nickname = str(payload.get("nickname") or "").strip()
+        avatar_selected = payload.get("avatarSelected") is True
         if not code or len(code) > 128:
             return jsonify(error={"code": "INVALID_CODE", "message": "微信登录凭证无效"}), 400
         if len(invite_code) > 32:
@@ -309,10 +322,34 @@ def create_app(test_config=None, *, pay_client=None):
             is_new_user = user is None
             invitation_accepted = False
             if not user:
-                conn.execute(
-                    "INSERT INTO users(openid, unionid, trial_started_at, trial_ends_at, created_at, updated_at) VALUES(?,?,?,?,?,?)",
-                    (result["openid"], result.get("unionid"), iso(now), iso(now + timedelta(days=7)), iso(now), iso(now)),
-                )
+                missing = []
+                if not phone_code:
+                    missing.append("phone")
+                if not nickname or len(nickname) > 20:
+                    missing.append("nickname")
+                if not avatar_selected:
+                    missing.append("avatar")
+                if missing:
+                    return jsonify(error={
+                        "code": "REGISTRATION_REQUIRED",
+                        "message": "请先授权手机号，并确认头像和昵称",
+                        "missing": missing,
+                    }), 409
+                phone = app.pay_client.exchange_phone_code(phone_code)
+                number = "".join(character for character in str(phone.get("phoneNumber") or "") if character.isdigit())
+                masked = mask_phone(number)
+                if not masked:
+                    return jsonify(error={"code": "INVALID_PHONE_NUMBER", "message": "手机号格式无效"}), 400
+                try:
+                    conn.execute(
+                        "INSERT INTO users(openid, unionid, phone_hash, phone_masked, phone_bound_at, nickname, avatar_selected_at, trial_started_at, trial_ends_at, created_at, updated_at) VALUES(?,?,?,?,?,?,?,?,?,?,?)",
+                        (
+                            result["openid"], result.get("unionid"), phone_hash(number), masked, iso(now), nickname,
+                            iso(now), iso(now), iso(now + timedelta(days=7)), iso(now), iso(now),
+                        ),
+                    )
+                except sqlite3.IntegrityError:
+                    return jsonify(error={"code": "PHONE_ALREADY_BOUND", "message": "该手机号已绑定其他账号"}), 409
                 conn.commit()
                 user = conn.execute("SELECT * FROM users WHERE openid=?", (result["openid"],)).fetchone()
                 inviter = conn.execute("SELECT * FROM users WHERE invite_code=?", (invite_code,)).fetchone() if invite_code else None

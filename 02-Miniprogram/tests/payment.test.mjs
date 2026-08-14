@@ -47,14 +47,27 @@ test("does not confirm membership when the user cancels payment", async () => {
 
 test("attributes registration to an invite and loads confirmed invite stats", async () => {
   const { payment, requests } = loadPaymentWx();
-  const registration = await payment.login({ inviteCode: "invite-abc" });
+  const registration = await payment.login({ inviteCode: "invite-abc", phoneCode: "phone-code", nickname: "新用户", avatarSelected: true });
   assert.equal(registration.isNewUser, true);
-  assert.deepEqual(requests.find((item) => item.url.endsWith("/auth/wechat")).data, { code: "login-code", inviteCode: "invite-abc" });
+  assert.deepEqual(requests.find((item) => item.url.endsWith("/auth/wechat")).data, {
+    code: "login-code",
+    inviteCode: "invite-abc",
+    phoneCode: "phone-code",
+    nickname: "新用户",
+    avatarSelected: true,
+  });
 
   await payment.recordInviteVisit("invite-abc", "device-1");
   const stats = await payment.fetchInviteSummary();
   assert.equal(stats.summary.rewardPoints, 300);
   assert.ok(requests.some((item) => item.url.endsWith("/invites/visit")));
+});
+
+test("does not silently register while checking membership", async () => {
+  const { payment, requests } = loadPaymentWx();
+  assert.equal(payment.hasAuthToken(), false);
+  await assert.rejects(payment.fetchMembership(), (error) => error.code === "AUTH_REQUIRED");
+  assert.equal(requests.some((item) => item.url.endsWith("/auth/wechat")), false);
 });
 
 test("exchanges a phone authorization code and returns the masked phone", async () => {

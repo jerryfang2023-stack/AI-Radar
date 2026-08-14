@@ -19,7 +19,12 @@ class FakePayClient:
 
     def exchange_phone_code(self, code):
         assert code
-        return {"phoneNumber": "13800138000", "countryCode": "86"}
+        if code in {"phone-code", "first", "second"}:
+            number = "13800138000"
+        else:
+            suffix = sum(ord(character) for character in code) % 100000000
+            number = f"139{suffix:08d}"
+        return {"phoneNumber": number, "countryCode": "86"}
 
     def create_jsapi_order(self, **values):
         self.orders[values["order_no"]] = values
@@ -55,8 +60,18 @@ def client(tmp_path):
     return app.test_client()
 
 
+def registration_payload(code="user-a", **values):
+    return {
+        "code": code,
+        "phoneCode": f"phone-{code}",
+        "nickname": "观澜用户",
+        "avatarSelected": True,
+        **values,
+    }
+
+
 def login(client, code="user-a"):
-    response = client.post("/api/v1/auth/wechat", json={"code": code})
+    response = client.post("/api/v1/auth/wechat", json=registration_payload(code))
     assert response.status_code == 200
     return response.get_json()["token"]
 
@@ -85,14 +100,34 @@ def test_login_creates_seven_day_trial(client):
     assert membership["remainingDays"] == 7
 
 
+def test_new_user_trial_does_not_start_before_required_profile_is_complete(client):
+    response = client.post("/api/v1/auth/wechat", json={"code": "incomplete-user"})
+    assert response.status_code == 409
+    assert response.get_json()["error"]["code"] == "REGISTRATION_REQUIRED"
+    assert response.get_json()["error"]["missing"] == ["phone", "nickname", "avatar"]
+
+    with sqlite3.connect(client.application.config["DATABASE_PATH"]) as conn:
+        count = conn.execute("SELECT COUNT(*) FROM users WHERE openid=?", ("openid-incomplete-user",)).fetchone()[0]
+    assert count == 0
+
+    completed = client.post("/api/v1/auth/wechat", json=registration_payload("incomplete-user", nickname="新用户"))
+    assert completed.status_code == 200
+    payload = completed.get_json()
+    assert payload["isNewUser"] is True
+    assert payload["membership"]["remainingDays"] == 7
+    assert payload["profile"]["nickname"] == "新用户"
+    assert payload["profile"]["avatarSelected"] is True
+    assert payload["profile"]["phoneMasked"].startswith("139****")
+
+
 def test_phone_authorization_binds_masked_number_without_storing_plaintext(client):
     token = login(client, "phone-user")
     response = client.post("/api/v1/member/phone", headers=auth(token), json={"code": "phone-code"})
     assert response.status_code == 200
-    assert response.get_json()["profile"] == {"phoneMasked": "138****8000"}
+    assert response.get_json()["profile"] == {"phoneMasked": "138****8000", "nickname": "观澜用户", "avatarSelected": True}
 
     profile = client.get("/api/v1/member/me", headers=auth(token)).get_json()["profile"]
-    assert profile == {"phoneMasked": "138****8000"}
+    assert profile == {"phoneMasked": "138****8000", "nickname": "观澜用户", "avatarSelected": True}
 
     with sqlite3.connect(client.application.config["DATABASE_PATH"]) as conn:
         phone_hash, phone_masked = conn.execute(
@@ -114,7 +149,7 @@ def test_phone_cannot_be_bound_to_two_accounts(client):
 
 
 def test_invite_visit_registration_and_reward_stats_are_idempotent(client):
-    inviter_login = client.post("/api/v1/auth/wechat", json={"code": "inviter"}).get_json()
+    inviter_login = client.post("/api/v1/auth/wechat", json=registration_payload("inviter")).get_json()
     inviter_token = inviter_login["token"]
     invite_code = inviter_login["inviteCode"]
 
@@ -123,7 +158,7 @@ def test_invite_visit_registration_and_reward_stats_are_idempotent(client):
     assert first_visit.status_code == 201
     assert repeated_visit.status_code == 200
 
-    invited_login = client.post("/api/v1/auth/wechat", json={"code": "invitee", "inviteCode": invite_code})
+    invited_login = client.post("/api/v1/auth/wechat", json=registration_payload("invitee", inviteCode=invite_code))
     repeated_login = client.post("/api/v1/auth/wechat", json={"code": "invitee", "inviteCode": invite_code})
     assert invited_login.get_json()["isNewUser"] is True
     assert invited_login.get_json()["invitationAccepted"] is True

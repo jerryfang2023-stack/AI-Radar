@@ -30,4 +30,5 @@
     <button class="active" data-url="/pages/watchlist/index" bindtap="switchSection">观察</button>
     <button data-url="/pages/profile/index" bindtap="switchSection">我的</button>
   </view>
+  <registration-sheet visible="{{registrationOpen}}" required="{{true}}" bind:close="closeRegistration" bind:continue="continueAfterRegistration" />
 </view>
