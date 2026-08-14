@@ -1,5 +1,36 @@
 # Design QA
 
+## 2026-08-14 个人资料与手机号绑定修复
+
+- Source visual truth: 用户提供的“账号与联系”真机截图；implementation capture: `C:\Users\86186\.codex\tmp\wavesight-profile-fix\profile-edit.png`；side-by-side comparison: `C:\Users\86186\.codex\tmp\wavesight-profile-fix\comparison.png`。
+- Removed the WeChat-ID row, privacy implementation note, pending-backend state, preview/production wording, and redundant account-section split.
+- Rebuilt the remaining content as a compact completion summary, one cohesive profile-settings card, and a single primary save action using the existing warm-white, deep-navy, and champagne-gold system.
+- Phone authorization now exchanges the one-time code through the account service and returns a masked bound number; the Mini Program no longer creates a local pending state.
+- Visual comparison passed for hierarchy, spacing, type scale, card radius, divider contrast, control affordance, capsule-safe header, and removal of all requested copy.
+- `npm run verify`: 43 tests passed; 16 pages and 33 JavaScript files validated.
+- Payment/account service: 14 pytest cases passed, including code exchange, masked-only storage, unique phone binding, and access-token reuse.
+- WeChat Developer Tools preview compiled with production AppID `wx34133741173154d4`; package size 754,564 bytes. Simulator capture completed from `pages/profile-edit/index`.
+
+final result: passed
+
+---
+
+## 2026-08-14 分享、签到与邀请注册修复
+
+- Source visual truth: 用户提供的周报、融资详情、企业档案及邀请好友真机截图。
+- Financing and ecosystem detail pages now expose native WeChat session and Moments sharing with stable deep links.
+- Reports opened from a share show a persistent text navigation fallback; direct-entry back actions return to the relevant tab.
+- Profile growth tasks include an idempotent “每日签到” task worth 5 points.
+- Invitee pages now lead with “邀请人昵称 + 邀请你来”, place the WeChat registration CTA directly below the hero, and provide direct-entry tab navigation.
+- Inviter pages remove the repeated hero helper sentence and show server-confirmed invited visitors, successful registrations, and reward points.
+- `npm run verify`: 41 tests passed; 16 pages and 33 JavaScript files validated.
+- Payment/invitation service: 11 pytest cases passed, including duplicate visit and duplicate registration protection.
+- WeChat Developer Tools CLI preview succeeded with production AppID `wx34133741173154d4`; package size 753,592 bytes.
+
+final result: passed
+
+---
+
 ## Scope
 
 - Source visual truth: approved full-page UI demo at `C:\Users\86186\.codex\visualizations\2026\08\13\wavesight-full-ui-demo`.

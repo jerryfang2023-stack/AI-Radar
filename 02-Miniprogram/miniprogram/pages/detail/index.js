@@ -2,6 +2,7 @@ const { isWatched, toggleWatch, isCompared, toggleCompare } = require("../../uti
 const { recordBrowse } = require("../../utils/member.js");
 const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
 const { companyEntityKey, investorEntityKey, personEntityKey } = require("../../utils/entity-library.js");
+const { getAccessState, openMembership } = require("../../utils/access.js");
 
 function normalizedCard(card) {
   if (!card) return null;
@@ -22,10 +23,14 @@ function normalizedCard(card) {
 }
 
 Page({
-  data: { card: null, watched: false, compared: false },
+  data: { card: null, watched: false, compared: false, registrationOpen: false },
 
   onLoad(options) {
     this.cardId = options.id;
+    const accessState = getAccessState();
+    if (accessState === "unregistered") this.setData({ registrationOpen: true });
+    if (accessState === "expired") setTimeout(() => openMembership(), 0);
+    if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
     const bundledCard = normalizedCard(getFundingData().details[this.cardId]);
     if (bundledCard) this.renderCard(bundledCard);
     refreshFundingData().then((state) => {
@@ -39,11 +44,25 @@ Page({
   },
 
   renderCard(card) {
-    if (!this.browseRecorded) {
+    this.recordView(card);
+    this.setData({ card, watched: isWatched(card.id), compared: isCompared(card.id) });
+  },
+
+  recordView(card) {
+    if (!this.browseRecorded && card && getAccessState() === "active") {
       recordBrowse(card.id);
       this.browseRecorded = true;
     }
-    this.setData({ card, watched: isWatched(card.id), compared: isCompared(card.id) });
+  },
+
+  closeRegistration() {
+    this.setData({ registrationOpen: false });
+    wx.switchTab({ url: "/pages/terminal/index" });
+  },
+
+  continueAfterRegistration() {
+    this.setData({ registrationOpen: false });
+    this.recordView(this.data.card);
   },
 
   onShow() {
@@ -86,5 +105,21 @@ Page({
     const founder = { id: event.currentTarget.dataset.id || "", name: event.currentTarget.dataset.name || "" };
     const key = personEntityKey(founder, this.data.card.company);
     if (key) wx.navigateTo({ url: `/pages/entity-detail/index?type=people&key=${encodeURIComponent(key)}` });
+  },
+
+  onShareAppMessage() {
+    const card = this.data.card;
+    return {
+      title: card ? `${card.company} ${card.round}融资｜观澜 AI` : "观澜 AI 融资情报",
+      path: `/pages/detail/index?id=${encodeURIComponent(card?.id || this.cardId || "")}&from=share`,
+    };
+  },
+
+  onShareTimeline() {
+    const card = this.data.card;
+    return {
+      title: card ? `${card.company} ${card.round}融资｜观澜 AI` : "观澜 AI 融资情报",
+      query: `id=${encodeURIComponent(card?.id || this.cardId || "")}&from=share`,
+    };
   },
 });

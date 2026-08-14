@@ -1,5 +1,6 @@
 const { getLevel, applyReward, applyRedemption } = require("./growth-model.js");
-const { MONTHLY_PRICE, PRICING_PLANS, createMembership, membershipSnapshot, extendMembership } = require("./membership-model.js");
+const { MONTHLY_PRICE, PRICING_PLANS, membershipSnapshot, extendMembership } = require("./membership-model.js");
+const { hasAuthToken, recordMemberBehavior } = require("./payment.js");
 
 const PROFILE_KEY = "guanlan_member_profile_v1";
 const HISTORY_KEY = "guanlan_browse_history_v1";
@@ -9,11 +10,14 @@ const TASK_KEY = "guanlan_daily_tasks_v1";
 const BENEFIT_KEY = "guanlan_redeemed_benefits_v1";
 const MEMBERSHIP_KEY = "guanlan_membership_v1";
 const COMMUNITY_KEY = "guanlan_community_v1";
+const INVITE_REWARD_SYNC_KEY = "guanlan_invite_reward_synced_v1";
+const BEHAVIOR_SYNC_KEY = "guanlan_behavior_sync_queue_v1";
+let behaviorSyncPromise = null;
 
 const TASKS = [
+  { id: "checkin", title: "每日签到", target: 1, reward: 5, unit: "次" },
   { id: "browse", title: "每日阅读 5 条情报", target: 5, reward: 2, unit: "条" },
   { id: "favorite", title: "收藏 1 条情报", target: 1, reward: 3, unit: "条" },
-  { id: "follow", title: "关注 1 个主题", target: 1, reward: 5, unit: "个" },
 ];
 
 const BENEFITS = [
@@ -21,7 +25,7 @@ const BENEFITS = [
   { id: "membership_30d", title: "30 天会员权益", description: "全部栏目浏览权益顺延 30 天", cost: 1000, days: 30, repeatable: true },
 ];
 
-const MEMBER_RIGHTS = ["融资情报完整浏览", "生态图谱主体档案", "商业观察周报月报", "收藏、关注与浏览记录"];
+const MEMBER_RIGHTS = ["融资情报完整浏览", "生态图谱主体档案", "商业观察周报月报", "收藏与浏览记录"];
 
 function nowLabel() {
   const date = new Date();
@@ -33,14 +37,24 @@ function dateKey() {
   return nowLabel().slice(0, 10);
 }
 
+function normalizeTaskState(value = {}) {
+  return {
+    ...value,
+    checkin: Array.isArray(value.checkin) ? value.checkin : [],
+    browse: Array.isArray(value.browse) ? value.browse : [],
+    favorite: Array.isArray(value.favorite) ? value.favorite : [],
+    awarded: Array.isArray(value.awarded) ? value.awarded : [],
+  };
+}
+
 function getProfile() {
   const value = wx.getStorageSync(PROFILE_KEY) || {};
   return {
     nickname: "观澜用户",
     avatarUrl: "/assets/brand/app-icon-light.svg",
     phoneMasked: "",
-    phonePending: false,
     ...value,
+    phonePending: false,
   };
 }
 
@@ -127,11 +141,56 @@ function syncCommunity(community) {
   return community;
 }
 
+function syncInviteRewards(totalPoints) {
+  const confirmed = Math.max(0, Number(totalPoints) || 0);
+  const synced = Math.max(0, Number(wx.getStorageSync(INVITE_REWARD_SYNC_KEY)) || 0);
+  if (confirmed <= synced) return { awarded: 0, wallet: getWallet() };
+  const awarded = confirmed - synced;
+  const wallet = applyReward(getWallet(), awarded, "邀请好友奖励", nowLabel(), `invite_reward_${confirmed}`);
+  saveWallet(wallet);
+  wx.setStorageSync(INVITE_REWARD_SYNC_KEY, confirmed);
+  return { awarded, wallet };
+}
+
+function syncBehaviorQueue() {
+  if (!hasAuthToken()) return Promise.resolve();
+  if (behaviorSyncPromise) return behaviorSyncPromise;
+  behaviorSyncPromise = (async () => {
+    while (true) {
+      const queue = wx.getStorageSync(BEHAVIOR_SYNC_KEY) || [];
+      const pending = queue[0];
+      if (!pending) break;
+      try {
+        const result = await recordMemberBehavior(pending.type, pending.subjectId, pending.behaviorDate);
+        if (result.wallet) syncWallet(result.wallet);
+        const latest = wx.getStorageSync(BEHAVIOR_SYNC_KEY) || [];
+        wx.setStorageSync(BEHAVIOR_SYNC_KEY, latest.filter((item) => item.id !== pending.id));
+      } catch (error) {
+        if (error.code === "INVALID_BEHAVIOR_DATE") {
+          const latest = wx.getStorageSync(BEHAVIOR_SYNC_KEY) || [];
+          wx.setStorageSync(BEHAVIOR_SYNC_KEY, latest.filter((item) => item.id !== pending.id));
+          continue;
+        }
+        break;
+      }
+    }
+  })().finally(() => { behaviorSyncPromise = null; });
+  return behaviorSyncPromise;
+}
+
+function queueBehaviorSync(type, subjectId) {
+  const queue = wx.getStorageSync(BEHAVIOR_SYNC_KEY) || [];
+  const behaviorDate = dateKey();
+  const id = `${behaviorDate}:${type}:${subjectId}`;
+  if (!queue.some((item) => item.id === id)) {
+    wx.setStorageSync(BEHAVIOR_SYNC_KEY, [...queue, { id, type, subjectId, behaviorDate }]);
+  }
+  if (hasAuthToken()) syncBehaviorQueue().catch(() => {});
+}
+
 function getMembership() {
   const value = wx.getStorageSync(MEMBERSHIP_KEY);
-  const membership = value && value.trialEndsAt ? value : createMembership();
-  if (!value || !value.trialEndsAt) wx.setStorageSync(MEMBERSHIP_KEY, membership);
-  return membershipSnapshot(membership);
+  return membershipSnapshot(value || {});
 }
 
 function saveMembership(membership) {
@@ -141,22 +200,22 @@ function saveMembership(membership) {
 
 function syncMembership(membership) {
   if (!membership || !membership.trialEndsAt) return getMembership();
-  const current = getMembership();
+  const current = wx.getStorageSync(MEMBERSHIP_KEY) || {};
   const laterIso = (left, right) => {
     const leftTime = Date.parse(left || "") || 0;
     const rightTime = Date.parse(right || "") || 0;
     return leftTime >= rightTime ? (left || "") : (right || "");
   };
   return saveMembership({
-    trialStartedAt: current.trialStartedAt || membership.trialStartedAt,
-    trialEndsAt: laterIso(current.trialEndsAt, membership.trialEndsAt),
+    trialStartedAt: membership.trialStartedAt,
+    trialEndsAt: membership.trialEndsAt,
     memberEndsAt: laterIso(current.memberEndsAt, membership.memberEndsAt),
   });
 }
 
 function getTodayState() {
   const all = wx.getStorageSync(TASK_KEY) || {};
-  return all[dateKey()] || { browse: [], favorite: [], follow: [], awarded: [] };
+  return normalizeTaskState(all[dateKey()]);
 }
 
 function getTaskProgress() {
@@ -173,8 +232,9 @@ function recordBehavior(type, subjectId) {
   if (!task || !subjectId) return { awarded: 0 };
   const day = dateKey();
   const all = wx.getStorageSync(TASK_KEY) || {};
-  const state = all[day] || { browse: [], favorite: [], follow: [], awarded: [] };
-  if (!state[type].includes(subjectId)) state[type].push(subjectId);
+  const state = normalizeTaskState(all[day]);
+  const recorded = !state[type].includes(subjectId);
+  if (recorded) state[type].push(subjectId);
   let awarded = 0;
   if (state[type].length >= task.target && !state.awarded.includes(type)) {
     state.awarded.push(type);
@@ -184,6 +244,7 @@ function recordBehavior(type, subjectId) {
   }
   all[day] = state;
   wx.setStorageSync(TASK_KEY, all);
+  queueBehaviorSync(type, subjectId);
   return { awarded, taskId: type };
 }
 
@@ -258,6 +319,8 @@ module.exports = {
   syncCommunity,
   getMembership,
   syncMembership,
+  syncInviteRewards,
+  syncBehaviorQueue,
   getTaskProgress,
   recordBehavior,
   redeemBenefit,

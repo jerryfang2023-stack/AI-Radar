@@ -1,0 +1,15 @@
+<view wx:if="{{!hidden}}" class="tab-bar">
+  <view class="tab-list">
+    <view
+      wx:for="{{list}}"
+      wx:key="pagePath"
+      class="tab-button {{index ? 'with-divider' : ''}} {{selected === index ? 'active' : ''}}"
+      data-index="{{index}}"
+      data-path="{{item.pagePath}}"
+      hover-class="tab-button-pressed"
+      bindtap="switchTab"
+    >
+      <text>{{item.text}}</text>
+    </view>
+  </view>
+</view>

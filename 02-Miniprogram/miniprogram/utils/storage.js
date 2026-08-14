@@ -46,6 +46,12 @@ function toggleCompare(id) {
   return { ids, selected: true, full: false };
 }
 
+function removeCompare(id) {
+  const ids = getCompareIds().filter((item) => item !== id);
+  wx.setStorageSync(COMPARE_KEY, ids);
+  return ids;
+}
+
 module.exports = {
   WATCHLIST_KEY,
   COMPARE_KEY,
@@ -56,4 +62,5 @@ module.exports = {
   getCompareIds,
   isCompared,
   toggleCompare,
+  removeCompare,
 };

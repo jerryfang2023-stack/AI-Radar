@@ -1,4 +1,5 @@
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
+import sqlite3
 
 import pytest
 
@@ -16,8 +17,17 @@ class FakePayClient:
     def exchange_code(self, code):
         return {"openid": f"openid-{code}"}
 
+    def exchange_phone_code(self, code):
+        assert code
+        if code in {"phone-code", "first", "second"}:
+            number = "13800138000"
+        else:
+            suffix = sum(ord(character) for character in code) % 100000000
+            number = f"139{suffix:08d}"
+        return {"phoneNumber": number, "countryCode": "86"}
+
     def exchange_phone_number(self, code):
-        return {"phoneNumber": "13800138000"}
+        return self.exchange_phone_code(code)
 
     def create_jsapi_order(self, **values):
         self.orders[values["order_no"]] = values
@@ -71,8 +81,18 @@ def client(tmp_path):
     return app.test_client()
 
 
+def registration_payload(code="user-a", **values):
+    return {
+        "code": code,
+        "phoneCode": f"phone-{code}",
+        "nickname": "观澜用户",
+        "avatarSelected": True,
+        **values,
+    }
+
+
 def login(client, code="user-a"):
-    response = client.post("/api/v1/auth/wechat", json={"code": code})
+    response = client.post("/api/v1/auth/wechat", json=registration_payload(code))
     assert response.status_code == 200
     return response.get_json()["token"]
 
@@ -99,6 +119,79 @@ def test_login_creates_seven_day_trial(client):
     membership = response.get_json()["membership"]
     assert membership["status"] == "trial"
     assert membership["remainingDays"] == 7
+
+
+def test_trial_waits_for_registration_and_stores_no_plaintext_phone(client):
+    response = client.post("/api/v1/auth/wechat", json={"code": "incomplete-user"})
+    assert response.status_code == 409
+    assert response.get_json()["error"]["code"] == "REGISTRATION_REQUIRED"
+
+    completed = client.post("/api/v1/auth/wechat", json=registration_payload("incomplete-user", nickname="新用户"))
+    assert completed.status_code == 200
+    payload = completed.get_json()
+    assert payload["isNewUser"] is True
+    assert payload["profile"]["phoneMasked"].startswith("139****")
+
+    with sqlite3.connect(client.application.config["DATABASE_PATH"]) as conn:
+        phone_hash, phone_masked = conn.execute(
+            "SELECT phone_hash, phone_masked FROM users WHERE openid=?",
+            ("openid-incomplete-user",),
+        ).fetchone()
+    assert phone_masked.startswith("139****")
+    assert len(phone_hash) == 64
+    assert "139" not in phone_hash
+
+
+def test_existing_community_member_can_link_during_first_login_without_profile_repeat(client):
+    response = client.post("/api/v1/auth/wechat", json={"code": "community-user", "phoneCode": "phone-code"})
+    assert response.status_code == 200
+    payload = response.get_json()
+    assert payload["profile"]["nickname"] == "现有社群成员"
+    assert payload["community"]["status"] == "joined"
+    assert payload["wallet"] == {"balance": 860, "lifetime": 860}
+
+
+def test_existing_mini_program_user_can_link_by_phone_without_profile_repeat(client):
+    created = client.post("/api/v1/auth/wechat", json=registration_payload("legacy-community"))
+    assert created.status_code == 200
+
+    linked = client.post("/api/v1/auth/wechat", json={"code": "legacy-community", "phoneCode": "phone-code"})
+    assert linked.status_code == 200
+    payload = linked.get_json()
+    assert payload["isNewUser"] is False
+    assert payload["profile"]["nickname"] == "现有社群成员"
+    assert payload["community"]["status"] == "joined"
+    assert payload["wallet"] == {"balance": 860, "lifetime": 860}
+
+
+def test_phone_cannot_be_bound_to_two_accounts(client):
+    first_token = login(client, "phone-owner")
+    second_token = login(client, "phone-other")
+    assert client.post("/api/v1/member/phone", headers=auth(first_token), json={"code": "first"}).status_code == 200
+    response = client.post("/api/v1/member/phone", headers=auth(second_token), json={"code": "second"})
+    assert response.status_code == 409
+    assert response.get_json()["error"]["code"] == "PHONE_ALREADY_BOUND"
+
+
+def test_invite_visit_registration_and_wallet_reward_are_idempotent(client):
+    inviter_login = client.post("/api/v1/auth/wechat", json=registration_payload("inviter")).get_json()
+    inviter_token = inviter_login["token"]
+    invite_code = inviter_login["inviteCode"]
+
+    first_visit = client.post("/api/v1/invites/visit", json={"inviteCode": invite_code, "visitorKey": "device-1"})
+    repeated_visit = client.post("/api/v1/invites/visit", json={"inviteCode": invite_code, "visitorKey": "device-1"})
+    assert first_visit.status_code == 201
+    assert repeated_visit.status_code == 200
+
+    invited_login = client.post("/api/v1/auth/wechat", json=registration_payload("invitee", inviteCode=invite_code))
+    repeated_login = client.post("/api/v1/auth/wechat", json={"code": "invitee", "inviteCode": invite_code})
+    assert invited_login.get_json()["invitationAccepted"] is True
+    assert repeated_login.get_json()["invitationAccepted"] is False
+
+    result = client.get("/api/v1/invites/me", headers=auth(inviter_token)).get_json()
+    assert result["summary"]["successfulCount"] == 1
+    assert result["summary"]["rewardPoints"] == 300
+    assert result["wallet"] == {"balance": 300, "lifetime": 300}
 
 
 @pytest.mark.parametrize("plan_id", list(PLANS))
@@ -167,6 +260,50 @@ def test_existing_community_member_links_by_verified_phone_and_imports_all_histo
     assert refreshed["community"]["points"] == 1060
     assert refreshed["wallet"] == {"balance": 1060, "lifetime": 1060}
 
+    client.application.community_client.member_points = 760
+    decreased = client.get("/api/v1/member/me", headers=auth(token)).get_json()
+    assert decreased["community"]["points"] == 760
+    assert decreased["wallet"] == {"balance": 760, "lifetime": 1060}
+
+    client.application.community_client.member_points = 1060
+    restored = client.get("/api/v1/member/me", headers=auth(token)).get_json()
+    assert restored["wallet"] == {"balance": 1060, "lifetime": 1060}
+
+
+def test_growth_tasks_are_server_confirmed_and_idempotent(client):
+    token = login(client, "task-member")
+    headers = auth(token)
+
+    first = client.post("/api/v1/member/behaviors", headers=headers, json={"type": "checkin", "subjectId": "daily"})
+    repeated = client.post("/api/v1/member/behaviors", headers=headers, json={"type": "checkin", "subjectId": "daily"})
+    assert first.get_json()["awarded"] == 5
+    assert first.get_json()["wallet"] == {"balance": 5, "lifetime": 5}
+    assert repeated.get_json()["awarded"] == 0
+    assert repeated.get_json()["wallet"] == {"balance": 5, "lifetime": 5}
+
+    for index in range(1, 6):
+        reading = client.post("/api/v1/member/behaviors", headers=headers, json={"type": "browse", "subjectId": f"funding-{index}"})
+    assert reading.get_json()["awarded"] == 2
+    assert reading.get_json()["wallet"] == {"balance": 7, "lifetime": 7}
+
+    favorite = client.post("/api/v1/member/behaviors", headers=headers, json={"type": "favorite", "subjectId": "funding-1"})
+    assert favorite.get_json()["awarded"] == 3
+    assert favorite.get_json()["wallet"] == {"balance": 10, "lifetime": 10}
+
+    yesterday = (datetime.now(timezone(timedelta(hours=8))).date() - timedelta(days=1)).isoformat()
+    delayed = client.post("/api/v1/member/behaviors", headers=headers, json={
+        "type": "checkin", "subjectId": "daily", "behaviorDate": yesterday,
+    })
+    assert delayed.get_json()["behaviorDate"] == yesterday
+    assert delayed.get_json()["wallet"] == {"balance": 15, "lifetime": 15}
+
+    expired_date = (datetime.now(timezone(timedelta(hours=8))).date() - timedelta(days=2)).isoformat()
+    expired = client.post("/api/v1/member/behaviors", headers=headers, json={
+        "type": "checkin", "subjectId": "daily", "behaviorDate": expired_date,
+    })
+    assert expired.status_code == 400
+    assert expired.get_json()["error"]["code"] == "INVALID_BEHAVIOR_DATE"
+
 
 def test_point_redemption_extends_membership_without_reducing_lifetime(client):
     token = login(client, "redeemer")
@@ -176,6 +313,21 @@ def test_point_redemption_extends_membership_without_reducing_lifetime(client):
     payload = response.get_json()
     assert payload["wallet"] == {"balance": 560, "lifetime": 860}
     assert payload["membership"]["active"] is True
+
+
+def test_community_point_recovery_does_not_refund_spent_points(client):
+    token = login(client, "community-balance-offset")
+    client.post("/api/v1/community/link-phone", headers=auth(token), json={"code": "phone-code"})
+    redeemed = client.post("/api/v1/points/redeem", headers=auth(token), json={"benefitId": "membership_7d"}).get_json()
+    assert redeemed["wallet"] == {"balance": 560, "lifetime": 860}
+
+    client.application.community_client.member_points = 0
+    cleared = client.get("/api/v1/member/me", headers=auth(token)).get_json()
+    assert cleared["wallet"] == {"balance": 0, "lifetime": 860}
+
+    client.application.community_client.member_points = 860
+    restored = client.get("/api/v1/member/me", headers=auth(token)).get_json()
+    assert restored["wallet"] == {"balance": 560, "lifetime": 860}
 
 
 def test_native_application_is_forwarded_to_existing_member_management(client):

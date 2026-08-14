@@ -21,6 +21,14 @@ test("new users receive a seven day full-access trial", () => {
   assert.equal(Date.parse(membership.trialEndsAt) - now, 7 * DAY_MS);
 });
 
+test("visitors remain unregistered until the server confirms a trial", () => {
+  const snapshot = membershipSnapshot({}, now);
+  assert.equal(snapshot.status, "unregistered");
+  assert.equal(snapshot.registered, false);
+  assert.equal(snapshot.active, false);
+  assert.equal(snapshot.activeUntil, "");
+});
+
 test("point redemptions extend membership after the current entitlement", () => {
   const trial = createMembership(now);
   const extended = extendMembership(trial, 30, now + DAY_MS);

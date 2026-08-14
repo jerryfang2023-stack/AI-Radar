@@ -1,5 +1,7 @@
 const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
 const { buildEntityLibrary, filterEntities } = require("../../utils/entity-library.js");
+const { syncTabBar } = require("../../utils/tab-bar.js");
+const { getAccessState, openMembership } = require("../../utils/access.js");
 
 const MODE_META = {
   companies: { modeLabel: "企业", placeholder: "企业 / 产品 / 赛道", sortNote: "按最近融资排序", emptyCopy: "换一个企业、产品或赛道名称试试。" },
@@ -17,6 +19,7 @@ Page({
     companyCount: 0,
     investorCount: 0,
     peopleCount: 0,
+    registrationOpen: false,
     ...MODE_META.companies,
   },
 
@@ -26,7 +29,10 @@ Page({
     refreshFundingData().then((state) => this.applyData(state));
   },
 
-  onShow() { this.applyData(getFundingData()); },
+  onShow() {
+    syncTabBar(this, 1);
+    this.applyData(getFundingData());
+  },
 
   onReachBottom() {
     if (this.data.visibleCount < this.filteredItems.length) this.renderItems(this.data.visibleCount + this.pageSize);
@@ -63,6 +69,26 @@ Page({
 
   openEntity(event) {
     const { key, type } = event.currentTarget.dataset;
-    if (key && type) wx.navigateTo({ url: `/pages/entity-detail/index?type=${type}&key=${encodeURIComponent(key)}` });
+    if (!key || !type) return;
+    const accessState = getAccessState();
+    if (accessState === "unregistered") {
+      this.pendingEntity = { key, type };
+      this.setData({ registrationOpen: true });
+      return;
+    }
+    if (accessState === "expired") return openMembership();
+    wx.navigateTo({ url: `/pages/entity-detail/index?type=${type}&key=${encodeURIComponent(key)}` });
+  },
+
+  closeRegistration() {
+    this.pendingEntity = null;
+    this.setData({ registrationOpen: false });
+  },
+
+  continueAfterRegistration() {
+    const entity = this.pendingEntity;
+    this.pendingEntity = null;
+    this.setData({ registrationOpen: false });
+    if (entity) wx.navigateTo({ url: `/pages/entity-detail/index?type=${entity.type}&key=${encodeURIComponent(entity.key)}` });
   },
 });

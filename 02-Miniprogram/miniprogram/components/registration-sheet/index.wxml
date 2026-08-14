@@ -1,0 +1,42 @@
+<view wx:if="{{visible}}" class="registration-overlay" catchtap="close">
+  <view class="registration-sheet" catchtap="noop">
+    <block wx:if="{{!registered}}">
+      <view class="registration-kicker">新用户专享</view>
+      <view class="registration-title serif">开启 7 天完整体验</view>
+      <view class="registration-copy">注册后即可浏览融资、生态与观察栏目的完整内容</view>
+
+      <view class="registration-benefits">
+        <view><text>01</text><text>融资情报完整浏览</text></view>
+        <view><text>02</text><text>企业、机构与人物档案</text></view>
+        <view><text>03</text><text>商业观察周报与月报</text></view>
+      </view>
+
+      <button class="registration-existing" loading="{{linkingExisting}}" disabled="{{linkingExisting || registering}}" open-type="getPhoneNumber" bindgetphonenumber="linkExistingMember">已有社群成员，直接同步</button>
+
+      <view class="registration-form">
+        <view class="profile-input-row">
+          <view><text class="field-title">头像</text><text class="field-note">使用微信头像</text></view>
+          <button class="registration-avatar {{avatarSelected ? 'selected' : ''}}" open-type="chooseAvatar" bindchooseavatar="chooseAvatar">
+            <image src="{{avatarUrl}}" mode="aspectFill" />
+            <text>{{avatarSelected ? '更换' : '选择'}}</text>
+          </button>
+        </view>
+        <view class="profile-input-row nickname-row">
+          <view><text class="field-title">昵称</text><text class="field-note">使用微信昵称</text></view>
+          <input type="nickname" maxlength="20" value="{{nickname}}" placeholder="选择微信昵称" bindinput="inputNickname" />
+        </view>
+      </view>
+
+      <button class="registration-primary" disabled="{{!canSubmit || registering}}" loading="{{registering}}" open-type="getPhoneNumber" bindgetphonenumber="registerWithPhone">授权手机号并开启体验</button>
+      <button class="registration-secondary" bindtap="close">{{required ? '返回公开摘要' : '先浏览公开摘要'}}</button>
+      <view class="registration-price">体验结束后可选择 30 元/月、168 元/半年或 300 元/年，不自动续费</view>
+    </block>
+
+    <block wx:else>
+      <image class="success-mark" src="/assets/brand/app-icon-light.svg" mode="aspectFit" />
+      <view class="registration-title serif">7 天体验已开启</view>
+      <view class="registration-copy">完整栏目权益已生效，有效至 {{membership.activeUntil}}</view>
+      <button class="registration-primary success-button" bindtap="continueBrowsing">开始浏览</button>
+    </block>
+  </view>
+</view>

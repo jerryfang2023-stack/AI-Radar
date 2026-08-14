@@ -38,12 +38,42 @@ function wxLogin() {
   });
 }
 
-async function login() {
+async function login(options = {}) {
   const code = await wxLogin();
-  const result = await apiRequest("/auth/wechat", { method: "POST", data: { code } });
+  const result = await apiRequest("/auth/wechat", {
+    method: "POST",
+    data: {
+      code,
+      ...(options.inviteCode ? { inviteCode: options.inviteCode } : {}),
+      ...(options.phoneCode ? { phoneCode: options.phoneCode } : {}),
+      ...(options.nickname ? { nickname: options.nickname } : {}),
+      ...(options.avatarSelected ? { avatarSelected: true } : {}),
+    },
+  });
   if (!result.token) throw new Error("登录状态获取失败，请重试");
   wx.setStorageSync(TOKEN_KEY, result.token);
   return result;
+}
+
+function hasAuthToken() {
+  return Boolean(wx.getStorageSync(TOKEN_KEY));
+}
+
+async function withExistingToken(fn) {
+  const token = wx.getStorageSync(TOKEN_KEY);
+  if (!token) {
+    const error = new Error("请先完成注册");
+    error.code = "AUTH_REQUIRED";
+    throw error;
+  }
+  try {
+    return await fn(token);
+  } catch (error) {
+    if (error.statusCode === 401 || error.code === "AUTH_EXPIRED" || error.code === "AUTH_INVALID") {
+      wx.removeStorageSync(TOKEN_KEY);
+    }
+    throw error;
+  }
 }
 
 async function withToken(fn, retry = true) {
@@ -105,7 +135,20 @@ async function purchaseMembership(planId) {
 }
 
 async function fetchMembership() {
-  return withToken((token) => apiRequest("/member/me", { token }));
+  return withExistingToken((token) => apiRequest("/member/me", { token }));
+}
+
+async function recordMemberBehavior(type, subjectId, behaviorDate) {
+  return withExistingToken((token) => apiRequest("/member/behaviors", {
+    method: "POST",
+    token,
+    data: { type, subjectId, behaviorDate },
+  }));
+}
+
+async function bindPhoneNumber(code) {
+  if (!code) throw new Error("未获得手机号授权");
+  return withToken((token) => apiRequest("/member/phone", { method: "POST", token, data: { code } }));
 }
 
 async function linkCommunityPhone(code) {
@@ -120,14 +163,28 @@ async function redeemPoints(benefitId) {
   return withToken((token) => apiRequest("/points/redeem", { method: "POST", token, data: { benefitId } }));
 }
 
+async function fetchInviteSummary() {
+  return withToken((token) => apiRequest("/invites/me", { token }));
+}
+
+async function recordInviteVisit(inviteCode, visitorKey) {
+  if (!inviteCode || !visitorKey) return { recorded: false };
+  return apiRequest("/invites/visit", { method: "POST", data: { inviteCode, visitorKey } });
+}
+
 module.exports = {
   API_ROOT,
   apiRequest,
   login,
+  hasAuthToken,
   fetchMembership,
+  recordMemberBehavior,
+  bindPhoneNumber,
   purchaseMembership,
   queryOrder,
   linkCommunityPhone,
   submitCommunityApplication,
   redeemPoints,
+  fetchInviteSummary,
+  recordInviteVisit,
 };

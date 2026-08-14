@@ -2,10 +2,11 @@
 .compare-scroll { width: 100%; }
 .compare-track { display: inline-flex; gap: 18rpx; padding: 0 28rpx 24rpx; }
 .compare-card { box-sizing: border-box; width: 600rpx; padding: 26rpx; }
-.compare-head { display: grid; grid-template-columns: 74rpx 1fr; gap: 6rpx 16rpx; align-items: center; padding-bottom: 20rpx; border-bottom: 1rpx solid #e5e8ec; }
+.compare-head { display: grid; grid-template-columns: 74rpx 1fr auto; gap: 6rpx 16rpx; align-items: center; padding-bottom: 20rpx; border-bottom: 1rpx solid #e5e8ec; }
 .avatar { grid-row: span 2; display: flex; align-items: center; justify-content: center; width: 72rpx; height: 72rpx; border-radius: 50%; background: #071827; color: #fff; font-size: 26rpx; }
 .company { color: #071827; font-size: 34rpx; font-weight: 600; }
 .category { color: #6f7f8f; font-size: 22rpx; }
+.remove-compare { grid-column: 3; grid-row: 1 / span 2; min-height: 54rpx; margin: 0; padding: 0 18rpx; border: 1rpx solid rgba(154,78,66,.28); border-radius: 999rpx; background: #fffaf7; color: #9a4e42; font-size: 20rpx; font-weight: 600; line-height: 54rpx; }
 .compare-fact { display: flex; align-items: center; justify-content: space-between; min-height: 82rpx; border-bottom: 1rpx solid #e5e8ec; color: #6f7f8f; font-size: 23rpx; }
 .compare-fact .value { max-width: 350rpx; color: #071827; font-size: 27rpx; text-align: right; }
 .compare-block { display: flex; flex-direction: column; gap: 12rpx; padding: 22rpx 0; border-bottom: 1rpx solid #e5e8ec; }
@@ -14,3 +15,8 @@
 .compare-block .muted { color: #6f7f8f; }
 .evidence { display: flex; gap: 8rpx; align-items: center; padding-top: 20rpx; color: #2f8c57; font-size: 23rpx; }
 .compare-note { padding: 12rpx 28rpx; color: #6f7f8f; font-size: 22rpx; text-align: center; }
+.compare-shortfall { display: flex; flex-direction: column; gap: 12rpx; margin: 0 28rpx 20rpx; padding: 24rpx; border: 1rpx solid #dfd1b1; border-radius: 22rpx; background: #fffaf0; }
+.compare-shortfall .title { color: #0d355c; font-size: 26rpx; font-weight: 600; }
+.compare-shortfall .copy { color: #6f7f8f; font-size: 22rpx; line-height: 1.6; }
+.compare-shortfall button, .empty-action { min-height: 66rpx; margin: 4rpx 0 0; border: 0; border-radius: 999rpx; background: #0d355c; color: #fff; font-size: 22rpx; line-height: 66rpx; }
+.empty-action { width: 260rpx; margin: 24rpx auto 0; }

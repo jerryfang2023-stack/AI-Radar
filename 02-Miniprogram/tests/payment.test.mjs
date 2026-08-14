@@ -14,7 +14,12 @@ function loadPaymentWx({ orderStatus = "PAID", paymentFailure = null } = {}) {
     login: ({ success }) => success({ code: "login-code" }),
     request: ({ url, method, data, header, success }) => {
       requests.push({ url, method, data, header });
-      if (url.endsWith("/auth/wechat")) return success({ statusCode: 200, data: { token: "token-1" } });
+      if (url.endsWith("/auth/wechat")) return success({ statusCode: 200, data: { token: "token-1", isNewUser: true } });
+      if (url.endsWith("/member/phone")) return success({ statusCode: 200, data: { profile: { phoneMasked: "138****8000" } } });
+      if (url.endsWith("/member/me")) return success({ statusCode: 200, data: { membership: { status: "trial" }, profile: { phoneMasked: "138****8000" } } });
+      if (url.endsWith("/member/behaviors")) return success({ statusCode: 200, data: { awarded: 5, wallet: { balance: 5, lifetime: 5 } } });
+      if (url.endsWith("/invites/visit")) return success({ statusCode: 201, data: { recorded: true } });
+      if (url.endsWith("/invites/me")) return success({ statusCode: 200, data: { summary: { inviteCode: "abc", invitedCount: 1, successfulCount: 1, rewardPoints: 300 } } });
       if (url.endsWith("/pay/wechat/orders")) return success({ statusCode: 201, data: {
         orderNo: "GL001",
         payment: { timeStamp: "1", nonceStr: "n", package: "prepay_id=x", signType: "RSA", paySign: "s" },
@@ -54,4 +59,50 @@ test("links an existing member, submits native applications, and redeems on the 
   assert.equal((await payment.submitCommunityApplication(application)).community.status, "pending");
   assert.equal((await payment.redeemPoints("membership_7d")).wallet.balance, 560);
   assert.deepEqual(requests.find((item) => item.url.endsWith("/community/applications")).data, application);
+});
+
+test("attributes registration to an invite and loads confirmed invite stats", async () => {
+  const { payment, requests } = loadPaymentWx();
+  const registration = await payment.login({ inviteCode: "invite-abc", phoneCode: "phone-code", nickname: "新用户", avatarSelected: true });
+  assert.equal(registration.isNewUser, true);
+  assert.deepEqual(requests.find((item) => item.url.endsWith("/auth/wechat")).data, {
+    code: "login-code",
+    inviteCode: "invite-abc",
+    phoneCode: "phone-code",
+    nickname: "新用户",
+    avatarSelected: true,
+  });
+
+  await payment.recordInviteVisit("invite-abc", "device-1");
+  const stats = await payment.fetchInviteSummary();
+  assert.equal(stats.summary.rewardPoints, 300);
+  assert.ok(requests.some((item) => item.url.endsWith("/invites/visit")));
+});
+
+test("does not silently register while checking membership", async () => {
+  const { payment, requests } = loadPaymentWx();
+  assert.equal(payment.hasAuthToken(), false);
+  await assert.rejects(payment.fetchMembership(), (error) => error.code === "AUTH_REQUIRED");
+  assert.equal(requests.some((item) => item.url.endsWith("/auth/wechat")), false);
+});
+
+test("exchanges a phone authorization code and returns the masked phone", async () => {
+  const { payment, requests } = loadPaymentWx();
+  const result = await payment.bindPhoneNumber("phone-code");
+  assert.equal(result.profile.phoneMasked, "138****8000");
+  const request = requests.find((item) => item.url.endsWith("/member/phone"));
+  assert.equal(request.method, "POST");
+  assert.deepEqual(request.data, { code: "phone-code" });
+  assert.equal(request.header.Authorization, "Bearer token-1");
+});
+
+test("records growth task points in the unified server wallet", async () => {
+  const { payment, requests } = loadPaymentWx();
+  await payment.login({ phoneCode: "phone-code", nickname: "会员", avatarSelected: true });
+  const result = await payment.recordMemberBehavior("checkin", "daily", "2026-08-14");
+  assert.deepEqual(result.wallet, { balance: 5, lifetime: 5 });
+  const request = requests.find((item) => item.url.endsWith("/member/behaviors"));
+  assert.equal(request.method, "POST");
+  assert.deepEqual(request.data, { type: "checkin", subjectId: "daily", behaviorDate: "2026-08-14" });
+  assert.equal(request.header.Authorization, "Bearer token-1");
 });

@@ -9,6 +9,7 @@ Page({
     points: 0,
     selectedPlanId: "monthly",
     purchasing: false,
+    registrationOpen: false,
   },
   onShow() {
     this.setData({ membership: getMembership(), points: getWallet().balance });
@@ -28,6 +29,10 @@ Page({
     }
   },
   subscribe() {
+    if (this.data.membership.status === "unregistered") {
+      this.setData({ registrationOpen: true });
+      return;
+    }
     const plan = PRICING_PLANS.find((item) => item.id === this.data.selectedPlanId) || PRICING_PLANS[0];
     wx.showModal({
       title: `开通${plan.title}`,
@@ -67,5 +72,12 @@ Page({
     } finally {
       this.setData({ purchasing: false });
     }
+  },
+  closeRegistration() { this.setData({ registrationOpen: false }); },
+  registrationCompleted(event) {
+    this.setData({ membership: event.detail.membership });
+  },
+  continueAfterRegistration(event) {
+    this.setData({ registrationOpen: false, membership: event.detail.membership });
   },
 });

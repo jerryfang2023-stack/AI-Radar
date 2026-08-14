@@ -20,11 +20,21 @@ This is the native WeChat Mini Program frontstage for Funding Insights.
 - Financing discovery is search-led: search company, institution, product, or sector; do not add industry/category chip rails, category filter buttons, or industry badges to financing-list rows.
 - 生态图谱 integrates company, investor, and core-person libraries. Its bottom-tab label is 生态. Preserve the PC portal search scopes: 企业 / 产品 / 赛道, 机构 / 已投公司 / 赛道, and 人物 / 企业 / 职务. Every entity card opens its own entity profile before any financing record.
 - Keep the 我的 tab independent from the first-three-tab visual sync unless a task explicitly includes it.
+- The profile page has one settings entry only: keep the control beside the avatar and label it “设置”; do not duplicate it in the page header.
+- Bottom navigation is text-only and reads as four connected buttons: use short, vertically centered warm-gray separators rather than full-height rules; the active cell uses a subtle champagne surface, deep-navy text, a short gold top marker, and a slightly larger/heavier label.
+- Financing-list identity marks use deep navy cards with white initials and a restrained gold edge. Keep the feed compact on real phones with warm-white continuous rows and light gold-beige dividers rather than pale-gray avatar blocks or separate gray cards.
+- Present the financing summary as an inset rounded navy card, consistent with the rounded overview cards used by the other columns; do not stretch it edge-to-edge as a square strip.
+- The company comparison screen must let users cancel an individual company in place. Preserve remaining selections, explain when one more company is needed, and offer a direct return to financing when the comparison set is empty or incomplete.
+- Do not place collection controls in the financing list header or financing-detail title bar. Keep collection as a secondary action below the detail facts, beside company comparison. The favorite growth task opens the saved-items list; do not show a follow-topic growth task without a clear follow surface.
+- Financing and entity detail pages must support native WeChat forwarding and timeline sharing. A report opened directly from a shared card must show the four-column navigation and use a reliable tab fallback when no back stack exists.
+- Daily check-in is a once-per-day growth task worth 5 points. Repeated taps on the same day must not award points again.
 - Membership is priced at CNY 30/month, CNY 168/six months, or CNY 300/year and grants full browsing across all columns. New users receive a seven-day trial. Community activity points can redeem seven-day or thirty-day membership extensions; never present a successful payment before the WeChat Pay and account service confirm it.
 - A valid first-time registration attributed to an invite rewards the inviter with 300 activity points; award it only after backend registration attribution confirms the event, and count each new user once.
 - Community history points enter the unified wallet and lifetime growth total 1:1. The level thresholds are L1 0–299, L2 300–999, L3 1,000–2,499, L4 2,500–4,999, L5 5,000–9,999, L6 10,000–19,999, L7 20,000–49,999, and L8 50,000+.
 - Existing community members are linked only by a verified phone number (or an existing WeChat union identity at login); never merge accounts by display name alone.
 - Community applications remain native Mini Program forms and enter the existing member-management review queue. Community essays are editorial rewrites, not raw group-message synchronization.
+- Shared invitation pages must distinguish inviter and invitee views, keep registration visible, provide a tab fallback for direct-entry users, and show server-confirmed visit, registration, and reward totals to the inviter.
+- Phone authorization must exchange the one-time WeChat code through the account service immediately and return only a masked number to the Mini Program. Never persist or expose raw phone numbers, authorization codes, pending-backend copy, WeChat-ID limitations, preview/production notes, or internal privacy implementation language in the public profile UI.
 
 ## Validation
 

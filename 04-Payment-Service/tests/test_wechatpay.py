@@ -82,3 +82,27 @@ def test_notification_rejects_unknown_wechat_public_key(tmp_path):
         client.verify_signature("1700000000", "callback-nonce", body, signed_headers(private_key, body)["Wechatpay-Signature"], "PUB_KEY_ID_OTHER")
     assert caught.value.code == "WECHAT_PAY_SERIAL_MISMATCH"
 
+
+def test_phone_code_is_exchanged_with_a_cached_mini_program_access_token(tmp_path):
+    client, _, _ = configured_client(tmp_path)
+    requests = []
+
+    def fake_json_request(url, method="GET", body=None, headers=None):
+        requests.append({"url": url, "method": method, "body": body, "headers": headers})
+        if "/cgi-bin/token?" in url:
+            return 200, {}, {"access_token": "mini-token", "expires_in": 7200}
+        return 200, {}, {
+            "errcode": 0,
+            "phone_info": {"phoneNumber": "13800138000", "purePhoneNumber": "13800138000", "countryCode": "86"},
+        }
+
+    client._json_request = fake_json_request
+    first = client.exchange_phone_code("phone-code-1")
+    second = client.exchange_phone_code("phone-code-2")
+
+    assert first == {"phoneNumber": "13800138000", "countryCode": "86"}
+    assert second == first
+    assert len([item for item in requests if "/cgi-bin/token?" in item["url"]]) == 1
+    phone_requests = [item for item in requests if "/getuserphonenumber?" in item["url"]]
+    assert [item["body"] for item in phone_requests] == [{"code": "phone-code-1"}, {"code": "phone-code-2"}]
+    assert all(item["method"] == "POST" for item in phone_requests)

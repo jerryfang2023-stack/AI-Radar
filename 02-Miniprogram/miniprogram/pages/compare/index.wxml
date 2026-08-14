@@ -1,10 +1,10 @@
 <view class="page-shell">
   <app-header title="融资比较" show-back right-label="复制摘要" bind:righttap="copyComparison" />
-  <view wx:if="{{cards.length >= 2}}" class="compare-content">
+  <view wx:if="{{cards.length}}" class="compare-content">
     <scroll-view class="compare-scroll" scroll-x enhanced show-scrollbar="false">
       <view class="compare-track">
         <view wx:for="{{cards}}" wx:key="id" class="compare-card paper-card" data-id="{{item.id}}" bindtap="openCard">
-          <view class="compare-head"><view class="avatar">{{item.initial}}</view><text class="company serif">{{item.company}}</text><text class="category">{{item.category}}</text></view>
+          <view class="compare-head"><view class="avatar">{{item.initial}}</view><text class="company serif">{{item.company}}</text><text class="category">{{item.category}}</text><button class="remove-compare" data-id="{{item.id}}" catchtap="removeCard">取消比较</button></view>
           <view class="compare-fact"><text>本轮金额</text><text class="value mono">{{item.amount}}</text></view>
           <view class="compare-fact"><text>融资轮次</text><text class="value">{{item.round}}</text></view>
           <view class="compare-fact"><text>披露日期</text><text class="value mono">{{item.date}}</text></view>
@@ -15,7 +15,8 @@
         </view>
       </view>
     </scroll-view>
+    <view wx:if="{{cards.length < 2}}" class="compare-shortfall"><text class="title">还需选择 1 家公司</text><text class="copy">返回融资情报，在详情页加入另一家公司后即可继续比较。</text><button bindtap="backToFunding">返回融资情报</button></view>
     <view class="compare-note">左右滑动查看公司；点击卡片可打开完整融资详情。</view>
   </view>
-  <view wx:else class="empty-state"><view class="title serif">至少选择 2 家公司</view><view class="copy">返回融资情报，勾选 2–3 家公司后再比较。</view></view>
+  <view wx:else class="empty-state"><view class="title serif">暂无比较公司</view><view class="copy">返回融资情报，在详情页选择 2–3 家公司进行比较。</view><button class="empty-action" bindtap="backToFunding">返回融资情报</button></view>
 </view>

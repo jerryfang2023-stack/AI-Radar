@@ -6,11 +6,14 @@ const {
   getFollowIds,
   getGrowthSnapshot,
   getCommunity,
+  recordBehavior,
+  syncBehaviorQueue,
   syncCommunity,
   syncWallet,
   syncMembership,
 } = require("../../utils/member.js");
 const { fetchMembership, linkCommunityPhone } = require("../../utils/payment.js");
+const { syncTabBar } = require("../../utils/tab-bar.js");
 
 Page({
   data: {
@@ -23,6 +26,7 @@ Page({
   },
 
   onShow() {
+    syncTabBar(this, 3);
     const profile = getProfile();
     this.setData({
       profile,
@@ -41,7 +45,6 @@ Page({
   openSettings() { wx.navigateTo({ url: "/pages/profile-edit/index" }); },
   openHistory() { wx.navigateTo({ url: "/pages/history/index" }); },
   openWatchlist() { wx.navigateTo({ url: "/pages/saved/index" }); },
-  openFollows() { wx.navigateTo({ url: "/pages/follows/index" }); },
   openGrowth() { wx.navigateTo({ url: "/pages/growth/index" }); },
   openMembership() { wx.navigateTo({ url: "/pages/membership/index" }); },
   openInvite() { wx.navigateTo({ url: "/pages/invite/index" }); },
@@ -51,6 +54,7 @@ Page({
   },
   async refreshAccount() {
     try {
+      await syncBehaviorQueue();
       const result = await fetchMembership();
       if (result.membership) syncMembership(result.membership);
       if (result.wallet) syncWallet(result.wallet);
@@ -82,7 +86,11 @@ Page({
   },
   openTask(event) {
     const id = event.currentTarget.dataset.id;
-    if (id === "follow") wx.navigateTo({ url: "/pages/follows/index" });
+    if (id === "checkin") {
+      const result = recordBehavior("checkin", "daily");
+      this.setData({ growth: getGrowthSnapshot() });
+      wx.showToast({ title: result.awarded ? "签到成功，+5 分" : "今日已签到", icon: "none" });
+    } else if (id === "favorite") wx.navigateTo({ url: "/pages/saved/index" });
     else wx.switchTab({ url: "/pages/terminal/index" });
   },
 

@@ -8,5 +8,6 @@ App({
   },
   globalData: {
     statusBarHeight: 20,
+    registrationPromptDismissed: false,
   },
 });

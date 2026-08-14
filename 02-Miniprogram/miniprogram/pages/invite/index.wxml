@@ -1,13 +1,26 @@
 <view class="page-shell">
-  <app-header title="邀请好友" show-back />
-  <view class="page-content invite-content">
+  <app-header title="{{isInvitee ? '好友邀请' : '邀请好友'}}" show-back fallback-url="/pages/terminal/index" />
+  <view class="page-content invite-content {{sharedEntry ? 'with-shared-nav' : ''}}">
     <view class="invite-hero">
-      <text class="invite-kicker">观澜同频邀请</text>
-      <text class="invite-heading serif">把有价值的 AI 商业情报，分享给同频的人</text>
-      <text class="invite-lead">新用户首次注册即可获得 7 天全部栏目体验；邀请关系确认后，邀请人获得 300 活跃积分。</text>
+      <text class="invite-kicker">{{isInvitee ? inviterName + ' 邀请你来' : '观澜同频邀请'}}</text>
+      <text class="invite-heading serif">{{isInvitee ? '一起看懂 AI 商业变化' : '把有价值的 AI 商业情报，分享给同频的人'}}</text>
       <view class="reward-grid">
         <view><text>新用户获得</text><text class="serif">7 天</text><text>完整权益体验</text></view>
         <view><text>邀请人获得</text><text class="serif">300 分</text><text>活跃积分</text></view>
+      </view>
+    </view>
+
+    <view wx:if="{{isInvitee}}" class="invitee-action-card">
+      <view><text class="serif">接受 {{inviterName}} 的邀请</text><text>{{registered ? '注册已完成，现在可以进入观澜。' : '微信快捷注册后，立即开启 7 天完整体验。'}}</text></view>
+      <button class="share-button" loading="{{registering}}" bindtap="registerInvitee">{{registered ? '进入观澜' : '微信快捷注册'}}</button>
+    </view>
+
+    <view wx:else class="invite-stats invite-section">
+      <view class="section-heading"><text class="section-title serif">我的邀请</text><text bindtap="loadSummary">刷新</text></view>
+      <view class="stats-grid">
+        <view><strong class="serif">{{summary.invitedCount}}</strong><text>已邀请</text></view>
+        <view><strong class="serif">{{summary.successfulCount}}</strong><text>注册成功</text></view>
+        <view><strong class="serif">{{summary.rewardPoints}}</strong><text>获得积分</text></view>
       </view>
     </view>
 
@@ -20,7 +33,7 @@
       </view>
     </view>
 
-    <view class="invite-section">
+    <view wx:if="{{!isInvitee}}" class="invite-section">
       <text class="section-title serif">邀请如何生效</text>
       <view class="step-list">
         <view><text>1</text><view><text>分享邀请</text><text>把观澜分享给需要 AI 商业情报的好友</text></view></view>
@@ -29,14 +42,19 @@
       </view>
     </view>
 
-    <view class="rule-card">
+    <view wx:if="{{!isInvitee}}" class="rule-card">
       <text>邀请规则</text>
       <text>每位新用户仅计入一次有效邀请；邀请关系及积分发放以系统确认结果为准。活跃积分不可提现，可用于兑换会员权益。</text>
     </view>
 
-    <button wx:if="{{isInvitee}}" class="share-button" bindtap="openExperience">开始 7 天体验</button>
-    <button wx:else class="share-button" open-type="share">邀请好友加入</button>
-    <text wx:if="{{isInvitee}}" class="share-note">首次注册后自动开启 7 天完整权益体验。</text>
-    <text wx:else class="share-note">分享本身不会立即发放积分，好友完成首次注册并确认邀请关系后到账。</text>
+    <button wx:if="{{!isInvitee}}" class="share-button" open-type="share">邀请好友加入</button>
   </view>
+
+  <view wx:if="{{sharedEntry}}" class="shared-entry-nav">
+    <button data-url="/pages/terminal/index" bindtap="switchSection">融资</button>
+    <button data-url="/pages/market/index" bindtap="switchSection">生态</button>
+    <button data-url="/pages/watchlist/index" bindtap="switchSection">观察</button>
+    <button data-url="/pages/profile/index" bindtap="switchSection">我的</button>
+  </view>
+  <registration-sheet visible="{{registrationOpen}}" required="{{isInvitee}}" invite-code="{{inviteCode}}" bind:close="closeRegistration" bind:registered="registrationCompleted" bind:continue="continueAfterRegistration" />
 </view>

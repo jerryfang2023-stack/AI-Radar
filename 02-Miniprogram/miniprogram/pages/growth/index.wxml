@@ -11,7 +11,7 @@
 
     <view class="section-title serif">今日任务</view>
     <view class="paper-card task-list">
-      <view wx:for="{{growth.tasks}}" wx:key="id" class="task-row">
+      <view wx:for="{{growth.tasks}}" wx:key="id" class="task-row" data-id="{{item.id}}" bindtap="openTask">
         <view><text>{{item.title}}</text><text>进度 {{item.current}}/{{item.target}}{{item.unit}}</text></view>
         <text class="task-reward {{item.completed ? 'done' : ''}}">{{item.completed ? '已完成' : '+' + item.reward + ' 分'}}</text>
       </view>

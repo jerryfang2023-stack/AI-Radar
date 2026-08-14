@@ -1,5 +1,5 @@
 <view class="page-shell">
-  <app-header title="{{title}}" show-back="{{true}}" />
+  <app-header title="{{title}}" show-back="{{true}}" fallback-url="/pages/market/index" />
   <view wx:if="{{entity}}" class="page-content entity-detail">
     <view class="entity-hero">
       <text class="eyebrow">{{type === 'companies' ? (entity.categoriesText || 'AI 企业') : (type === 'investors' ? '机构库' : '人物库')}}</text>
@@ -49,4 +49,5 @@
       </button>
     </view>
   </view>
+  <registration-sheet visible="{{registrationOpen}}" required="{{true}}" bind:close="closeRegistration" bind:continue="continueAfterRegistration" />
 </view>

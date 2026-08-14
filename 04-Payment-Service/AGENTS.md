@@ -9,4 +9,5 @@
 - Community membership is resolved through `COMMUNITY_SERVICE_URL` using `COMMUNITY_SERVICE_TOKEN`. Link an existing member only with a server-verified phone number; never trust a client-supplied phone or name for account merging.
 - `users.point_balance` is spendable, `users.point_lifetime` drives the eight growth levels, and `users.community_points` is the latest social-system snapshot. Community corrections update all three by the remote delta; point redemption changes only `point_balance`.
 - Community applications submitted through the Mini Program must enter the existing membership review queue; the payment service does not maintain a second application database.
+- Phone authorization codes must be exchanged server-side and never persisted. Store only a masked display value and an HMAC digest keyed by the service secret; do not store or return raw phone numbers.
 - Run `python -m pytest -q` before deployment.

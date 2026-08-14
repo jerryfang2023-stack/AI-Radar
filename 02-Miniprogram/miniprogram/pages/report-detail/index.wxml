@@ -1,6 +1,6 @@
 <view class="page-shell" wx:if="{{report}}">
-  <app-header title="{{report.typeLabel}}" show-back />
-  <view class="page-content reader-content">
+  <app-header title="{{report.typeLabel}}" show-back fallback-url="/pages/watchlist/index" />
+  <view class="page-content reader-content {{sharedEntry ? 'with-shared-nav' : ''}}">
     <view class="reader-hero">
       <view class="reader-kicker"><text>{{report.typeLabel}}</text><text class="mono">{{report.issue}}</text></view>
       <text class="reader-title serif">{{report.title}}</text>
@@ -20,4 +20,11 @@
       </block>
     </view>
   </view>
+  <view wx:if="{{sharedEntry}}" class="shared-entry-nav">
+    <button data-url="/pages/terminal/index" bindtap="switchSection">融资</button>
+    <button data-url="/pages/market/index" bindtap="switchSection">生态</button>
+    <button class="active" data-url="/pages/watchlist/index" bindtap="switchSection">观察</button>
+    <button data-url="/pages/profile/index" bindtap="switchSection">我的</button>
+  </view>
+  <registration-sheet visible="{{registrationOpen}}" required="{{true}}" bind:close="closeRegistration" bind:continue="continueAfterRegistration" />
 </view>

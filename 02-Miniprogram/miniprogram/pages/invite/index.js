@@ -1,18 +1,112 @@
+const { getProfile, syncInviteRewards, syncWallet } = require("../../utils/member.js");
+const { fetchInviteSummary, hasAuthToken, recordInviteVisit } = require("../../utils/payment.js");
+
+const VISITOR_KEY = "guanlan_invite_visitor_v1";
+const INVITE_CODE_KEY = "guanlan_own_invite_code_v1";
+
+function decoded(value, fallback) {
+  try {
+    return decodeURIComponent(value || "") || fallback;
+  } catch (error) {
+    return fallback;
+  }
+}
+
+function getVisitorKey() {
+  const current = wx.getStorageSync(VISITOR_KEY);
+  if (current) return current;
+  const value = `visitor_${Date.now()}_${Math.random().toString(36).slice(2, 10)}`;
+  wx.setStorageSync(VISITOR_KEY, value);
+  return value;
+}
+
 Page({
-  data: { isInvitee: false },
+  data: {
+    isInvitee: false,
+    sharedEntry: false,
+    inviterName: "一位朋友",
+    inviteCode: wx.getStorageSync(INVITE_CODE_KEY) || "",
+    registering: false,
+    registered: false,
+    registrationOpen: false,
+    summary: { invitedCount: 0, successfulCount: 0, rewardPoints: 0 },
+  },
 
   onLoad(options) {
-    this.setData({ isInvitee: options.from === "member_invite" });
+    const isInvitee = options.from === "member_invite";
+    const inviterName = decoded(options.inviterName, "一位朋友");
+    const inviteCode = String(options.inviteCode || "");
+    this.setData({
+      isInvitee,
+      sharedEntry: isInvitee || getCurrentPages().length <= 1,
+      inviterName,
+      inviteCode,
+    });
+    if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
+    if (isInvitee) {
+      recordInviteVisit(inviteCode, getVisitorKey()).catch(() => {});
+      if (!hasAuthToken()) this.setData({ registrationOpen: true });
+    } else if (!hasAuthToken()) {
+      this.setData({ registrationOpen: true });
+    } else {
+      this.loadSummary();
+    }
+  },
+
+  async loadSummary() {
+    try {
+      const result = await fetchInviteSummary();
+      wx.setStorageSync(INVITE_CODE_KEY, result.summary.inviteCode);
+      if (result.wallet) syncWallet(result.wallet);
+      else syncInviteRewards(result.summary.rewardPoints);
+      this.setData({ inviteCode: result.summary.inviteCode, summary: result.summary });
+    } catch (error) {
+      wx.showToast({ title: "邀请统计暂时无法加载", icon: "none" });
+    }
+  },
+
+  registerInvitee() {
+    if (this.data.registered) return this.openExperience();
+    this.setData({ registrationOpen: true });
+  },
+
+  closeRegistration() {
+    this.setData({ registrationOpen: false });
+  },
+
+  registrationCompleted() {
+    this.setData({ registered: true });
+    if (!this.data.isInvitee) this.loadSummary();
+  },
+
+  continueAfterRegistration() {
+    this.setData({ registrationOpen: false, registered: true });
+    this.openExperience();
   },
 
   openExperience() {
     wx.switchTab({ url: "/pages/terminal/index" });
   },
 
+  switchSection(event) {
+    wx.switchTab({ url: event.currentTarget.dataset.url });
+  },
+
   onShareAppMessage() {
+    const profile = getProfile();
+    const inviterName = encodeURIComponent(profile.nickname || "观澜用户");
+    const inviteCode = encodeURIComponent(this.data.inviteCode || "");
     return {
-      title: "一起看懂 AI 商业变化，新用户可体验 7 天完整权益",
-      path: "/pages/invite/index?from=member_invite",
+      title: `${profile.nickname || "一位朋友"} 邀请你一起看懂 AI 商业变化`,
+      path: `/pages/invite/index?from=member_invite&inviteCode=${inviteCode}&inviterName=${inviterName}`,
+    };
+  },
+
+  onShareTimeline() {
+    const profile = getProfile();
+    return {
+      title: `${profile.nickname || "一位朋友"} 邀请你一起看懂 AI 商业变化`,
+      query: `from=member_invite&inviteCode=${encodeURIComponent(this.data.inviteCode || "")}&inviterName=${encodeURIComponent(profile.nickname || "观澜用户")}`,
     };
   },
 });

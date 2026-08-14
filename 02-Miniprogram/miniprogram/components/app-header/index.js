@@ -4,6 +4,7 @@ Component({
     showBack: { type: Boolean, value: false },
     rightLabel: { type: String, value: "" },
     showLogo: { type: Boolean, value: true },
+    fallbackUrl: { type: String, value: "/pages/terminal/index" },
   },
   data: { statusBarHeight: 20, rightInset: 96, tabSafeHeight: 80, menuTop: 26, menuHeight: 32 },
   lifetimes: {
@@ -20,7 +21,14 @@ Component({
     },
   },
   methods: {
-    back() { wx.navigateBack(); },
+    back() {
+      if (getCurrentPages().length > 1) {
+        wx.navigateBack();
+        return;
+      }
+      const url = this.data.fallbackUrl || "/pages/terminal/index";
+      wx.switchTab({ url, fail: () => wx.reLaunch({ url }) });
+    },
     rightTap() { this.triggerEvent("righttap"); },
   },
 });
