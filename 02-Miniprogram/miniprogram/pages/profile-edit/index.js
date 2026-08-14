@@ -1,4 +1,5 @@
 const { getProfile, saveProfile, getProfileCompletion } = require("../../utils/member.js");
+const { linkCommunityPhone } = require("../../utils/payment.js");
 
 Page({
   data: { profile: {}, nickname: "", profileCompletion: 0 },
@@ -34,18 +35,21 @@ Page({
     wx.showToast({ title: "资料已保存", icon: "success" });
   },
 
-  getPhoneNumber(event) {
+  async getPhoneNumber(event) {
     if (!event.detail.code) {
       wx.showToast({ title: "未获得手机号授权", icon: "none" });
       return;
     }
-    const profile = saveProfile({ phonePending: true });
-    this.setData({ profile });
-    wx.showModal({
-      title: "授权凭证已取得",
-      content: "为保护手机号，授权码不会保存在本机。接入服务端后，将由服务端换取并保存脱敏手机号。",
-      showCancel: false,
-      confirmColor: "#0D355C",
-    });
+    wx.showLoading({ title: "正在绑定", mask: true });
+    try {
+      const result = await linkCommunityPhone(event.detail.code);
+      const profile = saveProfile({ phonePending: false, phoneMasked: result.phoneMasked || "已绑定" });
+      this.setData({ profile, profileCompletion: getProfileCompletion(profile) });
+      wx.hideLoading();
+      wx.showToast({ title: "手机号已绑定", icon: "success" });
+    } catch (error) {
+      wx.hideLoading();
+      wx.showToast({ title: error.message || "绑定失败，请重试", icon: "none" });
+    }
   },
 });

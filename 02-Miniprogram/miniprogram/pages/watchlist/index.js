@@ -1,28 +1,32 @@
 const { getReportData, refreshReportData } = require("../../utils/live-data.js");
+const { getCommunityEssays } = require("../../utils/community-essays.js");
 
 const bundledReportIndex = getReportData().index;
 
 Page({
   data: {
     meta: bundledReportIndex.meta,
-    activeType: "weekly",
-    activeLabel: "周报",
+    activeType: "all",
+    activeLabel: "最新观察",
     featured: null,
     reports: [],
   },
 
   onLoad() {
-    this.refresh("weekly");
+    this.refresh("all");
     refreshReportData().then(() => this.refresh(this.data.activeType));
   },
 
   refresh(type) {
     const reportIndex = getReportData().index;
-    const reports = reportIndex.reports.filter((item) => item.type === type);
+    const community = getCommunityEssays().index;
+    const all = [...community, ...reportIndex.reports].sort((a, b) => String(b.date).localeCompare(String(a.date)));
+    const reports = type === "all" ? all : type === "community" ? community : reportIndex.reports.filter((item) => item.type === type);
+    const labels = { all: "最新观察", community: "社群精华", weekly: "周报", monthly: "月报" };
     this.setData({
       meta: reportIndex.meta,
       activeType: type,
-      activeLabel: type === "weekly" ? "周报" : "月报",
+      activeLabel: labels[type],
       featured: reports[0] || null,
       reports: reports.slice(1),
     });

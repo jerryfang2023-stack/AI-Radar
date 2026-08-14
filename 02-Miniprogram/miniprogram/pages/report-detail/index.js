@@ -1,14 +1,15 @@
 const { recordBehavior } = require("../../utils/member.js");
 const { getReportData, refreshReportData } = require("../../utils/live-data.js");
+const { getCommunityEssays } = require("../../utils/community-essays.js");
 
 Page({
   data: { report: null },
   onLoad(options) {
     this.reportId = options.id;
-    const bundled = getReportData().details[this.reportId];
+    const bundled = getCommunityEssays().details[this.reportId] || getReportData().details[this.reportId];
     if (bundled) this.render(bundled);
     refreshReportData().then((state) => {
-      const report = state.details[this.reportId];
+      const report = getCommunityEssays().details[this.reportId] || state.details[this.reportId];
       if (report) this.render(report);
       else if (!this.data.report) {
         wx.showToast({ title: "报告不存在", icon: "none" });

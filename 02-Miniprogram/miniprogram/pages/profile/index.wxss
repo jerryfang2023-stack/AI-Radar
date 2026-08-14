@@ -6,6 +6,13 @@
 .member-meta, .row-subtitle { color: #6f7f8f; font-size: 23rpx; line-height: 1.5; }
 .text-link { color: #9b6d20; font-size: 24rpx; }
 .membership-card { display: flex; align-items: center; justify-content: space-between; gap: 24rpx; padding: 22rpx 24rpx; border: 1rpx solid rgba(200,167,102,.62); border-left: 7rpx solid #c8a766; border-radius: 16rpx; background: #fffaf0; box-shadow: 0 10rpx 28rpx rgba(86,63,22,.07); }
+.community-card { display: grid; grid-template-columns: 84rpx minmax(0,1fr) auto; gap: 18rpx; align-items: center; padding: 24rpx; border: 1rpx solid #e1ddd4; border-radius: 20rpx; background: #fff; }
+.community-mark { display: flex; width: 76rpx; height: 76rpx; align-items: center; justify-content: center; border-radius: 50%; background: #071827; color: #c8a766; font: 36rpx/1 serif; }
+.community-copy { display: flex; min-width: 0; flex-direction: column; gap: 7rpx; color: #9b6d20; font-size: 20rpx; }
+.community-status { color: #071827; font-size: 30rpx; font-weight: 650; }
+.community-action { display: flex; align-items: center; gap: 7rpx; color: #0d355c; font-size: 22rpx; font-weight: 600; }
+.community-points { color: #9b6d20; font-size: 31rpx; }
+.community-link-button { min-width: 142rpx; height: 66rpx; margin: 0; padding: 0 20rpx; border-radius: 33rpx; background: #0d355c; color: #fff; font-size: 22rpx; line-height: 66rpx; }
 .membership-copy { display: flex; min-width: 0; flex-direction: column; gap: 7rpx; color: #806b45; font-size: 19rpx; }
 .membership-copy > view { display: flex; align-items: baseline; gap: 14rpx; }
 .membership-kicker { color: #8c7041; font-size: 19rpx; }

@@ -23,7 +23,7 @@
     <view class="section-title serif">账号与联系</view>
     <view class="form-card paper-card">
       <view class="account-row">
-        <view><text class="field-label">手机号</text><text class="field-note">{{profile.phoneMasked || (profile.phonePending ? '等待服务端完成绑定' : '未绑定')}}</text></view>
+        <view><text class="field-label">手机号</text><text class="field-note">{{profile.phoneMasked || '未绑定'}}</text></view>
         <button class="outline-button" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">{{profile.phoneMasked ? '更换' : '微信授权'}}</button>
       </view>
       <view class="account-row">
@@ -32,9 +32,5 @@
       </view>
     </view>
 
-    <view class="privacy-note">
-      <text class="serif">隐私说明</text>
-      <text>头像和昵称仅在你确认后保存；手机号需经微信授权并由服务端换取。当前预览版不会在本机保存手机号授权码。</text>
-    </view>
   </view>
 </view>

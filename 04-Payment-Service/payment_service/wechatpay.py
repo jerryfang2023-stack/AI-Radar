@@ -81,6 +81,29 @@ class WeChatPayClient:
             raise WeChatPayError(result.get("errmsg") or "微信登录失败", code="WECHAT_LOGIN_FAILED", status=401)
         return result
 
+    def exchange_phone_number(self, code):
+        if not self.app_secret:
+            raise WeChatPayError("小程序手机号授权尚未完成密钥配置", code="LOGIN_NOT_CONFIGURED", status=503)
+        token_query = urllib.parse.urlencode({
+            "grant_type": "client_credential",
+            "appid": self.app_id,
+            "secret": self.app_secret,
+        })
+        _, _, token_result = self._json_request(f"https://api.weixin.qq.com/cgi-bin/token?{token_query}")
+        access_token = token_result.get("access_token")
+        if not access_token:
+            raise WeChatPayError(token_result.get("errmsg") or "微信手机号授权失败", code="WECHAT_PHONE_TOKEN_FAILED", status=502)
+        _, _, result = self._json_request(
+            f"https://api.weixin.qq.com/wxa/business/getuserphonenumber?access_token={urllib.parse.quote(access_token, safe='')}",
+            method="POST",
+            body={"code": code},
+            headers={"Content-Type": "application/json"},
+        )
+        phone_info = result.get("phone_info") or {}
+        if result.get("errcode") not in (None, 0) or not phone_info.get("phoneNumber"):
+            raise WeChatPayError(result.get("errmsg") or "微信手机号授权失败", code="WECHAT_PHONE_FAILED", status=400)
+        return phone_info
+
     def _private_key(self):
         self._require_configured()
         return serialization.load_pem_private_key(Path(self.private_key_path).read_bytes(), password=None)

@@ -1,5 +1,6 @@
 import os
 import math
+import re
 import secrets
 import sqlite3
 from contextlib import closing
@@ -11,12 +12,18 @@ from flask import Flask, g, jsonify, request
 from itsdangerous import BadSignature, SignatureExpired, URLSafeTimedSerializer
 
 from payment_service.wechatpay import WeChatPayClient, WeChatPayError
+from payment_service.community import CommunityClient, CommunityServiceError
 
 
 PLANS = {
     "monthly": {"title": "观澜月度会员", "total_cents": 3000, "days": 30},
     "half_year": {"title": "观澜半年会员", "total_cents": 16800, "days": 180},
     "annual": {"title": "观澜年度会员", "total_cents": 30000, "days": 365},
+}
+
+POINT_BENEFITS = {
+    "membership_7d": {"title": "7 天会员权益", "cost": 300, "days": 7},
+    "membership_30d": {"title": "30 天会员权益", "cost": 1000, "days": 30},
 }
 
 
@@ -28,7 +35,7 @@ def iso(value):
     return value.astimezone(timezone.utc).isoformat(timespec="seconds")
 
 
-def create_app(test_config=None, *, pay_client=None):
+def create_app(test_config=None, *, pay_client=None, community_client=None):
     app = Flask(__name__)
     app.config.from_mapping(
         SECRET_KEY=os.getenv("SECRET_KEY", ""),
@@ -44,6 +51,8 @@ def create_app(test_config=None, *, pay_client=None):
         WECHAT_PAY_NOTIFY_URL=os.getenv("WECHAT_PAY_NOTIFY_URL", "https://www.zkdlj.vip/api/v1/pay/wechat/notify"),
         TOKEN_MAX_AGE=30 * 24 * 60 * 60,
         APP_ENV=os.getenv("APP_ENV", "development"),
+        COMMUNITY_SERVICE_URL=os.getenv("COMMUNITY_SERVICE_URL", "http://127.0.0.1:8000"),
+        COMMUNITY_SERVICE_TOKEN=os.getenv("COMMUNITY_SERVICE_TOKEN", ""),
     )
     if test_config:
         app.config.update(test_config)
@@ -54,6 +63,7 @@ def create_app(test_config=None, *, pay_client=None):
 
     Path(app.config["DATABASE_PATH"]).parent.mkdir(parents=True, exist_ok=True)
     app.pay_client = pay_client or WeChatPayClient(app.config)
+    app.community_client = community_client or CommunityClient(app.config)
     serializer = URLSafeTimedSerializer(app.config["SECRET_KEY"], salt="wavesight-mini-user-v1")
 
     def db():
@@ -76,6 +86,18 @@ def create_app(test_config=None, *, pay_client=None):
                     member_ends_at TEXT,
                     created_at TEXT NOT NULL,
                     updated_at TEXT NOT NULL
+                );
+                CREATE TABLE IF NOT EXISTS point_ledger (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    user_id INTEGER NOT NULL,
+                    source_type TEXT NOT NULL,
+                    source_id TEXT NOT NULL UNIQUE,
+                    points INTEGER NOT NULL,
+                    balance_after INTEGER NOT NULL,
+                    lifetime_after INTEGER NOT NULL,
+                    label TEXT NOT NULL,
+                    created_at TEXT NOT NULL,
+                    FOREIGN KEY(user_id) REFERENCES users(id)
                 );
                 CREATE TABLE IF NOT EXISTS payment_orders (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -113,6 +135,20 @@ def create_app(test_config=None, *, pay_client=None):
                     created_at TEXT NOT NULL
                 );
             """)
+            user_columns = {row[1] for row in conn.execute("PRAGMA table_info(users)").fetchall()}
+            for name, definition in {
+                "phone": "TEXT",
+                "community_member_id": "INTEGER",
+                "community_name": "TEXT",
+                "community_status": "TEXT NOT NULL DEFAULT 'none'",
+                "community_points": "INTEGER NOT NULL DEFAULT 0",
+                "point_balance": "INTEGER NOT NULL DEFAULT 0",
+                "point_lifetime": "INTEGER NOT NULL DEFAULT 0",
+            }.items():
+                if name not in user_columns:
+                    conn.execute(f"ALTER TABLE users ADD COLUMN {name} {definition}")
+            conn.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_users_phone ON users(phone) WHERE phone IS NOT NULL")
+            conn.execute("CREATE INDEX IF NOT EXISTS idx_users_community_member ON users(community_member_id)")
             conn.commit()
 
     init_db()
@@ -134,6 +170,58 @@ def create_app(test_config=None, *, pay_client=None):
             "remainingDays": max(0, math.ceil((active_end - now).total_seconds() / 86400)),
             "activeUntil": active_end.date().isoformat(),
         }
+
+    def wallet(row):
+        return {"balance": int(row["point_balance"] or 0), "lifetime": int(row["point_lifetime"] or 0)}
+
+    def community_snapshot(row):
+        raw_status = row["community_status"] or "none"
+        status = "joined" if raw_status == "approved" else raw_status
+        labels = {"joined": "已入群", "pending": "审核中", "candidate": "候补", "rejected": "暂未通过", "none": "未入群"}
+        return {
+            "memberId": row["community_member_id"],
+            "name": row["community_name"] or "",
+            "status": status,
+            "statusLabel": labels.get(status, "申请状态"),
+            "points": int(row["community_points"] or 0) if status == "joined" else 0,
+        }
+
+    def import_community_points(conn, user, member):
+        points = max(0, int(member.get("points") or 0))
+        source_id = f"community-history:{int(member['id'])}"
+        existing = conn.execute("SELECT id, points FROM point_ledger WHERE source_id=?", (source_id,)).fetchone()
+        previous_points = int(existing["points"] or 0) if existing else 0
+        delta = points - previous_points
+        balance = max(0, int(user["point_balance"] or 0) + delta)
+        lifetime = max(0, int(user["point_lifetime"] or 0) + delta)
+        now = iso(utcnow())
+        conn.execute(
+            "UPDATE users SET community_points=?, point_balance=?, point_lifetime=?, updated_at=? WHERE id=?",
+            (points, balance, lifetime, now, user["id"]),
+        )
+        if existing:
+            conn.execute(
+                "UPDATE point_ledger SET points=?, balance_after=?, lifetime_after=? WHERE id=?",
+                (points, balance, lifetime, existing["id"]),
+            )
+        elif points:
+            conn.execute(
+                "INSERT INTO point_ledger(user_id, source_type, source_id, points, balance_after, lifetime_after, label, created_at) VALUES(?,?,?,?,?,?,?,?)",
+                (user["id"], "community_history", source_id, points, balance, lifetime, "社群历史积分", now),
+            )
+
+    def extend_member_days(conn, user, days, source_type, source_id):
+        now = utcnow()
+        trial_end = datetime.fromisoformat(user["trial_ends_at"])
+        member_end = datetime.fromisoformat(user["member_ends_at"]) if user["member_ends_at"] else now
+        start = max(now, trial_end, member_end)
+        new_end = start + timedelta(days=days)
+        conn.execute("UPDATE users SET member_ends_at=?, updated_at=? WHERE id=?", (iso(new_end), iso(now), user["id"]))
+        conn.execute(
+            "INSERT OR IGNORE INTO membership_ledger(user_id, source_type, source_id, days, previous_ends_at, new_ends_at, created_at) VALUES(?,?,?,?,?,?,?)",
+            (user["id"], source_type, source_id, days, user["member_ends_at"], iso(new_end), iso(now)),
+        )
+        return user_by_id(conn, user["id"])
 
     def user_by_id(conn, user_id):
         return conn.execute("SELECT * FROM users WHERE id=?", (user_id,)).fetchone()
@@ -201,6 +289,10 @@ def create_app(test_config=None, *, pay_client=None):
     def handle_wechat_error(error):
         return jsonify(error={"code": error.code, "message": str(error)}), error.status
 
+    @app.errorhandler(CommunityServiceError)
+    def handle_community_error(error):
+        return jsonify(error={"code": "COMMUNITY_SERVICE_ERROR", "message": str(error)}), 502
+
     @app.errorhandler(400)
     def handle_bad_request(error):
         return jsonify(error={"code": "BAD_REQUEST", "message": error.description or "请求参数错误"}), 400
@@ -225,6 +317,12 @@ def create_app(test_config=None, *, pay_client=None):
         now = utcnow()
         with closing(db()) as conn:
             user = conn.execute("SELECT * FROM users WHERE openid=?", (result["openid"],)).fetchone()
+            if not user and result.get("unionid"):
+                user = conn.execute("SELECT * FROM users WHERE unionid=?", (result["unionid"],)).fetchone()
+                if user:
+                    conn.execute("UPDATE users SET openid=?, updated_at=? WHERE id=?", (result["openid"], iso(now), user["id"]))
+                    conn.commit()
+                    user = user_by_id(conn, user["id"])
             if not user:
                 conn.execute(
                     "INSERT INTO users(openid, unionid, trial_started_at, trial_ends_at, created_at, updated_at) VALUES(?,?,?,?,?,?)",
@@ -232,13 +330,106 @@ def create_app(test_config=None, *, pay_client=None):
                 )
                 conn.commit()
                 user = conn.execute("SELECT * FROM users WHERE openid=?", (result["openid"],)).fetchone()
-            return jsonify(token=token_for(user["id"]), membership=membership(user))
+            return jsonify(token=token_for(user["id"]), membership=membership(user), community=community_snapshot(user), wallet=wallet(user))
 
     @app.get("/api/v1/member/me")
     @auth_required
     def member_me():
         with closing(db()) as conn:
-            return jsonify(membership=membership(user_by_id(conn, g.user_id)))
+            user = user_by_id(conn, g.user_id)
+            if user["community_member_id"]:
+                remote = app.community_client.status(user["community_member_id"])
+                member = remote.get("member") or {}
+                conn.execute(
+                    "UPDATE users SET community_name=?, community_status=?, updated_at=? WHERE id=?",
+                    (member.get("name") or user["community_name"], member.get("status") or user["community_status"], iso(utcnow()), user["id"]),
+                )
+                import_community_points(conn, user, member)
+                conn.commit()
+                user = user_by_id(conn, g.user_id)
+            return jsonify(membership=membership(user), community=community_snapshot(user), wallet=wallet(user))
+
+    @app.post("/api/v1/community/link-phone")
+    @auth_required
+    def link_community_phone():
+        payload = request.get_json(silent=True) or {}
+        code = str(payload.get("code") or "").strip()
+        if not code or len(code) > 256:
+            return jsonify(error={"code": "INVALID_PHONE_CODE", "message": "手机号授权凭证无效"}), 400
+        phone_info = app.pay_client.exchange_phone_number(code)
+        phone = re.sub(r"\D", "", str(phone_info.get("phoneNumber") or ""))
+        if len(phone) != 11:
+            return jsonify(error={"code": "INVALID_PHONE", "message": "未获得有效手机号"}), 400
+        remote = app.community_client.lookup(phone)
+        member = remote.get("member") if remote.get("found") else None
+        with closing(db()) as conn:
+            conn.execute("BEGIN IMMEDIATE")
+            user = user_by_id(conn, g.user_id)
+            conn.execute("UPDATE users SET phone=?, updated_at=? WHERE id=?", (phone, iso(utcnow()), user["id"]))
+            if member:
+                conn.execute(
+                    "UPDATE users SET community_member_id=?, community_name=?, community_status=?, updated_at=? WHERE id=?",
+                    (member["id"], member.get("name") or "", member.get("status") or "pending", iso(utcnow()), user["id"]),
+                )
+                user = user_by_id(conn, g.user_id)
+                import_community_points(conn, user, member)
+            conn.commit()
+            user = user_by_id(conn, g.user_id)
+            return jsonify(
+                community=community_snapshot(user),
+                wallet=wallet(user),
+                membership=membership(user),
+                phoneMasked=f"{phone[:3]}****{phone[-4:]}",
+            )
+
+    @app.post("/api/v1/community/applications")
+    @auth_required
+    def submit_community_application():
+        payload = request.get_json(silent=True) or {}
+        required = ["name", "phone", "wechat", "city", "role", "industry", "skills", "project", "needs", "direction", "perspective"]
+        cleaned = {field: str(payload.get(field) or "").strip() for field in required}
+        if any(not cleaned[field] for field in required):
+            return jsonify(error={"code": "APPLICATION_INCOMPLETE", "message": "请完成全部必填信息"}), 400
+        if any(len(value) > 2000 for value in cleaned.values()):
+            return jsonify(error={"code": "APPLICATION_TOO_LONG", "message": "申请内容过长"}), 400
+        cleaned["source"] = "miniprogram"
+        remote = app.community_client.submit_application(cleaned)
+        member = remote.get("member") or {}
+        with closing(db()) as conn:
+            conn.execute(
+                "UPDATE users SET phone=?, community_member_id=?, community_name=?, community_status=?, updated_at=? WHERE id=?",
+                (re.sub(r"\D", "", cleaned["phone"]), member.get("id"), member.get("name") or cleaned["name"], member.get("status") or "pending", iso(utcnow()), g.user_id),
+            )
+            conn.commit()
+            user = user_by_id(conn, g.user_id)
+            return jsonify(community=community_snapshot(user), wallet=wallet(user), membership=membership(user)), 201
+
+    @app.post("/api/v1/points/redeem")
+    @auth_required
+    def redeem_points():
+        payload = request.get_json(silent=True) or {}
+        benefit_id = str(payload.get("benefitId") or "")
+        benefit = POINT_BENEFITS.get(benefit_id)
+        if not benefit:
+            return jsonify(error={"code": "INVALID_BENEFIT", "message": "兑换权益不存在"}), 400
+        source_id = f"points:{benefit_id}:{secrets.token_hex(12)}"
+        with closing(db()) as conn:
+            conn.execute("BEGIN IMMEDIATE")
+            user = user_by_id(conn, g.user_id)
+            if int(user["point_balance"] or 0) < benefit["cost"]:
+                conn.rollback()
+                return jsonify(error={"code": "INSUFFICIENT_POINTS", "message": "积分不足"}), 409
+            balance = int(user["point_balance"]) - benefit["cost"]
+            lifetime = int(user["point_lifetime"])
+            conn.execute("UPDATE users SET point_balance=?, updated_at=? WHERE id=?", (balance, iso(utcnow()), user["id"]))
+            conn.execute(
+                "INSERT INTO point_ledger(user_id, source_type, source_id, points, balance_after, lifetime_after, label, created_at) VALUES(?,?,?,?,?,?,?,?)",
+                (user["id"], "redemption", source_id, -benefit["cost"], balance, lifetime, benefit["title"], iso(utcnow())),
+            )
+            user = user_by_id(conn, user["id"])
+            user = extend_member_days(conn, user, benefit["days"], "points", source_id)
+            conn.commit()
+            return jsonify(wallet=wallet(user), membership=membership(user), benefit={"id": benefit_id, **benefit})
 
     @app.post("/api/v1/pay/wechat/orders")
     @auth_required

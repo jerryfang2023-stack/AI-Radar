@@ -56,6 +56,35 @@ test("insufficient balance leaves wallet and membership unchanged", () => {
   assert.deepEqual(storage.get("guanlan_membership_v1"), initialMembership);
 });
 
+test("removes the retired 128-point local starter grant exactly once", () => {
+  const storage = createStorage({
+    guanlan_growth_wallet_v1: {
+      balance: 148,
+      lifetime: 148,
+      ledger: [
+        { id: "earned-20", label: "任务积分", points: 20, type: "earn" },
+        { id: "experience_starter", label: "新用户积分", points: 128, type: "earn" },
+      ],
+    },
+  });
+  delete require.cache[require.resolve("../miniprogram/utils/member.js")];
+  const { getWallet } = require("../miniprogram/utils/member.js");
+
+  assert.deepEqual(getWallet(), {
+    balance: 20,
+    lifetime: 20,
+    ledger: [{ id: "earned-20", label: "任务积分", points: 20, type: "earn" }],
+  });
+  assert.equal(getWallet().balance, 20);
+});
+
+test("starts new users at zero points", () => {
+  createStorage();
+  delete require.cache[require.resolve("../miniprogram/utils/member.js")];
+  const { getWallet } = require("../miniprogram/utils/member.js");
+  assert.deepEqual(getWallet(), { balance: 0, lifetime: 0, ledger: [] });
+});
+
 test("remote paid membership sync preserves a later point-redemption entitlement", () => {
   const storage = createStorage({
     guanlan_membership_v1: {
