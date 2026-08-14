@@ -22,12 +22,13 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 7,
+    "current_round_count": 8,
     "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 6,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-07-17",
+    "latest_disclosed_at": "2026-08-10",
     "role_counts": {
+      "co_lead": 1,
       "historical_or_ambiguous": 2,
       "lead": 3,
       "participant": 4
@@ -74,6 +75,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-5f1ce199a0098494",
+        "funding_insight_id": "FI-f55b62cf10cb7c98",
+        "event_ids": [
+          "EV-f5dd6dec49ad83aa"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "G轮",
+        "round_code": "series_g",
+        "round_original": "G轮",
+        "amount_original": "$30 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 亿美元"
+        },
+        "announced_at": "2026-08-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-077b1124fc8e9581",
+            "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
+            "source_title": "GIC-backed OpenAI rival Anthropic finalises US$30 bil funding at US$380 bil value",
+            "source_content_hash": "7ff9bbd6aca29214",
+            "quote": "Singapore’s sovereign wealth fund GIC and Coatue Management led the deal, Anthropic said on Thursday.",
+            "quote_hash": "ac5298f37850c97064e8b1fb759b846d39b392aa5084f25a2ff167911b5cee47"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a9bc72ac5dec06bb",
         "funding_insight_id": "FI-d00f79c5a43227dc",
@@ -428,6 +467,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-077b1124fc8e9581",
+        "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
+        "source_title": "GIC-backed OpenAI rival Anthropic finalises US$30 bil funding at US$380 bil value",
+        "source_content_hash": "7ff9bbd6aca29214",
+        "quote": "Singapore’s sovereign wealth fund GIC and Coatue Management led the deal, Anthropic said on Thursday.",
+        "quote_hash": "ac5298f37850c97064e8b1fb759b846d39b392aa5084f25a2ff167911b5cee47"
+      },
       {
         "source_id": "FISRC-4f2f10efb22c92e2",
         "source_url": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act",

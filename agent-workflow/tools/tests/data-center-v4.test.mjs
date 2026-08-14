@@ -872,6 +872,27 @@ test("entity-link repair preserves an accepted bundle while restoring missing or
   assert.equal(bundle.manifest.counts.entity_mentions, 3);
 });
 
+test("entity extraction recovers claim subjects and described Chinese funding companies", () => {
+  const deploymentMatches = organizationMentions(
+    "JetBrains CTO 谈如何评估并部署 Claude Fable 5：私有仓库评测、效率提升与安全策略",
+    { subject: "JetBrains CTO 谈如何评估并", action: "部署", object: "Claude Fable 5" },
+    "deployment",
+    "We provide an agent running Claude Fable 5 with specifications.",
+    [{ subject: "JetBrains", source_quote: "We provide an agent running Claude Fable 5 with specifications." }],
+  );
+  assert.ok(deploymentMatches.some((item) => item.canonicalName === "JetBrains" && item.source === "title_original"));
+
+  const fundingQuote = "近日，具身智能数据基础设施公司元点科技（SCALEFORCE）完成数千万元人民币融资，投资者包含恒旭资本和凯联资本。";
+  const fundingMatches = organizationMentions(
+    "具身数据来了实战派！40天2轮融资数千万，瞄准物理AI基础设施",
+    { subject: "具身数据来了实战派！40天2轮", action: "融资", object: "数千万" },
+    "funding",
+    fundingQuote,
+    [{ subject: "具身数据来了实战派！40天2轮", source_quote: fundingQuote }],
+  );
+  assert.ok(fundingMatches.some((item) => item.canonicalName === "元点科技" && item.source === "claim_evidence"));
+});
+
 test("an earlier release verb preserves the organization when deployment determines the event type", () => {
   const bundle = buildBundle([
     entry(

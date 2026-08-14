@@ -61,6 +61,7 @@
       "EV-08f736f61f2b46f3"
     ],
     "entityIds": [
+      "EN-2505fe8a9e908e04",
       "EN-7ef08ef63597d47c",
       "EN-bbc41366a5a7cf78",
       "EN-2b60b46911fc1640",
@@ -129,9 +130,7 @@
         "935亿"
       ],
       "locations": [],
-      "missingFields": [
-        "entities"
-      ],
+      "missingFields": [],
       "conflicts": [],
       "tags": [
         {
@@ -139,7 +138,9 @@
           "dimensionName": "技术",
           "id": "embodied_ai",
           "name": "具身智能",
-          "entityIds": [],
+          "entityIds": [
+            "EN-2505fe8a9e908e04"
+          ],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -148,7 +149,9 @@
           "dimensionName": "技术",
           "id": "embodied_ai",
           "name": "具身智能",
-          "entityIds": [],
+          "entityIds": [
+            "EN-2505fe8a9e908e04"
+          ],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -157,7 +160,9 @@
           "dimensionName": "技术",
           "id": "embodied_ai",
           "name": "具身智能",
-          "entityIds": [],
+          "entityIds": [
+            "EN-2505fe8a9e908e04"
+          ],
           "provenance": "claim_assertion",
           "assertionId": ""
         }
@@ -178,7 +183,9 @@
           "dimensionName": "技术",
           "id": "embodied_ai",
           "name": "具身智能",
-          "entityIds": [],
+          "entityIds": [
+            "EN-2505fe8a9e908e04"
+          ],
           "provenance": "claim_assertion",
           "assertionId": ""
         }
@@ -189,13 +196,19 @@
           "dimensionName": "技术",
           "id": "embodied_ai",
           "name": "具身智能",
-          "entityIds": [],
+          "entityIds": [
+            "EN-2505fe8a9e908e04"
+          ],
           "provenance": "claim_assertion",
           "assertionId": ""
         }
       ],
-      "entityIds": [],
-      "entityNames": [],
+      "entityIds": [
+        "EN-2505fe8a9e908e04"
+      ],
+      "entityNames": [
+        "元点科技"
+      ],
       "productName": "",
       "products": [],
       "sourceUrl": "https://qbitai.com/2026/08/472060.html",
@@ -8633,6 +8646,27 @@
     }
   ],
   "entities": [
+    {
+      "id": "EN-2505fe8a9e908e04",
+      "name": "元点科技",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-1765fd690cff1cac"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-14"
+    },
     {
       "id": "EN-7ef08ef63597d47c",
       "name": "Gritt",

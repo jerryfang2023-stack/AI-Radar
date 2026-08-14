@@ -20,13 +20,13 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 4,
     "first_disclosed_at": "2026-02-12",
-    "latest_disclosed_at": "2026-06-10",
+    "latest_disclosed_at": "2026-08-10",
     "role_counts": {
-      "co_lead": 2,
+      "co_lead": 3,
       "historical_or_ambiguous": 2,
       "participant": 2
     },
@@ -59,6 +59,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-9ba196e6f3793fc0",
+        "funding_insight_id": "FI-f55b62cf10cb7c98",
+        "event_ids": [
+          "EV-f5dd6dec49ad83aa"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "G轮",
+        "round_code": "series_g",
+        "round_original": "G轮",
+        "amount_original": "$30 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 亿美元"
+        },
+        "announced_at": "2026-08-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-077b1124fc8e9581",
+            "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
+            "source_title": "GIC-backed OpenAI rival Anthropic finalises US$30 bil funding at US$380 bil value",
+            "source_content_hash": "7ff9bbd6aca29214",
+            "quote": "DE Shaw & Co, Dragoneer Investment Group, Peter Thiel’s Founders Fund, Iconiq and MGX co-led the round",
+            "quote_hash": "bdfd56c7328c8886cb48b941b4f330aff7ca9c83b05f0664f43e60381537841f"
+          }
+        ]
+      },
       {
         "activity_id": "IA-8ef63c0fa0f0e199",
         "funding_insight_id": "FI-da21481e9629e578",
@@ -298,6 +336,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-077b1124fc8e9581",
+        "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
+        "source_title": "GIC-backed OpenAI rival Anthropic finalises US$30 bil funding at US$380 bil value",
+        "source_content_hash": "7ff9bbd6aca29214",
+        "quote": "DE Shaw & Co, Dragoneer Investment Group, Peter Thiel’s Founders Fund, Iconiq and MGX co-led the round",
+        "quote_hash": "bdfd56c7328c8886cb48b941b4f330aff7ca9c83b05f0664f43e60381537841f"
+      },
       {
         "source_id": "FISRC-1da4b36f3c2caa81",
         "source_url": "https://www.bloomberg.com/news/articles/2026-06-10/openai-backs-ai-startup-fielding-compliance-underwriting-tasks",

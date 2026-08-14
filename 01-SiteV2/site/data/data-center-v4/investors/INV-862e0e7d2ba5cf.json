@@ -22,16 +22,16 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 11,
+    "current_round_count": 12,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 10,
+    "portfolio_company_count": 11,
     "first_disclosed_at": "2025-03-25",
-    "latest_disclosed_at": "2026-07-23",
+    "latest_disclosed_at": "2026-08-10",
     "role_counts": {
       "historical_or_ambiguous": 3,
       "lead": 7,
       "other_current_round": 1,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "multi_round",
@@ -41,9 +41,15 @@
       "series_c",
       "series_d",
       "series_f",
+      "series_g",
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "name": "Anthropic"
+      },
       {
         "entity_id": "EN-522656609ff15589",
         "canonical_entity_id": "",
@@ -96,6 +102,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e8b7f1f0fc2bd223",
+        "funding_insight_id": "FI-f55b62cf10cb7c98",
+        "event_ids": [
+          "EV-f5dd6dec49ad83aa"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "G轮",
+        "round_code": "series_g",
+        "round_original": "G轮",
+        "amount_original": "$30 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 亿美元"
+        },
+        "announced_at": "2026-08-10",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-077b1124fc8e9581",
+            "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
+            "source_title": "GIC-backed OpenAI rival Anthropic finalises US$30 bil funding at US$380 bil value",
+            "source_content_hash": "7ff9bbd6aca29214",
+            "quote": "along with participation from a who’s who of other investors, from Sequoia Capital and Lightspeed Venture Partners to Big Tech firms Nvidia Corp and Microsoft Corp.",
+            "quote_hash": "f9050f59785f6003fc0699c9f5dcec1c1613171131640d36bc3ece33945c5d82"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a89767886f2714dc",
         "funding_insight_id": "FI-1590f6795e68ef12",
@@ -638,6 +682,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-077b1124fc8e9581",
+        "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
+        "source_title": "GIC-backed OpenAI rival Anthropic finalises US$30 bil funding at US$380 bil value",
+        "source_content_hash": "7ff9bbd6aca29214",
+        "quote": "along with participation from a who’s who of other investors, from Sequoia Capital and Lightspeed Venture Partners to Big Tech firms Nvidia Corp and Microsoft Corp.",
+        "quote_hash": "f9050f59785f6003fc0699c9f5dcec1c1613171131640d36bc3ece33945c5d82"
+      },
       {
         "source_id": "FISRC-7032d0b33d579ec8",
         "source_url": "https://business-news-today.com/etched-raises-300m-as-10-3bn-valuation-tests-ai-inference-chip-economics/",

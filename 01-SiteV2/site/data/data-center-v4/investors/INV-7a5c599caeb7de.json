@@ -22,15 +22,15 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 23,
+    "current_round_count": 24,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 22,
+    "portfolio_company_count": 23,
     "first_disclosed_at": "2023-04-27",
     "latest_disclosed_at": "2026-08-12",
     "role_counts": {
       "historical_or_ambiguous": 3,
       "lead": 2,
-      "participant": 21
+      "participant": 22
     },
     "round_codes": [
       "multi_round",
@@ -80,6 +80,11 @@
         "entity_id": "EN-f346eaca864441f9",
         "canonical_entity_id": "",
         "name": "JustAI"
+      },
+      {
+        "entity_id": "EN-249fdefbb63fa7b3",
+        "canonical_entity_id": "",
+        "name": "Lemma"
       },
       {
         "entity_id": "EN-20b5af8f2c749bf8",
@@ -272,6 +277,44 @@
             "source_content_hash": "bd47d3e50a1db886",
             "quote": "with participation from Y Combinator and Peak XV Partners",
             "quote_hash": "bfdb759d9e01c1cf272260d0da606631f85518f2a0fcaa9e0a95f0c2f7f544f0"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-bda049c32e511a9f",
+        "funding_insight_id": "FI-98e08b099fb39138",
+        "event_ids": [
+          "EV-c1295b8f58024ff6"
+        ],
+        "company_entity_id": "EN-249fdefbb63fa7b3",
+        "company_canonical_entity_id": "",
+        "company_name": "Lemma",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "$2.3M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "230 万美元"
+        },
+        "announced_at": "2026-08-07",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-efe4db4aff32c4ea",
+            "source_url": "https://dealroom.co/news/143810-lemma-raises-2-3m-pre-seed-to-catch-ai-agents-that-fail-silently/",
+            "source_title": "Lemma 筹集 230 万美元预种子资金，用于捕捉静默失败的 AI 智能体",
+            "source_content_hash": "af7a29745db5560a",
+            "quote": "Matrix Dealroom has a profile for this one. Try Dealroom → , Y Combinator , Liquid 2 Ventures , Vermilion Cliffs Ventures Dealroom has a profile for this one. Try Dealroom → , Irregular Expressions Dealroom has a profile for this one. Try Dealroom → , Cervin Ventures Dealroom has a profile for this one. Try Dealroom → , Comma Capital Dealroom has a profile for this one. Try Dealroom → , Position Ventures Dealroom has a profile for this one. Try Dealroom → , and Eight Capital Dealroom has a profile for this one. Try Dealroom → took part.",
+            "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
           }
         ]
       },
@@ -1198,6 +1241,14 @@
         "source_content_hash": "bd47d3e50a1db886",
         "quote": "with participation from Y Combinator and Peak XV Partners",
         "quote_hash": "bfdb759d9e01c1cf272260d0da606631f85518f2a0fcaa9e0a95f0c2f7f544f0"
+      },
+      {
+        "source_id": "FISRC-efe4db4aff32c4ea",
+        "source_url": "https://dealroom.co/news/143810-lemma-raises-2-3m-pre-seed-to-catch-ai-agents-that-fail-silently/",
+        "source_title": "Lemma 筹集 230 万美元预种子资金，用于捕捉静默失败的 AI 智能体",
+        "source_content_hash": "af7a29745db5560a",
+        "quote": "Matrix Dealroom has a profile for this one. Try Dealroom → , Y Combinator , Liquid 2 Ventures , Vermilion Cliffs Ventures Dealroom has a profile for this one. Try Dealroom → , Irregular Expressions Dealroom has a profile for this one. Try Dealroom → , Cervin Ventures Dealroom has a profile for this one. Try Dealroom → , Comma Capital Dealroom has a profile for this one. Try Dealroom → , Position Ventures Dealroom has a profile for this one. Try Dealroom → , and Eight Capital Dealroom has a profile for this one. Try Dealroom → took part.",
+        "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
       },
       {
         "source_id": "FISRC-a25b58a6297cb344",
