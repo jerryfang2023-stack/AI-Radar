@@ -18,6 +18,7 @@ on:
           - keyword
           - gdelt
           - rss
+          - funding
       aggregate_dry_run:
         description: "After source collection, dry-run the unified aggregator from source artifacts."
         required: false
@@ -104,7 +105,7 @@ jobs:
           mkdir -p "agent-workflow/reports/source-runs/${RUN_DATE}"
           requested="${{ github.event.inputs.source || 'all' }}"
           if [ "$requested" = "all" ]; then
-            sources=(aihot keyword gdelt rss)
+            sources=(aihot keyword gdelt rss funding)
           else
             sources=("$requested")
           fi

@@ -43,5 +43,5 @@ npm run build:data
 开发版上传：
 
 ```powershell
-& 'C:\Program Files (x86)\Tencent\微信web开发者工具\cli.bat' upload --project . --version '0.5.5' --desc '<本次说明>'
+& 'C:\Program Files (x86)\Tencent\微信web开发者工具\cli.bat' upload --project . --version '0.5.6' --desc '<本次说明>'
 ```

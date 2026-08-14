@@ -381,5 +381,5 @@ test("AI Funding Tracker insights are enabled in the daily RSS collection lane",
     path.join(projectRoot, ".github/workflows/daily-persistent-assets-pr.yml"),
     "utf8",
   );
-  assert.match(workflow, /\(aihot keyword gdelt rss\)/u);
+  assert.match(workflow, /\(aihot keyword gdelt rss funding\)/u);
 });

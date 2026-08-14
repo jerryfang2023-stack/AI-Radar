@@ -75,7 +75,7 @@ if (args.has("help") || args.has("h")) {
       "  --rss-item-limit-per-source=8",
       "  --rss-max-age-days=30",
       "  --disable-tavily=true",
-      "  --source-only=aihot|keyword|gdelt|rss|china-rss",
+      "  --source-only=aihot|keyword|gdelt|rss|funding|china-rss",
       "  --use-source-artifacts=true",
       "  --targeted-source-artifacts=true",
       "  --market-region=CN",
@@ -3061,6 +3061,15 @@ function isRetryableGdeltError(message = "") {
 }
 
 async function fetchGdeltJsonWithRetry(url, attempts = 3) {
+  const cacheDir = path.join(sourceArtifactDir, "gdelt-cache");
+  const cacheFile = path.join(cacheDir, `${crypto.createHash("sha1").update(String(url)).digest("hex")}.json`);
+  if (fs.existsSync(cacheFile)) {
+    try {
+      return JSON.parse(fs.readFileSync(cacheFile, "utf8"));
+    } catch {
+      // Ignore a partial cache file and continue with the live endpoint.
+    }
+  }
   let lastError = null;
   for (let attempt = 1; attempt <= attempts; attempt += 1) {
     const now = Date.now();
@@ -3068,12 +3077,15 @@ async function fetchGdeltJsonWithRetry(url, attempts = 3) {
     if (waitMs > 0) await sleep(waitMs);
     gdeltLastRequestAt = Date.now();
     try {
-      return await fetchJson(url);
+      const data = await fetchJson(url);
+      fs.mkdirSync(cacheDir, { recursive: true });
+      fs.writeFileSync(cacheFile, `${JSON.stringify(data)}\n`, "utf8");
+      return data;
     } catch (error) {
       lastError = error;
       const message = error?.message || String(error || "");
       if (!isRetryableGdeltError(message) || attempt === attempts) break;
-      const backoffMs = gdeltMinIntervalMs * attempt;
+      const backoffMs = gdeltMinIntervalMs * (2 ** (attempt - 1)) + Math.floor(Math.random() * 1800);
       await sleep(backoffMs);
     }
   }
@@ -4619,6 +4631,60 @@ function collectChinaRSSFeeds() {
   return collectRSSFeeds({ sourceRegion: "CN" });
 }
 
+async function collectFundingSources() {
+  const fundingPattern = /(?:\bfunding\b|\bfunded\b|\braises?\b|\braised\b|\bpre[- ]?seed\b|\bseed round\b|\bseries [a-z]\b|融资|获投|完成.{0,8}轮)/iu;
+  const fixedQueries = [
+    'AI startup raises funding "2026"',
+    'artificial intelligence startup raised seed round',
+    'AI company "Series A" funding',
+    'AI company "Series B" funding',
+    'AI startup funding site:techcrunch.com',
+    'AI startup funding site:venturebeat.com',
+    'AI 融资 获投 完成 新一轮',
+    '人工智能 初创公司 融资 投资机构',
+  ];
+  const rss = await collectRSSFeeds();
+  const items = (rss.items || []).filter((item) => fundingPattern.test(`${item.title || ""} ${item.summary || ""}`));
+  const failures = [...(rss.failures || [])];
+  for (const query of fixedQueries) {
+    try {
+      const results = await searchLayeredWeb(query, 8);
+      for (const result of results) {
+        if (!fundingPattern.test(`${result.title || ""} ${result.snippet || ""}`)) continue;
+        items.push({
+          acquisition_channel: "funding-search",
+          original_id: result.id || result.url,
+          title: result.title || "",
+          summary: (result.snippet || "").slice(0, 500),
+          url: result.url || "",
+          source: result.source || "Funding专项搜索",
+          published_at: normalizePublishedAt(result.published_at, result.publishedAt, result.date),
+          category: "funding",
+          query_theme: "funding-dedicated",
+          keyword_group: "important_funding",
+        });
+      }
+    } catch (error) {
+      failures.push(`Funding search ${query}: ${error.message}`);
+    }
+  }
+  const deduped = [...new Map(items.map((item) => {
+    const key = String(item.url || "").replace(/[?#].*$/u, "").replace(/\/$/u, "").toLowerCase()
+      || `${String(item.title || "").toLowerCase()}|${item.published_at || ""}`;
+    return [key, item];
+  })).values()];
+  return {
+    items: deduped,
+    failures,
+    diagnostics: [{
+      source: "funding-dedicated",
+      rss_candidates: (rss.items || []).length,
+      funding_candidates: items.length,
+      query_count: fixedQueries.length,
+    }],
+  };
+}
+
 /** Extract the text content of an XML element by tag name. */
 function extractXmlField(xml, tag) {
   const match = xml.match(new RegExp(`<${tag}(?:\\s[^>]*)?>(.*?)<\\/${tag}>`, 'is'));
@@ -4642,6 +4708,10 @@ const sourceOnlyCollectors = {
   rss: {
     label: "RSS feeds",
     collect: collectRSSFeeds,
+  },
+  funding: {
+    label: "Funding dedicated sources",
+    collect: collectFundingSources,
   },
   "china-rss": {
     label: "China market RSS feeds",

@@ -12,6 +12,10 @@ import { productEntityDisplayType } from "../../../agent-workflow/product/produc
 import { classificationEntityIds } from "../../../agent-workflow/product/classification-entity-scope.mjs";
 import { investmentInstitutionIndexItem } from "../../../agent-workflow/product/investment-institution-v1.mjs";
 import { isCompletePublicEventTitle as isCompleteDataTitle } from "../../../agent-workflow/tools/event-public-title.mjs";
+import {
+  applyPublicZhTranslations,
+  readPublicTranslationRegistry,
+} from "../../../agent-workflow/tools/public-zh-translation-v1.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -783,6 +787,17 @@ export function buildFrontstageData(root = defaultRoot) {
     { meta: {}, institutions: [] },
   );
   const investors = safeArray(investmentInstitutionRegistry.institutions).map(investmentInstitutionIndexItem);
+  const translationRegistry = readPublicTranslationRegistry(root);
+  const translatedCompanies = entityCollections.companies.map((item) => applyPublicZhTranslations(item, translationRegistry, { entityType: "company" }));
+  const translatedProducts = entityCollections.products.map((item) => applyPublicZhTranslations(item, translationRegistry, { entityType: "product" }));
+  const translatedPeople = entityCollections.people.map((item) => applyPublicZhTranslations(item, translationRegistry, { entityType: "person" }));
+  const translatedInvestors = investors.map((item) => applyPublicZhTranslations(item, translationRegistry, { entityType: "institution" }));
+  const translatedEntityProfiles = entityHistory.profiles.map((item) => applyPublicZhTranslations(item, translationRegistry, { entityType: item.entityType || "entity" }));
+  const translatedInstitutionRegistry = {
+    ...investmentInstitutionRegistry,
+    institutions: safeArray(investmentInstitutionRegistry.institutions)
+      .map((item) => applyPublicZhTranslations(item, translationRegistry, { entityType: "institution" })),
+  };
 
   return {
     meta: {
@@ -799,13 +814,13 @@ export function buildFrontstageData(root = defaultRoot) {
     },
     eventTypes: eventTypeLabels,
     events: eventRecords,
-    companies: entityCollections.companies,
-    products: entityCollections.products,
-    people: entityCollections.people,
-    investors,
-    investmentInstitutionRegistry,
+    companies: translatedCompanies,
+    products: translatedProducts,
+    people: translatedPeople,
+    investors: translatedInvestors,
+    investmentInstitutionRegistry: translatedInstitutionRegistry,
     taxonomyNodes: entityHistory.taxonomyNodes,
-    entityProfiles: entityHistory.profiles,
+    entityProfiles: translatedEntityProfiles,
     entityRelationships: entityHistory.relationships,
     entityHistoryManifest: entityHistory.manifest,
     fde,

@@ -1,0 +1,35 @@
+{
+  "schema_version": "FUNDING-SOURCE-HEALTH-V1.0",
+  "generated_at": "2026-08-14T10:21:52.438Z",
+  "date": "2026-08-14",
+  "status": "passed",
+  "state": "healthy",
+  "last_checked_date": "2026-08-14",
+  "latest_financing_date": "2026-08-13",
+  "totals": {
+    "fetched": 67,
+    "funding_candidates": 67,
+    "verified_events": 4
+  },
+  "channels": [
+    {
+      "id": "funding",
+      "status": "collected",
+      "last_success_at": "2026-08-14T09:29:52.090Z",
+      "response_ms": null,
+      "http_status": "200",
+      "fetched_count": 67,
+      "latest_content_date": "2026-08-14",
+      "duplicate_rate": 0,
+      "stale_rate": 0.9851,
+      "funding_candidate_count": 67,
+      "verified_event_count": 2,
+      "failures": [
+        "RSS latent-space-podcast: fetch failed",
+        "RSS mad-podcast: fetch failed",
+        "RSS ai-and-i-podcast: fetch failed"
+      ],
+      "fallback_used": false
+    }
+  ]
+}

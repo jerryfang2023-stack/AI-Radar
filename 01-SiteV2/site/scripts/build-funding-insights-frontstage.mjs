@@ -15,6 +15,10 @@ import {
   writeJson,
 } from "../../../agent-workflow/tools/funding-insight-v1-utils.mjs";
 import { investmentInstitutionId } from "../../../agent-workflow/product/investment-institution-v1.mjs";
+import {
+  applyPublicZhTranslations,
+  readPublicTranslationRegistry,
+} from "../../../agent-workflow/tools/public-zh-translation-v1.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
 
@@ -424,7 +428,7 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
       if (!current || card.published_at > current.published_at) cardByEvent.set(card.triggered_by_event_id, card);
     }
   }
-  const cards = enrichFundingHistory(aggregateFundingRoundCards(
+  const rawCards = enrichFundingHistory(aggregateFundingRoundCards(
     [...cardByEvent.values()],
     entityIndex,
     entityDecisions,
@@ -516,7 +520,16 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
         },
       };
     });
+  const translationRegistry = readPublicTranslationRegistry(projectRoot);
+  const cards = rawCards.map((card) => applyPublicZhTranslations(card, translationRegistry, {
+    entityType: "funding_card",
+  }));
   const latestDate = bundles.map((bundle) => bundle.meta?.date || "").sort().at(-1) || "";
+  const latestFinancingDate = cards
+    .map((card) => card.financing?.announced_at || "")
+    .filter(Boolean)
+    .sort()
+    .at(-1) || "";
   const generatedAt = [
     ...bundles.map((bundle) => bundle.meta?.generated_at || ""),
     ...cards.map((card) => card.published_at || ""),
@@ -542,11 +555,17 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
       column_version: "FUNDING-INSIGHT-V1.5.0-china-market",
       taxonomy_version: "TAG-V4.1",
       latest_date: latestDate,
+      last_checked_date: latestDate,
+      latest_financing_date: latestFinancingDate,
       generated_at: generatedAt,
       card_count: cards.length,
       china_market_card_count: cards.filter((card) => card.market_scope?.market_region === "CN").length,
       duplicate_rounds_removed: cardByEvent.size - cards.length,
       automatic_publication: true,
+      translation_registry: {
+        schema_version: translationRegistry.schema_version || "",
+        generated_at: translationRegistry.generated_at || "",
+      },
       market_category_framework: {
         name: "CB Insights AI 100 2026",
         url: "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",

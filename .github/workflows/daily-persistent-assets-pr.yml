@@ -275,7 +275,7 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p "agent-workflow/reports/source-runs/${RUN_DATE}"
-          sources=(aihot keyword gdelt rss)
+          sources=(aihot keyword gdelt rss funding)
           pids=()
           logs=()
           source_timeout="${SOURCE_COLLECTION_TIMEOUT:-12m}"
@@ -481,8 +481,26 @@ jobs:
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-funding-insights.log"
           node agent-workflow/tools/assert-funding-insights-v1.mjs --date="${RUN_DATE}"
           node 01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs
+          npm run build:data-center-site
+          npm run translate:public-structured-fields
+          node 01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs
+          npm run build:data-center-site
           node agent-workflow/tools/assert-funding-insights-v1.mjs --all=true --frontstage=true
           npm run test:funding-insights
+
+      - name: Record funding supply health
+        id: funding-source-health
+        if: always()
+        continue-on-error: true
+        shell: bash
+        run: |
+          node agent-workflow/tools/build-funding-source-health-v1.mjs --date="${RUN_DATE}"
+
+      - name: Record targeted Funding Insights recovery state
+        if: always() && steps.data-center-v4-materialize.outcome == 'success' && steps.funding-insights.outcome != 'success'
+        shell: bash
+        run: |
+          echo "Funding projection is degraded. The dedicated Funding Insights workflow will retry the accepted event set after the canonical facts merge to main." >> "$GITHUB_STEP_SUMMARY"
 
       - name: Sync operations data after V4 production
         id: operations-data
@@ -695,12 +713,14 @@ jobs:
           fi
 
           if [ "${{ steps.operations-data.outcome }}" = "success" ]; then
+            stage_if_exists "01-SiteV2/site/data/funding-source-health-v1.json"
             stage_if_exists "01-SiteV2/site/data/collection-telemetry-v1.json"
             stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.json"
             stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.js"
             stage_if_exists "01-SiteV2/site/data/ops-console.json"
             stage_if_exists "01-SiteV2/site/data/ops-console.js"
           fi
+          stage_if_exists "01-SiteV2/content/11-databases/public-zh-translations-v1.json"
 
           if git diff --cached --quiet; then
             echo "No generated changes to commit."
