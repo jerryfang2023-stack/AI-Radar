@@ -1,9 +1,12 @@
 const LEVELS = [
-  { level: 1, name: "初识者", min: 0, next: 100 },
-  { level: 2, name: "观察者", min: 100, next: 200 },
-  { level: 3, name: "研究者", min: 200, next: 400 },
-  { level: 4, name: "洞察者", min: 400, next: 700 },
-  { level: 5, name: "共建者", min: 700, next: null },
+  { level: 1, name: "初识者", min: 0, next: 300 },
+  { level: 2, name: "观察者", min: 300, next: 1000 },
+  { level: 3, name: "研究者", min: 1000, next: 2500 },
+  { level: 4, name: "洞察者", min: 2500, next: 5000 },
+  { level: 5, name: "实践者", min: 5000, next: 10000 },
+  { level: 6, name: "共建者", min: 10000, next: 20000 },
+  { level: 7, name: "引领者", min: 20000, next: 50000 },
+  { level: 8, name: "领航者", min: 50000, next: null },
 ];
 
 function getLevel(lifetimePoints) {

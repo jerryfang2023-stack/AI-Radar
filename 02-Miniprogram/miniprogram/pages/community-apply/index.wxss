@@ -1,0 +1,18 @@
+.application-content { display: grid; gap: 24rpx; padding-top: 20rpx; padding-bottom: 170rpx; }
+.application-hero { display: grid; gap: 20rpx; padding: 36rpx; border-radius: 28rpx; background: #071827; color: #c8a766; font-size: 22rpx; }
+.application-hero > text:nth-child(2) { color: #fff; font-size: 42rpx; }
+.application-progress { display: grid; grid-template-columns: 1fr auto; gap: 20rpx; align-items: center; color: #fff; font-size: 21rpx; }
+.application-progress i { height: 7rpx; border-radius: 9rpx; background: linear-gradient(90deg,#c8a766 33%,#375269 33%); }
+.form-section { display: grid; gap: 14rpx; padding: 30rpx; border: 1rpx solid #e1ddd4; border-radius: 24rpx; background: #fff; }
+.section-index { color: #9b6d20; font: 600 20rpx/1.4 monospace; }
+.section-title { margin-bottom: 8rpx; color: #071827; font-size: 36rpx; }
+label { margin-top: 12rpx; color: #243746; font-size: 23rpx; }
+input, textarea { box-sizing: border-box; width: 100%; padding: 20rpx; border: 1rpx solid #d9dfe4; border-radius: 14rpx; background: #f8fafb; color: #071827; font-size: 25rpx; }
+input { height: 82rpx; }
+textarea { min-height: 150rpx; }
+.submit-button { margin-top: 4rpx; }
+.result-card { display: grid; gap: 20rpx; min-height: 390rpx; align-content: center; justify-items: center; padding: 44rpx; border-radius: 28rpx; background: #071827; color: #fff; text-align: center; }
+.result-kicker { color: #c8a766; font-size: 22rpx; }
+.result-title { font-size: 46rpx; }
+.result-points { color: #e4c77d; font-size: 38rpx; }
+.secondary-button { width: 220rpx; margin-top: 16rpx; }

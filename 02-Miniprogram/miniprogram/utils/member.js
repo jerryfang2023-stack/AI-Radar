@@ -8,6 +8,7 @@ const WALLET_KEY = "guanlan_growth_wallet_v1";
 const TASK_KEY = "guanlan_daily_tasks_v1";
 const BENEFIT_KEY = "guanlan_redeemed_benefits_v1";
 const MEMBERSHIP_KEY = "guanlan_membership_v1";
+const COMMUNITY_KEY = "guanlan_community_v1";
 
 const TASKS = [
   { id: "browse", title: "每日阅读 5 条情报", target: 5, reward: 2, unit: "条" },
@@ -88,19 +89,18 @@ function toggleFollow(id) {
 function getWallet() {
   const value = wx.getStorageSync(WALLET_KEY);
   if (value && typeof value.balance === "number" && Array.isArray(value.ledger)) {
-    const ledger = value.ledger.map((item) =>
-      item.id === "experience_starter" ? { ...item, label: "新用户积分" } : item
-    );
-    const wallet = { ...value, ledger };
+    const starterGrant = value.ledger.find((item) => item.id === "experience_starter");
+    const starterPoints = Math.max(0, Number(starterGrant?.points) || 0);
+    const wallet = starterGrant ? {
+      ...value,
+      balance: Math.max(0, value.balance - starterPoints),
+      lifetime: Math.max(0, (Number(value.lifetime) || 0) - starterPoints),
+      ledger: value.ledger.filter((item) => item.id !== "experience_starter"),
+    } : value;
     wx.setStorageSync(WALLET_KEY, wallet);
     return wallet;
   }
-  const createdAt = nowLabel();
-  const initial = {
-    balance: 128,
-    lifetime: 128,
-    ledger: [{ id: "experience_starter", label: "新用户积分", points: 128, type: "earn", createdAt }],
-  };
+  const initial = { balance: 0, lifetime: 0, ledger: [] };
   wx.setStorageSync(WALLET_KEY, initial);
   return initial;
 }
@@ -108,6 +108,23 @@ function getWallet() {
 function saveWallet(wallet) {
   wx.setStorageSync(WALLET_KEY, wallet);
   return wallet;
+}
+
+function syncWallet(wallet) {
+  if (!wallet || typeof wallet.balance !== "number" || typeof wallet.lifetime !== "number") return getWallet();
+  const current = getWallet();
+  return saveWallet({ ...current, balance: wallet.balance, lifetime: wallet.lifetime });
+}
+
+function getCommunity() {
+  const value = wx.getStorageSync(COMMUNITY_KEY);
+  return value && value.status ? value : { memberId: null, name: "", status: "none", statusLabel: "未入群", points: 0 };
+}
+
+function syncCommunity(community) {
+  if (!community || !community.status) return getCommunity();
+  wx.setStorageSync(COMMUNITY_KEY, community);
+  return community;
 }
 
 function getMembership() {
@@ -236,6 +253,9 @@ module.exports = {
   getFollowIds,
   toggleFollow,
   getWallet,
+  syncWallet,
+  getCommunity,
+  syncCommunity,
   getMembership,
   syncMembership,
   getTaskProgress,

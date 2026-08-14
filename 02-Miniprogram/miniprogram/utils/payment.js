@@ -108,5 +108,26 @@ async function fetchMembership() {
   return withToken((token) => apiRequest("/member/me", { token }));
 }
 
-module.exports = { API_ROOT, apiRequest, login, fetchMembership, purchaseMembership, queryOrder };
+async function linkCommunityPhone(code) {
+  return withToken((token) => apiRequest("/community/link-phone", { method: "POST", token, data: { code } }));
+}
 
+async function submitCommunityApplication(application) {
+  return withToken((token) => apiRequest("/community/applications", { method: "POST", token, data: application }));
+}
+
+async function redeemPoints(benefitId) {
+  return withToken((token) => apiRequest("/points/redeem", { method: "POST", token, data: { benefitId } }));
+}
+
+module.exports = {
+  API_ROOT,
+  apiRequest,
+  login,
+  fetchMembership,
+  purchaseMembership,
+  queryOrder,
+  linkCommunityPhone,
+  submitCommunityApplication,
+  redeemPoints,
+};

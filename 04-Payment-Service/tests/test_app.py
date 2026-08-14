@@ -16,6 +16,9 @@ class FakePayClient:
     def exchange_code(self, code):
         return {"openid": f"openid-{code}"}
 
+    def exchange_phone_number(self, code):
+        return {"phoneNumber": "13800138000"}
+
     def create_jsapi_order(self, **values):
         self.orders[values["order_no"]] = values
         return {"timeStamp": "1700000000", "nonceStr": "nonce", "package": "prepay_id=fake", "signType": "RSA", "paySign": "signature"}
@@ -37,6 +40,24 @@ class FakePayClient:
         return self.notification
 
 
+class FakeCommunityClient:
+    def __init__(self):
+        self.applications = []
+        self.member_points = 860
+
+    def lookup(self, phone):
+        if phone == "13800138000":
+            return {"found": True, "member": {"id": 42, "name": "现有社群成员", "status": "approved", "points": self.member_points}}
+        return {"found": False}
+
+    def status(self, member_id):
+        return {"member": {"id": member_id, "name": "现有社群成员", "status": "approved", "points": self.member_points}}
+
+    def submit_application(self, payload):
+        self.applications.append(payload)
+        return {"member": {"id": 77, "name": payload["name"], "status": "pending", "points": 0}}
+
+
 @pytest.fixture()
 def client(tmp_path):
     fake = FakePayClient()
@@ -46,7 +67,7 @@ def client(tmp_path):
         "DATABASE_PATH": str(tmp_path / "payments.db"),
         "WECHAT_APP_ID": "wx34133741173154d4",
         "WECHAT_PAY_MCH_ID": "1116466183",
-    }, pay_client=fake)
+    }, pay_client=fake, community_client=FakeCommunityClient())
     return app.test_client()
 
 
@@ -127,3 +148,44 @@ def test_verified_notification_is_idempotent(client):
     assert second.status_code == 204
     result = client.get(f"/api/v1/pay/orders/{order_no}", headers=auth(token)).get_json()
     assert result["order"]["status"] == "PAID"
+
+
+def test_existing_community_member_links_by_verified_phone_and_imports_all_history(client):
+    token = login(client, "existing-member")
+    response = client.post("/api/v1/community/link-phone", headers=auth(token), json={"code": "phone-code"})
+    assert response.status_code == 200
+    payload = response.get_json()
+    assert payload["phoneMasked"] == "138****8000"
+    assert payload["community"] == {"memberId": 42, "name": "现有社群成员", "status": "joined", "statusLabel": "已入群", "points": 860}
+    assert payload["wallet"] == {"balance": 860, "lifetime": 860}
+
+    repeated = client.post("/api/v1/community/link-phone", headers=auth(token), json={"code": "phone-code"}).get_json()
+    assert repeated["wallet"] == {"balance": 860, "lifetime": 860}
+
+    client.application.community_client.member_points = 1060
+    refreshed = client.get("/api/v1/member/me", headers=auth(token)).get_json()
+    assert refreshed["community"]["points"] == 1060
+    assert refreshed["wallet"] == {"balance": 1060, "lifetime": 1060}
+
+
+def test_point_redemption_extends_membership_without_reducing_lifetime(client):
+    token = login(client, "redeemer")
+    client.post("/api/v1/community/link-phone", headers=auth(token), json={"code": "phone-code"})
+    response = client.post("/api/v1/points/redeem", headers=auth(token), json={"benefitId": "membership_7d"})
+    assert response.status_code == 200
+    payload = response.get_json()
+    assert payload["wallet"] == {"balance": 560, "lifetime": 860}
+    assert payload["membership"]["active"] is True
+
+
+def test_native_application_is_forwarded_to_existing_member_management(client):
+    token = login(client, "applicant")
+    response = client.post("/api/v1/community/applications", headers=auth(token), json={
+        "name": "新申请人", "phone": "13900139000", "wechat": "new_member",
+        "city": "上海", "role": "Founder / 创业者", "industry": "企业服务",
+        "skills": "产品与交付", "project": "AI 企业服务", "needs": "寻找客户",
+        "direction": "企业 AI", "perspective": "从真实交付开始验证"
+    })
+    assert response.status_code == 201
+    assert response.get_json()["community"]["status"] == "pending"
+    assert client.application.community_client.applications[0]["source"] == "miniprogram"

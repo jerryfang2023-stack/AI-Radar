@@ -6,9 +6,11 @@ const require = createRequire(import.meta.url);
 const { getLevel, applyReward, applyRedemption } = require("../miniprogram/utils/growth-model.js");
 
 test("growth levels preserve boundaries and progress", () => {
-  assert.deepEqual(getLevel(128), { level: 2, name: "观察者", min: 100, next: 200, progress: 28, remaining: 72 });
-  assert.equal(getLevel(700).level, 5);
-  assert.equal(getLevel(700).progress, 100);
+  assert.deepEqual(getLevel(0), { level: 1, name: "初识者", min: 0, next: 300, progress: 0, remaining: 300 });
+  assert.deepEqual(getLevel(860), { level: 2, name: "观察者", min: 300, next: 1000, progress: 80, remaining: 140 });
+  assert.equal(getLevel(1000).name, "研究者");
+  assert.equal(getLevel(50000).level, 8);
+  assert.equal(getLevel(50000).progress, 100);
 });
 
 test("rewards add to balance and lifetime", () => {

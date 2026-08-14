@@ -19,6 +19,9 @@ function loadPaymentWx({ orderStatus = "PAID", paymentFailure = null } = {}) {
         orderNo: "GL001",
         payment: { timeStamp: "1", nonceStr: "n", package: "prepay_id=x", signType: "RSA", paySign: "s" },
       } });
+      if (url.endsWith("/community/link-phone")) return success({ statusCode: 200, data: { community: { status: "joined", points: 860 }, wallet: { balance: 860, lifetime: 860 } } });
+      if (url.endsWith("/community/applications")) return success({ statusCode: 201, data: { community: { status: "pending" } } });
+      if (url.endsWith("/points/redeem")) return success({ statusCode: 200, data: { wallet: { balance: 560, lifetime: 860 }, membership: { status: "member" } } });
       return success({ statusCode: 200, data: { order: { status: orderStatus }, membership: { status: "member" } } });
     },
     requestPayment: ({ success, fail }) => paymentFailure ? fail({ errMsg: paymentFailure }) : success({ errMsg: "requestPayment:ok" }),
@@ -41,3 +44,14 @@ test("does not confirm membership when the user cancels payment", async () => {
   assert.equal(requests.some((item) => item.url.includes("/pay/orders/")), false);
 });
 
+test("links an existing member, submits native applications, and redeems on the server", async () => {
+  const { payment, requests } = loadPaymentWx();
+  const linked = await payment.linkCommunityPhone("phone-code");
+  assert.equal(linked.community.status, "joined");
+  assert.equal(linked.wallet.lifetime, 860);
+
+  const application = { name: "申请人", phone: "13900139000" };
+  assert.equal((await payment.submitCommunityApplication(application)).community.status, "pending");
+  assert.equal((await payment.redeemPoints("membership_7d")).wallet.balance, 560);
+  assert.deepEqual(requests.find((item) => item.url.endsWith("/community/applications")).data, application);
+});

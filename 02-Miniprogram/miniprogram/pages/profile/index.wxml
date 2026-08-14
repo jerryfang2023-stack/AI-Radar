@@ -13,7 +13,7 @@
     <view class="growth-card" bindtap="openGrowth">
       <view class="growth-top">
         <view>
-          <text class="growth-kicker">本周情报成长</text>
+          <text class="growth-kicker">会员等级</text>
           <text class="growth-level">L{{growth.level.level}} {{growth.level.name}}</text>
         </view>
         <view class="points-block">
@@ -27,12 +27,25 @@
         <text wx:else>已到最高等级</text>
       </view>
       <view class="progress-track"><view class="progress-value" style="width: {{growth.level.progress}}%;"></view></view>
-      <view class="growth-action">继续研究，解锁更多情报权益</view>
+      <view class="growth-action">查看积分明细与会员兑换</view>
     </view>
 
     <view class="membership-card" bindtap="openMembership">
       <view class="membership-copy"><view><text class="membership-kicker">会员权益</text><text class="membership-status">{{growth.membership.statusLabel}}</text></view><text wx:if="{{growth.membership.active}}">有效至 {{growth.membership.activeUntil}}</text><text wx:else>浏览全部栏目</text></view>
       <view class="membership-action">{{growth.membership.active ? '续费会员' : '开通会员'}}<text>›</text></view>
+    </view>
+
+    <view class="community-card">
+      <view class="community-mark">观</view>
+      <view class="community-copy" bindtap="openCommunity">
+        <text>观澜社群</text>
+        <text class="community-status">{{community.status === 'joined' ? '已入群' : community.statusLabel}}</text>
+      </view>
+      <view wx:if="{{community.status === 'joined'}}" class="community-action" bindtap="openCommunity">
+        <text class="community-points mono">{{community.points}}</text><text>社群积分</text>
+      </view>
+      <view wx:elif="{{community.status !== 'none'}}" class="community-action" bindtap="openCommunity">{{community.statusLabel}} <text>›</text></view>
+      <button wx:else class="community-link-button" open-type="getPhoneNumber" bindgetphonenumber="linkCommunity" loading="{{linkingCommunity}}">申请加入</button>
     </view>
 
     <view class="section-heading"><text class="serif">成长任务</text><text bindtap="openGrowth">查看明细</text></view>
