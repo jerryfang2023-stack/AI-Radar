@@ -13,6 +13,8 @@ const membershipSource = fs.readFileSync("miniprogram/pages/membership/index.wxm
 const membershipModelSource = fs.readFileSync("miniprogram/utils/membership-model.js", "utf8");
 const profileSource = fs.readFileSync("miniprogram/pages/profile/index.wxml", "utf8");
 const profileLogic = fs.readFileSync("miniprogram/pages/profile/index.js", "utf8");
+const profileEditSource = fs.readFileSync("miniprogram/pages/profile-edit/index.wxml", "utf8");
+const profileEditLogic = fs.readFileSync("miniprogram/pages/profile-edit/index.js", "utf8");
 const customTabBarSource = fs.readFileSync("miniprogram/custom-tab-bar/index.wxml", "utf8");
 const customTabBarStyles = fs.readFileSync("miniprogram/custom-tab-bar/index.wxss", "utf8");
 const customTabBarLogic = fs.readFileSync("miniprogram/custom-tab-bar/index.js", "utf8");
@@ -85,6 +87,18 @@ test("keeps observer growth primary and membership status compact on profile", (
   assert.match(profileSource, /class="text-link">设置</u);
   assert.doesNotMatch(profileSource, /right-label="设置"/u);
   assert.doesNotMatch(profileSource, /个人信息与数据管理|class="settings-card|class="local-note/u);
+});
+
+test("binds phone numbers through the account service without internal-facing profile copy", () => {
+  const profileEditContract = `${profileEditSource}\n${profileEditLogic}`;
+  assert.match(profileEditSource, /资料设置/u);
+  assert.match(profileEditSource, /手机号/u);
+  assert.match(profileEditSource, /点击头像更换/u);
+  assert.match(profileEditLogic, /bindPhoneNumber\(code\)/u);
+  assert.match(profileEditLogic, /手机号绑定成功/u);
+  for (const removedCopy of ["微信号", "不可读取", "隐私说明", "等待服务端完成绑定", "当前预览版", "授权凭证已取得", "生产"] ) {
+    assert.doesNotMatch(profileEditContract, new RegExp(removedCopy, "u"));
+  }
 });
 
 test("renders the text-only bottom navigation as connected segmented buttons", () => {

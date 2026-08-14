@@ -2,6 +2,8 @@ import os
 import math
 import secrets
 import sqlite3
+import hashlib
+import hmac
 from contextlib import closing
 from datetime import datetime, timedelta, timezone
 from functools import wraps
@@ -72,6 +74,9 @@ def create_app(test_config=None, *, pay_client=None):
                     openid TEXT NOT NULL UNIQUE,
                     unionid TEXT,
                     invite_code TEXT,
+                    phone_hash TEXT,
+                    phone_masked TEXT,
+                    phone_bound_at TEXT,
                     trial_started_at TEXT NOT NULL,
                     trial_ends_at TEXT NOT NULL,
                     member_ends_at TEXT,
@@ -134,7 +139,14 @@ def create_app(test_config=None, *, pay_client=None):
             columns = {row["name"] for row in conn.execute("PRAGMA table_info(users)")}
             if "invite_code" not in columns:
                 conn.execute("ALTER TABLE users ADD COLUMN invite_code TEXT")
+            if "phone_hash" not in columns:
+                conn.execute("ALTER TABLE users ADD COLUMN phone_hash TEXT")
+            if "phone_masked" not in columns:
+                conn.execute("ALTER TABLE users ADD COLUMN phone_masked TEXT")
+            if "phone_bound_at" not in columns:
+                conn.execute("ALTER TABLE users ADD COLUMN phone_bound_at TEXT")
             conn.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_users_invite_code ON users(invite_code)")
+            conn.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_users_phone_hash ON users(phone_hash)")
             conn.commit()
 
     init_db()
@@ -156,6 +168,22 @@ def create_app(test_config=None, *, pay_client=None):
             "remainingDays": max(0, math.ceil((active_end - now).total_seconds() / 86400)),
             "activeUntil": active_end.date().isoformat(),
         }
+
+    def public_profile(row):
+        return {"phoneMasked": row["phone_masked"] or ""}
+
+    def mask_phone(phone_number):
+        value = "".join(character for character in str(phone_number) if character.isdigit())
+        if len(value) < 7:
+            return ""
+        return f"{value[:3]}****{value[-4:]}"
+
+    def phone_hash(phone_number):
+        return hmac.new(
+            app.config["SECRET_KEY"].encode("utf-8"),
+            str(phone_number).encode("utf-8"),
+            hashlib.sha256,
+        ).hexdigest()
 
     def user_by_id(conn, user_id):
         return conn.execute("SELECT * FROM users WHERE id=?", (user_id,)).fetchone()
@@ -300,6 +328,7 @@ def create_app(test_config=None, *, pay_client=None):
             return jsonify(
                 token=token_for(user["id"]),
                 membership=membership(user),
+                profile=public_profile(user),
                 isNewUser=is_new_user,
                 invitationAccepted=invitation_accepted,
                 inviteCode=own_invite_code,
@@ -309,7 +338,33 @@ def create_app(test_config=None, *, pay_client=None):
     @auth_required
     def member_me():
         with closing(db()) as conn:
-            return jsonify(membership=membership(user_by_id(conn, g.user_id)))
+            user = user_by_id(conn, g.user_id)
+            return jsonify(membership=membership(user), profile=public_profile(user))
+
+    @app.post("/api/v1/member/phone")
+    @auth_required
+    def bind_member_phone():
+        payload = request.get_json(silent=True) or {}
+        code = str(payload.get("code") or "").strip()
+        if not code or len(code) > 256:
+            return jsonify(error={"code": "INVALID_PHONE_CODE", "message": "手机号授权凭证无效"}), 400
+        phone = app.pay_client.exchange_phone_code(code)
+        number = "".join(character for character in str(phone.get("phoneNumber") or "") if character.isdigit())
+        masked = mask_phone(number)
+        if not masked:
+            return jsonify(error={"code": "INVALID_PHONE_NUMBER", "message": "手机号格式无效"}), 400
+        now = utcnow()
+        try:
+            with closing(db()) as conn:
+                conn.execute(
+                    "UPDATE users SET phone_hash=?, phone_masked=?, phone_bound_at=?, updated_at=? WHERE id=?",
+                    (phone_hash(number), masked, iso(now), iso(now), g.user_id),
+                )
+                conn.commit()
+                user = user_by_id(conn, g.user_id)
+                return jsonify(profile=public_profile(user))
+        except sqlite3.IntegrityError:
+            return jsonify(error={"code": "PHONE_ALREADY_BOUND", "message": "该手机号已绑定其他账号"}), 409
 
     @app.post("/api/v1/invites/visit")
     def record_invite_visit():

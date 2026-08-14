@@ -1,11 +1,29 @@
 const { getProfile, saveProfile, getProfileCompletion } = require("../../utils/member.js");
+const { bindPhoneNumber, fetchMembership } = require("../../utils/payment.js");
 
 Page({
-  data: { profile: {}, nickname: "", profileCompletion: 0 },
+  data: { profile: {}, nickname: "", profileCompletion: 0, bindingPhone: false },
 
   onShow() {
+    this.refreshProfile();
+    this.loadRemoteProfile();
+  },
+
+  refreshProfile() {
     const profile = getProfile();
     this.setData({ profile, nickname: profile.nickname, profileCompletion: getProfileCompletion(profile) });
+  },
+
+  async loadRemoteProfile() {
+    try {
+      const result = await fetchMembership();
+      if (result.profile?.phoneMasked) {
+        saveProfile({ phoneMasked: result.profile.phoneMasked, phonePending: false });
+        this.refreshProfile();
+      }
+    } catch (error) {
+      // Keep locally saved public profile available when the network is unavailable.
+    }
   },
 
   chooseAvatar(event) {
@@ -14,8 +32,8 @@ Page({
     wx.getFileSystemManager().saveFile({
       tempFilePath,
       success: ({ savedFilePath }) => {
-        const profile = saveProfile({ avatarUrl: savedFilePath });
-        this.setData({ profile, profileCompletion: getProfileCompletion(profile) });
+        saveProfile({ avatarUrl: savedFilePath });
+        this.refreshProfile();
       },
       fail: () => wx.showToast({ title: "头像保存失败，请重试", icon: "none" }),
     });
@@ -29,23 +47,28 @@ Page({
       wx.showToast({ title: "请输入昵称", icon: "none" });
       return;
     }
-    const profile = saveProfile({ nickname });
-    this.setData({ profile, nickname: profile.nickname, profileCompletion: getProfileCompletion(profile) });
+    saveProfile({ nickname });
+    this.refreshProfile();
     wx.showToast({ title: "资料已保存", icon: "success" });
   },
 
-  getPhoneNumber(event) {
-    if (!event.detail.code) {
+  async getPhoneNumber(event) {
+    const code = event.detail.code;
+    if (!code) {
       wx.showToast({ title: "未获得手机号授权", icon: "none" });
       return;
     }
-    const profile = saveProfile({ phonePending: true });
-    this.setData({ profile });
-    wx.showModal({
-      title: "授权凭证已取得",
-      content: "为保护手机号，授权码不会保存在本机。接入服务端后，将由服务端换取并保存脱敏手机号。",
-      showCancel: false,
-      confirmColor: "#0D355C",
-    });
+    if (this.data.bindingPhone) return;
+    this.setData({ bindingPhone: true });
+    try {
+      const result = await bindPhoneNumber(code);
+      saveProfile({ phoneMasked: result.profile.phoneMasked, phonePending: false });
+      this.refreshProfile();
+      wx.showToast({ title: "手机号绑定成功", icon: "success" });
+    } catch (error) {
+      wx.showToast({ title: error.message || "手机号绑定失败，请重试", icon: "none" });
+    } finally {
+      this.setData({ bindingPhone: false });
+    }
   },
 });

@@ -111,6 +111,11 @@ async function fetchMembership() {
   return withToken((token) => apiRequest("/member/me", { token }));
 }
 
+async function bindPhoneNumber(code) {
+  if (!code) throw new Error("未获得手机号授权");
+  return withToken((token) => apiRequest("/member/phone", { method: "POST", token, data: { code } }));
+}
+
 async function fetchInviteSummary() {
   return withToken((token) => apiRequest("/invites/me", { token }));
 }
@@ -120,4 +125,4 @@ async function recordInviteVisit(inviteCode, visitorKey) {
   return apiRequest("/invites/visit", { method: "POST", data: { inviteCode, visitorKey } });
 }
 
-module.exports = { API_ROOT, apiRequest, login, fetchMembership, fetchInviteSummary, recordInviteVisit, purchaseMembership, queryOrder };
+module.exports = { API_ROOT, apiRequest, login, fetchMembership, bindPhoneNumber, fetchInviteSummary, recordInviteVisit, purchaseMembership, queryOrder };

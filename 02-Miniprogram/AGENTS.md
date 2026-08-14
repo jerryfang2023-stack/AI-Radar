@@ -31,6 +31,7 @@ This is the native WeChat Mini Program frontstage for Funding Insights.
 - Membership is priced at CNY 30/month, CNY 168/six months, or CNY 300/year and grants full browsing across all columns. New users receive a seven-day trial. Community activity points can redeem seven-day or thirty-day membership extensions; never present a successful payment before the WeChat Pay and account service confirm it.
 - A valid first-time registration attributed to an invite rewards the inviter with 300 activity points; award it only after backend registration attribution confirms the event, and count each new user once.
 - Shared invitation pages must distinguish inviter and invitee views, keep registration visible, provide a tab fallback for direct-entry users, and show server-confirmed visit, registration, and reward totals to the inviter.
+- Phone authorization must exchange the one-time WeChat code through the account service immediately and return only a masked number to the Mini Program. Never persist or expose raw phone numbers, authorization codes, pending-backend copy, WeChat-ID limitations, preview/production notes, or internal privacy implementation language in the public profile UI.
 
 ## Validation
 

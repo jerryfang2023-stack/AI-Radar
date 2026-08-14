@@ -1,4 +1,5 @@
 from datetime import datetime, timezone
+import sqlite3
 
 import pytest
 
@@ -15,6 +16,10 @@ class FakePayClient:
 
     def exchange_code(self, code):
         return {"openid": f"openid-{code}"}
+
+    def exchange_phone_code(self, code):
+        assert code
+        return {"phoneNumber": "13800138000", "countryCode": "86"}
 
     def create_jsapi_order(self, **values):
         self.orders[values["order_no"]] = values
@@ -78,6 +83,34 @@ def test_login_creates_seven_day_trial(client):
     membership = response.get_json()["membership"]
     assert membership["status"] == "trial"
     assert membership["remainingDays"] == 7
+
+
+def test_phone_authorization_binds_masked_number_without_storing_plaintext(client):
+    token = login(client, "phone-user")
+    response = client.post("/api/v1/member/phone", headers=auth(token), json={"code": "phone-code"})
+    assert response.status_code == 200
+    assert response.get_json()["profile"] == {"phoneMasked": "138****8000"}
+
+    profile = client.get("/api/v1/member/me", headers=auth(token)).get_json()["profile"]
+    assert profile == {"phoneMasked": "138****8000"}
+
+    with sqlite3.connect(client.application.config["DATABASE_PATH"]) as conn:
+        phone_hash, phone_masked = conn.execute(
+            "SELECT phone_hash, phone_masked FROM users WHERE openid=?",
+            ("openid-phone-user",),
+        ).fetchone()
+    assert phone_masked == "138****8000"
+    assert len(phone_hash) == 64
+    assert phone_hash != "13800138000"
+
+
+def test_phone_cannot_be_bound_to_two_accounts(client):
+    first_token = login(client, "phone-owner")
+    second_token = login(client, "phone-other")
+    assert client.post("/api/v1/member/phone", headers=auth(first_token), json={"code": "first"}).status_code == 200
+    response = client.post("/api/v1/member/phone", headers=auth(second_token), json={"code": "second"})
+    assert response.status_code == 409
+    assert response.get_json()["error"]["code"] == "PHONE_ALREADY_BOUND"
 
 
 def test_invite_visit_registration_and_reward_stats_are_idempotent(client):

@@ -6,4 +6,5 @@
 - A client payment callback is not proof of payment. Grant entitlement only after a verified WeChat Pay notification or a verified order query.
 - Payment notifications must be signature-verified, decrypted, amount-checked, AppID/MchID-checked, and idempotent.
 - SQLite is acceptable for the initial scale. Use transactions for order and entitlement updates.
+- Phone authorization codes must be exchanged server-side and never persisted. Store only a masked display value and an HMAC digest keyed by the service secret; do not store or return raw phone numbers.
 - Run `python -m pytest -q` before deployment.

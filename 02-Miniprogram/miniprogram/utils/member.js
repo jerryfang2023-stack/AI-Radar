@@ -49,8 +49,8 @@ function getProfile() {
     nickname: "观澜用户",
     avatarUrl: "/assets/brand/app-icon-light.svg",
     phoneMasked: "",
-    phonePending: false,
     ...value,
+    phonePending: false,
   };
 }
 
