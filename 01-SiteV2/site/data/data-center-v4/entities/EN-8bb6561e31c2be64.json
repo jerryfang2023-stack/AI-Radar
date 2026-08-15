@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-15T00:27:23.598Z",
+    "latestDataDate": "2026-08-15",
+    "currentDate": "2026-08-15",
+    "eventCount": 2132,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-8bb6561e31c2be64",
+    "name": "Microsoft Copilot",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-9ba5eaa49fa31366"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-13",
+    "lastSeen": "2026-08-15",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-9ba5eaa49fa31366"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-9ba5eaa49fa31366",
+        "dataDate": "2026-08-15",
+        "date": "2026-08-13",
+        "eventType": "service_change",
+        "eventTypeLabel": "服务变更",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "微软的类Clippy角色Mico不再是Copilot的代言形象",
+        "displayTags": [],
+        "entityIds": [
+          "EN-8bb6561e31c2be64",
+          "EN-9fbf261b62c1d7c0",
+          "EN-6dfec3d723d55bb0"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

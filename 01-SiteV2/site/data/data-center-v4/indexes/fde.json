@@ -5,50 +5,100 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-14T00:23:40.398Z",
-    "latestDataDate": "2026-08-14",
-    "currentDate": "2026-08-14",
-    "eventCount": 2102,
+    "generatedAt": "2026-08-15T00:27:23.598Z",
+    "latestDataDate": "2026-08-15",
+    "currentDate": "2026-08-15",
+    "eventCount": 2132,
     "quarantinedEventCount": 16
   },
   "fde": [
     {
-      "id": "FDE-48afc88dde234ab1",
-      "eventId": "EV-d04d03b37046f0ad",
-      "dataDate": "2026-08-14",
+      "id": "FDE-6069222bb5a9d0fe",
+      "eventId": "EV-407b77337866e047",
+      "dataDate": "2026-08-15",
+      "date": "2026-08-15",
+      "title": "Cars24 推出 Deployment Inc，印度首家前沿部署 AI 公司",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "AI company | Business News This Week",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Gurugram, Aug 10: Cars24 announced the launch of Deployment Inc, an independent enterprise AI company that will help organisations design, implement and operate AI systems across critical business workflows.",
+        "Deployment Inc will give customers one accountable team. Its forward-deployed engineers, or FDEs, will work from inside the customer&rsquo;s organisation. They will begin with a specific workflow and an agreed business metric, connect the necessary models to the company&rsquo;s data and systems, deploy the new workflow against real traffic and remain involved until it operates reliably at scale.",
+        "Deployment Inc plans to hire 50 engineers this month, primarily forward-deployed engineers, alongside AI strategy and go-to-market professionals. The company is also opening its first set of engagements to enterprises seeking to redesign critical operations around AI.",
+        "Cars24 is investing an initial $5 million in Deployment Inc and will become its first customer. Deployment Inc will operate as an independent company serving enterprises across industries, including financial services, consumer businesses, healthcare, manufacturing, logistics and technology."
+      ],
+      "outcomes": [],
+      "metrics": [
+        "$5 million"
+      ],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://businessnewsthisweek.com/business/cars24-launches-deployment-inc-indias-first-forward-deployed-ai-company",
+      "entityIds": [
+        "EN-e871a24e54933631"
+      ]
+    },
+    {
+      "id": "FDE-723b882e385198d1",
+      "eventId": "EV-4f0f7d0b05d34598",
+      "dataDate": "2026-08-15",
       "date": "2026-08-13",
-      "title": "IBM 与 OpenAI 达成合作，拓展企业 AI 业务",
+      "title": "甲骨文与AWS深化战略合作，企业采用Oracle AI Database@AWS加速",
       "stage": "announced",
       "stageLabel": "已公布",
-      "customer": "IBM",
-      "vendor": "OpenAI",
-      "industry": "enterprise AI",
-      "useCase": "拓展企业 AI 业务",
-      "reportedNeed": "competition for corporate AI spending intensifies",
+      "customer": "Oracle",
+      "vendor": "Amazon",
+      "industry": "未披露",
+      "useCase": "as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
+      "reportedNeed": "未披露",
       "deliveryComponents": [],
-      "outcomes": [],
+      "outcomes": [
+        "accelerating customer migration to Oracle AI Database@AWS",
+        "lower-cost path to migrate Oracle databases and integrate them with AWS analytics and AI services",
+        "customers of any size can modernize applications faster, unlock new insights, and build AI-powered applications on the data that runs their business"
+      ],
       "metrics": [],
       "undisclosedFields": [
+        "industry",
+        "workflow_before",
         "workflow_after",
+        "delivery_model",
         "team_composition",
+        "reported_need",
         "systems_integrated",
         "data_requirements",
         "governance_controls",
         "reported_delivery_components"
       ],
       "tags": [],
-      "sourceUrl": "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push",
+      "sourceUrl": "https://oracle.com/news/announcement/oracle-and-aws-deepen-strategic-collaboration-as-enterprise-adoption-of-oracle-ai-database-at-aws-accelerates-2026-08-13",
       "entityIds": [
-        "EN-916a98f0fa2a39af",
-        "EN-4c06fff8651d4ff4",
-        "EN-7d3194f79e645c42",
-        "EN-c70eca6b0f88f44d"
+        "EN-9202af6ce925b26a",
+        "EN-ac6aafe583c90b2d",
+        "EN-cbc62794911ff31b"
       ]
     },
     {
       "id": "FDE-ed781e27a7b9458e",
       "eventId": "EV-129ffa6be41bb485",
-      "dataDate": "2026-08-14",
+      "dataDate": "2026-08-15",
       "date": "2026-08-13",
       "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
       "stage": "announced",
@@ -92,6 +142,39 @@
       "entityIds": [
         "EN-916a98f0fa2a39af",
         "EN-7d3194f79e645c42"
+      ]
+    },
+    {
+      "id": "FDE-48afc88dde234ab1",
+      "eventId": "EV-d04d03b37046f0ad",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "title": "IBM 与 OpenAI 达成合作，拓展企业 AI 业务",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "IBM",
+      "vendor": "OpenAI",
+      "industry": "enterprise AI",
+      "useCase": "拓展企业 AI 业务",
+      "reportedNeed": "competition for corporate AI spending intensifies",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_after",
+        "team_composition",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components"
+      ],
+      "tags": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push",
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-4c06fff8651d4ff4",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
       ]
     },
     {
@@ -5692,13 +5775,113 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-81986ef7de5a9090",
+      "implementationKey": "81986ef7de5a9090",
+      "eventId": "EV-407b77337866e047",
+      "eventIds": [
+        "EV-407b77337866e047"
+      ],
+      "dataDate": "2026-08-15",
+      "date": "2026-08-15",
+      "title": "未披露 × 未披露：AI company | Business News This Week",
+      "stage": "production",
+      "stageLabel": "production",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "AI company | Business News This Week",
+      "workflow": "Deployment Inc will give customers one accountable team. Its forward-deployed engineers, or FDEs, will work from inside the customer&rsquo;s organisation. They will begin with a specific workflow and an agreed business metric, connect the necessary models to the company&rsquo;s data and systems, deploy the new workflow against real traffic and remain involved until it operates reliably at scale.",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-5a0752a4f17c5b8e",
+          "type": "implementation_update",
+          "stage": "production",
+          "date": "2026-08-15",
+          "dataDate": "2026-08-15",
+          "eventId": "EV-407b77337866e047",
+          "eventTitle": "Cars24 推出 Deployment Inc，印度首家前沿部署 AI 公司",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://businessnewsthisweek.com/business/cars24-launches-deployment-inc-indias-first-forward-deployed-ai-company",
+      "entityIds": [
+        "EN-e871a24e54933631"
+      ]
+    },
+    {
+      "id": "FDED-4402094ebe0b4363",
+      "implementationKey": "4402094ebe0b4363",
+      "eventId": "EV-4f0f7d0b05d34598",
+      "eventIds": [
+        "EV-4f0f7d0b05d34598"
+      ],
+      "dataDate": "2026-08-15",
+      "date": "2026-08-13",
+      "title": "Oracle × Amazon：as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Oracle",
+      "vendor": "Amazon",
+      "industry": "未披露",
+      "useCase": "as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [
+        "accelerating customer migration to Oracle AI Database@AWS",
+        "lower-cost path to migrate Oracle databases and integrate them with AWS analytics and AI services",
+        "customers of any size can modernize applications faster, unlock new insights, and build AI-powered applications on the data that runs their business"
+      ],
+      "observationCount": 1,
+      "completeness": 0.625,
+      "completenessPercent": 63,
+      "missingFields": [
+        "industry",
+        "workflow",
+        "systems_integrated"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-8f8efc25f77e08a7",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-13",
+          "dataDate": "2026-08-15",
+          "eventId": "EV-4f0f7d0b05d34598",
+          "eventTitle": "甲骨文与AWS深化战略合作，企业采用Oracle AI Database@AWS加速",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://oracle.com/news/announcement/oracle-and-aws-deepen-strategic-collaboration-as-enterprise-adoption-of-oracle-ai-database-at-aws-accelerates-2026-08-13",
+      "entityIds": [
+        "EN-9202af6ce925b26a",
+        "EN-ac6aafe583c90b2d",
+        "EN-cbc62794911ff31b"
+      ]
+    },
+    {
       "id": "FDED-5bc72342f3066892",
       "implementationKey": "5bc72342f3066892",
       "eventId": "EV-129ffa6be41bb485",
       "eventIds": [
         "EV-129ffa6be41bb485"
       ],
-      "dataDate": "2026-08-14",
+      "dataDate": "2026-08-15",
       "date": "2026-08-13",
       "title": "IBM × OpenAI：OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
       "stage": "procurement",
@@ -5712,7 +5895,7 @@
         "ChatGPT"
       ],
       "outcomes": [],
-      "observationCount": 1,
+      "observationCount": 2,
       "completeness": 0.625,
       "completenessPercent": 63,
       "missingFields": [
@@ -5721,6 +5904,17 @@
         "reported_outcomes"
       ],
       "timeline": [
+        {
+          "observationId": "FDEO-f504ab59faffb5e7",
+          "type": "procurement",
+          "stage": "procurement",
+          "date": "2026-08-13",
+          "dataDate": "2026-08-15",
+          "eventId": "EV-129ffa6be41bb485",
+          "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+          "claimCount": 4,
+          "sourceCount": 1
+        },
         {
           "observationId": "FDEO-52e02e22bcd8cd7f",
           "type": "procurement",
@@ -7014,42 +7208,38 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-08-14",
-      "funnel_id": "LF-f6a8cb56fc68c889",
+      "data_date": "2026-08-15",
+      "funnel_id": "LF-8d4b47fdb1dde5f8",
       "lens": "fde",
-      "date": "2026-08-14",
+      "date": "2026-08-15",
       "monitoring_paths": [
         "fde_customer_case",
-        "fde_earnings_disclosure",
         "fde_procurement_contract",
         "fde_production_rollout"
       ],
       "raw_documents": 113,
-      "original_sources": 105,
-      "valid_claims": 51,
-      "observations": 2,
-      "canonical_events": 19,
+      "original_sources": 103,
+      "valid_claims": 56,
+      "observations": 3,
+      "canonical_events": 18,
       "blocker_counts": {
-        "source_outside_daily_window": 59,
-        "no_source_bounded_event": 14,
-        "non_event_or_index_title": 6,
-        "source_published_after_data_date": 2,
+        "no_source_bounded_event": 15,
+        "source_outside_daily_window": 63,
+        "non_event_or_index_title": 3,
         "repository_page_requires_release_source": 1,
-        "community_source_requires_original_event_source": 1,
+        "no_source_bounded_claim": 1,
         "source_outside_funding_backfill_window": 1,
         "question_headline_not_event_specific": 1,
-        "opinion_without_source_bounded_event": 1,
         "event_not_ai_relevant": 1,
-        "no_source_bounded_claim": 1,
-        "raw_source_quality_block": 6
+        "raw_source_quality_block": 9
       },
       "rates": {
-        "original_source_rate": 0.9292035398230089,
-        "valid_claim_rate": 0.45132743362831856,
-        "observation_rate": 0.0392156862745098,
-        "event_conversion_rate": 0.37254901960784315
+        "original_source_rate": 0.911504424778761,
+        "valid_claim_rate": 0.49557522123893805,
+        "observation_rate": 0.05357142857142857,
+        "event_conversion_rate": 0.32142857142857145
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-14/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-15/monitoring-funnel.json"
     }
   ]
 }

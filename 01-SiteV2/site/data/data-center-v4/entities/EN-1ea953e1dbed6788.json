@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-14T00:23:40.398Z",
-    "latestDataDate": "2026-08-14",
-    "currentDate": "2026-08-14",
-    "eventCount": 2102,
+    "generatedAt": "2026-08-15T00:27:23.598Z",
+    "latestDataDate": "2026-08-15",
+    "currentDate": "2026-08-15",
+    "eventCount": 2132,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -22,19 +22,23 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-defb496c46fcc604",
       "EV-989631c550d89726"
     ],
     "viewpointIds": [],
-    "classificationRefs": [],
+    "classificationRefs": [
+      "TX-technology-open_weights"
+    ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-21",
-    "lastSeen": "2026-07-22",
+    "lastSeen": "2026-08-15",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-defb496c46fcc604",
         "EV-989631c550d89726"
       ],
       "hardware": [],
@@ -42,6 +46,35 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-defb496c46fcc604",
+        "dataDate": "2026-08-15",
+        "date": "2026-08-15",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "阿里巴巴Qwen团队发布Qwen 3.8模型，采用Apache 2.0许可证开放权重",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [
+              "EN-1ea953e1dbed6788"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-1ea953e1dbed6788",
+          "EN-047364b9be67f665",
+          "EN-784ec8fabd647423"
+        ]
+      },
       {
         "id": "EV-989631c550d89726",
         "dataDate": "2026-07-22",
@@ -64,7 +97,81 @@
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-open_weights",
+      "name": "开放权重",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "open_weights",
+      "eventIds": [
+        "EV-1abf0d076d30ec6d",
+        "EV-0121f0a9e9a975ec",
+        "EV-d2a623e8eef1f61d",
+        "EV-f55d16df5b5fecb2",
+        "EV-defb496c46fcc604",
+        "EV-c17a52220be52dc1",
+        "EV-58e18eab1b072c9a",
+        "EV-c698da7da473b059",
+        "EV-29c0d969abde2020",
+        "EV-7228e4310ee1341a",
+        "EV-890ffd351486b884",
+        "EV-3dc8d5c373ddd1f3",
+        "EV-d230942b0787581a",
+        "EV-db304937ceac95d2",
+        "EV-cfba8b877da20eaf",
+        "EV-63858d9b5ef92175",
+        "EV-acf3df526813ed37",
+        "EV-afcefb5d86a2db45",
+        "EV-ca18725115b61bd3",
+        "EV-0f0b2013927ce156",
+        "EV-702276a31f123374",
+        "EV-fe519605ebb69aaf",
+        "EV-2fea1664807824ce",
+        "EV-b888d3eb5f192649",
+        "EV-b84035029a63e52e",
+        "EV-3028dfadf94c8f4c",
+        "EV-a06011da69abcc3d",
+        "EV-e2da1aafabb3e09c",
+        "EV-2258329f33d413cf",
+        "EV-735fac8d2be356bb",
+        "EV-86537be17d50ff20"
+      ],
+      "entityIds": [
+        "EN-29b9f0cae32e7a8a",
+        "EN-bd6769fe78d0971a",
+        "EN-1ea953e1dbed6788",
+        "EN-ea3bd73e2b506e00",
+        "EN-8d4321d936320802",
+        "EN-e59f5a52b6713a29",
+        "EN-a899a3dde1d51caf",
+        "EN-74be4cbf48e647b2",
+        "EN-47dd52018c2b6985",
+        "EN-920510199770f4d6",
+        "EN-422332977c41eb77",
+        "EN-88ab1e5d793701f9",
+        "EN-c70eca6b0f88f44d",
+        "EN-6b61eab266a42eb0",
+        "EN-cc70f504af53013a",
+        "EN-bc1fc5140040180e",
+        "EN-0d1e478de2157d48",
+        "EN-047364b9be67f665",
+        "EN-d41ebd9f02722fc8",
+        "EN-b3e3bce83d29e787",
+        "EN-f7a386a451b79627",
+        "EN-6ac6ad44bb9995ca"
+      ],
+      "fdeIds": [
+        "FDE-0193a6afd26db7ae",
+        "FDE-a8fea104d63ff671"
+      ],
+      "hardwareIds": [
+        "HW-304c6370cc157449"
+      ],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-08-15"
+    }
+  ],
   "fde": [],
   "hardware": []
 }
