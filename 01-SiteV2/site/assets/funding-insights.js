@@ -100,7 +100,7 @@
             <div class="fi-card-amount">
               <span>本轮融资</span>
               <strong>${escapeHtml(card.financing?.amount_normalized?.display_zh || card.financing?.amount || "金额未披露")}</strong>
-              ${card.financing?.amount_original && card.financing.amount_original !== card.financing?.amount_normalized?.display_zh ? `<small>原文 ${escapeHtml(card.financing.amount_original)}</small>` : ""}
+              ${card.financing?.amount_normalized?.currency !== "CNY" && card.financing?.amount_original && card.financing.amount_original !== card.financing?.amount_normalized?.display_zh ? `<small>原文 ${escapeHtml(card.financing.amount_original)}</small>` : ""}
             </div>
             <div class="fi-card-investors">
               <div class="fi-card-investor-head">
@@ -282,7 +282,7 @@
           <aside class="fi-funding-brief" aria-label="本轮融资摘要">
             <span class="fi-funding-label">本轮融资</span>
             <strong class="fi-funding-amount">${escapeHtml(amountNormalized || amountOriginal || "金额未披露")}</strong>
-            ${amountNormalized && amountOriginal && amountNormalized !== amountOriginal ? `<small>金额原文 ${escapeHtml(amountOriginal)}</small>` : ""}
+            ${card.financing?.amount_normalized?.currency !== "CNY" && amountNormalized && amountOriginal && amountNormalized !== amountOriginal ? `<small>金额原文 ${escapeHtml(amountOriginal)}</small>` : ""}
             <div class="fi-funding-round">
               <span>${escapeHtml(card.financing?.round || "轮次未披露")}</span>
               ${card.financing?.round_original && card.financing.round_original !== card.financing.round ? `<span>轮次原文 ${escapeHtml(card.financing.round_original)}</span>` : ""}

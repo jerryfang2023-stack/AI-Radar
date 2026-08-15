@@ -14,11 +14,11 @@
 
     <view class="scope-status-row">
       <view class="market-scope" role="tablist" aria-label="融资市场范围">
-        <button class="market-scope-button {{selectedMarketRegion === 'china' ? 'active' : ''}}" data-region="china" bindtap="changeMarketRegion">
-          <text>中国</text><text class="market-scope-count">{{scopeCounts.china}}</text>
-        </button>
         <button class="market-scope-button {{selectedMarketRegion === 'global' ? 'active' : ''}}" data-region="global" bindtap="changeMarketRegion">
           <text>全球</text><text class="market-scope-count">{{scopeCounts.global}}</text>
+        </button>
+        <button class="market-scope-button {{selectedMarketRegion === 'china' ? 'active' : ''}}" data-region="china" bindtap="changeMarketRegion">
+          <text>中国</text><text class="market-scope-count">{{scopeCounts.china}}</text>
         </button>
       </view>
       <view class="result-summary"><text>今日 {{todayCount}} 条融资动态</text></view>

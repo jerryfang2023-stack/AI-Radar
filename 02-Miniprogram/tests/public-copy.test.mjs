@@ -37,7 +37,9 @@ const registrationSource = fs.readFileSync("miniprogram/components/registration-
 const registrationLogic = fs.readFileSync("miniprogram/components/registration-sheet/index.js", "utf8");
 const terminalLogic = fs.readFileSync("miniprogram/pages/terminal/index.js", "utf8");
 const membershipLogic = fs.readFileSync("miniprogram/pages/membership/index.js", "utf8");
+const customerServiceQr = "miniprogram/assets/support/customer-service-wechat.jpg";
 const fundingRowStyles = fs.readFileSync("miniprogram/components/funding-row/index.wxss", "utf8");
+const fundingRowSource = fs.readFileSync("miniprogram/components/funding-row/index.wxml", "utf8");
 const terminalStyles = fs.readFileSync("miniprogram/pages/terminal/index.wxss", "utf8");
 const publicFiles = [
   "miniprogram/pages/terminal/index.wxml",
@@ -58,7 +60,7 @@ test("uses the confirmed financing column and public-facing copy", () => {
   assert.match(terminalSource, /class="funding-date"><text>更新<\/text><strong>\{\{meta\.latestDate\}\}<\/strong>/u);
   assert.match(marketSource, /<app-header title="生态图谱"/u);
   assert.match(watchlistSource, /<app-header title="商业观察"/u);
-  assert.match(publicFiles.map((file) => fs.readFileSync(file, "utf8")).join("\n"), /中国区/u);
+  assert.doesNotMatch(fundingRowSource, /中国区/u);
 
   const publicSource = publicFiles.map((file) => fs.readFileSync(file, "utf8")).join("\n");
   for (const internalCopy of ["融资终端", "多源核验", "多源已核验", "已验证信号", "证据状态"]) {
@@ -67,17 +69,20 @@ test("uses the confirmed financing column and public-facing copy", () => {
 });
 
 test("switches financing between China and global scopes with persisted live counts", () => {
-  assert.match(terminalSource, /data-region="china"[\s\S]*>中国</u);
   assert.match(terminalSource, /data-region="global"[\s\S]*>全球</u);
+  assert.match(terminalSource, /data-region="china"[\s\S]*>中国</u);
+  assert.ok(terminalSource.indexOf('data-region="global"') < terminalSource.indexOf('data-region="china"'));
   assert.match(terminalSource, /scopeCounts\.china/u);
   assert.match(terminalSource, /scopeCounts\.global/u);
   assert.match(terminalLogic, /MARKET_SCOPE_KEY/u);
+  assert.match(terminalLogic, /MARKET_SCOPES = \["global", "china"\]/u);
+  assert.match(terminalLogic, /selectedMarketRegion: "global"/u);
   assert.match(terminalLogic, /card\.marketRegion === this\.data\.selectedMarketRegion/u);
   assert.match(terminalLogic, /"filters\.marketRegion": marketRegion/u);
 });
 
 test("requires phone, avatar and nickname before the server starts a seven-day trial", () => {
-  for (const copy of ["开启 7 天完整体验", "头像", "昵称", "授权手机号并开启体验", "活跃积分兑换"]) {
+  for (const copy of ["开启 7 天完整体验", "头像", "昵称", "授权手机号并开启体验", "不自动续费"]) {
     assert.match(registrationSource, new RegExp(copy, "u"));
   }
   assert.match(registrationSource, /open-type="chooseAvatar"/u);
@@ -101,19 +106,22 @@ test("lets verified community members sync without repeating profile registratio
   assert.match(registrationLogic, /result\.community\?\.status !== "joined"/u);
 });
 
-test("ships a registration-and-points membership flow without cash payment", () => {
-  const membershipContract = `${membershipSource}\n${membershipLogic}\n${membershipModelSource}\n${registrationSource}\n${profileSource}`;
-  for (const copy of ["7 天完整权益体验", "所有栏目的完整浏览权", "活跃积分兑换", "积分兑换"]) {
+test("exposes the confirmed membership plans and point exchange entry", () => {
+  const membershipContract = `${membershipSource}\n${membershipModelSource}`;
+  for (const copy of ["7 天完整权益体验", "30", "168", "300", "月度会员", "半年会员", "年度会员", "所有栏目的完整浏览权", "活跃积分兑换"]) {
     assert.match(membershipContract, new RegExp(copy, "u"));
   }
-  for (const cashCapability of ["requestPayment", "/pay/", "purchaseMembership", "PRICING_PLANS", "MONTHLY_PRICE"]) {
-    assert.doesNotMatch(`${paymentSource}\n${membershipLogic}\n${membershipModelSource}`, new RegExp(cashCapability, "u"));
-  }
-  for (const cashCopy of ["立即开通会员", "续费会员", "微信支付", "元/月", "月度会员", "半年会员", "年度会员"]) {
-    assert.doesNotMatch(membershipContract, new RegExp(cashCopy, "u"));
-  }
-  assert.match(membershipSource, /bindtap="openRegistration"/u);
-  assert.match(membershipSource, /bindtap="openGrowth"/u);
+  assert.match(membershipSource, /wx:for="\{\{plans\}\}"/u);
+  assert.match(membershipSource, /立即开通会员/u);
+  assert.match(membershipLogic, /purchaseMembership\(plan\.id\)/u);
+  assert.match(paymentSource, /wx\.requestVirtualPayment/u);
+  assert.doesNotMatch(paymentSource, /wx\.requestPayment/u);
+  assert.match(membershipSource, /15 天内支持全额退款/u);
+  assert.match(membershipSource, /支付与退款客服/u);
+  assert.match(membershipLogic, /wx\.previewImage/u);
+  assert.ok(fs.existsSync(customerServiceQr));
+  assert.match(paymentSource, /result\?\.order\?\.status !== "PAID"/u);
+  assert.doesNotMatch(membershipLogic, /付费开通暂未开放/u);
 });
 
 test("keeps observer growth primary and membership status compact on profile", () => {
@@ -123,7 +131,7 @@ test("keeps observer growth primary and membership status compact on profile", (
   assert.match(compactMembership, /会员权益/u);
   assert.match(compactMembership, /有效至/u);
   assert.doesNotMatch(compactMembership, /元\/月/u);
-  assert.match(compactMembership, /积分兑换/u);
+  assert.match(compactMembership, /开通会员/u);
   assert.match(profileSource, /邀请人得 300 活跃积分/u);
   assert.match(profileSource, /class="identity-row" bindtap="openSettings"/u);
   assert.match(profileSource, /class="text-link">设置</u);
@@ -152,6 +160,8 @@ test("renders the text-only bottom navigation as connected segmented buttons", (
   assert.match(customTabBarStyles, /\.tab-button\.with-divider::before[\s\S]*height:\s*44rpx/u);
   assert.match(customTabBarStyles, /\.tab-button\.active[\s\S]*background:\s*#f4efe4/u);
   assert.match(customTabBarStyles, /\.tab-button\.active::after[\s\S]*background:\s*#c8a766/u);
+  assert.match(customTabBarStyles, /min-height:\s*96rpx/u);
+  assert.match(customTabBarStyles, /safe-area-inset-bottom\) - 24rpx/u);
 });
 
 test("preserves the V0.5 financing list visual contract", () => {

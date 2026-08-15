@@ -21,6 +21,19 @@ const shorten = (value, limit = 88) => {
   return normalized.length > limit ? `${normalized.slice(0, limit - 1)}…` : normalized;
 };
 
+function cnyAmountDisplay(value = "") {
+  return text(value)
+    .replace(/元\s*(?:人民币|CNY|RMB)/giu, "元")
+    .replace(/\s*(?:人民币|CNY|RMB)/giu, "元");
+}
+
+function amountDisplay(normalized = {}, original = "", marketRegion = "") {
+  const display = text(normalized?.display_zh) || text(original) || "未披露";
+  const isCny = text(normalized?.currency).toUpperCase() === "CNY"
+    || (marketRegion === "china" && /人民币|CNY|RMB/iu.test(display));
+  return isCny ? cnyAmountDisplay(display) : display;
+}
+
 export function roundGroup(roundCode = "", roundLabel = "") {
   const value = `${roundCode} ${roundLabel}`.toLowerCase();
   if (/pre[_ -]?seed|seed|angel|种子|天使/u.test(value)) return "early";
@@ -76,9 +89,12 @@ function projectCard(card) {
   const investors = list(financing.investors).map((item) => ({ name: text(item.name), role: text(item.role) }));
   const companyName = text(company.name || company.full_name) || "未披露公司";
   const products = unique(list(card.products).map((item) => text(item.name)).filter(Boolean));
-  const amount = financing.amount_normalized?.display_zh || financing.amount_original || financing.amount || "未披露";
-  const cumulative = financing.cumulative_amount?.normalized?.display_zh || financing.cumulative_amount?.original
-    || financing.total_raised_normalized?.display_zh || financing.total_raised_original || financing.total_raised || "未披露";
+  const amount = amountDisplay(financing.amount_normalized, financing.amount_original || financing.amount, marketRegion);
+  const cumulative = amountDisplay(
+    financing.cumulative_amount?.normalized || financing.total_raised_normalized,
+    financing.cumulative_amount?.original || financing.total_raised_original || financing.total_raised,
+    marketRegion,
+  );
   const sourceQuotes = collectEvidenceQuotes(card);
   const sources = list(card.research_sources)
     .slice(0, 6)
@@ -113,7 +129,7 @@ function projectCard(card) {
     headquarters: headquarters || "未披露",
     region: regionFor(headquarters),
     marketRegion,
-    marketLabel: marketRegion === "china" ? "中国区" : "全球其他",
+    marketLabel: marketRegion === "china" ? "中国" : "全球其他",
     evidenceId: evidence.id,
     evidenceLabel: evidence.label,
     sourceCount: sources.length,
@@ -134,7 +150,7 @@ function projectCard(card) {
     customers: list(card.customers).slice(0, 8).map((item) => ({ name: text(item.name), description: text(item.description || item.relationship) })).filter((item) => item.name),
     history: list(card.historical_rounds).slice(0, 12).map((item) => ({
       round: text(item.round || item.round_original) || "轮次未披露",
-      amount: item.amount_normalized?.display_zh || text(item.amount_original) || "未披露",
+      amount: amountDisplay(item.amount_normalized, item.amount_original, marketRegion),
       date: text(item.announced_at),
       current: Boolean(item.is_current),
     })),

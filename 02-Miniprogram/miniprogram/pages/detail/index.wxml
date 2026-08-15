@@ -3,7 +3,7 @@
   <view class="detail-content">
     <button class="identity entity-link" bindtap="openCompany">
       <view class="avatar">{{card.initial}}</view>
-      <view class="identity-copy"><text class="company serif">{{card.company}}</text><text class="category">{{card.marketRegion === 'china' ? '中国区 · ' : ''}}{{card.category}} · {{card.productForm || card.subcategory}}</text></view>
+      <view class="identity-copy"><text class="company serif">{{card.company}}</text><text class="category">{{card.category}} · {{card.productForm || card.subcategory}}</text></view>
       <text class="entity-link-note">企业档案 ›</text>
     </button>
 

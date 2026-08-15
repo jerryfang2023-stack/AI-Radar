@@ -1,5 +1,16 @@
 # Design QA
 
+## 2026-08-15 V0.6.1 融资金额与底栏优化
+
+- Source visual truth: `C:\Users\86186\Downloads\1257227072.jpg`（用户真机截图）。
+- Target state: 融资页默认“全球”在前、“中国”在后；中国列表不重复显示地区角标；人民币标准金额仅显示“元”；底部文本导航收紧安全区上方留白。
+- Code and data verification passed: 259 张融资卡重新生成；全部 CNY 标准金额在融资源、PC 融资投影、Data Center 投影和小程序内置数据中均不再含 `人民币`、`CNY` 或 `RMB` 后缀；55 个小程序行为与公开文案测试通过。
+- Native implementation capture: blocked. 微信开发者工具 RC 2.02.2607271 在仓库路径和短临时路径中均错误报告 `pages/community-apply/index.wxml` 不存在；Git、文件系统和项目校验均确认该文件存在，17 个页面路径全部有效。重置 DevTools fileutils 后问题仍复现，因此未伪造替代截图或 side-by-side comparison。
+
+final result: blocked (native simulator capture only; implementation and project validation passed)
+
+---
+
 ## 2026-08-14 个人资料与手机号绑定修复
 
 - Source visual truth: 用户提供的“账号与联系”真机截图；implementation capture: `C:\Users\86186\.codex\tmp\wavesight-profile-fix\profile-edit.png`；side-by-side comparison: `C:\Users\86186\.codex\tmp\wavesight-profile-fix\comparison.png`。

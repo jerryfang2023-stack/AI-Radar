@@ -29,7 +29,7 @@
 
       <button class="registration-primary" disabled="{{!canSubmit || registering}}" loading="{{registering}}" open-type="getPhoneNumber" bindgetphonenumber="registerWithPhone">授权手机号并开启体验</button>
       <button class="registration-secondary" bindtap="close">{{required ? '返回公开摘要' : '先浏览公开摘要'}}</button>
-      <view class="registration-price">体验结束后可使用活跃积分兑换 7 天或 30 天会员权益</view>
+      <view class="registration-price">体验结束后可选择 30 元/月、168 元/半年或 300 元/年，不自动续费</view>
     </block>
 
     <block wx:else>

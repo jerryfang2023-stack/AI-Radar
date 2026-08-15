@@ -51,6 +51,10 @@ test("projects the VPS funding contract into the native mini program contract", 
   assert.equal(result.index.meta.cardCount, 1);
   assert.equal(result.index.meta.chinaMarketCardCount, 1);
   assert.equal(result.index.cards[0].marketRegion, "china");
+  assert.equal(result.index.cards[0].marketLabel, "中国");
+  assert.equal(result.index.cards[0].amount, "1 亿元");
+  assert.equal(result.details["FI-test"].cumulativeAmount, "1 亿元");
+  assert.equal(result.details["FI-test"].history[0].amount, "1 亿元");
   assert.equal(result.details["FI-test"].institutionRationales[0].rationale, "机构理由");
   assert.equal(result.details["FI-test"].products[0].features[0], "自动化");
 });

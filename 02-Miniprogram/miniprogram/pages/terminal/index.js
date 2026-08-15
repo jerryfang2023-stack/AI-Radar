@@ -5,13 +5,13 @@ const { syncTabBar } = require("../../utils/tab-bar.js");
 const { getAccessState, openMembership } = require("../../utils/access.js");
 
 const bundledFundingIndex = getFundingData().index;
-const MARKET_SCOPE_KEY = "guanlan_funding_market_scope_v1";
-const MARKET_SCOPES = ["china", "global"];
+const MARKET_SCOPE_KEY = "guanlan_funding_market_scope_v2";
+const MARKET_SCOPES = ["global", "china"];
 
 const DEFAULT_FILTERS = {
   keyword: "",
   period: "all",
-  marketRegion: "china",
+  marketRegion: "global",
   region: "all",
   roundGroup: "all",
   categoryId: "all",
@@ -31,7 +31,7 @@ Page({
     latestDateShort: "",
     scopeCardCount: 0,
     scopeCounts: { china: 0, global: 0 },
-    selectedMarketRegion: "china",
+    selectedMarketRegion: "global",
     registrationOpen: false,
     registrationRequired: false,
     sort: "latest",
@@ -43,7 +43,7 @@ Page({
     this.filteredCards = [];
     this.pageSize = 36;
     const savedScope = wx.getStorageSync(MARKET_SCOPE_KEY);
-    const selectedMarketRegion = MARKET_SCOPES.includes(savedScope) ? savedScope : "china";
+    const selectedMarketRegion = MARKET_SCOPES.includes(savedScope) ? savedScope : "global";
     this.setData({
       selectedIds: getCompareIds(),
       selectedMarketRegion,

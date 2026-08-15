@@ -476,7 +476,7 @@ test("融资金额同时保留原文并生成可计算的币种、基准值和�
     max_value: null,
     unit: "base",
     status: "approximate",
-    display_zh: "约 5 亿人民币",
+    display_zh: "约 5 亿元",
   });
   const lowerBound = normalizeFundingAmount("超过 €70 million");
   assert.equal(lowerBound.currency, "EUR");
@@ -485,7 +485,7 @@ test("融资金额同时保留原文并生成可计算的币种、基准值和�
   assert.equal(lowerBound.status, "lower_bound");
 });
 
-test("融资金额量级表达标准化为有边界的人民币区间而不是伪造单点值", () => {
+test("融资金额量级表达标准化为有边界的人民币区间且公开文案只显示元", () => {
   assert.deepEqual(normalizeFundingAmount("数亿元"), {
     currency: "CNY",
     value: null,
@@ -493,7 +493,7 @@ test("融资金额量级表达标准化为有边界的人民币区间而不是�
     max_value: 900000000,
     unit: "base",
     status: "range",
-    display_zh: "2 亿人民币–9 亿人民币",
+    display_zh: "2 亿元–9 亿元",
   });
   assert.equal(normalizeFundingAmount("千万级").min_value, 10000000);
   assert.equal(normalizeFundingAmount("千万级").max_value, 100000000);
@@ -534,7 +534,7 @@ test("已知轮次累计金额保留模糊金额区间而不是显示未披露",
   assert.equal(cumulative.status, "range");
   assert.equal(cumulative.min_value, 200000000);
   assert.equal(cumulative.max_value, 900000000);
-  assert.equal(cumulative.display_zh, "2 亿人民币–9 亿人民币");
+  assert.equal(cumulative.display_zh, "2 亿元–9 亿元");
 });
 
 test("投资机构库只从融资卡精确投资方证据生成可追溯活动", () => {
@@ -1859,6 +1859,7 @@ test("旧融资透视页面跳转到独立融资站且保留旧前台资产的�
   assert.match(detailTemplate, /历史或轮次未明[\s\S]*不计入本轮/u);
   assert.match(script, /investment_thesis[\s\S]*evidence_signals[\s\S]*institutional_rationale_status/u);
   assert.match(script, /customer_research[\s\S]*searched_source_count/u);
+  assert.match(script, /amount_normalized\?\.currency !== "CNY"[\s\S]*amount_original/u);
   assert.match(detailTemplate, /<h3>产品<\/h3>[\s\S]*<h3>目标客户<\/h3>[\s\S]*<h3>客户案例<\/h3>[\s\S]*<h3>关键数据<\/h3>/u);
   assert.match(detailTemplate, /产品 \/ 方案[\s\S]*应用场景[\s\S]*目标客户[\s\S]*融资[\s\S]*已证实差异/u);
   assert.doesNotMatch(detailTemplate, /尚待验证问题|产品与买方|客户与关键数据/u);

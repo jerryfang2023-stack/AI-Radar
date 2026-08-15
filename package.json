@@ -82,6 +82,7 @@
     "backfill:funding-insights": "node agent-workflow/tools/backfill-funding-insights-history.mjs",
     "migrate:funding-insights-v1.1": "node agent-workflow/tools/migrate-funding-insights-v1-1.mjs",
     "migrate:funding-insights-v1.3": "node agent-workflow/tools/migrate-funding-insights-v1-3.mjs",
+    "migrate:funding-cny-display": "node agent-workflow/tools/migrate-funding-cny-display.mjs --write=true",
     "classify:funding-taxonomy-v4.1": "node agent-workflow/tools/classify-funding-taxonomy-v4-1.mjs",
     "assert:funding-taxonomy-v4.1": "node agent-workflow/tools/classify-funding-taxonomy-v4-1.mjs",
     "project:funding-taxonomy-events": "node agent-workflow/tools/project-funding-taxonomy-to-events-v4-1.mjs",

@@ -1,5 +1,5 @@
 const { getLevel, applyReward, applyRedemption } = require("./growth-model.js");
-const { membershipSnapshot, extendMembership } = require("./membership-model.js");
+const { MONTHLY_PRICE, PRICING_PLANS, membershipSnapshot, extendMembership } = require("./membership-model.js");
 const { hasAuthToken, recordMemberBehavior } = require("./payment.js");
 
 const PROFILE_KEY = "guanlan_member_profile_v1";
@@ -303,6 +303,8 @@ module.exports = {
   TASKS,
   BENEFITS,
   MEMBER_RIGHTS,
+  MONTHLY_PRICE,
+  PRICING_PLANS,
   getProfile,
   saveProfile,
   getProfileCompletion,

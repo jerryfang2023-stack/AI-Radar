@@ -97,7 +97,7 @@ export function clean(value = "") {
 
 const FUNDING_CURRENCY_LABELS = {
   USD: "美元",
-  CNY: "人民币",
+  CNY: "元",
   EUR: "欧元",
   GBP: "英镑",
   JPY: "日元",

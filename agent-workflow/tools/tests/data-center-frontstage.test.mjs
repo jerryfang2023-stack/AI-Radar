@@ -571,6 +571,7 @@ test("entity library and embedded relationship views use the unified entity serv
   assert.match(script, /splitDataUrl\("details\/relationships"\)/u);
   assert.match(script, /最近 30 天/u);
   assert.match(script, /最近 7 天/u);
+  assert.match(script, /amount_normalized\?\.currency !== "CNY"[\s\S]*amount_original/u);
 });
 
 test("relationship detail service resolves every edge to exact claims and sources", () => {

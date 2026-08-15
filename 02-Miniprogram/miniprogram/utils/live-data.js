@@ -36,8 +36,17 @@ function headquartersRegion(headquarters = "") {
   return chinaMarkers.some((marker) => value.includes(marker)) ? "china" : "overseas";
 }
 
-function amountDisplay(value = {}, original = "") {
-  return text(value.display_zh) || text(original) || "未披露";
+function cnyAmountDisplay(value = "") {
+  return text(value)
+    .replace(/元\s*(?:人民币|CNY|RMB)/giu, "元")
+    .replace(/\s*(?:人民币|CNY|RMB)/giu, "元");
+}
+
+function amountDisplay(value = {}, original = "", marketRegion = "") {
+  const display = text(value.display_zh) || text(original) || "未披露";
+  const isCny = text(value.currency).toUpperCase() === "CNY"
+    || (marketRegion === "china" && /人民币|CNY|RMB/iu.test(display));
+  return isCny ? cnyAmountDisplay(display) : display;
 }
 
 function versionParts(value = "") {
@@ -73,8 +82,8 @@ function projectPortalCard(card) {
   const products = list(card.productDetails).map((item) => text(item.name)).filter(Boolean);
   const headquarters = text(company.headquarters);
   const marketRegion = card.marketRegion === "CN" ? "china" : "global";
-  const amount = amountDisplay(financing.amountNormalized, financing.amountOriginal || financing.amount);
-  const cumulativeAmount = amountDisplay(financing.cumulativeAmount?.normalized, financing.cumulativeAmount?.original || financing.totalRaised);
+  const amount = amountDisplay(financing.amountNormalized, financing.amountOriginal || financing.amount, marketRegion);
+  const cumulativeAmount = amountDisplay(financing.cumulativeAmount?.normalized, financing.cumulativeAmount?.original || financing.totalRaised, marketRegion);
   const lead = investors.find((item) => item.role.includes("领投")) || investors[0];
   const summary = {
     id: text(card.id),
@@ -98,7 +107,7 @@ function projectPortalCard(card) {
     headquarters: headquarters || "未披露",
     region: headquartersRegion(headquarters),
     marketRegion,
-    marketLabel: marketRegion === "china" ? "中国区" : "全球其他",
+    marketLabel: marketRegion === "china" ? "中国" : "全球其他",
     evidenceId,
     evidenceLabel,
     sourceCount,
@@ -142,7 +151,7 @@ function projectPortalCard(card) {
       })).filter((item) => item.name || item.difference),
       history: list(card.historicalRounds).slice(0, 12).map((item) => ({
         round: text(item.round || item.roundOriginal) || "轮次未披露",
-        amount: amountDisplay(item.amountNormalized, item.amountOriginal),
+        amount: amountDisplay(item.amountNormalized, item.amountOriginal, marketRegion),
         date: text(item.announcedAt),
         current: Boolean(item.isCurrent),
       })),
