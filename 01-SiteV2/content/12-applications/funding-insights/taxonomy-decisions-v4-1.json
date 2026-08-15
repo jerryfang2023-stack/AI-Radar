@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-12T11:49:37.510Z",
+    "generated_at": "2026-08-15T04:16:45.513Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 271,
-    "input_hash": "2bfec4f01d0677cd",
+    "decision_count": 277,
+    "input_hash": "d7a98de8e65cef88",
     "override_count": 17,
     "needs_review_count": 0,
-    "low_confidence_count": 0
+    "low_confidence_count": 2
   },
   "decisions": [
     {
@@ -5351,6 +5351,130 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "River API 提供模型访问、强化学习与 LoRA 微调，面向开发者，属于模型即服务，不涉及物理世界感知决策，也不限定单一行业，因此归入基础设施计算下的开发部署-模型。"
+    },
+    {
+      "event_id": "EV-1765fd690cff1cac",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "data_preparation_curation",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "automotive_transportation",
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.82,
+      "needs_review": false,
+      "rationale": "公司定位为物理AI数据基础设施，提供数据泛化与质量引擎，属于为其他AI产品构建者提供数据基础设施，而非直接部署机器人，故归入infrastructure_compute下的数据准备与治理。"
+    },
+    {
+      "event_id": "EV-f5dd6dec49ad83aa",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "software_development",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "professional_services",
+        "financial_services",
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Anthropic提供Claude模型及编码代理，属于供其他AI产品构建者使用的模型基础设施，证据明确指向模型层而非单一行业应用。"
+    },
+    {
+      "event_id": "EV-cca4bd983a16b8d9",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [
+        "professional_services"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "Blacksmith提供CI云作为GitHub Actions替代品，属于开发者部署与编排基础设施，证据明确指向开发部署工具。"
+    },
+    {
+      "event_id": "EV-33053abbe1a60b38",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "model_agent_security",
+      "product_form_id": "security_software",
+      "use_case_ids": [
+        "security_operations",
+        "software_development"
+      ],
+      "industry_ids": [
+        "professional_services"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.78,
+      "needs_review": false,
+      "rationale": "该基金为开源项目提供安全培训与工具，属于面向开发者的安全基础设施，归入模型/代理安全而非行业应用。"
+    },
+    {
+      "event_id": "EV-c1295b8f58024ff6",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "ai_observability_governance",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "software_development",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "professional_services"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.88,
+      "needs_review": false,
+      "rationale": "Lemma提供AI代理生产监控与可观测性基础设施，证据明确指向可观测性治理，而非单一行业应用。"
+    },
+    {
+      "event_id": "EV-f595d042ae4c91eb",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "marketing",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "marketing",
+        "knowledge_search"
+      ],
+      "industry_ids": [
+        "retail_ecommerce",
+        "media_entertainment"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": false,
+      "rationale": "Optimly帮助品牌管理AI聊天机器人中的品牌信息，属于跨行业营销与品牌管理功能，而非基础设施或单一行业应用。"
     }
   ]
 }

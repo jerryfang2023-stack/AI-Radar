@@ -6,7 +6,7 @@ import crypto from "node:crypto";
 import { fileURLToPath } from "url";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
-import { eventAiRelevanceEvidence, forbiddenKeys, publicEventSourceTitleIssue } from "./build-data-center-v4.mjs";
+import { eventAiRelevanceEvidence, forbiddenKeys, publicEventSourceTitleIssue, publicEventSourceUrlIssue } from "./build-data-center-v4.mjs";
 import { buildEventDisplayTitle } from "./event-public-title.mjs";
 import { validateTaxonomy } from "./assert-tag-taxonomy-v4.mjs";
 import { hydrateRawDocument } from "./lib/private-evidence-store.mjs";
@@ -205,6 +205,8 @@ export function evaluateBundle(bundle, taxonomy, options = {}) {
       failures.push(`${event.event_id}: display_title_zh is not an exact source-title translation`);
     }
     const sourceRaw = rawBySourceId.get(event.source_refs[0]);
+    const sourceUrlIssue = publicEventSourceUrlIssue(sourceRaw?.source_url || sourceRaw?.canonical_url);
+    if (sourceUrlIssue) failures.push(`${event.event_id}: canonical event uses an ineligible source URL (${sourceUrlIssue})`);
     const titleIssue = publicEventSourceTitleIssue(sourceRaw?.title_original || sourceRaw?.title_zh || event.display_title_zh);
     if (titleIssue) failures.push(`${event.event_id}: canonical event uses an ineligible source title (${titleIssue})`);
     const relevance = eventAiRelevanceEvidence({

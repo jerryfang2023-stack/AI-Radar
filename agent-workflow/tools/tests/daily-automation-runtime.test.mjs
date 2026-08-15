@@ -100,6 +100,8 @@ test("Codex repair runs from a clean isolated worktree", () => {
   assert.match(repair, /\["worktree", "add", "-b", branch, repairRoot, "origin\/main"\]/u);
   assert.match(repair, /--cd "\$\{repairWorktree\.path\}"/u);
   assert.match(repair, /enforceRepairWorktree\(parseArgList/u);
+  assert.match(repair, /`--ask-for-approval never exec --sandbox danger-full-access/u);
+  assert.doesNotMatch(repair, /`exec [^`]*--ask-for-approval/u);
   assert.doesNotMatch(repair, /--allow-dirty/u);
 });
 
