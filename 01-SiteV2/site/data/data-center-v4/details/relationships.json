@@ -5,13 +5,293 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-14T00:23:40.398Z",
-    "latestDataDate": "2026-08-14",
-    "currentDate": "2026-08-14",
-    "eventCount": 2102,
+    "generatedAt": "2026-08-15T00:27:23.598Z",
+    "latestDataDate": "2026-08-15",
+    "currentDate": "2026-08-15",
+    "eventCount": 2132,
     "quarantinedEventCount": 16
   },
   "relationships": [
+    {
+      "relationship_id": "REL2-1da092a830b9a42c",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d1ad14d4ad57d207",
+      "object_type": "entity",
+      "event_id": "EV-8ba7a742c4d626c6",
+      "claim_refs": [
+        "CL-da1e2017d5d94e2e",
+        "CL-2eb3d171ad9aa380",
+        "CL-6878f6a4ac5e8e13",
+        "CL-3de17f2ab718f1c0"
+      ],
+      "source_refs": [
+        "SA-be48aa3e0eb1734e"
+      ],
+      "data_date": "2026-08-15",
+      "status": "verified",
+      "subjectName": "OpenAI",
+      "objectName": "ChatGPT",
+      "predicateLabel": "发布",
+      "title": "OpenAI 发布 ChatGPT",
+      "eventTitle": "Mac 版 ChatGPT 新增 Computer History 功能，不再依赖截图记录活动",
+      "eventDate": "2026-08-14",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-da1e2017d5d94e2e",
+          "subject": "Mac 版 ChatGPT",
+          "object": "Computer History 功能，不再依赖截图记录活动",
+          "quote": "不再依赖截图记录活动：Mac 版 ChatGPT 新增 Computer History AI 功能 - IT之家"
+        },
+        {
+          "id": "CL-2eb3d171ad9aa380",
+          "subject": "Mac 版 ChatGPT",
+          "object": "Computer History 功能，不再依赖截图记录活动",
+          "quote": "不再依赖截图记录活动：Mac 版 ChatGPT 新增 Computer History AI 功能"
+        },
+        {
+          "id": "CL-6878f6a4ac5e8e13",
+          "subject": "Mac 版 ChatGPT",
+          "object": "Computer History 功能，不再依赖截图记录活动",
+          "quote": "IT之家 8 月 14 日消息，OpenAI 昨日（8 月 13 日）发布博文，宣布以可选方式推出 Computer History 功能， 取代先前的 Chronicle 研究预览功能 ， 为 Mac 版 ChatGPT 桌面应用提供活动记忆与时间线支持。"
+        },
+        {
+          "id": "CL-3de17f2ab718f1c0",
+          "subject": "Mac 版 ChatGPT",
+          "object": "Computer History 功能，不再依赖截图记录活动",
+          "quote": "而 Computer History 不再依赖屏幕截图，转而使用苹果 macOS 辅助功能记录互动事件（包括点击、输入、键盘快捷键及切换应用），将用户的 Mac 活动转化为记忆和时间线，供 ChatGPT 与 Codex 使用，可快速生成工作摘要或找回最近查看的文件。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-be48aa3e0eb1734e",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/989/518.htm"
+        }
+      ],
+      "sourceExcerpt": "不再依赖截图记录活动：Mac 版 ChatGPT 新增 Computer History AI 功能 - IT之家",
+      "event": {
+        "id": "EV-8ba7a742c4d626c6",
+        "title": "Mac 版 ChatGPT 新增 Computer History 功能，不再依赖截图记录活动",
+        "originalTitle": "",
+        "date": "2026-08-14",
+        "dataDate": "2026-08-15",
+        "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-ac23d27e955fb3fc",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-916a98f0fa2a39af",
+      "object_type": "entity",
+      "event_id": "EV-129ffa6be41bb485",
+      "claim_refs": [
+        "CL-545d6df323754275",
+        "CL-7f26eeabc735458f",
+        "CL-c3a187c96d25ec3a",
+        "CL-ba50dff571813560"
+      ],
+      "source_refs": [
+        "SA-7eaa925ca1da695a"
+      ],
+      "data_date": "2026-08-15",
+      "status": "verified",
+      "subjectName": "OpenAI",
+      "objectName": "IBM",
+      "predicateLabel": "合作",
+      "title": "OpenAI 合作 IBM",
+      "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+      "eventDate": "2026-08-13",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-545d6df323754275",
+          "subject": "IBM",
+          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+          "quote": "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR."
+        },
+        {
+          "id": "CL-7f26eeabc735458f",
+          "subject": "IBM",
+          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+          "quote": "The partnership embeds OpenAI frontier models like GPT-5.6 and products like Codex and ChatGPT Work into IBM Consulting Advantage , IBM&rsquo;s AI platform for delivering consulting services to clients, combining AI agents, industry assets, and cybersecurity capabilities to help organizations securely deploy AI at scale, drive business outcomes, and create new commercial models."
+        },
+        {
+          "id": "CL-c3a187c96d25ec3a",
+          "subject": "IBM",
+          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+          "quote": "The companies plan to help clients modernize legacy applications and accelerate software development by bringing together OpenAI Codex and ChatGPT Work with IBM&rsquo;s industry, technology and domain expertise, including integration with IBM Consulting Advantage. The collaboration is designed to help organizations simplify engineering processes and speed the delivery of new digital products and services."
+        },
+        {
+          "id": "CL-ba50dff571813560",
+          "subject": "IBM",
+          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+          "quote": "IBM and OpenAI will expand their collaboration on cybersecurity following IBM&rsquo;s participation in the OpenAI Daybreak Cyber Partner Program by combining OpenAI frontier AI capabilities with IBM Autonomous Security &mdash; a multi-agent-powered service designed to deliver coordinated decision-making, response, and intelligence at machine speed. As AI-powered attacks grow more sophisticated, the partnership will help clients manage both cyber and AI model risk, including application-layer vulnerabilities, governance gaps, and operational risks that limits AI adoption."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-7eaa925ca1da695a",
+          "publisher": "newsroom.ibm.com",
+          "url": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations"
+        }
+      ],
+      "sourceExcerpt": "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR.",
+      "event": {
+        "id": "EV-129ffa6be41bb485",
+        "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+        "originalTitle": "IBM Partners with OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+        "date": "2026-08-13",
+        "dataDate": "2026-08-15",
+        "eventTypeLabel": "合作"
+      }
+    },
+    {
+      "relationship_id": "REL2-e5e49d88d99ddd93",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "serves",
+      "object_ref": "EN-916a98f0fa2a39af",
+      "object_type": "entity",
+      "event_id": "EV-129ffa6be41bb485",
+      "claim_refs": [
+        "CL-545d6df323754275",
+        "CL-7f26eeabc735458f",
+        "CL-c3a187c96d25ec3a",
+        "CL-ba50dff571813560"
+      ],
+      "source_refs": [
+        "SA-7eaa925ca1da695a"
+      ],
+      "data_date": "2026-08-15",
+      "status": "verified",
+      "subjectName": "OpenAI",
+      "objectName": "IBM",
+      "predicateLabel": "服务",
+      "title": "OpenAI 服务 IBM",
+      "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+      "eventDate": "2026-08-13",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-545d6df323754275",
+          "subject": "IBM",
+          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+          "quote": "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR."
+        },
+        {
+          "id": "CL-7f26eeabc735458f",
+          "subject": "IBM",
+          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+          "quote": "The partnership embeds OpenAI frontier models like GPT-5.6 and products like Codex and ChatGPT Work into IBM Consulting Advantage , IBM&rsquo;s AI platform for delivering consulting services to clients, combining AI agents, industry assets, and cybersecurity capabilities to help organizations securely deploy AI at scale, drive business outcomes, and create new commercial models."
+        },
+        {
+          "id": "CL-c3a187c96d25ec3a",
+          "subject": "IBM",
+          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+          "quote": "The companies plan to help clients modernize legacy applications and accelerate software development by bringing together OpenAI Codex and ChatGPT Work with IBM&rsquo;s industry, technology and domain expertise, including integration with IBM Consulting Advantage. The collaboration is designed to help organizations simplify engineering processes and speed the delivery of new digital products and services."
+        },
+        {
+          "id": "CL-ba50dff571813560",
+          "subject": "IBM",
+          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+          "quote": "IBM and OpenAI will expand their collaboration on cybersecurity following IBM&rsquo;s participation in the OpenAI Daybreak Cyber Partner Program by combining OpenAI frontier AI capabilities with IBM Autonomous Security &mdash; a multi-agent-powered service designed to deliver coordinated decision-making, response, and intelligence at machine speed. As AI-powered attacks grow more sophisticated, the partnership will help clients manage both cyber and AI model risk, including application-layer vulnerabilities, governance gaps, and operational risks that limits AI adoption."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-7eaa925ca1da695a",
+          "publisher": "newsroom.ibm.com",
+          "url": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations"
+        }
+      ],
+      "sourceExcerpt": "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR.",
+      "event": {
+        "id": "EV-129ffa6be41bb485",
+        "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+        "originalTitle": "IBM Partners with OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+        "date": "2026-08-13",
+        "dataDate": "2026-08-15",
+        "eventTypeLabel": "合作"
+      }
+    },
+    {
+      "relationship_id": "REL2-f091501fd084bf19",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-7839fb10a8f14c70",
+      "object_type": "entity",
+      "event_id": "EV-3acfc317c18e3ef9",
+      "claim_refs": [
+        "CL-550f70ee1fef15a8",
+        "CL-c3964d4dbf257fd7",
+        "CL-69e45d971fea9662",
+        "CL-73b7b3ea76ace64a"
+      ],
+      "source_refs": [
+        "SA-23f302c117468e26"
+      ],
+      "data_date": "2026-08-15",
+      "status": "verified",
+      "subjectName": "OpenAI",
+      "objectName": "GPT-5.6 Sol",
+      "predicateLabel": "发布",
+      "title": "OpenAI 发布 GPT-5.6 Sol",
+      "eventTitle": "GPT-5.6 Sol 速度提升14倍，OpenAI推出由Cerebras驱动的Ultrafast模式",
+      "eventDate": "2026-08-14",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-550f70ee1fef15a8",
+          "subject": "GPT-5.6 Sol goes 14x faster as OpenAI",
+          "object": "Ultrafast mode powered by Cerebras",
+          "quote": "GPT-5.6 Sol goes 14x faster as OpenAI launches Ultrafast mode powered by Cerebras"
+        },
+        {
+          "id": "CL-c3964d4dbf257fd7",
+          "subject": "GPT-5.6 Sol goes 14x faster as OpenAI",
+          "object": "Ultrafast mode powered by Cerebras",
+          "quote": "OpenAI already monetizes inference speed in tiers. Through the API, it offers a \"Fast Mode\" that promises up to 2.5x speed with lower latency for GPT-5.6 Sol at roughly double the price. Ultrafast adds a third, faster, and likely pricier tier."
+        },
+        {
+          "id": "CL-69e45d971fea9662",
+          "subject": "GPT-5.6 Sol goes 14x faster as OpenAI",
+          "object": "Ultrafast mode powered by Cerebras",
+          "quote": "View the LinkedIn Profile of Matthias Bastian"
+        },
+        {
+          "id": "CL-73b7b3ea76ace64a",
+          "subject": "GPT-5.6 Sol goes 14x faster as OpenAI",
+          "object": "Ultrafast mode powered by Cerebras",
+          "quote": "GPT-Image-2 prompted by THE DECODER"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-23f302c117468e26",
+          "publisher": "The Decoder AI News",
+          "url": "https://the-decoder.com/gpt-5-6-sol-goes-14x-faster-as-openai-launches-ultrafast-mode-powered-by-cerebras"
+        }
+      ],
+      "sourceExcerpt": "GPT-5.6 Sol goes 14x faster as OpenAI launches Ultrafast mode powered by Cerebras",
+      "event": {
+        "id": "EV-3acfc317c18e3ef9",
+        "title": "GPT-5.6 Sol 速度提升14倍，OpenAI推出由Cerebras驱动的Ultrafast模式",
+        "originalTitle": "GPT-5.6 Sol goes 14x faster as OpenAI launches Ultrafast mode powered by Cerebras",
+        "date": "2026-08-14",
+        "dataDate": "2026-08-15",
+        "eventTypeLabel": "产品发布"
+      }
+    },
     {
       "relationship_id": "REL2-02bdd133e9353ff7",
       "relationship_version": "RELATION-V2.1",
@@ -213,195 +493,6 @@
         "date": "2026-08-13",
         "dataDate": "2026-08-14",
         "eventTypeLabel": "合作"
-      }
-    },
-    {
-      "relationship_id": "REL2-ac23d27e955fb3fc",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-7d3194f79e645c42",
-      "subject_type": "entity",
-      "predicate": "partners_with",
-      "object_ref": "EN-916a98f0fa2a39af",
-      "object_type": "entity",
-      "event_id": "EV-129ffa6be41bb485",
-      "claim_refs": [
-        "CL-901e9ad96c4d172e",
-        "CL-84e58683b204766a",
-        "CL-e638b3a19b820529",
-        "CL-b09d62f358504d45"
-      ],
-      "source_refs": [
-        "SA-7eaa925ca1da695a"
-      ],
-      "data_date": "2026-08-14",
-      "status": "verified",
-      "subjectName": "OpenAI",
-      "objectName": "IBM",
-      "predicateLabel": "合作",
-      "title": "OpenAI 合作 IBM",
-      "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
-      "eventDate": "2026-08-13",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-901e9ad96c4d172e",
-          "subject": "IBM",
-          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-          "quote": "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR."
-        },
-        {
-          "id": "CL-84e58683b204766a",
-          "subject": "IBM",
-          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-          "quote": "The partnership embeds OpenAI frontier models like GPT-5.6 and products like Codex and ChatGPT Work into IBM Consulting Advantage , IBM&rsquo;s AI platform for delivering consulting services to clients, combining AI agents, industry assets, and cybersecurity capabilities to help organizations securely deploy AI at scale, drive business outcomes, and create new commercial models."
-        },
-        {
-          "id": "CL-e638b3a19b820529",
-          "subject": "IBM",
-          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-          "quote": "The companies plan to help clients modernize legacy applications and accelerate software development by bringing together OpenAI Codex and ChatGPT Work with IBM&rsquo;s industry, technology and domain expertise, including integration with IBM Consulting Advantage. The collaboration is designed to help organizations simplify engineering processes and speed the delivery of new digital products and services."
-        },
-        {
-          "id": "CL-b09d62f358504d45",
-          "subject": "IBM",
-          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-          "quote": "IBM and OpenAI will expand their collaboration on cybersecurity following IBM&rsquo;s participation in the OpenAI Daybreak Cyber Partner Program by combining OpenAI frontier AI capabilities with IBM Autonomous Security &mdash; a multi-agent-powered service designed to deliver coordinated decision-making, response, and intelligence at machine speed. As AI-powered attacks grow more sophisticated, the partnership will help clients manage both cyber and AI model risk, including application-layer vulnerabilities, governance gaps, and operational risks that limits AI adoption."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-7eaa925ca1da695a",
-          "publisher": "newsroom.ibm.com",
-          "url": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations"
-        }
-      ],
-      "sourceExcerpt": "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR.",
-      "event": {
-        "id": "EV-129ffa6be41bb485",
-        "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
-        "originalTitle": "IBM Partners with OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-        "date": "2026-08-13",
-        "dataDate": "2026-08-14",
-        "eventTypeLabel": "合作"
-      }
-    },
-    {
-      "relationship_id": "REL2-e5e49d88d99ddd93",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-7d3194f79e645c42",
-      "subject_type": "entity",
-      "predicate": "serves",
-      "object_ref": "EN-916a98f0fa2a39af",
-      "object_type": "entity",
-      "event_id": "EV-129ffa6be41bb485",
-      "claim_refs": [
-        "CL-901e9ad96c4d172e",
-        "CL-84e58683b204766a",
-        "CL-e638b3a19b820529",
-        "CL-b09d62f358504d45"
-      ],
-      "source_refs": [
-        "SA-7eaa925ca1da695a"
-      ],
-      "data_date": "2026-08-14",
-      "status": "verified",
-      "subjectName": "OpenAI",
-      "objectName": "IBM",
-      "predicateLabel": "服务",
-      "title": "OpenAI 服务 IBM",
-      "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
-      "eventDate": "2026-08-13",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-901e9ad96c4d172e",
-          "subject": "IBM",
-          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-          "quote": "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR."
-        },
-        {
-          "id": "CL-84e58683b204766a",
-          "subject": "IBM",
-          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-          "quote": "The partnership embeds OpenAI frontier models like GPT-5.6 and products like Codex and ChatGPT Work into IBM Consulting Advantage , IBM&rsquo;s AI platform for delivering consulting services to clients, combining AI agents, industry assets, and cybersecurity capabilities to help organizations securely deploy AI at scale, drive business outcomes, and create new commercial models."
-        },
-        {
-          "id": "CL-e638b3a19b820529",
-          "subject": "IBM",
-          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-          "quote": "The companies plan to help clients modernize legacy applications and accelerate software development by bringing together OpenAI Codex and ChatGPT Work with IBM&rsquo;s industry, technology and domain expertise, including integration with IBM Consulting Advantage. The collaboration is designed to help organizations simplify engineering processes and speed the delivery of new digital products and services."
-        },
-        {
-          "id": "CL-b09d62f358504d45",
-          "subject": "IBM",
-          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-          "quote": "IBM and OpenAI will expand their collaboration on cybersecurity following IBM&rsquo;s participation in the OpenAI Daybreak Cyber Partner Program by combining OpenAI frontier AI capabilities with IBM Autonomous Security &mdash; a multi-agent-powered service designed to deliver coordinated decision-making, response, and intelligence at machine speed. As AI-powered attacks grow more sophisticated, the partnership will help clients manage both cyber and AI model risk, including application-layer vulnerabilities, governance gaps, and operational risks that limits AI adoption."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-7eaa925ca1da695a",
-          "publisher": "newsroom.ibm.com",
-          "url": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations"
-        }
-      ],
-      "sourceExcerpt": "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR.",
-      "event": {
-        "id": "EV-129ffa6be41bb485",
-        "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
-        "originalTitle": "IBM Partners with OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-        "date": "2026-08-13",
-        "dataDate": "2026-08-14",
-        "eventTypeLabel": "合作"
-      }
-    },
-    {
-      "relationship_id": "REL2-5a2b9cfd6f0b1ca6",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-c70eca6b0f88f44d",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-e65e0f2695fa259d",
-      "object_type": "entity",
-      "event_id": "EV-875b31b96ff689df",
-      "claim_refs": [
-        "CL-f441b70d1bca16ef"
-      ],
-      "source_refs": [
-        "SA-2bc62681d0b05bdb"
-      ],
-      "data_date": "2026-08-13",
-      "status": "verified",
-      "subjectName": "Anthropic",
-      "objectName": "Claude Cowork",
-      "predicateLabel": "发布",
-      "title": "Anthropic 发布 Claude Cowork",
-      "eventTitle": "Claude 打破平台壁垒：Chrome 侧边栏 AI 对话互通全平台历史记录",
-      "eventDate": "2026-08-13",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-f441b70d1bca16ef",
-          "subject": "Anthropic",
-          "object": "Chrome Claude extension with full Claude Cowork session experience",
-          "quote": "Anthropic 今天（8 月 13 日）在 X 平台发布推文，宣布升级适用于谷歌 Chrome 浏览器的 Claude 扩展程序， 在侧边栏带来完整的 Claude Cowork 会话体验。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-2bc62681d0b05bdb",
-          "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/989/006.htm"
-        }
-      ],
-      "sourceExcerpt": "Anthropic 今天（8 月 13 日）在 X 平台发布推文，宣布升级适用于谷歌 Chrome 浏览器的 Claude 扩展程序， 在侧边栏带来完整的 Claude Cowork 会话体验。",
-      "event": {
-        "id": "EV-875b31b96ff689df",
-        "title": "Claude 打破平台壁垒：Chrome 侧边栏 AI 对话互通全平台历史记录",
-        "originalTitle": "",
-        "date": "2026-08-13",
-        "dataDate": "2026-08-13",
-        "eventTypeLabel": "产品发布"
       }
     },
     {
@@ -682,6 +773,76 @@
         "date": "2026-08-03",
         "dataDate": "2026-08-04",
         "eventTypeLabel": "合作"
+      }
+    },
+    {
+      "relationship_id": "REL2-a675a7f7bd02161e",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-307557d99a7eb726",
+      "object_type": "entity",
+      "event_id": "EV-5e85bc91a6924760",
+      "claim_refs": [
+        "CL-e195d7727b181bec",
+        "CL-39ec4a2b7d6bd317",
+        "CL-f2323adffd6b687f",
+        "CL-0bc77417b3b9ac0e"
+      ],
+      "source_refs": [
+        "SA-409f38aff93df4c5"
+      ],
+      "data_date": "2026-08-03",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Gemini Spark",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Gemini Spark",
+      "eventTitle": "谷歌 Gemini Spark 智能体向全球更多用户开放，支持订机票、整理收件箱",
+      "eventDate": "2026-08-02",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-e195d7727b181bec",
+          "subject": "undisclosed_subject",
+          "object": "谷歌 Gemini Spark 智能体向全球更多用户开放，支持订机票、整理收件箱",
+          "quote": "IT之家了解到，Spark 是谷歌推出的个人 AI 智能体。"
+        },
+        {
+          "id": "CL-39ec4a2b7d6bd317",
+          "subject": "undisclosed_subject",
+          "object": "谷歌 Gemini Spark 智能体向全球更多用户开放，支持订机票、整理收件箱",
+          "quote": "这款产品目前已经和 Chrome 浏览器整合，用户授权后，智能体可以使用保存的账户密码，代替用户完成一些复杂的网络操作，如搜索航班、预订机票、查询收藏房源等。"
+        },
+        {
+          "id": "CL-f2323adffd6b687f",
+          "subject": "undisclosed_subject",
+          "object": "谷歌 Gemini Spark 智能体向全球更多用户开放，支持订机票、整理收件箱",
+          "quote": "同时，Spark 提供两种安全机制，这款智能体首先会防御提示词攻击， 并将付款等敏感操作交给用户完成 。"
+        },
+        {
+          "id": "CL-0bc77417b3b9ac0e",
+          "subject": "undisclosed_subject",
+          "object": "谷歌 Gemini Spark 智能体向全球更多用户开放，支持订机票、整理收件箱",
+          "quote": "谷歌 Gemini Spark 智能体对全球更多用户开放，支持订机票、整理收件箱等操作 - IT之家"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-409f38aff93df4c5",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/984/674.htm"
+        }
+      ],
+      "sourceExcerpt": "IT之家了解到，Spark 是谷歌推出的个人 AI 智能体。",
+      "event": {
+        "id": "EV-5e85bc91a6924760",
+        "title": "谷歌 Gemini Spark 智能体向全球更多用户开放，支持订机票、整理收件箱",
+        "originalTitle": "",
+        "date": "2026-08-02",
+        "dataDate": "2026-08-03",
+        "eventTypeLabel": "产品发布"
       }
     },
     {
@@ -3982,6 +4143,76 @@
       }
     },
     {
+      "relationship_id": "REL2-9ad2c97e765910d9",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-18f0900d6c487f59",
+      "object_type": "entity",
+      "event_id": "EV-597b8257a97b3d02",
+      "claim_refs": [
+        "CL-bcf6cc5593de2a0f",
+        "CL-1407e158e3017631",
+        "CL-bcccc3f03d4b38a9",
+        "CL-910d21a1f5ab0b3c"
+      ],
+      "source_refs": [
+        "SA-a3cf2c06935ba536"
+      ],
+      "data_date": "2026-07-22",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Gemini 3.6 Flash",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Gemini 3.6 Flash",
+      "eventTitle": "谷歌发布 Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+      "eventDate": "2026-07-21",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-bcf6cc5593de2a0f",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "谷歌发布三款新 AI 模型，含 Gemini 3.6 Flash、3.5 Flash Cyber - IT之家"
+        },
+        {
+          "id": "CL-1407e158e3017631",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "谷歌发布三款新 AI 模型，含 Gemini 3.6 Flash、3.5 Flash Cyber"
+        },
+        {
+          "id": "CL-bcccc3f03d4b38a9",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "IT之家 7 月 21 日消息，谷歌今日发布了三款新的人工智能模型，包括性能最强的 Gemini 3.6 Flash，以及专门针对网络安全优化的 Gemini 3.5 Flash Cyber。"
+        },
+        {
+          "id": "CL-910d21a1f5ab0b3c",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "今年以来，这两家 AI 公司相继推出了能够发现软件安全漏洞的先进模型，在网络安全领域占据了领先地位。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-a3cf2c06935ba536",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/979/795.htm"
+        }
+      ],
+      "sourceExcerpt": "谷歌发布三款新 AI 模型，含 Gemini 3.6 Flash、3.5 Flash Cyber - IT之家",
+      "event": {
+        "id": "EV-597b8257a97b3d02",
+        "title": "谷歌发布 Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+        "originalTitle": "",
+        "date": "2026-07-21",
+        "dataDate": "2026-07-22",
+        "eventTypeLabel": "产品发布"
+      }
+    },
+    {
       "relationship_id": "REL2-a2a2d52284004533",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-ac123e56b0168ec2",
@@ -4154,6 +4385,69 @@
         "date": "2026-07-21",
         "dataDate": "2026-07-22",
         "eventTypeLabel": "模型发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-ddbd67ee39ac2096",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-31055a8d9856fce4",
+      "object_type": "entity",
+      "event_id": "EV-597b8257a97b3d02",
+      "claim_refs": [
+        "CL-1407e158e3017631",
+        "CL-bcccc3f03d4b38a9",
+        "CL-910d21a1f5ab0b3c"
+      ],
+      "source_refs": [
+        "SA-a3cf2c06935ba536"
+      ],
+      "data_date": "2026-07-22",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Gemini 3.5 Flash Cyber",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Gemini 3.5 Flash Cyber",
+      "eventTitle": "谷歌发布 Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+      "eventDate": "2026-07-21",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-1407e158e3017631",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "谷歌发布三款新 AI 模型，含 Gemini 3.6 Flash、3.5 Flash Cyber"
+        },
+        {
+          "id": "CL-bcccc3f03d4b38a9",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "IT之家 7 月 21 日消息，谷歌今日发布了三款新的人工智能模型，包括性能最强的 Gemini 3.6 Flash，以及专门针对网络安全优化的 Gemini 3.5 Flash Cyber。"
+        },
+        {
+          "id": "CL-910d21a1f5ab0b3c",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "今年以来，这两家 AI 公司相继推出了能够发现软件安全漏洞的先进模型，在网络安全领域占据了领先地位。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-a3cf2c06935ba536",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/979/795.htm"
+        }
+      ],
+      "sourceExcerpt": "谷歌发布三款新 AI 模型，含 Gemini 3.6 Flash、3.5 Flash Cyber - IT之家",
+      "event": {
+        "id": "EV-597b8257a97b3d02",
+        "title": "谷歌发布 Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+        "originalTitle": "",
+        "date": "2026-07-21",
+        "dataDate": "2026-07-22",
+        "eventTypeLabel": "产品发布"
       }
     },
     {
@@ -7248,6 +7542,76 @@
         "date": "2026-07-15",
         "dataDate": "2026-07-16",
         "eventTypeLabel": "合作"
+      }
+    },
+    {
+      "relationship_id": "REL2-f92ee2f782a8185b",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0e008e2c06144ec8",
+      "object_type": "entity",
+      "event_id": "EV-6359c9f6c2609a38",
+      "claim_refs": [
+        "CL-3c3d4af5e069787d",
+        "CL-714aa682873fac8b",
+        "CL-b606f6b126922962",
+        "CL-4a7039df083c3152"
+      ],
+      "source_refs": [
+        "SA-b894cd4477812b65"
+      ],
+      "data_date": "2026-07-16",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Nano Banana",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Nano Banana",
+      "eventTitle": "谷歌图片服务 25 周年，AI 概览新增 Nano Banana 生图功能",
+      "eventDate": "2026-07-15",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-3c3d4af5e069787d",
+          "subject": "谷歌图片服务 25 周年，AI 概览",
+          "object": "Nano Banana 生图功能",
+          "quote": "谷歌图片服务上线 25 周年，AI 概览新增 Nano Banana 生图功能 - IT之家"
+        },
+        {
+          "id": "CL-714aa682873fac8b",
+          "subject": "谷歌图片服务 25 周年，AI 概览",
+          "object": "Nano Banana 生图功能",
+          "quote": "谷歌图片服务上线 25 周年，AI 概览新增 Nano Banana 生图功能"
+        },
+        {
+          "id": "CL-b606f6b126922962",
+          "subject": "谷歌图片服务 25 周年，AI 概览",
+          "object": "Nano Banana 生图功能",
+          "quote": "IT之家 7 月 15 日消息，谷歌昨日（7 月 14 日）发布博文，宣布庆祝谷歌图片（Google Image）功能上线 25 周年，并推出新功能： 用户在 AI 概览中，可以直接调用 Nano Banana 模型自定义生成图片。"
+        },
+        {
+          "id": "CL-4a7039df083c3152",
+          "subject": "谷歌图片服务 25 周年，AI 概览",
+          "object": "Nano Banana 生图功能",
+          "quote": "谷歌为庆祝谷歌图片服务上线 25 周年，在 AI 概览中新增生图功能，谷歌表示："
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-b894cd4477812b65",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/976/980.htm"
+        }
+      ],
+      "sourceExcerpt": "谷歌图片服务上线 25 周年，AI 概览新增 Nano Banana 生图功能 - IT之家",
+      "event": {
+        "id": "EV-6359c9f6c2609a38",
+        "title": "谷歌图片服务 25 周年，AI 概览新增 Nano Banana 生图功能",
+        "originalTitle": "",
+        "date": "2026-07-15",
+        "dataDate": "2026-07-16",
+        "eventTypeLabel": "产品发布"
       }
     },
     {
@@ -11801,6 +12165,76 @@
       }
     },
     {
+      "relationship_id": "REL2-638b55900181fbf2",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-01f1074bb52ff605",
+      "object_type": "entity",
+      "event_id": "EV-d8c69ed782b73a34",
+      "claim_refs": [
+        "CL-b5bc8b4e766de0ef",
+        "CL-dbee760c0db43fab",
+        "CL-72f47e56c761bde4",
+        "CL-9fdeb9adf922c9da"
+      ],
+      "source_refs": [
+        "SA-cb3a20fe357ba722"
+      ],
+      "data_date": "2026-07-01",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Nano Banana 2 Lite",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Nano Banana 2 Lite",
+      "eventTitle": "谷歌推出 AI 生图模型 Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+      "eventDate": "2026-07-01",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-b5bc8b4e766de0ef",
+          "subject": "谷歌",
+          "object": "Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+          "quote": "谷歌推出 AI 生图模型 Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜 - IT之家"
+        },
+        {
+          "id": "CL-dbee760c0db43fab",
+          "subject": "谷歌",
+          "object": "Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+          "quote": "谷歌推出 AI 生图模型 Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜"
+        },
+        {
+          "id": "CL-72f47e56c761bde4",
+          "subject": "谷歌",
+          "object": "Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+          "quote": "IT之家 7 月 1 日消息，当地时间周二，谷歌发布了新款自研 AI 图像与视频生成模型 Nano Banana 2 Lite，宣称 相比上一代速度更快、使用成本更低 。"
+        },
+        {
+          "id": "CL-9fdeb9adf922c9da",
+          "subject": "谷歌",
+          "object": "Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+          "quote": "Nano Banana 2 Lite 可在 4 秒内生成一张图像 ，延迟较此前明显下降，适合需要快速反复修改方案，或在短时间内批量生成大量图像的工作，每生成 1000 张图像 仅收费 0.034 美元 （IT之家注：现汇率约合 0.23 元人民币）。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-cb3a20fe357ba722",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/970/812.htm"
+        }
+      ],
+      "sourceExcerpt": "谷歌推出 AI 生图模型 Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜 - IT之家",
+      "event": {
+        "id": "EV-d8c69ed782b73a34",
+        "title": "谷歌推出 AI 生图模型 Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+        "originalTitle": "",
+        "date": "2026-07-01",
+        "dataDate": "2026-07-01",
+        "eventTypeLabel": "模型发布"
+      }
+    },
+    {
       "relationship_id": "REL2-65389a75e3085862",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
@@ -14474,6 +14908,69 @@
         "date": "2026-06-23",
         "dataDate": "2026-06-23",
         "eventTypeLabel": "模型发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-7a95bce5aecaba79",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-2ab6d53e717a0e0d",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-bbdefa2950f49882",
+      "object_type": "entity",
+      "event_id": "EV-d1a3f5c8045e548d",
+      "claim_refs": [
+        "CL-5758242d40096958",
+        "CL-108011dcac3f51c9",
+        "CL-6816c5ea4abdfa87"
+      ],
+      "source_refs": [
+        "SA-572f0e8d4b983d74"
+      ],
+      "data_date": "2026-06-23",
+      "status": "verified",
+      "subjectName": "诺基亚",
+      "objectName": "Google",
+      "predicateLabel": "合作",
+      "title": "诺基亚 合作 Google",
+      "eventTitle": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台",
+      "eventDate": "2026-06-22",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-5758242d40096958",
+          "subject": "谷歌云与诺基亚扩大",
+          "object": "，将 Gemini 模型融入电信网络智能运维平台",
+          "quote": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台 - IT之家"
+        },
+        {
+          "id": "CL-108011dcac3f51c9",
+          "subject": "谷歌云与诺基亚扩大",
+          "object": "，将 Gemini 模型融入电信网络智能运维平台",
+          "quote": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台"
+        },
+        {
+          "id": "CL-6816c5ea4abdfa87",
+          "subject": "谷歌云与诺基亚扩大",
+          "object": "，将 Gemini 模型融入电信网络智能运维平台",
+          "quote": "IT之家 6 月 22 日消息，谷歌云与诺基亚当地时间 6 月 22 日宣布扩展合作关系，将谷歌 Gemini 模型整合至诺基亚网络软件套件 Nokia Assurance Center。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-572f0e8d4b983d74",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/967/200.htm"
+        }
+      ],
+      "sourceExcerpt": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台 - IT之家",
+      "event": {
+        "id": "EV-d1a3f5c8045e548d",
+        "title": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台",
+        "originalTitle": "",
+        "date": "2026-06-22",
+        "dataDate": "2026-06-23",
+        "eventTypeLabel": "合作"
       }
     },
     {
@@ -17570,6 +18067,76 @@
       }
     },
     {
+      "relationship_id": "REL2-44ebd8a7378accce",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d56aa2f9908f566a",
+      "object_type": "entity",
+      "event_id": "EV-22b8d155ce027905",
+      "claim_refs": [
+        "CL-0ffd4a87d0bf9a23",
+        "CL-9a3abffb4df3b677",
+        "CL-53bc4ba62a2c55fb",
+        "CL-c0d954c60d8247d3"
+      ],
+      "source_refs": [
+        "SA-30fb0e04917bc0f3"
+      ],
+      "data_date": "2026-06-11",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "DiffusionGemma",
+      "predicateLabel": "发布",
+      "title": "Google 发布 DiffusionGemma",
+      "eventTitle": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍",
+      "eventDate": "2026-06-11",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-0ffd4a87d0bf9a23",
+          "subject": "谷歌",
+          "object": "：本地 AI 推理速度提升 4 倍",
+          "quote": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍 - IT之家"
+        },
+        {
+          "id": "CL-9a3abffb4df3b677",
+          "subject": "谷歌",
+          "object": "：本地 AI 推理速度提升 4 倍",
+          "quote": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍"
+        },
+        {
+          "id": "CL-53bc4ba62a2c55fb",
+          "subject": "谷歌",
+          "object": "：本地 AI 推理速度提升 4 倍",
+          "quote": "IT之家 6 月 11 日消息，谷歌今天（6 月 11 日）发布公告，宣布推出 DiffusionGemma，是基于文本扩散机制的开放 AI 模型， 相比较自回归模型在本地推理速度上提升了 4 倍。"
+        },
+        {
+          "id": "CL-c0d954c60d8247d3",
+          "subject": "谷歌",
+          "object": "：本地 AI 推理速度提升 4 倍",
+          "quote": "开源方面，该模型能力与其他 Gemma 4 模型相当，但推理效率显著更高。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-30fb0e04917bc0f3",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/962/696.htm"
+        }
+      ],
+      "sourceExcerpt": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍 - IT之家",
+      "event": {
+        "id": "EV-22b8d155ce027905",
+        "title": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍",
+        "originalTitle": "",
+        "date": "2026-06-11",
+        "dataDate": "2026-06-11",
+        "eventTypeLabel": "模型发布"
+      }
+    },
+    {
       "relationship_id": "REL2-48cdf6bd8d397fed",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-c70eca6b0f88f44d",
@@ -18505,6 +19072,76 @@
         "date": "2026-06-10",
         "dataDate": "2026-06-10",
         "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-4aa175c42153e014",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-4baef0e41cbd7ae2",
+      "object_type": "entity",
+      "event_id": "EV-4a3cb762183581cd",
+      "claim_refs": [
+        "CL-b487cc8855f09bf4",
+        "CL-5b9c208e3329948f",
+        "CL-a0bae28c89384d4f",
+        "CL-c2d89368f69456e3"
+      ],
+      "source_refs": [
+        "SA-b6f2cdfb3b2eff0e"
+      ],
+      "data_date": "2026-06-10",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Gemini 3.5 Live Translate",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Gemini 3.5 Live Translate",
+      "eventTitle": "谷歌发布实时语音互译模型 Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+      "eventDate": "2026-06-09",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-b487cc8855f09bf4",
+          "subject": "谷歌",
+          "object": "Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+          "quote": "IT之家 6 月 9 日消息，北京时间 9 日（今天）晚间，谷歌正式发布 最新的实时语音互译音频模型 Gemini 3.5 Live Translate，迈出实时翻译的下一步。"
+        },
+        {
+          "id": "CL-5b9c208e3329948f",
+          "subject": "谷歌",
+          "object": "Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+          "quote": "Gemini 3.5 Live Translate 可自动识别 70 多种语言，并生成流畅、自然的翻译语音，同时保留说话者的语调、语速和音高 。"
+        },
+        {
+          "id": "CL-a0bae28c89384d4f",
+          "subject": "谷歌",
+          "object": "Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+          "quote": "根据介绍，传统轮流式系统通常要等说话者说完后才开始翻译，Gemini 3.5 Live Translate 则会连续生成语音，在“等待更多上下文以提升翻译质量”和“即时翻译以跟上说话者节奏”之间取得平衡。"
+        },
+        {
+          "id": "CL-c2d89368f69456e3",
+          "subject": "谷歌",
+          "object": "Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+          "quote": "Gemini 3.5 Live Translate 今起陆续登陆谷歌产品："
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-b6f2cdfb3b2eff0e",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/962/143.htm"
+        }
+      ],
+      "sourceExcerpt": "IT之家 6 月 9 日消息，北京时间 9 日（今天）晚间，谷歌正式发布 最新的实时语音互译音频模型 Gemini 3.5 Live Translate，迈出实时翻译的下一步。",
+      "event": {
+        "id": "EV-4a3cb762183581cd",
+        "title": "谷歌发布实时语音互译模型 Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+        "originalTitle": "",
+        "date": "2026-06-09",
+        "dataDate": "2026-06-10",
+        "eventTypeLabel": "模型发布"
       }
     },
     {

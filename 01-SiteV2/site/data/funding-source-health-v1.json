@@ -1,33 +1,93 @@
 {
   "schema_version": "FUNDING-SOURCE-HEALTH-V1.0",
-  "generated_at": "2026-08-14T10:21:52.438Z",
-  "date": "2026-08-14",
+  "generated_at": "2026-08-15T00:27:26.706Z",
+  "date": "2026-08-15",
   "status": "passed",
   "state": "healthy",
-  "last_checked_date": "2026-08-14",
+  "last_checked_date": "2026-08-15",
   "latest_financing_date": "2026-08-13",
   "totals": {
-    "fetched": 67,
-    "funding_candidates": 67,
-    "verified_events": 4
+    "fetched": 677,
+    "funding_candidates": 143,
+    "verified_events": 1
   },
   "channels": [
     {
+      "id": "aihot",
+      "status": "collected",
+      "last_success_at": "2026-08-15T00:11:53.292Z",
+      "response_ms": null,
+      "http_status": "200",
+      "fetched_count": 260,
+      "latest_content_date": "2026-08-14",
+      "duplicate_rate": 0,
+      "stale_rate": 1,
+      "funding_candidate_count": 2,
+      "verified_event_count": 0,
+      "failures": [],
+      "fallback_used": false
+    },
+    {
       "id": "funding",
       "status": "collected",
-      "last_success_at": "2026-08-14T09:29:52.090Z",
+      "last_success_at": "2026-08-15T00:12:19.680Z",
       "response_ms": null,
       "http_status": "200",
       "fetched_count": 67,
-      "latest_content_date": "2026-08-14",
+      "latest_content_date": "2026-08-13",
       "duplicate_rate": 0,
-      "stale_rate": 0.9851,
+      "stale_rate": 1,
       "funding_candidate_count": 67,
-      "verified_event_count": 2,
+      "verified_event_count": 0,
+      "failures": [],
+      "fallback_used": false
+    },
+    {
+      "id": "gdelt",
+      "status": "collected",
+      "last_success_at": "2026-08-15T00:22:19.315Z",
+      "response_ms": null,
+      "http_status": "200",
+      "fetched_count": 48,
+      "latest_content_date": "",
+      "duplicate_rate": 0,
+      "stale_rate": 1,
+      "funding_candidate_count": 10,
+      "verified_event_count": 0,
+      "failures": [],
+      "fallback_used": false
+    },
+    {
+      "id": "keyword",
+      "status": "collected",
+      "last_success_at": "2026-08-15T00:17:21.149Z",
+      "response_ms": null,
+      "http_status": "200",
+      "fetched_count": 175,
+      "latest_content_date": "2024-10-23",
+      "duplicate_rate": 0.0755,
+      "stale_rate": 1,
+      "funding_candidate_count": 53,
+      "verified_event_count": 1,
       "failures": [
-        "RSS latent-space-podcast: fetch failed",
-        "RSS mad-podcast: fetch failed",
-        "RSS ai-and-i-podcast: fetch failed"
+        "keyword-search pre-gate filtered 44 result(s): missing_ai_anchor_in_result=17; social_or_profile_source=15; broad_list_or_market_report=10; noise_term:hiring=2"
+      ],
+      "fallback_used": false
+    },
+    {
+      "id": "rss",
+      "status": "collected",
+      "last_success_at": "2026-08-15T00:12:00.567Z",
+      "response_ms": null,
+      "http_status": "429",
+      "fetched_count": 127,
+      "latest_content_date": "2026-08-13",
+      "duplicate_rate": 0,
+      "stale_rate": 1,
+      "funding_candidate_count": 11,
+      "verified_event_count": 0,
+      "failures": [
+        "RSS tldr-ai-newsletter: HTTP 429"
       ],
       "fallback_used": false
     }

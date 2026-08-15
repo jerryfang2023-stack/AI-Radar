@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-14T00:23:40.398Z",
-    "latestDataDate": "2026-08-14",
-    "currentDate": "2026-08-14",
-    "eventCount": 2102,
+    "generatedAt": "2026-08-15T00:27:23.598Z",
+    "latestDataDate": "2026-08-15",
+    "currentDate": "2026-08-15",
+    "eventCount": 2132,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-3acfc317c18e3ef9",
       "EV-35df5cc7eacdade7",
       "EV-3b7b9040dd2c2a89",
       "EV-a68475d82ec939b5",
@@ -40,8 +41,9 @@
       "EN-7d3194f79e645c42"
     ],
     "firstSeen": "2026-06-28",
-    "lastSeen": "2026-08-01",
+    "lastSeen": "2026-08-15",
     "relationIds": [
+      "REL2-f091501fd084bf19",
       "REL2-a74cf8f1891100be",
       "REL2-3a1dd102da0a9eae",
       "REL2-f3929ca395b55ae2",
@@ -53,6 +55,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-3acfc317c18e3ef9",
         "EV-35df5cc7eacdade7",
         "EV-3b7b9040dd2c2a89",
         "EV-30749250196dd507",
@@ -70,6 +73,23 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-3acfc317c18e3ef9",
+        "dataDate": "2026-08-15",
+        "date": "2026-08-14",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "GPT-5.6 Sol 速度提升14倍，OpenAI推出由Cerebras驱动的Ultrafast模式",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-7839fb10a8f14c70",
+          "EN-eea7f3087f260682"
+        ]
+      },
       {
         "id": "EV-35df5cc7eacdade7",
         "dataDate": "2026-08-01",
@@ -405,7 +425,11 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-3acfc317c18e3ef9",
+        "EV-8ba7a742c4d626c6",
         "EV-792c0273991852ae",
+        "EV-ae6d3c566b33532a",
+        "EV-ec36aeb4ad1f3918",
         "EV-397a17aa878564c4",
         "EV-c9ca5ee6f9c0a600",
         "EV-ed965d19d6d12e9f",
@@ -575,8 +599,10 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
-        "EV-649481503cdb7736",
+        "EV-0c00a6c681f22b98",
+        "EV-2796fca5b1714d2e",
         "EV-bce258f8f915ff5f",
+        "EV-649481503cdb7736",
         "EV-6645d194b59939ca",
         "EV-94adebee59a6dede",
         "EV-67a7a3c9f1eabd22",
@@ -637,11 +663,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
-        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-industry-aerospace_defense",
         "TX-target_user-business_user",
@@ -651,13 +679,11 @@
         "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
         "TX-industry-professional_services",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-consumer",
         "TX-use_case-customer_support",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-security_operations",
         "TX-product_form-end_user_application",
-        "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-long_context",
         "TX-technology-inference_optimization",
@@ -665,8 +691,8 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
-        "EN-916a98f0fa2a39af",
         "EN-d1ad14d4ad57d207",
+        "EN-916a98f0fa2a39af",
         "EN-7839fb10a8f14c70",
         "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
@@ -690,10 +716,31 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-14"
+      "lastSeen": "2026-08-15"
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-f091501fd084bf19",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-7839fb10a8f14c70",
+      "object_type": "entity",
+      "event_id": "EV-3acfc317c18e3ef9",
+      "claim_refs": [
+        "CL-550f70ee1fef15a8",
+        "CL-c3964d4dbf257fd7",
+        "CL-69e45d971fea9662",
+        "CL-73b7b3ea76ace64a"
+      ],
+      "source_refs": [
+        "SA-23f302c117468e26"
+      ],
+      "data_date": "2026-08-15",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-a74cf8f1891100be",
       "relationship_version": "RELATION-V2.1",

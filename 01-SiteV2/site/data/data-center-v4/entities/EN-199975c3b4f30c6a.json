@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-14T00:23:40.398Z",
-    "latestDataDate": "2026-08-14",
-    "currentDate": "2026-08-14",
-    "eventCount": 2102,
+    "generatedAt": "2026-08-15T00:27:23.598Z",
+    "latestDataDate": "2026-08-15",
+    "currentDate": "2026-08-15",
+    "eventCount": 2132,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-5ede0f85a672441c",
       "EV-7b4c53084828d7e8",
       "EV-b8fbfa3405d10bb4"
     ],
@@ -29,13 +30,14 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-13",
-    "lastSeen": "2026-08-14",
+    "lastSeen": "2026-08-15",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-5ede0f85a672441c",
         "EV-7b4c53084828d7e8",
         "EV-b8fbfa3405d10bb4"
       ],
@@ -44,6 +46,35 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-5ede0f85a672441c",
+        "dataDate": "2026-08-15",
+        "date": "2026-08-14",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "派早报：深度求索推出开源 Agent 框架 DeepSeek Harness 及配套插件生态",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-478676438ee161a3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-478676438ee161a3",
+          "EN-6f7ac1823da81d2e",
+          "EN-199975c3b4f30c6a"
+        ]
+      },
       {
         "id": "EV-7b4c53084828d7e8",
         "dataDate": "2026-08-14",
@@ -95,5 +126,75 @@
   "relationships": [],
   "taxonomyNodes": [],
   "fde": [],
-  "hardware": []
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-0b534eaa4b846780",
+      "snapshotKey": "0b534eaa4b846780",
+      "snapshotId": "HWS-954509ae3f9763b5",
+      "eventId": "EV-5ede0f85a672441c",
+      "eventIds": [
+        "EV-5ede0f85a672441c"
+      ],
+      "dataDate": "2026-08-15",
+      "date": "2026-08-15",
+      "title": "Harness",
+      "subject": "派早报",
+      "productNames": [
+        "Harness"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-d6dfa1b16d40a7fc"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-15",
+          "hardware_fact_id": "HWF-d6dfa1b16d40a7fc",
+          "fact_type": "product",
+          "observed_at": "2026-08-14T00:52:24.000Z",
+          "subject_entity_id": "EN-478676438ee161a3",
+          "subject_name": "派早报",
+          "product_entity_ids": [
+            "EN-199975c3b4f30c6a"
+          ],
+          "product_names": [
+            "Harness"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Dyna Robotics 发布机器人 AI 模型 DYNA-2 0",
+          "event_refs": [
+            "EV-5ede0f85a672441c"
+          ],
+          "claim_ref": "CL-5958c4b224ac2038",
+          "source_refs": [
+            "SA-479345b4ffeb831b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-15/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://sspai.com/post/113434",
+      "entityIds": [
+        "EN-478676438ee161a3",
+        "EN-6f7ac1823da81d2e",
+        "EN-199975c3b4f30c6a"
+      ]
+    }
+  ]
 }

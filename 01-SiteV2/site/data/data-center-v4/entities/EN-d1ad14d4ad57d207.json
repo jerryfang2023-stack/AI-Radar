@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-14T00:23:40.398Z",
-    "latestDataDate": "2026-08-14",
-    "currentDate": "2026-08-14",
-    "eventCount": 2102,
+    "generatedAt": "2026-08-15T00:27:23.598Z",
+    "latestDataDate": "2026-08-15",
+    "currentDate": "2026-08-15",
+    "eventCount": 2132,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-8ba7a742c4d626c6",
       "EV-c57d77f629c52da2",
       "EV-ab7dd515891566ab",
       "EV-8a88707160ae733d",
@@ -43,8 +44,9 @@
       "EN-7d3194f79e645c42"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-08-13",
+    "lastSeen": "2026-08-15",
     "relationIds": [
+      "REL2-1da092a830b9a42c",
       "REL2-ddc331c7e06a63b8",
       "REL2-a2d910c505cb6266",
       "REL2-251475ee05e2516c",
@@ -59,6 +61,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-8ba7a742c4d626c6",
         "EV-c57d77f629c52da2",
         "EV-ab7dd515891566ab",
         "EV-8a88707160ae733d",
@@ -79,6 +82,26 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-8ba7a742c4d626c6",
+        "dataDate": "2026-08-15",
+        "date": "2026-08-14",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Mac 版 ChatGPT 新增 Computer History 功能，不再依赖截图记录活动",
+        "displayTags": [],
+        "entityIds": [
+          "EN-b467b7ac3a330d40",
+          "EN-7d3194f79e645c42",
+          "EN-3a7bd3e2360a3d29",
+          "EN-289cde8c77f445f2",
+          "EN-d1ad14d4ad57d207",
+          "EN-429c4744ee4069e6"
+        ]
+      },
       {
         "id": "EV-c57d77f629c52da2",
         "dataDate": "2026-08-13",
@@ -461,7 +484,11 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-3acfc317c18e3ef9",
+        "EV-8ba7a742c4d626c6",
         "EV-792c0273991852ae",
+        "EV-ae6d3c566b33532a",
+        "EV-ec36aeb4ad1f3918",
         "EV-397a17aa878564c4",
         "EV-c9ca5ee6f9c0a600",
         "EV-ed965d19d6d12e9f",
@@ -631,8 +658,10 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
-        "EV-649481503cdb7736",
+        "EV-0c00a6c681f22b98",
+        "EV-2796fca5b1714d2e",
         "EV-bce258f8f915ff5f",
+        "EV-649481503cdb7736",
         "EV-6645d194b59939ca",
         "EV-94adebee59a6dede",
         "EV-67a7a3c9f1eabd22",
@@ -693,11 +722,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
-        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-industry-aerospace_defense",
         "TX-target_user-business_user",
@@ -707,13 +738,11 @@
         "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
         "TX-industry-professional_services",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-consumer",
         "TX-use_case-customer_support",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-security_operations",
         "TX-product_form-end_user_application",
-        "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-long_context",
         "TX-technology-inference_optimization",
@@ -721,8 +750,8 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
-        "EN-916a98f0fa2a39af",
         "EN-d1ad14d4ad57d207",
+        "EN-916a98f0fa2a39af",
         "EN-7839fb10a8f14c70",
         "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
@@ -746,10 +775,31 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-14"
+      "lastSeen": "2026-08-15"
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-1da092a830b9a42c",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d1ad14d4ad57d207",
+      "object_type": "entity",
+      "event_id": "EV-8ba7a742c4d626c6",
+      "claim_refs": [
+        "CL-da1e2017d5d94e2e",
+        "CL-2eb3d171ad9aa380",
+        "CL-6878f6a4ac5e8e13",
+        "CL-3de17f2ab718f1c0"
+      ],
+      "source_refs": [
+        "SA-be48aa3e0eb1734e"
+      ],
+      "data_date": "2026-08-15",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-ddc331c7e06a63b8",
       "relationship_version": "RELATION-V2.1",
@@ -918,5 +968,84 @@
   ],
   "taxonomyNodes": [],
   "fde": [],
-  "hardware": []
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-8cfb58e95dcff78d",
+      "snapshotKey": "8cfb58e95dcff78d",
+      "snapshotId": "HWS-95e9fb100281fb47",
+      "eventId": "EV-8ba7a742c4d626c6",
+      "eventIds": [
+        "EV-8ba7a742c4d626c6"
+      ],
+      "dataDate": "2026-08-15",
+      "date": "2026-08-15",
+      "title": "Computer History / ChatGPT / Computer History AI",
+      "subject": "Mac 版 ChatGPT",
+      "productNames": [
+        "Computer History",
+        "ChatGPT",
+        "Computer History AI"
+      ],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-df9bb5293b37f569"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-15",
+          "hardware_fact_id": "HWF-df9bb5293b37f569",
+          "fact_type": "product",
+          "observed_at": "2026-08-14T01:00:25.000Z",
+          "subject_entity_id": "EN-b467b7ac3a330d40",
+          "subject_name": "Mac 版 ChatGPT",
+          "product_entity_ids": [
+            "EN-289cde8c77f445f2",
+            "EN-d1ad14d4ad57d207",
+            "EN-429c4744ee4069e6"
+          ],
+          "product_names": [
+            "Computer History",
+            "ChatGPT",
+            "Computer History AI"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 8 月 14 日消息，OpenAI 昨日（8 月 13 日）发布博文，宣布以可选方式推出 Computer History 功能， 取代先前的 Chronicle 研究预览功能 ， 为 Mac 版 ChatGPT 桌面应用提供活动记忆与时间线支持。",
+          "event_refs": [
+            "EV-8ba7a742c4d626c6"
+          ],
+          "claim_ref": "CL-6878f6a4ac5e8e13",
+          "source_refs": [
+            "SA-be48aa3e0eb1734e"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-15/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/989/518.htm",
+      "entityIds": [
+        "EN-b467b7ac3a330d40",
+        "EN-7d3194f79e645c42",
+        "EN-3a7bd3e2360a3d29",
+        "EN-289cde8c77f445f2",
+        "EN-d1ad14d4ad57d207",
+        "EN-429c4744ee4069e6"
+      ]
+    }
+  ]
 }
