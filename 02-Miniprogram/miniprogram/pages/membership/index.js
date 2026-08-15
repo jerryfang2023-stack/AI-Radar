@@ -1,6 +1,8 @@
 const { MEMBER_RIGHTS, PRICING_PLANS, getMembership, getWallet, syncMembership } = require("../../utils/member.js");
 const { fetchMembership, purchaseMembership } = require("../../utils/payment.js");
 
+const CUSTOMER_SERVICE_QR = "/assets/support/customer-service-wechat.jpg";
+
 Page({
   data: {
     rights: MEMBER_RIGHTS,
@@ -16,6 +18,9 @@ Page({
     this.refreshRemoteMembership();
   },
   openGrowth() { wx.navigateTo({ url: "/pages/growth/index" }); },
+  openCustomerService() {
+    wx.previewImage({ current: CUSTOMER_SERVICE_QR, urls: [CUSTOMER_SERVICE_QR] });
+  },
   selectPlan(event) {
     if (this.data.purchasing) return;
     this.setData({ selectedPlanId: event.currentTarget.dataset.id });

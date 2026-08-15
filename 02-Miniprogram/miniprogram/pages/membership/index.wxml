@@ -28,6 +28,12 @@
     </view>
 
     <view class="rules-card"><text class="serif">权益说明</text><text>会员有效期内可浏览融资、生态、观察和我的全部栏目。积分兑换成功后，有效期会在当前权益结束日期之后顺延。</text></view>
+
+    <view class="support-card" bindtap="openCustomerService">
+      <image class="support-qr" src="/assets/support/customer-service-wechat.jpg" mode="aspectFill" />
+      <view><text class="support-title">支付与退款客服</text><text class="support-copy">微信扫码联系</text></view>
+      <text class="support-action">查看二维码</text>
+    </view>
   </view>
   <registration-sheet visible="{{registrationOpen}}" bind:close="closeRegistration" bind:registered="registrationCompleted" bind:continue="continueAfterRegistration" />
 </view>

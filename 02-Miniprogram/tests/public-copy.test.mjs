@@ -37,6 +37,7 @@ const registrationSource = fs.readFileSync("miniprogram/components/registration-
 const registrationLogic = fs.readFileSync("miniprogram/components/registration-sheet/index.js", "utf8");
 const terminalLogic = fs.readFileSync("miniprogram/pages/terminal/index.js", "utf8");
 const membershipLogic = fs.readFileSync("miniprogram/pages/membership/index.js", "utf8");
+const customerServiceQr = "miniprogram/assets/support/customer-service-wechat.jpg";
 const fundingRowStyles = fs.readFileSync("miniprogram/components/funding-row/index.wxss", "utf8");
 const terminalStyles = fs.readFileSync("miniprogram/pages/terminal/index.wxss", "utf8");
 const publicFiles = [
@@ -112,6 +113,9 @@ test("exposes the confirmed membership plans and point exchange entry", () => {
   assert.match(paymentSource, /wx\.requestVirtualPayment/u);
   assert.doesNotMatch(paymentSource, /wx\.requestPayment/u);
   assert.match(membershipSource, /15 天内支持全额退款/u);
+  assert.match(membershipSource, /支付与退款客服/u);
+  assert.match(membershipLogic, /wx\.previewImage/u);
+  assert.ok(fs.existsSync(customerServiceQr));
   assert.match(paymentSource, /result\?\.order\?\.status !== "PAID"/u);
   assert.doesNotMatch(membershipLogic, /付费开通暂未开放/u);
 });

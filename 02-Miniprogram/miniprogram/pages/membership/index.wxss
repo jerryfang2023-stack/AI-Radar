@@ -30,3 +30,9 @@
 .rules-card { display: grid; gap: 10rpx; padding: 24rpx; border-left: 5rpx solid #c8a766; background: #f7f4ef; }
 .rules-card text:first-child { color: #071827; font-size: 26rpx; font-weight: 600; }
 .rules-card text:last-child { color: #516273; font-size: 22rpx; line-height: 1.7; }
+.support-card { display: grid; grid-template-columns: 72rpx 1fr auto; align-items: center; gap: 18rpx; padding: 20rpx 24rpx; border: 1rpx solid #e5e8ec; border-radius: 18rpx; background: #fff; }
+.support-qr { width: 72rpx; height: 72rpx; border-radius: 10rpx; background: #f7f4ef; }
+.support-card > view { display: flex; min-width: 0; flex-direction: column; gap: 6rpx; }
+.support-title { color: #071827; font-size: 25rpx; font-weight: 600; }
+.support-copy { color: #6f7f8f; font-size: 20rpx; }
+.support-action { color: #9b6d20; font-size: 21rpx; font-weight: 600; }
