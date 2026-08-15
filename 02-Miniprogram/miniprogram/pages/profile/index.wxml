@@ -32,7 +32,7 @@
 
     <view class="membership-card" bindtap="openMembership">
       <view class="membership-copy"><view><text class="membership-kicker">会员权益</text><text class="membership-status">{{growth.membership.statusLabel}}</text></view><text wx:if="{{growth.membership.active}}">有效至 {{growth.membership.activeUntil}}</text><text wx:else>浏览全部栏目</text></view>
-      <view class="membership-action">{{growth.membership.status === 'unregistered' ? '立即注册' : (growth.membership.active ? '续费会员' : '开通会员')}}<text>›</text></view>
+      <view class="membership-action">{{growth.membership.status === 'unregistered' ? '立即注册' : '积分兑换'}}<text>›</text></view>
     </view>
 
     <view class="community-card">

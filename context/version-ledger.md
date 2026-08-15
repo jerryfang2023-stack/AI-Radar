@@ -43,7 +43,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Opportunity Map column version | OMAP-V2.0.0-v4-evidence |
 | Trend Radar column version | TRADAR-V1.1.0-tag-v4-1 |
 | Funding Insights column version | FUNDING-INSIGHT-V1.5.0-china-market |
-| WeChat Mini Program version | V0.5.8-translation-compatibility-integration |
+| WeChat Mini Program version | V0.5.9-no-cash-payment-review |
 | Investment institution projection | INVESTMENT-INSTITUTION-V1.0 |
 | Data Center Raw contract | RAW-V4.0 |
 | Data Center structured source intake | SOURCE-INTAKE-V1.1 |
@@ -205,6 +205,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `miniprogram-v0.5.9` | Mini Program registration trial / point-based membership redemption / V0.5 financing and navigation compatibility / community integration | 2026-08-15 | 2026-08-15T12:10:00+08:00 | V0.5.9-no-cash-payment-review | cash pricing; membership purchase or renewal CTA; WeChat Pay invocation; order-creation and order-query calls in the Mini Program package; V0.5 financing-card or tab-bar regressions | no-cash capability/copy regression + Mini Program data build + behavioral/copy tests + project validation + final diff review against `miniprogram-v0.5.8` |
 | `miniprogram-v0.5.8` | Mini Program financing data localization / V0.5 financing cards and custom tab bar / onboarding and member linking / membership and community integration | 2026-08-15 | 2026-08-15T03:03:00+08:00 | V0.5.8-translation-compatibility-integration | untranslated public financing fields; gray placeholder financing avatars; edge-to-edge financing summary strip; default icon tab bar; repeated registration for verified community members; retired local 128-point starter grant; auxiliary/internal production copy; community essays behind a membership paywall | V0.5.6 translation projection parity check + Mini Program data build + behavioral/copy tests + project validation + final diff review against `miniprogram-v0.5.7` |
 | `miniprogram-v0.5.7` | Mini Program financing list / custom tab bar / onboarding and member linking / membership and community integration | 2026-08-14 | 2026-08-14T23:30:00+08:00 | V0.5.7-v0.5-compatibility-repair | gray placeholder financing avatars; edge-to-edge financing summary strip; default icon tab bar; repeated registration for verified community members; retired local 128-point starter grant; auxiliary/internal production copy; community essays behind a membership paywall | Mini Program data build + 53 behavioral/copy tests + project validation + 21 Payment Service tests + final diff review against `miniprogram-v0.5.0` |
 | `v4.8.1-research-retirement` | Guanlan Research retirement / financing and report compatibility redirects / financing-site report publication | 2026-08-10 | 2026-08-10T19:45:00+08:00 | V4.8.1-research-retirement / SITE-V4.6.1-research-retirement / REPORTS-V1.3.0-funding-portal | local Guanlan Research hub; duplicate financing/report frontstages; hand-maintained report lists; FDE as a standalone navigation entry; report date regression or missing bodies | report discovery/completeness/non-regression gate + redirect regression + full V4 tests + financing-site live readback + GitHub Pages deploy |

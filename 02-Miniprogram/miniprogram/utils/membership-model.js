@@ -1,11 +1,5 @@
 const DAY_MS = 24 * 60 * 60 * 1000;
 const TRIAL_DAYS = 7;
-const MONTHLY_PRICE = 30;
-const PRICING_PLANS = [
-  { id: "monthly", title: "月度会员", price: 30, unit: "月", days: 30 },
-  { id: "half_year", title: "半年会员", price: 168, unit: "6 个月", days: 180, badge: "省 12 元" },
-  { id: "annual", title: "年度会员", price: 300, unit: "年", days: 365, badge: "省 60 元" },
-];
 
 function iso(value) {
   return new Date(value).toISOString();
@@ -58,4 +52,4 @@ function extendMembership(value, days, now = Date.now()) {
   return { ...value, memberEndsAt: iso(start + Math.max(0, Number(days) || 0) * DAY_MS) };
 }
 
-module.exports = { DAY_MS, TRIAL_DAYS, MONTHLY_PRICE, PRICING_PLANS, createMembership, membershipSnapshot, extendMembership };
+module.exports = { DAY_MS, TRIAL_DAYS, createMembership, membershipSnapshot, extendMembership };

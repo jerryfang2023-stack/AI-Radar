@@ -6,20 +6,14 @@
       <text class="status-title serif">{{membership.statusLabel}}</text>
       <text wx:if="{{membership.active}}" class="status-copy">剩余 {{membership.remainingDays}} 天 · 有效至 {{membership.activeUntil}}</text>
       <text wx:elif="{{membership.status === 'unregistered'}}" class="status-copy">完成注册即可领取 7 天完整栏目体验。</text>
-      <text wx:else class="status-copy">体验期已结束，可开通会员或使用活跃积分兑换。</text>
+      <text wx:else class="status-copy">体验期已结束，可使用活跃积分兑换会员权益。</text>
     </view>
 
     <view class="plan-card">
-      <view class="plan-title"><view><text class="serif">观澜会员</text><text>所有栏目的完整浏览权</text></view><view><text class="plan-price mono">30</text><text>元/月起</text></view></view>
-      <view class="pricing-list">
-        <view class="pricing-item {{selectedPlanId === item.id ? 'selected' : ''}}" wx:for="{{plans}}" wx:key="id" data-id="{{item.id}}" bindtap="selectPlan">
-          <view><text class="plan-radio"></text><text>{{item.title}}</text><text wx:if="{{item.badge}}" class="pricing-badge">{{item.badge}}</text></view>
-          <view><text class="mono">{{item.price}}</text><text>元 / {{item.unit}}</text></view>
-        </view>
-      </view>
+      <view class="plan-title"><view><text class="serif">观澜会员</text><text>所有栏目的完整浏览权</text></view></view>
       <view class="rights-list"><view wx:for="{{rights}}" wx:key="*this"><text>✓</text><text>{{item}}</text></view></view>
-      <button class="subscribe-button" loading="{{purchasing}}" disabled="{{purchasing}}" bindtap="subscribe">{{purchasing ? '正在处理' : (membership.status === 'unregistered' ? '注册并开启 7 天体验' : '立即开通会员')}}</button>
-      <text class="plan-note">新用户完成注册后获得 7 天完整权益体验；月度、半年和年度会员均不自动续费。</text>
+      <button wx:if="{{membership.status === 'unregistered'}}" class="subscribe-button" bindtap="openRegistration">注册并开启 7 天体验</button>
+      <text class="plan-note">新用户完成注册后获得 7 天完整权益体验；已注册用户可使用活跃积分兑换会员权益。</text>
     </view>
 
     <view class="exchange-card" bindtap="openGrowth">
