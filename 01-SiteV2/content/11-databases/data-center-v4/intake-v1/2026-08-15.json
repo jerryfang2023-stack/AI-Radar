@@ -2858,6 +2858,18 @@
         "evidence://0017c8109d8c6410"
       ],
       "content_hash": "0017c8109d8c6410"
+    },
+    {
+      "source_artifact_id": "SA-d89b7c61fb5df061",
+      "source_url": "https://app.dealroom.co/news/note/optimly-raises-800k-pre-seed-to-help-brands-shape-what-ai-says-about-them",
+      "canonical_url": "https://app.dealroom.co/news/note/optimly-raises-800k-pre-seed-to-help-brands-shape-what-ai-says-about-them",
+      "publisher": "keyword search / Anysearch",
+      "capture_method": "main",
+      "captured_at": "2026-08-15T00:23:11.238Z",
+      "snapshot_refs": [
+        "evidence://590ac0f84ea7f5a7"
+      ],
+      "content_hash": "590ac0f84ea7f5a7"
     }
   ],
   "raw_documents": [
@@ -19749,11 +19761,84 @@
         "eligible_for_v4_extraction": false
       },
       "body_storage": "private_evidence_store"
+    },
+    {
+      "schema_version": "RAW-V4.0",
+      "raw_id": "RAW-3d7534281c892b00",
+      "source_artifact_id": "SA-d89b7c61fb5df061",
+      "source_url": "https://app.dealroom.co/news/note/optimly-raises-800k-pre-seed-to-help-brands-shape-what-ai-says-about-them",
+      "canonical_url": "https://app.dealroom.co/news/note/optimly-raises-800k-pre-seed-to-help-brands-shape-what-ai-says-about-them",
+      "publisher": "keyword search / Anysearch",
+      "author": "",
+      "published_at": "",
+      "captured_at": "2026-08-15T00:23:11.238Z",
+      "language": "mixed",
+      "document_type": "industry",
+      "title_original": "Optimly raises $800K pre-seed to help brands shape what AI says about them | Dealroom.co",
+      "title_zh": "Optimly 筹集 80 万美元种子前融资，帮助品牌塑造 AI 对它们的评价",
+      "body_ref": "evidence://590ac0f84ea7f5a7",
+      "content_hash": "590ac0f84ea7f5a7",
+      "capture_method": "main",
+      "extraction_status": "accepted",
+      "market_scope": {
+        "source_registry_id": "",
+        "source_region": "",
+        "market_region": "",
+        "china_market_match": false,
+        "china_market_match_basis": ""
+      },
+      "intake_diagnostics": {
+        "acquisition_channel": "keyword-search",
+        "search_path": "capital_startup",
+        "evidence_object_type": "case_or_customer",
+        "evidence_object_usable": true,
+        "evidence_strength": "rich_evidence",
+        "raw_qc_decision": "allow",
+        "raw_qc_downstream_use": "eligible_after_qc",
+        "extraction_quality": "high",
+        "readability_score": 79,
+        "has_full_text": true,
+        "origin_fetch_status": "",
+        "key_excerpts": [
+          {
+            "type": "funding",
+            "text": "Optimly raises $800K pre-seed to help brands shape what AI says about them | Dealroom.co Share # Optimly raises $800K pre-seed to help brands shape what AI says about them ● Jul 2026 What's the deal? Seattle startup Optimly has closed an $800,000 pre-seed round to build a public index that lets ... / query=applied AI startup raises design partner customers / intent=find_startups / path=capital_startup",
+            "confidence": "high"
+          },
+          {
+            "type": "funding",
+            "text": "Back to feed Share Optimly raises $800K pre-seed to help brands shape what AI says about them ● Jul 2026 What's the deal?",
+            "confidence": "high"
+          },
+          {
+            "type": "funding",
+            "text": "Seattle startup Optimly has closed an $800,000 pre-seed round to build a public index that lets brands correct what AI chatbots say about them.",
+            "confidence": "high"
+          },
+          {
+            "type": "product_update",
+            "text": "Flywheel Angel Network, Mighty Capital, AI House, and ai2 incubator backed the round, which was announced in July 2026.",
+            "confidence": "high"
+          },
+          {
+            "type": "company_action",
+            "text": "The problem: AI models rarely learn about a brand from its own website.",
+            "confidence": "high"
+          },
+          {
+            "type": "company_action",
+            "text": "They read Wikipedia, Reddit, reviews, and analyst write-ups, then synthesise a response when shoppers ask about a company or product.",
+            "confidence": "high"
+          }
+        ],
+        "eligible_for_v4_extraction": true
+      },
+      "body_storage": "private_evidence_store"
     }
   ],
   "counts": {
-    "source_artifacts": 238,
-    "raw_documents": 238,
-    "eligible_documents": 208
+    "source_artifacts": 239,
+    "raw_documents": 239,
+    "eligible_documents": 209
   }
 }

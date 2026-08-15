@@ -14,7 +14,8 @@
       "blocked": 0,
       "pending": 0,
       "deduplicated": 0
-    }
+    },
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
@@ -353,9 +354,12 @@
         "market_subcategory_id": "observability_evaluation",
         "market_application_id": "ai_observability_governance",
         "use_case_ids": [
-          "security_operations"
+          "software_development",
+          "productivity_enterprise_workflows"
         ],
-        "industry_ids": [],
+        "industry_ids": [
+          "professional_services"
+        ],
         "target_user_ids": [
           "developer"
         ],
@@ -506,7 +510,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 2,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-14T03:15:42.766Z"
+        "generated_at": "2026-08-14T03:15:42.766Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-c1295b8f58024ff6",
+          "confidence": 0.88,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -947,11 +959,14 @@
         "product_form_id": "security_software",
         "market_category_id": "infrastructure_compute",
         "market_subcategory_id": "observability_evaluation",
-        "market_application_id": "ai_observability_governance",
+        "market_application_id": "model_agent_security",
         "use_case_ids": [
-          "security_operations"
+          "security_operations",
+          "software_development"
         ],
-        "industry_ids": [],
+        "industry_ids": [
+          "professional_services"
+        ],
         "target_user_ids": [
           "developer"
         ],
@@ -1122,7 +1137,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-14T03:13:56.065Z"
+        "generated_at": "2026-08-14T03:13:56.065Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-33053abbe1a60b38",
+          "confidence": 0.78,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1686,10 +1709,10 @@
         "market_application_id": "models",
         "use_case_ids": [
           "software_development",
-          "knowledge_search",
-          "data_analysis"
+          "productivity_enterprise_workflows"
         ],
         "industry_ids": [
+          "professional_services",
           "financial_services",
           "healthcare_life_sciences"
         ],
@@ -1914,7 +1937,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-14T03:13:19.260Z"
+        "generated_at": "2026-08-14T03:13:19.260Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-f5dd6dec49ad83aa",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -2286,11 +2317,15 @@
         "market_subcategory_id": "data",
         "market_application_id": "data_preparation_curation",
         "use_case_ids": [
-          "data_analysis"
+          "physical_automation"
         ],
-        "industry_ids": [],
+        "industry_ids": [
+          "manufacturing",
+          "automotive_transportation",
+          "logistics_supply_chain"
+        ],
         "target_user_ids": [
-          "business_user"
+          "developer"
         ],
         "sector": "具身智能数据基础设施",
         "investment_thesis": {
@@ -2402,7 +2437,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-14T03:11:18.771Z"
+        "generated_at": "2026-08-14T03:11:18.771Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-1765fd690cff1cac",
+          "confidence": 0.82,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

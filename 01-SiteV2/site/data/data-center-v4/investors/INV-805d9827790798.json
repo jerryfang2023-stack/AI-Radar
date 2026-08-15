@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-15T06:28:44.051Z",
+    "latestDataDate": "2026-08-15",
+    "currentDate": "2026-08-15",
+    "eventCount": 2129,
+    "quarantinedEventCount": 16
+  },
+  "institution": {
+    "id": "INV-805d9827790798",
+    "name": "Flywheel Fund",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-07-08",
+    "latest_disclosed_at": "2026-07-08",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-ea05abb6f7f93574",
+        "funding_insight_id": "FI-f1922b3b47f9f920",
+        "event_ids": [
+          "EV-bdcb22b1a53358f5"
+        ],
+        "company_entity_id": "EN-67e8c106650aa683",
+        "company_canonical_entity_id": "",
+        "company_name": "Optimly",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "$800K",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 800000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "80 万美元"
+        },
+        "announced_at": "2026-07-08",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次或来源表述不一致的投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4487790d79fc1676",
+            "source_url": "https://www.gaebler.com/VC-Funding-7787179C-B127-4CBF-B7A7-A47792D933C1-Optimly-07-08-2026",
+            "source_title": "Optimly 7/8/2026 Capital Raise - Gaebler.com Venture Capital Database",
+            "source_content_hash": "bdd2ecc5db52aaf8",
+            "quote": "secured $800 thousand in funding from Flywheel Fund and Mighty Capital",
+            "quote_hash": "7bfccda9d55df3794b350a818d01d038af563c3b52f6bbcbc663af70ed664795"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-4487790d79fc1676",
+        "source_url": "https://www.gaebler.com/VC-Funding-7787179C-B127-4CBF-B7A7-A47792D933C1-Optimly-07-08-2026",
+        "source_title": "Optimly 7/8/2026 Capital Raise - Gaebler.com Venture Capital Database",
+        "source_content_hash": "bdd2ecc5db52aaf8",
+        "quote": "secured $800 thousand in funding from Flywheel Fund and Mighty Capital",
+        "quote_hash": "7bfccda9d55df3794b350a818d01d038af563c3b52f6bbcbc663af70ed664795"
+      }
+    ]
+  }
+}

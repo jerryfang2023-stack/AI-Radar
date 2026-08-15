@@ -340,6 +340,7 @@ jobs:
             --fetch-timeout-ms=20000 \
             --snapshot-timeout-ms=16000 \
             --use-source-artifacts=true \
+            --merge-existing-intake=true \
             --source-artifact-dir="agent-workflow/reports/source-runs/${RUN_DATE}" \
             --source-refresh-timeout-ms=900000 \
             --monitor-timeout-ms=900000 \

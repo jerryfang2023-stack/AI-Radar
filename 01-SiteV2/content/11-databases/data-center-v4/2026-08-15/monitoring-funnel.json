@@ -9,13 +9,13 @@
       "fde_procurement_contract",
       "fde_production_rollout"
     ],
-    "raw_documents": 98,
-    "original_sources": 87,
-    "valid_claims": 24,
-    "observations": 2,
-    "canonical_events": 7,
+    "raw_documents": 99,
+    "original_sources": 88,
+    "valid_claims": 31,
+    "observations": 3,
+    "canonical_events": 11,
     "blocker_counts": {
-      "no_source_bounded_event": 12,
+      "no_source_bounded_event": 9,
       "non_event_or_index_title": 6,
       "source_outside_daily_window": 56,
       "source_published_after_data_date": 2,
@@ -26,10 +26,10 @@
       "raw_source_quality_block": 11
     },
     "rates": {
-      "original_source_rate": 0.8877551020408163,
-      "valid_claim_rate": 0.24489795918367346,
-      "observation_rate": 0.08333333333333333,
-      "event_conversion_rate": 0.2916666666666667
+      "original_source_rate": 0.8888888888888888,
+      "valid_claim_rate": 0.31313131313131315,
+      "observation_rate": 0.0967741935483871,
+      "event_conversion_rate": 0.3548387096774194
     }
   },
   {
@@ -45,21 +45,20 @@
     ],
     "raw_documents": 20,
     "original_sources": 20,
-    "valid_claims": 8,
+    "valid_claims": 10,
     "observations": 5,
-    "canonical_events": 3,
+    "canonical_events": 5,
     "blocker_counts": {
       "source_outside_daily_window": 8,
-      "no_source_bounded_event": 2,
+      "no_source_bounded_event": 1,
       "source_outside_funding_backfill_window": 3,
-      "no_source_bounded_claim": 1,
       "raw_source_quality_block": 2
     },
     "rates": {
       "original_source_rate": 1,
-      "valid_claim_rate": 0.4,
-      "observation_rate": 0.625,
-      "event_conversion_rate": 0.375
+      "valid_claim_rate": 0.5,
+      "observation_rate": 0.5,
+      "event_conversion_rate": 0.5
     }
   }
 ]

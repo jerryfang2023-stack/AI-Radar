@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-12T11:49:37.510Z",
+    "generated_at": "2026-08-15T06:11:46.646Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 271,
-    "input_hash": "2bfec4f01d0677cd",
+    "decision_count": 277,
+    "input_hash": "22466a2773393652",
     "override_count": 17,
     "needs_review_count": 0,
-    "low_confidence_count": 0
+    "low_confidence_count": 2
   },
   "decisions": [
     {
@@ -5351,6 +5351,131 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "River API 提供模型访问、强化学习与 LoRA 微调，面向开发者，属于模型即服务，不涉及物理世界感知决策，也不限定单一行业，因此归入基础设施计算下的开发部署-模型。"
+    },
+    {
+      "event_id": "EV-1765fd690cff1cac",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "data_preparation_curation",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "automotive_transportation",
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.82,
+      "needs_review": false,
+      "rationale": "公司定位为物理AI数据基础设施，提供数据泛化与质量引擎，属于为其他AI产品构建者提供数据基础设施，而非直接部署机器人，故归入infrastructure_compute下的数据准备与治理。"
+    },
+    {
+      "event_id": "EV-f5dd6dec49ad83aa",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "software_development",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "professional_services",
+        "financial_services",
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Anthropic提供Claude模型及编码代理，属于供其他AI产品构建者使用的模型基础设施，证据明确指向模型层而非单一行业应用。"
+    },
+    {
+      "event_id": "EV-cca4bd983a16b8d9",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [
+        "professional_services"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "Blacksmith提供CI云作为GitHub Actions替代品，属于开发者部署与编排基础设施，证据明确指向开发部署工具。"
+    },
+    {
+      "event_id": "EV-33053abbe1a60b38",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "model_agent_security",
+      "product_form_id": "security_software",
+      "use_case_ids": [
+        "security_operations",
+        "software_development"
+      ],
+      "industry_ids": [
+        "professional_services"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.78,
+      "needs_review": false,
+      "rationale": "该基金为开源项目提供安全培训与工具，属于面向开发者的安全基础设施，归入模型/代理安全而非行业应用。"
+    },
+    {
+      "event_id": "EV-c1295b8f58024ff6",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "ai_observability_governance",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "software_development",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "professional_services"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.88,
+      "needs_review": false,
+      "rationale": "Lemma提供AI代理生产监控与可观测性基础设施，证据明确指向可观测性治理，而非单一行业应用。"
+    },
+    {
+      "event_id": "EV-bdcb22b1a53358f5",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "data_preparation_curation",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "knowledge_search",
+        "content_creation"
+      ],
+      "industry_ids": [
+        "retail_ecommerce",
+        "media_entertainment"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.75,
+      "needs_review": false,
+      "rationale": "Optimly 提供品牌信任基础设施，构建 AI 品牌索引供 AI 代理调用，属于为其他 AI 产品提供数据/基础设施的范畴，而非面向单一行业或跨行业业务功能。"
     }
   ],
   "inputs": [
@@ -5517,7 +5642,7 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "chip_accelerator",
+        "product_form_id": "ai_compute_system",
         "market_category_id": "infrastructure_compute"
       }
     },
@@ -6411,6 +6536,34 @@
       }
     },
     {
+      "event_id": "EV-1765fd690cff1cac",
+      "funding_insight_id": "FI-954a5b556c0c4bfb",
+      "company_name": "元点科技（SCALEFORCE）",
+      "company_full_name": "元点科技（SCALEFORCE）",
+      "website": "",
+      "current_sector": "具身智能数据基础设施",
+      "company_evidence_quotes": [
+        "具身智能数据基础设施公司元点科技（SCALEFORCE）完成数千万元人民币融资",
+        "元点科技瞄准这一机会，致力于打造物理AI数据基础设施。"
+      ],
+      "products": [
+        {
+          "name": "MatrixOS",
+          "evidence_quotes": [
+            "公司推出了物理AI操作系统MatrixOS，其中包含ADA数据泛化引擎，可将数据跨本体复用的成功率提升至92%；以及GDP数据质量引擎，将数据可用转化率提升至国内最高的80%。"
+          ]
+        }
+      ],
+      "customer_names": [
+        "它石智航",
+        "智在无界"
+      ],
+      "current_classification": {
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-af8e95dbe06ac083",
       "funding_insight_id": "FI-3da519dabfb33915",
       "company_name": "智平方（AI² Robotics）",
@@ -7105,6 +7258,34 @@
       }
     },
     {
+      "event_id": "EV-f5dd6dec49ad83aa",
+      "funding_insight_id": "FI-ced47003fc7074e5",
+      "company_name": "Anthropic",
+      "company_full_name": "Anthropic",
+      "website": "",
+      "current_sector": "企业级AI模型与产品",
+      "company_evidence_quotes": [
+        "Founded in 2021, Anthropic has positioned itself as being focused on safety and responsible tech development.",
+        "San Francisco, CA - February, 12, 2026 – GIC, a global institutional investor, has led Anthropic’s $30 billion Series G alongside Coatue, valuing Anthropic at $380 billion post-money."
+      ],
+      "products": [
+        {
+          "name": "Claude",
+          "evidence_quotes": [
+            "Claude is becoming more and more critical to how businesses work",
+            "Anthropic’s technology, including coding agents that can write and debug software with minimal human input, has recently shaken global markets."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Fortune 10企业（八家）"
+      ],
+      "current_classification": {
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-78a11d309c3d4e97",
       "funding_insight_id": "FI-34ad46762c245ae0",
       "company_name": "Anthropic PBC",
@@ -7273,7 +7454,7 @@
       "customer_names": [],
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
-        "market_category_id": "enterprise_applications"
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -7497,6 +7678,36 @@
       "current_classification": {
         "product_form_id": "end_user_application",
         "market_category_id": "industry_applications"
+      }
+    },
+    {
+      "event_id": "EV-cca4bd983a16b8d9",
+      "funding_insight_id": "FI-dc250800fa39a4b6",
+      "company_name": "Blacksmith",
+      "company_full_name": "Blacksmith",
+      "website": "https://www.blacksmith.sh",
+      "current_sector": "开发者基础设施",
+      "company_evidence_quotes": [
+        "Today, developers know us as a drop-in replacement for GitHub Actions runners which is twice as fast at half the cost."
+      ],
+      "products": [
+        {
+          "name": "Blacksmith CI Cloud",
+          "evidence_quotes": [
+            "Today, developers know us as a drop-in replacement for GitHub Actions runners which is twice as fast at half the cost."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Clerk",
+        "Chroma",
+        "Ashby",
+        "VEED",
+        "Mintlify"
+      ],
+      "current_classification": {
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -8878,6 +9089,38 @@
       }
     },
     {
+      "event_id": "EV-33053abbe1a60b38",
+      "funding_insight_id": "FI-8036bbbb426a4611",
+      "company_name": "GitHub Secure Open Source Fund",
+      "company_full_name": "GitHub Secure Open Source Fund",
+      "website": "https://github.com/open-source/github-secure-open-source-fund",
+      "current_sector": "开源软件安全",
+      "company_evidence_quotes": [
+        "GitHub Secure Open Source Fund Powered by GitHub Sponsors",
+        "the GitHub Secure Open Source Fund, a program designed to financially and programmatically improve security and sustainability of open source projects"
+      ],
+      "products": [
+        {
+          "name": "GitHub Secure Open Source Fund",
+          "evidence_quotes": [
+            "Funding: $10,000 per project in funding aligned with the program outcomes Education: 3 week program: 5-10 hours of instruction, workshops and project-specific security milestones",
+            "the three-week program will provide maintainers with security education, mentorship, tooling, certification, and more"
+          ]
+        }
+      ],
+      "customer_names": [
+        "Bootstrap",
+        "Express.js",
+        "JUnit",
+        "nvm",
+        "Oh My Zsh"
+      ],
+      "current_classification": {
+        "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-26613b5bff756274",
       "funding_insight_id": "FI-4bcb177ce9d0b4d0",
       "company_name": "Goodfire AI",
@@ -9689,6 +9932,32 @@
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
         "market_category_id": "industry_applications"
+      }
+    },
+    {
+      "event_id": "EV-c1295b8f58024ff6",
+      "funding_insight_id": "FI-f3e3fb3f81731c5f",
+      "company_name": "Lemma",
+      "company_full_name": "Lemma",
+      "website": "https://lemma.com",
+      "current_sector": "AI 智能体可观测性与可靠性基础设施",
+      "company_evidence_quotes": [
+        "an AI agent reliability startup, has raised $2.3 million in pre-seed funding to build monitoring infrastructure that catches agents which appear to complete a task while quietly producing the wrong result.",
+        "Lemma, a San Francisco-based startup specializing in production monitoring infrastructure for AI agents, has raised $2.3 million in a pre-seed funding round."
+      ],
+      "products": [
+        {
+          "name": "Lemma 生产监控平台",
+          "evidence_quotes": [
+            "Its platform captures structured traces of agent executions, including LLM calls, tool usage, inputs, outputs, retrieval steps, timing data, and errors. It analyzes these traces to identify recurring semantic failures, prioritize issues, alert.",
+            "Lemma builds production monitoring for AI agents."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -11097,6 +11366,39 @@
       "current_classification": {
         "product_form_id": "model_api_service",
         "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-bdcb22b1a53358f5",
+      "funding_insight_id": "FI-cc61407f99065fb8",
+      "company_name": "Optimly",
+      "company_full_name": "Optimly",
+      "website": "https://optimly.ai",
+      "current_sector": "AI 品牌信任基础设施",
+      "company_evidence_quotes": [
+        "Seattle startup Optimly has closed an $800,000 pre-seed round to build a public index that lets brands correct what AI chatbots say about them.",
+        "Optimly (optimly.ai) is the trust infrastructure for agentic commerce — operator of the AI Brand Index — founded in 2025 in Seattle, WA."
+      ],
+      "products": [
+        {
+          "name": "AI Brand Index",
+          "evidence_quotes": [
+            "The free AI Brand Index is a public directory that AI agents can pull from — it has scored about 60,000 brands, with more than 24,000 now live."
+          ]
+        },
+        {
+          "name": "BrandVault",
+          "evidence_quotes": [
+            "BrandVault, the paid layer, lets a verified brand rewrite its entry in plain language an agent can parse, then monitors how AI describes it."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Hal9"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {

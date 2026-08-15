@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-15T04:37:54.461Z",
+    "generatedAt": "2026-08-15T06:28:44.051Z",
     "latestDataDate": "2026-08-15",
     "currentDate": "2026-08-15",
-    "eventCount": 2120,
+    "eventCount": 2129,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -54,6 +54,78 @@
         "title": "Lemma 筹集 230 万美元预种子资金，用于捕捉静默失败的 AI 智能体",
         "displayTags": [
           {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-249fdefbb63fa7b3"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6ec4a4c1c510dcef",
+            "fundingInsightId": "FI-f3e3fb3f81731c5f"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "observability_evaluation",
+            "name": "可观测与评估",
+            "entityIds": [
+              "EN-249fdefbb63fa7b3"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9894f63be98cb8ca",
+            "fundingInsightId": "FI-f3e3fb3f81731c5f"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "ai_observability_governance",
+            "name": "AI 可观测与治理",
+            "entityIds": [
+              "EN-249fdefbb63fa7b3"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3d17253dce8dbd88",
+            "fundingInsightId": "FI-f3e3fb3f81731c5f"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_infrastructure_software",
+            "name": "AI 基础设施软件",
+            "entityIds": [
+              "EN-249fdefbb63fa7b3"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-70577279b16eb589",
+            "fundingInsightId": "FI-f3e3fb3f81731c5f"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-249fdefbb63fa7b3"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c770c3477c93da3f",
+            "fundingInsightId": "FI-f3e3fb3f81731c5f"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-249fdefbb63fa7b3"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-77495d21ae439904",
+            "fundingInsightId": "FI-f3e3fb3f81731c5f"
+          },
+          {
             "dimensionId": "technology",
             "dimensionName": "技术",
             "id": "agentic_execution",
@@ -63,6 +135,30 @@
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "professional_services",
+            "name": "专业服务",
+            "entityIds": [
+              "EN-249fdefbb63fa7b3"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5f8c36591acc333f",
+            "fundingInsightId": "FI-f3e3fb3f81731c5f"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-249fdefbb63fa7b3"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6766125e4fc1b54d",
+            "fundingInsightId": "FI-f3e3fb3f81731c5f"
           }
         ],
         "entityIds": [

@@ -527,6 +527,72 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-35cab3b35525489e",
+    "raw_id": "RAW-0ead8689b2c22ed7",
+    "claim_type": "partnership",
+    "subject": "Keywell.ai",
+    "predicate": "partnership",
+    "object": "Carahsoft Technology Corp.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a7f2be814a6fe2fb"
+    },
+    "source_span": {
+      "raw_id": "RAW-0ead8689b2c22ed7",
+      "start": 286,
+      "end": 525
+    },
+    "source_quote": "Keywell.ai , the AI operational scaffolding platform for HIPAA-compliant workflow automation in healthcare and Government, and Carahsoft Technology Corp. , The Trusted Government IT Solutions Provider &reg; , today announced a partnership.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-91e5296ae0132ab7",
+    "raw_id": "RAW-721985fec893fd88",
+    "claim_type": "financial_performance",
+    "subject": "Foxconn",
+    "predicate": "financial_performance",
+    "object": "NT$59.97 billion net profit",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-cb023135f83d8199"
+    },
+    "source_span": {
+      "raw_id": "RAW-721985fec893fd88",
+      "start": 613,
+      "end": 883
+    },
+    "source_quote": "Hon Hai Precision Industry &mdash; the Taiwanese manufacturer the world knows as Foxconn &mdash; reported Q2 2026 net profit of NT$59.97 billion (approximately $1.86 billion), a 35% year-on-year increase from the NT$44.4 billion it posted in the same quarter a year ago.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5f70b8a6a7cd310a",
+    "raw_id": "RAW-d23bfabd9d04a01f",
+    "claim_type": "product_release",
+    "subject": "Infor",
+    "predicate": "product_release",
+    "object": "AI Adoption Hub",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-0c8fb7a7b421f926"
+    },
+    "source_span": {
+      "raw_id": "RAW-d23bfabd9d04a01f",
+      "start": 2435,
+      "end": 2501
+    },
+    "source_quote": "Introducing Infor&rsquo;s AI Adoption Hub, where AI helps build AI",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-203449d0387889d5",
     "raw_id": "RAW-c9159f5f7faf6cf3",
     "claim_type": "deployment",
@@ -776,6 +842,28 @@
     "source_quote": "If you’ve ever found yourself wishing that ChatGPT was a little bit quicker on the uptake, OpenAI seems to be answering your prayers.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a3827ba7e3983a0b",
+    "raw_id": "RAW-a1f7b2e73891d84f",
+    "claim_type": "service_change",
+    "subject": "Microsoft",
+    "predicate": "service_change",
+    "object": "Mico",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-547288e5c1cbdd55"
+    },
+    "source_span": {
+      "raw_id": "RAW-a1f7b2e73891d84f",
+      "start": 449,
+      "end": 556
+    },
+    "source_quote": "Microsoft Copilot will no longer show its emotive yellow blob, Mico, when you use the chatbot’s voice mode.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1031,6 +1119,28 @@
     "extraction_method": "model_source_span",
     "extraction_confidence": 0.72,
     "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-478af3157b0abd72",
+    "raw_id": "RAW-6ca5fe08f71a7ffd",
+    "claim_type": "model_release",
+    "subject": "Meta",
+    "predicate": "model_release",
+    "object": "Glimmer",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-b1bc3c7e8f0d7f99"
+    },
+    "source_span": {
+      "raw_id": "RAW-6ca5fe08f71a7ffd",
+      "start": 167,
+      "end": 274
+    },
+    "source_quote": "Meta released Glimmer this week , an open-weight AI model anyone can download and run on their own hardware",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
   },
   {
     "claim_id": "CL-21cb3f2221952625",
@@ -1413,6 +1523,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-e8448ceea20f64f2",
+    "raw_id": "RAW-4440d7270a543851",
+    "claim_type": "model_release",
+    "subject": "Apple",
+    "predicate": "model_release",
+    "object": "custom AI model for China market",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 1,
+      "model_candidate_id": "MAC-aeefddff0a08c279"
+    },
+    "source_span": {
+      "raw_id": "RAW-4440d7270a543851",
+      "start": 528,
+      "end": 633
+    },
+    "source_quote": "Apple has reportedly trained a custom AI model for the China market alongside domestic tech giant Alibaba",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-4a331c973c67194d",
+    "raw_id": "RAW-8ca8231a1f3dddd6",
+    "claim_type": "product_release",
+    "subject": "Grok Bot",
+    "predicate": "product_release",
+    "object": "launched this week",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-99d27b3bb8efdaee"
+    },
+    "source_span": {
+      "raw_id": "RAW-8ca8231a1f3dddd6",
+      "start": 495,
+      "end": 611
+    },
+    "source_quote": "You may have heard about OpenClaw, Hermes, Grok Bot (launched this week), and wondered why they had/have? such hype.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-43334ae53d58984b",
     "raw_id": "RAW-02876415636e8b3a",
     "claim_type": "organization_people",
@@ -1495,6 +1649,94 @@
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-8b904a0a2bc1b9cc",
+    "raw_id": "RAW-f11a83d6e4f5d7cd",
+    "claim_type": "product_release",
+    "subject": "百度文库网盘",
+    "predicate": "product_release",
+    "object": "库库AI独立端",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-6f48b0c70073a545"
+    },
+    "source_span": {
+      "raw_id": "RAW-f11a83d6e4f5d7cd",
+      "start": 213,
+      "end": 278
+    },
+    "source_quote": "文库网盘宣布进一步出击AI办公赛道，上线「库库AI」独立端，包括库库AI办公PC客户端、库库AI网页端、小程序及库库AI企业版等。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-21bc423bf3b1c5d2",
+    "raw_id": "RAW-268be888f330203e",
+    "claim_type": "organization_people",
+    "subject": "Denise Dresser",
+    "predicate": "organization_people",
+    "object": "OpenAI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-633dc42f0fa06744"
+    },
+    "source_span": {
+      "raw_id": "RAW-268be888f330203e",
+      "start": 554,
+      "end": 775
+    },
+    "source_quote": "Denise Dresser, who joined OpenAI as its chief revenue officer in December after serving as CEO of Slack, will be leaving in the “coming weeks” to “pursue other opportunities,” she said in a team note posted to LinkedIn .",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4f7f5aeb744227a4",
+    "raw_id": "RAW-268be888f330203e",
+    "claim_type": "organization_people",
+    "subject": "Dali Rajic",
+    "predicate": "organization_people",
+    "object": "OpenAI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-633dc42f0fa06744"
+    },
+    "source_span": {
+      "raw_id": "RAW-268be888f330203e",
+      "start": 776,
+      "end": 861
+    },
+    "source_quote": "Dali Rajic, president and COO of Wiz, will be taking over the CRO role, OpenAI says .",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2eac48bd3a50121f",
+    "raw_id": "RAW-268be888f330203e",
+    "claim_type": "organization_people",
+    "subject": "Brad Lightcap",
+    "predicate": "organization_people",
+    "object": "OpenAI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-633dc42f0fa06744"
+    },
+    "source_span": {
+      "raw_id": "RAW-268be888f330203e",
+      "start": 929,
+      "end": 1030
+    },
+    "source_quote": "Earlier this week, special projects lead and former COO Brad Lightcap announced he would be leaving .",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
   },
   {
     "claim_id": "CL-008d4135d0786add",
@@ -1660,6 +1902,134 @@
       "end": 263
     },
     "source_quote": "据彭博社报道，作为 科技行业有史以来规模最大 的收购之一，SpaceX 希望借助 Cursor 加快开发更先进的 AI 工具，用于简化编程等任务。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-de240692ffd2738e",
+    "raw_id": "RAW-15f4e035b79506aa",
+    "claim_type": "product_release",
+    "subject": "微软",
+    "predicate": "product_release",
+    "object": "Copilot Notebooks",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-810fcfb0d57d7736"
+    },
+    "source_span": {
+      "raw_id": "RAW-15f4e035b79506aa",
+      "start": 48,
+      "end": 104
+    },
+    "source_quote": "微软更新 Copilot Notebooks 应用， 新增支持 Markdown、纯文本和富文本 3 种文本格式",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-82e28dd8b54eacf5",
+    "raw_id": "RAW-da2910370b9b0daf",
+    "claim_type": "product_release",
+    "subject": "太初元碁",
+    "predicate": "product_release",
+    "object": "算子开发Agent智能工具",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-639fdfded799bdf0"
+    },
+    "source_span": {
+      "raw_id": "RAW-da2910370b9b0daf",
+      "start": 573,
+      "end": 607
+    },
+    "source_quote": "配套推出算子开发Agent智能工具，辅助开发者完成算子开发与性能优化",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f081e238b51f010c",
+    "raw_id": "RAW-3d7534281c892b00",
+    "claim_type": "funding",
+    "subject": "Optimly",
+    "predicate": "funding",
+    "object": "$800K pre-seed to help brands shape what AI says about them | Dealroom.co",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-3d7534281c892b00",
+      "start": 19,
+      "end": 93
+    },
+    "source_quote": "Optimly raises $800K pre-seed to help brands shape what AI says about them",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-69f1482256d4ad0c",
+    "raw_id": "RAW-3d7534281c892b00",
+    "claim_type": "funding",
+    "subject": "Optimly",
+    "predicate": "funding",
+    "object": "$800K pre-seed to help brands shape what AI says about them | Dealroom.co",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-3d7534281c892b00",
+      "start": 122,
+      "end": 387
+    },
+    "source_quote": "Seattle startup Optimly has closed an $800,000 pre-seed round to build a public index that lets brands correct what AI chatbots say about them. Flywheel Angel Network, Mighty Capital , AI House , and ai2 incubator backed the round, which was announced in July 2026.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fe407f0c8014e02e",
+    "raw_id": "RAW-3d7534281c892b00",
+    "claim_type": "funding",
+    "subject": "Optimly",
+    "predicate": "funding",
+    "object": "$800K pre-seed to help brands shape what AI says about them | Dealroom.co",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-3d7534281c892b00",
+      "start": 388,
+      "end": 593
+    },
+    "source_quote": "The problem: AI models rarely learn about a brand from its own website. They read Wikipedia, Reddit, reviews, and analyst write-ups, then synthesise a response when shoppers ask about a company or product.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-152ce7c9f5bbbb48",
+    "raw_id": "RAW-3d7534281c892b00",
+    "claim_type": "funding",
+    "subject": "Optimly",
+    "predicate": "funding",
+    "object": "$800K pre-seed to help brands shape what AI says about them | Dealroom.co",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-3d7534281c892b00",
+      "start": 594,
+      "end": 928
+    },
+    "source_quote": "The product: Optimly runs two connected products. The free AI Brand Index is a public directory that AI agents can pull from — it has scored about 60,000 brands, with more than 24,000 now live. BrandVault, the paid layer, lets a verified brand rewrite its entry in plain language an agent can parse, then monitors how AI describes it.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

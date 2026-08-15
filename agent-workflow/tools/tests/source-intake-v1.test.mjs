@@ -382,4 +382,9 @@ test("AI Funding Tracker insights are enabled in the daily RSS collection lane",
     "utf8",
   );
   assert.match(workflow, /\(aihot keyword gdelt rss funding\)/u);
+  assert.match(
+    workflow,
+    /run-guanlan-daily-monitor-with-qc\.mjs[\s\S]*--merge-existing-intake=true/u,
+    "same-day reruns must preserve previously accepted intake while current gates re-evaluate it",
+  );
 });
