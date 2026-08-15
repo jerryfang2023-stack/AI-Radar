@@ -1,5 +1,22 @@
 # Design QA
 
+## 2026-08-15 V0.6.2 底部导航贴边修复
+
+- Source visual truth: `C:\Users\86186\Downloads\1927083506.jpg`，原图 1180 × 2556 px；用户标注目标为底部导航按钮贴合屏幕边框、下方不留白。
+- Implementation screenshot: `C:\Users\86186\.codex\visualizations\2026\08\14\019ffec2-c996-7373-87d5-c4e8fbcce173\tabbar-v062-qa\implementation-393x852-full.png`，使用小程序 `custom-tab-bar` 的同一结构与视觉数值在 393 × 852 CSS px、1× 密度下渲染。
+- Focused side-by-side comparison: `C:\Users\86186\.codex\visualizations\2026\08\14\019ffec2-c996-7373-87d5-c4e8fbcce173\tabbar-v062-qa\comparison-bottom-nav.png`；左侧为真机问题区域，右侧为修复后组件。
+- State: 融资页，第一项选中；四项文本导航、短分隔线和金色顶部标记保持原样。
+- Earlier P1 finding: 安全区由 `.tab-bar` 的外部 `padding-bottom` 承担，导致四个按钮（尤其选中态底色和点击区域）在屏幕底边前结束，形成明显白条。
+- Fix: `.tab-bar` 外边距归零；将 `safe-area-inset-bottom` 计入每个 `.tab-button` 的最小高度与内部底部留白，按钮背景和点击区域随导航容器延伸到 `bottom: 0`。
+- Post-fix evidence: 浏览器实测 `screen.bottom = 852`、`tab-bar.bottom = 852`、`active-button.bottom = 852`、`bottomGap = 0`。
+- Required fidelity surfaces: 字体、字号、字重、文字内容、暖白/香槟金/深海军蓝色值、分隔线、圆角和顶部标记均未改动；本次只调整底部安全区的布局归属。页面无新增图片资产。
+- Primary interaction: 四个导航单元均保留完整按钮区域；此次组件级修复未改变页面切换事件绑定。
+- Console errors: none.
+
+final result: passed
+
+---
+
 ## 2026-08-15 V0.6.1 融资金额与底栏优化
 
 - Source visual truth: `C:\Users\86186\Downloads\1257227072.jpg`（用户真机截图）。

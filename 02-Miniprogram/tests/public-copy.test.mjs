@@ -160,8 +160,10 @@ test("renders the text-only bottom navigation as connected segmented buttons", (
   assert.match(customTabBarStyles, /\.tab-button\.with-divider::before[\s\S]*height:\s*44rpx/u);
   assert.match(customTabBarStyles, /\.tab-button\.active[\s\S]*background:\s*#f4efe4/u);
   assert.match(customTabBarStyles, /\.tab-button\.active::after[\s\S]*background:\s*#c8a766/u);
-  assert.match(customTabBarStyles, /min-height:\s*96rpx/u);
+  assert.match(customTabBarStyles, /min-height:\s*calc\(96rpx \+ var\(--tab-safe-bottom\)\)/u);
   assert.match(customTabBarStyles, /safe-area-inset-bottom\) - 24rpx/u);
+  assert.match(customTabBarStyles, /\.tab-bar[\s\S]*padding:\s*0;/u);
+  assert.match(customTabBarStyles, /\.tab-button[\s\S]*padding-bottom:\s*var\(--tab-safe-bottom\)/u);
 });
 
 test("preserves the V0.5 financing list visual contract", () => {

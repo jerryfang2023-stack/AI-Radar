@@ -1,10 +1,11 @@
 .tab-bar {
+  --tab-safe-bottom: max(4rpx, calc(env(safe-area-inset-bottom) - 24rpx));
   position: fixed;
   z-index: 100;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 0 0 max(4rpx, calc(env(safe-area-inset-bottom) - 24rpx));
+  padding: 0;
   border-top: 1rpx solid #d2d9df;
   background: rgba(255, 253, 248, 0.98);
   box-shadow: none;
@@ -20,7 +21,9 @@
   position: relative;
   display: flex;
   min-width: 0;
-  min-height: 96rpx;
+  min-height: calc(96rpx + var(--tab-safe-bottom));
+  box-sizing: border-box;
+  padding-bottom: var(--tab-safe-bottom);
   align-items: center;
   justify-content: center;
   border: 0;
