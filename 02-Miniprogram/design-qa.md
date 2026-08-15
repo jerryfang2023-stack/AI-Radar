@@ -1,5 +1,23 @@
 # Design QA
 
+## 2026-08-15 V0.6.4 融资统计卡视觉统一
+
+- Source visual truth: `C:\Users\86186\Downloads\56503485.jpg`，原图 1180 × 2556 px；以生态图谱“商业主体全景”卡片为字体、排版、粗细和层级基准。原融资页截图为 `C:\Users\86186\Downloads\856892404.jpg`。
+- Implementation screenshot: `C:\Users\86186\.codex\visualizations\2026\08\14\019ffec2-c996-7373-87d5-c4e8fbcce173\funding-metrics-v064-qa\implementation-393x180.png`，393 × 180 px、1× 密度；卡片按小程序实际 WXML 层级和 WXSS 数值渲染。
+- Focused side-by-side comparison: `C:\Users\86186\.codex\visualizations\2026\08\14\019ffec2-c996-7373-87d5-c4e8fbcce173\funding-metrics-v064-qa\comparison-ecology-funding.png`；生态参考卡与融资实现卡均归一化为 361 × 120 px 后并排比较。
+- State: 融资页全球范围，226 条融资、本周 6 条，更新日期 2026-08-15。
+- Typography: 标题统一为宋体 29rpx/700；指标数字统一为宋体 44rpx/700；标签统一为 20rpx 常规字重。日期因十位字符长度保留 28rpx/700，以避免换行和截断。
+- Spacing and layout: 与生态卡一致采用上方标题层和下方三等分指标层；标题层 26/28/20rpx 内边距，指标层 26/10/30rpx 内边距，分隔线透明度和圆角一致。
+- Colors and tokens: 深海军蓝渐变、香槟金指标、白色标题及半透明辅助文字全部复用生态卡现有色值。
+- Image quality and assets: 本组件不包含图片或图标资产；未新增或替代可见资产。
+- Copy and behavior: 仅新增“融资动态全景 / 全球 · 中国”结构标题；融资、本周、更新及所有动态值保持原数据绑定，筛选与列表逻辑未改。
+- Findings: 首轮归一化对照未发现 P0/P1/P2 差异；日期字号差异属于必要的内容适配，不影响层级和对齐。
+- Regression verification: `npm run verify` 通过，55/55 测试通过；17 个页面、37 个 JavaScript 文件及 976,721 bytes 包体校验通过。Console errors: none.
+
+final result: passed
+
+---
+
 ## 2026-08-15 V0.6.3 生态图谱搜索与栏目顺序
 
 - Source visual truth: `C:\Users\86186\Downloads\218112661.jpg`，原图 1180 × 2556 px；用户要求将搜索栏与“企业库 / 机构库 / 人物库”切换栏上下互换。

@@ -2,7 +2,17 @@
   <app-header title="融资情报" />
 
   <view class="page-content terminal-content">
-    <view class="funding-metrics"><view><text>融资</text><strong>{{scopeCardCount}}</strong></view><view><text>本周</text><strong>{{weekCount}}</strong></view><view class="funding-date"><text>更新</text><strong>{{meta.latestDate}}</strong></view></view>
+    <view class="funding-metrics">
+      <view class="funding-metrics-head">
+        <text>融资动态全景</text>
+        <text>全球 · 中国</text>
+      </view>
+      <view class="funding-metrics-body">
+        <view><strong class="funding-metrics-value serif">{{scopeCardCount}}</strong><text>融资</text></view>
+        <view><strong class="funding-metrics-value serif">{{weekCount}}</strong><text>本周</text></view>
+        <view class="funding-date"><strong class="funding-metrics-value serif">{{meta.latestDate}}</strong><text>更新</text></view>
+      </view>
+    </view>
 
     <view class="search-row single-search">
       <view class="search-box">
