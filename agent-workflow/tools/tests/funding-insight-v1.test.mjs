@@ -11,6 +11,7 @@ import {
   FUNDING_TARGET_USER_IDS,
   FUNDING_USE_CASE_IDS,
   buildFundingEntityReviewQueue,
+  canonicalFundingEventAmount,
   ensureCanonicalFundingEvidence,
   ensureNamedCompanyEvidence,
   entityResolver,
@@ -115,6 +116,11 @@ import {
 } from "../../product/investment-institution-v1.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
+
+test("canonical funding amount repairs a truncated K metric from the complete event metric", () => {
+  assert.equal(canonicalFundingEventAmount({ metrics: ["$800", "$800,000"] }), "$800,000");
+  assert.equal(canonicalFundingEventAmount({ metrics: ["$800K", "$800,000"] }), "$800K");
+});
 
 test("funding research prompt enumerates every governed taxonomy list ID", () => {
   const prompt = promptFor(
@@ -951,8 +957,10 @@ test("融资透视自动化在商业事件工作流后增量研究、同步并�
   assert.match(workflow, /TAVILY_DISABLED: "false"/u);
   assert.match(workflow, /generate-funding-insights-deepseek\.mjs[\s\S]*assert-funding-insights-v1\.mjs[\s\S]*build-funding-insights-frontstage\.mjs/u);
   assert.match(workflow, /build-funding-insights-frontstage\.mjs[\s\S]*assert-funding-insights-v1\.mjs --all=true --frontstage=true/u);
+  assert.match(workflow, /build-funding-insights-frontstage\.mjs[\s\S]*classify:funding-taxonomy-v4\.1 -- --write=true[\s\S]*assert-funding-insights-v1\.mjs --all=true --frontstage=true/u);
   assert.match(workflow, /assert-funding-insights-v1\.mjs --all=true --frontstage=true[\s\S]*build:investment-institutions[\s\S]*assert:investment-institutions[\s\S]*build:data-center-site/u);
   assert.match(workflow, /git add[\s\S]*investment-institutions-v1\.json[\s\S]*data-center-v4\/investors/u);
+  assert.match(workflow, /git add[\s\S]*taxonomy-decisions-v4-1\.json/u);
   assert.doesNotMatch(workflow, /sync-funding-insights-to-obsidian\.mjs|vault\/20-Application-Center/u);
   assert.match(workflow, /automation\/funding-insights-\$\{RUN_DATE\}/u);
   assert.match(workflow, /push:[\s\S]*canonical-events\.json/u);

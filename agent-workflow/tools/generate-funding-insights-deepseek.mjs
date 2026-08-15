@@ -12,6 +12,7 @@ import {
   FUNDING_TARGET_USER_IDS,
   FUNDING_USE_CASE_IDS,
   clean,
+  canonicalFundingEventAmount,
   ensureCanonicalFundingEvidence,
   ensureNamedCompanyEvidence,
   entityResolver,
@@ -396,7 +397,7 @@ async function researchSources(bundle, event, company) {
     companyKey.length >= 4
     && host.replace(/[^\p{L}\p{N}]+/gu, "").includes(companyKey)
   )) || "";
-  const amountHint = clean((event.metrics || [])[0] || "");
+  const amountHint = canonicalFundingEventAmount(event);
   const identityHint = clean(captured[0]?.title_original || event.object || event.display_title_zh);
   const describedSubject = clean(identityHint.match(/^(.{2,50}?)(?:\s+开发商|\s+(?:maker|creator|developer)\b)/iu)?.[1]);
   const identitySubject = describedSubject.replace(/([a-z0-9])([A-Z])/gu, "$1 $2");
@@ -671,7 +672,7 @@ function fundingHistory(companyId) {
         event_id: event.event_id,
         date: String(event.event_time || event.disclosed_at || "").slice(0, 10),
         title: event.display_title_zh,
-        amount: (event.metrics || [])[0] || "",
+        amount: canonicalFundingEventAmount(event),
         source_refs: event.source_refs || [],
       });
     }
@@ -880,10 +881,11 @@ async function main() {
     .filter((card) => (card.research_sources || []).some((source) => source.source_class === "canonical_event_source"))
     .filter((card) => {
       const event = eventById.get(card.triggered_by_event_id);
-      const eventAmount = normalizeFundingAmount(clean(event?.metrics?.[0]));
-      return !clean(event?.metrics?.[0])
+      const canonicalAmount = canonicalFundingEventAmount(event);
+      const eventAmount = normalizeFundingAmount(canonicalAmount);
+      return !canonicalAmount
         || !eventAmount.currency
-        || amountKey(card.financing?.amount) === amountKey(event.metrics[0]);
+        || amountKey(card.financing?.amount) === amountKey(canonicalAmount);
     })
     .filter((card) => fundingEventCardConsistencyProblems(
       card,

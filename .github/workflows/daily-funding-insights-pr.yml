@@ -204,10 +204,13 @@ jobs:
             npm run build:data-center-site
           npm run translate:public-structured-fields
           node 01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs
+          npm run classify:funding-taxonomy-v4.1 -- --write=true
+          node agent-workflow/tools/assert-funding-insights-v1.mjs --all=true --frontstage=true
+          npm run build:investment-institutions
+          npm run assert:investment-institutions
           WAVESIGHT_FRONTSTAGE_GENERATED_AT="$frontstage_generated_at" \
           WAVESIGHT_ENTITY_HISTORY_GENERATED_AT="$entity_history_generated_at" \
             npm run build:data-center-site
-          node agent-workflow/tools/assert-funding-insights-v1.mjs --all=true --frontstage=true
           node agent-workflow/tools/build-funding-source-health-v1.mjs --date="${RUN_DATE}"
           npm run test:funding-insights
           node agent-workflow/tools/frontstage-regression-gate.mjs
@@ -243,6 +246,7 @@ jobs:
           git add \
             "01-SiteV2/content/12-applications/funding-insights/${RUN_DATE}.json" \
             "01-SiteV2/content/12-applications/funding-insights/entity-review-queue.json" \
+            "01-SiteV2/content/12-applications/funding-insights/taxonomy-decisions-v4-1.json" \
             "01-SiteV2/content/11-databases/investment-institutions-v1.json" \
             "01-SiteV2/content/11-databases/public-zh-translations-v1.json" \
             "01-SiteV2/site/data/funding-insights-v1.json" \

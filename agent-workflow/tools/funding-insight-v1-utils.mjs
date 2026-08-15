@@ -200,6 +200,20 @@ export function normalizeFundingAmount(value = "") {
   };
 }
 
+export function canonicalFundingEventAmount(event = {}) {
+  const metrics = (event.metrics || []).map(clean).filter(Boolean);
+  if (!metrics.length) return "";
+  const primary = metrics[0];
+  const truncated = primary.normalize("NFKC").match(/^([$€£¥￥])\s*(\d{1,3})$/u);
+  if (!truncated) return primary;
+  const expanded = metrics.slice(1).find((candidate) => {
+    const normalized = candidate.normalize("NFKC");
+    const match = normalized.match(/^([$€£¥￥])\s*(\d{1,3})(?:,\d{3})+\s*$/u);
+    return match && match[1] === truncated[1] && match[2] === truncated[2];
+  });
+  return expanded || primary;
+}
+
 export function fundingDisclosureStatus(financing = {}) {
   const amount = financing.amount_normalized || normalizeFundingAmount(financing.amount_original || financing.amount);
   const roundCode = clean(financing.round_code || normalizeFundingRound(financing.round_original || financing.round).code);
@@ -1265,7 +1279,7 @@ export function ensureCanonicalFundingEvidence(payload = {}, bundle = {}, event 
       break;
     }
   }
-  const eventAmount = clean(event.metrics?.[0]);
+  const eventAmount = canonicalFundingEventAmount(event);
   const suppliedAmount = clean(payload.financing.amount);
   const eventNormalized = normalizeFundingAmount(eventAmount);
   const suppliedNormalized = normalizeFundingAmount(suppliedAmount);
