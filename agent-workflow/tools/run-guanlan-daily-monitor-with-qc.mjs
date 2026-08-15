@@ -67,6 +67,7 @@ function monitorArgs() {
   }
   if (args.get("use-source-artifacts") === "true" || args.has("source-artifact-dir")) result.push("--use-source-artifacts=true");
   if (args.has("source-artifact-dir")) result.push(`--source-artifact-dir=${args.get("source-artifact-dir")}`);
+  if (args.get("merge-existing-intake") === "true") result.push("--merge-existing-intake=true");
   return result;
 }
 

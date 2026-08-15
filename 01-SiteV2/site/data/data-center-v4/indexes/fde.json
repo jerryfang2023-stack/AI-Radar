@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-15T04:37:54.461Z",
+    "generatedAt": "2026-08-15T06:28:44.051Z",
     "latestDataDate": "2026-08-15",
     "currentDate": "2026-08-15",
-    "eventCount": 2120,
+    "eventCount": 2129,
     "quarantinedEventCount": 16
   },
   "fde": [
@@ -71,6 +71,42 @@
       "entityIds": [
         "EN-6f7ac1823da81d2e",
         "EN-46162bbc9eb57274"
+      ]
+    },
+    {
+      "id": "FDE-34bcdf91ba37fced",
+      "eventId": "EV-2f54f55d7b02fa69",
+      "dataDate": "2026-08-15",
+      "date": "2026-08-12",
+      "title": "Keywell.ai与Carahsoft合作，为州、地方及公共医疗机构带来受治理的AI工作流自动化",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Keywell.ai",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Carahsoft Technology Corp.",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://carahsoft.com/news/keywellai-and-carahsoft-partner-to-bring-governed-ai-workflow-automation-to-state-local-and-public-healthcare-agencies-2026",
+      "entityIds": [
+        "EN-6673505cd5e4d4fa"
       ]
     },
     {
@@ -228,42 +264,6 @@
       "sourceUrl": "https://sap.com/finland/asset/dynamic/2026/06/be80dd33-587f-0010-bca6-c68f7e60039b.html",
       "entityIds": [
         "EN-9f2432dcde6dc59a"
-      ]
-    },
-    {
-      "id": "FDE-34bcdf91ba37fced",
-      "eventId": "EV-2f54f55d7b02fa69",
-      "dataDate": "2026-08-13",
-      "date": "2026-08-12",
-      "title": "Keywell.ai与Carahsoft合作，为州、地方及公共医疗机构带来受治理的AI工作流自动化",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "Keywell.ai",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "Carahsoft Technology Corp.",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_delivery_components",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "https://carahsoft.com/news/keywellai-and-carahsoft-partner-to-bring-governed-ai-workflow-automation-to-state-local-and-public-healthcare-agencies-2026",
-      "entityIds": [
-        "EN-6673505cd5e4d4fa"
       ]
     },
     {
@@ -5859,6 +5859,64 @@
       ]
     },
     {
+      "id": "FDED-2b3e79510a02e590",
+      "implementationKey": "2b3e79510a02e590",
+      "eventId": "EV-2f54f55d7b02fa69",
+      "eventIds": [
+        "EV-2f54f55d7b02fa69"
+      ],
+      "dataDate": "2026-08-15",
+      "date": "2026-08-12",
+      "title": "Keywell.ai × 未披露：Carahsoft Technology Corp.",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Keywell.ai",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Carahsoft Technology Corp.",
+      "workflow": "Keywell.ai , the AI operational scaffolding platform for HIPAA-compliant workflow automation in healthcare and Government, and Carahsoft Technology Corp. , The Trusted Government IT Solutions Provider &reg; , today announced a partnership.",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 2,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "vendor",
+        "industry",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-af2e9984ba5307ec",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-12",
+          "dataDate": "2026-08-15",
+          "eventId": "EV-2f54f55d7b02fa69",
+          "eventTitle": "Keywell.ai与Carahsoft合作，为州、地方及公共医疗机构带来受治理的AI工作流自动化",
+          "claimCount": 1,
+          "sourceCount": 1
+        },
+        {
+          "observationId": "FDEO-e52006907dad628d",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-12",
+          "dataDate": "2026-08-13",
+          "eventId": "EV-2f54f55d7b02fa69",
+          "eventTitle": "Keywell.ai与Carahsoft合作，为州、地方及公共医疗机构带来受治理的AI工作流自动化",
+          "claimCount": 1,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://carahsoft.com/news/keywellai-and-carahsoft-partner-to-bring-governed-ai-workflow-automation-to-state-local-and-public-healthcare-agencies-2026",
+      "entityIds": [
+        "EN-6673505cd5e4d4fa"
+      ]
+    },
+    {
       "id": "FDED-a55269667d6ed474",
       "implementationKey": "a55269667d6ed474",
       "eventId": "EV-6dc1ff5c07dc74fe",
@@ -6013,53 +6071,6 @@
         "EN-4c06fff8651d4ff4",
         "EN-7d3194f79e645c42",
         "EN-c70eca6b0f88f44d"
-      ]
-    },
-    {
-      "id": "FDED-2b3e79510a02e590",
-      "implementationKey": "2b3e79510a02e590",
-      "eventId": "EV-2f54f55d7b02fa69",
-      "eventIds": [
-        "EV-2f54f55d7b02fa69"
-      ],
-      "dataDate": "2026-08-13",
-      "date": "2026-08-12",
-      "title": "Keywell.ai × 未披露：Carahsoft Technology Corp.",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "Keywell.ai",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "Carahsoft Technology Corp.",
-      "workflow": "Keywell.ai , the AI operational scaffolding platform for HIPAA-compliant workflow automation in healthcare and Government, and Carahsoft Technology Corp. , The Trusted Government IT Solutions Provider &reg; , today announced a partnership.",
-      "systems": [],
-      "outcomes": [],
-      "observationCount": 1,
-      "completeness": 0.5,
-      "completenessPercent": 50,
-      "missingFields": [
-        "vendor",
-        "industry",
-        "systems_integrated",
-        "reported_outcomes"
-      ],
-      "timeline": [
-        {
-          "observationId": "FDEO-e52006907dad628d",
-          "type": "implementation_update",
-          "stage": "announced",
-          "date": "2026-08-12",
-          "dataDate": "2026-08-13",
-          "eventId": "EV-2f54f55d7b02fa69",
-          "eventTitle": "Keywell.ai与Carahsoft合作，为州、地方及公共医疗机构带来受治理的AI工作流自动化",
-          "claimCount": 1,
-          "sourceCount": 1
-        }
-      ],
-      "tags": [],
-      "sourceUrl": "https://carahsoft.com/news/keywellai-and-carahsoft-partner-to-bring-governed-ai-workflow-automation-to-state-local-and-public-healthcare-agencies-2026",
-      "entityIds": [
-        "EN-6673505cd5e4d4fa"
       ]
     },
     {
@@ -7238,13 +7249,13 @@
         "fde_procurement_contract",
         "fde_production_rollout"
       ],
-      "raw_documents": 98,
-      "original_sources": 87,
-      "valid_claims": 24,
-      "observations": 2,
-      "canonical_events": 7,
+      "raw_documents": 99,
+      "original_sources": 88,
+      "valid_claims": 31,
+      "observations": 3,
+      "canonical_events": 11,
       "blocker_counts": {
-        "no_source_bounded_event": 12,
+        "no_source_bounded_event": 9,
         "non_event_or_index_title": 6,
         "source_outside_daily_window": 56,
         "source_published_after_data_date": 2,
@@ -7255,10 +7266,10 @@
         "raw_source_quality_block": 11
       },
       "rates": {
-        "original_source_rate": 0.8877551020408163,
-        "valid_claim_rate": 0.24489795918367346,
-        "observation_rate": 0.08333333333333333,
-        "event_conversion_rate": 0.2916666666666667
+        "original_source_rate": 0.8888888888888888,
+        "valid_claim_rate": 0.31313131313131315,
+        "observation_rate": 0.0967741935483871,
+        "event_conversion_rate": 0.3548387096774194
       },
       "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-15/monitoring-funnel.json"
     }

@@ -5,13 +5,13 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-15T04:16:45.513Z",
+    "generated_at": "2026-08-15T06:11:46.646Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
     "decision_count": 277,
-    "input_hash": "d7a98de8e65cef88",
+    "input_hash": "22466a2773393652",
     "override_count": 17,
     "needs_review_count": 0,
     "low_confidence_count": 2
@@ -5456,25 +5456,26 @@
       "rationale": "Lemma提供AI代理生产监控与可观测性基础设施，证据明确指向可观测性治理，而非单一行业应用。"
     },
     {
-      "event_id": "EV-f595d042ae4c91eb",
-      "market_category_id": "enterprise_applications",
-      "market_subcategory_id": "marketing",
-      "market_application_id": "",
+      "event_id": "EV-bdcb22b1a53358f5",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "data_preparation_curation",
       "product_form_id": "enterprise_software_platform",
       "use_case_ids": [
-        "marketing",
-        "knowledge_search"
+        "knowledge_search",
+        "content_creation"
       ],
       "industry_ids": [
         "retail_ecommerce",
         "media_entertainment"
       ],
       "target_user_ids": [
-        "business_user"
+        "business_user",
+        "developer"
       ],
       "confidence": 0.75,
       "needs_review": false,
-      "rationale": "Optimly帮助品牌管理AI聊天机器人中的品牌信息，属于跨行业营销与品牌管理功能，而非基础设施或单一行业应用。"
+      "rationale": "Optimly 提供品牌信任基础设施，构建 AI 品牌索引供 AI 代理调用，属于为其他 AI 产品提供数据/基础设施的范畴，而非面向单一行业或跨行业业务功能。"
     }
   ]
 }

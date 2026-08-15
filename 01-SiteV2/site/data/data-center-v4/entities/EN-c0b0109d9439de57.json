@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-15T04:37:54.461Z",
+    "generatedAt": "2026-08-15T06:28:44.051Z",
     "latestDataDate": "2026-08-15",
     "currentDate": "2026-08-15",
-    "eventCount": 2120,
+    "eventCount": 2129,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -55,7 +55,104 @@
         "status": "announced",
         "statusLabel": "已公布",
         "title": "50个开源项目教会我们的AI时代安全之道",
-        "displayTags": [],
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-c5f011f1169120f2"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a8ab98ebfced166f",
+            "fundingInsightId": "FI-8036bbbb426a4611"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "observability_evaluation",
+            "name": "可观测与评估",
+            "entityIds": [
+              "EN-c5f011f1169120f2"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-801ef877e1b91b74",
+            "fundingInsightId": "FI-8036bbbb426a4611"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "model_agent_security",
+            "name": "模型与智能体安全",
+            "entityIds": [
+              "EN-c5f011f1169120f2"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e360bf1e958afee1",
+            "fundingInsightId": "FI-8036bbbb426a4611"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "security_software",
+            "name": "安全软件",
+            "entityIds": [
+              "EN-c5f011f1169120f2"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-cf0af61c78ce25f8",
+            "fundingInsightId": "FI-8036bbbb426a4611"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-c5f011f1169120f2"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a37b1b1147e6b51f",
+            "fundingInsightId": "FI-8036bbbb426a4611"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-c5f011f1169120f2"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2feefa097459fc00",
+            "fundingInsightId": "FI-8036bbbb426a4611"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "professional_services",
+            "name": "专业服务",
+            "entityIds": [
+              "EN-c5f011f1169120f2"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-7fb0261cf463fa75",
+            "fundingInsightId": "FI-8036bbbb426a4611"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-c5f011f1169120f2"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-90e3077ede6c22d8",
+            "fundingInsightId": "FI-8036bbbb426a4611"
+          }
+        ],
         "entityIds": [
           "EN-c5f011f1169120f2",
           "EN-c0b0109d9439de57"
