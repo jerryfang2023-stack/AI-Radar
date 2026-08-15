@@ -10,16 +10,16 @@
       </view>
     </view>
 
-    <view class="library-tabs">
-      <button class="{{mode === 'companies' ? 'active' : ''}}" data-mode="companies" bindtap="switchMode">企业库</button>
-      <button class="{{mode === 'investors' ? 'active' : ''}}" data-mode="investors" bindtap="switchMode">机构库</button>
-      <button class="{{mode === 'people' ? 'active' : ''}}" data-mode="people" bindtap="switchMode">人物库</button>
-    </view>
-
     <view class="search-box">
       <icon type="search" size="18" color="#071827" />
       <input value="{{query}}" placeholder="{{placeholder}}" bindinput="onSearchInput" confirm-type="search" />
       <button wx:if="{{query}}" class="clear-button" bindtap="clearSearch"><icon type="clear" size="16" /></button>
+    </view>
+
+    <view class="library-tabs">
+      <button class="{{mode === 'companies' ? 'active' : ''}}" data-mode="companies" bindtap="switchMode">企业库</button>
+      <button class="{{mode === 'investors' ? 'active' : ''}}" data-mode="investors" bindtap="switchMode">机构库</button>
+      <button class="{{mode === 'people' ? 'active' : ''}}" data-mode="people" bindtap="switchMode">人物库</button>
     </view>
 
     <view class="result-line"><text>共 {{resultCount}} 个{{modeLabel}}主体</text><text>{{sortNote}}</text></view>

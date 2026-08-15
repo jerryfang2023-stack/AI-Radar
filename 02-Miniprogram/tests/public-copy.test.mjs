@@ -261,6 +261,10 @@ test("keeps list pages concise while preserving detail-page actions", () => {
   assert.match(marketSource, /企业库/u);
   assert.match(marketSource, /机构库/u);
   assert.match(marketSource, /人物库/u);
+  assert.ok(
+    marketSource.indexOf('class="search-box"') < marketSource.indexOf('class="library-tabs"'),
+    "生态图谱搜索栏应位于子栏目切换栏上方",
+  );
   assert.match(marketLogic, /企业 \/ 产品 \/ 赛道/u);
   assert.match(marketLogic, /机构 \/ 已投公司 \/ 赛道/u);
   assert.match(marketLogic, /人物 \/ 企业 \/ 职务/u);

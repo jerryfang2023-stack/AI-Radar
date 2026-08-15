@@ -43,7 +43,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Opportunity Map column version | OMAP-V2.0.0-v4-evidence |
 | Trend Radar column version | TRADAR-V1.1.0-tag-v4-1 |
 | Funding Insights column version | FUNDING-INSIGHT-V1.5.0-china-market |
-| WeChat Mini Program version | V0.6.2-tabbar-community-points |
+| WeChat Mini Program version | V0.6.3-ecology-search-order |
 | Investment institution projection | INVESTMENT-INSTITUTION-V1.0 |
 | Data Center Raw contract | RAW-V4.0 |
 | Data Center structured source intake | SOURCE-INTAKE-V1.1 |
@@ -205,6 +205,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `miniprogram-v0.6.3` | Mini Program ecosystem overview / company, institution and person library switcher | 2026-08-15 | 2026-08-15T17:39:59+08:00 | V0.6.3-ecology-search-order | ecosystem search rendered below the library switcher; broken company, institution or person filtering | Mini Program build + 55 behavioral/copy tests + project validation + focused side-by-side visual QA |
 | `miniprogram-v0.6.1` | Mini Program funding list / PC Funding Insights / Data Center CNY projections / member linking / published community essay | 2026-08-15 | 2026-08-15T16:17:35+08:00 | V0.6.1-funding-presentation | China-first default; duplicate China labels; public CNY or 人民币 suffixes in normalized amount fields; oversized tab-bar bottom gap; V0.6 virtual-payment regression; unlinked verified old member | CNY migration dry-run + Funding Insights and Data Center tests + Mini Program build and verification + Payment Service regression + native visual QA attempt + development-build upload |
 | `miniprogram-v0.6.2` | Mini Program bottom navigation / community-points refresh | 2026-08-15 | 2026-08-15T17:14:42+08:00 | V0.6.2-tabbar-community-points | bottom safe-area rendered outside tab buttons; published community activity omitted from internal member score snapshot | Mini Program verify + member-service tests + production score reconciliation + development-build upload |
 | `miniprogram-v0.6.0` | Mini Program virtual-payment membership / verified payment callbacks / 15-day full refunds / customer-service entry / published community essay | 2026-08-15 | 2026-08-15T15:15:59+08:00 | V0.6.0-virtual-payment | ordinary JSAPI payment; client-only entitlement confirmation; auto-renewal; unverified or mismatched callbacks; refund periods beyond 15 days; V0.5 financing-card or navigation regressions; unverified raw community content | Mini Program data build + 54 behavioral/copy tests + project validation + 30 Payment Service tests + live WeChat callback verification + sandbox and production virtual-product provisioning + development-build upload |

@@ -1,5 +1,19 @@
 # Design QA
 
+## 2026-08-15 V0.6.3 生态图谱搜索与栏目顺序
+
+- Source visual truth: `C:\Users\86186\Downloads\218112661.jpg`，原图 1180 × 2556 px；用户要求将搜索栏与“企业库 / 机构库 / 人物库”切换栏上下互换。
+- Implementation screenshot: `C:\Users\86186\.codex\visualizations\2026\08\14\019ffec2-c996-7373-87d5-c4e8fbcce173\market-order-v063-qa\implementation-393x300.png`，按小程序实际 WXML 层级和 WXSS 数值在 393 px 手机宽度渲染。
+- Side-by-side comparison: `C:\Users\86186\.codex\visualizations\2026\08\14\019ffec2-c996-7373-87d5-c4e8fbcce173\market-order-v063-qa\comparison-search-tabs.png`；左侧为原真机顺序，右侧为 V0.6.3 修改后顺序。
+- Fix: 搜索栏移至栏目切换栏上方；原先的 26rpx 首段间距和 20rpx 相邻间距随位置互换，控件高度、颜色、圆角、字体、金色选中线及列表结构保持不变。
+- Interaction verification: 企业库、机构库、人物库切换仍会更新输入提示语和结果数量；搜索输入事件、清空事件与主体详情入口未改动。
+- Regression verification: `npm run verify` 通过，55/55 测试通过；17 个页面、37 个 JavaScript 文件及 975,965 bytes 包体校验通过。
+- Console errors: none.
+
+final result: passed
+
+---
+
 ## 2026-08-15 V0.6.2 底部导航贴边修复
 
 - Source visual truth: `C:\Users\86186\Downloads\1927083506.jpg`，原图 1180 × 2556 px；用户标注目标为底部导航按钮贴合屏幕边框、下方不留白。
