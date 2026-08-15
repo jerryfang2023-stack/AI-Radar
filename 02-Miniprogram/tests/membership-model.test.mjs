@@ -3,14 +3,7 @@ import { createRequire } from "node:module";
 import test from "node:test";
 
 const require = createRequire(import.meta.url);
-const { DAY_MS, PRICING_PLANS, createMembership, membershipSnapshot, extendMembership } = require("../miniprogram/utils/membership-model.js");
-
-test("publishes the confirmed monthly, half-year and annual prices", () => {
-  assert.deepEqual(
-    PRICING_PLANS.map(({ price, days }) => ({ price, days })),
-    [{ price: 30, days: 30 }, { price: 168, days: 180 }, { price: 300, days: 365 }]
-  );
-});
+const { DAY_MS, createMembership, membershipSnapshot, extendMembership } = require("../miniprogram/utils/membership-model.js");
 const now = Date.parse("2026-08-13T00:00:00.000Z");
 
 test("new users receive a seven day full-access trial", () => {

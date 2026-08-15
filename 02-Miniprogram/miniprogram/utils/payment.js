@@ -90,50 +90,6 @@ async function withToken(fn, retry = true) {
   }
 }
 
-function requestPayment(payment) {
-  return new Promise((resolve, reject) => {
-    wx.requestPayment({
-      ...payment,
-      success: resolve,
-      fail(error) {
-        const cancelled = error?.errMsg?.includes("cancel");
-        const reason = new Error(cancelled ? "已取消支付" : "支付未完成，请重试");
-        reason.code = cancelled ? "PAYMENT_CANCELLED" : "PAYMENT_FAILED";
-        reject(reason);
-      },
-    });
-  });
-}
-
-const delay = (duration) => new Promise((resolve) => setTimeout(resolve, duration));
-
-async function queryOrder(orderNo, attempts = 4) {
-  let result;
-  for (let index = 0; index < attempts; index += 1) {
-    result = await withToken((token) => apiRequest(`/pay/orders/${encodeURIComponent(orderNo)}`, { token }));
-    if (result.order?.status === "PAID") return result;
-    if (index < attempts - 1) await delay(800 + index * 600);
-  }
-  return result;
-}
-
-async function purchaseMembership(planId) {
-  const created = await withToken((token) => apiRequest("/pay/wechat/orders", {
-    method: "POST",
-    token,
-    data: { planId },
-  }));
-  await requestPayment(created.payment);
-  const result = await queryOrder(created.orderNo);
-  if (result?.order?.status !== "PAID") {
-    const error = new Error("支付结果确认中，请稍后在会员中心刷新");
-    error.code = "PAYMENT_CONFIRMING";
-    error.orderNo = created.orderNo;
-    throw error;
-  }
-  return result;
-}
-
 async function fetchMembership() {
   return withExistingToken((token) => apiRequest("/member/me", { token }));
 }
@@ -180,8 +136,6 @@ module.exports = {
   fetchMembership,
   recordMemberBehavior,
   bindPhoneNumber,
-  purchaseMembership,
-  queryOrder,
   linkCommunityPhone,
   submitCommunityApplication,
   redeemPoints,

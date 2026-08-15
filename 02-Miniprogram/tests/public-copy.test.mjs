@@ -77,7 +77,7 @@ test("switches financing between China and global scopes with persisted live cou
 });
 
 test("requires phone, avatar and nickname before the server starts a seven-day trial", () => {
-  for (const copy of ["开启 7 天完整体验", "头像", "昵称", "授权手机号并开启体验", "不自动续费"]) {
+  for (const copy of ["开启 7 天完整体验", "头像", "昵称", "授权手机号并开启体验", "活跃积分兑换"]) {
     assert.match(registrationSource, new RegExp(copy, "u"));
   }
   assert.match(registrationSource, /open-type="chooseAvatar"/u);
@@ -101,17 +101,19 @@ test("lets verified community members sync without repeating profile registratio
   assert.match(registrationLogic, /result\.community\?\.status !== "joined"/u);
 });
 
-test("exposes the confirmed membership plans and point exchange entry", () => {
-  const membershipContract = `${membershipSource}\n${membershipModelSource}`;
-  for (const copy of ["7 天完整权益体验", "30", "168", "300", "月度会员", "半年会员", "年度会员", "所有栏目的完整浏览权", "活跃积分兑换"]) {
+test("ships a registration-and-points membership flow without cash payment", () => {
+  const membershipContract = `${membershipSource}\n${membershipLogic}\n${membershipModelSource}\n${registrationSource}\n${profileSource}`;
+  for (const copy of ["7 天完整权益体验", "所有栏目的完整浏览权", "活跃积分兑换", "积分兑换"]) {
     assert.match(membershipContract, new RegExp(copy, "u"));
   }
-  assert.match(membershipSource, /wx:for="\{\{plans\}\}"/u);
-  assert.match(membershipSource, /立即开通会员/u);
-  assert.match(membershipLogic, /purchaseMembership\(plan\.id\)/u);
-  assert.match(paymentSource, /wx\.requestPayment/u);
-  assert.match(paymentSource, /result\?\.order\?\.status !== "PAID"/u);
-  assert.doesNotMatch(membershipLogic, /付费开通暂未开放/u);
+  for (const cashCapability of ["requestPayment", "/pay/", "purchaseMembership", "PRICING_PLANS", "MONTHLY_PRICE"]) {
+    assert.doesNotMatch(`${paymentSource}\n${membershipLogic}\n${membershipModelSource}`, new RegExp(cashCapability, "u"));
+  }
+  for (const cashCopy of ["立即开通会员", "续费会员", "微信支付", "元/月", "月度会员", "半年会员", "年度会员"]) {
+    assert.doesNotMatch(membershipContract, new RegExp(cashCopy, "u"));
+  }
+  assert.match(membershipSource, /bindtap="openRegistration"/u);
+  assert.match(membershipSource, /bindtap="openGrowth"/u);
 });
 
 test("keeps observer growth primary and membership status compact on profile", () => {
@@ -121,7 +123,7 @@ test("keeps observer growth primary and membership status compact on profile", (
   assert.match(compactMembership, /会员权益/u);
   assert.match(compactMembership, /有效至/u);
   assert.doesNotMatch(compactMembership, /元\/月/u);
-  assert.match(compactMembership, /开通会员/u);
+  assert.match(compactMembership, /积分兑换/u);
   assert.match(profileSource, /邀请人得 300 活跃积分/u);
   assert.match(profileSource, /class="identity-row" bindtap="openSettings"/u);
   assert.match(profileSource, /class="text-link">设置</u);
