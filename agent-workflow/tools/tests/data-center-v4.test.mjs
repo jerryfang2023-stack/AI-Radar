@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
-import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, eventStatus, facetAssertionsForClaim, facetMatchers, findEventRule, modelAssistedEventEligibility, normalizeEventTitle, organizationMentions, publicEventSourceTitleIssue, repairExistingChinaMarketScope, repairExistingEntityLinks, sourceArtifact, tagAssertionsForClaim, taxonomyEvidenceSegmentRelevant, taxonomyMatchers, trimBoilerplate } from "../build-data-center-v4.mjs";
+import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, eventStatus, facetAssertionsForClaim, facetMatchers, findEventRule, metricValues, modelAssistedEventEligibility, normalizeEventTitle, normalizedFundingMetric, organizationMentions, publicEventSourceTitleIssue, publicEventSourceUrlIssue, repairExistingChinaMarketScope, repairExistingEntityLinks, sourceArtifact, tagAssertionsForClaim, taxonomyEvidenceSegmentRelevant, taxonomyMatchers, trimBoilerplate } from "../build-data-center-v4.mjs";
 import { evaluateBundle, evaluateBundleFiles } from "../assert-data-center-v4.mjs";
 import { buildEventDisplayTitle } from "../event-public-title.mjs";
 import { coreRawQcViolationCounts, isCoreV4EvidenceItem, isRoutedV4EvidenceItem, isUsableCoreEvidenceItem } from "../guanlan-monitor-quality-gate.mjs";
@@ -1128,6 +1128,46 @@ test("analysis headlines about what a rebalance means stay out of commercial eve
 
   assert.equal(result.accepted, false);
   assert.equal(result.reason, "non_event_or_index_title");
+});
+
+test("tag and topic index pages cannot become commercial events", () => {
+  for (const sourceUrl of [
+    "https://cn.ft.com/tag/artificial-intelligence?page=14",
+    "https://example.com/topics/enterprise-ai/",
+  ]) {
+    const result = eventSourceEligibility(
+      { clean_text: "A page containing excerpts from several unrelated articles.", raw_qc_decision: "pass" },
+      { source_url: sourceUrl },
+      "Artificial Intelligence",
+    );
+    assert.equal(result.accepted, false, sourceUrl);
+    assert.equal(result.reason, "tag_or_topic_index_not_event_source", sourceUrl);
+  }
+  assert.equal(eventSourceEligibility(
+    { clean_text: "The project released version 1.2.3.", raw_qc_decision: "pass" },
+    { source_url: "https://github.com/example/project/releases/tag/v1.2.3" },
+    "Project 1.2.3 released",
+  ).accepted, true);
+  assert.equal(publicEventSourceUrlIssue("https://cn.ft.com/tag/artificial-intelligence?page=14"), "tag_or_topic_index_not_event_source");
+  assert.equal(publicEventSourceUrlIssue("https://github.com/example/project/releases/tag/v1.2.3"), "");
+});
+
+test("integrity gate rejects canonical events sourced from tag or topic indexes", () => {
+  const bundle = buildBundle([
+    entry("tag-index-gate", "Acme launches AI agent", "Acme launched an AI agent for support teams.")
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+  bundle.source_artifacts[0].source_url = "https://cn.ft.com/tag/artificial-intelligence?page=14";
+  bundle.source_artifacts[0].canonical_url = bundle.source_artifacts[0].source_url;
+  bundle.raw_documents[0].source_url = bundle.source_artifacts[0].source_url;
+  bundle.raw_documents[0].canonical_url = bundle.source_artifacts[0].source_url;
+
+  const result = evaluateBundle(bundle, taxonomy);
+  assert.ok(result.failures.some((failure) => failure.includes("ineligible source URL (tag_or_topic_index_not_event_source)")));
+});
+
+test("thousand-denominated funding metrics retain their K magnitude", () => {
+  assert.deepEqual(metricValues("Optimly raised $800K in pre-seed funding."), ["$800K"]);
+  assert.equal(normalizedFundingMetric("$800K"), "$:0.8:million");
 });
 
 test("research and report containers cannot promote incidental historical events", () => {

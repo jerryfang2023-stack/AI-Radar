@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-14T00:23:40.398Z",
-    "latestDataDate": "2026-08-14",
-    "currentDate": "2026-08-14",
-    "eventCount": 2102,
+    "generatedAt": "2026-08-15T00:27:23.598Z",
+    "latestDataDate": "2026-08-15",
+    "currentDate": "2026-08-15",
+    "eventCount": 2132,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -25,6 +25,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-72d4a00d52a3201c",
       "EV-446ebce0edb6dce0",
       "EV-70efbfcaadcdb259",
       "EV-534dc9add1c0cc35",
@@ -40,7 +41,7 @@
       "EN-993599624a199fe0"
     ],
     "firstSeen": "2026-06-13",
-    "lastSeen": "2026-08-04",
+    "lastSeen": "2026-08-15",
     "relationIds": [
       "REL2-09dd97666e545a2c",
       "REL2-ff240950e3bb7f5e"
@@ -50,6 +51,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-72d4a00d52a3201c",
         "EV-446ebce0edb6dce0",
         "EV-70efbfcaadcdb259",
         "EV-534dc9add1c0cc35",
@@ -60,6 +62,35 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-72d4a00d52a3201c",
+        "dataDate": "2026-08-15",
+        "date": "2026-08-14",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "智谱AI发布GLM-5.3，称其为最强开源权重编程模型",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-a0df48578718995f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-1d79127e9d90e89b",
+          "EN-e3ea8280d7689bb7",
+          "EN-a0df48578718995f"
+        ]
+      },
       {
         "id": "EV-446ebce0edb6dce0",
         "dataDate": "2026-08-04",
@@ -459,7 +490,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-14"
+      "lastSeen": "2026-08-15"
     },
     {
       "id": "TX-technology-long_context",

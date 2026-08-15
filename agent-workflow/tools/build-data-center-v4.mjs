@@ -170,6 +170,19 @@ function subtractCalendarMonths(dateText, months) {
   return `${targetYear}-${String(normalizedMonth + 1).padStart(2, "0")}-${String(Math.min(day, lastDay)).padStart(2, "0")}`;
 }
 
+export function publicEventSourceUrlIssue(value) {
+  try {
+    const url = new URL(cleanString(value));
+    if (/\/(?:tags?|topics?)\/[^/]+\/?$/iu.test(url.pathname)
+        && !/\/releases\/tag\//u.test(url.pathname)) {
+      return "tag_or_topic_index_not_event_source";
+    }
+    return "";
+  } catch {
+    return "invalid_source_url";
+  }
+}
+
 function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {}) {
   const rawQcDecision = cleanString(raw.raw_qc_decision).toLocaleLowerCase();
   const extractionQuality = cleanString(raw.extraction_quality).toLocaleLowerCase();
@@ -239,6 +252,8 @@ function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {
       || (RUMOR.test(sourceLead) && /官方公告为准|尚未对外开放|has not (?:been )?confirmed|not confirmed|或计划|据.{0,20}消息|内部披露的信息/iu.test(sourceLead)))) {
     return { accepted: false, reason: "rumor_requires_primary_confirmation" };
   }
+  const sourceUrlIssue = publicEventSourceUrlIssue(artifact.source_url);
+  if (sourceUrlIssue) return { accepted: false, reason: sourceUrlIssue };
   try {
     const url = new URL(artifact.source_url);
     if (/the-?agent-?report\.com$/u.test(url.hostname) && /\bThomas Dohmke\b|\bEntire\b/iu.test(title)) {
@@ -864,7 +879,7 @@ function sentenceSpans(body) {
 }
 
 function metricValues(text) {
-  return [...text.matchAll(/(?:[$€£¥]\s?\d[\d,.]*\s?(?:million|billion|trillion|m|b|t|bn)?|\d[\d,.]*\s?(?:%|million|billion|trillion|gpus?|chips?|servers?|accelerators?|mw|gw|gb|tb|pb|tops?|tflops?|peta?flops?|万|亿|万元|亿元|台|枚|颗)|数(?:十|百|千)?万(?:元|美元|人民币)?)/giu)]
+  return [...text.matchAll(/(?:[$€£¥]\s?\d[\d,.]*\s?(?:million|billion|trillion|thousand|m|b|t|k|bn)?|\d[\d,.]*\s?(?:%|million|billion|trillion|thousand|gpus?|chips?|servers?|accelerators?|mw|gw|gb|tb|pb|tops?|tflops?|peta?flops?|万|亿|万元|亿元|台|枚|颗)|数(?:十|百|千)?万(?:元|美元|人民币)?)/giu)]
     .map((match) => match[0]).slice(0, 12);
 }
 
@@ -1480,10 +1495,13 @@ function canonicalNamedReleaseType(identity, fallback) {
 
 function normalizedFundingMetric(value) {
   const text = normalizeSpace(value).toLowerCase().replace(/,/gu, "");
-  const western = text.match(/([$€£¥])\s*(\d+(?:\.\d+)?)\s*(billion|million|bn|mn|b|m)?\b/u);
+  const western = text.match(/([$€£¥])\s*(\d+(?:\.\d+)?)\s*(billion|million|thousand|bn|mn|b|m|k)?\b/u);
   if (western) {
     const unit = western[3] || "";
-    const multiplier = /^(?:billion|bn|b)$/u.test(unit) ? 1000 : /^(?:million|mn|m)$/u.test(unit) ? 1 : 0.000001;
+    const multiplier = /^(?:billion|bn|b)$/u.test(unit) ? 1000
+      : /^(?:million|mn|m)$/u.test(unit) ? 1
+        : /^(?:thousand|k)$/u.test(unit) ? 0.001
+          : 0.000001;
     return `${western[1]}:${Number(western[2]) * multiplier}:million`;
   }
   const chinese = text.match(/(\d+(?:\.\d+)?)\s*(亿|万)?\s*(美元|欧元|英镑|元)/u);
@@ -2270,6 +2288,8 @@ export {
   normalizeEventTitle,
   findEventRule,
   eventStatus,
+  metricValues,
+  normalizedFundingMetric,
   organizationMentions,
   eventSourceEligibility,
   publicEventSourceTitleIssue,

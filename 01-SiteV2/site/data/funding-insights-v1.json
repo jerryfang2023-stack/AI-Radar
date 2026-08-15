@@ -5,17 +5,17 @@
     "site_version": "SITE-V4.6.1-research-retirement",
     "column_version": "FUNDING-INSIGHT-V1.5.0-china-market",
     "taxonomy_version": "TAG-V4.1",
-    "latest_date": "2026-08-14",
-    "last_checked_date": "2026-08-14",
+    "latest_date": "2026-08-15",
+    "last_checked_date": "2026-08-15",
     "latest_financing_date": "2026-08-13",
-    "generated_at": "2026-08-14T03:15:42.802Z",
-    "card_count": 259,
+    "generated_at": "2026-08-15T04:12:18.523Z",
+    "card_count": 260,
     "china_market_card_count": 34,
     "duplicate_rounds_removed": 17,
     "automatic_publication": true,
     "translation_registry": {
       "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
-      "generated_at": "2026-08-14T09:20:35.971Z"
+      "generated_at": "2026-08-15T00:27:14.854Z"
     },
     "market_category_framework": {
       "name": "CB Insights AI 100 2026",
@@ -304,6 +304,675 @@
     ]
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-f1922b3b47f9f920",
+      "triggered_by_event_id": "EV-f595d042ae4c91eb",
+      "as_of_date": "2026-08-15",
+      "company": {
+        "entity_id": "EN-67e8c106650aa683",
+        "name": "Optimly",
+        "full_name": "Optimly",
+        "website": "https://optimly.ai",
+        "summary": "Optimly 是面向智能体商务的信任基础设施，运营 AI Brand Index，帮助品牌修正 AI 模型对其的描述与推荐。",
+        "headquarters": "西雅图，华盛顿州",
+        "founders": [
+          {
+            "name": "Apurva Luty",
+            "role": "首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-211f4cb979ab0a9a",
+                "quote": "Founders: Apurva Luty (CEO) and Anoop Dixith (CTO)",
+                "source_content_hash": "0105ab5c581e99ed",
+                "quote_hash": "38ab4fe33ed0cd628edaa65630ce98cac9ba3ed3e935d359bfae6252ac2744df"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Anoop Dixith",
+            "role": "首席技术官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-211f4cb979ab0a9a",
+                "quote": "Founders: Apurva Luty (CEO) and Anoop Dixith (CTO)",
+                "source_content_hash": "0105ab5c581e99ed",
+                "quote_hash": "38ab4fe33ed0cd628edaa65630ce98cac9ba3ed3e935d359bfae6252ac2744df"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-3841e3507887d97d",
+            "quote": "Seattle startup Optimly has closed an $800,000 pre-seed round to build a public index that lets brands correct what AI chatbots say about them.",
+            "source_content_hash": "590ac0f84ea7f5a7",
+            "quote_hash": "6bdc7d128440c7d32d619a17fb38e33a49a2027859ee7cdfd5b2f9b738477cdb"
+          }
+        ],
+        "application_entity_id": "EN-67e8c106650aa683",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "预种子轮",
+        "amount": "$800,000",
+        "total_raised": "$800,000",
+        "announced_at": "2026-07-08",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Flywheel Angel Network",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3841e3507887d97d",
+                "quote": "Flywheel Angel Network, Mighty Capital , AI House , and ai2 incubator backed the round",
+                "source_content_hash": "590ac0f84ea7f5a7",
+                "quote_hash": "e1e31cb866ac6b862b00785d75f304a319b3adf4d6b31ec1d63d8eec7fa1506a"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-c07da30462a535"
+          },
+          {
+            "name": "Mighty Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3841e3507887d97d",
+                "quote": "Flywheel Angel Network, Mighty Capital , AI House , and ai2 incubator backed the round",
+                "source_content_hash": "590ac0f84ea7f5a7",
+                "quote_hash": "e1e31cb866ac6b862b00785d75f304a319b3adf4d6b31ec1d63d8eec7fa1506a"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-2948e407a1f8d8"
+          },
+          {
+            "name": "AI House",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3841e3507887d97d",
+                "quote": "Flywheel Angel Network, Mighty Capital , AI House , and ai2 incubator backed the round",
+                "source_content_hash": "590ac0f84ea7f5a7",
+                "quote_hash": "e1e31cb866ac6b862b00785d75f304a319b3adf4d6b31ec1d63d8eec7fa1506a"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-b7187e6bf378d8"
+          },
+          {
+            "name": "ai2 incubator",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3841e3507887d97d",
+                "quote": "Flywheel Angel Network, Mighty Capital , AI House , and ai2 incubator backed the round",
+                "source_content_hash": "590ac0f84ea7f5a7",
+                "quote_hash": "e1e31cb866ac6b862b00785d75f304a319b3adf4d6b31ec1d63d8eec7fa1506a"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-c6e3d254b4ac45"
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-3841e3507887d97d",
+            "quote": "Optimly raises $800K pre-seed to help brands shape what AI says about them",
+            "source_content_hash": "590ac0f84ea7f5a7",
+            "quote_hash": "00ea4647575def6e38c116be60ef70cfb84bc79352548e94a6d47ec51100767d"
+          },
+          {
+            "source_id": "FISRC-3841e3507887d97d",
+            "quote": "Optimly raises $800K pre-seed to help brands shape what AI says about them Seattle startup Optimly has closed an $800,000 pre-seed round",
+            "source_content_hash": "590ac0f84ea7f5a7",
+            "quote_hash": "3249854049292d93820b6e3bf76269d02ad3180c4ba957eebf7c36d4195f59cc"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "$800,000",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 800000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "80 万美元"
+        },
+        "total_raised_original": "$800,000",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 800000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "80 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-f595d042ae4c91eb",
+            "round_original": "预种子轮",
+            "amount": "$800,000",
+            "announced_at": "2026-07-08",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3841e3507887d97d",
+                "quote": "Optimly raises $800K pre-seed to help brands shape what AI says about them",
+                "source_content_hash": "590ac0f84ea7f5a7",
+                "quote_hash": "00ea4647575def6e38c116be60ef70cfb84bc79352548e94a6d47ec51100767d"
+              },
+              {
+                "source_id": "FISRC-3841e3507887d97d",
+                "quote": "Optimly raises $800K pre-seed to help brands shape what AI says about them Seattle startup Optimly has closed an $800,000 pre-seed round",
+                "source_content_hash": "590ac0f84ea7f5a7",
+                "quote_hash": "3249854049292d93820b6e3bf76269d02ad3180c4ba957eebf7c36d4195f59cc"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "$800,000",
+          "normalized": {
+            "currency": "USD",
+            "value": 800000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "80 万美元"
+          },
+          "basis": "source_disclosed",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 800000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "80 万美元"
+            }
+          ],
+          "historical_round_count": 1
+        }
+      },
+      "products": [
+        {
+          "name": "AI Brand Index",
+          "description": "免费的公开品牌目录，AI 智能体可以从中获取品牌信息，已评分约 60,000 个品牌，其中超过 24,000 个已上线。",
+          "target_customers": "B2B 公司、营销负责人、增长团队、品牌经理",
+          "features": [
+            "公开品牌目录",
+            "AI 智能体可拉取",
+            "品牌评分"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3841e3507887d97d",
+              "quote": "The free AI Brand Index is a public directory that AI agents can pull from — it has scored about 60,000 brands, with more than 24,000 now live.",
+              "source_content_hash": "590ac0f84ea7f5a7",
+              "quote_hash": "1f04286cca4d5f5c9ff74ae7dd2482785a13152ac0a4b3d65f4a1a43f3b195cf"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "BrandVault",
+          "description": "付费层，允许经过验证的品牌用智能体可解析的简明语言重写其条目，并监控 AI 如何描述该品牌。",
+          "target_customers": "B2B 公司",
+          "features": [
+            "品牌条目重写",
+            "AI 描述监控",
+            "品牌验证"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3841e3507887d97d",
+              "quote": "BrandVault, the paid layer, lets a verified brand rewrite its entry in plain language an agent can parse, then monitors how AI describes it.",
+              "source_content_hash": "590ac0f84ea7f5a7",
+              "quote_hash": "a65a1d701b3941df073d45a505733b9efe7f36a778abd6d92bcf529b5af3ef5e"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Hal9",
+          "industry": "B2B AI 平台",
+          "use_case": "修正 AI 模型对品牌的错误分类，提升 AI 推荐流量",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-355cab10723b8908",
+              "quote": "Hal9 built a world-class low-code AI platform. But to Answer Engines (ChatGPT, Gemini, Claude), they didn't exist.",
+              "source_content_hash": "b590481124a4f7f3",
+              "quote_hash": "97a646a95a10a4cbece44b29540112807227ea2a63a98731e5e3ef52c47000ef"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "AI Brand Index 已评分品牌数",
+          "value": "约 60,000",
+          "observed_at": "2026-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3841e3507887d97d",
+              "quote": "it has scored about 60,000 brands, with more than 24,000 now live",
+              "source_content_hash": "590ac0f84ea7f5a7",
+              "quote_hash": "d612e10b4442410d6de45b14b9d668605d1c1866d44b7ec8712953785a4c95ff"
+            }
+          ]
+        },
+        {
+          "label": "AI Brand Index 已上线品牌数",
+          "value": "超过 24,000",
+          "observed_at": "2026-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3841e3507887d97d",
+              "quote": "it has scored about 60,000 brands, with more than 24,000 now live",
+              "source_content_hash": "590ac0f84ea7f5a7",
+              "quote_hash": "d612e10b4442410d6de45b14b9d668605d1c1866d44b7ec8712953785a4c95ff"
+            }
+          ]
+        },
+        {
+          "label": "Hal9 AI 推荐流量增长",
+          "value": "+1,600%",
+          "observed_at": "2026",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-355cab10723b8908",
+              "quote": "+1,600% Traffic A confirmed causal spike in high-intent referrals from ChatGPT and Perplexity.",
+              "source_content_hash": "b590481124a4f7f3",
+              "quote_hash": "4e53e425a62abec70766b5a08263f1ccdf865ea50571ecc373a1abf2a06de9db"
+            }
+          ]
+        },
+        {
+          "label": "Hal9 Brand Accuracy Score 提升",
+          "value": "2.0 → 8.1",
+          "observed_at": "2026",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-355cab10723b8908",
+              "quote": "Perplexity \"Brand Accuracy Score\" jumped from 2.0 (Fictional Villain) to 8.1 (B2B Platform).",
+              "source_content_hash": "b590481124a4f7f3",
+              "quote_hash": "badb4cc8a2187dae0ea3f6ba9b600d79d27bbc728ea1abca1757a72276fe86fe"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Javier Luraschi",
+          "quote": "Seeing the data laid out like this moves the conversation from subjective opinions to objective facts. We know exactly where to focus our efforts.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-355cab10723b8908",
+              "quote": "Seeing the data laid out like this moves the conversation from subjective opinions to objective facts. We know exactly where to focus our efforts.",
+              "source_content_hash": "b590481124a4f7f3",
+              "quote_hash": "c7406910f38612b029aa9020909cfadd7d6d661d5fe512f95083781e9aaaec64"
+            }
+          ]
+        },
+        {
+          "speaker": "Apurva Luty",
+          "quote": "We didn't target a single keyword. We built structured brand entity data — and both Google and AI models discovered it as reference material. The line between SEO and AEO isn't blurring. It's gone.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-871091c721aa637a",
+              "quote": "We didn't target a single keyword. We built structured brand entity data — and both Google and AI models discovered it as reference material. The line between SEO and AEO isn't blurring. It's gone.",
+              "source_content_hash": "27b0bda09ff36cd5",
+              "quote_hash": "78d1ba154a3c3fc22d53171d7a81ba9dff49729e51e98e4fba46ff26236e77b3"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是：AI 成为 B2B 买家研究渠道后，品牌在 AI 模型中的认知准确性将直接影响获客与转化。Optimly 的已验证信号包括：AI Brand Index 已评分约 60,000 个品牌、超过 24,000 个品牌上线，以及 Hal9 案例中 AI 推荐流量增长 1,600%、Brand Accuracy Score 从 2.0 提升至 8.1。证据边界：本轮投资方未公开投资理由，上述信号来自公司官方案例与产品页面，未经独立第三方验证。",
+        "validated_signals": [
+          "AI Brand Index 已评分约 60,000 个品牌，超过 24,000 个品牌上线",
+          "Hal9 案例中 AI 推荐流量增长 1,600%，Brand Accuracy Score 从 2.0 提升至 8.1"
+        ],
+        "risks": [
+          "公司核心指标与案例数据均来自官方页面，缺乏独立第三方验证，存在选择性披露风险。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "marketing",
+        "market_application_id": "",
+        "use_case_ids": [
+          "marketing",
+          "knowledge_search"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "AI 品牌信任基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：AI 成为 B2B 买家研究渠道后，品牌在 AI 模型中的认知准确性将直接影响获客与转化。Optimly 的已验证信号包括：AI Brand Index 已评分约 60,000 个品牌、超过 24,000 个品牌上线，以及 Hal9 案例中 AI 推荐流量增长 1,600%、Brand Accuracy Score 从 2.0 提升至 8.1。证据边界：本轮投资方未公开投资理由，上述信号来自公司官方案例与产品页面，未经独立第三方验证。",
+          "evidence_signals": [
+            "AI Brand Index 已评分约 60,000 个品牌，超过 24,000 个品牌上线",
+            "Hal9 案例中 AI 推荐流量增长 1,600%，Brand Accuracy Score 从 2.0 提升至 8.1"
+          ],
+          "risks": [
+            "公司核心指标与案例数据均来自官方页面，缺乏独立第三方验证，存在选择性披露风险。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        },
+        "related_direction": {
+          "id": "DIR-20260725-02",
+          "title": "AI智能体从“辅助写作”转向“自主执行”，催生对智能体行为审计与权限控制的新需求"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI Brand Index",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "BrandVault",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Apurva Luty",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Anoop Dixith",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Flywheel Angel Network",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Mighty Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "AI House",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "ai2 incubator",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Hal9",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-f595d042ae4c91eb",
+          "date": "2026-08-15",
+          "title": "Optimly 筹集 80 万美元种子前融资，帮助品牌塑造 AI 对它们的评价",
+          "amount": "$800,000",
+          "source_refs": [
+            "SA-d89b7c61fb5df061"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-3841e3507887d97d",
+          "source_url": "https://app.dealroom.co/news/note/optimly-raises-800k-pre-seed-to-help-brands-shape-what-ai-says-about-them",
+          "title": "Optimly 筹集 80 万美元种子前融资，帮助品牌塑造 AI 对它们的评价",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-15T00:23:11.238Z",
+          "content_hash": "590ac0f84ea7f5a7",
+          "source_artifact_id": "SA-d89b7c61fb5df061",
+          "raw_id": "RAW-3d7534281c892b00"
+        },
+        {
+          "source_id": "FISRC-355cab10723b8908",
+          "source_url": "https://optimly.ai/case-studies/hal9",
+          "title": "Optimly — Teach AI to Recommend Your Business",
+          "publisher": "optimly.ai",
+          "source_class": "official_candidate",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-08-15T04:11:50.963Z",
+          "content_hash": "b590481124a4f7f3",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-871091c721aa637a",
+          "source_url": "https://optimly.ai/case-studies/optimly-organic-growth",
+          "title": "Optimly — Teach AI to Recommend Your Business",
+          "publisher": "optimly.ai",
+          "source_class": "official_candidate",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-08-15T04:11:51.237Z",
+          "content_hash": "27b0bda09ff36cd5",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-211f4cb979ab0a9a",
+          "source_url": "https://optimly.ai/brand-facts",
+          "title": "Optimly — Teach AI to Recommend Your Business",
+          "publisher": "optimly.ai",
+          "source_class": "official_candidate",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-08-15T04:11:50.879Z",
+          "content_hash": "0105ab5c581e99ed",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-15T04:12:18.404Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-15T04:12:18.404Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "AI Brand Index",
+            "BrandVault"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Anoop Dixith",
+            "Apurva Luty"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-f595d042ae4c91eb"
+      ],
+      "aggregation": {
+        "key": "EN-67e8c106650aa683|pre_seed|USD:exact:800000:::|2026-07-08",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-f1922b3b47f9f920",
+          "event_ids": [
+            "EV-f595d042ae4c91eb"
+          ],
+          "round": "预种子轮",
+          "round_code": "pre_seed",
+          "round_original": "预种子轮",
+          "amount_original": "$800,000",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 800000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "80 万美元"
+          },
+          "announced_at": "2026-07-08",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "enterprise_software_platform",
+        "name": "企业软件平台",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "enterprise_applications",
+        "name": "企业级应用",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "marketing",
+        "name": "营销",
+        "method": "card_explicit"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-f595d042ae4c91eb",
+        "direction": "opportunity-map.html#direction-cards"
+      },
+      "translations": {
+        "zh-CN": {
+          "company.headquarters": {
+            "text": "西雅图，华盛顿州",
+            "source_hash": "891ce7c49c2d4676df2608967fc9b19a18d7e46891566662530bdc7a7bc13032",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-15T00:27:12.734Z",
+            "status": "translated"
+          },
+          "company.founders[0].role": {
+            "text": "首席执行官",
+            "source_hash": "57f0df0e3d01f3f2b0aaf23f34e9555027766525ce779fbe5f0b044021d6fd15",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-14T07:17:15.985Z",
+            "status": "translated"
+          },
+          "company.founders[1].role": {
+            "text": "首席技术官",
+            "source_hash": "e7f67dded93a78700d529f3294c3085bae8d30cd0b3290dec82b0e2007a0078f",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-14T07:17:18.959Z",
+            "status": "translated"
+          },
+          "customers[0].industry": {
+            "text": "B2B AI 平台",
+            "source_hash": "93d49bc88af256066ecc8b016fe744a6540df77700a7f3be1979387623638c4d",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-15T00:27:12.734Z",
+            "status": "translated"
+          },
+          "metrics[0].label": {
+            "text": "AI Brand Index 已评分品牌数",
+            "source_hash": "7113cb3b757f886d2716c66feda4d1afca471c14581e71a5bdfb6f793f99506e",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-15T00:27:12.734Z",
+            "status": "translated"
+          },
+          "metrics[1].label": {
+            "text": "AI Brand Index 已上线品牌数",
+            "source_hash": "c3781d63152a385d5b9eb27e73099ff906e1fefe21fbb126592dda7c5d821e5a",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-15T00:27:12.734Z",
+            "status": "translated"
+          }
+        }
+      }
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-901eb0951e568c40",
@@ -23519,7 +24188,7 @@
               "quote_hash": "15fb0a23b983066ddadc88812242c3d7e5f64731c40d19cbb8a5ebbd1fe1e3cc"
             }
           ],
-          "entity_id": null
+          "entity_id": "EN-bbdefa2950f49882"
         },
         {
           "name": "字节跳动",
@@ -23974,8 +24643,8 @@
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "谷歌",
-          "canonical_entity_id": null,
-          "canonical_name": ""
+          "canonical_entity_id": "EN-bbdefa2950f49882",
+          "canonical_name": "Google"
         },
         {
           "relation_type": "public_customer_case",
@@ -25596,7 +26265,7 @@
               "quote_hash": "9592a436a86251319144ada6896df9d41134116c43a0bad3f91505d2a6c4d5c1"
             }
           ],
-          "entity_id": null
+          "entity_id": "EN-bbdefa2950f49882"
         },
         {
           "name": "英伟达",
@@ -26022,8 +26691,8 @@
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "谷歌",
-          "canonical_entity_id": null,
-          "canonical_name": ""
+          "canonical_entity_id": "EN-bbdefa2950f49882",
+          "canonical_name": "Google"
         },
         {
           "relation_type": "compared_with",

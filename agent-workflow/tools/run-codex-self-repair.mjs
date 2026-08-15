@@ -318,7 +318,7 @@ function main() {
       status = "blocked_repair_worktree";
       blockReason = `${repairWorktree.reason} ${repairWorktree.command?.stderr || repairWorktree.command?.error || ""}`.trim();
     } else {
-      const defaultCodexArgs = `exec --sandbox danger-full-access --ask-for-approval never --output-last-message "${codexLastMessagePath}" --cd "${repairWorktree.path}" -`;
+      const defaultCodexArgs = `--ask-for-approval never exec --sandbox danger-full-access --output-last-message "${codexLastMessagePath}" --cd "${repairWorktree.path}" -`;
       const codexArgs = enforceRepairWorktree(parseArgList(args.get("codex-args") || defaultCodexArgs), repairWorktree.path);
       codexInvocation = runCommand("codex self repair", codexCommand, codexArgs, {
         input: prompt,
