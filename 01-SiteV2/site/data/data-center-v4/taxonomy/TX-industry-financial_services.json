@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-15T00:27:23.598Z",
+    "generatedAt": "2026-08-15T04:37:54.461Z",
     "latestDataDate": "2026-08-15",
     "currentDate": "2026-08-15",
-    "eventCount": 2132,
+    "eventCount": 2120,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -60,7 +60,6 @@
       "EV-44ec7c229995ca3c",
       "EV-986ac3a819d23388",
       "EV-4eb0556b8c72d410",
-      "EV-407b77337866e047",
       "EV-a852dc0ca6011ff6",
       "EV-eb61ddca7f36f55c",
       "EV-4b545e310ded2baa",
@@ -129,7 +128,6 @@
       "EN-c189daf477a2d4ca",
       "EN-c71496986d06e3f2",
       "EN-098a40b4499d7512",
-      "EN-e871a24e54933631",
       "EN-c9e92f0b88c6456b",
       "EN-5e9e4638fa2ec9a4",
       "EN-d3565d297d476f10",
@@ -150,7 +148,6 @@
       "EN-32e83e92d45d71f6"
     ],
     "fdeIds": [
-      "FDE-6069222bb5a9d0fe",
       "FDE-34d87868ff636016",
       "FDE-e79a238725a98c06",
       "FDE-e1b2683e8d017358",
@@ -166,7 +163,7 @@
       "HW-a033b945449628d5"
     ],
     "firstSeen": "2025-08-27",
-    "lastSeen": "2026-08-15"
+    "lastSeen": "2026-08-14"
   },
   "events": [
     {
@@ -21677,154 +21674,6 @@
       "publisher": "techcrunch.com"
     },
     {
-      "id": "EV-407b77337866e047",
-      "dataDate": "2026-08-15",
-      "date": "2026-08-15",
-      "updatedDate": "2026-08-15",
-      "eventType": "deployment",
-      "eventTypeLabel": "部署",
-      "eventGroup": "部署与案例",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "Cars24 推出 Deployment Inc，印度首家前沿部署 AI 公司",
-      "originalTitle": "Cars24 launches Deployment Inc, India’s first forward-deployed AI company | Business News This Week",
-      "subject": "Cars24 launches Deployment Inc, India’s first forward-",
-      "action": "deployed",
-      "object": "AI company | Business News This Week",
-      "metrics": [
-        "$5 million"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "financial_services",
-            "name": "金融服务",
-            "entityIds": [
-              "EN-e871a24e54933631"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "healthcare_life_sciences",
-            "name": "医疗与生命科学",
-            "entityIds": [
-              "EN-e871a24e54933631"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "manufacturing",
-            "name": "制造业",
-            "entityIds": [
-              "EN-e871a24e54933631"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "financial_services",
-          "name": "金融服务",
-          "entityIds": [
-            "EN-e871a24e54933631"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "healthcare_life_sciences",
-          "name": "医疗与生命科学",
-          "entityIds": [
-            "EN-e871a24e54933631"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "manufacturing",
-          "name": "制造业",
-          "entityIds": [
-            "EN-e871a24e54933631"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "financial_services",
-          "name": "金融服务",
-          "entityIds": [
-            "EN-e871a24e54933631"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "healthcare_life_sciences",
-          "name": "医疗与生命科学",
-          "entityIds": [
-            "EN-e871a24e54933631"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "manufacturing",
-          "name": "制造业",
-          "entityIds": [
-            "EN-e871a24e54933631"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-e871a24e54933631"
-      ],
-      "entityNames": [
-        "Cars24 launches Deployment Inc"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://businessnewsthisweek.com/business/cars24-launches-deployment-inc-indias-first-forward-deployed-ai-company",
-      "publisher": "businessnewsthisweek.com"
-    },
-    {
       "id": "EV-a852dc0ca6011ff6",
       "dataDate": "2026-08-04",
       "date": "2026-08-04",
@@ -23090,9 +22939,9 @@
     },
     {
       "id": "EV-129ffa6be41bb485",
-      "dataDate": "2026-08-15",
+      "dataDate": "2026-08-14",
       "date": "2026-08-13",
-      "updatedDate": "2026-08-15",
+      "updatedDate": "2026-08-14",
       "eventType": "partnership",
       "eventTypeLabel": "合作",
       "eventGroup": "商业合作",
@@ -25689,11 +25538,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
+        "TX-product_form-model",
         "TX-industry-automotive_transportation",
         "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
@@ -25933,8 +25782,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
@@ -25965,13 +25814,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
         "TX-industry-financial_services",
         "TX-use_case-research_discovery",
+        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-use_case-data_analysis",
         "TX-industry-healthcare_life_sciences",
@@ -25999,8 +25848,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-industry-financial_services",
@@ -26091,9 +25940,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
+        "TX-product_form-model",
         "TX-industry-aerospace_defense",
         "TX-industry-automotive_transportation",
         "TX-industry-telecommunications",
@@ -26162,8 +26011,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
@@ -26281,8 +26130,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-industry-financial_services",
+        "TX-product_form-model",
         "TX-industry-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
@@ -26306,12 +26155,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
         "TX-industry-financial_services",
+        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
         "TX-use_case-data_analysis",
@@ -26350,7 +26199,6 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
@@ -26361,6 +26209,7 @@
         "TX-ai_market_category-industry_applications",
         "TX-ai_market_subcategory-industrials",
         "TX-product_form-enterprise_software_platform",
+        "TX-product_form-model",
         "TX-industry-aerospace_defense",
         "TX-industry-automotive_transportation",
         "TX-target_user-business_user",
@@ -26395,8 +26244,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
@@ -26538,8 +26387,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
@@ -26641,8 +26490,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
@@ -26713,8 +26562,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-agentic_execution",
         "TX-target_user-developer",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
@@ -26749,8 +26598,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
         "TX-industry-aerospace_defense",
@@ -26891,29 +26740,6 @@
       "relatedEntityIds": [],
       "firstSeen": "2025-08-27",
       "lastSeen": "2026-07-22"
-    },
-    {
-      "id": "EN-e871a24e54933631",
-      "name": "Cars24 launches Deployment Inc",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-407b77337866e047"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-industry-financial_services",
-        "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-08-15",
-      "lastSeen": "2026-08-15"
     },
     {
       "id": "EN-c9e92f0b88c6456b",
@@ -27068,8 +26894,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
-        "TX-industry-financial_services"
+        "TX-industry-financial_services",
+        "TX-product_form-model"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-06",
@@ -27096,7 +26922,6 @@
         "EV-d04d03b37046f0ad",
         "EV-6272444f30281858",
         "EV-b95539d17772a4ce",
-        "EV-fca1ecc2d977169f",
         "EV-c7d0b810ac3b3d4e",
         "EV-37b18c0341c66c08",
         "EV-5bc7efca0bc7fec0",
@@ -27109,10 +26934,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-product_form-model",
         "TX-use_case-software_development",
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
+        "TX-product_form-model",
         "TX-industry-telecommunications",
         "TX-industry-retail_ecommerce",
         "TX-use_case-security_operations",
@@ -27127,7 +26952,7 @@
         "EN-dc6c28a2123e8efb"
       ],
       "firstSeen": "2026-05-15",
-      "lastSeen": "2026-08-15"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-2b1bf2dbb57b6603",
@@ -27348,10 +27173,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-technology-embodied_ai",
+        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-use_case-software_development",
@@ -27359,6 +27183,7 @@
         "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-research_discovery",
+        "TX-product_form-model",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
         "TX-target_user-business_user",
@@ -27436,8 +27261,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-product_form-model",
         "TX-industry-financial_services",
+        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-industry-government_public_sector",
         "TX-industry-healthcare_life_sciences",
@@ -27588,8 +27413,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
-        "TX-industry-financial_services"
+        "TX-industry-financial_services",
+        "TX-product_form-model"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2023-03-21",
@@ -27598,52 +27423,42 @@
   ],
   "fde": [
     {
-      "id": "FDE-6069222bb5a9d0fe",
-      "eventId": "EV-407b77337866e047",
-      "dataDate": "2026-08-15",
-      "date": "2026-08-15",
-      "title": "Cars24 推出 Deployment Inc，印度首家前沿部署 AI 公司",
-      "stage": "completed",
-      "stageLabel": "已完成",
-      "customer": "未披露",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "AI company | Business News This Week",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "Gurugram, Aug 10: Cars24 announced the launch of Deployment Inc, an independent enterprise AI company that will help organisations design, implement and operate AI systems across critical business workflows.",
-        "Deployment Inc will give customers one accountable team. Its forward-deployed engineers, or FDEs, will work from inside the customer&rsquo;s organisation. They will begin with a specific workflow and an agreed business metric, connect the necessary models to the company&rsquo;s data and systems, deploy the new workflow against real traffic and remain involved until it operates reliably at scale.",
-        "Deployment Inc plans to hire 50 engineers this month, primarily forward-deployed engineers, alongside AI strategy and go-to-market professionals. The company is also opening its first set of engagements to enterprises seeking to redesign critical operations around AI.",
-        "Cars24 is investing an initial $5 million in Deployment Inc and will become its first customer. Deployment Inc will operate as an independent company serving enterprises across industries, including financial services, consumer businesses, healthcare, manufacturing, logistics and technology."
-      ],
+      "id": "FDE-48afc88dde234ab1",
+      "eventId": "EV-d04d03b37046f0ad",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "title": "IBM 与 OpenAI 达成合作，拓展企业 AI 业务",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "IBM",
+      "vendor": "OpenAI",
+      "industry": "enterprise AI",
+      "useCase": "拓展企业 AI 业务",
+      "reportedNeed": "competition for corporate AI spending intensifies",
+      "deliveryComponents": [],
       "outcomes": [],
-      "metrics": [
-        "$5 million"
-      ],
+      "metrics": [],
       "undisclosedFields": [
-        "customer",
-        "vendor",
-        "industry",
-        "workflow_before",
         "workflow_after",
-        "delivery_model",
         "team_composition",
-        "reported_need",
         "systems_integrated",
         "data_requirements",
         "governance_controls",
-        "reported_outcomes"
+        "reported_delivery_components"
       ],
       "tags": [],
-      "sourceUrl": "https://businessnewsthisweek.com/business/cars24-launches-deployment-inc-indias-first-forward-deployed-ai-company",
+      "sourceUrl": "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push",
       "entityIds": [
-        "EN-e871a24e54933631"
+        "EN-916a98f0fa2a39af",
+        "EN-4c06fff8651d4ff4",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
       ]
     },
     {
       "id": "FDE-ed781e27a7b9458e",
       "eventId": "EV-129ffa6be41bb485",
-      "dataDate": "2026-08-15",
+      "dataDate": "2026-08-14",
       "date": "2026-08-13",
       "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
       "stage": "announced",
@@ -27687,39 +27502,6 @@
       "entityIds": [
         "EN-916a98f0fa2a39af",
         "EN-7d3194f79e645c42"
-      ]
-    },
-    {
-      "id": "FDE-48afc88dde234ab1",
-      "eventId": "EV-d04d03b37046f0ad",
-      "dataDate": "2026-08-14",
-      "date": "2026-08-13",
-      "title": "IBM 与 OpenAI 达成合作，拓展企业 AI 业务",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "IBM",
-      "vendor": "OpenAI",
-      "industry": "enterprise AI",
-      "useCase": "拓展企业 AI 业务",
-      "reportedNeed": "competition for corporate AI spending intensifies",
-      "deliveryComponents": [],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "workflow_after",
-        "team_composition",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_delivery_components"
-      ],
-      "tags": [],
-      "sourceUrl": "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push",
-      "entityIds": [
-        "EN-916a98f0fa2a39af",
-        "EN-4c06fff8651d4ff4",
-        "EN-7d3194f79e645c42",
-        "EN-c70eca6b0f88f44d"
       ]
     },
     {
@@ -28199,61 +27981,13 @@
   ],
   "fdeDossiers": [
     {
-      "id": "FDED-81986ef7de5a9090",
-      "implementationKey": "81986ef7de5a9090",
-      "eventId": "EV-407b77337866e047",
-      "eventIds": [
-        "EV-407b77337866e047"
-      ],
-      "dataDate": "2026-08-15",
-      "date": "2026-08-15",
-      "title": "未披露 × 未披露：AI company | Business News This Week",
-      "stage": "production",
-      "stageLabel": "production",
-      "customer": "未披露",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "AI company | Business News This Week",
-      "workflow": "Deployment Inc will give customers one accountable team. Its forward-deployed engineers, or FDEs, will work from inside the customer&rsquo;s organisation. They will begin with a specific workflow and an agreed business metric, connect the necessary models to the company&rsquo;s data and systems, deploy the new workflow against real traffic and remain involved until it operates reliably at scale.",
-      "systems": [],
-      "outcomes": [],
-      "observationCount": 1,
-      "completeness": 0.375,
-      "completenessPercent": 38,
-      "missingFields": [
-        "customer",
-        "vendor",
-        "industry",
-        "systems_integrated",
-        "reported_outcomes"
-      ],
-      "timeline": [
-        {
-          "observationId": "FDEO-5a0752a4f17c5b8e",
-          "type": "implementation_update",
-          "stage": "production",
-          "date": "2026-08-15",
-          "dataDate": "2026-08-15",
-          "eventId": "EV-407b77337866e047",
-          "eventTitle": "Cars24 推出 Deployment Inc，印度首家前沿部署 AI 公司",
-          "claimCount": 4,
-          "sourceCount": 1
-        }
-      ],
-      "tags": [],
-      "sourceUrl": "https://businessnewsthisweek.com/business/cars24-launches-deployment-inc-indias-first-forward-deployed-ai-company",
-      "entityIds": [
-        "EN-e871a24e54933631"
-      ]
-    },
-    {
       "id": "FDED-5bc72342f3066892",
       "implementationKey": "5bc72342f3066892",
       "eventId": "EV-129ffa6be41bb485",
       "eventIds": [
         "EV-129ffa6be41bb485"
       ],
-      "dataDate": "2026-08-15",
+      "dataDate": "2026-08-14",
       "date": "2026-08-13",
       "title": "IBM × OpenAI：OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
       "stage": "procurement",
@@ -28267,7 +28001,7 @@
         "ChatGPT"
       ],
       "outcomes": [],
-      "observationCount": 2,
+      "observationCount": 1,
       "completeness": 0.625,
       "completenessPercent": 63,
       "missingFields": [
@@ -28276,17 +28010,6 @@
         "reported_outcomes"
       ],
       "timeline": [
-        {
-          "observationId": "FDEO-f504ab59faffb5e7",
-          "type": "procurement",
-          "stage": "procurement",
-          "date": "2026-08-13",
-          "dataDate": "2026-08-15",
-          "eventId": "EV-129ffa6be41bb485",
-          "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
-          "claimCount": 4,
-          "sourceCount": 1
-        },
         {
           "observationId": "FDEO-52e02e22bcd8cd7f",
           "type": "procurement",

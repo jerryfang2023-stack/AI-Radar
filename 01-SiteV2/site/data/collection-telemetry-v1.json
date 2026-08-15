@@ -3,31 +3,31 @@
     "version": "COLLECTION-TELEMETRY-V1.0",
     "ops_version": "OPS-V2.0.0-v4-telemetry",
     "data_date": "2026-08-15",
-    "generated_at": "2026-08-15T00:27:26.783Z",
+    "generated_at": "2026-08-15T04:37:57.488Z",
     "scope": "OPS",
     "canonical_writeback": false,
     "source_of_truth": "Data Center V4 manifest and integrity gate"
   },
   "collection": {
     "discovered": 290,
-    "capture_succeeded": 242,
+    "capture_succeeded": 238,
     "capture_failed": 1,
-    "raw_documents": 242
+    "raw_documents": 238
   },
   "fact_build": {
-    "accepted_claims": 114,
+    "accepted_claims": 73,
     "rejected_claims": 0,
-    "accepted": 114,
+    "accepted": 73,
     "rejected": 0,
-    "pending_claims": 7,
-    "canonical_events": 40,
-    "entities": 74,
-    "relationships": 121,
+    "pending_claims": 6,
+    "canonical_events": 23,
+    "entities": 41,
+    "relationships": 79,
     "conflicts": 0,
-    "qa_queue": 202,
+    "qa_queue": 216,
     "qa_by_status": {
-      "review_optional": 190,
-      "open": 12
+      "review_optional": 203,
+      "open": 13
     }
   },
   "v4_gate": {
@@ -40,7 +40,7 @@
   "application_projection": {
     "opportunity_map": "passed",
     "trend_radar": "passed",
-    "funding_insights": "failed",
+    "funding_insights": "passed",
     "fde_hardware_sync": "passed"
   },
   "publication": {
@@ -53,9 +53,9 @@
       "status": "partial",
       "counts": {
         "discovered": 290,
-        "capture_succeeded": 242,
+        "capture_succeeded": 238,
         "capture_failed": 1,
-        "raw_documents": 242
+        "raw_documents": 238
       },
       "evidence": [
         "01-SiteV2/content/11-databases/data-center-v4/2026-08-15/manifest.json",
@@ -67,16 +67,16 @@
       "label": "事实构建",
       "status": "passed",
       "counts": {
-        "accepted_claims": 114,
+        "accepted_claims": 73,
         "rejected_claims": 0,
-        "accepted": 114,
+        "accepted": 73,
         "rejected": 0,
-        "pending_claims": 7,
-        "canonical_events": 40,
-        "entities": 74,
-        "relationships": 121,
+        "pending_claims": 6,
+        "canonical_events": 23,
+        "entities": 41,
+        "relationships": 79,
         "conflicts": 0,
-        "qa_queue": 202
+        "qa_queue": 216
       },
       "evidence": [
         "01-SiteV2/content/11-databases/data-center-v4/2026-08-15/manifest.json",
@@ -86,11 +86,11 @@
     {
       "id": "application_projection",
       "label": "应用投影",
-      "status": "partial",
+      "status": "passed",
       "counts": {
         "opportunity_map": "passed",
         "trend_radar": "passed",
-        "funding_insights": "failed",
+        "funding_insights": "passed",
         "fde_hardware_sync": "passed"
       },
       "evidence": [

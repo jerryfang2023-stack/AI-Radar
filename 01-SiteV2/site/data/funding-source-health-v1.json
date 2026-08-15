@@ -1,24 +1,24 @@
 {
   "schema_version": "FUNDING-SOURCE-HEALTH-V1.0",
-  "generated_at": "2026-08-15T00:27:26.706Z",
+  "generated_at": "2026-08-15T04:37:57.432Z",
   "date": "2026-08-15",
-  "status": "passed",
-  "state": "healthy",
+  "status": "degraded",
+  "state": "candidate_evidence_insufficient",
   "last_checked_date": "2026-08-15",
   "latest_financing_date": "2026-08-13",
   "totals": {
-    "fetched": 677,
-    "funding_candidates": 143,
-    "verified_events": 1
+    "fetched": 680,
+    "funding_candidates": 139,
+    "verified_events": 0
   },
   "channels": [
     {
       "id": "aihot",
       "status": "collected",
-      "last_success_at": "2026-08-15T00:11:53.292Z",
+      "last_success_at": "2026-08-15T04:23:57.344Z",
       "response_ms": null,
       "http_status": "200",
-      "fetched_count": 260,
+      "fetched_count": 262,
       "latest_content_date": "2026-08-14",
       "duplicate_rate": 0,
       "stale_rate": 1,
@@ -30,14 +30,14 @@
     {
       "id": "funding",
       "status": "collected",
-      "last_success_at": "2026-08-15T00:12:19.680Z",
+      "last_success_at": "2026-08-15T04:24:22.215Z",
       "response_ms": null,
       "http_status": "200",
-      "fetched_count": 67,
+      "fetched_count": 66,
       "latest_content_date": "2026-08-13",
       "duplicate_rate": 0,
       "stale_rate": 1,
-      "funding_candidate_count": 67,
+      "funding_candidate_count": 66,
       "verified_event_count": 0,
       "failures": [],
       "fallback_used": false
@@ -45,14 +45,14 @@
     {
       "id": "gdelt",
       "status": "collected",
-      "last_success_at": "2026-08-15T00:22:19.315Z",
+      "last_success_at": "2026-08-15T04:33:48.958Z",
       "response_ms": null,
       "http_status": "200",
       "fetched_count": 48,
       "latest_content_date": "",
       "duplicate_rate": 0,
       "stale_rate": 1,
-      "funding_candidate_count": 10,
+      "funding_candidate_count": 8,
       "verified_event_count": 0,
       "failures": [],
       "fallback_used": false
@@ -60,24 +60,24 @@
     {
       "id": "keyword",
       "status": "collected",
-      "last_success_at": "2026-08-15T00:17:21.149Z",
+      "last_success_at": "2026-08-15T04:30:05.161Z",
       "response_ms": null,
       "http_status": "200",
-      "fetched_count": 175,
+      "fetched_count": 177,
       "latest_content_date": "2024-10-23",
-      "duplicate_rate": 0.0755,
+      "duplicate_rate": 0.2115,
       "stale_rate": 1,
-      "funding_candidate_count": 53,
-      "verified_event_count": 1,
+      "funding_candidate_count": 52,
+      "verified_event_count": 0,
       "failures": [
-        "keyword-search pre-gate filtered 44 result(s): missing_ai_anchor_in_result=17; social_or_profile_source=15; broad_list_or_market_report=10; noise_term:hiring=2"
+        "keyword-search pre-gate filtered 41 result(s): missing_ai_anchor_in_result=21; broad_list_or_market_report=9; social_or_profile_source=9; noise_term:definition=1; noise_term:hiring=1"
       ],
       "fallback_used": false
     },
     {
       "id": "rss",
       "status": "collected",
-      "last_success_at": "2026-08-15T00:12:00.567Z",
+      "last_success_at": "2026-08-15T04:24:10.524Z",
       "response_ms": null,
       "http_status": "429",
       "fetched_count": 127,
