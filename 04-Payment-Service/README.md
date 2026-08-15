@@ -28,6 +28,23 @@ python -m venv .venv
 
 测试使用假微信网关，不会发起真实扣款。
 
+## V0.6 虚拟支付
+
+- 小程序使用 `wx.requestVirtualPayment` 的道具直购模式，不再使用普通 JSAPI 支付。
+- 固定商品为 `membership_30d`、`membership_180d`、`membership_365d`，价格和权益时长均由服务端校验。
+- 下单接口：`POST /api/v1/pay/virtual/orders`。客户端需同时提交新获取的 `wx.login` code，服务端只用对应 `session_key` 生成当次用户态签名，不保存该会话密钥。
+- 消息推送地址：`https://www.zkdlj.vip/api/v1/pay/virtual/notify`。至少订阅 `xpay_goods_deliver_notify` 和 `xpay_refund_notify`。
+- 客户端支付成功不直接发放权益；仅在验签消息或主动查询微信订单确认后发放。
+- 退款接口：`POST /api/v1/pay/orders/<orderNo>/refund`。当前仅支持购买后 15 天内按原订单全额退款，退款确认后回收该订单对应的会员时长。
+- 沙箱联调使用 `WECHAT_VIRTUAL_ENV=1`；正式发布前切换为 `0`，两套 AppKey 必须分开配置。
+
+商品配置可在 VPS 安全环境中重复执行：
+
+```text
+python scripts/provision_virtual_products.py --env 1
+python scripts/provision_virtual_products.py --env 0
+```
+
 ## 社群集成
 
 详细的数据流、接口和运维冒烟命令见 [社群集成说明](docs/community-integration.md)。核心原则：手机号必须由微信 `getPhoneNumber` 服务端换取后才能匹配；社群历史积分全量进入可用积分和累计成长积分；兑换只减少可用积分。

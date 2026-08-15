@@ -20,16 +20,16 @@ function loadPaymentWx({ orderStatus = "PAID", paymentFailure = null } = {}) {
       if (url.endsWith("/member/behaviors")) return success({ statusCode: 200, data: { awarded: 5, wallet: { balance: 5, lifetime: 5 } } });
       if (url.endsWith("/invites/visit")) return success({ statusCode: 201, data: { recorded: true } });
       if (url.endsWith("/invites/me")) return success({ statusCode: 200, data: { summary: { inviteCode: "abc", invitedCount: 1, successfulCount: 1, rewardPoints: 300 } } });
-      if (url.endsWith("/pay/wechat/orders")) return success({ statusCode: 201, data: {
+      if (url.endsWith("/pay/virtual/orders")) return success({ statusCode: 201, data: {
         orderNo: "GL001",
-        payment: { timeStamp: "1", nonceStr: "n", package: "prepay_id=x", signType: "RSA", paySign: "s" },
+        payment: { env: 1, offerId: "offer", mode: "short_series_goods", signData: "{}", paySig: "p", signature: "s" },
       } });
       if (url.endsWith("/community/link-phone")) return success({ statusCode: 200, data: { community: { status: "joined", points: 860 }, wallet: { balance: 860, lifetime: 860 } } });
       if (url.endsWith("/community/applications")) return success({ statusCode: 201, data: { community: { status: "pending" } } });
       if (url.endsWith("/points/redeem")) return success({ statusCode: 200, data: { wallet: { balance: 560, lifetime: 860 }, membership: { status: "member" } } });
       return success({ statusCode: 200, data: { order: { status: orderStatus }, membership: { status: "member" } } });
     },
-    requestPayment: ({ success, fail }) => paymentFailure ? fail({ errMsg: paymentFailure }) : success({ errMsg: "requestPayment:ok" }),
+    requestVirtualPayment: ({ success, fail }) => paymentFailure ? fail({ errMsg: paymentFailure }) : success({ errMsg: "requestVirtualPayment:ok" }),
   };
   delete require.cache[require.resolve("../miniprogram/utils/payment.js")];
   return { payment: require("../miniprogram/utils/payment.js"), requests };
@@ -39,7 +39,7 @@ test("creates a server-priced order and confirms paid status", async () => {
   const { payment, requests } = loadPaymentWx();
   const result = await payment.purchaseMembership("annual");
   assert.equal(result.order.status, "PAID");
-  assert.deepEqual(requests.find((item) => item.url.endsWith("/pay/wechat/orders")).data, { planId: "annual" });
+  assert.deepEqual(requests.find((item) => item.url.endsWith("/pay/virtual/orders")).data, { planId: "annual", loginCode: "login-code" });
   assert.ok(requests.some((item) => item.url.endsWith("/pay/orders/GL001")));
 });
 

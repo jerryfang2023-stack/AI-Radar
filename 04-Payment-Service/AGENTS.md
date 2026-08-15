@@ -2,8 +2,9 @@
 
 - This service owns Mini Program identities, payment orders, and paid membership entitlements.
 - Never commit AppSecret, APIv3 keys, merchant private keys, WeChat Pay public keys, production databases, or access tokens.
-- Product prices are server-owned: CNY 30 / 30 days, CNY 168 / 180 days, CNY 300 / 365 days.
-- A client payment callback is not proof of payment. Grant entitlement only after a verified WeChat Pay notification or a verified order query.
+- Product prices and virtual product IDs are server-owned: `membership_30d` at CNY 30 / 30 days, `membership_180d` at CNY 168 / 180 days, and `membership_365d` at CNY 300 / 365 days.
+- New cash orders use WeChat Mini Program virtual payment in direct-goods mode. They never auto-renew and allow full refunds within 15 days.
+- A client payment callback is not proof of payment. Grant entitlement only after a verified WeChat virtual-payment notification or a verified XPay order query.
 - Payment notifications must be signature-verified, decrypted, amount-checked, AppID/MchID-checked, and idempotent.
 - SQLite is acceptable for the initial scale. Use transactions for order and entitlement updates.
 - Community membership is resolved through `COMMUNITY_SERVICE_URL` using `COMMUNITY_SERVICE_TOKEN`. Link an existing member only with a server-verified phone number; never trust a client-supplied phone or name for account merging.

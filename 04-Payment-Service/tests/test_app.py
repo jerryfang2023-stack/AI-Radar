@@ -15,7 +15,7 @@ class FakePayClient:
         return True
 
     def exchange_code(self, code):
-        return {"openid": f"openid-{code}"}
+        return {"openid": f"openid-{code}", "session_key": f"session-{code}"}
 
     def exchange_phone_code(self, code):
         assert code
@@ -68,16 +68,74 @@ class FakeCommunityClient:
         return {"member": {"id": 77, "name": payload["name"], "status": "pending", "points": 0}}
 
 
+class FakeVirtualPayClient:
+    def __init__(self):
+        self.orders = {}
+        self.refunds = {}
+        self.notification = None
+
+    def configured(self):
+        return True
+
+    def notification_configured(self):
+        return False
+
+    def create_payment(self, **values):
+        if values["expected_openid"] != f"openid-{values['login_code']}":
+            from payment_service.wechatpay import WeChatPayError
+
+            raise WeChatPayError(
+                "支付用户与当前账号不一致",
+                code="VIRTUAL_PAYMENT_USER_MISMATCH",
+                status=403,
+            )
+        self.orders[values["order_no"]] = values
+        return {
+            "env": 1,
+            "offerId": "offer-test",
+            "mode": "short_series_goods",
+            "signData": "{}",
+            "paySig": "pay-signature",
+            "signature": "user-signature",
+        }
+
+    def query_order(self, *, openid, order_no):
+        if order_no in self.refunds:
+            return {"order_id": order_no, "status": 8}
+        order = self.orders[order_no]
+        return {
+            "order_id": order_no,
+            "status": 2,
+            "order_fee": order["total_cents"],
+            "paid_fee": order["total_cents"],
+            "left_fee": order["total_cents"],
+            "paid_time": int(datetime.now(timezone.utc).timestamp()),
+            "env_type": 2,
+            "wx_order_id": f"virtual-{order_no}",
+        }
+
+    def refund_order(self, *, openid, order_no, refund_no, left_fee, refund_fee):
+        assert left_fee == refund_fee
+        self.refunds[refund_no] = {"order_no": order_no, "openid": openid}
+        return {"refund_order_id": refund_no}
+
+    def parse_callback(self, body, query):
+        return self.notification
+
+
 @pytest.fixture()
 def client(tmp_path):
     fake = FakePayClient()
+    virtual = FakeVirtualPayClient()
     app = create_app({
         "TESTING": True,
         "SECRET_KEY": "test-secret",
         "DATABASE_PATH": str(tmp_path / "payments.db"),
         "WECHAT_APP_ID": "wx34133741173154d4",
         "WECHAT_PAY_MCH_ID": "1116466183",
-    }, pay_client=fake, community_client=FakeCommunityClient())
+        "WECHAT_VIRTUAL_ENV": 1,
+        "WECHAT_VIRTUAL_REFUND_DAYS": 15,
+    }, pay_client=fake, virtual_pay_client=virtual, community_client=FakeCommunityClient())
     return app.test_client()
 
 
@@ -108,6 +166,9 @@ def test_health_exposes_non_secret_account_ids(client):
         "service": "wavesight-payment-service",
         "status": "ok",
         "paymentConfigured": True,
+        "virtualPaymentConfigured": True,
+        "virtualNotifyConfigured": False,
+        "virtualEnvironment": 1,
         "appId": "wx34133741173154d4",
         "mchId": "1116466183",
     }
@@ -217,6 +278,81 @@ def test_invalid_plan_is_rejected(client):
     token = login(client)
     response = client.post("/api/v1/pay/wechat/orders", headers=auth(token), json={"planId": "fake"})
     assert response.status_code == 400
+
+
+@pytest.mark.parametrize("plan_id", list(PLANS))
+def test_virtual_order_uses_fixed_product_and_verified_query(client, plan_id):
+    buyer = f"virtual-{plan_id}"
+    token = login(client, buyer)
+    created = client.post(
+        "/api/v1/pay/virtual/orders",
+        headers=auth(token),
+        json={"planId": plan_id, "loginCode": buyer, "totalCents": 1},
+    )
+    assert created.status_code == 201
+    payload = created.get_json()
+    assert payload["plan"]["productId"] == PLANS[plan_id]["product_id"]
+    assert payload["plan"]["totalCents"] == PLANS[plan_id]["total_cents"]
+    assert payload["payment"]["mode"] == "short_series_goods"
+
+    result = client.get(f"/api/v1/pay/orders/{payload['orderNo']}", headers=auth(token)).get_json()
+    assert result["order"]["status"] == "PAID"
+    assert result["membership"]["status"] == "member"
+
+
+def test_virtual_order_rejects_login_code_for_another_user(client):
+    token = login(client, "virtual-owner")
+    response = client.post(
+        "/api/v1/pay/virtual/orders",
+        headers=auth(token),
+        json={"planId": "monthly", "loginCode": "different-user"},
+    )
+    assert response.status_code == 403
+    assert response.get_json()["error"]["code"] == "VIRTUAL_PAYMENT_USER_MISMATCH"
+
+
+def test_virtual_order_supports_full_refund_within_fifteen_days(client):
+    buyer = "refund-buyer"
+    token = login(client, buyer)
+    created = client.post(
+        "/api/v1/pay/virtual/orders",
+        headers=auth(token),
+        json={"planId": "monthly", "loginCode": buyer},
+    ).get_json()
+    client.get(f"/api/v1/pay/orders/{created['orderNo']}", headers=auth(token))
+
+    refund = client.post(f"/api/v1/pay/orders/{created['orderNo']}/refund", headers=auth(token))
+    assert refund.status_code == 202
+    assert refund.get_json()["order"]["refundStatus"] == "PROCESSING"
+
+    result = client.get(f"/api/v1/pay/orders/{created['orderNo']}", headers=auth(token)).get_json()
+    assert result["order"]["status"] == "REFUNDED"
+    assert result["order"]["refundStatus"] == "REFUNDED"
+    assert result["membership"]["status"] == "trial"
+
+
+def test_virtual_delivery_notification_is_verified_by_order_query_and_idempotent(client):
+    buyer = "notify-virtual-buyer"
+    token = login(client, buyer)
+    created = client.post(
+        "/api/v1/pay/virtual/orders",
+        headers=auth(token),
+        json={"planId": "monthly", "loginCode": buyer},
+    ).get_json()
+    client.application.virtual_pay_client.notification = {
+        "Event": "xpay_goods_deliver_notify",
+        "OpenId": f"openid-{buyer}",
+        "OutTradeNo": created["orderNo"],
+        "GoodsInfo": {"ProductId": "membership_30d"},
+    }
+
+    first = client.post("/api/v1/pay/virtual/notify", data=b"signed")
+    second = client.post("/api/v1/pay/virtual/notify", data=b"signed")
+    assert first.status_code == 200
+    assert second.status_code == 200
+    result = client.get(f"/api/v1/pay/orders/{created['orderNo']}", headers=auth(token)).get_json()
+    assert result["order"]["status"] == "PAID"
+    assert result["membership"]["status"] == "member"
 
 
 def test_verified_notification_is_idempotent(client):

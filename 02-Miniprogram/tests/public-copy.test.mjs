@@ -109,7 +109,9 @@ test("exposes the confirmed membership plans and point exchange entry", () => {
   assert.match(membershipSource, /wx:for="\{\{plans\}\}"/u);
   assert.match(membershipSource, /立即开通会员/u);
   assert.match(membershipLogic, /purchaseMembership\(plan\.id\)/u);
-  assert.match(paymentSource, /wx\.requestPayment/u);
+  assert.match(paymentSource, /wx\.requestVirtualPayment/u);
+  assert.doesNotMatch(paymentSource, /wx\.requestPayment/u);
+  assert.match(membershipSource, /15 天内支持全额退款/u);
   assert.match(paymentSource, /result\?\.order\?\.status !== "PAID"/u);
   assert.doesNotMatch(membershipLogic, /付费开通暂未开放/u);
 });

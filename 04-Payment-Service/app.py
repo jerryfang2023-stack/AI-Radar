@@ -14,13 +14,14 @@ from flask import Flask, g, jsonify, request
 from itsdangerous import BadSignature, SignatureExpired, URLSafeTimedSerializer
 
 from payment_service.wechatpay import WeChatPayClient, WeChatPayError
+from payment_service.virtualpay import VirtualPayClient
 from payment_service.community import CommunityClient, CommunityServiceError
 
 
 PLANS = {
-    "monthly": {"title": "观澜月度会员", "total_cents": 3000, "days": 30},
-    "half_year": {"title": "观澜半年会员", "total_cents": 16800, "days": 180},
-    "annual": {"title": "观澜年度会员", "total_cents": 30000, "days": 365},
+    "monthly": {"title": "观澜月度会员", "total_cents": 3000, "days": 30, "product_id": "membership_30d"},
+    "half_year": {"title": "观澜半年会员", "total_cents": 16800, "days": 180, "product_id": "membership_180d"},
+    "annual": {"title": "观澜年度会员", "total_cents": 30000, "days": 365, "product_id": "membership_365d"},
 }
 
 POINT_BENEFITS = {
@@ -43,7 +44,7 @@ def iso(value):
     return value.astimezone(timezone.utc).isoformat(timespec="seconds")
 
 
-def create_app(test_config=None, *, pay_client=None, community_client=None):
+def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, community_client=None):
     app = Flask(__name__)
     app.config.from_mapping(
         SECRET_KEY=os.getenv("SECRET_KEY", ""),
@@ -57,6 +58,13 @@ def create_app(test_config=None, *, pay_client=None, community_client=None):
         WECHAT_PAY_PUBLIC_KEY_PATH=os.getenv("WECHAT_PAY_PUBLIC_KEY_PATH", ""),
         WECHAT_PAY_API_V3_KEY=os.getenv("WECHAT_PAY_API_V3_KEY", ""),
         WECHAT_PAY_NOTIFY_URL=os.getenv("WECHAT_PAY_NOTIFY_URL", "https://www.zkdlj.vip/api/v1/pay/wechat/notify"),
+        WECHAT_VIRTUAL_OFFER_ID=os.getenv("WECHAT_VIRTUAL_OFFER_ID", ""),
+        WECHAT_VIRTUAL_SANDBOX_APP_KEY=os.getenv("WECHAT_VIRTUAL_SANDBOX_APP_KEY", ""),
+        WECHAT_VIRTUAL_APP_KEY=os.getenv("WECHAT_VIRTUAL_APP_KEY", ""),
+        WECHAT_VIRTUAL_ENV=int(os.getenv("WECHAT_VIRTUAL_ENV", "1")),
+        WECHAT_VIRTUAL_NOTIFY_TOKEN=os.getenv("WECHAT_VIRTUAL_NOTIFY_TOKEN", ""),
+        WECHAT_VIRTUAL_ENCODING_AES_KEY=os.getenv("WECHAT_VIRTUAL_ENCODING_AES_KEY", ""),
+        WECHAT_VIRTUAL_REFUND_DAYS=int(os.getenv("WECHAT_VIRTUAL_REFUND_DAYS", "15")),
         TOKEN_MAX_AGE=30 * 24 * 60 * 60,
         APP_ENV=os.getenv("APP_ENV", "development"),
         COMMUNITY_SERVICE_URL=os.getenv("COMMUNITY_SERVICE_URL", "http://127.0.0.1:8000"),
@@ -71,6 +79,7 @@ def create_app(test_config=None, *, pay_client=None, community_client=None):
 
     Path(app.config["DATABASE_PATH"]).parent.mkdir(parents=True, exist_ok=True)
     app.pay_client = pay_client or WeChatPayClient(app.config)
+    app.virtual_pay_client = virtual_pay_client or VirtualPayClient(app.config, wechat_client=app.pay_client)
     app.community_client = community_client or CommunityClient(app.config)
     serializer = URLSafeTimedSerializer(app.config["SECRET_KEY"], salt="wavesight-mini-user-v1")
 
@@ -197,6 +206,17 @@ def create_app(test_config=None, *, pay_client=None, community_client=None):
             conn.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_users_invite_code ON users(invite_code)")
             conn.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_users_phone_hash ON users(phone_hash)")
             conn.execute("CREATE INDEX IF NOT EXISTS idx_users_community_member ON users(community_member_id)")
+            payment_columns = {row[1] for row in conn.execute("PRAGMA table_info(payment_orders)").fetchall()}
+            for name, definition in {
+                "payment_mode": "TEXT NOT NULL DEFAULT 'wechat_jsapi'",
+                "product_id": "TEXT",
+                "virtual_env": "INTEGER",
+                "refund_status": "TEXT NOT NULL DEFAULT 'NONE'",
+                "refund_no": "TEXT",
+                "refunded_at": "TEXT",
+            }.items():
+                if name not in payment_columns:
+                    conn.execute(f"ALTER TABLE payment_orders ADD COLUMN {name} {definition}")
             conn.commit()
 
     init_db()
@@ -394,6 +414,75 @@ def create_app(test_config=None, *, pay_client=None, community_client=None):
         )
         return user_by_id(conn, user["id"])
 
+    def fulfill_virtual_order(conn, order, transaction, *, product_id="", notification_openid=""):
+        if order["status"] == "PAID":
+            return user_by_id(conn, order["user_id"])
+        if order["payment_mode"] != "wechat_virtual":
+            raise WeChatPayError("支付方式不匹配", code="PAYMENT_MODE_MISMATCH", status=400)
+        user = user_by_id(conn, order["user_id"])
+        if transaction.get("order_id") != order["order_no"]:
+            raise WeChatPayError("虚拟支付订单号不匹配", code="PAYMENT_ORDER_MISMATCH", status=400)
+        if notification_openid and notification_openid != user["openid"]:
+            raise WeChatPayError("虚拟支付用户不匹配", code="PAYMENT_USER_MISMATCH", status=400)
+        if product_id and product_id != order["product_id"]:
+            raise WeChatPayError("虚拟商品不匹配", code="PAYMENT_PRODUCT_MISMATCH", status=400)
+        expected_env_type = 2 if int(order["virtual_env"] or 0) == 1 else 1
+        if transaction.get("env_type") is not None and int(transaction["env_type"]) != expected_env_type:
+            raise WeChatPayError("虚拟支付环境不匹配", code="PAYMENT_ENV_MISMATCH", status=400)
+        paid_fee = int(transaction.get("paid_fee") or transaction.get("order_fee") or 0)
+        if paid_fee != int(order["total_cents"]):
+            raise WeChatPayError("虚拟支付金额不匹配", code="PAYMENT_AMOUNT_MISMATCH", status=400)
+        if int(transaction.get("status") or 0) not in {2, 3, 4}:
+            return user
+
+        plan = PLANS[order["plan_id"]]
+        now = utcnow()
+        trial_end = datetime.fromisoformat(user["trial_ends_at"])
+        member_end = datetime.fromisoformat(user["member_ends_at"]) if user["member_ends_at"] else now
+        start = max(now, trial_end, member_end)
+        new_end = start + timedelta(days=plan["days"])
+        transaction_id = str(
+            transaction.get("wx_order_id")
+            or transaction.get("wxpay_order_id")
+            or transaction.get("channel_order_id")
+            or f"virtual:{order['order_no']}"
+        )
+        paid_at = transaction.get("paid_time")
+        if isinstance(paid_at, (int, float)):
+            paid_at = iso(datetime.fromtimestamp(paid_at, timezone.utc))
+        conn.execute("UPDATE users SET member_ends_at=?, updated_at=? WHERE id=?", (iso(new_end), iso(now), user["id"]))
+        conn.execute(
+            "UPDATE payment_orders SET status='PAID', transaction_id=?, paid_at=?, raw_trade_state='PAID', updated_at=? WHERE id=?",
+            (transaction_id, paid_at or iso(now), iso(now), order["id"]),
+        )
+        conn.execute(
+            "INSERT OR IGNORE INTO membership_ledger(user_id, source_type, source_id, days, previous_ends_at, new_ends_at, created_at) VALUES(?,?,?,?,?,?,?)",
+            (user["id"], "wechat_virtual", order["order_no"], plan["days"], user["member_ends_at"], iso(new_end), iso(now)),
+        )
+        return user_by_id(conn, user["id"])
+
+    def complete_virtual_refund(conn, order, *, refunded_at=None):
+        if order["refund_status"] == "REFUNDED":
+            return user_by_id(conn, order["user_id"])
+        user = user_by_id(conn, order["user_id"])
+        ledger = conn.execute(
+            "SELECT * FROM membership_ledger WHERE source_type='wechat_virtual' AND source_id=?",
+            (order["order_no"],),
+        ).fetchone()
+        if ledger and user["member_ends_at"]:
+            current_end = datetime.fromisoformat(user["member_ends_at"])
+            candidate = current_end - timedelta(days=int(ledger["days"]))
+            trial_end = datetime.fromisoformat(user["trial_ends_at"])
+            previous_end = datetime.fromisoformat(ledger["previous_ends_at"]) if ledger["previous_ends_at"] else trial_end
+            next_end = max(candidate, previous_end)
+            member_ends_at = None if not ledger["previous_ends_at"] and next_end <= trial_end else iso(next_end)
+            conn.execute("UPDATE users SET member_ends_at=?, updated_at=? WHERE id=?", (member_ends_at, iso(utcnow()), user["id"]))
+        conn.execute(
+            "UPDATE payment_orders SET status='REFUNDED', refund_status='REFUNDED', refunded_at=?, raw_trade_state='REFUNDED', updated_at=? WHERE id=?",
+            (refunded_at or iso(utcnow()), iso(utcnow()), order["id"]),
+        )
+        return user_by_id(conn, order["user_id"])
+
     @app.errorhandler(WeChatPayError)
     def handle_wechat_error(error):
         return jsonify(error={"code": error.code, "message": str(error)}), error.status
@@ -412,6 +501,9 @@ def create_app(test_config=None, *, pay_client=None, community_client=None):
             service="wavesight-payment-service",
             status="ok",
             paymentConfigured=app.pay_client.configured(),
+            virtualPaymentConfigured=app.virtual_pay_client.configured(),
+            virtualNotifyConfigured=app.virtual_pay_client.notification_configured(),
+            virtualEnvironment=app.config["WECHAT_VIRTUAL_ENV"],
             appId=app.config["WECHAT_APP_ID"],
             mchId=app.config["WECHAT_PAY_MCH_ID"],
         )
@@ -786,6 +878,66 @@ def create_app(test_config=None, *, pay_client=None, community_client=None):
             user = user_by_id(conn, g.user_id)
             return jsonify(summary=summary, wallet=wallet(user))
 
+    @app.post("/api/v1/pay/virtual/orders")
+    @auth_required
+    def create_virtual_payment_order():
+        payload = request.get_json(silent=True) or {}
+        plan_id = str(payload.get("planId") or "")
+        login_code = str(payload.get("loginCode") or "").strip()
+        if plan_id not in PLANS:
+            return jsonify(error={"code": "INVALID_PLAN", "message": "会员套餐不存在"}), 400
+        if not login_code or len(login_code) > 128:
+            return jsonify(error={"code": "INVALID_CODE", "message": "微信登录凭证无效"}), 400
+        plan = PLANS[plan_id]
+        now = utcnow()
+        order_no = f"GLV{now.strftime('%Y%m%d%H%M%S')}{secrets.token_hex(4).upper()}"
+        with closing(db()) as conn:
+            conn.execute(
+                """INSERT INTO payment_orders(
+                    order_no, user_id, plan_id, description, total_cents, status,
+                    payment_mode, product_id, virtual_env, created_at, updated_at
+                ) VALUES(?,?,?,?,?,'PENDING','wechat_virtual',?,?,?,?)""",
+                (
+                    order_no,
+                    g.user_id,
+                    plan_id,
+                    plan["title"],
+                    plan["total_cents"],
+                    plan["product_id"],
+                    app.config["WECHAT_VIRTUAL_ENV"],
+                    iso(now),
+                    iso(now),
+                ),
+            )
+            conn.commit()
+        try:
+            payment = app.virtual_pay_client.create_payment(
+                order_no=order_no,
+                product_id=plan["product_id"],
+                total_cents=plan["total_cents"],
+                login_code=login_code,
+                expected_openid=g.openid,
+            )
+        except Exception:
+            with closing(db()) as conn:
+                conn.execute(
+                    "UPDATE payment_orders SET status='CREATE_FAILED', updated_at=? WHERE order_no=?",
+                    (iso(utcnow()), order_no),
+                )
+                conn.commit()
+            raise
+        return jsonify(
+            orderNo=order_no,
+            plan={
+                "id": plan_id,
+                "title": plan["title"],
+                "totalCents": plan["total_cents"],
+                "days": plan["days"],
+                "productId": plan["product_id"],
+            },
+            payment=payment,
+        ), 201
+
     @app.post("/api/v1/pay/wechat/orders")
     @auth_required
     def create_payment_order():
@@ -825,17 +977,139 @@ def create_app(test_config=None, *, pay_client=None, community_client=None):
             if not order:
                 return jsonify(error={"code": "ORDER_NOT_FOUND", "message": "订单不存在"}), 404
             if order["status"] == "PENDING":
-                transaction = app.pay_client.query_order(order_no)
+                transaction = (
+                    app.virtual_pay_client.query_order(openid=g.openid, order_no=order_no)
+                    if order["payment_mode"] == "wechat_virtual"
+                    else app.pay_client.query_order(order_no)
+                )
                 conn.execute("BEGIN IMMEDIATE")
                 fresh = conn.execute("SELECT * FROM payment_orders WHERE id=?", (order["id"],)).fetchone()
-                if transaction.get("trade_state") == "SUCCESS":
+                if order["payment_mode"] == "wechat_virtual":
+                    fulfill_virtual_order(conn, fresh, transaction)
+                elif transaction.get("trade_state") == "SUCCESS":
                     fulfill_order(conn, fresh, transaction)
                 elif transaction.get("trade_state") in {"CLOSED", "REVOKED", "PAYERROR"}:
                     conn.execute("UPDATE payment_orders SET status=?, raw_trade_state=?, updated_at=? WHERE id=?", (transaction["trade_state"], transaction["trade_state"], iso(utcnow()), order["id"]))
                 conn.commit()
                 order = conn.execute("SELECT * FROM payment_orders WHERE id=?", (order["id"],)).fetchone()
+            elif order["status"] == "REFUNDING" and order["refund_no"]:
+                refund = app.virtual_pay_client.query_order(openid=g.openid, order_no=order["refund_no"])
+                if int(refund.get("status") or 0) == 8:
+                    conn.execute("BEGIN IMMEDIATE")
+                    fresh = conn.execute("SELECT * FROM payment_orders WHERE id=?", (order["id"],)).fetchone()
+                    complete_virtual_refund(conn, fresh)
+                    conn.commit()
+                    order = conn.execute("SELECT * FROM payment_orders WHERE id=?", (order["id"],)).fetchone()
             user = user_by_id(conn, g.user_id)
-            return jsonify(order={"orderNo": order["order_no"], "status": order["status"], "planId": order["plan_id"], "totalCents": order["total_cents"]}, membership=membership(user))
+            return jsonify(order={
+                "orderNo": order["order_no"],
+                "status": order["status"],
+                "planId": order["plan_id"],
+                "totalCents": order["total_cents"],
+                "refundStatus": order["refund_status"],
+            }, membership=membership(user))
+
+    @app.post("/api/v1/pay/orders/<order_no>/refund")
+    @auth_required
+    def refund_virtual_payment_order(order_no):
+        with closing(db()) as conn:
+            order = conn.execute(
+                "SELECT * FROM payment_orders WHERE order_no=? AND user_id=?",
+                (order_no, g.user_id),
+            ).fetchone()
+            if not order:
+                return jsonify(error={"code": "ORDER_NOT_FOUND", "message": "订单不存在"}), 404
+            if order["payment_mode"] != "wechat_virtual" or order["status"] not in {"PAID", "REFUNDING"}:
+                return jsonify(error={"code": "ORDER_NOT_REFUNDABLE", "message": "该订单当前不可退款"}), 409
+            if order["refund_status"] in {"PROCESSING", "REFUNDED"}:
+                user = user_by_id(conn, g.user_id)
+                return jsonify(order={"orderNo": order_no, "refundStatus": order["refund_status"]}, membership=membership(user))
+            paid_at = datetime.fromisoformat(order["paid_at"])
+            if utcnow() > paid_at + timedelta(days=app.config["WECHAT_VIRTUAL_REFUND_DAYS"]):
+                return jsonify(error={"code": "REFUND_WINDOW_EXPIRED", "message": "已超过15天退款有效期"}), 409
+            transaction = app.virtual_pay_client.query_order(openid=g.openid, order_no=order_no)
+            left_fee = int(transaction.get("left_fee") or transaction.get("paid_fee") or 0)
+            if left_fee != int(order["total_cents"]):
+                return jsonify(error={"code": "FULL_REFUND_UNAVAILABLE", "message": "该订单无法按原金额全额退款"}), 409
+            refund_no = f"GLR{utcnow().strftime('%Y%m%d%H%M%S')}{secrets.token_hex(4).upper()}"
+            app.virtual_pay_client.refund_order(
+                openid=g.openid,
+                order_no=order_no,
+                refund_no=refund_no,
+                left_fee=left_fee,
+                refund_fee=int(order["total_cents"]),
+            )
+            conn.execute(
+                "UPDATE payment_orders SET status='REFUNDING', refund_status='PROCESSING', refund_no=?, updated_at=? WHERE id=?",
+                (refund_no, iso(utcnow()), order["id"]),
+            )
+            conn.commit()
+            user = user_by_id(conn, g.user_id)
+            return jsonify(order={"orderNo": order_no, "refundStatus": "PROCESSING"}, membership=membership(user)), 202
+
+    @app.get("/api/v1/pay/virtual/notify")
+    def verify_virtual_payment_notification():
+        echo = str(request.args.get("echostr") or "")
+        encrypted = bool(request.args.get("msg_signature"))
+        app.virtual_pay_client.verify_callback_signature(
+            request.args.get("timestamp"),
+            request.args.get("nonce"),
+            request.args.get("msg_signature") if encrypted else request.args.get("signature"),
+            echo if encrypted else "",
+        )
+        if encrypted:
+            echo = app.virtual_pay_client.decrypt_callback(echo).decode("utf-8")
+        return echo, 200, {"Content-Type": "text/plain; charset=utf-8"}
+
+    @app.post("/api/v1/pay/virtual/notify")
+    def virtual_payment_notification():
+        event = app.virtual_pay_client.parse_callback(request.get_data(cache=False), request.args)
+        event_type = event.get("Event") or event.get("event")
+        if event_type == "xpay_goods_deliver_notify":
+            order_no = str(event.get("OutTradeNo") or "")
+            openid = str(event.get("OpenId") or "")
+            goods = event.get("GoodsInfo") or {}
+            product_id = str(goods.get("ProductId") or "")
+            with closing(db()) as conn:
+                conn.execute("BEGIN IMMEDIATE")
+                order = conn.execute("SELECT * FROM payment_orders WHERE order_no=?", (order_no,)).fetchone()
+                if not order:
+                    conn.rollback()
+                    return jsonify(ErrCode=1, ErrMsg="order not found"), 404
+                transaction = app.virtual_pay_client.query_order(openid=openid, order_no=order_no)
+                fulfill_virtual_order(
+                    conn,
+                    order,
+                    transaction,
+                    product_id=product_id,
+                    notification_openid=openid,
+                )
+                conn.commit()
+            return jsonify(ErrCode=0, ErrMsg="success")
+        if event_type == "xpay_refund_notify":
+            order_no = str(event.get("MchOrderId") or "")
+            refund_no = str(event.get("MchRefundId") or "")
+            openid = str(event.get("OpenId") or "")
+            refund_fee = int(event.get("RefundFee") or 0)
+            ret_code = int(event.get("RetCode") or -1)
+            with closing(db()) as conn:
+                conn.execute("BEGIN IMMEDIATE")
+                order = conn.execute("SELECT * FROM payment_orders WHERE order_no=?", (order_no,)).fetchone()
+                user = user_by_id(conn, order["user_id"]) if order else None
+                if (
+                    not order
+                    or not user
+                    or user["openid"] != openid
+                    or order["refund_no"] != refund_no
+                    or refund_fee != int(order["total_cents"])
+                    or ret_code != 0
+                ):
+                    conn.rollback()
+                    return jsonify(ErrCode=1, ErrMsg="refund mismatch"), 400
+                complete_virtual_refund(conn, order, refunded_at=iso(utcnow()))
+                conn.commit()
+            return jsonify(ErrCode=0, ErrMsg="success")
+        return jsonify(ErrCode=0, ErrMsg="ignored")
 
     @app.post("/api/v1/pay/wechat/notify")
     def payment_notification():

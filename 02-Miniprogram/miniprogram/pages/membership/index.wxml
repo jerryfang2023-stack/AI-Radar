@@ -19,7 +19,7 @@
       </view>
       <view class="rights-list"><view wx:for="{{rights}}" wx:key="*this"><text>✓</text><text>{{item}}</text></view></view>
       <button class="subscribe-button" loading="{{purchasing}}" disabled="{{purchasing}}" bindtap="subscribe">{{purchasing ? '正在处理' : (membership.status === 'unregistered' ? '注册并开启 7 天体验' : '立即开通会员')}}</button>
-      <text class="plan-note">新用户完成注册后获得 7 天完整权益体验；月度、半年和年度会员均不自动续费。</text>
+      <text class="plan-note">新用户完成注册后获得 7 天完整权益体验；月度、半年和年度会员均不自动续费，购买后 15 天内支持全额退款。</text>
     </view>
 
     <view class="exchange-card" bindtap="openGrowth">

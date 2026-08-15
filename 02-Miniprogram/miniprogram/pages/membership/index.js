@@ -37,7 +37,7 @@ Page({
     wx.showModal({
       title: `开通${plan.title}`,
       content: `确认支付 ${plan.price} 元，开通 ${plan.days} 天全部栏目浏览权益？`,
-      confirmText: "微信支付",
+      confirmText: "确认购买",
       confirmColor: "#0D355C",
       success: (result) => { if (result.confirm) this.startPurchase(plan); },
     });
