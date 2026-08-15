@@ -1,7 +1,7 @@
 ---
 status: current
 scope: site-v4-automation
-last_updated: 2026-08-14
+last_updated: 2026-08-15
 priority: current
 ---
 
@@ -147,6 +147,23 @@ procurement values cannot become funding merely because the article body
 mentions hardware financing. Newly discovered company/product entities remain
 outside the public Entity Index until an accepted catalog-review decision
 exists.
+
+Funding publication must persist taxonomy decisions with
+`classify:funding-taxonomy-v4.1 -- --write=true`. Its release order is the final
+full funding gate, institution/activity projection, and then the final Data
+Center build; changing that order can leave public cards with dangling investor
+links. Amount normalization must retain explicit `K`/`thousand` units and may
+repair a source-backed truncated display such as `$800` only when the canonical
+evidence proves the complete value (for example `$800,000`).
+
+Data Center integrity rejects search, topic, and tag index pages as canonical
+event sources. Release validation includes the current-date projection coverage
+gate and the frontstage regression gate, so a successful collector/build command
+alone is not publication evidence.
+
+Scheduled Codex repair uses `--ask-for-approval never` as a global CLI option
+before the `exec` subcommand. Keep that ordering covered by the Windows runtime
+tests; placing the flag after `exec` makes the handoff fail before repair starts.
 
 First-Line Viewpoints recovery is date-strict. The 09:15 controller may treat
 the morning RSS lane as healthy only when `follow-builders-daily.json` was
