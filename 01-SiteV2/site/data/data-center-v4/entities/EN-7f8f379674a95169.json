@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-15T00:27:23.598Z",
+    "generatedAt": "2026-08-15T04:37:54.461Z",
     "latestDataDate": "2026-08-15",
     "currentDate": "2026-08-15",
-    "eventCount": 2132,
+    "eventCount": 2120,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -28,7 +28,7 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-11",
-    "lastSeen": "2026-08-15",
+    "lastSeen": "2026-08-14",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -44,7 +44,7 @@
     "timeline": [
       {
         "id": "EV-c7d0b810ac3b3d4e",
-        "dataDate": "2026-08-15",
+        "dataDate": "2026-08-14",
         "date": "2026-08-11",
         "eventType": "product_release",
         "eventTypeLabel": "产品发布",
@@ -122,13 +122,13 @@
     {
       "id": "HWC-1e90510260afb7ed",
       "snapshotKey": "1e90510260afb7ed",
-      "snapshotId": "HWS-03b7e6dc53fbe768",
+      "snapshotId": "HWS-af0b8f4169fd802a",
       "eventId": "EV-c7d0b810ac3b3d4e",
       "eventIds": [
         "EV-c7d0b810ac3b3d4e"
       ],
-      "dataDate": "2026-08-15",
-      "date": "2026-08-15",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-14",
       "title": "AI Inference / AI Infrastructure / Aug 11",
       "subject": "IBM",
       "productNames": [
@@ -145,27 +145,17 @@
         "shipment_deployment": {
           "metric_value": "240",
           "unit": "$M",
-          "fact_ref": "HWF-ac087dc741d8251d"
+          "fact_ref": "HWF-e0e81afd3f6b5ca4"
         },
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-460221dae49d741e"
+          "fact_ref": "HWF-e304a08469d747b1"
         }
       },
       "factCount": 2,
-      "snapshotCount": 3,
+      "snapshotCount": 2,
       "changes": [
-        {
-          "date": "2026-08-15",
-          "previousDate": "2026-08-14",
-          "snapshotId": "HWS-03b7e6dc53fbe768",
-          "previousSnapshotId": "HWS-af0b8f4169fd802a",
-          "changedFacts": [
-            "shipment_deployment",
-            "product"
-          ]
-        },
         {
           "date": "2026-08-14",
           "previousDate": "2026-08-12",
@@ -180,8 +170,8 @@
       "capacityFacts": [],
       "supplyFacts": [
         {
-          "data_date": "2026-08-15",
-          "hardware_fact_id": "HWF-ac087dc741d8251d",
+          "data_date": "2026-08-14",
+          "hardware_fact_id": "HWF-e0e81afd3f6b5ca4",
           "fact_type": "shipment_deployment",
           "observed_at": "2026-08-11T00:00:00.000Z",
           "subject_entity_id": "EN-916a98f0fa2a39af",
@@ -203,17 +193,17 @@
           "event_refs": [
             "EV-c7d0b810ac3b3d4e"
           ],
-          "claim_ref": "CL-91544038e571e2d6",
+          "claim_ref": "CL-b88e132a00cc769c",
           "source_refs": [
             "SA-1917d0c1d2970c86"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-15/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-14/hardware-facts.json"
         }
       ],
       "specificationFacts": [
         {
-          "data_date": "2026-08-15",
-          "hardware_fact_id": "HWF-460221dae49d741e",
+          "data_date": "2026-08-14",
+          "hardware_fact_id": "HWF-e304a08469d747b1",
           "fact_type": "product",
           "observed_at": "2026-08-11T00:00:00.000Z",
           "subject_entity_id": "EN-916a98f0fa2a39af",
@@ -235,11 +225,11 @@
           "event_refs": [
             "EV-c7d0b810ac3b3d4e"
           ],
-          "claim_ref": "CL-3ac7cb706124a419",
+          "claim_ref": "CL-c76ddec98fd63799",
           "source_refs": [
             "SA-1917d0c1d2970c86"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-15/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-14/hardware-facts.json"
         }
       ],
       "capexFacts": [],

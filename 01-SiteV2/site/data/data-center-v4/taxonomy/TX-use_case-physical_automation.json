@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-15T00:27:23.598Z",
+    "generatedAt": "2026-08-15T04:37:54.461Z",
     "latestDataDate": "2026-08-15",
     "currentDate": "2026-08-15",
-    "eventCount": 2132,
+    "eventCount": 2120,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -69,6 +69,7 @@
       "EV-5ede0f85a672441c",
       "EV-c698da7da473b059",
       "EV-e781e169725006f0",
+      "EV-257c7ec21edf638a",
       "EV-eb12fb9dd08e5aad",
       "EV-7a0f201debe99f2b",
       "EV-60110525440fac47",
@@ -13644,10 +13645,10 @@
           "cn-sspai-rss"
         ],
         "claim_refs": [
-          "CL-d4e48f6ec9110ced",
-          "CL-269a61332a0d9f97",
-          "CL-5958c4b224ac2038",
-          "CL-ca237a61ad512255"
+          "CL-2fe075330fd7e551",
+          "CL-27e229eaab925d16",
+          "CL-547fe6aaab83689e",
+          "CL-837fdfe76f177c71"
         ]
       },
       "missingFields": [],
@@ -14070,6 +14071,84 @@
       ],
       "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-open-source-models-agents-nemotron",
       "publisher": "NVIDIA Blog（RSS）"
+    },
+    {
+      "id": "EV-257c7ec21edf638a",
+      "dataDate": "2026-08-10",
+      "date": "2026-08-09",
+      "updatedDate": "2026-08-10",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "人工智能突发新闻与新闻稿",
+      "originalTitle": "Artificial Intelligence Breaking News and Press Releases",
+      "subject": "Artificial Intelligence Breaking News and Press",
+      "action": "Releases",
+      "object": "Artificial Intelligence Breaking News and Press Releases",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-5a59b85d2410f140",
+        "EN-842fcb5e60989a03"
+      ],
+      "entityNames": [
+        "Artificial Intelligence Breaking News",
+        "Press"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://businesswire.com/newsroom/industry/technology/artificial-intelligence",
+      "publisher": "businesswire.com"
     },
     {
       "id": "EV-eb12fb9dd08e5aad",
@@ -19370,13 +19449,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
         "TX-industry-manufacturing",
         "TX-target_user-researcher",
+        "TX-product_form-model",
         "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [
@@ -19664,8 +19743,6 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
-        "EV-fca1ecc2d977169f",
-        "EV-e3beca344d2321a9",
         "EV-58e18eab1b072c9a",
         "EV-7e0d6eb92af58925",
         "EV-a6c4f879a58ababa",
@@ -19762,10 +19839,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-technology-embodied_ai",
+        "TX-technology-agentic_execution",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
@@ -19774,6 +19850,7 @@
         "TX-use_case-software_development",
         "TX-industry-manufacturing",
         "TX-use_case-research_discovery",
+        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips",
         "TX-ai_market_subcategory-hardware_computing",
@@ -19891,8 +19968,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-agentic_execution",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-physical_automation"
       ],
@@ -20021,10 +20098,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-product_form-model",
         "TX-technology-code_generation",
+        "TX-technology-agentic_execution",
         "TX-use_case-software_development",
+        "TX-product_form-model",
         "TX-industry-aerospace_defense",
         "TX-industry-telecommunications",
         "TX-target_user-business_user",
@@ -20226,7 +20303,6 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
@@ -20234,6 +20310,7 @@
         "TX-industry-manufacturing",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
+        "TX-product_form-model",
         "TX-use_case-physical_automation",
         "TX-industry-healthcare_life_sciences"
       ],
@@ -20675,11 +20752,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-technology-embodied_ai",
         "TX-use_case-software_development",
         "TX-use_case-research_discovery",
+        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
         "TX-industry-media_entertainment",
@@ -20824,11 +20901,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-product_form-model",
         "TX-technology-embodied_ai",
+        "TX-technology-agentic_execution",
         "TX-use_case-software_development",
         "TX-industry-manufacturing",
+        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
         "TX-product_form-ai_compute_system",
@@ -21141,8 +21218,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-technology-embodied_ai",
+        "TX-product_form-model",
         "TX-use_case-physical_automation",
         "TX-product_form-robotic_system"
       ],
@@ -21682,7 +21759,7 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-d6dfa1b16d40a7fc"
+          "fact_ref": "HWF-e457b3055f68c9b9"
         }
       },
       "factCount": 1,
@@ -21693,7 +21770,7 @@
       "specificationFacts": [
         {
           "data_date": "2026-08-15",
-          "hardware_fact_id": "HWF-d6dfa1b16d40a7fc",
+          "hardware_fact_id": "HWF-e457b3055f68c9b9",
           "fact_type": "product",
           "observed_at": "2026-08-14T00:52:24.000Z",
           "subject_entity_id": "EN-478676438ee161a3",
@@ -21711,9 +21788,9 @@
           "event_refs": [
             "EV-5ede0f85a672441c"
           ],
-          "claim_ref": "CL-5958c4b224ac2038",
+          "claim_ref": "CL-547fe6aaab83689e",
           "source_refs": [
-            "SA-479345b4ffeb831b"
+            "SA-62f22d95e80b4948"
           ],
           "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-15/hardware-facts.json"
         }
@@ -21908,6 +21985,67 @@
       "entityIds": [
         "EN-373da2ec629326c0",
         "EN-8d4321d936320802"
+      ]
+    },
+    {
+      "id": "HWC-1cf4287f4f809b3d",
+      "snapshotKey": "1cf4287f4f809b3d",
+      "snapshotId": "HWS-44a0982d7ec28aa1",
+      "eventId": "EV-257c7ec21edf638a",
+      "eventIds": [
+        "EV-257c7ec21edf638a"
+      ],
+      "dataDate": "2026-08-10",
+      "date": "2026-08-10",
+      "title": "Artificial Intelligence Breaking News",
+      "subject": "Artificial Intelligence Breaking News",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-51894068242c0035"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-10",
+          "hardware_fact_id": "HWF-51894068242c0035",
+          "fact_type": "product",
+          "observed_at": "2026-08-09T00:00:00.000Z",
+          "subject_entity_id": "EN-5a59b85d2410f140",
+          "subject_name": "Artificial Intelligence Breaking News",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Faraday Future Founder and Global CEO YT Jia Shares Weekly Investor Update: Renewed Nasdaq Compliance, “Built in USA” Upgrades Including the Launch of Universal Beyond-Line-of-Sight Teleoperation and Multi-Robot Control Platform",
+          "event_refs": [
+            "EV-257c7ec21edf638a"
+          ],
+          "claim_ref": "CL-0ac3835322d68bbd",
+          "source_refs": [
+            "SA-2517eda16467dc8b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-10/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://businesswire.com/newsroom/industry/technology/artificial-intelligence",
+      "entityIds": [
+        "EN-5a59b85d2410f140",
+        "EN-842fcb5e60989a03"
       ]
     },
     {

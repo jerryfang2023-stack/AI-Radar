@@ -5,97 +5,13 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-15T00:27:23.598Z",
+    "generatedAt": "2026-08-15T04:37:54.461Z",
     "latestDataDate": "2026-08-15",
     "currentDate": "2026-08-15",
-    "eventCount": 2132,
+    "eventCount": 2120,
     "quarantinedEventCount": 16
   },
   "relationships": [
-    {
-      "relationship_id": "REL2-1da092a830b9a42c",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-7d3194f79e645c42",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-d1ad14d4ad57d207",
-      "object_type": "entity",
-      "event_id": "EV-8ba7a742c4d626c6",
-      "claim_refs": [
-        "CL-da1e2017d5d94e2e",
-        "CL-2eb3d171ad9aa380",
-        "CL-6878f6a4ac5e8e13",
-        "CL-3de17f2ab718f1c0"
-      ],
-      "source_refs": [
-        "SA-be48aa3e0eb1734e"
-      ],
-      "data_date": "2026-08-15",
-      "status": "verified",
-      "subjectName": "OpenAI",
-      "objectName": "ChatGPT",
-      "predicateLabel": "发布",
-      "title": "OpenAI 发布 ChatGPT",
-      "eventTitle": "Mac 版 ChatGPT 新增 Computer History 功能，不再依赖截图记录活动",
-      "eventDate": "2026-08-14",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-ac23d27e955fb3fc",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-7d3194f79e645c42",
-      "subject_type": "entity",
-      "predicate": "partners_with",
-      "object_ref": "EN-916a98f0fa2a39af",
-      "object_type": "entity",
-      "event_id": "EV-129ffa6be41bb485",
-      "claim_refs": [
-        "CL-545d6df323754275",
-        "CL-7f26eeabc735458f",
-        "CL-c3a187c96d25ec3a",
-        "CL-ba50dff571813560"
-      ],
-      "source_refs": [
-        "SA-7eaa925ca1da695a"
-      ],
-      "data_date": "2026-08-15",
-      "status": "verified",
-      "subjectName": "OpenAI",
-      "objectName": "IBM",
-      "predicateLabel": "合作",
-      "title": "OpenAI 合作 IBM",
-      "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
-      "eventDate": "2026-08-13",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-e5e49d88d99ddd93",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-7d3194f79e645c42",
-      "subject_type": "entity",
-      "predicate": "serves",
-      "object_ref": "EN-916a98f0fa2a39af",
-      "object_type": "entity",
-      "event_id": "EV-129ffa6be41bb485",
-      "claim_refs": [
-        "CL-545d6df323754275",
-        "CL-7f26eeabc735458f",
-        "CL-c3a187c96d25ec3a",
-        "CL-ba50dff571813560"
-      ],
-      "source_refs": [
-        "SA-7eaa925ca1da695a"
-      ],
-      "data_date": "2026-08-15",
-      "status": "verified",
-      "subjectName": "OpenAI",
-      "objectName": "IBM",
-      "predicateLabel": "服务",
-      "title": "OpenAI 服务 IBM",
-      "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
-      "eventDate": "2026-08-13",
-      "sourceCount": 1
-    },
     {
       "relationship_id": "REL2-f091501fd084bf19",
       "relationship_version": "RELATION-V2.1",
@@ -204,6 +120,62 @@
       "predicateLabel": "服务",
       "title": "OpenAI 服务 IBM",
       "eventTitle": "IBM 与 OpenAI 达成合作，拓展企业 AI 业务",
+      "eventDate": "2026-08-13",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-ac23d27e955fb3fc",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-916a98f0fa2a39af",
+      "object_type": "entity",
+      "event_id": "EV-129ffa6be41bb485",
+      "claim_refs": [
+        "CL-901e9ad96c4d172e",
+        "CL-84e58683b204766a",
+        "CL-e638b3a19b820529",
+        "CL-b09d62f358504d45"
+      ],
+      "source_refs": [
+        "SA-7eaa925ca1da695a"
+      ],
+      "data_date": "2026-08-14",
+      "status": "verified",
+      "subjectName": "OpenAI",
+      "objectName": "IBM",
+      "predicateLabel": "合作",
+      "title": "OpenAI 合作 IBM",
+      "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+      "eventDate": "2026-08-13",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-e5e49d88d99ddd93",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "serves",
+      "object_ref": "EN-916a98f0fa2a39af",
+      "object_type": "entity",
+      "event_id": "EV-129ffa6be41bb485",
+      "claim_refs": [
+        "CL-901e9ad96c4d172e",
+        "CL-84e58683b204766a",
+        "CL-e638b3a19b820529",
+        "CL-b09d62f358504d45"
+      ],
+      "source_refs": [
+        "SA-7eaa925ca1da695a"
+      ],
+      "data_date": "2026-08-14",
+      "status": "verified",
+      "subjectName": "OpenAI",
+      "objectName": "IBM",
+      "predicateLabel": "服务",
+      "title": "OpenAI 服务 IBM",
+      "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
       "eventDate": "2026-08-13",
       "sourceCount": 1
     },

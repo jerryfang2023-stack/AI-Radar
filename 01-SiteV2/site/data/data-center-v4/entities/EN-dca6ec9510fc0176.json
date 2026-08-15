@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-15T00:27:23.598Z",
+    "generatedAt": "2026-08-15T04:37:54.461Z",
     "latestDataDate": "2026-08-15",
     "currentDate": "2026-08-15",
-    "eventCount": 2132,
+    "eventCount": 2120,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -26,6 +26,7 @@
       "EV-64fb6d791e19d10a",
       "EV-a9d0bb672c5ec0ab",
       "EV-736404028b8ad33e",
+      "EV-6dc1ff5c07dc74fe",
       "EV-05a87b578967c83e",
       "EV-12ad25ef40a9a285",
       "EV-e6b22f59df71890e",
@@ -38,7 +39,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-03-04",
-    "lastSeen": "2026-08-13",
+    "lastSeen": "2026-08-15",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -47,7 +48,9 @@
         "EV-a9d0bb672c5ec0ab",
         "EV-736404028b8ad33e"
       ],
-      "deployments": [],
+      "deployments": [
+        "EV-6dc1ff5c07dc74fe"
+      ],
       "partnerships": [
         "EV-05a87b578967c83e"
       ],
@@ -61,6 +64,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-6dc1ff5c07dc74fe",
+        "dataDate": "2026-08-15",
+        "date": "2026-08-12",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Kraken自主智能体部署：AI上线前公用事业必须证明什么 - CX Today",
+        "displayTags": [],
+        "entityIds": [
+          "EN-70d4ee85fc4c8398",
+          "EN-dca6ec9510fc0176"
+        ]
+      },
       {
         "id": "EV-12ad25ef40a9a285",
         "dataDate": "2026-08-13",
@@ -553,7 +572,6 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
-        "EV-f595d042ae4c91eb",
         "EV-bf8ce460c05b9ff0",
         "EV-c1295b8f58024ff6",
         "EV-83728e3b6c7736ce",
@@ -663,6 +681,7 @@
         "EV-23ae55daa341be06",
         "EV-6bb83280a2116f24",
         "EV-d10684a6f16afe10",
+        "EV-0fc718ab409cdcf5",
         "EV-0121f0a9e9a975ec",
         "EV-67368bf639178ad1",
         "EV-6af526d687d9f737",
@@ -746,10 +765,8 @@
         "EV-05a87b578967c83e",
         "EV-c92db935a2cef0d6",
         "EV-576e81e479b78605",
-        "EV-a37d2b9160a559f8",
         "EV-b8fbfa3405d10bb4",
         "EV-c3231f2ea0ae1ebc",
-        "EV-e3beca344d2321a9",
         "EV-2868ff08777b5de9",
         "EV-58e18eab1b072c9a",
         "EV-65e50237cd603c8e",
@@ -1007,7 +1024,6 @@
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
         "EV-2c17183b71d8b7d1",
-        "EV-2796fca5b1714d2e",
         "EV-67a7a3c9f1eabd22",
         "EV-4e3e9b543127b55a",
         "EV-20b82e2a2cb33a0e",
@@ -1028,7 +1044,6 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
-        "EN-67e8c106650aa683",
         "EN-8526299f9ecc5fac",
         "EN-249fdefbb63fa7b3",
         "EN-240389f4b730bad4",
@@ -1175,10 +1190,8 @@
         "EN-19e41212c0556603",
         "EN-bbdefa2950f49882",
         "EN-b93006774cbdd4b2",
-        "EN-80a786c725a3c22b",
         "EN-6f7ac1823da81d2e",
         "EN-e78bdebae031095b",
-        "EN-18325c31b47f5078",
         "EN-0b9ca57f53ba758b",
         "EN-92df1be3e37c9268",
         "EN-f43fcac12953687c",
@@ -1324,6 +1337,7 @@
         "EN-e72901462ebe4458"
       ],
       "fdeIds": [
+        "FDE-b093649016ddce0b",
         "FDE-13bbc5471db90438",
         "FDE-e32500a9c4f90e91",
         "FDE-b44bbcf1ee8caad0",
@@ -1476,6 +1490,43 @@
   ],
   "fde": [
     {
+      "id": "FDE-ec71cf6915dea566",
+      "eventId": "EV-6dc1ff5c07dc74fe",
+      "dataDate": "2026-08-15",
+      "date": "2026-08-12",
+      "title": "Kraken自主智能体部署：AI上线前公用事业必须证明什么 - CX Today",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Kraken Autonomous Agents Deployment",
+      "vendor": "Sierra",
+      "industry": "未披露",
+      "useCase": "- CX Today",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Kraken Autonomous Agents Deployment: What Utilities Must Prove Before AI Goes Live"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://cxtoday.com/customer-engagement-journey-orchestration/kraken-autonomous-agents",
+      "entityIds": [
+        "EN-70d4ee85fc4c8398",
+        "EN-dca6ec9510fc0176"
+      ]
+    },
+    {
       "id": "FDE-3665b073634d4b9d",
       "eventId": "EV-05a87b578967c83e",
       "dataDate": "2026-07-18",
@@ -1521,5 +1572,54 @@
       ]
     }
   ],
-  "hardware": []
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-a55269667d6ed474",
+      "implementationKey": "a55269667d6ed474",
+      "eventId": "EV-6dc1ff5c07dc74fe",
+      "eventIds": [
+        "EV-6dc1ff5c07dc74fe"
+      ],
+      "dataDate": "2026-08-15",
+      "date": "2026-08-11",
+      "title": "Kraken Autonomous Agents Deployment × Sierra：- CX Today",
+      "stage": "production",
+      "stageLabel": "production",
+      "customer": "Kraken Autonomous Agents Deployment",
+      "vendor": "Sierra",
+      "industry": "未披露",
+      "useCase": "- CX Today",
+      "workflow": "Kraken Autonomous Agents combines Sierra’s conversational AI with the Kraken utility platform’s customer, billing, meter, tariff, and workflow context. For shortlisted utilities, the decision rests on whether that generative AI service can be contracted, configured, governed, phased, stabilized, and measured without weakening customer protection or obscuring responsibility.",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.625,
+      "completenessPercent": 63,
+      "missingFields": [
+        "industry",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-0b79ad53f753baff",
+          "type": "production_rollout",
+          "stage": "production",
+          "date": "2026-08-11",
+          "dataDate": "2026-08-15",
+          "eventId": "EV-6dc1ff5c07dc74fe",
+          "eventTitle": "Kraken自主智能体部署：AI上线前公用事业必须证明什么 - CX Today",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://cxtoday.com/customer-engagement-journey-orchestration/kraken-autonomous-agents",
+      "entityIds": [
+        "EN-70d4ee85fc4c8398",
+        "EN-dca6ec9510fc0176"
+      ]
+    }
+  ]
 }

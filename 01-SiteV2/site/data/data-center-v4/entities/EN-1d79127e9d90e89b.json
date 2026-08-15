@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-15T00:27:23.598Z",
+    "generatedAt": "2026-08-15T04:37:54.461Z",
     "latestDataDate": "2026-08-15",
     "currentDate": "2026-08-15",
-    "eventCount": 2132,
+    "eventCount": 2120,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -25,6 +25,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-40f14150d6f622f5",
       "EV-72d4a00d52a3201c",
       "EV-446ebce0edb6dce0",
       "EV-70efbfcaadcdb259",
@@ -49,7 +50,9 @@
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
-      "partnerships": [],
+      "partnerships": [
+        "EV-40f14150d6f622f5"
+      ],
       "productsServices": [
         "EV-72d4a00d52a3201c",
         "EV-446ebce0edb6dce0",
@@ -62,6 +65,45 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-40f14150d6f622f5",
+        "dataDate": "2026-08-15",
+        "date": "2026-08-15",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "荣耀 YOYO Claw 接入智谱 GLM-5.3 大模型，\"虾虾大脑\"升级",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-22152786a70738a1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-22152786a70738a1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-22152786a70738a1",
+          "EN-1d79127e9d90e89b"
+        ]
+      },
       {
         "id": "EV-72d4a00d52a3201c",
         "dataDate": "2026-08-15",
@@ -490,7 +532,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-15"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "TX-technology-long_context",

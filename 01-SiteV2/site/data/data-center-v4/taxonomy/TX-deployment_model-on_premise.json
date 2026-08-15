@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-15T00:27:23.598Z",
+    "generatedAt": "2026-08-15T04:37:54.461Z",
     "latestDataDate": "2026-08-15",
     "currentDate": "2026-08-15",
-    "eventCount": 2132,
+    "eventCount": 2120,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -19,6 +19,7 @@
     "valueId": "on_premise",
     "eventIds": [
       "EV-0e84a2f49d765ce3",
+      "EV-0fc718ab409cdcf5",
       "EV-7263caa45bbf168e",
       "EV-7164fc80b7526930",
       "EV-6fc9c1eab4501ce9",
@@ -37,12 +38,14 @@
       "EN-b3e3bce83d29e787",
       "EN-f4bec299df3f4f27"
     ],
-    "fdeIds": [],
+    "fdeIds": [
+      "FDE-b093649016ddce0b"
+    ],
     "hardwareIds": [
       "HW-ecc6755da7bbbbcd"
     ],
     "firstSeen": "2025-09-26",
-    "lastSeen": "2026-08-13"
+    "lastSeen": "2026-08-15"
   },
   "events": [
     {
@@ -498,6 +501,163 @@
       "products": [],
       "sourceUrl": "https://techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
       "publisher": "techtimes.com"
+    },
+    {
+      "id": "EV-0fc718ab409cdcf5",
+      "dataDate": "2026-08-15",
+      "date": "2026-08-15",
+      "updatedDate": "2026-08-15",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "DeepSeek V4 Pro 正式版与 Harness 智能体框架上线国家超算互联网",
+      "originalTitle": "",
+      "subject": "DeepSeek V4 Pro 正式版与 Harness 智能体框架",
+      "action": "上线",
+      "object": "国家超算互联网",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [
+          "cn-ithome-rss"
+        ],
+        "claim_refs": [
+          "CL-008d4135d0786add",
+          "CL-09ad2cdca5fd9c29",
+          "CL-a5a2a5fec66e3a35",
+          "CL-73a950e6a3cd3a34"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "on_premise",
+            "name": "本地部署",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "on_premise",
+          "name": "本地部署",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "on_premise",
+          "name": "本地部署",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-46162bbc9eb57274"
+      ],
+      "entityNames": [
+        "DeepSeek",
+        "Harness 智能体框架"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/990/002.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-7263caa45bbf168e",
@@ -1720,8 +1880,8 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-257c7ec21edf638a",
         "EV-a6ba9bbaead657a2",
+        "EV-257c7ec21edf638a",
         "EV-6249564cff324a0e",
         "EV-c0d8138d8cab5135"
       ],
@@ -1733,7 +1893,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-08-15"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-754b113d548b4469",
@@ -1807,7 +1967,6 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
-        "EV-9ba5eaa49fa31366",
         "EV-6018392d4cc4b472",
         "EV-088870c111b4e968",
         "EV-0ad3854d95038ea3",
@@ -1910,7 +2069,7 @@
         "EN-8d4321d936320802"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-08-15"
+      "lastSeen": "2026-08-14"
     },
     {
       "id": "EN-b3e3bce83d29e787",
@@ -1972,7 +2131,69 @@
       "lastSeen": "2026-08-08"
     }
   ],
-  "fde": [],
+  "fde": [
+    {
+      "id": "FDE-b093649016ddce0b",
+      "eventId": "EV-0fc718ab409cdcf5",
+      "dataDate": "2026-08-15",
+      "date": "2026-08-15",
+      "title": "DeepSeek V4 Pro 正式版与 Harness 智能体框架上线国家超算互联网",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "国家超算互联网",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "IT之家 8 月 15 日消息，8 月 14 日，国家超算互联网宣布上线 DeepSeek V4 Pro 正式版（DeepSeek-V4-Pro-0813），以及智能体框架 DeepSeek Harness。",
+        "官方介绍称，作为 全国首个十万卡级 超智融合算力资源池，国家超算互联网可为广大科研院所、科创企业、技术开发者提供大模型从训练、微调、评测到部署全生命周期的海量算力支撑。",
+        "依托自主可控的国家级国产算力底座，平台用户可一站式完成 DeepSeek 系列模型 / 源码下载、私有化部署、分布式推理与智能体二次开发，高效打通顶尖大模型从技术研发到产业落地的关键链路。",
+        "超算互联网 AI 社区已上线 DeepSeek Harness 全套源码， 开发者可在平台代码仓库一键完整拉取工程文件 ，进行编译调试、二次迭代与项目部署。"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/990/002.htm",
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-46162bbc9eb57274"
+      ]
+    }
+  ],
   "hardware": [
     {
       "id": "HW-ecc6755da7bbbbcd",
@@ -2001,6 +2222,77 @@
         "EN-f4bec299df3f4f27",
         "EN-5f5fcd8701ab30c0",
         "EN-977d20414b3b8be9"
+      ]
+    }
+  ],
+  "fdeDossiers": [
+    {
+      "id": "FDED-accc62026211020e",
+      "implementationKey": "accc62026211020e",
+      "eventId": "EV-0fc718ab409cdcf5",
+      "eventIds": [
+        "EV-0fc718ab409cdcf5"
+      ],
+      "dataDate": "2026-08-15",
+      "date": "2026-08-15",
+      "title": "未披露 × 未披露：国家超算互联网",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "国家超算互联网",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.25,
+      "completenessPercent": 25,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-a3cdecaba70e8a90",
+          "type": "implementation_update",
+          "stage": "completed",
+          "date": "2026-08-15",
+          "dataDate": "2026-08-15",
+          "eventId": "EV-0fc718ab409cdcf5",
+          "eventTitle": "DeepSeek V4 Pro 正式版与 Harness 智能体框架上线国家超算互联网",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/990/002.htm",
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-46162bbc9eb57274"
       ]
     }
   ]

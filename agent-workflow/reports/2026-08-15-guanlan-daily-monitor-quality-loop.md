@@ -1,6 +1,6 @@
 # 2026-08-15 Guanlan Monitor Quality Loop
 
-- generated_at: 2026-08-15T00:24:14.029Z
+- generated_at: 2026-08-15T04:35:09.358Z
 - status: passed
 - diagnostic_score_reference: 85
 - score_mode: diagnostic_only
@@ -14,11 +14,11 @@
 
 - monitor_status: collected
 - failed_stage: completed
-- monitor_raw_count: 242
+- monitor_raw_count: 238
 - quality_status: passed
 - quality_score: 0
 - hard_failed: none
-- failed_sources: source-artifact keyword: keyword-search pre-gate filtered 44 result(s): missing_ai_anchor_in_result=17; social_or_profile_source=15; broad_list_or_market_report=10; noise_term:hiring=2; source-artifact rss: RSS tldr-ai-newsletter: HTTP 429; targeted-refill pre-gate filtered 1 result(s): social_or_profile_source=1; targeted pool/core refill cycle 1 added 8 item(s) for important_case=3/5
+- failed_sources: source-artifact keyword: keyword-search pre-gate filtered 41 result(s): missing_ai_anchor_in_result=21; broad_list_or_market_report=9; social_or_profile_source=9; noise_term:definition=1; noise_term:hiring=1; source-artifact rss: RSS tldr-ai-newsletter: HTTP 429; targeted pool/core refill cycle 1 added 2 item(s) for important_case=4/5
 - fallback_used: Default monitor uses AI HOT daily feed first, AI HOT all-mode remainder second, then keyword rules. External multi-path keyword search and GDELT activate when the default lanes do not meet the Raw minimum, an importance type is thin, or important candidates lack original text / usable evidence object. HN is feedback only and must not dominate. GDELT failures fall back to A-tier media search.
 - evidence_gaps: none
 - report: agent-workflow/reports/2026-08-15-guanlan-monitor-quality-gate.md

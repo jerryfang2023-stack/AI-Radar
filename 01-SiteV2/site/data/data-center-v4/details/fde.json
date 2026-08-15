@@ -5,36 +5,34 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-15T00:27:23.598Z",
+    "generatedAt": "2026-08-15T04:37:54.461Z",
     "latestDataDate": "2026-08-15",
     "currentDate": "2026-08-15",
-    "eventCount": 2132,
+    "eventCount": 2120,
     "quarantinedEventCount": 16
   },
   "fde": [
     {
-      "id": "FDE-6069222bb5a9d0fe",
-      "eventId": "EV-407b77337866e047",
+      "id": "FDE-b093649016ddce0b",
+      "eventId": "EV-0fc718ab409cdcf5",
       "dataDate": "2026-08-15",
       "date": "2026-08-15",
-      "title": "Cars24 推出 Deployment Inc，印度首家前沿部署 AI 公司",
+      "title": "DeepSeek V4 Pro 正式版与 Harness 智能体框架上线国家超算互联网",
       "stage": "completed",
       "stageLabel": "已完成",
       "customer": "未披露",
       "vendor": "未披露",
       "industry": "未披露",
-      "useCase": "AI company | Business News This Week",
+      "useCase": "国家超算互联网",
       "reportedNeed": "未披露",
       "deliveryComponents": [
-        "Gurugram, Aug 10: Cars24 announced the launch of Deployment Inc, an independent enterprise AI company that will help organisations design, implement and operate AI systems across critical business workflows.",
-        "Deployment Inc will give customers one accountable team. Its forward-deployed engineers, or FDEs, will work from inside the customer&rsquo;s organisation. They will begin with a specific workflow and an agreed business metric, connect the necessary models to the company&rsquo;s data and systems, deploy the new workflow against real traffic and remain involved until it operates reliably at scale.",
-        "Deployment Inc plans to hire 50 engineers this month, primarily forward-deployed engineers, alongside AI strategy and go-to-market professionals. The company is also opening its first set of engagements to enterprises seeking to redesign critical operations around AI.",
-        "Cars24 is investing an initial $5 million in Deployment Inc and will become its first customer. Deployment Inc will operate as an independent company serving enterprises across industries, including financial services, consumer businesses, healthcare, manufacturing, logistics and technology."
+        "IT之家 8 月 15 日消息，8 月 14 日，国家超算互联网宣布上线 DeepSeek V4 Pro 正式版（DeepSeek-V4-Pro-0813），以及智能体框架 DeepSeek Harness。",
+        "官方介绍称，作为 全国首个十万卡级 超智融合算力资源池，国家超算互联网可为广大科研院所、科创企业、技术开发者提供大模型从训练、微调、评测到部署全生命周期的海量算力支撑。",
+        "依托自主可控的国家级国产算力底座，平台用户可一站式完成 DeepSeek 系列模型 / 源码下载、私有化部署、分布式推理与智能体二次开发，高效打通顶尖大模型从技术研发到产业落地的关键链路。",
+        "超算互联网 AI 社区已上线 DeepSeek Harness 全套源码， 开发者可在平台代码仓库一键完整拉取工程文件 ，进行编译调试、二次迭代与项目部署。"
       ],
       "outcomes": [],
-      "metrics": [
-        "$5 million"
-      ],
+      "metrics": [],
       "undisclosedFields": [
         "customer",
         "vendor",
@@ -49,31 +47,49 @@
         "governance_controls",
         "reported_outcomes"
       ],
-      "tags": [],
-      "sourceUrl": "https://businessnewsthisweek.com/business/cars24-launches-deployment-inc-indias-first-forward-deployed-ai-company",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/990/002.htm",
       "entityIds": [
-        "EN-e871a24e54933631"
+        "EN-6f7ac1823da81d2e",
+        "EN-46162bbc9eb57274"
       ]
     },
     {
-      "id": "FDE-723b882e385198d1",
-      "eventId": "EV-4f0f7d0b05d34598",
+      "id": "FDE-ec71cf6915dea566",
+      "eventId": "EV-6dc1ff5c07dc74fe",
       "dataDate": "2026-08-15",
-      "date": "2026-08-13",
-      "title": "甲骨文与AWS深化战略合作，企业采用Oracle AI Database@AWS加速",
+      "date": "2026-08-12",
+      "title": "Kraken自主智能体部署：AI上线前公用事业必须证明什么 - CX Today",
       "stage": "announced",
       "stageLabel": "已公布",
-      "customer": "Oracle",
-      "vendor": "Amazon",
+      "customer": "Kraken Autonomous Agents Deployment",
+      "vendor": "Sierra",
       "industry": "未披露",
-      "useCase": "as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
+      "useCase": "- CX Today",
       "reportedNeed": "未披露",
-      "deliveryComponents": [],
-      "outcomes": [
-        "accelerating customer migration to Oracle AI Database@AWS",
-        "lower-cost path to migrate Oracle databases and integrate them with AWS analytics and AI services",
-        "customers of any size can modernize applications faster, unlock new insights, and build AI-powered applications on the data that runs their business"
+      "deliveryComponents": [
+        "Kraken Autonomous Agents Deployment: What Utilities Must Prove Before AI Goes Live"
       ],
+      "outcomes": [],
       "metrics": [],
       "undisclosedFields": [
         "industry",
@@ -85,20 +101,52 @@
         "systems_integrated",
         "data_requirements",
         "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://cxtoday.com/customer-engagement-journey-orchestration/kraken-autonomous-agents",
+      "entityIds": [
+        "EN-70d4ee85fc4c8398",
+        "EN-dca6ec9510fc0176"
+      ]
+    },
+    {
+      "id": "FDE-48afc88dde234ab1",
+      "eventId": "EV-d04d03b37046f0ad",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-13",
+      "title": "IBM 与 OpenAI 达成合作，拓展企业 AI 业务",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "IBM",
+      "vendor": "OpenAI",
+      "industry": "enterprise AI",
+      "useCase": "拓展企业 AI 业务",
+      "reportedNeed": "competition for corporate AI spending intensifies",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_after",
+        "team_composition",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
         "reported_delivery_components"
       ],
       "tags": [],
-      "sourceUrl": "https://oracle.com/news/announcement/oracle-and-aws-deepen-strategic-collaboration-as-enterprise-adoption-of-oracle-ai-database-at-aws-accelerates-2026-08-13",
+      "sourceUrl": "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push",
       "entityIds": [
-        "EN-9202af6ce925b26a",
-        "EN-ac6aafe583c90b2d",
-        "EN-cbc62794911ff31b"
+        "EN-916a98f0fa2a39af",
+        "EN-4c06fff8651d4ff4",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
       ]
     },
     {
       "id": "FDE-ed781e27a7b9458e",
       "eventId": "EV-129ffa6be41bb485",
-      "dataDate": "2026-08-15",
+      "dataDate": "2026-08-14",
       "date": "2026-08-13",
       "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
       "stage": "announced",
@@ -142,39 +190,6 @@
       "entityIds": [
         "EN-916a98f0fa2a39af",
         "EN-7d3194f79e645c42"
-      ]
-    },
-    {
-      "id": "FDE-48afc88dde234ab1",
-      "eventId": "EV-d04d03b37046f0ad",
-      "dataDate": "2026-08-14",
-      "date": "2026-08-13",
-      "title": "IBM 与 OpenAI 达成合作，拓展企业 AI 业务",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "IBM",
-      "vendor": "OpenAI",
-      "industry": "enterprise AI",
-      "useCase": "拓展企业 AI 业务",
-      "reportedNeed": "competition for corporate AI spending intensifies",
-      "deliveryComponents": [],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "workflow_after",
-        "team_composition",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_delivery_components"
-      ],
-      "tags": [],
-      "sourceUrl": "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push",
-      "entityIds": [
-        "EN-916a98f0fa2a39af",
-        "EN-4c06fff8651d4ff4",
-        "EN-7d3194f79e645c42",
-        "EN-c70eca6b0f88f44d"
       ]
     },
     {
@@ -5775,103 +5790,119 @@
   ],
   "fdeDossiers": [
     {
-      "id": "FDED-81986ef7de5a9090",
-      "implementationKey": "81986ef7de5a9090",
-      "eventId": "EV-407b77337866e047",
+      "id": "FDED-accc62026211020e",
+      "implementationKey": "accc62026211020e",
+      "eventId": "EV-0fc718ab409cdcf5",
       "eventIds": [
-        "EV-407b77337866e047"
+        "EV-0fc718ab409cdcf5"
       ],
       "dataDate": "2026-08-15",
       "date": "2026-08-15",
-      "title": "未披露 × 未披露：AI company | Business News This Week",
-      "stage": "production",
-      "stageLabel": "production",
+      "title": "未披露 × 未披露：国家超算互联网",
+      "stage": "completed",
+      "stageLabel": "已完成",
       "customer": "未披露",
       "vendor": "未披露",
       "industry": "未披露",
-      "useCase": "AI company | Business News This Week",
-      "workflow": "Deployment Inc will give customers one accountable team. Its forward-deployed engineers, or FDEs, will work from inside the customer&rsquo;s organisation. They will begin with a specific workflow and an agreed business metric, connect the necessary models to the company&rsquo;s data and systems, deploy the new workflow against real traffic and remain involved until it operates reliably at scale.",
+      "useCase": "国家超算互联网",
+      "workflow": "未披露",
       "systems": [],
       "outcomes": [],
       "observationCount": 1,
-      "completeness": 0.375,
-      "completenessPercent": 38,
+      "completeness": 0.25,
+      "completenessPercent": 25,
       "missingFields": [
         "customer",
         "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-a3cdecaba70e8a90",
+          "type": "implementation_update",
+          "stage": "completed",
+          "date": "2026-08-15",
+          "dataDate": "2026-08-15",
+          "eventId": "EV-0fc718ab409cdcf5",
+          "eventTitle": "DeepSeek V4 Pro 正式版与 Harness 智能体框架上线国家超算互联网",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/990/002.htm",
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-46162bbc9eb57274"
+      ]
+    },
+    {
+      "id": "FDED-a55269667d6ed474",
+      "implementationKey": "a55269667d6ed474",
+      "eventId": "EV-6dc1ff5c07dc74fe",
+      "eventIds": [
+        "EV-6dc1ff5c07dc74fe"
+      ],
+      "dataDate": "2026-08-15",
+      "date": "2026-08-11",
+      "title": "Kraken Autonomous Agents Deployment × Sierra：- CX Today",
+      "stage": "production",
+      "stageLabel": "production",
+      "customer": "Kraken Autonomous Agents Deployment",
+      "vendor": "Sierra",
+      "industry": "未披露",
+      "useCase": "- CX Today",
+      "workflow": "Kraken Autonomous Agents combines Sierra’s conversational AI with the Kraken utility platform’s customer, billing, meter, tariff, and workflow context. For shortlisted utilities, the decision rests on whether that generative AI service can be contracted, configured, governed, phased, stabilized, and measured without weakening customer protection or obscuring responsibility.",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.625,
+      "completenessPercent": 63,
+      "missingFields": [
         "industry",
         "systems_integrated",
         "reported_outcomes"
       ],
       "timeline": [
         {
-          "observationId": "FDEO-5a0752a4f17c5b8e",
-          "type": "implementation_update",
+          "observationId": "FDEO-0b79ad53f753baff",
+          "type": "production_rollout",
           "stage": "production",
-          "date": "2026-08-15",
+          "date": "2026-08-11",
           "dataDate": "2026-08-15",
-          "eventId": "EV-407b77337866e047",
-          "eventTitle": "Cars24 推出 Deployment Inc，印度首家前沿部署 AI 公司",
+          "eventId": "EV-6dc1ff5c07dc74fe",
+          "eventTitle": "Kraken自主智能体部署：AI上线前公用事业必须证明什么 - CX Today",
           "claimCount": 4,
           "sourceCount": 1
         }
       ],
       "tags": [],
-      "sourceUrl": "https://businessnewsthisweek.com/business/cars24-launches-deployment-inc-indias-first-forward-deployed-ai-company",
+      "sourceUrl": "https://cxtoday.com/customer-engagement-journey-orchestration/kraken-autonomous-agents",
       "entityIds": [
-        "EN-e871a24e54933631"
-      ]
-    },
-    {
-      "id": "FDED-4402094ebe0b4363",
-      "implementationKey": "4402094ebe0b4363",
-      "eventId": "EV-4f0f7d0b05d34598",
-      "eventIds": [
-        "EV-4f0f7d0b05d34598"
-      ],
-      "dataDate": "2026-08-15",
-      "date": "2026-08-13",
-      "title": "Oracle × Amazon：as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "Oracle",
-      "vendor": "Amazon",
-      "industry": "未披露",
-      "useCase": "as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
-      "workflow": "未披露",
-      "systems": [],
-      "outcomes": [
-        "accelerating customer migration to Oracle AI Database@AWS",
-        "lower-cost path to migrate Oracle databases and integrate them with AWS analytics and AI services",
-        "customers of any size can modernize applications faster, unlock new insights, and build AI-powered applications on the data that runs their business"
-      ],
-      "observationCount": 1,
-      "completeness": 0.625,
-      "completenessPercent": 63,
-      "missingFields": [
-        "industry",
-        "workflow",
-        "systems_integrated"
-      ],
-      "timeline": [
-        {
-          "observationId": "FDEO-8f8efc25f77e08a7",
-          "type": "implementation_update",
-          "stage": "announced",
-          "date": "2026-08-13",
-          "dataDate": "2026-08-15",
-          "eventId": "EV-4f0f7d0b05d34598",
-          "eventTitle": "甲骨文与AWS深化战略合作，企业采用Oracle AI Database@AWS加速",
-          "claimCount": 4,
-          "sourceCount": 1
-        }
-      ],
-      "tags": [],
-      "sourceUrl": "https://oracle.com/news/announcement/oracle-and-aws-deepen-strategic-collaboration-as-enterprise-adoption-of-oracle-ai-database-at-aws-accelerates-2026-08-13",
-      "entityIds": [
-        "EN-9202af6ce925b26a",
-        "EN-ac6aafe583c90b2d",
-        "EN-cbc62794911ff31b"
+        "EN-70d4ee85fc4c8398",
+        "EN-dca6ec9510fc0176"
       ]
     },
     {
@@ -5881,7 +5912,7 @@
       "eventIds": [
         "EV-129ffa6be41bb485"
       ],
-      "dataDate": "2026-08-15",
+      "dataDate": "2026-08-14",
       "date": "2026-08-13",
       "title": "IBM × OpenAI：OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
       "stage": "procurement",
@@ -5895,7 +5926,7 @@
         "ChatGPT"
       ],
       "outcomes": [],
-      "observationCount": 2,
+      "observationCount": 1,
       "completeness": 0.625,
       "completenessPercent": 63,
       "missingFields": [
@@ -5904,17 +5935,6 @@
         "reported_outcomes"
       ],
       "timeline": [
-        {
-          "observationId": "FDEO-f504ab59faffb5e7",
-          "type": "procurement",
-          "stage": "procurement",
-          "date": "2026-08-13",
-          "dataDate": "2026-08-15",
-          "eventId": "EV-129ffa6be41bb485",
-          "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
-          "claimCount": 4,
-          "sourceCount": 1
-        },
         {
           "observationId": "FDEO-52e02e22bcd8cd7f",
           "type": "procurement",
@@ -7207,125 +7227,6 @@
     }
   ],
   "events": [
-    {
-      "id": "EV-f595d042ae4c91eb",
-      "dataDate": "2026-08-15",
-      "date": "2026-08-15",
-      "updatedDate": "2026-08-15",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "Optimly 筹集 80 万美元种子前融资，帮助品牌塑造 AI 对它们的评价",
-      "originalTitle": "Optimly raises $800K pre-seed to help brands shape what AI says about them | Dealroom.co",
-      "subject": "Optimly",
-      "action": "raises",
-      "object": "$800K pre-seed to help brands shape what AI says about them | Dealroom.co",
-      "metrics": [
-        "$800",
-        "$800,000 "
-      ],
-      "locations": [],
-      "missingFields": [
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-67e8c106650aa683"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "model",
-            "name": "模型",
-            "entityIds": [
-              "EN-67e8c106650aa683"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-67e8c106650aa683"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-67e8c106650aa683"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-67e8c106650aa683"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-67e8c106650aa683"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-67e8c106650aa683"
-      ],
-      "entityNames": [
-        "Optimly"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://app.dealroom.co/news/note/optimly-raises-800k-pre-seed-to-help-brands-shape-what-ai-says-about-them",
-      "publisher": "app.dealroom.co"
-    },
     {
       "id": "EV-9bbe5a98b14acd7f",
       "dataDate": "2026-08-15",
@@ -117300,7 +117201,7 @@
       "publisher": "front.ai"
     },
     {
-      "id": "EV-407b77337866e047",
+      "id": "EV-0fc718ab409cdcf5",
       "dataDate": "2026-08-15",
       "date": "2026-08-15",
       "updatedDate": "2026-08-15",
@@ -117310,142 +117211,151 @@
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Cars24 推出 Deployment Inc，印度首家前沿部署 AI 公司",
-      "originalTitle": "Cars24 launches Deployment Inc, India’s first forward-deployed AI company | Business News This Week",
-      "subject": "Cars24 launches Deployment Inc, India’s first forward-",
-      "action": "deployed",
-      "object": "AI company | Business News This Week",
-      "metrics": [
-        "$5 million"
-      ],
+      "title": "DeepSeek V4 Pro 正式版与 Harness 智能体框架上线国家超算互联网",
+      "originalTitle": "",
+      "subject": "DeepSeek V4 Pro 正式版与 Harness 智能体框架",
+      "action": "上线",
+      "object": "国家超算互联网",
+      "metrics": [],
       "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [
+          "cn-ithome-rss"
+        ],
+        "claim_refs": [
+          "CL-008d4135d0786add",
+          "CL-09ad2cdca5fd9c29",
+          "CL-a5a2a5fec66e3a35",
+          "CL-73a950e6a3cd3a34"
+        ]
+      },
       "missingFields": [],
       "conflicts": [],
-      "tags": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
       "facets": {
         "ai_market_category": [],
         "ai_market_subcategory": [],
         "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [
+        "product_form": [
           {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "financial_services",
-            "name": "金融服务",
-            "entityIds": [
-              "EN-e871a24e54933631"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "healthcare_life_sciences",
-            "name": "医疗与生命科学",
-            "entityIds": [
-              "EN-e871a24e54933631"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "manufacturing",
-            "name": "制造业",
-            "entityIds": [
-              "EN-e871a24e54933631"
-            ],
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
         ],
-        "deployment_model": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "on_premise",
+            "name": "本地部署",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
         "target_user": []
       },
       "classifications": [
         {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "financial_services",
-          "name": "金融服务",
-          "entityIds": [
-            "EN-e871a24e54933631"
-          ],
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
         {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "healthcare_life_sciences",
-          "name": "医疗与生命科学",
-          "entityIds": [
-            "EN-e871a24e54933631"
-          ],
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
         {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "manufacturing",
-          "name": "制造业",
-          "entityIds": [
-            "EN-e871a24e54933631"
-          ],
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "on_premise",
+          "name": "本地部署",
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         }
       ],
       "displayTags": [
         {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "financial_services",
-          "name": "金融服务",
-          "entityIds": [
-            "EN-e871a24e54933631"
-          ],
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
         {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "healthcare_life_sciences",
-          "name": "医疗与生命科学",
-          "entityIds": [
-            "EN-e871a24e54933631"
-          ],
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
         {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "manufacturing",
-          "name": "制造业",
-          "entityIds": [
-            "EN-e871a24e54933631"
-          ],
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "on_premise",
+          "name": "本地部署",
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         }
       ],
       "entityIds": [
-        "EN-e871a24e54933631"
+        "EN-6f7ac1823da81d2e",
+        "EN-46162bbc9eb57274"
       ],
       "entityNames": [
-        "Cars24 launches Deployment Inc"
+        "DeepSeek",
+        "Harness 智能体框架"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://businessnewsthisweek.com/business/cars24-launches-deployment-inc-indias-first-forward-deployed-ai-company",
-      "publisher": "businessnewsthisweek.com"
+      "sourceUrl": "https://ithome.com/0/990/002.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-0121f0a9e9a975ec",
@@ -117919,9 +117829,9 @@
     },
     {
       "id": "EV-081fe42665b4a0b2",
-      "dataDate": "2026-08-15",
+      "dataDate": "2026-08-14",
       "date": "2026-08-14",
-      "updatedDate": "2026-08-15",
+      "updatedDate": "2026-08-14",
       "eventType": "deployment",
       "eventTypeLabel": "部署",
       "eventGroup": "部署与案例",
@@ -118158,6 +118068,52 @@
       "products": [],
       "sourceUrl": "https://sap.com/finland/asset/dynamic/2026/06/be80dd33-587f-0010-bca6-c68f7e60039b.html",
       "publisher": "sap.com"
+    },
+    {
+      "id": "EV-6dc1ff5c07dc74fe",
+      "dataDate": "2026-08-15",
+      "date": "2026-08-12",
+      "updatedDate": "2026-08-15",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Kraken自主智能体部署：AI上线前公用事业必须证明什么 - CX Today",
+      "originalTitle": "Kraken Autonomous Agents Deployment: What Utilities Must Prove Before AI Goes Live - CX Today",
+      "subject": "Kraken Autonomous Agents Deployment: What Utilities Must Prove Before AI",
+      "action": "Goes Live",
+      "object": "- CX Today",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-70d4ee85fc4c8398",
+        "EN-dca6ec9510fc0176"
+      ],
+      "entityNames": [
+        "Kraken Autonomous Agents Deployment",
+        "Sierra"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://cxtoday.com/customer-engagement-journey-orchestration/kraken-autonomous-agents",
+      "publisher": "cxtoday.com"
     },
     {
       "id": "EV-49119ae718691877",
@@ -136594,6 +136550,124 @@
       "publisher": "fedscoop.com"
     },
     {
+      "id": "EV-40f14150d6f622f5",
+      "dataDate": "2026-08-15",
+      "date": "2026-08-15",
+      "updatedDate": "2026-08-15",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "荣耀 YOYO Claw 接入智谱 GLM-5.3 大模型，\"虾虾大脑\"升级",
+      "originalTitle": "",
+      "subject": "荣耀 YOYO Claw",
+      "action": "接入",
+      "object": "智谱 GLM-5.3 大模型，\"虾虾大脑\"升级",
+      "metrics": [
+        "50%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-22152786a70738a1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-22152786a70738a1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-22152786a70738a1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-22152786a70738a1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-22152786a70738a1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-22152786a70738a1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-22152786a70738a1",
+        "EN-1d79127e9d90e89b"
+      ],
+      "entityNames": [
+        "荣耀 YOYO Claw",
+        "智谱AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/989/989.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-0a0fbf647a1f7b70",
       "dataDate": "2026-08-15",
       "date": "2026-08-14",
@@ -136693,9 +136767,9 @@
     },
     {
       "id": "EV-129ffa6be41bb485",
-      "dataDate": "2026-08-15",
+      "dataDate": "2026-08-14",
       "date": "2026-08-13",
-      "updatedDate": "2026-08-15",
+      "updatedDate": "2026-08-14",
       "eventType": "partnership",
       "eventTypeLabel": "合作",
       "eventGroup": "商业合作",
@@ -137006,54 +137080,6 @@
       "products": [],
       "sourceUrl": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations",
       "publisher": "newsroom.ibm.com"
-    },
-    {
-      "id": "EV-4f0f7d0b05d34598",
-      "dataDate": "2026-08-15",
-      "date": "2026-08-13",
-      "updatedDate": "2026-08-15",
-      "eventType": "partnership",
-      "eventTypeLabel": "合作",
-      "eventGroup": "商业合作",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "甲骨文与AWS深化战略合作，企业采用Oracle AI Database@AWS加速",
-      "originalTitle": "Oracle and AWS Deepen Strategic Collaboration as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
-      "subject": "Oracle and AWS Deepen Strategic",
-      "action": "Collaboration",
-      "object": "as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-9202af6ce925b26a",
-        "EN-ac6aafe583c90b2d",
-        "EN-cbc62794911ff31b"
-      ],
-      "entityNames": [
-        "Oracle",
-        "AWS Deepen Strategic",
-        "Amazon"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://oracle.com/news/announcement/oracle-and-aws-deepen-strategic-collaboration-as-enterprise-adoption-of-oracle-ai-database-at-aws-accelerates-2026-08-13",
-      "publisher": "oracle.com"
     },
     {
       "id": "EV-d04d03b37046f0ad",
@@ -149108,51 +149134,6 @@
       "publisher": "markets.ft.com"
     },
     {
-      "id": "EV-0404746ff201bd7a",
-      "dataDate": "2026-08-15",
-      "date": "2026-08-15",
-      "updatedDate": "2026-08-15",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "人工智能 - FT中文网",
-      "originalTitle": "",
-      "subject": "undisclosed_subject",
-      "action": "product_release",
-      "object": "人工智能 - FT中文网",
-      "metrics": [],
-      "locations": [
-        "美国"
-      ],
-      "missingFields": [
-        "entities",
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [],
-      "entityNames": [],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://cn.ft.com/tag/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD?page=14",
-      "publisher": "cn.ft.com"
-    },
-    {
       "id": "EV-3dd89fab562d16a1",
       "dataDate": "2026-08-15",
       "date": "2026-08-15",
@@ -149337,84 +149318,6 @@
       "publisher": "The Decoder AI News"
     },
     {
-      "id": "EV-257c7ec21edf638a",
-      "dataDate": "2026-08-15",
-      "date": "2026-08-14",
-      "updatedDate": "2026-08-15",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "人工智能突发新闻与新闻稿",
-      "originalTitle": "Artificial Intelligence Breaking News and Press Releases",
-      "subject": "Artificial Intelligence Breaking News and Press",
-      "action": "Releases",
-      "object": "Artificial Intelligence Breaking News and Press Releases",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [
-        "object"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "retail_ecommerce",
-            "name": "零售与电商",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "retail_ecommerce",
-          "name": "零售与电商",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "retail_ecommerce",
-          "name": "零售与电商",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-5a59b85d2410f140",
-        "EN-842fcb5e60989a03"
-      ],
-      "entityNames": [
-        "Artificial Intelligence Breaking News",
-        "Press"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://businesswire.com/newsroom/industry/technology/artificial-intelligence",
-      "publisher": "businesswire.com"
-    },
-    {
       "id": "EV-3acfc317c18e3ef9",
       "dataDate": "2026-08-15",
       "date": "2026-08-14",
@@ -149505,10 +149408,10 @@
           "cn-sspai-rss"
         ],
         "claim_refs": [
-          "CL-d4e48f6ec9110ced",
-          "CL-269a61332a0d9f97",
-          "CL-5958c4b224ac2038",
-          "CL-ca237a61ad512255"
+          "CL-2fe075330fd7e551",
+          "CL-27e229eaab925d16",
+          "CL-547fe6aaab83689e",
+          "CL-837fdfe76f177c71"
         ]
       },
       "missingFields": [],
@@ -149703,126 +149606,6 @@
       "publisher": "The Decoder AI News"
     },
     {
-      "id": "EV-8ba7a742c4d626c6",
-      "dataDate": "2026-08-15",
-      "date": "2026-08-14",
-      "updatedDate": "2026-08-15",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Mac 版 ChatGPT 新增 Computer History 功能，不再依赖截图记录活动",
-      "originalTitle": "",
-      "subject": "Mac 版 ChatGPT",
-      "action": "新增",
-      "object": "Computer History 功能，不再依赖截图记录活动",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-b467b7ac3a330d40",
-        "EN-7d3194f79e645c42",
-        "EN-3a7bd3e2360a3d29",
-        "EN-289cde8c77f445f2",
-        "EN-d1ad14d4ad57d207",
-        "EN-429c4744ee4069e6"
-      ],
-      "entityNames": [
-        "Mac 版 ChatGPT",
-        "OpenAI",
-        "Apple",
-        "Computer History",
-        "ChatGPT",
-        "Computer History AI"
-      ],
-      "productName": "Computer History",
-      "products": [
-        {
-          "name": "Computer History",
-          "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
-        },
-        {
-          "name": "ChatGPT",
-          "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
-        },
-        {
-          "name": "Computer History AI",
-          "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
-        }
-      ],
-      "sourceUrl": "https://ithome.com/0/989/518.htm",
-      "publisher": "IT之家（RSS）"
-    },
-    {
-      "id": "EV-91aa3136c20babd1",
-      "dataDate": "2026-08-15",
-      "date": "2026-08-14",
-      "updatedDate": "2026-08-15",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "百度文库网盘「库库AI」AI办公MAU超2500万，新推办公独立端",
-      "originalTitle": "",
-      "subject": "百度文库网盘",
-      "action": "product_release",
-      "object": "百度文库网盘「库库AI」AI办公MAU超2500万，新推办公独立端",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-a89151ba4b5ac0f2"
-      ],
-      "entityNames": [
-        "Baidu"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://qbitai.com/2026/08/473144.html",
-      "publisher": "量子位"
-    },
-    {
       "id": "EV-be4b6dc8829070e5",
       "dataDate": "2026-08-15",
       "date": "2026-08-14",
@@ -149937,204 +149720,6 @@
       "products": [],
       "sourceUrl": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption",
       "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
-    },
-    {
-      "id": "EV-c17a52220be52dc1",
-      "dataDate": "2026-08-15",
-      "date": "2026-08-14",
-      "updatedDate": "2026-08-15",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Meta的“开放”AI，以及一笔2.5亿美元的交易严重出错",
-      "originalTitle": "Meta’s ‘open’ AI, and a $250M deal gone very wrong",
-      "subject": "Meta",
-      "action": "model_release",
-      "object": "Glimmer",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重",
-          "entityIds": [
-            "EN-ea3bd73e2b506e00"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "model",
-            "name": "模型",
-            "entityIds": [
-              "EN-ea3bd73e2b506e00"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重",
-          "entityIds": [
-            "EN-ea3bd73e2b506e00"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-ea3bd73e2b506e00"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-ea3bd73e2b506e00"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重",
-          "entityIds": [
-            "EN-ea3bd73e2b506e00"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-ea3bd73e2b506e00"
-      ],
-      "entityNames": [
-        "Meta"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://techcrunch.com/podcast/metas-open-ai-and-a-250m-deal-gone-very-wrong",
-      "publisher": "TechCrunch AI"
-    },
-    {
-      "id": "EV-f7b81752b1fadd87",
-      "dataDate": "2026-08-15",
-      "date": "2026-08-14",
-      "updatedDate": "2026-08-15",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "rumored",
-      "statusLabel": "rumored",
-      "publicationStatus": "disputed",
-      "title": "苹果与阿里巴巴合作，为中国训练自有AI模型",
-      "originalTitle": "Apple trained its own AI model for China with help from Alibaba",
-      "subject": "Apple",
-      "action": "model_release",
-      "object": "custom AI model for China market",
-      "metrics": [],
-      "locations": [
-        "China"
-      ],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "model",
-            "name": "模型",
-            "entityIds": [
-              "EN-3a7bd3e2360a3d29"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-3a7bd3e2360a3d29"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-3a7bd3e2360a3d29"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-3a7bd3e2360a3d29",
-        "EN-047364b9be67f665"
-      ],
-      "entityNames": [
-        "Apple",
-        "Alibaba"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba",
-      "publisher": "The Verge AI"
     },
     {
       "id": "EV-f9de476a4537c308",
@@ -150592,69 +150177,6 @@
       "publisher": "Ars Technica AI"
     },
     {
-      "id": "EV-1d020f2b584db3da",
-      "dataDate": "2026-08-15",
-      "date": "2026-08-13",
-      "updatedDate": "2026-08-15",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "得克萨斯州新增200GW AI需求，却无力供电",
-      "originalTitle": "Texas Just Added 200GW of AI Demand It Can't Power",
-      "subject": "Texas Just",
-      "action": "Added",
-      "object": "200GW of AI Demand It Can't Power",
-      "metrics": [
-        "200GW",
-        "120GW",
-        "80%"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-638629b365edac20",
-        "EN-099c9c3348db2a4a",
-        "EN-1bc0ff9d106a1663"
-      ],
-      "entityNames": [
-        "Texas Just",
-        "AI Demand It Can",
-        "Added"
-      ],
-      "productName": "AI Demand It Can",
-      "products": [
-        {
-          "name": "AI Demand It Can",
-          "type": "产品/服务",
-          "ownerNames": []
-        },
-        {
-          "name": "Added",
-          "type": "产品/服务",
-          "ownerNames": []
-        }
-      ],
-      "sourceUrl": "https://thegpu.ai/p/gpu-daily-2026-08-13",
-      "publisher": "thegpu.ai"
-    },
-    {
       "id": "EV-576e81e479b78605",
       "dataDate": "2026-08-15",
       "date": "2026-08-13",
@@ -150771,168 +150293,6 @@
       "publisher": "TechCrunch AI"
     },
     {
-      "id": "EV-9ba5eaa49fa31366",
-      "dataDate": "2026-08-15",
-      "date": "2026-08-13",
-      "updatedDate": "2026-08-15",
-      "eventType": "service_change",
-      "eventTypeLabel": "服务变更",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "微软的类Clippy角色Mico不再是Copilot的代言形象",
-      "originalTitle": "Microsoft’s Clippy-like Mico character is no longer the face of Copilot",
-      "subject": "Microsoft Copilot",
-      "action": "service_change",
-      "object": "Mico",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-8bb6561e31c2be64",
-        "EN-9fbf261b62c1d7c0",
-        "EN-6dfec3d723d55bb0"
-      ],
-      "entityNames": [
-        "Microsoft Copilot",
-        "Microsoft",
-        "Clippy-like Mico"
-      ],
-      "productName": "Clippy-like Mico",
-      "products": [
-        {
-          "name": "Clippy-like Mico",
-          "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
-        }
-      ],
-      "sourceUrl": "https://theverge.com/tech/979871/microsoft-copilot-mico-retired",
-      "publisher": "The Verge AI"
-    },
-    {
-      "id": "EV-a37d2b9160a559f8",
-      "dataDate": "2026-08-15",
-      "date": "2026-08-13",
-      "updatedDate": "2026-08-15",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "Mixedbread 发布搜索智能体 Toast 1，性能对标 Claude Opus 5 与 GPT-5.6 Sol",
-      "originalTitle": "",
-      "subject": "Mixedbread",
-      "action": "发布",
-      "object": "搜索智能体 Toast 1，性能对标 Claude Opus 5 与 GPT-5.6 Sol",
-      "metrics": [
-        "70%",
-        "$1.15 "
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-80a786c725a3c22b"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-80a786c725a3c22b"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-80a786c725a3c22b"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-80a786c725a3c22b"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-80a786c725a3c22b",
-        "EN-2dc010636b9dce91",
-        "EN-4d8cc84ccbd521e1"
-      ],
-      "entityNames": [
-        "Mixedbread",
-        "Databricks",
-        "Toast 1"
-      ],
-      "productName": "Toast 1",
-      "products": [
-        {
-          "name": "Toast 1",
-          "type": "产品/服务",
-          "ownerNames": [
-            "Databricks"
-          ]
-        }
-      ],
-      "sourceUrl": "https://mixedbread.com/blog/toast-1",
-      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
-    },
-    {
       "id": "EV-ae6d3c566b33532a",
       "dataDate": "2026-08-15",
       "date": "2026-08-13",
@@ -150977,131 +150337,6 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed",
       "publisher": "TechCrunch AI"
-    },
-    {
-      "id": "EV-ec36aeb4ad1f3918",
-      "dataDate": "2026-08-15",
-      "date": "2026-08-13",
-      "updatedDate": "2026-08-15",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "Cerebras 与 OpenAI 推出 GPT-5.6 Sol Ultrafast 超快模式",
-      "originalTitle": "",
-      "subject": "Cerebras",
-      "action": "推出",
-      "object": "GPT-5.6 Sol Ultrafast 超快模式",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-77b30b8a88051252",
-        "EN-7d3194f79e645c42",
-        "EN-c75c3ec6ee0932db"
-      ],
-      "entityNames": [
-        "Cerebras",
-        "OpenAI",
-        "GPT-5.6 Sol Ultrafast"
-      ],
-      "productName": "GPT-5.6 Sol Ultrafast",
-      "products": [
-        {
-          "name": "GPT-5.6 Sol Ultrafast",
-          "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
-        }
-      ],
-      "sourceUrl": "https://cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai",
-      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
-    },
-    {
-      "id": "EV-fca1ecc2d977169f",
-      "dataDate": "2026-08-15",
-      "date": "2026-08-13",
-      "updatedDate": "2026-08-15",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "IBM 新闻室：人工智能新闻稿",
-      "originalTitle": "Artificial intelligence press releases - IBM Newsroom",
-      "subject": "Artificial intelligence press",
-      "action": "releases",
-      "object": "- IBM Newsroom",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-7336eaf1ed80779c",
-        "EN-916a98f0fa2a39af",
-        "EN-8d4321d936320802",
-        "EN-cbc62794911ff31b",
-        "EN-c12965afdaa87ea4",
-        "EN-ae11c0abf6288776"
-      ],
-      "entityNames": [
-        "Artificial intelligence press",
-        "IBM",
-        "NVIDIA",
-        "Amazon",
-        "Newsroom",
-        "AI Inference"
-      ],
-      "productName": "Newsroom",
-      "products": [
-        {
-          "name": "Newsroom",
-          "type": "产品/服务",
-          "ownerNames": [
-            "IBM"
-          ]
-        },
-        {
-          "name": "AI Inference",
-          "type": "产品/服务",
-          "ownerNames": [
-            "IBM"
-          ]
-        }
-      ],
-      "sourceUrl": "https://newsroom.ibm.com/press-releases-artificial-intelligence?keywords=2026&l=50",
-      "publisher": "newsroom.ibm.com"
     },
     {
       "id": "EV-086c3551140a49b2",
@@ -152224,116 +151459,6 @@
       ],
       "sourceUrl": "https://zed.dev/blog/introducing-delta",
       "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
-    },
-    {
-      "id": "EV-e3beca344d2321a9",
-      "dataDate": "2026-08-15",
-      "date": "2026-08-12",
-      "updatedDate": "2026-08-15",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Oracle AI 2026年8月版新增功能",
-      "originalTitle": "What’s New in Oracle AI? August 2026 Edition",
-      "subject": "OCI Enterprise AI",
-      "action": "model_release",
-      "object": "NVIDIA Nemotron 3.5 Lightning",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-18325c31b47f5078"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-18325c31b47f5078"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-18325c31b47f5078"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-18325c31b47f5078",
-        "EN-8d4321d936320802",
-        "EN-a87448d1bf3da107",
-        "EN-f43fcac12953687c",
-        "EN-d44f04c33c2b23a1"
-      ],
-      "entityNames": [
-        "OCI Enterprise AI",
-        "NVIDIA",
-        "Nemotron 3.5",
-        "Nemotron 3.5 Lightning",
-        "Oracle AI"
-      ],
-      "productName": "Nemotron 3.5",
-      "products": [
-        {
-          "name": "Nemotron 3.5",
-          "type": "模型",
-          "ownerNames": [
-            "NVIDIA"
-          ]
-        },
-        {
-          "name": "Nemotron 3.5 Lightning",
-          "type": "模型",
-          "ownerNames": [
-            "NVIDIA"
-          ]
-        },
-        {
-          "name": "Oracle AI",
-          "type": "模型",
-          "ownerNames": [
-            "NVIDIA"
-          ]
-        }
-      ],
-      "sourceUrl": "https://blogs.oracle.com/ai-and-datascience/whats-new-in-ai-august-2026",
-      "publisher": "blogs.oracle.com"
     },
     {
       "id": "EV-1205a939d3748b7e",
@@ -154762,10 +153887,62 @@
       "publisher": "MarkTechPost（RSS）"
     },
     {
-      "id": "EV-c7d0b810ac3b3d4e",
-      "dataDate": "2026-08-15",
+      "id": "EV-a6ba9bbaead657a2",
+      "dataDate": "2026-08-14",
       "date": "2026-08-11",
-      "updatedDate": "2026-08-15",
+      "updatedDate": "2026-08-14",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Supermicro 新闻稿",
+      "originalTitle": "Press Releases | Supermicro Skip to main content",
+      "subject": "Press",
+      "action": "Releases",
+      "object": "| Supermicro Skip to main content",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-842fcb5e60989a03",
+        "EN-2d7ad3accac9f125"
+      ],
+      "entityNames": [
+        "Press",
+        "Supermicro Skip"
+      ],
+      "productName": "Supermicro Skip",
+      "products": [
+        {
+          "name": "Supermicro Skip",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://supermicro.com/en/newsroom/pressreleases",
+      "publisher": "supermicro.com"
+    },
+    {
+      "id": "EV-c7d0b810ac3b3d4e",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-14",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
@@ -154991,58 +154168,6 @@
       ],
       "sourceUrl": "https://newsroom.ibm.com/2026-08-11-IBM-and-Together-AI-Sign-Multi-Year-Agreement-to-Scale-Open-Source-AI-Inference-with-NVIDIA-AI-Infrastructure-on-IBM-Cloud",
       "publisher": "newsroom.ibm.com"
-    },
-    {
-      "id": "EV-a6ba9bbaead657a2",
-      "dataDate": "2026-08-14",
-      "date": "2026-08-11",
-      "updatedDate": "2026-08-14",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Supermicro 新闻稿",
-      "originalTitle": "Press Releases | Supermicro Skip to main content",
-      "subject": "Press",
-      "action": "Releases",
-      "object": "| Supermicro Skip to main content",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-842fcb5e60989a03",
-        "EN-2d7ad3accac9f125"
-      ],
-      "entityNames": [
-        "Press",
-        "Supermicro Skip"
-      ],
-      "productName": "Supermicro Skip",
-      "products": [
-        {
-          "name": "Supermicro Skip",
-          "type": "产品/服务",
-          "ownerNames": []
-        }
-      ],
-      "sourceUrl": "https://supermicro.com/en/newsroom/pressreleases",
-      "publisher": "supermicro.com"
     },
     {
       "id": "EV-5c30f52112d92491",
@@ -157725,6 +156850,84 @@
       ],
       "sourceUrl": "https://mlflow.org/articles/the-role-of-open-source-in-enterprise-ai-in-2026",
       "publisher": "mlflow.org"
+    },
+    {
+      "id": "EV-257c7ec21edf638a",
+      "dataDate": "2026-08-10",
+      "date": "2026-08-09",
+      "updatedDate": "2026-08-10",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "人工智能突发新闻与新闻稿",
+      "originalTitle": "Artificial Intelligence Breaking News and Press Releases",
+      "subject": "Artificial Intelligence Breaking News and Press",
+      "action": "Releases",
+      "object": "Artificial Intelligence Breaking News and Press Releases",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-5a59b85d2410f140",
+        "EN-842fcb5e60989a03"
+      ],
+      "entityNames": [
+        "Artificial Intelligence Breaking News",
+        "Press"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://businesswire.com/newsroom/industry/technology/artificial-intelligence",
+      "publisher": "businesswire.com"
     },
     {
       "id": "EV-3dc8d5c373ddd1f3",
@@ -249367,52 +248570,6 @@
       "publisher": "duoke360.com"
     },
     {
-      "id": "EV-c230c05281ef3aa2",
-      "dataDate": "2026-08-15",
-      "date": "2026-08-15",
-      "updatedDate": "2026-08-15",
-      "eventType": "certification_compliance",
-      "eventTypeLabel": "认证合规",
-      "eventGroup": "组织、政策与法律",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "AI 助力政府合同竞标：赢得更多投标",
-      "originalTitle": "AI for Government Contracting: Win More Bids | Procurement Sciences",
-      "subject": "Procurement Sciences",
-      "action": "certification_compliance",
-      "object": "FedRAMP Moderate Authorization",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-7035f6607ad2d162"
-      ],
-      "entityNames": [
-        "Procurement Sciences"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://procurementsciences.com",
-      "publisher": "procurementsciences.com"
-    },
-    {
       "id": "EV-1231169f9fddbee6",
       "dataDate": "2026-08-15",
       "date": "2026-08-14",
@@ -249636,6 +248793,52 @@
       "publisher": "northflank.com"
     },
     {
+      "id": "EV-c230c05281ef3aa2",
+      "dataDate": "2026-08-14",
+      "date": "2026-08-14",
+      "updatedDate": "2026-08-14",
+      "eventType": "certification_compliance",
+      "eventTypeLabel": "认证合规",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI 助力政府合同竞标：赢得更多投标",
+      "originalTitle": "AI for Government Contracting: Win More Bids | Procurement Sciences",
+      "subject": "Procurement Sciences",
+      "action": "certification_compliance",
+      "object": "FedRAMP Moderate Authorization",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7035f6607ad2d162"
+      ],
+      "entityNames": [
+        "Procurement Sciences"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://procurementsciences.com",
+      "publisher": "procurementsciences.com"
+    },
+    {
       "id": "EV-cdc6611d6b115cab",
       "dataDate": "2026-08-14",
       "date": "2026-08-14",
@@ -249687,230 +248890,6 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/989/505.htm",
       "publisher": "IT之家"
-    },
-    {
-      "id": "EV-2796fca5b1714d2e",
-      "dataDate": "2026-08-15",
-      "date": "2026-08-13",
-      "updatedDate": "2026-08-15",
-      "eventType": "research_result",
-      "eventTypeLabel": "研究结果",
-      "eventGroup": "研究结果",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Lemma 获230万美元Pre-Seed融资，由Matrix、YC及OpenAI/xAI运营者支持，以修复AI智能体的“无声”故障",
-      "originalTitle": "$2.3M Pre-Seed for Lemma – Backed by Matrix, YC & OpenAI/xAI Operators to Fix \"Silent\" AI Agent Failures | Markets Insider",
-      "subject": "$2.3M Pre-Seed for Lemma – Backed by Matrix, YC & OpenAI/xAI Operators to Fix \"Silent\" AI Agent",
-      "action": "Failures",
-      "object": "| Markets Insider",
-      "metrics": [
-        "$2.3M",
-        "$2.3 million"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "tool_use",
-          "name": "工具调用",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "healthcare_life_sciences",
-            "name": "医疗与生命科学",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "tool_use",
-          "name": "工具调用",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "healthcare_life_sciences",
-          "name": "医疗与生命科学",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "tool_use",
-          "name": "工具调用",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "healthcare_life_sciences",
-          "name": "医疗与生命科学",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-7d3194f79e645c42",
-        "EN-6fcba5d96a4fadfd",
-        "EN-bac20c192f745517",
-        "EN-993f9731b5aab6b9",
-        "EN-d4f013827e668132"
-      ],
-      "entityNames": [
-        "OpenAI",
-        "xAI",
-        "Markets Insider",
-        "Pre-Seed",
-        "3M Pre-Seed for Lemma"
-      ],
-      "productName": "Markets Insider",
-      "products": [
-        {
-          "name": "Markets Insider",
-          "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
-        },
-        {
-          "name": "Pre-Seed",
-          "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
-        },
-        {
-          "name": "3M Pre-Seed for Lemma",
-          "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
-        }
-      ],
-      "sourceUrl": "https://markets.businessinsider.com/news/stocks/2-3m-pre-seed-for-lemma-backed-by-matrix-yc-openai-xai-operators-to-fix-silent-ai-agent-failures-1036454901",
-      "publisher": "markets.businessinsider.com"
-    },
-    {
-      "id": "EV-bce258f8f915ff5f",
-      "dataDate": "2026-08-15",
-      "date": "2026-08-13",
-      "updatedDate": "2026-08-15",
-      "eventType": "organization_people",
-      "eventTypeLabel": "组织与人员",
-      "eventGroup": "组织、政策与法律",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "OpenAI本周将失去第二位高管",
-      "originalTitle": "OpenAI is losing its second executive this week",
-      "subject": "Denise Dresser",
-      "action": "organization_people",
-      "object": "OpenAI",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-7d3194f79e645c42"
-      ],
-      "entityNames": [
-        "OpenAI"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/979815/openai-denise-dresser-leaving-executive-departure",
-      "publisher": "The Verge AI"
     },
     {
       "id": "EV-3343be31faab2cce",
@@ -250282,6 +249261,50 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://theverge.com/tech/979112/twitch-streamers-can-now-opt-out-from-training-amazons-ai",
+      "publisher": "The Verge AI"
+    },
+    {
+      "id": "EV-bce258f8f915ff5f",
+      "dataDate": "2026-08-13",
+      "date": "2026-08-12",
+      "updatedDate": "2026-08-13",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "又一位OpenAI高管离职",
+      "originalTitle": "Another OpenAI executive takes off",
+      "subject": "Brad Lightcap",
+      "action": "organization_people",
+      "object": "OpenAI",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/978048/brad-lightcap-openai-executive-departure",
       "publisher": "The Verge AI"
     },
     {
