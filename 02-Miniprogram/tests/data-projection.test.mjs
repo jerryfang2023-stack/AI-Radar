@@ -29,6 +29,15 @@ test("preserves bounded public fields and evidence links", () => {
   assert.ok(withSources.every((item) => item.sources.every((sourceItem) => /^https?:\/\//u.test(sourceItem.url))));
 });
 
+test("renders normalized CNY amounts as yuan across China cards and details", () => {
+  const chinaCards = projected.index.cards.filter((card) => card.marketRegion === "china");
+  const cnyCards = chinaCards.filter((card) => card.amountCurrency === "CNY");
+  assert.ok(cnyCards.length > 0);
+  assert.ok(cnyCards.every((card) => !/人民币|CNY|RMB/iu.test(card.amount)));
+  assert.ok(cnyCards.every((card) => /元/iu.test(card.amount)));
+  assert.ok(cnyCards.every((card) => projected.details[card.id].marketLabel === "中国"));
+});
+
 test("uses conservative region and round grouping", () => {
   assert.equal(regionFor("Beijing, China"), "china");
   assert.equal(regionFor("San Francisco"), "overseas");

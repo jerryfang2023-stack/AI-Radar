@@ -2018,7 +2018,7 @@
     const activities = institution.activities || [];
     const activityRows = activities.map((activity) => {
       const normalized = activity.amount_normalized?.display_zh || "";
-      const amount = [normalized, activity.amount_original && activity.amount_original !== normalized ? `原文 ${activity.amount_original}` : ""]
+      const amount = [normalized, activity.amount_normalized?.currency !== "CNY" && activity.amount_original && activity.amount_original !== normalized ? `原文 ${activity.amount_original}` : ""]
         .filter(Boolean).join(" · ") || "金额未披露";
       return `
         <article class="dc-list-row dc-investor-activity">
