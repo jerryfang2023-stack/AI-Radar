@@ -219,6 +219,7 @@ function parseBlocks(markdown = "") {
   text(markdown).split(/\r?\n/).forEach((rawLine) => {
     const line = rawLine.trim();
     if (!line) { flush(); return; }
+    if (/^---+$/.test(line)) { flush(); return; }
     const heading = line.match(/^(#{2,4})\s+(.+)$/);
     if (heading) { flush(); blocks.push({ type: heading[1].length === 2 ? "heading" : "subheading", text: cleanInline(heading[2]) }); return; }
     const quote = line.match(/^>\s*(.+)$/);
