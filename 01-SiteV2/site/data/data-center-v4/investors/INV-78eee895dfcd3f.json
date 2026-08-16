@@ -20,25 +20,69 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "first_disclosed_at": "2026-06-10",
-    "latest_disclosed_at": "2026-06-10",
+    "latest_disclosed_at": "2026-08-12",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "series_a"
+      "series_a",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-b314f58f5f506fd2",
         "canonical_entity_id": "",
         "name": "Poetic"
+      },
+      {
+        "entity_id": "EN-f970fd34532919fe",
+        "canonical_entity_id": "",
+        "name": "Thrive Holdings"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-3d3ea925efead16a",
+        "funding_insight_id": "FI-208f5f069010d44d",
+        "event_ids": [
+          "EV-df8954acf9a13848"
+        ],
+        "company_entity_id": "EN-f970fd34532919fe",
+        "company_canonical_entity_id": "",
+        "company_name": "Thrive Holdings",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮融资",
+        "amount_original": "$2B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿美元"
+        },
+        "announced_at": "2026-08-12",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d07c57474d0d2a62",
+            "source_url": "https://ecmsource.com/thrive-holdings-2-billion-openai-softbank-august-2026/",
+            "source_title": "Thrive Holdings Raises $2B at $12B: AI-Native PE Model",
+            "source_content_hash": "8ce4af6115005665",
+            "quote": "OpenAI , SoftBank, D1 Capital Partners, and Altimeter Capital led the round.",
+            "quote_hash": "704112975d8feb3dc22e5b6374f5b3fab14c5b239be2cd89e95b15d56db87c07"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6d3856f69089c2fc",
         "funding_insight_id": "FI-da21481e9629e578",
@@ -80,6 +124,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-d07c57474d0d2a62",
+        "source_url": "https://ecmsource.com/thrive-holdings-2-billion-openai-softbank-august-2026/",
+        "source_title": "Thrive Holdings Raises $2B at $12B: AI-Native PE Model",
+        "source_content_hash": "8ce4af6115005665",
+        "quote": "OpenAI , SoftBank, D1 Capital Partners, and Altimeter Capital led the round.",
+        "quote_hash": "704112975d8feb3dc22e5b6374f5b3fab14c5b239be2cd89e95b15d56db87c07"
+      },
       {
         "source_id": "FISRC-1da4b36f3c2caa81",
         "source_url": "https://www.bloomberg.com/news/articles/2026-06-10/openai-backs-ai-startup-fielding-compliance-underwriting-tasks",

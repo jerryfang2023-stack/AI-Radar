@@ -20,15 +20,16 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "first_disclosed_at": "2026-02-24",
-    "latest_disclosed_at": "2026-07-08",
+    "latest_disclosed_at": "2026-08-15",
     "role_counts": {
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
+      "infrastructure",
       "ipo",
       "series_f",
       "undisclosed"
@@ -38,6 +39,11 @@
         "entity_id": "EN-53453cfb48a75dde",
         "canonical_entity_id": "",
         "name": "Axelera AI"
+      },
+      {
+        "entity_id": "EN-8d4321d936320802",
+        "canonical_entity_id": "EN-8d4321d936320802",
+        "name": "NVIDIA"
       },
       {
         "entity_id": "EN-7d3194f79e645c42",
@@ -56,6 +62,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-42973e09775d8d3b",
+        "funding_insight_id": "FI-ed1d2ba02f527a10",
+        "event_ids": [
+          "EV-e70a48e36e99d57a"
+        ],
+        "company_entity_id": "EN-8d4321d936320802",
+        "company_canonical_entity_id": "EN-8d4321d936320802",
+        "company_name": "NVIDIA",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "超过 5000 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000000,
+          "min_value": 500000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 5000 亿美元"
+        },
+        "announced_at": "2026-08-15",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-5514041be03e64ae",
+            "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Partners-With-Apollo-BlackRock-Blackstone-Brookfield-Goldman-Sachs-and-KKR-to-Establish-AI-Compute-Infrastructure-Financing-Platforms-to-Mobilize-Over-500-Billion-of-Third-Party-Capital/default.aspx",
+            "source_title": "NVIDIA Corporation - NVIDIA Partners With Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to Establish AI Compute Infrastructure Financing Platforms to Mobilize Over $500 Billion of Third-Party Capital",
+            "source_content_hash": "281ec3c5199ae992",
+            "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
+            "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
+          }
+        ]
+      },
       {
         "activity_id": "IA-0cc8f57f16d64b42",
         "funding_insight_id": "FI-02775e1bb32805b0",
@@ -210,6 +254,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-5514041be03e64ae",
+        "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Partners-With-Apollo-BlackRock-Blackstone-Brookfield-Goldman-Sachs-and-KKR-to-Establish-AI-Compute-Infrastructure-Financing-Platforms-to-Mobilize-Over-500-Billion-of-Third-Party-Capital/default.aspx",
+        "source_title": "NVIDIA Corporation - NVIDIA Partners With Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to Establish AI Compute Infrastructure Financing Platforms to Mobilize Over $500 Billion of Third-Party Capital",
+        "source_content_hash": "281ec3c5199ae992",
+        "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
+        "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
+      },
       {
         "source_id": "FISRC-dbf8259066547c8e",
         "source_url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",

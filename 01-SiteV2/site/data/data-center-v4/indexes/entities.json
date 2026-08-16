@@ -21593,6 +21593,183 @@
       ]
     },
     {
+      "id": "INV-25a9fdb381e024",
+      "name": "Khosla Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 12,
+      "historical_or_ambiguous_count": 3,
+      "portfolio_company_count": 12,
+      "first_disclosed_at": "2023-04-27",
+      "latest_disclosed_at": "2026-08-05",
+      "role_counts": {
+        "co_lead": 2,
+        "historical_or_ambiguous": 3,
+        "lead": 7,
+        "participant": 3
+      },
+      "round_codes": [
+        "seed",
+        "series_a",
+        "series_b",
+        "series_b_extension",
+        "series_c"
+      ],
+      "activity_count": 15,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-522656609ff15589",
+          "canonical_entity_id": "",
+          "name": "Bunkerhill Health"
+        },
+        {
+          "entity_id": "EN-4728b0c37dc84206",
+          "canonical_entity_id": "",
+          "name": "Convey"
+        },
+        {
+          "entity_id": "EN-26997989b8425dac",
+          "canonical_entity_id": "",
+          "name": "Dili"
+        },
+        {
+          "entity_id": "EN-77a82bb9aafc81d9",
+          "canonical_entity_id": "",
+          "name": "Ellis AI"
+        },
+        {
+          "entity_id": "EN-dc8a5a5bf80909de",
+          "canonical_entity_id": "",
+          "name": "General Intuition"
+        },
+        {
+          "entity_id": "EN-712dffae168fe622",
+          "canonical_entity_id": "",
+          "name": "Nomos Ai Inc."
+        },
+        {
+          "entity_id": "EN-733859c1fc6b9331",
+          "canonical_entity_id": "",
+          "name": "Norm Ai"
+        },
+        {
+          "entity_id": "EN-1c5483264189feef",
+          "canonical_entity_id": "",
+          "name": "Onyx"
+        },
+        {
+          "entity_id": "EN-53b69ef92c836777",
+          "canonical_entity_id": "",
+          "name": "Replit"
+        },
+        {
+          "entity_id": "EN-e69f64149edae6b1",
+          "canonical_entity_id": "EN-e69f64149edae6b1",
+          "name": "Runlayer"
+        },
+        {
+          "entity_id": "EN-ccfc5e062828b145",
+          "canonical_entity_id": "",
+          "name": "Scaled Cognition"
+        },
+        {
+          "entity_id": "EN-6861f63c27eb0ada",
+          "canonical_entity_id": "",
+          "name": "WindBorne Systems"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-ddeee51e4ab6119a",
+          "funding_insight_id": "FI-db2bd30618100f0d",
+          "event_ids": [
+            "EV-60f219702a66bf38"
+          ],
+          "company_entity_id": "EN-6861f63c27eb0ada",
+          "company_canonical_entity_id": "",
+          "company_name": "WindBorne Systems",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$37 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 37000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3700 万美元"
+          },
+          "announced_at": "2026-08-05",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
+        },
+        {
+          "activity_id": "IA-005c09a7e2b6a286",
+          "funding_insight_id": "FI-db2bd30618100f0d",
+          "event_ids": [
+            "EV-60f219702a66bf38"
+          ],
+          "company_entity_id": "EN-6861f63c27eb0ada",
+          "company_canonical_entity_id": "",
+          "company_name": "WindBorne Systems",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$37 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 37000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3700 万美元"
+          },
+          "announced_at": "2026-08-05",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "A 轮领投方",
+          "role_code": "historical_or_ambiguous"
+        },
+        {
+          "activity_id": "IA-6aa07a0d1677d528",
+          "funding_insight_id": "FI-2b717ea13b12294d",
+          "event_ids": [
+            "EV-13e08bc37724e276"
+          ],
+          "company_entity_id": "EN-77a82bb9aafc81d9",
+          "company_canonical_entity_id": "",
+          "company_name": "Ellis AI",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$10M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 10000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1000 万美元"
+          },
+          "announced_at": "2026-07-31",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
       "id": "INV-f381c3151a9bb7",
       "name": "General Catalyst",
       "aliases": [],
@@ -21757,178 +21934,6 @@
             "display_zh": "9800 万美元"
           },
           "announced_at": "2026-06-23",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead"
-        }
-      ]
-    },
-    {
-      "id": "INV-25a9fdb381e024",
-      "name": "Khosla Ventures",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 11,
-      "historical_or_ambiguous_count": 3,
-      "portfolio_company_count": 11,
-      "first_disclosed_at": "2023-04-27",
-      "latest_disclosed_at": "2026-08-05",
-      "role_counts": {
-        "co_lead": 2,
-        "historical_or_ambiguous": 3,
-        "lead": 7,
-        "participant": 2
-      },
-      "round_codes": [
-        "seed",
-        "series_a",
-        "series_b",
-        "series_b_extension",
-        "series_c"
-      ],
-      "activity_count": 14,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-522656609ff15589",
-          "canonical_entity_id": "",
-          "name": "Bunkerhill Health"
-        },
-        {
-          "entity_id": "EN-4728b0c37dc84206",
-          "canonical_entity_id": "",
-          "name": "Convey"
-        },
-        {
-          "entity_id": "EN-26997989b8425dac",
-          "canonical_entity_id": "",
-          "name": "Dili"
-        },
-        {
-          "entity_id": "EN-dc8a5a5bf80909de",
-          "canonical_entity_id": "",
-          "name": "General Intuition"
-        },
-        {
-          "entity_id": "EN-712dffae168fe622",
-          "canonical_entity_id": "",
-          "name": "Nomos Ai Inc."
-        },
-        {
-          "entity_id": "EN-733859c1fc6b9331",
-          "canonical_entity_id": "",
-          "name": "Norm Ai"
-        },
-        {
-          "entity_id": "EN-1c5483264189feef",
-          "canonical_entity_id": "",
-          "name": "Onyx"
-        },
-        {
-          "entity_id": "EN-53b69ef92c836777",
-          "canonical_entity_id": "",
-          "name": "Replit"
-        },
-        {
-          "entity_id": "EN-e69f64149edae6b1",
-          "canonical_entity_id": "EN-e69f64149edae6b1",
-          "name": "Runlayer"
-        },
-        {
-          "entity_id": "EN-ccfc5e062828b145",
-          "canonical_entity_id": "",
-          "name": "Scaled Cognition"
-        },
-        {
-          "entity_id": "EN-6861f63c27eb0ada",
-          "canonical_entity_id": "",
-          "name": "WindBorne Systems"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-ddeee51e4ab6119a",
-          "funding_insight_id": "FI-db2bd30618100f0d",
-          "event_ids": [
-            "EV-60f219702a66bf38"
-          ],
-          "company_entity_id": "EN-6861f63c27eb0ada",
-          "company_canonical_entity_id": "",
-          "company_name": "WindBorne Systems",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "$37 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 37000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3700 万美元"
-          },
-          "announced_at": "2026-08-05",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead"
-        },
-        {
-          "activity_id": "IA-005c09a7e2b6a286",
-          "funding_insight_id": "FI-db2bd30618100f0d",
-          "event_ids": [
-            "EV-60f219702a66bf38"
-          ],
-          "company_entity_id": "EN-6861f63c27eb0ada",
-          "company_canonical_entity_id": "",
-          "company_name": "WindBorne Systems",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "$37 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 37000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3700 万美元"
-          },
-          "announced_at": "2026-08-05",
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "A 轮领投方",
-          "role_code": "historical_or_ambiguous"
-        },
-        {
-          "activity_id": "IA-ccb4ffd6cb3725c6",
-          "funding_insight_id": "FI-edac864887206b8f",
-          "event_ids": [
-            "EV-ea109db692b88079"
-          ],
-          "company_entity_id": "EN-26997989b8425dac",
-          "company_canonical_entity_id": "",
-          "company_name": "Dili",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "A 轮",
-          "amount_original": "$15 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 15000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1500 万美元"
-          },
-          "announced_at": "2026-07-30",
           "disclosure_status": "disclosed",
           "scope": "current_round",
           "role": "本轮领投",
@@ -23425,6 +23430,283 @@
           "scope": "current_round",
           "role": "本轮参投",
           "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-a83f8b9c272b41",
+      "name": "BlackRock",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 5,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 5,
+      "first_disclosed_at": "2026-02-24",
+      "latest_disclosed_at": "2026-08-15",
+      "role_counts": {
+        "participant": 5
+      },
+      "round_codes": [
+        "infrastructure",
+        "ipo",
+        "series_f",
+        "undisclosed"
+      ],
+      "activity_count": 5,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-53453cfb48a75dde",
+          "canonical_entity_id": "",
+          "name": "Axelera AI"
+        },
+        {
+          "entity_id": "EN-8d4321d936320802",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "name": "NVIDIA"
+        },
+        {
+          "entity_id": "EN-7d3194f79e645c42",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "name": "OpenAI"
+        },
+        {
+          "entity_id": "EN-6907a22fafe13a63",
+          "canonical_entity_id": "",
+          "name": "SambaNova Systems"
+        },
+        {
+          "entity_id": "EN-e78bdebae031095b",
+          "canonical_entity_id": "EN-e78bdebae031095b",
+          "name": "SpaceX"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-42973e09775d8d3b",
+          "funding_insight_id": "FI-ed1d2ba02f527a10",
+          "event_ids": [
+            "EV-e70a48e36e99d57a"
+          ],
+          "company_entity_id": "EN-8d4321d936320802",
+          "company_canonical_entity_id": "EN-8d4321d936320802",
+          "company_name": "NVIDIA",
+          "round": "基础设施融资",
+          "round_code": "infrastructure",
+          "round_original": "基础设施融资",
+          "amount_original": "超过 5000 亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 500000000000,
+            "min_value": 500000000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 5000 亿美元"
+          },
+          "announced_at": "2026-08-15",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-0cc8f57f16d64b42",
+          "funding_insight_id": "FI-02775e1bb32805b0",
+          "event_ids": [
+            "EV-a8dc5c859946f336"
+          ],
+          "company_entity_id": "EN-6907a22fafe13a63",
+          "company_canonical_entity_id": "",
+          "company_name": "SambaNova Systems",
+          "round": "F轮",
+          "round_code": "series_f",
+          "round_original": "Series F (first close)",
+          "amount_original": "$1 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "10 亿美元"
+          },
+          "announced_at": "2026-07-08",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投（新进或既有）",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-708af95b274e7e40",
+          "funding_insight_id": "FI-082c684e1b4a88c2",
+          "event_ids": [
+            "EV-ef7346378fcf9746"
+          ],
+          "company_entity_id": "EN-e78bdebae031095b",
+          "company_canonical_entity_id": "EN-e78bdebae031095b",
+          "company_name": "SpaceX",
+          "round": "IPO",
+          "round_code": "ipo",
+          "round_original": "IPO",
+          "amount_original": "$75 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 75000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "750 亿美元"
+          },
+          "announced_at": "2026-06-03",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-1493e20e99083e",
+      "name": "Blackstone",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 5,
+      "historical_or_ambiguous_count": 2,
+      "portfolio_company_count": 5,
+      "first_disclosed_at": "2026-03-31",
+      "latest_disclosed_at": "2026-08-15",
+      "role_counts": {
+        "historical_or_ambiguous": 2,
+        "lead": 1,
+        "participant": 4
+      },
+      "round_codes": [
+        "infrastructure",
+        "series_c",
+        "series_f"
+      ],
+      "activity_count": 7,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "name": "Anthropic"
+        },
+        {
+          "entity_id": "EN-712dffae168fe622",
+          "canonical_entity_id": "",
+          "name": "Nomos Ai Inc."
+        },
+        {
+          "entity_id": "EN-733859c1fc6b9331",
+          "canonical_entity_id": "",
+          "name": "Norm Ai"
+        },
+        {
+          "entity_id": "EN-8d4321d936320802",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "name": "NVIDIA"
+        },
+        {
+          "entity_id": "EN-7d3194f79e645c42",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "name": "OpenAI"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-2247d3cf71f98547",
+          "funding_insight_id": "FI-ed1d2ba02f527a10",
+          "event_ids": [
+            "EV-e70a48e36e99d57a"
+          ],
+          "company_entity_id": "EN-8d4321d936320802",
+          "company_canonical_entity_id": "EN-8d4321d936320802",
+          "company_name": "NVIDIA",
+          "round": "基础设施融资",
+          "round_code": "infrastructure",
+          "round_original": "基础设施融资",
+          "amount_original": "超过 5000 亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 500000000000,
+            "min_value": 500000000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 5000 亿美元"
+          },
+          "announced_at": "2026-08-15",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-06eafc5eedb18497",
+          "funding_insight_id": "FI-9fd39f44b35d940c",
+          "event_ids": [
+            "EV-d9cc588fb41a7e67"
+          ],
+          "company_entity_id": "EN-712dffae168fe622",
+          "company_canonical_entity_id": "",
+          "company_name": "Nomos Ai Inc.",
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "C轮",
+          "amount_original": "1.2亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 120000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.2 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-f5b8adffb8afe8e3",
+          "funding_insight_id": "FI-9fd39f44b35d940c",
+          "event_ids": [
+            "EV-d9cc588fb41a7e67"
+          ],
+          "company_entity_id": "EN-712dffae168fe622",
+          "company_canonical_entity_id": "",
+          "company_name": "Nomos Ai Inc.",
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "C轮",
+          "amount_original": "1.2亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 120000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.2 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "既有投资方（2025年1月参投，2025年11月参投）",
+          "role_code": "historical_or_ambiguous"
         }
       ]
     },
@@ -25689,14 +25971,14 @@
           "role_code": "historical_or_ambiguous"
         },
         {
-          "activity_id": "IA-f92b42608d2ab5ef",
-          "funding_insight_id": "FI-f5103149f04ea6ed",
+          "activity_id": "IA-8e043845d8b5dc9a",
+          "funding_insight_id": "FI-4c761f22f0ef6d7f",
           "event_ids": [
             "EV-c5d7d88d1aef8edb"
           ],
-          "company_entity_id": "EN-b5251b35f15bedc4",
-          "company_canonical_entity_id": "EN-b5251b35f15bedc4",
-          "company_name": "Moonshot AI",
+          "company_entity_id": "FICO-481243d2f2a235c1",
+          "company_canonical_entity_id": "",
+          "company_name": "月之暗面",
           "round": "轮次未披露",
           "round_code": "undisclosed",
           "round_original": "新一轮",
@@ -25715,272 +25997,6 @@
           "scope": "historical_or_ambiguous",
           "role": "天使轮参投；A+轮参投",
           "role_code": "historical_or_ambiguous"
-        }
-      ]
-    },
-    {
-      "id": "INV-a83f8b9c272b41",
-      "name": "BlackRock",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 4,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 4,
-      "first_disclosed_at": "2026-02-24",
-      "latest_disclosed_at": "2026-07-08",
-      "role_counts": {
-        "participant": 4
-      },
-      "round_codes": [
-        "ipo",
-        "series_f",
-        "undisclosed"
-      ],
-      "activity_count": 4,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-53453cfb48a75dde",
-          "canonical_entity_id": "",
-          "name": "Axelera AI"
-        },
-        {
-          "entity_id": "EN-7d3194f79e645c42",
-          "canonical_entity_id": "EN-7d3194f79e645c42",
-          "name": "OpenAI"
-        },
-        {
-          "entity_id": "EN-6907a22fafe13a63",
-          "canonical_entity_id": "",
-          "name": "SambaNova Systems"
-        },
-        {
-          "entity_id": "EN-e78bdebae031095b",
-          "canonical_entity_id": "EN-e78bdebae031095b",
-          "name": "SpaceX"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-0cc8f57f16d64b42",
-          "funding_insight_id": "FI-02775e1bb32805b0",
-          "event_ids": [
-            "EV-a8dc5c859946f336"
-          ],
-          "company_entity_id": "EN-6907a22fafe13a63",
-          "company_canonical_entity_id": "",
-          "company_name": "SambaNova Systems",
-          "round": "F轮",
-          "round_code": "series_f",
-          "round_original": "Series F (first close)",
-          "amount_original": "$1 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿美元"
-          },
-          "announced_at": "2026-07-08",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投（新进或既有）",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-708af95b274e7e40",
-          "funding_insight_id": "FI-082c684e1b4a88c2",
-          "event_ids": [
-            "EV-ef7346378fcf9746"
-          ],
-          "company_entity_id": "EN-e78bdebae031095b",
-          "company_canonical_entity_id": "EN-e78bdebae031095b",
-          "company_name": "SpaceX",
-          "round": "IPO",
-          "round_code": "ipo",
-          "round_original": "IPO",
-          "amount_original": "$75 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 75000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "750 亿美元"
-          },
-          "announced_at": "2026-06-03",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-6435b79a1d8d1e3b",
-          "funding_insight_id": "FI-b76fffbf5d0d91bd",
-          "event_ids": [
-            "EV-d4e44892226be468"
-          ],
-          "company_entity_id": "EN-7d3194f79e645c42",
-          "company_canonical_entity_id": "EN-7d3194f79e645c42",
-          "company_name": "OpenAI",
-          "round": "F轮",
-          "round_code": "series_f",
-          "round_original": "Series F",
-          "amount_original": "$1220亿",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 122000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1220 亿美元"
-          },
-          "announced_at": "2026-03-31",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        }
-      ]
-    },
-    {
-      "id": "INV-1493e20e99083e",
-      "name": "Blackstone",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 4,
-      "historical_or_ambiguous_count": 2,
-      "portfolio_company_count": 4,
-      "first_disclosed_at": "2026-03-31",
-      "latest_disclosed_at": "2026-07-07",
-      "role_counts": {
-        "historical_or_ambiguous": 2,
-        "lead": 1,
-        "participant": 3
-      },
-      "round_codes": [
-        "infrastructure",
-        "series_c",
-        "series_f"
-      ],
-      "activity_count": 6,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_entity_id": "EN-c70eca6b0f88f44d",
-          "name": "Anthropic"
-        },
-        {
-          "entity_id": "EN-712dffae168fe622",
-          "canonical_entity_id": "",
-          "name": "Nomos Ai Inc."
-        },
-        {
-          "entity_id": "EN-733859c1fc6b9331",
-          "canonical_entity_id": "",
-          "name": "Norm Ai"
-        },
-        {
-          "entity_id": "EN-7d3194f79e645c42",
-          "canonical_entity_id": "EN-7d3194f79e645c42",
-          "name": "OpenAI"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-06eafc5eedb18497",
-          "funding_insight_id": "FI-9fd39f44b35d940c",
-          "event_ids": [
-            "EV-d9cc588fb41a7e67"
-          ],
-          "company_entity_id": "EN-712dffae168fe622",
-          "company_canonical_entity_id": "",
-          "company_name": "Nomos Ai Inc.",
-          "round": "C轮",
-          "round_code": "series_c",
-          "round_original": "C轮",
-          "amount_original": "1.2亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 120000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1.2 亿美元"
-          },
-          "announced_at": "2026-07-07",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-f5b8adffb8afe8e3",
-          "funding_insight_id": "FI-9fd39f44b35d940c",
-          "event_ids": [
-            "EV-d9cc588fb41a7e67"
-          ],
-          "company_entity_id": "EN-712dffae168fe622",
-          "company_canonical_entity_id": "",
-          "company_name": "Nomos Ai Inc.",
-          "round": "C轮",
-          "round_code": "series_c",
-          "round_original": "C轮",
-          "amount_original": "1.2亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 120000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1.2 亿美元"
-          },
-          "announced_at": "2026-07-07",
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "既有投资方（2025年1月参投，2025年11月参投）",
-          "role_code": "historical_or_ambiguous"
-        },
-        {
-          "activity_id": "IA-c2bb206fb703bb23",
-          "funding_insight_id": "FI-3bd982e429974930",
-          "event_ids": [
-            "EV-0f520c9e5b1ea1d2"
-          ],
-          "company_entity_id": "EN-733859c1fc6b9331",
-          "company_canonical_entity_id": "",
-          "company_name": "Norm Ai",
-          "round": "C轮",
-          "round_code": "series_c",
-          "round_original": "Series C",
-          "amount_original": "$120M",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 120000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1.2 亿美元"
-          },
-          "announced_at": "2026-07-07",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "既有投资方（2025年11月领投$50M）及本轮参投",
-          "role_code": "lead"
         }
       ]
     },
@@ -26250,6 +26266,134 @@
           "scope": "current_round",
           "role": "既有投资方，本轮参投",
           "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-4f9310a13f17c3",
+      "name": "Altimeter Capital",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 3,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 3,
+      "first_disclosed_at": "2026-04",
+      "latest_disclosed_at": "2026-08-12",
+      "role_counts": {
+        "co_lead": 2,
+        "participant": 1
+      },
+      "round_codes": [
+        "seed",
+        "series_a",
+        "undisclosed"
+      ],
+      "activity_count": 3,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-e647c818ac38b6ca",
+          "canonical_entity_id": "EN-e647c818ac38b6ca",
+          "name": "Elorian"
+        },
+        {
+          "entity_id": "EN-f970fd34532919fe",
+          "canonical_entity_id": "",
+          "name": "Thrive Holdings"
+        },
+        {
+          "entity_id": "EN-6fae0bc5a895aab8",
+          "canonical_entity_id": "",
+          "name": "Volta Infra Holdings Ltd."
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-865b963eb4bb518d",
+          "funding_insight_id": "FI-208f5f069010d44d",
+          "event_ids": [
+            "EV-df8954acf9a13848"
+          ],
+          "company_entity_id": "EN-f970fd34532919fe",
+          "company_canonical_entity_id": "",
+          "company_name": "Thrive Holdings",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮融资",
+          "amount_original": "$2B",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 2000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "20 亿美元"
+          },
+          "announced_at": "2026-08-12",
+          "disclosure_status": "partially_disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-ab81a76fd56729ae",
+          "funding_insight_id": "FI-718b8020e0e74b3d",
+          "event_ids": [
+            "EV-2dea56b0e97c1685"
+          ],
+          "company_entity_id": "EN-6fae0bc5a895aab8",
+          "company_canonical_entity_id": "",
+          "company_name": "Volta Infra Holdings Ltd.",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$300 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 300000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3 亿美元"
+          },
+          "announced_at": "2026-08-04",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
+        },
+        {
+          "activity_id": "IA-7eff84f550b66b21",
+          "funding_insight_id": "FI-24441bfba8aff1ad",
+          "event_ids": [
+            "EV-6f092cfc7a064d64"
+          ],
+          "company_entity_id": "EN-e647c818ac38b6ca",
+          "company_canonical_entity_id": "EN-e647c818ac38b6ca",
+          "company_name": "Elorian",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$55 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 55000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "5500 万美元"
+          },
+          "announced_at": "2026-04",
+          "disclosure_status": "partially_disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
         }
       ]
     },
@@ -27912,6 +28056,134 @@
           "scope": "current_round",
           "role": "本轮参投",
           "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-5f293d18e41f5e",
+      "name": "Thrive Capital",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 3,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 3,
+      "first_disclosed_at": "2023-06-28",
+      "latest_disclosed_at": "2026-07-31",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "participant": 3
+      },
+      "round_codes": [
+        "seed",
+        "series_b",
+        "series_f"
+      ],
+      "activity_count": 4,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-77a82bb9aafc81d9",
+          "canonical_entity_id": "",
+          "name": "Ellis AI"
+        },
+        {
+          "entity_id": "EN-7d3194f79e645c42",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "name": "OpenAI"
+        },
+        {
+          "entity_id": "EN-4bd78d9884b2d958",
+          "canonical_entity_id": "EN-4bd78d9884b2d958",
+          "name": "Parabola"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-760493bf2e7e7555",
+          "funding_insight_id": "FI-2b717ea13b12294d",
+          "event_ids": [
+            "EV-13e08bc37724e276"
+          ],
+          "company_entity_id": "EN-77a82bb9aafc81d9",
+          "company_canonical_entity_id": "",
+          "company_name": "Ellis AI",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$10M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 10000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1000 万美元"
+          },
+          "announced_at": "2026-07-31",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-87c14bce15e5fecb",
+          "funding_insight_id": "FI-b76fffbf5d0d91bd",
+          "event_ids": [
+            "EV-d4e44892226be468"
+          ],
+          "company_entity_id": "EN-7d3194f79e645c42",
+          "company_canonical_entity_id": "EN-7d3194f79e645c42",
+          "company_name": "OpenAI",
+          "round": "F轮",
+          "round_code": "series_f",
+          "round_original": "Series F",
+          "amount_original": "$1220亿",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 122000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1220 亿美元"
+          },
+          "announced_at": "2026-03-31",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-740f2e30585cd17a",
+          "funding_insight_id": "FI-b76fffbf5d0d91bd",
+          "event_ids": [
+            "EV-d4e44892226be468"
+          ],
+          "company_entity_id": "EN-7d3194f79e645c42",
+          "company_canonical_entity_id": "EN-7d3194f79e645c42",
+          "company_name": "OpenAI",
+          "round": "F轮",
+          "round_code": "series_f",
+          "round_original": "Series F",
+          "amount_original": "$1220亿",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 122000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1220 亿美元"
+          },
+          "announced_at": "2026-03-31",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "既有投资方（2024年10月Series E领投）",
+          "role_code": "historical_or_ambiguous"
         }
       ]
     },
@@ -29700,6 +29972,100 @@
       ]
     },
     {
+      "id": "INV-86402224b56edd",
+      "name": "Brookfield",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 2,
+      "first_disclosed_at": "2026-05-21",
+      "latest_disclosed_at": "2026-08-15",
+      "role_counts": {
+        "participant": 2
+      },
+      "round_codes": [
+        "infrastructure",
+        "series_a"
+      ],
+      "activity_count": 2,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-245f1e177c5169cb",
+          "canonical_entity_id": "",
+          "name": "Hark"
+        },
+        {
+          "entity_id": "EN-8d4321d936320802",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "name": "NVIDIA"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-bdf925ead72d8b76",
+          "funding_insight_id": "FI-ed1d2ba02f527a10",
+          "event_ids": [
+            "EV-e70a48e36e99d57a"
+          ],
+          "company_entity_id": "EN-8d4321d936320802",
+          "company_canonical_entity_id": "EN-8d4321d936320802",
+          "company_name": "NVIDIA",
+          "round": "基础设施融资",
+          "round_code": "infrastructure",
+          "round_original": "基础设施融资",
+          "amount_original": "超过 5000 亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 500000000000,
+            "min_value": 500000000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 5000 亿美元"
+          },
+          "announced_at": "2026-08-15",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-9679c36b5e07836f",
+          "funding_insight_id": "FI-35b63d84f1f7c2b0",
+          "event_ids": [
+            "EV-450f624a6a6446ce",
+            "EV-44c9a50b99c76a70"
+          ],
+          "company_entity_id": "EN-245f1e177c5169cb",
+          "company_canonical_entity_id": "",
+          "company_name": "Hark",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "Series A",
+          "amount_original": "$700M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 700000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7 亿美元"
+          },
+          "announced_at": "2026-05-21",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
       "id": "INV-0758315314873f",
       "name": "恒旭资本",
       "aliases": [],
@@ -29911,6 +30277,316 @@
           "scope": "current_round",
           "role": "本轮参投",
           "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-2606e5e6453d99",
+      "name": "D1 Capital Partners",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 2,
+      "first_disclosed_at": "2025-03-03",
+      "latest_disclosed_at": "2026-08-12",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "participant": 2
+      },
+      "round_codes": [
+        "series_e",
+        "undisclosed"
+      ],
+      "activity_count": 3,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "name": "Anthropic PBC"
+        },
+        {
+          "entity_id": "EN-f970fd34532919fe",
+          "canonical_entity_id": "",
+          "name": "Thrive Holdings"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-05368ae165fb9eb0",
+          "funding_insight_id": "FI-208f5f069010d44d",
+          "event_ids": [
+            "EV-df8954acf9a13848"
+          ],
+          "company_entity_id": "EN-f970fd34532919fe",
+          "company_canonical_entity_id": "",
+          "company_name": "Thrive Holdings",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮融资",
+          "amount_original": "$2B",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 2000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "20 亿美元"
+          },
+          "announced_at": "2026-08-12",
+          "disclosure_status": "partially_disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-2351223f32d316c4",
+          "funding_insight_id": "FI-082c684e1b4a88c2",
+          "event_ids": [
+            "EV-ef7346378fcf9746"
+          ],
+          "company_entity_id": "EN-e78bdebae031095b",
+          "company_canonical_entity_id": "EN-e78bdebae031095b",
+          "company_name": "SpaceX",
+          "round": "IPO",
+          "round_code": "ipo",
+          "round_original": "IPO",
+          "amount_original": "$75 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 75000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "750 亿美元"
+          },
+          "announced_at": "2026-06-03",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "既有投资方",
+          "role_code": "historical_or_ambiguous"
+        },
+        {
+          "activity_id": "IA-9873059ecb6224b9",
+          "funding_insight_id": "FI-6601d010adc14dd0",
+          "event_ids": [
+            "EV-78a11d309c3d4e97"
+          ],
+          "company_entity_id": "EN-c70eca6b0f88f44d",
+          "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "company_name": "Anthropic PBC",
+          "round": "E轮",
+          "round_code": "series_e",
+          "round_original": "Series E",
+          "amount_original": "$3.5B",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 3500000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "35 亿美元"
+          },
+          "announced_at": "2025-03-03",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-78eee895dfcd3f",
+      "name": "OpenAI",
+      "aliases": [],
+      "canonical_entity_id": "EN-7d3194f79e645c42",
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 2,
+      "first_disclosed_at": "2026-06-10",
+      "latest_disclosed_at": "2026-08-12",
+      "role_counts": {
+        "participant": 2
+      },
+      "round_codes": [
+        "series_a",
+        "undisclosed"
+      ],
+      "activity_count": 2,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-b314f58f5f506fd2",
+          "canonical_entity_id": "",
+          "name": "Poetic"
+        },
+        {
+          "entity_id": "EN-f970fd34532919fe",
+          "canonical_entity_id": "",
+          "name": "Thrive Holdings"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-3d3ea925efead16a",
+          "funding_insight_id": "FI-208f5f069010d44d",
+          "event_ids": [
+            "EV-df8954acf9a13848"
+          ],
+          "company_entity_id": "EN-f970fd34532919fe",
+          "company_canonical_entity_id": "",
+          "company_name": "Thrive Holdings",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮融资",
+          "amount_original": "$2B",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 2000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "20 亿美元"
+          },
+          "announced_at": "2026-08-12",
+          "disclosure_status": "partially_disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-6d3856f69089c2fc",
+          "funding_insight_id": "FI-da21481e9629e578",
+          "event_ids": [
+            "EV-b1138bccf5ccd86c",
+            "EV-a42e51959c627554"
+          ],
+          "company_entity_id": "EN-b314f58f5f506fd2",
+          "company_canonical_entity_id": "",
+          "company_name": "Poetic",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$50 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 50000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "5000 万美元"
+          },
+          "announced_at": "2026-06-10",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-b3dd2d4428d2f2",
+      "name": "SoftBank",
+      "aliases": [],
+      "canonical_entity_id": "EN-80d387ccb3289295",
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 2,
+      "first_disclosed_at": "2026-03-31",
+      "latest_disclosed_at": "2026-08-12",
+      "role_counts": {
+        "co_lead": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "series_f",
+        "undisclosed"
+      ],
+      "activity_count": 2,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-7d3194f79e645c42",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "name": "OpenAI"
+        },
+        {
+          "entity_id": "EN-f970fd34532919fe",
+          "canonical_entity_id": "",
+          "name": "Thrive Holdings"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-bb673b438f49f522",
+          "funding_insight_id": "FI-208f5f069010d44d",
+          "event_ids": [
+            "EV-df8954acf9a13848"
+          ],
+          "company_entity_id": "EN-f970fd34532919fe",
+          "company_canonical_entity_id": "",
+          "company_name": "Thrive Holdings",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮融资",
+          "amount_original": "$2B",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 2000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "20 亿美元"
+          },
+          "announced_at": "2026-08-12",
+          "disclosure_status": "partially_disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-88432584516f6aff",
+          "funding_insight_id": "FI-b76fffbf5d0d91bd",
+          "event_ids": [
+            "EV-d4e44892226be468"
+          ],
+          "company_entity_id": "EN-7d3194f79e645c42",
+          "company_canonical_entity_id": "EN-7d3194f79e645c42",
+          "company_name": "OpenAI",
+          "round": "F轮",
+          "round_code": "series_f",
+          "round_original": "Series F",
+          "amount_original": "$1220亿",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 122000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1220 亿美元"
+          },
+          "announced_at": "2026-03-31",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
         }
       ]
     },
@@ -30925,99 +31601,6 @@
           "scope": "current_round",
           "role": "本轮领投",
           "role_code": "lead"
-        }
-      ]
-    },
-    {
-      "id": "INV-4f9310a13f17c3",
-      "name": "Altimeter Capital",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 2,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 2,
-      "first_disclosed_at": "2026-04",
-      "latest_disclosed_at": "2026-08-04",
-      "role_counts": {
-        "co_lead": 2
-      },
-      "round_codes": [
-        "seed",
-        "series_a"
-      ],
-      "activity_count": 2,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-e647c818ac38b6ca",
-          "canonical_entity_id": "EN-e647c818ac38b6ca",
-          "name": "Elorian"
-        },
-        {
-          "entity_id": "EN-6fae0bc5a895aab8",
-          "canonical_entity_id": "",
-          "name": "Volta Infra Holdings Ltd."
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-ab81a76fd56729ae",
-          "funding_insight_id": "FI-718b8020e0e74b3d",
-          "event_ids": [
-            "EV-2dea56b0e97c1685"
-          ],
-          "company_entity_id": "EN-6fae0bc5a895aab8",
-          "company_canonical_entity_id": "",
-          "company_name": "Volta Infra Holdings Ltd.",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "A轮",
-          "amount_original": "$300 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 300000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3 亿美元"
-          },
-          "announced_at": "2026-08-04",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead"
-        },
-        {
-          "activity_id": "IA-7eff84f550b66b21",
-          "funding_insight_id": "FI-24441bfba8aff1ad",
-          "event_ids": [
-            "EV-6f092cfc7a064d64"
-          ],
-          "company_entity_id": "EN-e647c818ac38b6ca",
-          "company_canonical_entity_id": "EN-e647c818ac38b6ca",
-          "company_name": "Elorian",
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "种子轮",
-          "amount_original": "$55 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 55000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "5500 万美元"
-          },
-          "announced_at": "2026-04",
-          "disclosure_status": "partially_disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead"
         }
       ]
     },
@@ -32043,6 +32626,220 @@
           "scope": "current_round",
           "role": "本轮参投",
           "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-9e57556db74459",
+      "name": "645 Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 2,
+      "first_disclosed_at": "2026-04-29",
+      "latest_disclosed_at": "2026-07-31",
+      "role_counts": {
+        "participant": 2
+      },
+      "round_codes": [
+        "seed"
+      ],
+      "activity_count": 2,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-77a82bb9aafc81d9",
+          "canonical_entity_id": "",
+          "name": "Ellis AI"
+        },
+        {
+          "entity_id": "EN-1050efc9e13624b2",
+          "canonical_entity_id": "",
+          "name": "General Analysis"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-aa7c69ae8a505e8e",
+          "funding_insight_id": "FI-2b717ea13b12294d",
+          "event_ids": [
+            "EV-13e08bc37724e276"
+          ],
+          "company_entity_id": "EN-77a82bb9aafc81d9",
+          "company_canonical_entity_id": "",
+          "company_name": "Ellis AI",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$10M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 10000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1000 万美元"
+          },
+          "announced_at": "2026-07-31",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-5cf032208a5f4b85",
+          "funding_insight_id": "FI-fecb7f6a77985938",
+          "event_ids": [
+            "EV-61546e58c0e669e7"
+          ],
+          "company_entity_id": "EN-1050efc9e13624b2",
+          "company_canonical_entity_id": "",
+          "company_name": "General Analysis",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$10 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 10000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1000 万美元"
+          },
+          "announced_at": "2026-04-29",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-4e1e46cb1af197",
+      "name": "First Round Capital",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 2,
+      "first_disclosed_at": "2025-03-12",
+      "latest_disclosed_at": "2026-07-31",
+      "role_counts": {
+        "co_lead": 1,
+        "historical_or_ambiguous": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "seed"
+      ],
+      "activity_count": 3,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-77a82bb9aafc81d9",
+          "canonical_entity_id": "",
+          "name": "Ellis AI"
+        },
+        {
+          "entity_id": "EN-1c5483264189feef",
+          "canonical_entity_id": "",
+          "name": "Onyx"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-2537b2951d1f2219",
+          "funding_insight_id": "FI-2b717ea13b12294d",
+          "event_ids": [
+            "EV-13e08bc37724e276"
+          ],
+          "company_entity_id": "EN-77a82bb9aafc81d9",
+          "company_canonical_entity_id": "",
+          "company_name": "Ellis AI",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$10M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 10000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1000 万美元"
+          },
+          "announced_at": "2026-07-31",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-aff864a5313b346c",
+          "funding_insight_id": "FI-c813b159747ac208",
+          "event_ids": [
+            "EV-fcf3c464260b6730"
+          ],
+          "company_entity_id": "EN-7ef08ef63597d47c",
+          "company_canonical_entity_id": "",
+          "company_name": "Gritt",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "pre-seed and Series A",
+          "amount_original": "$32.4M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 32400000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3240 万美元"
+          },
+          "announced_at": "2026-07-21",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "既有投资方",
+          "role_code": "historical_or_ambiguous"
+        },
+        {
+          "activity_id": "IA-f96c33395a59516a",
+          "funding_insight_id": "FI-a29040155764e60f",
+          "event_ids": [
+            "EV-b348083270be6c65"
+          ],
+          "company_entity_id": "EN-1c5483264189feef",
+          "company_canonical_entity_id": "",
+          "company_name": "Onyx",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$10M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 10000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1000 万美元"
+          },
+          "announced_at": "2025-03-12",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
         }
       ]
     },
@@ -38922,21 +39719,21 @@
           "name": "它石智航"
         },
         {
-          "entity_id": "EN-b5251b35f15bedc4",
-          "canonical_entity_id": "EN-b5251b35f15bedc4",
-          "name": "Moonshot AI"
+          "entity_id": "FICO-481243d2f2a235c1",
+          "canonical_entity_id": "",
+          "name": "月之暗面"
         }
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-cf66f8f9481c81d5",
-          "funding_insight_id": "FI-f5103149f04ea6ed",
+          "activity_id": "IA-be413b07597699e2",
+          "funding_insight_id": "FI-4c761f22f0ef6d7f",
           "event_ids": [
             "EV-c5d7d88d1aef8edb"
           ],
-          "company_entity_id": "EN-b5251b35f15bedc4",
-          "company_canonical_entity_id": "EN-b5251b35f15bedc4",
-          "company_name": "Moonshot AI",
+          "company_entity_id": "FICO-481243d2f2a235c1",
+          "company_canonical_entity_id": "",
+          "company_name": "月之暗面",
           "round": "轮次未披露",
           "round_code": "undisclosed",
           "round_original": "新一轮",
@@ -40277,128 +41074,6 @@
       ]
     },
     {
-      "id": "INV-5f293d18e41f5e",
-      "name": "Thrive Capital",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 2,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 2,
-      "first_disclosed_at": "2023-06-28",
-      "latest_disclosed_at": "2026-03-31",
-      "role_counts": {
-        "historical_or_ambiguous": 1,
-        "participant": 2
-      },
-      "round_codes": [
-        "series_b",
-        "series_f"
-      ],
-      "activity_count": 3,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-7d3194f79e645c42",
-          "canonical_entity_id": "EN-7d3194f79e645c42",
-          "name": "OpenAI"
-        },
-        {
-          "entity_id": "EN-4bd78d9884b2d958",
-          "canonical_entity_id": "EN-4bd78d9884b2d958",
-          "name": "Parabola"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-87c14bce15e5fecb",
-          "funding_insight_id": "FI-b76fffbf5d0d91bd",
-          "event_ids": [
-            "EV-d4e44892226be468"
-          ],
-          "company_entity_id": "EN-7d3194f79e645c42",
-          "company_canonical_entity_id": "EN-7d3194f79e645c42",
-          "company_name": "OpenAI",
-          "round": "F轮",
-          "round_code": "series_f",
-          "round_original": "Series F",
-          "amount_original": "$1220亿",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 122000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1220 亿美元"
-          },
-          "announced_at": "2026-03-31",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-740f2e30585cd17a",
-          "funding_insight_id": "FI-b76fffbf5d0d91bd",
-          "event_ids": [
-            "EV-d4e44892226be468"
-          ],
-          "company_entity_id": "EN-7d3194f79e645c42",
-          "company_canonical_entity_id": "EN-7d3194f79e645c42",
-          "company_name": "OpenAI",
-          "round": "F轮",
-          "round_code": "series_f",
-          "round_original": "Series F",
-          "amount_original": "$1220亿",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 122000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1220 亿美元"
-          },
-          "announced_at": "2026-03-31",
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "既有投资方（2024年10月Series E领投）",
-          "role_code": "historical_or_ambiguous"
-        },
-        {
-          "activity_id": "IA-e8c0a2fdc431f372",
-          "funding_insight_id": "FI-3b3efb8e20671184",
-          "event_ids": [
-            "EV-acf1bcb321414706"
-          ],
-          "company_entity_id": "EN-4bd78d9884b2d958",
-          "company_canonical_entity_id": "EN-4bd78d9884b2d958",
-          "company_name": "Parabola",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "Series B",
-          "amount_original": "$24 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 24000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "2400 万美元"
-          },
-          "announced_at": "2023-06-28",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投；种子轮参投",
-          "role_code": "participant"
-        }
-      ]
-    },
-    {
       "id": "INV-aca88cf13bef92",
       "name": "Transpose Platform",
       "aliases": [],
@@ -41354,6 +42029,183 @@
           "scope": "current_round",
           "role": "本轮天使投资人",
           "role_code": "other_current_round"
+        }
+      ]
+    },
+    {
+      "id": "INV-ffb6d28673644f",
+      "name": "Apollo",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-15",
+      "latest_disclosed_at": "2026-08-15",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "infrastructure"
+      ],
+      "activity_count": 1,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-8d4321d936320802",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "name": "NVIDIA"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-25d63c219c6075b4",
+          "funding_insight_id": "FI-ed1d2ba02f527a10",
+          "event_ids": [
+            "EV-e70a48e36e99d57a"
+          ],
+          "company_entity_id": "EN-8d4321d936320802",
+          "company_canonical_entity_id": "EN-8d4321d936320802",
+          "company_name": "NVIDIA",
+          "round": "基础设施融资",
+          "round_code": "infrastructure",
+          "round_original": "基础设施融资",
+          "amount_original": "超过 5000 亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 500000000000,
+            "min_value": 500000000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 5000 亿美元"
+          },
+          "announced_at": "2026-08-15",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-b7ae05f40c20c5",
+      "name": "Goldman Sachs",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-15",
+      "latest_disclosed_at": "2026-08-15",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "infrastructure"
+      ],
+      "activity_count": 1,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-8d4321d936320802",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "name": "NVIDIA"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-2de89db422b75def",
+          "funding_insight_id": "FI-ed1d2ba02f527a10",
+          "event_ids": [
+            "EV-e70a48e36e99d57a"
+          ],
+          "company_entity_id": "EN-8d4321d936320802",
+          "company_canonical_entity_id": "EN-8d4321d936320802",
+          "company_name": "NVIDIA",
+          "round": "基础设施融资",
+          "round_code": "infrastructure",
+          "round_original": "基础设施融资",
+          "amount_original": "超过 5000 亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 500000000000,
+            "min_value": 500000000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 5000 亿美元"
+          },
+          "announced_at": "2026-08-15",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-7a1970a91bd68a",
+      "name": "KKR",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-15",
+      "latest_disclosed_at": "2026-08-15",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "infrastructure"
+      ],
+      "activity_count": 1,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-8d4321d936320802",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "name": "NVIDIA"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-87d5702a58f31351",
+          "funding_insight_id": "FI-ed1d2ba02f527a10",
+          "event_ids": [
+            "EV-e70a48e36e99d57a"
+          ],
+          "company_entity_id": "EN-8d4321d936320802",
+          "company_canonical_entity_id": "EN-8d4321d936320802",
+          "company_name": "NVIDIA",
+          "round": "基础设施融资",
+          "round_code": "infrastructure",
+          "round_original": "基础设施融资",
+          "amount_original": "超过 5000 亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 500000000000,
+            "min_value": 500000000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 5000 亿美元"
+          },
+          "announced_at": "2026-08-15",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
         }
       ]
     },
@@ -45288,6 +46140,242 @@
       ]
     },
     {
+      "id": "INV-0134e819a04b59",
+      "name": "Harlem Capital",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-07-31",
+      "latest_disclosed_at": "2026-07-31",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "seed"
+      ],
+      "activity_count": 1,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-77a82bb9aafc81d9",
+          "canonical_entity_id": "",
+          "name": "Ellis AI"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-9a078e5ba6fedc87",
+          "funding_insight_id": "FI-2b717ea13b12294d",
+          "event_ids": [
+            "EV-13e08bc37724e276"
+          ],
+          "company_entity_id": "EN-77a82bb9aafc81d9",
+          "company_canonical_entity_id": "",
+          "company_name": "Ellis AI",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$10M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 10000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1000 万美元"
+          },
+          "announced_at": "2026-07-31",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-5e366f2b91ec91",
+      "name": "Kearny Jackson",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-07-31",
+      "latest_disclosed_at": "2026-07-31",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "seed"
+      ],
+      "activity_count": 1,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-77a82bb9aafc81d9",
+          "canonical_entity_id": "",
+          "name": "Ellis AI"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-3a1fd1c423a35258",
+          "funding_insight_id": "FI-2b717ea13b12294d",
+          "event_ids": [
+            "EV-13e08bc37724e276"
+          ],
+          "company_entity_id": "EN-77a82bb9aafc81d9",
+          "company_canonical_entity_id": "",
+          "company_name": "Ellis AI",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$10M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 10000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1000 万美元"
+          },
+          "announced_at": "2026-07-31",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-8bcc4c65c7bd18",
+      "name": "Mellody Hobson",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-07-31",
+      "latest_disclosed_at": "2026-07-31",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "seed"
+      ],
+      "activity_count": 1,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-77a82bb9aafc81d9",
+          "canonical_entity_id": "",
+          "name": "Ellis AI"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-e8fd4275e50305b1",
+          "funding_insight_id": "FI-2b717ea13b12294d",
+          "event_ids": [
+            "EV-13e08bc37724e276"
+          ],
+          "company_entity_id": "EN-77a82bb9aafc81d9",
+          "company_canonical_entity_id": "",
+          "company_name": "Ellis AI",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$10M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 10000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1000 万美元"
+          },
+          "announced_at": "2026-07-31",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-002f30af8412f2",
+      "name": "Slow Capital",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-07-31",
+      "latest_disclosed_at": "2026-07-31",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "seed"
+      ],
+      "activity_count": 1,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-77a82bb9aafc81d9",
+          "canonical_entity_id": "",
+          "name": "Ellis AI"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-38eb55da8607f98d",
+          "funding_insight_id": "FI-2b717ea13b12294d",
+          "event_ids": [
+            "EV-13e08bc37724e276"
+          ],
+          "company_entity_id": "EN-77a82bb9aafc81d9",
+          "company_canonical_entity_id": "",
+          "company_name": "Ellis AI",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$10M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 10000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1000 万美元"
+          },
+          "announced_at": "2026-07-31",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
       "id": "INV-280527fa79eacb",
       "name": "Allianz",
       "aliases": [],
@@ -47737,94 +48825,6 @@
           "scope": "current_round",
           "role": "本轮参投",
           "role_code": "participant"
-        }
-      ]
-    },
-    {
-      "id": "INV-4e1e46cb1af197",
-      "name": "First Round Capital",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2025-03-12",
-      "latest_disclosed_at": "2026-07-21",
-      "role_counts": {
-        "co_lead": 1,
-        "historical_or_ambiguous": 1
-      },
-      "round_codes": [
-        "seed"
-      ],
-      "activity_count": 2,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-1c5483264189feef",
-          "canonical_entity_id": "",
-          "name": "Onyx"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-aff864a5313b346c",
-          "funding_insight_id": "FI-c813b159747ac208",
-          "event_ids": [
-            "EV-fcf3c464260b6730"
-          ],
-          "company_entity_id": "EN-7ef08ef63597d47c",
-          "company_canonical_entity_id": "",
-          "company_name": "Gritt",
-          "round": "多轮融资",
-          "round_code": "multi_round",
-          "round_original": "pre-seed and Series A",
-          "amount_original": "$32.4M",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 32400000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3240 万美元"
-          },
-          "announced_at": "2026-07-21",
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "既有投资方",
-          "role_code": "historical_or_ambiguous"
-        },
-        {
-          "activity_id": "IA-f96c33395a59516a",
-          "funding_insight_id": "FI-a29040155764e60f",
-          "event_ids": [
-            "EV-b348083270be6c65"
-          ],
-          "company_entity_id": "EN-1c5483264189feef",
-          "company_canonical_entity_id": "",
-          "company_name": "Onyx",
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "种子轮",
-          "amount_original": "$10M",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 10000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1000 万美元"
-          },
-          "announced_at": "2025-03-12",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead"
         }
       ]
     },
@@ -65809,14 +66809,14 @@
           "role_code": "historical_or_ambiguous"
         },
         {
-          "activity_id": "IA-5530369fe1598404",
-          "funding_insight_id": "FI-f5103149f04ea6ed",
+          "activity_id": "IA-6cd3d6e7650cfc55",
+          "funding_insight_id": "FI-4c761f22f0ef6d7f",
           "event_ids": [
             "EV-c5d7d88d1aef8edb"
           ],
-          "company_entity_id": "EN-b5251b35f15bedc4",
-          "company_canonical_entity_id": "EN-b5251b35f15bedc4",
-          "company_name": "Moonshot AI",
+          "company_entity_id": "FICO-481243d2f2a235c1",
+          "company_canonical_entity_id": "",
+          "company_name": "月之暗面",
           "round": "轮次未披露",
           "round_code": "undisclosed",
           "round_original": "新一轮",
@@ -67368,66 +68368,6 @@
       ]
     },
     {
-      "id": "INV-78eee895dfcd3f",
-      "name": "OpenAI",
-      "aliases": [],
-      "canonical_entity_id": "EN-7d3194f79e645c42",
-      "investor_kind": "corporate_investor",
-      "investor_kind_label": "企业投资方",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2026-06-10",
-      "latest_disclosed_at": "2026-06-10",
-      "role_counts": {
-        "participant": 1
-      },
-      "round_codes": [
-        "series_a"
-      ],
-      "activity_count": 1,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-b314f58f5f506fd2",
-          "canonical_entity_id": "",
-          "name": "Poetic"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-6d3856f69089c2fc",
-          "funding_insight_id": "FI-da21481e9629e578",
-          "event_ids": [
-            "EV-b1138bccf5ccd86c",
-            "EV-a42e51959c627554"
-          ],
-          "company_entity_id": "EN-b314f58f5f506fd2",
-          "company_canonical_entity_id": "",
-          "company_name": "Poetic",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "A轮",
-          "amount_original": "$50 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 50000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "5000 万美元"
-          },
-          "announced_at": "2026-06-10",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        }
-      ]
-    },
-    {
       "id": "INV-02fbfd02e91f0f",
       "name": "S Capital VC",
       "aliases": [],
@@ -68717,94 +69657,6 @@
             "display_zh": "850 亿美元"
           },
           "announced_at": "2026-06-03",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        }
-      ]
-    },
-    {
-      "id": "INV-2606e5e6453d99",
-      "name": "D1 Capital Partners",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2025-03-03",
-      "latest_disclosed_at": "2026-06-03",
-      "role_counts": {
-        "historical_or_ambiguous": 1,
-        "participant": 1
-      },
-      "round_codes": [
-        "series_e"
-      ],
-      "activity_count": 2,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_entity_id": "EN-c70eca6b0f88f44d",
-          "name": "Anthropic PBC"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-2351223f32d316c4",
-          "funding_insight_id": "FI-082c684e1b4a88c2",
-          "event_ids": [
-            "EV-ef7346378fcf9746"
-          ],
-          "company_entity_id": "EN-e78bdebae031095b",
-          "company_canonical_entity_id": "EN-e78bdebae031095b",
-          "company_name": "SpaceX",
-          "round": "IPO",
-          "round_code": "ipo",
-          "round_original": "IPO",
-          "amount_original": "$75 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 75000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "750 亿美元"
-          },
-          "announced_at": "2026-06-03",
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "既有投资方",
-          "role_code": "historical_or_ambiguous"
-        },
-        {
-          "activity_id": "IA-9873059ecb6224b9",
-          "funding_insight_id": "FI-6601d010adc14dd0",
-          "event_ids": [
-            "EV-78a11d309c3d4e97"
-          ],
-          "company_entity_id": "EN-c70eca6b0f88f44d",
-          "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
-          "company_name": "Anthropic PBC",
-          "round": "E轮",
-          "round_code": "series_e",
-          "round_original": "Series E",
-          "amount_original": "$3.5B",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 3500000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "35 亿美元"
-          },
-          "announced_at": "2025-03-03",
           "disclosure_status": "disclosed",
           "scope": "current_round",
           "role": "本轮参投",
@@ -71716,66 +72568,6 @@
       ]
     },
     {
-      "id": "INV-86402224b56edd",
-      "name": "Brookfield",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2026-05-21",
-      "latest_disclosed_at": "2026-05-21",
-      "role_counts": {
-        "participant": 1
-      },
-      "round_codes": [
-        "series_a"
-      ],
-      "activity_count": 1,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-245f1e177c5169cb",
-          "canonical_entity_id": "",
-          "name": "Hark"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-9679c36b5e07836f",
-          "funding_insight_id": "FI-35b63d84f1f7c2b0",
-          "event_ids": [
-            "EV-450f624a6a6446ce",
-            "EV-44c9a50b99c76a70"
-          ],
-          "company_entity_id": "EN-245f1e177c5169cb",
-          "company_canonical_entity_id": "",
-          "company_name": "Hark",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "Series A",
-          "amount_original": "$700M",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 700000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "7 亿美元"
-          },
-          "announced_at": "2026-05-21",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        }
-      ]
-    },
-    {
       "id": "INV-e06b600d778f9f",
       "name": "Forestay Capital",
       "aliases": [],
@@ -73894,21 +74686,21 @@
       "activity_count": 1,
       "portfolio_companies": [
         {
-          "entity_id": "EN-b5251b35f15bedc4",
-          "canonical_entity_id": "EN-b5251b35f15bedc4",
-          "name": "Moonshot AI"
+          "entity_id": "FICO-481243d2f2a235c1",
+          "canonical_entity_id": "",
+          "name": "月之暗面"
         }
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-15062295d14b861b",
-          "funding_insight_id": "FI-f5103149f04ea6ed",
+          "activity_id": "IA-6548a9eb9b96181d",
+          "funding_insight_id": "FI-4c761f22f0ef6d7f",
           "event_ids": [
             "EV-c5d7d88d1aef8edb"
           ],
-          "company_entity_id": "EN-b5251b35f15bedc4",
-          "company_canonical_entity_id": "EN-b5251b35f15bedc4",
-          "company_name": "Moonshot AI",
+          "company_entity_id": "FICO-481243d2f2a235c1",
+          "company_canonical_entity_id": "",
+          "company_name": "月之暗面",
           "round": "轮次未披露",
           "round_code": "undisclosed",
           "round_original": "新一轮",
@@ -73953,21 +74745,21 @@
       "activity_count": 1,
       "portfolio_companies": [
         {
-          "entity_id": "EN-b5251b35f15bedc4",
-          "canonical_entity_id": "EN-b5251b35f15bedc4",
-          "name": "Moonshot AI"
+          "entity_id": "FICO-481243d2f2a235c1",
+          "canonical_entity_id": "",
+          "name": "月之暗面"
         }
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-84bfa29af3d1bc49",
-          "funding_insight_id": "FI-f5103149f04ea6ed",
+          "activity_id": "IA-9d70a1a2c3a78d27",
+          "funding_insight_id": "FI-4c761f22f0ef6d7f",
           "event_ids": [
             "EV-c5d7d88d1aef8edb"
           ],
-          "company_entity_id": "EN-b5251b35f15bedc4",
-          "company_canonical_entity_id": "EN-b5251b35f15bedc4",
-          "company_name": "Moonshot AI",
+          "company_entity_id": "FICO-481243d2f2a235c1",
+          "company_canonical_entity_id": "",
+          "company_name": "月之暗面",
           "round": "轮次未披露",
           "round_code": "undisclosed",
           "round_original": "新一轮",
@@ -74020,14 +74812,14 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-68a4840348f2062d",
-          "funding_insight_id": "FI-f5103149f04ea6ed",
+          "activity_id": "IA-bee36a134d21bdec",
+          "funding_insight_id": "FI-4c761f22f0ef6d7f",
           "event_ids": [
             "EV-c5d7d88d1aef8edb"
           ],
-          "company_entity_id": "EN-b5251b35f15bedc4",
-          "company_canonical_entity_id": "EN-b5251b35f15bedc4",
-          "company_name": "Moonshot AI",
+          "company_entity_id": "FICO-481243d2f2a235c1",
+          "company_canonical_entity_id": "",
+          "company_name": "月之暗面",
           "round": "轮次未披露",
           "round_code": "undisclosed",
           "round_original": "新一轮",
@@ -74128,21 +74920,21 @@
       "activity_count": 1,
       "portfolio_companies": [
         {
-          "entity_id": "EN-b5251b35f15bedc4",
-          "canonical_entity_id": "EN-b5251b35f15bedc4",
-          "name": "Moonshot AI"
+          "entity_id": "FICO-481243d2f2a235c1",
+          "canonical_entity_id": "",
+          "name": "月之暗面"
         }
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-08cfee43a0da5758",
-          "funding_insight_id": "FI-f5103149f04ea6ed",
+          "activity_id": "IA-a61986cde3e64c47",
+          "funding_insight_id": "FI-4c761f22f0ef6d7f",
           "event_ids": [
             "EV-c5d7d88d1aef8edb"
           ],
-          "company_entity_id": "EN-b5251b35f15bedc4",
-          "company_canonical_entity_id": "EN-b5251b35f15bedc4",
-          "company_name": "Moonshot AI",
+          "company_entity_id": "FICO-481243d2f2a235c1",
+          "company_canonical_entity_id": "",
+          "company_name": "月之暗面",
           "round": "轮次未披露",
           "round_code": "undisclosed",
           "round_original": "新一轮",
@@ -74187,21 +74979,21 @@
       "activity_count": 1,
       "portfolio_companies": [
         {
-          "entity_id": "EN-b5251b35f15bedc4",
-          "canonical_entity_id": "EN-b5251b35f15bedc4",
-          "name": "Moonshot AI"
+          "entity_id": "FICO-481243d2f2a235c1",
+          "canonical_entity_id": "",
+          "name": "月之暗面"
         }
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-9392f050f6975bc3",
-          "funding_insight_id": "FI-f5103149f04ea6ed",
+          "activity_id": "IA-d1f0164b5c56cbf4",
+          "funding_insight_id": "FI-4c761f22f0ef6d7f",
           "event_ids": [
             "EV-c5d7d88d1aef8edb"
           ],
-          "company_entity_id": "EN-b5251b35f15bedc4",
-          "company_canonical_entity_id": "EN-b5251b35f15bedc4",
-          "company_name": "Moonshot AI",
+          "company_entity_id": "FICO-481243d2f2a235c1",
+          "company_canonical_entity_id": "",
+          "company_name": "月之暗面",
           "round": "轮次未披露",
           "round_code": "undisclosed",
           "round_original": "新一轮",
@@ -74246,21 +75038,21 @@
       "activity_count": 1,
       "portfolio_companies": [
         {
-          "entity_id": "EN-b5251b35f15bedc4",
-          "canonical_entity_id": "EN-b5251b35f15bedc4",
-          "name": "Moonshot AI"
+          "entity_id": "FICO-481243d2f2a235c1",
+          "canonical_entity_id": "",
+          "name": "月之暗面"
         }
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-bb1c2bce5fdd047a",
-          "funding_insight_id": "FI-f5103149f04ea6ed",
+          "activity_id": "IA-78e537eff204aa3e",
+          "funding_insight_id": "FI-4c761f22f0ef6d7f",
           "event_ids": [
             "EV-c5d7d88d1aef8edb"
           ],
-          "company_entity_id": "EN-b5251b35f15bedc4",
-          "company_canonical_entity_id": "EN-b5251b35f15bedc4",
-          "company_name": "Moonshot AI",
+          "company_entity_id": "FICO-481243d2f2a235c1",
+          "company_canonical_entity_id": "",
+          "company_name": "月之暗面",
           "round": "轮次未披露",
           "round_code": "undisclosed",
           "round_original": "新一轮",
@@ -75577,65 +76369,6 @@
             "display_zh": "2000 万美元"
           },
           "announced_at": "2026-04-30",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        }
-      ]
-    },
-    {
-      "id": "INV-9e57556db74459",
-      "name": "645 Ventures",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2026-04-29",
-      "latest_disclosed_at": "2026-04-29",
-      "role_counts": {
-        "participant": 1
-      },
-      "round_codes": [
-        "seed"
-      ],
-      "activity_count": 1,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-1050efc9e13624b2",
-          "canonical_entity_id": "",
-          "name": "General Analysis"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-5cf032208a5f4b85",
-          "funding_insight_id": "FI-fecb7f6a77985938",
-          "event_ids": [
-            "EV-61546e58c0e669e7"
-          ],
-          "company_entity_id": "EN-1050efc9e13624b2",
-          "company_canonical_entity_id": "",
-          "company_name": "General Analysis",
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "种子轮",
-          "amount_original": "$10 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 10000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1000 万美元"
-          },
-          "announced_at": "2026-04-29",
           "disclosure_status": "disclosed",
           "scope": "current_round",
           "role": "本轮参投",
@@ -79563,65 +80296,6 @@
           "scope": "current_round",
           "role": "本轮天使投资人",
           "role_code": "other_current_round"
-        }
-      ]
-    },
-    {
-      "id": "INV-b3dd2d4428d2f2",
-      "name": "SoftBank",
-      "aliases": [],
-      "canonical_entity_id": "EN-80d387ccb3289295",
-      "investor_kind": "corporate_investor",
-      "investor_kind_label": "企业投资方",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2026-03-31",
-      "latest_disclosed_at": "2026-03-31",
-      "role_counts": {
-        "co_lead": 1
-      },
-      "round_codes": [
-        "series_f"
-      ],
-      "activity_count": 1,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-7d3194f79e645c42",
-          "canonical_entity_id": "EN-7d3194f79e645c42",
-          "name": "OpenAI"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-88432584516f6aff",
-          "funding_insight_id": "FI-b76fffbf5d0d91bd",
-          "event_ids": [
-            "EV-d4e44892226be468"
-          ],
-          "company_entity_id": "EN-7d3194f79e645c42",
-          "company_canonical_entity_id": "EN-7d3194f79e645c42",
-          "company_name": "OpenAI",
-          "round": "F轮",
-          "round_code": "series_f",
-          "round_original": "Series F",
-          "amount_original": "$1220亿",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 122000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1220 亿美元"
-          },
-          "announced_at": "2026-03-31",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead"
         }
       ]
     },
@@ -100579,14 +101253,14 @@
       "portfolio_companies": [],
       "latest_activities": [
         {
-          "activity_id": "IA-dccce8c05ad02b14",
-          "funding_insight_id": "FI-f5103149f04ea6ed",
+          "activity_id": "IA-d8d2b6a1bd789781",
+          "funding_insight_id": "FI-4c761f22f0ef6d7f",
           "event_ids": [
             "EV-c5d7d88d1aef8edb"
           ],
-          "company_entity_id": "EN-b5251b35f15bedc4",
-          "company_canonical_entity_id": "EN-b5251b35f15bedc4",
-          "company_name": "Moonshot AI",
+          "company_entity_id": "FICO-481243d2f2a235c1",
+          "company_canonical_entity_id": "",
+          "company_name": "月之暗面",
           "round": "轮次未披露",
           "round_code": "undisclosed",
           "round_original": "新一轮",
@@ -100630,14 +101304,14 @@
       "portfolio_companies": [],
       "latest_activities": [
         {
-          "activity_id": "IA-e0374852f0167442",
-          "funding_insight_id": "FI-f5103149f04ea6ed",
+          "activity_id": "IA-50004477c1e83309",
+          "funding_insight_id": "FI-4c761f22f0ef6d7f",
           "event_ids": [
             "EV-c5d7d88d1aef8edb"
           ],
-          "company_entity_id": "EN-b5251b35f15bedc4",
-          "company_canonical_entity_id": "EN-b5251b35f15bedc4",
-          "company_name": "Moonshot AI",
+          "company_entity_id": "FICO-481243d2f2a235c1",
+          "company_canonical_entity_id": "",
+          "company_name": "月之暗面",
           "round": "轮次未披露",
           "round_code": "undisclosed",
           "round_original": "新一轮",
@@ -100709,14 +101383,14 @@
       "portfolio_companies": [],
       "latest_activities": [
         {
-          "activity_id": "IA-eaea96f59000952a",
-          "funding_insight_id": "FI-f5103149f04ea6ed",
+          "activity_id": "IA-4806e50f2304f1ec",
+          "funding_insight_id": "FI-4c761f22f0ef6d7f",
           "event_ids": [
             "EV-c5d7d88d1aef8edb"
           ],
-          "company_entity_id": "EN-b5251b35f15bedc4",
-          "company_canonical_entity_id": "EN-b5251b35f15bedc4",
-          "company_name": "Moonshot AI",
+          "company_entity_id": "FICO-481243d2f2a235c1",
+          "company_canonical_entity_id": "",
+          "company_name": "月之暗面",
           "round": "轮次未披露",
           "round_code": "undisclosed",
           "round_original": "新一轮",
@@ -100788,14 +101462,14 @@
       "portfolio_companies": [],
       "latest_activities": [
         {
-          "activity_id": "IA-6d22ec60bb319083",
-          "funding_insight_id": "FI-f5103149f04ea6ed",
+          "activity_id": "IA-47a650cfdeb17843",
+          "funding_insight_id": "FI-4c761f22f0ef6d7f",
           "event_ids": [
             "EV-c5d7d88d1aef8edb"
           ],
-          "company_entity_id": "EN-b5251b35f15bedc4",
-          "company_canonical_entity_id": "EN-b5251b35f15bedc4",
-          "company_name": "Moonshot AI",
+          "company_entity_id": "FICO-481243d2f2a235c1",
+          "company_canonical_entity_id": "",
+          "company_name": "月之暗面",
           "round": "轮次未披露",
           "round_code": "undisclosed",
           "round_original": "新一轮",
@@ -100839,14 +101513,14 @@
       "portfolio_companies": [],
       "latest_activities": [
         {
-          "activity_id": "IA-03d22d7aa17659d1",
-          "funding_insight_id": "FI-f5103149f04ea6ed",
+          "activity_id": "IA-9e024f6f411f12cd",
+          "funding_insight_id": "FI-4c761f22f0ef6d7f",
           "event_ids": [
             "EV-c5d7d88d1aef8edb"
           ],
-          "company_entity_id": "EN-b5251b35f15bedc4",
-          "company_canonical_entity_id": "EN-b5251b35f15bedc4",
-          "company_name": "Moonshot AI",
+          "company_entity_id": "FICO-481243d2f2a235c1",
+          "company_canonical_entity_id": "",
+          "company_name": "月之暗面",
           "round": "轮次未披露",
           "round_code": "undisclosed",
           "round_original": "新一轮",
@@ -100890,14 +101564,14 @@
       "portfolio_companies": [],
       "latest_activities": [
         {
-          "activity_id": "IA-8945e18adbc9e232",
-          "funding_insight_id": "FI-f5103149f04ea6ed",
+          "activity_id": "IA-b485f0fa2824a363",
+          "funding_insight_id": "FI-4c761f22f0ef6d7f",
           "event_ids": [
             "EV-c5d7d88d1aef8edb"
           ],
-          "company_entity_id": "EN-b5251b35f15bedc4",
-          "company_canonical_entity_id": "EN-b5251b35f15bedc4",
-          "company_name": "Moonshot AI",
+          "company_entity_id": "FICO-481243d2f2a235c1",
+          "company_canonical_entity_id": "",
+          "company_name": "月之暗面",
           "round": "轮次未披露",
           "round_code": "undisclosed",
           "round_original": "新一轮",
@@ -100969,14 +101643,14 @@
       "portfolio_companies": [],
       "latest_activities": [
         {
-          "activity_id": "IA-8ea5ad7e82e414a6",
-          "funding_insight_id": "FI-f5103149f04ea6ed",
+          "activity_id": "IA-a4f9dfa787bd4ca1",
+          "funding_insight_id": "FI-4c761f22f0ef6d7f",
           "event_ids": [
             "EV-c5d7d88d1aef8edb"
           ],
-          "company_entity_id": "EN-b5251b35f15bedc4",
-          "company_canonical_entity_id": "EN-b5251b35f15bedc4",
-          "company_name": "Moonshot AI",
+          "company_entity_id": "FICO-481243d2f2a235c1",
+          "company_canonical_entity_id": "",
+          "company_name": "月之暗面",
           "round": "轮次未披露",
           "round_code": "undisclosed",
           "round_original": "新一轮",

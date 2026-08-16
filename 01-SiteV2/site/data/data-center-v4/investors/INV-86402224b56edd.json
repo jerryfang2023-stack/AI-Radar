@@ -20,15 +20,16 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "first_disclosed_at": "2026-05-21",
-    "latest_disclosed_at": "2026-05-21",
+    "latest_disclosed_at": "2026-08-15",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "infrastructure",
       "series_a"
     ],
     "portfolio_companies": [
@@ -36,9 +37,52 @@
         "entity_id": "EN-245f1e177c5169cb",
         "canonical_entity_id": "",
         "name": "Hark"
+      },
+      {
+        "entity_id": "EN-8d4321d936320802",
+        "canonical_entity_id": "EN-8d4321d936320802",
+        "name": "NVIDIA"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-bdf925ead72d8b76",
+        "funding_insight_id": "FI-ed1d2ba02f527a10",
+        "event_ids": [
+          "EV-e70a48e36e99d57a"
+        ],
+        "company_entity_id": "EN-8d4321d936320802",
+        "company_canonical_entity_id": "EN-8d4321d936320802",
+        "company_name": "NVIDIA",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "超过 5000 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000000,
+          "min_value": 500000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 5000 亿美元"
+        },
+        "announced_at": "2026-08-15",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-5514041be03e64ae",
+            "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Partners-With-Apollo-BlackRock-Blackstone-Brookfield-Goldman-Sachs-and-KKR-to-Establish-AI-Compute-Infrastructure-Financing-Platforms-to-Mobilize-Over-500-Billion-of-Third-Party-Capital/default.aspx",
+            "source_title": "NVIDIA Corporation - NVIDIA Partners With Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to Establish AI Compute Infrastructure Financing Platforms to Mobilize Over $500 Billion of Third-Party Capital",
+            "source_content_hash": "281ec3c5199ae992",
+            "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
+            "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9679c36b5e07836f",
         "funding_insight_id": "FI-35b63d84f1f7c2b0",
@@ -80,6 +124,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-5514041be03e64ae",
+        "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Partners-With-Apollo-BlackRock-Blackstone-Brookfield-Goldman-Sachs-and-KKR-to-Establish-AI-Compute-Infrastructure-Financing-Platforms-to-Mobilize-Over-500-Billion-of-Third-Party-Capital/default.aspx",
+        "source_title": "NVIDIA Corporation - NVIDIA Partners With Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to Establish AI Compute Infrastructure Financing Platforms to Mobilize Over $500 Billion of Third-Party Capital",
+        "source_content_hash": "281ec3c5199ae992",
+        "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
+        "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
+      },
       {
         "source_id": "FISRC-9b94f245fa27a161",
         "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",

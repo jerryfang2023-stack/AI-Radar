@@ -20,17 +20,19 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "first_disclosed_at": "2026-04",
-    "latest_disclosed_at": "2026-08-04",
+    "latest_disclosed_at": "2026-08-12",
     "role_counts": {
-      "co_lead": 2
+      "co_lead": 2,
+      "participant": 1
     },
     "round_codes": [
       "seed",
-      "series_a"
+      "series_a",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
@@ -39,12 +41,55 @@
         "name": "Elorian"
       },
       {
+        "entity_id": "EN-f970fd34532919fe",
+        "canonical_entity_id": "",
+        "name": "Thrive Holdings"
+      },
+      {
         "entity_id": "EN-6fae0bc5a895aab8",
         "canonical_entity_id": "",
         "name": "Volta Infra Holdings Ltd."
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-865b963eb4bb518d",
+        "funding_insight_id": "FI-208f5f069010d44d",
+        "event_ids": [
+          "EV-df8954acf9a13848"
+        ],
+        "company_entity_id": "EN-f970fd34532919fe",
+        "company_canonical_entity_id": "",
+        "company_name": "Thrive Holdings",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮融资",
+        "amount_original": "$2B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿美元"
+        },
+        "announced_at": "2026-08-12",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0afb458e7b0878f0",
+            "source_url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
+            "source_title": "OpenAI 支持的 Thrive Holdings 融资 20 亿美元，将 AI 引入企业",
+            "source_content_hash": "250a43fbc91f9ea0",
+            "quote": "Thrive Holdings has raised $2 billion in new funding at a $12 billion valuation from investors like SoftBank, D1 Capital Partners, and Altimeter Capital.",
+            "quote_hash": "a1f1ea1feea484049efc821f79057e1e10e6177b4bd58b27c192684f9562376c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ab81a76fd56729ae",
         "funding_insight_id": "FI-718b8020e0e74b3d",
@@ -123,6 +168,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-0afb458e7b0878f0",
+        "source_url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
+        "source_title": "OpenAI 支持的 Thrive Holdings 融资 20 亿美元，将 AI 引入企业",
+        "source_content_hash": "250a43fbc91f9ea0",
+        "quote": "Thrive Holdings has raised $2 billion in new funding at a $12 billion valuation from investors like SoftBank, D1 Capital Partners, and Altimeter Capital.",
+        "quote_hash": "a1f1ea1feea484049efc821f79057e1e10e6177b4bd58b27c192684f9562376c"
+      },
       {
         "source_id": "FISRC-21a1d5a2dbf2a3b1",
         "source_url": "https://news.bloomberglaw.com/artificial-intelligence/nvidia-dell-back-ai-cloud-startup-volta-at-2-4-billion-value",
