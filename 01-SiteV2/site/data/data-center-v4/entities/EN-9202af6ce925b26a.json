@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-16T00:25:48.999Z",
+    "latestDataDate": "2026-08-16",
+    "currentDate": "2026-08-16",
+    "eventCount": 2150,
+    "quarantinedEventCount": 19
+  },
+  "entity": {
+    "id": "EN-9202af6ce925b26a",
+    "name": "Oracle",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-4f0f7d0b05d34598"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-13",
+    "lastSeen": "2026-08-16",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-4f0f7d0b05d34598"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-4f0f7d0b05d34598",
+        "dataDate": "2026-08-16",
+        "date": "2026-08-13",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "甲骨文与AWS深化战略合作，企业采用Oracle AI Database@AWS加速",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9202af6ce925b26a",
+          "EN-ac6aafe583c90b2d",
+          "EN-cbc62794911ff31b"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-723b882e385198d1",
+      "eventId": "EV-4f0f7d0b05d34598",
+      "dataDate": "2026-08-16",
+      "date": "2026-08-13",
+      "title": "甲骨文与AWS深化战略合作，企业采用Oracle AI Database@AWS加速",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Oracle",
+      "vendor": "Amazon",
+      "industry": "未披露",
+      "useCase": "as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://oracle.com/news/announcement/oracle-and-aws-deepen-strategic-collaboration-as-enterprise-adoption-of-oracle-ai-database-at-aws-accelerates-2026-08-13",
+      "entityIds": [
+        "EN-9202af6ce925b26a",
+        "EN-ac6aafe583c90b2d",
+        "EN-cbc62794911ff31b"
+      ]
+    }
+  ],
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-4402094ebe0b4363",
+      "implementationKey": "4402094ebe0b4363",
+      "eventId": "EV-4f0f7d0b05d34598",
+      "eventIds": [
+        "EV-4f0f7d0b05d34598"
+      ],
+      "dataDate": "2026-08-16",
+      "date": "2026-08-13",
+      "title": "Oracle × Amazon：as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Oracle",
+      "vendor": "Amazon",
+      "industry": "未披露",
+      "useCase": "as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-2bfa0131ce161410",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-13",
+          "dataDate": "2026-08-16",
+          "eventId": "EV-4f0f7d0b05d34598",
+          "eventTitle": "甲骨文与AWS深化战略合作，企业采用Oracle AI Database@AWS加速",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://oracle.com/news/announcement/oracle-and-aws-deepen-strategic-collaboration-as-enterprise-adoption-of-oracle-ai-database-at-aws-accelerates-2026-08-13",
+      "entityIds": [
+        "EN-9202af6ce925b26a",
+        "EN-ac6aafe583c90b2d",
+        "EN-cbc62794911ff31b"
+      ]
+    }
+  ]
+}

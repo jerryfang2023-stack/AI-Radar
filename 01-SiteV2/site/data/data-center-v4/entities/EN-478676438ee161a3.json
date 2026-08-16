@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-15T04:37:54.461Z",
-    "latestDataDate": "2026-08-15",
-    "currentDate": "2026-08-15",
-    "eventCount": 2120,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-08-16T00:25:48.999Z",
+    "latestDataDate": "2026-08-16",
+    "currentDate": "2026-08-16",
+    "eventCount": 2150,
+    "quarantinedEventCount": 19
   },
   "entity": {
     "id": "EN-478676438ee161a3",
@@ -33,7 +33,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-03",
-    "lastSeen": "2026-08-15",
+    "lastSeen": "2026-08-16",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -52,7 +52,7 @@
     "timeline": [
       {
         "id": "EV-5ede0f85a672441c",
-        "dataDate": "2026-08-15",
+        "dataDate": "2026-08-16",
         "date": "2026-08-14",
         "eventType": "product_release",
         "eventTypeLabel": "产品发布",
@@ -181,6 +181,7 @@
       "typeLabel": "应用场景",
       "valueId": "physical_automation",
       "eventIds": [
+        "EV-1765fd690cff1cac",
         "EV-b116eafe60d71fbe",
         "EV-dc35d54f273196f0",
         "EV-268e5c3d36e3ed28",
@@ -272,6 +273,7 @@
         "EV-ad64347138da72bb"
       ],
       "entityIds": [
+        "EN-2505fe8a9e908e04",
         "EN-373da2ec629326c0",
         "EN-e6f19fa7a6b52367",
         "EN-5f5ed85925074c92",
@@ -353,7 +355,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-15"
+      "lastSeen": "2026-08-16"
     }
   ],
   "fde": [],
@@ -362,13 +364,13 @@
     {
       "id": "HWC-0b534eaa4b846780",
       "snapshotKey": "0b534eaa4b846780",
-      "snapshotId": "HWS-954509ae3f9763b5",
+      "snapshotId": "HWS-3bb2f4b05c20514a",
       "eventId": "EV-5ede0f85a672441c",
       "eventIds": [
         "EV-5ede0f85a672441c"
       ],
-      "dataDate": "2026-08-15",
-      "date": "2026-08-15",
+      "dataDate": "2026-08-16",
+      "date": "2026-08-16",
       "title": "Harness",
       "subject": "派早报",
       "productNames": [
@@ -382,18 +384,28 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-e457b3055f68c9b9"
+          "fact_ref": "HWF-1c6dab6a1f266fa8"
         }
       },
       "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-16",
+          "previousDate": "2026-08-15",
+          "snapshotId": "HWS-3bb2f4b05c20514a",
+          "previousSnapshotId": "HWS-954509ae3f9763b5",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-15",
-          "hardware_fact_id": "HWF-e457b3055f68c9b9",
+          "data_date": "2026-08-16",
+          "hardware_fact_id": "HWF-1c6dab6a1f266fa8",
           "fact_type": "product",
           "observed_at": "2026-08-14T00:52:24.000Z",
           "subject_entity_id": "EN-478676438ee161a3",
@@ -411,11 +423,11 @@
           "event_refs": [
             "EV-5ede0f85a672441c"
           ],
-          "claim_ref": "CL-547fe6aaab83689e",
+          "claim_ref": "CL-c17ccaf36da5c6ca",
           "source_refs": [
-            "SA-62f22d95e80b4948"
+            "SA-cc37fee199882b81"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-15/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-16/hardware-facts.json"
         }
       ],
       "capexFacts": [],

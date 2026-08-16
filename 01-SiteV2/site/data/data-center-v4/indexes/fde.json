@@ -5,17 +5,17 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-15T06:28:44.051Z",
-    "latestDataDate": "2026-08-15",
-    "currentDate": "2026-08-15",
-    "eventCount": 2129,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-08-16T00:25:48.999Z",
+    "latestDataDate": "2026-08-16",
+    "currentDate": "2026-08-16",
+    "eventCount": 2150,
+    "quarantinedEventCount": 19
   },
   "fde": [
     {
       "id": "FDE-b093649016ddce0b",
       "eventId": "EV-0fc718ab409cdcf5",
-      "dataDate": "2026-08-15",
+      "dataDate": "2026-08-16",
       "date": "2026-08-15",
       "title": "DeepSeek V4 Pro 正式版与 Harness 智能体框架上线国家超算互联网",
       "stage": "completed",
@@ -74,9 +74,95 @@
       ]
     },
     {
+      "id": "FDE-723b882e385198d1",
+      "eventId": "EV-4f0f7d0b05d34598",
+      "dataDate": "2026-08-16",
+      "date": "2026-08-13",
+      "title": "甲骨文与AWS深化战略合作，企业采用Oracle AI Database@AWS加速",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Oracle",
+      "vendor": "Amazon",
+      "industry": "未披露",
+      "useCase": "as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://oracle.com/news/announcement/oracle-and-aws-deepen-strategic-collaboration-as-enterprise-adoption-of-oracle-ai-database-at-aws-accelerates-2026-08-13",
+      "entityIds": [
+        "EN-9202af6ce925b26a",
+        "EN-ac6aafe583c90b2d",
+        "EN-cbc62794911ff31b"
+      ]
+    },
+    {
+      "id": "FDE-ed781e27a7b9458e",
+      "eventId": "EV-129ffa6be41bb485",
+      "dataDate": "2026-08-16",
+      "date": "2026-08-13",
+      "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "IBM",
+      "vendor": "OpenAI",
+      "industry": "未披露",
+      "useCase": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR.",
+        "The companies plan to help clients modernize legacy applications and accelerate software development by bringing together OpenAI Codex and ChatGPT Work with IBM&rsquo;s industry, technology and domain expertise, including integration with IBM Consulting Advantage. The collaboration is designed to help organizations simplify engineering processes and speed the delivery of new digital products and services."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations",
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-7d3194f79e645c42"
+      ]
+    },
+    {
       "id": "FDE-34bcdf91ba37fced",
       "eventId": "EV-2f54f55d7b02fa69",
-      "dataDate": "2026-08-15",
+      "dataDate": "2026-08-16",
       "date": "2026-08-12",
       "title": "Keywell.ai与Carahsoft合作，为州、地方及公共医疗机构带来受治理的AI工作流自动化",
       "stage": "announced",
@@ -177,55 +263,6 @@
         "EN-4c06fff8651d4ff4",
         "EN-7d3194f79e645c42",
         "EN-c70eca6b0f88f44d"
-      ]
-    },
-    {
-      "id": "FDE-ed781e27a7b9458e",
-      "eventId": "EV-129ffa6be41bb485",
-      "dataDate": "2026-08-14",
-      "date": "2026-08-13",
-      "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "IBM",
-      "vendor": "OpenAI",
-      "industry": "未披露",
-      "useCase": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR.",
-        "The companies plan to help clients modernize legacy applications and accelerate software development by bringing together OpenAI Codex and ChatGPT Work with IBM&rsquo;s industry, technology and domain expertise, including integration with IBM Consulting Advantage. The collaboration is designed to help organizations simplify engineering processes and speed the delivery of new digital products and services."
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-916a98f0fa2a39af"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "sourceUrl": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations",
-      "entityIds": [
-        "EN-916a98f0fa2a39af",
-        "EN-7d3194f79e645c42"
       ]
     },
     {
@@ -5796,7 +5833,7 @@
       "eventIds": [
         "EV-0fc718ab409cdcf5"
       ],
-      "dataDate": "2026-08-15",
+      "dataDate": "2026-08-16",
       "date": "2026-08-15",
       "title": "未披露 × 未披露：国家超算互联网",
       "stage": "completed",
@@ -5808,7 +5845,7 @@
       "workflow": "未披露",
       "systems": [],
       "outcomes": [],
-      "observationCount": 1,
+      "observationCount": 2,
       "completeness": 0.25,
       "completenessPercent": 25,
       "missingFields": [
@@ -5820,6 +5857,17 @@
         "reported_outcomes"
       ],
       "timeline": [
+        {
+          "observationId": "FDEO-23baa944bee41d25",
+          "type": "implementation_update",
+          "stage": "completed",
+          "date": "2026-08-15",
+          "dataDate": "2026-08-16",
+          "eventId": "EV-0fc718ab409cdcf5",
+          "eventTitle": "DeepSeek V4 Pro 正式版与 Harness 智能体框架上线国家超算互联网",
+          "claimCount": 4,
+          "sourceCount": 1
+        },
         {
           "observationId": "FDEO-a3cdecaba70e8a90",
           "type": "implementation_update",
@@ -5859,13 +5907,134 @@
       ]
     },
     {
+      "id": "FDED-4402094ebe0b4363",
+      "implementationKey": "4402094ebe0b4363",
+      "eventId": "EV-4f0f7d0b05d34598",
+      "eventIds": [
+        "EV-4f0f7d0b05d34598"
+      ],
+      "dataDate": "2026-08-16",
+      "date": "2026-08-13",
+      "title": "Oracle × Amazon：as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Oracle",
+      "vendor": "Amazon",
+      "industry": "未披露",
+      "useCase": "as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-2bfa0131ce161410",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-13",
+          "dataDate": "2026-08-16",
+          "eventId": "EV-4f0f7d0b05d34598",
+          "eventTitle": "甲骨文与AWS深化战略合作，企业采用Oracle AI Database@AWS加速",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://oracle.com/news/announcement/oracle-and-aws-deepen-strategic-collaboration-as-enterprise-adoption-of-oracle-ai-database-at-aws-accelerates-2026-08-13",
+      "entityIds": [
+        "EN-9202af6ce925b26a",
+        "EN-ac6aafe583c90b2d",
+        "EN-cbc62794911ff31b"
+      ]
+    },
+    {
+      "id": "FDED-5bc72342f3066892",
+      "implementationKey": "5bc72342f3066892",
+      "eventId": "EV-129ffa6be41bb485",
+      "eventIds": [
+        "EV-129ffa6be41bb485"
+      ],
+      "dataDate": "2026-08-16",
+      "date": "2026-08-13",
+      "title": "IBM × OpenAI：OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "stage": "procurement",
+      "stageLabel": "procurement",
+      "customer": "IBM",
+      "vendor": "OpenAI",
+      "industry": "未披露",
+      "useCase": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "workflow": "未披露",
+      "systems": [
+        "ChatGPT"
+      ],
+      "outcomes": [],
+      "observationCount": 2,
+      "completeness": 0.625,
+      "completenessPercent": 63,
+      "missingFields": [
+        "industry",
+        "workflow",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-2674c718156c88ba",
+          "type": "procurement",
+          "stage": "procurement",
+          "date": "2026-08-13",
+          "dataDate": "2026-08-16",
+          "eventId": "EV-129ffa6be41bb485",
+          "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+          "claimCount": 4,
+          "sourceCount": 1
+        },
+        {
+          "observationId": "FDEO-52e02e22bcd8cd7f",
+          "type": "procurement",
+          "stage": "procurement",
+          "date": "2026-08-13",
+          "dataDate": "2026-08-14",
+          "eventId": "EV-129ffa6be41bb485",
+          "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations",
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-7d3194f79e645c42"
+      ]
+    },
+    {
       "id": "FDED-2b3e79510a02e590",
       "implementationKey": "2b3e79510a02e590",
       "eventId": "EV-2f54f55d7b02fa69",
       "eventIds": [
         "EV-2f54f55d7b02fa69"
       ],
-      "dataDate": "2026-08-15",
+      "dataDate": "2026-08-16",
       "date": "2026-08-12",
       "title": "Keywell.ai × 未披露：Carahsoft Technology Corp.",
       "stage": "announced",
@@ -5877,7 +6046,7 @@
       "workflow": "Keywell.ai , the AI operational scaffolding platform for HIPAA-compliant workflow automation in healthcare and Government, and Carahsoft Technology Corp. , The Trusted Government IT Solutions Provider &reg; , today announced a partnership.",
       "systems": [],
       "outcomes": [],
-      "observationCount": 2,
+      "observationCount": 3,
       "completeness": 0.5,
       "completenessPercent": 50,
       "missingFields": [
@@ -5887,6 +6056,17 @@
         "reported_outcomes"
       ],
       "timeline": [
+        {
+          "observationId": "FDEO-d22e422ef5140277",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-12",
+          "dataDate": "2026-08-16",
+          "eventId": "EV-2f54f55d7b02fa69",
+          "eventTitle": "Keywell.ai与Carahsoft合作，为州、地方及公共医疗机构带来受治理的AI工作流自动化",
+          "claimCount": 1,
+          "sourceCount": 1
+        },
         {
           "observationId": "FDEO-af2e9984ba5307ec",
           "type": "implementation_update",
@@ -5961,67 +6141,6 @@
       "entityIds": [
         "EN-70d4ee85fc4c8398",
         "EN-dca6ec9510fc0176"
-      ]
-    },
-    {
-      "id": "FDED-5bc72342f3066892",
-      "implementationKey": "5bc72342f3066892",
-      "eventId": "EV-129ffa6be41bb485",
-      "eventIds": [
-        "EV-129ffa6be41bb485"
-      ],
-      "dataDate": "2026-08-14",
-      "date": "2026-08-13",
-      "title": "IBM × OpenAI：OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-      "stage": "procurement",
-      "stageLabel": "procurement",
-      "customer": "IBM",
-      "vendor": "OpenAI",
-      "industry": "未披露",
-      "useCase": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-      "workflow": "未披露",
-      "systems": [
-        "ChatGPT"
-      ],
-      "outcomes": [],
-      "observationCount": 1,
-      "completeness": 0.625,
-      "completenessPercent": 63,
-      "missingFields": [
-        "industry",
-        "workflow",
-        "reported_outcomes"
-      ],
-      "timeline": [
-        {
-          "observationId": "FDEO-52e02e22bcd8cd7f",
-          "type": "procurement",
-          "stage": "procurement",
-          "date": "2026-08-13",
-          "dataDate": "2026-08-14",
-          "eventId": "EV-129ffa6be41bb485",
-          "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
-          "claimCount": 4,
-          "sourceCount": 1
-        }
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-916a98f0fa2a39af"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "sourceUrl": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations",
-      "entityIds": [
-        "EN-916a98f0fa2a39af",
-        "EN-7d3194f79e645c42"
       ]
     },
     {
@@ -7239,39 +7358,37 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-08-15",
-      "funnel_id": "LF-8d4b47fdb1dde5f8",
+      "data_date": "2026-08-16",
+      "funnel_id": "LF-bc8aea5fb395d9dc",
       "lens": "fde",
-      "date": "2026-08-15",
+      "date": "2026-08-16",
       "monitoring_paths": [
         "fde_customer_case",
         "fde_earnings_disclosure",
         "fde_procurement_contract",
         "fde_production_rollout"
       ],
-      "raw_documents": 99,
-      "original_sources": 88,
-      "valid_claims": 31,
-      "observations": 3,
-      "canonical_events": 11,
+      "raw_documents": 108,
+      "original_sources": 100,
+      "valid_claims": 45,
+      "observations": 4,
+      "canonical_events": 15,
       "blocker_counts": {
-        "no_source_bounded_event": 9,
-        "non_event_or_index_title": 6,
-        "source_outside_daily_window": 56,
-        "source_published_after_data_date": 2,
-        "tag_or_topic_index_not_event_source": 1,
+        "source_outside_daily_window": 62,
+        "event_not_ai_relevant": 4,
+        "no_source_bounded_event": 11,
+        "source_published_after_data_date": 3,
         "repository_page_requires_release_source": 1,
-        "question_headline_not_event_specific": 1,
-        "event_not_ai_relevant": 1,
-        "raw_source_quality_block": 11
+        "non_event_or_index_title": 4,
+        "raw_source_quality_block": 8
       },
       "rates": {
-        "original_source_rate": 0.8888888888888888,
-        "valid_claim_rate": 0.31313131313131315,
-        "observation_rate": 0.0967741935483871,
-        "event_conversion_rate": 0.3548387096774194
+        "original_source_rate": 0.9259259259259259,
+        "valid_claim_rate": 0.4166666666666667,
+        "observation_rate": 0.08888888888888889,
+        "event_conversion_rate": 0.3333333333333333
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-15/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-16/monitoring-funnel.json"
     }
   ]
 }

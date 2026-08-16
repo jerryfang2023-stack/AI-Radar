@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-15T06:28:44.051Z",
-    "latestDataDate": "2026-08-15",
-    "currentDate": "2026-08-15",
-    "eventCount": 2129,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-08-16T00:25:48.999Z",
+    "latestDataDate": "2026-08-16",
+    "currentDate": "2026-08-16",
+    "eventCount": 2150,
+    "quarantinedEventCount": 19
   },
   "entity": {
     "id": "EN-0b79cf2de0ee6b8e",
@@ -26,12 +26,12 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
+      "TX-deployment_model-cloud",
       "TX-ai_market_category-infrastructure_compute",
       "TX-target_user-developer",
       "TX-ai_market_subcategory-hardware_computing",
       "TX-ai_market_application-computing_infrastructure",
-      "TX-product_form-compute_cloud_service",
-      "TX-deployment_model-cloud"
+      "TX-product_form-compute_cloud_service"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-23",
@@ -143,6 +143,40 @@
   "relatedEntities": [],
   "relationships": [],
   "taxonomyNodes": [
+    {
+      "id": "TX-deployment_model-cloud",
+      "name": "云端",
+      "nodeType": "deployment_model",
+      "typeLabel": "部署形态",
+      "valueId": "cloud",
+      "eventIds": [
+        "EV-e70a48e36e99d57a",
+        "EV-4118202ed0f91895",
+        "EV-4fba2b2f1ac10a79",
+        "EV-b4b5d141dac164c2",
+        "EV-29c0d969abde2020",
+        "EV-3dc8d5c373ddd1f3",
+        "EV-fec9e1b9ae2955ee",
+        "EV-c0d8138d8cab5135",
+        "EV-7fb25ff3d853c314",
+        "EV-20cdbe59ba2a1359",
+        "EV-309ea4fc27a66485"
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-0b79cf2de0ee6b8e",
+        "EN-c7d7af20b6ab853d",
+        "EN-ea3bd73e2b506e00",
+        "EN-74be4cbf48e647b2",
+        "EN-2613d360c34cdc8c",
+        "EN-842fcb5e60989a03",
+        "EN-6f4e2e93ad6de7f1"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-03",
+      "lastSeen": "2026-08-16"
+    },
     {
       "id": "TX-ai_market_category-infrastructure_compute",
       "name": "基础设施与算力",
@@ -423,7 +457,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-15"
+      "lastSeen": "2026-08-16"
     },
     {
       "id": "TX-target_user-developer",
@@ -758,7 +792,7 @@
         "HW-304c6370cc157449"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-15"
+      "lastSeen": "2026-08-16"
     },
     {
       "id": "TX-ai_market_subcategory-hardware_computing",
@@ -845,7 +879,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-08",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-16"
     },
     {
       "id": "TX-ai_market_application-computing_infrastructure",
@@ -951,40 +985,7 @@
         "HW-9a39a7f449362f96"
       ],
       "firstSeen": "2026-04-30",
-      "lastSeen": "2026-08-15"
-    },
-    {
-      "id": "TX-deployment_model-cloud",
-      "name": "云端",
-      "nodeType": "deployment_model",
-      "typeLabel": "部署形态",
-      "valueId": "cloud",
-      "eventIds": [
-        "EV-4118202ed0f91895",
-        "EV-4fba2b2f1ac10a79",
-        "EV-b4b5d141dac164c2",
-        "EV-29c0d969abde2020",
-        "EV-3dc8d5c373ddd1f3",
-        "EV-fec9e1b9ae2955ee",
-        "EV-c0d8138d8cab5135",
-        "EV-7fb25ff3d853c314",
-        "EV-20cdbe59ba2a1359",
-        "EV-309ea4fc27a66485"
-      ],
-      "entityIds": [
-        "EN-0b79cf2de0ee6b8e",
-        "EN-c7d7af20b6ab853d",
-        "EN-ea3bd73e2b506e00",
-        "EN-74be4cbf48e647b2",
-        "EN-2613d360c34cdc8c",
-        "EN-842fcb5e60989a03",
-        "EN-6f4e2e93ad6de7f1",
-        "EN-8d4321d936320802"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-06-03",
-      "lastSeen": "2026-08-11"
+      "lastSeen": "2026-08-16"
     }
   ],
   "fde": [],
