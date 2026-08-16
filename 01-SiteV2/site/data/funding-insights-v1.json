@@ -639,14 +639,38 @@
         ],
         "related_direction_id": "",
         "taxonomy_version": "TAG-V4.1",
-        "product_form_id": "ai_infrastructure_software",
+        "product_form_id": "ai_compute_system",
         "market_category_id": "infrastructure_compute",
         "market_subcategory_id": "hardware_computing",
         "market_application_id": "computing_infrastructure",
-        "use_case_ids": [],
-        "industry_ids": [],
+        "use_case_ids": [
+          "software_development",
+          "data_analysis",
+          "research_discovery"
+        ],
+        "industry_ids": [
+          "financial_services",
+          "healthcare_life_sciences",
+          "retail_ecommerce",
+          "manufacturing",
+          "media_entertainment",
+          "education",
+          "government_public_sector",
+          "energy_utilities",
+          "telecommunications",
+          "automotive_transportation",
+          "professional_services",
+          "construction_real_estate",
+          "food_hospitality",
+          "aerospace_defense",
+          "agriculture",
+          "logistics_supply_chain",
+          "legal_services"
+        ],
         "target_user_ids": [
-          "business_user"
+          "developer",
+          "business_user",
+          "researcher"
         ],
         "sector": "AI 算力基础设施融资",
         "investment_thesis": {
@@ -764,7 +788,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-16T00:25:27.977Z"
+        "generated_at": "2026-08-16T00:25:27.977Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-e70a48e36e99d57a",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -836,8 +868,8 @@
       },
       "product_form": {
         "dimension": "product_form",
-        "id": "ai_infrastructure_software",
-        "name": "AI 基础设施软件",
+        "id": "ai_compute_system",
+        "name": "AI 计算系统",
         "method": "card_explicit",
         "decision_id": ""
       },
@@ -1318,10 +1350,12 @@
         "market_subcategory_id": "productivity_enterprise_workflows",
         "market_application_id": "",
         "use_case_ids": [
-          "productivity_enterprise_workflows"
+          "productivity_enterprise_workflows",
+          "finance_accounting"
         ],
         "industry_ids": [
-          "professional_services"
+          "professional_services",
+          "construction_real_estate"
         ],
         "target_user_ids": [
           "business_user"
@@ -1475,7 +1509,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-16T00:25:01.034Z"
+        "generated_at": "2026-08-16T00:25:01.034Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-df8954acf9a13848",
+          "confidence": 0.7,
+          "needs_review": true
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1982,7 +2024,8 @@
         "market_application_id": "",
         "use_case_ids": [
           "data_analysis",
-          "productivity_enterprise_workflows"
+          "productivity_enterprise_workflows",
+          "finance_accounting"
         ],
         "industry_ids": [
           "financial_services"
@@ -2127,7 +2170,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-16T00:24:53.801Z"
+        "generated_at": "2026-08-16T00:24:53.801Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-13e08bc37724e276",
+          "confidence": 0.85,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

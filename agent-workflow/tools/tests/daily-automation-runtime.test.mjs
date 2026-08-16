@@ -80,10 +80,12 @@ test("Vault refresh uses an isolated origin/main worktree and leaves supervision
 test("morning controller repairs derived repo Skill runtime before auditing it", () => {
   const controller = read("run-daily-automation-controller.mjs");
   const syncIndex = controller.indexOf('"agent-workflow/tools/sync-repo-skills.mjs"');
+  const discoveryIndex = controller.indexOf('"agent-workflow/tools/build-skill-store-dashboard.mjs"');
   const checkIndex = controller.indexOf('"agent-workflow/tools/check-skill-ops.mjs"');
   assert.ok(syncIndex >= 0, "morning controller must sync the derived repo Skill runtime");
-  assert.ok(checkIndex > syncIndex, "Skill Ops audit must run after runtime synchronization");
-  assert.match(controller, /actions: \[runtimeSync, preflight, business\]/u);
+  assert.ok(discoveryIndex > syncIndex, "Skill discovery summary must refresh after runtime synchronization");
+  assert.ok(checkIndex > discoveryIndex, "Skill Ops audit must run after discovery refresh");
+  assert.match(controller, /actions: \[runtimeSync, discoveryRefresh, preflight, business\]/u);
 });
 
 test("periodic reports tolerate slower cloud generation and expose failed child diagnostics", () => {

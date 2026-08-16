@@ -88,17 +88,20 @@ function morning() {
   const runtimeSync = run("Sync repo Skill runtime", process.execPath, [
     "agent-workflow/tools/sync-repo-skills.mjs",
   ]);
+  const discoveryRefresh = run("Refresh Skill discovery summary", process.execPath, [
+    "agent-workflow/tools/build-skill-store-dashboard.mjs",
+  ]);
   const preflight = run("Skill Ops preflight", process.execPath, ["agent-workflow/tools/check-skill-ops.mjs"]);
   const business = run("Data Center V4 production dispatch", process.execPath, [
     "agent-workflow/tools/run-business-signals-health-dispatch.mjs",
     `--date=${date}`,
     ...(dryRun ? ["--dry-run=true"] : []),
   ]);
-  const skillOpsHealthy = runtimeSync.ok && preflight.ok;
+  const skillOpsHealthy = runtimeSync.ok && discoveryRefresh.ok && preflight.ok;
   return {
     ok: business.ok,
     status: business.ok ? (skillOpsHealthy ? "passed" : "passed_with_preflight_warning") : "failed",
-    actions: [runtimeSync, preflight, business],
+    actions: [runtimeSync, discoveryRefresh, preflight, business],
     notes: skillOpsHealthy ? [] : ["Repo Skill runtime sync or Skill Ops preflight failed but did not block production dispatch."],
   };
 }

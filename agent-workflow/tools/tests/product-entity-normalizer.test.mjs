@@ -33,3 +33,20 @@ test("product extraction rejects reports and dates and folds software versions i
   assert.deepEqual(extract("Announces General Availability"), []);
   assert.deepEqual(extract("Anthropic releases Claude Code v2.1.219", ["Anthropic"]), ["Claude Code"]);
 });
+
+test("deployment extraction preserves an explicitly named web product", () => {
+  assert.deepEqual(extractExplicitProductNames({
+    eventType: "deployment",
+    title: "整活网页 Your AI Slop Bores Me 上线：真人扮演 AI 回答用户提问",
+    object: "：真人扮演 AI 回答用户提问",
+    evidenceTexts: ["网页项目 Your AI Slop Bores Me 近日上线"],
+    organizationNames: []
+  }), ["Your AI Slop Bores Me"]);
+  assert.deepEqual(extractExplicitProductNames({
+    eventType: "deployment",
+    title: "Together AI Sign Multi-Year Agreement for AI Infrastructure",
+    object: "AI Infrastructure",
+    evidenceTexts: [],
+    organizationNames: ["Together AI"]
+  }), []);
+});
