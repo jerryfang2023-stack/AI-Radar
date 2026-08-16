@@ -118,6 +118,7 @@ test("exposes the confirmed membership plans and point exchange entry", () => {
   assert.match(paymentSource, /wx\.requestVirtualPayment/u);
   assert.doesNotMatch(paymentSource, /wx\.requestPayment/u);
   assert.match(membershipSource, /15 天内支持全额退款/u);
+  assert.match(membershipSource, /iOS 用户按 App Store 流程申请/u);
   assert.match(membershipSource, /支付与退款客服/u);
   assert.match(membershipLogic, /wx\.previewImage/u);
   assert.ok(fs.existsSync(customerServiceQr));

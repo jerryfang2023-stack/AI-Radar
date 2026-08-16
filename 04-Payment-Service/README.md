@@ -33,7 +33,7 @@ python -m venv .venv
 - 小程序使用 `wx.requestVirtualPayment` 的道具直购模式，不再使用普通 JSAPI 支付。
 - 固定商品为 `membership_30d`、`membership_180d`、`membership_365d`，价格和权益时长均由服务端校验。
 - 下单接口：`POST /api/v1/pay/virtual/orders`。客户端需同时提交新获取的 `wx.login` code，服务端只用对应 `session_key` 生成当次用户态签名，不保存该会话密钥。
-- 消息推送地址：`https://www.zkdlj.vip/api/v1/pay/virtual/notify`。至少订阅 `xpay_goods_deliver_notify` 和 `xpay_refund_notify`。
+- 消息推送地址：`https://www.zkdlj.vip/api/v1/pay/virtual/notify`。订阅 `xpay_goods_deliver_notify`、`xpay_refund_notify` 和 `xpay_subscribe_ios_refund_query_notify`；iOS 退款问询按 15 天全额退款政策返回建议结果。
 - 客户端支付成功不直接发放权益；仅在验签消息或主动查询微信订单确认后发放。
 - 退款接口：`POST /api/v1/pay/orders/<orderNo>/refund`。当前仅支持购买后 15 天内按原订单全额退款，退款确认后回收该订单对应的会员时长。
 - 沙箱联调使用 `WECHAT_VIRTUAL_ENV=1`；正式发布前切换为 `0`，两套 AppKey 必须分开配置。

@@ -1460,6 +1460,32 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
     def virtual_payment_notification():
         event = app.virtual_pay_client.parse_callback(request.get_data(cache=False), request.args)
         event_type = event.get("Event") or event.get("event")
+        if event_type == "xpay_subscribe_ios_refund_query_notify":
+            pay_order_id = str(event.get("pay_order_id") or event.get("PayOrderId") or "").strip()
+            product_id = str(event.get("product_id") or event.get("ProductId") or "").strip()
+            with closing(db()) as conn:
+                order = conn.execute(
+                    "SELECT * FROM payment_orders WHERE transaction_id=? AND payment_mode='wechat_virtual'",
+                    (pay_order_id,),
+                ).fetchone()
+            eligible = False
+            reason = "未找到对应的虚拟支付订单"
+            if order and order["product_id"] == product_id and order["paid_at"]:
+                paid_at = datetime.fromisoformat(order["paid_at"])
+                eligible = (
+                    order["status"] == "PAID"
+                    and utcnow() <= paid_at + timedelta(days=app.config["WECHAT_VIRTUAL_REFUND_DAYS"])
+                )
+                reason = (
+                    "订单支付后15天内，符合全额退款政策"
+                    if eligible
+                    else "订单不在15天全额退款期限内或已完成退款"
+                )
+            return jsonify(
+                result_code=0 if eligible else 1,
+                result_info="建议退款" if eligible else "不建议退款",
+                evidence=reason,
+            )
         if event_type == "xpay_goods_deliver_notify":
             order_no = str(event.get("OutTradeNo") or "")
             openid = str(event.get("OpenId") or "")

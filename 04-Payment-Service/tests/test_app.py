@@ -437,6 +437,45 @@ def test_virtual_delivery_notification_is_verified_by_order_query_and_idempotent
     assert result["membership"]["status"] == "member"
 
 
+def test_ios_virtual_refund_query_allows_paid_orders_within_fifteen_days(client):
+    buyer = "ios-refund-buyer"
+    token = login(client, buyer)
+    created = client.post(
+        "/api/v1/pay/virtual/orders",
+        headers=auth(token),
+        json={"planId": "monthly", "loginCode": buyer},
+    ).get_json()
+    client.get(f"/api/v1/pay/orders/{created['orderNo']}", headers=auth(token))
+    client.application.virtual_pay_client.notification = {
+        "event": "xpay_subscribe_ios_refund_query_notify",
+        "pay_order_id": f"virtual-{created['orderNo']}",
+        "product_id": "membership_30d",
+    }
+
+    response = client.post("/api/v1/pay/virtual/notify", data=b"signed")
+
+    assert response.status_code == 200
+    assert response.get_json() == {
+        "result_code": 0,
+        "result_info": "建议退款",
+        "evidence": "订单支付后15天内，符合全额退款政策",
+    }
+
+
+def test_ios_virtual_refund_query_rejects_unknown_orders(client):
+    client.application.virtual_pay_client.notification = {
+        "Event": "xpay_subscribe_ios_refund_query_notify",
+        "pay_order_id": "unknown",
+        "product_id": "membership_30d",
+    }
+
+    response = client.post("/api/v1/pay/virtual/notify", data=b"signed")
+
+    assert response.status_code == 200
+    assert response.get_json()["result_code"] == 1
+    assert response.get_json()["evidence"] == "未找到对应的虚拟支付订单"
+
+
 def test_verified_notification_is_idempotent(client):
     token = login(client, "notify-buyer")
     created = client.post("/api/v1/pay/wechat/orders", headers=auth(token), json={"planId": "monthly"}).get_json()
