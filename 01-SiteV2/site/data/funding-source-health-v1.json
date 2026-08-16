@@ -1,95 +1,15 @@
 {
   "schema_version": "FUNDING-SOURCE-HEALTH-V1.0",
-  "generated_at": "2026-08-16T00:25:52.120Z",
+  "generated_at": "2026-08-16T00:29:54.885Z",
   "date": "2026-08-16",
-  "status": "passed",
-  "state": "healthy",
+  "status": "degraded",
+  "state": "source_no_data",
   "last_checked_date": "2026-08-16",
   "latest_financing_date": "2026-08-15",
   "totals": {
-    "fetched": 565,
-    "funding_candidates": 140,
+    "fetched": 0,
+    "funding_candidates": 0,
     "verified_events": 3
   },
-  "channels": [
-    {
-      "id": "aihot",
-      "status": "collected",
-      "last_success_at": "2026-08-16T00:12:06.181Z",
-      "response_ms": null,
-      "http_status": "200",
-      "fetched_count": 137,
-      "latest_content_date": "2026-08-15",
-      "duplicate_rate": 0,
-      "stale_rate": 1,
-      "funding_candidate_count": 2,
-      "verified_event_count": 1,
-      "failures": [],
-      "fallback_used": false
-    },
-    {
-      "id": "funding",
-      "status": "collected",
-      "last_success_at": "2026-08-16T00:12:27.952Z",
-      "response_ms": null,
-      "http_status": "429",
-      "fetched_count": 64,
-      "latest_content_date": "2026-08-13",
-      "duplicate_rate": 0,
-      "stale_rate": 1,
-      "funding_candidate_count": 64,
-      "verified_event_count": 1,
-      "failures": [
-        "RSS tldr-ai-newsletter: HTTP 429"
-      ],
-      "fallback_used": false
-    },
-    {
-      "id": "gdelt",
-      "status": "collected",
-      "last_success_at": "2026-08-16T00:20:40.212Z",
-      "response_ms": null,
-      "http_status": "200",
-      "fetched_count": 48,
-      "latest_content_date": "",
-      "duplicate_rate": 0,
-      "stale_rate": 1,
-      "funding_candidate_count": 10,
-      "verified_event_count": 0,
-      "failures": [],
-      "fallback_used": false
-    },
-    {
-      "id": "keyword",
-      "status": "collected",
-      "last_success_at": "2026-08-16T00:17:54.359Z",
-      "response_ms": null,
-      "http_status": "200",
-      "fetched_count": 182,
-      "latest_content_date": "2024-10-23",
-      "duplicate_rate": 0.1852,
-      "stale_rate": 1,
-      "funding_candidate_count": 54,
-      "verified_event_count": 2,
-      "failures": [
-        "keyword-search pre-gate filtered 37 result(s): missing_ai_anchor_in_result=21; social_or_profile_source=11; broad_list_or_market_report=4; noise_term:hiring=1"
-      ],
-      "fallback_used": false
-    },
-    {
-      "id": "rss",
-      "status": "collected",
-      "last_success_at": "2026-08-16T00:12:15.346Z",
-      "response_ms": null,
-      "http_status": "200",
-      "fetched_count": 134,
-      "latest_content_date": "2026-08-13",
-      "duplicate_rate": 0,
-      "stale_rate": 1,
-      "funding_candidate_count": 10,
-      "verified_event_count": 0,
-      "failures": [],
-      "fallback_used": false
-    }
-  ]
+  "channels": []
 }

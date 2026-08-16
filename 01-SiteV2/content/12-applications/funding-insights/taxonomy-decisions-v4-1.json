@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-15T06:11:46.646Z",
+    "generated_at": "2026-08-16T00:29:45.679Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 277,
-    "input_hash": "22466a2773393652",
+    "decision_count": 280,
+    "input_hash": "205ca2d4f4523dc7",
     "override_count": 17,
-    "needs_review_count": 0,
-    "low_confidence_count": 2
+    "needs_review_count": 1,
+    "low_confidence_count": 3
   },
   "decisions": [
     {
@@ -5476,6 +5476,87 @@
       "confidence": 0.75,
       "needs_review": false,
       "rationale": "Optimly 提供品牌信任基础设施，构建 AI 品牌索引供 AI 代理调用，属于为其他 AI 产品提供数据/基础设施的范畴，而非面向单一行业或跨行业业务功能。"
+    },
+    {
+      "event_id": "EV-13e08bc37724e276",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "financial_services",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "data_analysis",
+        "productivity_enterprise_workflows",
+        "finance_accounting"
+      ],
+      "industry_ids": [
+        "financial_services"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "产品围绕私人信贷公司的专业数据、会计信息和文件工作流构建，属于单一行业（金融服务）的行业应用，而非跨行业企业应用或基础设施。"
+    },
+    {
+      "event_id": "EV-e70a48e36e99d57a",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_compute_system",
+      "use_case_ids": [
+        "software_development",
+        "data_analysis",
+        "research_discovery"
+      ],
+      "industry_ids": [
+        "financial_services",
+        "healthcare_life_sciences",
+        "retail_ecommerce",
+        "manufacturing",
+        "media_entertainment",
+        "education",
+        "government_public_sector",
+        "energy_utilities",
+        "telecommunications",
+        "automotive_transportation",
+        "professional_services",
+        "construction_real_estate",
+        "food_hospitality",
+        "aerospace_defense",
+        "agriculture",
+        "logistics_supply_chain",
+        "legal_services"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user",
+        "researcher"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "英伟达提供GPU、高速网络、系统软件和CUDA生态，属于为其他AI产品构建者提供硬件与计算基础设施，符合infrastructure_compute。"
+    },
+    {
+      "event_id": "EV-df8954acf9a13848",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "finance_accounting"
+      ],
+      "industry_ids": [
+        "professional_services",
+        "construction_real_estate"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "证据显示Thrive收购传统企业并植入AI工作流，覆盖会计、IT和建筑环境监管服务，跨多个行业，但产品形态和主要功能边界不够清晰，需人工复核。"
     }
   ]
 }

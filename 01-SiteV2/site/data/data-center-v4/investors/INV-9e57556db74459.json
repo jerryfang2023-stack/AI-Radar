@@ -20,18 +20,23 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "first_disclosed_at": "2026-04-29",
-    "latest_disclosed_at": "2026-04-29",
+    "latest_disclosed_at": "2026-07-31",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "seed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-77a82bb9aafc81d9",
+        "canonical_entity_id": "",
+        "name": "Ellis AI"
+      },
       {
         "entity_id": "EN-1050efc9e13624b2",
         "canonical_entity_id": "",
@@ -39,6 +44,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-aa7c69ae8a505e8e",
+        "funding_insight_id": "FI-2b717ea13b12294d",
+        "event_ids": [
+          "EV-13e08bc37724e276"
+        ],
+        "company_entity_id": "EN-77a82bb9aafc81d9",
+        "company_canonical_entity_id": "",
+        "company_name": "Ellis AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$10M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-07-31",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a8e6dd6c34cd416a",
+            "source_url": "https://techcrunch.com/2026/07/31/repeat-founder-ryan-williams-raises-10m-seed-for-an-ai-startup-for-private-credit-managers/",
+            "source_title": "连续创业者Ryan Williams为面向私募信贷经理的AI初创公司筹集1000万美元种子资金",
+            "source_content_hash": "dd828ac38a132ac1",
+            "quote": "Ellis AI announced Thursday its emergence from stealth with $10 million in seed funding from investors including First Round Capital, 645 Ventures, Harlem Capital, Khosla Ventures, Thrive Capital, Slow Capital, Kearny Jackson, and Ariel Alternatives CEO Mellody Hobson.",
+            "quote_hash": "eab59ac0f81b233b7afca4c7418c7f27f758e3941c5b036a0a3aaacc91fd0d58"
+          }
+        ]
+      },
       {
         "activity_id": "IA-5cf032208a5f4b85",
         "funding_insight_id": "FI-fecb7f6a77985938",
@@ -79,6 +122,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-a8e6dd6c34cd416a",
+        "source_url": "https://techcrunch.com/2026/07/31/repeat-founder-ryan-williams-raises-10m-seed-for-an-ai-startup-for-private-credit-managers/",
+        "source_title": "连续创业者Ryan Williams为面向私募信贷经理的AI初创公司筹集1000万美元种子资金",
+        "source_content_hash": "dd828ac38a132ac1",
+        "quote": "Ellis AI announced Thursday its emergence from stealth with $10 million in seed funding from investors including First Round Capital, 645 Ventures, Harlem Capital, Khosla Ventures, Thrive Capital, Slow Capital, Kearny Jackson, and Ariel Alternatives CEO Mellody Hobson.",
+        "quote_hash": "eab59ac0f81b233b7afca4c7418c7f27f758e3941c5b036a0a3aaacc91fd0d58"
+      },
       {
         "source_id": "FISRC-2513b5897a02dd3c",
         "source_url": "https://www.businesswire.com/news/home/20260429247972/en/General-Analysis-Raises-%2410M-in-Seed-Funding-to-Secure-Agentic-AI",

@@ -20,26 +20,70 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "first_disclosed_at": "2025-03-03",
-    "latest_disclosed_at": "2026-06-03",
+    "latest_disclosed_at": "2026-08-12",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "series_e"
+      "series_e",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-c70eca6b0f88f44d",
         "canonical_entity_id": "EN-c70eca6b0f88f44d",
         "name": "Anthropic PBC"
+      },
+      {
+        "entity_id": "EN-f970fd34532919fe",
+        "canonical_entity_id": "",
+        "name": "Thrive Holdings"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-05368ae165fb9eb0",
+        "funding_insight_id": "FI-208f5f069010d44d",
+        "event_ids": [
+          "EV-df8954acf9a13848"
+        ],
+        "company_entity_id": "EN-f970fd34532919fe",
+        "company_canonical_entity_id": "",
+        "company_name": "Thrive Holdings",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮融资",
+        "amount_original": "$2B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿美元"
+        },
+        "announced_at": "2026-08-12",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0afb458e7b0878f0",
+            "source_url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
+            "source_title": "OpenAI 支持的 Thrive Holdings 融资 20 亿美元，将 AI 引入企业",
+            "source_content_hash": "250a43fbc91f9ea0",
+            "quote": "Thrive Holdings has raised $2 billion in new funding at a $12 billion valuation from investors like SoftBank, D1 Capital Partners, and Altimeter Capital.",
+            "quote_hash": "a1f1ea1feea484049efc821f79057e1e10e6177b4bd58b27c192684f9562376c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2351223f32d316c4",
         "funding_insight_id": "FI-082c684e1b4a88c2",
@@ -118,6 +162,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-0afb458e7b0878f0",
+        "source_url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
+        "source_title": "OpenAI 支持的 Thrive Holdings 融资 20 亿美元，将 AI 引入企业",
+        "source_content_hash": "250a43fbc91f9ea0",
+        "quote": "Thrive Holdings has raised $2 billion in new funding at a $12 billion valuation from investors like SoftBank, D1 Capital Partners, and Altimeter Capital.",
+        "quote_hash": "a1f1ea1feea484049efc821f79057e1e10e6177b4bd58b27c192684f9562376c"
+      },
       {
         "source_id": "FISRC-0349532f469a6b45",
         "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
