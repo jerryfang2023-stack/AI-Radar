@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-15T06:28:44.051Z",
-    "latestDataDate": "2026-08-15",
-    "currentDate": "2026-08-15",
-    "eventCount": 2129,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-08-16T00:25:48.999Z",
+    "latestDataDate": "2026-08-16",
+    "currentDate": "2026-08-16",
+    "eventCount": 2150,
+    "quarantinedEventCount": 19
   },
   "node": {
     "id": "TX-use_case-physical_automation",
@@ -192,7 +192,7 @@
       "HW-dca442211b264bbe"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-08-15"
+    "lastSeen": "2026-08-16"
   },
   "events": [
     {
@@ -634,9 +634,9 @@
     },
     {
       "id": "EV-b116eafe60d71fbe",
-      "dataDate": "2026-08-13",
+      "dataDate": "2026-08-16",
       "date": "2026-08-06",
-      "updatedDate": "2026-08-13",
+      "updatedDate": "2026-08-16",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
@@ -652,7 +652,8 @@
         "$900M",
         "$700 million",
         "$5.51 billion",
-        "$1.1B"
+        "$900 million",
+        "$676 million"
       ],
       "locations": [],
       "missingFields": [],
@@ -1077,11 +1078,11 @@
       ],
       "entityIds": [
         "EN-373da2ec629326c0",
-        "EN-8d4321d936320802"
+        "EN-a4ae746b11369c98"
       ],
       "entityNames": [
         "Optical networking startup Lumilens",
-        "NVIDIA"
+        "Lumilens Inc."
       ],
       "productName": "",
       "products": [],
@@ -14058,9 +14059,9 @@
     },
     {
       "id": "EV-5ede0f85a672441c",
-      "dataDate": "2026-08-15",
+      "dataDate": "2026-08-16",
       "date": "2026-08-14",
-      "updatedDate": "2026-08-15",
+      "updatedDate": "2026-08-16",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
@@ -14084,10 +14085,10 @@
           "cn-sspai-rss"
         ],
         "claim_refs": [
-          "CL-2fe075330fd7e551",
-          "CL-27e229eaab925d16",
-          "CL-547fe6aaab83689e",
-          "CL-837fdfe76f177c71"
+          "CL-fad3011cf957a2e3",
+          "CL-95e1f58089908340",
+          "CL-c17ccaf36da5c6ca",
+          "CL-98c0ef3b905b6d46"
         ]
       },
       "missingFields": [],
@@ -19785,13 +19786,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_application-data_preparation_curation",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-data",
         "TX-target_user-developer",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-product_form-ai_infrastructure_software",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai"
@@ -19815,13 +19816,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-industry-automotive_transportation",
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
-        "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
@@ -19829,7 +19830,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-06",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-16"
     },
     {
       "id": "EN-e6f19fa7a6b52367",
@@ -19868,8 +19869,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-industry-manufacturing",
+        "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
@@ -19918,10 +19919,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-product_form-model",
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_application-models",
@@ -19974,14 +19975,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
-        "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips",
         "TX-ai_market_subcategory-hardware_computing"
       ],
@@ -20004,9 +20005,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
@@ -20030,10 +20031,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-industry-retail_ecommerce",
         "TX-target_user-business_user",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-ai_market_category-physical_ai",
@@ -20110,12 +20111,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-data",
         "TX-target_user-developer",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-product_form-ai_infrastructure_software",
         "TX-use_case-physical_automation",
         "TX-target_user-researcher",
@@ -20131,15 +20132,17 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-e70a48e36e99d57a",
         "EV-55e7c286e95be405",
         "EV-83728e3b6c7736ce",
-        "EV-b116eafe60d71fbe",
         "EV-2dea56b0e97c1685",
         "EV-da1655ecfaf35feb",
         "EV-e3792591090281c6",
@@ -20212,11 +20215,13 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-ea2598236eae915f",
         "EV-58e18eab1b072c9a",
         "EV-7e0d6eb92af58925",
         "EV-a6c4f879a58ababa",
         "EV-3a7e7b6818fee0de",
         "EV-c698da7da473b059",
+        "EV-57fcbef33071910b",
         "EV-c7d0b810ac3b3d4e",
         "EV-e781e169725006f0",
         "EV-ff924015298048ba",
@@ -20308,17 +20313,19 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
+        "TX-technology-agentic_execution",
+        "TX-product_form-chip_accelerator",
+        "TX-industry-manufacturing",
+        "TX-deployment_model-cloud",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-developer",
-        "TX-technology-agentic_execution",
         "TX-product_form-model",
-        "TX-technology-code_generation",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-product_form-ai_infrastructure_software",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
@@ -20327,7 +20334,6 @@
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-model_api_service",
         "TX-use_case-research_discovery",
-        "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-ai_compute_system",
@@ -20338,7 +20344,6 @@
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-deployment_model-cloud",
         "TX-technology-open_weights",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
@@ -20347,24 +20352,31 @@
       "relatedEntityIds": [
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
+        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-15"
+      "lastSeen": "2026-08-16"
     },
     {
       "id": "EN-6b5df3bd8bb0c67d",
@@ -20381,9 +20393,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
@@ -20409,14 +20421,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-developer_tool",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
-        "TX-technology-agentic_execution",
         "TX-use_case-software_development",
         "TX-use_case-physical_automation",
         "TX-ai_market_application-ai_development_orchestration",
-        "TX-ai_market_subcategory-development_deployment",
-        "TX-product_form-developer_tool"
+        "TX-ai_market_subcategory-development_deployment"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-23",
@@ -20437,8 +20449,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
+        "TX-product_form-enterprise_software_platform",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-physical_automation"
       ],
@@ -20489,16 +20501,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-developer_tool",
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-retail_ecommerce",
         "TX-target_user-developer",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_application-models",
-        "TX-industry-healthcare_life_sciences",
-        "TX-product_form-developer_tool"
+        "TX-industry-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-18",
@@ -20519,9 +20531,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-target_user-consumer",
         "TX-ai_market_category-physical_ai",
@@ -20542,6 +20554,8 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-1744d0e71176f9a1",
+        "EV-a6cb4aef5284eb68",
         "EV-9bbe5a98b14acd7f",
         "EV-cdd55321754ce823",
         "EV-792e2a2b3e98399f",
@@ -20560,6 +20574,7 @@
         "EV-8a91e14f37d32b4d",
         "EV-31782f0824ae1db1",
         "EV-3c51bcb5e99d2b68",
+        "EV-9e2c443eae76fb50",
         "EV-cdc6611d6b115cab",
         "EV-07388b042db1bad0",
         "EV-8973f8148205ed35",
@@ -20567,10 +20582,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-technology-agentic_execution",
-        "TX-product_form-model",
         "TX-technology-code_generation",
+        "TX-technology-agentic_execution",
+        "TX-product_form-developer_tool",
+        "TX-target_user-business_user",
+        "TX-product_form-model",
         "TX-use_case-software_development",
         "TX-industry-logistics_supply_chain",
         "TX-use_case-physical_automation",
@@ -20579,14 +20595,13 @@
         "TX-target_user-public_sector_user",
         "TX-target_user-consumer",
         "TX-ai_market_category-physical_ai",
-        "TX-product_form-robotic_system",
-        "TX-product_form-developer_tool"
+        "TX-product_form-robotic_system"
       ],
       "relatedEntityIds": [
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-05-21",
-      "lastSeen": "2026-08-15"
+      "lastSeen": "2026-08-16"
     },
     {
       "id": "EN-53453cfb48a75dde",
@@ -20603,12 +20618,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-developer",
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
-        "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
@@ -20633,8 +20648,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-industry-manufacturing",
+        "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-industry-construction_real_estate",
         "TX-ai_market_category-physical_ai",
@@ -20659,9 +20674,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
@@ -20688,10 +20703,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-industry-retail_ecommerce",
         "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
@@ -20715,9 +20730,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-industry-retail_ecommerce",
         "TX-target_user-business_user",
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
@@ -20742,9 +20757,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-target_user-researcher",
         "TX-industry-education",
@@ -20772,10 +20787,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-product_form-model",
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_application-models",
@@ -20802,9 +20817,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
@@ -20828,9 +20843,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-industry-retail_ecommerce",
         "TX-target_user-business_user",
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
@@ -20856,9 +20871,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-industry-retail_ecommerce",
         "TX-target_user-business_user",
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
@@ -20882,8 +20897,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-industry-manufacturing",
+        "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-industry-food_hospitality",
         "TX-ai_market_category-physical_ai",
@@ -20930,10 +20945,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-industry-retail_ecommerce",
         "TX-target_user-business_user",
         "TX-target_user-developer",
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
@@ -21139,7 +21154,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-15"
+      "lastSeen": "2026-08-16"
     },
     {
       "id": "EN-e59f5a52b6713a29",
@@ -21221,15 +21236,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
+        "TX-product_form-chip_accelerator",
         "TX-industry-media_entertainment",
         "TX-product_form-model",
-        "TX-technology-code_generation",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-use_case-research_discovery",
-        "TX-product_form-chip_accelerator",
         "TX-technology-multimodal",
         "TX-technology-vision_language",
         "TX-technology-mixture_of_experts",
@@ -21371,12 +21386,12 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-product_form-chip_accelerator",
+        "TX-industry-manufacturing",
         "TX-product_form-model",
         "TX-use_case-software_development",
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
-        "TX-product_form-chip_accelerator",
         "TX-product_form-ai_compute_system",
         "TX-product_form-robotic_system",
         "TX-technology-human_in_loop"
@@ -22208,13 +22223,13 @@
     {
       "id": "HWC-0b534eaa4b846780",
       "snapshotKey": "0b534eaa4b846780",
-      "snapshotId": "HWS-954509ae3f9763b5",
+      "snapshotId": "HWS-3bb2f4b05c20514a",
       "eventId": "EV-5ede0f85a672441c",
       "eventIds": [
         "EV-5ede0f85a672441c"
       ],
-      "dataDate": "2026-08-15",
-      "date": "2026-08-15",
+      "dataDate": "2026-08-16",
+      "date": "2026-08-16",
       "title": "Harness",
       "subject": "派早报",
       "productNames": [
@@ -22228,18 +22243,28 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-e457b3055f68c9b9"
+          "fact_ref": "HWF-1c6dab6a1f266fa8"
         }
       },
       "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-16",
+          "previousDate": "2026-08-15",
+          "snapshotId": "HWS-3bb2f4b05c20514a",
+          "previousSnapshotId": "HWS-954509ae3f9763b5",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-15",
-          "hardware_fact_id": "HWF-e457b3055f68c9b9",
+          "data_date": "2026-08-16",
+          "hardware_fact_id": "HWF-1c6dab6a1f266fa8",
           "fact_type": "product",
           "observed_at": "2026-08-14T00:52:24.000Z",
           "subject_entity_id": "EN-478676438ee161a3",
@@ -22257,11 +22282,11 @@
           "event_refs": [
             "EV-5ede0f85a672441c"
           ],
-          "claim_ref": "CL-547fe6aaab83689e",
+          "claim_ref": "CL-c17ccaf36da5c6ca",
           "source_refs": [
-            "SA-62f22d95e80b4948"
+            "SA-cc37fee199882b81"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-15/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-16/hardware-facts.json"
         }
       ],
       "capexFacts": [],
@@ -22271,6 +22296,86 @@
         "EN-478676438ee161a3",
         "EN-6f7ac1823da81d2e",
         "EN-199975c3b4f30c6a"
+      ]
+    },
+    {
+      "id": "HWC-3ee63c33f0d08ae1",
+      "snapshotKey": "3ee63c33f0d08ae1",
+      "snapshotId": "HWS-c691bc83218b40fe",
+      "eventId": "EV-b116eafe60d71fbe",
+      "eventIds": [
+        "EV-b116eafe60d71fbe"
+      ],
+      "dataDate": "2026-08-16",
+      "date": "2026-08-16",
+      "title": "Optical networking startup Lumilens",
+      "subject": "Optical networking startup Lumilens",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "900",
+          "unit": "$million",
+          "fact_ref": "HWF-243d63c70e344631"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 3,
+      "changes": [
+        {
+          "date": "2026-08-16",
+          "previousDate": "2026-08-12",
+          "snapshotId": "HWS-c691bc83218b40fe",
+          "previousSnapshotId": "HWS-bed0c769fbd4f29a",
+          "changedFacts": [
+            "product"
+          ]
+        },
+        {
+          "date": "2026-08-12",
+          "previousDate": "2026-08-11",
+          "snapshotId": "HWS-bed0c769fbd4f29a",
+          "previousSnapshotId": "HWS-b9fd83ab6482cf90",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-16",
+          "hardware_fact_id": "HWF-243d63c70e344631",
+          "fact_type": "product",
+          "observed_at": "2026-08-06T00:00:00.000Z",
+          "subject_entity_id": "EN-373da2ec629326c0",
+          "subject_name": "Optical networking startup Lumilens",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "900",
+          "unit": "$million",
+          "source_quote": "Lumilens Inc., a provider of optical networking chips for artificial intelligence clusters, launched today with $900 million in funding.",
+          "event_refs": [
+            "EV-b116eafe60d71fbe"
+          ],
+          "claim_ref": "CL-15c7a7455cc50099",
+          "source_refs": [
+            "SA-d6bd90b0206f77a1"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-16/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding",
+      "entityIds": [
+        "EN-373da2ec629326c0",
+        "EN-a4ae746b11369c98"
       ]
     },
     {
@@ -22383,77 +22488,6 @@
       "entityIds": [
         "EN-8d4321d936320802",
         "EN-e59f5a52b6713a29"
-      ]
-    },
-    {
-      "id": "HWC-3ee63c33f0d08ae1",
-      "snapshotKey": "3ee63c33f0d08ae1",
-      "snapshotId": "HWS-bed0c769fbd4f29a",
-      "eventId": "EV-b116eafe60d71fbe",
-      "eventIds": [
-        "EV-b116eafe60d71fbe"
-      ],
-      "dataDate": "2026-08-12",
-      "date": "2026-08-12",
-      "title": "Optical networking startup Lumilens",
-      "subject": "Optical networking startup Lumilens",
-      "productNames": [],
-      "hardwareType": "semiconductor",
-      "factTypes": [
-        "product"
-      ],
-      "latestValues": {
-        "product": {
-          "metric_value": "900",
-          "unit": "$million",
-          "fact_ref": "HWF-57c6d92098b9d64b"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 2,
-      "changes": [
-        {
-          "date": "2026-08-12",
-          "previousDate": "2026-08-11",
-          "snapshotId": "HWS-bed0c769fbd4f29a",
-          "previousSnapshotId": "HWS-b9fd83ab6482cf90",
-          "changedFacts": [
-            "product"
-          ]
-        }
-      ],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-08-12",
-          "hardware_fact_id": "HWF-57c6d92098b9d64b",
-          "fact_type": "product",
-          "observed_at": "2026-08-06T00:00:00.000Z",
-          "subject_entity_id": "EN-373da2ec629326c0",
-          "subject_name": "Optical networking startup Lumilens",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "semiconductor",
-          "metric_value": "900",
-          "unit": "$million",
-          "source_quote": "Lumilens Inc., a provider of optical networking chips for artificial intelligence clusters, launched today with $900 million in funding.",
-          "event_refs": [
-            "EV-b116eafe60d71fbe"
-          ],
-          "claim_ref": "CL-9e879afe6af6883c",
-          "source_refs": [
-            "SA-ac115da9da6dfd33"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-12/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [],
-      "sourceUrl": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding",
-      "entityIds": [
-        "EN-373da2ec629326c0",
-        "EN-8d4321d936320802"
       ]
     },
     {

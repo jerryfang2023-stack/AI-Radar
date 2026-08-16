@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-15T04:37:54.461Z",
-    "latestDataDate": "2026-08-15",
-    "currentDate": "2026-08-15",
-    "eventCount": 2120,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-08-16T00:25:48.999Z",
+    "latestDataDate": "2026-08-16",
+    "currentDate": "2026-08-16",
+    "eventCount": 2150,
+    "quarantinedEventCount": 19
   },
   "entity": {
     "id": "EN-a4ae746b11369c98",
@@ -21,15 +21,19 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-b116eafe60d71fbe"
+    ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-08-06",
+    "lastSeen": "2026-08-16",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-b116eafe60d71fbe"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [],
@@ -37,12 +41,244 @@
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-b116eafe60d71fbe",
+        "dataDate": "2026-08-16",
+        "date": "2026-08-06",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "光网络初创公司Lumilens以9亿美元资金启动",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-373da2ec629326c0"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f66d4ccbbd4914f4",
+            "fundingInsightId": "FI-507ad5fde661d5af"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "hardware_computing",
+            "name": "硬件与算力",
+            "entityIds": [
+              "EN-373da2ec629326c0"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4cb57b9b3c691a48",
+            "fundingInsightId": "FI-507ad5fde661d5af"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "chips",
+            "name": "芯片",
+            "entityIds": [
+              "EN-373da2ec629326c0"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-66f57d65865a2dfd",
+            "fundingInsightId": "FI-507ad5fde661d5af"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-373da2ec629326c0"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-7d7b2f2c9757b264",
+            "fundingInsightId": "FI-507ad5fde661d5af"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-373da2ec629326c0"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-24230eb38a7d5253",
+            "fundingInsightId": "FI-507ad5fde661d5af"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "aerospace_defense",
+            "name": "航空航天与国防",
+            "entityIds": [
+              "EN-373da2ec629326c0"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b39aef1e42b2a614",
+            "fundingInsightId": "FI-507ad5fde661d5af"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "automotive_transportation",
+            "name": "汽车与交通",
+            "entityIds": [
+              "EN-373da2ec629326c0"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-eb7c8bd8d0352f0a",
+            "fundingInsightId": "FI-507ad5fde661d5af"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-373da2ec629326c0"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4980af10729eed1e",
+            "fundingInsightId": "FI-507ad5fde661d5af"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "telecommunications",
+            "name": "电信",
+            "entityIds": [
+              "EN-373da2ec629326c0"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ce45c87b78d9d80a",
+            "fundingInsightId": "FI-507ad5fde661d5af"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-373da2ec629326c0"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-216c8351bee5eaed",
+            "fundingInsightId": "FI-507ad5fde661d5af"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-373da2ec629326c0"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8a70427c0dbc9f3c",
+            "fundingInsightId": "FI-507ad5fde661d5af"
+          }
+        ],
+        "entityIds": [
+          "EN-373da2ec629326c0",
+          "EN-a4ae746b11369c98"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],
   "relationships": [],
   "taxonomyNodes": [],
   "fde": [],
-  "hardware": []
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-3ee63c33f0d08ae1",
+      "snapshotKey": "3ee63c33f0d08ae1",
+      "snapshotId": "HWS-c691bc83218b40fe",
+      "eventId": "EV-b116eafe60d71fbe",
+      "eventIds": [
+        "EV-b116eafe60d71fbe"
+      ],
+      "dataDate": "2026-08-16",
+      "date": "2026-08-16",
+      "title": "Optical networking startup Lumilens",
+      "subject": "Optical networking startup Lumilens",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "900",
+          "unit": "$million",
+          "fact_ref": "HWF-243d63c70e344631"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 3,
+      "changes": [
+        {
+          "date": "2026-08-16",
+          "previousDate": "2026-08-12",
+          "snapshotId": "HWS-c691bc83218b40fe",
+          "previousSnapshotId": "HWS-bed0c769fbd4f29a",
+          "changedFacts": [
+            "product"
+          ]
+        },
+        {
+          "date": "2026-08-12",
+          "previousDate": "2026-08-11",
+          "snapshotId": "HWS-bed0c769fbd4f29a",
+          "previousSnapshotId": "HWS-b9fd83ab6482cf90",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-16",
+          "hardware_fact_id": "HWF-243d63c70e344631",
+          "fact_type": "product",
+          "observed_at": "2026-08-06T00:00:00.000Z",
+          "subject_entity_id": "EN-373da2ec629326c0",
+          "subject_name": "Optical networking startup Lumilens",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "900",
+          "unit": "$million",
+          "source_quote": "Lumilens Inc., a provider of optical networking chips for artificial intelligence clusters, launched today with $900 million in funding.",
+          "event_refs": [
+            "EV-b116eafe60d71fbe"
+          ],
+          "claim_ref": "CL-15c7a7455cc50099",
+          "source_refs": [
+            "SA-d6bd90b0206f77a1"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-16/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding",
+      "entityIds": [
+        "EN-373da2ec629326c0",
+        "EN-a4ae746b11369c98"
+      ]
+    }
+  ]
 }

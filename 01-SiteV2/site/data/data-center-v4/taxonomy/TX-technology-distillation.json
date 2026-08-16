@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-15T06:28:44.051Z",
-    "latestDataDate": "2026-08-15",
-    "currentDate": "2026-08-15",
-    "eventCount": 2129,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-08-16T00:25:48.999Z",
+    "latestDataDate": "2026-08-16",
+    "currentDate": "2026-08-16",
+    "eventCount": 2150,
+    "quarantinedEventCount": 19
   },
   "node": {
     "id": "TX-technology-distillation",
@@ -810,6 +810,7 @@
         "EV-acdeebead5324344",
         "EV-cded77b1de2db61a",
         "EV-0121f0a9e9a975ec",
+        "EV-5ac2ba824c6d818c",
         "EV-a852dc0ca6011ff6",
         "EV-a4b7cd533b0b34dc",
         "EV-8805e96b4fb544dd",
@@ -818,6 +819,7 @@
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-43301de739fe560e",
+        "EV-5fe819e7070b76e6",
         "EV-c17a52220be52dc1",
         "EV-5c30f52112d92491",
         "EV-29c0d969abde2020",
@@ -883,16 +885,17 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
+        "TX-technology-agentic_execution",
+        "TX-product_form-chip_accelerator",
+        "TX-deployment_model-cloud",
         "TX-industry-media_entertainment",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
-        "TX-technology-agentic_execution",
         "TX-product_form-model",
-        "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-model_api_service",
-        "TX-product_form-chip_accelerator",
         "TX-ai_market_category-enterprise_applications",
         "TX-use_case-data_analysis",
         "TX-product_form-end_user_application",
@@ -901,7 +904,6 @@
         "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-technology-long_context",
-        "TX-deployment_model-cloud",
         "TX-technology-open_weights",
         "TX-technology-image_generation",
         "TX-technology-tool_use",
@@ -920,7 +922,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-15"
+      "lastSeen": "2026-08-16"
     },
     {
       "id": "EN-9fbf261b62c1d7c0",
@@ -975,6 +977,7 @@
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
         "EV-325c0a0b80938627",
+        "EV-ea2598236eae915f",
         "EV-6018392d4cc4b472",
         "EV-088870c111b4e968",
         "EV-0ad3854d95038ea3",
@@ -1055,10 +1058,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-technology-agentic_execution",
-        "TX-use_case-security_operations",
         "TX-industry-manufacturing",
+        "TX-target_user-business_user",
+        "TX-use_case-security_operations",
         "TX-use_case-data_analysis",
         "TX-target_user-consumer",
         "TX-technology-mixture_of_experts",
@@ -1082,7 +1085,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-08-15"
+      "lastSeen": "2026-08-16"
     },
     {
       "id": "EN-ec7d81cdcc201572",
@@ -1116,6 +1119,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-a6cb4aef5284eb68",
         "EV-f5dd6dec49ad83aa",
         "EV-c89018d79b3d25bd",
         "EV-136b2edc9b9f3be8",
@@ -1188,6 +1192,7 @@
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
         "EV-3dd89fab562d16a1",
+        "EV-ea2598236eae915f",
         "EV-ae6d3c566b33532a",
         "EV-397a17aa878564c4",
         "EV-c9ca5ee6f9c0a600",
@@ -1358,6 +1363,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-55946516c014395c",
         "EV-cdc6611d6b115cab",
         "EV-3343be31faab2cce",
         "EV-f0dcc60444b56245",
@@ -1423,11 +1429,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-chip_accelerator",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-target_user-developer",
-        "TX-technology-agentic_execution",
         "TX-product_form-model",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-professional_services",
@@ -1440,7 +1447,6 @@
         "TX-product_form-model_api_service",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
-        "TX-product_form-chip_accelerator",
         "TX-use_case-data_analysis",
         "TX-industry-government_public_sector",
         "TX-industry-education",
@@ -1484,7 +1490,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-15"
+      "lastSeen": "2026-08-16"
     }
   ],
   "fde": [],

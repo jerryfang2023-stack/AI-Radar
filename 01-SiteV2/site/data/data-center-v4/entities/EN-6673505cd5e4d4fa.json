@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-15T06:28:44.051Z",
-    "latestDataDate": "2026-08-15",
-    "currentDate": "2026-08-15",
-    "eventCount": 2129,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-08-16T00:25:48.999Z",
+    "latestDataDate": "2026-08-16",
+    "currentDate": "2026-08-16",
+    "eventCount": 2150,
+    "quarantinedEventCount": 19
   },
   "entity": {
     "id": "EN-6673505cd5e4d4fa",
@@ -31,7 +31,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-12",
-    "lastSeen": "2026-08-15",
+    "lastSeen": "2026-08-16",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -47,7 +47,7 @@
     "timeline": [
       {
         "id": "EV-2f54f55d7b02fa69",
-        "dataDate": "2026-08-15",
+        "dataDate": "2026-08-16",
         "date": "2026-08-12",
         "eventType": "partnership",
         "eventTypeLabel": "合作",
@@ -305,7 +305,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-15"
+      "lastSeen": "2026-08-16"
     },
     {
       "id": "TX-industry-healthcare_life_sciences",
@@ -452,14 +452,14 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-08-15"
+      "lastSeen": "2026-08-16"
     }
   ],
   "fde": [
     {
       "id": "FDE-34bcdf91ba37fced",
       "eventId": "EV-2f54f55d7b02fa69",
-      "dataDate": "2026-08-15",
+      "dataDate": "2026-08-16",
       "date": "2026-08-12",
       "title": "Keywell.ai与Carahsoft合作，为州、地方及公共医疗机构带来受治理的AI工作流自动化",
       "stage": "announced",
@@ -502,7 +502,7 @@
       "eventIds": [
         "EV-2f54f55d7b02fa69"
       ],
-      "dataDate": "2026-08-15",
+      "dataDate": "2026-08-16",
       "date": "2026-08-12",
       "title": "Keywell.ai × 未披露：Carahsoft Technology Corp.",
       "stage": "announced",
@@ -514,7 +514,7 @@
       "workflow": "Keywell.ai , the AI operational scaffolding platform for HIPAA-compliant workflow automation in healthcare and Government, and Carahsoft Technology Corp. , The Trusted Government IT Solutions Provider &reg; , today announced a partnership.",
       "systems": [],
       "outcomes": [],
-      "observationCount": 2,
+      "observationCount": 3,
       "completeness": 0.5,
       "completenessPercent": 50,
       "missingFields": [
@@ -524,6 +524,17 @@
         "reported_outcomes"
       ],
       "timeline": [
+        {
+          "observationId": "FDEO-d22e422ef5140277",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-12",
+          "dataDate": "2026-08-16",
+          "eventId": "EV-2f54f55d7b02fa69",
+          "eventTitle": "Keywell.ai与Carahsoft合作，为州、地方及公共医疗机构带来受治理的AI工作流自动化",
+          "claimCount": 1,
+          "sourceCount": 1
+        },
         {
           "observationId": "FDEO-af2e9984ba5307ec",
           "type": "implementation_update",

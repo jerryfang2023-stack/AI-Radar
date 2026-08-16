@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-15T06:28:44.051Z",
-    "latestDataDate": "2026-08-15",
-    "currentDate": "2026-08-15",
-    "eventCount": 2129,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-08-16T00:25:48.999Z",
+    "latestDataDate": "2026-08-16",
+    "currentDate": "2026-08-16",
+    "eventCount": 2150,
+    "quarantinedEventCount": 19
   },
   "node": {
     "id": "TX-deployment_model-on_premise",
@@ -45,7 +45,7 @@
       "HW-ecc6755da7bbbbcd"
     ],
     "firstSeen": "2025-09-26",
-    "lastSeen": "2026-08-15"
+    "lastSeen": "2026-08-16"
   },
   "events": [
     {
@@ -504,9 +504,9 @@
     },
     {
       "id": "EV-0fc718ab409cdcf5",
-      "dataDate": "2026-08-15",
+      "dataDate": "2026-08-16",
       "date": "2026-08-15",
-      "updatedDate": "2026-08-15",
+      "updatedDate": "2026-08-16",
       "eventType": "deployment",
       "eventTypeLabel": "部署",
       "eventGroup": "部署与案例",
@@ -530,10 +530,10 @@
           "cn-ithome-rss"
         ],
         "claim_refs": [
-          "CL-008d4135d0786add",
-          "CL-09ad2cdca5fd9c29",
-          "CL-a5a2a5fec66e3a35",
-          "CL-73a950e6a3cd3a34"
+          "CL-76f2c93f8ae7e14e",
+          "CL-2eef7743db6d324e",
+          "CL-b74d351fd5a588f4",
+          "CL-50e99b00b9375b4e"
         ]
       },
       "missingFields": [],
@@ -1970,6 +1970,7 @@
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
         "EV-325c0a0b80938627",
+        "EV-ea2598236eae915f",
         "EV-6018392d4cc4b472",
         "EV-088870c111b4e968",
         "EV-0ad3854d95038ea3",
@@ -2050,10 +2051,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-technology-agentic_execution",
-        "TX-use_case-security_operations",
         "TX-industry-manufacturing",
+        "TX-target_user-business_user",
+        "TX-use_case-security_operations",
         "TX-use_case-data_analysis",
         "TX-target_user-consumer",
         "TX-technology-mixture_of_experts",
@@ -2077,7 +2078,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-08-15"
+      "lastSeen": "2026-08-16"
     },
     {
       "id": "EN-b3e3bce83d29e787",
@@ -2127,8 +2128,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-product_form-ai_infrastructure_software",
         "TX-product_form-chip_accelerator",
+        "TX-product_form-ai_infrastructure_software",
         "TX-deployment_model-on_premise"
       ],
       "relatedEntityIds": [
@@ -2143,7 +2144,7 @@
     {
       "id": "FDE-b093649016ddce0b",
       "eventId": "EV-0fc718ab409cdcf5",
-      "dataDate": "2026-08-15",
+      "dataDate": "2026-08-16",
       "date": "2026-08-15",
       "title": "DeepSeek V4 Pro 正式版与 Harness 智能体框架上线国家超算互联网",
       "stage": "completed",
@@ -2241,7 +2242,7 @@
       "eventIds": [
         "EV-0fc718ab409cdcf5"
       ],
-      "dataDate": "2026-08-15",
+      "dataDate": "2026-08-16",
       "date": "2026-08-15",
       "title": "未披露 × 未披露：国家超算互联网",
       "stage": "completed",
@@ -2253,7 +2254,7 @@
       "workflow": "未披露",
       "systems": [],
       "outcomes": [],
-      "observationCount": 1,
+      "observationCount": 2,
       "completeness": 0.25,
       "completenessPercent": 25,
       "missingFields": [
@@ -2265,6 +2266,17 @@
         "reported_outcomes"
       ],
       "timeline": [
+        {
+          "observationId": "FDEO-23baa944bee41d25",
+          "type": "implementation_update",
+          "stage": "completed",
+          "date": "2026-08-15",
+          "dataDate": "2026-08-16",
+          "eventId": "EV-0fc718ab409cdcf5",
+          "eventTitle": "DeepSeek V4 Pro 正式版与 Harness 智能体框架上线国家超算互联网",
+          "claimCount": 4,
+          "sourceCount": 1
+        },
         {
           "observationId": "FDEO-a3cdecaba70e8a90",
           "type": "implementation_update",

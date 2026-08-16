@@ -1,8 +1,8 @@
 window.WaveSightOpsConsole = {
   "meta": {
     "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-08-15T04:37:57.567Z",
-    "date": "2026-08-15",
+    "generatedAt": "2026-08-16T00:25:52.252Z",
+    "date": "2026-08-16",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
       "01-SiteV2/site/data/pipeline-dashboard.json",
@@ -42,7 +42,7 @@ window.WaveSightOpsConsole = {
     }
   ],
   "daily": {
-    "date": "2026-08-15",
+    "date": "2026-08-16",
     "status": "passed",
     "statusText": "已通过",
     "issueSummary": {
@@ -57,158 +57,13 @@ window.WaveSightOpsConsole = {
   "periods": {
     "weekly": {
       "windowDays": 7,
-      "total": 6,
+      "total": 0,
       "open": 0,
-      "resolved": 6,
-      "byLane": {
-        "business_signals": 1,
-        "first_line_viewpoints": 2,
-        "skill_ops": 3
-      },
-      "byCategory": {
-        "recurring_automation_issue": 5,
-        "weekly_learning_loop": 1
-      },
-      "recurring": [
-        {
-          "category": "recurring_automation_issue",
-          "count": 5
-        }
-      ],
-      "latest": [
-        {
-          "id": "2026-08-09-skill_ops-weekly-learning-loop",
-          "date": "2026-08-09",
-          "title": "Weekly Learning Loop - 2026-08-09",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "medium",
-          "laneId": "skill_ops",
-          "category": "weekly_learning_loop",
-          "failedGate": "weekly_learning_loop",
-          "reportPath": "agent-workflow/reports/2026-08-09-weekly-health.md",
-          "dataGenerated": "not_applicable",
-          "neededAction": "add or tighten gate / eval / MEMORY prevention",
-          "createdAt": "2026-08-09T10:29:35.382Z",
-          "updatedAt": "2026-08-09T18:47:07+08:00",
-          "resolvedAt": "2026-08-09T18:47:07+08:00",
-          "resolver": "codex",
-          "fixCommit": "d0436411741e8fe979c5cddb8ae5a7c90a27fa77",
-          "validation": "all five referenced incidents resolved; npm test passed; Skill Ops drift 0; 2026-08-09 final closure closed with all affected lanes passed",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-skill_ops-weekly-learning-loop.md"
-        },
-        {
-          "id": "2026-08-09-business-signals-recurring-05f820ce67869f02",
-          "date": "2026-08-09",
-          "title": "Recurring warning: business_signals",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "business_signals",
-          "category": "recurring_automation_issue",
-          "failedGate": "repeated daily supervision signal",
-          "reportPath": "runtime://daily-supervision/2026-08-09",
-          "dataGenerated": "inspect linked daily reports",
-          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
-          "createdAt": "2026-08-09T08:45:47.140Z",
-          "updatedAt": "2026-08-09T18:46:21+08:00",
-          "resolvedAt": "2026-08-09T18:46:21+08:00",
-          "resolver": "codex",
-          "fixCommit": "d0436411741e8fe979c5cddb8ae5a7c90a27fa77",
-          "validation": "isolated origin/main Vault sync passed; final closure business_signals passed with zero warnings",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-business-signals-recurring-05f820ce67869f02.md"
-        },
-        {
-          "id": "2026-08-09-skill-ops-recurring-779272b982471f71",
-          "date": "2026-08-09",
-          "title": "Recurring problem: skill_ops",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "skill_ops",
-          "category": "recurring_automation_issue",
-          "failedGate": "repeated daily supervision signal",
-          "reportPath": "runtime://daily-supervision/2026-08-09",
-          "dataGenerated": "inspect linked daily reports",
-          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
-          "createdAt": "2026-08-09T08:45:47.142Z",
-          "updatedAt": "2026-08-09T18:46:20+08:00",
-          "resolvedAt": "2026-08-09T18:46:20+08:00",
-          "resolver": "codex",
-          "fixCommit": "2b970ce031bbab567890e4fd8c9d03a8b456eeaf",
-          "validation": "npm run audit:skills passed with repo runtime drift 0; final closure skill_ops passed",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-skill-ops-recurring-779272b982471f71.md"
-        },
-        {
-          "id": "2026-08-09-skill-ops-recurring-042a16c9ca245da3",
-          "date": "2026-08-09",
-          "title": "Recurring problem: skill_ops",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "skill_ops",
-          "category": "recurring_automation_issue",
-          "failedGate": "repeated daily supervision signal",
-          "reportPath": "runtime://daily-supervision/2026-08-09",
-          "dataGenerated": "inspect linked daily reports",
-          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
-          "createdAt": "2026-08-09T08:45:47.141Z",
-          "updatedAt": "2026-08-09T18:46:18+08:00",
-          "resolvedAt": "2026-08-09T18:46:18+08:00",
-          "resolver": "codex",
-          "fixCommit": "2b970ce031bbab567890e4fd8c9d03a8b456eeaf",
-          "validation": "npm run audit:skills passed with repo runtime drift 0; final closure skill_ops passed",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-skill-ops-recurring-042a16c9ca245da3.md"
-        },
-        {
-          "id": "2026-08-09-first-line-viewpoints-recurring-960303398b491ab3",
-          "date": "2026-08-09",
-          "title": "Recurring problem: first_line_viewpoints",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "first_line_viewpoints",
-          "category": "recurring_automation_issue",
-          "failedGate": "repeated daily supervision signal",
-          "reportPath": "runtime://daily-supervision/2026-08-08",
-          "dataGenerated": "inspect linked daily reports",
-          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
-          "createdAt": "2026-08-09T08:45:47.142Z",
-          "updatedAt": "2026-08-09T18:46:17+08:00",
-          "resolvedAt": "2026-08-09T18:46:17+08:00",
-          "resolver": "codex",
-          "fixCommit": "2b970ce031bbab567890e4fd8c9d03a8b456eeaf",
-          "validation": "2026-08-09 same-date First-Line gate passed; final closure closed with first_line_viewpoints passed",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-first-line-viewpoints-recurring-960303398b491ab3.md"
-        },
-        {
-          "id": "2026-08-09-first-line-viewpoints-recurring-38b0aa2aca98027e",
-          "date": "2026-08-09",
-          "title": "Recurring problem: first_line_viewpoints",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "first_line_viewpoints",
-          "category": "recurring_automation_issue",
-          "failedGate": "repeated daily supervision signal",
-          "reportPath": "runtime://daily-supervision/2026-08-08",
-          "dataGenerated": "inspect linked daily reports",
-          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
-          "createdAt": "2026-08-09T08:45:47.143Z",
-          "updatedAt": "2026-08-09T18:46:15+08:00",
-          "resolvedAt": "2026-08-09T18:46:15+08:00",
-          "resolver": "codex",
-          "fixCommit": "2b970ce031bbab567890e4fd8c9d03a8b456eeaf",
-          "validation": "2026-08-09 same-date First-Line gate passed; final closure closed with first_line_viewpoints passed",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-09-first-line-viewpoints-recurring-38b0aa2aca98027e.md"
-        }
-      ]
+      "resolved": 0,
+      "byLane": {},
+      "byCategory": {},
+      "recurring": [],
+      "latest": []
     },
     "monthly": {
       "windowDays": 30,
@@ -883,15 +738,15 @@ window.WaveSightOpsConsole = {
           },
           {
             "label": "Claims",
-            "value": 73
+            "value": 126
           },
           {
             "label": "Events",
-            "value": 23
+            "value": 42
           },
           {
             "label": "QA",
-            "value": 216
+            "value": 192
           }
         ]
       },
@@ -935,13 +790,13 @@ window.WaveSightOpsConsole = {
         "status": "partial",
         "counts": {
           "discovered": 290,
-          "capture_succeeded": 238,
+          "capture_succeeded": 231,
           "capture_failed": 1,
-          "raw_documents": 238
+          "raw_documents": 231
         },
         "evidence": [
-          "01-SiteV2/content/11-databases/data-center-v4/2026-08-15/manifest.json",
-          "agent-workflow/reports/2026-08-15-guanlan-daily-monitor-log.md"
+          "01-SiteV2/content/11-databases/data-center-v4/2026-08-16/manifest.json",
+          "agent-workflow/reports/2026-08-16-guanlan-daily-monitor-log.md"
         ]
       },
       {
@@ -949,20 +804,20 @@ window.WaveSightOpsConsole = {
         "label": "事实构建",
         "status": "passed",
         "counts": {
-          "accepted_claims": 73,
+          "accepted_claims": 126,
           "rejected_claims": 0,
-          "accepted": 73,
+          "accepted": 126,
           "rejected": 0,
-          "pending_claims": 6,
-          "canonical_events": 23,
-          "entities": 41,
-          "relationships": 79,
+          "pending_claims": 1,
+          "canonical_events": 42,
+          "entities": 59,
+          "relationships": 127,
           "conflicts": 0,
-          "qa_queue": 216
+          "qa_queue": 192
         },
         "evidence": [
-          "01-SiteV2/content/11-databases/data-center-v4/2026-08-15/manifest.json",
-          "agent-workflow/reports/2026-08-15-data-center-v4-integrity-gate.json"
+          "01-SiteV2/content/11-databases/data-center-v4/2026-08-16/manifest.json",
+          "agent-workflow/reports/2026-08-16-data-center-v4-integrity-gate.json"
         ]
       },
       {
@@ -976,7 +831,7 @@ window.WaveSightOpsConsole = {
           "fde_hardware_sync": "passed"
         },
         "evidence": [
-          "agent-workflow/reports/2026-08-15-persistent-asset-manifest.json"
+          "agent-workflow/reports/2026-08-16-persistent-asset-manifest.json"
         ]
       },
       {
@@ -987,18 +842,18 @@ window.WaveSightOpsConsole = {
           "v4_bundle_ready": true
         },
         "evidence": [
-          "agent-workflow/reports/2026-08-15-persistent-asset-manifest.json"
+          "agent-workflow/reports/2026-08-16-persistent-asset-manifest.json"
         ]
       }
     ],
     "latestProduction": {
-      "date": "2026-08-15",
-      "discovered": 238,
-      "captured": 238,
-      "claims": 79,
-      "events": 23,
-      "entities": 41,
-      "relationships": 79
+      "date": "2026-08-16",
+      "discovered": 231,
+      "captured": 231,
+      "claims": 127,
+      "events": 42,
+      "entities": 59,
+      "relationships": 127
     },
     "sync": [
       {
@@ -1019,7 +874,7 @@ window.WaveSightOpsConsole = {
       {
         "label": "Pipeline Dashboard",
         "status": "passed",
-        "detail": "2026-08-15T04:37:57.528Z"
+        "detail": "2026-08-16T00:25:52.213Z"
       },
       {
         "label": "Daily Supervision",
@@ -1033,38 +888,38 @@ window.WaveSightOpsConsole = {
       "meta": {
         "version": "COLLECTION-TELEMETRY-V1.0",
         "ops_version": "OPS-V2.0.0-v4-telemetry",
-        "data_date": "2026-08-15",
-        "generated_at": "2026-08-15T04:37:57.488Z",
+        "data_date": "2026-08-16",
+        "generated_at": "2026-08-16T00:25:52.170Z",
         "scope": "OPS",
         "canonical_writeback": false,
         "source_of_truth": "Data Center V4 manifest and integrity gate"
       },
       "collection": {
         "discovered": 290,
-        "capture_succeeded": 238,
+        "capture_succeeded": 231,
         "capture_failed": 1,
-        "raw_documents": 238
+        "raw_documents": 231
       },
       "factBuild": {
-        "accepted_claims": 73,
+        "accepted_claims": 126,
         "rejected_claims": 0,
-        "accepted": 73,
+        "accepted": 126,
         "rejected": 0,
-        "pending_claims": 6,
-        "canonical_events": 23,
-        "entities": 41,
-        "relationships": 79,
+        "pending_claims": 1,
+        "canonical_events": 42,
+        "entities": 59,
+        "relationships": 127,
         "conflicts": 0,
-        "qa_queue": 216,
+        "qa_queue": 192,
         "qa_by_status": {
-          "review_optional": 203,
-          "open": 13
+          "review_optional": 187,
+          "open": 5
         }
       },
       "v4Gate": {
         "status": "passed",
-        "manifest_date": "2026-08-15",
-        "gate_date": "2026-08-15",
+        "manifest_date": "2026-08-16",
+        "gate_date": "2026-08-16",
         "failures": [],
         "warnings": []
       },
@@ -1087,47 +942,47 @@ window.WaveSightOpsConsole = {
     },
     "pipelineMeta": {
       "version": "OPS-V2.0.0-v4-telemetry",
-      "generatedAt": "2026-08-15T04:37:57.528Z",
+      "generatedAt": "2026-08-16T00:25:52.213Z",
       "dateRange": {
-        "start": "2026-08-09",
-        "end": "2026-08-15"
+        "start": "2026-08-10",
+        "end": "2026-08-16"
       },
       "source": "Data Center V4 manifest + collection-telemetry-v1",
       "telemetryVersion": "COLLECTION-TELEMETRY-V1.0"
     },
     "latest": {
-      "date": "2026-08-15",
-      "label": "2026.08.15",
-      "shortLabel": "08.15",
-      "discovered": 238,
-      "captured": 238,
-      "claims": 79,
-      "events": 23,
-      "entities": 41,
-      "relationships": 79,
+      "date": "2026-08-16",
+      "label": "2026.08.16",
+      "shortLabel": "08.16",
+      "discovered": 231,
+      "captured": 231,
+      "claims": 127,
+      "events": 42,
+      "entities": 59,
+      "relationships": 127,
       "conflicts": 0,
-      "qaQueue": 216,
-      "telemetryDate": "2026-08-15",
+      "qaQueue": 192,
+      "telemetryDate": "2026-08-16",
       "collection": {
         "discovered": 290,
-        "capture_succeeded": 238,
+        "capture_succeeded": 231,
         "capture_failed": 1,
-        "raw_documents": 238
+        "raw_documents": 231
       },
       "factBuild": {
-        "accepted_claims": 73,
+        "accepted_claims": 126,
         "rejected_claims": 0,
-        "accepted": 73,
+        "accepted": 126,
         "rejected": 0,
-        "pending_claims": 6,
-        "canonical_events": 23,
-        "entities": 41,
-        "relationships": 79,
+        "pending_claims": 1,
+        "canonical_events": 42,
+        "entities": 59,
+        "relationships": 127,
         "conflicts": 0,
-        "qa_queue": 216,
+        "qa_queue": 192,
         "qa_by_status": {
-          "review_optional": 203,
-          "open": 13
+          "review_optional": 187,
+          "open": 5
         }
       },
       "applicationProjection": {
@@ -1141,28 +996,41 @@ window.WaveSightOpsConsole = {
       }
     },
     "totals": {
-      "discovered": 1740,
-      "captured": 1740,
-      "claims": 607,
-      "events": 212,
-      "entities": 322,
-      "relationships": 607,
+      "discovered": 1719,
+      "captured": 1719,
+      "claims": 673,
+      "events": 237,
+      "entities": 350,
+      "relationships": 673,
       "conflicts": 0,
-      "qaQueue": 1527
+      "qaQueue": 1484
     },
     "days": [
+      {
+        "date": "2026-08-16",
+        "label": "2026.08.16",
+        "shortLabel": "08.16",
+        "discovered": 231,
+        "captured": 231,
+        "claims": 127,
+        "events": 42,
+        "entities": 59,
+        "relationships": 127,
+        "conflicts": 0,
+        "qaQueue": 192
+      },
       {
         "date": "2026-08-15",
         "label": "2026.08.15",
         "shortLabel": "08.15",
-        "discovered": 238,
-        "captured": 238,
-        "claims": 79,
-        "events": 23,
-        "entities": 41,
-        "relationships": 79,
+        "discovered": 239,
+        "captured": 239,
+        "claims": 96,
+        "events": 35,
+        "entities": 52,
+        "relationships": 96,
         "conflicts": 0,
-        "qaQueue": 216
+        "qaQueue": 205
       },
       {
         "date": "2026-08-14",
@@ -1228,19 +1096,6 @@ window.WaveSightOpsConsole = {
         "relationships": 44,
         "conflicts": 0,
         "qaQueue": 231
-      },
-      {
-        "date": "2026-08-09",
-        "label": "2026.08.09",
-        "shortLabel": "08.09",
-        "discovered": 253,
-        "captured": 253,
-        "claims": 78,
-        "events": 29,
-        "entities": 42,
-        "relationships": 78,
-        "conflicts": 0,
-        "qaQueue": 224
       }
     ],
     "engineQuality": {}
