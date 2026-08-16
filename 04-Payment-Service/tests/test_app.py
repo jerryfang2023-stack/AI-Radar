@@ -159,6 +159,20 @@ def auth(token):
     return {"Authorization": f"Bearer {token}"}
 
 
+def analytics_event(**values):
+    return {
+        "eventId": "event-0001",
+        "event": "page_view",
+        "platform": "miniprogram",
+        "visitorId": "visitor-0001",
+        "sessionId": "session-0001",
+        "page": "/pages/terminal/index",
+        "appVersion": "0.6.5",
+        "properties": {"source": "test"},
+        **values,
+    }
+
+
 def test_health_exposes_non_secret_account_ids(client):
     response = client.get("/api/v1/health")
     assert response.status_code == 200
@@ -172,6 +186,74 @@ def test_health_exposes_non_secret_account_ids(client):
         "appId": "wx34133741173154d4",
         "mchId": "1116466183",
     }
+
+
+def test_analytics_events_are_anonymous_idempotent_and_aggregated(client):
+    first = client.post("/api/v1/analytics/events", json={"events": [analytics_event(
+        referrer="https://example.com/source?phone=13800138000#private",
+        properties={"source": "test", "phoneNumber": "13800138000", "openId": "openid-secret"},
+    )]})
+    assert first.status_code == 200
+    assert first.get_json() == {"accepted": 1, "received": 1}
+    repeated = client.post("/api/v1/analytics/events", json={"events": [analytics_event()]})
+    assert repeated.status_code == 200
+    assert repeated.get_json() == {"accepted": 0, "received": 1}
+
+    assert client.get("/api/v1/admin/analytics/summary").status_code == 503
+    client.application.config["ANALYTICS_ADMIN_TOKEN"] = "admin-test-token"
+    assert client.get("/api/v1/admin/analytics/summary").status_code == 401
+    summary = client.get(
+        "/api/v1/admin/analytics/summary?days=7",
+        headers={"Authorization": "Bearer admin-test-token"},
+    )
+    assert summary.status_code == 200
+    payload = summary.get_json()
+    assert payload["overview"]["visitors"] == 1
+    assert payload["overview"]["sessions"] == 1
+    assert payload["overview"]["pageViews"] == 1
+    assert payload["topPages"][0] == {
+        "page": "/pages/terminal/index",
+        "views": 1,
+        "visitors": 1,
+    }
+    with sqlite3.connect(client.application.config["DATABASE_PATH"]) as conn:
+        stored = conn.execute("SELECT referrer, properties_json FROM analytics_events WHERE event_id='event-0001'").fetchone()
+    assert stored == ("https://example.com/source", '{"source":"test"}')
+
+
+def test_analytics_summary_uses_server_truth_for_registration_and_payment(client):
+    client.application.config["ANALYTICS_ADMIN_TOKEN"] = "admin-test-token"
+    token = login(client, "analytics-paying-user")
+    created = client.post(
+        "/api/v1/pay/virtual/orders",
+        headers=auth(token),
+        json={"planId": "monthly", "loginCode": "analytics-paying-user"},
+    )
+    assert created.status_code == 201
+    order_no = created.get_json()["orderNo"]
+    paid = client.get(f"/api/v1/pay/orders/{order_no}", headers=auth(token))
+    assert paid.status_code == 200
+    assert paid.get_json()["order"]["status"] == "PAID"
+
+    summary = client.get(
+        "/api/v1/admin/analytics/summary?days=7&platform=miniprogram",
+        headers={"Authorization": "Bearer admin-test-token"},
+    ).get_json()
+    assert summary["overview"]["newRegistrations"] == 1
+    assert summary["overview"]["paidOrders"] == 1
+    assert summary["overview"]["grossRevenueCents"] == 3000
+    assert summary["eventCounts"]["registration_success"] == 1
+    assert summary["eventCounts"]["payment_order_created"] == 1
+    assert summary["eventCounts"]["payment_success"] == 1
+
+
+def test_analytics_cors_allows_configured_portal_origin(client):
+    response = client.options(
+        "/api/v1/analytics/events",
+        headers={"Origin": "https://www.zkdlj.vip"},
+    )
+    assert response.status_code == 204
+    assert response.headers["Access-Control-Allow-Origin"] == "https://www.zkdlj.vip"
 
 
 def test_login_creates_seven_day_trial(client):

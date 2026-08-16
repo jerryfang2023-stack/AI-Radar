@@ -12,3 +12,4 @@
 - Community applications submitted through the Mini Program must enter the existing membership review queue; the payment service does not maintain a second application database.
 - Phone authorization codes must be exchanged server-side and never persisted. Store only a masked display value and an HMAC digest keyed by the service secret; do not store or return raw phone numbers.
 - Run `python -m pytest -q` before deployment.
+- Application analytics stores anonymous visitor/session IDs and server-owned conversion facts. Never collect raw phone numbers, WeChat identifiers, IP addresses, or client-asserted payment success in `analytics_events`; admin summaries require `ANALYTICS_ADMIN_TOKEN` from the runtime environment.

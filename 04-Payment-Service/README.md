@@ -66,3 +66,11 @@ python scripts/provision_virtual_products.py --env 0
 - `POST /api/v1/member/behaviors`：按用户、北京时间日期、任务类型和内容标识幂等记录签到、阅读与收藏；允许补传当天及前一天的待同步事件。
 - 达标奖励直接进入服务端统一钱包，同时增加可用积分与累计成长积分；客户端刷新不会丢失。
 - 社群积分回调时可用积分按差额调整，累计成长积分只增不减。
+
+## 应用运营统计
+
+- `POST /api/v1/analytics/events`：接收小程序与 PC 端的匿名访问事件，单批最多 20 条；事件按 `eventId` 幂等写入。
+- `GET /api/v1/admin/analytics/summary?days=7&platform=all`：返回访问、页面、内容、注册、付费、退款和漏斗聚合；需要 `Authorization: Bearer <ANALYTICS_ADMIN_TOKEN>`。
+- 注册、支付、退款、积分兑换和社群申请均由服务端记录，运营口径不依赖客户端成功提示。
+- 生产环境必须设置随机 `ANALYTICS_ADMIN_TOKEN`；令牌不得写入仓库，只在运营后台当前浏览器会话中使用。
+- 默认允许 `https://www.zkdlj.vip` 与 WaveSight GitHub Pages 读取；若内部站点域名变化，通过 `ANALYTICS_ALLOWED_ORIGINS` 调整。

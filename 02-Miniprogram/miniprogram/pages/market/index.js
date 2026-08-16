@@ -2,6 +2,7 @@ const { getFundingData, refreshFundingData } = require("../../utils/live-data.js
 const { buildEntityLibrary, filterEntities } = require("../../utils/entity-library.js");
 const { syncTabBar } = require("../../utils/tab-bar.js");
 const { getAccessState, openMembership } = require("../../utils/access.js");
+const { track } = require("../../utils/analytics.js");
 
 const MODE_META = {
   companies: { modeLabel: "企业", placeholder: "企业 / 产品 / 赛道", sortNote: "按最近融资排序", emptyCopy: "换一个企业、产品或赛道名称试试。" },
@@ -49,10 +50,20 @@ Page({
 
   switchMode(event) {
     const mode = event.currentTarget.dataset.mode;
-    this.setData({ mode, query: "", ...MODE_META[mode] }, () => this.refreshItems(true));
+    this.setData({ mode, query: "", ...MODE_META[mode] }, () => {
+      track("filter_changed", { scope: "entity_library", filter: "mode", value: mode });
+      this.refreshItems(true);
+    });
   },
 
   onSearchInput(event) { this.setData({ query: event.detail.value }, () => this.refreshItems(true)); },
+  onSearchConfirm(event) {
+    track("search_submitted", {
+      scope: `entity_${this.data.mode}`,
+      queryLength: String(event.detail.value || "").trim().length,
+      resultCount: this.data.resultCount,
+    });
+  },
   clearSearch() { this.setData({ query: "" }, () => this.refreshItems(true)); },
 
   refreshItems(reset) {

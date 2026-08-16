@@ -1,5 +1,6 @@
 const API_ROOT = "https://www.zkdlj.vip/api/v1";
 const TOKEN_KEY = "guanlan_api_token_v1";
+const analytics = require("./analytics.js");
 
 function apiRequest(path, options = {}) {
   return new Promise((resolve, reject) => {
@@ -39,6 +40,7 @@ function wxLogin() {
 }
 
 async function login(options = {}) {
+  if (!hasAuthToken()) analytics.track("registration_started", { hasPhoneCode: Boolean(options.phoneCode) });
   const code = await wxLogin();
   const result = await apiRequest("/auth/wechat", {
     method: "POST",
@@ -52,6 +54,8 @@ async function login(options = {}) {
   });
   if (!result.token) throw new Error("登录状态获取失败，请重试");
   wx.setStorageSync(TOKEN_KEY, result.token);
+  if (result.isNewUser) analytics.track("registration_client_confirmed", { communityLinked: result.community?.status === "joined" });
+  analytics.flush();
   return result;
 }
 
@@ -127,6 +131,8 @@ async function queryOrder(orderNo, attempts = 4) {
 }
 
 async function purchaseMembership(planId) {
+  analytics.track("checkout_started", { planId });
+  analytics.flush();
   const created = await withToken(async (token) => {
     const loginCode = await wxLogin();
     return apiRequest("/pay/virtual/orders", {
@@ -143,6 +149,8 @@ async function purchaseMembership(planId) {
     error.orderNo = created.orderNo;
     throw error;
   }
+  analytics.track("payment_client_confirmed", { planId, orderNo: created.orderNo });
+  analytics.flush();
   return result;
 }
 

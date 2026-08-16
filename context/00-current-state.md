@@ -42,6 +42,7 @@ The Data Center now has an independent Git baseline: `GUANLAN-DATA-CENTER-V4.8.1
 | AI Financing Site | `https://www.zkdlj.vip/` | Independent public application backed by evidence-linked financing data and the canonical weekly/monthly report archive |
 | Data Center | `01-SiteV2/site/data-center.html` | Internal factual-data serving and review surface, including the investment-institution projection |
 | Trend Radar | `01-SiteV2/site/trend-radar.html` | Internal downstream factual-change projection |
+| Application Analytics | `01-SiteV2/site/application-analytics.html` | Internal Mini Program and PC operations analytics dashboard |
 | Retired Guanlan Research | `01-SiteV2/site/intelligence-map.html` | Compatibility redirect to `https://www.zkdlj.vip/#reports` |
 | Opportunity Map | `01-SiteV2/site/opportunity-map.html` | Unlisted `noindex,nofollow` internal lab route retained for evidence-backed map experiments |
 | First-Line Viewpoints | `01-SiteV2/site/data-center.html?view=viewpoints` | Independent builders viewpoint feed, people index, and person timeline |

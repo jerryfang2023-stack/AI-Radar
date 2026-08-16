@@ -1,7 +1,7 @@
 ---
 status: current
 scope: version-ledger
-last_updated: 2026-08-14
+last_updated: 2026-08-16
 use_when:
   - task startup
   - page change
@@ -28,6 +28,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Data Center Git baseline | GUANLAN-DATA-CENTER-V4.8.1-internal-foundation |
 | Data Center Git tag | `data-center-v4.8.1-internal-foundation` |
 | Main website version | SITE-V4.6.1-research-retirement |
+| Application analytics version | APP-ANALYTICS-V1.0 |
 | Business Signals column version | BSIG-V2.2.0-pipeline-stage-ownership |
 | Tag taxonomy version | TAG-V4.1 |
 | First-Line Viewpoints column version | FLV-V1.1.0-history-backfill |
@@ -43,7 +44,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Opportunity Map column version | OMAP-V2.0.0-v4-evidence |
 | Trend Radar column version | TRADAR-V1.1.0-tag-v4-1 |
 | Funding Insights column version | FUNDING-INSIGHT-V1.5.0-china-market |
-| WeChat Mini Program version | V0.6.4-funding-metrics-visual-alignment |
+| WeChat Mini Program version | V0.6.5-application-analytics |
 | Investment institution projection | INVESTMENT-INSTITUTION-V1.0 |
 | Data Center Raw contract | RAW-V4.0 |
 | Data Center structured source intake | SOURCE-INTAKE-V1.1 |
@@ -205,6 +206,8 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `application-analytics-v1.0.0` | Data Center Application Center operations dashboard / Mini Program and PC anonymous monitoring / registration, payment and refund truth | 2026-08-16 | 2026-08-16T16:28:59+08:00 | APP-ANALYTICS-V1.0 | plaintext identity collection; client-confirmed revenue; public dashboard access; persistent browser admin token; page, registration, payment or refund metrics without a defined source of truth | 33 Payment Service tests + 71 Data Center site core tests + desktop/mobile visual QA + privacy field gate + production API smoke |
+| `miniprogram-v0.6.5` | Mini Program anonymous usage monitoring / search and content analytics / current financing fallback data | 2026-08-16 | 2026-08-16T16:28:59+08:00 | V0.6.5-application-analytics | direct phone, WeChat, OpenID or UnionID collection; UI regressions; client-only registration or payment success; V0.6.4 financing layout regressions | Mini Program data build + 57 behavioral/copy tests + 17-page project validation + Payment Service regression + development-build upload |
 | `miniprogram-v0.6.4` | Mini Program financing overview metrics / V0.6.0–V0.6.3 integrated release | 2026-08-15 | 2026-08-15T18:30:00+08:00 | V0.6.4-funding-metrics-visual-alignment | flat financing metrics strip; labels above values; inconsistent typography, weight, dividers or spacing between financing and ecosystem overview cards; regressions in virtual payment, CNY normalization, bottom navigation, community points or ecology search order | Mini Program data build + 55 behavioral/copy tests + project validation + focused side-by-side visual QA + development-build upload |
 | `miniprogram-v0.6.3` | Mini Program ecosystem overview / company, institution and person library switcher | 2026-08-15 | 2026-08-15T17:39:59+08:00 | V0.6.3-ecology-search-order | ecosystem search rendered below the library switcher; broken company, institution or person filtering | Mini Program build + 55 behavioral/copy tests + project validation + focused side-by-side visual QA |
 | `miniprogram-v0.6.1` | Mini Program funding list / PC Funding Insights / Data Center CNY projections / member linking / published community essay | 2026-08-15 | 2026-08-15T16:17:35+08:00 | V0.6.1-funding-presentation | China-first default; duplicate China labels; public CNY or 人民币 suffixes in normalized amount fields; oversized tab-bar bottom gap; V0.6 virtual-payment regression; unlinked verified old member | CNY migration dry-run + Funding Insights and Data Center tests + Mini Program build and verification + Payment Service regression + native visual QA attempt + development-build upload |

@@ -5,6 +5,7 @@ import secrets
 import sqlite3
 import hashlib
 import hmac
+import json
 from contextlib import closing
 from datetime import datetime, timedelta, timezone
 from functools import wraps
@@ -34,6 +35,10 @@ POINT_TASKS = {
     "browse": {"title": "每日阅读 5 条情报", "target": 5, "reward": 2},
     "favorite": {"title": "收藏 1 条情报", "target": 1, "reward": 3},
 }
+
+ANALYTICS_PLATFORMS = {"miniprogram", "pc"}
+ANALYTICS_EVENT_RE = re.compile(r"^[a-z][a-z0-9_]{1,63}$")
+ANALYTICS_ID_RE = re.compile(r"^[A-Za-z0-9._:-]{8,128}$")
 
 
 def utcnow():
@@ -69,6 +74,11 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         APP_ENV=os.getenv("APP_ENV", "development"),
         COMMUNITY_SERVICE_URL=os.getenv("COMMUNITY_SERVICE_URL", "http://127.0.0.1:8000"),
         COMMUNITY_SERVICE_TOKEN=os.getenv("COMMUNITY_SERVICE_TOKEN", ""),
+        ANALYTICS_ADMIN_TOKEN=os.getenv("ANALYTICS_ADMIN_TOKEN", ""),
+        ANALYTICS_ALLOWED_ORIGINS=os.getenv(
+            "ANALYTICS_ALLOWED_ORIGINS",
+            "https://www.zkdlj.vip,https://jerryfang2023-stack.github.io",
+        ),
     )
     if test_config:
         app.config.update(test_config)
@@ -184,6 +194,30 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                     event_type TEXT NOT NULL,
                     created_at TEXT NOT NULL
                 );
+                CREATE TABLE IF NOT EXISTS analytics_events (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    event_id TEXT NOT NULL UNIQUE,
+                    event_name TEXT NOT NULL,
+                    platform TEXT NOT NULL,
+                    user_id INTEGER,
+                    visitor_id TEXT NOT NULL,
+                    session_id TEXT NOT NULL,
+                    page_path TEXT,
+                    referrer TEXT,
+                    app_version TEXT,
+                    properties_json TEXT NOT NULL DEFAULT '{}',
+                    occurred_at TEXT NOT NULL,
+                    received_at TEXT NOT NULL,
+                    FOREIGN KEY(user_id) REFERENCES users(id)
+                );
+                CREATE INDEX IF NOT EXISTS idx_analytics_events_occurred
+                    ON analytics_events(occurred_at DESC);
+                CREATE INDEX IF NOT EXISTS idx_analytics_events_platform_occurred
+                    ON analytics_events(platform, occurred_at DESC);
+                CREATE INDEX IF NOT EXISTS idx_analytics_events_name_occurred
+                    ON analytics_events(event_name, occurred_at DESC);
+                CREATE INDEX IF NOT EXISTS idx_analytics_events_session
+                    ON analytics_events(session_id, occurred_at);
             """)
             user_columns = {row[1] for row in conn.execute("PRAGMA table_info(users)").fetchall()}
             for name, definition in {
@@ -379,6 +413,114 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
             return fn(*args, **kwargs)
         return wrapped
 
+    def authenticated_user_id(optional=True):
+        header = request.headers.get("Authorization", "")
+        if not header.startswith("Bearer "):
+            return None if optional else False
+        try:
+            payload = serializer.loads(header[7:], max_age=app.config["TOKEN_MAX_AGE"])
+        except (SignatureExpired, BadSignature):
+            return None if optional else False
+        with closing(db()) as conn:
+            user = user_by_id(conn, payload.get("user_id"))
+        return int(user["id"]) if user else None
+
+    def clean_analytics_properties(value):
+        if not isinstance(value, dict):
+            return {}
+        cleaned = {}
+        blocked_fragments = {"phone", "mobile", "openid", "unionid", "wechat", "email", "address", "name"}
+        for raw_key, raw_value in list(value.items())[:24]:
+            key = str(raw_key).strip()[:40]
+            if not key or not re.fullmatch(r"[A-Za-z0-9_.-]+", key):
+                continue
+            if any(fragment in key.lower() for fragment in blocked_fragments):
+                continue
+            if isinstance(raw_value, bool) or raw_value is None:
+                cleaned[key] = raw_value
+            elif isinstance(raw_value, (int, float)):
+                cleaned[key] = raw_value
+            elif isinstance(raw_value, str):
+                cleaned[key] = raw_value.strip()[:160]
+            elif isinstance(raw_value, list):
+                cleaned[key] = [str(item).strip()[:80] for item in raw_value[:10]]
+        encoded = json.dumps(cleaned, ensure_ascii=False, separators=(",", ":"))
+        return cleaned if len(encoded.encode("utf-8")) <= 4096 else {}
+
+    def parse_analytics_time(value):
+        try:
+            parsed = datetime.fromisoformat(str(value or "").replace("Z", "+00:00"))
+            if parsed.tzinfo is None:
+                parsed = parsed.replace(tzinfo=timezone.utc)
+            parsed = parsed.astimezone(timezone.utc)
+        except (TypeError, ValueError):
+            return utcnow()
+        now = utcnow()
+        if parsed < now - timedelta(days=7) or parsed > now + timedelta(minutes=10):
+            return now
+        return parsed
+
+    def insert_analytics_event(conn, event, *, user_id=None, server=False):
+        event_name = str(event.get("event") or "").strip()
+        platform = str(event.get("platform") or "").strip()
+        event_id = str(event.get("eventId") or "").strip()
+        visitor_id = str(event.get("visitorId") or "").strip()
+        session_id = str(event.get("sessionId") or "").strip()
+        if not ANALYTICS_EVENT_RE.fullmatch(event_name):
+            raise ValueError("INVALID_EVENT_NAME")
+        if platform not in ANALYTICS_PLATFORMS:
+            raise ValueError("INVALID_PLATFORM")
+        if not ANALYTICS_ID_RE.fullmatch(event_id):
+            raise ValueError("INVALID_EVENT_ID")
+        if not ANALYTICS_ID_RE.fullmatch(visitor_id) or not ANALYTICS_ID_RE.fullmatch(session_id):
+            raise ValueError("INVALID_ANALYTICS_ID")
+        properties = clean_analytics_properties(event.get("properties"))
+        page_path = str(event.get("page") or "").strip()[:160]
+        referrer = str(event.get("referrer") or "").strip().split("?", 1)[0].split("#", 1)[0][:240]
+        app_version = str(event.get("appVersion") or "").strip()[:32]
+        occurred_at = parse_analytics_time(event.get("occurredAt"))
+        before = conn.total_changes
+        conn.execute(
+            """INSERT OR IGNORE INTO analytics_events(
+                event_id, event_name, platform, user_id, visitor_id, session_id, page_path,
+                referrer, app_version, properties_json, occurred_at, received_at
+            ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)""",
+            (
+                event_id, event_name, platform, user_id, visitor_id, session_id, page_path,
+                referrer, app_version, json.dumps(properties, ensure_ascii=False, separators=(",", ":")),
+                iso(occurred_at), iso(utcnow()),
+            ),
+        )
+        return conn.total_changes > before
+
+    def record_system_analytics(conn, event_name, user_id, properties=None, *, event_key=""):
+        identity = f"server-user:{int(user_id)}"
+        suffix = event_key or secrets.token_hex(8)
+        event = {
+            "eventId": f"server:{event_name}:{suffix}"[:128],
+            "event": event_name,
+            "platform": "miniprogram",
+            "visitorId": identity,
+            "sessionId": f"server:{datetime.now(timezone.utc).date().isoformat()}",
+            "page": "server",
+            "appVersion": "server",
+            "properties": properties or {},
+            "occurredAt": iso(utcnow()),
+        }
+        return insert_analytics_event(conn, event, user_id=user_id, server=True)
+
+    def analytics_admin_required(fn):
+        @wraps(fn)
+        def wrapped(*args, **kwargs):
+            expected = str(app.config.get("ANALYTICS_ADMIN_TOKEN") or "")
+            provided = request.headers.get("Authorization", "")
+            if not expected:
+                return jsonify(error={"code": "ANALYTICS_NOT_CONFIGURED", "message": "运营统计尚未配置"}), 503
+            if not provided.startswith("Bearer ") or not hmac.compare_digest(provided[7:], expected):
+                return jsonify(error={"code": "ADMIN_AUTH_REQUIRED", "message": "请输入运营后台访问令牌"}), 401
+            return fn(*args, **kwargs)
+        return wrapped
+
     def fulfill_order(conn, order, transaction):
         if order["status"] == "PAID":
             return user_by_id(conn, order["user_id"])
@@ -411,6 +553,13 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         conn.execute(
             "INSERT OR IGNORE INTO membership_ledger(user_id, source_type, source_id, days, previous_ends_at, new_ends_at, created_at) VALUES(?,?,?,?,?,?,?)",
             (user["id"], "wechat_pay", order["order_no"], plan["days"], user["member_ends_at"], iso(new_end), iso(now)),
+        )
+        record_system_analytics(
+            conn,
+            "payment_success",
+            user["id"],
+            {"orderNo": order["order_no"], "planId": order["plan_id"], "amountCents": order["total_cents"]},
+            event_key=order["order_no"],
         )
         return user_by_id(conn, user["id"])
 
@@ -459,6 +608,13 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
             "INSERT OR IGNORE INTO membership_ledger(user_id, source_type, source_id, days, previous_ends_at, new_ends_at, created_at) VALUES(?,?,?,?,?,?,?)",
             (user["id"], "wechat_virtual", order["order_no"], plan["days"], user["member_ends_at"], iso(new_end), iso(now)),
         )
+        record_system_analytics(
+            conn,
+            "payment_success",
+            user["id"],
+            {"orderNo": order["order_no"], "planId": order["plan_id"], "amountCents": order["total_cents"]},
+            event_key=order["order_no"],
+        )
         return user_by_id(conn, user["id"])
 
     def complete_virtual_refund(conn, order, *, refunded_at=None):
@@ -480,6 +636,13 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         conn.execute(
             "UPDATE payment_orders SET status='REFUNDED', refund_status='REFUNDED', refunded_at=?, raw_trade_state='REFUNDED', updated_at=? WHERE id=?",
             (refunded_at or iso(utcnow()), iso(utcnow()), order["id"]),
+        )
+        record_system_analytics(
+            conn,
+            "payment_refunded",
+            user["id"],
+            {"orderNo": order["order_no"], "planId": order["plan_id"], "amountCents": order["total_cents"]},
+            event_key=order["order_no"],
         )
         return user_by_id(conn, order["user_id"])
 
@@ -506,6 +669,202 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
             virtualEnvironment=app.config["WECHAT_VIRTUAL_ENV"],
             appId=app.config["WECHAT_APP_ID"],
             mchId=app.config["WECHAT_PAY_MCH_ID"],
+        )
+
+    @app.after_request
+    def analytics_cors(response):
+        if request.path.startswith("/api/v1/analytics") or request.path.startswith("/api/v1/admin/analytics"):
+            origin = request.headers.get("Origin", "")
+            allowed = {item.strip() for item in str(app.config["ANALYTICS_ALLOWED_ORIGINS"]).split(",") if item.strip()}
+            if origin in allowed:
+                response.headers["Access-Control-Allow-Origin"] = origin
+                response.headers["Vary"] = "Origin"
+                response.headers["Access-Control-Allow-Headers"] = "Authorization, Content-Type"
+                response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
+            response.headers["Cache-Control"] = "no-store"
+        return response
+
+    @app.route("/api/v1/analytics/events", methods=["OPTIONS"])
+    @app.route("/api/v1/admin/analytics/summary", methods=["OPTIONS"])
+    def analytics_options():
+        return ("", 204)
+
+    @app.post("/api/v1/analytics/events")
+    def collect_analytics_events():
+        payload = request.get_json(silent=True) or {}
+        events = payload.get("events") if isinstance(payload.get("events"), list) else [payload]
+        if not events or len(events) > 20:
+            return jsonify(error={"code": "INVALID_EVENT_BATCH", "message": "单次最多上报 20 条事件"}), 400
+        user_id = authenticated_user_id(optional=True)
+        accepted = 0
+        with closing(db()) as conn:
+            for event in events:
+                if not isinstance(event, dict):
+                    return jsonify(error={"code": "INVALID_EVENT", "message": "事件格式无效"}), 400
+                try:
+                    accepted += int(insert_analytics_event(conn, event, user_id=user_id))
+                except ValueError as error:
+                    return jsonify(error={"code": str(error), "message": "事件字段无效"}), 400
+            conn.commit()
+        return jsonify(accepted=accepted, received=len(events))
+
+    @app.get("/api/v1/admin/analytics/summary")
+    @analytics_admin_required
+    def analytics_summary():
+        try:
+            days = int(request.args.get("days", "7"))
+        except ValueError:
+            days = 7
+        days = days if days in {1, 7, 30, 90} else 7
+        platform = str(request.args.get("platform") or "all")
+        if platform not in ANALYTICS_PLATFORMS | {"all"}:
+            return jsonify(error={"code": "INVALID_PLATFORM", "message": "平台筛选无效"}), 400
+        now = utcnow()
+        local_timezone = timezone(timedelta(hours=8))
+        local_today = now.astimezone(local_timezone).date()
+        local_start = local_today - timedelta(days=days - 1)
+        start = datetime.combine(local_start, datetime.min.time(), tzinfo=local_timezone).astimezone(timezone.utc)
+        params = [iso(start)]
+        platform_clause = ""
+        if platform != "all":
+            platform_clause = " AND platform=?"
+            params.append(platform)
+        with closing(db()) as conn:
+            rows = conn.execute(
+                f"SELECT * FROM analytics_events WHERE occurred_at>=?{platform_clause} ORDER BY occurred_at ASC",
+                params,
+            ).fetchall()
+            user_rows = conn.execute(
+                "SELECT id, created_at FROM users WHERE created_at>=? ORDER BY created_at ASC",
+                (iso(start),),
+            ).fetchall() if platform in {"all", "miniprogram"} else []
+            order_rows = conn.execute(
+                """SELECT order_no, total_cents, status, refund_status, paid_at, refunded_at
+                   FROM payment_orders WHERE paid_at IS NOT NULL AND paid_at>=? ORDER BY paid_at ASC""",
+                (iso(start),),
+            ).fetchall() if platform in {"all", "miniprogram"} else []
+
+        local_offset = timedelta(hours=8)
+        day_keys = [(local_start + timedelta(days=index)).isoformat() for index in range(days)]
+        trend = {key: {"date": key, "visitors": set(), "sessions": set(), "pageViews": 0, "registrations": 0, "paidOrders": 0, "revenueCents": 0} for key in day_keys}
+        visitors = set()
+        sessions = {}
+        page_counts = {}
+        page_visitors = {}
+        event_counts = {}
+        content_counts = {}
+        content_visitors = {}
+        platform_counts = {"miniprogram": set(), "pc": set()}
+        live_visitors = set()
+        for row in rows:
+            occurred = datetime.fromisoformat(row["occurred_at"]).astimezone(timezone.utc)
+            day = (occurred + local_offset).date().isoformat()
+            visitor_id = row["visitor_id"]
+            session_id = row["session_id"]
+            event_name = row["event_name"]
+            properties = json.loads(row["properties_json"] or "{}")
+            visitors.add(visitor_id)
+            platform_counts.setdefault(row["platform"], set()).add(visitor_id)
+            event_counts[event_name] = event_counts.get(event_name, 0) + 1
+            session = sessions.setdefault(session_id, {"first": occurred, "last": occurred, "pageViews": 0})
+            session["first"] = min(session["first"], occurred)
+            session["last"] = max(session["last"], occurred)
+            if event_name == "page_view":
+                session["pageViews"] += 1
+                page = row["page_path"] or "未知页面"
+                page_counts[page] = page_counts.get(page, 0) + 1
+                page_visitors.setdefault(page, set()).add(visitor_id)
+            if event_name == "content_view":
+                content_id = str(properties.get("contentId") or row["page_path"] or "")
+                if content_id:
+                    content_key = f"{properties.get('contentType') or 'content'}:{content_id}"
+                    item = content_counts.setdefault(content_key, {
+                        "id": content_id,
+                        "type": str(properties.get("contentType") or "内容"),
+                        "title": str(properties.get("title") or content_id)[:80],
+                        "views": 0,
+                    })
+                    item["views"] += 1
+                    content_visitors.setdefault(content_key, set()).add(visitor_id)
+            if occurred >= now - timedelta(minutes=30):
+                live_visitors.add(visitor_id)
+            if day in trend:
+                trend[day]["visitors"].add(visitor_id)
+                trend[day]["sessions"].add(session_id)
+                if event_name == "page_view":
+                    trend[day]["pageViews"] += 1
+
+        for row in user_rows:
+            day = (datetime.fromisoformat(row["created_at"]).astimezone(timezone.utc) + local_offset).date().isoformat()
+            if day in trend:
+                trend[day]["registrations"] += 1
+        paid_orders = []
+        refunded_orders = []
+        for row in order_rows:
+            paid_orders.append(row)
+            if row["refund_status"] == "REFUNDED" or row["status"] == "REFUNDED":
+                refunded_orders.append(row)
+            day = (datetime.fromisoformat(row["paid_at"]).astimezone(timezone.utc) + local_offset).date().isoformat()
+            if day in trend:
+                trend[day]["paidOrders"] += 1
+                trend[day]["revenueCents"] += int(row["total_cents"] or 0)
+
+        session_durations = [max(0, (item["last"] - item["first"]).total_seconds()) for item in sessions.values()]
+        bounce_sessions = sum(1 for item in sessions.values() if item["pageViews"] <= 1)
+        page_views = event_counts.get("page_view", 0)
+        registrations = len(user_rows)
+        gross_revenue = sum(int(row["total_cents"] or 0) for row in paid_orders)
+        refund_amount = sum(int(row["total_cents"] or 0) for row in refunded_orders)
+        unique_visitors = len(visitors)
+        top_pages = sorted(
+            ({"page": page, "views": views, "visitors": len(page_visitors.get(page, set()))} for page, views in page_counts.items()),
+            key=lambda item: (-item["views"], item["page"]),
+        )[:12]
+        top_content = sorted(
+            ({**item, "visitors": len(content_visitors.get(key, set()))} for key, item in content_counts.items()),
+            key=lambda item: (-item["views"], item["title"]),
+        )[:12]
+        trend_rows = []
+        for key in sorted(trend):
+            item = trend[key]
+            trend_rows.append({
+                **{name: value for name, value in item.items() if name not in {"visitors", "sessions"}},
+                "visitors": len(item["visitors"]),
+                "sessions": len(item["sessions"]),
+            })
+        return jsonify(
+            generatedAt=iso(now),
+            filters={"days": days, "platform": platform},
+            overview={
+                "visitors": unique_visitors,
+                "sessions": len(sessions),
+                "pageViews": page_views,
+                "newRegistrations": registrations,
+                "paidOrders": len(paid_orders),
+                "grossRevenueCents": gross_revenue,
+                "refundOrders": len(refunded_orders),
+                "refundAmountCents": refund_amount,
+                "netRevenueCents": gross_revenue - refund_amount,
+                "registrationRate": round(registrations / unique_visitors, 4) if unique_visitors else 0,
+                "paymentRate": round(len(paid_orders) / registrations, 4) if registrations else 0,
+                "averageSessionSeconds": round(sum(session_durations) / len(session_durations)) if session_durations else 0,
+                "bounceRate": round(bounce_sessions / len(sessions), 4) if sessions else 0,
+                "activeVisitors30m": len(live_visitors),
+            },
+            funnel=[
+                {"key": "visit", "label": "访问", "count": len(sessions)},
+                {"key": "registration_started", "label": "开始注册", "count": event_counts.get("registration_started", 0)},
+                {"key": "registration_success", "label": "注册成功", "count": registrations},
+                {"key": "checkout_started", "label": "发起购买", "count": event_counts.get("checkout_started", 0) or event_counts.get("payment_order_created", 0)},
+                {"key": "payment_success", "label": "支付成功", "count": len(paid_orders)},
+            ],
+            platforms=[
+                {"platform": key, "visitors": len(value)} for key, value in platform_counts.items()
+            ],
+            trend=trend_rows,
+            topPages=top_pages,
+            topContent=top_content,
+            eventCounts=event_counts,
         )
 
     @app.post("/api/v1/auth/wechat")
@@ -645,6 +1004,14 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                     )
                     user = user_by_id(conn, user["id"])
             own_invite_code = ensure_invite_code(conn, user)
+            if is_new_user:
+                record_system_analytics(
+                    conn,
+                    "registration_success",
+                    user["id"],
+                    {"communityLinked": bool(user["community_member_id"]), "invited": invitation_accepted},
+                    event_key=f"user:{user['id']}",
+                )
             conn.commit()
             user = user_by_id(conn, user["id"])
             return jsonify(
@@ -817,6 +1184,13 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                 "UPDATE users SET community_member_id=?, community_name=?, community_status=?, updated_at=? WHERE id=?",
                 (member.get("id"), member.get("name") or cleaned["name"], member.get("status") or "pending", iso(utcnow()), g.user_id),
             )
+            record_system_analytics(
+                conn,
+                "community_application_submitted",
+                g.user_id,
+                {"status": member.get("status") or "pending"},
+                event_key=f"application:{member.get('id') or g.user_id}:{datetime.now(timezone.utc).date().isoformat()}",
+            )
             conn.commit()
             user = user_by_id(conn, g.user_id)
             return jsonify(community=community_snapshot(user), wallet=wallet(user), membership=membership(user)), 201
@@ -845,6 +1219,13 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
             )
             user = user_by_id(conn, user["id"])
             user = extend_member_days(conn, user, benefit["days"], "points", source_id)
+            record_system_analytics(
+                conn,
+                "points_redeemed",
+                user["id"],
+                {"benefitId": benefit_id, "points": benefit["cost"], "days": benefit["days"]},
+                event_key=source_id,
+            )
             conn.commit()
             return jsonify(wallet=wallet(user), membership=membership(user), benefit={"id": benefit_id, **benefit})
 
@@ -909,6 +1290,13 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                     iso(now),
                 ),
             )
+            record_system_analytics(
+                conn,
+                "payment_order_created",
+                g.user_id,
+                {"orderNo": order_no, "planId": plan_id, "amountCents": plan["total_cents"]},
+                event_key=order_no,
+            )
             conn.commit()
         try:
             payment = app.virtual_pay_client.create_payment(
@@ -952,6 +1340,13 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
             conn.execute(
                 "INSERT INTO payment_orders(order_no, user_id, plan_id, description, total_cents, status, created_at, updated_at) VALUES(?,?,?,?,?,'PENDING',?,?)",
                 (order_no, g.user_id, plan_id, plan["title"], plan["total_cents"], iso(now), iso(now)),
+            )
+            record_system_analytics(
+                conn,
+                "payment_order_created",
+                g.user_id,
+                {"orderNo": order_no, "planId": plan_id, "amountCents": plan["total_cents"]},
+                event_key=order_no,
             )
             conn.commit()
         try:

@@ -3,6 +3,7 @@ const { getWatchIds, toggleWatch, getCompareIds } = require("../../utils/storage
 const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
 const { syncTabBar } = require("../../utils/tab-bar.js");
 const { getAccessState, openMembership } = require("../../utils/access.js");
+const { track } = require("../../utils/analytics.js");
 
 const bundledFundingIndex = getFundingData().index;
 const MARKET_SCOPE_KEY = "guanlan_funding_market_scope_v2";
@@ -137,6 +138,14 @@ Page({
     this.setData({ "filters.keyword": event.detail.value }, () => this.refreshCards(true));
   },
 
+  onSearchConfirm(event) {
+    track("search_submitted", {
+      scope: "funding",
+      queryLength: String(event.detail.value || "").trim().length,
+      resultCount: this.data.filteredCount,
+    });
+  },
+
   clearSearch() {
     this.setData({ "filters.keyword": "" }, () => this.refreshCards(true));
   },
@@ -149,6 +158,7 @@ Page({
       selectedMarketRegion: marketRegion,
       "filters.marketRegion": marketRegion,
     }, () => {
+      track("filter_changed", { scope: "funding", filter: "marketRegion", value: marketRegion });
       this.updateMetrics({ cards: this.allCards, meta: this.data.meta });
       this.refreshCards(true);
     });
