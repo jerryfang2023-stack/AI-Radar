@@ -184,6 +184,7 @@ function collectUnifiedNavigationIssues() {
     ["data-center.html?view=viewpoints", "一线观点"],
     ["data-center.html?view=index", "实体库"],
     ["trend-radar.html", "变化雷达"],
+    ["application-analytics.html", "运营统计"],
   ];
   for (const name of ["data-center.html", "trend-radar.html", "opportunity-map.html"]) {
     const file = path.join(siteDir, name);
