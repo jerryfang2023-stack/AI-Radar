@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-state
-last_updated: 2026-08-10
+last_updated: 2026-08-16
 use_when:
   - large task startup
   - dispatch planning
@@ -30,7 +30,7 @@ The Data Center now has an independent Git baseline: `GUANLAN-DATA-CENTER-V4.8.1
 - Current local knowledge-base version: `GUANLAN-VAULT-V1.2-private-evidence-linked`. The Guanlan AI Vault is physically independent from the repository and stores citation cards and traceable links only.
 - Current data-lake contract: `DATA-LAKE-V4.1-24-table`; JSONL and DuckDB must expose exactly the same 24-table V4 allowlist, including reviewed event classifications.
 - Current private evidence store: `PRIVATE-EVIDENCE-STORE-V2.0`; it is the sole complete-original store, deduplicates bodies by `content_hash`, and is physically outside the public repository and Vault. Public V4 data, the Vault, and the website never retain complete bodies.
-- Current Funding Insights inventory: 259 accepted application cards aggregate to 235 public financing-event cards. The projection exposes original and normalized amount, round, financing date, disclosure status, investor roles, cumulative basis, and stable history. It also builds 1,079 evidence-backed investor subjects with 1,223 current-round activities; unresolved product/person names remain in the evidence-backed entity review queue.
+- Current Funding Insights inventory: 287 accepted application cards aggregate to 263 public financing-event cards. The projection exposes original and normalized amount, round, financing date, disclosure status, investor roles, cumulative basis, and stable history. It also builds 1,241 evidence-backed investor subjects with 1,430 current-round activities; unresolved product/person names remain in the evidence-backed entity review queue.
 - Current private evidence inventory: 12,064 snapshots, 11,345 unique bodies, and zero missing bodies.
 - Current Windows automation contract: seven tasks. Final Closure owns data-lake refresh; Hermes watchdog and heartbeat publication run as one control-plane task.
 
