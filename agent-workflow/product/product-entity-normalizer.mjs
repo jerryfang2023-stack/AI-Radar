@@ -3,6 +3,7 @@ const PRODUCT_EVENT_TYPES = new Set([
   "product_release",
   "service_change",
   "pricing_change",
+  "deployment",
   "hardware_product",
   "research_result"
 ]);
@@ -69,6 +70,9 @@ function captureNames(value = "") {
   for (const match of text.matchAll(/(?:发布|推出|上线|新增|开源|升级)(?:了|其|全新|新一代|一款|首个)?\s*([A-Z][A-Za-z0-9+_.-]*(?:\s+(?:[A-Z][A-Za-z0-9+_.-]*|\d+(?:\.\d+)*)){0,4})/gu)) {
     captures.push(match[1]);
   }
+  for (const match of text.matchAll(/(?:网页(?:项目)?|平台|产品|服务)\s+([A-Z][A-Za-z0-9+_.-]*(?:\s+(?:[A-Z][A-Za-z0-9+_.-]*|AI)){1,5})\s+(?=上线|发布|推出)/gu)) {
+    captures.push(match[1]);
+  }
   return captures;
 }
 
@@ -102,22 +106,33 @@ export function extractExplicitProductNames({ eventType = "", object = "", title
     ["LM Studio Bionic", /\bLM Studio Bionic\b/iu]
   ].filter(([, pattern]) => pattern.test(evidence)).map(([name]) => name);
   const preservedBrandKeys = new Set(preservedBrandNames.map((name) => name.toLocaleLowerCase()));
+  const brandedObjectCandidates = eventType === "deployment" ? [] : [
+    ...captureBrandedObjectNames(object),
+    ...captureBrandedObjectNames(title)
+  ];
   const candidates = [
     ...preservedBrandNames,
-    ...captureBrandedObjectNames(object),
-    ...captureBrandedObjectNames(title),
+    ...brandedObjectCandidates,
     ...captureNames(object),
     ...captureNames(title),
     ...evidenceTexts.flatMap(captureNames)
   ];
 
-  const seen = new Set();
-  return candidates.map(cleanCandidate).map((name) => {
+  const resolvedCandidates = candidates.map(cleanCandidate).map((name) => {
     if (/^Claude Code(?:\s+v\d+(?:\.\d+)+)?$/iu.test(name)) return "Claude Code";
     if (preservedBrandKeys.has(name.toLocaleLowerCase())) return name;
     const owner = organizationNames.find((organization) => name.toLocaleLowerCase().startsWith(`${normalize(organization).toLocaleLowerCase()} `));
     return owner ? cleanCandidate(name.slice(normalize(owner).length)) : name;
-  }).filter((name) => {
+  }).filter(Boolean);
+  const longestCandidates = eventType === "deployment"
+    ? resolvedCandidates.filter((name, index, values) => !values.some((other, otherIndex) => (
+        otherIndex !== index
+        && other.length > name.length
+        && other.toLocaleLowerCase().includes(name.toLocaleLowerCase())
+      )))
+    : resolvedCandidates;
+  const seen = new Set();
+  return longestCandidates.filter((name) => {
     const key = name.toLocaleLowerCase();
     if (!name || organizationSet.has(key) || seen.has(key)) return false;
     seen.add(key);

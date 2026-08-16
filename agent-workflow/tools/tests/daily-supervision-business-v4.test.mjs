@@ -64,6 +64,8 @@ test("Business supervision passes V4 telemetry with no V3 desk, graph, Cards, or
       "--hermes=off",
     ];
     const supervisor = await import(`${pathToFileURL(scriptFile).href}?test=business-v4`);
+    assert.equal(supervisor.localPublicationSyncBlocked({ available: true, clean: false, fastForwarded: true }), false);
+    assert.equal(supervisor.localPublicationSyncBlocked({ available: true, clean: false, fastForwarded: false }), true);
     const lane = supervisor.buildBusinessSignalsLane();
 
     assert.equal(lane.evidence.dataHealth.healthy, true);

@@ -57,6 +57,10 @@ function exists(file) {
   return fs.existsSync(file);
 }
 
+export function localPublicationSyncBlocked(localSync = {}) {
+  return Boolean(localSync.available && !localSync.clean && !localSync.fastForwarded);
+}
+
 function readJson(file, fallback = null) {
   try {
     return JSON.parse(fs.readFileSync(file, "utf8"));
@@ -575,11 +579,10 @@ export function buildBusinessSignalsLane() {
       warnings.push("09:50 publication closure found no same-date GitHub Pages run");
     }
     if (
-      evidence.publicationClosure.localSync.available
-      && !evidence.publicationClosure.localSync.clean
+      localPublicationSyncBlocked(evidence.publicationClosure.localSync)
       && !evidence.publicationClosure.vaultSync.current
     ) {
-      warnings.push(`local main sync and Guanlan Vault refresh may be blocked by ${evidence.publicationClosure.localSync.dirtyFiles} dirty file(s)`);
+      warnings.push(`local main sync is blocked by ${evidence.publicationClosure.localSync.dirtyFiles} dirty file(s); Guanlan Vault refresh remains isolated from the workspace`);
     }
   }
 
