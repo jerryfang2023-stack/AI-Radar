@@ -28,4 +28,14 @@ function requestLockedContent(page) {
   page.setData({ registrationOpen: true });
 }
 
-module.exports = { SAMPLE_DETAIL_KEY, decideDetailAccess, resolveDetailAccess, requestLockedContent };
+function protectedResourceId(value) {
+  let hash = 0x811c9dc5;
+  const input = String(value || "");
+  for (let index = 0; index < input.length; index += 1) {
+    hash ^= input.charCodeAt(index);
+    hash = Math.imul(hash, 0x01000193) >>> 0;
+  }
+  return `r-${hash.toString(16).padStart(8, "0")}`;
+}
+
+module.exports = { SAMPLE_DETAIL_KEY, decideDetailAccess, resolveDetailAccess, requestLockedContent, protectedResourceId };

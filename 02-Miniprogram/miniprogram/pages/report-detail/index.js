@@ -1,8 +1,9 @@
 const { recordBehavior } = require("../../utils/member.js");
-const { getReportData, refreshReportData, getReportDetail } = require("../../utils/live-data.js");
+const { getReportData } = require("../../utils/live-data.js");
 const { getCommunityEssays } = require("../../utils/community-essays.js");
 const { getAccessState } = require("../../utils/access.js");
 const { resolveDetailAccess, requestLockedContent } = require("../../utils/metered-access.js");
+const { fetchProtectedContent } = require("../../utils/payment.js");
 
 Page({
   data: { report: null, sharedEntry: false, registrationOpen: false, contentLocked: false, lockReason: "" },
@@ -13,16 +14,28 @@ Page({
     const sharedEntry = options.from === "share";
     this.setData({ sharedEntry });
     if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
-    const bundled = getCommunityEssays().details[this.reportId] || getReportData().details[this.reportId];
-    if (bundled) this.render(bundled);
-    refreshReportData().then(() => this.isCommunityEssay ? getCommunityEssays().details[this.reportId] : getReportDetail(this.reportId)).then((liveReport) => {
-      const report = getCommunityEssays().details[this.reportId] || liveReport;
+    const preview = getCommunityEssays().details[this.reportId]
+      || getReportData().index.reports.find((item) => item.id === this.reportId || item.detailId === this.reportId);
+    if (preview) this.render(preview);
+    this.verifyServerAccess();
+  },
+  async verifyServerAccess() {
+    if (!this.reportId) return;
+    if (this.isCommunityEssay) {
+      this.setData({ contentLocked: false, lockReason: "public" });
+      return;
+    }
+    try {
+      const report = await fetchProtectedContent("report", this.reportId);
       if (report) this.render(report);
-      else if (!this.data.report) {
-        wx.showToast({ title: "报告不存在", icon: "none" });
-        setTimeout(() => wx.navigateBack(), 500);
+      this.setData({ contentLocked: false, lockReason: "server" });
+    } catch (error) {
+      if (error.statusCode === 401 || error.statusCode === 403 || error.code === "MEMBERSHIP_REQUIRED" || error.code === "AUTH_INVALID") {
+        this.setData({ contentLocked: true, lockReason: getAccessState() === "expired" ? "expired" : "unregistered" });
+      } else if (!this.data.report) {
+        wx.showToast({ title: "报告暂时无法读取", icon: "none" });
       }
-    });
+    }
   },
   render(report) {
     if (!this.browseRecorded && (this.isCommunityEssay || getAccessState() === "active")) {

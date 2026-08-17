@@ -17,6 +17,8 @@ from itsdangerous import BadSignature, SignatureExpired, URLSafeTimedSerializer
 from payment_service.wechatpay import WeChatPayClient, WeChatPayError
 from payment_service.virtualpay import VirtualPayClient
 from payment_service.community import CommunityClient, CommunityServiceError
+from payment_service.unified_account import init_schema as init_unified_account_schema
+from payment_service.unified_account import register_routes as register_unified_account_routes
 
 
 PLANS = {
@@ -80,6 +82,12 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
             "ANALYTICS_ALLOWED_ORIGINS",
             "https://www.zkdlj.vip,https://jerryfang2023-stack.github.io",
         ),
+        PC_SESSION_DAYS=int(os.getenv("PC_SESSION_DAYS", "30")),
+        VERIFICATION_WEBHOOK_URL=os.getenv("VERIFICATION_WEBHOOK_URL", ""),
+        VERIFICATION_WEBHOOK_TOKEN=os.getenv("VERIFICATION_WEBHOOK_TOKEN", ""),
+        CONTENT_ROOT=os.getenv("CONTENT_ROOT", str(Path(__file__).parent / "data" / "protected-content")),
+        CONTENT_RATE_PER_MINUTE=int(os.getenv("CONTENT_RATE_PER_MINUTE", "60")),
+        MEMBERSHIP_PLANS=PLANS,
     )
     if test_config:
         app.config.update(test_config)
@@ -93,6 +101,7 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
     app.virtual_pay_client = virtual_pay_client or VirtualPayClient(app.config, wechat_client=app.pay_client)
     app.community_client = community_client or CommunityClient(app.config)
     serializer = URLSafeTimedSerializer(app.config["SECRET_KEY"], salt="wavesight-mini-user-v1")
+    app.extensions["user_token_serializer"] = serializer
 
     def db():
         connection = sqlite3.connect(app.config["DATABASE_PATH"], timeout=10)
@@ -235,6 +244,8 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                 "community_balance_deficit": "INTEGER NOT NULL DEFAULT 0",
                 "point_balance": "INTEGER NOT NULL DEFAULT 0",
                 "point_lifetime": "INTEGER NOT NULL DEFAULT 0",
+                "merged_into_user_id": "INTEGER",
+                "merged_at": "TEXT",
             }.items():
                 if name not in user_columns:
                     conn.execute(f"ALTER TABLE users ADD COLUMN {name} {definition}")
@@ -245,6 +256,8 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
             for name, definition in {
                 "payment_mode": "TEXT NOT NULL DEFAULT 'wechat_jsapi'",
                 "product_id": "TEXT",
+                "idempotency_key": "TEXT",
+                "code_url": "TEXT",
                 "virtual_env": "INTEGER",
                 "refund_status": "TEXT NOT NULL DEFAULT 'NONE'",
                 "refund_no": "TEXT",
@@ -252,6 +265,11 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
             }.items():
                 if name not in payment_columns:
                     conn.execute(f"ALTER TABLE payment_orders ADD COLUMN {name} {definition}")
+            conn.execute(
+                "CREATE UNIQUE INDEX IF NOT EXISTS idx_payment_orders_user_idempotency "
+                "ON payment_orders(user_id, idempotency_key) WHERE idempotency_key IS NOT NULL"
+            )
+            init_unified_account_schema(conn)
             conn.commit()
 
     init_db()
@@ -388,7 +406,12 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         }
 
     def user_by_id(conn, user_id):
-        return conn.execute("SELECT * FROM users WHERE id=?", (user_id,)).fetchone()
+        user = conn.execute("SELECT * FROM users WHERE id=?", (user_id,)).fetchone()
+        seen = set()
+        while user and user["merged_into_user_id"] and user["id"] not in seen:
+            seen.add(user["id"])
+            user = conn.execute("SELECT * FROM users WHERE id=?", (user["merged_into_user_id"],)).fetchone()
+        return user
 
     def token_for(user_id):
         return serializer.dumps({"user_id": user_id})
@@ -635,13 +658,13 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         )
         return user_by_id(conn, user["id"])
 
-    def complete_virtual_refund(conn, order, *, refunded_at=None):
+    def complete_virtual_refund(conn, order, *, refunded_at=None, source_type="wechat_virtual"):
         if order["refund_status"] == "REFUNDED":
             return user_by_id(conn, order["user_id"])
         user = user_by_id(conn, order["user_id"])
         ledger = conn.execute(
-            "SELECT * FROM membership_ledger WHERE source_type='wechat_virtual' AND source_id=?",
-            (order["order_no"],),
+            "SELECT * FROM membership_ledger WHERE source_type=? AND source_id=?",
+            (source_type, order["order_no"]),
         ).fetchone()
         if ledger and user["member_ends_at"]:
             current_end = datetime.fromisoformat(user["member_ends_at"])
@@ -663,6 +686,20 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
             event_key=order["order_no"],
         )
         return user_by_id(conn, order["user_id"])
+
+    unified_account = register_unified_account_routes(
+        app,
+        db=db,
+        membership=membership,
+        user_by_id=user_by_id,
+        fulfill_order=fulfill_order,
+        complete_refund=complete_virtual_refund,
+        record_analytics=record_system_analytics,
+    )
+    with closing(db()) as conn:
+        for legacy_user in conn.execute("SELECT * FROM users").fetchall():
+            unified_account["sync_legacy_identities"](conn, legacy_user)
+        conn.commit()
 
     @app.errorhandler(WeChatPayError)
     def handle_wechat_error(error):
@@ -905,6 +942,8 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         now = utcnow()
         with closing(db()) as conn:
             user = conn.execute("SELECT * FROM users WHERE openid=?", (result["openid"],)).fetchone()
+            if user:
+                user = user_by_id(conn, user["id"])
             is_new_user = user is None
             invitation_accepted = False
             if not user and result.get("unionid"):
@@ -1026,6 +1065,7 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                     )
                     user = user_by_id(conn, user["id"])
             own_invite_code = ensure_invite_code(conn, user)
+            unified_account["sync_legacy_identities"](conn, user)
             if is_new_user:
                 record_system_analytics(
                     conn,
@@ -1572,10 +1612,17 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
             if not order:
                 conn.rollback()
                 return jsonify(error={"code": "ORDER_NOT_FOUND", "message": "订单不存在"}), 404
-            fulfill_order(conn, order, transaction)
+            event_type = str(notification.get("event_type") or "UNKNOWN")
+            if event_type.startswith("REFUND."):
+                if order["payment_mode"] != "wechat_native" or transaction.get("refund_status") != "SUCCESS":
+                    conn.rollback()
+                    return jsonify(error={"code": "REFUND_NOTIFICATION_MISMATCH", "message": "退款通知与订单不匹配"}), 400
+                complete_virtual_refund(conn, order, source_type="wechat_pay", refunded_at=transaction.get("success_time") or iso(utcnow()))
+            else:
+                fulfill_order(conn, order, transaction)
             conn.execute(
                 "INSERT INTO payment_notifications(notification_id, order_no, event_type, created_at) VALUES(?,?,?,?)",
-                (notification_id, order_no, notification.get("event_type") or "UNKNOWN", iso(utcnow())),
+                (notification_id, order_no, event_type, iso(utcnow())),
             )
             conn.commit()
         return "", 204

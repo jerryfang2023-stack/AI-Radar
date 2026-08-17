@@ -1,6 +1,7 @@
-const { getFundingData, refreshFundingEntities } = require("../../utils/live-data.js");
+const { getFundingData } = require("../../utils/live-data.js");
 const { buildEntityLibrary, findEntity } = require("../../utils/entity-library.js");
-const { resolveDetailAccess, requestLockedContent } = require("../../utils/metered-access.js");
+const { resolveDetailAccess, requestLockedContent, protectedResourceId } = require("../../utils/metered-access.js");
+const { fetchProtectedContent } = require("../../utils/payment.js");
 
 const TITLES = { companies: "企业档案", investors: "机构档案", people: "人物档案" };
 
@@ -15,8 +16,18 @@ Page({
     try { this.key = decodeURIComponent(options.key || ""); } catch { this.key = options.key || ""; }
     this.setData(resolveDetailAccess(`entity:${this.type || "unknown"}:${this.key || "unknown"}`));
     this.setData({ title: TITLES[this.type] || "主体档案", type: this.type });
-    this.applyData(getFundingData());
-    refreshFundingEntities().then((state) => this.applyData(state));
+    this.applyData({ index: getFundingData().index, details: {} });
+    this.verifyServerAccess();
+  },
+
+  async verifyServerAccess() {
+    try {
+      const entity = await fetchProtectedContent("entity", protectedResourceId(`entity:${this.type}:${this.key}`));
+      if (entity) this.setData({ entity });
+      this.setData({ contentLocked: false, lockReason: "server" });
+    } catch (error) {
+      if (error.statusCode === 401 || error.statusCode === 403 || error.code === "MEMBERSHIP_REQUIRED" || error.code === "AUTH_INVALID") this.setData({ contentLocked: true, lockReason: "unregistered" });
+    }
   },
 
   applyData(state) {

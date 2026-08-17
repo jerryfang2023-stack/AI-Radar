@@ -213,6 +213,53 @@ class WeChatPayClient:
         pay_sign = self._rsa_sign(self._private_key(), f"{self.app_id}\n{timestamp}\n{nonce}\n{package}\n")
         return {"timeStamp": timestamp, "nonceStr": nonce, "package": package, "signType": "RSA", "paySign": pay_sign}
 
+    def create_native_order(self, *, order_no, description, total_cents, client_ip):
+        result = self._api_request("POST", "/v3/pay/transactions/native", {
+            "appid": self.app_id,
+            "mchid": self.mch_id,
+            "description": description,
+            "out_trade_no": order_no,
+            "notify_url": self.notify_url,
+            "amount": {"total": total_cents, "currency": "CNY"},
+            "scene_info": {"payer_client_ip": client_ip},
+        })
+        code_url = result.get("code_url")
+        if not code_url:
+            raise WeChatPayError("微信支付未返回付款二维码", code="PAYMENT_CODE_URL_MISSING", status=502)
+        return {"codeUrl": code_url}
+
+    def refund_order(self, *, order_no, refund_no, total_cents):
+        return self._api_request("POST", "/v3/refund/domestic/refunds", {
+            "out_trade_no": order_no,
+            "out_refund_no": refund_no,
+            "reason": "用户申请全额退款",
+            "notify_url": self.notify_url,
+            "amount": {
+                "refund": total_cents,
+                "total": total_cents,
+                "currency": "CNY",
+            },
+        })
+
+    def query_refund(self, refund_no):
+        encoded = urllib.parse.quote(refund_no, safe="")
+        return self._api_request("GET", f"/v3/refund/domestic/refunds/{encoded}")
+
+    def create_mini_program_code(self, path):
+        token = urllib.parse.quote(self._access_token(), safe="")
+        url = f"https://api.weixin.qq.com/wxa/getwxacode?access_token={token}"
+        payload = json.dumps({"path": path, "width": 430, "check_path": False}, ensure_ascii=False).encode("utf-8")
+        request = urllib.request.Request(url, data=payload, method="POST", headers={"Content-Type": "application/json"})
+        try:
+            with urllib.request.urlopen(request, timeout=20) as response:
+                data = response.read()
+                if response.headers.get("Content-Type", "").startswith("image/"):
+                    return data
+                details = json.loads(data or b"{}")
+                raise WeChatPayError(details.get("errmsg") or "小程序码生成失败", code="MINI_CODE_FAILED", status=502)
+        except urllib.error.HTTPError as exc:
+            raise WeChatPayError("小程序码生成失败", code="MINI_CODE_FAILED", status=502) from exc
+
     def query_order(self, order_no):
         encoded = urllib.parse.quote(order_no, safe="")
         return self._api_request("GET", f"/v3/pay/transactions/out-trade-no/{encoded}?mchid={self.mch_id}")

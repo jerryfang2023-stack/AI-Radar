@@ -1,0 +1,12 @@
+<view class="page">
+  <view class="safe-top"></view>
+  <view class="header"><image src="../../assets/brand/logo-wavesight-reference-horizontal.svg" mode="widthFix"/><text>登录确认</text></view>
+  <view class="panel">
+    <view class="mark">{{status === 'success' ? '✓' : '观'}}</view>
+    <text class="title">{{title}}</text>
+    <text class="description">{{description}}</text>
+    <button wx:if="{{status === 'ready'}}" class="primary" bindtap="confirm" loading="{{submitting}}" disabled="{{submitting}}">确认登录 PC 端</button>
+    <button wx:if="{{status === 'auth'}}" class="secondary" bindtap="openProfile">前往“我的”完成注册</button>
+    <button wx:if="{{status === 'success'}}" class="secondary" bindtap="backHome">返回小程序</button>
+  </view>
+</view>

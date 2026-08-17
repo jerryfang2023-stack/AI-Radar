@@ -152,7 +152,8 @@ export function build(inputDir = defaultInput) {
   const projected = projectReportData(inputDir);
   fs.mkdirSync(dataDir, { recursive: true });
   writeModule(path.join(dataDir, "report-index.js"), projected.index);
-  writeModule(path.join(dataDir, "report-details.js"), projected.details);
+  // Paid report bodies are delivered only by the authenticated content API.
+  writeModule(path.join(dataDir, "report-details.js"), {});
   return projected;
 }
 

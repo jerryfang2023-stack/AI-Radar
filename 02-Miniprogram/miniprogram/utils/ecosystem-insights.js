@@ -3,7 +3,7 @@ const DAY_MS = 24 * 60 * 60 * 1000;
 const text = (value) => String(value == null ? "" : value).trim();
 
 function marketCards(cards, marketRegion) {
-  return (cards || []).filter((card) => marketRegion === "china" ? card.marketRegion === "china" : card.marketRegion === "global");
+  return (cards || []).filter((card) => marketRegion === "china" ? card.marketRegion === "china" : true);
 }
 
 function sectorName(card) {

@@ -1,8 +1,9 @@
-const { getFundingData, refreshFundingEntities } = require("../../utils/live-data.js");
+const { getFundingData } = require("../../utils/live-data.js");
 const { buildSector } = require("../../utils/ecosystem-insights.js");
 const { getFollowIds, toggleFollow } = require("../../utils/member.js");
 const { getAccessState, openMembership } = require("../../utils/access.js");
-const { resolveDetailAccess, requestLockedContent } = require("../../utils/metered-access.js");
+const { resolveDetailAccess, requestLockedContent, protectedResourceId } = require("../../utils/metered-access.js");
+const { fetchProtectedContent } = require("../../utils/payment.js");
 
 Page({
   data: { sector: "", marketRegion: "global", snapshot: null, following: false, registrationOpen: false, contentLocked: false, lockReason: "" },
@@ -12,8 +13,17 @@ Page({
     this.setData(resolveDetailAccess(`sector:${this.marketRegion}:${this.sector || "unknown"}`));
     this.followId = `sector:${this.marketRegion}:${this.sector}`;
     if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
-    this.applyData(getFundingData());
-    refreshFundingEntities().then((state) => this.applyData(state));
+    this.applyData({ index: getFundingData().index, details: {} });
+    this.verifyServerAccess();
+  },
+  async verifyServerAccess() {
+    try {
+      const snapshot = await fetchProtectedContent("sector", protectedResourceId(`sector:${this.marketRegion}:${this.sector}`));
+      if (snapshot) this.setData({ snapshot });
+      this.setData({ contentLocked: false, lockReason: "server" });
+    } catch (error) {
+      if (error.statusCode === 401 || error.statusCode === 403 || error.code === "MEMBERSHIP_REQUIRED" || error.code === "AUTH_INVALID") this.setData({ contentLocked: true, lockReason: getAccessState() === "expired" ? "expired" : "unregistered" });
+    }
   },
   onShow() { this.setData({ following: getFollowIds().includes(this.followId) }); },
   applyData(state) {

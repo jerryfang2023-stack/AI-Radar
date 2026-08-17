@@ -20,6 +20,7 @@ ProtectHome=true
 ProtectSystem=strict
 ReadWritePaths=/opt/wavesight-payment-service/shared/data
 ReadOnlyPaths=/opt/wavesight-payment-service/shared/secrets
+ReadOnlyPaths=/opt/wavesight-payment-service/shared/content
 ProtectKernelTunables=true
 ProtectKernelModules=true
 ProtectControlGroups=true

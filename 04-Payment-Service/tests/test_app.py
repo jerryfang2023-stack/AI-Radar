@@ -1,4 +1,6 @@
 from datetime import datetime, timedelta, timezone
+import json
+from pathlib import Path
 import sqlite3
 
 import pytest
@@ -32,6 +34,16 @@ class FakePayClient:
     def create_jsapi_order(self, **values):
         self.orders[values["order_no"]] = values
         return {"timeStamp": "1700000000", "nonceStr": "nonce", "package": "prepay_id=fake", "signType": "RSA", "paySign": "signature"}
+
+    def create_native_order(self, **values):
+        self.orders[values["order_no"]] = {**values, "openid": ""}
+        return {"codeUrl": f"weixin://wxpay/{values['order_no']}"}
+
+    def refund_order(self, **values):
+        return {"status": "SUCCESS", "out_refund_no": values["refund_no"]}
+
+    def create_mini_program_code(self, path):
+        return b"fake-png"
 
     def query_order(self, order_no):
         order = self.orders[order_no]
@@ -127,6 +139,10 @@ class FakeVirtualPayClient:
 def client(tmp_path):
     fake = FakePayClient()
     virtual = FakeVirtualPayClient()
+    content_root = tmp_path / "protected-content"
+    (content_root / "funding").mkdir(parents=True)
+    (content_root / "funding" / "round-a.json").write_text(json.dumps({"title": "首篇完整内容", "body": "完整正文"}), encoding="utf-8")
+    (content_root / "funding" / "round-b.json").write_text(json.dumps({"title": "第二篇内容", "body": "会员正文"}), encoding="utf-8")
     app = create_app({
         "TESTING": True,
         "SECRET_KEY": "test-secret",
@@ -135,6 +151,7 @@ def client(tmp_path):
         "WECHAT_PAY_MCH_ID": "1116466183",
         "WECHAT_VIRTUAL_ENV": 1,
         "WECHAT_VIRTUAL_REFUND_DAYS": 15,
+        "CONTENT_ROOT": str(content_root),
     }, pay_client=fake, virtual_pay_client=virtual, community_client=FakeCommunityClient())
     return app.test_client()
 
@@ -186,6 +203,122 @@ def test_health_exposes_non_secret_account_ids(client):
         "appId": "wx34133741173154d4",
         "mchId": "1116466183",
     }
+
+
+def pc_login(client, identity_type="email", value="reader@example.com"):
+    created = client.post("/api/v1/auth/challenges", json={"type": identity_type, "value": value})
+    assert created.status_code == 201
+    challenge = created.get_json()
+    verified = client.post(
+        f"/api/v1/auth/challenges/{challenge['challengeId']}/verify",
+        json={"code": challenge["testCode"]},
+    )
+    assert verified.status_code == 200
+    return verified.get_json()
+
+
+def test_pc_verification_session_and_logout(client):
+    account = pc_login(client)
+    assert account["membership"]["status"] == "trial"
+    assert account["identities"][0]["identity_masked"] == "re***@example.com"
+    current = client.get("/api/v1/auth/session")
+    assert current.status_code == 200
+    assert current.get_json()["authenticated"] is True
+    denied = client.post("/api/v1/auth/logout")
+    assert denied.status_code == 403
+    logged_out = client.post("/api/v1/auth/logout", headers={"X-CSRF-Token": current.get_json()["csrfToken"]})
+    assert logged_out.status_code == 204
+    assert client.get("/api/v1/auth/session").get_json() == {"authenticated": False}
+
+
+def test_verified_identity_conflict_requires_explicit_audited_merge(client):
+    target_client = client.application.test_client()
+    target = pc_login(target_client, identity_type="phone", value="13900000002")
+    source = pc_login(client, identity_type="email", value="merge-source@example.com")
+    challenge_response = client.post(
+        "/api/v1/auth/challenges",
+        headers={"X-CSRF-Token": source["csrfToken"]},
+        json={"type": "phone", "value": "13900000002", "purpose": "bind"},
+    )
+    assert challenge_response.status_code == 201
+    challenge = challenge_response.get_json()
+    conflict = client.post(
+        f"/api/v1/auth/challenges/{challenge['challengeId']}/verify",
+        headers={"X-CSRF-Token": source["csrfToken"]},
+        json={"code": challenge["testCode"]},
+    )
+    assert conflict.status_code == 409
+    merge_id = conflict.get_json()["error"]["mergeId"]
+    merged = client.post(
+        f"/api/v1/account/merge-requests/{merge_id}/confirm",
+        headers={"X-CSRF-Token": source["csrfToken"]},
+        json={},
+    )
+    assert merged.status_code == 200
+    assert merged.get_json()["userId"] == target["userId"]
+    assert {identity["identity_type"] for identity in merged.get_json()["identities"]} == {"phone", "email"}
+
+
+def test_pc_account_can_bind_existing_mini_account_by_confirmed_qr_merge(client):
+    mini_client = client.application.test_client()
+    mini_token = login(mini_client, "qr-existing-mini")
+    source = pc_login(client, identity_type="email", value="qr-source@example.com")
+    created = client.post(
+        "/api/v1/auth/qr-sessions",
+        headers={"X-CSRF-Token": source["csrfToken"]},
+        json={"purpose": "bind"},
+    )
+    assert created.status_code == 201
+    ticket = created.get_json()["ticket"]
+    assert client.get(f"/api/v1/auth/qr-sessions/{ticket}/code").data == b"fake-png"
+    assert mini_client.post(f"/api/v1/auth/qr-sessions/{ticket}/confirm", headers=auth(mini_token)).status_code == 200
+    polled = client.get(f"/api/v1/auth/qr-sessions/{ticket}")
+    assert polled.status_code == 200
+    assert polled.get_json()["status"] == "MERGE_REQUIRED"
+    merged = client.post(
+        f"/api/v1/account/merge-requests/{polled.get_json()['mergeId']}/confirm",
+        headers={"X-CSRF-Token": source["csrfToken"]},
+        json={},
+    )
+    assert merged.status_code == 200
+    assert {identity["identity_type"] for identity in merged.get_json()["identities"]} >= {"email", "wechat_openid"}
+
+
+def test_anonymous_content_allows_one_distinct_sample(client):
+    first = client.get("/api/v1/content/funding/round-a")
+    assert first.status_code == 200
+    assert first.get_json()["access"]["reason"] == "FIRST_SAMPLE"
+    repeated = client.get("/api/v1/content/funding/round-a")
+    assert repeated.status_code == 200
+    second = client.get("/api/v1/content/funding/round-b")
+    assert second.status_code == 403
+    assert second.get_json()["error"]["code"] == "MEMBERSHIP_REQUIRED"
+
+
+def test_pc_trial_can_create_and_complete_native_order(client):
+    account = pc_login(client, value="payer@example.com")
+    created = client.post(
+        "/api/v1/pay/native/orders",
+        headers={"X-CSRF-Token": account["csrfToken"]},
+        json={"planId": "monthly", "idempotencyKey": "native-order-test-0001"},
+    )
+    assert created.status_code == 201
+    assert created.get_json()["payment"]["codeUrl"].startswith("weixin://")
+    order_no = created.get_json()["orderNo"]
+    queried = client.get(f"/api/v1/pay/native/orders/{order_no}")
+    assert queried.status_code == 200
+    assert queried.get_json()["order"]["status"] == "PAID"
+
+
+def test_pc_native_order_creation_is_idempotent(client):
+    account = pc_login(client, value="idempotent-payer@example.com")
+    headers = {"X-CSRF-Token": account["csrfToken"]}
+    payload = {"planId": "monthly", "idempotencyKey": "native-order-test-0002"}
+    first = client.post("/api/v1/pay/native/orders", headers=headers, json=payload)
+    repeated = client.post("/api/v1/pay/native/orders", headers=headers, json=payload)
+    assert first.status_code == 201
+    assert repeated.status_code == 200
+    assert repeated.get_json()["orderNo"] == first.get_json()["orderNo"]
 
 
 def test_analytics_events_are_anonymous_idempotent_and_aggregated(client):
@@ -390,6 +523,15 @@ def test_paid_order_uses_server_price_and_extends_membership(client, plan_id):
 def test_order_requires_authentication(client):
     response = client.post("/api/v1/pay/wechat/orders", json={"planId": "monthly"})
     assert response.status_code == 401
+
+
+def test_invalid_bearer_cannot_fall_back_to_anonymous_content_sample(client):
+    response = client.get(
+        "/api/v1/content/funding/round-a",
+        headers={"Authorization": "Bearer invalid-token", "X-Visitor-ID": "visitor-invalid-bearer-12345"},
+    )
+    assert response.status_code == 401
+    assert response.get_json()["error"]["code"] == "AUTH_INVALID"
 
 
 def test_invalid_plan_is_rejected(client):

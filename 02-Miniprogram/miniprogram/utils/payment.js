@@ -1,5 +1,6 @@
 const API_ROOT = "https://www.zkdlj.vip/api/v1";
 const TOKEN_KEY = "guanlan_api_token_v1";
+const VISITOR_KEY = "guanlan_content_visitor_v1";
 const analytics = require("./analytics.js");
 
 function apiRequest(path, options = {}) {
@@ -12,6 +13,7 @@ function apiRequest(path, options = {}) {
       header: {
         "content-type": "application/json",
         ...(options.token ? { Authorization: `Bearer ${options.token}` } : {}),
+        ...(options.visitorId ? { "X-Visitor-ID": options.visitorId } : {}),
       },
       success(response) {
         if (response.statusCode >= 200 && response.statusCode < 300) return resolve(response.data || {});
@@ -192,6 +194,33 @@ async function recordInviteVisit(inviteCode, visitorKey) {
   return apiRequest("/invites/visit", { method: "POST", data: { inviteCode, visitorKey } });
 }
 
+async function confirmPcLogin(ticket) {
+  if (!ticket) throw new Error("登录二维码无效");
+  return withExistingToken((token) => apiRequest(`/auth/qr-sessions/${encodeURIComponent(ticket)}/confirm`, {
+    method: "POST",
+    token,
+    data: {},
+  }));
+}
+
+function contentVisitorId() {
+  let value = wx.getStorageSync(VISITOR_KEY);
+  if (!value) {
+    value = `${Date.now().toString(36)}.${Math.random().toString(36).slice(2)}.${Math.random().toString(36).slice(2)}`;
+    wx.setStorageSync(VISITOR_KEY, value);
+  }
+  return value;
+}
+
+async function fetchProtectedContent(kind, id) {
+  const token = wx.getStorageSync(TOKEN_KEY) || "";
+  const result = await apiRequest(`/content/${encodeURIComponent(kind)}/${encodeURIComponent(id)}`, {
+    token,
+    visitorId: contentVisitorId(),
+  });
+  return result.content?.mini || result.content;
+}
+
 module.exports = {
   API_ROOT,
   apiRequest,
@@ -207,4 +236,6 @@ module.exports = {
   redeemPoints,
   fetchInviteSummary,
   recordInviteVisit,
+  confirmPcLogin,
+  fetchProtectedContent,
 };

@@ -1,9 +1,10 @@
 const { isWatched, toggleWatch, isCompared, toggleCompare } = require("../../utils/storage.js");
 const { recordBrowse } = require("../../utils/member.js");
-const { getFundingData, refreshFundingData, getFundingDetail } = require("../../utils/live-data.js");
+const { getFundingData } = require("../../utils/live-data.js");
 const { companyEntityKey, investorEntityKey, personEntityKey } = require("../../utils/entity-library.js");
 const { getAccessState, openMembership } = require("../../utils/access.js");
 const { resolveDetailAccess, requestLockedContent } = require("../../utils/metered-access.js");
+const { fetchProtectedContent } = require("../../utils/payment.js");
 
 function normalizedCard(card) {
   if (!card) return null;
@@ -32,16 +33,24 @@ Page({
     const sharedEntry = options.from === "share";
     this.setData({ sharedEntry });
     if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
-    const bundledCard = normalizedCard(getFundingData().details[this.cardId]);
-    if (bundledCard) this.renderCard(bundledCard);
-    refreshFundingData().then(() => getFundingDetail(this.cardId)).then((detail) => {
-      const card = normalizedCard(detail);
-      if (card) this.renderCard(card);
-      else if (!this.data.card) {
-        wx.showToast({ title: "融资记录不存在", icon: "none" });
-        setTimeout(() => wx.navigateBack(), 500);
+    const preview = getFundingData().index.cards.find((item) => item.id === this.cardId);
+    if (preview) this.renderCard(normalizedCard(preview));
+    this.verifyServerAccess();
+  },
+
+  async verifyServerAccess() {
+    if (!this.cardId) return;
+    try {
+      const detail = await fetchProtectedContent("funding", this.cardId);
+      if (detail) this.renderCard(normalizedCard(detail));
+      this.setData({ contentLocked: false, lockReason: "server" });
+    } catch (error) {
+      if (error.statusCode === 401 || error.statusCode === 403 || error.code === "MEMBERSHIP_REQUIRED" || error.code === "AUTH_INVALID") {
+        this.setData({ contentLocked: true, lockReason: getAccessState() === "expired" ? "expired" : "unregistered" });
+      } else if (!this.data.card) {
+        wx.showToast({ title: "融资记录暂时无法读取", icon: "none" });
       }
-    });
+    }
   },
 
   renderCard(card) {
