@@ -72,5 +72,6 @@ python scripts/provision_virtual_products.py --env 0
 - `POST /api/v1/analytics/events`：接收小程序与 PC 端的匿名访问事件，单批最多 20 条；事件按 `eventId` 幂等写入。
 - `GET /api/v1/admin/analytics/summary?days=7&platform=all`：返回访问、页面、内容、注册、付费、退款和漏斗聚合；需要 `Authorization: Bearer <ANALYTICS_ADMIN_TOKEN>`。
 - 注册、支付、退款、积分兑换和社群申请均由服务端记录，运营口径不依赖客户端成功提示。
+- `ANALYTICS_LIVE_FROM` 定义正式运营统计起点（ISO 8601）；起点前的访问事件、注册和订单不进入运营汇总，离线队列中的旧测试事件也不会重新写入。
 - 生产环境必须设置随机 `ANALYTICS_ADMIN_TOKEN`；令牌不得写入仓库，只在运营后台当前浏览器会话中使用。
 - 默认允许 `https://www.zkdlj.vip` 与 WaveSight GitHub Pages 读取；若内部站点域名变化，通过 `ANALYTICS_ALLOWED_ORIGINS` 调整。

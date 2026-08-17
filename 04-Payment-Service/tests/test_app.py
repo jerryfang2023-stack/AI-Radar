@@ -256,6 +256,42 @@ def test_analytics_cors_allows_configured_portal_origin(client):
     assert response.headers["Access-Control-Allow-Origin"] == "https://www.zkdlj.vip"
 
 
+def test_analytics_live_cutoff_rejects_demo_history_and_scopes_server_truth(client):
+    login(client, "prelaunch-user")
+    cutoff = datetime.now(timezone.utc).replace(microsecond=0) + timedelta(minutes=1)
+    client.application.config.update(
+        ANALYTICS_ADMIN_TOKEN="admin-test-token",
+        ANALYTICS_LIVE_FROM=cutoff.isoformat(),
+    )
+
+    stale = client.post("/api/v1/analytics/events", json={"events": [analytics_event(
+        eventId="event-stale-demo",
+        visitorId="visitor-stale-demo",
+        sessionId="session-stale-demo",
+        occurredAt=(cutoff - timedelta(minutes=1)).isoformat(),
+    )]})
+    assert stale.status_code == 200
+    assert stale.get_json() == {"accepted": 0, "received": 1}
+
+    live = client.post("/api/v1/analytics/events", json={"events": [analytics_event(
+        eventId="event-live-real",
+        visitorId="visitor-live-real",
+        sessionId="session-live-real",
+        occurredAt=(cutoff + timedelta(seconds=1)).isoformat(),
+    )]})
+    assert live.status_code == 200
+    assert live.get_json() == {"accepted": 1, "received": 1}
+
+    payload = client.get(
+        "/api/v1/admin/analytics/summary?days=7",
+        headers={"Authorization": "Bearer admin-test-token"},
+    ).get_json()
+    assert payload["dataSource"] == "production"
+    assert payload["trackingSince"] == cutoff.isoformat(timespec="seconds")
+    assert payload["overview"]["visitors"] == 1
+    assert payload["overview"]["newRegistrations"] == 0
+
+
 def test_login_creates_seven_day_trial(client):
     token = login(client)
     response = client.get("/api/v1/member/me", headers=auth(token))

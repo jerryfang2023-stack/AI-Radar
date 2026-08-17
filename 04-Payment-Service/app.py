@@ -75,6 +75,7 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         COMMUNITY_SERVICE_URL=os.getenv("COMMUNITY_SERVICE_URL", "http://127.0.0.1:8000"),
         COMMUNITY_SERVICE_TOKEN=os.getenv("COMMUNITY_SERVICE_TOKEN", ""),
         ANALYTICS_ADMIN_TOKEN=os.getenv("ANALYTICS_ADMIN_TOKEN", ""),
+        ANALYTICS_LIVE_FROM=os.getenv("ANALYTICS_LIVE_FROM", ""),
         ANALYTICS_ALLOWED_ORIGINS=os.getenv(
             "ANALYTICS_ALLOWED_ORIGINS",
             "https://www.zkdlj.vip,https://jerryfang2023-stack.github.io",
@@ -447,6 +448,18 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         encoded = json.dumps(cleaned, ensure_ascii=False, separators=(",", ":"))
         return cleaned if len(encoded.encode("utf-8")) <= 4096 else {}
 
+    def analytics_live_from():
+        value = str(app.config.get("ANALYTICS_LIVE_FROM") or "").strip()
+        if not value:
+            return None
+        try:
+            parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        except ValueError:
+            return None
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=timezone.utc)
+        return parsed.astimezone(timezone.utc)
+
     def parse_analytics_time(value):
         try:
             parsed = datetime.fromisoformat(str(value or "").replace("Z", "+00:00"))
@@ -456,7 +469,9 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         except (TypeError, ValueError):
             return utcnow()
         now = utcnow()
-        if parsed < now - timedelta(days=7) or parsed > now + timedelta(minutes=10):
+        if parsed < now - timedelta(days=7):
+            return None
+        if parsed > now + timedelta(minutes=10):
             return now
         return parsed
 
@@ -479,6 +494,9 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         referrer = str(event.get("referrer") or "").strip().split("?", 1)[0].split("#", 1)[0][:240]
         app_version = str(event.get("appVersion") or "").strip()[:32]
         occurred_at = parse_analytics_time(event.get("occurredAt"))
+        live_from = analytics_live_from()
+        if occurred_at is None or (live_from and occurred_at < live_from):
+            return False
         before = conn.total_changes
         conn.execute(
             """INSERT OR IGNORE INTO analytics_events(
@@ -723,7 +741,9 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         local_timezone = timezone(timedelta(hours=8))
         local_today = now.astimezone(local_timezone).date()
         local_start = local_today - timedelta(days=days - 1)
-        start = datetime.combine(local_start, datetime.min.time(), tzinfo=local_timezone).astimezone(timezone.utc)
+        requested_start = datetime.combine(local_start, datetime.min.time(), tzinfo=local_timezone).astimezone(timezone.utc)
+        live_from = analytics_live_from()
+        start = max(requested_start, live_from) if live_from else requested_start
         params = [iso(start)]
         platform_clause = ""
         if platform != "all":
@@ -834,6 +854,8 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
             })
         return jsonify(
             generatedAt=iso(now),
+            trackingSince=iso(live_from) if live_from else None,
+            dataSource="production",
             filters={"days": days, "platform": platform},
             overview={
                 "visitors": unique_visitors,

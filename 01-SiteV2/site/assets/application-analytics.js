@@ -75,6 +75,10 @@
     renderTable("[data-top-pages]", data.topPages || []);
     renderTable("[data-top-content]", data.topContent || [], true);
     renderPlatforms(data);
+    const trackingSince = data.trackingSince
+      ? new Date(data.trackingSince).toLocaleString("zh-CN", { hour12: false })
+      : "正式统计起点未配置";
+    $("[data-tracking-since]").textContent = `自 ${trackingSince} 起`;
     $("[data-generated-at]").textContent = `更新于 ${new Date(data.generatedAt).toLocaleString("zh-CN", { hour12: false })}`;
     $("[data-status]").textContent = "";
     $("[data-status]").classList.remove("is-error");
@@ -89,6 +93,7 @@
       const response = await fetch(url, { headers: { Authorization: `Bearer ${state.token}` }, cache: "no-store" });
       const payload = await response.json().catch(() => ({}));
       if (!response.ok) throw new Error(payload.error?.message || "数据读取失败");
+      if (payload.dataSource !== "production" || !payload.trackingSince) throw new Error("真实数据口径尚未启用");
       render(payload);
     } catch (error) {
       if (/令牌|访问/.test(error.message)) {
