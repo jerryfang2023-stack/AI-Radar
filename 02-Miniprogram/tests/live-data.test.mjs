@@ -62,20 +62,20 @@ test("projects the VPS funding contract into the native mini program contract", 
 test("projects live report index and Markdown body", () => {
   const result = projectPortalReportData({
     reports: [{
-      id: "weekly-2026-w32",
+      id: "weekly-2026-w33",
       contentType: "weekly-report",
       typeLabel: "周报",
-      date: "2026-08-10",
-      window: "2026-08-03 至 2026-08-09",
+      date: "2026-08-17",
+      window: "2026-08-10 至 2026-08-16",
       title: "测试周报",
       summary: "摘要",
       stats: ["商业事件 10 条", "一线观点 2 条", "社群观察 3 条"],
     }],
   }, {
-    bodies: { "weekly-2026-w32": { markdown: "## 一句话结论\n\n这是正文。\n\n- 第一条" } },
+    bodies: { "weekly-2026-w33": { markdown: "## 一句话结论\n\n这是正文。\n\n- 第一条" } },
   });
   assert.equal(result.index.meta.reportCount, 1);
-  assert.equal(result.index.reports[0].id, "weekly-2026-08-10");
-  assert.equal(result.details["weekly-2026-08-10"].blocks[0].type, "heading");
+  assert.equal(result.index.reports[0].id, "weekly-2026-08-17");
+  assert.equal(result.details["weekly-2026-08-17"].blocks[0].type, "heading");
   assert.equal(result.index.reports[0].counts.signals, 10);
 });
