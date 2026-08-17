@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-15T16:34:05.002Z",
+  "generatedAt": "2026-08-17T01:16:48.830Z",
   "stats": {
     "blogsBuilt": 4,
-    "totalItems": 30,
+    "totalItems": 28,
     "sourceCount": 6,
     "errors": []
   },
@@ -12,6 +12,46 @@
       "handle": "simonwillison.net",
       "bio": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "tweets": [
+        {
+          "id": "https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/",
+          "text": "Markdown SVG upgrades",
+          "summary": "<p>I started building my <a href=\"https://tools.simonwillison.net/markdown-svg-renderer\">markdown-svg-renderer</a> tool <a href=\"https://tools.simonwillison.net/colophon#markdown-svg-renderer.html\">in May</a>, but I've since added enough features to it that it's worth talking about here again.</p>\n<",
+          "createdAt": "2026-08-16T23:59:37+00:00",
+          "url": "https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+          "text": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things",
+          "summary": "<p>Friday's big release was <a href=\"https://huggingface.co/Qwen/Qwen3.8-27B\">Qwen 3.8 27B</a>, an Apache 2 licensed 27B parameter vision-capable LLM from Alibaba's Qwen research lab. I've been looking forward to this one: 27B is an excellent size for running a model on a reasonably specced laptop, ",
+          "createdAt": "2026-08-16T22:00:39+00:00",
+          "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Aug/16/dario-amodei/",
+          "text": "Quoting Dario Amodei",
+          "summary": "<blockquote cite=\"https://twitter.com/darioamodei/status/2088758819304443967\"><p>I do agree that the public has a negative view of AI (and that this is a big problem), but I don’t think it is primarily caused by me or any other AI leader warning about AI’s risks.  I think it is fundamentally a crisi",
+          "createdAt": "2026-08-16T15:05:36+00:00",
+          "url": "https://simonwillison.net/2026/Aug/16/dario-amodei/",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Aug/15/cors-chat/",
+          "text": "CORS Chat",
+          "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/cors-chat\">CORS Chat</a></p>\n        <p>I built this today (<a href=\"https://gist.github.com/simonw/92a1d97773744b45bf259e003013cf36\">with GPT-5.6-Sol xhigh</a>) to help test Qwen 3.8 27B running in LM Studio on both my M5 MacBook Pr",
+          "createdAt": "2026-08-15T14:49:54+00:00",
+          "url": "https://simonwillison.net/2026/Aug/15/cors-chat/",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://simonwillison.net/2026/Aug/15/sighting-391300422/",
           "text": "Northern Gannet",
@@ -151,46 +191,6 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/",
-          "text": "Quoting Claude Opus 5 system prompt",
-          "summary": "<blockquote cite=\"https://platform.claude.com/docs/en/release-notes/system-prompts#claude-opus-5\"><p>Claude Fable 5 and Claude Mythos 5 were first released on June 9, 2026. On June 12, 2026, Anthropic suspended access to both models to comply with U.S. Department of Commerce export controls; the Dep",
-          "createdAt": "2026-08-09T23:31:39+00:00",
-          "url": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/",
-          "text": "GitHub Models is now retired",
-          "summary": "<p><strong><a href=\"https://github.blog/changelog/2026-07-30-github-models-is-now-retired/\">GitHub Models is now retired</a></strong></p>\nI missed this news until today, when the GitHub Actions run for my <a href=\"https://github.com/simonw/research\">simonw/research</a> repository failed with this er",
-          "createdAt": "2026-08-09T22:48:05+00:00",
-          "url": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Aug/9/sqlite-text-history-prototype/",
-          "text": "SQLite compressed text-history prototypes",
-          "summary": "<p><strong>Research:</strong> <a href=\"https://github.com/simonw/research/tree/main/sqlite-text-history-prototype#readme\">SQLite compressed text-history prototypes</a></p>\n        <p>I'm perennially interested in options for storing revision histories in relational databases. While out on a dog walk",
-          "createdAt": "2026-08-09T22:05:00+00:00",
-          "url": "https://simonwillison.net/2026/Aug/9/sqlite-text-history-prototype/",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Aug/8/auto-mode/",
-          "text": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans",
-          "summary": "<p><strong><a href=\"https://claude.com/blog/auto-mode-default-in-claude-code\">Auto mode is now the default in Claude Code for Pro, Max, and Team plans</a></strong></p>\nAnthropic are <em>really</em> confident in Claude Code's <a href=\"https://code.claude.com/docs/en/auto-mode-config\">auto mode</a>, t",
-          "createdAt": "2026-08-08T22:36:03+00:00",
-          "url": "https://simonwillison.net/2026/Aug/8/auto-mode/",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
         }
       ]
     },
@@ -225,16 +225,6 @@
           "summary": "After a few long years of finding time to document my lessons from training open models, my post-training book is done!",
           "createdAt": "Mon, 10 Aug 2026 13:02:42 GMT",
           "url": "https://www.interconnects.ai/p/5-useful-things-youll-learn-in-my",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://www.interconnects.ai/p/lessons-from-the-hacks",
-          "text": "Lessons from the hacks",
-          "summary": "Musings on model alignment, what determines safety, and where we go from here.",
-          "createdAt": "Sun, 09 Aug 2026 14:57:11 GMT",
-          "url": "https://www.interconnects.ai/p/lessons-from-the-hacks",
           "likes": 0,
           "retweets": 0,
           "replies": 0
@@ -319,16 +309,6 @@
           "summary": "",
           "createdAt": "Tue, 11 Aug 2026 00:00:00 GMT",
           "url": "https://tldr.tech/ai/2026-08-11",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://tldr.tech/ai/2026-08-10",
-          "text": "OpenAI Astra pause 🚨, Claude Code cross-session 🤖, how Cursor Router works 🔀",
-          "summary": "",
-          "createdAt": "Mon, 10 Aug 2026 00:00:00 GMT",
-          "url": "https://tldr.tech/ai/2026-08-10",
           "likes": 0,
           "retweets": 0,
           "replies": 0
