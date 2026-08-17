@@ -1,7 +1,7 @@
 ---
 status: current
 scope: site-v4-automation
-last_updated: 2026-08-15
+last_updated: 2026-08-17
 priority: current
 ---
 
@@ -45,6 +45,12 @@ candidate Markdown are no longer written. Immutable original snapshots remain.
 Health dispatch reads the V4 manifest and `COLLECTION-TELEMETRY-V1.0`. An
 accepted V4 batch must not trigger source recollection because an archived V3
 asset is absent.
+
+Daily supervision treats each published lane bundle, its quality gate, and its
+manifest as one atomic evidence snapshot. When the primary worktree is behind
+and supervision reads a same-date bundle from `origin/main`, it must read the
+matching gate and manifest from that same published ref; mixing published data
+with stale local gate files is forbidden because it can create a false repair.
 
 ## Local Windows schedule
 
