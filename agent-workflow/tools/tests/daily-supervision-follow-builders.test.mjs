@@ -232,6 +232,65 @@ test("historical morning health uses its exact-date gate and manifest", async ()
   }
 });
 
+test("morning supervision keeps published data paired with its published gate", async () => {
+  const originalCwd = process.cwd();
+  const originalArgv = process.argv;
+  const fixtureRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-first-line-published-gate-"));
+  const date = "2026-07-24";
+  try {
+    const dataFile = path.join(fixtureRoot, "01-SiteV2", "site", "data", "follow-builders-daily.json");
+    const reportDir = path.join(fixtureRoot, "agent-workflow", "reports");
+    const gateFile = path.join(reportDir, `${date}-follow-builders-data-gate.md`);
+    const manifestFile = path.join(reportDir, `${date}-first-line-viewpoints-manifest.md`);
+    fs.mkdirSync(path.dirname(dataFile), { recursive: true });
+    fs.mkdirSync(reportDir, { recursive: true });
+    fs.writeFileSync(dataFile, JSON.stringify({
+      meta: { generatedAt: "2026-07-24T01:00:00.000Z" },
+      stats: { remarks: 20, builders: 10 },
+    }), "utf8");
+    fs.writeFileSync(gateFile, "# Follow Builders Data Gate\n\n- status: passed\n", "utf8");
+    fs.writeFileSync(manifestFile, [
+      `# ${date} First-Line Viewpoints Manifest`,
+      "",
+      "- builders_data: success",
+      "- builders_gate: success",
+      "",
+    ].join("\n"), "utf8");
+    runGit(fixtureRoot, ["init"]);
+    runGit(fixtureRoot, ["add", "."]);
+    runGit(fixtureRoot, [
+      "-c", "user.name=Test",
+      "-c", "user.email=test@example.com",
+      "commit", "-m", "published fixture",
+    ]);
+    runGit(fixtureRoot, ["update-ref", "refs/remotes/origin/main", "HEAD"]);
+
+    fs.writeFileSync(dataFile, JSON.stringify({
+      meta: { generatedAt: "2026-07-23T01:00:00.000Z" },
+      stats: { remarks: 20, builders: 10 },
+    }), "utf8");
+    fs.writeFileSync(gateFile, "# Follow Builders Data Gate\n\n- status: failed\n", "utf8");
+    fs.writeFileSync(manifestFile, "# stale local manifest\n", "utf8");
+
+    const supervisor = await loadSupervisor(
+      fixtureRoot,
+      [`--date=${date}`, "--github=off", "--scheduled-task=off", "--hermes=off"],
+      "published-gate",
+    );
+    const lane = supervisor.buildFirstLineLane();
+    assert.equal(lane.evidence.dataSource, "origin/main");
+    assert.equal(lane.evidence.gateStatus, "passed");
+    assert.match(lane.evidence.gateReport, /^origin\/main:/u);
+    assert.match(lane.evidence.manifest, /^origin\/main:/u);
+    assert.equal(lane.evidence.localDataHealthy, true);
+    assert.equal(lane.problems.length, 0);
+  } finally {
+    process.chdir(originalCwd);
+    process.argv = originalArgv;
+    fs.rmSync(fixtureRoot, { recursive: true, force: true });
+  }
+});
+
 test("confirmed Community Intelligence publication prevents recurring task-result noise", async () => {
   const originalCwd = process.cwd();
   const originalArgv = process.argv;
