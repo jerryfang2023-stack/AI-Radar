@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-16T05:25:07.181Z",
-    "latestDataDate": "2026-08-16",
-    "currentDate": "2026-08-16",
-    "eventCount": 2150,
+    "generatedAt": "2026-08-17T00:24:11.459Z",
+    "latestDataDate": "2026-08-17",
+    "currentDate": "2026-08-17",
+    "eventCount": 2171,
     "quarantinedEventCount": 19
   },
   "entity": {
@@ -41,6 +41,7 @@
       "EV-e1a4bc40db4a9d8f",
       "EV-3d9aa640411471ea",
       "EV-2a833330267cb2df",
+      "EV-c87e32451657c301",
       "EV-5fe819e7070b76e6",
       "EV-defb496c46fcc604",
       "EV-f7b81752b1fadd87",
@@ -117,7 +118,7 @@
       "EN-d65d81c60c0c47c4"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-08-16",
+    "lastSeen": "2026-08-17",
     "organizationFamilyId": "EN-047364b9be67f665",
     "organizationRole": "group",
     "organizationFamilyEntityIds": [
@@ -157,9 +158,10 @@
         "EV-2a833330267cb2df"
       ],
       "productsServices": [
+        "EV-c87e32451657c301",
+        "EV-f7b81752b1fadd87",
         "EV-5fe819e7070b76e6",
         "EV-defb496c46fcc604",
-        "EV-f7b81752b1fadd87",
         "EV-5c30f52112d92491",
         "EV-497344d95d593cf6",
         "EV-0679a9b49b53ddbd",
@@ -217,6 +219,50 @@
     },
     "timeline": [
       {
+        "id": "EV-c87e32451657c301",
+        "dataDate": "2026-08-17",
+        "date": "2026-08-17",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Qwen 3.8 27B 表现出色，但默认推理强度过高导致过度思考",
+        "displayTags": [],
+        "entityIds": [
+          "EN-f2106df71672511b",
+          "EN-047364b9be67f665"
+        ]
+      },
+      {
+        "id": "EV-f7b81752b1fadd87",
+        "dataDate": "2026-08-17",
+        "date": "2026-08-14",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "苹果与阿里巴巴合作，为中国训练自有AI模型",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-3a7bd3e2360a3d29"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-3a7bd3e2360a3d29",
+          "EN-047364b9be67f665"
+        ]
+      },
+      {
         "id": "EV-5fe819e7070b76e6",
         "dataDate": "2026-08-16",
         "date": "2026-08-15",
@@ -260,34 +306,6 @@
           "EN-1ea953e1dbed6788",
           "EN-047364b9be67f665",
           "EN-784ec8fabd647423"
-        ]
-      },
-      {
-        "id": "EV-f7b81752b1fadd87",
-        "dataDate": "2026-08-16",
-        "date": "2026-08-14",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "rumored",
-        "statusLabel": "rumored",
-        "title": "苹果与阿里巴巴合作，为中国训练自有AI模型",
-        "displayTags": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "model",
-            "name": "模型",
-            "entityIds": [
-              "EN-3a7bd3e2360a3d29"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-3a7bd3e2360a3d29",
-          "EN-047364b9be67f665"
         ]
       },
       {
@@ -3201,6 +3219,7 @@
         "EV-01df8e489a34893b",
         "EV-afd0332ad8f5f05b",
         "EV-cab03fca079f62e6",
+        "EV-040744ef8b205e0d",
         "EV-129ffa6be41bb485",
         "EV-8619e2d881669888",
         "EV-76e7dc691b68fa04",
@@ -3235,6 +3254,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-4551be310b520fcc",
         "EV-ea2598236eae915f",
         "EV-c92db935a2cef0d6",
         "EV-576e81e479b78605",
@@ -3497,6 +3517,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-9db14ad0d6fe3135",
         "EV-7a3a3754522828e1",
         "EV-2c17183b71d8b7d1",
         "EV-67a7a3c9f1eabd22",
@@ -3652,6 +3673,7 @@
         "EN-916a98f0fa2a39af",
         "EN-8d291c7017252b07",
         "EN-f8048254c29fa79e",
+        "EN-2db317222c996b63",
         "EN-6c0f28e4fa82c2a5",
         "EN-82a31e57d3a2fa17",
         "EN-4e358c403850a88a",
@@ -3666,6 +3688,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-3b9e1cdd9e593b5c",
         "EN-bbdefa2950f49882",
         "EN-b93006774cbdd4b2",
         "EN-6f7ac1823da81d2e",
@@ -3803,6 +3826,7 @@
         "EN-fdb2cc367267ac57",
         "EN-4a639cb888a15d75",
         "EN-0616a267820d2c78",
+        "EN-286a3c612017ad1d",
         "EN-16478186eeecf696",
         "EN-f90aec90acf3dc85",
         "EN-96045bee6a2d2527",
@@ -3837,6 +3861,7 @@
         "FDE-de1562b0634b20ed",
         "FDE-d693e68f89adf86a",
         "FDE-ab9c514225686f60",
+        "FDE-360d1ff40e647eda",
         "FDE-ed781e27a7b9458e",
         "FDE-8506e8248e149161",
         "FDE-e780a756aeb71dfc",
@@ -4304,7 +4329,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "TX-use_case-data_analysis",
@@ -4451,6 +4476,7 @@
         "EV-c5d7d88d1aef8edb",
         "EV-cded77b1de2db61a",
         "EV-535c2f4fb851332d",
+        "EV-b69f78a4919cb1bc",
         "EV-0fc718ab409cdcf5",
         "EV-0121f0a9e9a975ec",
         "EV-b25b396e368ee4d9",
@@ -4480,8 +4506,9 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
-        "EV-c17a52220be52dc1",
+        "EV-63948deaec161736",
         "EV-f7b81752b1fadd87",
+        "EV-c17a52220be52dc1",
         "EV-be4b6dc8829070e5",
         "EV-576e81e479b78605",
         "EV-397a17aa878564c4",
@@ -4670,6 +4697,7 @@
         "EN-cd35ca6b5c3cf23c",
         "EN-883be863cc6562bb",
         "EN-a83a3af1a4866fd5",
+        "EN-f420373dc2aa4371",
         "EN-29b9f0cae32e7a8a",
         "EN-e9fc4f156e36f6aa",
         "EN-bd6769fe78d0971a",
@@ -4684,8 +4712,8 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
-        "EN-ea3bd73e2b506e00",
         "EN-3a7bd3e2360a3d29",
+        "EN-ea3bd73e2b506e00",
         "EN-bbdefa2950f49882",
         "EN-b93006774cbdd4b2",
         "EN-e32ac33fa53a3db6",
@@ -4787,7 +4815,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "TX-use_case-productivity_enterprise_workflows",
@@ -5009,7 +5037,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "TX-technology-computer_use",
@@ -5257,7 +5285,7 @@
         "HW-304c6370cc157449"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "TX-technology-video_generation",

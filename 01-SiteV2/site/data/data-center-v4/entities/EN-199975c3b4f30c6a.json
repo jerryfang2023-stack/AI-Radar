@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-16T05:25:07.181Z",
-    "latestDataDate": "2026-08-16",
-    "currentDate": "2026-08-16",
-    "eventCount": 2150,
+    "generatedAt": "2026-08-17T00:24:11.459Z",
+    "latestDataDate": "2026-08-17",
+    "currentDate": "2026-08-17",
+    "eventCount": 2171,
     "quarantinedEventCount": 19
   },
   "entity": {
@@ -30,7 +30,7 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-13",
-    "lastSeen": "2026-08-16",
+    "lastSeen": "2026-08-17",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -48,7 +48,7 @@
     "timeline": [
       {
         "id": "EV-5ede0f85a672441c",
-        "dataDate": "2026-08-16",
+        "dataDate": "2026-08-17",
         "date": "2026-08-14",
         "eventType": "product_release",
         "eventTypeLabel": "产品发布",
@@ -131,13 +131,13 @@
     {
       "id": "HWC-0b534eaa4b846780",
       "snapshotKey": "0b534eaa4b846780",
-      "snapshotId": "HWS-3bb2f4b05c20514a",
+      "snapshotId": "HWS-2097a5f84465e0d1",
       "eventId": "EV-5ede0f85a672441c",
       "eventIds": [
         "EV-5ede0f85a672441c"
       ],
-      "dataDate": "2026-08-16",
-      "date": "2026-08-16",
+      "dataDate": "2026-08-17",
+      "date": "2026-08-17",
       "title": "Harness",
       "subject": "派早报",
       "productNames": [
@@ -151,12 +151,21 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-1c6dab6a1f266fa8"
+          "fact_ref": "HWF-aa16f6a362d4d81c"
         }
       },
       "factCount": 1,
-      "snapshotCount": 2,
+      "snapshotCount": 3,
       "changes": [
+        {
+          "date": "2026-08-17",
+          "previousDate": "2026-08-16",
+          "snapshotId": "HWS-2097a5f84465e0d1",
+          "previousSnapshotId": "HWS-3bb2f4b05c20514a",
+          "changedFacts": [
+            "product"
+          ]
+        },
         {
           "date": "2026-08-16",
           "previousDate": "2026-08-15",
@@ -171,8 +180,8 @@
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-16",
-          "hardware_fact_id": "HWF-1c6dab6a1f266fa8",
+          "data_date": "2026-08-17",
+          "hardware_fact_id": "HWF-aa16f6a362d4d81c",
           "fact_type": "product",
           "observed_at": "2026-08-14T00:52:24.000Z",
           "subject_entity_id": "EN-478676438ee161a3",
@@ -190,11 +199,11 @@
           "event_refs": [
             "EV-5ede0f85a672441c"
           ],
-          "claim_ref": "CL-c17ccaf36da5c6ca",
+          "claim_ref": "CL-bede258889557ecc",
           "source_refs": [
-            "SA-cc37fee199882b81"
+            "SA-d42ca41774d2e277"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-16/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-17/hardware-facts.json"
         }
       ],
       "capexFacts": [],

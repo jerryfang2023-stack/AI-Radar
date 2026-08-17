@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-16T05:25:07.181Z",
-    "latestDataDate": "2026-08-16",
-    "currentDate": "2026-08-16",
-    "eventCount": 2150,
+    "generatedAt": "2026-08-17T00:24:11.459Z",
+    "latestDataDate": "2026-08-17",
+    "currentDate": "2026-08-17",
+    "eventCount": 2171,
     "quarantinedEventCount": 19
   },
   "entity": {
@@ -22,17 +22,20 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-b69f78a4919cb1bc",
       "EV-72d4a00d52a3201c"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-14",
-    "lastSeen": "2026-08-15",
+    "lastSeen": "2026-08-17",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
-      "deployments": [],
+      "deployments": [
+        "EV-b69f78a4919cb1bc"
+      ],
       "partnerships": [],
       "productsServices": [
         "EV-72d4a00d52a3201c"
@@ -42,6 +45,35 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-b69f78a4919cb1bc",
+        "dataDate": "2026-08-17",
+        "date": "2026-08-16",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "千问办公首发上线 GLM-5.3 和 DeepSeek V4 Pro 模型，可直接选用",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-f420373dc2aa4371"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-f420373dc2aa4371",
+          "EN-6f7ac1823da81d2e",
+          "EN-e3ea8280d7689bb7"
+        ]
+      },
       {
         "id": "EV-72d4a00d52a3201c",
         "dataDate": "2026-08-15",

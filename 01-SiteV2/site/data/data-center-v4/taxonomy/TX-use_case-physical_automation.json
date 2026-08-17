@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-16T05:25:07.181Z",
-    "latestDataDate": "2026-08-16",
-    "currentDate": "2026-08-16",
-    "eventCount": 2150,
+    "generatedAt": "2026-08-17T00:24:11.459Z",
+    "latestDataDate": "2026-08-17",
+    "currentDate": "2026-08-17",
+    "eventCount": 2171,
     "quarantinedEventCount": 19
   },
   "node": {
@@ -54,6 +54,7 @@
       "EV-af8e95dbe06ac083",
       "EV-876baa523eb93c4f",
       "EV-cec68369662236fd",
+      "EV-d8748baee002e2b6",
       "EV-cafe435ddd007821",
       "EV-434dcf1813a84ead",
       "EV-f059fd80d668c6bc",
@@ -146,6 +147,7 @@
       "EN-8dc72a4672894e0f",
       "EN-9a1a3ee1f50745c6",
       "EN-36dde5de93197cee",
+      "EN-633a148f6f72e81b",
       "EN-3b39ea849059759f",
       "EN-3cce50ffb12f1a69",
       "EN-85f0c155e340fb63",
@@ -192,7 +194,7 @@
       "HW-dca442211b264bbe"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-08-16"
+    "lastSeen": "2026-08-17"
   },
   "events": [
     {
@@ -12169,6 +12171,86 @@
       "publisher": "每日经济新闻"
     },
     {
+      "id": "EV-d8748baee002e2b6",
+      "dataDate": "2026-08-17",
+      "date": "2026-08-16",
+      "updatedDate": "2026-08-17",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "全国首家 AI 家庭机器人旗舰店落地青岛，海尔外骨骼机器人可现场试穿",
+      "originalTitle": "",
+      "subject": "全国首家 AI 家庭机器人旗舰店",
+      "action": "落地",
+      "object": "青岛，海尔外骨骼机器人可现场试穿",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-633a148f6f72e81b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-633a148f6f72e81b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-633a148f6f72e81b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-633a148f6f72e81b"
+      ],
+      "entityNames": [
+        "全国首家 AI 家庭机器人旗舰店"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/990/337.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-cafe435ddd007821",
       "dataDate": "2026-07-18",
       "date": "2026-07-16",
@@ -14059,9 +14141,9 @@
     },
     {
       "id": "EV-5ede0f85a672441c",
-      "dataDate": "2026-08-16",
+      "dataDate": "2026-08-17",
       "date": "2026-08-14",
-      "updatedDate": "2026-08-16",
+      "updatedDate": "2026-08-17",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
@@ -14085,10 +14167,10 @@
           "cn-sspai-rss"
         ],
         "claim_refs": [
-          "CL-fad3011cf957a2e3",
-          "CL-95e1f58089908340",
-          "CL-c17ccaf36da5c6ca",
-          "CL-98c0ef3b905b6d46"
+          "CL-8934bd71cee17814",
+          "CL-765204a96bb0e908",
+          "CL-bede258889557ecc",
+          "CL-aaff4b43ee38a047"
         ]
       },
       "missingFields": [],
@@ -20132,9 +20214,7 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -20368,31 +20448,24 @@
       "relatedEntityIds": [
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
-        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
-        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
-        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-171fa23d27b5894b"
+        "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-6b5df3bd8bb0c67d",
@@ -20570,6 +20643,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-d57fb9108f2cb220",
         "EV-1744d0e71176f9a1",
         "EV-a6cb4aef5284eb68",
         "EV-9bbe5a98b14acd7f",
@@ -20590,6 +20664,7 @@
         "EV-8a91e14f37d32b4d",
         "EV-31782f0824ae1db1",
         "EV-3c51bcb5e99d2b68",
+        "EV-9356dd1be92ef5c6",
         "EV-9e2c443eae76fb50",
         "EV-cdc6611d6b115cab",
         "EV-07388b042db1bad0",
@@ -20617,7 +20692,7 @@
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-05-21",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-53453cfb48a75dde",
@@ -21018,6 +21093,27 @@
       "lastSeen": "2026-08-03"
     },
     {
+      "id": "EN-633a148f6f72e81b",
+      "name": "全国首家 AI 家庭机器人旗舰店",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d8748baee002e2b6"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-physical_automation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-16",
+      "lastSeen": "2026-08-17"
+    },
+    {
       "id": "EN-3b39ea849059759f",
       "name": "Apptronik",
       "entityType": "organization_candidate",
@@ -21170,7 +21266,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-e59f5a52b6713a29",
@@ -22239,13 +22335,13 @@
     {
       "id": "HWC-0b534eaa4b846780",
       "snapshotKey": "0b534eaa4b846780",
-      "snapshotId": "HWS-3bb2f4b05c20514a",
+      "snapshotId": "HWS-2097a5f84465e0d1",
       "eventId": "EV-5ede0f85a672441c",
       "eventIds": [
         "EV-5ede0f85a672441c"
       ],
-      "dataDate": "2026-08-16",
-      "date": "2026-08-16",
+      "dataDate": "2026-08-17",
+      "date": "2026-08-17",
       "title": "Harness",
       "subject": "派早报",
       "productNames": [
@@ -22259,12 +22355,21 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-1c6dab6a1f266fa8"
+          "fact_ref": "HWF-aa16f6a362d4d81c"
         }
       },
       "factCount": 1,
-      "snapshotCount": 2,
+      "snapshotCount": 3,
       "changes": [
+        {
+          "date": "2026-08-17",
+          "previousDate": "2026-08-16",
+          "snapshotId": "HWS-2097a5f84465e0d1",
+          "previousSnapshotId": "HWS-3bb2f4b05c20514a",
+          "changedFacts": [
+            "product"
+          ]
+        },
         {
           "date": "2026-08-16",
           "previousDate": "2026-08-15",
@@ -22279,8 +22384,8 @@
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-16",
-          "hardware_fact_id": "HWF-1c6dab6a1f266fa8",
+          "data_date": "2026-08-17",
+          "hardware_fact_id": "HWF-aa16f6a362d4d81c",
           "fact_type": "product",
           "observed_at": "2026-08-14T00:52:24.000Z",
           "subject_entity_id": "EN-478676438ee161a3",
@@ -22298,11 +22403,11 @@
           "event_refs": [
             "EV-5ede0f85a672441c"
           ],
-          "claim_ref": "CL-c17ccaf36da5c6ca",
+          "claim_ref": "CL-bede258889557ecc",
           "source_refs": [
-            "SA-cc37fee199882b81"
+            "SA-d42ca41774d2e277"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-16/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-17/hardware-facts.json"
         }
       ],
       "capexFacts": [],
