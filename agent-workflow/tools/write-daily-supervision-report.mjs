@@ -674,11 +674,11 @@ export function buildFirstLineLane() {
   const data = usePublishedData ? publishedData : localData;
   const generatedDate = shanghaiDate(data?.meta?.generatedAt || "");
   const localGateText = readText(gateFile);
-  const publishedGateText = localGateText ? "" : readTextFromGit("origin/main", gateFile);
-  const gateText = localGateText || publishedGateText;
+  const publishedGateText = usePublishedData || !localGateText ? readTextFromGit("origin/main", gateFile) : "";
+  const gateText = usePublishedData ? publishedGateText : localGateText || publishedGateText;
   const localManifestText = readText(manifestFile);
-  const publishedManifestText = localManifestText ? "" : readTextFromGit("origin/main", manifestFile);
-  const manifestText = localManifestText || publishedManifestText;
+  const publishedManifestText = usePublishedData || !localManifestText ? readTextFromGit("origin/main", manifestFile) : "";
+  const manifestText = usePublishedData ? publishedManifestText : localManifestText || publishedManifestText;
   const manifestFields = parseFields(manifestText);
   const manifestHealthy = [
     manifestFields.builders_data,
@@ -695,10 +695,14 @@ export function buildFirstLineLane() {
   evidence.remarks = data?.stats?.remarks ?? (Array.isArray(data.remarks) ? data.remarks.length : 0);
   evidence.builders = data?.stats?.builders ?? (Array.isArray(data.builders) ? data.builders.length : 0);
   evidence.gateStatus = statusFromGateText(gateText);
-  evidence.gateReport = localGateText
+  evidence.gateReport = usePublishedData && publishedGateText
+    ? `origin/main:${rel(gateFile)}`
+    : localGateText
     ? rel(gateFile)
     : publishedGateText ? `origin/main:${rel(gateFile)}` : "missing";
-  evidence.manifest = localManifestText
+  evidence.manifest = usePublishedData && publishedManifestText
+    ? `origin/main:${rel(manifestFile)}`
+    : localManifestText
     ? rel(manifestFile)
     : publishedManifestText ? `origin/main:${rel(manifestFile)}` : "not_required_for_same_day_local_gate";
   evidence.manifestHealthy = manifestHealthy;
