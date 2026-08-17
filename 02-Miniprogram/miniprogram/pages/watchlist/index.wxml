@@ -24,5 +24,4 @@
     </view>
     <view wx:else class="empty-state"><view class="title serif">暂无往期{{activeLabel}}</view></view>
   </view>
-  <registration-sheet visible="{{registrationOpen}}" required="{{true}}" bind:close="closeRegistration" bind:continue="continueAfterRegistration" />
 </view>

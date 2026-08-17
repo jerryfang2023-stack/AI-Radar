@@ -2,7 +2,7 @@ const { isWatched, toggleWatch, isCompared, toggleCompare } = require("../../uti
 const { recordBrowse } = require("../../utils/member.js");
 const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
 const { companyEntityKey, investorEntityKey, personEntityKey } = require("../../utils/entity-library.js");
-const { getAccessState, openMembership } = require("../../utils/access.js");
+const { getAccessState } = require("../../utils/access.js");
 
 function normalizedCard(card) {
   if (!card) return null;
@@ -27,9 +27,6 @@ Page({
 
   onLoad(options) {
     this.cardId = options.id;
-    const accessState = getAccessState();
-    if (accessState === "unregistered") this.setData({ registrationOpen: true });
-    if (accessState === "expired") setTimeout(() => openMembership(), 0);
     if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
     const bundledCard = normalizedCard(getFundingData().details[this.cardId]);
     if (bundledCard) this.renderCard(bundledCard);
@@ -56,13 +53,17 @@ Page({
   },
 
   closeRegistration() {
+    this.pendingAction = "";
     this.setData({ registrationOpen: false });
-    wx.switchTab({ url: "/pages/terminal/index" });
   },
 
   continueAfterRegistration() {
+    const action = this.pendingAction;
+    this.pendingAction = "";
     this.setData({ registrationOpen: false });
     this.recordView(this.data.card);
+    if (action === "watch") this.applyWatch();
+    if (action === "compare") this.applyCompare();
   },
 
   onShow() {
@@ -70,12 +71,22 @@ Page({
   },
 
   toggleWatch() {
+    if (this.requireRegistration("watch")) return;
+    this.applyWatch();
+  },
+
+  applyWatch() {
     toggleWatch(this.data.card.id);
     this.setData({ watched: isWatched(this.data.card.id) });
     wx.showToast({ title: this.data.watched ? "已加入观察" : "已取消收藏", icon: "none" });
   },
 
   toggleCompare() {
+    if (this.requireRegistration("compare")) return;
+    this.applyCompare();
+  },
+
+  applyCompare() {
     const result = toggleCompare(this.data.card.id);
     if (result.full) {
       wx.showToast({ title: "最多比较 3 家公司", icon: "none" });
@@ -83,6 +94,13 @@ Page({
     }
     this.setData({ compared: result.selected });
     wx.showToast({ title: result.selected ? "已加入比较" : "已移出比较", icon: "none" });
+  },
+
+  requireRegistration(action) {
+    if (getAccessState() !== "unregistered") return false;
+    this.pendingAction = action;
+    this.setData({ registrationOpen: true });
+    return true;
   },
 
   copySource(event) {

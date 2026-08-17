@@ -42,5 +42,4 @@
     <view wx:if="{{!resultCount}}" class="empty-state"><view class="title">暂无匹配结果</view><view class="copy">{{emptyCopy}}</view></view>
     <view wx:if="{{visibleCount < resultCount}}" class="load-note">继续上拉加载 · 已显示 {{visibleCount}} 条</view>
   </view>
-  <registration-sheet visible="{{registrationOpen}}" required="{{true}}" bind:close="closeRegistration" bind:continue="continueAfterRegistration" />
 </view>

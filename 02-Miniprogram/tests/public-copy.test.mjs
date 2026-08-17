@@ -7,6 +7,7 @@ const terminalSource = fs.readFileSync("miniprogram/pages/terminal/index.wxml", 
 const marketSource = fs.readFileSync("miniprogram/pages/market/index.wxml", "utf8");
 const marketLogic = fs.readFileSync("miniprogram/pages/market/index.js", "utf8");
 const watchlistSource = fs.readFileSync("miniprogram/pages/watchlist/index.wxml", "utf8");
+const watchlistLogic = fs.readFileSync("miniprogram/pages/watchlist/index.js", "utf8");
 const headerSource = fs.readFileSync("miniprogram/components/app-header/index.wxml", "utf8");
 const headerStyles = fs.readFileSync("miniprogram/components/app-header/index.wxss", "utf8");
 const membershipSource = fs.readFileSync("miniprogram/pages/membership/index.wxml", "utf8");
@@ -83,7 +84,7 @@ test("switches financing between China and global scopes with persisted live cou
 });
 
 test("requires phone, avatar and nickname before the server starts a seven-day trial", () => {
-  for (const copy of ["开启 7 天完整体验", "头像", "昵称", "授权手机号并开启体验", "不自动续费"]) {
+  for (const copy of ["注册并开启 7 天体验", "头像", "昵称", "授权手机号并开启体验", "不自动续费"]) {
     assert.match(registrationSource, new RegExp(copy, "u"));
   }
   assert.match(registrationSource, /open-type="chooseAvatar"/u);
@@ -95,6 +96,30 @@ test("requires phone, avatar and nickname before the server starts a seven-day t
   assert.match(paymentSource, /function hasAuthToken/u);
   assert.match(paymentSource, /fetchMembership\(\)[\s\S]*withExistingToken/u);
   assert.doesNotMatch(registrationSource, /自动获得|首次打开即/u);
+});
+
+test("lets visitors browse public lists and details before choosing registration", () => {
+  for (const source of [terminalLogic, marketLogic, entityDetailLogic, watchlistLogic]) {
+    assert.doesNotMatch(source, /registrationOpen|openMembership|getAccessState/u);
+  }
+  assert.doesNotMatch(reportDetailLogic, /registrationOpen|openMembership/u);
+  const detailLoad = detailLogic.slice(detailLogic.indexOf("onLoad(options)"), detailLogic.indexOf("renderCard(card)"));
+  assert.doesNotMatch(detailLoad, /registrationOpen|openMembership|getAccessState/u);
+  assert.doesNotMatch(detailLogic, /closeRegistration\(\)[\s\S]*wx\.switchTab/u);
+  assert.match(detailLogic, /requireRegistration\("watch"\)/u);
+  assert.match(detailLogic, /requireRegistration\("compare"\)/u);
+  assert.match(registrationSource, /页面内容可直接浏览/u);
+  assert.match(registrationSource, /暂不注册，继续浏览/u);
+
+  for (const file of [
+    "miniprogram/pages/terminal/index.wxml",
+    "miniprogram/pages/market/index.wxml",
+    "miniprogram/pages/entity-detail/index.wxml",
+    "miniprogram/pages/watchlist/index.wxml",
+    "miniprogram/pages/report-detail/index.wxml",
+  ]) {
+    assert.doesNotMatch(fs.readFileSync(file, "utf8"), /registration-sheet/u);
+  }
 });
 
 test("lets verified community members sync without repeating profile registration", () => {
