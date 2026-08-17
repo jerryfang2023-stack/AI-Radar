@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-16T05:25:07.181Z",
-    "latestDataDate": "2026-08-16",
-    "currentDate": "2026-08-16",
-    "eventCount": 2150,
+    "generatedAt": "2026-08-17T00:24:11.459Z",
+    "latestDataDate": "2026-08-17",
+    "currentDate": "2026-08-17",
+    "eventCount": 2171,
     "quarantinedEventCount": 19
   },
   "node": {
@@ -85,7 +85,7 @@
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2026-05-08",
-    "lastSeen": "2026-08-16"
+    "lastSeen": "2026-08-17"
   },
   "events": [
     {
@@ -15784,9 +15784,9 @@
     },
     {
       "id": "EV-129ffa6be41bb485",
-      "dataDate": "2026-08-16",
+      "dataDate": "2026-08-17",
       "date": "2026-08-13",
-      "updatedDate": "2026-08-16",
+      "updatedDate": "2026-08-17",
       "eventType": "partnership",
       "eventTypeLabel": "合作",
       "eventGroup": "商业合作",
@@ -16966,9 +16966,7 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -17202,31 +17200,24 @@
       "relatedEntityIds": [
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
-        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
-        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
-        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-171fa23d27b5894b"
+        "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-373da2ec629326c0",
@@ -17759,6 +17750,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-d57fb9108f2cb220",
         "EV-1744d0e71176f9a1",
         "EV-a6cb4aef5284eb68",
         "EV-9bbe5a98b14acd7f",
@@ -17779,6 +17771,7 @@
         "EV-8a91e14f37d32b4d",
         "EV-31782f0824ae1db1",
         "EV-3c51bcb5e99d2b68",
+        "EV-9356dd1be92ef5c6",
         "EV-9e2c443eae76fb50",
         "EV-cdc6611d6b115cab",
         "EV-07388b042db1bad0",
@@ -17806,7 +17799,7 @@
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-05-21",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-7ea76c82c786a5e1",
@@ -18081,6 +18074,7 @@
         "EV-bcb74b02448b7d78",
         "EV-df2357fc3c3b4f5e",
         "EV-bbc1042dcf5ad317",
+        "EV-b8686b4f41d1aa67",
         "EV-129ffa6be41bb485",
         "EV-d04d03b37046f0ad",
         "EV-6272444f30281858",
@@ -18116,7 +18110,7 @@
         "EN-dc6c28a2123e8efb"
       ],
       "firstSeen": "2026-05-15",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-6461cd2cb824a554",
@@ -18173,7 +18167,7 @@
     {
       "id": "FDE-ed781e27a7b9458e",
       "eventId": "EV-129ffa6be41bb485",
-      "dataDate": "2026-08-16",
+      "dataDate": "2026-08-17",
       "date": "2026-08-13",
       "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
       "stage": "announced",
@@ -18409,7 +18403,7 @@
       "eventIds": [
         "EV-129ffa6be41bb485"
       ],
-      "dataDate": "2026-08-16",
+      "dataDate": "2026-08-17",
       "date": "2026-08-13",
       "title": "IBM × OpenAI：OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
       "stage": "procurement",
@@ -18423,7 +18417,7 @@
         "ChatGPT"
       ],
       "outcomes": [],
-      "observationCount": 2,
+      "observationCount": 3,
       "completeness": 0.625,
       "completenessPercent": 63,
       "missingFields": [
@@ -18432,6 +18426,17 @@
         "reported_outcomes"
       ],
       "timeline": [
+        {
+          "observationId": "FDEO-729443252db4217b",
+          "type": "procurement",
+          "stage": "procurement",
+          "date": "2026-08-13",
+          "dataDate": "2026-08-17",
+          "eventId": "EV-129ffa6be41bb485",
+          "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+          "claimCount": 4,
+          "sourceCount": 1
+        },
         {
           "observationId": "FDEO-2674c718156c88ba",
           "type": "procurement",

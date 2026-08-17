@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-16T05:25:07.181Z",
-    "latestDataDate": "2026-08-16",
-    "currentDate": "2026-08-16",
-    "eventCount": 2150,
+    "generatedAt": "2026-08-17T00:24:11.459Z",
+    "latestDataDate": "2026-08-17",
+    "currentDate": "2026-08-17",
+    "eventCount": 2171,
     "quarantinedEventCount": 19
   },
   "node": {
@@ -178,6 +178,7 @@
       "EV-01df8e489a34893b",
       "EV-afd0332ad8f5f05b",
       "EV-cab03fca079f62e6",
+      "EV-040744ef8b205e0d",
       "EV-129ffa6be41bb485",
       "EV-8619e2d881669888",
       "EV-76e7dc691b68fa04",
@@ -212,6 +213,7 @@
       "EV-8fcb52bb6ec980af",
       "EV-c0a65877001ed413",
       "EV-05a87b578967c83e",
+      "EV-4551be310b520fcc",
       "EV-ea2598236eae915f",
       "EV-c92db935a2cef0d6",
       "EV-576e81e479b78605",
@@ -474,6 +476,7 @@
       "EV-8cb5b0ed18c7cdd8",
       "EV-6566d065f5500a85",
       "EV-34929bdd016dc8d6",
+      "EV-9db14ad0d6fe3135",
       "EV-7a3a3754522828e1",
       "EV-2c17183b71d8b7d1",
       "EV-67a7a3c9f1eabd22",
@@ -629,6 +632,7 @@
       "EN-916a98f0fa2a39af",
       "EN-8d291c7017252b07",
       "EN-f8048254c29fa79e",
+      "EN-2db317222c996b63",
       "EN-6c0f28e4fa82c2a5",
       "EN-82a31e57d3a2fa17",
       "EN-4e358c403850a88a",
@@ -643,6 +647,7 @@
       "EN-a08cc489f1c7c830",
       "EN-f4bec299df3f4f27",
       "EN-19e41212c0556603",
+      "EN-3b9e1cdd9e593b5c",
       "EN-bbdefa2950f49882",
       "EN-b93006774cbdd4b2",
       "EN-6f7ac1823da81d2e",
@@ -780,6 +785,7 @@
       "EN-fdb2cc367267ac57",
       "EN-4a639cb888a15d75",
       "EN-0616a267820d2c78",
+      "EN-286a3c612017ad1d",
       "EN-16478186eeecf696",
       "EN-f90aec90acf3dc85",
       "EN-96045bee6a2d2527",
@@ -814,6 +820,7 @@
       "FDE-de1562b0634b20ed",
       "FDE-d693e68f89adf86a",
       "FDE-ab9c514225686f60",
+      "FDE-360d1ff40e647eda",
       "FDE-ed781e27a7b9458e",
       "FDE-8506e8248e149161",
       "FDE-e780a756aeb71dfc",
@@ -1571,9 +1578,9 @@
     },
     {
       "id": "EV-c1295b8f58024ff6",
-      "dataDate": "2026-08-16",
+      "dataDate": "2026-08-17",
       "date": "2026-08-08",
-      "updatedDate": "2026-08-16",
+      "updatedDate": "2026-08-17",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
@@ -33951,9 +33958,9 @@
     },
     {
       "id": "EV-0121f0a9e9a975ec",
-      "dataDate": "2026-08-16",
+      "dataDate": "2026-08-17",
       "date": "2026-08-14",
-      "updatedDate": "2026-08-16",
+      "updatedDate": "2026-08-17",
       "eventType": "hardware_deployment",
       "eventTypeLabel": "硬件部署",
       "eventGroup": "AI 硬件",
@@ -39763,10 +39770,95 @@
       "publisher": "fedscoop.com"
     },
     {
-      "id": "EV-129ffa6be41bb485",
-      "dataDate": "2026-08-16",
+      "id": "EV-040744ef8b205e0d",
+      "dataDate": "2026-08-17",
       "date": "2026-08-13",
-      "updatedDate": "2026-08-16",
+      "updatedDate": "2026-08-17",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Leah与Oracle和PwC合作，将其智能体操作系统推向全球",
+      "originalTitle": "Leah Partners with Oracle and PwC to Take Its Agentic Operating System Global",
+      "subject": "Leah",
+      "action": "Partners with",
+      "object": "Oracle and PwC to Take Its Agentic Operating System Global",
+      "metrics": [],
+      "locations": [
+        "U.S.",
+        "India"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-2db317222c996b63"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-2db317222c996b63"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-2db317222c996b63"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-2db317222c996b63",
+        "EN-e4ffb7bd879b89da"
+      ],
+      "entityNames": [
+        "Leah",
+        "PwC"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://oracle.com/news/announcement/leah-partners-with-oracle-and-pwc-2026-08-13",
+      "publisher": "oracle.com"
+    },
+    {
+      "id": "EV-129ffa6be41bb485",
+      "dataDate": "2026-08-17",
+      "date": "2026-08-13",
+      "updatedDate": "2026-08-17",
       "eventType": "partnership",
       "eventTypeLabel": "合作",
       "eventGroup": "商业合作",
@@ -44046,10 +44138,98 @@
       "publisher": "sierra.ai"
     },
     {
+      "id": "EV-4551be310b520fcc",
+      "dataDate": "2026-08-17",
+      "date": "2026-08-16",
+      "updatedDate": "2026-08-17",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "WorkSwarm：引领办公智能体新范式，让AI从一个助手，进化为一支与你并肩作战的团队",
+      "originalTitle": "",
+      "subject": "openJiuwen",
+      "action": "product_release",
+      "object": "WorkSwarm蜂群办公智能体",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-3b9e1cdd9e593b5c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-3b9e1cdd9e593b5c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-3b9e1cdd9e593b5c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-3b9e1cdd9e593b5c",
+        "EN-980b09b4fedd1fe8"
+      ],
+      "entityNames": [
+        "openJiuwen",
+        "WorkSwarm"
+      ],
+      "productName": "WorkSwarm",
+      "products": [
+        {
+          "name": "WorkSwarm",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/08/473972.html",
+      "publisher": "量子位"
+    },
+    {
       "id": "EV-ea2598236eae915f",
-      "dataDate": "2026-08-16",
+      "dataDate": "2026-08-17",
       "date": "2026-08-14",
-      "updatedDate": "2026-08-16",
+      "updatedDate": "2026-08-17",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
@@ -78558,6 +78738,131 @@
       "publisher": "supermicro.com"
     },
     {
+      "id": "EV-9db14ad0d6fe3135",
+      "dataDate": "2026-08-17",
+      "date": "2026-08-17",
+      "updatedDate": "2026-08-17",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "2026年企业AI智能体部署",
+      "originalTitle": "Enterprise AI coding agent deployment in 2026 | Blog — Northflank",
+      "subject": "Gartner",
+      "action": "research_result",
+      "object": "agentic AI projects",
+      "metrics": [
+        "40%",
+        "10%",
+        "41%",
+        "33%",
+        "26%"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-0616a267820d2c78"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-286a3c612017ad1d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-0616a267820d2c78"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-286a3c612017ad1d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-0616a267820d2c78"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-286a3c612017ad1d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-0616a267820d2c78",
+        "EN-286a3c612017ad1d",
+        "EN-a9d21499d1b41fff"
+      ],
+      "entityNames": [
+        "Gartner",
+        "McKinsey",
+        "Forrester"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://northflank.com/blog/enterprise-ai-coding-agent-deployment",
+      "publisher": "northflank.com"
+    },
+    {
       "id": "EV-7a3a3754522828e1",
       "dataDate": "2026-08-16",
       "date": "2026-08-15",
@@ -80786,7 +81091,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-08",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-240389f4b730bad4",
@@ -83443,7 +83748,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-14",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-30cd4a85fc09f695",
@@ -83587,6 +83892,7 @@
         "EV-e1a4bc40db4a9d8f",
         "EV-3d9aa640411471ea",
         "EV-2a833330267cb2df",
+        "EV-c87e32451657c301",
         "EV-5fe819e7070b76e6",
         "EV-defb496c46fcc604",
         "EV-f7b81752b1fadd87",
@@ -83663,7 +83969,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-16",
+      "lastSeen": "2026-08-17",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -83746,6 +84052,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-b8686b4f41d1aa67",
         "EV-129ffa6be41bb485",
         "EV-d04d03b37046f0ad",
         "EV-de6c27c1dac18a2a",
@@ -83944,6 +84251,9 @@
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
         "EV-0c00a6c681f22b98",
+        "EV-2902a32e86a4b2d1",
+        "EV-90707e0cbca091c9",
+        "EV-9356dd1be92ef5c6",
         "EV-bce258f8f915ff5f",
         "EV-649481503cdb7736",
         "EV-6645d194b59939ca",
@@ -84059,7 +84369,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-df3b29befa02cd17",
@@ -84087,9 +84397,7 @@
       "name": "Microsoft",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "微软"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -84104,6 +84412,7 @@
         "EV-88f4ee8cd57bdf42",
         "EV-44a4e92c03a31ab1",
         "EV-7585b033d4005977",
+        "EV-e46756260827cd86",
         "EV-e65f17f35ef7f1a3",
         "EV-57944eebac69d510",
         "EV-306ac8217c66dc81",
@@ -84230,20 +84539,15 @@
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
-        "EN-688f8db7018da7d4",
-        "EN-827b607311e6593e",
-        "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
-        "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-8d4321d936320802",
-        "EN-10fce287b4b1464c"
+        "EN-8d4321d936320802"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-48b85dc3fd54f74d",
@@ -84605,7 +84909,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-866e1f18c9370d5d",
@@ -84987,9 +85291,7 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -85223,31 +85525,24 @@
       "relatedEntityIds": [
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
-        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
-        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
-        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-171fa23d27b5894b"
+        "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-28d0bd981118a907",
@@ -85311,6 +85606,7 @@
         "EV-bcb74b02448b7d78",
         "EV-df2357fc3c3b4f5e",
         "EV-bbc1042dcf5ad317",
+        "EV-b8686b4f41d1aa67",
         "EV-129ffa6be41bb485",
         "EV-d04d03b37046f0ad",
         "EV-6272444f30281858",
@@ -85346,7 +85642,7 @@
         "EN-dc6c28a2123e8efb"
       ],
       "firstSeen": "2026-05-15",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-8d291c7017252b07",
@@ -85390,6 +85686,27 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-07-29",
       "lastSeen": "2027-09-30"
+    },
+    {
+      "id": "EN-2db317222c996b63",
+      "name": "Leah",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-040744ef8b205e0d"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-6c0f28e4fa82c2a5",
@@ -85741,18 +86058,38 @@
       "lastSeen": "2026-07-18"
     },
     {
+      "id": "EN-3b9e1cdd9e593b5c",
+      "name": "openJiuwen",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4551be310b520fcc"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-16",
+      "lastSeen": "2026-08-17"
+    },
+    {
       "id": "EN-bbdefa2950f49882",
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-d57fb9108f2cb220",
         "EV-1744d0e71176f9a1",
         "EV-a6cb4aef5284eb68",
         "EV-a0ca934522418c0b",
@@ -85969,19 +86306,16 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
-        "EN-307557d99a7eb726",
         "EN-8d323d8bba783aa3",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
-        "EN-31055a8d9856fce4",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
-        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -85989,7 +86323,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-b93006774cbdd4b2",
@@ -86029,6 +86363,7 @@
         "EV-d4d7b019ff0015df",
         "EV-27b69ea604475b72",
         "EV-f8c3a83d883c9b22",
+        "EV-b69f78a4919cb1bc",
         "EV-0fc718ab409cdcf5",
         "EV-0121f0a9e9a975ec",
         "EV-eda9fcba2f9fe358",
@@ -86085,7 +86420,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-e78bdebae031095b",
@@ -86098,6 +86433,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-d57fb9108f2cb220",
         "EV-1744d0e71176f9a1",
         "EV-a6cb4aef5284eb68",
         "EV-9bbe5a98b14acd7f",
@@ -86118,6 +86454,7 @@
         "EV-8a91e14f37d32b4d",
         "EV-31782f0824ae1db1",
         "EV-3c51bcb5e99d2b68",
+        "EV-9356dd1be92ef5c6",
         "EV-9e2c443eae76fb50",
         "EV-cdc6611d6b115cab",
         "EV-07388b042db1bad0",
@@ -86145,7 +86482,7 @@
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-05-21",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-92df1be3e37c9268",
@@ -86428,6 +86765,7 @@
         "EV-26d2874c6ce028d6",
         "EV-b93102125cc062e3",
         "EV-6c361125c3f50bb6",
+        "EV-63948deaec161736",
         "EV-6360fcef17b43087",
         "EV-fbe519268ddce396",
         "EV-3126fb08491de669",
@@ -86459,7 +86797,7 @@
         "EN-24381ecb01753c1b"
       ],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-d50883991bfc5a69",
@@ -86525,9 +86863,7 @@
         "TX-technology-agentic_execution",
         "TX-product_form-end_user_application"
       ],
-      "relatedEntityIds": [
-        "EN-bbdefa2950f49882"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-07-01",
       "lastSeen": "2026-08-03"
     },
@@ -86940,9 +87276,7 @@
       "classificationRefs": [
         "TX-technology-agentic_execution"
       ],
-      "relatedEntityIds": [
-        "EN-8d4321d936320802"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-07-22",
       "lastSeen": "2026-07-22"
     },
@@ -87279,9 +87613,7 @@
         "TX-technology-agentic_execution",
         "TX-technology-retrieval_augmented_generation"
       ],
-      "relatedEntityIds": [
-        "EN-8d4321d936320802"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-07-18",
       "lastSeen": "2026-07-18"
     },
@@ -87378,9 +87710,7 @@
       "classificationRefs": [
         "TX-technology-agentic_execution"
       ],
-      "relatedEntityIds": [
-        "EN-9fbf261b62c1d7c0"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-07-16",
       "lastSeen": "2026-07-17"
     },
@@ -87948,6 +88278,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-d57fb9108f2cb220",
         "EV-a6cb4aef5284eb68",
         "EV-f5dd6dec49ad83aa",
         "EV-c89018d79b3d25bd",
@@ -88192,6 +88523,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-9356dd1be92ef5c6",
         "EV-55946516c014395c",
         "EV-cdc6611d6b115cab",
         "EV-3343be31faab2cce",
@@ -88294,6 +88626,7 @@
       ],
       "relatedEntityIds": [
         "EN-240389f4b730bad4",
+        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-9f15bb7e29e191eb",
@@ -88309,7 +88642,6 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
-        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -88319,7 +88651,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-5388bc10736a0eff",
@@ -89106,7 +89438,7 @@
         "EN-af3ceabbe048a291"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-0502bb9ed34980aa",
@@ -89552,9 +89884,7 @@
       "classificationRefs": [
         "TX-technology-agentic_execution"
       ],
-      "relatedEntityIds": [
-        "EN-9fbf261b62c1d7c0"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-05-23",
       "lastSeen": "2026-05-23"
     },
@@ -89734,6 +90064,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-9db14ad0d6fe3135",
         "EV-2c17183b71d8b7d1"
       ],
       "viewpointIds": [],
@@ -89742,7 +90073,28 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-14",
-      "lastSeen": "2026-08-14"
+      "lastSeen": "2026-08-17"
+    },
+    {
+      "id": "EN-286a3c612017ad1d",
+      "name": "McKinsey",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9db14ad0d6fe3135"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-17",
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-16478186eeecf696",
@@ -89926,6 +90278,104 @@
   ],
   "fde": [
     {
+      "id": "FDE-360d1ff40e647eda",
+      "eventId": "EV-040744ef8b205e0d",
+      "dataDate": "2026-08-17",
+      "date": "2026-08-13",
+      "title": "Leah与Oracle和PwC合作，将其智能体操作系统推向全球",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Leah",
+      "vendor": "PwC",
+      "industry": "未披露",
+      "useCase": "Oracle and PwC to Take Its Agentic Operating System Global",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "A member of the Oracle PartnerNetwork, PwC is leading the implementation and is expanding its collaboration with Leah to provide PwC&rsquo;s industry, functional, and technology expertise."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-2db317222c996b63"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://oracle.com/news/announcement/leah-partners-with-oracle-and-pwc-2026-08-13",
+      "entityIds": [
+        "EN-2db317222c996b63",
+        "EN-e4ffb7bd879b89da"
+      ]
+    },
+    {
+      "id": "FDE-ed781e27a7b9458e",
+      "eventId": "EV-129ffa6be41bb485",
+      "dataDate": "2026-08-17",
+      "date": "2026-08-13",
+      "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "IBM",
+      "vendor": "OpenAI",
+      "industry": "未披露",
+      "useCase": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR.",
+        "The companies plan to help clients modernize legacy applications and accelerate software development by bringing together OpenAI Codex and ChatGPT Work with IBM&rsquo;s industry, technology and domain expertise, including integration with IBM Consulting Advantage. The collaboration is designed to help organizations simplify engineering processes and speed the delivery of new digital products and services."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations",
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-7d3194f79e645c42"
+      ]
+    },
+    {
       "id": "FDE-b093649016ddce0b",
       "eventId": "EV-0fc718ab409cdcf5",
       "dataDate": "2026-08-16",
@@ -89985,55 +90435,6 @@
         "EN-6f7ac1823da81d2e",
         "EN-46162bbc9eb57274",
         "EN-8dfa869c34844253"
-      ]
-    },
-    {
-      "id": "FDE-ed781e27a7b9458e",
-      "eventId": "EV-129ffa6be41bb485",
-      "dataDate": "2026-08-16",
-      "date": "2026-08-13",
-      "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "IBM",
-      "vendor": "OpenAI",
-      "industry": "未披露",
-      "useCase": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR.",
-        "The companies plan to help clients modernize legacy applications and accelerate software development by bringing together OpenAI Codex and ChatGPT Work with IBM&rsquo;s industry, technology and domain expertise, including integration with IBM Consulting Advantage. The collaboration is designed to help organizations simplify engineering processes and speed the delivery of new digital products and services."
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-916a98f0fa2a39af"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "sourceUrl": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations",
-      "entityIds": [
-        "EN-916a98f0fa2a39af",
-        "EN-7d3194f79e645c42"
       ]
     },
     {
@@ -92668,7 +93069,7 @@
     {
       "id": "HW-304c6370cc157449",
       "eventId": "EV-0121f0a9e9a975ec",
-      "dataDate": "2026-08-16",
+      "dataDate": "2026-08-17",
       "date": "2026-08-14",
       "title": "L&T在钦奈为Together AI部署印度首个10,000-GPU统一AI集群",
       "hardwareType": "gpu",
@@ -92677,7 +93078,7 @@
       "computeLayer": "data_center",
       "supplier": "NVIDIA",
       "customer": "L&T",
-      "processNode": "B300",
+      "processNode": "NVIDIA B300 \"Blackwell Ultra\"",
       "capacity": 10000,
       "capacityUnit": "GPUs",
       "site": "Vyoma.AI's Chennai data center campus",
@@ -92932,6 +93333,149 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-5bc72342f3066892",
+      "implementationKey": "5bc72342f3066892",
+      "eventId": "EV-129ffa6be41bb485",
+      "eventIds": [
+        "EV-129ffa6be41bb485"
+      ],
+      "dataDate": "2026-08-17",
+      "date": "2026-08-13",
+      "title": "IBM × OpenAI：OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "stage": "procurement",
+      "stageLabel": "procurement",
+      "customer": "IBM",
+      "vendor": "OpenAI",
+      "industry": "未披露",
+      "useCase": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "workflow": "未披露",
+      "systems": [
+        "ChatGPT"
+      ],
+      "outcomes": [],
+      "observationCount": 3,
+      "completeness": 0.625,
+      "completenessPercent": 63,
+      "missingFields": [
+        "industry",
+        "workflow",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-729443252db4217b",
+          "type": "procurement",
+          "stage": "procurement",
+          "date": "2026-08-13",
+          "dataDate": "2026-08-17",
+          "eventId": "EV-129ffa6be41bb485",
+          "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+          "claimCount": 4,
+          "sourceCount": 1
+        },
+        {
+          "observationId": "FDEO-2674c718156c88ba",
+          "type": "procurement",
+          "stage": "procurement",
+          "date": "2026-08-13",
+          "dataDate": "2026-08-16",
+          "eventId": "EV-129ffa6be41bb485",
+          "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+          "claimCount": 4,
+          "sourceCount": 1
+        },
+        {
+          "observationId": "FDEO-52e02e22bcd8cd7f",
+          "type": "procurement",
+          "stage": "procurement",
+          "date": "2026-08-13",
+          "dataDate": "2026-08-14",
+          "eventId": "EV-129ffa6be41bb485",
+          "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations",
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-7d3194f79e645c42"
+      ]
+    },
+    {
+      "id": "FDED-e13759fb3faec899",
+      "implementationKey": "e13759fb3faec899",
+      "eventId": "EV-040744ef8b205e0d",
+      "eventIds": [
+        "EV-040744ef8b205e0d"
+      ],
+      "dataDate": "2026-08-17",
+      "date": "2026-08-13",
+      "title": "Leah × PwC：Oracle and PwC to Take Its Agentic Operating System Global",
+      "stage": "procurement",
+      "stageLabel": "procurement",
+      "customer": "Leah",
+      "vendor": "PwC",
+      "industry": "未披露",
+      "useCase": "Oracle and PwC to Take Its Agentic Operating System Global",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-895fd18fc25000ca",
+          "type": "procurement",
+          "stage": "procurement",
+          "date": "2026-08-13",
+          "dataDate": "2026-08-17",
+          "eventId": "EV-040744ef8b205e0d",
+          "eventTitle": "Leah与Oracle和PwC合作，将其智能体操作系统推向全球",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-2db317222c996b63"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://oracle.com/news/announcement/leah-partners-with-oracle-and-pwc-2026-08-13",
+      "entityIds": [
+        "EN-2db317222c996b63",
+        "EN-e4ffb7bd879b89da"
+      ]
+    },
+    {
       "id": "FDED-accc62026211020e",
       "implementationKey": "accc62026211020e",
       "eventId": "EV-0fc718ab409cdcf5",
@@ -93010,78 +93554,6 @@
         "EN-6f7ac1823da81d2e",
         "EN-46162bbc9eb57274",
         "EN-8dfa869c34844253"
-      ]
-    },
-    {
-      "id": "FDED-5bc72342f3066892",
-      "implementationKey": "5bc72342f3066892",
-      "eventId": "EV-129ffa6be41bb485",
-      "eventIds": [
-        "EV-129ffa6be41bb485"
-      ],
-      "dataDate": "2026-08-16",
-      "date": "2026-08-13",
-      "title": "IBM × OpenAI：OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-      "stage": "procurement",
-      "stageLabel": "procurement",
-      "customer": "IBM",
-      "vendor": "OpenAI",
-      "industry": "未披露",
-      "useCase": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-      "workflow": "未披露",
-      "systems": [
-        "ChatGPT"
-      ],
-      "outcomes": [],
-      "observationCount": 2,
-      "completeness": 0.625,
-      "completenessPercent": 63,
-      "missingFields": [
-        "industry",
-        "workflow",
-        "reported_outcomes"
-      ],
-      "timeline": [
-        {
-          "observationId": "FDEO-2674c718156c88ba",
-          "type": "procurement",
-          "stage": "procurement",
-          "date": "2026-08-13",
-          "dataDate": "2026-08-16",
-          "eventId": "EV-129ffa6be41bb485",
-          "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
-          "claimCount": 4,
-          "sourceCount": 1
-        },
-        {
-          "observationId": "FDEO-52e02e22bcd8cd7f",
-          "type": "procurement",
-          "stage": "procurement",
-          "date": "2026-08-13",
-          "dataDate": "2026-08-14",
-          "eventId": "EV-129ffa6be41bb485",
-          "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
-          "claimCount": 4,
-          "sourceCount": 1
-        }
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-916a98f0fa2a39af"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "sourceUrl": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations",
-      "entityIds": [
-        "EN-916a98f0fa2a39af",
-        "EN-7d3194f79e645c42"
       ]
     },
     {
@@ -93405,6 +93877,199 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-aa1ceb06f4e3c084",
+      "snapshotKey": "aa1ceb06f4e3c084",
+      "snapshotId": "HWS-8c1b2e900be4c21d",
+      "eventId": "EV-0121f0a9e9a975ec",
+      "eventIds": [
+        "EV-0121f0a9e9a975ec"
+      ],
+      "dataDate": "2026-08-17",
+      "date": "2026-08-17",
+      "title": "L&T",
+      "subject": "L&T",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-1bfbfa3663cb058f"
+        }
+      },
+      "factCount": 4,
+      "snapshotCount": 4,
+      "changes": [
+        {
+          "date": "2026-08-17",
+          "previousDate": "2026-08-16",
+          "snapshotId": "HWS-8c1b2e900be4c21d",
+          "previousSnapshotId": "HWS-125fdefffaebda78",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        },
+        {
+          "date": "2026-08-16",
+          "previousDate": "2026-08-15",
+          "snapshotId": "HWS-125fdefffaebda78",
+          "previousSnapshotId": "HWS-4e5bbd28381083d7",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        },
+        {
+          "date": "2026-08-15",
+          "previousDate": "2026-08-14",
+          "snapshotId": "HWS-4e5bbd28381083d7",
+          "previousSnapshotId": "HWS-bfc45ffacb8ee7a7",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-17",
+          "hardware_fact_id": "HWF-04cc79f76903af19",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-13T16:26:39.000Z",
+          "subject_entity_id": "EN-29b9f0cae32e7a8a",
+          "subject_name": "L&T",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "L&T Deploys India’s First 10,000-GPU Unified AI Cluster for Together AI in Chennai",
+          "event_refs": [
+            "EV-0121f0a9e9a975ec"
+          ],
+          "claim_ref": "CL-dede1b282ec73dd8",
+          "source_refs": [
+            "SA-d8d5a553062a5141"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-17/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-17",
+          "hardware_fact_id": "HWF-8d22d9737db0c582",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-13T16:26:39.000Z",
+          "subject_entity_id": "EN-29b9f0cae32e7a8a",
+          "subject_name": "L&T",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "1.05",
+          "unit": "$t",
+          "source_quote": "India AI data center deployment reaches a new frontier: L&T has secured a $1.05 to $1.57 billion contract to deploy 10,000 NVIDIA B300 Blackwell Ultra GPUs in a single NVLink-connected cluster at its...",
+          "event_refs": [
+            "EV-0121f0a9e9a975ec"
+          ],
+          "claim_ref": "CL-e5aa328772150ef3",
+          "source_refs": [
+            "SA-d8d5a553062a5141"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-17/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-17",
+          "hardware_fact_id": "HWF-ec927d63f14d39d9",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-13T16:26:39.000Z",
+          "subject_entity_id": "EN-29b9f0cae32e7a8a",
+          "subject_name": "L&T",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "10000",
+          "unit": "GPUs",
+          "source_quote": "India's largest engineering conglomerate, Larsen & Toubro, announced today that it has secured a contract worth ₹10,000 crore to ₹15,000 crore (approximately $1.05 billion to $1.57 billion USD) to deploy 10,000 NVIDIA B300 \"Blackwell Ultra\" GPUs in a single interconnected cluster at Vyoma.AI's Chennai data center campus. The customer is Together AI, the San Francisco-based open-source AI cloud provider that crossed $1.15 billion in bookings earlier this year. What makes this deal different from every prior India AI data center announcement is not the dollar figure &mdash; it is the word \"single-cluster.\"A distributed deployment of 10,000 GPUs spread across independently networked servers and a unified single-cluster of 10,000 GPUs connected by a shared NVLink fabric are not the same machine. They are not even close to the same machine. The distinction is the entire editorial point of this article.What \"Single-Cluster\" Actually Means: Architecture, Bandwidth, and What It UnlocksWhen NVIDIA ships the B300 in its DGX B300 server configuration, it packs eight B300 SXM GPUs onto a single baseboard. Those eight GPUs connect to each other through NVLink 5, NVIDIA's proprietary fifth-generation interconnect, which delivers 1.8 terabytes per second of bidirectional bandwidth per GPU. A NVSwitch chip inside the chassis provides full all-to-all connectivity &mdash; any GPU can communicate with any other GPU at the full NVLink bandwidth without going through a slower external network. The complete NVIDIA DGX B300 specifications confirm a total system bandwidth of 14.4 terabytes per second across the eight-GPU node.Now multiply that by 1,250 servers &mdash; the approximate number of DGX B300 nodes required to reach 10,000 GPUs &mdash; and connect them using high-speed inter-node networking. The result is a compute fabric in which all 10,000 GPUs are addressable as a single unified system: jobs can be scheduled across the entire cluster as if it were one giant accelerator, because the NVLink interconnect architecture was designed explicitly to allow that. This is what \"single-cluster\" means, and it is what a disaggregated arrangement of the same GPUs &mdash; spread across separate deployments, different buildings, or independent cloud regions &mdash; cannot replicate.The engineering reason this matters is gradient synchronization. Training a large AI model requires all GPUs to periodically share updated weight gradients through an operation called all-reduce. In a small cluster, this operation is fast. In a large cluster, it becomes the dominant bottleneck &mdash; if the interconnect fabric cannot move gradient data across all nodes quickly enough, GPUs spend more time waiting than computing, and the scaling efficiency of additional hardware collapses. The 14.4 terabytes per second NVLink bandwidth within a DGX node is orders of magnitude faster than even InfiniBand networking between separate servers. The single-cluster designation is NVIDIA's claim that the architecture allows this scaling to work across the full fleet rather than degrading at node boundaries.The practical consequence: a 10,000-GPU single NVLink cluster can run multi-node fine-tuning jobs and large-scale training runs that are simply not feasible on the same number of GPUs in a disaggregated arrangement. Prior India data center announcements &mdash; including Meta's 168-megawatt campus at Jamnagar, Gujarat &mdash; described power capacity and general-purpose compute infrastructure. This one describes a specific interconnect architecture and the class of workloads it enables.The B300 Itself: Memory, Bandwidth, and Why the Upgrade From H100 Is Non-LinearThe NVIDIA B300 &mdash; formally the Blackwell Ultra GPU &mdash; is NVIDIA's current volume-production flagship for data center AI inference and training. A single B300 GPU carries 288 gigabytes of HBM3e memory at 8 terabytes per second of memory bandwidth. An eight-GPU DGX B300 node accordingly holds 2.3 terabytes of total fast GPU memory, enough to run a 405-billion parameter model &mdash; such as Meta's Llama 3.1 405B &mdash; in full 16-bit precision on a single server without splitting the model across nodes. That memory ceiling matters for the agentic and multi-step reasoning workloads Together AI's platform increasingly serves.The performance gap over the previous generation is non-linear. Independent benchmarks from SemiAnalysis InferenceX &mdash; an open-source reproducible benchmark suite running verified results nightly on actual production hardware &mdash; show the B300 delivering more than 4,000 tokens per second per GPU on DeepSeek R1 at a 38 tokens-per-second-per-user latency target, compared to 276 tokens per second per GPU on the H100 &mdash; a roughly 14-fold throughput improvement for that workload. The B300 vs H100 benchmark data also shows cost advantage is larger still: B300 produces tokens at approximately $0.16 per million versus $1.32 per million for the H100 at the same latency, a more than 700 percent cost improvement.At the rack scale, NVIDIA's GB300 NVL72 systems &mdash; 72 Blackwell Ultra GPUs in a single liquid-cooled rack &mdash; deliver up to 50 times higher throughput per megawatt and 35 times lower cost per token compared to NVIDIA's prior Hopper H100 platform for agentic workloads, according to SemiAnalysis InferenceX data cited by NVIDIA. These figures are for the rack-scale NVL72 configuration; individual DGX B300 server performance scales accordingly.Each B300 GPU operates at a thermal design power of 1,400 watts &mdash; nearly double the H100's 700 watts. At 10,000 GPUs, that totals up to 14 megawatts of GPU power alone, before server overhead, networking, and cooling loads are counted. Running this cluster requires purpose-built liquid cooling infrastructure; standard air-cooled data centers cannot manage B300 density at this scale. Vyoma's Chennai campus is designed for 250 megawatts in Phase 1 with 150 MVA of power infrastructure already in place &mdash; the physical plant was engineered for exactly this class of hardware.Together AI: Why a US AI Company Chose India for a Frontier ClusterTogether AI is not a general cloud provider. Founded in 2022 in San Francisco, the company runs an inference and training platform for open-weight AI models &mdash; DeepSeek, MiniMax, Kimi, GLM, and dozens of others &mdash; through an API compatible with OpenAI's interface. The platform processes 400 trillion tokens monthly for developers and enterprise customers. Together AI does not build its own foundation models; its value is the infrastructure that makes other organizations' open-source models cheaper and faster to run than proprietary alternatives.The Chennai cluster is part of a rapid global expansion. Just two days before the L&T announcement, Together AI and IBM disclosed a $240 million multi-year agreement under which IBM Cloud will deploy a large cluster of NVIDIA HGX B300 systems to serve Together AI's inference platform, with availability expected in the first quarter of 2027. Together AI closed an $800 million Series C on July 1, 2026, at an $8.3 billion valuation, with Aramco Ventures as lead investor and NVIDIA among the participants. Together AI CEO Vipul Ved Prakash has described the company's infrastructure buildout as \"the biggest infrastructure build-out in human history.\"The India decision reflects three converging factors that make Chennai specifically attractive for the platform's expansion. First, India's Digital Personal Data Protection Act of 2023, whose implementing rules were finalized in November 2025, creates meaningful compliance incentives for enterprises that can process Indian user data within the country. Indian enterprise customers using Together AI's inference from a Chennai cluster operate under a materially simpler regulatory posture than those routing workloads to US-based data centers. Second, the cost of power, land, and infrastructure in India remains significantly lower than in the United States or Europe, where data center power costs have surged alongside the GPU buildout. Third, India's developer community &mdash; the second-largest contributor to GitHub AI projects globally, according to GitHub's annual developer data &mdash; represents a large and growing demand base for the inference services Together AI offers.L&T's Corporate Architecture for the AI EraThe deal is executed through a newly built corporate structure. In June 2026, Vyoma.AI &mdash; L&T's data center and cloud services subsidiary &mdash; incorporated a wholly owned entity called LTN Compute Private Limited to build out AI compute infrastructure and provide technology-enabled services. LTN Compute is the operating vehicle through which L&T is formally entering what the company calls the \"AI Factory\" business: not just constructing the buildings that house data centers, but owning, operating, and monetizing the GPU infrastructure inside them.L&T separately agreed earlier this week to transfer its data center business to Vyoma.AI for ₹1,400 crore (approximately $147 million USD), consolidating the infrastructure business under Vyoma as its dedicated vehicle. L&T Chairman and Managing Director S N Subrahmanyan framed the Chennai deal in terms of the company's broader infrastructure ambitions: \"Artificial intelligence is becoming foundational to every industry and AI factories will power this transformation. Our deployment of an Nvidia B300 AI factory for Together AI marks a significant milestone in L&T's gigawatt AI infrastructure mission.\"L&T has separately established a broader partnership with NVIDIA to develop gigawatt-scale AI infrastructure across India, including plans to scale GPU clusters at the Chennai campus to 30 megawatts and build a new 40-megawatt facility in Mumbai. The Together AI contract is the first large, signed deployment that turns those plans into hardware.India's AI Compute Race: Where the Chennai Deal FitsIndia's national AI compute program, the IndiaAI Mission, was approved by Cabinet in March 2024 with a funding outlay of ₹10,371 crore (approximately $1.09 billion USD) over five years. As of mid-2026, the program has deployed approximately 34,000 GPUs, accessible to startups, academic researchers, and government agencies at subsidized rates of around ₹65 per GPU-hour (approximately $0.68 USD per GPU-hour). Officials have set a target of 100,000 public GPUs by December 2026, with national GPU capacity &mdash; including private deployments &mdash; expected to exceed 200,000 by year-end.The L&T-Together AI deal, at 10,000 B300 GPUs, represents roughly 29 percent of the IndiaAI Mission's entire public target in a single private deployment. More significantly, B300 GPUs are not equivalent to H100s on a one-to-one basis: the per-GPU performance advantage means 10,000 B300s perform a substantially larger volume of inference work than 10,000 H100s would. The effective compute contribution of this single cluster to India's national AI capacity is materially larger than the raw GPU count suggests.Chennai's emergence as a focal point for this investment is deliberate. The city ranks second among Indian data center markets, contributing approximately 21 percent of the country's total data center capacity, according to Blackridge Research. Equinix opened its Chennai data center in September 2025, specifically citing the city's position near anticipated submarine cable landing sites. The L&T campus at Vyoma operates in the same geography, with a gigawatt-scale site whose Phase 1 capacity is 250 megawatts.Global hyperscalers have made separate India commitments: Microsoft and Amazon targeting $52.5 billion in Indian AI and digital infrastructure; Google announcing a $15 billion AI data hub investment; and OpenAI partnering with Tata Group for one gigawatt of capacity. What the L&T-Together AI deal adds to that picture is different in kind: a US AI cloud provider that specifically serves open-weight model inference &mdash; not proprietary models, not a general cloud &mdash; deploying its most compute-intensive cluster outside the United States in South Asia, under an Indian operating entity. The full landscape of those India hyperscaler commitments provides context for the scale of current investment.The Geography of AI Compute Is ShiftingThe deeper implication of this deal is geographic. Since frontier AI infrastructure emerged as a strategically meaningful asset class, it has been concentrated almost exclusively in the United States, Europe, and parts of East Asia. Data centers in those regions hold the vast majority of the world's most advanced AI compute &mdash; the GPU clusters capable of training and serving the models that define the current frontier of AI capability.The Together AI-L&T contract represents a structural departure from that pattern. A US AI cloud provider of significant scale &mdash; one that crossed $1.15 billion in annual bookings and serves 400 trillion monthly tokens &mdash; has chosen to anchor a portion of its global compute infrastructure in India, under an Indian operator, running the most advanced hardware NVIDIA currently ships in volume. That is not a speculative AI-infrastructure announcement. LTN Compute had not commenced business operations as recently as June 2026. It is now the operating entity behind India's largest single-cluster AI deployment.For Indian enterprise customers evaluating whether to route AI workloads to US-based inference endpoints or a domestic provider, the answer is now materially different than it was last month. The latency advantage of a Chennai cluster over a US-based endpoint &mdash; measured in tens of milliseconds for real-time inference &mdash; is substantial for the interactive and agentic applications Together AI's platform increasingly supports. Together AI has not disclosed a pricing schedule or customer-facing launch date for the Chennai cluster, but the infrastructure is being built now.Currency conversions in this article are approximate, calculated at the USD/INR exchange rate as of August 13, 2026 (approximately ₹95.43 per USD), and are subject to change.Frequently Asked QuestionsWhat is the difference between a single-cluster GPU deployment and a distributed GPU deployment?",
+          "event_refs": [
+            "EV-0121f0a9e9a975ec"
+          ],
+          "claim_ref": "CL-ab35c9909ab52391",
+          "source_refs": [
+            "SA-d8d5a553062a5141"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-17/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-17",
+          "hardware_fact_id": "HWF-1bfbfa3663cb058f",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-13T16:26:39.000Z",
+          "subject_entity_id": "EN-29b9f0cae32e7a8a",
+          "subject_name": "L&T",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "In a single-cluster deployment, all GPUs are addressable as a unified compute fabric through a shared high-bandwidth interconnect &mdash; in this case, NVIDIA's NVLink architecture. Any GPU in the cluster can communicate directly with any other GPU at full interconnect bandwidth, without routing through slower external networks. In a disaggregated or distributed deployment, GPUs are spread across separate servers or locations connected by standard Ethernet or InfiniBand, which offers much lower bandwidth for the all-reduce gradient-synchronization operations that large AI training runs require. A single-cluster architecture enables training jobs that scale efficiently to tens of thousands of GPUs; a distributed arrangement of the same hardware would degrade in scaling efficiency because the inter-node communication becomes the bottleneck.Why did Together AI choose India for a frontier GPU cluster, and what does this mean for enterprises routing AI workloads from South Asia?",
+          "event_refs": [
+            "EV-0121f0a9e9a975ec"
+          ],
+          "claim_ref": "CL-a176694ebf661235",
+          "source_refs": [
+            "SA-d8d5a553062a5141"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-17/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://techtimes.com/articles/324334/20260813/lt-deploys-indias-first-10000-gpu-unified-ai-cluster-together-ai-chennai.htm",
+      "entityIds": [
+        "EN-29b9f0cae32e7a8a",
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00",
+        "EN-6f7ac1823da81d2e",
+        "EN-e1517be14d06cdb7",
+        "EN-7d3194f79e645c42"
+      ]
+    },
+    {
       "id": "HWC-1e90510260afb7ed",
       "snapshotKey": "1e90510260afb7ed",
       "snapshotId": "HWS-240ed285877828e9",
@@ -93580,190 +94245,6 @@
         "EN-550f6ed5f71d0edc",
         "EN-282b9a00d064d811",
         "EN-7f8f379674a95169"
-      ]
-    },
-    {
-      "id": "HWC-aa1ceb06f4e3c084",
-      "snapshotKey": "aa1ceb06f4e3c084",
-      "snapshotId": "HWS-125fdefffaebda78",
-      "eventId": "EV-0121f0a9e9a975ec",
-      "eventIds": [
-        "EV-0121f0a9e9a975ec"
-      ],
-      "dataDate": "2026-08-16",
-      "date": "2026-08-16",
-      "title": "L&T",
-      "subject": "L&T",
-      "productNames": [],
-      "hardwareType": "gpu",
-      "factTypes": [
-        "shipment_deployment"
-      ],
-      "latestValues": {
-        "shipment_deployment": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-97374e1b0766efd9"
-        }
-      },
-      "factCount": 4,
-      "snapshotCount": 3,
-      "changes": [
-        {
-          "date": "2026-08-16",
-          "previousDate": "2026-08-15",
-          "snapshotId": "HWS-125fdefffaebda78",
-          "previousSnapshotId": "HWS-4e5bbd28381083d7",
-          "changedFacts": [
-            "shipment_deployment"
-          ]
-        },
-        {
-          "date": "2026-08-15",
-          "previousDate": "2026-08-14",
-          "snapshotId": "HWS-4e5bbd28381083d7",
-          "previousSnapshotId": "HWS-bfc45ffacb8ee7a7",
-          "changedFacts": [
-            "shipment_deployment"
-          ]
-        }
-      ],
-      "capacityFacts": [],
-      "supplyFacts": [
-        {
-          "data_date": "2026-08-16",
-          "hardware_fact_id": "HWF-2de0fcccb6713a7a",
-          "fact_type": "shipment_deployment",
-          "observed_at": "2026-08-13T16:26:39.000Z",
-          "subject_entity_id": "EN-29b9f0cae32e7a8a",
-          "subject_name": "L&T",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "gpu",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "L&T Deploys India’s First 10,000-GPU Unified AI Cluster for Together AI in Chennai",
-          "event_refs": [
-            "EV-0121f0a9e9a975ec"
-          ],
-          "claim_ref": "CL-78e4dfc46d3a343d",
-          "source_refs": [
-            "SA-d8d5a553062a5141"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-16/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-08-16",
-          "hardware_fact_id": "HWF-b52d3da1b66ad35d",
-          "fact_type": "shipment_deployment",
-          "observed_at": "2026-08-13T16:26:39.000Z",
-          "subject_entity_id": "EN-29b9f0cae32e7a8a",
-          "subject_name": "L&T",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "gpu",
-          "metric_value": "1.05",
-          "unit": "$t",
-          "source_quote": "India AI data center deployment reaches a new frontier: L&T has secured a $1.05 to $1.57 billion contract to deploy 10,000 NVIDIA B300 Blackwell Ultra GPUs in a single NVLink-connected cluster at its...",
-          "event_refs": [
-            "EV-0121f0a9e9a975ec"
-          ],
-          "claim_ref": "CL-06b3d2f50bc056c5",
-          "source_refs": [
-            "SA-d8d5a553062a5141"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-16/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-08-16",
-          "hardware_fact_id": "HWF-d3ba0363e50df48d",
-          "fact_type": "shipment_deployment",
-          "observed_at": "2026-08-13T16:26:39.000Z",
-          "subject_entity_id": "EN-29b9f0cae32e7a8a",
-          "subject_name": "L&T",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "gpu",
-          "metric_value": "10000",
-          "unit": "GPUs",
-          "source_quote": "India's largest engineering conglomerate, Larsen & Toubro, announced today that it has secured a contract worth ₹10,000 crore to ₹15,000 crore (approximately $1.05 billion to $1.57 billion USD) to deploy 10,000 NVIDIA B300 \"Blackwell Ultra\" GPUs in a single interconnected cluster at Vyoma.AI's Chennai data center campus. The customer is Together AI, the San Francisco-based open-source AI cloud provider that crossed $1.15 billion in bookings earlier this year. What makes this deal different from every prior India AI data center announcement is not the dollar figure &mdash; it is the word \"single-cluster.\"A distributed deployment of 10,000 GPUs spread across independently networked servers and a unified single-cluster of 10,000 GPUs connected by a shared NVLink fabric are not the same machine. They are not even close to the same machine. The distinction is the entire editorial point of this article.What \"Single-Cluster\" Actually Means: Architecture, Bandwidth, and What It UnlocksWhen NVIDIA ships the B300 in its DGX B300 server configuration, it packs eight B300 SXM GPUs onto a single baseboard. Those eight GPUs connect to each other through NVLink 5, NVIDIA's proprietary fifth-generation interconnect, which delivers 1.8 terabytes per second of bidirectional bandwidth per GPU. A NVSwitch chip inside the chassis provides full all-to-all connectivity &mdash; any GPU can communicate with any other GPU at the full NVLink bandwidth without going through a slower external network. The complete NVIDIA DGX B300 specifications confirm a total system bandwidth of 14.4 terabytes per second across the eight-GPU node.Now multiply that by 1,250 servers &mdash; the approximate number of DGX B300 nodes required to reach 10,000 GPUs &mdash; and connect them using high-speed inter-node networking. The result is a compute fabric in which all 10,000 GPUs are addressable as a single unified system: jobs can be scheduled across the entire cluster as if it were one giant accelerator, because the NVLink interconnect architecture was designed explicitly to allow that. This is what \"single-cluster\" means, and it is what a disaggregated arrangement of the same GPUs &mdash; spread across separate deployments, different buildings, or independent cloud regions &mdash; cannot replicate.The engineering reason this matters is gradient synchronization. Training a large AI model requires all GPUs to periodically share updated weight gradients through an operation called all-reduce. In a small cluster, this operation is fast. In a large cluster, it becomes the dominant bottleneck &mdash; if the interconnect fabric cannot move gradient data across all nodes quickly enough, GPUs spend more time waiting than computing, and the scaling efficiency of additional hardware collapses. The 14.4 terabytes per second NVLink bandwidth within a DGX node is orders of magnitude faster than even InfiniBand networking between separate servers. The single-cluster designation is NVIDIA's claim that the architecture allows this scaling to work across the full fleet rather than degrading at node boundaries.The practical consequence: a 10,000-GPU single NVLink cluster can run multi-node fine-tuning jobs and large-scale training runs that are simply not feasible on the same number of GPUs in a disaggregated arrangement. Prior India data center announcements &mdash; including Meta's 168-megawatt campus at Jamnagar, Gujarat &mdash; described power capacity and general-purpose compute infrastructure. This one describes a specific interconnect architecture and the class of workloads it enables.The B300 Itself: Memory, Bandwidth, and Why the Upgrade From H100 Is Non-LinearThe NVIDIA B300 &mdash; formally the Blackwell Ultra GPU &mdash; is NVIDIA's current volume-production flagship for data center AI inference and training. A single B300 GPU carries 288 gigabytes of HBM3e memory at 8 terabytes per second of memory bandwidth. An eight-GPU DGX B300 node accordingly holds 2.3 terabytes of total fast GPU memory, enough to run a 405-billion parameter model &mdash; such as Meta's Llama 3.1 405B &mdash; in full 16-bit precision on a single server without splitting the model across nodes. That memory ceiling matters for the agentic and multi-step reasoning workloads Together AI's platform increasingly serves.The performance gap over the previous generation is non-linear. Independent benchmarks from SemiAnalysis InferenceX &mdash; an open-source reproducible benchmark suite running verified results nightly on actual production hardware &mdash; show the B300 delivering more than 4,000 tokens per second per GPU on DeepSeek R1 at a 38 tokens-per-second-per-user latency target, compared to 276 tokens per second per GPU on the H100 &mdash; a roughly 14-fold throughput improvement for that workload. The B300 vs H100 benchmark data also shows cost advantage is larger still: B300 produces tokens at approximately $0.16 per million versus $1.32 per million for the H100 at the same latency, a more than 700 percent cost improvement.At the rack scale, NVIDIA's GB300 NVL72 systems &mdash; 72 Blackwell Ultra GPUs in a single liquid-cooled rack &mdash; deliver up to 50 times higher throughput per megawatt and 35 times lower cost per token compared to NVIDIA's prior Hopper H100 platform for agentic workloads, according to SemiAnalysis InferenceX data cited by NVIDIA. These figures are for the rack-scale NVL72 configuration; individual DGX B300 server performance scales accordingly.Each B300 GPU operates at a thermal design power of 1,400 watts &mdash; nearly double the H100's 700 watts. At 10,000 GPUs, that totals up to 14 megawatts of GPU power alone, before server overhead, networking, and cooling loads are counted. Running this cluster requires purpose-built liquid cooling infrastructure; standard air-cooled data centers cannot manage B300 density at this scale. Vyoma's Chennai campus is designed for 250 megawatts in Phase 1 with 150 MVA of power infrastructure already in place &mdash; the physical plant was engineered for exactly this class of hardware.Together AI: Why a US AI Company Chose India for a Frontier ClusterTogether AI is not a general cloud provider. Founded in 2022 in San Francisco, the company runs an inference and training platform for open-weight AI models &mdash; DeepSeek, MiniMax, Kimi, GLM, and dozens of others &mdash; through an API compatible with OpenAI's interface. The platform processes 400 trillion tokens monthly for developers and enterprise customers. Together AI does not build its own foundation models; its value is the infrastructure that makes other organizations' open-source models cheaper and faster to run than proprietary alternatives.The Chennai cluster is part of a rapid global expansion. Just two days before the L&T announcement, Together AI and IBM disclosed a $240 million multi-year agreement under which IBM Cloud will deploy a large cluster of NVIDIA HGX B300 systems to serve Together AI's inference platform, with availability expected in the first quarter of 2027. Together AI closed an $800 million Series C on July 1, 2026, at an $8.3 billion valuation, with Aramco Ventures as lead investor and NVIDIA among the participants. Together AI CEO Vipul Ved Prakash has described the company's infrastructure buildout as \"the biggest infrastructure build-out in human history.\"The India decision reflects three converging factors that make Chennai specifically attractive for the platform's expansion. First, India's Digital Personal Data Protection Act of 2023, whose implementing rules were finalized in November 2025, creates meaningful compliance incentives for enterprises that can process Indian user data within the country. Indian enterprise customers using Together AI's inference from a Chennai cluster operate under a materially simpler regulatory posture than those routing workloads to US-based data centers. Second, the cost of power, land, and infrastructure in India remains significantly lower than in the United States or Europe, where data center power costs have surged alongside the GPU buildout. Third, India's developer community &mdash; the second-largest contributor to GitHub AI projects globally, according to GitHub's annual developer data &mdash; represents a large and growing demand base for the inference services Together AI offers.L&T's Corporate Architecture for the AI EraThe deal is executed through a newly built corporate structure. In June 2026, Vyoma.AI &mdash; L&T's data center and cloud services subsidiary &mdash; incorporated a wholly owned entity called LTN Compute Private Limited to build out AI compute infrastructure and provide technology-enabled services. LTN Compute is the operating vehicle through which L&T is formally entering what the company calls the \"AI Factory\" business: not just constructing the buildings that house data centers, but owning, operating, and monetizing the GPU infrastructure inside them.L&T separately agreed earlier this week to transfer its data center business to Vyoma.AI for ₹1,400 crore (approximately $147 million USD), consolidating the infrastructure business under Vyoma as its dedicated vehicle. L&T Chairman and Managing Director S N Subrahmanyan framed the Chennai deal in terms of the company's broader infrastructure ambitions: \"Artificial intelligence is becoming foundational to every industry and AI factories will power this transformation. Our deployment of an Nvidia B300 AI factory for Together AI marks a significant milestone in L&T's gigawatt AI infrastructure mission.\"L&T has separately established a broader partnership with NVIDIA to develop gigawatt-scale AI infrastructure across India, including plans to scale GPU clusters at the Chennai campus to 30 megawatts and build a new 40-megawatt facility in Mumbai. The Together AI contract is the first large, signed deployment that turns those plans into hardware.India's AI Compute Race: Where the Chennai Deal FitsIndia's national AI compute program, the IndiaAI Mission, was approved by Cabinet in March 2024 with a funding outlay of ₹10,371 crore (approximately $1.09 billion USD) over five years. As of mid-2026, the program has deployed approximately 34,000 GPUs, accessible to startups, academic researchers, and government agencies at subsidized rates of around ₹65 per GPU-hour (approximately $0.68 USD per GPU-hour). Officials have set a target of 100,000 public GPUs by December 2026, with national GPU capacity &mdash; including private deployments &mdash; expected to exceed 200,000 by year-end.The L&T-Together AI deal, at 10,000 B300 GPUs, represents roughly 29 percent of the IndiaAI Mission's entire public target in a single private deployment. More significantly, B300 GPUs are not equivalent to H100s on a one-to-one basis: the per-GPU performance advantage means 10,000 B300s perform a substantially larger volume of inference work than 10,000 H100s would. The effective compute contribution of this single cluster to India's national AI capacity is materially larger than the raw GPU count suggests.Chennai's emergence as a focal point for this investment is deliberate. The city ranks second among Indian data center markets, contributing approximately 21 percent of the country's total data center capacity, according to Blackridge Research. Equinix opened its Chennai data center in September 2025, specifically citing the city's position near anticipated submarine cable landing sites. The L&T campus at Vyoma operates in the same geography, with a gigawatt-scale site whose Phase 1 capacity is 250 megawatts.Global hyperscalers have made separate India commitments: Microsoft and Amazon targeting $52.5 billion in Indian AI and digital infrastructure; Google announcing a $15 billion AI data hub investment; and OpenAI partnering with Tata Group for one gigawatt of capacity. What the L&T-Together AI deal adds to that picture is different in kind: a US AI cloud provider that specifically serves open-weight model inference &mdash; not proprietary models, not a general cloud &mdash; deploying its most compute-intensive cluster outside the United States in South Asia, under an Indian operating entity. The full landscape of those India hyperscaler commitments provides context for the scale of current investment.The Geography of AI Compute Is ShiftingThe deeper implication of this deal is geographic. Since frontier AI infrastructure emerged as a strategically meaningful asset class, it has been concentrated almost exclusively in the United States, Europe, and parts of East Asia. Data centers in those regions hold the vast majority of the world's most advanced AI compute &mdash; the GPU clusters capable of training and serving the models that define the current frontier of AI capability.The Together AI-L&T contract represents a structural departure from that pattern. A US AI cloud provider of significant scale &mdash; one that crossed $1.15 billion in annual bookings and serves 400 trillion monthly tokens &mdash; has chosen to anchor a portion of its global compute infrastructure in India, under an Indian operator, running the most advanced hardware NVIDIA currently ships in volume. That is not a speculative AI-infrastructure announcement. LTN Compute had not commenced business operations as recently as June 2026. It is now the operating entity behind India's largest single-cluster AI deployment.For Indian enterprise customers evaluating whether to route AI workloads to US-based inference endpoints or a domestic provider, the answer is now materially different than it was last month. The latency advantage of a Chennai cluster over a US-based endpoint &mdash; measured in tens of milliseconds for real-time inference &mdash; is substantial for the interactive and agentic applications Together AI's platform increasingly supports. Together AI has not disclosed a pricing schedule or customer-facing launch date for the Chennai cluster, but the infrastructure is being built now.Currency conversions in this article are approximate, calculated at the USD/INR exchange rate as of August 13, 2026 (approximately ₹95.43 per USD), and are subject to change.Frequently Asked QuestionsWhat is the difference between a single-cluster GPU deployment and a distributed GPU deployment?",
-          "event_refs": [
-            "EV-0121f0a9e9a975ec"
-          ],
-          "claim_ref": "CL-eb7aa8724d880f6d",
-          "source_refs": [
-            "SA-d8d5a553062a5141"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-16/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-08-16",
-          "hardware_fact_id": "HWF-97374e1b0766efd9",
-          "fact_type": "shipment_deployment",
-          "observed_at": "2026-08-13T16:26:39.000Z",
-          "subject_entity_id": "EN-29b9f0cae32e7a8a",
-          "subject_name": "L&T",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "gpu",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "In a single-cluster deployment, all GPUs are addressable as a unified compute fabric through a shared high-bandwidth interconnect &mdash; in this case, NVIDIA's NVLink architecture. Any GPU in the cluster can communicate directly with any other GPU at full interconnect bandwidth, without routing through slower external networks. In a disaggregated or distributed deployment, GPUs are spread across separate servers or locations connected by standard Ethernet or InfiniBand, which offers much lower bandwidth for the all-reduce gradient-synchronization operations that large AI training runs require. A single-cluster architecture enables training jobs that scale efficiently to tens of thousands of GPUs; a distributed arrangement of the same hardware would degrade in scaling efficiency because the inter-node communication becomes the bottleneck.Why did Together AI choose India for a frontier GPU cluster, and what does this mean for enterprises routing AI workloads from South Asia?",
-          "event_refs": [
-            "EV-0121f0a9e9a975ec"
-          ],
-          "claim_ref": "CL-f8861d895313a675",
-          "source_refs": [
-            "SA-d8d5a553062a5141"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-16/hardware-facts.json"
-        }
-      ],
-      "specificationFacts": [],
-      "capexFacts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-29b9f0cae32e7a8a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重",
-          "entityIds": [
-            "EN-29b9f0cae32e7a8a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "fine_tuning",
-          "name": "模型微调",
-          "entityIds": [
-            "EN-29b9f0cae32e7a8a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "sourceUrl": "https://techtimes.com/articles/324334/20260813/lt-deploys-indias-first-10000-gpu-unified-ai-cluster-together-ai-chennai.htm",
-      "entityIds": [
-        "EN-29b9f0cae32e7a8a",
-        "EN-8d4321d936320802",
-        "EN-ea3bd73e2b506e00",
-        "EN-6f7ac1823da81d2e",
-        "EN-e1517be14d06cdb7",
-        "EN-7d3194f79e645c42"
       ]
     },
     {

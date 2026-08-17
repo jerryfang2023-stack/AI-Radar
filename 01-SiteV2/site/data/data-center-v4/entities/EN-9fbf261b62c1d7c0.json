@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-16T05:25:07.181Z",
-    "latestDataDate": "2026-08-16",
-    "currentDate": "2026-08-16",
-    "eventCount": 2150,
+    "generatedAt": "2026-08-17T00:24:11.459Z",
+    "latestDataDate": "2026-08-17",
+    "currentDate": "2026-08-17",
+    "eventCount": 2171,
     "quarantinedEventCount": 19
   },
   "entity": {
@@ -16,9 +16,7 @@
     "name": "Microsoft",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
-    "aliases": [
-      "微软"
-    ],
+    "aliases": [],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -33,6 +31,7 @@
       "EV-88f4ee8cd57bdf42",
       "EV-44a4e92c03a31ab1",
       "EV-7585b033d4005977",
+      "EV-e46756260827cd86",
       "EV-e65f17f35ef7f1a3",
       "EV-57944eebac69d510",
       "EV-306ac8217c66dc81",
@@ -159,34 +158,24 @@
       "TX-technology-distillation"
     ],
     "relatedEntityIds": [
-      "EN-688f8db7018da7d4",
-      "EN-827b607311e6593e",
-      "EN-068e7ccb7d4b07a6",
       "EN-8652f6cd9088f1fa",
-      "EN-597d8c4afa5fe3d6",
       "EN-d2f4e09cb01afa3c",
       "EN-7d3194f79e645c42",
       "EN-38945a66b4806b11",
       "EN-c141d2237427f30d",
-      "EN-8d4321d936320802",
-      "EN-10fce287b4b1464c"
+      "EN-8d4321d936320802"
     ],
     "firstSeen": "2026-02-13",
-    "lastSeen": "2026-08-16",
+    "lastSeen": "2026-08-17",
     "relationIds": [
-      "REL2-62f415d53b9e1307",
-      "REL2-dceee7ada64357c1",
-      "REL2-899fe78a63eda569",
       "REL2-4410cf5eef104c6e",
-      "REL2-a2d037d3ca0eff3e",
       "REL2-8dc67631418aa4d4",
       "REL2-9fd72463ce6686f3",
       "REL2-c2250eeea2122198",
       "REL2-fdbf7b1aedf4d9ef",
       "REL2-9f6eb62bdd6f6a31",
       "REL2-10ba411040225060",
-      "REL2-e9ef6e697ef06f93",
-      "REL2-9795f8e6814470a6"
+      "REL2-e9ef6e697ef06f93"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -203,6 +192,7 @@
         "EV-44a4e92c03a31ab1"
       ],
       "deployments": [
+        "EV-e46756260827cd86",
         "EV-e65f17f35ef7f1a3",
         "EV-57944eebac69d510",
         "EV-306ac8217c66dc81",
@@ -238,9 +228,9 @@
         "EV-c0a65877001ed413"
       ],
       "productsServices": [
-        "EV-325c0a0b80938627",
         "EV-ea2598236eae915f",
         "EV-6018392d4cc4b472",
+        "EV-325c0a0b80938627",
         "EV-088870c111b4e968",
         "EV-0ad3854d95038ea3",
         "EV-890ffd351486b884",
@@ -324,24 +314,24 @@
     },
     "timeline": [
       {
-        "id": "EV-325c0a0b80938627",
-        "dataDate": "2026-08-16",
-        "date": "2026-08-15",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
+        "id": "EV-e46756260827cd86",
+        "dataDate": "2026-08-17",
+        "date": "2026-08-17",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
         "status": "announced",
         "statusLabel": "已公布",
-        "title": "微软 Copilot Notebooks 扩展支持 Markdown，强化 AI 资料分析",
+        "title": "微软客户案例：Eczacıbaşı借助Microsoft Copilot Studio跨行业扩展AI创新",
         "displayTags": [],
         "entityIds": [
-          "EN-9fbf261b62c1d7c0",
-          "EN-808711fac204511f"
+          "EN-95afe521c4707d25",
+          "EN-9fbf261b62c1d7c0"
         ]
       },
       {
         "id": "EV-ea2598236eae915f",
-        "dataDate": "2026-08-16",
+        "dataDate": "2026-08-17",
         "date": "2026-08-14",
         "eventType": "product_release",
         "eventTypeLabel": "产品发布",
@@ -391,7 +381,7 @@
       },
       {
         "id": "EV-6018392d4cc4b472",
-        "dataDate": "2026-08-16",
+        "dataDate": "2026-08-17",
         "date": "2026-08-13",
         "eventType": "service_change",
         "eventTypeLabel": "服务变更",
@@ -403,6 +393,22 @@
         "entityIds": [
           "EN-9fbf261b62c1d7c0",
           "EN-6dfec3d723d55bb0"
+        ]
+      },
+      {
+        "id": "EV-325c0a0b80938627",
+        "dataDate": "2026-08-16",
+        "date": "2026-08-15",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "微软 Copilot Notebooks 扩展支持 Markdown，强化 AI 资料分析",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9fbf261b62c1d7c0",
+          "EN-808711fac204511f"
         ]
       },
       {
@@ -4298,69 +4304,6 @@
   },
   "relatedEntities": [
     {
-      "id": "EN-688f8db7018da7d4",
-      "name": "MAI-Voice-2-Flash",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-82ae0ea3bfe336a1"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [
-        "EN-9fbf261b62c1d7c0"
-      ],
-      "firstSeen": "2026-07-24",
-      "lastSeen": "2026-07-24"
-    },
-    {
-      "id": "EN-827b607311e6593e",
-      "name": "MAI-Image-2.5-Pro",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-82ae0ea3bfe336a1"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [
-        "EN-9fbf261b62c1d7c0"
-      ],
-      "firstSeen": "2026-07-24",
-      "lastSeen": "2026-07-24"
-    },
-    {
-      "id": "EN-068e7ccb7d4b07a6",
-      "name": "Copilot",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-e1e30a2a4a5232c6"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [
-        "EN-9fbf261b62c1d7c0"
-      ],
-      "firstSeen": "2026-07-22",
-      "lastSeen": "2026-07-23"
-    },
-    {
       "id": "EN-8652f6cd9088f1fa",
       "name": "Stellantis",
       "entityType": "organization_candidate",
@@ -4383,29 +4326,6 @@
       ],
       "firstSeen": "2025-10-01",
       "lastSeen": "2026-07-30"
-    },
-    {
-      "id": "EN-597d8c4afa5fe3d6",
-      "name": "Visual Studio Code 1.129",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-7c899d5decafc42f"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution"
-      ],
-      "relatedEntityIds": [
-        "EN-9fbf261b62c1d7c0"
-      ],
-      "firstSeen": "2026-07-16",
-      "lastSeen": "2026-07-17"
     },
     {
       "id": "EN-d2f4e09cb01afa3c",
@@ -4504,6 +4424,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-b8686b4f41d1aa67",
         "EV-129ffa6be41bb485",
         "EV-d04d03b37046f0ad",
         "EV-de6c27c1dac18a2a",
@@ -4702,6 +4623,9 @@
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
         "EV-0c00a6c681f22b98",
+        "EV-2902a32e86a4b2d1",
+        "EV-90707e0cbca091c9",
+        "EV-9356dd1be92ef5c6",
         "EV-bce258f8f915ff5f",
         "EV-649481503cdb7736",
         "EV-6645d194b59939ca",
@@ -4817,7 +4741,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-38945a66b4806b11",
@@ -4866,9 +4790,7 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -5102,117 +5024,27 @@
       "relatedEntityIds": [
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
-        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
-        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
-        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-171fa23d27b5894b"
-      ],
-      "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-16"
-    },
-    {
-      "id": "EN-10fce287b4b1464c",
-      "name": "Fara1.5",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-a4f052325d0ef230"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution"
-      ],
-      "relatedEntityIds": [
         "EN-9fbf261b62c1d7c0"
       ],
-      "firstSeen": "2026-05-23",
-      "lastSeen": "2026-05-23"
+      "firstSeen": "2025-03-18",
+      "lastSeen": "2026-08-17"
     }
   ],
   "relationships": [
-    {
-      "relationship_id": "REL2-62f415d53b9e1307",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-688f8db7018da7d4",
-      "object_type": "entity",
-      "event_id": "EV-82ae0ea3bfe336a1",
-      "claim_refs": [
-        "CL-5fced5cf18afc959",
-        "CL-7c22f66cabb9a37c",
-        "CL-d5a4e0b10c930ed2"
-      ],
-      "source_refs": [
-        "SA-f35e060050d33489"
-      ],
-      "data_date": "2026-07-24",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-dceee7ada64357c1",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-827b607311e6593e",
-      "object_type": "entity",
-      "event_id": "EV-82ae0ea3bfe336a1",
-      "claim_refs": [
-        "CL-5fced5cf18afc959",
-        "CL-9fea9adc5b3b6d08",
-        "CL-7c22f66cabb9a37c"
-      ],
-      "source_refs": [
-        "SA-f35e060050d33489"
-      ],
-      "data_date": "2026-07-24",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-899fe78a63eda569",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-068e7ccb7d4b07a6",
-      "object_type": "entity",
-      "event_id": "EV-e1e30a2a4a5232c6",
-      "claim_refs": [
-        "CL-34fddab81951af35",
-        "CL-8b238746e8f2c8ba",
-        "CL-3c62d52890307500"
-      ],
-      "source_refs": [
-        "SA-c75b1e326457605e"
-      ],
-      "data_date": "2026-07-23",
-      "status": "verified"
-    },
     {
       "relationship_id": "REL2-4410cf5eef104c6e",
       "relationship_version": "RELATION-V2.1",
@@ -5230,26 +5062,6 @@
       ],
       "source_refs": [
         "SA-03fe3195711dfed5"
-      ],
-      "data_date": "2026-07-17",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-a2d037d3ca0eff3e",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-597d8c4afa5fe3d6",
-      "object_type": "entity",
-      "event_id": "EV-7c899d5decafc42f",
-      "claim_refs": [
-        "CL-4154aa4e461163c9",
-        "CL-a3cd2bba9a1d055b",
-        "CL-837c7d367f0c26ce"
-      ],
-      "source_refs": [
-        "SA-c532d10bfc903c0c"
       ],
       "data_date": "2026-07-17",
       "status": "verified"
@@ -5385,26 +5197,6 @@
         "SA-52df1716b70975b3"
       ],
       "data_date": "2026-06-03",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-9795f8e6814470a6",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-10fce287b4b1464c",
-      "object_type": "entity",
-      "event_id": "EV-a4f052325d0ef230",
-      "claim_refs": [
-        "CL-4c50bbc497deaee1",
-        "CL-25b9389df0e0f06f",
-        "CL-eece65ce191fb7c6"
-      ],
-      "source_refs": [
-        "SA-af9b5cefb039de38"
-      ],
-      "data_date": "2026-05-23",
       "status": "verified"
     }
   ],
@@ -5576,6 +5368,7 @@
         "EV-01df8e489a34893b",
         "EV-afd0332ad8f5f05b",
         "EV-cab03fca079f62e6",
+        "EV-040744ef8b205e0d",
         "EV-129ffa6be41bb485",
         "EV-8619e2d881669888",
         "EV-76e7dc691b68fa04",
@@ -5610,6 +5403,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-4551be310b520fcc",
         "EV-ea2598236eae915f",
         "EV-c92db935a2cef0d6",
         "EV-576e81e479b78605",
@@ -5872,6 +5666,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-9db14ad0d6fe3135",
         "EV-7a3a3754522828e1",
         "EV-2c17183b71d8b7d1",
         "EV-67a7a3c9f1eabd22",
@@ -6027,6 +5822,7 @@
         "EN-916a98f0fa2a39af",
         "EN-8d291c7017252b07",
         "EN-f8048254c29fa79e",
+        "EN-2db317222c996b63",
         "EN-6c0f28e4fa82c2a5",
         "EN-82a31e57d3a2fa17",
         "EN-4e358c403850a88a",
@@ -6041,6 +5837,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-3b9e1cdd9e593b5c",
         "EN-bbdefa2950f49882",
         "EN-b93006774cbdd4b2",
         "EN-6f7ac1823da81d2e",
@@ -6178,6 +5975,7 @@
         "EN-fdb2cc367267ac57",
         "EN-4a639cb888a15d75",
         "EN-0616a267820d2c78",
+        "EN-286a3c612017ad1d",
         "EN-16478186eeecf696",
         "EN-f90aec90acf3dc85",
         "EN-96045bee6a2d2527",
@@ -6212,6 +6010,7 @@
         "FDE-de1562b0634b20ed",
         "FDE-d693e68f89adf86a",
         "FDE-ab9c514225686f60",
+        "FDE-360d1ff40e647eda",
         "FDE-ed781e27a7b9458e",
         "FDE-8506e8248e149161",
         "FDE-e780a756aeb71dfc",
@@ -6472,7 +6271,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "TX-target_user-business_user",
@@ -6909,7 +6708,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "TX-use_case-data_analysis",
@@ -7083,11 +6882,11 @@
         "EV-f1418d9e3b1413b7",
         "EV-2eabd03665cbdef7",
         "EV-a35a3871bf36fea2",
+        "EV-0c00a6c681f22b98",
         "EV-2c2e43a2f04b3291",
         "EV-2fa68379b94e3334",
         "EV-42d0b85486576c88",
         "EV-e147e5d89f849f3a",
-        "EV-0c00a6c681f22b98",
         "EV-2321e89fad893290",
         "EV-6eec30dc1c4f67d5",
         "EV-cc80acf85eec6a3b",
@@ -7152,7 +6951,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "TX-target_user-consumer",
@@ -7385,7 +7184,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-11",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "TX-technology-speech_audio",

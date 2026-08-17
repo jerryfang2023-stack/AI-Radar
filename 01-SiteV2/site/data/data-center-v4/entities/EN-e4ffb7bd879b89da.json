@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-16T05:25:07.181Z",
-    "latestDataDate": "2026-08-16",
-    "currentDate": "2026-08-16",
-    "eventCount": 2150,
+    "generatedAt": "2026-08-17T00:24:11.459Z",
+    "latestDataDate": "2026-08-17",
+    "currentDate": "2026-08-17",
+    "eventCount": 2171,
     "quarantinedEventCount": 19
   },
   "entity": {
@@ -23,6 +23,7 @@
     ],
     "eventIds": [
       "EV-94e0afb44c320c99",
+      "EV-040744ef8b205e0d",
       "EV-9884a0317e1e6ae7"
     ],
     "viewpointIds": [],
@@ -31,7 +32,7 @@
       "EN-c70eca6b0f88f44d"
     ],
     "firstSeen": "2026-05-14",
-    "lastSeen": "2026-07-17",
+    "lastSeen": "2026-08-17",
     "relationIds": [
       "REL2-fd71230f58245d0a"
     ],
@@ -41,6 +42,7 @@
         "EV-94e0afb44c320c99"
       ],
       "partnerships": [
+        "EV-040744ef8b205e0d",
         "EV-9884a0317e1e6ae7"
       ],
       "productsServices": [],
@@ -49,6 +51,34 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-040744ef8b205e0d",
+        "dataDate": "2026-08-17",
+        "date": "2026-08-13",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Leah与Oracle和PwC合作，将其智能体操作系统推向全球",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-2db317222c996b63"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-2db317222c996b63",
+          "EN-e4ffb7bd879b89da"
+        ]
+      },
       {
         "id": "EV-94e0afb44c320c99",
         "dataDate": "2026-07-17",
@@ -96,6 +126,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-d57fb9108f2cb220",
         "EV-a6cb4aef5284eb68",
         "EV-f5dd6dec49ad83aa",
         "EV-c89018d79b3d25bd",
@@ -340,6 +371,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-9356dd1be92ef5c6",
         "EV-55946516c014395c",
         "EV-cdc6611d6b115cab",
         "EV-3343be31faab2cce",
@@ -442,6 +474,7 @@
       ],
       "relatedEntityIds": [
         "EN-240389f4b730bad4",
+        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-9f15bb7e29e191eb",
@@ -457,7 +490,6 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
-        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -467,7 +499,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     }
   ],
   "relationships": [
@@ -495,6 +527,55 @@
   ],
   "taxonomyNodes": [],
   "fde": [
+    {
+      "id": "FDE-360d1ff40e647eda",
+      "eventId": "EV-040744ef8b205e0d",
+      "dataDate": "2026-08-17",
+      "date": "2026-08-13",
+      "title": "Leah与Oracle和PwC合作，将其智能体操作系统推向全球",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Leah",
+      "vendor": "PwC",
+      "industry": "未披露",
+      "useCase": "Oracle and PwC to Take Its Agentic Operating System Global",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "A member of the Oracle PartnerNetwork, PwC is leading the implementation and is expanding its collaboration with Leah to provide PwC&rsquo;s industry, functional, and technology expertise."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-2db317222c996b63"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://oracle.com/news/announcement/leah-partners-with-oracle-and-pwc-2026-08-13",
+      "entityIds": [
+        "EN-2db317222c996b63",
+        "EN-e4ffb7bd879b89da"
+      ]
+    },
     {
       "id": "FDE-a63e80944be39019",
       "eventId": "EV-94e0afb44c320c99",
@@ -568,5 +649,67 @@
       ]
     }
   ],
-  "hardware": []
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-e13759fb3faec899",
+      "implementationKey": "e13759fb3faec899",
+      "eventId": "EV-040744ef8b205e0d",
+      "eventIds": [
+        "EV-040744ef8b205e0d"
+      ],
+      "dataDate": "2026-08-17",
+      "date": "2026-08-13",
+      "title": "Leah × PwC：Oracle and PwC to Take Its Agentic Operating System Global",
+      "stage": "procurement",
+      "stageLabel": "procurement",
+      "customer": "Leah",
+      "vendor": "PwC",
+      "industry": "未披露",
+      "useCase": "Oracle and PwC to Take Its Agentic Operating System Global",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-895fd18fc25000ca",
+          "type": "procurement",
+          "stage": "procurement",
+          "date": "2026-08-13",
+          "dataDate": "2026-08-17",
+          "eventId": "EV-040744ef8b205e0d",
+          "eventTitle": "Leah与Oracle和PwC合作，将其智能体操作系统推向全球",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-2db317222c996b63"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://oracle.com/news/announcement/leah-partners-with-oracle-and-pwc-2026-08-13",
+      "entityIds": [
+        "EN-2db317222c996b63",
+        "EN-e4ffb7bd879b89da"
+      ]
+    }
+  ]
 }

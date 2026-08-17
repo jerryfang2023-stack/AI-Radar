@@ -5,13 +5,38 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-16T05:25:07.181Z",
-    "latestDataDate": "2026-08-16",
-    "currentDate": "2026-08-16",
-    "eventCount": 2150,
+    "generatedAt": "2026-08-17T00:24:11.459Z",
+    "latestDataDate": "2026-08-17",
+    "currentDate": "2026-08-17",
+    "eventCount": 2171,
     "quarantinedEventCount": 19
   },
   "relationships": [
+    {
+      "relationship_id": "REL2-4010ea13c08ab579",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "serves",
+      "object_ref": "EN-916a98f0fa2a39af",
+      "object_type": "entity",
+      "event_id": "EV-b8686b4f41d1aa67",
+      "claim_refs": [
+        "CL-bd11a7e6ce692532"
+      ],
+      "source_refs": [
+        "SA-bb388b737fdbefea"
+      ],
+      "data_date": "2026-08-17",
+      "status": "verified",
+      "subjectName": "OpenAI",
+      "objectName": "IBM",
+      "predicateLabel": "服务",
+      "title": "OpenAI 服务 IBM",
+      "eventTitle": "IBM与OpenAI合作，将AI更深入地带入企业",
+      "eventDate": "2026-08-17",
+      "sourceCount": 1
+    },
     {
       "relationship_id": "REL2-ac23d27e955fb3fc",
       "relationship_version": "RELATION-V2.1",
@@ -22,15 +47,15 @@
       "object_type": "entity",
       "event_id": "EV-129ffa6be41bb485",
       "claim_refs": [
-        "CL-a9aca8fa4c9d3b58",
-        "CL-dd11dcf6c359d2cc",
-        "CL-a7e871b4081e154b",
-        "CL-66692d17c0e34ba4"
+        "CL-437b1dad18df80c3",
+        "CL-9544b18968f8b294",
+        "CL-1b368149af7c16d0",
+        "CL-85699e8500d96854"
       ],
       "source_refs": [
         "SA-7eaa925ca1da695a"
       ],
-      "data_date": "2026-08-16",
+      "data_date": "2026-08-17",
       "status": "verified",
       "subjectName": "OpenAI",
       "objectName": "IBM",
@@ -50,15 +75,15 @@
       "object_type": "entity",
       "event_id": "EV-129ffa6be41bb485",
       "claim_refs": [
-        "CL-a9aca8fa4c9d3b58",
-        "CL-dd11dcf6c359d2cc",
-        "CL-a7e871b4081e154b",
-        "CL-66692d17c0e34ba4"
+        "CL-437b1dad18df80c3",
+        "CL-9544b18968f8b294",
+        "CL-1b368149af7c16d0",
+        "CL-85699e8500d96854"
       ],
       "source_refs": [
         "SA-7eaa925ca1da695a"
       ],
-      "data_date": "2026-08-16",
+      "data_date": "2026-08-17",
       "status": "verified",
       "subjectName": "OpenAI",
       "objectName": "IBM",
@@ -66,6 +91,31 @@
       "title": "OpenAI 服务 IBM",
       "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
       "eventDate": "2026-08-13",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-ebb1534159f30c8c",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-916a98f0fa2a39af",
+      "object_type": "entity",
+      "event_id": "EV-b8686b4f41d1aa67",
+      "claim_refs": [
+        "CL-bd11a7e6ce692532"
+      ],
+      "source_refs": [
+        "SA-bb388b737fdbefea"
+      ],
+      "data_date": "2026-08-17",
+      "status": "verified",
+      "subjectName": "OpenAI",
+      "objectName": "IBM",
+      "predicateLabel": "合作",
+      "title": "OpenAI 合作 IBM",
+      "eventTitle": "IBM与OpenAI合作，将AI更深入地带入企业",
+      "eventDate": "2026-08-17",
       "sourceCount": 1
     },
     {
@@ -180,6 +230,31 @@
       "sourceCount": 1
     },
     {
+      "relationship_id": "REL2-5a2b9cfd6f0b1ca6",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-e65e0f2695fa259d",
+      "object_type": "entity",
+      "event_id": "EV-875b31b96ff689df",
+      "claim_refs": [
+        "CL-f441b70d1bca16ef"
+      ],
+      "source_refs": [
+        "SA-2bc62681d0b05bdb"
+      ],
+      "data_date": "2026-08-13",
+      "status": "verified",
+      "subjectName": "Anthropic",
+      "objectName": "Claude Cowork",
+      "predicateLabel": "发布",
+      "title": "Anthropic 发布 Claude Cowork",
+      "eventTitle": "Claude 打破平台壁垒：Chrome 侧边栏 AI 对话互通全平台历史记录",
+      "eventDate": "2026-08-13",
+      "sourceCount": 1
+    },
+    {
       "relationship_id": "REL2-ddc331c7e06a63b8",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-7d3194f79e645c42",
@@ -289,34 +364,6 @@
       "title": "AWS 合作 Amazon",
       "eventTitle": "Superblocks与AWS宣布战略合作，为Amazon Bedrock带来安全的企业级AI应用开发 - 美国新闻中心",
       "eventDate": "2026-08-03",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-a675a7f7bd02161e",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-bbdefa2950f49882",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-307557d99a7eb726",
-      "object_type": "entity",
-      "event_id": "EV-5e85bc91a6924760",
-      "claim_refs": [
-        "CL-e195d7727b181bec",
-        "CL-39ec4a2b7d6bd317",
-        "CL-f2323adffd6b687f",
-        "CL-0bc77417b3b9ac0e"
-      ],
-      "source_refs": [
-        "SA-409f38aff93df4c5"
-      ],
-      "data_date": "2026-08-03",
-      "status": "verified",
-      "subjectName": "Google",
-      "objectName": "Gemini Spark",
-      "predicateLabel": "发布",
-      "title": "Google 发布 Gemini Spark",
-      "eventTitle": "谷歌 Gemini Spark 智能体向全球更多用户开放，支持订机票、整理收件箱",
-      "eventDate": "2026-08-02",
       "sourceCount": 1
     },
     {
@@ -1051,33 +1098,6 @@
       "sourceCount": 1
     },
     {
-      "relationship_id": "REL2-62f415d53b9e1307",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-688f8db7018da7d4",
-      "object_type": "entity",
-      "event_id": "EV-82ae0ea3bfe336a1",
-      "claim_refs": [
-        "CL-5fced5cf18afc959",
-        "CL-7c22f66cabb9a37c",
-        "CL-d5a4e0b10c930ed2"
-      ],
-      "source_refs": [
-        "SA-f35e060050d33489"
-      ],
-      "data_date": "2026-07-24",
-      "status": "verified",
-      "subjectName": "Microsoft",
-      "objectName": "MAI-Voice-2-Flash",
-      "predicateLabel": "发布",
-      "title": "Microsoft 发布 MAI-Voice-2-Flash",
-      "eventTitle": "微软推出自研AI模型MAI-Image-2.5-Pro与MAI-Voice-2-Flash，已进入公开预览",
-      "eventDate": "2026-07-24",
-      "sourceCount": 1
-    },
-    {
       "relationship_id": "REL2-82d95dce19bccd53",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-febedfcafee9d610",
@@ -1152,33 +1172,6 @@
       "title": "Anthropic 发布 Claude Code",
       "eventTitle": "Anthropic 发布 Claude Security 插件 Beta 版：面向 Claude Code 的多智能体漏洞扫描器",
       "eventDate": "2026-07-23",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-dceee7ada64357c1",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-827b607311e6593e",
-      "object_type": "entity",
-      "event_id": "EV-82ae0ea3bfe336a1",
-      "claim_refs": [
-        "CL-5fced5cf18afc959",
-        "CL-9fea9adc5b3b6d08",
-        "CL-7c22f66cabb9a37c"
-      ],
-      "source_refs": [
-        "SA-f35e060050d33489"
-      ],
-      "data_date": "2026-07-24",
-      "status": "verified",
-      "subjectName": "Microsoft",
-      "objectName": "MAI-Image-2.5-Pro",
-      "predicateLabel": "发布",
-      "title": "Microsoft 发布 MAI-Image-2.5-Pro",
-      "eventTitle": "微软推出自研AI模型MAI-Image-2.5-Pro与MAI-Voice-2-Flash，已进入公开预览",
-      "eventDate": "2026-07-24",
       "sourceCount": 1
     },
     {
@@ -1312,33 +1305,6 @@
       "sourceCount": 1
     },
     {
-      "relationship_id": "REL2-899fe78a63eda569",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-068e7ccb7d4b07a6",
-      "object_type": "entity",
-      "event_id": "EV-e1e30a2a4a5232c6",
-      "claim_refs": [
-        "CL-34fddab81951af35",
-        "CL-8b238746e8f2c8ba",
-        "CL-3c62d52890307500"
-      ],
-      "source_refs": [
-        "SA-c75b1e326457605e"
-      ],
-      "data_date": "2026-07-23",
-      "status": "verified",
-      "subjectName": "Microsoft",
-      "objectName": "Copilot",
-      "predicateLabel": "发布",
-      "title": "Microsoft 发布 Copilot",
-      "eventTitle": "微软 Win11 RP 预览版文件管理器新增 Copilot 按钮",
-      "eventDate": "2026-07-22",
-      "sourceCount": 1
-    },
-    {
       "relationship_id": "REL2-987a83667061cf46",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-e73b79a0b10f8cdb",
@@ -1466,33 +1432,6 @@
       "predicateLabel": "发布",
       "title": "Google 发布 Gemini 3.6 Flash",
       "eventTitle": "Gemini 3.6 Flash ✨、OpenAI 安全漏洞 🚨、Devin Outposts 🛰️ TLDR",
-      "eventDate": "2026-07-22",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-a96854ad8a7b0bbc",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-7dfafb44ee67bcd8",
-      "object_type": "entity",
-      "event_id": "EV-828698c8779bb522",
-      "claim_refs": [
-        "CL-802ad84118cf32ec",
-        "CL-4bea83191f9c4afc",
-        "CL-14abc711708348a9"
-      ],
-      "source_refs": [
-        "SA-d31abd0756f4c76a"
-      ],
-      "data_date": "2026-07-23",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "SVD",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 SVD",
-      "eventTitle": "英伟达推出 SVD 服务，识别 AI 生成视频准确率最高达 92%",
       "eventDate": "2026-07-22",
       "sourceCount": 1
     },
@@ -1844,32 +1783,6 @@
       "sourceCount": 1
     },
     {
-      "relationship_id": "REL2-7a766493d6d54dde",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-52c2f30b6bda5898",
-      "object_type": "entity",
-      "event_id": "EV-cb3a8846bc4f8aca",
-      "claim_refs": [
-        "CL-45faa3838295a3b1",
-        "CL-770ae8d405e879c6"
-      ],
-      "source_refs": [
-        "SA-2ed6d789fcc56d74"
-      ],
-      "data_date": "2026-07-22",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Vera CPU",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 Vera CPU",
-      "eventTitle": "英伟达详解 Vera CPU：专为智能体 AI 构建，88 个 Olympus 核心、1.2 TB/s LPDDR5X 内存",
-      "eventDate": "2026-07-22",
-      "sourceCount": 1
-    },
-    {
       "relationship_id": "REL2-90009b82392af771",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-3bc9f78028bc2dba",
@@ -1893,34 +1806,6 @@
       "predicateLabel": "发布",
       "title": "CuspAI 发布 AI 材料工厂",
       "eventTitle": "CuspAI 推出\"AI 材料工厂\"计划，NVIDIA、Meta、三星均为创始成员",
-      "eventDate": "2026-07-21",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-9ad2c97e765910d9",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-bbdefa2950f49882",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-18f0900d6c487f59",
-      "object_type": "entity",
-      "event_id": "EV-597b8257a97b3d02",
-      "claim_refs": [
-        "CL-bcf6cc5593de2a0f",
-        "CL-1407e158e3017631",
-        "CL-bcccc3f03d4b38a9",
-        "CL-910d21a1f5ab0b3c"
-      ],
-      "source_refs": [
-        "SA-a3cf2c06935ba536"
-      ],
-      "data_date": "2026-07-22",
-      "status": "verified",
-      "subjectName": "Google",
-      "objectName": "Gemini 3.6 Flash",
-      "predicateLabel": "发布",
-      "title": "Google 发布 Gemini 3.6 Flash",
-      "eventTitle": "谷歌发布 Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
       "eventDate": "2026-07-21",
       "sourceCount": 1
     },
@@ -2000,33 +1885,6 @@
       "predicateLabel": "发布",
       "title": "阿里巴巴 发布 Qwen-Image-3.0",
       "eventTitle": "阿里巴巴的Qwen-Image-3.0单次生成完整信息图网格及可读的十像素文字",
-      "eventDate": "2026-07-21",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-ddbd67ee39ac2096",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-bbdefa2950f49882",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-31055a8d9856fce4",
-      "object_type": "entity",
-      "event_id": "EV-597b8257a97b3d02",
-      "claim_refs": [
-        "CL-1407e158e3017631",
-        "CL-bcccc3f03d4b38a9",
-        "CL-910d21a1f5ab0b3c"
-      ],
-      "source_refs": [
-        "SA-a3cf2c06935ba536"
-      ],
-      "data_date": "2026-07-22",
-      "status": "verified",
-      "subjectName": "Google",
-      "objectName": "Gemini 3.5 Flash Cyber",
-      "predicateLabel": "发布",
-      "title": "Google 发布 Gemini 3.5 Flash Cyber",
-      "eventTitle": "谷歌发布 Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
       "eventDate": "2026-07-21",
       "sourceCount": 1
     },
@@ -2799,33 +2657,6 @@
       "sourceCount": 1
     },
     {
-      "relationship_id": "REL2-cd31c7f1b13d1c27",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-aa15d891a32a51b8",
-      "object_type": "entity",
-      "event_id": "EV-950237c6b3eb6343",
-      "claim_refs": [
-        "CL-8a89be65a1a0c758",
-        "CL-515e4015e6d27579",
-        "CL-313db46aab7e3aab"
-      ],
-      "source_refs": [
-        "SA-5bc68137ea7bcb63"
-      ],
-      "data_date": "2026-07-18",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Nemotron 3 Embed",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 Nemotron 3 Embed",
-      "eventTitle": "英伟达开源 Nemotron 3 Embed 系列 AI 模型，8B 版斩获 RTEB 榜首",
-      "eventDate": "2026-07-18",
-      "sourceCount": 1
-    },
-    {
       "relationship_id": "REL2-d2669b3b21d3263a",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-8d4321d936320802",
@@ -2996,33 +2827,6 @@
       "eventTitle": "前 OpenAI CTO 穆拉蒂创立的 Thinking Machines Lab 发布 Inkling 多模态模型，975B 参数开源",
       "eventDate": "2026-07-16",
       "sourceCount": 3
-    },
-    {
-      "relationship_id": "REL2-a2d037d3ca0eff3e",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-597d8c4afa5fe3d6",
-      "object_type": "entity",
-      "event_id": "EV-7c899d5decafc42f",
-      "claim_refs": [
-        "CL-4154aa4e461163c9",
-        "CL-a3cd2bba9a1d055b",
-        "CL-837c7d367f0c26ce"
-      ],
-      "source_refs": [
-        "SA-c532d10bfc903c0c"
-      ],
-      "data_date": "2026-07-17",
-      "status": "verified",
-      "subjectName": "Microsoft",
-      "objectName": "Visual Studio Code 1.129",
-      "predicateLabel": "发布",
-      "title": "Microsoft 发布 Visual Studio Code 1.129",
-      "eventTitle": "微软发布 Visual Studio Code 1.129 正式版更新，现代 UI 抢先看",
-      "eventDate": "2026-07-16",
-      "sourceCount": 1
     },
     {
       "relationship_id": "REL2-ca465b8d8d369d14",
@@ -3410,34 +3214,6 @@
       "sourceCount": 1
     },
     {
-      "relationship_id": "REL2-f92ee2f782a8185b",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-bbdefa2950f49882",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-0e008e2c06144ec8",
-      "object_type": "entity",
-      "event_id": "EV-6359c9f6c2609a38",
-      "claim_refs": [
-        "CL-3c3d4af5e069787d",
-        "CL-714aa682873fac8b",
-        "CL-b606f6b126922962",
-        "CL-4a7039df083c3152"
-      ],
-      "source_refs": [
-        "SA-b894cd4477812b65"
-      ],
-      "data_date": "2026-07-16",
-      "status": "verified",
-      "subjectName": "Google",
-      "objectName": "Nano Banana",
-      "predicateLabel": "发布",
-      "title": "Google 发布 Nano Banana",
-      "eventTitle": "谷歌图片服务 25 周年，AI 概览新增 Nano Banana 生图功能",
-      "eventDate": "2026-07-15",
-      "sourceCount": 1
-    },
-    {
       "relationship_id": "REL2-0290625c26082cef",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-d41ebd9f02722fc8",
@@ -3490,34 +3266,6 @@
       "title": "Anthropic 发布 Claude",
       "eventTitle": "Anthropic 推出 Claude for Teachers，免费向美国 K-12 教师提供高级功能",
       "eventDate": "2026-07-15",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-2106a1b212c3c15f",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "partners_with",
-      "object_ref": "EN-956b7280912ef1cc",
-      "object_type": "entity",
-      "event_id": "EV-5b16886442234f81",
-      "claim_refs": [
-        "CL-23841ec9ad74e5be",
-        "CL-f5588a6595b80582",
-        "CL-f206a4415dd1222e",
-        "CL-35c73e08269377e7"
-      ],
-      "source_refs": [
-        "SA-bc6a154e09c703b9"
-      ],
-      "data_date": "2026-07-15",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Mitsubishi Heavy Industries",
-      "predicateLabel": "合作",
-      "title": "NVIDIA 合作 Mitsubishi Heavy Industries",
-      "eventTitle": "英伟达与三菱重工拟合作，将冷却与能源管理技术融入下一代 AI 数据中心",
-      "eventDate": "2026-07-14",
       "sourceCount": 1
     },
     {
@@ -5067,33 +4815,6 @@
       "sourceCount": 1
     },
     {
-      "relationship_id": "REL2-09079be08468cadc",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-3ae50afab3e392b8",
-      "object_type": "entity",
-      "event_id": "EV-3028dfadf94c8f4c",
-      "claim_refs": [
-        "CL-e97a7a589b9980c1",
-        "CL-0bbdad6779952a81",
-        "CL-6baa9897903cc3dc"
-      ],
-      "source_refs": [
-        "SA-7d7d63f2484913f7"
-      ],
-      "data_date": "2026-07-04",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Nemotron-Labs-TwoTower",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 Nemotron-Labs-TwoTower",
-      "eventTitle": "英伟达开源 Nemotron-Labs-TwoTower 双塔扩散语言模型",
-      "eventDate": "2026-07-03",
-      "sourceCount": 1
-    },
-    {
       "relationship_id": "REL2-3134364c4ac137b8",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-1da46c494dfdd8d3",
@@ -5489,34 +5210,6 @@
       "predicateLabel": "发布",
       "title": "Intercom 发布 Fin",
       "eventTitle": "Intercom 为其 Fin AI 智能体推出基于结果的定价模式",
-      "eventDate": "2026-07-01",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-638b55900181fbf2",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-bbdefa2950f49882",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-01f1074bb52ff605",
-      "object_type": "entity",
-      "event_id": "EV-d8c69ed782b73a34",
-      "claim_refs": [
-        "CL-b5bc8b4e766de0ef",
-        "CL-dbee760c0db43fab",
-        "CL-72f47e56c761bde4",
-        "CL-9fdeb9adf922c9da"
-      ],
-      "source_refs": [
-        "SA-cb3a20fe357ba722"
-      ],
-      "data_date": "2026-07-01",
-      "status": "verified",
-      "subjectName": "Google",
-      "objectName": "Nano Banana 2 Lite",
-      "predicateLabel": "发布",
-      "title": "Google 发布 Nano Banana 2 Lite",
-      "eventTitle": "谷歌推出 AI 生图模型 Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
       "eventDate": "2026-07-01",
       "sourceCount": 1
     },
@@ -6684,33 +6377,6 @@
       "title": "Sakana AI 发布 Sakana Fugu",
       "eventTitle": "Sakana AI 发布多智能体编排系统 Sakana Fugu，对外表现为单一模型",
       "eventDate": "2026-06-23",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-7a95bce5aecaba79",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-2ab6d53e717a0e0d",
-      "subject_type": "entity",
-      "predicate": "partners_with",
-      "object_ref": "EN-bbdefa2950f49882",
-      "object_type": "entity",
-      "event_id": "EV-d1a3f5c8045e548d",
-      "claim_refs": [
-        "CL-5758242d40096958",
-        "CL-108011dcac3f51c9",
-        "CL-6816c5ea4abdfa87"
-      ],
-      "source_refs": [
-        "SA-572f0e8d4b983d74"
-      ],
-      "data_date": "2026-06-23",
-      "status": "verified",
-      "subjectName": "诺基亚",
-      "objectName": "Google",
-      "predicateLabel": "合作",
-      "title": "诺基亚 合作 Google",
-      "eventTitle": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台",
-      "eventDate": "2026-06-22",
       "sourceCount": 1
     },
     {
@@ -8019,34 +7685,6 @@
       "sourceCount": 1
     },
     {
-      "relationship_id": "REL2-44ebd8a7378accce",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-bbdefa2950f49882",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-d56aa2f9908f566a",
-      "object_type": "entity",
-      "event_id": "EV-22b8d155ce027905",
-      "claim_refs": [
-        "CL-0ffd4a87d0bf9a23",
-        "CL-9a3abffb4df3b677",
-        "CL-53bc4ba62a2c55fb",
-        "CL-c0d954c60d8247d3"
-      ],
-      "source_refs": [
-        "SA-30fb0e04917bc0f3"
-      ],
-      "data_date": "2026-06-11",
-      "status": "verified",
-      "subjectName": "Google",
-      "objectName": "DiffusionGemma",
-      "predicateLabel": "发布",
-      "title": "Google 发布 DiffusionGemma",
-      "eventTitle": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍",
-      "eventDate": "2026-06-11",
-      "sourceCount": 1
-    },
-    {
       "relationship_id": "REL2-48cdf6bd8d397fed",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-c70eca6b0f88f44d",
@@ -8448,34 +8086,6 @@
       "title": "Anthropic 发布 Mythos 5",
       "eventTitle": "Anthropic 发布 Claude Fable 5 和 Mythos 5，编程和科学能力大幅提升",
       "eventDate": "2026-06-10",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-4aa175c42153e014",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-bbdefa2950f49882",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-4baef0e41cbd7ae2",
-      "object_type": "entity",
-      "event_id": "EV-4a3cb762183581cd",
-      "claim_refs": [
-        "CL-b487cc8855f09bf4",
-        "CL-5b9c208e3329948f",
-        "CL-a0bae28c89384d4f",
-        "CL-c2d89368f69456e3"
-      ],
-      "source_refs": [
-        "SA-b6f2cdfb3b2eff0e"
-      ],
-      "data_date": "2026-06-10",
-      "status": "verified",
-      "subjectName": "Google",
-      "objectName": "Gemini 3.5 Live Translate",
-      "predicateLabel": "发布",
-      "title": "Google 发布 Gemini 3.5 Live Translate",
-      "eventTitle": "谷歌发布实时语音互译模型 Gemini 3.5 Live Translate，谷歌翻译 App 即用",
-      "eventDate": "2026-06-09",
       "sourceCount": 1
     },
     {
@@ -9323,60 +8933,6 @@
       "sourceCount": 1
     },
     {
-      "relationship_id": "REL2-4ba72572dcf15f72",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-11ef7b03c79c9bbd",
-      "object_type": "entity",
-      "event_id": "EV-631197767a45d34c",
-      "claim_refs": [
-        "CL-a5be3ebbffb97ab9",
-        "CL-4e30f271c8017d66",
-        "CL-bb382a9773443f24"
-      ],
-      "source_refs": [
-        "SA-b74ed4d2a25dc3b4"
-      ],
-      "data_date": "2026-06-01",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Vera",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 Vera",
-      "eventTitle": "英伟达 Vera 处理器发布：专为 AI 智能体打造，OpenAI、SpaceXAI、字节跳动都要用",
-      "eventDate": "2026-06-01",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-6e1c341aeaa60f54",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-9bc22dcabf7f45b3",
-      "object_type": "entity",
-      "event_id": "EV-aa63303570154a9b",
-      "claim_refs": [
-        "CL-4119c112dfe6ff3e",
-        "CL-008a6f6f83e5e40d",
-        "CL-eeaddb533e49827c"
-      ],
-      "source_refs": [
-        "SA-4dcdfe948f82b975"
-      ],
-      "data_date": "2026-06-01",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Alpamayo 2 Super",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 Alpamayo 2 Super",
-      "eventTitle": "英伟达推出 Alpamayo 2 Super 开源推理模型，助力 L4 自动驾驶研发",
-      "eventDate": "2026-06-01",
-      "sourceCount": 1
-    },
-    {
       "relationship_id": "REL2-949bfe8ea8e326ed",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-e1517be14d06cdb7",
@@ -9398,33 +8954,6 @@
       "predicateLabel": "发布",
       "title": "MiniMax 发布 M3",
       "eventTitle": "MiniMax M3：前沿编码、100万token上下文与原生多模态一体模型",
-      "eventDate": "2026-06-01",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-cd95b9638b93b057",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-171fa23d27b5894b",
-      "object_type": "entity",
-      "event_id": "EV-67f32771d69084d6",
-      "claim_refs": [
-        "CL-54dd99f7128a923b",
-        "CL-bdbc2f09ee0b8373",
-        "CL-6daec18c87ead702"
-      ],
-      "source_refs": [
-        "SA-471f373438651acc"
-      ],
-      "data_date": "2026-06-01",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Cosmos 3",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 Cosmos 3",
-      "eventTitle": "让机器人看懂世界：英伟达推出全球首款全开源全模态物理 AI 大模型 Cosmos 3",
       "eventDate": "2026-06-01",
       "sourceCount": 1
     },
@@ -9455,32 +8984,6 @@
       "sourceCount": 1
     },
     {
-      "relationship_id": "REL2-f1a8de714fc4b399",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-a3266ab9e10d6105",
-      "object_type": "entity",
-      "event_id": "EV-d43a561da59b2897",
-      "claim_refs": [
-        "CL-b1f07f161ec7dee0",
-        "CL-553758c225568c2a"
-      ],
-      "source_refs": [
-        "SA-ae55abf27e9077a9"
-      ],
-      "data_date": "2026-06-01",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Nemotron 3 Ultra",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 Nemotron 3 Ultra",
-      "eventTitle": "英伟达开源5500亿参数Nemotron 3 Ultra模型",
-      "eventDate": "2026-06-01",
-      "sourceCount": 1
-    },
-    {
       "relationship_id": "REL2-b2812101f3a49110",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-2c348893efb2316e",
@@ -9505,33 +9008,6 @@
       "title": "StepFun 发布 StepAudio 2.5 Realtime",
       "eventTitle": "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型",
       "eventDate": "2026-05-25",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-9795f8e6814470a6",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9fbf261b62c1d7c0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-10fce287b4b1464c",
-      "object_type": "entity",
-      "event_id": "EV-a4f052325d0ef230",
-      "claim_refs": [
-        "CL-4c50bbc497deaee1",
-        "CL-25b9389df0e0f06f",
-        "CL-eece65ce191fb7c6"
-      ],
-      "source_refs": [
-        "SA-af9b5cefb039de38"
-      ],
-      "data_date": "2026-05-23",
-      "status": "verified",
-      "subjectName": "Microsoft",
-      "objectName": "Fara1.5",
-      "predicateLabel": "发布",
-      "title": "Microsoft 发布 Fara1.5",
-      "eventTitle": "微软推出 Fara1.5 系列浏览器 AI 智能体模型，72% 任务成功率超 OpenAI Operator",
-      "eventDate": "2026-05-23",
       "sourceCount": 1
     },
     {

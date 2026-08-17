@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-16T05:25:07.181Z",
-    "latestDataDate": "2026-08-16",
-    "currentDate": "2026-08-16",
-    "eventCount": 2150,
+    "generatedAt": "2026-08-17T00:24:11.459Z",
+    "latestDataDate": "2026-08-17",
+    "currentDate": "2026-08-17",
+    "eventCount": 2171,
     "quarantinedEventCount": 19
   },
   "node": {
@@ -72,7 +72,7 @@
       "HW-9a39a7f449362f96"
     ],
     "firstSeen": "2026-04-30",
-    "lastSeen": "2026-08-16"
+    "lastSeen": "2026-08-17"
   },
   "events": [
     {
@@ -4248,9 +4248,9 @@
     },
     {
       "id": "EV-0121f0a9e9a975ec",
-      "dataDate": "2026-08-16",
+      "dataDate": "2026-08-17",
       "date": "2026-08-14",
-      "updatedDate": "2026-08-16",
+      "updatedDate": "2026-08-17",
       "eventType": "hardware_deployment",
       "eventTypeLabel": "硬件部署",
       "eventGroup": "AI 硬件",
@@ -6150,7 +6150,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-14",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-c70eca6b0f88f44d",
@@ -6163,6 +6163,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-d57fb9108f2cb220",
         "EV-a6cb4aef5284eb68",
         "EV-f5dd6dec49ad83aa",
         "EV-c89018d79b3d25bd",
@@ -6407,6 +6408,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-9356dd1be92ef5c6",
         "EV-55946516c014395c",
         "EV-cdc6611d6b115cab",
         "EV-3343be31faab2cce",
@@ -6509,6 +6511,7 @@
       ],
       "relatedEntityIds": [
         "EN-240389f4b730bad4",
+        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-9f15bb7e29e191eb",
@@ -6524,7 +6527,6 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
-        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -6534,7 +6536,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-17"
     },
     {
       "id": "EN-7640da40298286a6",
@@ -6725,7 +6727,7 @@
     {
       "id": "HW-304c6370cc157449",
       "eventId": "EV-0121f0a9e9a975ec",
-      "dataDate": "2026-08-16",
+      "dataDate": "2026-08-17",
       "date": "2026-08-14",
       "title": "L&T在钦奈为Together AI部署印度首个10,000-GPU统一AI集群",
       "hardwareType": "gpu",
@@ -6734,7 +6736,7 @@
       "computeLayer": "data_center",
       "supplier": "NVIDIA",
       "customer": "L&T",
-      "processNode": "B300",
+      "processNode": "NVIDIA B300 \"Blackwell Ultra\"",
       "capacity": 10000,
       "capacityUnit": "GPUs",
       "site": "Vyoma.AI's Chennai data center campus",
@@ -6870,13 +6872,13 @@
     {
       "id": "HWC-aa1ceb06f4e3c084",
       "snapshotKey": "aa1ceb06f4e3c084",
-      "snapshotId": "HWS-125fdefffaebda78",
+      "snapshotId": "HWS-8c1b2e900be4c21d",
       "eventId": "EV-0121f0a9e9a975ec",
       "eventIds": [
         "EV-0121f0a9e9a975ec"
       ],
-      "dataDate": "2026-08-16",
-      "date": "2026-08-16",
+      "dataDate": "2026-08-17",
+      "date": "2026-08-17",
       "title": "L&T",
       "subject": "L&T",
       "productNames": [],
@@ -6888,12 +6890,21 @@
         "shipment_deployment": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-97374e1b0766efd9"
+          "fact_ref": "HWF-1bfbfa3663cb058f"
         }
       },
       "factCount": 4,
-      "snapshotCount": 3,
+      "snapshotCount": 4,
       "changes": [
+        {
+          "date": "2026-08-17",
+          "previousDate": "2026-08-16",
+          "snapshotId": "HWS-8c1b2e900be4c21d",
+          "previousSnapshotId": "HWS-125fdefffaebda78",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        },
         {
           "date": "2026-08-16",
           "previousDate": "2026-08-15",
@@ -6916,8 +6927,8 @@
       "capacityFacts": [],
       "supplyFacts": [
         {
-          "data_date": "2026-08-16",
-          "hardware_fact_id": "HWF-2de0fcccb6713a7a",
+          "data_date": "2026-08-17",
+          "hardware_fact_id": "HWF-04cc79f76903af19",
           "fact_type": "shipment_deployment",
           "observed_at": "2026-08-13T16:26:39.000Z",
           "subject_entity_id": "EN-29b9f0cae32e7a8a",
@@ -6931,15 +6942,15 @@
           "event_refs": [
             "EV-0121f0a9e9a975ec"
           ],
-          "claim_ref": "CL-78e4dfc46d3a343d",
+          "claim_ref": "CL-dede1b282ec73dd8",
           "source_refs": [
             "SA-d8d5a553062a5141"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-16/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-17/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-16",
-          "hardware_fact_id": "HWF-b52d3da1b66ad35d",
+          "data_date": "2026-08-17",
+          "hardware_fact_id": "HWF-8d22d9737db0c582",
           "fact_type": "shipment_deployment",
           "observed_at": "2026-08-13T16:26:39.000Z",
           "subject_entity_id": "EN-29b9f0cae32e7a8a",
@@ -6953,15 +6964,15 @@
           "event_refs": [
             "EV-0121f0a9e9a975ec"
           ],
-          "claim_ref": "CL-06b3d2f50bc056c5",
+          "claim_ref": "CL-e5aa328772150ef3",
           "source_refs": [
             "SA-d8d5a553062a5141"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-16/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-17/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-16",
-          "hardware_fact_id": "HWF-d3ba0363e50df48d",
+          "data_date": "2026-08-17",
+          "hardware_fact_id": "HWF-ec927d63f14d39d9",
           "fact_type": "shipment_deployment",
           "observed_at": "2026-08-13T16:26:39.000Z",
           "subject_entity_id": "EN-29b9f0cae32e7a8a",
@@ -6975,15 +6986,15 @@
           "event_refs": [
             "EV-0121f0a9e9a975ec"
           ],
-          "claim_ref": "CL-eb7aa8724d880f6d",
+          "claim_ref": "CL-ab35c9909ab52391",
           "source_refs": [
             "SA-d8d5a553062a5141"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-16/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-17/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-16",
-          "hardware_fact_id": "HWF-97374e1b0766efd9",
+          "data_date": "2026-08-17",
+          "hardware_fact_id": "HWF-1bfbfa3663cb058f",
           "fact_type": "shipment_deployment",
           "observed_at": "2026-08-13T16:26:39.000Z",
           "subject_entity_id": "EN-29b9f0cae32e7a8a",
@@ -6997,11 +7008,11 @@
           "event_refs": [
             "EV-0121f0a9e9a975ec"
           ],
-          "claim_ref": "CL-f8861d895313a675",
+          "claim_ref": "CL-a176694ebf661235",
           "source_refs": [
             "SA-d8d5a553062a5141"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-16/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-17/hardware-facts.json"
         }
       ],
       "specificationFacts": [],

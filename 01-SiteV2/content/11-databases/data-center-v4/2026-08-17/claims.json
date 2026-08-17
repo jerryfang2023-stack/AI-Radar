@@ -1,0 +1,1875 @@
+[
+  {
+    "claim_id": "CL-4ef518dd73e9b0f3",
+    "raw_id": "RAW-359f2da397059910",
+    "claim_type": "security_incident",
+    "subject": "OpenAI",
+    "predicate": "security_incident",
+    "object": "Astra",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a805f25c3cfdd3bd"
+    },
+    "source_span": {
+      "raw_id": "RAW-359f2da397059910",
+      "start": 31,
+      "end": 62
+    },
+    "source_quote": "OpenAI首次因网络安全风险主动暂停下一代模型Astra研发",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dede1b282ec73dd8",
+    "raw_id": "RAW-08dbbb79b8061d03",
+    "claim_type": "hardware_deployment",
+    "subject": "L&T",
+    "predicate": "hardware_deployment",
+    "object": "for Together AI in Chennai",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-08dbbb79b8061d03",
+      "start": 0,
+      "end": 82
+    },
+    "source_quote": "L&T Deploys India’s First 10,000-GPU Unified AI Cluster for Together AI in Chennai",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e5aa328772150ef3",
+    "raw_id": "RAW-08dbbb79b8061d03",
+    "claim_type": "hardware_deployment",
+    "subject": "L&T",
+    "predicate": "hardware_deployment",
+    "object": "for Together AI in Chennai",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-08dbbb79b8061d03",
+      "start": 83,
+      "end": 285
+    },
+    "source_quote": "India AI data center deployment reaches a new frontier: L&T has secured a $1.05 to $1.57 billion contract to deploy 10,000 NVIDIA B300 Blackwell Ultra GPUs in a single NVLink-connected cluster at its...",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ab35c9909ab52391",
+    "raw_id": "RAW-08dbbb79b8061d03",
+    "claim_type": "hardware_deployment",
+    "subject": "L&T",
+    "predicate": "hardware_deployment",
+    "object": "for Together AI in Chennai",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-08dbbb79b8061d03",
+      "start": 286,
+      "end": 14557
+    },
+    "source_quote": "India's largest engineering conglomerate, Larsen & Toubro, announced today that it has secured a contract worth ₹10,000 crore to ₹15,000 crore (approximately $1.05 billion to $1.57 billion USD) to deploy 10,000 NVIDIA B300 \"Blackwell Ultra\" GPUs in a single interconnected cluster at Vyoma.AI's Chennai data center campus. The customer is Together AI, the San Francisco-based open-source AI cloud provider that crossed $1.15 billion in bookings earlier this year. What makes this deal different from every prior India AI data center announcement is not the dollar figure &mdash; it is the word \"single-cluster.\"A distributed deployment of 10,000 GPUs spread across independently networked servers and a unified single-cluster of 10,000 GPUs connected by a shared NVLink fabric are not the same machine. They are not even close to the same machine. The distinction is the entire editorial point of this article.What \"Single-Cluster\" Actually Means: Architecture, Bandwidth, and What It UnlocksWhen NVIDIA ships the B300 in its DGX B300 server configuration, it packs eight B300 SXM GPUs onto a single baseboard. Those eight GPUs connect to each other through NVLink 5, NVIDIA's proprietary fifth-generation interconnect, which delivers 1.8 terabytes per second of bidirectional bandwidth per GPU. A NVSwitch chip inside the chassis provides full all-to-all connectivity &mdash; any GPU can communicate with any other GPU at the full NVLink bandwidth without going through a slower external network. The complete NVIDIA DGX B300 specifications confirm a total system bandwidth of 14.4 terabytes per second across the eight-GPU node.Now multiply that by 1,250 servers &mdash; the approximate number of DGX B300 nodes required to reach 10,000 GPUs &mdash; and connect them using high-speed inter-node networking. The result is a compute fabric in which all 10,000 GPUs are addressable as a single unified system: jobs can be scheduled across the entire cluster as if it were one giant accelerator, because the NVLink interconnect architecture was designed explicitly to allow that. This is what \"single-cluster\" means, and it is what a disaggregated arrangement of the same GPUs &mdash; spread across separate deployments, different buildings, or independent cloud regions &mdash; cannot replicate.The engineering reason this matters is gradient synchronization. Training a large AI model requires all GPUs to periodically share updated weight gradients through an operation called all-reduce. In a small cluster, this operation is fast. In a large cluster, it becomes the dominant bottleneck &mdash; if the interconnect fabric cannot move gradient data across all nodes quickly enough, GPUs spend more time waiting than computing, and the scaling efficiency of additional hardware collapses. The 14.4 terabytes per second NVLink bandwidth within a DGX node is orders of magnitude faster than even InfiniBand networking between separate servers. The single-cluster designation is NVIDIA's claim that the architecture allows this scaling to work across the full fleet rather than degrading at node boundaries.The practical consequence: a 10,000-GPU single NVLink cluster can run multi-node fine-tuning jobs and large-scale training runs that are simply not feasible on the same number of GPUs in a disaggregated arrangement. Prior India data center announcements &mdash; including Meta's 168-megawatt campus at Jamnagar, Gujarat &mdash; described power capacity and general-purpose compute infrastructure. This one describes a specific interconnect architecture and the class of workloads it enables.The B300 Itself: Memory, Bandwidth, and Why the Upgrade From H100 Is Non-LinearThe NVIDIA B300 &mdash; formally the Blackwell Ultra GPU &mdash; is NVIDIA's current volume-production flagship for data center AI inference and training. A single B300 GPU carries 288 gigabytes of HBM3e memory at 8 terabytes per second of memory bandwidth. An eight-GPU DGX B300 node accordingly holds 2.3 terabytes of total fast GPU memory, enough to run a 405-billion parameter model &mdash; such as Meta's Llama 3.1 405B &mdash; in full 16-bit precision on a single server without splitting the model across nodes. That memory ceiling matters for the agentic and multi-step reasoning workloads Together AI's platform increasingly serves.The performance gap over the previous generation is non-linear. Independent benchmarks from SemiAnalysis InferenceX &mdash; an open-source reproducible benchmark suite running verified results nightly on actual production hardware &mdash; show the B300 delivering more than 4,000 tokens per second per GPU on DeepSeek R1 at a 38 tokens-per-second-per-user latency target, compared to 276 tokens per second per GPU on the H100 &mdash; a roughly 14-fold throughput improvement for that workload. The B300 vs H100 benchmark data also shows cost advantage is larger still: B300 produces tokens at approximately $0.16 per million versus $1.32 per million for the H100 at the same latency, a more than 700 percent cost improvement.At the rack scale, NVIDIA's GB300 NVL72 systems &mdash; 72 Blackwell Ultra GPUs in a single liquid-cooled rack &mdash; deliver up to 50 times higher throughput per megawatt and 35 times lower cost per token compared to NVIDIA's prior Hopper H100 platform for agentic workloads, according to SemiAnalysis InferenceX data cited by NVIDIA. These figures are for the rack-scale NVL72 configuration; individual DGX B300 server performance scales accordingly.Each B300 GPU operates at a thermal design power of 1,400 watts &mdash; nearly double the H100's 700 watts. At 10,000 GPUs, that totals up to 14 megawatts of GPU power alone, before server overhead, networking, and cooling loads are counted. Running this cluster requires purpose-built liquid cooling infrastructure; standard air-cooled data centers cannot manage B300 density at this scale. Vyoma's Chennai campus is designed for 250 megawatts in Phase 1 with 150 MVA of power infrastructure already in place &mdash; the physical plant was engineered for exactly this class of hardware.Together AI: Why a US AI Company Chose India for a Frontier ClusterTogether AI is not a general cloud provider. Founded in 2022 in San Francisco, the company runs an inference and training platform for open-weight AI models &mdash; DeepSeek, MiniMax, Kimi, GLM, and dozens of others &mdash; through an API compatible with OpenAI's interface. The platform processes 400 trillion tokens monthly for developers and enterprise customers. Together AI does not build its own foundation models; its value is the infrastructure that makes other organizations' open-source models cheaper and faster to run than proprietary alternatives.The Chennai cluster is part of a rapid global expansion. Just two days before the L&T announcement, Together AI and IBM disclosed a $240 million multi-year agreement under which IBM Cloud will deploy a large cluster of NVIDIA HGX B300 systems to serve Together AI's inference platform, with availability expected in the first quarter of 2027. Together AI closed an $800 million Series C on July 1, 2026, at an $8.3 billion valuation, with Aramco Ventures as lead investor and NVIDIA among the participants. Together AI CEO Vipul Ved Prakash has described the company's infrastructure buildout as \"the biggest infrastructure build-out in human history.\"The India decision reflects three converging factors that make Chennai specifically attractive for the platform's expansion. First, India's Digital Personal Data Protection Act of 2023, whose implementing rules were finalized in November 2025, creates meaningful compliance incentives for enterprises that can process Indian user data within the country. Indian enterprise customers using Together AI's inference from a Chennai cluster operate under a materially simpler regulatory posture than those routing workloads to US-based data centers. Second, the cost of power, land, and infrastructure in India remains significantly lower than in the United States or Europe, where data center power costs have surged alongside the GPU buildout. Third, India's developer community &mdash; the second-largest contributor to GitHub AI projects globally, according to GitHub's annual developer data &mdash; represents a large and growing demand base for the inference services Together AI offers.L&T's Corporate Architecture for the AI EraThe deal is executed through a newly built corporate structure. In June 2026, Vyoma.AI &mdash; L&T's data center and cloud services subsidiary &mdash; incorporated a wholly owned entity called LTN Compute Private Limited to build out AI compute infrastructure and provide technology-enabled services. LTN Compute is the operating vehicle through which L&T is formally entering what the company calls the \"AI Factory\" business: not just constructing the buildings that house data centers, but owning, operating, and monetizing the GPU infrastructure inside them.L&T separately agreed earlier this week to transfer its data center business to Vyoma.AI for ₹1,400 crore (approximately $147 million USD), consolidating the infrastructure business under Vyoma as its dedicated vehicle. L&T Chairman and Managing Director S N Subrahmanyan framed the Chennai deal in terms of the company's broader infrastructure ambitions: \"Artificial intelligence is becoming foundational to every industry and AI factories will power this transformation. Our deployment of an Nvidia B300 AI factory for Together AI marks a significant milestone in L&T's gigawatt AI infrastructure mission.\"L&T has separately established a broader partnership with NVIDIA to develop gigawatt-scale AI infrastructure across India, including plans to scale GPU clusters at the Chennai campus to 30 megawatts and build a new 40-megawatt facility in Mumbai. The Together AI contract is the first large, signed deployment that turns those plans into hardware.India's AI Compute Race: Where the Chennai Deal FitsIndia's national AI compute program, the IndiaAI Mission, was approved by Cabinet in March 2024 with a funding outlay of ₹10,371 crore (approximately $1.09 billion USD) over five years. As of mid-2026, the program has deployed approximately 34,000 GPUs, accessible to startups, academic researchers, and government agencies at subsidized rates of around ₹65 per GPU-hour (approximately $0.68 USD per GPU-hour). Officials have set a target of 100,000 public GPUs by December 2026, with national GPU capacity &mdash; including private deployments &mdash; expected to exceed 200,000 by year-end.The L&T-Together AI deal, at 10,000 B300 GPUs, represents roughly 29 percent of the IndiaAI Mission's entire public target in a single private deployment. More significantly, B300 GPUs are not equivalent to H100s on a one-to-one basis: the per-GPU performance advantage means 10,000 B300s perform a substantially larger volume of inference work than 10,000 H100s would. The effective compute contribution of this single cluster to India's national AI capacity is materially larger than the raw GPU count suggests.Chennai's emergence as a focal point for this investment is deliberate. The city ranks second among Indian data center markets, contributing approximately 21 percent of the country's total data center capacity, according to Blackridge Research. Equinix opened its Chennai data center in September 2025, specifically citing the city's position near anticipated submarine cable landing sites. The L&T campus at Vyoma operates in the same geography, with a gigawatt-scale site whose Phase 1 capacity is 250 megawatts.Global hyperscalers have made separate India commitments: Microsoft and Amazon targeting $52.5 billion in Indian AI and digital infrastructure; Google announcing a $15 billion AI data hub investment; and OpenAI partnering with Tata Group for one gigawatt of capacity. What the L&T-Together AI deal adds to that picture is different in kind: a US AI cloud provider that specifically serves open-weight model inference &mdash; not proprietary models, not a general cloud &mdash; deploying its most compute-intensive cluster outside the United States in South Asia, under an Indian operating entity. The full landscape of those India hyperscaler commitments provides context for the scale of current investment.The Geography of AI Compute Is ShiftingThe deeper implication of this deal is geographic. Since frontier AI infrastructure emerged as a strategically meaningful asset class, it has been concentrated almost exclusively in the United States, Europe, and parts of East Asia. Data centers in those regions hold the vast majority of the world's most advanced AI compute &mdash; the GPU clusters capable of training and serving the models that define the current frontier of AI capability.The Together AI-L&T contract represents a structural departure from that pattern. A US AI cloud provider of significant scale &mdash; one that crossed $1.15 billion in annual bookings and serves 400 trillion monthly tokens &mdash; has chosen to anchor a portion of its global compute infrastructure in India, under an Indian operator, running the most advanced hardware NVIDIA currently ships in volume. That is not a speculative AI-infrastructure announcement. LTN Compute had not commenced business operations as recently as June 2026. It is now the operating entity behind India's largest single-cluster AI deployment.For Indian enterprise customers evaluating whether to route AI workloads to US-based inference endpoints or a domestic provider, the answer is now materially different than it was last month. The latency advantage of a Chennai cluster over a US-based endpoint &mdash; measured in tens of milliseconds for real-time inference &mdash; is substantial for the interactive and agentic applications Together AI's platform increasingly supports. Together AI has not disclosed a pricing schedule or customer-facing launch date for the Chennai cluster, but the infrastructure is being built now.Currency conversions in this article are approximate, calculated at the USD/INR exchange rate as of August 13, 2026 (approximately ₹95.43 per USD), and are subject to change.Frequently Asked QuestionsWhat is the difference between a single-cluster GPU deployment and a distributed GPU deployment?",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a176694ebf661235",
+    "raw_id": "RAW-08dbbb79b8061d03",
+    "claim_type": "hardware_deployment",
+    "subject": "L&T",
+    "predicate": "hardware_deployment",
+    "object": "for Together AI in Chennai",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-08dbbb79b8061d03",
+      "start": 14557,
+      "end": 15545
+    },
+    "source_quote": "In a single-cluster deployment, all GPUs are addressable as a unified compute fabric through a shared high-bandwidth interconnect &mdash; in this case, NVIDIA's NVLink architecture. Any GPU in the cluster can communicate directly with any other GPU at full interconnect bandwidth, without routing through slower external networks. In a disaggregated or distributed deployment, GPUs are spread across separate servers or locations connected by standard Ethernet or InfiniBand, which offers much lower bandwidth for the all-reduce gradient-synchronization operations that large AI training runs require. A single-cluster architecture enables training jobs that scale efficiently to tens of thousands of GPUs; a distributed arrangement of the same hardware would degrade in scaling efficiency because the inter-node communication becomes the bottleneck.Why did Together AI choose India for a frontier GPU cluster, and what does this mean for enterprises routing AI workloads from South Asia?",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d5aa29a279694645",
+    "raw_id": "RAW-3b5613ea30f66b6e",
+    "claim_type": "funding",
+    "subject": "Lemma",
+    "predicate": "funding",
+    "object": "$2.3M pre-seed to catch AI agents that fail silently | Dealroom News",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-3b5613ea30f66b6e",
+      "start": 0,
+      "end": 68
+    },
+    "source_quote": "News › Lemma raises $2.3M pre-seed to catch AI agents that fail sil…",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3c247d3bc771d13f",
+    "raw_id": "RAW-3b5613ea30f66b6e",
+    "claim_type": "funding",
+    "subject": "Lemma",
+    "predicate": "funding",
+    "object": "$2.3M pre-seed to catch AI agents that fail silently | Dealroom News",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-3b5613ea30f66b6e",
+      "start": 86,
+      "end": 977
+    },
+    "source_quote": "Lemma Dealroom has a profile for this one. Try Dealroom → , an AI agent reliability startup, has raised $2.3 million in pre-seed funding to build monitoring infrastructure that catches agents which appear to complete a task while quietly producing the wrong result. Matrix Dealroom has a profile for this one. Try Dealroom → , Y Combinator , Liquid 2 Ventures , Vermilion Cliffs Ventures Dealroom has a profile for this one. Try Dealroom → , Irregular Expressions Dealroom has a profile for this one. Try Dealroom → , Cervin Ventures Dealroom has a profile for this one. Try Dealroom → , Comma Capital Dealroom has a profile for this one. Try Dealroom → , Position Ventures Dealroom has a profile for this one. Try Dealroom → , and Eight Capital Dealroom has a profile for this one. Try Dealroom → took part. Angel investors and operators from OpenAI , xAI , Meta , and DoorDash also joined.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-014ff57d31db9910",
+    "raw_id": "RAW-3b5613ea30f66b6e",
+    "claim_type": "funding",
+    "subject": "Lemma",
+    "predicate": "funding",
+    "object": "$2.3M pre-seed to catch AI agents that fail silently | Dealroom News",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-3b5613ea30f66b6e",
+      "start": 998,
+      "end": 1149
+    },
+    "source_quote": "Founded by Jerry Zhang and Cole Gawin, Lemma builds production monitoring for AI agents. Its platform has processed more than one million agent traces.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8eb36cae06182dc9",
+    "raw_id": "RAW-3b5613ea30f66b6e",
+    "claim_type": "funding",
+    "subject": "Lemma",
+    "predicate": "funding",
+    "object": "$2.3M pre-seed to catch AI agents that fail silently | Dealroom News",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-3b5613ea30f66b6e",
+      "start": 1150,
+      "end": 1170
+    },
+    "source_quote": "What could go wrong?",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-437b1dad18df80c3",
+    "raw_id": "RAW-e21f1600a6741256",
+    "claim_type": "partnership",
+    "subject": "IBM",
+    "predicate": "partnership",
+    "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-e21f1600a6741256",
+      "start": 0,
+      "end": 579
+    },
+    "source_quote": "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9544b18968f8b294",
+    "raw_id": "RAW-e21f1600a6741256",
+    "claim_type": "partnership",
+    "subject": "IBM",
+    "predicate": "partnership",
+    "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-e21f1600a6741256",
+      "start": 580,
+      "end": 961
+    },
+    "source_quote": "The partnership embeds OpenAI frontier models like GPT-5.6 and products like Codex and ChatGPT Work into IBM Consulting Advantage , IBM&rsquo;s AI platform for delivering consulting services to clients, combining AI agents, industry assets, and cybersecurity capabilities to help organizations securely deploy AI at scale, drive business outcomes, and create new commercial models.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1b368149af7c16d0",
+    "raw_id": "RAW-e21f1600a6741256",
+    "claim_type": "partnership",
+    "subject": "IBM",
+    "predicate": "partnership",
+    "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-e21f1600a6741256",
+      "start": 2269,
+      "end": 2677
+    },
+    "source_quote": "The companies plan to help clients modernize legacy applications and accelerate software development by bringing together OpenAI Codex and ChatGPT Work with IBM&rsquo;s industry, technology and domain expertise, including integration with IBM Consulting Advantage. The collaboration is designed to help organizations simplify engineering processes and speed the delivery of new digital products and services.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-85699e8500d96854",
+    "raw_id": "RAW-e21f1600a6741256",
+    "claim_type": "partnership",
+    "subject": "IBM",
+    "predicate": "partnership",
+    "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-e21f1600a6741256",
+      "start": 2715,
+      "end": 3292
+    },
+    "source_quote": "IBM and OpenAI will expand their collaboration on cybersecurity following IBM&rsquo;s participation in the OpenAI Daybreak Cyber Partner Program by combining OpenAI frontier AI capabilities with IBM Autonomous Security &mdash; a multi-agent-powered service designed to deliver coordinated decision-making, response, and intelligence at machine speed. As AI-powered attacks grow more sophisticated, the partnership will help clients manage both cyber and AI model risk, including application-layer vulnerabilities, governance gaps, and operational risks that limits AI adoption.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a7297863ac5b817a",
+    "raw_id": "RAW-fbfc1286b9296f8e",
+    "claim_type": "partnership",
+    "subject": "Keywell.ai",
+    "predicate": "partnership",
+    "object": "Carahsoft Technology Corp.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-413c0c250c15655d"
+    },
+    "source_span": {
+      "raw_id": "RAW-fbfc1286b9296f8e",
+      "start": 286,
+      "end": 525
+    },
+    "source_quote": "Keywell.ai , the AI operational scaffolding platform for HIPAA-compliant workflow automation in healthcare and Government, and Carahsoft Technology Corp. , The Trusted Government IT Solutions Provider &reg; , today announced a partnership.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-990cfdd9f8c00c98",
+    "raw_id": "RAW-d9703642774c51d4",
+    "claim_type": "product_release",
+    "subject": "WRITER Makes Agentic AI Economically Sustainable at Enterprise Scale With Palmyra X6",
+    "predicate": "product_release",
+    "object": "and Major Harness Upgrades - WRITER",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-d9703642774c51d4",
+      "start": 26,
+      "end": 145
+    },
+    "source_quote": "WRITER Makes Agentic AI Economically Sustainable at Enterprise Scale With Palmyra X6 Release and Major Harness Upgrades",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a3f579246d2a7447",
+    "raw_id": "RAW-d9703642774c51d4",
+    "claim_type": "product_release",
+    "subject": "WRITER Makes Agentic AI Economically Sustainable at Enterprise Scale With Palmyra X6",
+    "predicate": "product_release",
+    "object": "and Major Harness Upgrades - WRITER",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-d9703642774c51d4",
+      "start": 146,
+      "end": 303
+    },
+    "source_quote": "New releases bring powerful agents to marketing and revenue workflows, with the cost-efficiency, reliability, and control enterprises need as adoption grows.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-650ede69f8e45023",
+    "raw_id": "RAW-d9703642774c51d4",
+    "claim_type": "product_release",
+    "subject": "WRITER Makes Agentic AI Economically Sustainable at Enterprise Scale With Palmyra X6",
+    "predicate": "product_release",
+    "object": "and Major Harness Upgrades - WRITER",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-d9703642774c51d4",
+      "start": 334,
+      "end": 1101
+    },
+    "source_quote": "SAN FRANCISCO — August 13, 2026 — WRITER , the enterprise AI agent platform trusted by the world’s leading Fortune 500 brands, today released Palmyra X6 , its new flagship model that brings frontier-competitive performance to the critical workflows marketing and revenue teams run every day work, at a fraction of the cost of leading models; major upgrades to the WRITER Agent harness that make complex, multi-step workflows more cost-efficient and reliable from start to finish; and new governance tools that help leaders control token spend and scale the strongest use cases across the business. Together, the upgrades allow marketing and revenue teams to confidently scale their most ambitious agentic workflows in production without token costs holding them back.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3682606b75b4eb4f",
+    "raw_id": "RAW-d9703642774c51d4",
+    "claim_type": "product_release",
+    "subject": "WRITER Makes Agentic AI Economically Sustainable at Enterprise Scale With Palmyra X6",
+    "predicate": "product_release",
+    "object": "and Major Harness Upgrades - WRITER",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-d9703642774c51d4",
+      "start": 5443,
+      "end": 5966
+    },
+    "source_quote": "With today’s release, WRITER’s multi-model support now extends to WRITER Agent, giving teams a selection of popular models to work with. Admins can enable models from providers like Anthropic and OpenAI, letting users across their managed teams choose a model at the start of a session. Specialized models can also be selected for specific capabilities, such as image generation. And beyond WRITER’s own catalog, admins can bring their own models from cloud providers including Microsoft Azure, AWS Bedrock, and NVIDIA NIM.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3361d2b59d2cb974",
+    "raw_id": "RAW-ef78e14f954b569e",
+    "claim_type": "partnership",
+    "subject": "Oracle and AWS Deepen Strategic",
+    "predicate": "partnership",
+    "object": "as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-ef78e14f954b569e",
+      "start": 14,
+      "end": 120
+    },
+    "source_quote": "Oracle and AWS Deepen Strategic Collaboration as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d9fd84039f1d3b37",
+    "raw_id": "RAW-ef78e14f954b569e",
+    "claim_type": "partnership",
+    "subject": "Oracle and AWS Deepen Strategic",
+    "predicate": "partnership",
+    "object": "as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-ef78e14f954b569e",
+      "start": 121,
+      "end": 319
+    },
+    "source_quote": "Oracle and AWS expand long-term strategic collaboration agreement to accelerate customer migration, with Oracle AI Database@AWS now available in 22 AWS Regions and offering new expanded capabilities",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9dba9dbde0b7dc32",
+    "raw_id": "RAW-ef78e14f954b569e",
+    "claim_type": "partnership",
+    "subject": "Oracle and AWS Deepen Strategic",
+    "predicate": "partnership",
+    "object": "as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-ef78e14f954b569e",
+      "start": 677,
+      "end": 1362
+    },
+    "source_quote": "Oracle today announced the general availability of Oracle Exadata Database Service on Exascale Infrastructure on Oracle AI Database@AWS , bringing Exadata-class performance and pay-per-use economics to Oracle AI Database workloads of any scale. Oracle and Amazon Web Services (AWS) also signed an expanded, long-term strategic collaboration agreement focused on accelerating customer migration to Oracle AI Database@AWS. Together, these developments build on strong momentum for Oracle AI Database@AWS, which expanded to 22 AWS Regions and added new capabilities that give enterprises a lower-cost path to migrate Oracle databases and integrate them with AWS analytics and AI services.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cd0c8c6adef4ef59",
+    "raw_id": "RAW-ef78e14f954b569e",
+    "claim_type": "partnership",
+    "subject": "Oracle and AWS Deepen Strategic",
+    "predicate": "partnership",
+    "object": "as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-ef78e14f954b569e",
+      "start": 3717,
+      "end": 3780
+    },
+    "source_quote": "Expanded Collaboration Agreement Accelerates Customer Migration",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bd11a7e6ce692532",
+    "raw_id": "RAW-d7f19e249b415c44",
+    "claim_type": "partnership",
+    "subject": "IBM",
+    "predicate": "partnership",
+    "object": "OpenAI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-5d5de8133295ea3f"
+    },
+    "source_span": {
+      "raw_id": "RAW-d7f19e249b415c44",
+      "start": 227,
+      "end": 368
+    },
+    "source_quote": "IBM and OpenAI are launching a broad enterprise partnership aimed at putting artificial intelligence to work across core business operations.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b69b7f330d7f72e4",
+    "raw_id": "RAW-a2d1d6cb673b643b",
+    "claim_type": "partnership",
+    "subject": "Leah",
+    "predicate": "partnership",
+    "object": "Oracle and PwC to Take Its Agentic Operating System Global",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-a2d1d6cb673b643b",
+      "start": 14,
+      "end": 91
+    },
+    "source_quote": "Leah Partners with Oracle and PwC to Take Its Agentic Operating System Global",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0286b56e80b664ec",
+    "raw_id": "RAW-a2d1d6cb673b643b",
+    "claim_type": "partnership",
+    "subject": "Leah",
+    "predicate": "partnership",
+    "object": "Oracle and PwC to Take Its Agentic Operating System Global",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-a2d1d6cb673b643b",
+      "start": 3233,
+      "end": 3421
+    },
+    "source_quote": "A member of the Oracle PartnerNetwork, PwC is leading the implementation and is expanding its collaboration with Leah to provide PwC&rsquo;s industry, functional, and technology expertise.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7b966e481b65754b",
+    "raw_id": "RAW-a2d1d6cb673b643b",
+    "claim_type": "partnership",
+    "subject": "Leah",
+    "predicate": "partnership",
+    "object": "Oracle and PwC to Take Its Agentic Operating System Global",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-a2d1d6cb673b643b",
+      "start": 3422,
+      "end": 3992
+    },
+    "source_quote": "&ldquo;We are seeing more and more organizations moving beyond task-level automation toward broader AI-enabled business transformation,&rdquo; said Manpreet Singh Ahuja, chief clients and industries officer, PwC India. &ldquo;Through our expanded collaboration with Leah and Oracle, we are helping Leah to deliver enterprise-grade AI solutions that will accelerate innovation, enhance operational efficiency, and deliver sustainable business value. In addition, the collaboration helps Leah&rsquo;s customers meet their requirements for AI oversight and controls.&rdquo;",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-be1808f48e4a76b4",
+    "raw_id": "RAW-a2d1d6cb673b643b",
+    "claim_type": "partnership",
+    "subject": "Leah",
+    "predicate": "partnership",
+    "object": "Oracle and PwC to Take Its Agentic Operating System Global",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-a2d1d6cb673b643b",
+      "start": 3993,
+      "end": 4663
+    },
+    "source_quote": "&ldquo;This collaboration unites three strengths: Leah's deep domain intelligence, Oracle&rsquo;s enterprise-grade cloud infrastructure, and PwC's global AI-enabled business transformation experience,&rdquo; said Kevin Sullivan, global and U.S. Oracle practice leader, PwC U.S. &ldquo;Business leaders worldwide are seeking an ecosystem of technology vendors and trusted expertise that can deliver measurable outcomes at scale. Through the PwC and Oracle alliance, we're giving organizations the conviction to embed AI-led transformation as the foundation of how they operate holistically across legal, finance, contracting, procurement, and commercial workflows.&rdquo;",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-183c4adab3dd6e33",
+    "raw_id": "RAW-8adcb358068df09d",
+    "claim_type": "deployment",
+    "subject": "Eczacıbaşı Holding",
+    "predicate": "deployment",
+    "object": "Mission AI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-370db0b960fc0a51"
+    },
+    "source_span": {
+      "raw_id": "RAW-8adcb358068df09d",
+      "start": 2393,
+      "end": 2522
+    },
+    "source_quote": "Eczacıbaşı Holding launched “Mission AI” as a group-wide transformation initiative designed to standardize and scale AI adoption.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b7cec1f6e357e559",
+    "raw_id": "RAW-1af9f8551262a19d",
+    "claim_type": "research_result",
+    "subject": "Gartner",
+    "predicate": "research_result",
+    "object": "agentic AI projects",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-fcb8b7f3b149657e"
+    },
+    "source_span": {
+      "raw_id": "RAW-1af9f8551262a19d",
+      "start": 2460,
+      "end": 2622
+    },
+    "source_quote": "Gartner predicts over 40% of agentic AI projects will be canceled by the end of 2027 due to escalating costs, unclear business value, or inadequate risk controls.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5d03f06f53d4ae9a",
+    "raw_id": "RAW-1af9f8551262a19d",
+    "claim_type": "research_result",
+    "subject": "McKinsey",
+    "predicate": "research_result",
+    "object": "enterprises",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-fcb8b7f3b149657e"
+    },
+    "source_span": {
+      "raw_id": "RAW-1af9f8551262a19d",
+      "start": 2623,
+      "end": 2854
+    },
+    "source_quote": "McKinsey research shows that while nearly two-thirds of enterprises have experimented with AI agents, fewer than 10% have scaled them to deliver measurable value, with poor data quality and governance cited as the primary barriers.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9a394cd0a96f825c",
+    "raw_id": "RAW-1af9f8551262a19d",
+    "claim_type": "research_result",
+    "subject": "Forrester",
+    "predicate": "research_result",
+    "object": "agent deployments",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-fcb8b7f3b149657e"
+    },
+    "source_span": {
+      "raw_id": "RAW-1af9f8551262a19d",
+      "start": 11770,
+      "end": 11988
+    },
+    "source_quote": "Forrester's root-cause analysis of agent deployments with negative ROI at 12 months attributes failures to unclear success criteria (41%), insufficient tool or data access (33%), and drift in evaluation coverage (26%).",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b73242015e40bb0d",
+    "raw_id": "RAW-8df30c1044f8b54d",
+    "claim_type": "model_release",
+    "subject": "Qwen research lab",
+    "predicate": "model_release",
+    "object": "Qwen 3.8 27B",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ae5e753dcc45d497"
+    },
+    "source_span": {
+      "raw_id": "RAW-8df30c1044f8b54d",
+      "start": 90,
+      "end": 217
+    },
+    "source_quote": "Friday’s big release was Qwen 3.8 27B , an Apache 2 licensed 27B parameter vision-capable LLM from Alibaba’s Qwen research lab.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5263860b0427eb14",
+    "raw_id": "RAW-31ed196bee20102d",
+    "claim_type": "service_change",
+    "subject": "Google will now allow users to",
+    "predicate": "service_change",
+    "object": "visible watermark from its AI generations",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-31ed196bee20102d",
+      "start": 58,
+      "end": 137
+    },
+    "source_quote": "Google will now allow users to remove visible watermark from its AI generations",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-99552acefcd313ba",
+    "raw_id": "RAW-31ed196bee20102d",
+    "claim_type": "service_change",
+    "subject": "Google will now allow users to",
+    "predicate": "service_change",
+    "object": "visible watermark from its AI generations",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-31ed196bee20102d",
+      "start": 138,
+      "end": 398
+    },
+    "source_quote": "Google announced on Friday that it will now allow users to remove a visible watermark from its AI generations, including images, videos, and songs. The company specified that this won’t affect the invisible SynthID watermark and C2PA standard-related metadata.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-376ea1052228159f",
+    "raw_id": "RAW-31ed196bee20102d",
+    "claim_type": "service_change",
+    "subject": "Google will now allow users to",
+    "predicate": "service_change",
+    "object": "visible watermark from its AI generations",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-31ed196bee20102d",
+      "start": 399,
+      "end": 701
+    },
+    "source_quote": "Josh Woodward, the company’s VP for Gemini, said in a post on X that this toggle will be available for Nano Banana, Omni, and Lyria models. He specified that the setting to turn the visible watermark off will be available in Gemini and Google’s video editor, Flow , with support for Search coming soon.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2a05c23fafa98c35",
+    "raw_id": "RAW-31ed196bee20102d",
+    "claim_type": "service_change",
+    "subject": "Google will now allow users to",
+    "predicate": "service_change",
+    "object": "visible watermark from its AI generations",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-31ed196bee20102d",
+      "start": 702,
+      "end": 922
+    },
+    "source_quote": "The change reflects an evolving approach to labeling AI-generated media, as visible watermarks can often make content less useful for professional and creative work, but the need to identify AI-generated content remains.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4c815e85237350c8",
+    "raw_id": "RAW-8d06e857d3d13df0",
+    "claim_type": "service_change",
+    "subject": "Microsoft",
+    "predicate": "service_change",
+    "object": "Mico",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-6825a0f4b0f8172a"
+    },
+    "source_span": {
+      "raw_id": "RAW-8d06e857d3d13df0",
+      "start": 449,
+      "end": 556
+    },
+    "source_quote": "Microsoft Copilot will no longer show its emotive yellow blob, Mico, when you use the chatbot’s voice mode.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b379b7128261834d",
+    "raw_id": "RAW-ac421fe4f0501c09",
+    "claim_type": "ipo_listing",
+    "subject": "Anthropic CEO 达里奥·阿莫迪",
+    "predicate": "ipo_listing",
+    "object": "前罕见发长文回应质疑，预告 5-10 年内 AI 将治愈多数疾病",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-ac421fe4f0501c09",
+      "start": 22,
+      "end": 75
+    },
+    "source_quote": "为亡父转 AI，10 年内灭癌症 史上最大规模 IPO 前，Anthropic CEO 罕见长文硬刚质疑！",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7ce97f000b85ddb7",
+    "raw_id": "RAW-ac421fe4f0501c09",
+    "claim_type": "ipo_listing",
+    "subject": "Anthropic CEO 达里奥·阿莫迪",
+    "predicate": "ipo_listing",
+    "object": "前罕见发长文回应质疑，预告 5-10 年内 AI 将治愈多数疾病",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-ac421fe4f0501c09",
+      "start": 112,
+      "end": 163
+    },
+    "source_quote": "但就在 IPO 估值被推到 2 万亿美元的节骨眼上，他罕见地发了一篇长文，正面回应硅谷对他最大的质疑。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b9f05da3b192dc98",
+    "raw_id": "RAW-ac421fe4f0501c09",
+    "claim_type": "ipo_listing",
+    "subject": "Anthropic CEO 达里奥·阿莫迪",
+    "predicate": "ipo_listing",
+    "object": "前罕见发长文回应质疑，预告 5-10 年内 AI 将治愈多数疾病",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-ac421fe4f0501c09",
+      "start": 2467,
+      "end": 2557
+    },
+    "source_quote": "据《金融时报》报道，Anthropic 最快今年 10 月上市，部分投资者给出的估值已达 2 万亿美元 —— 超越 SpaceX 的 1.77 万亿，将刷新史上最大 IPO 纪录。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3a8a571275e194b4",
+    "raw_id": "RAW-ac421fe4f0501c09",
+    "claim_type": "ipo_listing",
+    "subject": "Anthropic CEO 达里奥·阿莫迪",
+    "predicate": "ipo_listing",
+    "object": "前罕见发长文回应质疑，预告 5-10 年内 AI 将治愈多数疾病",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-ac421fe4f0501c09",
+      "start": 2781,
+      "end": 2864
+    },
+    "source_quote": "在 IPO 前夜亲自下场谈监管、谈治愈癌症，他在重新定义 Anthropic 叙事：不只是 OpenAI 的竞争对手，而是一家试图用 AI 解决人类最根本问题的公司。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8934bd71cee17814",
+    "raw_id": "RAW-47e02711cfe17c42",
+    "claim_type": "product_release",
+    "subject": "派早报：深度求索",
+    "predicate": "product_release",
+    "object": "开源 Agent 框架 DeepSeek Harness 及配套插件生态",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-47e02711cfe17c42",
+      "start": 6,
+      "end": 52
+    },
+    "source_quote": "派早报：深度求索推出开源 Agent 框架 DeepSeek Harness 及配套插件生态",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-765204a96bb0e908",
+    "raw_id": "RAW-47e02711cfe17c42",
+    "claim_type": "product_release",
+    "subject": "派早报：深度求索",
+    "predicate": "product_release",
+    "object": "开源 Agent 框架 DeepSeek Harness 及配套插件生态",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-47e02711cfe17c42",
+      "start": 81,
+      "end": 126
+    },
+    "source_quote": "深度求索推出开源 Agent 框架 DeepSeek Harness 及配套插件生态 11",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bede258889557ecc",
+    "raw_id": "RAW-47e02711cfe17c42",
+    "claim_type": "product_release",
+    "subject": "派早报：深度求索",
+    "predicate": "product_release",
+    "object": "开源 Agent 框架 DeepSeek Harness 及配套插件生态",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-47e02711cfe17c42",
+      "start": 227,
+      "end": 261
+    },
+    "source_quote": "Dyna Robotics 发布机器人 AI 模型 DYNA-2 0",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-aaff4b43ee38a047",
+    "raw_id": "RAW-47e02711cfe17c42",
+    "claim_type": "product_release",
+    "subject": "派早报：深度求索",
+    "predicate": "product_release",
+    "object": "开源 Agent 框架 DeepSeek Harness 及配套插件生态",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-47e02711cfe17c42",
+      "start": 330,
+      "end": 372
+    },
+    "source_quote": "深度求索推出开源 Agent 框架 DeepSeek Harness 及配套插件生态",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-64188d3db7ef1700",
+    "raw_id": "RAW-3aa84d02f9eb2a26",
+    "claim_type": "acquisition",
+    "subject": "支付巨头 Stripe 敲定超 70 亿美元",
+    "predicate": "acquisition",
+    "object": "AI 初创公司 OpenRouter",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-3aa84d02f9eb2a26",
+      "start": 0,
+      "end": 57
+    },
+    "source_quote": "彭博社称支付巨头 Stripe 敲定收购 AI 初创公司 OpenRouter，金额超 70 亿美元 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d86cb8919d3aa0eb",
+    "raw_id": "RAW-3aa84d02f9eb2a26",
+    "claim_type": "acquisition",
+    "subject": "支付巨头 Stripe 敲定超 70 亿美元",
+    "predicate": "acquisition",
+    "object": "AI 初创公司 OpenRouter",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-3aa84d02f9eb2a26",
+      "start": 225,
+      "end": 275
+    },
+    "source_quote": "彭博社称支付巨头 Stripe 敲定收购 AI 初创公司 OpenRouter，金额超 70 亿美元",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4753f53f1e4bc20b",
+    "raw_id": "RAW-3aa84d02f9eb2a26",
+    "claim_type": "acquisition",
+    "subject": "支付巨头 Stripe 敲定超 70 亿美元",
+    "predicate": "acquisition",
+    "object": "AI 初创公司 OpenRouter",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-3aa84d02f9eb2a26",
+      "start": 321,
+      "end": 433
+    },
+    "source_quote": "IT之家 8 月 17 日消息，据彭博社报道，支付巨头 Stripe 已经敲定收购 AI 基础设施初创公司 OpenRouter 的交易， 收购金额超过 70 亿美元 （IT之家注：现汇率约合 473.24 亿元人民币） 。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d96b244ad8957d3f",
+    "raw_id": "RAW-3aa84d02f9eb2a26",
+    "claim_type": "acquisition",
+    "subject": "支付巨头 Stripe 敲定超 70 亿美元",
+    "predicate": "acquisition",
+    "object": "AI 初创公司 OpenRouter",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-3aa84d02f9eb2a26",
+      "start": 824,
+      "end": 879
+    },
+    "source_quote": "IT之家注意到，上个月《华尔街日报》曾报道称，Stripe 与 OpenRouter 正在就收购事宜进行谈判。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d75c333d13a55d89",
+    "raw_id": "RAW-b9ca59708408c6a3",
+    "claim_type": "organization_people",
+    "subject": "OpenAI",
+    "predicate": "organization_people",
+    "object": "Dali Rajic",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a520996538b487e3"
+    },
+    "source_span": {
+      "raw_id": "RAW-b9ca59708408c6a3",
+      "start": 338,
+      "end": 436
+    },
+    "source_quote": "OpenAI 宣布，任命 Dali Rajic 担任首席营收官（Chief Revenue Officer，CRO），负责领导全球营收组织，接替上任仅约 8 个月的 Denise Dresser。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3fca8eee55ed6f14",
+    "raw_id": "RAW-b9ca59708408c6a3",
+    "claim_type": "organization_people",
+    "subject": "Denise Dresser",
+    "predicate": "organization_people",
+    "object": "OpenAI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-a520996538b487e3"
+    },
+    "source_span": {
+      "raw_id": "RAW-b9ca59708408c6a3",
+      "start": 532,
+      "end": 558
+    },
+    "source_quote": "Dresser 则将在完成交接后离开 OpenAI。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f7f557f7743dfcbd",
+    "raw_id": "RAW-b9ca59708408c6a3",
+    "claim_type": "organization_people",
+    "subject": "Brad Lightcap",
+    "predicate": "organization_people",
+    "object": "OpenAI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-a520996538b487e3"
+    },
+    "source_span": {
+      "raw_id": "RAW-b9ca59708408c6a3",
+      "start": 1106,
+      "end": 1128
+    },
+    "source_quote": "Lightcap 本周宣布离开 OpenAI",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fcb09511f9213161",
+    "raw_id": "RAW-f006637da7090cbd",
+    "claim_type": "acquisition",
+    "subject": "Stripe 据报将以超 70 亿美元",
+    "predicate": "acquisition",
+    "object": "AI 网关初创公司 OpenRouter",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-f006637da7090cbd",
+      "start": 58,
+      "end": 127
+    },
+    "source_quote": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-385f3d8f8d545fc6",
+    "raw_id": "RAW-f006637da7090cbd",
+    "claim_type": "acquisition",
+    "subject": "Stripe 据报将以超 70 亿美元",
+    "predicate": "acquisition",
+    "object": "AI 网关初创公司 OpenRouter",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-f006637da7090cbd",
+      "start": 128,
+      "end": 219
+    },
+    "source_quote": "Stripe has finalized a deal to acquire OpenRouter, according to a new report in Bloomberg .",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-024f2e7f771cf743",
+    "raw_id": "RAW-f006637da7090cbd",
+    "claim_type": "acquisition",
+    "subject": "Stripe 据报将以超 70 亿美元",
+    "predicate": "acquisition",
+    "object": "AI 网关初创公司 OpenRouter",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-f006637da7090cbd",
+      "start": 858,
+      "end": 1043
+    },
+    "source_quote": "The Wall Street Journal reported last month that Stripe and OpenRouter were in acquisition talks. Now, Bloomberg said those discussions have led to a deal price of more than $7 billion.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-f1a44de3c0b02c05",
+    "raw_id": "RAW-f006637da7090cbd",
+    "claim_type": "acquisition",
+    "subject": "Stripe 据报将以超 70 亿美元",
+    "predicate": "acquisition",
+    "object": "AI 网关初创公司 OpenRouter",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-f006637da7090cbd",
+      "start": 555,
+      "end": 857
+    },
+    "source_quote": "At the time, OpenRouter CEO Alex Atallah described the company as the equivalent of Stripe for AI, because it provides customers with a single access point for different systems and prevents lock-in. The startup also claimed to have 8 million global users and to provide access to more than 400 models.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-2a6180c02eaceb69",
+    "raw_id": "RAW-2819a9ff202c5f18",
+    "claim_type": "product_release",
+    "subject": "Artificial Analysis",
+    "predicate": "product_release",
+    "object": "Optima",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-0e4c1c9561044577"
+    },
+    "source_span": {
+      "raw_id": "RAW-2819a9ff202c5f18",
+      "start": 904,
+      "end": 1072
+    },
+    "source_quote": "Artificial Analysis, known for its independent LLM evaluations and benchmark implementations like GDPval-AA and AA-Briefcase, has launched a new platform called Optima.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3f52a8648053252f",
+    "raw_id": "RAW-5159927374d51d4b",
+    "claim_type": "model_release",
+    "subject": "华为昇腾 0 Day 适配小红书",
+    "predicate": "model_release",
+    "object": "dots3-note preview",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-5159927374d51d4b",
+      "start": 0,
+      "end": 51
+    },
+    "source_quote": "华为官宣昇腾 0 Day 适配小红书最新开源大模型 dots3-note preview - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ac63978603a9f991",
+    "raw_id": "RAW-5159927374d51d4b",
+    "claim_type": "model_release",
+    "subject": "华为昇腾 0 Day 适配小红书",
+    "predicate": "model_release",
+    "object": "dots3-note preview",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-5159927374d51d4b",
+      "start": 219,
+      "end": 263
+    },
+    "source_quote": "华为官宣昇腾 0 Day 适配小红书最新开源大模型 dots3-note preview",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1bb7c06f0b66dbc0",
+    "raw_id": "RAW-5159927374d51d4b",
+    "claim_type": "model_release",
+    "subject": "华为昇腾 0 Day 适配小红书",
+    "predicate": "model_release",
+    "object": "dots3-note preview",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-5159927374d51d4b",
+      "start": 339,
+      "end": 397
+    },
+    "source_quote": "IT之家 8 月 16 日消息，小红书 8 月 14 日正式发布 dots3-note preview 开源大模型。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f988d505b4005475",
+    "raw_id": "RAW-5159927374d51d4b",
+    "claim_type": "model_release",
+    "subject": "华为昇腾 0 Day 适配小红书",
+    "predicate": "model_release",
+    "object": "dots3-note preview",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-5159927374d51d4b",
+      "start": 514,
+      "end": 610
+    },
+    "source_quote": "据介绍，作为 dots3 系列的首个版本，dots3-note preview 开源大模型以 280B 总参数量、16B 激活参数量 构建能力底座，同时具备文本、视觉、语音全模态感知理解能力。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2d113727ce042f1d",
+    "raw_id": "RAW-db24f2ccecf53d54",
+    "claim_type": "partnership",
+    "subject": "网易《天下》",
+    "predicate": "partnership",
+    "object": "王祖贤",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-656c5646b5204aaf"
+    },
+    "source_span": {
+      "raw_id": "RAW-db24f2ccecf53d54",
+      "start": 643,
+      "end": 667
+    },
+    "source_quote": "今年 7 月，网易《天下》宣布与王祖贤达成合作。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cfecebe7110d0606",
+    "raw_id": "RAW-0f528a72c7421400",
+    "claim_type": "deployment",
+    "subject": "全国首家 AI 家庭机器人旗舰店",
+    "predicate": "deployment",
+    "object": "青岛，海尔外骨骼机器人可现场试穿",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-0f528a72c7421400",
+      "start": 0,
+      "end": 41
+    },
+    "source_quote": "全国首家 AI 家庭机器人旗舰店落地青岛，用户可现场试穿外骨骼机器人 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-00c8c6930a0ef623",
+    "raw_id": "RAW-0f528a72c7421400",
+    "claim_type": "deployment",
+    "subject": "全国首家 AI 家庭机器人旗舰店",
+    "predicate": "deployment",
+    "object": "青岛，海尔外骨骼机器人可现场试穿",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-0f528a72c7421400",
+      "start": 209,
+      "end": 243
+    },
+    "source_quote": "全国首家 AI 家庭机器人旗舰店落地青岛，用户可现场试穿外骨骼机器人",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-52a94e08e6cbdcde",
+    "raw_id": "RAW-0f528a72c7421400",
+    "claim_type": "deployment",
+    "subject": "全国首家 AI 家庭机器人旗舰店",
+    "predicate": "deployment",
+    "object": "青岛，海尔外骨骼机器人可现场试穿",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-0f528a72c7421400",
+      "start": 313,
+      "end": 372
+    },
+    "source_quote": "IT之家 8 月 16 日消息，海尔智家董事长兼总裁李华刚于微博发文称，全国首家 AI 家庭机器人体验店今日落地青岛。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-277bf3449517de28",
+    "raw_id": "RAW-0f528a72c7421400",
+    "claim_type": "deployment",
+    "subject": "全国首家 AI 家庭机器人旗舰店",
+    "predicate": "deployment",
+    "object": "青岛，海尔外骨骼机器人可现场试穿",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-0f528a72c7421400",
+      "start": 373,
+      "end": 409
+    },
+    "source_quote": "据李华刚介绍，海尔 AI 外骨骼机器人体验店已经陆续有 10 几家落地。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2e3486904f51dfba",
+    "raw_id": "RAW-cab16425aa083518",
+    "claim_type": "funding",
+    "subject": "GitHub Secure Open Source Fund",
+    "predicate": "funding",
+    "object": "50 projects",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-c628190dd5ab4258"
+    },
+    "source_span": {
+      "raw_id": "RAW-cab16425aa083518",
+      "start": 387,
+      "end": 449
+    },
+    "source_quote": "The Secure Fund invested more than $500,000 across 50 projects",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b1bd6b3f845ef1ee",
+    "raw_id": "RAW-cab16425aa083518",
+    "claim_type": "funding",
+    "subject": "GitHub Secure Open Source Fund",
+    "predicate": "funding",
+    "object": "each project",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-c628190dd5ab4258"
+    },
+    "source_span": {
+      "raw_id": "RAW-cab16425aa083518",
+      "start": 2800,
+      "end": 2878
+    },
+    "source_quote": "Throughout this program, each project receives $10,000 USD via GitHub Sponsors",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-eb86297d627873c9",
+    "raw_id": "RAW-98fefe577f0c0d65",
+    "claim_type": "acquisition",
+    "subject": "SpaceX officially closes its Cursor",
+    "predicate": "acquisition",
+    "object": "SpaceX officially closes its Cursor acquisition",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-98fefe577f0c0d65",
+      "start": 58,
+      "end": 105
+    },
+    "source_quote": "SpaceX officially closes its Cursor acquisition",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a1baf2ab4e6ca3a6",
+    "raw_id": "RAW-98fefe577f0c0d65",
+    "claim_type": "acquisition",
+    "subject": "SpaceX officially closes its Cursor",
+    "predicate": "acquisition",
+    "object": "Elon Musk’s SpaceX — which also acquired Musk’s xAI earlier this year — announced a deal in April for the companies to develop technology together; the deal also gave SpaceX the option to acquire Cursor for $60 billion. Two months later, as SpaceX became a public company, the companies said they were moving forward with the acquisition .",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-98fefe577f0c0d65",
+      "start": 217,
+      "end": 556
+    },
+    "source_quote": "Elon Musk’s SpaceX — which also acquired Musk’s xAI earlier this year — announced a deal in April for the companies to develop technology together; the deal also gave SpaceX the option to acquire Cursor for $60 billion. Two months later, as SpaceX became a public company, the companies said they were moving forward with the acquisition .",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-64c25c6c87af3ba8",
+    "raw_id": "RAW-98fefe577f0c0d65",
+    "claim_type": "acquisition",
+    "subject": "SpaceX officially closes its Cursor",
+    "predicate": "acquisition",
+    "object": "AI coding startup Cursor is now officially a part of SpaceX, according to an announcement on the Cursor blog .",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-98fefe577f0c0d65",
+      "start": 106,
+      "end": 216
+    },
+    "source_quote": "AI coding startup Cursor is now officially a part of SpaceX, according to an announcement on the Cursor blog .",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4fd578d3be929393",
+    "raw_id": "RAW-98fefe577f0c0d65",
+    "claim_type": "acquisition",
+    "subject": "SpaceX officially closes its Cursor",
+    "predicate": "acquisition",
+    "object": "In its announcement that the deal has closed, Cursor repeatedly referenced SpaceX’s computing infrastructure, which the company has been renting out to customers including Anthropic and Google . (SpaceX also faces a lawsuit over the pollution created by its data center gas turbines .)",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-98fefe577f0c0d65",
+      "start": 557,
+      "end": 842
+    },
+    "source_quote": "In its announcement that the deal has closed, Cursor repeatedly referenced SpaceX’s computing infrastructure, which the company has been renting out to customers including Anthropic and Google . (SpaceX also faces a lawsuit over the pollution created by its data center gas turbines .)",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-59b9bd14c01c1c35",
+    "raw_id": "RAW-696138d8cf235ce1",
+    "claim_type": "standard_specification",
+    "subject": "LittleCurriculum",
+    "predicate": "standard_specification",
+    "object": "88B-token corpus filtered to U.S. elementary-school curriculum",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-becccb115cc80f58"
+    },
+    "source_span": {
+      "raw_id": "RAW-696138d8cf235ce1",
+      "start": 516,
+      "end": 644
+    },
+    "source_quote": "An 88B-token corpus distilled from FineWeb-Edu through a five-stage filtering pipeline aligned with Common Core standards (K–5).",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b9bd694b028dc2b0",
+    "raw_id": "RAW-c43b24233210125f",
+    "claim_type": "ipo_listing",
+    "subject": "万亿",
+    "predicate": "ipo_listing",
+    "object": "前夜的OpenAI：高管争夺奥尔特曼注意力",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-c43b24233210125f",
+      "start": 0,
+      "end": 108
+    },
+    "source_quote": "北京时间 8 月 16 日，据《金融时报》报道，就在 OpenAI CEO 萨姆 · 奥尔特曼 (Sam Altman) 加紧筹备可能轰动市场的 IPO 之际，该公司正面临日益加剧的内部动荡，今年已进行了近六次重组。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d9622ea16dd88fba",
+    "raw_id": "RAW-c43b24233210125f",
+    "claim_type": "ipo_listing",
+    "subject": "万亿",
+    "predicate": "ipo_listing",
+    "object": "前夜的OpenAI：高管争夺奥尔特曼注意力",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-c43b24233210125f",
+      "start": 752,
+      "end": 788
+    },
+    "source_quote": "OpenAI 将近期这些高管离职解释为 IPO 前精简组织流程的一部分。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d8a16b9a169169e6",
+    "raw_id": "RAW-c43b24233210125f",
+    "claim_type": "ipo_listing",
+    "subject": "万亿",
+    "predicate": "ipo_listing",
+    "object": "前夜的OpenAI：高管争夺奥尔特曼注意力",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-c43b24233210125f",
+      "start": 109,
+      "end": 166
+    },
+    "source_quote": "OpenAI 据多位知情人士透露，频繁的管理层重组以及一系列高管的离职，已令部分员工对这家公司的持续变动感到沮丧。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-956bd11deac2cc63",
+    "raw_id": "RAW-c43b24233210125f",
+    "claim_type": "ipo_listing",
+    "subject": "万亿",
+    "predicate": "ipo_listing",
+    "object": "前夜的OpenAI：高管争夺奥尔特曼注意力",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-c43b24233210125f",
+      "start": 166,
+      "end": 191
+    },
+    "source_quote": "OpenAI 目前是全球最具价值的非上市公司之一。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5a4ce3b23bd1f243",
+    "raw_id": "RAW-7680403dca210e9c",
+    "claim_type": "research_result",
+    "subject": "Epoch AI and Ipsos survey",
+    "predicate": "research_result",
+    "object": "20 percent of employed Americans now delegate at least one work task to AI that was previously handled by coworkers or outside contractors",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-537cdfeb98be4b27"
+    },
+    "source_span": {
+      "raw_id": "RAW-7680403dca210e9c",
+      "start": 190,
+      "end": 386
+    },
+    "source_quote": "A representative survey by Epoch AI and Ipsos found that 20 percent of employed Americans now delegate at least one work task to AI that was previously handled by coworkers or outside contractors.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1f966ff0628ca3db",
+    "raw_id": "RAW-7680403dca210e9c",
+    "claim_type": "research_result",
+    "subject": "Epoch AI and Ipsos survey",
+    "predicate": "research_result",
+    "object": "57 percent of workers who do computer systems and software development tasks use AI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-537cdfeb98be4b27"
+    },
+    "source_span": {
+      "raw_id": "RAW-7680403dca210e9c",
+      "start": 1431,
+      "end": 1547
+    },
+    "source_quote": "AI use is highest in computer systems and software development, where 57 percent of workers who do that task use AI.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0d00735f23328db5",
+    "raw_id": "RAW-7680403dca210e9c",
+    "claim_type": "research_result",
+    "subject": "Epoch AI and Ipsos survey",
+    "predicate": "research_result",
+    "object": "66 percent of AI output gets used unchanged or with only minor tweaks",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-537cdfeb98be4b27"
+    },
+    "source_span": {
+      "raw_id": "RAW-7680403dca210e9c",
+      "start": 3471,
+      "end": 3603
+    },
+    "source_quote": "Another finding concerns how workers handle what AI produces: 66 percent of AI output gets used unchanged or with only minor tweaks.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0c8b3b0b23ea5b6d",
+    "raw_id": "RAW-c6767d9b9641c0d3",
+    "claim_type": "model_release",
+    "subject": "Apple",
+    "predicate": "model_release",
+    "object": "custom AI model for China market",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 1,
+      "model_candidate_id": "MAC-fccba641424f1a34"
+    },
+    "source_span": {
+      "raw_id": "RAW-c6767d9b9641c0d3",
+      "start": 528,
+      "end": 633
+    },
+    "source_quote": "Apple has reportedly trained a custom AI model for the China market alongside domestic tech giant Alibaba",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-6b64756ef74b9256",
+    "raw_id": "RAW-d9a69e7afe11be1d",
+    "claim_type": "model_release",
+    "subject": "何静",
+    "predicate": "model_release",
+    "object": "OpenClaw",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-2a7735eb7e1c352a"
+    },
+    "source_span": {
+      "raw_id": "RAW-d9a69e7afe11be1d",
+      "start": 169,
+      "end": 239
+    },
+    "source_quote": "她讲的内容，包括但不限于生成式AI原理、AIGC应用、OpenClaw部署、Agent开发、AI接入CAD、AI制作PPT、Hermes……",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2b85f36349670b8a",
+    "raw_id": "RAW-4cd41c9a612ceae7",
+    "claim_type": "product_release",
+    "subject": "openJiuwen",
+    "predicate": "product_release",
+    "object": "WorkSwarm蜂群办公智能体",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-839649abf161354a"
+    },
+    "source_span": {
+      "raw_id": "RAW-4cd41c9a612ceae7",
+      "start": 390,
+      "end": 481
+    },
+    "source_quote": "就在上周四openJiuwen宣布：旗下蜂群智能体全面升级为 WorkSwarm蜂群办公智能体 ，率先上架鸿蒙PC应用市场，并支持Windows、Mac等平台，轻松解决工作每个问题！",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b2801fbd26aae99d",
+    "raw_id": "RAW-1a6c7b76f9683102",
+    "claim_type": "research_result",
+    "subject": "SWD",
+    "predicate": "research_result",
+    "object": "不到1%的数据成本",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-6d99a57ff55d0a75"
+    },
+    "source_span": {
+      "raw_id": "RAW-1a6c7b76f9683102",
+      "start": 774,
+      "end": 820
+    },
+    "source_quote": "在匹配替换保真度的单矩阵实验中，SWD使用的数据 不到Transcoder等训练型基线的1%",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1ef275aad81ab1b9",
+    "raw_id": "RAW-1a6c7b76f9683102",
+    "claim_type": "research_result",
+    "subject": "SWD",
+    "predicate": "research_result",
+    "object": "GPT-2 Small 全部48个注意力和MLP权重矩阵",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-6d99a57ff55d0a75"
+    },
+    "source_span": {
+      "raw_id": "RAW-1a6c7b76f9683102",
+      "start": 894,
+      "end": 940
+    },
+    "source_quote": "方法不仅扩展到了27B模型，还覆盖了GPT-2 Small 全部48个注意力和MLP权重矩阵",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a1e788e785d686e4",
+    "raw_id": "RAW-43095e84b8aa28be",
+    "claim_type": "deployment",
+    "subject": "千问办公首发",
+    "predicate": "deployment",
+    "object": "GLM-5.3 和 DeepSeek V4 Pro 模型，可直接选用",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-43095e84b8aa28be",
+      "start": 0,
+      "end": 61
+    },
+    "source_quote": "IT之家 8 月 16 日消息，近日，千问办公首发上线 GLM-5.3 和 DeepSeek V4 Pro 两款前沿模型。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b9c7612974c9abbd",
+    "raw_id": "RAW-43095e84b8aa28be",
+    "claim_type": "deployment",
+    "subject": "千问办公首发",
+    "predicate": "deployment",
+    "object": "GLM-5.3 和 DeepSeek V4 Pro 模型，可直接选用",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-43095e84b8aa28be",
+      "start": 61,
+      "end": 87
+    },
+    "source_quote": "即日起，用户可在产品首页的「前沿模型」档位直接选用。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b8ba404ad6868268",
+    "raw_id": "RAW-43095e84b8aa28be",
+    "claim_type": "deployment",
+    "subject": "千问办公首发",
+    "predicate": "deployment",
+    "object": "GLM-5.3 和 DeepSeek V4 Pro 模型，可直接选用",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-43095e84b8aa28be",
+      "start": 88,
+      "end": 155
+    },
+    "source_quote": "DeepSeek V4 Pro 是 DeepSeek 最新旗舰大模型， 支持 100 万 token 上下文 ，最高 384K 输出。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  }
+]
