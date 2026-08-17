@@ -6,4 +6,8 @@ function getAccessState() {
   return getMembership().active ? "active" : "expired";
 }
 
-module.exports = { getAccessState };
+function openMembership() {
+  wx.navigateTo({ url: "/pages/membership/index" });
+}
+
+module.exports = { getAccessState, openMembership };

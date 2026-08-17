@@ -49,4 +49,5 @@
       </button>
     </view>
   </view>
+  <registration-sheet visible="{{registrationOpen}}" required="{{true}}" bind:close="closeRegistration" bind:continue="continueAfterRegistration" />
 </view>

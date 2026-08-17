@@ -1,7 +1,8 @@
 const { filterCards, sortCards } = require("../../utils/funding.js");
-const { getWatchIds, getCompareIds } = require("../../utils/storage.js");
+const { getWatchIds, toggleWatch, getCompareIds } = require("../../utils/storage.js");
 const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
 const { syncTabBar } = require("../../utils/tab-bar.js");
+const { getAccessState, openMembership } = require("../../utils/access.js");
 const { track } = require("../../utils/analytics.js");
 
 const bundledFundingIndex = getFundingData().index;
@@ -32,6 +33,8 @@ Page({
     scopeCardCount: 0,
     scopeCounts: { china: 0, global: 0 },
     selectedMarketRegion: "global",
+    registrationOpen: false,
+    registrationRequired: false,
     sort: "latest",
     filters: { ...DEFAULT_FILTERS },
   },
@@ -51,6 +54,16 @@ Page({
       this.refreshCards(true);
     });
     refreshFundingData().then((state) => this.applyFundingData(state.index));
+    const app = getApp();
+    if (getAccessState() === "unregistered" && !app.globalData.registrationPromptDismissed) {
+      this.registrationTimer = setTimeout(() => {
+        this.setData({ registrationOpen: true, registrationRequired: false });
+      }, 450);
+    }
+  },
+
+  onUnload() {
+    clearTimeout(this.registrationTimer);
   },
 
   onShow() {
@@ -158,7 +171,32 @@ Page({
 
   openCard(event) {
     const id = event.detail.id;
+    const accessState = getAccessState();
+    if (accessState === "unregistered") {
+      this.pendingCardId = id;
+      this.setData({ registrationOpen: true, registrationRequired: true });
+      return;
+    }
+    if (accessState === "expired") return openMembership();
     wx.navigateTo({ url: `/pages/detail/index?id=${id}` });
+  },
+
+  closeRegistration() {
+    getApp().globalData.registrationPromptDismissed = true;
+    this.pendingCardId = "";
+    this.setData({ registrationOpen: false, registrationRequired: false });
+  },
+
+  continueAfterRegistration() {
+    const id = this.pendingCardId;
+    this.pendingCardId = "";
+    this.setData({ registrationOpen: false, registrationRequired: false });
+    if (id) wx.navigateTo({ url: `/pages/detail/index?id=${id}` });
+  },
+
+  toggleWatch(event) {
+    toggleWatch(event.detail.id);
+    this.renderSlice(this.data.visibleCount);
   },
 
   openCompare() {
