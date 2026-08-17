@@ -3,6 +3,7 @@ const { recordBrowse } = require("../../utils/member.js");
 const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
 const { companyEntityKey, investorEntityKey, personEntityKey } = require("../../utils/entity-library.js");
 const { getAccessState, openMembership } = require("../../utils/access.js");
+const { resolveDetailAccess, requestLockedContent } = require("../../utils/metered-access.js");
 
 function normalizedCard(card) {
   if (!card) return null;
@@ -23,10 +24,11 @@ function normalizedCard(card) {
 }
 
 Page({
-  data: { card: null, watched: false, compared: false, sharedEntry: false, registrationOpen: false },
+  data: { card: null, watched: false, compared: false, sharedEntry: false, registrationOpen: false, contentLocked: false, lockReason: "" },
 
   onLoad(options) {
     this.cardId = options.id;
+    this.setData(resolveDetailAccess(`funding:${this.cardId || "unknown"}`));
     const sharedEntry = options.from === "share";
     this.setData({ sharedEntry });
     if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
@@ -58,19 +60,19 @@ Page({
     this.pendingAction = "";
     this.pendingUrl = "";
     this.setData({ registrationOpen: false });
-    if (!this.entryGate) return;
-    this.entryGate = false;
-    if (getCurrentPages().length > 1) wx.navigateBack();
-    else wx.switchTab({ url: "/pages/terminal/index" });
   },
 
   continueAfterRegistration() {
     const action = this.pendingAction;
     const url = this.pendingUrl;
-    this.entryGate = false;
     this.pendingAction = "";
     this.pendingUrl = "";
     this.setData({ registrationOpen: false });
+    if (action === "content") {
+      this.setData({ contentLocked: false, lockReason: "active" });
+      this.recordView(this.data.card);
+      return;
+    }
     this.recordView(this.data.card);
     if (action === "watch") this.applyWatch();
     if (action === "compare") this.applyCompare();
@@ -118,6 +120,8 @@ Page({
     this.setData({ registrationOpen: true });
     return true;
   },
+
+  unlockContent() { requestLockedContent(this); },
 
   openProtectedUrl(url) {
     wx.navigateTo({ url });

@@ -9,6 +9,16 @@
       <text wx:else class="deck">关联企业：{{entity.companiesText}}</text>
     </view>
 
+    <view wx:if="{{contentLocked}}" class="content-access-gate">
+      <text class="gate-kicker">游客试读已完成</text>
+      <text class="gate-title serif">{{lockReason === 'expired' ? '开通会员查看完整档案' : '注册后查看完整档案'}}</text>
+      <text class="gate-copy">主体名称和简介可见，企业关系、投资活动与融资历史需登录后查看。</text>
+      <button bindtap="unlockContent">{{lockReason === 'expired' ? '查看会员权益' : '注册并继续'}}</button>
+      <text class="gate-note">是否登录由你选择，可随时返回生态栏目。</text>
+    </view>
+
+    <block wx:else>
+
     <view class="metric-grid" wx:if="{{type === 'companies'}}">
       <view><text>融资轮次</text><strong>{{entity.roundCount}} 笔</strong></view><view><text>投资机构</text><strong>{{entity.investorCount}} 家</strong></view><view><text>创始团队</text><strong>{{entity.founderCount}} 人</strong></view>
     </view>
@@ -48,5 +58,7 @@
         <view><text class="activity-title">{{type === 'companies' ? item.round : item.company}}</text><text class="activity-meta">{{item.date}} · {{item.round}}</text></view><view><strong>{{item.amount}}</strong><text>查看融资 ›</text></view>
       </button>
     </view>
+    </block>
   </view>
+  <registration-sheet visible="{{registrationOpen}}" required="{{true}}" bind:close="closeRegistration" bind:continue="continueAfterRegistration" />
 </view>

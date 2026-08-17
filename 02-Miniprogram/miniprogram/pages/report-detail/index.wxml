@@ -9,7 +9,15 @@
       <view wx:if="{{report.counts}}" class="reader-evidence"><view><text class="mono">{{report.counts.signals}}</text><text>商业事件</text></view><view><text class="mono">{{report.counts.opinions}}</text><text>一线观点</text></view><view><text class="mono">{{report.counts.community}}</text><text>社群观察</text></view></view>
     </view>
 
-    <view class="reader-body">
+    <view wx:if="{{contentLocked}}" class="content-access-gate">
+      <text class="gate-kicker">游客试读已完成</text>
+      <text class="gate-title serif">{{lockReason === 'expired' ? '开通会员继续阅读' : '注册后继续阅读'}}</text>
+      <text class="gate-copy">文章标题、摘要和发布信息可见，完整正文需登录后查看。</text>
+      <button bindtap="unlockContent">{{lockReason === 'expired' ? '查看会员权益' : '注册并继续'}}</button>
+      <text class="gate-note">是否登录由你选择，可随时返回观察栏目。</text>
+    </view>
+
+    <view wx:else class="reader-body">
       <block wx:for="{{report.blocks}}" wx:key="id">
         <view wx:if="{{item.type === 'heading'}}" class="block-heading serif">{{item.text}}</view>
         <view wx:elif="{{item.type === 'subheading'}}" class="block-subheading">{{item.text}}</view>
@@ -26,4 +34,5 @@
     <button class="active" data-url="/pages/watchlist/index" bindtap="switchSection">观察</button>
     <button data-url="/pages/profile/index" bindtap="switchSection">我的</button>
   </view>
+  <registration-sheet visible="{{registrationOpen}}" required="{{true}}" bind:close="closeRegistration" bind:continue="continueAfterRegistration" />
 </view>

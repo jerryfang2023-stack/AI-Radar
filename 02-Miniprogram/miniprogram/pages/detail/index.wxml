@@ -14,6 +14,16 @@
       <view><text class="fact-label">累计融资</text><text class="fact-value mono">{{card.cumulativeAmount}}</text></view>
     </view>
 
+    <view wx:if="{{contentLocked}}" class="content-access-gate">
+      <text class="gate-kicker">游客试读已完成</text>
+      <text class="gate-title serif">{{lockReason === 'expired' ? '开通会员继续阅读' : '注册后继续阅读'}}</text>
+      <text class="gate-copy">本页已展示融资主体与基础事实，完整分析、机构信息和历史记录需登录后查看。</text>
+      <button bindtap="unlockContent">{{lockReason === 'expired' ? '查看会员权益' : '注册并继续'}}</button>
+      <text class="gate-note">是否登录由你选择，可随时返回融资列表。</text>
+    </view>
+
+    <block wx:else>
+
     <view class="evidence-banner"><text>{{card.sourceCount}} 条公开来源</text></view>
 
     <view class="detail-actions"><button class="favorite-action {{watched ? 'active' : ''}}" bindtap="toggleWatch">{{watched ? '已收藏' : '收藏情报'}}</button><button class="compare-action {{compared ? 'active' : ''}}" bindtap="toggleCompare">{{compared ? '已加入公司比较' : '加入公司比较'}}</button></view>
@@ -43,6 +53,7 @@
     <view wx:if="{{card.history.length}}" class="section"><text class="section-title serif">融资历史</text><view class="timeline"><view wx:for="{{card.history}}" wx:key="date" class="timeline-row {{item.current ? 'current' : ''}}"><text class="timeline-date mono">{{item.date || '日期未披露'}}</text><view><text class="timeline-round">{{item.round}}</text><text class="timeline-amount mono">{{item.amount}}</text></view></view></view></view>
 
     <view class="section"><text class="section-title serif">信息来源</text><view wx:if="{{card.sources.length}}" class="source-list"><view wx:for="{{card.sources}}" wx:key="id" class="source-card paper-card"><text class="source-publisher">{{item.publisher}}</text><text class="source-title">{{item.title}}</text><text wx:for="{{item.quotes}}" wx:key="*this" class="source-quote">“{{item}}”</text><button class="source-button" data-url="{{item.url}}" bindtap="copySource">复制原文链接</button></view></view><view wx:else class="missing">暂无公开来源</view></view>
+    </block>
   </view>
   <registration-sheet visible="{{registrationOpen}}" required="{{true}}" bind:close="closeRegistration" bind:continue="continueAfterRegistration" />
 </view>

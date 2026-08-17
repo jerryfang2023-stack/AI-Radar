@@ -31,6 +31,8 @@ const entityDetailSource = fs.readFileSync("miniprogram/pages/entity-detail/inde
 const entityDetailLogic = fs.readFileSync("miniprogram/pages/entity-detail/index.js", "utf8");
 const reportDetailSource = fs.readFileSync("miniprogram/pages/report-detail/index.wxml", "utf8");
 const reportDetailLogic = fs.readFileSync("miniprogram/pages/report-detail/index.js", "utf8");
+const sectorDetailSource = fs.readFileSync("miniprogram/pages/sector-detail/index.wxml", "utf8");
+const sectorDetailLogic = fs.readFileSync("miniprogram/pages/sector-detail/index.js", "utf8");
 const headerLogic = fs.readFileSync("miniprogram/components/app-header/index.js", "utf8");
 const memberModelSource = fs.readFileSync("miniprogram/utils/member.js", "utf8");
 const memberSource = fs.readFileSync("miniprogram/utils/member.js", "utf8");
@@ -99,7 +101,7 @@ test("requires phone, avatar and nickname before the server starts a seven-day t
   assert.doesNotMatch(registrationSource, /自动获得|首次打开即/u);
 });
 
-test("keeps home and all detail browsing readable before voluntary registration", () => {
+test("keeps lists public and gates only the second distinct detail behind a voluntary action", () => {
   assert.doesNotMatch(terminalLogic, /registrationTimer|setTimeout\(\(\) => \{[\s\S]*registrationOpen/u);
   assert.match(terminalLogic, /openCard\(event\)[\s\S]*wx\.navigateTo/u);
   assert.doesNotMatch(terminalLogic, /getAccessState|registrationOpen/u);
@@ -107,9 +109,15 @@ test("keeps home and all detail browsing readable before voluntary registration"
   assert.doesNotMatch(marketLogic, /getAccessState|registrationOpen/u);
   assert.match(watchlistLogic, /openReport\(event\)[\s\S]*wx\.navigateTo/u);
 
-  for (const logic of [detailLogic, entityDetailLogic, reportDetailLogic]) {
-    assert.match(logic, /sharedEntry = options\.from === "share"/u);
-    assert.doesNotMatch(logic, /if \(!sharedEntry/u);
+  for (const logic of [detailLogic, entityDetailLogic, reportDetailLogic, sectorDetailLogic]) {
+    assert.match(logic, /resolveDetailAccess/u);
+    assert.match(logic, /requestLockedContent/u);
+    assert.doesNotMatch(logic, /onLoad\([\s\S]{0,800}registrationOpen:\s*true/u);
+  }
+  for (const source of [detailSource, entityDetailSource, reportDetailSource, sectorDetailSource]) {
+    assert.match(source, /wx:if="\{\{contentLocked\}\}"/u);
+    assert.match(source, /bindtap="unlockContent"/u);
+    assert.match(source, /<registration-sheet/u);
   }
   assert.match(detailSource, /show-back="\{\{!sharedEntry\}\}"/u);
   assert.match(entityDetailSource, /show-back="\{\{!sharedEntry\}\}"/u);
@@ -117,7 +125,7 @@ test("keeps home and all detail browsing readable before voluntary registration"
   assert.match(detailLogic, /openProtectedUrl\(url\)[\s\S]*wx\.navigateTo/u);
   assert.match(entityDetailLogic, /openProtectedUrl\(url\)[\s\S]*wx\.navigateTo/u);
   assert.match(reportDetailLogic, /switchSection\(event\)[\s\S]*wx\.switchTab/u);
-  assert.match(registrationSource, /当前分享详情可直接阅读/u);
+  assert.match(registrationSource, /已完成游客试读/u);
   assert.match(registrationSource, /暂不注册，返回当前内容/u);
 });
 

@@ -2,12 +2,14 @@ const { getFundingData, refreshFundingData } = require("../../utils/live-data.js
 const { buildSector } = require("../../utils/ecosystem-insights.js");
 const { getFollowIds, toggleFollow } = require("../../utils/member.js");
 const { getAccessState, openMembership } = require("../../utils/access.js");
+const { resolveDetailAccess, requestLockedContent } = require("../../utils/metered-access.js");
 
 Page({
-  data: { sector: "", marketRegion: "global", snapshot: null, following: false, registrationOpen: false },
+  data: { sector: "", marketRegion: "global", snapshot: null, following: false, registrationOpen: false, contentLocked: false, lockReason: "" },
   onLoad(options) {
     try { this.sector = decodeURIComponent(options.sector || ""); } catch { this.sector = options.sector || ""; }
     this.marketRegion = options.market === "china" ? "china" : "global";
+    this.setData(resolveDetailAccess(`sector:${this.marketRegion}:${this.sector || "unknown"}`));
     this.followId = `sector:${this.marketRegion}:${this.sector}`;
     if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
     this.applyData(getFundingData());
@@ -33,11 +35,13 @@ Page({
     this.setData({ following: result.following });
     wx.showToast({ title: result.awarded ? `关注成功，获得 ${result.awarded} 积分` : (result.following ? "已关注" : "已取消关注"), icon: "none" });
   },
-  closeRegistration() { this.pendingFollow = false; this.setData({ registrationOpen: false }); },
+  unlockContent() { requestLockedContent(this); },
+  closeRegistration() { this.pendingFollow = false; this.pendingAction = ""; this.setData({ registrationOpen: false }); },
   continueAfterRegistration() {
     const shouldFollow = this.pendingFollow;
     this.pendingFollow = false;
-    this.setData({ registrationOpen: false });
+    this.pendingAction = "";
+    this.setData({ registrationOpen: false, contentLocked: false, lockReason: "active" });
     if (shouldFollow) this.applyFollow();
   },
   onShareAppMessage() { return { title: `${this.sector}｜生态赛道｜观澜 AI`, path: `/pages/sector-detail/index?sector=${encodeURIComponent(this.sector)}&market=${this.marketRegion}` }; },

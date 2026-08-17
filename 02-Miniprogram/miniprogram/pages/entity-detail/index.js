@@ -1,10 +1,11 @@
 const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
 const { buildEntityLibrary, findEntity } = require("../../utils/entity-library.js");
+const { resolveDetailAccess, requestLockedContent } = require("../../utils/metered-access.js");
 
 const TITLES = { companies: "企业档案", investors: "机构档案", people: "人物档案" };
 
 Page({
-  data: { title: "主体档案", type: "", entity: null, sharedEntry: false },
+  data: { title: "主体档案", type: "", entity: null, sharedEntry: false, registrationOpen: false, contentLocked: false, lockReason: "" },
 
   onLoad(options) {
     this.type = options.type;
@@ -12,6 +13,7 @@ Page({
     this.setData({ sharedEntry });
     if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
     try { this.key = decodeURIComponent(options.key || ""); } catch { this.key = options.key || ""; }
+    this.setData(resolveDetailAccess(`entity:${this.type || "unknown"}:${this.key || "unknown"}`));
     this.setData({ title: TITLES[this.type] || "主体档案", type: this.type });
     this.applyData(getFundingData());
     refreshFundingData().then((state) => this.applyData(state));
@@ -41,6 +43,14 @@ Page({
 
   openProtectedUrl(url) {
     wx.navigateTo({ url });
+  },
+
+  unlockContent() { requestLockedContent(this); },
+  closeRegistration() { this.pendingAction = ""; this.setData({ registrationOpen: false }); },
+  continueAfterRegistration() {
+    const unlock = this.pendingAction === "content";
+    this.pendingAction = "";
+    this.setData({ registrationOpen: false, contentLocked: unlock ? false : this.data.contentLocked, lockReason: unlock ? "active" : this.data.lockReason });
   },
 
   onShareAppMessage() {
