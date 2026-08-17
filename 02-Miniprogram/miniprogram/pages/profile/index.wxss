@@ -33,6 +33,15 @@
 .section-heading { display: flex; align-items: center; justify-content: space-between; margin-top: 8rpx; }
 .section-heading > text:first-child { color: #071827; font-size: 30rpx; font-weight: 600; }
 .section-heading > text:last-child { color: #9b6d20; font-size: 23rpx; }
+.account-library { overflow: hidden; }
+.account-library button { display: grid; grid-template-columns: 60rpx minmax(0,1fr) auto 18rpx; gap: 16rpx; align-items: center; width: 100%; min-height: 103rpx; margin: 0; padding: 17rpx 22rpx; border-bottom: 1rpx solid #e5e8ec; border-radius: 0; background: #fff; text-align: left; }
+.account-library button:last-child { border-bottom: 0; }
+.library-mark { display: flex; width: 54rpx; height: 54rpx; align-items: center; justify-content: center; border-radius: 50%; background: #071827; color: #c8a766; font: 22rpx/1 serif; }
+.account-library button > view:nth-child(2) { display: flex; min-width: 0; flex-direction: column; gap: 7rpx; }
+.account-library button > view:nth-child(2) text:first-child { color: #071827; font-size: 25rpx; font-weight: 700; }
+.account-library button > view:nth-child(2) text:last-child { overflow: hidden; color: #6f7f8f; font-size: 19rpx; text-overflow: ellipsis; white-space: nowrap; }
+.library-count { color: #9b6d20; font-size: 24rpx; font-weight: 700; }
+.library-arrow { color: #8a98a6; font-size: 30rpx; }
 .list-card { overflow: hidden; }
 .action-row, .benefit-row { display: flex; min-height: 98rpx; align-items: center; gap: 18rpx; padding: 16rpx 22rpx; border-bottom: 1rpx solid #e5e8ec; }
 .action-row:last-child, .benefit-row:last-child { border-bottom: 0; }

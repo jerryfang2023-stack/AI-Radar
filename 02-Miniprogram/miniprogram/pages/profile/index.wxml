@@ -48,6 +48,12 @@
       <button wx:else class="community-link-button" open-type="getPhoneNumber" bindgetphonenumber="linkCommunity" loading="{{linkingCommunity}}">申请加入</button>
     </view>
 
+    <view class="section-heading"><text class="serif">收藏与关注</text></view>
+    <view class="account-library paper-card">
+      <button bindtap="openWatchlist"><view class="library-mark">藏</view><view><text>我的收藏</text><text>融资情报与已保存内容</text></view><text class="library-count mono">{{stats.favorite}}</text><text class="library-arrow">›</text></button>
+      <button bindtap="openFollows"><view class="library-mark">关</view><view><text>我的关注</text><text>持续追踪关注赛道的变化</text></view><text class="library-count mono">{{stats.follow}}</text><text class="library-arrow">›</text></button>
+    </view>
+
     <view class="section-heading"><text class="serif">成长任务</text><text bindtap="openGrowth">查看明细</text></view>
     <view class="list-card paper-card">
       <view wx:for="{{growth.tasks}}" wx:key="id" class="action-row" data-id="{{item.id}}" bindtap="openTask">

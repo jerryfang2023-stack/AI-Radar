@@ -44,7 +44,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Opportunity Map column version | OMAP-V2.0.0-v4-evidence |
 | Trend Radar column version | TRADAR-V1.1.0-tag-v4-1 |
 | Funding Insights column version | FUNDING-INSIGHT-V1.5.0-china-market |
-| WeChat Mini Program version | V0.6.8-shared-detail-review |
+| WeChat Mini Program version | V0.6.9-ecosystem-public-browse |
 | Investment institution projection | INVESTMENT-INSTITUTION-V1.0 |
 | Data Center Raw contract | RAW-V4.0 |
 | Data Center structured source intake | SOURCE-INTAKE-V1.1 |
@@ -206,6 +206,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `miniprogram-v0.6.9` | Mini Program public browsing / ecosystem signals and sector details / profile collections and follows | 2026-08-17 | 2026-08-17T18:20:00+08:00 | V0.6.9-ecosystem-public-browse | registration overlays on page entry or internal detail navigation; truncated public sector company lists; 收藏或关注入口移出“我的”; V0.6.8 payment, analytics, funding-card or navigation regressions | Mini Program data build + behavioral/copy tests + 18-page project validation + public-browsing gate + development-build upload |
 | `miniprogram-v0.6.8` | Shared Mini Program financing / ecosystem / observation detail reading and user-initiated registration boundary | 2026-08-17 | 2026-08-17T11:14:00+08:00 | V0.6.8-shared-detail-review | registration overlays before a shared detail is readable; free navigation from a shared detail into paid columns or personal actions; automatic registration prompt on app launch; V0.6.6 virtual-payment regressions | Mini Program data build + behavioral/copy tests + 17-page project validation + shared-entry access-boundary gate + development-build upload |
 | `miniprogram-v0.6.7` | Superseded public-detail development upload (not submitted for review) | 2026-08-17 | 2026-08-17T11:00:00+08:00 | V0.6.7-public-detail-review | treating the superseded broad public-access draft as the current paid-service boundary | Superseded by V0.6.8 before review submission |
 | `miniprogram-v0.6.6` | Official Mini Program virtual payment / production virtual products / iOS refund inquiry | 2026-08-16 | 2026-08-16T19:22:29+08:00 | V0.6.6-ios-virtual-payment-review | `wx.requestPayment`; sandbox payments in review builds; unpublished membership products; client-confirmed entitlements; missing iOS refund inquiry response; V0.6.5 analytics or UI regressions | Mini Program data build + behavioral/copy tests + 17-page project validation + Payment Service tests + production product publication check + development-build upload |

@@ -1,0 +1,17 @@
+<view class="page-shell">
+  <app-header title="赛道详情" show-back="{{true}}" fallback-url="/pages/market/index" />
+  <view wx:if="{{snapshot}}" class="page-content sector-content">
+    <view class="sector-hero">
+      <view class="sector-top"><text>市场子类 · {{marketRegion === 'china' ? '中国' : '全球'}}</text><button class="follow-button {{following ? 'active' : ''}}" bindtap="toggleFollow">{{following ? '已关注' : '＋ 关注'}}</button></view>
+      <text class="sector-title serif">{{sector}}</text>
+      <text class="sector-deck">围绕该赛道的融资事件、代表公司与活跃机构，按最近融资动态持续更新。</text>
+      <view class="sector-kpis"><view><text class="mono">{{snapshot.eventCount}}</text><text>融资事件</text></view><view><text class="mono">{{snapshot.companyCount}}</text><text>公司</text></view><view><text class="mono">{{snapshot.investorCount}}</text><text>机构</text></view></view>
+    </view>
+    <view class="section-heading"><view><text>按最近融资排序</text><text class="serif">代表公司</text></view><text class="mono">{{snapshot.companyCount}} 家</text></view>
+    <view class="company-list">
+      <button wx:for="{{snapshot.companies}}" wx:key="id" class="company-row" data-id="{{item.id}}" bindtap="openFunding"><view class="company-avatar serif">{{item.initial}}</view><view class="company-copy"><text>{{item.company}}</text><text>{{item.productForm || item.category}} · {{item.date}}</text></view><view class="company-amount"><text class="mono">{{item.amount}}</text><text>查看详情 ›</text></view></button>
+    </view>
+    <view wx:if="{{snapshot.investors.length}}" class="investor-section"><view class="section-heading"><view><text>近 6 个月</text><text class="serif">活跃机构</text></view><text>参与轮次</text></view><view class="investor-tags"><text wx:for="{{snapshot.investors}}" wx:key="name">{{item.name}} <b class="mono">{{item.count}}</b></text></view></view>
+  </view>
+  <registration-sheet visible="{{registrationOpen}}" required="{{false}}" bind:close="closeRegistration" bind:continue="continueAfterRegistration" />
+</view>

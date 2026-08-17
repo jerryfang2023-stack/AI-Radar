@@ -61,7 +61,7 @@ test("uses the confirmed financing column and public-facing copy", () => {
   assert.match(terminalSource, /class="funding-metrics-head"[\s\S]*融资动态全景[\s\S]*全球 · 中国/u);
   assert.match(terminalSource, /<strong class="funding-metrics-value serif">\{\{scopeCardCount\}\}<\/strong><text>融资<\/text>/u);
   assert.match(terminalSource, /class="funding-date"><strong class="funding-metrics-value serif">\{\{meta\.latestDate\}\}<\/strong><text>更新<\/text>/u);
-  assert.match(marketSource, /<app-header title="生态图谱"/u);
+  assert.match(marketSource, /<app-header title="生态"/u);
   assert.match(watchlistSource, /<app-header title="商业观察"/u);
   assert.doesNotMatch(fundingRowSource, /中国区/u);
 
@@ -99,21 +99,24 @@ test("requires phone, avatar and nickname before the server starts a seven-day t
   assert.doesNotMatch(registrationSource, /自动获得|首次打开即/u);
 });
 
-test("keeps shared details readable before registration and protects onward paid navigation", () => {
+test("keeps home and all detail browsing readable before voluntary registration", () => {
   assert.doesNotMatch(terminalLogic, /registrationTimer|setTimeout\(\(\) => \{[\s\S]*registrationOpen/u);
-  assert.match(terminalLogic, /openCard\(event\)[\s\S]*getAccessState\(\)/u);
-  assert.match(marketLogic, /openEntity\(event\)[\s\S]*getAccessState\(\)/u);
-  assert.match(watchlistLogic, /openReport\(event\)[\s\S]*getAccessState\(\)/u);
+  assert.match(terminalLogic, /openCard\(event\)[\s\S]*wx\.navigateTo/u);
+  assert.doesNotMatch(terminalLogic, /getAccessState|registrationOpen/u);
+  assert.match(marketLogic, /openSector\(event\)[\s\S]*wx\.navigateTo/u);
+  assert.doesNotMatch(marketLogic, /getAccessState|registrationOpen/u);
+  assert.match(watchlistLogic, /openReport\(event\)[\s\S]*wx\.navigateTo/u);
 
   for (const logic of [detailLogic, entityDetailLogic, reportDetailLogic]) {
     assert.match(logic, /sharedEntry = options\.from === "share"/u);
-    assert.match(logic, /if \(!sharedEntry/u);
+    assert.doesNotMatch(logic, /if \(!sharedEntry/u);
   }
   assert.match(detailSource, /show-back="\{\{!sharedEntry\}\}"/u);
   assert.match(entityDetailSource, /show-back="\{\{!sharedEntry\}\}"/u);
-  assert.match(detailLogic, /openProtectedUrl/u);
-  assert.match(entityDetailLogic, /openProtectedUrl/u);
-  assert.match(reportDetailLogic, /switchSection\(event\)[\s\S]*getAccessState\(\)/u);
+  assert.match(detailLogic, /requireEntitlement\(action\)[\s\S]*getAccessState\(\)/u);
+  assert.match(detailLogic, /openProtectedUrl\(url\)[\s\S]*wx\.navigateTo/u);
+  assert.match(entityDetailLogic, /openProtectedUrl\(url\)[\s\S]*wx\.navigateTo/u);
+  assert.match(reportDetailLogic, /switchSection\(event\)[\s\S]*wx\.switchTab/u);
   assert.match(registrationSource, /当前分享详情可直接阅读/u);
   assert.match(registrationSource, /暂不注册，返回当前内容/u);
 });
@@ -281,16 +284,12 @@ test("keeps list pages concise while preserving detail-page actions", () => {
   assert.doesNotMatch(terminalSource, /checkbox/u);
   assert.match(terminalSource, /placeholder="公司 \/ 机构 \/ 产品"/u);
   assert.doesNotMatch(terminalSource, /category-chip|市场类别|全部市场/u);
-  assert.match(marketSource, /企业库/u);
-  assert.match(marketSource, /机构库/u);
-  assert.match(marketSource, /人物库/u);
-  assert.ok(
-    marketSource.indexOf('class="search-box"') < marketSource.indexOf('class="library-tabs"'),
-    "生态图谱搜索栏应位于子栏目切换栏上方",
-  );
-  assert.match(marketLogic, /企业 \/ 产品 \/ 赛道/u);
-  assert.match(marketLogic, /机构 \/ 已投公司 \/ 赛道/u);
-  assert.match(marketLogic, /人物 \/ 企业 \/ 职务/u);
+  assert.match(marketSource, /资本正在流向哪里/u);
+  assert.match(marketSource, /赛道热度榜/u);
+  assert.match(marketSource, /热力趋势/u);
+  assert.match(marketSource, /scroll-view class="signal-scroller"/u);
+  assert.match(marketLogic, /buildOverview/u);
+  assert.match(marketLogic, /pages\/sector-detail\/index/u);
   assert.doesNotMatch(`${marketSource}\n${watchlistSource}`, /AI FUNDING|GUANLAN RESEARCH|更新日期/u);
 });
 

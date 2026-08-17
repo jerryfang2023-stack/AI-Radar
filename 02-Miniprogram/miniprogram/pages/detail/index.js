@@ -29,14 +29,6 @@ Page({
     this.cardId = options.id;
     const sharedEntry = options.from === "share";
     this.setData({ sharedEntry });
-    if (!sharedEntry) {
-      const accessState = getAccessState();
-      if (accessState === "unregistered") {
-        this.entryGate = true;
-        this.setData({ registrationOpen: true });
-      }
-      if (accessState === "expired") setTimeout(() => openMembership(), 0);
-    }
     if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
     const bundledCard = normalizedCard(getFundingData().details[this.cardId]);
     if (bundledCard) this.renderCard(bundledCard);
@@ -128,17 +120,7 @@ Page({
   },
 
   openProtectedUrl(url) {
-    const accessState = getAccessState();
-    if (accessState === "active") {
-      wx.navigateTo({ url });
-      return;
-    }
-    if (accessState === "expired") {
-      openMembership();
-      return;
-    }
-    this.pendingUrl = url;
-    this.setData({ registrationOpen: true });
+    wx.navigateTo({ url });
   },
 
   copySource(event) {

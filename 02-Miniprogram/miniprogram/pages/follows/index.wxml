@@ -8,4 +8,5 @@
       <button class="follow-button {{item.followed ? 'active' : ''}}" data-id="{{item.id}}" catchtap="toggle">{{item.followed ? '已关注' : '关注'}}</button>
     </view>
   </view>
+  <registration-sheet visible="{{registrationOpen}}" required="{{false}}" bind:close="closeRegistration" bind:continue="continueAfterRegistration" />
 </view>

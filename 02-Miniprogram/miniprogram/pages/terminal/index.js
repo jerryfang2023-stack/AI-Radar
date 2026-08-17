@@ -2,7 +2,6 @@ const { filterCards, sortCards } = require("../../utils/funding.js");
 const { getWatchIds, toggleWatch, getCompareIds } = require("../../utils/storage.js");
 const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
 const { syncTabBar } = require("../../utils/tab-bar.js");
-const { getAccessState, openMembership } = require("../../utils/access.js");
 const { track } = require("../../utils/analytics.js");
 
 const bundledFundingIndex = getFundingData().index;
@@ -33,8 +32,6 @@ Page({
     scopeCardCount: 0,
     scopeCounts: { china: 0, global: 0 },
     selectedMarketRegion: "global",
-    registrationOpen: false,
-    registrationRequired: false,
     sort: "latest",
     filters: { ...DEFAULT_FILTERS },
   },
@@ -161,26 +158,7 @@ Page({
 
   openCard(event) {
     const id = event.detail.id;
-    const accessState = getAccessState();
-    if (accessState === "unregistered") {
-      this.pendingCardId = id;
-      this.setData({ registrationOpen: true, registrationRequired: true });
-      return;
-    }
-    if (accessState === "expired") return openMembership();
     wx.navigateTo({ url: `/pages/detail/index?id=${id}` });
-  },
-
-  closeRegistration() {
-    this.pendingCardId = "";
-    this.setData({ registrationOpen: false, registrationRequired: false });
-  },
-
-  continueAfterRegistration() {
-    const id = this.pendingCardId;
-    this.pendingCardId = "";
-    this.setData({ registrationOpen: false, registrationRequired: false });
-    if (id) wx.navigateTo({ url: `/pages/detail/index?id=${id}` });
   },
 
   toggleWatch(event) {

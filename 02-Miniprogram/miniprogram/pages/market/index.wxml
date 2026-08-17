@@ -1,46 +1,17 @@
 <view class="page-shell">
-  <app-header title="生态图谱" />
-  <view class="page-content library-content">
-    <view class="ecosystem-overview">
-      <view class="ecosystem-overview-head"><text>商业主体全景</text><text>企业 · 机构 · 人物</text></view>
-      <view class="library-summary">
-        <view><text class="summary-value serif">{{companyCount}}</text><text>企业</text></view>
-        <view><text class="summary-value serif">{{investorCount}}</text><text>机构</text></view>
-        <view><text class="summary-value serif">{{peopleCount}}</text><text>人物</text></view>
-      </view>
+  <app-header title="生态" />
+  <view class="page-content ecosystem-content">
+    <view class="ecosystem-topline">
+      <view><text>数据更新至</text><text class="date mono">{{latestDate}}</text></view>
+      <view class="market-segment"><button class="{{marketRegion === 'global' ? 'active' : ''}}" data-region="global" bindtap="changeMarket">全球</button><button class="{{marketRegion === 'china' ? 'active' : ''}}" data-region="china" bindtap="changeMarket">中国</button></view>
     </view>
-
-    <view class="search-box">
-      <icon type="search" size="18" color="#071827" />
-      <input value="{{query}}" placeholder="{{placeholder}}" bindinput="onSearchInput" bindconfirm="onSearchConfirm" confirm-type="search" />
-      <button wx:if="{{query}}" class="clear-button" bindtap="clearSearch"><icon type="clear" size="16" /></button>
-    </view>
-
-    <view class="library-tabs">
-      <button class="{{mode === 'companies' ? 'active' : ''}}" data-mode="companies" bindtap="switchMode">企业库</button>
-      <button class="{{mode === 'investors' ? 'active' : ''}}" data-mode="investors" bindtap="switchMode">机构库</button>
-      <button class="{{mode === 'people' ? 'active' : ''}}" data-mode="people" bindtap="switchMode">人物库</button>
-    </view>
-
-    <view class="result-line"><text>共 {{resultCount}} 个{{modeLabel}}主体</text><text>{{sortNote}}</text></view>
-
-    <view class="entity-grid">
-      <button wx:for="{{items}}" wx:key="key" class="entity-card" data-key="{{item.key}}" data-type="{{item.type}}" bindtap="openEntity">
-        <view class="entity-avatar serif">{{item.initial}}</view>
-        <view class="entity-copy">
-          <text class="entity-name">{{item.name}}</text>
-          <text wx:if="{{mode === 'companies'}}" class="entity-sub">{{item.categoriesText || item.secondary || 'AI 企业'}}</text>
-          <text wx:elif="{{mode === 'investors'}}" class="entity-sub">{{item.companiesText || '科技投资机构'}}</text>
-          <text wx:else class="entity-sub">{{item.roleText}} · {{item.companiesText}}</text>
-          <text wx:if="{{mode === 'companies'}}" class="entity-meta">{{item.roundCount}} 笔融资 · {{item.investorCount}} 家机构</text>
-          <text wx:elif="{{mode === 'investors'}}" class="entity-meta">{{item.roundCount}} 笔投资 · {{item.companyCount}} 家企业</text>
-          <text wx:else class="entity-meta">{{item.companyCount}} 家关联企业 · {{item.roundCount}} 笔动态</text>
-        </view>
-        <text class="entity-arrow">›</text>
-      </button>
-    </view>
-    <view wx:if="{{!resultCount}}" class="empty-state"><view class="title">暂无匹配结果</view><view class="copy">{{emptyCopy}}</view></view>
-    <view wx:if="{{visibleCount < resultCount}}" class="load-note">继续上拉加载 · 已显示 {{visibleCount}} 条</view>
+    <view class="section-head signal-head"><view><text>本期信号</text><text class="section-title">资本正在流向哪里</text></view></view>
+    <scroll-view class="signal-scroller" scroll-x enable-flex show-scrollbar="{{false}}">
+      <button wx:for="{{signals}}" wx:key="kind" class="signal-card {{item.kind}}" data-sector="{{item.sector}}" bindtap="openSector"><text class="signal-eyebrow">{{item.eyebrow}}</text><text class="signal-sector">{{item.sector}}</text><view class="signal-value"><text class="mono">{{item.value}}</text><text>{{item.kind === 'primary' ? '笔融资' : '个百分点'}}</text></view><text class="signal-note">{{item.note}}</text></button>
+    </scroll-view>
+    <view class="section-head"><view><text>市场子类 · 融资事件</text><text class="section-title">赛道热度榜</text></view><text class="head-note mono">Top 5</text></view>
+    <view class="ranking-card"><button wx:for="{{ranking}}" wx:key="sector" class="ranking-row" data-sector="{{item.sector}}" bindtap="openSector"><text class="rank mono">{{item.rank}}</text><view class="ranking-main"><text>{{item.sector}}</text><view class="bar-track"><view class="bar-value" style="width: {{item.width}}%;"></view></view></view><text class="ranking-count mono">{{item.count}} 笔</text></button></view>
+    <view class="section-head heat-head"><view><text>Top 5 × 近 6 个月</text><text class="section-title">热力趋势</text></view><view class="heat-legend"><i></i><i></i><i></i></view></view>
+    <view class="heatmap-card"><view class="heat-row heat-labels"><text></text><text wx:for="{{months}}" wx:key="*this" class="mono">{{item}}</text></view><view wx:for="{{heatmap}}" wx:key="sector" class="heat-row" data-sector="{{item.sector}}" bindtap="openSector"><text class="heat-sector">{{item.sector}}</text><view wx:for="{{item.cells}}" wx:key="key" class="heat-cell l{{item.level}}"></view></view></view>
   </view>
-  <registration-sheet visible="{{registrationOpen}}" required="{{true}}" bind:close="closeRegistration" bind:continue="continueAfterRegistration" />
 </view>

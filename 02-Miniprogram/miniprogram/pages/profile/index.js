@@ -45,6 +45,7 @@ Page({
   openSettings() { wx.navigateTo({ url: "/pages/profile-edit/index" }); },
   openHistory() { wx.navigateTo({ url: "/pages/history/index" }); },
   openWatchlist() { wx.navigateTo({ url: "/pages/saved/index" }); },
+  openFollows() { wx.navigateTo({ url: "/pages/follows/index" }); },
   openGrowth() { wx.navigateTo({ url: "/pages/growth/index" }); },
   openMembership() { wx.navigateTo({ url: "/pages/membership/index" }); },
   openInvite() { wx.navigateTo({ url: "/pages/invite/index" }); },
