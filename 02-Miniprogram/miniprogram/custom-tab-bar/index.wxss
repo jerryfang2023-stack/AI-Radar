@@ -21,7 +21,7 @@
   position: relative;
   display: flex;
   min-width: 0;
-  min-height: calc(96rpx + var(--tab-safe-bottom));
+  min-height: calc(72rpx + var(--tab-safe-bottom));
   box-sizing: border-box;
   padding-bottom: var(--tab-safe-bottom);
   align-items: center;
@@ -30,7 +30,7 @@
   border-radius: 0;
   background: transparent;
   color: #667789;
-  font-size: 28rpx;
+  font-size: 26rpx;
   font-weight: 500;
   letter-spacing: 2rpx;
 }
@@ -41,7 +41,7 @@
   top: 50%;
   left: 0;
   width: 1rpx;
-  height: 44rpx;
+  height: 34rpx;
   background: #d5d0c6;
   transform: translateY(-50%);
 }
@@ -50,7 +50,7 @@
   border-radius: 14rpx 14rpx 0 0;
   background: #f4efe4;
   color: #0d355c;
-  font-size: 30rpx;
+  font-size: 28rpx;
   font-weight: 700;
   box-shadow: none;
 }
@@ -60,9 +60,9 @@
   position: absolute;
   top: 0;
   left: 50%;
-  width: 64rpx;
-  height: 6rpx;
-  border-radius: 0 0 6rpx 6rpx;
+  width: 56rpx;
+  height: 5rpx;
+  border-radius: 0 0 5rpx 5rpx;
   background: #c8a766;
   transform: translateX(-50%);
 }

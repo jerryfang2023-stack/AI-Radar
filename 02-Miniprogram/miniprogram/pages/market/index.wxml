@@ -1,11 +1,10 @@
 <view class="page-shell">
-  <app-header title="生态" />
+  <app-header title="生态图谱" />
   <view class="page-content ecosystem-content">
-    <view class="ecosystem-topline">
-      <view><text>数据更新至</text><text class="date mono">{{latestDate}}</text></view>
+    <view class="section-head signal-head">
+      <text class="section-title">资本正在流向哪里</text>
       <view class="market-segment"><button class="{{marketRegion === 'global' ? 'active' : ''}}" data-region="global" bindtap="changeMarket">全球</button><button class="{{marketRegion === 'china' ? 'active' : ''}}" data-region="china" bindtap="changeMarket">中国</button></view>
     </view>
-    <view class="section-head signal-head"><view><text>本期信号</text><text class="section-title">资本正在流向哪里</text></view></view>
     <scroll-view class="signal-scroller" scroll-x enable-flex show-scrollbar="{{false}}">
       <button wx:for="{{signals}}" wx:key="kind" class="signal-card {{item.kind}}" data-sector="{{item.sector}}" bindtap="openSector"><text class="signal-eyebrow">{{item.eyebrow}}</text><text class="signal-sector">{{item.sector}}</text><view class="signal-value"><text class="mono">{{item.value}}</text><text>{{item.kind === 'primary' ? '笔融资' : '个百分点'}}</text></view><text class="signal-note">{{item.note}}</text></button>
     </scroll-view>

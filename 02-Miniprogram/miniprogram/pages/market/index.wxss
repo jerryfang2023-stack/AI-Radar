@@ -1,14 +1,11 @@
-.ecosystem-content { padding: 26rpx 30rpx 182rpx; }
-.ecosystem-topline { display: flex; align-items: center; justify-content: space-between; }
-.ecosystem-topline > view:first-child { display: flex; flex-direction: column; gap: 5rpx; color: #7a8794; font-size: 20rpx; }
-.ecosystem-topline .date { color: #071827; font-size: 22rpx; font-weight: 700; }
-.market-segment { display: grid; grid-template-columns: repeat(2, 1fr); width: 226rpx; padding: 6rpx; border-radius: 18rpx; background: #eeeae2; }
-.market-segment button { min-height: 62rpx; margin: 0; padding: 0; border-radius: 13rpx; background: transparent; color: #708091; font-size: 23rpx; line-height: 62rpx; }
+.ecosystem-content { padding: 18rpx 30rpx 154rpx; }
+.market-segment { display: grid; grid-template-columns: repeat(2, 1fr); width: 210rpx; padding: 4rpx; border-radius: 17rpx; background: #eeeae2; }
+.market-segment button { min-height: 54rpx; margin: 0; padding: 0; border-radius: 13rpx; background: transparent; color: #708091; font-size: 22rpx; line-height: 54rpx; }
 .market-segment button.active { background: #fff; color: #0d355c; font-weight: 700; box-shadow: 0 5rpx 16rpx rgba(7,24,39,.08); }
 .section-head { display: flex; align-items: flex-end; justify-content: space-between; margin: 34rpx 0 18rpx; }
 .section-head > view:first-child { display: flex; flex-direction: column; gap: 5rpx; color: #9b6d20; font-size: 18rpx; letter-spacing: 1rpx; }
 .section-title { color: #071827; font-family: "Songti SC", serif; font-size: 35rpx; font-weight: 700; letter-spacing: 0; }
-.signal-head { margin-top: 42rpx; }.head-note { color: #7a8794; font-size: 19rpx; }.signal-scroller { width: 100%; white-space: nowrap; }
+.signal-head { align-items: center; margin: 0 0 18rpx; }.head-note { color: #7a8794; font-size: 19rpx; }.signal-scroller { width: 100%; white-space: nowrap; }
 .signal-card { display: inline-flex; width: 568rpx; min-height: 326rpx; flex-direction: column; align-items: flex-start; margin: 0 18rpx 0 0; padding: 38rpx; border: 1rpx solid #e5e0d6; border-radius: 30rpx; background: #fff; text-align: left; vertical-align: top; white-space: normal; box-shadow: 0 15rpx 38rpx rgba(7,24,39,.07); }
 .signal-card.primary { border: 0; background: linear-gradient(145deg,#081c2b,#0d355c); color: #fff; }.signal-card.rise { border-color: rgba(47,140,87,.3); background: #f9fcfa; }.signal-card.cool { border-color: rgba(168,93,93,.22); background: #fffbfa; }
 .signal-eyebrow { color: #a57b32; font-size: 18rpx; font-weight: 700; letter-spacing: 1rpx; }.primary .signal-eyebrow { color: #d9b86e; }.signal-sector { margin-top: 32rpx; color: #071827; font-size: 36rpx; font-weight: 700; }.primary .signal-sector { color: #fff; }

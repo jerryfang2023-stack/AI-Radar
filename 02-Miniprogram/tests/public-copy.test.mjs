@@ -63,7 +63,9 @@ test("uses the confirmed financing column and public-facing copy", () => {
   assert.match(terminalSource, /class="funding-metrics-head"[\s\S]*融资动态全景[\s\S]*全球 · 中国/u);
   assert.match(terminalSource, /<strong class="funding-metrics-value serif">\{\{scopeCardCount\}\}<\/strong><text>融资<\/text>/u);
   assert.match(terminalSource, /class="funding-date"><strong class="funding-metrics-value serif">\{\{meta\.latestDate\}\}<\/strong><text>更新<\/text>/u);
-  assert.match(marketSource, /<app-header title="生态"/u);
+  assert.match(marketSource, /<app-header title="生态图谱"/u);
+  assert.doesNotMatch(marketSource, /数据更新至|本期信号/u);
+  assert.match(marketSource, /class="section-head signal-head"[\s\S]*资本正在流向哪里[\s\S]*class="market-segment"/u);
   assert.match(watchlistSource, /<app-header title="商业观察"/u);
   assert.doesNotMatch(fundingRowSource, /中国区/u);
 
@@ -191,10 +193,10 @@ test("renders the text-only bottom navigation as connected segmented buttons", (
   assert.match(customTabBarSource, /class="tab-button/u);
   assert.match(customTabBarStyles, /grid-template-columns:\s*repeat\(4/u);
   assert.match(customTabBarStyles, /gap:\s*0/u);
-  assert.match(customTabBarStyles, /\.tab-button\.with-divider::before[\s\S]*height:\s*44rpx/u);
+  assert.match(customTabBarStyles, /\.tab-button\.with-divider::before[\s\S]*height:\s*34rpx/u);
   assert.match(customTabBarStyles, /\.tab-button\.active[\s\S]*background:\s*#f4efe4/u);
   assert.match(customTabBarStyles, /\.tab-button\.active::after[\s\S]*background:\s*#c8a766/u);
-  assert.match(customTabBarStyles, /min-height:\s*calc\(96rpx \+ var\(--tab-safe-bottom\)\)/u);
+  assert.match(customTabBarStyles, /min-height:\s*calc\(72rpx \+ var\(--tab-safe-bottom\)\)/u);
   assert.match(customTabBarStyles, /safe-area-inset-bottom\) - 24rpx/u);
   assert.match(customTabBarStyles, /\.tab-bar[\s\S]*padding:\s*0;/u);
   assert.match(customTabBarStyles, /\.tab-button[\s\S]*padding-bottom:\s*var\(--tab-safe-bottom\)/u);
