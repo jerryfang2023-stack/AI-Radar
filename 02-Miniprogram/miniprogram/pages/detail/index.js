@@ -1,6 +1,6 @@
 const { isWatched, toggleWatch, isCompared, toggleCompare } = require("../../utils/storage.js");
 const { recordBrowse } = require("../../utils/member.js");
-const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
+const { getFundingData, refreshFundingData, getFundingDetail } = require("../../utils/live-data.js");
 const { companyEntityKey, investorEntityKey, personEntityKey } = require("../../utils/entity-library.js");
 const { getAccessState, openMembership } = require("../../utils/access.js");
 const { resolveDetailAccess, requestLockedContent } = require("../../utils/metered-access.js");
@@ -34,8 +34,8 @@ Page({
     if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
     const bundledCard = normalizedCard(getFundingData().details[this.cardId]);
     if (bundledCard) this.renderCard(bundledCard);
-    refreshFundingData().then((state) => {
-      const card = normalizedCard(state.details[this.cardId]);
+    refreshFundingData().then(() => getFundingDetail(this.cardId)).then((detail) => {
+      const card = normalizedCard(detail);
       if (card) this.renderCard(card);
       else if (!this.data.card) {
         wx.showToast({ title: "融资记录不存在", icon: "none" });

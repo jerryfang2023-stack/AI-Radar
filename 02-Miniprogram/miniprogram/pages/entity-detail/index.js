@@ -1,4 +1,4 @@
-const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
+const { getFundingData, refreshFundingEntities } = require("../../utils/live-data.js");
 const { buildEntityLibrary, findEntity } = require("../../utils/entity-library.js");
 const { resolveDetailAccess, requestLockedContent } = require("../../utils/metered-access.js");
 
@@ -16,7 +16,7 @@ Page({
     this.setData(resolveDetailAccess(`entity:${this.type || "unknown"}:${this.key || "unknown"}`));
     this.setData({ title: TITLES[this.type] || "主体档案", type: this.type });
     this.applyData(getFundingData());
-    refreshFundingData().then((state) => this.applyData(state));
+    refreshFundingEntities().then((state) => this.applyData(state));
   },
 
   applyData(state) {

@@ -1,5 +1,5 @@
 const { recordBehavior } = require("../../utils/member.js");
-const { getReportData, refreshReportData } = require("../../utils/live-data.js");
+const { getReportData, refreshReportData, getReportDetail } = require("../../utils/live-data.js");
 const { getCommunityEssays } = require("../../utils/community-essays.js");
 const { getAccessState } = require("../../utils/access.js");
 const { resolveDetailAccess, requestLockedContent } = require("../../utils/metered-access.js");
@@ -15,8 +15,8 @@ Page({
     if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
     const bundled = getCommunityEssays().details[this.reportId] || getReportData().details[this.reportId];
     if (bundled) this.render(bundled);
-    refreshReportData().then((state) => {
-      const report = getCommunityEssays().details[this.reportId] || state.details[this.reportId];
+    refreshReportData().then(() => this.isCommunityEssay ? getCommunityEssays().details[this.reportId] : getReportDetail(this.reportId)).then((liveReport) => {
+      const report = getCommunityEssays().details[this.reportId] || liveReport;
       if (report) this.render(report);
       else if (!this.data.report) {
         wx.showToast({ title: "报告不存在", icon: "none" });

@@ -44,7 +44,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Opportunity Map column version | OMAP-V2.0.0-v4-evidence |
 | Trend Radar column version | TRADAR-V1.1.0-tag-v4-1 |
 | Funding Insights column version | FUNDING-INSIGHT-V1.5.0-china-market |
-| WeChat Mini Program version | V0.7.1-ecosystem-header-tabbar-density |
+| WeChat Mini Program version | V0.7.2-live-data-performance |
 | Investment institution projection | INVESTMENT-INSTITUTION-V1.0 |
 | Data Center Raw contract | RAW-V4.0 |
 | Data Center structured source intake | SOURCE-INTAKE-V1.1 |
@@ -206,6 +206,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `miniprogram-v0.7.2` | Mini Program lightweight live index / on-demand details / persistent version cache / compressed public data | 2026-08-17 | 2026-08-17T21:30:00+08:00 | V0.7.2-live-data-performance | startup download of full `funding-portal.json`; eager report-body download; stale or regressed live data replacing bundled fallback; V0.7.1 ecosystem, access, payment, analytics or navigation regressions | Portal projection tests + Mini Program data build + behavioral tests + 18-page project validation + live compressed-endpoint verification + development-build upload |
 | `miniprogram-v0.7.1` | Mini Program ecosystem compact header / market switch placement / compact bottom navigation | 2026-08-17 | 2026-08-17T19:09:31+08:00 | V0.7.1-ecosystem-header-tabbar-density | “生态” page title; ecosystem update date or “本期信号” auxiliary copy; detached global/China switch; 96rpx tab-button body; V0.7.0 metered-access, payment, analytics, funding-card, or navigation regressions | Mini Program data build + behavioral/copy tests + 18-page project validation + development-build upload |
 | `miniprogram-v0.7.0` | Mini Program one-detail visitor sample / second-detail inline registration gate / paid detail access | 2026-08-17 | 2026-08-17T16:13:47+08:00 | V0.7.0-metered-detail-access | automatic registration or phone authorization on page entry; gating the first distinct detail; hiding title, summary, or basic facts on the second detail; V0.6.9 ecosystem, profile, payment, analytics, funding-card, or navigation regressions | Mini Program data build + 62 behavioral/copy tests + 18-page project validation + no-auto-auth gate + development-build upload |
 | `miniprogram-v0.6.9` | Mini Program public browsing / ecosystem signals and sector details / profile collections and follows | 2026-08-17 | 2026-08-17T18:20:00+08:00 | V0.6.9-ecosystem-public-browse | registration overlays on page entry or internal detail navigation; truncated public sector company lists; 收藏或关注入口移出“我的”; V0.6.8 payment, analytics, funding-card or navigation regressions | Mini Program data build + behavioral/copy tests + 18-page project validation + public-browsing gate + development-build upload |

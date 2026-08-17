@@ -1,4 +1,4 @@
-const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
+const { getFundingData, refreshFundingEntities } = require("../../utils/live-data.js");
 const { buildSector } = require("../../utils/ecosystem-insights.js");
 const { getFollowIds, toggleFollow } = require("../../utils/member.js");
 const { getAccessState, openMembership } = require("../../utils/access.js");
@@ -13,7 +13,7 @@ Page({
     this.followId = `sector:${this.marketRegion}:${this.sector}`;
     if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
     this.applyData(getFundingData());
-    refreshFundingData().then((state) => this.applyData(state));
+    refreshFundingEntities().then((state) => this.applyData(state));
   },
   onShow() { this.setData({ following: getFollowIds().includes(this.followId) }); },
   applyData(state) {

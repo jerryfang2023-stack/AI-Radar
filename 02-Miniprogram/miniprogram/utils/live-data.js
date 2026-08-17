@@ -2,8 +2,20 @@ const bundledFundingIndex = require("../data/funding-index.js");
 const bundledFundingDetails = require("../data/funding-details.js");
 const bundledReportIndex = require("../data/report-index.js");
 const bundledReportDetails = require("../data/report-details.js");
+const bundledFundingDetailIds = new Set(Object.keys(bundledFundingDetails));
 
-const API_ROOT = "https://www.zkdlj.vip/data";
+const PUBLIC_ORIGIN = "https://www.zkdlj.vip";
+const API_ROOT = `${PUBLIC_ORIGIN}/data`;
+const LIVE_ROOT = `${API_ROOT}/mini`;
+const CACHE_KEYS = {
+  fundingManifest: "guanlan_live_funding_manifest_v1",
+  fundingIndex: "guanlan_live_funding_index_v1",
+  fundingEntities: "guanlan_live_funding_entities_v1",
+  fundingDetails: "guanlan_live_funding_detail_cache_v1",
+  reportManifest: "guanlan_live_report_manifest_v1",
+  reportIndex: "guanlan_live_report_index_v1",
+  reportDetails: "guanlan_live_report_detail_cache_v1",
+};
 const DAY_MS = 24 * 60 * 60 * 1000;
 const chinaMarkers = [
   "china", "中国", "beijing", "北京", "shanghai", "上海", "shenzhen", "深圳", "hangzhou", "杭州",
@@ -13,7 +25,10 @@ const chinaMarkers = [
 let fundingState = { index: bundledFundingIndex, details: bundledFundingDetails, source: "bundled" };
 let reportState = { index: bundledReportIndex, details: bundledReportDetails, source: "bundled" };
 let fundingRequest = null;
+let fundingEntityRequest = null;
 let reportRequest = null;
+let fundingManifest = null;
+let reportManifest = null;
 
 const text = (value) => String(value == null ? "" : value).trim();
 const list = (value) => (Array.isArray(value) ? value : []);
@@ -306,19 +321,80 @@ function requestJson(url) {
     wx.request({
       url,
       method: "GET",
-      timeout: 30000,
+      timeout: 12000,
       success: (response) => response.statusCode === 200 ? resolve(response.data) : reject(new Error(`HTTP ${response.statusCode}`)),
       fail: reject,
     });
   });
 }
 
+function readStorage(key) {
+  try { return typeof wx !== "undefined" && wx.getStorageSync ? wx.getStorageSync(key) : null; } catch { return null; }
+}
+
+function writeStorage(key, value) {
+  try { if (typeof wx !== "undefined" && wx.setStorageSync) wx.setStorageSync(key, value); } catch { /* cache failure must not block content */ }
+}
+
+function assertFundingManifest(payload) {
+  if (!payload || !text(payload.version) || !/^\d{4}-\d{2}-\d{2}$/.test(text(payload.latestDate))) throw new Error("融资清单无效");
+  if (versionIsOlder(payload.fundingVersion, bundledFundingIndex.meta.fundingVersion)) throw new Error("融资清单版本回退");
+  if (payload.latestDate < bundledFundingIndex.meta.latestDate || Number(payload.cardCount) < bundledFundingIndex.meta.cardCount) throw new Error("融资清单数据回退");
+}
+
+function assertFundingIndex(payload, manifest) {
+  if (!payload?.meta || !Array.isArray(payload.cards) || payload.cards.length !== Number(manifest.cardCount)) throw new Error("融资索引无效");
+  if (payload.meta.latestDate !== manifest.latestDate || payload.meta.fundingVersion !== manifest.fundingVersion) throw new Error("融资索引版本不一致");
+  if (new Set(payload.cards.map((item) => item.id)).size !== payload.cards.length) throw new Error("融资索引存在重复 ID");
+}
+
+function assertReportManifest(payload) {
+  if (!payload || !text(payload.version) || !/^\d{4}-\d{2}-\d{2}$/.test(text(payload.latestDate))) throw new Error("报告清单无效");
+  if (payload.latestDate < bundledReportIndex.meta.latestDate || Number(payload.reportCount) < bundledReportIndex.meta.reportCount) throw new Error("报告清单数据回退");
+}
+
+function assertReportIndex(payload, manifest) {
+  if (!payload?.meta || !Array.isArray(payload.reports) || payload.reports.length !== Number(manifest.reportCount)) throw new Error("报告索引无效");
+  if (payload.meta.latestDate !== manifest.latestDate) throw new Error("报告索引版本不一致");
+}
+
+function mergeFundingIndex(index, details = {}) {
+  const completeDetails = Object.fromEntries(Object.entries(fundingState.details).filter(([id, detail]) => bundledFundingDetailIds.has(id) || detail?.detailComplete));
+  fundingState = { index, details: { ...fundingState.details, ...details, ...completeDetails }, source: "live" };
+  return fundingState;
+}
+
+function readDetailCache(key, version, id) {
+  const cache = readStorage(key);
+  return cache?.version === version ? cache.items?.[id] || null : null;
+}
+
+function writeDetailCache(key, version, id, detail, limit) {
+  const current = readStorage(key);
+  const cache = current?.version === version ? current : { version, order: [], items: {} };
+  cache.order = [id, ...(cache.order || []).filter((item) => item !== id)].slice(0, limit);
+  cache.items = { ...(cache.items || {}), [id]: detail };
+  Object.keys(cache.items).forEach((item) => { if (!cache.order.includes(item)) delete cache.items[item]; });
+  writeStorage(key, cache);
+}
+
 function refreshFundingData() {
   if (fundingRequest) return fundingRequest;
-  fundingRequest = requestJson(`${API_ROOT}/funding-portal.json`).then((payload) => {
-    const projected = projectPortalFundingData(payload);
-    fundingState = { ...projected, source: "live" };
-    return fundingState;
+  fundingRequest = requestJson(`${LIVE_ROOT}/funding-manifest.json?refresh=${Date.now()}`).then((manifest) => {
+    assertFundingManifest(manifest);
+    fundingManifest = manifest;
+    const cachedManifest = readStorage(CACHE_KEYS.fundingManifest);
+    const cachedIndex = readStorage(CACHE_KEYS.fundingIndex);
+    if (cachedManifest?.version === manifest.version && cachedIndex) {
+      assertFundingIndex(cachedIndex, manifest);
+      return mergeFundingIndex(cachedIndex);
+    }
+    return requestJson(`${PUBLIC_ORIGIN}${manifest.indexPath}?v=${encodeURIComponent(manifest.version)}`).then((index) => {
+      assertFundingIndex(index, manifest);
+      writeStorage(CACHE_KEYS.fundingManifest, manifest);
+      writeStorage(CACHE_KEYS.fundingIndex, index);
+      return mergeFundingIndex(index);
+    });
   }).catch(() => fundingState).then((value) => {
     fundingRequest = null;
     return value;
@@ -326,21 +402,110 @@ function refreshFundingData() {
   return fundingRequest;
 }
 
+function refreshFundingEntities() {
+  if (fundingEntityRequest) return fundingEntityRequest;
+  fundingEntityRequest = refreshFundingData().then(() => {
+    if (!fundingManifest?.entityPath) return fundingState;
+    const cached = readStorage(CACHE_KEYS.fundingEntities);
+    if (cached?.version === fundingManifest.version && cached.details) return mergeFundingIndex(fundingState.index, cached.details);
+    return requestJson(`${PUBLIC_ORIGIN}${fundingManifest.entityPath}?v=${encodeURIComponent(fundingManifest.version)}`).then((payload) => {
+      if (payload?.version !== fundingManifest.version || !payload.details) throw new Error("主体索引无效");
+      writeStorage(CACHE_KEYS.fundingEntities, payload);
+      return mergeFundingIndex(fundingState.index, payload.details);
+    });
+  }).catch(() => fundingState).then((value) => {
+    fundingEntityRequest = null;
+    return value;
+  });
+  return fundingEntityRequest;
+}
+
+function getFundingDetail(id) {
+  const fallback = fundingState.details[id] || null;
+  if (!fundingManifest?.detailBasePath) return Promise.resolve(fallback);
+  const cached = readDetailCache(CACHE_KEYS.fundingDetails, fundingManifest.version, id);
+  if (cached) {
+    fundingState.details[id] = cached;
+    return Promise.resolve(cached);
+  }
+  return requestJson(`${PUBLIC_ORIGIN}${fundingManifest.detailBasePath}/${encodeURIComponent(id)}.json?v=${encodeURIComponent(fundingManifest.version)}`).then((detail) => {
+    if (detail?.id !== id || !detail.detailComplete) throw new Error("融资详情无效");
+    fundingState.details[id] = detail;
+    writeDetailCache(CACHE_KEYS.fundingDetails, fundingManifest.version, id, detail, 16);
+    return detail;
+  }).catch(() => fallback);
+}
+
+function getFundingDetails(ids) {
+  return Promise.all(list(ids).map((id) => getFundingDetail(id))).then((details) => details.filter(Boolean));
+}
+
 function refreshReportData() {
   if (reportRequest) return reportRequest;
-  reportRequest = Promise.all([
-    requestJson(`${API_ROOT}/reports.json`),
-    requestJson(`${API_ROOT}/report-bodies.json`),
-  ]).then(([indexPayload, bodiesPayload]) => {
-    const projected = projectPortalReportData(indexPayload, bodiesPayload);
-    reportState = { ...projected, source: "live" };
-    return reportState;
+  reportRequest = requestJson(`${LIVE_ROOT}/report-manifest.json?refresh=${Date.now()}`).then((manifest) => {
+    assertReportManifest(manifest);
+    reportManifest = manifest;
+    const cachedManifest = readStorage(CACHE_KEYS.reportManifest);
+    const cachedIndex = readStorage(CACHE_KEYS.reportIndex);
+    if (cachedManifest?.version === manifest.version && cachedIndex) {
+      assertReportIndex(cachedIndex, manifest);
+      reportState = { index: cachedIndex, details: reportState.details, source: "live" };
+      return reportState;
+    }
+    return requestJson(`${PUBLIC_ORIGIN}${manifest.indexPath}?v=${encodeURIComponent(manifest.version)}`).then((index) => {
+      assertReportIndex(index, manifest);
+      writeStorage(CACHE_KEYS.reportManifest, manifest);
+      writeStorage(CACHE_KEYS.reportIndex, index);
+      reportState = { index, details: reportState.details, source: "live" };
+      return reportState;
+    });
   }).catch(() => reportState).then((value) => {
     reportRequest = null;
     return value;
   });
   return reportRequest;
 }
+
+function getReportDetail(id) {
+  const fallback = reportState.details[id] || null;
+  if (!reportManifest?.detailBasePath) return Promise.resolve(fallback);
+  const cached = readDetailCache(CACHE_KEYS.reportDetails, reportManifest.version, id);
+  if (cached) {
+    reportState.details[id] = cached;
+    return Promise.resolve(cached);
+  }
+  return requestJson(`${PUBLIC_ORIGIN}${reportManifest.detailBasePath}/${encodeURIComponent(id)}.json?v=${encodeURIComponent(reportManifest.version)}`).then((detail) => {
+    if (detail?.id !== id || !detail.detailComplete) throw new Error("报告详情无效");
+    reportState.details[id] = detail;
+    writeDetailCache(CACHE_KEYS.reportDetails, reportManifest.version, id, detail, 8);
+    return detail;
+  }).catch(() => fallback);
+}
+
+function hydrateStoredIndexes() {
+  try {
+    const storedFundingManifest = readStorage(CACHE_KEYS.fundingManifest);
+    const storedFundingIndex = readStorage(CACHE_KEYS.fundingIndex);
+    if (storedFundingManifest && storedFundingIndex) {
+      assertFundingManifest(storedFundingManifest);
+      assertFundingIndex(storedFundingIndex, storedFundingManifest);
+      fundingManifest = storedFundingManifest;
+      fundingState = { index: storedFundingIndex, details: bundledFundingDetails, source: "cache" };
+    }
+  } catch { /* retain bundled funding data */ }
+  try {
+    const storedReportManifest = readStorage(CACHE_KEYS.reportManifest);
+    const storedReportIndex = readStorage(CACHE_KEYS.reportIndex);
+    if (storedReportManifest && storedReportIndex) {
+      assertReportManifest(storedReportManifest);
+      assertReportIndex(storedReportIndex, storedReportManifest);
+      reportManifest = storedReportManifest;
+      reportState = { index: storedReportIndex, details: bundledReportDetails, source: "cache" };
+    }
+  } catch { /* retain bundled report data */ }
+}
+
+hydrateStoredIndexes();
 
 function getFundingData() { return fundingState; }
 function getReportData() { return reportState; }
@@ -350,7 +515,11 @@ module.exports = {
   getFundingData,
   getReportData,
   refreshFundingData,
+  refreshFundingEntities,
+  getFundingDetail,
+  getFundingDetails,
   refreshReportData,
+  getReportDetail,
   projectPortalFundingData,
   projectPortalReportData,
   parseBlocks,

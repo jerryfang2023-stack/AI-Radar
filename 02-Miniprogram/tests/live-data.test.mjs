@@ -3,7 +3,7 @@ import { createRequire } from "node:module";
 import test from "node:test";
 
 const require = createRequire(import.meta.url);
-const { projectPortalFundingData, projectPortalReportData } = require("../miniprogram/utils/live-data.js");
+const { projectPortalFundingData, projectPortalReportData, refreshFundingData, getFundingDetail } = require("../miniprogram/utils/live-data.js");
 const fallbackFunding = require("../miniprogram/data/funding-index.js");
 const fixtureDate = fallbackFunding.meta.latestDate;
 
@@ -78,4 +78,42 @@ test("projects live report index and Markdown body", () => {
   assert.equal(result.index.reports[0].id, "weekly-2026-08-17");
   assert.equal(result.details["weekly-2026-08-17"].blocks[0].type, "heading");
   assert.equal(result.index.reports[0].counts.signals, 10);
+});
+
+test("refreshes the lightweight index and loads one funding detail on demand", async () => {
+  const storage = new Map();
+  const requests = [];
+  const id = fallbackFunding.cards[0].id;
+  global.wx = {
+    getStorageSync: (key) => storage.get(key),
+    setStorageSync: (key, value) => storage.set(key, value),
+    request: ({ url, success }) => {
+      requests.push(url);
+      if (url.includes("funding-manifest.json")) {
+        success({ statusCode: 200, data: {
+          version: `test:${fixtureDate}:${fallbackFunding.meta.cardCount}`,
+          latestDate: fixtureDate,
+          fundingVersion: fallbackFunding.meta.fundingVersion,
+          cardCount: fallbackFunding.meta.cardCount,
+          indexPath: "/data/mini/funding-index.json",
+          detailBasePath: "/data/mini/funding-details",
+        } });
+      } else if (url.includes("funding-index.json")) {
+        success({ statusCode: 200, data: fallbackFunding });
+      } else {
+        success({ statusCode: 200, data: { ...fallbackFunding.cards[0], detailComplete: true } });
+      }
+    },
+  };
+  try {
+    const state = await refreshFundingData();
+    const detail = await getFundingDetail(id);
+    assert.equal(state.index.meta.cardCount, fallbackFunding.meta.cardCount);
+    assert.equal(detail.id, id);
+    assert.ok(requests.some((url) => url.includes("/data/mini/funding-index.json")));
+    assert.ok(requests.some((url) => url.includes(`/data/mini/funding-details/${id}.json`)));
+    assert.ok(requests.every((url) => !url.includes("funding-portal.json")));
+  } finally {
+    delete global.wx;
+  }
 });

@@ -84,7 +84,8 @@ if (fundingIndex.meta.chinaMarketCardCount !== chinaMarketCards.length) failures
 if (fundingIndex.cards.some((card) => !["china", "global"].includes(card.marketRegion))) failures.push("funding marketRegion missing or invalid");
 if (Object.keys(fundingDetails).length > 24) failures.push("bundled funding detail fallback exceeds 24 records");
 const liveData = fs.readFileSync(path.join(mini, "utils", "live-data.js"), "utf8");
-if (!liveData.includes("https://www.zkdlj.vip/data")) failures.push("live funding/report data endpoint missing");
+if (!liveData.includes("https://www.zkdlj.vip") || !liveData.includes("/mini")) failures.push("live funding/report data endpoint missing");
+if (liveData.includes("requestJson(`${API_ROOT}/funding-portal.json`)")) failures.push("live funding refresh must not download the full portal payload");
 
 if (failures.length) {
   console.error(failures.join("\n"));

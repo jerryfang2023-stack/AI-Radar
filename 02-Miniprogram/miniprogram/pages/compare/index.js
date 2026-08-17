@@ -1,4 +1,4 @@
-const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
+const { getFundingData, refreshFundingData, getFundingDetails } = require("../../utils/live-data.js");
 const { removeCompare } = require("../../utils/storage.js");
 
 function compareText(cards) {
@@ -19,7 +19,7 @@ Page({
   onLoad(options) {
     this.ids = decodeURIComponent(options.ids || "").split(",").filter(Boolean).slice(0, 3);
     this.render(getFundingData().details);
-    refreshFundingData().then((state) => this.render(state.details));
+    refreshFundingData().then(() => getFundingDetails(this.ids)).then((cards) => this.setData({ cards }));
   },
   render(details) { this.setData({ cards: this.ids.map((id) => details[id]).filter(Boolean) }); },
   copyComparison() {
