@@ -7,6 +7,7 @@ const terminalSource = fs.readFileSync("miniprogram/pages/terminal/index.wxml", 
 const marketSource = fs.readFileSync("miniprogram/pages/market/index.wxml", "utf8");
 const marketLogic = fs.readFileSync("miniprogram/pages/market/index.js", "utf8");
 const watchlistSource = fs.readFileSync("miniprogram/pages/watchlist/index.wxml", "utf8");
+const watchlistLogic = fs.readFileSync("miniprogram/pages/watchlist/index.js", "utf8");
 const headerSource = fs.readFileSync("miniprogram/components/app-header/index.wxml", "utf8");
 const headerStyles = fs.readFileSync("miniprogram/components/app-header/index.wxss", "utf8");
 const membershipSource = fs.readFileSync("miniprogram/pages/membership/index.wxml", "utf8");
@@ -26,6 +27,7 @@ const compareSource = fs.readFileSync("miniprogram/pages/compare/index.wxml", "u
 const compareLogic = fs.readFileSync("miniprogram/pages/compare/index.js", "utf8");
 const detailSource = fs.readFileSync("miniprogram/pages/detail/index.wxml", "utf8");
 const detailLogic = fs.readFileSync("miniprogram/pages/detail/index.js", "utf8");
+const entityDetailSource = fs.readFileSync("miniprogram/pages/entity-detail/index.wxml", "utf8");
 const entityDetailLogic = fs.readFileSync("miniprogram/pages/entity-detail/index.js", "utf8");
 const reportDetailSource = fs.readFileSync("miniprogram/pages/report-detail/index.wxml", "utf8");
 const reportDetailLogic = fs.readFileSync("miniprogram/pages/report-detail/index.js", "utf8");
@@ -95,6 +97,25 @@ test("requires phone, avatar and nickname before the server starts a seven-day t
   assert.match(paymentSource, /function hasAuthToken/u);
   assert.match(paymentSource, /fetchMembership\(\)[\s\S]*withExistingToken/u);
   assert.doesNotMatch(registrationSource, /自动获得|首次打开即/u);
+});
+
+test("keeps shared details readable before registration and protects onward paid navigation", () => {
+  assert.doesNotMatch(terminalLogic, /registrationTimer|setTimeout\(\(\) => \{[\s\S]*registrationOpen/u);
+  assert.match(terminalLogic, /openCard\(event\)[\s\S]*getAccessState\(\)/u);
+  assert.match(marketLogic, /openEntity\(event\)[\s\S]*getAccessState\(\)/u);
+  assert.match(watchlistLogic, /openReport\(event\)[\s\S]*getAccessState\(\)/u);
+
+  for (const logic of [detailLogic, entityDetailLogic, reportDetailLogic]) {
+    assert.match(logic, /sharedEntry = options\.from === "share"/u);
+    assert.match(logic, /if \(!sharedEntry/u);
+  }
+  assert.match(detailSource, /show-back="\{\{!sharedEntry\}\}"/u);
+  assert.match(entityDetailSource, /show-back="\{\{!sharedEntry\}\}"/u);
+  assert.match(detailLogic, /openProtectedUrl/u);
+  assert.match(entityDetailLogic, /openProtectedUrl/u);
+  assert.match(reportDetailLogic, /switchSection\(event\)[\s\S]*getAccessState\(\)/u);
+  assert.match(registrationSource, /当前分享详情可直接阅读/u);
+  assert.match(registrationSource, /暂不注册，返回当前内容/u);
 });
 
 test("lets verified community members sync without repeating profile registration", () => {
@@ -188,7 +209,7 @@ test("company comparison can cancel selections in place", () => {
 
 test("collection is a detail action and favorite task opens saved items", () => {
   assert.doesNotMatch(terminalSource, /收藏/u);
-  assert.match(detailSource, /<app-header title="融资详情" show-back \/>/u);
+  assert.match(detailSource, /<app-header title="融资详情" show-back="\{\{!sharedEntry\}\}" \/>/u);
   assert.match(detailSource, /class="detail-actions"/u);
   assert.match(detailSource, /收藏情报/u);
   assert.match(profileLogic, /id === "favorite"[\s\S]*pages\/saved\/index/u);

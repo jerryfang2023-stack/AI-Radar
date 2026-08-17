@@ -2,8 +2,8 @@
   <view class="registration-sheet" catchtap="noop">
     <block wx:if="{{!registered}}">
       <view class="registration-kicker">新用户专享</view>
-      <view class="registration-title serif">开启 7 天完整体验</view>
-      <view class="registration-copy">注册后即可浏览融资、生态与观察栏目的完整内容</view>
+      <view class="registration-title serif">注册并开启 7 天完整体验</view>
+      <view class="registration-copy">当前分享详情可直接阅读，注册后可继续浏览其他栏目与个人权益</view>
 
       <view class="registration-benefits">
         <view><text>01</text><text>融资情报完整浏览</text></view>
@@ -28,7 +28,7 @@
       </view>
 
       <button class="registration-primary" disabled="{{!canSubmit || registering}}" loading="{{registering}}" open-type="getPhoneNumber" bindgetphonenumber="registerWithPhone">授权手机号并开启体验</button>
-      <button class="registration-secondary" bindtap="close">{{required ? '返回公开摘要' : '先浏览公开摘要'}}</button>
+      <button class="registration-secondary" bindtap="close">暂不注册，返回当前内容</button>
       <view class="registration-price">体验结束后可选择 30 元/月、168 元/半年或 300 元/年，不自动续费</view>
     </block>
 

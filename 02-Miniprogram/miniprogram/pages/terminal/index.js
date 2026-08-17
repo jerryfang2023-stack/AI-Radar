@@ -54,16 +54,6 @@ Page({
       this.refreshCards(true);
     });
     refreshFundingData().then((state) => this.applyFundingData(state.index));
-    const app = getApp();
-    if (getAccessState() === "unregistered" && !app.globalData.registrationPromptDismissed) {
-      this.registrationTimer = setTimeout(() => {
-        this.setData({ registrationOpen: true, registrationRequired: false });
-      }, 450);
-    }
-  },
-
-  onUnload() {
-    clearTimeout(this.registrationTimer);
   },
 
   onShow() {
@@ -182,7 +172,6 @@ Page({
   },
 
   closeRegistration() {
-    getApp().globalData.registrationPromptDismissed = true;
     this.pendingCardId = "";
     this.setData({ registrationOpen: false, registrationRequired: false });
   },

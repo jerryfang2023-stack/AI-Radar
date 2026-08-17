@@ -23,13 +23,20 @@ function normalizedCard(card) {
 }
 
 Page({
-  data: { card: null, watched: false, compared: false, registrationOpen: false },
+  data: { card: null, watched: false, compared: false, sharedEntry: false, registrationOpen: false },
 
   onLoad(options) {
     this.cardId = options.id;
-    const accessState = getAccessState();
-    if (accessState === "unregistered") this.setData({ registrationOpen: true });
-    if (accessState === "expired") setTimeout(() => openMembership(), 0);
+    const sharedEntry = options.from === "share";
+    this.setData({ sharedEntry });
+    if (!sharedEntry) {
+      const accessState = getAccessState();
+      if (accessState === "unregistered") {
+        this.entryGate = true;
+        this.setData({ registrationOpen: true });
+      }
+      if (accessState === "expired") setTimeout(() => openMembership(), 0);
+    }
     if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
     const bundledCard = normalizedCard(getFundingData().details[this.cardId]);
     if (bundledCard) this.renderCard(bundledCard);
@@ -56,13 +63,26 @@ Page({
   },
 
   closeRegistration() {
+    this.pendingAction = "";
+    this.pendingUrl = "";
     this.setData({ registrationOpen: false });
-    wx.switchTab({ url: "/pages/terminal/index" });
+    if (!this.entryGate) return;
+    this.entryGate = false;
+    if (getCurrentPages().length > 1) wx.navigateBack();
+    else wx.switchTab({ url: "/pages/terminal/index" });
   },
 
   continueAfterRegistration() {
+    const action = this.pendingAction;
+    const url = this.pendingUrl;
+    this.entryGate = false;
+    this.pendingAction = "";
+    this.pendingUrl = "";
     this.setData({ registrationOpen: false });
     this.recordView(this.data.card);
+    if (action === "watch") this.applyWatch();
+    if (action === "compare") this.applyCompare();
+    if (url) wx.navigateTo({ url });
   },
 
   onShow() {
@@ -70,12 +90,22 @@ Page({
   },
 
   toggleWatch() {
+    if (this.requireEntitlement("watch")) return;
+    this.applyWatch();
+  },
+
+  applyWatch() {
     toggleWatch(this.data.card.id);
     this.setData({ watched: isWatched(this.data.card.id) });
     wx.showToast({ title: this.data.watched ? "已加入观察" : "已取消收藏", icon: "none" });
   },
 
   toggleCompare() {
+    if (this.requireEntitlement("compare")) return;
+    this.applyCompare();
+  },
+
+  applyCompare() {
     const result = toggleCompare(this.data.card.id);
     if (result.full) {
       wx.showToast({ title: "最多比较 3 家公司", icon: "none" });
@@ -83,6 +113,32 @@ Page({
     }
     this.setData({ compared: result.selected });
     wx.showToast({ title: result.selected ? "已加入比较" : "已移出比较", icon: "none" });
+  },
+
+  requireEntitlement(action) {
+    const accessState = getAccessState();
+    if (accessState === "active") return false;
+    if (accessState === "expired") {
+      openMembership();
+      return true;
+    }
+    this.pendingAction = action;
+    this.setData({ registrationOpen: true });
+    return true;
+  },
+
+  openProtectedUrl(url) {
+    const accessState = getAccessState();
+    if (accessState === "active") {
+      wx.navigateTo({ url });
+      return;
+    }
+    if (accessState === "expired") {
+      openMembership();
+      return;
+    }
+    this.pendingUrl = url;
+    this.setData({ registrationOpen: true });
   },
 
   copySource(event) {
@@ -93,18 +149,18 @@ Page({
 
   openCompany() {
     const key = companyEntityKey(this.data.card.company);
-    if (key) wx.navigateTo({ url: `/pages/entity-detail/index?type=companies&key=${encodeURIComponent(key)}` });
+    if (key) this.openProtectedUrl(`/pages/entity-detail/index?type=companies&key=${encodeURIComponent(key)}`);
   },
 
   openInvestor(event) {
     const key = investorEntityKey(event.currentTarget.dataset.name);
-    if (key) wx.navigateTo({ url: `/pages/entity-detail/index?type=investors&key=${encodeURIComponent(key)}` });
+    if (key) this.openProtectedUrl(`/pages/entity-detail/index?type=investors&key=${encodeURIComponent(key)}`);
   },
 
   openPerson(event) {
     const founder = { id: event.currentTarget.dataset.id || "", name: event.currentTarget.dataset.name || "" };
     const key = personEntityKey(founder, this.data.card.company);
-    if (key) wx.navigateTo({ url: `/pages/entity-detail/index?type=people&key=${encodeURIComponent(key)}` });
+    if (key) this.openProtectedUrl(`/pages/entity-detail/index?type=people&key=${encodeURIComponent(key)}`);
   },
 
   onShareAppMessage() {

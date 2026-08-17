@@ -1,5 +1,5 @@
 <view class="page-shell" wx:if="{{card}}">
-  <app-header title="融资详情" show-back />
+  <app-header title="融资详情" show-back="{{!sharedEntry}}" />
   <view class="detail-content">
     <button class="identity entity-link" bindtap="openCompany">
       <view class="avatar">{{card.initial}}</view>

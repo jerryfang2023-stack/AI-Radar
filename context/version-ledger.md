@@ -1,7 +1,7 @@
 ---
 status: current
 scope: version-ledger
-last_updated: 2026-08-16
+last_updated: 2026-08-17
 use_when:
   - task startup
   - page change
@@ -44,7 +44,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Opportunity Map column version | OMAP-V2.0.0-v4-evidence |
 | Trend Radar column version | TRADAR-V1.1.0-tag-v4-1 |
 | Funding Insights column version | FUNDING-INSIGHT-V1.5.0-china-market |
-| WeChat Mini Program version | V0.6.6-ios-virtual-payment-review |
+| WeChat Mini Program version | V0.6.8-shared-detail-review |
 | Investment institution projection | INVESTMENT-INSTITUTION-V1.0 |
 | Data Center Raw contract | RAW-V4.0 |
 | Data Center structured source intake | SOURCE-INTAKE-V1.1 |
@@ -206,6 +206,8 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `miniprogram-v0.6.8` | Shared Mini Program financing / ecosystem / observation detail reading and user-initiated registration boundary | 2026-08-17 | 2026-08-17T11:14:00+08:00 | V0.6.8-shared-detail-review | registration overlays before a shared detail is readable; free navigation from a shared detail into paid columns or personal actions; automatic registration prompt on app launch; V0.6.6 virtual-payment regressions | Mini Program data build + behavioral/copy tests + 17-page project validation + shared-entry access-boundary gate + development-build upload |
+| `miniprogram-v0.6.7` | Superseded public-detail development upload (not submitted for review) | 2026-08-17 | 2026-08-17T11:00:00+08:00 | V0.6.7-public-detail-review | treating the superseded broad public-access draft as the current paid-service boundary | Superseded by V0.6.8 before review submission |
 | `miniprogram-v0.6.6` | Official Mini Program virtual payment / production virtual products / iOS refund inquiry | 2026-08-16 | 2026-08-16T19:22:29+08:00 | V0.6.6-ios-virtual-payment-review | `wx.requestPayment`; sandbox payments in review builds; unpublished membership products; client-confirmed entitlements; missing iOS refund inquiry response; V0.6.5 analytics or UI regressions | Mini Program data build + behavioral/copy tests + 17-page project validation + Payment Service tests + production product publication check + development-build upload |
 | `application-analytics-v1.0.0` | Data Center Application Center operations dashboard / Mini Program and PC anonymous monitoring / registration, payment and refund truth | 2026-08-16 | 2026-08-16T16:28:59+08:00 | APP-ANALYTICS-V1.0 | plaintext identity collection; client-confirmed revenue; public dashboard access; persistent browser admin token; page, registration, payment or refund metrics without a defined source of truth | 33 Payment Service tests + 71 Data Center site core tests + desktop/mobile visual QA + privacy field gate + production API smoke |
 | `miniprogram-v0.6.5` | Mini Program anonymous usage monitoring / search and content analytics / current financing fallback data | 2026-08-16 | 2026-08-16T16:28:59+08:00 | V0.6.5-application-analytics | direct phone, WeChat, OpenID or UnionID collection; UI regressions; client-only registration or payment success; V0.6.4 financing layout regressions | Mini Program data build + 57 behavioral/copy tests + 17-page project validation + Payment Service regression + development-build upload |
