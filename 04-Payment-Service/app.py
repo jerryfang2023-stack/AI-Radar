@@ -51,6 +51,18 @@ def iso(value):
     return value.astimezone(timezone.utc).isoformat(timespec="seconds")
 
 
+def ensure_column(conn, table, name, definition):
+    columns = {row[1] for row in conn.execute(f"PRAGMA table_info({table})").fetchall()}
+    if name in columns:
+        return
+    try:
+        conn.execute(f"ALTER TABLE {table} ADD COLUMN {name} {definition}")
+    except sqlite3.OperationalError:
+        columns = {row[1] for row in conn.execute(f"PRAGMA table_info({table})").fetchall()}
+        if name not in columns:
+            raise
+
+
 def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, community_client=None):
     app = Flask(__name__)
     app.config.from_mapping(
@@ -229,7 +241,6 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                 CREATE INDEX IF NOT EXISTS idx_analytics_events_session
                     ON analytics_events(session_id, occurred_at);
             """)
-            user_columns = {row[1] for row in conn.execute("PRAGMA table_info(users)").fetchall()}
             for name, definition in {
                 "invite_code": "TEXT",
                 "phone_hash": "TEXT",
@@ -247,12 +258,10 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                 "merged_into_user_id": "INTEGER",
                 "merged_at": "TEXT",
             }.items():
-                if name not in user_columns:
-                    conn.execute(f"ALTER TABLE users ADD COLUMN {name} {definition}")
+                ensure_column(conn, "users", name, definition)
             conn.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_users_invite_code ON users(invite_code)")
             conn.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_users_phone_hash ON users(phone_hash)")
             conn.execute("CREATE INDEX IF NOT EXISTS idx_users_community_member ON users(community_member_id)")
-            payment_columns = {row[1] for row in conn.execute("PRAGMA table_info(payment_orders)").fetchall()}
             for name, definition in {
                 "payment_mode": "TEXT NOT NULL DEFAULT 'wechat_jsapi'",
                 "product_id": "TEXT",
@@ -263,8 +272,7 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                 "refund_no": "TEXT",
                 "refunded_at": "TEXT",
             }.items():
-                if name not in payment_columns:
-                    conn.execute(f"ALTER TABLE payment_orders ADD COLUMN {name} {definition}")
+                ensure_column(conn, "payment_orders", name, definition)
             conn.execute(
                 "CREATE UNIQUE INDEX IF NOT EXISTS idx_payment_orders_user_idempotency "
                 "ON payment_orders(user_id, idempotency_key) WHERE idempotency_key IS NOT NULL"

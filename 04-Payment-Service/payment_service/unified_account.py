@@ -4,6 +4,7 @@ import base64
 import io
 import json
 import secrets
+import sqlite3
 import urllib.error
 import urllib.request
 from contextlib import closing
@@ -209,16 +210,22 @@ def init_schema(conn):
             FOREIGN KEY(user_id) REFERENCES users(id)
         );
     """)
-    challenge_columns = {row[1] for row in conn.execute("PRAGMA table_info(verification_challenges)").fetchall()}
-    if "purpose" not in challenge_columns:
-        conn.execute("ALTER TABLE verification_challenges ADD COLUMN purpose TEXT NOT NULL DEFAULT 'login'")
-    if "request_user_id" not in challenge_columns:
-        conn.execute("ALTER TABLE verification_challenges ADD COLUMN request_user_id INTEGER")
-    qr_columns = {row[1] for row in conn.execute("PRAGMA table_info(qr_login_sessions)").fetchall()}
-    if "source_user_id" not in qr_columns:
-        conn.execute("ALTER TABLE qr_login_sessions ADD COLUMN source_user_id INTEGER")
-    if "purpose" not in qr_columns:
-        conn.execute("ALTER TABLE qr_login_sessions ADD COLUMN purpose TEXT NOT NULL DEFAULT 'login'")
+    ensure_column(conn, "verification_challenges", "purpose", "TEXT NOT NULL DEFAULT 'login'")
+    ensure_column(conn, "verification_challenges", "request_user_id", "INTEGER")
+    ensure_column(conn, "qr_login_sessions", "source_user_id", "INTEGER")
+    ensure_column(conn, "qr_login_sessions", "purpose", "TEXT NOT NULL DEFAULT 'login'")
+
+
+def ensure_column(conn, table, name, definition):
+    columns = {row[1] for row in conn.execute(f"PRAGMA table_info({table})").fetchall()}
+    if name in columns:
+        return
+    try:
+        conn.execute(f"ALTER TABLE {table} ADD COLUMN {name} {definition}")
+    except sqlite3.OperationalError:
+        columns = {row[1] for row in conn.execute(f"PRAGMA table_info({table})").fetchall()}
+        if name not in columns:
+            raise
 
 
 def sync_legacy_identities(conn, user, secret):

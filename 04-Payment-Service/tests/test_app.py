@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta, timezone
+from concurrent.futures import ThreadPoolExecutor
 import json
 from pathlib import Path
 import sqlite3
@@ -60,6 +61,31 @@ class FakePayClient:
 
     def parse_notification(self, headers, body):
         return self.notification
+
+
+def test_schema_initialization_is_safe_across_concurrent_workers(tmp_path):
+    database = tmp_path / "concurrent.db"
+
+    def initialize(_):
+        app = create_app(
+            {
+                "TESTING": True,
+                "APP_ENV": "test",
+                "SECRET_KEY": "concurrent-schema-test",
+                "DATABASE_PATH": str(database),
+            },
+            pay_client=FakePayClient(),
+            virtual_pay_client=FakeVirtualPayClient(),
+            community_client=FakeCommunityClient(),
+        )
+        return app.name
+
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        assert len(list(pool.map(initialize, range(4)))) == 4
+
+    with sqlite3.connect(database) as conn:
+        payment_columns = {row[1] for row in conn.execute("PRAGMA table_info(payment_orders)")}
+        assert {"idempotency_key", "code_url"}.issubset(payment_columns)
 
 
 class FakeCommunityClient:
