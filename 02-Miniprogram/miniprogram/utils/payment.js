@@ -33,16 +33,20 @@ function apiRequest(path, options = {}) {
 
 function wxLogin() {
   return new Promise((resolve, reject) => {
+    const rejectLogin = () => {
+      const error = new Error("微信登录失败，请重试");
+      error.code = "WECHAT_LOGIN_ERROR";
+      reject(error);
+    };
     wx.login({
       timeout: 15000,
-      success: (result) => result.code ? resolve(result.code) : reject(new Error("微信登录失败，请重试")),
-      fail: () => reject(new Error("微信登录失败，请重试")),
+      success: (result) => result.code ? resolve(result.code) : rejectLogin(),
+      fail: rejectLogin,
     });
   });
 }
 
 async function login(options = {}) {
-  if (!hasAuthToken()) analytics.track("registration_started", { hasPhoneCode: Boolean(options.phoneCode) });
   const code = await wxLogin();
   const result = await apiRequest("/auth/wechat", {
     method: "POST",
@@ -56,7 +60,6 @@ async function login(options = {}) {
   });
   if (!result.token) throw new Error("登录状态获取失败，请重试");
   wx.setStorageSync(TOKEN_KEY, result.token);
-  if (result.isNewUser) analytics.track("registration_client_confirmed", { communityLinked: result.community?.status === "joined" });
   analytics.flush();
   return result;
 }

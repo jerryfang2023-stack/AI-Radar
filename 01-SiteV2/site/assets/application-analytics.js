@@ -60,6 +60,10 @@
     const funnel = data.funnel || [];
     const base = Math.max(1, funnel[0]?.count || 0);
     $("[data-funnel]").innerHTML = funnel.map((item) => `<div class="aa-funnel-row"><span>${escapeHtml(item.label)}</span><div class="aa-funnel-bar"><i style="width:${Math.max(0, Math.min(100, item.count / base * 100))}%"></i></div><small>${number(item.count)}</small></div>`).join("") || '<p class="aa-empty">当前周期暂无漏斗数据。</p>';
+    const failures = data.registrationFailures || [];
+    $("[data-registration-failures]").innerHTML = failures.length
+      ? `<h3>失败原因</h3>${failures.map((item) => `<div><span>${escapeHtml(item.label)}</span><small>${number(item.count)} 次 · ${number(item.visitors)} 人</small></div>`).join("")}`
+      : '<p class="aa-empty compact">当前周期无注册失败。</p>';
   }
   function renderTable(selector, rows, content = false) {
     $(selector).innerHTML = rows.length ? rows.map((item) => `<div class="aa-table-row"><strong title="${escapeHtml(content ? item.title : item.page)}">${escapeHtml(content ? item.title : item.page)}</strong><span>${number(item.views)} 次</span><span>${number(item.visitors)} 人</span></div>`).join("") : '<p class="aa-empty">当前周期暂无数据，监测接入后会自动更新。</p>';

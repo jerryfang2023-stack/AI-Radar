@@ -37,6 +37,7 @@ const headerLogic = fs.readFileSync("miniprogram/components/app-header/index.js"
 const memberModelSource = fs.readFileSync("miniprogram/utils/member.js", "utf8");
 const memberSource = fs.readFileSync("miniprogram/utils/member.js", "utf8");
 const paymentSource = fs.readFileSync("miniprogram/utils/payment.js", "utf8");
+const analyticsSource = fs.readFileSync("miniprogram/utils/analytics.js", "utf8");
 const registrationSource = fs.readFileSync("miniprogram/components/registration-sheet/index.wxml", "utf8");
 const registrationLogic = fs.readFileSync("miniprogram/components/registration-sheet/index.js", "utf8");
 const terminalLogic = fs.readFileSync("miniprogram/pages/terminal/index.js", "utf8");
@@ -101,6 +102,16 @@ test("requires phone, avatar and nickname before the server starts a seven-day t
   assert.match(paymentSource, /function hasAuthToken/u);
   assert.match(paymentSource, /fetchMembership\(\)[\s\S]*withExistingToken/u);
   assert.doesNotMatch(registrationSource, /自动获得|首次打开即/u);
+});
+
+test("records the explicit registration funnel instead of silent account authentication", () => {
+  for (const event of ["registration_prompt_opened", "registration_phone_submitted", "registration_failed"]) {
+    assert.match(registrationLogic, new RegExp(event, "u"));
+  }
+  assert.match(registrationLogic, /phone_authorization_cancelled/u);
+  assert.match(registrationLogic, /registrationFailureReason/u);
+  assert.doesNotMatch(paymentSource, /registration_started|registration_client_confirmed/u);
+  assert.match(analyticsSource, /const APP_VERSION = "0\.8\.2"/u);
 });
 
 test("keeps lists public and gates only the second distinct detail behind a voluntary action", () => {

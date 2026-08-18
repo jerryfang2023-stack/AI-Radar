@@ -76,6 +76,11 @@ body { background: var(--aa-page); color: var(--aa-ink); font-family: var(--aa-s
 .aa-funnel-row small { color: var(--aa-muted); text-align: right; font-family: var(--aa-mono); }
 .aa-funnel-bar { height: 24px; border-radius: 5px; background: #f7f4ef; overflow: hidden; }
 .aa-funnel-bar i { display: block; height: 100%; min-width: 2px; background: linear-gradient(90deg, var(--aa-blue), #315979); }
+.aa-failure-reasons { display: grid; gap: 8px; margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--aa-line); }
+.aa-failure-reasons h3 { margin: 0 0 2px; font-size: 13px; line-height: 20px; }
+.aa-failure-reasons div { display: flex; justify-content: space-between; gap: 12px; color: var(--aa-muted); font-size: 12px; line-height: 18px; }
+.aa-failure-reasons small { font-family: var(--aa-mono); white-space: nowrap; }
+.aa-empty.compact { padding: 0; }
 .aa-table { display: grid; }
 .aa-table-row { display: grid; grid-template-columns: minmax(0, 1fr) 62px 62px; gap: 12px; align-items: center; min-height: 48px; border-top: 1px solid var(--aa-line); }
 .aa-table-row:first-child { border-top: 0; }

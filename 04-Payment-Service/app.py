@@ -41,6 +41,16 @@ POINT_TASKS = {
 ANALYTICS_PLATFORMS = {"miniprogram", "pc"}
 ANALYTICS_EVENT_RE = re.compile(r"^[a-z][a-z0-9_]{1,63}$")
 ANALYTICS_ID_RE = re.compile(r"^[A-Za-z0-9._:-]{8,128}$")
+REGISTRATION_FAILURE_LABELS = {
+    "phone_authorization_cancelled": "未授权手机号",
+    "profile_incomplete": "资料未完成",
+    "phone_already_bound": "手机号已绑定其他账号",
+    "invalid_phone": "手机号无效",
+    "network_error": "网络连接失败",
+    "wechat_login_error": "微信登录失败",
+    "service_error": "服务暂时不可用",
+    "unknown": "其他原因",
+}
 
 
 def utcnow():
@@ -817,6 +827,8 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         page_counts = {}
         page_visitors = {}
         event_counts = {}
+        registration_failures = {}
+        registration_failure_visitors = {}
         content_counts = {}
         content_visitors = {}
         platform_counts = {"miniprogram": set(), "pc": set()}
@@ -831,6 +843,12 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
             visitors.add(visitor_id)
             platform_counts.setdefault(row["platform"], set()).add(visitor_id)
             event_counts[event_name] = event_counts.get(event_name, 0) + 1
+            if event_name == "registration_failed":
+                reason = str(properties.get("reason") or "unknown")
+                if reason not in REGISTRATION_FAILURE_LABELS:
+                    reason = "unknown"
+                registration_failures[reason] = registration_failures.get(reason, 0) + 1
+                registration_failure_visitors.setdefault(reason, set()).add(visitor_id)
             session = sessions.setdefault(session_id, {"first": occurred, "last": occurred, "pageViews": 0})
             session["first"] = min(session["first"], occurred)
             session["last"] = max(session["last"], occurred)
@@ -919,11 +937,19 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                 "activeVisitors30m": len(live_visitors),
             },
             funnel=[
-                {"key": "visit", "label": "访问", "count": len(sessions)},
-                {"key": "registration_started", "label": "开始注册", "count": event_counts.get("registration_started", 0)},
+                {"key": "registration_prompt_opened", "label": "打开注册引导", "count": event_counts.get("registration_prompt_opened", 0)},
+                {"key": "registration_phone_submitted", "label": "提交手机号授权", "count": event_counts.get("registration_phone_submitted", 0)},
                 {"key": "registration_success", "label": "注册成功", "count": registrations},
-                {"key": "checkout_started", "label": "发起购买", "count": event_counts.get("checkout_started", 0) or event_counts.get("payment_order_created", 0)},
-                {"key": "payment_success", "label": "支付成功", "count": len(paid_orders)},
+                {"key": "registration_failed", "label": "注册失败", "count": event_counts.get("registration_failed", 0)},
+            ],
+            registrationFailures=[
+                {
+                    "reason": reason,
+                    "label": REGISTRATION_FAILURE_LABELS[reason],
+                    "count": count,
+                    "visitors": len(registration_failure_visitors.get(reason, set())),
+                }
+                for reason, count in sorted(registration_failures.items(), key=lambda item: (-item[1], item[0]))
             ],
             platforms=[
                 {"platform": key, "visitors": len(value)} for key, value in platform_counts.items()

@@ -382,6 +382,23 @@ def test_analytics_events_are_anonymous_idempotent_and_aggregated(client):
 
 def test_analytics_summary_uses_server_truth_for_registration_and_payment(client):
     client.application.config["ANALYTICS_ADMIN_TOKEN"] = "admin-test-token"
+    events = [
+        analytics_event(
+            eventId=f"event-registration-{index}",
+            event=event,
+            visitorId="visitor-registration",
+            sessionId="session-registration",
+            properties=properties,
+        )
+        for index, (event, properties) in enumerate([
+            ("registration_prompt_opened", {"required": True}),
+            ("registration_phone_submitted", {"flow": "new_registration"}),
+            ("registration_failed", {"flow": "new_registration", "reason": "network_error"}),
+        ], start=1)
+    ]
+    tracked = client.post("/api/v1/analytics/events", json={"events": events})
+    assert tracked.status_code == 200
+    assert tracked.get_json()["accepted"] == 3
     token = login(client, "analytics-paying-user")
     created = client.post(
         "/api/v1/pay/virtual/orders",
@@ -404,6 +421,18 @@ def test_analytics_summary_uses_server_truth_for_registration_and_payment(client
     assert summary["eventCounts"]["registration_success"] == 1
     assert summary["eventCounts"]["payment_order_created"] == 1
     assert summary["eventCounts"]["payment_success"] == 1
+    assert summary["funnel"] == [
+        {"key": "registration_prompt_opened", "label": "打开注册引导", "count": 1},
+        {"key": "registration_phone_submitted", "label": "提交手机号授权", "count": 1},
+        {"key": "registration_success", "label": "注册成功", "count": 1},
+        {"key": "registration_failed", "label": "注册失败", "count": 1},
+    ]
+    assert summary["registrationFailures"] == [{
+        "reason": "network_error",
+        "label": "网络连接失败",
+        "count": 1,
+        "visitors": 1,
+    }]
 
 
 def test_analytics_cors_allows_configured_portal_origin(client):

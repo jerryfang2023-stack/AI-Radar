@@ -28,7 +28,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Data Center Git baseline | GUANLAN-DATA-CENTER-V4.8.1-internal-foundation |
 | Data Center Git tag | `data-center-v4.8.1-internal-foundation` |
 | Main website version | SITE-V4.6.1-research-retirement |
-| Application analytics version | APP-ANALYTICS-V1.1.0-production-only |
+| Application analytics version | APP-ANALYTICS-V1.2.0-registration-funnel |
 | Business Signals column version | BSIG-V2.2.0-pipeline-stage-ownership |
 | Tag taxonomy version | TAG-V4.1 |
 | First-Line Viewpoints column version | FLV-V1.1.0-history-backfill |
@@ -44,7 +44,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Opportunity Map column version | OMAP-V2.0.0-v4-evidence |
 | Trend Radar column version | TRADAR-V1.1.0-tag-v4-1 |
 | Funding Insights column version | FUNDING-INSIGHT-V1.5.0-china-market |
-| WeChat Mini Program version | V0.8.1-community-essay-live-sync |
+| WeChat Mini Program version | V0.8.2-registration-funnel |
 | Investment institution projection | INVESTMENT-INSTITUTION-V1.0 |
 | Data Center Raw contract | RAW-V4.0 |
 | Data Center structured source intake | SOURCE-INTAKE-V1.1 |
@@ -206,6 +206,8 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `miniprogram-v0.8.2` | Explicit registration prompt / phone authorization / server-confirmed registration / failure reason analytics | 2026-08-18 | 2026-08-18T17:28:34+08:00 | V0.8.2-registration-funnel | generic authentication counted as registration; client-asserted registration success; phone or identity values in analytics; loss of V0.8.1 community essay live sync | Mini Program data build + registration analytics copy gate + 19-page validation + Payment Service analytics regression + development upload |
+| `application-analytics-v1.2.0` | Production registration funnel and privacy-safe failure reason aggregation | 2026-08-18 | 2026-08-18T17:28:34+08:00 | APP-ANALYTICS-V1.2.0-registration-funnel | generic auth attempts in registration metrics; client-only success; raw error messages or identity fields in failure analytics | Payment Service analytics regression + dashboard JavaScript syntax + authenticated production API smoke |
 | `miniprogram-v0.8.1` | Website-published community essay index / public detail sync / bundled offline fallback | 2026-08-18 | 2026-08-18T16:28:35+08:00 | V0.8.1-community-essay-live-sync | hard-coded-only community essay publication; duplicate remote and bundled cards; public weekly/monthly report bodies; V0.8.0 account, metered-access, payment, analytics or navigation regressions | Portal Mini projection test + Mini Program remote/fallback merge and public-detail boundary tests + 19-page validation + live endpoint verification + development upload |
 | `miniprogram-v0.8.0` | Unified PC / Mini Program account, server-metered details, QR confirmation and protected content delivery | 2026-08-18 | 2026-08-18T01:44:28+08:00 | V0.8.0-unified-account-content-access | client-only sample counting; public paid detail JSON; automatic authorization on detail entry; duplicate account trials or balances; V0.7.2 data, payment, analytics or navigation regressions | Payment Service unified-account/content tests + PC protected-content projection tests + Mini Program build/behavior/19-page validation + development upload |
 | `application-analytics-v1.1.0` | Application Center production-only operations analytics / Mini Program and PC monitoring | 2026-08-17 | 2026-08-17T22:15:00+08:00 | APP-ANALYTICS-V1.1.0-production-only | demo or smoke events in operating metrics; pre-launch registrations or orders in conversion totals; stale offline events re-entering after cleanup; dashboard fallback to non-production payloads | Payment Service analytics cutoff tests + page/JS syntax + production database backup and analytics reset + authenticated production API smoke |
