@@ -26,8 +26,8 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-technology-multimodal",
-      "TX-product_form-ai_device"
+      "TX-product_form-ai_device",
+      "TX-technology-multimodal"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-02",
@@ -90,6 +90,49 @@
   "relatedEntities": [],
   "relationships": [],
   "taxonomyNodes": [
+    {
+      "id": "TX-product_form-ai_device",
+      "name": "AI 设备",
+      "nodeType": "product_form",
+      "typeLabel": "产品形态",
+      "valueId": "ai_device",
+      "eventIds": [
+        "EV-c6c297156ff274ac",
+        "EV-02882e6f5e1902c6",
+        "EV-b5dd10300e34f2d3",
+        "EV-450f624a6a6446ce",
+        "EV-a9810b47e0408a05",
+        "EV-b93102125cc062e3",
+        "EV-a6b4fa32cce7c483",
+        "EV-2ffc3377977da114",
+        "EV-02015794e4c719d0",
+        "EV-4e8f6e91e4451ba1",
+        "EV-82e68f59d8584e4e",
+        "EV-f6ac2938949f74ec",
+        "EV-98dd0db65ab955f7",
+        "EV-7256017056b81bbe",
+        "EV-9e35de25113a9269"
+      ],
+      "entityIds": [
+        "EN-1913c6ab46df3a68",
+        "EN-2a920347dfcf07a7",
+        "EN-e22521e7de65d819",
+        "EN-245f1e177c5169cb",
+        "EN-193d220b421d776e",
+        "EN-b81c8201acfc7639",
+        "EN-88e2cce43eeadb36",
+        "EN-5fdd673ed1fcff1d",
+        "EN-ae0facccf0a3723a",
+        "EN-047364b9be67f665",
+        "EN-a7baed72c308ce88"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [
+        "HW-073f0034b9be13b2"
+      ],
+      "firstSeen": "2026-05-21",
+      "lastSeen": "2026-08-18"
+    },
     {
       "id": "TX-technology-multimodal",
       "name": "多模态",
@@ -195,47 +238,6 @@
       ],
       "firstSeen": "2026-02-08",
       "lastSeen": "2026-08-16"
-    },
-    {
-      "id": "TX-product_form-ai_device",
-      "name": "AI 设备",
-      "nodeType": "product_form",
-      "typeLabel": "产品形态",
-      "valueId": "ai_device",
-      "eventIds": [
-        "EV-02882e6f5e1902c6",
-        "EV-b5dd10300e34f2d3",
-        "EV-450f624a6a6446ce",
-        "EV-a9810b47e0408a05",
-        "EV-b93102125cc062e3",
-        "EV-a6b4fa32cce7c483",
-        "EV-2ffc3377977da114",
-        "EV-02015794e4c719d0",
-        "EV-4e8f6e91e4451ba1",
-        "EV-82e68f59d8584e4e",
-        "EV-f6ac2938949f74ec",
-        "EV-98dd0db65ab955f7",
-        "EV-7256017056b81bbe",
-        "EV-9e35de25113a9269"
-      ],
-      "entityIds": [
-        "EN-2a920347dfcf07a7",
-        "EN-e22521e7de65d819",
-        "EN-245f1e177c5169cb",
-        "EN-193d220b421d776e",
-        "EN-b81c8201acfc7639",
-        "EN-88e2cce43eeadb36",
-        "EN-5fdd673ed1fcff1d",
-        "EN-ae0facccf0a3723a",
-        "EN-047364b9be67f665",
-        "EN-a7baed72c308ce88"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [
-        "HW-073f0034b9be13b2"
-      ],
-      "firstSeen": "2026-05-21",
-      "lastSeen": "2026-08-04"
     }
   ],
   "fde": [],

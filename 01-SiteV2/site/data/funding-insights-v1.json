@@ -1170,17 +1170,14 @@
         "taxonomy_version": "TAG-V4.1",
         "product_form_id": "end_user_application",
         "market_category_id": "enterprise_applications",
-        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_subcategory_id": "marketing",
         "market_application_id": "",
         "use_case_ids": [
           "content_creation",
-          "marketing",
-          "productivity_enterprise_workflows"
+          "marketing"
         ],
         "industry_ids": [
-          "media_entertainment",
-          "retail_ecommerce",
-          "professional_services"
+          "media_entertainment"
         ],
         "target_user_ids": [
           "business_user",
@@ -1563,7 +1560,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-18T02:54:45.371Z"
+        "generated_at": "2026-08-18T02:54:45.371Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-1dba157815d84342",
+          "confidence": 0.75,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1652,8 +1657,8 @@
       },
       "market_subcategory": {
         "dimension": "ai_market_subcategory",
-        "id": "productivity_enterprise_workflows",
-        "name": "生产力与企业工作流",
+        "id": "marketing",
+        "name": "营销",
         "method": "card_explicit"
       },
       "market_application": null,
@@ -2057,8 +2062,8 @@
         "related_direction_id": "",
         "taxonomy_version": "TAG-V4.1",
         "product_form_id": "ai_device",
-        "market_category_id": "enterprise_applications",
-        "market_subcategory_id": "cyber_physical_security",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "healthcare_life_sciences",
         "market_application_id": "",
         "use_case_ids": [
           "physical_automation"
@@ -2242,7 +2247,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 2,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-18T02:54:21.638Z"
+        "generated_at": "2026-08-18T02:54:21.638Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-c6c297156ff274ac",
+          "confidence": 0.7,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -2321,15 +2334,15 @@
       },
       "market_category": {
         "dimension": "ai_market_category",
-        "id": "enterprise_applications",
-        "name": "企业级应用",
+        "id": "industry_applications",
+        "name": "行业应用",
         "method": "card_explicit",
         "decision_id": ""
       },
       "market_subcategory": {
         "dimension": "ai_market_subcategory",
-        "id": "cyber_physical_security",
-        "name": "网络与物理安全",
+        "id": "healthcare_life_sciences",
+        "name": "医疗与生命科学",
         "method": "card_explicit"
       },
       "market_application": null,
@@ -3046,7 +3059,7 @@
         "market_application_id": "",
         "use_case_ids": [
           "productivity_enterprise_workflows",
-          "knowledge_search"
+          "customer_support"
         ],
         "industry_ids": [],
         "target_user_ids": [
@@ -3362,7 +3375,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-18T02:53:32.323Z"
+        "generated_at": "2026-08-18T02:53:32.323Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-d43103952399bc68",
+          "confidence": 0.8,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -4060,9 +4081,7 @@
         "market_category_id": "infrastructure_compute",
         "market_subcategory_id": "hardware_computing",
         "market_application_id": "computing_infrastructure",
-        "use_case_ids": [
-          "productivity_enterprise_workflows"
-        ],
+        "use_case_ids": [],
         "industry_ids": [],
         "target_user_ids": [
           "developer",
@@ -4328,7 +4347,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-18T02:53:24.908Z"
+        "generated_at": "2026-08-18T02:53:24.908Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-181cd28d97c4e61d",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

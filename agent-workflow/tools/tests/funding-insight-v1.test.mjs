@@ -30,6 +30,7 @@ import {
   verifiedFundingEventCardCoverageProblems,
 } from "../funding-insight-v1-utils.mjs";
 import { canonicalSources } from "../generate-funding-insights-deepseek.mjs";
+import { resolveReviewedCompany } from "../project-funding-taxonomy-to-events-v4-1.mjs";
 
 test("multi-company canonical funding events cannot publish a mismatched company amount", () => {
   const card = {
@@ -959,7 +960,11 @@ test("融资透视自动化在商业事件工作流后增量研究、同步并�
   assert.match(workflow, /build-funding-insights-frontstage\.mjs[\s\S]*assert-funding-insights-v1\.mjs --all=true --frontstage=true/u);
   assert.match(workflow, /build-funding-insights-frontstage\.mjs[\s\S]*classify:funding-taxonomy-v4\.1 -- --write=true[\s\S]*assert-funding-insights-v1\.mjs --all=true --frontstage=true/u);
   assert.match(workflow, /assert-funding-insights-v1\.mjs --all=true --frontstage=true[\s\S]*build:investment-institutions[\s\S]*assert:investment-institutions[\s\S]*build:data-center-site/u);
-  assert.match(workflow, /git add[\s\S]*investment-institutions-v1\.json[\s\S]*data-center-v4\/investors/u);
+  assert.match(
+    workflow,
+    /git add[\s\S]*investment-institutions-v1\.json[\s\S]*"01-SiteV2\/site\/data\/data-center-v4"/u,
+    "the funding workflow must persist the complete split Data Center projection",
+  );
   assert.match(workflow, /git add[\s\S]*taxonomy-decisions-v4-1\.json/u);
   assert.doesNotMatch(workflow, /sync-funding-insights-to-obsidian\.mjs|vault\/20-Application-Center/u);
   assert.match(workflow, /automation\/funding-insights-\$\{RUN_DATE\}/u);
@@ -1239,6 +1244,20 @@ test("accepted Chinese descriptive funding subjects recover an application compa
 
   assert.equal(company?.canonical_name, "Higgsfield");
   assert.match(company?.entity_id || "", /^FICO-/u);
+});
+
+test("funding taxonomy projection preserves an existing application company id", () => {
+  assert.deepEqual(resolveReviewedCompany({
+    company: {
+      entity_id: "FICO-50b2676afbe30c83",
+      name: "Higgsfield Inc.",
+      full_name: "Higgsfield Inc.",
+    },
+  }, new Map(), new Map()), {
+    entity_id: "FICO-50b2676afbe30c83",
+    company_name: "Higgsfield Inc.",
+    resolution: "funding_application_entity",
+  });
 });
 
 test("company normalization relinks a descriptive entity to the exact full-name entity", () => {
