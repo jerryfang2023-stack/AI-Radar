@@ -1219,6 +1219,28 @@ test("descriptive startup prefixes never leak into the Funding Insight company n
   assert.equal(normalized.company.name, "Infinity");
 });
 
+test("accepted Chinese descriptive funding subjects recover an application company without a canonical entity", () => {
+  const claims = [{
+    claim_id: "CL-HIGGSFIELD",
+    claim_type: "funding",
+    verification_status: "accepted",
+    subject: "AI 视频生成平台 Higgsfield",
+    object: "4 亿美元，估值达 54 亿美元",
+    source_quote: "AI 视频生成平台 Higgsfield 已从投资者手中筹集 4 亿美元，估值达 54 亿美元。",
+  }];
+  const company = subjectCompanyForEvent({
+    display_title_zh: "AI 视频生成平台 Higgsfield 融资 4 亿美元，估值达 54 亿美元",
+    action: "融资",
+    object: "4 亿美元，估值达 54 亿美元",
+    metrics: ["4 亿美元"],
+    entities: [],
+    claim_refs: ["CL-HIGGSFIELD"],
+  }, [], {}, claims);
+
+  assert.equal(company?.canonical_name, "Higgsfield");
+  assert.match(company?.entity_id || "", /^FICO-/u);
+});
+
 test("company normalization relinks a descriptive entity to the exact full-name entity", () => {
   const normalized = normalizeFundingInsightCard({
     ...validCard(),
