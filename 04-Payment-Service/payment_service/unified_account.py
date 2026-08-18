@@ -13,6 +13,12 @@ from pathlib import Path
 
 from flask import g, jsonify, make_response, request
 import qrcode
+from tencentcloud.common import credential
+from tencentcloud.common.exception.tencent_cloud_sdk_exception import TencentCloudSDKException
+from tencentcloud.common.profile.client_profile import ClientProfile
+from tencentcloud.common.profile.http_profile import HttpProfile
+from tencentcloud.ses.v20201002 import models as ses_models
+from tencentcloud.ses.v20201002 import ses_client
 
 from payment_service.wechatpay import WeChatPayError
 
@@ -76,13 +82,33 @@ class VerificationSender:
     def __init__(self, config):
         self.url = str(config.get("VERIFICATION_WEBHOOK_URL") or "")
         self.token = str(config.get("VERIFICATION_WEBHOOK_TOKEN") or "")
+        self.ses_secret_id = str(config.get("TENCENT_SES_SECRET_ID") or "")
+        self.ses_secret_key = str(config.get("TENCENT_SES_SECRET_KEY") or "")
+        self.ses_region = str(config.get("TENCENT_SES_REGION") or "ap-guangzhou")
+        self.ses_from = str(config.get("TENCENT_SES_FROM") or "")
+        self.ses_template_id = str(config.get("TENCENT_SES_TEMPLATE_ID") or "")
+        self.ses_template_code_key = str(config.get("TENCENT_SES_TEMPLATE_CODE_KEY") or "验证码")
+        self.ses_subject = str(config.get("TENCENT_SES_SUBJECT") or "观澜 AI 登录验证码")
+
+    def ses_configured(self):
+        return bool(
+            self.ses_secret_id
+            and self.ses_secret_key
+            and self.ses_from
+            and self.ses_template_id.isdigit()
+        )
 
     def configured(self):
-        return bool(self.url and self.token)
+        return self.ses_configured() or bool(self.url and self.token)
 
     def send(self, kind, destination, code):
         if not self.configured():
             raise WeChatPayError("验证码服务尚未配置", code="VERIFICATION_NOT_CONFIGURED", status=503)
+        if kind != "email":
+            raise WeChatPayError("验证码类型暂不支持", code="VERIFICATION_CHANNEL_UNSUPPORTED", status=400)
+        if self.ses_configured():
+            self._send_ses(destination, code)
+            return
         payload = json.dumps({"channel": kind, "destination": destination, "code": code}, ensure_ascii=False).encode("utf-8")
         req = urllib.request.Request(
             self.url,
@@ -95,6 +121,40 @@ class VerificationSender:
                 if response.status >= 300:
                     raise RuntimeError("verification delivery failed")
         except (urllib.error.URLError, TimeoutError, RuntimeError) as exc:
+            raise WeChatPayError("验证码发送失败，请稍后重试", code="VERIFICATION_DELIVERY_FAILED", status=502) from exc
+
+    def _send_ses(self, destination, code):
+        try:
+            cred = credential.Credential(self.ses_secret_id, self.ses_secret_key)
+            http_profile = HttpProfile()
+            http_profile.endpoint = "ses.tencentcloudapi.com"
+            http_profile.reqTimeout = 10
+            client_profile = ClientProfile()
+            client_profile.httpProfile = http_profile
+            client = ses_client.SesClient(cred, self.ses_region, client_profile)
+            req = ses_models.SendEmailRequest()
+            req.from_json_string(
+                json.dumps(
+                    {
+                        "FromEmailAddress": self.ses_from,
+                        "Destination": [destination],
+                        "Subject": self.ses_subject,
+                        "Template": {
+                            "TemplateID": int(self.ses_template_id),
+                            "TemplateData": json.dumps(
+                                {self.ses_template_code_key: code},
+                                ensure_ascii=False,
+                            ),
+                        },
+                        "TriggerType": 1,
+                    },
+                    ensure_ascii=False,
+                )
+            )
+            response = client.SendEmail(req)
+            if not response.MessageId:
+                raise RuntimeError("missing message id")
+        except (TencentCloudSDKException, TypeError, ValueError, RuntimeError) as exc:
             raise WeChatPayError("验证码发送失败，请稍后重试", code="VERIFICATION_DELIVERY_FAILED", status=502) from exc
 
 

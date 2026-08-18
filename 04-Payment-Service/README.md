@@ -64,7 +64,7 @@ python scripts/provision_virtual_products.py --env 0
 ## PC 统一账户与受保护内容
 
 - PC 会话使用随机凭据，数据库只保存 HMAC；Cookie 为 `HttpOnly`、`Secure`、`SameSite=Lax`，写操作同时校验 CSRF。
-- PC 端仅使用邮箱验证码或小程序扫码登录；手机号只保留为小程序核验和老会员关联身份，不提供 PC 注册、登录或绑定入口。邮箱验证码通过 `VERIFICATION_WEBHOOK_URL` 对接实际发送服务，凭据仅放服务器 `.env`。未配置时生产环境明确返回“验证码通道未配置”，不会在响应中泄露验证码。
+- PC 端仅使用邮箱验证码或小程序扫码登录；手机号只保留为小程序核验和老会员关联身份，不提供 PC 注册、登录或绑定入口。邮箱验证码优先通过腾讯云 SES 模板发送，模板变量名由 `TENCENT_SES_TEMPLATE_CODE_KEY` 配置；旧 `VERIFICATION_WEBHOOK_URL` 仅作为兼容回退。所有密钥只放服务器 `.env`。未配置时生产环境明确返回“验证码通道未配置”，不会在响应中泄露验证码。
 - PC 微信登录使用小程序码：PC 创建短时票据，小程序 `pages/account-qr/index` 确认后由 PC 轮询完成登录或绑定。
 - 邮箱、微信身份发生冲突时不自动合并；用户必须同时证明当前账户和目标身份，确认后才合并会员、积分和订单，并保留审计记录。
 - `CONTENT_ROOT` 指向站点发布脚本原子更新的受保护内容目录。融资、主体、赛道和报告正文只通过 `/api/v1/content/...` 按统一权益返回，响应禁止缓存。

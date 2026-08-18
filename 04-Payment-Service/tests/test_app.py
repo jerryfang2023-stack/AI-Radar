@@ -3,10 +3,12 @@ from concurrent.futures import ThreadPoolExecutor
 import json
 from pathlib import Path
 import sqlite3
+from types import SimpleNamespace
 
 import pytest
 
 from app import PLANS, create_app
+from payment_service.unified_account import VerificationSender
 
 
 class FakePayClient:
@@ -61,6 +63,42 @@ class FakePayClient:
 
     def parse_notification(self, headers, body):
         return self.notification
+
+
+def test_verification_sender_uses_tencent_ses_template(monkeypatch):
+    captured = {}
+
+    class FakeSesClient:
+        def __init__(self, cred, region, profile=None):
+            captured["region"] = region
+
+        def SendEmail(self, request):
+            captured["request"] = json.loads(request.to_json_string())
+            return SimpleNamespace(MessageId="message-id")
+
+    monkeypatch.setattr("payment_service.unified_account.ses_client.SesClient", FakeSesClient)
+    sender = VerificationSender(
+        {
+            "TENCENT_SES_SECRET_ID": "secret-id",
+            "TENCENT_SES_SECRET_KEY": "secret-key",
+            "TENCENT_SES_REGION": "ap-guangzhou",
+            "TENCENT_SES_FROM": "观澜 AI <verify@mail.zkdlj.vip>",
+            "TENCENT_SES_TEMPLATE_ID": "57298",
+            "TENCENT_SES_TEMPLATE_CODE_KEY": "验证码",
+            "TENCENT_SES_SUBJECT": "观澜 AI 登录验证码",
+        }
+    )
+
+    sender.send("email", "reader@example.com", "123456")
+
+    request = captured["request"]
+    assert captured["region"] == "ap-guangzhou"
+    assert request["FromEmailAddress"] == "观澜 AI <verify@mail.zkdlj.vip>"
+    assert request["Destination"] == ["reader@example.com"]
+    assert request["Subject"] == "观澜 AI 登录验证码"
+    assert request["Template"]["TemplateID"] == 57298
+    assert json.loads(request["Template"]["TemplateData"]) == {"验证码": "123456"}
+    assert request["TriggerType"] == 1
 
 
 def test_schema_initialization_is_safe_across_concurrent_workers(tmp_path):
