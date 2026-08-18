@@ -20,15 +20,16 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 10,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 10,
+    "current_round_count": 11,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 11,
     "first_disclosed_at": "2024-03-12",
-    "latest_disclosed_at": "2026-07-23",
+    "latest_disclosed_at": "2026-08-17",
     "role_counts": {
       "co_lead": 1,
+      "historical_or_ambiguous": 1,
       "lead": 7,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "series_a",
@@ -63,6 +64,11 @@
         "name": "Fractile"
       },
       {
+        "entity_id": "FICO-50b2676afbe30c83",
+        "canonical_entity_id": "",
+        "name": "Higgsfield Inc."
+      },
+      {
         "entity_id": "EN-636396f02b6571e4",
         "canonical_entity_id": "",
         "name": "n8n GmbH"
@@ -89,6 +95,82 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-f53e029e7167bc8f",
+        "funding_insight_id": "FI-a9ab795d8c87d3e9",
+        "event_ids": [
+          "EV-1dba157815d84342"
+        ],
+        "company_entity_id": "FICO-50b2676afbe30c83",
+        "company_canonical_entity_id": "",
+        "company_name": "Higgsfield Inc.",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "4 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-08-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7c15ac15bf3d0b1a",
+            "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
+            "source_title": "Higgsfield Raises $400M in Series B Funding",
+            "source_content_hash": "66d04514886f3d3e",
+            "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
+            "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-92a5fb424f79e130",
+        "funding_insight_id": "FI-a9ab795d8c87d3e9",
+        "event_ids": [
+          "EV-1dba157815d84342"
+        ],
+        "company_entity_id": "FICO-50b2676afbe30c83",
+        "company_canonical_entity_id": "",
+        "company_name": "Higgsfield Inc.",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "4 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-08-17",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-35d27946fd70aa42",
+            "source_url": "https://techstartups.com/2026/01/15/ai-video-startup-higgsfield-raises-80m-at-1-3b-valuation-as-demand-for-generative-video-surges/",
+            "source_title": "AI video startup Higgsfield raises $80M at $1.3B valuation as demand for generative video surges - Tech Startups",
+            "source_content_hash": "0d8d55e9f8e4182e",
+            "quote": "The round drew backing from Accel, GFT Ventures, and Menlo Ventures",
+            "quote_hash": "85da23dfa411719899fd29b9652deb3320a6c127dd5070049c91da199f65edf6"
+          }
+        ]
+      },
       {
         "activity_id": "IA-7d3be332fa5ef98c",
         "funding_insight_id": "FI-c540a5c7d84cb184",
@@ -480,6 +562,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-7c15ac15bf3d0b1a",
+        "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
+        "source_title": "Higgsfield Raises $400M in Series B Funding",
+        "source_content_hash": "66d04514886f3d3e",
+        "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
+        "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+      },
+      {
+        "source_id": "FISRC-35d27946fd70aa42",
+        "source_url": "https://techstartups.com/2026/01/15/ai-video-startup-higgsfield-raises-80m-at-1-3b-valuation-as-demand-for-generative-video-surges/",
+        "source_title": "AI video startup Higgsfield raises $80M at $1.3B valuation as demand for generative video surges - Tech Startups",
+        "source_content_hash": "0d8d55e9f8e4182e",
+        "quote": "The round drew backing from Accel, GFT Ventures, and Menlo Ventures",
+        "quote_hash": "85da23dfa411719899fd29b9652deb3320a6c127dd5070049c91da199f65edf6"
+      },
       {
         "source_id": "FISRC-7a2e33bd2177a4c7",
         "source_url": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/",

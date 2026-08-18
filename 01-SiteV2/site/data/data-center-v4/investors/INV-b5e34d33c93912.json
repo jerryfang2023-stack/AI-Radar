@@ -20,14 +20,14 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "first_disclosed_at": "2025-05-06",
-    "latest_disclosed_at": "2026-05-12",
+    "latest_disclosed_at": "2026-08-17",
     "role_counts": {
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "series_b"
@@ -42,9 +42,52 @@
         "entity_id": "EN-29e1a488361f12d3",
         "canonical_entity_id": "",
         "name": "Vapi Inc."
+      },
+      {
+        "entity_id": "EN-8c5929d253b07fed",
+        "canonical_entity_id": "",
+        "name": "Wispr"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-ef4d574e68583cc3",
+        "funding_insight_id": "FI-c0b843a5e6f6ea0a",
+        "event_ids": [
+          "EV-d43103952399bc68"
+        ],
+        "company_entity_id": "EN-8c5929d253b07fed",
+        "company_canonical_entity_id": "",
+        "company_name": "Wispr",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$280M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 280000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.8 亿美元"
+        },
+        "announced_at": "2026-08-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2e7a3713da8f3e54",
+            "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
+            "source_title": "Wispr Raises $280M in Series B Funding Led by Menlo Ventures, Valuation Hits $2B | Gate News",
+            "source_content_hash": "affdfd9a0ccfb188",
+            "quote": "alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
+            "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f6808ff749152fea",
         "funding_insight_id": "FI-9b370a988458c224",
@@ -123,6 +166,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-2e7a3713da8f3e54",
+        "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
+        "source_title": "Wispr Raises $280M in Series B Funding Led by Menlo Ventures, Valuation Hits $2B | Gate News",
+        "source_content_hash": "affdfd9a0ccfb188",
+        "quote": "alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
+        "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
+      },
       {
         "source_id": "FISRC-46ca8e6bf27dfb82",
         "source_url": "https://siliconangle.com/2026/05/12/vapi-nabs-50m-make-voice-ai-human/",

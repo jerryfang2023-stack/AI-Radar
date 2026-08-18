@@ -20,23 +20,29 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "first_disclosed_at": "2026-05-21",
-    "latest_disclosed_at": "2026-07-08",
+    "latest_disclosed_at": "2026-08-17",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
-      "series_a"
+      "series_a",
+      "series_b"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-245f1e177c5169cb",
         "canonical_entity_id": "",
         "name": "Hark"
+      },
+      {
+        "entity_id": "FICO-50b2676afbe30c83",
+        "canonical_entity_id": "",
+        "name": "Higgsfield Inc."
       },
       {
         "entity_id": "FICO-oxmiq",
@@ -50,6 +56,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-47faee25092e5ad7",
+        "funding_insight_id": "FI-a9ab795d8c87d3e9",
+        "event_ids": [
+          "EV-1dba157815d84342"
+        ],
+        "company_entity_id": "FICO-50b2676afbe30c83",
+        "company_canonical_entity_id": "",
+        "company_name": "Higgsfield Inc.",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "4 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-08-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b235ace767812393",
+            "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
+            "source_title": "Higgsfield raises $400M at $5.4 billion valuation to scale video and image generation platform - SiliconANGLE",
+            "source_content_hash": "06ecfd55822882e3",
+            "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital and more than a half-dozen existing investors",
+            "quote_hash": "802b4e0ce5c62a28a2fc893e6f1263efeb759174a6c6e4d57e7a3f8a1aa7de8c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-1add88cc35768ebf",
         "funding_insight_id": "FI-eb27063b86f12aff",
@@ -211,6 +255,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-b235ace767812393",
+        "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
+        "source_title": "Higgsfield raises $400M at $5.4 billion valuation to scale video and image generation platform - SiliconANGLE",
+        "source_content_hash": "06ecfd55822882e3",
+        "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital and more than a half-dozen existing investors",
+        "quote_hash": "802b4e0ce5c62a28a2fc893e6f1263efeb759174a6c6e4d57e7a3f8a1aa7de8c"
+      },
       {
         "source_id": "FISRC-fbda7a24ef3d8ef8",
         "source_url": "https://vtechxhub.com/insights/prime-intellect-raises-130m-series-power-enterprise-ai",

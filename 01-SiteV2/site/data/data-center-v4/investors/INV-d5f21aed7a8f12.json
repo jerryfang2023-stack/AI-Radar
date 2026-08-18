@@ -21,11 +21,12 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "first_disclosed_at": "2026-06-22",
-    "latest_disclosed_at": "2026-06-22",
+    "latest_disclosed_at": "2026-08-17",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "lead": 1
     },
     "round_codes": [
@@ -39,6 +40,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-951d9beab02d667f",
+        "funding_insight_id": "FI-4b811c030362045e",
+        "event_ids": [
+          "EV-181cd28d97c4e61d"
+        ],
+        "company_entity_id": "EN-0b79cf2de0ee6b8e",
+        "company_canonical_entity_id": "",
+        "company_name": "Groq",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$350M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 350000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.5 亿美元"
+        },
+        "announced_at": "2026-08-17",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-28e142eb564f6762",
+            "source_url": "https://www.verdict.co.uk/groq-obtains-750m-in-funding-ai-inference-technology/",
+            "source_title": "Groq obtains $750m in funding for AI inference technology",
+            "source_content_hash": "b6f5ca4d5c31cfb3",
+            "quote": "Existing backers such as Cisco, Samsung, Altimeter, D1, 1789 Capital, and Infinitum also participated in this round.",
+            "quote_hash": "3b8b0f2d6fdc4e05211295d3d973d1a094f085c2aa05c4ff742f5d14a4850982"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f907bd2a83610de3",
         "funding_insight_id": "FI-44726ebdb985f37e",
@@ -79,6 +118,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-28e142eb564f6762",
+        "source_url": "https://www.verdict.co.uk/groq-obtains-750m-in-funding-ai-inference-technology/",
+        "source_title": "Groq obtains $750m in funding for AI inference technology",
+        "source_content_hash": "b6f5ca4d5c31cfb3",
+        "quote": "Existing backers such as Cisco, Samsung, Altimeter, D1, 1789 Capital, and Infinitum also participated in this round.",
+        "quote_hash": "3b8b0f2d6fdc4e05211295d3d973d1a094f085c2aa05c4ff742f5d14a4850982"
+      },
       {
         "source_id": "FISRC-c46abe65803d1634",
         "source_url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business",

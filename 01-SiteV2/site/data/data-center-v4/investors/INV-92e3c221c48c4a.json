@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-18T00:24:57.421Z",
+    "latestDataDate": "2026-08-18",
+    "currentDate": "2026-08-18",
+    "eventCount": 2199,
+    "quarantinedEventCount": 19
+  },
+  "institution": {
+    "id": "INV-92e3c221c48c4a",
+    "name": "Neuberger Berman",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-08-17",
+    "latest_disclosed_at": "2026-08-17",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-dc77d4782bfa19b4",
+        "funding_insight_id": "FI-4b811c030362045e",
+        "event_ids": [
+          "EV-181cd28d97c4e61d"
+        ],
+        "company_entity_id": "EN-0b79cf2de0ee6b8e",
+        "company_canonical_entity_id": "",
+        "company_name": "Groq",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$350M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 350000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.5 亿美元"
+        },
+        "announced_at": "2026-08-17",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-28e142eb564f6762",
+            "source_url": "https://www.verdict.co.uk/groq-obtains-750m-in-funding-ai-inference-technology/",
+            "source_title": "Groq obtains $750m in funding for AI inference technology",
+            "source_content_hash": "b6f5ca4d5c31cfb3",
+            "quote": "Groq also secured notable investments from BlackRock, Neuberger Berman, Deutsche Telekom Capital Partners, and a major mutual fund manager based on the US West Coast.",
+            "quote_hash": "ed71500dc8a1a4e18d291568de425fbe6492106f824a8a3e558236c34540a2a0"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-28e142eb564f6762",
+        "source_url": "https://www.verdict.co.uk/groq-obtains-750m-in-funding-ai-inference-technology/",
+        "source_title": "Groq obtains $750m in funding for AI inference technology",
+        "source_content_hash": "b6f5ca4d5c31cfb3",
+        "quote": "Groq also secured notable investments from BlackRock, Neuberger Berman, Deutsche Telekom Capital Partners, and a major mutual fund manager based on the US West Coast.",
+        "quote_hash": "ed71500dc8a1a4e18d291568de425fbe6492106f824a8a3e558236c34540a2a0"
+      }
+    ]
+  }
+}

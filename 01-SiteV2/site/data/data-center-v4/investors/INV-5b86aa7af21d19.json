@@ -20,15 +20,16 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 1,
     "first_disclosed_at": "2026-06-22",
-    "latest_disclosed_at": "2026-06-22",
+    "latest_disclosed_at": "2026-08-17",
     "role_counts": {
-      "lead": 1
+      "lead": 2
     },
     "round_codes": [
+      "series_a",
       "undisclosed"
     ],
     "portfolio_companies": [
@@ -39,6 +40,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-0c56db2ec4fc7dd5",
+        "funding_insight_id": "FI-4b811c030362045e",
+        "event_ids": [
+          "EV-181cd28d97c4e61d"
+        ],
+        "company_entity_id": "EN-0b79cf2de0ee6b8e",
+        "company_canonical_entity_id": "",
+        "company_name": "Groq",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$350M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 350000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.5 亿美元"
+        },
+        "announced_at": "2026-08-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-c02f2ac04f9320df",
+            "source_url": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud",
+            "source_title": "Groq Closes $350 million Series A, Building the World's Leading AI Inference Cloud | Groq is the premier neocloud for fast inference",
+            "source_content_hash": "562993f7020da030",
+            "quote": "Groq LLC (“Groq”) today announced a $350 million Series A fundraise and the round was led by Disruptive, with planned participation from NVIDIA.",
+            "quote_hash": "5b45c346ecf01968f41ce6e6ca6fc9e33e390132605e73bc2370eb5cb910acb1"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e90c7b2c76630434",
         "funding_insight_id": "FI-44726ebdb985f37e",
@@ -79,6 +118,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-c02f2ac04f9320df",
+        "source_url": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud",
+        "source_title": "Groq Closes $350 million Series A, Building the World's Leading AI Inference Cloud | Groq is the premier neocloud for fast inference",
+        "source_content_hash": "562993f7020da030",
+        "quote": "Groq LLC (“Groq”) today announced a $350 million Series A fundraise and the round was led by Disruptive, with planned participation from NVIDIA.",
+        "quote_hash": "5b45c346ecf01968f41ce6e6ca6fc9e33e390132605e73bc2370eb5cb910acb1"
+      },
       {
         "source_id": "FISRC-c46abe65803d1634",
         "source_url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business",

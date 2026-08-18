@@ -20,26 +20,79 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "first_disclosed_at": "2025-09-09",
-    "latest_disclosed_at": "2026-03-25",
+    "latest_disclosed_at": "2026-08-17",
     "role_counts": {
       "historical_or_ambiguous": 1,
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
-      "multi_round"
+      "multi_round",
+      "series_b"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-be8f311b8bb47e9c",
         "canonical_entity_id": "",
         "name": "华深智药科技（北京）有限公司"
+      },
+      {
+        "entity_id": "FICO-50b2676afbe30c83",
+        "canonical_entity_id": "",
+        "name": "Higgsfield Inc."
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-028c6a75de31ce09",
+        "funding_insight_id": "FI-a9ab795d8c87d3e9",
+        "event_ids": [
+          "EV-1dba157815d84342"
+        ],
+        "company_entity_id": "FICO-50b2676afbe30c83",
+        "company_canonical_entity_id": "",
+        "company_name": "Higgsfield Inc.",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "4 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-08-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b235ace767812393",
+            "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
+            "source_title": "Higgsfield raises $400M at $5.4 billion valuation to scale video and image generation platform - SiliconANGLE",
+            "source_content_hash": "06ecfd55822882e3",
+            "quote": "The Series B round was led by DST Global",
+            "quote_hash": "4486e781e7a0339f2e078c9d96b2fd5c87d699f9e49491e036814c978fe3f2f9"
+          },
+          {
+            "source_id": "FISRC-7c15ac15bf3d0b1a",
+            "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
+            "source_title": "Higgsfield Raises $400M in Series B Funding",
+            "source_content_hash": "66d04514886f3d3e",
+            "quote": "The round was led by DST Global",
+            "quote_hash": "bd794bdbdb2cdb9460fd672ab4bb1f064247dd022f70488c70c7f56b353e53cc"
+          }
+        ]
+      },
       {
         "activity_id": "IA-7691bce73cdcac8e",
         "funding_insight_id": "FI-c3bce60cc6406ae5",
@@ -118,6 +171,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-b235ace767812393",
+        "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
+        "source_title": "Higgsfield raises $400M at $5.4 billion valuation to scale video and image generation platform - SiliconANGLE",
+        "source_content_hash": "06ecfd55822882e3",
+        "quote": "The Series B round was led by DST Global",
+        "quote_hash": "4486e781e7a0339f2e078c9d96b2fd5c87d699f9e49491e036814c978fe3f2f9"
+      },
+      {
+        "source_id": "FISRC-7c15ac15bf3d0b1a",
+        "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
+        "source_title": "Higgsfield Raises $400M in Series B Funding",
+        "source_content_hash": "66d04514886f3d3e",
+        "quote": "The round was led by DST Global",
+        "quote_hash": "bd794bdbdb2cdb9460fd672ab4bb1f064247dd022f70488c70c7f56b353e53cc"
+      },
       {
         "source_id": "FISRC-972ef11d09af7ec8",
         "source_url": "https://vc.pedaily.cn/company/205217.html",

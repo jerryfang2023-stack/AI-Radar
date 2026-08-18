@@ -1,0 +1,4094 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "date": "2026-08-18",
+    "generated_at": "2026-08-18T02:54:45.391Z",
+    "trigger": "verified_funding_events_with_three_month_backfill",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
+    "counts": {
+      "funding_events": 6,
+      "auto_published": 4,
+      "blocked": 0,
+      "pending": 0,
+      "deduplicated": 2
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-9f08d85c87359b04",
+      "triggered_by_event_id": "EV-1dba157815d84342",
+      "as_of_date": "2026-08-18",
+      "company": {
+        "entity_id": "FICO-50b2676afbe30c83",
+        "name": "Higgsfield Inc.",
+        "full_name": "Higgsfield Inc.",
+        "website": "https://higgsfield.ai",
+        "summary": "Higgsfield 是一家总部位于旧金山的生成式 AI 视频与图像创作平台，面向专业创作者、品牌、代理商和工作室，提供视觉推理引擎，聚合自有及第三方模型，实现角色与场景一致性、电影级视频生成和营销工作流自动化。",
+        "headquarters": "San Francisco, CA",
+        "founders": [
+          {
+            "name": "Alex Mashrabov",
+            "role": "联合创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c0c8574fa0b1adfd",
+                "quote": "该公司由前 Snapchat 高管 Alex Mashrabov 创立",
+                "source_content_hash": "1b69c60cd0cee376",
+                "quote_hash": "852365fb81dbd71578224ba147eb7d7ca6a83afe5162d99c86668934ca743357"
+              },
+              {
+                "source_id": "FISRC-b235ace767812393",
+                "quote": "said co-founder and Chief Executive Alex Mashrabov",
+                "source_content_hash": "06ecfd55822882e3",
+                "quote_hash": "4713387f65e4038f532beb7a1c2bcbed5b205985354828cafbeaa96f99722f61"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Yerzat Dulat",
+            "role": "CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c15ac15bf3d0b1a",
+                "quote": "Led by CEO Alex Mashrabov and CTO Yerzat Dulat",
+                "source_content_hash": "66d04514886f3d3e",
+                "quote_hash": "51ceebcd39e09acddbaa22bc2970ac508f1d481f486ca10c65de72b0faae62a5"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "约150人",
+          "observed_at": "2026-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0e20d4e113ddcf9b",
+              "quote": "They're doing this with about 150 people.",
+              "source_content_hash": "d4674307be948188",
+              "quote_hash": "e0b59ea0411ef8da49cc50b1c162275f51edbdf4607ddd4cdaf1396bb26ff0aa"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b235ace767812393",
+            "quote": "Higgsfield Inc. , a g enerative artificial intelligence video and image creation platform for professionals",
+            "source_content_hash": "06ecfd55822882e3",
+            "quote_hash": "3e8bedd0f156691c1457cb33ef515e185aade00eb3b98652fe2ff5eaa2587ce3"
+          },
+          {
+            "source_id": "FISRC-7c15ac15bf3d0b1a",
+            "quote": "Higgsfield, a San Francisco, CA-based provider of an AI video and image creation platform for professional creators, brands, agencies, and studios",
+            "source_content_hash": "66d04514886f3d3e",
+            "quote_hash": "abc3f32951b307960dc885754e01adb929b813a71d62f0958ded9ee836510922"
+          }
+        ],
+        "application_entity_id": "FICO-50b2676afbe30c83",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "B轮",
+        "amount": "4 亿美元",
+        "total_raised": "1.5 亿美元",
+        "announced_at": "2026-08-17",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "DST Global",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b235ace767812393",
+                "quote": "The Series B round was led by DST Global",
+                "source_content_hash": "06ecfd55822882e3",
+                "quote_hash": "4486e781e7a0339f2e078c9d96b2fd5c87d699f9e49491e036814c978fe3f2f9"
+              },
+              {
+                "source_id": "FISRC-7c15ac15bf3d0b1a",
+                "quote": "The round was led by DST Global",
+                "source_content_hash": "66d04514886f3d3e",
+                "quote_hash": "bd794bdbdb2cdb9460fd672ab4bb1f064247dd022f70488c70c7f56b353e53cc"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Tribe Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b235ace767812393",
+                "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital and more than a half-dozen existing investors",
+                "source_content_hash": "06ecfd55822882e3",
+                "quote_hash": "802b4e0ce5c62a28a2fc893e6f1263efeb759174a6c6e4d57e7a3f8a1aa7de8c"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Growth Equity at Goldman Sachs Alternatives",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b235ace767812393",
+                "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital and more than a half-dozen existing investors",
+                "source_content_hash": "06ecfd55822882e3",
+                "quote_hash": "802b4e0ce5c62a28a2fc893e6f1263efeb759174a6c6e4d57e7a3f8a1aa7de8c"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Smash Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b235ace767812393",
+                "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital and more than a half-dozen existing investors",
+                "source_content_hash": "06ecfd55822882e3",
+                "quote_hash": "802b4e0ce5c62a28a2fc893e6f1263efeb759174a6c6e4d57e7a3f8a1aa7de8c"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Fifth Wall",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b235ace767812393",
+                "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital and more than a half-dozen existing investors",
+                "source_content_hash": "06ecfd55822882e3",
+                "quote_hash": "802b4e0ce5c62a28a2fc893e6f1263efeb759174a6c6e4d57e7a3f8a1aa7de8c"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Valor Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b235ace767812393",
+                "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital and more than a half-dozen existing investors",
+                "source_content_hash": "06ecfd55822882e3",
+                "quote_hash": "802b4e0ce5c62a28a2fc893e6f1263efeb759174a6c6e4d57e7a3f8a1aa7de8c"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Intel Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b235ace767812393",
+                "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital and more than a half-dozen existing investors",
+                "source_content_hash": "06ecfd55822882e3",
+                "quote_hash": "802b4e0ce5c62a28a2fc893e6f1263efeb759174a6c6e4d57e7a3f8a1aa7de8c"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Liberty Global Tech Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c15ac15bf3d0b1a",
+                "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
+                "source_content_hash": "66d04514886f3d3e",
+                "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Mirae Asset Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c15ac15bf3d0b1a",
+                "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
+                "source_content_hash": "66d04514886f3d3e",
+                "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "NTT DOCOMO Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c15ac15bf3d0b1a",
+                "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
+                "source_content_hash": "66d04514886f3d3e",
+                "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Accel",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c15ac15bf3d0b1a",
+                "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
+                "source_content_hash": "66d04514886f3d3e",
+                "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Menlo Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c15ac15bf3d0b1a",
+                "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
+                "source_content_hash": "66d04514886f3d3e",
+                "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "AI Capital Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c15ac15bf3d0b1a",
+                "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
+                "source_content_hash": "66d04514886f3d3e",
+                "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "GFT Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c15ac15bf3d0b1a",
+                "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
+                "source_content_hash": "66d04514886f3d3e",
+                "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Capra Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c15ac15bf3d0b1a",
+                "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
+                "source_content_hash": "66d04514886f3d3e",
+                "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "BAM Corner Point",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c15ac15bf3d0b1a",
+                "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
+                "source_content_hash": "66d04514886f3d3e",
+                "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "BroadLight Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c15ac15bf3d0b1a",
+                "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
+                "source_content_hash": "66d04514886f3d3e",
+                "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Natalia Vodianova Arnault",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c15ac15bf3d0b1a",
+                "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
+                "source_content_hash": "66d04514886f3d3e",
+                "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "GFT Ventures",
+            "role": "历史轮次领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-35d27946fd70aa42",
+                "quote": "TechStartups covered Higgsfield in September 2025 after it closed a $50 million Series A round led by GFT Ventures",
+                "source_content_hash": "0d8d55e9f8e4182e",
+                "quote_hash": "bf92515a204d3a8a4e8299356bae49d254592f97c1e88f55a5e23901502fcd57"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "BroadLight Capital",
+            "role": "历史轮次参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-35d27946fd70aa42",
+                "quote": "with participation from BroadLight Capital, NextEquity, and Menlo Ventures",
+                "source_content_hash": "0d8d55e9f8e4182e",
+                "quote_hash": "cb6eb89aab7c1200185db653dfe353094ec3e34324d608d7317f91f876adc116"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "NextEquity",
+            "role": "历史轮次参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-35d27946fd70aa42",
+                "quote": "with participation from BroadLight Capital, NextEquity, and Menlo Ventures",
+                "source_content_hash": "0d8d55e9f8e4182e",
+                "quote_hash": "cb6eb89aab7c1200185db653dfe353094ec3e34324d608d7317f91f876adc116"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Menlo Ventures",
+            "role": "历史轮次参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-35d27946fd70aa42",
+                "quote": "with participation from BroadLight Capital, NextEquity, and Menlo Ventures",
+                "source_content_hash": "0d8d55e9f8e4182e",
+                "quote_hash": "cb6eb89aab7c1200185db653dfe353094ec3e34324d608d7317f91f876adc116"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Accel",
+            "role": "历史轮次参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-35d27946fd70aa42",
+                "quote": "The round drew backing from Accel, GFT Ventures, and Menlo Ventures",
+                "source_content_hash": "0d8d55e9f8e4182e",
+                "quote_hash": "85da23dfa411719899fd29b9652deb3320a6c127dd5070049c91da199f65edf6"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c0c8574fa0b1adfd",
+            "quote": "此次融资距离 Higgsfield 上一轮融资仅过去 8 个月。",
+            "source_content_hash": "1b69c60cd0cee376",
+            "quote_hash": "f5000abc32f470c207c423ea1a425a910ed79427519f1e2020b32742722654aa"
+          },
+          {
+            "source_id": "FISRC-7c15ac15bf3d0b1a",
+            "quote": "raised $400M in Series B funding, at a $5.4B valuation",
+            "source_content_hash": "66d04514886f3d3e",
+            "quote_hash": "0a16272c7b5f85d2f704df71b7ec974e91517161b8bc826b9ee3c918a4d193f5"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "4 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "total_raised_original": "1.5 亿美元",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-1dba157815d84342",
+            "round_original": "Series B",
+            "amount": "4 亿美元",
+            "announced_at": "2026-08-17",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c0c8574fa0b1adfd",
+                "quote": "此次融资距离 Higgsfield 上一轮融资仅过去 8 个月。",
+                "source_content_hash": "1b69c60cd0cee376",
+                "quote_hash": "f5000abc32f470c207c423ea1a425a910ed79427519f1e2020b32742722654aa"
+              },
+              {
+                "source_id": "FISRC-7c15ac15bf3d0b1a",
+                "quote": "raised $400M in Series B funding, at a $5.4B valuation",
+                "source_content_hash": "66d04514886f3d3e",
+                "quote_hash": "0a16272c7b5f85d2f704df71b7ec974e91517161b8bc826b9ee3c918a4d193f5"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Higgsfield 平台",
+          "description": "AI 原生多媒体内容创作平台，聚合自有及第三方视频、图像、音频模型，提供视觉推理引擎，支持电影级视频、图像和语音/音频的生成与编辑，并具备角色与场景一致性控制。",
+          "target_customers": "专业创作者、品牌、代理商、工作室、企业营销团队",
+          "features": [
+            "视觉推理引擎",
+            "角色与场景一致性",
+            "聚合 Google Veo、Kling、Seedance 等第三方模型",
+            "自有模型 Soul 2.0",
+            "Cinema Studio 与 Marketing Studio",
+            "MCP 集成",
+            "Supercomputer 营销智能体"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b235ace767812393",
+              "quote": "Higgsfield is best known for what the company calls a visual reasoning engine for generating and editing media – especially cinematic video, images and voice/audio – using text prompts or references.",
+              "source_content_hash": "06ecfd55822882e3",
+              "quote_hash": "4c92ac160db0052273374d99455a85d199b11201ddf0686423e736cdf50a6c0e"
+            },
+            {
+              "source_id": "FISRC-0e20d4e113ddcf9b",
+              "quote": "Today you open Higgsfield and you can run Google Veo, Kling, Seedance, their own models, whatever is best, side by side, in parallel.",
+              "source_content_hash": "d4674307be948188",
+              "quote_hash": "e0dfbafff5e3dc71ed5b7f2ffde153c861de3e621cb7277ff6bcb90c08725639"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Supercomputer",
+          "description": "Higgsfield 于 2026 年 5 月推出的智能体 AI 产品，可自动化工作流、运行智能体和技能，并将创意直接推送至 Meta 等广告网络。",
+          "target_customers": "品牌、代理商、营销团队",
+          "features": [
+            "自动化营销工作流",
+            "运行智能体与技能",
+            "直接推送创意至 Meta 等广告网络"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b235ace767812393",
+              "quote": "Higgsfield recently launched Supercomputer in May, an agentic AI product that automates workflows, runs agents and skills.",
+              "source_content_hash": "06ecfd55822882e3",
+              "quote_hash": "6c4f8fcae022d78d16ccdb07d26546248dc5d8a936f4d16aea2806e170a6f9b0"
+            },
+            {
+              "source_id": "FISRC-0e20d4e113ddcf9b",
+              "quote": "just launched a marketing agent called Supercomputer that pushes creative straight into Meta and other ad networks",
+              "source_content_hash": "d4674307be948188",
+              "quote_hash": "b83d87caec52e2809e85a9696a0eb1cdd1e3c93ccec3014af6d387f9d3e64dfa"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Cinema Studio",
+          "description": "面向电影和 VFX 前期制作的工作室级产品，支持环境原型、序列可视化、替代视觉风格探索和外观开发加速，运行在 Higgsfield 的模型栈上。",
+          "target_customers": "动画与 VFX 工作室、好莱坞制作公司",
+          "features": [
+            "前期制作与外观开发加速",
+            "环境原型与序列可视化",
+            "企业级 IP 保护与数据生命周期管理"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-543aa70e694fb259",
+              "quote": "Boxel Studio, a 350 person animation and VFX studio with 16 years in Hollywood production, integrated Higgsfield Cinema Studio into its pre production pipeline and reduced time to visualization from months to days",
+              "source_content_hash": "8b2003b803af0849",
+              "quote_hash": "c0c206b324f4b55f0aa684348239fc1ab8be4ab1907e132644937bc17c8bb63b"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "AdQUA Interactive",
+          "industry": "广告与数字营销",
+          "use_case": "使用 Higgsfield 进行角色一致性视频制作，运营 AI MCN 业务，将制作时间缩短至约十分之一，运营成本降至约五十分之一。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8e347c4d541d1a08",
+              "quote": "Production time has been cut to roughly one-tenth compared to our previous, labor-intensive production environment.",
+              "source_content_hash": "74772097c452f77b",
+              "quote_hash": "27c46a15a0b560f01daeb07c62fca0a4cc144fce3081320606d67c6fb3a24cdf"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Boosterz",
+          "industry": "品牌建设与美妆",
+          "use_case": "使用 Higgsfield 完成新品牌发布资产、广告创意和 SNS 内容制作，将制作成本降低约 97%、制作时间降低约 79%、所需人员降低约 85%。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8e347c4d541d1a08",
+              "quote": "Boosterz cut production costs by ~97%, production time by ~79%, and required personnel by ~85% versus its traditional filming-and-editing process.",
+              "source_content_hash": "74772097c452f77b",
+              "quote_hash": "0ef61e69ef60061d527e6dbf6f9475f390c87f7b88ca491f64ef2b7c86b6ab5e"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Boxel Studio",
+          "industry": "媒体与娱乐",
+          "use_case": "将 Higgsfield Cinema Studio 集成到前期制作管线，将可视化时间从数月缩短至数天，并向客户呈现更多创意选项。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-543aa70e694fb259",
+              "quote": "Boxel Studio, a 350 person full-service animation and VFX studio with 16 years in Hollywood production, integrated Higgsfield Cinema Studio into its pre production pipeline and reduced time to visualization from months to days",
+              "source_content_hash": "8b2003b803af0849",
+              "quote_hash": "a36fc1cc87065831ba65a9a7608ea07d4c415970145bfbb3bcdc99211cd2d2f8"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "390 家财富 500 强企业",
+          "industry": "跨行业",
+          "use_case": "使用 Higgsfield 的视觉生产工具进行商业广告和营销内容制作。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c15ac15bf3d0b1a",
+              "quote": "with 390 of the Fortune 500 leveraging their visual production tools",
+              "source_content_hash": "66d04514886f3d3e",
+              "quote_hash": "80938a585be6199a7bd26f85a00bd8589db76acad45f7775ee0da747b05cba20"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Runway",
+          "product": "AI 视频生成工具",
+          "scenario": "面向电影制作人、广告商和大型公司的 AI 视频创作",
+          "target_customer": "电影制作人、广告商、大型公司",
+          "funding_summary": "",
+          "core_difference": "Higgsfield 不训练自有基础模型，而是聚合第三方模型并叠加后训练模型和推理引擎；Runway 被描述为追逐电影制作人和广告商的 AI 视频实验室。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-35d27946fd70aa42",
+              "quote": "Well-funded labs are racing to build massive models, while startups like Runway and Synthesia chase filmmakers, advertisers, and large companies.",
+              "source_content_hash": "0d8d55e9f8e4182e",
+              "quote_hash": "e0aa6df66ca9296780e9e2388ce173f5e02f86386fbef769041ec084370ddf63"
+            },
+            {
+              "source_id": "FISRC-35d27946fd70aa42",
+              "quote": "Instead of training its own foundation models, the startup plugs into third-party systems from players like OpenAI and Google, then layers its own technology on top.",
+              "source_content_hash": "0d8d55e9f8e4182e",
+              "quote_hash": "3db6b032dd12c18b521998cfd24bf0369bb7b7c51465161c39e83d3a02e1bb02"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Synthesia",
+          "product": "AI 视频生成工具",
+          "scenario": "面向电影制作人、广告商和大型公司的 AI 视频创作",
+          "target_customer": "电影制作人、广告商、大型公司",
+          "funding_summary": "",
+          "core_difference": "Higgsfield 通过聚合第三方模型和自有后训练模型提供角色与品牌一致性控制；Synthesia 被描述为追逐电影制作人和广告商的 AI 视频初创公司。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-35d27946fd70aa42",
+              "quote": "Well-funded labs are racing to build massive models, while startups like Runway and Synthesia chase filmmakers, advertisers, and large companies.",
+              "source_content_hash": "0d8d55e9f8e4182e",
+              "quote_hash": "e0aa6df66ca9296780e9e2388ce173f5e02f86386fbef769041ec084370ddf63"
+            }
+          ],
+          "entity_id": "EN-fa6d7e7ab893803f"
+        },
+        {
+          "name": "Cursor",
+          "product": "AI 编程平台",
+          "scenario": "AI 软件开发的快速采用",
+          "target_customer": "开发者",
+          "funding_summary": "Cursor 被 SpaceX 以 600 亿美元收购，去年 ARR 已超 5 亿美元，据报道现已达 40 亿美元 ARR。",
+          "core_difference": "Higgsfield 希望与 Cursor 和 Lovable 处于同一增长叙事中，但 Higgsfield 面向非技术用户的 AI 媒体创作，而 Cursor 面向 AI 编程。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cea1e49d9927fb6a",
+              "quote": "With that kind of growth, Higgsfield wants to be in the same conversation as Cursor and Lovable, two companies that have become shorthand for the rapid speed of AI software adoption.",
+              "source_content_hash": "35d9cdba64c85e8e",
+              "quote_hash": "46e7365ea8059e97ffc662eeae92710717feee1792000d53385295a97d735d23"
+            },
+            {
+              "source_id": "FISRC-cea1e49d9927fb6a",
+              "quote": "Fellow AI coding startup Cursor, which was just acquired by SpaceX for $60 billion, said last year it had surpassed $500 million in ARR and now has reportedly reached $4 billion in ARR.",
+              "source_content_hash": "35d9cdba64c85e8e",
+              "quote_hash": "7daac8e921ed7f5532a48b14260833d091c58f76a72cbb903346da77d6222399"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Lovable",
+          "product": "AI 编程平台",
+          "scenario": "AI 软件开发的快速采用",
+          "target_customer": "开发者",
+          "funding_summary": "Lovable 本月表示已达到 5 亿美元 ARR。",
+          "core_difference": "Higgsfield 面向非技术用户的 AI 媒体创作，而 Lovable 面向 AI 编程。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cea1e49d9927fb6a",
+              "quote": "AI coding platform Lovable said this month that it reached $500 million in ARR",
+              "source_content_hash": "35d9cdba64c85e8e",
+              "quote_hash": "f8f236e9943f156d7754f29c68dccc13dff8825b8b6e33633e2a4f86f3ee0365"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "年化收入运行率",
+          "value": "5 亿美元",
+          "observed_at": "2026-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0e20d4e113ddcf9b",
+              "quote": "Higgsfield crossed a $500M annualized revenue run rate in June",
+              "source_content_hash": "d4674307be948188",
+              "quote_hash": "9840a67533acf7afd38697c067a407023ff3119ec9c15869a1fa5b0825424842"
+            }
+          ]
+        },
+        {
+          "label": "全球用户数",
+          "value": "超过 3000 万",
+          "observed_at": "2026-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b235ace767812393",
+              "quote": "The company said it serves more than 30 million users globally across 238 countries and territories",
+              "source_content_hash": "06ecfd55822882e3",
+              "quote_hash": "71e393329e64da412f925734a90150f59940fa2a0a6a97a06afa1c78221573a6"
+            }
+          ]
+        },
+        {
+          "label": "覆盖国家与地区",
+          "value": "238 个",
+          "observed_at": "2026-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b235ace767812393",
+              "quote": "across 238 countries and territories",
+              "source_content_hash": "06ecfd55822882e3",
+              "quote_hash": "ada3c816c41bc7cfad2c8c772c8681a6a3844480d54572c6422edcf79d54420a"
+            }
+          ]
+        },
+        {
+          "label": "财富 500 强客户数",
+          "value": "390 家",
+          "observed_at": "2026-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c15ac15bf3d0b1a",
+              "quote": "with 390 of the Fortune 500 leveraging their visual production tools",
+              "source_content_hash": "66d04514886f3d3e",
+              "quote_hash": "80938a585be6199a7bd26f85a00bd8589db76acad45f7775ee0da747b05cba20"
+            }
+          ]
+        },
+        {
+          "label": "智能体工具使用增长",
+          "value": "三个月内增长 42 倍",
+          "observed_at": "2026-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b235ace767812393",
+              "quote": "agentic tool use on the platform increased 42-fold in just three months",
+              "source_content_hash": "06ecfd55822882e3",
+              "quote_hash": "400aaaddcd0bd93e2df330efa7e5e0f04c99ca8c14aaaabdae4f721975648e0c"
+            }
+          ]
+        },
+        {
+          "label": "月内容生成量",
+          "value": "超过 2000 万次",
+          "observed_at": "2026-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b235ace767812393",
+              "quote": "leading to more than 20 million content generations per month",
+              "source_content_hash": "06ecfd55822882e3",
+              "quote_hash": "646d40073f81a8d35bb712d7cd996486d134211d836be6ef66f60a24ce4565e8"
+            }
+          ]
+        },
+        {
+          "label": "平均客户年支出",
+          "value": "约 1000 美元",
+          "observed_at": "2026-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0e20d4e113ddcf9b",
+              "quote": "The average Higgsfield customer spends around $1,000 a year.",
+              "source_content_hash": "d4674307be948188",
+              "quote_hash": "cd768121978e5d20fe6bdca75dfdff04c5b1691bc73b12733456b27daf828781"
+            }
+          ]
+        },
+        {
+          "label": "代理商收入占比",
+          "value": "约 70%",
+          "observed_at": "2026-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0e20d4e113ddcf9b",
+              "quote": "Roughly 70% of that revenue is agencies",
+              "source_content_hash": "d4674307be948188",
+              "quote_hash": "92ade4c1c0e8a0d011f7bbf9153ae4ab5efa2de15059f6d4dbe56424ea417db5"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Alex Mashrabov",
+          "quote": "We minimize the production tax so that, eventually, better stories and better ideas win.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-35d27946fd70aa42",
+              "quote": "We minimize the production tax so that, eventually, better stories and better ideas win",
+              "source_content_hash": "0d8d55e9f8e4182e",
+              "quote_hash": "a73489939d1c0712808ffab47de5bd426f36b4a6a3b67fc1e7ce3b4993f53087"
+            }
+          ]
+        },
+        {
+          "speaker": "AdQUA Interactive",
+          "quote": "Higgsfield offers an all-in-one integrated environment that brings together leading generative models in a single place.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8e347c4d541d1a08",
+              "quote": "Higgsfield offers an all-in-one integrated environment that brings together leading generative models in a single place.",
+              "source_content_hash": "74772097c452f77b",
+              "quote_hash": "75fe443ee3ddbac420a123f59bd4c105976a9531dc6583e7307d79f2633c334c"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是 Higgsfield 作为模型聚合层和视觉推理引擎的定位：它不训练基础模型，而是通过聚合自有及第三方模型、叠加后训练和角色一致性控制，将 AI 视频生成转化为企业可用的营销生产工具。本轮 4 亿美元融资将估值从 1 月的 13 亿美元推高至 54 亿美元，依赖的已验证信号包括：年化收入运行率从 2025 年底的 2 亿美元增至 2026 年 6 月的 5 亿美元，且公司在 5 月底实现现金流为正；平台覆盖超过 3000 万用户和 390 家财富 500 强企业；智能体工具使用在 Supercomputer 推出后三个月内增长 42 倍。证据边界在于：来源未提供本轮投资机构的公开投资原话，因此无法确认机构层面的具体投资逻辑；收入运行率数据来自公司自述和访谈，未经独立审计验证。",
+        "validated_signals": [
+          "年化收入运行率从 2025 年底的 2 亿美元增至 2026 年 6 月的 5 亿美元",
+          "2026 年 5 月底实现现金流为正",
+          "平台覆盖超过 3000 万用户和 390 家财富 500 强企业",
+          "Supercomputer 推出后智能体工具使用三个月内增长 42 倍",
+          "代理商贡献约 70% 收入，平均客户年支出约 1000 美元"
+        ],
+        "risks": [
+          "收入运行率数据来自公司自述和访谈，未经独立审计验证，存在定义口径争议",
+          "公司自身调查发现近 30% 的创作者未向客户披露使用 AI 工具，AI 生成内容的质量和合规风险可能影响企业客户信任",
+          "对第三方模型的依赖使其面临模型供应商自建应用层或调整 API 策略的潜在威胁"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "content_creation",
+          "marketing",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "media_entertainment",
+          "retail_ecommerce",
+          "professional_services"
+        ],
+        "target_user_ids": [
+          "business_user",
+          "consumer"
+        ],
+        "sector": "生成式 AI 视频与图像创作平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 Higgsfield 作为模型聚合层和视觉推理引擎的定位：它不训练基础模型，而是通过聚合自有及第三方模型、叠加后训练和角色一致性控制，将 AI 视频生成转化为企业可用的营销生产工具。本轮 4 亿美元融资将估值从 1 月的 13 亿美元推高至 54 亿美元，依赖的已验证信号包括：年化收入运行率从 2025 年底的 2 亿美元增至 2026 年 6 月的 5 亿美元，且公司在 5 月底实现现金流为正；平台覆盖超过 3000 万用户和 390 家财富 500 强企业；智能体工具使用在 Supercomputer 推出后三个月内增长 42 倍。证据边界在于：来源未提供本轮投资机构的公开投资原话，因此无法确认机构层面的具体投资逻辑；收入运行率数据来自公司自述和访谈，未经独立审计验证。",
+          "evidence_signals": [
+            "年化收入运行率从 2025 年底的 2 亿美元增至 2026 年 6 月的 5 亿美元",
+            "2026 年 5 月底实现现金流为正",
+            "平台覆盖超过 3000 万用户和 390 家财富 500 强企业",
+            "Supercomputer 推出后智能体工具使用三个月内增长 42 倍",
+            "代理商贡献约 70% 收入，平均客户年支出约 1000 美元"
+          ],
+          "risks": [
+            "收入运行率数据来自公司自述和访谈，未经独立审计验证，存在定义口径争议",
+            "公司自身调查发现近 30% 的创作者未向客户披露使用 AI 工具，AI 生成内容的质量和合规风险可能影响企业客户信任",
+            "对第三方模型的依赖使其面临模型供应商自建应用层或调整 API 策略的潜在威胁"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Higgsfield 平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Supercomputer",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Cinema Studio",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Alex Mashrabov",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Yerzat Dulat",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "DST Global",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Tribe Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Growth Equity at Goldman Sachs Alternatives",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Smash Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Fifth Wall",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Valor Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Intel Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Liberty Global Tech Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Mirae Asset Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "NTT DOCOMO Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Accel",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Menlo Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "AI Capital Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "GFT Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Capra Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "BAM Corner Point",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "BroadLight Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Natalia Vodianova Arnault",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "GFT Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "BroadLight Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "NextEquity",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Menlo Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Accel",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "AdQUA Interactive",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Boosterz",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Boxel Studio",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "390 家财富 500 强企业",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Runway",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Synthesia",
+          "canonical_entity_id": "EN-fa6d7e7ab893803f",
+          "canonical_name": "Synthesia"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Cursor",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Lovable",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [],
+      "research_sources": [
+        {
+          "source_id": "FISRC-c0c8574fa0b1adfd",
+          "source_url": "https://www.ithome.com/0/990/588.htm",
+          "title": "AI 视频生成平台 Higgsfield 融资 4 亿美元，估值达 54 亿美元",
+          "publisher": "IT之家（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-18T00:22:31.727Z",
+          "content_hash": "1b69c60cd0cee376",
+          "source_artifact_id": "SA-1aa72e1122f4636d",
+          "raw_id": "RAW-25eab898fea8bddb"
+        },
+        {
+          "source_id": "FISRC-35d27946fd70aa42",
+          "source_url": "https://techstartups.com/2026/01/15/ai-video-startup-higgsfield-raises-80m-at-1-3b-valuation-as-demand-for-generative-video-surges/",
+          "title": "AI video startup Higgsfield raises $80M at $1.3B valuation as demand for generative video surges - Tech Startups",
+          "publisher": "techstartups.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T02:53:35.495Z",
+          "content_hash": "0d8d55e9f8e4182e",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-0e20d4e113ddcf9b",
+          "source_url": "https://www.saastr.com/500m-arr-60-engineers-cash-flow-positive-how-higgsfield-actually-runs-with-ceo-alex-mashrabov/",
+          "title": "$500M ARR, 60 Engineers, Cash-Flow Positive: How Higgsfield Actually Runs, With CEO Alex Mashrabov | SaaStrAI",
+          "publisher": "saastr.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T02:53:35.144Z",
+          "content_hash": "d4674307be948188",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-8e347c4d541d1a08",
+          "source_url": "https://higgsfield.ai/creator-hub/case-studies/adqua-case-study",
+          "title": "How One of Korea's Leading Digital Agencies, AdQUA, Cut AI Production Costs by 97% with Higgsfield",
+          "publisher": "higgsfield.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T02:53:35.246Z",
+          "content_hash": "74772097c452f77b",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-543aa70e694fb259",
+          "source_url": "https://higgsfield.ai/creator-hub/case-studies/boxel-studio-higgsfield-case-study",
+          "title": "How Boxel Studio, the Team Behind Netflix and Hulu Hits, Brought AI Into Pre-production With Higgsfield",
+          "publisher": "higgsfield.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T02:53:35.287Z",
+          "content_hash": "8b2003b803af0849",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-b235ace767812393",
+          "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
+          "title": "Higgsfield raises $400M at $5.4 billion valuation to scale video and image generation platform - SiliconANGLE",
+          "publisher": "siliconangle.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T02:53:36.051Z",
+          "content_hash": "06ecfd55822882e3",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-7c15ac15bf3d0b1a",
+          "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
+          "title": "Higgsfield Raises $400M in Series B Funding",
+          "publisher": "finsmes.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-08-18T02:53:35.597Z",
+          "content_hash": "66d04514886f3d3e",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-cea1e49d9927fb6a",
+          "source_url": "https://www.businessinsider.com/higgsfield-revenue-500-million-as-it-raises-a-series-b-2026-6",
+          "title": "Higgsfield Wants to Be the Cursor of AI Video - Business Insider",
+          "publisher": "businessinsider.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T02:53:35.715Z",
+          "content_hash": "35d9cdba64c85e8e",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-18T02:54:45.371Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-18T02:54:45.371Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 8
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Cinema Studio",
+            "Higgsfield 平台",
+            "Supercomputer"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Alex Mashrabov",
+            "Yerzat Dulat"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-1dba157815d84342"
+      ],
+      "aggregation": {
+        "key": "FICO-50b2676afbe30c83|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-6552d438fa2e847e",
+      "triggered_by_event_id": "EV-c6c297156ff274ac",
+      "as_of_date": "2026-08-18",
+      "company": {
+        "entity_id": "EN-1913c6ab46df3a68",
+        "name": "OdyssLife",
+        "full_name": "OdyssLife",
+        "website": "www.odyss.life",
+        "summary": "AI健康硬件公司，成立于2025年下半年，总部位于深圳。创始团队为95后，拥有国内外大厂一线AI产品与技术背景。首款产品Odyss N1是全球首款Always-On智能项链，通过图像、音频、运动多模态感知持续记录用户饮食与运动行为。",
+        "headquarters": "深圳",
+        "founders": [
+          {
+            "name": "Yuyang Pan",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-34ac4235c670177c",
+                "quote": "Odyss founder and CEO Yuyang Pan believes that in dietary scenarios",
+                "source_content_hash": "7da4915015fdb51b",
+                "quote_hash": "8af307b76d61d68f0389fa07bee7d0574d36fd083c701b5765f31705f2d9f7d6"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-34ac4235c670177c",
+            "quote": "OdyssLife was founded in the second half of 2025. Its founding team consists of post-95s generation members with frontline AI product and technical backgrounds at major domestic and international tech companies.",
+            "source_content_hash": "7da4915015fdb51b",
+            "quote_hash": "bd307955d8e9b5ce2a06937ea1a7cbd057d0f8d5200bf09c0e7f427e51bcb8fa"
+          },
+          {
+            "source_id": "FISRC-b3c16112f11927c7",
+            "quote": "Established 2025 Location Shenzhen, Guangdong, China Primary Industry Healthcare IT",
+            "source_content_hash": "6b775033b5c5f56f",
+            "quote_hash": "ef2a33c635d2cd13cd1cba67a659c4ab7b903e28868bc13caa4026cf52e9dde6"
+          }
+        ],
+        "application_entity_id": "EN-1913c6ab46df3a68",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "多轮融资",
+        "amount": "近2亿元人民币",
+        "total_raised": "近2亿元人民币",
+        "announced_at": "2026-08-17",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "HSG",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-34ac4235c670177c",
+                "quote": "The round was led by HSG and Monolith respectively, with existing investors Linear Capital and Creekstone continuing to increase their stakes.",
+                "source_content_hash": "7da4915015fdb51b",
+                "quote_hash": "c798abe303f955d4ff9d092b8045b49c8f88a11ee51338c42ac592b89d7e1953"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Monolith",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-34ac4235c670177c",
+                "quote": "The round was led by HSG and Monolith respectively, with existing investors Linear Capital and Creekstone continuing to increase their stakes.",
+                "source_content_hash": "7da4915015fdb51b",
+                "quote_hash": "c798abe303f955d4ff9d092b8045b49c8f88a11ee51338c42ac592b89d7e1953"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Linear Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-34ac4235c670177c",
+                "quote": "The round was led by HSG and Monolith respectively, with existing investors Linear Capital and Creekstone continuing to increase their stakes.",
+                "source_content_hash": "7da4915015fdb51b",
+                "quote_hash": "c798abe303f955d4ff9d092b8045b49c8f88a11ee51338c42ac592b89d7e1953"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Creekstone",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-34ac4235c670177c",
+                "quote": "The round was led by HSG and Monolith respectively, with existing investors Linear Capital and Creekstone continuing to increase their stakes.",
+                "source_content_hash": "7da4915015fdb51b",
+                "quote_hash": "c798abe303f955d4ff9d092b8045b49c8f88a11ee51338c42ac592b89d7e1953"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Linear Capital",
+            "role": "天使轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-34ac4235c670177c",
+                "quote": "Linear Capital led OdyssLife's angel round and has continued to increase its investment in every subsequent round.",
+                "source_content_hash": "7da4915015fdb51b",
+                "quote_hash": "a7c0d65f44e6e6c705f12efc4c334f9a9353acb57f71f668ae38fe692733db26"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-fc7455eae7da686b",
+            "quote": "After closing a 200 million yuan funding round in Q1 this year, Pan entered a kind of \"retreat\"",
+            "source_content_hash": "6755ee11663799cb",
+            "quote_hash": "c183c525e191a5a170b8a79d096b201dbfc311a629f717b3bdb46216c930aa3e"
+          },
+          {
+            "source_id": "FISRC-34ac4235c670177c",
+            "quote": "On March 26, AI health hardware company OdyssLife (hereafter referred to as Odyss) announced it had recently completed multiple consecutive funding rounds totaling nearly RMB 200 million.",
+            "source_content_hash": "7da4915015fdb51b",
+            "quote_hash": "cc5c12e36923e726dfd9ee03a3396072f56f1c0a6f8faed328a45ba9a4f65ac6"
+          }
+        ],
+        "round_code": "multi_round",
+        "round_original": "多轮连续融资",
+        "amount_original": "近2亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 2 亿元"
+        },
+        "total_raised_original": "近2亿元人民币",
+        "total_raised_normalized": {
+          "currency": "CNY",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 2 亿元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-c6c297156ff274ac",
+            "round_original": "多轮连续融资",
+            "amount": "近2亿元人民币",
+            "announced_at": "2026-08-17",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fc7455eae7da686b",
+                "quote": "After closing a 200 million yuan funding round in Q1 this year, Pan entered a kind of \"retreat\"",
+                "source_content_hash": "6755ee11663799cb",
+                "quote_hash": "c183c525e191a5a170b8a79d096b201dbfc311a629f717b3bdb46216c930aa3e"
+              },
+              {
+                "source_id": "FISRC-34ac4235c670177c",
+                "quote": "On March 26, AI health hardware company OdyssLife (hereafter referred to as Odyss) announced it had recently completed multiple consecutive funding rounds totaling nearly RMB 200 million.",
+                "source_content_hash": "7da4915015fdb51b",
+                "quote_hash": "cc5c12e36923e726dfd9ee03a3396072f56f1c0a6f8faed328a45ba9a4f65ac6"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Odyss N1",
+          "description": "全球首款Always-On智能项链，集成图像、音频、运动多模态感知能力，全天候持续感知并记录用户的饮食和运动行为。核心视觉模块采用低功耗帧捕捉技术，识别食物类型、份量和烹饪方式，结合音频与运动模态提升数据准确性，最终生成个性化健康干预策略。",
+          "target_customers": "高净值人群，包括生物黑客、科技金融从业者、健身爱好者",
+          "features": [
+            "多模态感知（图像、音频、运动）",
+            "低功耗帧捕捉技术",
+            "食物类型、份量、烹饪方式识别",
+            "卡路里、营养素、升糖指数深度学习分析",
+            "个性化健康干预策略生成"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-34ac4235c670177c",
+              "quote": "Its debut product, the Odyss N1, is the world's first Always-On smart necklace , integrating multimodal perception capabilities spanning image, audio, and motion to continuously sense and record users' dietary and exercise behaviors around the clock.",
+              "source_content_hash": "7da4915015fdb51b",
+              "quote_hash": "e3fcaffd02afe823043eeea33bf049905728a9a9fcef607123cd96c3065153bc"
+            },
+            {
+              "source_id": "FISRC-b7795609597035ab",
+              "quote": "The company's first product, Odyss N1, is the world's first all-weather AI smart necklace , whose main function is to monitor dietary intake through a \"shooting\" method.",
+              "source_content_hash": "9ac377769d6bd35b",
+              "quote_hash": "44499069fecac5baa2890f43e7f3b7b5bbcbefaaaf9ce0f94eb2c8137c724924"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "手环/戒指类可穿戴设备",
+          "product": "智能手环、智能戒指",
+          "scenario": "日常饮食监测",
+          "target_customer": "普通消费者",
+          "funding_summary": "",
+          "core_difference": "手环和戒指缺乏视觉能力，无法感知食物；Odyss N1采用项链形态，具备自然广角视野，可容纳低功耗视觉感知摄像头模块，解决传统可穿戴设备无法准确捕捉饮食数据的痛点。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-34ac4235c670177c",
+              "quote": "bracelets and rings lack vision and cannot perceive food; meanwhile, CGMs are medical devices with overly strong medical associations that naturally distance them from ordinary consumers.",
+              "source_content_hash": "7da4915015fdb51b",
+              "quote_hash": "fb23113df4dd669e6887b945e49c2f339e9f045e0a46613a7e22dc19ff7d833c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "CGM（连续血糖监测仪）",
+          "product": "连续血糖监测设备",
+          "scenario": "饮食与代谢健康监测",
+          "target_customer": "医疗场景用户",
+          "funding_summary": "",
+          "core_difference": "CGM属于医疗器械，医疗属性过强，天然与普通消费者产生距离；Odyss N1定位为消费级科技时尚产品，面向高净值人群的日常饮食健康管理。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-34ac4235c670177c",
+              "quote": "CGMs are medical devices with overly strong medical associations that naturally distance them from ordinary consumers.",
+              "source_content_hash": "7da4915015fdb51b",
+              "quote_hash": "06632baec305d49e54726ad8f2826932ec7c415c8cf6c4fb71abee02a1eae640"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "标准西餐卡路里识别准确率",
+          "value": "超过90%",
+          "observed_at": "2026-03-26",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-34ac4235c670177c",
+              "quote": "the Odyss N1 has achieved over 90% accuracy in calorie identification for standard Western cuisine.",
+              "source_content_hash": "7da4915015fdb51b",
+              "quote_hash": "b3097b05e1925221501c04f0d84b3e076f45b0bab0768ea1e5e2bb182f7ab8df"
+            }
+          ]
+        },
+        {
+          "label": "项链重量",
+          "value": "几十克",
+          "observed_at": "2026-03-26",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-34ac4235c670177c",
+              "quote": "it's light enough — just a few dozen grams — to enable truly unobtrusive all-day wear",
+              "source_content_hash": "7da4915015fdb51b",
+              "quote_hash": "63af4b7a36c2952abe901db162988bc1a96147533226ac8adfb440d1607dc66d"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Yuyang Pan",
+          "quote": "In the consumption logic of high-net-worth individuals, wearable devices often carry identity-label functions — no one wants to wear a 'market number two' imitator on their chest.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-34ac4235c670177c",
+              "quote": "In the consumption logic of high-net-worth individuals, wearable devices often carry identity-label functions — no one wants to wear a 'market number two' imitator on their chest",
+              "source_content_hash": "7da4915015fdb51b",
+              "quote_hash": "04f9c6c46ab1f50f50cd1e7fb2d85c5d19fc21726456a9e2b2860283631ba9cd"
+            }
+          ]
+        },
+        {
+          "speaker": "Yuyang Pan",
+          "quote": "Future AI hardware will not be All-in-one devices like smartphones, but rather specialized tools for specialized purposes. The necklace is the optimal form factor for capturing dietary data.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-34ac4235c670177c",
+              "quote": "Pan believes that future AI hardware will not be All-in-one devices like smartphones, but rather specialized tools for specialized purposes. The necklace is the optimal form factor for capturing dietary data.",
+              "source_content_hash": "7da4915015fdb51b",
+              "quote_hash": "e80d102d2b7e8fd0a11d7bef120e758d80f8cb2c6554f9e7a92d3b37415f7557"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Linear Capital",
+            "speaker": "Linear Capital",
+            "speaker_role": "投资机构",
+            "rationale": "Linear Capital看好OdyssLife在AI健康可穿戴领域的开创性产品，认为其团队具备一线AI产品与技术背景，并持续加注每一轮融资。",
+            "quote": "We are delighted to lead the angel round investment in OdyssLife. Its founding team consists of post-95s generation members with first-tier AI product and technical backgrounds from major tech companies.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d601a33ae246f0b1",
+                "quote": "We are delighted to lead the angel round investment in OdyssLife. Its founding team consists of post-95s generation members with first-tier AI product and technical backgrounds from major tech companies.",
+                "source_content_hash": "fd82dce9e8c1e190",
+                "quote_hash": "07cacd55e68f40d0b81fe4dd064384819e1003c64a643698ad9b148c195b067c"
+              }
+            ]
+          },
+          {
+            "institution": "Linear Capital",
+            "speaker": "Linear Capital",
+            "speaker_role": "投资机构",
+            "rationale": "Linear Capital确认OdyssLife完成近2亿元后续轮融资，由Hongshan和Monolith领投，Linear Capital继续跟投，看好其被动饮食追踪能力和北美市场启动计划。",
+            "quote": "Our portfolio company OdyssLife just closed nearly ¥200M in subsequent rounds, led by Hongshan and Monolith. We continue to invest. Odyss is building the world's first always-on AI smart necklace that passively tracks everything you eat — 90%+ calorie accuracy, zero manual logging.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3cccc1ae23122fe2",
+                "quote": "Our portfolio company OdyssLife just closed nearly ¥200M in subsequent rounds, led by Hongshan and Monolith. We continue to invest. Odyss is building the world's first always-on AI smart necklace that passively tracks everything you eat — 90%+ calorie accuracy, zero manual logging.",
+                "source_content_hash": "052d7f97193bf7a1",
+                "quote_hash": "32a2235556c754eaa7bf752a101202b70f23bf68ecf1695bd38440e0ca3d0280"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是AI硬件在饮食健康监测这一高频未数字化场景中的品类定义权。OdyssLife以项链形态解决传统可穿戴设备缺乏视觉感知的物理限制，并通过定制化硬件组件和自研小模型+大模型混合管线构建技术壁垒。已验证信号包括：标准西餐卡路里识别准确率超过90%，创始团队来自华为、字节跳动等一线大厂，Linear Capital从天使轮起每轮持续加注。证据边界在于：产品尚未正式发货，商业化路径仍处于KOL测试和众筹阶段，收入模型未经验证。",
+        "validated_signals": [
+          "标准西餐卡路里识别准确率超过90%",
+          "创始团队拥有华为、字节跳动等一线大厂AI产品与技术背景",
+          "Linear Capital从天使轮起每轮持续加注",
+          "产品已完成从概念到原型测试、制造协作和交付准备的推进"
+        ],
+        "risks": [
+          "产品尚未正式发货，商业化路径仍处于KOL测试和众筹阶段，收入模型未经验证",
+          "通用模型在食物识别和卡路里估算等垂直任务上尚未达到商业级精度，公司依赖自研管线但准确率数据仅覆盖标准西餐",
+          "当前无直接竞品，但公司处于0到1阶段，若3-5家直接竞品出现，供应链成本降低的同时也将面临市场教育压力"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_device",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "cyber_physical_security",
+        "market_application_id": "",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "healthcare_life_sciences"
+        ],
+        "target_user_ids": [
+          "consumer"
+        ],
+        "sector": "AI健康硬件",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI硬件在饮食健康监测这一高频未数字化场景中的品类定义权。OdyssLife以项链形态解决传统可穿戴设备缺乏视觉感知的物理限制，并通过定制化硬件组件和自研小模型+大模型混合管线构建技术壁垒。已验证信号包括：标准西餐卡路里识别准确率超过90%，创始团队来自华为、字节跳动等一线大厂，Linear Capital从天使轮起每轮持续加注。证据边界在于：产品尚未正式发货，商业化路径仍处于KOL测试和众筹阶段，收入模型未经验证。",
+          "evidence_signals": [
+            "标准西餐卡路里识别准确率超过90%",
+            "创始团队拥有华为、字节跳动等一线大厂AI产品与技术背景",
+            "Linear Capital从天使轮起每轮持续加注",
+            "产品已完成从概念到原型测试、制造协作和交付准备的推进"
+          ],
+          "risks": [
+            "产品尚未正式发货，商业化路径仍处于KOL测试和众筹阶段，收入模型未经验证",
+            "通用模型在食物识别和卡路里估算等垂直任务上尚未达到商业级精度，公司依赖自研管线但准确率数据仅覆盖标准西餐",
+            "当前无直接竞品，但公司处于0到1阶段，若3-5家直接竞品出现，供应链成本降低的同时也将面临市场教育压力"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Odyss N1",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Yuyang Pan",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "HSG",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Monolith",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Linear Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Creekstone",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Linear Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "手环/戒指类可穿戴设备",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "CGM（连续血糖监测仪）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-c6c297156ff274ac",
+          "date": "2026-08-17",
+          "title": "融完2亿元后，一位AI硬件创业者的奥德赛之旅",
+          "amount": "200 million",
+          "source_refs": [
+            "SA-3b67217317bce01a"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-fc7455eae7da686b",
+          "source_url": "https://elsewhere.news/zh/linearcapital/2ai-linear-voice",
+          "title": "融完2亿元后，一位AI硬件创业者的奥德赛之旅 | Linear Voice",
+          "publisher": "elsewhere：文章（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-18T00:21:59.925Z",
+          "content_hash": "6755ee11663799cb",
+          "source_artifact_id": "SA-3b67217317bce01a",
+          "raw_id": "RAW-ed4e9f834fbde5d0"
+        },
+        {
+          "source_id": "FISRC-34ac4235c670177c",
+          "source_url": "https://elsewhere.news/en/linearcapital/odysslife2-linear-portfolio",
+          "title": "\"OdyssLife\" Closes Nearly 200 Million Yuan in New Funding, Linear Capital Continues to Double Down | Linear Portfolio | elsewhere",
+          "publisher": "elsewhere.news",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T02:53:27.216Z",
+          "content_hash": "7da4915015fdb51b",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-d601a33ae246f0b1",
+          "source_url": "https://www.linkedin.com/posts/linear-venture_linearcapital-odysslife-ai-activity-7406261705153929216-BMgI",
+          "title": "#linearcapital #odysslife #ai #hardware #healthcareai | Linear Capital",
+          "publisher": "linkedin.com",
+          "source_class": "secondary",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T02:53:26.619Z",
+          "content_hash": "fd82dce9e8c1e190",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-b3c16112f11927c7",
+          "source_url": "https://www.preqin.com/data/profile/asset/odysslife/782995",
+          "title": "OdyssLife Asset Profile | Preqin",
+          "publisher": "preqin.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T02:53:26.463Z",
+          "content_hash": "6b775033b5c5f56f",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-b7795609597035ab",
+          "source_url": "https://en.orangebaysports.com/post/466866/",
+          "title": "Sequoia China and Monolith Capital Lead Investment in AI Necklace Startup Founded by Former Huawei and ByteDance Product Managers – Orange Bay Sports",
+          "publisher": "en.orangebaysports.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T02:53:27.687Z",
+          "content_hash": "9ac377769d6bd35b",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-3cccc1ae23122fe2",
+          "source_url": "https://www.linkedin.com/posts/linear-venture_aihardware-healthtech-venturecapital-activity-7444194249249665024-0-1U",
+          "title": "#aihardware #healthtech #venturecapital #hiring #linearcapital #odysslife | Linear Capital",
+          "publisher": "linkedin.com",
+          "source_class": "secondary",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T02:53:27.971Z",
+          "content_hash": "052d7f97193bf7a1",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-18T02:54:21.638Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-18T02:54:21.638Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Odyss N1"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Yuyang Pan"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-c6c297156ff274ac"
+      ],
+      "aggregation": {
+        "key": "EN-1913c6ab46df3a68|multi_round",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-b42507481c91e73a",
+      "triggered_by_event_id": "EV-d43103952399bc68",
+      "as_of_date": "2026-08-18",
+      "company": {
+        "entity_id": "EN-8c5929d253b07fed",
+        "name": "Wispr",
+        "full_name": "Wispr",
+        "website": "https://wisprflow.ai",
+        "summary": "Wispr 是一家以 AI 语音听写工具闻名的初创公司，正在将业务从听写拓展至会议记录等新领域。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "Tanay Kothari",
+            "role": "CEO & Co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-484016eb6821264f",
+                "quote": "Tanay Kothari CEO & Co-founder",
+                "source_content_hash": "77680d6460c673ea",
+                "quote_hash": "c29db85a168d3372cf71a090f1eb5a5c55960dae271c8f70354939ee2a10738b"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c7de0ac22c0c4ca3",
+            "quote": "Wispr , a startup known for its AI dictation tool, raised $280 million in Series B funding",
+            "source_content_hash": "ee00eb4103124f93",
+            "quote_hash": "265d075a420e63fa28b6c63ebfcaf2fcfb9a54e6ef11977e9693466bdb60f452"
+          },
+          {
+            "source_id": "FISRC-484016eb6821264f",
+            "quote": "Today we're announcing $280 million in Series B funding at a $2 billion valuation, led by our long-time investor and partner Menlo Ventures.",
+            "source_content_hash": "77680d6460c673ea",
+            "quote_hash": "8753ab0400b0747bad272193429003c4b49b42b0259e5e1c63d3d7dd0ca788cc"
+          }
+        ],
+        "application_entity_id": "EN-8c5929d253b07fed",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "B轮",
+        "amount": "$280M",
+        "total_raised": "$361 million",
+        "announced_at": "2026-08-17",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Menlo Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c7de0ac22c0c4ca3",
+                "quote": "raised $280 million in Series B funding, led by Menlo Ventures",
+                "source_content_hash": "ee00eb4103124f93",
+                "quote_hash": "4ce46948a07016e67be78b2172659ab1be74d3b92043c967087099594a99c16c"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Notable Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e7a3713da8f3e54",
+                "quote": "with participation from existing investors including Notable Capital, NEA, Neo Ventures, 8VC, and MVP Ventures, alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
+                "source_content_hash": "affdfd9a0ccfb188",
+                "quote_hash": "aba568fee486e1922b966cf3934b60f576f64daef335bb8592e1d089190091dd"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "NEA",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e7a3713da8f3e54",
+                "quote": "with participation from existing investors including Notable Capital, NEA, Neo Ventures, 8VC, and MVP Ventures, alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
+                "source_content_hash": "affdfd9a0ccfb188",
+                "quote_hash": "aba568fee486e1922b966cf3934b60f576f64daef335bb8592e1d089190091dd"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Neo Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e7a3713da8f3e54",
+                "quote": "with participation from existing investors including Notable Capital, NEA, Neo Ventures, 8VC, and MVP Ventures, alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
+                "source_content_hash": "affdfd9a0ccfb188",
+                "quote_hash": "aba568fee486e1922b966cf3934b60f576f64daef335bb8592e1d089190091dd"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "8VC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e7a3713da8f3e54",
+                "quote": "with participation from existing investors including Notable Capital, NEA, Neo Ventures, 8VC, and MVP Ventures, alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
+                "source_content_hash": "affdfd9a0ccfb188",
+                "quote_hash": "aba568fee486e1922b966cf3934b60f576f64daef335bb8592e1d089190091dd"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "MVP Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e7a3713da8f3e54",
+                "quote": "with participation from existing investors including Notable Capital, NEA, Neo Ventures, 8VC, and MVP Ventures, alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
+                "source_content_hash": "affdfd9a0ccfb188",
+                "quote_hash": "aba568fee486e1922b966cf3934b60f576f64daef335bb8592e1d089190091dd"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Acrew",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e7a3713da8f3e54",
+                "quote": "alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
+                "source_content_hash": "affdfd9a0ccfb188",
+                "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Forerunner",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e7a3713da8f3e54",
+                "quote": "alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
+                "source_content_hash": "affdfd9a0ccfb188",
+                "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Goodwater",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e7a3713da8f3e54",
+                "quote": "alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
+                "source_content_hash": "affdfd9a0ccfb188",
+                "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Peak XV",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e7a3713da8f3e54",
+                "quote": "alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
+                "source_content_hash": "affdfd9a0ccfb188",
+                "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Together Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e7a3713da8f3e54",
+                "quote": "alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
+                "source_content_hash": "affdfd9a0ccfb188",
+                "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "PLUS Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e7a3713da8f3e54",
+                "quote": "alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
+                "source_content_hash": "affdfd9a0ccfb188",
+                "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Activate",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-484016eb6821264f",
+                "quote": "New investors include Acrew, Activate, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
+                "source_content_hash": "77680d6460c673ea",
+                "quote_hash": "2e3f8b599b390106e7b777c73b2a64f4965f04022080ab163a09c0491b42adf0"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c7de0ac22c0c4ca3",
+            "quote": "Wispr raises $280M at $2B valuation as it looks beyond dictation",
+            "source_content_hash": "ee00eb4103124f93",
+            "quote_hash": "f94cb4bd1da891cf6857653a2917d79246b87bfe00f6f866d6a525fd22bfcfd0"
+          },
+          {
+            "source_id": "FISRC-c7de0ac22c0c4ca3",
+            "quote": "Wispr , a startup known for its AI dictation tool, raised $280 million in Series B funding, led by Menlo Ventures, at a $2 billion valuation",
+            "source_content_hash": "ee00eb4103124f93",
+            "quote_hash": "33d9519fcfb4b0bcf9d2aaf79c5cb4eda80575ccc22a817d274c0420e0219b0f"
+          },
+          {
+            "source_id": "FISRC-484016eb6821264f",
+            "quote": "The round brings our total capital raised to $361 million.",
+            "source_content_hash": "77680d6460c673ea",
+            "quote_hash": "1c98d2cd0ae7f1e1d8b1f75b0bbf3307acaa5fcf318a897ac9f75f0210be99d4"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$280M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 280000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.8 亿美元"
+        },
+        "total_raised_original": "$361 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 361000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.61 亿美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-d43103952399bc68",
+            "round_original": "B轮",
+            "amount": "$280M",
+            "announced_at": "2026-08-17",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c7de0ac22c0c4ca3",
+                "quote": "Wispr raises $280M at $2B valuation as it looks beyond dictation",
+                "source_content_hash": "ee00eb4103124f93",
+                "quote_hash": "f94cb4bd1da891cf6857653a2917d79246b87bfe00f6f866d6a525fd22bfcfd0"
+              },
+              {
+                "source_id": "FISRC-c7de0ac22c0c4ca3",
+                "quote": "Wispr , a startup known for its AI dictation tool, raised $280 million in Series B funding, led by Menlo Ventures, at a $2 billion valuation",
+                "source_content_hash": "ee00eb4103124f93",
+                "quote_hash": "33d9519fcfb4b0bcf9d2aaf79c5cb4eda80575ccc22a817d274c0420e0219b0f"
+              },
+              {
+                "source_id": "FISRC-484016eb6821264f",
+                "quote": "The round brings our total capital raised to $361 million.",
+                "source_content_hash": "77680d6460c673ea",
+                "quote_hash": "1c98d2cd0ae7f1e1d8b1f75b0bbf3307acaa5fcf318a897ac9f75f0210be99d4"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Wispr Flow Dictation",
+          "description": "将语音转化为清晰、精炼文字的 AI 语音听写工具，可在所有应用中使用。",
+          "target_customers": "专业人士、领导者、开发者、创作者、客户支持、学生、律师、销售人员等",
+          "features": [
+            "语音转文字",
+            "自动标点",
+            "Snippets 语音快捷指令",
+            "支持多语言混合"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-484016eb6821264f",
+              "quote": "Wispr Flow Dictation The voice-to-text AI that turns speech into clear, polished writing in every app.",
+              "source_content_hash": "77680d6460c673ea",
+              "quote_hash": "710012cf0ecb4fbca3337a900c45dc103b42b7635a0becd6dd231bc141c45ff5"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Wispr Flow Notetaker",
+          "description": "会议记录工具，可自动记录会议、识别发言人、生成摘要并支持跨会议搜索。",
+          "target_customers": "参加各类会议的专业人士和团队",
+          "features": [
+            "自动记录会议",
+            "识别发言人姓名",
+            "生成结构化摘要",
+            "跨会议、消息和邮件搜索",
+            "通过 MCP 连接 Claude、ChatGPT、Cursor 等 AI 工具"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fa9773d32433a7ef",
+              "quote": "WISPR FLOW NOTETAKER Meeting notes that get the details right.",
+              "source_content_hash": "1a585377224f3193",
+              "quote_hash": "748b132d91be71da4496817053c9dea5763c4c79724b51968132d411feefb89e"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Canto",
+          "description": "Wispr 首个专有语音模型，针对真实环境中的背景噪音、口音、音乐等条件构建，将错误率从 30% 以上降至 5-10%。",
+          "target_customers": "Wispr Flow 用户",
+          "features": [
+            "在嘈杂环境下降低词错误率",
+            "支持多语言混合",
+            "利用个人词典和联系人姓名"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-484016eb6821264f",
+              "quote": "Alongside the funding, we're announcing a preview of our first proprietary speech model, Canto.",
+              "source_content_hash": "77680d6460c673ea",
+              "quote_hash": "33eea2f747ebdb30a2f3f66c92a5d6c5e17f6e82e6721d516eb32737f0a8bb30"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Clay",
+          "industry": "software",
+          "use_case": "GTM 团队使用 Flow 加速客户演示、邮件跟进、Slack 交接、CRM 更新等工作流",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fbba224209ac6b2e",
+              "quote": "Clay deployed Wispr Flow the default input layer across its entire GTM stack",
+              "source_content_hash": "0937940f024204a1",
+              "quote_hash": "922139f00b3eb3ae552da27b574578dffec1757de960e8e6fe60e806c85e80fd"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Steven Bartlett",
+          "industry": "media_entertainment",
+          "use_case": "使用 Flow 加速跨应用、跨设备、跨时区的沟通和 AI 代理编排",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d62b0a3fa95c4864",
+              "quote": "Steven Bartlett hosts the world's #2 podcast, runs a $425M creator holding company, and manages a portfolio of 40+ investments across two continents. He uses Wispr Flow to communicate 6x faster across all of it.",
+              "source_content_hash": "b5eb45ab10387af4",
+              "quote_hash": "bfe18a319467009656affb1a912447f7bc6058b0387e0dc3ecd6908848e04508"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Dean Payn",
+          "industry": "professional_services",
+          "use_case": "使用 Flow 和 Snippets 加速邮件回复、会议记录、AI 提示词输入",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e6fe22afac526b0c",
+              "quote": "Dean Payn is a multi-business founder and advisor running consulting, leadership, and coworking ventures across New Zealand.",
+              "source_content_hash": "113f9104e186943c",
+              "quote_hash": "e35f60b51d0eff79566297c3aae4bfbc9a0ee98837f80bcfe5e6c8cb0fb2c84c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Superhuman",
+          "industry": "software",
+          "use_case": "Superhuman 团队使用 Flow for Teams 加速沟通",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-86588c7c5e683c97",
+              "quote": "The Superhuman Team uses Flow for Teams",
+              "source_content_hash": "004945ecaf45c5ff",
+              "quote_hash": "e35e66b8a0d47c028ac7ed04eb44ed32a520b70bdb7044efb5a130a1cbc06c12"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Granola",
+          "product": "Granola 会议记录工具",
+          "scenario": "会议记录与笔记导入",
+          "target_customer": "会议记录用户",
+          "funding_summary": "",
+          "core_difference": "Wispr Notetaker 支持从 Granola 一键导入全部历史记录，而 Granola 本身不具备 Wispr 的语音听写模型 Canto 和跨会议搜索能力。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fa9773d32433a7ef",
+              "quote": "Coming from Granola? Your entire history moves over in one click.",
+              "source_content_hash": "1a585377224f3193",
+              "quote_hash": "3c87b4fb675438956b623989bf662e0e3925ad90096a502ff5f3ddab031f90c3"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Otter",
+          "product": "Otter 会议记录工具",
+          "scenario": "会议记录与笔记迁移",
+          "target_customer": "会议记录用户",
+          "funding_summary": "",
+          "core_difference": "Wispr Notetaker 可通过 Claude 和 MCP 将 Otter 的现有笔记与 Notetaker 并行连接，保持可搜索性，而 Otter 本身不具备 Wispr 的语音模型和 MCP 集成能力。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fa9773d32433a7ef",
+              "quote": "For other tools, you can connect your existing notes alongside Notetaker through Claude and MCP, keeping everything searchable in one place while your new meeting history builds.",
+              "source_content_hash": "1a585377224f3193",
+              "quote_hash": "b7ba82c310c1581c766cd6ba8d227cf09bb36741e794666399229663c9e6f08b"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Fathom",
+          "product": "Fathom 会议记录工具",
+          "scenario": "会议记录与笔记迁移",
+          "target_customer": "会议记录用户",
+          "funding_summary": "",
+          "core_difference": "Wispr Notetaker 可通过 Claude 和 MCP 将 Fathom 的现有笔记与 Notetaker 并行连接，保持可搜索性，而 Fathom 本身不具备 Wispr 的语音模型和 MCP 集成能力。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fa9773d32433a7ef",
+              "quote": "For other tools, you can connect your existing notes alongside Notetaker through Claude and MCP, keeping everything searchable in one place while your new meeting history builds.",
+              "source_content_hash": "1a585377224f3193",
+              "quote_hash": "b7ba82c310c1581c766cd6ba8d227cf09bb36741e794666399229663c9e6f08b"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Apple 内置语音转文字",
+          "product": "Apple 语音转文字",
+          "scenario": "移动端语音输入",
+          "target_customer": "移动端用户",
+          "funding_summary": "",
+          "core_difference": "Wispr Flow 提供自然语音识别、自动标点和单手操作，而 Apple 语音转文字需要手动标点且速度慢、易出错。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-86588c7c5e683c97",
+              "quote": "Apple Voice-to-Text with manual punctuation dictation. Extremely slow and frustrating.",
+              "source_content_hash": "004945ecaf45c5ff",
+              "quote_hash": "adb680d4d09467ee4c8542345c46484d4fa608925bcdaf2298374eb53d340003"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "累计融资额",
+          "value": "$361 million",
+          "observed_at": "2026-08-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c7de0ac22c0c4ca3",
+              "quote": "With this latest round, the company has raised $361 million to date.",
+              "source_content_hash": "ee00eb4103124f93",
+              "quote_hash": "ac3c675babe8a6470fe8aa6ae65b5d00805de9ab619da029926a30437941882f"
+            }
+          ]
+        },
+        {
+          "label": "估值",
+          "value": "$2 billion",
+          "observed_at": "2026-08-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c7de0ac22c0c4ca3",
+              "quote": "at a $2 billion valuation",
+              "source_content_hash": "ee00eb4103124f93",
+              "quote_hash": "b31406be518109b19b21b04f51843c07ac18a3a86761d065727d9dfa3297b178"
+            }
+          ]
+        },
+        {
+          "label": "Flow 累计输入字数",
+          "value": "超过 600 亿字",
+          "observed_at": "2026-08-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-484016eb6821264f",
+              "quote": "People have now written more than 60 billion words with Flow.",
+              "source_content_hash": "77680d6460c673ea",
+              "quote_hash": "6cf5c23d9ba8b33e273d1e6379325e517eab8c78b937440d580df83af5456f6a"
+            }
+          ]
+        },
+        {
+          "label": "企业客户覆盖",
+          "value": "几乎全部财富 500 强公司和超过 10,000 家企业",
+          "observed_at": "2026-08-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-484016eb6821264f",
+              "quote": "Flow is also now used by people at almost all of the Fortune 500 companies and over 10,000 enterprises.",
+              "source_content_hash": "77680d6460c673ea",
+              "quote_hash": "871ce8ebf0ec5102686241ae671a68f302494fb85fded263cee550790d4b516a"
+            }
+          ]
+        },
+        {
+          "label": "Canto 模型在嘈杂环境下的词错误率",
+          "value": "从 30%+ 降至 5-10%",
+          "observed_at": "2026-08-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-484016eb6821264f",
+              "quote": "In the hardest conditions, with background noise, wind, heavy accents or music, error rates fall from more than 30% of words to somewhere between 5 and 10%.",
+              "source_content_hash": "77680d6460c673ea",
+              "quote_hash": "a954757c22bc930402bb4265484f4f3ab4263bb99faa3b71705c06ed8d133eb3"
+            }
+          ]
+        },
+        {
+          "label": "Clay 预计年度成本节省",
+          "value": "$3.08M",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fbba224209ac6b2e",
+              "quote": "$3.08M estimated cost savings per year",
+              "source_content_hash": "0937940f024204a1",
+              "quote_hash": "1c59a2ab748b1c17527d19eff00da2e44dbed4a096846d9fdcf079458f9d18ba"
+            }
+          ]
+        },
+        {
+          "label": "Steven Bartlett 团队 Flow 采用率",
+          "value": "89%",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d62b0a3fa95c4864",
+              "quote": "89% of Steven's team now on Wispr Flow",
+              "source_content_hash": "b5eb45ab10387af4",
+              "quote_hash": "9eaf51de5d34843182f6208afd375342f79b75b29997ff4eeb5966fcc7a962bf"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Tanay Kothari",
+          "quote": "The whole reason to talk instead of type is to stay inside your own train of thought.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-484016eb6821264f",
+              "quote": "The whole reason to talk instead of type is to stay inside your own train of thought.",
+              "source_content_hash": "77680d6460c673ea",
+              "quote_hash": "713571084c2b32c5074cf1dfbbb4b1f7aac99f73707cd4994fa2f07bcb69ea8f"
+            }
+          ]
+        },
+        {
+          "speaker": "Domantas Sabonis",
+          "quote": "I use Flow every day. I grew up rotating between English, Spanish, and Lithuanian, and it keeps up with me no matter which one I'm speaking. So the opportunity to invest and support a product I use and believe in was a no brainer.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-484016eb6821264f",
+              "quote": "I use Flow every day. I grew up rotating between English, Spanish, and Lithuanian, and it keeps up with me no matter which one I'm speaking. So the opportunity to invest and support a product I use and believe in was a no brainer.",
+              "source_content_hash": "77680d6460c673ea",
+              "quote_hash": "cacf27d07661ae596cf89d82142d62a4bba2959094bbb691add500f81cc6c105"
+            }
+          ]
+        },
+        {
+          "speaker": "Dave Gilboa",
+          "quote": "Wispr Flow's dictation has always felt like magic. With Notetaker, that magic has gone multiplayer with no extra setup, perfectly formatted notes, and summaries that are actually useful.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fa9773d32433a7ef",
+              "quote": "Wispr Flow's dictation has always felt like magic. With Notetaker, that magic has gone multiplayer with no extra setup, perfectly formatted notes, and summaries that are actually useful.",
+              "source_content_hash": "1a585377224f3193",
+              "quote_hash": "94f375db11a29795e17567dc43bd46feb15ed9969c7fba76d290a5d26d545e54"
+            }
+          ]
+        },
+        {
+          "speaker": "Reid Hoffman",
+          "quote": "People go from frankly quite skeptical to instantly obsessed with Wispr.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fa9773d32433a7ef",
+              "quote": "People go from frankly quite skeptical to instantly obsessed with Wispr.",
+              "source_content_hash": "1a585377224f3193",
+              "quote_hash": "f55e4fe40a45a91a52f2570c530b4c2066b256db0c223dec83e7dd0f085d1ba3"
+            }
+          ]
+        },
+        {
+          "speaker": "Rahul Vohra",
+          "quote": "I'm at least 2-3x faster with Wispr Flow. It's saving me hours a day.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fa9773d32433a7ef",
+              "quote": "I'm at least 2-3x faster with Wispr Flow. It's saving me hours a day.",
+              "source_content_hash": "1a585377224f3193",
+              "quote_hash": "d80209db3c15348b6262398f606463885f51b3d9e2d9964709709d64352aa295"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是语音作为默认输入层的规模化采用，以及专有语音模型 Canto 在真实嘈杂环境下将词错误率从 30%+ 降至 5-10% 所建立的准确率壁垒。本轮 20 亿美元估值所依赖的已验证信号包括：Flow 累计输入超过 600 亿字、覆盖几乎全部财富 500 强公司和超过 10,000 家企业、上一轮融资距今不到 10 个月。证据边界在于：来源未披露收入、付费转化率或净收入留存等财务指标，也未提供 Menlo Ventures 或其他投资方的公开投资论述，因此无法确认估值所对应的商业化质量。",
+        "validated_signals": [
+          "Flow 累计输入超过 600 亿字",
+          "覆盖几乎全部财富 500 强公司和超过 10,000 家企业",
+          "Canto 模型在嘈杂环境下将词错误率从 30%+ 降至 5-10%",
+          "上一轮融资距今不到 10 个月"
+        ],
+        "risks": [
+          "来源未披露收入、付费转化率或净收入留存等财务指标，无法验证 20 亿美元估值的商业化质量",
+          "Notetaker 目前仅支持 Mac 和英语，跨平台与多语言覆盖尚未完成",
+          "会议记录市场竞争激烈，Granola、Otter、Fathom 等既有工具已占据用户心智"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "productivity_enterprise_workflows",
+          "knowledge_search"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user",
+          "consumer"
+        ],
+        "sector": "AI 语音输入与会议记录",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是语音作为默认输入层的规模化采用，以及专有语音模型 Canto 在真实嘈杂环境下将词错误率从 30%+ 降至 5-10% 所建立的准确率壁垒。本轮 20 亿美元估值所依赖的已验证信号包括：Flow 累计输入超过 600 亿字、覆盖几乎全部财富 500 强公司和超过 10,000 家企业、上一轮融资距今不到 10 个月。证据边界在于：来源未披露收入、付费转化率或净收入留存等财务指标，也未提供 Menlo Ventures 或其他投资方的公开投资论述，因此无法确认估值所对应的商业化质量。",
+          "evidence_signals": [
+            "Flow 累计输入超过 600 亿字",
+            "覆盖几乎全部财富 500 强公司和超过 10,000 家企业",
+            "Canto 模型在嘈杂环境下将词错误率从 30%+ 降至 5-10%",
+            "上一轮融资距今不到 10 个月"
+          ],
+          "risks": [
+            "来源未披露收入、付费转化率或净收入留存等财务指标，无法验证 20 亿美元估值的商业化质量",
+            "Notetaker 目前仅支持 Mac 和英语，跨平台与多语言覆盖尚未完成",
+            "会议记录市场竞争激烈，Granola、Otter、Fathom 等既有工具已占据用户心智"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Wispr Flow Dictation",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Wispr Flow Notetaker",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Canto",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Tanay Kothari",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Menlo Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Notable Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "NEA",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Neo Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "8VC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "MVP Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Acrew",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Forerunner",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Goodwater",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Peak XV",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Together Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "PLUS Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Activate",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Clay",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Steven Bartlett",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Dean Payn",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Superhuman",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Granola",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Otter",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Fathom",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Apple 内置语音转文字",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-d43103952399bc68",
+          "date": "2026-08-17",
+          "title": "Wispr 获 2.8 亿美元 B 轮融资，估值 20 亿美元，业务拓展至会议记录",
+          "amount": "$280M",
+          "source_refs": [
+            "SA-cd4fc8aa36935ab0"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-c7de0ac22c0c4ca3",
+          "source_url": "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation",
+          "title": "Wispr 获 2.8 亿美元 B 轮融资，估值 20 亿美元，业务拓展至会议记录",
+          "publisher": "TechCrunch：AI（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-18T00:21:59.886Z",
+          "content_hash": "ee00eb4103124f93",
+          "source_artifact_id": "SA-cd4fc8aa36935ab0",
+          "raw_id": "RAW-e87a31f50d5e69b4"
+        },
+        {
+          "source_id": "FISRC-2e7a3713da8f3e54",
+          "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
+          "title": "Wispr Raises $280M in Series B Funding Led by Menlo Ventures, Valuation Hits $2B | Gate News",
+          "publisher": "gate.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T02:52:44.089Z",
+          "content_hash": "affdfd9a0ccfb188",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-484016eb6821264f",
+          "source_url": "https://wisprflow.ai/post/series-b",
+          "title": "Our Series B, and what it means for you",
+          "publisher": "wisprflow.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T02:52:43.366Z",
+          "content_hash": "77680d6460c673ea",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-fa9773d32433a7ef",
+          "source_url": "https://wisprflow.ai/notetaker",
+          "title": "Notetaker | Wispr Flow",
+          "publisher": "wisprflow.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T02:52:43.373Z",
+          "content_hash": "1a585377224f3193",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-fbba224209ac6b2e",
+          "source_url": "https://wisprflow.ai/case-study/clay",
+          "title": "How Clay drove 20% faster GTM execution with Wispr Flow | Wispr Flow",
+          "publisher": "wisprflow.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T02:52:43.364Z",
+          "content_hash": "0937940f024204a1",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-d62b0a3fa95c4864",
+          "source_url": "https://wisprflow.ai/case-study/steven-bartlett",
+          "title": "How Steven Bartlett got 90% faster across every app, device, and time zone | Wispr Flow",
+          "publisher": "wisprflow.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T02:52:44.114Z",
+          "content_hash": "b5eb45ab10387af4",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-e6fe22afac526b0c",
+          "source_url": "https://wisprflow.ai/case-study/dean-payn",
+          "title": "How a prolific founder stopped writing emails & started talking | Wispr Flow",
+          "publisher": "wisprflow.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T02:52:44.117Z",
+          "content_hash": "113f9104e186943c",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-86588c7c5e683c97",
+          "source_url": "https://wisprflow.ai/case-study/gaurav-vohra",
+          "title": "How Gaurav Vohra from Superhuman uses Flow | Wispr Flow",
+          "publisher": "wisprflow.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T02:52:44.113Z",
+          "content_hash": "004945ecaf45c5ff",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-18T02:53:32.323Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-18T02:53:32.323Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 8
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Canto",
+            "Wispr Flow Dictation",
+            "Wispr Flow Notetaker"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Tanay Kothari"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-d43103952399bc68"
+      ],
+      "aggregation": {
+        "key": "EN-8c5929d253b07fed|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-2616a89ee525dd60",
+      "triggered_by_event_id": "EV-181cd28d97c4e61d",
+      "as_of_date": "2026-08-18",
+      "company": {
+        "entity_id": "EN-0b79cf2de0ee6b8e",
+        "name": "Groq",
+        "full_name": "Groq",
+        "website": "www.groq.com",
+        "summary": "Groq 是一家全球 AI 基础设施平台公司，已从 AI 芯片制造商转型为 neocloud 公司，提供 GPU 和 AI 推理基础设施服务。",
+        "headquarters": "San Francisco, CA",
+        "founders": [
+          {
+            "name": "Jonathan Ross",
+            "role": "创始人兼首席执行官（已加入 Nvidia）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ac5adac4e9ccf0d2",
+                "quote": "Nvidia hired the startup's founder and CEO, Jonathan Ross, and other top talent as part of a licensing deal",
+                "source_content_hash": "75320a63773bebcb",
+                "quote_hash": "908de3c8ed2a3c420812b3fd780db01f1bb7bb6a56335f8f17acc7d40f805a82"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d3491d6f12c50e39",
+            "quote": "Startup Groq has raised $350 million as it continues to pivot from an AI chipmaker to a neocloud company that provides powerful GPUs and AI infrastructure services.",
+            "source_content_hash": "c2954c215a64fb14",
+            "quote_hash": "8b5e79054e9a5bf2c58b10a0eb83fc00ed2bb8872ecd68b16058d2e9f0df2d0b"
+          },
+          {
+            "source_id": "FISRC-c02f2ac04f9320df",
+            "quote": "Groq is a leading global AI infrastructure platform. The company deploys and operates high-performance AI compute across North America, Europe, the Middle East and Asia Pacific, combining infrastructure, inference and cloud services into a single globally distributed platform.",
+            "source_content_hash": "562993f7020da030",
+            "quote_hash": "03a179f040390cbf3c071f506f7c708097fe7e640ece6d591b565f6bfc6f1efa"
+          }
+        ],
+        "application_entity_id": "EN-0b79cf2de0ee6b8e",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "$350M",
+        "total_raised": "$1 billion",
+        "announced_at": "2026-08-17",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Disruptive",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c02f2ac04f9320df",
+                "quote": "Groq LLC (“Groq”) today announced a $350 million Series A fundraise and the round was led by Disruptive, with planned participation from NVIDIA.",
+                "source_content_hash": "562993f7020da030",
+                "quote_hash": "5b45c346ecf01968f41ce6e6ca6fc9e33e390132605e73bc2370eb5cb910acb1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Nvidia",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c02f2ac04f9320df",
+                "quote": "Groq LLC (“Groq”) today announced a $350 million Series A fundraise and the round was led by Disruptive, with planned participation from NVIDIA.",
+                "source_content_hash": "562993f7020da030",
+                "quote_hash": "5b45c346ecf01968f41ce6e6ca6fc9e33e390132605e73bc2370eb5cb910acb1"
+              }
+            ],
+            "entity_id": "EN-8d4321d936320802"
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "BlackRock",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28e142eb564f6762",
+                "quote": "Groq also secured notable investments from BlackRock, Neuberger Berman, Deutsche Telekom Capital Partners, and a major mutual fund manager based on the US West Coast.",
+                "source_content_hash": "b6f5ca4d5c31cfb3",
+                "quote_hash": "ed71500dc8a1a4e18d291568de425fbe6492106f824a8a3e558236c34540a2a0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Neuberger Berman",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28e142eb564f6762",
+                "quote": "Groq also secured notable investments from BlackRock, Neuberger Berman, Deutsche Telekom Capital Partners, and a major mutual fund manager based on the US West Coast.",
+                "source_content_hash": "b6f5ca4d5c31cfb3",
+                "quote_hash": "ed71500dc8a1a4e18d291568de425fbe6492106f824a8a3e558236c34540a2a0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Deutsche Telekom Capital Partners",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28e142eb564f6762",
+                "quote": "Groq also secured notable investments from BlackRock, Neuberger Berman, Deutsche Telekom Capital Partners, and a major mutual fund manager based on the US West Coast.",
+                "source_content_hash": "b6f5ca4d5c31cfb3",
+                "quote_hash": "ed71500dc8a1a4e18d291568de425fbe6492106f824a8a3e558236c34540a2a0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Cisco",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28e142eb564f6762",
+                "quote": "Existing backers such as Cisco, Samsung, Altimeter, D1, 1789 Capital, and Infinitum also participated in this round.",
+                "source_content_hash": "b6f5ca4d5c31cfb3",
+                "quote_hash": "3b8b0f2d6fdc4e05211295d3d973d1a094f085c2aa05c4ff742f5d14a4850982"
+              }
+            ],
+            "entity_id": "EN-e73b79a0b10f8cdb"
+          },
+          {
+            "name": "Samsung",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28e142eb564f6762",
+                "quote": "Existing backers such as Cisco, Samsung, Altimeter, D1, 1789 Capital, and Infinitum also participated in this round.",
+                "source_content_hash": "b6f5ca4d5c31cfb3",
+                "quote_hash": "3b8b0f2d6fdc4e05211295d3d973d1a094f085c2aa05c4ff742f5d14a4850982"
+              }
+            ],
+            "entity_id": "EN-968e2d5b08687bf4"
+          },
+          {
+            "name": "Altimeter",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28e142eb564f6762",
+                "quote": "Existing backers such as Cisco, Samsung, Altimeter, D1, 1789 Capital, and Infinitum also participated in this round.",
+                "source_content_hash": "b6f5ca4d5c31cfb3",
+                "quote_hash": "3b8b0f2d6fdc4e05211295d3d973d1a094f085c2aa05c4ff742f5d14a4850982"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "D1",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28e142eb564f6762",
+                "quote": "Existing backers such as Cisco, Samsung, Altimeter, D1, 1789 Capital, and Infinitum also participated in this round.",
+                "source_content_hash": "b6f5ca4d5c31cfb3",
+                "quote_hash": "3b8b0f2d6fdc4e05211295d3d973d1a094f085c2aa05c4ff742f5d14a4850982"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "1789 Capital",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28e142eb564f6762",
+                "quote": "Existing backers such as Cisco, Samsung, Altimeter, D1, 1789 Capital, and Infinitum also participated in this round.",
+                "source_content_hash": "b6f5ca4d5c31cfb3",
+                "quote_hash": "3b8b0f2d6fdc4e05211295d3d973d1a094f085c2aa05c4ff742f5d14a4850982"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Infinitum",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28e142eb564f6762",
+                "quote": "Existing backers such as Cisco, Samsung, Altimeter, D1, 1789 Capital, and Infinitum also participated in this round.",
+                "source_content_hash": "b6f5ca4d5c31cfb3",
+                "quote_hash": "3b8b0f2d6fdc4e05211295d3d973d1a094f085c2aa05c4ff742f5d14a4850982"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d3491d6f12c50e39",
+            "quote": "Groq raises $350M to fuel its pivot from AI chips to neocloud",
+            "source_content_hash": "c2954c215a64fb14",
+            "quote_hash": "a37c01e8e63e6898b9ed051373530e6379565938c3c35e7351572d5ac4ce0c59"
+          },
+          {
+            "source_id": "FISRC-d3491d6f12c50e39",
+            "quote": "Startup Groq has raised $350 million as it continues to pivot from an AI chipmaker to a neocloud company that provides powerful GPUs and AI infrastructure services.",
+            "source_content_hash": "c2954c215a64fb14",
+            "quote_hash": "8b5e79054e9a5bf2c58b10a0eb83fc00ed2bb8872ecd68b16058d2e9f0df2d0b"
+          },
+          {
+            "source_id": "FISRC-c02f2ac04f9320df",
+            "quote": "This latest round, together with $650 million raised in June 2026, brings recent funding in the company to $1 billion.",
+            "source_content_hash": "562993f7020da030",
+            "quote_hash": "d216bc2580e0a71c9ae2c5210fc8c47507967fea2895d8c01602a801111df80f"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$350M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 350000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.5 亿美元"
+        },
+        "total_raised_original": "$1 billion",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-181cd28d97c4e61d",
+            "round_original": "Series A",
+            "amount": "$350M",
+            "announced_at": "2026-08-17",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d3491d6f12c50e39",
+                "quote": "Groq raises $350M to fuel its pivot from AI chips to neocloud",
+                "source_content_hash": "c2954c215a64fb14",
+                "quote_hash": "a37c01e8e63e6898b9ed051373530e6379565938c3c35e7351572d5ac4ce0c59"
+              },
+              {
+                "source_id": "FISRC-d3491d6f12c50e39",
+                "quote": "Startup Groq has raised $350 million as it continues to pivot from an AI chipmaker to a neocloud company that provides powerful GPUs and AI infrastructure services.",
+                "source_content_hash": "c2954c215a64fb14",
+                "quote_hash": "8b5e79054e9a5bf2c58b10a0eb83fc00ed2bb8872ecd68b16058d2e9f0df2d0b"
+              },
+              {
+                "source_id": "FISRC-c02f2ac04f9320df",
+                "quote": "This latest round, together with $650 million raised in June 2026, brings recent funding in the company to $1 billion.",
+                "source_content_hash": "562993f7020da030",
+                "quote_hash": "d216bc2580e0a71c9ae2c5210fc8c47507967fea2895d8c01602a801111df80f"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "GroqCloud",
+          "description": "Groq 的 AI 推理云平台，提供高速推理服务，支持开发者、企业和 AI 原生公司构建应用。",
+          "target_customers": "开发者、财富 500 强企业、AI 原生公司",
+          "features": [
+            "AI 推理云服务",
+            "NVIDIA 加速计算集群",
+            "全球分布式数据中心"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c02f2ac04f9320df",
+              "quote": "The company serves more than six million developers, Fortune 500 enterprises and thousands of AI-native companies.",
+              "source_content_hash": "562993f7020da030",
+              "quote_hash": "a551fb3716acc86fc6bc1448047b28231b004e9559e5470a3efda1c313cc915e"
+            },
+            {
+              "source_id": "FISRC-28e142eb564f6762",
+              "quote": "The company has been focused on developing its language processing unit and GroqCloud technologies, which aim to provide cost-effective and high-speed computing solutions.",
+              "source_content_hash": "b6f5ca4d5c31cfb3",
+              "quote_hash": "462afe43e5f654b925be476d69df27b096043dbaf5c5354c1ce34f051cb6999a"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "HUMAIN",
+          "industry": "AI 企业",
+          "use_case": "实时 AI 操作系统推理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-28e142eb564f6762",
+              "quote": "In May 2025, Groq was designated as an official inference provider for HUMAIN, an AI enterprise based in Saudi Arabia.",
+              "source_content_hash": "b6f5ca4d5c31cfb3",
+              "quote_hash": "f8fc725834ebbceef6cb2788c7d639c593f40a8197ae746e06fa658356eea7c5"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Paytm",
+          "industry": "支付与平台智能",
+          "use_case": "实时 AI 支付与平台智能",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6392e46ab7e185e1",
+              "quote": "Groq Partners with Paytm: Delivering Real-Time AI for Payments and Platform Intelligence in India",
+              "source_content_hash": "6ec6ccf8188c1986",
+              "quote_hash": "c7df1a93cd6315aad62530478e943e47fc75322daf489d002c4427cc48e6f8a4"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "McLaren Racing",
+          "industry": "赛车运动",
+          "use_case": "官方合作伙伴",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6392e46ab7e185e1",
+              "quote": "McLaren Racing announces Groq as an Official Partner of the McLaren Formula 1 Team",
+              "source_content_hash": "6ec6ccf8188c1986",
+              "quote_hash": "2cd4e5aa6e510deefd0e0b517bfd91bdc37af154354bdbcf75ceeaa8ca718a76"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Meta",
+          "industry": "科技",
+          "use_case": "Llama API 推理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6392e46ab7e185e1",
+              "quote": "Meta and Groq Collaborate to Deliver Fast Inference for the Official Llama API",
+              "source_content_hash": "6ec6ccf8188c1986",
+              "quote_hash": "b2cf5ca2eb63dafad094fd5ea3c0cca55327a0966d58d402762c98db70b34c30"
+            }
+          ],
+          "entity_id": "EN-ea3bd73e2b506e00"
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "CoreWeave",
+          "product": "GPU 云服务",
+          "scenario": "AI 推理与训练基础设施",
+          "target_customer": "企业 AI 工作负载",
+          "funding_summary": "",
+          "core_difference": "CoreWeave 报告了强劲的第二季度收入增长并签下 Meta 和 Anthropic 等大合同，但投资者担忧其高资本支出、债务依赖和硬件贬值；Groq 财务数据仍为私有，但同样处于 Nvidia AI 基础设施生态内。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac5adac4e9ccf0d2",
+              "quote": "CoreWeave reported strong second-quarter revenue growth and recently landed major contracts, including with Meta and Anthropic. However, investors remained concerned about the company's high capital expenditures, heavy reliance on debt, and exposure to rapidly depreciating hardware, and its ability to turn growth into free cash flow.",
+              "source_content_hash": "75320a63773bebcb",
+              "quote_hash": "82fa432c420fdd0694927cb15cae0ea85d42f29e1d3b2db304830652170f1bf1"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Lambda",
+          "product": "GPU 云服务",
+          "scenario": "AI 推理与训练基础设施",
+          "target_customer": "企业 AI 工作负载",
+          "funding_summary": "",
+          "core_difference": "Lambda 与 Groq 一样由 Nvidia 供应 GPU，但 Groq 的差异化芯片架构已大部分落入 Nvidia 手中，当前以数据中心运营商身份竞争。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac5adac4e9ccf0d2",
+              "quote": "Nvidia supplies the GPUs powering clouds from CoreWeave, Lambda, and Nebius, while also investing billions into some of those companies as they race to build more capacity.",
+              "source_content_hash": "75320a63773bebcb",
+              "quote_hash": "874f69fedaeb829a259f154688b59124e8ed1b2e0b78d07ecfd8fea89a30d55c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Nebius",
+          "product": "GPU 云服务",
+          "scenario": "AI 推理与训练基础设施",
+          "target_customer": "企业 AI 工作负载",
+          "funding_summary": "",
+          "core_difference": "Nebius 与 Groq 同样依赖 Nvidia GPU 供应，但 Groq 的估值已从峰值减半，且其原始芯片架构优势已转移至 Nvidia。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac5adac4e9ccf0d2",
+              "quote": "Nvidia supplies the GPUs powering clouds from CoreWeave, Lambda, and Nebius, while also investing billions into some of those companies as they race to build more capacity.",
+              "source_content_hash": "75320a63773bebcb",
+              "quote_hash": "874f69fedaeb829a259f154688b59124e8ed1b2e0b78d07ecfd8fea89a30d55c"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "$350 million",
+          "observed_at": "2026-08-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d3491d6f12c50e39",
+              "quote": "Startup Groq has raised $350 million",
+              "source_content_hash": "c2954c215a64fb14",
+              "quote_hash": "8cb0e94cb9ddaa0844b2485715573e346d60364717e66d5849d974ecc80486cb"
+            }
+          ]
+        },
+        {
+          "label": "本轮估值",
+          "value": "$3.5 billion",
+          "observed_at": "2026-08-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac5adac4e9ccf0d2",
+              "quote": "values the company at $3.5 billion",
+              "source_content_hash": "75320a63773bebcb",
+              "quote_hash": "2a05f40b2791ed9e60e2cbe527437b4dfa45ce9a1c0665b10a197f4d2963578d"
+            }
+          ]
+        },
+        {
+          "label": "2026年6月融资",
+          "value": "$650 million",
+          "observed_at": "2026-06-22",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d3491d6f12c50e39",
+              "quote": "In June, Groq raised a $650 million round to kick off its pivot.",
+              "source_content_hash": "c2954c215a64fb14",
+              "quote_hash": "b87eb92b5193a2844b9fc992550c9f75d6143f838fb885ef3ddf863507a34a1e"
+            }
+          ]
+        },
+        {
+          "label": "数据中心数量",
+          "value": "13",
+          "observed_at": "2026-08-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c02f2ac04f9320df",
+              "quote": "Groq today operates 13 data centers across North America, Europe, the Middle East, and Asia Pacific.",
+              "source_content_hash": "562993f7020da030",
+              "quote_hash": "47b348230bfa80ec0ee2c9443d753c7f3c94b731dca2543c7fe8b9a187bfbad0"
+            }
+          ]
+        },
+        {
+          "label": "开发者数量",
+          "value": "超过 600 万",
+          "observed_at": "2026-08-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c02f2ac04f9320df",
+              "quote": "The company serves more than six million developers, Fortune 500 enterprises and thousands of AI-native companies.",
+              "source_content_hash": "562993f7020da030",
+              "quote_hash": "a551fb3716acc86fc6bc1448047b28231b004e9559e5470a3efda1c313cc915e"
+            }
+          ]
+        },
+        {
+          "label": "当前电力容量",
+          "value": "54 megawatts",
+          "observed_at": "2026-08-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d3491d6f12c50e39",
+              "quote": "Groq intends to scale from 54 megawatts to more than 200 megawatts in 2027.",
+              "source_content_hash": "c2954c215a64fb14",
+              "quote_hash": "ec968c3efaf4ea52dbefbc6e4d66bd662ade773f2eece6be9e6bc6979c87a4ef"
+            }
+          ]
+        },
+        {
+          "label": "2027年目标电力容量",
+          "value": "200+ megawatts",
+          "observed_at": "2026-08-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d3491d6f12c50e39",
+              "quote": "Groq intends to scale from 54 megawatts to more than 200 megawatts in 2027.",
+              "source_content_hash": "c2954c215a64fb14",
+              "quote_hash": "ec968c3efaf4ea52dbefbc6e4d66bd662ade773f2eece6be9e6bc6979c87a4ef"
+            }
+          ]
+        },
+        {
+          "label": "Nvidia 许可协议金额",
+          "value": "$20 billion",
+          "observed_at": "2025-12-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-244a7d8ca5e73898",
+              "quote": "Nvidia struck a $20 billion licensing deal with Groq",
+              "source_content_hash": "c61c3709d6244719",
+              "quote_hash": "a2b0e7a886c1ca6db10832b908ce7486d04e47817ad56278062a883a1a359058"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是 Groq 能否在失去核心芯片团队和 IP 后，以 Nvidia 客户和云合作伙伴的身份在推理基础设施市场建立可持续地位。本轮 3.5 亿美元估值较 2025 年 9 月的 69 亿美元峰值减半，但公司将其定性为 Nvidia 许可交易后新实体的重新估值而非 down round。已验证信号包括：13 个数据中心、超过 600 万开发者、54 兆瓦至 200+ 兆瓦的扩张计划，以及 Nvidia 作为本轮参投方和云合作伙伴的持续关系。证据边界：Groq 财务数据仍为私有，无法验证其收入、利润或自由现金流。",
+        "validated_signals": [
+          "运营 13 个数据中心，覆盖北美、欧洲、中东和亚太",
+          "服务超过 600 万开发者、财富 500 强企业和数千家 AI 原生公司",
+          "Nvidia 作为本轮参投方并认证 Groq 为 NVIDIA Cloud Partner",
+          "计划从 54 兆瓦扩展至 2027 年 200+ 兆瓦"
+        ],
+        "risks": [
+          "估值从 69 亿美元峰值减半至 35 亿美元，反映市场对其重建能力的疑虑",
+          "neocloud 市场竞争激烈，面临 CoreWeave、Lambda、Nebius 等资本充足的对手",
+          "原始差异化芯片架构已大部分转移至 Nvidia，Groq 现为 Nvidia 客户，缺乏独特技术护城河",
+          "neocloud 商业模式长期盈利能力存疑，面临高资本支出和硬件贬值压力"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "compute_cloud_service",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "computing_infrastructure",
+        "use_case_ids": [
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ],
+        "sector": "AI 基础设施与云计算",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 Groq 能否在失去核心芯片团队和 IP 后，以 Nvidia 客户和云合作伙伴的身份在推理基础设施市场建立可持续地位。本轮 3.5 亿美元估值较 2025 年 9 月的 69 亿美元峰值减半，但公司将其定性为 Nvidia 许可交易后新实体的重新估值而非 down round。已验证信号包括：13 个数据中心、超过 600 万开发者、54 兆瓦至 200+ 兆瓦的扩张计划，以及 Nvidia 作为本轮参投方和云合作伙伴的持续关系。证据边界：Groq 财务数据仍为私有，无法验证其收入、利润或自由现金流。",
+          "evidence_signals": [
+            "运营 13 个数据中心，覆盖北美、欧洲、中东和亚太",
+            "服务超过 600 万开发者、财富 500 强企业和数千家 AI 原生公司",
+            "Nvidia 作为本轮参投方并认证 Groq 为 NVIDIA Cloud Partner",
+            "计划从 54 兆瓦扩展至 2027 年 200+ 兆瓦"
+          ],
+          "risks": [
+            "估值从 69 亿美元峰值减半至 35 亿美元，反映市场对其重建能力的疑虑",
+            "neocloud 市场竞争激烈，面临 CoreWeave、Lambda、Nebius 等资本充足的对手",
+            "原始差异化芯片架构已大部分转移至 Nvidia，Groq 现为 Nvidia 客户，缺乏独特技术护城河",
+            "neocloud 商业模式长期盈利能力存疑，面临高资本支出和硬件贬值压力"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "GroqCloud",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Jonathan Ross",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Disruptive",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Nvidia",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA"
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "BlackRock",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Neuberger Berman",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Deutsche Telekom Capital Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Cisco",
+          "canonical_entity_id": "EN-e73b79a0b10f8cdb",
+          "canonical_name": "Cisco"
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Samsung",
+          "canonical_entity_id": "EN-968e2d5b08687bf4",
+          "canonical_name": "Samsung"
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Altimeter",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "D1",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "1789 Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Infinitum",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "HUMAIN",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Paytm",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "McLaren Racing",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Meta",
+          "canonical_entity_id": "EN-ea3bd73e2b506e00",
+          "canonical_name": "Meta"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "CoreWeave",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Lambda",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Nebius",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-181cd28d97c4e61d",
+          "date": "2026-08-17",
+          "title": "Groq 融资 3.5 亿美元，加速从 AI 芯片转向 neocloud",
+          "amount": "$350M",
+          "source_refs": [
+            "SA-135f6bf8a5c06f22"
+          ]
+        },
+        {
+          "event_id": "EV-4118202ed0f91895",
+          "date": "2026-06-23",
+          "title": "Groq 与英伟达交易后转型 AI 推理 CSP，完成新一轮 6.5 亿美元融资",
+          "amount": "6.5 亿",
+          "source_refs": [
+            "SA-bd5416b7b74c8cac"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-d3491d6f12c50e39",
+          "source_url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud",
+          "title": "Groq 融资 3.5 亿美元，加速从 AI 芯片转向 neocloud",
+          "publisher": "TechCrunch：AI（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-18T00:21:59.857Z",
+          "content_hash": "c2954c215a64fb14",
+          "source_artifact_id": "SA-135f6bf8a5c06f22",
+          "raw_id": "RAW-342311e45a9f4bf9"
+        },
+        {
+          "source_id": "FISRC-ac5adac4e9ccf0d2",
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/groq-raises-350m-fuel-pivot-161512271.html",
+          "title": "Groq raises $350M to fuel its pivot from AI chips to neocloud",
+          "publisher": "finance.yahoo.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-08-18T02:52:43.008Z",
+          "content_hash": "75320a63773bebcb",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-244a7d8ca5e73898",
+          "source_url": "https://app.dealroom.co/news/note/groq-raises-350m-at-3-5b-valuation-to-rebuild-after-nvidia-s-20b-licensing-deal",
+          "title": "Groq raises $350M at $3.5B valuation to rebuild after Nvidia's $20B licensing deal | Dealroom.co",
+          "publisher": "app.dealroom.co",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T02:52:43.327Z",
+          "content_hash": "c61c3709d6244719",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-28e142eb564f6762",
+          "source_url": "https://www.verdict.co.uk/groq-obtains-750m-in-funding-ai-inference-technology/",
+          "title": "Groq obtains $750m in funding for AI inference technology",
+          "publisher": "verdict.co.uk",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T02:52:44.456Z",
+          "content_hash": "b6f5ca4d5c31cfb3",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-c02f2ac04f9320df",
+          "source_url": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud",
+          "title": "Groq Closes $350 million Series A, Building the World's Leading AI Inference Cloud | Groq is the premier neocloud for fast inference",
+          "publisher": "groq.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T02:52:42.889Z",
+          "content_hash": "562993f7020da030",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-6392e46ab7e185e1",
+          "source_url": "https://groq.com/customer-stories/how-willow-achieved-zero-downtime-and-500ms-faster-ai-responses-with-groq",
+          "title": "Blog | Groq is the premier neocloud for fast inference",
+          "publisher": "groq.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T02:52:44.643Z",
+          "content_hash": "6ec6ccf8188c1986",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-18T02:53:24.908Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-18T02:53:24.908Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "GroqCloud"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Jonathan Ross"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-181cd28d97c4e61d"
+      ],
+      "aggregation": {
+        "key": "EN-0b79cf2de0ee6b8e|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-181cd28d97c4e61d",
+      "company_name": "Groq",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Groq 融资 3.5 亿美元，加速从 AI 芯片转向 neocloud\" funding company investors product",
+        "\"Groq\" \"$350M\" funding investors round",
+        "\"Groq\" product customers case study",
+        "\"Groq\" \"Groq 融资 3.5 亿美元，加速从 AI 芯片转向 neocloud\" competitors product use case",
+        "\"Groq\" \"$350M\" investor quote why invested",
+        "\"Groq\" \"$350M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Groq 融资 3.5 亿美元，加速从 AI 芯片转向 neocloud\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Groq 融资 3.5 亿美元，加速从 AI 芯片转向 neocloud\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Groq\" \"$350M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Groq\" \"$350M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Groq\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Groq\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Groq\" \"Groq 融资 3.5 亿美元，加速从 AI 芯片转向 neocloud\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Groq\" \"Groq 融资 3.5 亿美元，加速从 AI 芯片转向 neocloud\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Groq\" \"$350M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Groq\" \"$350M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Groq\" \"$350M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Groq\" \"$350M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-08-18T02:54:45.390Z"
+    },
+    {
+      "event_id": "EV-d43103952399bc68",
+      "company_name": "Wispr",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Wispr 获 2.8 亿美元 B 轮融资，估值 20 亿美元，业务拓展至会议记录\" funding company investors product",
+        "\"Wispr\" \"$280M\" funding investors round",
+        "\"Wispr\" product customers case study",
+        "\"Wispr\" \"Wispr 获 2.8 亿美元 B 轮融资，估值 20 亿美元，业务拓展至会议记录\" competitors product use case",
+        "\"Wispr\" \"$280M\" investor quote why invested",
+        "\"Wispr\" \"$280M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Wispr 获 2.8 亿美元 B 轮融资，估值 20 亿美元，业务拓展至会议记录\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Wispr 获 2.8 亿美元 B 轮融资，估值 20 亿美元，业务拓展至会议记录\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Wispr\" \"$280M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Wispr\" \"$280M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Wispr\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Wispr\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Wispr\" \"Wispr 获 2.8 亿美元 B 轮融资，估值 20 亿美元，业务拓展至会议记录\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Wispr\" \"Wispr 获 2.8 亿美元 B 轮融资，估值 20 亿美元，业务拓展至会议记录\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Wispr\" \"$280M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Wispr\" \"$280M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Wispr\" \"$280M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Wispr\" \"$280M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "exa_429"
+        }
+      ],
+      "updated_at": "2026-08-18T02:54:45.390Z"
+    },
+    {
+      "event_id": "EV-c6c297156ff274ac",
+      "company_name": "OdyssLife",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"融完2亿元后，一位AI硬件创业者的奥德赛之旅 | Linear Voice\" funding company investors product",
+        "\"OdyssLife\" \"200 million\" funding investors round",
+        "\"OdyssLife\" product customers case study",
+        "\"OdyssLife\" \"融完2亿元后，一位AI硬件创业者的奥德赛之旅 | Linear Voice\" competitors product use case",
+        "\"OdyssLife\" \"200 million\" investor quote why invested",
+        "\"OdyssLife\" \"200 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"融完2亿元后，一位AI硬件创业者的奥德赛之旅 | Linear Voice\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"融完2亿元后，一位AI硬件创业者的奥德赛之旅 | Linear Voice\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"OdyssLife\" \"200 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"OdyssLife\" \"200 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"OdyssLife\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"OdyssLife\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"OdyssLife\" \"融完2亿元后，一位AI硬件创业者的奥德赛之旅 | Linear Voice\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"OdyssLife\" \"融完2亿元后，一位AI硬件创业者的奥德赛之旅 | Linear Voice\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"OdyssLife\" \"200 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"OdyssLife\" \"200 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"OdyssLife\" \"200 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"OdyssLife\" \"200 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-08-18T02:54:45.390Z"
+    },
+    {
+      "event_id": "EV-c1295b8f58024ff6",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-08-18T02:54:45.390Z"
+    },
+    {
+      "event_id": "EV-1dba157815d84342",
+      "company_name": "Higgsfield",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"AI 视频生成平台 Higgsfield 融资 4 亿美元，估值达 54 亿美元\" funding company investors product",
+        "\"Higgsfield\" \"13 亿\" funding investors round",
+        "\"Higgsfield\" product customers case study",
+        "\"Higgsfield\" \"AI 视频生成平台 Higgsfield 融资 4 亿美元，估值达 54 亿美元\" competitors product use case",
+        "\"Higgsfield\" \"13 亿\" investor quote why invested",
+        "\"Higgsfield\" \"13 亿\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"AI 视频生成平台 Higgsfield 融资 4 亿美元，估值达 54 亿美元\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"AI 视频生成平台 Higgsfield 融资 4 亿美元，估值达 54 亿美元\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Higgsfield\" \"13 亿\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Higgsfield\" \"13 亿\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Higgsfield\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Higgsfield\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Higgsfield\" \"AI 视频生成平台 Higgsfield 融资 4 亿美元，估值达 54 亿美元\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Higgsfield\" \"AI 视频生成平台 Higgsfield 融资 4 亿美元，估值达 54 亿美元\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Higgsfield\" \"13 亿\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Higgsfield\" \"13 亿\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Higgsfield\" \"13 亿\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Higgsfield\" \"13 亿\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-08-18T02:54:45.390Z"
+    },
+    {
+      "event_id": "EV-33053abbe1a60b38",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-08-18T02:54:45.390Z"
+    }
+  ]
+}

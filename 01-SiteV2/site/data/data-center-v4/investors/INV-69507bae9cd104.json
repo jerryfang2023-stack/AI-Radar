@@ -22,17 +22,19 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "first_disclosed_at": "2022-04-12",
-    "latest_disclosed_at": "2026-07-14",
+    "latest_disclosed_at": "2026-08-17",
     "role_counts": {
-      "lead": 2
+      "lead": 2,
+      "participant": 1
     },
     "round_codes": [
       "seed",
-      "series_a"
+      "series_a",
+      "series_b"
     ],
     "portfolio_companies": [
       {
@@ -44,9 +46,52 @@
         "entity_id": "EN-92dd63c8e5c77e8a",
         "canonical_entity_id": "EN-92dd63c8e5c77e8a",
         "name": "Valarian Technologies Ltd."
+      },
+      {
+        "entity_id": "EN-8c5929d253b07fed",
+        "canonical_entity_id": "",
+        "name": "Wispr"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-751df5264878c5e8",
+        "funding_insight_id": "FI-c0b843a5e6f6ea0a",
+        "event_ids": [
+          "EV-d43103952399bc68"
+        ],
+        "company_entity_id": "EN-8c5929d253b07fed",
+        "company_canonical_entity_id": "",
+        "company_name": "Wispr",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$280M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 280000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.8 亿美元"
+        },
+        "announced_at": "2026-08-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2e7a3713da8f3e54",
+            "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
+            "source_title": "Wispr Raises $280M in Series B Funding Led by Menlo Ventures, Valuation Hits $2B | Gate News",
+            "source_content_hash": "affdfd9a0ccfb188",
+            "quote": "with participation from existing investors including Notable Capital, NEA, Neo Ventures, 8VC, and MVP Ventures, alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
+            "quote_hash": "aba568fee486e1922b966cf3934b60f576f64daef335bb8592e1d089190091dd"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6e9ebc84c5823b37",
         "funding_insight_id": "FI-38617a261ac32b56",
@@ -141,6 +186,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-2e7a3713da8f3e54",
+        "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
+        "source_title": "Wispr Raises $280M in Series B Funding Led by Menlo Ventures, Valuation Hits $2B | Gate News",
+        "source_content_hash": "affdfd9a0ccfb188",
+        "quote": "with participation from existing investors including Notable Capital, NEA, Neo Ventures, 8VC, and MVP Ventures, alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
+        "quote_hash": "aba568fee486e1922b966cf3934b60f576f64daef335bb8592e1d089190091dd"
+      },
       {
         "source_id": "FISRC-03aa198ddff34236",
         "source_url": "https://siliconangle.com/2026/07/14/sovereign-ai-infrastructure-startup-valarian-raises-50m-help-nations-secure-military-defense-systems/",
