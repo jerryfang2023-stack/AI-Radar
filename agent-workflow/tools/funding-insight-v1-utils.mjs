@@ -953,10 +953,15 @@ function subjectSignalScore(text = "", name = "") {
 }
 
 function descriptiveCompanyTail(name = "") {
-  const match = clean(name).match(
+  const value = clean(name);
+  const englishMatch = value.match(
     /\b(?:company|startup|firm|platform|provider)\s+([A-Z][\p{L}\p{N}.&'-]*(?:\s+[A-Z][\p{L}\p{N}.&'-]*){0,3})$/u,
   );
-  return clean(match?.[1]);
+  if (englishMatch) return clean(englishMatch[1]);
+  const chineseMatch = value.match(
+    /^(?:AI\s*)?[\p{Script=Han}A-Za-z0-9+./'&\s-]{1,40}?(?:平台|公司|企业|初创团队|创业团队)\s+([A-Z][\p{L}\p{N}.&'-]*(?:\s+[A-Z][\p{L}\p{N}.&'-]*){0,3})$/u,
+  );
+  return clean(chineseMatch?.[1]);
 }
 
 function fundedStartupNameFromClaims(claims = []) {
@@ -1000,8 +1005,9 @@ export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims
   const byId = new Map(entities.map((entity) => [entity.entity_id, entity]));
   const claimById = new Map(claims.map((claim) => [claim.claim_id, claim]));
   const eventClaims = (event.claim_refs || []).map((id) => claimById.get(id)).filter(Boolean);
-  const acceptedFundingSubjects = eventClaims
-    .filter((claim) => claim?.claim_type === "funding" && claim?.verification_status === "accepted")
+  const acceptedFundingClaims = eventClaims
+    .filter((claim) => claim?.claim_type === "funding" && claim?.verification_status === "accepted");
+  const acceptedFundingSubjects = acceptedFundingClaims
     .map((claim) => normalizedName(claim.subject))
     .filter(Boolean);
   const claimInferredCompanyName = fundedStartupNameFromClaims(eventClaims);
@@ -1028,6 +1034,29 @@ export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims
             aliases: [...new Set([...(entity.aliases || []), entity.canonical_name].filter(Boolean))],
           }
         : entity;
+    }
+    const inferredSubjectCompanies = acceptedFundingClaims
+      .map((claim) => ({
+        claim,
+        name: descriptiveCompanyTail(claim.subject),
+      }))
+      .filter(({ claim, name }) => (
+        name
+        && normalizedName(claim.source_quote).includes(normalizedName(name))
+        && /(?:融资|筹集|募资|估值|raises?|raised|funding|series|seed|round|financing)/iu.test(clean(claim.source_quote))
+      ));
+    const inferredNames = [...new Map(inferredSubjectCompanies.map(({ name }) => [
+      normalizedName(name),
+      name,
+    ])).values()];
+    if (inferredNames.length === 1) {
+      const name = inferredNames[0];
+      return {
+        entity_id: stableId("FICO", normalizedName(name)),
+        entity_type: "organization_candidate",
+        canonical_name: name,
+        aliases: [...new Set(inferredSubjectCompanies.map(({ claim }) => clean(claim.subject)).filter(Boolean))],
+      };
     }
   }
   const eventParts = [
