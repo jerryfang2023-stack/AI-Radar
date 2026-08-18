@@ -14,7 +14,7 @@ const CACHE_KEYS = {
   fundingDetails: "guanlan_live_funding_detail_cache_v1",
   reportManifest: "guanlan_live_report_manifest_v1",
   reportIndex: "guanlan_live_report_index_v1",
-  reportDetails: "guanlan_live_report_detail_cache_v1",
+  communityDetails: "guanlan_live_community_detail_cache_v1",
 };
 const DAY_MS = 24 * 60 * 60 * 1000;
 const chinaMarkers = [
@@ -351,11 +351,13 @@ function assertFundingIndex(payload, manifest) {
 function assertReportManifest(payload) {
   if (!payload || !text(payload.version) || !/^\d{4}-\d{2}-\d{2}$/.test(text(payload.latestDate))) throw new Error("报告清单无效");
   if (payload.latestDate < bundledReportIndex.meta.latestDate || Number(payload.reportCount) < bundledReportIndex.meta.reportCount) throw new Error("报告清单数据回退");
+  if (Number(payload.communityCount) > 0 && !text(payload.communityDetailBasePath)) throw new Error("社群精华详情地址缺失");
 }
 
 function assertReportIndex(payload, manifest) {
   if (!payload?.meta || !Array.isArray(payload.reports) || payload.reports.length !== Number(manifest.reportCount)) throw new Error("报告索引无效");
   if (payload.meta.latestDate !== manifest.latestDate) throw new Error("报告索引版本不一致");
+  if (new Set(payload.reports.map((item) => item.id)).size !== payload.reports.length) throw new Error("报告索引存在重复 ID");
 }
 
 function mergeFundingIndex(index, details = {}) {
@@ -466,20 +468,26 @@ function refreshReportData() {
   return reportRequest;
 }
 
-function getReportDetail(id) {
+function loadCommunityDetail(id) {
   const fallback = reportState.details[id] || null;
-  if (!reportManifest?.detailBasePath) return Promise.resolve(fallback);
-  const cached = readDetailCache(CACHE_KEYS.reportDetails, reportManifest.version, id);
+  if (!reportManifest?.communityDetailBasePath) return Promise.resolve(fallback);
+  const cached = readDetailCache(CACHE_KEYS.communityDetails, reportManifest.version, id);
   if (cached) {
     reportState.details[id] = cached;
     return Promise.resolve(cached);
   }
-  return requestJson(`${PUBLIC_ORIGIN}${reportManifest.detailBasePath}/${encodeURIComponent(id)}.json?v=${encodeURIComponent(reportManifest.version)}`).then((detail) => {
-    if (detail?.id !== id || !detail.detailComplete) throw new Error("报告详情无效");
+  return requestJson(`${PUBLIC_ORIGIN}${reportManifest.communityDetailBasePath}/${encodeURIComponent(id)}.json?v=${encodeURIComponent(reportManifest.version)}`).then((detail) => {
+    if (detail?.id !== id || detail.contentType !== "community-essay" || detail.type !== "community" || !detail.detailComplete) throw new Error("社群精华详情无效");
     reportState.details[id] = detail;
-    writeDetailCache(CACHE_KEYS.reportDetails, reportManifest.version, id, detail, 8);
+    writeDetailCache(CACHE_KEYS.communityDetails, reportManifest.version, id, detail, 8);
     return detail;
   }).catch(() => fallback);
+}
+
+function getCommunityDetail(id) {
+  if (!/^community-essay-[a-z0-9-]+$/i.test(text(id))) return Promise.resolve(null);
+  const ready = reportManifest ? Promise.resolve(reportState) : refreshReportData();
+  return ready.then(() => loadCommunityDetail(id)).catch(() => reportState.details[id] || null);
 }
 
 function hydrateStoredIndexes() {
@@ -519,7 +527,7 @@ module.exports = {
   getFundingDetail,
   getFundingDetails,
   refreshReportData,
-  getReportDetail,
+  getCommunityDetail,
   projectPortalFundingData,
   projectPortalReportData,
   parseBlocks,

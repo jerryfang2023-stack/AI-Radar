@@ -294,4 +294,13 @@ function getCommunityEssays() {
   };
 }
 
-module.exports = { getCommunityEssays };
+function mergeCommunityEssays(remoteReports = []) {
+  const bundled = getCommunityEssays().index;
+  const merged = new Map(bundled.map((item) => [item.id, item]));
+  (Array.isArray(remoteReports) ? remoteReports : [])
+    .filter((item) => item && item.contentType === "community-essay" && item.type === "community" && /^community-essay-/.test(String(item.id || "")))
+    .forEach((item) => merged.set(item.id, item));
+  return [...merged.values()].sort((a, b) => String(b.date).localeCompare(String(a.date)) || String(a.id).localeCompare(String(b.id)));
+}
+
+module.exports = { getCommunityEssays, mergeCommunityEssays };

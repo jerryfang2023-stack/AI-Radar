@@ -44,7 +44,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Opportunity Map column version | OMAP-V2.0.0-v4-evidence |
 | Trend Radar column version | TRADAR-V1.1.0-tag-v4-1 |
 | Funding Insights column version | FUNDING-INSIGHT-V1.5.0-china-market |
-| WeChat Mini Program version | V0.8.0-unified-account-content-access |
+| WeChat Mini Program version | V0.8.1-community-essay-live-sync |
 | Investment institution projection | INVESTMENT-INSTITUTION-V1.0 |
 | Data Center Raw contract | RAW-V4.0 |
 | Data Center structured source intake | SOURCE-INTAKE-V1.1 |
@@ -206,6 +206,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `miniprogram-v0.8.1` | Website-published community essay index / public detail sync / bundled offline fallback | 2026-08-18 | 2026-08-18T16:28:35+08:00 | V0.8.1-community-essay-live-sync | hard-coded-only community essay publication; duplicate remote and bundled cards; public weekly/monthly report bodies; V0.8.0 account, metered-access, payment, analytics or navigation regressions | Portal Mini projection test + Mini Program remote/fallback merge and public-detail boundary tests + 19-page validation + live endpoint verification + development upload |
 | `miniprogram-v0.8.0` | Unified PC / Mini Program account, server-metered details, QR confirmation and protected content delivery | 2026-08-18 | 2026-08-18T01:44:28+08:00 | V0.8.0-unified-account-content-access | client-only sample counting; public paid detail JSON; automatic authorization on detail entry; duplicate account trials or balances; V0.7.2 data, payment, analytics or navigation regressions | Payment Service unified-account/content tests + PC protected-content projection tests + Mini Program build/behavior/19-page validation + development upload |
 | `application-analytics-v1.1.0` | Application Center production-only operations analytics / Mini Program and PC monitoring | 2026-08-17 | 2026-08-17T22:15:00+08:00 | APP-ANALYTICS-V1.1.0-production-only | demo or smoke events in operating metrics; pre-launch registrations or orders in conversion totals; stale offline events re-entering after cleanup; dashboard fallback to non-production payloads | Payment Service analytics cutoff tests + page/JS syntax + production database backup and analytics reset + authenticated production API smoke |
 | `miniprogram-v0.7.2` | Mini Program lightweight live index / on-demand details / persistent version cache / compressed public data | 2026-08-17 | 2026-08-17T21:30:00+08:00 | V0.7.2-live-data-performance | startup download of full `funding-portal.json`; eager report-body download; stale or regressed live data replacing bundled fallback; V0.7.1 ecosystem, access, payment, analytics or navigation regressions | Portal projection tests + Mini Program data build + behavioral tests + 18-page project validation + live compressed-endpoint verification + development-build upload |

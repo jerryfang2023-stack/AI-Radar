@@ -1,5 +1,5 @@
 const { recordBehavior } = require("../../utils/member.js");
-const { getReportData } = require("../../utils/live-data.js");
+const { getReportData, getCommunityDetail } = require("../../utils/live-data.js");
 const { getCommunityEssays } = require("../../utils/community-essays.js");
 const { getAccessState } = require("../../utils/access.js");
 const { resolveDetailAccess, requestLockedContent } = require("../../utils/metered-access.js");
@@ -10,18 +10,22 @@ Page({
   onLoad(options) {
     this.reportId = options.id;
     this.setData(resolveDetailAccess(`report:${this.reportId || "unknown"}`));
-    this.isCommunityEssay = Boolean(getCommunityEssays().details[this.reportId]);
+    const remotePreview = getReportData().index.reports.find((item) => item.id === this.reportId || item.detailId === this.reportId);
+    this.isCommunityEssay = /^community-essay-/.test(String(this.reportId || ""))
+      || remotePreview?.contentType === "community-essay"
+      || Boolean(getCommunityEssays().details[this.reportId]);
     const sharedEntry = options.from === "share";
     this.setData({ sharedEntry });
     if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
-    const preview = getCommunityEssays().details[this.reportId]
-      || getReportData().index.reports.find((item) => item.id === this.reportId || item.detailId === this.reportId);
+    const preview = remotePreview || getCommunityEssays().details[this.reportId];
     if (preview) this.render(preview);
     this.verifyServerAccess();
   },
   async verifyServerAccess() {
     if (!this.reportId) return;
     if (this.isCommunityEssay) {
+      const report = await getCommunityDetail(this.reportId);
+      if (report) this.render(report);
       this.setData({ contentLocked: false, lockReason: "public" });
       return;
     }

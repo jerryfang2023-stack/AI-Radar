@@ -28,5 +28,7 @@ test("detail and comparison pages use the unified protected-content API", () => 
   }
   assert.doesNotMatch(source("pages/detail/index.js"), /getFundingDetail/);
   assert.doesNotMatch(source("pages/report-detail/index.js"), /getReportDetail/);
+  assert.match(source("pages/report-detail/index.js"), /getCommunityDetail/);
+  assert.doesNotMatch(source("utils/live-data.js"), /function getReportDetail|\bgetReportDetail,/);
   assert.doesNotMatch(source("pages/compare/index.js"), /getFundingDetails/);
 });

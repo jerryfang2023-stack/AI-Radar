@@ -3,7 +3,7 @@ import { createRequire } from "node:module";
 import test from "node:test";
 
 const require = createRequire(import.meta.url);
-const { getCommunityEssays } = require("../miniprogram/utils/community-essays.js");
+const { getCommunityEssays, mergeCommunityEssays } = require("../miniprogram/utils/community-essays.js");
 
 test("publishes the verified 同频者计划 community essays", () => {
   const { index, details } = getCommunityEssays();
@@ -36,4 +36,12 @@ test("publishes the verified 同频者计划 community essays", () => {
   assert.equal("blocks" in summary, false);
   assert.equal("markdown" in detail, false);
   assert.doesNotMatch(JSON.stringify({ index, details }), /AI 判断力、企业服务与垂直赛道|从一个下午的交付|医疗、制造和零售中的 AI 落地/u);
+});
+
+test("remote community summaries replace matching bundled entries and retain offline fallback", () => {
+  const bundled = getCommunityEssays().index;
+  const target = bundled[0];
+  const merged = mergeCommunityEssays([{ ...target, title: "网站更新标题", type: "community", contentType: "community-essay" }]);
+  assert.equal(merged.find((item) => item.id === target.id).title, "网站更新标题");
+  assert.ok(merged.length >= bundled.length);
 });

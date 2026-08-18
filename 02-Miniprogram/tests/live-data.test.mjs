@@ -3,8 +3,9 @@ import { createRequire } from "node:module";
 import test from "node:test";
 
 const require = createRequire(import.meta.url);
-const { projectPortalFundingData, projectPortalReportData, refreshFundingData, getFundingDetail } = require("../miniprogram/utils/live-data.js");
+const { projectPortalFundingData, projectPortalReportData, refreshFundingData, getFundingDetail, refreshReportData, getCommunityDetail } = require("../miniprogram/utils/live-data.js");
 const fallbackFunding = require("../miniprogram/data/funding-index.js");
+const fallbackReports = require("../miniprogram/data/report-index.js");
 const fixtureDate = fallbackFunding.meta.latestDate;
 
 test("projects the VPS funding contract into the native mini program contract", () => {
@@ -113,6 +114,58 @@ test("refreshes the lightweight index and loads one funding detail on demand", a
     assert.ok(requests.some((url) => url.includes("/data/mini/funding-index.json")));
     assert.ok(requests.some((url) => url.includes(`/data/mini/funding-details/${id}.json`)));
     assert.ok(requests.every((url) => !url.includes("funding-portal.json")));
+  } finally {
+    delete global.wx;
+  }
+});
+
+test("refreshes remote community essays and only loads their public detail route", async () => {
+  const storage = new Map();
+  const requests = [];
+  const id = "community-essay-2026-08-18-remote-test";
+  const community = {
+    id, contentType: "community-essay", type: "community", typeLabel: "社群精华", title: "远程精华",
+    date: "2026-08-18", dateShort: "08.18", summary: "远程摘要", author: "观澜编辑部", readingTime: "3 分钟",
+  };
+  const index = {
+    meta: {
+      ...fallbackReports.meta,
+      latestDate: "2026-08-18",
+      reportCount: fallbackReports.reports.length + 1,
+      communityCount: 1,
+    },
+    reports: [community, ...fallbackReports.reports],
+  };
+  global.wx = {
+    getStorageSync: (key) => storage.get(key),
+    setStorageSync: (key, value) => storage.set(key, value),
+    request: ({ url, success }) => {
+      requests.push(url);
+      if (url.includes("report-manifest.json")) {
+        success({ statusCode: 200, data: {
+          version: "reports:test:community",
+          latestDate: "2026-08-18",
+          reportCount: index.reports.length,
+          communityCount: 1,
+          indexPath: "/data/mini/report-index.json",
+          communityDetailBasePath: "/data/mini/community-details",
+        } });
+      } else if (url.includes("report-index.json")) {
+        success({ statusCode: 200, data: index });
+      } else {
+        success({ statusCode: 200, data: { ...community, detailComplete: true, blocks: [{ id: "block_0", type: "paragraph", text: "公开正文" }] } });
+      }
+    },
+  };
+  try {
+    const detail = await getCommunityDetail(id);
+    const state = await refreshReportData();
+    const paidAttempt = await getCommunityDetail("weekly-2026-08-17");
+    assert.equal(state.index.reports[0].id, id);
+    assert.equal(detail.blocks[0].text, "公开正文");
+    assert.equal(paidAttempt, null);
+    assert.ok(requests.some((url) => url.includes(`/data/mini/community-details/${id}.json`)));
+    assert.ok(requests.every((url) => !url.includes("report-details")));
   } finally {
     delete global.wx;
   }
