@@ -18,6 +18,7 @@
     "typeLabel": "产品形态",
     "valueId": "ai_device",
     "eventIds": [
+      "EV-c6c297156ff274ac",
       "EV-02882e6f5e1902c6",
       "EV-b5dd10300e34f2d3",
       "EV-450f624a6a6446ce",
@@ -34,6 +35,7 @@
       "EV-9e35de25113a9269"
     ],
     "entityIds": [
+      "EN-1913c6ab46df3a68",
       "EN-2a920347dfcf07a7",
       "EN-e22521e7de65d819",
       "EN-245f1e177c5169cb",
@@ -50,9 +52,279 @@
       "HW-073f0034b9be13b2"
     ],
     "firstSeen": "2026-05-21",
-    "lastSeen": "2026-08-04"
+    "lastSeen": "2026-08-18"
   },
   "events": [
+    {
+      "id": "EV-c6c297156ff274ac",
+      "dataDate": "2026-08-18",
+      "date": "2026-08-17",
+      "updatedDate": "2026-08-18",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "融完2亿元后，一位AI硬件创业者的奥德赛之旅",
+      "originalTitle": "融完2亿元后，一位AI硬件创业者的奥德赛之旅 | Linear Voice",
+      "subject": "OdyssLife",
+      "action": "funding",
+      "object": "200 million yuan funding round",
+      "metrics": [
+        "200 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "industry_applications",
+            "name": "行业应用",
+            "entityIds": [
+              "EN-1913c6ab46df3a68"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-41a2cb1073f82567",
+            "fundingInsightId": "FI-6552d438fa2e847e"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-1913c6ab46df3a68"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b7f83372b4a7ff4b",
+            "fundingInsightId": "FI-6552d438fa2e847e"
+          }
+        ],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-1913c6ab46df3a68"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a9e51b8158905e32",
+            "fundingInsightId": "FI-6552d438fa2e847e"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-1913c6ab46df3a68"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-fbcedc679ec6cae5",
+            "fundingInsightId": "FI-6552d438fa2e847e"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-1913c6ab46df3a68"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-42d09d3cc426e752",
+            "fundingInsightId": "FI-6552d438fa2e847e"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-1913c6ab46df3a68"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-38cdd7ce1dd518a8",
+            "fundingInsightId": "FI-6552d438fa2e847e"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "industry_applications",
+          "name": "行业应用",
+          "entityIds": [
+            "EN-1913c6ab46df3a68"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-41a2cb1073f82567",
+          "fundingInsightId": "FI-6552d438fa2e847e"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-1913c6ab46df3a68"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b7f83372b4a7ff4b",
+          "fundingInsightId": "FI-6552d438fa2e847e"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-1913c6ab46df3a68"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-42d09d3cc426e752",
+          "fundingInsightId": "FI-6552d438fa2e847e"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-1913c6ab46df3a68"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a9e51b8158905e32",
+          "fundingInsightId": "FI-6552d438fa2e847e"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-1913c6ab46df3a68"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-38cdd7ce1dd518a8",
+          "fundingInsightId": "FI-6552d438fa2e847e"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-1913c6ab46df3a68"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fbcedc679ec6cae5",
+          "fundingInsightId": "FI-6552d438fa2e847e"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "industry_applications",
+          "name": "行业应用",
+          "entityIds": [
+            "EN-1913c6ab46df3a68"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-41a2cb1073f82567",
+          "fundingInsightId": "FI-6552d438fa2e847e"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-1913c6ab46df3a68"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b7f83372b4a7ff4b",
+          "fundingInsightId": "FI-6552d438fa2e847e"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-1913c6ab46df3a68"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a9e51b8158905e32",
+          "fundingInsightId": "FI-6552d438fa2e847e"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-1913c6ab46df3a68"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fbcedc679ec6cae5",
+          "fundingInsightId": "FI-6552d438fa2e847e"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-1913c6ab46df3a68"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-42d09d3cc426e752",
+          "fundingInsightId": "FI-6552d438fa2e847e"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-1913c6ab46df3a68"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-38cdd7ce1dd518a8",
+          "fundingInsightId": "FI-6552d438fa2e847e"
+        }
+      ],
+      "entityIds": [
+        "EN-1913c6ab46df3a68"
+      ],
+      "entityNames": [
+        "OdyssLife"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://elsewhere.news/zh/linearcapital/2ai-linear-voice",
+      "publisher": "elsewhere：文章（RSS）"
+    },
     {
       "id": "EV-02882e6f5e1902c6",
       "dataDate": "2026-07-22",
@@ -2191,6 +2463,32 @@
   ],
   "entities": [
     {
+      "id": "EN-1913c6ab46df3a68",
+      "name": "OdyssLife",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-c6c297156ff274ac"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-target_user-consumer",
+        "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-healthcare_life_sciences",
+        "TX-industry-healthcare_life_sciences",
+        "TX-product_form-ai_device",
+        "TX-use_case-physical_automation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-17",
+      "lastSeen": "2026-08-18"
+    },
+    {
       "id": "EN-2a920347dfcf07a7",
       "name": "Aina",
       "entityType": "organization_candidate",
@@ -2212,12 +2510,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-retail_ecommerce",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-ai_market_category-industry_applications",
         "TX-target_user-consumer",
-        "TX-ai_market_subcategory-consumer_retail",
-        "TX-product_form-ai_device"
+        "TX-ai_market_category-industry_applications",
+        "TX-product_form-ai_device",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-industry-retail_ecommerce",
+        "TX-ai_market_subcategory-consumer_retail"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-01",
@@ -2239,12 +2537,12 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-media_entertainment",
-        "TX-industry-retail_ecommerce",
+        "TX-target_user-consumer",
         "TX-use_case-content_creation",
         "TX-ai_market_category-industry_applications",
-        "TX-target_user-consumer",
-        "TX-ai_market_subcategory-consumer_retail",
         "TX-product_form-ai_device",
+        "TX-industry-retail_ecommerce",
+        "TX-ai_market_subcategory-consumer_retail",
         "TX-use_case-education_learning"
       ],
       "relatedEntityIds": [],
@@ -2269,15 +2567,15 @@
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-target_user-consumer",
+        "TX-product_form-ai_device",
+        "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-research_discovery",
         "TX-product_form-model",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-ai_market_application-models",
-        "TX-target_user-consumer",
-        "TX-product_form-ai_device"
+        "TX-ai_market_application-models"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-21",
@@ -2298,8 +2596,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-multimodal",
-        "TX-product_form-ai_device"
+        "TX-product_form-ai_device",
+        "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-02",
@@ -2346,13 +2644,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
+        "TX-product_form-ai_device",
         "TX-technology-code_generation",
         "TX-technology-agentic_execution",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
         "TX-product_form-model",
         "TX-technology-multimodal",
-        "TX-product_form-ai_device",
         "TX-technology-video_generation"
       ],
       "relatedEntityIds": [
@@ -2387,10 +2685,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-ai_device",
         "TX-industry-retail_ecommerce",
         "TX-product_form-model",
-        "TX-product_form-ai_infrastructure_software",
-        "TX-product_form-ai_device"
+        "TX-product_form-ai_infrastructure_software"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-07",
@@ -2506,14 +2804,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-target_user-business_user",
+        "TX-product_form-ai_device",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-agentic_execution",
         "TX-use_case-data_analysis",
         "TX-product_form-model",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-computer_use",
         "TX-technology-multimodal",
-        "TX-product_form-ai_device",
         "TX-technology-open_weights",
         "TX-technology-video_generation",
         "TX-technology-speech_audio"
@@ -2552,9 +2850,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-target_user-business_user",
-        "TX-product_form-ai_device"
+        "TX-product_form-ai_device",
+        "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [
         "EN-dd24c3b82a636110",

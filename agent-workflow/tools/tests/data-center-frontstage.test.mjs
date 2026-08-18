@@ -19,6 +19,15 @@ test("business-signal publishing persists the split V4 frontstage service", () =
   assert.match(workflow, /stage_if_exists "01-SiteV2\/site\/data\/data-center-v4"/u);
 });
 
+test("funding publishing persists the updated split-service investor manifest", () => {
+  const workflow = fs.readFileSync(path.join(root, ".github/workflows/daily-funding-insights-pr.yml"), "utf8");
+
+  assert.match(workflow, /"01-SiteV2\/site\/data\/data-center-v4"/u);
+  assert.match(workflow, /classify:funding-taxonomy-v4\.1 -- --write=true --apply=true[\s\S]*project:funding-taxonomy-events[\s\S]*sync-light-data-lake\.mjs/u);
+  assert.match(workflow, /:\(glob\)01-SiteV2\/content\/11-databases\/data-center-v4\/\*\/reviewed-event-classifications\.json/u);
+  assert.match(workflow, /build:trend-radar-site[\s\S]*build:opportunity-map-site[\s\S]*assert:taxonomy-consistency/u);
+});
+
 test("checked-in split frontstage data matches the monolithic adapter date", () => {
   const full = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/data-center-v4-frontstage.json"), "utf8"));
   const manifest = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/data-center-v4/manifest.json"), "utf8"));

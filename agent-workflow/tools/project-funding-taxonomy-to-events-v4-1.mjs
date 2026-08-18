@@ -115,7 +115,7 @@ function evidenceForCard(card, dimensionId) {
   )).slice(0, 2);
 }
 
-function resolveReviewedCompany(card, entitiesById, entityIdByName) {
+export function resolveReviewedCompany(card, entitiesById, entityIdByName) {
   const fullName = clean(card.company?.full_name);
   const displayName = clean(card.company?.name);
   const canonicalName = fullName || displayName;
@@ -131,6 +131,13 @@ function resolveReviewedCompany(card, entitiesById, entityIdByName) {
   }
   const resolvedId = entityIdByName.get(nameKey(fullName)) || entityIdByName.get(nameKey(displayName));
   if (resolvedId) return { entity_id: resolvedId, company_name: canonicalName, resolution: "catalog_name_exact" };
+  if (/^FICO-[a-f0-9]{16}$/u.test(declaredId)) {
+    return {
+      entity_id: declaredId,
+      company_name: canonicalName,
+      resolution: "funding_application_entity",
+    };
+  }
   return {
     entity_id: `EN-${hash(`funding-reviewed-company|${nameKey(canonicalName)}`)}`,
     company_name: canonicalName,
