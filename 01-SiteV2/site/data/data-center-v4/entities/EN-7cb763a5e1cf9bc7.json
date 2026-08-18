@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-18T00:24:57.421Z",
+    "latestDataDate": "2026-08-18",
+    "currentDate": "2026-08-18",
+    "eventCount": 2199,
+    "quarantinedEventCount": 19
+  },
+  "entity": {
+    "id": "EN-7cb763a5e1cf9bc7",
+    "name": "In June",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-181cd28d97c4e61d"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-17",
+    "lastSeen": "2026-08-18",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-181cd28d97c4e61d"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-181cd28d97c4e61d",
+        "dataDate": "2026-08-18",
+        "date": "2026-08-17",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Groq 融资 3.5 亿美元，加速从 AI 芯片转向 neocloud",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-0b79cf2de0ee6b8e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-0b79cf2de0ee6b8e",
+          "EN-d5096fab0e92c370",
+          "EN-7cb763a5e1cf9bc7",
+          "EN-8d4321d936320802"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-8f8d1fe13179e599",
+      "snapshotKey": "8f8d1fe13179e599",
+      "snapshotId": "HWS-89be5962dda51d66",
+      "eventId": "EV-181cd28d97c4e61d",
+      "eventIds": [
+        "EV-181cd28d97c4e61d"
+      ],
+      "dataDate": "2026-08-18",
+      "date": "2026-08-18",
+      "title": "Groq",
+      "subject": "Groq",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "supply"
+      ],
+      "latestValues": {
+        "supply": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-8f468606aeb4dc2a"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-18",
+          "hardware_fact_id": "HWF-8f468606aeb4dc2a",
+          "fact_type": "supply",
+          "observed_at": "2026-08-17T00:00:00.000Z",
+          "subject_entity_id": "EN-0b79cf2de0ee6b8e",
+          "subject_name": "Groq",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Groq’s financials are still private for now, but its pivot puts the company directly inside Nvidia’s AI infrastructure ecosystem. That’s not exactly a unique relationship among neoclouds today. Nvidia supplies the GPUs powering clouds from CoreWeave , Lambda, and Nebius, while also investing billions into some of those companies as they race to build more capacity.",
+          "event_refs": [
+            "EV-181cd28d97c4e61d"
+          ],
+          "claim_ref": "CL-d7d17d9a41c46bd1",
+          "source_refs": [
+            "SA-135f6bf8a5c06f22"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-18/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud",
+      "entityIds": [
+        "EN-0b79cf2de0ee6b8e",
+        "EN-d5096fab0e92c370",
+        "EN-7cb763a5e1cf9bc7",
+        "EN-8d4321d936320802"
+      ]
+    }
+  ]
+}

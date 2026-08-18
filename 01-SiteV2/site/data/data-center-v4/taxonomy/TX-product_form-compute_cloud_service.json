@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-17T00:24:11.459Z",
-    "latestDataDate": "2026-08-17",
-    "currentDate": "2026-08-17",
-    "eventCount": 2171,
+    "generatedAt": "2026-08-18T00:24:57.421Z",
+    "latestDataDate": "2026-08-18",
+    "currentDate": "2026-08-18",
+    "eventCount": 2199,
     "quarantinedEventCount": 19
   },
   "node": {
@@ -18,6 +18,7 @@
     "typeLabel": "产品形态",
     "valueId": "compute_cloud_service",
     "eventIds": [
+      "EV-181cd28d97c4e61d",
       "EV-2dea56b0e97c1685",
       "EV-e3792591090281c6",
       "EV-4eaf3aabecae6016",
@@ -31,6 +32,7 @@
       "EV-29eea3f4a8fcd6f5",
       "EV-1abf0d076d30ec6d",
       "EV-6011ab83ebd290bd",
+      "EV-70fd5918095d6ab8",
       "EV-0121f0a9e9a975ec",
       "EV-7dcbf6eab4339b22",
       "EV-a86b04e679044c45",
@@ -43,6 +45,7 @@
       "EV-a67071a8550cb1be"
     ],
     "entityIds": [
+      "EN-0b79cf2de0ee6b8e",
       "EN-6fae0bc5a895aab8",
       "EN-fdecfc27f301da9c",
       "EN-0caee180da9d0f3f",
@@ -52,9 +55,9 @@
       "EN-830cefea8ed73a00",
       "EN-d1a61df8d3146e48",
       "EN-c04bd5ebd10ab696",
-      "EN-0b79cf2de0ee6b8e",
       "EN-07c370b082ffd370",
       "EN-ce31f92c521b7b08",
+      "EN-3c7a24d85b4a5835",
       "EN-29b9f0cae32e7a8a",
       "EN-c70eca6b0f88f44d",
       "EN-7640da40298286a6",
@@ -72,9 +75,99 @@
       "HW-9a39a7f449362f96"
     ],
     "firstSeen": "2026-04-30",
-    "lastSeen": "2026-08-17"
+    "lastSeen": "2026-08-18"
   },
   "events": [
+    {
+      "id": "EV-181cd28d97c4e61d",
+      "dataDate": "2026-08-18",
+      "date": "2026-08-17",
+      "updatedDate": "2026-08-18",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Groq 融资 3.5 亿美元，加速从 AI 芯片转向 neocloud",
+      "originalTitle": "",
+      "subject": "Groq",
+      "action": "融资",
+      "object": "3.5 亿美元，加速从 AI 芯片转向 neocloud",
+      "metrics": [
+        "$350M",
+        "$350 million",
+        "$650 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-0b79cf2de0ee6b8e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-0b79cf2de0ee6b8e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-0b79cf2de0ee6b8e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-0b79cf2de0ee6b8e",
+        "EN-d5096fab0e92c370",
+        "EN-7cb763a5e1cf9bc7",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "Groq",
+        "Startup Groq",
+        "In June",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
     {
       "id": "EV-2dea56b0e97c1685",
       "dataDate": "2026-08-05",
@@ -4247,10 +4340,123 @@
       "publisher": "tech.eu"
     },
     {
+      "id": "EV-70fd5918095d6ab8",
+      "dataDate": "2026-08-18",
+      "date": "2026-08-17",
+      "updatedDate": "2026-08-18",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "HIVE旗下BUZZ HPC与投资级企业客户签署3.5亿美元AI云服务协议",
+      "originalTitle": "HIVE's BUZZ HPC Signs $350 Million AI Cloud Services Agreement with Investment-Grade Enterprise Customer | MarketMinute",
+      "subject": "BUZZ High Performance Computing Inc.",
+      "action": "procurement_contract",
+      "object": "investment-grade enterprise customer",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-3c7a24d85b4a5835"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-3c7a24d85b4a5835"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-3c7a24d85b4a5835"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-3c7a24d85b4a5835"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-3c7a24d85b4a5835"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-3c7a24d85b4a5835"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-3c7a24d85b4a5835"
+      ],
+      "entityNames": [
+        "BUZZ High Performance Computing Inc."
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://hig.marketminute.com/article/newsfile-2026-8-17-hives-buzz-hpc-signs-350-million-ai-cloud-services-agreement-with-investment-grade-enterprise-customer",
+      "publisher": "hig.marketminute.com"
+    },
+    {
       "id": "EV-0121f0a9e9a975ec",
-      "dataDate": "2026-08-17",
+      "dataDate": "2026-08-18",
       "date": "2026-08-14",
-      "updatedDate": "2026-08-17",
+      "updatedDate": "2026-08-18",
       "eventType": "hardware_deployment",
       "eventTypeLabel": "硬件部署",
       "eventGroup": "AI 硬件",
@@ -5753,6 +5959,33 @@
   ],
   "entities": [
     {
+      "id": "EN-0b79cf2de0ee6b8e",
+      "name": "Groq",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-181cd28d97c4e61d",
+        "EV-4118202ed0f91895"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
+        "TX-ai_market_application-computing_infrastructure",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-hardware_computing",
+        "TX-target_user-developer",
+        "TX-deployment_model-cloud"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-08-18"
+    },
+    {
       "id": "EN-6fae0bc5a895aab8",
       "name": "Volta Infra Holdings Ltd.",
       "entityType": "organization_candidate",
@@ -5767,6 +6000,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
@@ -5789,8 +6023,7 @@
         "TX-industry-telecommunications",
         "TX-target_user-business_user",
         "TX-target_user-developer",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-product_form-compute_cloud_service"
+        "TX-use_case-productivity_enterprise_workflows"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-05",
@@ -5811,11 +6044,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-model_api_service",
-        "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-model_deployment"
       ],
       "relatedEntityIds": [],
@@ -5837,11 +6070,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-model_deployment"
       ],
       "relatedEntityIds": [],
@@ -5863,11 +6096,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
-        "TX-target_user-developer",
-        "TX-product_form-compute_cloud_service"
+        "TX-target_user-developer"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-10",
@@ -5888,12 +6121,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-compute_cloud_service"
+        "TX-product_form-chip_accelerator"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-08",
@@ -5915,12 +6148,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-financial_services",
-        "TX-target_user-developer",
-        "TX-product_form-compute_cloud_service"
+        "TX-target_user-developer"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-08",
@@ -5941,12 +6174,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-business_user",
-        "TX-target_user-developer",
-        "TX-product_form-compute_cloud_service"
+        "TX-target_user-developer"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-08",
@@ -5967,6 +6200,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
@@ -5974,8 +6208,7 @@
         "TX-target_user-developer",
         "TX-product_form-chip_accelerator",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-product_form-ai_infrastructure_software",
-        "TX-product_form-compute_cloud_service"
+        "TX-product_form-ai_infrastructure_software"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-06",
@@ -6009,6 +6242,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-aerospace_defense",
         "TX-industry-automotive_transportation",
@@ -6026,7 +6260,6 @@
         "TX-ai_market_application-models",
         "TX-ai_market_category-industry_applications",
         "TX-ai_market_subcategory-industrials",
-        "TX-product_form-compute_cloud_service",
         "TX-use_case-design_engineering",
         "TX-technology-multimodal"
       ],
@@ -6037,32 +6270,6 @@
       ],
       "firstSeen": "2025-10-01",
       "lastSeen": "2026-08-12"
-    },
-    {
-      "id": "EN-0b79cf2de0ee6b8e",
-      "name": "Groq",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-4118202ed0f91895"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-ai_market_application-computing_infrastructure",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-hardware_computing",
-        "TX-target_user-developer",
-        "TX-deployment_model-cloud",
-        "TX-product_form-compute_cloud_service"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-23",
-      "lastSeen": "2026-06-24"
     },
     {
       "id": "EN-07c370b082ffd370",
@@ -6079,11 +6286,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
-        "TX-target_user-developer",
-        "TX-product_form-compute_cloud_service"
+        "TX-target_user-developer"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-06",
@@ -6106,6 +6313,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-developer",
@@ -6113,12 +6321,33 @@
         "TX-product_form-model",
         "TX-product_form-ai_infrastructure_software",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-model_deployment"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-30",
       "lastSeen": "2026-06-15"
+    },
+    {
+      "id": "EN-3c7a24d85b4a5835",
+      "name": "BUZZ High Performance Computing Inc.",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-70fd5918095d6ab8"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
+        "TX-product_form-chip_accelerator"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-17",
+      "lastSeen": "2026-08-18"
     },
     {
       "id": "EN-29b9f0cae32e7a8a",
@@ -6135,6 +6364,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-product_form-ai_compute_system",
@@ -6144,13 +6374,12 @@
         "TX-product_form-chip_accelerator",
         "TX-product_form-model",
         "TX-product_form-ai_infrastructure_software",
-        "TX-product_form-compute_cloud_service",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-14",
-      "lastSeen": "2026-08-17"
+      "lastSeen": "2026-08-18"
     },
     {
       "id": "EN-c70eca6b0f88f44d",
@@ -6236,6 +6465,8 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-0d5a32aca724d30e",
+        "EV-615fbb4de33fad2d",
         "EV-3dd89fab562d16a1",
         "EV-ea2598236eae915f",
         "EV-ae6d3c566b33532a",
@@ -6408,6 +6639,8 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-9703abcbede6968a",
+        "EV-a964121140e9ef41",
         "EV-9356dd1be92ef5c6",
         "EV-55946516c014395c",
         "EV-cdc6611d6b115cab",
@@ -6475,6 +6708,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-education",
@@ -6497,7 +6731,6 @@
         "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_application-models",
         "TX-product_form-model_api_service",
-        "TX-product_form-compute_cloud_service",
         "TX-target_user-consumer",
         "TX-use_case-customer_support",
         "TX-technology-long_context",
@@ -6536,7 +6769,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-17"
+      "lastSeen": "2026-08-18"
     },
     {
       "id": "EN-7640da40298286a6",
@@ -6553,9 +6786,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-product_form-chip_accelerator",
-        "TX-target_user-public_sector_user",
-        "TX-product_form-compute_cloud_service"
+        "TX-target_user-public_sector_user"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-02",
@@ -6597,8 +6830,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
-        "TX-product_form-compute_cloud_service"
+        "TX-product_form-compute_cloud_service",
+        "TX-product_form-model"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-13",
@@ -6621,9 +6854,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
-        "TX-product_form-compute_cloud_service",
         "TX-product_form-end_user_application"
       ],
       "relatedEntityIds": [
@@ -6669,8 +6902,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-ai_compute_system",
-        "TX-product_form-compute_cloud_service"
+        "TX-product_form-compute_cloud_service",
+        "TX-product_form-ai_compute_system"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-08",
@@ -6727,7 +6960,7 @@
     {
       "id": "HW-304c6370cc157449",
       "eventId": "EV-0121f0a9e9a975ec",
-      "dataDate": "2026-08-17",
+      "dataDate": "2026-08-18",
       "date": "2026-08-14",
       "title": "L&T在钦奈为Together AI部署印度首个10,000-GPU统一AI集群",
       "hardwareType": "gpu",
@@ -6870,15 +7103,78 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-8f8d1fe13179e599",
+      "snapshotKey": "8f8d1fe13179e599",
+      "snapshotId": "HWS-89be5962dda51d66",
+      "eventId": "EV-181cd28d97c4e61d",
+      "eventIds": [
+        "EV-181cd28d97c4e61d"
+      ],
+      "dataDate": "2026-08-18",
+      "date": "2026-08-18",
+      "title": "Groq",
+      "subject": "Groq",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "supply"
+      ],
+      "latestValues": {
+        "supply": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-8f468606aeb4dc2a"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-18",
+          "hardware_fact_id": "HWF-8f468606aeb4dc2a",
+          "fact_type": "supply",
+          "observed_at": "2026-08-17T00:00:00.000Z",
+          "subject_entity_id": "EN-0b79cf2de0ee6b8e",
+          "subject_name": "Groq",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Groq’s financials are still private for now, but its pivot puts the company directly inside Nvidia’s AI infrastructure ecosystem. That’s not exactly a unique relationship among neoclouds today. Nvidia supplies the GPUs powering clouds from CoreWeave , Lambda, and Nebius, while also investing billions into some of those companies as they race to build more capacity.",
+          "event_refs": [
+            "EV-181cd28d97c4e61d"
+          ],
+          "claim_ref": "CL-d7d17d9a41c46bd1",
+          "source_refs": [
+            "SA-135f6bf8a5c06f22"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-18/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud",
+      "entityIds": [
+        "EN-0b79cf2de0ee6b8e",
+        "EN-d5096fab0e92c370",
+        "EN-7cb763a5e1cf9bc7",
+        "EN-8d4321d936320802"
+      ]
+    },
+    {
       "id": "HWC-aa1ceb06f4e3c084",
       "snapshotKey": "aa1ceb06f4e3c084",
-      "snapshotId": "HWS-8c1b2e900be4c21d",
+      "snapshotId": "HWS-0d01ffbac2ebc8e6",
       "eventId": "EV-0121f0a9e9a975ec",
       "eventIds": [
         "EV-0121f0a9e9a975ec"
       ],
-      "dataDate": "2026-08-17",
-      "date": "2026-08-17",
+      "dataDate": "2026-08-18",
+      "date": "2026-08-18",
       "title": "L&T",
       "subject": "L&T",
       "productNames": [],
@@ -6890,12 +7186,21 @@
         "shipment_deployment": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-1bfbfa3663cb058f"
+          "fact_ref": "HWF-2268ac6216854666"
         }
       },
       "factCount": 4,
-      "snapshotCount": 4,
+      "snapshotCount": 5,
       "changes": [
+        {
+          "date": "2026-08-18",
+          "previousDate": "2026-08-17",
+          "snapshotId": "HWS-0d01ffbac2ebc8e6",
+          "previousSnapshotId": "HWS-8c1b2e900be4c21d",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        },
         {
           "date": "2026-08-17",
           "previousDate": "2026-08-16",
@@ -6927,8 +7232,8 @@
       "capacityFacts": [],
       "supplyFacts": [
         {
-          "data_date": "2026-08-17",
-          "hardware_fact_id": "HWF-04cc79f76903af19",
+          "data_date": "2026-08-18",
+          "hardware_fact_id": "HWF-d8242f8408743f7d",
           "fact_type": "shipment_deployment",
           "observed_at": "2026-08-13T16:26:39.000Z",
           "subject_entity_id": "EN-29b9f0cae32e7a8a",
@@ -6942,15 +7247,15 @@
           "event_refs": [
             "EV-0121f0a9e9a975ec"
           ],
-          "claim_ref": "CL-dede1b282ec73dd8",
+          "claim_ref": "CL-bb8e79e7bd295ca7",
           "source_refs": [
             "SA-d8d5a553062a5141"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-17/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-18/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-17",
-          "hardware_fact_id": "HWF-8d22d9737db0c582",
+          "data_date": "2026-08-18",
+          "hardware_fact_id": "HWF-ec2bf0b3c5f6b145",
           "fact_type": "shipment_deployment",
           "observed_at": "2026-08-13T16:26:39.000Z",
           "subject_entity_id": "EN-29b9f0cae32e7a8a",
@@ -6964,15 +7269,15 @@
           "event_refs": [
             "EV-0121f0a9e9a975ec"
           ],
-          "claim_ref": "CL-e5aa328772150ef3",
+          "claim_ref": "CL-4220b7d05dc56a89",
           "source_refs": [
             "SA-d8d5a553062a5141"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-17/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-18/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-17",
-          "hardware_fact_id": "HWF-ec927d63f14d39d9",
+          "data_date": "2026-08-18",
+          "hardware_fact_id": "HWF-7309f69d43ab0fa4",
           "fact_type": "shipment_deployment",
           "observed_at": "2026-08-13T16:26:39.000Z",
           "subject_entity_id": "EN-29b9f0cae32e7a8a",
@@ -6986,15 +7291,15 @@
           "event_refs": [
             "EV-0121f0a9e9a975ec"
           ],
-          "claim_ref": "CL-ab35c9909ab52391",
+          "claim_ref": "CL-99c4db10eecc8046",
           "source_refs": [
             "SA-d8d5a553062a5141"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-17/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-18/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-17",
-          "hardware_fact_id": "HWF-1bfbfa3663cb058f",
+          "data_date": "2026-08-18",
+          "hardware_fact_id": "HWF-2268ac6216854666",
           "fact_type": "shipment_deployment",
           "observed_at": "2026-08-13T16:26:39.000Z",
           "subject_entity_id": "EN-29b9f0cae32e7a8a",
@@ -7008,11 +7313,11 @@
           "event_refs": [
             "EV-0121f0a9e9a975ec"
           ],
-          "claim_ref": "CL-a176694ebf661235",
+          "claim_ref": "CL-4b9800d9d76b1990",
           "source_refs": [
             "SA-d8d5a553062a5141"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-17/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-18/hardware-facts.json"
         }
       ],
       "specificationFacts": [],

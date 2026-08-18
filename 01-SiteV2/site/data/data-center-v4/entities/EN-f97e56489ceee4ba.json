@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-17T00:24:11.459Z",
-    "latestDataDate": "2026-08-17",
-    "currentDate": "2026-08-17",
-    "eventCount": 2171,
+    "generatedAt": "2026-08-18T00:24:57.421Z",
+    "latestDataDate": "2026-08-18",
+    "currentDate": "2026-08-18",
+    "eventCount": 2199,
     "quarantinedEventCount": 19
   },
   "entity": {
@@ -24,7 +24,8 @@
     ],
     "eventIds": [],
     "viewpointIds": [
-      "2088500028721832432",
+      "2088866513008873560",
+      "2088725514542575903",
       "2077928427936710901",
       "2077632589498913087",
       "2077630111499882637",
@@ -74,19 +75,19 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-05",
-    "lastSeen": "2026-08-15",
+    "lastSeen": "2026-08-16",
     "handle": "thsottiaux",
     "role": "Codex 与 ChatGPT OpenAI",
     "organization": "OpenAI",
     "viewpointTags": [
+      "AI 基础设施",
+      "模型基础设施观点",
       "产品与创业",
       "产品策略观点",
       "AI 应用与平台",
       "Agent",
       "Agent 工作流观点",
       "Agentic AI",
-      "AI 基础设施",
-      "模型基础设施观点",
       "AI 编程",
       "AI Coding 观点",
       "AI Coding",
@@ -117,10 +118,16 @@
     "timeline": [],
     "viewpoints": [
       {
-        "id": "2088500028721832432",
-        "date": "2026-08-15",
-        "title": "这周Codex帮你解决了哪个棘手问题？你从哪里向他人学习如何突破前沿？",
-        "sourceUrl": "https://x.com/thsottiaux/status/2088500028721832432"
+        "id": "2088866513008873560",
+        "date": "2026-08-16",
+        "title": "关于 token 和每个 token 的价格。我说过会多写一点，所以现在开始：OpenAI 的 token 不等于另一个模型的 token。我们习惯用“每百万 token 多少美元”来比较 AI 价格，好像 token 是一个标准化单位，就像克或千瓦时一样。但它不是。不同模型在处理和生成完全相同的文本时，使用的 token 数量并不相同，这意味着每个 token 的价格更低，并不一定代表最终账单更低。想象两个完全相同的披萨。一个切成 8 片，每片 $2。另一个切成 16 片，每片 $1.25。第二家宣传的每片价格更便宜，但整个披萨要 $20，而不是 $16。真扫兴……你的胃其实并不在乎你刚才吃了多少片。我知道你现在饿了，但回到 token。在一次涵盖英语、技术、多语言和数字文本的小范围比较中，我们用于 GPT-5.6 Sol 的分词器使用了 766 个 token，而 Claude Opus 5 估计使用了 1,170 个。这是一个非常显著的差异，大约少了 34.5% 的 token。你可以得到完全相同的文本，却要为所有那些额外的 token 付费。每个 token 的价格并不能真正说明这个问题。即使修正了分词器差异，也还是没抓住更关键的一点。真正重要的是每个成功结果的价格，而要做到这一点，你可以把基准测试当作起点，但最终必须在自己的使用场景中实际尝试和衡量。就这些。愿 token 流动不息。",
+        "sourceUrl": "https://x.com/thsottiaux/status/2088866513008873560"
+      },
+      {
+        "id": "2088725514542575903",
+        "date": "2026-08-16",
+        "title": "OpenAI目前正在发生令人难以置信的事情。大家热情高涨。",
+        "sourceUrl": "https://x.com/thsottiaux/status/2088725514542575903"
       },
       {
         "id": "2077928427936710901",

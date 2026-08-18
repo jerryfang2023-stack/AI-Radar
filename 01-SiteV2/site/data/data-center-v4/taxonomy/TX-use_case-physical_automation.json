@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-17T00:24:11.459Z",
-    "latestDataDate": "2026-08-17",
-    "currentDate": "2026-08-17",
-    "eventCount": 2171,
+    "generatedAt": "2026-08-18T00:24:57.421Z",
+    "latestDataDate": "2026-08-18",
+    "currentDate": "2026-08-18",
+    "eventCount": 2199,
     "quarantinedEventCount": 19
   },
   "node": {
@@ -68,6 +68,7 @@
       "EV-e4fec8a00b416d12",
       "EV-39848cdd62c00e59",
       "EV-4faa2bcf2e42e60c",
+      "EV-24d84f9f4613ea51",
       "EV-5ede0f85a672441c",
       "EV-c698da7da473b059",
       "EV-e781e169725006f0",
@@ -154,6 +155,7 @@
       "EN-3e14bbbb0445c2de",
       "EN-7c5d04104b1d34e7",
       "EN-72138e570e5103e2",
+      "EN-aec12c1b42f6e0b6",
       "EN-478676438ee161a3",
       "EN-e59f5a52b6713a29",
       "EN-2b6e51bec93e86c1",
@@ -186,6 +188,7 @@
     "hardwareIds": [
       "HW-ceb55d9bc637c1d3",
       "HW-8ec8f237534254df",
+      "HW-506bfd2ae2c40c2b",
       "HW-eb5bba1ad6c016b0",
       "HW-b13c3131fc20fe83",
       "HW-155f566cfd988f5e",
@@ -194,7 +197,7 @@
       "HW-dca442211b264bbe"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-08-17"
+    "lastSeen": "2026-08-18"
   },
   "events": [
     {
@@ -14140,6 +14143,165 @@
       "publisher": "NVIDIA AI Blog"
     },
     {
+      "id": "EV-24d84f9f4613ea51",
+      "dataDate": "2026-08-18",
+      "date": "2026-08-17",
+      "updatedDate": "2026-08-18",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "共生知行发布人形机器人赛车Demo：以卡丁车测试双足机器人的“全身智能”",
+      "originalTitle": "",
+      "subject": "共生知行",
+      "action": "发布人形机器人赛车Demo：以卡丁车测试双足机器人",
+      "object": "的“全身智能”",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-aec12c1b42f6e0b6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-aec12c1b42f6e0b6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-aec12c1b42f6e0b6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-aec12c1b42f6e0b6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-aec12c1b42f6e0b6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-aec12c1b42f6e0b6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-aec12c1b42f6e0b6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-aec12c1b42f6e0b6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-aec12c1b42f6e0b6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-aec12c1b42f6e0b6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-aec12c1b42f6e0b6"
+      ],
+      "entityNames": [
+        "共生知行"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://qbitai.com/2026/08/474537.html",
+      "publisher": "量子位"
+    },
+    {
       "id": "EV-5ede0f85a672441c",
       "dataDate": "2026-08-17",
       "date": "2026-08-14",
@@ -20214,12 +20376,15 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-181cd28d97c4e61d",
         "EV-e70a48e36e99d57a",
         "EV-55e7c286e95be405",
         "EV-83728e3b6c7736ce",
@@ -20241,6 +20406,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-fb33ae9b7f9454bf",
         "EV-0121f0a9e9a975ec",
         "EV-49119ae718691877",
         "EV-d84f24c8c72e7e47",
@@ -20272,6 +20438,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-5ac5368309eace1a",
         "EV-0a0fbf647a1f7b70",
         "EV-da148848ec026bdf",
         "EV-467539fe176a470e",
@@ -20295,14 +20462,16 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-615fbb4de33fad2d",
         "EV-ea2598236eae915f",
+        "EV-e3beca344d2321a9",
         "EV-58e18eab1b072c9a",
         "EV-7e0d6eb92af58925",
         "EV-a6c4f879a58ababa",
         "EV-3a7e7b6818fee0de",
         "EV-c698da7da473b059",
-        "EV-57fcbef33071910b",
         "EV-c7d0b810ac3b3d4e",
+        "EV-57fcbef33071910b",
         "EV-e781e169725006f0",
         "EV-ff924015298048ba",
         "EV-82fcff365b154465",
@@ -20380,6 +20549,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-f819309f846d95bc",
         "EV-2449fe665b666581",
         "EV-eae8f316bc05820b",
         "EV-cd7e18de453152dd",
@@ -20446,26 +20616,34 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
+        "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
+        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-17"
+      "lastSeen": "2026-08-18"
     },
     {
       "id": "EN-6b5df3bd8bb0c67d",
@@ -21245,6 +21423,29 @@
       "lastSeen": "2026-07-05"
     },
     {
+      "id": "EN-aec12c1b42f6e0b6",
+      "name": "共生知行",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-24d84f9f4613ea51"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai",
+        "TX-product_form-robotic_system"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-17",
+      "lastSeen": "2026-08-18"
+    },
+    {
       "id": "EN-478676438ee161a3",
       "name": "派早报",
       "entityType": "organization_candidate",
@@ -21299,7 +21500,6 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "谷歌 DeepMind",
         "DeepMind"
       ],
       "verificationStatus": "verified",
@@ -21315,6 +21515,7 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
+        "EV-edb9a1143b52c096",
         "EV-397a17aa878564c4",
         "EV-53757cad2cfd074d",
         "EV-0eefbf2e50b67a5e",
@@ -21374,7 +21575,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-14"
+      "lastSeen": "2026-08-18"
     },
     {
       "id": "EN-364df82f85761d58",
@@ -22004,6 +22205,56 @@
   ],
   "hardware": [
     {
+      "id": "HW-506bfd2ae2c40c2b",
+      "eventId": "EV-24d84f9f4613ea51",
+      "dataDate": "2026-08-18",
+      "date": "2026-08-17",
+      "title": "共生知行发布人形机器人赛车Demo：以卡丁车测试双足机器人的“全身智能”",
+      "hardwareType": "robot",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "共生知行",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-aec12c1b42f6e0b6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-aec12c1b42f6e0b6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/08/474537.html",
+      "sourceName": "量子位",
+      "sourceDate": "2026-08-17",
+      "entityIds": [
+        "EN-aec12c1b42f6e0b6"
+      ]
+    },
+    {
       "id": "HW-eb5bba1ad6c016b0",
       "eventId": "EV-eb12fb9dd08e5aad",
       "dataDate": "2026-08-02",
@@ -22332,6 +22583,133 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-1eb06bff2147494a",
+      "snapshotKey": "1eb06bff2147494a",
+      "snapshotId": "HWS-20b879bede0f4c3d",
+      "eventId": "EV-24d84f9f4613ea51",
+      "eventIds": [
+        "EV-24d84f9f4613ea51"
+      ],
+      "dataDate": "2026-08-18",
+      "date": "2026-08-18",
+      "title": "共生知行",
+      "subject": "共生知行",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-470de28ac8c094b2"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-18",
+          "hardware_fact_id": "HWF-b23aeb4c0c20b1c1",
+          "fact_type": "product",
+          "observed_at": "2026-08-17T09:30:49.000Z",
+          "subject_entity_id": "EN-aec12c1b42f6e0b6",
+          "subject_name": "共生知行",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "共生知行发布人形机器人赛车Demo：以卡丁车测试双足机器人的“全身智能”",
+          "event_refs": [
+            "EV-24d84f9f4613ea51"
+          ],
+          "claim_ref": "CL-87dbbfc5c2b80068",
+          "source_refs": [
+            "SA-b9c21b95899d2e0d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-18/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-18",
+          "hardware_fact_id": "HWF-e27108743829c6b1",
+          "fact_type": "product",
+          "observed_at": "2026-08-17T09:30:49.000Z",
+          "subject_entity_id": "EN-aec12c1b42f6e0b6",
+          "subject_name": "共生知行",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "8月17日，具身智能初创公司共生知行发布双足人形机器人驾驶卡丁车Demo",
+          "event_refs": [
+            "EV-24d84f9f4613ea51"
+          ],
+          "claim_ref": "CL-31f2913d8225e604",
+          "source_refs": [
+            "SA-b9c21b95899d2e0d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-18/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-18",
+          "hardware_fact_id": "HWF-470de28ac8c094b2",
+          "fact_type": "product",
+          "observed_at": "2026-08-17T09:30:49.000Z",
+          "subject_entity_id": "EN-aec12c1b42f6e0b6",
+          "subject_name": "共生知行",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "8月17日，具身智能初创公司共生知行（Symbiosis Robotics）发布双足人形机器人驾驶卡丁车Demo，官方网站同步上线。",
+          "event_refs": [
+            "EV-24d84f9f4613ea51"
+          ],
+          "claim_ref": "CL-a9c529c02c24be70",
+          "source_refs": [
+            "SA-b9c21b95899d2e0d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-18/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-aec12c1b42f6e0b6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-aec12c1b42f6e0b6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/08/474537.html",
+      "entityIds": [
+        "EN-aec12c1b42f6e0b6"
+      ]
+    },
     {
       "id": "HWC-0b534eaa4b846780",
       "snapshotKey": "0b534eaa4b846780",

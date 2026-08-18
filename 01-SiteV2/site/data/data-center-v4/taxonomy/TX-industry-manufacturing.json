@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-17T00:24:11.459Z",
-    "latestDataDate": "2026-08-17",
-    "currentDate": "2026-08-17",
-    "eventCount": 2171,
+    "generatedAt": "2026-08-18T00:24:57.421Z",
+    "latestDataDate": "2026-08-18",
+    "currentDate": "2026-08-18",
+    "eventCount": 2199,
     "quarantinedEventCount": 19
   },
   "node": {
@@ -112,8 +112,8 @@
       "EV-39848cdd62c00e59",
       "EV-436bf00fedf6288d",
       "EV-4faa2bcf2e42e60c",
-      "EV-57fcbef33071910b",
       "EV-c7d0b810ac3b3d4e",
+      "EV-57fcbef33071910b",
       "EV-a37b9d9fb85e460f",
       "EV-19bcfc6d7c1612cb",
       "EV-941ba9ebdc43f20c",
@@ -239,7 +239,7 @@
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2025-08-27",
-    "lastSeen": "2026-08-17"
+    "lastSeen": "2026-08-18"
   },
   "events": [
     {
@@ -31100,9 +31100,9 @@
     },
     {
       "id": "EV-0121f0a9e9a975ec",
-      "dataDate": "2026-08-17",
+      "dataDate": "2026-08-18",
       "date": "2026-08-14",
-      "updatedDate": "2026-08-17",
+      "updatedDate": "2026-08-18",
       "eventType": "hardware_deployment",
       "eventTypeLabel": "硬件部署",
       "eventGroup": "AI 硬件",
@@ -34687,229 +34687,10 @@
       "publisher": "NVIDIA AI Blog"
     },
     {
-      "id": "EV-57fcbef33071910b",
-      "dataDate": "2026-08-16",
-      "date": "2026-08-11",
-      "updatedDate": "2026-08-16",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "IBM与Together AI签署多年协议，利用IBM Cloud上的NVIDIA AI基础设施扩展开源AI推理",
-      "originalTitle": "IBM and Together AI Sign Multi-Year Agreement to Scale Open-Source AI Inference with NVIDIA AI Infrastructure on IBM Cloud",
-      "subject": "IBM and Together AI Sign Multi-Year Agreement to Scale",
-      "action": "Open-Source",
-      "object": "AI Inference with NVIDIA AI Infrastructure on IBM Cloud",
-      "metrics": [
-        "$240M",
-        "$800M",
-        "$8.3B",
-        "400 trillion"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "fine_tuning",
-          "name": "模型微调",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "model",
-            "name": "模型",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "chip_accelerator",
-            "name": "芯片与加速器",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "use_case": [],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "manufacturing",
-            "name": "制造业",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "fine_tuning",
-          "name": "模型微调",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "manufacturing",
-          "name": "制造业",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "fine_tuning",
-          "name": "模型微调",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "manufacturing",
-          "name": "制造业",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-916a98f0fa2a39af",
-        "EN-8d4321d936320802",
-        "EN-ae11c0abf6288776",
-        "EN-550f6ed5f71d0edc",
-        "EN-282b9a00d064d811"
-      ],
-      "entityNames": [
-        "IBM",
-        "NVIDIA",
-        "AI Inference",
-        "AI Infrastructure",
-        "Multi-Year Agreement"
-      ],
-      "productName": "AI Inference",
-      "products": [
-        {
-          "name": "AI Inference",
-          "type": "产品/服务",
-          "ownerNames": [
-            "IBM"
-          ]
-        },
-        {
-          "name": "AI Infrastructure",
-          "type": "产品/服务",
-          "ownerNames": [
-            "IBM"
-          ]
-        },
-        {
-          "name": "Multi-Year Agreement",
-          "type": "产品/服务",
-          "ownerNames": [
-            "IBM"
-          ]
-        }
-      ],
-      "sourceUrl": "https://newsroom.ibm.com/2026-08-11-IBM-and-Together-AI-Sign-Multi-Year-Agreement-to-Scale-Open-Source-AI-Inference-with-NVIDIA-AI-Infrastructure-on-IBM-Cloud",
-      "publisher": "newsroom.ibm.com"
-    },
-    {
       "id": "EV-c7d0b810ac3b3d4e",
-      "dataDate": "2026-08-14",
+      "dataDate": "2026-08-18",
       "date": "2026-08-11",
-      "updatedDate": "2026-08-14",
+      "updatedDate": "2026-08-18",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
@@ -35127,6 +34908,225 @@
         },
         {
           "name": "Aug 11",
+          "type": "产品/服务",
+          "ownerNames": [
+            "IBM"
+          ]
+        }
+      ],
+      "sourceUrl": "https://newsroom.ibm.com/2026-08-11-IBM-and-Together-AI-Sign-Multi-Year-Agreement-to-Scale-Open-Source-AI-Inference-with-NVIDIA-AI-Infrastructure-on-IBM-Cloud",
+      "publisher": "newsroom.ibm.com"
+    },
+    {
+      "id": "EV-57fcbef33071910b",
+      "dataDate": "2026-08-16",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-16",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "IBM与Together AI签署多年协议，利用IBM Cloud上的NVIDIA AI基础设施扩展开源AI推理",
+      "originalTitle": "IBM and Together AI Sign Multi-Year Agreement to Scale Open-Source AI Inference with NVIDIA AI Infrastructure on IBM Cloud",
+      "subject": "IBM and Together AI Sign Multi-Year Agreement to Scale",
+      "action": "Open-Source",
+      "object": "AI Inference with NVIDIA AI Infrastructure on IBM Cloud",
+      "metrics": [
+        "$240M",
+        "$800M",
+        "$8.3B",
+        "400 trillion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-8d4321d936320802",
+        "EN-ae11c0abf6288776",
+        "EN-550f6ed5f71d0edc",
+        "EN-282b9a00d064d811"
+      ],
+      "entityNames": [
+        "IBM",
+        "NVIDIA",
+        "AI Inference",
+        "AI Infrastructure",
+        "Multi-Year Agreement"
+      ],
+      "productName": "AI Inference",
+      "products": [
+        {
+          "name": "AI Inference",
+          "type": "产品/服务",
+          "ownerNames": [
+            "IBM"
+          ]
+        },
+        {
+          "name": "AI Infrastructure",
+          "type": "产品/服务",
+          "ownerNames": [
+            "IBM"
+          ]
+        },
+        {
+          "name": "Multi-Year Agreement",
           "type": "产品/服务",
           "ownerNames": [
             "IBM"
@@ -37884,12 +37884,15 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-181cd28d97c4e61d",
         "EV-e70a48e36e99d57a",
         "EV-55e7c286e95be405",
         "EV-83728e3b6c7736ce",
@@ -37911,6 +37914,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-fb33ae9b7f9454bf",
         "EV-0121f0a9e9a975ec",
         "EV-49119ae718691877",
         "EV-d84f24c8c72e7e47",
@@ -37942,6 +37946,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-5ac5368309eace1a",
         "EV-0a0fbf647a1f7b70",
         "EV-da148848ec026bdf",
         "EV-467539fe176a470e",
@@ -37965,14 +37970,16 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-615fbb4de33fad2d",
         "EV-ea2598236eae915f",
+        "EV-e3beca344d2321a9",
         "EV-58e18eab1b072c9a",
         "EV-7e0d6eb92af58925",
         "EV-a6c4f879a58ababa",
         "EV-3a7e7b6818fee0de",
         "EV-c698da7da473b059",
-        "EV-57fcbef33071910b",
         "EV-c7d0b810ac3b3d4e",
+        "EV-57fcbef33071910b",
         "EV-e781e169725006f0",
         "EV-ff924015298048ba",
         "EV-82fcff365b154465",
@@ -38050,6 +38057,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-f819309f846d95bc",
         "EV-2449fe665b666581",
         "EV-eae8f316bc05820b",
         "EV-cd7e18de453152dd",
@@ -38116,26 +38124,34 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
+        "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
+        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-17"
+      "lastSeen": "2026-08-18"
     },
     {
       "id": "EN-2505fe8a9e908e04",
@@ -38239,6 +38255,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
@@ -38261,8 +38278,7 @@
         "TX-industry-telecommunications",
         "TX-target_user-business_user",
         "TX-target_user-developer",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-product_form-compute_cloud_service"
+        "TX-use_case-productivity_enterprise_workflows"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-05",
@@ -40116,6 +40132,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-product_form-ai_compute_system",
@@ -40125,13 +40142,12 @@
         "TX-product_form-chip_accelerator",
         "TX-product_form-model",
         "TX-product_form-ai_infrastructure_software",
-        "TX-product_form-compute_cloud_service",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-14",
-      "lastSeen": "2026-08-17"
+      "lastSeen": "2026-08-18"
     },
     {
       "id": "EN-57fac8572eeab5fc",
@@ -40767,6 +40783,8 @@
         "EV-a00763037a94d512",
         "EV-02548003157849bb",
         "EV-8b0f056571d68269",
+        "EV-3ebefd784ba0afd0",
+        "EV-ba20c6e0144aabb9",
         "EV-081fe42665b4a0b2",
         "EV-84697d26f813b122",
         "EV-4e5c6267b3237dac",
@@ -40821,7 +40839,7 @@
         "EN-7d1507284a5757ca"
       ],
       "firstSeen": "2023-11-28",
-      "lastSeen": "2026-08-17"
+      "lastSeen": "2026-08-18"
     },
     {
       "id": "EN-bbdefa2950f49882",
@@ -40851,6 +40869,7 @@
         "EV-4a162c41bb82f325",
         "EV-5762fe51987bc5ff",
         "EV-6cb8979f92cf74ce",
+        "EV-7690a249e07ddac8",
         "EV-a4b7cd533b0b34dc",
         "EV-fd329b4350f404ef",
         "EV-57944eebac69d510",
@@ -40876,6 +40895,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-62297e5ea63f0c78",
         "EV-5fe819e7070b76e6",
         "EV-930447492f4368e1",
         "EV-be4b6dc8829070e5",
@@ -40997,6 +41017,7 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-f5aec01f1466f6bb",
         "EV-7a3a3754522828e1",
         "EV-8680757a0026461d",
         "EV-248e01495eb582ed",
@@ -41041,6 +41062,7 @@
         "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-model",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-security_operations",
         "TX-technology-embodied_ai",
         "TX-product_form-end_user_application",
@@ -41068,7 +41090,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-17"
+      "lastSeen": "2026-08-18"
     },
     {
       "id": "EN-1706429cbf67f1c9",
@@ -41086,6 +41108,7 @@
         "EV-0ad3854d95038ea3",
         "EV-87528c24b38b6312",
         "EV-a9b7129f547eef64",
+        "EV-9703abcbede6968a",
         "EV-d7d649a3126aa663",
         "EV-daa95c194cced8db",
         "EV-3ec034d25ba6a710",
@@ -41098,7 +41121,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-26",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-18"
     },
     {
       "id": "EN-c3983a4111660712",
@@ -41322,7 +41345,7 @@
     {
       "id": "HW-304c6370cc157449",
       "eventId": "EV-0121f0a9e9a975ec",
-      "dataDate": "2026-08-17",
+      "dataDate": "2026-08-18",
       "date": "2026-08-14",
       "title": "L&T在钦奈为Together AI部署印度首个10,000-GPU统一AI集群",
       "hardwareType": "gpu",
@@ -41591,15 +41614,203 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-1e90510260afb7ed",
+      "snapshotKey": "1e90510260afb7ed",
+      "snapshotId": "HWS-dd576b05c3dd7dda",
+      "eventId": "EV-c7d0b810ac3b3d4e",
+      "eventIds": [
+        "EV-c7d0b810ac3b3d4e",
+        "EV-57fcbef33071910b"
+      ],
+      "dataDate": "2026-08-18",
+      "date": "2026-08-18",
+      "title": "AI Inference / AI Infrastructure / Aug 11 / Multi-Year Agreement",
+      "subject": "IBM",
+      "productNames": [
+        "AI Inference",
+        "AI Infrastructure",
+        "Aug 11",
+        "Multi-Year Agreement"
+      ],
+      "hardwareType": "data_center / gpu",
+      "factTypes": [
+        "shipment_deployment",
+        "product"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "240",
+          "unit": "$M",
+          "fact_ref": "HWF-7d847ef8fea10dfc"
+        },
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-33d1f1a5d8e73920"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 4,
+      "changes": [
+        {
+          "date": "2026-08-18",
+          "previousDate": "2026-08-16",
+          "snapshotId": "HWS-dd576b05c3dd7dda",
+          "previousSnapshotId": "HWS-240ed285877828e9",
+          "changedFacts": [
+            "shipment_deployment",
+            "product"
+          ]
+        },
+        {
+          "date": "2026-08-16",
+          "previousDate": "2026-08-14",
+          "snapshotId": "HWS-240ed285877828e9",
+          "previousSnapshotId": "HWS-af0b8f4169fd802a",
+          "changedFacts": [
+            "shipment_deployment",
+            "product"
+          ]
+        },
+        {
+          "date": "2026-08-14",
+          "previousDate": "2026-08-12",
+          "snapshotId": "HWS-af0b8f4169fd802a",
+          "previousSnapshotId": "HWS-b144d4a901bfc4c0",
+          "changedFacts": [
+            "shipment_deployment",
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-18",
+          "hardware_fact_id": "HWF-7d847ef8fea10dfc",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-11T00:00:00.000Z",
+          "subject_entity_id": "EN-916a98f0fa2a39af",
+          "subject_name": "IBM",
+          "product_entity_ids": [
+            "EN-ae11c0abf6288776",
+            "EN-550f6ed5f71d0edc",
+            "EN-7f8f379674a95169"
+          ],
+          "product_names": [
+            "AI Inference",
+            "AI Infrastructure",
+            "Aug 11"
+          ],
+          "component_type": "data_center",
+          "metric_value": "240",
+          "unit": "$M",
+          "source_quote": "ARMONK, N.Y. and SAN FRANCISCO , Aug. 11, 2026 / PRNewswire / -- IBM (NYSE: IBM ) announced a collaboration with Together AI to deliver IBM and NVIDIA AI infrastructure. Under a multi-year $240M agreement between IBM and Together AI, IBM is positioned to deploy a large cluster of NVIDIA HGX B300 systems on IBM Cloud with expected availability in Q1 2027. Together AI will use this cluster to provide open-source model inference. This deployment is the first dedicated, large-scale cluster built for inference on IBM Cloud using HGX B300 systems and NVIDIA Spectrum - X TM Ethernet networking. According to NVIDIA, it is built to deliver 30x more AI factory output compared to prior generations.",
+          "event_refs": [
+            "EV-c7d0b810ac3b3d4e"
+          ],
+          "claim_ref": "CL-105b53214157e316",
+          "source_refs": [
+            "SA-1917d0c1d2970c86"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-18/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-18",
+          "hardware_fact_id": "HWF-33d1f1a5d8e73920",
+          "fact_type": "product",
+          "observed_at": "2026-08-11T00:00:00.000Z",
+          "subject_entity_id": "EN-916a98f0fa2a39af",
+          "subject_name": "IBM",
+          "product_entity_ids": [
+            "EN-ae11c0abf6288776",
+            "EN-550f6ed5f71d0edc",
+            "EN-7f8f379674a95169"
+          ],
+          "product_names": [
+            "AI Inference",
+            "AI Infrastructure",
+            "Aug 11"
+          ],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Together AI selected IBM with NVIDIA because of their innovative product roadmaps and their ability to deliver GPU capacity at the pace required for rapid AI scaling and lowest token cost. Building on IBM's expertise in delivering enterprise-grade cloud capabilities, this collaboration aims to help Together AI to continue its expansion into the enterprise space while making open-source AI more accessible to developers and enterprises around the world.",
+          "event_refs": [
+            "EV-c7d0b810ac3b3d4e"
+          ],
+          "claim_ref": "CL-b0733c1a0c465a1a",
+          "source_refs": [
+            "SA-1917d0c1d2970c86"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-18/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://newsroom.ibm.com/2026-08-11-IBM-and-Together-AI-Sign-Multi-Year-Agreement-to-Scale-Open-Source-AI-Inference-with-NVIDIA-AI-Infrastructure-on-IBM-Cloud",
+      "entityIds": [
+        "EN-916a98f0fa2a39af",
+        "EN-8d4321d936320802",
+        "EN-ae11c0abf6288776",
+        "EN-550f6ed5f71d0edc",
+        "EN-7f8f379674a95169",
+        "EN-282b9a00d064d811"
+      ]
+    },
+    {
       "id": "HWC-aa1ceb06f4e3c084",
       "snapshotKey": "aa1ceb06f4e3c084",
-      "snapshotId": "HWS-8c1b2e900be4c21d",
+      "snapshotId": "HWS-0d01ffbac2ebc8e6",
       "eventId": "EV-0121f0a9e9a975ec",
       "eventIds": [
         "EV-0121f0a9e9a975ec"
       ],
-      "dataDate": "2026-08-17",
-      "date": "2026-08-17",
+      "dataDate": "2026-08-18",
+      "date": "2026-08-18",
       "title": "L&T",
       "subject": "L&T",
       "productNames": [],
@@ -41611,12 +41822,21 @@
         "shipment_deployment": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-1bfbfa3663cb058f"
+          "fact_ref": "HWF-2268ac6216854666"
         }
       },
       "factCount": 4,
-      "snapshotCount": 4,
+      "snapshotCount": 5,
       "changes": [
+        {
+          "date": "2026-08-18",
+          "previousDate": "2026-08-17",
+          "snapshotId": "HWS-0d01ffbac2ebc8e6",
+          "previousSnapshotId": "HWS-8c1b2e900be4c21d",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        },
         {
           "date": "2026-08-17",
           "previousDate": "2026-08-16",
@@ -41648,8 +41868,8 @@
       "capacityFacts": [],
       "supplyFacts": [
         {
-          "data_date": "2026-08-17",
-          "hardware_fact_id": "HWF-04cc79f76903af19",
+          "data_date": "2026-08-18",
+          "hardware_fact_id": "HWF-d8242f8408743f7d",
           "fact_type": "shipment_deployment",
           "observed_at": "2026-08-13T16:26:39.000Z",
           "subject_entity_id": "EN-29b9f0cae32e7a8a",
@@ -41663,15 +41883,15 @@
           "event_refs": [
             "EV-0121f0a9e9a975ec"
           ],
-          "claim_ref": "CL-dede1b282ec73dd8",
+          "claim_ref": "CL-bb8e79e7bd295ca7",
           "source_refs": [
             "SA-d8d5a553062a5141"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-17/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-18/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-17",
-          "hardware_fact_id": "HWF-8d22d9737db0c582",
+          "data_date": "2026-08-18",
+          "hardware_fact_id": "HWF-ec2bf0b3c5f6b145",
           "fact_type": "shipment_deployment",
           "observed_at": "2026-08-13T16:26:39.000Z",
           "subject_entity_id": "EN-29b9f0cae32e7a8a",
@@ -41685,15 +41905,15 @@
           "event_refs": [
             "EV-0121f0a9e9a975ec"
           ],
-          "claim_ref": "CL-e5aa328772150ef3",
+          "claim_ref": "CL-4220b7d05dc56a89",
           "source_refs": [
             "SA-d8d5a553062a5141"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-17/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-18/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-17",
-          "hardware_fact_id": "HWF-ec927d63f14d39d9",
+          "data_date": "2026-08-18",
+          "hardware_fact_id": "HWF-7309f69d43ab0fa4",
           "fact_type": "shipment_deployment",
           "observed_at": "2026-08-13T16:26:39.000Z",
           "subject_entity_id": "EN-29b9f0cae32e7a8a",
@@ -41707,15 +41927,15 @@
           "event_refs": [
             "EV-0121f0a9e9a975ec"
           ],
-          "claim_ref": "CL-ab35c9909ab52391",
+          "claim_ref": "CL-99c4db10eecc8046",
           "source_refs": [
             "SA-d8d5a553062a5141"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-17/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-18/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-17",
-          "hardware_fact_id": "HWF-1bfbfa3663cb058f",
+          "data_date": "2026-08-18",
+          "hardware_fact_id": "HWF-2268ac6216854666",
           "fact_type": "shipment_deployment",
           "observed_at": "2026-08-13T16:26:39.000Z",
           "subject_entity_id": "EN-29b9f0cae32e7a8a",
@@ -41729,11 +41949,11 @@
           "event_refs": [
             "EV-0121f0a9e9a975ec"
           ],
-          "claim_ref": "CL-a176694ebf661235",
+          "claim_ref": "CL-4b9800d9d76b1990",
           "source_refs": [
             "SA-d8d5a553062a5141"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-17/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-18/hardware-facts.json"
         }
       ],
       "specificationFacts": [],
@@ -41781,184 +42001,6 @@
         "EN-6f7ac1823da81d2e",
         "EN-e1517be14d06cdb7",
         "EN-7d3194f79e645c42"
-      ]
-    },
-    {
-      "id": "HWC-1e90510260afb7ed",
-      "snapshotKey": "1e90510260afb7ed",
-      "snapshotId": "HWS-240ed285877828e9",
-      "eventId": "EV-57fcbef33071910b",
-      "eventIds": [
-        "EV-57fcbef33071910b",
-        "EV-c7d0b810ac3b3d4e"
-      ],
-      "dataDate": "2026-08-16",
-      "date": "2026-08-16",
-      "title": "AI Inference / AI Infrastructure / Multi-Year Agreement / Aug 11",
-      "subject": "IBM",
-      "productNames": [
-        "AI Inference",
-        "AI Infrastructure",
-        "Multi-Year Agreement",
-        "Aug 11"
-      ],
-      "hardwareType": "data_center / gpu",
-      "factTypes": [
-        "shipment_deployment",
-        "product"
-      ],
-      "latestValues": {
-        "shipment_deployment": {
-          "metric_value": "240",
-          "unit": "$M",
-          "fact_ref": "HWF-6db645c7015ca8bb"
-        },
-        "product": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-d0c493d982f7b361"
-        }
-      },
-      "factCount": 2,
-      "snapshotCount": 3,
-      "changes": [
-        {
-          "date": "2026-08-16",
-          "previousDate": "2026-08-14",
-          "snapshotId": "HWS-240ed285877828e9",
-          "previousSnapshotId": "HWS-af0b8f4169fd802a",
-          "changedFacts": [
-            "shipment_deployment",
-            "product"
-          ]
-        },
-        {
-          "date": "2026-08-14",
-          "previousDate": "2026-08-12",
-          "snapshotId": "HWS-af0b8f4169fd802a",
-          "previousSnapshotId": "HWS-b144d4a901bfc4c0",
-          "changedFacts": [
-            "shipment_deployment",
-            "product"
-          ]
-        }
-      ],
-      "capacityFacts": [],
-      "supplyFacts": [
-        {
-          "data_date": "2026-08-16",
-          "hardware_fact_id": "HWF-6db645c7015ca8bb",
-          "fact_type": "shipment_deployment",
-          "observed_at": "2026-08-11T00:00:00.000Z",
-          "subject_entity_id": "EN-916a98f0fa2a39af",
-          "subject_name": "IBM",
-          "product_entity_ids": [
-            "EN-ae11c0abf6288776",
-            "EN-550f6ed5f71d0edc",
-            "EN-282b9a00d064d811"
-          ],
-          "product_names": [
-            "AI Inference",
-            "AI Infrastructure",
-            "Multi-Year Agreement"
-          ],
-          "component_type": "data_center",
-          "metric_value": "240",
-          "unit": "$M",
-          "source_quote": "ARMONK, N.Y. and SAN FRANCISCO , Aug. 11, 2026 / PRNewswire / -- IBM (NYSE: IBM ) announced a collaboration with Together AI to deliver IBM and NVIDIA AI infrastructure. Under a multi-year $240M agreement between IBM and Together AI, IBM is positioned to deploy a large cluster of NVIDIA HGX B300 systems on IBM Cloud with expected availability in Q1 2027. Together AI will use this cluster to provide open-source model inference. This deployment is the first dedicated, large-scale cluster built for inference on IBM Cloud using HGX B300 systems and NVIDIA Spectrum - X TM Ethernet networking. According to NVIDIA, it is built to deliver 30x more AI factory output compared to prior generations.",
-          "event_refs": [
-            "EV-57fcbef33071910b"
-          ],
-          "claim_ref": "CL-f6eacfb8a9c92143",
-          "source_refs": [
-            "SA-1917d0c1d2970c86"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-16/hardware-facts.json"
-        }
-      ],
-      "specificationFacts": [
-        {
-          "data_date": "2026-08-16",
-          "hardware_fact_id": "HWF-d0c493d982f7b361",
-          "fact_type": "product",
-          "observed_at": "2026-08-11T00:00:00.000Z",
-          "subject_entity_id": "EN-916a98f0fa2a39af",
-          "subject_name": "IBM",
-          "product_entity_ids": [
-            "EN-ae11c0abf6288776",
-            "EN-550f6ed5f71d0edc",
-            "EN-282b9a00d064d811"
-          ],
-          "product_names": [
-            "AI Inference",
-            "AI Infrastructure",
-            "Multi-Year Agreement"
-          ],
-          "component_type": "gpu",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "Together AI selected IBM with NVIDIA because of their innovative product roadmaps and their ability to deliver GPU capacity at the pace required for rapid AI scaling and lowest token cost. Building on IBM's expertise in delivering enterprise-grade cloud capabilities, this collaboration aims to help Together AI to continue its expansion into the enterprise space while making open-source AI more accessible to developers and enterprises around the world.",
-          "event_refs": [
-            "EV-57fcbef33071910b"
-          ],
-          "claim_ref": "CL-34623a5f02ac9889",
-          "source_refs": [
-            "SA-1917d0c1d2970c86"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-16/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "fine_tuning",
-          "name": "模型微调",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-916a98f0fa2a39af"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "fine_tuning",
-          "name": "模型微调",
-          "entityIds": [
-            "EN-916a98f0fa2a39af"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "sourceUrl": "https://newsroom.ibm.com/2026-08-11-IBM-and-Together-AI-Sign-Multi-Year-Agreement-to-Scale-Open-Source-AI-Inference-with-NVIDIA-AI-Infrastructure-on-IBM-Cloud",
-      "entityIds": [
-        "EN-916a98f0fa2a39af",
-        "EN-8d4321d936320802",
-        "EN-ae11c0abf6288776",
-        "EN-550f6ed5f71d0edc",
-        "EN-282b9a00d064d811",
-        "EN-7f8f379674a95169"
       ]
     },
     {

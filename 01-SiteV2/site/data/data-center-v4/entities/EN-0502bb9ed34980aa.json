@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-17T00:24:11.459Z",
-    "latestDataDate": "2026-08-17",
-    "currentDate": "2026-08-17",
-    "eventCount": 2171,
+    "generatedAt": "2026-08-18T00:24:57.421Z",
+    "latestDataDate": "2026-08-18",
+    "currentDate": "2026-08-18",
+    "eventCount": 2199,
     "quarantinedEventCount": 19
   },
   "entity": {
@@ -37,7 +37,8 @@
     "firstSeen": "2026-06-09",
     "lastSeen": "2026-06-18",
     "relationIds": [
-      "REL2-1088b525da98df85"
+      "REL2-1088b525da98df85",
+      "REL2-ced495a5aea356e0"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -152,13 +153,16 @@
       "name": "Apple",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "苹果"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
         "EV-f282ab8740ff0096",
+        "EV-3ebefd784ba0afd0",
         "EV-5bbc509a032b8309",
         "EV-bf46d8d6d7d6e90a",
         "EV-53f08daddd011dbb",
@@ -220,6 +224,7 @@
         "EV-ebef81764102ee7c",
         "EV-f6611268f119a172",
         "EV-342799d4e68e7416",
+        "EV-4b0065f780bd73bd",
         "EV-e07d82ffbad83150",
         "EV-e544a4c3fb59b9b0",
         "EV-d40d5c9625f296db",
@@ -251,11 +256,16 @@
         "TX-deployment_model-edge_device"
       ],
       "relatedEntityIds": [
+        "EN-e463d05a14e8697f",
+        "EN-7df09a7717ef2feb",
         "EN-0502bb9ed34980aa",
-        "EN-af3ceabbe048a291"
+        "EN-dd920a8cd166f486",
+        "EN-1924fff8eb4d54ae",
+        "EN-af3ceabbe048a291",
+        "EN-45b5216872656eb3"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-08-17"
+      "lastSeen": "2026-08-18"
     }
   ],
   "relationships": [
@@ -275,6 +285,27 @@
         "SA-4cd346680b734b4c"
       ],
       "data_date": "2026-06-18",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-ced495a5aea356e0",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0502bb9ed34980aa",
+      "object_type": "entity",
+      "event_id": "EV-a9fe726c4ea2a17b",
+      "claim_refs": [
+        "CL-abeb123796984e45",
+        "CL-be6397745be4b268",
+        "CL-237aa10e9131be89",
+        "CL-bb177f8c54f761c6"
+      ],
+      "source_refs": [
+        "SA-4c454bcda76945d8"
+      ],
+      "data_date": "2026-06-09",
       "status": "verified"
     }
   ],
@@ -446,8 +477,8 @@
         "EV-01df8e489a34893b",
         "EV-afd0332ad8f5f05b",
         "EV-cab03fca079f62e6",
-        "EV-040744ef8b205e0d",
         "EV-129ffa6be41bb485",
+        "EV-040744ef8b205e0d",
         "EV-8619e2d881669888",
         "EV-76e7dc691b68fa04",
         "EV-aa7cf8ee6c875f08",
@@ -481,6 +512,8 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-0d5a32aca724d30e",
+        "EV-615fbb4de33fad2d",
         "EV-4551be310b520fcc",
         "EV-ea2598236eae915f",
         "EV-c92db935a2cef0d6",
@@ -493,8 +526,8 @@
         "EV-7e0d6eb92af58925",
         "EV-3a7e7b6818fee0de",
         "EV-ba2898569165c9a6",
-        "EV-57fcbef33071910b",
         "EV-c7d0b810ac3b3d4e",
+        "EV-57fcbef33071910b",
         "EV-5c30f52112d92491",
         "EV-f3a29cb561809daf",
         "EV-ff924015298048ba",
@@ -744,9 +777,9 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-2c17183b71d8b7d1",
         "EV-9db14ad0d6fe3135",
         "EV-7a3a3754522828e1",
-        "EV-2c17183b71d8b7d1",
         "EV-67a7a3c9f1eabd22",
         "EV-4e3e9b543127b55a",
         "EV-20b82e2a2cb33a0e",
@@ -915,6 +948,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-32e83e92d45d71f6",
         "EN-3b9e1cdd9e593b5c",
         "EN-bbdefa2950f49882",
         "EN-b93006774cbdd4b2",
@@ -1088,8 +1122,8 @@
         "FDE-de1562b0634b20ed",
         "FDE-d693e68f89adf86a",
         "FDE-ab9c514225686f60",
-        "FDE-360d1ff40e647eda",
         "FDE-ed781e27a7b9458e",
+        "FDE-360d1ff40e647eda",
         "FDE-8506e8248e149161",
         "FDE-e780a756aeb71dfc",
         "FDE-602624cf072c079d",

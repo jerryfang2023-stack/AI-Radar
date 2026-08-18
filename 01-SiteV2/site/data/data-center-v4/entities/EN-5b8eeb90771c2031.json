@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-17T00:24:11.459Z",
-    "latestDataDate": "2026-08-17",
-    "currentDate": "2026-08-17",
-    "eventCount": 2171,
+    "generatedAt": "2026-08-18T00:24:57.421Z",
+    "latestDataDate": "2026-08-18",
+    "currentDate": "2026-08-18",
+    "eventCount": 2199,
     "quarantinedEventCount": 19
   },
   "entity": {
@@ -22,13 +22,14 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-cec235426920c522"
+      "EV-cec235426920c522",
+      "EV-cef89ea11e4fbeeb"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-19",
-    "lastSeen": "2026-06-20",
+    "lastSeen": "2026-08-18",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -36,12 +37,30 @@
         "EV-cec235426920c522"
       ],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-cef89ea11e4fbeeb"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-cef89ea11e4fbeeb",
+        "dataDate": "2026-08-18",
+        "date": "2026-08-18",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "如何禁用或避免侵入式 AI：一份覆盖 Windows、Chrome、Edge、Firefox 及主流应用的实用指南",
+        "displayTags": [],
+        "entityIds": [
+          "EN-16e5f60f207a1a00",
+          "EN-5b8eeb90771c2031"
+        ]
+      },
       {
         "id": "EV-cec235426920c522",
         "dataDate": "2026-06-20",
