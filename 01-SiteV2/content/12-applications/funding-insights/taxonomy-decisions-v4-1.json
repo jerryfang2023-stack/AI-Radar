@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-16T00:29:45.679Z",
+    "generated_at": "2026-08-18T02:55:19.527Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 280,
-    "input_hash": "205ca2d4f4523dc7",
+    "decision_count": 284,
+    "input_hash": "622a57979f37a4e5",
     "override_count": 17,
     "needs_review_count": 1,
-    "low_confidence_count": 3
+    "low_confidence_count": 5
   },
   "decisions": [
     {
@@ -5557,6 +5557,81 @@
       "confidence": 0.7,
       "needs_review": true,
       "rationale": "证据显示Thrive收购传统企业并植入AI工作流，覆盖会计、IT和建筑环境监管服务，跨多个行业，但产品形态和主要功能边界不够清晰，需人工复核。"
+    },
+    {
+      "event_id": "EV-181cd28d97c4e61d",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "compute_cloud_service",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "证据显示Groq从AI芯片商转型为提供GPU和AI基础设施服务的neocloud公司，直接向开发者及企业提供算力云服务，属于基础设施计算中的计算基础设施。"
+    },
+    {
+      "event_id": "EV-1dba157815d84342",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "marketing",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "content_creation",
+        "marketing"
+      ],
+      "industry_ids": [
+        "media_entertainment"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.75,
+      "needs_review": false,
+      "rationale": "Higgsfield为专业创作者、品牌和机构提供生成式AI视频与图像创作平台，并推出营销代理Supercomputer，核心是跨行业创意与营销工作流，归入企业应用中的营销。"
+    },
+    {
+      "event_id": "EV-c6c297156ff274ac",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.7,
+      "needs_review": false,
+      "rationale": "OdyssLife的首款产品Odyss N1是全天候AI智能项链，持续感知并记录用户饮食和运动行为，围绕健康医疗场景的专用数据与工作流，归入行业应用中的医疗健康。"
+    },
+    {
+      "event_id": "EV-d43103952399bc68",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "customer_support"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "Wispr提供AI语音转文字和会议记录工具，面向跨行业办公与沟通场景，属于企业应用中的生产力与工作流。"
     }
   ]
 }

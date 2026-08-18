@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-18T00:24:57.421Z",
+    "latestDataDate": "2026-08-18",
+    "currentDate": "2026-08-18",
+    "eventCount": 2199,
+    "quarantinedEventCount": 19
+  },
+  "institution": {
+    "id": "INV-743159bede5ef2",
+    "name": "Creekstone",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-08-17",
+    "latest_disclosed_at": "2026-08-17",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "multi_round"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-1913c6ab46df3a68",
+        "canonical_entity_id": "",
+        "name": "OdyssLife"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-c05de529987be876",
+        "funding_insight_id": "FI-d957aeb415083785",
+        "event_ids": [
+          "EV-c6c297156ff274ac"
+        ],
+        "company_entity_id": "EN-1913c6ab46df3a68",
+        "company_canonical_entity_id": "",
+        "company_name": "OdyssLife",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮连续融资",
+        "amount_original": "近2亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 2 亿元"
+        },
+        "announced_at": "2026-08-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-34ac4235c670177c",
+            "source_url": "https://elsewhere.news/en/linearcapital/odysslife2-linear-portfolio",
+            "source_title": "\"OdyssLife\" Closes Nearly 200 Million Yuan in New Funding, Linear Capital Continues to Double Down | Linear Portfolio | elsewhere",
+            "source_content_hash": "7da4915015fdb51b",
+            "quote": "The round was led by HSG and Monolith respectively, with existing investors Linear Capital and Creekstone continuing to increase their stakes.",
+            "quote_hash": "c798abe303f955d4ff9d092b8045b49c8f88a11ee51338c42ac592b89d7e1953"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-34ac4235c670177c",
+        "source_url": "https://elsewhere.news/en/linearcapital/odysslife2-linear-portfolio",
+        "source_title": "\"OdyssLife\" Closes Nearly 200 Million Yuan in New Funding, Linear Capital Continues to Double Down | Linear Portfolio | elsewhere",
+        "source_content_hash": "7da4915015fdb51b",
+        "quote": "The round was led by HSG and Monolith respectively, with existing investors Linear Capital and Creekstone continuing to increase their stakes.",
+        "quote_hash": "c798abe303f955d4ff9d092b8045b49c8f88a11ee51338c42ac592b89d7e1953"
+      }
+    ]
+  }
+}

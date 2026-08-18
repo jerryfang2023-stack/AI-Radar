@@ -22,14 +22,14 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 12,
+    "current_round_count": 13,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 11,
+    "portfolio_company_count": 12,
     "first_disclosed_at": "2025-09-09",
-    "latest_disclosed_at": "2026-08-11",
+    "latest_disclosed_at": "2026-08-17",
     "role_counts": {
       "lead": 1,
-      "participant": 11
+      "participant": 12
     },
     "round_codes": [
       "multi_round",
@@ -60,6 +60,11 @@
         "entity_id": "FICO-gradium",
         "canonical_entity_id": "",
         "name": "Gradium"
+      },
+      {
+        "entity_id": "EN-0b79cf2de0ee6b8e",
+        "canonical_entity_id": "",
+        "name": "Groq"
       },
       {
         "entity_id": "EN-245f1e177c5169cb",
@@ -98,6 +103,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c008d169fe115916",
+        "funding_insight_id": "FI-4b811c030362045e",
+        "event_ids": [
+          "EV-181cd28d97c4e61d"
+        ],
+        "company_entity_id": "EN-0b79cf2de0ee6b8e",
+        "company_canonical_entity_id": "",
+        "company_name": "Groq",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$350M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 350000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.5 亿美元"
+        },
+        "announced_at": "2026-08-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c02f2ac04f9320df",
+            "source_url": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud",
+            "source_title": "Groq Closes $350 million Series A, Building the World's Leading AI Inference Cloud | Groq is the premier neocloud for fast inference",
+            "source_content_hash": "562993f7020da030",
+            "quote": "Groq LLC (“Groq”) today announced a $350 million Series A fundraise and the round was led by Disruptive, with planned participation from NVIDIA.",
+            "quote_hash": "5b45c346ecf01968f41ce6e6ca6fc9e33e390132605e73bc2370eb5cb910acb1"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ef24e0cf60db85ad",
         "funding_insight_id": "FI-d1444f877a3e580e",
@@ -589,6 +632,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-c02f2ac04f9320df",
+        "source_url": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud",
+        "source_title": "Groq Closes $350 million Series A, Building the World's Leading AI Inference Cloud | Groq is the premier neocloud for fast inference",
+        "source_content_hash": "562993f7020da030",
+        "quote": "Groq LLC (“Groq”) today announced a $350 million Series A fundraise and the round was led by Disruptive, with planned participation from NVIDIA.",
+        "quote_hash": "5b45c346ecf01968f41ce6e6ca6fc9e33e390132605e73bc2370eb5cb910acb1"
+      },
       {
         "source_id": "FISRC-0deb7f666bec5423",
         "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",

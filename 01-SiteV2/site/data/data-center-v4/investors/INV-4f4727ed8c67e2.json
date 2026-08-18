@@ -20,19 +20,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 7,
-    "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 6,
+    "current_round_count": 9,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 8,
     "first_disclosed_at": "2024-09-05",
-    "latest_disclosed_at": "2026-07-16",
+    "latest_disclosed_at": "2026-08-17",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 2,
-      "lead": 2,
-      "participant": 4
+      "historical_or_ambiguous": 3,
+      "lead": 3,
+      "participant": 5
     },
     "round_codes": [
       "seed",
+      "series_b",
       "series_c",
       "series_d",
       "series_e"
@@ -67,9 +68,133 @@
         "entity_id": "EN-1050efc9e13624b2",
         "canonical_entity_id": "",
         "name": "General Analysis"
+      },
+      {
+        "entity_id": "FICO-50b2676afbe30c83",
+        "canonical_entity_id": "",
+        "name": "Higgsfield Inc."
+      },
+      {
+        "entity_id": "EN-8c5929d253b07fed",
+        "canonical_entity_id": "",
+        "name": "Wispr"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-8c76abf27819496a",
+        "funding_insight_id": "FI-a9ab795d8c87d3e9",
+        "event_ids": [
+          "EV-1dba157815d84342"
+        ],
+        "company_entity_id": "FICO-50b2676afbe30c83",
+        "company_canonical_entity_id": "",
+        "company_name": "Higgsfield Inc.",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "4 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-08-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7c15ac15bf3d0b1a",
+            "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
+            "source_title": "Higgsfield Raises $400M in Series B Funding",
+            "source_content_hash": "66d04514886f3d3e",
+            "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
+            "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a5a7803952557565",
+        "funding_insight_id": "FI-a9ab795d8c87d3e9",
+        "event_ids": [
+          "EV-1dba157815d84342"
+        ],
+        "company_entity_id": "FICO-50b2676afbe30c83",
+        "company_canonical_entity_id": "",
+        "company_name": "Higgsfield Inc.",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "4 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-08-17",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-35d27946fd70aa42",
+            "source_url": "https://techstartups.com/2026/01/15/ai-video-startup-higgsfield-raises-80m-at-1-3b-valuation-as-demand-for-generative-video-surges/",
+            "source_title": "AI video startup Higgsfield raises $80M at $1.3B valuation as demand for generative video surges - Tech Startups",
+            "source_content_hash": "0d8d55e9f8e4182e",
+            "quote": "with participation from BroadLight Capital, NextEquity, and Menlo Ventures",
+            "quote_hash": "cb6eb89aab7c1200185db653dfe353094ec3e34324d608d7317f91f876adc116"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ff8d4f231a1e34c0",
+        "funding_insight_id": "FI-c0b843a5e6f6ea0a",
+        "event_ids": [
+          "EV-d43103952399bc68"
+        ],
+        "company_entity_id": "EN-8c5929d253b07fed",
+        "company_canonical_entity_id": "",
+        "company_name": "Wispr",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$280M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 280000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.8 亿美元"
+        },
+        "announced_at": "2026-08-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-c7de0ac22c0c4ca3",
+            "source_url": "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation",
+            "source_title": "Wispr 获 2.8 亿美元 B 轮融资，估值 20 亿美元，业务拓展至会议记录",
+            "source_content_hash": "ee00eb4103124f93",
+            "quote": "raised $280 million in Series B funding, led by Menlo Ventures",
+            "quote_hash": "4ce46948a07016e67be78b2172659ab1be74d3b92043c967087099594a99c16c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b00f312fbbfc57da",
         "funding_insight_id": "FI-f59cd4d7e9ffcb18",
@@ -430,6 +555,30 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-7c15ac15bf3d0b1a",
+        "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
+        "source_title": "Higgsfield Raises $400M in Series B Funding",
+        "source_content_hash": "66d04514886f3d3e",
+        "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
+        "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+      },
+      {
+        "source_id": "FISRC-35d27946fd70aa42",
+        "source_url": "https://techstartups.com/2026/01/15/ai-video-startup-higgsfield-raises-80m-at-1-3b-valuation-as-demand-for-generative-video-surges/",
+        "source_title": "AI video startup Higgsfield raises $80M at $1.3B valuation as demand for generative video surges - Tech Startups",
+        "source_content_hash": "0d8d55e9f8e4182e",
+        "quote": "with participation from BroadLight Capital, NextEquity, and Menlo Ventures",
+        "quote_hash": "cb6eb89aab7c1200185db653dfe353094ec3e34324d608d7317f91f876adc116"
+      },
+      {
+        "source_id": "FISRC-c7de0ac22c0c4ca3",
+        "source_url": "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation",
+        "source_title": "Wispr 获 2.8 亿美元 B 轮融资，估值 20 亿美元，业务拓展至会议记录",
+        "source_content_hash": "ee00eb4103124f93",
+        "quote": "raised $280 million in Series B funding, led by Menlo Ventures",
+        "quote_hash": "4ce46948a07016e67be78b2172659ab1be74d3b92043c967087099594a99c16c"
+      },
       {
         "source_id": "FISRC-09d3aaaafa6cdabc",
         "source_url": "https://www.recall.it/summary/artificial-intelligence/how-elorian-ai-pulled-off-a-dollar300m-pre-seed-valuation-with-andrew-dai",

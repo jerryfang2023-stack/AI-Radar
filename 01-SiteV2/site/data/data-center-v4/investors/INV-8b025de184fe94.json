@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-18T00:24:57.421Z",
+    "latestDataDate": "2026-08-18",
+    "currentDate": "2026-08-18",
+    "eventCount": 2199,
+    "quarantinedEventCount": 19
+  },
+  "institution": {
+    "id": "INV-8b025de184fe94",
+    "name": "BAM Corner Point",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-08-17",
+    "latest_disclosed_at": "2026-08-17",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "FICO-50b2676afbe30c83",
+        "canonical_entity_id": "",
+        "name": "Higgsfield Inc."
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-9c46fc533cdebc5b",
+        "funding_insight_id": "FI-a9ab795d8c87d3e9",
+        "event_ids": [
+          "EV-1dba157815d84342"
+        ],
+        "company_entity_id": "FICO-50b2676afbe30c83",
+        "company_canonical_entity_id": "",
+        "company_name": "Higgsfield Inc.",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "4 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-08-17",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7c15ac15bf3d0b1a",
+            "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
+            "source_title": "Higgsfield Raises $400M in Series B Funding",
+            "source_content_hash": "66d04514886f3d3e",
+            "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
+            "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-7c15ac15bf3d0b1a",
+        "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
+        "source_title": "Higgsfield Raises $400M in Series B Funding",
+        "source_content_hash": "66d04514886f3d3e",
+        "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
+        "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+      }
+    ]
+  }
+}
