@@ -2,22 +2,632 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-06-08",
-    "generated_at": "2026-07-27T05:14:26.820Z",
+    "generated_at": "2026-08-18T14:01:39.713Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
-      "funding_events": 4,
-      "auto_published": 3,
+      "funding_events": 5,
+      "auto_published": 4,
       "blocked": 1,
-      "pending": 0
+      "pending": 0,
+      "deduplicated": 0
     },
     "normalization_contract": "company_and_normalized_round",
     "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-e662dfe79c490abb",
+      "triggered_by_event_id": "EV-83085b0046c7275c",
+      "as_of_date": "2026-06-08",
+      "company": {
+        "entity_id": "EN-8d319684b6042af4",
+        "name": "Ontora",
+        "full_name": "Ontora",
+        "website": "https://ontora.com",
+        "summary": "Ontora 是一家企业级 AI 平台公司，通过 AI 智能体持续访谈每一位员工，绘制工作实际完成方式，并将隐性运营知识转化为可供 AI 智能体和自动化使用的活上下文层。",
+        "headquarters": "San Francisco",
+        "founders": [
+          {
+            "name": "Leon Iwanowitsch",
+            "role": "Co-Founder & CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bff4c8cb179a92ec",
+                "quote": "Leon Johannes Iwanowitsch Co-Founder & CEO of Ontora",
+                "source_content_hash": "f300731260152bb6",
+                "quote_hash": "5f57114376281a966b52b6557e852c7ce23b5581a2b7e9d1ff1157db781251bf"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Maximilian Arnold",
+            "role": "Founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f39afa0e0e28726c",
+                "quote": "Maximilian Arnold Founder 1st AI Engineer @ Porsche in procurement.",
+                "source_content_hash": "af898505e4623023",
+                "quote_hash": "3fdf45a7e89aab549e57c2354b163c9e483b89f50ab70d57fd5c8ff3bd3bca76"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "David Korn",
+            "role": "Founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f39afa0e0e28726c",
+                "quote": "David Korn Founder AI Projects @ Google, exited previous company to beglaubigt.de (YC F24)",
+                "source_content_hash": "af898505e4623023",
+                "quote_hash": "a6c74c16b7ac95bda0e90a4b496e80a9dc6cf48a8609b93ce9aa951b713136f1"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "3",
+          "observed_at": "2026-06-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f39afa0e0e28726c",
+              "quote": "Team Size: 3",
+              "source_content_hash": "af898505e4623023",
+              "quote_hash": "08fa045095726a579ebb28789766ad879920cb514b5bf1446fabebcffb7c6ea9"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a6bb345abe832175",
+            "quote": "Ontora deploys AI agents that interview every employee in your company -- not once, but continuously -- to map out how work actually gets done.",
+            "source_content_hash": "572c53212fe94fe4dfdf01a2caadd0f8fbf91e578d2e38f38d63664ecb28cc0a",
+            "quote_hash": "65c51c4f1182d585bb87d853a7bd211244e3912bee44e9969fe059c25af852cf"
+          }
+        ],
+        "application_entity_id": "EN-8d319684b6042af4",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "轮次未披露",
+        "amount": "$700K",
+        "total_raised": "$700K",
+        "announced_at": "2026-06-08",
+        "investor_disclosure_status": "not_disclosed",
+        "investors": [],
+        "other_round_investors": [
+          {
+            "name": "Y Combinator",
+            "role": "加速器/孵化器",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1f322d172be14af7",
+                "quote": "Ontora's investors include Y Combinator.",
+                "source_content_hash": "55a0605c9be6e3c5",
+                "quote_hash": "24ded63cd0d723ee68be98942282098f4d0b6f70518490a7339e2707f224cf93"
+              }
+            ],
+            "entity_id": "EN-275b0f4a4023d91c"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a6bb345abe832175",
+            "quote": "- $700K raised before officially opening our round",
+            "source_content_hash": "572c53212fe94fe4dfdf01a2caadd0f8fbf91e578d2e38f38d63664ecb28cc0a",
+            "quote_hash": "480e827ccc7115d1b4528dc8655855843e22c122d9fe8b706496e36204470271"
+          },
+          {
+            "source_id": "FISRC-a6bb345abe832175",
+            "quote": "$700K raised before officially opening our round",
+            "source_content_hash": "572c53212fe94fe4dfdf01a2caadd0f8fbf91e578d2e38f38d63664ecb28cc0a",
+            "quote_hash": "5dcfe2a24d3155f88780de6fac75dd8ea236917c92582d9cd5deffd84a33f4d1"
+          }
+        ],
+        "round_code": "undisclosed",
+        "round_original": "未披露",
+        "amount_original": "$700K",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "70 万美元"
+        },
+        "total_raised_original": "$700K",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "70 万美元"
+        },
+        "risk_markers": [
+          "investors_missing"
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-83085b0046c7275c",
+            "round_original": "未披露",
+            "amount": "$700K",
+            "announced_at": "2026-06-08",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a6bb345abe832175",
+                "quote": "- $700K raised before officially opening our round",
+                "source_content_hash": "572c53212fe94fe4dfdf01a2caadd0f8fbf91e578d2e38f38d63664ecb28cc0a",
+                "quote_hash": "480e827ccc7115d1b4528dc8655855843e22c122d9fe8b706496e36204470271"
+              },
+              {
+                "source_id": "FISRC-a6bb345abe832175",
+                "quote": "$700K raised before officially opening our round",
+                "source_content_hash": "572c53212fe94fe4dfdf01a2caadd0f8fbf91e578d2e38f38d63664ecb28cc0a",
+                "quote_hash": "5dcfe2a24d3155f88780de6fac75dd8ea236917c92582d9cd5deffd84a33f4d1"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "partially_disclosed"
+      },
+      "products": [
+        {
+          "name": "Ontora",
+          "description": "AI 智能体平台，通过异步访谈持续采访每一位员工，提取流程、决策规则、工具使用、交接和隐性知识，生成结构化运营地图，并输出主题洞察、流程地图和自动化路线图。",
+          "target_customers": "中型企业（200-2,000 名员工）、PE/VC 公司及其投资组合公司",
+          "features": [
+            "AI 智能体并行访谈员工",
+            "持续更新的活上下文层",
+            "流程发现与瓶颈识别",
+            "自动化路线图与 ROI 估算",
+            "API 与 MCP Server 集成"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a6bb345abe832175",
+              "quote": "Ontora deploys AI agents that interview every employee in your company -- not once, but continuously -- to map out how work actually gets done.",
+              "source_content_hash": "572c53212fe94fe4dfdf01a2caadd0f8fbf91e578d2e38f38d63664ecb28cc0a",
+              "quote_hash": "65c51c4f1182d585bb87d853a7bd211244e3912bee44e9969fe059c25af852cf"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "一家旧金山 PE 公司",
+          "industry": "专业服务",
+          "use_case": "跨投资组合公司运营效率提升",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a6bb345abe832175",
+              "quote": "A PE firm in San Francisco -- deploying Ontora across portfolio companies to drive operational efficiency at speed no consulting firm can match",
+              "source_content_hash": "572c53212fe94fe4dfdf01a2caadd0f8fbf91e578d2e38f38d63664ecb28cc0a",
+              "quote_hash": "0e3e52f26dfff1a62a6b8805c472f228524b32af1aa156da27904151a94a39f0"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "一家大型欧洲媒体代理公司（800+ 员工）",
+          "industry": "媒体娱乐",
+          "use_case": "构建企业记忆以管理大众汽车和博世等企业客户",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a6bb345abe832175",
+              "quote": "A major European media agency (800+ employees) -- building their corporate memory to manage enterprise customers like Volkswagen and Bosch",
+              "source_content_hash": "572c53212fe94fe4dfdf01a2caadd0f8fbf91e578d2e38f38d63664ecb28cc0a",
+              "quote_hash": "8e2fb1d0278c01c23e4e14db8d6e8d07da31395afd64474d43bf368060239755"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "一家 1,000 人欧洲整合型公司",
+          "industry": "专业服务",
+          "use_case": "绘制远程员工日常工作以构建 AI 自动化路线图",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a6bb345abe832175",
+              "quote": "A 1,000-person European roll-up -- mapping what their remote workforce actually does day-to-day to build a concrete AI automation roadmap",
+              "source_content_hash": "572c53212fe94fe4dfdf01a2caadd0f8fbf91e578d2e38f38d63664ecb28cc0a",
+              "quote_hash": "80e559aef62d77c01e7d5fda4a6c2e0c33c6ef8bb9b61bd971e780f4d2d3ad31"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "一家美国设施维护市场平台",
+          "industry": "物流供应链",
+          "use_case": "提取销售团队头脑中的提案规则和客户偏好以构建 AI 自动化上下文层",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a6bb345abe832175",
+              "quote": "A US facilities maintenance marketplace -- extracting the proposal rules and customer preferences locked in their sales team's heads to build the context layer for their AI automations",
+              "source_content_hash": "572c53212fe94fe4dfdf01a2caadd0f8fbf91e578d2e38f38d63664ecb28cc0a",
+              "quote_hash": "216149abf29c218bad4ccdc4170d184bc8c0d9b5c237d843b8e14b360c1d2647"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "传统咨询公司",
+          "product": "人工流程发现与运营咨询",
+          "scenario": "企业运营分析与流程优化",
+          "target_customer": "大型企业",
+          "funding_summary": "",
+          "core_difference": "传统咨询公司需要 4 个月和 50-100 次人工访谈，Ontora 在数天内完成；传统咨询费用 50 万美元以上，Ontora 约 5 万美元；传统咨询仅覆盖约 10% 员工，Ontora 覆盖 100% 员工。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a6bb345abe832175",
+              "quote": "What used to take a consulting firm 4 months and 50-100 manual interviews, Ontora does in days.",
+              "source_content_hash": "572c53212fe94fe4dfdf01a2caadd0f8fbf91e578d2e38f38d63664ecb28cc0a",
+              "quote_hash": "0116a9c158a4253bbf46173dc90831a5a1bdecdfa73d3acdf87deb7c0ab9444a"
+            },
+            {
+              "source_id": "FISRC-bff4c8cb179a92ec",
+              "quote": "Engagement cost McKinsey-style $500K+ Ontora ~$50K",
+              "source_content_hash": "f300731260152bb6",
+              "quote_hash": "9738197f01638f7a4074c33cbf56c7fe7b1ac2fe644b6a9cacb21a4b45eb3f62"
+            },
+            {
+              "source_id": "FISRC-bff4c8cb179a92ec",
+              "quote": "Employee coverage Sample ~10% Ontora 100%",
+              "source_content_hash": "f300731260152bb6",
+              "quote_hash": "7784aff6b0818575ff4ca38726a8b580111d7e13e043d9e3748b3fc8c903160a"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "设计合作伙伴客户数",
+          "value": "5",
+          "observed_at": "2026-06-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a6bb345abe832175",
+              "quote": "5 enterprise customers as design partners",
+              "source_content_hash": "572c53212fe94fe4dfdf01a2caadd0f8fbf91e578d2e38f38d63664ecb28cc0a",
+              "quote_hash": "bc494a40273797726fa2c7f96ae1d5c9647aaf1a65b83fac25cdff489f304020"
+            }
+          ]
+        },
+        {
+          "label": "入站演示电话数",
+          "value": "150+",
+          "observed_at": "2026-06-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a6bb345abe832175",
+              "quote": "150+ inbound demo calls — we didn't do outbound, they came to us",
+              "source_content_hash": "572c53212fe94fe4dfdf01a2caadd0f8fbf91e578d2e38f38d63664ecb28cc0a",
+              "quote_hash": "486a48d628af7c584208d7b6b0522bd450ad8159059d5d8e3d593c13fef8d4ba"
+            }
+          ]
+        },
+        {
+          "label": "入站 VC 电话数",
+          "value": "80+",
+          "observed_at": "2026-06-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a6bb345abe832175",
+              "quote": "80+ inbound VC calls already lined up for our fundraise",
+              "source_content_hash": "572c53212fe94fe4dfdf01a2caadd0f8fbf91e578d2e38f38d63664ecb28cc0a",
+              "quote_hash": "e72b5101dec1e08fbce6d4910a26a040c503c667af0841c35586766e9d32bb18"
+            }
+          ]
+        },
+        {
+          "label": "并行访谈数",
+          "value": "100",
+          "observed_at": "2026-06-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bff4c8cb179a92ec",
+              "quote": "100 Calls running in parallel",
+              "source_content_hash": "f300731260152bb6",
+              "quote_hash": "251b63178bfce917952476d723140b743dbc764ac11fb058ed207617c6b0437a"
+            }
+          ]
+        },
+        {
+          "label": "平均访谈时长",
+          "value": "20 分钟",
+          "observed_at": "2026-06-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bff4c8cb179a92ec",
+              "quote": "20 min Average call length",
+              "source_content_hash": "f300731260152bb6",
+              "quote_hash": "61dc2d72c752f22c951a181bcadd98a917f104a0c3ff99c9ac6edd6b3d02cdf4"
+            }
+          ]
+        },
+        {
+          "label": "洞察交付时间",
+          "value": "4 小时",
+          "observed_at": "2026-06-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bff4c8cb179a92ec",
+              "quote": "Time to insights Traditional 3–6 months With Ontora 4 hours",
+              "source_content_hash": "f300731260152bb6",
+              "quote_hash": "3f86bf9e419fd44684928a71356ac9bfe464e780200375052f84dbfdf35b7afd"
+            }
+          ]
+        },
+        {
+          "label": "员工覆盖率",
+          "value": "100%",
+          "observed_at": "2026-06-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bff4c8cb179a92ec",
+              "quote": "Employee coverage Sample ~10% Ontora 100%",
+              "source_content_hash": "f300731260152bb6",
+              "quote_hash": "7784aff6b0818575ff4ca38726a8b580111d7e13e043d9e3748b3fc8c903160a"
+            }
+          ]
+        },
+        {
+          "label": "未文档化运营知识占比",
+          "value": "80%",
+          "observed_at": "2026-06-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bff4c8cb179a92ec",
+              "quote": "Roughly 80% of how a company operates is undocumented and lives only in employees’ heads.",
+              "source_content_hash": "f300731260152bb6",
+              "quote_hash": "8f0c86482568a4e3c94a857d699985fde4896e3ea3ff7ce48833999d879027f7"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是 Ontora 能否将企业隐性运营知识转化为可被 AI 智能体消费的活上下文层，从而替代传统咨询公司的流程发现环节。已验证信号包括：一个月内获得 5 家设计合作伙伴客户、150+ 入站演示电话、80+ 入站 VC 电话，以及 Vertiv 等客户的实际使用反馈。但当前融资仅披露 70 万美元且投资方未具名，无法确认机构背书强度；证据边界限于 YC 平台发布和公司官网，缺乏独立第三方验证。",
+        "validated_signals": [
+          "一个月内获得 5 家设计合作伙伴客户",
+          "150+ 入站演示电话，无外呼",
+          "80+ 入站 VC 电话排队等待融资",
+          "Vertiv 战略经理公开证言产品在单个下午交付了原本需数月的分析"
+        ],
+        "risks": [
+          "投资方未具名，无法确认机构背书强度，融资可信度受限",
+          "客户均为设计合作伙伴阶段，尚未验证付费转化和留存",
+          "产品依赖 AI 访谈质量，能否持续产出与人类顾问相当的洞察深度尚未被独立验证",
+          "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+        ],
+        "related_direction_id": "DIR-20260725-01",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "productivity_enterprise_workflows",
+          "data_analysis"
+        ],
+        "industry_ids": [
+          "professional_services",
+          "manufacturing",
+          "media_entertainment"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "企业级 AI 平台 / 流程发现与运营智能",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 Ontora 能否将企业隐性运营知识转化为可被 AI 智能体消费的活上下文层，从而替代传统咨询公司的流程发现环节。已验证信号包括：一个月内获得 5 家设计合作伙伴客户、150+ 入站演示电话、80+ 入站 VC 电话，以及 Vertiv 等客户的实际使用反馈。但当前融资仅披露 70 万美元且投资方未具名，无法确认机构背书强度；证据边界限于 YC 平台发布和公司官网，缺乏独立第三方验证。",
+          "evidence_signals": [
+            "一个月内获得 5 家设计合作伙伴客户",
+            "150+ 入站演示电话，无外呼",
+            "80+ 入站 VC 电话排队等待融资",
+            "Vertiv 战略经理公开证言产品在单个下午交付了原本需数月的分析"
+          ],
+          "risks": [
+            "投资方未具名，无法确认机构背书强度，融资可信度受限",
+            "客户均为设计合作伙伴阶段，尚未验证付费转化和留存",
+            "产品依赖 AI 访谈质量，能否持续产出与人类顾问相当的洞察深度尚未被独立验证"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Ontora",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Leon Iwanowitsch",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Maximilian Arnold",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "David Korn",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Y Combinator",
+          "canonical_entity_id": "EN-275b0f4a4023d91c",
+          "canonical_name": "Y Combinator"
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "一家旧金山 PE 公司",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "一家大型欧洲媒体代理公司（800+ 员工）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "一家 1,000 人欧洲整合型公司",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "一家美国设施维护市场平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "传统咨询公司",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-83085b0046c7275c",
+          "date": "2026-06-08",
+          "title": "企业级 AI 平台 Ontora 在正式开放本轮融资前已募资 70 万美元",
+          "amount": "$700K",
+          "source_refs": [
+            "SA-dd60953f8f523acf"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-a6bb345abe832175",
+          "source_url": "https://www.ycombinator.com/launches/QiD-ontora-the-discovery-layer-for-ai-transformation",
+          "title": "企业级 AI 平台 Ontora 在正式开放本轮融资前已募资 70 万美元",
+          "publisher": "Y Combinator",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-18T09:30:00.000Z",
+          "content_hash": "572c53212fe94fe4dfdf01a2caadd0f8fbf91e578d2e38f38d63664ecb28cc0a",
+          "source_artifact_id": "SA-dd60953f8f523acf",
+          "raw_id": "RAW-32ae04c164824600"
+        },
+        {
+          "source_id": "FISRC-bff4c8cb179a92ec",
+          "source_url": "https://ontora.com/",
+          "title": "Ontora: AI Employee Interviews That Map How Work Works",
+          "publisher": "ontora.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T14:01:04.844Z",
+          "content_hash": "f300731260152bb6",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-1f322d172be14af7",
+          "source_url": "https://www.vcbacked.co/company/ontora",
+          "title": "Ontora Funding & Investors - Pre-Seed - Dover | VCBacked",
+          "publisher": "vcbacked.co",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T14:01:02.440Z",
+          "content_hash": "55a0605c9be6e3c5",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-f39afa0e0e28726c",
+          "source_url": "https://www.ycombinator.com/companies/ontora",
+          "title": "Ontora: AI agents that interviews every employee to hand context to AI tools. | Y Combinator",
+          "publisher": "ycombinator.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-18T14:01:07.148Z",
+          "content_hash": "af898505e4623023",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-18T14:01:39.713Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-18T14:01:39.713Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Ontora"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "David Korn",
+            "Leon Iwanowitsch",
+            "Maximilian Arnold"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-83085b0046c7275c"
+      ],
+      "aggregation": {
+        "key": "EN-8d319684b6042af4|undisclosed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-1c8cdad540bbac47",
@@ -2041,6 +2651,95 @@
       "queries": [],
       "attempts": [],
       "updated_at": "2026-07-27T05:14:26.809Z"
+    },
+    {
+      "event_id": "EV-83085b0046c7275c",
+      "company_name": "Ontora",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Ontora Raised $700K for Its Enterprise AI Platform Before Officially Opening Its Round\" funding company investors product",
+        "\"Ontora\" \"$700K\" funding investors round",
+        "\"Ontora\" product customers case study",
+        "\"Ontora\" \"Ontora Raised $700K for Its Enterprise AI Platform Before Officially Opening Its Round\" competitors product use case",
+        "\"Ontora\" \"$700K\" investor quote why invested",
+        "\"Ontora\" \"$700K\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Ontora Raised $700K for Its Enterprise AI Platform Before Officially Opening Its Round\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Ontora Raised $700K for Its Enterprise AI Platform Before Officially Opening Its Round\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Ontora\" \"$700K\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Ontora\" \"$700K\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Ontora\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Ontora\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Ontora\" \"Ontora Raised $700K for Its Enterprise AI Platform Before Officially Opening Its Round\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Ontora\" \"Ontora Raised $700K for Its Enterprise AI Platform Before Officially Opening Its Round\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Ontora\" \"$700K\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Ontora\" \"$700K\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Ontora\" \"$700K\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Ontora\" \"$700K\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-08-18T14:01:39.800Z"
     }
   ]
 }

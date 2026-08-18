@@ -259,7 +259,7 @@
         "decision_event_id": { "type": "string", "minLength": 1 },
         "entity_id": { "type": "string", "minLength": 1 },
         "company_name": { "type": "string", "minLength": 1 },
-        "company_resolution": { "enum": ["declared_entity_exact", "catalog_name_exact", "reviewed_funding_entity"] },
+        "company_resolution": { "enum": ["declared_entity_exact", "declared_event_entity", "catalog_name_exact", "funding_application_entity", "reviewed_funding_entity", "reviewed_company_identity", "canonical_entity_profile_exact"] },
         "funding_insight_id": { "type": "string", "minLength": 1 },
         "decision_ref": { "type": "string", "minLength": 1 },
         "dimension_id": { "enum": ["ai_market_category", "ai_market_subcategory", "ai_market_application", "product_form", "use_case", "industry", "target_user"] },

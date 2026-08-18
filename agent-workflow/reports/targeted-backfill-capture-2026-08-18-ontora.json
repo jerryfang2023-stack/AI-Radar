@@ -1,0 +1,24 @@
+{
+  "manifest": {
+    "contract": "BACKFILL-V1.0",
+    "generated_at": "2026-08-18T00:00:00.000Z",
+    "purpose": "Capture Ontora's official Y Combinator company-launch disclosure for the verified funding event and Funding Insight card."
+  },
+  "sources": [
+    {
+      "task_id": "BFQ-ontora-700k",
+      "batch_date": "2026-06-08",
+      "url": "https://www.ycombinator.com/launches/QiD-ontora-the-discovery-layer-for-ai-transformation",
+      "source_title": "Ontora Raised $700K Before Officially Opening Its Round",
+      "publisher": "Y Combinator",
+      "source_level": "official",
+      "published_at": "2026-06-08T21:16:12.324Z",
+      "content_start_needle": "One month ago we launched Ontora. Here's what happened",
+      "expected_needles": [
+        "Ontora",
+        "$700K raised before officially opening our round",
+        "80+ inbound VC calls"
+      ]
+    }
+  ]
+}
