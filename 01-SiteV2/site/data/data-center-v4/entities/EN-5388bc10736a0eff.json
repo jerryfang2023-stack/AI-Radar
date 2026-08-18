@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-17T00:24:11.459Z",
-    "latestDataDate": "2026-08-17",
-    "currentDate": "2026-08-17",
-    "eventCount": 2171,
+    "generatedAt": "2026-08-18T00:24:57.421Z",
+    "latestDataDate": "2026-08-18",
+    "currentDate": "2026-08-18",
+    "eventCount": 2199,
     "quarantinedEventCount": 19
   },
   "entity": {
@@ -16,7 +16,9 @@
     "name": "ByteDance",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
-    "aliases": [],
+    "aliases": [
+      "字节跳动"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -39,17 +41,24 @@
       "EV-e03b324b7e297e6b",
       "EV-887d47bb477e2142",
       "EV-631197767a45d34c",
+      "EV-9766c0f1ac902595",
       "EV-666f2f4b5756c679",
       "EV-8fef3537ed4c1e48"
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-technology-agentic_execution"
+      "TX-technology-agentic_execution",
+      "TX-technology-video_generation",
+      "TX-technology-image_generation"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-4f96127fdacbb405"
+    ],
     "firstSeen": "2026-06-01",
-    "lastSeen": "2026-08-04",
-    "relationIds": [],
+    "lastSeen": "2026-08-18",
+    "relationIds": [
+      "REL2-fc89e0f24571bef8"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [
@@ -59,6 +68,7 @@
       ],
       "partnerships": [],
       "productsServices": [
+        "EV-9766c0f1ac902595",
         "EV-650e4b23d45d5758",
         "EV-c157bdbedac35fa3",
         "EV-d1d36268ff74be0e",
@@ -82,6 +92,44 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-9766c0f1ac902595",
+        "dataDate": "2026-08-18",
+        "date": "2026-08-17",
+        "eventType": "certification_compliance",
+        "eventTypeLabel": "认证合规",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "字节跳动与美国电影协会签署协议，加强 AI 模型版权保护",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "image_generation",
+            "name": "图像生成",
+            "entityIds": [
+              "EN-5388bc10736a0eff"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "video_generation",
+            "name": "视频生成",
+            "entityIds": [
+              "EN-5388bc10736a0eff"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-5388bc10736a0eff"
+        ]
+      },
       {
         "id": "EV-650e4b23d45d5758",
         "dataDate": "2026-08-04",
@@ -597,8 +645,51 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-4f96127fdacbb405",
+      "name": "Seedance 2.0 Mini",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-887d47bb477e2142"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-5388bc10736a0eff"
+      ],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-06-16"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-fc89e0f24571bef8",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-5388bc10736a0eff",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-4f96127fdacbb405",
+      "object_type": "entity",
+      "event_id": "EV-887d47bb477e2142",
+      "claim_refs": [
+        "CL-4b2d508b68827b34",
+        "CL-28b3c29eaf8f9f1c",
+        "CL-687c5027592b39c5"
+      ],
+      "source_refs": [
+        "SA-56c9538d50ed21ed"
+      ],
+      "data_date": "2026-06-16",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-technology-agentic_execution",
@@ -767,8 +858,8 @@
         "EV-01df8e489a34893b",
         "EV-afd0332ad8f5f05b",
         "EV-cab03fca079f62e6",
-        "EV-040744ef8b205e0d",
         "EV-129ffa6be41bb485",
+        "EV-040744ef8b205e0d",
         "EV-8619e2d881669888",
         "EV-76e7dc691b68fa04",
         "EV-aa7cf8ee6c875f08",
@@ -802,6 +893,8 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-0d5a32aca724d30e",
+        "EV-615fbb4de33fad2d",
         "EV-4551be310b520fcc",
         "EV-ea2598236eae915f",
         "EV-c92db935a2cef0d6",
@@ -814,8 +907,8 @@
         "EV-7e0d6eb92af58925",
         "EV-3a7e7b6818fee0de",
         "EV-ba2898569165c9a6",
-        "EV-57fcbef33071910b",
         "EV-c7d0b810ac3b3d4e",
+        "EV-57fcbef33071910b",
         "EV-5c30f52112d92491",
         "EV-f3a29cb561809daf",
         "EV-ff924015298048ba",
@@ -1065,9 +1158,9 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-2c17183b71d8b7d1",
         "EV-9db14ad0d6fe3135",
         "EV-7a3a3754522828e1",
-        "EV-2c17183b71d8b7d1",
         "EV-67a7a3c9f1eabd22",
         "EV-4e3e9b543127b55a",
         "EV-20b82e2a2cb33a0e",
@@ -1236,6 +1329,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-32e83e92d45d71f6",
         "EN-3b9e1cdd9e593b5c",
         "EN-bbdefa2950f49882",
         "EN-b93006774cbdd4b2",
@@ -1409,8 +1503,8 @@
         "FDE-de1562b0634b20ed",
         "FDE-d693e68f89adf86a",
         "FDE-ab9c514225686f60",
-        "FDE-360d1ff40e647eda",
         "FDE-ed781e27a7b9458e",
+        "FDE-360d1ff40e647eda",
         "FDE-8506e8248e149161",
         "FDE-e780a756aeb71dfc",
         "FDE-602624cf072c079d",
@@ -1441,6 +1535,88 @@
       ],
       "firstSeen": "2024-09-05",
       "lastSeen": "2027-09-30"
+    },
+    {
+      "id": "TX-technology-video_generation",
+      "name": "视频生成",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "video_generation",
+      "eventIds": [
+        "EV-522c339dded54be5",
+        "EV-a354af52772334fd",
+        "EV-26d2874c6ce028d6",
+        "EV-c698da7da473b059",
+        "EV-2791b442fd32b894",
+        "EV-10c4f4db6c3f2d72",
+        "EV-63858d9b5ef92175",
+        "EV-650e4b23d45d5758",
+        "EV-6654f62015eff8e3",
+        "EV-50893df365a7097d",
+        "EV-6fbbbfcdcec81df4",
+        "EV-fd8ecce5de2f667d",
+        "EV-5babb43f4b4d302f",
+        "EV-d8c69ed782b73a34",
+        "EV-c7404765df94a3b4",
+        "EV-473f852b374d8b1c",
+        "EV-887d47bb477e2142",
+        "EV-9766c0f1ac902595"
+      ],
+      "entityIds": [
+        "EN-e1517be14d06cdb7",
+        "EN-d747d6f5125b6bee",
+        "EN-b81c8201acfc7639",
+        "EN-e59f5a52b6713a29",
+        "EN-047364b9be67f665",
+        "EN-422332977c41eb77",
+        "EN-c9e6168149dd7cf6",
+        "EN-ec1c8f558ff61e34",
+        "EN-2b6e51bec93e86c1",
+        "EN-01f1074bb52ff605",
+        "EN-47c1e53c427aafb4",
+        "EN-5388bc10736a0eff"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [
+        "HW-68457c8c0a7240ac"
+      ],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-08-18"
+    },
+    {
+      "id": "TX-technology-image_generation",
+      "name": "图像生成",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "image_generation",
+      "eventIds": [
+        "EV-fd329b4350f404ef",
+        "EV-ea2598236eae915f",
+        "EV-5111b297a0234e46",
+        "EV-cf4da5583e9311d7",
+        "EV-82ae0ea3bfe336a1",
+        "EV-1a241bcb4fad886c",
+        "EV-a442b55d0bac5651",
+        "EV-dce5de62b2e4b752",
+        "EV-41baa43cf05d4288",
+        "EV-568d2aeab5234e48",
+        "EV-9766c0f1ac902595"
+      ],
+      "entityIds": [
+        "EN-b97e07c31e87f7d0",
+        "EN-4721e06a8b6d85ff",
+        "EN-bbdefa2950f49882",
+        "EN-9fbf261b62c1d7c0",
+        "EN-bae152c4560df38c",
+        "EN-ea3bd73e2b506e00",
+        "EN-534e99d81da1c54d",
+        "EN-2b6e51bec93e86c1",
+        "EN-5388bc10736a0eff"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-08-18"
     }
   ],
   "fde": [],

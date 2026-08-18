@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-17T00:24:11.459Z",
-    "latestDataDate": "2026-08-17",
-    "currentDate": "2026-08-17",
-    "eventCount": 2171,
+    "generatedAt": "2026-08-18T00:24:57.421Z",
+    "latestDataDate": "2026-08-18",
+    "currentDate": "2026-08-18",
+    "eventCount": 2199,
     "quarantinedEventCount": 19
   },
   "entity": {
@@ -24,7 +24,7 @@
     ],
     "eventIds": [],
     "viewpointIds": [
-      "2088261100202868768",
+      "2088626815166464507",
       "2077968093406707970",
       "2077966904938127502",
       "2077572198655754583",
@@ -79,19 +79,19 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-05",
-    "lastSeen": "2026-08-14",
+    "lastSeen": "2026-08-15",
     "handle": "petergyang",
     "role": "为忙碌人士提供的实用AI教程和访谈",
     "organization": "",
     "viewpointTags": [
-      "AI 基础设施",
-      "模型基础设施观点",
-      "AI 编程",
-      "AI Coding 观点",
-      "AI Coding",
       "产品与创业",
       "产品策略观点",
       "AI 应用与平台",
+      "AI 编程",
+      "AI Coding 观点",
+      "AI Coding",
+      "AI 基础设施",
+      "模型基础设施观点",
       "企业工作流",
       "Agent",
       "Agent 工作流观点",
@@ -111,10 +111,10 @@
     "timeline": [],
     "viewpoints": [
       {
-        "id": "2088261100202868768",
-        "date": "2026-08-14",
-        "title": "我很好奇X是如何对抗AI垃圾内容的，于是去看了它的开源算法。它有一个名为TweetSpamBot的行为模型，会分析最多512条近期账户操作，观察诸如发帖爆发、引用转发行为、时间规律，以及操作之间的正常浏览或停留等信号。该模型经过训练，能够识别以下模式：→ TWEET_CREATE_BURST → QUOTE_TWEET_SPAMMER → CONTENT_AMPLIFIER 在上述方面得分高，可能会触发账户验证，但似乎并不会降低这些垃圾帖子本身的排序。我认为这里的缺口在于，该模型并不读取实际的帖子内容。因此，一个精密的AI内容工厂仍然可以整天发布垃圾内容：1. 找到爆款帖子 2. 每次都套用同一个模板进行引用转发：钩子 → 数据 → 背景故事 → 要点 3. 每天在毫不相关的话题上重复10次以上 如果@X不想变得像LinkedIn那样，我认为它应该考虑关注那些反复将不相关的爆款帖子，以高频率转化为同一模板引用转发垃圾内容的账户。目前上述防护措施太容易被绕过了。",
-        "sourceUrl": "https://x.com/petergyang/status/2088261100202868768"
+        "id": "2088626815166464507",
+        "date": "2026-08-15",
+        "title": "明天，我非常兴奋地要和大家分享一期新节目，邀请到@rileybrown，聊聊他如何利用Codex来运营整个内容业务。我特别喜欢看他演示如何用AI制作YouTube缩略图：1. 他用Codex在他的领域里找到100个表现最佳的缩略图，并把它们添加到Paper画布上。2. 他用Paper将这些缩略图与自己的照片混合搭配，直到做出满意的效果。说实话，你得亲眼看看这个工作流程，才能明白它有多神奇。📌 订阅以获取明天完整节目：https://t.co/NSTj7ijxE0",
+        "sourceUrl": "https://x.com/petergyang/status/2088626815166464507"
       },
       {
         "id": "2077968093406707970",

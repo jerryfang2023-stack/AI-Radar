@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-17T00:24:11.459Z",
-    "latestDataDate": "2026-08-17",
-    "currentDate": "2026-08-17",
-    "eventCount": 2171,
+    "generatedAt": "2026-08-18T00:24:57.421Z",
+    "latestDataDate": "2026-08-18",
+    "currentDate": "2026-08-18",
+    "eventCount": 2199,
     "quarantinedEventCount": 19
   },
   "entity": {
@@ -21,146 +21,28 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [
-      "EV-0d5a32aca724d30e"
-    ],
+    "eventIds": [],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-07-30",
-    "lastSeen": "2026-07-30",
+    "firstSeen": "",
+    "lastSeen": "",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
-      "productsServices": [
-        "EV-0d5a32aca724d30e"
-      ],
+      "productsServices": [],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [
-      {
-        "id": "EV-0d5a32aca724d30e",
-        "dataDate": "2026-07-30",
-        "date": "2026-07-30",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "Kimi K3-256k 发布：256k 上下文窗口与代码生成能力",
-        "displayTags": [
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "code_generation",
-            "name": "代码生成",
-            "entityIds": [
-              "EN-e5904fa438fcd5bf"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-436364a46513cdf3",
-          "EN-e5904fa438fcd5bf"
-        ]
-      }
-    ],
+    "timeline": [],
     "viewpoints": []
   },
   "relatedEntities": [],
   "relationships": [],
   "taxonomyNodes": [],
   "fde": [],
-  "hardware": [],
-  "hardwareCatalog": [
-    {
-      "id": "HWC-1e2465488c5a5d77",
-      "snapshotKey": "1e2465488c5a5d77",
-      "snapshotId": "HWS-97daa94104979156",
-      "eventId": "EV-0d5a32aca724d30e",
-      "eventIds": [
-        "EV-0d5a32aca724d30e"
-      ],
-      "dataDate": "2026-07-29",
-      "date": "2026-07-29",
-      "title": "Kimi K3",
-      "subject": "Kimi K3",
-      "productNames": [
-        "Kimi K3"
-      ],
-      "hardwareType": "compute_cluster",
-      "factTypes": [
-        "shipment_deployment"
-      ],
-      "latestValues": {
-        "shipment_deployment": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-35eaca87a98d223b"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [
-        {
-          "data_date": "2026-07-29",
-          "hardware_fact_id": "HWF-35eaca87a98d223b",
-          "fact_type": "shipment_deployment",
-          "observed_at": "2026-07-28T08:38:20.000Z",
-          "subject_entity_id": "EN-aabd1a8a869c34a4",
-          "subject_name": "Kimi K3",
-          "product_entity_ids": [
-            "EN-607964040e4b62e0"
-          ],
-          "product_names": [
-            "Kimi K3"
-          ],
-          "component_type": "compute_cluster",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "此次 Kimi K3 一经开源发布，昇腾即实现 0day 极速适配 ：在训练侧，基于 MindSpeed MM 在 Atlas 800 A3、Atlas 900 A3 SuperPoD 上完成减层训练基础功能适配，在算子、并行加速、显存优化等方面进行专项优化；在推理侧，通过 vLLM Ascend 与 SGLang 开源推理引擎实现快速部署，同时， 昇腾 950 超节点支持 FP8、MXFP8、MXFP4 等全系列数值精度格式 ，原生支持 Kimi K3 的 mxFP4 量化权重。",
-          "event_refs": [
-            "EV-0d5a32aca724d30e"
-          ],
-          "claim_ref": "CL-2c626d78e65c2afc",
-          "source_refs": [
-            "SA-d37a791cf113478a",
-            "SA-4fedd07f0df44eb4",
-            "SA-8cff4a3f890c6d93",
-            "SA-89ca130f6dc317fe",
-            "SA-8cbf1980971c0828"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-29/hardware-facts.json"
-        }
-      ],
-      "specificationFacts": [],
-      "capexFacts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "code_generation",
-          "name": "代码生成",
-          "entityIds": [
-            "EN-e5904fa438fcd5bf"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "sourceUrl": "https://kimi.com/code/docs/en/kimi-code/models",
-      "entityIds": [
-        "EN-436364a46513cdf3",
-        "EN-e5904fa438fcd5bf"
-      ]
-    }
-  ]
+  "hardware": []
 }

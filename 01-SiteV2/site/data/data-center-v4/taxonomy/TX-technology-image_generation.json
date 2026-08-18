@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-17T00:24:11.459Z",
-    "latestDataDate": "2026-08-17",
-    "currentDate": "2026-08-17",
-    "eventCount": 2171,
+    "generatedAt": "2026-08-18T00:24:57.421Z",
+    "latestDataDate": "2026-08-18",
+    "currentDate": "2026-08-18",
+    "eventCount": 2199,
     "quarantinedEventCount": 19
   },
   "node": {
@@ -27,7 +27,8 @@
       "EV-a442b55d0bac5651",
       "EV-dce5de62b2e4b752",
       "EV-41baa43cf05d4288",
-      "EV-568d2aeab5234e48"
+      "EV-568d2aeab5234e48",
+      "EV-9766c0f1ac902595"
     ],
     "entityIds": [
       "EN-b97e07c31e87f7d0",
@@ -37,12 +38,13 @@
       "EN-bae152c4560df38c",
       "EN-ea3bd73e2b506e00",
       "EN-534e99d81da1c54d",
-      "EN-2b6e51bec93e86c1"
+      "EN-2b6e51bec93e86c1",
+      "EN-5388bc10736a0eff"
     ],
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-06-11",
-    "lastSeen": "2026-08-17"
+    "lastSeen": "2026-08-18"
   },
   "events": [
     {
@@ -1358,6 +1360,134 @@
       ],
       "sourceUrl": "https://arstechnica.com/google/2026/06/googles-latest-diffusiongemma-open-ai-model-comes-with-a-4x-speed-boost",
       "publisher": "Ars Technica：AI（RSS）"
+    },
+    {
+      "id": "EV-9766c0f1ac902595",
+      "dataDate": "2026-08-18",
+      "date": "2026-08-17",
+      "updatedDate": "2026-08-18",
+      "eventType": "certification_compliance",
+      "eventTypeLabel": "认证合规",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "字节跳动与美国电影协会签署协议，加强 AI 模型版权保护",
+      "originalTitle": "",
+      "subject": "字节跳动",
+      "action": "certification_compliance",
+      "object": "美国电影协会",
+      "metrics": [],
+      "locations": [
+        "美国"
+      ],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-ithome-rss"
+        ],
+        "claim_refs": [
+          "CL-080750b65837b06c"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成",
+          "entityIds": [
+            "EN-5388bc10736a0eff"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-5388bc10736a0eff"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成",
+          "entityIds": [
+            "EN-5388bc10736a0eff"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-5388bc10736a0eff"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成",
+          "entityIds": [
+            "EN-5388bc10736a0eff"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-5388bc10736a0eff"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-5388bc10736a0eff"
+      ],
+      "entityNames": [
+        "ByteDance"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/990/847.htm",
+      "publisher": "IT之家（RSS）"
     }
   ],
   "entities": [
@@ -1431,6 +1561,7 @@
         "EV-4a162c41bb82f325",
         "EV-5762fe51987bc5ff",
         "EV-6cb8979f92cf74ce",
+        "EV-7690a249e07ddac8",
         "EV-a4b7cd533b0b34dc",
         "EV-fd329b4350f404ef",
         "EV-57944eebac69d510",
@@ -1456,6 +1587,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-62297e5ea63f0c78",
         "EV-5fe819e7070b76e6",
         "EV-930447492f4368e1",
         "EV-be4b6dc8829070e5",
@@ -1577,6 +1709,7 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-f5aec01f1466f6bb",
         "EV-7a3a3754522828e1",
         "EV-8680757a0026461d",
         "EV-248e01495eb582ed",
@@ -1621,6 +1754,7 @@
         "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-model",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-security_operations",
         "TX-technology-embodied_ai",
         "TX-product_form-end_user_application",
@@ -1648,7 +1782,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-17"
+      "lastSeen": "2026-08-18"
     },
     {
       "id": "EN-9fbf261b62c1d7c0",
@@ -1866,6 +2000,7 @@
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-43301de739fe560e",
+        "EV-615fbb4de33fad2d",
         "EV-5fe819e7070b76e6",
         "EV-c17a52220be52dc1",
         "EV-5c30f52112d92491",
@@ -1969,7 +2104,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-17"
+      "lastSeen": "2026-08-18"
     },
     {
       "id": "EN-534e99d81da1c54d",
@@ -1999,7 +2134,6 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "谷歌 DeepMind",
         "DeepMind"
       ],
       "verificationStatus": "verified",
@@ -2015,6 +2149,7 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
+        "EV-edb9a1143b52c096",
         "EV-397a17aa878564c4",
         "EV-53757cad2cfd074d",
         "EV-0eefbf2e50b67a5e",
@@ -2074,7 +2209,53 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-14"
+      "lastSeen": "2026-08-18"
+    },
+    {
+      "id": "EN-5388bc10736a0eff",
+      "name": "ByteDance",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "字节跳动"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-97fdf068afbbe555",
+        "EV-47a84a0f1a85c29c",
+        "EV-6c361125c3f50bb6",
+        "EV-650e4b23d45d5758",
+        "EV-c157bdbedac35fa3",
+        "EV-d1d36268ff74be0e",
+        "EV-8734f7217e78c861",
+        "EV-ee363e679d12329c",
+        "EV-ad2e4fe6a149d95d",
+        "EV-76aa77f5a2e7c661",
+        "EV-0e42803078b1c6be",
+        "EV-620f5ebfb6ac81ac",
+        "EV-90e206ff43a3b9d1",
+        "EV-c7404765df94a3b4",
+        "EV-e03b324b7e297e6b",
+        "EV-887d47bb477e2142",
+        "EV-631197767a45d34c",
+        "EV-9766c0f1ac902595",
+        "EV-666f2f4b5756c679",
+        "EV-8fef3537ed4c1e48"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-video_generation",
+        "TX-technology-image_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-4f96127fdacbb405"
+      ],
+      "firstSeen": "2026-06-01",
+      "lastSeen": "2026-08-18"
     }
   ],
   "fde": [],
