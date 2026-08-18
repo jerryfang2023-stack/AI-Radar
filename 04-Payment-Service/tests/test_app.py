@@ -257,14 +257,23 @@ def test_pc_verification_session_and_logout(client):
     assert client.get("/api/v1/auth/session").get_json() == {"authenticated": False}
 
 
+def test_pc_phone_challenge_is_rejected(client):
+    response = client.post(
+        "/api/v1/auth/challenges",
+        json={"type": "phone", "value": "13900000002"},
+    )
+    assert response.status_code == 400
+    assert response.get_json()["error"] == {"code": "INVALID_IDENTITY", "message": "请输入有效的邮箱"}
+
+
 def test_verified_identity_conflict_requires_explicit_audited_merge(client):
     target_client = client.application.test_client()
-    target = pc_login(target_client, identity_type="phone", value="13900000002")
+    target = pc_login(target_client, identity_type="email", value="merge-target@example.com")
     source = pc_login(client, identity_type="email", value="merge-source@example.com")
     challenge_response = client.post(
         "/api/v1/auth/challenges",
         headers={"X-CSRF-Token": source["csrfToken"]},
-        json={"type": "phone", "value": "13900000002", "purpose": "bind"},
+        json={"type": "email", "value": "merge-target@example.com", "purpose": "bind"},
     )
     assert challenge_response.status_code == 201
     challenge = challenge_response.get_json()
@@ -282,7 +291,8 @@ def test_verified_identity_conflict_requires_explicit_audited_merge(client):
     )
     assert merged.status_code == 200
     assert merged.get_json()["userId"] == target["userId"]
-    assert {identity["identity_type"] for identity in merged.get_json()["identities"]} == {"phone", "email"}
+    assert len(merged.get_json()["identities"]) == 2
+    assert {identity["identity_type"] for identity in merged.get_json()["identities"]} == {"email"}
 
 
 def test_pc_account_can_bind_existing_mini_account_by_confirmed_qr_merge(client):

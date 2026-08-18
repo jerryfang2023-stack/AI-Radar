@@ -421,9 +421,9 @@ def register_routes(app, *, db, membership, user_by_id, fulfill_order, complete_
             return jsonify(error={"code": "INVALID_PURPOSE", "message": "验证用途无效"}), 400
         kind = str(payload.get("type") or "")
         value = normalize_identity(kind, payload.get("value"))
-        if kind not in {"phone", "email"} or not value:
-            return jsonify(error={"code": "INVALID_IDENTITY", "message": "请输入有效的手机号或邮箱"}), 400
-        identity_hash = digest(secret, kind, value) if kind != "phone" else phone_digest(secret, value)
+        if kind != "email" or not value:
+            return jsonify(error={"code": "INVALID_IDENTITY", "message": "请输入有效的邮箱"}), 400
+        identity_hash = digest(secret, kind, value)
         now = utcnow()
         challenge_id = secrets.token_urlsafe(24)
         code = f"{secrets.randbelow(1000000):06d}"
@@ -468,6 +468,8 @@ def register_routes(app, *, db, membership, user_by_id, fulfill_order, complete_
             challenge = conn.execute("SELECT * FROM verification_challenges WHERE id=?", (challenge_id,)).fetchone()
             if not challenge or challenge["consumed_at"] or challenge["expires_at"] <= iso(now):
                 return jsonify(error={"code": "CHALLENGE_EXPIRED", "message": "验证码已失效，请重新获取"}), 410
+            if challenge["identity_type"] != "email":
+                return jsonify(error={"code": "UNSUPPORTED_IDENTITY", "message": "PC 端仅支持邮箱或微信扫码登录"}), 400
             if challenge["attempts"] >= 5 or not hmac.compare_digest(challenge["code_hash"], digest(secret, "verification", code)):
                 conn.execute("UPDATE verification_challenges SET attempts=attempts+1 WHERE id=?", (challenge_id,))
                 conn.commit()
