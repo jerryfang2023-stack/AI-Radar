@@ -1,7 +1,7 @@
 {
   "meta": {
     "schema_version": "INVESTMENT-INSTITUTION-V1.0",
-    "generated_at": "2026-08-18T02:54:45.391Z",
+    "generated_at": "2026-08-19T02:04:47.431Z",
     "source_contract": "FUNDING-INSIGHT-V1.3",
     "institution_count": 1267,
     "evidence_backed_count": 1267,
@@ -22,12 +22,12 @@
       "classification_confidence": "evidence_bounded",
       "collection_status": "evidence_backed",
       "current_round_count": 24,
-      "historical_or_ambiguous_count": 3,
+      "historical_or_ambiguous_count": 4,
       "portfolio_company_count": 23,
       "first_disclosed_at": "2023-04-27",
       "latest_disclosed_at": "2026-08-12",
       "role_counts": {
-        "historical_or_ambiguous": 3,
+        "historical_or_ambiguous": 4,
         "lead": 2,
         "participant": 22
       },
@@ -504,6 +504,44 @@
               "source_content_hash": "77fbdb6058a98d5e",
               "quote": "with participation from Y Combinator",
               "quote_hash": "a2cd665bcd61bbcc9e412400f1d8e3a4eec73107f3d5251698eaf4e96b3912da"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-54943bbe676d0726",
+          "funding_insight_id": "FI-920fe5e68b71a61c",
+          "event_ids": [
+            "EV-83085b0046c7275c"
+          ],
+          "company_entity_id": "EN-8d319684b6042af4",
+          "company_canonical_entity_id": "",
+          "company_name": "Ontora",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "未披露",
+          "amount_original": "$700K",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 700000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "70 万美元"
+          },
+          "announced_at": "2026-06-08",
+          "disclosure_status": "partially_disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "加速器/孵化器",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-1f322d172be14af7",
+              "source_url": "https://www.vcbacked.co/company/ontora",
+              "source_title": "Ontora Funding & Investors - Pre-Seed - Dover | VCBacked",
+              "source_content_hash": "55a0605c9be6e3c5",
+              "quote": "Ontora's investors include Y Combinator.",
+              "quote_hash": "24ded63cd0d723ee68be98942282098f4d0b6f70518490a7339e2707f224cf93"
             }
           ]
         },
@@ -1288,6 +1326,14 @@
           "source_content_hash": "77fbdb6058a98d5e",
           "quote": "with participation from Y Combinator",
           "quote_hash": "a2cd665bcd61bbcc9e412400f1d8e3a4eec73107f3d5251698eaf4e96b3912da"
+        },
+        {
+          "source_id": "FISRC-1f322d172be14af7",
+          "source_url": "https://www.vcbacked.co/company/ontora",
+          "source_title": "Ontora Funding & Investors - Pre-Seed - Dover | VCBacked",
+          "source_content_hash": "55a0605c9be6e3c5",
+          "quote": "Ontora's investors include Y Combinator.",
+          "quote_hash": "24ded63cd0d723ee68be98942282098f4d0b6f70518490a7339e2707f224cf93"
         },
         {
           "source_id": "FISRC-46ca8e6bf27dfb82",

@@ -422,13 +422,10 @@
         "market_application_id": "",
         "use_case_ids": [
           "productivity_enterprise_workflows",
+          "knowledge_search",
           "data_analysis"
         ],
-        "industry_ids": [
-          "professional_services",
-          "manufacturing",
-          "media_entertainment"
-        ],
+        "industry_ids": [],
         "target_user_ids": [
           "business_user"
         ],
@@ -587,7 +584,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-18T14:01:39.713Z"
+        "generated_at": "2026-08-18T14:01:39.713Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-83085b0046c7275c",
+          "confidence": 0.75,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
