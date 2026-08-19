@@ -66,26 +66,23 @@
       "pain": "AI智能体开始具备自主执行能力，但其操作不透明，可能带来数据删除、权限滥用等安全风险",
       "product_wedge": "一个能拦截智能体高风险操作、记录行为日志并强制执行权限策略的中间件",
       "current_alternatives": "依赖操作系统层面的权限控制，或完全禁用智能体的写操作能力，缺乏针对AI行为的细粒度审计工具",
-      "why_now": "EV-a68475d82ec939b5 记录了 OpenAI 对智能体意外删除用户文件的回应与风险缓解；EV-ab93c7a2f4178e93 记录了 Claude Cowork 可读写 Mac 任意文件的漏洞。两个不同主体的已验收事件共同表明，智能体写操作已经带来可验证的权限边界与治理问题。",
+      "why_now": "EV-ea0938a6f851008a 记录了 IBM watsonx.governance 为智能体推出执行跟踪；EV-ab93c7a2f4178e93 记录了 Claude Cowork 可读写 Mac 任意文件的漏洞。一个治理产品发布与一个权限漏洞共同表明，智能体写操作已经带来可验证的审计与权限边界需求。",
       "counter_signal": "如果主流企业AI平台（如Microsoft Copilot, GitHub Copilot）默认不开放或严格限制智能体的文件写入和执行能力，导致该问题在短期内不普遍，则该判断的市场时机不成熟。",
       "unknowns": [
         "企业是倾向于购买独立的智能体安全产品，还是期望模型供应商或云平台内置这些功能？",
         "对智能体行为的实时拦截会在多大程度上增加任务执行的延迟？"
       ],
       "validation_action": "与10位负责评估或部署AI智能体的企业安全工程师进行访谈，了解他们当前如何管理智能体的文件系统和网络访问权限，并询问他们对GPT-5.6 Sol文件删除事件的看法及应对措施。",
-      "reviewed_at": "2026-07-25",
+      "reviewed_at": "2026-08-19",
       "minimum_evidence": 2,
       "evidence_refs": [
         {
-          "event_id": "EV-a68475d82ec939b5",
+          "event_id": "EV-ea0938a6f851008a",
           "claim_refs": [
-            "CL-6aa01720dbc6285a",
-            "CL-e7bf0d793338ed13",
-            "CL-ac6dea5ec76009be",
-            "CL-fda63f0ba624a06f"
+            "CL-61ff80fbe1535770"
           ],
           "source_refs": [
-            "SA-e7fbbb0f6c048cd5"
+            "SA-489387c21f065795"
           ]
         },
         {
