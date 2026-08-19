@@ -967,6 +967,11 @@ test("融资透视自动化在商业事件工作流后增量研究、同步并�
   assert.match(workflow, /generate-funding-insights-deepseek\.mjs[\s\S]*assert-funding-insights-v1\.mjs[\s\S]*build-funding-insights-frontstage\.mjs/u);
   assert.match(workflow, /build-funding-insights-frontstage\.mjs[\s\S]*assert-funding-insights-v1\.mjs --all=true --frontstage=true/u);
   assert.match(workflow, /build-funding-insights-frontstage\.mjs[\s\S]*classify:funding-taxonomy-v4\.1 -- --write=true[\s\S]*assert-funding-insights-v1\.mjs --all=true --frontstage=true/u);
+  assert.match(
+    workflow,
+    /classify:funding-taxonomy-v4\.1 -- --write=true --apply=true[\s\S]*project:funding-taxonomy-events[\s\S]*build-funding-insights-frontstage\.mjs[\s\S]*assert-funding-insights-v1\.mjs --all=true --frontstage=true/u,
+    "the funding workflow must rebuild the frontstage after applying taxonomy decisions",
+  );
   assert.match(workflow, /assert-funding-insights-v1\.mjs --all=true --frontstage=true[\s\S]*build:investment-institutions[\s\S]*assert:investment-institutions[\s\S]*build:data-center-site/u);
   assert.match(
     workflow,

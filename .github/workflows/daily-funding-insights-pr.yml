@@ -206,6 +206,7 @@ jobs:
           node 01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs
           npm run classify:funding-taxonomy-v4.1 -- --write=true --apply=true
           npm run project:funding-taxonomy-events
+          node 01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs
           node agent-workflow/tools/sync-light-data-lake.mjs --v4-only=true --duckdb=skip
           node agent-workflow/tools/assert-data-lake-v4.mjs --duckdb=skip
           node agent-workflow/tools/assert-funding-insights-v1.mjs --all=true --frontstage=true
