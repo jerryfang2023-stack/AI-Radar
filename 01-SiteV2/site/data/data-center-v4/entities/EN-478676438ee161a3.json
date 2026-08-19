@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-18T00:24:57.421Z",
-    "latestDataDate": "2026-08-18",
-    "currentDate": "2026-08-18",
-    "eventCount": 2199,
+    "generatedAt": "2026-08-19T02:05:03.499Z",
+    "latestDataDate": "2026-08-19",
+    "currentDate": "2026-08-19",
+    "eventCount": 2220,
     "quarantinedEventCount": 19
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-cff5848b8c5453af",
       "EV-5ede0f85a672441c",
       "EV-5c30f52112d92491",
       "EV-2fa6949af5b36fb0",
@@ -29,11 +30,12 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
+      "TX-product_form-ai_device",
       "TX-use_case-physical_automation"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-03",
-    "lastSeen": "2026-08-17",
+    "lastSeen": "2026-08-19",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -45,11 +47,40 @@
         "EV-2fa6949af5b36fb0",
         "EV-6ce6bebf0d6408d9"
       ],
-      "hardware": [],
+      "hardware": [
+        "EV-cff5848b8c5453af"
+      ],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-cff5848b8c5453af",
+        "dataDate": "2026-08-19",
+        "date": "2026-08-19",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "派早报：iQOO 发布手机新品、闪极举行 Loomos AI 眼镜发布会等",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-478676438ee161a3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-478676438ee161a3"
+        ]
+      },
       {
         "id": "EV-5ede0f85a672441c",
         "dataDate": "2026-08-17",
@@ -175,6 +206,51 @@
   "relationships": [],
   "taxonomyNodes": [
     {
+      "id": "TX-product_form-ai_device",
+      "name": "AI 设备",
+      "nodeType": "product_form",
+      "typeLabel": "产品形态",
+      "valueId": "ai_device",
+      "eventIds": [
+        "EV-c6c297156ff274ac",
+        "EV-02882e6f5e1902c6",
+        "EV-b5dd10300e34f2d3",
+        "EV-450f624a6a6446ce",
+        "EV-a9810b47e0408a05",
+        "EV-b93102125cc062e3",
+        "EV-a6b4fa32cce7c483",
+        "EV-2ffc3377977da114",
+        "EV-cff5848b8c5453af",
+        "EV-02015794e4c719d0",
+        "EV-4e8f6e91e4451ba1",
+        "EV-82e68f59d8584e4e",
+        "EV-f6ac2938949f74ec",
+        "EV-98dd0db65ab955f7",
+        "EV-7256017056b81bbe",
+        "EV-9e35de25113a9269"
+      ],
+      "entityIds": [
+        "EN-1913c6ab46df3a68",
+        "EN-2a920347dfcf07a7",
+        "EN-e22521e7de65d819",
+        "EN-245f1e177c5169cb",
+        "EN-193d220b421d776e",
+        "EN-b81c8201acfc7639",
+        "EN-88e2cce43eeadb36",
+        "EN-478676438ee161a3",
+        "EN-5fdd673ed1fcff1d",
+        "EN-ae0facccf0a3723a",
+        "EN-047364b9be67f665",
+        "EN-a7baed72c308ce88"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [
+        "HW-073f0034b9be13b2"
+      ],
+      "firstSeen": "2026-05-21",
+      "lastSeen": "2026-08-19"
+    },
+    {
       "id": "TX-use_case-physical_automation",
       "name": "物理自动化",
       "nodeType": "use_case",
@@ -236,7 +312,6 @@
         "EV-5ede0f85a672441c",
         "EV-c698da7da473b059",
         "EV-e781e169725006f0",
-        "EV-257c7ec21edf638a",
         "EV-eb12fb9dd08e5aad",
         "EV-7a0f201debe99f2b",
         "EV-60110525440fac47",

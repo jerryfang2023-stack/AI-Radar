@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-18T00:24:57.421Z",
-    "latestDataDate": "2026-08-18",
-    "currentDate": "2026-08-18",
-    "eventCount": 2199,
+    "generatedAt": "2026-08-19T02:05:03.499Z",
+    "latestDataDate": "2026-08-19",
+    "currentDate": "2026-08-19",
+    "eventCount": 2220,
     "quarantinedEventCount": 19
   },
   "entity": {
@@ -27,8 +27,8 @@
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-08-09",
-    "lastSeen": "2026-08-10",
+    "firstSeen": "2026-08-18",
+    "lastSeen": "2026-08-19",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -44,8 +44,8 @@
     "timeline": [
       {
         "id": "EV-257c7ec21edf638a",
-        "dataDate": "2026-08-10",
-        "date": "2026-08-09",
+        "dataDate": "2026-08-19",
+        "date": "2026-08-18",
         "eventType": "product_release",
         "eventTypeLabel": "产品发布",
         "eventGroup": "模型、产品与服务",
@@ -54,10 +54,10 @@
         "title": "人工智能突发新闻与新闻稿",
         "displayTags": [
           {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "physical_automation",
-            "name": "物理自动化",
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
             "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -131,7 +131,17 @@
         }
       ],
       "capexFacts": [],
-      "tags": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
       "sourceUrl": "https://businesswire.com/newsroom/industry/technology/artificial-intelligence",
       "entityIds": [
         "EN-5a59b85d2410f140",

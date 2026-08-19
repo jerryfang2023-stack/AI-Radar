@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-18T00:24:57.421Z",
-    "latestDataDate": "2026-08-18",
-    "currentDate": "2026-08-18",
-    "eventCount": 2199,
+    "generatedAt": "2026-08-19T02:05:03.499Z",
+    "latestDataDate": "2026-08-19",
+    "currentDate": "2026-08-19",
+    "eventCount": 2220,
     "quarantinedEventCount": 19
   },
   "entity": {
@@ -37,6 +37,7 @@
       "EV-ef7346378fcf9746",
       "EV-4da18f97771852a9",
       "EV-f949fd95df58d42d",
+      "EV-a3b61b3529d9cf79",
       "EV-c3231f2ea0ae1ebc",
       "EV-fcbd97e1f30c95e3",
       "EV-5012364af7480121",
@@ -71,7 +72,7 @@
       "EN-6fcba5d96a4fadfd"
     ],
     "firstSeen": "2026-05-21",
-    "lastSeen": "2026-08-17",
+    "lastSeen": "2026-08-19",
     "relationIds": [
       "REL2-30051dc5d7668662"
     ],
@@ -103,6 +104,7 @@
         "EV-f949fd95df58d42d"
       ],
       "productsServices": [
+        "EV-a3b61b3529d9cf79",
         "EV-c3231f2ea0ae1ebc",
         "EV-fcbd97e1f30c95e3",
         "EV-5012364af7480121",
@@ -118,6 +120,22 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-a3b61b3529d9cf79",
+        "dataDate": "2026-08-19",
+        "date": "2026-08-18",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Cursor借GitHub用户不满，推出竞争性托管平台",
+        "displayTags": [],
+        "entityIds": [
+          "EN-f5ba4c53c1799e5b",
+          "EN-e78bdebae031095b"
+        ]
+      },
       {
         "id": "EV-d57fb9108f2cb220",
         "dataDate": "2026-08-17",
@@ -961,7 +979,7 @@
         "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-19"
     }
   ],
   "relationships": [
@@ -1119,6 +1137,7 @@
         "EV-b1138bccf5ccd86c",
         "EV-dd78b63f18dba410",
         "EV-f1a605a25af30dc5",
+        "EV-83085b0046c7275c",
         "EV-4c247b02485de09b",
         "EV-e9d06e8a06aa7318",
         "EV-7e1624d7df300713",
@@ -1336,6 +1355,7 @@
         "EN-a972bc1b3220493e",
         "EN-ef292e56955a1c10",
         "EN-20b5af8f2c749bf8",
+        "EN-8d319684b6042af4",
         "EN-b10da733dff99be1",
         "EN-4e4b333252f207fd",
         "EN-049b3253f4a8e2eb",
@@ -1426,7 +1446,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-19"
     },
     {
       "id": "TX-target_user-consumer",
@@ -1577,7 +1597,6 @@
         "EV-5ede0f85a672441c",
         "EV-c698da7da473b059",
         "EV-e781e169725006f0",
-        "EV-257c7ec21edf638a",
         "EV-eb12fb9dd08e5aad",
         "EV-7a0f201debe99f2b",
         "EV-60110525440fac47",
@@ -2019,6 +2038,8 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-2430dae13b9f6c82",
+        "EV-257c7ec21edf638a",
         "EV-0d5a32aca724d30e",
         "EV-615fbb4de33fad2d",
         "EV-4551be310b520fcc",
@@ -2284,6 +2305,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-09a29379b6399236",
         "EV-2c17183b71d8b7d1",
         "EV-9db14ad0d6fe3135",
         "EV-7a3a3754522828e1",
@@ -2455,6 +2477,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-35c53e7e400caf01",
         "EN-32e83e92d45d71f6",
         "EN-3b9e1cdd9e593b5c",
         "EN-bbdefa2950f49882",
@@ -2593,6 +2616,7 @@
         "EN-b7bea343b08cce2c",
         "EN-fdb2cc367267ac57",
         "EN-4a639cb888a15d75",
+        "EN-11507a0e2f5e69d5",
         "EN-0616a267820d2c78",
         "EN-286a3c612017ad1d",
         "EN-16478186eeecf696",
@@ -3023,6 +3047,7 @@
         "EV-129ffa6be41bb485",
         "EV-75b9b997e9c7e5d1",
         "EV-b2e374d54b10b9af",
+        "EV-3a4acc92731cb5ac",
         "EV-2868ff08777b5de9",
         "EV-ff924015298048ba",
         "EV-29c0d969abde2020",
@@ -3141,7 +3166,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-19"
     },
     {
       "id": "TX-product_form-model",
@@ -3229,6 +3254,7 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-3a4acc92731cb5ac",
         "EV-0d5a32aca724d30e",
         "EV-63948deaec161736",
         "EV-f7b81752b1fadd87",
@@ -3539,7 +3565,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-19"
     },
     {
       "id": "TX-target_user-public_sector_user",

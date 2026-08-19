@@ -1,8 +1,8 @@
 window.WaveSightOpsConsole = {
   "meta": {
     "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-08-18T00:26:34.563Z",
-    "date": "2026-08-18",
+    "generatedAt": "2026-08-19T02:05:06.049Z",
+    "date": "2026-08-19",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
       "01-SiteV2/site/data/pipeline-dashboard.json",
@@ -42,7 +42,7 @@ window.WaveSightOpsConsole = {
     }
   ],
   "daily": {
-    "date": "2026-08-18",
+    "date": "2026-08-19",
     "status": "passed",
     "statusText": "已通过",
     "issueSummary": {
@@ -837,15 +837,15 @@ window.WaveSightOpsConsole = {
           },
           {
             "label": "Claims",
-            "value": 89
+            "value": 91
           },
           {
             "label": "Events",
-            "value": 39
+            "value": 24
           },
           {
             "label": "QA",
-            "value": 221
+            "value": 231
           }
         ]
       },
@@ -889,13 +889,13 @@ window.WaveSightOpsConsole = {
         "status": "partial",
         "counts": {
           "discovered": 290,
-          "capture_succeeded": 260,
+          "capture_succeeded": 255,
           "capture_failed": 1,
-          "raw_documents": 260
+          "raw_documents": 255
         },
         "evidence": [
-          "01-SiteV2/content/11-databases/data-center-v4/2026-08-18/manifest.json",
-          "agent-workflow/reports/2026-08-18-guanlan-daily-monitor-log.md"
+          "01-SiteV2/content/11-databases/data-center-v4/2026-08-19/manifest.json",
+          "agent-workflow/reports/2026-08-19-guanlan-daily-monitor-log.md"
         ]
       },
       {
@@ -903,20 +903,20 @@ window.WaveSightOpsConsole = {
         "label": "事实构建",
         "status": "passed",
         "counts": {
-          "accepted_claims": 89,
+          "accepted_claims": 91,
           "rejected_claims": 0,
-          "accepted": 89,
+          "accepted": 91,
           "rejected": 0,
-          "pending_claims": 4,
-          "canonical_events": 39,
-          "entities": 64,
-          "relationships": 93,
+          "pending_claims": 0,
+          "canonical_events": 24,
+          "entities": 44,
+          "relationships": 91,
           "conflicts": 0,
-          "qa_queue": 221
+          "qa_queue": 231
         },
         "evidence": [
-          "01-SiteV2/content/11-databases/data-center-v4/2026-08-18/manifest.json",
-          "agent-workflow/reports/2026-08-18-data-center-v4-integrity-gate.json"
+          "01-SiteV2/content/11-databases/data-center-v4/2026-08-19/manifest.json",
+          "agent-workflow/reports/2026-08-19-data-center-v4-integrity-gate.json"
         ]
       },
       {
@@ -926,11 +926,11 @@ window.WaveSightOpsConsole = {
         "counts": {
           "opportunity_map": "failed",
           "trend_radar": "passed",
-          "funding_insights": "failed",
+          "funding_insights": "passed",
           "fde_hardware_sync": "passed"
         },
         "evidence": [
-          "agent-workflow/reports/2026-08-18-persistent-asset-manifest.json"
+          "agent-workflow/reports/2026-08-19-persistent-asset-manifest.json"
         ]
       },
       {
@@ -941,18 +941,18 @@ window.WaveSightOpsConsole = {
           "v4_bundle_ready": true
         },
         "evidence": [
-          "agent-workflow/reports/2026-08-18-persistent-asset-manifest.json"
+          "agent-workflow/reports/2026-08-19-persistent-asset-manifest.json"
         ]
       }
     ],
     "latestProduction": {
-      "date": "2026-08-18",
-      "discovered": 260,
-      "captured": 260,
-      "claims": 93,
-      "events": 39,
-      "entities": 64,
-      "relationships": 93
+      "date": "2026-08-19",
+      "discovered": 255,
+      "captured": 255,
+      "claims": 91,
+      "events": 24,
+      "entities": 44,
+      "relationships": 91
     },
     "sync": [
       {
@@ -973,7 +973,7 @@ window.WaveSightOpsConsole = {
       {
         "label": "Pipeline Dashboard",
         "status": "passed",
-        "detail": "2026-08-18T00:26:34.522Z"
+        "detail": "2026-08-19T02:05:06.020Z"
       },
       {
         "label": "Daily Supervision",
@@ -987,45 +987,47 @@ window.WaveSightOpsConsole = {
       "meta": {
         "version": "COLLECTION-TELEMETRY-V1.0",
         "ops_version": "OPS-V2.0.0-v4-telemetry",
-        "data_date": "2026-08-18",
-        "generated_at": "2026-08-18T00:26:34.476Z",
+        "data_date": "2026-08-19",
+        "generated_at": "2026-08-19T02:05:05.992Z",
         "scope": "OPS",
         "canonical_writeback": false,
         "source_of_truth": "Data Center V4 manifest and integrity gate"
       },
       "collection": {
         "discovered": 290,
-        "capture_succeeded": 260,
+        "capture_succeeded": 255,
         "capture_failed": 1,
-        "raw_documents": 260
+        "raw_documents": 255
       },
       "factBuild": {
-        "accepted_claims": 89,
+        "accepted_claims": 91,
         "rejected_claims": 0,
-        "accepted": 89,
+        "accepted": 91,
         "rejected": 0,
-        "pending_claims": 4,
-        "canonical_events": 39,
-        "entities": 64,
-        "relationships": 93,
+        "pending_claims": 0,
+        "canonical_events": 24,
+        "entities": 44,
+        "relationships": 91,
         "conflicts": 0,
-        "qa_queue": 221,
+        "qa_queue": 231,
         "qa_by_status": {
-          "review_optional": 205,
-          "open": 16
+          "review_optional": 216,
+          "open": 15
         }
       },
       "v4Gate": {
         "status": "passed",
-        "manifest_date": "2026-08-18",
-        "gate_date": "2026-08-18",
+        "manifest_date": "2026-08-19",
+        "gate_date": "2026-08-19",
         "failures": [],
-        "warnings": []
+        "warnings": [
+          "No source-bounded FDE projection was produced."
+        ]
       },
       "applicationProjection": {
         "opportunity_map": "failed",
         "trend_radar": "passed",
-        "funding_insights": "failed",
+        "funding_insights": "passed",
         "fde_hardware_sync": "passed"
       },
       "publication": {
@@ -1041,53 +1043,53 @@ window.WaveSightOpsConsole = {
     },
     "pipelineMeta": {
       "version": "OPS-V2.0.0-v4-telemetry",
-      "generatedAt": "2026-08-18T00:26:34.522Z",
+      "generatedAt": "2026-08-19T02:05:06.020Z",
       "dateRange": {
-        "start": "2026-08-12",
-        "end": "2026-08-18"
+        "start": "2026-08-13",
+        "end": "2026-08-19"
       },
       "source": "Data Center V4 manifest + collection-telemetry-v1",
       "telemetryVersion": "COLLECTION-TELEMETRY-V1.0"
     },
     "latest": {
-      "date": "2026-08-18",
-      "label": "2026.08.18",
-      "shortLabel": "08.18",
-      "discovered": 260,
-      "captured": 260,
-      "claims": 93,
-      "events": 39,
-      "entities": 64,
-      "relationships": 93,
+      "date": "2026-08-19",
+      "label": "2026.08.19",
+      "shortLabel": "08.19",
+      "discovered": 255,
+      "captured": 255,
+      "claims": 91,
+      "events": 24,
+      "entities": 44,
+      "relationships": 91,
       "conflicts": 0,
-      "qaQueue": 221,
-      "telemetryDate": "2026-08-18",
+      "qaQueue": 231,
+      "telemetryDate": "2026-08-19",
       "collection": {
         "discovered": 290,
-        "capture_succeeded": 260,
+        "capture_succeeded": 255,
         "capture_failed": 1,
-        "raw_documents": 260
+        "raw_documents": 255
       },
       "factBuild": {
-        "accepted_claims": 89,
+        "accepted_claims": 91,
         "rejected_claims": 0,
-        "accepted": 89,
+        "accepted": 91,
         "rejected": 0,
-        "pending_claims": 4,
-        "canonical_events": 39,
-        "entities": 64,
-        "relationships": 93,
+        "pending_claims": 0,
+        "canonical_events": 24,
+        "entities": 44,
+        "relationships": 91,
         "conflicts": 0,
-        "qa_queue": 221,
+        "qa_queue": 231,
         "qa_by_status": {
-          "review_optional": 205,
-          "open": 16
+          "review_optional": 216,
+          "open": 15
         }
       },
       "applicationProjection": {
         "opportunity_map": "failed",
         "trend_radar": "passed",
-        "funding_insights": "failed",
+        "funding_insights": "passed",
         "fde_hardware_sync": "passed"
       },
       "publication": {
@@ -1095,16 +1097,29 @@ window.WaveSightOpsConsole = {
       }
     },
     "totals": {
-      "discovered": 1728,
-      "captured": 1728,
-      "claims": 732,
-      "events": 263,
-      "entities": 410,
-      "relationships": 732,
+      "discovered": 1719,
+      "captured": 1719,
+      "claims": 710,
+      "events": 250,
+      "entities": 397,
+      "relationships": 710,
       "conflicts": 0,
-      "qaQueue": 1468
+      "qaQueue": 1473
     },
     "days": [
+      {
+        "date": "2026-08-19",
+        "label": "2026.08.19",
+        "shortLabel": "08.19",
+        "discovered": 255,
+        "captured": 255,
+        "claims": 91,
+        "events": 24,
+        "entities": 44,
+        "relationships": 91,
+        "conflicts": 0,
+        "qaQueue": 231
+      },
       {
         "date": "2026-08-18",
         "label": "2026.08.18",
@@ -1182,19 +1197,6 @@ window.WaveSightOpsConsole = {
         "relationships": 102,
         "conflicts": 0,
         "qaQueue": 211
-      },
-      {
-        "date": "2026-08-12",
-        "label": "2026.08.12",
-        "shortLabel": "08.12",
-        "discovered": 264,
-        "captured": 264,
-        "claims": 113,
-        "events": 37,
-        "entities": 57,
-        "relationships": 113,
-        "conflicts": 0,
-        "qaQueue": 226
       }
     ],
     "engineQuality": {}
