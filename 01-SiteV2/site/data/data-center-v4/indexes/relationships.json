@@ -5,13 +5,69 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-18T00:24:57.421Z",
-    "latestDataDate": "2026-08-18",
-    "currentDate": "2026-08-18",
-    "eventCount": 2199,
+    "generatedAt": "2026-08-19T02:05:03.499Z",
+    "latestDataDate": "2026-08-19",
+    "currentDate": "2026-08-19",
+    "eventCount": 2220,
     "quarantinedEventCount": 19
   },
   "relationships": [
+    {
+      "relationship_id": "REL2-0dc4d04c4e728c64",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d1ad14d4ad57d207",
+      "object_type": "entity",
+      "event_id": "EV-06e31f68974104ec",
+      "claim_refs": [
+        "CL-a1d9af01cfc6ad8d",
+        "CL-51dbbebe30b83b5d",
+        "CL-28dcc8b2c1fa506b",
+        "CL-2a5dd4fc3ff8f4c0"
+      ],
+      "source_refs": [
+        "SA-a4e3fc5ebc4424dd"
+      ],
+      "data_date": "2026-08-19",
+      "status": "verified",
+      "subjectName": "OpenAI",
+      "objectName": "ChatGPT",
+      "predicateLabel": "发布",
+      "title": "OpenAI 发布 ChatGPT",
+      "eventTitle": "OpenAI为青少年推出更安全的ChatGPT——距青少年开始使用已过去数年",
+      "eventDate": "2026-08-18",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-b77c9fa9bd90e418",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d1ad14d4ad57d207",
+      "object_type": "entity",
+      "event_id": "EV-05fea7a5d8b8db46",
+      "claim_refs": [
+        "CL-b870c0ca13fc4d21",
+        "CL-f73346f9bf67ac9b",
+        "CL-918b063ce08ba3e8",
+        "CL-d25ab3ffb9a6d928"
+      ],
+      "source_refs": [
+        "SA-14bcf0c0d0ebe797"
+      ],
+      "data_date": "2026-08-19",
+      "status": "verified",
+      "subjectName": "OpenAI",
+      "objectName": "ChatGPT",
+      "predicateLabel": "发布",
+      "title": "OpenAI 发布 ChatGPT",
+      "eventTitle": "OpenAI 推出面向青少年的 ChatGPT 版本",
+      "eventDate": "2026-08-18",
+      "sourceCount": 1
+    },
     {
       "relationship_id": "REL2-1a63e4b77f739862",
       "relationship_version": "RELATION-V2.1",
@@ -1461,33 +1517,6 @@
       "sourceCount": 1
     },
     {
-      "relationship_id": "REL2-a96854ad8a7b0bbc",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-7dfafb44ee67bcd8",
-      "object_type": "entity",
-      "event_id": "EV-828698c8779bb522",
-      "claim_refs": [
-        "CL-802ad84118cf32ec",
-        "CL-4bea83191f9c4afc",
-        "CL-14abc711708348a9"
-      ],
-      "source_refs": [
-        "SA-d31abd0756f4c76a"
-      ],
-      "data_date": "2026-07-23",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "SVD",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 SVD",
-      "eventTitle": "英伟达推出 SVD 服务，识别 AI 生成视频准确率最高达 92%",
-      "eventDate": "2026-07-22",
-      "sourceCount": 1
-    },
-    {
       "relationship_id": "REL2-dd7a6c5dc17ddd5b",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-240389f4b730bad4",
@@ -1832,32 +1861,6 @@
       "title": "腾讯 发布 Hyra-1.0",
       "eventTitle": "腾讯混元发布科学发现智能体 Hyra，能够递归自我改进",
       "eventDate": "2026-07-21",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-7a766493d6d54dde",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-52c2f30b6bda5898",
-      "object_type": "entity",
-      "event_id": "EV-cb3a8846bc4f8aca",
-      "claim_refs": [
-        "CL-45faa3838295a3b1",
-        "CL-770ae8d405e879c6"
-      ],
-      "source_refs": [
-        "SA-2ed6d789fcc56d74"
-      ],
-      "data_date": "2026-07-22",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Vera CPU",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 Vera CPU",
-      "eventTitle": "英伟达详解 Vera CPU：专为智能体 AI 构建，88 个 Olympus 核心、1.2 TB/s LPDDR5X 内存",
-      "eventDate": "2026-07-22",
       "sourceCount": 1
     },
     {
@@ -2735,33 +2738,6 @@
       "sourceCount": 1
     },
     {
-      "relationship_id": "REL2-cd31c7f1b13d1c27",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-aa15d891a32a51b8",
-      "object_type": "entity",
-      "event_id": "EV-950237c6b3eb6343",
-      "claim_refs": [
-        "CL-8a89be65a1a0c758",
-        "CL-515e4015e6d27579",
-        "CL-313db46aab7e3aab"
-      ],
-      "source_refs": [
-        "SA-5bc68137ea7bcb63"
-      ],
-      "data_date": "2026-07-18",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Nemotron 3 Embed",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 Nemotron 3 Embed",
-      "eventTitle": "英伟达开源 Nemotron 3 Embed 系列 AI 模型，8B 版斩获 RTEB 榜首",
-      "eventDate": "2026-07-18",
-      "sourceCount": 1
-    },
-    {
       "relationship_id": "REL2-d2669b3b21d3263a",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-8d4321d936320802",
@@ -3371,34 +3347,6 @@
       "title": "Anthropic 发布 Claude",
       "eventTitle": "Anthropic 推出 Claude for Teachers，免费向美国 K-12 教师提供高级功能",
       "eventDate": "2026-07-15",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-2106a1b212c3c15f",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "partners_with",
-      "object_ref": "EN-956b7280912ef1cc",
-      "object_type": "entity",
-      "event_id": "EV-5b16886442234f81",
-      "claim_refs": [
-        "CL-23841ec9ad74e5be",
-        "CL-f5588a6595b80582",
-        "CL-f206a4415dd1222e",
-        "CL-35c73e08269377e7"
-      ],
-      "source_refs": [
-        "SA-bc6a154e09c703b9"
-      ],
-      "data_date": "2026-07-15",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Mitsubishi Heavy Industries",
-      "predicateLabel": "合作",
-      "title": "NVIDIA 合作 Mitsubishi Heavy Industries",
-      "eventTitle": "英伟达与三菱重工拟合作，将冷却与能源管理技术融入下一代 AI 数据中心",
-      "eventDate": "2026-07-14",
       "sourceCount": 1
     },
     {
@@ -4945,33 +4893,6 @@
       "title": "Mistral AI 发布 Leanstral 1.5",
       "eventTitle": "Mistral AI 开源模型 Leanstral 1.5 专为 Lean 4 形式化验证设计",
       "eventDate": "2026-07-04",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-09079be08468cadc",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-3ae50afab3e392b8",
-      "object_type": "entity",
-      "event_id": "EV-3028dfadf94c8f4c",
-      "claim_refs": [
-        "CL-e97a7a589b9980c1",
-        "CL-0bbdad6779952a81",
-        "CL-6baa9897903cc3dc"
-      ],
-      "source_refs": [
-        "SA-7d7d63f2484913f7"
-      ],
-      "data_date": "2026-07-04",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Nemotron-Labs-TwoTower",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 Nemotron-Labs-TwoTower",
-      "eventTitle": "英伟达开源 Nemotron-Labs-TwoTower 双塔扩散语言模型",
-      "eventDate": "2026-07-03",
       "sourceCount": 1
     },
     {
@@ -9386,60 +9307,6 @@
       "sourceCount": 1
     },
     {
-      "relationship_id": "REL2-4ba72572dcf15f72",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-11ef7b03c79c9bbd",
-      "object_type": "entity",
-      "event_id": "EV-631197767a45d34c",
-      "claim_refs": [
-        "CL-a5be3ebbffb97ab9",
-        "CL-4e30f271c8017d66",
-        "CL-bb382a9773443f24"
-      ],
-      "source_refs": [
-        "SA-b74ed4d2a25dc3b4"
-      ],
-      "data_date": "2026-06-01",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Vera",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 Vera",
-      "eventTitle": "英伟达 Vera 处理器发布：专为 AI 智能体打造，OpenAI、SpaceXAI、字节跳动都要用",
-      "eventDate": "2026-06-01",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-6e1c341aeaa60f54",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-9bc22dcabf7f45b3",
-      "object_type": "entity",
-      "event_id": "EV-aa63303570154a9b",
-      "claim_refs": [
-        "CL-4119c112dfe6ff3e",
-        "CL-008a6f6f83e5e40d",
-        "CL-eeaddb533e49827c"
-      ],
-      "source_refs": [
-        "SA-4dcdfe948f82b975"
-      ],
-      "data_date": "2026-06-01",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Alpamayo 2 Super",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 Alpamayo 2 Super",
-      "eventTitle": "英伟达推出 Alpamayo 2 Super 开源推理模型，助力 L4 自动驾驶研发",
-      "eventDate": "2026-06-01",
-      "sourceCount": 1
-    },
-    {
       "relationship_id": "REL2-949bfe8ea8e326ed",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-e1517be14d06cdb7",
@@ -9461,33 +9328,6 @@
       "predicateLabel": "发布",
       "title": "MiniMax 发布 M3",
       "eventTitle": "MiniMax M3：前沿编码、100万token上下文与原生多模态一体模型",
-      "eventDate": "2026-06-01",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-cd95b9638b93b057",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-171fa23d27b5894b",
-      "object_type": "entity",
-      "event_id": "EV-67f32771d69084d6",
-      "claim_refs": [
-        "CL-54dd99f7128a923b",
-        "CL-bdbc2f09ee0b8373",
-        "CL-6daec18c87ead702"
-      ],
-      "source_refs": [
-        "SA-471f373438651acc"
-      ],
-      "data_date": "2026-06-01",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Cosmos 3",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 Cosmos 3",
-      "eventTitle": "让机器人看懂世界：英伟达推出全球首款全开源全模态物理 AI 大模型 Cosmos 3",
       "eventDate": "2026-06-01",
       "sourceCount": 1
     },
@@ -9514,32 +9354,6 @@
       "predicateLabel": "发布",
       "title": "NVIDIA 发布 RTX Spark",
       "eventTitle": "NVIDIA 发布 RTX Spark 与 OpenShell，强化本地 AI 智能体",
-      "eventDate": "2026-06-01",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-f1a8de714fc4b399",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-a3266ab9e10d6105",
-      "object_type": "entity",
-      "event_id": "EV-d43a561da59b2897",
-      "claim_refs": [
-        "CL-b1f07f161ec7dee0",
-        "CL-553758c225568c2a"
-      ],
-      "source_refs": [
-        "SA-ae55abf27e9077a9"
-      ],
-      "data_date": "2026-06-01",
-      "status": "verified",
-      "subjectName": "NVIDIA",
-      "objectName": "Nemotron 3 Ultra",
-      "predicateLabel": "发布",
-      "title": "NVIDIA 发布 Nemotron 3 Ultra",
-      "eventTitle": "英伟达开源5500亿参数Nemotron 3 Ultra模型",
       "eventDate": "2026-06-01",
       "sourceCount": 1
     },

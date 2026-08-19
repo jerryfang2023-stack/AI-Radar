@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-18T00:24:57.421Z",
-    "latestDataDate": "2026-08-18",
-    "currentDate": "2026-08-18",
-    "eventCount": 2199,
+    "generatedAt": "2026-08-19T02:05:03.499Z",
+    "latestDataDate": "2026-08-19",
+    "currentDate": "2026-08-19",
+    "eventCount": 2220,
     "quarantinedEventCount": 19
   },
   "entity": {
@@ -17,6 +17,7 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [
+      "谷歌 DeepMind",
       "DeepMind"
     ],
     "verificationStatus": "verified",
@@ -32,6 +33,7 @@
       "EV-67ef7accd26a07a0",
       "EV-a7e1ecd212474e00",
       "EV-d961d3ad02f6ae14",
+      "EV-2430dae13b9f6c82",
       "EV-edb9a1143b52c096",
       "EV-397a17aa878564c4",
       "EV-53757cad2cfd074d",
@@ -92,7 +94,7 @@
       "EN-a3c3b987b09fc1bb"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-08-18",
+    "lastSeen": "2026-08-19",
     "relationIds": [
       "REL2-284835caff7e4288",
       "REL2-3ebed8c60e163231",
@@ -115,6 +117,7 @@
         "EV-d961d3ad02f6ae14"
       ],
       "productsServices": [
+        "EV-2430dae13b9f6c82",
         "EV-edb9a1143b52c096",
         "EV-397a17aa878564c4",
         "EV-53757cad2cfd074d",
@@ -155,6 +158,38 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-2430dae13b9f6c82",
+        "dataDate": "2026-08-19",
+        "date": "2026-08-18",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "哈佛和麻省理工推出 MatrAIx 系统，生成 83 亿个\"AI 人\"模拟全球人类行为",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-35c53e7e400caf01"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-35c53e7e400caf01",
+          "EN-641d6008ea308494",
+          "EN-b09a12ce5a67e7c0",
+          "EN-7d3194f79e645c42",
+          "EN-2b6e51bec93e86c1",
+          "EN-76c4ff3eda10cc66"
+        ]
+      },
       {
         "id": "EV-edb9a1143b52c096",
         "dataDate": "2026-08-18",
@@ -1859,7 +1894,6 @@
         "EV-5ede0f85a672441c",
         "EV-c698da7da473b059",
         "EV-e781e169725006f0",
-        "EV-257c7ec21edf638a",
         "EV-eb12fb9dd08e5aad",
         "EV-7a0f201debe99f2b",
         "EV-60110525440fac47",
@@ -2248,6 +2282,7 @@
         "EV-129ffa6be41bb485",
         "EV-75b9b997e9c7e5d1",
         "EV-b2e374d54b10b9af",
+        "EV-3a4acc92731cb5ac",
         "EV-2868ff08777b5de9",
         "EV-ff924015298048ba",
         "EV-29c0d969abde2020",
@@ -2366,7 +2401,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-19"
     },
     {
       "id": "TX-product_form-chip_accelerator",
@@ -2590,7 +2625,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-19"
     },
     {
       "id": "TX-product_form-model",
@@ -2678,6 +2713,7 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-3a4acc92731cb5ac",
         "EV-0d5a32aca724d30e",
         "EV-63948deaec161736",
         "EV-f7b81752b1fadd87",
@@ -2988,7 +3024,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-19"
     },
     {
       "id": "TX-use_case-security_operations",

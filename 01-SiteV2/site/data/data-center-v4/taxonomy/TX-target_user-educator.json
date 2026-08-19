@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-18T00:24:57.421Z",
-    "latestDataDate": "2026-08-18",
-    "currentDate": "2026-08-18",
-    "eventCount": 2199,
+    "generatedAt": "2026-08-19T02:05:03.499Z",
+    "latestDataDate": "2026-08-19",
+    "currentDate": "2026-08-19",
+    "eventCount": 2220,
     "quarantinedEventCount": 19
   },
   "node": {
@@ -20,6 +20,7 @@
     "eventIds": [
       "EV-8eb0acb180b7ad9d",
       "EV-435d7e7878b0c326",
+      "EV-58268b12aa406620",
       "EV-84226288807f817b",
       "EV-0347414d81e7f02e"
     ],
@@ -31,7 +32,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-04-02",
-    "lastSeen": "2026-08-03"
+    "lastSeen": "2026-08-19"
   },
   "events": [
     {
@@ -813,6 +814,111 @@
       "publisher": "财新"
     },
     {
+      "id": "EV-58268b12aa406620",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-18",
+      "updatedDate": "2026-08-19",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "OpenAI 与 CodeAI 合作推出 ChatGPT 青少年版，内置学习模式与家长控制",
+      "originalTitle": "",
+      "subject": "OpenAI 与 CodeAI",
+      "action": "合作",
+      "object": "推出 ChatGPT 青少年版，内置学习模式与家长控制",
+      "metrics": [],
+      "locations": [
+        "美国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "student",
+            "name": "学生",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "educator",
+            "name": "教师",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "student",
+          "name": "学生",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "educator",
+          "name": "教师",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "student",
+          "name": "学生",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "educator",
+          "name": "教师",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-d747d1562d541b5c"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "CodeAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/991/297.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-84226288807f817b",
       "dataDate": "2026-07-15",
       "date": "2026-07-15",
@@ -1095,11 +1201,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-industry-education",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-target_user-researcher",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system",
@@ -1194,6 +1300,9 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-3a4acc92731cb5ac",
+        "EV-0adf1fcc9dbeddef",
+        "EV-e3fb3a8b12b3ba9c",
         "EV-0d5a32aca724d30e",
         "EV-615fbb4de33fad2d",
         "EV-3dd89fab562d16a1",
@@ -1368,6 +1477,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-11a0afc2ecb6e42e",
         "EV-9703abcbede6968a",
         "EV-a964121140e9ef41",
         "EV-9356dd1be92ef5c6",
@@ -1451,6 +1561,7 @@
         "TX-industry-government_public_sector",
         "TX-industry-legal_services",
         "TX-industry-professional_services",
+        "TX-industry-retail_ecommerce",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
@@ -1498,7 +1609,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-19"
     }
   ],
   "fde": [],

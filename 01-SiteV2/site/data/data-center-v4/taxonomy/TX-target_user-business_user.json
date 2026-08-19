@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-18T00:24:57.421Z",
-    "latestDataDate": "2026-08-18",
-    "currentDate": "2026-08-18",
-    "eventCount": 2199,
+    "generatedAt": "2026-08-19T02:05:03.499Z",
+    "latestDataDate": "2026-08-19",
+    "currentDate": "2026-08-19",
+    "eventCount": 2220,
     "quarantinedEventCount": 19
   },
   "node": {
@@ -145,6 +145,7 @@
       "EV-b1138bccf5ccd86c",
       "EV-dd78b63f18dba410",
       "EV-f1a605a25af30dc5",
+      "EV-83085b0046c7275c",
       "EV-4c247b02485de09b",
       "EV-e9d06e8a06aa7318",
       "EV-7e1624d7df300713",
@@ -362,6 +363,7 @@
       "EN-a972bc1b3220493e",
       "EN-ef292e56955a1c10",
       "EN-20b5af8f2c749bf8",
+      "EN-8d319684b6042af4",
       "EN-b10da733dff99be1",
       "EN-4e4b333252f207fd",
       "EN-049b3253f4a8e2eb",
@@ -452,7 +454,7 @@
       "HW-9d84fd7aa512dddd"
     ],
     "firstSeen": "2023-06-28",
-    "lastSeen": "2026-08-18"
+    "lastSeen": "2026-08-19"
   },
   "events": [
     {
@@ -49088,6 +49090,311 @@
       "publisher": "tech.eu"
     },
     {
+      "id": "EV-83085b0046c7275c",
+      "dataDate": "2026-06-08",
+      "date": "2026-06-09",
+      "updatedDate": "2026-08-18",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "企业级 AI 平台 Ontora 已融资 70 万美元",
+      "originalTitle": "Ontora Raised $700K for Its Enterprise AI Platform Before Officially Opening Its Round",
+      "subject": "Ontora",
+      "action": "Raised",
+      "object": "$700K for Its Enterprise AI Platform Before Officially Opening Its Round",
+      "metrics": [
+        "$700K"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "EN-8d319684b6042af4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1232bafb650c8314",
+            "fundingInsightId": "FI-e662dfe79c490abb"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-8d319684b6042af4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9f1961034a962a11",
+            "fundingInsightId": "FI-e662dfe79c490abb"
+          }
+        ],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-8d319684b6042af4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-87d6ea22e6f10e77",
+            "fundingInsightId": "FI-e662dfe79c490abb"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "EN-8d319684b6042af4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1e19c3c29931e883",
+            "fundingInsightId": "FI-e662dfe79c490abb"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "knowledge_search",
+            "name": "知识与搜索",
+            "entityIds": [
+              "EN-8d319684b6042af4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-fc007782d524d59d",
+            "fundingInsightId": "FI-e662dfe79c490abb"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-8d319684b6042af4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f9a58c63f4c1eaca",
+            "fundingInsightId": "FI-e662dfe79c490abb"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-8d319684b6042af4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-32b9d508ed98578c",
+            "fundingInsightId": "FI-e662dfe79c490abb"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1232bafb650c8314",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9f1961034a962a11",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-87d6ea22e6f10e77",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-32b9d508ed98578c",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1e19c3c29931e883",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "knowledge_search",
+          "name": "知识与搜索",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fc007782d524d59d",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f9a58c63f4c1eaca",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1232bafb650c8314",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9f1961034a962a11",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-87d6ea22e6f10e77",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1e19c3c29931e883",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "knowledge_search",
+          "name": "知识与搜索",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fc007782d524d59d",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f9a58c63f4c1eaca",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-32b9d508ed98578c",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        }
+      ],
+      "entityIds": [
+        "EN-8d319684b6042af4"
+      ],
+      "entityNames": [
+        "Ontora"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.ycombinator.com/launches/QiD-ontora-the-discovery-layer-for-ai-transformation",
+      "publisher": "Y Combinator"
+    },
+    {
       "id": "EV-4c247b02485de09b",
       "dataDate": "2026-06-09",
       "date": "2026-06-09",
@@ -73921,9 +74228,9 @@
     },
     {
       "id": "EV-0121f0a9e9a975ec",
-      "dataDate": "2026-08-18",
+      "dataDate": "2026-08-19",
       "date": "2026-08-14",
-      "updatedDate": "2026-08-18",
+      "updatedDate": "2026-08-19",
       "eventType": "hardware_deployment",
       "eventTypeLabel": "硬件部署",
       "eventGroup": "AI 硬件",
@@ -78986,9 +79293,7 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -79173,6 +79478,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
@@ -79195,7 +79501,6 @@
         "TX-industry-government_public_sector",
         "TX-industry-legal_services",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-industry-professional_services",
         "TX-industry-retail_ecommerce",
         "TX-industry-telecommunications",
@@ -79229,31 +79534,24 @@
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
-        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
-        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
-        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-171fa23d27b5894b"
+        "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-19"
     },
     {
       "id": "EN-67e8c106650aa683",
@@ -79399,6 +79697,9 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-3a4acc92731cb5ac",
+        "EV-0adf1fcc9dbeddef",
+        "EV-e3fb3a8b12b3ba9c",
         "EV-0d5a32aca724d30e",
         "EV-615fbb4de33fad2d",
         "EV-3dd89fab562d16a1",
@@ -79573,6 +79874,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-11a0afc2ecb6e42e",
         "EV-9703abcbede6968a",
         "EV-a964121140e9ef41",
         "EV-9356dd1be92ef5c6",
@@ -79656,6 +79958,7 @@
         "TX-industry-government_public_sector",
         "TX-industry-legal_services",
         "TX-industry-professional_services",
+        "TX-industry-retail_ecommerce",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
@@ -79703,7 +80006,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-19"
     },
     {
       "id": "EN-373da2ec629326c0",
@@ -79720,6 +80023,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-business_user",
@@ -79727,7 +80031,6 @@
         "TX-use_case-physical_automation",
         "TX-industry-aerospace_defense",
         "TX-industry-automotive_transportation",
-        "TX-industry-manufacturing",
         "TX-industry-telecommunications",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
@@ -79812,6 +80115,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
@@ -79832,7 +80136,6 @@
         "TX-industry-government_public_sector",
         "TX-industry-legal_services",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-industry-professional_services",
         "TX-industry-retail_ecommerce",
         "TX-industry-telecommunications"
@@ -79915,6 +80218,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-developer",
@@ -79932,7 +80236,6 @@
         "TX-industry-government_public_sector",
         "TX-industry-legal_services",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-industry-professional_services",
         "TX-industry-retail_ecommerce",
         "TX-industry-telecommunications",
@@ -79961,12 +80264,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-industry-financial_services",
-        "TX-industry-manufacturing",
         "TX-industry-telecommunications",
         "TX-use_case-research_discovery",
         "TX-use_case-software_development",
@@ -80020,11 +80323,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_subcategory-industrials",
         "TX-use_case-procurement_supply_chain"
@@ -80076,9 +80379,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-use_case-physical_automation",
-        "TX-industry-manufacturing",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
       ],
@@ -80334,7 +80637,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-19"
     },
     {
       "id": "EN-770ef1d2b6e24172",
@@ -80383,6 +80686,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-end_user_application",
@@ -80390,7 +80694,6 @@
         "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
         "TX-industry-automotive_transportation",
-        "TX-industry-manufacturing",
         "TX-use_case-design_engineering"
       ],
       "relatedEntityIds": [],
@@ -80580,12 +80883,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-aerospace_defense",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_subcategory-industrials",
         "TX-use_case-design_engineering"
@@ -80788,6 +81091,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
@@ -80795,7 +81099,6 @@
         "TX-technology-agentic_execution",
         "TX-industry-construction_real_estate",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-sales",
         "TX-use_case-design_engineering"
@@ -80901,6 +81204,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-marketing",
@@ -80909,7 +81213,6 @@
         "TX-industry-automotive_transportation",
         "TX-industry-financial_services",
         "TX-industry-food_hospitality",
-        "TX-industry-manufacturing",
         "TX-industry-retail_ecommerce",
         "TX-use_case-data_analysis",
         "TX-product_form-enterprise_software_platform",
@@ -81015,6 +81318,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
         "TX-industry-media_entertainment",
@@ -81032,7 +81336,6 @@
         "TX-industry-government_public_sector",
         "TX-industry-legal_services",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-industry-professional_services",
         "TX-industry-retail_ecommerce",
         "TX-industry-telecommunications",
@@ -81331,6 +81634,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-business_user",
@@ -81338,7 +81642,6 @@
         "TX-use_case-physical_automation",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
       ],
@@ -81637,10 +81940,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-industry-automotive_transportation",
-        "TX-industry-manufacturing",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
       ],
@@ -81663,6 +81966,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-ai_market_category-industry_applications",
@@ -81670,7 +81974,6 @@
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
         "TX-use_case-data_analysis",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-design_engineering"
@@ -81722,10 +82025,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-industry-retail_ecommerce",
         "TX-technology-embodied_ai",
         "TX-ai_market_category-physical_ai",
@@ -81945,11 +82248,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-ai_market_category-enterprise_applications",
         "TX-technology-code_generation",
-        "TX-industry-manufacturing",
         "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_subcategory-software_development_coding"
@@ -82062,6 +82365,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-developer",
@@ -82069,7 +82373,6 @@
         "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
-        "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_application-ai_development_orchestration",
         "TX-ai_market_subcategory-development_deployment"
@@ -82118,10 +82421,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
       ],
@@ -82205,6 +82508,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-developer",
@@ -82223,7 +82527,6 @@
         "TX-industry-government_public_sector",
         "TX-industry-legal_services",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-industry-professional_services",
         "TX-industry-retail_ecommerce",
         "TX-industry-telecommunications",
@@ -82277,6 +82580,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-developer",
@@ -82294,7 +82598,6 @@
         "TX-industry-government_public_sector",
         "TX-industry-legal_services",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-industry-professional_services",
         "TX-industry-retail_ecommerce",
         "TX-industry-telecommunications",
@@ -82352,6 +82655,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
         "TX-industry-media_entertainment",
@@ -82369,7 +82673,6 @@
         "TX-industry-government_public_sector",
         "TX-industry-legal_services",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-industry-professional_services",
         "TX-industry-retail_ecommerce",
         "TX-industry-telecommunications",
@@ -82422,11 +82725,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-product_form-end_user_application",
         "TX-ai_market_category-industry_applications",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-manufacturing",
         "TX-ai_market_subcategory-industrials",
         "TX-use_case-procurement_supply_chain"
       ],
@@ -82619,13 +82922,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
-        "TX-industry-manufacturing",
         "TX-industry-retail_ecommerce",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-procurement_supply_chain"
@@ -82799,11 +83102,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform"
       ],
       "relatedEntityIds": [],
@@ -82825,11 +83128,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-use_case-physical_automation",
         "TX-industry-automotive_transportation",
-        "TX-industry-manufacturing",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
       ],
@@ -82852,12 +83155,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-industry-automotive_transportation",
-        "TX-industry-manufacturing",
         "TX-industry-telecommunications",
         "TX-use_case-software_development",
         "TX-product_form-chip_accelerator",
@@ -83136,12 +83439,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
         "TX-industry-professional_services",
         "TX-industry-retail_ecommerce",
         "TX-product_form-enterprise_software_platform",
@@ -83150,6 +83453,33 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-10",
       "lastSeen": "2026-06-10"
+    },
+    {
+      "id": "EN-8d319684b6042af4",
+      "name": "Ontora",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-83085b0046c7275c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-target_user-business_user",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-use_case-data_analysis",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-knowledge_search"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-08",
+      "lastSeen": "2026-06-09"
     },
     {
       "id": "EN-b10da733dff99be1",
@@ -83281,11 +83611,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_subcategory-industrials",
         "TX-use_case-procurement_supply_chain"
@@ -83617,6 +83947,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
@@ -83629,7 +83960,6 @@
         "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-financial_services",
-        "TX-industry-manufacturing",
         "TX-industry-retail_ecommerce",
         "TX-product_form-ai_compute_system",
         "TX-use_case-research_discovery",
@@ -83690,6 +84020,7 @@
         "EV-ef7346378fcf9746",
         "EV-4da18f97771852a9",
         "EV-f949fd95df58d42d",
+        "EV-a3b61b3529d9cf79",
         "EV-c3231f2ea0ae1ebc",
         "EV-fcbd97e1f30c95e3",
         "EV-5012364af7480121",
@@ -83724,7 +84055,7 @@
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-05-21",
-      "lastSeen": "2026-08-17"
+      "lastSeen": "2026-08-19"
     },
     {
       "id": "EN-8e8cc11d1475231b",
@@ -83856,6 +84187,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
         "TX-industry-media_entertainment",
@@ -83874,7 +84206,6 @@
         "TX-industry-government_public_sector",
         "TX-industry-legal_services",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-industry-professional_services",
         "TX-industry-retail_ecommerce",
         "TX-industry-telecommunications",
@@ -83900,6 +84231,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
         "TX-industry-media_entertainment",
@@ -83908,7 +84240,6 @@
         "TX-use_case-content_creation",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-industry-construction_real_estate",
-        "TX-industry-manufacturing",
         "TX-use_case-design_engineering"
       ],
       "relatedEntityIds": [],
@@ -84364,13 +84695,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-physical_automation",
         "TX-industry-aerospace_defense",
-        "TX-industry-manufacturing",
         "TX-industry-telecommunications",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
@@ -84394,6 +84725,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-ai_market_category-enterprise_applications",
@@ -84404,7 +84736,6 @@
         "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
-        "TX-industry-manufacturing",
         "TX-industry-professional_services",
         "TX-industry-retail_ecommerce",
         "TX-use_case-data_analysis",
@@ -84430,6 +84761,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
         "TX-industry-media_entertainment",
@@ -84449,7 +84781,6 @@
         "TX-industry-government_public_sector",
         "TX-industry-legal_services",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-industry-professional_services",
         "TX-industry-retail_ecommerce",
         "TX-industry-telecommunications"
@@ -84527,10 +84858,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-industry-construction_real_estate",
-        "TX-industry-manufacturing",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
       ],
@@ -84553,6 +84884,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
@@ -84565,7 +84897,6 @@
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
-        "TX-industry-manufacturing",
         "TX-industry-professional_services",
         "TX-industry-telecommunications",
         "TX-product_form-ai_compute_system",
@@ -84679,10 +85010,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-industry-automotive_transportation",
-        "TX-industry-manufacturing",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
       ],
@@ -84708,10 +85039,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-industry-automotive_transportation",
-        "TX-industry-manufacturing",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
@@ -84735,9 +85066,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-use_case-physical_automation",
-        "TX-industry-manufacturing",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
@@ -84762,11 +85093,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-industry-education",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-target_user-researcher",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system",
@@ -84847,10 +85178,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
       ],
@@ -84873,9 +85204,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-use_case-physical_automation",
-        "TX-industry-manufacturing",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
@@ -84901,9 +85232,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-use_case-physical_automation",
-        "TX-industry-manufacturing",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
@@ -84927,10 +85258,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-industry-food_hospitality",
-        "TX-industry-manufacturing",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
       ],
@@ -84953,12 +85284,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-industry-retail_ecommerce",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-procurement_supply_chain"
@@ -85041,10 +85372,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-physical_automation",
-        "TX-industry-manufacturing",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
@@ -85122,13 +85453,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
-        "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform"
       ],
       "relatedEntityIds": [],
@@ -85205,11 +85536,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-product_form-compute_cloud_service",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
         "TX-product_form-ai_compute_system",
         "TX-target_user-researcher",
         "TX-product_form-chip_accelerator",
@@ -85220,7 +85551,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-14",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-19"
     },
     {
       "id": "EN-3474e24464fc25a7",
@@ -85402,10 +85733,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
         "TX-use_case-data_analysis",
         "TX-use_case-security_operations",
         "TX-technology-mixture_of_experts",
@@ -85561,8 +85892,10 @@
         "EV-c0f87b8c5208cd75",
         "EV-53f08daddd011dbb",
         "EV-e1a4bc40db4a9d8f",
+        "EV-b99c318c66e1a295",
         "EV-3d9aa640411471ea",
         "EV-2a833330267cb2df",
+        "EV-7a600ac040c304a2",
         "EV-c87e32451657c301",
         "EV-5fe819e7070b76e6",
         "EV-defb496c46fcc604",
@@ -85640,7 +85973,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-19",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -85771,6 +86104,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-58268b12aa406620",
         "EV-5ac5368309eace1a",
         "EV-b8686b4f41d1aa67",
         "EV-129ffa6be41bb485",
@@ -85797,6 +86131,11 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-05fea7a5d8b8db46",
+        "EV-06e31f68974104ec",
+        "EV-1e7c9d930a2a5d8e",
+        "EV-2430dae13b9f6c82",
+        "EV-5ebbe581dba0caf4",
         "EV-615fbb4de33fad2d",
         "EV-ea2598236eae915f",
         "EV-3acfc317c18e3ef9",
@@ -85971,6 +86310,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-11a0afc2ecb6e42e",
+        "EV-9940dccace747f28",
         "EV-0c00a6c681f22b98",
         "EV-f819309f846d95bc",
         "EV-2902a32e86a4b2d1",
@@ -86066,10 +86407,10 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-d1ad14d4ad57d207",
         "EN-8d4321d936320802",
         "EN-916a98f0fa2a39af",
         "EN-7839fb10a8f14c70",
-        "EN-d1ad14d4ad57d207",
         "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
         "EN-3850792f618f534b",
@@ -86092,7 +86433,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-19"
     },
     {
       "id": "EN-7d1507284a5757ca",
@@ -86473,7 +86814,7 @@
     {
       "id": "HW-304c6370cc157449",
       "eventId": "EV-0121f0a9e9a975ec",
-      "dataDate": "2026-08-18",
+      "dataDate": "2026-08-19",
       "date": "2026-08-14",
       "title": "L&T在钦奈为Together AI部署印度首个10,000-GPU统一AI集群",
       "hardwareType": "gpu",
@@ -86482,10 +86823,10 @@
       "computeLayer": "data_center",
       "supplier": "NVIDIA",
       "customer": "L&T",
-      "processNode": "NVIDIA B300 \"Blackwell Ultra\"",
+      "processNode": "未披露",
       "capacity": 10000,
       "capacityUnit": "GPUs",
-      "site": "Vyoma.AI's Chennai data center campus",
+      "site": "未披露",
       "region": "United States",
       "contractValue": "$1.05 t",
       "shipmentDate": "未披露",
@@ -86667,6 +87008,217 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-aa1ceb06f4e3c084",
+      "snapshotKey": "aa1ceb06f4e3c084",
+      "snapshotId": "HWS-38b4352f56981b1e",
+      "eventId": "EV-0121f0a9e9a975ec",
+      "eventIds": [
+        "EV-0121f0a9e9a975ec"
+      ],
+      "dataDate": "2026-08-19",
+      "date": "2026-08-19",
+      "title": "L&T",
+      "subject": "L&T",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-8ca81c9414ed9612"
+        }
+      },
+      "factCount": 4,
+      "snapshotCount": 6,
+      "changes": [
+        {
+          "date": "2026-08-19",
+          "previousDate": "2026-08-18",
+          "snapshotId": "HWS-38b4352f56981b1e",
+          "previousSnapshotId": "HWS-0d01ffbac2ebc8e6",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        },
+        {
+          "date": "2026-08-18",
+          "previousDate": "2026-08-17",
+          "snapshotId": "HWS-0d01ffbac2ebc8e6",
+          "previousSnapshotId": "HWS-8c1b2e900be4c21d",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        },
+        {
+          "date": "2026-08-17",
+          "previousDate": "2026-08-16",
+          "snapshotId": "HWS-8c1b2e900be4c21d",
+          "previousSnapshotId": "HWS-125fdefffaebda78",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        },
+        {
+          "date": "2026-08-16",
+          "previousDate": "2026-08-15",
+          "snapshotId": "HWS-125fdefffaebda78",
+          "previousSnapshotId": "HWS-4e5bbd28381083d7",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        },
+        {
+          "date": "2026-08-15",
+          "previousDate": "2026-08-14",
+          "snapshotId": "HWS-4e5bbd28381083d7",
+          "previousSnapshotId": "HWS-bfc45ffacb8ee7a7",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-19",
+          "hardware_fact_id": "HWF-152e42ae079223d0",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-13T16:26:39.000Z",
+          "subject_entity_id": "EN-29b9f0cae32e7a8a",
+          "subject_name": "L&T",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "L&T Deploys India’s First 10,000-GPU Unified AI Cluster for Together AI in Chennai",
+          "event_refs": [
+            "EV-0121f0a9e9a975ec"
+          ],
+          "claim_ref": "CL-c025b740280456b8",
+          "source_refs": [
+            "SA-d8d5a553062a5141"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-19/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-19",
+          "hardware_fact_id": "HWF-f6e237a98b46a3d5",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-13T16:26:39.000Z",
+          "subject_entity_id": "EN-29b9f0cae32e7a8a",
+          "subject_name": "L&T",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "1.05",
+          "unit": "$t",
+          "source_quote": "India AI data center deployment reaches a new frontier: L&T has secured a $1.05 to $1.57 billion contract to deploy 10,000 NVIDIA B300 Blackwell Ultra GPUs in a single NVLink-connected cluster at its...",
+          "event_refs": [
+            "EV-0121f0a9e9a975ec"
+          ],
+          "claim_ref": "CL-668a91c9fa732e9b",
+          "source_refs": [
+            "SA-d8d5a553062a5141"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-19/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-19",
+          "hardware_fact_id": "HWF-9ea04007bbc3b44b",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-13T16:26:39.000Z",
+          "subject_entity_id": "EN-29b9f0cae32e7a8a",
+          "subject_name": "L&T",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "10000",
+          "unit": "GPUs",
+          "source_quote": "India's largest engineering conglomerate, Larsen & Toubro, announced today that it has secured a contract worth ₹10,000 crore to ₹15,000 crore (approximately $1.05 billion to $1.57 billion USD) to deploy 10,000 NVIDIA B300 \"Blackwell Ultra\" GPUs in a single interconnected cluster at Vyoma.AI's Chennai data center campus. The customer is Together AI, the San Francisco-based open-source AI cloud provider that crossed $1.15 billion in bookings earlier this year. What makes this deal different from every prior India AI data center announcement is not the dollar figure &mdash; it is the word \"single-cluster.\"A distributed deployment of 10,000 GPUs spread across independently networked servers and a unified single-cluster of 10,000 GPUs connected by a shared NVLink fabric are not the same machine. They are not even close to the same machine. The distinction is the entire editorial point of this article.What \"Single-Cluster\" Actually Means: Architecture, Bandwidth, and What It UnlocksWhen NVIDIA ships the B300 in its DGX B300 server configuration, it packs eight B300 SXM GPUs onto a single baseboard. Those eight GPUs connect to each other through NVLink 5, NVIDIA's proprietary fifth-generation interconnect, which delivers 1.8 terabytes per second of bidirectional bandwidth per GPU. A NVSwitch chip inside the chassis provides full all-to-all connectivity &mdash; any GPU can communicate with any other GPU at the full NVLink bandwidth without going through a slower external network. The complete NVIDIA DGX B300 specifications confirm a total system bandwidth of 14.4 terabytes per second across the eight-GPU node.Now multiply that by 1,250 servers &mdash; the approximate number of DGX B300 nodes required to reach 10,000 GPUs &mdash; and connect them using high-speed inter-node networking. The result is a compute fabric in which all 10,000 GPUs are addressable as a single unified system: jobs can be scheduled across the entire cluster as if it were one giant accelerator, because the NVLink interconnect architecture was designed explicitly to allow that. This is what \"single-cluster\" means, and it is what a disaggregated arrangement of the same GPUs &mdash; spread across separate deployments, different buildings, or independent cloud regions &mdash; cannot replicate.The engineering reason this matters is gradient synchronization. Training a large AI model requires all GPUs to periodically share updated weight gradients through an operation called all-reduce. In a small cluster, this operation is fast. In a large cluster, it becomes the dominant bottleneck &mdash; if the interconnect fabric cannot move gradient data across all nodes quickly enough, GPUs spend more time waiting than computing, and the scaling efficiency of additional hardware collapses. The 14.4 terabytes per second NVLink bandwidth within a DGX node is orders of magnitude faster than even InfiniBand networking between separate servers. The single-cluster designation is NVIDIA's claim that the architecture allows this scaling to work across the full fleet rather than degrading at node boundaries.The practical consequence: a 10,000-GPU single NVLink cluster can run multi-node fine-tuning jobs and large-scale training runs that are simply not feasible on the same number of GPUs in a disaggregated arrangement. Prior India data center announcements &mdash; including Meta's 168-megawatt campus at Jamnagar, Gujarat &mdash; described power capacity and general-purpose compute infrastructure. This one describes a specific interconnect architecture and the class of workloads it enables.The B300 Itself: Memory, Bandwidth, and Why the Upgrade From H100 Is Non-LinearThe NVIDIA B300 &mdash; formally the Blackwell Ultra GPU &mdash; is NVIDIA's current volume-production flagship for data center AI inference and training. A single B300 GPU carries 288 gigabytes of HBM3e memory at 8 terabytes per second of memory bandwidth. An eight-GPU DGX B300 node accordingly holds 2.3 terabytes of total fast GPU memory, enough to run a 405-billion parameter model &mdash; such as Meta's Llama 3.1 405B &mdash; in full 16-bit precision on a single server without splitting the model across nodes. That memory ceiling matters for the agentic and multi-step reasoning workloads Together AI's platform increasingly serves.The performance gap over the previous generation is non-linear. Independent benchmarks from SemiAnalysis InferenceX &mdash; an open-source reproducible benchmark suite running verified results nightly on actual production hardware &mdash; show the B300 delivering more than 4,000 tokens per second per GPU on DeepSeek R1 at a 38 tokens-per-second-per-user latency target, compared to 276 tokens per second per GPU on the H100 &mdash; a roughly 14-fold throughput improvement for that workload. The B300 vs H100 benchmark data also shows cost advantage is larger still: B300 produces tokens at approximately $0.16 per million versus $1.32 per million for the H100 at the same latency, a more than 700 percent cost improvement.At the rack scale, NVIDIA's GB300 NVL72 systems &mdash; 72 Blackwell Ultra GPUs in a single liquid-cooled rack &mdash; deliver up to 50 times higher throughput per megawatt and 35 times lower cost per token compared to NVIDIA's prior Hopper H100 platform for agentic workloads, according to SemiAnalysis InferenceX data cited by NVIDIA. These figures are for the rack-scale NVL72 configuration; individual DGX B300 server performance scales accordingly.Each B300 GPU operates at a thermal design power of 1,400 watts &mdash; nearly double the H100's 700 watts. At 10,000 GPUs, that totals up to 14 megawatts of GPU power alone, before server overhead, networking, and cooling loads are counted. Running this cluster requires purpose-built liquid cooling infrastructure; standard air-cooled data centers cannot manage B300 density at this scale. Vyoma's Chennai campus is designed for 250 megawatts in Phase 1 with 150 MVA of power infrastructure already in place &mdash; the physical plant was engineered for exactly this class of hardware.Together AI: Why a US AI Company Chose India for a Frontier ClusterTogether AI is not a general cloud provider. Founded in 2022 in San Francisco, the company runs an inference and training platform for open-weight AI models &mdash; DeepSeek, MiniMax, Kimi, GLM, and dozens of others &mdash; through an API compatible with OpenAI's interface. The platform processes 400 trillion tokens monthly for developers and enterprise customers. Together AI does not build its own foundation models; its value is the infrastructure that makes other organizations' open-source models cheaper and faster to run than proprietary alternatives.The Chennai cluster is part of a rapid global expansion. Just two days before the L&T announcement, Together AI and IBM disclosed a $240 million multi-year agreement under which IBM Cloud will deploy a large cluster of NVIDIA HGX B300 systems to serve Together AI's inference platform, with availability expected in the first quarter of 2027. Together AI closed an $800 million Series C on July 1, 2026, at an $8.3 billion valuation, with Aramco Ventures as lead investor and NVIDIA among the participants. Together AI CEO Vipul Ved Prakash has described the company's infrastructure buildout as \"the biggest infrastructure build-out in human history.\"The India decision reflects three converging factors that make Chennai specifically attractive for the platform's expansion. First, India's Digital Personal Data Protection Act of 2023, whose implementing rules were finalized in November 2025, creates meaningful compliance incentives for enterprises that can process Indian user data within the country. Indian enterprise customers using Together AI's inference from a Chennai cluster operate under a materially simpler regulatory posture than those routing workloads to US-based data centers. Second, the cost of power, land, and infrastructure in India remains significantly lower than in the United States or Europe, where data center power costs have surged alongside the GPU buildout. Third, India's developer community &mdash; the second-largest contributor to GitHub AI projects globally, according to GitHub's annual developer data &mdash; represents a large and growing demand base for the inference services Together AI offers.L&T's Corporate Architecture for the AI EraThe deal is executed through a newly built corporate structure. In June 2026, Vyoma.AI &mdash; L&T's data center and cloud services subsidiary &mdash; incorporated a wholly owned entity called LTN Compute Private Limited to build out AI compute infrastructure and provide technology-enabled services. LTN Compute is the operating vehicle through which L&T is formally entering what the company calls the \"AI Factory\" business: not just constructing the buildings that house data centers, but owning, operating, and monetizing the GPU infrastructure inside them.L&T separately agreed earlier this week to transfer its data center business to Vyoma.AI for ₹1,400 crore (approximately $147 million USD), consolidating the infrastructure business under Vyoma as its dedicated vehicle. L&T Chairman and Managing Director S N Subrahmanyan framed the Chennai deal in terms of the company's broader infrastructure ambitions: \"Artificial intelligence is becoming foundational to every industry and AI factories will power this transformation. Our deployment of an Nvidia B300 AI factory for Together AI marks a significant milestone in L&T's gigawatt AI infrastructure mission.\"L&T has separately established a broader partnership with NVIDIA to develop gigawatt-scale AI infrastructure across India, including plans to scale GPU clusters at the Chennai campus to 30 megawatts and build a new 40-megawatt facility in Mumbai. The Together AI contract is the first large, signed deployment that turns those plans into hardware.India's AI Compute Race: Where the Chennai Deal FitsIndia's national AI compute program, the IndiaAI Mission, was approved by Cabinet in March 2024 with a funding outlay of ₹10,371 crore (approximately $1.09 billion USD) over five years. As of mid-2026, the program has deployed approximately 34,000 GPUs, accessible to startups, academic researchers, and government agencies at subsidized rates of around ₹65 per GPU-hour (approximately $0.68 USD per GPU-hour). Officials have set a target of 100,000 public GPUs by December 2026, with national GPU capacity &mdash; including private deployments &mdash; expected to exceed 200,000 by year-end.The L&T-Together AI deal, at 10,000 B300 GPUs, represents roughly 29 percent of the IndiaAI Mission's entire public target in a single private deployment. More significantly, B300 GPUs are not equivalent to H100s on a one-to-one basis: the per-GPU performance advantage means 10,000 B300s perform a substantially larger volume of inference work than 10,000 H100s would. The effective compute contribution of this single cluster to India's national AI capacity is materially larger than the raw GPU count suggests.Chennai's emergence as a focal point for this investment is deliberate. The city ranks second among Indian data center markets, contributing approximately 21 percent of the country's total data center capacity, according to Blackridge Research. Equinix opened its Chennai data center in September 2025, specifically citing the city's position near anticipated submarine cable landing sites. The L&T campus at Vyoma operates in the same geography, with a gigawatt-scale site whose Phase 1 capacity is 250 megawatts.Global hyperscalers have made separate India commitments: Microsoft and Amazon targeting $52.5 billion in Indian AI and digital infrastructure; Google announcing a $15 billion AI data hub investment; and OpenAI partnering with Tata Group for one gigawatt of capacity. What the L&T-Together AI deal adds to that picture is different in kind: a US AI cloud provider that specifically serves open-weight model inference &mdash; not proprietary models, not a general cloud &mdash; deploying its most compute-intensive cluster outside the United States in South Asia, under an Indian operating entity. The full landscape of those India hyperscaler commitments provides context for the scale of current investment.The Geography of AI Compute Is ShiftingThe deeper implication of this deal is geographic. Since frontier AI infrastructure emerged as a strategically meaningful asset class, it has been concentrated almost exclusively in the United States, Europe, and parts of East Asia. Data centers in those regions hold the vast majority of the world's most advanced AI compute &mdash; the GPU clusters capable of training and serving the models that define the current frontier of AI capability.The Together AI-L&T contract represents a structural departure from that pattern. A US AI cloud provider of significant scale &mdash; one that crossed $1.15 billion in annual bookings and serves 400 trillion monthly tokens &mdash; has chosen to anchor a portion of its global compute infrastructure in India, under an Indian operator, running the most advanced hardware NVIDIA currently ships in volume. That is not a speculative AI-infrastructure announcement. LTN Compute had not commenced business operations as recently as June 2026. It is now the operating entity behind India's largest single-cluster AI deployment.For Indian enterprise customers evaluating whether to route AI workloads to US-based inference endpoints or a domestic provider, the answer is now materially different than it was last month. The latency advantage of a Chennai cluster over a US-based endpoint &mdash; measured in tens of milliseconds for real-time inference &mdash; is substantial for the interactive and agentic applications Together AI's platform increasingly supports. Together AI has not disclosed a pricing schedule or customer-facing launch date for the Chennai cluster, but the infrastructure is being built now.Currency conversions in this article are approximate, calculated at the USD/INR exchange rate as of August 13, 2026 (approximately ₹95.43 per USD), and are subject to change.Frequently Asked QuestionsWhat is the difference between a single-cluster GPU deployment and a distributed GPU deployment?",
+          "event_refs": [
+            "EV-0121f0a9e9a975ec"
+          ],
+          "claim_ref": "CL-f66805ae9549401a",
+          "source_refs": [
+            "SA-d8d5a553062a5141"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-19/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-19",
+          "hardware_fact_id": "HWF-8ca81c9414ed9612",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-13T16:26:39.000Z",
+          "subject_entity_id": "EN-29b9f0cae32e7a8a",
+          "subject_name": "L&T",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "In a single-cluster deployment, all GPUs are addressable as a unified compute fabric through a shared high-bandwidth interconnect &mdash; in this case, NVIDIA's NVLink architecture. Any GPU in the cluster can communicate directly with any other GPU at full interconnect bandwidth, without routing through slower external networks. In a disaggregated or distributed deployment, GPUs are spread across separate servers or locations connected by standard Ethernet or InfiniBand, which offers much lower bandwidth for the all-reduce gradient-synchronization operations that large AI training runs require. A single-cluster architecture enables training jobs that scale efficiently to tens of thousands of GPUs; a distributed arrangement of the same hardware would degrade in scaling efficiency because the inter-node communication becomes the bottleneck.Why did Together AI choose India for a frontier GPU cluster, and what does this mean for enterprises routing AI workloads from South Asia?",
+          "event_refs": [
+            "EV-0121f0a9e9a975ec"
+          ],
+          "claim_ref": "CL-1f3eb6c8c4c72581",
+          "source_refs": [
+            "SA-d8d5a553062a5141"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-19/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-29b9f0cae32e7a8a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://techtimes.com/articles/324334/20260813/lt-deploys-indias-first-10000-gpu-unified-ai-cluster-together-ai-chennai.htm",
+      "entityIds": [
+        "EN-29b9f0cae32e7a8a",
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00",
+        "EN-6f7ac1823da81d2e",
+        "EN-e1517be14d06cdb7",
+        "EN-7d3194f79e645c42"
+      ]
+    },
+    {
       "id": "HWC-8f8d1fe13179e599",
       "snapshotKey": "8f8d1fe13179e599",
       "snapshotId": "HWS-89be5962dda51d66",
@@ -86727,208 +87279,6 @@
         "EN-d5096fab0e92c370",
         "EN-7cb763a5e1cf9bc7",
         "EN-8d4321d936320802"
-      ]
-    },
-    {
-      "id": "HWC-aa1ceb06f4e3c084",
-      "snapshotKey": "aa1ceb06f4e3c084",
-      "snapshotId": "HWS-0d01ffbac2ebc8e6",
-      "eventId": "EV-0121f0a9e9a975ec",
-      "eventIds": [
-        "EV-0121f0a9e9a975ec"
-      ],
-      "dataDate": "2026-08-18",
-      "date": "2026-08-18",
-      "title": "L&T",
-      "subject": "L&T",
-      "productNames": [],
-      "hardwareType": "gpu",
-      "factTypes": [
-        "shipment_deployment"
-      ],
-      "latestValues": {
-        "shipment_deployment": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-2268ac6216854666"
-        }
-      },
-      "factCount": 4,
-      "snapshotCount": 5,
-      "changes": [
-        {
-          "date": "2026-08-18",
-          "previousDate": "2026-08-17",
-          "snapshotId": "HWS-0d01ffbac2ebc8e6",
-          "previousSnapshotId": "HWS-8c1b2e900be4c21d",
-          "changedFacts": [
-            "shipment_deployment"
-          ]
-        },
-        {
-          "date": "2026-08-17",
-          "previousDate": "2026-08-16",
-          "snapshotId": "HWS-8c1b2e900be4c21d",
-          "previousSnapshotId": "HWS-125fdefffaebda78",
-          "changedFacts": [
-            "shipment_deployment"
-          ]
-        },
-        {
-          "date": "2026-08-16",
-          "previousDate": "2026-08-15",
-          "snapshotId": "HWS-125fdefffaebda78",
-          "previousSnapshotId": "HWS-4e5bbd28381083d7",
-          "changedFacts": [
-            "shipment_deployment"
-          ]
-        },
-        {
-          "date": "2026-08-15",
-          "previousDate": "2026-08-14",
-          "snapshotId": "HWS-4e5bbd28381083d7",
-          "previousSnapshotId": "HWS-bfc45ffacb8ee7a7",
-          "changedFacts": [
-            "shipment_deployment"
-          ]
-        }
-      ],
-      "capacityFacts": [],
-      "supplyFacts": [
-        {
-          "data_date": "2026-08-18",
-          "hardware_fact_id": "HWF-d8242f8408743f7d",
-          "fact_type": "shipment_deployment",
-          "observed_at": "2026-08-13T16:26:39.000Z",
-          "subject_entity_id": "EN-29b9f0cae32e7a8a",
-          "subject_name": "L&T",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "gpu",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "L&T Deploys India’s First 10,000-GPU Unified AI Cluster for Together AI in Chennai",
-          "event_refs": [
-            "EV-0121f0a9e9a975ec"
-          ],
-          "claim_ref": "CL-bb8e79e7bd295ca7",
-          "source_refs": [
-            "SA-d8d5a553062a5141"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-18/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-08-18",
-          "hardware_fact_id": "HWF-ec2bf0b3c5f6b145",
-          "fact_type": "shipment_deployment",
-          "observed_at": "2026-08-13T16:26:39.000Z",
-          "subject_entity_id": "EN-29b9f0cae32e7a8a",
-          "subject_name": "L&T",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "gpu",
-          "metric_value": "1.05",
-          "unit": "$t",
-          "source_quote": "India AI data center deployment reaches a new frontier: L&T has secured a $1.05 to $1.57 billion contract to deploy 10,000 NVIDIA B300 Blackwell Ultra GPUs in a single NVLink-connected cluster at its...",
-          "event_refs": [
-            "EV-0121f0a9e9a975ec"
-          ],
-          "claim_ref": "CL-4220b7d05dc56a89",
-          "source_refs": [
-            "SA-d8d5a553062a5141"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-18/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-08-18",
-          "hardware_fact_id": "HWF-7309f69d43ab0fa4",
-          "fact_type": "shipment_deployment",
-          "observed_at": "2026-08-13T16:26:39.000Z",
-          "subject_entity_id": "EN-29b9f0cae32e7a8a",
-          "subject_name": "L&T",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "gpu",
-          "metric_value": "10000",
-          "unit": "GPUs",
-          "source_quote": "India's largest engineering conglomerate, Larsen & Toubro, announced today that it has secured a contract worth ₹10,000 crore to ₹15,000 crore (approximately $1.05 billion to $1.57 billion USD) to deploy 10,000 NVIDIA B300 \"Blackwell Ultra\" GPUs in a single interconnected cluster at Vyoma.AI's Chennai data center campus. The customer is Together AI, the San Francisco-based open-source AI cloud provider that crossed $1.15 billion in bookings earlier this year. What makes this deal different from every prior India AI data center announcement is not the dollar figure &mdash; it is the word \"single-cluster.\"A distributed deployment of 10,000 GPUs spread across independently networked servers and a unified single-cluster of 10,000 GPUs connected by a shared NVLink fabric are not the same machine. They are not even close to the same machine. The distinction is the entire editorial point of this article.What \"Single-Cluster\" Actually Means: Architecture, Bandwidth, and What It UnlocksWhen NVIDIA ships the B300 in its DGX B300 server configuration, it packs eight B300 SXM GPUs onto a single baseboard. Those eight GPUs connect to each other through NVLink 5, NVIDIA's proprietary fifth-generation interconnect, which delivers 1.8 terabytes per second of bidirectional bandwidth per GPU. A NVSwitch chip inside the chassis provides full all-to-all connectivity &mdash; any GPU can communicate with any other GPU at the full NVLink bandwidth without going through a slower external network. The complete NVIDIA DGX B300 specifications confirm a total system bandwidth of 14.4 terabytes per second across the eight-GPU node.Now multiply that by 1,250 servers &mdash; the approximate number of DGX B300 nodes required to reach 10,000 GPUs &mdash; and connect them using high-speed inter-node networking. The result is a compute fabric in which all 10,000 GPUs are addressable as a single unified system: jobs can be scheduled across the entire cluster as if it were one giant accelerator, because the NVLink interconnect architecture was designed explicitly to allow that. This is what \"single-cluster\" means, and it is what a disaggregated arrangement of the same GPUs &mdash; spread across separate deployments, different buildings, or independent cloud regions &mdash; cannot replicate.The engineering reason this matters is gradient synchronization. Training a large AI model requires all GPUs to periodically share updated weight gradients through an operation called all-reduce. In a small cluster, this operation is fast. In a large cluster, it becomes the dominant bottleneck &mdash; if the interconnect fabric cannot move gradient data across all nodes quickly enough, GPUs spend more time waiting than computing, and the scaling efficiency of additional hardware collapses. The 14.4 terabytes per second NVLink bandwidth within a DGX node is orders of magnitude faster than even InfiniBand networking between separate servers. The single-cluster designation is NVIDIA's claim that the architecture allows this scaling to work across the full fleet rather than degrading at node boundaries.The practical consequence: a 10,000-GPU single NVLink cluster can run multi-node fine-tuning jobs and large-scale training runs that are simply not feasible on the same number of GPUs in a disaggregated arrangement. Prior India data center announcements &mdash; including Meta's 168-megawatt campus at Jamnagar, Gujarat &mdash; described power capacity and general-purpose compute infrastructure. This one describes a specific interconnect architecture and the class of workloads it enables.The B300 Itself: Memory, Bandwidth, and Why the Upgrade From H100 Is Non-LinearThe NVIDIA B300 &mdash; formally the Blackwell Ultra GPU &mdash; is NVIDIA's current volume-production flagship for data center AI inference and training. A single B300 GPU carries 288 gigabytes of HBM3e memory at 8 terabytes per second of memory bandwidth. An eight-GPU DGX B300 node accordingly holds 2.3 terabytes of total fast GPU memory, enough to run a 405-billion parameter model &mdash; such as Meta's Llama 3.1 405B &mdash; in full 16-bit precision on a single server without splitting the model across nodes. That memory ceiling matters for the agentic and multi-step reasoning workloads Together AI's platform increasingly serves.The performance gap over the previous generation is non-linear. Independent benchmarks from SemiAnalysis InferenceX &mdash; an open-source reproducible benchmark suite running verified results nightly on actual production hardware &mdash; show the B300 delivering more than 4,000 tokens per second per GPU on DeepSeek R1 at a 38 tokens-per-second-per-user latency target, compared to 276 tokens per second per GPU on the H100 &mdash; a roughly 14-fold throughput improvement for that workload. The B300 vs H100 benchmark data also shows cost advantage is larger still: B300 produces tokens at approximately $0.16 per million versus $1.32 per million for the H100 at the same latency, a more than 700 percent cost improvement.At the rack scale, NVIDIA's GB300 NVL72 systems &mdash; 72 Blackwell Ultra GPUs in a single liquid-cooled rack &mdash; deliver up to 50 times higher throughput per megawatt and 35 times lower cost per token compared to NVIDIA's prior Hopper H100 platform for agentic workloads, according to SemiAnalysis InferenceX data cited by NVIDIA. These figures are for the rack-scale NVL72 configuration; individual DGX B300 server performance scales accordingly.Each B300 GPU operates at a thermal design power of 1,400 watts &mdash; nearly double the H100's 700 watts. At 10,000 GPUs, that totals up to 14 megawatts of GPU power alone, before server overhead, networking, and cooling loads are counted. Running this cluster requires purpose-built liquid cooling infrastructure; standard air-cooled data centers cannot manage B300 density at this scale. Vyoma's Chennai campus is designed for 250 megawatts in Phase 1 with 150 MVA of power infrastructure already in place &mdash; the physical plant was engineered for exactly this class of hardware.Together AI: Why a US AI Company Chose India for a Frontier ClusterTogether AI is not a general cloud provider. Founded in 2022 in San Francisco, the company runs an inference and training platform for open-weight AI models &mdash; DeepSeek, MiniMax, Kimi, GLM, and dozens of others &mdash; through an API compatible with OpenAI's interface. The platform processes 400 trillion tokens monthly for developers and enterprise customers. Together AI does not build its own foundation models; its value is the infrastructure that makes other organizations' open-source models cheaper and faster to run than proprietary alternatives.The Chennai cluster is part of a rapid global expansion. Just two days before the L&T announcement, Together AI and IBM disclosed a $240 million multi-year agreement under which IBM Cloud will deploy a large cluster of NVIDIA HGX B300 systems to serve Together AI's inference platform, with availability expected in the first quarter of 2027. Together AI closed an $800 million Series C on July 1, 2026, at an $8.3 billion valuation, with Aramco Ventures as lead investor and NVIDIA among the participants. Together AI CEO Vipul Ved Prakash has described the company's infrastructure buildout as \"the biggest infrastructure build-out in human history.\"The India decision reflects three converging factors that make Chennai specifically attractive for the platform's expansion. First, India's Digital Personal Data Protection Act of 2023, whose implementing rules were finalized in November 2025, creates meaningful compliance incentives for enterprises that can process Indian user data within the country. Indian enterprise customers using Together AI's inference from a Chennai cluster operate under a materially simpler regulatory posture than those routing workloads to US-based data centers. Second, the cost of power, land, and infrastructure in India remains significantly lower than in the United States or Europe, where data center power costs have surged alongside the GPU buildout. Third, India's developer community &mdash; the second-largest contributor to GitHub AI projects globally, according to GitHub's annual developer data &mdash; represents a large and growing demand base for the inference services Together AI offers.L&T's Corporate Architecture for the AI EraThe deal is executed through a newly built corporate structure. In June 2026, Vyoma.AI &mdash; L&T's data center and cloud services subsidiary &mdash; incorporated a wholly owned entity called LTN Compute Private Limited to build out AI compute infrastructure and provide technology-enabled services. LTN Compute is the operating vehicle through which L&T is formally entering what the company calls the \"AI Factory\" business: not just constructing the buildings that house data centers, but owning, operating, and monetizing the GPU infrastructure inside them.L&T separately agreed earlier this week to transfer its data center business to Vyoma.AI for ₹1,400 crore (approximately $147 million USD), consolidating the infrastructure business under Vyoma as its dedicated vehicle. L&T Chairman and Managing Director S N Subrahmanyan framed the Chennai deal in terms of the company's broader infrastructure ambitions: \"Artificial intelligence is becoming foundational to every industry and AI factories will power this transformation. Our deployment of an Nvidia B300 AI factory for Together AI marks a significant milestone in L&T's gigawatt AI infrastructure mission.\"L&T has separately established a broader partnership with NVIDIA to develop gigawatt-scale AI infrastructure across India, including plans to scale GPU clusters at the Chennai campus to 30 megawatts and build a new 40-megawatt facility in Mumbai. The Together AI contract is the first large, signed deployment that turns those plans into hardware.India's AI Compute Race: Where the Chennai Deal FitsIndia's national AI compute program, the IndiaAI Mission, was approved by Cabinet in March 2024 with a funding outlay of ₹10,371 crore (approximately $1.09 billion USD) over five years. As of mid-2026, the program has deployed approximately 34,000 GPUs, accessible to startups, academic researchers, and government agencies at subsidized rates of around ₹65 per GPU-hour (approximately $0.68 USD per GPU-hour). Officials have set a target of 100,000 public GPUs by December 2026, with national GPU capacity &mdash; including private deployments &mdash; expected to exceed 200,000 by year-end.The L&T-Together AI deal, at 10,000 B300 GPUs, represents roughly 29 percent of the IndiaAI Mission's entire public target in a single private deployment. More significantly, B300 GPUs are not equivalent to H100s on a one-to-one basis: the per-GPU performance advantage means 10,000 B300s perform a substantially larger volume of inference work than 10,000 H100s would. The effective compute contribution of this single cluster to India's national AI capacity is materially larger than the raw GPU count suggests.Chennai's emergence as a focal point for this investment is deliberate. The city ranks second among Indian data center markets, contributing approximately 21 percent of the country's total data center capacity, according to Blackridge Research. Equinix opened its Chennai data center in September 2025, specifically citing the city's position near anticipated submarine cable landing sites. The L&T campus at Vyoma operates in the same geography, with a gigawatt-scale site whose Phase 1 capacity is 250 megawatts.Global hyperscalers have made separate India commitments: Microsoft and Amazon targeting $52.5 billion in Indian AI and digital infrastructure; Google announcing a $15 billion AI data hub investment; and OpenAI partnering with Tata Group for one gigawatt of capacity. What the L&T-Together AI deal adds to that picture is different in kind: a US AI cloud provider that specifically serves open-weight model inference &mdash; not proprietary models, not a general cloud &mdash; deploying its most compute-intensive cluster outside the United States in South Asia, under an Indian operating entity. The full landscape of those India hyperscaler commitments provides context for the scale of current investment.The Geography of AI Compute Is ShiftingThe deeper implication of this deal is geographic. Since frontier AI infrastructure emerged as a strategically meaningful asset class, it has been concentrated almost exclusively in the United States, Europe, and parts of East Asia. Data centers in those regions hold the vast majority of the world's most advanced AI compute &mdash; the GPU clusters capable of training and serving the models that define the current frontier of AI capability.The Together AI-L&T contract represents a structural departure from that pattern. A US AI cloud provider of significant scale &mdash; one that crossed $1.15 billion in annual bookings and serves 400 trillion monthly tokens &mdash; has chosen to anchor a portion of its global compute infrastructure in India, under an Indian operator, running the most advanced hardware NVIDIA currently ships in volume. That is not a speculative AI-infrastructure announcement. LTN Compute had not commenced business operations as recently as June 2026. It is now the operating entity behind India's largest single-cluster AI deployment.For Indian enterprise customers evaluating whether to route AI workloads to US-based inference endpoints or a domestic provider, the answer is now materially different than it was last month. The latency advantage of a Chennai cluster over a US-based endpoint &mdash; measured in tens of milliseconds for real-time inference &mdash; is substantial for the interactive and agentic applications Together AI's platform increasingly supports. Together AI has not disclosed a pricing schedule or customer-facing launch date for the Chennai cluster, but the infrastructure is being built now.Currency conversions in this article are approximate, calculated at the USD/INR exchange rate as of August 13, 2026 (approximately ₹95.43 per USD), and are subject to change.Frequently Asked QuestionsWhat is the difference between a single-cluster GPU deployment and a distributed GPU deployment?",
-          "event_refs": [
-            "EV-0121f0a9e9a975ec"
-          ],
-          "claim_ref": "CL-99c4db10eecc8046",
-          "source_refs": [
-            "SA-d8d5a553062a5141"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-18/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-08-18",
-          "hardware_fact_id": "HWF-2268ac6216854666",
-          "fact_type": "shipment_deployment",
-          "observed_at": "2026-08-13T16:26:39.000Z",
-          "subject_entity_id": "EN-29b9f0cae32e7a8a",
-          "subject_name": "L&T",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "gpu",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "In a single-cluster deployment, all GPUs are addressable as a unified compute fabric through a shared high-bandwidth interconnect &mdash; in this case, NVIDIA's NVLink architecture. Any GPU in the cluster can communicate directly with any other GPU at full interconnect bandwidth, without routing through slower external networks. In a disaggregated or distributed deployment, GPUs are spread across separate servers or locations connected by standard Ethernet or InfiniBand, which offers much lower bandwidth for the all-reduce gradient-synchronization operations that large AI training runs require. A single-cluster architecture enables training jobs that scale efficiently to tens of thousands of GPUs; a distributed arrangement of the same hardware would degrade in scaling efficiency because the inter-node communication becomes the bottleneck.Why did Together AI choose India for a frontier GPU cluster, and what does this mean for enterprises routing AI workloads from South Asia?",
-          "event_refs": [
-            "EV-0121f0a9e9a975ec"
-          ],
-          "claim_ref": "CL-4b9800d9d76b1990",
-          "source_refs": [
-            "SA-d8d5a553062a5141"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-18/hardware-facts.json"
-        }
-      ],
-      "specificationFacts": [],
-      "capexFacts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-29b9f0cae32e7a8a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重",
-          "entityIds": [
-            "EN-29b9f0cae32e7a8a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "fine_tuning",
-          "name": "模型微调",
-          "entityIds": [
-            "EN-29b9f0cae32e7a8a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "sourceUrl": "https://techtimes.com/articles/324334/20260813/lt-deploys-indias-first-10000-gpu-unified-ai-cluster-together-ai-chennai.htm",
-      "entityIds": [
-        "EN-29b9f0cae32e7a8a",
-        "EN-8d4321d936320802",
-        "EN-ea3bd73e2b506e00",
-        "EN-6f7ac1823da81d2e",
-        "EN-e1517be14d06cdb7",
-        "EN-7d3194f79e645c42"
       ]
     },
     {

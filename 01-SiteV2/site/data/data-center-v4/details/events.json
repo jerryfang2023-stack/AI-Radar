@@ -5,13 +5,130 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-18T00:24:57.421Z",
-    "latestDataDate": "2026-08-18",
-    "currentDate": "2026-08-18",
-    "eventCount": 2199,
+    "generatedAt": "2026-08-19T02:05:03.499Z",
+    "latestDataDate": "2026-08-19",
+    "currentDate": "2026-08-19",
+    "eventCount": 2220,
     "quarantinedEventCount": 19
   },
   "events": [
+    {
+      "id": "EV-2f87750c33ee2d80",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-19",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "韩美半导体收购史上最大工厂用地，备战AI驱动需求 - MK",
+      "originalTitle": "HANMI Semiconductor Acquires Its Largest-Ever Factory Site to Prepare for AI-Driven Demand - MK",
+      "subject": "HANMI Semiconductor",
+      "action": "Acquires",
+      "object": "Its Largest-Ever Factory Site to Prepare for AI-Driven Demand - MK",
+      "metrics": [
+        "130 billion",
+        "56 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-2733b0272eaa721d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-2733b0272eaa721d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-2733b0272eaa721d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-2733b0272eaa721d"
+      ],
+      "entityNames": [
+        "HANMI Semiconductor"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-28a5ecb7d8416211",
+          "subject": "HANMI Semiconductor",
+          "object": "Its Largest-Ever Factory Site to Prepare for AI-Driven Demand - MK",
+          "quote": "HANMI Semiconductor Acquires Its Largest-Ever Factory Site to Prepare for AI-Driven Demand"
+        },
+        {
+          "id": "CL-2965a938321e41c6",
+          "subject": "HANMI Semiconductor",
+          "object": "Its Largest-Ever Factory Site to Prepare for AI-Driven Demand - MK",
+          "quote": "HANMI Semiconductor Co., Ltd. said on the 18th that it will secure the largest factory site in its history to respond to rising demand for AI semiconductor equipment. The company will expand production capacity not only for bonders used in HBM, but also for advanced packaging equipment. It plans to acquire a 6,230-pyeong factory in the Juan National Industrial Complex in Incheon from MERCURY CORPORATION and develop it as its eighth plant. It is the largest factory among those the company owns."
+        },
+        {
+          "id": "CL-8b906fcda13da1a3",
+          "subject": "HANMI Semiconductor",
+          "object": "Its Largest-Ever Factory Site to Prepare for AI-Driven Demand - MK",
+          "quote": "A total of 130 billion won will be invested in Plant 8, including 56 billion won for the factory purchase. After remodeling and building advanced production infrastructure, mass production is scheduled to begin in the second quarter of next year. HANMI Semiconductor Co., Ltd. chose to buy an existing factory, considering that building a new plant would take a significant amount of time."
+        },
+        {
+          "id": "CL-f977f9150d474feb",
+          "subject": "HANMI Semiconductor",
+          "object": "Its Largest-Ever Factory Site to Prepare for AI-Driven Demand - MK",
+          "quote": "This article has been translated by GripLabs Mingo AI."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-5ab26fe7e66fe40a",
+          "publisher": "mk.co.kr",
+          "url": "https://mk.co.kr/en/business/12130487"
+        }
+      ],
+      "sourceUrl": "https://mk.co.kr/en/business/12130487",
+      "publisher": "mk.co.kr",
+      "sourceExcerpt": "HANMI Semiconductor Acquires Its Largest-Ever Factory Site to Prepare for AI-Driven Demand"
+    },
     {
       "id": "EV-181cd28d97c4e61d",
       "dataDate": "2026-08-18",
@@ -6839,9 +6956,9 @@
     },
     {
       "id": "EV-c1295b8f58024ff6",
-      "dataDate": "2026-08-18",
+      "dataDate": "2026-08-19",
       "date": "2026-08-08",
-      "updatedDate": "2026-08-18",
+      "updatedDate": "2026-08-19",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
@@ -6861,17 +6978,6 @@
       "missingFields": [],
       "conflicts": [],
       "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-249fdefbb63fa7b3"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
@@ -7244,33 +7350,21 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-c08a15b3b19e9269",
+          "id": "CL-de665980c7e03cab",
           "subject": "Lemma",
           "object": "$2.3M pre-seed to catch AI agents that fail silently | Dealroom News",
           "quote": "News › Lemma raises $2.3M pre-seed to catch AI agents that fail sil…"
         },
         {
-          "id": "CL-255b83ac18fedacb",
+          "id": "CL-4850f46a01eb0200",
           "subject": "Lemma",
           "object": "$2.3M pre-seed to catch AI agents that fail silently | Dealroom News",
           "quote": "Lemma Dealroom has a profile for this one. Try Dealroom → , an AI agent reliability startup, has raised $2.3 million in pre-seed funding to build monitoring infrastructure that catches agents which appear to complete a task while quietly producing the wrong result. Matrix Dealroom has a profile for this one. Try Dealroom → , Y Combinator , Liquid 2 Ventures , Vermilion Cliffs Ventures Dealroom has a profile for this one. Try Dealroom → , Irregular Expressions Dealroom has a profile for this one. Try Dealroom → , Cervin Ventures Dealroom has a profile for this one. Try Dealroom → , Comma Capital Dealroom has a profile for this one. Try Dealroom → , Position Ventures Dealroom has a profile for…"
-        },
-        {
-          "id": "CL-09bf56a0283a0f8c",
-          "subject": "Lemma",
-          "object": "$2.3M pre-seed to catch AI agents that fail silently | Dealroom News",
-          "quote": "Founded by Jerry Zhang and Cole Gawin, Lemma builds production monitoring for AI agents. Its platform has processed more than one million agent traces."
-        },
-        {
-          "id": "CL-c52d28bf619f1947",
-          "subject": "Lemma",
-          "object": "$2.3M pre-seed to catch AI agents that fail silently | Dealroom News",
-          "quote": "What could go wrong?"
         }
       ],
       "sources": [
         {
-          "id": "SA-8d83e7debf4c4b3f",
+          "id": "SA-f331caf2e22451f0",
           "publisher": "dealroom.co",
           "url": "https://dealroom.co/news/143810-lemma-raises-2-3m-pre-seed-to-catch-ai-agents-that-fail-silently"
         }
@@ -91670,6 +91764,327 @@
       "sourceExcerpt": "Archestra.AI raises $10M to unlock next-gen agentic use case"
     },
     {
+      "id": "EV-83085b0046c7275c",
+      "dataDate": "2026-06-08",
+      "date": "2026-06-09",
+      "updatedDate": "2026-08-18",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "企业级 AI 平台 Ontora 已融资 70 万美元",
+      "originalTitle": "Ontora Raised $700K for Its Enterprise AI Platform Before Officially Opening Its Round",
+      "subject": "Ontora",
+      "action": "Raised",
+      "object": "$700K for Its Enterprise AI Platform Before Officially Opening Its Round",
+      "metrics": [
+        "$700K"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "EN-8d319684b6042af4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1232bafb650c8314",
+            "fundingInsightId": "FI-e662dfe79c490abb"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-8d319684b6042af4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9f1961034a962a11",
+            "fundingInsightId": "FI-e662dfe79c490abb"
+          }
+        ],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-8d319684b6042af4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-87d6ea22e6f10e77",
+            "fundingInsightId": "FI-e662dfe79c490abb"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "EN-8d319684b6042af4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1e19c3c29931e883",
+            "fundingInsightId": "FI-e662dfe79c490abb"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "knowledge_search",
+            "name": "知识与搜索",
+            "entityIds": [
+              "EN-8d319684b6042af4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-fc007782d524d59d",
+            "fundingInsightId": "FI-e662dfe79c490abb"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-8d319684b6042af4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f9a58c63f4c1eaca",
+            "fundingInsightId": "FI-e662dfe79c490abb"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-8d319684b6042af4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-32b9d508ed98578c",
+            "fundingInsightId": "FI-e662dfe79c490abb"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1232bafb650c8314",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9f1961034a962a11",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-87d6ea22e6f10e77",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-32b9d508ed98578c",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1e19c3c29931e883",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "knowledge_search",
+          "name": "知识与搜索",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fc007782d524d59d",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f9a58c63f4c1eaca",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1232bafb650c8314",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9f1961034a962a11",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-87d6ea22e6f10e77",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1e19c3c29931e883",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "knowledge_search",
+          "name": "知识与搜索",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fc007782d524d59d",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f9a58c63f4c1eaca",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-8d319684b6042af4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-32b9d508ed98578c",
+          "fundingInsightId": "FI-e662dfe79c490abb"
+        }
+      ],
+      "entityIds": [
+        "EN-8d319684b6042af4"
+      ],
+      "entityNames": [
+        "Ontora"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-f4f57970e2af81bc",
+          "subject": "Ontora",
+          "object": "$700K for Its Enterprise AI Platform Before Officially Opening Its Round",
+          "quote": "- $700K raised before officially opening our round"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-dd60953f8f523acf",
+          "publisher": "Y Combinator",
+          "url": "https://www.ycombinator.com/launches/QiD-ontora-the-discovery-layer-for-ai-transformation"
+        }
+      ],
+      "sourceUrl": "https://www.ycombinator.com/launches/QiD-ontora-the-discovery-layer-for-ai-transformation",
+      "publisher": "Y Combinator",
+      "sourceExcerpt": "- $700K raised before officially opening our round"
+    },
+    {
       "id": "EV-72e7f5cf283f16b8",
       "dataDate": "2026-07-14",
       "date": "2026-06-09",
@@ -128399,6 +128814,83 @@
       "sourceExcerpt": "Press release: New Conversational AI Company Front AI Raises €500k in Seed Funding"
     },
     {
+      "id": "EV-9fa7757568f0524e",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-19",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "仙人掌获MeitY合同，构建AI招标撰写平台",
+      "originalTitle": "Cactus Wins MeitY Contract To Build AI Tender Authoring Platform",
+      "subject": "Cactus Wins MeitY Contract To Build AI",
+      "action": "Tender",
+      "object": "Authoring Platform",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "entities",
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-505d539de7621ae4",
+          "subject": "Cactus Wins MeitY Contract To Build AI",
+          "object": "Authoring Platform",
+          "quote": "Cactus Wins MeitY Contract To Build AI Tender Authoring Platform"
+        },
+        {
+          "id": "CL-04c72c6b7851bbfc",
+          "subject": "Cactus Wins MeitY Contract To Build AI",
+          "object": "Authoring Platform",
+          "quote": "Cactus Wins MeitY Contract To Build AI Tender Authoring Platform"
+        },
+        {
+          "id": "CL-f1360a802694d073",
+          "subject": "Cactus Wins MeitY Contract To Build AI",
+          "object": "Authoring Platform",
+          "quote": "Cactus Wins MeitY Contract To Build AI Tender Authoring Platform"
+        },
+        {
+          "id": "CL-1d707f85e0a7f828",
+          "subject": "Cactus Wins MeitY Contract To Build AI",
+          "object": "Authoring Platform",
+          "quote": "Mumbai-based Cactus Technology Solutions has been awarded a contract by the National e-Governance Division (NeGD) under the IT Ministry to build an artificial intelligence powered procurement authoring platform. The platform is intended to assist officials across ministries and departments to draft, review and standardise requests for proposal, requests for quotation, expressions of interest and other procurement documents while retaining human oversight. Official records show Cactus topped the quality and cost based selection evaluation with a score of 100 and was declared H1."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-cffe6ae13b6d08f3",
+          "publisher": "constructionworld.in",
+          "url": "https://constructionworld.in/policy-updates-and-economic-news/cactus-wins-meity-contract-to-build-ai-tender-authoring-platform/94631"
+        }
+      ],
+      "sourceUrl": "https://constructionworld.in/policy-updates-and-economic-news/cactus-wins-meity-contract-to-build-ai-tender-authoring-platform/94631",
+      "publisher": "constructionworld.in",
+      "sourceExcerpt": "Cactus Wins MeitY Contract To Build AI Tender Authoring Platform"
+    },
+    {
       "id": "EV-34ed8f760205fbb7",
       "dataDate": "2026-08-18",
       "date": "2026-08-18",
@@ -129487,9 +129979,9 @@
     },
     {
       "id": "EV-0121f0a9e9a975ec",
-      "dataDate": "2026-08-18",
+      "dataDate": "2026-08-19",
       "date": "2026-08-14",
-      "updatedDate": "2026-08-18",
+      "updatedDate": "2026-08-19",
       "eventType": "hardware_deployment",
       "eventTypeLabel": "硬件部署",
       "eventGroup": "AI 硬件",
@@ -129954,25 +130446,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-bb8e79e7bd295ca7",
+          "id": "CL-c025b740280456b8",
           "subject": "L&T",
           "object": "for Together AI in Chennai",
           "quote": "L&T Deploys India’s First 10,000-GPU Unified AI Cluster for Together AI in Chennai"
         },
         {
-          "id": "CL-4220b7d05dc56a89",
+          "id": "CL-668a91c9fa732e9b",
           "subject": "L&T",
           "object": "for Together AI in Chennai",
           "quote": "India AI data center deployment reaches a new frontier: L&T has secured a $1.05 to $1.57 billion contract to deploy 10,000 NVIDIA B300 Blackwell Ultra GPUs in a single NVLink-connected cluster at its..."
         },
         {
-          "id": "CL-99c4db10eecc8046",
+          "id": "CL-f66805ae9549401a",
           "subject": "L&T",
           "object": "for Together AI in Chennai",
           "quote": "India's largest engineering conglomerate, Larsen & Toubro, announced today that it has secured a contract worth ₹10,000 crore to ₹15,000 crore (approximately $1.05 billion to $1.57 billion USD) to deploy 10,000 NVIDIA B300 \"Blackwell Ultra\" GPUs in a single interconnected cluster at Vyoma.AI's Chennai data center campus. The customer is Together AI, the San Francisco-based open-source AI cloud provider that crossed $1.15 billion in bookings earlier this year. What makes this deal different from every prior India AI data center announcement is not the dollar figure &mdash; it is the word \"single-cluster.\"A distributed deployment of 10,000 GPUs spread across independently networked servers and…"
         },
         {
-          "id": "CL-4b9800d9d76b1990",
+          "id": "CL-1f3eb6c8c4c72581",
           "subject": "L&T",
           "object": "for Together AI in Chennai",
           "quote": "In a single-cluster deployment, all GPUs are addressable as a unified compute fabric through a shared high-bandwidth interconnect &mdash; in this case, NVIDIA's NVLink architecture. Any GPU in the cluster can communicate directly with any other GPU at full interconnect bandwidth, without routing through slower external networks. In a disaggregated or distributed deployment, GPUs are spread across separate servers or locations connected by standard Ethernet or InfiniBand, which offers much lower bandwidth for the all-reduce gradient-synchronization operations that large AI training runs require. A single-cluster architecture enables training jobs that scale efficiently to tens of thousands of…"
@@ -131140,83 +131632,6 @@
       "sourceUrl": "https://ithome.com/0/987/901.htm",
       "publisher": "IT之家（RSS）",
       "sourceExcerpt": "其位于亚美尼亚赫拉兹丹 (Hrazdan) 的全独联体 (CIS) 区域最大 AI 工厂正式投运"
-    },
-    {
-      "id": "EV-9fa7757568f0524e",
-      "dataDate": "2026-08-10",
-      "date": "2026-08-10",
-      "updatedDate": "2026-08-10",
-      "eventType": "procurement_contract",
-      "eventTypeLabel": "采购合同",
-      "eventGroup": "商业合作",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "仙人掌获MeitY合同，构建AI招标撰写平台",
-      "originalTitle": "Cactus Wins MeitY Contract To Build AI Tender Authoring Platform",
-      "subject": "Cactus Wins MeitY Contract To Build AI",
-      "action": "Tender",
-      "object": "Authoring Platform",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [
-        "entities",
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [],
-      "entityNames": [],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-62489bf73ce7aa44",
-          "subject": "Cactus Wins MeitY Contract To Build AI",
-          "object": "Authoring Platform",
-          "quote": "Cactus Wins MeitY Contract To Build AI Tender Authoring Platform"
-        },
-        {
-          "id": "CL-b291f724f40b7aa7",
-          "subject": "Cactus Wins MeitY Contract To Build AI",
-          "object": "Authoring Platform",
-          "quote": "Cactus Wins MeitY Contract To Build AI Tender Authoring Platform"
-        },
-        {
-          "id": "CL-c6127b43790e3e74",
-          "subject": "Cactus Wins MeitY Contract To Build AI",
-          "object": "Authoring Platform",
-          "quote": "Cactus Wins MeitY Contract To Build AI Tender Authoring Platform"
-        },
-        {
-          "id": "CL-b564bb5b27836b84",
-          "subject": "Cactus Wins MeitY Contract To Build AI",
-          "object": "Authoring Platform",
-          "quote": "Mumbai-based Cactus Technology Solutions has been awarded a contract by the National e-Governance Division (NeGD) under the IT Ministry to build an artificial intelligence powered procurement authoring platform. The platform is intended to assist officials across ministries and departments to draft, review and standardise requests for proposal, requests for quotation, expressions of interest and other procurement documents while retaining human oversight. Official records show Cactus topped the quality and cost based selection evaluation with a score of 100 and was declared H1."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-2a5bf3857465a2fb",
-          "publisher": "constructionworld.in",
-          "url": "https://constructionworld.in/policy-updates-and-economic-news/cactus-wins-meity-contract-to-build-ai-tender-authoring-platform/94631"
-        }
-      ],
-      "sourceUrl": "https://constructionworld.in/policy-updates-and-economic-news/cactus-wins-meity-contract-to-build-ai-tender-authoring-platform/94631",
-      "publisher": "constructionworld.in",
-      "sourceExcerpt": "Cactus Wins MeitY Contract To Build AI Tender Authoring Platform"
     },
     {
       "id": "EV-3c99948342b171fa",
@@ -155514,6 +155929,225 @@
       "sourceExcerpt": "The General Services Administration has struck a new agentic artificial intelligence OneGov deal with CORAS"
     },
     {
+      "id": "EV-58268b12aa406620",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-18",
+      "updatedDate": "2026-08-19",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "OpenAI 与 CodeAI 合作推出 ChatGPT 青少年版，内置学习模式与家长控制",
+      "originalTitle": "",
+      "subject": "OpenAI 与 CodeAI",
+      "action": "合作",
+      "object": "推出 ChatGPT 青少年版，内置学习模式与家长控制",
+      "metrics": [],
+      "locations": [
+        "美国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "student",
+            "name": "学生",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "educator",
+            "name": "教师",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "student",
+          "name": "学生",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "educator",
+          "name": "教师",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "student",
+          "name": "学生",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "educator",
+          "name": "教师",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-d747d1562d541b5c"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "CodeAI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-0971b05e48ce3781",
+          "subject": "OpenAI 与 CodeAI",
+          "object": "推出 ChatGPT 青少年版，内置学习模式与家长控制",
+          "quote": "IT之家 8 月 18 日消息，OpenAI 今日宣布与教育科技机构 CodeAI 达成合作，双方将共同推进面向学生和教师的 AI 教育项目，帮助年轻人理解 AI 工作原理、提升 AI 素养，并学习如何负责任地使用相关工具。"
+        },
+        {
+          "id": "CL-6b1d12df37ab2c02",
+          "subject": "OpenAI 与 CodeAI",
+          "object": "推出 ChatGPT 青少年版，内置学习模式与家长控制",
+          "quote": "此次合作与 OpenAI 推出 ChatGPT for Teens 同步进行。"
+        },
+        {
+          "id": "CL-db679ce940f33f46",
+          "subject": "OpenAI 与 CodeAI",
+          "object": "推出 ChatGPT 青少年版，内置学习模式与家长控制",
+          "quote": "该项目也延续了 OpenAI 在 ChatGPT for Teachers 方面的工作，以及与美国教师联合会合作推进 AI 技能培养的相关计划。"
+        },
+        {
+          "id": "CL-e2e83327dfc735fc",
+          "subject": "OpenAI 与 CodeAI",
+          "object": "推出 ChatGPT 青少年版，内置学习模式与家长控制",
+          "quote": "OpenAI 表示，与 CodeAI 的合作重点并非单纯推广 AI 工具，而是围绕 AI 教育展开，帮助学生理解 AI 的工作方式，学习如何引导 AI、质疑 AI 输出，并利用 AI 进行创作，同时让教师在 AI 进入课堂的过程中发挥重要作用。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-7ef47ecd85997f1f",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/991/297.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/991/297.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "IT之家 8 月 18 日消息，OpenAI 今日宣布与教育科技机构 CodeAI 达成合作，双方将共同推进面向学生和教师的 AI 教育项目，帮助年轻人理解 AI 工作原理、提升 AI 素养，并学习如何负责任地使用相关工具。"
+    },
+    {
+      "id": "EV-b99c318c66e1a295",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-18",
+      "updatedDate": "2026-08-19",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "阿里千问办公接入企业微信，已覆盖钉钉、飞书等国内主流办公平台",
+      "originalTitle": "",
+      "subject": "阿里千问办公",
+      "action": "接入",
+      "object": "企业微信，已覆盖钉钉、飞书等国内主流办公平台",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-1f0705234e1c6260",
+        "EN-047364b9be67f665"
+      ],
+      "entityNames": [
+        "阿里千问办公",
+        "Alibaba"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-dd9f3ab79d6bb17d",
+          "subject": "阿里千问办公",
+          "object": "企业微信，已覆盖钉钉、飞书等国内主流办公平台",
+          "quote": "阿里千问办公接入企业微信，此前已接入钉钉、飞书等国产办公平台 - IT之家"
+        },
+        {
+          "id": "CL-8aa4c8bc2ac4c280",
+          "subject": "阿里千问办公",
+          "object": "企业微信，已覆盖钉钉、飞书等国内主流办公平台",
+          "quote": "阿里千问办公接入企业微信，此前已接入钉钉、飞书等国产办公平台"
+        },
+        {
+          "id": "CL-59efdf104c7da55a",
+          "subject": "阿里千问办公",
+          "object": "企业微信，已覆盖钉钉、飞书等国内主流办公平台",
+          "quote": "IT之家 8 月 18 日消息，阿里千问办公今天起正式接入企业微信。"
+        },
+        {
+          "id": "CL-6ae78996c8e9c1ea",
+          "subject": "阿里千问办公",
+          "object": "企业微信，已覆盖钉钉、飞书等国内主流办公平台",
+          "quote": "据介绍， 千问办公目前可通过网页接入企业微信 ， 客户端版本即将上线 。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-f2f0604f1cfbafaa",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/991/128.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/991/128.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "阿里千问办公接入企业微信，此前已接入钉钉、飞书等国产办公平台 - IT之家"
+    },
+    {
       "id": "EV-323d98437e42e8b3",
       "dataDate": "2026-08-18",
       "date": "2026-08-18",
@@ -172526,6 +173160,1550 @@
       "sourceExcerpt": "Stellantis and Mistral AI Expand Their Collaboration to Accelerate Enterprise-Wide AI Adoption"
     },
     {
+      "id": "EV-2c6707327367640f",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-19",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Cerebras 推出 WSE-3 Turbo 芯片与 CS-4 系统：10 倍词元容量、2 倍速度",
+      "originalTitle": "",
+      "subject": "Cerebras",
+      "action": "推出 WSE-3 Turbo 芯片",
+      "object": "与 CS-4 系统：10 倍词元容量、2 倍速度",
+      "metrics": [
+        "90 万",
+        "44GB"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化",
+          "entityIds": [
+            "EN-77b30b8a88051252"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化",
+          "entityIds": [
+            "EN-77b30b8a88051252"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化",
+          "entityIds": [
+            "EN-77b30b8a88051252"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-77b30b8a88051252",
+        "EN-49dba228d91e7180",
+        "EN-6eb8882ab15df1c2"
+      ],
+      "entityNames": [
+        "Cerebras",
+        "CS-4",
+        "WSE-3 Turbo"
+      ],
+      "productName": "CS-4",
+      "products": [
+        {
+          "name": "CS-4",
+          "type": "AI 硬件",
+          "ownerNames": []
+        },
+        {
+          "name": "WSE-3 Turbo",
+          "type": "AI 硬件",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-08f43b3ecd18805c",
+          "subject": "Cerebras",
+          "object": "与 CS-4 系统：10 倍词元容量、2 倍速度",
+          "quote": "10 倍词元容量：Cerebras 推出 WSE-3 Turbo 芯片与 CS-4 系统 - IT之家"
+        },
+        {
+          "id": "CL-edf916afb991a3e5",
+          "subject": "Cerebras",
+          "object": "与 CS-4 系统：10 倍词元容量、2 倍速度",
+          "quote": "10 倍词元容量：Cerebras 推出 WSE-3 Turbo 芯片与 CS-4 系统"
+        },
+        {
+          "id": "CL-85a4e31e93d7994f",
+          "subject": "Cerebras",
+          "object": "与 CS-4 系统：10 倍词元容量、2 倍速度",
+          "quote": "IT之家 8 月 19 日消息，晶圆级 AI 推理加速器制造商 Cerebras 当地时间 18 日宣布推出其新一代芯片 WSE-3 Turbo 和基于该芯片的 CS-4 系统。"
+        },
+        {
+          "id": "CL-4098acb846fc701b",
+          "subject": "Cerebras",
+          "object": "与 CS-4 系统：10 倍词元容量、2 倍速度",
+          "quote": "与此前的 WSE-3 类似，WSE-3 Turbo 集成了 90 万个核心和 44GB SRAM 片上缓存，但 其 FP16 稀疏 AI 算力、内存带宽、片上互联带宽、I/O 带宽均实现翻倍 。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-08dab066650882b1",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/991/418.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/991/418.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "10 倍词元容量：Cerebras 推出 WSE-3 Turbo 芯片与 CS-4 系统 - IT之家"
+    },
+    {
+      "id": "EV-3a4acc92731cb5ac",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-19",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Anthropic 推出 AI 文本水印后，各类去水印工具开始涌现",
+      "originalTitle": "",
+      "subject": "Anthropic",
+      "action": "推出",
+      "object": "AI 文本水印后，各类去水印工具开始涌现",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-c70eca6b0f88f44d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-c70eca6b0f88f44d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-c70eca6b0f88f44d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-23d857dce8970fd6",
+          "subject": "Anthropic",
+          "object": "AI 文本水印后，各类去水印工具开始涌现",
+          "quote": "IT之家注意到，来自巴黎的科技创业者、AI 电商工具 Memo 创始人 Guillaume Meyer，在 Anthropic 宣布相关计划几天后，就发布了一个名为“Watermarks Remover”的开源项目。"
+        },
+        {
+          "id": "CL-56a1647a3dad9f8f",
+          "subject": "Anthropic",
+          "object": "AI 文本水印后，各类去水印工具开始涌现",
+          "quote": "与此同时，常驻东京的软件开发者 Ansh Aneja 表示，Anthropic 宣布推出这一功能当天，他就开发了一款专门针对 Claude 的水印移除工具。"
+        },
+        {
+          "id": "CL-4f9bc3d0c3dc22d1",
+          "subject": "Anthropic",
+          "object": "AI 文本水印后，各类去水印工具开始涌现",
+          "quote": "随着 Anthropic 计划在下一代模型发布时同步推出文本检测 API，这一问题可能会变得更加突出。"
+        },
+        {
+          "id": "CL-be7a21591211953d",
+          "subject": "Anthropic",
+          "object": "AI 文本水印后，各类去水印工具开始涌现",
+          "quote": "水印将适用于 8 月 2 日及之后发布的新模型，同时 Anthropic 也计划将这一功能逐步应用到旧款模型。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-b8062a6cbcfdc47a",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/991/384.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/991/384.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "IT之家注意到，来自巴黎的科技创业者、AI 电商工具 Memo 创始人 Guillaume Meyer，在 Anthropic 宣布相关计划几天后，就发布了一个名为“Watermarks Remover”的开源项目。"
+    },
+    {
+      "id": "EV-c93d59338b5dae93",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-19",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Claude Code v2.1.235 发布：新增拼写检查与多项修复",
+      "originalTitle": "",
+      "subject": "Claude Code v2.1.235",
+      "action": "发布",
+      "object": "：新增拼写检查与多项修复",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-cb4754c48f8023d0"
+      ],
+      "entityNames": [
+        "Claude Code"
+      ],
+      "productName": "Claude Code",
+      "products": [
+        {
+          "name": "Claude Code",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-cc48e2bb9271db9d",
+          "subject": "Claude Code v2.1.235",
+          "object": "：新增拼写检查与多项修复",
+          "quote": "Added an optional spellcheck setting that underlines misspelled words in the prompt input as you type, using your installed aspell , hunspell , or ispell"
+        },
+        {
+          "id": "CL-34532db2bbdc9c98",
+          "subject": "Claude Code v2.1.235",
+          "object": "：新增拼写检查与多项修复",
+          "quote": "Fixed nested markdown list items misaligning at depth 3+ and added a hanging indent to wrapped list items in the terminal UI"
+        },
+        {
+          "id": "CL-d9561f410324a401",
+          "subject": "Claude Code v2.1.235",
+          "object": "：新增拼写检查与多项修复",
+          "quote": "Fixed whole-prompt-cache invalidation when a language server disconnected or reconnected mid-session"
+        },
+        {
+          "id": "CL-c4fef5a347b6673c",
+          "subject": "Claude Code v2.1.235",
+          "object": "：新增拼写检查与多项修复",
+          "quote": "Fixed prompt input highlights (slash commands, keywords, mentions) appearing shifted by one or more characters in some multi-line prompts"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-4ba31ed6664f412b",
+          "publisher": "Claude Code：GitHub Releases（RSS）",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.235"
+        }
+      ],
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.235",
+      "publisher": "Claude Code：GitHub Releases（RSS）",
+      "sourceExcerpt": "Added an optional spellcheck setting that underlines misspelled words in the prompt input as you type, using your installed aspell , hunspell , or ispell"
+    },
+    {
+      "id": "EV-cff5848b8c5453af",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-19",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "派早报：iQOO 发布手机新品、闪极举行 Loomos AI 眼镜发布会等",
+      "originalTitle": "",
+      "subject": "派早报：iQOO",
+      "action": "发布手机新品、闪极举行 Loomos AI 眼镜",
+      "object": "发布会等",
+      "metrics": [
+        "29.98 万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-478676438ee161a3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-478676438ee161a3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-478676438ee161a3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-478676438ee161a3"
+      ],
+      "entityNames": [
+        "派早报"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-a5419c653d9e241e",
+          "subject": "派早报：iQOO",
+          "object": "发布会等",
+          "quote": "派早报：iQOO 发布手机新品、闪极举行 Loomos AI 眼镜发布会等"
+        },
+        {
+          "id": "CL-c0cfeff9133ccc4a",
+          "subject": "派早报：iQOO",
+          "object": "发布会等",
+          "quote": "闪极举行 Loomos AI 眼镜发布会 1"
+        },
+        {
+          "id": "CL-3ba6a158cebf9adc",
+          "subject": "派早报：iQOO",
+          "object": "发布会等",
+          "quote": "奕境 X9 开启预售：三款增程车型 29.98 万元起 3"
+        },
+        {
+          "id": "CL-f5a02b935bda68c2",
+          "subject": "派早报：iQOO",
+          "object": "发布会等",
+          "quote": "闪极举行 Loomos AI 眼镜发布会"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-b8bbde76360dbe01",
+          "publisher": "少数派",
+          "url": "https://sspai.com/post/113607"
+        }
+      ],
+      "sourceUrl": "https://sspai.com/post/113607",
+      "publisher": "少数派",
+      "sourceExcerpt": "派早报：iQOO 发布手机新品、闪极举行 Loomos AI 眼镜发布会等"
+    },
+    {
+      "id": "EV-05fea7a5d8b8db46",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-18",
+      "updatedDate": "2026-08-19",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "OpenAI 推出面向青少年的 ChatGPT 版本",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "推出",
+      "object": "面向青少年的 ChatGPT 版本",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-d1ad14d4ad57d207"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "ChatGPT"
+      ],
+      "productName": "ChatGPT",
+      "products": [
+        {
+          "name": "ChatGPT",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-b870c0ca13fc4d21",
+          "subject": "OpenAI",
+          "object": "面向青少年的 ChatGPT 版本",
+          "quote": "OpenAI launches a ChatGPT version built for teens"
+        },
+        {
+          "id": "CL-f73346f9bf67ac9b",
+          "subject": "OpenAI",
+          "object": "面向青少年的 ChatGPT 版本",
+          "quote": "OpenAI launches a ChatGPT version built for teens"
+        },
+        {
+          "id": "CL-918b063ce08ba3e8",
+          "subject": "OpenAI",
+          "object": "面向青少年的 ChatGPT 版本",
+          "quote": "OpenAI is shipping a version of ChatGPT tailored to users aged 13 to 17."
+        },
+        {
+          "id": "CL-d25ab3ffb9a6d928",
+          "subject": "OpenAI",
+          "object": "面向青少年的 ChatGPT 版本",
+          "quote": "OpenAI is shipping a version of ChatGPT tailored to users aged 13 to 17."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-14bcf0c0d0ebe797",
+          "publisher": "The Decoder：AI News（RSS）",
+          "url": "https://the-decoder.com/openai-launches-a-chatgpt-version-built-for-teens"
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/openai-launches-a-chatgpt-version-built-for-teens",
+      "publisher": "The Decoder：AI News（RSS）",
+      "sourceExcerpt": "OpenAI launches a ChatGPT version built for teens"
+    },
+    {
+      "id": "EV-06e31f68974104ec",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-18",
+      "updatedDate": "2026-08-19",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI为青少年推出更安全的ChatGPT——距青少年开始使用已过去数年",
+      "originalTitle": "OpenAI launches a safer ChatGPT for teens — years after teens started using it",
+      "subject": "OpenAI",
+      "action": "launches",
+      "object": "a safer ChatGPT for teens — years after teens started using it",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-d1ad14d4ad57d207"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "ChatGPT"
+      ],
+      "productName": "ChatGPT",
+      "products": [
+        {
+          "name": "ChatGPT",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-a1d9af01cfc6ad8d",
+          "subject": "OpenAI",
+          "object": "a safer ChatGPT for teens — years after teens started using it",
+          "quote": "OpenAI launches a safer ChatGPT for teens — years after teens started using it"
+        },
+        {
+          "id": "CL-51dbbebe30b83b5d",
+          "subject": "OpenAI",
+          "object": "a safer ChatGPT for teens — years after teens started using it",
+          "quote": "After numerous lawsuits over AI chatbots’ lack of safety measures, leading to teens’ suicides and other mental health concerns, OpenAI on Monday announced the launch of ChatGPT for Teens. The new product promises to include additional safety measures, as well as address the educational crisis of ChatGPT-assisted cheating in schools."
+        },
+        {
+          "id": "CL-28dcc8b2c1fa506b",
+          "subject": "OpenAI",
+          "object": "a safer ChatGPT for teens — years after teens started using it",
+          "quote": "On the educational side, ChatGPT for Teens introduces a new Study Mode feature and other tools designed to encourage teen users to engage their curiosity and work through problems, not just get quick answers."
+        },
+        {
+          "id": "CL-2a5dd4fc3ff8f4c0",
+          "subject": "OpenAI",
+          "object": "a safer ChatGPT for teens — years after teens started using it",
+          "quote": "As OpenAI explains in a blog post , the Study Mode option will give teens guiding questions and step-by-step support to help them understand the material. Meanwhile, the teen experience will also include homework reminders that appear when a teen appears to be trying to cheat, instead of understanding the material. The AI chatbot will then push the teen to use Study Mode instead."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-a4e3fc5ebc4424dd",
+          "publisher": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it",
+      "publisher": "TechCrunch AI",
+      "sourceExcerpt": "OpenAI launches a safer ChatGPT for teens — years after teens started using it"
+    },
+    {
+      "id": "EV-0adf1fcc9dbeddef",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-18",
+      "updatedDate": "2026-08-19",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic 披露 Model 2 模型，能力略高于公开最强 AI Claude Mythos 5",
+      "originalTitle": "",
+      "subject": "Anthropic",
+      "action": "product_release",
+      "object": "Anthropic 披露 Model 2 模型，能力略高于公开最强 AI Claude Mythos 5",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-900f5e864906ed75"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Model 2"
+      ],
+      "productName": "Model 2",
+      "products": [
+        {
+          "name": "Model 2",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-62a2699b18c0adb8",
+          "subject": "Anthropic",
+          "object": "Anthropic 披露 Model 2 模型，能力略高于公开最强 AI Claude Mythos 5",
+          "quote": "IT之家 8 月 18 日消息， Anthropic 于 8 月 15 日披露《2026 年 8 月风险报告》 ，其中提及尚未发布、名为 Model 2 的 AI 模型， 在多项任务上要优于目前公开的最强模型 Claude Mythos 5。"
+        },
+        {
+          "id": "CL-132400a265fc328d",
+          "subject": "Anthropic",
+          "object": "Anthropic 披露 Model 2 模型，能力略高于公开最强 AI Claude Mythos 5",
+          "quote": "根据报告披露的细节，相比较 Claude Mythos 5 模型，Model 2 模型在多项任务上的性能明显更强，但是增幅相对而言不大，主要是提高 AI 模型的综合能力。"
+        },
+        {
+          "id": "CL-e037df356e28e7da",
+          "subject": "Anthropic",
+          "object": "Anthropic 披露 Model 2 模型，能力略高于公开最强 AI Claude Mythos 5",
+          "quote": "IT之家附上 Anthropic 内部基准测试“CoBench v2”的结果如下："
+        },
+        {
+          "id": "CL-3bf00646126fd301",
+          "subject": "Anthropic",
+          "object": "Anthropic 披露 Model 2 模型，能力略高于公开最强 AI Claude Mythos 5",
+          "quote": "Anthropic 披露 Model 2 模型，能力略高于公开最强 AI Claude Mythos 5 - IT之家"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-9f76eeb6502d32cf",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/991/074.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/991/074.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "IT之家 8 月 18 日消息， Anthropic 于 8 月 15 日披露《2026 年 8 月风险报告》 ，其中提及尚未发布、名为 Model 2 的 AI 模型， 在多项任务上要优于目前公开的最强模型 Claude Mythos 5。"
+    },
+    {
+      "id": "EV-1e7c9d930a2a5d8e",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-18",
+      "updatedDate": "2026-08-19",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "ChatGPT 推出青少年专用模式",
+      "originalTitle": "",
+      "subject": "ChatGPT",
+      "action": "推出",
+      "object": "青少年专用模式",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-60965168ce762e94",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "ChatGPT",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-ea45aeaab4469136",
+          "subject": "ChatGPT",
+          "object": "青少年专用模式",
+          "quote": "OpenAI is introducing a dedicated ChatGPT mode for teenagers, combining existing youth safeguards and new safety features under one roof. The launch comes amid mounting public scrutiny over how AI tools affect younger users, as other platforms implement their own age checks and teen-specific protections."
+        },
+        {
+          "id": "CL-875864c694ead9dc",
+          "subject": "ChatGPT",
+          "object": "青少年专用模式",
+          "quote": "Though OpenAI is framing this as a new teen-focused ChatGPT experience, many of the protections it describes aren’t new, with the launch largely consolidating existing safeguards alongside a handful of smaller additions and tweaks. OpenAI rolled out age-prediction features at the start of the year, while parental controls and study mode arrived roughly a year ago. The company said it would show teens more frequent break reminders last month."
+        },
+        {
+          "id": "CL-40e3b79fe2fea145",
+          "subject": "ChatGPT",
+          "object": "青少年专用模式",
+          "quote": "OpenAI is introducing a dedicated ChatGPT mode for teenagers, combining existing youth safeguards and new safety features under one roof. The launch comes amid mounting public scrutiny over how AI tools affect younger users, as other platforms implement their own age checks and teen-specific protections."
+        },
+        {
+          "id": "CL-18b3405b9611f563",
+          "subject": "ChatGPT",
+          "object": "青少年专用模式",
+          "quote": "Though OpenAI is framing this as a new teen-focused ChatGPT experience, many of the protections it describes aren’t new, with the launch largely consolidating existing safeguards alongside a handful of smaller additions and tweaks. OpenAI rolled out age-prediction features at the start of the year, while parental controls and study mode arrived roughly a year ago. The company said it would show teens more frequent break reminders last month."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-121df9bf143f0240",
+          "publisher": "The Verge：AI（RSS）",
+          "url": "https://theverge.com/ai-artificial-intelligence/981333/openai-chatgpt-teen-mode"
+        }
+      ],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/981333/openai-chatgpt-teen-mode",
+      "publisher": "The Verge：AI（RSS）",
+      "sourceExcerpt": "OpenAI is introducing a dedicated ChatGPT mode for teenagers, combining existing youth safeguards and new safety features under one roof. The launch comes amid mounting public scrutiny over how AI tools affect younger users, as other platforms implement their own age checks and teen-specific protections."
+    },
+    {
+      "id": "EV-2430dae13b9f6c82",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-18",
+      "updatedDate": "2026-08-19",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "哈佛和麻省理工推出 MatrAIx 系统，生成 83 亿个\"AI 人\"模拟全球人类行为",
+      "originalTitle": "",
+      "subject": "哈佛和麻省理工",
+      "action": "推出",
+      "object": "MatrAIx 系统，生成 83 亿个\"AI 人\"模拟全球人类行为",
+      "metrics": [
+        "83 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-35c53e7e400caf01"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-35c53e7e400caf01"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-35c53e7e400caf01"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-35c53e7e400caf01",
+        "EN-641d6008ea308494",
+        "EN-b09a12ce5a67e7c0",
+        "EN-7d3194f79e645c42",
+        "EN-2b6e51bec93e86c1",
+        "EN-76c4ff3eda10cc66"
+      ],
+      "entityNames": [
+        "哈佛和麻省理工",
+        "哈佛",
+        "麻省理工",
+        "OpenAI",
+        "Google DeepMind",
+        "MatrAIx"
+      ],
+      "productName": "MatrAIx",
+      "products": [
+        {
+          "name": "MatrAIx",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-ab73cfac846e543e",
+          "subject": "哈佛和麻省理工",
+          "object": "MatrAIx 系统，生成 83 亿个\"AI 人\"模拟全球人类行为",
+          "quote": "IT之家 8 月 18 日消息，由哈佛大学和麻省理工学院牵头，OpenAI 和谷歌 DeepMind 等机构参与的团队在本月推出了 MatrAIx 系统 。"
+        },
+        {
+          "id": "CL-6c032f8958934341",
+          "subject": "哈佛和麻省理工",
+          "object": "MatrAIx 系统，生成 83 亿个\"AI 人\"模拟全球人类行为",
+          "quote": "目前，经确定性、质量过滤的百万人格核心集（coreset）已在 Hugging Face 公开发布，供研究使用。"
+        },
+        {
+          "id": "CL-9b31534ff5ee9fa0",
+          "subject": "哈佛和麻省理工",
+          "object": "MatrAIx 系统，生成 83 亿个\"AI 人\"模拟全球人类行为",
+          "quote": "该系统能够生成 83 亿个 AI 智能体 ，用于模拟全球人类行为。"
+        },
+        {
+          "id": "CL-7feb9a15c373f59e",
+          "subject": "哈佛和麻省理工",
+          "object": "MatrAIx 系统，生成 83 亿个\"AI 人\"模拟全球人类行为",
+          "quote": "该项目利用 1,290 个维度对不同背景和生活方式的人群进行建模。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-06ac95998a9fe626",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/991/065.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/991/065.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "IT之家 8 月 18 日消息，由哈佛大学和麻省理工学院牵头，OpenAI 和谷歌 DeepMind 等机构参与的团队在本月推出了 MatrAIx 系统 。"
+    },
+    {
+      "id": "EV-257c7ec21edf638a",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-18",
+      "updatedDate": "2026-08-19",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "人工智能突发新闻与新闻稿",
+      "originalTitle": "Artificial Intelligence Breaking News and Press Releases",
+      "subject": "Artificial Intelligence Breaking News and Press",
+      "action": "Releases",
+      "object": "Artificial Intelligence Breaking News and Press Releases",
+      "metrics": [],
+      "locations": [
+        "U.S."
+      ],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-5a59b85d2410f140",
+        "EN-842fcb5e60989a03"
+      ],
+      "entityNames": [
+        "Artificial Intelligence Breaking News",
+        "Press"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-e9475b18a685fbba",
+          "subject": "Artificial Intelligence Breaking News and Press",
+          "object": "Stay updated on artificial intelligence with press releases highlighting innovations and applications transforming industries. Explore opportunities in AI trends, machine learning, and technology advancements.",
+          "quote": "Stay updated on artificial intelligence with press releases highlighting innovations and applications transforming industries. Explore opportunities in AI trends, machine learning, and technology advancements."
+        },
+        {
+          "id": "CL-2303a1e8b2b6329e",
+          "subject": "Artificial Intelligence Breaking News and Press",
+          "object": "ROUND ROCK, Texas--( BUSINESS WIRE )--Dell Technologies (NYSE: DELL) will conduct a conference call Tuesday, Sept. 1, 2026, at 3:30 p.m. CDT to discuss its fiscal 2027 second quarter financial results. The conference will be available to the public as a live, audio-only webcast on Dell Technologies’ website at investors.delltechnologies.com; an archived version will be available at the same location. The company will issue the results before the conference call broadcast via a press release with...",
+          "quote": "ROUND ROCK, Texas--( BUSINESS WIRE )--Dell Technologies (NYSE: DELL) will conduct a conference call Tuesday, Sept. 1, 2026, at 3:30 p.m. CDT to discuss its fiscal 2027 second quarter financial results. The conference will be available to the public as a live, audio-only webcast on Dell Technologies’ website at investors.delltechnologies.com; an archived version will be available at the same location. The company will issue the results before the conference call broadcast via a press release with..."
+        },
+        {
+          "id": "CL-9ea711e5b8dacc36",
+          "subject": "Artificial Intelligence Breaking News and Press",
+          "object": "NEW YORK--( BUSINESS WIRE )--Yext, Inc. (NYSE: YEXT), the enterprise agentic marketing platform, today announced that its second quarter fiscal year 2027 results will be released on Tuesday, September 1, 2026, before market open. About Yext Yext (NYSE: YEXT) is the enterprise agentic marketing platform. Built on the world's most comprehensive structured data platform for local businesses, Yext gives brands and their partners the visibility intelligence to win every moment of discovery – across AI...",
+          "quote": "NEW YORK--( BUSINESS WIRE )--Yext, Inc. (NYSE: YEXT), the enterprise agentic marketing platform, today announced that its second quarter fiscal year 2027 results will be released on Tuesday, September 1, 2026, before market open. About Yext Yext (NYSE: YEXT) is the enterprise agentic marketing platform. Built on the world's most comprehensive structured data platform for local businesses, Yext gives brands and their partners the visibility intelligence to win every moment of discovery – across AI..."
+        },
+        {
+          "id": "CL-1b7ca8ffe8a05652",
+          "subject": "Artificial Intelligence Breaking News and Press",
+          "object": "NEW YORK--( BUSINESS WIRE )--Braze (Nasdaq: BRZE), the leading customer engagement platform that empowers brands to Be Absolutely Engaging™, announced today that it will release its financial results for the second quarter of the 2027 fiscal year after U.S. financial markets close on Tuesday, September 8, 2026. Braze will host a webcast conference call to discuss its financial results at 4:30 pm ET (1:30 pm PT) on the same day. The webcast will be available under the events section of its Investo...",
+          "quote": "NEW YORK--( BUSINESS WIRE )--Braze (Nasdaq: BRZE), the leading customer engagement platform that empowers brands to Be Absolutely Engaging™, announced today that it will release its financial results for the second quarter of the 2027 fiscal year after U.S. financial markets close on Tuesday, September 8, 2026. Braze will host a webcast conference call to discuss its financial results at 4:30 pm ET (1:30 pm PT) on the same day. The webcast will be available under the events section of its Investo..."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-35fb832974eee677",
+          "publisher": "businesswire.com",
+          "url": "https://businesswire.com/newsroom/industry/technology/artificial-intelligence"
+        }
+      ],
+      "sourceUrl": "https://businesswire.com/newsroom/industry/technology/artificial-intelligence",
+      "publisher": "businesswire.com",
+      "sourceExcerpt": "Stay updated on artificial intelligence with press releases highlighting innovations and applications transforming industries. Explore opportunities in AI trends, machine learning, and technology advancements."
+    },
+    {
+      "id": "EV-5ebbe581dba0caf4",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-18",
+      "updatedDate": "2026-08-19",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "半价！全球最大 AI 聚合平台 OpenRouter 下调 OpenAI 最强模型 GPT-5.6 Sol 调用费用",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "半价！全球最大 AI 聚合平台 OpenRouter 下调 OpenAI 最强模型 GPT-5.6 Sol 调用费用",
+      "metrics": [
+        "100 万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7f871cbf905f6e0c",
+        "EN-7d3194f79e645c42",
+        "EN-7839fb10a8f14c70",
+        "EN-52fc33ae4d101a5d"
+      ],
+      "entityNames": [
+        "OpenRouter",
+        "OpenAI",
+        "GPT-5.6 Sol",
+        "GPT-5.6"
+      ],
+      "productName": "GPT-5.6 Sol",
+      "products": [
+        {
+          "name": "GPT-5.6 Sol",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        },
+        {
+          "name": "GPT-5.6",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-ceb86dec4e03e866",
+          "subject": "undisclosed_subject",
+          "object": "半价！全球最大 AI 聚合平台 OpenRouter 下调 OpenAI 最强模型 GPT-5.6 Sol 调用费用",
+          "quote": "IT之家 8 月 18 日消息，全球最大 AI 聚合平台 OpenRouter 昨日（8 月 17 日）在 X 平台发布推文， 宣布 OpenAI 最强模型 GPT-5.6 Sol 调用费用半价。"
+        },
+        {
+          "id": "CL-d43c83d53ecedd6c",
+          "subject": "undisclosed_subject",
+          "object": "半价！全球最大 AI 聚合平台 OpenRouter 下调 OpenAI 最强模型 GPT-5.6 Sol 调用费用",
+          "quote": "调整前每 100 万 Tokens 输入 5 美元 （IT之家注：现汇率约合 33.8 元人民币） ，每 100 万 Tokens 输出 30 美元 （现汇率约合 202.6 元人民币）"
+        },
+        {
+          "id": "CL-3c471c6e3db0e02c",
+          "subject": "undisclosed_subject",
+          "object": "半价！全球最大 AI 聚合平台 OpenRouter 下调 OpenAI 最强模型 GPT-5.6 Sol 调用费用",
+          "quote": "调整后每 100 万 Tokens 输入 2.5 美元 （现汇率约合 16.9 元人民币） ，每 100 万 Tokens 输出 15 美元 （现汇率约合 101.3 元人民币）"
+        },
+        {
+          "id": "CL-b29af4cc9260f9ec",
+          "subject": "undisclosed_subject",
+          "object": "半价！全球最大 AI 聚合平台 OpenRouter 下调 OpenAI 最强模型 GPT-5.6 Sol 调用费用",
+          "quote": "全球最大 AI 聚合平台下调 OpenAI 最强 AI 模型 GPT-5.6 Sol 费用 - IT之家"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-cdb76aa3c9d4852e",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/991/081.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/991/081.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "IT之家 8 月 18 日消息，全球最大 AI 聚合平台 OpenRouter 昨日（8 月 17 日）在 X 平台发布推文， 宣布 OpenAI 最强模型 GPT-5.6 Sol 调用费用半价。"
+    },
+    {
+      "id": "EV-7a600ac040c304a2",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-18",
+      "updatedDate": "2026-08-19",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "人人都能写好听的歌，阿里发布AI音乐模型HappyShrimp",
+      "originalTitle": "",
+      "subject": "人人都能写好听的歌，阿里",
+      "action": "发布AI音乐模型",
+      "object": "HappyShrimp",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-549af711b4412d5a",
+        "EN-047364b9be67f665",
+        "EN-157e73f6fee40415"
+      ],
+      "entityNames": [
+        "人人都能写好听的歌",
+        "Alibaba",
+        "HappyShrimp"
+      ],
+      "productName": "HappyShrimp",
+      "products": [
+        {
+          "name": "HappyShrimp",
+          "type": "模型",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-833f4eb3381318c9",
+          "subject": "人人都能写好听的歌，阿里",
+          "object": "HappyShrimp",
+          "quote": "人人都能写好听的歌，阿里发布AI音乐模型HappyShrimp"
+        },
+        {
+          "id": "CL-13c376a8c69165bf",
+          "subject": "人人都能写好听的歌，阿里",
+          "object": "HappyShrimp",
+          "quote": "8月17日，阿里巴巴发布AI音乐模型HappyShrimp"
+        },
+        {
+          "id": "CL-9aaad1e1339569a5",
+          "subject": "人人都能写好听的歌，阿里",
+          "object": "HappyShrimp",
+          "quote": "8月17日，阿里巴巴发布AI音乐模型HappyShrimp（中文名：快乐虾米）。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-c0a6f0a45e471822",
+          "publisher": "量子位",
+          "url": "https://qbitai.com/2026/08/474840.html"
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/08/474840.html",
+      "publisher": "量子位",
+      "sourceExcerpt": "人人都能写好听的歌，阿里发布AI音乐模型HappyShrimp"
+    },
+    {
+      "id": "EV-837b3fed09e7c483",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-18",
+      "updatedDate": "2026-08-19",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "网易传媒发布”蜜蜂AI” ：从工具到伙伴，让AI更懂人",
+      "originalTitle": "",
+      "subject": "网易传媒",
+      "action": "发布",
+      "object": "”蜜蜂AI” ：从工具到伙伴，让AI更懂人",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-2dddaa84fdaa1ab9"
+      ],
+      "entityNames": [
+        "网易传媒"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-4cb82f81172d517b",
+          "subject": "网易传媒",
+          "object": "”蜜蜂AI” ：从工具到伙伴，让AI更懂人",
+          "quote": "网易传媒发布”蜜蜂AI” ：从工具到伙伴，让AI更懂人"
+        },
+        {
+          "id": "CL-04520615eac03b23",
+          "subject": "网易传媒",
+          "object": "”蜜蜂AI” ：从工具到伙伴，让AI更懂人",
+          "quote": "8月18日，网易传媒举办“蜜蜂AI媒体沟通会”"
+        },
+        {
+          "id": "CL-76b57ff4ffcd1c66",
+          "subject": "网易传媒",
+          "object": "”蜜蜂AI” ：从工具到伙伴，让AI更懂人",
+          "quote": "8月18日，网易传媒举办“蜜蜂AI媒体沟通会”，首次向外界系统介绍面向人工智能时代打造的统一AI能力底座——“蜜蜂AI”。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-6d514722d608897e",
+          "publisher": "量子位",
+          "url": "https://qbitai.com/2026/08/474857.html"
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/08/474857.html",
+      "publisher": "量子位",
+      "sourceExcerpt": "网易传媒发布”蜜蜂AI” ：从工具到伙伴，让AI更懂人"
+    },
+    {
+      "id": "EV-a3b61b3529d9cf79",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-18",
+      "updatedDate": "2026-08-19",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Cursor借GitHub用户不满，推出竞争性托管平台",
+      "originalTitle": "Cursor capitalizes on GitHub frustration, launches rival hosting platform",
+      "subject": "Cursor capitalizes on GitHub frustration,",
+      "action": "launches",
+      "object": "rival hosting platform",
+      "metrics": [
+        "20%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-f5ba4c53c1799e5b",
+        "EN-e78bdebae031095b"
+      ],
+      "entityNames": [
+        "Cursor capitalizes on GitHub frustration",
+        "SpaceX"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-68211014c7ab66c2",
+          "subject": "Cursor capitalizes on GitHub frustration,",
+          "object": "rival hosting platform",
+          "quote": "Cursor capitalizes on GitHub frustration, launches rival hosting platform"
+        },
+        {
+          "id": "CL-43ba600c7d4f2d3b",
+          "subject": "Cursor capitalizes on GitHub frustration,",
+          "object": "rival hosting platform",
+          "quote": "The AI startup, which is now officially a part of SpaceX , launched Origin this week — a new code-hosting platform designed to do all of the things that developers typically use GitHub for: collaboratively work on codebases, browse and edit them, handle pull-requests (edits made by others asking to be added to the main codebase), and store them in repositories."
+        },
+        {
+          "id": "CL-c74cdbac7313eeb0",
+          "subject": "Cursor capitalizes on GitHub frustration,",
+          "object": "rival hosting platform",
+          "quote": "The launch of Origin coincides with ongoing frustration over a perceived dip in GitHub’s services. Indeed, on the same day that Cursor launched its new platform, GitHub suffered a quite lengthy worldwide outage . For over six hours, the site’s functions were reportedly degraded, with a nearly 20% error rate worldwide."
+        },
+        {
+          "id": "CL-e384d16d208172bc",
+          "subject": "Cursor capitalizes on GitHub frustration,",
+          "object": "rival hosting platform",
+          "quote": "For as long as anyone can remember, GitHub has been the de facto code host preferred by a majority of developers. However, in recent times, the platform has struggled with widely reported outages and performance degradation and, as it drops the ball, Cursor is waiting to pick it up."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-66ab93bf746f05e3",
+          "publisher": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/08/18/cursor-capitalizes-on-github-frustration-launches-rival-hosting-platform"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/18/cursor-capitalizes-on-github-frustration-launches-rival-hosting-platform",
+      "publisher": "TechCrunch AI",
+      "sourceExcerpt": "Cursor capitalizes on GitHub frustration, launches rival hosting platform"
+    },
+    {
+      "id": "EV-e3fb3a8b12b3ba9c",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-18",
+      "updatedDate": "2026-08-19",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Claude Tag 如何担任 Anthropic CI/CD 故障的一线响应者",
+      "originalTitle": "",
+      "subject": "Claude",
+      "action": "product_release",
+      "object": "Claude Tag 如何担任 Anthropic CI/CD 故障的一线响应者",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c857d09db23e6822",
+        "EN-c70eca6b0f88f44d",
+        "EN-2d8eb718b486147e",
+        "EN-b8a92bba58484a72"
+      ],
+      "entityNames": [
+        "Claude",
+        "Anthropic",
+        "Tag",
+        "CI"
+      ],
+      "productName": "Tag",
+      "products": [
+        {
+          "name": "Tag",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        },
+        {
+          "name": "CI",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-bac925756167aa77",
+          "subject": "Claude",
+          "object": "Claude Tag 如何担任 Anthropic CI/CD 故障的一线响应者",
+          "quote": "A few weeks ago, I was on-call and my colleague Slacked me a message at 10pm: roughly 44 tests on a new service weren’t firing."
+        },
+        {
+          "id": "CL-a98aed72948a8eab",
+          "subject": "Claude",
+          "object": "Claude Tag 如何担任 Anthropic CI/CD 故障的一线响应者",
+          "quote": "To address this, we have Claude analyze the data and incoming alerts for the first few days of a new service to suggest additional rules and to fine-tune any that are overly broad or narrow."
+        },
+        {
+          "id": "CL-a378c9be1f49c6eb",
+          "subject": "Claude",
+          "object": "Claude Tag 如何担任 Anthropic CI/CD 故障的一线响应者",
+          "quote": "In the past, I would have stopped what I was doing, sat down with my laptop, sighed wearily, and began an hour-long investigate-and-fix process. But now, my workflow is entirely different: I pull in @Claude, and ask what it sees."
+        },
+        {
+          "id": "CL-3662bc2d817e1130",
+          "subject": "Claude",
+          "object": "Claude Tag 如何担任 Anthropic CI/CD 故障的一线响应者",
+          "quote": "In this case, Claude found the tests disappeared when a feature flag got turned on that morning, and also that it would be safe to revert. I asked my colleague to revert the flag. Claude pinged me on Slack 3 minutes later to verify the skip rules had indeed been removed and the error rate was back to baseline."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-739bb427d0acfdf8",
+          "publisher": "Claude：Blog（网页）",
+          "url": "https://claude.com/blog/ai-ci-cd-on-call"
+        }
+      ],
+      "sourceUrl": "https://claude.com/blog/ai-ci-cd-on-call",
+      "publisher": "Claude：Blog（网页）",
+      "sourceExcerpt": "A few weeks ago, I was on-call and my colleague Slacked me a message at 10pm: roughly 44 tests on a new service weren’t firing."
+    },
+    {
       "id": "EV-cef89ea11e4fbeeb",
       "dataDate": "2026-08-18",
       "date": "2026-08-18",
@@ -185364,118 +187542,6 @@
       "sourceUrl": "https://mlflow.org/articles/the-role-of-open-source-in-enterprise-ai-in-2026",
       "publisher": "mlflow.org",
       "sourceExcerpt": "Open source AI is defined as the practice of building, sharing, and deploying AI models and frameworks under licenses that allow inspection, modification, and redistribution of source code, weights, and training configurations. The role of open source in enterprise AI has shifted from experimental curiosity to production standard. Open-source AI adoption in large organizations has reached 89%, with deployments showing 25% higher ROI compared to closed-source stacks. That gap is not incidental. It reflects a structural advantage: enterprises that own their inference stack control their costs, their compliance posture, and their competitive differentiation. Platforms like MLflow and toolkits l…"
-    },
-    {
-      "id": "EV-257c7ec21edf638a",
-      "dataDate": "2026-08-10",
-      "date": "2026-08-09",
-      "updatedDate": "2026-08-10",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "人工智能突发新闻与新闻稿",
-      "originalTitle": "Artificial Intelligence Breaking News and Press Releases",
-      "subject": "Artificial Intelligence Breaking News and Press",
-      "action": "Releases",
-      "object": "Artificial Intelligence Breaking News and Press Releases",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [
-        "object"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "physical_automation",
-            "name": "物理自动化",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "physical_automation",
-          "name": "物理自动化",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "physical_automation",
-          "name": "物理自动化",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-5a59b85d2410f140",
-        "EN-842fcb5e60989a03"
-      ],
-      "entityNames": [
-        "Artificial Intelligence Breaking News",
-        "Press"
-      ],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-4a8eea93173f0073",
-          "subject": "Artificial Intelligence Breaking News and Press",
-          "object": "Stay updated on artificial intelligence with press releases highlighting innovations and applications transforming industries. Explore opportunities in AI trends, machine learning, and technology advancements.",
-          "quote": "Stay updated on artificial intelligence with press releases highlighting innovations and applications transforming industries. Explore opportunities in AI trends, machine learning, and technology advancements."
-        },
-        {
-          "id": "CL-9936be73adc33242",
-          "subject": "Artificial Intelligence Breaking News and Press",
-          "object": "Edgecore Unveils New Visual Identity",
-          "quote": "Edgecore Unveils New Visual Identity"
-        },
-        {
-          "id": "CL-7d7fb90ef5893185",
-          "subject": "Artificial Intelligence Breaking News and Press",
-          "object": "HSINCHU, Taiwan--( BUSINESS WIRE )--Edgecore Networks, the leader in open networking solutions and a subsidiary of Accton Group, today announced the launch of its refreshed brand identity, including a new logo and visual system, marking a new chapter in the company's continued growth and evolution. A Mark Built for Open Infrastructure The new identity reflects Edgecore's core positioning: open, adaptable infrastructure at the edge, powered by a strong compute core. The refreshed mark is designed...",
-          "quote": "HSINCHU, Taiwan--( BUSINESS WIRE )--Edgecore Networks, the leader in open networking solutions and a subsidiary of Accton Group, today announced the launch of its refreshed brand identity, including a new logo and visual system, marking a new chapter in the company's continued growth and evolution. A Mark Built for Open Infrastructure The new identity reflects Edgecore's core positioning: open, adaptable infrastructure at the edge, powered by a strong compute core. The refreshed mark is designed..."
-        },
-        {
-          "id": "CL-0ac3835322d68bbd",
-          "subject": "Artificial Intelligence Breaking News and Press",
-          "object": "Faraday Future Founder and Global CEO YT Jia Shares Weekly Investor Update: Renewed Nasdaq Compliance, “Built in USA” Upgrades Including the Launch of Universal Beyond-Line-of-Sight Teleoperation and Multi-Robot Control Platform",
-          "quote": "Faraday Future Founder and Global CEO YT Jia Shares Weekly Investor Update: Renewed Nasdaq Compliance, “Built in USA” Upgrades Including the Launch of Universal Beyond-Line-of-Sight Teleoperation and Multi-Robot Control Platform"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-2517eda16467dc8b",
-          "publisher": "businesswire.com",
-          "url": "https://businesswire.com/newsroom/industry/technology/artificial-intelligence"
-        }
-      ],
-      "sourceUrl": "https://businesswire.com/newsroom/industry/technology/artificial-intelligence",
-      "publisher": "businesswire.com",
-      "sourceExcerpt": "Stay updated on artificial intelligence with press releases highlighting innovations and applications transforming industries. Explore opportunities in AI trends, machine learning, and technology advancements."
     },
     {
       "id": "EV-3dc8d5c373ddd1f3",
@@ -305733,6 +307799,300 @@
       "sourceUrl": "https://simonwillison.net/2026/Jul/20/sam-altman",
       "publisher": "Simon Willison 博客",
       "sourceExcerpt": "one thing we’d like to do soon is to create a language model with the approximate capability of GPT-3 that can run locally on consumer hardware and release that."
+    },
+    {
+      "id": "EV-11a0afc2ecb6e42e",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-19",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI 二季度营收 67 亿美元环比增 18%，被 Anthropic 反超且亏损扩大",
+      "originalTitle": "",
+      "subject": "OpenAI 二季度",
+      "action": "营收 67 亿美元环比增 18%，被 Anthropic 反超",
+      "object": "且亏损扩大",
+      "metrics": [
+        "67 亿",
+        "18%",
+        "116 亿",
+        "783.8 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-e08b9fe9c3d46062",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "OpenAI 二季度",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-c2a2ae3011f3756e",
+          "subject": "OpenAI 二季度",
+          "object": "且亏损扩大",
+          "quote": "OpenAI 二季度营收 67 亿美元环比增 18%，被 Anthropic 营收反超且亏损持续扩大 - IT之家"
+        },
+        {
+          "id": "CL-a1fb4a833527f811",
+          "subject": "OpenAI 二季度",
+          "object": "且亏损扩大",
+          "quote": "OpenAI 二季度营收 67 亿美元环比增 18%，被 Anthropic 营收反超且亏损持续扩大"
+        },
+        {
+          "id": "CL-3ffef9d6d8f8ca6c",
+          "subject": "OpenAI 二季度",
+          "object": "且亏损扩大",
+          "quote": "IT之家 8 月 19 日消息，据《华尔街日报》报道，OpenAI 告诉投资者，公司第二季度营收较第一季度增长 18%，但亏损进一步扩大。"
+        },
+        {
+          "id": "CL-ca50bfa1ece07741",
+          "subject": "OpenAI 二季度",
+          "object": "且亏损扩大",
+          "quote": "同期，Anthropic 的营收增长了一倍多，达到 116 亿美元 （现汇率约合 783.8 亿元人民币） 。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-eb4a2839f11e21ae",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/991/414.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/991/414.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "OpenAI 二季度营收 67 亿美元环比增 18%，被 Anthropic 营收反超且亏损持续扩大 - IT之家"
+    },
+    {
+      "id": "EV-9940dccace747f28",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-19",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI 宣布新安全政策，加强模型开发监控与网络隔离",
+      "originalTitle": "",
+      "subject": "OpenAI 宣布新安全",
+      "action": "政策",
+      "object": "，加强模型开发监控与网络隔离",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-282e473582eac442",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI 宣布新安全",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-ee0f032426c5432c",
+          "subject": "OpenAI 宣布新安全",
+          "object": "，加强模型开发监控与网络隔离",
+          "quote": "IT之家 8 月 19 日消息，当地时间周二，OpenAI 宣布了一批新的安全政策，重点是控制模型在测试期间可能发生的安全事件。"
+        },
+        {
+          "id": "CL-31d7302761707443",
+          "subject": "OpenAI 宣布新安全",
+          "object": "，加强模型开发监控与网络隔离",
+          "quote": "新的安全措施包括在模型开发过程中进行更加细致的监控，同时在训练后阶段进一步加强对模型对齐和安全性的重视。"
+        },
+        {
+          "id": "CL-7a3024e64273c8ff",
+          "subject": "OpenAI 宣布新安全",
+          "object": "，加强模型开发监控与网络隔离",
+          "quote": "IT之家注意到，OpenAI 在一篇博客文章中表示：“随着模型能力不断增强，在内部开发和测试这些模型过程中所面临的风险也在增加。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-af9224e77060179a",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/991/387.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/991/387.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "IT之家 8 月 19 日消息，当地时间周二，OpenAI 宣布了一批新的安全政策，重点是控制模型在测试期间可能发生的安全事件。"
+    },
+    {
+      "id": "EV-09a29379b6399236",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-18",
+      "updatedDate": "2026-08-19",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "新基准测试按质量、成本和速度对AI智能体的搜索API进行排名",
+      "originalTitle": "New benchmark ranks search APIs for AI agents on quality, cost, and speed",
+      "subject": "New",
+      "action": "benchmark",
+      "object": "ranks search APIs for AI agents on quality, cost, and speed",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-11507a0e2f5e69d5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-11507a0e2f5e69d5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-11507a0e2f5e69d5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-11507a0e2f5e69d5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-11507a0e2f5e69d5",
+        "EN-77ec4f82d801bc99"
+      ],
+      "entityNames": [
+        "New",
+        "APIs for AI"
+      ],
+      "productName": "APIs for AI",
+      "products": [
+        {
+          "name": "APIs for AI",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-f7d0a57949484a1e",
+          "subject": "New",
+          "object": "ranks search APIs for AI agents on quality, cost, and speed",
+          "quote": "New benchmark ranks search APIs for AI agents on quality, cost, and speed"
+        },
+        {
+          "id": "CL-f3b3d364b6e09a06",
+          "subject": "New",
+          "object": "ranks search APIs for AI agents on quality, cost, and speed",
+          "quote": "Artificial Analysis has released the \"Search Index,\" a benchmark that measures how well search API providers work for AI agents across quality, cost, and speed."
+        },
+        {
+          "id": "CL-2976bc39f94dffb4",
+          "subject": "New",
+          "object": "ranks search APIs for AI agents on quality, cost, and speed",
+          "quote": "View the LinkedIn Profile of Matthias Bastian"
+        },
+        {
+          "id": "CL-c85080ebb93ee1d6",
+          "subject": "New",
+          "object": "ranks search APIs for AI agents on quality, cost, and speed",
+          "quote": "Nano Banana Pro prompted by THE DECODER"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-b63948dc4b738da6",
+          "publisher": "The Decoder AI News",
+          "url": "https://the-decoder.com/new-benchmark-ranks-search-apis-for-ai-agents-on-quality-cost-and-speed"
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/new-benchmark-ranks-search-apis-for-ai-agents-on-quality-cost-and-speed",
+      "publisher": "The Decoder AI News",
+      "sourceExcerpt": "New benchmark ranks search APIs for AI agents on quality, cost, and speed"
     },
     {
       "id": "EV-0c00a6c681f22b98",

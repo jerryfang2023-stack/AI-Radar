@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-18T00:24:57.421Z",
-    "latestDataDate": "2026-08-18",
-    "currentDate": "2026-08-18",
-    "eventCount": 2199,
+    "generatedAt": "2026-08-19T02:05:03.499Z",
+    "latestDataDate": "2026-08-19",
+    "currentDate": "2026-08-19",
+    "eventCount": 2220,
     "quarantinedEventCount": 19
   },
   "entity": {
@@ -24,9 +24,8 @@
     ],
     "eventIds": [],
     "viewpointIds": [
-      "2089149255382438340",
-      "2089143488696705077",
-      "2089082893804896524",
+      "2089604619936956778",
+      "2089500941842342287",
       "2077928427936710901",
       "2077632589498913087",
       "2077630111499882637",
@@ -76,7 +75,7 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-05",
-    "lastSeen": "2026-08-17",
+    "lastSeen": "2026-08-18",
     "handle": "thsottiaux",
     "role": "Codex 与 ChatGPT OpenAI",
     "organization": "OpenAI",
@@ -86,12 +85,12 @@
       "AI 应用与平台",
       "AI 基础设施",
       "模型基础设施观点",
-      "AI 编程",
-      "AI Coding 观点",
-      "AI Coding",
       "Agent",
       "Agent 工作流观点",
       "Agentic AI",
+      "AI 编程",
+      "AI Coding 观点",
+      "AI Coding",
       "企业工作流",
       "Builder 观点"
     ],
@@ -119,22 +118,16 @@
     "timeline": [],
     "viewpoints": [
       {
-        "id": "2089149255382438340",
-        "date": "2026-08-17",
-        "title": "Codex ✅ 几乎100%可靠 ✅ 偶尔重置 ✅ 开源 ✅ （将拥有Astra） https://t.co/DxNdAgpag5",
-        "sourceUrl": "https://x.com/thsottiaux/status/2089149255382438340"
+        "id": "2089604619936956778",
+        "date": "2026-08-18",
+        "title": "午夜过后，给我，给我，给我Codex吧，难道没人能让这些失败的测试统统消失吗？午夜过后，给我，给我，给我Codex吧，趁天亮之前，把它穿越黑暗交付出去。",
+        "sourceUrl": "https://x.com/thsottiaux/status/2089604619936956778"
       },
       {
-        "id": "2089143488696705077",
-        "date": "2026-08-17",
-        "title": "GPT-5.6 Sol 1M 在 Codex 中。这以前只适用于 API 密钥，但我们刚刚切换了开关，现在也适用于通过 ChatGPT 账户的使用。同样的警告依然适用，当前上下文长度之所以是默认值，是有原因的，我们已将其调校至近乎完美。但随你便！",
-        "sourceUrl": "https://x.com/thsottiaux/status/2089143488696705077"
-      },
-      {
-        "id": "2089082893804896524",
-        "date": "2026-08-17",
-        "title": "以下是如何在 Codex 中为 GPT-5.6 Sol 启用 1M token 上下文窗口的方法。尽管我们已将 Codex 的上下文限制调校为在性能和成本方面达到最优，但这是一个常见需求，因此在此记录说明。更大的上下文窗口可让 Codex 在总结较早内容之前保留更多代码、工具输出和对话历史。你需要一个支持该功能的模型。例如，GPT-5.6 Sol 具有文档记载的 1,050,000 token 窗口。打开 ~/.codex/config.toml，并在任何 [section] 标题之前，于顶层添加或更新以下设置：``` model = \"gpt-5.6-sol\" model_context_window = 1000000 model_auto_compact_token_limit = 900000 ``` 第一项设置用于选择模型。第二项告诉 Codex 使用一百万 token 的上下文预算。第三项在约 900,000 token 时启动自动历史压缩，留出一些余量。保存后重启 Codex 客户端并开始新会话。若要在不更改默认设置的情况下，为单个 CLI 会话尝试此配置：``` codex -m gpt-5.6-sol \\ -c model_context_window=1000000 \\ -c model_auto_compact_token_limit=900000 ``` 玩得开心，但也要知道，我们对默认设置进行了精心调校！",
-        "sourceUrl": "https://x.com/thsottiaux/status/2089082893804896524"
+        "id": "2089500941842342287",
+        "date": "2026-08-18",
+        "title": "有什么明显的事情，是我们应该用 Codex、API 或我们的模型去做，但至今还没做的？有什么是 100% 触手可及，但我们似乎就是一直没做到的？",
+        "sourceUrl": "https://x.com/thsottiaux/status/2089500941842342287"
       },
       {
         "id": "2077928427936710901",

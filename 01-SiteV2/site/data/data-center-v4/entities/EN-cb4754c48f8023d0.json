@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-18T00:24:57.421Z",
-    "latestDataDate": "2026-08-18",
-    "currentDate": "2026-08-18",
-    "eventCount": 2199,
+    "generatedAt": "2026-08-19T02:05:03.499Z",
+    "latestDataDate": "2026-08-19",
+    "currentDate": "2026-08-19",
+    "eventCount": 2220,
     "quarantinedEventCount": 19
   },
   "entity": {
@@ -37,6 +37,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-c93d59338b5dae93",
       "EV-fd289410b074f20f",
       "EV-3dd89fab562d16a1",
       "EV-133fffc68039038e",
@@ -98,7 +99,7 @@
       "EN-c70eca6b0f88f44d"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-08-18",
+    "lastSeen": "2026-08-19",
     "relationIds": [
       "REL2-a352560206a1ac3f",
       "REL2-d9ba4c1f870adb8b",
@@ -109,6 +110,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-c93d59338b5dae93",
         "EV-fd289410b074f20f",
         "EV-3dd89fab562d16a1",
         "EV-133fffc68039038e",
@@ -166,6 +168,21 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-c93d59338b5dae93",
+        "dataDate": "2026-08-19",
+        "date": "2026-08-19",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.235 发布：新增拼写检查与多项修复",
+        "displayTags": [],
+        "entityIds": [
+          "EN-cb4754c48f8023d0"
+        ]
+      },
       {
         "id": "EV-fd289410b074f20f",
         "dataDate": "2026-08-18",
@@ -1275,6 +1292,9 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-3a4acc92731cb5ac",
+        "EV-0adf1fcc9dbeddef",
+        "EV-e3fb3a8b12b3ba9c",
         "EV-0d5a32aca724d30e",
         "EV-615fbb4de33fad2d",
         "EV-3dd89fab562d16a1",
@@ -1449,6 +1469,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-11a0afc2ecb6e42e",
         "EV-9703abcbede6968a",
         "EV-a964121140e9ef41",
         "EV-9356dd1be92ef5c6",
@@ -1532,6 +1553,7 @@
         "TX-industry-government_public_sector",
         "TX-industry-legal_services",
         "TX-industry-professional_services",
+        "TX-industry-retail_ecommerce",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
@@ -1579,7 +1601,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-19"
     }
   ],
   "relationships": [
@@ -1847,6 +1869,8 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-2430dae13b9f6c82",
+        "EV-257c7ec21edf638a",
         "EV-0d5a32aca724d30e",
         "EV-615fbb4de33fad2d",
         "EV-4551be310b520fcc",
@@ -2112,6 +2136,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-09a29379b6399236",
         "EV-2c17183b71d8b7d1",
         "EV-9db14ad0d6fe3135",
         "EV-7a3a3754522828e1",
@@ -2283,6 +2308,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-35c53e7e400caf01",
         "EN-32e83e92d45d71f6",
         "EN-3b9e1cdd9e593b5c",
         "EN-bbdefa2950f49882",
@@ -2421,6 +2447,7 @@
         "EN-b7bea343b08cce2c",
         "EN-fdb2cc367267ac57",
         "EN-4a639cb888a15d75",
+        "EN-11507a0e2f5e69d5",
         "EN-0616a267820d2c78",
         "EN-286a3c612017ad1d",
         "EN-16478186eeecf696",

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-18T00:24:57.421Z",
-    "latestDataDate": "2026-08-18",
-    "currentDate": "2026-08-18",
-    "eventCount": 2199,
+    "generatedAt": "2026-08-19T02:05:03.499Z",
+    "latestDataDate": "2026-08-19",
+    "currentDate": "2026-08-19",
+    "eventCount": 2220,
     "quarantinedEventCount": 19
   },
   "entity": {
@@ -22,6 +22,8 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-05fea7a5d8b8db46",
+      "EV-06e31f68974104ec",
       "EV-c57d77f629c52da2",
       "EV-ab7dd515891566ab",
       "EV-8a88707160ae733d",
@@ -43,8 +45,10 @@
       "EN-7d3194f79e645c42"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-08-13",
+    "lastSeen": "2026-08-19",
     "relationIds": [
+      "REL2-0dc4d04c4e728c64",
+      "REL2-b77c9fa9bd90e418",
       "REL2-ddc331c7e06a63b8",
       "REL2-a2d910c505cb6266",
       "REL2-251475ee05e2516c",
@@ -59,6 +63,8 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-05fea7a5d8b8db46",
+        "EV-06e31f68974104ec",
         "EV-c57d77f629c52da2",
         "EV-ab7dd515891566ab",
         "EV-8a88707160ae733d",
@@ -79,6 +85,38 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-05fea7a5d8b8db46",
+        "dataDate": "2026-08-19",
+        "date": "2026-08-18",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "OpenAI 推出面向青少年的 ChatGPT 版本",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-d1ad14d4ad57d207"
+        ]
+      },
+      {
+        "id": "EV-06e31f68974104ec",
+        "dataDate": "2026-08-19",
+        "date": "2026-08-18",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI为青少年推出更安全的ChatGPT——距青少年开始使用已过去数年",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-d1ad14d4ad57d207"
+        ]
+      },
       {
         "id": "EV-c57d77f629c52da2",
         "dataDate": "2026-08-13",
@@ -438,6 +476,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-58268b12aa406620",
         "EV-5ac5368309eace1a",
         "EV-b8686b4f41d1aa67",
         "EV-129ffa6be41bb485",
@@ -464,6 +503,11 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-05fea7a5d8b8db46",
+        "EV-06e31f68974104ec",
+        "EV-1e7c9d930a2a5d8e",
+        "EV-2430dae13b9f6c82",
+        "EV-5ebbe581dba0caf4",
         "EV-615fbb4de33fad2d",
         "EV-ea2598236eae915f",
         "EV-3acfc317c18e3ef9",
@@ -638,6 +682,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-11a0afc2ecb6e42e",
+        "EV-9940dccace747f28",
         "EV-0c00a6c681f22b98",
         "EV-f819309f846d95bc",
         "EV-2902a32e86a4b2d1",
@@ -733,10 +779,10 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-d1ad14d4ad57d207",
         "EN-8d4321d936320802",
         "EN-916a98f0fa2a39af",
         "EN-7839fb10a8f14c70",
-        "EN-d1ad14d4ad57d207",
         "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
         "EN-3850792f618f534b",
@@ -759,10 +805,52 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-19"
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-0dc4d04c4e728c64",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d1ad14d4ad57d207",
+      "object_type": "entity",
+      "event_id": "EV-06e31f68974104ec",
+      "claim_refs": [
+        "CL-a1d9af01cfc6ad8d",
+        "CL-51dbbebe30b83b5d",
+        "CL-28dcc8b2c1fa506b",
+        "CL-2a5dd4fc3ff8f4c0"
+      ],
+      "source_refs": [
+        "SA-a4e3fc5ebc4424dd"
+      ],
+      "data_date": "2026-08-19",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-b77c9fa9bd90e418",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d1ad14d4ad57d207",
+      "object_type": "entity",
+      "event_id": "EV-05fea7a5d8b8db46",
+      "claim_refs": [
+        "CL-b870c0ca13fc4d21",
+        "CL-f73346f9bf67ac9b",
+        "CL-918b063ce08ba3e8",
+        "CL-d25ab3ffb9a6d928"
+      ],
+      "source_refs": [
+        "SA-14bcf0c0d0ebe797"
+      ],
+      "data_date": "2026-08-19",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-ddc331c7e06a63b8",
       "relationship_version": "RELATION-V2.1",

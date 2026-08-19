@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-18T00:24:57.421Z",
-    "latestDataDate": "2026-08-18",
-    "currentDate": "2026-08-18",
-    "eventCount": 2199,
+    "generatedAt": "2026-08-19T02:05:03.499Z",
+    "latestDataDate": "2026-08-19",
+    "currentDate": "2026-08-19",
+    "eventCount": 2220,
     "quarantinedEventCount": 19
   },
   "node": {
@@ -19,16 +19,20 @@
     "valueId": "inference_optimization",
     "eventIds": [
       "EV-492029b381c06283",
+      "EV-2c6707327367640f",
       "EV-f7b60c0c63403f8c"
     ],
     "entityIds": [
       "EN-7d3194f79e645c42",
+      "EN-77b30b8a88051252",
       "EN-de6b71bf77ff4299"
     ],
     "fdeIds": [],
-    "hardwareIds": [],
+    "hardwareIds": [
+      "HW-bc7449cedae06b7a"
+    ],
     "firstSeen": "2026-07-10",
-    "lastSeen": "2026-07-31"
+    "lastSeen": "2026-08-19"
   },
   "events": [
     {
@@ -112,6 +116,104 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://ithome.com/0/983/590.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-2c6707327367640f",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-19",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Cerebras 推出 WSE-3 Turbo 芯片与 CS-4 系统：10 倍词元容量、2 倍速度",
+      "originalTitle": "",
+      "subject": "Cerebras",
+      "action": "推出 WSE-3 Turbo 芯片",
+      "object": "与 CS-4 系统：10 倍词元容量、2 倍速度",
+      "metrics": [
+        "90 万",
+        "44GB"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化",
+          "entityIds": [
+            "EN-77b30b8a88051252"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化",
+          "entityIds": [
+            "EN-77b30b8a88051252"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化",
+          "entityIds": [
+            "EN-77b30b8a88051252"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-77b30b8a88051252",
+        "EN-49dba228d91e7180",
+        "EN-6eb8882ab15df1c2"
+      ],
+      "entityNames": [
+        "Cerebras",
+        "CS-4",
+        "WSE-3 Turbo"
+      ],
+      "productName": "CS-4",
+      "products": [
+        {
+          "name": "CS-4",
+          "type": "AI 硬件",
+          "ownerNames": []
+        },
+        {
+          "name": "WSE-3 Turbo",
+          "type": "AI 硬件",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/991/418.htm",
       "publisher": "IT之家（RSS）"
     },
     {
@@ -387,6 +489,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-58268b12aa406620",
         "EV-5ac5368309eace1a",
         "EV-b8686b4f41d1aa67",
         "EV-129ffa6be41bb485",
@@ -413,6 +516,11 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-05fea7a5d8b8db46",
+        "EV-06e31f68974104ec",
+        "EV-1e7c9d930a2a5d8e",
+        "EV-2430dae13b9f6c82",
+        "EV-5ebbe581dba0caf4",
         "EV-615fbb4de33fad2d",
         "EV-ea2598236eae915f",
         "EV-3acfc317c18e3ef9",
@@ -587,6 +695,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-11a0afc2ecb6e42e",
+        "EV-9940dccace747f28",
         "EV-0c00a6c681f22b98",
         "EV-f819309f846d95bc",
         "EV-2902a32e86a4b2d1",
@@ -682,10 +792,10 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-d1ad14d4ad57d207",
         "EN-8d4321d936320802",
         "EN-916a98f0fa2a39af",
         "EN-7839fb10a8f14c70",
-        "EN-d1ad14d4ad57d207",
         "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
         "EN-3850792f618f534b",
@@ -708,7 +818,28 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-19"
+    },
+    {
+      "id": "EN-77b30b8a88051252",
+      "name": "Cerebras",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-2c6707327367640f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-inference_optimization"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-19",
+      "lastSeen": "2026-08-19"
     },
     {
       "id": "EN-de6b71bf77ff4299",
@@ -736,8 +867,189 @@
     }
   ],
   "fde": [],
-  "hardware": [],
+  "hardware": [
+    {
+      "id": "HW-bc7449cedae06b7a",
+      "eventId": "EV-2c6707327367640f",
+      "dataDate": "2026-08-19",
+      "date": "2026-08-19",
+      "title": "Cerebras 推出 WSE-3 Turbo 芯片与 CS-4 系统：10 倍词元容量、2 倍速度",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "Cerebras",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 44,
+      "capacityUnit": "GB",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化",
+          "entityIds": [
+            "EN-77b30b8a88051252"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/991/418.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-08-19",
+      "entityIds": [
+        "EN-77b30b8a88051252",
+        "EN-49dba228d91e7180",
+        "EN-6eb8882ab15df1c2"
+      ]
+    }
+  ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-910902f8a2628234",
+      "snapshotKey": "910902f8a2628234",
+      "snapshotId": "HWS-52c321fc05062711",
+      "eventId": "EV-2c6707327367640f",
+      "eventIds": [
+        "EV-2c6707327367640f"
+      ],
+      "dataDate": "2026-08-19",
+      "date": "2026-08-19",
+      "title": "CS-4 / WSE-3 Turbo",
+      "subject": "Cerebras",
+      "productNames": [
+        "CS-4",
+        "WSE-3 Turbo"
+      ],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-ec1c8376ede4537b"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-19",
+          "hardware_fact_id": "HWF-22f75dfb96c258c6",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T01:12:57.000Z",
+          "subject_entity_id": "EN-77b30b8a88051252",
+          "subject_name": "Cerebras",
+          "product_entity_ids": [
+            "EN-49dba228d91e7180",
+            "EN-6eb8882ab15df1c2"
+          ],
+          "product_names": [
+            "CS-4",
+            "WSE-3 Turbo"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "10 倍词元容量：Cerebras 推出 WSE-3 Turbo 芯片与 CS-4 系统 - IT之家",
+          "event_refs": [
+            "EV-2c6707327367640f"
+          ],
+          "claim_ref": "CL-08f43b3ecd18805c",
+          "source_refs": [
+            "SA-08dab066650882b1"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-19/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-19",
+          "hardware_fact_id": "HWF-8e7b0721bac932ca",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T01:12:57.000Z",
+          "subject_entity_id": "EN-77b30b8a88051252",
+          "subject_name": "Cerebras",
+          "product_entity_ids": [
+            "EN-49dba228d91e7180",
+            "EN-6eb8882ab15df1c2"
+          ],
+          "product_names": [
+            "CS-4",
+            "WSE-3 Turbo"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "10 倍词元容量：Cerebras 推出 WSE-3 Turbo 芯片与 CS-4 系统",
+          "event_refs": [
+            "EV-2c6707327367640f"
+          ],
+          "claim_ref": "CL-edf916afb991a3e5",
+          "source_refs": [
+            "SA-08dab066650882b1"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-19/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-19",
+          "hardware_fact_id": "HWF-ec1c8376ede4537b",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T01:12:57.000Z",
+          "subject_entity_id": "EN-77b30b8a88051252",
+          "subject_name": "Cerebras",
+          "product_entity_ids": [
+            "EN-49dba228d91e7180",
+            "EN-6eb8882ab15df1c2"
+          ],
+          "product_names": [
+            "CS-4",
+            "WSE-3 Turbo"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 8 月 19 日消息，晶圆级 AI 推理加速器制造商 Cerebras 当地时间 18 日宣布推出其新一代芯片 WSE-3 Turbo 和基于该芯片的 CS-4 系统。",
+          "event_refs": [
+            "EV-2c6707327367640f"
+          ],
+          "claim_ref": "CL-85a4e31e93d7994f",
+          "source_refs": [
+            "SA-08dab066650882b1"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-19/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化",
+          "entityIds": [
+            "EN-77b30b8a88051252"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/991/418.htm",
+      "entityIds": [
+        "EN-77b30b8a88051252",
+        "EN-49dba228d91e7180",
+        "EN-6eb8882ab15df1c2"
+      ]
+    },
     {
       "id": "HWC-a69a19ffe8796885",
       "snapshotKey": "a69a19ffe8796885",

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-18T00:24:57.421Z",
-    "latestDataDate": "2026-08-18",
-    "currentDate": "2026-08-18",
-    "eventCount": 2199,
+    "generatedAt": "2026-08-19T02:05:03.499Z",
+    "latestDataDate": "2026-08-19",
+    "currentDate": "2026-08-19",
+    "eventCount": 2220,
     "quarantinedEventCount": 19
   },
   "entity": {
@@ -39,8 +39,10 @@
       "EV-c0f87b8c5208cd75",
       "EV-53f08daddd011dbb",
       "EV-e1a4bc40db4a9d8f",
+      "EV-b99c318c66e1a295",
       "EV-3d9aa640411471ea",
       "EV-2a833330267cb2df",
+      "EV-7a600ac040c304a2",
       "EV-c87e32451657c301",
       "EV-5fe819e7070b76e6",
       "EV-defb496c46fcc604",
@@ -118,7 +120,7 @@
       "EN-d65d81c60c0c47c4"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-08-17",
+    "lastSeen": "2026-08-19",
     "organizationFamilyId": "EN-047364b9be67f665",
     "organizationRole": "group",
     "organizationFamilyEntityIds": [
@@ -154,10 +156,12 @@
         "EV-e1a4bc40db4a9d8f"
       ],
       "partnerships": [
+        "EV-b99c318c66e1a295",
         "EV-3d9aa640411471ea",
         "EV-2a833330267cb2df"
       ],
       "productsServices": [
+        "EV-7a600ac040c304a2",
         "EV-c87e32451657c301",
         "EV-f7b81752b1fadd87",
         "EV-5fe819e7070b76e6",
@@ -218,6 +222,39 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-b99c318c66e1a295",
+        "dataDate": "2026-08-19",
+        "date": "2026-08-18",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "阿里千问办公接入企业微信，已覆盖钉钉、飞书等国内主流办公平台",
+        "displayTags": [],
+        "entityIds": [
+          "EN-1f0705234e1c6260",
+          "EN-047364b9be67f665"
+        ]
+      },
+      {
+        "id": "EV-7a600ac040c304a2",
+        "dataDate": "2026-08-19",
+        "date": "2026-08-18",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "人人都能写好听的歌，阿里发布AI音乐模型HappyShrimp",
+        "displayTags": [],
+        "entityIds": [
+          "EN-549af711b4412d5a",
+          "EN-047364b9be67f665",
+          "EN-157e73f6fee40415"
+        ]
+      },
       {
         "id": "EV-c87e32451657c301",
         "dataDate": "2026-08-17",
@@ -3186,6 +3223,7 @@
         "EV-b1138bccf5ccd86c",
         "EV-dd78b63f18dba410",
         "EV-f1a605a25af30dc5",
+        "EV-83085b0046c7275c",
         "EV-4c247b02485de09b",
         "EV-e9d06e8a06aa7318",
         "EV-7e1624d7df300713",
@@ -3403,6 +3441,7 @@
         "EN-a972bc1b3220493e",
         "EN-ef292e56955a1c10",
         "EN-20b5af8f2c749bf8",
+        "EN-8d319684b6042af4",
         "EN-b10da733dff99be1",
         "EN-4e4b333252f207fd",
         "EN-049b3253f4a8e2eb",
@@ -3493,7 +3532,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-19"
     },
     {
       "id": "TX-product_form-ai_device",
@@ -3510,6 +3549,7 @@
         "EV-b93102125cc062e3",
         "EV-a6b4fa32cce7c483",
         "EV-2ffc3377977da114",
+        "EV-cff5848b8c5453af",
         "EV-02015794e4c719d0",
         "EV-4e8f6e91e4451ba1",
         "EV-82e68f59d8584e4e",
@@ -3526,6 +3566,7 @@
         "EN-193d220b421d776e",
         "EN-b81c8201acfc7639",
         "EN-88e2cce43eeadb36",
+        "EN-478676438ee161a3",
         "EN-5fdd673ed1fcff1d",
         "EN-ae0facccf0a3723a",
         "EN-047364b9be67f665",
@@ -3536,7 +3577,7 @@
         "HW-073f0034b9be13b2"
       ],
       "firstSeen": "2026-05-21",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-19"
     },
     {
       "id": "TX-use_case-productivity_enterprise_workflows",
@@ -3609,6 +3650,7 @@
         "EV-c3b8772c06a25dbc",
         "EV-b1138bccf5ccd86c",
         "EV-dd78b63f18dba410",
+        "EV-83085b0046c7275c",
         "EV-4c247b02485de09b",
         "EV-e9d06e8a06aa7318",
         "EV-7e1624d7df300713",
@@ -3715,6 +3757,7 @@
         "EN-befc92b3a019d04c",
         "EN-ef292e56955a1c10",
         "EN-20b5af8f2c749bf8",
+        "EN-8d319684b6042af4",
         "EN-b10da733dff99be1",
         "EN-4e4b333252f207fd",
         "EN-049b3253f4a8e2eb",
@@ -3762,7 +3805,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-19"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -3966,6 +4009,8 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-2430dae13b9f6c82",
+        "EV-257c7ec21edf638a",
         "EV-0d5a32aca724d30e",
         "EV-615fbb4de33fad2d",
         "EV-4551be310b520fcc",
@@ -4231,6 +4276,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-09a29379b6399236",
         "EV-2c17183b71d8b7d1",
         "EV-9db14ad0d6fe3135",
         "EV-7a3a3754522828e1",
@@ -4402,6 +4448,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-35c53e7e400caf01",
         "EN-32e83e92d45d71f6",
         "EN-3b9e1cdd9e593b5c",
         "EN-bbdefa2950f49882",
@@ -4540,6 +4587,7 @@
         "EN-b7bea343b08cce2c",
         "EN-fdb2cc367267ac57",
         "EN-4a639cb888a15d75",
+        "EN-11507a0e2f5e69d5",
         "EN-0616a267820d2c78",
         "EN-286a3c612017ad1d",
         "EN-16478186eeecf696",
@@ -4636,6 +4684,7 @@
         "EV-c4c8976ab5b629a3",
         "EV-e3382d1c1d7db751",
         "EV-b348083270be6c65",
+        "EV-83085b0046c7275c",
         "EV-e9d06e8a06aa7318",
         "EV-e8d1de5c77f32b9c",
         "EV-e579af588ad8cf64",
@@ -4676,6 +4725,7 @@
         "EN-a8ef01283d653e46",
         "EN-ee1e31ffef7dbe64",
         "EN-1c5483264189feef",
+        "EN-8d319684b6042af4",
         "EN-4e4b333252f207fd",
         "EN-67e05af6c6502566",
         "EN-2b81d85809794782",
@@ -4784,6 +4834,7 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-3a4acc92731cb5ac",
         "EV-0d5a32aca724d30e",
         "EV-63948deaec161736",
         "EV-f7b81752b1fadd87",
@@ -5094,7 +5145,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-19"
     },
     {
       "id": "TX-technology-computer_use",
@@ -5302,7 +5353,7 @@
         "HW-304c6370cc157449"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-19"
     },
     {
       "id": "TX-technology-video_generation",
