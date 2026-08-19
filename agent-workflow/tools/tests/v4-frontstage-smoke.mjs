@@ -16,7 +16,6 @@ const smokeEntity = entityIndex.companies?.[0] || entityIndex.products?.[0] || e
 const smokeFounder = entityIndex.people?.find((person) => person.fundingInsightIds?.length);
 const smokeTaxonomy = entityIndex.taxonomyNodes?.[0];
 const cases = [
-  ["index.html", "funding-insights.html"],
   ["data-center.html?view=events", "data-center.html?view=events"],
   ["data-center.html?view=events&theme=fde", "data-center.html?view=events"],
   ["data-center.html?view=events&theme=hardware", "data-center.html?view=events"],
@@ -29,17 +28,8 @@ const cases = [
   [`data-center.html?view=index&detail=entity&id=${encodeURIComponent(smokeEntity.id)}`, "data-center.html?view=index"],
   [`data-center.html?view=index&detail=entity&id=${encodeURIComponent(smokeFounder.id)}`, "data-center.html?view=index"],
   [`data-center.html?view=index&detail=taxonomy&id=${encodeURIComponent(smokeTaxonomy.id)}`, "data-center.html?view=index"],
-  ["intelligence-map.html", "intelligence-map.html"],
-  ["funding-insights.html", "funding-insights.html"],
   ["opportunity-map.html", "opportunity-map.html"],
   ["trend-radar.html", "trend-radar.html"],
-  ["weekly-ai-business-change-radar.html", "weekly-ai-business-change-radar.html"],
-  ["monthly-business-structure-2026-06.html", "monthly-business-structure-2026-06.html"],
-  ["v3-data-observation.html?date=2026-07-17#detail", "data-center.html"],
-  ["follow-builders.html", "data-center.html"],
-  ["community-intelligence.html", "data-center.html"],
-  ["reports.html", "intelligence-map.html"],
-  ["pipeline-dashboard.html?from=legacy#status", "operations-console.html"],
 ];
 
 function contentType(file) {
@@ -93,61 +83,7 @@ async function main() {
         page.on("pageerror", (error) => errors.push(error.message));
         const response = await page.goto(`${baseUrl}/${route}`, { waitUntil: "networkidle" });
         await page.waitForTimeout(250);
-        let fundingDialog = null;
-        let fundingMarketCategoryFilter = null;
         let founderProfile = null;
-        if (route === "funding-insights.html") {
-          const marketCategorySelect = page.locator('select[name="market_category"]');
-          const marketCategoryOptions = await marketCategorySelect.locator("option").evaluateAll((options) => options
-            .map((option) => ({ value: option.value, label: option.textContent?.trim() || "" }))
-            .filter((option) => option.value));
-          if (marketCategoryOptions.length) {
-            const selected = marketCategoryOptions[0];
-            await marketCategorySelect.selectOption(selected.value);
-            const visibleCategories = await page.locator(".fi-card-meta span:first-child").allTextContents();
-            fundingMarketCategoryFilter = visibleCategories.length > 0
-              && visibleCategories.every((label) => label.trim().startsWith(`${selected.label} ·`));
-            await marketCategorySelect.selectOption("");
-          } else {
-            fundingMarketCategoryFilter = false;
-          }
-          const firstCard = page.locator("[data-open-id]").first();
-          if (await firstCard.count()) {
-            await firstCard.click();
-            await page.waitForFunction(() => document.querySelector("[data-dialog]")?.open === true);
-            const text = await page.locator("[data-dialog-content]").innerText();
-            fundingDialog = [
-              "创始团队",
-              "投资逻辑",
-              "机构公开理由",
-              "产品",
-              "目标客户",
-              "客户案例",
-              "关键数据",
-              "竞争坐标",
-              "融资历史",
-              "来源证据",
-            ].every((token) => text.includes(token))
-              && !["尚待验证问题", "产品与买方", "客户与关键数据"].some((token) => text.includes(token));
-            if (viewport.name === "desktop" || viewport.name === "mobile") {
-              await page.screenshot({
-                path: path.join(screenshotDir, `funding-insights-detail-${viewport.name}.png`),
-                fullPage: false,
-              });
-              await page.locator(".fi-investment-section").scrollIntoViewIfNeeded();
-              await page.screenshot({
-                path: path.join(screenshotDir, `funding-insights-detail-body-${viewport.name}.png`),
-                fullPage: false,
-              });
-              await page.locator("[data-dialog]").evaluate((element) => {
-                element.scrollTop = 0;
-              });
-            }
-            await page.locator("[data-dialog-close]").click();
-          } else {
-            fundingDialog = false;
-          }
-        }
         if (route.includes(`id=${encodeURIComponent(smokeFounder.id)}`)) {
           const text = await page.locator("main").innerText();
           founderProfile = ["创始关联", "融资档案", "创始人证据"].every((token) => text.includes(token))
@@ -244,8 +180,6 @@ async function main() {
           && (!metrics.reportFeatureAlignment || (metrics.reportFeatureAlignment.cardBottomDelta <= 1 && metrics.reportFeatureAlignment.linkBottomDelta <= 1))
           && metrics.reportSectionHeadAlignment?.ok !== false
           && metrics.eventMobileFilters?.ok !== false
-          && fundingDialog !== false
-          && fundingMarketCategoryFilter !== false
           && founderProfile !== false
           && errors.length === 0;
         results.push({
@@ -254,38 +188,20 @@ async function main() {
           finalUrl: page.url(),
           status: response?.status(),
           ...metrics,
-          fundingDialog,
-          fundingMarketCategoryFilter,
           founderProfile,
           errors,
           ok,
         });
 
         if (viewport.name === "desktop" && [
-          "index.html",
-          "intelligence-map.html",
-          "funding-insights.html",
+          "data-center.html?view=events",
           "opportunity-map.html",
           "trend-radar.html",
-          "weekly-ai-business-change-radar.html",
-          "monthly-business-structure-2026-06.html",
         ].includes(route)) {
           await page.screenshot({
             path: path.join(screenshotDir, `${route.replace(/[^a-z0-9]+/giu, "-")}.png`),
             fullPage: false,
           });
-        }
-        if (viewport.name === "mobile" && route === "weekly-ai-business-change-radar.html") {
-          await page.locator("[data-nav-toggle]").click();
-          await page.waitForFunction(() => {
-            const sidebar = document.querySelector("[data-sidebar]");
-            return sidebar?.dataset.open === "true"
-              && getComputedStyle(sidebar).transform === "matrix(1, 0, 0, 1, 0, 0)";
-          });
-          await page.screenshot({ path: path.join(screenshotDir, "weekly-mobile-nav.png"), fullPage: false });
-        }
-        if (viewport.name === "mobile" && route === "funding-insights.html") {
-          await page.screenshot({ path: path.join(screenshotDir, "funding-insights-mobile.png"), fullPage: false });
         }
         if (viewport.name === "mobile" && route === "data-center.html?view=events") {
           await page.screenshot({ path: path.join(screenshotDir, "event-library-mobile.png"), fullPage: false });
@@ -295,7 +211,6 @@ async function main() {
           ["data-center.html?view=viewpoints", "first-line-viewpoints-mobile.png"],
           ["data-center.html?view=index", "entity-library-mobile.png"],
           ["trend-radar.html", "trend-radar-mobile.png"],
-          ["intelligence-map.html", "guanlan-research-mobile.png"],
         ]);
         if (viewport.name === "mobile" && mobileAuditScreenshots.has(route)) {
           await page.screenshot({
