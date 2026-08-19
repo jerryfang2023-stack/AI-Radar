@@ -807,6 +807,24 @@ test("a secured AI infrastructure contract with a dollar value is not funding", 
   assert.ok(bundle.claims.every((claim) => claim.claim_type !== "funding"));
 });
 
+test("a procurement headline ending in an AI tender product still links the winning company", () => {
+  const title = "Cactus Wins MeitY Contract To Build AI Tender Authoring Platform";
+  const bundle = buildBundle([
+    entry(
+      "cactus-meity-contract",
+      title,
+      `${title}. Mumbai-based Cactus Technology Solutions has been awarded a contract by the National e-Governance Division under the IT Ministry to build an artificial intelligence powered procurement authoring platform.`,
+    ),
+  ], taxonomy, date, "2026-08-19T00:00:00.000Z");
+
+  const event = bundle.canonical_events[0];
+  const cactus = bundle.entities.find((entity) => entity.canonical_name === "Cactus");
+  assert.equal(event.event_type, "procurement_contract");
+  assert.ok(cactus);
+  assert.ok(event.entities.includes(cactus.entity_id));
+  assert.ok(!event.missing_fields.includes("entities"));
+});
+
 test("contract hardware financing language does not turn a customer agreement into funding", () => {
   const bundle = buildBundle([
     entry(

@@ -687,6 +687,7 @@ function cleanOrganizationCandidate(value) {
     .replace(/\s+(?:in talks to|plans? to|expected to|intends? to|to)$/iu, "")
     .replace(/\s+(?:announces?|announced)$/iu, "")
     .replace(/\s+(?:AI\s+)?(?:hardware\s+)?(?:startup|funding)$/iu, "")
+    .replace(/\s+(?:wins?|won|awarded|secures?|secured)\b.*$/iu, "")
     .replace(/\s+(?:(?:form|forms|formed|announce|announces|announced|expand|expands|expanded)(?:\s+(?:a|an|the|their|its|strategic|multi-year|global|longstanding|new|expanded)){0,4}|(?:wins?|won|awarded)\s+(?:the|a|an))$/iu, "")
     .replace(/(?:研究员|首席执行官|CEO|创始人|员工|高管|团队).*/u, "")
     .replace(/[，,:：].*$/u, "")
