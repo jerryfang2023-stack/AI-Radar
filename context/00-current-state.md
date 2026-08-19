@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-state
-last_updated: 2026-08-18
+last_updated: 2026-08-19
 use_when:
   - large task startup
   - dispatch planning
@@ -23,15 +23,15 @@ The Data Center now has an independent Git baseline: `GUANLAN-DATA-CENTER-V4.8.1
 - The current backend entry is the operations dashboard.
 - The production core turns external sources into SourceArtifacts, RawDocuments, Claims, Entities, CanonicalEvents, domain projections, and queryable exports.
 - The current collection lane writes ephemeral source snapshots, copies complete bodies into the authoritative private evidence store, converts public V4 records to `evidence://<content_hash>` locators, and then removes the ephemeral public copies. `SOURCE-INTAKE-V1` remains the structured handoff.
-- Current column versions: First-Line Viewpoints `FLV-V1.1.0-history-backfill`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Trend Radar `TRADAR-V1.1.0-tag-v4-1`, Funding Insights `FUNDING-INSIGHT-V1.5.0-china-market`, financing portal `FUNDING-PORTAL-V2.8.1`, report publication `REPORTS-V1.3.0-funding-portal`, Opportunity Map `OMAP-V2.0.0-v4-evidence`.
+- Current column versions: First-Line Viewpoints `FLV-V1.1.0-history-backfill`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Trend Radar `TRADAR-V1.1.0-tag-v4-1`, Funding Insights `FUNDING-INSIGHT-V1.5.0-china-market`, financing portal `FUNDING-PORTAL-V2.8.2`, report publication `REPORTS-V1.3.0-funding-portal`, Opportunity Map `OMAP-V2.0.0-v4-evidence`.
 - China-market coverage runs inside the existing commercial-event intake and scheduler. It distinguishes registered source types without source weights, excludes procurement/tender lanes, and writes evidence-backed `market_scope` only when an accepted Raw/Event match has an explicit controlled basis.
 - Current person review contract: `PERSON-REVIEW-V1.1`; the original 37 person/account candidates remain fully reviewed (31 natural people public, 6 non-natural accounts quarantined), and 30 additional funding founders are public only after explicit source-backed review. The remaining funding person candidates stay outside the public Entity Index.
 - Current data versions: `SOURCE-INTAKE-V1.1`, `RAW-V4.0`, `EVENT-V1.1`, `ENTITY-V1.0`, `RELATION-V2.1`, `BACKFILL-V1.0`, `FDE-V2.0`, `FDE-OBSERVATION-V1.0`, `HARDWARE-V1.0`, `HARDWARE-FACT-V1.0`, `HARDWARE-SNAPSHOT-V1.0`, `LENS-FUNNEL-V1.0`, `TAG-V4.1`.
 - Current local knowledge-base version: `GUANLAN-VAULT-V1.2-private-evidence-linked`. The Guanlan AI Vault is physically independent from the repository and stores citation cards and traceable links only.
 - Current data-lake contract: `DATA-LAKE-V4.1-24-table`; JSONL and DuckDB must expose exactly the same 24-table V4 allowlist, including reviewed event classifications.
 - Current private evidence store: `PRIVATE-EVIDENCE-STORE-V2.0`; it is the sole complete-original store, deduplicates bodies by `content_hash`, and is physically outside the public repository and Vault. Public V4 data, the Vault, and the website never retain complete bodies.
-- Current Funding Insights inventory: 291 accepted application cards aggregate to 267 public financing-event cards through 2026-08-18. The projection exposes original and normalized amount, round, financing date, disclosure status, investor roles, cumulative basis, and stable history. It also builds 1,267 evidence-backed investor subjects with 1,467 current-round activities; unresolved product/person names remain in the evidence-backed entity review queue. The PC portal, live Mini Program endpoint, and bundled Mini Program fallback all publish the same 267-card inventory.
-- Current private evidence inventory: 12,064 snapshots, 11,345 unique bodies, and zero missing bodies.
+- Current Funding Insights inventory: 292 accepted application cards aggregate to 268 public financing-event cards through 2026-08-19. The projection exposes original and normalized amount, round, financing date, disclosure status, investor roles, cumulative basis, and stable history. It also builds 1,267 evidence-backed investor subjects with 1,467 current-round activities; unresolved product/person names remain in the evidence-backed entity review queue. The PC portal, live Mini Program endpoint, and bundled Mini Program fallback all publish the same 268-card inventory.
+- Current private evidence inventory: 16,777 snapshots, 13,861 unique bodies, and zero missing bodies.
 - Current Windows automation contract: seven tasks. Final Closure owns data-lake refresh; Hermes watchdog and heartbeat publication run as one control-plane task.
 
 ## Current Entries
