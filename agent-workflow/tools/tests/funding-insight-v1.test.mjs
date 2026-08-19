@@ -21,6 +21,7 @@ import {
   fundingInsightProblems,
   isEligibleFundingInsightEvent,
   normalizeFundingAmount,
+  normalizeFounderRole,
   normalizeFundingRound,
   normalizeFundingInsightCard,
   partitionRoundInvestors,
@@ -458,6 +459,13 @@ test("融资轮次统一为稳定代码和中文展示名，同时保留原始�
     label: "多轮融资",
     original: "Seed and Series A",
   });
+});
+
+test("创始人常见英文职位统一为中文公开展示", () => {
+  assert.equal(normalizeFounderRole("Founder"), "创始人");
+  assert.equal(normalizeFounderRole("Co-Founder"), "联合创始人");
+  assert.equal(normalizeFounderRole("Co-Founder & CEO"), "联合创始人兼 CEO");
+  assert.equal(normalizeFounderRole("董事长"), "董事长");
 });
 
 test("融资金额同时保留原文并生成可计算的币种、基准值和中文标准展示", () => {

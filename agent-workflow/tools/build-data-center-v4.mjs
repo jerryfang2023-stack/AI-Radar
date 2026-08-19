@@ -946,7 +946,9 @@ function claimCandidates(body, title, rule, subject = "") {
       return index >= 0 ? all.slice(index + 1, index + 3) : [];
     })
     : [];
-  const merged = [...direct, ...supporting, ...related].filter((span, index, list) => list.findIndex((item) => item.start === span.start) === index);
+  const merged = [...direct, ...supporting, ...related]
+    .filter((span, index, list) => list.findIndex((item) => item.start === span.start) === index)
+    .filter((span) => rule.eventType !== "funding" || rule.pattern.test(span.quote));
   return merged.slice(0, 4);
 }
 

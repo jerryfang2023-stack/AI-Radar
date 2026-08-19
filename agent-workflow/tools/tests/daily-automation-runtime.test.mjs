@@ -88,6 +88,16 @@ test("morning controller repairs derived repo Skill runtime before auditing it",
   assert.match(controller, /actions: \[runtimeSync, discoveryRefresh, preflight, business\]/u);
 });
 
+test("final closure refreshes Skill discovery immediately before supervision", () => {
+  const controller = read("run-daily-automation-controller.mjs");
+  assert.match(
+    controller,
+    /const discoveryRefresh = run\("Refresh Skill discovery summary before final supervision"[^]*const supervision = run\("Final daily supervision"/u,
+  );
+  assert.match(controller, /fundingPortal\.ok && discoveryRefresh\.ok && supervisionReported/u);
+  assert.match(controller, /fundingPortal, discoveryRefresh, supervisionAction/u);
+});
+
 test("periodic reports tolerate slower cloud generation and expose failed child diagnostics", () => {
   const generator = read("generate-periodic-report-deepseek.mjs");
   const controller = read("run-periodic-automation-controller.mjs");

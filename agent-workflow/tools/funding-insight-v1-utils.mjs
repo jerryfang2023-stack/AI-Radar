@@ -95,6 +95,22 @@ export function clean(value = "") {
   return String(value || "").replace(/\s+/gu, " ").trim();
 }
 
+export function normalizeFounderRole(value = "") {
+  const role = clean(value);
+  const translations = new Map([
+    ["Founder", "创始人"],
+    ["Co-Founder", "联合创始人"],
+    ["Co-founder", "联合创始人"],
+    ["Founder & CEO", "创始人兼 CEO"],
+    ["Founder and CEO", "创始人兼 CEO"],
+    ["Co-Founder & CEO", "联合创始人兼 CEO"],
+    ["Co-founder & CEO", "联合创始人兼 CEO"],
+    ["Co-Founder and CEO", "联合创始人兼 CEO"],
+    ["Co-founder and CEO", "联合创始人兼 CEO"],
+  ]);
+  return translations.get(role) || role;
+}
+
 const FUNDING_CURRENCY_LABELS = {
   USD: "美元",
   CNY: "元",
@@ -593,9 +609,10 @@ export function normalizeFundingInsightCard(
     round,
     card.financing?.announced_at || "",
   );
-  const founders = (card.company?.founders || []).map(
-    (item) => resolvedResearchItem(item, "person", resolve, acceptedDecisions),
-  );
+  const founders = (card.company?.founders || []).map((item) => ({
+    ...resolvedResearchItem(item, "person", resolve, acceptedDecisions),
+    role: normalizeFounderRole(item.role),
+  }));
   const products = (card.products || []).map(
     (item) => resolvedResearchItem(item, "product", resolve, acceptedDecisions),
   );

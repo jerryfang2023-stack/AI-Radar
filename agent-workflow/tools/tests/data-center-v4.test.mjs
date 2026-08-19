@@ -479,6 +479,26 @@ test("funding amounts with equivalent units cluster into one canonical event", (
   assert.equal(bundle.canonical_events[0].source_refs.length, 2);
 });
 
+test("funding claims exclude adjacent fundraising metrics, links, and section headings", () => {
+  const bundle = buildBundle([
+    entry(
+      "ontora-funding-evidence",
+      "Ontora Raised $700K for Its Enterprise AI Platform Before Officially Opening Its Round",
+      [
+        "Ontora launches the discovery layer for AI transformation.",
+        "- $700K raised before officially opening our round",
+        "- 80+ inbound VC calls already lined up for our fundraise",
+        "https://www.youtube.com/watch?",
+        "2. What Ontora does for your company:",
+      ].join("\n"),
+      { title_zh: "企业级 AI 平台 Ontora 已融资 70 万美元" },
+    ),
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.claims.length, 1);
+  assert.equal(bundle.claims[0].source_quote, "- $700K raised before officially opening our round");
+});
+
 test("launches with disclosed capital is normalized as funding", () => {
   const bundle = buildBundle([
     entry(
