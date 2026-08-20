@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-20T01:52:33.847Z",
+    "latestDataDate": "2026-08-20",
+    "currentDate": "2026-08-20",
+    "eventCount": 2246,
+    "quarantinedEventCount": 20
+  },
+  "institution": {
+    "id": "INV-f5d501148e281f",
+    "name": "NXC Corporation",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-06-16",
+    "latest_disclosed_at": "2026-06-16",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-13c0e46ddf7f6d16",
+        "funding_insight_id": "FI-ffd2c01a3352f704",
+        "event_ids": [
+          "EV-a81c5dc2e9abff3a"
+        ],
+        "company_entity_id": "EN-5e0971a2294ea3f7",
+        "company_canonical_entity_id": "",
+        "company_name": "Articul8 AI",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$500 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-06-16",
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-72fce85a7a820991",
+            "source_url": "https://economictimes.indiatimes.com/ai/ai-insights/aditya-birla-ventures-backs-ai-startup-articul8-in-70m-funding-round/articleshow/126409445.cms",
+            "source_title": "Aditya Birla Ventures Backs AI Startup Articul8 in $70M Funding Round - The Economic Times",
+            "source_content_hash": "86428349e0ef5896",
+            "quote": "Other investors in the round include Adara Ventures and NXC Corporation.",
+            "quote_hash": "45f270fef3134be0c4cbc169c81a554ad6e65229d6a5310c535405bd53607371"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-72fce85a7a820991",
+        "source_url": "https://economictimes.indiatimes.com/ai/ai-insights/aditya-birla-ventures-backs-ai-startup-articul8-in-70m-funding-round/articleshow/126409445.cms",
+        "source_title": "Aditya Birla Ventures Backs AI Startup Articul8 in $70M Funding Round - The Economic Times",
+        "source_content_hash": "86428349e0ef5896",
+        "quote": "Other investors in the round include Adara Ventures and NXC Corporation.",
+        "quote_hash": "45f270fef3134be0c4cbc169c81a554ad6e65229d6a5310c535405bd53607371"
+      }
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-20T01:52:33.847Z",
+    "latestDataDate": "2026-08-20",
+    "currentDate": "2026-08-20",
+    "eventCount": 2246,
+    "quarantinedEventCount": 20
+  },
+  "institution": {
+    "id": "INV-3580c10fd9cec4",
+    "name": "Kraken",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-08-13",
+    "latest_disclosed_at": "2026-08-13",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "other"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-c0b0109d9439de57",
+        "canonical_entity_id": "",
+        "name": "GitHub"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-5af02e45dd94dda6",
+        "funding_insight_id": "FI-d856b9470e389a68",
+        "event_ids": [
+          "EV-75452672c9976d73"
+        ],
+        "company_entity_id": "EN-c0b0109d9439de57",
+        "company_canonical_entity_id": "",
+        "company_name": "GitHub",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "GitHub Secure Open Source Fund Session 4",
+        "amount_original": "$500,000",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 万美元"
+        },
+        "announced_at": "2026-08-13",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-08365977cd80206b",
+            "source_url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
+            "source_title": "50个开源项目教会我们的AI时代安全之道",
+            "source_content_hash": "269f33be0068a71b",
+            "quote": "Funding Partners: Alfred P. Sloan Foundation, American Express, Chainguard, Datadog, Herodevs, Kraken, Mayfield, Microsoft, Shopify, Stripe, Superbloom, Vercel, Zerodha, 1Password",
+            "quote_hash": "57a3b10ecc8879baca9d411eb7712d020a1e7be6e0eca203be9e70272fc56400"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-08365977cd80206b",
+        "source_url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
+        "source_title": "50个开源项目教会我们的AI时代安全之道",
+        "source_content_hash": "269f33be0068a71b",
+        "quote": "Funding Partners: Alfred P. Sloan Foundation, American Express, Chainguard, Datadog, Herodevs, Kraken, Mayfield, Microsoft, Shopify, Stripe, Superbloom, Vercel, Zerodha, 1Password",
+        "quote_hash": "57a3b10ecc8879baca9d411eb7712d020a1e7be6e0eca203be9e70272fc56400"
+      }
+    ]
+  }
+}

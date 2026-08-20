@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-20T01:52:33.847Z",
+    "latestDataDate": "2026-08-20",
+    "currentDate": "2026-08-20",
+    "eventCount": 2246,
+    "quarantinedEventCount": 20
+  },
+  "institution": {
+    "id": "INV-15dd04a75c31ae",
+    "name": "GOVO Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-08-19",
+    "latest_disclosed_at": "2026-08-19",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-cbb637ded27cac22",
+        "funding_insight_id": "FI-003fe18dc3262573",
+        "event_ids": [
+          "EV-8cb4468fe881602b"
+        ],
+        "company_entity_id": "EN-2f72d2f93de73383",
+        "company_canonical_entity_id": "",
+        "company_name": "Relativity Networks",
+        "round": "后续发行",
+        "round_code": "follow_on",
+        "round_original": "后续发行",
+        "amount_original": "$22 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 22000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2200 万美元"
+        },
+        "announced_at": "2026-08-19",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史种子轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7d6c90badf296dee",
+            "source_url": "https://www.datacenterdynamics.com/en/news/relativity-networks-secures-61m-during-latest-seed-funding-for-hollow-core-fiber-development/",
+            "source_title": "Relativity Networks secures $6.1m during latest seed funding for hollow core fiber development - DCD",
+            "source_content_hash": "3f1a4c8f2d28550f",
+            "quote": "The latest seed funding includes participation from Prysmian, GOVO Ventures, plus a group of new and previous investors",
+            "quote_hash": "381ffb1e6172901645be39df726e69cd9825a9fcd049dbc392ec65583f7ad3a6"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-7d6c90badf296dee",
+        "source_url": "https://www.datacenterdynamics.com/en/news/relativity-networks-secures-61m-during-latest-seed-funding-for-hollow-core-fiber-development/",
+        "source_title": "Relativity Networks secures $6.1m during latest seed funding for hollow core fiber development - DCD",
+        "source_content_hash": "3f1a4c8f2d28550f",
+        "quote": "The latest seed funding includes participation from Prysmian, GOVO Ventures, plus a group of new and previous investors",
+        "quote_hash": "381ffb1e6172901645be39df726e69cd9825a9fcd049dbc392ec65583f7ad3a6"
+      }
+    ]
+  }
+}

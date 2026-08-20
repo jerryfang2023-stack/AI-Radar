@@ -20,18 +20,19 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 2,
     "first_disclosed_at": "2025-03-03",
-    "latest_disclosed_at": "2026-07-23",
+    "latest_disclosed_at": "2026-08-19",
     "role_counts": {
-      "lead": 1,
+      "lead": 2,
       "participant": 3
     },
     "round_codes": [
       "multi_round",
       "series_c",
+      "series_d",
       "series_e",
       "undisclosed"
     ],
@@ -48,6 +49,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e80bfe3773479204",
+        "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
+        "event_ids": [
+          "EV-4af14568b1bdeb35"
+        ],
+        "company_entity_id": "FICO-etched",
+        "company_canonical_entity_id": "",
+        "company_name": "Etched",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "7 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7 亿美元"
+        },
+        "announced_at": "2026-08-19",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-5b0d14c6b8919cc0",
+            "source_url": "https://www.etched.com/progress/from-zero-to-one",
+            "source_title": "From Zero to One | Etched",
+            "source_content_hash": "1fea0cd1f712aad4",
+            "quote": "This round was led by Jane Street after testing our hardware.",
+            "quote_hash": "e2a947677006a329e76e54d805fe7b4fc0f9fcd3d67dd4d2306d9e1241c422eb"
+          }
+        ]
+      },
       {
         "activity_id": "IA-0cc14fc6846c85d8",
         "funding_insight_id": "FI-1590f6795e68ef12",
@@ -203,6 +242,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-5b0d14c6b8919cc0",
+        "source_url": "https://www.etched.com/progress/from-zero-to-one",
+        "source_title": "From Zero to One | Etched",
+        "source_content_hash": "1fea0cd1f712aad4",
+        "quote": "This round was led by Jane Street after testing our hardware.",
+        "quote_hash": "e2a947677006a329e76e54d805fe7b4fc0f9fcd3d67dd4d2306d9e1241c422eb"
+      },
       {
         "source_id": "FISRC-f34324e392a333c0",
         "source_url": "https://www.datacenterdynamics.com/en/news/ai-chip-startup-etched-closes-300m-funding-round-doubles-its-valuation-to-103bn/",

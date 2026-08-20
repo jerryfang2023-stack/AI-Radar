@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-20T01:52:33.847Z",
+    "latestDataDate": "2026-08-20",
+    "currentDate": "2026-08-20",
+    "eventCount": 2246,
+    "quarantinedEventCount": 20
+  },
+  "institution": {
+    "id": "INV-037370a0629179",
+    "name": "Bell Ventures Inc.",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-08-19",
+    "latest_disclosed_at": "2026-08-19",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "follow_on"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-2f72d2f93de73383",
+        "canonical_entity_id": "",
+        "name": "Relativity Networks"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-bb64ca80068caa57",
+        "funding_insight_id": "FI-003fe18dc3262573",
+        "event_ids": [
+          "EV-8cb4468fe881602b"
+        ],
+        "company_entity_id": "EN-2f72d2f93de73383",
+        "company_canonical_entity_id": "",
+        "company_name": "Relativity Networks",
+        "round": "后续发行",
+        "round_code": "follow_on",
+        "round_original": "后续发行",
+        "amount_original": "$22 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 22000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2200 万美元"
+        },
+        "announced_at": "2026-08-19",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e32f49cf414731d3",
+            "source_url": "https://www.prnewswire.com/news-releases/relativity-networks-raises-22m-and-lands-40m-hyperscaler-contract-to-power-the-ai-geography-era-302854769.html",
+            "source_title": "Relativity Networks 融资 2200 万美元，并获 4000 万美元超大规模合同，助力 AI 地理时代",
+            "source_content_hash": "07959d39d13f2a05",
+            "quote": "in a round drawn by new investors including Rhapsody Venture Partners, Bell Ventures Inc., and Faster Than Glass LLC",
+            "quote_hash": "bdfe1429f66dc6ad35673f77ca8328b584d20f41dbd406adbf0ca36199f7c75f"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-e32f49cf414731d3",
+        "source_url": "https://www.prnewswire.com/news-releases/relativity-networks-raises-22m-and-lands-40m-hyperscaler-contract-to-power-the-ai-geography-era-302854769.html",
+        "source_title": "Relativity Networks 融资 2200 万美元，并获 4000 万美元超大规模合同，助力 AI 地理时代",
+        "source_content_hash": "07959d39d13f2a05",
+        "quote": "in a round drawn by new investors including Rhapsody Venture Partners, Bell Ventures Inc., and Faster Than Glass LLC",
+        "quote_hash": "bdfe1429f66dc6ad35673f77ca8328b584d20f41dbd406adbf0ca36199f7c75f"
+      }
+    ]
+  }
+}
