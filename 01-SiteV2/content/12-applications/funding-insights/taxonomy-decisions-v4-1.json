@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-18T14:09:03.491Z",
+    "generated_at": "2026-08-20T01:55:31.201Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 285,
-    "input_hash": "760ab919750bdf82",
+    "decision_count": 289,
+    "input_hash": "d3fbfc58e01273a5",
     "override_count": 17,
-    "needs_review_count": 1,
-    "low_confidence_count": 6
+    "needs_review_count": 2,
+    "low_confidence_count": 8
   },
   "decisions": [
     {
@@ -5651,6 +5651,82 @@
       "confidence": 0.75,
       "needs_review": false,
       "rationale": "Ontora 通过 AI 代理持续访谈员工以映射实际工作流程，属于跨行业的业务流程发现与运营智能，不涉及物理世界执行，也不是面向 AI 构建者的基础设施，因此归入企业应用下的生产力/企业工作流。"
+    },
+    {
+      "event_id": "EV-a81c5dc2e9abff3a",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "data_analysis",
+        "knowledge_search"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "energy_utilities"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "证据明确指向工业领域专用生成式AI平台，连接SCADA、PLM、ERP等工业系统，围绕工业数据和合规工作流构建，属于行业应用而非通用基础设施。"
+    },
+    {
+      "event_id": "EV-4af14568b1bdeb35",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_compute_system",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Etched自研芯片、机架和软件，为前沿模型推理提供硬件计算基础设施，属于基础设施计算中的硬件/计算层。"
+    },
+    {
+      "event_id": "EV-75452672c9976d73",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "model_agent_security",
+      "product_form_id": "security_software",
+      "use_case_ids": [
+        "security_operations",
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "GitHub Secure Open Source Fund聚焦开源软件安全，提供安全工具和AI辅助工作流，但证据未明确其核心产品是安全基础设施还是开发者工具，需复核。"
+    },
+    {
+      "event_id": "EV-8cb4468fe881602b",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "telecommunications"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": false,
+      "rationale": "Relativity Networks定义分布式AI的网络层，提供空心光纤ChronoCore™，属于AI计算基础设施中的硬件/网络基础设施。"
     }
   ]
 }

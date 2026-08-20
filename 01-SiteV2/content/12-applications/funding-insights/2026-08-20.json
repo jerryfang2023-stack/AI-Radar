@@ -14,7 +14,8 @@
       "blocked": 0,
       "pending": 0,
       "deduplicated": 0
-    }
+    },
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
@@ -498,13 +499,11 @@
         "market_subcategory_id": "hardware_computing",
         "market_application_id": "computing_infrastructure",
         "use_case_ids": [
-          "physical_automation"
+          "software_development"
         ],
-        "industry_ids": [
-          "financial_services"
-        ],
+        "industry_ids": [],
         "target_user_ids": [
-          "business_user"
+          "developer"
         ],
         "sector": "AI推理硬件与基础设施",
         "investment_thesis": {
@@ -776,7 +775,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-20T00:29:59.406Z"
+        "generated_at": "2026-08-20T00:29:59.406Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-4af14568b1bdeb35",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1232,12 +1239,13 @@
         ],
         "related_direction_id": "",
         "taxonomy_version": "TAG-V4.1",
-        "product_form_id": "enterprise_software_platform",
+        "product_form_id": "security_software",
         "market_category_id": "infrastructure_compute",
         "market_subcategory_id": "observability_evaluation",
-        "market_application_id": "ai_observability_governance",
+        "market_application_id": "model_agent_security",
         "use_case_ids": [
-          "security_operations"
+          "security_operations",
+          "software_development"
         ],
         "industry_ids": [],
         "target_user_ids": [
@@ -1422,7 +1430,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-20T00:29:11.040Z"
+        "generated_at": "2026-08-20T00:29:11.040Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-75452672c9976d73",
+          "confidence": 0.7,
+          "needs_review": true
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1855,20 +1871,16 @@
         "market_subcategory_id": "industrials",
         "market_application_id": "",
         "use_case_ids": [
+          "productivity_enterprise_workflows",
           "data_analysis",
-          "knowledge_search",
-          "productivity_enterprise_workflows"
+          "knowledge_search"
         ],
         "industry_ids": [
           "manufacturing",
-          "energy_utilities",
-          "aerospace_defense",
-          "financial_services",
-          "telecommunications"
+          "energy_utilities"
         ],
         "target_user_ids": [
-          "business_user",
-          "developer"
+          "business_user"
         ],
         "sector": "工业领域专用生成式AI平台",
         "investment_thesis": {
@@ -2015,7 +2027,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-20T00:28:37.474Z"
+        "generated_at": "2026-08-20T00:28:37.474Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-a81c5dc2e9abff3a",
+          "confidence": 0.85,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -2450,8 +2470,12 @@
         "market_category_id": "infrastructure_compute",
         "market_subcategory_id": "hardware_computing",
         "market_application_id": "computing_infrastructure",
-        "use_case_ids": [],
-        "industry_ids": [],
+        "use_case_ids": [
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "telecommunications"
+        ],
         "target_user_ids": [
           "business_user"
         ],
@@ -2614,7 +2638,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-20T00:28:34.067Z"
+        "generated_at": "2026-08-20T00:28:34.067Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-8cb4468fe881602b",
+          "confidence": 0.75,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

@@ -22,16 +22,16 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 16,
+    "current_round_count": 17,
     "historical_or_ambiguous_count": 4,
     "portfolio_company_count": 15,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-08-04",
+    "latest_disclosed_at": "2026-08-19",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 4,
       "lead": 12,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "multi_round",
@@ -121,6 +121,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-26ba92c3794719e4",
+        "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
+        "event_ids": [
+          "EV-4af14568b1bdeb35"
+        ],
+        "company_entity_id": "FICO-etched",
+        "company_canonical_entity_id": "",
+        "company_name": "Etched",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "7 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7 亿美元"
+        },
+        "announced_at": "2026-08-19",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-5b0d14c6b8919cc0",
+            "source_url": "https://www.etched.com/progress/from-zero-to-one",
+            "source_title": "From Zero to One | Etched",
+            "source_content_hash": "1fea0cd1f712aad4",
+            "quote": "Jane Street is joined by Kleiner Perkins, Sequoia Capital, Andreessen Horowitz, Peter Thiel, Tiger Global, Bain Capital Ventures, Neo, Stripes, Primary, Positive Sum, Diffusion, Argo, and Blackstone.",
+            "quote_hash": "b6c115d1948a5519c25adbe0851dd9cf52a83ca887b15093a669281cf5582b31"
+          }
+        ]
+      },
       {
         "activity_id": "IA-4575e4aa6591f0b7",
         "funding_insight_id": "FI-718b8020e0e74b3d",
@@ -932,6 +970,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-5b0d14c6b8919cc0",
+        "source_url": "https://www.etched.com/progress/from-zero-to-one",
+        "source_title": "From Zero to One | Etched",
+        "source_content_hash": "1fea0cd1f712aad4",
+        "quote": "Jane Street is joined by Kleiner Perkins, Sequoia Capital, Andreessen Horowitz, Peter Thiel, Tiger Global, Bain Capital Ventures, Neo, Stripes, Primary, Positive Sum, Diffusion, Argo, and Blackstone.",
+        "quote_hash": "b6c115d1948a5519c25adbe0851dd9cf52a83ca887b15093a669281cf5582b31"
+      },
       {
         "source_id": "FISRC-21a1d5a2dbf2a3b1",
         "source_url": "https://news.bloomberglaw.com/artificial-intelligence/nvidia-dell-back-ai-cloud-startup-volta-at-2-4-billion-value",

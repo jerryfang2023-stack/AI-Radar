@@ -20,16 +20,17 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "first_disclosed_at": "2025-09-09",
-    "latest_disclosed_at": "2026-03-31",
+    "latest_disclosed_at": "2026-08-13",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
+      "other",
       "series_f",
       "series_g"
     ],
@@ -40,12 +41,55 @@
         "name": "Anthropic"
       },
       {
+        "entity_id": "EN-c0b0109d9439de57",
+        "canonical_entity_id": "",
+        "name": "GitHub"
+      },
+      {
         "entity_id": "EN-7d3194f79e645c42",
         "canonical_entity_id": "EN-7d3194f79e645c42",
         "name": "OpenAI"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-3b0f0c346875aafa",
+        "funding_insight_id": "FI-d856b9470e389a68",
+        "event_ids": [
+          "EV-75452672c9976d73"
+        ],
+        "company_entity_id": "EN-c0b0109d9439de57",
+        "company_canonical_entity_id": "",
+        "company_name": "GitHub",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "GitHub Secure Open Source Fund Session 4",
+        "amount_original": "$500,000",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 万美元"
+        },
+        "announced_at": "2026-08-13",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-08365977cd80206b",
+            "source_url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
+            "source_title": "50个开源项目教会我们的AI时代安全之道",
+            "source_content_hash": "269f33be0068a71b",
+            "quote": "Funding Partners: Alfred P. Sloan Foundation, American Express, Chainguard, Datadog, Herodevs, Kraken, Mayfield, Microsoft, Shopify, Stripe, Superbloom, Vercel, Zerodha, 1Password",
+            "quote_hash": "57a3b10ecc8879baca9d411eb7712d020a1e7be6e0eca203be9e70272fc56400"
+          }
+        ]
+      },
       {
         "activity_id": "IA-53a57a4d0d6dc2ca",
         "funding_insight_id": "FI-b76fffbf5d0d91bd",
@@ -170,6 +214,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-08365977cd80206b",
+        "source_url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
+        "source_title": "50个开源项目教会我们的AI时代安全之道",
+        "source_content_hash": "269f33be0068a71b",
+        "quote": "Funding Partners: Alfred P. Sloan Foundation, American Express, Chainguard, Datadog, Herodevs, Kraken, Mayfield, Microsoft, Shopify, Stripe, Superbloom, Vercel, Zerodha, 1Password",
+        "quote_hash": "57a3b10ecc8879baca9d411eb7712d020a1e7be6e0eca203be9e70272fc56400"
+      },
       {
         "source_id": "FISRC-1e2b3bad243bd066",
         "source_url": "https://yespress.io/openais-122-b-megaround",

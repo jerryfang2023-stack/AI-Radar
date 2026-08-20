@@ -100,8 +100,8 @@
     "viewpointIds": [],
     "classificationRefs": [
       "TX-target_user-business_user",
-      "TX-product_form-ai_device",
       "TX-use_case-productivity_enterprise_workflows",
+      "TX-product_form-ai_device",
       "TX-technology-agentic_execution",
       "TX-use_case-data_analysis",
       "TX-product_form-model",
@@ -3096,6 +3096,7 @@
       "typeLabel": "目标用户",
       "valueId": "business_user",
       "eventIds": [
+        "EV-8cb4468fe881602b",
         "EV-181cd28d97c4e61d",
         "EV-1dba157815d84342",
         "EV-d43103952399bc68",
@@ -3210,6 +3211,7 @@
         "EV-c85011ca6a0389bf",
         "EV-8bbc23e53e799d9d",
         "EV-8c2fdaad276818b0",
+        "EV-a81c5dc2e9abff3a",
         "EV-3a591b0f027f66cf",
         "EV-e0a31302688c81ec",
         "EV-e3382d1c1d7db751",
@@ -3323,6 +3325,7 @@
         "EV-caf5d85e980c86fd"
       ],
       "entityIds": [
+        "EN-2f72d2f93de73383",
         "EN-0b79cf2de0ee6b8e",
         "FICO-50b2676afbe30c83",
         "EN-8c5929d253b07fed",
@@ -3431,6 +3434,7 @@
         "EN-c0cd6e83b6dd78a5",
         "EN-da454b02b4700b1f",
         "EN-8311b78e7ece59dd",
+        "EN-5e0971a2294ea3f7",
         "EN-6862b0d243051cd3",
         "EN-a5e5f031b6f878cf",
         "EN-ee1e31ffef7dbe64",
@@ -3536,57 +3540,13 @@
       "lastSeen": "2026-08-20"
     },
     {
-      "id": "TX-product_form-ai_device",
-      "name": "AI 设备",
-      "nodeType": "product_form",
-      "typeLabel": "产品形态",
-      "valueId": "ai_device",
-      "eventIds": [
-        "EV-c6c297156ff274ac",
-        "EV-02882e6f5e1902c6",
-        "EV-b5dd10300e34f2d3",
-        "EV-450f624a6a6446ce",
-        "EV-a9810b47e0408a05",
-        "EV-b93102125cc062e3",
-        "EV-a6b4fa32cce7c483",
-        "EV-2ffc3377977da114",
-        "EV-cff5848b8c5453af",
-        "EV-02015794e4c719d0",
-        "EV-4e8f6e91e4451ba1",
-        "EV-82e68f59d8584e4e",
-        "EV-f6ac2938949f74ec",
-        "EV-98dd0db65ab955f7",
-        "EV-7256017056b81bbe",
-        "EV-9e35de25113a9269"
-      ],
-      "entityIds": [
-        "EN-1913c6ab46df3a68",
-        "EN-2a920347dfcf07a7",
-        "EN-e22521e7de65d819",
-        "EN-245f1e177c5169cb",
-        "EN-193d220b421d776e",
-        "EN-b81c8201acfc7639",
-        "EN-88e2cce43eeadb36",
-        "EN-478676438ee161a3",
-        "EN-5fdd673ed1fcff1d",
-        "EN-ae0facccf0a3723a",
-        "EN-047364b9be67f665",
-        "EN-a7baed72c308ce88"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [
-        "HW-073f0034b9be13b2"
-      ],
-      "firstSeen": "2026-05-21",
-      "lastSeen": "2026-08-20"
-    },
-    {
       "id": "TX-use_case-productivity_enterprise_workflows",
       "name": "生产力与企业工作流",
       "nodeType": "use_case",
       "typeLabel": "应用场景",
       "valueId": "productivity_enterprise_workflows",
       "eventIds": [
+        "EV-8cb4468fe881602b",
         "EV-d43103952399bc68",
         "EV-9bbe5a98b14acd7f",
         "EV-df8954acf9a13848",
@@ -3644,6 +3604,7 @@
         "EV-14a666fc27d73a80",
         "EV-2083b9eda52a3f76",
         "EV-8c2fdaad276818b0",
+        "EV-a81c5dc2e9abff3a",
         "EV-b695dedc9acda5dc",
         "EV-85506f9f86779a6d",
         "EV-a42e51959c627554",
@@ -3696,6 +3657,7 @@
         "EV-f5aec01f1466f6bb"
       ],
       "entityIds": [
+        "EN-2f72d2f93de73383",
         "EN-8c5929d253b07fed",
         "EN-a267b5c12a2015f0",
         "EN-f970fd34532919fe",
@@ -3752,6 +3714,7 @@
         "EN-4abc3bd0f9e75c63",
         "EN-ef2bee7868007cd4",
         "EN-8311b78e7ece59dd",
+        "EN-5e0971a2294ea3f7",
         "EN-4479ee1b529c5e82",
         "EN-c04bd5ebd10ab696",
         "EN-b314f58f5f506fd2",
@@ -3806,7 +3769,52 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-19"
+      "lastSeen": "2026-08-20"
+    },
+    {
+      "id": "TX-product_form-ai_device",
+      "name": "AI 设备",
+      "nodeType": "product_form",
+      "typeLabel": "产品形态",
+      "valueId": "ai_device",
+      "eventIds": [
+        "EV-c6c297156ff274ac",
+        "EV-02882e6f5e1902c6",
+        "EV-b5dd10300e34f2d3",
+        "EV-450f624a6a6446ce",
+        "EV-a9810b47e0408a05",
+        "EV-b93102125cc062e3",
+        "EV-a6b4fa32cce7c483",
+        "EV-2ffc3377977da114",
+        "EV-cff5848b8c5453af",
+        "EV-02015794e4c719d0",
+        "EV-4e8f6e91e4451ba1",
+        "EV-82e68f59d8584e4e",
+        "EV-f6ac2938949f74ec",
+        "EV-98dd0db65ab955f7",
+        "EV-7256017056b81bbe",
+        "EV-9e35de25113a9269"
+      ],
+      "entityIds": [
+        "EN-1913c6ab46df3a68",
+        "EN-2a920347dfcf07a7",
+        "EN-e22521e7de65d819",
+        "EN-245f1e177c5169cb",
+        "EN-193d220b421d776e",
+        "EN-b81c8201acfc7639",
+        "EN-88e2cce43eeadb36",
+        "EN-478676438ee161a3",
+        "EN-5fdd673ed1fcff1d",
+        "EN-ae0facccf0a3723a",
+        "EN-047364b9be67f665",
+        "EN-a7baed72c308ce88"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [
+        "HW-073f0034b9be13b2"
+      ],
+      "firstSeen": "2026-05-21",
+      "lastSeen": "2026-08-20"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -4686,6 +4694,7 @@
         "EV-5f5f252c6a826599",
         "EV-e7dcecaed5a0ee5b",
         "EV-11b5192fc54c0aa0",
+        "EV-a81c5dc2e9abff3a",
         "EV-c4c8976ab5b629a3",
         "EV-e3382d1c1d7db751",
         "EV-b348083270be6c65",
@@ -4727,6 +4736,7 @@
         "EN-122c0bebae950c77",
         "EN-f346eaca864441f9",
         "EN-bf0e59763d382462",
+        "EN-5e0971a2294ea3f7",
         "EN-a8ef01283d653e46",
         "EN-ee1e31ffef7dbe64",
         "EN-1c5483264189feef",
@@ -4751,7 +4761,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-20"
     },
     {
       "id": "TX-product_form-model",

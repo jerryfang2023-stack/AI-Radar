@@ -21,11 +21,12 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "first_disclosed_at": "2026-06-30",
-    "latest_disclosed_at": "2026-06-30",
+    "latest_disclosed_at": "2026-08-19",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 2
     },
     "round_codes": [
@@ -40,6 +41,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-fe69aa34c489edf6",
+        "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
+        "event_ids": [
+          "EV-4af14568b1bdeb35"
+        ],
+        "company_entity_id": "FICO-etched",
+        "company_canonical_entity_id": "",
+        "company_name": "Etched",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "7 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7 亿美元"
+        },
+        "announced_at": "2026-08-19",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "战略投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-8691a2e5c39e8b10",
+            "source_url": "https://etched.com/",
+            "source_title": "Etched",
+            "source_content_hash": "44b6e972f66942d7",
+            "quote": "We've raised $800M across four unannounced financings, including a strategic investment from VentureTech Alliance.",
+            "quote_hash": "bceda3c1a4c2afeeefd142cfd1436684fbf32619db78aca9e6f88566b450c624"
+          }
+        ]
+      },
       {
         "activity_id": "IA-11e4d7c4cc00d590",
         "funding_insight_id": "FI-d24e79349c1e9713",
@@ -119,6 +158,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-8691a2e5c39e8b10",
+        "source_url": "https://etched.com/",
+        "source_title": "Etched",
+        "source_content_hash": "44b6e972f66942d7",
+        "quote": "We've raised $800M across four unannounced financings, including a strategic investment from VentureTech Alliance.",
+        "quote_hash": "bceda3c1a4c2afeeefd142cfd1436684fbf32619db78aca9e6f88566b450c624"
+      },
       {
         "source_id": "FISRC-ec090e2bf0f8f6e9",
         "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
