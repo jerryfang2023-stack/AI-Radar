@@ -1,6 +1,6 @@
 # Follow Builders Data Gate
 
-- generated_at: 2026-08-20T01:19:08.864Z
+- generated_at: 2026-08-20T08:46:39.362Z
 - date: 2026-08-20
 - data_date: 2026-08-20
 - status: passed
@@ -14,4 +14,4 @@
 
 ## Warnings
 
-- no podcast item is present
+- none
