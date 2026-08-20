@@ -5,23 +5,26 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-19T02:05:03.499Z",
-    "latestDataDate": "2026-08-19",
-    "currentDate": "2026-08-19",
-    "eventCount": 2220,
-    "quarantinedEventCount": 19
+    "generatedAt": "2026-08-20T01:52:33.847Z",
+    "latestDataDate": "2026-08-20",
+    "currentDate": "2026-08-20",
+    "eventCount": 2246,
+    "quarantinedEventCount": 20
   },
   "entity": {
     "id": "EN-fb646a85ad74e7c5",
     "name": "Tencent Cloud",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
-    "aliases": [],
+    "aliases": [
+      "腾讯云"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
     "eventIds": [
+      "EV-68897f26c8d956df",
       "EV-cffa617426a5e139"
     ],
     "viewpointIds": [],
@@ -30,13 +33,14 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-03",
-    "lastSeen": "2026-08-08",
+    "lastSeen": "2026-08-20",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-68897f26c8d956df",
         "EV-cffa617426a5e139"
       ],
       "hardware": [],
@@ -44,6 +48,37 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-68897f26c8d956df",
+        "dataDate": "2026-08-20",
+        "date": "2026-08-19",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "IDC发布2026中国AI50强：360以“智能体+安全”双轮驱动入选",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-796e923025d6fbb2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-796e923025d6fbb2",
+          "EN-e9fc4f156e36f6aa",
+          "EN-a89151ba4b5ac0f2",
+          "EN-fb646a85ad74e7c5",
+          "EN-c608c4787821de1b"
+        ]
+      },
       {
         "id": "EV-cffa617426a5e139",
         "dataDate": "2026-08-08",

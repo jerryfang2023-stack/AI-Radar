@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-19T02:05:03.499Z",
-    "latestDataDate": "2026-08-19",
-    "currentDate": "2026-08-19",
-    "eventCount": 2220,
-    "quarantinedEventCount": 19
+    "generatedAt": "2026-08-20T01:52:33.847Z",
+    "latestDataDate": "2026-08-20",
+    "currentDate": "2026-08-20",
+    "eventCount": 2246,
+    "quarantinedEventCount": 20
   },
   "entity": {
     "id": "EN-a625159d18da5718",
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-6dc56d23bf29768b",
       "EV-6af52e14ca627cd8",
       "EV-c14c8ab22d882966",
       "EV-1bba7775c80af1f0"
@@ -30,13 +31,14 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-19",
-    "lastSeen": "2026-08-09",
+    "lastSeen": "2026-08-20",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-6dc56d23bf29768b",
         "EV-6af52e14ca627cd8",
         "EV-c14c8ab22d882966",
         "EV-1bba7775c80af1f0"
@@ -46,6 +48,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-6dc56d23bf29768b",
+        "dataDate": "2026-08-20",
+        "date": "2026-08-20",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.236 发布：新增默认模型环境变量与跨会话闲置通知",
+        "displayTags": [],
+        "entityIds": [
+          "EN-a625159d18da5718"
+        ]
+      },
       {
         "id": "EV-6af52e14ca627cd8",
         "dataDate": "2026-08-09",

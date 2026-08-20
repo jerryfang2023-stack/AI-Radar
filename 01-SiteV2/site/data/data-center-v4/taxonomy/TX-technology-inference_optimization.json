@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-19T02:05:03.499Z",
-    "latestDataDate": "2026-08-19",
-    "currentDate": "2026-08-19",
-    "eventCount": 2220,
-    "quarantinedEventCount": 19
+    "generatedAt": "2026-08-20T01:52:33.847Z",
+    "latestDataDate": "2026-08-20",
+    "currentDate": "2026-08-20",
+    "eventCount": 2246,
+    "quarantinedEventCount": 20
   },
   "node": {
     "id": "TX-technology-inference_optimization",
@@ -32,7 +32,7 @@
       "HW-bc7449cedae06b7a"
     ],
     "firstSeen": "2026-07-10",
-    "lastSeen": "2026-08-19"
+    "lastSeen": "2026-08-20"
   },
   "events": [
     {
@@ -120,9 +120,9 @@
     },
     {
       "id": "EV-2c6707327367640f",
-      "dataDate": "2026-08-19",
+      "dataDate": "2026-08-20",
       "date": "2026-08-19",
-      "updatedDate": "2026-08-19",
+      "updatedDate": "2026-08-20",
       "eventType": "hardware_product",
       "eventTypeLabel": "硬件产品",
       "eventGroup": "AI 硬件",
@@ -424,6 +424,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-fe49d2ee580cfea2",
         "EV-df8954acf9a13848",
         "EV-f5dd6dec49ad83aa",
         "EV-00f3271df4707d7c",
@@ -516,6 +517,10 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-46cd64a76d3767f5",
+        "EV-40d88f6279d48304",
+        "EV-937b855e723d6ef0",
+        "EV-d93dd19a481307ec",
         "EV-05fea7a5d8b8db46",
         "EV-06e31f68974104ec",
         "EV-1e7c9d930a2a5d8e",
@@ -695,9 +700,12 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
-        "EV-11a0afc2ecb6e42e",
-        "EV-9940dccace747f28",
         "EV-0c00a6c681f22b98",
+        "EV-2c08a493d3c8b9c7",
+        "EV-11a0afc2ecb6e42e",
+        "EV-6610418ae1ced59f",
+        "EV-9940dccace747f28",
+        "EV-00ffb2c501a37ec8",
         "EV-f819309f846d95bc",
         "EV-2902a32e86a4b2d1",
         "EV-90707e0cbca091c9",
@@ -763,6 +771,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-technology-code_generation",
         "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
         "TX-industry-media_entertainment",
@@ -772,7 +782,6 @@
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-customer_support",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-professional_services",
@@ -781,10 +790,10 @@
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-use_case-software_development",
-        "TX-product_form-chip_accelerator",
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-model",
         "TX-use_case-security_operations",
+        "TX-product_form-model_api_service",
         "TX-technology-multimodal",
         "TX-technology-long_context",
         "TX-technology-inference_optimization",
@@ -792,9 +801,9 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-916a98f0fa2a39af",
         "EN-d1ad14d4ad57d207",
         "EN-8d4321d936320802",
-        "EN-916a98f0fa2a39af",
         "EN-7839fb10a8f14c70",
         "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
@@ -818,7 +827,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-19"
+      "lastSeen": "2026-08-20"
     },
     {
       "id": "EN-77b30b8a88051252",
@@ -839,7 +848,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-19",
-      "lastSeen": "2026-08-19"
+      "lastSeen": "2026-08-20"
     },
     {
       "id": "EN-de6b71bf77ff4299",
@@ -871,7 +880,7 @@
     {
       "id": "HW-bc7449cedae06b7a",
       "eventId": "EV-2c6707327367640f",
-      "dataDate": "2026-08-19",
+      "dataDate": "2026-08-20",
       "date": "2026-08-19",
       "title": "Cerebras 推出 WSE-3 Turbo 芯片与 CS-4 系统：10 倍词元容量、2 倍速度",
       "hardwareType": "semiconductor",
@@ -879,11 +888,11 @@
       "eventTypeLabel": "硬件产品",
       "computeLayer": "未披露",
       "supplier": "Cerebras",
-      "customer": "未披露",
-      "processNode": "未披露",
+      "customer": "Cerebras",
+      "processNode": "WSE-3 Turbo 集成了 90 万个核心和 44GB SRAM 片上缓存",
       "capacity": 44,
       "capacityUnit": "GB",
-      "site": "未披露",
+      "site": "CS-4 系统",
       "region": "未披露",
       "contractValue": "未披露",
       "shipmentDate": "未披露",
@@ -914,13 +923,13 @@
     {
       "id": "HWC-910902f8a2628234",
       "snapshotKey": "910902f8a2628234",
-      "snapshotId": "HWS-52c321fc05062711",
+      "snapshotId": "HWS-e30e468f9e53cd4d",
       "eventId": "EV-2c6707327367640f",
       "eventIds": [
         "EV-2c6707327367640f"
       ],
-      "dataDate": "2026-08-19",
-      "date": "2026-08-19",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
       "title": "CS-4 / WSE-3 Turbo",
       "subject": "Cerebras",
       "productNames": [
@@ -935,18 +944,28 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-ec1c8376ede4537b"
+          "fact_ref": "HWF-e79f2aa29d6d6b65"
         }
       },
       "factCount": 3,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-20",
+          "previousDate": "2026-08-19",
+          "snapshotId": "HWS-e30e468f9e53cd4d",
+          "previousSnapshotId": "HWS-52c321fc05062711",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-19",
-          "hardware_fact_id": "HWF-22f75dfb96c258c6",
+          "data_date": "2026-08-20",
+          "hardware_fact_id": "HWF-492a864ee9e97581",
           "fact_type": "product",
           "observed_at": "2026-08-19T01:12:57.000Z",
           "subject_entity_id": "EN-77b30b8a88051252",
@@ -966,15 +985,15 @@
           "event_refs": [
             "EV-2c6707327367640f"
           ],
-          "claim_ref": "CL-08f43b3ecd18805c",
+          "claim_ref": "CL-91c05a402f4d945b",
           "source_refs": [
             "SA-08dab066650882b1"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-19/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-20/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-19",
-          "hardware_fact_id": "HWF-8e7b0721bac932ca",
+          "data_date": "2026-08-20",
+          "hardware_fact_id": "HWF-ca1864fa26ee3274",
           "fact_type": "product",
           "observed_at": "2026-08-19T01:12:57.000Z",
           "subject_entity_id": "EN-77b30b8a88051252",
@@ -994,15 +1013,15 @@
           "event_refs": [
             "EV-2c6707327367640f"
           ],
-          "claim_ref": "CL-edf916afb991a3e5",
+          "claim_ref": "CL-f72b9a365ab6f351",
           "source_refs": [
             "SA-08dab066650882b1"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-19/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-20/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-19",
-          "hardware_fact_id": "HWF-ec1c8376ede4537b",
+          "data_date": "2026-08-20",
+          "hardware_fact_id": "HWF-e79f2aa29d6d6b65",
           "fact_type": "product",
           "observed_at": "2026-08-19T01:12:57.000Z",
           "subject_entity_id": "EN-77b30b8a88051252",
@@ -1022,11 +1041,11 @@
           "event_refs": [
             "EV-2c6707327367640f"
           ],
-          "claim_ref": "CL-85a4e31e93d7994f",
+          "claim_ref": "CL-38284bff29452d67",
           "source_refs": [
             "SA-08dab066650882b1"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-19/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-20/hardware-facts.json"
         }
       ],
       "capexFacts": [],

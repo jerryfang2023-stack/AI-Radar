@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-19T02:05:03.499Z",
-    "latestDataDate": "2026-08-19",
-    "currentDate": "2026-08-19",
-    "eventCount": 2220,
-    "quarantinedEventCount": 19
+    "generatedAt": "2026-08-20T01:52:33.847Z",
+    "latestDataDate": "2026-08-20",
+    "currentDate": "2026-08-20",
+    "eventCount": 2246,
+    "quarantinedEventCount": 20
   },
   "entity": {
     "id": "EN-12bb49e1b12281f4",
@@ -27,8 +27,8 @@
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-08-18",
-    "lastSeen": "2026-08-18",
+    "firstSeen": "2026-08-20",
+    "lastSeen": "2026-08-20",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -44,8 +44,8 @@
     "timeline": [
       {
         "id": "EV-323d98437e42e8b3",
-        "dataDate": "2026-08-18",
-        "date": "2026-08-18",
+        "dataDate": "2026-08-20",
+        "date": "2026-08-20",
         "eventType": "partnership",
         "eventTypeLabel": "合作",
         "eventGroup": "商业合作",
@@ -67,8 +67,8 @@
     {
       "id": "FDE-f99171bb7e8b4294",
       "eventId": "EV-323d98437e42e8b3",
-      "dataDate": "2026-08-18",
-      "date": "2026-08-18",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
       "title": "Kuehne+Nagel 与 HappyRobot 签署战略合作，将 AI 智能体部署到全球空运业务",
       "stage": "announced",
       "stageLabel": "已公布",
@@ -110,8 +110,8 @@
       "eventIds": [
         "EV-323d98437e42e8b3"
       ],
-      "dataDate": "2026-08-18",
-      "date": "2026-08-18",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
       "title": "HappyRobot × 未披露：Kuehne+Nagel",
       "stage": "announced",
       "stageLabel": "已公布",
@@ -122,7 +122,7 @@
       "workflow": "未披露",
       "systems": [],
       "outcomes": [],
-      "observationCount": 2,
+      "observationCount": 3,
       "completeness": 0.375,
       "completenessPercent": 38,
       "missingFields": [
@@ -133,6 +133,17 @@
         "reported_outcomes"
       ],
       "timeline": [
+        {
+          "observationId": "FDEO-42ce2b0c6b616c84",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-20",
+          "dataDate": "2026-08-20",
+          "eventId": "EV-323d98437e42e8b3",
+          "eventTitle": "Kuehne+Nagel 与 HappyRobot 签署战略合作，将 AI 智能体部署到全球空运业务",
+          "claimCount": 1,
+          "sourceCount": 1
+        },
         {
           "observationId": "FDEO-37f9f744408ad564",
           "type": "implementation_update",

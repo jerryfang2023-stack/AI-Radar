@@ -5,15 +5,15 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-19T02:05:03.499Z",
-    "latestDataDate": "2026-08-19",
-    "currentDate": "2026-08-19",
-    "eventCount": 2220,
-    "quarantinedEventCount": 19
+    "generatedAt": "2026-08-20T01:52:33.847Z",
+    "latestDataDate": "2026-08-20",
+    "currentDate": "2026-08-20",
+    "eventCount": 2246,
+    "quarantinedEventCount": 20
   },
   "entity": {
     "id": "EN-2733b0272eaa721d",
-    "name": "HANMI Semiconductor",
+    "name": "Hanmi Semiconductor",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
@@ -22,7 +22,8 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-2f87750c33ee2d80"
+      "EV-2f87750c33ee2d80",
+      "EV-d01032735e07be2c"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -30,13 +31,15 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-19",
-    "lastSeen": "2026-08-19",
+    "lastSeen": "2026-08-20",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
         "EV-2f87750c33ee2d80"
       ],
-      "deployments": [],
+      "deployments": [
+        "EV-d01032735e07be2c"
+      ],
       "partnerships": [],
       "productsServices": [],
       "hardware": [],
@@ -44,6 +47,33 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-d01032735e07be2c",
+        "dataDate": "2026-08-20",
+        "date": "2026-08-20",
+        "eventType": "capital_investment",
+        "eventTypeLabel": "资本性投资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "韩美半导体购置最大工厂用地以满足AI需求",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-2733b0272eaa721d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-2733b0272eaa721d"
+        ]
+      },
       {
         "id": "EV-2f87750c33ee2d80",
         "dataDate": "2026-08-19",
@@ -192,6 +222,7 @@
         "EV-6ce6b9c9780b97d9",
         "EV-dd62847548bb6ae3",
         "EV-8993e021ac17df4a",
+        "EV-d01032735e07be2c",
         "EV-0e9f000dd04fe04c",
         "EV-3ec034d25ba6a710",
         "EV-eae8f316bc05820b",
@@ -307,7 +338,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-08-19"
+      "lastSeen": "2026-08-20"
     }
   ],
   "fde": [],

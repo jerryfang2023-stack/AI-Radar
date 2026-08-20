@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-19T02:05:03.499Z",
-    "latestDataDate": "2026-08-19",
-    "currentDate": "2026-08-19",
-    "eventCount": 2220,
-    "quarantinedEventCount": 19
+    "generatedAt": "2026-08-20T01:52:33.847Z",
+    "latestDataDate": "2026-08-20",
+    "currentDate": "2026-08-20",
+    "eventCount": 2246,
+    "quarantinedEventCount": 20
   },
   "entity": {
     "id": "EN-16e5f60f207a1a00",
@@ -22,18 +22,21 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-d7363291047184de",
       "EV-cef89ea11e4fbeeb"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-18",
-    "lastSeen": "2026-08-18",
+    "lastSeen": "2026-08-20",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
-      "partnerships": [],
+      "partnerships": [
+        "EV-d7363291047184de"
+      ],
       "productsServices": [
         "EV-cef89ea11e4fbeeb"
       ],
@@ -42,6 +45,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-d7363291047184de",
+        "dataDate": "2026-08-20",
+        "date": "2026-08-18",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Firefox 的 Smart Window 承诺打造更好的 AI 浏览器",
+        "displayTags": [],
+        "entityIds": [
+          "EN-16e5f60f207a1a00"
+        ]
+      },
       {
         "id": "EV-cef89ea11e4fbeeb",
         "dataDate": "2026-08-18",

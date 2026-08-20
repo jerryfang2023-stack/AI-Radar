@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-19T02:05:03.499Z",
-    "latestDataDate": "2026-08-19",
-    "currentDate": "2026-08-19",
-    "eventCount": 2220,
-    "quarantinedEventCount": 19
+    "generatedAt": "2026-08-20T01:52:33.847Z",
+    "latestDataDate": "2026-08-20",
+    "currentDate": "2026-08-20",
+    "eventCount": 2246,
+    "quarantinedEventCount": 20
   },
   "node": {
     "id": "TX-industry-retail_ecommerce",
@@ -57,6 +57,7 @@
       "EV-8b0f056571d68269",
       "EV-cec68369662236fd",
       "EV-acf1bcb321414706",
+      "EV-2b9da4db831578a4",
       "EV-57944eebac69d510",
       "EV-434dcf1813a84ead",
       "EV-a3b006906f6d46a0",
@@ -123,6 +124,7 @@
       "EN-8dc72a4672894e0f",
       "EN-4bd78d9884b2d958",
       "EN-b1d07f1a647ba7fb",
+      "EN-84aeacc355a52b4c",
       "EN-c5947269de664c47",
       "EN-e759968ca9278b8d",
       "EN-6957217eb8e00a30",
@@ -143,6 +145,7 @@
       "EN-4a639cb888a15d75"
     ],
     "fdeIds": [
+      "FDE-92651b837298ec81",
       "FDE-e32500a9c4f90e91",
       "FDE-62f660a9a90bc3f6",
       "FDE-3d5eb0bc571f55bf",
@@ -152,7 +155,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2023-06-28",
-    "lastSeen": "2026-08-19"
+    "lastSeen": "2026-08-20"
   },
   "events": [
     {
@@ -20974,6 +20977,90 @@
       "publisher": "techcrunch.com"
     },
     {
+      "id": "EV-2b9da4db831578a4",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-20",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic Claude案例研究：Advantage Solutions",
+      "originalTitle": "Advantage Solutions Claude case study | Claude by Anthropic",
+      "subject": "Advantage Solutions",
+      "action": "deployment",
+      "object": "Claude",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-84aeacc355a52b4c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-84aeacc355a52b4c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-84aeacc355a52b4c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-84aeacc355a52b4c",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Advantage Solutions",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://claude.com/customers/advantage-solutions",
+      "publisher": "claude.com"
+    },
+    {
       "id": "EV-57944eebac69d510",
       "dataDate": "2026-07-29",
       "date": "2026-07-29",
@@ -21779,9 +21866,9 @@
     },
     {
       "id": "EV-129ffa6be41bb485",
-      "dataDate": "2026-08-18",
+      "dataDate": "2026-08-20",
       "date": "2026-08-13",
-      "updatedDate": "2026-08-18",
+      "updatedDate": "2026-08-20",
       "eventType": "partnership",
       "eventTypeLabel": "合作",
       "eventGroup": "商业合作",
@@ -24866,6 +24953,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-cc9d9706f9b6c597",
         "EV-f819309f846d95bc",
         "EV-2449fe665b666581",
         "EV-eae8f316bc05820b",
@@ -24880,6 +24968,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
@@ -24890,7 +24980,6 @@
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-physical_automation",
         "TX-use_case-customer_support",
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-agriculture",
@@ -24911,7 +25000,6 @@
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-use_case-software_development",
-        "TX-product_form-chip_accelerator",
         "TX-deployment_model-cloud",
         "TX-product_form-model",
         "TX-use_case-security_operations",
@@ -24953,7 +25041,7 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-19"
+      "lastSeen": "2026-08-20"
     },
     {
       "id": "EN-67e8c106650aa683",
@@ -25390,6 +25478,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-fe49d2ee580cfea2",
         "EV-df8954acf9a13848",
         "EV-f5dd6dec49ad83aa",
         "EV-00f3271df4707d7c",
@@ -25482,6 +25571,10 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-46cd64a76d3767f5",
+        "EV-40d88f6279d48304",
+        "EV-937b855e723d6ef0",
+        "EV-d93dd19a481307ec",
         "EV-05fea7a5d8b8db46",
         "EV-06e31f68974104ec",
         "EV-1e7c9d930a2a5d8e",
@@ -25661,9 +25754,12 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
-        "EV-11a0afc2ecb6e42e",
-        "EV-9940dccace747f28",
         "EV-0c00a6c681f22b98",
+        "EV-2c08a493d3c8b9c7",
+        "EV-11a0afc2ecb6e42e",
+        "EV-6610418ae1ced59f",
+        "EV-9940dccace747f28",
+        "EV-00ffb2c501a37ec8",
         "EV-f819309f846d95bc",
         "EV-2902a32e86a4b2d1",
         "EV-90707e0cbca091c9",
@@ -25729,6 +25825,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-technology-code_generation",
         "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
         "TX-industry-media_entertainment",
@@ -25738,7 +25836,6 @@
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-customer_support",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-professional_services",
@@ -25747,10 +25844,10 @@
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-use_case-software_development",
-        "TX-product_form-chip_accelerator",
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-model",
         "TX-use_case-security_operations",
+        "TX-product_form-model_api_service",
         "TX-technology-multimodal",
         "TX-technology-long_context",
         "TX-technology-inference_optimization",
@@ -25758,9 +25855,9 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-916a98f0fa2a39af",
         "EN-d1ad14d4ad57d207",
         "EN-8d4321d936320802",
-        "EN-916a98f0fa2a39af",
         "EN-7839fb10a8f14c70",
         "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
@@ -25784,7 +25881,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-19"
+      "lastSeen": "2026-08-20"
     },
     {
       "id": "EN-e69f64149edae6b1",
@@ -26164,6 +26261,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-business_user",
@@ -26173,7 +26271,6 @@
         "TX-industry-telecommunications",
         "TX-use_case-research_discovery",
         "TX-use_case-software_development",
-        "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
       ],
       "relatedEntityIds": [],
@@ -26579,6 +26676,28 @@
       "lastSeen": "2026-07-20"
     },
     {
+      "id": "EN-84aeacc355a52b4c",
+      "name": "Advantage Solutions",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-2b9da4db831578a4",
+        "EV-f0dcc60444b56245"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-retail_ecommerce"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-20"
+    },
+    {
       "id": "EN-c5947269de664c47",
       "name": "抖音电商",
       "entityType": "organization_candidate",
@@ -26721,7 +26840,7 @@
         "EN-dc6c28a2123e8efb"
       ],
       "firstSeen": "2026-05-15",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-20"
     },
     {
       "id": "EN-e274048227f164dc",
@@ -26789,6 +26908,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-fe49d2ee580cfea2",
         "EV-d57fb9108f2cb220",
         "EV-a6cb4aef5284eb68",
         "EV-f5dd6dec49ad83aa",
@@ -26817,6 +26937,7 @@
         "EV-1abf0d076d30ec6d",
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
+        "EV-2b9da4db831578a4",
         "EV-ebe3321efdf8023e",
         "EV-924d196a2412006f",
         "EV-7dcbf6eab4339b22",
@@ -26862,6 +26983,8 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-40d88f6279d48304",
+        "EV-d93dd19a481307ec",
         "EV-3a4acc92731cb5ac",
         "EV-0adf1fcc9dbeddef",
         "EV-e3fb3a8b12b3ba9c",
@@ -27040,6 +27163,7 @@
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
         "EV-11a0afc2ecb6e42e",
+        "EV-6610418ae1ced59f",
         "EV-9703abcbede6968a",
         "EV-a964121140e9ef41",
         "EV-9356dd1be92ef5c6",
@@ -27109,6 +27233,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-compute_cloud_service",
         "TX-target_user-business_user",
@@ -27128,7 +27253,6 @@
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-use_case-software_development",
-        "TX-product_form-chip_accelerator",
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-model",
         "TX-use_case-security_operations",
@@ -27171,7 +27295,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-19"
+      "lastSeen": "2026-08-20"
     },
     {
       "id": "EN-d50883991bfc5a69",
@@ -27270,6 +27394,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-fe49d2ee580cfea2",
         "EV-d57fb9108f2cb220",
         "EV-1744d0e71176f9a1",
         "EV-a6cb4aef5284eb68",
@@ -27313,6 +27438,9 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-7b0ff6657c0e0483",
+        "EV-c3f2380f39d120ea",
+        "EV-d93dd19a481307ec",
         "EV-62297e5ea63f0c78",
         "EV-5fe819e7070b76e6",
         "EV-930447492f4368e1",
@@ -27463,6 +27591,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
@@ -27472,7 +27601,6 @@
         "TX-product_form-end_user_application",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-financial_services",
@@ -27508,7 +27636,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-20"
     },
     {
       "id": "EN-5e1fcba4c9f1cf69",
@@ -27606,11 +27734,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
         "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
         "TX-industry-retail_ecommerce",
-        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
         "TX-technology-fine_tuning"
       ],
@@ -27624,9 +27752,46 @@
   ],
   "fde": [
     {
+      "id": "FDE-92651b837298ec81",
+      "eventId": "EV-2b9da4db831578a4",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
+      "title": "Anthropic Claude案例研究：Advantage Solutions",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Claude",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://claude.com/customers/advantage-solutions",
+      "entityIds": [
+        "EN-84aeacc355a52b4c",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
+    {
       "id": "FDE-ed781e27a7b9458e",
       "eventId": "EV-129ffa6be41bb485",
-      "dataDate": "2026-08-18",
+      "dataDate": "2026-08-20",
       "date": "2026-08-13",
       "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
       "stage": "announced",
@@ -27920,13 +28085,64 @@
   "hardware": [],
   "fdeDossiers": [
     {
+      "id": "FDED-1e6752e0189004a2",
+      "implementationKey": "1e6752e0189004a2",
+      "eventId": "EV-2b9da4db831578a4",
+      "eventIds": [
+        "EV-2b9da4db831578a4"
+      ],
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
+      "title": "未披露 × 未披露：Claude",
+      "stage": "pilot",
+      "stageLabel": "试点",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Claude",
+      "workflow": "未披露",
+      "systems": [
+        "Claude"
+      ],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-fec70f0ec720f571",
+          "type": "implementation_update",
+          "stage": "pilot",
+          "date": "2026-08-20",
+          "dataDate": "2026-08-20",
+          "eventId": "EV-2b9da4db831578a4",
+          "eventTitle": "Anthropic Claude案例研究：Advantage Solutions",
+          "claimCount": 2,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://claude.com/customers/advantage-solutions",
+      "entityIds": [
+        "EN-84aeacc355a52b4c",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
+    {
       "id": "FDED-5bc72342f3066892",
       "implementationKey": "5bc72342f3066892",
       "eventId": "EV-129ffa6be41bb485",
       "eventIds": [
         "EV-129ffa6be41bb485"
       ],
-      "dataDate": "2026-08-18",
+      "dataDate": "2026-08-20",
       "date": "2026-08-13",
       "title": "IBM × OpenAI：OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
       "stage": "procurement",
@@ -27940,7 +28156,7 @@
         "ChatGPT"
       ],
       "outcomes": [],
-      "observationCount": 4,
+      "observationCount": 5,
       "completeness": 0.625,
       "completenessPercent": 63,
       "missingFields": [
@@ -27949,6 +28165,17 @@
         "reported_outcomes"
       ],
       "timeline": [
+        {
+          "observationId": "FDEO-042342bf0865bc5c",
+          "type": "procurement",
+          "stage": "procurement",
+          "date": "2026-08-13",
+          "dataDate": "2026-08-20",
+          "eventId": "EV-129ffa6be41bb485",
+          "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+          "claimCount": 4,
+          "sourceCount": 1
+        },
         {
           "observationId": "FDEO-0e89097830f7369d",
           "type": "procurement",

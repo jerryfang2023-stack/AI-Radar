@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-19T02:05:03.499Z",
-    "latestDataDate": "2026-08-19",
-    "currentDate": "2026-08-19",
-    "eventCount": 2220,
-    "quarantinedEventCount": 19
+    "generatedAt": "2026-08-20T01:52:33.847Z",
+    "latestDataDate": "2026-08-20",
+    "currentDate": "2026-08-20",
+    "eventCount": 2246,
+    "quarantinedEventCount": 20
   },
   "entity": {
     "id": "EN-160b93ba38ba1ecd",
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-a69c83bcdb90c823",
       "EV-909cf18b467d6fdf"
     ],
     "viewpointIds": [],
@@ -30,20 +31,38 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-23",
-    "lastSeen": "2026-07-24",
+    "lastSeen": "2026-08-20",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
         "EV-909cf18b467d6fdf"
       ],
       "deployments": [],
-      "partnerships": [],
+      "partnerships": [
+        "EV-a69c83bcdb90c823"
+      ],
       "productsServices": [],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-a69c83bcdb90c823",
+        "dataDate": "2026-08-20",
+        "date": "2026-08-17",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "通过Gemini和Pixel更贴近比赛",
+        "displayTags": [],
+        "entityIds": [
+          "EN-160b93ba38ba1ecd",
+          "EN-3f8d7379e2f0f7d0"
+        ]
+      },
       {
         "id": "EV-909cf18b467d6fdf",
         "dataDate": "2026-07-24",
@@ -142,6 +161,8 @@
         "EV-22f0d8caaa65a6a2",
         "EV-eec1e6857f0e0b2b",
         "EV-05a87b578967c83e",
+        "EV-7b0ff6657c0e0483",
+        "EV-9d53b12f5f077d3b",
         "EV-355ddfd4c6180ab0",
         "EV-cc4d9d631698f35b",
         "EV-0609f4badfe84803",
@@ -224,11 +245,11 @@
         "EN-6ed315afcff06aac",
         "EN-fb54e9062429a937",
         "EN-19e41212c0556603",
+        "EN-ea3bd73e2b506e00",
         "EN-c0fced8f2483e9f5",
         "EN-76dc4156f3e14597",
         "EN-fd13ae012c0a7a54",
         "EN-83d512876997e675",
-        "EN-ea3bd73e2b506e00",
         "EN-534e99d81da1c54d",
         "EN-210a6aeaed360009",
         "EN-72e28a6aa6b39c76",
@@ -252,7 +273,7 @@
         "HW-c5a22adcc66136ed"
       ],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-20"
     }
   ],
   "fde": [],

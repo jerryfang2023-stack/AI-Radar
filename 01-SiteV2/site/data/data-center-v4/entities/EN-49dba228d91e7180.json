@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-19T02:05:03.499Z",
-    "latestDataDate": "2026-08-19",
-    "currentDate": "2026-08-19",
-    "eventCount": 2220,
-    "quarantinedEventCount": 19
+    "generatedAt": "2026-08-20T01:52:33.847Z",
+    "latestDataDate": "2026-08-20",
+    "currentDate": "2026-08-20",
+    "eventCount": 2246,
+    "quarantinedEventCount": 20
   },
   "entity": {
     "id": "EN-49dba228d91e7180",
@@ -28,7 +28,7 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-19",
-    "lastSeen": "2026-08-19",
+    "lastSeen": "2026-08-20",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -44,7 +44,7 @@
     "timeline": [
       {
         "id": "EV-2c6707327367640f",
-        "dataDate": "2026-08-19",
+        "dataDate": "2026-08-20",
         "date": "2026-08-19",
         "eventType": "hardware_product",
         "eventTypeLabel": "硬件产品",
@@ -82,7 +82,7 @@
     {
       "id": "HW-bc7449cedae06b7a",
       "eventId": "EV-2c6707327367640f",
-      "dataDate": "2026-08-19",
+      "dataDate": "2026-08-20",
       "date": "2026-08-19",
       "title": "Cerebras 推出 WSE-3 Turbo 芯片与 CS-4 系统：10 倍词元容量、2 倍速度",
       "hardwareType": "semiconductor",
@@ -90,11 +90,11 @@
       "eventTypeLabel": "硬件产品",
       "computeLayer": "未披露",
       "supplier": "Cerebras",
-      "customer": "未披露",
-      "processNode": "未披露",
+      "customer": "Cerebras",
+      "processNode": "WSE-3 Turbo 集成了 90 万个核心和 44GB SRAM 片上缓存",
       "capacity": 44,
       "capacityUnit": "GB",
-      "site": "未披露",
+      "site": "CS-4 系统",
       "region": "未披露",
       "contractValue": "未披露",
       "shipmentDate": "未披露",
@@ -125,13 +125,13 @@
     {
       "id": "HWC-910902f8a2628234",
       "snapshotKey": "910902f8a2628234",
-      "snapshotId": "HWS-52c321fc05062711",
+      "snapshotId": "HWS-e30e468f9e53cd4d",
       "eventId": "EV-2c6707327367640f",
       "eventIds": [
         "EV-2c6707327367640f"
       ],
-      "dataDate": "2026-08-19",
-      "date": "2026-08-19",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
       "title": "CS-4 / WSE-3 Turbo",
       "subject": "Cerebras",
       "productNames": [
@@ -146,18 +146,28 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-ec1c8376ede4537b"
+          "fact_ref": "HWF-e79f2aa29d6d6b65"
         }
       },
       "factCount": 3,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-20",
+          "previousDate": "2026-08-19",
+          "snapshotId": "HWS-e30e468f9e53cd4d",
+          "previousSnapshotId": "HWS-52c321fc05062711",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-19",
-          "hardware_fact_id": "HWF-22f75dfb96c258c6",
+          "data_date": "2026-08-20",
+          "hardware_fact_id": "HWF-492a864ee9e97581",
           "fact_type": "product",
           "observed_at": "2026-08-19T01:12:57.000Z",
           "subject_entity_id": "EN-77b30b8a88051252",
@@ -177,15 +187,15 @@
           "event_refs": [
             "EV-2c6707327367640f"
           ],
-          "claim_ref": "CL-08f43b3ecd18805c",
+          "claim_ref": "CL-91c05a402f4d945b",
           "source_refs": [
             "SA-08dab066650882b1"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-19/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-20/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-19",
-          "hardware_fact_id": "HWF-8e7b0721bac932ca",
+          "data_date": "2026-08-20",
+          "hardware_fact_id": "HWF-ca1864fa26ee3274",
           "fact_type": "product",
           "observed_at": "2026-08-19T01:12:57.000Z",
           "subject_entity_id": "EN-77b30b8a88051252",
@@ -205,15 +215,15 @@
           "event_refs": [
             "EV-2c6707327367640f"
           ],
-          "claim_ref": "CL-edf916afb991a3e5",
+          "claim_ref": "CL-f72b9a365ab6f351",
           "source_refs": [
             "SA-08dab066650882b1"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-19/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-20/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-19",
-          "hardware_fact_id": "HWF-ec1c8376ede4537b",
+          "data_date": "2026-08-20",
+          "hardware_fact_id": "HWF-e79f2aa29d6d6b65",
           "fact_type": "product",
           "observed_at": "2026-08-19T01:12:57.000Z",
           "subject_entity_id": "EN-77b30b8a88051252",
@@ -233,11 +243,11 @@
           "event_refs": [
             "EV-2c6707327367640f"
           ],
-          "claim_ref": "CL-85a4e31e93d7994f",
+          "claim_ref": "CL-38284bff29452d67",
           "source_refs": [
             "SA-08dab066650882b1"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-19/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-20/hardware-facts.json"
         }
       ],
       "capexFacts": [],

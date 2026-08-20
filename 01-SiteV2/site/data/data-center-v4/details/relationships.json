@@ -5,13 +5,153 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-19T02:05:03.499Z",
-    "latestDataDate": "2026-08-19",
-    "currentDate": "2026-08-19",
-    "eventCount": 2220,
-    "quarantinedEventCount": 19
+    "generatedAt": "2026-08-20T01:52:33.847Z",
+    "latestDataDate": "2026-08-20",
+    "currentDate": "2026-08-20",
+    "eventCount": 2246,
+    "quarantinedEventCount": 20
   },
   "relationships": [
+    {
+      "relationship_id": "REL2-ac23d27e955fb3fc",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-916a98f0fa2a39af",
+      "object_type": "entity",
+      "event_id": "EV-129ffa6be41bb485",
+      "claim_refs": [
+        "CL-44b4f1b1030345fb",
+        "CL-03724be6187d926b",
+        "CL-7fd7aee0d56637c7",
+        "CL-3a9ba113924285f6"
+      ],
+      "source_refs": [
+        "SA-7eaa925ca1da695a"
+      ],
+      "data_date": "2026-08-20",
+      "status": "verified",
+      "subjectName": "OpenAI",
+      "objectName": "IBM",
+      "predicateLabel": "合作",
+      "title": "OpenAI 合作 IBM",
+      "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+      "eventDate": "2026-08-13",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-44b4f1b1030345fb",
+          "subject": "IBM",
+          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+          "quote": "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR."
+        },
+        {
+          "id": "CL-03724be6187d926b",
+          "subject": "IBM",
+          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+          "quote": "The partnership embeds OpenAI frontier models like GPT-5.6 and products like Codex and ChatGPT Work into IBM Consulting Advantage , IBM&rsquo;s AI platform for delivering consulting services to clients, combining AI agents, industry assets, and cybersecurity capabilities to help organizations securely deploy AI at scale, drive business outcomes, and create new commercial models."
+        },
+        {
+          "id": "CL-7fd7aee0d56637c7",
+          "subject": "IBM",
+          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+          "quote": "The companies plan to help clients modernize legacy applications and accelerate software development by bringing together OpenAI Codex and ChatGPT Work with IBM&rsquo;s industry, technology and domain expertise, including integration with IBM Consulting Advantage. The collaboration is designed to help organizations simplify engineering processes and speed the delivery of new digital products and services."
+        },
+        {
+          "id": "CL-3a9ba113924285f6",
+          "subject": "IBM",
+          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+          "quote": "IBM and OpenAI will expand their collaboration on cybersecurity following IBM&rsquo;s participation in the OpenAI Daybreak Cyber Partner Program by combining OpenAI frontier AI capabilities with IBM Autonomous Security &mdash; a multi-agent-powered service designed to deliver coordinated decision-making, response, and intelligence at machine speed. As AI-powered attacks grow more sophisticated, the partnership will help clients manage both cyber and AI model risk, including application-layer vulnerabilities, governance gaps, and operational risks that limits AI adoption."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-7eaa925ca1da695a",
+          "publisher": "newsroom.ibm.com",
+          "url": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations"
+        }
+      ],
+      "sourceExcerpt": "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR.",
+      "event": {
+        "id": "EV-129ffa6be41bb485",
+        "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+        "originalTitle": "IBM Partners with OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+        "date": "2026-08-13",
+        "dataDate": "2026-08-20",
+        "eventTypeLabel": "合作"
+      }
+    },
+    {
+      "relationship_id": "REL2-e5e49d88d99ddd93",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "serves",
+      "object_ref": "EN-916a98f0fa2a39af",
+      "object_type": "entity",
+      "event_id": "EV-129ffa6be41bb485",
+      "claim_refs": [
+        "CL-44b4f1b1030345fb",
+        "CL-03724be6187d926b",
+        "CL-7fd7aee0d56637c7",
+        "CL-3a9ba113924285f6"
+      ],
+      "source_refs": [
+        "SA-7eaa925ca1da695a"
+      ],
+      "data_date": "2026-08-20",
+      "status": "verified",
+      "subjectName": "OpenAI",
+      "objectName": "IBM",
+      "predicateLabel": "服务",
+      "title": "OpenAI 服务 IBM",
+      "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+      "eventDate": "2026-08-13",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-44b4f1b1030345fb",
+          "subject": "IBM",
+          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+          "quote": "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR."
+        },
+        {
+          "id": "CL-03724be6187d926b",
+          "subject": "IBM",
+          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+          "quote": "The partnership embeds OpenAI frontier models like GPT-5.6 and products like Codex and ChatGPT Work into IBM Consulting Advantage , IBM&rsquo;s AI platform for delivering consulting services to clients, combining AI agents, industry assets, and cybersecurity capabilities to help organizations securely deploy AI at scale, drive business outcomes, and create new commercial models."
+        },
+        {
+          "id": "CL-7fd7aee0d56637c7",
+          "subject": "IBM",
+          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+          "quote": "The companies plan to help clients modernize legacy applications and accelerate software development by bringing together OpenAI Codex and ChatGPT Work with IBM&rsquo;s industry, technology and domain expertise, including integration with IBM Consulting Advantage. The collaboration is designed to help organizations simplify engineering processes and speed the delivery of new digital products and services."
+        },
+        {
+          "id": "CL-3a9ba113924285f6",
+          "subject": "IBM",
+          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+          "quote": "IBM and OpenAI will expand their collaboration on cybersecurity following IBM&rsquo;s participation in the OpenAI Daybreak Cyber Partner Program by combining OpenAI frontier AI capabilities with IBM Autonomous Security &mdash; a multi-agent-powered service designed to deliver coordinated decision-making, response, and intelligence at machine speed. As AI-powered attacks grow more sophisticated, the partnership will help clients manage both cyber and AI model risk, including application-layer vulnerabilities, governance gaps, and operational risks that limits AI adoption."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-7eaa925ca1da695a",
+          "publisher": "newsroom.ibm.com",
+          "url": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations"
+        }
+      ],
+      "sourceExcerpt": "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR.",
+      "event": {
+        "id": "EV-129ffa6be41bb485",
+        "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+        "originalTitle": "IBM Partners with OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+        "date": "2026-08-13",
+        "dataDate": "2026-08-20",
+        "eventTypeLabel": "合作"
+      }
+    },
     {
       "relationship_id": "REL2-0dc4d04c4e728c64",
       "relationship_version": "RELATION-V2.1",
@@ -197,146 +337,6 @@
         "title": "NVIDIA 与 SB Energy 合作锁定俄亥俄州 PORTS-Pike 园区电力容量，OpenAI 将入驻",
         "originalTitle": "",
         "date": "2026-08-17",
-        "dataDate": "2026-08-18",
-        "eventTypeLabel": "合作"
-      }
-    },
-    {
-      "relationship_id": "REL2-ac23d27e955fb3fc",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-7d3194f79e645c42",
-      "subject_type": "entity",
-      "predicate": "partners_with",
-      "object_ref": "EN-916a98f0fa2a39af",
-      "object_type": "entity",
-      "event_id": "EV-129ffa6be41bb485",
-      "claim_refs": [
-        "CL-1ea712857fb35434",
-        "CL-eefc1dd59e9a9c0b",
-        "CL-cf542a86d93411a4",
-        "CL-082bc161bc15abca"
-      ],
-      "source_refs": [
-        "SA-7eaa925ca1da695a"
-      ],
-      "data_date": "2026-08-18",
-      "status": "verified",
-      "subjectName": "OpenAI",
-      "objectName": "IBM",
-      "predicateLabel": "合作",
-      "title": "OpenAI 合作 IBM",
-      "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
-      "eventDate": "2026-08-13",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-1ea712857fb35434",
-          "subject": "IBM",
-          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-          "quote": "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR."
-        },
-        {
-          "id": "CL-eefc1dd59e9a9c0b",
-          "subject": "IBM",
-          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-          "quote": "The partnership embeds OpenAI frontier models like GPT-5.6 and products like Codex and ChatGPT Work into IBM Consulting Advantage , IBM&rsquo;s AI platform for delivering consulting services to clients, combining AI agents, industry assets, and cybersecurity capabilities to help organizations securely deploy AI at scale, drive business outcomes, and create new commercial models."
-        },
-        {
-          "id": "CL-cf542a86d93411a4",
-          "subject": "IBM",
-          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-          "quote": "The companies plan to help clients modernize legacy applications and accelerate software development by bringing together OpenAI Codex and ChatGPT Work with IBM&rsquo;s industry, technology and domain expertise, including integration with IBM Consulting Advantage. The collaboration is designed to help organizations simplify engineering processes and speed the delivery of new digital products and services."
-        },
-        {
-          "id": "CL-082bc161bc15abca",
-          "subject": "IBM",
-          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-          "quote": "IBM and OpenAI will expand their collaboration on cybersecurity following IBM&rsquo;s participation in the OpenAI Daybreak Cyber Partner Program by combining OpenAI frontier AI capabilities with IBM Autonomous Security &mdash; a multi-agent-powered service designed to deliver coordinated decision-making, response, and intelligence at machine speed. As AI-powered attacks grow more sophisticated, the partnership will help clients manage both cyber and AI model risk, including application-layer vulnerabilities, governance gaps, and operational risks that limits AI adoption."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-7eaa925ca1da695a",
-          "publisher": "newsroom.ibm.com",
-          "url": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations"
-        }
-      ],
-      "sourceExcerpt": "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR.",
-      "event": {
-        "id": "EV-129ffa6be41bb485",
-        "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
-        "originalTitle": "IBM Partners with OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-        "date": "2026-08-13",
-        "dataDate": "2026-08-18",
-        "eventTypeLabel": "合作"
-      }
-    },
-    {
-      "relationship_id": "REL2-e5e49d88d99ddd93",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-7d3194f79e645c42",
-      "subject_type": "entity",
-      "predicate": "serves",
-      "object_ref": "EN-916a98f0fa2a39af",
-      "object_type": "entity",
-      "event_id": "EV-129ffa6be41bb485",
-      "claim_refs": [
-        "CL-1ea712857fb35434",
-        "CL-eefc1dd59e9a9c0b",
-        "CL-cf542a86d93411a4",
-        "CL-082bc161bc15abca"
-      ],
-      "source_refs": [
-        "SA-7eaa925ca1da695a"
-      ],
-      "data_date": "2026-08-18",
-      "status": "verified",
-      "subjectName": "OpenAI",
-      "objectName": "IBM",
-      "predicateLabel": "服务",
-      "title": "OpenAI 服务 IBM",
-      "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
-      "eventDate": "2026-08-13",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-1ea712857fb35434",
-          "subject": "IBM",
-          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-          "quote": "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR."
-        },
-        {
-          "id": "CL-eefc1dd59e9a9c0b",
-          "subject": "IBM",
-          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-          "quote": "The partnership embeds OpenAI frontier models like GPT-5.6 and products like Codex and ChatGPT Work into IBM Consulting Advantage , IBM&rsquo;s AI platform for delivering consulting services to clients, combining AI agents, industry assets, and cybersecurity capabilities to help organizations securely deploy AI at scale, drive business outcomes, and create new commercial models."
-        },
-        {
-          "id": "CL-cf542a86d93411a4",
-          "subject": "IBM",
-          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-          "quote": "The companies plan to help clients modernize legacy applications and accelerate software development by bringing together OpenAI Codex and ChatGPT Work with IBM&rsquo;s industry, technology and domain expertise, including integration with IBM Consulting Advantage. The collaboration is designed to help organizations simplify engineering processes and speed the delivery of new digital products and services."
-        },
-        {
-          "id": "CL-082bc161bc15abca",
-          "subject": "IBM",
-          "object": "OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-          "quote": "IBM and OpenAI will expand their collaboration on cybersecurity following IBM&rsquo;s participation in the OpenAI Daybreak Cyber Partner Program by combining OpenAI frontier AI capabilities with IBM Autonomous Security &mdash; a multi-agent-powered service designed to deliver coordinated decision-making, response, and intelligence at machine speed. As AI-powered attacks grow more sophisticated, the partnership will help clients manage both cyber and AI model risk, including application-layer vulnerabilities, governance gaps, and operational risks that limits AI adoption."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-7eaa925ca1da695a",
-          "publisher": "newsroom.ibm.com",
-          "url": "https://newsroom.ibm.com/2026-08-13-ibm-partners-with-openai-to-accelerate-secure-ai-deployment-for-enterprises-across-core-operations"
-        }
-      ],
-      "sourceExcerpt": "ARMONK, N.Y. , August 13, 2026 &mdash; IBM (NYSE: IBM ) today announced a strategic partnership with OpenAI to help enterprises deliver business outcomes by deploying AI at scale across core business operations and complex workflows, while strengthening cyber defense and resilience through programs like OpenAI Daybreak. The partnership includes joint-go-to market initiatives and creating industry-specific solutions for financial services, government, telecommunications, and retail, as well as key enterprise domains such as finance, procurement, customer operations, and HR.",
-      "event": {
-        "id": "EV-129ffa6be41bb485",
-        "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
-        "originalTitle": "IBM Partners with OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
-        "date": "2026-08-13",
         "dataDate": "2026-08-18",
         "eventTypeLabel": "合作"
       }

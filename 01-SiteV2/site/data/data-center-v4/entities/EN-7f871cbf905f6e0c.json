@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-19T02:05:03.499Z",
-    "latestDataDate": "2026-08-19",
-    "currentDate": "2026-08-19",
-    "eventCount": 2220,
-    "quarantinedEventCount": 19
+    "generatedAt": "2026-08-20T01:52:33.847Z",
+    "latestDataDate": "2026-08-20",
+    "currentDate": "2026-08-20",
+    "eventCount": 2246,
+    "quarantinedEventCount": 20
   },
   "entity": {
     "id": "EN-7f871cbf905f6e0c",
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-ef8e1093f14efc90",
       "EV-26cb5a38518a8eb0",
       "EV-276f0a1577748558",
       "EV-55e7c286e95be405",
@@ -31,6 +32,7 @@
       "EV-96198b8644eb94d9",
       "EV-caec65aef89d3b4a",
       "EV-ab3586268ebfab38",
+      "EV-0263827d2d81f641",
       "EV-86537be17d50ff20"
     ],
     "viewpointIds": [],
@@ -47,12 +49,13 @@
       "EN-779965438dd9e7a7"
     ],
     "firstSeen": "2026-06-08",
-    "lastSeen": "2026-08-19",
+    "lastSeen": "2026-08-20",
     "relationIds": [
       "REL2-eaf27cde7b70ddb9"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-ef8e1093f14efc90",
         "EV-26cb5a38518a8eb0",
         "EV-276f0a1577748558",
         "EV-55e7c286e95be405",
@@ -68,12 +71,45 @@
         "EV-ab3586268ebfab38"
       ],
       "hardware": [],
-      "organizationPeople": [],
+      "organizationPeople": [
+        "EV-0263827d2d81f641"
+      ],
       "other": [
         "EV-86537be17d50ff20"
       ]
     },
     "timeline": [
+      {
+        "id": "EV-ef8e1093f14efc90",
+        "dataDate": "2026-08-20",
+        "date": "2026-08-19",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Stripe 收购 OpenRouter：构建 AI 智能交换网络",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2bed2032ed3d8300",
+          "EN-7f871cbf905f6e0c"
+        ]
+      },
+      {
+        "id": "EV-0263827d2d81f641",
+        "dataDate": "2026-08-20",
+        "date": "2026-08-19",
+        "eventType": "organization_people",
+        "eventTypeLabel": "组织与人员",
+        "eventGroup": "组织、政策与法律",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "OpenRouter 宣布加入 Stripe",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7f871cbf905f6e0c"
+        ]
+      },
       {
         "id": "EV-5ebbe581dba0caf4",
         "dataDate": "2026-08-19",
@@ -1447,7 +1483,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-19"
+      "lastSeen": "2026-08-20"
     },
     {
       "id": "TX-product_form-model",
@@ -1535,6 +1571,7 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-d93dd19a481307ec",
         "EV-3a4acc92731cb5ac",
         "EV-0d5a32aca724d30e",
         "EV-63948deaec161736",
@@ -1840,13 +1877,14 @@
         "HW-c5a22adcc66136ed",
         "HW-033a5b73cdc3f4be",
         "HW-ceb55d9bc637c1d3",
+        "HW-da04d48165a60f76",
         "HW-25eea5677838fb54",
         "HW-e44b241c78bbbd26",
         "HW-46a3e65809ab5227",
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-19"
+      "lastSeen": "2026-08-20"
     },
     {
       "id": "TX-ai_market_subcategory-development_deployment",
@@ -2005,6 +2043,7 @@
         "EV-201b25d4f3cf696a",
         "EV-31df816db86db282",
         "EV-535c2f4fb851332d",
+        "EV-46cd64a76d3767f5",
         "EV-e42e55d1e11a2ba2",
         "EV-ab3586268ebfab38",
         "EV-57597c92f7b183a9",
@@ -2022,12 +2061,13 @@
         "EN-858b4458c482f7d2",
         "EN-7011e12e346d3d22",
         "EN-9b21c9bf3305c0d6",
+        "EN-7d3194f79e645c42",
         "EN-ea3bd73e2b506e00"
       ],
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-12"
+      "lastSeen": "2026-08-20"
     },
     {
       "id": "TX-ai_market_application-model_deployment",

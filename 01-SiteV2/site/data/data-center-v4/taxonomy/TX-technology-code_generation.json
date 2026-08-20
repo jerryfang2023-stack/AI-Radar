@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-19T02:05:03.499Z",
-    "latestDataDate": "2026-08-19",
-    "currentDate": "2026-08-19",
-    "eventCount": 2220,
-    "quarantinedEventCount": 19
+    "generatedAt": "2026-08-20T01:52:33.847Z",
+    "latestDataDate": "2026-08-20",
+    "currentDate": "2026-08-20",
+    "eventCount": 2246,
+    "quarantinedEventCount": 20
   },
   "node": {
     "id": "TX-technology-code_generation",
@@ -18,6 +18,7 @@
     "typeLabel": "技术",
     "valueId": "code_generation",
     "eventIds": [
+      "EV-fe49d2ee580cfea2",
       "EV-d57fb9108f2cb220",
       "EV-1744d0e71176f9a1",
       "EV-a6cb4aef5284eb68",
@@ -121,9 +122,105 @@
       "HW-b1302168a9ab18e8"
     ],
     "firstSeen": "2026-03-30",
-    "lastSeen": "2026-08-17"
+    "lastSeen": "2026-08-20"
   },
   "events": [
+    {
+      "id": "EV-fe49d2ee580cfea2",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-20",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "disputed",
+      "statusLabel": "存在争议",
+      "publicationStatus": "disputed",
+      "title": "Cognition CEO否认SpaceX试图收购该初创公司的报道",
+      "originalTitle": "Cognition CEO denies report that SpaceX tried to acquire the startup",
+      "subject": "Cognition CEO denies report that SpaceX tried to",
+      "action": "acquire",
+      "object": "the startup",
+      "metrics": [
+        "$60 billion",
+        "$2.3 trillion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-ac32f27ba7a1346f",
+        "EN-e78bdebae031095b",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-bbdefa2950f49882",
+        "EN-6fcba5d96a4fadfd"
+      ],
+      "entityNames": [
+        "Cognition",
+        "SpaceX",
+        "OpenAI",
+        "Anthropic",
+        "Google",
+        "xAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/19/cognition-ceo-denies-report-that-spacex-tried-to-acquire-the-startup",
+      "publisher": "TechCrunch AI"
+    },
     {
       "id": "EV-d57fb9108f2cb220",
       "dataDate": "2026-08-17",
@@ -9206,6 +9303,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-fe49d2ee580cfea2",
         "EV-d57fb9108f2cb220",
         "EV-1744d0e71176f9a1",
         "EV-a6cb4aef5284eb68",
@@ -9237,10 +9335,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-use_case-physical_automation",
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
         "TX-product_form-developer_tool",
         "TX-industry-aerospace_defense",
@@ -9256,7 +9354,7 @@
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-05-21",
-      "lastSeen": "2026-08-19"
+      "lastSeen": "2026-08-20"
     },
     {
       "id": "EN-a267b5c12a2015f0",
@@ -9273,8 +9371,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-code_generation"
+        "TX-technology-code_generation",
+        "TX-use_case-productivity_enterprise_workflows"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-14",
@@ -9316,10 +9414,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_subcategory-software_development_coding"
@@ -9362,9 +9460,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-target_user-business_user",
         "TX-use_case-customer_support",
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
@@ -9386,8 +9484,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-consumer",
         "TX-technology-code_generation",
+        "TX-target_user-consumer",
         "TX-technology-agentic_execution",
         "TX-product_form-developer_tool"
       ],
@@ -9410,12 +9508,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
         "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
@@ -9440,11 +9538,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-ai_market_category-enterprise_applications",
-        "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_subcategory-software_development_coding"
@@ -9464,6 +9562,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-fe49d2ee580cfea2",
         "EV-df8954acf9a13848",
         "EV-f5dd6dec49ad83aa",
         "EV-00f3271df4707d7c",
@@ -9556,6 +9655,10 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-46cd64a76d3767f5",
+        "EV-40d88f6279d48304",
+        "EV-937b855e723d6ef0",
+        "EV-d93dd19a481307ec",
         "EV-05fea7a5d8b8db46",
         "EV-06e31f68974104ec",
         "EV-1e7c9d930a2a5d8e",
@@ -9735,9 +9838,12 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
-        "EV-11a0afc2ecb6e42e",
-        "EV-9940dccace747f28",
         "EV-0c00a6c681f22b98",
+        "EV-2c08a493d3c8b9c7",
+        "EV-11a0afc2ecb6e42e",
+        "EV-6610418ae1ced59f",
+        "EV-9940dccace747f28",
+        "EV-00ffb2c501a37ec8",
         "EV-f819309f846d95bc",
         "EV-2902a32e86a4b2d1",
         "EV-90707e0cbca091c9",
@@ -9803,6 +9909,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-technology-code_generation",
         "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
         "TX-industry-media_entertainment",
@@ -9812,7 +9920,6 @@
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-customer_support",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-professional_services",
@@ -9821,10 +9928,10 @@
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-use_case-software_development",
-        "TX-product_form-chip_accelerator",
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-model",
         "TX-use_case-security_operations",
+        "TX-product_form-model_api_service",
         "TX-technology-multimodal",
         "TX-technology-long_context",
         "TX-technology-inference_optimization",
@@ -9832,9 +9939,9 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-916a98f0fa2a39af",
         "EN-d1ad14d4ad57d207",
         "EN-8d4321d936320802",
-        "EN-916a98f0fa2a39af",
         "EN-7839fb10a8f14c70",
         "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
@@ -9858,7 +9965,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-19"
+      "lastSeen": "2026-08-20"
     },
     {
       "id": "EN-a7dd4a797cf9990b",
@@ -9875,9 +9982,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
-        "TX-technology-code_generation",
         "TX-product_form-developer_tool",
         "TX-use_case-software_development",
         "TX-ai_market_application-ai_development_orchestration",
@@ -9898,21 +10005,22 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-fe49d2ee580cfea2",
         "EV-d23895daabadfa32",
         "EV-5762fe51987bc5ff"
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-target_user-developer",
         "TX-ai_market_category-enterprise_applications",
-        "TX-technology-code_generation",
         "TX-product_form-developer_tool",
         "TX-use_case-software_development",
         "TX-ai_market_subcategory-software_development_coding"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-08-20"
     },
     {
       "id": "EN-5b3767eb23d5e4ed",
@@ -9929,9 +10037,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-target_user-developer",
         "TX-ai_market_category-enterprise_applications",
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
         "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
@@ -9965,8 +10073,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-media_entertainment",
         "TX-technology-code_generation",
+        "TX-industry-media_entertainment",
         "TX-technology-agentic_execution",
         "TX-use_case-software_development"
       ],
@@ -10153,6 +10261,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-cc9d9706f9b6c597",
         "EV-f819309f846d95bc",
         "EV-2449fe665b666581",
         "EV-eae8f316bc05820b",
@@ -10167,6 +10276,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
@@ -10177,7 +10288,6 @@
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-physical_automation",
         "TX-use_case-customer_support",
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-agriculture",
@@ -10198,7 +10308,6 @@
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-use_case-software_development",
-        "TX-product_form-chip_accelerator",
         "TX-deployment_model-cloud",
         "TX-product_form-model",
         "TX-use_case-security_operations",
@@ -10240,7 +10349,7 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-19"
+      "lastSeen": "2026-08-20"
     },
     {
       "id": "EN-ea3bd73e2b506e00",
@@ -10276,6 +10385,8 @@
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-43301de739fe560e",
+        "EV-7b0ff6657c0e0483",
+        "EV-9d53b12f5f077d3b",
         "EV-615fbb4de33fad2d",
         "EV-5fe819e7070b76e6",
         "EV-c17a52220be52dc1",
@@ -10343,16 +10454,17 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-technology-code_generation",
         "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
         "TX-industry-media_entertainment",
         "TX-product_form-end_user_application",
+        "TX-use_case-content_creation",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
         "TX-use_case-data_analysis",
         "TX-use_case-software_development",
-        "TX-product_form-chip_accelerator",
         "TX-deployment_model-cloud",
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-model",
@@ -10380,7 +10492,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-19"
+      "lastSeen": "2026-08-20"
     },
     {
       "id": "EN-96783c5f75425c34",
@@ -10438,6 +10550,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-fe49d2ee580cfea2",
         "EV-d57fb9108f2cb220",
         "EV-1744d0e71176f9a1",
         "EV-a6cb4aef5284eb68",
@@ -10481,6 +10594,9 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-7b0ff6657c0e0483",
+        "EV-c3f2380f39d120ea",
+        "EV-d93dd19a481307ec",
         "EV-62297e5ea63f0c78",
         "EV-5fe819e7070b76e6",
         "EV-930447492f4368e1",
@@ -10631,6 +10747,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
@@ -10640,7 +10757,6 @@
         "TX-product_form-end_user_application",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-financial_services",
@@ -10676,7 +10792,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-20"
     },
     {
       "id": "EN-4adc2faea521b1f1",
@@ -10723,10 +10839,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-technology-agentic_execution",
         "TX-use_case-software_development",
-        "TX-product_form-chip_accelerator",
         "TX-technology-guardrails_safety"
       ],
       "relatedEntityIds": [],
@@ -10798,9 +10914,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-ai_device",
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
         "TX-use_case-software_development",
         "TX-product_form-model",
@@ -10830,6 +10946,7 @@
       "eventIds": [
         "EV-be59d9048dd1b6a0",
         "EV-53f08daddd011dbb",
+        "EV-68897f26c8d956df",
         "EV-96198b8644eb94d9",
         "EV-3353bd96728c99e2",
         "EV-8a9b12665a3e40a0",
@@ -10853,7 +10970,7 @@
         "EN-ddf9916b459b6d77"
       ],
       "firstSeen": "2026-05-09",
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-08-20"
     },
     {
       "id": "EN-412b57e712039032",
@@ -10870,9 +10987,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-use_case-software_development",
-        "TX-product_form-chip_accelerator",
         "TX-product_form-model"
       ],
       "relatedEntityIds": [
@@ -10918,11 +11035,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
         "TX-use_case-software_development",
         "TX-product_form-model",
@@ -10997,12 +11114,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-technology-code_generation",
         "TX-industry-media_entertainment",
         "TX-use_case-physical_automation",
-        "TX-technology-code_generation",
         "TX-use_case-research_discovery",
         "TX-use_case-software_development",
-        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
         "TX-use_case-security_operations",
         "TX-technology-embodied_ai",
@@ -11038,6 +11155,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-fe49d2ee580cfea2",
         "EV-d57fb9108f2cb220",
         "EV-1744d0e71176f9a1",
         "EV-a6cb4aef5284eb68",
@@ -11081,8 +11199,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-technology-code_generation",
+        "TX-product_form-end_user_application",
         "TX-use_case-software_development",
         "TX-product_form-model"
       ],
@@ -11092,7 +11210,7 @@
         "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-19"
+      "lastSeen": "2026-08-20"
     },
     {
       "id": "EN-f19600b9e18f7f27",
