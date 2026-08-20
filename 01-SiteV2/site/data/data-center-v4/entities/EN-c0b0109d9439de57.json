@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-19T02:05:03.499Z",
-    "latestDataDate": "2026-08-19",
-    "currentDate": "2026-08-19",
-    "eventCount": 2220,
-    "quarantinedEventCount": 19
+    "generatedAt": "2026-08-20T01:52:33.847Z",
+    "latestDataDate": "2026-08-20",
+    "currentDate": "2026-08-20",
+    "eventCount": 2246,
+    "quarantinedEventCount": 20
   },
   "entity": {
     "id": "EN-c0b0109d9439de57",
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-75452672c9976d73",
       "EV-33053abbe1a60b38",
       "EV-a7572f16e6d6bf6e"
     ],
@@ -29,10 +30,11 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-03",
-    "lastSeen": "2026-08-18",
+    "lastSeen": "2026-08-20",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-75452672c9976d73",
         "EV-33053abbe1a60b38"
       ],
       "deployments": [],
@@ -45,6 +47,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-75452672c9976d73",
+        "dataDate": "2026-08-20",
+        "date": "2026-08-13",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "50个开源项目教会我们的AI时代安全之道",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c0b0109d9439de57"
+        ]
+      },
       {
         "id": "EV-33053abbe1a60b38",
         "dataDate": "2026-08-18",

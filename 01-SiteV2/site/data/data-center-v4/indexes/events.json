@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-19T02:05:03.499Z",
-    "latestDataDate": "2026-08-19",
-    "currentDate": "2026-08-19",
-    "eventCount": 2220,
-    "quarantinedEventCount": 19
+    "generatedAt": "2026-08-20T01:52:33.847Z",
+    "latestDataDate": "2026-08-20",
+    "currentDate": "2026-08-20",
+    "eventCount": 2246,
+    "quarantinedEventCount": 20
   },
   "eventTypes": {
     "model_release": {
@@ -115,6 +115,280 @@
   },
   "events": [
     {
+      "id": "EV-4af14568b1bdeb35",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "AI 芯片初创企业 Etched 估值飙升至 210 亿美元，首批机架出货",
+      "originalTitle": "",
+      "subject": "Etched",
+      "action": "funding",
+      "object": "7 亿美元融资",
+      "metrics": [
+        "210 亿",
+        "1,418.95 亿",
+        "7 亿",
+        "47.3 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-9cb45a27a2808c01"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-9cb45a27a2808c01"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-9cb45a27a2808c01"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9cb45a27a2808c01"
+      ],
+      "entityNames": [
+        "Etched"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/991/748.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-8cb4468fe881602b",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Relativity Networks 融资 2200 万美元，并获 4000 万美元超大规模合同，助力 AI 地理时代",
+      "originalTitle": "Relativity Networks Raises $22M and Lands $40M Hyperscaler Contract to Power the AI Geography Era",
+      "subject": "Relativity Networks",
+      "action": "Raises",
+      "object": "$22M and Lands $40M Hyperscaler Contract to Power the AI Geography Era",
+      "metrics": [
+        "$22 million",
+        "$40 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-2f72d2f93de73383"
+      ],
+      "entityNames": [
+        "Relativity Networks"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://prnewswire.com/news-releases/relativity-networks-raises-22m-and-lands-40m-hyperscaler-contract-to-power-the-ai-geography-era-302854769.html",
+      "publisher": "prnewswire.com"
+    },
+    {
+      "id": "EV-ef8e1093f14efc90",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-20",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Stripe 收购 OpenRouter：构建 AI 智能交换网络",
+      "originalTitle": "",
+      "subject": "Stripe",
+      "action": "收购",
+      "object": "OpenRouter：构建 AI 智能交换网络",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-2bed2032ed3d8300",
+        "EN-7f871cbf905f6e0c"
+      ],
+      "entityNames": [
+        "Stripe",
+        "OpenRouter"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://a16z.news/p/openrouter-and-stripe-the-intelligence",
+      "publisher": "a16z：News（RSS）"
+    },
+    {
+      "id": "EV-fe49d2ee580cfea2",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-20",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "disputed",
+      "statusLabel": "存在争议",
+      "publicationStatus": "disputed",
+      "title": "Cognition CEO否认SpaceX试图收购该初创公司的报道",
+      "originalTitle": "Cognition CEO denies report that SpaceX tried to acquire the startup",
+      "subject": "Cognition CEO denies report that SpaceX tried to",
+      "action": "acquire",
+      "object": "the startup",
+      "metrics": [
+        "$60 billion",
+        "$2.3 trillion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-ac32f27ba7a1346f",
+        "EN-e78bdebae031095b",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-bbdefa2950f49882",
+        "EN-6fcba5d96a4fadfd"
+      ],
+      "entityNames": [
+        "Cognition",
+        "SpaceX",
+        "OpenAI",
+        "Anthropic",
+        "Google",
+        "xAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/19/cognition-ceo-denies-report-that-spacex-tried-to-acquire-the-startup",
+      "publisher": "TechCrunch AI"
+    },
+    {
       "id": "EV-2f87750c33ee2d80",
       "dataDate": "2026-08-19",
       "date": "2026-08-19",
@@ -190,7 +464,7 @@
         "EN-2733b0272eaa721d"
       ],
       "entityNames": [
-        "HANMI Semiconductor"
+        "Hanmi Semiconductor"
       ],
       "productName": "",
       "products": [],
@@ -3619,6 +3893,53 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/989/944.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-75452672c9976d73",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-13",
+      "updatedDate": "2026-08-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "50个开源项目教会我们的AI时代安全之道",
+      "originalTitle": "What 50 open source projects taught us about security in the AI era",
+      "subject": "GitHub Secure Open Source Fund",
+      "action": "funding",
+      "object": "50 projects",
+      "metrics": [
+        "$500,000 ",
+        "$10,000 "
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c0b0109d9439de57"
+      ],
+      "entityNames": [
+        "GitHub"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era",
+      "publisher": "GitHub Blog AI"
     },
     {
       "id": "EV-33053abbe1a60b38",
@@ -73509,6 +73830,94 @@
       "publisher": "prnewswire.com"
     },
     {
+      "id": "EV-a81c5dc2e9abff3a",
+      "dataDate": "2026-08-20",
+      "date": "2026-06-16",
+      "updatedDate": "2026-08-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Articul8 AI 获得全球工业软件领导者的战略投资，完成B轮融资",
+      "originalTitle": "Articul8 AI Secures Strategic Investment from Global Industrial Software Leader to Complete Series B",
+      "subject": "Articul8 AI",
+      "action": "Secures",
+      "object": "Strategic Investment from Global Industrial Software Leader to Complete Series B",
+      "metrics": [
+        "$500 million",
+        "$100 million"
+      ],
+      "locations": [
+        "Europe",
+        "Japan"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-5e0971a2294ea3f7"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-5e0971a2294ea3f7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-5e0971a2294ea3f7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-5e0971a2294ea3f7",
+        "EN-4e24b4c8c700c60f"
+      ],
+      "entityNames": [
+        "Articul8 AI",
+        "SANTA CLARA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/06/16/3312501/0/en/Articul8-AI-Secures-Strategic-Investment-from-Global-Industrial-Software-Leader-to-Complete-Series-B.html",
+      "publisher": "globenewswire.com"
+    },
+    {
       "id": "EV-3daefecd0453631a",
       "dataDate": "2026-06-17",
       "date": "2026-06-16",
@@ -115946,6 +116355,136 @@
       "publisher": "front.ai"
     },
     {
+      "id": "EV-2b9da4db831578a4",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-20",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic Claude案例研究：Advantage Solutions",
+      "originalTitle": "Advantage Solutions Claude case study | Claude by Anthropic",
+      "subject": "Advantage Solutions",
+      "action": "deployment",
+      "object": "Claude",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-84aeacc355a52b4c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-84aeacc355a52b4c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-84aeacc355a52b4c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-84aeacc355a52b4c",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Advantage Solutions",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://claude.com/customers/advantage-solutions",
+      "publisher": "claude.com"
+    },
+    {
+      "id": "EV-34ed8f760205fbb7",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-20",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "人工智能与自动化解决方案及相关服务2026-2033（DPS）-欧盟招标-欧盟出版局",
+      "originalTitle": "Artificial intelligence and automation solutions and related services 2026-2033 (DPS) - EU tenders - Publications Office of the EU",
+      "subject": "Istekki Oy",
+      "action": "procurement_contract",
+      "object": "Artificial intelligence and automation solutions and related services 2026-2033 (DPS)",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c3d3ea018f27afc8"
+      ],
+      "entityNames": [
+        "Istekki Oy"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://op.europa.eu/en/web/public-procurement/procurement-details/-/procurement/02421f82-00be-45d9-bba8-27c9b64a40a4",
+      "publisher": "op.europa.eu"
+    },
+    {
       "id": "EV-9fa7757568f0524e",
       "dataDate": "2026-08-19",
       "date": "2026-08-19",
@@ -115990,52 +116529,6 @@
       "products": [],
       "sourceUrl": "https://constructionworld.in/policy-updates-and-economic-news/cactus-wins-meity-contract-to-build-ai-tender-authoring-platform/94631",
       "publisher": "constructionworld.in"
-    },
-    {
-      "id": "EV-34ed8f760205fbb7",
-      "dataDate": "2026-08-18",
-      "date": "2026-08-18",
-      "updatedDate": "2026-08-18",
-      "eventType": "procurement_contract",
-      "eventTypeLabel": "采购合同",
-      "eventGroup": "商业合作",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "人工智能与自动化解决方案及相关服务2026-2033（DPS）-欧盟招标-欧盟出版局",
-      "originalTitle": "Artificial intelligence and automation solutions and related services 2026-2033 (DPS) - EU tenders - Publications Office of the EU",
-      "subject": "Istekki Oy",
-      "action": "procurement_contract",
-      "object": "Artificial intelligence and automation solutions and related services 2026-2033 (DPS)",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-c3d3ea018f27afc8"
-      ],
-      "entityNames": [
-        "Istekki Oy"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://op.europa.eu/en/web/public-procurement/procurement-details/-/procurement/02421f82-00be-45d9-bba8-27c9b64a40a4",
-      "publisher": "op.europa.eu"
     },
     {
       "id": "EV-7690a249e07ddac8",
@@ -116141,6 +116634,50 @@
       "products": [],
       "sourceUrl": "https://zenml.io/llmops-database/generative-ai-implementation-in-banking-customer-service-and-knowledge-management",
       "publisher": "zenml.io"
+    },
+    {
+      "id": "EV-b6789508a1887fd4",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-17",
+      "updatedDate": "2026-08-20",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Darwin AI 宣布与德克萨斯州达成全国首个人工智能治理批量采购协议",
+      "originalTitle": "Darwin AI Announces the Nation’s First Bulk Purchase Agreement for AI Governance Through the State of Texas",
+      "subject": "Darwin AI",
+      "action": "procurement_contract",
+      "object": "Texas Department of Information Resources",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-b45fc2bf83bced68"
+      ],
+      "entityNames": [
+        "Darwin AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://einpresswire.com/article/934565825/darwin-ai-announces-the-nation-s-first-bulk-purchase-agreement-for-ai-governance-through-the-state-of-texas",
+      "publisher": "einpresswire.com"
     },
     {
       "id": "EV-3ebefd784ba0afd0",
@@ -116300,50 +116837,6 @@
       "products": [],
       "sourceUrl": "https://hig.marketminute.com/article/newsfile-2026-8-17-hives-buzz-hpc-signs-350-million-ai-cloud-services-agreement-with-investment-grade-enterprise-customer",
       "publisher": "hig.marketminute.com"
-    },
-    {
-      "id": "EV-b6789508a1887fd4",
-      "dataDate": "2026-08-18",
-      "date": "2026-08-17",
-      "updatedDate": "2026-08-18",
-      "eventType": "procurement_contract",
-      "eventTypeLabel": "采购合同",
-      "eventGroup": "商业合作",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Darwin AI 宣布与德克萨斯州达成全国首个人工智能治理批量采购协议",
-      "originalTitle": "Darwin AI Announces the Nation’s First Bulk Purchase Agreement for AI Governance Through the State of Texas",
-      "subject": "Darwin AI",
-      "action": "procurement_contract",
-      "object": "Texas Department of Information Resources",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-b45fc2bf83bced68"
-      ],
-      "entityNames": [
-        "Darwin AI"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://einpresswire.com/article/934565825/darwin-ai-announces-the-nation-s-first-bulk-purchase-agreement-for-ai-governance-through-the-state-of-texas",
-      "publisher": "einpresswire.com"
     },
     {
       "id": "EV-ba20c6e0144aabb9",
@@ -116831,6 +117324,52 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-081fe42665b4a0b2",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-14",
+      "updatedDate": "2026-08-20",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Rivian如何利用Amazon Bedrock上的AI智能体加速财务运营",
+      "originalTitle": "How Rivian Accelerated Finance Operations with AI Agents on Amazon Bedrock | AWS for SAP",
+      "subject": "Rivian",
+      "action": "deployment",
+      "object": "SAP Purchase Order Accrual Automation System built on Amazon Bedrock AgentCore",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c7ad2ac22b4500bd",
+        "EN-cbc62794911ff31b"
+      ],
+      "entityNames": [
+        "Rivian",
+        "Amazon"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://aws.amazon.com/blogs/awsforsap/how-rivian-accelerated-finance-operations-with-ai-agents-on-amazon-bedrock",
+      "publisher": "aws.amazon.com"
+    },
+    {
       "id": "EV-0121f0a9e9a975ec",
       "dataDate": "2026-08-19",
       "date": "2026-08-14",
@@ -117299,52 +117838,6 @@
       "products": [],
       "sourceUrl": "https://techtimes.com/articles/324334/20260813/lt-deploys-indias-first-10000-gpu-unified-ai-cluster-together-ai-chennai.htm",
       "publisher": "techtimes.com"
-    },
-    {
-      "id": "EV-081fe42665b4a0b2",
-      "dataDate": "2026-08-16",
-      "date": "2026-08-14",
-      "updatedDate": "2026-08-16",
-      "eventType": "deployment",
-      "eventTypeLabel": "部署",
-      "eventGroup": "部署与案例",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Rivian如何利用Amazon Bedrock上的AI智能体加速财务运营",
-      "originalTitle": "How Rivian Accelerated Finance Operations with AI Agents on Amazon Bedrock | AWS for SAP",
-      "subject": "Rivian",
-      "action": "deployment",
-      "object": "SAP Purchase Order Accrual Automation System built on Amazon Bedrock AgentCore",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-c7ad2ac22b4500bd",
-        "EN-cbc62794911ff31b"
-      ],
-      "entityNames": [
-        "Rivian",
-        "Amazon"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://aws.amazon.com/blogs/awsforsap/how-rivian-accelerated-finance-operations-with-ai-agents-on-amazon-bedrock",
-      "publisher": "aws.amazon.com"
     },
     {
       "id": "EV-5ac2ba824c6d818c",
@@ -136033,6 +136526,96 @@
       "publisher": "fedscoop.com"
     },
     {
+      "id": "EV-323d98437e42e8b3",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-20",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Kuehne+Nagel 与 HappyRobot 签署战略合作，将 AI 智能体部署到全球空运业务",
+      "originalTitle": "Kuehne+Nagel x HappyRobot Customer Story | HappyRobot",
+      "subject": "HappyRobot",
+      "action": "partnership",
+      "object": "Kuehne+Nagel",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-12bb49e1b12281f4"
+      ],
+      "entityNames": [
+        "HappyRobot"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://happyrobot.ai/customer-story/kuehne-nagel",
+      "publisher": "happyrobot.ai"
+    },
+    {
+      "id": "EV-d7363291047184de",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-18",
+      "updatedDate": "2026-08-20",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Firefox 的 Smart Window 承诺打造更好的 AI 浏览器",
+      "originalTitle": "Firefox’s Smart Window promises a better AI browser",
+      "subject": "Firefox",
+      "action": "partnership",
+      "object": "Exa",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-16e5f60f207a1a00"
+      ],
+      "entityNames": [
+        "Firefox"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/981283/mozilla-firefox-smart-window-ai-features",
+      "publisher": "The Verge AI"
+    },
+    {
       "id": "EV-58268b12aa406620",
       "dataDate": "2026-08-19",
       "date": "2026-08-18",
@@ -136184,26 +136767,24 @@
       "publisher": "IT之家（RSS）"
     },
     {
-      "id": "EV-323d98437e42e8b3",
-      "dataDate": "2026-08-18",
-      "date": "2026-08-18",
-      "updatedDate": "2026-08-18",
+      "id": "EV-a69c83bcdb90c823",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-17",
+      "updatedDate": "2026-08-20",
       "eventType": "partnership",
       "eventTypeLabel": "合作",
       "eventGroup": "商业合作",
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "Kuehne+Nagel 与 HappyRobot 签署战略合作，将 AI 智能体部署到全球空运业务",
-      "originalTitle": "Kuehne+Nagel x HappyRobot Customer Story | HappyRobot",
-      "subject": "HappyRobot",
+      "title": "通过Gemini和Pixel更贴近比赛",
+      "originalTitle": "Get closer to the game with Gemini and Pixel",
+      "subject": "Google Gemini and Pixel",
       "action": "partnership",
-      "object": "Kuehne+Nagel",
+      "object": "Arsenal FC, FC Barcelona, FC Bayern München, Liverpool FC, and Paris Saint-Germain",
       "metrics": [],
       "locations": [],
-      "missingFields": [
-        "event_time"
-      ],
+      "missingFields": [],
       "conflicts": [],
       "tags": [],
       "facets": {
@@ -136219,15 +136800,17 @@
       "classifications": [],
       "displayTags": [],
       "entityIds": [
-        "EN-12bb49e1b12281f4"
+        "EN-160b93ba38ba1ecd",
+        "EN-3f8d7379e2f0f7d0"
       ],
       "entityNames": [
-        "HappyRobot"
+        "Google Gemini",
+        "Pixel"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://happyrobot.ai/customer-story/kuehne-nagel",
-      "publisher": "happyrobot.ai"
+      "sourceUrl": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships",
+      "publisher": "Google AI Blog"
     },
     {
       "id": "EV-5ac5368309eace1a",
@@ -136635,9 +137218,9 @@
     },
     {
       "id": "EV-129ffa6be41bb485",
-      "dataDate": "2026-08-18",
+      "dataDate": "2026-08-20",
       "date": "2026-08-13",
-      "updatedDate": "2026-08-18",
+      "updatedDate": "2026-08-20",
       "eventType": "partnership",
       "eventTypeLabel": "合作",
       "eventGroup": "商业合作",
@@ -136951,9 +137534,9 @@
     },
     {
       "id": "EV-4f0f7d0b05d34598",
-      "dataDate": "2026-08-18",
+      "dataDate": "2026-08-20",
       "date": "2026-08-13",
-      "updatedDate": "2026-08-18",
+      "updatedDate": "2026-08-20",
       "eventType": "partnership",
       "eventTypeLabel": "合作",
       "eventGroup": "商业合作",
@@ -149089,10 +149672,375 @@
       "publisher": "markets.ft.com"
     },
     {
+      "id": "EV-46cd64a76d3767f5",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-20",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI 扩展零数据留存安全机制，自动化分析跨交互风险",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "product_release",
+      "object": "OpenAI 扩展零数据留存安全机制，自动化分析跨交互风险",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model_api_service",
+            "name": "模型 API 服务",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model_api_service",
+          "name": "模型 API 服务",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model_api_service",
+          "name": "模型 API 服务",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/991/868.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-6dc56d23bf29768b",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-20",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Claude Code v2.1.236 发布：新增默认模型环境变量与跨会话闲置通知",
+      "originalTitle": "",
+      "subject": "Claude Code",
+      "action": "发布：新增默认模型",
+      "object": "环境变量与跨会话闲置通知",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-a625159d18da5718"
+      ],
+      "entityNames": [
+        "Claude Code"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.236",
+      "publisher": "Claude Code：GitHub Releases（RSS）"
+    },
+    {
+      "id": "EV-7b0ff6657c0e0483",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-20",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Meta 推出 Meta AI 原生 Mac 应用：支持窗口共享、跨应用听写",
+      "originalTitle": "",
+      "subject": "Meta",
+      "action": "推出",
+      "object": "Meta AI 原生 Mac 应用：支持窗口共享、跨应用听写",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00",
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "Meta",
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/991/866.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-8cc00de56738c21d",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-20",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Unsloth Dynamic 3.0 GGUFs 发布",
+      "originalTitle": "",
+      "subject": "Unsloth Dynamic 3.0 GGUFs",
+      "action": "发布",
+      "object": "Unsloth Dynamic 3.0 GGUFs 发布",
+      "metrics": [
+        "10%",
+        "1%"
+      ],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-03c4260539e08e9c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-03c4260539e08e9c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-03c4260539e08e9c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-03c4260539e08e9c"
+      ],
+      "entityNames": [
+        "Unsloth Dynamic 3.0 GGUFs"
+      ],
+      "productName": "Unsloth Dynamic 3.0 GGUFs",
+      "products": [
+        {
+          "name": "Unsloth Dynamic 3.0 GGUFs",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://unsloth.ai/docs/basics/dynamic-3.0-ggufs",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
+    },
+    {
       "id": "EV-2c6707327367640f",
-      "dataDate": "2026-08-19",
+      "dataDate": "2026-08-20",
       "date": "2026-08-19",
-      "updatedDate": "2026-08-19",
+      "updatedDate": "2026-08-20",
       "eventType": "hardware_product",
       "eventTypeLabel": "硬件产品",
       "eventGroup": "AI 硬件",
@@ -149185,6 +150133,611 @@
       ],
       "sourceUrl": "https://ithome.com/0/991/418.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-40d88f6279d48304",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-20",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "OpenAI 推出 Private Safety Processing，以隐私保护策略对标 Anthropic",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "推出",
+      "object": "Private Safety Processing，以隐私保护策略对标 Anthropic",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-cb3168ac65600e46"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "Anthropic",
+        "Private Safety Processing"
+      ],
+      "productName": "Private Safety Processing",
+      "products": [
+        {
+          "name": "Private Safety Processing",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-68897f26c8d956df",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-20",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "IDC发布2026中国AI50强：360以“智能体+安全”双轮驱动入选",
+      "originalTitle": "",
+      "subject": "IDC",
+      "action": "发布",
+      "object": "2026中国AI50强：360以“智能体+安全”双轮驱动入选",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-796e923025d6fbb2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-796e923025d6fbb2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-796e923025d6fbb2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-796e923025d6fbb2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-796e923025d6fbb2",
+        "EN-e9fc4f156e36f6aa",
+        "EN-a89151ba4b5ac0f2",
+        "EN-fb646a85ad74e7c5",
+        "EN-c608c4787821de1b"
+      ],
+      "entityNames": [
+        "IDC",
+        "Alibaba Cloud",
+        "Baidu",
+        "Tencent Cloud",
+        "Xiaomi"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://qbitai.com/2026/08/475901.html",
+      "publisher": "量子位"
+    },
+    {
+      "id": "EV-937b855e723d6ef0",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-20",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Mojo🔥现已开源",
+      "originalTitle": "Mojo🔥 is now open source",
+      "subject": "Mojo🔥 is now",
+      "action": "open source",
+      "object": "Mojo🔥 is now open source",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bb15c5437cc0ac44",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "Mojo🔥 is now",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source",
+      "publisher": "Simon Willison's Blog"
+    },
+    {
+      "id": "EV-9d53b12f5f077d3b",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-20",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Meta AI 推出 Mac 应用",
+      "originalTitle": "Meta AI is getting a Mac app",
+      "subject": "Meta",
+      "action": "product_release",
+      "object": "Mac app dedicated to Meta AI chatbot",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/tech/982270/meta-ai-mac-app",
+      "publisher": "The Verge AI"
+    },
+    {
+      "id": "EV-b756b17219597a4e",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-20",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "GLM-5.3 登顶开源模型排行榜，价格低于竞争对手，但发布推迟",
+      "originalTitle": "GLM-5.3 tops the open-model rankings and undercuts rivals on price, but its release is delayed",
+      "subject": "GLM-5.3 tops the open-model rankings and undercuts rivals on price, but its",
+      "action": "release",
+      "object": "is delayed",
+      "metrics": [
+        "5.3 tops"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-cdc941acf98083b7",
+        "EN-e3ea8280d7689bb7"
+      ],
+      "entityNames": [
+        "undercuts rivals on price",
+        "GLM-5.3"
+      ],
+      "productName": "GLM-5.3",
+      "products": [
+        {
+          "name": "GLM-5.3",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/glm-5-3-tops-the-open-model-rankings-and-undercuts-rivals-on-price-but-its-release-is-delayed",
+      "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-c3f2380f39d120ea",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-20",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "谷歌为搜索和Gemini新增AI学习工具",
+      "originalTitle": "Google packs Search and Gemini with new AI study tools",
+      "subject": "Google",
+      "action": "product_release",
+      "object": "AI-generated interactive visuals and 3D simulations in Search and Gemini",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-f71b7c199733808f"
+      ],
+      "entityNames": [
+        "Google",
+        "AI-generated"
+      ],
+      "productName": "AI-generated",
+      "products": [
+        {
+          "name": "AI-generated",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/19/google-launches-new-study-tools-for-students-across-search-and-gemini",
+      "publisher": "TechCrunch AI"
+    },
+    {
+      "id": "EV-cff5848b8c5453af",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-20",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "派早报：iQOO 发布手机新品、闪极举行 Loomos AI 眼镜发布会等",
+      "originalTitle": "",
+      "subject": "派早报：iQOO",
+      "action": "发布手机新品、闪极举行 Loomos AI 眼镜",
+      "object": "发布会等",
+      "metrics": [
+        "29.98 万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-478676438ee161a3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-478676438ee161a3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-478676438ee161a3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-478676438ee161a3"
+      ],
+      "entityNames": [
+        "派早报"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://sspai.com/post/113607",
+      "publisher": "少数派"
+    },
+    {
+      "id": "EV-d93dd19a481307ec",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-20",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "韩国首款主权 AI 一体机出货：国产芯片、国产 LLM 集成于单台服务器",
+      "originalTitle": "Korea's First Sovereign AI Appliance Ships: Domestic Chip, Domestic LLM, One Server",
+      "subject": "Korea's First Sovereign AI Appliance",
+      "action": "Ships: Domestic Chip, Domestic LLM, One Server",
+      "object": "Korea's First Sovereign AI Appliance Ships: Domestic Chip, Domestic LLM, One Server",
+      "metrics": [
+        "32 billion"
+      ],
+      "locations": [
+        "Korea"
+      ],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-99d3fd0fa8fe115e",
+        "EN-7d3194f79e645c42",
+        "EN-bbdefa2950f49882",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3c8fb6fa445060",
+        "EN-b563f0c46d6f78f8"
+      ],
+      "entityNames": [
+        "KT",
+        "OpenAI",
+        "Google",
+        "Anthropic",
+        "AI Appliance Ships",
+        "First Sovereign AI Appliance"
+      ],
+      "productName": "AI Appliance Ships",
+      "products": [
+        {
+          "name": "AI Appliance Ships",
+          "type": "AI 硬件",
+          "ownerNames": [
+            "KT"
+          ]
+        },
+        {
+          "name": "First Sovereign AI Appliance",
+          "type": "AI 硬件",
+          "ownerNames": [
+            "KT"
+          ]
+        }
+      ],
+      "sourceUrl": "https://techtimes.com/articles/324976/20260819/koreas-first-sovereign-ai-appliance-ships-domestic-chip-domestic-llm-one-server.htm",
+      "publisher": "techtimes.com"
     },
     {
       "id": "EV-3a4acc92731cb5ac",
@@ -149383,88 +150936,6 @@
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.235",
       "publisher": "Claude Code：GitHub Releases（RSS）"
-    },
-    {
-      "id": "EV-cff5848b8c5453af",
-      "dataDate": "2026-08-19",
-      "date": "2026-08-19",
-      "updatedDate": "2026-08-19",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "eventGroup": "AI 硬件",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "派早报：iQOO 发布手机新品、闪极举行 Loomos AI 眼镜发布会等",
-      "originalTitle": "",
-      "subject": "派早报：iQOO",
-      "action": "发布手机新品、闪极举行 Loomos AI 眼镜",
-      "object": "发布会等",
-      "metrics": [
-        "29.98 万"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "ai_device",
-            "name": "AI 设备",
-            "entityIds": [
-              "EN-478676438ee161a3"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "ai_device",
-          "name": "AI 设备",
-          "entityIds": [
-            "EN-478676438ee161a3"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "ai_device",
-          "name": "AI 设备",
-          "entityIds": [
-            "EN-478676438ee161a3"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-478676438ee161a3"
-      ],
-      "entityNames": [
-        "派早报"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://sspai.com/post/113607",
-      "publisher": "少数派"
     },
     {
       "id": "EV-05fea7a5d8b8db46",
@@ -150239,6 +151710,147 @@
       "publisher": "Claude Code：GitHub Releases（RSS）"
     },
     {
+      "id": "EV-47d1537c570019ff",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-17",
+      "updatedDate": "2026-08-20",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Glass 重新推出 G-Commerce，面向公共部门的 AI 驱动商务平台",
+      "originalTitle": "Glass Reintroduces G-Commerce, the AI-Powered Commerce Platform for the Public Sector | Antelope Valley Press",
+      "subject": "Glass",
+      "action": "product_release",
+      "object": "G-Commerce",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "government_public_sector",
+            "name": "政府与公共部门",
+            "entityIds": [
+              "EN-132a1a391cce181c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "government_public_sector",
+          "name": "政府与公共部门",
+          "entityIds": [
+            "EN-132a1a391cce181c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "government_public_sector",
+          "name": "政府与公共部门",
+          "entityIds": [
+            "EN-132a1a391cce181c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-132a1a391cce181c",
+        "EN-d7a58ee80a4e4f1b",
+        "EN-bf802ed832a62a35"
+      ],
+      "entityNames": [
+        "Glass",
+        "G-Commerce",
+        "Reintroduces G-Commerce"
+      ],
+      "productName": "G-Commerce",
+      "products": [
+        {
+          "name": "G-Commerce",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Reintroduces G-Commerce",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://avpress.marketminute.com/article/gnwcq-2026-8-17-glass-reintroduces-g-commerce-the-ai-powered-commerce-platform-for-the-public-sector",
+      "publisher": "avpress.marketminute.com"
+    },
+    {
+      "id": "EV-50707b1126daba0f",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-17",
+      "updatedDate": "2026-08-20",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "画布如何让智能体工作流变得可见、可控且成本高效",
+      "originalTitle": "How canvases make agentic workflows visible, steerable, and cost-efficient",
+      "subject": "GitHub Copilot app",
+      "action": "product_release",
+      "object": "canvases",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-e489f95f7a3ddb71",
+        "EN-de92ba5aa95fe45e"
+      ],
+      "entityNames": [
+        "GitHub Copilot app",
+        "Site Studio"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient",
+      "publisher": "GitHub Blog AI"
+    },
+    {
       "id": "EV-0d5a32aca724d30e",
       "dataDate": "2026-08-18",
       "date": "2026-08-17",
@@ -150523,147 +152135,6 @@
       "products": [],
       "sourceUrl": "https://qbitai.com/2026/08/474537.html",
       "publisher": "量子位"
-    },
-    {
-      "id": "EV-47d1537c570019ff",
-      "dataDate": "2026-08-18",
-      "date": "2026-08-17",
-      "updatedDate": "2026-08-18",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Glass重新推出G-Commerce，面向公共部门的AI驱动商务平台",
-      "originalTitle": "Glass Reintroduces G-Commerce, the AI-Powered Commerce Platform for the Public Sector | FinancialContent",
-      "subject": "Glass",
-      "action": "product_release",
-      "object": "G-Commerce",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "government_public_sector",
-            "name": "政府与公共部门",
-            "entityIds": [
-              "EN-132a1a391cce181c"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "government_public_sector",
-          "name": "政府与公共部门",
-          "entityIds": [
-            "EN-132a1a391cce181c"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "government_public_sector",
-          "name": "政府与公共部门",
-          "entityIds": [
-            "EN-132a1a391cce181c"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-132a1a391cce181c",
-        "EN-d7a58ee80a4e4f1b",
-        "EN-bf802ed832a62a35"
-      ],
-      "entityNames": [
-        "Glass",
-        "G-Commerce",
-        "Reintroduces G-Commerce"
-      ],
-      "productName": "G-Commerce",
-      "products": [
-        {
-          "name": "G-Commerce",
-          "type": "产品/服务",
-          "ownerNames": []
-        },
-        {
-          "name": "Reintroduces G-Commerce",
-          "type": "产品/服务",
-          "ownerNames": []
-        }
-      ],
-      "sourceUrl": "https://financialcontent.com/article/gnwcq-2026-8-17-glass-reintroduces-g-commerce-the-ai-powered-commerce-platform-for-the-public-sector",
-      "publisher": "financialcontent.com"
-    },
-    {
-      "id": "EV-50707b1126daba0f",
-      "dataDate": "2026-08-18",
-      "date": "2026-08-17",
-      "updatedDate": "2026-08-18",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "画布如何让智能体工作流变得可见、可控且成本高效",
-      "originalTitle": "How canvases make agentic workflows visible, steerable, and cost-efficient",
-      "subject": "GitHub Copilot app",
-      "action": "product_release",
-      "object": "canvases",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-e489f95f7a3ddb71",
-        "EN-de92ba5aa95fe45e"
-      ],
-      "entityNames": [
-        "GitHub Copilot app",
-        "Site Studio"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient",
-      "publisher": "GitHub Blog AI"
     },
     {
       "id": "EV-615fbb4de33fad2d",
@@ -251479,10 +252950,577 @@
       "publisher": "Simon Willison 博客"
     },
     {
-      "id": "EV-11a0afc2ecb6e42e",
-      "dataDate": "2026-08-19",
+      "id": "EV-0c00a6c681f22b98",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-20",
+      "eventType": "security_incident",
+      "eventTypeLabel": "安全事件",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI 日报 · 2026年8月8日（周六） - 多课网",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "security_incident",
+      "object": "Astra",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-f9fa1d111b889a77"
+        ]
+      },
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://duoke360.com/post/47274",
+      "publisher": "duoke360.com"
+    },
+    {
+      "id": "EV-2c08a493d3c8b9c7",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-20",
+      "eventType": "security_incident",
+      "eventTypeLabel": "安全事件",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI修复了Codex未经许可删除真实用户文件的漏洞",
+      "originalTitle": "OpenAI fixes Codex bug that deleted real user files without permission",
+      "subject": "GPT-5.6 Sol",
+      "action": "security_incident",
+      "object": "real user files",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://the-decoder.com/openai-fixes-codex-bug-that-deleted-real-user-files-without-permission",
+      "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-3badd98afb847643",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-20",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "国家互联网信息办公室关于发布生成式人工智能服务已备案信息的公告",
+      "originalTitle": "",
+      "subject": "国家互联网信息办公室关于发布生成式人工智能服务已",
+      "action": "备案",
+      "object": "信息的公告",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "regulatory_jurisdiction"
+        ],
+        "source_registry_ids": [
+          "cn-cac"
+        ],
+        "claim_refs": [
+          "CL-34b21afedd94935d",
+          "CL-5f74ea48b48de20d",
+          "CL-01a95e11d7162e1b",
+          "CL-441dbf3a11401016",
+          "CL-85ffa0e05ffdf94f",
+          "CL-f8aadaa7ffacbefc",
+          "CL-71df074e4baa1121",
+          "CL-e2608106a45d84c8"
+        ]
+      },
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-a0d4ca5b6474c67c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-a0d4ca5b6474c67c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-a0d4ca5b6474c67c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a0d4ca5b6474c67c"
+      ],
+      "entityNames": [
+        "国家互联网信息办公室关于"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://cac.gov.cn/2025-01/08/c_1738034725920930.htm",
+      "publisher": "cac.gov.cn"
+    },
+    {
+      "id": "EV-42d0b85486576c88",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-20",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "关于发布生成式人工智能服务已备案信息的公告（2026年1月至2月）",
+      "originalTitle": "",
+      "subject": "关于发布生成式人工智能服务已",
+      "action": "备案",
+      "object": "信息的公告（2026年1月至2月）",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "regulatory_jurisdiction"
+        ],
+        "source_registry_ids": [
+          "cn-cac"
+        ],
+        "claim_refs": [
+          "CL-888461517fc40ec6",
+          "CL-1cc8069631d99b70",
+          "CL-aba5f14f9cefe0c1",
+          "CL-971e97e8ebf31cd7"
+        ]
+      },
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-52d25a9e30ba94f1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-52d25a9e30ba94f1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-52d25a9e30ba94f1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-52d25a9e30ba94f1"
+      ],
+      "entityNames": [
+        "关于"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://cac.gov.cn/2026-03/17/c_1775482074695536.htm",
+      "publisher": "cac.gov.cn"
+    },
+    {
+      "id": "EV-d01032735e07be2c",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-20",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "韩美半导体购置最大工厂用地以满足AI需求",
+      "originalTitle": "Hanmi Semiconductor buys largest factory site to meet AI demand - 매일경제 영문뉴스 펄스(Pulse)",
+      "subject": "Hanmi Semiconductor",
+      "action": "capital_investment",
+      "object": "130 billion won",
+      "metrics": [
+        "130 billion",
+        "$93.9 million",
+        "56 billion"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-2733b0272eaa721d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-2733b0272eaa721d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-2733b0272eaa721d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-2733b0272eaa721d"
+      ],
+      "entityNames": [
+        "Hanmi Semiconductor"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://pulse.mk.co.kr/news/english/12130803",
+      "publisher": "pulse.mk.co.kr"
+    },
+    {
+      "id": "EV-e147e5d89f849f3a",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-20",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "关于发布生成式人工智能服务已备案信息的公告（2025年9月至10月）_中央网络安全和信息化委员会办公室",
+      "originalTitle": "",
+      "subject": "关于发布生成式人工智能服务已",
+      "action": "备案",
+      "object": "信息的公告（2025年9月至10月）_中央网络安全和信息化委员会办公室",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "regulatory_jurisdiction"
+        ],
+        "source_registry_ids": [
+          "cn-cac"
+        ],
+        "claim_refs": [
+          "CL-6cbac248b701b707",
+          "CL-abdba83dfa20e93c",
+          "CL-1647a4a4f773951c",
+          "CL-ccb526d6c6f208da"
+        ]
+      },
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-52d25a9e30ba94f1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-52d25a9e30ba94f1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-52d25a9e30ba94f1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-52d25a9e30ba94f1"
+      ],
+      "entityNames": [
+        "关于"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://cac.gov.cn/2025-11/11/c_1764585284364412.htm",
+      "publisher": "cac.gov.cn"
+    },
+    {
+      "id": "EV-0263827d2d81f641",
+      "dataDate": "2026-08-20",
       "date": "2026-08-19",
-      "updatedDate": "2026-08-19",
+      "updatedDate": "2026-08-20",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "OpenRouter 宣布加入 Stripe",
+      "originalTitle": "",
+      "subject": "OpenRouter 宣布",
+      "action": "加入",
+      "object": "Stripe",
+      "metrics": [],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7f871cbf905f6e0c"
+      ],
+      "entityNames": [
+        "OpenRouter"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
+    },
+    {
+      "id": "EV-11a0afc2ecb6e42e",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-20",
       "eventType": "financial_performance",
       "eventTypeLabel": "财务表现",
       "eventGroup": "融资与并购",
@@ -251532,6 +253570,52 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-6610418ae1ced59f",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-20",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic 营收首超 OpenAI",
+      "originalTitle": "",
+      "subject": "Anthropic",
+      "action": "营收首超",
+      "object": "OpenAI",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://the-decoder.com/anthropic-passes-openai-on-revenue-for-the-first-time",
+      "publisher": "The Decoder：AI News（RSS）"
+    },
+    {
       "id": "EV-9940dccace747f28",
       "dataDate": "2026-08-19",
       "date": "2026-08-19",
@@ -251576,6 +253660,96 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/991/387.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-00ffb2c501a37ec8",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-18",
+      "updatedDate": "2026-08-20",
+      "eventType": "security_incident",
+      "eventTypeLabel": "安全事件",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI公布新安全变更，其AI曾入侵Hugging Face",
+      "originalTitle": "OpenAI lays out new security changes after its AI hacked Hugging Face",
+      "subject": "OpenAI",
+      "action": "security_incident",
+      "object": "Hugging Face",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack",
+      "publisher": "The Verge AI"
+    },
+    {
+      "id": "EV-cc9d9706f9b6c597",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-18",
+      "updatedDate": "2026-08-20",
+      "eventType": "certification_compliance",
+      "eventTypeLabel": "认证合规",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "研华与相机生态系统合作伙伴完成合作",
+      "originalTitle": "Advantech and Camera Ecosystem Partners Complete - Advantech",
+      "subject": "Advantech",
+      "action": "certification_compliance",
+      "object": "NVIDIA JetPack 7.2 validation",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-2f04672311c5a914",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "Advantech",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://advantech.com/en-eu/resources/news/advantech-and-camera-ecosystem-partners-complete-validation-on-nvidia-jetpack-72-for-advanced-vision-ai-deployment",
+      "publisher": "advantech.com"
     },
     {
       "id": "EV-09a29379b6399236",
@@ -251675,99 +253849,6 @@
       ],
       "sourceUrl": "https://the-decoder.com/new-benchmark-ranks-search-apis-for-ai-agents-on-quality-cost-and-speed",
       "publisher": "The Decoder AI News"
-    },
-    {
-      "id": "EV-0c00a6c681f22b98",
-      "dataDate": "2026-08-18",
-      "date": "2026-08-18",
-      "updatedDate": "2026-08-18",
-      "eventType": "security_incident",
-      "eventTypeLabel": "安全事件",
-      "eventGroup": "组织、政策与法律",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "AI 日报 · 2026年8月8日（周六） - 多课网",
-      "originalTitle": "",
-      "subject": "OpenAI",
-      "action": "security_incident",
-      "object": "Astra",
-      "metrics": [],
-      "locations": [],
-      "marketScope": {
-        "market_region": "CN",
-        "china_market_match": true,
-        "china_market_basis": [
-          "event_market"
-        ],
-        "source_registry_ids": [],
-        "claim_refs": [
-          "CL-6f9b4584c577cdc3"
-        ]
-      },
-      "missingFields": [
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "security_operations",
-            "name": "安全运营",
-            "entityIds": [
-              "EN-7d3194f79e645c42"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "security_operations",
-          "name": "安全运营",
-          "entityIds": [
-            "EN-7d3194f79e645c42"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "security_operations",
-          "name": "安全运营",
-          "entityIds": [
-            "EN-7d3194f79e645c42"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-7d3194f79e645c42"
-      ],
-      "entityNames": [
-        "OpenAI"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://duoke360.com/post/47274",
-      "publisher": "duoke360.com"
     },
     {
       "id": "EV-2c17183b71d8b7d1",
@@ -251947,22 +254028,21 @@
     },
     {
       "id": "EV-f819309f846d95bc",
-      "dataDate": "2026-08-18",
-      "date": "2026-08-18",
-      "updatedDate": "2026-08-18",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-17",
+      "updatedDate": "2026-08-20",
       "eventType": "capital_investment",
       "eventTypeLabel": "资本性投资",
       "eventGroup": "融资与并购",
-      "status": "planned",
-      "statusLabel": "计划中",
+      "status": "announced",
+      "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "英伟达将为 OpenAI 俄亥俄州数据中心提供最高 1050 亿美元担保",
-      "originalTitle": "",
-      "subject": "英伟达",
+      "title": "NVIDIA 保证俄亥俄州 SB Energy 的 PORTS-Pike 技术园区独家托管 NVIDIA AI 计算",
+      "originalTitle": "NVIDIA Guarantees SB Energy’s PORTS-Pike Technology Campus in Ohio to Exclusively Host NVIDIA AI Compute | NVIDIA Newsroom",
+      "subject": "NVIDIA",
       "action": "capital_investment",
       "object": "SB Energy",
       "metrics": [
-        "15 亿",
         "$1.5 billion"
       ],
       "locations": [],
@@ -251983,18 +254063,18 @@
       "displayTags": [],
       "entityIds": [
         "EN-8d4321d936320802",
-        "EN-7d3194f79e645c42",
-        "EN-80d387ccb3289295"
+        "EN-80d387ccb3289295",
+        "EN-7d3194f79e645c42"
       ],
       "entityNames": [
         "NVIDIA",
-        "OpenAI",
-        "SoftBank"
+        "SoftBank",
+        "OpenAI"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://ithome.com/0/990/890.htm",
-      "publisher": "IT之家"
+      "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
+      "publisher": "nvidianews.nvidia.com"
     },
     {
       "id": "EV-9703abcbede6968a",
@@ -252877,104 +254957,6 @@
       "publisher": "cac.gov.cn"
     },
     {
-      "id": "EV-42d0b85486576c88",
-      "dataDate": "2026-08-16",
-      "date": "2026-08-16",
-      "updatedDate": "2026-08-16",
-      "eventType": "policy_regulation",
-      "eventTypeLabel": "政策监管",
-      "eventGroup": "组织、政策与法律",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "关于发布生成式人工智能服务已备案信息的公告（2026年1月至2月）",
-      "originalTitle": "",
-      "subject": "关于发布生成式人工智能服务已",
-      "action": "备案",
-      "object": "信息的公告（2026年1月至2月）",
-      "metrics": [],
-      "locations": [],
-      "marketScope": {
-        "market_region": "CN",
-        "china_market_match": true,
-        "china_market_basis": [
-          "regulatory_jurisdiction"
-        ],
-        "source_registry_ids": [
-          "cn-cac"
-        ],
-        "claim_refs": [
-          "CL-c4797a4e949c8a75",
-          "CL-18397234c1f3e9a5",
-          "CL-10bc45faba918dc0",
-          "CL-8a5c2b54c65f87ca"
-        ]
-      },
-      "missingFields": [
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "security_operations",
-            "name": "安全运营",
-            "entityIds": [
-              "EN-52d25a9e30ba94f1"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "security_operations",
-          "name": "安全运营",
-          "entityIds": [
-            "EN-52d25a9e30ba94f1"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "security_operations",
-          "name": "安全运营",
-          "entityIds": [
-            "EN-52d25a9e30ba94f1"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-52d25a9e30ba94f1"
-      ],
-      "entityNames": [
-        "关于"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://cac.gov.cn/2026-03/17/c_1775482074695536.htm",
-      "publisher": "cac.gov.cn"
-    },
-    {
       "id": "EV-c230c05281ef3aa2",
       "dataDate": "2026-08-16",
       "date": "2026-08-16",
@@ -253019,104 +255001,6 @@
       "products": [],
       "sourceUrl": "https://procurementsciences.com",
       "publisher": "procurementsciences.com"
-    },
-    {
-      "id": "EV-e147e5d89f849f3a",
-      "dataDate": "2026-08-16",
-      "date": "2026-08-16",
-      "updatedDate": "2026-08-16",
-      "eventType": "policy_regulation",
-      "eventTypeLabel": "政策监管",
-      "eventGroup": "组织、政策与法律",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "关于发布生成式人工智能服务已备案信息的公告（2025年9月至10月）_中央网络安全和信息化委员会办公室",
-      "originalTitle": "",
-      "subject": "关于发布生成式人工智能服务已",
-      "action": "备案",
-      "object": "信息的公告（2025年9月至10月）_中央网络安全和信息化委员会办公室",
-      "metrics": [],
-      "locations": [],
-      "marketScope": {
-        "market_region": "CN",
-        "china_market_match": true,
-        "china_market_basis": [
-          "regulatory_jurisdiction"
-        ],
-        "source_registry_ids": [
-          "cn-cac"
-        ],
-        "claim_refs": [
-          "CL-2fcd8a69325ab2e2",
-          "CL-354415906e983cd2",
-          "CL-f49763c1456cc9b5",
-          "CL-505615d0d8e07e9e"
-        ]
-      },
-      "missingFields": [
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "security_operations",
-            "name": "安全运营",
-            "entityIds": [
-              "EN-52d25a9e30ba94f1"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "security_operations",
-          "name": "安全运营",
-          "entityIds": [
-            "EN-52d25a9e30ba94f1"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "security_operations",
-          "name": "安全运营",
-          "entityIds": [
-            "EN-52d25a9e30ba94f1"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-52d25a9e30ba94f1"
-      ],
-      "entityNames": [
-        "关于"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://cac.gov.cn/2025-11/11/c_1764585284364412.htm",
-      "publisher": "cac.gov.cn"
     },
     {
       "id": "EV-fde84417bdf24206",
@@ -256112,68 +257996,6 @@
       "products": [],
       "sourceUrl": "https://qbitai.com/2026/08/465662.html",
       "publisher": "量子位"
-    },
-    {
-      "id": "EV-3badd98afb847643",
-      "dataDate": "2026-08-03",
-      "date": "2026-08-03",
-      "updatedDate": "2026-08-03",
-      "eventType": "policy_regulation",
-      "eventTypeLabel": "政策监管",
-      "eventGroup": "组织、政策与法律",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "国家互联网信息办公室关于发布生成式人工智能服务已备案信息的公告",
-      "originalTitle": "",
-      "subject": "国家互联网信息办公室关于发布生成式人工智能服务已",
-      "action": "备案",
-      "object": "信息的公告",
-      "metrics": [],
-      "locations": [],
-      "marketScope": {
-        "market_region": "CN",
-        "china_market_match": true,
-        "china_market_basis": [
-          "regulatory_jurisdiction"
-        ],
-        "source_registry_ids": [
-          "cn-cac"
-        ],
-        "claim_refs": [
-          "CL-734839c56f4de985",
-          "CL-f26af7b4abc49b12",
-          "CL-be930d0ba548dfc2",
-          "CL-4bf897f61562dc89"
-        ]
-      },
-      "missingFields": [
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-a0d4ca5b6474c67c"
-      ],
-      "entityNames": [
-        "国家互联网信息办公室关于"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://cac.gov.cn/2024-04/02/c_1713729983803145.htm",
-      "publisher": "cac.gov.cn"
     },
     {
       "id": "EV-447152f02b3ae0ee",

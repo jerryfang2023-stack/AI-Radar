@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-19T02:05:03.499Z",
-    "latestDataDate": "2026-08-19",
-    "currentDate": "2026-08-19",
-    "eventCount": 2220,
-    "quarantinedEventCount": 19
+    "generatedAt": "2026-08-20T01:52:33.847Z",
+    "latestDataDate": "2026-08-20",
+    "currentDate": "2026-08-20",
+    "eventCount": 2246,
+    "quarantinedEventCount": 20
   },
   "entity": {
     "id": "EN-e9fc4f156e36f6aa",
@@ -24,7 +24,8 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-b25b396e368ee4d9"
+      "EV-b25b396e368ee4d9",
+      "EV-68897f26c8d956df"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -32,7 +33,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-12",
-    "lastSeen": "2026-08-12",
+    "lastSeen": "2026-08-20",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -40,12 +41,45 @@
         "EV-b25b396e368ee4d9"
       ],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-68897f26c8d956df"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-68897f26c8d956df",
+        "dataDate": "2026-08-20",
+        "date": "2026-08-19",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "IDC发布2026中国AI50强：360以“智能体+安全”双轮驱动入选",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-796e923025d6fbb2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-796e923025d6fbb2",
+          "EN-e9fc4f156e36f6aa",
+          "EN-a89151ba4b5ac0f2",
+          "EN-fb646a85ad74e7c5",
+          "EN-c608c4787821de1b"
+        ]
+      },
       {
         "id": "EV-b25b396e368ee4d9",
         "dataDate": "2026-08-12",
@@ -165,6 +199,7 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-d93dd19a481307ec",
         "EV-3a4acc92731cb5ac",
         "EV-0d5a32aca724d30e",
         "EV-63948deaec161736",
@@ -470,13 +505,14 @@
         "HW-c5a22adcc66136ed",
         "HW-033a5b73cdc3f4be",
         "HW-ceb55d9bc637c1d3",
+        "HW-da04d48165a60f76",
         "HW-25eea5677838fb54",
         "HW-e44b241c78bbbd26",
         "HW-46a3e65809ab5227",
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-19"
+      "lastSeen": "2026-08-20"
     }
   ],
   "fde": [],

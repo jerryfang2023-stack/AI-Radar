@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-19T02:05:03.499Z",
-    "latestDataDate": "2026-08-19",
-    "currentDate": "2026-08-19",
-    "eventCount": 2220,
-    "quarantinedEventCount": 19
+    "generatedAt": "2026-08-20T01:52:33.847Z",
+    "latestDataDate": "2026-08-20",
+    "currentDate": "2026-08-20",
+    "eventCount": 2246,
+    "quarantinedEventCount": 20
   },
   "entity": {
     "id": "EN-ac6aafe583c90b2d",
@@ -28,7 +28,7 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-13",
-    "lastSeen": "2026-08-18",
+    "lastSeen": "2026-08-20",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -44,7 +44,7 @@
     "timeline": [
       {
         "id": "EV-4f0f7d0b05d34598",
-        "dataDate": "2026-08-18",
+        "dataDate": "2026-08-20",
         "date": "2026-08-13",
         "eventType": "partnership",
         "eventTypeLabel": "合作",
@@ -69,7 +69,7 @@
     {
       "id": "FDE-723b882e385198d1",
       "eventId": "EV-4f0f7d0b05d34598",
-      "dataDate": "2026-08-18",
+      "dataDate": "2026-08-20",
       "date": "2026-08-13",
       "title": "甲骨文与AWS深化战略合作，企业采用Oracle AI Database@AWS加速",
       "stage": "announced",
@@ -80,7 +80,12 @@
       "useCase": "as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
       "reportedNeed": "未披露",
       "deliveryComponents": [],
-      "outcomes": [],
+      "outcomes": [
+        "accelerate customer migration",
+        "lower-cost path to migrate Oracle databases and integrate them with AWS analytics and AI services",
+        "put AI to work on live business data and build new applications without re-architecting or compromising performance",
+        "modernize applications faster, unlock new insights, and build AI-powered applications on the data that runs their business"
+      ],
       "metrics": [],
       "undisclosedFields": [
         "industry",
@@ -92,8 +97,7 @@
         "systems_integrated",
         "data_requirements",
         "governance_controls",
-        "reported_delivery_components",
-        "reported_outcomes"
+        "reported_delivery_components"
       ],
       "tags": [],
       "sourceUrl": "https://oracle.com/news/announcement/oracle-and-aws-deepen-strategic-collaboration-as-enterprise-adoption-of-oracle-ai-database-at-aws-accelerates-2026-08-13",
@@ -113,7 +117,7 @@
       "eventIds": [
         "EV-4f0f7d0b05d34598"
       ],
-      "dataDate": "2026-08-18",
+      "dataDate": "2026-08-20",
       "date": "2026-08-13",
       "title": "Oracle × Amazon：as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
       "stage": "announced",
@@ -124,10 +128,15 @@
       "useCase": "as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
       "workflow": "未披露",
       "systems": [],
-      "outcomes": [],
-      "observationCount": 3,
-      "completeness": 0.5,
-      "completenessPercent": 50,
+      "outcomes": [
+        "accelerate customer migration",
+        "lower-cost path to migrate Oracle databases and integrate them with AWS analytics and AI services",
+        "put AI to work on live business data and build new applications without re-architecting or compromising performance",
+        "modernize applications faster, unlock new insights, and build AI-powered applications on the data that runs their business"
+      ],
+      "observationCount": 4,
+      "completeness": 0.625,
+      "completenessPercent": 63,
       "missingFields": [
         "industry",
         "workflow",
@@ -135,6 +144,17 @@
         "reported_outcomes"
       ],
       "timeline": [
+        {
+          "observationId": "FDEO-db95a73b47bbaaa9",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-13",
+          "dataDate": "2026-08-20",
+          "eventId": "EV-4f0f7d0b05d34598",
+          "eventTitle": "甲骨文与AWS深化战略合作，企业采用Oracle AI Database@AWS加速",
+          "claimCount": 4,
+          "sourceCount": 1
+        },
         {
           "observationId": "FDEO-64639c40d9c205ff",
           "type": "implementation_update",

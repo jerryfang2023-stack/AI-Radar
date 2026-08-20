@@ -5,18 +5,55 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-19T02:05:03.499Z",
-    "latestDataDate": "2026-08-19",
-    "currentDate": "2026-08-19",
-    "eventCount": 2220,
-    "quarantinedEventCount": 19
+    "generatedAt": "2026-08-20T01:52:33.847Z",
+    "latestDataDate": "2026-08-20",
+    "currentDate": "2026-08-20",
+    "eventCount": 2246,
+    "quarantinedEventCount": 20
   },
   "fde": [
     {
+      "id": "FDE-92651b837298ec81",
+      "eventId": "EV-2b9da4db831578a4",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
+      "title": "Anthropic Claude案例研究：Advantage Solutions",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Claude",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://claude.com/customers/advantage-solutions",
+      "entityIds": [
+        "EN-84aeacc355a52b4c",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
+    {
       "id": "FDE-f99171bb7e8b4294",
       "eventId": "EV-323d98437e42e8b3",
-      "dataDate": "2026-08-18",
-      "date": "2026-08-18",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
       "title": "Kuehne+Nagel 与 HappyRobot 签署战略合作，将 AI 智能体部署到全球空运业务",
       "stage": "announced",
       "stageLabel": "已公布",
@@ -51,7 +88,7 @@
     {
       "id": "FDE-723b882e385198d1",
       "eventId": "EV-4f0f7d0b05d34598",
-      "dataDate": "2026-08-18",
+      "dataDate": "2026-08-20",
       "date": "2026-08-13",
       "title": "甲骨文与AWS深化战略合作，企业采用Oracle AI Database@AWS加速",
       "stage": "announced",
@@ -62,7 +99,12 @@
       "useCase": "as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
       "reportedNeed": "未披露",
       "deliveryComponents": [],
-      "outcomes": [],
+      "outcomes": [
+        "accelerate customer migration",
+        "lower-cost path to migrate Oracle databases and integrate them with AWS analytics and AI services",
+        "put AI to work on live business data and build new applications without re-architecting or compromising performance",
+        "modernize applications faster, unlock new insights, and build AI-powered applications on the data that runs their business"
+      ],
       "metrics": [],
       "undisclosedFields": [
         "industry",
@@ -74,8 +116,7 @@
         "systems_integrated",
         "data_requirements",
         "governance_controls",
-        "reported_delivery_components",
-        "reported_outcomes"
+        "reported_delivery_components"
       ],
       "tags": [],
       "sourceUrl": "https://oracle.com/news/announcement/oracle-and-aws-deepen-strategic-collaboration-as-enterprise-adoption-of-oracle-ai-database-at-aws-accelerates-2026-08-13",
@@ -88,7 +129,7 @@
     {
       "id": "FDE-ed781e27a7b9458e",
       "eventId": "EV-129ffa6be41bb485",
-      "dataDate": "2026-08-18",
+      "dataDate": "2026-08-20",
       "date": "2026-08-13",
       "title": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
       "stage": "announced",
@@ -5913,14 +5954,65 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-1e6752e0189004a2",
+      "implementationKey": "1e6752e0189004a2",
+      "eventId": "EV-2b9da4db831578a4",
+      "eventIds": [
+        "EV-2b9da4db831578a4"
+      ],
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
+      "title": "未披露 × 未披露：Claude",
+      "stage": "pilot",
+      "stageLabel": "试点",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Claude",
+      "workflow": "未披露",
+      "systems": [
+        "Claude"
+      ],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-fec70f0ec720f571",
+          "type": "implementation_update",
+          "stage": "pilot",
+          "date": "2026-08-20",
+          "dataDate": "2026-08-20",
+          "eventId": "EV-2b9da4db831578a4",
+          "eventTitle": "Anthropic Claude案例研究：Advantage Solutions",
+          "claimCount": 2,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://claude.com/customers/advantage-solutions",
+      "entityIds": [
+        "EN-84aeacc355a52b4c",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
+    {
       "id": "FDED-4e31ac1c5e7360a8",
       "implementationKey": "4e31ac1c5e7360a8",
       "eventId": "EV-323d98437e42e8b3",
       "eventIds": [
         "EV-323d98437e42e8b3"
       ],
-      "dataDate": "2026-08-18",
-      "date": "2026-08-18",
+      "dataDate": "2026-08-20",
+      "date": "2026-08-20",
       "title": "HappyRobot × 未披露：Kuehne+Nagel",
       "stage": "announced",
       "stageLabel": "已公布",
@@ -5931,7 +6023,7 @@
       "workflow": "未披露",
       "systems": [],
       "outcomes": [],
-      "observationCount": 2,
+      "observationCount": 3,
       "completeness": 0.375,
       "completenessPercent": 38,
       "missingFields": [
@@ -5942,6 +6034,17 @@
         "reported_outcomes"
       ],
       "timeline": [
+        {
+          "observationId": "FDEO-42ce2b0c6b616c84",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-20",
+          "dataDate": "2026-08-20",
+          "eventId": "EV-323d98437e42e8b3",
+          "eventTitle": "Kuehne+Nagel 与 HappyRobot 签署战略合作，将 AI 智能体部署到全球空运业务",
+          "claimCount": 1,
+          "sourceCount": 1
+        },
         {
           "observationId": "FDEO-37f9f744408ad564",
           "type": "implementation_update",
@@ -5978,7 +6081,7 @@
       "eventIds": [
         "EV-4f0f7d0b05d34598"
       ],
-      "dataDate": "2026-08-18",
+      "dataDate": "2026-08-20",
       "date": "2026-08-13",
       "title": "Oracle × Amazon：as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
       "stage": "announced",
@@ -5989,10 +6092,15 @@
       "useCase": "as Enterprise Adoption of Oracle AI Database@AWS Accelerates",
       "workflow": "未披露",
       "systems": [],
-      "outcomes": [],
-      "observationCount": 3,
-      "completeness": 0.5,
-      "completenessPercent": 50,
+      "outcomes": [
+        "accelerate customer migration",
+        "lower-cost path to migrate Oracle databases and integrate them with AWS analytics and AI services",
+        "put AI to work on live business data and build new applications without re-architecting or compromising performance",
+        "modernize applications faster, unlock new insights, and build AI-powered applications on the data that runs their business"
+      ],
+      "observationCount": 4,
+      "completeness": 0.625,
+      "completenessPercent": 63,
       "missingFields": [
         "industry",
         "workflow",
@@ -6000,6 +6108,17 @@
         "reported_outcomes"
       ],
       "timeline": [
+        {
+          "observationId": "FDEO-db95a73b47bbaaa9",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-13",
+          "dataDate": "2026-08-20",
+          "eventId": "EV-4f0f7d0b05d34598",
+          "eventTitle": "甲骨文与AWS深化战略合作，企业采用Oracle AI Database@AWS加速",
+          "claimCount": 4,
+          "sourceCount": 1
+        },
         {
           "observationId": "FDEO-64639c40d9c205ff",
           "type": "implementation_update",
@@ -6049,7 +6168,7 @@
       "eventIds": [
         "EV-129ffa6be41bb485"
       ],
-      "dataDate": "2026-08-18",
+      "dataDate": "2026-08-20",
       "date": "2026-08-13",
       "title": "IBM × OpenAI：OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
       "stage": "procurement",
@@ -6063,7 +6182,7 @@
         "ChatGPT"
       ],
       "outcomes": [],
-      "observationCount": 4,
+      "observationCount": 5,
       "completeness": 0.625,
       "completenessPercent": 63,
       "missingFields": [
@@ -6072,6 +6191,17 @@
         "reported_outcomes"
       ],
       "timeline": [
+        {
+          "observationId": "FDEO-042342bf0865bc5c",
+          "type": "procurement",
+          "stage": "procurement",
+          "date": "2026-08-13",
+          "dataDate": "2026-08-20",
+          "eventId": "EV-129ffa6be41bb485",
+          "eventTitle": "IBM与OpenAI合作，加速企业核心运营中安全AI的部署",
+          "claimCount": 4,
+          "sourceCount": 1
+        },
         {
           "observationId": "FDEO-0e89097830f7369d",
           "type": "procurement",
@@ -7571,40 +7701,36 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-08-19",
-      "funnel_id": "LF-3130133c6aef0427",
+      "data_date": "2026-08-20",
+      "funnel_id": "LF-d9181515d5a19e2f",
       "lens": "fde",
-      "date": "2026-08-19",
+      "date": "2026-08-20",
       "monitoring_paths": [
         "fde_customer_case",
         "fde_earnings_disclosure",
         "fde_procurement_contract",
         "fde_production_rollout"
       ],
-      "raw_documents": 116,
-      "original_sources": 106,
-      "valid_claims": 14,
-      "observations": 0,
-      "canonical_events": 4,
+      "raw_documents": 117,
+      "original_sources": 103,
+      "valid_claims": 36,
+      "observations": 4,
+      "canonical_events": 14,
       "blocker_counts": {
-        "no_source_bounded_event": 25,
-        "source_outside_daily_window": 65,
+        "event_not_ai_relevant": 5,
+        "source_outside_daily_window": 69,
+        "no_source_bounded_event": 8,
         "source_published_after_data_date": 2,
-        "repository_page_requires_release_source": 2,
-        "non_event_or_index_title": 4,
-        "tag_or_topic_index_not_event_source": 1,
-        "no_source_bounded_claim": 1,
-        "source_outside_funding_backfill_window": 1,
-        "event_not_ai_relevant": 1,
-        "raw_source_quality_block": 10
+        "non_event_or_index_title": 5,
+        "raw_source_quality_block": 14
       },
       "rates": {
-        "original_source_rate": 0.9137931034482759,
-        "valid_claim_rate": 0.1206896551724138,
-        "observation_rate": 0,
-        "event_conversion_rate": 0.2857142857142857
+        "original_source_rate": 0.8803418803418803,
+        "valid_claim_rate": 0.3076923076923077,
+        "observation_rate": 0.1111111111111111,
+        "event_conversion_rate": 0.3888888888888889
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-19/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-20/monitoring-funnel.json"
     }
   ]
 }

@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-19T02:05:03.499Z",
-    "latestDataDate": "2026-08-19",
-    "currentDate": "2026-08-19",
-    "eventCount": 2220,
-    "quarantinedEventCount": 19
+    "generatedAt": "2026-08-20T01:52:33.847Z",
+    "latestDataDate": "2026-08-20",
+    "currentDate": "2026-08-20",
+    "eventCount": 2246,
+    "quarantinedEventCount": 20
   },
   "entity": {
     "id": "EN-e3ea8280d7689bb7",
@@ -23,13 +23,14 @@
     ],
     "eventIds": [
       "EV-b69f78a4919cb1bc",
+      "EV-b756b17219597a4e",
       "EV-72d4a00d52a3201c"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-14",
-    "lastSeen": "2026-08-17",
+    "lastSeen": "2026-08-20",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -38,6 +39,7 @@
       ],
       "partnerships": [],
       "productsServices": [
+        "EV-b756b17219597a4e",
         "EV-72d4a00d52a3201c"
       ],
       "hardware": [],
@@ -45,6 +47,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-b756b17219597a4e",
+        "dataDate": "2026-08-20",
+        "date": "2026-08-19",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "GLM-5.3 登顶开源模型排行榜，价格低于竞争对手，但发布推迟",
+        "displayTags": [],
+        "entityIds": [
+          "EN-cdc941acf98083b7",
+          "EN-e3ea8280d7689bb7"
+        ]
+      },
       {
         "id": "EV-b69f78a4919cb1bc",
         "dataDate": "2026-08-17",
