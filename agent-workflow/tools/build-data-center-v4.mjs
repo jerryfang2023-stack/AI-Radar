@@ -394,6 +394,7 @@ const ORGANIZATION_ALIASES = [
   ["Innovation Labs", ["Innovation Labs"]],
   ["JD Cloud", ["京东云", "JD Cloud"]],
   ["Kingsoft Office", ["金山办公"]],
+  ["KT", ["Korea Telecom", "KT"]],
   ["1Password", ["1Password"]],
   ["LM Studio", ["LM Studio"]],
   ["LMSYS", ["LMSYS"]],
@@ -696,6 +697,7 @@ function cleanOrganizationCandidate(value) {
   if (/^(?:\d+|数十|多名|员工|出版商|作者|研究员|私募巨头|我国首个|一图看懂|澳大利亚|中国|国内|美国|日本|印度|欧洲)/u.test(candidate)) return "";
   if (/(?:发布|推出|上线|融资|获投|起诉|诉讼|回应|呼吁|提议|加入|离职|成立|中标|增长|模型|手表|平台|工作台|方案|服务|指南|报告)/u.test(candidate)) return "";
   if (/\b(?:employees?|researchers?|publishers?|authors?|founder|guide|model|platform|service|report|cost|forward|didn['’]t)\b/iu.test(candidate)) return "";
+  if (/\b(?:sovereign\s+AI\s+appliance|AI\s+appliance)\b/iu.test(candidate)) return "";
   if (/\.(?:md|json|ya?ml|toml|txt|csv|js|mjs|ts|py)\b/iu.test(candidate)) return "";
   if (/[$€£¥]|\b\d+(?:\.\d+)?(?:m|b|million|billion)?\b/iu.test(candidate)) return "";
   if (containsChinese(candidate) ? candidate.length > 16 : candidate.split(/\s+/u).length > 5) return "";
