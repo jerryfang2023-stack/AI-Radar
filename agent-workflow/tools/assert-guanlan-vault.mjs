@@ -14,6 +14,16 @@ const problems = [];
 let markdownFileCount = 0;
 const oldRepositoryVault = path.join(root, "vault");
 const reportSource = path.join(root, REPOSITORY_CONTENT_PATHS.industryReportsRoot);
+const VAULT_SCAN_SKIP_DIRECTORIES = new Set([
+  ".git",
+  ".venv",
+  ".cache",
+  "__pycache__",
+  "build",
+  "dist",
+  "node_modules",
+  "venv",
+]);
 
 function directoryContainsFiles(directory) {
   for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
@@ -71,7 +81,7 @@ if (vaultRoot) {
     const current = stack.pop();
     for (const entry of fs.readdirSync(current, { withFileTypes: true })) {
       const file = path.join(current, entry.name);
-      if (entry.isDirectory()) stack.push(file);
+      if (entry.isDirectory() && !VAULT_SCAN_SKIP_DIRECTORIES.has(entry.name.toLowerCase())) stack.push(file);
       else if (entry.isFile() && path.extname(entry.name).toLowerCase() === ".md") markdown.push(file);
       else if (entry.isFile()) {
         const relativeAssetPath = path.relative(vaultRoot, file).replaceAll("\\", "/").toLowerCase();

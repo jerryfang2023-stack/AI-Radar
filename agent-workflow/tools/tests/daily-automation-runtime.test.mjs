@@ -75,6 +75,7 @@ test("Vault refresh uses an isolated origin/main worktree and leaves supervision
   assert.match(sync, /guanlan-vault-sync\.json/u);
   assert.match(supervision, /vaultSync\.current/u);
   assert.match(vaultGate, /function directoryContainsFiles[^]*retiredVaultRootHasContent[^]*directoryContainsFiles\(retiredVaultRoot\)/u);
+  assert.match(vaultGate, /VAULT_SCAN_SKIP_DIRECTORIES[^]*node_modules[^]*!VAULT_SCAN_SKIP_DIRECTORIES\.has\(entry\.name\.toLowerCase\(\)\)/u);
 });
 
 test("morning controller repairs derived repo Skill runtime before auditing it", () => {

@@ -825,6 +825,23 @@ test("a procurement headline ending in an AI tender product still links the winn
   assert.ok(!event.missing_fields.includes("entities"));
 });
 
+test("a sovereign AI appliance headline resolves the operator instead of the title fragment", () => {
+  const title = "Korea's First Sovereign AI Appliance Ships: Domestic Chip, Domestic LLM, One Server";
+  const bundle = buildBundle([
+    entry(
+      "kt-sovereign-ai-appliance",
+      title,
+      "Korea Telecom launched the KT NPU LLM Station, the first commercially available enterprise AI appliance to pair a Korean-made inference chip with a Korean-developed large language model in one on-premises server.",
+    ),
+  ], taxonomy, date, "2026-08-20T00:00:00.000Z");
+
+  const names = new Set(bundle.entities
+    .filter((entity) => entity.entity_type === "organization_candidate")
+    .map((entity) => entity.canonical_name));
+  assert.ok(names.has("KT"));
+  assert.ok(!names.has("Korea's First Sovereign AI Appliance"));
+});
+
 test("contract hardware financing language does not turn a customer agreement into funding", () => {
   const bundle = buildBundle([
     entry(
