@@ -9,11 +9,73 @@
     "activeDate": "2026-08-21",
     "generatedAt": "2026-08-21T00:00:00.000Z",
     "windowDays": 30,
-    "evidenceCount": 703,
+    "evidenceCount": 715,
     "directionCardCount": 2,
     "sourceAdapter": "data-center-v4-canonical"
   },
   "evidence": [
+    {
+      "id": "EV-2a787eb1a544462d",
+      "event_id": "EV-2a787eb1a544462d",
+      "event_type": "procurement_contract",
+      "publication_status": "verified",
+      "title": "美国陆军授予Raft 9900万美元企业合同，加速数据和AI能力交付",
+      "category": "case",
+      "categoryLabel": "案例",
+      "date": "2026-08-21",
+      "event_time": "2026-08-19T00:00:00.000Z",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/us-army-awards-raft-99m-enterprise-contract-to-accelerate-delivery-of-data-and-ai-capabilities-302855011.html",
+      "sourceName": "keyword search / Exa",
+      "subject": "U.S. Army Contracting Command",
+      "sourceExcerpt": "today announced it has been awarded a five-year, $99 million firm-fixed-price Indefinite Delivery, Indefinite Quantity (IDIQ) contract by the U.S. Army Contracting Command.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-12c0b2941322a443",
+          "canonical_name": "U.S. Army Contracting Command",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-b04971041677acd6"
+      ],
+      "source_refs": [
+        "SA-564eca141d7c995d"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "procurement_signal",
+            "claim_ref": "CL-b04971041677acd6",
+            "source_refs": [
+              "SA-564eca141d7c995d"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "procurement_signal"
+          ]
+        }
+      }
+    },
     {
       "id": "EV-87c5f6dcc769999c",
       "event_id": "EV-87c5f6dcc769999c",
@@ -141,6 +203,142 @@
       }
     },
     {
+      "id": "EV-b6789508a1887fd4",
+      "event_id": "EV-b6789508a1887fd4",
+      "event_type": "procurement_contract",
+      "publication_status": "verified",
+      "title": "Darwin AI 宣布与德克萨斯州达成全国首个人工智能治理批量采购协议",
+      "category": "case",
+      "categoryLabel": "案例",
+      "date": "2026-08-21",
+      "event_time": "2026-08-17T00:00:00.000Z",
+      "sourceUrl": "https://www.einpresswire.com/article/934565825/darwin-ai-announces-the-nation-s-first-bulk-purchase-agreement-for-ai-governance-through-the-state-of-texas",
+      "sourceName": "keyword search / Exa",
+      "subject": "Darwin AI",
+      "sourceExcerpt": "Darwin AI today announced the nation’s first Bulk Purchase Agreement (BPA) for AI governance, established in partnership with the Texas Department of Information Resources (DIR) and awarded under Carahsoft Bulk Purchase Agreement BP2026-0015",
+      "entity_refs": [
+        {
+          "entity_id": "EN-b45fc2bf83bced68",
+          "canonical_name": "Darwin AI",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-9f17385edec794e1"
+      ],
+      "source_refs": [
+        "SA-7b4324fcc0b8f7a8"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "procurement_signal",
+            "claim_ref": "CL-9f17385edec794e1",
+            "source_refs": [
+              "SA-7b4324fcc0b8f7a8"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "procurement_signal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-b8206195828dc573",
+      "event_id": "EV-b8206195828dc573",
+      "event_type": "partnership",
+      "publication_status": "verified",
+      "title": "通过Gemini和Pixel更贴近比赛",
+      "category": "case",
+      "categoryLabel": "案例",
+      "date": "2026-08-21",
+      "event_time": "2026-08-17T00:00:00.000Z",
+      "sourceUrl": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/",
+      "sourceName": "Google AI Blog",
+      "subject": "Gemini and Pixel",
+      "sourceExcerpt": "Gemini and Pixel have announced new long-term partnerships with Arsenal FC, FC Barcelona, FC Bayern München, Liverpool FC, and Paris Saint-Germain to bring fans closer to the game through AI personal intelligence and smartphone technology.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-236a21ca81b0f5ca",
+          "canonical_name": "Gemini and Pixel",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-5d72436256ada538",
+          "canonical_name": "Gemini",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-3f8d7379e2f0f7d0",
+          "canonical_name": "Pixel",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-89bd41cda7be6b68"
+      ],
+      "source_refs": [
+        "SA-0d965234a42f262e"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "partnership_integration",
+            "claim_ref": "CL-89bd41cda7be6b68",
+            "source_refs": [
+              "SA-0d965234a42f262e"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "partnership_integration"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-be76a1e5ed2b6cf5",
       "event_id": "EV-be76a1e5ed2b6cf5",
       "event_type": "procurement_contract",
@@ -236,6 +434,147 @@
           "specific_task": [
             "internal_tool_building"
           ],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "procurement_signal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-cc9d9706f9b6c597",
+      "event_id": "EV-cc9d9706f9b6c597",
+      "event_type": "certification_compliance",
+      "publication_status": "verified",
+      "title": "研华与相机生态系统合作伙伴完成合作",
+      "category": "case",
+      "categoryLabel": "案例",
+      "date": "2026-08-21",
+      "event_time": "2026-08-17T16:00:00.000Z",
+      "sourceUrl": "https://www.advantech.com/en-au/resources/news/advantech-and-camera-ecosystem-partners-complete-validation-on-nvidia-jetpack-72-for-advanced-vision-ai-deployment",
+      "sourceName": "keyword search / Exa",
+      "subject": "Advantech",
+      "sourceExcerpt": "Advantech (TWSE: 2395), a global leader in industrial IoT, has announced the successful completion of validation with its camera ecosystem partners on NVIDIA JetPack 7.2 across its MIC-AI and MIB series platforms.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-2f04672311c5a914",
+          "canonical_name": "Advantech",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-4fb097999a39d2a1"
+      ],
+      "source_refs": [
+        "SA-7b3fc7511a93f089"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [
+          {
+            "value_id": "security_compliance",
+            "claim_ref": "CL-4fb097999a39d2a1",
+            "source_refs": [
+              "SA-7b3fc7511a93f089"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "governance_requirement",
+            "claim_ref": "CL-4fb097999a39d2a1",
+            "source_refs": [
+              "SA-7b3fc7511a93f089"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [
+            "security_compliance"
+          ],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "governance_requirement"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-e3a282c070969a55",
+      "event_id": "EV-e3a282c070969a55",
+      "event_type": "procurement_contract",
+      "publication_status": "verified",
+      "title": "Darwin AI宣布与德克萨斯州达成全国首份AI治理批量采购协议",
+      "category": "case",
+      "categoryLabel": "案例",
+      "date": "2026-08-21",
+      "event_time": "2026-08-17T00:00:00.000Z",
+      "sourceUrl": "https://www.darwingov.com/post/darwin-ai-announces-the-nations-first-bulk-purchase-agreement-for-ai-governance-through-the-state-of-texas",
+      "sourceName": "keyword search / Exa",
+      "subject": "Darwin AI",
+      "sourceExcerpt": "Darwin AI today announced the nation’s first Bulk Purchase Agreement (BPA) for AI governance, established in partnership with the Texas Department of Information Resources (DIR) and awarded under Carahsoft Bulk Purchase Agreement BP2026-0015",
+      "entity_refs": [
+        {
+          "entity_id": "EN-b45fc2bf83bced68",
+          "canonical_name": "Darwin AI",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-dd753bd5c70f1901"
+      ],
+      "source_refs": [
+        "SA-1f141b8f6e3c3f08"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "procurement_signal",
+            "claim_ref": "CL-dd753bd5c70f1901",
+            "source_refs": [
+              "SA-1f141b8f6e3c3f08"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
           "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],
@@ -449,6 +788,333 @@
           "delivery_model": [],
           "business_action": [
             "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-19dd4c3a5dd5a94b",
+      "event_id": "EV-19dd4c3a5dd5a94b",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "Etched 以210亿美元估值融资7亿美元，向Jane Street交付首台机架",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-08-21",
+      "event_time": "2026-08-19T08:41:19.000Z",
+      "sourceUrl": "https://www.verdict.co.uk/etched-bags-700m/",
+      "sourceName": "keyword search / Exa",
+      "subject": "Etched",
+      "sourceExcerpt": "Etched, a US-based company that builds inference clusters for AI workloads, has raised $700m in a funding round that values the business at $21bn.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-9cb45a27a2808c01",
+          "canonical_name": "Etched",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-4e68d90fd016a7a9",
+        "CL-6e2dd99b8ebae9b1"
+      ],
+      "source_refs": [
+        "SA-b6b45e2130e3f25a",
+        "SA-48143e7b0f17ad5b"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_application",
+          "dimension_name": "AI 市场细分",
+          "value_id": "computing_infrastructure",
+          "value_name": "计算基础设施",
+          "entity_ids": [
+            "EN-9cb45a27a2808c01"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-e0d71324486de62c"
+        },
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "infrastructure_compute",
+          "value_name": "基础设施与算力",
+          "entity_ids": [
+            "EN-9cb45a27a2808c01"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-58d4892be13a4de6"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "hardware_computing",
+          "value_name": "硬件与算力",
+          "entity_ids": [
+            "EN-9cb45a27a2808c01"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-ccfb45cbe7fc9e15"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "ai_compute_system",
+          "value_name": "AI 计算系统",
+          "entity_ids": [
+            "EN-9cb45a27a2808c01"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-7b6bc9563bb9cd12"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "developer",
+          "value_name": "开发者",
+          "entity_ids": [
+            "EN-9cb45a27a2808c01"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-af14e207a4ed4226"
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-4e68d90fd016a7a9",
+            "source_refs": [
+              "SA-b6b45e2130e3f25a"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-00ffb2c501a37ec8",
+      "event_id": "EV-00ffb2c501a37ec8",
+      "event_type": "security_incident",
+      "publication_status": "verified",
+      "title": "OpenAI踩了刹车。接下来呢？",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-21",
+      "event_time": "2026-08-19T17:10:09.000Z",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/982323/openai-hit-brakes-voluntary-pacing-ai",
+      "sourceName": "The Verge AI",
+      "subject": "OpenAI",
+      "sourceExcerpt": "Just last month, OpenAI disclosed that its models broke out of a supposedly secure testing environment and hacked developer platform Hugging Face, without OpenAI noticing.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-fe4e3d6d0087909d"
+      ],
+      "source_refs": [
+        "SA-9a5981a9037207fc"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [
+          {
+            "value_id": "engineering_team",
+            "claim_ref": "CL-fe4e3d6d0087909d",
+            "source_refs": [
+              "SA-9a5981a9037207fc"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "team_or_function": [
+          {
+            "value_id": "engineering",
+            "claim_ref": "CL-fe4e3d6d0087909d",
+            "source_refs": [
+              "SA-9a5981a9037207fc"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "specific_task": [
+          {
+            "value_id": "internal_tool_building",
+            "claim_ref": "CL-fe4e3d6d0087909d",
+            "source_refs": [
+              "SA-9a5981a9037207fc"
+            ],
+            "provenance": "exact_claim_rule"
+          },
+          {
+            "value_id": "permission_audit",
+            "claim_ref": "CL-fe4e3d6d0087909d",
+            "source_refs": [
+              "SA-9a5981a9037207fc"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "pain_or_constraint": [
+          {
+            "value_id": "security_compliance",
+            "claim_ref": "CL-fe4e3d6d0087909d",
+            "source_refs": [
+              "SA-9a5981a9037207fc"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "failure_postmortem",
+            "claim_ref": "CL-fe4e3d6d0087909d",
+            "source_refs": [
+              "SA-9a5981a9037207fc"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [
+            "engineering_team"
+          ],
+          "team_or_function": [
+            "engineering"
+          ],
+          "specific_task": [
+            "internal_tool_building",
+            "permission_audit"
+          ],
+          "pain_or_constraint": [
+            "security_compliance"
+          ],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "failure_postmortem"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-1ced8c8a0480d5c2",
+      "event_id": "EV-1ced8c8a0480d5c2",
+      "event_type": "product_release",
+      "publication_status": "verified",
+      "title": "Slack 推出协作式 vibe-coding 频道",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-21",
+      "event_time": "2026-08-20T00:00:00.000Z",
+      "sourceUrl": "https://www.theverge.com/tech/982628/slack-code-vibe-coding-channels-launch",
+      "sourceName": "The Verge AI",
+      "subject": "Slack",
+      "sourceExcerpt": "Slack is introducing dedicated channels where teams can vibe-code together with AI agents instead of jumping between different tools and conversations.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-877c3aec832cd410",
+          "canonical_name": "Slack",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-aff27dad1577fdc0",
+          "canonical_name": "Slack Code",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-2dbfd691ab74b3e6",
+        "CL-9816ffebd011aac9"
+      ],
+      "source_refs": [
+        "SA-50c9bbb546be89c9"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "agentic_execution",
+          "value_name": "智能体执行",
+          "entity_ids": [
+            "EN-877c3aec832cd410"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [
+          {
+            "value_id": "internal_tool_building",
+            "claim_ref": "CL-9816ffebd011aac9",
+            "source_refs": [
+              "SA-50c9bbb546be89c9"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-2dbfd691ab74b3e6",
+            "source_refs": [
+              "SA-50c9bbb546be89c9"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [
+            "internal_tool_building"
+          ],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "product_launch"
           ]
         }
       }
@@ -816,6 +1482,252 @@
       }
     },
     {
+      "id": "EV-3e7db5b8d976bf0e",
+      "event_id": "EV-3e7db5b8d976bf0e",
+      "event_type": "product_release",
+      "publication_status": "verified",
+      "title": "OpenAI 推出 Private Safety Processing 安全系统，可在不存储客户数据的情况下捕捉滥用行为",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-21",
+      "event_time": "2026-08-20T08:01:18.000Z",
+      "sourceUrl": "https://the-decoder.com/openai-builds-safety-system-that-catches-misuse-without-storing-customer-data",
+      "sourceName": "The Decoder：AI News（RSS）",
+      "subject": "OpenAI",
+      "sourceExcerpt": "OpenAI builds safety system that catches misuse without storing customer data",
+      "entity_refs": [
+        {
+          "entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-cb3168ac65600e46",
+          "canonical_name": "Private Safety Processing",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-67f67e4b7aca01e8"
+      ],
+      "source_refs": [
+        "SA-151a4438625995ce"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-67f67e4b7aca01e8",
+            "source_refs": [
+              "SA-151a4438625995ce"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-435ad78c9ec50025",
+      "event_id": "EV-435ad78c9ec50025",
+      "event_type": "model_release",
+      "publication_status": "verified",
+      "title": "GEN-1.5：通用型AI智能体通过单次演示教会机器人新任务",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-21",
+      "event_time": "2026-08-20T12:35:52.000Z",
+      "sourceUrl": "https://the-decoder.com/gen-1-5-generalist-ai-teaches-robots-new-tasks-from-a-single-demo/",
+      "sourceName": "The Decoder AI News",
+      "subject": "Generalist AI",
+      "sourceExcerpt": "Robotics startup Generalist AI has unveiled GEN-1.5, an AI model that teaches robots new tasks from a single demonstration.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-9c3de5f42376b1af",
+          "canonical_name": "Generalist AI",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-4dc02e72724c7467",
+          "canonical_name": "GEN-1.5",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-4978552a0b7a728f"
+      ],
+      "source_refs": [
+        "SA-d89041c75e4f4249"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "model",
+          "value_name": "模型",
+          "entity_ids": [
+            "EN-9c3de5f42376b1af"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "physical_automation",
+          "value_name": "物理自动化",
+          "entity_ids": [
+            "EN-9c3de5f42376b1af"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-4978552a0b7a728f",
+            "source_refs": [
+              "SA-d89041c75e4f4249"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-4af183c70855ecf2",
+      "event_id": "EV-4af183c70855ecf2",
+      "event_type": "product_release",
+      "publication_status": "verified",
+      "title": "谷歌为出版商提供对抗AI流量损失的新方式",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-21",
+      "event_time": "2026-08-20T00:00:00.000Z",
+      "sourceUrl": "https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/",
+      "sourceName": "TechCrunch AI",
+      "subject": "Google",
+      "sourceExcerpt": "It’s now allowing readers to push a button on a publisher’s website to indicate it’s a “favorite source” they’d like to see highlighted more often across Google Search, Discover, and Google News.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-bbdefa2950f49882",
+          "canonical_name": "Google",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-8a3d0f3c68b5dba9",
+          "canonical_name": "Preferred Sources",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-c1312721bcf15205",
+          "canonical_name": "AI-driven",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-7c84250b85b132f2",
+        "CL-78388ce1027a222c",
+        "CL-cf7aabeb7ef54f11"
+      ],
+      "source_refs": [
+        "SA-375b203a481af47a"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [
+          {
+            "value_id": "knowledge_base_qa",
+            "claim_ref": "CL-7c84250b85b132f2",
+            "source_refs": [
+              "SA-375b203a481af47a"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-7c84250b85b132f2",
+            "source_refs": [
+              "SA-375b203a481af47a"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [
+            "knowledge_base_qa"
+          ],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-4c168759119d2668",
       "event_id": "EV-4c168759119d2668",
       "event_type": "model_release",
@@ -981,6 +1893,75 @@
             "claim_ref": "CL-d49332b31c432ff3",
             "source_refs": [
               "SA-9bb924e9cf76d1e6"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-50707b1126daba0f",
+      "event_id": "EV-50707b1126daba0f",
+      "event_type": "product_release",
+      "publication_status": "verified",
+      "title": "画布如何让智能体工作流变得可见、可控且成本高效",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-21",
+      "event_time": "2026-08-17T00:00:00.000Z",
+      "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient/",
+      "sourceName": "GitHub Blog AI",
+      "subject": "GitHub Copilot app",
+      "sourceExcerpt": "The GitHub Copilot app is a major step toward addressing this. One feature in particular that I&rsquo;ve learned to love and use almost every day is canvases .",
+      "entity_refs": [
+        {
+          "entity_id": "EN-e489f95f7a3ddb71",
+          "canonical_name": "GitHub Copilot app",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-de92ba5aa95fe45e",
+          "canonical_name": "Site Studio",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-5cf4c8596f852b31",
+        "CL-03c244deb2d90a38"
+      ],
+      "source_refs": [
+        "SA-21f1544eba0d9233"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-5cf4c8596f852b31",
+            "source_refs": [
+              "SA-21f1544eba0d9233"
             ],
             "provenance": "event_type_rule"
           }
@@ -1358,6 +2339,80 @@
       }
     },
     {
+      "id": "EV-8232ad0075a77b7a",
+      "event_id": "EV-8232ad0075a77b7a",
+      "event_type": "model_release",
+      "publication_status": "verified",
+      "title": "GitHub 更新日志：06/2026",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-21",
+      "event_time": "",
+      "sourceUrl": "https://github.blog/changelog/month/06-2026/",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "Anthropic",
+      "sourceExcerpt": "Claude Sonnet 5 is Anthropic&rsquo;s latest Sonnet-class model, now available in GitHub Copilot.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_name": "Anthropic",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-07035a20899a7cd7",
+          "canonical_name": "GitHub Copilot",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-6d7b7fd67cb649ae",
+          "canonical_name": "GitHub Changelog",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-b545ca17726818d1"
+      ],
+      "source_refs": [
+        "SA-0a68edee80553fee"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-b545ca17726818d1",
+            "source_refs": [
+              "SA-0a68edee80553fee"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-937b855e723d6ef0",
       "event_id": "EV-937b855e723d6ef0",
       "event_type": "product_release",
@@ -1433,6 +2488,80 @@
           "delivery_model": [
             "open_source_commercial"
           ],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-9d53b12f5f077d3b",
+      "event_id": "EV-9d53b12f5f077d3b",
+      "event_type": "product_release",
+      "publication_status": "verified",
+      "title": "Meta AI 推出 Mac 应用",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-21",
+      "event_time": "2026-08-19T00:00:00.000Z",
+      "sourceUrl": "https://www.theverge.com/tech/982270/meta-ai-mac-app",
+      "sourceName": "The Verge AI",
+      "subject": "Meta",
+      "sourceExcerpt": "Meta is launching a new Mac app dedicated to its AI chatbot.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-ea3bd73e2b506e00",
+          "canonical_name": "Meta",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-ab3f1212f9e713ba"
+      ],
+      "source_refs": [
+        "SA-e80e5f990e344f7e"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "end_user_application",
+          "value_name": "终端 AI 应用",
+          "entity_ids": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-ab3f1212f9e713ba",
+            "source_refs": [
+              "SA-e80e5f990e344f7e"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
           "business_action": [
             "product_launch"
           ]
@@ -1578,6 +2707,68 @@
           "delivery_model": [
             "api_usage_based"
           ],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-b6a57599c12b2a1d",
+      "event_id": "EV-b6a57599c12b2a1d",
+      "event_type": "product_release",
+      "publication_status": "verified",
+      "title": "Ben 的会话 #2",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-21",
+      "event_time": "2026-08-14T00:00:00.000Z",
+      "sourceUrl": "https://www.bensbites.com/p/bens-session-2",
+      "sourceName": "Ben's Bites AI Newsletter",
+      "subject": "Grok Bot",
+      "sourceExcerpt": "You may have heard about OpenClaw, Hermes, Grok Bot (launched this week)",
+      "entity_refs": [
+        {
+          "entity_id": "EN-bf5b1a77289a1fca",
+          "canonical_name": "Grok Bot",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-ce63780adffe61b9"
+      ],
+      "source_refs": [
+        "SA-62d1197418be6348"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-ce63780adffe61b9",
+            "source_refs": [
+              "SA-62d1197418be6348"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
           "business_action": [
             "product_launch"
           ]
@@ -1917,6 +3108,80 @@
       }
     },
     {
+      "id": "EV-d26a532231315278",
+      "event_id": "EV-d26a532231315278",
+      "event_type": "hardware_product",
+      "publication_status": "verified",
+      "title": "Cerebras CS-4 发布：最快 AI 再提速",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-21",
+      "event_time": "2026-08-18T00:00:00.000Z",
+      "sourceUrl": "https://www.cerebras.ai/blog/introducing-cerebras-cs-4",
+      "sourceName": "keyword search / Exa",
+      "subject": "Cerebras",
+      "sourceExcerpt": "Today, we are introducing the fourth generation of our Cerebras System: CS-4 .",
+      "entity_refs": [
+        {
+          "entity_id": "EN-77b30b8a88051252",
+          "canonical_name": "Cerebras",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-49dba228d91e7180",
+          "canonical_name": "CS-4",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-fee3f861adafb385",
+          "canonical_name": "Introducing Cerebras CS-4",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-7a38feb4197932a8"
+      ],
+      "source_refs": [
+        "SA-d229ca4e7e37ea79"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-7a38feb4197932a8",
+            "source_refs": [
+              "SA-d229ca4e7e37ea79"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-d93dd19a481307ec",
       "event_id": "EV-d93dd19a481307ec",
       "event_type": "hardware_product",
@@ -2133,6 +3398,165 @@
             "claim_ref": "CL-a15196f326056940",
             "source_refs": [
               "SA-c30f3ac9e4393bd2"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-eb3545d5948aa255",
+      "event_id": "EV-eb3545d5948aa255",
+      "event_type": "product_release",
+      "publication_status": "verified",
+      "title": "KT将韩国AI芯片与语言模型整合至一台企业服务器",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-21",
+      "event_time": "2026-08-19T05:17:03.000Z",
+      "sourceUrl": "https://www.koreatimes.co.kr/business/companies/20260819/kt-puts-korean-ai-chips-language-model-into-one-enterprise-server",
+      "sourceName": "keyword search / Exa",
+      "subject": "KT",
+      "sourceExcerpt": "KT said Wednesday it launched the KT NPU LLM Station, an integrated AI appliance built around Rebellions’ ATOM-MAX neural processing unit and KT’s proprietary Mi:dm K 2.5 Pro large language model.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-99d3fd0fa8fe115e",
+          "canonical_name": "KT",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-942d023fd3168d40",
+          "canonical_name": "NPU LLM Station",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-2ea859d02e5eb089",
+          "canonical_name": "Korean AI",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-901f072b1497cfa2"
+      ],
+      "source_refs": [
+        "SA-05fdc2e5095b6c7b"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "model",
+          "value_name": "模型",
+          "entity_ids": [
+            "EN-99d3fd0fa8fe115e"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "chip_accelerator",
+          "value_name": "芯片与加速器",
+          "entity_ids": [
+            "EN-99d3fd0fa8fe115e"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-901f072b1497cfa2",
+            "source_refs": [
+              "SA-05fdc2e5095b6c7b"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-f9ebb480a6b58b21",
+      "event_id": "EV-f9ebb480a6b58b21",
+      "event_type": "product_release",
+      "publication_status": "verified",
+      "title": "揭秘 OpenAI 的\"终极野心\"：让智能体像人类一样熟练操作电脑",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-21",
+      "event_time": "2026-08-20T12:29:27.000Z",
+      "sourceUrl": "https://www.ithome.com/0/992/339.htm",
+      "sourceName": "IT之家（RSS）",
+      "subject": "OpenAI",
+      "sourceExcerpt": "经过多年开发，公司现在已经有信心开始向客户逐步开放电脑操作功能。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-e2695c3b1839a32d"
+      ],
+      "source_refs": [
+        "SA-d113b332bdd774d7"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-e2695c3b1839a32d",
+            "source_refs": [
+              "SA-d113b332bdd774d7"
             ],
             "provenance": "event_type_rule"
           }
@@ -3063,147 +4487,6 @@
       }
     },
     {
-      "id": "EV-b6789508a1887fd4",
-      "event_id": "EV-b6789508a1887fd4",
-      "event_type": "procurement_contract",
-      "publication_status": "verified",
-      "title": "Darwin AI 宣布与德克萨斯州达成全国首个人工智能治理批量采购协议",
-      "category": "case",
-      "categoryLabel": "案例",
-      "date": "2026-08-20",
-      "event_time": "2026-08-17T00:00:00.000Z",
-      "sourceUrl": "https://www.einpresswire.com/article/934565825/darwin-ai-announces-the-nation-s-first-bulk-purchase-agreement-for-ai-governance-through-the-state-of-texas",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "Darwin AI",
-      "sourceExcerpt": "Darwin AI today announced the nation’s first Bulk Purchase Agreement (BPA) for AI governance, established in partnership with the Texas Department of Information Resources (DIR) and awarded under Carahsoft Bulk Purchase Agreement BP2026-0015 .",
-      "entity_refs": [
-        {
-          "entity_id": "EN-b45fc2bf83bced68",
-          "canonical_name": "Darwin AI",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-9df2f65494726d68"
-      ],
-      "source_refs": [
-        "SA-c4d91c3b8e7a074e"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "procurement_signal",
-            "claim_ref": "CL-9df2f65494726d68",
-            "source_refs": [
-              "SA-c4d91c3b8e7a074e"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "procurement_signal"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-cc9d9706f9b6c597",
-      "event_id": "EV-cc9d9706f9b6c597",
-      "event_type": "certification_compliance",
-      "publication_status": "verified",
-      "title": "研华与相机生态系统合作伙伴完成合作",
-      "category": "case",
-      "categoryLabel": "案例",
-      "date": "2026-08-20",
-      "event_time": "2026-08-17T16:00:00.000Z",
-      "sourceUrl": "https://www.advantech.com/en-eu/resources/news/advantech-and-camera-ecosystem-partners-complete-validation-on-nvidia-jetpack-72-for-advanced-vision-ai-deployment",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "Advantech",
-      "sourceExcerpt": "Advantech (TWSE: 2395), a global leader in industrial IoT, has announced the successful completion of validation with its camera ecosystem partners on NVIDIA JetPack 7.2 across its MIC-AI and MIB series platforms.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-2f04672311c5a914",
-          "canonical_name": "Advantech",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-034dacbb7e21d957"
-      ],
-      "source_refs": [
-        "SA-3cc794879ca724bf"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [
-          {
-            "value_id": "security_compliance",
-            "claim_ref": "CL-034dacbb7e21d957",
-            "source_refs": [
-              "SA-3cc794879ca724bf"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "governance_requirement",
-            "claim_ref": "CL-034dacbb7e21d957",
-            "source_refs": [
-              "SA-3cc794879ca724bf"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [
-            "security_compliance"
-          ],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "governance_requirement"
-          ]
-        }
-      }
-    },
-    {
       "id": "EV-d7363291047184de",
       "event_id": "EV-d7363291047184de",
       "event_type": "partnership",
@@ -4050,90 +5333,6 @@
       }
     },
     {
-      "id": "EV-00ffb2c501a37ec8",
-      "event_id": "EV-00ffb2c501a37ec8",
-      "event_type": "security_incident",
-      "publication_status": "verified",
-      "title": "OpenAI公布新安全变更，其AI曾入侵Hugging Face",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-20",
-      "event_time": "2026-08-18T00:00:00.000Z",
-      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack",
-      "sourceName": "The Verge AI",
-      "subject": "OpenAI",
-      "sourceExcerpt": "OpenAI is announcing security updates following the July news that its AI broke out of a sandboxed environment and accidentally hacked Hugging Face",
-      "entity_refs": [
-        {
-          "entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-fac4808602041552"
-      ],
-      "source_refs": [
-        "SA-d2f1374ad40ff19e"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "permission_audit",
-            "claim_ref": "CL-fac4808602041552",
-            "source_refs": [
-              "SA-d2f1374ad40ff19e"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [
-          {
-            "value_id": "security_compliance",
-            "claim_ref": "CL-fac4808602041552",
-            "source_refs": [
-              "SA-d2f1374ad40ff19e"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "failure_postmortem",
-            "claim_ref": "CL-fac4808602041552",
-            "source_refs": [
-              "SA-d2f1374ad40ff19e"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [
-            "permission_audit"
-          ],
-          "pain_or_constraint": [
-            "security_compliance"
-          ],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "failure_postmortem"
-          ]
-        }
-      }
-    },
-    {
       "id": "EV-0c00a6c681f22b98",
       "event_id": "EV-0c00a6c681f22b98",
       "event_type": "security_incident",
@@ -4733,75 +5932,6 @@
       }
     },
     {
-      "id": "EV-50707b1126daba0f",
-      "event_id": "EV-50707b1126daba0f",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "画布如何让智能体工作流变得可见、可控且成本高效",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-20",
-      "event_time": "2026-08-17T00:00:00.000Z",
-      "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient/",
-      "sourceName": "GitHub Blog AI",
-      "subject": "GitHub Copilot app",
-      "sourceExcerpt": "The GitHub Copilot app is a major step toward addressing this. One feature in particular that I&rsquo;ve learned to love and use almost every day is canvases .",
-      "entity_refs": [
-        {
-          "entity_id": "EN-e489f95f7a3ddb71",
-          "canonical_name": "GitHub Copilot app",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-de92ba5aa95fe45e",
-          "canonical_name": "Site Studio",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-ecbed05beab34a9b",
-        "CL-11c6413f4e8f9ec8"
-      ],
-      "source_refs": [
-        "SA-21f1544eba0d9233"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-ecbed05beab34a9b",
-            "source_refs": [
-              "SA-21f1544eba0d9233"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
       "id": "EV-68897f26c8d956df",
       "event_id": "EV-68897f26c8d956df",
       "event_type": "product_release",
@@ -5214,80 +6344,6 @@
           "pain_or_constraint": [
             "evaluation_gap"
           ],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-9d53b12f5f077d3b",
-      "event_id": "EV-9d53b12f5f077d3b",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "Meta AI 推出 Mac 应用",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-20",
-      "event_time": "2026-08-19T00:00:00.000Z",
-      "sourceUrl": "https://www.theverge.com/tech/982270/meta-ai-mac-app",
-      "sourceName": "The Verge AI",
-      "subject": "Meta",
-      "sourceExcerpt": "Meta is launching a new Mac app dedicated to its AI chatbot.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-ea3bd73e2b506e00",
-          "canonical_name": "Meta",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-f4157325d18f14a9"
-      ],
-      "source_refs": [
-        "SA-1a4d6ad3962eb25e"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "product_form",
-          "dimension_name": "产品形态",
-          "value_id": "end_user_application",
-          "value_name": "终端 AI 应用",
-          "entity_ids": [
-            "EN-ea3bd73e2b506e00"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-f4157325d18f14a9",
-            "source_refs": [
-              "SA-1a4d6ad3962eb25e"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],
           "business_action": [
@@ -7889,80 +8945,6 @@
           "delivery_model": [],
           "business_action": [
             "governance_requirement"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-b8206195828dc573",
-      "event_id": "EV-b8206195828dc573",
-      "event_type": "partnership",
-      "publication_status": "verified",
-      "title": "通过Gemini和Pixel更贴近比赛",
-      "category": "case",
-      "categoryLabel": "案例",
-      "date": "2026-08-18",
-      "event_time": "2026-08-17T00:00:00.000Z",
-      "sourceUrl": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/",
-      "sourceName": "Google AI Blog",
-      "subject": "Gemini and Pixel",
-      "sourceExcerpt": "Gemini and Pixel have announced new long-term partnerships with Arsenal FC, FC Barcelona, FC Bayern München, Liverpool FC, and Paris Saint-Germain to bring fans closer to the game through AI personal intelligence and smartphone technology.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-236a21ca81b0f5ca",
-          "canonical_name": "Gemini and Pixel",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-5d72436256ada538",
-          "canonical_name": "Gemini",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-3f8d7379e2f0f7d0",
-          "canonical_name": "Pixel",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-46628d6715ec6b4f"
-      ],
-      "source_refs": [
-        "SA-7eda795a20325ccd"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "partnership_integration",
-            "claim_ref": "CL-46628d6715ec6b4f",
-            "source_refs": [
-              "SA-7eda795a20325ccd"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "partnership_integration"
           ]
         }
       }

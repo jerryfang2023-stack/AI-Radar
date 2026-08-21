@@ -5,13 +5,13 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-20T01:55:31.201Z",
+    "generated_at": "2026-08-21T02:12:04.037Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 289,
-    "input_hash": "d3fbfc58e01273a5",
+    "decision_count": 290,
+    "input_hash": "48403655b9e3fe9a",
     "override_count": 17,
     "needs_review_count": 2,
     "low_confidence_count": 8
@@ -5727,6 +5727,21 @@
       "confidence": 0.75,
       "needs_review": false,
       "rationale": "Relativity Networks定义分布式AI的网络层，提供空心光纤ChronoCore™，属于AI计算基础设施中的硬件/网络基础设施。"
+    },
+    {
+      "event_id": "EV-19dd4c3a5dd5a94b",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_compute_system",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Etched 构建 AI 推理集群，属于为其他 AI 产品提供硬件/计算基础设施，符合 infrastructure_compute > hardware_computing > computing_infrastructure。"
     }
   ]
 }
