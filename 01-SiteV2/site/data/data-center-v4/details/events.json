@@ -302,17 +302,204 @@
       "conflicts": [],
       "tags": [],
       "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-9cb45a27a2808c01"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-58d4892be13a4de6",
+            "fundingInsightId": "FI-8230cfbd37025db0"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "hardware_computing",
+            "name": "硬件与算力",
+            "entityIds": [
+              "EN-9cb45a27a2808c01"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ccfb45cbe7fc9e15",
+            "fundingInsightId": "FI-8230cfbd37025db0"
+          }
+        ],
+        "ai_market_application": [
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "computing_infrastructure",
+            "name": "计算基础设施",
+            "entityIds": [
+              "EN-9cb45a27a2808c01"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e0d71324486de62c",
+            "fundingInsightId": "FI-8230cfbd37025db0"
+          }
+        ],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-9cb45a27a2808c01"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-7b6bc9563bb9cd12",
+            "fundingInsightId": "FI-8230cfbd37025db0"
+          }
+        ],
         "use_case": [],
         "industry": [],
         "deployment_model": [],
-        "target_user": []
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-9cb45a27a2808c01"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-af14e207a4ed4226",
+            "fundingInsightId": "FI-8230cfbd37025db0"
+          }
+        ]
       },
-      "classifications": [],
-      "displayTags": [],
+      "classifications": [
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "computing_infrastructure",
+          "name": "计算基础设施",
+          "entityIds": [
+            "EN-9cb45a27a2808c01"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e0d71324486de62c",
+          "fundingInsightId": "FI-8230cfbd37025db0"
+        },
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-9cb45a27a2808c01"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-58d4892be13a4de6",
+          "fundingInsightId": "FI-8230cfbd37025db0"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "hardware_computing",
+          "name": "硬件与算力",
+          "entityIds": [
+            "EN-9cb45a27a2808c01"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-ccfb45cbe7fc9e15",
+          "fundingInsightId": "FI-8230cfbd37025db0"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-9cb45a27a2808c01"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-7b6bc9563bb9cd12",
+          "fundingInsightId": "FI-8230cfbd37025db0"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-9cb45a27a2808c01"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-af14e207a4ed4226",
+          "fundingInsightId": "FI-8230cfbd37025db0"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-9cb45a27a2808c01"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-58d4892be13a4de6",
+          "fundingInsightId": "FI-8230cfbd37025db0"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "hardware_computing",
+          "name": "硬件与算力",
+          "entityIds": [
+            "EN-9cb45a27a2808c01"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-ccfb45cbe7fc9e15",
+          "fundingInsightId": "FI-8230cfbd37025db0"
+        },
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "computing_infrastructure",
+          "name": "计算基础设施",
+          "entityIds": [
+            "EN-9cb45a27a2808c01"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e0d71324486de62c",
+          "fundingInsightId": "FI-8230cfbd37025db0"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-9cb45a27a2808c01"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-7b6bc9563bb9cd12",
+          "fundingInsightId": "FI-8230cfbd37025db0"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-9cb45a27a2808c01"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-af14e207a4ed4226",
+          "fundingInsightId": "FI-8230cfbd37025db0"
+        }
+      ],
       "entityIds": [
         "EN-9cb45a27a2808c01"
       ],
@@ -1357,9 +1544,48 @@
       "conflicts": [],
       "tags": [],
       "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-0b79cf2de0ee6b8e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-744899ec503b5a08",
+            "fundingInsightId": "FI-2616a89ee525dd60"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "hardware_computing",
+            "name": "硬件与算力",
+            "entityIds": [
+              "EN-0b79cf2de0ee6b8e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-19c00b42d90ea75b",
+            "fundingInsightId": "FI-2616a89ee525dd60"
+          }
+        ],
+        "ai_market_application": [
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "computing_infrastructure",
+            "name": "计算基础设施",
+            "entityIds": [
+              "EN-0b79cf2de0ee6b8e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b0f983ccda86eec7",
+            "fundingInsightId": "FI-2616a89ee525dd60"
+          }
+        ],
         "product_form": [
           {
             "dimensionId": "product_form",
@@ -1369,16 +1595,78 @@
             "entityIds": [
               "EN-0b79cf2de0ee6b8e"
             ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5be5c6d0846f5ae5",
+            "fundingInsightId": "FI-2616a89ee525dd60"
           }
         ],
         "use_case": [],
         "industry": [],
         "deployment_model": [],
-        "target_user": []
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-0b79cf2de0ee6b8e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-081b8368f977bbec",
+            "fundingInsightId": "FI-2616a89ee525dd60"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-0b79cf2de0ee6b8e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4f0e7c73b03db9ed",
+            "fundingInsightId": "FI-2616a89ee525dd60"
+          }
+        ]
       },
       "classifications": [
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "computing_infrastructure",
+          "name": "计算基础设施",
+          "entityIds": [
+            "EN-0b79cf2de0ee6b8e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b0f983ccda86eec7",
+          "fundingInsightId": "FI-2616a89ee525dd60"
+        },
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-0b79cf2de0ee6b8e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-744899ec503b5a08",
+          "fundingInsightId": "FI-2616a89ee525dd60"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "hardware_computing",
+          "name": "硬件与算力",
+          "entityIds": [
+            "EN-0b79cf2de0ee6b8e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-19c00b42d90ea75b",
+          "fundingInsightId": "FI-2616a89ee525dd60"
+        },
         {
           "dimensionId": "product_form",
           "dimensionName": "产品形态",
@@ -1387,12 +1675,73 @@
           "entityIds": [
             "EN-0b79cf2de0ee6b8e"
           ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5be5c6d0846f5ae5",
+          "fundingInsightId": "FI-2616a89ee525dd60"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-0b79cf2de0ee6b8e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-081b8368f977bbec",
+          "fundingInsightId": "FI-2616a89ee525dd60"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-0b79cf2de0ee6b8e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4f0e7c73b03db9ed",
+          "fundingInsightId": "FI-2616a89ee525dd60"
         }
       ],
       "displayTags": [
         {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-0b79cf2de0ee6b8e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-744899ec503b5a08",
+          "fundingInsightId": "FI-2616a89ee525dd60"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "hardware_computing",
+          "name": "硬件与算力",
+          "entityIds": [
+            "EN-0b79cf2de0ee6b8e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-19c00b42d90ea75b",
+          "fundingInsightId": "FI-2616a89ee525dd60"
+        },
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "computing_infrastructure",
+          "name": "计算基础设施",
+          "entityIds": [
+            "EN-0b79cf2de0ee6b8e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b0f983ccda86eec7",
+          "fundingInsightId": "FI-2616a89ee525dd60"
+        },
+        {
           "dimensionId": "product_form",
           "dimensionName": "产品形态",
           "id": "compute_cloud_service",
@@ -1400,8 +1749,33 @@
           "entityIds": [
             "EN-0b79cf2de0ee6b8e"
           ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5be5c6d0846f5ae5",
+          "fundingInsightId": "FI-2616a89ee525dd60"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-0b79cf2de0ee6b8e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-081b8368f977bbec",
+          "fundingInsightId": "FI-2616a89ee525dd60"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-0b79cf2de0ee6b8e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4f0e7c73b03db9ed",
+          "fundingInsightId": "FI-2616a89ee525dd60"
         }
       ],
       "entityIds": [

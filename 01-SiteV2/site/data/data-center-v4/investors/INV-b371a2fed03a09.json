@@ -21,12 +21,12 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 1,
     "first_disclosed_at": "2026-03-30",
-    "latest_disclosed_at": "2026-07-23",
+    "latest_disclosed_at": "2026-08-19",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "participant": 1
     },
     "round_codes": [
@@ -40,6 +40,45 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-58bdeeb895fbbb4a",
+        "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
+        "event_ids": [
+          "EV-19dd4c3a5dd5a94b",
+          "EV-4af14568b1bdeb35"
+        ],
+        "company_entity_id": "FICO-etched",
+        "company_canonical_entity_id": "",
+        "company_name": "Etched",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$700m",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7 亿美元"
+        },
+        "announced_at": "2026-08-19",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "2026年7月Series C参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f0a76ad07ec945fd",
+            "source_url": "https://www.unite.ai/etched-raises-700m-series-d-at-21b-valuation-to-ramp-inference-hardware-production/",
+            "source_title": "Etched Raises $700M Series D at $21B Valuation to Ramp Inference Hardware Production – Unite.AI",
+            "source_content_hash": "481f49faf99a191d",
+            "quote": "The July Series C brought in SK Hynix alongside the venture backers.",
+            "quote_hash": "3f511384b5ab71f6164dda88e3c32ef74afdfd52d0b3b4c8056844395e6ff243"
+          }
+        ]
+      },
       {
         "activity_id": "IA-7c9f230676df9045",
         "funding_insight_id": "FI-1590f6795e68ef12",
@@ -119,6 +158,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-f0a76ad07ec945fd",
+        "source_url": "https://www.unite.ai/etched-raises-700m-series-d-at-21b-valuation-to-ramp-inference-hardware-production/",
+        "source_title": "Etched Raises $700M Series D at $21B Valuation to Ramp Inference Hardware Production – Unite.AI",
+        "source_content_hash": "481f49faf99a191d",
+        "quote": "The July Series C brought in SK Hynix alongside the venture backers.",
+        "quote_hash": "3f511384b5ab71f6164dda88e3c32ef74afdfd52d0b3b4c8056844395e6ff243"
+      },
+      {
         "source_id": "FISRC-f34324e392a333c0",
         "source_url": "https://www.datacenterdynamics.com/en/news/ai-chip-startup-etched-closes-300m-funding-round-doubles-its-valuation-to-103bn/",
         "source_title": "AI chip startup Etched closes $300m funding round, doubles its valuation to $10.3bn - DCD",
@@ -134,6 +181,18 @@
         "quote": "Samsung, SK Hynix and Saudi Arabian oil giant Aramco are all investors in Rebellions.",
         "quote_hash": "22c0af28bfbd8f1af6a3ee838684d38f911dec265f670bb1263680e8a4ca968e"
       }
-    ]
+    ],
+    "translations": {
+      "zh-CN": {
+        "activities[0].role": {
+          "text": "2026年7月Series C参投",
+          "source_hash": "ca89a4b6213c63b73693d1f4cbdbc294103169f8c18273db948594868797614d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-08-21T02:11:59.594Z",
+          "status": "translated"
+        }
+      }
+    }
   }
 }
