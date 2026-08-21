@@ -1,5 +1,38 @@
 [
   {
+    "hardware_snapshot_id": "HWS-991957fc820af376",
+    "snapshot_key": "8d83782689e2c877",
+    "as_of": "2026-08-21",
+    "subject_entity_id": "EN-c7fb6b39e587e345",
+    "subject_name": "Compal Electronics",
+    "product_entity_ids": [],
+    "product_names": [],
+    "component_types": [
+      "server"
+    ],
+    "latest_values": {
+      "capacity": {
+        "metric_value": "",
+        "unit": "",
+        "fact_ref": "HWF-66472a2316bf9f86"
+      }
+    },
+    "fact_refs": [
+      "HWF-66472a2316bf9f86"
+    ],
+    "claim_refs": [
+      "CL-a4c1f0029071baf1"
+    ],
+    "source_refs": [
+      "SA-99ad72a7b3493a7f"
+    ],
+    "event_refs": [
+      "EV-ac069339ca20e4c6"
+    ],
+    "previous_snapshot_ref": "",
+    "change_status": "initial"
+  },
+  {
     "hardware_snapshot_id": "HWS-2dbe7feeec9426e2",
     "snapshot_key": "1d458fe0521f28c1",
     "as_of": "2026-08-21",
@@ -41,6 +74,45 @@
     ],
     "event_refs": [
       "EV-4c168759119d2668"
+    ],
+    "previous_snapshot_ref": "",
+    "change_status": "initial"
+  },
+  {
+    "hardware_snapshot_id": "HWS-8876d719efa3b9d7",
+    "snapshot_key": "36adb2bcffad68b4",
+    "as_of": "2026-08-21",
+    "subject_entity_id": "EN-99d3fd0fa8fe115e",
+    "subject_name": "KT",
+    "product_entity_ids": [
+      "EN-942d023fd3168d40",
+      "EN-2ea859d02e5eb089"
+    ],
+    "product_names": [
+      "NPU LLM Station",
+      "Korean AI"
+    ],
+    "component_types": [
+      "ai_accelerator"
+    ],
+    "latest_values": {
+      "product": {
+        "metric_value": "",
+        "unit": "",
+        "fact_ref": "HWF-dcefe3c8a4e0a412"
+      }
+    },
+    "fact_refs": [
+      "HWF-dcefe3c8a4e0a412"
+    ],
+    "claim_refs": [
+      "CL-901f072b1497cfa2"
+    ],
+    "source_refs": [
+      "SA-05fdc2e5095b6c7b"
+    ],
+    "event_refs": [
+      "EV-eb3545d5948aa255"
     ],
     "previous_snapshot_ref": "",
     "change_status": "initial"
@@ -126,6 +198,43 @@
     ],
     "event_refs": [
       "EV-d93dd19a481307ec"
+    ],
+    "previous_snapshot_ref": "",
+    "change_status": "initial"
+  },
+  {
+    "hardware_snapshot_id": "HWS-9ac7fd405eedd5ec",
+    "snapshot_key": "837dfbd90183d511",
+    "as_of": "2026-08-21",
+    "subject_entity_id": "EN-9c3de5f42376b1af",
+    "subject_name": "Generalist AI",
+    "product_entity_ids": [
+      "EN-4dc02e72724c7467"
+    ],
+    "product_names": [
+      "GEN-1.5"
+    ],
+    "component_types": [
+      "robot"
+    ],
+    "latest_values": {
+      "product": {
+        "metric_value": "",
+        "unit": "",
+        "fact_ref": "HWF-60cb0b79fc292765"
+      }
+    },
+    "fact_refs": [
+      "HWF-60cb0b79fc292765"
+    ],
+    "claim_refs": [
+      "CL-4978552a0b7a728f"
+    ],
+    "source_refs": [
+      "SA-d89041c75e4f4249"
+    ],
+    "event_refs": [
+      "EV-435ad78c9ec50025"
     ],
     "previous_snapshot_ref": "",
     "change_status": "initial"

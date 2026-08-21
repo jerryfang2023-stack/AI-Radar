@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "generatedAt": "2026-08-21T02:05:12.052Z",
     "latestDataDate": "2026-08-21",
     "currentDate": "2026-08-21",
-    "eventCount": 2267,
+    "eventCount": 2285,
     "quarantinedEventCount": 20
   },
   "entity": {
@@ -22,21 +22,21 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-a69c83bcdb90c823",
-      "EV-b8206195828dc573"
+      "EV-b8206195828dc573",
+      "EV-a69c83bcdb90c823"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-17",
-    "lastSeen": "2026-08-20",
+    "lastSeen": "2026-08-21",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [
-        "EV-a69c83bcdb90c823",
-        "EV-b8206195828dc573"
+        "EV-b8206195828dc573",
+        "EV-a69c83bcdb90c823"
       ],
       "productsServices": [],
       "hardware": [],
@@ -44,6 +44,23 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-b8206195828dc573",
+        "dataDate": "2026-08-21",
+        "date": "2026-08-17",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "通过Gemini和Pixel更贴近比赛",
+        "displayTags": [],
+        "entityIds": [
+          "EN-236a21ca81b0f5ca",
+          "EN-5d72436256ada538",
+          "EN-3f8d7379e2f0f7d0"
+        ]
+      },
       {
         "id": "EV-a69c83bcdb90c823",
         "dataDate": "2026-08-20",
@@ -57,23 +74,6 @@
         "displayTags": [],
         "entityIds": [
           "EN-160b93ba38ba1ecd",
-          "EN-3f8d7379e2f0f7d0"
-        ]
-      },
-      {
-        "id": "EV-b8206195828dc573",
-        "dataDate": "2026-08-18",
-        "date": "2026-08-17",
-        "eventType": "partnership",
-        "eventTypeLabel": "合作",
-        "eventGroup": "商业合作",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "通过Gemini和Pixel更贴近比赛",
-        "displayTags": [],
-        "entityIds": [
-          "EN-236a21ca81b0f5ca",
-          "EN-5d72436256ada538",
           "EN-3f8d7379e2f0f7d0"
         ]
       }

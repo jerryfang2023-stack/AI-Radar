@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "generatedAt": "2026-08-21T02:05:12.052Z",
     "latestDataDate": "2026-08-21",
     "currentDate": "2026-08-21",
-    "eventCount": 2267,
+    "eventCount": 2285,
     "quarantinedEventCount": 20
   },
   "entity": {
@@ -4623,7 +4623,9 @@
         "EV-3c4d6d70ac763885",
         "EV-597a6d51533fe5d6",
         "EV-3873f7ea8ac5a93f",
+        "EV-3e7db5b8d976bf0e",
         "EV-e3da5e799e746408",
+        "EV-f9ebb480a6b58b21",
         "EV-46cd64a76d3767f5",
         "EV-937b855e723d6ef0",
         "EV-d93dd19a481307ec",
@@ -4807,12 +4809,13 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-00ffb2c501a37ec8",
+        "EV-da06805e06990d63",
         "EV-0c00a6c681f22b98",
         "EV-2c08a493d3c8b9c7",
         "EV-11a0afc2ecb6e42e",
         "EV-6610418ae1ced59f",
         "EV-9940dccace747f28",
-        "EV-00ffb2c501a37ec8",
         "EV-f819309f846d95bc",
         "EV-2902a32e86a4b2d1",
         "EV-90707e0cbca091c9",
@@ -4983,12 +4986,15 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-c6d84982982597aa",
         "EV-181cd28d97c4e61d",
         "EV-e70a48e36e99d57a",
         "EV-55e7c286e95be405",
@@ -5226,21 +5232,28 @@
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
+        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
       "lastSeen": "2026-08-21"
@@ -5534,7 +5547,6 @@
       "valueId": "business_user",
       "eventIds": [
         "EV-8cb4468fe881602b",
-        "EV-181cd28d97c4e61d",
         "EV-1dba157815d84342",
         "EV-d43103952399bc68",
         "EV-e70a48e36e99d57a",
@@ -5763,7 +5775,6 @@
       ],
       "entityIds": [
         "EN-2f72d2f93de73383",
-        "EN-0b79cf2de0ee6b8e",
         "FICO-50b2676afbe30c83",
         "EN-8c5929d253b07fed",
         "EN-8d4321d936320802",
@@ -5974,7 +5985,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-21"
+      "lastSeen": "2026-08-20"
     },
     {
       "id": "TX-industry-manufacturing",
@@ -6051,6 +6062,7 @@
         "EV-7585b033d4005977",
         "EV-cec68369662236fd",
         "EV-4eb0556b8c72d410",
+        "EV-ac069339ca20e4c6",
         "EV-0121f0a9e9a975ec",
         "EV-d84f24c8c72e7e47",
         "EV-b3ef1eed47191c55",
@@ -6168,6 +6180,7 @@
         "EN-15516525ca2aa1a4",
         "EN-8dc72a4672894e0f",
         "EN-098a40b4499d7512",
+        "EN-c7fb6b39e587e345",
         "EN-29b9f0cae32e7a8a",
         "EN-57fac8572eeab5fc",
         "EN-d25e715a1ce00764",
@@ -6201,6 +6214,7 @@
         "FDE-6e17403b5cdb72b0"
       ],
       "hardwareIds": [
+        "HW-68c81779533a3523",
         "HW-304c6370cc157449",
         "HW-4673613f81881c78",
         "HW-df8fb3396e493a21",
@@ -6209,7 +6223,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-21"
     },
     {
       "id": "TX-target_user-consumer",
@@ -6501,6 +6515,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-1ced8c8a0480d5c2",
         "EV-3873f7ea8ac5a93f",
         "EV-cd7ba52564d4091e",
         "EV-8cc00de56738c21d",
@@ -6944,6 +6959,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-877c3aec832cd410",
         "EN-59bba357145ca539",
         "EN-e3ce9cc5efa9354c",
         "EN-03c4260539e08e9c",

@@ -1119,6 +1119,8 @@ test("index pages, question headlines, roundups, and reaction articles cannot be
     ["商业新闻融资快讯与新闻稿", "index_or_listing_page_not_event_source"],
     ["Funding Breaking News and Press Releases from Business Wire", "index_or_listing_page_not_event_source"],
     ["智能体AI能否让美国制造业回归？", "question_headline_not_event_specific"],
+    ["The AI Race: What's Left of the Western AI Lead?", "question_headline_not_event_specific"],
+    ["前沿雷达 #4：中国已迎头赶上，西方AI领先优势还剩什么？", "question_headline_not_event_specific"],
     ["AI巨头斥资数十亿美元布局企业部署", "multi_event_roundup_not_single_event_source"],
     ["Latest open artifacts (#23): Laguna S2.1, Inkling, & Kimi K3 show the utility of open models on the Pareto frontier", "multi_event_roundup_not_single_event_source"],
     ["最新开源模型盘点（#23）：Laguna S2.1、Inkling 与 Kimi K3 展现开源模型在帕累托前沿的价值", "multi_event_roundup_not_single_event_source"],

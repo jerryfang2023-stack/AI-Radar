@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "generatedAt": "2026-08-21T02:05:12.052Z",
     "latestDataDate": "2026-08-21",
     "currentDate": "2026-08-21",
-    "eventCount": 2267,
+    "eventCount": 2285,
     "quarantinedEventCount": 20
   },
   "entity": {
@@ -22,7 +22,8 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-4c168759119d2668"
+      "EV-4c168759119d2668",
+      "EV-eb3545d5948aa255"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
@@ -35,7 +36,8 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
-        "EV-4c168759119d2668"
+        "EV-4c168759119d2668",
+        "EV-eb3545d5948aa255"
       ],
       "hardware": [],
       "organizationPeople": [],
@@ -80,6 +82,46 @@
           "EN-99d3fd0fa8fe115e",
           "EN-2ea859d02e5eb089",
           "EN-942d023fd3168d40"
+        ]
+      },
+      {
+        "id": "EV-eb3545d5948aa255",
+        "dataDate": "2026-08-21",
+        "date": "2026-08-19",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "KT将韩国AI芯片与语言模型整合至一台企业服务器",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-99d3fd0fa8fe115e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-99d3fd0fa8fe115e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-99d3fd0fa8fe115e",
+          "EN-942d023fd3168d40",
+          "EN-2ea859d02e5eb089"
         ]
       }
     ],
@@ -244,6 +286,77 @@
         "EN-99d3fd0fa8fe115e",
         "EN-2ea859d02e5eb089",
         "EN-942d023fd3168d40"
+      ]
+    },
+    {
+      "id": "HWC-36adb2bcffad68b4",
+      "snapshotKey": "36adb2bcffad68b4",
+      "snapshotId": "HWS-8876d719efa3b9d7",
+      "eventId": "EV-eb3545d5948aa255",
+      "eventIds": [
+        "EV-eb3545d5948aa255"
+      ],
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "title": "NPU LLM Station / Korean AI",
+      "subject": "KT",
+      "productNames": [
+        "NPU LLM Station",
+        "Korean AI"
+      ],
+      "hardwareType": "ai_accelerator",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-dcefe3c8a4e0a412"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-dcefe3c8a4e0a412",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T05:17:03.000Z",
+          "subject_entity_id": "EN-99d3fd0fa8fe115e",
+          "subject_name": "KT",
+          "product_entity_ids": [
+            "EN-942d023fd3168d40",
+            "EN-2ea859d02e5eb089"
+          ],
+          "product_names": [
+            "NPU LLM Station",
+            "Korean AI"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KT said Wednesday it launched the KT NPU LLM Station, an integrated AI appliance built around Rebellions’ ATOM-MAX neural processing unit and KT’s proprietary Mi:dm K 2.5 Pro large language model.",
+          "event_refs": [
+            "EV-eb3545d5948aa255"
+          ],
+          "claim_ref": "CL-901f072b1497cfa2",
+          "source_refs": [
+            "SA-05fdc2e5095b6c7b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://koreatimes.co.kr/business/companies/20260819/kt-puts-korean-ai-chips-language-model-into-one-enterprise-server",
+      "entityIds": [
+        "EN-99d3fd0fa8fe115e",
+        "EN-942d023fd3168d40",
+        "EN-2ea859d02e5eb089"
       ]
     }
   ]

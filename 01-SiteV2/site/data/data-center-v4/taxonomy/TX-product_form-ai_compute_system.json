@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "generatedAt": "2026-08-21T02:05:12.052Z",
     "latestDataDate": "2026-08-21",
     "currentDate": "2026-08-21",
-    "eventCount": 2267,
+    "eventCount": 2285,
     "quarantinedEventCount": 20
   },
   "node": {
@@ -26,6 +26,7 @@
       "EV-e9d06e8a06aa7318",
       "EV-dbbe3fd637be213f",
       "EV-44ec7c229995ca3c",
+      "EV-ac069339ca20e4c6",
       "EV-0121f0a9e9a975ec",
       "EV-a852dc0ca6011ff6",
       "EV-c3b96b789b5bcafd",
@@ -50,6 +51,7 @@
       "EN-4e4b333252f207fd",
       "EN-bbdefa2950f49882",
       "EN-cecdd8369134f75e",
+      "EN-c7fb6b39e587e345",
       "EN-29b9f0cae32e7a8a",
       "EN-c9e92f0b88c6456b",
       "EN-54dfb14dcddad637",
@@ -69,6 +71,7 @@
       "FDE-b366647aabd8f450"
     ],
     "hardwareIds": [
+      "HW-68c81779533a3523",
       "HW-304c6370cc157449",
       "HW-a033b945449628d5",
       "HW-c5a22adcc66136ed",
@@ -79,7 +82,7 @@
       "HW-9a39a7f449362f96"
     ],
     "firstSeen": "2026-05-08",
-    "lastSeen": "2026-08-20"
+    "lastSeen": "2026-08-21"
   },
   "events": [
     {
@@ -3575,6 +3578,122 @@
       "publisher": "投资界"
     },
     {
+      "id": "EV-ac069339ca20e4c6",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "updatedDate": "2026-08-21",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "英业达启用大溪AI服务器制造中心，强化全球AI制造布局",
+      "originalTitle": "Compal Opens Daxi AI Server Manufacturing Center, Strengthening Its Global AI Manufacturing Footprint",
+      "subject": "Compal Electronics",
+      "action": "hardware_deployment",
+      "object": "Daxi AI Server Manufacturing Center",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-c7fb6b39e587e345"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-c7fb6b39e587e345"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-c7fb6b39e587e345"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-c7fb6b39e587e345"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-c7fb6b39e587e345"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-c7fb6b39e587e345"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c7fb6b39e587e345"
+      ],
+      "entityNames": [
+        "Compal Electronics"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://compal.com/en-us/media/343/ren-bao-da-xi-aisi-fu-qi-zhi-zao-zhong-xin-zheng",
+      "publisher": "compal.com"
+    },
+    {
       "id": "EV-0121f0a9e9a975ec",
       "dataDate": "2026-08-19",
       "date": "2026-08-14",
@@ -5914,6 +6033,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-19dd4c3a5dd5a94b",
         "EV-4af14568b1bdeb35",
         "EV-da1655ecfaf35feb",
         "EV-ad75efcb12a07793"
@@ -5932,19 +6052,22 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-01",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-21"
     },
     {
       "id": "EN-8d4321d936320802",
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-c6d84982982597aa",
         "EV-181cd28d97c4e61d",
         "EV-e70a48e36e99d57a",
         "EV-55e7c286e95be405",
@@ -6182,21 +6305,28 @@
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
+        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
       "lastSeen": "2026-08-21"
@@ -6338,6 +6468,7 @@
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
         "EV-baf1a4c3db620d90",
+        "EV-4af183c70855ecf2",
         "EV-6fdbcd14c6a633b6",
         "EV-7b0ff6657c0e0483",
         "EV-d93dd19a481307ec",
@@ -6577,6 +6708,28 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-05-08",
       "lastSeen": "2026-08-03"
+    },
+    {
+      "id": "EN-c7fb6b39e587e345",
+      "name": "Compal Electronics",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-ac069339ca20e4c6"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-ai_compute_system",
+        "TX-industry-manufacturing"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-08-21"
     },
     {
       "id": "EN-29b9f0cae32e7a8a",
@@ -7056,6 +7209,33 @@
   ],
   "hardware": [
     {
+      "id": "HW-68c81779533a3523",
+      "eventId": "EV-ac069339ca20e4c6",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "title": "英业达启用大溪AI服务器制造中心，强化全球AI制造布局",
+      "hardwareType": "server",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "Compal Electronics",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://compal.com/en-us/media/343/ren-bao-da-xi-aisi-fu-qi-zhi-zao-zhong-xin-zheng",
+      "sourceName": "compal.com",
+      "sourceDate": "2026-08-21",
+      "entityIds": [
+        "EN-c7fb6b39e587e345"
+      ]
+    },
+    {
       "id": "HW-304c6370cc157449",
       "eventId": "EV-0121f0a9e9a975ec",
       "dataDate": "2026-08-19",
@@ -7461,6 +7641,66 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-8d83782689e2c877",
+      "snapshotKey": "8d83782689e2c877",
+      "snapshotId": "HWS-991957fc820af376",
+      "eventId": "EV-ac069339ca20e4c6",
+      "eventIds": [
+        "EV-ac069339ca20e4c6"
+      ],
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "title": "Compal Electronics",
+      "subject": "Compal Electronics",
+      "productNames": [],
+      "hardwareType": "server",
+      "factTypes": [
+        "capacity"
+      ],
+      "latestValues": {
+        "capacity": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-66472a2316bf9f86"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-66472a2316bf9f86",
+          "fact_type": "capacity",
+          "observed_at": "2026-08-21T00:22:06.673Z",
+          "subject_entity_id": "EN-c7fb6b39e587e345",
+          "subject_name": "Compal Electronics",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "server",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Compal Electronics (Compal; TWSE: 2324) today held the opening ceremony for its Daxi AI Server Manufacturing Center, officially launching next-generation AI server manufacturing capacity.",
+          "event_refs": [
+            "EV-ac069339ca20e4c6"
+          ],
+          "claim_ref": "CL-a4c1f0029071baf1",
+          "source_refs": [
+            "SA-99ad72a7b3493a7f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        }
+      ],
+      "supplyFacts": [],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://compal.com/en-us/media/343/ren-bao-da-xi-aisi-fu-qi-zhi-zao-zhong-xin-zheng",
+      "entityIds": [
+        "EN-c7fb6b39e587e345"
+      ]
+    },
     {
       "id": "HWC-aa1ceb06f4e3c084",
       "snapshotKey": "aa1ceb06f4e3c084",

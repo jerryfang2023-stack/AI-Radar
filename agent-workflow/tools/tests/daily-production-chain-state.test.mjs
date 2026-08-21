@@ -1,4 +1,6 @@
 import assert from "node:assert/strict";
+import fs from "node:fs";
+import path from "node:path";
 import test from "node:test";
 import {
   isCollectionTelemetryReady,
@@ -38,4 +40,11 @@ test("pre-commit state rejects stale dates and obsolete top-level status fields"
     meta: { data_date: "2026-07-29" },
     v4_gate: { status: "passed" },
   }, date), false);
+});
+
+test("daily production rebuilds from a validated partial model-assist result", () => {
+  const workflow = fs.readFileSync(path.join(process.cwd(), ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
+  assert.match(workflow, /model_assist_status=\$\{PIPESTATUS\[0\]\}/u);
+  assert.match(workflow, /assert-data-center-model-assist\.mjs --date="\$\{RUN_DATE\}"[\s\S]*isolated candidate failures; rebuilding from the validated accepted subset/u);
+  assert.match(workflow, /if: steps\.data-center-v4-model-assist\.outcome == 'success'/u);
 });

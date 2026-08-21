@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "generatedAt": "2026-08-21T02:05:12.052Z",
     "latestDataDate": "2026-08-21",
     "currentDate": "2026-08-21",
-    "eventCount": 2267,
+    "eventCount": 2285,
     "quarantinedEventCount": 20
   },
   "fde": [
@@ -7848,23 +7848,23 @@
       ],
       "raw_documents": 102,
       "original_sources": 92,
-      "valid_claims": 25,
+      "valid_claims": 28,
       "observations": 1,
-      "canonical_events": 7,
+      "canonical_events": 13,
       "blocker_counts": {
-        "event_not_ai_relevant": 1,
-        "no_source_bounded_event": 22,
+        "event_not_ai_relevant": 5,
+        "no_source_bounded_event": 12,
         "source_outside_daily_window": 58,
-        "no_source_bounded_claim": 1,
         "community_source_requires_original_event_source": 2,
         "directory_page_not_event_source": 2,
+        "question_headline_not_event_specific": 1,
         "raw_source_quality_block": 9
       },
       "rates": {
         "original_source_rate": 0.9019607843137255,
-        "valid_claim_rate": 0.24509803921568626,
-        "observation_rate": 0.04,
-        "event_conversion_rate": 0.28
+        "valid_claim_rate": 0.27450980392156865,
+        "observation_rate": 0.03571428571428571,
+        "event_conversion_rate": 0.4642857142857143
       },
       "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/monitoring-funnel.json"
     }

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "generatedAt": "2026-08-21T02:05:12.052Z",
     "latestDataDate": "2026-08-21",
     "currentDate": "2026-08-21",
-    "eventCount": 2267,
+    "eventCount": 2285,
     "quarantinedEventCount": 20
   },
   "entity": {
@@ -26,6 +26,7 @@
     ],
     "eventIds": [],
     "viewpointIds": [
+      "https://simonwillison.net/2026/Aug/20/bun-webview-json-api/",
       "https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/",
       "https://simonwillison.net/2026/Aug/19/jeremy-morrell/",
       "https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code/",
@@ -33,7 +34,6 @@
       "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra/",
       "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
       "https://simonwillison.net/2026/Aug/16/dario-amodei/",
-      "https://simonwillison.net/2026/Aug/13/llm-gemini/",
       "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter/#atom-everything",
       "https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything",
       "https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything",
@@ -88,6 +88,8 @@
     "role": "AI编码工具、LLM发布说明、提示工程、datasette生态系统、开发者工作流观察。",
     "organization": "",
     "viewpointTags": [
+      "AI 基础设施",
+      "模型基础设施观点",
       "Agent",
       "Agent 工作流观点",
       "Agentic AI",
@@ -97,8 +99,6 @@
       "AI 编程",
       "AI Coding 观点",
       "AI Coding",
-      "AI 基础设施",
-      "模型基础设施观点",
       "企业工作流",
       "Builder 观点"
     ],
@@ -115,15 +115,21 @@
     "timeline": [],
     "viewpoints": [
       {
+        "id": "https://simonwillison.net/2026/Aug/20/bun-webview-json-api/",
+        "date": "2026-08-20",
+        "title": "基于Bun 1.4新特性Bun.WebView的shot-scraper风格JSON API",
+        "sourceUrl": "https://simonwillison.net/2026/Aug/20/bun-webview-json-api/"
+      },
+      {
         "id": "https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/",
         "date": "2026-08-20",
-        "title": "smolmachines / smolvm 作为不受信任的Python和JavaScript的沙箱",
+        "title": "smolmachines / smolvm 作为不受信任的 Python 和 JavaScript 的沙箱",
         "sourceUrl": "https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/"
       },
       {
         "id": "https://simonwillison.net/2026/Aug/19/jeremy-morrell/",
         "date": "2026-08-20",
-        "title": "引用杰里米·莫雷尔",
+        "title": "引用杰里米·莫雷尔的话",
         "sourceUrl": "https://simonwillison.net/2026/Aug/19/jeremy-morrell/"
       },
       {
@@ -135,13 +141,13 @@
       {
         "id": "https://simonwillison.net/2026/Aug/17/qwen-38-27b-scores-52/",
         "date": "2026-08-18",
-        "title": "Qwen 3.8 27B 在人工智能分析智能指数上获得52分",
+        "title": "Qwen 3.8 27B 在人工智能分析智能指数中得分52分。",
         "sourceUrl": "https://simonwillison.net/2026/Aug/17/qwen-38-27b-scores-52/"
       },
       {
         "id": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra/",
         "date": "2026-08-17",
-        "title": "我们追踪了一批珍稀书籍的货运。它最终抵达了亚马逊的人工智能训练设施。",
+        "title": "我们追踪了一批珍稀书籍的货运。最终，它抵达了亚马逊的人工智能训练设施。",
         "sourceUrl": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra/"
       },
       {
@@ -155,12 +161,6 @@
         "date": "2026-08-16",
         "title": "引用达里奥·阿莫迪的话",
         "sourceUrl": "https://simonwillison.net/2026/Aug/16/dario-amodei/"
-      },
-      {
-        "id": "https://simonwillison.net/2026/Aug/13/llm-gemini/",
-        "date": "2026-08-14",
-        "title": "llm-gemini 0.33 之前的翻译未能通过以下检查：缺少中文翻译、译文与原文相同。请再次翻译完整原文，并将所有列出的URL、账号、话题标签、数字、金额、百分比和版本号原样复制到译文中。",
-        "sourceUrl": "https://simonwillison.net/2026/Aug/13/llm-gemini/"
       },
       {
         "id": "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter/#atom-everything",

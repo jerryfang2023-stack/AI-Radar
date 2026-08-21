@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "generatedAt": "2026-08-21T02:05:12.052Z",
     "latestDataDate": "2026-08-21",
     "currentDate": "2026-08-21",
-    "eventCount": 2267,
+    "eventCount": 2285,
     "quarantinedEventCount": 20
   },
   "entity": {
@@ -25,6 +25,7 @@
     ],
     "eventIds": [
       "EV-f282ab8740ff0096",
+      "EV-026b9b4462b4adc8",
       "EV-3ebefd784ba0afd0",
       "EV-5bbc509a032b8309",
       "EV-bf46d8d6d7d6e90a",
@@ -89,6 +90,7 @@
       "EV-ebef81764102ee7c",
       "EV-f6611268f119a172",
       "EV-342799d4e68e7416",
+      "EV-9434ab7a2e818ce9",
       "EV-4b0065f780bd73bd",
       "EV-e07d82ffbad83150",
       "EV-e544a4c3fb59b9b0",
@@ -153,6 +155,7 @@
         "EV-1b92b6c835ce240c"
       ],
       "deployments": [
+        "EV-026b9b4462b4adc8",
         "EV-3ebefd784ba0afd0",
         "EV-5bbc509a032b8309",
         "EV-bf46d8d6d7d6e90a",
@@ -228,6 +231,7 @@
         "EV-7d4b4b8d4e3599d4"
       ],
       "other": [
+        "EV-9434ab7a2e818ce9",
         "EV-4b0065f780bd73bd",
         "EV-e07d82ffbad83150",
         "EV-e544a4c3fb59b9b0",
@@ -250,6 +254,22 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-026b9b4462b4adc8",
+        "dataDate": "2026-08-21",
+        "date": "2026-08-17",
+        "eventType": "hardware_deployment",
+        "eventTypeLabel": "硬件部署",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "我们追踪了一批珍本书籍的运输，最终抵达亚马逊AI智能体训练设施。",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3a7bd3e2360a3d29",
+          "EN-cbc62794911ff31b"
+        ]
+      },
       {
         "id": "EV-597a6d51533fe5d6",
         "dataDate": "2026-08-21",
@@ -285,6 +305,21 @@
           "EN-7d3194f79e645c42",
           "EN-2e27a4ab28dcad40",
           "EN-d5e00f83f15acb4a"
+        ]
+      },
+      {
+        "id": "EV-9434ab7a2e818ce9",
+        "dataDate": "2026-08-21",
+        "date": "2026-08-21",
+        "eventType": "policy_regulation",
+        "eventTypeLabel": "政策监管",
+        "eventGroup": "组织、政策与法律",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "苹果收紧 Apple Music 服务，AI 生成音乐年底将强制标注",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3a7bd3e2360a3d29"
         ]
       },
       {
@@ -3056,9 +3091,11 @@
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
         "EV-78651dfea74b4323",
+        "EV-435ad78c9ec50025",
         "EV-b33e250220b91f9c",
         "EV-4c168759119d2668",
         "EV-d93dd19a481307ec",
+        "EV-eb3545d5948aa255",
         "EV-3a4acc92731cb5ac",
         "EV-0d5a32aca724d30e",
         "EV-63948deaec161736",
@@ -3268,6 +3305,7 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
+        "EN-9c3de5f42376b1af",
         "EN-f7d9f5a90479d632",
         "EN-99d3fd0fa8fe115e",
         "EN-32e83e92d45d71f6",
@@ -3579,6 +3617,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-1ced8c8a0480d5c2",
         "EV-3873f7ea8ac5a93f",
         "EV-cd7ba52564d4091e",
         "EV-8cc00de56738c21d",
@@ -4022,6 +4061,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-877c3aec832cd410",
         "EN-59bba357145ca539",
         "EN-e3ce9cc5efa9354c",
         "EN-03c4260539e08e9c",

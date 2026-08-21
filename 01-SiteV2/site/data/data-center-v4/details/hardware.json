@@ -5,13 +5,40 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "generatedAt": "2026-08-21T02:05:12.052Z",
     "latestDataDate": "2026-08-21",
     "currentDate": "2026-08-21",
-    "eventCount": 2267,
+    "eventCount": 2285,
     "quarantinedEventCount": 20
   },
   "hardware": [
+    {
+      "id": "HW-68c81779533a3523",
+      "eventId": "EV-ac069339ca20e4c6",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "title": "英业达启用大溪AI服务器制造中心，强化全球AI制造布局",
+      "hardwareType": "server",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "Compal Electronics",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://compal.com/en-us/media/343/ren-bao-da-xi-aisi-fu-qi-zhi-zao-zhong-xin-zheng",
+      "sourceName": "compal.com",
+      "sourceDate": "2026-08-21",
+      "entityIds": [
+        "EN-c7fb6b39e587e345"
+      ]
+    },
     {
       "id": "HW-da04d48165a60f76",
       "eventId": "EV-d93dd19a481307ec",
@@ -2670,6 +2697,133 @@
       ]
     },
     {
+      "id": "HWC-8d83782689e2c877",
+      "snapshotKey": "8d83782689e2c877",
+      "snapshotId": "HWS-991957fc820af376",
+      "eventId": "EV-ac069339ca20e4c6",
+      "eventIds": [
+        "EV-ac069339ca20e4c6"
+      ],
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "title": "Compal Electronics",
+      "subject": "Compal Electronics",
+      "productNames": [],
+      "hardwareType": "server",
+      "factTypes": [
+        "capacity"
+      ],
+      "latestValues": {
+        "capacity": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-66472a2316bf9f86"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-66472a2316bf9f86",
+          "fact_type": "capacity",
+          "observed_at": "2026-08-21T00:22:06.673Z",
+          "subject_entity_id": "EN-c7fb6b39e587e345",
+          "subject_name": "Compal Electronics",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "server",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Compal Electronics (Compal; TWSE: 2324) today held the opening ceremony for its Daxi AI Server Manufacturing Center, officially launching next-generation AI server manufacturing capacity.",
+          "event_refs": [
+            "EV-ac069339ca20e4c6"
+          ],
+          "claim_ref": "CL-a4c1f0029071baf1",
+          "source_refs": [
+            "SA-99ad72a7b3493a7f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        }
+      ],
+      "supplyFacts": [],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://compal.com/en-us/media/343/ren-bao-da-xi-aisi-fu-qi-zhi-zao-zhong-xin-zheng",
+      "entityIds": [
+        "EN-c7fb6b39e587e345"
+      ]
+    },
+    {
+      "id": "HWC-837dfbd90183d511",
+      "snapshotKey": "837dfbd90183d511",
+      "snapshotId": "HWS-9ac7fd405eedd5ec",
+      "eventId": "EV-435ad78c9ec50025",
+      "eventIds": [
+        "EV-435ad78c9ec50025"
+      ],
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "title": "GEN-1.5",
+      "subject": "Generalist AI",
+      "productNames": [
+        "GEN-1.5"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-60cb0b79fc292765"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-60cb0b79fc292765",
+          "fact_type": "product",
+          "observed_at": "2026-08-20T12:35:52.000Z",
+          "subject_entity_id": "EN-9c3de5f42376b1af",
+          "subject_name": "Generalist AI",
+          "product_entity_ids": [
+            "EN-4dc02e72724c7467"
+          ],
+          "product_names": [
+            "GEN-1.5"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Robotics startup Generalist AI has unveiled GEN-1.5, an AI model that teaches robots new tasks from a single demonstration.",
+          "event_refs": [
+            "EV-435ad78c9ec50025"
+          ],
+          "claim_ref": "CL-4978552a0b7a728f",
+          "source_refs": [
+            "SA-d89041c75e4f4249"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/gen-1-5-generalist-ai-teaches-robots-new-tasks-from-a-single-demo",
+      "entityIds": [
+        "EN-9c3de5f42376b1af",
+        "EN-4dc02e72724c7467"
+      ]
+    },
+    {
       "id": "HWC-1d458fe0521f28c1",
       "snapshotKey": "1d458fe0521f28c1",
       "snapshotId": "HWS-2dbe7feeec9426e2",
@@ -2822,6 +2976,77 @@
         "EN-99d3fd0fa8fe115e",
         "EN-2ea859d02e5eb089",
         "EN-942d023fd3168d40"
+      ]
+    },
+    {
+      "id": "HWC-36adb2bcffad68b4",
+      "snapshotKey": "36adb2bcffad68b4",
+      "snapshotId": "HWS-8876d719efa3b9d7",
+      "eventId": "EV-eb3545d5948aa255",
+      "eventIds": [
+        "EV-eb3545d5948aa255"
+      ],
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "title": "NPU LLM Station / Korean AI",
+      "subject": "KT",
+      "productNames": [
+        "NPU LLM Station",
+        "Korean AI"
+      ],
+      "hardwareType": "ai_accelerator",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-dcefe3c8a4e0a412"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-dcefe3c8a4e0a412",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T05:17:03.000Z",
+          "subject_entity_id": "EN-99d3fd0fa8fe115e",
+          "subject_name": "KT",
+          "product_entity_ids": [
+            "EN-942d023fd3168d40",
+            "EN-2ea859d02e5eb089"
+          ],
+          "product_names": [
+            "NPU LLM Station",
+            "Korean AI"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KT said Wednesday it launched the KT NPU LLM Station, an integrated AI appliance built around Rebellions’ ATOM-MAX neural processing unit and KT’s proprietary Mi:dm K 2.5 Pro large language model.",
+          "event_refs": [
+            "EV-eb3545d5948aa255"
+          ],
+          "claim_ref": "CL-901f072b1497cfa2",
+          "source_refs": [
+            "SA-05fdc2e5095b6c7b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://koreatimes.co.kr/business/companies/20260819/kt-puts-korean-ai-chips-language-model-into-one-enterprise-server",
+      "entityIds": [
+        "EN-99d3fd0fa8fe115e",
+        "EN-942d023fd3168d40",
+        "EN-2ea859d02e5eb089"
       ]
     },
     {
@@ -9857,6 +10082,106 @@
       "publisher": "Artificial Intelligence News（RSS）"
     },
     {
+      "id": "EV-c6d84982982597aa",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "disputed",
+      "statusLabel": "存在争议",
+      "publicationStatus": "disputed",
+      "title": "李飞飞谈经营 AI 初创公司 World Labs：我展现出\"虎妈\"的一面",
+      "originalTitle": "",
+      "subject": "World Labs",
+      "action": "funding",
+      "object": "10 亿美元新融资",
+      "metrics": [
+        "10 亿",
+        "67.46 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-da2f0f03bc3a24f5",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "World Labs",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/992/121.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-19dd4c3a5dd5a94b",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-21",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Etched 以210亿美元估值融资7亿美元，向Jane Street交付首台机架",
+      "originalTitle": "Etched bags $700m at $21bn valuation, ships first rack to Jane Street",
+      "subject": "Etched",
+      "action": "funding",
+      "object": "$700m funding round at $21bn valuation",
+      "metrics": [
+        "$700m",
+        "$21b",
+        "$700 million",
+        "$21 billion"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-9cb45a27a2808c01"
+      ],
+      "entityNames": [
+        "Etched"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://verdict.co.uk/etched-bags-700m",
+      "publisher": "verdict.co.uk"
+    },
+    {
       "id": "EV-4af14568b1bdeb35",
       "dataDate": "2026-08-20",
       "date": "2026-08-19",
@@ -10722,48 +11047,9 @@
       "conflicts": [],
       "tags": [],
       "facets": {
-        "ai_market_category": [
-          {
-            "dimensionId": "ai_market_category",
-            "dimensionName": "AI 市场类别",
-            "id": "infrastructure_compute",
-            "name": "基础设施与算力",
-            "entityIds": [
-              "EN-0b79cf2de0ee6b8e"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-744899ec503b5a08",
-            "fundingInsightId": "FI-2616a89ee525dd60"
-          }
-        ],
-        "ai_market_subcategory": [
-          {
-            "dimensionId": "ai_market_subcategory",
-            "dimensionName": "AI 市场子类",
-            "id": "hardware_computing",
-            "name": "硬件与算力",
-            "entityIds": [
-              "EN-0b79cf2de0ee6b8e"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-19c00b42d90ea75b",
-            "fundingInsightId": "FI-2616a89ee525dd60"
-          }
-        ],
-        "ai_market_application": [
-          {
-            "dimensionId": "ai_market_application",
-            "dimensionName": "AI 市场细分",
-            "id": "computing_infrastructure",
-            "name": "计算基础设施",
-            "entityIds": [
-              "EN-0b79cf2de0ee6b8e"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-b0f983ccda86eec7",
-            "fundingInsightId": "FI-2616a89ee525dd60"
-          }
-        ],
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
           {
             "dimensionId": "product_form",
@@ -10773,78 +11059,16 @@
             "entityIds": [
               "EN-0b79cf2de0ee6b8e"
             ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-5be5c6d0846f5ae5",
-            "fundingInsightId": "FI-2616a89ee525dd60"
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "use_case": [],
         "industry": [],
         "deployment_model": [],
-        "target_user": [
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "business_user",
-            "name": "企业用户",
-            "entityIds": [
-              "EN-0b79cf2de0ee6b8e"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-081b8368f977bbec",
-            "fundingInsightId": "FI-2616a89ee525dd60"
-          },
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "developer",
-            "name": "开发者",
-            "entityIds": [
-              "EN-0b79cf2de0ee6b8e"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-4f0e7c73b03db9ed",
-            "fundingInsightId": "FI-2616a89ee525dd60"
-          }
-        ]
+        "target_user": []
       },
       "classifications": [
-        {
-          "dimensionId": "ai_market_application",
-          "dimensionName": "AI 市场细分",
-          "id": "computing_infrastructure",
-          "name": "计算基础设施",
-          "entityIds": [
-            "EN-0b79cf2de0ee6b8e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-b0f983ccda86eec7",
-          "fundingInsightId": "FI-2616a89ee525dd60"
-        },
-        {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "infrastructure_compute",
-          "name": "基础设施与算力",
-          "entityIds": [
-            "EN-0b79cf2de0ee6b8e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-744899ec503b5a08",
-          "fundingInsightId": "FI-2616a89ee525dd60"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "hardware_computing",
-          "name": "硬件与算力",
-          "entityIds": [
-            "EN-0b79cf2de0ee6b8e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-19c00b42d90ea75b",
-          "fundingInsightId": "FI-2616a89ee525dd60"
-        },
         {
           "dimensionId": "product_form",
           "dimensionName": "产品形态",
@@ -10853,73 +11077,12 @@
           "entityIds": [
             "EN-0b79cf2de0ee6b8e"
           ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-5be5c6d0846f5ae5",
-          "fundingInsightId": "FI-2616a89ee525dd60"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "business_user",
-          "name": "企业用户",
-          "entityIds": [
-            "EN-0b79cf2de0ee6b8e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-081b8368f977bbec",
-          "fundingInsightId": "FI-2616a89ee525dd60"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "developer",
-          "name": "开发者",
-          "entityIds": [
-            "EN-0b79cf2de0ee6b8e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-4f0e7c73b03db9ed",
-          "fundingInsightId": "FI-2616a89ee525dd60"
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
         {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "infrastructure_compute",
-          "name": "基础设施与算力",
-          "entityIds": [
-            "EN-0b79cf2de0ee6b8e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-744899ec503b5a08",
-          "fundingInsightId": "FI-2616a89ee525dd60"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "hardware_computing",
-          "name": "硬件与算力",
-          "entityIds": [
-            "EN-0b79cf2de0ee6b8e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-19c00b42d90ea75b",
-          "fundingInsightId": "FI-2616a89ee525dd60"
-        },
-        {
-          "dimensionId": "ai_market_application",
-          "dimensionName": "AI 市场细分",
-          "id": "computing_infrastructure",
-          "name": "计算基础设施",
-          "entityIds": [
-            "EN-0b79cf2de0ee6b8e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-b0f983ccda86eec7",
-          "fundingInsightId": "FI-2616a89ee525dd60"
-        },
-        {
           "dimensionId": "product_form",
           "dimensionName": "产品形态",
           "id": "compute_cloud_service",
@@ -10927,33 +11090,8 @@
           "entityIds": [
             "EN-0b79cf2de0ee6b8e"
           ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-5be5c6d0846f5ae5",
-          "fundingInsightId": "FI-2616a89ee525dd60"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "business_user",
-          "name": "企业用户",
-          "entityIds": [
-            "EN-0b79cf2de0ee6b8e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-081b8368f977bbec",
-          "fundingInsightId": "FI-2616a89ee525dd60"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "developer",
-          "name": "开发者",
-          "entityIds": [
-            "EN-0b79cf2de0ee6b8e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-4f0e7c73b03db9ed",
-          "fundingInsightId": "FI-2616a89ee525dd60"
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -127225,6 +127363,122 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-ac069339ca20e4c6",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "updatedDate": "2026-08-21",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "英业达启用大溪AI服务器制造中心，强化全球AI制造布局",
+      "originalTitle": "Compal Opens Daxi AI Server Manufacturing Center, Strengthening Its Global AI Manufacturing Footprint",
+      "subject": "Compal Electronics",
+      "action": "hardware_deployment",
+      "object": "Daxi AI Server Manufacturing Center",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-c7fb6b39e587e345"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-c7fb6b39e587e345"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-c7fb6b39e587e345"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-c7fb6b39e587e345"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-c7fb6b39e587e345"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-c7fb6b39e587e345"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c7fb6b39e587e345"
+      ],
+      "entityNames": [
+        "Compal Electronics"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://compal.com/en-us/media/343/ren-bao-da-xi-aisi-fu-qi-zhi-zao-zhong-xin-zheng",
+      "publisher": "compal.com"
+    },
+    {
       "id": "EV-be76a1e5ed2b6cf5",
       "dataDate": "2026-08-21",
       "date": "2026-08-20",
@@ -127473,6 +127727,54 @@
       "publisher": "op.europa.eu"
     },
     {
+      "id": "EV-2a787eb1a544462d",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-21",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "美国陆军授予Raft 9900万美元企业合同，加速数据和AI能力交付",
+      "originalTitle": "U.S. Army Awards Raft $99M Enterprise Contract to Accelerate Delivery of Data and AI Capabilities",
+      "subject": "U.S. Army Contracting Command",
+      "action": "procurement_contract",
+      "object": "Raft",
+      "metrics": [
+        "$99 million"
+      ],
+      "locations": [
+        "U.S."
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-12c0b2941322a443"
+      ],
+      "entityNames": [
+        "U.S. Army Contracting Command"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://prnewswire.com/news-releases/us-army-awards-raft-99m-enterprise-contract-to-accelerate-delivery-of-data-and-ai-capabilities-302855011.html",
+      "publisher": "prnewswire.com"
+    },
+    {
       "id": "EV-9fa7757568f0524e",
       "dataDate": "2026-08-19",
       "date": "2026-08-19",
@@ -127670,10 +127972,56 @@
       "publisher": "zenml.io"
     },
     {
-      "id": "EV-b6789508a1887fd4",
-      "dataDate": "2026-08-20",
+      "id": "EV-026b9b4462b4adc8",
+      "dataDate": "2026-08-21",
       "date": "2026-08-17",
-      "updatedDate": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "我们追踪了一批珍本书籍的运输，最终抵达亚马逊AI智能体训练设施。",
+      "originalTitle": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility",
+      "subject": "404 Media",
+      "action": "hardware_deployment",
+      "object": "Apple AirTag",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-3a7bd3e2360a3d29",
+        "EN-cbc62794911ff31b"
+      ],
+      "entityNames": [
+        "Apple",
+        "Amazon"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra",
+      "publisher": "Simon Willison's Blog"
+    },
+    {
+      "id": "EV-b6789508a1887fd4",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-17",
+      "updatedDate": "2026-08-21",
       "eventType": "procurement_contract",
       "eventTypeLabel": "采购合同",
       "eventGroup": "商业合作",
@@ -127712,6 +128060,50 @@
       "products": [],
       "sourceUrl": "https://einpresswire.com/article/934565825/darwin-ai-announces-the-nation-s-first-bulk-purchase-agreement-for-ai-governance-through-the-state-of-texas",
       "publisher": "einpresswire.com"
+    },
+    {
+      "id": "EV-e3a282c070969a55",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-17",
+      "updatedDate": "2026-08-21",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Darwin AI宣布与德克萨斯州达成全国首份AI治理批量采购协议",
+      "originalTitle": "Darwin AI | Darwin AI Announces the Nation’s First Bulk Purchase Agreement for AI Governance Through the State of Texas",
+      "subject": "Darwin AI",
+      "action": "procurement_contract",
+      "object": "Bulk Purchase Agreement BP2026-0015",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-b45fc2bf83bced68"
+      ],
+      "entityNames": [
+        "Darwin AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://darwingov.com/post/darwin-ai-announces-the-nations-first-bulk-purchase-agreement-for-ai-governance-through-the-state-of-texas",
+      "publisher": "darwingov.com"
     },
     {
       "id": "EV-3ebefd784ba0afd0",
@@ -147801,6 +148193,54 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-b8206195828dc573",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-17",
+      "updatedDate": "2026-08-21",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "通过Gemini和Pixel更贴近比赛",
+      "originalTitle": "Get closer to the game with Gemini and Pixel",
+      "subject": "Gemini and Pixel",
+      "action": "partnership",
+      "object": "Arsenal FC, FC Barcelona, FC Bayern München, Liverpool FC, and Paris Saint-Germain",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-236a21ca81b0f5ca",
+        "EN-5d72436256ada538",
+        "EN-3f8d7379e2f0f7d0"
+      ],
+      "entityNames": [
+        "Gemini and Pixel",
+        "Gemini",
+        "Pixel"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships",
+      "publisher": "Google AI Blog"
+    },
+    {
       "id": "EV-a69c83bcdb90c823",
       "dataDate": "2026-08-20",
       "date": "2026-08-17",
@@ -147893,54 +148333,6 @@
       "products": [],
       "sourceUrl": "https://blogs.nvidia.com/blog/securing-the-infrastructure-of-intelligence",
       "publisher": "NVIDIA Blog（RSS）"
-    },
-    {
-      "id": "EV-b8206195828dc573",
-      "dataDate": "2026-08-18",
-      "date": "2026-08-17",
-      "updatedDate": "2026-08-18",
-      "eventType": "partnership",
-      "eventTypeLabel": "合作",
-      "eventGroup": "商业合作",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "通过Gemini和Pixel更贴近比赛",
-      "originalTitle": "Get closer to the game with Gemini and Pixel",
-      "subject": "Gemini and Pixel",
-      "action": "partnership",
-      "object": "Arsenal FC, FC Barcelona, FC Bayern München, Liverpool FC, and Paris Saint-Germain",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-236a21ca81b0f5ca",
-        "EN-5d72436256ada538",
-        "EN-3f8d7379e2f0f7d0"
-      ],
-      "entityNames": [
-        "Gemini and Pixel",
-        "Gemini",
-        "Pixel"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships",
-      "publisher": "Google AI Blog"
     },
     {
       "id": "EV-b8686b4f41d1aa67",
@@ -160989,6 +161381,71 @@
       "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
     },
     {
+      "id": "EV-8232ad0075a77b7a",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "updatedDate": "2026-08-21",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "GitHub 更新日志：06/2026",
+      "originalTitle": "06/2026 - GitHub Changelog",
+      "subject": "Claude Sonnet 5",
+      "action": "model_release",
+      "object": "GitHub Copilot",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-07035a20899a7cd7",
+        "EN-6d7b7fd67cb649ae"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "GitHub Copilot",
+        "GitHub Changelog"
+      ],
+      "productName": "GitHub Copilot",
+      "products": [
+        {
+          "name": "GitHub Copilot",
+          "type": "模型",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        },
+        {
+          "name": "GitHub Changelog",
+          "type": "模型",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "sourceUrl": "https://github.blog/changelog/month/06-2026",
+      "publisher": "github.blog"
+    },
+    {
       "id": "EV-baf1a4c3db620d90",
       "dataDate": "2026-08-21",
       "date": "2026-08-21",
@@ -161147,6 +161604,88 @@
       "publisher": "Claude Code：GitHub Releases（RSS）"
     },
     {
+      "id": "EV-1ced8c8a0480d5c2",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Slack 推出协作式 vibe-coding 频道",
+      "originalTitle": "Slack is launching collaborative vibe-coding channels",
+      "subject": "Slack",
+      "action": "product_release",
+      "object": "Slack Code",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-877c3aec832cd410"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-877c3aec832cd410"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-877c3aec832cd410"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-877c3aec832cd410",
+        "EN-aff27dad1577fdc0"
+      ],
+      "entityNames": [
+        "Slack",
+        "Slack Code"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/tech/982628/slack-code-vibe-coding-channels-launch",
+      "publisher": "The Verge AI"
+    },
+    {
       "id": "EV-3873f7ea8ac5a93f",
       "dataDate": "2026-08-21",
       "date": "2026-08-20",
@@ -161296,6 +161835,245 @@
       ],
       "sourceUrl": "https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users",
       "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-3e7db5b8d976bf0e",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "OpenAI 推出 Private Safety Processing 安全系统，可在不存储客户数据的情况下捕捉滥用行为",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "推出",
+      "object": "Private Safety Processing 安全系统，可在不存储客户数据的情况下捕捉滥用行为",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-cb3168ac65600e46"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "Private Safety Processing"
+      ],
+      "productName": "Private Safety Processing",
+      "products": [
+        {
+          "name": "Private Safety Processing",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/openai-builds-safety-system-that-catches-misuse-without-storing-customer-data",
+      "publisher": "The Decoder：AI News（RSS）"
+    },
+    {
+      "id": "EV-435ad78c9ec50025",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "GEN-1.5：通用型AI智能体通过单次演示教会机器人新任务",
+      "originalTitle": "GEN-1.5: Generalist AI teaches robots new tasks from a single demo",
+      "subject": "Generalist AI",
+      "action": "model_release",
+      "object": "GEN-1.5",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-9c3de5f42376b1af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-9c3de5f42376b1af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-9c3de5f42376b1af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-9c3de5f42376b1af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-9c3de5f42376b1af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-9c3de5f42376b1af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9c3de5f42376b1af",
+        "EN-4dc02e72724c7467"
+      ],
+      "entityNames": [
+        "Generalist AI",
+        "GEN-1.5"
+      ],
+      "productName": "GEN-1.5",
+      "products": [
+        {
+          "name": "GEN-1.5",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/gen-1-5-generalist-ai-teaches-robots-new-tasks-from-a-single-demo",
+      "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-4af183c70855ecf2",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "谷歌为出版商提供对抗AI流量损失的新方式",
+      "originalTitle": "Google gives publishers a new way to fight AI-driven traffic losses",
+      "subject": "Google",
+      "action": "product_release",
+      "object": "Preferred Sources button",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-8a3d0f3c68b5dba9",
+        "EN-c1312721bcf15205"
+      ],
+      "entityNames": [
+        "Google",
+        "Preferred Sources",
+        "AI-driven"
+      ],
+      "productName": "Preferred Sources",
+      "products": [
+        {
+          "name": "Preferred Sources",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google"
+          ]
+        },
+        {
+          "name": "AI-driven",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses",
+      "publisher": "TechCrunch AI"
     },
     {
       "id": "EV-4e815cac738fa514",
@@ -161732,6 +162510,50 @@
       ],
       "sourceUrl": "https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin",
       "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-f9ebb480a6b58b21",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "揭秘 OpenAI 的\"终极野心\"：让智能体像人类一样熟练操作电脑",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "product_release",
+      "object": "电脑操作功能",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/992/339.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-fabb3080e5263d33",
@@ -162460,6 +163282,86 @@
       "publisher": "Simon Willison's Blog"
     },
     {
+      "id": "EV-9d53b12f5f077d3b",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Meta AI 推出 Mac 应用",
+      "originalTitle": "Meta AI is getting a Mac app",
+      "subject": "Meta",
+      "action": "product_release",
+      "object": "Mac app dedicated to Meta AI chatbot",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/tech/982270/meta-ai-mac-app",
+      "publisher": "The Verge AI"
+    },
+    {
       "id": "EV-d93dd19a481307ec",
       "dataDate": "2026-08-21",
       "date": "2026-08-19",
@@ -162590,6 +163492,138 @@
       ],
       "sourceUrl": "https://techtimes.com/articles/324976/20260819/koreas-first-sovereign-ai-appliance-ships-domestic-chip-domestic-llm-one-server.htm",
       "publisher": "techtimes.com"
+    },
+    {
+      "id": "EV-eb3545d5948aa255",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "KT将韩国AI芯片与语言模型整合至一台企业服务器",
+      "originalTitle": "KT puts Korean AI chips, language model into one enterprise server - The Korea Times",
+      "subject": "KT",
+      "action": "product_release",
+      "object": "KT NPU LLM Station",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-99d3fd0fa8fe115e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-99d3fd0fa8fe115e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-99d3fd0fa8fe115e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-99d3fd0fa8fe115e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-99d3fd0fa8fe115e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-99d3fd0fa8fe115e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-99d3fd0fa8fe115e",
+        "EN-942d023fd3168d40",
+        "EN-2ea859d02e5eb089"
+      ],
+      "entityNames": [
+        "KT",
+        "NPU LLM Station",
+        "Korean AI"
+      ],
+      "productName": "NPU LLM Station",
+      "products": [
+        {
+          "name": "NPU LLM Station",
+          "type": "产品/服务",
+          "ownerNames": [
+            "KT"
+          ]
+        },
+        {
+          "name": "Korean AI",
+          "type": "产品/服务",
+          "ownerNames": [
+            "KT"
+          ]
+        }
+      ],
+      "sourceUrl": "https://koreatimes.co.kr/business/companies/20260819/kt-puts-korean-ai-chips-language-model-into-one-enterprise-server",
+      "publisher": "koreatimes.co.kr"
     },
     {
       "id": "EV-2c6707327367640f",
@@ -162843,86 +163877,6 @@
       "products": [],
       "sourceUrl": "https://qbitai.com/2026/08/475901.html",
       "publisher": "量子位"
-    },
-    {
-      "id": "EV-9d53b12f5f077d3b",
-      "dataDate": "2026-08-20",
-      "date": "2026-08-19",
-      "updatedDate": "2026-08-20",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Meta AI 推出 Mac 应用",
-      "originalTitle": "Meta AI is getting a Mac app",
-      "subject": "Meta",
-      "action": "product_release",
-      "object": "Mac app dedicated to Meta AI chatbot",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "end_user_application",
-            "name": "终端 AI 应用",
-            "entityIds": [
-              "EN-ea3bd73e2b506e00"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "end_user_application",
-          "name": "终端 AI 应用",
-          "entityIds": [
-            "EN-ea3bd73e2b506e00"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "end_user_application",
-          "name": "终端 AI 应用",
-          "entityIds": [
-            "EN-ea3bd73e2b506e00"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-ea3bd73e2b506e00"
-      ],
-      "entityNames": [
-        "Meta"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://theverge.com/tech/982270/meta-ai-mac-app",
-      "publisher": "The Verge AI"
     },
     {
       "id": "EV-b756b17219597a4e",
@@ -163311,6 +164265,65 @@
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.235",
       "publisher": "Claude Code：GitHub Releases（RSS）"
+    },
+    {
+      "id": "EV-d26a532231315278",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-18",
+      "updatedDate": "2026-08-21",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Cerebras CS-4 发布：最快 AI 再提速",
+      "originalTitle": "Introducing Cerebras CS-4: The Fastest AI Gets Faster",
+      "subject": "Cerebras",
+      "action": "hardware_product",
+      "object": "CS-4",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-77b30b8a88051252",
+        "EN-49dba228d91e7180",
+        "EN-fee3f861adafb385"
+      ],
+      "entityNames": [
+        "Cerebras",
+        "CS-4",
+        "Introducing Cerebras CS-4"
+      ],
+      "productName": "CS-4",
+      "products": [
+        {
+          "name": "CS-4",
+          "type": "AI 硬件",
+          "ownerNames": []
+        },
+        {
+          "name": "Introducing Cerebras CS-4",
+          "type": "AI 硬件",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://cerebras.ai/blog/introducing-cerebras-cs-4",
+      "publisher": "cerebras.ai"
     },
     {
       "id": "EV-05fea7a5d8b8db46",
@@ -164085,6 +165098,52 @@
       "publisher": "Claude Code：GitHub Releases（RSS）"
     },
     {
+      "id": "EV-50707b1126daba0f",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-17",
+      "updatedDate": "2026-08-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "画布如何让智能体工作流变得可见、可控且成本高效",
+      "originalTitle": "How canvases make agentic workflows visible, steerable, and cost-efficient",
+      "subject": "GitHub Copilot app",
+      "action": "product_release",
+      "object": "canvases",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-e489f95f7a3ddb71",
+        "EN-de92ba5aa95fe45e"
+      ],
+      "entityNames": [
+        "GitHub Copilot app",
+        "Site Studio"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient",
+      "publisher": "GitHub Blog AI"
+    },
+    {
       "id": "EV-47d1537c570019ff",
       "dataDate": "2026-08-20",
       "date": "2026-08-17",
@@ -164178,52 +165237,6 @@
       ],
       "sourceUrl": "https://avpress.marketminute.com/article/gnwcq-2026-8-17-glass-reintroduces-g-commerce-the-ai-powered-commerce-platform-for-the-public-sector",
       "publisher": "avpress.marketminute.com"
-    },
-    {
-      "id": "EV-50707b1126daba0f",
-      "dataDate": "2026-08-20",
-      "date": "2026-08-17",
-      "updatedDate": "2026-08-20",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "画布如何让智能体工作流变得可见、可控且成本高效",
-      "originalTitle": "How canvases make agentic workflows visible, steerable, and cost-efficient",
-      "subject": "GitHub Copilot app",
-      "action": "product_release",
-      "object": "canvases",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-e489f95f7a3ddb71",
-        "EN-de92ba5aa95fe45e"
-      ],
-      "entityNames": [
-        "GitHub Copilot app",
-        "Site Studio"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient",
-      "publisher": "GitHub Blog AI"
     },
     {
       "id": "EV-0d5a32aca724d30e",
@@ -165422,6 +166435,50 @@
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.233",
       "publisher": "Claude Code：GitHub Releases（RSS）"
+    },
+    {
+      "id": "EV-b6a57599c12b2a1d",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-14",
+      "updatedDate": "2026-08-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Ben 的会话 #2",
+      "originalTitle": "Ben's session #2",
+      "subject": "Grok Bot",
+      "action": "product_release",
+      "object": "Grok Bot",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bf5b1a77289a1fca"
+      ],
+      "entityNames": [
+        "Grok Bot"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://bensbites.com/p/bens-session-2",
+      "publisher": "Ben's Bites AI Newsletter"
     },
     {
       "id": "EV-5ede0f85a672441c",
@@ -265325,28 +266382,24 @@
       "publisher": "Simon Willison 博客"
     },
     {
-      "id": "EV-0316daa863daf685",
+      "id": "EV-9434ab7a2e818ce9",
       "dataDate": "2026-08-21",
-      "date": "2026-08-20",
+      "date": "2026-08-21",
       "updatedDate": "2026-08-21",
-      "eventType": "organization_people",
-      "eventTypeLabel": "组织与人员",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
       "eventGroup": "组织、政策与法律",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "前沿雷达 #4：中国已迎头赶上，西方AI领先优势还剩什么？",
-      "originalTitle": "Frontier Radar #4: China has caught up, so what's left of the Western AI lead?",
-      "subject": "Frontier Radar #4: China has caught up, so what's",
-      "action": "left",
-      "object": "of the Western AI lead?",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "苹果收紧 Apple Music 服务，AI 生成音乐年底将强制标注",
+      "originalTitle": "",
+      "subject": "Apple",
+      "action": "policy_regulation",
+      "object": "AI-generated music labeling requirement",
       "metrics": [],
-      "locations": [
-        "China"
-      ],
-      "missingFields": [
-        "entities"
-      ],
+      "locations": [],
+      "missingFields": [],
       "conflicts": [],
       "tags": [],
       "facets": {
@@ -265361,12 +266414,60 @@
       },
       "classifications": [],
       "displayTags": [],
-      "entityIds": [],
-      "entityNames": [],
+      "entityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "entityNames": [
+        "Apple"
+      ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://the-decoder.com/frontier-radar-4-china-has-caught-up-so-whats-left-of-the-western-ai-lead",
-      "publisher": "The Decoder AI News"
+      "sourceUrl": "https://ithome.com/0/992/428.htm",
+      "publisher": "IT之家"
+    },
+    {
+      "id": "EV-00ffb2c501a37ec8",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "security_incident",
+      "eventTypeLabel": "安全事件",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI踩了刹车。接下来呢？",
+      "originalTitle": "OpenAI hit the brakes. Now what?",
+      "subject": "OpenAI",
+      "action": "security_incident",
+      "object": "Hugging Face",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/982323/openai-hit-brakes-voluntary-pacing-ai",
+      "publisher": "The Verge AI"
     },
     {
       "id": "EV-2e45b802ea23ea02",
@@ -265421,6 +266522,52 @@
       "publisher": "TechCrunch AI"
     },
     {
+      "id": "EV-4bd11f93353ac754",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "企业AI的难点始于部署之后",
+      "originalTitle": "The hard part of enterprise AI begins after deployment",
+      "subject": "Roku",
+      "action": "financial_performance",
+      "object": "AI deployment resolves roughly half of eligible customer interactions without human intervention while generating more than $2.8 million in annual savings",
+      "metrics": [
+        "$2.8 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-db041e4c61cffeab"
+      ],
+      "entityNames": [
+        "Roku"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://nojitter.com/customer-experience/the-hard-part-of-enterprise-ai-begins-after-deployment",
+      "publisher": "nojitter.com"
+    },
+    {
       "id": "EV-c3e74686e507fef1",
       "dataDate": "2026-08-21",
       "date": "2026-08-20",
@@ -265465,6 +266612,57 @@
       "products": [],
       "sourceUrl": "https://artificialintelligence-news.com/news/ai-data-centre-regulation-pennsylvania-template",
       "publisher": "Artificial Intelligence News（RSS）"
+    },
+    {
+      "id": "EV-da06805e06990d63",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "新数据显示，OpenAI在企业用户方面正迎头赶上Anthropic",
+      "originalTitle": "OpenAI is gaining on Anthropic with business users, new data indicates",
+      "subject": "OpenAI",
+      "action": "financial_performance",
+      "object": "Anthropic",
+      "metrics": [
+        "44%",
+        "40%"
+      ],
+      "locations": [
+        "U.S."
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates",
+      "publisher": "TechCrunch AI"
     },
     {
       "id": "EV-0c00a6c681f22b98",
@@ -265988,6 +267186,50 @@
       "publisher": "cac.gov.cn"
     },
     {
+      "id": "EV-f0c42dbaad94762a",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-21",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "partial",
+      "title": "VentureBeat 任命 Rob Strechay 为首位首席分析师，扩大企业 AI 研究布局",
+      "originalTitle": "VentureBeat names Rob Strechay as its first Lead Analyst, expanding its enterprise AI research push",
+      "subject": "Rob Strechay",
+      "action": "organization_people",
+      "object": "VentureBeat",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-6d02a4246029ad20"
+      ],
+      "entityNames": [
+        "Rob Strechay"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://venturebeat.com/ai/venturebeat-names-rob-strechay-as-its-first-lead-analyst-expanding-its-enterprise-ai-research-push",
+      "publisher": "VentureBeat AI"
+    },
+    {
       "id": "EV-0263827d2d81f641",
       "dataDate": "2026-08-20",
       "date": "2026-08-19",
@@ -266179,54 +267421,10 @@
       "publisher": "IT之家（RSS）"
     },
     {
-      "id": "EV-00ffb2c501a37ec8",
-      "dataDate": "2026-08-20",
-      "date": "2026-08-18",
-      "updatedDate": "2026-08-20",
-      "eventType": "security_incident",
-      "eventTypeLabel": "安全事件",
-      "eventGroup": "组织、政策与法律",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "OpenAI公布新安全变更，其AI曾入侵Hugging Face",
-      "originalTitle": "OpenAI lays out new security changes after its AI hacked Hugging Face",
-      "subject": "OpenAI",
-      "action": "security_incident",
-      "object": "Hugging Face",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-7d3194f79e645c42"
-      ],
-      "entityNames": [
-        "OpenAI"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack",
-      "publisher": "The Verge AI"
-    },
-    {
       "id": "EV-cc9d9706f9b6c597",
-      "dataDate": "2026-08-20",
+      "dataDate": "2026-08-21",
       "date": "2026-08-18",
-      "updatedDate": "2026-08-20",
+      "updatedDate": "2026-08-21",
       "eventType": "certification_compliance",
       "eventTypeLabel": "认证合规",
       "eventGroup": "组织、政策与法律",
@@ -266265,7 +267463,7 @@
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://advantech.com/en-eu/resources/news/advantech-and-camera-ecosystem-partners-complete-validation-on-nvidia-jetpack-72-for-advanced-vision-ai-deployment",
+      "sourceUrl": "https://advantech.com/en-au/resources/news/advantech-and-camera-ecosystem-partners-complete-validation-on-nvidia-jetpack-72-for-advanced-vision-ai-deployment",
       "publisher": "advantech.com"
     },
     {

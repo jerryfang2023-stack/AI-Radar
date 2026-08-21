@@ -333,6 +333,14 @@ function supplementalClaimEntities(claimsById) {
   ]).slice(0, 6);
   const rows = [
     {
+      entity_id: "EN-99d3fd0fa8fe115e",
+      name: "KT",
+      catalog_type: "company",
+      company_names: [],
+      claim_refs: ["CL-ff571bc346130784", "CL-f2b81248c692db79"],
+      rationale: "accepted Claims 精确写明 Korea Telecom（KT）发布企业级主权 AI 设备，确认其为公司实体。"
+    },
+    {
       entity_id: "EN-ade7ba309eb7a3bf",
       name: "Kē",
       company_names: [],

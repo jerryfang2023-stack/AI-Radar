@@ -5,13 +5,40 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "generatedAt": "2026-08-21T02:05:12.052Z",
     "latestDataDate": "2026-08-21",
     "currentDate": "2026-08-21",
-    "eventCount": 2267,
+    "eventCount": 2285,
     "quarantinedEventCount": 20
   },
   "hardware": [
+    {
+      "id": "HW-68c81779533a3523",
+      "eventId": "EV-ac069339ca20e4c6",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "title": "英业达启用大溪AI服务器制造中心，强化全球AI制造布局",
+      "hardwareType": "server",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "Compal Electronics",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://compal.com/en-us/media/343/ren-bao-da-xi-aisi-fu-qi-zhi-zao-zhong-xin-zheng",
+      "sourceName": "compal.com",
+      "sourceDate": "2026-08-21",
+      "entityIds": [
+        "EN-c7fb6b39e587e345"
+      ]
+    },
     {
       "id": "HW-da04d48165a60f76",
       "eventId": "EV-d93dd19a481307ec",
@@ -2670,6 +2697,133 @@
       ]
     },
     {
+      "id": "HWC-8d83782689e2c877",
+      "snapshotKey": "8d83782689e2c877",
+      "snapshotId": "HWS-991957fc820af376",
+      "eventId": "EV-ac069339ca20e4c6",
+      "eventIds": [
+        "EV-ac069339ca20e4c6"
+      ],
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "title": "Compal Electronics",
+      "subject": "Compal Electronics",
+      "productNames": [],
+      "hardwareType": "server",
+      "factTypes": [
+        "capacity"
+      ],
+      "latestValues": {
+        "capacity": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-66472a2316bf9f86"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-66472a2316bf9f86",
+          "fact_type": "capacity",
+          "observed_at": "2026-08-21T00:22:06.673Z",
+          "subject_entity_id": "EN-c7fb6b39e587e345",
+          "subject_name": "Compal Electronics",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "server",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Compal Electronics (Compal; TWSE: 2324) today held the opening ceremony for its Daxi AI Server Manufacturing Center, officially launching next-generation AI server manufacturing capacity.",
+          "event_refs": [
+            "EV-ac069339ca20e4c6"
+          ],
+          "claim_ref": "CL-a4c1f0029071baf1",
+          "source_refs": [
+            "SA-99ad72a7b3493a7f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        }
+      ],
+      "supplyFacts": [],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://compal.com/en-us/media/343/ren-bao-da-xi-aisi-fu-qi-zhi-zao-zhong-xin-zheng",
+      "entityIds": [
+        "EN-c7fb6b39e587e345"
+      ]
+    },
+    {
+      "id": "HWC-837dfbd90183d511",
+      "snapshotKey": "837dfbd90183d511",
+      "snapshotId": "HWS-9ac7fd405eedd5ec",
+      "eventId": "EV-435ad78c9ec50025",
+      "eventIds": [
+        "EV-435ad78c9ec50025"
+      ],
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "title": "GEN-1.5",
+      "subject": "Generalist AI",
+      "productNames": [
+        "GEN-1.5"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-60cb0b79fc292765"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-60cb0b79fc292765",
+          "fact_type": "product",
+          "observed_at": "2026-08-20T12:35:52.000Z",
+          "subject_entity_id": "EN-9c3de5f42376b1af",
+          "subject_name": "Generalist AI",
+          "product_entity_ids": [
+            "EN-4dc02e72724c7467"
+          ],
+          "product_names": [
+            "GEN-1.5"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Robotics startup Generalist AI has unveiled GEN-1.5, an AI model that teaches robots new tasks from a single demonstration.",
+          "event_refs": [
+            "EV-435ad78c9ec50025"
+          ],
+          "claim_ref": "CL-4978552a0b7a728f",
+          "source_refs": [
+            "SA-d89041c75e4f4249"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/gen-1-5-generalist-ai-teaches-robots-new-tasks-from-a-single-demo",
+      "entityIds": [
+        "EN-9c3de5f42376b1af",
+        "EN-4dc02e72724c7467"
+      ]
+    },
+    {
       "id": "HWC-1d458fe0521f28c1",
       "snapshotKey": "1d458fe0521f28c1",
       "snapshotId": "HWS-2dbe7feeec9426e2",
@@ -2822,6 +2976,77 @@
         "EN-99d3fd0fa8fe115e",
         "EN-2ea859d02e5eb089",
         "EN-942d023fd3168d40"
+      ]
+    },
+    {
+      "id": "HWC-36adb2bcffad68b4",
+      "snapshotKey": "36adb2bcffad68b4",
+      "snapshotId": "HWS-8876d719efa3b9d7",
+      "eventId": "EV-eb3545d5948aa255",
+      "eventIds": [
+        "EV-eb3545d5948aa255"
+      ],
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "title": "NPU LLM Station / Korean AI",
+      "subject": "KT",
+      "productNames": [
+        "NPU LLM Station",
+        "Korean AI"
+      ],
+      "hardwareType": "ai_accelerator",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-dcefe3c8a4e0a412"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-dcefe3c8a4e0a412",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T05:17:03.000Z",
+          "subject_entity_id": "EN-99d3fd0fa8fe115e",
+          "subject_name": "KT",
+          "product_entity_ids": [
+            "EN-942d023fd3168d40",
+            "EN-2ea859d02e5eb089"
+          ],
+          "product_names": [
+            "NPU LLM Station",
+            "Korean AI"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KT said Wednesday it launched the KT NPU LLM Station, an integrated AI appliance built around Rebellions’ ATOM-MAX neural processing unit and KT’s proprietary Mi:dm K 2.5 Pro large language model.",
+          "event_refs": [
+            "EV-eb3545d5948aa255"
+          ],
+          "claim_ref": "CL-901f072b1497cfa2",
+          "source_refs": [
+            "SA-05fdc2e5095b6c7b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://koreatimes.co.kr/business/companies/20260819/kt-puts-korean-ai-chips-language-model-into-one-enterprise-server",
+      "entityIds": [
+        "EN-99d3fd0fa8fe115e",
+        "EN-942d023fd3168d40",
+        "EN-2ea859d02e5eb089"
       ]
     },
     {
@@ -9741,20 +9966,20 @@
       ],
       "raw_documents": 19,
       "original_sources": 18,
-      "valid_claims": 16,
-      "observations": 8,
-      "canonical_events": 4,
+      "valid_claims": 20,
+      "observations": 11,
+      "canonical_events": 8,
       "blocker_counts": {
-        "no_source_bounded_event": 7,
         "source_outside_daily_window": 4,
         "rumor_requires_primary_confirmation": 2,
+        "no_source_bounded_event": 3,
         "raw_source_quality_block": 2
       },
       "rates": {
         "original_source_rate": 0.9473684210526315,
-        "valid_claim_rate": 0.8421052631578947,
-        "observation_rate": 0.5,
-        "event_conversion_rate": 0.25
+        "valid_claim_rate": 1,
+        "observation_rate": 0.55,
+        "event_conversion_rate": 0.4
       },
       "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/monitoring-funnel.json"
     }
