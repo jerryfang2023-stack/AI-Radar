@@ -5,13 +5,45 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-20T01:52:33.847Z",
-    "latestDataDate": "2026-08-20",
-    "currentDate": "2026-08-20",
-    "eventCount": 2246,
+    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "latestDataDate": "2026-08-21",
+    "currentDate": "2026-08-21",
+    "eventCount": 2267,
     "quarantinedEventCount": 20
   },
   "hardware": [
+    {
+      "id": "HW-da04d48165a60f76",
+      "eventId": "EV-d93dd19a481307ec",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-19",
+      "title": "韩国首款主权 AI 一体机出货：国产芯片、国产 LLM 集成于单台服务器",
+      "hardwareType": "ai_accelerator",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "data_center",
+      "supplier": "OpenAI",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "Korea",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://techtimes.com/articles/324976/20260819/koreas-first-sovereign-ai-appliance-ships-domestic-chip-domestic-llm-one-server.htm",
+      "sourceName": "techtimes.com",
+      "sourceDate": "2026-08-19",
+      "entityIds": [
+        "EN-99d3fd0fa8fe115e",
+        "EN-7d3194f79e645c42",
+        "EN-bbdefa2950f49882",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3c8fb6fa445060",
+        "EN-b563f0c46d6f78f8"
+      ]
+    },
     {
       "id": "HW-bc7449cedae06b7a",
       "eventId": "EV-2c6707327367640f",
@@ -51,38 +83,6 @@
         "EN-77b30b8a88051252",
         "EN-49dba228d91e7180",
         "EN-6eb8882ab15df1c2"
-      ]
-    },
-    {
-      "id": "HW-da04d48165a60f76",
-      "eventId": "EV-d93dd19a481307ec",
-      "dataDate": "2026-08-20",
-      "date": "2026-08-19",
-      "title": "韩国首款主权 AI 一体机出货：国产芯片、国产 LLM 集成于单台服务器",
-      "hardwareType": "ai_accelerator",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "computeLayer": "data_center",
-      "supplier": "OpenAI",
-      "customer": "未披露",
-      "processNode": "未披露",
-      "capacity": "未披露",
-      "capacityUnit": "",
-      "site": "未披露",
-      "region": "Korea",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [],
-      "sourceUrl": "https://techtimes.com/articles/324976/20260819/koreas-first-sovereign-ai-appliance-ships-domestic-chip-domestic-llm-one-server.htm",
-      "sourceName": "techtimes.com",
-      "sourceDate": "2026-08-19",
-      "entityIds": [
-        "EN-99d3fd0fa8fe115e",
-        "EN-7d3194f79e645c42",
-        "EN-bbdefa2950f49882",
-        "EN-c70eca6b0f88f44d",
-        "EN-7d3c8fb6fa445060",
-        "EN-b563f0c46d6f78f8"
       ]
     },
     {
@@ -2455,13 +2455,13 @@
     {
       "id": "HWC-acba324ff85c02ba",
       "snapshotKey": "acba324ff85c02ba",
-      "snapshotId": "HWS-b3565af1c598b895",
+      "snapshotId": "HWS-87548be385f8bfee",
       "eventId": "EV-d93dd19a481307ec",
       "eventIds": [
         "EV-d93dd19a481307ec"
       ],
-      "dataDate": "2026-08-20",
-      "date": "2026-08-20",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
       "title": "AI Appliance Ships / First Sovereign AI Appliance",
       "subject": "KT",
       "productNames": [
@@ -2476,18 +2476,28 @@
         "product": {
           "metric_value": "32",
           "unit": "billion",
-          "fact_ref": "HWF-470d16a40a09ae84"
+          "fact_ref": "HWF-5ebb3aa29cef2f23"
         }
       },
       "factCount": 2,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-21",
+          "previousDate": "2026-08-20",
+          "snapshotId": "HWS-87548be385f8bfee",
+          "previousSnapshotId": "HWS-b3565af1c598b895",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-20",
-          "hardware_fact_id": "HWF-48847d85045bd8e8",
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-f38c695b37b07d50",
           "fact_type": "product",
           "observed_at": "2026-08-19T15:50:41.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -2507,15 +2517,15 @@
           "event_refs": [
             "EV-d93dd19a481307ec"
           ],
-          "claim_ref": "CL-ff571bc346130784",
+          "claim_ref": "CL-65fd81364cb539f2",
           "source_refs": [
             "SA-30a50d9be011e4c2"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-20/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-20",
-          "hardware_fact_id": "HWF-470d16a40a09ae84",
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-5ebb3aa29cef2f23",
           "fact_type": "product",
           "observed_at": "2026-08-19T15:50:41.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -2535,11 +2545,11 @@
           "event_refs": [
             "EV-d93dd19a481307ec"
           ],
-          "claim_ref": "CL-d0de952d3a38239f",
+          "claim_ref": "CL-68b2369bc3f9afde",
           "source_refs": [
             "SA-30a50d9be011e4c2"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-20/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
         }
       ],
       "capexFacts": [],
@@ -2552,6 +2562,266 @@
         "EN-c70eca6b0f88f44d",
         "EN-7d3c8fb6fa445060",
         "EN-b563f0c46d6f78f8"
+      ]
+    },
+    {
+      "id": "HWC-5ac213facc2c3cd8",
+      "snapshotKey": "5ac213facc2c3cd8",
+      "snapshotId": "HWS-f9582fecd705dc90",
+      "eventId": "EV-30585effe9134084",
+      "eventIds": [
+        "EV-30585effe9134084"
+      ],
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "title": "Asia Business Daily / Sovereign AI / Integrating Domestic Semiconductor",
+      "subject": "KT",
+      "productNames": [
+        "Asia Business Daily",
+        "Sovereign AI",
+        "Integrating Domestic Semiconductor"
+      ],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-3e0129a653706530"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-3ffd6dad21c7fd94",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T00:58:01.000Z",
+          "subject_entity_id": "EN-99d3fd0fa8fe115e",
+          "subject_name": "KT",
+          "product_entity_ids": [
+            "EN-9e7dc88eea20c796",
+            "EN-0f4929b20cd54749",
+            "EN-0ad2e7b049b11158"
+          ],
+          "product_names": [
+            "Asia Business Daily",
+            "Sovereign AI",
+            "Integrating Domestic Semiconductor"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KT Launches Enterprise 'Sovereign AI' Integrating Domestic Semiconductor and LLM",
+          "event_refs": [
+            "EV-30585effe9134084"
+          ],
+          "claim_ref": "CL-45df5bcc6da59e59",
+          "source_refs": [
+            "SA-135eabd9dc1aca18"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-3e0129a653706530",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T00:58:01.000Z",
+          "subject_entity_id": "EN-99d3fd0fa8fe115e",
+          "subject_name": "KT",
+          "product_entity_ids": [
+            "EN-9e7dc88eea20c796",
+            "EN-0f4929b20cd54749",
+            "EN-0ad2e7b049b11158"
+          ],
+          "product_names": [
+            "Asia Business Daily",
+            "Sovereign AI",
+            "Integrating Domestic Semiconductor"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "On August 19, KT announced the launch of an enterprise sovereign AI appliance that integrates a domestically developed artificial intelligence (AI) semiconductor and a large language model (LLM) within a single server.",
+          "event_refs": [
+            "EV-30585effe9134084"
+          ],
+          "claim_ref": "CL-052f1b9cc8482994",
+          "source_refs": [
+            "SA-135eabd9dc1aca18"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://asiae.co.kr/en/article/2026081909580277651",
+      "entityIds": [
+        "EN-99d3fd0fa8fe115e",
+        "EN-9e7dc88eea20c796",
+        "EN-0f4929b20cd54749",
+        "EN-0ad2e7b049b11158"
+      ]
+    },
+    {
+      "id": "HWC-1d458fe0521f28c1",
+      "snapshotKey": "1d458fe0521f28c1",
+      "snapshotId": "HWS-2dbe7feeec9426e2",
+      "eventId": "EV-4c168759119d2668",
+      "eventIds": [
+        "EV-4c168759119d2668"
+      ],
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "title": "Korean AI / NPU LLM Station",
+      "subject": "KT",
+      "productNames": [
+        "Korean AI",
+        "NPU LLM Station"
+      ],
+      "hardwareType": "ai_accelerator / semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-88e7cb22452ee2d4"
+        }
+      },
+      "factCount": 4,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-886bd0fd5e40bf55",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T00:30:44.000Z",
+          "subject_entity_id": "EN-99d3fd0fa8fe115e",
+          "subject_name": "KT",
+          "product_entity_ids": [
+            "EN-2ea859d02e5eb089",
+            "EN-942d023fd3168d40"
+          ],
+          "product_names": [
+            "Korean AI",
+            "NPU LLM Station"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KT has launched the enterprise sovereign AI appliance \"KT NPU LLM Station.\" [Photo: KT]",
+          "event_refs": [
+            "EV-4c168759119d2668"
+          ],
+          "claim_ref": "CL-d9d15b5cc41e7ea7",
+          "source_refs": [
+            "SA-d59a2f78c6134a26"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-d1dd10ca23141b16",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T00:30:44.000Z",
+          "subject_entity_id": "EN-99d3fd0fa8fe115e",
+          "subject_name": "KT",
+          "product_entity_ids": [
+            "EN-2ea859d02e5eb089",
+            "EN-942d023fd3168d40"
+          ],
+          "product_names": [
+            "Korean AI",
+            "NPU LLM Station"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KT said on Aug. 19 it has launched the enterprise sovereign AI appliance \"KT NPU LLM Station.\"",
+          "event_refs": [
+            "EV-4c168759119d2668"
+          ],
+          "claim_ref": "CL-e9f330df24e0b7c2",
+          "source_refs": [
+            "SA-d59a2f78c6134a26"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-009f4faedb11ee4c",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T00:30:44.000Z",
+          "subject_entity_id": "EN-99d3fd0fa8fe115e",
+          "subject_name": "KT",
+          "product_entity_ids": [
+            "EN-2ea859d02e5eb089",
+            "EN-942d023fd3168d40"
+          ],
+          "product_names": [
+            "Korean AI",
+            "NPU LLM Station"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KT has released an enterprise sovereign AI product that integrates a Korean-made AI chip and its own large language model (LLM) into a single server.",
+          "event_refs": [
+            "EV-4c168759119d2668"
+          ],
+          "claim_ref": "CL-d7b9dba561b48d5f",
+          "source_refs": [
+            "SA-d59a2f78c6134a26"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-88e7cb22452ee2d4",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T00:30:44.000Z",
+          "subject_entity_id": "EN-99d3fd0fa8fe115e",
+          "subject_name": "KT",
+          "product_entity_ids": [
+            "EN-2ea859d02e5eb089",
+            "EN-942d023fd3168d40"
+          ],
+          "product_names": [
+            "Korean AI",
+            "NPU LLM Station"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "The KT NPU LLM Station is an all-in-one product that runs KT's self-developed LLM \"Mi:deum K 2.5 Pro\" and an operating API platform on the neural processing unit (NPU) \"ATOM-MAX\" made by South Korean AI chip company Rebellion.",
+          "event_refs": [
+            "EV-4c168759119d2668"
+          ],
+          "claim_ref": "CL-bdb353c7641d013e",
+          "source_refs": [
+            "SA-d59a2f78c6134a26"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://digitaltoday.co.kr/en/view/94279/kt-launches-npu-llm-station-featuring-korean-ai-chip",
+      "entityIds": [
+        "EN-99d3fd0fa8fe115e",
+        "EN-2ea859d02e5eb089",
+        "EN-942d023fd3168d40"
       ]
     },
     {
@@ -3406,11 +3676,10 @@
       "specificationFacts": [],
       "capexFacts": [],
       "tags": [],
-      "sourceUrl": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud",
+      "sourceUrl": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud",
       "entityIds": [
         "EN-0b79cf2de0ee6b8e",
-        "EN-d5096fab0e92c370",
-        "EN-7cb763a5e1cf9bc7",
+        "EN-1a2290470e0aa754",
         "EN-8d4321d936320802"
       ]
     },
@@ -9460,34 +9729,34 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-08-20",
-      "funnel_id": "LF-9ee78f8bb2633ea3",
+      "data_date": "2026-08-21",
+      "funnel_id": "LF-ffc1e953c6e366c1",
       "lens": "hardware",
-      "date": "2026-08-20",
+      "date": "2026-08-21",
       "monitoring_paths": [
         "hardware_capacity_fab",
-        "hardware_capex",
+        "hardware_oem_odm",
         "hardware_product_specs",
-        "hardware_shipment_deployment",
-        "hardware_supply_agreement"
+        "hardware_shipment_deployment"
       ],
-      "raw_documents": 17,
-      "original_sources": 15,
-      "valid_claims": 11,
-      "observations": 5,
-      "canonical_events": 5,
+      "raw_documents": 19,
+      "original_sources": 18,
+      "valid_claims": 16,
+      "observations": 8,
+      "canonical_events": 4,
       "blocker_counts": {
-        "source_outside_daily_window": 8,
-        "no_source_bounded_event": 1,
-        "raw_source_quality_block": 3
+        "no_source_bounded_event": 7,
+        "source_outside_daily_window": 4,
+        "rumor_requires_primary_confirmation": 2,
+        "raw_source_quality_block": 2
       },
       "rates": {
-        "original_source_rate": 0.8823529411764706,
-        "valid_claim_rate": 0.6470588235294118,
-        "observation_rate": 0.45454545454545453,
-        "event_conversion_rate": 0.45454545454545453
+        "original_source_rate": 0.9473684210526315,
+        "valid_claim_rate": 0.8421052631578947,
+        "observation_rate": 0.5,
+        "event_conversion_rate": 0.25
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-20/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/monitoring-funnel.json"
     }
   ]
 }

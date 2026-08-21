@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-20T01:52:33.847Z",
-    "latestDataDate": "2026-08-20",
-    "currentDate": "2026-08-20",
-    "eventCount": 2246,
+    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "latestDataDate": "2026-08-21",
+    "currentDate": "2026-08-21",
+    "eventCount": 2267,
     "quarantinedEventCount": 20
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-597a6d51533fe5d6",
       "EV-05fea7a5d8b8db46",
       "EV-06e31f68974104ec",
       "EV-c57d77f629c52da2",
@@ -37,7 +38,8 @@
       "EV-f023e94a239f22f2",
       "EV-0b6992ae74184d13",
       "EV-f3e11eadfb7c6a4b",
-      "EV-519537a36355d82e"
+      "EV-519537a36355d82e",
+      "EV-2e45b802ea23ea02"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
@@ -45,8 +47,9 @@
       "EN-7d3194f79e645c42"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-08-19",
+    "lastSeen": "2026-08-21",
     "relationIds": [
+      "REL2-10ceb94d03e5bd63",
       "REL2-0dc4d04c4e728c64",
       "REL2-b77c9fa9bd90e418",
       "REL2-ddc331c7e06a63b8",
@@ -63,6 +66,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-597a6d51533fe5d6",
         "EV-05fea7a5d8b8db46",
         "EV-06e31f68974104ec",
         "EV-c57d77f629c52da2",
@@ -82,9 +86,44 @@
       ],
       "hardware": [],
       "organizationPeople": [],
-      "other": []
+      "other": [
+        "EV-2e45b802ea23ea02"
+      ]
     },
     "timeline": [
+      {
+        "id": "EV-597a6d51533fe5d6",
+        "dataDate": "2026-08-21",
+        "date": "2026-08-21",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Mac 版 ChatGPT 可控制“信息”应用，古尔曼称恐触及苹果 Siri AI 的设备优势",
+        "displayTags": [],
+        "entityIds": [
+          "EN-348a629f5ceed032",
+          "EN-7d3194f79e645c42",
+          "EN-3a7bd3e2360a3d29",
+          "EN-d1ad14d4ad57d207"
+        ]
+      },
+      {
+        "id": "EV-2e45b802ea23ea02",
+        "dataDate": "2026-08-21",
+        "date": "2026-08-20",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "研究：ChatGPT发布以来，三分之一的网页显示AI创作痕迹",
+        "displayTags": [],
+        "entityIds": [
+          "EN-d1ad14d4ad57d207"
+        ]
+      },
       {
         "id": "EV-05fea7a5d8b8db46",
         "dataDate": "2026-08-19",
@@ -504,10 +543,13 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-597a6d51533fe5d6",
+        "EV-3873f7ea8ac5a93f",
+        "EV-e3da5e799e746408",
         "EV-46cd64a76d3767f5",
-        "EV-40d88f6279d48304",
         "EV-937b855e723d6ef0",
         "EV-d93dd19a481307ec",
+        "EV-40d88f6279d48304",
         "EV-05fea7a5d8b8db46",
         "EV-06e31f68974104ec",
         "EV-1e7c9d930a2a5d8e",
@@ -758,6 +800,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-use_case-software_development",
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
@@ -778,7 +821,6 @@
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-product_form-enterprise_software_platform",
-        "TX-product_form-model",
         "TX-use_case-security_operations",
         "TX-product_form-model_api_service",
         "TX-technology-multimodal",
@@ -788,8 +830,8 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
-        "EN-916a98f0fa2a39af",
         "EN-d1ad14d4ad57d207",
+        "EN-916a98f0fa2a39af",
         "EN-8d4321d936320802",
         "EN-7839fb10a8f14c70",
         "EN-968e2d5b08687bf4",
@@ -814,10 +856,31 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-21"
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-10ceb94d03e5bd63",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d1ad14d4ad57d207",
+      "object_type": "entity",
+      "event_id": "EV-597a6d51533fe5d6",
+      "claim_refs": [
+        "CL-3c97d57319564526",
+        "CL-1038053e7e4ec1a9",
+        "CL-8415a8e99f60acc7",
+        "CL-3ee7d7e9b6a43fe1"
+      ],
+      "source_refs": [
+        "SA-e2b96af7ce645b73"
+      ],
+      "data_date": "2026-08-21",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-0dc4d04c4e728c64",
       "relationship_version": "RELATION-V2.1",

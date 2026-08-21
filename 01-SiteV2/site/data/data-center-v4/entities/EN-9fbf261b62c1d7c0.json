@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-20T01:52:33.847Z",
-    "latestDataDate": "2026-08-20",
-    "currentDate": "2026-08-20",
-    "eventCount": 2246,
+    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "latestDataDate": "2026-08-21",
+    "currentDate": "2026-08-21",
+    "eventCount": 2267,
     "quarantinedEventCount": 20
   },
   "entity": {
@@ -16,7 +16,9 @@
     "name": "Microsoft",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
-    "aliases": [],
+    "aliases": [
+      "微软"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -31,6 +33,8 @@
       "EV-88f4ee8cd57bdf42",
       "EV-44a4e92c03a31ab1",
       "EV-7585b033d4005977",
+      "EV-87c5f6dcc769999c",
+      "EV-be76a1e5ed2b6cf5",
       "EV-e46756260827cd86",
       "EV-e65f17f35ef7f1a3",
       "EV-57944eebac69d510",
@@ -158,24 +162,34 @@
       "TX-technology-distillation"
     ],
     "relatedEntityIds": [
+      "EN-688f8db7018da7d4",
+      "EN-827b607311e6593e",
+      "EN-068e7ccb7d4b07a6",
       "EN-8652f6cd9088f1fa",
+      "EN-597d8c4afa5fe3d6",
       "EN-d2f4e09cb01afa3c",
       "EN-7d3194f79e645c42",
       "EN-38945a66b4806b11",
       "EN-c141d2237427f30d",
-      "EN-8d4321d936320802"
+      "EN-8d4321d936320802",
+      "EN-10fce287b4b1464c"
     ],
     "firstSeen": "2026-02-13",
-    "lastSeen": "2026-08-17",
+    "lastSeen": "2026-08-21",
     "relationIds": [
+      "REL2-62f415d53b9e1307",
+      "REL2-dceee7ada64357c1",
+      "REL2-899fe78a63eda569",
       "REL2-4410cf5eef104c6e",
+      "REL2-a2d037d3ca0eff3e",
       "REL2-8dc67631418aa4d4",
       "REL2-9fd72463ce6686f3",
       "REL2-c2250eeea2122198",
       "REL2-fdbf7b1aedf4d9ef",
       "REL2-9f6eb62bdd6f6a31",
       "REL2-10ba411040225060",
-      "REL2-e9ef6e697ef06f93"
+      "REL2-e9ef6e697ef06f93",
+      "REL2-9795f8e6814470a6"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -192,6 +206,8 @@
         "EV-44a4e92c03a31ab1"
       ],
       "deployments": [
+        "EV-87c5f6dcc769999c",
+        "EV-be76a1e5ed2b6cf5",
         "EV-e46756260827cd86",
         "EV-e65f17f35ef7f1a3",
         "EV-57944eebac69d510",
@@ -313,6 +329,72 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-87c5f6dcc769999c",
+        "dataDate": "2026-08-21",
+        "date": "2026-08-21",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "云电脑 Windows 365 上线 5 周年，微软规划深度整合 AI 智能体体验",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-9fbf261b62c1d7c0"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-9fbf261b62c1d7c0"
+        ]
+      },
+      {
+        "id": "EV-be76a1e5ed2b6cf5",
+        "dataDate": "2026-08-21",
+        "date": "2026-08-20",
+        "eventType": "procurement_contract",
+        "eventTypeLabel": "采购合同",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Meta 成微软最大 AI 客户之一：年采购额达数亿美元，每周消耗数万亿词元",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "cloud",
+            "name": "云端",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-ea3bd73e2b506e00",
+          "EN-9fbf261b62c1d7c0"
+        ]
+      },
       {
         "id": "EV-e46756260827cd86",
         "dataDate": "2026-08-17",
@@ -4304,6 +4386,69 @@
   },
   "relatedEntities": [
     {
+      "id": "EN-688f8db7018da7d4",
+      "name": "MAI-Voice-2-Flash",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-82ae0ea3bfe336a1"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "firstSeen": "2026-07-24",
+      "lastSeen": "2026-07-24"
+    },
+    {
+      "id": "EN-827b607311e6593e",
+      "name": "MAI-Image-2.5-Pro",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-82ae0ea3bfe336a1"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "firstSeen": "2026-07-24",
+      "lastSeen": "2026-07-24"
+    },
+    {
+      "id": "EN-068e7ccb7d4b07a6",
+      "name": "Copilot",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e1e30a2a4a5232c6"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "firstSeen": "2026-07-22",
+      "lastSeen": "2026-07-23"
+    },
+    {
       "id": "EN-8652f6cd9088f1fa",
       "name": "Stellantis",
       "entityType": "organization_candidate",
@@ -4326,6 +4471,29 @@
       ],
       "firstSeen": "2025-10-01",
       "lastSeen": "2026-07-30"
+    },
+    {
+      "id": "EN-597d8c4afa5fe3d6",
+      "name": "Visual Studio Code 1.129",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-7c899d5decafc42f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "firstSeen": "2026-07-16",
+      "lastSeen": "2026-07-17"
     },
     {
       "id": "EN-d2f4e09cb01afa3c",
@@ -4453,10 +4621,13 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-597a6d51533fe5d6",
+        "EV-3873f7ea8ac5a93f",
+        "EV-e3da5e799e746408",
         "EV-46cd64a76d3767f5",
-        "EV-40d88f6279d48304",
         "EV-937b855e723d6ef0",
         "EV-d93dd19a481307ec",
+        "EV-40d88f6279d48304",
         "EV-05fea7a5d8b8db46",
         "EV-06e31f68974104ec",
         "EV-1e7c9d930a2a5d8e",
@@ -4707,6 +4878,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-use_case-software_development",
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
@@ -4727,7 +4899,6 @@
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-product_form-enterprise_software_platform",
-        "TX-product_form-model",
         "TX-use_case-security_operations",
         "TX-product_form-model_api_service",
         "TX-technology-multimodal",
@@ -4737,8 +4908,8 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
-        "EN-916a98f0fa2a39af",
         "EN-d1ad14d4ad57d207",
+        "EN-916a98f0fa2a39af",
         "EN-8d4321d936320802",
         "EN-7839fb10a8f14c70",
         "EN-968e2d5b08687bf4",
@@ -4763,7 +4934,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-21"
     },
     {
       "id": "EN-38945a66b4806b11",
@@ -4896,6 +5067,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-78651dfea74b4323",
         "EV-615fbb4de33fad2d",
         "EV-ea2598236eae915f",
         "EV-e3beca344d2321a9",
@@ -4998,6 +5170,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
@@ -5032,7 +5205,6 @@
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-deployment_model-cloud",
-        "TX-product_form-model",
         "TX-use_case-security_operations",
         "TX-technology-embodied_ai",
         "TX-ai_market_subcategory-development_deployment",
@@ -5071,10 +5243,93 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-21"
+    },
+    {
+      "id": "EN-10fce287b4b1464c",
+      "name": "Fara1.5",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a4f052325d0ef230"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-05-23"
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-62f415d53b9e1307",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9fbf261b62c1d7c0",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-688f8db7018da7d4",
+      "object_type": "entity",
+      "event_id": "EV-82ae0ea3bfe336a1",
+      "claim_refs": [
+        "CL-5fced5cf18afc959",
+        "CL-7c22f66cabb9a37c",
+        "CL-d5a4e0b10c930ed2"
+      ],
+      "source_refs": [
+        "SA-f35e060050d33489"
+      ],
+      "data_date": "2026-07-24",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-dceee7ada64357c1",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9fbf261b62c1d7c0",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-827b607311e6593e",
+      "object_type": "entity",
+      "event_id": "EV-82ae0ea3bfe336a1",
+      "claim_refs": [
+        "CL-5fced5cf18afc959",
+        "CL-9fea9adc5b3b6d08",
+        "CL-7c22f66cabb9a37c"
+      ],
+      "source_refs": [
+        "SA-f35e060050d33489"
+      ],
+      "data_date": "2026-07-24",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-899fe78a63eda569",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9fbf261b62c1d7c0",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-068e7ccb7d4b07a6",
+      "object_type": "entity",
+      "event_id": "EV-e1e30a2a4a5232c6",
+      "claim_refs": [
+        "CL-34fddab81951af35",
+        "CL-8b238746e8f2c8ba",
+        "CL-3c62d52890307500"
+      ],
+      "source_refs": [
+        "SA-c75b1e326457605e"
+      ],
+      "data_date": "2026-07-23",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-4410cf5eef104c6e",
       "relationship_version": "RELATION-V2.1",
@@ -5092,6 +5347,26 @@
       ],
       "source_refs": [
         "SA-03fe3195711dfed5"
+      ],
+      "data_date": "2026-07-17",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-a2d037d3ca0eff3e",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9fbf261b62c1d7c0",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-597d8c4afa5fe3d6",
+      "object_type": "entity",
+      "event_id": "EV-7c899d5decafc42f",
+      "claim_refs": [
+        "CL-4154aa4e461163c9",
+        "CL-a3cd2bba9a1d055b",
+        "CL-837c7d367f0c26ce"
+      ],
+      "source_refs": [
+        "SA-c532d10bfc903c0c"
       ],
       "data_date": "2026-07-17",
       "status": "verified"
@@ -5227,6 +5502,26 @@
         "SA-52df1716b70975b3"
       ],
       "data_date": "2026-06-03",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-9795f8e6814470a6",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9fbf261b62c1d7c0",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-10fce287b4b1464c",
+      "object_type": "entity",
+      "event_id": "EV-a4f052325d0ef230",
+      "claim_refs": [
+        "CL-4c50bbc497deaee1",
+        "CL-25b9389df0e0f06f",
+        "CL-eece65ce191fb7c6"
+      ],
+      "source_refs": [
+        "SA-af9b5cefb039de38"
+      ],
+      "data_date": "2026-05-23",
       "status": "verified"
     }
   ],
@@ -5679,7 +5974,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-21"
     },
     {
       "id": "TX-industry-manufacturing",
@@ -6122,6 +6417,7 @@
         "EV-23ae55daa341be06",
         "EV-6bb83280a2116f24",
         "EV-d10684a6f16afe10",
+        "EV-87c5f6dcc769999c",
         "EV-0fc718ab409cdcf5",
         "EV-0121f0a9e9a975ec",
         "EV-67368bf639178ad1",
@@ -6205,6 +6501,8 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-3873f7ea8ac5a93f",
+        "EV-cd7ba52564d4091e",
         "EV-8cc00de56738c21d",
         "EV-68897f26c8d956df",
         "EV-2430dae13b9f6c82",
@@ -6597,6 +6895,7 @@
         "EN-50e2a4156631df49",
         "EN-f531c4e9f8555dcc",
         "EN-df30a48992da7fe8",
+        "EN-9fbf261b62c1d7c0",
         "EN-29b9f0cae32e7a8a",
         "EN-30cd4a85fc09f695",
         "EN-c9e92f0b88c6456b",
@@ -6606,7 +6905,6 @@
         "EN-047364b9be67f665",
         "EN-7d3194f79e645c42",
         "EN-df3b29befa02cd17",
-        "EN-9fbf261b62c1d7c0",
         "EN-48b85dc3fd54f74d",
         "EN-9c8ae69b84f21a2e",
         "EN-d3565d297d476f10",
@@ -6646,6 +6944,8 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-59bba357145ca539",
+        "EN-e3ce9cc5efa9354c",
         "EN-03c4260539e08e9c",
         "EN-796e923025d6fbb2",
         "EN-35c53e7e400caf01",
@@ -6802,6 +7102,7 @@
         "EN-e72901462ebe4458"
       ],
       "fdeIds": [
+        "FDE-d20f430306d29bbd",
         "FDE-b093649016ddce0b",
         "FDE-13bbc5471db90438",
         "FDE-e32500a9c4f90e91",
@@ -7116,6 +7417,7 @@
       "valueId": "mixture_of_experts",
       "eventIds": [
         "EV-80e54c9a390da293",
+        "EV-78651dfea74b4323",
         "EV-58e18eab1b072c9a",
         "EV-7e0d6eb92af58925",
         "EV-3a7e7b6818fee0de",
@@ -7145,7 +7447,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-06",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-21"
     },
     {
       "id": "TX-deployment_model-on_premise",
@@ -7157,6 +7459,7 @@
         "EV-0e84a2f49d765ce3",
         "EV-0fc718ab409cdcf5",
         "EV-7263caa45bbf168e",
+        "EV-c3ac03a8a0cc3a0e",
         "EV-7164fc80b7526930",
         "EV-6fc9c1eab4501ce9",
         "EV-c0d8138d8cab5135",
@@ -7181,7 +7484,7 @@
         "HW-ecc6755da7bbbbcd"
       ],
       "firstSeen": "2025-09-26",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-21"
     },
     {
       "id": "TX-technology-model_context_protocol",
@@ -7192,6 +7495,7 @@
       "eventIds": [
         "EV-ed8260ee9a7a80af",
         "EV-a2c13c14efec9218",
+        "EV-3873f7ea8ac5a93f",
         "EV-49fcb200a72f0024",
         "EV-33292a33d0f4d599",
         "EV-b3a050d576cea2f2",
@@ -7210,6 +7514,7 @@
       ],
       "entityIds": [
         "EN-c70eca6b0f88f44d",
+        "EN-59bba357145ca539",
         "EN-e6483498af8bd2cd",
         "EN-08b6a35be337edce",
         "EN-9fbf261b62c1d7c0",
@@ -7225,7 +7530,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2025-11-17",
-      "lastSeen": "2026-07-30"
+      "lastSeen": "2026-08-21"
     },
     {
       "id": "TX-technology-image_generation",
@@ -7332,6 +7637,69 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-d20f430306d29bbd",
+      "eventId": "EV-87c5f6dcc769999c",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "title": "云电脑 Windows 365 上线 5 周年，微软规划深度整合 AI 智能体体验",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "5 周年，微软规划深度整合 AI 智能体体验",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "IT之家 8 月 21 日消息，微软今天（8 月 21 日）发布博文，庆祝其云电脑服务 Windows 365（2021 年上线）推出 5 周年，并规划整合 AI 智能体，帮助用户在受管云电脑中操作应用、完成任务。",
+        "微软表示在过去 5 年间，团队围绕 Windows 365 构建了更多企业管理工具，帮助 IT 团队更好地部署和管理云电脑。",
+        "适用人群：部署 Scout 和 Windows 365 for Agents 等 AI 智能体的架构师和 IT 团队、希望拥有预配置的云编码环境和本地 AI 的开发人员、在远程桌面上强制执行数据丢失防护的安全和合规团队，以及管理云 PC 连接健康状况的管理员。"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/992/419.htm",
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ]
+    },
     {
       "id": "FDE-e32500a9c4f90e91",
       "eventId": "EV-57944eebac69d510",
@@ -8059,6 +8427,78 @@
     }
   ],
   "fdeDossiers": [
+    {
+      "id": "FDED-28afc8fade41edb4",
+      "implementationKey": "28afc8fade41edb4",
+      "eventId": "EV-87c5f6dcc769999c",
+      "eventIds": [
+        "EV-87c5f6dcc769999c"
+      ],
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "title": "未披露 × 未披露：5 周年，微软规划深度整合 AI 智能体体验",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "5 周年，微软规划深度整合 AI 智能体体验",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.25,
+      "completenessPercent": 25,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-4f990cc3bfee7e73",
+          "type": "implementation_update",
+          "stage": "completed",
+          "date": "2026-08-20",
+          "dataDate": "2026-08-21",
+          "eventId": "EV-87c5f6dcc769999c",
+          "eventTitle": "云电脑 Windows 365 上线 5 周年，微软规划深度整合 AI 智能体体验",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/992/419.htm",
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ]
+    },
     {
       "id": "FDED-dab7d48af097ebe1",
       "implementationKey": "dab7d48af097ebe1",

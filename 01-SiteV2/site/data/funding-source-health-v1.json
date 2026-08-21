@@ -1,15 +1,108 @@
 {
   "schema_version": "FUNDING-SOURCE-HEALTH-V1.0",
-  "generated_at": "2026-08-20T01:55:47.504Z",
-  "date": "2026-08-20",
+  "generated_at": "2026-08-21T00:27:58.563Z",
+  "date": "2026-08-21",
   "status": "degraded",
-  "state": "source_no_data",
-  "last_checked_date": "2026-08-20",
+  "state": "candidate_evidence_insufficient",
+  "last_checked_date": "2026-08-21",
   "latest_financing_date": "2026-08-19",
   "totals": {
-    "fetched": 0,
-    "funding_candidates": 0,
-    "verified_events": 4
+    "fetched": 669,
+    "funding_candidates": 155,
+    "verified_events": 0
   },
-  "channels": []
+  "channels": [
+    {
+      "id": "aihot",
+      "status": "collected",
+      "last_success_at": "2026-08-21T00:11:54.982Z",
+      "response_ms": null,
+      "http_status": "200",
+      "fetched_count": 269,
+      "latest_content_date": "2026-08-20",
+      "duplicate_rate": 0,
+      "stale_rate": 1,
+      "funding_candidate_count": 8,
+      "verified_event_count": 0,
+      "failures": [],
+      "fallback_used": false
+    },
+    {
+      "id": "funding",
+      "status": "collected",
+      "last_success_at": "2026-08-21T00:12:20.319Z",
+      "response_ms": null,
+      "http_status": "200",
+      "fetched_count": 65,
+      "latest_content_date": "2026-08-20",
+      "duplicate_rate": 0,
+      "stale_rate": 1,
+      "funding_candidate_count": 65,
+      "verified_event_count": 0,
+      "failures": [
+        "RSS cn-qbitai-rss: fetch failed"
+      ],
+      "fallback_used": false
+    },
+    {
+      "id": "gdelt",
+      "status": "collected",
+      "last_success_at": "2026-08-21T00:21:27.445Z",
+      "response_ms": null,
+      "http_status": "200",
+      "fetched_count": 48,
+      "latest_content_date": "",
+      "duplicate_rate": 0.1538,
+      "stale_rate": 1,
+      "funding_candidate_count": 13,
+      "verified_event_count": 0,
+      "failures": [],
+      "fallback_used": false
+    },
+    {
+      "id": "keyword",
+      "status": "collected",
+      "last_success_at": "2026-08-21T00:18:38.893Z",
+      "response_ms": null,
+      "http_status": "200",
+      "fetched_count": 169,
+      "latest_content_date": "2026-08-19",
+      "duplicate_rate": 0.2586,
+      "stale_rate": 1,
+      "funding_candidate_count": 58,
+      "verified_event_count": 0,
+      "failures": [
+        "keyword-search pre-gate filtered 46 result(s): social_or_profile_source=25; missing_ai_anchor_in_result=7; noise_term:hiring=5; noise_term:affiliate=4; broad_list_or_market_report=3; noise_term:career=1; noise_term:definition=1",
+        "Anysearch fallback for query \"forward deployed engineer AI customer deployment announced August 2026 (\"customer story\" OR \"case study\" OR implementation OR workflow) (AI OR agent) (official OR customer OR company blog)\": Anysearch returned 0 usable results",
+        "Anysearch fallback for query \"applied AI engineer enterprise customer case announced August 2026 (\"customer story\" OR \"case study\" OR implementation OR workflow) (AI OR agent) (official OR customer OR company blog)\": Anysearch returned 0 usable results",
+        "Anysearch fallback for query \"customer engineering AI production deployment announced August 2026 (\"customer story\" OR \"case study\" OR implementation OR workflow) (AI OR agent) (official OR customer OR company blog)\": Anysearch returned 0 usable results",
+        "Anysearch fallback for query \"AI workflow rollout procurement pilot announced August 2026 (AI procurement OR tender OR \"contract awarded\" OR \"purchasing agreement\") (official OR government OR newsroom)\": Anysearch returned 0 usable results",
+        "Anysearch fallback for query \"AI workflow automation procurement announced August 2026 (AI procurement OR tender OR \"contract awarded\" OR \"purchasing agreement\") (official OR government OR newsroom)\": Anysearch returned 0 usable results",
+        "Anysearch fallback for query \"AI agent startup raises procurement workflow announced August 2026 (AI procurement OR tender OR \"contract awarded\" OR \"purchasing agreement\") (official OR government OR newsroom)\": Anysearch returned 0 usable results",
+        "Anysearch fallback for query \"AI procurement startup funding enterprise workflow announced August 2026 (AI procurement OR tender OR \"contract awarded\" OR \"purchasing agreement\") (official OR government OR newsroom)\": Anysearch returned 0 usable results",
+        "Anysearch tech fallback for query \"(site:cninfo.com.cn OR site:sse.com.cn OR site:szse.cn) (人工智能 OR 大模型 OR 智算) (公告 OR 投资 OR 合同 OR 营收) announced August 2026 (AI implementation OR AI deployment OR AI operations) (earnings OR \"annual report\" OR \"quarterly report\" OR 10-K OR 10-Q)\": Anysearch Search service temporarily unavailable.",
+        "Anysearch documented-payload retry for query \"(site:cninfo.com.cn OR site:sse.com.cn OR site:szse.cn) (人工智能 OR 大模型 OR 智算) (公告 OR 投资 OR 合同 OR 营收) announced August 2026 (AI implementation OR AI deployment OR AI operations) (earnings OR \"annual report\" OR \"quarterly report\" OR 10-K OR 10-Q)\": tech: Anysearch Search service temporarily unavailable.",
+        "Anysearch fallback for query \"(site:cninfo.com.cn OR site:sse.com.cn OR site:szse.cn) (人工智能 OR 大模型 OR 智算) (公告 OR 投资 OR 合同 OR 营收) announced August 2026 (AI implementation OR AI deployment OR AI operations) (earnings OR \"annual report\" OR \"quarterly report\" OR 10-K OR 10-Q)\": Anysearch Search service temporarily unavailable."
+      ],
+      "fallback_used": true
+    },
+    {
+      "id": "rss",
+      "status": "collected",
+      "last_success_at": "2026-08-21T00:12:10.121Z",
+      "response_ms": null,
+      "http_status": "429",
+      "fetched_count": 118,
+      "latest_content_date": "2026-08-20",
+      "duplicate_rate": 0,
+      "stale_rate": 1,
+      "funding_candidate_count": 11,
+      "verified_event_count": 0,
+      "failures": [
+        "RSS tldr-ai-newsletter: HTTP 429",
+        "RSS cn-qbitai-rss: fetch failed"
+      ],
+      "fallback_used": false
+    }
+  ]
 }

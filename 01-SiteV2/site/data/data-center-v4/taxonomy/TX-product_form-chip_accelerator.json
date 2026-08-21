@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-20T01:52:33.847Z",
-    "latestDataDate": "2026-08-20",
-    "currentDate": "2026-08-20",
-    "eventCount": 2246,
+    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "latestDataDate": "2026-08-21",
+    "currentDate": "2026-08-21",
+    "eventCount": 2267,
     "quarantinedEventCount": 20
   },
   "node": {
@@ -72,6 +72,8 @@
       "EV-93fad8e0e30e442c",
       "EV-3d8608d3e78e031b",
       "EV-8fcb52bb6ec980af",
+      "EV-78651dfea74b4323",
+      "EV-4c168759119d2668",
       "EV-d93dd19a481307ec",
       "EV-a6c4f879a58ababa",
       "EV-c7d0b810ac3b3d4e",
@@ -169,6 +171,7 @@
       "EN-51a3a4589db68480",
       "EN-222f930b87524636",
       "EN-f4bec299df3f4f27",
+      "EN-99d3fd0fa8fe115e",
       "EN-83eb1cb31148698f",
       "EN-ea3bd73e2b506e00",
       "EN-74be4cbf48e647b2",
@@ -236,7 +239,7 @@
       "HW-4c176e4c40871adc"
     ],
     "firstSeen": "2025-03-18",
-    "lastSeen": "2026-08-20"
+    "lastSeen": "2026-08-21"
   },
   "events": [
     {
@@ -14571,10 +14574,367 @@
       "publisher": "furiosa.ai"
     },
     {
-      "id": "EV-d93dd19a481307ec",
-      "dataDate": "2026-08-20",
+      "id": "EV-78651dfea74b4323",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "updatedDate": "2026-08-21",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "DiffusionGemma 技术报告：Google DeepMind 开源离散扩散模型，单卡 H100 每秒生成约 1500 token",
+      "originalTitle": "",
+      "subject": "DiffusionGemma 技术报告：Google DeepMind",
+      "action": "开源离散扩散模型",
+      "object": "，单卡 H100 每秒生成约 1500 token",
+      "metrics": [
+        "10%",
+        "100 GPU"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-8d4321d936320802",
+        "EN-d56aa2f9908f566a"
+      ],
+      "entityNames": [
+        "Google DeepMind",
+        "NVIDIA",
+        "DiffusionGemma"
+      ],
+      "productName": "DiffusionGemma",
+      "products": [
+        {
+          "name": "DiffusionGemma",
+          "type": "模型",
+          "ownerNames": [
+            "Google DeepMind"
+          ]
+        }
+      ],
+      "sourceUrl": "https://arxiv.org/abs/2608.00146",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
+    },
+    {
+      "id": "EV-4c168759119d2668",
+      "dataDate": "2026-08-21",
       "date": "2026-08-19",
-      "updatedDate": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "KT推出搭载韩国AI芯片的NPU LLM Station",
+      "originalTitle": "KT launches NPU LLM Station featuring Korean AI chip",
+      "subject": "KT",
+      "action": "launches NPU LLM",
+      "object": "Station featuring Korean AI chip",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-99d3fd0fa8fe115e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-99d3fd0fa8fe115e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-99d3fd0fa8fe115e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-99d3fd0fa8fe115e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-99d3fd0fa8fe115e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-99d3fd0fa8fe115e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-99d3fd0fa8fe115e",
+        "EN-2ea859d02e5eb089",
+        "EN-942d023fd3168d40"
+      ],
+      "entityNames": [
+        "KT",
+        "Korean AI",
+        "NPU LLM Station"
+      ],
+      "productName": "Korean AI",
+      "products": [
+        {
+          "name": "Korean AI",
+          "type": "模型",
+          "ownerNames": [
+            "KT"
+          ]
+        },
+        {
+          "name": "NPU LLM Station",
+          "type": "模型",
+          "ownerNames": [
+            "KT"
+          ]
+        }
+      ],
+      "sourceUrl": "https://digitaltoday.co.kr/en/view/94279/kt-launches-npu-llm-station-featuring-korean-ai-chip",
+      "publisher": "digitaltoday.co.kr"
+    },
+    {
+      "id": "EV-d93dd19a481307ec",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-21",
       "eventType": "hardware_product",
       "eventTypeLabel": "硬件产品",
       "eventGroup": "AI 硬件",
@@ -21910,6 +22270,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-78651dfea74b4323",
         "EV-615fbb4de33fad2d",
         "EV-ea2598236eae915f",
         "EV-e3beca344d2321a9",
@@ -22012,6 +22373,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
@@ -22046,7 +22408,6 @@
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-deployment_model-cloud",
-        "TX-product_form-model",
         "TX-use_case-security_operations",
         "TX-technology-embodied_ai",
         "TX-ai_market_subcategory-development_deployment",
@@ -22085,7 +22446,7 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-21"
     },
     {
       "id": "EN-240389f4b730bad4",
@@ -22130,13 +22491,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-ai_compute_system",
         "TX-use_case-software_development",
         "TX-product_form-chip_accelerator",
         "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
-        "TX-product_form-model",
         "TX-technology-embodied_ai",
         "TX-product_form-robotic_system",
         "TX-technology-human_in_loop"
@@ -22596,13 +22957,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-product_form-chip_accelerator",
         "TX-industry-manufacturing",
-        "TX-product_form-model",
         "TX-ai_market_application-chips"
       ],
       "relatedEntityIds": [],
@@ -22797,11 +23158,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
         "TX-product_form-chip_accelerator",
-        "TX-product_form-model",
         "TX-ai_market_application-chips"
       ],
       "relatedEntityIds": [],
@@ -22853,9 +23214,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
-        "TX-industry-manufacturing",
-        "TX-product_form-model"
+        "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
@@ -22898,6 +23259,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-ai_compute_system",
         "TX-target_user-developer",
         "TX-product_form-chip_accelerator",
@@ -22907,7 +23269,6 @@
         "TX-product_form-compute_cloud_service",
         "TX-technology-agentic_execution",
         "TX-target_user-researcher",
-        "TX-product_form-model",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights"
       ],
@@ -22930,8 +23291,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
+        "TX-product_form-chip_accelerator",
         "TX-technology-open_weights"
       ],
       "relatedEntityIds": [],
@@ -23208,6 +23569,32 @@
       "lastSeen": "2026-08-08"
     },
     {
+      "id": "EN-99d3fd0fa8fe115e",
+      "name": "KT",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Korea Telecom"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-30585effe9134084",
+        "EV-4c168759119d2668",
+        "EV-d93dd19a481307ec"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-product_form-chip_accelerator"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-19",
+      "lastSeen": "2026-08-21"
+    },
+    {
       "id": "EN-83eb1cb31148698f",
       "name": "Master Group's Indus Cloud",
       "entityType": "organization_candidate",
@@ -23222,10 +23609,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-ai_compute_system",
         "TX-product_form-chip_accelerator",
         "TX-industry-government_public_sector",
-        "TX-product_form-model",
         "TX-technology-fine_tuning"
       ],
       "relatedEntityIds": [],
@@ -23256,6 +23643,7 @@
         "EV-467d1a701d21327d",
         "EV-acdeebead5324344",
         "EV-cded77b1de2db61a",
+        "EV-be76a1e5ed2b6cf5",
         "EV-0121f0a9e9a975ec",
         "EV-5ac2ba824c6d818c",
         "EV-a852dc0ca6011ff6",
@@ -23266,6 +23654,7 @@
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-43301de739fe560e",
+        "EV-6fdbcd14c6a633b6",
         "EV-7b0ff6657c0e0483",
         "EV-9d53b12f5f077d3b",
         "EV-615fbb4de33fad2d",
@@ -23335,6 +23724,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-use_case-software_development",
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
@@ -23348,7 +23738,6 @@
         "TX-use_case-data_analysis",
         "TX-deployment_model-cloud",
         "TX-product_form-enterprise_software_platform",
-        "TX-product_form-model",
         "TX-product_form-model_api_service",
         "TX-ai_market_subcategory-sales",
         "TX-use_case-sales",
@@ -23373,7 +23762,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-21"
     },
     {
       "id": "EN-74be4cbf48e647b2",
@@ -23390,13 +23779,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
         "TX-deployment_model-cloud",
-        "TX-product_form-model",
         "TX-technology-long_context",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
@@ -23517,8 +23906,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-model"
+        "TX-product_form-model",
+        "TX-product_form-chip_accelerator"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-20",
@@ -23550,9 +23939,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-industry-legal_services",
-        "TX-product_form-model",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
@@ -23956,8 +24345,9 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
-        "EV-40d88f6279d48304",
+        "EV-3873f7ea8ac5a93f",
         "EV-d93dd19a481307ec",
+        "EV-40d88f6279d48304",
         "EV-3a4acc92731cb5ac",
         "EV-0adf1fcc9dbeddef",
         "EV-e3fb3a8b12b3ba9c",
@@ -24206,6 +24596,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-use_case-software_development",
@@ -24227,7 +24618,6 @@
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-product_form-enterprise_software_platform",
-        "TX-product_form-model",
         "TX-use_case-security_operations",
         "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_application-models",
@@ -24268,7 +24658,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-21"
     },
     {
       "id": "EN-042e9398f2cc8902",
@@ -24403,10 +24793,13 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-597a6d51533fe5d6",
+        "EV-3873f7ea8ac5a93f",
+        "EV-e3da5e799e746408",
         "EV-46cd64a76d3767f5",
-        "EV-40d88f6279d48304",
         "EV-937b855e723d6ef0",
         "EV-d93dd19a481307ec",
+        "EV-40d88f6279d48304",
         "EV-05fea7a5d8b8db46",
         "EV-06e31f68974104ec",
         "EV-1e7c9d930a2a5d8e",
@@ -24657,6 +25050,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-use_case-software_development",
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
@@ -24677,7 +25071,6 @@
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-product_form-enterprise_software_platform",
-        "TX-product_form-model",
         "TX-use_case-security_operations",
         "TX-product_form-model_api_service",
         "TX-technology-multimodal",
@@ -24687,8 +25080,8 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
-        "EN-916a98f0fa2a39af",
         "EN-d1ad14d4ad57d207",
+        "EN-916a98f0fa2a39af",
         "EN-8d4321d936320802",
         "EN-7839fb10a8f14c70",
         "EN-968e2d5b08687bf4",
@@ -24713,7 +25106,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-21"
     },
     {
       "id": "EN-b3e3bce83d29e787",
@@ -24836,7 +25229,6 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "谷歌 DeepMind",
         "DeepMind"
       ],
       "verificationStatus": "verified",
@@ -24852,6 +25244,7 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
+        "EV-78651dfea74b4323",
         "EV-2430dae13b9f6c82",
         "EV-edb9a1143b52c096",
         "EV-397a17aa878564c4",
@@ -24887,13 +25280,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-use_case-software_development",
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-industry-media_entertainment",
         "TX-use_case-physical_automation",
         "TX-use_case-research_discovery",
-        "TX-product_form-model",
         "TX-use_case-security_operations",
         "TX-technology-embodied_ai",
         "TX-technology-multimodal",
@@ -24913,7 +25306,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-19"
+      "lastSeen": "2026-08-21"
     },
     {
       "id": "EN-412b57e712039032",
@@ -24930,10 +25323,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-use_case-software_development",
         "TX-product_form-chip_accelerator",
-        "TX-technology-code_generation",
-        "TX-product_form-model"
+        "TX-technology-code_generation"
       ],
       "relatedEntityIds": [
         "EN-c27c48199bb1e14b"
@@ -24956,10 +25349,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-product_form-ai_infrastructure_software",
-        "TX-target_user-business_user",
-        "TX-product_form-model"
+        "TX-target_user-business_user"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-27",
@@ -25022,6 +25415,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-product_form-chip_accelerator",
@@ -25029,7 +25423,6 @@
         "TX-industry-automotive_transportation",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
-        "TX-product_form-model",
         "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_application-models"
       ],
@@ -25058,12 +25451,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
         "TX-industry-retail_ecommerce",
-        "TX-product_form-model",
         "TX-technology-fine_tuning"
       ],
       "relatedEntityIds": [
@@ -25343,7 +25736,7 @@
     {
       "id": "HW-da04d48165a60f76",
       "eventId": "EV-d93dd19a481307ec",
-      "dataDate": "2026-08-20",
+      "dataDate": "2026-08-21",
       "date": "2026-08-19",
       "title": "韩国首款主权 AI 一体机出货：国产芯片、国产 LLM 集成于单台服务器",
       "hardwareType": "ai_accelerator",
@@ -26432,13 +26825,13 @@
     {
       "id": "HWC-acba324ff85c02ba",
       "snapshotKey": "acba324ff85c02ba",
-      "snapshotId": "HWS-b3565af1c598b895",
+      "snapshotId": "HWS-87548be385f8bfee",
       "eventId": "EV-d93dd19a481307ec",
       "eventIds": [
         "EV-d93dd19a481307ec"
       ],
-      "dataDate": "2026-08-20",
-      "date": "2026-08-20",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
       "title": "AI Appliance Ships / First Sovereign AI Appliance",
       "subject": "KT",
       "productNames": [
@@ -26453,18 +26846,28 @@
         "product": {
           "metric_value": "32",
           "unit": "billion",
-          "fact_ref": "HWF-470d16a40a09ae84"
+          "fact_ref": "HWF-5ebb3aa29cef2f23"
         }
       },
       "factCount": 2,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-21",
+          "previousDate": "2026-08-20",
+          "snapshotId": "HWS-87548be385f8bfee",
+          "previousSnapshotId": "HWS-b3565af1c598b895",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-20",
-          "hardware_fact_id": "HWF-48847d85045bd8e8",
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-f38c695b37b07d50",
           "fact_type": "product",
           "observed_at": "2026-08-19T15:50:41.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -26484,15 +26887,15 @@
           "event_refs": [
             "EV-d93dd19a481307ec"
           ],
-          "claim_ref": "CL-ff571bc346130784",
+          "claim_ref": "CL-65fd81364cb539f2",
           "source_refs": [
             "SA-30a50d9be011e4c2"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-20/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-20",
-          "hardware_fact_id": "HWF-470d16a40a09ae84",
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-5ebb3aa29cef2f23",
           "fact_type": "product",
           "observed_at": "2026-08-19T15:50:41.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -26512,11 +26915,11 @@
           "event_refs": [
             "EV-d93dd19a481307ec"
           ],
-          "claim_ref": "CL-d0de952d3a38239f",
+          "claim_ref": "CL-68b2369bc3f9afde",
           "source_refs": [
             "SA-30a50d9be011e4c2"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-20/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
         }
       ],
       "capexFacts": [],
@@ -26529,6 +26932,161 @@
         "EN-c70eca6b0f88f44d",
         "EN-7d3c8fb6fa445060",
         "EN-b563f0c46d6f78f8"
+      ]
+    },
+    {
+      "id": "HWC-1d458fe0521f28c1",
+      "snapshotKey": "1d458fe0521f28c1",
+      "snapshotId": "HWS-2dbe7feeec9426e2",
+      "eventId": "EV-4c168759119d2668",
+      "eventIds": [
+        "EV-4c168759119d2668"
+      ],
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "title": "Korean AI / NPU LLM Station",
+      "subject": "KT",
+      "productNames": [
+        "Korean AI",
+        "NPU LLM Station"
+      ],
+      "hardwareType": "ai_accelerator / semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-88e7cb22452ee2d4"
+        }
+      },
+      "factCount": 4,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-886bd0fd5e40bf55",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T00:30:44.000Z",
+          "subject_entity_id": "EN-99d3fd0fa8fe115e",
+          "subject_name": "KT",
+          "product_entity_ids": [
+            "EN-2ea859d02e5eb089",
+            "EN-942d023fd3168d40"
+          ],
+          "product_names": [
+            "Korean AI",
+            "NPU LLM Station"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KT has launched the enterprise sovereign AI appliance \"KT NPU LLM Station.\" [Photo: KT]",
+          "event_refs": [
+            "EV-4c168759119d2668"
+          ],
+          "claim_ref": "CL-d9d15b5cc41e7ea7",
+          "source_refs": [
+            "SA-d59a2f78c6134a26"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-d1dd10ca23141b16",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T00:30:44.000Z",
+          "subject_entity_id": "EN-99d3fd0fa8fe115e",
+          "subject_name": "KT",
+          "product_entity_ids": [
+            "EN-2ea859d02e5eb089",
+            "EN-942d023fd3168d40"
+          ],
+          "product_names": [
+            "Korean AI",
+            "NPU LLM Station"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KT said on Aug. 19 it has launched the enterprise sovereign AI appliance \"KT NPU LLM Station.\"",
+          "event_refs": [
+            "EV-4c168759119d2668"
+          ],
+          "claim_ref": "CL-e9f330df24e0b7c2",
+          "source_refs": [
+            "SA-d59a2f78c6134a26"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-009f4faedb11ee4c",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T00:30:44.000Z",
+          "subject_entity_id": "EN-99d3fd0fa8fe115e",
+          "subject_name": "KT",
+          "product_entity_ids": [
+            "EN-2ea859d02e5eb089",
+            "EN-942d023fd3168d40"
+          ],
+          "product_names": [
+            "Korean AI",
+            "NPU LLM Station"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KT has released an enterprise sovereign AI product that integrates a Korean-made AI chip and its own large language model (LLM) into a single server.",
+          "event_refs": [
+            "EV-4c168759119d2668"
+          ],
+          "claim_ref": "CL-d7b9dba561b48d5f",
+          "source_refs": [
+            "SA-d59a2f78c6134a26"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-88e7cb22452ee2d4",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T00:30:44.000Z",
+          "subject_entity_id": "EN-99d3fd0fa8fe115e",
+          "subject_name": "KT",
+          "product_entity_ids": [
+            "EN-2ea859d02e5eb089",
+            "EN-942d023fd3168d40"
+          ],
+          "product_names": [
+            "Korean AI",
+            "NPU LLM Station"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "The KT NPU LLM Station is an all-in-one product that runs KT's self-developed LLM \"Mi:deum K 2.5 Pro\" and an operating API platform on the neural processing unit (NPU) \"ATOM-MAX\" made by South Korean AI chip company Rebellion.",
+          "event_refs": [
+            "EV-4c168759119d2668"
+          ],
+          "claim_ref": "CL-bdb353c7641d013e",
+          "source_refs": [
+            "SA-d59a2f78c6134a26"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://digitaltoday.co.kr/en/view/94279/kt-launches-npu-llm-station-featuring-korean-ai-chip",
+      "entityIds": [
+        "EN-99d3fd0fa8fe115e",
+        "EN-2ea859d02e5eb089",
+        "EN-942d023fd3168d40"
       ]
     },
     {

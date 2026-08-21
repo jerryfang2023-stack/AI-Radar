@@ -5,13 +5,209 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-20T01:52:33.847Z",
-    "latestDataDate": "2026-08-20",
-    "currentDate": "2026-08-20",
-    "eventCount": 2246,
+    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "latestDataDate": "2026-08-21",
+    "currentDate": "2026-08-21",
+    "eventCount": 2267,
     "quarantinedEventCount": 20
   },
   "events": [
+    {
+      "id": "EV-9d665270d4feb97e",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "Stripe 确认 75 亿美元收购 AI 路由平台 OpenRouter",
+      "originalTitle": "",
+      "subject": "Stripe 确认 75 亿美元",
+      "action": "收购",
+      "object": "AI 路由平台 OpenRouter",
+      "metrics": [
+        "75 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7f871cbf905f6e0c"
+      ],
+      "entityNames": [
+        "OpenRouter"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-e3c150f2ef671586",
+          "subject": "Stripe 确认 75 亿美元",
+          "object": "AI 路由平台 OpenRouter",
+          "quote": "支付巨头 Stripe 确认将收购 AI 路由平台 OpenRouter，消息称交易价格达 75 亿美元 - IT之家"
+        },
+        {
+          "id": "CL-12b024971f7fb47f",
+          "subject": "Stripe 确认 75 亿美元",
+          "object": "AI 路由平台 OpenRouter",
+          "quote": "支付巨头 Stripe 确认将收购 AI 路由平台 OpenRouter，消息称交易价格达 75 亿美元"
+        },
+        {
+          "id": "CL-0813a45ef5aab9df",
+          "subject": "Stripe 确认 75 亿美元",
+          "object": "AI 路由平台 OpenRouter",
+          "quote": "IT之家 8 月 20 日消息，在线支付服务商 Stripe 当地时间周三确认，公司将收购 OpenRouter。"
+        },
+        {
+          "id": "CL-243cd5a55bbad7e1",
+          "subject": "Stripe 确认 75 亿美元",
+          "object": "AI 路由平台 OpenRouter",
+          "quote": "但问题来了：一家支付巨头为什么要收购一家主要负责在不同 AI 模型之间路由提示词的初创公司？"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-11244acefc7a1de9",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/991/918.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/991/918.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "支付巨头 Stripe 确认将收购 AI 路由平台 OpenRouter，消息称交易价格达 75 亿美元 - IT之家"
+    },
+    {
+      "id": "EV-b73d931bd6adb78d",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Stripe 同意收购 OpenRouter，AI 模型路由版图再扩张",
+      "originalTitle": "",
+      "subject": "Stripe 同意",
+      "action": "收购",
+      "object": "OpenRouter，AI 模型路由版图再扩张",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-7dd2a89f628d7525"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-7dd2a89f628d7525"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-7dd2a89f628d7525"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7dd2a89f628d7525",
+        "EN-7f871cbf905f6e0c"
+      ],
+      "entityNames": [
+        "Stripe 同意",
+        "OpenRouter"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-d9dcfc5fcf7ae806",
+          "subject": "Stripe 同意",
+          "object": "OpenRouter，AI 模型路由版图再扩张",
+          "quote": "Stripe has agreed to acquire OpenRouter, an AI model-routing platform that gives developers access to hundreds of models through a single interface. The deal adds model selection and routing to Stripe’s existing work around AI usage and token-based billing."
+        },
+        {
+          "id": "CL-d84af3c2a27a078c",
+          "subject": "Stripe 同意",
+          "object": "OpenRouter，AI 模型路由版图再扩张",
+          "quote": "Stripe and OpenRouter were already working together before the acquisition. In January 2026, Stripe said developers using OpenRouter could route model requests through the platform while Stripe tracked usage, applied pricing, and handled billing."
+        },
+        {
+          "id": "CL-cc86918f1cd432fe",
+          "subject": "Stripe 同意",
+          "object": "OpenRouter，AI 模型路由版图再扩张",
+          "quote": "The arrangement paired OpenRouter’s routing layer with Stripe’s usage measurement and billing systems before the acquisition agreement."
+        },
+        {
+          "id": "CL-54de5bd4444f90ef",
+          "subject": "Stripe 同意",
+          "object": "OpenRouter，AI 模型路由版图再扩张",
+          "quote": "Stripe CEO Patrick Collison has linked the acquisition to the role of tokens and computing resources in AI applications. Collison said tokens are a central unit for companies building with AI and tied their economic use to how companies manage available computing resources."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-50592132dea92568",
+          "publisher": "Artificial Intelligence News（RSS）",
+          "url": "https://artificialintelligence-news.com/news/stripe-openrouter-acquisition-ai-model-routing"
+        }
+      ],
+      "sourceUrl": "https://artificialintelligence-news.com/news/stripe-openrouter-acquisition-ai-model-routing",
+      "publisher": "Artificial Intelligence News（RSS）",
+      "sourceExcerpt": "Stripe has agreed to acquire OpenRouter, an AI model-routing platform that gives developers access to hundreds of models through a single interface. The deal adds model selection and routing to Stripe’s existing work around AI usage and token-based billing."
+    },
     {
       "id": "EV-4af14568b1bdeb35",
       "dataDate": "2026-08-20",
@@ -993,24 +1189,25 @@
     },
     {
       "id": "EV-181cd28d97c4e61d",
-      "dataDate": "2026-08-18",
+      "dataDate": "2026-08-21",
       "date": "2026-08-17",
-      "updatedDate": "2026-08-18",
+      "updatedDate": "2026-08-21",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Groq 融资 3.5 亿美元，加速从 AI 芯片转向 neocloud",
-      "originalTitle": "",
+      "title": "Groq完成3.5亿美元A轮融资，打造全球领先的AI推理云",
+      "originalTitle": "Groq Closes $350 million Series A, Building the World's Leading AI Inference Cloud | Groq is the premier neocloud for fast inference",
       "subject": "Groq",
-      "action": "融资",
-      "object": "3.5 亿美元，加速从 AI 芯片转向 neocloud",
+      "action": "Closes",
+      "object": "$350 million Series A, Building the World's Leading AI Inference Cloud | Groq is the premier neocloud for fast inference",
       "metrics": [
-        "$350M",
         "$350 million",
-        "$650 million"
+        "$3.5 billion",
+        "$650 million",
+        "$1 billion"
       ],
       "locations": [],
       "missingFields": [],
@@ -1253,54 +1450,46 @@
       ],
       "entityIds": [
         "EN-0b79cf2de0ee6b8e",
-        "EN-d5096fab0e92c370",
-        "EN-7cb763a5e1cf9bc7",
+        "EN-1a2290470e0aa754",
         "EN-8d4321d936320802"
       ],
       "entityNames": [
         "Groq",
-        "Startup Groq",
-        "In June",
+        "San Francisco",
         "NVIDIA"
       ],
       "productName": "",
       "products": [],
       "claims": [
         {
-          "id": "CL-0ba0552fcdb28976",
+          "id": "CL-e5b3e94bce04a84d",
           "subject": "Groq",
-          "object": "3.5 亿美元，加速从 AI 芯片转向 neocloud",
-          "quote": "Groq raises $350M to fuel its pivot from AI chips to neocloud"
+          "object": "$350 million Series A, Building the World's Leading AI Inference Cloud | Groq is the premier neocloud for fast inference",
+          "quote": "Groq Closes $350 million Series A, Building the World's Leading AI Inference Cloud"
         },
         {
-          "id": "CL-16e59b7d67a1f0bb",
+          "id": "CL-220d60ba1cb8c1c3",
           "subject": "Groq",
-          "object": "3.5 亿美元，加速从 AI 芯片转向 neocloud",
-          "quote": "Startup Groq has raised $350 million as it continues to pivot from an AI chipmaker to a neocloud company that provides powerful GPUs and AI infrastructure services."
+          "object": "$350 million Series A, Building the World's Leading AI Inference Cloud | Groq is the premier neocloud for fast inference",
+          "quote": "San Francisco, CA, August 17, 2026 — Groq LLC (“Groq”) today announced a $350 million Series A fundraise and the round was led by Disruptive, with planned participation from NVIDIA. The fundraise values the company at $3.5 billion. This latest round, together with $650 million raised in June 2026, brings recent funding in the company to $1 billion."
         },
         {
-          "id": "CL-46ca4307b0e86c28",
+          "id": "CL-19c66fc022f4e3ad",
           "subject": "Groq",
-          "object": "3.5 亿美元，加速从 AI 芯片转向 neocloud",
-          "quote": "In June, Groq raised a $650 million round to kick off its pivot. Groq intends to scale from 54 megawatts to more than 200 megawatts in 2027."
-        },
-        {
-          "id": "CL-d7d17d9a41c46bd1",
-          "subject": "Groq",
-          "object": "3.5 亿美元，加速从 AI 芯片转向 neocloud",
-          "quote": "Groq’s financials are still private for now, but its pivot puts the company directly inside Nvidia’s AI infrastructure ecosystem. That’s not exactly a unique relationship among neoclouds today. Nvidia supplies the GPUs powering clouds from CoreWeave , Lambda, and Nebius, while also investing billions into some of those companies as they race to build more capacity."
+          "object": "$350 million Series A, Building the World's Leading AI Inference Cloud | Groq is the premier neocloud for fast inference",
+          "quote": "Groq is an NVIDIA Cloud Partner (NCP), certified to design, deploy, and operate NVIDIA accelerated computing to NVIDIA’s reference architecture and operational standards. The Series A fundraise is subject to customary closing conditions."
         }
       ],
       "sources": [
         {
-          "id": "SA-135f6bf8a5c06f22",
-          "publisher": "TechCrunch：AI（RSS）",
-          "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud"
+          "id": "SA-6adbb72abee6f2b7",
+          "publisher": "groq.com",
+          "url": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud"
         }
       ],
-      "sourceUrl": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud",
-      "publisher": "TechCrunch：AI（RSS）",
-      "sourceExcerpt": "Groq raises $350M to fuel its pivot from AI chips to neocloud"
+      "sourceUrl": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud",
+      "publisher": "groq.com",
+      "sourceExcerpt": "Groq Closes $350 million Series A, Building the World's Leading AI Inference Cloud"
     },
     {
       "id": "EV-1dba157815d84342",
@@ -50515,7 +50704,7 @@
       "entityNames": [
         "AIsa",
         "Alibaba",
-        "SAN FRANCISCO",
+        "San Francisco",
         "July 07"
       ],
       "productName": "",
@@ -68948,7 +69137,7 @@
         "EN-cbc62794911ff31b"
       ],
       "entityNames": [
-        "SAN FRANCISCO",
+        "San Francisco",
         "Orthogonal",
         "Google",
         "Amazon"
@@ -130417,6 +130606,283 @@
       "sourceExcerpt": "Press release: New Conversational AI Company Front AI Raises €500k in Seed Funding"
     },
     {
+      "id": "EV-87c5f6dcc769999c",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "updatedDate": "2026-08-21",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "云电脑 Windows 365 上线 5 周年，微软规划深度整合 AI 智能体体验",
+      "originalTitle": "",
+      "subject": "云电脑 Windows 365",
+      "action": "上线",
+      "object": "5 周年，微软规划深度整合 AI 智能体体验",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-f36fae3e5068b750",
+          "subject": "云电脑 Windows 365",
+          "object": "5 周年，微软规划深度整合 AI 智能体体验",
+          "quote": "IT之家 8 月 21 日消息，微软今天（8 月 21 日）发布博文，庆祝其云电脑服务 Windows 365（2021 年上线）推出 5 周年，并规划整合 AI 智能体，帮助用户在受管云电脑中操作应用、完成任务。"
+        },
+        {
+          "id": "CL-5d572da5b7e24ba5",
+          "subject": "云电脑 Windows 365",
+          "object": "5 周年，微软规划深度整合 AI 智能体体验",
+          "quote": "微软表示在过去 5 年间，团队围绕 Windows 365 构建了更多企业管理工具，帮助 IT 团队更好地部署和管理云电脑。"
+        },
+        {
+          "id": "CL-63c9052c516bc05a",
+          "subject": "云电脑 Windows 365",
+          "object": "5 周年，微软规划深度整合 AI 智能体体验",
+          "quote": "适用人群：部署 Scout 和 Windows 365 for Agents 等 AI 智能体的架构师和 IT 团队、希望拥有预配置的云编码环境和本地 AI 的开发人员、在远程桌面上强制执行数据丢失防护的安全和合规团队，以及管理云 PC 连接健康状况的管理员。"
+        },
+        {
+          "id": "CL-7ca8e153756cc48b",
+          "subject": "云电脑 Windows 365",
+          "object": "5 周年，微软规划深度整合 AI 智能体体验",
+          "quote": "微软于 2021 年推出云电脑平台 Windows 365，让用户从云端串流完整 Windows 桌面，用户无需投入高成本购买实体硬件，可以直接访问由微软托管的云电脑。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-1776c1033d427aad",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/992/419.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/992/419.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "IT之家 8 月 21 日消息，微软今天（8 月 21 日）发布博文，庆祝其云电脑服务 Windows 365（2021 年上线）推出 5 周年，并规划整合 AI 智能体，帮助用户在受管云电脑中操作应用、完成任务。"
+    },
+    {
+      "id": "EV-be76a1e5ed2b6cf5",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Meta 成微软最大 AI 客户之一：年采购额达数亿美元，每周消耗数万亿词元",
+      "originalTitle": "",
+      "subject": "Meta 成微软最大 AI 客户之一：年",
+      "action": "采购",
+      "object": "额达数亿美元，每周消耗数万亿词元",
+      "metrics": [
+        "数万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "cloud",
+            "name": "云端",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "cloud",
+          "name": "云端",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "cloud",
+          "name": "云端",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Meta",
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-c329da85bc04f51f",
+          "subject": "Meta 成微软最大 AI 客户之一：年",
+          "object": "额达数亿美元，每周消耗数万亿词元",
+          "quote": "Meta 成微软最大 AI 客户之一：年采购额达数亿美元，每周消耗数万亿词元 - IT之家"
+        },
+        {
+          "id": "CL-5e0f0d7002317c16",
+          "subject": "Meta 成微软最大 AI 客户之一：年",
+          "object": "额达数亿美元，每周消耗数万亿词元",
+          "quote": "Meta 成微软最大 AI 客户之一：年采购额达数亿美元，每周消耗数万亿词元"
+        },
+        {
+          "id": "CL-3d3f622c5770f3d7",
+          "subject": "Meta 成微软最大 AI 客户之一：年",
+          "object": "额达数亿美元，每周消耗数万亿词元",
+          "quote": "IT之家 8 月 20 日消息，据彭博社今日报道，Meta 正通过微软 Azure 云服务采购 AI 服务，年支出高达数亿美元，已成为微软规模最大的 AI 客户之一。"
+        },
+        {
+          "id": "CL-a0e9feccd38e307d",
+          "subject": "Meta 成微软最大 AI 客户之一：年",
+          "object": "额达数亿美元，每周消耗数万亿词元",
+          "quote": "对于 Meta 来看，该公司采购的 AI 算力主要用于软件开发等工作。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-c43073908b641979",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/992/397.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/992/397.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "Meta 成微软最大 AI 客户之一：年采购额达数亿美元，每周消耗数万亿词元 - IT之家"
+    },
+    {
       "id": "EV-2b9da4db831578a4",
       "dataDate": "2026-08-20",
       "date": "2026-08-20",
@@ -130663,6 +131129,86 @@
       "sourceUrl": "https://constructionworld.in/policy-updates-and-economic-news/cactus-wins-meity-contract-to-build-ai-tender-authoring-platform/94631",
       "publisher": "constructionworld.in",
       "sourceExcerpt": "Cactus Wins MeitY Contract To Build AI Tender Authoring Platform"
+    },
+    {
+      "id": "EV-f79e16c4a5eef370",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-18",
+      "updatedDate": "2026-08-21",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "cBrain获得与加利福尼亚州的首份合同",
+      "originalTitle": "cBrain awarded first contract with the State of California",
+      "subject": "cBrain",
+      "action": "awarded first contract",
+      "object": "with the State of California",
+      "metrics": [],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-b37f330ba48d4496"
+      ],
+      "entityNames": [
+        "cBrain"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-5ed7e66be76b9cb6",
+          "subject": "cBrain",
+          "object": "with the State of California",
+          "quote": "cBrain awarded first contract with the State of California"
+        },
+        {
+          "id": "CL-cb9c8ac75652f450",
+          "subject": "cBrain",
+          "object": "with the State of California",
+          "quote": "Copenhagen, August 18, 2026"
+        },
+        {
+          "id": "CL-c7c968e272ef2b94",
+          "subject": "cBrain",
+          "object": "with the State of California",
+          "quote": "In February, cBrain (NASDAQ: CBRAIN) was invited by the State of California to conduct a 12-week informal Proof of Concept (PoC), focused on using AI and Natural Language Processing (NLP) to reduce redundancies and duplicative work by government agencies in California."
+        },
+        {
+          "id": "CL-502fd735e52dbe22",
+          "subject": "cBrain",
+          "object": "with the State of California",
+          "quote": "cBrain is now pleased to announce that the Governor's Office of Land Use and Climate Innovation in California (US) has contracted with cBrain through California's SLP framework for software acquisition."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-7211d692898d8130",
+          "publisher": "cbrain.com",
+          "url": "https://cbrain.com/post/cbrain-awarded-first-contract-with-the-state-of-california"
+        }
+      ],
+      "sourceUrl": "https://cbrain.com/post/cbrain-awarded-first-contract-with-the-state-of-california",
+      "publisher": "cbrain.com",
+      "sourceExcerpt": "cBrain awarded first contract with the State of California"
     },
     {
       "id": "EV-7690a249e07ddac8",
@@ -174994,6 +175540,1487 @@
       "sourceExcerpt": "Stellantis and Mistral AI Expand Their Collaboration to Accelerate Enterprise-Wide AI Adoption"
     },
     {
+      "id": "EV-597a6d51533fe5d6",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "updatedDate": "2026-08-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Mac 版 ChatGPT 可控制“信息”应用，古尔曼称恐触及苹果 Siri AI 的设备优势",
+      "originalTitle": "",
+      "subject": "Mac",
+      "action": "product_release",
+      "object": "Mac 版 ChatGPT 可控制“信息”应用，古尔曼称恐触及苹果 Siri AI 的设备优势",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-348a629f5ceed032",
+        "EN-7d3194f79e645c42",
+        "EN-3a7bd3e2360a3d29",
+        "EN-d1ad14d4ad57d207"
+      ],
+      "entityNames": [
+        "Mac",
+        "OpenAI",
+        "Apple",
+        "ChatGPT"
+      ],
+      "productName": "ChatGPT",
+      "products": [
+        {
+          "name": "ChatGPT",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-3c97d57319564526",
+          "subject": "Mac",
+          "object": "Mac 版 ChatGPT 可控制“信息”应用，古尔曼称恐触及苹果 Siri AI 的设备优势",
+          "quote": "IT之家 8 月 21 日消息，OpenAI 昨日（8 月 20 日）在 X 平台发布推文，宣布升级 macOS 版 ChatGPT 应用程序，添加控制苹果“信息”（Apple Messages）能力， 可以读取、撰写、发送短信，并支持搜索消息以及生成对话摘要。"
+        },
+        {
+          "id": "CL-1038053e7e4ec1a9",
+          "subject": "Mac",
+          "object": "Mac 版 ChatGPT 可控制“信息”应用，古尔曼称恐触及苹果 Siri AI 的设备优势",
+          "quote": "OpenAI 公司表示在征得用户授权后，ChatGPT 可以读取、撰写和发送短信，也能搜索消息，获取对话摘要及其他信息。"
+        },
+        {
+          "id": "CL-8415a8e99f60acc7",
+          "subject": "Mac",
+          "object": "Mac 版 ChatGPT 可控制“信息”应用，古尔曼称恐触及苹果 Siri AI 的设备优势",
+          "quote": "官方明确表示该功能不会基于用户的全部消息建立索引，且需要用户明确同意。"
+        },
+        {
+          "id": "CL-3ee7d7e9b6a43fe1",
+          "subject": "Mac",
+          "object": "Mac 版 ChatGPT 可控制“信息”应用，古尔曼称恐触及苹果 Siri AI 的设备优势",
+          "quote": "Mac 版 ChatGPT 可控制“信息”应用，古尔曼称恐触及苹果 Siri AI 的设备优势 - IT之家"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-e2b96af7ce645b73",
+          "publisher": "IT之家",
+          "url": "https://ithome.com/0/992/426.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/992/426.htm",
+      "publisher": "IT之家",
+      "sourceExcerpt": "IT之家 8 月 21 日消息，OpenAI 昨日（8 月 20 日）在 X 平台发布推文，宣布升级 macOS 版 ChatGPT 应用程序，添加控制苹果“信息”（Apple Messages）能力， 可以读取、撰写、发送短信，并支持搜索消息以及生成对话摘要。"
+    },
+    {
+      "id": "EV-78651dfea74b4323",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "updatedDate": "2026-08-21",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "DiffusionGemma 技术报告：Google DeepMind 开源离散扩散模型，单卡 H100 每秒生成约 1500 token",
+      "originalTitle": "",
+      "subject": "DiffusionGemma 技术报告：Google DeepMind",
+      "action": "开源离散扩散模型",
+      "object": "，单卡 H100 每秒生成约 1500 token",
+      "metrics": [
+        "10%",
+        "100 GPU"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-8d4321d936320802",
+        "EN-d56aa2f9908f566a"
+      ],
+      "entityNames": [
+        "Google DeepMind",
+        "NVIDIA",
+        "DiffusionGemma"
+      ],
+      "productName": "DiffusionGemma",
+      "products": [
+        {
+          "name": "DiffusionGemma",
+          "type": "模型",
+          "ownerNames": [
+            "Google DeepMind"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-7242399f5a1ee7bd",
+          "subject": "DiffusionGemma 技术报告：Google DeepMind",
+          "object": "，单卡 H100 每秒生成约 1500 token",
+          "quote": "Abstract: We introduce DiffusionGemma, an experimental open-weight language model that uses discrete diffusion to generate text at exceptionally high speed. Rather than decoding one token at a time, DiffusionGemma iteratively refines blocks of 256 tokens in parallel, avoiding the sequential decoding bottleneck of conventional autoregressive (AR) large language models. Instead of training from scratch, we obtain DiffusionGemma by fine-tuning the mixture-of-experts Gemma 4 model with 3.8B activated and 25.2B total parameters. Our compute-efficient two-stage training pipeline uses fewer than 10% of the starting AR model's total training token budget. The first stage uses supervised fine-tuning…"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-e0a2d59fe681f30c",
+          "publisher": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "url": "https://arxiv.org/abs/2608.00146"
+        }
+      ],
+      "sourceUrl": "https://arxiv.org/abs/2608.00146",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "sourceExcerpt": "Abstract: We introduce DiffusionGemma, an experimental open-weight language model that uses discrete diffusion to generate text at exceptionally high speed. Rather than decoding one token at a time, DiffusionGemma iteratively refines blocks of 256 tokens in parallel, avoiding the sequential decoding bottleneck of conventional autoregressive (AR) large language models. Instead of training from scratch, we obtain DiffusionGemma by fine-tuning the mixture-of-experts Gemma 4 model with 3.8B activated and 25.2B total parameters. Our compute-efficient two-stage training pipeline uses fewer than 10% of the starting AR model's total training token budget. The first stage uses supervised fine-tuning…"
+    },
+    {
+      "id": "EV-baf1a4c3db620d90",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "updatedDate": "2026-08-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Adobe Firefly新增AI音频工具及谷歌Gemini Omni Flash",
+      "originalTitle": "Adobe Firefly adds AI audio tools and Google's Gemini Omni Flash",
+      "subject": "Adobe Firefly",
+      "action": "adds",
+      "object": "AI audio tools and Google's Gemini Omni Flash",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-d75388af00e08fca",
+        "EN-bbdefa2950f49882",
+        "EN-7ed9c9e7c260ed06",
+        "EN-6e18e42d9943624c"
+      ],
+      "entityNames": [
+        "Adobe Firefly",
+        "Google",
+        "Gemini Omni Flash",
+        "AI audio"
+      ],
+      "productName": "Gemini Omni Flash",
+      "products": [
+        {
+          "name": "Gemini Omni Flash",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google"
+          ]
+        },
+        {
+          "name": "AI audio",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-f5d7e9160489f5bb",
+          "subject": "Adobe Firefly",
+          "object": "AI audio tools and Google's Gemini Omni Flash",
+          "quote": "Adobe Firefly adds AI audio tools and Google's Gemini Omni Flash"
+        },
+        {
+          "id": "CL-793f42f13c62e269",
+          "subject": "Adobe Firefly",
+          "object": "AI audio tools and Google's Gemini Omni Flash",
+          "quote": "Adobe Firefly adds AI audio tools and Google's Gemini Omni Flash"
+        },
+        {
+          "id": "CL-4636198f8f6fd8fd",
+          "subject": "Adobe Firefly",
+          "object": "AI audio tools and Google's Gemini Omni Flash",
+          "quote": "Adobe is making three AI audio tools broadly available in Firefly. Generate Music, Generate Speech, and Generate Sound Effects create royalty-free music, voiceovers, and sound effects for video projects. Adobe has also added Gemini Omni Flash to the platform."
+        },
+        {
+          "id": "CL-768e9f9bdd819878",
+          "subject": "Adobe Firefly",
+          "object": "AI audio tools and Google's Gemini Omni Flash",
+          "quote": "Adobe is making three AI audio tools broadly available in Firefly. Generate Music, Generate Speech, and Generate Sound Effects create royalty-free music, voiceovers, and sound effects for video projects. Adobe has also added Gemini Omni Flash to the platform."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-7b1deb1348e0fb5e",
+          "publisher": "The Decoder AI News",
+          "url": "https://the-decoder.com/adobe-firefly-adds-ai-audio-tools-and-googles-gemini-omni-flash"
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/adobe-firefly-adds-ai-audio-tools-and-googles-gemini-omni-flash",
+      "publisher": "The Decoder AI News",
+      "sourceExcerpt": "Adobe Firefly adds AI audio tools and Google's Gemini Omni Flash"
+    },
+    {
+      "id": "EV-c3ac03a8a0cc3a0e",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "updatedDate": "2026-08-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Claude Code v2.1.238 发布：新增 readline 键位、插件市场 headersHelper 与多项 Remote Control 修复",
+      "originalTitle": "",
+      "subject": "Claude Code v2.1.238",
+      "action": "发布",
+      "object": "：新增 readline 键位、插件市场 headersHelper 与多项 Remote Control 修复",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "on_premise",
+            "name": "本地部署",
+            "entityIds": [
+              "EN-cb4754c48f8023d0"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "on_premise",
+          "name": "本地部署",
+          "entityIds": [
+            "EN-cb4754c48f8023d0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "on_premise",
+          "name": "本地部署",
+          "entityIds": [
+            "EN-cb4754c48f8023d0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-cb4754c48f8023d0",
+        "EN-572889793e98337c"
+      ],
+      "entityNames": [
+        "Claude Code",
+        "keybindingFlavor setting"
+      ],
+      "productName": "Claude Code",
+      "products": [
+        {
+          "name": "Claude Code",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "keybindingFlavor setting",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-e419166518845074",
+          "subject": "Claude Code v2.1.238",
+          "object": "：新增 readline 键位、插件市场 headersHelper 与多项 Remote Control 修复",
+          "quote": "Added a keybindingFlavor setting: set it to \"readline\" to make Ctrl+W in the prompt delete back to the previous whitespace, as in Bash; the default ( \"classic\" ) is unchanged"
+        },
+        {
+          "id": "CL-ed5031d8058ba220",
+          "subject": "Claude Code v2.1.238",
+          "object": "：新增 readline 键位、插件市场 headersHelper 与多项 Remote Control 修复",
+          "quote": "Added claude self-hosted-runner --defer-shutdown-max-min <minutes> : on SIGTERM, keep serving attached sessions, park what is left after that many minutes, then exit"
+        },
+        {
+          "id": "CL-c5280e5e5be398cc",
+          "subject": "Claude Code v2.1.238",
+          "object": "：新增 readline 键位、插件市场 headersHelper 与多项 Remote Control 修复",
+          "quote": "Added claude self-hosted-runner --proxy-authorization-command / --proxy-authorization-file for egress proxies that require a freshly issued Proxy-Authorization header on every connection"
+        },
+        {
+          "id": "CL-bec33cb1f4c17f42",
+          "subject": "Claude Code v2.1.238",
+          "object": "：新增 readline 键位、插件市场 headersHelper 与多项 Remote Control 修复",
+          "quote": "Updated the bundled claude-api skill for the Managed Agents Aug 19 release: web search/fetch domain settings and memory stores on self-hosted sandboxes"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-f3d2049def0e012d",
+          "publisher": "Claude Code：GitHub Releases（RSS）",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.238"
+        }
+      ],
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.238",
+      "publisher": "Claude Code：GitHub Releases（RSS）",
+      "sourceExcerpt": "Added a keybindingFlavor setting: set it to \"readline\" to make Ctrl+W in the prompt delete back to the previous whitespace, as in Bash; the default ( \"classic\" ) is unchanged"
+    },
+    {
+      "id": "EV-3873f7ea8ac5a93f",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Binance 推出 Agent OS，让 AI 智能体代用户交易",
+      "originalTitle": "",
+      "subject": "Binance",
+      "action": "推出",
+      "object": "Agent OS，让 AI 智能体代用户交易",
+      "metrics": [
+        "300 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-59bba357145ca539"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-59bba357145ca539"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP",
+          "entityIds": [
+            "EN-59bba357145ca539"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-59bba357145ca539"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-59bba357145ca539"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP",
+          "entityIds": [
+            "EN-59bba357145ca539"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-59bba357145ca539"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP",
+          "entityIds": [
+            "EN-59bba357145ca539"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-59bba357145ca539",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-dd750a98f453fbe8"
+      ],
+      "entityNames": [
+        "Binance",
+        "OpenAI",
+        "Anthropic",
+        "Agent OS"
+      ],
+      "productName": "Agent OS",
+      "products": [
+        {
+          "name": "Agent OS",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-7533cdf523011574",
+          "subject": "Binance",
+          "object": "Agent OS，让 AI 智能体代用户交易",
+          "quote": "Binance , the world’s largest crypto exchange with more than 300 million registered users, on Thursday launched a platform that lets AI agents analyze markets and execute trades on users’ behalf, bringing autonomous AI directly into the business of managing real money."
+        },
+        {
+          "id": "CL-3ba3210969af9c63",
+          "subject": "Binance",
+          "object": "Agent OS，让 AI 智能体代用户交易",
+          "quote": "Called Agent OS , the platform lets developers connect AI applications and agents to Binance’s financial infrastructure. It brings the exchange’s existing tools and services such as Binance APIs, Binance Wallet Agentic Hub, Binance x402 transaction verification and payment facilitator API, and Binance Skill Hub, along with newly introduced support for its Model Context Protocol (MCP) . The platform also works with tools, including OpenAI’s ChatGPT and Codex, Anthropic’s Claude Code, and Cursor, allowing users to authorize agents to access market data, view account information, and execute trades."
+        },
+        {
+          "id": "CL-e3f227439c70aa2b",
+          "subject": "Binance",
+          "object": "Agent OS，让 AI 智能体代用户交易",
+          "quote": "Li again pointed to the subaccount as the main line of defense when asked what would happen if an agent was manipulated through a prompt-injection attack or otherwise compromised. Binance also said its existing security, risk-control, and anti-money-laundering policies for subaccount APIs apply to Agent OS at launch."
+        },
+        {
+          "id": "CL-cea1ec344003e201",
+          "subject": "Binance",
+          "object": "Agent OS，让 AI 智能体代用户交易",
+          "quote": "Binance now lets AI agents trade, but keeping them in check is largely up to users"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-3ce71481385ae23d",
+          "publisher": "TechCrunch：AI（RSS）",
+          "url": "https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users",
+      "publisher": "TechCrunch：AI（RSS）",
+      "sourceExcerpt": "Binance , the world’s largest crypto exchange with more than 300 million registered users, on Thursday launched a platform that lets AI agents analyze markets and execute trades on users’ behalf, bringing autonomous AI directly into the business of managing real money."
+    },
+    {
+      "id": "EV-4e815cac738fa514",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Claude Code v2.1.237 发布：修复 LLM 网关提示词缓存，新增\"简洁\"输出风格",
+      "originalTitle": "",
+      "subject": "Claude Code v2.1.237",
+      "action": "发布",
+      "object": "：修复 LLM 网关提示词缓存，新增\"简洁\"输出风格",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-cb4754c48f8023d0"
+      ],
+      "entityNames": [
+        "Claude Code"
+      ],
+      "productName": "Claude Code",
+      "products": [
+        {
+          "name": "Claude Code",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-d49332b31c432ff3",
+          "subject": "Claude Code v2.1.237",
+          "object": "：修复 LLM 网关提示词缓存，新增\"简洁\"输出风格",
+          "quote": "Added a built-in \"Concise\" output style: Claude leads with results and skips preamble and narration, while doing the work just as thoroughly. Select it under Output style in /config."
+        },
+        {
+          "id": "CL-29c9f192430173e0",
+          "subject": "Claude Code v2.1.237",
+          "object": "：修复 LLM 网关提示词缓存，新增\"简洁\"输出风格",
+          "quote": "There was an error while loading. Please reload this page ."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-9bb924e9cf76d1e6",
+          "publisher": "Claude Code：GitHub Releases（RSS）",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.237"
+        }
+      ],
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.237",
+      "publisher": "Claude Code：GitHub Releases（RSS）",
+      "sourceExcerpt": "Added a built-in \"Concise\" output style: Claude leads with results and skips preamble and narration, while doing the work just as thoroughly. Select it under Output style in /config."
+    },
+    {
+      "id": "EV-6fdbcd14c6a633b6",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Meta AI 推出 Mac 应用，支持系统级听写与屏幕问答",
+      "originalTitle": "",
+      "subject": "Meta AI",
+      "action": "推出",
+      "object": "Mac 应用，支持系统级听写与屏幕问答",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-ae31f30d39374a8b",
+        "EN-ea3bd73e2b506e00",
+        "EN-bbdefa2950f49882",
+        "EN-00910b5c1cc27f5f"
+      ],
+      "entityNames": [
+        "Meta AI",
+        "Meta",
+        "Google",
+        "Mac"
+      ],
+      "productName": "Mac",
+      "products": [
+        {
+          "name": "Mac",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Meta"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-502f13f3f059289d",
+          "subject": "Meta AI",
+          "object": "Mac 应用，支持系统级听写与屏幕问答",
+          "quote": "The Mac app release is part of a Meta AI update for business owners. The company said that merchants can connect their Instagram and Facebook accounts, Meta ad campaigns, and Google Workspace (Gmail, Docs, Sheets, and Slides) accounts to Meta AI and get insights by querying the AI assistant."
+        },
+        {
+          "id": "CL-b1033f686b56cec5",
+          "subject": "Meta AI",
+          "object": "Mac 应用，支持系统级听写与屏幕问答",
+          "quote": "Meta AI can provide users with information about campaign performance and audience engagement metrics to understand what posts have worked well. It added that users can also access intelligence on competitors based on publicly available data."
+        },
+        {
+          "id": "CL-9fb9e23278aa8ab6",
+          "subject": "Meta AI",
+          "object": "Mac 应用，支持系统级听写与屏幕问答",
+          "quote": "Meta AI’s new Mac app wants you to talk to your apps"
+        },
+        {
+          "id": "CL-f39df2ace27b2791",
+          "subject": "Meta AI",
+          "object": "Mac 应用，支持系统级听写与屏幕问答",
+          "quote": "Meta today announced a new Mac app for Meta AI with built-in system-wide dictation. The app can also look at the current screen and answer your questions based on the context using its Muse Spark model."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-ca6a1f18e1157465",
+          "publisher": "TechCrunch：AI（RSS）",
+          "url": "https://techcrunch.com/2026/08/20/meta-ais-new-mac-app-wants-you-to-talk-to-your-apps"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/20/meta-ais-new-mac-app-wants-you-to-talk-to-your-apps",
+      "publisher": "TechCrunch：AI（RSS）",
+      "sourceExcerpt": "The Mac app release is part of a Meta AI update for business owners. The company said that merchants can connect their Instagram and Facebook accounts, Meta ad campaigns, and Google Workspace (Gmail, Docs, Sheets, and Slides) accounts to Meta AI and get insights by querying the AI assistant."
+    },
+    {
+      "id": "EV-b33e250220b91f9c",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Ramp 推出自研 AI 模型路由服务 Router",
+      "originalTitle": "",
+      "subject": "Ramp",
+      "action": "推出",
+      "object": "自研 AI 模型路由服务 Router",
+      "metrics": [
+        "$26 "
+      ],
+      "locations": [
+        "United States"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-f7d9f5a90479d632"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-f7d9f5a90479d632"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-f7d9f5a90479d632"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-f7d9f5a90479d632",
+        "EN-7f871cbf905f6e0c"
+      ],
+      "entityNames": [
+        "Ramp",
+        "OpenRouter"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-61668c5d1d180f3f",
+          "subject": "Ramp",
+          "object": "自研 AI 模型路由服务 Router",
+          "quote": "Ramp launches its own AI model router, called Router"
+        },
+        {
+          "id": "CL-160b853b886a7118",
+          "subject": "Ramp",
+          "object": "自研 AI 模型路由服务 Router",
+          "quote": "Ramp on Wednesday evening launched its own AI model routing service, dubbed Router , that lets users and companies use and switch between various large language models through an API. The company says it has been using the router it built for its own AI usage needs over the past three years."
+        },
+        {
+          "id": "CL-210bcb09879bd09e",
+          "subject": "Ramp",
+          "object": "自研 AI 模型路由服务 Router",
+          "quote": "The service is only available in the United States for now. It’s free to use for the remainder of 2026 (users will still have to pay for AI model inference costs), and it comes with a $26 credit launch offer. The company did not say how much the service will cost next year."
+        },
+        {
+          "id": "CL-b3bb2580b8a6a17c",
+          "subject": "Ramp",
+          "object": "自研 AI 模型路由服务 Router",
+          "quote": "Router functions similarly to OpenRouter, though the latter offers many more AI model options than Ramp’s current offerings."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-62d9d0ebc454593d",
+          "publisher": "TechCrunch：AI（RSS）",
+          "url": "https://techcrunch.com/2026/08/20/ramp-launches-its-own-ai-model-router-called-router"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/20/ramp-launches-its-own-ai-model-router-called-router",
+      "publisher": "TechCrunch：AI（RSS）",
+      "sourceExcerpt": "Ramp launches its own AI model router, called Router"
+    },
+    {
+      "id": "EV-cd7ba52564d4091e",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Hugging Face 发布 LFM2.5 系列 DSpark 草稿模型，推理速度最高提升 3.18 倍",
+      "originalTitle": "",
+      "subject": "Hugging Face",
+      "action": "发布 LFM2.5 系列 DSpark 草稿模型",
+      "object": "，推理速度最高提升 3.18 倍",
+      "metrics": [
+        "57%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-e3ce9cc5efa9354c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-e3ce9cc5efa9354c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-e3ce9cc5efa9354c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-e3ce9cc5efa9354c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-e3ce9cc5efa9354c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-e3ce9cc5efa9354c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-e3ce9cc5efa9354c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-e3ce9cc5efa9354c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-e3ce9cc5efa9354c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-e3ce9cc5efa9354c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-e3ce9cc5efa9354c",
+        "EN-869b70f1f380d952",
+        "EN-95dd5408be1680d0"
+      ],
+      "entityNames": [
+        "Hugging Face",
+        "LFM2.5",
+        "DSpark draft"
+      ],
+      "productName": "LFM2.5",
+      "products": [
+        {
+          "name": "LFM2.5",
+          "type": "模型",
+          "ownerNames": []
+        },
+        {
+          "name": "DSpark draft",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-54437538d75d3ddb",
+          "subject": "Hugging Face",
+          "object": "，推理速度最高提升 3.18 倍",
+          "quote": "Today, we release DSpark draft model checkpoints for three models from our LFM2.5 family: LFM2.5-1.2B-Instruct, LFM2.5-2.6B, and LFM2.5-8B-A1B. These add a speculative decoding path that trades a minimal memory increase for a large decoding speedup without changing output quality:"
+        },
+        {
+          "id": "CL-c9185ae89b825b62",
+          "subject": "Hugging Face",
+          "object": "，推理速度最高提升 3.18 倍",
+          "quote": "Faster inference : up to 3.18 throughput improvement on a GPU and up to 2.87x on-device."
+        },
+        {
+          "id": "CL-31487c8c461c6fbb",
+          "subject": "Hugging Face",
+          "object": "，推理速度最高提升 3.18 倍",
+          "quote": "Toward on-device agentic inference : cuts function-calling latency by 57% on average for LFM2.5-2.6B"
+        },
+        {
+          "id": "CL-c853f4680116202b",
+          "subject": "Hugging Face",
+          "object": "，推理速度最高提升 3.18 倍",
+          "quote": "Up to 3.2x Faster Inference with LFM2.5-DSpark"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-e18f21661f8206b5",
+          "publisher": "Hugging Face：Blog（RSS）",
+          "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark"
+        }
+      ],
+      "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+      "publisher": "Hugging Face：Blog（RSS）",
+      "sourceExcerpt": "Today, we release DSpark draft model checkpoints for three models from our LFM2.5 family: LFM2.5-1.2B-Instruct, LFM2.5-2.6B, and LFM2.5-8B-A1B. These add a speculative decoding path that trades a minimal memory increase for a large decoding speedup without changing output quality:"
+    },
+    {
+      "id": "EV-e3da5e799e746408",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "ChatGPT 推出 Apple Messages 插件，可直接代发短信",
+      "originalTitle": "",
+      "subject": "ChatGPT",
+      "action": "推出",
+      "object": "Apple Messages 插件，可直接代发短信",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-60965168ce762e94",
+        "EN-3a7bd3e2360a3d29",
+        "EN-7d3194f79e645c42",
+        "EN-2e27a4ab28dcad40",
+        "EN-d5e00f83f15acb4a"
+      ],
+      "entityNames": [
+        "ChatGPT",
+        "Apple",
+        "OpenAI",
+        "Messages",
+        "Messages plug-in"
+      ],
+      "productName": "Messages",
+      "products": [
+        {
+          "name": "Messages",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Apple"
+          ]
+        },
+        {
+          "name": "Messages plug-in",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Apple"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-a15196f326056940",
+          "subject": "ChatGPT",
+          "object": "Apple Messages 插件，可直接代发短信",
+          "quote": "If you’ve ever wanted to share all of your digital conversations with OpenAI, we have good news for you: The AI lab has just launched an Apple Messages plug-in for ChatGPT, allowing interested users to connect their Messages inbox with the chatbot."
+        },
+        {
+          "id": "CL-b998c89595031528",
+          "subject": "ChatGPT",
+          "object": "Apple Messages 插件，可直接代发短信",
+          "quote": "The benefits of doing this, OpenAI argues, are numerous. Users can use the plug-in to sort, analyze, or edit their messages directly from ChatGPT. The plug-in also works with Codex and ChatGPT Work, so users can use it professionally, not just personally."
+        },
+        {
+          "id": "CL-f0e0d148d4005eda",
+          "subject": "ChatGPT",
+          "object": "Apple Messages 插件，可直接代发短信",
+          "quote": "A brief commercial advertising the new plug-in shows a user asking the chatbot to suggest follow-up messages to their contacts based on the messages received the previous day."
+        },
+        {
+          "id": "CL-d1d9d6787f673160",
+          "subject": "ChatGPT",
+          "object": "Apple Messages 插件，可直接代发短信",
+          "quote": "ChatGPT can now send texts for you with new Apple Messages plug-in"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-c30f3ac9e4393bd2",
+          "publisher": "TechCrunch：AI（RSS）",
+          "url": "https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin",
+      "publisher": "TechCrunch：AI（RSS）",
+      "sourceExcerpt": "If you’ve ever wanted to share all of your digital conversations with OpenAI, we have good news for you: The AI lab has just launched an Apple Messages plug-in for ChatGPT, allowing interested users to connect their Messages inbox with the chatbot."
+    },
+    {
+      "id": "EV-fabb3080e5263d33",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Claude Platform 正式上线 Computer Use、Skills API 与 Files API，新增浏览器操作工具",
+      "originalTitle": "",
+      "subject": "Claude Platform 正式上线 Computer Use、Skills API 与 Files API，",
+      "action": "新增",
+      "object": "浏览器操作工具",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-4c4ee09fd90816ac",
+        "EN-03b48a9dc95cf779",
+        "EN-729324072d368379",
+        "EN-3aa38718f0399af9"
+      ],
+      "entityNames": [
+        "Skills API",
+        "Files API",
+        "Claude",
+        "Computer Use"
+      ],
+      "productName": "Claude",
+      "products": [
+        {
+          "name": "Claude",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Computer Use",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-b410d86377ac7080",
+          "subject": "Claude Platform 正式上线 Computer Use、Skills API 与 Files API，",
+          "object": "浏览器操作工具",
+          "quote": "Computer use, the Skills API, and the Files API are generally available on the Claude Platform today. Computer use also adds a new browser use tool for agents that work in web applications. Together they let you build agents that operate software, apply your team's expertise, and return finished files."
+        },
+        {
+          "id": "CL-3e20f010e2f2a7a1",
+          "subject": "Claude Platform 正式上线 Computer Use、Skills API 与 Files API，",
+          "object": "浏览器操作工具",
+          "quote": "Browser use tool: new in computer use today. It uses the same multi-action turns and adds page structure, so agents target web elements more reliably than with pixels alone."
+        },
+        {
+          "id": "CL-a1693bdeb66b4f7a",
+          "subject": "Claude Platform 正式上线 Computer Use、Skills API 与 Files API，",
+          "object": "浏览器操作工具",
+          "quote": "Building agents on the Claude Platform"
+        },
+        {
+          "id": "CL-0c08dcbce4a5f201",
+          "subject": "Claude Platform 正式上线 Computer Use、Skills API 与 Files API，",
+          "object": "浏览器操作工具",
+          "quote": "Computer use lets you build agents that operate software they can see. Given a screenshot, the agent clicks, types, and scrolls the way someone at the keyboard would. That lets it work in applications that were never built for automation. The new browser use tool extends this to the web. Alongside the screenshot, the agent reads the structure of the page and acts on a specific field or button rather than a position on screen."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-68b08ac0133b6643",
+          "publisher": "Claude：Blog（网页）",
+          "url": "https://claude.com/blog/computer-use-skills-api-files-api"
+        }
+      ],
+      "sourceUrl": "https://claude.com/blog/computer-use-skills-api-files-api",
+      "publisher": "Claude：Blog（网页）",
+      "sourceExcerpt": "Computer use, the Skills API, and the Files API are generally available on the Claude Platform today. Computer use also adds a new browser use tool for agents that work in web applications. Together they let you build agents that operate software, apply your team's expertise, and return finished files."
+    },
+    {
       "id": "EV-46cd64a76d3767f5",
       "dataDate": "2026-08-20",
       "date": "2026-08-20",
@@ -175477,6 +177504,526 @@
       "sourceExcerpt": "Our new methodology composes of many new features and improvements. We now use a much higher-quality imatrix calibration dataset from diverse sources. The dataset is refined for agentic coding, chat , and multilingual performance. We also improved layer selection and introduced many more quantization techniques to preserve as much model quality as possible."
     },
     {
+      "id": "EV-30585effe9134084",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-21",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "KT推出企业级“主权AI”，整合国产半导体与LLM",
+      "originalTitle": "KT Launches Enterprise 'Sovereign AI' Integrating Domestic Semiconductor and LLM - The Asia Business Daily",
+      "subject": "KT",
+      "action": "Launches Enterprise 'Sovereign AI' Integrating Domestic Semiconductor and LLM",
+      "object": "- The Asia Business Daily",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-99d3fd0fa8fe115e",
+        "EN-9e7dc88eea20c796",
+        "EN-0f4929b20cd54749",
+        "EN-0ad2e7b049b11158"
+      ],
+      "entityNames": [
+        "KT",
+        "Asia Business Daily",
+        "Sovereign AI",
+        "Integrating Domestic Semiconductor"
+      ],
+      "productName": "Asia Business Daily",
+      "products": [
+        {
+          "name": "Asia Business Daily",
+          "type": "模型",
+          "ownerNames": [
+            "KT"
+          ]
+        },
+        {
+          "name": "Sovereign AI",
+          "type": "模型",
+          "ownerNames": [
+            "KT"
+          ]
+        },
+        {
+          "name": "Integrating Domestic Semiconductor",
+          "type": "模型",
+          "ownerNames": [
+            "KT"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-45df5bcc6da59e59",
+          "subject": "KT",
+          "object": "- The Asia Business Daily",
+          "quote": "KT Launches Enterprise 'Sovereign AI' Integrating Domestic Semiconductor and LLM"
+        },
+        {
+          "id": "CL-deb8a737efe00706",
+          "subject": "KT",
+          "object": "- The Asia Business Daily",
+          "quote": "Published 19 Aug.2026 09:58(KST)"
+        },
+        {
+          "id": "CL-4bbdfd29a729d0f6",
+          "subject": "KT",
+          "object": "- The Asia Business Daily",
+          "quote": "Rebellions 'Atom-Max' Integrated with KT LLM and API"
+        },
+        {
+          "id": "CL-052f1b9cc8482994",
+          "subject": "KT",
+          "object": "- The Asia Business Daily",
+          "quote": "On August 19, KT announced the launch of an enterprise sovereign AI appliance that integrates a domestically developed artificial intelligence (AI) semiconductor and a large language model (LLM) within a single server."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-135eabd9dc1aca18",
+          "publisher": "asiae.co.kr",
+          "url": "https://asiae.co.kr/en/article/2026081909580277651"
+        }
+      ],
+      "sourceUrl": "https://asiae.co.kr/en/article/2026081909580277651",
+      "publisher": "asiae.co.kr",
+      "sourceExcerpt": "KT Launches Enterprise 'Sovereign AI' Integrating Domestic Semiconductor and LLM"
+    },
+    {
+      "id": "EV-4c168759119d2668",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-21",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "KT推出搭载韩国AI芯片的NPU LLM Station",
+      "originalTitle": "KT launches NPU LLM Station featuring Korean AI chip",
+      "subject": "KT",
+      "action": "launches NPU LLM",
+      "object": "Station featuring Korean AI chip",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-99d3fd0fa8fe115e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-99d3fd0fa8fe115e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-99d3fd0fa8fe115e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-99d3fd0fa8fe115e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-99d3fd0fa8fe115e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-99d3fd0fa8fe115e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-99d3fd0fa8fe115e",
+        "EN-2ea859d02e5eb089",
+        "EN-942d023fd3168d40"
+      ],
+      "entityNames": [
+        "KT",
+        "Korean AI",
+        "NPU LLM Station"
+      ],
+      "productName": "Korean AI",
+      "products": [
+        {
+          "name": "Korean AI",
+          "type": "模型",
+          "ownerNames": [
+            "KT"
+          ]
+        },
+        {
+          "name": "NPU LLM Station",
+          "type": "模型",
+          "ownerNames": [
+            "KT"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-d9d15b5cc41e7ea7",
+          "subject": "KT",
+          "object": "Station featuring Korean AI chip",
+          "quote": "KT has launched the enterprise sovereign AI appliance \"KT NPU LLM Station.\" [Photo: KT]"
+        },
+        {
+          "id": "CL-e9f330df24e0b7c2",
+          "subject": "KT",
+          "object": "Station featuring Korean AI chip",
+          "quote": "KT said on Aug. 19 it has launched the enterprise sovereign AI appliance \"KT NPU LLM Station.\""
+        },
+        {
+          "id": "CL-d7b9dba561b48d5f",
+          "subject": "KT",
+          "object": "Station featuring Korean AI chip",
+          "quote": "KT has released an enterprise sovereign AI product that integrates a Korean-made AI chip and its own large language model (LLM) into a single server."
+        },
+        {
+          "id": "CL-bdb353c7641d013e",
+          "subject": "KT",
+          "object": "Station featuring Korean AI chip",
+          "quote": "The KT NPU LLM Station is an all-in-one product that runs KT's self-developed LLM \"Mi:deum K 2.5 Pro\" and an operating API platform on the neural processing unit (NPU) \"ATOM-MAX\" made by South Korean AI chip company Rebellion."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-d59a2f78c6134a26",
+          "publisher": "digitaltoday.co.kr",
+          "url": "https://digitaltoday.co.kr/en/view/94279/kt-launches-npu-llm-station-featuring-korean-ai-chip"
+        }
+      ],
+      "sourceUrl": "https://digitaltoday.co.kr/en/view/94279/kt-launches-npu-llm-station-featuring-korean-ai-chip",
+      "publisher": "digitaltoday.co.kr",
+      "sourceExcerpt": "KT has launched the enterprise sovereign AI appliance \"KT NPU LLM Station.\" [Photo: KT]"
+    },
+    {
+      "id": "EV-937b855e723d6ef0",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Mojo🔥现已开源",
+      "originalTitle": "Mojo🔥 is now open source",
+      "subject": "Mojo🔥 is now",
+      "action": "open source",
+      "object": "Mojo🔥 is now open source",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bb15c5437cc0ac44",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "Mojo🔥 is now",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-29ff434799673dd7",
+          "subject": "Mojo🔥 is now",
+          "object": "Mojo🔥 is now open source",
+          "quote": "Mojo🔥 is now open source"
+        },
+        {
+          "id": "CL-52e7ee2bdaf1113f",
+          "subject": "Mojo🔥 is now",
+          "object": "Mojo🔥 is now open source ( via ) The Mojo programming language has been promising an open source release since May 2023 . Last week they shipped their 1.0 and today they have followed through on that original promise, releasing the compiler and toolchain under an Apache 2 license.",
+          "quote": "Mojo🔥 is now open source ( via ) The Mojo programming language has been promising an open source release since May 2023 . Last week they shipped their 1.0 and today they have followed through on that original promise, releasing the compiler and toolchain under an Apache 2 license."
+        },
+        {
+          "id": "CL-1f3ec50029afd661",
+          "subject": "Mojo🔥 is now",
+          "object": "When Mojo first launched the stated goal was to produce a superset of Python, so existing Python code could be used to bootstrap their own ecosystem. That plan changed around August 2025 :",
+          "quote": "When Mojo first launched the stated goal was to produce a superset of Python, so existing Python code could be used to bootstrap their own ecosystem. That plan changed around August 2025 :"
+        },
+        {
+          "id": "CL-bd6ba472f64b1f7c",
+          "subject": "Mojo🔥 is now",
+          "object": "Now we have a timeline of the OpenAI accidental attack against Hugging Face - 7th August 2026",
+          "quote": "Now we have a timeline of the OpenAI accidental attack against Hugging Face - 7th August 2026"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-923419a5a43582c4",
+          "publisher": "Simon Willison's Blog",
+          "url": "https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source"
+        }
+      ],
+      "sourceUrl": "https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source",
+      "publisher": "Simon Willison's Blog",
+      "sourceExcerpt": "Mojo🔥 is now open source"
+    },
+    {
+      "id": "EV-d93dd19a481307ec",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-21",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "韩国首款主权 AI 一体机出货：国产芯片、国产 LLM 集成于单台服务器",
+      "originalTitle": "Korea's First Sovereign AI Appliance Ships: Domestic Chip, Domestic LLM, One Server",
+      "subject": "Korea's First Sovereign AI Appliance",
+      "action": "Ships: Domestic Chip, Domestic LLM, One Server",
+      "object": "Korea's First Sovereign AI Appliance Ships: Domestic Chip, Domestic LLM, One Server",
+      "metrics": [
+        "32 billion"
+      ],
+      "locations": [
+        "Korea"
+      ],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-99d3fd0fa8fe115e",
+        "EN-7d3194f79e645c42",
+        "EN-bbdefa2950f49882",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3c8fb6fa445060",
+        "EN-b563f0c46d6f78f8"
+      ],
+      "entityNames": [
+        "KT",
+        "OpenAI",
+        "Google",
+        "Anthropic",
+        "AI Appliance Ships",
+        "First Sovereign AI Appliance"
+      ],
+      "productName": "AI Appliance Ships",
+      "products": [
+        {
+          "name": "AI Appliance Ships",
+          "type": "AI 硬件",
+          "ownerNames": [
+            "KT"
+          ]
+        },
+        {
+          "name": "First Sovereign AI Appliance",
+          "type": "AI 硬件",
+          "ownerNames": [
+            "KT"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-65fd81364cb539f2",
+          "subject": "Korea's First Sovereign AI Appliance",
+          "object": "Korea Telecom launched the KT NPU LLM Station on Wednesday &mdash; the first commercially available enterprise AI appliance to pair a Korean-made inference chip with a Korean-developed large language model in a single on-premises server &mdash; targeting a regulated-industry market that has been structurally locked out of generative AI by the country's strict network-separation rules .",
+          "quote": "Korea Telecom launched the KT NPU LLM Station on Wednesday &mdash; the first commercially available enterprise AI appliance to pair a Korean-made inference chip with a Korean-developed large language model in a single on-premises server &mdash; targeting a regulated-industry market that has been structurally locked out of generative AI by the country's strict network-separation rules ."
+        },
+        {
+          "id": "CL-1bcaac8cd8ad65dd",
+          "subject": "Korea's First Sovereign AI Appliance",
+          "object": "South Korea's mangjuri regulation &mdash; which requires government agencies, defense contractors, pharmaceutical firms, financial institutions, and manufacturers to physically air-gap their internal networks from the public internet &mdash; has made cloud-based generative AI services legally incompatible with the systems these organizations use for their most sensitive work. KT's appliance is the first product built specifically to resolve that constraint by keeping every byte of AI computation inside the customer's own facility, on Korean-made silicon, running a Korean-developed model.",
+          "quote": "South Korea's mangjuri regulation &mdash; which requires government agencies, defense contractors, pharmaceutical firms, financial institutions, and manufacturers to physically air-gap their internal networks from the public internet &mdash; has made cloud-based generative AI services legally incompatible with the systems these organizations use for their most sensitive work. KT's appliance is the first product built specifically to resolve that constraint by keeping every byte of AI computation inside the customer's own facility, on Korean-made silicon, running a Korean-developed model."
+        },
+        {
+          "id": "CL-98023d6a1aa17831",
+          "subject": "Korea's First Sovereign AI Appliance",
+          "object": "Rebellions' ATOM-MAX: What Makes the Chip Work",
+          "quote": "Rebellions' ATOM-MAX: What Makes the Chip Work"
+        },
+        {
+          "id": "CL-68b2369bc3f9afde",
+          "subject": "Korea's First Sovereign AI Appliance",
+          "object": "The important caveat for enterprise buyers is scale. At 32 billion parameters, Mi:dm K 2.5 Pro sits well below the frontier-model tier &mdash; the leading models from OpenAI, Google, and Anthropic operate at hundreds of billions to trillions of effective parameters. Korean sovereign AI competitors SK Telecom and LG AI Research released models in the 700-billion-parameter range in late July 2026 &mdash; covered in detail in our prior sovereign AI coverage . Mi:dm K 2.5 Pro is not designed to compete on raw capability with frontier models; it is designed to deliver enterprise-grade Korean-language reasoning within the memory and power budget of an on-premises server that complies with mangjuri. That is a genuine tradeoff, and buyers in regulated sectors should weigh it: a 32B-parameter model running locally is materially less capable than a 400B-parameter model accessed via API &mdash; but for an organization whose data cannot legally leave its facility, the API option does not exist.",
+          "quote": "The important caveat for enterprise buyers is scale. At 32 billion parameters, Mi:dm K 2.5 Pro sits well below the frontier-model tier &mdash; the leading models from OpenAI, Google, and Anthropic operate at hundreds of billions to trillions of effective parameters. Korean sovereign AI competitors SK Telecom and LG AI Research released models in the 700-billion-parameter range in late July 2026 &mdash; covered in detail in our prior sovereign AI coverage . Mi:dm K 2.5 Pro is not designed to compete on raw capability with frontier models; it is designed to deliver enterprise-grade Korean-language reasoning within the memory and power budget of an on-premises server that complies with mangjuri…"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-30a50d9be011e4c2",
+          "publisher": "techtimes.com",
+          "url": "https://techtimes.com/articles/324976/20260819/koreas-first-sovereign-ai-appliance-ships-domestic-chip-domestic-llm-one-server.htm"
+        }
+      ],
+      "sourceUrl": "https://techtimes.com/articles/324976/20260819/koreas-first-sovereign-ai-appliance-ships-domestic-chip-domestic-llm-one-server.htm",
+      "publisher": "techtimes.com",
+      "sourceExcerpt": "Korea Telecom launched the KT NPU LLM Station on Wednesday &mdash; the first commercially available enterprise AI appliance to pair a Korean-made inference chip with a Korean-developed large language model in a single on-premises server &mdash; targeting a regulated-industry market that has been structurally locked out of generative AI by the country's strict network-separation rules ."
+    },
+    {
       "id": "EV-2c6707327367640f",
       "dataDate": "2026-08-20",
       "date": "2026-08-19",
@@ -175806,88 +178353,6 @@
       "sourceUrl": "https://qbitai.com/2026/08/475901.html",
       "publisher": "量子位",
       "sourceExcerpt": "IDC发布2026中国AI50强：360以“智能体+安全”双轮驱动入选"
-    },
-    {
-      "id": "EV-937b855e723d6ef0",
-      "dataDate": "2026-08-20",
-      "date": "2026-08-19",
-      "updatedDate": "2026-08-20",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Mojo🔥现已开源",
-      "originalTitle": "Mojo🔥 is now open source",
-      "subject": "Mojo🔥 is now",
-      "action": "open source",
-      "object": "Mojo🔥 is now open source",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [
-        "object"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-bb15c5437cc0ac44",
-        "EN-7d3194f79e645c42"
-      ],
-      "entityNames": [
-        "Mojo🔥 is now",
-        "OpenAI"
-      ],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-4facc001ac639cf7",
-          "subject": "Mojo🔥 is now",
-          "object": "Mojo🔥 is now open source",
-          "quote": "Mojo🔥 is now open source"
-        },
-        {
-          "id": "CL-140d1c1d10f9a548",
-          "subject": "Mojo🔥 is now",
-          "object": "Mojo🔥 is now open source ( via ) The Mojo programming language has been promising an open source release since May 2023 . Last week they shipped their 1.0 and today they have followed through on that original promise, releasing the compiler and toolchain under an Apache 2 license.",
-          "quote": "Mojo🔥 is now open source ( via ) The Mojo programming language has been promising an open source release since May 2023 . Last week they shipped their 1.0 and today they have followed through on that original promise, releasing the compiler and toolchain under an Apache 2 license."
-        },
-        {
-          "id": "CL-7566043f5f4143be",
-          "subject": "Mojo🔥 is now",
-          "object": "When Mojo first launched the stated goal was to produce a superset of Python, so existing Python code could be used to bootstrap their own ecosystem. That plan changed around August 2025 :",
-          "quote": "When Mojo first launched the stated goal was to produce a superset of Python, so existing Python code could be used to bootstrap their own ecosystem. That plan changed around August 2025 :"
-        },
-        {
-          "id": "CL-2f1dd77770e56e2f",
-          "subject": "Mojo🔥 is now",
-          "object": "Now we have a timeline of the OpenAI accidental attack against Hugging Face - 7th August 2026",
-          "quote": "Now we have a timeline of the OpenAI accidental attack against Hugging Face - 7th August 2026"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-923419a5a43582c4",
-          "publisher": "Simon Willison's Blog",
-          "url": "https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source"
-        }
-      ],
-      "sourceUrl": "https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source",
-      "publisher": "Simon Willison's Blog",
-      "sourceExcerpt": "Mojo🔥 is now open source"
     },
     {
       "id": "EV-9d53b12f5f077d3b",
@@ -176270,172 +178735,6 @@
       "sourceUrl": "https://sspai.com/post/113607",
       "publisher": "少数派",
       "sourceExcerpt": "派早报：iQOO 发布手机新品、闪极举行 Loomos AI 眼镜发布会等"
-    },
-    {
-      "id": "EV-d93dd19a481307ec",
-      "dataDate": "2026-08-20",
-      "date": "2026-08-19",
-      "updatedDate": "2026-08-20",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "eventGroup": "AI 硬件",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "韩国首款主权 AI 一体机出货：国产芯片、国产 LLM 集成于单台服务器",
-      "originalTitle": "Korea's First Sovereign AI Appliance Ships: Domestic Chip, Domestic LLM, One Server",
-      "subject": "Korea's First Sovereign AI Appliance",
-      "action": "Ships: Domestic Chip, Domestic LLM, One Server",
-      "object": "Korea's First Sovereign AI Appliance Ships: Domestic Chip, Domestic LLM, One Server",
-      "metrics": [
-        "32 billion"
-      ],
-      "locations": [
-        "Korea"
-      ],
-      "missingFields": [
-        "object"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "model",
-            "name": "模型",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "chip_accelerator",
-            "name": "芯片与加速器",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-99d3fd0fa8fe115e",
-        "EN-7d3194f79e645c42",
-        "EN-bbdefa2950f49882",
-        "EN-c70eca6b0f88f44d",
-        "EN-7d3c8fb6fa445060",
-        "EN-b563f0c46d6f78f8"
-      ],
-      "entityNames": [
-        "KT",
-        "OpenAI",
-        "Google",
-        "Anthropic",
-        "AI Appliance Ships",
-        "First Sovereign AI Appliance"
-      ],
-      "productName": "AI Appliance Ships",
-      "products": [
-        {
-          "name": "AI Appliance Ships",
-          "type": "AI 硬件",
-          "ownerNames": [
-            "KT"
-          ]
-        },
-        {
-          "name": "First Sovereign AI Appliance",
-          "type": "AI 硬件",
-          "ownerNames": [
-            "KT"
-          ]
-        }
-      ],
-      "claims": [
-        {
-          "id": "CL-ff571bc346130784",
-          "subject": "Korea's First Sovereign AI Appliance",
-          "object": "Korea Telecom launched the KT NPU LLM Station on Wednesday &mdash; the first commercially available enterprise AI appliance to pair a Korean-made inference chip with a Korean-developed large language model in a single on-premises server &mdash; targeting a regulated-industry market that has been structurally locked out of generative AI by the country's strict network-separation rules .",
-          "quote": "Korea Telecom launched the KT NPU LLM Station on Wednesday &mdash; the first commercially available enterprise AI appliance to pair a Korean-made inference chip with a Korean-developed large language model in a single on-premises server &mdash; targeting a regulated-industry market that has been structurally locked out of generative AI by the country's strict network-separation rules ."
-        },
-        {
-          "id": "CL-f2b81248c692db79",
-          "subject": "Korea's First Sovereign AI Appliance",
-          "object": "South Korea's mangjuri regulation &mdash; which requires government agencies, defense contractors, pharmaceutical firms, financial institutions, and manufacturers to physically air-gap their internal networks from the public internet &mdash; has made cloud-based generative AI services legally incompatible with the systems these organizations use for their most sensitive work. KT's appliance is the first product built specifically to resolve that constraint by keeping every byte of AI computation inside the customer's own facility, on Korean-made silicon, running a Korean-developed model.",
-          "quote": "South Korea's mangjuri regulation &mdash; which requires government agencies, defense contractors, pharmaceutical firms, financial institutions, and manufacturers to physically air-gap their internal networks from the public internet &mdash; has made cloud-based generative AI services legally incompatible with the systems these organizations use for their most sensitive work. KT's appliance is the first product built specifically to resolve that constraint by keeping every byte of AI computation inside the customer's own facility, on Korean-made silicon, running a Korean-developed model."
-        },
-        {
-          "id": "CL-fa6e0762ac395061",
-          "subject": "Korea's First Sovereign AI Appliance",
-          "object": "Rebellions' ATOM-MAX: What Makes the Chip Work",
-          "quote": "Rebellions' ATOM-MAX: What Makes the Chip Work"
-        },
-        {
-          "id": "CL-d0de952d3a38239f",
-          "subject": "Korea's First Sovereign AI Appliance",
-          "object": "The important caveat for enterprise buyers is scale. At 32 billion parameters, Mi:dm K 2.5 Pro sits well below the frontier-model tier &mdash; the leading models from OpenAI, Google, and Anthropic operate at hundreds of billions to trillions of effective parameters. Korean sovereign AI competitors SK Telecom and LG AI Research released models in the 700-billion-parameter range in late July 2026 &mdash; covered in detail in our prior sovereign AI coverage . Mi:dm K 2.5 Pro is not designed to compete on raw capability with frontier models; it is designed to deliver enterprise-grade Korean-language reasoning within the memory and power budget of an on-premises server that complies with mangjuri. That is a genuine tradeoff, and buyers in regulated sectors should weigh it: a 32B-parameter model running locally is materially less capable than a 400B-parameter model accessed via API &mdash; but for an organization whose data cannot legally leave its facility, the API option does not exist.",
-          "quote": "The important caveat for enterprise buyers is scale. At 32 billion parameters, Mi:dm K 2.5 Pro sits well below the frontier-model tier &mdash; the leading models from OpenAI, Google, and Anthropic operate at hundreds of billions to trillions of effective parameters. Korean sovereign AI competitors SK Telecom and LG AI Research released models in the 700-billion-parameter range in late July 2026 &mdash; covered in detail in our prior sovereign AI coverage . Mi:dm K 2.5 Pro is not designed to compete on raw capability with frontier models; it is designed to deliver enterprise-grade Korean-language reasoning within the memory and power budget of an on-premises server that complies with mangjuri…"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-30a50d9be011e4c2",
-          "publisher": "techtimes.com",
-          "url": "https://techtimes.com/articles/324976/20260819/koreas-first-sovereign-ai-appliance-ships-domestic-chip-domestic-llm-one-server.htm"
-        }
-      ],
-      "sourceUrl": "https://techtimes.com/articles/324976/20260819/koreas-first-sovereign-ai-appliance-ships-domestic-chip-domestic-llm-one-server.htm",
-      "publisher": "techtimes.com",
-      "sourceExcerpt": "Korea Telecom launched the KT NPU LLM Station on Wednesday &mdash; the first commercially available enterprise AI appliance to pair a Korean-made inference chip with a Korean-developed large language model in a single on-premises server &mdash; targeting a regulated-industry market that has been structurally locked out of generative AI by the country's strict network-separation rules ."
     },
     {
       "id": "EV-3a4acc92731cb5ac",
@@ -310829,6 +313128,250 @@
       "sourceUrl": "https://simonwillison.net/2026/Jul/20/sam-altman",
       "publisher": "Simon Willison 博客",
       "sourceExcerpt": "one thing we’d like to do soon is to create a language model with the approximate capability of GPT-3 that can run locally on consumer hardware and release that."
+    },
+    {
+      "id": "EV-0316daa863daf685",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "前沿雷达 #4：中国已迎头赶上，西方AI领先优势还剩什么？",
+      "originalTitle": "Frontier Radar #4: China has caught up, so what's left of the Western AI lead?",
+      "subject": "Frontier Radar #4: China has caught up, so what's",
+      "action": "left",
+      "object": "of the Western AI lead?",
+      "metrics": [],
+      "locations": [
+        "China"
+      ],
+      "missingFields": [
+        "entities"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-acee46e0c84e0f74",
+          "subject": "Frontier Radar #4: China has caught up, so what's",
+          "object": "of the Western AI lead?",
+          "quote": "Frontier Radar #4: China has caught up, so what's left of the Western AI lead?"
+        },
+        {
+          "id": "CL-f548b263baad7867",
+          "subject": "Frontier Radar #4: China has caught up, so what's",
+          "object": "of the Western AI lead?",
+          "quote": "Frontier Radar #4: China has caught up, so what's left of the Western AI lead?"
+        },
+        {
+          "id": "CL-64679fb5e2f61b56",
+          "subject": "Frontier Radar #4: China has caught up, so what's",
+          "object": "of the Western AI lead?",
+          "quote": "Frontier Radar #4: China has caught up, so what's left of the Western AI lead?"
+        },
+        {
+          "id": "CL-886e41c2244a4a64",
+          "subject": "Frontier Radar #4: China has caught up, so what's",
+          "object": "of the Western AI lead?",
+          "quote": "What's left of the lead"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-6c7a4c84c6b883eb",
+          "publisher": "The Decoder AI News",
+          "url": "https://the-decoder.com/frontier-radar-4-china-has-caught-up-so-whats-left-of-the-western-ai-lead"
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/frontier-radar-4-china-has-caught-up-so-whats-left-of-the-western-ai-lead",
+      "publisher": "The Decoder AI News",
+      "sourceExcerpt": "Frontier Radar #4: China has caught up, so what's left of the Western AI lead?"
+    },
+    {
+      "id": "EV-2e45b802ea23ea02",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "研究：ChatGPT发布以来，三分之一的网页显示AI创作痕迹",
+      "originalTitle": "A third of web pages published since ChatGPT’s launch show signs of AI authorship, study finds",
+      "subject": "A third of web pages published since ChatGPT’s launch show signs of AI authorship,",
+      "action": "study finds",
+      "object": "A third of web pages published since ChatGPT’s launch show signs of AI authorship, study finds",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-d1ad14d4ad57d207"
+      ],
+      "entityNames": [
+        "ChatGPT"
+      ],
+      "productName": "ChatGPT",
+      "products": [
+        {
+          "name": "ChatGPT",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-65d8de1f40925895",
+          "subject": "A third of web pages published since ChatGPT’s launch show signs of AI authorship,",
+          "object": "A third of web pages published since ChatGPT’s launch show signs of AI authorship, study finds",
+          "quote": "A third of web pages published since ChatGPT’s launch show signs of AI authorship, study finds"
+        },
+        {
+          "id": "CL-dd30ce1128ca366d",
+          "subject": "A third of web pages published since ChatGPT’s launch show signs of AI authorship,",
+          "object": "Over one-third of web pages published after the release of ChatGPT show signs of being written by AI, according to a new study from Pew Research released on Thursday. The report corroborates other studies that detail how much of the web’s newer web pages are now either written by or “substantially edited” by AI, the firm says.",
+          "quote": "Over one-third of web pages published after the release of ChatGPT show signs of being written by AI, according to a new study from Pew Research released on Thursday. The report corroborates other studies that detail how much of the web’s newer web pages are now either written by or “substantially edited” by AI, the firm says."
+        },
+        {
+          "id": "CL-0635c5339af0cf4b",
+          "subject": "A third of web pages published since ChatGPT’s launch show signs of AI authorship,",
+          "object": "10:18 AM PDT · August 20, 2026",
+          "quote": "10:18 AM PDT · August 20, 2026"
+        },
+        {
+          "id": "CL-75b5cba4c4e57124",
+          "subject": "A third of web pages published since ChatGPT’s launch show signs of AI authorship,",
+          "object": "It also arrives shortly after internet infrastructure provider Cloudflare reported that bot web traffic had overtaken human web traffic — a milestone that was reached sooner than the company had estimated.",
+          "quote": "It also arrives shortly after internet infrastructure provider Cloudflare reported that bot web traffic had overtaken human web traffic — a milestone that was reached sooner than the company had estimated."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-518851a8bc7dfe39",
+          "publisher": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds",
+      "publisher": "TechCrunch AI",
+      "sourceExcerpt": "A third of web pages published since ChatGPT’s launch show signs of AI authorship, study finds"
+    },
+    {
+      "id": "EV-c3e74686e507fef1",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "宾州AI数据中心监管新模板：无需新立法即可落地",
+      "originalTitle": "",
+      "subject": "宾州AI数据中心",
+      "action": "监管",
+      "object": "新模板：无需新立法即可落地",
+      "metrics": [],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-af4eef3d29989aa9"
+      ],
+      "entityNames": [
+        "宾州AI数据中心"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-6f78dd2870e5de09",
+          "subject": "宾州AI数据中心",
+          "object": "新模板：无需新立法即可落地",
+          "quote": "AI data centre regulation just got a template that needs no new law"
+        },
+        {
+          "id": "CL-b504e486f484e5ad",
+          "subject": "宾州AI数据中心",
+          "object": "新模板：无需新立法即可落地",
+          "quote": "Governance, Regulation & Policy"
+        },
+        {
+          "id": "CL-c6440641492cd9da",
+          "subject": "宾州AI数据中心",
+          "object": "新模板：无需新立法即可落地",
+          "quote": "AI data centre regulation in Pennsylvania now begins with a signature. Before the state will so much as open a developer’s permit file, that developer has to sign a contract accepting a fixed set of conditions and the penalties for breaking them, and persuade the town that has to live with the building to say yes."
+        },
+        {
+          "id": "CL-c02fb13b49b8770e",
+          "subject": "宾州AI数据中心",
+          "object": "新模板：无需新立法即可落地",
+          "quote": "Governor Josh Shapiro signed Executive Order 2026-05 in the US state’s capital, Harrisburg, on Tuesday. It directs the Department of Environmental Protection to review permit applications from proposed data centres only where the developer has committed to the Governor’s Responsible Infrastructure Development (GRID) Requirements through a Consent Order and Agreement, and has already secured local approval. It took effect immediately and covers all new applications. The template agreement was published the same day."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-d0504398771a00c7",
+          "publisher": "Artificial Intelligence News（RSS）",
+          "url": "https://artificialintelligence-news.com/news/ai-data-centre-regulation-pennsylvania-template"
+        }
+      ],
+      "sourceUrl": "https://artificialintelligence-news.com/news/ai-data-centre-regulation-pennsylvania-template",
+      "publisher": "Artificial Intelligence News（RSS）",
+      "sourceExcerpt": "AI data centre regulation just got a template that needs no new law"
     },
     {
       "id": "EV-0c00a6c681f22b98",
