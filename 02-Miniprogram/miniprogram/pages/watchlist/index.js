@@ -14,6 +14,7 @@ Page({
   },
 
   onLoad() {
+    if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
     this.refresh("all");
     refreshReportData().then(() => this.refresh(this.data.activeType));
   },
@@ -42,4 +43,10 @@ Page({
     wx.navigateTo({ url: `/pages/report-detail/index?id=${id}` });
   },
   openSaved() { wx.navigateTo({ url: "/pages/saved/index" }); },
+  onShareAppMessage() {
+    return { title: "观澜 AI 商业观察", path: "/pages/watchlist/index" };
+  },
+  onShareTimeline() {
+    return { title: "观澜 AI 商业观察" };
+  },
 });

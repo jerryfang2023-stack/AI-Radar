@@ -37,6 +37,7 @@ Page({
   },
 
   onLoad() {
+    if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
     this.allCards = bundledFundingIndex.cards;
     this.filteredCards = [];
     this.pageSize = 36;
@@ -175,4 +176,12 @@ Page({
   },
 
   openWatchlist() { wx.navigateTo({ url: "/pages/saved/index" }); },
+
+  onShareAppMessage() {
+    return { title: "观澜 AI 融资情报", path: "/pages/terminal/index" };
+  },
+
+  onShareTimeline() {
+    return { title: "观澜 AI 融资情报" };
+  },
 });

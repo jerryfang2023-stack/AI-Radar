@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "latestDataDate": "2026-08-21",
+    "currentDate": "2026-08-21",
+    "eventCount": 2267,
+    "quarantinedEventCount": 20
+  },
+  "entity": {
+    "id": "EN-2ea859d02e5eb089",
+    "name": "Korean AI",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-4c168759119d2668"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-19",
+    "lastSeen": "2026-08-21",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-4c168759119d2668"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-4c168759119d2668",
+        "dataDate": "2026-08-21",
+        "date": "2026-08-19",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "KT推出搭载韩国AI芯片的NPU LLM Station",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-99d3fd0fa8fe115e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-99d3fd0fa8fe115e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-99d3fd0fa8fe115e",
+          "EN-2ea859d02e5eb089",
+          "EN-942d023fd3168d40"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-1d458fe0521f28c1",
+      "snapshotKey": "1d458fe0521f28c1",
+      "snapshotId": "HWS-2dbe7feeec9426e2",
+      "eventId": "EV-4c168759119d2668",
+      "eventIds": [
+        "EV-4c168759119d2668"
+      ],
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "title": "Korean AI / NPU LLM Station",
+      "subject": "KT",
+      "productNames": [
+        "Korean AI",
+        "NPU LLM Station"
+      ],
+      "hardwareType": "ai_accelerator / semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-88e7cb22452ee2d4"
+        }
+      },
+      "factCount": 4,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-886bd0fd5e40bf55",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T00:30:44.000Z",
+          "subject_entity_id": "EN-99d3fd0fa8fe115e",
+          "subject_name": "KT",
+          "product_entity_ids": [
+            "EN-2ea859d02e5eb089",
+            "EN-942d023fd3168d40"
+          ],
+          "product_names": [
+            "Korean AI",
+            "NPU LLM Station"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KT has launched the enterprise sovereign AI appliance \"KT NPU LLM Station.\" [Photo: KT]",
+          "event_refs": [
+            "EV-4c168759119d2668"
+          ],
+          "claim_ref": "CL-d9d15b5cc41e7ea7",
+          "source_refs": [
+            "SA-d59a2f78c6134a26"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-d1dd10ca23141b16",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T00:30:44.000Z",
+          "subject_entity_id": "EN-99d3fd0fa8fe115e",
+          "subject_name": "KT",
+          "product_entity_ids": [
+            "EN-2ea859d02e5eb089",
+            "EN-942d023fd3168d40"
+          ],
+          "product_names": [
+            "Korean AI",
+            "NPU LLM Station"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KT said on Aug. 19 it has launched the enterprise sovereign AI appliance \"KT NPU LLM Station.\"",
+          "event_refs": [
+            "EV-4c168759119d2668"
+          ],
+          "claim_ref": "CL-e9f330df24e0b7c2",
+          "source_refs": [
+            "SA-d59a2f78c6134a26"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-009f4faedb11ee4c",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T00:30:44.000Z",
+          "subject_entity_id": "EN-99d3fd0fa8fe115e",
+          "subject_name": "KT",
+          "product_entity_ids": [
+            "EN-2ea859d02e5eb089",
+            "EN-942d023fd3168d40"
+          ],
+          "product_names": [
+            "Korean AI",
+            "NPU LLM Station"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KT has released an enterprise sovereign AI product that integrates a Korean-made AI chip and its own large language model (LLM) into a single server.",
+          "event_refs": [
+            "EV-4c168759119d2668"
+          ],
+          "claim_ref": "CL-d7b9dba561b48d5f",
+          "source_refs": [
+            "SA-d59a2f78c6134a26"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-88e7cb22452ee2d4",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T00:30:44.000Z",
+          "subject_entity_id": "EN-99d3fd0fa8fe115e",
+          "subject_name": "KT",
+          "product_entity_ids": [
+            "EN-2ea859d02e5eb089",
+            "EN-942d023fd3168d40"
+          ],
+          "product_names": [
+            "Korean AI",
+            "NPU LLM Station"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "The KT NPU LLM Station is an all-in-one product that runs KT's self-developed LLM \"Mi:deum K 2.5 Pro\" and an operating API platform on the neural processing unit (NPU) \"ATOM-MAX\" made by South Korean AI chip company Rebellion.",
+          "event_refs": [
+            "EV-4c168759119d2668"
+          ],
+          "claim_ref": "CL-bdb353c7641d013e",
+          "source_refs": [
+            "SA-d59a2f78c6134a26"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://digitaltoday.co.kr/en/view/94279/kt-launches-npu-llm-station-featuring-korean-ai-chip",
+      "entityIds": [
+        "EN-99d3fd0fa8fe115e",
+        "EN-2ea859d02e5eb089",
+        "EN-942d023fd3168d40"
+      ]
+    }
+  ]
+}

@@ -111,7 +111,7 @@ test("records the explicit registration funnel instead of silent account authent
   assert.match(registrationLogic, /phone_authorization_cancelled/u);
   assert.match(registrationLogic, /registrationFailureReason/u);
   assert.doesNotMatch(paymentSource, /registration_started|registration_client_confirmed/u);
-  assert.match(analyticsSource, /const APP_VERSION = "0\.8\.2"/u);
+  assert.match(analyticsSource, /const APP_VERSION = "0\.8\.3"/u);
 });
 
 test("keeps lists public and gates only the second distinct detail behind a voluntary action", () => {
@@ -256,6 +256,21 @@ test("shares funding and ecosystem details with navigable shared reports", () =>
   assert.match(headerLogic, /getCurrentPages\(\)\.length > 1/u);
   assert.match(headerLogic, /fallbackUrl/u);
   assert.match(headerLogic, /wx\.switchTab/u);
+});
+
+test("enables native sharing on every public column page", () => {
+  const publicColumns = [
+    [terminalLogic, "观澜 AI 融资情报", "/pages/terminal/index"],
+    [marketLogic, "观澜 AI 生态图谱", "/pages/market/index"],
+    [watchlistLogic, "观澜 AI 商业观察", "/pages/watchlist/index"],
+  ];
+  for (const [logic, title, path] of publicColumns) {
+    assert.match(logic, /wx\.showShareMenu\(\{ menus: \["shareAppMessage", "shareTimeline"\] \}\)/u);
+    assert.match(logic, /onShareAppMessage\(\)/u);
+    assert.match(logic, /onShareTimeline\(\)/u);
+    assert.match(logic, new RegExp(title, "u"));
+    assert.match(logic, new RegExp(path.replaceAll("/", "\\/"), "u"));
+  }
 });
 
 test("adds an idempotent five-point daily check-in task", () => {

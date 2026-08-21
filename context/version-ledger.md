@@ -44,7 +44,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Opportunity Map column version | OMAP-V2.0.0-v4-evidence |
 | Trend Radar column version | TRADAR-V1.1.0-tag-v4-1 |
 | Funding Insights column version | FUNDING-INSIGHT-V1.5.0-china-market |
-| WeChat Mini Program version | V0.8.2-registration-funnel |
+| WeChat Mini Program version | V0.8.3-public-column-sharing |
 | Investment institution projection | INVESTMENT-INSTITUTION-V1.0 |
 | Data Center Raw contract | RAW-V4.0 |
 | Data Center structured source intake | SOURCE-INTAKE-V1.1 |
@@ -206,6 +206,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `miniprogram-v0.8.3` | Native sharing for the financing, ecosystem and observation public column pages | 2026-08-20 | 2026-08-20T18:04:16+08:00 | V0.8.3-public-column-sharing | disabled friend forwarding or Moments sharing on public columns; private profile sharing; V0.8.2 registration-funnel regressions | Mini Program data build + public-column native-sharing contract + 19-page validation + development upload |
 | `miniprogram-v0.8.2` | Explicit registration prompt / phone authorization / server-confirmed registration / failure reason analytics | 2026-08-18 | 2026-08-18T17:28:34+08:00 | V0.8.2-registration-funnel | generic authentication counted as registration; client-asserted registration success; phone or identity values in analytics; loss of V0.8.1 community essay live sync | Mini Program data build + registration analytics copy gate + 19-page validation + Payment Service analytics regression + development upload |
 | `application-analytics-v1.2.0` | Production registration funnel and privacy-safe failure reason aggregation | 2026-08-18 | 2026-08-18T17:28:34+08:00 | APP-ANALYTICS-V1.2.0-registration-funnel | generic auth attempts in registration metrics; client-only success; raw error messages or identity fields in failure analytics | Payment Service analytics regression + dashboard JavaScript syntax + authenticated production API smoke |
 | `miniprogram-v0.8.1` | Website-published community essay index / public detail sync / bundled offline fallback | 2026-08-18 | 2026-08-18T16:28:35+08:00 | V0.8.1-community-essay-live-sync | hard-coded-only community essay publication; duplicate remote and bundled cards; public weekly/monthly report bodies; V0.8.0 account, metered-access, payment, analytics or navigation regressions | Portal Mini projection test + Mini Program remote/fallback merge and public-detail boundary tests + 19-page validation + live endpoint verification + development upload |

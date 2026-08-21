@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-20T01:52:33.847Z",
-    "latestDataDate": "2026-08-20",
-    "currentDate": "2026-08-20",
-    "eventCount": 2246,
+    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "latestDataDate": "2026-08-21",
+    "currentDate": "2026-08-21",
+    "eventCount": 2267,
     "quarantinedEventCount": 20
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-fabb3080e5263d33",
       "EV-84226288807f817b",
       "EV-0347414d81e7f02e",
       "EV-92fbbeb840a98e97",
@@ -36,7 +37,7 @@
       "EN-c70eca6b0f88f44d"
     ],
     "firstSeen": "2026-06-10",
-    "lastSeen": "2026-07-15",
+    "lastSeen": "2026-08-21",
     "relationIds": [
       "REL2-0e0ef4c13fd83477",
       "REL2-282eb0c70c8e4564",
@@ -49,6 +50,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-fabb3080e5263d33",
         "EV-84226288807f817b",
         "EV-0347414d81e7f02e",
         "EV-92fbbeb840a98e97",
@@ -62,6 +64,34 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-fabb3080e5263d33",
+        "dataDate": "2026-08-21",
+        "date": "2026-08-20",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Platform 正式上线 Computer Use、Skills API 与 Files API，新增浏览器操作工具",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "computer_use",
+            "name": "计算机操作",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-4c4ee09fd90816ac",
+          "EN-03b48a9dc95cf779",
+          "EN-729324072d368379",
+          "EN-3aa38718f0399af9"
+        ]
+      },
       {
         "id": "EV-84226288807f817b",
         "dataDate": "2026-07-15",
@@ -346,8 +376,9 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
-        "EV-40d88f6279d48304",
+        "EV-3873f7ea8ac5a93f",
         "EV-d93dd19a481307ec",
+        "EV-40d88f6279d48304",
         "EV-3a4acc92731cb5ac",
         "EV-0adf1fcc9dbeddef",
         "EV-e3fb3a8b12b3ba9c",
@@ -596,6 +627,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-use_case-software_development",
@@ -617,7 +649,6 @@
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-product_form-enterprise_software_platform",
-        "TX-product_form-model",
         "TX-use_case-security_operations",
         "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_application-models",
@@ -658,7 +689,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-21"
     }
   ],
   "relationships": [
