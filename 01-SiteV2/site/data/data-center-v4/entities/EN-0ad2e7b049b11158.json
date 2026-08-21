@@ -1,0 +1,178 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "latestDataDate": "2026-08-21",
+    "currentDate": "2026-08-21",
+    "eventCount": 2267,
+    "quarantinedEventCount": 20
+  },
+  "entity": {
+    "id": "EN-0ad2e7b049b11158",
+    "name": "Integrating Domestic Semiconductor",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-30585effe9134084"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-19",
+    "lastSeen": "2026-08-21",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-30585effe9134084"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-30585effe9134084",
+        "dataDate": "2026-08-21",
+        "date": "2026-08-19",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "KT推出企业级“主权AI”，整合国产半导体与LLM",
+        "displayTags": [],
+        "entityIds": [
+          "EN-99d3fd0fa8fe115e",
+          "EN-9e7dc88eea20c796",
+          "EN-0f4929b20cd54749",
+          "EN-0ad2e7b049b11158"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-5ac213facc2c3cd8",
+      "snapshotKey": "5ac213facc2c3cd8",
+      "snapshotId": "HWS-f9582fecd705dc90",
+      "eventId": "EV-30585effe9134084",
+      "eventIds": [
+        "EV-30585effe9134084"
+      ],
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "title": "Asia Business Daily / Sovereign AI / Integrating Domestic Semiconductor",
+      "subject": "KT",
+      "productNames": [
+        "Asia Business Daily",
+        "Sovereign AI",
+        "Integrating Domestic Semiconductor"
+      ],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-3e0129a653706530"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-3ffd6dad21c7fd94",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T00:58:01.000Z",
+          "subject_entity_id": "EN-99d3fd0fa8fe115e",
+          "subject_name": "KT",
+          "product_entity_ids": [
+            "EN-9e7dc88eea20c796",
+            "EN-0f4929b20cd54749",
+            "EN-0ad2e7b049b11158"
+          ],
+          "product_names": [
+            "Asia Business Daily",
+            "Sovereign AI",
+            "Integrating Domestic Semiconductor"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KT Launches Enterprise 'Sovereign AI' Integrating Domestic Semiconductor and LLM",
+          "event_refs": [
+            "EV-30585effe9134084"
+          ],
+          "claim_ref": "CL-45df5bcc6da59e59",
+          "source_refs": [
+            "SA-135eabd9dc1aca18"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-3e0129a653706530",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T00:58:01.000Z",
+          "subject_entity_id": "EN-99d3fd0fa8fe115e",
+          "subject_name": "KT",
+          "product_entity_ids": [
+            "EN-9e7dc88eea20c796",
+            "EN-0f4929b20cd54749",
+            "EN-0ad2e7b049b11158"
+          ],
+          "product_names": [
+            "Asia Business Daily",
+            "Sovereign AI",
+            "Integrating Domestic Semiconductor"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "On August 19, KT announced the launch of an enterprise sovereign AI appliance that integrates a domestically developed artificial intelligence (AI) semiconductor and a large language model (LLM) within a single server.",
+          "event_refs": [
+            "EV-30585effe9134084"
+          ],
+          "claim_ref": "CL-052f1b9cc8482994",
+          "source_refs": [
+            "SA-135eabd9dc1aca18"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://asiae.co.kr/en/article/2026081909580277651",
+      "entityIds": [
+        "EN-99d3fd0fa8fe115e",
+        "EN-9e7dc88eea20c796",
+        "EN-0f4929b20cd54749",
+        "EN-0ad2e7b049b11158"
+      ]
+    }
+  ]
+}

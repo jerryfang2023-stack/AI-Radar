@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-20T01:52:33.847Z",
-    "latestDataDate": "2026-08-20",
-    "currentDate": "2026-08-20",
-    "eventCount": 2246,
+    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "latestDataDate": "2026-08-21",
+    "currentDate": "2026-08-21",
+    "eventCount": 2267,
     "quarantinedEventCount": 20
   },
   "entity": {
@@ -26,8 +26,8 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-product_form-compute_cloud_service",
-      "TX-product_form-model"
+      "TX-product_form-model",
+      "TX-product_form-compute_cloud_service"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-13",
@@ -91,78 +91,13 @@
   "relationships": [],
   "taxonomyNodes": [
     {
-      "id": "TX-product_form-compute_cloud_service",
-      "name": "算力云服务",
-      "nodeType": "product_form",
-      "typeLabel": "产品形态",
-      "valueId": "compute_cloud_service",
-      "eventIds": [
-        "EV-181cd28d97c4e61d",
-        "EV-2dea56b0e97c1685",
-        "EV-e3792591090281c6",
-        "EV-4eaf3aabecae6016",
-        "EV-6e516b6e68def9cf",
-        "EV-13ec78dfdbca678b",
-        "EV-53acea531ac371d6",
-        "EV-7b1c734882fa1ea6",
-        "EV-327ba605bd9e8307",
-        "EV-24265c0f0fa45343",
-        "EV-4118202ed0f91895",
-        "EV-29eea3f4a8fcd6f5",
-        "EV-1abf0d076d30ec6d",
-        "EV-6011ab83ebd290bd",
-        "EV-70fd5918095d6ab8",
-        "EV-0121f0a9e9a975ec",
-        "EV-7dcbf6eab4339b22",
-        "EV-a86b04e679044c45",
-        "EV-f2750a3d66e06fe7",
-        "EV-f84894a567752c40",
-        "EV-826c8088c4adf591",
-        "EV-0ec219a94317215f",
-        "EV-5493c61bcbe58aa2",
-        "EV-4b44f5eafecf4922",
-        "EV-a67071a8550cb1be"
-      ],
-      "entityIds": [
-        "EN-0b79cf2de0ee6b8e",
-        "EN-6fae0bc5a895aab8",
-        "EN-fdecfc27f301da9c",
-        "EN-0caee180da9d0f3f",
-        "EN-3c1ae4e6276005e7",
-        "EN-816bab802b34b308",
-        "EN-18b4bbfd60f4137e",
-        "EN-830cefea8ed73a00",
-        "EN-d1a61df8d3146e48",
-        "EN-c04bd5ebd10ab696",
-        "EN-07c370b082ffd370",
-        "EN-ce31f92c521b7b08",
-        "EN-3c7a24d85b4a5835",
-        "EN-29b9f0cae32e7a8a",
-        "EN-c70eca6b0f88f44d",
-        "EN-7640da40298286a6",
-        "EN-8f5ef31ed5125786",
-        "EN-ebf9032e4009b3d9",
-        "EN-042e9398f2cc8902",
-        "EN-9d07f526fab9cfe9",
-        "EN-a89a94ff38d4dc95"
-      ],
-      "fdeIds": [
-        "FDE-5ea7f3d69a03d417"
-      ],
-      "hardwareIds": [
-        "HW-304c6370cc157449",
-        "HW-9a39a7f449362f96"
-      ],
-      "firstSeen": "2026-04-30",
-      "lastSeen": "2026-08-19"
-    },
-    {
       "id": "TX-product_form-model",
       "name": "模型",
       "nodeType": "product_form",
       "typeLabel": "产品形态",
       "valueId": "model",
       "eventIds": [
+        "EV-b73d931bd6adb78d",
         "EV-bdcb22b1a53358f5",
         "EV-f5dd6dec49ad83aa",
         "EV-a0ca934522418c0b",
@@ -242,6 +177,9 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-78651dfea74b4323",
+        "EV-b33e250220b91f9c",
+        "EV-4c168759119d2668",
         "EV-d93dd19a481307ec",
         "EV-3a4acc92731cb5ac",
         "EV-0d5a32aca724d30e",
@@ -399,6 +337,7 @@
         "EV-5208aa6dcd06cecb"
       ],
       "entityIds": [
+        "EN-7dd2a89f628d7525",
         "EN-67e8c106650aa683",
         "EN-c70eca6b0f88f44d",
         "EN-240389f4b730bad4",
@@ -451,6 +390,8 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
+        "EN-f7d9f5a90479d632",
+        "EN-99d3fd0fa8fe115e",
         "EN-32e83e92d45d71f6",
         "EN-3a7bd3e2360a3d29",
         "EN-ea3bd73e2b506e00",
@@ -555,7 +496,73 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-21"
+    },
+    {
+      "id": "TX-product_form-compute_cloud_service",
+      "name": "算力云服务",
+      "nodeType": "product_form",
+      "typeLabel": "产品形态",
+      "valueId": "compute_cloud_service",
+      "eventIds": [
+        "EV-181cd28d97c4e61d",
+        "EV-2dea56b0e97c1685",
+        "EV-e3792591090281c6",
+        "EV-4eaf3aabecae6016",
+        "EV-6e516b6e68def9cf",
+        "EV-13ec78dfdbca678b",
+        "EV-53acea531ac371d6",
+        "EV-7b1c734882fa1ea6",
+        "EV-327ba605bd9e8307",
+        "EV-24265c0f0fa45343",
+        "EV-4118202ed0f91895",
+        "EV-29eea3f4a8fcd6f5",
+        "EV-1abf0d076d30ec6d",
+        "EV-6011ab83ebd290bd",
+        "EV-70fd5918095d6ab8",
+        "EV-0121f0a9e9a975ec",
+        "EV-7dcbf6eab4339b22",
+        "EV-a86b04e679044c45",
+        "EV-f2750a3d66e06fe7",
+        "EV-f84894a567752c40",
+        "EV-826c8088c4adf591",
+        "EV-0ec219a94317215f",
+        "EV-5493c61bcbe58aa2",
+        "EV-4b44f5eafecf4922",
+        "EV-a67071a8550cb1be"
+      ],
+      "entityIds": [
+        "EN-0b79cf2de0ee6b8e",
+        "EN-6fae0bc5a895aab8",
+        "EN-fdecfc27f301da9c",
+        "EN-0caee180da9d0f3f",
+        "EN-3c1ae4e6276005e7",
+        "EN-816bab802b34b308",
+        "EN-18b4bbfd60f4137e",
+        "EN-830cefea8ed73a00",
+        "EN-d1a61df8d3146e48",
+        "EN-c04bd5ebd10ab696",
+        "EN-07c370b082ffd370",
+        "EN-ce31f92c521b7b08",
+        "EN-3c7a24d85b4a5835",
+        "EN-29b9f0cae32e7a8a",
+        "EN-c70eca6b0f88f44d",
+        "EN-7640da40298286a6",
+        "EN-8f5ef31ed5125786",
+        "EN-ebf9032e4009b3d9",
+        "EN-042e9398f2cc8902",
+        "EN-9d07f526fab9cfe9",
+        "EN-a89a94ff38d4dc95"
+      ],
+      "fdeIds": [
+        "FDE-5ea7f3d69a03d417"
+      ],
+      "hardwareIds": [
+        "HW-304c6370cc157449",
+        "HW-9a39a7f449362f96"
+      ],
+      "firstSeen": "2026-04-30",
+      "lastSeen": "2026-08-21"
     }
   ],
   "fde": [],

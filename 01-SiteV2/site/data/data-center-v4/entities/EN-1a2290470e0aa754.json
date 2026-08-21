@@ -5,15 +5,15 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-20T01:52:33.847Z",
-    "latestDataDate": "2026-08-20",
-    "currentDate": "2026-08-20",
-    "eventCount": 2246,
+    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "latestDataDate": "2026-08-21",
+    "currentDate": "2026-08-21",
+    "eventCount": 2267,
     "quarantinedEventCount": 20
   },
   "entity": {
     "id": "EN-1a2290470e0aa754",
-    "name": "SAN FRANCISCO",
+    "name": "San Francisco",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-181cd28d97c4e61d",
       "EV-3d93d1da8cb64462",
       "EV-7f3298069258b3ea"
     ],
@@ -29,10 +30,11 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-25",
-    "lastSeen": "2026-08-10",
+    "lastSeen": "2026-08-21",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-181cd28d97c4e61d",
         "EV-3d93d1da8cb64462",
         "EV-7f3298069258b3ea"
       ],
@@ -44,6 +46,96 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-181cd28d97c4e61d",
+        "dataDate": "2026-08-21",
+        "date": "2026-08-17",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Groq完成3.5亿美元A轮融资，打造全球领先的AI推理云",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-0b79cf2de0ee6b8e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-744899ec503b5a08",
+            "fundingInsightId": "FI-2616a89ee525dd60"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "hardware_computing",
+            "name": "硬件与算力",
+            "entityIds": [
+              "EN-0b79cf2de0ee6b8e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-19c00b42d90ea75b",
+            "fundingInsightId": "FI-2616a89ee525dd60"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "computing_infrastructure",
+            "name": "计算基础设施",
+            "entityIds": [
+              "EN-0b79cf2de0ee6b8e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b0f983ccda86eec7",
+            "fundingInsightId": "FI-2616a89ee525dd60"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-0b79cf2de0ee6b8e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5be5c6d0846f5ae5",
+            "fundingInsightId": "FI-2616a89ee525dd60"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-0b79cf2de0ee6b8e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-081b8368f977bbec",
+            "fundingInsightId": "FI-2616a89ee525dd60"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-0b79cf2de0ee6b8e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4f0e7c73b03db9ed",
+            "fundingInsightId": "FI-2616a89ee525dd60"
+          }
+        ],
+        "entityIds": [
+          "EN-0b79cf2de0ee6b8e",
+          "EN-1a2290470e0aa754",
+          "EN-8d4321d936320802"
+        ]
+      },
       {
         "id": "EV-3d93d1da8cb64462",
         "dataDate": "2026-08-10",
@@ -194,5 +286,69 @@
   "relationships": [],
   "taxonomyNodes": [],
   "fde": [],
-  "hardware": []
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-8f8d1fe13179e599",
+      "snapshotKey": "8f8d1fe13179e599",
+      "snapshotId": "HWS-89be5962dda51d66",
+      "eventId": "EV-181cd28d97c4e61d",
+      "eventIds": [
+        "EV-181cd28d97c4e61d"
+      ],
+      "dataDate": "2026-08-18",
+      "date": "2026-08-18",
+      "title": "Groq",
+      "subject": "Groq",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "supply"
+      ],
+      "latestValues": {
+        "supply": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-8f468606aeb4dc2a"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-18",
+          "hardware_fact_id": "HWF-8f468606aeb4dc2a",
+          "fact_type": "supply",
+          "observed_at": "2026-08-17T00:00:00.000Z",
+          "subject_entity_id": "EN-0b79cf2de0ee6b8e",
+          "subject_name": "Groq",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Groq’s financials are still private for now, but its pivot puts the company directly inside Nvidia’s AI infrastructure ecosystem. That’s not exactly a unique relationship among neoclouds today. Nvidia supplies the GPUs powering clouds from CoreWeave , Lambda, and Nebius, while also investing billions into some of those companies as they race to build more capacity.",
+          "event_refs": [
+            "EV-181cd28d97c4e61d"
+          ],
+          "claim_ref": "CL-d7d17d9a41c46bd1",
+          "source_refs": [
+            "SA-135f6bf8a5c06f22"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-18/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud",
+      "entityIds": [
+        "EN-0b79cf2de0ee6b8e",
+        "EN-1a2290470e0aa754",
+        "EN-8d4321d936320802"
+      ]
+    }
+  ]
 }

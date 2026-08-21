@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-20T01:52:33.847Z",
-    "latestDataDate": "2026-08-20",
-    "currentDate": "2026-08-20",
-    "eventCount": 2246,
+    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "latestDataDate": "2026-08-21",
+    "currentDate": "2026-08-21",
+    "eventCount": 2267,
     "quarantinedEventCount": 20
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-6fdbcd14c6a633b6",
       "EV-cf176636839e45be",
       "EV-c996e56f7f4bdc49",
       "EV-b60df35d168fe6b7"
@@ -32,13 +33,14 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-30",
-    "lastSeen": "2026-07-17",
+    "lastSeen": "2026-08-21",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-6fdbcd14c6a633b6",
         "EV-cf176636839e45be",
         "EV-c996e56f7f4bdc49",
         "EV-b60df35d168fe6b7"
@@ -48,6 +50,24 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-6fdbcd14c6a633b6",
+        "dataDate": "2026-08-21",
+        "date": "2026-08-20",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Meta AI 推出 Mac 应用，支持系统级听写与屏幕问答",
+        "displayTags": [],
+        "entityIds": [
+          "EN-ae31f30d39374a8b",
+          "EN-ea3bd73e2b506e00",
+          "EN-bbdefa2950f49882",
+          "EN-00910b5c1cc27f5f"
+        ]
+      },
       {
         "id": "EV-cf176636839e45be",
         "dataDate": "2026-07-17",

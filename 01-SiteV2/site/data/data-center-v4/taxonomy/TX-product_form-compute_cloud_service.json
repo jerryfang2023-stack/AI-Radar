@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-20T01:52:33.847Z",
-    "latestDataDate": "2026-08-20",
-    "currentDate": "2026-08-20",
-    "eventCount": 2246,
+    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "latestDataDate": "2026-08-21",
+    "currentDate": "2026-08-21",
+    "eventCount": 2267,
     "quarantinedEventCount": 20
   },
   "node": {
@@ -75,29 +75,30 @@
       "HW-9a39a7f449362f96"
     ],
     "firstSeen": "2026-04-30",
-    "lastSeen": "2026-08-19"
+    "lastSeen": "2026-08-21"
   },
   "events": [
     {
       "id": "EV-181cd28d97c4e61d",
-      "dataDate": "2026-08-18",
+      "dataDate": "2026-08-21",
       "date": "2026-08-17",
-      "updatedDate": "2026-08-18",
+      "updatedDate": "2026-08-21",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Groq 融资 3.5 亿美元，加速从 AI 芯片转向 neocloud",
-      "originalTitle": "",
+      "title": "Groq完成3.5亿美元A轮融资，打造全球领先的AI推理云",
+      "originalTitle": "Groq Closes $350 million Series A, Building the World's Leading AI Inference Cloud | Groq is the premier neocloud for fast inference",
       "subject": "Groq",
-      "action": "融资",
-      "object": "3.5 亿美元，加速从 AI 芯片转向 neocloud",
+      "action": "Closes",
+      "object": "$350 million Series A, Building the World's Leading AI Inference Cloud | Groq is the premier neocloud for fast inference",
       "metrics": [
-        "$350M",
         "$350 million",
-        "$650 million"
+        "$3.5 billion",
+        "$650 million",
+        "$1 billion"
       ],
       "locations": [],
       "missingFields": [],
@@ -340,20 +341,18 @@
       ],
       "entityIds": [
         "EN-0b79cf2de0ee6b8e",
-        "EN-d5096fab0e92c370",
-        "EN-7cb763a5e1cf9bc7",
+        "EN-1a2290470e0aa754",
         "EN-8d4321d936320802"
       ],
       "entityNames": [
         "Groq",
-        "Startup Groq",
-        "In June",
+        "San Francisco",
         "NVIDIA"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud",
-      "publisher": "TechCrunch：AI（RSS）"
+      "sourceUrl": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud",
+      "publisher": "groq.com"
     },
     {
       "id": "EV-2dea56b0e97c1685",
@@ -6171,7 +6170,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-23",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-21"
     },
     {
       "id": "EN-6fae0bc5a895aab8",
@@ -6430,6 +6429,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-use_case-software_development",
@@ -6444,7 +6444,6 @@
         "TX-industry-government_public_sector",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-knowledge_search",
-        "TX-product_form-model",
         "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-industrials",
@@ -6501,13 +6500,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-business_user",
         "TX-product_form-compute_cloud_service",
-        "TX-product_form-model",
         "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_application-model_deployment"
       ],
@@ -6552,6 +6551,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-ai_compute_system",
         "TX-target_user-developer",
         "TX-product_form-chip_accelerator",
@@ -6561,7 +6561,6 @@
         "TX-product_form-compute_cloud_service",
         "TX-technology-agentic_execution",
         "TX-target_user-researcher",
-        "TX-product_form-model",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights"
       ],
@@ -6655,8 +6654,9 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
-        "EV-40d88f6279d48304",
+        "EV-3873f7ea8ac5a93f",
         "EV-d93dd19a481307ec",
+        "EV-40d88f6279d48304",
         "EV-3a4acc92731cb5ac",
         "EV-0adf1fcc9dbeddef",
         "EV-e3fb3a8b12b3ba9c",
@@ -6905,6 +6905,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-use_case-software_development",
@@ -6926,7 +6927,6 @@
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-product_form-enterprise_software_platform",
-        "TX-product_form-model",
         "TX-use_case-security_operations",
         "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_application-models",
@@ -6967,7 +6967,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-21"
     },
     {
       "id": "EN-7640da40298286a6",
@@ -7028,8 +7028,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-compute_cloud_service",
-        "TX-product_form-model"
+        "TX-product_form-model",
+        "TX-product_form-compute_cloud_service"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-13",
@@ -7566,11 +7566,10 @@
       "specificationFacts": [],
       "capexFacts": [],
       "tags": [],
-      "sourceUrl": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud",
+      "sourceUrl": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud",
       "entityIds": [
         "EN-0b79cf2de0ee6b8e",
-        "EN-d5096fab0e92c370",
-        "EN-7cb763a5e1cf9bc7",
+        "EN-1a2290470e0aa754",
         "EN-8d4321d936320802"
       ]
     },

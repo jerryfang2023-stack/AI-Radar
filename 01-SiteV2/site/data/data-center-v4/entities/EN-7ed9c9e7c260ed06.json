@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-20T01:52:33.847Z",
-    "latestDataDate": "2026-08-20",
-    "currentDate": "2026-08-20",
-    "eventCount": 2246,
+    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "latestDataDate": "2026-08-21",
+    "currentDate": "2026-08-21",
+    "eventCount": 2267,
     "quarantinedEventCount": 20
   },
   "entity": {
@@ -22,19 +22,21 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-baf1a4c3db620d90",
       "EV-5babb43f4b4d302f"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-01",
-    "lastSeen": "2026-07-01",
+    "lastSeen": "2026-08-21",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-baf1a4c3db620d90",
         "EV-5babb43f4b4d302f"
       ],
       "hardware": [],
@@ -42,6 +44,24 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-baf1a4c3db620d90",
+        "dataDate": "2026-08-21",
+        "date": "2026-08-21",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Adobe Firefly新增AI音频工具及谷歌Gemini Omni Flash",
+        "displayTags": [],
+        "entityIds": [
+          "EN-d75388af00e08fca",
+          "EN-bbdefa2950f49882",
+          "EN-7ed9c9e7c260ed06",
+          "EN-6e18e42d9943624c"
+        ]
+      },
       {
         "id": "EV-5babb43f4b4d302f",
         "dataDate": "2026-07-01",
