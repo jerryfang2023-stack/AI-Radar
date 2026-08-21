@@ -15,7 +15,7 @@
     "automatic_publication": true,
     "translation_registry": {
       "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
-      "generated_at": "2026-08-21T00:30:24.359Z"
+      "generated_at": "2026-08-21T02:11:59.594Z"
     },
     "market_category_framework": {
       "name": "CB Insights AI 100 2026",
@@ -723,8 +723,8 @@
           "description": "Etched以完整系统形式交付AI推理技术，称为“前沿推理集群”，包含芯片、定制机架和软件，而非单独芯片。",
           "target_customers": "公共和私营AI公司及云服务提供商",
           "features": [
-            "Low Voltage Inference",
-            "Cluster Scale Memory",
+            "低电压推理",
+            "集群级内存",
             "支持大规模混合专家模型和非transformer架构"
           ],
           "evidence_refs": [
@@ -1057,11 +1057,9 @@
         "market_subcategory_id": "hardware_computing",
         "market_application_id": "computing_infrastructure",
         "use_case_ids": [],
-        "industry_ids": [
-          "financial_services"
-        ],
+        "industry_ids": [],
         "target_user_ids": [
-          "business_user"
+          "developer"
         ],
         "sector": "AI推理硬件与半导体",
         "investment_thesis": {
@@ -1455,7 +1453,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-21T01:59:26.852Z"
+        "generated_at": "2026-08-21T01:59:26.852Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-19dd4c3a5dd5a94b",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1638,6 +1644,38 @@
             "provider": "deepseek",
             "model": "deepseek-v4-flash",
             "translated_at": "2026-08-14T07:17:15.985Z",
+            "status": "translated"
+          },
+          "financing.other_round_investors[0].role": {
+            "text": "2026年7月Series C参投",
+            "source_hash": "ca89a4b6213c63b73693d1f4cbdbc294103169f8c18273db948594868797614d",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-21T02:11:59.594Z",
+            "status": "translated"
+          },
+          "financing.other_round_investors[1].role": {
+            "text": "2026年7月Series C参投",
+            "source_hash": "ca89a4b6213c63b73693d1f4cbdbc294103169f8c18273db948594868797614d",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-21T02:11:59.594Z",
+            "status": "translated"
+          },
+          "products[0].features[0]": {
+            "text": "低电压推理",
+            "source_hash": "d3eefab688fb81657aac6943b2d23a1824468f51f1258c2b5821a94dfd7907d8",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-21T02:11:59.594Z",
+            "status": "translated"
+          },
+          "products[0].features[1]": {
+            "text": "集群级内存",
+            "source_hash": "4c9b0add4d0afd9b51f4fcf7a3e747ae2dd927b01ee4a45a138a2e5a6b5b500f",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-21T02:11:59.594Z",
             "status": "translated"
           }
         }

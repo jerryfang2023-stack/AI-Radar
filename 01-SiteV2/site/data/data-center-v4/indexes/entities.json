@@ -21184,9 +21184,10 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-26ba92c3794719e4",
+          "activity_id": "IA-451236864591960c",
           "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
           "event_ids": [
+            "EV-19dd4c3a5dd5a94b",
             "EV-4af14568b1bdeb35"
           ],
           "company_entity_id": "FICO-etched",
@@ -21195,7 +21196,7 @@
           "round": "D轮",
           "round_code": "series_d",
           "round_original": "Series D",
-          "amount_original": "7 亿美元",
+          "amount_original": "$700m",
           "amount_normalized": {
             "currency": "USD",
             "value": 700000000,
@@ -21268,6 +21269,199 @@
           "role_code": "participant"
         }
       ]
+    },
+    {
+      "id": "INV-c73d9854fb920b",
+      "name": "Nvidia",
+      "aliases": [
+        "NVIDIA"
+      ],
+      "canonical_entity_id": "EN-8d4321d936320802",
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 13,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 12,
+      "first_disclosed_at": "2025-09-09",
+      "latest_disclosed_at": "2026-08-19",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "lead": 1,
+        "participant": 12
+      },
+      "round_codes": [
+        "multi_round",
+        "seed",
+        "series_a",
+        "series_c",
+        "series_f",
+        "series_g",
+        "undisclosed"
+      ],
+      "activity_count": 14,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-a83a3af1a4866fd5",
+          "canonical_entity_id": "",
+          "name": "Advanced Machine Intelligence Labs (AMI Labs)"
+        },
+        {
+          "entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "name": "Anthropic"
+        },
+        {
+          "entity_id": "EN-e647c818ac38b6ca",
+          "canonical_entity_id": "EN-e647c818ac38b6ca",
+          "name": "Elorian"
+        },
+        {
+          "entity_id": "FICO-gradium",
+          "canonical_entity_id": "",
+          "name": "Gradium"
+        },
+        {
+          "entity_id": "EN-0b79cf2de0ee6b8e",
+          "canonical_entity_id": "",
+          "name": "Groq"
+        },
+        {
+          "entity_id": "EN-245f1e177c5169cb",
+          "canonical_entity_id": "",
+          "name": "Hark"
+        },
+        {
+          "entity_id": "EN-c04bd5ebd10ab696",
+          "canonical_entity_id": "EN-c04bd5ebd10ab696",
+          "name": "Mistral AI"
+        },
+        {
+          "entity_id": "EN-7d3194f79e645c42",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "name": "OpenAI"
+        },
+        {
+          "entity_id": "EN-b06631033a981321",
+          "canonical_entity_id": "",
+          "name": "Recursive Superintelligence Inc."
+        },
+        {
+          "entity_id": "EN-8ab71d56a963f706",
+          "canonical_entity_id": "",
+          "name": "River AI"
+        },
+        {
+          "entity_id": "EN-816bab802b34b308",
+          "canonical_entity_id": "",
+          "name": "Together AI"
+        },
+        {
+          "entity_id": "FICO-upscale-ai",
+          "canonical_entity_id": "",
+          "name": "Upscale AI"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-d63344b16ac5cd63",
+          "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
+          "event_ids": [
+            "EV-19dd4c3a5dd5a94b",
+            "EV-4af14568b1bdeb35"
+          ],
+          "company_entity_id": "FICO-etched",
+          "company_canonical_entity_id": "",
+          "company_name": "Etched",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "Series D",
+          "amount_original": "$700m",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 700000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7 亿美元"
+          },
+          "announced_at": "2026-08-19",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "2026年7月Series C参投",
+          "role_code": "historical_or_ambiguous"
+        },
+        {
+          "activity_id": "IA-c008d169fe115916",
+          "funding_insight_id": "FI-4b811c030362045e",
+          "event_ids": [
+            "EV-181cd28d97c4e61d"
+          ],
+          "company_entity_id": "EN-0b79cf2de0ee6b8e",
+          "company_canonical_entity_id": "",
+          "company_name": "Groq",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "Series A",
+          "amount_original": "$350M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 350000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3.5 亿美元"
+          },
+          "announced_at": "2026-08-17",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-ef24e0cf60db85ad",
+          "funding_insight_id": "FI-d1444f877a3e580e",
+          "event_ids": [
+            "EV-55e7c286e95be405"
+          ],
+          "company_entity_id": "EN-8ab71d56a963f706",
+          "company_canonical_entity_id": "",
+          "company_name": "River AI",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "$1.1 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 1100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "11 亿美元"
+          },
+          "announced_at": "2026-08-11",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ],
+      "translations": {
+        "zh-CN": {
+          "latest_activities[0].role": {
+            "text": "2026年7月Series C参投",
+            "source_hash": "ca89a4b6213c63b73693d1f4cbdbc294103169f8c18273db948594868797614d",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-21T02:11:59.594Z",
+            "status": "translated"
+          }
+        }
+      }
     },
     {
       "id": "INV-862e0e7d2ba5cf",
@@ -21362,9 +21556,10 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-f8dc2b075f4b8010",
+          "activity_id": "IA-9cc86dd5c6d39dab",
           "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
           "event_ids": [
+            "EV-19dd4c3a5dd5a94b",
             "EV-4af14568b1bdeb35"
           ],
           "company_entity_id": "FICO-etched",
@@ -21373,7 +21568,7 @@
           "round": "D轮",
           "round_code": "series_d",
           "round_original": "Series D",
-          "amount_original": "7 亿美元",
+          "amount_original": "$700m",
           "amount_normalized": {
             "currency": "USD",
             "value": 700000000,
@@ -21444,185 +21639,6 @@
           "scope": "current_round",
           "role": "本轮领投",
           "role_code": "lead"
-        }
-      ]
-    },
-    {
-      "id": "INV-c73d9854fb920b",
-      "name": "Nvidia",
-      "aliases": [
-        "NVIDIA"
-      ],
-      "canonical_entity_id": "EN-8d4321d936320802",
-      "investor_kind": "corporate_investor",
-      "investor_kind_label": "企业投资方",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 13,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 12,
-      "first_disclosed_at": "2025-09-09",
-      "latest_disclosed_at": "2026-08-17",
-      "role_counts": {
-        "lead": 1,
-        "participant": 12
-      },
-      "round_codes": [
-        "multi_round",
-        "seed",
-        "series_a",
-        "series_c",
-        "series_f",
-        "series_g",
-        "undisclosed"
-      ],
-      "activity_count": 13,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-a83a3af1a4866fd5",
-          "canonical_entity_id": "",
-          "name": "Advanced Machine Intelligence Labs (AMI Labs)"
-        },
-        {
-          "entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_entity_id": "EN-c70eca6b0f88f44d",
-          "name": "Anthropic"
-        },
-        {
-          "entity_id": "EN-e647c818ac38b6ca",
-          "canonical_entity_id": "EN-e647c818ac38b6ca",
-          "name": "Elorian"
-        },
-        {
-          "entity_id": "FICO-gradium",
-          "canonical_entity_id": "",
-          "name": "Gradium"
-        },
-        {
-          "entity_id": "EN-0b79cf2de0ee6b8e",
-          "canonical_entity_id": "",
-          "name": "Groq"
-        },
-        {
-          "entity_id": "EN-245f1e177c5169cb",
-          "canonical_entity_id": "",
-          "name": "Hark"
-        },
-        {
-          "entity_id": "EN-c04bd5ebd10ab696",
-          "canonical_entity_id": "EN-c04bd5ebd10ab696",
-          "name": "Mistral AI"
-        },
-        {
-          "entity_id": "EN-7d3194f79e645c42",
-          "canonical_entity_id": "EN-7d3194f79e645c42",
-          "name": "OpenAI"
-        },
-        {
-          "entity_id": "EN-b06631033a981321",
-          "canonical_entity_id": "",
-          "name": "Recursive Superintelligence Inc."
-        },
-        {
-          "entity_id": "EN-8ab71d56a963f706",
-          "canonical_entity_id": "",
-          "name": "River AI"
-        },
-        {
-          "entity_id": "EN-816bab802b34b308",
-          "canonical_entity_id": "",
-          "name": "Together AI"
-        },
-        {
-          "entity_id": "FICO-upscale-ai",
-          "canonical_entity_id": "",
-          "name": "Upscale AI"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-c008d169fe115916",
-          "funding_insight_id": "FI-4b811c030362045e",
-          "event_ids": [
-            "EV-181cd28d97c4e61d"
-          ],
-          "company_entity_id": "EN-0b79cf2de0ee6b8e",
-          "company_canonical_entity_id": "",
-          "company_name": "Groq",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "Series A",
-          "amount_original": "$350M",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 350000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3.5 亿美元"
-          },
-          "announced_at": "2026-08-17",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-ef24e0cf60db85ad",
-          "funding_insight_id": "FI-d1444f877a3e580e",
-          "event_ids": [
-            "EV-55e7c286e95be405"
-          ],
-          "company_entity_id": "EN-8ab71d56a963f706",
-          "company_canonical_entity_id": "",
-          "company_name": "River AI",
-          "round": "多轮融资",
-          "round_code": "multi_round",
-          "round_original": "多轮融资",
-          "amount_original": "$1.1 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 1100000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "11 亿美元"
-          },
-          "announced_at": "2026-08-11",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-76328b3a57ddc9ae",
-          "funding_insight_id": "FI-f59cd4d7e9ffcb18",
-          "event_ids": [
-            "EV-44cd5e03d30c85b3"
-          ],
-          "company_entity_id": "EN-e647c818ac38b6ca",
-          "company_canonical_entity_id": "EN-e647c818ac38b6ca",
-          "company_name": "Elorian",
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "种子轮",
-          "amount_original": "$55 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 55000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "5500 万美元"
-          },
-          "announced_at": "2026-07-16",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
         }
       ]
     },
@@ -22852,9 +22868,10 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-3a3110e19c401513",
+          "activity_id": "IA-b1525a9fe759a1f5",
           "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
           "event_ids": [
+            "EV-19dd4c3a5dd5a94b",
             "EV-4af14568b1bdeb35"
           ],
           "company_entity_id": "FICO-etched",
@@ -22863,7 +22880,7 @@
           "round": "D轮",
           "round_code": "series_d",
           "round_original": "Series D",
-          "amount_original": "7 亿美元",
+          "amount_original": "$700m",
           "amount_normalized": {
             "currency": "USD",
             "value": 700000000,
@@ -23299,9 +23316,10 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-d14aee0db3e700a7",
+          "activity_id": "IA-5fd7c8a0742aaaf2",
           "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
           "event_ids": [
+            "EV-19dd4c3a5dd5a94b",
             "EV-4af14568b1bdeb35"
           ],
           "company_entity_id": "FICO-etched",
@@ -23310,7 +23328,7 @@
           "round": "D轮",
           "round_code": "series_d",
           "round_original": "Series D",
-          "amount_original": "7 亿美元",
+          "amount_original": "$700m",
           "amount_normalized": {
             "currency": "USD",
             "value": 700000000,
@@ -23855,9 +23873,10 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-e80bfe3773479204",
+          "activity_id": "IA-406e5b08df335375",
           "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
           "event_ids": [
+            "EV-19dd4c3a5dd5a94b",
             "EV-4af14568b1bdeb35"
           ],
           "company_entity_id": "FICO-etched",
@@ -23866,7 +23885,7 @@
           "round": "D轮",
           "round_code": "series_d",
           "round_original": "Series D",
-          "amount_original": "7 亿美元",
+          "amount_original": "$700m",
           "amount_normalized": {
             "currency": "USD",
             "value": 700000000,
@@ -25102,9 +25121,10 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-8dadf0b4dd6dd4f9",
+          "activity_id": "IA-62fc46fa7ef70ef7",
           "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
           "event_ids": [
+            "EV-19dd4c3a5dd5a94b",
             "EV-4af14568b1bdeb35"
           ],
           "company_entity_id": "FICO-etched",
@@ -25113,7 +25133,7 @@
           "round": "D轮",
           "round_code": "series_d",
           "round_original": "Series D",
-          "amount_original": "7 亿美元",
+          "amount_original": "$700m",
           "amount_normalized": {
             "currency": "USD",
             "value": 700000000,
@@ -25224,9 +25244,10 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-a1d2303685dc91ed",
+          "activity_id": "IA-01b622462dc2ca33",
           "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
           "event_ids": [
+            "EV-19dd4c3a5dd5a94b",
             "EV-4af14568b1bdeb35"
           ],
           "company_entity_id": "FICO-etched",
@@ -25235,7 +25256,7 @@
           "round": "D轮",
           "round_code": "series_d",
           "round_original": "Series D",
-          "amount_original": "7 亿美元",
+          "amount_original": "$700m",
           "amount_normalized": {
             "currency": "USD",
             "value": 700000000,
@@ -26944,9 +26965,10 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-ce1958b8360464a6",
+          "activity_id": "IA-4383b367c82abb48",
           "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
           "event_ids": [
+            "EV-19dd4c3a5dd5a94b",
             "EV-4af14568b1bdeb35"
           ],
           "company_entity_id": "FICO-etched",
@@ -26955,7 +26977,7 @@
           "round": "D轮",
           "round_code": "series_d",
           "round_original": "Series D",
-          "amount_original": "7 亿美元",
+          "amount_original": "$700m",
           "amount_normalized": {
             "currency": "USD",
             "value": 700000000,
@@ -27063,9 +27085,10 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-66afd1f032b67a9a",
+          "activity_id": "IA-bd51c0ff9f89d145",
           "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
           "event_ids": [
+            "EV-19dd4c3a5dd5a94b",
             "EV-4af14568b1bdeb35"
           ],
           "company_entity_id": "FICO-etched",
@@ -27074,7 +27097,7 @@
           "round": "D轮",
           "round_code": "series_d",
           "round_original": "Series D",
-          "amount_original": "7 亿美元",
+          "amount_original": "$700m",
           "amount_normalized": {
             "currency": "USD",
             "value": 700000000,
@@ -27190,9 +27213,10 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-269ea0683f7e1c1a",
+          "activity_id": "IA-9c20dd750476ef96",
           "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
           "event_ids": [
+            "EV-19dd4c3a5dd5a94b",
             "EV-4af14568b1bdeb35"
           ],
           "company_entity_id": "FICO-etched",
@@ -27201,7 +27225,7 @@
           "round": "D轮",
           "round_code": "series_d",
           "round_original": "Series D",
-          "amount_original": "7 亿美元",
+          "amount_original": "$700m",
           "amount_normalized": {
             "currency": "USD",
             "value": 700000000,
@@ -31015,9 +31039,10 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-c6c8ce3785eadd15",
+          "activity_id": "IA-613315f1b6bd2b07",
           "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
           "event_ids": [
+            "EV-19dd4c3a5dd5a94b",
             "EV-4af14568b1bdeb35"
           ],
           "company_entity_id": "FICO-etched",
@@ -31026,7 +31051,7 @@
           "round": "D轮",
           "round_code": "series_d",
           "round_original": "Series D",
-          "amount_original": "7 亿美元",
+          "amount_original": "$700m",
           "amount_normalized": {
             "currency": "USD",
             "value": 700000000,
@@ -31135,6 +31160,7 @@
           "activity_id": "IA-fe69aa34c489edf6",
           "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
           "event_ids": [
+            "EV-19dd4c3a5dd5a94b",
             "EV-4af14568b1bdeb35"
           ],
           "company_entity_id": "FICO-etched",
@@ -31143,7 +31169,7 @@
           "round": "D轮",
           "round_code": "series_d",
           "round_original": "Series D",
-          "amount_original": "7 亿美元",
+          "amount_original": "$700m",
           "amount_normalized": {
             "currency": "USD",
             "value": 700000000,
@@ -43103,9 +43129,10 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-1d3289a1fb80ef71",
+          "activity_id": "IA-d29f59387be0c3f5",
           "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
           "event_ids": [
+            "EV-19dd4c3a5dd5a94b",
             "EV-4af14568b1bdeb35"
           ],
           "company_entity_id": "FICO-etched",
@@ -43114,7 +43141,7 @@
           "round": "D轮",
           "round_code": "series_d",
           "round_original": "Series D",
-          "amount_original": "7 亿美元",
+          "amount_original": "$700m",
           "amount_normalized": {
             "currency": "USD",
             "value": 700000000,
@@ -43221,9 +43248,10 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-e45383a02d43f449",
+          "activity_id": "IA-250661c6feba4797",
           "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
           "event_ids": [
+            "EV-19dd4c3a5dd5a94b",
             "EV-4af14568b1bdeb35"
           ],
           "company_entity_id": "FICO-etched",
@@ -43232,7 +43260,7 @@
           "round": "D轮",
           "round_code": "series_d",
           "round_original": "Series D",
-          "amount_original": "7 亿美元",
+          "amount_original": "$700m",
           "amount_normalized": {
             "currency": "USD",
             "value": 700000000,
@@ -43339,9 +43367,10 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-2c5fa7ddd0978d16",
+          "activity_id": "IA-9d52cb17aa7f02d5",
           "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
           "event_ids": [
+            "EV-19dd4c3a5dd5a94b",
             "EV-4af14568b1bdeb35"
           ],
           "company_entity_id": "FICO-etched",
@@ -43350,7 +43379,7 @@
           "round": "D轮",
           "round_code": "series_d",
           "round_original": "Series D",
-          "amount_original": "7 亿美元",
+          "amount_original": "$700m",
           "amount_normalized": {
             "currency": "USD",
             "value": 700000000,
@@ -43426,6 +43455,135 @@
           "role_code": "participant"
         }
       ]
+    },
+    {
+      "id": "INV-b371a2fed03a09",
+      "name": "SK Hynix",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 2,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-03-30",
+      "latest_disclosed_at": "2026-08-19",
+      "role_counts": {
+        "historical_or_ambiguous": 2,
+        "participant": 1
+      },
+      "round_codes": [
+        "series_c"
+      ],
+      "activity_count": 3,
+      "portfolio_companies": [
+        {
+          "entity_id": "FICO-etched",
+          "canonical_entity_id": "",
+          "name": "Etched"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-58bdeeb895fbbb4a",
+          "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
+          "event_ids": [
+            "EV-19dd4c3a5dd5a94b",
+            "EV-4af14568b1bdeb35"
+          ],
+          "company_entity_id": "FICO-etched",
+          "company_canonical_entity_id": "",
+          "company_name": "Etched",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "Series D",
+          "amount_original": "$700m",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 700000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7 亿美元"
+          },
+          "announced_at": "2026-08-19",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "2026年7月Series C参投",
+          "role_code": "historical_or_ambiguous"
+        },
+        {
+          "activity_id": "IA-7c9f230676df9045",
+          "funding_insight_id": "FI-1590f6795e68ef12",
+          "event_ids": [
+            "EV-da1655ecfaf35feb"
+          ],
+          "company_entity_id": "FICO-etched",
+          "company_canonical_entity_id": "",
+          "company_name": "Etched",
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "Series C",
+          "amount_original": "$300 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 300000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3 亿美元"
+          },
+          "announced_at": "2026-07-23",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-211f8acea23483f3",
+          "funding_insight_id": "FI-12d0278b1cf72d65",
+          "event_ids": [
+            "EV-4e1d2d6105d09d24"
+          ],
+          "company_entity_id": "EN-ed9980025e312ded",
+          "company_canonical_entity_id": "",
+          "company_name": "Rebellions Inc.",
+          "round": "Pre-IPO",
+          "round_code": "pre_ipo",
+          "round_original": "Pre-IPO",
+          "amount_original": "$400 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 400000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "4 亿美元"
+          },
+          "announced_at": "2026-03-30",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "既有投资方",
+          "role_code": "historical_or_ambiguous"
+        }
+      ],
+      "translations": {
+        "zh-CN": {
+          "latest_activities[0].role": {
+            "text": "2026年7月Series C参投",
+            "source_hash": "ca89a4b6213c63b73693d1f4cbdbc294103169f8c18273db948594868797614d",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-21T02:11:59.594Z",
+            "status": "translated"
+          }
+        }
+      }
     },
     {
       "id": "INV-494771faf6e379",
@@ -52043,94 +52201,6 @@
           "scope": "current_round",
           "role": "本轮领投",
           "role_code": "lead"
-        }
-      ]
-    },
-    {
-      "id": "INV-b371a2fed03a09",
-      "name": "SK Hynix",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2026-03-30",
-      "latest_disclosed_at": "2026-07-23",
-      "role_counts": {
-        "historical_or_ambiguous": 1,
-        "participant": 1
-      },
-      "round_codes": [
-        "series_c"
-      ],
-      "activity_count": 2,
-      "portfolio_companies": [
-        {
-          "entity_id": "FICO-etched",
-          "canonical_entity_id": "",
-          "name": "Etched"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-7c9f230676df9045",
-          "funding_insight_id": "FI-1590f6795e68ef12",
-          "event_ids": [
-            "EV-da1655ecfaf35feb"
-          ],
-          "company_entity_id": "FICO-etched",
-          "company_canonical_entity_id": "",
-          "company_name": "Etched",
-          "round": "C轮",
-          "round_code": "series_c",
-          "round_original": "Series C",
-          "amount_original": "$300 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 300000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3 亿美元"
-          },
-          "announced_at": "2026-07-23",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-211f8acea23483f3",
-          "funding_insight_id": "FI-12d0278b1cf72d65",
-          "event_ids": [
-            "EV-4e1d2d6105d09d24"
-          ],
-          "company_entity_id": "EN-ed9980025e312ded",
-          "company_canonical_entity_id": "",
-          "company_name": "Rebellions Inc.",
-          "round": "Pre-IPO",
-          "round_code": "pre_ipo",
-          "round_original": "Pre-IPO",
-          "amount_original": "$400 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 400000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "4 亿美元"
-          },
-          "announced_at": "2026-03-30",
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "既有投资方",
-          "role_code": "historical_or_ambiguous"
         }
       ]
     },
@@ -106973,10 +107043,10 @@
       "id": "INV-8d1ab9feef6245",
       "name": "KT",
       "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
+      "canonical_entity_id": "EN-99d3fd0fa8fe115e",
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
       "collection_status": "evidence_backed",
       "current_round_count": 0,
       "historical_or_ambiguous_count": 1,
@@ -110836,8 +110906,10 @@
       "typeLabel": "AI 市场类别",
       "valueId": "infrastructure_compute",
       "eventIds": [
+        "EV-19dd4c3a5dd5a94b",
         "EV-4af14568b1bdeb35",
         "EV-8cb4468fe881602b",
+        "EV-181cd28d97c4e61d",
         "EV-e70a48e36e99d57a",
         "EV-bdcb22b1a53358f5",
         "EV-75452672c9976d73",
@@ -110984,6 +111056,7 @@
       "entityIds": [
         "EN-9cb45a27a2808c01",
         "EN-2f72d2f93de73383",
+        "EN-0b79cf2de0ee6b8e",
         "EN-8d4321d936320802",
         "EN-67e8c106650aa683",
         "EN-c0b0109d9439de57",
@@ -111066,7 +111139,6 @@
         "EN-ccfc5e062828b145",
         "EN-aa06a7dba2266341",
         "EN-37a54e5c414654d8",
-        "EN-0b79cf2de0ee6b8e",
         "EN-e19b20530b205aa9",
         "EN-7bcfaaf82306c01d",
         "EN-bf0e59763d382462",
@@ -111115,7 +111187,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-21"
     },
     {
       "id": "TX-technology-computer_use",
@@ -111153,8 +111225,10 @@
       "typeLabel": "AI 市场细分",
       "valueId": "computing_infrastructure",
       "eventIds": [
+        "EV-19dd4c3a5dd5a94b",
         "EV-4af14568b1bdeb35",
         "EV-8cb4468fe881602b",
+        "EV-181cd28d97c4e61d",
         "EV-e70a48e36e99d57a",
         "EV-34bc7a4ef57789b8",
         "EV-2dea56b0e97c1685",
@@ -111174,6 +111248,7 @@
       "entityIds": [
         "EN-9cb45a27a2808c01",
         "EN-2f72d2f93de73383",
+        "EN-0b79cf2de0ee6b8e",
         "EN-8d4321d936320802",
         "EN-a7e079ed603b3436",
         "EN-6fae0bc5a895aab8",
@@ -111184,7 +111259,6 @@
         "EN-830cefea8ed73a00",
         "EN-d1a61df8d3146e48",
         "EN-34bdfa9bfd563edb",
-        "EN-0b79cf2de0ee6b8e",
         "EN-4e4b333252f207fd",
         "EN-07c370b082ffd370",
         "EN-bbdefa2950f49882",
@@ -111193,7 +111267,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-08",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-21"
     },
     {
       "id": "TX-technology-memory_system",
@@ -111799,7 +111873,9 @@
       "typeLabel": "目标用户",
       "valueId": "developer",
       "eventIds": [
+        "EV-19dd4c3a5dd5a94b",
         "EV-4af14568b1bdeb35",
+        "EV-181cd28d97c4e61d",
         "EV-e70a48e36e99d57a",
         "EV-bdcb22b1a53358f5",
         "EV-75452672c9976d73",
@@ -111973,6 +112049,7 @@
       ],
       "entityIds": [
         "EN-9cb45a27a2808c01",
+        "EN-0b79cf2de0ee6b8e",
         "EN-8d4321d936320802",
         "EN-67e8c106650aa683",
         "EN-c0b0109d9439de57",
@@ -112058,7 +112135,6 @@
         "EN-ccfc5e062828b145",
         "EN-aa06a7dba2266341",
         "EN-37a54e5c414654d8",
-        "EN-0b79cf2de0ee6b8e",
         "EN-e19b20530b205aa9",
         "EN-05f6ecf01ac4ebec",
         "EN-bf0e59763d382462",
@@ -112129,7 +112205,7 @@
         "HW-304c6370cc157449"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-21"
     },
     {
       "id": "TX-product_form-developer_tool",
@@ -114077,6 +114153,7 @@
       "valueId": "business_user",
       "eventIds": [
         "EV-8cb4468fe881602b",
+        "EV-181cd28d97c4e61d",
         "EV-1dba157815d84342",
         "EV-d43103952399bc68",
         "EV-e70a48e36e99d57a",
@@ -114305,6 +114382,7 @@
       ],
       "entityIds": [
         "EN-2f72d2f93de73383",
+        "EN-0b79cf2de0ee6b8e",
         "FICO-50b2676afbe30c83",
         "EN-8c5929d253b07fed",
         "EN-8d4321d936320802",
@@ -114515,7 +114593,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-21"
     },
     {
       "id": "TX-industry-automotive_transportation",
@@ -116862,8 +116940,10 @@
       "typeLabel": "AI 市场子类",
       "valueId": "hardware_computing",
       "eventIds": [
+        "EV-19dd4c3a5dd5a94b",
         "EV-4af14568b1bdeb35",
         "EV-8cb4468fe881602b",
+        "EV-181cd28d97c4e61d",
         "EV-e70a48e36e99d57a",
         "EV-ef2ac2c9b425491c",
         "EV-b116eafe60d71fbe",
@@ -116906,6 +116986,7 @@
       "entityIds": [
         "EN-9cb45a27a2808c01",
         "EN-2f72d2f93de73383",
+        "EN-0b79cf2de0ee6b8e",
         "EN-8d4321d936320802",
         "EN-adda212f0afa4781",
         "EN-373da2ec629326c0",
@@ -116931,7 +117012,6 @@
         "EN-a736e4d4ef0af078",
         "EN-d1a61df8d3146e48",
         "EN-34bdfa9bfd563edb",
-        "EN-0b79cf2de0ee6b8e",
         "EN-a5e5f031b6f878cf",
         "EN-4e4b333252f207fd",
         "EN-07c370b082ffd370",
@@ -116944,7 +117024,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-08",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-21"
     },
     {
       "id": "TX-technology-speech_audio",
@@ -118681,6 +118761,7 @@
       "typeLabel": "产品形态",
       "valueId": "ai_compute_system",
       "eventIds": [
+        "EV-19dd4c3a5dd5a94b",
         "EV-4af14568b1bdeb35",
         "EV-e70a48e36e99d57a",
         "EV-4fbbf16279e27000",

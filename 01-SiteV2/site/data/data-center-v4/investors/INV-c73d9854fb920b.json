@@ -23,11 +23,12 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 13,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 12,
     "first_disclosed_at": "2025-09-09",
-    "latest_disclosed_at": "2026-08-17",
+    "latest_disclosed_at": "2026-08-19",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "lead": 1,
       "participant": 12
     },
@@ -103,6 +104,45 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d63344b16ac5cd63",
+        "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
+        "event_ids": [
+          "EV-19dd4c3a5dd5a94b",
+          "EV-4af14568b1bdeb35"
+        ],
+        "company_entity_id": "FICO-etched",
+        "company_canonical_entity_id": "",
+        "company_name": "Etched",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$700m",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7 亿美元"
+        },
+        "announced_at": "2026-08-19",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "2026年7月Series C参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-a258f732874d60d6",
+            "source_url": "https://siliconangle.com/2026/08/18/inference-chip-startup-etched-raises-another-700m-at-21b-valuation/",
+            "source_title": "Inference chip startup Etched raises $700M more at $21B valuation - SiliconANGLE",
+            "source_content_hash": "092f21771fc9ef39",
+            "quote": "A few weeks after closing a $300 million round backed by Nvidia Corp., Etched Inc. today announced that it has raised an additional $700 million in funding.",
+            "quote_hash": "e6b1cd4973fbea84f62419b39c47bb822fd8e7007329293141c7c95caac3dc06"
+          }
+        ]
+      },
       {
         "activity_id": "IA-c008d169fe115916",
         "funding_insight_id": "FI-4b811c030362045e",
@@ -633,6 +673,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-a258f732874d60d6",
+        "source_url": "https://siliconangle.com/2026/08/18/inference-chip-startup-etched-raises-another-700m-at-21b-valuation/",
+        "source_title": "Inference chip startup Etched raises $700M more at $21B valuation - SiliconANGLE",
+        "source_content_hash": "092f21771fc9ef39",
+        "quote": "A few weeks after closing a $300 million round backed by Nvidia Corp., Etched Inc. today announced that it has raised an additional $700 million in funding.",
+        "quote_hash": "e6b1cd4973fbea84f62419b39c47bb822fd8e7007329293141c7c95caac3dc06"
+      },
+      {
         "source_id": "FISRC-c02f2ac04f9320df",
         "source_url": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud",
         "source_title": "Groq Closes $350 million Series A, Building the World's Leading AI Inference Cloud | Groq is the premier neocloud for fast inference",
@@ -768,6 +816,18 @@
         "quote": "Mistral, backed by Nvidia, was valued at more than $6 billion after its Series B funding round last year",
         "quote_hash": "7a5ad182a8ed119b5917ef5b180d84cee03711da1e8c7c006ab23d7b242dba52"
       }
-    ]
+    ],
+    "translations": {
+      "zh-CN": {
+        "activities[0].role": {
+          "text": "2026年7月Series C参投",
+          "source_hash": "ca89a4b6213c63b73693d1f4cbdbc294103169f8c18273db948594868797614d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-08-21T02:11:59.594Z",
+          "status": "translated"
+        }
+      }
+    }
   }
 }
