@@ -398,10 +398,16 @@ jobs:
         shell: bash
         run: |
           set -o pipefail
+          set +e
           node agent-workflow/tools/generate-data-center-model-assist.mjs \
             --date="${RUN_DATE}" --write=true --concurrency=2 \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-model-assist.log"
+          model_assist_status=${PIPESTATUS[0]}
+          set -e
           node agent-workflow/tools/assert-data-center-model-assist.mjs --date="${RUN_DATE}"
+          if [ "${model_assist_status}" -ne 0 ]; then
+            echo "::warning::Model assist completed with isolated candidate failures; rebuilding from the validated accepted subset."
+          fi
 
       - name: Rebuild Data Center V4 with accepted model candidates
         id: data-center-v4-model-rebuild

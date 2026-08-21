@@ -9,11 +9,11 @@
   ],
   "summary": {
     "current_catalog_reviewed": 533,
-    "supplemental_claim_entities": 22,
+    "supplemental_claim_entities": 23,
     "historical_decisions_retained": 347,
-    "reviewed": 895,
+    "reviewed": 896,
     "confirmed": 368,
-    "corrected": 184,
+    "corrected": 185,
     "merged": 108,
     "quarantined": 235
   },
@@ -4111,6 +4111,38 @@
       "reviewer": "codex-china-funding-review",
       "reviewed_at": "2026-08-03T07:15:00.000Z",
       "error_patterns": []
+    },
+    {
+      "entity_id": "EN-99d3fd0fa8fe115e",
+      "current": {
+        "name": "KT",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "KT",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "evidence": {
+        "claim_refs": [
+          "CL-ff571bc346130784",
+          "CL-f2b81248c692db79"
+        ],
+        "secondary_sources": []
+      },
+      "advisory_source": "codex_claim_backfill",
+      "advisory_decision": "explicit_review",
+      "confidence": 1,
+      "rationale": "accepted Claims 精确写明 Korea Telecom（KT）发布企业级主权 AI 设备，确认其为公司实体。",
+      "review_status": "accepted",
+      "reviewer": "codex-current-entity-review",
+      "reviewed_at": "2026-08-21T02:00:00.000Z",
+      "error_patterns": [
+        "legacy_correction_retained"
+      ]
     },
     {
       "entity_id": "EN-8d82b0feb1f5da72",

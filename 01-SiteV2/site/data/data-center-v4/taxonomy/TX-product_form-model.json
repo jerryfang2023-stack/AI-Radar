@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "generatedAt": "2026-08-21T02:05:12.052Z",
     "latestDataDate": "2026-08-21",
     "currentDate": "2026-08-21",
-    "eventCount": 2267,
+    "eventCount": 2285,
     "quarantinedEventCount": 20
   },
   "node": {
@@ -99,9 +99,11 @@
       "EV-9f6d481a09b063ee",
       "EV-fd21441fb6e143c3",
       "EV-78651dfea74b4323",
+      "EV-435ad78c9ec50025",
       "EV-b33e250220b91f9c",
       "EV-4c168759119d2668",
       "EV-d93dd19a481307ec",
+      "EV-eb3545d5948aa255",
       "EV-3a4acc92731cb5ac",
       "EV-0d5a32aca724d30e",
       "EV-63948deaec161736",
@@ -311,6 +313,7 @@
       "EN-c890cfa67d1da908",
       "EN-3e52637ec683b555",
       "EN-7df09a7717ef2feb",
+      "EN-9c3de5f42376b1af",
       "EN-f7d9f5a90479d632",
       "EN-99d3fd0fa8fe115e",
       "EN-32e83e92d45d71f6",
@@ -21833,6 +21836,128 @@
       "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
     },
     {
+      "id": "EV-435ad78c9ec50025",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "GEN-1.5：通用型AI智能体通过单次演示教会机器人新任务",
+      "originalTitle": "GEN-1.5: Generalist AI teaches robots new tasks from a single demo",
+      "subject": "Generalist AI",
+      "action": "model_release",
+      "object": "GEN-1.5",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-9c3de5f42376b1af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-9c3de5f42376b1af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-9c3de5f42376b1af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-9c3de5f42376b1af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-9c3de5f42376b1af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-9c3de5f42376b1af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9c3de5f42376b1af",
+        "EN-4dc02e72724c7467"
+      ],
+      "entityNames": [
+        "Generalist AI",
+        "GEN-1.5"
+      ],
+      "productName": "GEN-1.5",
+      "products": [
+        {
+          "name": "GEN-1.5",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/gen-1-5-generalist-ai-teaches-robots-new-tasks-from-a-single-demo",
+      "publisher": "The Decoder AI News"
+    },
+    {
       "id": "EV-b33e250220b91f9c",
       "dataDate": "2026-08-21",
       "date": "2026-08-20",
@@ -22181,6 +22306,138 @@
       ],
       "sourceUrl": "https://techtimes.com/articles/324976/20260819/koreas-first-sovereign-ai-appliance-ships-domestic-chip-domestic-llm-one-server.htm",
       "publisher": "techtimes.com"
+    },
+    {
+      "id": "EV-eb3545d5948aa255",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "KT将韩国AI芯片与语言模型整合至一台企业服务器",
+      "originalTitle": "KT puts Korean AI chips, language model into one enterprise server - The Korea Times",
+      "subject": "KT",
+      "action": "product_release",
+      "object": "KT NPU LLM Station",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-99d3fd0fa8fe115e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-99d3fd0fa8fe115e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-99d3fd0fa8fe115e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-99d3fd0fa8fe115e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-99d3fd0fa8fe115e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-99d3fd0fa8fe115e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-99d3fd0fa8fe115e",
+        "EN-942d023fd3168d40",
+        "EN-2ea859d02e5eb089"
+      ],
+      "entityNames": [
+        "KT",
+        "NPU LLM Station",
+        "Korean AI"
+      ],
+      "productName": "NPU LLM Station",
+      "products": [
+        {
+          "name": "NPU LLM Station",
+          "type": "产品/服务",
+          "ownerNames": [
+            "KT"
+          ]
+        },
+        {
+          "name": "Korean AI",
+          "type": "产品/服务",
+          "ownerNames": [
+            "KT"
+          ]
+        }
+      ],
+      "sourceUrl": "https://koreatimes.co.kr/business/companies/20260819/kt-puts-korean-ai-chips-language-model-into-one-enterprise-server",
+      "publisher": "koreatimes.co.kr"
     },
     {
       "id": "EV-3a4acc92731cb5ac",
@@ -42619,6 +42876,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-8232ad0075a77b7a",
         "EV-3873f7ea8ac5a93f",
         "EV-d93dd19a481307ec",
         "EV-40d88f6279d48304",
@@ -42799,6 +43057,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-da06805e06990d63",
         "EV-11a0afc2ecb6e42e",
         "EV-6610418ae1ced59f",
         "EV-9703abcbede6968a",
@@ -43298,12 +43557,15 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-c6d84982982597aa",
         "EV-181cd28d97c4e61d",
         "EV-e70a48e36e99d57a",
         "EV-55e7c286e95be405",
@@ -43541,21 +43803,28 @@
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
+        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
       "lastSeen": "2026-08-21"
@@ -43949,6 +44218,7 @@
         "EV-a00763037a94d512",
         "EV-02548003157849bb",
         "EV-8b0f056571d68269",
+        "EV-026b9b4462b4adc8",
         "EV-3ebefd784ba0afd0",
         "EV-ba20c6e0144aabb9",
         "EV-081fe42665b4a0b2",
@@ -44005,7 +44275,7 @@
         "EN-7d1507284a5757ca"
       ],
       "firstSeen": "2023-11-28",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-21"
     },
     {
       "id": "EN-11507a0e2f5e69d5",
@@ -44882,6 +45152,28 @@
       "lastSeen": "2026-07-29"
     },
     {
+      "id": "EN-9c3de5f42376b1af",
+      "name": "Generalist AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-435ad78c9ec50025"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-use_case-physical_automation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-20",
+      "lastSeen": "2026-08-21"
+    },
+    {
       "id": "EN-f7d9f5a90479d632",
       "name": "Ramp",
       "entityType": "organization_candidate",
@@ -44917,7 +45209,8 @@
       "eventIds": [
         "EV-30585effe9134084",
         "EV-4c168759119d2668",
-        "EV-d93dd19a481307ec"
+        "EV-d93dd19a481307ec",
+        "EV-eb3545d5948aa255"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -44971,6 +45264,7 @@
       ],
       "eventIds": [
         "EV-f282ab8740ff0096",
+        "EV-026b9b4462b4adc8",
         "EV-3ebefd784ba0afd0",
         "EV-5bbc509a032b8309",
         "EV-bf46d8d6d7d6e90a",
@@ -45035,6 +45329,7 @@
         "EV-ebef81764102ee7c",
         "EV-f6611268f119a172",
         "EV-342799d4e68e7416",
+        "EV-9434ab7a2e818ce9",
         "EV-4b0065f780bd73bd",
         "EV-e07d82ffbad83150",
         "EV-e544a4c3fb59b9b0",
@@ -45279,6 +45574,7 @@
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
         "EV-baf1a4c3db620d90",
+        "EV-4af183c70855ecf2",
         "EV-6fdbcd14c6a633b6",
         "EV-7b0ff6657c0e0483",
         "EV-d93dd19a481307ec",
@@ -45754,7 +46050,9 @@
         "EV-3c4d6d70ac763885",
         "EV-597a6d51533fe5d6",
         "EV-3873f7ea8ac5a93f",
+        "EV-3e7db5b8d976bf0e",
         "EV-e3da5e799e746408",
+        "EV-f9ebb480a6b58b21",
         "EV-46cd64a76d3767f5",
         "EV-937b855e723d6ef0",
         "EV-d93dd19a481307ec",
@@ -45938,12 +46236,13 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-00ffb2c501a37ec8",
+        "EV-da06805e06990d63",
         "EV-0c00a6c681f22b98",
         "EV-2c08a493d3c8b9c7",
         "EV-11a0afc2ecb6e42e",
         "EV-6610418ae1ced59f",
         "EV-9940dccace747f28",
-        "EV-00ffb2c501a37ec8",
         "EV-f819309f846d95bc",
         "EV-2902a32e86a4b2d1",
         "EV-90707e0cbca091c9",
@@ -46838,7 +47137,9 @@
       "classificationRefs": [
         "TX-product_form-model"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
       "firstSeen": "2026-07-03",
       "lastSeen": "2026-07-04"
     },
@@ -49269,6 +49570,73 @@
       ]
     },
     {
+      "id": "HWC-837dfbd90183d511",
+      "snapshotKey": "837dfbd90183d511",
+      "snapshotId": "HWS-9ac7fd405eedd5ec",
+      "eventId": "EV-435ad78c9ec50025",
+      "eventIds": [
+        "EV-435ad78c9ec50025"
+      ],
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "title": "GEN-1.5",
+      "subject": "Generalist AI",
+      "productNames": [
+        "GEN-1.5"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-60cb0b79fc292765"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-60cb0b79fc292765",
+          "fact_type": "product",
+          "observed_at": "2026-08-20T12:35:52.000Z",
+          "subject_entity_id": "EN-9c3de5f42376b1af",
+          "subject_name": "Generalist AI",
+          "product_entity_ids": [
+            "EN-4dc02e72724c7467"
+          ],
+          "product_names": [
+            "GEN-1.5"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Robotics startup Generalist AI has unveiled GEN-1.5, an AI model that teaches robots new tasks from a single demonstration.",
+          "event_refs": [
+            "EV-435ad78c9ec50025"
+          ],
+          "claim_ref": "CL-4978552a0b7a728f",
+          "source_refs": [
+            "SA-d89041c75e4f4249"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/gen-1-5-generalist-ai-teaches-robots-new-tasks-from-a-single-demo",
+      "entityIds": [
+        "EN-9c3de5f42376b1af",
+        "EN-4dc02e72724c7467"
+      ]
+    },
+    {
       "id": "HWC-1d458fe0521f28c1",
       "snapshotKey": "1d458fe0521f28c1",
       "snapshotId": "HWS-2dbe7feeec9426e2",
@@ -49421,6 +49789,77 @@
         "EN-99d3fd0fa8fe115e",
         "EN-2ea859d02e5eb089",
         "EN-942d023fd3168d40"
+      ]
+    },
+    {
+      "id": "HWC-36adb2bcffad68b4",
+      "snapshotKey": "36adb2bcffad68b4",
+      "snapshotId": "HWS-8876d719efa3b9d7",
+      "eventId": "EV-eb3545d5948aa255",
+      "eventIds": [
+        "EV-eb3545d5948aa255"
+      ],
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "title": "NPU LLM Station / Korean AI",
+      "subject": "KT",
+      "productNames": [
+        "NPU LLM Station",
+        "Korean AI"
+      ],
+      "hardwareType": "ai_accelerator",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-dcefe3c8a4e0a412"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-dcefe3c8a4e0a412",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T05:17:03.000Z",
+          "subject_entity_id": "EN-99d3fd0fa8fe115e",
+          "subject_name": "KT",
+          "product_entity_ids": [
+            "EN-942d023fd3168d40",
+            "EN-2ea859d02e5eb089"
+          ],
+          "product_names": [
+            "NPU LLM Station",
+            "Korean AI"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KT said Wednesday it launched the KT NPU LLM Station, an integrated AI appliance built around Rebellions’ ATOM-MAX neural processing unit and KT’s proprietary Mi:dm K 2.5 Pro large language model.",
+          "event_refs": [
+            "EV-eb3545d5948aa255"
+          ],
+          "claim_ref": "CL-901f072b1497cfa2",
+          "source_refs": [
+            "SA-05fdc2e5095b6c7b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://koreatimes.co.kr/business/companies/20260819/kt-puts-korean-ai-chips-language-model-into-one-enterprise-server",
+      "entityIds": [
+        "EN-99d3fd0fa8fe115e",
+        "EN-942d023fd3168d40",
+        "EN-2ea859d02e5eb089"
       ]
     },
     {

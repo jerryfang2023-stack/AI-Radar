@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "generatedAt": "2026-08-21T02:05:12.052Z",
     "latestDataDate": "2026-08-21",
     "currentDate": "2026-08-21",
-    "eventCount": 2267,
+    "eventCount": 2285,
     "quarantinedEventCount": 20
   },
   "node": {
@@ -69,6 +69,7 @@
       "EV-e4fec8a00b416d12",
       "EV-39848cdd62c00e59",
       "EV-4faa2bcf2e42e60c",
+      "EV-435ad78c9ec50025",
       "EV-24d84f9f4613ea51",
       "EV-5ede0f85a672441c",
       "EV-c698da7da473b059",
@@ -156,6 +157,7 @@
       "EN-3e14bbbb0445c2de",
       "EN-7c5d04104b1d34e7",
       "EN-72138e570e5103e2",
+      "EN-9c3de5f42376b1af",
       "EN-aec12c1b42f6e0b6",
       "EN-478676438ee161a3",
       "EN-e59f5a52b6713a29",
@@ -198,7 +200,7 @@
       "HW-dca442211b264bbe"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-08-18"
+    "lastSeen": "2026-08-21"
   },
   "events": [
     {
@@ -14414,6 +14416,128 @@
       "publisher": "NVIDIA AI Blog"
     },
     {
+      "id": "EV-435ad78c9ec50025",
+      "dataDate": "2026-08-21",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-21",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "GEN-1.5：通用型AI智能体通过单次演示教会机器人新任务",
+      "originalTitle": "GEN-1.5: Generalist AI teaches robots new tasks from a single demo",
+      "subject": "Generalist AI",
+      "action": "model_release",
+      "object": "GEN-1.5",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-9c3de5f42376b1af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-9c3de5f42376b1af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-9c3de5f42376b1af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-9c3de5f42376b1af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-9c3de5f42376b1af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-9c3de5f42376b1af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9c3de5f42376b1af",
+        "EN-4dc02e72724c7467"
+      ],
+      "entityNames": [
+        "Generalist AI",
+        "GEN-1.5"
+      ],
+      "productName": "GEN-1.5",
+      "products": [
+        {
+          "name": "GEN-1.5",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/gen-1-5-generalist-ai-teaches-robots-new-tasks-from-a-single-demo",
+      "publisher": "The Decoder AI News"
+    },
+    {
       "id": "EV-24d84f9f4613ea51",
       "dataDate": "2026-08-18",
       "date": "2026-08-17",
@@ -20595,12 +20719,15 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-c6d84982982597aa",
         "EV-181cd28d97c4e61d",
         "EV-e70a48e36e99d57a",
         "EV-55e7c286e95be405",
@@ -20838,21 +20965,28 @@
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
+        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
       "lastSeen": "2026-08-21"
@@ -21635,6 +21769,28 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-07-05",
       "lastSeen": "2026-07-05"
+    },
+    {
+      "id": "EN-9c3de5f42376b1af",
+      "name": "Generalist AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-435ad78c9ec50025"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-use_case-physical_automation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-20",
+      "lastSeen": "2026-08-21"
     },
     {
       "id": "EN-aec12c1b42f6e0b6",
@@ -22801,6 +22957,73 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-837dfbd90183d511",
+      "snapshotKey": "837dfbd90183d511",
+      "snapshotId": "HWS-9ac7fd405eedd5ec",
+      "eventId": "EV-435ad78c9ec50025",
+      "eventIds": [
+        "EV-435ad78c9ec50025"
+      ],
+      "dataDate": "2026-08-21",
+      "date": "2026-08-21",
+      "title": "GEN-1.5",
+      "subject": "Generalist AI",
+      "productNames": [
+        "GEN-1.5"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-60cb0b79fc292765"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-21",
+          "hardware_fact_id": "HWF-60cb0b79fc292765",
+          "fact_type": "product",
+          "observed_at": "2026-08-20T12:35:52.000Z",
+          "subject_entity_id": "EN-9c3de5f42376b1af",
+          "subject_name": "Generalist AI",
+          "product_entity_ids": [
+            "EN-4dc02e72724c7467"
+          ],
+          "product_names": [
+            "GEN-1.5"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Robotics startup Generalist AI has unveiled GEN-1.5, an AI model that teaches robots new tasks from a single demonstration.",
+          "event_refs": [
+            "EV-435ad78c9ec50025"
+          ],
+          "claim_ref": "CL-4978552a0b7a728f",
+          "source_refs": [
+            "SA-d89041c75e4f4249"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/gen-1-5-generalist-ai-teaches-robots-new-tasks-from-a-single-demo",
+      "entityIds": [
+        "EN-9c3de5f42376b1af",
+        "EN-4dc02e72724c7467"
+      ]
+    },
     {
       "id": "HWC-1eb06bff2147494a",
       "snapshotKey": "1eb06bff2147494a",

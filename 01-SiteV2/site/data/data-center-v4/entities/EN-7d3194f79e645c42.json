@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "generatedAt": "2026-08-21T02:05:12.052Z",
     "latestDataDate": "2026-08-21",
     "currentDate": "2026-08-21",
-    "eventCount": 2267,
+    "eventCount": 2285,
     "quarantinedEventCount": 20
   },
   "entity": {
@@ -117,7 +117,9 @@
       "EV-3c4d6d70ac763885",
       "EV-597a6d51533fe5d6",
       "EV-3873f7ea8ac5a93f",
+      "EV-3e7db5b8d976bf0e",
       "EV-e3da5e799e746408",
+      "EV-f9ebb480a6b58b21",
       "EV-46cd64a76d3767f5",
       "EV-937b855e723d6ef0",
       "EV-d93dd19a481307ec",
@@ -301,12 +303,13 @@
       "EV-02b19ffbe883ee2e",
       "EV-cf496e0f8a56ca97",
       "EV-00834dd71037c7cc",
+      "EV-00ffb2c501a37ec8",
+      "EV-da06805e06990d63",
       "EV-0c00a6c681f22b98",
       "EV-2c08a493d3c8b9c7",
       "EV-11a0afc2ecb6e42e",
       "EV-6610418ae1ced59f",
       "EV-9940dccace747f28",
-      "EV-00ffb2c501a37ec8",
       "EV-f819309f846d95bc",
       "EV-2902a32e86a4b2d1",
       "EV-90707e0cbca091c9",
@@ -486,6 +489,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-da06805e06990d63",
         "EV-fe49d2ee580cfea2",
         "EV-11a0afc2ecb6e42e",
         "EV-6610418ae1ced59f",
@@ -607,13 +611,15 @@
       "productsServices": [
         "EV-597a6d51533fe5d6",
         "EV-3873f7ea8ac5a93f",
+        "EV-3e7db5b8d976bf0e",
         "EV-e3da5e799e746408",
+        "EV-f9ebb480a6b58b21",
         "EV-937b855e723d6ef0",
+        "EV-00ffb2c501a37ec8",
         "EV-46cd64a76d3767f5",
         "EV-40d88f6279d48304",
         "EV-0c00a6c681f22b98",
         "EV-2c08a493d3c8b9c7",
-        "EV-00ffb2c501a37ec8",
         "EV-05fea7a5d8b8db46",
         "EV-06e31f68974104ec",
         "EV-1e7c9d930a2a5d8e",
@@ -908,6 +914,22 @@
         ]
       },
       {
+        "id": "EV-3e7db5b8d976bf0e",
+        "dataDate": "2026-08-21",
+        "date": "2026-08-20",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "OpenAI 推出 Private Safety Processing 安全系统，可在不存储客户数据的情况下捕捉滥用行为",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-cb3168ac65600e46"
+        ]
+      },
+      {
         "id": "EV-e3da5e799e746408",
         "dataDate": "2026-08-21",
         "date": "2026-08-20",
@@ -924,6 +946,21 @@
           "EN-7d3194f79e645c42",
           "EN-2e27a4ab28dcad40",
           "EN-d5e00f83f15acb4a"
+        ]
+      },
+      {
+        "id": "EV-f9ebb480a6b58b21",
+        "dataDate": "2026-08-21",
+        "date": "2026-08-20",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "揭秘 OpenAI 的\"终极野心\"：让智能体像人类一样熟练操作电脑",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42"
         ]
       },
       {
@@ -979,6 +1016,37 @@
           "EN-c70eca6b0f88f44d",
           "EN-7d3c8fb6fa445060",
           "EN-b563f0c46d6f78f8"
+        ]
+      },
+      {
+        "id": "EV-00ffb2c501a37ec8",
+        "dataDate": "2026-08-21",
+        "date": "2026-08-20",
+        "eventType": "security_incident",
+        "eventTypeLabel": "安全事件",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI踩了刹车。接下来呢？",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-da06805e06990d63",
+        "dataDate": "2026-08-21",
+        "date": "2026-08-20",
+        "eventType": "financial_performance",
+        "eventTypeLabel": "财务表现",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "新数据显示，OpenAI在企业用户方面正迎头赶上Anthropic",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d"
         ]
       },
       {
@@ -1232,21 +1300,6 @@
         "displayTags": [],
         "entityIds": [
           "EN-c70eca6b0f88f44d",
-          "EN-7d3194f79e645c42"
-        ]
-      },
-      {
-        "id": "EV-00ffb2c501a37ec8",
-        "dataDate": "2026-08-20",
-        "date": "2026-08-18",
-        "eventType": "security_incident",
-        "eventTypeLabel": "安全事件",
-        "eventGroup": "组织、政策与法律",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "OpenAI公布新安全变更，其AI曾入侵Hugging Face",
-        "displayTags": [],
-        "entityIds": [
           "EN-7d3194f79e645c42"
         ]
       },
@@ -12043,12 +12096,15 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-c6d84982982597aa",
         "EV-181cd28d97c4e61d",
         "EV-e70a48e36e99d57a",
         "EV-55e7c286e95be405",
@@ -12286,21 +12342,28 @@
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
+        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
       "lastSeen": "2026-08-21"
@@ -12545,6 +12608,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-8232ad0075a77b7a",
         "EV-3873f7ea8ac5a93f",
         "EV-d93dd19a481307ec",
         "EV-40d88f6279d48304",
@@ -12725,6 +12789,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-da06805e06990d63",
         "EV-11a0afc2ecb6e42e",
         "EV-6610418ae1ced59f",
         "EV-9703abcbede6968a",
@@ -14517,9 +14582,11 @@
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
         "EV-78651dfea74b4323",
+        "EV-435ad78c9ec50025",
         "EV-b33e250220b91f9c",
         "EV-4c168759119d2668",
         "EV-d93dd19a481307ec",
+        "EV-eb3545d5948aa255",
         "EV-3a4acc92731cb5ac",
         "EV-0d5a32aca724d30e",
         "EV-63948deaec161736",
@@ -14729,6 +14796,7 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
+        "EN-9c3de5f42376b1af",
         "EN-f7d9f5a90479d632",
         "EN-99d3fd0fa8fe115e",
         "EN-32e83e92d45d71f6",
@@ -15103,6 +15171,7 @@
         "EV-78651dfea74b4323",
         "EV-4c168759119d2668",
         "EV-d93dd19a481307ec",
+        "EV-eb3545d5948aa255",
         "EV-a6c4f879a58ababa",
         "EV-c7d0b810ac3b3d4e",
         "EV-57fcbef33071910b",
@@ -15277,7 +15346,6 @@
       "valueId": "business_user",
       "eventIds": [
         "EV-8cb4468fe881602b",
-        "EV-181cd28d97c4e61d",
         "EV-1dba157815d84342",
         "EV-d43103952399bc68",
         "EV-e70a48e36e99d57a",
@@ -15506,7 +15574,6 @@
       ],
       "entityIds": [
         "EN-2f72d2f93de73383",
-        "EN-0b79cf2de0ee6b8e",
         "FICO-50b2676afbe30c83",
         "EN-8c5929d253b07fed",
         "EN-8d4321d936320802",
@@ -15717,7 +15784,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-21"
+      "lastSeen": "2026-08-20"
     },
     {
       "id": "TX-use_case-productivity_enterprise_workflows",
@@ -16500,7 +16567,7 @@
         "HW-c5a22adcc66136ed"
       ],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-21"
     },
     {
       "id": "TX-target_user-consumer",
@@ -17144,6 +17211,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-1ced8c8a0480d5c2",
         "EV-3873f7ea8ac5a93f",
         "EV-cd7ba52564d4091e",
         "EV-8cc00de56738c21d",
@@ -17587,6 +17655,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-877c3aec832cd410",
         "EN-59bba357145ca539",
         "EN-e3ce9cc5efa9354c",
         "EN-03c4260539e08e9c",

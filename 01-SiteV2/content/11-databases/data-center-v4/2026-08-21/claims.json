@@ -924,6 +924,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-a4c1f0029071baf1",
+    "raw_id": "RAW-d4e65dcaa4bfb22b",
+    "claim_type": "hardware_deployment",
+    "subject": "Compal Electronics",
+    "predicate": "hardware_deployment",
+    "object": "Daxi AI Server Manufacturing Center",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-83e91dc266523b06"
+    },
+    "source_span": {
+      "raw_id": "RAW-d4e65dcaa4bfb22b",
+      "start": 129,
+      "end": 316
+    },
+    "source_quote": "Compal Electronics (Compal; TWSE: 2324) today held the opening ceremony for its Daxi AI Server Manufacturing Center, officially launching next-generation AI server manufacturing capacity.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4e68d90fd016a7a9",
+    "raw_id": "RAW-4f3fd64ef0cbfa40",
+    "claim_type": "funding",
+    "subject": "Etched",
+    "predicate": "funding",
+    "object": "$700m funding round at $21bn valuation",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-5d6df3799070c15c"
+    },
+    "source_span": {
+      "raw_id": "RAW-4f3fd64ef0cbfa40",
+      "start": 95,
+      "end": 241
+    },
+    "source_quote": "Etched, a US-based company that builds inference clusters for AI workloads, has raised $700m in a funding round that values the business at $21bn.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-d9d15b5cc41e7ea7",
     "raw_id": "RAW-9955ad2bd10a4332",
     "claim_type": "model_release",
@@ -1005,6 +1049,116 @@
     "source_quote": "The KT NPU LLM Station is an all-in-one product that runs KT's self-developed LLM \"Mi:deum K 2.5 Pro\" and an operating API platform on the neural processing unit (NPU) \"ATOM-MAX\" made by South Korean AI chip company Rebellion.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dd753bd5c70f1901",
+    "raw_id": "RAW-fcf1607f8d3bac0b",
+    "claim_type": "procurement_contract",
+    "subject": "Darwin AI",
+    "predicate": "procurement_contract",
+    "object": "Bulk Purchase Agreement BP2026-0015",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e39f3e07492ef6a0"
+    },
+    "source_span": {
+      "raw_id": "RAW-fcf1607f8d3bac0b",
+      "start": 534,
+      "end": 775
+    },
+    "source_quote": "Darwin AI today announced the nation’s first Bulk Purchase Agreement (BPA) for AI governance, established in partnership with the Texas Department of Information Resources (DIR) and awarded under Carahsoft Bulk Purchase Agreement BP2026-0015",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9f17385edec794e1",
+    "raw_id": "RAW-9397ac91cdd4242e",
+    "claim_type": "procurement_contract",
+    "subject": "Darwin AI",
+    "predicate": "procurement_contract",
+    "object": "Texas Department of Information Resources",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-9d76a3a39a32f467"
+    },
+    "source_span": {
+      "raw_id": "RAW-9397ac91cdd4242e",
+      "start": 765,
+      "end": 1006
+    },
+    "source_quote": "Darwin AI today announced the nation’s first Bulk Purchase Agreement (BPA) for AI governance, established in partnership with the Texas Department of Information Resources (DIR) and awarded under Carahsoft Bulk Purchase Agreement BP2026-0015",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4fb097999a39d2a1",
+    "raw_id": "RAW-201d9b3532f4b673",
+    "claim_type": "certification_compliance",
+    "subject": "Advantech",
+    "predicate": "certification_compliance",
+    "object": "NVIDIA JetPack 7.2 validation",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-0b8382bbcba4a19d"
+    },
+    "source_span": {
+      "raw_id": "RAW-201d9b3532f4b673",
+      "start": 5111,
+      "end": 5324
+    },
+    "source_quote": "Advantech (TWSE: 2395), a global leader in industrial IoT, has announced the successful completion of validation with its camera ecosystem partners on NVIDIA JetPack 7.2 across its MIC-AI and MIB series platforms.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-901f072b1497cfa2",
+    "raw_id": "RAW-ce7fc10e36ae5d1f",
+    "claim_type": "product_release",
+    "subject": "KT",
+    "predicate": "product_release",
+    "object": "KT NPU LLM Station",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-6acc8233bbe03d0e"
+    },
+    "source_span": {
+      "raw_id": "RAW-ce7fc10e36ae5d1f",
+      "start": 536,
+      "end": 732
+    },
+    "source_quote": "KT said Wednesday it launched the KT NPU LLM Station, an integrated AI appliance built around Rebellions’ ATOM-MAX neural processing unit and KT’s proprietary Mi:dm K 2.5 Pro large language model.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b04971041677acd6",
+    "raw_id": "RAW-77f5269395e51bd2",
+    "claim_type": "procurement_contract",
+    "subject": "U.S. Army Contracting Command",
+    "predicate": "procurement_contract",
+    "object": "Raft",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-be11452244c885f5"
+    },
+    "source_span": {
+      "raw_id": "RAW-77f5269395e51bd2",
+      "start": 386,
+      "end": 558
+    },
+    "source_quote": "today announced it has been awarded a five-year, $99 million firm-fixed-price Indefinite Delivery, Indefinite Quantity (IDIQ) contract by the U.S. Army Contracting Command.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1176,6 +1330,116 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-7a38feb4197932a8",
+    "raw_id": "RAW-c65b57399a145140",
+    "claim_type": "hardware_product",
+    "subject": "Cerebras",
+    "predicate": "hardware_product",
+    "object": "CS-4",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-38694582827f33b2"
+    },
+    "source_span": {
+      "raw_id": "RAW-c65b57399a145140",
+      "start": 96,
+      "end": 174
+    },
+    "source_quote": "Today, we are introducing the fourth generation of our Cerebras System: CS-4 .",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b545ca17726818d1",
+    "raw_id": "RAW-f1cbe5e9e88f4720",
+    "claim_type": "model_release",
+    "subject": "Claude Sonnet 5",
+    "predicate": "model_release",
+    "object": "GitHub Copilot",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-7cefafe6c5539875"
+    },
+    "source_span": {
+      "raw_id": "RAW-f1cbe5e9e88f4720",
+      "start": 68,
+      "end": 164
+    },
+    "source_quote": "Claude Sonnet 5 is Anthropic&rsquo;s latest Sonnet-class model, now available in GitHub Copilot.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a0ec7a7f230c8889",
+    "raw_id": "RAW-b21e9b5a913da2b8",
+    "claim_type": "financial_performance",
+    "subject": "Roku",
+    "predicate": "financial_performance",
+    "object": "AI deployment resolves roughly half of eligible customer interactions without human intervention while generating more than $2.8 million in annual savings",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-4d238e638c4b630f"
+    },
+    "source_span": {
+      "raw_id": "RAW-b21e9b5a913da2b8",
+      "start": 4563,
+      "end": 4745
+    },
+    "source_quote": "According to Quiq, its AI deployment now resolves roughly half of eligible customer interactions without human intervention while generating more than $2.8 million in annual savings.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-89bd41cda7be6b68",
+    "raw_id": "RAW-c88f157c5d1a8012",
+    "claim_type": "partnership",
+    "subject": "Gemini and Pixel",
+    "predicate": "partnership",
+    "object": "Arsenal FC, FC Barcelona, FC Bayern München, Liverpool FC, and Paris Saint-Germain",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-de5e041cf41a7a40"
+    },
+    "source_span": {
+      "raw_id": "RAW-c88f157c5d1a8012",
+      "start": 148,
+      "end": 387
+    },
+    "source_quote": "Gemini and Pixel have announced new long-term partnerships with Arsenal FC, FC Barcelona, FC Bayern München, Liverpool FC, and Paris Saint-Germain to bring fans closer to the game through AI personal intelligence and smartphone technology.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6e2dd99b8ebae9b1",
+    "raw_id": "RAW-8d86905dc5fdecb2",
+    "claim_type": "funding",
+    "subject": "Etched",
+    "predicate": "funding",
+    "object": "$700 million at a $21 billion valuation led by Jane Street",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-b65de9e5117c14b6"
+    },
+    "source_span": {
+      "raw_id": "RAW-8d86905dc5fdecb2",
+      "start": 219,
+      "end": 405
+    },
+    "source_quote": "Etched on Tuesday announced that it has raised another $700 million at a $21 billion valuation, led by Jane Street after the famed quant fund tested and bought the startup’s AI hardware.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-f36fae3e5068b750",
     "raw_id": "RAW-9fa6835cdf8e71bc",
     "claim_type": "deployment",
@@ -1258,6 +1522,28 @@
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a01f99090a7460bf",
+    "raw_id": "RAW-04890f927c4dbee6",
+    "claim_type": "funding",
+    "subject": "World Labs",
+    "predicate": "funding",
+    "object": "10 亿美元新融资",
+    "qualifiers": {
+      "event_status": "disputed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a0c01200b0a2d148"
+    },
+    "source_span": {
+      "raw_id": "RAW-04890f927c4dbee6",
+      "start": 324,
+      "end": 399
+    },
+    "source_quote": "今年早些时候，公司宣布获得 10 亿美元 （IT之家注：现汇率约合 67.46 亿元人民币） 新融资，投资方包括 AMD、Autodesk 和英伟达。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-e3c150f2ef671586",
@@ -1428,6 +1714,94 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-e2695c3b1839a32d",
+    "raw_id": "RAW-1ed2d8f610f028f8",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "电脑操作功能",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-6ad4eab6cb05d9f2"
+    },
+    "source_span": {
+      "raw_id": "RAW-1ed2d8f610f028f8",
+      "start": 151,
+      "end": 183
+    },
+    "source_quote": "经过多年开发，公司现在已经有信心开始向客户逐步开放电脑操作功能。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-67f67e4b7aca01e8",
+    "raw_id": "RAW-924f90306fdbdfa8",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "Private Safety Processing safety system",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-3ec4a720463e16fd"
+    },
+    "source_span": {
+      "raw_id": "RAW-924f90306fdbdfa8",
+      "start": 0,
+      "end": 77
+    },
+    "source_quote": "OpenAI builds safety system that catches misuse without storing customer data",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5cf4c8596f852b31",
+    "raw_id": "RAW-fc414d52f4c76536",
+    "claim_type": "product_release",
+    "subject": "GitHub Copilot app",
+    "predicate": "product_release",
+    "object": "canvases",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-34139110f8521101"
+    },
+    "source_span": {
+      "raw_id": "RAW-fc414d52f4c76536",
+      "start": 988,
+      "end": 1147
+    },
+    "source_quote": "The GitHub Copilot app is a major step toward addressing this. One feature in particular that I&rsquo;ve learned to love and use almost every day is canvases .",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-03c244deb2d90a38",
+    "raw_id": "RAW-fc414d52f4c76536",
+    "claim_type": "product_release",
+    "subject": "Site Studio",
+    "predicate": "product_release",
+    "object": "awesome-copilot",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-34139110f8521101"
+    },
+    "source_span": {
+      "raw_id": "RAW-fc414d52f4c76536",
+      "start": 5201,
+      "end": 5377
+    },
+    "source_quote": "The canvases I built&mdash; Java Modernization Studio and Site Studio &mdash; are available in awesome-copilot for anyone who wants to use them, adapt them, or learn from them.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-65d8de1f40925895",
     "raw_id": "RAW-468779eeda9e1a4a",
     "claim_type": "research_result",
@@ -1509,6 +1883,72 @@
     "source_quote": "It also arrives shortly after internet infrastructure provider Cloudflare reported that bot web traffic had overtaken human web traffic — a milestone that was reached sooner than the company had estimated.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ab3f1212f9e713ba",
+    "raw_id": "RAW-c00c81704ca11306",
+    "claim_type": "product_release",
+    "subject": "Meta",
+    "predicate": "product_release",
+    "object": "Mac app dedicated to Meta AI chatbot",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-1566f59fdaa1151e"
+    },
+    "source_span": {
+      "raw_id": "RAW-c00c81704ca11306",
+      "start": 529,
+      "end": 589
+    },
+    "source_quote": "Meta is launching a new Mac app dedicated to its AI chatbot.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2dbfd691ab74b3e6",
+    "raw_id": "RAW-2f6feca4f1f2c2fe",
+    "claim_type": "product_release",
+    "subject": "Slack",
+    "predicate": "product_release",
+    "object": "Slack Code",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-6c6ec6bda325c3cd"
+    },
+    "source_span": {
+      "raw_id": "RAW-2f6feca4f1f2c2fe",
+      "start": 497,
+      "end": 648
+    },
+    "source_quote": "Slack is introducing dedicated channels where teams can vibe-code together with AI agents instead of jumping between different tools and conversations.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9816ffebd011aac9",
+    "raw_id": "RAW-2f6feca4f1f2c2fe",
+    "claim_type": "product_release",
+    "subject": "Slack Code",
+    "predicate": "product_release",
+    "object": "coding channels",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-6c6ec6bda325c3cd"
+    },
+    "source_span": {
+      "raw_id": "RAW-2f6feca4f1f2c2fe",
+      "start": 649,
+      "end": 844
+    },
+    "source_quote": "The Slack Code launch includes open, project-specific code channels with dedicated user tabs, alongside features that compare coding changes and preview HTML output before the project is shipped.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1764,87 +2204,179 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-acee46e0c84e0f74",
-    "raw_id": "RAW-f9ccd40ac994730c",
-    "claim_type": "organization_people",
-    "subject": "Frontier Radar #4: China has caught up, so what's",
-    "predicate": "organization_people",
-    "object": "of the Western AI lead?",
+    "claim_id": "CL-7c84250b85b132f2",
+    "raw_id": "RAW-983562df6f4c5d30",
+    "claim_type": "product_release",
+    "subject": "Google",
+    "predicate": "product_release",
+    "object": "Preferred Sources button",
     "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-3a48fabe5301bf9e"
     },
     "source_span": {
-      "raw_id": "RAW-f9ccd40ac994730c",
-      "start": 0,
-      "end": 78
+      "raw_id": "RAW-983562df6f4c5d30",
+      "start": 387,
+      "end": 582
     },
-    "source_quote": "Frontier Radar #4: China has caught up, so what's left of the Western AI lead?",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
+    "source_quote": "It’s now allowing readers to push a button on a publisher’s website to indicate it’s a “favorite source” they’d like to see highlighted more often across Google Search, Discover, and Google News.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-f548b263baad7867",
-    "raw_id": "RAW-f9ccd40ac994730c",
-    "claim_type": "organization_people",
-    "subject": "Frontier Radar #4: China has caught up, so what's",
-    "predicate": "organization_people",
-    "object": "of the Western AI lead?",
+    "claim_id": "CL-78388ce1027a222c",
+    "raw_id": "RAW-983562df6f4c5d30",
+    "claim_type": "product_release",
+    "subject": "Google",
+    "predicate": "product_release",
+    "object": "Discover feed customization",
     "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-3a48fabe5301bf9e"
     },
     "source_span": {
-      "raw_id": "RAW-f9ccd40ac994730c",
-      "start": 79,
-      "end": 157
+      "raw_id": "RAW-983562df6f4c5d30",
+      "start": 1793,
+      "end": 1904
     },
-    "source_quote": "Frontier Radar #4: China has caught up, so what's left of the Western AI lead?",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
+    "source_quote": "Google said that readers will soon be able to customize their Discover feed in Google’s app in their own words.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-64679fb5e2f61b56",
-    "raw_id": "RAW-f9ccd40ac994730c",
-    "claim_type": "organization_people",
-    "subject": "Frontier Radar #4: China has caught up, so what's",
-    "predicate": "organization_people",
-    "object": "of the Western AI lead?",
+    "claim_id": "CL-cf7aabeb7ef54f11",
+    "raw_id": "RAW-983562df6f4c5d30",
+    "claim_type": "product_release",
+    "subject": "Google",
+    "predicate": "product_release",
+    "object": "audio daily briefings customization",
     "qualifiers": {
-      "event_status": "completed",
-      "sequence": 3
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-3a48fabe5301bf9e"
     },
     "source_span": {
-      "raw_id": "RAW-f9ccd40ac994730c",
-      "start": 1666,
-      "end": 1744
+      "raw_id": "RAW-983562df6f4c5d30",
+      "start": 2434,
+      "end": 2546
     },
-    "source_quote": "Frontier Radar #4: China has caught up, so what's left of the Western AI lead?",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
+    "source_quote": "Google says Android users will be able to customize their audio daily briefings in the Google News app, as well.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-886e41c2244a4a64",
-    "raw_id": "RAW-f9ccd40ac994730c",
-    "claim_type": "organization_people",
-    "subject": "Frontier Radar #4: China has caught up, so what's",
-    "predicate": "organization_people",
-    "object": "of the Western AI lead?",
+    "claim_id": "CL-ce63780adffe61b9",
+    "raw_id": "RAW-927c56068d636b7a",
+    "claim_type": "product_release",
+    "subject": "Grok Bot",
+    "predicate": "product_release",
+    "object": "Grok Bot",
     "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-dae3c91454984f03"
     },
     "source_span": {
-      "raw_id": "RAW-f9ccd40ac994730c",
-      "start": 5249,
-      "end": 5272
+      "raw_id": "RAW-927c56068d636b7a",
+      "start": 495,
+      "end": 567
     },
-    "source_quote": "What's left of the lead",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
+    "source_quote": "You may have heard about OpenClaw, Hermes, Grok Bot (launched this week)",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-99e808a2cda266ab",
+    "raw_id": "RAW-8dd4ca0861d228b2",
+    "claim_type": "financial_performance",
+    "subject": "OpenAI",
+    "predicate": "financial_performance",
+    "object": "Anthropic",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-98f346ce8a9279e2"
+    },
+    "source_span": {
+      "raw_id": "RAW-8dd4ca0861d228b2",
+      "start": 550,
+      "end": 611
+    },
+    "source_quote": "OpenAI has started gaining on Anthropic with U.S. businesses.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e7fc5026dd0a6898",
+    "raw_id": "RAW-8dd4ca0861d228b2",
+    "claim_type": "financial_performance",
+    "subject": "Anthropic",
+    "predicate": "financial_performance",
+    "object": "OpenAI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-98f346ce8a9279e2"
+    },
+    "source_span": {
+      "raw_id": "RAW-8dd4ca0861d228b2",
+      "start": 860,
+      "end": 920
+    },
+    "source_quote": "As of July, Anthropic has nearly 44% to OpenAI’s nearly 40%.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bc366c2e2ec3cac0",
+    "raw_id": "RAW-8dd4ca0861d228b2",
+    "claim_type": "financial_performance",
+    "subject": "OpenAI",
+    "predicate": "financial_performance",
+    "object": "business users",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-98f346ce8a9279e2"
+    },
+    "source_span": {
+      "raw_id": "RAW-8dd4ca0861d228b2",
+      "start": 1277,
+      "end": 1360
+    },
+    "source_quote": "OpenAI is currently growing faster among this segment in Q3 to date than Anthropic.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fe4e3d6d0087909d",
+    "raw_id": "RAW-df6eedf24215b0f9",
+    "claim_type": "security_incident",
+    "subject": "OpenAI",
+    "predicate": "security_incident",
+    "object": "Hugging Face",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ce8e74cd4a7a896c"
+    },
+    "source_span": {
+      "raw_id": "RAW-df6eedf24215b0f9",
+      "start": 1593,
+      "end": 1764
+    },
+    "source_quote": "Just last month, OpenAI disclosed that its models broke out of a supposedly secure testing environment and hacked developer platform Hugging Face, without OpenAI noticing.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1887,6 +2419,138 @@
     "source_quote": "There was an error while loading. Please reload this page .",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4978552a0b7a728f",
+    "raw_id": "RAW-aabf22b5dc1990e1",
+    "claim_type": "model_release",
+    "subject": "Generalist AI",
+    "predicate": "model_release",
+    "object": "GEN-1.5",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a4bfb5257abfb4da"
+    },
+    "source_span": {
+      "raw_id": "RAW-aabf22b5dc1990e1",
+      "start": 134,
+      "end": 257
+    },
+    "source_quote": "Robotics startup Generalist AI has unveiled GEN-1.5, an AI model that teaches robots new tasks from a single demonstration.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2c1ce64d69381742",
+    "raw_id": "RAW-08dddb855639e443",
+    "claim_type": "hardware_deployment",
+    "subject": "404 Media",
+    "predicate": "hardware_deployment",
+    "object": "Apple AirTag",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-24bbfa175d45e089"
+    },
+    "source_span": {
+      "raw_id": "RAW-08dddb855639e443",
+      "start": 827,
+      "end": 974
+    },
+    "source_quote": "The seller agreed to put an Apple AirTag provided by 404 Media in one of the books included in this order so we could see where the book was going.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-63759d4a6f83f648",
+    "raw_id": "RAW-330ae95c4d0ea56d",
+    "claim_type": "policy_regulation",
+    "subject": "Apple",
+    "predicate": "policy_regulation",
+    "object": "AI-generated music labeling requirement",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e4d2125b6d908ee0"
+    },
+    "source_span": {
+      "raw_id": "RAW-330ae95c4d0ea56d",
+      "start": 54,
+      "end": 116
+    },
+    "source_quote": "苹果公司计划在 2026 年年底调整 Apple Music 规则，强制性要求内容供应商和唱片公司为 AI 生成音乐添加标签",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-839c8dc1e26d638f",
+    "raw_id": "RAW-330ae95c4d0ea56d",
+    "claim_type": "policy_regulation",
+    "subject": "Apple",
+    "predicate": "policy_regulation",
+    "object": "AI Transparency Tags",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 2,
+      "model_candidate_id": "MAC-e4d2125b6d908ee0"
+    },
+    "source_span": {
+      "raw_id": "RAW-330ae95c4d0ea56d",
+      "start": 215,
+      "end": 257
+    },
+    "source_quote": "苹果公司于 2026 年 3 月推出 AI 透明度标签，不过当时这项功能属于自愿机制",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-694780e81cde526b",
+    "raw_id": "RAW-330ae95c4d0ea56d",
+    "claim_type": "policy_regulation",
+    "subject": "Apple",
+    "predicate": "policy_regulation",
+    "object": "mandatory AI music labeling",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 3,
+      "model_candidate_id": "MAC-e4d2125b6d908ee0"
+    },
+    "source_span": {
+      "raw_id": "RAW-330ae95c4d0ea56d",
+      "start": 325,
+      "end": 353
+    },
+    "source_quote": "新要求生效后，唱片公司和分发商将不再拥有是否标注的选择权",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-73916b48e6bc6394",
+    "raw_id": "RAW-02fb763f62542666",
+    "claim_type": "organization_people",
+    "subject": "Rob Strechay",
+    "predicate": "organization_people",
+    "object": "VentureBeat",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f5103acf22d93bf9"
+    },
+    "source_span": {
+      "raw_id": "RAW-02fb763f62542666",
+      "start": 0,
+      "end": 186
+    },
+    "source_quote": "Rob Strechay, until recently managing director and principal analyst at theCUBE Research, has joined VentureBeat as our first Lead Analyst and a founding analyst of VentureBeat Research.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   }
 ]

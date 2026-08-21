@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-21T00:27:55.780Z",
+    "generatedAt": "2026-08-21T02:05:12.052Z",
     "latestDataDate": "2026-08-21",
     "currentDate": "2026-08-21",
-    "eventCount": 2267,
+    "eventCount": 2285,
     "quarantinedEventCount": 20
   },
   "entity": {
@@ -22,15 +22,16 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-2c6707327367640f"
+      "EV-2c6707327367640f",
+      "EV-d26a532231315278"
     ],
     "viewpointIds": [],
     "classificationRefs": [
       "TX-technology-inference_optimization"
     ],
     "relatedEntityIds": [],
-    "firstSeen": "2026-08-19",
-    "lastSeen": "2026-08-20",
+    "firstSeen": "2026-08-18",
+    "lastSeen": "2026-08-21",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -38,12 +39,30 @@
       "partnerships": [],
       "productsServices": [],
       "hardware": [
+        "EV-d26a532231315278",
         "EV-2c6707327367640f"
       ],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-d26a532231315278",
+        "dataDate": "2026-08-21",
+        "date": "2026-08-18",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Cerebras CS-4 发布：最快 AI 再提速",
+        "displayTags": [],
+        "entityIds": [
+          "EN-77b30b8a88051252",
+          "EN-49dba228d91e7180",
+          "EN-fee3f861adafb385"
+        ]
+      },
       {
         "id": "EV-2c6707327367640f",
         "dataDate": "2026-08-20",

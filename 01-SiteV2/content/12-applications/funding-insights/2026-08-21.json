@@ -2,22 +2,962 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-08-21",
-    "generated_at": "2026-08-21T00:27:37.589Z",
+    "generated_at": "2026-08-21T01:59:26.902Z",
     "trigger": "verified_funding_events_with_three_month_backfill",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
-      "funding_events": 1,
-      "auto_published": 0,
+      "funding_events": 2,
+      "auto_published": 1,
       "blocked": 0,
       "pending": 0,
       "deduplicated": 1
-    },
-    "taxonomy_version": "TAG-V4.1"
+    }
   },
-  "cards": [],
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-8230cfbd37025db0",
+      "triggered_by_event_id": "EV-19dd4c3a5dd5a94b",
+      "as_of_date": "2026-08-21",
+      "company": {
+        "entity_id": "EN-9cb45a27a2808c01",
+        "name": "Etched",
+        "full_name": "Etched",
+        "website": "",
+        "summary": "Etched是一家美国公司，为AI工作负载构建推理集群，提供被称为“前沿推理集群”的完整系统，而非单独芯片。",
+        "headquarters": "San Jose, California",
+        "founders": [
+          {
+            "name": "Gavin Uberti",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-134a8e8124653c90",
+                "quote": "Etched co-founder and CEO Gavin Uberti said",
+                "source_content_hash": "e0e9398bf1a24e32",
+                "quote_hash": "05ac9be36d62e08722cafe59eedd88b04e773a6c85d2a32a449b86c45b28157d"
+              }
+            ],
+            "entity_id": "EN-b3ff373fa6b68aa7"
+          },
+          {
+            "name": "Robert Wachen",
+            "role": "联合创始人兼COO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9f1fb4617b322f70",
+                "quote": "Co-founder and COO Robert Wachen told TechCrunch",
+                "source_content_hash": "06a8eb4136dabf11",
+                "quote_hash": "77a1d2952f4d5a818d516a0159e42d33a7bf974aa47bc6eff6ff4196528fcf48"
+              }
+            ],
+            "entity_id": "EN-48edf025e5522297"
+          },
+          {
+            "name": "Chris Zhu",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1085e4257b99d516",
+                "quote": "Founded in 2022 by Harvard University dropouts Gavin Uberti and Chris Zhu",
+                "source_content_hash": "31f36dd6cee1b087",
+                "quote_hash": "a729905431e1989dbcb7b7bfb0cf00b8769667d3aff9bd69372f345fd5a0c9e0"
+              }
+            ],
+            "entity_id": "EN-cbaaeaa6c6fe1032"
+          }
+        ],
+        "team_size": {
+          "value": "400+",
+          "observed_at": "2026-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-134a8e8124653c90",
+              "quote": "The company came out of stealth in June with more than 400 staff and a working chip",
+              "source_content_hash": "e0e9398bf1a24e32",
+              "quote_hash": "266d5b6e14913cd0220b00d7e125f5ee68ebc59498c0098ec776474b0b7cc5d0"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-134a8e8124653c90",
+            "quote": "Etched, a US-based company that builds inference clusters for AI workloads",
+            "source_content_hash": "e0e9398bf1a24e32",
+            "quote_hash": "713fa4038645f43b2f95c987bce89d0a58db87e10c246a22730f2670fd28c538"
+          }
+        ],
+        "application_entity_id": "FICO-etched",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "D轮",
+        "amount": "$700m",
+        "total_raised": "$1.9 billion",
+        "announced_at": "2026-08-19",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Jane Street",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-134a8e8124653c90",
+                "quote": "The round was led by Jane Street, with participation from Sequoia Capital, Kleiner Perkins, Andreessen Horowitz, Bain Capital Ventures, Stripes, Positive Sum, Tiger Global, Neo, Primary, and Blackstone.",
+                "source_content_hash": "e0e9398bf1a24e32",
+                "quote_hash": "0c948f9a83fe6bf02d914e718b9524770cd022630e09f51c42213bd98f467b90"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sequoia Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-134a8e8124653c90",
+                "quote": "The round was led by Jane Street, with participation from Sequoia Capital, Kleiner Perkins, Andreessen Horowitz, Bain Capital Ventures, Stripes, Positive Sum, Tiger Global, Neo, Primary, and Blackstone.",
+                "source_content_hash": "e0e9398bf1a24e32",
+                "quote_hash": "0c948f9a83fe6bf02d914e718b9524770cd022630e09f51c42213bd98f467b90"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kleiner Perkins",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-134a8e8124653c90",
+                "quote": "The round was led by Jane Street, with participation from Sequoia Capital, Kleiner Perkins, Andreessen Horowitz, Bain Capital Ventures, Stripes, Positive Sum, Tiger Global, Neo, Primary, and Blackstone.",
+                "source_content_hash": "e0e9398bf1a24e32",
+                "quote_hash": "0c948f9a83fe6bf02d914e718b9524770cd022630e09f51c42213bd98f467b90"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Andreessen Horowitz",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-134a8e8124653c90",
+                "quote": "The round was led by Jane Street, with participation from Sequoia Capital, Kleiner Perkins, Andreessen Horowitz, Bain Capital Ventures, Stripes, Positive Sum, Tiger Global, Neo, Primary, and Blackstone.",
+                "source_content_hash": "e0e9398bf1a24e32",
+                "quote_hash": "0c948f9a83fe6bf02d914e718b9524770cd022630e09f51c42213bd98f467b90"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Bain Capital Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-134a8e8124653c90",
+                "quote": "The round was led by Jane Street, with participation from Sequoia Capital, Kleiner Perkins, Andreessen Horowitz, Bain Capital Ventures, Stripes, Positive Sum, Tiger Global, Neo, Primary, and Blackstone.",
+                "source_content_hash": "e0e9398bf1a24e32",
+                "quote_hash": "0c948f9a83fe6bf02d914e718b9524770cd022630e09f51c42213bd98f467b90"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Stripes",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-134a8e8124653c90",
+                "quote": "The round was led by Jane Street, with participation from Sequoia Capital, Kleiner Perkins, Andreessen Horowitz, Bain Capital Ventures, Stripes, Positive Sum, Tiger Global, Neo, Primary, and Blackstone.",
+                "source_content_hash": "e0e9398bf1a24e32",
+                "quote_hash": "0c948f9a83fe6bf02d914e718b9524770cd022630e09f51c42213bd98f467b90"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Positive Sum",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-134a8e8124653c90",
+                "quote": "The round was led by Jane Street, with participation from Sequoia Capital, Kleiner Perkins, Andreessen Horowitz, Bain Capital Ventures, Stripes, Positive Sum, Tiger Global, Neo, Primary, and Blackstone.",
+                "source_content_hash": "e0e9398bf1a24e32",
+                "quote_hash": "0c948f9a83fe6bf02d914e718b9524770cd022630e09f51c42213bd98f467b90"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Tiger Global",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-134a8e8124653c90",
+                "quote": "The round was led by Jane Street, with participation from Sequoia Capital, Kleiner Perkins, Andreessen Horowitz, Bain Capital Ventures, Stripes, Positive Sum, Tiger Global, Neo, Primary, and Blackstone.",
+                "source_content_hash": "e0e9398bf1a24e32",
+                "quote_hash": "0c948f9a83fe6bf02d914e718b9524770cd022630e09f51c42213bd98f467b90"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Neo",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-134a8e8124653c90",
+                "quote": "The round was led by Jane Street, with participation from Sequoia Capital, Kleiner Perkins, Andreessen Horowitz, Bain Capital Ventures, Stripes, Positive Sum, Tiger Global, Neo, Primary, and Blackstone.",
+                "source_content_hash": "e0e9398bf1a24e32",
+                "quote_hash": "0c948f9a83fe6bf02d914e718b9524770cd022630e09f51c42213bd98f467b90"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Primary",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-134a8e8124653c90",
+                "quote": "The round was led by Jane Street, with participation from Sequoia Capital, Kleiner Perkins, Andreessen Horowitz, Bain Capital Ventures, Stripes, Positive Sum, Tiger Global, Neo, Primary, and Blackstone.",
+                "source_content_hash": "e0e9398bf1a24e32",
+                "quote_hash": "0c948f9a83fe6bf02d914e718b9524770cd022630e09f51c42213bd98f467b90"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Blackstone",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-134a8e8124653c90",
+                "quote": "The round was led by Jane Street, with participation from Sequoia Capital, Kleiner Perkins, Andreessen Horowitz, Bain Capital Ventures, Stripes, Positive Sum, Tiger Global, Neo, Primary, and Blackstone.",
+                "source_content_hash": "e0e9398bf1a24e32",
+                "quote_hash": "0c948f9a83fe6bf02d914e718b9524770cd022630e09f51c42213bd98f467b90"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Peter Thiel",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9f1fb4617b322f70",
+                "quote": "Other investors in Etched include Kleiner Perkins, Sequoia Capital, Andreessen Horowitz, Peter Thiel, Tiger Global, Bain Capital Ventures, Neo, Stripes, Primary, Positive Sum, Diffusion, Argo, and Blackstone.",
+                "source_content_hash": "06a8eb4136dabf11",
+                "quote_hash": "ae3a8752a87cb37601b3a8e118f59601775d21728544309198982bf83ce82780"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Diffusion",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9f1fb4617b322f70",
+                "quote": "Other investors in Etched include Kleiner Perkins, Sequoia Capital, Andreessen Horowitz, Peter Thiel, Tiger Global, Bain Capital Ventures, Neo, Stripes, Primary, Positive Sum, Diffusion, Argo, and Blackstone.",
+                "source_content_hash": "06a8eb4136dabf11",
+                "quote_hash": "ae3a8752a87cb37601b3a8e118f59601775d21728544309198982bf83ce82780"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Argo",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9f1fb4617b322f70",
+                "quote": "Other investors in Etched include Kleiner Perkins, Sequoia Capital, Andreessen Horowitz, Peter Thiel, Tiger Global, Bain Capital Ventures, Neo, Stripes, Primary, Positive Sum, Diffusion, Argo, and Blackstone.",
+                "source_content_hash": "06a8eb4136dabf11",
+                "quote_hash": "ae3a8752a87cb37601b3a8e118f59601775d21728544309198982bf83ce82780"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "SK Hynix",
+            "role": "2026年7月Series C参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f0a76ad07ec945fd",
+                "quote": "The July Series C brought in SK Hynix alongside the venture backers.",
+                "source_content_hash": "481f49faf99a191d",
+                "quote_hash": "3f511384b5ab71f6164dda88e3c32ef74afdfd52d0b3b4c8056844395e6ff243"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Nvidia",
+            "role": "2026年7月Series C参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a258f732874d60d6",
+                "quote": "A few weeks after closing a $300 million round backed by Nvidia Corp., Etched Inc. today announced that it has raised an additional $700 million in funding.",
+                "source_content_hash": "092f21771fc9ef39",
+                "quote_hash": "e6b1cd4973fbea84f62419b39c47bb822fd8e7007329293141c7c95caac3dc06"
+              }
+            ],
+            "entity_id": "EN-8d4321d936320802"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-134a8e8124653c90",
+            "quote": "Etched, a US-based company that builds inference clusters for AI workloads, has raised $700m in a funding round that values the business at $21bn.",
+            "source_content_hash": "e0e9398bf1a24e32",
+            "quote_hash": "1610f83e6b46016fab184a1dbb022f022a46edd0922bc2309bfc7d476303fd83"
+          }
+        ],
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$700m",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7 亿美元"
+        },
+        "total_raised_original": "$1.9 billion",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 1900000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "19 亿美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-19dd4c3a5dd5a94b",
+            "round_original": "Series D",
+            "amount": "$700m",
+            "announced_at": "2026-08-19",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-134a8e8124653c90",
+                "quote": "Etched, a US-based company that builds inference clusters for AI workloads, has raised $700m in a funding round that values the business at $21bn.",
+                "source_content_hash": "e0e9398bf1a24e32",
+                "quote_hash": "1610f83e6b46016fab184a1dbb022f022a46edd0922bc2309bfc7d476303fd83"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Frontier inference clusters",
+          "description": "Etched以完整系统形式交付AI推理技术，称为“前沿推理集群”，包含芯片、定制机架和软件，而非单独芯片。",
+          "target_customers": "公共和私营AI公司及云服务提供商",
+          "features": [
+            "Low Voltage Inference",
+            "Cluster Scale Memory",
+            "支持大规模混合专家模型和非transformer架构"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9f1fb4617b322f70",
+              "quote": "Etched delivers its AI tech as full systems that it calls “frontier inference clusters.”",
+              "source_content_hash": "06a8eb4136dabf11",
+              "quote_hash": "3f3c06ac737243f29d32712ecf07f888890f66ccf7ecb7e15036c056b8fdfec1"
+            },
+            {
+              "source_id": "FISRC-134a8e8124653c90",
+              "quote": "Etched said its clusters are running large mixture-of-experts models and non-transformer designs, supported by two technologies it calls Low Voltage Inference and Cluster Scale Memory.",
+              "source_content_hash": "e0e9398bf1a24e32",
+              "quote_hash": "d51b9d4a066e56be4d05144e6ddfebb114f63521e1b86d01517074f76304e945"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Jane Street",
+          "industry": "金融",
+          "use_case": "在其自有数据中心部署Etched机架，用于生产工作负载中的推理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-134a8e8124653c90",
+              "quote": "Jane Street, a quantitative trading firm, has also become Etched’s first customer. Etched shipped its first rack to the firm last month, and Jane Street is now deploying the technology within its own operations.",
+              "source_content_hash": "e0e9398bf1a24e32",
+              "quote_hash": "fbc8c5dc62a69a6c7b3d4019f7f2138b8c8a2dcf5f16527d823e702933d60b2c"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Nvidia",
+          "product": "AI factories（Nvidia对其完整系统的称呼）",
+          "scenario": "AI推理工作负载",
+          "target_customer": "AI公司和云服务提供商",
+          "funding_summary": "",
+          "core_difference": "Etched交付被称为“前沿推理集群”的完整系统，Nvidia将其完整系统称为“AI factories”；Etched的芯片数学模块运行电压低于大多数AI加速器的一半，声称可提供数倍于竞争对手的FLOPs密度。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9f1fb4617b322f70",
+              "quote": "Etched delivers its AI tech as full systems that it calls “frontier inference clusters.” (Etched competitor Nvidia calls its full systems AI factories.)",
+              "source_content_hash": "06a8eb4136dabf11",
+              "quote_hash": "6b3ebe9bb592bb270e7d4fbb65801e2606d7636bdab3c46b6e58653449417707"
+            },
+            {
+              "source_id": "FISRC-a258f732874d60d6",
+              "quote": "Etched says that its chip’s math blocks, or math-optimized circuits, run at under half the voltage of most AI accelerators. As a result, the processor can provide “multiple times the FLOPs density” offered by rivals.",
+              "source_content_hash": "092f21771fc9ef39",
+              "quote_hash": "4cdafeb24e15b7206b05115bed09fa86f185a27064fedb2eaefa462dfbf68cc7"
+            }
+          ],
+          "entity_id": "EN-8d4321d936320802"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "$700m",
+          "observed_at": "2026-08-18",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-134a8e8124653c90",
+              "quote": "has raised $700m in a funding round that values the business at $21bn",
+              "source_content_hash": "e0e9398bf1a24e32",
+              "quote_hash": "4c6162edba18eb31529d5f97367ab705343b5bf87812733e5f1c3c8257a0ff35"
+            }
+          ]
+        },
+        {
+          "label": "本轮估值",
+          "value": "$21bn",
+          "observed_at": "2026-08-18",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-134a8e8124653c90",
+              "quote": "has raised $700m in a funding round that values the business at $21bn",
+              "source_content_hash": "e0e9398bf1a24e32",
+              "quote_hash": "4c6162edba18eb31529d5f97367ab705343b5bf87812733e5f1c3c8257a0ff35"
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "$1.9 billion",
+          "observed_at": "2026-08-18",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4476b112a9293a58",
+              "quote": "Total funding now stands at $1.9 billion.",
+              "source_content_hash": "32780a150d54f1ca",
+              "quote_hash": "a57e4a58f78670be889be9f3d8d352f0b868945ed3084a293d5b195ea6b7f838"
+            }
+          ]
+        },
+        {
+          "label": "客户合同金额",
+          "value": "超过$1bn",
+          "observed_at": "2026-08-18",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-134a8e8124653c90",
+              "quote": "According to the company, it has secured more than $1bn in customer contracts spanning public and private AI firms and cloud providers.",
+              "source_content_hash": "e0e9398bf1a24e32",
+              "quote_hash": "7d039d687dfe818e5453b087df5cae1b612502707ec39163af1a063d574ca50c"
+            }
+          ]
+        },
+        {
+          "label": "员工人数",
+          "value": "400+",
+          "observed_at": "2026-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-134a8e8124653c90",
+              "quote": "The company came out of stealth in June with more than 400 staff and a working chip",
+              "source_content_hash": "e0e9398bf1a24e32",
+              "quote_hash": "266d5b6e14913cd0220b00d7e125f5ee68ebc59498c0098ec776474b0b7cc5d0"
+            }
+          ]
+        },
+        {
+          "label": "总部数据中心规模",
+          "value": "2MW",
+          "observed_at": "2026-08-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1085e4257b99d516",
+              "quote": "At present, the startup employs around 400 people at its San Jose, California, office, operating a 2MW data center at the site.",
+              "source_content_hash": "31f36dd6cee1b087",
+              "quote_hash": "dde5e12824990ac3ad491a5af0196c9491ded33047b473c23e99a225080b2471"
+            }
+          ]
+        },
+        {
+          "label": "新设施面积",
+          "value": "80,000平方英尺，10MW",
+          "observed_at": "2026-08-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1085e4257b99d516",
+              "quote": "The startup has also recently opened a new 80,000 square-foot (7,430 sqm), 10MW facility in Milpitas, to the north of San Jose.",
+              "source_content_hash": "31f36dd6cee1b087",
+              "quote_hash": "a55684fa7a66d0b4e6c54a86f91c5571c369648637be9a84ff6f1555b3bee654"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Jane Street",
+          "quote": "We tested the chip and are pleased with the early results. Etched’s unique approach to inference delivers the precision we will need to support our most demanding workloads. We’re excited to now have our own rack running in our data centre.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-134a8e8124653c90",
+              "quote": "We tested the chip and are pleased with the early results. Etched’s unique approach to inference delivers the precision we will need to support our most demanding workloads. We’re excited to now have our own rack running in our data centre.",
+              "source_content_hash": "e0e9398bf1a24e32",
+              "quote_hash": "6d27948b5fc876a1727bfa45b146ec098b8c87e3612a9a279fa8abcdf0f0f0e4"
+            }
+          ]
+        },
+        {
+          "speaker": "Robert Wachen",
+          "quote": "Inference is built in two stages, prefill and decode.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9f1fb4617b322f70",
+              "quote": "“Inference is built in two stages,” Wachen said, “prefill and decode.”",
+              "source_content_hash": "06a8eb4136dabf11",
+              "quote_hash": "e1f6c9b8ee8b27b7d2367da60e5c43595f5e43f91587310daa57483b33ec6707"
+            }
+          ]
+        },
+        {
+          "speaker": "Robert Wachen",
+          "quote": "It allows many chips to connect together and use a shared memory pool at a very, very fast, low latency.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9f1fb4617b322f70",
+              "quote": "“It allows many chips to connect together and use a shared memory pool at a very, very fast, low latency,” Wachen said.",
+              "source_content_hash": "06a8eb4136dabf11",
+              "quote_hash": "edebf40346bb51680523ac107206a1ebdb702e77d9e53430911de9a06d743d4e"
+            }
+          ]
+        },
+        {
+          "speaker": "Gavin Uberti",
+          "quote": "It took us three years to deliver our first rack from scratch. Our next one will be much faster.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a258f732874d60d6",
+              "quote": "“It took us three years to deliver our first rack from scratch,” said Etched co-founder and Chief Executive Officer Gavin Uberti. “Our next one will be much faster.”",
+              "source_content_hash": "092f21771fc9ef39",
+              "quote_hash": "52f6590e990328b6acd94169344565d60428d818f8a5e51ddbdfa8289ee1cebd"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Jane Street",
+            "speaker": "Jane Street",
+            "speaker_role": "本轮领投方",
+            "rationale": "Jane Street在测试Etched芯片后对早期结果满意，认为其推理方法能提供支持最苛刻工作负载所需的精度，并已将机架部署到自有数据中心。",
+            "quote": "We tested the chip and are pleased with the early results. Etched’s unique approach to inference delivers the precision we will need to support our most demanding workloads. We’re excited to now have our own rack running in our data centre.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-134a8e8124653c90",
+                "quote": "We tested the chip and are pleased with the early results. Etched’s unique approach to inference delivers the precision we will need to support our most demanding workloads. We’re excited to now have our own rack running in our data centre.",
+                "source_content_hash": "e0e9398bf1a24e32",
+                "quote_hash": "6d27948b5fc876a1727bfa45b146ec098b8c87e3612a9a279fa8abcdf0f0f0e4"
+              }
+            ]
+          },
+          {
+            "institution": "Kleiner Perkins",
+            "speaker": "Mamoon Hamid",
+            "speaker_role": "Kleiner Perkins管理合伙人",
+            "rationale": "Kleiner Perkins认为推理正在成为AI最重要的基础设施市场之一，赢家将以每美元和每瓦特的token数来衡量。",
+            "quote": "inference is \"becoming one of the most important infrastructure markets in AI\" and that \"the winners will be measured by tokens per dollar and per watt.\"",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4476b112a9293a58",
+                "quote": "Kleiner Perkins managing partner Mamoon Hamid, who has led the firm's investments in Anthropic, Databricks and Together.AI, said inference is \"becoming one of the most important infrastructure markets in AI\" and that \"the winners will be measured by tokens per dollar and per watt.\"",
+                "source_content_hash": "32780a150d54f1ca",
+                "quote_hash": "50a113a4fc44bc3ff2ad38ae44a514b93d8590f394f7d27bbc60e126401c9235"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是专用推理硬件能否在真实生产环境中兑现性能与效率承诺。本轮估值从一个月前的$10.3bn翻倍至$21bn，所依赖的已验证信号是：Jane Street作为对延迟最敏感的量化交易公司，完成了从测试芯片、购买机架到领投本轮的全过程，且机架已在其数据中心运行生产工作负载。此外，公司声称已锁定超过$1bn客户合同，覆盖公共和私营AI公司及云服务商。证据边界在于：除Jane Street外，其他客户名称未披露；合同金额为公司自述，未获独立验证；公司尚未报告有意义收入。",
+        "validated_signals": [
+          "Jane Street测试芯片后购买并部署机架，成为首个客户",
+          "Jane Street从客户转为本轮领投方",
+          "公司声称已获得超过$1bn客户合同",
+          "首台机架已交付并在客户数据中心运行生产工作负载"
+        ],
+        "risks": [
+          "除Jane Street外，其他客户名称和实际部署情况未披露，$1bn合同金额为公司自述，存在转化和交付风险",
+          "专用推理硬件面临Nvidia等通用GPU生态的竞争，以及云厂商自研推理芯片的挤压",
+          "公司尚未报告有意义收入，$21bn估值建立在早期客户验证和合同承诺之上，执行风险高"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_compute_system",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "computing_infrastructure",
+        "use_case_ids": [],
+        "industry_ids": [
+          "financial_services"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "AI推理硬件与半导体",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是专用推理硬件能否在真实生产环境中兑现性能与效率承诺。本轮估值从一个月前的$10.3bn翻倍至$21bn，所依赖的已验证信号是：Jane Street作为对延迟最敏感的量化交易公司，完成了从测试芯片、购买机架到领投本轮的全过程，且机架已在其数据中心运行生产工作负载。此外，公司声称已锁定超过$1bn客户合同，覆盖公共和私营AI公司及云服务商。证据边界在于：除Jane Street外，其他客户名称未披露；合同金额为公司自述，未获独立验证；公司尚未报告有意义收入。",
+          "evidence_signals": [
+            "Jane Street测试芯片后购买并部署机架，成为首个客户",
+            "Jane Street从客户转为本轮领投方",
+            "公司声称已获得超过$1bn客户合同",
+            "首台机架已交付并在客户数据中心运行生产工作负载"
+          ],
+          "risks": [
+            "除Jane Street外，其他客户名称和实际部署情况未披露，$1bn合同金额为公司自述，存在转化和交付风险",
+            "专用推理硬件面临Nvidia等通用GPU生态的竞争，以及云厂商自研推理芯片的挤压",
+            "公司尚未报告有意义收入，$21bn估值建立在早期客户验证和合同承诺之上，执行风险高"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Frontier inference clusters",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Gavin Uberti",
+          "canonical_entity_id": "EN-b3ff373fa6b68aa7",
+          "canonical_name": "Gavin Uberti"
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Robert Wachen",
+          "canonical_entity_id": "EN-48edf025e5522297",
+          "canonical_name": "Robert Wachen"
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Chris Zhu",
+          "canonical_entity_id": "EN-cbaaeaa6c6fe1032",
+          "canonical_name": "Chris Zhu"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Jane Street",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Sequoia Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Kleiner Perkins",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Andreessen Horowitz",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bain Capital Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Stripes",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Positive Sum",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Tiger Global",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Neo",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Primary",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Blackstone",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Peter Thiel",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Diffusion",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Argo",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "SK Hynix",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Nvidia",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA"
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Jane Street",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Nvidia",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA"
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-4af14568b1bdeb35",
+          "date": "2026-08-19",
+          "title": "AI 芯片初创企业 Etched 估值飙升至 210 亿美元，首批机架出货",
+          "amount": "210 亿",
+          "source_refs": [
+            "SA-0680289341e0f9a7"
+          ]
+        },
+        {
+          "event_id": "EV-19dd4c3a5dd5a94b",
+          "date": "2026-08-19",
+          "title": "Etched 以210亿美元估值融资7亿美元，向Jane Street交付首台机架",
+          "amount": "$700m",
+          "source_refs": [
+            "SA-b6b45e2130e3f25a",
+            "SA-48143e7b0f17ad5b"
+          ]
+        },
+        {
+          "event_id": "EV-da1655ecfaf35feb",
+          "date": "2026-07-23",
+          "title": "AI芯片初创公司Etched无视质疑，获知名投资者青睐估值达103亿美元",
+          "amount": "$300 million",
+          "source_refs": [
+            "SA-737a1ad4e68ae050"
+          ]
+        },
+        {
+          "event_id": "EV-ad75efcb12a07793",
+          "date": "2026-06-30",
+          "title": "AI芯片初创公司Etched获10亿美元订单，台积电已量产其芯片",
+          "amount": "$500 million",
+          "source_refs": [
+            "SA-3cc3bb105120ac34"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-134a8e8124653c90",
+          "source_url": "https://www.verdict.co.uk/etched-bags-700m/",
+          "title": "Etched 以210亿美元估值融资7亿美元，向Jane Street交付首台机架",
+          "publisher": "keyword search / Exa",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-21T00:22:12.169Z",
+          "content_hash": "e0e9398bf1a24e32",
+          "source_artifact_id": "SA-b6b45e2130e3f25a",
+          "raw_id": "RAW-4f3fd64ef0cbfa40"
+        },
+        {
+          "source_id": "FISRC-9f1fb4617b322f70",
+          "source_url": "https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month/",
+          "title": "Etched's valuation doubles to $21B in a month | TechCrunch",
+          "publisher": "keyword search / Exa",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-21T00:23:03.061Z",
+          "content_hash": "06a8eb4136dabf11",
+          "source_artifact_id": "SA-48143e7b0f17ad5b",
+          "raw_id": "RAW-8d86905dc5fdecb2"
+        },
+        {
+          "source_id": "FISRC-a258f732874d60d6",
+          "source_url": "https://siliconangle.com/2026/08/18/inference-chip-startup-etched-raises-another-700m-at-21b-valuation/",
+          "title": "Inference chip startup Etched raises $700M more at $21B valuation - SiliconANGLE",
+          "publisher": "siliconangle.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-21T01:58:29.886Z",
+          "content_hash": "092f21771fc9ef39",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-1085e4257b99d516",
+          "source_url": "https://www.datacenterdynamics.com/en/news/inference-chip-startup-etched-raises-700m-doubles-valuation-to-21bn/",
+          "title": "Inference chip startup Etched raises $700m, doubles valuation to $21bn - DCD",
+          "publisher": "datacenterdynamics.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-08-21T01:58:25.545Z",
+          "content_hash": "31f36dd6cee1b087",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-f0a76ad07ec945fd",
+          "source_url": "https://www.unite.ai/etched-raises-700m-series-d-at-21b-valuation-to-ramp-inference-hardware-production/",
+          "title": "Etched Raises $700M Series D at $21B Valuation to Ramp Inference Hardware Production – Unite.AI",
+          "publisher": "unite.ai",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-08-21T01:58:25.605Z",
+          "content_hash": "481f49faf99a191d",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-4476b112a9293a58",
+          "source_url": "https://www.vktr.com/ai-news/ai-chip-startup-etched-raises-700-million-at-21-billion-valuation/",
+          "title": "Etched Raises $700M at $21B Valuation, Delivers First AI Chip Rack to Jane Street",
+          "publisher": "vktr.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-08-21T01:58:30.521Z",
+          "content_hash": "32780a150d54f1ca",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-21T01:59:26.852Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-21T01:59:26.852Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Frontier inference clusters"
+          ]
+        },
+        "founders": {
+          "linked": 3,
+          "total": 3,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-19dd4c3a5dd5a94b"
+      ],
+      "aggregation": {
+        "key": "EN-9cb45a27a2808c01|series_d",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
   "queue": [
     {
       "event_id": "EV-181cd28d97c4e61d",
@@ -26,7 +966,96 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-08-21T00:27:37.589Z"
+      "updated_at": "2026-08-21T01:59:26.901Z"
+    },
+    {
+      "event_id": "EV-19dd4c3a5dd5a94b",
+      "company_name": "Etched",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Etched bags $700m at $21bn valuation, ships first rack to Jane Street\" funding company investors product",
+        "\"Etched\" \"$700m\" funding investors round",
+        "\"Etched\" product customers case study",
+        "\"Etched\" \"Etched bags $700m at $21bn valuation, ships first rack to Jane Street\" competitors product use case",
+        "\"Etched\" \"$700m\" investor quote why invested",
+        "\"Etched\" \"$700m\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Etched bags $700m at $21bn valuation, ships first rack to Jane Street\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Etched bags $700m at $21bn valuation, ships first rack to Jane Street\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Etched\" \"$700m\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Etched\" \"$700m\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Etched\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Etched\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Etched\" \"Etched bags $700m at $21bn valuation, ships first rack to Jane Street\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Etched\" \"Etched bags $700m at $21bn valuation, ships first rack to Jane Street\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Etched\" \"$700m\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Etched\" \"$700m\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Etched\" \"$700m\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Etched\" \"$700m\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-08-21T01:59:26.901Z"
     }
   ]
 }
