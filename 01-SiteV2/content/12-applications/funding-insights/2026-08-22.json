@@ -1,0 +1,2465 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "date": "2026-08-22",
+    "generated_at": "2026-08-22T00:25:07.083Z",
+    "trigger": "verified_funding_events_with_three_month_backfill",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
+    "counts": {
+      "funding_events": 5,
+      "auto_published": 3,
+      "blocked": 0,
+      "pending": 0,
+      "deduplicated": 2
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-259dfd1f77ace612",
+      "triggered_by_event_id": "EV-259566f35ea4f66d",
+      "as_of_date": "2026-08-22",
+      "company": {
+        "entity_id": "EN-607a596a603dd679",
+        "name": "Starcloud",
+        "full_name": "Starcloud",
+        "website": "https://starcloud.com/",
+        "summary": "Starcloud是一家开发可在轨执行AI推理的卫星的初创公司，正在建设轨道数据中心网络，以绕过限制人工智能计算增长的地面约束。",
+        "headquarters": "Redmond, Washington",
+        "founders": [
+          {
+            "name": "Philip Johnston",
+            "role": "联合创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ad74e572acda09a7",
+                "quote": "Philip Johnston Co-Founder & CEO",
+                "source_content_hash": "195b34e0f8c0cad0",
+                "quote_hash": "85c382d666f052a5ae539c6254024dcaba495a2e8b8cb35a3393486767587da5"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Ezra Feilden",
+            "role": "Co-Founder & CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ad74e572acda09a7",
+                "quote": "Ezra Feilden Co-Founder & CTO",
+                "source_content_hash": "195b34e0f8c0cad0",
+                "quote_hash": "073d1350cad036f3ba932d0c62f51552d64942622123e372ccf5f1ade3d9c231"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Adi Oltean",
+            "role": "Co-Founder & Chief Engineer",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ad74e572acda09a7",
+                "quote": "Adi Oltean Co-Founder & Chief Engineer",
+                "source_content_hash": "195b34e0f8c0cad0",
+                "quote_hash": "8d973a9a1290d69b050308cc4f0f8a1b46c9abd605845d908df1572b7e4a6412"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "25",
+          "observed_at": "2026-08-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "quote": "The company, currently 25 employees strong and growing",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote_hash": "2a7354a91ef163af716fe018602be7541f7f23a6aaba8fb23ca95570cb895693"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-05f582b31c0a37a3",
+            "quote": "Starcloud , a startup developing satellites that can perform AI inference in orbit",
+            "source_content_hash": "8e63b4f9948a4c5f",
+            "quote_hash": "edb8f401e6d7d75d4af771d1d1550aafb2b3c98288b9854c3f43cc0f425bbbb3"
+          }
+        ],
+        "application_entity_id": "EN-607a596a603dd679",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A轮扩展",
+        "amount": "$250 million",
+        "total_raised": "$450 million",
+        "announced_at": "2026-08-21",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Manhattan West Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05f582b31c0a37a3",
+                "quote": "Starcloud’s funding extension was led by Manhattan West Ventures",
+                "source_content_hash": "8e63b4f9948a4c5f",
+                "quote_hash": "13df25bcf5bc5975f0b4830a0571e8f11b04f428e5c286d36a442cf6384e49ee"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Nvidia",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05f582b31c0a37a3",
+                "quote": "included participation from Nvidia and Cisco",
+                "source_content_hash": "8e63b4f9948a4c5f",
+                "quote_hash": "ba957f02af9d417dd21612b2bff886f779d1f47bd92f8e1cb261b083de3ad479"
+              }
+            ],
+            "entity_id": "EN-8d4321d936320802"
+          },
+          {
+            "name": "Cisco",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05f582b31c0a37a3",
+                "quote": "included participation from Nvidia and Cisco",
+                "source_content_hash": "8e63b4f9948a4c5f",
+                "quote_hash": "ba957f02af9d417dd21612b2bff886f779d1f47bd92f8e1cb261b083de3ad479"
+              }
+            ],
+            "entity_id": "EN-e73b79a0b10f8cdb"
+          },
+          {
+            "name": "Benchmark",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05f582b31c0a37a3",
+                "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+                "source_content_hash": "8e63b4f9948a4c5f",
+                "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "EQT",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05f582b31c0a37a3",
+                "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+                "source_content_hash": "8e63b4f9948a4c5f",
+                "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Soma",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05f582b31c0a37a3",
+                "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+                "source_content_hash": "8e63b4f9948a4c5f",
+                "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "NFX",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05f582b31c0a37a3",
+                "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+                "source_content_hash": "8e63b4f9948a4c5f",
+                "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "776",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05f582b31c0a37a3",
+                "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+                "source_content_hash": "8e63b4f9948a4c5f",
+                "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Cedar Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05f582b31c0a37a3",
+                "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+                "source_content_hash": "8e63b4f9948a4c5f",
+                "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Goanna Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05f582b31c0a37a3",
+                "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+                "source_content_hash": "8e63b4f9948a4c5f",
+                "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Standard Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05f582b31c0a37a3",
+                "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+                "source_content_hash": "8e63b4f9948a4c5f",
+                "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "EQT Ventures",
+            "role": "历史轮次领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-64c63dc926fc8a24",
+                "quote": "The Series A round was led by venture capital firm Benchmark and EQT Ventures",
+                "source_content_hash": "10f88a25e3d2c819",
+                "quote_hash": "f6ca65424ceca7d257e5e8c2770717f0e6806f8814a06358b5b30019368e40ef"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Nebular",
+            "role": "历史轮次参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-64c63dc926fc8a24",
+                "quote": "Additional investors included NFX, Nebular, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West and Monolith Power Systems, alongside Y Combinator.",
+                "source_content_hash": "10f88a25e3d2c819",
+                "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Adjacent",
+            "role": "历史轮次参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-64c63dc926fc8a24",
+                "quote": "Additional investors included NFX, Nebular, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West and Monolith Power Systems, alongside Y Combinator.",
+                "source_content_hash": "10f88a25e3d2c819",
+                "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Fuse Ventures",
+            "role": "历史轮次参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-64c63dc926fc8a24",
+                "quote": "Additional investors included NFX, Nebular, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West and Monolith Power Systems, alongside Y Combinator.",
+                "source_content_hash": "10f88a25e3d2c819",
+                "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Monolith Power Systems",
+            "role": "历史轮次参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-64c63dc926fc8a24",
+                "quote": "Additional investors included NFX, Nebular, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West and Monolith Power Systems, alongside Y Combinator.",
+                "source_content_hash": "10f88a25e3d2c819",
+                "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Y Combinator",
+            "role": "历史轮次参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-64c63dc926fc8a24",
+                "quote": "Additional investors included NFX, Nebular, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West and Monolith Power Systems, alongside Y Combinator.",
+                "source_content_hash": "10f88a25e3d2c819",
+                "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
+              }
+            ],
+            "entity_id": "EN-275b0f4a4023d91c"
+          },
+          {
+            "name": "Dennis Muilenburg",
+            "role": "历史轮次天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-64c63dc926fc8a24",
+                "quote": "Angel investors joining the round included former Boeing CEO Dennis Muilenburg, former Starbucks CEO Kevin Johnson and retired U.S. Air Force Gen. Stephen Wilson.",
+                "source_content_hash": "10f88a25e3d2c819",
+                "quote_hash": "0002df1f0ce504a676981ee2c44db107a7be1633f99c52a23dfb40557e754c3c"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kevin Johnson",
+            "role": "历史轮次天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-64c63dc926fc8a24",
+                "quote": "Angel investors joining the round included former Boeing CEO Dennis Muilenburg, former Starbucks CEO Kevin Johnson and retired U.S. Air Force Gen. Stephen Wilson.",
+                "source_content_hash": "10f88a25e3d2c819",
+                "quote_hash": "0002df1f0ce504a676981ee2c44db107a7be1633f99c52a23dfb40557e754c3c"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Stephen Wilson",
+            "role": "历史轮次天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-64c63dc926fc8a24",
+                "quote": "Angel investors joining the round included former Boeing CEO Dennis Muilenburg, former Starbucks CEO Kevin Johnson and retired U.S. Air Force Gen. Stephen Wilson.",
+                "source_content_hash": "10f88a25e3d2c819",
+                "quote_hash": "0002df1f0ce504a676981ee2c44db107a7be1633f99c52a23dfb40557e754c3c"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-05f582b31c0a37a3",
+            "quote": "Starcloud raises $250 million for orbital data centers as launch options dry up",
+            "source_content_hash": "8e63b4f9948a4c5f",
+            "quote_hash": "59421856ce7369de004566aeb298f48c25f6972ed79306bec2a358509ba54589"
+          },
+          {
+            "source_id": "FISRC-05f582b31c0a37a3",
+            "quote": "it has added a $250 million extension to its March $170 million Series A funding round. The extension values the company at $2.3 billion.",
+            "source_content_hash": "8e63b4f9948a4c5f",
+            "quote_hash": "6968a7f30f8c65866de4b213d53d95c9d8965ec643918b357f6dfb860ccd4e18"
+          }
+        ],
+        "round_code": "series_a_extension",
+        "round_original": "A轮扩展",
+        "amount_original": "$250 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "total_raised_original": "$450 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 450000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4.5 亿美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-259566f35ea4f66d",
+            "round_original": "A轮扩展",
+            "amount": "$250 million",
+            "announced_at": "2026-08-21",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05f582b31c0a37a3",
+                "quote": "Starcloud raises $250 million for orbital data centers as launch options dry up",
+                "source_content_hash": "8e63b4f9948a4c5f",
+                "quote_hash": "59421856ce7369de004566aeb298f48c25f6972ed79306bec2a358509ba54589"
+              },
+              {
+                "source_id": "FISRC-05f582b31c0a37a3",
+                "quote": "it has added a $250 million extension to its March $170 million Series A funding round. The extension values the company at $2.3 billion.",
+                "source_content_hash": "8e63b4f9948a4c5f",
+                "quote_hash": "6968a7f30f8c65866de4b213d53d95c9d8965ec643918b357f6dfb860ccd4e18"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Starcloud-1",
+          "description": "Starcloud的首颗卫星，60公斤，搭载NVIDIA H100 GPU，已在轨运行并完成AI模型训练。",
+          "target_customers": "美国政府部门、AI基础设施提供商",
+          "features": [
+            "在轨AI推理",
+            "搭载NVIDIA H100 GPU",
+            "在轨训练AI模型"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "quote": "Starcloud is the only company (that we know of) currently operating a Nvidia H100 terrestrial data center GPU in orbit, and the first to train a model using it",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote_hash": "3dcc9431d6b874e70c076ba46bafc1d404e55294101028e2d46d10b5a6c113d9"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Starcloud-2",
+          "description": "新一代8千瓦计算卫星，计划2027年通过拼车发射，用于在轨推理任务。",
+          "target_customers": "美国政府部门、Crusoe等AI基础设施提供商",
+          "features": [
+            "8 kW计算能力",
+            "在轨推理",
+            "商业云工作负载"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "quote": "Starcloud is focused on launching two of the company’s new generation of 8 kW compute satellites (dubbed Starcloud-2) on rideshare flights in 2027. These will perform orbital inference tasks for customers including U.S. government agencies.",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote_hash": "335b3906b4d2fa537ec4735a950087e801671293007d3c3dda80fa95c738a946"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Starcloud-3",
+          "description": "三吨级、200千瓦级轨道数据中心航天器，计划由SpaceX Starship发射。",
+          "target_customers": "需要大规模在轨AI推理和训练的地面客户",
+          "features": [
+            "200 kW级计算能力",
+            "三吨级航天器",
+            "支持AI推理和训练工作负载"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "quote": "advance its largest orbital data center spacecraft, Starcloud-3, which is intended to fly on SpaceX’s forthcoming Starship rocket.",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote_hash": "f1ce28e39cfff68ba937974434704253dabef126d6d45f2049862b276ecd6230"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Crusoe",
+          "industry": "AI基础设施",
+          "use_case": "在轨云工作负载",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-64c63dc926fc8a24",
+              "quote": "Starcloud-2 is set to be the venture’s first satellite to run commercial cloud workloads, including for early customer Crusoe, an AI infrastructure provider",
+              "source_content_hash": "10f88a25e3d2c819",
+              "quote_hash": "f139c6801a6e7fce1225c7d35df66c60840009d48a993766f161c4eb9ce3e554"
+            }
+          ],
+          "entity_id": "EN-d41ebd9f02722fc8"
+        },
+        {
+          "name": "AWS",
+          "industry": "云计算",
+          "use_case": "在轨云工作负载",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-64c63dc926fc8a24",
+              "quote": "alongside partnerships with Nvidia and cloud providers AWS and Google",
+              "source_content_hash": "10f88a25e3d2c819",
+              "quote_hash": "e1262519c1be7fd91674148f93e0d7b4335860c33a630dc780b370b967c691d4"
+            }
+          ],
+          "entity_id": "EN-7d1507284a5757ca"
+        },
+        {
+          "name": "Google",
+          "industry": "云计算",
+          "use_case": "在轨云工作负载",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-64c63dc926fc8a24",
+              "quote": "alongside partnerships with Nvidia and cloud providers AWS and Google",
+              "source_content_hash": "10f88a25e3d2c819",
+              "quote_hash": "e1262519c1be7fd91674148f93e0d7b4335860c33a630dc780b370b967c691d4"
+            }
+          ],
+          "entity_id": "EN-bbdefa2950f49882"
+        },
+        {
+          "name": "U.S. government agencies",
+          "industry": "政府与公共部门",
+          "use_case": "在轨推理任务",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "quote": "These will perform orbital inference tasks for customers including U.S. government agencies.",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote_hash": "0b88cc437bc88700c27ae7f222a236d9464829d1558d4dc08201743faa2d91cb"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "SpaceX",
+          "product": "Starmind AI卫星",
+          "scenario": "轨道AI数据中心",
+          "target_customer": "Grok和Tesla工作负载",
+          "funding_summary": "",
+          "core_difference": "SpaceX计划部署多达100万颗轨道数据中心卫星，并专注于服务Grok和Tesla工作负载；Starcloud定位为基础设施提供商，客户可安装自己的计算硬件和服务。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-64c63dc926fc8a24",
+              "quote": "SpaceX, which is seeking to deploy up to one million of them",
+              "source_content_hash": "10f88a25e3d2c819",
+              "quote_hash": "28c835a231af7a50c04d88624e3bcd7e0b451dc28cc6f1384ccbcbbc2f802bbc"
+            },
+            {
+              "source_id": "FISRC-3a69dba5a1f983a6",
+              "quote": "He believes that SpaceX's focus is on serving Grok and Tesla workloads, leaving room for Starcloud to establish itself as an energy and infrastructure player.",
+              "source_content_hash": "a62c7358a316b63f",
+              "quote_hash": "305f0ba8158352ec953bee843c70d1b10487fdd4bf25bdd8049dd259ae557382"
+            }
+          ],
+          "entity_id": "EN-e78bdebae031095b"
+        },
+        {
+          "name": "Cowboy Space",
+          "product": "自研火箭及轨道计算平台",
+          "scenario": "轨道数据中心",
+          "target_customer": "轨道计算客户",
+          "funding_summary": "$275 million at $2 billion valuation",
+          "core_difference": "Cowboy Space自研火箭，其上面级在发射后作为轨道计算平台；Starcloud依赖SpaceX Starship等第三方火箭发射其卫星。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1bb8d1e6f368d1b4",
+              "quote": "orbital data center startup Cowboy Space raised $275 million at a $2 billion valuation to develop its own rockets, with upper stages designed to serve as orbital compute platforms after launch.",
+              "source_content_hash": "f379c58f39ecd54d",
+              "quote_hash": "be62b94c1bfc9c047f026952a2e37b6f250f8334a5f1c0e88a4ce16dacb836f4"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Google",
+          "product": "Project Suncatcher",
+          "scenario": "轨道AI计算",
+          "target_customer": "Google自有TPU工作负载",
+          "funding_summary": "",
+          "core_difference": "Google的Project Suncatcher计划将定制TPU硬件送入轨道，原型发射计划在2027年；Starcloud使用NVIDIA GPU并定位为第三方基础设施提供商。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-93cac0d5a64e3256",
+              "quote": "Google has announced its own “Project Suncatcher,” a research initiative to put its custom TPU hardware into orbit, with prototype launches planned by 2027.",
+              "source_content_hash": "c058e3b48fa5e449",
+              "quote_hash": "19d2ad7f1833a4e749158e6d47eecfa2cf3b3c446b17ef65d727f6dad38a07ae"
+            }
+          ],
+          "entity_id": "EN-bbdefa2950f49882"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资额",
+          "value": "$250 million",
+          "observed_at": "2026-08-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "quote": "it has added a $250 million extension to its March $170 million Series A funding round",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote_hash": "d80f6a39f533fdc3993e69406628e626c90311a00c01ea43f299aa0992f59af1"
+            }
+          ]
+        },
+        {
+          "label": "估值",
+          "value": "$2.3 billion",
+          "observed_at": "2026-08-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "quote": "The extension values the company at $2.3 billion.",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote_hash": "fa9d7499c30401c5a536ccc76959609908651bdfd41711ebb35d8d713b95818e"
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "$450 million",
+          "observed_at": "2026-08-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e26526220802ed87",
+              "quote": "The financing brings Starcloud’s total capital raised since its 2024 founding to $450 million.",
+              "source_content_hash": "0506ec01e4e95c84",
+              "quote_hash": "75324da662bc5a42f69b0d883b3aa4b3a66b5866f307aa22874b2511ef829f5a"
+            }
+          ]
+        },
+        {
+          "label": "员工人数",
+          "value": "25",
+          "observed_at": "2026-08-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "quote": "The company, currently 25 employees strong and growing",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote_hash": "2a7354a91ef163af716fe018602be7541f7f23a6aaba8fb23ca95570cb895693"
+            }
+          ]
+        },
+        {
+          "label": "FCC申请卫星数量",
+          "value": "88,000",
+          "observed_at": "2026-08-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "quote": "Starcloud has already requested permission from the FCC to operate 88,000 spacecraft.",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote_hash": "3a7dc1cb0dd36f9b9fe6ec9506727b4537734bc5bb462cca382f0d0accf70b6c"
+            }
+          ]
+        },
+        {
+          "label": "长期轨道计算容量目标",
+          "value": "20 gigawatts",
+          "observed_at": "2026-08-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e26526220802ed87",
+              "quote": "Starcloud’s long-term plan calls for a constellation of 88,000 satellites providing 20 gigawatts of orbital computing capacity.",
+              "source_content_hash": "0506ec01e4e95c84",
+              "quote_hash": "1b0a0f8392eecb06855619d1e604a392c31cd340658d364bf63f0fe977a126ba"
+            }
+          ]
+        },
+        {
+          "label": "Nvidia投资金额",
+          "value": "$25 million",
+          "observed_at": "2026-08-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "quote": "a person familiar with the deal said Nvidia ponied up $25 million to back Starcloud",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote_hash": "a09ccf05347dff4bd135d1b2b842ba5c4b15b172291a212c9924d3684a3a4533"
+            }
+          ]
+        },
+        {
+          "label": "Starcloud-2功率",
+          "value": "8 kW",
+          "observed_at": "2026-08-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "quote": "Starcloud is focused on launching two of the company’s new generation of 8 kW compute satellites",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote_hash": "c610cc7660e7ef21212a5b48d39c0265bfe1db9750ae1edbf5f9dcbf8541e701"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Philip Johnston",
+          "quote": "We can see what’s coming — we’re going to need to book an enormous amount of launch",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "quote": "We can see what’s coming — we’re going to need to book an enormous amount of launch",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote_hash": "c729d61d223d987ca683e5ffaf835f1479e3fff24b59274beed4b178a0759c53"
+            }
+          ]
+        },
+        {
+          "speaker": "Philip Johnston",
+          "quote": "Last November we put the first NVIDIA H100 in orbit. Today this fresh capital empowers us to build the infrastructure to launch many more of NVIDIA’s most advanced GPUs into space.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e26526220802ed87",
+              "quote": "Last November we put the first NVIDIA H100 in orbit. Today this fresh capital empowers us to build the infrastructure to launch many more of NVIDIA’s most advanced GPUs into space.",
+              "source_content_hash": "0506ec01e4e95c84",
+              "quote_hash": "84d3315fe9dd17ace755dd244b3b168629787091a43fde8772a5621c7e35004a"
+            }
+          ]
+        },
+        {
+          "speaker": "Aleem Rizvon",
+          "quote": "Cisco has long been a leader in secure data center infrastructure and looks forward to bringing that expertise to the emerging world of orbital data centers. Cisco Investments is excited to invest in Starcloud as they expand data centers into space.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e26526220802ed87",
+              "quote": "Cisco has long been a leader in secure data center infrastructure and looks forward to bringing that expertise to the emerging world of orbital data centers. Cisco Investments is excited to invest in Starcloud as they expand data centers into space.",
+              "source_content_hash": "0506ec01e4e95c84",
+              "quote_hash": "42f344d65e64be7a6208f7357f7b1091d5361cb7cc1f48fdb9e64a25374f920d"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Cisco",
+            "speaker": "Aleem Rizvon",
+            "speaker_role": "Vice President At Cisco Investments",
+            "rationale": "Cisco认为自身在安全数据中心基础设施方面的领导地位可以应用于新兴的轨道数据中心领域，因此投资Starcloud以参与其向太空扩展数据中心。",
+            "quote": "Cisco has long been a leader in secure data center infrastructure and looks forward to bringing that expertise to the emerging world of orbital data centers. Cisco Investments is excited to invest in Starcloud as they expand data centers into space.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e26526220802ed87",
+                "quote": "Cisco has long been a leader in secure data center infrastructure and looks forward to bringing that expertise to the emerging world of orbital data centers. Cisco Investments is excited to invest in Starcloud as they expand data centers into space.",
+                "source_content_hash": "0506ec01e4e95c84",
+                "quote_hash": "42f344d65e64be7a6208f7357f7b1091d5361cb7cc1f48fdb9e64a25374f920d"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是轨道AI计算能否在Starship降低发射成本后与地面数据中心竞争。当前估值2.3亿美元所依赖的已验证信号包括：Starcloud-1已在轨运行NVIDIA H100 GPU并完成AI模型训练，NVIDIA以2500万美元参投并合作开发Space-1 Vera Rubin Module，以及公司已获得FCC申请运营88,000颗卫星的许可。证据边界在于Starship尚未投入商业运营，Starcloud-3的发射时间表依赖SpaceX的进度，且轨道数据中心的长期经济性尚未被验证。",
+        "validated_signals": [
+          "Starcloud-1已在轨运行NVIDIA H100 GPU并完成AI模型训练",
+          "NVIDIA以2500万美元参投并合作开发Space-1 Vera Rubin Module",
+          "公司已向FCC申请运营88,000颗卫星",
+          "Starcloud-2计划2027年发射，客户包括美国政府部门和Crusoe"
+        ],
+        "risks": [
+          "Starship尚未投入商业运营，Starcloud-3的发射时间表依赖SpaceX的进度，若2029年无法预订SpaceX发射容量将面临挑战",
+          "轨道数据中心的长期经济性尚未被验证，发射成本仍是最大挑战之一"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "computing_infrastructure",
+        "use_case_ids": [
+          "data_analysis"
+        ],
+        "industry_ids": [
+          "government_public_sector"
+        ],
+        "target_user_ids": [
+          "business_user",
+          "public_sector_user"
+        ],
+        "sector": "轨道数据中心与空间计算基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是轨道AI计算能否在Starship降低发射成本后与地面数据中心竞争。当前估值2.3亿美元所依赖的已验证信号包括：Starcloud-1已在轨运行NVIDIA H100 GPU并完成AI模型训练，NVIDIA以2500万美元参投并合作开发Space-1 Vera Rubin Module，以及公司已获得FCC申请运营88,000颗卫星的许可。证据边界在于Starship尚未投入商业运营，Starcloud-3的发射时间表依赖SpaceX的进度，且轨道数据中心的长期经济性尚未被验证。",
+          "evidence_signals": [
+            "Starcloud-1已在轨运行NVIDIA H100 GPU并完成AI模型训练",
+            "NVIDIA以2500万美元参投并合作开发Space-1 Vera Rubin Module",
+            "公司已向FCC申请运营88,000颗卫星",
+            "Starcloud-2计划2027年发射，客户包括美国政府部门和Crusoe"
+          ],
+          "risks": [
+            "Starship尚未投入商业运营，Starcloud-3的发射时间表依赖SpaceX的进度，若2029年无法预订SpaceX发射容量将面临挑战",
+            "轨道数据中心的长期经济性尚未被验证，发射成本仍是最大挑战之一"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Starcloud-1",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Starcloud-2",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Starcloud-3",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Philip Johnston",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Ezra Feilden",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Adi Oltean",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Manhattan West Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Nvidia",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Cisco",
+          "canonical_entity_id": "EN-e73b79a0b10f8cdb",
+          "canonical_name": "Cisco"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Benchmark",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "EQT",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Soma",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "NFX",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "776",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Cedar Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Goanna Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Standard Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "EQT Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Nebular",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Adjacent",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Fuse Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Monolith Power Systems",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Y Combinator",
+          "canonical_entity_id": "EN-275b0f4a4023d91c",
+          "canonical_name": "Y Combinator"
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Dennis Muilenburg",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Kevin Johnson",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Stephen Wilson",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Crusoe",
+          "canonical_entity_id": "EN-d41ebd9f02722fc8",
+          "canonical_name": "Crusoe"
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "AWS",
+          "canonical_entity_id": "EN-7d1507284a5757ca",
+          "canonical_name": "AWS"
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Google",
+          "canonical_entity_id": "EN-bbdefa2950f49882",
+          "canonical_name": "Google"
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "U.S. government agencies",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "SpaceX",
+          "canonical_entity_id": "EN-e78bdebae031095b",
+          "canonical_name": "SpaceX"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Cowboy Space",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Google",
+          "canonical_entity_id": "EN-bbdefa2950f49882",
+          "canonical_name": "Google"
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-259566f35ea4f66d",
+          "date": "2026-08-21",
+          "title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+          "amount": "$250 million",
+          "source_refs": [
+            "SA-ff16534f58de8c16"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-05f582b31c0a37a3",
+          "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+          "title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+          "publisher": "TechCrunch：AI（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-22T00:20:03.648Z",
+          "content_hash": "8e63b4f9948a4c5f",
+          "source_artifact_id": "SA-ff16534f58de8c16",
+          "raw_id": "RAW-f3ff74a4045778ff"
+        },
+        {
+          "source_id": "FISRC-e26526220802ed87",
+          "source_url": "https://pulse2.com/starcloud-raises-250-million-at-2-3-billion-valuation-to-build-20-gigawatt-orbital-ai-data-center-network/",
+          "title": "Starcloud Raises $250 Million At $2.3 Billion Valuation To Build 20-Gigawatt Orbital AI Data Center Network",
+          "publisher": "pulse2.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-22T00:23:40.884Z",
+          "content_hash": "0506ec01e4e95c84",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-64c63dc926fc8a24",
+          "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+          "title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+          "publisher": "spacenews.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-22T00:23:40.923Z",
+          "content_hash": "10f88a25e3d2c819",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-93cac0d5a64e3256",
+          "source_url": "https://briefglance.com/articles/unicorn-in-orbit-starclouds-11b-bet-on-space-based-ai",
+          "title": "Unicorn in Orbit: Starcloud's $1.1B Bet on Space-Based AI - BriefGlance.com",
+          "publisher": "briefglance.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-22T00:23:41.393Z",
+          "content_hash": "c058e3b48fa5e449",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-3a69dba5a1f983a6",
+          "source_url": "https://lyondemere.org/article/starcloud-s-ambitious-plan-building-data-centers-in-space",
+          "title": "Starcloud's Ambitious Plan: Building Data Centers in Space (2026)",
+          "publisher": "lyondemere.org",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-22T00:23:42.631Z",
+          "content_hash": "a62c7358a316b63f",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-ad74e572acda09a7",
+          "source_url": "https://starcloud.com/",
+          "title": "Data Centers in Space | Starcloud – The Future of AI",
+          "publisher": "starcloud.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-22T00:23:42.251Z",
+          "content_hash": "195b34e0f8c0cad0",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-1bb8d1e6f368d1b4",
+          "source_url": "https://spacenews.com/nvidia-joins-starclouds-250-million-orbital-data-center-funding-round/",
+          "title": "Nvidia joins Starcloud’s $250 million orbital data center funding round - SpaceNews",
+          "publisher": "spacenews.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-22T00:23:41.813Z",
+          "content_hash": "f379c58f39ecd54d",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-22T00:25:07.062Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-22T00:25:07.062Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 7
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Starcloud-1",
+            "Starcloud-2",
+            "Starcloud-3"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Adi Oltean",
+            "Ezra Feilden",
+            "Philip Johnston"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-259566f35ea4f66d"
+      ],
+      "aggregation": {
+        "key": "EN-607a596a603dd679|series_a_extension",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-06b141d6e3df6230",
+      "triggered_by_event_id": "EV-1bc31f98fa3e34cc",
+      "as_of_date": "2026-08-22",
+      "company": {
+        "entity_id": "EN-e4a72fa4f054e9be",
+        "name": "Algorix",
+        "full_name": "Algorix",
+        "website": "",
+        "summary": "韩国企业级AI数据基础设施初创公司，提供Akasic平台，覆盖碎片化企业数据连接、采集与转换、AI推理及智能体执行。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "Minsoo Kim",
+            "role": "CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4e441239551a1fd6",
+                "quote": "Founded in 2022 by Minsoo Kim, a professor of computer science at KAIST",
+                "source_content_hash": "4e6014655ea683a8",
+                "quote_hash": "eb368e36a9ad6b31841a2052287f65b62c5ee8ffb1c91d1b6bf08e29eb362136"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-4e441239551a1fd6",
+            "quote": "South Korean enterprise AI data infrastructure startup Algorix has raised $11.5 million (KRW 17 billion) in a Series A round led by K2 Investment Partners",
+            "source_content_hash": "4e6014655ea683a8",
+            "quote_hash": "8d1ae468b98178da8beb64706db17f537626962b63cb51911e8d26ea886866e8"
+          }
+        ],
+        "application_entity_id": "EN-e4a72fa4f054e9be",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "多轮融资",
+        "amount": "$11.5M",
+        "total_raised": "$14 million",
+        "announced_at": "2026-08-14",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "K2 Investment Partners",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4e441239551a1fd6",
+                "quote": "Series A round led by K2 Investment Partners",
+                "source_content_hash": "4e6014655ea683a8",
+                "quote_hash": "50ef80ac9bdb15134d82ca7561562bc20369c6c7a67bd41de1ab224f1c92cb34"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "A Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4e441239551a1fd6",
+                "quote": "A Ventures and GU Equity Partners joined as new investors",
+                "source_content_hash": "4e6014655ea683a8",
+                "quote_hash": "743fd2dbf3333a810f80dc660202cf0502afc2a9e6aa8ef7d418fb8dc074c190"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "GU Equity Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4e441239551a1fd6",
+                "quote": "A Ventures and GU Equity Partners joined as new investors",
+                "source_content_hash": "4e6014655ea683a8",
+                "quote_hash": "743fd2dbf3333a810f80dc660202cf0502afc2a9e6aa8ef7d418fb8dc074c190"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Quad Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4e441239551a1fd6",
+                "quote": "while Quad Ventures, Kiwoom Investment, and We Ventures—all of whom participated in the September 2024 pre–Series A—returned for follow-on investment",
+                "source_content_hash": "4e6014655ea683a8",
+                "quote_hash": "31397bbbf4d849a0a3becbba55142a4eee2e73e28d9755257b3de136a962635a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kiwoom Investment",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4e441239551a1fd6",
+                "quote": "while Quad Ventures, Kiwoom Investment, and We Ventures—all of whom participated in the September 2024 pre–Series A—returned for follow-on investment",
+                "source_content_hash": "4e6014655ea683a8",
+                "quote_hash": "31397bbbf4d849a0a3becbba55142a4eee2e73e28d9755257b3de136a962635a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "We Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4e441239551a1fd6",
+                "quote": "while Quad Ventures, Kiwoom Investment, and We Ventures—all of whom participated in the September 2024 pre–Series A—returned for follow-on investment",
+                "source_content_hash": "4e6014655ea683a8",
+                "quote_hash": "31397bbbf4d849a0a3becbba55142a4eee2e73e28d9755257b3de136a962635a"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Kakao Ventures",
+            "role": "pre-seed轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4e441239551a1fd6",
+                "quote": "Algorix previously secured pre-seed funding from Kakao Ventures in July to build its unified data layer for enterprise AI.",
+                "source_content_hash": "4e6014655ea683a8",
+                "quote_hash": "646e4ac9248a65dda89dd720b37af4235223fe3668eec6d605bd653278d8cf36"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-4e441239551a1fd6",
+            "quote": "Algorix Raises $11.5M Series A Led by K2 Investment Partners, Bringing Total Funding to $14M",
+            "source_content_hash": "4e6014655ea683a8",
+            "quote_hash": "2d4f94671f13a07b3ec4500a8b1418cd5296faf2e56db1918ce6ab2716170b8e"
+          },
+          {
+            "source_id": "FISRC-4e441239551a1fd6",
+            "quote": "Algorix has raised $11.5 million (KRW 17 billion) in a Series A round led by K2 Investment Partners",
+            "source_content_hash": "4e6014655ea683a8",
+            "quote_hash": "b35935e5cb02875f368e19a2dc41e35529731f9decdec985c4b9d640f8add83f"
+          }
+        ],
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$11.5M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 11500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1150 万美元"
+        },
+        "total_raised_original": "$14 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 14000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1400 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-1bc31f98fa3e34cc",
+            "round_original": "多轮融资",
+            "amount": "$11.5M",
+            "announced_at": "2026-08-14",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4e441239551a1fd6",
+                "quote": "Algorix Raises $11.5M Series A Led by K2 Investment Partners, Bringing Total Funding to $14M",
+                "source_content_hash": "4e6014655ea683a8",
+                "quote_hash": "2d4f94671f13a07b3ec4500a8b1418cd5296faf2e56db1918ce6ab2716170b8e"
+              },
+              {
+                "source_id": "FISRC-4e441239551a1fd6",
+                "quote": "Algorix has raised $11.5 million (KRW 17 billion) in a Series A round led by K2 Investment Partners",
+                "source_content_hash": "4e6014655ea683a8",
+                "quote_hash": "b35935e5cb02875f368e19a2dc41e35529731f9decdec985c4b9d640f8add83f"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Akasic",
+          "description": "全栈AI数据基础设施平台，覆盖碎片化企业数据连接、采集与转换、AI推理及智能体执行。",
+          "target_customers": "国防、制造、金融、电信等领域的企业客户",
+          "features": [
+            "企业数据连接",
+            "数据采集与转换",
+            "AI推理",
+            "智能体执行"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e441239551a1fd6",
+              "quote": "Algorix offers the Akasic platform, a full-stack AI data infrastructure that spans fragmented enterprise data connectivity, collection and transformation, AI inference, and agentic AI execution.",
+              "source_content_hash": "4e6014655ea683a8",
+              "quote_hash": "4e512f4fa1c6a120c4a6079e4121d15f072cc4fccd3ad65f15bec5fbc1f4aa4c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "AkasicDB",
+          "description": "AI原生数据库引擎，在单一系统中统一图数据库、向量数据库和关系数据库。",
+          "target_customers": "需要统一多模态数据的企业客户",
+          "features": [
+            "统一图、向量、关系数据库",
+            "混合RAG技术",
+            "单查询执行图、向量、关系搜索"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e441239551a1fd6",
+              "quote": "The platform’s flagship product, AkasicDB, is an AI-native database engine that unifies graph, vector, and relational databases in a single system.",
+              "source_content_hash": "4e6014655ea683a8",
+              "quote_hash": "5c4adde806e153cd03b42035bf16c74af6e3cf28fe85d4344ed3e3b6c571716a"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Agency for Defense Development",
+          "industry": "国防",
+          "use_case": "生产及试点项目",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e441239551a1fd6",
+              "quote": "Algorix is conducting production and pilot projects with major clients and institutions across defense, manufacturing, finance, and telecommunications, including the Agency for Defense Development",
+              "source_content_hash": "4e6014655ea683a8",
+              "quote_hash": "6e7375e8b8140547dccee5a2d62571108fc30b773dc67906e0651e6fe69100ff"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Hanwha Ocean",
+          "industry": "制造",
+          "use_case": "生产及试点项目",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e441239551a1fd6",
+              "quote": "including the Agency for Defense Development, Hanwha Ocean, Hyundai Motor Company, Hankook Tire, KB Securities, Kiwoom Securities, LG Uplus, and KT.",
+              "source_content_hash": "4e6014655ea683a8",
+              "quote_hash": "f01d7b46a7df35dd3f135e10f751d57d3c4e03d10e68a2792ed17b79893dd738"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Hyundai Motor Company",
+          "industry": "制造",
+          "use_case": "生产及试点项目",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e441239551a1fd6",
+              "quote": "including the Agency for Defense Development, Hanwha Ocean, Hyundai Motor Company, Hankook Tire, KB Securities, Kiwoom Securities, LG Uplus, and KT.",
+              "source_content_hash": "4e6014655ea683a8",
+              "quote_hash": "f01d7b46a7df35dd3f135e10f751d57d3c4e03d10e68a2792ed17b79893dd738"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "KB Securities",
+          "industry": "金融",
+          "use_case": "生产及试点项目",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e441239551a1fd6",
+              "quote": "including the Agency for Defense Development, Hanwha Ocean, Hyundai Motor Company, Hankook Tire, KB Securities, Kiwoom Securities, LG Uplus, and KT.",
+              "source_content_hash": "4e6014655ea683a8",
+              "quote_hash": "f01d7b46a7df35dd3f135e10f751d57d3c4e03d10e68a2792ed17b79893dd738"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "LG Uplus",
+          "industry": "电信",
+          "use_case": "生产及试点项目",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e441239551a1fd6",
+              "quote": "including the Agency for Defense Development, Hanwha Ocean, Hyundai Motor Company, Hankook Tire, KB Securities, Kiwoom Securities, LG Uplus, and KT.",
+              "source_content_hash": "4e6014655ea683a8",
+              "quote_hash": "f01d7b46a7df35dd3f135e10f751d57d3c4e03d10e68a2792ed17b79893dd738"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Milvus",
+          "product": "Milvus向量数据库",
+          "scenario": "向量数据库查询性能对比",
+          "target_customer": "使用向量数据库的企业",
+          "funding_summary": "",
+          "core_difference": "AkasicDB在相同准确率水平下，每秒查询数超过Milvus四倍以上。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e441239551a1fd6",
+              "quote": "demonstrated more than four times the queries per second compared to Milvus, a widely used global vector database, at the same accuracy level in an internal evaluation.",
+              "source_content_hash": "4e6014655ea683a8",
+              "quote_hash": "0e32bb32c58f389844663247962cf48f739592ad0cb54a9c4b3b972e4019aa37"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "AkasicDB图数据库处理性能提升",
+          "value": "最高达142倍",
+          "observed_at": "2026-08-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e441239551a1fd6",
+              "quote": "AkasicDB recorded processing performance up to 142 times faster than existing graph databases in the international LDBC SNB benchmark",
+              "source_content_hash": "4e6014655ea683a8",
+              "quote_hash": "9c159ad8672bd54d3c969fc32169109f22fd9bd116264c2f6b1c663a189de1f3"
+            }
+          ]
+        },
+        {
+          "label": "混合RAG答案准确率提升",
+          "value": "最高达78%",
+          "observed_at": "2026-08-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e441239551a1fd6",
+              "quote": "showed up to 78 percent higher answer accuracy than conventional RAG in joint research with KAIST",
+              "source_content_hash": "4e6014655ea683a8",
+              "quote_hash": "0e55d430d4398acc67703f3aba7e4bca67f243280756d1a10f4422082d1665d8"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Hyeokryul Kwon",
+          "quote": "We focused on Algorix’s execution capability, demonstrated through validation of its foundational technology at international academic venues and pilot deployment across diverse industries in both open and closed-network environments.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e441239551a1fd6",
+              "quote": "We focused on Algorix’s execution capability, demonstrated through validation of its foundational technology at international academic venues and pilot deployment across diverse industries in both open and closed-network environments.",
+              "source_content_hash": "4e6014655ea683a8",
+              "quote_hash": "cbefd79b894ab634fb7bb8c0f78da5d3b04e1e8c3538f39e6edc2b717ab3abea"
+            }
+          ]
+        },
+        {
+          "speaker": "Minsoo Kim",
+          "quote": "We have concentrated on developing a hybrid RAG database engine with the conviction that the success of enterprise AI depends not on models but on understanding data and business context.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e441239551a1fd6",
+              "quote": "We have concentrated on developing a hybrid RAG database engine with the conviction that the success of enterprise AI depends not on models but on understanding data and business context.",
+              "source_content_hash": "4e6014655ea683a8",
+              "quote_hash": "1e276faa66b2698362151c5f765bdef3d7aeeadfdd0aaaec3a59abe765ee036d"
+            }
+          ]
+        },
+        {
+          "speaker": "trysignalbase.com",
+          "quote": "5M Series A Led by K2 Investment Partners, Bringing Total Funding to $14M Algorix Raises $11.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1989cc142c6b0e97",
+              "quote": "5M Series A Led by K2 Investment Partners, Bringing Total Funding to $14M Algorix Raises $11.",
+              "source_content_hash": "01f1f7c950803b79",
+              "quote_hash": "289009481a9c6a4c5a3477ac3dd7c67dd0eb42f48ddd6d88439146c8cf9b324a"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "K2 Investment Partners",
+            "speaker": "Hyeokryul Kwon",
+            "speaker_role": "executive director",
+            "rationale": "关注Algorix的执行能力，其基础技术在国际学术场合得到验证，并在开放和封闭网络环境中跨多个行业完成试点部署。",
+            "quote": "We focused on Algorix’s execution capability, demonstrated through validation of its foundational technology at international academic venues and pilot deployment across diverse industries in both open and closed-network environments.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4e441239551a1fd6",
+                "quote": "We focused on Algorix’s execution capability, demonstrated through validation of its foundational technology at international academic venues and pilot deployment across diverse industries in both open and closed-network environments.",
+                "source_content_hash": "4e6014655ea683a8",
+                "quote_hash": "cbefd79b894ab634fb7bb8c0f78da5d3b04e1e8c3538f39e6edc2b717ab3abea"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是Algorix能否以国产核心数据库层支撑韩国'K-Palantir'战略下的企业AI数据基础设施需求。已验证信号包括：AkasicDB在LDBC SNB基准中处理性能最高达现有图数据库142倍，混合RAG在KAIST联合研究中答案准确率较传统RAG提升最高78%，且已在国防、制造、金融、电信等行业落地生产及试点项目。证据边界：来源仅披露性能基准和客户名单，未提供收入、合同金额或估值数据。",
+        "validated_signals": [
+          "AkasicDB在LDBC SNB基准中处理性能最高达现有图数据库142倍",
+          "混合RAG答案准确率较传统RAG提升最高78%",
+          "已在国防、制造、金融、电信等行业开展生产及试点项目"
+        ],
+        "risks": [
+          "来源未披露收入、合同金额或估值，商业化规模尚无法验证"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "data",
+        "market_application_id": "data_preparation_curation",
+        "use_case_ids": [
+          "data_analysis",
+          "knowledge_search"
+        ],
+        "industry_ids": [
+          "financial_services",
+          "manufacturing",
+          "telecommunications",
+          "aerospace_defense"
+        ],
+        "target_user_ids": [
+          "business_user",
+          "developer"
+        ],
+        "sector": "企业级AI数据基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Algorix能否以国产核心数据库层支撑韩国'K-Palantir'战略下的企业AI数据基础设施需求。已验证信号包括：AkasicDB在LDBC SNB基准中处理性能最高达现有图数据库142倍，混合RAG在KAIST联合研究中答案准确率较传统RAG提升最高78%，且已在国防、制造、金融、电信等行业落地生产及试点项目。证据边界：来源仅披露性能基准和客户名单，未提供收入、合同金额或估值数据。",
+          "evidence_signals": [
+            "AkasicDB在LDBC SNB基准中处理性能最高达现有图数据库142倍",
+            "混合RAG答案准确率较传统RAG提升最高78%",
+            "已在国防、制造、金融、电信等行业开展生产及试点项目"
+          ],
+          "risks": [
+            "来源未披露收入、合同金额或估值，商业化规模尚无法验证"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Akasic",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AkasicDB",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Minsoo Kim",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "K2 Investment Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "A Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "GU Equity Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Quad Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Kiwoom Investment",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "We Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Kakao Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Agency for Defense Development",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Hanwha Ocean",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Hyundai Motor Company",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "KB Securities",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "LG Uplus",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Milvus",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-1bc31f98fa3e34cc",
+          "date": "2026-08-14",
+          "title": "Algorix 完成1150万美元A轮融资，由K2 Investment Partners领投，总融资额达1400万美元",
+          "amount": "$11.5M",
+          "source_refs": [
+            "SA-cb72ca58af3ced85"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-4e441239551a1fd6",
+          "source_url": "https://en.wowtale.net/2026/08/14/234729/",
+          "title": "Algorix 完成1150万美元A轮融资，由K2 Investment Partners领投，总融资额达1400万美元",
+          "publisher": "keyword search / Exa",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-22T00:20:12.170Z",
+          "content_hash": "4e6014655ea683a8",
+          "source_artifact_id": "SA-cb72ca58af3ced85",
+          "raw_id": "RAW-c6b7817668b6f572"
+        },
+        {
+          "source_id": "FISRC-1989cc142c6b0e97",
+          "source_url": "https://www.trysignalbase.com/news/funding/algorix-raises-11-5m-series-a-funding",
+          "title": "AlgoriX Raises $11.5M Series A Funding | Signalbase",
+          "publisher": "trysignalbase.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-22T00:24:02.921Z",
+          "content_hash": "01f1f7c950803b79",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-22T00:24:29.993Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-22T00:24:29.993Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Akasic",
+            "AkasicDB"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Minsoo Kim"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-1bc31f98fa3e34cc"
+      ],
+      "aggregation": {
+        "key": "EN-e4a72fa4f054e9be|multi_round",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-ebd468c30b43d8d6",
+      "triggered_by_event_id": "EV-8ad153b984ba8729",
+      "as_of_date": "2026-08-22",
+      "company": {
+        "entity_id": "EN-647aebd730e6d6b2",
+        "name": "Defender Advantage Fund",
+        "full_name": "Defender Advantage Fund",
+        "website": "",
+        "summary": "Anthropic 推出的 Defender Advantage Fund（0xDAF）是一个面向开源软件安全的资助计划，以 Claude credits 形式提供 3500 万美元，支持组织修复开源项目漏洞、自动化扫描与补丁流程，并探索抵御整类攻击的安全方法。",
+        "headquarters": "",
+        "founders": [],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-f034ee1587ce0876",
+            "quote": "Our new Defender Advantage Fund (0xDAF) will provide $35 million in credits to organizations working to patch vulnerabilities in open-source projects, automate parts of the process of scanning and patching open-source software, and experiment with new security approaches.",
+            "source_content_hash": "db92be4657270b07",
+            "quote_hash": "6d45243f85e63803d74b0f032f1e9fce02692a74124fd4a9f4ff1bccffc1333e"
+          },
+          {
+            "source_id": "FISRC-3329306a81767780",
+            "quote": "the new Defender Advantage Fund (0xDAF) will distribute $35 million in Claude credits to organizations securing open-source software",
+            "source_content_hash": "f1f3da2d7bd73e7f",
+            "quote_hash": "b96e32191d64382a84fede2cc2b355b1ade9685c6ba33aaf6841dd0d95d838d4"
+          }
+        ],
+        "application_entity_id": "EN-647aebd730e6d6b2",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "其他融资",
+        "amount": "$35 million",
+        "total_raised": "$35 million",
+        "announced_at": "2026-08-20",
+        "investor_disclosure_status": "not_disclosed",
+        "investors": [],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-f034ee1587ce0876",
+            "quote": "Our new Defender Advantage Fund (0xDAF) will provide $35 million in credits to organizations working to patch vulnerabilities in open-source projects, automate parts of the process of scanning and patching open-source software, and experiment with new security approaches.",
+            "source_content_hash": "db92be4657270b07",
+            "quote_hash": "6d45243f85e63803d74b0f032f1e9fce02692a74124fd4a9f4ff1bccffc1333e"
+          },
+          {
+            "source_id": "FISRC-f034ee1587ce0876",
+            "quote": "We're also launching a $35M fund to help secure open-source software",
+            "source_content_hash": "db92be4657270b07",
+            "quote_hash": "713de8f6ac93f365e305df831d1ef47fb77e611fab62557f390bbcaa2d1a2142"
+          },
+          {
+            "source_id": "FISRC-3329306a81767780",
+            "quote": "commits $35 million in credits to a new fund for open-source defense",
+            "source_content_hash": "f1f3da2d7bd73e7f",
+            "quote_hash": "d5bcba6b7f28a5d9dd87c3fb70f3df2b21bd0b797b1c157b75329b6685aa744d"
+          }
+        ],
+        "round_code": "other",
+        "round_original": "fund",
+        "amount_original": "$35 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 35000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3500 万美元"
+        },
+        "total_raised_original": "$35 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 35000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3500 万美元"
+        },
+        "risk_markers": [
+          "investors_missing"
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-8ad153b984ba8729",
+            "round_original": "fund",
+            "amount": "$35 million",
+            "announced_at": "2026-08-20",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f034ee1587ce0876",
+                "quote": "Our new Defender Advantage Fund (0xDAF) will provide $35 million in credits to organizations working to patch vulnerabilities in open-source projects, automate parts of the process of scanning and patching open-source software, and experiment with new security approaches.",
+                "source_content_hash": "db92be4657270b07",
+                "quote_hash": "6d45243f85e63803d74b0f032f1e9fce02692a74124fd4a9f4ff1bccffc1333e"
+              },
+              {
+                "source_id": "FISRC-f034ee1587ce0876",
+                "quote": "We're also launching a $35M fund to help secure open-source software",
+                "source_content_hash": "db92be4657270b07",
+                "quote_hash": "713de8f6ac93f365e305df831d1ef47fb77e611fab62557f390bbcaa2d1a2142"
+              },
+              {
+                "source_id": "FISRC-3329306a81767780",
+                "quote": "commits $35 million in credits to a new fund for open-source defense",
+                "source_content_hash": "f1f3da2d7bd73e7f",
+                "quote_hash": "d5bcba6b7f28a5d9dd87c3fb70f3df2b21bd0b797b1c157b75329b6685aa744d"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "partially_disclosed"
+      },
+      "products": [
+        {
+          "name": "Defender Advantage Fund (0xDAF)",
+          "description": "以 Claude credits 形式提供 3500 万美元的资助计划，面向帮助开源维护者保障软件安全的组织，资助方向包括修复广泛使用项目中的活跃漏洞、以可复制方式自动化扫描与补丁，以及推进抵御整类攻击的安全方法。",
+          "target_customers": "维护开源项目的组织、开源安全组织、非营利基金会",
+          "features": [
+            "修复广泛使用项目中的活跃漏洞",
+            "自动化扫描与补丁",
+            "支持抵御整类攻击的安全方法"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f034ee1587ce0876",
+              "quote": "Our new Defender Advantage Fund (0xDAF) will provide $35 million in credits to organizations working to patch vulnerabilities in open-source projects, automate parts of the process of scanning and patching open-source software, and experiment with new security approaches.",
+              "source_content_hash": "db92be4657270b07",
+              "quote_hash": "6d45243f85e63803d74b0f032f1e9fce02692a74124fd4a9f4ff1bccffc1333e"
+            },
+            {
+              "source_id": "FISRC-f034ee1587ce0876",
+              "quote": "Grants will focus on three areas: patching live vulnerabilities in widely used projects, automating scanning and patching in ways other projects can replicate, and helping projects pursue more ambitious security approaches that make them resistant to whole classes of attack.",
+              "source_content_hash": "db92be4657270b07",
+              "quote_hash": "36314c3dc2dea497510bdadba19e5d27be9821c6ac2b4e819e025a4267b5f3ad"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "基金规模",
+          "value": "$35 million",
+          "observed_at": "2026-08-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f034ee1587ce0876",
+              "quote": "Our new Defender Advantage Fund (0xDAF) will provide $35 million in credits",
+              "source_content_hash": "db92be4657270b07",
+              "quote_hash": "ecde025ac01961ea847d4a22ed8d25b08ace816210f0f4987a0f0ac61ef8cbf2"
+            }
+          ]
+        },
+        {
+          "label": "Project Glasswing 直接捐款",
+          "value": "$4 million",
+          "observed_at": "2026-08-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f034ee1587ce0876",
+              "quote": "Through Project Glasswing, we made $4M in direct donations to open-source security organizations",
+              "source_content_hash": "db92be4657270b07",
+              "quote_hash": "1069fd50cdf4724839d408a9d431edb74e6f9935c8293966f28e8548d279adfe"
+            }
+          ]
+        },
+        {
+          "label": "Project Glasswing 使用额度",
+          "value": "$100 million",
+          "observed_at": "2026-08-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3329306a81767780",
+              "quote": "$100 million in usage credits committed to Project Glasswing in April 2026",
+              "source_content_hash": "f1f3da2d7bd73e7f",
+              "quote_hash": "f08b0cfce4f45a38fbd176528b3ee004d187c63a3bbf27cdbb22695b2fba8965"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Anthropic",
+          "quote": "Our new Defender Advantage Fund (0xDAF) will provide $35 million in credits to organizations working to patch vulnerabilities in open-source projects, automate parts of the process of scanning and patching open-source software, and experiment with new security approaches.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f034ee1587ce0876",
+              "quote": "Our new Defender Advantage Fund (0xDAF) will provide $35 million in credits to organizations working to patch vulnerabilities in open-source projects, automate parts of the process of scanning and patching open-source software, and experiment with new security approaches.",
+              "source_content_hash": "db92be4657270b07",
+              "quote_hash": "6d45243f85e63803d74b0f032f1e9fce02692a74124fd4a9f4ff1bccffc1333e"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是：在开源软件维护资源不足的背景下，以模型使用额度而非现金资助的方式，将前沿模型的防御性能力定向注入开源安全生态。已验证信号包括：Anthropic 已通过 Project Glasswing 向开源安全组织提供 400 万美元直接捐款，并支持 Akrites 和 Gold Eagle 等协调性漏洞修复工作；Mythos Preview 已发现数千个高危漏洞，包括所有主流操作系统和浏览器中的漏洞。证据边界：来源未披露基金的具体投资方、估值或商业回报机制，也未披露初始受助方名单。",
+        "validated_signals": [
+          "Anthropic 已通过 Project Glasswing 向开源安全组织提供 400 万美元直接捐款",
+          "Mythos Preview 已发现数千个高危漏洞，包括所有主流操作系统和浏览器中的漏洞",
+          "基金以 Claude credits 形式提供，而非现金资助"
+        ],
+        "risks": [
+          "来源未披露基金的具体投资方、治理结构或资金分配机制，无法验证其独立运作能力",
+          "以 credits 而非现金形式提供资助，可能限制受助方对非 Claude 工具链的使用",
+          "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "end_user_application",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "models",
+        "use_case_ids": [
+          "security_operations"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "网络安全与开源软件安全",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：在开源软件维护资源不足的背景下，以模型使用额度而非现金资助的方式，将前沿模型的防御性能力定向注入开源安全生态。已验证信号包括：Anthropic 已通过 Project Glasswing 向开源安全组织提供 400 万美元直接捐款，并支持 Akrites 和 Gold Eagle 等协调性漏洞修复工作；Mythos Preview 已发现数千个高危漏洞，包括所有主流操作系统和浏览器中的漏洞。证据边界：来源未披露基金的具体投资方、估值或商业回报机制，也未披露初始受助方名单。",
+          "evidence_signals": [
+            "Anthropic 已通过 Project Glasswing 向开源安全组织提供 400 万美元直接捐款",
+            "Mythos Preview 已发现数千个高危漏洞，包括所有主流操作系统和浏览器中的漏洞",
+            "基金以 Claude credits 形式提供，而非现金资助"
+          ],
+          "risks": [
+            "来源未披露基金的具体投资方、治理结构或资金分配机制，无法验证其独立运作能力",
+            "以 credits 而非现金形式提供资助，可能限制受助方对非 Claude 工具链的使用"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Defender Advantage Fund (0xDAF)",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-8ad153b984ba8729",
+          "date": "2026-08-20",
+          "title": "Claude Mythos 5 网络安全能力扩展至更多防御者",
+          "amount": "$35 million",
+          "source_refs": [
+            "SA-f015b0cb13d567c8"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-f034ee1587ce0876",
+          "source_url": "https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders",
+          "title": "Claude Mythos 5 网络安全能力扩展至更多防御者",
+          "publisher": "Claude：Blog（网页）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-22T00:20:03.692Z",
+          "content_hash": "db92be4657270b07",
+          "source_artifact_id": "SA-f015b0cb13d567c8",
+          "raw_id": "RAW-aab80b3ffee4a937"
+        },
+        {
+          "source_id": "FISRC-3329306a81767780",
+          "source_url": "https://www.unite.ai/anthropic-deploys-claude-mythos-5-in-security-tools-35m-open-source-fund/",
+          "title": "Anthropic Deploys Claude Mythos 5 in Security Tools, $35 ...",
+          "publisher": "unite.ai",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-08-22T00:23:41.127Z",
+          "content_hash": "f1f3da2d7bd73e7f",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-22T00:23:59.824Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-22T00:23:59.824Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Defender Advantage Fund (0xDAF)"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-8ad153b984ba8729"
+      ],
+      "aggregation": {
+        "key": "EN-647aebd730e6d6b2|other",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-259566f35ea4f66d",
+      "company_name": "Starcloud",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元\" funding company investors product",
+        "\"Starcloud\" \"$250 million\" funding investors round",
+        "\"Starcloud\" product customers case study",
+        "\"Starcloud\" \"Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元\" competitors product use case",
+        "\"Starcloud\" \"$250 million\" investor quote why invested",
+        "\"Starcloud\" \"$250 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Starcloud\" \"$250 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Starcloud\" \"$250 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Starcloud\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Starcloud\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Starcloud\" \"Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Starcloud\" \"Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Starcloud\" \"$250 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Starcloud\" \"$250 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Starcloud\" \"$250 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Starcloud\" \"$250 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-08-22T00:25:07.082Z"
+    },
+    {
+      "event_id": "EV-8ad153b984ba8729",
+      "company_name": "Defender Advantage Fund",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Claude Mythos 5 网络安全能力扩展至更多防御者\" funding company investors product",
+        "\"Defender Advantage Fund\" \"$35 million\" funding investors round",
+        "\"Defender Advantage Fund\" product customers case study",
+        "\"Defender Advantage Fund\" \"Claude Mythos 5 网络安全能力扩展至更多防御者\" competitors product use case",
+        "\"Defender Advantage Fund\" \"$35 million\" investor quote why invested",
+        "\"Defender Advantage Fund\" \"$35 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Claude Mythos 5 网络安全能力扩展至更多防御者\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Claude Mythos 5 网络安全能力扩展至更多防御者\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Defender Advantage Fund\" \"$35 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Defender Advantage Fund\" \"$35 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Defender Advantage Fund\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Defender Advantage Fund\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Defender Advantage Fund\" \"Claude Mythos 5 网络安全能力扩展至更多防御者\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Defender Advantage Fund\" \"Claude Mythos 5 网络安全能力扩展至更多防御者\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Defender Advantage Fund\" \"$35 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Defender Advantage Fund\" \"$35 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Defender Advantage Fund\" \"$35 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Defender Advantage Fund\" \"$35 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-08-22T00:25:07.082Z"
+    },
+    {
+      "event_id": "EV-19dd4c3a5dd5a94b",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-08-22T00:25:07.082Z"
+    },
+    {
+      "event_id": "EV-8cb4468fe881602b",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-08-22T00:25:07.082Z"
+    },
+    {
+      "event_id": "EV-1bc31f98fa3e34cc",
+      "company_name": "Algorix",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Algorix Raises $11.5M Series A Led by K2 Investment Partners, Bringing Total Funding to $14M - WOWTALE\" funding company investors product",
+        "\"Algorix\" \"$11.5M\" funding investors round",
+        "\"Algorix\" product customers case study",
+        "\"Algorix\" \"Algorix Raises $11.5M Series A Led by K2 Investment Partners, Bringing Total Funding to $14M - WOWTALE\" competitors product use case",
+        "\"Algorix\" \"$11.5M\" investor quote why invested",
+        "\"Algorix\" \"$11.5M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Algorix Raises $11.5M Series A Led by K2 Investment Partners, Bringing Total Funding to $14M - WOWTALE\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Algorix Raises $11.5M Series A Led by K2 Investment Partners, Bringing Total Funding to $14M - WOWTALE\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Algorix\" \"$11.5M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Algorix\" \"$11.5M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Algorix\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Algorix\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Algorix\" \"Algorix Raises $11.5M Series A Led by K2 Investment Partners, Bringing Total Funding to $14M - WOWTALE\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Algorix\" \"Algorix Raises $11.5M Series A Led by K2 Investment Partners, Bringing Total Funding to $14M - WOWTALE\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Algorix\" \"$11.5M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Algorix\" \"$11.5M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Algorix\" \"$11.5M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Algorix\" \"$11.5M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-08-22T00:25:07.082Z"
+    }
+  ]
+}

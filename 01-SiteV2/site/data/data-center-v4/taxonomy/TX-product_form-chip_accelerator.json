@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-21T02:05:12.052Z",
-    "latestDataDate": "2026-08-21",
-    "currentDate": "2026-08-21",
-    "eventCount": 2285,
-    "quarantinedEventCount": 20
+    "generatedAt": "2026-08-22T00:25:26.916Z",
+    "latestDataDate": "2026-08-22",
+    "currentDate": "2026-08-22",
+    "eventCount": 2307,
+    "quarantinedEventCount": 22
   },
   "node": {
     "id": "TX-product_form-chip_accelerator",
@@ -240,7 +240,7 @@
       "HW-4c176e4c40871adc"
     ],
     "firstSeen": "2025-03-18",
-    "lastSeen": "2026-08-21"
+    "lastSeen": "2026-08-22"
   },
   "events": [
     {
@@ -14801,9 +14801,9 @@
     },
     {
       "id": "EV-4c168759119d2668",
-      "dataDate": "2026-08-21",
+      "dataDate": "2026-08-22",
       "date": "2026-08-19",
-      "updatedDate": "2026-08-21",
+      "updatedDate": "2026-08-22",
       "eventType": "model_release",
       "eventTypeLabel": "模型发布",
       "eventGroup": "模型、产品与服务",
@@ -14933,9 +14933,9 @@
     },
     {
       "id": "EV-d93dd19a481307ec",
-      "dataDate": "2026-08-21",
+      "dataDate": "2026-08-22",
       "date": "2026-08-19",
-      "updatedDate": "2026-08-21",
+      "updatedDate": "2026-08-22",
       "eventType": "hardware_product",
       "eventTypeLabel": "硬件产品",
       "eventGroup": "AI 硬件",
@@ -15065,9 +15065,9 @@
     },
     {
       "id": "EV-eb3545d5948aa255",
-      "dataDate": "2026-08-21",
+      "dataDate": "2026-08-22",
       "date": "2026-08-19",
-      "updatedDate": "2026-08-21",
+      "updatedDate": "2026-08-22",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
@@ -22301,6 +22301,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
@@ -22308,26 +22309,24 @@
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-product_form-chip_accelerator",
-        "TX-industry-manufacturing",
         "TX-ai_market_application-chips"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-01",
-      "lastSeen": "2026-08-21"
+      "lastSeen": "2026-08-22"
     },
     {
       "id": "EN-8d4321d936320802",
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-b231e1a452a7c74a",
         "EV-c6d84982982597aa",
         "EV-181cd28d97c4e61d",
         "EV-e70a48e36e99d57a",
@@ -22383,6 +22382,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-afbcb331c874f648",
         "EV-5ac5368309eace1a",
         "EV-0a0fbf647a1f7b70",
         "EV-da148848ec026bdf",
@@ -22495,6 +22495,9 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-ce32954014cb030d",
+        "EV-3b30eda1326a6fb1",
+        "EV-84baa23ade7a80e3",
         "EV-cc9d9706f9b6c597",
         "EV-f819309f846d95bc",
         "EV-2449fe665b666581",
@@ -22510,19 +22513,19 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-product_form-model",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-ai_compute_system",
         "TX-target_user-developer",
-        "TX-use_case-software_development",
-        "TX-product_form-chip_accelerator",
         "TX-industry-telecommunications",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-business_user",
+        "TX-use_case-software_development",
+        "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
-        "TX-industry-manufacturing",
         "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-physical_automation",
@@ -22566,31 +22569,24 @@
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
-        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
-        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
-        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-171fa23d27b5894b"
+        "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-21"
+      "lastSeen": "2026-08-22"
     },
     {
       "id": "EN-240389f4b730bad4",
@@ -22635,11 +22631,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-product_form-model",
         "TX-product_form-ai_compute_system",
         "TX-use_case-software_development",
         "TX-product_form-chip_accelerator",
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
@@ -22696,13 +22692,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
-        "TX-product_form-chip_accelerator",
         "TX-industry-telecommunications",
         "TX-target_user-business_user",
-        "TX-industry-manufacturing",
+        "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
         "TX-industry-aerospace_defense",
         "TX-industry-automotive_transportation",
@@ -22778,14 +22774,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
-        "TX-use_case-software_development",
-        "TX-product_form-chip_accelerator",
         "TX-industry-telecommunications",
         "TX-target_user-business_user",
-        "TX-industry-manufacturing",
+        "TX-use_case-software_development",
+        "TX-product_form-chip_accelerator",
         "TX-industry-financial_services",
         "TX-use_case-research_discovery",
         "TX-ai_market_application-chips"
@@ -22815,12 +22811,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
-        "TX-product_form-chip_accelerator",
         "TX-industry-telecommunications",
-        "TX-industry-manufacturing",
+        "TX-product_form-chip_accelerator",
         "TX-industry-aerospace_defense",
         "TX-industry-automotive_transportation",
         "TX-industry-energy_utilities",
@@ -22896,12 +22892,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-product_form-chip_accelerator",
-        "TX-industry-manufacturing",
         "TX-industry-aerospace_defense",
         "TX-industry-automotive_transportation",
         "TX-target_user-researcher",
@@ -22994,12 +22990,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
-        "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
-        "TX-industry-manufacturing",
+        "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
@@ -23101,13 +23097,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-product_form-chip_accelerator",
-        "TX-industry-manufacturing",
         "TX-ai_market_application-chips"
       ],
       "relatedEntityIds": [],
@@ -23154,11 +23150,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
         "TX-product_form-chip_accelerator",
-        "TX-industry-manufacturing",
         "TX-industry-aerospace_defense",
         "TX-industry-automotive_transportation",
         "TX-ai_market_application-chips",
@@ -23187,10 +23183,10 @@
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
-        "TX-product_form-chip_accelerator",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-product_form-chip_accelerator",
         "TX-product_form-compute_cloud_service"
       ],
       "relatedEntityIds": [],
@@ -23212,14 +23208,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
-        "TX-use_case-software_development",
-        "TX-product_form-chip_accelerator",
         "TX-industry-telecommunications",
         "TX-target_user-business_user",
-        "TX-industry-manufacturing",
+        "TX-use_case-software_development",
+        "TX-product_form-chip_accelerator",
         "TX-industry-automotive_transportation",
         "TX-ai_market_application-chips"
       ],
@@ -23244,9 +23240,9 @@
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
-        "TX-product_form-chip_accelerator",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-business_user",
+        "TX-product_form-chip_accelerator",
         "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_application-model_deployment",
         "TX-technology-on_device",
@@ -23274,10 +23270,10 @@
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
-        "TX-use_case-software_development",
-        "TX-product_form-chip_accelerator",
         "TX-industry-telecommunications",
         "TX-target_user-business_user",
+        "TX-use_case-software_development",
+        "TX-product_form-chip_accelerator",
         "TX-industry-automotive_transportation",
         "TX-industry-retail_ecommerce",
         "TX-use_case-research_discovery",
@@ -23328,13 +23324,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
-        "TX-product_form-chip_accelerator",
         "TX-industry-telecommunications",
         "TX-target_user-business_user",
-        "TX-industry-manufacturing",
+        "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
         "TX-industry-aerospace_defense",
         "TX-ai_market_application-chips"
@@ -23358,9 +23354,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-product_form-model",
-        "TX-product_form-chip_accelerator",
-        "TX-industry-manufacturing"
+        "TX-product_form-chip_accelerator"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
@@ -23403,13 +23399,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-product_form-model",
         "TX-product_form-ai_compute_system",
         "TX-target_user-developer",
-        "TX-product_form-chip_accelerator",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-business_user",
-        "TX-industry-manufacturing",
+        "TX-product_form-chip_accelerator",
         "TX-product_form-compute_cloud_service",
         "TX-technology-agentic_execution",
         "TX-target_user-researcher",
@@ -23671,8 +23667,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
-        "TX-industry-manufacturing"
+        "TX-industry-manufacturing",
+        "TX-product_form-chip_accelerator"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-09",
@@ -23700,8 +23696,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
         "TX-product_form-ai_infrastructure_software",
+        "TX-product_form-chip_accelerator",
         "TX-technology-agentic_execution",
         "TX-deployment_model-on_premise"
       ],
@@ -23737,7 +23733,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-19",
-      "lastSeen": "2026-08-21"
+      "lastSeen": "2026-08-22"
     },
     {
       "id": "EN-83eb1cb31148698f",
@@ -23870,9 +23866,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
+        "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-product_form-chip_accelerator",
-        "TX-target_user-business_user",
         "TX-technology-code_generation",
         "TX-ai_market_category-enterprise_applications",
         "TX-industry-media_entertainment",
@@ -24490,6 +24486,9 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-07f531fe7a46ea43",
+        "EV-30211b84aacd0598",
+        "EV-a09f6e93ad868a57",
         "EV-8232ad0075a77b7a",
         "EV-3873f7ea8ac5a93f",
         "EV-d93dd19a481307ec",
@@ -24671,6 +24670,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-2e5333d00710ce65",
         "EV-da06805e06990d63",
         "EV-11a0afc2ecb6e42e",
         "EV-6610418ae1ced59f",
@@ -24746,10 +24746,10 @@
         "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
-        "TX-use_case-software_development",
-        "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-use_case-software_development",
+        "TX-product_form-chip_accelerator",
         "TX-product_form-compute_cloud_service",
         "TX-target_user-consumer",
         "TX-industry-healthcare_life_sciences",
@@ -24805,7 +24805,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-21"
+      "lastSeen": "2026-08-22"
     },
     {
       "id": "EN-042e9398f2cc8902",
@@ -24940,14 +24940,16 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-6993e6a7df339e59",
+        "EV-a09f6e93ad868a57",
         "EV-597a6d51533fe5d6",
         "EV-3873f7ea8ac5a93f",
         "EV-3e7db5b8d976bf0e",
         "EV-e3da5e799e746408",
         "EV-f9ebb480a6b58b21",
         "EV-46cd64a76d3767f5",
-        "EV-937b855e723d6ef0",
         "EV-d93dd19a481307ec",
+        "EV-937b855e723d6ef0",
         "EV-40d88f6279d48304",
         "EV-05fea7a5d8b8db46",
         "EV-06e31f68974104ec",
@@ -25128,6 +25130,9 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-2e5333d00710ce65",
+        "EV-ce32954014cb030d",
+        "EV-3b30eda1326a6fb1",
         "EV-00ffb2c501a37ec8",
         "EV-da06805e06990d63",
         "EV-0c00a6c681f22b98",
@@ -25201,10 +25206,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
-        "TX-use_case-software_development",
-        "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-use_case-software_development",
+        "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-ai_market_category-enterprise_applications",
         "TX-industry-media_entertainment",
@@ -25214,6 +25219,7 @@
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-customer_support",
         "TX-technology-agentic_execution",
+        "TX-product_form-developer_tool",
         "TX-industry-aerospace_defense",
         "TX-industry-professional_services",
         "TX-industry-retail_ecommerce",
@@ -25256,7 +25262,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-21"
+      "lastSeen": "2026-08-22"
     },
     {
       "id": "EN-b3e3bce83d29e787",
@@ -25500,9 +25506,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
-        "TX-product_form-chip_accelerator",
         "TX-product_form-ai_infrastructure_software",
-        "TX-target_user-business_user"
+        "TX-target_user-business_user",
+        "TX-product_form-chip_accelerator"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-27",
@@ -25566,11 +25572,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-product_form-chip_accelerator",
-        "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
@@ -25602,9 +25608,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-product_form-model",
         "TX-product_form-chip_accelerator",
-        "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
         "TX-industry-retail_ecommerce",
@@ -25887,7 +25893,7 @@
     {
       "id": "HW-da04d48165a60f76",
       "eventId": "EV-d93dd19a481307ec",
-      "dataDate": "2026-08-21",
+      "dataDate": "2026-08-22",
       "date": "2026-08-19",
       "title": "韩国首款主权 AI 一体机出货：国产芯片、国产 LLM 集成于单台服务器",
       "hardwareType": "ai_accelerator",
@@ -26976,13 +26982,13 @@
     {
       "id": "HWC-acba324ff85c02ba",
       "snapshotKey": "acba324ff85c02ba",
-      "snapshotId": "HWS-87548be385f8bfee",
+      "snapshotId": "HWS-e72c2ff7ba4bc51f",
       "eventId": "EV-d93dd19a481307ec",
       "eventIds": [
         "EV-d93dd19a481307ec"
       ],
-      "dataDate": "2026-08-21",
-      "date": "2026-08-21",
+      "dataDate": "2026-08-22",
+      "date": "2026-08-22",
       "title": "AI Appliance Ships / First Sovereign AI Appliance",
       "subject": "KT",
       "productNames": [
@@ -26997,12 +27003,21 @@
         "product": {
           "metric_value": "32",
           "unit": "billion",
-          "fact_ref": "HWF-5ebb3aa29cef2f23"
+          "fact_ref": "HWF-5c674d1ae883a4ea"
         }
       },
       "factCount": 2,
-      "snapshotCount": 2,
+      "snapshotCount": 3,
       "changes": [
+        {
+          "date": "2026-08-22",
+          "previousDate": "2026-08-21",
+          "snapshotId": "HWS-e72c2ff7ba4bc51f",
+          "previousSnapshotId": "HWS-87548be385f8bfee",
+          "changedFacts": [
+            "product"
+          ]
+        },
         {
           "date": "2026-08-21",
           "previousDate": "2026-08-20",
@@ -27017,8 +27032,8 @@
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-21",
-          "hardware_fact_id": "HWF-f38c695b37b07d50",
+          "data_date": "2026-08-22",
+          "hardware_fact_id": "HWF-81139681c39697ca",
           "fact_type": "product",
           "observed_at": "2026-08-19T15:50:41.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -27038,15 +27053,15 @@
           "event_refs": [
             "EV-d93dd19a481307ec"
           ],
-          "claim_ref": "CL-65fd81364cb539f2",
+          "claim_ref": "CL-c81ae41c15502690",
           "source_refs": [
             "SA-30a50d9be011e4c2"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-22/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-21",
-          "hardware_fact_id": "HWF-5ebb3aa29cef2f23",
+          "data_date": "2026-08-22",
+          "hardware_fact_id": "HWF-5c674d1ae883a4ea",
           "fact_type": "product",
           "observed_at": "2026-08-19T15:50:41.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -27066,11 +27081,11 @@
           "event_refs": [
             "EV-d93dd19a481307ec"
           ],
-          "claim_ref": "CL-68b2369bc3f9afde",
+          "claim_ref": "CL-21eb51218dce8285",
           "source_refs": [
             "SA-30a50d9be011e4c2"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-22/hardware-facts.json"
         }
       ],
       "capexFacts": [],
@@ -27088,13 +27103,13 @@
     {
       "id": "HWC-1d458fe0521f28c1",
       "snapshotKey": "1d458fe0521f28c1",
-      "snapshotId": "HWS-2dbe7feeec9426e2",
+      "snapshotId": "HWS-3e9f9f683fecf793",
       "eventId": "EV-4c168759119d2668",
       "eventIds": [
         "EV-4c168759119d2668"
       ],
-      "dataDate": "2026-08-21",
-      "date": "2026-08-21",
+      "dataDate": "2026-08-22",
+      "date": "2026-08-22",
       "title": "Korean AI / NPU LLM Station",
       "subject": "KT",
       "productNames": [
@@ -27109,18 +27124,28 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-88e7cb22452ee2d4"
+          "fact_ref": "HWF-79f941e4fccf5797"
         }
       },
       "factCount": 4,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-22",
+          "previousDate": "2026-08-21",
+          "snapshotId": "HWS-3e9f9f683fecf793",
+          "previousSnapshotId": "HWS-2dbe7feeec9426e2",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-21",
-          "hardware_fact_id": "HWF-886bd0fd5e40bf55",
+          "data_date": "2026-08-22",
+          "hardware_fact_id": "HWF-620286241dda693e",
           "fact_type": "product",
           "observed_at": "2026-08-19T00:30:44.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -27140,15 +27165,15 @@
           "event_refs": [
             "EV-4c168759119d2668"
           ],
-          "claim_ref": "CL-d9d15b5cc41e7ea7",
+          "claim_ref": "CL-642c0f71747c784b",
           "source_refs": [
             "SA-d59a2f78c6134a26"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-22/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-21",
-          "hardware_fact_id": "HWF-d1dd10ca23141b16",
+          "data_date": "2026-08-22",
+          "hardware_fact_id": "HWF-9c66542c9ec3319d",
           "fact_type": "product",
           "observed_at": "2026-08-19T00:30:44.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -27168,15 +27193,15 @@
           "event_refs": [
             "EV-4c168759119d2668"
           ],
-          "claim_ref": "CL-e9f330df24e0b7c2",
+          "claim_ref": "CL-25083c4ec3ede3c4",
           "source_refs": [
             "SA-d59a2f78c6134a26"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-22/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-21",
-          "hardware_fact_id": "HWF-009f4faedb11ee4c",
+          "data_date": "2026-08-22",
+          "hardware_fact_id": "HWF-3454f04381e7db0b",
           "fact_type": "product",
           "observed_at": "2026-08-19T00:30:44.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -27196,15 +27221,15 @@
           "event_refs": [
             "EV-4c168759119d2668"
           ],
-          "claim_ref": "CL-d7b9dba561b48d5f",
+          "claim_ref": "CL-ef5c0f336e15ea09",
           "source_refs": [
             "SA-d59a2f78c6134a26"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-22/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-21",
-          "hardware_fact_id": "HWF-88e7cb22452ee2d4",
+          "data_date": "2026-08-22",
+          "hardware_fact_id": "HWF-79f941e4fccf5797",
           "fact_type": "product",
           "observed_at": "2026-08-19T00:30:44.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -27224,11 +27249,11 @@
           "event_refs": [
             "EV-4c168759119d2668"
           ],
-          "claim_ref": "CL-bdb353c7641d013e",
+          "claim_ref": "CL-1182306e0cf275a8",
           "source_refs": [
             "SA-d59a2f78c6134a26"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-22/hardware-facts.json"
         }
       ],
       "capexFacts": [],
@@ -27243,13 +27268,13 @@
     {
       "id": "HWC-36adb2bcffad68b4",
       "snapshotKey": "36adb2bcffad68b4",
-      "snapshotId": "HWS-8876d719efa3b9d7",
+      "snapshotId": "HWS-97dd35e0f5a626ae",
       "eventId": "EV-eb3545d5948aa255",
       "eventIds": [
         "EV-eb3545d5948aa255"
       ],
-      "dataDate": "2026-08-21",
-      "date": "2026-08-21",
+      "dataDate": "2026-08-22",
+      "date": "2026-08-22",
       "title": "NPU LLM Station / Korean AI",
       "subject": "KT",
       "productNames": [
@@ -27264,18 +27289,28 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-dcefe3c8a4e0a412"
+          "fact_ref": "HWF-9ba804d98e817f05"
         }
       },
       "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-22",
+          "previousDate": "2026-08-21",
+          "snapshotId": "HWS-97dd35e0f5a626ae",
+          "previousSnapshotId": "HWS-8876d719efa3b9d7",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-21",
-          "hardware_fact_id": "HWF-dcefe3c8a4e0a412",
+          "data_date": "2026-08-22",
+          "hardware_fact_id": "HWF-9ba804d98e817f05",
           "fact_type": "product",
           "observed_at": "2026-08-19T05:17:03.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -27295,11 +27330,11 @@
           "event_refs": [
             "EV-eb3545d5948aa255"
           ],
-          "claim_ref": "CL-901f072b1497cfa2",
+          "claim_ref": "CL-c7c78a646c6d723d",
           "source_refs": [
             "SA-05fdc2e5095b6c7b"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-22/hardware-facts.json"
         }
       ],
       "capexFacts": [],

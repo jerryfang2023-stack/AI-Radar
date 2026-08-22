@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-21T02:05:12.052Z",
-    "latestDataDate": "2026-08-21",
-    "currentDate": "2026-08-21",
-    "eventCount": 2285,
-    "quarantinedEventCount": 20
+    "generatedAt": "2026-08-22T00:25:26.916Z",
+    "latestDataDate": "2026-08-22",
+    "currentDate": "2026-08-22",
+    "eventCount": 2307,
+    "quarantinedEventCount": 22
   },
   "entity": {
     "id": "EN-b563f0c46d6f78f8",
@@ -28,7 +28,7 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-19",
-    "lastSeen": "2026-08-21",
+    "lastSeen": "2026-08-22",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -44,7 +44,7 @@
     "timeline": [
       {
         "id": "EV-d93dd19a481307ec",
-        "dataDate": "2026-08-21",
+        "dataDate": "2026-08-22",
         "date": "2026-08-19",
         "eventType": "hardware_product",
         "eventTypeLabel": "硬件产品",
@@ -92,7 +92,7 @@
     {
       "id": "HW-da04d48165a60f76",
       "eventId": "EV-d93dd19a481307ec",
-      "dataDate": "2026-08-21",
+      "dataDate": "2026-08-22",
       "date": "2026-08-19",
       "title": "韩国首款主权 AI 一体机出货：国产芯片、国产 LLM 集成于单台服务器",
       "hardwareType": "ai_accelerator",
@@ -126,13 +126,13 @@
     {
       "id": "HWC-acba324ff85c02ba",
       "snapshotKey": "acba324ff85c02ba",
-      "snapshotId": "HWS-87548be385f8bfee",
+      "snapshotId": "HWS-e72c2ff7ba4bc51f",
       "eventId": "EV-d93dd19a481307ec",
       "eventIds": [
         "EV-d93dd19a481307ec"
       ],
-      "dataDate": "2026-08-21",
-      "date": "2026-08-21",
+      "dataDate": "2026-08-22",
+      "date": "2026-08-22",
       "title": "AI Appliance Ships / First Sovereign AI Appliance",
       "subject": "KT",
       "productNames": [
@@ -147,12 +147,21 @@
         "product": {
           "metric_value": "32",
           "unit": "billion",
-          "fact_ref": "HWF-5ebb3aa29cef2f23"
+          "fact_ref": "HWF-5c674d1ae883a4ea"
         }
       },
       "factCount": 2,
-      "snapshotCount": 2,
+      "snapshotCount": 3,
       "changes": [
+        {
+          "date": "2026-08-22",
+          "previousDate": "2026-08-21",
+          "snapshotId": "HWS-e72c2ff7ba4bc51f",
+          "previousSnapshotId": "HWS-87548be385f8bfee",
+          "changedFacts": [
+            "product"
+          ]
+        },
         {
           "date": "2026-08-21",
           "previousDate": "2026-08-20",
@@ -167,8 +176,8 @@
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-21",
-          "hardware_fact_id": "HWF-f38c695b37b07d50",
+          "data_date": "2026-08-22",
+          "hardware_fact_id": "HWF-81139681c39697ca",
           "fact_type": "product",
           "observed_at": "2026-08-19T15:50:41.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -188,15 +197,15 @@
           "event_refs": [
             "EV-d93dd19a481307ec"
           ],
-          "claim_ref": "CL-65fd81364cb539f2",
+          "claim_ref": "CL-c81ae41c15502690",
           "source_refs": [
             "SA-30a50d9be011e4c2"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-22/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-21",
-          "hardware_fact_id": "HWF-5ebb3aa29cef2f23",
+          "data_date": "2026-08-22",
+          "hardware_fact_id": "HWF-5c674d1ae883a4ea",
           "fact_type": "product",
           "observed_at": "2026-08-19T15:50:41.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -216,11 +225,11 @@
           "event_refs": [
             "EV-d93dd19a481307ec"
           ],
-          "claim_ref": "CL-68b2369bc3f9afde",
+          "claim_ref": "CL-21eb51218dce8285",
           "source_refs": [
             "SA-30a50d9be011e4c2"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-22/hardware-facts.json"
         }
       ],
       "capexFacts": [],

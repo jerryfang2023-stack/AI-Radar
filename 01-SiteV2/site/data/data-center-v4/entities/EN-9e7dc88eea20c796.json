@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-21T02:05:12.052Z",
-    "latestDataDate": "2026-08-21",
-    "currentDate": "2026-08-21",
-    "eventCount": 2285,
-    "quarantinedEventCount": 20
+    "generatedAt": "2026-08-22T00:25:26.916Z",
+    "latestDataDate": "2026-08-22",
+    "currentDate": "2026-08-22",
+    "eventCount": 2307,
+    "quarantinedEventCount": 22
   },
   "entity": {
     "id": "EN-9e7dc88eea20c796",
@@ -28,7 +28,7 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-19",
-    "lastSeen": "2026-08-21",
+    "lastSeen": "2026-08-22",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -44,7 +44,7 @@
     "timeline": [
       {
         "id": "EV-30585effe9134084",
-        "dataDate": "2026-08-21",
+        "dataDate": "2026-08-22",
         "date": "2026-08-19",
         "eventType": "model_release",
         "eventTypeLabel": "模型发布",
@@ -72,13 +72,13 @@
     {
       "id": "HWC-5ac213facc2c3cd8",
       "snapshotKey": "5ac213facc2c3cd8",
-      "snapshotId": "HWS-f9582fecd705dc90",
+      "snapshotId": "HWS-9196bfdd1148308c",
       "eventId": "EV-30585effe9134084",
       "eventIds": [
         "EV-30585effe9134084"
       ],
-      "dataDate": "2026-08-21",
-      "date": "2026-08-21",
+      "dataDate": "2026-08-22",
+      "date": "2026-08-22",
       "title": "Asia Business Daily / Sovereign AI / Integrating Domestic Semiconductor",
       "subject": "KT",
       "productNames": [
@@ -94,18 +94,28 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-3e0129a653706530"
+          "fact_ref": "HWF-27db206c4006f310"
         }
       },
       "factCount": 2,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-22",
+          "previousDate": "2026-08-21",
+          "snapshotId": "HWS-9196bfdd1148308c",
+          "previousSnapshotId": "HWS-f9582fecd705dc90",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-21",
-          "hardware_fact_id": "HWF-3ffd6dad21c7fd94",
+          "data_date": "2026-08-22",
+          "hardware_fact_id": "HWF-5d45695e089fce80",
           "fact_type": "product",
           "observed_at": "2026-08-19T00:58:01.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -127,15 +137,15 @@
           "event_refs": [
             "EV-30585effe9134084"
           ],
-          "claim_ref": "CL-45df5bcc6da59e59",
+          "claim_ref": "CL-d1e4ff6060149450",
           "source_refs": [
-            "SA-135eabd9dc1aca18"
+            "SA-20582ec09259c0a6"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-22/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-21",
-          "hardware_fact_id": "HWF-3e0129a653706530",
+          "data_date": "2026-08-22",
+          "hardware_fact_id": "HWF-27db206c4006f310",
           "fact_type": "product",
           "observed_at": "2026-08-19T00:58:01.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -157,11 +167,11 @@
           "event_refs": [
             "EV-30585effe9134084"
           ],
-          "claim_ref": "CL-052f1b9cc8482994",
+          "claim_ref": "CL-e2dd8ff3a4311b0c",
           "source_refs": [
-            "SA-135eabd9dc1aca18"
+            "SA-20582ec09259c0a6"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-22/hardware-facts.json"
         }
       ],
       "capexFacts": [],

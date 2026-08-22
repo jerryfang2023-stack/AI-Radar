@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-21T02:05:12.052Z",
-    "latestDataDate": "2026-08-21",
-    "currentDate": "2026-08-21",
-    "eventCount": 2285,
-    "quarantinedEventCount": 20
+    "generatedAt": "2026-08-22T00:25:26.916Z",
+    "latestDataDate": "2026-08-22",
+    "currentDate": "2026-08-22",
+    "eventCount": 2307,
+    "quarantinedEventCount": 22
   },
   "entity": {
     "id": "EN-c7fb6b39e587e345",
@@ -26,12 +26,12 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-product_form-ai_compute_system",
-      "TX-industry-manufacturing"
+      "TX-industry-manufacturing",
+      "TX-product_form-ai_compute_system"
     ],
     "relatedEntityIds": [],
-    "firstSeen": "2026-08-21",
-    "lastSeen": "2026-08-21",
+    "firstSeen": "2026-08-22",
+    "lastSeen": "2026-08-22",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -47,8 +47,8 @@
     "timeline": [
       {
         "id": "EV-ac069339ca20e4c6",
-        "dataDate": "2026-08-21",
-        "date": "2026-08-21",
+        "dataDate": "2026-08-22",
+        "date": "2026-08-22",
         "eventType": "hardware_deployment",
         "eventTypeLabel": "硬件部署",
         "eventGroup": "AI 硬件",
@@ -90,86 +90,13 @@
   "relationships": [],
   "taxonomyNodes": [
     {
-      "id": "TX-product_form-ai_compute_system",
-      "name": "AI 计算系统",
-      "nodeType": "product_form",
-      "typeLabel": "产品形态",
-      "valueId": "ai_compute_system",
-      "eventIds": [
-        "EV-19dd4c3a5dd5a94b",
-        "EV-4af14568b1bdeb35",
-        "EV-e70a48e36e99d57a",
-        "EV-4fbbf16279e27000",
-        "EV-f282ab8740ff0096",
-        "EV-7abd8ec418f1e7f3",
-        "EV-e9d06e8a06aa7318",
-        "EV-dbbe3fd637be213f",
-        "EV-44ec7c229995ca3c",
-        "EV-ac069339ca20e4c6",
-        "EV-0121f0a9e9a975ec",
-        "EV-a852dc0ca6011ff6",
-        "EV-c3b96b789b5bcafd",
-        "EV-b9a1cba0b59a5354",
-        "EV-ebdc37429f89b55a",
-        "EV-234ad54940674bf6",
-        "EV-ad8e1754463695fd",
-        "EV-5b16886442234f81",
-        "EV-451a70d4374c2818",
-        "EV-a6c4f879a58ababa",
-        "EV-140aab677738351f",
-        "EV-1dc482e2fe2f10bc",
-        "EV-7bc2e6744a92c81f",
-        "EV-5d50eb202b478bd4",
-        "EV-a67071a8550cb1be"
-      ],
-      "entityIds": [
-        "EN-9cb45a27a2808c01",
-        "EN-8d4321d936320802",
-        "EN-74b42431957780b9",
-        "EN-0995103010d39563",
-        "EN-4e4b333252f207fd",
-        "EN-bbdefa2950f49882",
-        "EN-cecdd8369134f75e",
-        "EN-c7fb6b39e587e345",
-        "EN-29b9f0cae32e7a8a",
-        "EN-c9e92f0b88c6456b",
-        "EN-54dfb14dcddad637",
-        "EN-772c171be4bf6551",
-        "EN-240389f4b730bad4",
-        "EN-bb144c85d7f4652d",
-        "EN-83eb1cb31148698f",
-        "EN-adb4b0aa1de289f9",
-        "EN-d7e81f6e7d39f00f",
-        "EN-98502f8f7e5e64cd",
-        "EN-a89a94ff38d4dc95"
-      ],
-      "fdeIds": [
-        "FDE-d1333c4e772841f2",
-        "FDE-dadf0e9572889d3d",
-        "FDE-856a0ed89c848048",
-        "FDE-b366647aabd8f450"
-      ],
-      "hardwareIds": [
-        "HW-68c81779533a3523",
-        "HW-304c6370cc157449",
-        "HW-a033b945449628d5",
-        "HW-c5a22adcc66136ed",
-        "HW-a7207541fe11bd3b",
-        "HW-25eea5677838fb54",
-        "HW-fda4fe26e7e80468",
-        "HW-fceac179a4df80f5",
-        "HW-9a39a7f449362f96"
-      ],
-      "firstSeen": "2026-05-08",
-      "lastSeen": "2026-08-21"
-    },
-    {
       "id": "TX-industry-manufacturing",
       "name": "制造业",
       "nodeType": "industry",
       "typeLabel": "行业",
       "valueId": "manufacturing",
       "eventIds": [
+        "EV-b231e1a452a7c74a",
         "EV-2f87750c33ee2d80",
         "EV-e70a48e36e99d57a",
         "EV-1765fd690cff1cac",
@@ -281,6 +208,7 @@
         "EV-dd62847548bb6ae3",
         "EV-8993e021ac17df4a",
         "EV-d01032735e07be2c",
+        "EV-c6db0183b314b5fe",
         "EV-0e9f000dd04fe04c",
         "EV-3ec034d25ba6a710",
         "EV-eae8f316bc05820b",
@@ -290,8 +218,8 @@
         "EV-2c7d13d234147817"
       ],
       "entityIds": [
-        "EN-2733b0272eaa721d",
         "EN-8d4321d936320802",
+        "EN-2733b0272eaa721d",
         "EN-2505fe8a9e908e04",
         "EN-fe301d1f025971a1",
         "EN-373da2ec629326c0",
@@ -399,7 +327,81 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-08-21"
+      "lastSeen": "2026-08-22"
+    },
+    {
+      "id": "TX-product_form-ai_compute_system",
+      "name": "AI 计算系统",
+      "nodeType": "product_form",
+      "typeLabel": "产品形态",
+      "valueId": "ai_compute_system",
+      "eventIds": [
+        "EV-19dd4c3a5dd5a94b",
+        "EV-4af14568b1bdeb35",
+        "EV-e70a48e36e99d57a",
+        "EV-4fbbf16279e27000",
+        "EV-f282ab8740ff0096",
+        "EV-7abd8ec418f1e7f3",
+        "EV-e9d06e8a06aa7318",
+        "EV-dbbe3fd637be213f",
+        "EV-44ec7c229995ca3c",
+        "EV-ac069339ca20e4c6",
+        "EV-0121f0a9e9a975ec",
+        "EV-a852dc0ca6011ff6",
+        "EV-c3b96b789b5bcafd",
+        "EV-b9a1cba0b59a5354",
+        "EV-ebdc37429f89b55a",
+        "EV-234ad54940674bf6",
+        "EV-ad8e1754463695fd",
+        "EV-5b16886442234f81",
+        "EV-451a70d4374c2818",
+        "EV-a6c4f879a58ababa",
+        "EV-140aab677738351f",
+        "EV-1dc482e2fe2f10bc",
+        "EV-7bc2e6744a92c81f",
+        "EV-5d50eb202b478bd4",
+        "EV-a67071a8550cb1be"
+      ],
+      "entityIds": [
+        "EN-9cb45a27a2808c01",
+        "EN-8d4321d936320802",
+        "EN-74b42431957780b9",
+        "EN-0995103010d39563",
+        "EN-4e4b333252f207fd",
+        "EN-bbdefa2950f49882",
+        "EN-cecdd8369134f75e",
+        "EN-c7fb6b39e587e345",
+        "EN-29b9f0cae32e7a8a",
+        "EN-c9e92f0b88c6456b",
+        "EN-54dfb14dcddad637",
+        "EN-772c171be4bf6551",
+        "EN-240389f4b730bad4",
+        "EN-bb144c85d7f4652d",
+        "EN-83eb1cb31148698f",
+        "EN-adb4b0aa1de289f9",
+        "EN-d7e81f6e7d39f00f",
+        "EN-98502f8f7e5e64cd",
+        "EN-a89a94ff38d4dc95"
+      ],
+      "fdeIds": [
+        "FDE-d1333c4e772841f2",
+        "FDE-dadf0e9572889d3d",
+        "FDE-856a0ed89c848048",
+        "FDE-b366647aabd8f450"
+      ],
+      "hardwareIds": [
+        "HW-68c81779533a3523",
+        "HW-304c6370cc157449",
+        "HW-a033b945449628d5",
+        "HW-c5a22adcc66136ed",
+        "HW-a7207541fe11bd3b",
+        "HW-25eea5677838fb54",
+        "HW-fda4fe26e7e80468",
+        "HW-fceac179a4df80f5",
+        "HW-9a39a7f449362f96"
+      ],
+      "firstSeen": "2026-05-08",
+      "lastSeen": "2026-08-22"
     }
   ],
   "fde": [],
@@ -407,8 +409,8 @@
     {
       "id": "HW-68c81779533a3523",
       "eventId": "EV-ac069339ca20e4c6",
-      "dataDate": "2026-08-21",
-      "date": "2026-08-21",
+      "dataDate": "2026-08-22",
+      "date": "2026-08-22",
       "title": "英业达启用大溪AI服务器制造中心，强化全球AI制造布局",
       "hardwareType": "server",
       "eventType": "hardware_deployment",
@@ -426,7 +428,7 @@
       "tags": [],
       "sourceUrl": "https://compal.com/en-us/media/343/ren-bao-da-xi-aisi-fu-qi-zhi-zao-zhong-xin-zheng",
       "sourceName": "compal.com",
-      "sourceDate": "2026-08-21",
+      "sourceDate": "2026-08-22",
       "entityIds": [
         "EN-c7fb6b39e587e345"
       ]
@@ -436,13 +438,13 @@
     {
       "id": "HWC-8d83782689e2c877",
       "snapshotKey": "8d83782689e2c877",
-      "snapshotId": "HWS-991957fc820af376",
+      "snapshotId": "HWS-335f47c169bd606d",
       "eventId": "EV-ac069339ca20e4c6",
       "eventIds": [
         "EV-ac069339ca20e4c6"
       ],
-      "dataDate": "2026-08-21",
-      "date": "2026-08-21",
+      "dataDate": "2026-08-22",
+      "date": "2026-08-22",
       "title": "Compal Electronics",
       "subject": "Compal Electronics",
       "productNames": [],
@@ -454,18 +456,28 @@
         "capacity": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-66472a2316bf9f86"
+          "fact_ref": "HWF-13a13669f6c61208"
         }
       },
       "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-22",
+          "previousDate": "2026-08-21",
+          "snapshotId": "HWS-335f47c169bd606d",
+          "previousSnapshotId": "HWS-991957fc820af376",
+          "changedFacts": [
+            "capacity"
+          ]
+        }
+      ],
       "capacityFacts": [
         {
-          "data_date": "2026-08-21",
-          "hardware_fact_id": "HWF-66472a2316bf9f86",
+          "data_date": "2026-08-22",
+          "hardware_fact_id": "HWF-13a13669f6c61208",
           "fact_type": "capacity",
-          "observed_at": "2026-08-21T00:22:06.673Z",
+          "observed_at": "2026-08-22T00:20:09.086Z",
           "subject_entity_id": "EN-c7fb6b39e587e345",
           "subject_name": "Compal Electronics",
           "product_entity_ids": [],
@@ -477,11 +489,11 @@
           "event_refs": [
             "EV-ac069339ca20e4c6"
           ],
-          "claim_ref": "CL-a4c1f0029071baf1",
+          "claim_ref": "CL-e3a31907e9762fde",
           "source_refs": [
             "SA-99ad72a7b3493a7f"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-22/hardware-facts.json"
         }
       ],
       "supplyFacts": [],

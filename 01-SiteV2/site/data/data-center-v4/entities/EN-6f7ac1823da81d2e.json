@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-21T02:05:12.052Z",
-    "latestDataDate": "2026-08-21",
-    "currentDate": "2026-08-21",
-    "eventCount": 2285,
-    "quarantinedEventCount": 20
+    "generatedAt": "2026-08-22T00:25:26.916Z",
+    "latestDataDate": "2026-08-22",
+    "currentDate": "2026-08-22",
+    "eventCount": 2307,
+    "quarantinedEventCount": 22
   },
   "entity": {
     "id": "EN-6f7ac1823da81d2e",
@@ -31,6 +31,7 @@
       "EV-0121f0a9e9a975ec",
       "EV-eda9fcba2f9fe358",
       "EV-3664fd6826c319bb",
+      "EV-a09f6e93ad868a57",
       "EV-5ede0f85a672441c",
       "EV-7b4c53084828d7e8",
       "EV-3fb3e2730da143f4",
@@ -83,7 +84,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-05-24",
-    "lastSeen": "2026-08-19",
+    "lastSeen": "2026-08-22",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -103,6 +104,7 @@
       ],
       "partnerships": [],
       "productsServices": [
+        "EV-a09f6e93ad868a57",
         "EV-5ede0f85a672441c",
         "EV-7b4c53084828d7e8",
         "EV-3fb3e2730da143f4",
@@ -142,6 +144,36 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-a09f6e93ad868a57",
+        "dataDate": "2026-08-22",
+        "date": "2026-08-21",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Deepseek发布实验性Flash视觉模型，在智能体基准测试中媲美Opus 4.8",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [
+              "EN-6f7ac1823da81d2e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-6f7ac1823da81d2e",
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d",
+          "EN-0f2f96366b64c65e"
+        ]
+      },
       {
         "id": "EV-0121f0a9e9a975ec",
         "dataDate": "2026-08-19",
@@ -1692,6 +1724,7 @@
       "typeLabel": "产品形态",
       "valueId": "model",
       "eventIds": [
+        "EV-b231e1a452a7c74a",
         "EV-b73d931bd6adb78d",
         "EV-bdcb22b1a53358f5",
         "EV-f5dd6dec49ad83aa",
@@ -1772,6 +1805,7 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-1fe1613825cae718",
         "EV-78651dfea74b4323",
         "EV-435ad78c9ec50025",
         "EV-b33e250220b91f9c",
@@ -1914,6 +1948,7 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-ce32954014cb030d",
         "EV-8aae4ba13db766a6",
         "EV-649481503cdb7736",
         "EV-75b1a6a12ce2f03f",
@@ -1934,6 +1969,7 @@
         "EV-5208aa6dcd06cecb"
       ],
       "entityIds": [
+        "EN-8d4321d936320802",
         "EN-7dd2a89f628d7525",
         "EN-67e8c106650aa683",
         "EN-c70eca6b0f88f44d",
@@ -1946,7 +1982,6 @@
         "EN-e647c818ac38b6ca",
         "EN-a5d2ae286d0d9e45",
         "EN-b0532e1af75cc4ab",
-        "EN-8d4321d936320802",
         "EN-7209ec6f68ac0bcd",
         "EN-d361e2fd6b342245",
         "EN-dc758ebb8ad248f8",
@@ -2094,7 +2129,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-21"
+      "lastSeen": "2026-08-22"
     },
     {
       "id": "TX-ai_market_category-infrastructure_compute",
@@ -2104,8 +2139,8 @@
       "valueId": "infrastructure_compute",
       "eventIds": [
         "EV-19dd4c3a5dd5a94b",
-        "EV-4af14568b1bdeb35",
         "EV-8cb4468fe881602b",
+        "EV-4af14568b1bdeb35",
         "EV-181cd28d97c4e61d",
         "EV-e70a48e36e99d57a",
         "EV-bdcb22b1a53358f5",
@@ -2384,7 +2419,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-21"
+      "lastSeen": "2026-08-22"
     },
     {
       "id": "TX-target_user-developer",
@@ -2725,7 +2760,7 @@
         "HW-304c6370cc157449"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-21"
+      "lastSeen": "2026-08-22"
     },
     {
       "id": "TX-use_case-software_development",
@@ -3132,6 +3167,8 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-6993e6a7df339e59",
+        "EV-afd50641f48c5e98",
         "EV-1ced8c8a0480d5c2",
         "EV-3873f7ea8ac5a93f",
         "EV-cd7ba52564d4091e",
@@ -3404,8 +3441,9 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
-        "EV-09a29379b6399236",
         "EV-2c17183b71d8b7d1",
+        "EV-ce32954014cb030d",
+        "EV-09a29379b6399236",
         "EV-9db14ad0d6fe3135",
         "EV-7a3a3754522828e1",
         "EV-67a7a3c9f1eabd22",
@@ -3576,6 +3614,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-3ebe8498fb071652",
         "EN-877c3aec832cd410",
         "EN-59bba357145ca539",
         "EN-e3ce9cc5efa9354c",
@@ -3720,9 +3759,9 @@
         "EN-b7bea343b08cce2c",
         "EN-fdb2cc367267ac57",
         "EN-4a639cb888a15d75",
-        "EN-11507a0e2f5e69d5",
         "EN-0616a267820d2c78",
         "EN-286a3c612017ad1d",
+        "EN-11507a0e2f5e69d5",
         "EN-16478186eeecf696",
         "EN-f90aec90acf3dc85",
         "EN-96045bee6a2d2527",
@@ -4157,6 +4196,7 @@
         "EV-26d2874c6ce028d6",
         "EV-3d9aa640411471ea",
         "EV-fd21441fb6e143c3",
+        "EV-a09f6e93ad868a57",
         "EV-78651dfea74b4323",
         "EV-7c53df0cdea33936",
         "EV-2fa8fef6da3a5937",
@@ -4210,6 +4250,7 @@
         "EN-b81c8201acfc7639",
         "EN-87c730bc4f32459e",
         "EN-7df09a7717ef2feb",
+        "EN-6f7ac1823da81d2e",
         "EN-a658fbc24f5e3832",
         "EN-ea3bd73e2b506e00",
         "EN-6c87e5496f592f3c",
@@ -4223,7 +4264,6 @@
         "EN-3c6d89173e6636d7",
         "EN-4b078b39d2fcacc7",
         "EN-522d3edeb64a7ca4",
-        "EN-6f7ac1823da81d2e",
         "EN-de6b71bf77ff4299",
         "EN-8d4321d936320802",
         "EN-7d3194f79e645c42",
@@ -4244,7 +4284,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-21"
+      "lastSeen": "2026-08-22"
     },
     {
       "id": "TX-technology-on_device",

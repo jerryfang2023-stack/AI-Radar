@@ -1,6 +1,6 @@
 {
   "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
-  "generated_at": "2026-08-21T02:11:59.594Z",
+  "generated_at": "2026-08-22T00:25:18.697Z",
   "entries": {
     "funding_card|cards[0].metrics[0].label|deb8c07b5be9dbc7e437cff0b0ce9c1acc44eb7c12ad444e80a12c29bba9b9f6": {
       "entity_type": "funding_card",
@@ -7968,6 +7968,102 @@
       "provider": "deepseek",
       "model": "deepseek-v4-flash",
       "translated_at": "2026-08-21T02:11:59.594Z",
+      "status": "translated"
+    },
+    "funding_card|cards[0].company.headquarters|87e5d6a364f14176e37fda6fcf39c555a49443b2383b8578d6d8cce030b2f931": {
+      "entity_type": "funding_card",
+      "field_name": "headquarters",
+      "field_path": "cards[0].company.headquarters",
+      "source_text": "Redmond, Washington",
+      "source_hash": "87e5d6a364f14176e37fda6fcf39c555a49443b2383b8578d6d8cce030b2f931",
+      "text": "华盛顿州雷德蒙德",
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "translated_at": "2026-08-22T00:25:18.697Z",
+      "status": "translated"
+    },
+    "funding_card|cards[0].company.founders[2].role|30f3850382eb8313158f70553ec65f70837c4bfb7013479387e790c4d71e66e9": {
+      "entity_type": "funding_card",
+      "field_name": "role",
+      "field_path": "cards[0].company.founders[2].role",
+      "source_text": "Co-Founder & Chief Engineer",
+      "source_hash": "30f3850382eb8313158f70553ec65f70837c4bfb7013479387e790c4d71e66e9",
+      "text": "联合创始人兼首席工程师",
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "translated_at": "2026-08-22T00:25:18.697Z",
+      "status": "translated"
+    },
+    "funding_card|cards[0].products[0].features[1]|25b7b4e074f122ba713d9e79c894a830eae95d0b05dbd6a10d6145261c62b975": {
+      "entity_type": "funding_card",
+      "field_name": "features",
+      "field_path": "cards[0].products[0].features[1]",
+      "source_text": "搭载NVIDIA H100 GPU",
+      "source_hash": "25b7b4e074f122ba713d9e79c894a830eae95d0b05dbd6a10d6145261c62b975",
+      "text": "搭载NVIDIA H100 GPU",
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "translated_at": "2026-08-22T00:25:18.697Z",
+      "status": "translated"
+    },
+    "funding_card|cards[0].metrics[6].label|6e5839e389651848c8500e6728ff5a52185fb16b0426d218d194d1b548630bfe": {
+      "entity_type": "funding_card",
+      "field_name": "label",
+      "field_path": "cards[0].metrics[6].label",
+      "source_text": "Nvidia投资金额",
+      "source_hash": "6e5839e389651848c8500e6728ff5a52185fb16b0426d218d194d1b548630bfe",
+      "text": "Nvidia投资金额",
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "translated_at": "2026-08-22T00:25:18.697Z",
+      "status": "translated"
+    },
+    "funding_card|cards[0].metrics[7].label|3f7511c408199f34fdb22ecb0f185980337b368f41a251e79de3139fc541eb93": {
+      "entity_type": "funding_card",
+      "field_name": "label",
+      "field_path": "cards[0].metrics[7].label",
+      "source_text": "Starcloud-2功率",
+      "source_hash": "3f7511c408199f34fdb22ecb0f185980337b368f41a251e79de3139fc541eb93",
+      "text": "Starcloud-2功率",
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "translated_at": "2026-08-22T00:25:18.697Z",
+      "status": "translated"
+    },
+    "funding_card|cards[1].metrics[1].label|1b8676acb1d31acebde836aba0902495fc2c873662b7882c04f2af914a126a09": {
+      "entity_type": "funding_card",
+      "field_name": "label",
+      "field_path": "cards[1].metrics[1].label",
+      "source_text": "Project Glasswing 直接捐款",
+      "source_hash": "1b8676acb1d31acebde836aba0902495fc2c873662b7882c04f2af914a126a09",
+      "text": "Project Glasswing 直接捐款",
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "translated_at": "2026-08-22T00:25:18.697Z",
+      "status": "translated"
+    },
+    "funding_card|cards[1].metrics[2].label|f8f322525c44c33c1f13792c744b56e45f0ef4c3831b67c6ec5c6c77171bf8ab": {
+      "entity_type": "funding_card",
+      "field_name": "label",
+      "field_path": "cards[1].metrics[2].label",
+      "source_text": "Project Glasswing 使用额度",
+      "source_hash": "f8f322525c44c33c1f13792c744b56e45f0ef4c3831b67c6ec5c6c77171bf8ab",
+      "text": "Project Glasswing 使用额度",
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "translated_at": "2026-08-22T00:25:18.697Z",
+      "status": "translated"
+    },
+    "funding_card|cards[2].financing.other_round_investors[0].role|0f1cfe17133c91463d060b8e722b5fbf4a1a35a1a3ea058c3be40fcc8fbfe311": {
+      "entity_type": "funding_card",
+      "field_name": "role",
+      "field_path": "cards[2].financing.other_round_investors[0].role",
+      "source_text": "pre-seed轮投资方",
+      "source_hash": "0f1cfe17133c91463d060b8e722b5fbf4a1a35a1a3ea058c3be40fcc8fbfe311",
+      "text": "pre-seed轮投资方",
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "translated_at": "2026-08-22T00:25:18.697Z",
       "status": "translated"
     }
   }
