@@ -14,7 +14,8 @@
       "blocked": 0,
       "pending": 0,
       "deduplicated": 2
-    }
+    },
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
@@ -775,18 +776,22 @@
         ],
         "related_direction_id": "",
         "taxonomy_version": "TAG-V4.1",
-        "product_form_id": "ai_infrastructure_software",
+        "product_form_id": "ai_compute_system",
         "market_category_id": "infrastructure_compute",
         "market_subcategory_id": "hardware_computing",
         "market_application_id": "computing_infrastructure",
         "use_case_ids": [
-          "data_analysis"
+          "data_analysis",
+          "research_discovery"
         ],
         "industry_ids": [
-          "government_public_sector"
+          "government_public_sector",
+          "telecommunications",
+          "aerospace_defense"
         ],
         "target_user_ids": [
-          "business_user",
+          "developer",
+          "researcher",
           "public_sector_user"
         ],
         "sector": "轨道数据中心与空间计算基础设施",
@@ -1140,7 +1145,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 2,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-22T00:25:07.062Z"
+        "generated_at": "2026-08-22T00:25:07.062Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-259566f35ea4f66d",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1627,11 +1640,12 @@
           "financial_services",
           "manufacturing",
           "telecommunications",
-          "aerospace_defense"
+          "government_public_sector",
+          "automotive_transportation"
         ],
         "target_user_ids": [
-          "business_user",
-          "developer"
+          "developer",
+          "business_user"
         ],
         "sector": "企业级AI数据基础设施",
         "investment_thesis": {
@@ -1803,7 +1817,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-22T00:24:29.993Z"
+        "generated_at": "2026-08-22T00:24:29.993Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-1bc31f98fa3e34cc",
+          "confidence": 0.85,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -2062,14 +2084,19 @@
         "taxonomy_version": "TAG-V4.1",
         "product_form_id": "end_user_application",
         "market_category_id": "infrastructure_compute",
-        "market_subcategory_id": "development_deployment",
-        "market_application_id": "models",
+        "market_subcategory_id": "observability_evaluation",
+        "market_application_id": "model_agent_security",
         "use_case_ids": [
-          "security_operations"
+          "security_operations",
+          "software_development"
         ],
-        "industry_ids": [],
+        "industry_ids": [
+          "professional_services",
+          "government_public_sector"
+        ],
         "target_user_ids": [
-          "developer"
+          "developer",
+          "business_user"
         ],
         "sector": "网络安全与开源软件安全",
         "investment_thesis": {
@@ -2137,7 +2164,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-22T00:23:59.824Z"
+        "generated_at": "2026-08-22T00:23:59.824Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-8ad153b984ba8729",
+          "confidence": 0.7,
+          "needs_review": true
+        }
       },
       "auto_publish_gate": {
         "passed": true,

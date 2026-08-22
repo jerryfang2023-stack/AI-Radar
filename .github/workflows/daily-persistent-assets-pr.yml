@@ -488,12 +488,26 @@ jobs:
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-funding-insights.log"
           node agent-workflow/tools/assert-funding-insights-v1.mjs --date="${RUN_DATE}"
           node 01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs
+          npm run build:investment-institutions
+          npm run assert:investment-institutions
           npm run build:data-center-site
           npm run translate:public-structured-fields
           node 01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs
+          npm run classify:funding-taxonomy-v4.1 -- --write=true --apply=true
+          npm run project:funding-taxonomy-events
+          node 01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs
+          node agent-workflow/tools/sync-light-data-lake.mjs --v4-only=true --duckdb=skip
+          node agent-workflow/tools/assert-data-lake-v4.mjs --duckdb=skip
+          npm run build:investment-institutions
+          npm run assert:investment-institutions
           npm run build:data-center-site
+          npm run build:trend-radar-site
+          npm run assert:trend-radar
+          npm run build:opportunity-map-site
           node agent-workflow/tools/assert-funding-insights-v1.mjs --all=true --frontstage=true
           npm run test:funding-insights
+          npm run assert:taxonomy-consistency
+          node agent-workflow/tools/frontstage-regression-gate.mjs
 
       - name: Record funding supply health
         id: funding-source-health
@@ -710,9 +724,18 @@ jobs:
           fi
 
           if [ "${{ steps.funding-insights.outcome }}" = "success" ]; then
+            git add \
+              ":(glob)01-SiteV2/content/11-databases/data-center-v4/*/manifest.json" \
+              ":(glob)01-SiteV2/content/11-databases/data-center-v4/*/reviewed-event-classifications.json"
             stage_if_exists "01-SiteV2/content/12-applications/funding-insights/${RUN_DATE}.json"
             stage_if_exists "01-SiteV2/content/12-applications/funding-insights/entity-review-queue.json"
+            stage_if_exists "01-SiteV2/content/12-applications/funding-insights/taxonomy-decisions-v4-1.json"
+            stage_if_exists "01-SiteV2/content/11-databases/investment-institutions-v1.json"
             stage_if_exists "01-SiteV2/site/data/funding-insights-v1.json"
+            stage_if_exists "01-SiteV2/site/data/data-center-v4-frontstage.json"
+            stage_if_exists "01-SiteV2/site/data/data-center-v4"
+            stage_if_exists "01-SiteV2/site/data/trend-radar-v1.json"
+            stage_if_exists "01-SiteV2/site/data/opportunity-evidence-v2.json"
           fi
 
           if [ "${{ steps.opportunity-map-v4.outcome }}" = "success" ]; then

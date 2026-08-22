@@ -200,6 +200,23 @@
         "quote": "Sycamore is building the trusted operating system for autonomous enterprise AI."
       },
       "rationale": "三条同日同额种子轮披露均指向 Sycamore，标题描述不作为独立公司。"
+    },
+    {
+      "decision_id": "FICID-HIGGSFIELD",
+      "entity_id": "FICO-50b2676afbe30c83",
+      "application_entity_id": "EN-50b2676afbe30c83",
+      "current": { "name": "Higgsfield Inc.", "catalog_type": "company" },
+      "match_names": ["Higgsfield", "Higgsfield Inc."],
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": { "name": "Higgsfield", "catalog_type": "company" },
+      "review_status": "accepted",
+      "reviewed_at": "2026-08-22",
+      "evidence": {
+        "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
+        "quote": "Higgsfield Inc., a generative artificial intelligence video and image creation platform for professionals"
+      },
+      "rationale": "2026-08-22 Data Center 已按同名融资证据建立 Higgsfield 规范候选实体；将历史融资应用身份 FICO-50b2676afbe30c83 对齐到该实体，避免分类投影目标漂移。"
     }
   ]
 }

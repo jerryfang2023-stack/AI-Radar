@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-22T00:25:26.916Z",
+    "latestDataDate": "2026-08-22",
+    "currentDate": "2026-08-22",
+    "eventCount": 2307,
+    "quarantinedEventCount": 22
+  },
+  "institution": {
+    "id": "INV-46d04809744df9",
+    "name": "Kevin Johnson",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-08-21",
+    "latest_disclosed_at": "2026-08-21",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-73bac7f2dd4064f7",
+        "funding_insight_id": "FI-8a42f200f5caa9f3",
+        "event_ids": [
+          "EV-259566f35ea4f66d"
+        ],
+        "company_entity_id": "EN-607a596a603dd679",
+        "company_canonical_entity_id": "",
+        "company_name": "Starcloud",
+        "round": "A轮扩展",
+        "round_code": "series_a_extension",
+        "round_original": "A轮扩展",
+        "amount_original": "$250 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "announced_at": "2026-08-21",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-64c63dc926fc8a24",
+            "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+            "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+            "source_content_hash": "10f88a25e3d2c819",
+            "quote": "Angel investors joining the round included former Boeing CEO Dennis Muilenburg, former Starbucks CEO Kevin Johnson and retired U.S. Air Force Gen. Stephen Wilson.",
+            "quote_hash": "0002df1f0ce504a676981ee2c44db107a7be1633f99c52a23dfb40557e754c3c"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-64c63dc926fc8a24",
+        "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+        "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+        "source_content_hash": "10f88a25e3d2c819",
+        "quote": "Angel investors joining the round included former Boeing CEO Dennis Muilenburg, former Starbucks CEO Kevin Johnson and retired U.S. Air Force Gen. Stephen Wilson.",
+        "quote_hash": "0002df1f0ce504a676981ee2c44db107a7be1633f99c52a23dfb40557e754c3c"
+      }
+    ]
+  }
+}

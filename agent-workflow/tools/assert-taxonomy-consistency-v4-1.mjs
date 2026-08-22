@@ -10,7 +10,10 @@ import {
   taxonomyEvidenceSegmentRelevant,
   taxonomyMatchers,
 } from "./build-data-center-v4.mjs";
-import { acceptedFundingCompanyIdentityDecisions } from "./funding-insight-v1-utils.mjs";
+import {
+  acceptedFundingCompanyIdentityDecisions,
+  acceptedFundingCompanyIdentityForCard,
+} from "./funding-insight-v1-utils.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const retiredValues = new Set([
@@ -182,8 +185,12 @@ export function taxonomyConsistencyProblems(rootDir = root) {
     }
     const targetEntityId = rows[0]?.entity_id || "";
     const sourceCardNameKey = String(card.company?.full_name || card.company?.name || "").normalize("NFKC").toLocaleLowerCase().trim();
+    const reviewedCompany = acceptedFundingCompanyIdentityForCard(companyIdentityReview, card.company, reviewedCompanies);
+    const reviewedCanonicalEntityId = reviewedCompany && !reviewedCompany.id.startsWith("FICO-")
+      ? reviewedCompany.id
+      : "";
     const sourceCardEntityId = canonicalCompanyByName.get(sourceCardNameKey)
-      || reviewedCompanies.get(card.company?.entity_id)?.id
+      || reviewedCanonicalEntityId
       || card.company?.entity_id;
     if (sourceCardEntityId !== targetEntityId) failures.push(`${decision.event_id}: Funding Insight target entity drift`);
     for (const [field, expectedValue] of [

@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-22T00:25:26.916Z",
+    "latestDataDate": "2026-08-22",
+    "currentDate": "2026-08-22",
+    "eventCount": 2307,
+    "quarantinedEventCount": 22
+  },
+  "institution": {
+    "id": "INV-5b254c14a17050",
+    "name": "A Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "first_disclosed_at": "2026-08-14",
+    "latest_disclosed_at": "2026-08-14",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "multi_round"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-e4a72fa4f054e9be",
+        "canonical_entity_id": "",
+        "name": "Algorix"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-ab02ac73949eecdb",
+        "funding_insight_id": "FI-aff7d85b56aff6b0",
+        "event_ids": [
+          "EV-1bc31f98fa3e34cc"
+        ],
+        "company_entity_id": "EN-e4a72fa4f054e9be",
+        "company_canonical_entity_id": "",
+        "company_name": "Algorix",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$11.5M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 11500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1150 万美元"
+        },
+        "announced_at": "2026-08-14",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4e441239551a1fd6",
+            "source_url": "https://en.wowtale.net/2026/08/14/234729/",
+            "source_title": "Algorix 完成1150万美元A轮融资，由K2 Investment Partners领投，总融资额达1400万美元",
+            "source_content_hash": "4e6014655ea683a8",
+            "quote": "A Ventures and GU Equity Partners joined as new investors",
+            "quote_hash": "743fd2dbf3333a810f80dc660202cf0502afc2a9e6aa8ef7d418fb8dc074c190"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-4e441239551a1fd6",
+        "source_url": "https://en.wowtale.net/2026/08/14/234729/",
+        "source_title": "Algorix 完成1150万美元A轮融资，由K2 Investment Partners领投，总融资额达1400万美元",
+        "source_content_hash": "4e6014655ea683a8",
+        "quote": "A Ventures and GU Equity Partners joined as new investors",
+        "quote_hash": "743fd2dbf3333a810f80dc660202cf0502afc2a9e6aa8ef7d418fb8dc074c190"
+      }
+    ]
+  }
+}

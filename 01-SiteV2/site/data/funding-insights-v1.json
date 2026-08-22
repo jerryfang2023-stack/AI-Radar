@@ -1105,18 +1105,22 @@
         ],
         "related_direction_id": "",
         "taxonomy_version": "TAG-V4.1",
-        "product_form_id": "ai_infrastructure_software",
+        "product_form_id": "ai_compute_system",
         "market_category_id": "infrastructure_compute",
         "market_subcategory_id": "hardware_computing",
         "market_application_id": "computing_infrastructure",
         "use_case_ids": [
-          "data_analysis"
+          "data_analysis",
+          "research_discovery"
         ],
         "industry_ids": [
-          "government_public_sector"
+          "government_public_sector",
+          "telecommunications",
+          "aerospace_defense"
         ],
         "target_user_ids": [
-          "business_user",
+          "developer",
+          "researcher",
           "public_sector_user"
         ],
         "sector": "轨道数据中心与空间计算基础设施",
@@ -1471,7 +1475,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 2,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-22T00:25:07.062Z"
+        "generated_at": "2026-08-22T00:25:07.062Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-259566f35ea4f66d",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1547,8 +1559,8 @@
       },
       "product_form": {
         "dimension": "product_form",
-        "id": "ai_infrastructure_software",
-        "name": "AI 基础设施软件",
+        "id": "ai_compute_system",
+        "name": "AI 计算系统",
         "method": "card_explicit",
         "decision_id": ""
       },
@@ -1875,14 +1887,19 @@
         "taxonomy_version": "TAG-V4.1",
         "product_form_id": "end_user_application",
         "market_category_id": "infrastructure_compute",
-        "market_subcategory_id": "development_deployment",
-        "market_application_id": "models",
+        "market_subcategory_id": "observability_evaluation",
+        "market_application_id": "model_agent_security",
         "use_case_ids": [
-          "security_operations"
+          "security_operations",
+          "software_development"
         ],
-        "industry_ids": [],
+        "industry_ids": [
+          "professional_services",
+          "government_public_sector"
+        ],
         "target_user_ids": [
-          "developer"
+          "developer",
+          "business_user"
         ],
         "sector": "网络安全与开源软件安全",
         "investment_thesis": {
@@ -1955,7 +1972,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-22T00:23:59.824Z"
+        "generated_at": "2026-08-22T00:23:59.824Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-8ad153b984ba8729",
+          "confidence": 0.7,
+          "needs_review": true
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -2039,14 +2064,14 @@
       },
       "market_subcategory": {
         "dimension": "ai_market_subcategory",
-        "id": "development_deployment",
-        "name": "开发与部署",
+        "id": "observability_evaluation",
+        "name": "可观测与评估",
         "method": "card_explicit"
       },
       "market_application": {
         "dimension": "ai_market_application",
-        "id": "models",
-        "name": "模型",
+        "id": "model_agent_security",
+        "name": "模型与智能体安全",
         "method": "card_explicit"
       },
       "links": {
@@ -2542,11 +2567,12 @@
           "financial_services",
           "manufacturing",
           "telecommunications",
-          "aerospace_defense"
+          "government_public_sector",
+          "automotive_transportation"
         ],
         "target_user_ids": [
-          "business_user",
-          "developer"
+          "developer",
+          "business_user"
         ],
         "sector": "企业级AI数据基础设施",
         "investment_thesis": {
@@ -2722,7 +2748,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-22T00:24:29.993Z"
+        "generated_at": "2026-08-22T00:24:29.993Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-1bc31f98fa3e34cc",
+          "confidence": 0.85,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -6490,12 +6524,12 @@
     },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-a9ab795d8c87d3e9",
+      "funding_insight_id": "FI-94c0eaa68ec2b037",
       "triggered_by_event_id": "EV-1dba157815d84342",
       "as_of_date": "2026-08-18",
       "company": {
-        "entity_id": "FICO-50b2676afbe30c83",
-        "name": "Higgsfield Inc.",
+        "entity_id": "EN-50b2676afbe30c83",
+        "name": "Higgsfield",
         "full_name": "Higgsfield Inc.",
         "website": "https://higgsfield.ai",
         "summary": "Higgsfield 是一家总部位于旧金山的生成式 AI 视频与图像创作平台，面向专业创作者、品牌、代理商和工作室，提供视觉推理引擎，聚合自有及第三方模型，实现角色与场景一致性、电影级视频生成和营销工作流自动化。",
@@ -6560,8 +6594,8 @@
             "quote_hash": "abc3f32951b307960dc885754e01adb929b813a71d62f0958ded9ee836510922"
           }
         ],
-        "application_entity_id": "FICO-50b2676afbe30c83",
-        "canonical_entity_consistent": false
+        "application_entity_id": "EN-50b2676afbe30c83",
+        "canonical_entity_consistent": true
       },
       "financing": {
         "round": "B轮",
@@ -7789,13 +7823,13 @@
         "EV-1dba157815d84342"
       ],
       "aggregation": {
-        "key": "FICO-50b2676afbe30c83|series_b|USD:exact:400000000:::|2026-08-17",
+        "key": "EN-50b2676afbe30c83|series_b|USD:exact:400000000:::|2026-08-17",
         "event_count": 1,
         "strategy": "reviewed_company_round_date_and_normalized_amount"
       },
       "historical_rounds": [
         {
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],

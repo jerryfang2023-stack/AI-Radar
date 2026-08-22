@@ -1,12 +1,12 @@
 {
   "meta": {
     "schema_version": "INVESTMENT-INSTITUTION-V1.0",
-    "generated_at": "2026-08-21T01:59:26.902Z",
+    "generated_at": "2026-08-22T00:25:07.083Z",
     "source_contract": "FUNDING-INSIGHT-V1.3",
-    "institution_count": 1291,
-    "evidence_backed_count": 1291,
-    "current_round_activity_count": 1498,
-    "individual_investor_count": 179,
+    "institution_count": 1314,
+    "evidence_backed_count": 1314,
+    "current_round_activity_count": 1515,
+    "individual_investor_count": 182,
     "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
   },
   "institutions": [
@@ -22,12 +22,12 @@
       "classification_confidence": "evidence_bounded",
       "collection_status": "evidence_backed",
       "current_round_count": 24,
-      "historical_or_ambiguous_count": 4,
+      "historical_or_ambiguous_count": 5,
       "portfolio_company_count": 23,
       "first_disclosed_at": "2023-04-27",
-      "latest_disclosed_at": "2026-08-12",
+      "latest_disclosed_at": "2026-08-21",
       "role_counts": {
-        "historical_or_ambiguous": 4,
+        "historical_or_ambiguous": 5,
         "lead": 2,
         "participant": 22
       },
@@ -157,6 +157,44 @@
         }
       ],
       "activities": [
+        {
+          "activity_id": "IA-42acb4da6b5a36b3",
+          "funding_insight_id": "FI-8a42f200f5caa9f3",
+          "event_ids": [
+            "EV-259566f35ea4f66d"
+          ],
+          "company_entity_id": "EN-607a596a603dd679",
+          "company_canonical_entity_id": "",
+          "company_name": "Starcloud",
+          "round": "A轮扩展",
+          "round_code": "series_a_extension",
+          "round_original": "A轮扩展",
+          "amount_original": "$250 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 250000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.5 亿美元"
+          },
+          "announced_at": "2026-08-21",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "历史轮次参投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-64c63dc926fc8a24",
+              "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+              "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+              "source_content_hash": "10f88a25e3d2c819",
+              "quote": "Additional investors included NFX, Nebular, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West and Monolith Power Systems, alongside Y Combinator.",
+              "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
+            }
+          ]
+        },
         {
           "activity_id": "IA-1df9856e95e338a5",
           "funding_insight_id": "FI-8ec3b23d30c575bf",
@@ -1247,6 +1285,14 @@
         }
       ],
       "evidence": [
+        {
+          "source_id": "FISRC-64c63dc926fc8a24",
+          "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+          "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+          "source_content_hash": "10f88a25e3d2c819",
+          "quote": "Additional investors included NFX, Nebular, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West and Monolith Power Systems, alongside Y Combinator.",
+          "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
+        },
         {
           "source_id": "FISRC-ba55b463daced495",
           "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
@@ -2686,20 +2732,21 @@
       "investor_kind_label": "企业投资方",
       "classification_confidence": "evidence_bounded",
       "collection_status": "evidence_backed",
-      "current_round_count": 13,
+      "current_round_count": 14,
       "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 12,
+      "portfolio_company_count": 13,
       "first_disclosed_at": "2025-09-09",
-      "latest_disclosed_at": "2026-08-19",
+      "latest_disclosed_at": "2026-08-21",
       "role_counts": {
         "historical_or_ambiguous": 1,
         "lead": 1,
-        "participant": 12
+        "participant": 13
       },
       "round_codes": [
         "multi_round",
         "seed",
         "series_a",
+        "series_a_extension",
         "series_c",
         "series_f",
         "series_g",
@@ -2757,6 +2804,11 @@
           "name": "River AI"
         },
         {
+          "entity_id": "EN-607a596a603dd679",
+          "canonical_entity_id": "",
+          "name": "Starcloud"
+        },
+        {
           "entity_id": "EN-816bab802b34b308",
           "canonical_entity_id": "",
           "name": "Together AI"
@@ -2768,6 +2820,44 @@
         }
       ],
       "activities": [
+        {
+          "activity_id": "IA-a2e8ac368950fa78",
+          "funding_insight_id": "FI-8a42f200f5caa9f3",
+          "event_ids": [
+            "EV-259566f35ea4f66d"
+          ],
+          "company_entity_id": "EN-607a596a603dd679",
+          "company_canonical_entity_id": "",
+          "company_name": "Starcloud",
+          "round": "A轮扩展",
+          "round_code": "series_a_extension",
+          "round_original": "A轮扩展",
+          "amount_original": "$250 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 250000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.5 亿美元"
+          },
+          "announced_at": "2026-08-21",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+              "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote": "included participation from Nvidia and Cisco",
+              "quote_hash": "ba957f02af9d417dd21612b2bff886f779d1f47bd92f8e1cb261b083de3ad479"
+            }
+          ]
+        },
         {
           "activity_id": "IA-d63344b16ac5cd63",
           "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
@@ -3336,6 +3426,14 @@
         }
       ],
       "evidence": [
+        {
+          "source_id": "FISRC-05f582b31c0a37a3",
+          "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+          "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+          "source_content_hash": "8e63b4f9948a4c5f",
+          "quote": "included participation from Nvidia and Cisco",
+          "quote_hash": "ba957f02af9d417dd21612b2bff886f779d1f47bd92f8e1cb261b083de3ad479"
+        },
         {
           "source_id": "FISRC-a258f732874d60d6",
           "source_url": "https://siliconangle.com/2026/08/18/inference-chip-startup-etched-raises-another-700m-at-21b-valuation/",
@@ -5879,9 +5977,9 @@
           "name": "Fractile"
         },
         {
-          "entity_id": "FICO-50b2676afbe30c83",
-          "canonical_entity_id": "",
-          "name": "Higgsfield Inc."
+          "entity_id": "EN-50b2676afbe30c83",
+          "canonical_entity_id": "EN-50b2676afbe30c83",
+          "name": "Higgsfield"
         },
         {
           "entity_id": "EN-636396f02b6571e4",
@@ -5911,14 +6009,14 @@
       ],
       "activities": [
         {
-          "activity_id": "IA-f53e029e7167bc8f",
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "activity_id": "IA-4f79850cbd50740e",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],
-          "company_entity_id": "FICO-50b2676afbe30c83",
-          "company_canonical_entity_id": "",
-          "company_name": "Higgsfield Inc.",
+          "company_entity_id": "EN-50b2676afbe30c83",
+          "company_canonical_entity_id": "EN-50b2676afbe30c83",
+          "company_name": "Higgsfield",
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "Series B",
@@ -5949,14 +6047,14 @@
           ]
         },
         {
-          "activity_id": "IA-92a5fb424f79e130",
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "activity_id": "IA-e14a74865b693fe5",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],
-          "company_entity_id": "FICO-50b2676afbe30c83",
-          "company_canonical_entity_id": "",
-          "company_name": "Higgsfield Inc.",
+          "company_entity_id": "EN-50b2676afbe30c83",
+          "company_canonical_entity_id": "EN-50b2676afbe30c83",
+          "company_name": "Higgsfield",
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "Series B",
@@ -7935,9 +8033,9 @@
           "name": "General Analysis"
         },
         {
-          "entity_id": "FICO-50b2676afbe30c83",
-          "canonical_entity_id": "",
-          "name": "Higgsfield Inc."
+          "entity_id": "EN-50b2676afbe30c83",
+          "canonical_entity_id": "EN-50b2676afbe30c83",
+          "name": "Higgsfield"
         },
         {
           "entity_id": "EN-8c5929d253b07fed",
@@ -7947,14 +8045,14 @@
       ],
       "activities": [
         {
-          "activity_id": "IA-8c76abf27819496a",
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "activity_id": "IA-9cfc9e6babe3bbfc",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],
-          "company_entity_id": "FICO-50b2676afbe30c83",
-          "company_canonical_entity_id": "",
-          "company_name": "Higgsfield Inc.",
+          "company_entity_id": "EN-50b2676afbe30c83",
+          "company_canonical_entity_id": "EN-50b2676afbe30c83",
+          "company_name": "Higgsfield",
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "Series B",
@@ -7985,14 +8083,14 @@
           ]
         },
         {
-          "activity_id": "IA-a5a7803952557565",
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "activity_id": "IA-25827e2078cca603",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],
-          "company_entity_id": "FICO-50b2676afbe30c83",
-          "company_canonical_entity_id": "",
-          "company_name": "Higgsfield Inc.",
+          "company_entity_id": "EN-50b2676afbe30c83",
+          "company_canonical_entity_id": "EN-50b2676afbe30c83",
+          "company_name": "Higgsfield",
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "Series B",
@@ -15406,9 +15504,9 @@
           "name": "Hark"
         },
         {
-          "entity_id": "FICO-50b2676afbe30c83",
-          "canonical_entity_id": "",
-          "name": "Higgsfield Inc."
+          "entity_id": "EN-50b2676afbe30c83",
+          "canonical_entity_id": "EN-50b2676afbe30c83",
+          "name": "Higgsfield"
         },
         {
           "entity_id": "FICO-oxmiq",
@@ -15423,14 +15521,14 @@
       ],
       "activities": [
         {
-          "activity_id": "IA-47faee25092e5ad7",
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "activity_id": "IA-358cb8c3867cc286",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],
-          "company_entity_id": "FICO-50b2676afbe30c83",
-          "company_canonical_entity_id": "",
-          "company_name": "Higgsfield Inc.",
+          "company_entity_id": "EN-50b2676afbe30c83",
+          "company_canonical_entity_id": "EN-50b2676afbe30c83",
+          "company_name": "Higgsfield",
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "Series B",
@@ -18677,6 +18775,253 @@
           "source_content_hash": "adc0cc9ffe3c9dd0",
           "quote": "co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, and Bezos Expeditions",
           "quote_hash": "6a9f71b006329253881732e65a1aab8292cb41280260354b36196bdebd59dc54"
+        }
+      ]
+    },
+    {
+      "id": "INV-b92b24e064ec0c",
+      "name": "NFX",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 3,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 3,
+      "first_disclosed_at": "2025-08-27",
+      "latest_disclosed_at": "2026-08-21",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "lead": 1,
+        "participant": 2
+      },
+      "round_codes": [
+        "seed",
+        "series_a_extension",
+        "series_b"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-b0a914ead94a88da",
+          "canonical_entity_id": "EN-b0a914ead94a88da",
+          "name": "Aligned"
+        },
+        {
+          "entity_id": "EN-098a40b4499d7512",
+          "canonical_entity_id": "",
+          "name": "Maisa AI"
+        },
+        {
+          "entity_id": "EN-607a596a603dd679",
+          "canonical_entity_id": "",
+          "name": "Starcloud"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-321be97c6db3ff83",
+          "funding_insight_id": "FI-8a42f200f5caa9f3",
+          "event_ids": [
+            "EV-259566f35ea4f66d"
+          ],
+          "company_entity_id": "EN-607a596a603dd679",
+          "company_canonical_entity_id": "",
+          "company_name": "Starcloud",
+          "round": "A轮扩展",
+          "round_code": "series_a_extension",
+          "round_original": "A轮扩展",
+          "amount_original": "$250 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 250000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.5 亿美元"
+          },
+          "announced_at": "2026-08-21",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+              "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+              "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-53005e1933ac53aa",
+          "funding_insight_id": "FI-2ad50155bcf1e72d",
+          "event_ids": [
+            "EV-439ba8d5f2f575c4",
+            "EV-81bd541510a530f0"
+          ],
+          "company_entity_id": "EN-b0a914ead94a88da",
+          "company_canonical_entity_id": "EN-b0a914ead94a88da",
+          "company_name": "Aligned",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B 轮",
+          "amount_original": "$60 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 60000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "6000 万美元"
+          },
+          "announced_at": "2026-07-01",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投，既有投资方",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-7c7a5a66361dc784",
+              "source_url": "https://www.saasrise.com/deals/aligned-bags-60m-in-funding-to-build-the-ainative-sales-execution-layer-for-enterprise-deals-5eecc03e-e805-4519-9bac-782e166d991a",
+              "source_title": "Aligned 为其 AI 销售执行平台筹集 6000 万美元 B 轮融资",
+              "source_content_hash": "9348da1b25f12b48",
+              "quote": "with participation from Hetz Ventures, JAL Ventures and NFX",
+              "quote_hash": "0e21e7dce274a10684bf7e6562c8a8fab7604afcb43ee0246b8e6a62125a4714"
+            },
+            {
+              "source_id": "FISRC-24b745611665d521",
+              "source_url": "https://salestechstar.com/sales-engagement/aligned-raises-8m-to-shape-the-future-of-selling-with-ai-sales-rooms/",
+              "source_title": "Aligned raises $8M to shape the future of selling with AI sales rooms",
+              "source_content_hash": "48691dffa1963c9f",
+              "quote": "The round includes participation from existing investors NFX, Hetz Ventures",
+              "quote_hash": "b4f7b4b2756221d4e36d912e1055f297b98c8993c41d30f926c5c8358c9240fb"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-42951c049f861ce7",
+          "funding_insight_id": "FI-44b385d21bc76adb",
+          "event_ids": [
+            "EV-f3bb064250dba2b2"
+          ],
+          "company_entity_id": "EN-15c785fe4bcb86f5",
+          "company_canonical_entity_id": "",
+          "company_name": "Blitzy",
+          "round": "成长轮",
+          "round_code": "growth",
+          "round_original": "Growth round",
+          "amount_original": "$200 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2 亿美元"
+          },
+          "announced_at": "2026-05-05",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "既有投资方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-2caf93b29d914f26",
+              "source_url": "https://news.crunchbase.com/ai/blitzy-funding-valuation-autonomous-software-development-vibe-coding-startups/",
+              "source_title": "Blitzy以14亿美元估值融资2亿美元，用于自主软件开发",
+              "source_content_hash": "9bcac210292cba82",
+              "quote": "existing backers such as NFX, Link Ventures and Flybridge",
+              "quote_hash": "51415ee32be915d0bf4a13b6c78560f1aaf6159a707bd04025eaa9b54d809504"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-ed4f59eea21caf61",
+          "funding_insight_id": "FI-c9553191a021b77b",
+          "event_ids": [
+            "EV-4eb0556b8c72d410"
+          ],
+          "company_entity_id": "EN-098a40b4499d7512",
+          "company_canonical_entity_id": "",
+          "company_name": "Maisa AI",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$25 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 25000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2500 万美元"
+          },
+          "announced_at": "2025-08-27",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "既有投资方（种子轮前领投），本轮参投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-f154528a83a385f1",
+              "source_url": "https://techcrunch.com/2025/08/27/maisa-ai-gets-25m-to-fix-enterprise-ais-95-failure-rate/",
+              "source_title": "Maisa AI 获 2500 万美元融资，旨在解决企业 AI 95% 的失败率",
+              "source_content_hash": "8c799b616e20ea1d",
+              "quote": "its $5 million pre-seed round last December was led by the San Francisco-based venture firms NFX and Village Global.",
+              "quote_hash": "9888177aefd2e80747f8c1886fa1052069a071bbbfdc9de99c87b38f8b55d936"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-05f582b31c0a37a3",
+          "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+          "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+          "source_content_hash": "8e63b4f9948a4c5f",
+          "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+          "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+        },
+        {
+          "source_id": "FISRC-7c7a5a66361dc784",
+          "source_url": "https://www.saasrise.com/deals/aligned-bags-60m-in-funding-to-build-the-ainative-sales-execution-layer-for-enterprise-deals-5eecc03e-e805-4519-9bac-782e166d991a",
+          "source_title": "Aligned 为其 AI 销售执行平台筹集 6000 万美元 B 轮融资",
+          "source_content_hash": "9348da1b25f12b48",
+          "quote": "with participation from Hetz Ventures, JAL Ventures and NFX",
+          "quote_hash": "0e21e7dce274a10684bf7e6562c8a8fab7604afcb43ee0246b8e6a62125a4714"
+        },
+        {
+          "source_id": "FISRC-24b745611665d521",
+          "source_url": "https://salestechstar.com/sales-engagement/aligned-raises-8m-to-shape-the-future-of-selling-with-ai-sales-rooms/",
+          "source_title": "Aligned raises $8M to shape the future of selling with AI sales rooms",
+          "source_content_hash": "48691dffa1963c9f",
+          "quote": "The round includes participation from existing investors NFX, Hetz Ventures",
+          "quote_hash": "b4f7b4b2756221d4e36d912e1055f297b98c8993c41d30f926c5c8358c9240fb"
+        },
+        {
+          "source_id": "FISRC-2caf93b29d914f26",
+          "source_url": "https://news.crunchbase.com/ai/blitzy-funding-valuation-autonomous-software-development-vibe-coding-startups/",
+          "source_title": "Blitzy以14亿美元估值融资2亿美元，用于自主软件开发",
+          "source_content_hash": "9bcac210292cba82",
+          "quote": "existing backers such as NFX, Link Ventures and Flybridge",
+          "quote_hash": "51415ee32be915d0bf4a13b6c78560f1aaf6159a707bd04025eaa9b54d809504"
+        },
+        {
+          "source_id": "FISRC-f154528a83a385f1",
+          "source_url": "https://techcrunch.com/2025/08/27/maisa-ai-gets-25m-to-fix-enterprise-ais-95-failure-rate/",
+          "source_title": "Maisa AI 获 2500 万美元融资，旨在解决企业 AI 95% 的失败率",
+          "source_content_hash": "8c799b616e20ea1d",
+          "quote": "its $5 million pre-seed round last December was led by the San Francisco-based venture firms NFX and Village Global.",
+          "quote_hash": "9888177aefd2e80747f8c1886fa1052069a071bbbfdc9de99c87b38f8b55d936"
         }
       ]
     },
@@ -25733,21 +26078,21 @@
           "name": "华深智药科技（北京）有限公司"
         },
         {
-          "entity_id": "FICO-50b2676afbe30c83",
-          "canonical_entity_id": "",
-          "name": "Higgsfield Inc."
+          "entity_id": "EN-50b2676afbe30c83",
+          "canonical_entity_id": "EN-50b2676afbe30c83",
+          "name": "Higgsfield"
         }
       ],
       "activities": [
         {
-          "activity_id": "IA-028c6a75de31ce09",
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "activity_id": "IA-b1750d9ec17235af",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],
-          "company_entity_id": "FICO-50b2676afbe30c83",
-          "company_canonical_entity_id": "",
-          "company_name": "Higgsfield Inc.",
+          "company_entity_id": "EN-50b2676afbe30c83",
+          "company_canonical_entity_id": "EN-50b2676afbe30c83",
+          "company_name": "Higgsfield",
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "Series B",
@@ -26188,21 +26533,21 @@
           "name": "AIsa"
         },
         {
-          "entity_id": "FICO-50b2676afbe30c83",
-          "canonical_entity_id": "",
-          "name": "Higgsfield Inc."
+          "entity_id": "EN-50b2676afbe30c83",
+          "canonical_entity_id": "EN-50b2676afbe30c83",
+          "name": "Higgsfield"
         }
       ],
       "activities": [
         {
-          "activity_id": "IA-67ae10146cc74ebb",
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "activity_id": "IA-fc2d7623b5b5dd96",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],
-          "company_entity_id": "FICO-50b2676afbe30c83",
-          "company_canonical_entity_id": "",
-          "company_name": "Higgsfield Inc.",
+          "company_entity_id": "EN-50b2676afbe30c83",
+          "company_canonical_entity_id": "EN-50b2676afbe30c83",
+          "company_name": "Higgsfield",
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "Series B",
@@ -34834,201 +35179,6 @@
       ]
     },
     {
-      "id": "INV-b92b24e064ec0c",
-      "name": "NFX",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 2,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 2,
-      "first_disclosed_at": "2025-08-27",
-      "latest_disclosed_at": "2026-07-01",
-      "role_counts": {
-        "historical_or_ambiguous": 1,
-        "lead": 1,
-        "participant": 1
-      },
-      "round_codes": [
-        "seed",
-        "series_b"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-b0a914ead94a88da",
-          "canonical_entity_id": "EN-b0a914ead94a88da",
-          "name": "Aligned"
-        },
-        {
-          "entity_id": "EN-098a40b4499d7512",
-          "canonical_entity_id": "",
-          "name": "Maisa AI"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-53005e1933ac53aa",
-          "funding_insight_id": "FI-2ad50155bcf1e72d",
-          "event_ids": [
-            "EV-439ba8d5f2f575c4",
-            "EV-81bd541510a530f0"
-          ],
-          "company_entity_id": "EN-b0a914ead94a88da",
-          "company_canonical_entity_id": "EN-b0a914ead94a88da",
-          "company_name": "Aligned",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B 轮",
-          "amount_original": "$60 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 60000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "6000 万美元"
-          },
-          "announced_at": "2026-07-01",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投，既有投资方",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-7c7a5a66361dc784",
-              "source_url": "https://www.saasrise.com/deals/aligned-bags-60m-in-funding-to-build-the-ainative-sales-execution-layer-for-enterprise-deals-5eecc03e-e805-4519-9bac-782e166d991a",
-              "source_title": "Aligned 为其 AI 销售执行平台筹集 6000 万美元 B 轮融资",
-              "source_content_hash": "9348da1b25f12b48",
-              "quote": "with participation from Hetz Ventures, JAL Ventures and NFX",
-              "quote_hash": "0e21e7dce274a10684bf7e6562c8a8fab7604afcb43ee0246b8e6a62125a4714"
-            },
-            {
-              "source_id": "FISRC-24b745611665d521",
-              "source_url": "https://salestechstar.com/sales-engagement/aligned-raises-8m-to-shape-the-future-of-selling-with-ai-sales-rooms/",
-              "source_title": "Aligned raises $8M to shape the future of selling with AI sales rooms",
-              "source_content_hash": "48691dffa1963c9f",
-              "quote": "The round includes participation from existing investors NFX, Hetz Ventures",
-              "quote_hash": "b4f7b4b2756221d4e36d912e1055f297b98c8993c41d30f926c5c8358c9240fb"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-42951c049f861ce7",
-          "funding_insight_id": "FI-44b385d21bc76adb",
-          "event_ids": [
-            "EV-f3bb064250dba2b2"
-          ],
-          "company_entity_id": "EN-15c785fe4bcb86f5",
-          "company_canonical_entity_id": "",
-          "company_name": "Blitzy",
-          "round": "成长轮",
-          "round_code": "growth",
-          "round_original": "Growth round",
-          "amount_original": "$200 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 200000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "2 亿美元"
-          },
-          "announced_at": "2026-05-05",
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "既有投资方",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-2caf93b29d914f26",
-              "source_url": "https://news.crunchbase.com/ai/blitzy-funding-valuation-autonomous-software-development-vibe-coding-startups/",
-              "source_title": "Blitzy以14亿美元估值融资2亿美元，用于自主软件开发",
-              "source_content_hash": "9bcac210292cba82",
-              "quote": "existing backers such as NFX, Link Ventures and Flybridge",
-              "quote_hash": "51415ee32be915d0bf4a13b6c78560f1aaf6159a707bd04025eaa9b54d809504"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-ed4f59eea21caf61",
-          "funding_insight_id": "FI-c9553191a021b77b",
-          "event_ids": [
-            "EV-4eb0556b8c72d410"
-          ],
-          "company_entity_id": "EN-098a40b4499d7512",
-          "company_canonical_entity_id": "",
-          "company_name": "Maisa AI",
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "种子轮",
-          "amount_original": "$25 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 25000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "2500 万美元"
-          },
-          "announced_at": "2025-08-27",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "既有投资方（种子轮前领投），本轮参投",
-          "role_code": "lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-f154528a83a385f1",
-              "source_url": "https://techcrunch.com/2025/08/27/maisa-ai-gets-25m-to-fix-enterprise-ais-95-failure-rate/",
-              "source_title": "Maisa AI 获 2500 万美元融资，旨在解决企业 AI 95% 的失败率",
-              "source_content_hash": "8c799b616e20ea1d",
-              "quote": "its $5 million pre-seed round last December was led by the San Francisco-based venture firms NFX and Village Global.",
-              "quote_hash": "9888177aefd2e80747f8c1886fa1052069a071bbbfdc9de99c87b38f8b55d936"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-7c7a5a66361dc784",
-          "source_url": "https://www.saasrise.com/deals/aligned-bags-60m-in-funding-to-build-the-ainative-sales-execution-layer-for-enterprise-deals-5eecc03e-e805-4519-9bac-782e166d991a",
-          "source_title": "Aligned 为其 AI 销售执行平台筹集 6000 万美元 B 轮融资",
-          "source_content_hash": "9348da1b25f12b48",
-          "quote": "with participation from Hetz Ventures, JAL Ventures and NFX",
-          "quote_hash": "0e21e7dce274a10684bf7e6562c8a8fab7604afcb43ee0246b8e6a62125a4714"
-        },
-        {
-          "source_id": "FISRC-24b745611665d521",
-          "source_url": "https://salestechstar.com/sales-engagement/aligned-raises-8m-to-shape-the-future-of-selling-with-ai-sales-rooms/",
-          "source_title": "Aligned raises $8M to shape the future of selling with AI sales rooms",
-          "source_content_hash": "48691dffa1963c9f",
-          "quote": "The round includes participation from existing investors NFX, Hetz Ventures",
-          "quote_hash": "b4f7b4b2756221d4e36d912e1055f297b98c8993c41d30f926c5c8358c9240fb"
-        },
-        {
-          "source_id": "FISRC-2caf93b29d914f26",
-          "source_url": "https://news.crunchbase.com/ai/blitzy-funding-valuation-autonomous-software-development-vibe-coding-startups/",
-          "source_title": "Blitzy以14亿美元估值融资2亿美元，用于自主软件开发",
-          "source_content_hash": "9bcac210292cba82",
-          "quote": "existing backers such as NFX, Link Ventures and Flybridge",
-          "quote_hash": "51415ee32be915d0bf4a13b6c78560f1aaf6159a707bd04025eaa9b54d809504"
-        },
-        {
-          "source_id": "FISRC-f154528a83a385f1",
-          "source_url": "https://techcrunch.com/2025/08/27/maisa-ai-gets-25m-to-fix-enterprise-ais-95-failure-rate/",
-          "source_title": "Maisa AI 获 2500 万美元融资，旨在解决企业 AI 95% 的失败率",
-          "source_content_hash": "8c799b616e20ea1d",
-          "quote": "its $5 million pre-seed round last December was led by the San Francisco-based venture firms NFX and Village Global.",
-          "quote_hash": "9888177aefd2e80747f8c1886fa1052069a071bbbfdc9de99c87b38f8b55d936"
-        }
-      ]
-    },
-    {
       "id": "INV-235adee72d59b6",
       "name": "Arthur Mensch",
       "aliases": [],
@@ -43057,6 +43207,847 @@
       ]
     },
     {
+      "id": "INV-cf555a1ead09c2",
+      "name": "776",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-21",
+      "latest_disclosed_at": "2026-08-21",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a_extension"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-607a596a603dd679",
+          "canonical_entity_id": "",
+          "name": "Starcloud"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-49f005e092dc5083",
+          "funding_insight_id": "FI-8a42f200f5caa9f3",
+          "event_ids": [
+            "EV-259566f35ea4f66d"
+          ],
+          "company_entity_id": "EN-607a596a603dd679",
+          "company_canonical_entity_id": "",
+          "company_name": "Starcloud",
+          "round": "A轮扩展",
+          "round_code": "series_a_extension",
+          "round_original": "A轮扩展",
+          "amount_original": "$250 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 250000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.5 亿美元"
+          },
+          "announced_at": "2026-08-21",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+              "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+              "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-05f582b31c0a37a3",
+          "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+          "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+          "source_content_hash": "8e63b4f9948a4c5f",
+          "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+          "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+        }
+      ]
+    },
+    {
+      "id": "INV-1996308273c587",
+      "name": "Benchmark",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-21",
+      "latest_disclosed_at": "2026-08-21",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a_extension"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-607a596a603dd679",
+          "canonical_entity_id": "",
+          "name": "Starcloud"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-dd337745a5588950",
+          "funding_insight_id": "FI-8a42f200f5caa9f3",
+          "event_ids": [
+            "EV-259566f35ea4f66d"
+          ],
+          "company_entity_id": "EN-607a596a603dd679",
+          "company_canonical_entity_id": "",
+          "company_name": "Starcloud",
+          "round": "A轮扩展",
+          "round_code": "series_a_extension",
+          "round_original": "A轮扩展",
+          "amount_original": "$250 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 250000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.5 亿美元"
+          },
+          "announced_at": "2026-08-21",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+              "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+              "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-05f582b31c0a37a3",
+          "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+          "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+          "source_content_hash": "8e63b4f9948a4c5f",
+          "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+          "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+        }
+      ]
+    },
+    {
+      "id": "INV-b8d573e7234fa5",
+      "name": "Cedar Capital",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-21",
+      "latest_disclosed_at": "2026-08-21",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a_extension"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-607a596a603dd679",
+          "canonical_entity_id": "",
+          "name": "Starcloud"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-c81ed95783657968",
+          "funding_insight_id": "FI-8a42f200f5caa9f3",
+          "event_ids": [
+            "EV-259566f35ea4f66d"
+          ],
+          "company_entity_id": "EN-607a596a603dd679",
+          "company_canonical_entity_id": "",
+          "company_name": "Starcloud",
+          "round": "A轮扩展",
+          "round_code": "series_a_extension",
+          "round_original": "A轮扩展",
+          "amount_original": "$250 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 250000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.5 亿美元"
+          },
+          "announced_at": "2026-08-21",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+              "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+              "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-05f582b31c0a37a3",
+          "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+          "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+          "source_content_hash": "8e63b4f9948a4c5f",
+          "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+          "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+        }
+      ]
+    },
+    {
+      "id": "INV-7419a156ae74f5",
+      "name": "Cisco",
+      "aliases": [],
+      "canonical_entity_id": "EN-e73b79a0b10f8cdb",
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 3,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2025-09-09",
+      "latest_disclosed_at": "2026-08-21",
+      "role_counts": {
+        "historical_or_ambiguous": 3,
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a_extension"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-607a596a603dd679",
+          "canonical_entity_id": "",
+          "name": "Starcloud"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-3a28e9aae6c5fe6f",
+          "funding_insight_id": "FI-8a42f200f5caa9f3",
+          "event_ids": [
+            "EV-259566f35ea4f66d"
+          ],
+          "company_entity_id": "EN-607a596a603dd679",
+          "company_canonical_entity_id": "",
+          "company_name": "Starcloud",
+          "round": "A轮扩展",
+          "round_code": "series_a_extension",
+          "round_original": "A轮扩展",
+          "amount_original": "$250 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 250000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.5 亿美元"
+          },
+          "announced_at": "2026-08-21",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+              "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote": "included participation from Nvidia and Cisco",
+              "quote_hash": "ba957f02af9d417dd21612b2bff886f779d1f47bd92f8e1cb261b083de3ad479"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-295d406adfc15f8d",
+          "funding_insight_id": "FI-4b811c030362045e",
+          "event_ids": [
+            "EV-181cd28d97c4e61d"
+          ],
+          "company_entity_id": "EN-0b79cf2de0ee6b8e",
+          "company_canonical_entity_id": "",
+          "company_name": "Groq",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "Series A",
+          "amount_original": "$350M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 350000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3.5 亿美元"
+          },
+          "announced_at": "2026-08-17",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "历史轮次投资方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-28e142eb564f6762",
+              "source_url": "https://www.verdict.co.uk/groq-obtains-750m-in-funding-ai-inference-technology/",
+              "source_title": "Groq obtains $750m in funding for AI inference technology",
+              "source_content_hash": "b6f5ca4d5c31cfb3",
+              "quote": "Existing backers such as Cisco, Samsung, Altimeter, D1, 1789 Capital, and Infinitum also participated in this round.",
+              "quote_hash": "3b8b0f2d6fdc4e05211295d3d973d1a094f085c2aa05c4ff742f5d14a4850982"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-566062abff5da784",
+          "funding_insight_id": "FI-44726ebdb985f37e",
+          "event_ids": [
+            "EV-4118202ed0f91895"
+          ],
+          "company_entity_id": "EN-0b79cf2de0ee6b8e",
+          "company_canonical_entity_id": "",
+          "company_name": "Groq",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮",
+          "amount_original": "6.5 亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 650000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "6.5 亿美元"
+          },
+          "announced_at": "2026-06-22",
+          "disclosure_status": "partially_disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "既有投资方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-85e8550490e53490",
+              "source_url": "https://test-news.aibase.com/news/21366",
+              "source_title": "Groq Raises $750 Million in Funding, Valuation Reaches $6.9 Billion",
+              "source_content_hash": "6efab5b69f3f9aa3",
+              "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq.",
+              "quote_hash": "e9d6c950ecfcf10df612acb50b9000d5111cfce790af32af95a51c83ef1ee077"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-332c11cc2595dba2",
+          "funding_insight_id": "FI-1cf34218733257fd",
+          "event_ids": [
+            "EV-85506f9f86779a6d"
+          ],
+          "company_entity_id": "EN-c04bd5ebd10ab696",
+          "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
+          "company_name": "Mistral AI",
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "Series C",
+          "amount_original": "约17亿欧元（约20亿美元）",
+          "amount_normalized": {
+            "currency": "EUR",
+            "value": 1700000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 17 亿欧元"
+          },
+          "announced_at": "2025-09-09",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "既有投资方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-9ce92685289bf3ad",
+              "source_url": "https://grep.news/episode/asml-just-bet-%E2%82%AC1-7b-on-mistral-ai's-european-answer",
+              "source_title": "Tamez Labs: ASML Just Bet €1.7B on Mistral AI's European Answer | Grep News",
+              "source_content_hash": "90d6be41c7b3ea2f",
+              "quote": "Its investor list spans French sovereign capital (Bpifrance), American venture firms (Andreessen Horowitz, General Catalyst, Lightspeed), major industrial corporations (Nvidia, Cisco, IBM, Salesforce Ventures, Samsung)",
+              "quote_hash": "7bb5c81e6a76104c8b1f44381d9a8cba1ea8453b4da0246c96f7e1a420386fb9"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-05f582b31c0a37a3",
+          "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+          "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+          "source_content_hash": "8e63b4f9948a4c5f",
+          "quote": "included participation from Nvidia and Cisco",
+          "quote_hash": "ba957f02af9d417dd21612b2bff886f779d1f47bd92f8e1cb261b083de3ad479"
+        },
+        {
+          "source_id": "FISRC-28e142eb564f6762",
+          "source_url": "https://www.verdict.co.uk/groq-obtains-750m-in-funding-ai-inference-technology/",
+          "source_title": "Groq obtains $750m in funding for AI inference technology",
+          "source_content_hash": "b6f5ca4d5c31cfb3",
+          "quote": "Existing backers such as Cisco, Samsung, Altimeter, D1, 1789 Capital, and Infinitum also participated in this round.",
+          "quote_hash": "3b8b0f2d6fdc4e05211295d3d973d1a094f085c2aa05c4ff742f5d14a4850982"
+        },
+        {
+          "source_id": "FISRC-85e8550490e53490",
+          "source_url": "https://test-news.aibase.com/news/21366",
+          "source_title": "Groq Raises $750 Million in Funding, Valuation Reaches $6.9 Billion",
+          "source_content_hash": "6efab5b69f3f9aa3",
+          "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq.",
+          "quote_hash": "e9d6c950ecfcf10df612acb50b9000d5111cfce790af32af95a51c83ef1ee077"
+        },
+        {
+          "source_id": "FISRC-9ce92685289bf3ad",
+          "source_url": "https://grep.news/episode/asml-just-bet-%E2%82%AC1-7b-on-mistral-ai's-european-answer",
+          "source_title": "Tamez Labs: ASML Just Bet €1.7B on Mistral AI's European Answer | Grep News",
+          "source_content_hash": "90d6be41c7b3ea2f",
+          "quote": "Its investor list spans French sovereign capital (Bpifrance), American venture firms (Andreessen Horowitz, General Catalyst, Lightspeed), major industrial corporations (Nvidia, Cisco, IBM, Salesforce Ventures, Samsung)",
+          "quote_hash": "7bb5c81e6a76104c8b1f44381d9a8cba1ea8453b4da0246c96f7e1a420386fb9"
+        }
+      ]
+    },
+    {
+      "id": "INV-aab58816df1f6a",
+      "name": "EQT",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-21",
+      "latest_disclosed_at": "2026-08-21",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a_extension"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-607a596a603dd679",
+          "canonical_entity_id": "",
+          "name": "Starcloud"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-7d84217e95212661",
+          "funding_insight_id": "FI-8a42f200f5caa9f3",
+          "event_ids": [
+            "EV-259566f35ea4f66d"
+          ],
+          "company_entity_id": "EN-607a596a603dd679",
+          "company_canonical_entity_id": "",
+          "company_name": "Starcloud",
+          "round": "A轮扩展",
+          "round_code": "series_a_extension",
+          "round_original": "A轮扩展",
+          "amount_original": "$250 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 250000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.5 亿美元"
+          },
+          "announced_at": "2026-08-21",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+              "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+              "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-05f582b31c0a37a3",
+          "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+          "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+          "source_content_hash": "8e63b4f9948a4c5f",
+          "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+          "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+        }
+      ]
+    },
+    {
+      "id": "INV-848636eedf385d",
+      "name": "Goanna Capital",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-21",
+      "latest_disclosed_at": "2026-08-21",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a_extension"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-607a596a603dd679",
+          "canonical_entity_id": "",
+          "name": "Starcloud"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-e3cd30ad3b838d28",
+          "funding_insight_id": "FI-8a42f200f5caa9f3",
+          "event_ids": [
+            "EV-259566f35ea4f66d"
+          ],
+          "company_entity_id": "EN-607a596a603dd679",
+          "company_canonical_entity_id": "",
+          "company_name": "Starcloud",
+          "round": "A轮扩展",
+          "round_code": "series_a_extension",
+          "round_original": "A轮扩展",
+          "amount_original": "$250 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 250000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.5 亿美元"
+          },
+          "announced_at": "2026-08-21",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+              "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+              "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-05f582b31c0a37a3",
+          "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+          "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+          "source_content_hash": "8e63b4f9948a4c5f",
+          "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+          "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+        }
+      ]
+    },
+    {
+      "id": "INV-476440f54908b9",
+      "name": "Manhattan West Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-21",
+      "latest_disclosed_at": "2026-08-21",
+      "role_counts": {
+        "lead": 1
+      },
+      "round_codes": [
+        "series_a_extension"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-607a596a603dd679",
+          "canonical_entity_id": "",
+          "name": "Starcloud"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-4c4bd26b4a9faa86",
+          "funding_insight_id": "FI-8a42f200f5caa9f3",
+          "event_ids": [
+            "EV-259566f35ea4f66d"
+          ],
+          "company_entity_id": "EN-607a596a603dd679",
+          "company_canonical_entity_id": "",
+          "company_name": "Starcloud",
+          "round": "A轮扩展",
+          "round_code": "series_a_extension",
+          "round_original": "A轮扩展",
+          "amount_original": "$250 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 250000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.5 亿美元"
+          },
+          "announced_at": "2026-08-21",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+              "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote": "Starcloud’s funding extension was led by Manhattan West Ventures",
+              "quote_hash": "13df25bcf5bc5975f0b4830a0571e8f11b04f428e5c286d36a442cf6384e49ee"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-05f582b31c0a37a3",
+          "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+          "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+          "source_content_hash": "8e63b4f9948a4c5f",
+          "quote": "Starcloud’s funding extension was led by Manhattan West Ventures",
+          "quote_hash": "13df25bcf5bc5975f0b4830a0571e8f11b04f428e5c286d36a442cf6384e49ee"
+        }
+      ]
+    },
+    {
+      "id": "INV-139f650d7f6753",
+      "name": "Soma",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-21",
+      "latest_disclosed_at": "2026-08-21",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a_extension"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-607a596a603dd679",
+          "canonical_entity_id": "",
+          "name": "Starcloud"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-7c6340eb49458e5c",
+          "funding_insight_id": "FI-8a42f200f5caa9f3",
+          "event_ids": [
+            "EV-259566f35ea4f66d"
+          ],
+          "company_entity_id": "EN-607a596a603dd679",
+          "company_canonical_entity_id": "",
+          "company_name": "Starcloud",
+          "round": "A轮扩展",
+          "round_code": "series_a_extension",
+          "round_original": "A轮扩展",
+          "amount_original": "$250 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 250000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.5 亿美元"
+          },
+          "announced_at": "2026-08-21",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+              "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+              "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-05f582b31c0a37a3",
+          "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+          "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+          "source_content_hash": "8e63b4f9948a4c5f",
+          "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+          "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+        }
+      ]
+    },
+    {
+      "id": "INV-c211db08bedd63",
+      "name": "Standard Capital",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-21",
+      "latest_disclosed_at": "2026-08-21",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a_extension"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-607a596a603dd679",
+          "canonical_entity_id": "",
+          "name": "Starcloud"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-97855a3b25a95c6e",
+          "funding_insight_id": "FI-8a42f200f5caa9f3",
+          "event_ids": [
+            "EV-259566f35ea4f66d"
+          ],
+          "company_entity_id": "EN-607a596a603dd679",
+          "company_canonical_entity_id": "",
+          "company_name": "Starcloud",
+          "round": "A轮扩展",
+          "round_code": "series_a_extension",
+          "round_original": "A轮扩展",
+          "amount_original": "$250 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 250000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.5 亿美元"
+          },
+          "announced_at": "2026-08-21",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+              "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+              "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-05f582b31c0a37a3",
+          "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+          "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+          "source_content_hash": "8e63b4f9948a4c5f",
+          "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+          "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+        }
+      ]
+    },
+    {
       "id": "INV-10800b40544cab",
       "name": "Argo",
       "aliases": [],
@@ -44050,21 +45041,21 @@
       ],
       "portfolio_companies": [
         {
-          "entity_id": "FICO-50b2676afbe30c83",
-          "canonical_entity_id": "",
-          "name": "Higgsfield Inc."
+          "entity_id": "EN-50b2676afbe30c83",
+          "canonical_entity_id": "EN-50b2676afbe30c83",
+          "name": "Higgsfield"
         }
       ],
       "activities": [
         {
-          "activity_id": "IA-0197fca994e78859",
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "activity_id": "IA-16efd89999658e8d",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],
-          "company_entity_id": "FICO-50b2676afbe30c83",
-          "company_canonical_entity_id": "",
-          "company_name": "Higgsfield Inc.",
+          "company_entity_id": "EN-50b2676afbe30c83",
+          "company_canonical_entity_id": "EN-50b2676afbe30c83",
+          "company_name": "Higgsfield",
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "Series B",
@@ -44299,21 +45290,21 @@
       ],
       "portfolio_companies": [
         {
-          "entity_id": "FICO-50b2676afbe30c83",
-          "canonical_entity_id": "",
-          "name": "Higgsfield Inc."
+          "entity_id": "EN-50b2676afbe30c83",
+          "canonical_entity_id": "EN-50b2676afbe30c83",
+          "name": "Higgsfield"
         }
       ],
       "activities": [
         {
-          "activity_id": "IA-9c46fc533cdebc5b",
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "activity_id": "IA-77967e0cd4a0a8ac",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],
-          "company_entity_id": "FICO-50b2676afbe30c83",
-          "company_canonical_entity_id": "",
-          "company_name": "Higgsfield Inc.",
+          "company_entity_id": "EN-50b2676afbe30c83",
+          "company_canonical_entity_id": "EN-50b2676afbe30c83",
+          "company_name": "Higgsfield",
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "Series B",
@@ -44378,21 +45369,21 @@
       ],
       "portfolio_companies": [
         {
-          "entity_id": "FICO-50b2676afbe30c83",
-          "canonical_entity_id": "",
-          "name": "Higgsfield Inc."
+          "entity_id": "EN-50b2676afbe30c83",
+          "canonical_entity_id": "EN-50b2676afbe30c83",
+          "name": "Higgsfield"
         }
       ],
       "activities": [
         {
-          "activity_id": "IA-62cca7d502a3ba6c",
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "activity_id": "IA-26c05b5920291cef",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],
-          "company_entity_id": "FICO-50b2676afbe30c83",
-          "company_canonical_entity_id": "",
-          "company_name": "Higgsfield Inc.",
+          "company_entity_id": "EN-50b2676afbe30c83",
+          "company_canonical_entity_id": "EN-50b2676afbe30c83",
+          "company_name": "Higgsfield",
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "Series B",
@@ -44423,14 +45414,14 @@
           ]
         },
         {
-          "activity_id": "IA-0b99aa5a97d9b72c",
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "activity_id": "IA-41c9fdb9f5554892",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],
-          "company_entity_id": "FICO-50b2676afbe30c83",
-          "company_canonical_entity_id": "",
-          "company_name": "Higgsfield Inc.",
+          "company_entity_id": "EN-50b2676afbe30c83",
+          "company_canonical_entity_id": "EN-50b2676afbe30c83",
+          "company_name": "Higgsfield",
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "Series B",
@@ -44502,21 +45493,21 @@
       ],
       "portfolio_companies": [
         {
-          "entity_id": "FICO-50b2676afbe30c83",
-          "canonical_entity_id": "",
-          "name": "Higgsfield Inc."
+          "entity_id": "EN-50b2676afbe30c83",
+          "canonical_entity_id": "EN-50b2676afbe30c83",
+          "name": "Higgsfield"
         }
       ],
       "activities": [
         {
-          "activity_id": "IA-4bf5e6ceccfadd69",
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "activity_id": "IA-97e4d10e92da5b0f",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],
-          "company_entity_id": "FICO-50b2676afbe30c83",
-          "company_canonical_entity_id": "",
-          "company_name": "Higgsfield Inc.",
+          "company_entity_id": "EN-50b2676afbe30c83",
+          "company_canonical_entity_id": "EN-50b2676afbe30c83",
+          "company_name": "Higgsfield",
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "Series B",
@@ -44658,21 +45649,21 @@
       ],
       "portfolio_companies": [
         {
-          "entity_id": "FICO-50b2676afbe30c83",
-          "canonical_entity_id": "",
-          "name": "Higgsfield Inc."
+          "entity_id": "EN-50b2676afbe30c83",
+          "canonical_entity_id": "EN-50b2676afbe30c83",
+          "name": "Higgsfield"
         }
       ],
       "activities": [
         {
-          "activity_id": "IA-c1f8cdc5c2abc565",
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "activity_id": "IA-bd70643928b61168",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],
-          "company_entity_id": "FICO-50b2676afbe30c83",
-          "company_canonical_entity_id": "",
-          "company_name": "Higgsfield Inc.",
+          "company_entity_id": "EN-50b2676afbe30c83",
+          "company_canonical_entity_id": "EN-50b2676afbe30c83",
+          "company_name": "Higgsfield",
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "Series B",
@@ -44737,21 +45728,21 @@
       ],
       "portfolio_companies": [
         {
-          "entity_id": "FICO-50b2676afbe30c83",
-          "canonical_entity_id": "",
-          "name": "Higgsfield Inc."
+          "entity_id": "EN-50b2676afbe30c83",
+          "canonical_entity_id": "EN-50b2676afbe30c83",
+          "name": "Higgsfield"
         }
       ],
       "activities": [
         {
-          "activity_id": "IA-dd08131e5db5da8f",
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "activity_id": "IA-ced49a7addbaf063",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],
-          "company_entity_id": "FICO-50b2676afbe30c83",
-          "company_canonical_entity_id": "",
-          "company_name": "Higgsfield Inc.",
+          "company_entity_id": "EN-50b2676afbe30c83",
+          "company_canonical_entity_id": "EN-50b2676afbe30c83",
+          "company_name": "Higgsfield",
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "Series B",
@@ -44782,14 +45773,14 @@
           ]
         },
         {
-          "activity_id": "IA-da15bbe85d4981f6",
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "activity_id": "IA-b157b08f2d415311",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],
-          "company_entity_id": "FICO-50b2676afbe30c83",
-          "company_canonical_entity_id": "",
-          "company_name": "Higgsfield Inc.",
+          "company_entity_id": "EN-50b2676afbe30c83",
+          "company_canonical_entity_id": "EN-50b2676afbe30c83",
+          "company_name": "Higgsfield",
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "Series B",
@@ -44939,21 +45930,21 @@
       ],
       "portfolio_companies": [
         {
-          "entity_id": "FICO-50b2676afbe30c83",
-          "canonical_entity_id": "",
-          "name": "Higgsfield Inc."
+          "entity_id": "EN-50b2676afbe30c83",
+          "canonical_entity_id": "EN-50b2676afbe30c83",
+          "name": "Higgsfield"
         }
       ],
       "activities": [
         {
-          "activity_id": "IA-f9651f14625478dc",
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "activity_id": "IA-0686d4104ba7b992",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],
-          "company_entity_id": "FICO-50b2676afbe30c83",
-          "company_canonical_entity_id": "",
-          "company_name": "Higgsfield Inc.",
+          "company_entity_id": "EN-50b2676afbe30c83",
+          "company_canonical_entity_id": "EN-50b2676afbe30c83",
+          "company_name": "Higgsfield",
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "Series B",
@@ -45220,21 +46211,21 @@
       ],
       "portfolio_companies": [
         {
-          "entity_id": "FICO-50b2676afbe30c83",
-          "canonical_entity_id": "",
-          "name": "Higgsfield Inc."
+          "entity_id": "EN-50b2676afbe30c83",
+          "canonical_entity_id": "EN-50b2676afbe30c83",
+          "name": "Higgsfield"
         }
       ],
       "activities": [
         {
-          "activity_id": "IA-64cec29549b0c633",
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "activity_id": "IA-f74b7a0944a75b0a",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],
-          "company_entity_id": "FICO-50b2676afbe30c83",
-          "company_canonical_entity_id": "",
-          "company_name": "Higgsfield Inc.",
+          "company_entity_id": "EN-50b2676afbe30c83",
+          "company_canonical_entity_id": "EN-50b2676afbe30c83",
+          "company_name": "Higgsfield",
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "Series B",
@@ -45423,21 +46414,21 @@
       ],
       "portfolio_companies": [
         {
-          "entity_id": "FICO-50b2676afbe30c83",
-          "canonical_entity_id": "",
-          "name": "Higgsfield Inc."
+          "entity_id": "EN-50b2676afbe30c83",
+          "canonical_entity_id": "EN-50b2676afbe30c83",
+          "name": "Higgsfield"
         }
       ],
       "activities": [
         {
-          "activity_id": "IA-078d677a1ea80aae",
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "activity_id": "IA-3bcf85bcee048390",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],
-          "company_entity_id": "FICO-50b2676afbe30c83",
-          "company_canonical_entity_id": "",
-          "company_name": "Higgsfield Inc.",
+          "company_entity_id": "EN-50b2676afbe30c83",
+          "company_canonical_entity_id": "EN-50b2676afbe30c83",
+          "company_name": "Higgsfield",
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "Series B",
@@ -45579,21 +46570,21 @@
       ],
       "portfolio_companies": [
         {
-          "entity_id": "FICO-50b2676afbe30c83",
-          "canonical_entity_id": "",
-          "name": "Higgsfield Inc."
+          "entity_id": "EN-50b2676afbe30c83",
+          "canonical_entity_id": "EN-50b2676afbe30c83",
+          "name": "Higgsfield"
         }
       ],
       "activities": [
         {
-          "activity_id": "IA-619247722e19148f",
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "activity_id": "IA-60307fc4dc6f0693",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],
-          "company_entity_id": "FICO-50b2676afbe30c83",
-          "company_canonical_entity_id": "",
-          "company_name": "Higgsfield Inc.",
+          "company_entity_id": "EN-50b2676afbe30c83",
+          "company_canonical_entity_id": "EN-50b2676afbe30c83",
+          "company_name": "Higgsfield",
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "Series B",
@@ -45813,21 +46804,21 @@
       ],
       "portfolio_companies": [
         {
-          "entity_id": "FICO-50b2676afbe30c83",
-          "canonical_entity_id": "",
-          "name": "Higgsfield Inc."
+          "entity_id": "EN-50b2676afbe30c83",
+          "canonical_entity_id": "EN-50b2676afbe30c83",
+          "name": "Higgsfield"
         }
       ],
       "activities": [
         {
-          "activity_id": "IA-e5a2d04e02a8b66e",
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "activity_id": "IA-f04bfd3880b1d42a",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],
-          "company_entity_id": "FICO-50b2676afbe30c83",
-          "company_canonical_entity_id": "",
-          "company_name": "Higgsfield Inc.",
+          "company_entity_id": "EN-50b2676afbe30c83",
+          "company_canonical_entity_id": "EN-50b2676afbe30c83",
+          "company_name": "Higgsfield",
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "Series B",
@@ -46232,21 +47223,21 @@
       ],
       "portfolio_companies": [
         {
-          "entity_id": "FICO-50b2676afbe30c83",
-          "canonical_entity_id": "",
-          "name": "Higgsfield Inc."
+          "entity_id": "EN-50b2676afbe30c83",
+          "canonical_entity_id": "EN-50b2676afbe30c83",
+          "name": "Higgsfield"
         }
       ],
       "activities": [
         {
-          "activity_id": "IA-04cc321ec654be52",
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "activity_id": "IA-89afa1980ed6f013",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],
-          "company_entity_id": "FICO-50b2676afbe30c83",
-          "company_canonical_entity_id": "",
-          "company_name": "Higgsfield Inc.",
+          "company_entity_id": "EN-50b2676afbe30c83",
+          "company_canonical_entity_id": "EN-50b2676afbe30c83",
+          "company_name": "Higgsfield",
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "Series B",
@@ -46388,21 +47379,21 @@
       ],
       "portfolio_companies": [
         {
-          "entity_id": "FICO-50b2676afbe30c83",
-          "canonical_entity_id": "",
-          "name": "Higgsfield Inc."
+          "entity_id": "EN-50b2676afbe30c83",
+          "canonical_entity_id": "EN-50b2676afbe30c83",
+          "name": "Higgsfield"
         }
       ],
       "activities": [
         {
-          "activity_id": "IA-54b1d68849444407",
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "activity_id": "IA-3a498540b7573928",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],
-          "company_entity_id": "FICO-50b2676afbe30c83",
-          "company_canonical_entity_id": "",
-          "company_name": "Higgsfield Inc.",
+          "company_entity_id": "EN-50b2676afbe30c83",
+          "company_canonical_entity_id": "EN-50b2676afbe30c83",
+          "company_name": "Higgsfield",
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "Series B",
@@ -46675,6 +47666,474 @@
           "source_content_hash": "281ec3c5199ae992",
           "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
           "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
+        }
+      ]
+    },
+    {
+      "id": "INV-5b254c14a17050",
+      "name": "A Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-14",
+      "latest_disclosed_at": "2026-08-14",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "multi_round"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-e4a72fa4f054e9be",
+          "canonical_entity_id": "",
+          "name": "Algorix"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-ab02ac73949eecdb",
+          "funding_insight_id": "FI-aff7d85b56aff6b0",
+          "event_ids": [
+            "EV-1bc31f98fa3e34cc"
+          ],
+          "company_entity_id": "EN-e4a72fa4f054e9be",
+          "company_canonical_entity_id": "",
+          "company_name": "Algorix",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "$11.5M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 11500000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1150 万美元"
+          },
+          "announced_at": "2026-08-14",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-4e441239551a1fd6",
+              "source_url": "https://en.wowtale.net/2026/08/14/234729/",
+              "source_title": "Algorix 完成1150万美元A轮融资，由K2 Investment Partners领投，总融资额达1400万美元",
+              "source_content_hash": "4e6014655ea683a8",
+              "quote": "A Ventures and GU Equity Partners joined as new investors",
+              "quote_hash": "743fd2dbf3333a810f80dc660202cf0502afc2a9e6aa8ef7d418fb8dc074c190"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-4e441239551a1fd6",
+          "source_url": "https://en.wowtale.net/2026/08/14/234729/",
+          "source_title": "Algorix 完成1150万美元A轮融资，由K2 Investment Partners领投，总融资额达1400万美元",
+          "source_content_hash": "4e6014655ea683a8",
+          "quote": "A Ventures and GU Equity Partners joined as new investors",
+          "quote_hash": "743fd2dbf3333a810f80dc660202cf0502afc2a9e6aa8ef7d418fb8dc074c190"
+        }
+      ]
+    },
+    {
+      "id": "INV-b2410d89e7a7b0",
+      "name": "GU Equity Partners",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-14",
+      "latest_disclosed_at": "2026-08-14",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "multi_round"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-e4a72fa4f054e9be",
+          "canonical_entity_id": "",
+          "name": "Algorix"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-74e7f7691eed36b3",
+          "funding_insight_id": "FI-aff7d85b56aff6b0",
+          "event_ids": [
+            "EV-1bc31f98fa3e34cc"
+          ],
+          "company_entity_id": "EN-e4a72fa4f054e9be",
+          "company_canonical_entity_id": "",
+          "company_name": "Algorix",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "$11.5M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 11500000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1150 万美元"
+          },
+          "announced_at": "2026-08-14",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-4e441239551a1fd6",
+              "source_url": "https://en.wowtale.net/2026/08/14/234729/",
+              "source_title": "Algorix 完成1150万美元A轮融资，由K2 Investment Partners领投，总融资额达1400万美元",
+              "source_content_hash": "4e6014655ea683a8",
+              "quote": "A Ventures and GU Equity Partners joined as new investors",
+              "quote_hash": "743fd2dbf3333a810f80dc660202cf0502afc2a9e6aa8ef7d418fb8dc074c190"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-4e441239551a1fd6",
+          "source_url": "https://en.wowtale.net/2026/08/14/234729/",
+          "source_title": "Algorix 完成1150万美元A轮融资，由K2 Investment Partners领投，总融资额达1400万美元",
+          "source_content_hash": "4e6014655ea683a8",
+          "quote": "A Ventures and GU Equity Partners joined as new investors",
+          "quote_hash": "743fd2dbf3333a810f80dc660202cf0502afc2a9e6aa8ef7d418fb8dc074c190"
+        }
+      ]
+    },
+    {
+      "id": "INV-b4e4c5d184e4da",
+      "name": "K2 Investment Partners",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-14",
+      "latest_disclosed_at": "2026-08-14",
+      "role_counts": {
+        "lead": 1
+      },
+      "round_codes": [
+        "multi_round"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-e4a72fa4f054e9be",
+          "canonical_entity_id": "",
+          "name": "Algorix"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-edcbf3ad36714d3a",
+          "funding_insight_id": "FI-aff7d85b56aff6b0",
+          "event_ids": [
+            "EV-1bc31f98fa3e34cc"
+          ],
+          "company_entity_id": "EN-e4a72fa4f054e9be",
+          "company_canonical_entity_id": "",
+          "company_name": "Algorix",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "$11.5M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 11500000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1150 万美元"
+          },
+          "announced_at": "2026-08-14",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-4e441239551a1fd6",
+              "source_url": "https://en.wowtale.net/2026/08/14/234729/",
+              "source_title": "Algorix 完成1150万美元A轮融资，由K2 Investment Partners领投，总融资额达1400万美元",
+              "source_content_hash": "4e6014655ea683a8",
+              "quote": "Series A round led by K2 Investment Partners",
+              "quote_hash": "50ef80ac9bdb15134d82ca7561562bc20369c6c7a67bd41de1ab224f1c92cb34"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-4e441239551a1fd6",
+          "source_url": "https://en.wowtale.net/2026/08/14/234729/",
+          "source_title": "Algorix 完成1150万美元A轮融资，由K2 Investment Partners领投，总融资额达1400万美元",
+          "source_content_hash": "4e6014655ea683a8",
+          "quote": "Series A round led by K2 Investment Partners",
+          "quote_hash": "50ef80ac9bdb15134d82ca7561562bc20369c6c7a67bd41de1ab224f1c92cb34"
+        }
+      ]
+    },
+    {
+      "id": "INV-e9086f50da0467",
+      "name": "Kiwoom Investment",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-14",
+      "latest_disclosed_at": "2026-08-14",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "multi_round"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-e4a72fa4f054e9be",
+          "canonical_entity_id": "",
+          "name": "Algorix"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-d3b42e7e19316067",
+          "funding_insight_id": "FI-aff7d85b56aff6b0",
+          "event_ids": [
+            "EV-1bc31f98fa3e34cc"
+          ],
+          "company_entity_id": "EN-e4a72fa4f054e9be",
+          "company_canonical_entity_id": "",
+          "company_name": "Algorix",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "$11.5M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 11500000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1150 万美元"
+          },
+          "announced_at": "2026-08-14",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-4e441239551a1fd6",
+              "source_url": "https://en.wowtale.net/2026/08/14/234729/",
+              "source_title": "Algorix 完成1150万美元A轮融资，由K2 Investment Partners领投，总融资额达1400万美元",
+              "source_content_hash": "4e6014655ea683a8",
+              "quote": "while Quad Ventures, Kiwoom Investment, and We Ventures—all of whom participated in the September 2024 pre–Series A—returned for follow-on investment",
+              "quote_hash": "31397bbbf4d849a0a3becbba55142a4eee2e73e28d9755257b3de136a962635a"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-4e441239551a1fd6",
+          "source_url": "https://en.wowtale.net/2026/08/14/234729/",
+          "source_title": "Algorix 完成1150万美元A轮融资，由K2 Investment Partners领投，总融资额达1400万美元",
+          "source_content_hash": "4e6014655ea683a8",
+          "quote": "while Quad Ventures, Kiwoom Investment, and We Ventures—all of whom participated in the September 2024 pre–Series A—returned for follow-on investment",
+          "quote_hash": "31397bbbf4d849a0a3becbba55142a4eee2e73e28d9755257b3de136a962635a"
+        }
+      ]
+    },
+    {
+      "id": "INV-6753c968c80bd4",
+      "name": "Quad Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-14",
+      "latest_disclosed_at": "2026-08-14",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "multi_round"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-e4a72fa4f054e9be",
+          "canonical_entity_id": "",
+          "name": "Algorix"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-c711044bb0bcfa62",
+          "funding_insight_id": "FI-aff7d85b56aff6b0",
+          "event_ids": [
+            "EV-1bc31f98fa3e34cc"
+          ],
+          "company_entity_id": "EN-e4a72fa4f054e9be",
+          "company_canonical_entity_id": "",
+          "company_name": "Algorix",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "$11.5M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 11500000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1150 万美元"
+          },
+          "announced_at": "2026-08-14",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-4e441239551a1fd6",
+              "source_url": "https://en.wowtale.net/2026/08/14/234729/",
+              "source_title": "Algorix 完成1150万美元A轮融资，由K2 Investment Partners领投，总融资额达1400万美元",
+              "source_content_hash": "4e6014655ea683a8",
+              "quote": "while Quad Ventures, Kiwoom Investment, and We Ventures—all of whom participated in the September 2024 pre–Series A—returned for follow-on investment",
+              "quote_hash": "31397bbbf4d849a0a3becbba55142a4eee2e73e28d9755257b3de136a962635a"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-4e441239551a1fd6",
+          "source_url": "https://en.wowtale.net/2026/08/14/234729/",
+          "source_title": "Algorix 完成1150万美元A轮融资，由K2 Investment Partners领投，总融资额达1400万美元",
+          "source_content_hash": "4e6014655ea683a8",
+          "quote": "while Quad Ventures, Kiwoom Investment, and We Ventures—all of whom participated in the September 2024 pre–Series A—returned for follow-on investment",
+          "quote_hash": "31397bbbf4d849a0a3becbba55142a4eee2e73e28d9755257b3de136a962635a"
+        }
+      ]
+    },
+    {
+      "id": "INV-49ad92ff76936c",
+      "name": "We Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-14",
+      "latest_disclosed_at": "2026-08-14",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "multi_round"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-e4a72fa4f054e9be",
+          "canonical_entity_id": "",
+          "name": "Algorix"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-17f1bcb81aa21c6b",
+          "funding_insight_id": "FI-aff7d85b56aff6b0",
+          "event_ids": [
+            "EV-1bc31f98fa3e34cc"
+          ],
+          "company_entity_id": "EN-e4a72fa4f054e9be",
+          "company_canonical_entity_id": "",
+          "company_name": "Algorix",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "$11.5M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 11500000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1150 万美元"
+          },
+          "announced_at": "2026-08-14",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-4e441239551a1fd6",
+              "source_url": "https://en.wowtale.net/2026/08/14/234729/",
+              "source_title": "Algorix 完成1150万美元A轮融资，由K2 Investment Partners领投，总融资额达1400万美元",
+              "source_content_hash": "4e6014655ea683a8",
+              "quote": "while Quad Ventures, Kiwoom Investment, and We Ventures—all of whom participated in the September 2024 pre–Series A—returned for follow-on investment",
+              "quote_hash": "31397bbbf4d849a0a3becbba55142a4eee2e73e28d9755257b3de136a962635a"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-4e441239551a1fd6",
+          "source_url": "https://en.wowtale.net/2026/08/14/234729/",
+          "source_title": "Algorix 完成1150万美元A轮融资，由K2 Investment Partners领投，总融资额达1400万美元",
+          "source_content_hash": "4e6014655ea683a8",
+          "quote": "while Quad Ventures, Kiwoom Investment, and We Ventures—all of whom participated in the September 2024 pre–Series A—returned for follow-on investment",
+          "quote_hash": "31397bbbf4d849a0a3becbba55142a4eee2e73e28d9755257b3de136a962635a"
         }
       ]
     },
@@ -117463,6 +118922,566 @@
       ]
     },
     {
+      "id": "INV-ccb176f47658b3",
+      "name": "Adjacent",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-21",
+      "latest_disclosed_at": "2026-08-21",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-573b4dae79a26b4c",
+          "funding_insight_id": "FI-8a42f200f5caa9f3",
+          "event_ids": [
+            "EV-259566f35ea4f66d"
+          ],
+          "company_entity_id": "EN-607a596a603dd679",
+          "company_canonical_entity_id": "",
+          "company_name": "Starcloud",
+          "round": "A轮扩展",
+          "round_code": "series_a_extension",
+          "round_original": "A轮扩展",
+          "amount_original": "$250 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 250000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.5 亿美元"
+          },
+          "announced_at": "2026-08-21",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "历史轮次参投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-64c63dc926fc8a24",
+              "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+              "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+              "source_content_hash": "10f88a25e3d2c819",
+              "quote": "Additional investors included NFX, Nebular, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West and Monolith Power Systems, alongside Y Combinator.",
+              "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-64c63dc926fc8a24",
+          "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+          "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+          "source_content_hash": "10f88a25e3d2c819",
+          "quote": "Additional investors included NFX, Nebular, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West and Monolith Power Systems, alongside Y Combinator.",
+          "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
+        }
+      ]
+    },
+    {
+      "id": "INV-3770942243161b",
+      "name": "Dennis Muilenburg",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "individual",
+      "investor_kind_label": "个人投资者",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-21",
+      "latest_disclosed_at": "2026-08-21",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-83f46ebb1b90f815",
+          "funding_insight_id": "FI-8a42f200f5caa9f3",
+          "event_ids": [
+            "EV-259566f35ea4f66d"
+          ],
+          "company_entity_id": "EN-607a596a603dd679",
+          "company_canonical_entity_id": "",
+          "company_name": "Starcloud",
+          "round": "A轮扩展",
+          "round_code": "series_a_extension",
+          "round_original": "A轮扩展",
+          "amount_original": "$250 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 250000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.5 亿美元"
+          },
+          "announced_at": "2026-08-21",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "历史轮次天使投资人",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-64c63dc926fc8a24",
+              "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+              "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+              "source_content_hash": "10f88a25e3d2c819",
+              "quote": "Angel investors joining the round included former Boeing CEO Dennis Muilenburg, former Starbucks CEO Kevin Johnson and retired U.S. Air Force Gen. Stephen Wilson.",
+              "quote_hash": "0002df1f0ce504a676981ee2c44db107a7be1633f99c52a23dfb40557e754c3c"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-64c63dc926fc8a24",
+          "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+          "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+          "source_content_hash": "10f88a25e3d2c819",
+          "quote": "Angel investors joining the round included former Boeing CEO Dennis Muilenburg, former Starbucks CEO Kevin Johnson and retired U.S. Air Force Gen. Stephen Wilson.",
+          "quote_hash": "0002df1f0ce504a676981ee2c44db107a7be1633f99c52a23dfb40557e754c3c"
+        }
+      ]
+    },
+    {
+      "id": "INV-529204aacfacf6",
+      "name": "EQT Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-21",
+      "latest_disclosed_at": "2026-08-21",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-19dbe851dc7c6fb5",
+          "funding_insight_id": "FI-8a42f200f5caa9f3",
+          "event_ids": [
+            "EV-259566f35ea4f66d"
+          ],
+          "company_entity_id": "EN-607a596a603dd679",
+          "company_canonical_entity_id": "",
+          "company_name": "Starcloud",
+          "round": "A轮扩展",
+          "round_code": "series_a_extension",
+          "round_original": "A轮扩展",
+          "amount_original": "$250 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 250000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.5 亿美元"
+          },
+          "announced_at": "2026-08-21",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "历史轮次领投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-64c63dc926fc8a24",
+              "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+              "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+              "source_content_hash": "10f88a25e3d2c819",
+              "quote": "The Series A round was led by venture capital firm Benchmark and EQT Ventures",
+              "quote_hash": "f6ca65424ceca7d257e5e8c2770717f0e6806f8814a06358b5b30019368e40ef"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-64c63dc926fc8a24",
+          "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+          "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+          "source_content_hash": "10f88a25e3d2c819",
+          "quote": "The Series A round was led by venture capital firm Benchmark and EQT Ventures",
+          "quote_hash": "f6ca65424ceca7d257e5e8c2770717f0e6806f8814a06358b5b30019368e40ef"
+        }
+      ]
+    },
+    {
+      "id": "INV-1956cee08fbb06",
+      "name": "Fuse Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-21",
+      "latest_disclosed_at": "2026-08-21",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-8e1954011dc6af08",
+          "funding_insight_id": "FI-8a42f200f5caa9f3",
+          "event_ids": [
+            "EV-259566f35ea4f66d"
+          ],
+          "company_entity_id": "EN-607a596a603dd679",
+          "company_canonical_entity_id": "",
+          "company_name": "Starcloud",
+          "round": "A轮扩展",
+          "round_code": "series_a_extension",
+          "round_original": "A轮扩展",
+          "amount_original": "$250 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 250000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.5 亿美元"
+          },
+          "announced_at": "2026-08-21",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "历史轮次参投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-64c63dc926fc8a24",
+              "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+              "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+              "source_content_hash": "10f88a25e3d2c819",
+              "quote": "Additional investors included NFX, Nebular, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West and Monolith Power Systems, alongside Y Combinator.",
+              "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-64c63dc926fc8a24",
+          "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+          "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+          "source_content_hash": "10f88a25e3d2c819",
+          "quote": "Additional investors included NFX, Nebular, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West and Monolith Power Systems, alongside Y Combinator.",
+          "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
+        }
+      ]
+    },
+    {
+      "id": "INV-46d04809744df9",
+      "name": "Kevin Johnson",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "individual",
+      "investor_kind_label": "个人投资者",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-21",
+      "latest_disclosed_at": "2026-08-21",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-73bac7f2dd4064f7",
+          "funding_insight_id": "FI-8a42f200f5caa9f3",
+          "event_ids": [
+            "EV-259566f35ea4f66d"
+          ],
+          "company_entity_id": "EN-607a596a603dd679",
+          "company_canonical_entity_id": "",
+          "company_name": "Starcloud",
+          "round": "A轮扩展",
+          "round_code": "series_a_extension",
+          "round_original": "A轮扩展",
+          "amount_original": "$250 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 250000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.5 亿美元"
+          },
+          "announced_at": "2026-08-21",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "历史轮次天使投资人",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-64c63dc926fc8a24",
+              "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+              "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+              "source_content_hash": "10f88a25e3d2c819",
+              "quote": "Angel investors joining the round included former Boeing CEO Dennis Muilenburg, former Starbucks CEO Kevin Johnson and retired U.S. Air Force Gen. Stephen Wilson.",
+              "quote_hash": "0002df1f0ce504a676981ee2c44db107a7be1633f99c52a23dfb40557e754c3c"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-64c63dc926fc8a24",
+          "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+          "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+          "source_content_hash": "10f88a25e3d2c819",
+          "quote": "Angel investors joining the round included former Boeing CEO Dennis Muilenburg, former Starbucks CEO Kevin Johnson and retired U.S. Air Force Gen. Stephen Wilson.",
+          "quote_hash": "0002df1f0ce504a676981ee2c44db107a7be1633f99c52a23dfb40557e754c3c"
+        }
+      ]
+    },
+    {
+      "id": "INV-adfee1c593b13e",
+      "name": "Monolith Power Systems",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-21",
+      "latest_disclosed_at": "2026-08-21",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-c87d4cd4975d74e9",
+          "funding_insight_id": "FI-8a42f200f5caa9f3",
+          "event_ids": [
+            "EV-259566f35ea4f66d"
+          ],
+          "company_entity_id": "EN-607a596a603dd679",
+          "company_canonical_entity_id": "",
+          "company_name": "Starcloud",
+          "round": "A轮扩展",
+          "round_code": "series_a_extension",
+          "round_original": "A轮扩展",
+          "amount_original": "$250 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 250000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.5 亿美元"
+          },
+          "announced_at": "2026-08-21",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "历史轮次参投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-64c63dc926fc8a24",
+              "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+              "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+              "source_content_hash": "10f88a25e3d2c819",
+              "quote": "Additional investors included NFX, Nebular, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West and Monolith Power Systems, alongside Y Combinator.",
+              "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-64c63dc926fc8a24",
+          "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+          "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+          "source_content_hash": "10f88a25e3d2c819",
+          "quote": "Additional investors included NFX, Nebular, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West and Monolith Power Systems, alongside Y Combinator.",
+          "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
+        }
+      ]
+    },
+    {
+      "id": "INV-999de7454264a9",
+      "name": "Nebular",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-21",
+      "latest_disclosed_at": "2026-08-21",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-bcc1ada3e4183e68",
+          "funding_insight_id": "FI-8a42f200f5caa9f3",
+          "event_ids": [
+            "EV-259566f35ea4f66d"
+          ],
+          "company_entity_id": "EN-607a596a603dd679",
+          "company_canonical_entity_id": "",
+          "company_name": "Starcloud",
+          "round": "A轮扩展",
+          "round_code": "series_a_extension",
+          "round_original": "A轮扩展",
+          "amount_original": "$250 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 250000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.5 亿美元"
+          },
+          "announced_at": "2026-08-21",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "历史轮次参投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-64c63dc926fc8a24",
+              "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+              "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+              "source_content_hash": "10f88a25e3d2c819",
+              "quote": "Additional investors included NFX, Nebular, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West and Monolith Power Systems, alongside Y Combinator.",
+              "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-64c63dc926fc8a24",
+          "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+          "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+          "source_content_hash": "10f88a25e3d2c819",
+          "quote": "Additional investors included NFX, Nebular, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West and Monolith Power Systems, alongside Y Combinator.",
+          "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
+        }
+      ]
+    },
+    {
+      "id": "INV-050c8452d1f3dd",
+      "name": "Stephen Wilson",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "individual",
+      "investor_kind_label": "个人投资者",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-21",
+      "latest_disclosed_at": "2026-08-21",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-1b7e708d83ef39f0",
+          "funding_insight_id": "FI-8a42f200f5caa9f3",
+          "event_ids": [
+            "EV-259566f35ea4f66d"
+          ],
+          "company_entity_id": "EN-607a596a603dd679",
+          "company_canonical_entity_id": "",
+          "company_name": "Starcloud",
+          "round": "A轮扩展",
+          "round_code": "series_a_extension",
+          "round_original": "A轮扩展",
+          "amount_original": "$250 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 250000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.5 亿美元"
+          },
+          "announced_at": "2026-08-21",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "历史轮次天使投资人",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-64c63dc926fc8a24",
+              "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+              "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+              "source_content_hash": "10f88a25e3d2c819",
+              "quote": "Angel investors joining the round included former Boeing CEO Dennis Muilenburg, former Starbucks CEO Kevin Johnson and retired U.S. Air Force Gen. Stephen Wilson.",
+              "quote_hash": "0002df1f0ce504a676981ee2c44db107a7be1633f99c52a23dfb40557e754c3c"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-64c63dc926fc8a24",
+          "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+          "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+          "source_content_hash": "10f88a25e3d2c819",
+          "quote": "Angel investors joining the round included former Boeing CEO Dennis Muilenburg, former Starbucks CEO Kevin Johnson and retired U.S. Air Force Gen. Stephen Wilson.",
+          "quote_hash": "0002df1f0ce504a676981ee2c44db107a7be1633f99c52a23dfb40557e754c3c"
+        }
+      ]
+    },
+    {
       "id": "INV-15dd04a75c31ae",
       "name": "GOVO Ventures",
       "aliases": [],
@@ -117599,168 +119618,6 @@
           "source_content_hash": "3f1a4c8f2d28550f",
           "quote": "The latest seed funding includes participation from Prysmian, GOVO Ventures, plus a group of new and previous investors",
           "quote_hash": "381ffb1e6172901645be39df726e69cd9825a9fcd049dbc392ec65583f7ad3a6"
-        }
-      ]
-    },
-    {
-      "id": "INV-7419a156ae74f5",
-      "name": "Cisco",
-      "aliases": [],
-      "canonical_entity_id": "EN-e73b79a0b10f8cdb",
-      "investor_kind": "corporate_investor",
-      "investor_kind_label": "企业投资方",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 0,
-      "historical_or_ambiguous_count": 3,
-      "portfolio_company_count": 0,
-      "first_disclosed_at": "2025-09-09",
-      "latest_disclosed_at": "2026-08-17",
-      "role_counts": {
-        "historical_or_ambiguous": 3
-      },
-      "round_codes": [],
-      "portfolio_companies": [],
-      "activities": [
-        {
-          "activity_id": "IA-295d406adfc15f8d",
-          "funding_insight_id": "FI-4b811c030362045e",
-          "event_ids": [
-            "EV-181cd28d97c4e61d"
-          ],
-          "company_entity_id": "EN-0b79cf2de0ee6b8e",
-          "company_canonical_entity_id": "",
-          "company_name": "Groq",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "Series A",
-          "amount_original": "$350M",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 350000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3.5 亿美元"
-          },
-          "announced_at": "2026-08-17",
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "历史轮次投资方",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-28e142eb564f6762",
-              "source_url": "https://www.verdict.co.uk/groq-obtains-750m-in-funding-ai-inference-technology/",
-              "source_title": "Groq obtains $750m in funding for AI inference technology",
-              "source_content_hash": "b6f5ca4d5c31cfb3",
-              "quote": "Existing backers such as Cisco, Samsung, Altimeter, D1, 1789 Capital, and Infinitum also participated in this round.",
-              "quote_hash": "3b8b0f2d6fdc4e05211295d3d973d1a094f085c2aa05c4ff742f5d14a4850982"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-566062abff5da784",
-          "funding_insight_id": "FI-44726ebdb985f37e",
-          "event_ids": [
-            "EV-4118202ed0f91895"
-          ],
-          "company_entity_id": "EN-0b79cf2de0ee6b8e",
-          "company_canonical_entity_id": "",
-          "company_name": "Groq",
-          "round": "轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "新一轮",
-          "amount_original": "6.5 亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 650000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "6.5 亿美元"
-          },
-          "announced_at": "2026-06-22",
-          "disclosure_status": "partially_disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "既有投资方",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-85e8550490e53490",
-              "source_url": "https://test-news.aibase.com/news/21366",
-              "source_title": "Groq Raises $750 Million in Funding, Valuation Reaches $6.9 Billion",
-              "source_content_hash": "6efab5b69f3f9aa3",
-              "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq.",
-              "quote_hash": "e9d6c950ecfcf10df612acb50b9000d5111cfce790af32af95a51c83ef1ee077"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-332c11cc2595dba2",
-          "funding_insight_id": "FI-1cf34218733257fd",
-          "event_ids": [
-            "EV-85506f9f86779a6d"
-          ],
-          "company_entity_id": "EN-c04bd5ebd10ab696",
-          "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
-          "company_name": "Mistral AI",
-          "round": "C轮",
-          "round_code": "series_c",
-          "round_original": "Series C",
-          "amount_original": "约17亿欧元（约20亿美元）",
-          "amount_normalized": {
-            "currency": "EUR",
-            "value": 1700000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "approximate",
-            "display_zh": "约 17 亿欧元"
-          },
-          "announced_at": "2025-09-09",
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "既有投资方",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-9ce92685289bf3ad",
-              "source_url": "https://grep.news/episode/asml-just-bet-%E2%82%AC1-7b-on-mistral-ai's-european-answer",
-              "source_title": "Tamez Labs: ASML Just Bet €1.7B on Mistral AI's European Answer | Grep News",
-              "source_content_hash": "90d6be41c7b3ea2f",
-              "quote": "Its investor list spans French sovereign capital (Bpifrance), American venture firms (Andreessen Horowitz, General Catalyst, Lightspeed), major industrial corporations (Nvidia, Cisco, IBM, Salesforce Ventures, Samsung)",
-              "quote_hash": "7bb5c81e6a76104c8b1f44381d9a8cba1ea8453b4da0246c96f7e1a420386fb9"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-28e142eb564f6762",
-          "source_url": "https://www.verdict.co.uk/groq-obtains-750m-in-funding-ai-inference-technology/",
-          "source_title": "Groq obtains $750m in funding for AI inference technology",
-          "source_content_hash": "b6f5ca4d5c31cfb3",
-          "quote": "Existing backers such as Cisco, Samsung, Altimeter, D1, 1789 Capital, and Infinitum also participated in this round.",
-          "quote_hash": "3b8b0f2d6fdc4e05211295d3d973d1a094f085c2aa05c4ff742f5d14a4850982"
-        },
-        {
-          "source_id": "FISRC-85e8550490e53490",
-          "source_url": "https://test-news.aibase.com/news/21366",
-          "source_title": "Groq Raises $750 Million in Funding, Valuation Reaches $6.9 Billion",
-          "source_content_hash": "6efab5b69f3f9aa3",
-          "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq.",
-          "quote_hash": "e9d6c950ecfcf10df612acb50b9000d5111cfce790af32af95a51c83ef1ee077"
-        },
-        {
-          "source_id": "FISRC-9ce92685289bf3ad",
-          "source_url": "https://grep.news/episode/asml-just-bet-%E2%82%AC1-7b-on-mistral-ai's-european-answer",
-          "source_title": "Tamez Labs: ASML Just Bet €1.7B on Mistral AI's European Answer | Grep News",
-          "source_content_hash": "90d6be41c7b3ea2f",
-          "quote": "Its investor list spans French sovereign capital (Bpifrance), American venture firms (Andreessen Horowitz, General Catalyst, Lightspeed), major industrial corporations (Nvidia, Cisco, IBM, Salesforce Ventures, Samsung)",
-          "quote_hash": "7bb5c81e6a76104c8b1f44381d9a8cba1ea8453b4da0246c96f7e1a420386fb9"
         }
       ]
     },
@@ -118087,14 +119944,14 @@
       "portfolio_companies": [],
       "activities": [
         {
-          "activity_id": "IA-f31604ffcec72afe",
-          "funding_insight_id": "FI-a9ab795d8c87d3e9",
+          "activity_id": "IA-a7d3d187cf5bbcc2",
+          "funding_insight_id": "FI-94c0eaa68ec2b037",
           "event_ids": [
             "EV-1dba157815d84342"
           ],
-          "company_entity_id": "FICO-50b2676afbe30c83",
-          "company_canonical_entity_id": "",
-          "company_name": "Higgsfield Inc.",
+          "company_entity_id": "EN-50b2676afbe30c83",
+          "company_canonical_entity_id": "EN-50b2676afbe30c83",
+          "company_name": "Higgsfield",
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "Series B",
@@ -118133,6 +119990,76 @@
           "source_content_hash": "0d8d55e9f8e4182e",
           "quote": "with participation from BroadLight Capital, NextEquity, and Menlo Ventures",
           "quote_hash": "cb6eb89aab7c1200185db653dfe353094ec3e34324d608d7317f91f876adc116"
+        }
+      ]
+    },
+    {
+      "id": "INV-5c56d8dc912682",
+      "name": "Kakao Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-14",
+      "latest_disclosed_at": "2026-08-14",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-699febf88b1f2825",
+          "funding_insight_id": "FI-aff7d85b56aff6b0",
+          "event_ids": [
+            "EV-1bc31f98fa3e34cc"
+          ],
+          "company_entity_id": "EN-e4a72fa4f054e9be",
+          "company_canonical_entity_id": "",
+          "company_name": "Algorix",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "$11.5M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 11500000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1150 万美元"
+          },
+          "announced_at": "2026-08-14",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "pre-seed轮投资方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-4e441239551a1fd6",
+              "source_url": "https://en.wowtale.net/2026/08/14/234729/",
+              "source_title": "Algorix 完成1150万美元A轮融资，由K2 Investment Partners领投，总融资额达1400万美元",
+              "source_content_hash": "4e6014655ea683a8",
+              "quote": "Algorix previously secured pre-seed funding from Kakao Ventures in July to build its unified data layer for enterprise AI.",
+              "quote_hash": "646e4ac9248a65dda89dd720b37af4235223fe3668eec6d605bd653278d8cf36"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-4e441239551a1fd6",
+          "source_url": "https://en.wowtale.net/2026/08/14/234729/",
+          "source_title": "Algorix 完成1150万美元A轮融资，由K2 Investment Partners领投，总融资额达1400万美元",
+          "source_content_hash": "4e6014655ea683a8",
+          "quote": "Algorix previously secured pre-seed funding from Kakao Ventures in July to build its unified data layer for enterprise AI.",
+          "quote_hash": "646e4ac9248a65dda89dd720b37af4235223fe3668eec6d605bd653278d8cf36"
         }
       ]
     },

@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-22T00:25:26.916Z",
+    "latestDataDate": "2026-08-22",
+    "currentDate": "2026-08-22",
+    "eventCount": 2307,
+    "quarantinedEventCount": 22
+  },
+  "institution": {
+    "id": "INV-999de7454264a9",
+    "name": "Nebular",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-08-21",
+    "latest_disclosed_at": "2026-08-21",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-bcc1ada3e4183e68",
+        "funding_insight_id": "FI-8a42f200f5caa9f3",
+        "event_ids": [
+          "EV-259566f35ea4f66d"
+        ],
+        "company_entity_id": "EN-607a596a603dd679",
+        "company_canonical_entity_id": "",
+        "company_name": "Starcloud",
+        "round": "A轮扩展",
+        "round_code": "series_a_extension",
+        "round_original": "A轮扩展",
+        "amount_original": "$250 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "announced_at": "2026-08-21",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-64c63dc926fc8a24",
+            "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+            "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+            "source_content_hash": "10f88a25e3d2c819",
+            "quote": "Additional investors included NFX, Nebular, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West and Monolith Power Systems, alongside Y Combinator.",
+            "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-64c63dc926fc8a24",
+        "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+        "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+        "source_content_hash": "10f88a25e3d2c819",
+        "quote": "Additional investors included NFX, Nebular, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West and Monolith Power Systems, alongside Y Combinator.",
+        "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
+      }
+    ]
+  }
+}

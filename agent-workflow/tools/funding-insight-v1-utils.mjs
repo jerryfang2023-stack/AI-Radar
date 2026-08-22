@@ -479,6 +479,14 @@ export function acceptedFundingCompanyIdentityDecisions(reviewFile = {}) {
   return accepted;
 }
 
+export function acceptedFundingCompanyIdentityForCard(reviewFile = {}, company = {}, accepted = null) {
+  const acceptedDecisions = accepted || acceptedFundingCompanyIdentityDecisions(reviewFile);
+  return acceptedDecisions.get(`name|${normalizedName(company?.full_name)}`)
+    || acceptedDecisions.get(`name|${normalizedName(company?.name)}`)
+    || acceptedDecisions.get(company?.entity_id)
+    || null;
+}
+
 function resolvedFundingEntity(name, kind, resolver, acceptedDecisions) {
   const allowed = kind === "product" ? ["产品/服务"] : kind === "person" ? ["人物"] : ["公司/机构"];
   return resolver(name, allowed)
@@ -564,10 +572,7 @@ export function normalizeFundingInsightCard(
   const card = structuredClone(inputCard);
   const resolve = entityResolver(entityIndex);
   const acceptedDecisions = acceptedFundingEntityDecisions(entityIndex, decisionFile);
-  const reviewedCompanies = acceptedFundingCompanyIdentityDecisions(companyIdentityReview);
-  const reviewedCompany = reviewedCompanies.get(`name|${normalizedName(card.company?.full_name)}`)
-    || reviewedCompanies.get(`name|${normalizedName(card.company?.name)}`)
-    || reviewedCompanies.get(card.company?.entity_id);
+  const reviewedCompany = acceptedFundingCompanyIdentityForCard(companyIdentityReview, card.company);
   const companyFullName = clean(card.company?.full_name);
   const companyDisplayName = clean(card.company?.name);
   const resolvedCompany = reviewedCompany
