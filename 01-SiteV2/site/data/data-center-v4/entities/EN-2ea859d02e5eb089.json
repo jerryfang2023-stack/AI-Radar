@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-21T02:05:12.052Z",
-    "latestDataDate": "2026-08-21",
-    "currentDate": "2026-08-21",
-    "eventCount": 2285,
-    "quarantinedEventCount": 20
+    "generatedAt": "2026-08-22T00:25:26.916Z",
+    "latestDataDate": "2026-08-22",
+    "currentDate": "2026-08-22",
+    "eventCount": 2307,
+    "quarantinedEventCount": 22
   },
   "entity": {
     "id": "EN-2ea859d02e5eb089",
@@ -29,7 +29,7 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-19",
-    "lastSeen": "2026-08-21",
+    "lastSeen": "2026-08-22",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -46,7 +46,7 @@
     "timeline": [
       {
         "id": "EV-4c168759119d2668",
-        "dataDate": "2026-08-21",
+        "dataDate": "2026-08-22",
         "date": "2026-08-19",
         "eventType": "model_release",
         "eventTypeLabel": "模型发布",
@@ -86,7 +86,7 @@
       },
       {
         "id": "EV-eb3545d5948aa255",
-        "dataDate": "2026-08-21",
+        "dataDate": "2026-08-22",
         "date": "2026-08-19",
         "eventType": "product_release",
         "eventTypeLabel": "产品发布",
@@ -136,13 +136,13 @@
     {
       "id": "HWC-1d458fe0521f28c1",
       "snapshotKey": "1d458fe0521f28c1",
-      "snapshotId": "HWS-2dbe7feeec9426e2",
+      "snapshotId": "HWS-3e9f9f683fecf793",
       "eventId": "EV-4c168759119d2668",
       "eventIds": [
         "EV-4c168759119d2668"
       ],
-      "dataDate": "2026-08-21",
-      "date": "2026-08-21",
+      "dataDate": "2026-08-22",
+      "date": "2026-08-22",
       "title": "Korean AI / NPU LLM Station",
       "subject": "KT",
       "productNames": [
@@ -157,18 +157,28 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-88e7cb22452ee2d4"
+          "fact_ref": "HWF-79f941e4fccf5797"
         }
       },
       "factCount": 4,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-22",
+          "previousDate": "2026-08-21",
+          "snapshotId": "HWS-3e9f9f683fecf793",
+          "previousSnapshotId": "HWS-2dbe7feeec9426e2",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-21",
-          "hardware_fact_id": "HWF-886bd0fd5e40bf55",
+          "data_date": "2026-08-22",
+          "hardware_fact_id": "HWF-620286241dda693e",
           "fact_type": "product",
           "observed_at": "2026-08-19T00:30:44.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -188,15 +198,15 @@
           "event_refs": [
             "EV-4c168759119d2668"
           ],
-          "claim_ref": "CL-d9d15b5cc41e7ea7",
+          "claim_ref": "CL-642c0f71747c784b",
           "source_refs": [
             "SA-d59a2f78c6134a26"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-22/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-21",
-          "hardware_fact_id": "HWF-d1dd10ca23141b16",
+          "data_date": "2026-08-22",
+          "hardware_fact_id": "HWF-9c66542c9ec3319d",
           "fact_type": "product",
           "observed_at": "2026-08-19T00:30:44.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -216,15 +226,15 @@
           "event_refs": [
             "EV-4c168759119d2668"
           ],
-          "claim_ref": "CL-e9f330df24e0b7c2",
+          "claim_ref": "CL-25083c4ec3ede3c4",
           "source_refs": [
             "SA-d59a2f78c6134a26"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-22/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-21",
-          "hardware_fact_id": "HWF-009f4faedb11ee4c",
+          "data_date": "2026-08-22",
+          "hardware_fact_id": "HWF-3454f04381e7db0b",
           "fact_type": "product",
           "observed_at": "2026-08-19T00:30:44.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -244,15 +254,15 @@
           "event_refs": [
             "EV-4c168759119d2668"
           ],
-          "claim_ref": "CL-d7b9dba561b48d5f",
+          "claim_ref": "CL-ef5c0f336e15ea09",
           "source_refs": [
             "SA-d59a2f78c6134a26"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-22/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-21",
-          "hardware_fact_id": "HWF-88e7cb22452ee2d4",
+          "data_date": "2026-08-22",
+          "hardware_fact_id": "HWF-79f941e4fccf5797",
           "fact_type": "product",
           "observed_at": "2026-08-19T00:30:44.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -272,11 +282,11 @@
           "event_refs": [
             "EV-4c168759119d2668"
           ],
-          "claim_ref": "CL-bdb353c7641d013e",
+          "claim_ref": "CL-1182306e0cf275a8",
           "source_refs": [
             "SA-d59a2f78c6134a26"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-22/hardware-facts.json"
         }
       ],
       "capexFacts": [],
@@ -291,13 +301,13 @@
     {
       "id": "HWC-36adb2bcffad68b4",
       "snapshotKey": "36adb2bcffad68b4",
-      "snapshotId": "HWS-8876d719efa3b9d7",
+      "snapshotId": "HWS-97dd35e0f5a626ae",
       "eventId": "EV-eb3545d5948aa255",
       "eventIds": [
         "EV-eb3545d5948aa255"
       ],
-      "dataDate": "2026-08-21",
-      "date": "2026-08-21",
+      "dataDate": "2026-08-22",
+      "date": "2026-08-22",
       "title": "NPU LLM Station / Korean AI",
       "subject": "KT",
       "productNames": [
@@ -312,18 +322,28 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-dcefe3c8a4e0a412"
+          "fact_ref": "HWF-9ba804d98e817f05"
         }
       },
       "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-22",
+          "previousDate": "2026-08-21",
+          "snapshotId": "HWS-97dd35e0f5a626ae",
+          "previousSnapshotId": "HWS-8876d719efa3b9d7",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-21",
-          "hardware_fact_id": "HWF-dcefe3c8a4e0a412",
+          "data_date": "2026-08-22",
+          "hardware_fact_id": "HWF-9ba804d98e817f05",
           "fact_type": "product",
           "observed_at": "2026-08-19T05:17:03.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -343,11 +363,11 @@
           "event_refs": [
             "EV-eb3545d5948aa255"
           ],
-          "claim_ref": "CL-901f072b1497cfa2",
+          "claim_ref": "CL-c7c78a646c6d723d",
           "source_refs": [
             "SA-05fdc2e5095b6c7b"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-21/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-22/hardware-facts.json"
         }
       ],
       "capexFacts": [],

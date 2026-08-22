@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-21T02:05:12.052Z",
-    "latestDataDate": "2026-08-21",
-    "currentDate": "2026-08-21",
-    "eventCount": 2285,
-    "quarantinedEventCount": 20
+    "generatedAt": "2026-08-22T00:25:26.916Z",
+    "latestDataDate": "2026-08-22",
+    "currentDate": "2026-08-22",
+    "eventCount": 2307,
+    "quarantinedEventCount": 22
   },
   "entity": {
     "id": "EN-373ac021a2c0bb2c",
@@ -28,6 +28,7 @@
       "EV-37cdd2fae39aaa2e",
       "EV-3d1c01d3d1b0bba4",
       "EV-ad1444d8653b37ae",
+      "EV-3b30eda1326a6fb1",
       "EV-89bdda008227fb6b"
     ],
     "viewpointIds": [],
@@ -37,7 +38,7 @@
       "EN-7d3194f79e645c42"
     ],
     "firstSeen": "2026-05-27",
-    "lastSeen": "2026-07-23",
+    "lastSeen": "2026-08-22",
     "relationIds": [
       "REL2-f8319ba3694b2987",
       "REL2-59ab2863fcb1e150"
@@ -52,6 +53,7 @@
         "EV-ad1444d8653b37ae"
       ],
       "hardware": [
+        "EV-3b30eda1326a6fb1",
         "EV-89bdda008227fb6b",
         "EV-31782f0824ae1db1",
         "EV-37cdd2fae39aaa2e",
@@ -62,6 +64,24 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-3b30eda1326a6fb1",
+        "dataDate": "2026-08-22",
+        "date": "2026-08-20",
+        "eventType": "hardware_supply",
+        "eventTypeLabel": "硬件供应",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "谷歌对Marvell的120亿美元押注：芯片供应格局变动对数据中心资本计划意味着什么",
+        "displayTags": [],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-8d4321d936320802",
+          "EN-7d3194f79e645c42",
+          "EN-373ac021a2c0bb2c"
+        ]
+      },
       {
         "id": "EV-89bdda008227fb6b",
         "dataDate": "2026-07-23",
@@ -303,8 +323,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
         "TX-product_form-ai_infrastructure_software",
+        "TX-product_form-chip_accelerator",
         "TX-technology-agentic_execution",
         "TX-deployment_model-on_premise"
       ],
@@ -419,14 +439,16 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-6993e6a7df339e59",
+        "EV-a09f6e93ad868a57",
         "EV-597a6d51533fe5d6",
         "EV-3873f7ea8ac5a93f",
         "EV-3e7db5b8d976bf0e",
         "EV-e3da5e799e746408",
         "EV-f9ebb480a6b58b21",
         "EV-46cd64a76d3767f5",
-        "EV-937b855e723d6ef0",
         "EV-d93dd19a481307ec",
+        "EV-937b855e723d6ef0",
         "EV-40d88f6279d48304",
         "EV-05fea7a5d8b8db46",
         "EV-06e31f68974104ec",
@@ -607,6 +629,9 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-2e5333d00710ce65",
+        "EV-ce32954014cb030d",
+        "EV-3b30eda1326a6fb1",
         "EV-00ffb2c501a37ec8",
         "EV-da06805e06990d63",
         "EV-0c00a6c681f22b98",
@@ -680,10 +705,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
-        "TX-use_case-software_development",
-        "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-use_case-software_development",
+        "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-ai_market_category-enterprise_applications",
         "TX-industry-media_entertainment",
@@ -693,6 +718,7 @@
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-customer_support",
         "TX-technology-agentic_execution",
+        "TX-product_form-developer_tool",
         "TX-industry-aerospace_defense",
         "TX-industry-professional_services",
         "TX-industry-retail_ecommerce",
@@ -735,7 +761,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-21"
+      "lastSeen": "2026-08-22"
     }
   ],
   "relationships": [
@@ -864,6 +890,36 @@
     }
   ],
   "hardware": [
+    {
+      "id": "HW-257d5a367a91c5aa",
+      "eventId": "EV-3b30eda1326a6fb1",
+      "dataDate": "2026-08-22",
+      "date": "2026-08-20",
+      "title": "谷歌对Marvell的120亿美元押注：芯片供应格局变动对数据中心资本计划意味着什么",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_supply",
+      "eventTypeLabel": "硬件供应",
+      "computeLayer": "data_center",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "2026-08-20",
+      "tags": [],
+      "sourceUrl": "https://capacityglobal.com/news/googles-12bn-marvell-bet-what-the-chip-supply-shake-up-means-for-data-centre-capital-plans",
+      "sourceName": "capacityglobal.com",
+      "sourceDate": "2026-08-20",
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-8d4321d936320802",
+        "EN-7d3194f79e645c42",
+        "EN-373ac021a2c0bb2c"
+      ]
+    },
     {
       "id": "HW-2c1e21c6ec3cbc17",
       "eventId": "EV-89bdda008227fb6b",
@@ -1097,6 +1153,71 @@
         "EN-f4bec299df3f4f27",
         "EN-373ac021a2c0bb2c",
         "EN-c13e2f4a44bb01ed"
+      ]
+    }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-268798e83e62dc87",
+      "snapshotKey": "268798e83e62dc87",
+      "snapshotId": "HWS-4b8bddc00ae16f5a",
+      "eventId": "EV-3b30eda1326a6fb1",
+      "eventIds": [
+        "EV-3b30eda1326a6fb1"
+      ],
+      "dataDate": "2026-08-22",
+      "date": "2026-08-22",
+      "title": "Google",
+      "subject": "Google",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "capex"
+      ],
+      "latestValues": {
+        "capex": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-4abd1a1d39cae262"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [],
+      "capexFacts": [
+        {
+          "data_date": "2026-08-22",
+          "hardware_fact_id": "HWF-4abd1a1d39cae262",
+          "fact_type": "capex",
+          "observed_at": "2026-08-20T09:48:10.000Z",
+          "subject_entity_id": "EN-bbdefa2950f49882",
+          "subject_name": "Google",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Marvell's equity-linked silicon deal with Google reshapes the custom chip market, and data centre operators and investors need to understand what it signals about power density, vendor risk and capex planning.",
+          "event_refs": [
+            "EV-3b30eda1326a6fb1"
+          ],
+          "claim_ref": "CL-435de4557c8009d1",
+          "source_refs": [
+            "SA-8752468c5ad61a3b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-22/hardware-facts.json"
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://capacityglobal.com/news/googles-12bn-marvell-bet-what-the-chip-supply-shake-up-means-for-data-centre-capital-plans",
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-8d4321d936320802",
+        "EN-7d3194f79e645c42",
+        "EN-373ac021a2c0bb2c"
       ]
     }
   ]

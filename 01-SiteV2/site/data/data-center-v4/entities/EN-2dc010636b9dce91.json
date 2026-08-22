@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-21T02:05:12.052Z",
-    "latestDataDate": "2026-08-21",
-    "currentDate": "2026-08-21",
-    "eventCount": 2285,
-    "quarantinedEventCount": 20
+    "generatedAt": "2026-08-22T00:25:26.916Z",
+    "latestDataDate": "2026-08-22",
+    "currentDate": "2026-08-22",
+    "eventCount": 2307,
+    "quarantinedEventCount": 22
   },
   "entity": {
     "id": "EN-2dc010636b9dce91",
@@ -35,6 +35,7 @@
       "EV-226a363f84676808",
       "EV-9ae9aa86e51e64a2",
       "EV-6ce6b9c9780b97d9",
+      "EV-ce32954014cb030d",
       "EV-4e3e9b543127b55a"
     ],
     "viewpointIds": [],
@@ -54,7 +55,7 @@
       "EN-a42d5d95234db6c4"
     ],
     "firstSeen": "2026-05-20",
-    "lastSeen": "2026-08-08",
+    "lastSeen": "2026-08-22",
     "relationIds": [
       "REL2-61089e71e75b311e"
     ],
@@ -83,10 +84,51 @@
       "hardware": [],
       "organizationPeople": [],
       "other": [
+        "EV-ce32954014cb030d",
         "EV-4e3e9b543127b55a"
       ]
     },
     "timeline": [
+      {
+        "id": "EV-ce32954014cb030d",
+        "dataDate": "2026-08-22",
+        "date": "2026-08-21",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Nvidia 研究显示：智能体\"缰绳\"（harness）比 AI 模型本身更关键，Claude Opus 5 在 ARC-AGI-3 上达 100% 满分",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-2dc010636b9dce91",
+          "EN-7d3194f79e645c42"
+        ]
+      },
       {
         "id": "EV-73a6143b5ce273e9",
         "dataDate": "2026-08-08",
@@ -1093,8 +1135,8 @@
       "valueId": "infrastructure_compute",
       "eventIds": [
         "EV-19dd4c3a5dd5a94b",
-        "EV-4af14568b1bdeb35",
         "EV-8cb4468fe881602b",
+        "EV-4af14568b1bdeb35",
         "EV-181cd28d97c4e61d",
         "EV-e70a48e36e99d57a",
         "EV-bdcb22b1a53358f5",
@@ -1373,7 +1415,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-21"
+      "lastSeen": "2026-08-22"
     },
     {
       "id": "TX-target_user-developer",
@@ -1714,7 +1756,7 @@
         "HW-304c6370cc157449"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-21"
+      "lastSeen": "2026-08-22"
     },
     {
       "id": "TX-product_form-ai_infrastructure_software",
@@ -1810,7 +1852,7 @@
         "HW-304c6370cc157449"
       ],
       "firstSeen": "2026-04-30",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-22"
     },
     {
       "id": "TX-target_user-business_user",
@@ -2260,7 +2302,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-21"
+      "lastSeen": "2026-08-22"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -2465,6 +2507,8 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-6993e6a7df339e59",
+        "EV-afd50641f48c5e98",
         "EV-1ced8c8a0480d5c2",
         "EV-3873f7ea8ac5a93f",
         "EV-cd7ba52564d4091e",
@@ -2737,8 +2781,9 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
-        "EV-09a29379b6399236",
         "EV-2c17183b71d8b7d1",
+        "EV-ce32954014cb030d",
+        "EV-09a29379b6399236",
         "EV-9db14ad0d6fe3135",
         "EV-7a3a3754522828e1",
         "EV-67a7a3c9f1eabd22",
@@ -2909,6 +2954,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-3ebe8498fb071652",
         "EN-877c3aec832cd410",
         "EN-59bba357145ca539",
         "EN-e3ce9cc5efa9354c",
@@ -3053,9 +3099,9 @@
         "EN-b7bea343b08cce2c",
         "EN-fdb2cc367267ac57",
         "EN-4a639cb888a15d75",
-        "EN-11507a0e2f5e69d5",
         "EN-0616a267820d2c78",
         "EN-286a3c612017ad1d",
+        "EN-11507a0e2f5e69d5",
         "EN-16478186eeecf696",
         "EN-f90aec90acf3dc85",
         "EN-96045bee6a2d2527",
@@ -3500,6 +3546,7 @@
         "EV-26d2874c6ce028d6",
         "EV-3d9aa640411471ea",
         "EV-fd21441fb6e143c3",
+        "EV-a09f6e93ad868a57",
         "EV-78651dfea74b4323",
         "EV-7c53df0cdea33936",
         "EV-2fa8fef6da3a5937",
@@ -3553,6 +3600,7 @@
         "EN-b81c8201acfc7639",
         "EN-87c730bc4f32459e",
         "EN-7df09a7717ef2feb",
+        "EN-6f7ac1823da81d2e",
         "EN-a658fbc24f5e3832",
         "EN-ea3bd73e2b506e00",
         "EN-6c87e5496f592f3c",
@@ -3566,7 +3614,6 @@
         "EN-3c6d89173e6636d7",
         "EN-4b078b39d2fcacc7",
         "EN-522d3edeb64a7ca4",
-        "EN-6f7ac1823da81d2e",
         "EN-de6b71bf77ff4299",
         "EN-8d4321d936320802",
         "EN-7d3194f79e645c42",
@@ -3587,7 +3634,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-21"
+      "lastSeen": "2026-08-22"
     }
   ],
   "fde": [

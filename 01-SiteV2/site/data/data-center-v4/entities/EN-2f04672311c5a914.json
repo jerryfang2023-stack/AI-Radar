@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-21T02:05:12.052Z",
-    "latestDataDate": "2026-08-21",
-    "currentDate": "2026-08-21",
-    "eventCount": 2285,
-    "quarantinedEventCount": 20
+    "generatedAt": "2026-08-22T00:25:26.916Z",
+    "latestDataDate": "2026-08-22",
+    "currentDate": "2026-08-22",
+    "eventCount": 2307,
+    "quarantinedEventCount": 22
   },
   "entity": {
     "id": "EN-2f04672311c5a914",
@@ -22,19 +22,21 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-84baa23ade7a80e3",
       "EV-cc9d9706f9b6c597"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-18",
-    "lastSeen": "2026-08-21",
+    "lastSeen": "2026-08-22",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-84baa23ade7a80e3",
         "EV-cc9d9706f9b6c597"
       ],
       "hardware": [],
@@ -42,6 +44,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-84baa23ade7a80e3",
+        "dataDate": "2026-08-22",
+        "date": "2026-08-18",
+        "eventType": "certification_compliance",
+        "eventTypeLabel": "认证合规",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "研华与相机生态系统合作伙伴完成合作",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2f04672311c5a914",
+          "EN-8d4321d936320802"
+        ]
+      },
       {
         "id": "EV-cc9d9706f9b6c597",
         "dataDate": "2026-08-21",

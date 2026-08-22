@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-22T00:25:26.916Z",
+    "latestDataDate": "2026-08-22",
+    "currentDate": "2026-08-22",
+    "eventCount": 2307,
+    "quarantinedEventCount": 22
+  },
+  "entity": {
+    "id": "EN-98da6889bf82425e",
+    "name": "雷鸟iO",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-de025966562aa596"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-21",
+    "lastSeen": "2026-08-22",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-de025966562aa596"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-de025966562aa596",
+        "dataDate": "2026-08-22",
+        "date": "2026-08-21",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "雷鸟iO发布：两天续航、全天候主动式AI，轻至34g",
+        "displayTags": [],
+        "entityIds": [
+          "EN-98da6889bf82425e"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-152a8b39324b2452",
+      "snapshotKey": "152a8b39324b2452",
+      "snapshotId": "HWS-23fddb33bfaa4cb9",
+      "eventId": "EV-de025966562aa596",
+      "eventIds": [
+        "EV-de025966562aa596"
+      ],
+      "dataDate": "2026-08-22",
+      "date": "2026-08-22",
+      "title": "雷鸟iO",
+      "subject": "雷鸟iO",
+      "productNames": [],
+      "hardwareType": "smart_glasses",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-4286e10bb39c44b0"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-22",
+          "hardware_fact_id": "HWF-4286e10bb39c44b0",
+          "fact_type": "product",
+          "observed_at": "2026-08-21T09:00:06.000Z",
+          "subject_entity_id": "EN-98da6889bf82425e",
+          "subject_name": "雷鸟iO",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "smart_glasses",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "8月21日，全球领先的消费级AR品牌雷鸟创新（RayNeo）举办2026雷鸟AI眼镜新品发布会",
+          "event_refs": [
+            "EV-de025966562aa596"
+          ],
+          "claim_ref": "CL-65e54d79771ab31a",
+          "source_refs": [
+            "SA-051d2e4049a5860f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-22/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://qbitai.com/2026/08/476628.html",
+      "entityIds": [
+        "EN-98da6889bf82425e"
+      ]
+    }
+  ]
+}
