@@ -20,17 +20,64 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "first_disclosed_at": "2025-09-09",
-    "latest_disclosed_at": "2026-08-17",
+    "latest_disclosed_at": "2026-08-21",
     "role_counts": {
-      "historical_or_ambiguous": 3
+      "historical_or_ambiguous": 3,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "series_a_extension"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-607a596a603dd679",
+        "canonical_entity_id": "",
+        "name": "Starcloud"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-3a28e9aae6c5fe6f",
+        "funding_insight_id": "FI-8a42f200f5caa9f3",
+        "event_ids": [
+          "EV-259566f35ea4f66d"
+        ],
+        "company_entity_id": "EN-607a596a603dd679",
+        "company_canonical_entity_id": "",
+        "company_name": "Starcloud",
+        "round": "A轮扩展",
+        "round_code": "series_a_extension",
+        "round_original": "A轮扩展",
+        "amount_original": "$250 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "announced_at": "2026-08-21",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-05f582b31c0a37a3",
+            "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+            "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+            "source_content_hash": "8e63b4f9948a4c5f",
+            "quote": "included participation from Nvidia and Cisco",
+            "quote_hash": "ba957f02af9d417dd21612b2bff886f779d1f47bd92f8e1cb261b083de3ad479"
+          }
+        ]
+      },
       {
         "activity_id": "IA-295d406adfc15f8d",
         "funding_insight_id": "FI-4b811c030362045e",
@@ -147,6 +194,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-05f582b31c0a37a3",
+        "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+        "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+        "source_content_hash": "8e63b4f9948a4c5f",
+        "quote": "included participation from Nvidia and Cisco",
+        "quote_hash": "ba957f02af9d417dd21612b2bff886f779d1f47bd92f8e1cb261b083de3ad479"
+      },
       {
         "source_id": "FISRC-28e142eb564f6762",
         "source_url": "https://www.verdict.co.uk/groq-obtains-750m-in-funding-ai-inference-technology/",

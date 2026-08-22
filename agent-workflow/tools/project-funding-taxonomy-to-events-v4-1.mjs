@@ -5,7 +5,10 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { taxonomyEvidenceSegmentRelevant } from "./build-data-center-v4.mjs";
-import { acceptedFundingCompanyIdentityDecisions } from "./funding-insight-v1-utils.mjs";
+import {
+  acceptedFundingCompanyIdentityDecisions,
+  acceptedFundingCompanyIdentityForCard,
+} from "./funding-insight-v1-utils.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const dataCenterRoot = path.join(root, "01-SiteV2/content/11-databases/data-center-v4");
@@ -188,7 +191,10 @@ export function buildReviewedEventClassifications({
     if (!event) throw new Error(`Reviewed taxonomy decision has no canonical event: ${decision.event_id}`);
     const card = cardByEvent.get(decision.event_id);
     if (!card) throw new Error(`Reviewed taxonomy decision has no Funding Insight card: ${decision.event_id}`);
-    const reviewedCompany = reviewedCompanies.get(card.company?.entity_id);
+    const reviewedCompany = acceptedFundingCompanyIdentityForCard(companyIdentityReview, card.company, reviewedCompanies);
+    const reviewedCanonicalCompany = reviewedCompany && !reviewedCompany.id.startsWith("FICO-")
+      ? reviewedCompany
+      : null;
     const canonicalEntity = canonicalEntityByName.get(nameKey(card.company?.full_name))
       || canonicalEntityByName.get(nameKey(card.company?.name));
     const company = canonicalEntity
@@ -197,10 +203,10 @@ export function buildReviewedEventClassifications({
         company_name: canonicalEntity.name,
         resolution: "canonical_entity_profile_exact",
       }
-      : reviewedCompany
+      : reviewedCanonicalCompany
       ? {
-        entity_id: reviewedCompany.id,
-        company_name: reviewedCompany.name,
+        entity_id: reviewedCanonicalCompany.id,
+        company_name: reviewedCanonicalCompany.name,
         resolution: "reviewed_company_identity",
       }
       : resolveReviewedCompany(card, entitiesById, entityIdByName);

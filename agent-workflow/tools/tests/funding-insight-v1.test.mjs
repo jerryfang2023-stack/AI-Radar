@@ -10,6 +10,8 @@ import {
   FUNDING_INSIGHT_VERSION,
   FUNDING_TARGET_USER_IDS,
   FUNDING_USE_CASE_IDS,
+  acceptedFundingCompanyIdentityForCard,
+  acceptedFundingCompanyIdentityDecisions,
   buildFundingEntityReviewQueue,
   canonicalFundingEventAmount,
   ensureCanonicalFundingEvidence,
@@ -1015,6 +1017,31 @@ test("融资透视自动化在商业事件工作流后增量研究、同步并�
   assert.doesNotMatch(fundingJob, /steps\.run-date\.outputs\.date/u);
 });
 
+test("商业事件工作流原子发布融资卡、机构索引与数据中心投影", () => {
+  const workflow = fs.readFileSync(
+    path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"),
+    "utf8",
+  );
+  const fundingStep = workflow.slice(
+    workflow.indexOf("      - name: Research, gate, and publish Funding Insights"),
+    workflow.indexOf("      - name: Record funding supply health"),
+  );
+  const fundingCommit = workflow.slice(
+    workflow.indexOf('          if [ "${{ steps.funding-insights.outcome }}" = "success" ]; then'),
+    workflow.indexOf('          if [ "${{ steps.opportunity-map-v4.outcome }}" = "success" ]; then'),
+  );
+  assert.match(
+    fundingStep,
+    /build-funding-insights-frontstage\.mjs[\s\S]*build:investment-institutions[\s\S]*build:data-center-site[\s\S]*translate:public-structured-fields[\s\S]*classify:funding-taxonomy-v4\.1[\s\S]*project:funding-taxonomy-events[\s\S]*sync-light-data-lake[\s\S]*build:trend-radar-site[\s\S]*build:opportunity-map-site[\s\S]*assert:taxonomy-consistency[\s\S]*frontstage-regression-gate\.mjs/u,
+    "business-signals publication must gate the complete funding projection before commit",
+  );
+  assert.match(
+    fundingCommit,
+    /if \[ "\$\{\{ steps\.funding-insights\.outcome \}\}" = "success" \]; then[\s\S]*reviewed-event-classifications\.json[\s\S]*taxonomy-decisions-v4-1\.json[\s\S]*investment-institutions-v1\.json[\s\S]*data-center-v4-frontstage\.json[\s\S]*site\/data\/data-center-v4[\s\S]*trend-radar-v1\.json[\s\S]*opportunity-evidence-v2\.json/u,
+    "business-signals publication must stage the institution registry and split Data Center projection with funding cards",
+  );
+});
+
 test("融资主体解析优先选择被投公司而不是投资方", () => {
   const entities = [
     { entity_id: "EN-OPENAI", entity_type: "organization_candidate", canonical_name: "OpenAI" },
@@ -1688,6 +1715,34 @@ test("经审核的公司别名合并会让同一融资轮次跨实体 ID 聚合"
   assert.equal(cards[0].company.entity_id, "EN-aligned-brand");
   assert.equal(cards[0].company.name, "Aligned");
   assert.deepEqual(cards[0].source_event_ids.sort(), ["EV-aligned-brand", "EV-aligned-legal"]);
+});
+
+test("经审核的公司名称可将历史应用身份对齐到新出现的规范实体", () => {
+  const card = validCard();
+  card.company.entity_id = "FICO-higgsfield";
+  card.company.name = "Higgsfield Inc.";
+  card.company.full_name = "Higgsfield Inc.";
+  const identityReview = {
+    decisions: [{
+      decision_id: "FICID-HIGGSFIELD",
+      entity_id: "FICO-higgsfield",
+      application_entity_id: "EN-higgsfield",
+      current: { name: "Higgsfield Inc.", catalog_type: "company" },
+      match_names: ["Higgsfield", "Higgsfield Inc."],
+      action: "correct",
+      merge_into_entity_id: "",
+      canonical: { name: "Higgsfield", catalog_type: "company" },
+      review_status: "accepted",
+      evidence: { source_url: "https://example.com/higgsfield", quote: "Higgsfield Inc. is a company" },
+      rationale: "reviewed exact company identity",
+    }],
+  };
+  const normalized = normalizeFundingInsightCard(card, {}, {}, identityReview);
+  assert.equal(normalized.company.entity_id, "EN-higgsfield");
+  assert.equal(normalized.company.application_entity_id, "EN-higgsfield");
+  assert.equal(normalized.company.canonical_entity_consistent, true);
+  assert.equal(acceptedFundingCompanyIdentityDecisions(identityReview).get("FICO-higgsfield"), undefined);
+  assert.equal(acceptedFundingCompanyIdentityForCard(identityReview, card.company).id, "EN-higgsfield");
 });
 
 test("company identity decisions require evidence and an accepted merge target", () => {

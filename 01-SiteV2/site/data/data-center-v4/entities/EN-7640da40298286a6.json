@@ -26,9 +26,9 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
+      "TX-target_user-public_sector_user",
       "TX-product_form-chip_accelerator",
-      "TX-product_form-compute_cloud_service",
-      "TX-target_user-public_sector_user"
+      "TX-product_form-compute_cloud_service"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-02",
@@ -102,6 +102,41 @@
   "relatedEntities": [],
   "relationships": [],
   "taxonomyNodes": [
+    {
+      "id": "TX-target_user-public_sector_user",
+      "name": "公共部门用户",
+      "nodeType": "target_user",
+      "typeLabel": "目标用户",
+      "valueId": "public_sector_user",
+      "eventIds": [
+        "EV-259566f35ea4f66d",
+        "EV-60f219702a66bf38",
+        "EV-82e77abb1a77f81c",
+        "EV-ceb23160ad25e497",
+        "EV-9486e14e99499e3b",
+        "EV-ef7346378fcf9746",
+        "EV-e0ecb5f81a273447",
+        "EV-a3ba586cbc57b5fd",
+        "EV-a86b04e679044c45"
+      ],
+      "entityIds": [
+        "EN-607a596a603dd679",
+        "EN-6861f63c27eb0ada",
+        "EN-92dd63c8e5c77e8a",
+        "EN-6ea730515425a60f",
+        "EN-05f6ecf01ac4ebec",
+        "EN-e78bdebae031095b",
+        "EN-afff1ef2d34b618e",
+        "EN-7035f6607ad2d162",
+        "EN-7640da40298286a6"
+      ],
+      "fdeIds": [
+        "FDE-5ea7f3d69a03d417"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-03-19",
+      "lastSeen": "2026-08-22"
+    },
     {
       "id": "TX-product_form-chip_accelerator",
       "name": "芯片与加速器",
@@ -398,39 +433,6 @@
       ],
       "firstSeen": "2026-04-30",
       "lastSeen": "2026-08-21"
-    },
-    {
-      "id": "TX-target_user-public_sector_user",
-      "name": "公共部门用户",
-      "nodeType": "target_user",
-      "typeLabel": "目标用户",
-      "valueId": "public_sector_user",
-      "eventIds": [
-        "EV-60f219702a66bf38",
-        "EV-82e77abb1a77f81c",
-        "EV-ceb23160ad25e497",
-        "EV-9486e14e99499e3b",
-        "EV-ef7346378fcf9746",
-        "EV-e0ecb5f81a273447",
-        "EV-a3ba586cbc57b5fd",
-        "EV-a86b04e679044c45"
-      ],
-      "entityIds": [
-        "EN-6861f63c27eb0ada",
-        "EN-92dd63c8e5c77e8a",
-        "EN-6ea730515425a60f",
-        "EN-05f6ecf01ac4ebec",
-        "EN-e78bdebae031095b",
-        "EN-afff1ef2d34b618e",
-        "EN-7035f6607ad2d162",
-        "EN-7640da40298286a6"
-      ],
-      "fdeIds": [
-        "FDE-5ea7f3d69a03d417"
-      ],
-      "hardwareIds": [],
-      "firstSeen": "2026-03-19",
-      "lastSeen": "2026-08-06"
     }
   ],
   "fde": [

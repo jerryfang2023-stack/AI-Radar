@@ -22,20 +22,21 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 13,
+    "current_round_count": 14,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 12,
+    "portfolio_company_count": 13,
     "first_disclosed_at": "2025-09-09",
-    "latest_disclosed_at": "2026-08-19",
+    "latest_disclosed_at": "2026-08-21",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 12
+      "participant": 13
     },
     "round_codes": [
       "multi_round",
       "seed",
       "series_a",
+      "series_a_extension",
       "series_c",
       "series_f",
       "series_g",
@@ -93,6 +94,11 @@
         "name": "River AI"
       },
       {
+        "entity_id": "EN-607a596a603dd679",
+        "canonical_entity_id": "",
+        "name": "Starcloud"
+      },
+      {
         "entity_id": "EN-816bab802b34b308",
         "canonical_entity_id": "",
         "name": "Together AI"
@@ -104,6 +110,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a2e8ac368950fa78",
+        "funding_insight_id": "FI-8a42f200f5caa9f3",
+        "event_ids": [
+          "EV-259566f35ea4f66d"
+        ],
+        "company_entity_id": "EN-607a596a603dd679",
+        "company_canonical_entity_id": "",
+        "company_name": "Starcloud",
+        "round": "A轮扩展",
+        "round_code": "series_a_extension",
+        "round_original": "A轮扩展",
+        "amount_original": "$250 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "announced_at": "2026-08-21",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-05f582b31c0a37a3",
+            "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+            "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+            "source_content_hash": "8e63b4f9948a4c5f",
+            "quote": "included participation from Nvidia and Cisco",
+            "quote_hash": "ba957f02af9d417dd21612b2bff886f779d1f47bd92f8e1cb261b083de3ad479"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d63344b16ac5cd63",
         "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
@@ -673,6 +717,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-05f582b31c0a37a3",
+        "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+        "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+        "source_content_hash": "8e63b4f9948a4c5f",
+        "quote": "included participation from Nvidia and Cisco",
+        "quote_hash": "ba957f02af9d417dd21612b2bff886f779d1f47bd92f8e1cb261b083de3ad479"
+      },
+      {
         "source_id": "FISRC-a258f732874d60d6",
         "source_url": "https://siliconangle.com/2026/08/18/inference-chip-startup-etched-raises-another-700m-at-21b-valuation/",
         "source_title": "Inference chip startup Etched raises $700M more at $21B valuation - SiliconANGLE",
@@ -819,7 +871,7 @@
     ],
     "translations": {
       "zh-CN": {
-        "activities[0].role": {
+        "activities[1].role": {
           "text": "2026年7月Series C参投",
           "source_hash": "ca89a4b6213c63b73693d1f4cbdbc294103169f8c18273db948594868797614d",
           "provider": "deepseek",

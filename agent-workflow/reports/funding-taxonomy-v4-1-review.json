@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-15T06:11:46.646Z",
+    "generated_at": "2026-08-22T06:33:31.315Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 277,
-    "input_hash": "22466a2773393652",
+    "decision_count": 293,
+    "input_hash": "b812f39f744748c6",
     "override_count": 17,
-    "needs_review_count": 0,
-    "low_confidence_count": 2
+    "needs_review_count": 3,
+    "low_confidence_count": 9
   },
   "decisions": [
     {
@@ -5476,6 +5476,343 @@
       "confidence": 0.75,
       "needs_review": false,
       "rationale": "Optimly 提供品牌信任基础设施，构建 AI 品牌索引供 AI 代理调用，属于为其他 AI 产品提供数据/基础设施的范畴，而非面向单一行业或跨行业业务功能。"
+    },
+    {
+      "event_id": "EV-13e08bc37724e276",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "financial_services",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "data_analysis",
+        "productivity_enterprise_workflows",
+        "finance_accounting"
+      ],
+      "industry_ids": [
+        "financial_services"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "产品围绕私人信贷公司的专业数据、会计信息和文件工作流构建，属于单一行业（金融服务）的行业应用，而非跨行业企业应用或基础设施。"
+    },
+    {
+      "event_id": "EV-e70a48e36e99d57a",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_compute_system",
+      "use_case_ids": [
+        "software_development",
+        "data_analysis",
+        "research_discovery"
+      ],
+      "industry_ids": [
+        "financial_services",
+        "healthcare_life_sciences",
+        "retail_ecommerce",
+        "manufacturing",
+        "media_entertainment",
+        "education",
+        "government_public_sector",
+        "energy_utilities",
+        "telecommunications",
+        "automotive_transportation",
+        "professional_services",
+        "construction_real_estate",
+        "food_hospitality",
+        "aerospace_defense",
+        "agriculture",
+        "logistics_supply_chain",
+        "legal_services"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user",
+        "researcher"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "英伟达提供GPU、高速网络、系统软件和CUDA生态，属于为其他AI产品构建者提供硬件与计算基础设施，符合infrastructure_compute。"
+    },
+    {
+      "event_id": "EV-df8954acf9a13848",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "finance_accounting"
+      ],
+      "industry_ids": [
+        "professional_services",
+        "construction_real_estate"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "证据显示Thrive收购传统企业并植入AI工作流，覆盖会计、IT和建筑环境监管服务，跨多个行业，但产品形态和主要功能边界不够清晰，需人工复核。"
+    },
+    {
+      "event_id": "EV-181cd28d97c4e61d",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "compute_cloud_service",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "证据显示Groq从AI芯片商转型为提供GPU和AI基础设施服务的neocloud公司，直接向开发者及企业提供算力云服务，属于基础设施计算中的计算基础设施。"
+    },
+    {
+      "event_id": "EV-1dba157815d84342",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "marketing",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "content_creation",
+        "marketing"
+      ],
+      "industry_ids": [
+        "media_entertainment"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.75,
+      "needs_review": false,
+      "rationale": "Higgsfield为专业创作者、品牌和机构提供生成式AI视频与图像创作平台，并推出营销代理Supercomputer，核心是跨行业创意与营销工作流，归入企业应用中的营销。"
+    },
+    {
+      "event_id": "EV-c6c297156ff274ac",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.7,
+      "needs_review": false,
+      "rationale": "OdyssLife的首款产品Odyss N1是全天候AI智能项链，持续感知并记录用户饮食和运动行为，围绕健康医疗场景的专用数据与工作流，归入行业应用中的医疗健康。"
+    },
+    {
+      "event_id": "EV-d43103952399bc68",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "customer_support"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "Wispr提供AI语音转文字和会议记录工具，面向跨行业办公与沟通场景，属于企业应用中的生产力与工作流。"
+    },
+    {
+      "event_id": "EV-83085b0046c7275c",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "knowledge_search",
+        "data_analysis"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": false,
+      "rationale": "Ontora 通过 AI 代理持续访谈员工以映射实际工作流程，属于跨行业的业务流程发现与运营智能，不涉及物理世界执行，也不是面向 AI 构建者的基础设施，因此归入企业应用下的生产力/企业工作流。"
+    },
+    {
+      "event_id": "EV-a81c5dc2e9abff3a",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "data_analysis",
+        "knowledge_search"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "energy_utilities"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "证据明确指向工业领域专用生成式AI平台，连接SCADA、PLM、ERP等工业系统，围绕工业数据和合规工作流构建，属于行业应用而非通用基础设施。"
+    },
+    {
+      "event_id": "EV-4af14568b1bdeb35",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_compute_system",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Etched自研芯片、机架和软件，为前沿模型推理提供硬件计算基础设施，属于基础设施计算中的硬件/计算层。"
+    },
+    {
+      "event_id": "EV-75452672c9976d73",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "model_agent_security",
+      "product_form_id": "security_software",
+      "use_case_ids": [
+        "security_operations",
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "GitHub Secure Open Source Fund聚焦开源软件安全，提供安全工具和AI辅助工作流，但证据未明确其核心产品是安全基础设施还是开发者工具，需复核。"
+    },
+    {
+      "event_id": "EV-8cb4468fe881602b",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "telecommunications"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": false,
+      "rationale": "Relativity Networks定义分布式AI的网络层，提供空心光纤ChronoCore™，属于AI计算基础设施中的硬件/网络基础设施。"
+    },
+    {
+      "event_id": "EV-19dd4c3a5dd5a94b",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_compute_system",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Etched 构建 AI 推理集群，属于为其他 AI 产品提供硬件/计算基础设施，符合 infrastructure_compute > hardware_computing > computing_infrastructure。"
+    },
+    {
+      "event_id": "EV-1bc31f98fa3e34cc",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "data_preparation_curation",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "data_analysis",
+        "knowledge_search"
+      ],
+      "industry_ids": [
+        "financial_services",
+        "manufacturing",
+        "telecommunications",
+        "government_public_sector",
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "证据显示Algorix提供企业级AI数据基础设施，Akasic平台覆盖数据连接、采集、转换及AI推理，旗舰产品AkasicDB统一图、向量和关系数据库，属于为其他AI产品构建者提供数据基础设施，故归入infrastructure_compute下的data。"
+    },
+    {
+      "event_id": "EV-8ad153b984ba8729",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "model_agent_security",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "security_operations",
+        "software_development"
+      ],
+      "industry_ids": [
+        "professional_services",
+        "government_public_sector"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "该基金提供Claude积分用于开源软件漏洞修补和安全自动化，属于安全基础设施支持，但证据未明确其自身产品形态是平台还是服务，且主要面向开源安全生态，边界存在不确定性。"
+    },
+    {
+      "event_id": "EV-259566f35ea4f66d",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_compute_system",
+      "use_case_ids": [
+        "data_analysis",
+        "research_discovery"
+      ],
+      "industry_ids": [
+        "government_public_sector",
+        "telecommunications",
+        "aerospace_defense"
+      ],
+      "target_user_ids": [
+        "developer",
+        "researcher",
+        "public_sector_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Starcloud开发在轨卫星执行AI推理，提供轨道数据中心和计算基础设施，属于为AI构建者提供硬件计算资源，故归入infrastructure_compute下的hardware_computing。"
     }
   ],
   "inputs": [
@@ -7044,6 +7381,42 @@
       }
     },
     {
+      "event_id": "EV-1bc31f98fa3e34cc",
+      "funding_insight_id": "FI-06b141d6e3df6230",
+      "company_name": "Algorix",
+      "company_full_name": "Algorix",
+      "website": "",
+      "current_sector": "企业级AI数据基础设施",
+      "company_evidence_quotes": [
+        "South Korean enterprise AI data infrastructure startup Algorix has raised $11.5 million (KRW 17 billion) in a Series A round led by K2 Investment Partners"
+      ],
+      "products": [
+        {
+          "name": "Akasic",
+          "evidence_quotes": [
+            "Algorix offers the Akasic platform, a full-stack AI data infrastructure that spans fragmented enterprise data connectivity, collection and transformation, AI inference, and agentic AI execution."
+          ]
+        },
+        {
+          "name": "AkasicDB",
+          "evidence_quotes": [
+            "The platform’s flagship product, AkasicDB, is an AI-native database engine that unifies graph, vector, and relational databases in a single system."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Agency for Defense Development",
+        "Hanwha Ocean",
+        "Hyundai Motor Company",
+        "KB Securities",
+        "LG Uplus"
+      ],
+      "current_classification": {
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-439ba8d5f2f575c4",
       "funding_insight_id": "FI-e248db193daff590",
       "company_name": "Aligned",
@@ -7452,6 +7825,45 @@
         }
       ],
       "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
+      "event_id": "EV-a81c5dc2e9abff3a",
+      "funding_insight_id": "FI-168dcf41bf120176",
+      "company_name": "Articul8 AI",
+      "company_full_name": "Articul8 AI",
+      "website": "articul8.ai",
+      "current_sector": "工业领域专用生成式AI平台",
+      "company_evidence_quotes": [
+        "Articul8 AI is the enterprise domain-specific generative AI platform for mission-critical and regulated industries."
+      ],
+      "products": [
+        {
+          "name": "Articul8 Platform",
+          "evidence_quotes": [
+            "Articul8 delivers a vertically integrated enterprise AI platform purpose-built for industrial data and mission-critical operations.",
+            "The company's platform combines Data Perception for multimodal data intelligence, AgentMesh for multi-AI agent reasoning and orchestration, and domain-specific GenAI models trained for industrial use cases."
+          ]
+        },
+        {
+          "name": "Data Perception",
+          "evidence_quotes": [
+            "Its Data Perception product connects directly to more than 25 enterprise and operational systems, including Supervisory Control and Data Acquisition (SCADA) systems, data historians, Product Lifecycle Management (PLM) platforms, Enterprise Resource Planning (ERP) systems, engineering drawings, sensor feeds, maintenance systems, and document repositories, creating a unified knowledge graph without requiring data movement."
+          ]
+        },
+        {
+          "name": "AgentMesh",
+          "evidence_quotes": [
+            "AgentMesh reasons at runtime across multiple AI agents that work collaboratively on engineering workflows, diagnose root causes, validate compliance, and answer operational questions, with every action explainable and auditable."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Intel"
+      ],
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
         "market_category_id": "industry_applications"
@@ -8076,6 +8488,32 @@
       }
     },
     {
+      "event_id": "EV-8ad153b984ba8729",
+      "funding_insight_id": "FI-ebd468c30b43d8d6",
+      "company_name": "Defender Advantage Fund",
+      "company_full_name": "Defender Advantage Fund",
+      "website": "",
+      "current_sector": "网络安全与开源软件安全",
+      "company_evidence_quotes": [
+        "Our new Defender Advantage Fund (0xDAF) will provide $35 million in credits to organizations working to patch vulnerabilities in open-source projects, automate parts of the process of scanning and patching open-source software, and experiment with new security approaches.",
+        "the new Defender Advantage Fund (0xDAF) will distribute $35 million in Claude credits to organizations securing open-source software"
+      ],
+      "products": [
+        {
+          "name": "Defender Advantage Fund (0xDAF)",
+          "evidence_quotes": [
+            "Our new Defender Advantage Fund (0xDAF) will provide $35 million in credits to organizations working to patch vulnerabilities in open-source projects, automate parts of the process of scanning and patching open-source software, and experiment with new security approaches.",
+            "Grants will focus on three areas: patching live vulnerabilities in widely used projects, automating scanning and patching in ways other projects can replicate, and helping projects pursue more ambitious security approaches that make them resistant to whole classes of attack."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "end_user_application",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-7585b033d4005977",
       "funding_insight_id": "FI-7c921e92b2006df5",
       "company_name": "Didero",
@@ -8278,6 +8716,30 @@
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
         "market_category_id": "enterprise_applications"
+      }
+    },
+    {
+      "event_id": "EV-13e08bc37724e276",
+      "funding_insight_id": "FI-b37c32bba027be30",
+      "company_name": "Ellis AI",
+      "company_full_name": "Ellis AI",
+      "website": "",
+      "current_sector": "金融科技",
+      "company_evidence_quotes": [
+        "Ellis AI announced Thursday its emergence from stealth with $10 million in seed funding from investors including First Round Capital, 645 Ventures, Harlem Capital, Khosla Ventures, Thrive Capital, Slow Capital, Kearny Jackson, and Ariel Alternatives CEO Mellody Hobson."
+      ],
+      "products": [
+        {
+          "name": "Ellis AI平台",
+          "evidence_quotes": [
+            "The company seeks to connect and centralize into one easily accessible platform all the scattered software, accounting information, and documents a private credit firm would use. The system can flag discrepancies in the data and uses AI agents to help perform tasks like portfolio monitoring and preparing reports."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -8524,6 +8986,59 @@
       "customer_names": [],
       "current_classification": {
         "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-19dd4c3a5dd5a94b",
+      "funding_insight_id": "FI-8230cfbd37025db0",
+      "company_name": "Etched",
+      "company_full_name": "Etched",
+      "website": "",
+      "current_sector": "AI推理硬件与半导体",
+      "company_evidence_quotes": [
+        "Etched, a US-based company that builds inference clusters for AI workloads"
+      ],
+      "products": [
+        {
+          "name": "Frontier inference clusters",
+          "evidence_quotes": [
+            "Etched delivers its AI tech as full systems that it calls “frontier inference clusters.”",
+            "Etched said its clusters are running large mixture-of-experts models and non-transformer designs, supported by two technologies it calls Low Voltage Inference and Cluster Scale Memory."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Jane Street"
+      ],
+      "current_classification": {
+        "product_form_id": "ai_compute_system",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-4af14568b1bdeb35",
+      "funding_insight_id": "FI-961f80b02e32c054",
+      "company_name": "Etched",
+      "company_full_name": "Etched",
+      "website": "https://etched.com/",
+      "current_sector": "AI推理硬件与基础设施",
+      "company_evidence_quotes": [
+        "AI 芯片初创企业 Etched 估值飙升至 210 亿美元，首批机架出货 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 AI 芯片初创企业 Etched 估值飙升至 210 亿美元，首批机架出货 2026/8/19 17:31:32 来源： IT之家 作者： 溯波（实习） 责编： 溯波 评论： IT之家 8 月 19 日消息，AI 芯片初创企业 Etched 当地时间 18 日宣布，其以 210 亿美元 （IT之家注：现汇率约合 1,418.95 亿元人民币） 估值完成了 7 亿美元 （现汇率约合 47.3 亿元人民币） 规模的融资。"
+      ],
+      "products": [
+        {
+          "name": "Frontier Inference Clusters",
+          "evidence_quotes": [
+            "We're building a new category of AI hardware: frontier inference clusters. We co-design chips, racks, software, and manufacturing methods so frontier models can run with best-in-class throughput, latency, cost, and power efficiency for both prefill and decode workloads."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Jane Street"
+      ],
+      "current_classification": {
+        "product_form_id": "ai_compute_system",
         "market_category_id": "infrastructure_compute"
       }
     },
@@ -9089,6 +9604,33 @@
       }
     },
     {
+      "event_id": "EV-75452672c9976d73",
+      "funding_insight_id": "FI-cf9a1679ef65ee14",
+      "company_name": "GitHub",
+      "company_full_name": "GitHub",
+      "website": "https://github.com",
+      "current_sector": "开源软件安全",
+      "company_evidence_quotes": [
+        "The Secure Fund invested more than $500,000 across 50 projects , pairing maintainers with GitHub Security Lab experts, GitHub security tools, AI-assisted workflows, and a peer community."
+      ],
+      "products": [
+        {
+          "name": "GitHub Secure Open Source Fund",
+          "evidence_quotes": [
+            "The GitHub Secure Open Source Fund links funding directly to measurable security outcomes. The program combines hands-on security education, direct engagement with GitHub Security Lab experts, and a trusted community where maintainers can work through security challenges with their peers.",
+            "Each session is a three-week sprint and engagement for a total of 12 months."
+          ]
+        }
+      ],
+      "customer_names": [
+        "OpenClaw"
+      ],
+      "current_classification": {
+        "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-33053abbe1a60b38",
       "funding_insight_id": "FI-8036bbbb426a4611",
       "company_name": "GitHub Secure Open Source Fund",
@@ -9267,6 +9809,37 @@
       "current_classification": {
         "product_form_id": "robotic_system",
         "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-181cd28d97c4e61d",
+      "funding_insight_id": "FI-2616a89ee525dd60",
+      "company_name": "Groq",
+      "company_full_name": "Groq",
+      "website": "www.groq.com",
+      "current_sector": "AI 基础设施与云计算",
+      "company_evidence_quotes": [
+        "Startup Groq has raised $350 million as it continues to pivot from an AI chipmaker to a neocloud company that provides powerful GPUs and AI infrastructure services.",
+        "Groq is a leading global AI infrastructure platform. The company deploys and operates high-performance AI compute across North America, Europe, the Middle East and Asia Pacific, combining infrastructure, inference and cloud services into a single globally distributed platform."
+      ],
+      "products": [
+        {
+          "name": "GroqCloud",
+          "evidence_quotes": [
+            "The company serves more than six million developers, Fortune 500 enterprises and thousands of AI-native companies.",
+            "The company has been focused on developing its language processing unit and GroqCloud technologies, which aim to provide cost-effective and high-speed computing solutions."
+          ]
+        }
+      ],
+      "customer_names": [
+        "HUMAIN",
+        "Paytm",
+        "McLaren Racing",
+        "Meta"
+      ],
+      "current_classification": {
+        "product_form_id": "compute_cloud_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -9497,6 +10070,50 @@
       "current_classification": {
         "product_form_id": "developer_tool",
         "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-1dba157815d84342",
+      "funding_insight_id": "FI-9f08d85c87359b04",
+      "company_name": "Higgsfield Inc.",
+      "company_full_name": "Higgsfield Inc.",
+      "website": "https://higgsfield.ai",
+      "current_sector": "生成式 AI 视频与图像创作平台",
+      "company_evidence_quotes": [
+        "Higgsfield Inc. , a g enerative artificial intelligence video and image creation platform for professionals",
+        "Higgsfield, a San Francisco, CA-based provider of an AI video and image creation platform for professional creators, brands, agencies, and studios"
+      ],
+      "products": [
+        {
+          "name": "Higgsfield 平台",
+          "evidence_quotes": [
+            "Higgsfield is best known for what the company calls a visual reasoning engine for generating and editing media – especially cinematic video, images and voice/audio – using text prompts or references.",
+            "Today you open Higgsfield and you can run Google Veo, Kling, Seedance, their own models, whatever is best, side by side, in parallel."
+          ]
+        },
+        {
+          "name": "Supercomputer",
+          "evidence_quotes": [
+            "Higgsfield recently launched Supercomputer in May, an agentic AI product that automates workflows, runs agents and skills.",
+            "just launched a marketing agent called Supercomputer that pushes creative straight into Meta and other ad networks"
+          ]
+        },
+        {
+          "name": "Cinema Studio",
+          "evidence_quotes": [
+            "Boxel Studio, a 350 person animation and VFX studio with 16 years in Hollywood production, integrated Higgsfield Cinema Studio into its pre production pipeline and reduced time to visualization from months to days"
+          ]
+        }
+      ],
+      "customer_names": [
+        "AdQUA Interactive",
+        "Boosterz",
+        "Boxel Studio",
+        "390 家财富 500 强企业"
+      ],
+      "current_classification": {
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -11177,6 +11794,30 @@
       }
     },
     {
+      "event_id": "EV-e70a48e36e99d57a",
+      "funding_insight_id": "FI-6570fa96e0f8338f",
+      "company_name": "NVIDIA",
+      "company_full_name": "NVIDIA",
+      "website": "https://www.nvidia.com",
+      "current_sector": "AI 算力基础设施融资",
+      "company_evidence_quotes": [
+        "英伟达 8 月 11 日宣布与阿波罗、贝莱德、黑石、布鲁克菲尔德、高盛和 KKR 合作，建立独立融资平台，计划随着时间推移调动超过 5000 亿美元的第三方资本，用于 AI 基础设施建设。"
+      ],
+      "products": [
+        {
+          "name": "AI 工厂",
+          "evidence_quotes": [
+            "公司所称的“AI 工厂”并不只是 GPU，还包括高速网络、系统软件、AI 框架以及 CUDA 开发生态，可以运行语言、视觉、语音、生物、机器人等不同类型的 AI 工作负载。"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "ai_compute_system",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-9046a75f19913ca5",
       "funding_insight_id": "FI-f9af3dfc3109f5ee",
       "company_name": "Oak",
@@ -11240,6 +11881,32 @@
       }
     },
     {
+      "event_id": "EV-c6c297156ff274ac",
+      "funding_insight_id": "FI-6552d438fa2e847e",
+      "company_name": "OdyssLife",
+      "company_full_name": "OdyssLife",
+      "website": "www.odyss.life",
+      "current_sector": "AI健康硬件",
+      "company_evidence_quotes": [
+        "OdyssLife was founded in the second half of 2025. Its founding team consists of post-95s generation members with frontline AI product and technical backgrounds at major domestic and international tech companies.",
+        "Established 2025 Location Shenzhen, Guangdong, China Primary Industry Healthcare IT"
+      ],
+      "products": [
+        {
+          "name": "Odyss N1",
+          "evidence_quotes": [
+            "Its debut product, the Odyss N1, is the world's first Always-On smart necklace , integrating multimodal perception capabilities spanning image, audio, and motion to continuously sense and record users' dietary and exercise behaviors around the clock.",
+            "The company's first product, Odyss N1, is the world's first all-weather AI smart necklace , whose main function is to monitor dietary intake through a \"shooting\" method."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "ai_device",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
       "event_id": "EV-4d2852e1694b2818",
       "funding_insight_id": "FI-63a2a302d42c9558",
       "company_name": "Olix Computing Ltd.",
@@ -11268,6 +11935,35 @@
       "current_classification": {
         "product_form_id": "chip_accelerator",
         "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-83085b0046c7275c",
+      "funding_insight_id": "FI-e662dfe79c490abb",
+      "company_name": "Ontora",
+      "company_full_name": "Ontora",
+      "website": "https://ontora.com",
+      "current_sector": "企业级 AI 平台 / 流程发现与运营智能",
+      "company_evidence_quotes": [
+        "Ontora deploys AI agents that interview every employee in your company -- not once, but continuously -- to map out how work actually gets done."
+      ],
+      "products": [
+        {
+          "name": "Ontora",
+          "evidence_quotes": [
+            "Ontora deploys AI agents that interview every employee in your company -- not once, but continuously -- to map out how work actually gets done."
+          ]
+        }
+      ],
+      "customer_names": [
+        "一家旧金山 PE 公司",
+        "一家大型欧洲媒体代理公司（800+ 员工）",
+        "一家 1,000 人欧洲整合型公司",
+        "一家美国设施维护市场平台"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -11398,7 +12094,7 @@
       ],
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
-        "market_category_id": "enterprise_applications"
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -12406,6 +13102,33 @@
       }
     },
     {
+      "event_id": "EV-8cb4468fe881602b",
+      "funding_insight_id": "FI-1103d62ea94544ce",
+      "company_name": "Relativity Networks",
+      "company_full_name": "Relativity Networks",
+      "website": "www.relativitynetworks.ai",
+      "current_sector": "AI基础设施/光网络",
+      "company_evidence_quotes": [
+        "Relativity Networks, the company defining the networking layer for distributed AI"
+      ],
+      "products": [
+        {
+          "name": "ChronoCore™",
+          "evidence_quotes": [
+            "ChronoCore™ guides light through an air core far closer to the speed of light in a vacuum — roughly 47 percent faster than with conventional glass",
+            "ChronoCore™ replaces the glass core with air. Precision-engineered anti-resonant structures guide light through the air-filled core at approximately 3.4 microseconds per kilometer"
+          ]
+        }
+      ],
+      "customer_names": [
+        "未披露名称的超大规模客户"
+      ],
+      "current_classification": {
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-15bbdd37c516309a",
       "funding_insight_id": "FI-650c1ce24e056ab4",
       "company_name": "Relevance AI",
@@ -13154,6 +13877,47 @@
       }
     },
     {
+      "event_id": "EV-259566f35ea4f66d",
+      "funding_insight_id": "FI-259dfd1f77ace612",
+      "company_name": "Starcloud",
+      "company_full_name": "Starcloud",
+      "website": "https://starcloud.com/",
+      "current_sector": "轨道数据中心与空间计算基础设施",
+      "company_evidence_quotes": [
+        "Starcloud , a startup developing satellites that can perform AI inference in orbit"
+      ],
+      "products": [
+        {
+          "name": "Starcloud-1",
+          "evidence_quotes": [
+            "Starcloud is the only company (that we know of) currently operating a Nvidia H100 terrestrial data center GPU in orbit, and the first to train a model using it"
+          ]
+        },
+        {
+          "name": "Starcloud-2",
+          "evidence_quotes": [
+            "Starcloud is focused on launching two of the company’s new generation of 8 kW compute satellites (dubbed Starcloud-2) on rideshare flights in 2027. These will perform orbital inference tasks for customers including U.S. government agencies."
+          ]
+        },
+        {
+          "name": "Starcloud-3",
+          "evidence_quotes": [
+            "advance its largest orbital data center spacecraft, Starcloud-3, which is intended to fly on SpaceX’s forthcoming Starship rocket."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Crusoe",
+        "AWS",
+        "Google",
+        "U.S. government agencies"
+      ],
+      "current_classification": {
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-40d196865997025c",
       "funding_insight_id": "FI-8adfa60217df71bb",
       "company_name": "Structured AI",
@@ -13493,6 +14257,42 @@
       ],
       "current_classification": {
         "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
+      "event_id": "EV-df8954acf9a13848",
+      "funding_insight_id": "FI-749cb362e6890d24",
+      "company_name": "Thrive Holdings",
+      "company_full_name": "Thrive Holdings",
+      "website": "https://www.thriveholdings.com",
+      "current_sector": "AI 驱动的传统服务企业收购与改造",
+      "company_evidence_quotes": [
+        "Thrive Holdings is akin to a private equity firm for AI, buying traditional businesses like accounting firms and implementing AI into their workflows."
+      ],
+      "products": [
+        {
+          "name": "Current",
+          "evidence_quotes": [
+            "Current, its accounting arm with more than 50 firms and more than 2,000 professionals"
+          ]
+        },
+        {
+          "name": "Shield",
+          "evidence_quotes": [
+            "Shield, its information technology arm with around 20 companies on the platform."
+          ]
+        },
+        {
+          "name": "Built Environment Regulatory Services Platform",
+          "evidence_quotes": [
+            "Part of Wednesday’s fundraise will help Thrive launch a third platform focused on regulatory services for the built environment"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
         "market_category_id": "enterprise_applications"
       }
     },
@@ -13992,6 +14792,48 @@
       "current_classification": {
         "product_form_id": "model",
         "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-d43103952399bc68",
+      "funding_insight_id": "FI-b42507481c91e73a",
+      "company_name": "Wispr",
+      "company_full_name": "Wispr",
+      "website": "https://wisprflow.ai",
+      "current_sector": "AI 语音输入与会议记录",
+      "company_evidence_quotes": [
+        "Wispr , a startup known for its AI dictation tool, raised $280 million in Series B funding",
+        "Today we're announcing $280 million in Series B funding at a $2 billion valuation, led by our long-time investor and partner Menlo Ventures."
+      ],
+      "products": [
+        {
+          "name": "Wispr Flow Dictation",
+          "evidence_quotes": [
+            "Wispr Flow Dictation The voice-to-text AI that turns speech into clear, polished writing in every app."
+          ]
+        },
+        {
+          "name": "Wispr Flow Notetaker",
+          "evidence_quotes": [
+            "WISPR FLOW NOTETAKER Meeting notes that get the details right."
+          ]
+        },
+        {
+          "name": "Canto",
+          "evidence_quotes": [
+            "Alongside the funding, we're announcing a preview of our first proprietary speech model, Canto."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Clay",
+        "Steven Bartlett",
+        "Dean Payn",
+        "Superhuman"
+      ],
+      "current_classification": {
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {

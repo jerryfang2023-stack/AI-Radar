@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-21T02:12:04.037Z",
+    "generated_at": "2026-08-22T06:33:31.315Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 290,
-    "input_hash": "48403655b9e3fe9a",
+    "decision_count": 293,
+    "input_hash": "b812f39f744748c6",
     "override_count": 17,
-    "needs_review_count": 2,
-    "low_confidence_count": 8
+    "needs_review_count": 3,
+    "low_confidence_count": 9
   },
   "decisions": [
     {
@@ -5742,6 +5742,77 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Etched 构建 AI 推理集群，属于为其他 AI 产品提供硬件/计算基础设施，符合 infrastructure_compute > hardware_computing > computing_infrastructure。"
+    },
+    {
+      "event_id": "EV-1bc31f98fa3e34cc",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "data_preparation_curation",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "data_analysis",
+        "knowledge_search"
+      ],
+      "industry_ids": [
+        "financial_services",
+        "manufacturing",
+        "telecommunications",
+        "government_public_sector",
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "证据显示Algorix提供企业级AI数据基础设施，Akasic平台覆盖数据连接、采集、转换及AI推理，旗舰产品AkasicDB统一图、向量和关系数据库，属于为其他AI产品构建者提供数据基础设施，故归入infrastructure_compute下的data。"
+    },
+    {
+      "event_id": "EV-8ad153b984ba8729",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "model_agent_security",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "security_operations",
+        "software_development"
+      ],
+      "industry_ids": [
+        "professional_services",
+        "government_public_sector"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "该基金提供Claude积分用于开源软件漏洞修补和安全自动化，属于安全基础设施支持，但证据未明确其自身产品形态是平台还是服务，且主要面向开源安全生态，边界存在不确定性。"
+    },
+    {
+      "event_id": "EV-259566f35ea4f66d",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_compute_system",
+      "use_case_ids": [
+        "data_analysis",
+        "research_discovery"
+      ],
+      "industry_ids": [
+        "government_public_sector",
+        "telecommunications",
+        "aerospace_defense"
+      ],
+      "target_user_ids": [
+        "developer",
+        "researcher",
+        "public_sector_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Starcloud开发在轨卫星执行AI推理，提供轨道数据中心和计算基础设施，属于为AI构建者提供硬件计算资源，故归入infrastructure_compute下的hardware_computing。"
     }
   ]
 }

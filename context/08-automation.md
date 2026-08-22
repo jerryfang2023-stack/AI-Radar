@@ -1,7 +1,7 @@
 ---
 status: current
 scope: site-v4-automation
-last_updated: 2026-08-17
+last_updated: 2026-08-22
 priority: current
 ---
 
@@ -155,10 +155,17 @@ outside the public Entity Index until an accepted catalog-review decision
 exists.
 
 Funding publication must persist taxonomy decisions with
-`classify:funding-taxonomy-v4.1 -- --write=true`. Its release order is the final
-full funding gate, institution/activity projection, and then the final Data
-Center build; changing that order can leave public cards with dangling investor
-links. Amount normalization must retain explicit `K`/`thousand` units and may
+`classify:funding-taxonomy-v4.1 -- --write=true`. Both the Business Signals
+workflow and the dedicated Funding Insights recovery workflow own the same
+atomic publication set: funding cards, taxonomy decisions and reviewed event
+classifications, institution/activity registry, Data Center monolith and split
+service, Trend Radar, and Opportunity Map. Their release order is initial card
+build, institution projection and Data Center build for translation discovery,
+translation, taxonomy classification/projection, V4 table refresh, final funding
+and institution gates, final Data Center/Trend/Opportunity builds, taxonomy
+consistency, and the frontstage regression gate. The commit must stage the whole
+set; changing that order or staging only the card file can leave public cards
+with dangling investor links or stale taxonomy targets. Amount normalization must retain explicit `K`/`thousand` units and may
 repair a source-backed truncated display such as `$800` only when the canonical
 evidence proves the complete value (for example `$800,000`).
 

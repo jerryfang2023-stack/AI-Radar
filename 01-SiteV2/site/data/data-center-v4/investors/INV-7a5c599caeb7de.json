@@ -23,12 +23,12 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 24,
-    "historical_or_ambiguous_count": 4,
+    "historical_or_ambiguous_count": 5,
     "portfolio_company_count": 23,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-08-12",
+    "latest_disclosed_at": "2026-08-21",
     "role_counts": {
-      "historical_or_ambiguous": 4,
+      "historical_or_ambiguous": 5,
       "lead": 2,
       "participant": 22
     },
@@ -158,6 +158,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-42acb4da6b5a36b3",
+        "funding_insight_id": "FI-8a42f200f5caa9f3",
+        "event_ids": [
+          "EV-259566f35ea4f66d"
+        ],
+        "company_entity_id": "EN-607a596a603dd679",
+        "company_canonical_entity_id": "",
+        "company_name": "Starcloud",
+        "round": "A轮扩展",
+        "round_code": "series_a_extension",
+        "round_original": "A轮扩展",
+        "amount_original": "$250 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "announced_at": "2026-08-21",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-64c63dc926fc8a24",
+            "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+            "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+            "source_content_hash": "10f88a25e3d2c819",
+            "quote": "Additional investors included NFX, Nebular, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West and Monolith Power Systems, alongside Y Combinator.",
+            "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
+          }
+        ]
+      },
       {
         "activity_id": "IA-1df9856e95e338a5",
         "funding_insight_id": "FI-8ec3b23d30c575bf",
@@ -1248,6 +1286,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-64c63dc926fc8a24",
+        "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+        "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+        "source_content_hash": "10f88a25e3d2c819",
+        "quote": "Additional investors included NFX, Nebular, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West and Monolith Power Systems, alongside Y Combinator.",
+        "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
+      },
       {
         "source_id": "FISRC-ba55b463daced495",
         "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
