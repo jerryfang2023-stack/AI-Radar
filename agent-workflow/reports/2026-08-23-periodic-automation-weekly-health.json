@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "status": "passed",
+  "actions": [
+    {
+      "label": "weekly health",
+      "ok": true,
+      "status": 0,
+      "command": "node agent-workflow/tools/write-weekly-health-report.mjs --date=2026-08-23 --days=7",
+      "stdout": "{\n  \"ok\": true,\n  \"status\": \"review\",\n  \"report\": \"agent-workflow/reports/2026-08-23-weekly-health.json\",\n  \"markdown\": \"agent-workflow/reports/2026-08-23-weekly-health.md\"\n}",
+      "stderr": ""
+    }
+  ],
+  "inbox": "",
+  "window": {
+    "start": "2026-08-17",
+    "end": "2026-08-23",
+    "reportDate": "2026-08-23"
+  },
+  "phase": "weekly-health",
+  "date": "2026-08-23",
+  "dry_run": false,
+  "report_provider": "deepseek",
+  "generated_at": "2026-08-23T10:19:10.458Z"
+}
