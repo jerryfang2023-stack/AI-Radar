@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import {
   classifyCommunityPublication,
   classifyCommunityStages,
+  communityTaskPending,
 } from "../write-daily-supervision-report.mjs";
 
 test("healthy data plus a non-zero task exit is an execution anomaly, not data failure", () => {
@@ -56,6 +57,59 @@ test("a running scheduled task is waiting even while Task Scheduler reports 0x41
     loginState: "unknown",
   });
   assert.equal(stages.task_execution, "running");
+});
+
+test("a same-date running task defers stale data and missing publication failures", () => {
+  const taskPending = communityTaskPending({
+    targetDate: "2026-08-23",
+    currentDate: "2026-08-23",
+    taskAvailable: true,
+    taskState: "Running",
+    lastRunTime: "/Date(1787477249000)/",
+  });
+  assert.equal(taskPending, true);
+
+  const stages = classifyCommunityStages({
+    communityDataHealthy: false,
+    dataWaiting: taskPending,
+    localWindowPassed: true,
+    published: false,
+    publicationWaiting: taskPending,
+    publishWindowPassed: true,
+    taskAvailable: true,
+    lastTaskResult: 267009,
+    taskState: "Running",
+    loginState: "unknown",
+  });
+  assert.equal(stages.data, "waiting");
+  assert.equal(stages.publication, "waiting");
+  assert.equal(stages.task_execution, "running");
+});
+
+test("a running task from another date does not hide a current data failure", () => {
+  assert.equal(
+    communityTaskPending({
+      targetDate: "2026-08-23",
+      currentDate: "2026-08-23",
+      taskAvailable: true,
+      taskState: "Running",
+      lastRunTime: "2026-08-22T00:30:00.000Z",
+    }),
+    false,
+  );
+});
+
+test("a same-date queued task is waiting before its first run timestamp exists", () => {
+  assert.equal(
+    communityTaskPending({
+      targetDate: "2026-08-23",
+      currentDate: "2026-08-23",
+      taskAvailable: true,
+      taskState: "Queued",
+      lastRunTime: "",
+    }),
+    true,
+  );
 });
 
 test("same-date data on origin/main confirms publication without a dedicated workflow run", () => {

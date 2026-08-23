@@ -169,6 +169,7 @@ function laneStatus(problems, warnings, waiting = []) {
 
 export function classifyCommunityStages({
   communityDataHealthy,
+  dataWaiting = false,
   localWindowPassed,
   published,
   publicationWaiting,
@@ -180,14 +181,14 @@ export function classifyCommunityStages({
   publicationConfirmed = false,
 }) {
   return {
-    data: communityDataHealthy ? "healthy" : localWindowPassed ? "failed" : "pre_window_waiting",
+    data: communityDataHealthy ? "healthy" : dataWaiting ? "waiting" : localWindowPassed ? "failed" : "pre_window_waiting",
     publication: published
       ? "published"
       : publicationWaiting ? "waiting" : publishWindowPassed ? "failed" : "not_due",
     task_execution: !taskAvailable
       ? "unavailable"
-      : taskState === "Running"
-        ? "running"
+      : ["Queued", "Running"].includes(taskState)
+        ? taskState.toLowerCase()
       : Number.isFinite(lastTaskResult) && lastTaskResult !== 0
         ? publicationConfirmed ? "passed" : communityDataHealthy ? "anomaly_after_data_success" : "failed"
         : ["Ready", "Running"].includes(taskState) ? "passed" : "failed",
@@ -884,6 +885,24 @@ export function classifyCommunityTaskResult({ lastResult, dataHealthy, publicati
   return publicationConfirmed ? "published" : "warning";
 }
 
+function scheduledTaskRunDate(value) {
+  const serializedDate = String(value || "");
+  const powershellDate = serializedDate.match(/^\/Date\((\d+)(?:[+-]\d+)?\)\/$/u);
+  return shanghaiDate(powershellDate ? Number(powershellDate[1]) : value);
+}
+
+export function communityTaskPending({
+  targetDate,
+  currentDate = shanghaiDate(),
+  taskAvailable,
+  taskState,
+  lastRunTime,
+}) {
+  if (!taskAvailable || targetDate !== currentDate) return false;
+  if (taskState === "Queued") return true;
+  return taskState === "Running" && scheduledTaskRunDate(lastRunTime) === targetDate;
+}
+
 function buildCommunityLane() {
   const problems = [];
   const waiting = [];
@@ -914,6 +933,13 @@ function buildCommunityLane() {
   const data = usePublishedData ? publishedData : localData;
   const generatedDate = shanghaiDate(data?.meta?.generatedAt || "");
   const task = scheduledTaskState("WaveSight Community Intelligence Daily");
+  const taskState = task.available ? scheduledTaskStateName(task.task?.State) : "";
+  const taskPending = communityTaskPending({
+    targetDate: date,
+    taskAvailable: task.available,
+    taskState,
+    lastRunTime: task.task?.LastRunTime,
+  });
   const gh = githubWorkflowState("daily-community-intelligence-pr.yml", `automation/community-intelligence-${date}`);
   const mergedPr = Array.isArray(gh.prs) ? gh.prs.find((pr) => pr.mergedAt) : null;
   const openPr = Array.isArray(gh.prs) ? gh.prs.find((pr) => pr.state === "OPEN") : null;
@@ -941,6 +967,8 @@ function buildCommunityLane() {
     ? `origin/main:${rel(gateFile)}`
     : exists(gateFile) ? rel(gateFile) : "missing";
   evidence.scheduledTask = task;
+  evidence.scheduledTask.stateName = taskState;
+  evidence.scheduledTask.pendingSameDate = taskPending;
   evidence.github = gh;
   evidence.publication = {
     communityPrMerged: Boolean(mergedPr),
@@ -964,7 +992,7 @@ function buildCommunityLane() {
     warnings.push(`local community data is ${localGeneratedDate || "missing"}; using passed ${date} publication from origin/main`);
   }
 
-  if (localWindowPassed) {
+  if (localWindowPassed && !taskPending) {
     if (!exists(dataFile) && !usePublishedData) addProblem(problems, `missing community data file: ${rel(dataFile)}`);
     if (generatedDate !== date) addProblem(problems, `community data date is ${generatedDate || "missing"}, expected ${date}`);
     if (evidence.items < 12) addProblem(problems, `community item count ${evidence.items} below 12`);
@@ -976,24 +1004,26 @@ function buildCommunityLane() {
 
   if (task.available) {
     const lastResult = Number(task.task?.LastTaskResult);
-    const state = scheduledTaskStateName(task.task?.State);
-    evidence.scheduledTask.stateName = state;
-    if (!["Ready", "Running"].includes(state)) {
-      addProblem(problems, `community scheduled task state is ${state || "unknown"}`, "manual_required");
-    }
-    const taskResultStatus = classifyCommunityTaskResult({
-      lastResult,
-      dataHealthy: communityDataHealthy,
-      publicationConfirmed,
-      taskState: state,
-    });
-    evidence.scheduledTask.lastResultStatus = taskResultStatus;
-    if (taskResultStatus === "running") {
-      addWaiting(waiting, "Community Intelligence scheduled task is still running");
-    } else if (taskResultStatus === "warning") {
-      warnings.push(`community scheduled task last result is ${lastResult}, but same-date data and gate are healthy`);
-    } else if (taskResultStatus === "problem") {
-      addProblem(problems, `community scheduled task last result is ${lastResult}`, "manual_required");
+    if (taskPending) {
+      const pendingState = taskState.toLowerCase();
+      evidence.scheduledTask.lastResultStatus = pendingState;
+      addWaiting(waiting, `Community Intelligence same-date scheduled task is ${pendingState}`);
+      actions.push("wait for the same-date Community Intelligence task to finish, then rerun supervision");
+    } else {
+      if (taskState !== "Ready") {
+        addProblem(problems, `community scheduled task state is ${taskState || "unknown"}`, "manual_required");
+      }
+      const taskResultStatus = classifyCommunityTaskResult({
+        lastResult,
+        dataHealthy: communityDataHealthy,
+        publicationConfirmed,
+      });
+      evidence.scheduledTask.lastResultStatus = taskResultStatus;
+      if (taskResultStatus === "warning") {
+        warnings.push(`community scheduled task last result is ${lastResult}, but same-date data and gate are healthy`);
+      } else if (taskResultStatus === "problem") {
+        addProblem(problems, `community scheduled task last result is ${lastResult}`, "manual_required");
+      }
     }
   } else {
     warnings.push(task.warning || "scheduled task state unavailable");
@@ -1010,7 +1040,7 @@ function buildCommunityLane() {
   }
 
   if (gh.available) {
-    if (!publicationReady && publishWindowPassed) {
+    if (!publicationReady && publishWindowPassed && !taskPending) {
       addProblem(problems, "no same-date Community Intelligence publish workflow after the morning publication window", "manual_required");
       actions.push("inspect the Daily Problem Watchdog inbox report, then dispatch `.github/workflows/daily-community-intelligence-pr.yml` only after local collection and archive pass");
     } else if (!gh.latest_run && openPr) {
@@ -1034,12 +1064,12 @@ function buildCommunityLane() {
   }
 
   const lastTaskResult = task.available ? Number(task.task?.LastTaskResult) : null;
-  const taskState = task.available ? scheduledTaskStateName(task.task?.State) : "";
   evidence.stageStatus = classifyCommunityStages({
     communityDataHealthy,
+    dataWaiting: taskPending,
     localWindowPassed,
     published: publicationConfirmed,
-    publicationWaiting: Boolean(openPr || ["queued", "in_progress"].includes(gh.latest_run?.status)),
+    publicationWaiting: Boolean(taskPending || openPr || ["queued", "in_progress"].includes(gh.latest_run?.status)),
     publishWindowPassed,
     taskAvailable: task.available,
     lastTaskResult,
@@ -1048,7 +1078,7 @@ function buildCommunityLane() {
     publicationConfirmed,
   });
 
-  if (localWindowPassed && generatedDate !== date) {
+  if (localWindowPassed && generatedDate !== date && !taskPending) {
     actions.push("rerun `agent-workflow/tools/run-community-intelligence.ps1` locally");
   }
   if (problems.length) {
